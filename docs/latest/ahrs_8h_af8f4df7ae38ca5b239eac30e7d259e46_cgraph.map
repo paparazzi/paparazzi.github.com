@@ -1,0 +1,34 @@
+<map id="ahrs_propagate" name="ahrs_propagate">
+<area shape="rect" id="node3" href="$at__com_8c.html#a176adf12985989f7f797a8bf21cbc321" title="at_com_recieve_navdata" alt="" coords="183,5,348,33"/>
+<area shape="rect" id="node5" href="$ahrs__float__dcm_8c.html#a682bd53351651a47152def7839ecdbd2" title="compute_ahrs_representations" alt="" coords="165,235,365,263"/>
+<area shape="rect" id="node9" href="$group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float)." alt="" coords="669,173,813,201"/>
+<area shape="rect" id="node11" href="$group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float)." alt="" coords="648,290,835,318"/>
+<area shape="rect" id="node15" href="$ahrs__float__cmpl_8c.html#a2e90a05e5a4ca369d0308bb72e68171d" title="Compute body orientation and rates from imu orientation and rates." alt="" coords="179,55,352,99"/>
+<area shape="rect" id="node22" href="$pprz__algebra__float_8h.html#a49632b88ccee042652b8706a2fde6d0c" title="float_rmat_reorthogonalize" alt="" coords="179,391,352,419"/>
+<area shape="rect" id="node26" href="$navdata_8c.html#ae43ceafaca46ba7374afd15ed5b3b15a" title="full_read" alt="" coords="231,442,300,470"/>
+<area shape="rect" id="node28" href="$gps__ardrone2_8c.html#a2fcaa354614352f5a8251928bae63abc" title="gps_ardrone2_parse" alt="" coords="196,493,335,521"/>
+<area shape="rect" id="node32" href="$ahrs__float__dcm_8c.html#a70b2b0428d98f1e49bf21b1f7d0467a0" title="Matrix_update" alt="" coords="215,594,316,622"/>
+<area shape="rect" id="node38" href="$ahrs__float__dcm_8c.html#a231f7602591a267c2669a2af9b9c8749" title="Normalize" alt="" coords="225,543,305,571"/>
+<area shape="rect" id="node49" href="$ahrs__float__mlkf_8c.html#a1b08bd331a25c414a61c6d66de5cf4ad" title="propagate_ref" alt="" coords="215,645,316,673"/>
+<area shape="rect" id="node51" href="$ahrs__float__mlkf_8c.html#a194ce5aa1bad2188b290e3135d10b9e3" title="Progagate filter&#39;s covariance We don&#39;t propagate state as we assume to have reseted." alt="" coords="208,695,323,723"/>
+<area shape="rect" id="node53" href="$ahrs__int__cmpl__euler_8c.html#a4f58a57dad0a37eca38d2fcfbb689278" title="set_body_state_from\l_euler" alt="" coords="195,814,336,858"/>
+<area shape="rect" id="node65" href="$ahrs__float__mlkf_8c.html#abea8ede7c8ebc5179487d3464ab513bb" title="Compute body orientation and rates from imu orientation and rates." alt="" coords="179,122,352,150"/>
+<area shape="rect" id="node71" href="$ahrs__sim_8c.html#a631ce4de5e99850af24482335a960acf" title="update_ahrs_from_sim" alt="" coords="429,290,584,318"/>
+<area shape="rect" id="node7" href="$ahrs__float__dcm_8c.html#af37e584c40cc004e4db7af1151ff659e" title="set_body_orientation\l_and_rates" alt="" coords="436,223,577,267"/>
+<area shape="rect" id="node13" href="$group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="883,290,1032,318"/>
+<area shape="rect" id="node17" href="$group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float)." alt="" coords="417,71,596,99"/>
+<area shape="rect" id="node19" href="$group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="671,71,812,99"/>
+<area shape="rect" id="node24" href="$pprz__algebra__float_8h.html#a25ae277549c4186c3a29e6414b42f2e3" title="renorm_factor" alt="" coords="456,391,557,419"/>
+<area shape="rect" id="node30" href="$pprz__geodetic__double_8c.html#a33dae600eb50aea456b6cdbeec53c849" title="ecef_of_lla_d" alt="" coords="457,442,556,470"/>
+<area shape="rect" id="node34" href="$ahrs__float__dcm__algebra_8h.html#a36658a6299aa7c59f8935b3b4c303124" title="Vector_Add" alt="" coords="461,695,552,723"/>
+<area shape="rect" id="node36" href="$ahrs__float__dcm__algebra_8h.html#a89c3fa9a640f3ef92ae88f204d734ab3" title="Matrix_Multiply" alt="" coords="453,746,560,774"/>
+<area shape="rect" id="node40" href="$ahrs__float__dcm__algebra_8h.html#abbc7df880bf45106d0b2fcc0f9ad7fde" title="Vector_Dot_Product" alt="" coords="437,594,576,622"/>
+<area shape="rect" id="node42" href="$ahrs__float__dcm__algebra_8h.html#aa2ea17a2b7db25753df083f03cff1a33" title="Vector_Scale" alt="" coords="457,645,556,673"/>
+<area shape="rect" id="node45" href="$ahrs__float__dcm__algebra_8h.html#acfdef0ee13b70a857c5b98cf98072fa3" title="Vector_Cross_Product" alt="" coords="431,493,583,521"/>
+<area shape="rect" id="node47" href="$ahrs__float__dcm_8c.html#aae3abaa3b95367596d2fe07e62b59dfe" title="set_dcm_matrix_from_rmat" alt="" coords="417,543,596,571"/>
+<area shape="rect" id="node55" href="$group__state__attitude.html#ga51d905adf48e6f11370f8e1b84fd4158" title="Set vehicle body attitude from euler angles (int)." alt="" coords="415,797,599,825"/>
+<area shape="rect" id="node59" href="$group__state__attitude.html#ga170987a16c000ee32fa5728d096bf6ff" title="Set vehicle body attitude from rotation matrix (int)." alt="" coords="417,847,596,875"/>
+<area shape="rect" id="node63" href="$group__state__rate.html#gaf71de3d472804c112ddea1bbd3571014" title="Set vehicle body angular rate (int)." alt="" coords="435,898,579,926"/>
+<area shape="rect" id="node57" href="$group__math__orientation__representation.html#gaa4f947a03eec17840ac5e6157b12a01f" title="Set vehicle body attitude from euler angles (int)." alt="" coords="668,797,815,825"/>
+<area shape="rect" id="node61" href="$group__math__orientation__representation.html#gad65752ee2fd524adefea88180fac375d" title="Set vehicle body attitude from rotation matrix (int)." alt="" coords="671,847,812,875"/>
+</map>

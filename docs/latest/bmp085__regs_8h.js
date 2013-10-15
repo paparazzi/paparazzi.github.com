@@ -1,0 +1,25 @@
+var bmp085__regs_8h =
+[
+    [ "BMP085_CTRL_REG", "bmp085__regs_8h.html#aba8a2ba67440fd080a0d0b32c2e8839b", null ],
+    [ "BMP085_DAT_LSB", "bmp085__regs_8h.html#a0598b0ef3498b10aeb05840ed8bead3d", null ],
+    [ "BMP085_DAT_MSB", "bmp085__regs_8h.html#a9b74d051a91536ec5e830c8e0e65d031", null ],
+    [ "BMP085_DAT_XLSB", "bmp085__regs_8h.html#ac193a80bbb4343288f30c34306717d4b", null ],
+    [ "BMP085_EEPROM_AC1", "bmp085__regs_8h.html#a6a51d651500cdaf41014668c2e92305f", null ],
+    [ "BMP085_EEPROM_AC2", "bmp085__regs_8h.html#ada506f04ea72e25110fd49bf52e0e5aa", null ],
+    [ "BMP085_EEPROM_AC3", "bmp085__regs_8h.html#ad6333f6759ee600d611b18cdcad04541", null ],
+    [ "BMP085_EEPROM_AC4", "bmp085__regs_8h.html#af9d804b3f7acc3ec5c8a84e87214b0c2", null ],
+    [ "BMP085_EEPROM_AC5", "bmp085__regs_8h.html#a7c8e5311e1f7237012dcbfddaf555cee", null ],
+    [ "BMP085_EEPROM_AC6", "bmp085__regs_8h.html#a93e78628d7760bc2918b00cf0fb93506", null ],
+    [ "BMP085_EEPROM_B1", "bmp085__regs_8h.html#ae923a679da4be5e59cd93599bf01935b", null ],
+    [ "BMP085_EEPROM_B2", "bmp085__regs_8h.html#a4eea2a1bc4da9832068ec2ee880c9857", null ],
+    [ "BMP085_EEPROM_MB", "bmp085__regs_8h.html#a7999d83e5bf7a95c06cef9636836ca17", null ],
+    [ "BMP085_EEPROM_MC", "bmp085__regs_8h.html#a61aa38ab358e4c98c5ce53551ba7101f", null ],
+    [ "BMP085_EEPROM_MD", "bmp085__regs_8h.html#a6d1357a1dd1ab9d3ac456f35a0765efe", null ],
+    [ "BMP085_OSS", "bmp085__regs_8h.html#ac2a8c8494bc9512f6d11fe223736995e", null ],
+    [ "BMP085_SLAVE_ADDR", "bmp085__regs_8h.html#a4f535b5a3b3138b16ab8f04fe6dcb0c4", null ],
+    [ "BMP085_START_P0", "bmp085__regs_8h.html#a3f38404509709e0e51ce78f467dd2ac3", null ],
+    [ "BMP085_START_P1", "bmp085__regs_8h.html#ad46f1b73f4aaf27f1eb6495aab8f6418", null ],
+    [ "BMP085_START_P2", "bmp085__regs_8h.html#a160e333cd31d0222b181d80f91eb80ad", null ],
+    [ "BMP085_START_P3", "bmp085__regs_8h.html#abd20e2dad64459165a19bedd21aa6c0c", null ],
+    [ "BMP085_START_TEMP", "bmp085__regs_8h.html#ac17245d8b96c871793fe870a88eff55a", null ]
+];

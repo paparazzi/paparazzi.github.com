@@ -1,0 +1,28 @@
+var structsirf__msg__2 =
+[
+    [ "ch10prn", "structsirf__msg__2.html#ada1c707d054744f2b1419061bac687c6", null ],
+    [ "ch11prn", "structsirf__msg__2.html#af41587f848de12ffe0480950d41e4a39", null ],
+    [ "ch12prn", "structsirf__msg__2.html#a8543013fb4e00742ac1134c35317d905", null ],
+    [ "ch1prn", "structsirf__msg__2.html#a27e5213f5a7fe5f67018fd90c9dbb2a2", null ],
+    [ "ch2prn", "structsirf__msg__2.html#a0ded84ab06221310464e004a347bf2a2", null ],
+    [ "ch3prn", "structsirf__msg__2.html#ac1e1bc2685fa5e84002e60f3b1dbaaa7", null ],
+    [ "ch4prn", "structsirf__msg__2.html#ab507b2e8b1f2056214681e8880b0ecdf", null ],
+    [ "ch5prn", "structsirf__msg__2.html#a03333911fe7cb81252bfe2a32a3b77b5", null ],
+    [ "ch6prn", "structsirf__msg__2.html#addffcb92a490f31aa624abff5b6a105b", null ],
+    [ "ch7prn", "structsirf__msg__2.html#a29025daf139bf13d0acfa6d68df7f87f", null ],
+    [ "ch8prn", "structsirf__msg__2.html#a7b1b5b09f055c38ed0f53f122dedc75f", null ],
+    [ "ch9prn", "structsirf__msg__2.html#ac2775b42952f2dbf9309ba9159734c08", null ],
+    [ "hdop", "structsirf__msg__2.html#aa44ac685e5fe998421baa2d5fcf99530", null ],
+    [ "mode1", "structsirf__msg__2.html#a871489253aa707c1615dcb544695b501", null ],
+    [ "mode2", "structsirf__msg__2.html#aff4d504f04a5bf8120642bb512cac709", null ],
+    [ "msg_id", "structsirf__msg__2.html#ab7b9101b08fc819d2e22356647360b32", null ],
+    [ "num_sat", "structsirf__msg__2.html#aeef4573056e723255256bfe8ecff4811", null ],
+    [ "tow", "structsirf__msg__2.html#a51e5b0e1b1d3df7bc9aed823c3f6e39e", null ],
+    [ "vx", "structsirf__msg__2.html#afc4ca92b8d06d7d9219af76b6c53e4d3", null ],
+    [ "vy", "structsirf__msg__2.html#aa289bb266110fe7357adb2cdc527399c", null ],
+    [ "vz", "structsirf__msg__2.html#ae3da932969e4e6fa72cfc3271c92d789", null ],
+    [ "week", "structsirf__msg__2.html#a55cc3e9d57d52f6a76516a4387451541", null ],
+    [ "x_pos", "structsirf__msg__2.html#a983ad6443162f5a9f55ee427e80584c7", null ],
+    [ "y_pos", "structsirf__msg__2.html#a1e41b3e202143b0505c675bc5fb9e46e", null ],
+    [ "z_pos", "structsirf__msg__2.html#ad9ce23e9de810c5be87ad843418c1ce1", null ]
+];

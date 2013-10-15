@@ -1,0 +1,26 @@
+var pressure__board__navarro_8c =
+[
+    [ "OFFSET_NBSAMPLES_AVRG", "pressure__board__navarro_8c.html#a8b26512257083215cbfde5b9af63fff3", null ],
+    [ "PBN_AIRSPEED_SCALE", "pressure__board__navarro_8c.html#a847d7abbe28e648dd10cd7993b5749f9", null ],
+    [ "PBN_ALTITUDE_SCALE", "pressure__board__navarro_8c.html#a082640ee73177d8935bb912ffd26fac9", null ],
+    [ "PBN_I2C_ADDR", "pressure__board__navarro_8c.html#a7d535b9729217f3e86e019506de4db74", null ],
+    [ "PBN_I2C_DEVICE", "pressure__board__navarro_8c.html#ac9d66bd91ce545b64bf75af6b959ac55", null ],
+    [ "PBN_OFFSET_FILTER", "pressure__board__navarro_8c.html#ad4649cb55be3bc1a54b3837ac5a19e31", null ],
+    [ "PBN_START_DELAY", "pressure__board__navarro_8c.html#a2ce5853d5004c95e2ce46bb869604ffb", null ],
+    [ "pbn_init", "pressure__board__navarro_8c.html#a6f2976579b7761af83296829f78faba0", null ],
+    [ "pbn_periodic", "pressure__board__navarro_8c.html#ae58dbef7995a613dfceb1fa6e87e2fcd", null ],
+    [ "pbn_read_event", "pressure__board__navarro_8c.html#a10b567cd6c9e38e866835add384e30f6", null ],
+    [ "airspeed_adc", "pressure__board__navarro_8c.html#a483fad451c8000d3c7f6de5024ec6670", null ],
+    [ "airspeed_filter", "pressure__board__navarro_8c.html#a41b2311caf36c593094429deaa55e89f", null ],
+    [ "airspeed_offset", "pressure__board__navarro_8c.html#a4965ee21378062e4ebb0732176ec9629", null ],
+    [ "airspeed_offset_tmp", "pressure__board__navarro_8c.html#a5523bf6ec8f563e86dbfc0e986948343", null ],
+    [ "altitude_adc", "pressure__board__navarro_8c.html#ad0e7286d87ad89c11b95729201846f05", null ],
+    [ "altitude_offset", "pressure__board__navarro_8c.html#a7aa8b28d3be3a4065ee94ab81a6fd8e8", null ],
+    [ "altitude_offset_tmp", "pressure__board__navarro_8c.html#ab7e9771a88f23a08aabf2803c3faca11", null ],
+    [ "data_valid", "pressure__board__navarro_8c.html#aa297b7ccfa5d3432b4ae8a1f07ee3871", null ],
+    [ "offset_cnt", "pressure__board__navarro_8c.html#a138240dcc504031ccc83a6e2c044d95d", null ],
+    [ "pbn_airspeed", "pressure__board__navarro_8c.html#a61cd37b7705b94968eef0f7a3c7d89df", null ],
+    [ "pbn_altitude", "pressure__board__navarro_8c.html#a00fcece869a3e8063b98f77d0f153380", null ],
+    [ "pbn_trans", "pressure__board__navarro_8c.html#a2f424a2f3e32bc17fb4224226b9f49de", null ],
+    [ "startup_delay", "pressure__board__navarro_8c.html#a0b098aa2263bb5f8b0033c87a13236bb", null ]
+];

@@ -1,0 +1,26 @@
+var dir_21462276df93c5295d7e945929094846 =
+[
+    [ "ads1114.c", "ads1114_8c.html", "ads1114_8c" ],
+    [ "ads1114.h", "ads1114_8h.html", "ads1114_8h" ],
+    [ "adxl345.extra_i2c.h", "adxl345_8extra__i2c_8h.html", "adxl345_8extra__i2c_8h" ],
+    [ "adxl345.h", "adxl345_8h.html", "adxl345_8h" ],
+    [ "adxl345.i2c.c", "adxl345_8i2c_8c.html", "adxl345_8i2c_8c" ],
+    [ "ami601.c", "ami601_8c.html", "ami601_8c" ],
+    [ "ami601.h", "ami601_8h.html", "ami601_8h" ],
+    [ "hmc5843.c", "hmc5843_8c.html", "hmc5843_8c" ],
+    [ "hmc5843.h", "hmc5843_8h.html", "hmc5843_8h" ],
+    [ "hmc58xx.c", "hmc58xx_8c.html", "hmc58xx_8c" ],
+    [ "hmc58xx.h", "hmc58xx_8h.html", "hmc58xx_8h" ],
+    [ "itg3200.c", "itg3200_8c.html", "itg3200_8c" ],
+    [ "itg3200.extra.h", "itg3200_8extra_8h.html", "itg3200_8extra_8h" ],
+    [ "itg3200.h", "itg3200_8h.html", "itg3200_8h" ],
+    [ "max1168.c", "max1168_8c.html", "max1168_8c" ],
+    [ "max1168.h", "max1168_8h.html", "max1168_8h" ],
+    [ "mcp355x.c", "mcp355x_8c.html", "mcp355x_8c" ],
+    [ "mcp355x.h", "peripherals_2mcp355x_8h.html", "peripherals_2mcp355x_8h" ],
+    [ "mpu60X0.h", "mpu60X0_8h.html", "mpu60X0_8h" ],
+    [ "ms2100.c", "ms2100_8c.html", "ms2100_8c" ],
+    [ "ms2100.h", "ms2100_8h.html", "ms2100_8h" ],
+    [ "sc18i600.c", "sc18i600_8c.html", "sc18i600_8c" ],
+    [ "sc18i600.h", "sc18i600_8h.html", "sc18i600_8h" ]
+];
