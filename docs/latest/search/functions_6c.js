@@ -21,7 +21,7 @@ var searchData=
   ['led_5fcam_5fctrl_5finit',['led_cam_ctrl_init',['../led__cam__ctrl_8h.html#a7c9891620f73eb93e8d917c5ff17451f',1,'led_cam_ctrl.h']]],
   ['led_5fcam_5fctrl_5fperiodic',['led_cam_ctrl_periodic',['../led__cam__ctrl_8h.html#afdc2d18eb53993638b475edbd3a79bdd',1,'led_cam_ctrl.h']]],
   ['led_5ferror',['LED_ERROR',['../debug__led_8h.html#acee81266cdbe8bad4f51eb1b885ccc4d',1,'debug_led.h']]],
-  ['led_5finit',['led_init',['../led_8h.html#a9d9d9b1f30592189c3aa7358c626218f',1,'led_init(void):&#160;led.h'],['../debug__led_8h.html#a9b6469497fa6627a29285492e557d8f8',1,'LED_INIT(void):&#160;debug_led.h']]],
+  ['led_5finit',['LED_INIT',['../debug__led_8h.html#a9b6469497fa6627a29285492e557d8f8',1,'LED_INIT(void):&#160;debug_led.h'],['../led_8h.html#a9d9d9b1f30592189c3aa7358c626218f',1,'led_init(void):&#160;led.h']]],
   ['led_5foff',['led_off',['../test__led_8c.html#a68f6f0e99f1a5967f352672dbe265d68',1,'test_led.c']]],
   ['led_5fon',['led_on',['../test__led_8c.html#a46fb9ed9bb9bcfa6c96f6686000653d4',1,'test_led.c']]],
   ['led_5fsafety_5fstatus_5finit',['led_safety_status_init',['../led__safety__status_8h.html#a61564ee30374a2d6bcbbb6df938c430f',1,'led_safety_status.h']]],

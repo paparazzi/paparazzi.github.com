@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-652-g8a782ca</span>
+   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -103,6 +103,14 @@ $(document).ready(function(){initNavTree('module__rotorcraft_cam.html','');});
 <div class="contents">
 <div class="textblock"><p>Module XML file: <code>rotorcraft_cam.xml</code> </p>
 <p>The camera is controled by the heading of the vehicle for pan and can be controlled by a servo for tilt if defined.</p>
+<p>Four modes:</p>
+<ul>
+<li>NONE: no control</li>
+<li>MANUAL: the servo position is set with PWM</li>
+<li>HEADING: the servo position and the heading of the rotorcraft are set with angles</li>
+<li>WP: the camera is tracking a waypoint (Default: CAM)</li>
+</ul>
+<p>The CAM_SWITCH can be used to power the camera in normal modes and disable it when in NONE mode.</p>
 <h1><a class="anchor" id="configuration"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="af_section"></a>
@@ -171,8 +179,16 @@ Raw rotorcraft_cam.xml file:</h2>
 <div class="line">&lt;module name=<span class="stringliteral">&quot;rotorcraft_cam&quot;</span> dir=<span class="stringliteral">&quot;cam_control&quot;</span>&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;</div>
-<div class="line">      Camera control <span class="keywordflow">for</span> rotorcraft.</div>
-<div class="line">      The camera is controled by the <a class="code" href="ahrs__infrared_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a> of the vehicle <span class="keywordflow">for</span> pan and can be controlled by a servo <span class="keywordflow">for</span> tilt <span class="keywordflow">if</span> defined.</div>
+<div class="line">Camera control <span class="keywordflow">for</span> rotorcraft.</div>
+<div class="line">The camera is controled by the <a class="code" href="ahrs__infrared_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a> of the vehicle <span class="keywordflow">for</span> pan and can be controlled by a servo <span class="keywordflow">for</span> tilt <span class="keywordflow">if</span> defined.</div>
+<div class="line"></div>
+<div class="line">Four modes:</div>
+<div class="line">  - <a class="code" href="actuators__asctec_8h.html#a6ab1b9217ee457a8e4352cf0b28af79dac157bdf0b85a40d2619cbc8bc1ae5fe2">NONE</a>: no control</div>
+<div class="line">  - MANUAL: the servo position is <span class="keyword">set</span> with <a class="code" href="LPC21xx_8h.html#a538e3ec60828cfabae7e3011d73d2093">PWM</a></div>
+<div class="line">  - HEADING: the servo position and the <a class="code" href="ahrs__infrared_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a> of the rotorcraft are <span class="keyword">set</span> with angles</div>
+<div class="line">  - WP: the camera is tracking a waypoint (Default: CAM)</div>
+<div class="line"></div>
+<div class="line">The CAM_SWITCH can be used to power the camera in normal modes and disable it when in <a class="code" href="actuators__asctec_8h.html#a6ab1b9217ee457a8e4352cf0b28af79dac157bdf0b85a40d2619cbc8bc1ae5fe2">NONE</a> mode.</div>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line">    &lt;section name=<span class="stringliteral">&quot;CAM&quot;</span> prefix=<span class="stringliteral">&quot;ROTORCRAFT_CAM_&quot;</span>&gt;</div>
 <div class="line">      &lt;define name=<span class="stringliteral">&quot;DEFAULT_MODE&quot;</span> value=<span class="stringliteral">&quot;MODE_NONE|MODE_MANUAL|MODE_HEADING|MODE_WP&quot;</span> description=<span class="stringliteral">&quot;Select default mode (default: MODE_NONE)&quot;</span>/&gt;</div>
@@ -204,7 +220,7 @@ Raw rotorcraft_cam.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Thu Nov 14 2013 00:00:16 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Nov 21 2013 12:00:12 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

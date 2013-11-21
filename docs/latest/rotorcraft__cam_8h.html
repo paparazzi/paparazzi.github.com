@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-652-g8a782ca</span>
+   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -111,6 +111,9 @@ $(document).ready(function(){initNavTree('rotorcraft__cam_8h.html','');});
 <div class="title">rotorcraft_cam.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Camera control module for rotorcraft.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;generated/airframe.h&quot;</code><br/>
 <code>#include &quot;generated/flight_plan.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="pprz__algebra__int_8h_source.html">math/pprz_algebra_int.h</a>&quot;</code><br/>
@@ -132,7 +135,7 @@ $(document).ready(function(){initNavTree('rotorcraft__cam_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft__cam_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2cam__control_2rotorcraft__cam_8hdep" alt=""/></div>
 <map name="sw_2airborne_2modules_2cam__control_2rotorcraft__cam_8hdep" id="sw_2airborne_2modules_2cam__control_2rotorcraft__cam_8hdep">
-<area shape="rect" id="node3" href="rotorcraft__cam_8c.html" title="sw/airborne/modules\l/cam_control/rotorcraft_cam.c" alt="" coords="5,99,200,143"/></map>
+<area shape="rect" id="node3" href="rotorcraft__cam_8c.html" title="Camera control module for rotorcraft." alt="" coords="5,99,200,143"/></map>
 </div>
 </div>
 <p><a href="rotorcraft__cam_8h_source.html">Go to the source code of this file.</a></p>
@@ -140,7 +143,6 @@ $(document).ready(function(){initNavTree('rotorcraft__cam_8h.html','');});
 <tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:af82e655d778f54d1e153522a38244b08"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft__cam_8h.html#af82e655d778f54d1e153522a38244b08">ROTORCRAFT_CAM_MODE_NONE</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:af82e655d778f54d1e153522a38244b08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Camera control module for rotorcraft.  <a href="#af82e655d778f54d1e153522a38244b08"></a><br/></td></tr>
 <tr class="memitem:a0333277e5ace7aedda960d8f5ca9bb30"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft__cam_8h.html#a0333277e5ace7aedda960d8f5ca9bb30">ROTORCRAFT_CAM_MODE_MANUAL</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memitem:aca2be5aab37c6794d6fe3fb63353a4ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft__cam_8h.html#aca2be5aab37c6794d6fe3fb63353a4ed">ROTORCRAFT_CAM_MODE_HEADING</a>&#160;&#160;&#160;2</td></tr>
 <tr class="memitem:a2ba5f44db0d96dba65cd58d32bcb103f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft__cam_8h.html#a2ba5f44db0d96dba65cd58d32bcb103f">ROTORCRAFT_CAM_MODE_WP</a>&#160;&#160;&#160;3</td></tr>
@@ -173,7 +175,20 @@ Variables</h2></td></tr>
 <tr class="memitem:a51ace79b92e7c5ab69438597883a4c8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft__cam_8h.html#a51ace79b92e7c5ab69438597883a4c8c">rotorcraft_cam_pan</a></td></tr>
 <tr class="memitem:adda457c04709dca302b7342870c93dc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft__cam_8h.html#adda457c04709dca302b7342870c93dc8">rotorcraft_cam_tilt_pwm</a></td></tr>
 </table>
-<h2>Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Camera control module for rotorcraft. </p>
+<p>The camera is controled by the heading of the vehicle for pan and can be controlled by a servo for tilt if defined.</p>
+<p>Four modes:</p>
+<ul>
+<li>NONE: no control</li>
+<li>MANUAL: the servo position is set with PWM</li>
+<li>HEADING: the servo position and the heading of the rotorcraft are set with angles</li>
+<li>WP: the camera is tracking a waypoint (Default: CAM)</li>
+</ul>
+<p>The CAM_SWITCH can be used to power the camera in normal modes and disable it when in NONE mode </p>
+
+<p>Definition in file <a class="el" href="rotorcraft__cam_8h_source.html">rotorcraft_cam.h</a>.</p>
+</div><h2>Macro Definition Documentation</h2>
 <a class="anchor" id="ac8ccbc8ee7594a4fc81fa3a5b4d77789"></a>
 <div class="memitem">
 <div class="memproto">
@@ -186,9 +201,9 @@ Variables</h2></td></tr>
 
 <p>Default mode is NONE. </p>
 
-<p>Definition at line <a class="el" href="rotorcraft__cam_8h_source.html#l00054">54</a> of file <a class="el" href="rotorcraft__cam_8h_source.html">rotorcraft_cam.h</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8h_source.html#l00056">56</a> of file <a class="el" href="rotorcraft__cam_8h_source.html">rotorcraft_cam.h</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00059">rotorcraft_cam_init()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00076">rotorcraft_cam_init()</a>.</p>
 
 </div>
 </div>
@@ -202,9 +217,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft__cam_8h_source.html#l00049">49</a> of file <a class="el" href="rotorcraft__cam_8h_source.html">rotorcraft_cam.h</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8h_source.html#l00051">51</a> of file <a class="el" href="rotorcraft__cam_8h_source.html">rotorcraft_cam.h</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00073">rotorcraft_cam_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00090">rotorcraft_cam_periodic()</a>.</p>
 
 </div>
 </div>
@@ -218,9 +233,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft__cam_8h_source.html#l00048">48</a> of file <a class="el" href="rotorcraft__cam_8h_source.html">rotorcraft_cam.h</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8h_source.html#l00050">50</a> of file <a class="el" href="rotorcraft__cam_8h_source.html">rotorcraft_cam.h</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00073">rotorcraft_cam_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00090">rotorcraft_cam_periodic()</a>.</p>
 
 </div>
 </div>
@@ -234,20 +249,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Camera control module for rotorcraft. </p>
-<p>The camera is controled by the heading of the vehicle for pan and can be controlled by a servo for tilt if defined.</p>
-<p>Four modes:</p>
-<ul>
-<li>NONE: no control</li>
-<li>MANUAL: the servo position is set with PWM</li>
-<li>HEADING: the servo position and the heading of the rotorcraft are set with angles</li>
-<li>WP: the camera is tracking a waypoint (Default: CAM)</li>
-</ul>
-<p>The CAM_SWITCH can be used to power the camera in normal modes and disable it when in NONE mode </p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8h_source.html#l00049">49</a> of file <a class="el" href="rotorcraft__cam_8h_source.html">rotorcraft_cam.h</a>.</p>
 
-<p>Definition at line <a class="el" href="rotorcraft__cam_8h_source.html#l00047">47</a> of file <a class="el" href="rotorcraft__cam_8h_source.html">rotorcraft_cam.h</a>.</p>
-
-<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00073">rotorcraft_cam_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00090">rotorcraft_cam_periodic()</a>.</p>
 
 </div>
 </div>
@@ -261,9 +265,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft__cam_8h_source.html#l00050">50</a> of file <a class="el" href="rotorcraft__cam_8h_source.html">rotorcraft_cam.h</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8h_source.html#l00052">52</a> of file <a class="el" href="rotorcraft__cam_8h_source.html">rotorcraft_cam.h</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00073">rotorcraft_cam_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00090">rotorcraft_cam_periodic()</a>.</p>
 
 </div>
 </div>
@@ -277,7 +281,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft__cam_8h_source.html#l00074">74</a> of file <a class="el" href="rotorcraft__cam_8h_source.html">rotorcraft_cam.h</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8h_source.html#l00076">76</a> of file <a class="el" href="rotorcraft__cam_8h_source.html">rotorcraft_cam.h</a>.</p>
 
 </div>
 </div>
@@ -294,7 +298,7 @@ Variables</h2></td></tr>
 <p>Cam power control. </p>
 <p>By default CAM_SWITCH is used Warning: LED_ON set GPIO low on some boards (lpc) LED_OFF set GPIO high on some boards (lpc) </p>
 
-<p>Definition at line <a class="el" href="rotorcraft__cam_8h_source.html#l00067">67</a> of file <a class="el" href="rotorcraft__cam_8h_source.html">rotorcraft_cam.h</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8h_source.html#l00069">69</a> of file <a class="el" href="rotorcraft__cam_8h_source.html">rotorcraft_cam.h</a>.</p>
 
 </div>
 </div>
@@ -313,16 +317,16 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{ \</div>
 <div class="line">  rotorcraft_cam_mode = _v; \</div>
-<div class="line">  if (<a class="code" href="rotorcraft__cam_8c.html#a4f854e9e805596e5127d9045839b5fdc" title="WP control.">rotorcraft_cam_mode</a> == <a class="code" href="rotorcraft__cam_8h.html#af82e655d778f54d1e153522a38244b08" title="Camera control module for rotorcraft.">ROTORCRAFT_CAM_MODE_NONE</a>) { <a class="code" href="rotorcraft__cam_8h.html#a3bb45d5c86a9d8a8e1bca4556c73484e">ROTORCRAFT_CAM_OFF</a>; } \</div>
+<div class="line">  if (<a class="code" href="rotorcraft__cam_8c.html#a4f854e9e805596e5127d9045839b5fdc" title="WP control.">rotorcraft_cam_mode</a> == <a class="code" href="rotorcraft__cam_8h.html#af82e655d778f54d1e153522a38244b08">ROTORCRAFT_CAM_MODE_NONE</a>) { <a class="code" href="rotorcraft__cam_8h.html#a3bb45d5c86a9d8a8e1bca4556c73484e">ROTORCRAFT_CAM_OFF</a>; } \</div>
 <div class="line">  else { <a class="code" href="rotorcraft__cam_8h.html#a35b7703c58ad70d19ac2960c7e2d6dda" title="Cam power control.">ROTORCRAFT_CAM_ON</a>; } \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 <p>Set camera mode. </p>
 <p>Camera is powered down in NONE mode if CAM_{ON|OFF} are defined </p>
 
-<p>Definition at line <a class="el" href="rotorcraft__cam_8h_source.html#l00123">123</a> of file <a class="el" href="rotorcraft__cam_8h_source.html">rotorcraft_cam.h</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8h_source.html#l00125">125</a> of file <a class="el" href="rotorcraft__cam_8h_source.html">rotorcraft_cam.h</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00059">rotorcraft_cam_init()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00076">rotorcraft_cam_init()</a>.</p>
 
 </div>
 </div>
@@ -336,7 +340,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft__cam_8h_source.html#l00137">137</a> of file <a class="el" href="rotorcraft__cam_8h_source.html">rotorcraft_cam.h</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8h_source.html#l00139">139</a> of file <a class="el" href="rotorcraft__cam_8h_source.html">rotorcraft_cam.h</a>.</p>
 
 </div>
 </div>
@@ -359,7 +363,7 @@ Variables</h2></td></tr>
 <div class="line">  INT32_COURSE_NORMALIZE(<a class="code" href="rotorcraft__cam_8c.html#a51ace79b92e7c5ab69438597883a4c8c">rotorcraft_cam_pan</a>); \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="rotorcraft__cam_8h_source.html#l00140">140</a> of file <a class="el" href="rotorcraft__cam_8h_source.html">rotorcraft_cam.h</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8h_source.html#l00142">142</a> of file <a class="el" href="rotorcraft__cam_8h_source.html">rotorcraft_cam.h</a>.</p>
 
 </div>
 </div>
@@ -376,7 +380,7 @@ Variables</h2></td></tr>
 <p>Cam control from datalink message. </p>
 <p>camera tilt and pan are incremented by STICK_TILT_INC and STICK_PAN_INC when maximum command is received from the stick </p>
 
-<p>Definition at line <a class="el" href="rotorcraft__cam_8h_source.html#l00134">134</a> of file <a class="el" href="rotorcraft__cam_8h_source.html">rotorcraft_cam.h</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8h_source.html#l00136">136</a> of file <a class="el" href="rotorcraft__cam_8h_source.html">rotorcraft_cam.h</a>.</p>
 
 </div>
 </div>
@@ -393,7 +397,7 @@ Variables</h2></td></tr>
 <p>Use angles for tilt in HEADING and WP modes. </p>
 <p>Cam pan control. By default use pan control (heading) </p>
 
-<p>Definition at line <a class="el" href="rotorcraft__cam_8h_source.html#l00099">99</a> of file <a class="el" href="rotorcraft__cam_8h_source.html">rotorcraft_cam.h</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8h_source.html#l00101">101</a> of file <a class="el" href="rotorcraft__cam_8h_source.html">rotorcraft_cam.h</a>.</p>
 
 </div>
 </div>
@@ -410,7 +414,7 @@ Variables</h2></td></tr>
 <p>Cam tilt control. </p>
 <p>By default use tilt control if a servo is assigned </p>
 
-<p>Definition at line <a class="el" href="rotorcraft__cam_8h_source.html#l00084">84</a> of file <a class="el" href="rotorcraft__cam_8h_source.html">rotorcraft_cam.h</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8h_source.html#l00086">86</a> of file <a class="el" href="rotorcraft__cam_8h_source.html">rotorcraft_cam.h</a>.</p>
 
 </div>
 </div>
@@ -429,9 +433,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00059">59</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00076">76</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
 
-<p>References <a class="el" href="telemetry_8c_source.html#l00038">register_periodic_telemetry()</a>, <a class="el" href="rotorcraft__cam_8h_source.html#l00054">ROTORCRAFT_CAM_DEFAULT_MODE</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00050">rotorcraft_cam_pan</a>, <a class="el" href="rotorcraft__cam_8h_source.html#l00123">rotorcraft_cam_SetCamMode</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00038">rotorcraft_cam_tilt</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00039">rotorcraft_cam_tilt_pwm</a>, and <a class="el" href="rotorcraft__cam_8c_source.html#l00054">send_cam()</a>.</p>
+<p>References <a class="el" href="telemetry_8c_source.html#l00038">register_periodic_telemetry()</a>, <a class="el" href="rotorcraft__cam_8h_source.html#l00056">ROTORCRAFT_CAM_DEFAULT_MODE</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00067">rotorcraft_cam_pan</a>, <a class="el" href="rotorcraft__cam_8h_source.html#l00125">rotorcraft_cam_SetCamMode</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00055">rotorcraft_cam_tilt</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00056">rotorcraft_cam_tilt_pwm</a>, and <a class="el" href="rotorcraft__cam_8c_source.html#l00071">send_cam()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -460,9 +464,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00073">73</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00090">90</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00966">INT32_ATAN2</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00127">INT32_COURSE_NORMALIZE</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00064">INT32_POS_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00229">INT32_VECT2_NORM</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00241">INT32_VECT2_RSHIFT</a>, <a class="el" href="navigation_8c_source.html#l00072">nav_heading</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00145">Int32Eulers::psi</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00032">rotorcraft_cam_mode</a>, <a class="el" href="rotorcraft__cam_8h_source.html#l00049">ROTORCRAFT_CAM_MODE_HEADING</a>, <a class="el" href="rotorcraft__cam_8h_source.html#l00048">ROTORCRAFT_CAM_MODE_MANUAL</a>, <a class="el" href="rotorcraft__cam_8h_source.html#l00047">ROTORCRAFT_CAM_MODE_NONE</a>, <a class="el" href="rotorcraft__cam_8h_source.html#l00050">ROTORCRAFT_CAM_MODE_WP</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00050">rotorcraft_cam_pan</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00038">rotorcraft_cam_tilt</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00039">rotorcraft_cam_tilt_pwm</a>, <a class="el" href="state_8h_source.html#l01012">stateGetNedToBodyEulers_i()</a>, <a class="el" href="state_8h_source.html#l00637">stateGetPositionEnu_i()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00067">VECT2_DIFF</a>, <a class="el" href="navigation_8c_source.html#l00052">waypoints</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00080">Int32Vect2::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00081">Int32Vect2::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00075">EnuCoor_i::z</a>.</p>
+<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00966">INT32_ATAN2</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00127">INT32_COURSE_NORMALIZE</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00064">INT32_POS_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00229">INT32_VECT2_NORM</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00241">INT32_VECT2_RSHIFT</a>, <a class="el" href="navigation_8c_source.html#l00072">nav_heading</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00145">Int32Eulers::psi</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00049">rotorcraft_cam_mode</a>, <a class="el" href="rotorcraft__cam_8h_source.html#l00051">ROTORCRAFT_CAM_MODE_HEADING</a>, <a class="el" href="rotorcraft__cam_8h_source.html#l00050">ROTORCRAFT_CAM_MODE_MANUAL</a>, <a class="el" href="rotorcraft__cam_8h_source.html#l00049">ROTORCRAFT_CAM_MODE_NONE</a>, <a class="el" href="rotorcraft__cam_8h_source.html#l00052">ROTORCRAFT_CAM_MODE_WP</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00067">rotorcraft_cam_pan</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00055">rotorcraft_cam_tilt</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00056">rotorcraft_cam_tilt_pwm</a>, <a class="el" href="state_8h_source.html#l01012">stateGetNedToBodyEulers_i()</a>, <a class="el" href="state_8h_source.html#l00637">stateGetPositionEnu_i()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00067">VECT2_DIFF</a>, <a class="el" href="navigation_8c_source.html#l00052">waypoints</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00080">Int32Vect2::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00081">Int32Vect2::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00075">EnuCoor_i::z</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -491,9 +495,9 @@ Variables</h2></td></tr>
 <p>WP control. </p>
 <p>By default use WP_CAM waypoint if defined </p>
 
-<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00032">32</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00049">49</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00073">rotorcraft_cam_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00090">rotorcraft_cam_periodic()</a>.</p>
 
 </div>
 </div>
@@ -507,9 +511,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00050">50</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00067">67</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00059">rotorcraft_cam_init()</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00073">rotorcraft_cam_periodic()</a>, and <a class="el" href="rotorcraft__cam_8c_source.html#l00054">send_cam()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00076">rotorcraft_cam_init()</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00090">rotorcraft_cam_periodic()</a>, and <a class="el" href="rotorcraft__cam_8c_source.html#l00071">send_cam()</a>.</p>
 
 </div>
 </div>
@@ -523,9 +527,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00038">38</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00055">55</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00059">rotorcraft_cam_init()</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00073">rotorcraft_cam_periodic()</a>, and <a class="el" href="rotorcraft__cam_8c_source.html#l00054">send_cam()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00076">rotorcraft_cam_init()</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00090">rotorcraft_cam_periodic()</a>, and <a class="el" href="rotorcraft__cam_8c_source.html#l00071">send_cam()</a>.</p>
 
 </div>
 </div>
@@ -539,9 +543,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00039">39</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00056">56</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00059">rotorcraft_cam_init()</a>, and <a class="el" href="rotorcraft__cam_8c_source.html#l00073">rotorcraft_cam_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00076">rotorcraft_cam_init()</a>, and <a class="el" href="rotorcraft__cam_8c_source.html#l00090">rotorcraft_cam_periodic()</a>.</p>
 
 </div>
 </div>
@@ -551,7 +555,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_900c035387cecacfdb66232491aebefe.html">cam_control</a></li><li class="navelem"><a class="el" href="rotorcraft__cam_8h.html">rotorcraft_cam.h</a></li>
-    <li class="footer">Generated on Thu Nov 14 2013 00:00:14 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Nov 21 2013 12:00:10 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

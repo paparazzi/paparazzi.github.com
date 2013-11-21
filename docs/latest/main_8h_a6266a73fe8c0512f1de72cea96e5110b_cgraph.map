@@ -1,51 +1,51 @@
 <map id="failsafe_check" name="failsafe_check">
-<area shape="rect" id="node3" href="$rotorcraft_2autopilot_8c.html#a82c57502deaf7fb0dc0525b298611a87" title="autopilot_check_in\l_flight" alt="" coords="163,131,293,175"/>
-<area shape="rect" id="node18" href="$rotorcraft_2autopilot_8c.html#a3aaa2cf16ee3b25e8fca9bbd1d579d64" title="autopilot_set_mode" alt="" coords="161,543,295,571"/>
-<area shape="rect" id="node113" href="$gps_8h.html#a3c9ec0734c3ac235abd40c500746de5a" title="GpsIsLost" alt="" coords="187,594,269,622"/>
-<area shape="rect" id="node5" href="$group__state__acceleration.html#ga058e2128ff3a2a3ca5f3c606f4166dfe" title="Get acceleration in NED coordinates (float)." alt="" coords="367,139,505,167"/>
-<area shape="rect" id="node13" href="$group__state__velocity.html#ga50a44ddecd4b2517b549549e953ffea2" title="Get ground speed in local NED coordinates (float)." alt="" coords="364,89,508,117"/>
-<area shape="rect" id="node7" href="$group__state__acceleration.html#gaea5833c5515c007e9ebd4ef106e80071" title="stateCalcAccelNed_f" alt="" coords="585,139,729,167"/>
-<area shape="rect" id="node9" href="$pprz__geodetic__float_8c.html#ac36c2e51de3064e3919a1f58f884342e" title="ned_of_ecef_vect_f" alt="" coords="811,89,947,117"/>
-<area shape="rect" id="node11" href="$pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title="enu_of_ecef_vect_f" alt="" coords="1044,89,1180,117"/>
-<area shape="rect" id="node15" href="$group__state__velocity.html#ga440e1db9aa0854e8cea50670d7055450" title="stateCalcSpeedNed_f" alt="" coords="583,89,732,117"/>
-<area shape="rect" id="node20" href="$rotorcraft_2autopilot_8c.html#a99409d6a32e6cce437a1c0354a2515eb" title="ahrs_is_aligned" alt="" coords="601,745,713,773"/>
-<area shape="rect" id="node22" href="$rotorcraft_2autopilot_8c.html#a4a3dedaf4d4da879348f946a9f3f4611" title="autopilot_set_motors_on" alt="" coords="355,745,517,773"/>
-<area shape="rect" id="node27" href="$guidance__h_8c.html#a2903786227eb11507928f99870099225" title="guidance_h_mode_changed" alt="" coords="345,493,527,521"/>
-<area shape="rect" id="node103" href="$rotorcraft_2guidance_2guidance__v_8c.html#ac24445848e497e9b0da2913cecb0db73" title="guidance_v_mode_changed" alt="" coords="788,139,969,167"/>
-<area shape="rect" id="node107" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#a5a2d8d3947ba9cdc571cea5778c93f4a" title="stabilization_attitude\l_set_failsafe_setpoint" alt="" coords="583,627,732,671"/>
-<area shape="rect" id="node25" href="$autopilot__arming__switch_8h.html#a720eaefed19d55f94f6f866d8aba2702" title="autopilot_arming_set" alt="" coords="587,795,728,823"/>
-<area shape="rect" id="node29" href="$guidance__h_8c.html#a2a7de8dee0c85bd58633a392d8e2df91" title="guidance_h_hover_enter" alt="" coords="576,278,739,306"/>
-<area shape="rect" id="node72" href="$guidance__h_8c.html#acfce6969bcd9f8b676f79baf04ef4c00" title="guidance_h_nav_enter" alt="" coords="581,358,733,386"/>
-<area shape="rect" id="node76" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#a23f862ca823e6fd23fc9c111178be077" title="stabilization_attitude\l_enter" alt="" coords="588,551,727,595"/>
-<area shape="rect" id="node96" href="$stabilization__attitude__rc__setpoint_8c.html#abdf70201d8682a7d5b567fc6f3790063" title="reset the heading for care&#45;free mode to current heading" alt="" coords="793,862,964,906"/>
-<area shape="rect" id="node99" href="$stabilization__none_8c.html#a49478c0307e64c56d48cf0feaa0d8876" title="stabilization_none\l_enter" alt="" coords="595,418,720,462"/>
-<area shape="rect" id="node101" href="$stabilization__rate_8c.html#a3c8ef06f1db709ae713371b0a2a5054d" title="stabilization_rate\l_enter" alt="" coords="599,485,716,529"/>
-<area shape="rect" id="node31" href="$guidance__h_8c.html#ad9bd6447dd5cea00192adfbbf5a30cd5" title="reset_guidance_reference\l_from_current_position" alt="" coords="793,241,964,285"/>
-<area shape="rect" id="node35" href="$group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int)." alt="" coords="1036,167,1188,195"/>
-<area shape="rect" id="node65" href="$group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int)." alt="" coords="1019,577,1205,605"/>
-<area shape="rect" id="node33" href="$guidance__h__ref_8c.html#a6aa584c95b0d6b7f797ae073069a78f0" title="gh_set_ref" alt="" coords="1071,273,1153,301"/>
-<area shape="rect" id="node59" href="$group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int)." alt="" coords="1041,222,1183,250"/>
-<area shape="rect" id="node37" href="$group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="1255,131,1412,159"/>
-<area shape="rect" id="node39" href="$pprz__geodetic__int_8c.html#a55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED." alt="" coords="1473,157,1604,185"/>
-<area shape="rect" id="node43" href="$pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="1469,207,1608,235"/>
-<area shape="rect" id="node47" href="$pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1491,5,1587,33"/>
-<area shape="rect" id="node49" href="$pprz__geodetic__int_8c.html#a6618f634b774eaf7182dfec83d68f141" title="ned_of_lla_point_i" alt="" coords="1476,55,1601,83"/>
-<area shape="rect" id="node55" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="1492,106,1585,134"/>
-<area shape="rect" id="node41" href="$pprz__geodetic__int_8c.html#a710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="1668,157,1799,185"/>
-<area shape="rect" id="node45" href="$pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1664,207,1803,235"/>
-<area shape="rect" id="node51" href="$pprz__geodetic__int_8c.html#a386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="1687,55,1780,83"/>
-<area shape="rect" id="node53" href="$pprz__geodetic__int_8c.html#a9307e97057d51e781def8a03dea804f6" title="ned_of_ecef_point_i" alt="" coords="1664,5,1803,33"/>
-<area shape="rect" id="node57" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1667,106,1800,134"/>
-<area shape="rect" id="node61" href="$group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="1260,239,1407,267"/>
-<area shape="rect" id="node63" href="$pprz__geodetic__int_8c.html#ab4eda479f4c01e96082d8a352f16cfea" title="ned_of_ecef_vect_i" alt="" coords="1472,258,1605,286"/>
-<area shape="rect" id="node67" href="$group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int)." alt="" coords="1259,577,1408,605"/>
-<area shape="rect" id="node69" href="$group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title="orientationCalcEulers_i" alt="" coords="1461,577,1616,605"/>
-<area shape="rect" id="node78" href="$telemetry_8c.html#abb4aa9b3c0c8d93e1372de5da86de828" title="Register a telemetry callback function." alt="" coords="791,409,967,437"/>
-<area shape="rect" id="node80" href="$stabilization__attitude__euler__int_8c.html#a60f842edfa8dd98a227f18def04a0b55" title="reset_psi_ref_from_body" alt="" coords="797,459,960,487"/>
-<area shape="rect" id="node82" href="$stabilization__attitude__rc__setpoint_8c.html#aef31d05722347c8213ef503f5c6f1113" title="stabilization_attitude\l_get_heading_f" alt="" coords="809,694,948,738"/>
-<area shape="rect" id="node90" href="$stabilization__attitude__rc__setpoint_8c.html#a1270210b635f040b5bdd7d974f29c71f" title="stabilization_attitude\l_get_heading_i" alt="" coords="809,627,948,671"/>
-<area shape="rect" id="node93" href="$stabilization__attitude__ref__euler__float_8c.html#a4653dafe8c5e5680c05207027db750f0" title="stabilization_attitude\l_ref_enter" alt="" coords="809,510,948,554"/>
-<area shape="rect" id="node84" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="1019,811,1205,839"/>
-<area shape="rect" id="node86" href="$group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="1259,811,1408,839"/>
-<area shape="rect" id="node88" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="1461,811,1616,839"/>
+<area shape="rect" id="node3" href="$rotorcraft_2autopilot_8c.html#a82c57502deaf7fb0dc0525b298611a87" title="autopilot_check_in\l_flight" alt="" coords="163,47,293,91"/>
+<area shape="rect" id="node18" href="$rotorcraft_2autopilot_8c.html#a3aaa2cf16ee3b25e8fca9bbd1d579d64" title="autopilot_set_mode" alt="" coords="161,182,295,210"/>
+<area shape="rect" id="node113" href="$gps_8h.html#a3c9ec0734c3ac235abd40c500746de5a" title="GpsIsLost" alt="" coords="187,233,269,261"/>
+<area shape="rect" id="node5" href="$group__state__acceleration.html#ga058e2128ff3a2a3ca5f3c606f4166dfe" title="Get acceleration in NED coordinates (float)." alt="" coords="367,55,505,83"/>
+<area shape="rect" id="node13" href="$group__state__velocity.html#ga50a44ddecd4b2517b549549e953ffea2" title="Get ground speed in local NED coordinates (float)." alt="" coords="364,5,508,33"/>
+<area shape="rect" id="node7" href="$group__state__acceleration.html#gaea5833c5515c007e9ebd4ef106e80071" title="stateCalcAccelNed_f" alt="" coords="585,55,729,83"/>
+<area shape="rect" id="node9" href="$pprz__geodetic__float_8c.html#ac36c2e51de3064e3919a1f58f884342e" title="ned_of_ecef_vect_f" alt="" coords="811,55,947,83"/>
+<area shape="rect" id="node11" href="$pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title="enu_of_ecef_vect_f" alt="" coords="1044,55,1180,83"/>
+<area shape="rect" id="node15" href="$group__state__velocity.html#ga440e1db9aa0854e8cea50670d7055450" title="stateCalcSpeedNed_f" alt="" coords="583,5,732,33"/>
+<area shape="rect" id="node20" href="$rotorcraft_2autopilot_8c.html#a99409d6a32e6cce437a1c0354a2515eb" title="ahrs_is_aligned" alt="" coords="601,157,713,185"/>
+<area shape="rect" id="node22" href="$rotorcraft_2autopilot_8c.html#a4a3dedaf4d4da879348f946a9f3f4611" title="autopilot_set_motors_on" alt="" coords="355,207,517,235"/>
+<area shape="rect" id="node27" href="$guidance__h_8c.html#a2903786227eb11507928f99870099225" title="guidance_h_mode_changed" alt="" coords="345,383,527,411"/>
+<area shape="rect" id="node103" href="$rotorcraft_2guidance_2guidance__v_8c.html#ac24445848e497e9b0da2913cecb0db73" title="guidance_v_mode_changed" alt="" coords="788,114,969,142"/>
+<area shape="rect" id="node107" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#a5a2d8d3947ba9cdc571cea5778c93f4a" title="stabilization_attitude\l_set_failsafe_setpoint" alt="" coords="583,626,732,670"/>
+<area shape="rect" id="node25" href="$autopilot__arming__switch_8h.html#a720eaefed19d55f94f6f866d8aba2702" title="autopilot_arming_set" alt="" coords="587,207,728,235"/>
+<area shape="rect" id="node29" href="$guidance__h_8c.html#a2a7de8dee0c85bd58633a392d8e2df91" title="guidance_h_hover_enter" alt="" coords="576,258,739,286"/>
+<area shape="rect" id="node74" href="$guidance__h_8c.html#acfce6969bcd9f8b676f79baf04ef4c00" title="guidance_h_nav_enter" alt="" coords="581,442,733,470"/>
+<area shape="rect" id="node78" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#a23f862ca823e6fd23fc9c111178be077" title="stabilization_attitude\l_enter" alt="" coords="588,493,727,537"/>
+<area shape="rect" id="node96" href="$stabilization__attitude__rc__setpoint_8c.html#abdf70201d8682a7d5b567fc6f3790063" title="reset the heading for care&#45;free mode to current heading" alt="" coords="793,794,964,838"/>
+<area shape="rect" id="node99" href="$stabilization__none_8c.html#a49478c0307e64c56d48cf0feaa0d8876" title="stabilization_none\l_enter" alt="" coords="595,309,720,353"/>
+<area shape="rect" id="node101" href="$stabilization__rate_8c.html#a3c8ef06f1db709ae713371b0a2a5054d" title="stabilization_rate\l_enter" alt="" coords="599,375,716,419"/>
+<area shape="rect" id="node31" href="$guidance__h_8c.html#ad9bd6447dd5cea00192adfbbf5a30cd5" title="reset_guidance_reference\l_from_current_position" alt="" coords="793,223,964,267"/>
+<area shape="rect" id="node35" href="$group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int)." alt="" coords="1036,177,1188,205"/>
+<area shape="rect" id="node67" href="$group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int)." alt="" coords="1019,391,1205,419"/>
+<area shape="rect" id="node33" href="$guidance__h__ref_8c.html#a6aa584c95b0d6b7f797ae073069a78f0" title="gh_set_ref" alt="" coords="1071,231,1153,259"/>
+<area shape="rect" id="node61" href="$group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int)." alt="" coords="1041,114,1183,142"/>
+<area shape="rect" id="node37" href="$group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="1255,195,1412,223"/>
+<area shape="rect" id="node39" href="$pprz__geodetic__int_8c.html#a55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED." alt="" coords="1473,119,1604,147"/>
+<area shape="rect" id="node43" href="$pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="1469,170,1608,198"/>
+<area shape="rect" id="node47" href="$pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1491,221,1587,249"/>
+<area shape="rect" id="node49" href="$pprz__geodetic__int_8c.html#a6618f634b774eaf7182dfec83d68f141" title="ned_of_lla_point_i" alt="" coords="1476,271,1601,299"/>
+<area shape="rect" id="node55" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="1492,322,1585,350"/>
+<area shape="rect" id="node41" href="$pprz__geodetic__int_8c.html#a710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="1668,119,1799,147"/>
+<area shape="rect" id="node45" href="$pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1664,170,1803,198"/>
+<area shape="rect" id="node51" href="$pprz__geodetic__int_8c.html#a386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="1687,221,1780,249"/>
+<area shape="rect" id="node53" href="$pprz__geodetic__int_8c.html#a9307e97057d51e781def8a03dea804f6" title="ned_of_ecef_point_i" alt="" coords="1664,271,1803,299"/>
+<area shape="rect" id="node57" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1667,322,1800,350"/>
+<area shape="rect" id="node59" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1672,373,1795,417"/>
+<area shape="rect" id="node63" href="$group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="1260,101,1407,129"/>
+<area shape="rect" id="node65" href="$pprz__geodetic__int_8c.html#ab4eda479f4c01e96082d8a352f16cfea" title="ned_of_ecef_vect_i" alt="" coords="1472,69,1605,97"/>
+<area shape="rect" id="node69" href="$group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int)." alt="" coords="1259,391,1408,419"/>
+<area shape="rect" id="node71" href="$group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title="orientationCalcEulers_i" alt="" coords="1461,391,1616,419"/>
+<area shape="rect" id="node80" href="$stabilization__attitude__euler__int_8c.html#a60f842edfa8dd98a227f18def04a0b55" title="reset_psi_ref_from_body" alt="" coords="797,442,960,470"/>
+<area shape="rect" id="node82" href="$stabilization__attitude__rc__setpoint_8c.html#aef31d05722347c8213ef503f5c6f1113" title="stabilization_attitude\l_get_heading_f" alt="" coords="809,626,948,670"/>
+<area shape="rect" id="node90" href="$stabilization__attitude__rc__setpoint_8c.html#a1270210b635f040b5bdd7d974f29c71f" title="stabilization_attitude\l_get_heading_i" alt="" coords="809,559,948,603"/>
+<area shape="rect" id="node93" href="$stabilization__attitude__ref__euler__float_8c.html#a4653dafe8c5e5680c05207027db750f0" title="stabilization_attitude\l_ref_enter" alt="" coords="809,493,948,537"/>
+<area shape="rect" id="node84" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="1019,743,1205,771"/>
+<area shape="rect" id="node86" href="$group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="1259,743,1408,771"/>
+<area shape="rect" id="node88" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="1461,743,1616,771"/>
 </map>

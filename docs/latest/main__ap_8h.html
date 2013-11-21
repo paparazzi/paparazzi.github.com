@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-652-g8a782ca</span>
+   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -158,11 +158,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="main__ap_8c_source.html#l00527">527</a> of file <a class="el" href="main__ap_8c_source.html">main_ap.c</a>.</p>
+<p>Definition at line <a class="el" href="main__ap_8c_source.html#l00528">528</a> of file <a class="el" href="main__ap_8c_source.html">main_ap.c</a>.</p>
 
 <p>References <a class="el" href="ahrs__infrared_8c_source.html#l00111">ahrs_update_infrared()</a>, <a class="el" href="inter__mcu_8c_source.html#l00033">ap_state</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00043">autopilot_flight_time</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00075">h_ctl_aileron_setpoint</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00259">h_ctl_attitude_loop()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00089">h_ctl_elevator_setpoint</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00081">h_ctl_pitch_setpoint</a>, <a class="el" href="inter__mcu_8c_source.html#l00037">inter_mcu_received_ap</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00037">kill_throttle</a>, <a class="el" href="sim__ap_8c_source.html#l00040">launch</a>, <a class="el" href="link__mcu__usart_8h.html#ad2f41351eb7b54410360a1e9f1f2407a">link_mcu_send()</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="navigation_8c_source.html#l00071">nav_pitch</a>, <a class="el" href="nav_8c_source.html#l00308">nav_throttle_setpoint</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00036">pprz_mode</a>, <a class="el" href="fixedwing_2autopilot_8h_source.html#l00052">PPRZ_MODE_AUTO2</a>, <a class="el" href="paparazzi_8h_source.html#l00011">TRIM_PPRZ</a>, <a class="el" href="paparazzi_8h_source.html#l00014">TRIM_UPPRZ</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="energy__ctrl_8c_source.html#l00311">v_ctl_climb_loop()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00077">v_ctl_mode</a>, <a class="el" href="guidance__common_8h_source.html#l00038">V_CTL_MODE_AUTO_CLIMB</a>, <a class="el" href="guidance__common_8h_source.html#l00037">V_CTL_MODE_AUTO_THROTTLE</a>, <a class="el" href="energy__ctrl_8c_source.html#l00136">v_ctl_pitch_setpoint</a>, <a class="el" href="energy__ctrl_8c_source.html#l00134">v_ctl_throttle_setpoint</a>, <a class="el" href="energy__ctrl_8c_source.html#l00425">v_ctl_throttle_slew()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00135">v_ctl_throttle_slewed</a>, and <a class="el" href="fixedwing_2autopilot_8c_source.html#l00047">vsupply</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00643">event_task_ap()</a>, <a class="el" href="main__ap_8c_source.html#l00274">handle_periodic_tasks_ap()</a>, and <a class="el" href="sim__ap_8c_source.html#l00050">sim_periodic_task()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00644">event_task_ap()</a>, <a class="el" href="main__ap_8c_source.html#l00275">handle_periodic_tasks_ap()</a>, and <a class="el" href="sim__ap_8c_source.html#l00050">sim_periodic_task()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -202,9 +202,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="main__ap_8c_source.html#l00643">643</a> of file <a class="el" href="main__ap_8c_source.html">main_ap.c</a>.</p>
+<p>Definition at line <a class="el" href="main__ap_8c_source.html#l00644">644</a> of file <a class="el" href="main__ap_8c_source.html">main_ap.c</a>.</p>
 
-<p>References <a class="el" href="main__ap_8c_source.html#l00527">attitude_loop()</a>, <a class="el" href="apogee_2baro__board_8h_source.html#l00033">BaroEvent</a>, <a class="el" href="datalink_8h_source.html#l00108">DatalinkEvent</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="gps__ardrone2_8h_source.html#l00039">GpsEvent</a>, <a class="el" href="lpc21_2mcu__periph_2i2c__arch_8c_source.html#l00366">i2c_event()</a>, <a class="el" href="ins__xsens_8h_source.html#l00063">ImuEvent</a>, <a class="el" href="inter__mcu_8c_source.html#l00036">inter_mcu_received_fbw</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00342">link_mcu_event_task()</a>, <a class="el" href="main__ap_8c_source.html#l00709">on_accel_event()</a>, <a class="el" href="main__ap_8c_source.html#l00695">on_gps_solution()</a>, <a class="el" href="main__ap_8c_source.html#l00712">on_gyro_event()</a>, <a class="el" href="main__ap_8c_source.html#l00782">on_mag_event()</a>, and <a class="el" href="main__ap_8c_source.html#l00370">telecommand_task()</a>.</p>
+<p>References <a class="el" href="main__ap_8c_source.html#l00528">attitude_loop()</a>, <a class="el" href="apogee_2baro__board_8h_source.html#l00033">BaroEvent</a>, <a class="el" href="datalink_8h_source.html#l00108">DatalinkEvent</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="gps__ardrone2_8h_source.html#l00039">GpsEvent</a>, <a class="el" href="lpc21_2mcu__periph_2i2c__arch_8c_source.html#l00366">i2c_event()</a>, <a class="el" href="ins__xsens_8h_source.html#l00063">ImuEvent</a>, <a class="el" href="inter__mcu_8c_source.html#l00036">inter_mcu_received_fbw</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00342">link_mcu_event_task()</a>, <a class="el" href="main__ap_8c_source.html#l00710">on_accel_event()</a>, <a class="el" href="main__ap_8c_source.html#l00696">on_gps_solution()</a>, <a class="el" href="main__ap_8c_source.html#l00713">on_gyro_event()</a>, <a class="el" href="main__ap_8c_source.html#l00783">on_mag_event()</a>, and <a class="el" href="main__ap_8c_source.html#l00371">telecommand_task()</a>.</p>
 
 <p>Referenced by <a class="el" href="sim__ap_8c_source.html#l00050">sim_periodic_task()</a>.</p>
 
@@ -246,9 +246,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="main__ap_8c_source.html#l00274">274</a> of file <a class="el" href="main__ap_8c_source.html">main_ap.c</a>.</p>
+<p>Definition at line <a class="el" href="main__ap_8c_source.html#l00275">275</a> of file <a class="el" href="main__ap_8c_source.html">main_ap.c</a>.</p>
 
-<p>References <a class="el" href="main__ap_8c_source.html#l00527">attitude_loop()</a>, <a class="el" href="lpc21_2led__hw_8h_source.html#l00008">LED_PERIODIC</a>, <a class="el" href="main__ap_8c_source.html#l00616">monitor_task()</a>, <a class="el" href="main__ap_8c_source.html#l00462">navigation_task()</a>, <a class="el" href="main__ap_8c_source.html#l00439">reporting_task()</a>, <a class="el" href="main__ap_8c_source.html#l00579">sensors_task()</a>, and <a class="el" href="sys__time_8h_source.html#l00111">sys_time_check_and_ack_timer()</a>.</p>
+<p>References <a class="el" href="main__ap_8c_source.html#l00528">attitude_loop()</a>, <a class="el" href="lpc21_2led__hw_8h_source.html#l00008">LED_PERIODIC</a>, <a class="el" href="main__ap_8c_source.html#l00617">monitor_task()</a>, <a class="el" href="main__ap_8c_source.html#l00463">navigation_task()</a>, <a class="el" href="main__ap_8c_source.html#l00440">reporting_task()</a>, <a class="el" href="main__ap_8c_source.html#l00580">sensors_task()</a>, and <a class="el" href="sys__time_8h_source.html#l00111">sys_time_check_and_ack_timer()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -281,9 +281,9 @@ Functions</h2></td></tr>
 <li>start interrupt task </li>
 </ul>
 
-<p>Definition at line <a class="el" href="main__ap_8c_source.html#l00176">176</a> of file <a class="el" href="main__ap_8c_source.html">main_ap.c</a>.</p>
+<p>Definition at line <a class="el" href="main__ap_8c_source.html#l00177">177</a> of file <a class="el" href="main__ap_8c_source.html">main_ap.c</a>.</p>
 
-<p>References <a class="el" href="ahrs__aligner_8c_source.html#l00062">ahrs_aligner_init()</a>, <a class="el" href="ahrs__chimu__spi_8c_source.html#l00037">ahrs_init()</a>, <a class="el" href="air__data_8c_source.html#l00061">air_data_init()</a>, <a class="el" href="inter__mcu_8c_source.html#l00033">ap_state</a>, <a class="el" href="audio__telemetry__hw_8h_source.html#l00031">audio_telemetry_init()</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00138">autopilot_init()</a>, <a class="el" href="apogee_2baro__board_8c_source.html#l00068">baro_init()</a>, <a class="el" href="main__ap_8c_source.html#l00101">COMMAND_PITCH_TRIM</a>, <a class="el" href="main__ap_8c_source.html#l00097">COMMAND_ROLL_TRIM</a>, <a class="el" href="main__ap_8c_source.html#l00105">COMMAND_YAW_TRIM</a>, <a class="el" href="fixedwing_2autopilot_8h_source.html#l00138">CONTROL_FREQUENCY</a>, <a class="el" href="gps_8c_source.html#l00099">gps_init()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>, <a class="el" href="imu_8c_source.html#l00152">imu_float_init()</a>, <a class="el" href="ins__xsens700_8c_source.html#l00086">imu_init()</a>, <a class="el" href="ins__xsens700_8c_source.html#l00175">ins_init()</a>, <a class="el" href="LPC21xx_8h_source.html#l00335">IO0DIR</a>, <a class="el" href="LPC21xx_8h_source.html#l00334">IO0SET</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00247">link_mcu_init()</a>, <a class="el" href="lpc21_2mcu__arch_8h_source.html#l00037">mcu_int_enable</a>, <a class="el" href="navigation_8c_source.html#l00124">nav_init()</a>, <a class="el" href="fixedwing_2autopilot_8h_source.html#l00143">NAVIGATION_FREQUENCY</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00051">PERIODIC_FREQUENCY</a>, <a class="el" href="telemetry_8c_source.html#l00038">register_periodic_telemetry()</a>, <a class="el" href="main__ap_8c_source.html#l00146">send_fliter_status()</a>, <a class="el" href="settings_8c_source.html#l00008">settings_init()</a>, <a class="el" href="state_8c_source.html#l00043">stateInit()</a>, <a class="el" href="sys__time_8c_source.html#l00037">sys_time_register_timer()</a>, <a class="el" href="traffic__info_8c_source.html#l00037">traffic_info_init()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00202">v_ctl_init()</a>, <a class="el" href="w5100_8c_source.html#l00155">w5100_init()</a>, and <a class="el" href="xbee_8c_source.html#l00087">xbee_init()</a>.</p>
+<p>References <a class="el" href="ahrs__aligner_8c_source.html#l00062">ahrs_aligner_init()</a>, <a class="el" href="ahrs__chimu__spi_8c_source.html#l00037">ahrs_init()</a>, <a class="el" href="air__data_8c_source.html#l00061">air_data_init()</a>, <a class="el" href="inter__mcu_8c_source.html#l00033">ap_state</a>, <a class="el" href="audio__telemetry__hw_8h_source.html#l00031">audio_telemetry_init()</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00138">autopilot_init()</a>, <a class="el" href="apogee_2baro__board_8c_source.html#l00068">baro_init()</a>, <a class="el" href="main__ap_8c_source.html#l00102">COMMAND_PITCH_TRIM</a>, <a class="el" href="main__ap_8c_source.html#l00098">COMMAND_ROLL_TRIM</a>, <a class="el" href="main__ap_8c_source.html#l00106">COMMAND_YAW_TRIM</a>, <a class="el" href="fixedwing_2autopilot_8h_source.html#l00138">CONTROL_FREQUENCY</a>, <a class="el" href="gps_8c_source.html#l00099">gps_init()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>, <a class="el" href="imu_8c_source.html#l00152">imu_float_init()</a>, <a class="el" href="ins__xsens700_8c_source.html#l00086">imu_init()</a>, <a class="el" href="ins__xsens700_8c_source.html#l00175">ins_init()</a>, <a class="el" href="LPC21xx_8h_source.html#l00335">IO0DIR</a>, <a class="el" href="LPC21xx_8h_source.html#l00334">IO0SET</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00247">link_mcu_init()</a>, <a class="el" href="lpc21_2mcu__arch_8h_source.html#l00037">mcu_int_enable</a>, <a class="el" href="navigation_8c_source.html#l00124">nav_init()</a>, <a class="el" href="fixedwing_2autopilot_8h_source.html#l00143">NAVIGATION_FREQUENCY</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00051">PERIODIC_FREQUENCY</a>, <a class="el" href="telemetry_8c_source.html#l00038">register_periodic_telemetry()</a>, <a class="el" href="main__ap_8c_source.html#l00147">send_fliter_status()</a>, <a class="el" href="settings_8c_source.html#l00008">settings_init()</a>, <a class="el" href="state_8c_source.html#l00043">stateInit()</a>, <a class="el" href="sys__time_8c_source.html#l00037">sys_time_register_timer()</a>, <a class="el" href="traffic__info_8c_source.html#l00037">traffic_info_init()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00202">v_ctl_init()</a>, <a class="el" href="w5100_8c_source.html#l00155">w5100_init()</a>, and <a class="el" href="xbee_8c_source.html#l00087">xbee_init()</a>.</p>
 
 <p>Referenced by <a class="el" href="sim__ap_8c_source.html#l00080">sim_init()</a>.</p>
 
@@ -327,11 +327,11 @@ Functions</h2></td></tr>
 
 <p>monitor stuff run at 1Hz </p>
 
-<p>Definition at line <a class="el" href="main__ap_8c_source.html#l00616">616</a> of file <a class="el" href="main__ap_8c_source.html">main_ap.c</a>.</p>
+<p>Definition at line <a class="el" href="main__ap_8c_source.html#l00617">617</a> of file <a class="el" href="main__ap_8c_source.html">main_ap.c</a>.</p>
 
-<p>References <a class="el" href="fixedwing_2autopilot_8c_source.html#l00043">autopilot_flight_time</a>, <a class="el" href="sim__ap_8c_source.html#l00044">datalink_time</a>, <a class="el" href="downlink_8h_source.html#l00068">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00078">DefaultDevice</a>, <a class="el" href="common__nav_8c_source.html#l00033">dist2_to_home</a>, <a class="el" href="main__ap_8c_source.html#l00609">KILL_MODE_DISTANCE</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00037">kill_throttle</a>, <a class="el" href="sim__ap_8c_source.html#l00040">launch</a>, <a class="el" href="main__ap_8c_source.html#l00605">LOW_BATTERY_DELAY</a>, <a class="el" href="main__ap_8c_source.html#l00613">MIN_SPEED_FOR_TAKEOFF</a>, <a class="el" href="sys__time_8h_source.html#l00069">sys_time::nb_sec</a>, <a class="el" href="nav_8h_source.html#l00045">Square</a>, <a class="el" href="state_8h_source.html#l00854">stateGetHorizontalSpeedNorm_f()</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, and <a class="el" href="fixedwing_2autopilot_8c_source.html#l00047">vsupply</a>.</p>
+<p>References <a class="el" href="fixedwing_2autopilot_8c_source.html#l00043">autopilot_flight_time</a>, <a class="el" href="sim__ap_8c_source.html#l00044">datalink_time</a>, <a class="el" href="downlink_8h_source.html#l00068">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00078">DefaultDevice</a>, <a class="el" href="common__nav_8c_source.html#l00033">dist2_to_home</a>, <a class="el" href="main__ap_8c_source.html#l00610">KILL_MODE_DISTANCE</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00037">kill_throttle</a>, <a class="el" href="sim__ap_8c_source.html#l00040">launch</a>, <a class="el" href="main__ap_8c_source.html#l00606">LOW_BATTERY_DELAY</a>, <a class="el" href="main__ap_8c_source.html#l00614">MIN_SPEED_FOR_TAKEOFF</a>, <a class="el" href="sys__time_8h_source.html#l00069">sys_time::nb_sec</a>, <a class="el" href="nav_8h_source.html#l00045">Square</a>, <a class="el" href="state_8h_source.html#l00854">stateGetHorizontalSpeedNorm_f()</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, and <a class="el" href="fixedwing_2autopilot_8c_source.html#l00047">vsupply</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00274">handle_periodic_tasks_ap()</a>, and <a class="el" href="sim__ap_8c_source.html#l00062">sim_monitor_task()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00275">handle_periodic_tasks_ap()</a>, and <a class="el" href="sim__ap_8c_source.html#l00062">sim_monitor_task()</a>.</p>
 
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -373,11 +373,11 @@ Functions</h2></td></tr>
 
 <p>Compute desired_course. </p>
 
-<p>Definition at line <a class="el" href="main__ap_8c_source.html#l00462">462</a> of file <a class="el" href="main__ap_8c_source.html">main_ap.c</a>.</p>
+<p>Definition at line <a class="el" href="main__ap_8c_source.html#l00463">463</a> of file <a class="el" href="main__ap_8c_source.html">main_ap.c</a>.</p>
 
 <p>References <a class="el" href="fixedwing_2autopilot_8c_source.html#l00069">autopilot_send_mode()</a>, <a class="el" href="tcas_8h_source.html#l00057">CallTCAS</a>, <a class="el" href="common__nav_8c_source.html#l00138">common_nav_periodic_task_4Hz()</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00048">current</a>, <a class="el" href="downlink_8h_source.html#l00068">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00078">DefaultDevice</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00049">energy</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00051">gps_lost</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00051">h_ctl_auto1_rate</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00222">h_ctl_course_loop()</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00045">lateral_mode</a>, <a class="el" href="fixedwing_2autopilot_8h_source.html#l00077">LATERAL_MODE_COURSE</a>, <a class="el" href="sim__ap_8c_source.html#l00040">launch</a>, <a class="el" href="navigation_8c_source.html#l00397">nav_home()</a>, <a class="el" href="navigation_8c_source.html#l00336">nav_periodic_task()</a>, <a class="el" href="nav_8c_source.html#l00510">nav_without_gps()</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00036">pprz_mode</a>, <a class="el" href="fixedwing_2autopilot_8h_source.html#l00052">PPRZ_MODE_AUTO2</a>, <a class="el" href="fixedwing_2autopilot_8h_source.html#l00054">PPRZ_MODE_GPS_OUT_OF_ORDER</a>, <a class="el" href="fixedwing_2autopilot_8h_source.html#l00053">PPRZ_MODE_HOME</a>, <a class="el" href="nav_8h_source.html#l00203">SEND_NAVIGATION</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="energy__ctrl_8c_source.html#l00276">v_ctl_altitude_loop()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00077">v_ctl_mode</a>, and <a class="el" href="guidance__common_8h_source.html#l00039">V_CTL_MODE_AUTO_ALT</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00274">handle_periodic_tasks_ap()</a>, and <a class="el" href="sim__ap_8c_source.html#l00067">sim_nav_task()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00275">handle_periodic_tasks_ap()</a>, and <a class="el" href="sim__ap_8c_source.html#l00067">sim_nav_task()</a>.</p>
 
 <p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -422,11 +422,11 @@ Functions</h2></td></tr>
 <p>initialisation phase during boot</p>
 <p>then report periodicly </p>
 
-<p>Definition at line <a class="el" href="main__ap_8c_source.html#l00439">439</a> of file <a class="el" href="main__ap_8c_source.html">main_ap.c</a>.</p>
+<p>Definition at line <a class="el" href="main__ap_8c_source.html#l00440">440</a> of file <a class="el" href="main__ap_8c_source.html">main_ap.c</a>.</p>
 
 <p>References <a class="el" href="downlink_8h_source.html#l00068">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00078">DefaultDevice</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, and <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00274">handle_periodic_tasks_ap()</a>, and <a class="el" href="sim__ap_8c_source.html#l00050">sim_periodic_task()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00275">handle_periodic_tasks_ap()</a>, and <a class="el" href="sim__ap_8c_source.html#l00050">sim_periodic_task()</a>.</p>
 
 <p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -457,11 +457,11 @@ Functions</h2></td></tr>
 
 <p>Run at PERIODIC_FREQUENCY (60Hz if not defined) </p>
 
-<p>Definition at line <a class="el" href="main__ap_8c_source.html#l00579">579</a> of file <a class="el" href="main__ap_8c_source.html">main_ap.c</a>.</p>
+<p>Definition at line <a class="el" href="main__ap_8c_source.html#l00580">580</a> of file <a class="el" href="main__ap_8c_source.html">main_ap.c</a>.</p>
 
-<p>References <a class="el" href="ahrs__chimu__spi_8c_source.html#l00134">ahrs_propagate()</a>, <a class="el" href="apogee_2baro__board_8c_source.html#l00076">baro_periodic()</a>, <a class="el" href="imu__apogee_8c_source.html#l00087">imu_periodic()</a>, and <a class="el" href="ins__alt__float_8c_source.html#l00088">ins_periodic()</a>.</p>
+<p>References <a class="el" href="ahrs__chimu__spi_8c_source.html#l00134">ahrs_propagate()</a>, <a class="el" href="apogee_2baro__board_8c_source.html#l00076">baro_periodic()</a>, <a class="el" href="imu__apogee_8c_source.html#l00087">imu_periodic()</a>, and <a class="el" href="ins__alt__float_8c_source.html#l00089">ins_periodic()</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00274">handle_periodic_tasks_ap()</a>, and <a class="el" href="sim__ap_8c_source.html#l00050">sim_periodic_task()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00275">handle_periodic_tasks_ap()</a>, and <a class="el" href="sim__ap_8c_source.html#l00050">sim_periodic_task()</a>.</p>
 
 <p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -493,7 +493,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_cb1b347b64b61ba7f369ccfe68448b26.html">fixedwing</a></li><li class="navelem"><a class="el" href="main__ap_8h.html">main_ap.h</a></li>
-    <li class="footer">Generated on Thu Nov 14 2013 00:00:13 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Nov 21 2013 12:00:09 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

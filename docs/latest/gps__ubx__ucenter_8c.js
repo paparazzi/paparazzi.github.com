@@ -12,6 +12,7 @@ var gps__ubx__ucenter_8c =
     [ "GPS_SBAS_ENABLED", "gps__ubx__ucenter_8c.html#a359ba41adf558016cb042a8f013b0080", null ],
     [ "GPS_SBAS_INTEGRITY", "gps__ubx__ucenter_8c.html#ac99cb919825d17a9f31af8d067313d8a", null ],
     [ "GPS_SBAS_RANGING", "gps__ubx__ucenter_8c.html#ada44e94c8939b49533535f26af388379", null ],
+    [ "GPS_UBX_UCENTER_RATE", "gps__ubx__ucenter_8c.html#a179870d9ccd3fc30f92fb7c66f27953b", null ],
     [ "GPS_UBX_UCENTER_REPLY_ACK", "gps__ubx__ucenter_8c.html#a5f64b650a79b8c6bf7659a95d763ffc5", null ],
     [ "GPS_UBX_UCENTER_REPLY_NACK", "gps__ubx__ucenter_8c.html#a4681c16e99b7e0536877058cb7f016c3", null ],
     [ "GPS_UBX_UCENTER_REPLY_NONE", "gps__ubx__ucenter_8c.html#aa69a34a9eeb97fc368bef60e848f96b5", null ],

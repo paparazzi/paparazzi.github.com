@@ -122,6 +122,7 @@ var searchData=
   ['gps_5fubx_5freset',['gps_ubx_Reset',['../gps__ubx_8h.html#abfd4855f5a03ee6164132cbcd77322de',1,'gps_ubx.h']]],
   ['gps_5fubx_5fucenter_5fconfig_5fsteps',['GPS_UBX_UCENTER_CONFIG_STEPS',['../gps__ubx__ucenter_8h.html#a3316ecc8e914f2c8232603da1d962b28',1,'gps_ubx_ucenter.h']]],
   ['gps_5fubx_5fucenter_5fevent',['gps_ubx_ucenter_event',['../gps__ubx_8h.html#ab05acbd0da9a2284e41c534e29ae87ca',1,'gps_ubx.h']]],
+  ['gps_5fubx_5fucenter_5frate',['GPS_UBX_UCENTER_RATE',['../gps__ubx__ucenter_8c.html#a179870d9ccd3fc30f92fb7c66f27953b',1,'gps_ubx_ucenter.c']]],
   ['gps_5fubx_5fucenter_5freply_5fack',['GPS_UBX_UCENTER_REPLY_ACK',['../gps__ubx__ucenter_8c.html#a5f64b650a79b8c6bf7659a95d763ffc5',1,'gps_ubx_ucenter.c']]],
   ['gps_5fubx_5fucenter_5freply_5fnack',['GPS_UBX_UCENTER_REPLY_NACK',['../gps__ubx__ucenter_8c.html#a4681c16e99b7e0536877058cb7f016c3',1,'gps_ubx_ucenter.c']]],
   ['gps_5fubx_5fucenter_5freply_5fnone',['GPS_UBX_UCENTER_REPLY_NONE',['../gps__ubx__ucenter_8c.html#aa69a34a9eeb97fc368bef60e848f96b5',1,'gps_ubx_ucenter.c']]],

@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-652-g8a782ca</span>
+   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -166,6 +166,8 @@ Macros</h2></td></tr>
 <tr class="memitem:a7e278cedc70f686f9ff789c0c79b54bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#a7e278cedc70f686f9ff789c0c79b54bb">W5100TransportPut2ByteByAddr</a>(_dev, _byte)</td></tr>
 <tr class="memitem:a592294fcaad460242fe700691e61b71f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#a592294fcaad460242fe700691e61b71f">W5100TransportPut4ByteByAddr</a>(_dev, _byte)</td></tr>
 <tr class="memitem:ad6fa7eb9a2e85f7cdb68d2a738772368"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#ad6fa7eb9a2e85f7cdb68d2a738772368">W5100TransportPutDoubleByAddr</a>(_dev, _byte)</td></tr>
+<tr class="memitem:a2ae3fad2bc94575981e7583903d11217"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#a2ae3fad2bc94575981e7583903d11217">W5100TransportPutUint64ByAddr</a>(_dev, _byte)</td></tr>
+<tr class="memitem:acc744c435c9be7fa7c93114ac117a9d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#acc744c435c9be7fa7c93114ac117a9d0">W5100TransportPutInt64ByAddr</a>(_dev, _byte)</td></tr>
 <tr class="memitem:a63694f34586bfda9126c33d3029e5e11"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#a63694f34586bfda9126c33d3029e5e11">W5100TransportPutInt8ByAddr</a>(_dev, _x)&#160;&#160;&#160;<a class="el" href="w5100_8h.html#a45a56db807898bd4c9a163b1d89fd3e7">W5100TransportPut1ByteByAddr</a>(_dev, _x)</td></tr>
 <tr class="memitem:a2baa8d186b806ebc4233a97ba6583573"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#a2baa8d186b806ebc4233a97ba6583573">W5100TransportPutUint8ByAddr</a>(_dev, _x)&#160;&#160;&#160;<a class="el" href="w5100_8h.html#a45a56db807898bd4c9a163b1d89fd3e7">W5100TransportPut1ByteByAddr</a>(_dev, (const <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_x)</td></tr>
 <tr class="memitem:a57ba7fc5df606131cd5f73446ab0e60a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#a57ba7fc5df606131cd5f73446ab0e60a">W5100TransportPutInt16ByAddr</a>(_dev, _x)&#160;&#160;&#160;<a class="el" href="w5100_8h.html#a7e278cedc70f686f9ff789c0c79b54bb">W5100TransportPut2ByteByAddr</a>(_dev, (const <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_x)</td></tr>
@@ -175,11 +177,29 @@ Macros</h2></td></tr>
 <tr class="memitem:a8a61d6b0eecde78611f6a37c2cfc1a90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#a8a61d6b0eecde78611f6a37c2cfc1a90">W5100TransportPutFloatByAddr</a>(_dev, _x)&#160;&#160;&#160;<a class="el" href="w5100_8h.html#a592294fcaad460242fe700691e61b71f">W5100TransportPut4ByteByAddr</a>(_dev, (const <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_x)</td></tr>
 <tr class="memitem:aa28822c9fb51967975ccebe1577f408a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#aa28822c9fb51967975ccebe1577f408a">W5100TransportPutNamedUint8</a>(_dev, _name, _byte)&#160;&#160;&#160;<a class="el" href="w5100_8h.html#a7e470cf338b48ef2127069e1a051fa2a">W5100TransportPutUint8</a>(_dev, _byte)</td></tr>
 <tr class="memitem:a3fc6acab5ce972d0528735e6dd6bc5d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#a3fc6acab5ce972d0528735e6dd6bc5d0">W5100TransportPutArray</a>(_dev, _put, _n, _x)</td></tr>
+<tr class="memitem:a432a434d836c0b00e915328bf96622f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#a432a434d836c0b00e915328bf96622f0">W5100TransportPutInt8Array</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="w5100_8h.html#a3fc6acab5ce972d0528735e6dd6bc5d0">W5100TransportPutArray</a>(_dev, <a class="el" href="w5100_8h.html#a63694f34586bfda9126c33d3029e5e11">W5100TransportPutInt8ByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:a772987c1d36b74b6b37c5977d39e7b7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#a772987c1d36b74b6b37c5977d39e7b7f">W5100TransportPutUint8Array</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="w5100_8h.html#a3fc6acab5ce972d0528735e6dd6bc5d0">W5100TransportPutArray</a>(_dev, <a class="el" href="w5100_8h.html#a2baa8d186b806ebc4233a97ba6583573">W5100TransportPutUint8ByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:acf865d610d05405eee3deab96e4ad1c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#acf865d610d05405eee3deab96e4ad1c3">W5100TransportPutCharArray</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="w5100_8h.html#a3fc6acab5ce972d0528735e6dd6bc5d0">W5100TransportPutArray</a>(_dev, W5100TransportPutCharByAddr, _n, _x)</td></tr>
 <tr class="memitem:a548a6a89b148e4e0fe739b8cdf0e80c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#a548a6a89b148e4e0fe739b8cdf0e80c2">W5100TransportPutInt16Array</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="w5100_8h.html#a3fc6acab5ce972d0528735e6dd6bc5d0">W5100TransportPutArray</a>(_dev, <a class="el" href="w5100_8h.html#a57ba7fc5df606131cd5f73446ab0e60a">W5100TransportPutInt16ByAddr</a>, _n, _x)</td></tr>
 <tr class="memitem:ac4ad7a7f51356b05141bb2d15d9eebee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#ac4ad7a7f51356b05141bb2d15d9eebee">W5100TransportPutUint16Array</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="w5100_8h.html#a3fc6acab5ce972d0528735e6dd6bc5d0">W5100TransportPutArray</a>(_dev, <a class="el" href="w5100_8h.html#a23da73816ed631732de8bbf8808e6db1">W5100TransportPutUint16ByAddr</a>, _n, _x)</td></tr>
-<tr class="memitem:a772987c1d36b74b6b37c5977d39e7b7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#a772987c1d36b74b6b37c5977d39e7b7f">W5100TransportPutUint8Array</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="w5100_8h.html#a3fc6acab5ce972d0528735e6dd6bc5d0">W5100TransportPutArray</a>(_dev, <a class="el" href="w5100_8h.html#a2baa8d186b806ebc4233a97ba6583573">W5100TransportPutUint8ByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:ac22326f609c81ae3cc11c11c5d9c95fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#ac22326f609c81ae3cc11c11c5d9c95fa">W5100TransportPutInt32Array</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="w5100_8h.html#a3fc6acab5ce972d0528735e6dd6bc5d0">W5100TransportPutArray</a>(_dev, <a class="el" href="w5100_8h.html#aecc60d1cf7b624fe7eeadda6ec6649cd">W5100TransportPutInt32ByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:a569beb3da2b57532c770c000f70b3333"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#a569beb3da2b57532c770c000f70b3333">W5100TransportPutUint32Array</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="w5100_8h.html#a3fc6acab5ce972d0528735e6dd6bc5d0">W5100TransportPutArray</a>(_dev, <a class="el" href="w5100_8h.html#af787fae88e8f1d20fb0b0249e066cd0e">W5100TransportPutUint32ByAddr</a>, _n, _x)</td></tr>
 <tr class="memitem:aef7677dd5b583a66ab9b85eac0f3cc58"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#aef7677dd5b583a66ab9b85eac0f3cc58">W5100TransportPutFloatArray</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="w5100_8h.html#a3fc6acab5ce972d0528735e6dd6bc5d0">W5100TransportPutArray</a>(_dev, <a class="el" href="w5100_8h.html#a8a61d6b0eecde78611f6a37c2cfc1a90">W5100TransportPutFloatByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:aec4bb2e6a07d5fec9c7edb2bff32982c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#aec4bb2e6a07d5fec9c7edb2bff32982c">W5100TransportPutInt64Array</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="w5100_8h.html#a3fc6acab5ce972d0528735e6dd6bc5d0">W5100TransportPutArray</a>(_dev, <a class="el" href="w5100_8h.html#acc744c435c9be7fa7c93114ac117a9d0">W5100TransportPutInt64ByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:af8825a6449f64b106047fc5f8aabf1a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#af8825a6449f64b106047fc5f8aabf1a5">W5100TransportPutUint64Array</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="w5100_8h.html#a3fc6acab5ce972d0528735e6dd6bc5d0">W5100TransportPutArray</a>(_dev, <a class="el" href="w5100_8h.html#a2ae3fad2bc94575981e7583903d11217">W5100TransportPutUint64ByAddr</a>, _n, _x)</td></tr>
 <tr class="memitem:ab611c0b6e1d8d5fef7c6ef305c0db944"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#ab611c0b6e1d8d5fef7c6ef305c0db944">W5100TransportPutDoubleArray</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="w5100_8h.html#a3fc6acab5ce972d0528735e6dd6bc5d0">W5100TransportPutArray</a>(_dev, <a class="el" href="w5100_8h.html#ad6fa7eb9a2e85f7cdb68d2a738772368">W5100TransportPutDoubleByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:ab89dcd1bfc5f34b97940485c8a8cdc1f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#ab89dcd1bfc5f34b97940485c8a8cdc1f">W5100TransportPutFixedArray</a>(_dev, _put, _n, _x)</td></tr>
+<tr class="memitem:a6fdabe973d075a46ed757bbc9daea262"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#a6fdabe973d075a46ed757bbc9daea262">W5100TransportPutInt8FixedArray</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="w5100_8h.html#ab89dcd1bfc5f34b97940485c8a8cdc1f">W5100TransportPutFixedArray</a>(_dev, <a class="el" href="w5100_8h.html#a63694f34586bfda9126c33d3029e5e11">W5100TransportPutInt8ByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:a641b38881eb1ba37354c95a0332f9082"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#a641b38881eb1ba37354c95a0332f9082">W5100TransportPutUint8FixedArray</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="w5100_8h.html#ab89dcd1bfc5f34b97940485c8a8cdc1f">W5100TransportPutFixedArray</a>(_dev, <a class="el" href="w5100_8h.html#a2baa8d186b806ebc4233a97ba6583573">W5100TransportPutUint8ByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:ac25d632dd99ca2a5c8b3627cb8892562"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#ac25d632dd99ca2a5c8b3627cb8892562">W5100TransportPutCharFixedArray</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="w5100_8h.html#ab89dcd1bfc5f34b97940485c8a8cdc1f">W5100TransportPutFixedArray</a>(_dev, W5100TransportPutCharByAddr, _n, _x)</td></tr>
+<tr class="memitem:a6df8b804779669969e1549a1cdd15258"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#a6df8b804779669969e1549a1cdd15258">W5100TransportPutInt16FixedArray</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="w5100_8h.html#ab89dcd1bfc5f34b97940485c8a8cdc1f">W5100TransportPutFixedArray</a>(_dev, <a class="el" href="w5100_8h.html#a57ba7fc5df606131cd5f73446ab0e60a">W5100TransportPutInt16ByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:aeb5083f9349950a5d216e5489012ee36"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#aeb5083f9349950a5d216e5489012ee36">W5100TransportPutUint16FixedArray</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="w5100_8h.html#ab89dcd1bfc5f34b97940485c8a8cdc1f">W5100TransportPutFixedArray</a>(_dev, <a class="el" href="w5100_8h.html#a23da73816ed631732de8bbf8808e6db1">W5100TransportPutUint16ByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:a915ea9d344935d543afd545a97571e12"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#a915ea9d344935d543afd545a97571e12">W5100TransportPutInt32FixedArray</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="w5100_8h.html#ab89dcd1bfc5f34b97940485c8a8cdc1f">W5100TransportPutFixedArray</a>(_dev, <a class="el" href="w5100_8h.html#aecc60d1cf7b624fe7eeadda6ec6649cd">W5100TransportPutInt32ByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:a539ae374776176514a2ee5c8c76472fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#a539ae374776176514a2ee5c8c76472fa">W5100TransportPutUint32FixedArray</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="w5100_8h.html#ab89dcd1bfc5f34b97940485c8a8cdc1f">W5100TransportPutFixedArray</a>(_dev, <a class="el" href="w5100_8h.html#af787fae88e8f1d20fb0b0249e066cd0e">W5100TransportPutUint32ByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:a2e25ab44d96b381b0d611032f09877a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#a2e25ab44d96b381b0d611032f09877a1">W5100TransportPutFloatFixedArray</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="w5100_8h.html#ab89dcd1bfc5f34b97940485c8a8cdc1f">W5100TransportPutFixedArray</a>(_dev, <a class="el" href="w5100_8h.html#a8a61d6b0eecde78611f6a37c2cfc1a90">W5100TransportPutFloatByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:a8d772b78e0b42566833c684c6e00d6af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#a8d772b78e0b42566833c684c6e00d6af">W5100TransportPutInt64FixedArray</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="w5100_8h.html#ab89dcd1bfc5f34b97940485c8a8cdc1f">W5100TransportPutFixedArray</a>(_dev, <a class="el" href="w5100_8h.html#acc744c435c9be7fa7c93114ac117a9d0">W5100TransportPutInt64ByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:a007d23f55c06ee86d01efef513213b54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#a007d23f55c06ee86d01efef513213b54">W5100TransportPutUint64FixedArray</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="w5100_8h.html#ab89dcd1bfc5f34b97940485c8a8cdc1f">W5100TransportPutFixedArray</a>(_dev, <a class="el" href="w5100_8h.html#a2ae3fad2bc94575981e7583903d11217">W5100TransportPutUint64ByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:aab70cc88f2d9caf69fd4542d41426125"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#aab70cc88f2d9caf69fd4542d41426125">W5100TransportPutDoubleFixedArray</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="w5100_8h.html#ab89dcd1bfc5f34b97940485c8a8cdc1f">W5100TransportPutFixedArray</a>(_dev, <a class="el" href="w5100_8h.html#ad6fa7eb9a2e85f7cdb68d2a738772368">W5100TransportPutDoubleByAddr</a>, _n, _x)</td></tr>
 <tr class="memitem:a2fb61d3dc559aaa7d7f648c75023a021"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#a2fb61d3dc559aaa7d7f648c75023a021">W5100TransportHeader</a>(_dev, payload_len)</td></tr>
 <tr class="memitem:aa91ac60ee9a6d2f96a27282c2a8844b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#aa91ac60ee9a6d2f96a27282c2a8844b4">W5100TransportTrailer</a>(_dev)</td></tr>
 <tr class="memitem:a7668dedbc74a47bde384b2b911379073"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="w5100_8h.html#a7668dedbc74a47bde384b2b911379073">UNINIT</a>&#160;&#160;&#160;0</td></tr>
@@ -227,9 +247,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="w5100_8h_source.html#l00175">175</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00228">228</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
 
-<p>Referenced by <a class="el" href="w5100_8h_source.html#l00188">parse_w5100()</a>.</p>
+<p>Referenced by <a class="el" href="w5100_8h_source.html#l00241">parse_w5100()</a>.</p>
 
 </div>
 </div>
@@ -243,9 +263,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="w5100_8h_source.html#l00173">173</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00226">226</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
 
-<p>Referenced by <a class="el" href="w5100_8h_source.html#l00188">parse_w5100()</a>.</p>
+<p>Referenced by <a class="el" href="w5100_8h_source.html#l00241">parse_w5100()</a>.</p>
 
 </div>
 </div>
@@ -259,9 +279,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="w5100_8h_source.html#l00174">174</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00227">227</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
 
-<p>Referenced by <a class="el" href="w5100_8h_source.html#l00188">parse_w5100()</a>.</p>
+<p>Referenced by <a class="el" href="w5100_8h_source.html#l00241">parse_w5100()</a>.</p>
 
 </div>
 </div>
@@ -275,9 +295,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="w5100_8h_source.html#l00172">172</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00225">225</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
 
-<p>Referenced by <a class="el" href="w5100_8h_source.html#l00188">parse_w5100()</a>.</p>
+<p>Referenced by <a class="el" href="w5100_8h_source.html#l00241">parse_w5100()</a>.</p>
 
 </div>
 </div>
@@ -293,7 +313,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="w5100_8h_source.html#l00036">36</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
 
-<p>Referenced by <a class="el" href="w5100_8h_source.html#l00188">parse_w5100()</a>.</p>
+<p>Referenced by <a class="el" href="w5100_8h_source.html#l00241">parse_w5100()</a>.</p>
 
 </div>
 </div>
@@ -309,9 +329,9 @@ Variables</h2></td></tr>
 
 <p>Receiving pprz messages. </p>
 
-<p>Definition at line <a class="el" href="w5100_8h_source.html#l00171">171</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00224">224</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
 
-<p>Referenced by <a class="el" href="w5100_8h_source.html#l00188">parse_w5100()</a>, and <a class="el" href="w5100_8h_source.html#l00239">w5100_read_buffer()</a>.</p>
+<p>Referenced by <a class="el" href="w5100_8h_source.html#l00241">parse_w5100()</a>, and <a class="el" href="w5100_8h_source.html#l00292">w5100_read_buffer()</a>.</p>
 
 </div>
 </div>
@@ -343,7 +363,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="w5100_8h_source.html#l00033">33</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
 
-<p>Referenced by <a class="el" href="w5100_8h_source.html#l00239">w5100_read_buffer()</a>.</p>
+<p>Referenced by <a class="el" href="w5100_8h_source.html#l00292">w5100_read_buffer()</a>.</p>
 
 </div>
 </div>
@@ -377,7 +397,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="w5100_8h_source.html#l00249">249</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00302">302</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
 
 </div>
 </div>
@@ -431,7 +451,7 @@ Variables</h2></td></tr>
 <div class="line">    }                                           \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="w5100_8h_source.html#l00251">251</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00304">304</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
 
 </div>
 </div>
@@ -598,7 +618,7 @@ Variables</h2></td></tr>
 <div class="line">ck_a = msg_len; <a class="code" href="audio__telemetry__hw_8c.html#aaef6f57fdac39726811fd081a16fa711">ck_b</a> = msg_len; \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="w5100_8h_source.html#l00154">154</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00207">207</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
 
 </div>
 </div>
@@ -802,7 +822,75 @@ Variables</h2></td></tr>
 <div class="line">} \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="w5100_8h_source.html#l00138">138</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00154">154</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acf865d610d05405eee3deab96e4ad1c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define W5100TransportPutCharArray</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="w5100_8h.html#a3fc6acab5ce972d0528735e6dd6bc5d0">W5100TransportPutArray</a>(_dev, W5100TransportPutCharByAddr, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00165">165</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac25d632dd99ca2a5c8b3627cb8892562"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define W5100TransportPutCharFixedArray</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="w5100_8h.html#ab89dcd1bfc5f34b97940485c8a8cdc1f">W5100TransportPutFixedArray</a>(_dev, W5100TransportPutCharByAddr, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00191">191</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
 
 </div>
 </div>
@@ -836,7 +924,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="w5100_8h_source.html#l00151">151</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00178">178</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
 
 </div>
 </div>
@@ -868,7 +956,87 @@ Variables</h2></td></tr>
 <div class="line">    W5100TransportPut4ByteByAddr(_dev, (<span class="keyword">const</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_byte+4);    \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="w5100_8h_source.html#l00122">122</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00130">130</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aab70cc88f2d9caf69fd4542d41426125"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define W5100TransportPutDoubleFixedArray</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="w5100_8h.html#ab89dcd1bfc5f34b97940485c8a8cdc1f">W5100TransportPutFixedArray</a>(_dev, <a class="el" href="w5100_8h.html#ad6fa7eb9a2e85f7cdb68d2a738772368">W5100TransportPutDoubleByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00204">204</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab89dcd1bfc5f34b97940485c8a8cdc1f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define W5100TransportPutFixedArray</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_put, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">{ <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">\</a></div>
+<div class="line"><a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">  uint8_t</a> _i; \</div>
+<div class="line">  for(_i = 0; _i &lt; _n; _i++) { \</div>
+<div class="line">    _put(_dev, &amp;_x[_i]); \</div>
+<div class="line">  } \</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00181">181</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
 
 </div>
 </div>
@@ -902,7 +1070,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="w5100_8h_source.html#l00150">150</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00173">173</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
 
 </div>
 </div>
@@ -930,7 +1098,41 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="w5100_8h_source.html#l00135">135</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00151">151</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2e25ab44d96b381b0d611032f09877a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define W5100TransportPutFloatFixedArray</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="w5100_8h.html#ab89dcd1bfc5f34b97940485c8a8cdc1f">W5100TransportPutFixedArray</a>(_dev, <a class="el" href="w5100_8h.html#a8a61d6b0eecde78611f6a37c2cfc1a90">W5100TransportPutFloatByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00199">199</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
 
 </div>
 </div>
@@ -964,7 +1166,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="w5100_8h_source.html#l00146">146</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00167">167</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
 
 </div>
 </div>
@@ -992,7 +1194,75 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="w5100_8h_source.html#l00131">131</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00147">147</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6df8b804779669969e1549a1cdd15258"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define W5100TransportPutInt16FixedArray</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="w5100_8h.html#ab89dcd1bfc5f34b97940485c8a8cdc1f">W5100TransportPutFixedArray</a>(_dev, <a class="el" href="w5100_8h.html#a57ba7fc5df606131cd5f73446ab0e60a">W5100TransportPutInt16ByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00193">193</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac22326f609c81ae3cc11c11c5d9c95fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define W5100TransportPutInt32Array</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="w5100_8h.html#a3fc6acab5ce972d0528735e6dd6bc5d0">W5100TransportPutArray</a>(_dev, <a class="el" href="w5100_8h.html#aecc60d1cf7b624fe7eeadda6ec6649cd">W5100TransportPutInt32ByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00170">170</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
 
 </div>
 </div>
@@ -1020,7 +1290,175 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="w5100_8h_source.html#l00133">133</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00149">149</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a915ea9d344935d543afd545a97571e12"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define W5100TransportPutInt32FixedArray</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="w5100_8h.html#ab89dcd1bfc5f34b97940485c8a8cdc1f">W5100TransportPutFixedArray</a>(_dev, <a class="el" href="w5100_8h.html#aecc60d1cf7b624fe7eeadda6ec6649cd">W5100TransportPutInt32ByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00196">196</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aec4bb2e6a07d5fec9c7edb2bff32982c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define W5100TransportPutInt64Array</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="w5100_8h.html#a3fc6acab5ce972d0528735e6dd6bc5d0">W5100TransportPutArray</a>(_dev, <a class="el" href="w5100_8h.html#acc744c435c9be7fa7c93114ac117a9d0">W5100TransportPutInt64ByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00175">175</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acc744c435c9be7fa7c93114ac117a9d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define W5100TransportPutInt64ByAddr</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_byte&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">{ \</div>
+<div class="line">    W5100TransportPut4ByteByAddr(_dev, (<span class="keyword">const</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_byte);  \</div>
+<div class="line">    W5100TransportPut4ByteByAddr(_dev, (<span class="keyword">const</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_byte+4);  \</div>
+<div class="line">  }</div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00138">138</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8d772b78e0b42566833c684c6e00d6af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define W5100TransportPutInt64FixedArray</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="w5100_8h.html#ab89dcd1bfc5f34b97940485c8a8cdc1f">W5100TransportPutFixedArray</a>(_dev, <a class="el" href="w5100_8h.html#acc744c435c9be7fa7c93114ac117a9d0">W5100TransportPutInt64ByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00201">201</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a432a434d836c0b00e915328bf96622f0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define W5100TransportPutInt8Array</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="w5100_8h.html#a3fc6acab5ce972d0528735e6dd6bc5d0">W5100TransportPutArray</a>(_dev, <a class="el" href="w5100_8h.html#a63694f34586bfda9126c33d3029e5e11">W5100TransportPutInt8ByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00162">162</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
 
 </div>
 </div>
@@ -1048,7 +1486,41 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="w5100_8h_source.html#l00129">129</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00145">145</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6fdabe973d075a46ed757bbc9daea262"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define W5100TransportPutInt8FixedArray</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="w5100_8h.html#ab89dcd1bfc5f34b97940485c8a8cdc1f">W5100TransportPutFixedArray</a>(_dev, <a class="el" href="w5100_8h.html#a63694f34586bfda9126c33d3029e5e11">W5100TransportPutInt8ByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00188">188</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
 
 </div>
 </div>
@@ -1082,7 +1554,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="w5100_8h_source.html#l00136">136</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00152">152</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
 
 </div>
 </div>
@@ -1116,7 +1588,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="w5100_8h_source.html#l00148">148</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00168">168</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
 
 </div>
 </div>
@@ -1144,7 +1616,75 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="w5100_8h_source.html#l00132">132</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00148">148</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aeb5083f9349950a5d216e5489012ee36"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define W5100TransportPutUint16FixedArray</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="w5100_8h.html#ab89dcd1bfc5f34b97940485c8a8cdc1f">W5100TransportPutFixedArray</a>(_dev, <a class="el" href="w5100_8h.html#a23da73816ed631732de8bbf8808e6db1">W5100TransportPutUint16ByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00194">194</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a569beb3da2b57532c770c000f70b3333"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define W5100TransportPutUint32Array</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="w5100_8h.html#a3fc6acab5ce972d0528735e6dd6bc5d0">W5100TransportPutArray</a>(_dev, <a class="el" href="w5100_8h.html#af787fae88e8f1d20fb0b0249e066cd0e">W5100TransportPutUint32ByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00171">171</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
 
 </div>
 </div>
@@ -1172,7 +1712,141 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00150">150</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a539ae374776176514a2ee5c8c76472fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define W5100TransportPutUint32FixedArray</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="w5100_8h.html#ab89dcd1bfc5f34b97940485c8a8cdc1f">W5100TransportPutFixedArray</a>(_dev, <a class="el" href="w5100_8h.html#af787fae88e8f1d20fb0b0249e066cd0e">W5100TransportPutUint32ByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00197">197</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af8825a6449f64b106047fc5f8aabf1a5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define W5100TransportPutUint64Array</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="w5100_8h.html#a3fc6acab5ce972d0528735e6dd6bc5d0">W5100TransportPutArray</a>(_dev, <a class="el" href="w5100_8h.html#a2ae3fad2bc94575981e7583903d11217">W5100TransportPutUint64ByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00176">176</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2ae3fad2bc94575981e7583903d11217"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define W5100TransportPutUint64ByAddr</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_byte&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">{ \</div>
+<div class="line">    W5100TransportPut4ByteByAddr(_dev, (<span class="keyword">const</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_byte);  \</div>
+<div class="line">    W5100TransportPut4ByteByAddr(_dev, (<span class="keyword">const</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_byte+4);  \</div>
+<div class="line">  }</div>
+</div><!-- fragment -->
 <p>Definition at line <a class="el" href="w5100_8h_source.html#l00134">134</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a007d23f55c06ee86d01efef513213b54"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define W5100TransportPutUint64FixedArray</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="w5100_8h.html#ab89dcd1bfc5f34b97940485c8a8cdc1f">W5100TransportPutFixedArray</a>(_dev, <a class="el" href="w5100_8h.html#a2ae3fad2bc94575981e7583903d11217">W5100TransportPutUint64ByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00202">202</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
 
 </div>
 </div>
@@ -1239,7 +1913,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="w5100_8h_source.html#l00149">149</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00163">163</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
 
 </div>
 </div>
@@ -1267,7 +1941,41 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="w5100_8h_source.html#l00130">130</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00146">146</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a641b38881eb1ba37354c95a0332f9082"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define W5100TransportPutUint8FixedArray</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="w5100_8h.html#ab89dcd1bfc5f34b97940485c8a8cdc1f">W5100TransportPutFixedArray</a>(_dev, <a class="el" href="w5100_8h.html#a2baa8d186b806ebc4233a97ba6583573">W5100TransportPutUint8ByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00189">189</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
 
 </div>
 </div>
@@ -1336,7 +2044,7 @@ Variables</h2></td></tr>
 <div class="line">W5100TransportSendMessage(_dev); \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="w5100_8h_source.html#l00161">161</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00214">214</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
 
 </div>
 </div>
@@ -1412,11 +2120,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="w5100_8h_source.html#l00188">188</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00241">241</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
 
-<p>References <a class="el" href="discsurvey_8c_source.html#l00038">c</a>, <a class="el" href="w5100_8h_source.html#l00183">w5100_transport::ck_a</a>, <a class="el" href="w5100_8h_source.html#l00183">w5100_transport::ck_b</a>, <a class="el" href="transport_8h_source.html#l00047">transport::error</a>, <a class="el" href="w5100_8h_source.html#l00175">GOT_CRC1</a>, <a class="el" href="w5100_8h_source.html#l00173">GOT_LENGTH</a>, <a class="el" href="w5100_8h_source.html#l00174">GOT_PAYLOAD</a>, <a class="el" href="w5100_8h_source.html#l00172">GOT_STX</a>, <a class="el" href="transport_8h_source.html#l00045">transport::msg_received</a>, <a class="el" href="transport_8h_source.html#l00047">transport::ovrn</a>, <a class="el" href="transport_8h_source.html#l00041">transport::payload</a>, <a class="el" href="w5100_8h_source.html#l00182">w5100_transport::payload_idx</a>, <a class="el" href="transport_8h_source.html#l00043">transport::payload_len</a>, <a class="el" href="w5100_8h_source.html#l00181">w5100_transport::status</a>, <a class="el" href="w5100_8h_source.html#l00036">STX</a>, <a class="el" href="w5100_8h_source.html#l00179">w5100_transport::trans</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, and <a class="el" href="w5100_8h_source.html#l00171">UNINIT</a>.</p>
+<p>References <a class="el" href="discsurvey_8c_source.html#l00038">c</a>, <a class="el" href="w5100_8h_source.html#l00236">w5100_transport::ck_a</a>, <a class="el" href="w5100_8h_source.html#l00236">w5100_transport::ck_b</a>, <a class="el" href="transport_8h_source.html#l00047">transport::error</a>, <a class="el" href="w5100_8h_source.html#l00228">GOT_CRC1</a>, <a class="el" href="w5100_8h_source.html#l00226">GOT_LENGTH</a>, <a class="el" href="w5100_8h_source.html#l00227">GOT_PAYLOAD</a>, <a class="el" href="w5100_8h_source.html#l00225">GOT_STX</a>, <a class="el" href="transport_8h_source.html#l00045">transport::msg_received</a>, <a class="el" href="transport_8h_source.html#l00047">transport::ovrn</a>, <a class="el" href="transport_8h_source.html#l00041">transport::payload</a>, <a class="el" href="w5100_8h_source.html#l00235">w5100_transport::payload_idx</a>, <a class="el" href="transport_8h_source.html#l00043">transport::payload_len</a>, <a class="el" href="w5100_8h_source.html#l00234">w5100_transport::status</a>, <a class="el" href="w5100_8h_source.html#l00036">STX</a>, <a class="el" href="w5100_8h_source.html#l00232">w5100_transport::trans</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, and <a class="el" href="w5100_8h_source.html#l00224">UNINIT</a>.</p>
 
-<p>Referenced by <a class="el" href="w5100_8h_source.html#l00239">w5100_read_buffer()</a>.</p>
+<p>Referenced by <a class="el" href="w5100_8h_source.html#l00292">w5100_read_buffer()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1449,7 +2157,7 @@ Variables</h2></td></tr>
 
 <p>References <a class="el" href="w5100_8c_source.html#l00031">CMD_SOCKET</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, and <a class="el" href="w5100_8c_source.html#l00280">w5100_rx_size()</a>.</p>
 
-<p>Referenced by <a class="el" href="w5100_8h_source.html#l00239">w5100_read_buffer()</a>.</p>
+<p>Referenced by <a class="el" href="w5100_8h_source.html#l00292">w5100_read_buffer()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1493,7 +2201,7 @@ Variables</h2></td></tr>
 
 <p>References <a class="el" href="spi_8h_source.html#l00152">spi_transaction::bitorder</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::cdiv</a>, <a class="el" href="w5100_8c_source.html#l00075">chip0</a>, <a class="el" href="w5100_8c_source.html#l00031">CMD_SOCKET</a>, <a class="el" href="w5100_8c_source.html#l00299">configure_socket()</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::cpha</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::cpol</a>, <a class="el" href="w5100_8h_source.html#l00046">w5100_periph::curbuf</a>, <a class="el" href="w5100_8c_source.html#l00084">dest</a>, <a class="el" href="w5100_8c_source.html#l00086">dport</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::dss</a>, <a class="el" href="omap_2mcu__periph_2gpio__arch_8h.html#aa94dfa6db378d98566e22e193c7a8ab7">gpio_clear()</a>, <a class="el" href="omap_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85">gpio_set()</a>, <a class="el" href="spi_8h_source.html#l00143">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="w5100_8c_source.html#l00083">ip</a>, <a class="el" href="w5100_8c_source.html#l00080">mac</a>, <a class="el" href="spi_8h_source.html#l00144">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="w5100_8c_source.html#l00091">RBASE</a>, <a class="el" href="w5100_8c_source.html#l00051">REG_GAR</a>, <a class="el" href="w5100_8c_source.html#l00047">REG_MR</a>, <a class="el" href="w5100_8c_source.html#l00048">REG_RX_MEM</a>, <a class="el" href="w5100_8c_source.html#l00053">REG_SHAR</a>, <a class="el" href="w5100_8c_source.html#l00054">REG_SIPR</a>, <a class="el" href="w5100_8c_source.html#l00052">REG_SUBR</a>, <a class="el" href="w5100_8c_source.html#l00049">REG_TX_MEM</a>, <a class="el" href="w5100_8c_source.html#l00093">RSIZE</a>, <a class="el" href="w5100_8c_source.html#l00088">RST</a>, <a class="el" href="w5100_8c_source.html#l00028">RXBUF_BASE</a>, <a class="el" href="w5100_8c_source.html#l00090">SBASE</a>, <a class="el" href="spi_8h_source.html#l00148">spi_transaction::select</a>, <a class="el" href="spi_8h_source.html#l00147">spi_transaction::slave_idx</a>, <a class="el" href="w5100_8c_source.html#l00039">SNMR_MULTI</a>, <a class="el" href="w5100_8c_source.html#l00029">SOCKETS</a>, <a class="el" href="spi_8h_source.html#l00068">SPICphaEdge1</a>, <a class="el" href="spi_8h_source.html#l00077">SPICpolIdleLow</a>, <a class="el" href="spi_8h_source.html#l00119">SPIDiv64</a>, <a class="el" href="spi_8h_source.html#l00084">SPIDss8bit</a>, <a class="el" href="spi_8h_source.html#l00106">SPIMSBFirst</a>, <a class="el" href="spi_8h_source.html#l00057">SPISelectUnselect</a>, <a class="el" href="w5100_8c_source.html#l00092">SSIZE</a>, <a class="el" href="w5100_8h_source.html#l00045">w5100_periph::status</a>, <a class="el" href="w5100_8c_source.html#l00085">subnet</a>, <a class="el" href="lpc21_2mcu__periph_2sys__time__arch_8h_source.html#l00073">sys_time_usleep()</a>, <a class="el" href="w5100_8c_source.html#l00032">TELEM_SOCKET</a>, <a class="el" href="w5100_8c_source.html#l00027">TXBUF_BASE</a>, <a class="el" href="w5100_8c_source.html#l00103">w5100_set()</a>, <a class="el" href="w5100_8c_source.html#l00130">w5100_set_buffer()</a>, <a class="el" href="w5100_8c_source.html#l00072">W5100_SLAVE_IDX</a>, <a class="el" href="w5100_8c_source.html#l00096">w5100_spi</a>, <a class="el" href="w5100_8h_source.html#l00039">W5100StatusUninit</a>, <a class="el" href="w5100_8h_source.html#l00056">w5100_periph::work_rx</a>, and <a class="el" href="w5100_8h_source.html#l00055">w5100_periph::work_tx</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00176">init_ap()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00177">init_ap()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1541,9 +2249,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="w5100_8h_source.html#l00232">232</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00285">285</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
 
-<p>References <a class="el" href="main__demo5_8c_source.html#l00059">dl_buffer</a>, <a class="el" href="main__demo5_8c_source.html#l00056">dl_msg_available</a>, <a class="el" href="transport_8h_source.html#l00041">transport::payload</a>, <a class="el" href="transport_8h_source.html#l00043">transport::payload_len</a>, <a class="el" href="w5100_8h_source.html#l00179">w5100_transport::trans</a>, and <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>.</p>
+<p>References <a class="el" href="main__demo5_8c_source.html#l00059">dl_buffer</a>, <a class="el" href="main__demo5_8c_source.html#l00056">dl_msg_available</a>, <a class="el" href="transport_8h_source.html#l00041">transport::payload</a>, <a class="el" href="transport_8h_source.html#l00043">transport::payload_len</a>, <a class="el" href="w5100_8h_source.html#l00232">w5100_transport::trans</a>, and <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>.</p>
 
 </div>
 </div>
@@ -1569,9 +2277,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="w5100_8h_source.html#l00239">239</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
+<p>Definition at line <a class="el" href="w5100_8h_source.html#l00292">292</a> of file <a class="el" href="w5100_8h_source.html">w5100.h</a>.</p>
 
-<p>References <a class="el" href="discsurvey_8c_source.html#l00038">c</a>, <a class="el" href="transport_8h_source.html#l00045">transport::msg_received</a>, <a class="el" href="w5100_8h_source.html#l00188">parse_w5100()</a>, <a class="el" href="w5100_8c_source.html#l00077">rx_buf</a>, <a class="el" href="w5100_8h_source.html#l00181">w5100_transport::status</a>, <a class="el" href="w5100_8h_source.html#l00179">w5100_transport::trans</a>, <a class="el" href="w5100_8h_source.html#l00171">UNINIT</a>, <a class="el" href="w5100_8c_source.html#l00324">w5100_ch_available()</a>, <a class="el" href="w5100_8c_source.html#l00331">w5100_receive()</a>, and <a class="el" href="w5100_8h_source.html#l00033">W5100_RX_BUFFER_SIZE</a>.</p>
+<p>References <a class="el" href="discsurvey_8c_source.html#l00038">c</a>, <a class="el" href="transport_8h_source.html#l00045">transport::msg_received</a>, <a class="el" href="w5100_8h_source.html#l00241">parse_w5100()</a>, <a class="el" href="w5100_8c_source.html#l00077">rx_buf</a>, <a class="el" href="w5100_8h_source.html#l00234">w5100_transport::status</a>, <a class="el" href="w5100_8h_source.html#l00232">w5100_transport::trans</a>, <a class="el" href="w5100_8h_source.html#l00224">UNINIT</a>, <a class="el" href="w5100_8c_source.html#l00324">w5100_ch_available()</a>, <a class="el" href="w5100_8c_source.html#l00331">w5100_receive()</a>, and <a class="el" href="w5100_8h_source.html#l00033">W5100_RX_BUFFER_SIZE</a>.</p>
 
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1614,7 +2322,7 @@ Variables</h2></td></tr>
 
 <p>References <a class="el" href="w5100_8c_source.html#l00031">CMD_SOCKET</a>, <a class="el" href="w5100_8c_source.html#l00057">SOCK_CR</a>, <a class="el" href="w5100_8c_source.html#l00037">SOCK_RECV</a>, <a class="el" href="w5100_8c_source.html#l00065">SOCK_RXRD</a>, <a class="el" href="w5100_8c_source.html#l00356">w5100_read_data()</a>, <a class="el" href="w5100_8c_source.html#l00146">w5100_sock_get16()</a>, and <a class="el" href="w5100_8c_source.html#l00138">w5100_sock_set()</a>.</p>
 
-<p>Referenced by <a class="el" href="w5100_8h_source.html#l00239">w5100_read_buffer()</a>.</p>
+<p>Referenced by <a class="el" href="w5100_8h_source.html#l00292">w5100_read_buffer()</a>.</p>
 
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1764,7 +2472,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="w5100_8c_source.html#l00077">77</a> of file <a class="el" href="w5100_8c_source.html">w5100.c</a>.</p>
 
-<p>Referenced by <a class="el" href="w5100_8h_source.html#l00239">w5100_read_buffer()</a>.</p>
+<p>Referenced by <a class="el" href="w5100_8h_source.html#l00292">w5100_read_buffer()</a>.</p>
 
 </div>
 </div>
@@ -1788,7 +2496,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_6567a5a7be991f15b7628b3b0eb084bd.html">datalink</a></li><li class="navelem"><a class="el" href="w5100_8h.html">w5100.h</a></li>
-    <li class="footer">Generated on Thu Nov 14 2013 00:00:15 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Nov 21 2013 12:00:11 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

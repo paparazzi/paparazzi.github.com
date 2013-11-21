@@ -1,7 +1,7 @@
 var structgps__ubx__ucenter__struct =
 [
-    [ "baud_init", "structgps__ubx__ucenter__struct.html#a4ef0925d52b5e5062a2e953efa301909", null ],
-    [ "baud_run", "structgps__ubx__ucenter__struct.html#a556d70607a67f2495356e2fe5e21f316", null ],
+    [ "baud_init", "structgps__ubx__ucenter__struct.html#a0bc8292f330a44c80920e0d49d6d6c65", null ],
+    [ "baud_run", "structgps__ubx__ucenter__struct.html#acae4010c5d7917de4771d4c369ae75a5", null ],
     [ "cnt", "structgps__ubx__ucenter__struct.html#a3107fadf1e690c29214c96e458671950", null ],
     [ "hw_ver_h", "structgps__ubx__ucenter__struct.html#a874437be54c3f9c1625d1479133c9bc2", null ],
     [ "hw_ver_l", "structgps__ubx__ucenter__struct.html#a4c6a3b4aebc4658f28b6dd1caa61fd5c", null ],

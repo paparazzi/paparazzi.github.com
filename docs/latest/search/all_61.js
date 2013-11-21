@@ -385,7 +385,7 @@ var searchData=
   ['adxl345_2eh',['adxl345.h',['../adxl345_8h.html',1,'']]],
   ['adxl345_5faddr',['ADXL345_ADDR',['../adxl345__regs_8h.html#aae2344e3068fa610bf770f497a5582b7',1,'adxl345_regs.h']]],
   ['adxl345_5faddr_5falt',['ADXL345_ADDR_ALT',['../adxl345__regs_8h.html#a646d6b4b77e059d8ae93506700cd6a0c',1,'adxl345_regs.h']]],
-  ['adxl345_5fdata_5fformat',['ADXL345_DATA_FORMAT',['../adxl345__i2c_8c.html#a45aacd07b6d543e2b5d2e1ae160e21c9',1,'ADXL345_DATA_FORMAT():&#160;adxl345_i2c.c'],['../adxl345_8h.html#ac6863633d46c7db4982eb0f78fec8a3f',1,'adxl345_data_format(struct Adxl345Config *c):&#160;adxl345.h']]],
+  ['adxl345_5fdata_5fformat',['adxl345_data_format',['../adxl345_8h.html#ac6863633d46c7db4982eb0f78fec8a3f',1,'adxl345_data_format(struct Adxl345Config *c):&#160;adxl345.h'],['../adxl345__i2c_8c.html#a45aacd07b6d543e2b5d2e1ae160e21c9',1,'ADXL345_DATA_FORMAT():&#160;adxl345_i2c.c']]],
   ['adxl345_5ffull_5fres',['ADXL345_FULL_RES',['../adxl345__regs_8h.html#a3d50abf02ab8bea3939b9093b152eec4',1,'adxl345_regs.h']]],
   ['adxl345_5fi2c',['Adxl345_I2c',['../structAdxl345__I2c.html',1,'']]],
   ['adxl345_5fi2c_2ec',['adxl345_i2c.c',['../adxl345__i2c_8c.html',1,'']]],

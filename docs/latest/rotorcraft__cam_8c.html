@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-652-g8a782ca</span>
+   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -111,6 +111,9 @@ $(document).ready(function(){initNavTree('rotorcraft__cam_8c.html','');});
 <div class="title">rotorcraft_cam.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Camera control module for rotorcraft.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="rotorcraft__cam_8h_source.html">modules/cam_control/rotorcraft_cam.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="actuators_8h_source.html">subsystems/actuators.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br/>
@@ -124,7 +127,7 @@ $(document).ready(function(){initNavTree('rotorcraft__cam_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft__cam_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2cam__control_2rotorcraft__cam_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2cam__control_2rotorcraft__cam_8c" id="sw_2airborne_2modules_2cam__control_2rotorcraft__cam_8c">
-<area shape="rect" id="node3" href="rotorcraft__cam_8h.html" title="modules/cam_control\l/rotorcraft_cam.h" alt="" coords="1071,286,1217,330"/><area shape="rect" id="node29" href="actuators_8h.html" title="Hardware independent API for actuators (servos, motor controllers)." alt="" coords="1292,294,1452,322"/><area shape="rect" id="node37" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="701,201,763,229"/><area shape="rect" id="node64" href="navigation_8h.html" title="Rotorcraft navigation functions." alt="" coords="275,193,408,237"/><area shape="rect" id="node73" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code)." alt="" coords="1799,99,1940,143"/><area shape="rect" id="node9" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="765,387,923,415"/><area shape="rect" id="node27" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API" alt="" coords="997,387,1045,415"/><area shape="rect" id="node13" href="pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="501,481,640,509"/><area shape="rect" id="node20" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="901,481,1035,509"/><area shape="rect" id="node31" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1657,481,1743,509"/><area shape="rect" id="node33" href="inttypes_8h.html" title="inttypes.h" alt="" coords="2124,566,2201,594"/><area shape="rect" id="node40" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="472,387,640,415"/><area shape="rect" id="node46" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="432,286,565,330"/><area shape="rect" id="node52" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="275,286,408,330"/><area shape="rect" id="node57" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversion." alt="" coords="715,286,861,330"/><area shape="rect" id="node48" href="pprz__geodetic_8h.html" title="pprz_geodetic.h" alt="" coords="285,387,397,415"/><area shape="rect" id="node69" href="common__flight__plan_8h.html" title="subsystems/navigation\l/common_flight_plan.h" alt="" coords="5,473,160,517"/><area shape="rect" id="node78" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="1527,294,1652,322"/><area shape="rect" id="node83" href="downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="1892,193,2033,237"/><area shape="rect" id="node90" href="udp_8h.html" title="subsystems/datalink\l/udp.h" alt="" coords="2057,286,2199,330"/><area shape="rect" id="node98" href="pprz__transport_8h.html" title="Extra datalink using PPRZ protocol." alt="" coords="2093,379,2235,423"/><area shape="rect" id="node108" href="xbee_8h.html" title="subsystems/datalink\l/xbee.h" alt="" coords="2273,286,2415,330"/><area shape="rect" id="node115" href="w5100_8h.html" title="subsystems/datalink\l/w5100.h" alt="" coords="1676,286,1817,330"/><area shape="rect" id="node92" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="1823,473,1964,517"/><area shape="rect" id="node103" href="transport_8h.html" title="generic transport header" alt="" coords="2039,473,2180,517"/><area shape="rect" id="node112" href="xbee24_8h.html" title="subsystems/datalink\l/xbee24.h" alt="" coords="2309,379,2451,423"/></map>
+<area shape="rect" id="node3" href="rotorcraft__cam_8h.html" title="Camera control module for rotorcraft." alt="" coords="1071,286,1217,330"/><area shape="rect" id="node29" href="actuators_8h.html" title="Hardware independent API for actuators (servos, motor controllers)." alt="" coords="1292,294,1452,322"/><area shape="rect" id="node37" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="701,201,763,229"/><area shape="rect" id="node64" href="navigation_8h.html" title="Rotorcraft navigation functions." alt="" coords="275,193,408,237"/><area shape="rect" id="node73" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code)." alt="" coords="1799,99,1940,143"/><area shape="rect" id="node9" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="765,387,923,415"/><area shape="rect" id="node27" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API" alt="" coords="997,387,1045,415"/><area shape="rect" id="node13" href="pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="501,481,640,509"/><area shape="rect" id="node20" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="901,481,1035,509"/><area shape="rect" id="node31" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1657,481,1743,509"/><area shape="rect" id="node33" href="inttypes_8h.html" title="inttypes.h" alt="" coords="2124,566,2201,594"/><area shape="rect" id="node40" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="472,387,640,415"/><area shape="rect" id="node46" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="432,286,565,330"/><area shape="rect" id="node52" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="275,286,408,330"/><area shape="rect" id="node57" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversion." alt="" coords="715,286,861,330"/><area shape="rect" id="node48" href="pprz__geodetic_8h.html" title="pprz_geodetic.h" alt="" coords="285,387,397,415"/><area shape="rect" id="node69" href="common__flight__plan_8h.html" title="subsystems/navigation\l/common_flight_plan.h" alt="" coords="5,473,160,517"/><area shape="rect" id="node78" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="1527,294,1652,322"/><area shape="rect" id="node83" href="downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="1892,193,2033,237"/><area shape="rect" id="node90" href="udp_8h.html" title="subsystems/datalink\l/udp.h" alt="" coords="2057,286,2199,330"/><area shape="rect" id="node98" href="pprz__transport_8h.html" title="Extra datalink using PPRZ protocol." alt="" coords="2093,379,2235,423"/><area shape="rect" id="node108" href="xbee_8h.html" title="subsystems/datalink\l/xbee.h" alt="" coords="2273,286,2415,330"/><area shape="rect" id="node115" href="w5100_8h.html" title="subsystems/datalink\l/w5100.h" alt="" coords="1676,286,1817,330"/><area shape="rect" id="node92" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="1823,473,1964,517"/><area shape="rect" id="node103" href="transport_8h.html" title="generic transport header" alt="" coords="2039,473,2180,517"/><area shape="rect" id="node112" href="xbee24_8h.html" title="subsystems/datalink\l/xbee24.h" alt="" coords="2309,379,2451,423"/></map>
 </div>
 </div>
 <p><a href="rotorcraft__cam_8c_source.html">Go to the source code of this file.</a></p>
@@ -150,7 +153,20 @@ Variables</h2></td></tr>
 <tr class="memitem:adda457c04709dca302b7342870c93dc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft__cam_8c.html#adda457c04709dca302b7342870c93dc8">rotorcraft_cam_tilt_pwm</a></td></tr>
 <tr class="memitem:a51ace79b92e7c5ab69438597883a4c8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft__cam_8c.html#a51ace79b92e7c5ab69438597883a4c8c">rotorcraft_cam_pan</a></td></tr>
 </table>
-<h2>Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Camera control module for rotorcraft. </p>
+<p>The camera is controled by the heading of the vehicle for pan and can be controlled by a servo for tilt if defined.</p>
+<p>Four modes:</p>
+<ul>
+<li>NONE: no control</li>
+<li>MANUAL: the servo position is set with PWM</li>
+<li>HEADING: the servo position and the heading of the rotorcraft are set with angles</li>
+<li>WP: the camera is tracking a waypoint (Default: CAM)</li>
+</ul>
+<p>The CAM_SWITCH can be used to power the camera in normal modes and disable it when in NONE mode </p>
+
+<p>Definition in file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
+</div><h2>Macro Definition Documentation</h2>
 <a class="anchor" id="aaf58f5e334fb7dca4ff1779515d23b1c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -175,7 +191,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00034">34</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00051">51</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
 
 </div>
 </div>
@@ -189,7 +205,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00052">52</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00069">69</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
 
 </div>
 </div>
@@ -203,7 +219,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00051">51</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00068">68</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
 
 </div>
 </div>
@@ -231,7 +247,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00035">35</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00052">52</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
 
 </div>
 </div>
@@ -250,9 +266,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00059">59</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00076">76</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
 
-<p>References <a class="el" href="telemetry_8c_source.html#l00038">register_periodic_telemetry()</a>, <a class="el" href="rotorcraft__cam_8h_source.html#l00054">ROTORCRAFT_CAM_DEFAULT_MODE</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00050">rotorcraft_cam_pan</a>, <a class="el" href="rotorcraft__cam_8h_source.html#l00123">rotorcraft_cam_SetCamMode</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00038">rotorcraft_cam_tilt</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00039">rotorcraft_cam_tilt_pwm</a>, and <a class="el" href="rotorcraft__cam_8c_source.html#l00054">send_cam()</a>.</p>
+<p>References <a class="el" href="telemetry_8c_source.html#l00038">register_periodic_telemetry()</a>, <a class="el" href="rotorcraft__cam_8h_source.html#l00056">ROTORCRAFT_CAM_DEFAULT_MODE</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00067">rotorcraft_cam_pan</a>, <a class="el" href="rotorcraft__cam_8h_source.html#l00125">rotorcraft_cam_SetCamMode</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00055">rotorcraft_cam_tilt</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00056">rotorcraft_cam_tilt_pwm</a>, and <a class="el" href="rotorcraft__cam_8c_source.html#l00071">send_cam()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -281,9 +297,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00073">73</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00090">90</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00966">INT32_ATAN2</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00127">INT32_COURSE_NORMALIZE</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00064">INT32_POS_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00229">INT32_VECT2_NORM</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00241">INT32_VECT2_RSHIFT</a>, <a class="el" href="navigation_8c_source.html#l00072">nav_heading</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00145">Int32Eulers::psi</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00032">rotorcraft_cam_mode</a>, <a class="el" href="rotorcraft__cam_8h_source.html#l00049">ROTORCRAFT_CAM_MODE_HEADING</a>, <a class="el" href="rotorcraft__cam_8h_source.html#l00048">ROTORCRAFT_CAM_MODE_MANUAL</a>, <a class="el" href="rotorcraft__cam_8h_source.html#l00047">ROTORCRAFT_CAM_MODE_NONE</a>, <a class="el" href="rotorcraft__cam_8h_source.html#l00050">ROTORCRAFT_CAM_MODE_WP</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00050">rotorcraft_cam_pan</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00038">rotorcraft_cam_tilt</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00039">rotorcraft_cam_tilt_pwm</a>, <a class="el" href="state_8h_source.html#l01012">stateGetNedToBodyEulers_i()</a>, <a class="el" href="state_8h_source.html#l00637">stateGetPositionEnu_i()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00067">VECT2_DIFF</a>, <a class="el" href="navigation_8c_source.html#l00052">waypoints</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00080">Int32Vect2::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00081">Int32Vect2::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00075">EnuCoor_i::z</a>.</p>
+<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00966">INT32_ATAN2</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00127">INT32_COURSE_NORMALIZE</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00064">INT32_POS_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00229">INT32_VECT2_NORM</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00241">INT32_VECT2_RSHIFT</a>, <a class="el" href="navigation_8c_source.html#l00072">nav_heading</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00145">Int32Eulers::psi</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00049">rotorcraft_cam_mode</a>, <a class="el" href="rotorcraft__cam_8h_source.html#l00051">ROTORCRAFT_CAM_MODE_HEADING</a>, <a class="el" href="rotorcraft__cam_8h_source.html#l00050">ROTORCRAFT_CAM_MODE_MANUAL</a>, <a class="el" href="rotorcraft__cam_8h_source.html#l00049">ROTORCRAFT_CAM_MODE_NONE</a>, <a class="el" href="rotorcraft__cam_8h_source.html#l00052">ROTORCRAFT_CAM_MODE_WP</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00067">rotorcraft_cam_pan</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00055">rotorcraft_cam_tilt</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00056">rotorcraft_cam_tilt_pwm</a>, <a class="el" href="state_8h_source.html#l01012">stateGetNedToBodyEulers_i()</a>, <a class="el" href="state_8h_source.html#l00637">stateGetPositionEnu_i()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00067">VECT2_DIFF</a>, <a class="el" href="navigation_8c_source.html#l00052">waypoints</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00080">Int32Vect2::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00081">Int32Vect2::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00075">EnuCoor_i::z</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -320,11 +336,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00054">54</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00071">71</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
 
-<p>References <a class="el" href="downlink_8h_source.html#l00068">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00078">DefaultDevice</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00050">rotorcraft_cam_pan</a>, and <a class="el" href="rotorcraft__cam_8c_source.html#l00038">rotorcraft_cam_tilt</a>.</p>
+<p>References <a class="el" href="downlink_8h_source.html#l00068">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00078">DefaultDevice</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00067">rotorcraft_cam_pan</a>, and <a class="el" href="rotorcraft__cam_8c_source.html#l00055">rotorcraft_cam_tilt</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00059">rotorcraft_cam_init()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00076">rotorcraft_cam_init()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -353,9 +369,9 @@ Variables</h2></td></tr>
 <p>WP control. </p>
 <p>By default use WP_CAM waypoint if defined </p>
 
-<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00032">32</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00049">49</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00073">rotorcraft_cam_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00090">rotorcraft_cam_periodic()</a>.</p>
 
 </div>
 </div>
@@ -369,9 +385,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00050">50</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00067">67</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00059">rotorcraft_cam_init()</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00073">rotorcraft_cam_periodic()</a>, and <a class="el" href="rotorcraft__cam_8c_source.html#l00054">send_cam()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00076">rotorcraft_cam_init()</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00090">rotorcraft_cam_periodic()</a>, and <a class="el" href="rotorcraft__cam_8c_source.html#l00071">send_cam()</a>.</p>
 
 </div>
 </div>
@@ -385,9 +401,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00038">38</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00055">55</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00059">rotorcraft_cam_init()</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00073">rotorcraft_cam_periodic()</a>, and <a class="el" href="rotorcraft__cam_8c_source.html#l00054">send_cam()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00076">rotorcraft_cam_init()</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00090">rotorcraft_cam_periodic()</a>, and <a class="el" href="rotorcraft__cam_8c_source.html#l00071">send_cam()</a>.</p>
 
 </div>
 </div>
@@ -401,9 +417,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00039">39</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft__cam_8c_source.html#l00056">56</a> of file <a class="el" href="rotorcraft__cam_8c_source.html">rotorcraft_cam.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00059">rotorcraft_cam_init()</a>, and <a class="el" href="rotorcraft__cam_8c_source.html#l00073">rotorcraft_cam_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft__cam_8c_source.html#l00076">rotorcraft_cam_init()</a>, and <a class="el" href="rotorcraft__cam_8c_source.html#l00090">rotorcraft_cam_periodic()</a>.</p>
 
 </div>
 </div>
@@ -413,7 +429,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_900c035387cecacfdb66232491aebefe.html">cam_control</a></li><li class="navelem"><a class="el" href="rotorcraft__cam_8c.html">rotorcraft_cam.c</a></li>
-    <li class="footer">Generated on Thu Nov 14 2013 00:00:14 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Nov 21 2013 12:00:10 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

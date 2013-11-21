@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-652-g8a782ca</span>
+   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -161,6 +161,8 @@ Macros</h2></td></tr>
 <tr class="memitem:a1cb9404e5d6593c351c49a7b1e648acc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#a1cb9404e5d6593c351c49a7b1e648acc">XBeeTransportPut2ByteByAddr</a>(_dev, _byte)</td></tr>
 <tr class="memitem:ac93f1e60cca288be0fd5193605d6f2c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#ac93f1e60cca288be0fd5193605d6f2c9">XBeeTransportPut4ByteByAddr</a>(_dev, _byte)</td></tr>
 <tr class="memitem:a9fa5186031b77379af738fc7da3f6f89"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#a9fa5186031b77379af738fc7da3f6f89">XBeeTransportPutDoubleByAddr</a>(_dev, _byte)</td></tr>
+<tr class="memitem:a23937f9cf4529edcc8e86f12edce7604"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#a23937f9cf4529edcc8e86f12edce7604">XBeeTransportPutUint64ByAddr</a>(_dev, _byte)</td></tr>
+<tr class="memitem:a04cf820e9bf1bcbe5eca8c89752b9542"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#a04cf820e9bf1bcbe5eca8c89752b9542">XBeeTransportPutInt64ByAddr</a>(_dev, _byte)</td></tr>
 <tr class="memitem:aa5a387387579b9fc64827b11d31564c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#aa5a387387579b9fc64827b11d31564c0">XBeeTransportPutInt8ByAddr</a>(_dev, _x)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#a9570b166fbe25795c948d773ba477a49">XBeeTransportPut1ByteByAddr</a>(_dev, _x)</td></tr>
 <tr class="memitem:acdd2bdc1f5a574df056ab1800c3e4ac9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#acdd2bdc1f5a574df056ab1800c3e4ac9">XBeeTransportPutUint8ByAddr</a>(_dev, _x)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#a9570b166fbe25795c948d773ba477a49">XBeeTransportPut1ByteByAddr</a>(_dev, (const <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_x)</td></tr>
 <tr class="memitem:a981a0b28dd3647a13f6d9debbb79c184"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#a981a0b28dd3647a13f6d9debbb79c184">XBeeTransportPutInt16ByAddr</a>(_dev, _x)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#a1cb9404e5d6593c351c49a7b1e648acc">XBeeTransportPut2ByteByAddr</a>(_dev, (const <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_x)</td></tr>
@@ -169,12 +171,31 @@ Macros</h2></td></tr>
 <tr class="memitem:a43437e0b980462788a3dbef97c779483"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#a43437e0b980462788a3dbef97c779483">XBeeTransportPutUint32ByAddr</a>(_dev, _x)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#ac93f1e60cca288be0fd5193605d6f2c9">XBeeTransportPut4ByteByAddr</a>(_dev, (const <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_x)</td></tr>
 <tr class="memitem:a844f5da5917a47e7e11417f0186292b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#a844f5da5917a47e7e11417f0186292b1">XBeeTransportPutFloatByAddr</a>(_dev, _x)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#ac93f1e60cca288be0fd5193605d6f2c9">XBeeTransportPut4ByteByAddr</a>(_dev, (const <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_x)</td></tr>
 <tr class="memitem:a8c28948208630fd95ba0febcef9f4f78"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#a8c28948208630fd95ba0febcef9f4f78">XBeeTransportPutNamedUint8</a>(_dev, _name, _byte)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#a26d92af89b7dd86b11d7d45868dab63f">XBeeTransportPutUint8</a>(_dev, _byte)</td></tr>
+<tr class="memitem:ac6c3d49d889bb3ec35d72e3c8d246aec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#ac6c3d49d889bb3ec35d72e3c8d246aec">XBeeTransportPutCharByAddr</a>(_dev, _x)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#a9570b166fbe25795c948d773ba477a49">XBeeTransportPut1ByteByAddr</a>(_dev, (const <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_x)</td></tr>
 <tr class="memitem:af1a6cdbefe2eee6ffe234beef36d7201"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#af1a6cdbefe2eee6ffe234beef36d7201">XBeeTransportPutArray</a>(_dev, _put, _n, _x)</td></tr>
+<tr class="memitem:ab97194c461741e931755a48a2910c92e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#ab97194c461741e931755a48a2910c92e">XBeeTransportPutInt8Array</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#af1a6cdbefe2eee6ffe234beef36d7201">XBeeTransportPutArray</a>(_dev, <a class="el" href="xbee_8h.html#aa5a387387579b9fc64827b11d31564c0">XBeeTransportPutInt8ByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:a71c975eca5ac5272dca5371f7189bb3b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#a71c975eca5ac5272dca5371f7189bb3b">XBeeTransportPutUint8Array</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#af1a6cdbefe2eee6ffe234beef36d7201">XBeeTransportPutArray</a>(_dev, <a class="el" href="xbee_8h.html#acdd2bdc1f5a574df056ab1800c3e4ac9">XBeeTransportPutUint8ByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:a98e347a5d660791d2a074d1834e7b2fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#a98e347a5d660791d2a074d1834e7b2fe">XBeeTransportPutCharArray</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#af1a6cdbefe2eee6ffe234beef36d7201">XBeeTransportPutArray</a>(_dev, <a class="el" href="xbee_8h.html#ac6c3d49d889bb3ec35d72e3c8d246aec">XBeeTransportPutCharByAddr</a>, _n, _x)</td></tr>
 <tr class="memitem:af4abd81c60a1c7d78b0034037301eb05"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#af4abd81c60a1c7d78b0034037301eb05">XBeeTransportPutInt16Array</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#af1a6cdbefe2eee6ffe234beef36d7201">XBeeTransportPutArray</a>(_dev, <a class="el" href="xbee_8h.html#a981a0b28dd3647a13f6d9debbb79c184">XBeeTransportPutInt16ByAddr</a>, _n, _x)</td></tr>
 <tr class="memitem:a19bd0485f76f5454e8809b130a532112"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#a19bd0485f76f5454e8809b130a532112">XBeeTransportPutUint16Array</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#af1a6cdbefe2eee6ffe234beef36d7201">XBeeTransportPutArray</a>(_dev, <a class="el" href="xbee_8h.html#af571a118731e4dde71aa47580afca2b6">XBeeTransportPutUint16ByAddr</a>, _n, _x)</td></tr>
-<tr class="memitem:a71c975eca5ac5272dca5371f7189bb3b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#a71c975eca5ac5272dca5371f7189bb3b">XBeeTransportPutUint8Array</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#af1a6cdbefe2eee6ffe234beef36d7201">XBeeTransportPutArray</a>(_dev, <a class="el" href="xbee_8h.html#acdd2bdc1f5a574df056ab1800c3e4ac9">XBeeTransportPutUint8ByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:aaf1f03ae878bf0c91a1990cf8f816c66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#aaf1f03ae878bf0c91a1990cf8f816c66">XBeeTransportPutInt32Array</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#af1a6cdbefe2eee6ffe234beef36d7201">XBeeTransportPutArray</a>(_dev, <a class="el" href="xbee_8h.html#a4ac23284f7ddd2835bc259f7b9a25661">XBeeTransportPutInt32ByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:a93192fe1a8e7c00972ad51a19d205504"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#a93192fe1a8e7c00972ad51a19d205504">XBeeTransportPutUint32Array</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#af1a6cdbefe2eee6ffe234beef36d7201">XBeeTransportPutArray</a>(_dev, <a class="el" href="xbee_8h.html#a43437e0b980462788a3dbef97c779483">XBeeTransportPutUint32ByAddr</a>, _n, _x)</td></tr>
 <tr class="memitem:a181101381c0c5c8f4e78d6d65748a55a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#a181101381c0c5c8f4e78d6d65748a55a">XBeeTransportPutFloatArray</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#af1a6cdbefe2eee6ffe234beef36d7201">XBeeTransportPutArray</a>(_dev, <a class="el" href="xbee_8h.html#a844f5da5917a47e7e11417f0186292b1">XBeeTransportPutFloatByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:a8dfcdb2edb536d3dea7b068aa1b3942c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#a8dfcdb2edb536d3dea7b068aa1b3942c">XBeeTransportPutInt64Array</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#af1a6cdbefe2eee6ffe234beef36d7201">XBeeTransportPutArray</a>(_dev, <a class="el" href="xbee_8h.html#a04cf820e9bf1bcbe5eca8c89752b9542">XBeeTransportPutInt64ByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:a7d93310425a1bfddde53f0b05074c032"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#a7d93310425a1bfddde53f0b05074c032">XBeeTransportPutUint64Array</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#af1a6cdbefe2eee6ffe234beef36d7201">XBeeTransportPutArray</a>(_dev, <a class="el" href="xbee_8h.html#a23937f9cf4529edcc8e86f12edce7604">XBeeTransportPutUint64ByAddr</a>, _n, _x)</td></tr>
 <tr class="memitem:a24441b040bd97a1c460b9c7cc7d47f34"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#a24441b040bd97a1c460b9c7cc7d47f34">XBeeTransportPutDoubleArray</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#af1a6cdbefe2eee6ffe234beef36d7201">XBeeTransportPutArray</a>(_dev, <a class="el" href="xbee_8h.html#a9fa5186031b77379af738fc7da3f6f89">XBeeTransportPutDoubleByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:a98260bab75a59dd115ed31cdae85e01e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#a98260bab75a59dd115ed31cdae85e01e">XBeeTransportPutFixedArray</a>(_dev, _put, _n, _x)</td></tr>
+<tr class="memitem:a6f7e3fe5ad0faf5d2a1d6ea325948743"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#a6f7e3fe5ad0faf5d2a1d6ea325948743">XBeeTransportPutInt8FixedArray</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#a98260bab75a59dd115ed31cdae85e01e">XBeeTransportPutFixedArray</a>(_dev, <a class="el" href="xbee_8h.html#aa5a387387579b9fc64827b11d31564c0">XBeeTransportPutInt8ByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:a38b809c480aea41ede030ad29dab2787"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#a38b809c480aea41ede030ad29dab2787">XBeeTransportPutUint8FixedArray</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#a98260bab75a59dd115ed31cdae85e01e">XBeeTransportPutFixedArray</a>(_dev, <a class="el" href="xbee_8h.html#acdd2bdc1f5a574df056ab1800c3e4ac9">XBeeTransportPutUint8ByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:aa85e275845df28074a1320ec71735984"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#aa85e275845df28074a1320ec71735984">XBeeTransportPutCharFixedArray</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#a98260bab75a59dd115ed31cdae85e01e">XBeeTransportPutFixedArray</a>(_dev, <a class="el" href="xbee_8h.html#ac6c3d49d889bb3ec35d72e3c8d246aec">XBeeTransportPutCharByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:adcff81ced79df314ef9a08a6864b5eb1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#adcff81ced79df314ef9a08a6864b5eb1">XBeeTransportPutInt16FixedArray</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#a98260bab75a59dd115ed31cdae85e01e">XBeeTransportPutFixedArray</a>(_dev, <a class="el" href="xbee_8h.html#a981a0b28dd3647a13f6d9debbb79c184">XBeeTransportPutInt16ByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:ab65c2ea7ab6d28b756c73640d642d1e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#ab65c2ea7ab6d28b756c73640d642d1e5">XBeeTransportPutUint16FixedArray</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#a98260bab75a59dd115ed31cdae85e01e">XBeeTransportPutFixedArray</a>(_dev, <a class="el" href="xbee_8h.html#af571a118731e4dde71aa47580afca2b6">XBeeTransportPutUint16ByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:a49634ee9306c0e62fcfc4fdcec6e8740"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#a49634ee9306c0e62fcfc4fdcec6e8740">XBeeTransportPutInt32FixedArray</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#a98260bab75a59dd115ed31cdae85e01e">XBeeTransportPutFixedArray</a>(_dev, <a class="el" href="xbee_8h.html#a4ac23284f7ddd2835bc259f7b9a25661">XBeeTransportPutInt32ByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:ad147746865e6e85f70c92c928d279390"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#ad147746865e6e85f70c92c928d279390">XBeeTransportPutUint32FixedArray</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#a98260bab75a59dd115ed31cdae85e01e">XBeeTransportPutFixedArray</a>(_dev, <a class="el" href="xbee_8h.html#a43437e0b980462788a3dbef97c779483">XBeeTransportPutUint32ByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:a8ae67cf3c200f3a9bbcee8d2c75f9393"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#a8ae67cf3c200f3a9bbcee8d2c75f9393">XBeeTransportPutFloatFixedArray</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#a98260bab75a59dd115ed31cdae85e01e">XBeeTransportPutFixedArray</a>(_dev, <a class="el" href="xbee_8h.html#a844f5da5917a47e7e11417f0186292b1">XBeeTransportPutFloatByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:aa5df3260ebd9c0b27cb87c643540662b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#aa5df3260ebd9c0b27cb87c643540662b">XBeeTransportPutInt64FixedArray</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#a98260bab75a59dd115ed31cdae85e01e">XBeeTransportPutFixedArray</a>(_dev, <a class="el" href="xbee_8h.html#a04cf820e9bf1bcbe5eca8c89752b9542">XBeeTransportPutInt64ByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:a493adad43a6390db4f090d5f14bc46af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#a493adad43a6390db4f090d5f14bc46af">XBeeTransportPutUint64FixedArray</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#a98260bab75a59dd115ed31cdae85e01e">XBeeTransportPutFixedArray</a>(_dev, <a class="el" href="xbee_8h.html#a23937f9cf4529edcc8e86f12edce7604">XBeeTransportPutUint64ByAddr</a>, _n, _x)</td></tr>
+<tr class="memitem:a07a98b80dd3458f50d66b2b394cda1b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#a07a98b80dd3458f50d66b2b394cda1b4">XBeeTransportPutDoubleFixedArray</a>(_dev, _n, _x)&#160;&#160;&#160;<a class="el" href="xbee_8h.html#a98260bab75a59dd115ed31cdae85e01e">XBeeTransportPutFixedArray</a>(_dev, <a class="el" href="xbee_8h.html#a9fa5186031b77379af738fc7da3f6f89">XBeeTransportPutDoubleByAddr</a>, _n, _x)</td></tr>
 <tr class="memitem:a4822b9710fd634b1cd81623cad2f8d04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#a4822b9710fd634b1cd81623cad2f8d04">XBeeTransportHeader</a>(_dev, _len)</td></tr>
 <tr class="memitem:af015e90175208b0c068def099451179b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#af015e90175208b0c068def099451179b">XBeeTransportTrailer</a>(_dev)</td></tr>
 <tr class="memitem:a0771d37d7fa853b78b0a25e7865b49ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee_8h.html#a0771d37d7fa853b78b0a25e7865b49ab">XBEE_UNINIT</a>&#160;&#160;&#160;0</td></tr>
@@ -258,7 +279,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="xbee_8h_source.html#l00222">222</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00275">275</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
 </div>
 </div>
@@ -286,9 +307,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="xbee_8h_source.html#l00146">146</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00199">199</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
-<p>Referenced by <a class="el" href="xbee_8h_source.html#l00161">parse_xbee()</a>.</p>
+<p>Referenced by <a class="el" href="xbee_8h_source.html#l00214">parse_xbee()</a>.</p>
 
 </div>
 </div>
@@ -302,9 +323,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="xbee_8h_source.html#l00145">145</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00198">198</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
-<p>Referenced by <a class="el" href="xbee_8h_source.html#l00161">parse_xbee()</a>.</p>
+<p>Referenced by <a class="el" href="xbee_8h_source.html#l00214">parse_xbee()</a>.</p>
 
 </div>
 </div>
@@ -318,9 +339,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="xbee_8h_source.html#l00147">147</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00200">200</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
-<p>Referenced by <a class="el" href="xbee_8h_source.html#l00161">parse_xbee()</a>.</p>
+<p>Referenced by <a class="el" href="xbee_8h_source.html#l00214">parse_xbee()</a>.</p>
 
 </div>
 </div>
@@ -334,9 +355,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="xbee_8h_source.html#l00144">144</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00197">197</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
-<p>Referenced by <a class="el" href="xbee_8h_source.html#l00161">parse_xbee()</a>.</p>
+<p>Referenced by <a class="el" href="xbee_8h_source.html#l00214">parse_xbee()</a>.</p>
 
 </div>
 </div>
@@ -372,7 +393,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="xbee_8h_source.html#l00039">39</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
-<p>Referenced by <a class="el" href="xbee_8h_source.html#l00161">parse_xbee()</a>.</p>
+<p>Referenced by <a class="el" href="xbee_8h_source.html#l00214">parse_xbee()</a>.</p>
 
 </div>
 </div>
@@ -388,9 +409,9 @@ Variables</h2></td></tr>
 
 <p>Status of the API packet receiver automata. </p>
 
-<p>Definition at line <a class="el" href="xbee_8h_source.html#l00143">143</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00196">196</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
-<p>Referenced by <a class="el" href="xbee_8h_source.html#l00161">parse_xbee()</a>, and <a class="el" href="xbee_8c_source.html#l00087">xbee_init()</a>.</p>
+<p>Referenced by <a class="el" href="xbee_8h_source.html#l00214">parse_xbee()</a>, and <a class="el" href="xbee_8c_source.html#l00087">xbee_init()</a>.</p>
 
 </div>
 </div>
@@ -436,7 +457,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="xbee_8h_source.html#l00221">221</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00274">274</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
 </div>
 </div>
@@ -473,7 +494,7 @@ Variables</h2></td></tr>
 <div class="line">  }                                       \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="xbee_8h_source.html#l00223">223</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00276">276</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
 </div>
 </div>
@@ -501,7 +522,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="xbee_8h_source.html#l00234">234</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00287">287</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
 <p>Referenced by <a class="el" href="xbee_8c_source.html#l00087">xbee_init()</a>.</p>
 
@@ -531,7 +552,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="xbee_8h_source.html#l00233">233</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00286">286</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
 <p>Referenced by <a class="el" href="xbee_8c_source.html#l00087">xbee_init()</a>, and <a class="el" href="xbee_8c_source.html#l00060">xbee_try_to_enter_api()</a>.</p>
 
@@ -596,7 +617,7 @@ Variables</h2></td></tr>
 <div class="line">  XBeeTransportPutTXHeader(_dev); \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="xbee_8h_source.html#l00126">126</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00179">179</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
 </div>
 </div>
@@ -800,7 +821,103 @@ Variables</h2></td></tr>
 <div class="line">  } \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="xbee_8h_source.html#l00109">109</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00126">126</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a98e347a5d660791d2a074d1834e7b2fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XBeeTransportPutCharArray</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="xbee_8h.html#af1a6cdbefe2eee6ffe234beef36d7201">XBeeTransportPutArray</a>(_dev, <a class="el" href="xbee_8h.html#ac6c3d49d889bb3ec35d72e3c8d246aec">XBeeTransportPutCharByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00137">137</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac6c3d49d889bb3ec35d72e3c8d246aec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XBeeTransportPutCharByAddr</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="xbee_8h.html#a9570b166fbe25795c948d773ba477a49">XBeeTransportPut1ByteByAddr</a>(_dev, (const <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00124">124</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa85e275845df28074a1320ec71735984"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XBeeTransportPutCharFixedArray</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="xbee_8h.html#a98260bab75a59dd115ed31cdae85e01e">XBeeTransportPutFixedArray</a>(_dev, <a class="el" href="xbee_8h.html#ac6c3d49d889bb3ec35d72e3c8d246aec">XBeeTransportPutCharByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00163">163</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
 </div>
 </div>
@@ -834,7 +951,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="xbee_8h_source.html#l00122">122</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00150">150</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
 </div>
 </div>
@@ -866,7 +983,87 @@ Variables</h2></td></tr>
 <div class="line">    XBeeTransportPut4ByteByAddr(_dev, (<span class="keyword">const</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_byte+4); \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="xbee_8h_source.html#l00093">93</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00101">101</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a07a98b80dd3458f50d66b2b394cda1b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XBeeTransportPutDoubleFixedArray</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="xbee_8h.html#a98260bab75a59dd115ed31cdae85e01e">XBeeTransportPutFixedArray</a>(_dev, <a class="el" href="xbee_8h.html#a9fa5186031b77379af738fc7da3f6f89">XBeeTransportPutDoubleByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00176">176</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a98260bab75a59dd115ed31cdae85e01e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XBeeTransportPutFixedArray</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_put, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">{ <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">\</a></div>
+<div class="line"><a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">  uint8_t</a> _i; \</div>
+<div class="line">  for(_i = 0; _i &lt; _n; _i++) { \</div>
+<div class="line">    _put(_dev, &amp;_x[_i]); \</div>
+<div class="line">  } \</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00153">153</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
 </div>
 </div>
@@ -900,7 +1097,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="xbee_8h_source.html#l00121">121</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00145">145</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
 </div>
 </div>
@@ -928,7 +1125,41 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="xbee_8h_source.html#l00106">106</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00122">122</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8ae67cf3c200f3a9bbcee8d2c75f9393"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XBeeTransportPutFloatFixedArray</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="xbee_8h.html#a98260bab75a59dd115ed31cdae85e01e">XBeeTransportPutFixedArray</a>(_dev, <a class="el" href="xbee_8h.html#a844f5da5917a47e7e11417f0186292b1">XBeeTransportPutFloatByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00171">171</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
 </div>
 </div>
@@ -962,7 +1193,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="xbee_8h_source.html#l00117">117</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00139">139</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
 </div>
 </div>
@@ -990,7 +1221,75 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="xbee_8h_source.html#l00102">102</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00118">118</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adcff81ced79df314ef9a08a6864b5eb1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XBeeTransportPutInt16FixedArray</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="xbee_8h.html#a98260bab75a59dd115ed31cdae85e01e">XBeeTransportPutFixedArray</a>(_dev, <a class="el" href="xbee_8h.html#a981a0b28dd3647a13f6d9debbb79c184">XBeeTransportPutInt16ByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00165">165</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaf1f03ae878bf0c91a1990cf8f816c66"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XBeeTransportPutInt32Array</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="xbee_8h.html#af1a6cdbefe2eee6ffe234beef36d7201">XBeeTransportPutArray</a>(_dev, <a class="el" href="xbee_8h.html#a4ac23284f7ddd2835bc259f7b9a25661">XBeeTransportPutInt32ByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00142">142</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
 </div>
 </div>
@@ -1018,7 +1317,175 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="xbee_8h_source.html#l00104">104</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00120">120</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a49634ee9306c0e62fcfc4fdcec6e8740"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XBeeTransportPutInt32FixedArray</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="xbee_8h.html#a98260bab75a59dd115ed31cdae85e01e">XBeeTransportPutFixedArray</a>(_dev, <a class="el" href="xbee_8h.html#a4ac23284f7ddd2835bc259f7b9a25661">XBeeTransportPutInt32ByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00168">168</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8dfcdb2edb536d3dea7b068aa1b3942c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XBeeTransportPutInt64Array</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="xbee_8h.html#af1a6cdbefe2eee6ffe234beef36d7201">XBeeTransportPutArray</a>(_dev, <a class="el" href="xbee_8h.html#a04cf820e9bf1bcbe5eca8c89752b9542">XBeeTransportPutInt64ByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00147">147</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a04cf820e9bf1bcbe5eca8c89752b9542"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XBeeTransportPutInt64ByAddr</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_byte&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">{ \</div>
+<div class="line">    XBeeTransportPut4ByteByAddr(_dev, (<span class="keyword">const</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_byte); \</div>
+<div class="line">    XBeeTransportPut4ByteByAddr(_dev, (<span class="keyword">const</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_byte+4); \</div>
+<div class="line">  }</div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00109">109</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa5df3260ebd9c0b27cb87c643540662b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XBeeTransportPutInt64FixedArray</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="xbee_8h.html#a98260bab75a59dd115ed31cdae85e01e">XBeeTransportPutFixedArray</a>(_dev, <a class="el" href="xbee_8h.html#a04cf820e9bf1bcbe5eca8c89752b9542">XBeeTransportPutInt64ByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00173">173</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab97194c461741e931755a48a2910c92e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XBeeTransportPutInt8Array</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="xbee_8h.html#af1a6cdbefe2eee6ffe234beef36d7201">XBeeTransportPutArray</a>(_dev, <a class="el" href="xbee_8h.html#aa5a387387579b9fc64827b11d31564c0">XBeeTransportPutInt8ByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00134">134</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
 </div>
 </div>
@@ -1046,7 +1513,41 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="xbee_8h_source.html#l00100">100</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00116">116</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6f7e3fe5ad0faf5d2a1d6ea325948743"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XBeeTransportPutInt8FixedArray</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="xbee_8h.html#a98260bab75a59dd115ed31cdae85e01e">XBeeTransportPutFixedArray</a>(_dev, <a class="el" href="xbee_8h.html#aa5a387387579b9fc64827b11d31564c0">XBeeTransportPutInt8ByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00160">160</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
 </div>
 </div>
@@ -1080,7 +1581,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="xbee_8h_source.html#l00107">107</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00123">123</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
 </div>
 </div>
@@ -1114,7 +1615,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="xbee_8h_source.html#l00119">119</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00140">140</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
 </div>
 </div>
@@ -1142,7 +1643,75 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="xbee_8h_source.html#l00103">103</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00119">119</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab65c2ea7ab6d28b756c73640d642d1e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XBeeTransportPutUint16FixedArray</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="xbee_8h.html#a98260bab75a59dd115ed31cdae85e01e">XBeeTransportPutFixedArray</a>(_dev, <a class="el" href="xbee_8h.html#af571a118731e4dde71aa47580afca2b6">XBeeTransportPutUint16ByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00166">166</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a93192fe1a8e7c00972ad51a19d205504"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XBeeTransportPutUint32Array</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="xbee_8h.html#af1a6cdbefe2eee6ffe234beef36d7201">XBeeTransportPutArray</a>(_dev, <a class="el" href="xbee_8h.html#a43437e0b980462788a3dbef97c779483">XBeeTransportPutUint32ByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00143">143</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
 </div>
 </div>
@@ -1170,7 +1739,141 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00121">121</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad147746865e6e85f70c92c928d279390"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XBeeTransportPutUint32FixedArray</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="xbee_8h.html#a98260bab75a59dd115ed31cdae85e01e">XBeeTransportPutFixedArray</a>(_dev, <a class="el" href="xbee_8h.html#a43437e0b980462788a3dbef97c779483">XBeeTransportPutUint32ByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00169">169</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7d93310425a1bfddde53f0b05074c032"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XBeeTransportPutUint64Array</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="xbee_8h.html#af1a6cdbefe2eee6ffe234beef36d7201">XBeeTransportPutArray</a>(_dev, <a class="el" href="xbee_8h.html#a23937f9cf4529edcc8e86f12edce7604">XBeeTransportPutUint64ByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00148">148</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a23937f9cf4529edcc8e86f12edce7604"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XBeeTransportPutUint64ByAddr</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_byte&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">{ \</div>
+<div class="line">    XBeeTransportPut4ByteByAddr(_dev, (<span class="keyword">const</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_byte); \</div>
+<div class="line">    XBeeTransportPut4ByteByAddr(_dev, (<span class="keyword">const</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_byte+4); \</div>
+<div class="line">  }</div>
+</div><!-- fragment -->
 <p>Definition at line <a class="el" href="xbee_8h_source.html#l00105">105</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a493adad43a6390db4f090d5f14bc46af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XBeeTransportPutUint64FixedArray</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="xbee_8h.html#a98260bab75a59dd115ed31cdae85e01e">XBeeTransportPutFixedArray</a>(_dev, <a class="el" href="xbee_8h.html#a23937f9cf4529edcc8e86f12edce7604">XBeeTransportPutUint64ByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00174">174</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
 </div>
 </div>
@@ -1236,7 +1939,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="xbee_8h_source.html#l00120">120</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00135">135</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
 </div>
 </div>
@@ -1264,7 +1967,41 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="xbee_8h_source.html#l00101">101</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00117">117</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a38b809c480aea41ede030ad29dab2787"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XBeeTransportPutUint8FixedArray</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_dev, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="xbee_8h.html#a98260bab75a59dd115ed31cdae85e01e">XBeeTransportPutFixedArray</a>(_dev, <a class="el" href="xbee_8h.html#acdd2bdc1f5a574df056ab1800c3e4ac9">XBeeTransportPutUint8ByAddr</a>, _n, _x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00161">161</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
 </div>
 </div>
@@ -1305,7 +2042,7 @@ Variables</h2></td></tr>
 <div class="line">  XBeeTransportSendMessage(_dev) \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="xbee_8h_source.html#l00134">134</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00187">187</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
 </div>
 </div>
@@ -1344,9 +2081,9 @@ Variables</h2></td></tr>
 
 <p>Parsing a XBee API frame. </p>
 
-<p>Definition at line <a class="el" href="xbee_8h_source.html#l00161">161</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00214">214</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
-<p>References <a class="el" href="discsurvey_8c_source.html#l00038">c</a>, <a class="el" href="xbee_8h_source.html#l00155">xbee_transport::cs</a>, <a class="el" href="transport_8h_source.html#l00047">transport::error</a>, <a class="el" href="transport_8h_source.html#l00045">transport::msg_received</a>, <a class="el" href="transport_8h_source.html#l00047">transport::ovrn</a>, <a class="el" href="transport_8h_source.html#l00041">transport::payload</a>, <a class="el" href="xbee_8h_source.html#l00154">xbee_transport::payload_idx</a>, <a class="el" href="transport_8h_source.html#l00043">transport::payload_len</a>, <a class="el" href="xbee_8h_source.html#l00153">xbee_transport::status</a>, <a class="el" href="xbee_8h_source.html#l00151">xbee_transport::trans</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="xbee_8h_source.html#l00146">XBEE_GOT_LENGTH_LSB</a>, <a class="el" href="xbee_8h_source.html#l00145">XBEE_GOT_LENGTH_MSB</a>, <a class="el" href="xbee_8h_source.html#l00147">XBEE_GOT_PAYLOAD</a>, <a class="el" href="xbee_8h_source.html#l00144">XBEE_GOT_START</a>, <a class="el" href="xbee_8h_source.html#l00039">XBEE_START</a>, and <a class="el" href="xbee_8h_source.html#l00143">XBEE_UNINIT</a>.</p>
+<p>References <a class="el" href="discsurvey_8c_source.html#l00038">c</a>, <a class="el" href="xbee_8h_source.html#l00208">xbee_transport::cs</a>, <a class="el" href="transport_8h_source.html#l00047">transport::error</a>, <a class="el" href="transport_8h_source.html#l00045">transport::msg_received</a>, <a class="el" href="transport_8h_source.html#l00047">transport::ovrn</a>, <a class="el" href="transport_8h_source.html#l00041">transport::payload</a>, <a class="el" href="xbee_8h_source.html#l00207">xbee_transport::payload_idx</a>, <a class="el" href="transport_8h_source.html#l00043">transport::payload_len</a>, <a class="el" href="xbee_8h_source.html#l00206">xbee_transport::status</a>, <a class="el" href="xbee_8h_source.html#l00204">xbee_transport::trans</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="xbee_8h_source.html#l00199">XBEE_GOT_LENGTH_LSB</a>, <a class="el" href="xbee_8h_source.html#l00198">XBEE_GOT_LENGTH_MSB</a>, <a class="el" href="xbee_8h_source.html#l00200">XBEE_GOT_PAYLOAD</a>, <a class="el" href="xbee_8h_source.html#l00197">XBEE_GOT_START</a>, <a class="el" href="xbee_8h_source.html#l00039">XBEE_START</a>, and <a class="el" href="xbee_8h_source.html#l00196">XBEE_UNINIT</a>.</p>
 
 </div>
 </div>
@@ -1371,9 +2108,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="xbee_8c_source.html#l00087">87</a> of file <a class="el" href="xbee_8c_source.html">xbee.c</a>.</p>
 
-<p>References <a class="el" href="xbee_8c_source.html#l00038">AT_AP_MODE</a>, <a class="el" href="xbee_8c_source.html#l00039">AT_EXIT</a>, <a class="el" href="xbee_8c_source.html#l00037">AT_SET_MY</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="transport_8h_source.html#l00045">transport::msg_received</a>, <a class="el" href="xbee_8h_source.html#l00153">xbee_transport::status</a>, <a class="el" href="lpc21_2mcu__periph_2sys__time__arch_8h_source.html#l00073">sys_time_usleep()</a>, <a class="el" href="xbee_8h_source.html#l00151">xbee_transport::trans</a>, <a class="el" href="transport_8h_source.html#l00057">TransportLink</a>, <a class="el" href="xbee_8c_source.html#l00076">XBEE_ATBD_CODE</a>, <a class="el" href="xbee_8c_source.html#l00075">XBEE_BAUD_ALTERNATE</a>, <a class="el" href="xbee_8h_source.html#l00051">XBEE_MY_ADDR</a>, <a class="el" href="xbee_8c_source.html#l00034">xbee_tp</a>, <a class="el" href="xbee_8c_source.html#l00060">xbee_try_to_enter_api()</a>, <a class="el" href="xbee_8h_source.html#l00143">XBEE_UNINIT</a>, <a class="el" href="xbee_8h_source.html#l00234">XBeePrintHex16</a>, <a class="el" href="xbee_8h_source.html#l00233">XBeePrintString</a>, and <a class="el" href="xbee_8c_source.html#l00071">XBeeUartSetBaudrate</a>.</p>
+<p>References <a class="el" href="xbee_8c_source.html#l00038">AT_AP_MODE</a>, <a class="el" href="xbee_8c_source.html#l00039">AT_EXIT</a>, <a class="el" href="xbee_8c_source.html#l00037">AT_SET_MY</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="transport_8h_source.html#l00045">transport::msg_received</a>, <a class="el" href="xbee_8h_source.html#l00206">xbee_transport::status</a>, <a class="el" href="lpc21_2mcu__periph_2sys__time__arch_8h_source.html#l00073">sys_time_usleep()</a>, <a class="el" href="xbee_8h_source.html#l00204">xbee_transport::trans</a>, <a class="el" href="transport_8h_source.html#l00057">TransportLink</a>, <a class="el" href="xbee_8c_source.html#l00076">XBEE_ATBD_CODE</a>, <a class="el" href="xbee_8c_source.html#l00075">XBEE_BAUD_ALTERNATE</a>, <a class="el" href="xbee_8h_source.html#l00051">XBEE_MY_ADDR</a>, <a class="el" href="xbee_8c_source.html#l00034">xbee_tp</a>, <a class="el" href="xbee_8c_source.html#l00060">xbee_try_to_enter_api()</a>, <a class="el" href="xbee_8h_source.html#l00196">XBEE_UNINIT</a>, <a class="el" href="xbee_8h_source.html#l00287">XBeePrintHex16</a>, <a class="el" href="xbee_8h_source.html#l00286">XBeePrintString</a>, and <a class="el" href="xbee_8c_source.html#l00071">XBeeUartSetBaudrate</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00176">init_ap()</a>, and <a class="el" href="rotorcraft_2main_8c_source.html#l00139">main_init()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00177">init_ap()</a>, and <a class="el" href="rotorcraft_2main_8c_source.html#l00140">main_init()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1423,9 +2160,9 @@ Variables</h2></td></tr>
 
 <p>Parsing a frame data and copy the payload to the datalink buffer. </p>
 
-<p>Definition at line <a class="el" href="xbee_8h_source.html#l00206">206</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
+<p>Definition at line <a class="el" href="xbee_8h_source.html#l00259">259</a> of file <a class="el" href="xbee_8h_source.html">xbee.h</a>.</p>
 
-<p>References <a class="el" href="main__demo5_8c_source.html#l00059">dl_buffer</a>, <a class="el" href="main__demo5_8c_source.html#l00056">dl_msg_available</a>, <a class="el" href="transport_8h_source.html#l00041">transport::payload</a>, <a class="el" href="transport_8h_source.html#l00043">transport::payload_len</a>, <a class="el" href="xbee_8h_source.html#l00151">xbee_transport::trans</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="xbee24_8h_source.html#l00030">XBEE_RFDATA_OFFSET</a>, <a class="el" href="xbee24_8h_source.html#l00029">XBEE_RX_ID</a>, <a class="el" href="xbee24_8h_source.html#l00028">XBEE_TX_ID</a>, and <a class="el" href="xbee24_8h_source.html#l00043">XbeeGetRSSI</a>.</p>
+<p>References <a class="el" href="main__demo5_8c_source.html#l00059">dl_buffer</a>, <a class="el" href="main__demo5_8c_source.html#l00056">dl_msg_available</a>, <a class="el" href="transport_8h_source.html#l00041">transport::payload</a>, <a class="el" href="transport_8h_source.html#l00043">transport::payload_len</a>, <a class="el" href="xbee_8h_source.html#l00204">xbee_transport::trans</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="xbee24_8h_source.html#l00030">XBEE_RFDATA_OFFSET</a>, <a class="el" href="xbee24_8h_source.html#l00029">XBEE_RX_ID</a>, <a class="el" href="xbee24_8h_source.html#l00028">XBEE_TX_ID</a>, and <a class="el" href="xbee24_8h_source.html#l00043">XbeeGetRSSI</a>.</p>
 
 </div>
 </div>
@@ -1480,7 +2217,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_6567a5a7be991f15b7628b3b0eb084bd.html">datalink</a></li><li class="navelem"><a class="el" href="xbee_8h.html">xbee.h</a></li>
-    <li class="footer">Generated on Thu Nov 14 2013 00:00:15 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Nov 21 2013 12:00:11 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

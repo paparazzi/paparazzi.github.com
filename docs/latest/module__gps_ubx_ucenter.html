@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-652-g8a782ca</span>
+   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -119,6 +119,10 @@ Define Options</h2>
 <ul>
 <li><b>name:</b> <code>GPS_PORT_ID</code> <b>value:</b> <em>GPS_PORT_UART1</em> <br/>
  Description: Port inside the Ublox GPS (GPS_PORT_DDC, GPS_PORT_UART1, GPS_PORT_UART2, GPS_PORT_USB, GPS_PORT_SPI)</li>
+<li><b>name:</b> <code>GPS_UBX_UCENTER_RATE</code> <b>value:</b> <em>250</em> <br/>
+ Description: Data output rate in ms</li>
+<li><b>name:</b> <code>USE_GPS_UBX_RXM_RAW</code> <b>value:</b> <em>None</em> <br/>
+ Description: Activate raw measurments (only available on U-Blox T versions)</li>
 </ul>
 <h1><a class="anchor" id="functions"></a>
 Module functions</h1>
@@ -175,6 +179,8 @@ Raw gps_ubx_ucenter.xml file:</h2>
 <div class="line">   or I2C device you need to set this by defining <a class="code" href="gps__ubx__ucenter_8c.html#a7726b5b61fb5d30c1a8136f947000248">GPS_PORT_ID</a>.</div>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line">    &lt;define name=&quot;<a class="code" href="gps__ubx__ucenter_8c.html#a7726b5b61fb5d30c1a8136f947000248">GPS_PORT_ID</a>&quot; value=&quot;<a class="code" href="gps__ubx__ucenter_8c.html#ad0bbbfc9dec7878b6f5e0eecc5707928">GPS_PORT_UART1</a>&quot; description=&quot;Port inside the Ublox GPS (<a class="code" href="gps__ubx__ucenter_8c.html#a54a4fdda8f83295995219af42ed0b715">GPS_PORT_DDC</a>, <a class="code" href="gps__ubx__ucenter_8c.html#ad0bbbfc9dec7878b6f5e0eecc5707928">GPS_PORT_UART1</a>, <a class="code" href="gps__ubx__ucenter_8c.html#afd76c87654bd547a6b8932b8f798c99f">GPS_PORT_UART2</a>, <a class="code" href="gps__ubx__ucenter_8c.html#a3a154417a0097b7eb296e7166d232795">GPS_PORT_USB</a>, <a class="code" href="gps__ubx__ucenter_8c.html#ac78173e2ac3c7b1dd2071157d55cb695">GPS_PORT_SPI</a>)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;<a class="code" href="gps__ubx__ucenter_8c.html#a179870d9ccd3fc30f92fb7c66f27953b">GPS_UBX_UCENTER_RATE</a>&quot; value=&quot;250&quot; description=&quot;Data output rate in ms&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;USE_GPS_UBX_RXM_RAW&quot; description=&quot;Activate raw measurments (only available on U-Blox T versions)&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;<a class="code" href="gps__ubx__ucenter_8c.html#a080e2318dbd7b4cb34822c4fbbfc701d">gps_ubx_ucenter</a>.h&quot;/&gt;</div>
@@ -194,7 +200,7 @@ Raw gps_ubx_ucenter.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Thu Nov 14 2013 00:00:16 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Nov 21 2013 12:00:12 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>
