@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('link__mcu__usart_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="link__mcu__usart_8c__incl.png" border="0" usemap="#sw_2airborne_2link__mcu__usart_8c" alt=""/></div>
 <map name="sw_2airborne_2link__mcu__usart_8c" id="sw_2airborne_2link__mcu__usart_8c">
-<area shape="rect" id="node3" href="link__mcu__usart_8h.html" title="link_mcu_usart.h" alt="" coords="7,99,127,127"/><area shape="rect" id="node9" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="151,99,277,127"/><area shape="rect" id="node15" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API" alt="" coords="301,99,349,127"/><area shape="rect" id="node17" href="commands_8h.html" title="Hardware independent code for commands handling." alt="" coords="373,99,543,127"/><area shape="rect" id="node5" href="inttypes_8h.html" title="inttypes.h" alt="" coords="171,254,249,282"/><area shape="rect" id="node7" href="inter__mcu_8h.html" title="inter_mcu.h" alt="" coords="23,177,111,205"/><area shape="rect" id="node19" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="391,177,477,205"/></map>
+<area shape="rect" id="node3" href="link__mcu__usart_8h.html" title="link_mcu_usart.h" alt="" coords="8,99,138,127"/><area shape="rect" id="node9" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="252,99,390,127"/><area shape="rect" id="node15" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API" alt="" coords="414,99,468,127"/><area shape="rect" id="node19" href="commands_8h.html" title="Hardware independent code for commands handling." alt="" coords="492,99,678,127"/><area shape="rect" id="node5" href="inttypes_8h.html" title="inttypes.h" alt="" coords="234,254,320,282"/><area shape="rect" id="node7" href="inter__mcu_8h.html" title="inter_mcu.h" alt="" coords="24,177,122,205"/><area shape="rect" id="node21" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="520,177,616,205"/></map>
 </div>
 </div>
 <p><a href="link__mcu__usart_8c_source.html">Go to the source code of this file.</a></p>
@@ -138,17 +138,17 @@ Macros</h2></td></tr>
 <tr class="memitem:a366264684970cbd9bbbd4ea5c54d8323"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a366264684970cbd9bbbd4ea5c54d8323">_InterMcuLink</a>(dev, _x)&#160;&#160;&#160;<a class="el" href="link__mcu__usart_8c.html#a1837d499c8ba31f4e5e9274573c7281c">__InterMcuLink</a>(dev, _x)</td></tr>
 <tr class="memitem:ae665b7cbe256183f1a2bcb6bf5400795"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#ae665b7cbe256183f1a2bcb6bf5400795">InterMcuLink</a>(_x)&#160;&#160;&#160;<a class="el" href="link__mcu__usart_8c.html#a366264684970cbd9bbbd4ea5c54d8323">_InterMcuLink</a>(INTERMCU_LINK, _x)</td></tr>
 <tr class="memitem:aa5cde38c527667acbfa562dcc0d95462"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#aa5cde38c527667acbfa562dcc0d95462">InterMcuBuffer</a>()&#160;&#160;&#160;<a class="el" href="link__mcu__usart_8c.html#ae665b7cbe256183f1a2bcb6bf5400795">InterMcuLink</a>(ChAvailable())</td></tr>
-<tr class="memitem:a3cdcb437d9c77fe37091741f74fa3a92"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a3cdcb437d9c77fe37091741f74fa3a92">InterMcuUartSend1</a>(<a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>)&#160;&#160;&#160;<a class="el" href="link__mcu__usart_8c.html#ae665b7cbe256183f1a2bcb6bf5400795">InterMcuLink</a>(Transmit(<a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>))</td></tr>
+<tr class="memitem:a3cdcb437d9c77fe37091741f74fa3a92"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a3cdcb437d9c77fe37091741f74fa3a92">InterMcuUartSend1</a>(c)&#160;&#160;&#160;<a class="el" href="link__mcu__usart_8c.html#ae665b7cbe256183f1a2bcb6bf5400795">InterMcuLink</a>(Transmit(c))</td></tr>
 <tr class="memitem:a59cd5ead08f9eb3871bacf5bd7d70a86"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a59cd5ead08f9eb3871bacf5bd7d70a86">InterMcuUartSetBaudrate</a>(_a)&#160;&#160;&#160;<a class="el" href="link__mcu__usart_8c.html#ae665b7cbe256183f1a2bcb6bf5400795">InterMcuLink</a>(SetBaudrate(_a))</td></tr>
 <tr class="memitem:a253fd43483742344214f86e314709a2e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a253fd43483742344214f86e314709a2e">InterMcuUartRunning</a>&#160;&#160;&#160;<a class="el" href="link__mcu__usart_8c.html#ae665b7cbe256183f1a2bcb6bf5400795">InterMcuLink</a>(TxRunning)</td></tr>
 <tr class="memitem:a8768854b509847eda93037a5caa9f09c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a8768854b509847eda93037a5caa9f09c">InterMcuUartSendMessage</a>&#160;&#160;&#160;<a class="el" href="link__mcu__usart_8c.html#ae665b7cbe256183f1a2bcb6bf5400795">InterMcuLink</a>(SendMessage)</td></tr>
 <tr class="memitem:aebbc0839e447c2342eff6bfd4011a245"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#aebbc0839e447c2342eff6bfd4011a245">INTERMCU_SYNC1</a>&#160;&#160;&#160;0xB5</td></tr>
 <tr class="memitem:ae722e0fce0398661d09fd16516b0157a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#ae722e0fce0398661d09fd16516b0157a">INTERMCU_SYNC2</a>&#160;&#160;&#160;0x62</td></tr>
 <tr class="memitem:acce750193c2ffba21e72eeb102331587"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#acce750193c2ffba21e72eeb102331587">InterMcuInitCheksum</a>()&#160;&#160;&#160;{ intermcu_data.send_ck_a = intermcu_data.send_ck_b = 0; }</td></tr>
-<tr class="memitem:a9b296485673ac66d73607effe619f468"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a9b296485673ac66d73607effe619f468">UpdateChecksum</a>(<a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>)&#160;&#160;&#160;{ intermcu_data.send_ck_a += <a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>; intermcu_data.send_ck_b += intermcu_data.send_ck_a; }</td></tr>
+<tr class="memitem:a9b296485673ac66d73607effe619f468"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a9b296485673ac66d73607effe619f468">UpdateChecksum</a>(c)&#160;&#160;&#160;{ intermcu_data.send_ck_a += c; intermcu_data.send_ck_b += intermcu_data.send_ck_a; }</td></tr>
 <tr class="memitem:a62e7b79ccdfc34b8135436e458a86c53"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a62e7b79ccdfc34b8135436e458a86c53">InterMcuTrailer</a>()&#160;&#160;&#160;{ <a class="el" href="link__mcu__usart_8c.html#a3cdcb437d9c77fe37091741f74fa3a92">InterMcuUartSend1</a>(intermcu_data.send_ck_a);  <a class="el" href="link__mcu__usart_8c.html#a3cdcb437d9c77fe37091741f74fa3a92">InterMcuUartSend1</a>(intermcu_data.send_ck_b); <a class="el" href="link__mcu__usart_8c.html#a8768854b509847eda93037a5caa9f09c">InterMcuUartSendMessage</a>(); }</td></tr>
-<tr class="memitem:a97a6acb2416b3ceae5a3bd427f600af8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a97a6acb2416b3ceae5a3bd427f600af8">InterMcuSend1</a>(<a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>)&#160;&#160;&#160;{ <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i8=<a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>; <a class="el" href="link__mcu__usart_8c.html#a3cdcb437d9c77fe37091741f74fa3a92">InterMcuUartSend1</a>(i8); <a class="el" href="gps__ubx_8h.html#a9b296485673ac66d73607effe619f468">UpdateChecksum</a>(i8); }</td></tr>
-<tr class="memitem:a0ce376edb1d61edfbce2a27ea2e19640"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a0ce376edb1d61edfbce2a27ea2e19640">InterMcuSend2</a>(<a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>)&#160;&#160;&#160;{ <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> i16=<a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>; <a class="el" href="link__mcu__usart_8c.html#a97a6acb2416b3ceae5a3bd427f600af8">InterMcuSend1</a>(i16&amp;0xff); InterMcuSend1(i16 &gt;&gt; 8); }</td></tr>
+<tr class="memitem:a97a6acb2416b3ceae5a3bd427f600af8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a97a6acb2416b3ceae5a3bd427f600af8">InterMcuSend1</a>(c)&#160;&#160;&#160;{ <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i8=c; <a class="el" href="link__mcu__usart_8c.html#a3cdcb437d9c77fe37091741f74fa3a92">InterMcuUartSend1</a>(i8); <a class="el" href="gps__ubx_8h.html#a9b296485673ac66d73607effe619f468">UpdateChecksum</a>(i8); }</td></tr>
+<tr class="memitem:a0ce376edb1d61edfbce2a27ea2e19640"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a0ce376edb1d61edfbce2a27ea2e19640">InterMcuSend2</a>(c)&#160;&#160;&#160;{ <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> i16=c; <a class="el" href="link__mcu__usart_8c.html#a97a6acb2416b3ceae5a3bd427f600af8">InterMcuSend1</a>(i16&amp;0xff); InterMcuSend1(i16 &gt;&gt; 8); }</td></tr>
 <tr class="memitem:a44b8f224eb2e675ff7aa968db66b9bec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a44b8f224eb2e675ff7aa968db66b9bec">InterMcuSend1ByAddr</a>(x)&#160;&#160;&#160;{ <a class="el" href="link__mcu__usart_8c.html#a97a6acb2416b3ceae5a3bd427f600af8">InterMcuSend1</a>(*x); }</td></tr>
 <tr class="memitem:ae0f3d22b59d3ccabd6fca1b76f04cea5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#ae0f3d22b59d3ccabd6fca1b76f04cea5">InterMcuSend2ByAddr</a>(x)&#160;&#160;&#160;{ <a class="el" href="link__mcu__usart_8c.html#a97a6acb2416b3ceae5a3bd427f600af8">InterMcuSend1</a>(*x); <a class="el" href="link__mcu__usart_8c.html#a97a6acb2416b3ceae5a3bd427f600af8">InterMcuSend1</a>(*(x+1)); }</td></tr>
 <tr class="memitem:a6073747351cfaf8fbf869b23ba3888db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a6073747351cfaf8fbf869b23ba3888db">InterMcuSend4ByAddr</a>(x)&#160;&#160;&#160;{ <a class="el" href="link__mcu__usart_8c.html#a97a6acb2416b3ceae5a3bd427f600af8">InterMcuSend1</a>(*x); <a class="el" href="link__mcu__usart_8c.html#a97a6acb2416b3ceae5a3bd427f600af8">InterMcuSend1</a>(*(x+1)); <a class="el" href="link__mcu__usart_8c.html#a97a6acb2416b3ceae5a3bd427f600af8">InterMcuSend1</a>(*(x+2)); <a class="el" href="link__mcu__usart_8c.html#a97a6acb2416b3ceae5a3bd427f600af8">InterMcuSend1</a>(*(x+3)); }</td></tr>
@@ -173,20 +173,20 @@ Macros</h2></td></tr>
 <tr class="memitem:a57e939081e071743a2d3bb0d463e7137"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a57e939081e071743a2d3bb0d463e7137">MSG_INTERMCU_TRIM_ROLL</a>(_intermcu_payload)&#160;&#160;&#160;(<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(*((<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_intermcu_payload+0)|*((<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_intermcu_payload+1)&lt;&lt;8)</td></tr>
 <tr class="memitem:a50535edb3f11e24c054ca920f1e3ed2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a50535edb3f11e24c054ca920f1e3ed2d">MSG_INTERMCU_TRIM_PITCH</a>(_intermcu_payload)&#160;&#160;&#160;(<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(*((<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_intermcu_payload+2)|*((<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)_intermcu_payload+3)&lt;&lt;8)</td></tr>
 <tr class="memitem:a162a9d81009a6bf9d308990d9b4619ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a162a9d81009a6bf9d308990d9b4619ec">InterMcuSend_INTERMCU_TRIM</a>(roll, pitch)</td></tr>
-<tr class="memitem:a7668dedbc74a47bde384b2b911379073"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a7668dedbc74a47bde384b2b911379073">UNINIT</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memitem:a707902cbcb19d72f61023120a772dcc1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a707902cbcb19d72f61023120a772dcc1">GOT_SYNC1</a>&#160;&#160;&#160;1</td></tr>
-<tr class="memitem:a43c36b18edb9111a465a8a9eceb01147"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a43c36b18edb9111a465a8a9eceb01147">GOT_SYNC2</a>&#160;&#160;&#160;2</td></tr>
-<tr class="memitem:a0073d28934a77070d07747d2944936e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a0073d28934a77070d07747d2944936e1">GOT_CLASS</a>&#160;&#160;&#160;3</td></tr>
-<tr class="memitem:a8856577ec0bb8d2ded56dcbf465ebf84"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a8856577ec0bb8d2ded56dcbf465ebf84">GOT_ID</a>&#160;&#160;&#160;4</td></tr>
-<tr class="memitem:a5cd24472c5091dae7b3a1c36f54b74ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a5cd24472c5091dae7b3a1c36f54b74ac">GOT_LEN1</a>&#160;&#160;&#160;5</td></tr>
-<tr class="memitem:aede2c7b39bb0d0c5869015127454d7a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#aede2c7b39bb0d0c5869015127454d7a7">GOT_LEN2</a>&#160;&#160;&#160;6</td></tr>
-<tr class="memitem:a6d9ad6e4a25bbf5ef73a8dcefd5cc687"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a6d9ad6e4a25bbf5ef73a8dcefd5cc687">GOT_PAYLOAD</a>&#160;&#160;&#160;7</td></tr>
-<tr class="memitem:a7a53eb7b7d725c83beee8dd21cb9f74f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a7a53eb7b7d725c83beee8dd21cb9f74f">GOT_CHECKSUM1</a>&#160;&#160;&#160;8</td></tr>
+<tr class="memitem:adfb31d454371c9bf86cef49ad0f3d766"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#adfb31d454371c9bf86cef49ad0f3d766">LINK_MCU_UNINIT</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a37f0792bcf7f5de8f0323fed3ba692dd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a37f0792bcf7f5de8f0323fed3ba692dd">LINK_MCU_GOT_SYNC1</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:a3a16b87a5ddd91dc8705b691cbb1cc17"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a3a16b87a5ddd91dc8705b691cbb1cc17">LINK_MCU_GOT_SYNC2</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memitem:a69636df7fce3b143d46b6972f0c32ec7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a69636df7fce3b143d46b6972f0c32ec7">LINK_MCU_GOT_CLASS</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memitem:ab7da49b3bff09fb03e59b842810b58f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#ab7da49b3bff09fb03e59b842810b58f9">LINK_MCU_GOT_ID</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memitem:a3d16465770eb9e6321d8c165fb27fad5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a3d16465770eb9e6321d8c165fb27fad5">LINK_MCU_GOT_LEN1</a>&#160;&#160;&#160;5</td></tr>
+<tr class="memitem:a330cf8b80921a94be4fb2cdb6090a341"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a330cf8b80921a94be4fb2cdb6090a341">LINK_MCU_GOT_LEN2</a>&#160;&#160;&#160;6</td></tr>
+<tr class="memitem:a8c9323939cc39625ccbf351777317807"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a8c9323939cc39625ccbf351777317807">LINK_MCU_GOT_PAYLOAD</a>&#160;&#160;&#160;7</td></tr>
+<tr class="memitem:a13e8e4c0d4edad97bed66febb56f0734"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a13e8e4c0d4edad97bed66febb56f0734">LINK_MCU_GOT_CHECKSUM1</a>&#160;&#160;&#160;8</td></tr>
 <tr class="memitem:a6e77400828b92a39a174700f5aa57fb1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a6e77400828b92a39a174700f5aa57fb1">INTERMCU_MAX_PAYLOAD</a>&#160;&#160;&#160;255</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a59e225c41b5535caabbc56b987632f66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a59e225c41b5535caabbc56b987632f66">intermcu_parse</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>)</td></tr>
+<tr class="memitem:a59e225c41b5535caabbc56b987632f66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a59e225c41b5535caabbc56b987632f66">intermcu_parse</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> c)</td></tr>
 <tr class="memitem:a2b355a8fc38c486f81dd7de7b144fe64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a2b355a8fc38c486f81dd7de7b144fe64">parse_mavpilot_msg</a> (void)</td></tr>
 <tr class="memitem:a4811adaa420099181f04d75d5ba24c25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#a4811adaa420099181f04d75d5ba24c25">link_mcu_init</a> (void)</td></tr>
 <tr class="memitem:ac8ca91741aea5e6803a8db35d4c8188e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="link__mcu__usart_8c.html#ac8ca91741aea5e6803a8db35d4c8188e">link_mcu_event_task</a> (void)</td></tr>
@@ -254,134 +254,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7a53eb7b7d725c83beee8dd21cb9f74f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GOT_CHECKSUM1&#160;&#160;&#160;8</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00141">141</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
-
-<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00163">intermcu_parse()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0073d28934a77070d07747d2944936e1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GOT_CLASS&#160;&#160;&#160;3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00136">136</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
-
-<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00163">intermcu_parse()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8856577ec0bb8d2ded56dcbf465ebf84"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GOT_ID&#160;&#160;&#160;4</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00137">137</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
-
-<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00163">intermcu_parse()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5cd24472c5091dae7b3a1c36f54b74ac"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GOT_LEN1&#160;&#160;&#160;5</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00138">138</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
-
-<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00163">intermcu_parse()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aede2c7b39bb0d0c5869015127454d7a7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GOT_LEN2&#160;&#160;&#160;6</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00139">139</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
-
-<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00163">intermcu_parse()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6d9ad6e4a25bbf5ef73a8dcefd5cc687"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GOT_PAYLOAD&#160;&#160;&#160;7</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00140">140</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
-
-<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00163">intermcu_parse()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a707902cbcb19d72f61023120a772dcc1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GOT_SYNC1&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00134">134</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
-
-<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00163">intermcu_parse()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a43c36b18edb9111a465a8a9eceb01147"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GOT_SYNC2&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00135">135</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
-
-<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00163">intermcu_parse()</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a6e77400828b92a39a174700f5aa57fb1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -445,7 +317,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00036">36</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
 
-<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00342">link_mcu_event_task()</a>.</p>
+<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00381">link_mcu_event_task()</a>.</p>
 
 </div>
 </div>
@@ -524,7 +396,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00034">34</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
 
-<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00342">link_mcu_event_task()</a>.</p>
+<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00381">link_mcu_event_task()</a>.</p>
 
 </div>
 </div>
@@ -536,8 +408,8 @@ Variables</h2></td></tr>
           <td class="memname">#define InterMcuSend1</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a></td><td>)</td>
-          <td>&#160;&#160;&#160;{ <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i8=<a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>; <a class="el" href="link__mcu__usart_8c.html#a3cdcb437d9c77fe37091741f74fa3a92">InterMcuUartSend1</a>(i8); <a class="el" href="gps__ubx_8h.html#a9b296485673ac66d73607effe619f468">UpdateChecksum</a>(i8); }</td>
+          <td class="paramname">c</td><td>)</td>
+          <td>&#160;&#160;&#160;{ <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i8=c; <a class="el" href="link__mcu__usart_8c.html#a3cdcb437d9c77fe37091741f74fa3a92">InterMcuUartSend1</a>(i8); <a class="el" href="gps__ubx_8h.html#a9b296485673ac66d73607effe619f468">UpdateChecksum</a>(i8); }</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -572,8 +444,8 @@ Variables</h2></td></tr>
           <td class="memname">#define InterMcuSend2</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a></td><td>)</td>
-          <td>&#160;&#160;&#160;{ <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> i16=<a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>; <a class="el" href="link__mcu__usart_8c.html#a97a6acb2416b3ceae5a3bd427f600af8">InterMcuSend1</a>(i16&amp;0xff); InterMcuSend1(i16 &gt;&gt; 8); }</td>
+          <td class="paramname">c</td><td>)</td>
+          <td>&#160;&#160;&#160;{ <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> i16=c; <a class="el" href="link__mcu__usart_8c.html#a97a6acb2416b3ceae5a3bd427f600af8">InterMcuSend1</a>(i16&amp;0xff); InterMcuSend1(i16 &gt;&gt; 8); }</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -686,7 +558,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{ \</div>
-<div class="line">  InterMcuHeader(<a class="code" href="link__mcu__usart_8c.html#a70c9cadbe54feb9c12e737265e47c7d6">MSG_INTERMCU_ID</a>, <a class="code" href="link__mcu__usart_8c.html#ac2358eb09f1ef558205914d523986df0">MSG_INTERMCU_FBW_ID</a>, 6);<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">\</a></div>
+<div class="line">  InterMcuHeader(<a class="code" href="link__mcu__usart_8c.html#a70c9cadbe54feb9c12e737265e47c7d6">MSG_INTERMCU_ID</a>, <a class="code" href="link__mcu__usart_8c.html#ac2358eb09f1ef558205914d523986df0">MSG_INTERMCU_FBW_ID</a>, 7);<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">\</a></div>
 <div class="line"><a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">  uint8_t</a> _mod = mod; <a class="code" href="link__mcu__usart_8c.html#a44b8f224eb2e675ff7aa968db66b9bec">InterMcuSend1ByAddr</a>((<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)&amp;_mod);<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">\</a></div>
 <div class="line"><a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">  uint8_t</a> _stat = stat; <a class="code" href="link__mcu__usart_8c.html#a44b8f224eb2e675ff7aa968db66b9bec">InterMcuSend1ByAddr</a>((<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)&amp;_stat);<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">\</a></div>
 <div class="line"><a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">  uint8_t</a> _err = err; <a class="code" href="link__mcu__usart_8c.html#a44b8f224eb2e675ff7aa968db66b9bec">InterMcuSend1ByAddr</a>((<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)&amp;_err);<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">\</a></div>
@@ -798,8 +670,8 @@ Variables</h2></td></tr>
           <td class="memname">#define InterMcuUartSend1</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="link__mcu__usart_8c.html#ae665b7cbe256183f1a2bcb6bf5400795">InterMcuLink</a>(Transmit(<a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>))</td>
+          <td class="paramname">c</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="link__mcu__usart_8c.html#ae665b7cbe256183f1a2bcb6bf5400795">InterMcuLink</a>(Transmit(c))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -840,6 +712,150 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a13e8e4c0d4edad97bed66febb56f0734"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LINK_MCU_GOT_CHECKSUM1&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00141">141</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
+
+<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00163">intermcu_parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a69636df7fce3b143d46b6972f0c32ec7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LINK_MCU_GOT_CLASS&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00136">136</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
+
+<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00163">intermcu_parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab7da49b3bff09fb03e59b842810b58f9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LINK_MCU_GOT_ID&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00137">137</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
+
+<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00163">intermcu_parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3d16465770eb9e6321d8c165fb27fad5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LINK_MCU_GOT_LEN1&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00138">138</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
+
+<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00163">intermcu_parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a330cf8b80921a94be4fb2cdb6090a341"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LINK_MCU_GOT_LEN2&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00139">139</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
+
+<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00163">intermcu_parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8c9323939cc39625ccbf351777317807"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LINK_MCU_GOT_PAYLOAD&#160;&#160;&#160;7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00140">140</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
+
+<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00163">intermcu_parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a37f0792bcf7f5de8f0323fed3ba692dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LINK_MCU_GOT_SYNC1&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00134">134</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
+
+<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00163">intermcu_parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a16b87a5ddd91dc8705b691cbb1cc17"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LINK_MCU_GOT_SYNC2&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00135">135</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
+
+<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00163">intermcu_parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adfb31d454371c9bf86cef49ad0f3d766"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LINK_MCU_UNINIT&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00133">133</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
+
+<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00163">intermcu_parse()</a>, and <a class="el" href="link__mcu__usart_8c_source.html#l00279">link_mcu_init()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="afcd2324925c3c00ec94e426b12f7f80c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -866,7 +882,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00077">77</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
 
-<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00254">parse_mavpilot_msg()</a>.</p>
+<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00293">parse_mavpilot_msg()</a>.</p>
 
 </div>
 </div>
@@ -882,7 +898,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00075">75</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
 
-<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00254">parse_mavpilot_msg()</a>.</p>
+<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00293">parse_mavpilot_msg()</a>.</p>
 
 </div>
 </div>
@@ -916,7 +932,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00106">106</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
 
-<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00254">parse_mavpilot_msg()</a>.</p>
+<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00293">parse_mavpilot_msg()</a>.</p>
 
 </div>
 </div>
@@ -936,7 +952,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00104">104</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
 
-<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00254">parse_mavpilot_msg()</a>.</p>
+<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00293">parse_mavpilot_msg()</a>.</p>
 
 </div>
 </div>
@@ -952,7 +968,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00101">101</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
 
-<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00254">parse_mavpilot_msg()</a>.</p>
+<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00293">parse_mavpilot_msg()</a>.</p>
 
 </div>
 </div>
@@ -972,7 +988,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00102">102</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
 
-<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00254">parse_mavpilot_msg()</a>.</p>
+<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00293">parse_mavpilot_msg()</a>.</p>
 
 </div>
 </div>
@@ -992,7 +1008,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00103">103</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
 
-<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00254">parse_mavpilot_msg()</a>.</p>
+<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00293">parse_mavpilot_msg()</a>.</p>
 
 </div>
 </div>
@@ -1012,7 +1028,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00105">105</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
 
-<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00254">parse_mavpilot_msg()</a>.</p>
+<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00293">parse_mavpilot_msg()</a>.</p>
 
 </div>
 </div>
@@ -1028,7 +1044,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00072">72</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
 
-<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00254">parse_mavpilot_msg()</a>.</p>
+<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00293">parse_mavpilot_msg()</a>.</p>
 
 </div>
 </div>
@@ -1058,7 +1074,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00090">90</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
 
-<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00254">parse_mavpilot_msg()</a>.</p>
+<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00293">parse_mavpilot_msg()</a>.</p>
 
 </div>
 </div>
@@ -1074,7 +1090,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00088">88</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
 
-<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00254">parse_mavpilot_msg()</a>.</p>
+<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00293">parse_mavpilot_msg()</a>.</p>
 
 </div>
 </div>
@@ -1104,7 +1120,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00118">118</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
 
-<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00254">parse_mavpilot_msg()</a>.</p>
+<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00293">parse_mavpilot_msg()</a>.</p>
 
 </div>
 </div>
@@ -1124,7 +1140,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00120">120</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
 
-<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00254">parse_mavpilot_msg()</a>.</p>
+<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00293">parse_mavpilot_msg()</a>.</p>
 
 </div>
 </div>
@@ -1144,23 +1160,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00119">119</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
 
-<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00254">parse_mavpilot_msg()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7668dedbc74a47bde384b2b911379073"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define UNINIT&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00133">133</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
-
-<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00163">intermcu_parse()</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00247">link_mcu_init()</a>, and <a class="el" href="gps__sirf_8c_source.html#l00050">sirf_parse_char()</a>.</p>
+<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00293">parse_mavpilot_msg()</a>.</p>
 
 </div>
 </div>
@@ -1172,8 +1172,8 @@ Variables</h2></td></tr>
           <td class="memname">#define UpdateChecksum</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a></td><td>)</td>
-          <td>&#160;&#160;&#160;{ intermcu_data.send_ck_a += <a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>; intermcu_data.send_ck_b += intermcu_data.send_ck_a; }</td>
+          <td class="paramname">c</td><td>)</td>
+          <td>&#160;&#160;&#160;{ intermcu_data.send_ck_a += c; intermcu_data.send_ck_b += intermcu_data.send_ck_a; }</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1199,9 +1199,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00163">163</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
 
-<p>References <a class="el" href="discsurvey_8c_source.html#l00038">c</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00154">InterMcuData::ck_a</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00154">InterMcuData::ck_b</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00156">InterMcuData::error_cnt</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00141">GOT_CHECKSUM1</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00136">GOT_CLASS</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00137">GOT_ID</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00138">GOT_LEN1</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00139">GOT_LEN2</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00140">GOT_PAYLOAD</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00134">GOT_SYNC1</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00135">GOT_SYNC2</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00159">intermcu_data</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00144">INTERMCU_MAX_PAYLOAD</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00046">INTERMCU_SYNC1</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00047">INTERMCU_SYNC2</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00152">InterMcuData::len</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00146">InterMcuData::msg_available</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00147">InterMcuData::msg_buf</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00149">InterMcuData::msg_class</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00148">InterMcuData::msg_id</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00153">InterMcuData::msg_idx</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00151">InterMcuData::status</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, and <a class="el" href="link__mcu__usart_8c_source.html#l00133">UNINIT</a>.</p>
+<p>References <a class="el" href="link__mcu__usart_8c_source.html#l00154">InterMcuData::ck_a</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00154">InterMcuData::ck_b</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00156">InterMcuData::error_cnt</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00159">intermcu_data</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00144">INTERMCU_MAX_PAYLOAD</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00046">INTERMCU_SYNC1</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00047">INTERMCU_SYNC2</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00152">InterMcuData::len</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00141">LINK_MCU_GOT_CHECKSUM1</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00136">LINK_MCU_GOT_CLASS</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00137">LINK_MCU_GOT_ID</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00138">LINK_MCU_GOT_LEN1</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00139">LINK_MCU_GOT_LEN2</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00140">LINK_MCU_GOT_PAYLOAD</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00134">LINK_MCU_GOT_SYNC1</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00135">LINK_MCU_GOT_SYNC2</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00133">LINK_MCU_UNINIT</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00146">InterMcuData::msg_available</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00147">InterMcuData::msg_buf</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00149">InterMcuData::msg_class</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00148">InterMcuData::msg_id</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00153">InterMcuData::msg_idx</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00151">InterMcuData::status</a>, and <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>.</p>
 
-<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00342">link_mcu_event_task()</a>.</p>
+<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00381">link_mcu_event_task()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1210,7 +1210,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="link__mcu__usart_8c_a59e225c41b5535caabbc56b987632f66_icgraph.png" border="0" usemap="#link__mcu__usart_8c_a59e225c41b5535caabbc56b987632f66_icgraph" alt=""/></div>
 <map name="link__mcu__usart_8c_a59e225c41b5535caabbc56b987632f66_icgraph" id="link__mcu__usart_8c_a59e225c41b5535caabbc56b987632f66_icgraph">
-<area shape="rect" id="node3" href="link__mcu__usart_8h.html#ac8ca91741aea5e6803a8db35d4c8188e" title="link_mcu_event_task" alt="" coords="167,5,311,33"/></map>
+<area shape="rect" id="node3" href="link__mcu__usart_8h.html#ac8ca91741aea5e6803a8db35d4c8188e" title="link_mcu_event_task" alt="" coords="176,5,331,33"/></map>
 </div>
 </p>
 
@@ -1230,11 +1230,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00342">342</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
+<p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00381">381</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
 
-<p>References <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00159">intermcu_data</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00163">intermcu_parse()</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00036">InterMcuBuffer</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00034">InterMcuLink</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00146">InterMcuData::msg_available</a>, and <a class="el" href="link__mcu__usart_8c_source.html#l00254">parse_mavpilot_msg()</a>.</p>
+<p>References <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00159">intermcu_data</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00163">intermcu_parse()</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00036">InterMcuBuffer</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00034">InterMcuLink</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00146">InterMcuData::msg_available</a>, and <a class="el" href="link__mcu__usart_8c_source.html#l00293">parse_mavpilot_msg()</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00644">event_task_ap()</a>, and <a class="el" href="main__fbw_8c_source.html#l00183">event_task_fbw()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00655">event_task_ap()</a>, and <a class="el" href="main__fbw_8c_source.html#l00183">event_task_fbw()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1243,7 +1243,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="link__mcu__usart_8c_ac8ca91741aea5e6803a8db35d4c8188e_cgraph.png" border="0" usemap="#link__mcu__usart_8c_ac8ca91741aea5e6803a8db35d4c8188e_cgraph" alt=""/></div>
 <map name="link__mcu__usart_8c_ac8ca91741aea5e6803a8db35d4c8188e_cgraph" id="link__mcu__usart_8c_ac8ca91741aea5e6803a8db35d4c8188e_cgraph">
-<area shape="rect" id="node3" href="link__mcu__usart_8c.html#a59e225c41b5535caabbc56b987632f66" title="intermcu_parse" alt="" coords="217,5,327,33"/><area shape="rect" id="node5" href="link__mcu__usart_8c.html#a2b355a8fc38c486f81dd7de7b144fe64" title="parse_mavpilot_msg" alt="" coords="201,55,343,83"/></map>
+<area shape="rect" id="node3" href="link__mcu__usart_8c.html#a59e225c41b5535caabbc56b987632f66" title="intermcu_parse" alt="" coords="224,5,347,33"/><area shape="rect" id="node5" href="link__mcu__usart_8c.html#a2b355a8fc38c486f81dd7de7b144fe64" title="parse_mavpilot_msg" alt="" coords="208,55,363,83"/></map>
 </div>
 </p>
 
@@ -1254,7 +1254,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="link__mcu__usart_8c_ac8ca91741aea5e6803a8db35d4c8188e_icgraph.png" border="0" usemap="#link__mcu__usart_8c_ac8ca91741aea5e6803a8db35d4c8188e_icgraph" alt=""/></div>
 <map name="link__mcu__usart_8c_ac8ca91741aea5e6803a8db35d4c8188e_icgraph" id="link__mcu__usart_8c_ac8ca91741aea5e6803a8db35d4c8188e_icgraph">
-<area shape="rect" id="node3" href="main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="204,5,311,33"/><area shape="rect" id="node7" href="main__fbw_8h.html#ae1f060d6fcf56653e3db62e402c8701a" title="event_task_fbw" alt="" coords="200,55,315,83"/><area shape="rect" id="node5" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="364,30,489,58"/></map>
+<area shape="rect" id="node3" href="main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="211,5,325,33"/><area shape="rect" id="node7" href="main__fbw_8h.html#ae1f060d6fcf56653e3db62e402c8701a" title="event_task_fbw" alt="" coords="208,55,328,83"/><area shape="rect" id="node5" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="376,30,512,58"/></map>
 </div>
 </p>
 
@@ -1274,20 +1274,31 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00247">247</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
+<p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00279">279</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
 
-<p>References <a class="el" href="link__mcu__usart_8c_source.html#l00156">InterMcuData::error_cnt</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00159">intermcu_data</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00146">InterMcuData::msg_available</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00151">InterMcuData::status</a>, and <a class="el" href="link__mcu__usart_8c_source.html#l00133">UNINIT</a>.</p>
+<p>References <a class="el" href="link__mcu__usart_8c_source.html#l00156">InterMcuData::error_cnt</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00159">intermcu_data</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00133">LINK_MCU_UNINIT</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00146">InterMcuData::msg_available</a>, <a class="el" href="telemetry_8c_source.html#l00038">register_periodic_telemetry()</a>, and <a class="el" href="link__mcu__usart_8c_source.html#l00151">InterMcuData::status</a>.</p>
 
 <p>Referenced by <a class="el" href="main__ap_8c_source.html#l00177">init_ap()</a>, and <a class="el" href="main__fbw_8c_source.html#l00113">init_fbw()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="link__mcu__usart_8c_a4811adaa420099181f04d75d5ba24c25_cgraph.png" border="0" usemap="#link__mcu__usart_8c_a4811adaa420099181f04d75d5ba24c25_cgraph" alt=""/></div>
+<map name="link__mcu__usart_8c_a4811adaa420099181f04d75d5ba24c25_cgraph" id="link__mcu__usart_8c_a4811adaa420099181f04d75d5ba24c25_cgraph">
+<area shape="rect" id="node3" href="telemetry_8c.html#abb4aa9b3c0c8d93e1372de5da86de828" title="Register a telemetry callback function." alt="" coords="157,5,355,33"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="link__mcu__usart_8c_a4811adaa420099181f04d75d5ba24c25_icgraph.png" border="0" usemap="#link__mcu__usart_8c_a4811adaa420099181f04d75d5ba24c25_icgraph" alt=""/></div>
 <map name="link__mcu__usart_8c_a4811adaa420099181f04d75d5ba24c25_icgraph" id="link__mcu__usart_8c_a4811adaa420099181f04d75d5ba24c25_icgraph">
-<area shape="rect" id="node3" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="156,5,215,33"/><area shape="rect" id="node7" href="main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="152,55,219,83"/><area shape="rect" id="node5" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="267,30,333,58"/></map>
+<area shape="rect" id="node3" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="160,5,224,33"/><area shape="rect" id="node7" href="main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="157,55,227,83"/><area shape="rect" id="node5" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="276,30,345,58"/></map>
 </div>
 </p>
 
@@ -1315,20 +1326,20 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00254">254</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
+<p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00293">293</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
 
 <p>References <a class="el" href="inter__mcu_8c_source.html#l00033">ap_state</a>, <a class="el" href="inter__mcu_8c_source.html#l00032">fbw_state</a>, <a class="el" href="inter__mcu_8c_source.html#l00037">inter_mcu_received_ap</a>, <a class="el" href="inter__mcu_8c_source.html#l00036">inter_mcu_received_fbw</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00159">intermcu_data</a>, <a class="el" href="lpc21_2led__hw_8h_source.html#l00030">LED_TOGGLE</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00147">InterMcuData::msg_buf</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00149">InterMcuData::msg_class</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00148">InterMcuData::msg_id</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00077">MSG_INTERMCU_COMMAND</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00075">MSG_INTERMCU_COMMAND_ID</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00106">MSG_INTERMCU_FBW_CURRENT</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00104">MSG_INTERMCU_FBW_ERR</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00101">MSG_INTERMCU_FBW_ID</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00102">MSG_INTERMCU_FBW_MOD</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00103">MSG_INTERMCU_FBW_STAT</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00105">MSG_INTERMCU_FBW_VOLT</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00072">MSG_INTERMCU_ID</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00090">MSG_INTERMCU_RADIO</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00088">MSG_INTERMCU_RADIO_ID</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00118">MSG_INTERMCU_TRIM_ID</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00120">MSG_INTERMCU_TRIM_PITCH</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00119">MSG_INTERMCU_TRIM_ROLL</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00034">RADIO_CONTROL_NB_CHANNEL</a>, and <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>.</p>
 
-<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00342">link_mcu_event_task()</a>.</p>
+<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00381">link_mcu_event_task()</a>.</p>
 
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="link__mcu__usart_8c_a2b355a8fc38c486f81dd7de7b144fe64_icgraph.png" border="0" usemap="#link__mcu__usart_8c_a2b355a8fc38c486f81dd7de7b144fe64_icgraph" alt=""/></div>
 <map name="link__mcu__usart_8c_a2b355a8fc38c486f81dd7de7b144fe64_icgraph" id="link__mcu__usart_8c_a2b355a8fc38c486f81dd7de7b144fe64_icgraph">
-<area shape="rect" id="node3" href="link__mcu__usart_8h.html#ac8ca91741aea5e6803a8db35d4c8188e" title="link_mcu_event_task" alt="" coords="199,5,343,33"/></map>
+<area shape="rect" id="node3" href="link__mcu__usart_8h.html#ac8ca91741aea5e6803a8db35d4c8188e" title="link_mcu_event_task" alt="" coords="208,5,363,33"/></map>
 </div>
 </p>
 
@@ -1347,7 +1358,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="link__mcu__usart_8c_source.html#l00159">159</a> of file <a class="el" href="link__mcu__usart_8c_source.html">link_mcu_usart.c</a>.</p>
 
-<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00163">intermcu_parse()</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00342">link_mcu_event_task()</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00247">link_mcu_init()</a>, and <a class="el" href="link__mcu__usart_8c_source.html#l00254">parse_mavpilot_msg()</a>.</p>
+<p>Referenced by <a class="el" href="link__mcu__usart_8c_source.html#l00163">intermcu_parse()</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00381">link_mcu_event_task()</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00279">link_mcu_init()</a>, and <a class="el" href="link__mcu__usart_8c_source.html#l00293">parse_mavpilot_msg()</a>.</p>
 
 </div>
 </div>
@@ -1385,7 +1396,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="link__mcu__usart_8c.html">link_mcu_usart.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:10 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:56 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

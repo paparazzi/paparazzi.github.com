@@ -82,6 +82,6 @@ var w5100_8h =
     [ "w5100_send", "w5100_8h.html#a53e5379a5746a3b67460fe3afc1983cc", null ],
     [ "w5100_transmit", "w5100_8h.html#a38d417bb07a2d9eeebe11b6009cd710d", null ],
     [ "chip0", "w5100_8h.html#aa13e8b2503eb7f29b572379d1cd21148", null ],
-    [ "rx_buf", "w5100_8h.html#a0e465b84aa569b64e943366158b67b93", null ],
+    [ "w5100_rx_buf", "w5100_8h.html#aaf8c4df492a46538b29a1787dd03abe9", null ],
     [ "w5100_tp", "w5100_8h.html#aaf33508c9c49aa3ee2c8fcf2deda8325", null ]
 ];

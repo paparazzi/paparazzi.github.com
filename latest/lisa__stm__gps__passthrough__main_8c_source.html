@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -138,8 +138,8 @@ $(document).ready(function(){initNavTree('lisa__stm__gps__passthrough__main_8c_s
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API">led.h</a>&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="test__baro_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1">main_init</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="rotorcraft_2main_8c.html#a433218491d8e51ae032540c2c00d263f">main_periodic</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="rotorcraft_2main_8c.html#a319a645047f275499aa30b0bc08c6e10">main_event</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="stm32_2uart__tunnel_8c.html#a433218491d8e51ae032540c2c00d263f">main_periodic</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="stm32_2uart__tunnel_8c.html#a319a645047f275499aa30b0bc08c6e10">main_event</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="lisa__stm__gps__passthrough__main_8c.html#a673c138133952eaa8d725712998618db" title="spistream stress test: Send big (500-700 bytes) messages with different message lengths for every cha...">uart_transfer_event</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="lisa__stm__gps__passthrough__main_8c.html#a1cc80e89a96148cbe46cde4f0312a970" title="Handler for commands (messages from Overo-&gt;STM).">on_spistream_msg_received</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> msg_id, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> * data, <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> num_bytes);</div>
@@ -183,15 +183,15 @@ $(document).ready(function(){initNavTree('lisa__stm__gps__passthrough__main_8c_s
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">// in spistream TX completion handler (here: on_spistream_msg_sent).</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno"><a class="code" href="lisa__stm__gps__passthrough__main_8c.html#acf0b6ee5100b86f8851ed2af90715734">   75</a></span>&#160;<span class="keyword">static</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="lisa__stm__gps__passthrough__main_8c.html#acf0b6ee5100b86f8851ed2af90715734">spistream_wait_for_num_transfers</a> = 0;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="code" href="lisa__stm__gps__passthrough__main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">   77</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="code" href="lisa__stm__gps__passthrough__main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">   77</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="test__baro_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1">main_init</a>();</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordflow">while</span> (1) {</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="sys__time_8h.html#a2fbb0aec3597ef35c23aeb7d376d1666" title="Check if timer has elapsed.">sys_time_check_and_ack_timer</a>(0)) {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <a class="code" href="rotorcraft_2main_8c.html#a433218491d8e51ae032540c2c00d263f">main_periodic</a>();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <a class="code" href="stm32_2uart__tunnel_8c.html#a433218491d8e51ae032540c2c00d263f">main_periodic</a>();</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="rotorcraft_2main_8c.html#a319a645047f275499aa30b0bc08c6e10">main_event</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="stm32_2uart__tunnel_8c.html#a319a645047f275499aa30b0bc08c6e10">main_event</a>();</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  }</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordflow">return</span> 0;</div>
@@ -233,7 +233,7 @@ $(document).ready(function(){initNavTree('lisa__stm__gps__passthrough__main_8c_s
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  }</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="rotorcraft_2main_8c.html#a433218491d8e51ae032540c2c00d263f">main_periodic</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="stm32_2uart__tunnel_8c.html#a433218491d8e51ae032540c2c00d263f">main_periodic</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;{</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <a class="code" href="lisa__overo__link_8h.html#ac7dc0ee5b270da7e8145a955c6c2d9a9">OveroLinkPeriodic</a>(<a class="code" href="lisa__stm__gps__passthrough__main_8c.html#a085b7a7e09c9e63d14a73bb376a7c70f">on_overo_link_lost</a>);</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
@@ -254,7 +254,7 @@ $(document).ready(function(){initNavTree('lisa__stm__gps__passthrough__main_8c_s
 <div class="line"><a name="l00160"></a><span class="lineno"><a class="code" href="lisa__stm__gps__passthrough__main_8c.html#a62bcf5ca6da8a0b5dc3b9f43060904ef">  160</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="lisa__stm__gps__passthrough__main_8c.html#a62bcf5ca6da8a0b5dc3b9f43060904ef">on_overo_link_crc_failed</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;}</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="rotorcraft_2main_8c.html#a319a645047f275499aa30b0bc08c6e10">main_event</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="stm32_2uart__tunnel_8c.html#a319a645047f275499aa30b0bc08c6e10">main_event</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;{</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <a class="code" href="lisa__overo__link__arch_8h.html#a9d16852d48e98c09b669b8268833624f">OveroLinkEvent</a>(<a class="code" href="lisa__stm__gps__passthrough__main_8c.html#abab689efb09e677b0b7833c21bed8115" title="Every SPI transfer contains exactly two packages of type AutopilotMessagePTStream, one for each direction (up: STM-&gt;Overo, down: Overo-&gt;STM).">on_overo_link_msg_received</a>, <a class="code" href="lisa__stm__gps__passthrough__main_8c.html#a62bcf5ca6da8a0b5dc3b9f43060904ef">on_overo_link_crc_failed</a>);</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
@@ -335,9 +335,9 @@ $(document).ready(function(){initNavTree('lisa__stm__gps__passthrough__main_8c_s
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  <span class="keyword">static</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> uart3_enabled = 1;</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <span class="comment">// We cache data availability, so it doesn&#39;t change between checks:</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  uart1_has_data = <a class="code" href="uart_8h.html#a8fcf1d056b9856747bbe06995a9928ff">uart_char_available</a>(&amp;uart1);</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  uart2_has_data = <a class="code" href="uart_8h.html#a8fcf1d056b9856747bbe06995a9928ff">uart_char_available</a>(&amp;uart2);</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  uart3_has_data = <a class="code" href="uart_8h.html#a8fcf1d056b9856747bbe06995a9928ff">uart_char_available</a>(&amp;uart3);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  uart1_has_data = <a class="code" href="uart_8h.html#ac12152ef3f260cb4eb96be5f6027bc9f" title="Check UART for available chars in receive buffer.">uart_char_available</a>(&amp;uart1);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  uart2_has_data = <a class="code" href="uart_8h.html#ac12152ef3f260cb4eb96be5f6027bc9f" title="Check UART for available chars in receive buffer.">uart_char_available</a>(&amp;uart2);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  uart3_has_data = <a class="code" href="uart_8h.html#ac12152ef3f260cb4eb96be5f6027bc9f" title="Check UART for available chars in receive buffer.">uart_char_available</a>(&amp;uart3);</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <span class="comment">// Fill stage: Read data from UARTs into buffers, or increment</span></div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="comment">// their timeouts if no data is available:</span></div>
@@ -439,7 +439,7 @@ $(document).ready(function(){initNavTree('lisa__stm__gps__passthrough__main_8c_s
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_619681cec2e2b8e1da0a59f060b05c88.html">lisa</a></li><li class="navelem"><a class="el" href="lisa__stm__gps__passthrough__main_8c.html">lisa_stm_gps_passthrough_main.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

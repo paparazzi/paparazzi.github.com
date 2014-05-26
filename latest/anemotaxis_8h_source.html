@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -112,9 +112,9 @@ $(document).ready(function(){initNavTree('anemotaxis_8h_source.html','');});
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;std.h&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">extern</span> bool_t <a class="code" href="anemotaxis_8c.html#a4c02a9b657a4b9a65873f70d4ec62dc4">nav_anemotaxis_downwind</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>, <span class="keywordtype">float</span> <a class="code" href="chemotaxis_8c.html#a5050a760c11da521cd4aee6336f6529f">radius</a>);</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">extern</span> bool_t <a class="code" href="anemotaxis_8c.html#a8cc3011501084efee6a2bfb5ac6506f6">nav_anemotaxis_init</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>);</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">extern</span> bool_t <a class="code" href="anemotaxis_8c.html#a9a1fd3d6af839a60270308669139d1c4">nav_anemotaxis</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="baro__MS5534A_8c.html#a6d94ee929fd62c2982e49f8e2a04166e">c1</a>, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="baro__MS5534A_8c.html#ac7bcd4e07054b2ecda5619619b8bfa19">c2</a>, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> plume);</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">extern</span> bool_t <a class="code" href="anemotaxis_8c.html#a4c02a9b657a4b9a65873f70d4ec62dc4">nav_anemotaxis_downwind</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> c, <span class="keywordtype">float</span> <a class="code" href="chemotaxis_8c.html#a5050a760c11da521cd4aee6336f6529f">radius</a>);</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">extern</span> bool_t <a class="code" href="anemotaxis_8c.html#a8cc3011501084efee6a2bfb5ac6506f6">nav_anemotaxis_init</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> c);</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">extern</span> bool_t <a class="code" href="anemotaxis_8c.html#a9a1fd3d6af839a60270308669139d1c4">nav_anemotaxis</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> c, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="baro__MS5534A_8c.html#a6d94ee929fd62c2982e49f8e2a04166e">c1</a>, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="baro__MS5534A_8c.html#ac7bcd4e07054b2ecda5619619b8bfa19">c2</a>, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> plume);</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#endif </span></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('anemotaxis_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_04d24f89f5c7597c5fed512301c165a9.html">enose</a></li><li class="navelem"><a class="el" href="anemotaxis_8h.html">anemotaxis.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:41 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

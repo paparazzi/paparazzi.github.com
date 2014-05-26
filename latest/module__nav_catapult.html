@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -134,7 +134,7 @@ Module functions</h1>
 Init Functions</h2>
 <p>These initialization functions are called once on startup.</p>
 <ul>
-<li><a class="el" href="nav__catapult_8c.html#a5f1c9ada9f5651d5cd3324b22f869c4b">nav_catapult_init()</a></li>
+<li><a class="el" href="nav__catapult_8c.html#a2c6a974377ff09c2975c1b20bfbebf3b">nav_catapult_setup()</a></li>
 </ul>
 <h2><a class="anchor" id="periodic_functions"></a>
 Periodic Functions</h2>
@@ -169,9 +169,9 @@ Raw nav_catapult.xml file:</h2>
 <div class="line">    &lt;description&gt;</div>
 <div class="line">      Catapult.</div>
 <div class="line">      <a class="code" href="pprz__geodetic__utm_8h.html#a955f504eccf76b4eb2489c0adab03121">A</a> catapult <a class="code" href="sim__ap_8c.html#af32f81f02a3187c12c08e11caf354abd">launch</a> timing system.</div>
-<div class="line">      - Phase 1: Zero Roll, Climb Pitch, Zero <a class="code" href="OSAMNav_8c.html#a537434c0146d72f1c0f111539eb1945aa600160e844f132b8c8745e373e0ef454">Throttle</a></div>
+<div class="line">      - Phase 1: Zero Roll, Climb Pitch, Zero <a class="code" href="nav__bungee__takeoff_8c.html#a537434c0146d72f1c0f111539eb1945aa600160e844f132b8c8745e373e0ef454">Throttle</a></div>
 <div class="line">      - Phase 2: After detecting the Start Acceleration\n</div>
-<div class="line">                 Zero Roll, Climb Pitch, Full <a class="code" href="OSAMNav_8c.html#a537434c0146d72f1c0f111539eb1945aa600160e844f132b8c8745e373e0ef454">Throttle</a></div>
+<div class="line">                 Zero Roll, Climb Pitch, Full <a class="code" href="nav__bungee__takeoff_8c.html#a537434c0146d72f1c0f111539eb1945aa600160e844f132b8c8745e373e0ef454">Throttle</a></div>
 <div class="line">      - Phase 3: After getting the GPS <a class="code" href="ahrs__infrared_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a> (time based)\n</div>
 <div class="line">                 Place climb 300m in front of us\n</div>
 <div class="line">                 GoTo(climb)\n</div>
@@ -185,10 +185,10 @@ Raw nav_catapult.xml file:</h2>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;nav_catapult.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
-<div class="line">  &lt;<a class="code" href="gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;nav_catapult_init()&quot;</span>/&gt;</div>
+<div class="line">  &lt;<a class="code" href="nav__gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;nav_catapult_setup()&quot;</span>/&gt;</div>
 <div class="line">  &lt;!-- Run High Rate Lauch Detector --&gt;</div>
 <div class="line">  &lt;periodic fun=<span class="stringliteral">&quot;nav_catapult_highrate_module()&quot;</span> autorun=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
-<div class="line">  &lt;makefile&gt;</div>
+<div class="line">  &lt;makefile target=<span class="stringliteral">&quot;ap|sim|jsbsim|nps&quot;</span>&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;nav_catapult.c&quot;</span>/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">&lt;/module&gt;</div>
@@ -199,7 +199,7 @@ Raw nav_catapult.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:12 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:10 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

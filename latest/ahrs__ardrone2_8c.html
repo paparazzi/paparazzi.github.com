@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('ahrs__ardrone2_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__ardrone2_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2ahrs_2ahrs__ardrone2_8c" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2ahrs_2ahrs__ardrone2_8c" id="sw_2airborne_2subsystems_2ahrs_2ahrs__ardrone2_8c">
-<area shape="rect" id="node3" href="ahrs__ardrone2_8h.html" title="AHRS implementation for ardrone2&#45;sdk based on AT&#45;commands." alt="" coords="436,99,551,127"/><area shape="rect" id="node25" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="1104,425,1272,453"/><area shape="rect" id="node31" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="801,254,863,282"/><area shape="rect" id="node61" href="at__com_8h.html" title="Sending and receiving of AT&#45;commands specified by the ardrone API." alt="" coords="1371,254,1536,282"/><area shape="rect" id="node64" href="electrical_8h.html" title="Interface for electrical status: supply voltage, current, battery status, etc." alt="" coords="33,99,191,127"/><area shape="rect" id="node5" href="ahrs_8h.html" title="Attitude and Heading Reference System interface." alt="" coords="531,177,661,205"/><area shape="rect" id="node9" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="596,425,753,453"/><area shape="rect" id="node53" href="ahrs__aligner_8h.html" title="Interface to align the AHRS via low&#45;passed measurements at startup." alt="" coords="256,331,405,375"/><area shape="rect" id="node12" href="pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="997,502,1136,530"/><area shape="rect" id="node19" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="608,502,741,530"/><area shape="rect" id="node35" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="683,331,816,375"/><area shape="rect" id="node41" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="1011,331,1144,375"/><area shape="rect" id="node46" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversion." alt="" coords="840,331,987,375"/><area shape="rect" id="node37" href="pprz__geodetic_8h.html" title="pprz_geodetic.h" alt="" coords="917,425,1029,453"/></map>
+<area shape="rect" id="node3" href="ahrs__ardrone2_8h.html" title="AHRS implementation for ardrone2&#45;sdk based on AT&#45;commands." alt="" coords="463,99,588,127"/><area shape="rect" id="node25" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="1171,425,1360,453"/><area shape="rect" id="node31" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="847,254,913,282"/><area shape="rect" id="node61" href="at__com_8h.html" title="Sending and receiving of AT&#45;commands specified by the ardrone API." alt="" coords="1451,254,1635,282"/><area shape="rect" id="node64" href="electrical_8h.html" title="Interface for electrical status: supply voltage, current, battery status, etc." alt="" coords="36,99,207,127"/><area shape="rect" id="node5" href="ahrs_8h.html" title="Attitude and Heading Reference System interface." alt="" coords="563,177,704,205"/><area shape="rect" id="node9" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="633,425,812,453"/><area shape="rect" id="node53" href="ahrs__aligner_8h.html" title="Interface to align the AHRS via low&#45;passed measurements at startup." alt="" coords="275,331,437,375"/><area shape="rect" id="node12" href="pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="1064,502,1219,530"/><area shape="rect" id="node19" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="648,502,797,530"/><area shape="rect" id="node35" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="715,331,864,375"/><area shape="rect" id="node41" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="1075,331,1224,375"/><area shape="rect" id="node46" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversion." alt="" coords="888,331,1051,375"/><area shape="rect" id="node37" href="pprz__geodetic_8h.html" title="pprz_geodetic.h" alt="" coords="973,425,1096,453"/></map>
 </div>
 </div>
 <p><a href="ahrs__ardrone2_8c_source.html">Go to the source code of this file.</a></p>
@@ -138,12 +138,6 @@ Functions</h2></td></tr>
 <tr class="memdesc:a81e17b09f47068c02c345da1523f589b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aligns the AHRS.  <a href="#a81e17b09f47068c02c345da1523f589b"></a><br/></td></tr>
 <tr class="memitem:af8f4df7ae38ca5b239eac30e7d259e46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__ardrone2_8c.html#af8f4df7ae38ca5b239eac30e7d259e46">ahrs_propagate</a> (void)</td></tr>
 <tr class="memdesc:af8f4df7ae38ca5b239eac30e7d259e46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Propagation.  <a href="#af8f4df7ae38ca5b239eac30e7d259e46"></a><br/></td></tr>
-<tr class="memitem:a8bf83860498b05e7e94484cdcbcb1b7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__ardrone2_8c.html#a8bf83860498b05e7e94484cdcbcb1b7a">ahrs_update_accel</a> (void)</td></tr>
-<tr class="memdesc:a8bf83860498b05e7e94484cdcbcb1b7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update AHRS state with accerleration measurements.  <a href="#a8bf83860498b05e7e94484cdcbcb1b7a"></a><br/></td></tr>
-<tr class="memitem:a781832a9119845d31bda0fc8a8bb8bf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__ardrone2_8c.html#a781832a9119845d31bda0fc8a8bb8bf3">ahrs_update_mag</a> (void)</td></tr>
-<tr class="memdesc:a781832a9119845d31bda0fc8a8bb8bf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update AHRS state with magnetometer measurements.  <a href="#a781832a9119845d31bda0fc8a8bb8bf3"></a><br/></td></tr>
-<tr class="memitem:a0156f6669675c216bbcb413ea1879960"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__ardrone2_8c.html#a0156f6669675c216bbcb413ea1879960">ahrs_update_gps</a> (void)</td></tr>
-<tr class="memdesc:a0156f6669675c216bbcb413ea1879960"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update AHRS state with GPS measurements.  <a href="#a0156f6669675c216bbcb413ea1879960"></a><br/></td></tr>
 <tr class="memitem:a321c9a82fcb75074c3041cbf6906e5ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__ardrone2_8c.html#a321c9a82fcb75074c3041cbf6906e5ea">ahrs_aligner_init</a> (void)</td></tr>
 <tr class="memitem:aa8c5b5a4ce38e0dd4e1234bad8adf92d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__ardrone2_8c.html#aa8c5b5a4ce38e0dd4e1234bad8adf92d">ahrs_aligner_run</a> (void)</td></tr>
 </table><table class="memberdecls">
@@ -194,7 +188,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs__ardrone2_8c_source.html#l00210">210</a> of file <a class="el" href="ahrs__ardrone2_8c_source.html">ahrs_ardrone2.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__ardrone2_8c_source.html#l00198">198</a> of file <a class="el" href="ahrs__ardrone2_8c_source.html">ahrs_ardrone2.c</a>.</p>
 
 </div>
 </div>
@@ -212,7 +206,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs__ardrone2_8c_source.html#l00214">214</a> of file <a class="el" href="ahrs__ardrone2_8c_source.html">ahrs_ardrone2.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__ardrone2_8c_source.html#l00201">201</a> of file <a class="el" href="ahrs__ardrone2_8c_source.html">ahrs_ardrone2.c</a>.</p>
 
 </div>
 </div>
@@ -244,7 +238,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__ardrone2_8c_aa3721663c9df7c7af5613486a3566afb_cgraph.png" border="0" usemap="#ahrs__ardrone2_8c_aa3721663c9df7c7af5613486a3566afb_cgraph" alt=""/></div>
 <map name="ahrs__ardrone2_8c_aa3721663c9df7c7af5613486a3566afb_cgraph" id="ahrs__ardrone2_8c_aa3721663c9df7c7af5613486a3566afb_cgraph">
-<area shape="rect" id="node3" href="at__com_8c.html#af5734236d6ff49cb34e2dea4587963e2" title="at_com_send_config" alt="" coords="533,55,675,83"/><area shape="rect" id="node7" href="at__com_8c.html#a1f0950a49591400dab7ab956f8f35ed9" title="at_com_send_ftrim" alt="" coords="352,106,485,134"/><area shape="rect" id="node10" href="at__com_8c.html#a552cf296aef6d5ec5c940f478cee3549" title="init_at_com" alt="" coords="171,5,259,33"/><area shape="rect" id="node15" href="telemetry_8c.html#abb4aa9b3c0c8d93e1372de5da86de828" title="Register a telemetry callback function." alt="" coords="127,157,303,185"/><area shape="rect" id="node5" href="at__com_8c.html#a4bcbb6436b09c7be4e4a7b30a7878a09" title="at_com_send" alt="" coords="724,81,823,109"/><area shape="rect" id="node12" href="at__com_8c.html#a0737606751acc5dfd094101dac93031a" title="init_at_config" alt="" coords="369,5,468,33"/></map>
+<area shape="rect" id="node3" href="at__com_8c.html#af5734236d6ff49cb34e2dea4587963e2" title="at_com_send_config" alt="" coords="572,55,724,83"/><area shape="rect" id="node7" href="at__com_8c.html#a1f0950a49591400dab7ab956f8f35ed9" title="at_com_send_ftrim" alt="" coords="377,106,521,134"/><area shape="rect" id="node10" href="at__com_8c.html#a552cf296aef6d5ec5c940f478cee3549" title="init_at_com" alt="" coords="181,5,277,33"/><area shape="rect" id="node15" href="telemetry_8c.html#abb4aa9b3c0c8d93e1372de5da86de828" title="Register a telemetry callback function." alt="" coords="131,157,328,185"/><area shape="rect" id="node5" href="at__com_8c.html#a4bcbb6436b09c7be4e4a7b30a7878a09" title="at_com_send" alt="" coords="775,81,881,109"/><area shape="rect" id="node12" href="at__com_8c.html#a0737606751acc5dfd094101dac93031a" title="init_at_config" alt="" coords="396,5,503,33"/></map>
 </div>
 </p>
 
@@ -265,11 +259,11 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Propagation. </p>
-<p>Usually integrates the gyro rates to angles. Reads the global <a class="el" href="imu_8h.html#a77b76ed533bc56f50d714f8958dd26cc" title="global IMU state">imu</a> data struct. Needs to be implemented by each AHRS algorithm. </p>
+<p>Usually integrates the gyro rates to angles. Reads the global <a class="el" href="imu_8h.html#a77b76ed533bc56f50d714f8958dd26cc" title="global IMU state">imu</a> data struct. Does nothing if not implemented by specific AHRS algorithm. </p>
 
 <p>Definition at line <a class="el" href="ahrs__ardrone2_8c_source.html#l00103">103</a> of file <a class="el" href="ahrs__ardrone2_8c_source.html">ahrs_ardrone2.c</a>.</p>
 
-<p>References <a class="el" href="ahrs__ardrone2_8h_source.html#l00043">AhrsARDrone::accel</a>, <a class="el" href="ahrs__ardrone2_8c_source.html#l00045">ahrs_impl</a>, <a class="el" href="ahrs__ardrone2_8h_source.html#l00044">AhrsARDrone::altitude</a>, <a class="el" href="at__com_8h_source.html#l00125">_navdata_demo_t::altitude</a>, <a class="el" href="at__com_8h_source.html#l00102">_navdata_t::ardrone_state</a>, <a class="el" href="at__com_8c_source.html#l00136">at_com_recieve_navdata()</a>, <a class="el" href="ahrs__ardrone2_8h_source.html#l00045">AhrsARDrone::battery</a>, <a class="el" href="ahrs__ardrone2_8c_source.html#l00047">buffer</a>, <a class="el" href="ahrs__ardrone2_8h_source.html#l00040">AhrsARDrone::control_state</a>, <a class="el" href="at__com_8h_source.html#l00120">_navdata_demo_t::ctrl_state</a>, <a class="el" href="electrical__dummy_8c_source.html#l00033">electrical</a>, <a class="el" href="ahrs__ardrone2_8h_source.html#l00041">AhrsARDrone::eulers</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="navdata_8c_source.html#l00078">full_read()</a>, <a class="el" href="gps__ardrone2_8c_source.html#l00042">gps_ardrone2_parse()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00274">INT32_VECT3_SCALE_2</a>, <a class="el" href="at__com_8h_source.html#l00032">NAVDATA_HEADER</a>, <a class="el" href="at__com_8h_source.html#l00106">_navdata_t::options</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00079">FloatEulers::phi</a>, <a class="el" href="at__com_8h_source.html#l00123">_navdata_demo_t::phi</a>, <a class="el" href="at__com_8h_source.html#l00147">_navdata_phys_measures_t::phys_accs</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00081">FloatEulers::psi</a>, <a class="el" href="at__com_8h_source.html#l00124">_navdata_demo_t::psi</a>, <a class="el" href="at__com_8h_source.html#l00095">_navdata_option_t::size</a>, <a class="el" href="ahrs__ardrone2_8h_source.html#l00042">AhrsARDrone::speed</a>, <a class="el" href="ahrs__ardrone2_8h_source.html#l00039">AhrsARDrone::state</a>, <a class="el" href="state_8h_source.html#l00995">stateSetNedToBodyEulers_f()</a>, <a class="el" href="at__com_8h_source.html#l00094">_navdata_option_t::tag</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00080">FloatEulers::theta</a>, <a class="el" href="at__com_8h_source.html#l00122">_navdata_demo_t::theta</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="at__com_8h_source.html#l00121">_navdata_demo_t::vbat_flying_percentage</a>, <a class="el" href="electrical_8h_source.html#l00048">Electrical::vsupply</a>, <a class="el" href="at__com_8h_source.html#l00126">_navdata_demo_t::vx</a>, <a class="el" href="at__com_8h_source.html#l00127">_navdata_demo_t::vy</a>, <a class="el" href="at__com_8h_source.html#l00128">_navdata_demo_t::vz</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00062">NedCoor_f::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00063">NedCoor_f::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::z</a>.</p>
+<p>References <a class="el" href="ahrs__ardrone2_8h_source.html#l00043">AhrsARDrone::accel</a>, <a class="el" href="ahrs__ardrone2_8c_source.html#l00045">ahrs_impl</a>, <a class="el" href="ahrs__ardrone2_8h_source.html#l00044">AhrsARDrone::altitude</a>, <a class="el" href="at__com_8h_source.html#l00125">_navdata_demo_t::altitude</a>, <a class="el" href="at__com_8h_source.html#l00102">_navdata_t::ardrone_state</a>, <a class="el" href="at__com_8c_source.html#l00136">at_com_recieve_navdata()</a>, <a class="el" href="ahrs__ardrone2_8h_source.html#l00045">AhrsARDrone::battery</a>, <a class="el" href="ahrs__ardrone2_8c_source.html#l00047">buffer</a>, <a class="el" href="ahrs__ardrone2_8h_source.html#l00040">AhrsARDrone::control_state</a>, <a class="el" href="at__com_8h_source.html#l00120">_navdata_demo_t::ctrl_state</a>, <a class="el" href="electrical__dummy_8c_source.html#l00033">electrical</a>, <a class="el" href="ahrs__ardrone2_8h_source.html#l00041">AhrsARDrone::eulers</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="navdata_8c_source.html#l00089">full_read()</a>, <a class="el" href="gps__ardrone2_8c_source.html#l00042">gps_ardrone2_parse()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00274">INT32_VECT3_SCALE_2</a>, <a class="el" href="at__com_8h_source.html#l00032">NAVDATA_HEADER</a>, <a class="el" href="at__com_8h_source.html#l00106">_navdata_t::options</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00079">FloatEulers::phi</a>, <a class="el" href="at__com_8h_source.html#l00123">_navdata_demo_t::phi</a>, <a class="el" href="at__com_8h_source.html#l00147">_navdata_phys_measures_t::phys_accs</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00081">FloatEulers::psi</a>, <a class="el" href="at__com_8h_source.html#l00124">_navdata_demo_t::psi</a>, <a class="el" href="at__com_8h_source.html#l00095">_navdata_option_t::size</a>, <a class="el" href="ahrs__ardrone2_8h_source.html#l00042">AhrsARDrone::speed</a>, <a class="el" href="ahrs__ardrone2_8h_source.html#l00039">AhrsARDrone::state</a>, <a class="el" href="state_8h_source.html#l00995">stateSetNedToBodyEulers_f()</a>, <a class="el" href="at__com_8h_source.html#l00094">_navdata_option_t::tag</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00080">FloatEulers::theta</a>, <a class="el" href="at__com_8h_source.html#l00122">_navdata_demo_t::theta</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="at__com_8h_source.html#l00121">_navdata_demo_t::vbat_flying_percentage</a>, <a class="el" href="electrical_8h_source.html#l00048">Electrical::vsupply</a>, <a class="el" href="at__com_8h_source.html#l00126">_navdata_demo_t::vx</a>, <a class="el" href="at__com_8h_source.html#l00127">_navdata_demo_t::vy</a>, <a class="el" href="at__com_8h_source.html#l00128">_navdata_demo_t::vz</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00062">NedCoor_f::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00063">NedCoor_f::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::z</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -278,83 +272,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__ardrone2_8c_af8f4df7ae38ca5b239eac30e7d259e46_cgraph.png" border="0" usemap="#ahrs__ardrone2_8c_af8f4df7ae38ca5b239eac30e7d259e46_cgraph" alt=""/></div>
 <map name="ahrs__ardrone2_8c_af8f4df7ae38ca5b239eac30e7d259e46_cgraph" id="ahrs__ardrone2_8c_af8f4df7ae38ca5b239eac30e7d259e46_cgraph">
-<area shape="rect" id="node3" href="at__com_8c.html#a176adf12985989f7f797a8bf21cbc321" title="at_com_recieve_navdata" alt="" coords="176,5,341,33"/><area shape="rect" id="node5" href="navdata_8c.html#ae43ceafaca46ba7374afd15ed5b3b15a" title="full_read" alt="" coords="224,55,293,83"/><area shape="rect" id="node7" href="gps__ardrone2_8c.html#a2fcaa354614352f5a8251928bae63abc" title="gps_ardrone2_parse" alt="" coords="189,106,328,134"/><area shape="rect" id="node11" href="group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float)." alt="" coords="165,157,352,185"/><area shape="rect" id="node9" href="pprz__geodetic__double_8c.html#a33dae600eb50aea456b6cdbeec53c849" title="ecef_of_lla_d" alt="" coords="425,106,524,134"/><area shape="rect" id="node13" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="400,157,549,185"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a8bf83860498b05e7e94484cdcbcb1b7a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ahrs_update_accel </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Update AHRS state with accerleration measurements. </p>
-<p>Reads the global <a class="el" href="imu_8h.html#a77b76ed533bc56f50d714f8958dd26cc" title="global IMU state">imu</a> data struct. Needs to be implemented by each AHRS algorithm. </p>
-
-<p>Definition at line <a class="el" href="ahrs__ardrone2_8c_source.html#l00198">198</a> of file <a class="el" href="ahrs__ardrone2_8c_source.html">ahrs_ardrone2.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0156f6669675c216bbcb413ea1879960"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ahrs_update_gps </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Update AHRS state with GPS measurements. </p>
-<p>Reads the global <a class="el" href="gps_8h.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a> data struct. Needs to be implemented by each AHRS algorithm. </p>
-
-<p>Definition at line <a class="el" href="ahrs__ardrone2_8c_source.html#l00206">206</a> of file <a class="el" href="ahrs__ardrone2_8c_source.html">ahrs_ardrone2.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a781832a9119845d31bda0fc8a8bb8bf3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ahrs_update_mag </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Update AHRS state with magnetometer measurements. </p>
-<p>Reads the global <a class="el" href="imu_8h.html#a77b76ed533bc56f50d714f8958dd26cc" title="global IMU state">imu</a> data struct. Needs to be implemented by each AHRS algorithm. </p>
-
-<p>Definition at line <a class="el" href="ahrs__ardrone2_8c_source.html#l00202">202</a> of file <a class="el" href="ahrs__ardrone2_8c_source.html">ahrs_ardrone2.c</a>.</p>
-
-<p>Referenced by <a class="el" href="rotorcraft_2main_8c_source.html#l00337">on_mag_event()</a>.</p>
-
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__ardrone2_8c_a781832a9119845d31bda0fc8a8bb8bf3_icgraph.png" border="0" usemap="#ahrs__ardrone2_8c_a781832a9119845d31bda0fc8a8bb8bf3_icgraph" alt=""/></div>
-<map name="ahrs__ardrone2_8c_a781832a9119845d31bda0fc8a8bb8bf3_icgraph" id="ahrs__ardrone2_8c_a781832a9119845d31bda0fc8a8bb8bf3_icgraph">
-<area shape="rect" id="node3" href="rotorcraft_2main_8c.html#a00877cb9155773120515df456aa457a2" title="on_mag_event" alt="" coords="179,5,285,33"/><area shape="rect" id="node5" href="main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="335,5,423,33"/><area shape="rect" id="node7" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="472,5,523,33"/></map>
+<area shape="rect" id="node3" href="at__com_8c.html#a176adf12985989f7f797a8bf21cbc321" title="at_com_recieve_navdata" alt="" coords="185,5,367,33"/><area shape="rect" id="node5" href="navdata_8c.html#ae43ceafaca46ba7374afd15ed5b3b15a" title="full_read" alt="" coords="239,55,313,83"/><area shape="rect" id="node7" href="gps__ardrone2_8c.html#a2fcaa354614352f5a8251928bae63abc" title="gps_ardrone2_parse" alt="" coords="200,106,352,134"/><area shape="rect" id="node11" href="group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float)." alt="" coords="177,157,375,185"/><area shape="rect" id="node9" href="pprz__geodetic__double_8c.html#a33dae600eb50aea456b6cdbeec53c849" title="ecef_of_lla_d" alt="" coords="453,106,557,134"/><area shape="rect" id="node13" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="424,157,587,185"/></map>
 </div>
 </p>
 
@@ -387,7 +305,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__ardrone2_8c_source.html#l00045">45</a> of file <a class="el" href="ahrs__ardrone2_8c_source.html">ahrs_ardrone2.c</a>.</p>
 
-<p>Referenced by <a class="el" href="actuators__at_8c_source.html#l00036">actuators_set()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00202">ahrs_align()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00164">ahrs_init()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00111">ahrs_int_cmpl_quat_SetAccelOmega()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00116">ahrs_int_cmpl_quat_SetAccelZeta()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00124">ahrs_int_cmpl_quat_SetMagOmega()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00129">ahrs_int_cmpl_quat_SetMagZeta()</a>, <a class="el" href="ahrs__ardrone2_8c_source.html#l00103">ahrs_propagate()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00526">ahrs_realign_heading()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00259">ahrs_set_accel_gains()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00410">ahrs_set_mag_gains()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00264">ahrs_update_accel()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00456">ahrs_update_gps()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00488">ahrs_update_heading()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00260">ahrs_update_mag()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00385">ahrs_update_mag_2d()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00430">ahrs_update_mag_2d_dumb()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00353">ahrs_update_mag_full()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00557">compute_ahrs_representations()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00566">compute_body_orientation_and_rates()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00396">Drift_correction()</a>, <a class="el" href="geo__mag_8c_source.html#l00049">geo_mag_event()</a>, <a class="el" href="ahrs__int__cmpl__euler_8c_source.html#l00299">get_psi_measurement_from_mag()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00295">gx3_packet_parse()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00229">gx3_packet_read_message()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00110">imu_impl_init()</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00113">ImuEvent()</a>, <a class="el" href="ins__ardrone2_8c_source.html#l00087">ins_propagate()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00494">Matrix_update()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00315">Normalize()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00153">propagate_ref()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00180">propagate_state()</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00108">ReadGX3Buffer()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00269">reset_state()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00535">set_body_orientation_and_rates()</a>, <a class="el" href="ahrs__int__cmpl__euler_8c_source.html#l00327">set_body_state_from_euler()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00283">set_body_state_from_quat()</a>, <a class="el" href="imu__um6_8c_source.html#l00208">UM6_packet_read_message()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00209">update_state()</a>.</p>
+<p>Referenced by <a class="el" href="actuators__at_8c_source.html#l00036">actuators_set()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00202">ahrs_align()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00164">ahrs_init()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00111">ahrs_int_cmpl_quat_SetAccelOmega()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00116">ahrs_int_cmpl_quat_SetAccelZeta()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00124">ahrs_int_cmpl_quat_SetMagOmega()</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00129">ahrs_int_cmpl_quat_SetMagZeta()</a>, <a class="el" href="ahrs__ardrone2_8c_source.html#l00103">ahrs_propagate()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00526">ahrs_realign_heading()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00277">ahrs_set_accel_gains()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00428">ahrs_set_mag_gains()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00264">ahrs_update_accel()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00456">ahrs_update_gps()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00488">ahrs_update_heading()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00260">ahrs_update_mag()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00385">ahrs_update_mag_2d()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00430">ahrs_update_mag_2d_dumb()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00353">ahrs_update_mag_full()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00557">compute_ahrs_representations()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00566">compute_body_orientation_and_rates()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00396">Drift_correction()</a>, <a class="el" href="geo__mag_8c_source.html#l00049">geo_mag_event()</a>, <a class="el" href="ahrs__int__cmpl__euler_8c_source.html#l00295">get_psi_measurement_from_mag()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00295">gx3_packet_parse()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00229">gx3_packet_read_message()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00110">imu_impl_init()</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00113">ImuEvent()</a>, <a class="el" href="ins__ardrone2_8c_source.html#l00093">ins_propagate()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00494">Matrix_update()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00315">Normalize()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00150">propagate_ref()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00177">propagate_state()</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00108">ReadGX3Buffer()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00266">reset_state()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00535">set_body_orientation_and_rates()</a>, <a class="el" href="ahrs__int__cmpl__euler_8c_source.html#l00323">set_body_state_from_euler()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00280">set_body_state_from_quat()</a>, <a class="el" href="imu__um6_8c_source.html#l00204">UM6_packet_read_message()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00206">update_state()</a>.</p>
 
 </div>
 </div>
@@ -403,7 +321,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__ardrone2_8c_source.html#l00047">47</a> of file <a class="el" href="ahrs__ardrone2_8c_source.html">ahrs_ardrone2.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__ardrone2_8c_source.html#l00103">ahrs_propagate()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__ardrone2_8c_source.html#l00103">ahrs_propagate()</a>, and <a class="el" href="hott_8c_source.html#l00156">hott_send_msg()</a>.</p>
 
 </div>
 </div>
@@ -413,7 +331,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_46fef683200e96ccf1a2f608d90c4a2d.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__ardrone2_8c.html">ahrs_ardrone2.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:11 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:06 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

@@ -10,6 +10,7 @@ var sim__ap_8c =
     [ "sim_nav_task", "sim__ap_8c.html#a8c0970e9878d0e3e3e6c5d6ff0741d4f", null ],
     [ "sim_periodic_task", "sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0", null ],
     [ "update_bat", "sim__ap_8c.html#a7e41927f9c350afbed960e8c407f8f82", null ],
+    [ "update_dl_status", "sim__ap_8c.html#a3512db2bc2e62c68c6160428b6b044b3", null ],
     [ "ac_id", "sim__ap_8c.html#ae48dcb18ba9b663b88a344e66536aa14", null ],
     [ "alt_roll_pgain", "sim__ap_8c.html#a5a444f709389bc7083861d0e5161153d", null ],
     [ "datalink_time", "sim__ap_8c.html#a554cac6546bc91d21ff99268001d4010", null ],

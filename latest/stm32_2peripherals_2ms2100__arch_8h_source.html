@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -131,15 +131,15 @@ $(document).ready(function(){initNavTree('stm32_2peripherals_2ms2100__arch_8h_so
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#ifndef MS2100_ARCH_H</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MS2100_ARCH_H</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;libopencm3/stm32/f1/gpio.h&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;libopencm3/stm32/gpio.h&gt;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API.">mcu_periph/spi.h</a>&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="stm32_2peripherals_2ms2100__arch_8h.html#aa7c46e00e26b35b2215ef9b1e68c5793">   38</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="stm32_2peripherals_2ms2100__arch_8h.html#aa7c46e00e26b35b2215ef9b1e68c5793" title="Here Reset indicates the Ms2100 is in normal state, i.e.">Ms2100Reset</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  GPIOC_BRR = GPIO13;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  GPIOC_BRR = <a class="code" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a4b7d9a3961712ddd2a58532f4dcedc1d">GPIO13</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="stm32_2peripherals_2ms2100__arch_8h.html#a08541890cc5142626b13054da3d7c804">   46</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="stm32_2peripherals_2ms2100__arch_8h.html#a08541890cc5142626b13054da3d7c804" title="Here Set indicates the Ms2100 is in reset state, i.e.">Ms2100Set</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  GPIOC_BSRR = GPIO13;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  GPIOC_BSRR = <a class="code" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a4b7d9a3961712ddd2a58532f4dcedc1d">GPIO13</a>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="stm32_2peripherals_2ms2100__arch_8h.html#a0cf9a8222937cd9036b0872730a2f036">   50</a></span>&#160;<span class="preprocessor">#define Ms2100HasEOC() (gpio_get(GPIOB, GPIO5) != 0)</span></div>
@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('stm32_2peripherals_2ms2100__arch_8h_so
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_40949b6ea70303acfc197760b8c0e0ae.html">peripherals</a></li><li class="navelem"><a class="el" href="stm32_2peripherals_2ms2100__arch_8h.html">ms2100_arch.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:07 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:36 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

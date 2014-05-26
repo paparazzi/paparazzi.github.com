@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -262,7 +262,7 @@ $(document).ready(function(){initNavTree('lpc21_2mcu__periph_2uart__arch_8c_sour
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  }</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">#ifdef USE_UART0</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">#if USE_UART0</span></div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor">#ifndef UART0_VIC_SLOT</span></div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UART0_VIC_SLOT 5</span></div>
@@ -323,7 +323,7 @@ $(document).ready(function(){initNavTree('lpc21_2mcu__periph_2uart__arch_8c_sour
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* USE_UART0 */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="preprocessor">#ifdef USE_UART1</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="preprocessor">#if USE_UART1</span></div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="preprocessor">#ifndef UART1_VIC_SLOT</span></div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UART1_VIC_SLOT 6</span></div>
@@ -390,7 +390,7 @@ $(document).ready(function(){initNavTree('lpc21_2mcu__periph_2uart__arch_8c_sour
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_3f7617cb4a5e4fe5cc816b7b3bbdea3a.html">lpc21</a></li><li class="navelem"><a class="el" href="dir_52b0b5e73fdd6096ec81364edad665ef.html">mcu_periph</a></li><li class="navelem"><a class="el" href="lpc21_2mcu__periph_2uart__arch_8c.html">uart_arch.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:07 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:36 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

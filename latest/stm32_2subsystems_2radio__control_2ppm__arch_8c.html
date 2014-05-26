@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2radio__control_2ppm
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2subsystems_2radio__control_2ppm__arch_8c__incl.png" border="0" usemap="#sw_2airborne_2arch_2stm32_2subsystems_2radio__control_2ppm__arch_8c" alt=""/></div>
 <map name="sw_2airborne_2arch_2stm32_2subsystems_2radio__control_2ppm__arch_8c" id="sw_2airborne_2arch_2stm32_2subsystems_2radio__control_2ppm__arch_8c">
-<area shape="rect" id="node3" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="193,123,372,151"/><area shape="rect" id="node15" href="ppm_8h.html" title="subsystems/radio_control\l/ppm.h" alt="" coords="743,115,913,159"/><area shape="rect" id="node33" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1120,123,1275,151"/><area shape="rect" id="node42" href="gpio_8h.html" title="Some architecture independent helper functions for GPIOs." alt="" coords="971,123,1096,151"/><area shape="rect" id="node5" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API" alt="" coords="5,217,53,245"/><area shape="rect" id="node9" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="240,217,325,245"/><area shape="rect" id="node11" href="inttypes_8h.html" title="inttypes.h" alt="" coords="689,302,767,330"/></map>
+<area shape="rect" id="node3" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="224,123,421,151"/><area shape="rect" id="node17" href="ppm_8h.html" title="subsystems/radio_control\l/ppm.h" alt="" coords="792,115,979,159"/><area shape="rect" id="node35" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1200,123,1371,151"/><area shape="rect" id="node44" href="gpio_8h.html" title="Some architecture independent helper functions for GPIOs." alt="" coords="1037,123,1176,151"/><area shape="rect" id="node5" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API" alt="" coords="16,217,69,245"/><area shape="rect" id="node11" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="275,217,371,245"/><area shape="rect" id="node13" href="inttypes_8h.html" title="inttypes.h" alt="" coords="748,302,833,330"/></map>
 </div>
 </div>
 <p><a href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html">Go to the source code of this file.</a></p>
@@ -138,6 +138,7 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2radio__control_2ppm
 <tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a644a06e4166982dcb58fbd25d65f1f65"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c.html#a644a06e4166982dcb58fbd25d65f1f65">ONE_MHZ_CLK</a>&#160;&#160;&#160;1000000</td></tr>
+<tr class="memitem:a8c678c36f403d01c4348ff3d624fbf47"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c.html#a8c678c36f403d01c4348ff3d624fbf47">PPM_IRQ_PRIO</a>&#160;&#160;&#160;2</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -174,7 +175,23 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00048">48</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html">ppm_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00162">ppm_arch_init()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00155">ppm_arch_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8c678c36f403d01c4348ff3d624fbf47"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PPM_IRQ_PRIO&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00052">52</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html">ppm_arch.c</a>.</p>
+
+<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00155">ppm_arch_init()</a>.</p>
 
 </div>
 </div>
@@ -195,9 +212,9 @@ Variables</h2></td></tr>
 
 <p>Architecture dependant code. </p>
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00162">162</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html">ppm_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00155">155</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html">ppm_arch.c</a>.</p>
 
-<p>References <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="stm32_2mcu__periph_2gpio__arch_8h.html#a457a82963882d55568983cedd74c5ff2">gpio_enable_clock()</a>, <a class="el" href="stm32_2mcu__periph_2gpio__arch_8h.html#a3b5f0a992d58d84615e502585419d0b3">gpio_setup_pin_af()</a>, <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00048">ONE_MHZ_CLK</a>, <a class="el" href="apogee__0_899_8h_source.html#l00296">PPM_CC_IE</a>, <a class="el" href="booz__1_80_8h_source.html#l00067">PPM_CCR_CRF</a>, <a class="el" href="booz__1_80_8h_source.html#l00069">PPM_CCR_CRI</a>, <a class="el" href="booz__1_80_8h_source.html#l00068">PPM_CCR_CRR</a>, <a class="el" href="apogee__0_899_8h_source.html#l00291">PPM_CHANNEL</a>, <a class="el" href="lpc21_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00025">ppm_cur_pulse</a>, <a class="el" href="lpc21_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00027">ppm_data_valid</a>, <a class="el" href="ppm_8c_source.html#l00026">ppm_frame_available</a>, <a class="el" href="apogee__0_899_8h_source.html#l00300">PPM_GPIO_AF</a>, <a class="el" href="apogee__0_899_8h_source.html#l00299">PPM_GPIO_PIN</a>, <a class="el" href="apogee__0_899_8h_source.html#l00298">PPM_GPIO_PORT</a>, <a class="el" href="apogee__0_899_8h_source.html#l00293">PPM_IRQ</a>, <a class="el" href="apogee__0_899_8h_source.html#l00294">PPM_IRQ2</a>, <a class="el" href="lpc21_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00026">ppm_last_pulse_time</a>, <a class="el" href="booz__1_80_8h_source.html#l00063">PPM_PINSEL</a>, <a class="el" href="booz__1_80_8h_source.html#l00065">PPM_PINSEL_BIT</a>, <a class="el" href="booz__1_80_8h_source.html#l00064">PPM_PINSEL_VAL</a>, <a class="el" href="apogee__0_899_8h_source.html#l00292">PPM_TIMER_INPUT</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00034">RADIO_CONTROL_NB_CHANNEL</a>, <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8h_source.html#l00046">RC_PPM_TICKS_PER_USEC</a>, <a class="el" href="LPC21xx_8h_source.html#l00060">T0CCR</a>, and <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00053">timer_rollover_cnt</a>.</p>
+<p>References <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="stm32_2mcu__periph_2gpio__arch_8h.html#a3b5f0a992d58d84615e502585419d0b3">gpio_setup_pin_af()</a>, <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00048">ONE_MHZ_CLK</a>, <a class="el" href="apogee__0_899_8h_source.html#l00258">PPM_CC_IE</a>, <a class="el" href="booz__1_80_8h_source.html#l00054">PPM_CCR_CRF</a>, <a class="el" href="booz__1_80_8h_source.html#l00056">PPM_CCR_CRI</a>, <a class="el" href="booz__1_80_8h_source.html#l00055">PPM_CCR_CRR</a>, <a class="el" href="apogee__0_899_8h_source.html#l00253">PPM_CHANNEL</a>, <a class="el" href="lpc21_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00025">ppm_cur_pulse</a>, <a class="el" href="lpc21_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00027">ppm_data_valid</a>, <a class="el" href="ppm_8c_source.html#l00026">ppm_frame_available</a>, <a class="el" href="apogee__0_899_8h_source.html#l00262">PPM_GPIO_AF</a>, <a class="el" href="apogee__0_899_8h_source.html#l00261">PPM_GPIO_PIN</a>, <a class="el" href="apogee__0_899_8h_source.html#l00260">PPM_GPIO_PORT</a>, <a class="el" href="apogee__0_899_8h_source.html#l00255">PPM_IRQ</a>, <a class="el" href="apogee__0_899_8h_source.html#l00256">PPM_IRQ2</a>, <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00052">PPM_IRQ_PRIO</a>, <a class="el" href="lpc21_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00026">ppm_last_pulse_time</a>, <a class="el" href="booz__1_80_8h_source.html#l00050">PPM_PINSEL</a>, <a class="el" href="booz__1_80_8h_source.html#l00052">PPM_PINSEL_BIT</a>, <a class="el" href="booz__1_80_8h_source.html#l00051">PPM_PINSEL_VAL</a>, <a class="el" href="apogee__0_899_8h_source.html#l00254">PPM_TIMER_INPUT</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00034">RADIO_CONTROL_NB_CHANNEL</a>, <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8h_source.html#l00046">RC_PPM_TICKS_PER_USEC</a>, <a class="el" href="LPC21xx_8h_source.html#l00060">T0CCR</a>, and <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00059">timer_rollover_cnt</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -206,7 +223,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2subsystems_2radio__control_2ppm__arch_8c_aa933c6924c3511448e65fc31e2d26129_cgraph.png" border="0" usemap="#stm32_2subsystems_2radio__control_2ppm__arch_8c_aa933c6924c3511448e65fc31e2d26129_cgraph" alt=""/></div>
 <map name="stm32_2subsystems_2radio__control_2ppm__arch_8c_aa933c6924c3511448e65fc31e2d26129_cgraph" id="stm32_2subsystems_2radio__control_2ppm__arch_8c_aa933c6924c3511448e65fc31e2d26129_cgraph">
-<area shape="rect" id="node3" href="stm32_2mcu__periph_2gpio__arch_8h.html#a457a82963882d55568983cedd74c5ff2" title="gpio_enable_clock" alt="" coords="159,5,287,33"/><area shape="rect" id="node5" href="stm32_2mcu__periph_2gpio__arch_8h.html#a3b5f0a992d58d84615e502585419d0b3" title="Setup a gpio for input or output with alternate function." alt="" coords="160,55,285,83"/></map>
+<area shape="rect" id="node3" href="stm32_2mcu__periph_2gpio__arch_8h.html#a3b5f0a992d58d84615e502585419d0b3" title="Setup a gpio for input or output with alternate function." alt="" coords="167,5,303,33"/></map>
 </div>
 </p>
 
@@ -225,7 +242,7 @@ Variables</h2></td></tr>
 
 <p><a class="el" href="structState.html" title="Structure holding vehicle state data.">State</a> machine for decoding ppm frames. </p>
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00050">50</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html">ppm_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00056">56</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html">ppm_arch.c</a>.</p>
 
 </div>
 </div>
@@ -239,7 +256,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00052">52</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html">ppm_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00058">58</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html">ppm_arch.c</a>.</p>
 
 </div>
 </div>
@@ -253,7 +270,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00051">51</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html">ppm_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00057">57</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html">ppm_arch.c</a>.</p>
 
 </div>
 </div>
@@ -275,9 +292,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00053">53</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html">ppm_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00059">59</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html">ppm_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00162">ppm_arch_init()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00155">ppm_arch_init()</a>.</p>
 
 </div>
 </div>
@@ -287,7 +304,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_71548ae744da26ac2c7ca213b679dc43.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_b14b085d0c57bddb3031abea4661d10b.html">radio_control</a></li><li class="navelem"><a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c.html">ppm_arch.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:09 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:49 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

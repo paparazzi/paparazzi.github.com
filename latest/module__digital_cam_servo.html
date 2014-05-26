@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -108,8 +108,20 @@ Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
 Define Options</h2>
 <ul>
-<li><b>name:</b> <code>DC_SHOOT_ON_BUTTON_RELEASE</code> <b>value:</b> <em>None</em></li>
-<li><b>name:</b> <code>SENSOR_SYNC_SEND</code> <b>value:</b> <em>1</em></li>
+<li><b>name:</b> <code>DC_SHOOT_ON_BUTTON_RELEASE</code> <b>value:</b> <em>None</em> <br/>
+ Description: if defined, call dc_send_shot_postion on button release instead of on push</li>
+<li><b>name:</b> <code>DC_SHUTTER_SERVO</code> <b>value:</b> <em>servo</em> <br/>
+ Description: mandatory, Servo to control shutter</li>
+<li><b>name:</b> <code>DC_ZOOM_IN_SERVO</code> <b>value:</b> <em>servo</em> <br/>
+ Description: optional, Servo to activate zoom in</li>
+<li><b>name:</b> <code>DC_ZOOM_OUT_SERVO</code> <b>value:</b> <em>servo</em> <br/>
+ Description: optional, Servo to activate zoom out</li>
+<li><b>name:</b> <code>DC_POWER_SERVO</code> <b>value:</b> <em>servo</em> <br/>
+ Description: optional, Servo to control power</li>
+<li><b>name:</b> <code>DC_AUTOSHOOT_QUARTERSEC_PERIOD</code> <b>value:</b> <em>6</em> <br/>
+ Description: quarter_second</li>
+<li><b>name:</b> <code>DC_AUTOSHOOT_METER_GRID</code> <b>value:</b> <em>50</em> <br/>
+ Description: grid in meters</li>
 </ul>
 <h1><a class="anchor" id="functions"></a>
 Module functions</h1>
@@ -148,59 +160,41 @@ Source Files</h2>
 Raw digital_cam_servo.xml file:</h2>
 <div class="fragment"><div class="line">&lt;!DOCTYPE module SYSTEM <span class="stringliteral">&quot;./module.dtd&quot;</span>&gt;</div>
 <div class="line"></div>
-<div class="line">&lt;!--</div>
-<div class="line"></div>
-<div class="line"><span class="comment">// Use (parts of) the following section in airframe file to change</span></div>
-<div class="line"></div>
-<div class="line">  &lt;section name=<span class="stringliteral">&quot;DIGITAL_CAMERA&quot;</span> prefix=<span class="stringliteral">&quot;DC_&quot;</span>&gt;</div>
-<div class="line"></div>
-<div class="line">    &lt;configure name=<span class="stringliteral">&quot;PUSH&quot;</span> value<span class="stringliteral">&quot;LED_ON&quot;</span> /&gt;</div>
-<div class="line">    &lt;configure name=<span class="stringliteral">&quot;RELEASE&quot;</span> value<span class="stringliteral">&quot;LED_OFF&quot;</span> /&gt;</div>
-<div class="line"></div>
-<div class="line">    &lt;configure name=<span class="stringliteral">&quot;AUTOSHOOT_QUARTERSEC_PERIOD&quot;</span> value=<span class="stringliteral">&quot;6&quot;</span> <a class="code" href="nav_8c.html#a04b783250b1673126fa3f4729cb2078e">unit</a>=<span class="stringliteral">&quot;quarter_second&quot;</span>/&gt;</div>
-<div class="line">    &lt;configure name=<span class="stringliteral">&quot;AUTOSHOOT_METER_GRID&quot;</span> value=<span class="stringliteral">&quot;50&quot;</span> <a class="code" href="nav_8c.html#a04b783250b1673126fa3f4729cb2078e">unit</a>=<span class="stringliteral">&quot;meter&quot;</span>/&gt;</div>
-<div class="line">  &lt;/section&gt;</div>
-<div class="line"></div>
-<div class="line"><span class="preprocessor"># ap.CFLAGS += -DGPS_TRIGGERED_FUNCTION=&quot;dc_shoot_on_gps&quot;</span></div>
-<div class="line"><span class="preprocessor"></span><span class="preprocessor"># ap.CFLAGS += -DDC_GPS_TRIGGER_START=1</span></div>
-<div class="line"><span class="preprocessor"></span><span class="preprocessor"># ap.CFLAGS += -DDC_GPS_TRIGGER_STOP=3</span></div>
-<div class="line"><span class="preprocessor"></span></div>
-<div class="line">--&gt;</div>
-<div class="line"></div>
 <div class="line">&lt;module name=<span class="stringliteral">&quot;digital_cam_servo&quot;</span> dir=<span class="stringliteral">&quot;digital_cam&quot;</span>&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;Digital camera control (trigger <span class="keyword">using</span> servo)&lt;/description&gt;</div>
-<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_SHOOT_ON_BUTTON_RELEASE&quot;</span> /&gt;</div>
-<div class="line">    &lt;define name=<span class="stringliteral">&quot;SENSOR_SYNC_SEND&quot;</span> value=<span class="stringliteral">&quot;1&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_SHOOT_ON_BUTTON_RELEASE&quot;</span> description=<span class="stringliteral">&quot;if defined, call dc_send_shot_postion on button release instead of on push&quot;</span>/&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_SHUTTER_SERVO&quot;</span> value=<span class="stringliteral">&quot;servo&quot;</span> description=<span class="stringliteral">&quot;mandatory, Servo to control shutter&quot;</span>/&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_ZOOM_IN_SERVO&quot;</span> value=<span class="stringliteral">&quot;servo&quot;</span> description=<span class="stringliteral">&quot;optional, Servo to activate zoom in&quot;</span>/&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_ZOOM_OUT_SERVO&quot;</span> value=<span class="stringliteral">&quot;servo&quot;</span> description=<span class="stringliteral">&quot;optional, Servo to activate zoom out&quot;</span>/&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_POWER_SERVO&quot;</span> value=<span class="stringliteral">&quot;servo&quot;</span> description=<span class="stringliteral">&quot;optional, Servo to control power&quot;</span>/&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_AUTOSHOOT_QUARTERSEC_PERIOD&quot;</span> value=<span class="stringliteral">&quot;6&quot;</span> description=<span class="stringliteral">&quot;quarter_second&quot;</span>/&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_AUTOSHOOT_METER_GRID&quot;</span> value=<span class="stringliteral">&quot;50&quot;</span> description=<span class="stringliteral">&quot;grid in meters&quot;</span>/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;servo_cam_ctrl.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
 <div class="line"></div>
-<div class="line">  &lt;<a class="code" href="gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;servo_cam_ctrl_init()&quot;</span>/&gt;</div>
+<div class="line">  &lt;<a class="code" href="nav__gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;servo_cam_ctrl_init()&quot;</span>/&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;periodic fun=<span class="stringliteral">&quot;servo_cam_ctrl_periodic()&quot;</span> freq=<span class="stringliteral">&quot;4&quot;</span> autorun=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;makefile &gt;</div>
-<div class="line"></div>
-<div class="line">    &lt;define name=<span class="stringliteral">&quot;DIGITAL_CAM&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DIGITAL_CAM&quot;</span>/&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;servo_cam_ctrl.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;dc.c&quot;</span>/&gt;</div>
-<div class="line">    &lt;define name=<span class="stringliteral">&quot;SENSOR_SYNC_SEND&quot;</span> value=<span class="stringliteral">&quot;1&quot;</span> /&gt;</div>
-<div class="line"></div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;SENSOR_SYNC_SEND&quot;</span> value=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line"></div>
-<div class="line"></div>
 <div class="line">&lt;/module&gt;</div>
-<div class="line"></div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:12 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:11 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

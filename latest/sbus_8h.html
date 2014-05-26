@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -104,7 +104,6 @@ $(document).ready(function(){initNavTree('sbus_8h.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -113,10 +112,9 @@ $(document).ready(function(){initNavTree('sbus_8h.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Futaba SBUS decoder.  
+<p>Single SBUS radio_control.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;std.h&quot;</code><br/>
-<code>#include &quot;generated/radio.h&quot;</code><br/>
+<div class="textblock"><code>#include &quot;<a class="el" href="sbus__common_8h_source.html">subsystems/radio_control/sbus_common.h</a>&quot;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for sbus.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -124,7 +122,7 @@ $(document).ready(function(){initNavTree('sbus_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sbus_8h__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2radio__control_2sbus_8h" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2radio__control_2sbus_8h" id="sw_2airborne_2subsystems_2radio__control_2sbus_8h">
-</map>
+<area shape="rect" id="node3" href="sbus__common_8h.html" title="Futaba SBUS decoder." alt="" coords="45,99,232,143"/><area shape="rect" id="node7" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="69,193,208,221"/></map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -133,26 +131,13 @@ $(document).ready(function(){initNavTree('sbus_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sbus_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2radio__control_2sbus_8hdep" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2radio__control_2sbus_8hdep" id="sw_2airborne_2subsystems_2radio__control_2sbus_8hdep">
-<area shape="rect" id="node3" href="sbus_8c.html" title="Futaba SBUS decoder." alt="" coords="5,99,168,143"/></map>
+<area shape="rect" id="node3" href="sbus_8c.html" title="Single SBUS radio_control." alt="" coords="5,99,181,143"/></map>
 </div>
 </div>
 <p><a href="sbus_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__sbus.html">_sbus</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SBUS structure.  <a href="struct__sbus.html#details">More...</a><br/></td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:aad33b862bb6166593e16a30779799b51"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sbus_8h.html#aad33b862bb6166593e16a30779799b51">RC_PPM_TICKS_OF_USEC</a>(_v)&#160;&#160;&#160;(_v)</td></tr>
-<tr class="memdesc:aad33b862bb6166593e16a30779799b51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dummy macro to use radio.h file.  <a href="#aad33b862bb6166593e16a30779799b51"></a><br/></td></tr>
-<tr class="memitem:a89dbcbaebdf3485e1fdecc29fb6f16db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sbus_8h.html#a89dbcbaebdf3485e1fdecc29fb6f16db">RC_PPM_SIGNED_TICKS_OF_USEC</a>(_v)&#160;&#160;&#160;(_v)</td></tr>
-<tr class="memitem:a962b9942b2dfacf94028a3c538341b4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sbus_8h.html#a962b9942b2dfacf94028a3c538341b4e">USEC_OF_RC_PPM_TICKS</a>(_v)&#160;&#160;&#160;(_v)</td></tr>
-<tr class="memitem:ab8f86c137438a99b0143cc90312ee571"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sbus_8h.html#ab8f86c137438a99b0143cc90312ee571">SBUS_BUF_LENGTH</a>&#160;&#160;&#160;24</td></tr>
-<tr class="memdesc:ab8f86c137438a99b0143cc90312ee571"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generated code holding the description of a given transmitter.  <a href="#ab8f86c137438a99b0143cc90312ee571"></a><br/></td></tr>
-<tr class="memitem:afb790236a604cd21678b157b429e16fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sbus_8h.html#afb790236a604cd21678b157b429e16fa">SBUS_NB_CHANNEL</a>&#160;&#160;&#160;16</td></tr>
-<tr class="memitem:a1beed9c63b07301d72b3516543545652"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sbus_8h.html#a1beed9c63b07301d72b3516543545652">RADIO_CONTROL_NB_CHANNEL</a>&#160;&#160;&#160;<a class="el" href="sbus_8h.html#afb790236a604cd21678b157b429e16fa">SBUS_NB_CHANNEL</a></td></tr>
 <tr class="memitem:a48c5aff514f8ac1ab891bb12b748922b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sbus_8h.html#a48c5aff514f8ac1ab891bb12b748922b">RadioControlEvent</a>(_received_frame_handler)</td></tr>
 <tr class="memdesc:a48c5aff514f8ac1ab891bb12b748922b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event macro with handler callback.  <a href="#a48c5aff514f8ac1ab891bb12b748922b"></a><br/></td></tr>
 </table><table class="memberdecls">
@@ -167,24 +152,10 @@ Variables</h2></td></tr>
 <tr class="memdesc:abae36fb8de2471c12894f179771dede3"><td class="mdescLeft">&#160;</td><td class="mdescRight">SBUS struct.  <a href="#abae36fb8de2471c12894f179771dede3"></a><br/></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Futaba SBUS decoder. </p>
+<div class="textblock"><p>Single SBUS radio_control. </p>
 
 <p>Definition in file <a class="el" href="sbus_8h_source.html">sbus.h</a>.</p>
 </div><h2>Macro Definition Documentation</h2>
-<a class="anchor" id="a1beed9c63b07301d72b3516543545652"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define RADIO_CONTROL_NB_CHANNEL&#160;&#160;&#160;<a class="el" href="sbus_8h.html#afb790236a604cd21678b157b429e16fa">SBUS_NB_CHANNEL</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="sbus_8h_source.html#l00056">56</a> of file <a class="el" href="sbus_8h_source.html">sbus.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a48c5aff514f8ac1ab891bb12b748922b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -216,99 +187,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p>Event macro with handler callback. </p>
 
-<p>Definition at line <a class="el" href="sbus_8h_source.html#l00079">79</a> of file <a class="el" href="sbus_8h_source.html">sbus.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a89dbcbaebdf3485e1fdecc29fb6f16db"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define RC_PPM_SIGNED_TICKS_OF_USEC</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_v</td><td>)</td>
-          <td>&#160;&#160;&#160;(_v)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="sbus_8h_source.html#l00036">36</a> of file <a class="el" href="sbus_8h_source.html">sbus.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aad33b862bb6166593e16a30779799b51"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define RC_PPM_TICKS_OF_USEC</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_v</td><td>)</td>
-          <td>&#160;&#160;&#160;(_v)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Dummy macro to use radio.h file. </p>
-
-<p>Definition at line <a class="el" href="sbus_8h_source.html#l00035">35</a> of file <a class="el" href="sbus_8h_source.html">sbus.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab8f86c137438a99b0143cc90312ee571"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SBUS_BUF_LENGTH&#160;&#160;&#160;24</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generated code holding the description of a given transmitter. </p>
-<p>Define number of channels.</p>
-<p>SBUS frame always have 16 channels but only the X first one will be available depending of the RC transmitter. The radio XML file is used to assign the input values to RC channels. </p>
-
-<p>Definition at line <a class="el" href="sbus_8h_source.html#l00054">54</a> of file <a class="el" href="sbus_8h_source.html">sbus.h</a>.</p>
-
-<p>Referenced by <a class="el" href="sbus_8c_source.html#l00136">sbus_decode_event()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="afb790236a604cd21678b157b429e16fa"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SBUS_NB_CHANNEL&#160;&#160;&#160;16</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="sbus_8h_source.html#l00055">55</a> of file <a class="el" href="sbus_8h_source.html">sbus.h</a>.</p>
-
-<p>Referenced by <a class="el" href="sbus_8c_source.html#l00102">decode_sbus_buffer()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a962b9942b2dfacf94028a3c538341b4e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define USEC_OF_RC_PPM_TICKS</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_v</td><td>)</td>
-          <td>&#160;&#160;&#160;(_v)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="sbus_8h_source.html#l00037">37</a> of file <a class="el" href="sbus_8h_source.html">sbus.h</a>.</p>
+<p>Definition at line <a class="el" href="sbus_8h_source.html#l00043">43</a> of file <a class="el" href="sbus_8h_source.html">sbus.h</a>.</p>
 
 </div>
 </div>
@@ -329,9 +208,9 @@ Variables</h2></td></tr>
 
 <p>Decoding event function. </p>
 
-<p>Definition at line <a class="el" href="sbus_8c_source.html#l00136">136</a> of file <a class="el" href="sbus_8c_source.html">sbus.c</a>.</p>
+<p>Definition at line <a class="el" href="sbus_8c_source.html#l00066">66</a> of file <a class="el" href="sbus_8c_source.html">sbus.c</a>.</p>
 
-<p>References <a class="el" href="sbus_8h_source.html#l00064">_sbus::buffer</a>, <a class="el" href="sbus_8c_source.html#l00102">decode_sbus_buffer()</a>, <a class="el" href="sbus_8h_source.html#l00063">_sbus::frame_available</a>, <a class="el" href="sbus_8h_source.html#l00065">_sbus::idx</a>, <a class="el" href="sbus_8h_source.html#l00062">_sbus::pulses</a>, <a class="el" href="sbus_8c_source.html#l00060">sbus</a>, <a class="el" href="sbus_8h_source.html#l00054">SBUS_BUF_LENGTH</a>, <a class="el" href="sbus_8c_source.html#l00038">SBUS_END_BYTE</a>, <a class="el" href="sbus_8c_source.html#l00037">SBUS_START_BYTE</a>, <a class="el" href="sbus_8c_source.html#l00045">SBUS_STATUS_GOT_START</a>, <a class="el" href="sbus_8c_source.html#l00044">SBUS_STATUS_UNINIT</a>, <a class="el" href="sbus_8h_source.html#l00066">_sbus::status</a>, <a class="el" href="uart_8h_source.html#l00083">uart_char_available()</a>, and <a class="el" href="uart_8c_source.html#l00204">uart_getch()</a>.</p>
+<p>References <a class="el" href="sbus_8c_source.html#l00033">sbus</a>, and <a class="el" href="sbus__common_8c_source.html#l00114">sbus_common_decode_event()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -340,7 +219,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sbus_8h_afbbaa0add77b9a4241d5af039548bc29_cgraph.png" border="0" usemap="#sbus_8h_afbbaa0add77b9a4241d5af039548bc29_cgraph" alt=""/></div>
 <map name="sbus_8h_afbbaa0add77b9a4241d5af039548bc29_cgraph" id="sbus_8h_afbbaa0add77b9a4241d5af039548bc29_cgraph">
-<area shape="rect" id="node3" href="sbus_8c.html#af82ce9ebb300ae46a29574589391f307" title="Decode the raw buffer." alt="" coords="192,5,331,33"/><area shape="rect" id="node5" href="uart_8h.html#a8fcf1d056b9856747bbe06995a9928ff" title="uart_char_available" alt="" coords="195,55,328,83"/><area shape="rect" id="node7" href="uart_8c.html#adb9a60ec94a31a08e6454ccf64f24039" title="uart_getch" alt="" coords="220,106,303,134"/></map>
+<area shape="rect" id="node3" href="sbus__common_8c.html#a1d3ef3810322a44ca704900ec9f01f38" title="Decoding event function." alt="" coords="203,47,373,91"/><area shape="rect" id="node5" href="uart_8h.html#ac12152ef3f260cb4eb96be5f6027bc9f" title="Check UART for available chars in receive buffer." alt="" coords="424,5,571,33"/><area shape="rect" id="node7" href="uart_8c.html#adb9a60ec94a31a08e6454ccf64f24039" title="uart_getch" alt="" coords="452,55,543,83"/><area shape="rect" id="node9" href="sbus__common_8c.html#a6e325da4a4dfc2bd274b47b09febfa1a" title="Decode the raw buffer." alt="" coords="423,106,572,134"/></map>
 </div>
 </p>
 
@@ -359,9 +238,9 @@ Variables</h2></td></tr>
 
 <p>SBUS struct. </p>
 
-<p>Definition at line <a class="el" href="sbus_8c_source.html#l00060">60</a> of file <a class="el" href="sbus_8c_source.html">sbus.c</a>.</p>
+<p>Definition at line <a class="el" href="sbus_8c_source.html#l00033">33</a> of file <a class="el" href="sbus_8c_source.html">sbus.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sbus_8c_source.html#l00080">radio_control_impl_init()</a>, and <a class="el" href="sbus_8c_source.html#l00136">sbus_decode_event()</a>.</p>
+<p>Referenced by <a class="el" href="sbus_8c_source.html#l00053">radio_control_impl_init()</a>, and <a class="el" href="sbus_8c_source.html#l00066">sbus_decode_event()</a>.</p>
 
 </div>
 </div>
@@ -371,7 +250,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_a146ed466020daad33793c9994e8ab3e.html">radio_control</a></li><li class="navelem"><a class="el" href="sbus_8h.html">sbus.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:12 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:10 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

@@ -2,6 +2,7 @@ var common__nav_8h =
 [
     [ "point", "structpoint.html", "structpoint" ],
     [ "Height", "common__nav_8h.html#af637c15f691fc23f50337eb194758ec7", null ],
+    [ "NavSetAltitudeReferenceHere", "common__nav_8h.html#a82da50e89ef6cb752d1554e61531333d", null ],
     [ "NavSetGroundReferenceHere", "common__nav_8h.html#ac51da095b4a1038ac7be8d3be9b9573e", null ],
     [ "NavSetWaypointHere", "common__nav_8h.html#af6eb4097676a1a2eaea357f56751e669", null ],
     [ "WaypointAlt", "common__nav_8h.html#a2de6e5b93a3552facfa675f1bccd8db2", null ],
@@ -10,6 +11,7 @@ var common__nav_8h =
     [ "common_nav_periodic_task_4Hz", "common__nav_8h.html#aeee253823276823c6ea935330d106280", null ],
     [ "compute_dist2_to_home", "common__nav_8h.html#a4603515f41786b54ea9383a65a9f249e", null ],
     [ "nav_move_waypoint", "common__nav_8h.html#a442b6321ba6cb77bcae6a05b14bb132b", null ],
+    [ "nav_reset_alt", "common__nav_8h.html#ad2cf49c6186e482ca67ec67d17d9107b", null ],
     [ "nav_reset_reference", "common__nav_8h.html#a9be99612e24c6ba96a13c2c1d657ee99", null ],
     [ "nav_reset_utm_zone", "common__nav_8h.html#a3ef010d83e7da90d33327f0e69b9a169", null ],
     [ "nav_update_waypoints_alt", "common__nav_8h.html#a34dae3b6ee415907433b0d92cfa46eac", null ],

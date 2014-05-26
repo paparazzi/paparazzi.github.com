@@ -1,31 +1,31 @@
 <map id="event_task_ap" name="event_task_ap">
-<area shape="rect" id="node3" href="$main__ap_8c.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="185,106,281,134"/>
-<area shape="rect" id="node19" href="$group__i2c.html#ga05763355d0e087ba41feab61dd773fe6" title="i2c_event" alt="" coords="195,157,272,185"/>
-<area shape="rect" id="node21" href="$link__mcu__spi_8h.html#ac8ca91741aea5e6803a8db35d4c8188e" title="link_mcu_event_task" alt="" coords="161,207,305,235"/>
-<area shape="rect" id="node23" href="$main__ap_8c.html#aff00de1e5817007c0daf0de123dfa1f6" title="on_accel_event" alt="" coords="177,258,289,286"/>
-<area shape="rect" id="node25" href="$main__ap_8c.html#ae1cc67881c8e253ddfc658a0365daa6d" title="on_baro_abs_event" alt="" coords="167,309,300,337"/>
-<area shape="rect" id="node29" href="$main__ap_8c.html#a6aa1a0974c0101d52baf983e0856cada" title="on_baro_dif_event" alt="" coords="169,359,297,387"/>
-<area shape="rect" id="node31" href="$main__ap_8c.html#a758f2c78e167cc469945af2ad3b94152" title="on_gps_solution" alt="" coords="176,410,291,438"/>
-<area shape="rect" id="node37" href="$main__ap_8c.html#a9ad44dfc9d1342835451bd87613fb610" title="on_gyro_event" alt="" coords="180,486,287,514"/>
-<area shape="rect" id="node47" href="$main__ap_8c.html#a00877cb9155773120515df456aa457a2" title="on_mag_event" alt="" coords="180,587,287,615"/>
-<area shape="rect" id="node51" href="$main__ap_8c.html#add4d9babf9be4522b8a4a97e1f1e7b84" title="Function to be called when a message from FBW is available." alt="" coords="168,739,299,767"/>
-<area shape="rect" id="node5" href="$ahrs__infrared_8c.html#a8428916e937864198ba37b1ea356aaac" title="ahrs_update_infrared" alt="" coords="356,5,497,33"/>
-<area shape="rect" id="node11" href="$stabilization__adaptive_8c.html#a86f0d47644538be1345aab19c7dc3de4" title="h_ctl_attitude_loop" alt="" coords="361,55,492,83"/>
-<area shape="rect" id="node13" href="$link__mcu__usart_8h.html#ad2f41351eb7b54410360a1e9f1f2407a" title="link_mcu_send" alt="" coords="372,106,481,134"/>
-<area shape="rect" id="node15" href="$energy__ctrl_8c.html#a38f0bbceda8812281fc650c2c1aac6c8" title="auto throttle inner loop" alt="" coords="368,157,485,185"/>
-<area shape="rect" id="node17" href="$energy__ctrl_8c.html#a7fefa3c115f6c0f7453db6c2edd2dbbb" title="Computes slewed throttle from throttle setpoint called at 20Hz." alt="" coords="361,207,492,235"/>
-<area shape="rect" id="node7" href="$group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float)." alt="" coords="547,5,733,33"/>
-<area shape="rect" id="node9" href="$group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="781,5,931,33"/>
-<area shape="rect" id="node27" href="$ins__alt__float_8c.html#a6e1a3600e1905c414ff96c92775237d3" title="Update INS state with barometer measurements." alt="" coords="368,283,485,311"/>
-<area shape="rect" id="node33" href="$ahrs__chimu__spi_8c.html#a0156f6669675c216bbcb413ea1879960" title="Update AHRS state with GPS measurements." alt="" coords="367,334,487,362"/>
-<area shape="rect" id="node35" href="$ins__alt__float_8c.html#aacc25a507c5c24309fc37b1f806f5d2b" title="Update INS state with GPS measurements." alt="" coords="371,385,483,413"/>
-<area shape="rect" id="node39" href="$ahrs__chimu__spi_8c.html#a81e17b09f47068c02c345da1523f589b" title="Aligns the AHRS." alt="" coords="387,435,467,463"/>
-<area shape="rect" id="node41" href="$ahrs__aligner_8c.html#aa8c5b5a4ce38e0dd4e1234bad8adf92d" title="ahrs_aligner_run" alt="" coords="368,486,485,514"/>
-<area shape="rect" id="node43" href="$ahrs__chimu__spi_8c.html#af8f4df7ae38ca5b239eac30e7d259e46" title="Propagation." alt="" coords="372,537,481,565"/>
-<area shape="rect" id="node45" href="$ahrs__chimu__spi_8c.html#a8bf83860498b05e7e94484cdcbcb1b7a" title="Update AHRS state with accerleration measurements." alt="" coords="361,587,492,615"/>
-<area shape="rect" id="node49" href="$ahrs__ardrone2_8c.html#a781832a9119845d31bda0fc8a8bb8bf3" title="Update AHRS state with magnetometer measurements." alt="" coords="364,638,489,666"/>
-<area shape="rect" id="node53" href="$main__ap_8c.html#ab8d2d846e05038e13cfb45b8bb8f0921" title="Send back uncontrolled channels." alt="" coords="363,689,491,717"/>
-<area shape="rect" id="node55" href="$main__ap_8c.html#a32617d43a5d19758585b961a4ac30b61" title="mcu1_status_update" alt="" coords="356,739,497,767"/>
-<area shape="rect" id="node57" href="$main__ap_8c.html#a83e52893d778a46aeda1b3c09ffd0656" title="Update paparazzi mode." alt="" coords="361,790,492,818"/>
-<area shape="rect" id="node59" href="$rc__settings_8c.html#a1e443c4a63cdf4bc95d2867f78567abe" title="Includes generated code from tuning_rc.xml." alt="" coords="384,841,469,869"/>
+<area shape="rect" id="node3" href="$main__ap_8c.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="192,106,299,134"/>
+<area shape="rect" id="node19" href="$group__i2c.html#ga05763355d0e087ba41feab61dd773fe6" title="i2c_event" alt="" coords="204,157,287,185"/>
+<area shape="rect" id="node21" href="$link__mcu__spi_8h.html#ac8ca91741aea5e6803a8db35d4c8188e" title="link_mcu_event_task" alt="" coords="168,207,323,235"/>
+<area shape="rect" id="node23" href="$main__ap_8c.html#aff00de1e5817007c0daf0de123dfa1f6" title="on_accel_event" alt="" coords="185,258,305,286"/>
+<area shape="rect" id="node25" href="$main__ap_8c.html#ae1cc67881c8e253ddfc658a0365daa6d" title="on_baro_abs_event" alt="" coords="172,309,319,337"/>
+<area shape="rect" id="node29" href="$main__ap_8c.html#a6aa1a0974c0101d52baf983e0856cada" title="on_baro_dif_event" alt="" coords="176,359,315,387"/>
+<area shape="rect" id="node31" href="$main__ap_8c.html#a758f2c78e167cc469945af2ad3b94152" title="on_gps_solution" alt="" coords="183,410,308,438"/>
+<area shape="rect" id="node37" href="$main__ap_8c.html#a9ad44dfc9d1342835451bd87613fb610" title="on_gyro_event" alt="" coords="188,486,303,514"/>
+<area shape="rect" id="node47" href="$main__ap_8c.html#a00877cb9155773120515df456aa457a2" title="on_mag_event" alt="" coords="187,587,304,615"/>
+<area shape="rect" id="node51" href="$main__ap_8c.html#add4d9babf9be4522b8a4a97e1f1e7b84" title="Function to be called when a message from FBW is available." alt="" coords="173,739,317,767"/>
+<area shape="rect" id="node5" href="$ahrs__infrared_8c.html#a8428916e937864198ba37b1ea356aaac" title="ahrs_update_infrared" alt="" coords="372,5,529,33"/>
+<area shape="rect" id="node11" href="$stabilization__adaptive_8c.html#a86f0d47644538be1345aab19c7dc3de4" title="h_ctl_attitude_loop" alt="" coords="380,55,521,83"/>
+<area shape="rect" id="node13" href="$link__mcu__usart_8h.html#ad2f41351eb7b54410360a1e9f1f2407a" title="link_mcu_send" alt="" coords="393,106,508,134"/>
+<area shape="rect" id="node15" href="$energy__ctrl_8c.html#a38f0bbceda8812281fc650c2c1aac6c8" title="auto throttle inner loop" alt="" coords="388,157,513,185"/>
+<area shape="rect" id="node17" href="$energy__ctrl_8c.html#a7fefa3c115f6c0f7453db6c2edd2dbbb" title="Computes slewed throttle from throttle setpoint called at 20Hz." alt="" coords="381,207,520,235"/>
+<area shape="rect" id="node7" href="$group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float)." alt="" coords="580,5,777,33"/>
+<area shape="rect" id="node9" href="$group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="827,5,989,33"/>
+<area shape="rect" id="node27" href="$ins__alt__float_8c.html#a6e1a3600e1905c414ff96c92775237d3" title="Update INS state with barometer measurements." alt="" coords="387,283,515,311"/>
+<area shape="rect" id="node33" href="$ahrs__chimu__spi_8c.html#a0156f6669675c216bbcb413ea1879960" title="Update AHRS state with GPS measurements." alt="" coords="385,334,516,362"/>
+<area shape="rect" id="node35" href="$ins__alt__float_8c.html#aacc25a507c5c24309fc37b1f806f5d2b" title="Update INS state with GPS measurements." alt="" coords="389,385,512,413"/>
+<area shape="rect" id="node39" href="$ahrs__chimu__spi_8c.html#a81e17b09f47068c02c345da1523f589b" title="Aligns the AHRS." alt="" coords="408,435,493,463"/>
+<area shape="rect" id="node41" href="$ahrs__aligner_8c.html#aa8c5b5a4ce38e0dd4e1234bad8adf92d" title="ahrs_aligner_run" alt="" coords="387,486,515,514"/>
+<area shape="rect" id="node43" href="$ahrs__chimu__spi_8c.html#af8f4df7ae38ca5b239eac30e7d259e46" title="Propagation." alt="" coords="389,537,512,565"/>
+<area shape="rect" id="node45" href="$ahrs__chimu__spi_8c.html#a8bf83860498b05e7e94484cdcbcb1b7a" title="Update AHRS state with accerleration measurements." alt="" coords="380,587,521,615"/>
+<area shape="rect" id="node49" href="$ahrs__ardrone2_8c.html#a781832a9119845d31bda0fc8a8bb8bf3" title="Update AHRS state with magnetometer measurements." alt="" coords="381,638,520,666"/>
+<area shape="rect" id="node53" href="$main__ap_8c.html#ab8d2d846e05038e13cfb45b8bb8f0921" title="Send back uncontrolled channels." alt="" coords="383,689,519,717"/>
+<area shape="rect" id="node55" href="$main__ap_8c.html#a32617d43a5d19758585b961a4ac30b61" title="mcu1_status_update" alt="" coords="372,739,529,767"/>
+<area shape="rect" id="node57" href="$main__ap_8c.html#a83e52893d778a46aeda1b3c09ffd0656" title="Update paparazzi mode." alt="" coords="377,790,524,818"/>
+<area shape="rect" id="node59" href="$rc__settings_8c.html#a1e443c4a63cdf4bc95d2867f78567abe" title="Includes generated code from tuning_rc.xml." alt="" coords="405,841,496,869"/>
 </map>

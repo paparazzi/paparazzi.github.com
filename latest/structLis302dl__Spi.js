@@ -1,7 +1,7 @@
 var structLis302dl__Spi =
 [
     [ "config", "structLis302dl__Spi.html#aa81037d166efd26a319348f8f41f669c", null ],
-    [ "data", "structLis302dl__Spi.html#a830b5579ef73065ca4142b8c4b4480e9", null ],
+    [ "data", "structLis302dl__Spi.html#a2a33a15ad725a2ce7e473c4584add6a1", null ],
     [ "data_available", "structLis302dl__Spi.html#a236750da147692ae694965669a4cc240", null ],
     [ "init_status", "structLis302dl__Spi.html#a39cd6e88b50bffbc7762872b609a2c4e", null ],
     [ "initialized", "structLis302dl__Spi.html#a81d1f4db4676f97df4ef2b81424b17d9", null ],

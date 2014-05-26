@@ -1,22 +1,22 @@
 <map id="mission_nav_path" name="mission_nav_path">
-<area shape="rect" id="node3" href="$mission__fw__nav_8c.html#a5c42cd8acf9fd5c504a993ea3cf91a6a" title="Navigation function to a single waypoint." alt="" coords="183,106,300,134"/>
-<area shape="rect" id="node5" href="$nav_8c.html#a771b907350b836982ba4e31fd4bcbf4b" title="Decide if the UAV is approaching the current waypoint." alt="" coords="349,55,488,83"/>
-<area shape="rect" id="node45" href="$nav_8c.html#ab4247c9f3dc0417690e1404add032cbe" title="Computes the carrot position along the desired segment." alt="" coords="192,157,291,185"/>
-<area shape="rect" id="node36" href="$nav_8c.html#ae9d11d2e378b23ecbee86419cbf341f0" title="Computes desired_x, desired_y and desired_course." alt="" coords="384,106,453,134"/>
-<area shape="rect" id="node7" href="$group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float)." alt="" coords="565,106,717,134"/>
-<area shape="rect" id="node32" href="$group__state__velocity.html#ga29dc407c432a84bed993054af670cf4a" title="Get norm of horizontal ground speed (float)." alt="" coords="536,55,747,83"/>
-<area shape="rect" id="node9" href="$group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title="stateCalcPositionEnu_f" alt="" coords="803,106,960,134"/>
-<area shape="rect" id="node11" href="$pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1195,5,1333,33"/>
-<area shape="rect" id="node13" href="$pprz__geodetic__int_8c.html#a710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="1016,106,1147,134"/>
-<area shape="rect" id="node17" href="$pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title="enu_of_lla_point_f" alt="" coords="1019,55,1144,83"/>
-<area shape="rect" id="node22" href="$pprz__geodetic__int_8c.html#a386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="1035,157,1128,185"/>
-<area shape="rect" id="node26" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="1035,207,1128,235"/>
-<area shape="rect" id="node15" href="$pprz__geodetic__int_8c.html#a85bcbfc73a43b120465422ec55647573" title="enu_of_ecef_point_i" alt="" coords="1195,106,1333,134"/>
-<area shape="rect" id="node19" href="$pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1216,55,1312,83"/>
-<area shape="rect" id="node24" href="$pprz__geodetic__double_8c.html#a33dae600eb50aea456b6cdbeec53c849" title="ecef_of_lla_d" alt="" coords="1215,157,1313,185"/>
-<area shape="rect" id="node28" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1197,207,1331,235"/>
-<area shape="rect" id="node30" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1203,258,1325,302"/>
-<area shape="rect" id="node34" href="$group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title="stateCalcHorizontalSpeed\lNorm_f" alt="" coords="796,39,967,83"/>
-<area shape="rect" id="node39" href="$group__state__velocity.html#gaf16409f23300380a2a5a84cb77f5305a" title="Get dir of horizontal ground speed (float)." alt="" coords="544,161,739,189"/>
-<area shape="rect" id="node41" href="$group__state__velocity.html#gad9b7b6ea39d5a4ee3e824f97204c4bb5" title="stateCalcHorizontalSpeed\lDir_f" alt="" coords="796,157,967,201"/>
+<area shape="rect" id="node3" href="$mission__fw__nav_8c.html#a5c42cd8acf9fd5c504a993ea3cf91a6a" title="Navigation function to a single waypoint." alt="" coords="192,79,317,107"/>
+<area shape="rect" id="node5" href="$nav_8c.html#a771b907350b836982ba4e31fd4bcbf4b" title="Decide if the UAV is approaching the current waypoint." alt="" coords="365,29,517,57"/>
+<area shape="rect" id="node45" href="$nav_8c.html#ab4247c9f3dc0417690e1404add032cbe" title="Computes the carrot position along the desired segment." alt="" coords="201,130,308,158"/>
+<area shape="rect" id="node36" href="$nav_8c.html#ae9d11d2e378b23ecbee86419cbf341f0" title="Computes desired_x, desired_y and desired_course." alt="" coords="403,79,480,107"/>
+<area shape="rect" id="node7" href="$group__state__velocity.html#ga29dc407c432a84bed993054af670cf4a" title="Get norm of horizontal ground speed (float)." alt="" coords="567,29,796,57"/>
+<area shape="rect" id="node11" href="$group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float)." alt="" coords="600,130,763,158"/>
+<area shape="rect" id="node9" href="$group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title="stateCalcHorizontalSpeed\lNorm_f" alt="" coords="847,5,1033,49"/>
+<area shape="rect" id="node13" href="$group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title="stateCalcPositionEnu_f" alt="" coords="857,138,1023,166"/>
+<area shape="rect" id="node15" href="$pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1269,37,1419,65"/>
+<area shape="rect" id="node17" href="$pprz__geodetic__int_8c.html#a710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="1083,138,1221,166"/>
+<area shape="rect" id="node21" href="$pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title="enu_of_lla_point_f" alt="" coords="1084,87,1220,115"/>
+<area shape="rect" id="node26" href="$pprz__geodetic__int_8c.html#a386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="1103,189,1201,217"/>
+<area shape="rect" id="node30" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="1103,239,1201,267"/>
+<area shape="rect" id="node19" href="$pprz__geodetic__int_8c.html#a85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="1271,138,1417,166"/>
+<area shape="rect" id="node23" href="$pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1295,87,1393,115"/>
+<area shape="rect" id="node28" href="$pprz__geodetic__double_8c.html#a33dae600eb50aea456b6cdbeec53c849" title="ecef_of_lla_d" alt="" coords="1292,189,1396,217"/>
+<area shape="rect" id="node32" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1271,239,1417,267"/>
+<area shape="rect" id="node34" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1276,290,1412,334"/>
+<area shape="rect" id="node38" href="$group__state__velocity.html#gaf16409f23300380a2a5a84cb77f5305a" title="Get dir of horizontal ground speed (float)." alt="" coords="575,79,788,107"/>
+<area shape="rect" id="node40" href="$group__state__velocity.html#gad9b7b6ea39d5a4ee3e824f97204c4bb5" title="stateCalcHorizontalSpeed\lDir_f" alt="" coords="847,71,1033,115"/>
 </map>

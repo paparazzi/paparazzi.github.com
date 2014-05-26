@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -212,7 +212,7 @@ $(document).ready(function(){initNavTree('link__mcu__spi_8c_source.html','');});
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> link_mcu_nb_err;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> link_mcu_fbw_nb_err;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#if DOWNLINK</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#if PERIODIC_TELEMETRY</span></div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code).">subsystems/datalink/telemetry.h</a>&quot;</span></div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> send_debug_link(<span class="keywordtype">void</span>) {</div>
@@ -235,7 +235,7 @@ $(document).ready(function(){initNavTree('link__mcu__spi_8c_source.html','');});
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <a class="code" href="link__mcu__spi_8c.html#aaddeb28c81e4b264b71c0fefb60c17f5">link_mcu_trans</a>.<a class="code" href="structspi__transaction.html#a5d8b23bac2976e4245ac19747a122e71" title="number of data words to read">input_length</a> = <a class="code" href="link__mcu__spi_8c.html#ab5a3b495e748d4c9087a6caf97b64846">LINK_MCU_FRAME_LENGTH</a>;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <a class="code" href="link__mcu__spi_8c.html#aaddeb28c81e4b264b71c0fefb60c17f5">link_mcu_trans</a>.<a class="code" href="structspi__transaction.html#a48d6946f5d63c9c313bdaa442b894406" title="number of data words to write">output_length</a> = <a class="code" href="link__mcu__spi_8c.html#ab5a3b495e748d4c9087a6caf97b64846">LINK_MCU_FRAME_LENGTH</a>;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#if DOWNLINK</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#if PERIODIC_TELEMETRY</span></div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor"></span>  <a class="code" href="telemetry_8c.html#abb4aa9b3c0c8d93e1372de5da86de828" title="Register a telemetry callback function.">register_periodic_telemetry</a>(DefaultPeriodic, <span class="stringliteral">&quot;DEBUG_MCU_LINK&quot;</span>, send_debug_link);</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor"></span>}</div>
@@ -272,7 +272,7 @@ $(document).ready(function(){initNavTree('link__mcu__spi_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="link__mcu__spi_8c.html">link_mcu_spi.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

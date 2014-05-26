@@ -14,5 +14,7 @@ var mission_8c =
     [ "mission_parse_PATH_LLA", "mission_8c.html#ae2825fd4a06960dae1a0e84a8ef2fdac", null ],
     [ "mission_parse_SEGMENT", "mission_8c.html#a1715975f3eeb0b7ae1f7f0ed3b0c800f", null ],
     [ "mission_parse_SEGMENT_LLA", "mission_8c.html#aa6ff1ff42af5ec7f32536bc2bddd70b0", null ],
+    [ "mission_point_of_lla", "mission_8c.html#abaac67dbb596db58d75ea2991494daf1", null ],
+    [ "mission_status_report", "mission_8c.html#a3539ca9cd9417f5d2bfda2fdaf6973fa", null ],
     [ "mission", "mission_8c.html#a06160041db75e80665ebf0f22f13cc98", null ]
 ];

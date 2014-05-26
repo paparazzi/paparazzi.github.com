@@ -1,51 +1,51 @@
 <map id="SpiStart" name="SpiStart">
-<area shape="rect" id="node3" href="$baro__MS5534A_8c.html#a2c7f6fba111434a3d7c371359bc24fc4" title="baro_MS5534A_send" alt="" coords="123,161,269,189"/>
-<area shape="rect" id="node9" href="$group__spi.html#ga5e9947e5b87e3a86a773b4a174ec6f08" title="Resume the SPI fifo." alt="" coords="152,397,240,425"/>
-<area shape="rect" id="node15" href="$group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction." alt="" coords="153,818,239,846"/>
-<area shape="rect" id="node105" href="$lpc21_2mcu__periph_2spi__arch_8c.html#aa77dd16c5b07dd46e54d274ad55016ea" title="SpiEndOfTransaction" alt="" coords="124,1231,268,1259"/>
-<area shape="rect" id="node5" href="$baro__MS5534A_8c.html#a09c949d7892f5002fbd9624a616de846" title="baro_MS5534A_event_task" alt="" coords="324,5,505,33"/>
-<area shape="rect" id="node7" href="$baro__MS5534A_8c.html#a11f2670f1389172417fc69aa0f924027" title="baro_MS5534A_event" alt="" coords="581,5,731,33"/>
-<area shape="rect" id="node11" href="$max1168_8h.html#a957376acfc8fbd7b917f20a18e6c5a6c" title="max1168_event" alt="" coords="359,55,471,83"/>
-<area shape="rect" id="node13" href="$imu__b2_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="617,55,695,83"/>
-<area shape="rect" id="node17" href="$imu__krooz__memsic_8c.html#ac3e0837f6fda31fca37cf6d6cd1e39dd" title="imu_krooz_event" alt="" coords="355,106,475,134"/>
-<area shape="rect" id="node19" href="$lisa__test__adxl345__dma_8c.html#a49e92ddc14319ecfc71e3e0f92e1ce95" title="write_to_reg" alt="" coords="368,157,461,185"/>
-<area shape="rect" id="node23" href="$lisa__test__adxl345__dma_8c.html#a4d3a036fc48ecc9ddaaa6d21f5a7bcb8" title="read_data" alt="" coords="376,207,453,235"/>
-<area shape="rect" id="node26" href="$ins__vn100_8c.html#a78e5c992e41a5e0983748ef1970c3420" title="ins_configure" alt="" coords="365,258,464,286"/>
-<area shape="rect" id="node28" href="$ins__vn100_8h.html#a315de9dd8d9761361e22f6789b80da31" title="vn100_periodic_task" alt="" coords="585,283,727,311"/>
-<area shape="rect" id="node31" href="$high__speed__logger__spi__link_8h.html#a5415a1e7a1b569b44b00d72321bbb165" title="high_speed_logger_spi\l_link_periodic" alt="" coords="337,359,492,403"/>
-<area shape="rect" id="node33" href="$max7456_8h.html#a1d6d4401863cba472802654472781050" title="max7456_periodic" alt="" coords="593,451,719,479"/>
-<area shape="rect" id="node35" href="$max7456_8h.html#a9e352b8c2d17bfc367c3a4e1165deee6" title="max7456_event" alt="" coords="359,477,471,505"/>
-<area shape="rect" id="node37" href="$max7456_8c.html#a2b5efe546809c5c4b7d6470ba879d9fa" title="osd_put_s" alt="" coords="373,527,456,555"/>
-<area shape="rect" id="node40" href="$adxl345__spi_8c.html#aae763e182a428fc73d70dcccda195417" title="adxl345_spi_write_to_reg" alt="" coords="331,578,499,606"/>
-<area shape="rect" id="node44" href="$adxl345__spi_8h.html#add9575711d304680e75e41b11bb9e511" title="adxl345_spi_read" alt="" coords="353,629,476,657"/>
-<area shape="rect" id="node48" href="$cyrf6936_8c.html#a7d88cab1f6ef6220ca722c2e23196dec" title="Write multiple bytes to a register." alt="" coords="343,679,487,707"/>
-<area shape="rect" id="node55" href="$cyrf6936_8c.html#aa0db7554c0a2491d9665bd77cb95ccfc" title="Read multiple bytes from a register." alt="" coords="344,730,485,758"/>
-<area shape="rect" id="node61" href="$lis302dl__spi_8c.html#add754cb4b52da4c26b6fe3dca4320f27" title="lis302dl_spi_write\l_to_reg" alt="" coords="352,781,477,825"/>
-<area shape="rect" id="node63" href="$lis302dl__spi_8c.html#aece7185572dd59d44e42796665e9bebc" title="lis302dl_spi_send_config" alt="" coords="573,839,739,867"/>
-<area shape="rect" id="node72" href="$lis302dl__spi_8h.html#a77b7a80348f2cfa82cdee3fec764a2df" title="lis302dl_spi_read" alt="" coords="804,898,927,926"/>
-<area shape="rect" id="node75" href="$max1168_8c.html#adad993f2bbd2ca52aea0b0f97931863a" title="max1168_read" alt="" coords="361,949,468,977"/>
-<area shape="rect" id="node77" href="$peripherals_2mcp355x_8h.html#a43936b2cebe162bd29e00181b0282a91" title="mcp355x_read" alt="" coords="361,999,468,1027"/>
-<area shape="rect" id="node81" href="$mpu60x0__spi_8c.html#af1fb9f28813ab2ad3e7f89298ca708c8" title="mpu60x0_spi_write_to_reg" alt="" coords="327,1050,503,1078"/>
-<area shape="rect" id="node85" href="$mpu60x0__spi_8h.html#a2c59e2f5faa545396c71ce296743a4fb" title="mpu60x0_spi_read" alt="" coords="349,1101,480,1129"/>
-<area shape="rect" id="node87" href="$ms2100_8h.html#adc17005cdb56cddec08160d402d4e420" title="send request to read next axis" alt="" coords="365,1151,464,1179"/>
-<area shape="rect" id="node89" href="$ms2100_8h.html#a8673737a1d9906b6fecf14548450668c" title="ms2100_event" alt="" coords="361,1202,468,1230"/>
-<area shape="rect" id="node91" href="$ms5611__spi_8h.html#a23682a3c5d36bc1c95f61b80ab101b53" title="ms5611_spi_start_configure" alt="" coords="323,1253,507,1281"/>
-<area shape="rect" id="node93" href="$ms5611__spi_8h.html#a82e1cf6372b20fbfd4ec58f4cc8e58b9" title="ms5611_spi_start_conversion" alt="" coords="317,1303,512,1331"/>
-<area shape="rect" id="node95" href="$ms5611__spi_8h.html#ab46a8e3a6d57f0c4b1368abbb786f905" title="Periodic function to ensure proper delay after triggering reset or conversion." alt="" coords="343,1354,487,1398"/>
-<area shape="rect" id="node97" href="$ms5611__spi_8h.html#a7b23274ad291a9e686044d66f378d91d" title="ms5611_spi_event" alt="" coords="349,1421,480,1449"/>
-<area shape="rect" id="node99" href="$w5100_8c.html#acf688d7d46d5a20eb893df94ba4b2f5c" title="w5100_set" alt="" coords="372,1471,457,1499"/>
-<area shape="rect" id="node101" href="$w5100_8c.html#adc92dea40c158d4eb47238bb053ef8b1" title="w5100_get" alt="" coords="372,1522,457,1550"/>
-<area shape="rect" id="node103" href="$imu__aspirin__2__spi_8c.html#aa5e5c5229245a1ef2e8f7dd58bfe8feb" title="mpu_wait_slave4_ready" alt="" coords="335,1573,495,1601"/>
-<area shape="rect" id="node21" href="$lisa__test__adxl345__dma_8c.html#a791eaf74023b4de8d10fbfe0de040ed8" title="main_periodic_task" alt="" coords="589,182,723,210"/>
-<area shape="rect" id="node42" href="$adxl345__spi_8c.html#a058719d4e8c1943ada72dd98d56713d1" title="adxl345_spi_send_config" alt="" coords="573,527,739,555"/>
-<area shape="rect" id="node46" href="$adxl345__spi_8h.html#aa96b23656a71720f2d9ad4251e655775" title="convenience function: read or start configuration if not already initialized" alt="" coords="585,578,727,606"/>
-<area shape="rect" id="node50" href="$cyrf6936_8h.html#a0b25c82679dcd151cb4eb29986f796c9" title="The on event call for the CYRF6936 chip." alt="" coords="811,705,920,733"/>
-<area shape="rect" id="node52" href="$cyrf6936_8c.html#acff08dbccbdb911901ca44e0cdf6976b" title="Write a byte to a register." alt="" coords="579,679,733,707"/>
-<area shape="rect" id="node58" href="$cyrf6936_8c.html#a35ba21047eb809f5bb3ae8e2d0302182" title="Read a byte from a register." alt="" coords="580,781,732,809"/>
-<area shape="rect" id="node65" href="$lis302dl__spi_8h.html#abda53cd19076e92c1fedf273a070906e" title="lis302dl_spi_start\l_configure" alt="" coords="804,781,927,825"/>
-<area shape="rect" id="node69" href="$lis302dl__spi_8h.html#a2c38f1d2a84f448dd9f0c7cae80f0a70" title="lis302dl_spi_event" alt="" coords="801,847,929,875"/>
-<area shape="rect" id="node67" href="$lis302dl__spi_8h.html#af10186c998376374915e06131a4b18b5" title="convenience function: read or start configuration if not already initialized" alt="" coords="980,843,1121,871"/>
-<area shape="rect" id="node79" href="$navgo_2baro__board_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00" title="baro_periodic" alt="" coords="607,999,705,1027"/>
-<area shape="rect" id="node83" href="$mpu60x0__spi_8h.html#a8982a3f8243691d3980c136cfa9fcb5c" title="mpu60x0_spi_start_configure" alt="" coords="561,1050,751,1078"/>
-<area shape="rect" id="node107" href="$lpc21_2mcu__periph_2spi__arch_8c.html#a0c3a952b26b4118dcd848cb234062997" title="SpiAutomaton" alt="" coords="363,1623,467,1651"/>
+<area shape="rect" id="node3" href="$baro__MS5534A_8c.html#a2c7f6fba111434a3d7c371359bc24fc4" title="baro_MS5534A_send" alt="" coords="128,189,285,217"/>
+<area shape="rect" id="node9" href="$group__spi.html#ga5e9947e5b87e3a86a773b4a174ec6f08" title="Resume the SPI fifo." alt="" coords="159,422,255,450"/>
+<area shape="rect" id="node15" href="$group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction." alt="" coords="161,839,252,867"/>
+<area shape="rect" id="node105" href="$lpc21_2mcu__periph_2spi__arch_8c.html#aa77dd16c5b07dd46e54d274ad55016ea" title="SpiEndOfTransaction" alt="" coords="131,1282,283,1310"/>
+<area shape="rect" id="node5" href="$baro__MS5534A_8c.html#a09c949d7892f5002fbd9624a616de846" title="baro_MS5534A_event_task" alt="" coords="343,5,537,33"/>
+<area shape="rect" id="node7" href="$baro__MS5534A_8c.html#a11f2670f1389172417fc69aa0f924027" title="baro_MS5534A_event" alt="" coords="604,5,767,33"/>
+<area shape="rect" id="node11" href="$max1168_8h.html#a957376acfc8fbd7b917f20a18e6c5a6c" title="max1168_event" alt="" coords="377,55,503,83"/>
+<area shape="rect" id="node13" href="$imu__b2_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="644,55,727,83"/>
+<area shape="rect" id="node17" href="$imu__krooz__memsic_8c.html#ac3e0837f6fda31fca37cf6d6cd1e39dd" title="imu_krooz_event" alt="" coords="375,106,505,134"/>
+<area shape="rect" id="node19" href="$ins__vn100_8c.html#a78e5c992e41a5e0983748ef1970c3420" title="ins_configure" alt="" coords="387,157,493,185"/>
+<area shape="rect" id="node21" href="$ins__vn100_8h.html#a315de9dd8d9761361e22f6789b80da31" title="vn100_periodic_task" alt="" coords="609,182,761,210"/>
+<area shape="rect" id="node24" href="$high__speed__logger__spi__link_8h.html#a5415a1e7a1b569b44b00d72321bbb165" title="high_speed_logger_spi\l_link_periodic" alt="" coords="357,258,523,302"/>
+<area shape="rect" id="node26" href="$max7456_8h.html#a1d6d4401863cba472802654472781050" title="max7456_periodic" alt="" coords="616,350,755,378"/>
+<area shape="rect" id="node28" href="$max7456_8h.html#a9e352b8c2d17bfc367c3a4e1165deee6" title="max7456_event" alt="" coords="377,375,503,403"/>
+<area shape="rect" id="node30" href="$max7456_8c.html#a2b5efe546809c5c4b7d6470ba879d9fa" title="osd_put_s" alt="" coords="397,426,483,454"/>
+<area shape="rect" id="node33" href="$adxl345__spi_8c.html#aae763e182a428fc73d70dcccda195417" title="adxl345_spi_write_to_reg" alt="" coords="349,477,531,505"/>
+<area shape="rect" id="node37" href="$adxl345__spi_8h.html#add9575711d304680e75e41b11bb9e511" title="adxl345_spi_read" alt="" coords="373,527,507,555"/>
+<area shape="rect" id="node41" href="$cyrf6936_8c.html#a7d88cab1f6ef6220ca722c2e23196dec" title="Write multiple bytes to a register." alt="" coords="363,578,517,606"/>
+<area shape="rect" id="node48" href="$cyrf6936_8c.html#aa0db7554c0a2491d9665bd77cb95ccfc" title="Read multiple bytes from a register." alt="" coords="364,629,516,657"/>
+<area shape="rect" id="node54" href="$l3gd20__spi_8c.html#ad7095e98c10bc5285b717b2d05b0566d" title="l3gd20_spi_write_to_reg" alt="" coords="353,679,527,707"/>
+<area shape="rect" id="node56" href="$l3gd20__spi_8c.html#a4a0ec290b0c95368ffc813212f7be9c9" title="l3gd20_spi_send_config" alt="" coords="599,730,772,758"/>
+<area shape="rect" id="node65" href="$l3gd20__spi_8h.html#ac58f3581bad688c53c7770caaab910b2" title="l3gd20_spi_read" alt="" coords="859,781,984,809"/>
+<area shape="rect" id="node68" href="$lis302dl__spi_8c.html#add754cb4b52da4c26b6fe3dca4320f27" title="lis302dl_spi_write\l_to_reg" alt="" coords="375,831,505,875"/>
+<area shape="rect" id="node70" href="$lis302dl__spi_8c.html#aece7185572dd59d44e42796665e9bebc" title="lis302dl_spi_send_config" alt="" coords="596,869,775,897"/>
+<area shape="rect" id="node77" href="$lis302dl__spi_8h.html#a77b7a80348f2cfa82cdee3fec764a2df" title="lis302dl_spi_read" alt="" coords="375,949,505,977"/>
+<area shape="rect" id="node79" href="$max1168_8c.html#adad993f2bbd2ca52aea0b0f97931863a" title="max1168_read" alt="" coords="381,999,499,1027"/>
+<area shape="rect" id="node81" href="$peripherals_2mcp355x_8h.html#a43936b2cebe162bd29e00181b0282a91" title="mcp355x_read" alt="" coords="381,1050,499,1078"/>
+<area shape="rect" id="node83" href="$mpu60x0__spi_8c.html#af1fb9f28813ab2ad3e7f89298ca708c8" title="mpu60x0_spi_write_to_reg" alt="" coords="344,1101,536,1129"/>
+<area shape="rect" id="node85" href="$mpu60x0__spi_8h.html#a2c59e2f5faa545396c71ce296743a4fb" title="mpu60x0_spi_read" alt="" coords="369,1151,511,1179"/>
+<area shape="rect" id="node87" href="$ms2100_8h.html#adc17005cdb56cddec08160d402d4e420" title="send request to read next axis" alt="" coords="385,1202,495,1230"/>
+<area shape="rect" id="node89" href="$ms2100_8h.html#a8673737a1d9906b6fecf14548450668c" title="ms2100_event" alt="" coords="381,1253,499,1281"/>
+<area shape="rect" id="node91" href="$ms5611__spi_8h.html#a23682a3c5d36bc1c95f61b80ab101b53" title="ms5611_spi_start_configure" alt="" coords="339,1303,541,1331"/>
+<area shape="rect" id="node93" href="$ms5611__spi_8h.html#a82e1cf6372b20fbfd4ec58f4cc8e58b9" title="ms5611_spi_start_conversion" alt="" coords="335,1354,545,1382"/>
+<area shape="rect" id="node95" href="$ms5611__spi_8h.html#ab46a8e3a6d57f0c4b1368abbb786f905" title="Periodic function to ensure proper delay after triggering reset or conversion." alt="" coords="363,1405,517,1449"/>
+<area shape="rect" id="node97" href="$ms5611__spi_8h.html#a7b23274ad291a9e686044d66f378d91d" title="ms5611_spi_event" alt="" coords="369,1471,511,1499"/>
+<area shape="rect" id="node99" href="$w5100_8c.html#acf688d7d46d5a20eb893df94ba4b2f5c" title="w5100_set" alt="" coords="395,1522,485,1550"/>
+<area shape="rect" id="node101" href="$w5100_8c.html#adc92dea40c158d4eb47238bb053ef8b1" title="w5100_get" alt="" coords="395,1573,485,1601"/>
+<area shape="rect" id="node103" href="$imu__aspirin__2__spi_8c.html#aa5e5c5229245a1ef2e8f7dd58bfe8feb" title="mpu_wait_slave4_ready" alt="" coords="353,1623,527,1651"/>
+<area shape="rect" id="node35" href="$adxl345__spi_8c.html#a058719d4e8c1943ada72dd98d56713d1" title="adxl345_spi_send_config" alt="" coords="596,426,775,454"/>
+<area shape="rect" id="node39" href="$adxl345__spi_8h.html#aa96b23656a71720f2d9ad4251e655775" title="convenience function: read or start configuration if not already initialized" alt="" coords="608,477,763,505"/>
+<area shape="rect" id="node43" href="$cyrf6936_8h.html#a0b25c82679dcd151cb4eb29986f796c9" title="The on event call for the CYRF6936 chip." alt="" coords="861,603,981,631"/>
+<area shape="rect" id="node45" href="$cyrf6936_8c.html#acff08dbccbdb911901ca44e0cdf6976b" title="Write a byte to a register." alt="" coords="600,578,771,606"/>
+<area shape="rect" id="node51" href="$cyrf6936_8c.html#a35ba21047eb809f5bb3ae8e2d0302182" title="Read a byte from a register." alt="" coords="601,679,769,707"/>
+<area shape="rect" id="node58" href="$l3gd20__spi_8h.html#a6f9735ca528b6dd1e69529dc53c56155" title="l3gd20_spi_start_configure" alt="" coords="825,679,1017,707"/>
+<area shape="rect" id="node62" href="$l3gd20__spi_8h.html#a50685decd3b79232d66b5ac4867d3214" title="l3gd20_spi_event" alt="" coords="855,730,988,758"/>
+<area shape="rect" id="node60" href="$l3gd20__spi_8h.html#a3d5961070c05aa8b0d38ea18b1dcb3cf" title="convenience function: read or start configuration if not already initialized" alt="" coords="1067,730,1213,758"/>
+<area shape="rect" id="node72" href="$lis302dl__spi_8h.html#abda53cd19076e92c1fedf273a070906e" title="lis302dl_spi_start\l_configure" alt="" coords="856,846,987,890"/>
+<area shape="rect" id="node74" href="$lis302dl__spi_8h.html#a2c38f1d2a84f448dd9f0c7cae80f0a70" title="lis302dl_spi_event" alt="" coords="852,913,991,941"/>
+<area shape="rect" id="node107" href="$lpc21_2mcu__periph_2spi__arch_8c.html#a0c3a952b26b4118dcd848cb234062997" title="SpiAutomaton" alt="" coords="383,1674,497,1702"/>
 </map>

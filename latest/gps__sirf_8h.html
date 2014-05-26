@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('gps__sirf_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__sirf_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2gps_2gps__sirf_8hdep" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2gps_2gps__sirf_8hdep" id="sw_2airborne_2subsystems_2gps_2gps__sirf_8hdep">
-<area shape="rect" id="node3" href="gps__sirf_8c.html" title="sw/airborne/subsystems\l/gps/gps_sirf.c" alt="" coords="5,99,168,143"/></map>
+<area shape="rect" id="node3" href="gps__sirf_8c.html" title="sw/airborne/subsystems\l/gps/gps_sirf.c" alt="" coords="5,99,181,143"/></map>
 </div>
 </div>
 <p><a href="gps__sirf_8h_source.html">Go to the source code of this file.</a></p>
@@ -164,7 +164,7 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a60b776e45dfc8a807cec9dcf5571844d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__sirf_8h.html#a60b776e45dfc8a807cec9dcf5571844d">sirf_parse_char</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>)</td></tr>
+<tr class="memitem:a60b776e45dfc8a807cec9dcf5571844d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__sirf_8h.html#a60b776e45dfc8a807cec9dcf5571844d">sirf_parse_char</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> c)</td></tr>
 <tr class="memitem:a8bfe70fc0b88cb28b17518ff91a0cae9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__sirf_8h.html#a8bfe70fc0b88cb28b17518ff91a0cae9">sirf_parse_msg</a> (void)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="var-members"></a>
@@ -324,21 +324,23 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{         \</div>
-<div class="line">    if (<a class="code" href="gps__sirf_8h.html#a1e52156e0d0d33e35ac9ace67b4a8533">GpsBuffer</a>()) {                              \</div>
-<div class="line">      ReadGpsBuffer();                              \</div>
-<div class="line">    }                                               \</div>
-<div class="line">    if (<a class="code" href="gps__sirf_8c.html#add1fe9f06d4094bd6e54df2185fb7fb7">gps_sirf</a>.<a class="code" href="structGpsSirf.html#a0158f3cda3c219b9c2afb8dea7c8035a">msg_available</a>) {                   \</div>
-<div class="line">      sirf_parse_msg();                             \</div>
-<div class="line">      if (<a class="code" href="gps__sirf_8c.html#add1fe9f06d4094bd6e54df2185fb7fb7">gps_sirf</a>.<a class="code" href="structGpsSirf.html#a56cef446eae82de87ebaec239e5b7abc">pos_available</a>) {                 \</div>
-<div class="line">        if (<a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#afeffb02bdd18d27a87e96bb77175168f" title="status of fix">fix</a> == <a class="code" href="gps_8h.html#ac5e980c8325a29dd79a45ed26af404be">GPS_FIX_3D</a>) {                \</div>
-<div class="line">          gps.last_fix_ticks = <a class="code" href="structsys__time.html">sys_time</a>.<a class="code" href="structsys__time.html#a8654f589772b3eef22ab59594c97e513" title="remainder of seconds since startup in CPU_TICKS">nb_sec_rem</a>; \</div>
-<div class="line">          gps.last_fix_time = <a class="code" href="structsys__time.html">sys_time</a>.<a class="code" href="structsys__time.html#a2e86fdabba99a0ac8f6409e0d1e694a3" title="full seconds since startup">nb_sec</a>;      \</div>
-<div class="line">        }                                           \</div>
-<div class="line">        _sol_available_callback();                  \</div>
-<div class="line">      }                                             \</div>
-<div class="line">      gps_sirf.msg_available = <a class="code" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;               \</div>
-<div class="line">    }                                               \</div>
+<b>Value:</b><div class="fragment"><div class="line">{             \</div>
+<div class="line">    if (<a class="code" href="gps__sirf_8h.html#a1e52156e0d0d33e35ac9ace67b4a8533">GpsBuffer</a>()) {                                  \</div>
+<div class="line">      ReadGpsBuffer();                                  \</div>
+<div class="line">    }                                                   \</div>
+<div class="line">    if (<a class="code" href="gps__sirf_8c.html#add1fe9f06d4094bd6e54df2185fb7fb7">gps_sirf</a>.<a class="code" href="structGpsSirf.html#a0158f3cda3c219b9c2afb8dea7c8035a">msg_available</a>) {                       \</div>
+<div class="line">      gps.last_msg_ticks = <a class="code" href="structsys__time.html">sys_time</a>.<a class="code" href="structsys__time.html#a8654f589772b3eef22ab59594c97e513" title="remainder of seconds since startup in CPU_TICKS">nb_sec_rem</a>;         \</div>
+<div class="line">      gps.last_msg_time = <a class="code" href="structsys__time.html">sys_time</a>.<a class="code" href="structsys__time.html#a2e86fdabba99a0ac8f6409e0d1e694a3" title="full seconds since startup">nb_sec</a>;              \</div>
+<div class="line">      sirf_parse_msg();                                 \</div>
+<div class="line">      if (<a class="code" href="gps__sirf_8c.html#add1fe9f06d4094bd6e54df2185fb7fb7">gps_sirf</a>.<a class="code" href="structGpsSirf.html#a56cef446eae82de87ebaec239e5b7abc">pos_available</a>) {                     \</div>
+<div class="line">        if (<a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#afeffb02bdd18d27a87e96bb77175168f" title="status of fix">fix</a> == <a class="code" href="gps_8h.html#ac5e980c8325a29dd79a45ed26af404be">GPS_FIX_3D</a>) {                    \</div>
+<div class="line">          gps.last_3dfix_ticks = <a class="code" href="structsys__time.html">sys_time</a>.<a class="code" href="structsys__time.html#a8654f589772b3eef22ab59594c97e513" title="remainder of seconds since startup in CPU_TICKS">nb_sec_rem</a>;   \</div>
+<div class="line">          gps.last_3dfix_time = <a class="code" href="structsys__time.html">sys_time</a>.<a class="code" href="structsys__time.html#a2e86fdabba99a0ac8f6409e0d1e694a3" title="full seconds since startup">nb_sec</a>;        \</div>
+<div class="line">        }                                               \</div>
+<div class="line">        _sol_available_callback();                      \</div>
+<div class="line">      }                                                 \</div>
+<div class="line">      gps_sirf.msg_available = <a class="code" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;                   \</div>
+<div class="line">    }                                                   \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="gps__sirf_8h_source.html#l00136">136</a> of file <a class="el" href="gps__sirf_8h_source.html">gps_sirf.h</a>.</p>
@@ -420,7 +422,7 @@ Variables</h2></td></tr>
 <div class="line">      sirf_parse_char(<a class="code" href="gps__sirf_8h.html#a47874681328e0707ec52d1ab3da2e9f6">GpsLink</a>(Getch()));                    \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="gps__sirf_8h_source.html#l00153">153</a> of file <a class="el" href="gps__sirf_8h_source.html">gps_sirf.h</a>.</p>
+<p>Definition at line <a class="el" href="gps__sirf_8h_source.html#l00155">155</a> of file <a class="el" href="gps__sirf_8h_source.html">gps_sirf.h</a>.</p>
 
 </div>
 </div>
@@ -469,7 +471,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="gps__sirf_8c_source.html#l00050">50</a> of file <a class="el" href="gps__sirf_8c_source.html">gps_sirf.c</a>.</p>
 
-<p>References <a class="el" href="discsurvey_8c_source.html#l00038">c</a>, <a class="el" href="gps__sirf_8h_source.html#l00039">GOT_A0</a>, <a class="el" href="gps__sirf_8h_source.html#l00040">GOT_A2</a>, <a class="el" href="gps__sirf_8h_source.html#l00041">GOT_B0</a>, <a class="el" href="gps__sirf_8c_source.html#l00039">gps_sirf</a>, <a class="el" href="gps__sirf_8h_source.html#l00044">GpsSirf::msg_available</a>, <a class="el" href="gps__sirf_8h_source.html#l00046">GpsSirf::msg_buf</a>, <a class="el" href="gps__sirf_8h_source.html#l00047">GpsSirf::msg_len</a>, <a class="el" href="gps__sirf_8h_source.html#l00048">GpsSirf::read_state</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, and <a class="el" href="link__mcu__usart_8c_source.html#l00133">UNINIT</a>.</p>
+<p>References <a class="el" href="gps__sirf_8h_source.html#l00039">GOT_A0</a>, <a class="el" href="gps__sirf_8h_source.html#l00040">GOT_A2</a>, <a class="el" href="gps__sirf_8h_source.html#l00041">GOT_B0</a>, <a class="el" href="gps__sirf_8c_source.html#l00039">gps_sirf</a>, <a class="el" href="gps__sirf_8h_source.html#l00044">GpsSirf::msg_available</a>, <a class="el" href="gps__sirf_8h_source.html#l00046">GpsSirf::msg_buf</a>, <a class="el" href="gps__sirf_8h_source.html#l00047">GpsSirf::msg_len</a>, <a class="el" href="gps__sirf_8h_source.html#l00048">GpsSirf::read_state</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, and <a class="el" href="ins__xsens_8c_source.html#l00170">UNINIT</a>.</p>
 
 </div>
 </div>
@@ -498,7 +500,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__sirf_8h_a8bfe70fc0b88cb28b17518ff91a0cae9_cgraph.png" border="0" usemap="#gps__sirf_8h_a8bfe70fc0b88cb28b17518ff91a0cae9_cgraph" alt=""/></div>
 <map name="gps__sirf_8h_a8bfe70fc0b88cb28b17518ff91a0cae9_cgraph" id="gps__sirf_8h_a8bfe70fc0b88cb28b17518ff91a0cae9_cgraph">
-<area shape="rect" id="node3" href="gps__sirf_8c.html#ab8f82af196f0d9516b8f914f1e02df87" title="sirf_parse_2" alt="" coords="169,5,263,33"/><area shape="rect" id="node5" href="gps__sirf_8c.html#a99e4106b362adc09bc68f3037a3db9ec" title="sirf_parse_41" alt="" coords="167,55,265,83"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="315,55,408,83"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="457,26,591,54"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="463,77,585,121"/></map>
+<area shape="rect" id="node3" href="gps__sirf_8c.html#ab8f82af196f0d9516b8f914f1e02df87" title="sirf_parse_2" alt="" coords="177,5,276,33"/><area shape="rect" id="node5" href="gps__sirf_8c.html#a99e4106b362adc09bc68f3037a3db9ec" title="sirf_parse_41" alt="" coords="173,55,280,83"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="328,55,427,83"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="475,26,621,54"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="480,77,616,121"/></map>
 </div>
 </p>
 
@@ -527,7 +529,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8c4cbb881db224ddaf0756e79ed706ce.html">gps</a></li><li class="navelem"><a class="el" href="gps__sirf_8h.html">gps_sirf.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:11 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:07 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

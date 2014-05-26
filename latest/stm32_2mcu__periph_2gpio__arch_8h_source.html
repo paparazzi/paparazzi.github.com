@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -133,18 +133,24 @@ $(document).ready(function(){initNavTree('stm32_2mcu__periph_2gpio__arch_8h_sour
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;libopencm3/stm32/gpio.h&gt;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="stm32_2mcu__periph_2gpio__arch_8h.html#a3b5f0a992d58d84615e502585419d0b3" title="Setup a gpio for input or output with alternate function.">gpio_setup_pin_af</a>(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="navdata_8h.html#abd160e9c56e6ebc3ef6a4d8990d4fc92">port</a>, <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pin, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> af, bool_t is_output);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="stm32_2mcu__periph_2gpio__arch_8h.html#a457a82963882d55568983cedd74c5ff2">gpio_enable_clock</a>(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="navdata_8h.html#abd160e9c56e6ebc3ef6a4d8990d4fc92">port</a>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a9623a3774c44d3fc1cca04ccc9bc69f6" title="Setup one or more pins of the given GPIO port as outputs.">gpio_setup_output</a>(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="navdata_8h.html#abd160e9c56e6ebc3ef6a4d8990d4fc92">port</a>, <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> gpios);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GPIO_ARCH_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="lpc21_2mcu__periph_2gpio__arch_8h.html#ada0fcb2fa4a97c20e81bb1a422446137" title="Setup one or more pins of the given GPIO port as inputs.">gpio_setup_input</a>(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="navdata_8h.html#abd160e9c56e6ebc3ef6a4d8990d4fc92">port</a>, <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> gpios);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="stm32_2mcu__periph_2gpio__arch_8h.html#a3b5f0a992d58d84615e502585419d0b3" title="Setup a gpio for input or output with alternate function.">gpio_setup_pin_af</a>(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="navdata_8h.html#abd160e9c56e6ebc3ef6a4d8990d4fc92">port</a>, <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pin, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> af, bool_t is_output);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="stm32_2mcu__periph_2gpio__arch_8h.html#a12bf1810f1a45faf567e1dfda5cf57ed" title="Setup a gpio for analog use.">gpio_setup_pin_analog</a>(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="navdata_8h.html#abd160e9c56e6ebc3ef6a4d8990d4fc92">port</a>, <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pin);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gpio__arch_8c.html#a457a82963882d55568983cedd74c5ff2" title="Enable the relevant clock.">gpio_enable_clock</a>(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="navdata_8h.html#abd160e9c56e6ebc3ef6a4d8990d4fc92">port</a>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GPIO_ARCH_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_0722e4cfffe4ffd4c81bbc7e5d686ba4.html">mcu_periph</a></li><li class="navelem"><a class="el" href="stm32_2mcu__periph_2gpio__arch_8h.html">gpio_arch.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:07 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:36 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

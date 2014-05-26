@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -347,7 +347,7 @@ $(document).ready(function(){initNavTree('ins__xsens_8c_source.html','');});
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* USE_IMU */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="preprocessor">#if USE_INS_MODULE</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor"></span><span class="keywordtype">void</span> <a class="code" href="ins__xsens700_8c.html#abf3028c2ada542781b8a5e1eb20c17ce" title="INS initialization.">ins_init</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor"></span><span class="keywordtype">void</span> <a class="code" href="ins__alt__float_8c.html#abf3028c2ada542781b8a5e1eb20c17ce" title="INS initialization.">ins_init</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  <span class="keyword">struct </span><a class="code" href="structUtmCoor__f.html" title="position in UTM coordinates Units: meters">UtmCoor_f</a> utm0 = { <a class="code" href="common__nav_8c.html#ace28d2afa409c13ff38275eac017698c">nav_utm_north0</a>, <a class="code" href="common__nav_8c.html#a3de43e2f62e53fe06e76fe5c22c017b5">nav_utm_east0</a>, 0., <a class="code" href="common__nav_8c.html#a66bdefcf7a79ffd01863bc4057e2bf5a">nav_utm_zone0</a> };</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <a class="code" href="group__state__position.html#gae180e6252c12221500767c9a4a34b20d" title="Set the local (flat earth) coordinate frame origin from UTM (float).">stateSetLocalUtmOrigin_f</a>(&amp;utm0);</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <a class="code" href="group__state__position.html#gac6c73e42fc6b5891cb23454ad9c68c92" title="Set position from UTM coordinates (float).">stateSetPositionUtm_f</a>(&amp;utm0);</div>
@@ -355,7 +355,7 @@ $(document).ready(function(){initNavTree('ins__xsens_8c_source.html','');});
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <a class="code" href="ins__xsens_8c.html#a47f12136c89e8cc13ff45e72caab8a19">xsens_init</a>();</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;}</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ins__alt__float_8c.html#acb548b510075b086cc7cc5e2d80b3a71" title="INS periodic call.">ins_periodic</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ins__ardrone2_8c.html#acb548b510075b086cc7cc5e2d80b3a71" title="INS periodic call.">ins_periodic</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <a class="code" href="ins__xsens_8c.html#a6345aa5f7a6fc2de9539539d91bf0cba">xsens_periodic</a>();</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;}</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
@@ -770,8 +770,8 @@ $(document).ready(function(){initNavTree('ins__xsens_8c_source.html','');});
 <div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;}</div>
 <div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;</div>
 <div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;</div>
-<div class="line"><a name="l00670"></a><span class="lineno"><a class="code" href="ins__xsens_8c.html#a7cb52371283c2313f6dfe53139c56bb4">  670</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ins__module_8h.html#acb1dc1d537ebd5ad8b28282c1365b884">parse_ins_buffer</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>) {</div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;  <a class="code" href="ins__xsens_8c.html#a8cc30b8cc0fb84cf89bd40f5e701c2b1">ck</a> += <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>;</div>
+<div class="line"><a name="l00670"></a><span class="lineno"><a class="code" href="ins__xsens_8c.html#a7cb52371283c2313f6dfe53139c56bb4">  670</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ins__module_8h.html#acb1dc1d537ebd5ad8b28282c1365b884">parse_ins_buffer</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> c) {</div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;  <a class="code" href="ins__xsens_8c.html#a8cc30b8cc0fb84cf89bd40f5e701c2b1">ck</a> += c;</div>
 <div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;  <span class="keywordflow">switch</span> (<a class="code" href="ins__xsens_8c.html#addde03e9808c81020c62215e7825254e">xsens_status</a>) {</div>
 <div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="ins__xsens_8c.html#a7668dedbc74a47bde384b2b911379073">UNINIT</a>:</div>
 <div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;    <span class="keywordflow">if</span> (c != XSENS_START)</div>
@@ -785,18 +785,18 @@ $(document).ready(function(){initNavTree('ins__xsens_8c_source.html','');});
 <div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;    <a class="code" href="ins__xsens_8c.html#addde03e9808c81020c62215e7825254e">xsens_status</a>++;</div>
 <div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;    <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="ins__xsens_8c.html#a50f2d2d7acbe051094fd37b71ce583e2">GOT_BID</a>:</div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    <a class="code" href="ins__xsens_8c.html#a111cd99527acd754fc2ade66107a9090">xsens_id</a> = <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>;</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    <a class="code" href="ins__xsens_8c.html#a111cd99527acd754fc2ade66107a9090">xsens_id</a> = c;</div>
 <div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;    <a class="code" href="ins__xsens_8c.html#addde03e9808c81020c62215e7825254e">xsens_status</a>++;</div>
 <div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;    <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="ins__xsens_8c.html#a9487570e8ffd35b6a846e96a847fdddd">GOT_MID</a>:</div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;    <a class="code" href="ins__xsens_8c.html#a4b386089bdea5bf512e4c33d39e1210c">xsens_len</a> = <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>;</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;    <a class="code" href="ins__xsens_8c.html#a4b386089bdea5bf512e4c33d39e1210c">xsens_len</a> = c;</div>
 <div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ins__xsens_8c.html#a4b386089bdea5bf512e4c33d39e1210c">xsens_len</a> &gt; <a class="code" href="ins__xsens_8c.html#a473d343a49500ecfb5624bdaf98f1f69" title="Includes macros generated from xsens_MTi-G.xml.">XSENS_MAX_PAYLOAD</a>)</div>
 <div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;      <span class="keywordflow">goto</span> error;</div>
 <div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;    <a class="code" href="ins__xsens_8c.html#acf3f776fc3e9ac770d27763d6fad3417">xsens_msg_idx</a> = 0;</div>
 <div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;    <a class="code" href="ins__xsens_8c.html#addde03e9808c81020c62215e7825254e">xsens_status</a>++;</div>
 <div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;    <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="ins__xsens_8c.html#a45fdf89b8ca3c3330f19878757d6b16f">GOT_LEN</a>:</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;    <a class="code" href="ins__xsens_8c.html#a1685356ace76940e06c455f2dcb00f75">xsens_msg_buf</a>[<a class="code" href="ins__xsens_8c.html#acf3f776fc3e9ac770d27763d6fad3417">xsens_msg_idx</a>] = <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>;</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;    <a class="code" href="ins__xsens_8c.html#a1685356ace76940e06c455f2dcb00f75">xsens_msg_buf</a>[<a class="code" href="ins__xsens_8c.html#acf3f776fc3e9ac770d27763d6fad3417">xsens_msg_idx</a>] = c;</div>
 <div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;    <a class="code" href="ins__xsens_8c.html#acf3f776fc3e9ac770d27763d6fad3417">xsens_msg_idx</a>++;</div>
 <div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ins__xsens_8c.html#acf3f776fc3e9ac770d27763d6fad3417">xsens_msg_idx</a> &gt;= <a class="code" href="ins__xsens_8c.html#a4b386089bdea5bf512e4c33d39e1210c">xsens_len</a>)</div>
 <div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;      <a class="code" href="ins__xsens_8c.html#addde03e9808c81020c62215e7825254e">xsens_status</a>++;</div>
@@ -822,7 +822,7 @@ $(document).ready(function(){initNavTree('ins__xsens_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="ins__xsens_8c.html">ins_xsens.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:41 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -164,45 +164,47 @@ $(document).ready(function(){initNavTree('gps__nmea_8h_source.html','');});
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="gps__nmea_8h.html#a1e52156e0d0d33e35ac9ace67b4a8533">   62</a></span>&#160;<span class="preprocessor">#define GpsBuffer() GpsLink(ChAvailable())</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="gps__nmea_8h.html#a2dcf939e5c207e7263b3cd68842df3f3">   64</a></span>&#160;<span class="preprocessor">#define GpsEvent(_sol_available_callback) {        \</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">    if (GpsBuffer()) {                             \</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">      ReadGpsBuffer();                             \</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">    }                                              \</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">    if (gps_nmea.msg_available) {                  \</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">      nmea_parse_msg();          \</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">      if (gps_nmea.pos_available) {      \</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">        if (gps.fix == GPS_FIX_3D) {               \</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">          gps.last_fix_ticks = sys_time.nb_sec_rem;     \</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">          gps.last_fix_time = sys_time.nb_sec;        \</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">        }                                          \</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">        _sol_available_callback();                 \</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">      }                                            \</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">      gps_nmea.msg_available = FALSE;               \</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">    }                                              \</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">  }</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="code" href="gps__nmea_8h.html#a08c52390a5392d59a7e11e9797b88911">   81</a></span>&#160;<span class="preprocessor">#define ReadGpsBuffer() {         \</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">    while (GpsLink(ChAvailable())&amp;&amp;!gps_nmea.msg_available) \</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">      nmea_parse_char(GpsLink(Getch()));      \</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">  }</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gps__nmea_8c.html#af2c40746dbb1a1371e3411033e64239a" title="This is the actual parser.">nmea_parse_char</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gps__nmea_8c.html#a2f49ea43d042f884e3ec12e5e14abc97" title="parse_nmea_char() has a complete line.">nmea_parse_msg</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="gps__nmea_8h.html#a2dcf939e5c207e7263b3cd68842df3f3">   64</a></span>&#160;<span class="preprocessor">#define GpsEvent(_sol_available_callback) {             \</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">    if (GpsBuffer()) {                                  \</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">      ReadGpsBuffer();                                  \</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">    }                                                   \</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">    if (gps_nmea.msg_available) {                       \</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">      gps.last_msg_ticks = sys_time.nb_sec_rem;         \</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">      gps.last_msg_time = sys_time.nb_sec;              \</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">      nmea_parse_msg();                                 \</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">      if (gps_nmea.pos_available) {                     \</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">        if (gps.fix == GPS_FIX_3D) {                    \</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">          gps.last_3dfix_ticks = sys_time.nb_sec_rem;   \</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">          gps.last_3dfix_time = sys_time.nb_sec;        \</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">        }                                               \</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">        _sol_available_callback();                      \</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">      }                                                 \</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">      gps_nmea.msg_available = FALSE;                   \</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">    }                                                   \</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">  }</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="code" href="gps__nmea_8h.html#a08c52390a5392d59a7e11e9797b88911">   83</a></span>&#160;<span class="preprocessor">#define ReadGpsBuffer() {         \</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">    while (GpsLink(ChAvailable())&amp;&amp;!gps_nmea.msg_available) \</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">      nmea_parse_char(GpsLink(Getch()));      \</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">  }</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gps__nmea_8c.html#af2c40746dbb1a1371e3411033e64239a" title="This is the actual parser.">nmea_parse_char</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> c);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="code" href="gps__nmea_8h.html#aafb1ed2f2c5fe64108a7945cb7257087">   94</a></span>&#160;<span class="preprocessor">#define gps_nmea_Reset(_val) { }</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GPS_NMEA_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gps__nmea_8c.html#a2f49ea43d042f884e3ec12e5e14abc97" title="parse_nmea_char() has a complete line.">nmea_parse_msg</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="code" href="gps__nmea_8h.html#aafb1ed2f2c5fe64108a7945cb7257087">   96</a></span>&#160;<span class="preprocessor">#define gps_nmea_Reset(_val) { }</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GPS_NMEA_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8c4cbb881db224ddaf0756e79ed706ce.html">gps</a></li><li class="navelem"><a class="el" href="gps__nmea_8h.html">gps_nmea.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:45 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

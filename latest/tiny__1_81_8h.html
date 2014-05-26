@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -126,10 +126,7 @@ Macros</h2></td></tr>
 <tr class="memitem:aad615ff6a6f5e1f55769b625fd8ec8bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#aad615ff6a6f5e1f55769b625fd8ec8bf">USE_LED_2</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memitem:a112e30585052c010d6182c4d3dceeb4a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#a112e30585052c010d6182c4d3dceeb4a">LED_2_BANK</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memitem:a78579f743b58c20ec8d10120d8381148"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#a78579f743b58c20ec8d10120d8381148">LED_2_PIN</a>&#160;&#160;&#160;19</td></tr>
-<tr class="memitem:a4da08b59c725550efa312cf16ecdd77c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#a4da08b59c725550efa312cf16ecdd77c">USE_LED_3</a>&#160;&#160;&#160;1</td></tr>
-<tr class="memitem:a7dfa5391e683db824c2a546dd5d00746"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#a7dfa5391e683db824c2a546dd5d00746">LED_3_BANK</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memitem:a5ea98da36d05b171b54c342bcf4a35f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#a5ea98da36d05b171b54c342bcf4a35f7">LED_3_PIN</a>&#160;&#160;&#160;11</td></tr>
-<tr class="memitem:a3a5cfe68fa39b534d190c7bfaa6d8e33"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#a3a5cfe68fa39b534d190c7bfaa6d8e33">POWER_SWITCH_LED</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memitem:a76069dd8b39c52bab9027c808ad505a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#a76069dd8b39c52bab9027c808ad505a9">POWER_SWITCH_GPIO</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#ac485358099728ddae050db37924dd6b7">GPIOA</a>,<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#ac376b1c124378935df7b3c171b2bef35">GPIO11</a></td></tr>
 <tr class="memitem:aa7699f41fbe105c8f5061cc48a5f6307"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">DEFAULT_ACTUATORS</a>&#160;&#160;&#160;&quot;subsystems/<a class="el" href="lisa__stm__passthrough__main_8c.html#a1b5f92ea9dc3ed3f2f69e24b4f186275">actuators</a>/actuators_4015.h&quot;</td></tr>
 <tr class="memitem:a3fc5f96f074d833b909fd75c92b7d2d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#a3fc5f96f074d833b909fd75c92b7d2d0">ActuatorDefaultSet</a>(_x, _y)&#160;&#160;&#160;<a class="el" href="sim_2subsystems_2actuators_2servos__4015__MAT__hw_8h.html#ae069796b3f364840f106cfdeb917cb19">Actuator4015Set</a>(_x,_y)</td></tr>
 <tr class="memitem:ab68f28871d18c17e7e70ae63277d37c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#ab68f28871d18c17e7e70ae63277d37c2">ActuatorsDefaultInit</a>()&#160;&#160;&#160;<a class="el" href="sim_2subsystems_2actuators_2servos__4015__MAT__hw_8h.html#afefd82bdd8cb0b9652bb54ca6b3beb3a">Actuators4015Init</a>()</td></tr>
@@ -148,15 +145,15 @@ Macros</h2></td></tr>
 <tr class="memitem:a9554c21ac4db9f0b888079de6c70521a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#a9554c21ac4db9f0b888079de6c70521a">PPM_CCR_CRR</a>&#160;&#160;&#160;<a class="el" href="lpcTMR_8h.html#a5eec1c942db3f69ded0ba0fd3046d51a">TCCR_CR2_R</a></td></tr>
 <tr class="memitem:a527cf6cfbed24e043ed4ee710baed3f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#a527cf6cfbed24e043ed4ee710baed3f1">PPM_CCR_CRI</a>&#160;&#160;&#160;<a class="el" href="lpcTMR_8h.html#ac8de305aad560d5668b182aef40a978e">TCCR_CR2_I</a></td></tr>
 <tr class="memitem:a9b6dd90e1f8fb64d936679da4a87e7df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#a9b6dd90e1f8fb64d936679da4a87e7df">PPM_CR</a>&#160;&#160;&#160;<a class="el" href="LPC21xx_8h.html#aa76826c11cd21e377f06125859f81e24">T0CR2</a></td></tr>
-<tr class="memitem:a5cbcaa568e20fcd4cc9325927d370860"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#a5cbcaa568e20fcd4cc9325927d370860">ADC_0</a>&#160;&#160;&#160;<a class="el" href="stm32_2mcu__periph_2adc__arch_8h.html#a5bd27acb42df1cd458049e5b88262c59">AdcBank0</a>(3)</td></tr>
-<tr class="memitem:a3d767e16f12a6ee542079f3c9677192c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#a3d767e16f12a6ee542079f3c9677192c">ADC_1</a>&#160;&#160;&#160;<a class="el" href="stm32_2mcu__periph_2adc__arch_8h.html#a5bd27acb42df1cd458049e5b88262c59">AdcBank0</a>(2)</td></tr>
-<tr class="memitem:a01ac9d2f00660408bcc8c809020904f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#a01ac9d2f00660408bcc8c809020904f9">ADC_2</a>&#160;&#160;&#160;<a class="el" href="stm32_2mcu__periph_2adc__arch_8h.html#a5bd27acb42df1cd458049e5b88262c59">AdcBank0</a>(1)</td></tr>
-<tr class="memitem:a474279f28350114950d862951d72de66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#a474279f28350114950d862951d72de66">ADC_3</a>&#160;&#160;&#160;<a class="el" href="stm32_2mcu__periph_2adc__arch_8h.html#a5bd27acb42df1cd458049e5b88262c59">AdcBank0</a>(4)</td></tr>
-<tr class="memitem:a1d0bc863ec3717e7ed493491c0f82b24"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#a1d0bc863ec3717e7ed493491c0f82b24">ADC_4</a>&#160;&#160;&#160;<a class="el" href="stm32_2mcu__periph_2adc__arch_8h.html#a4be463338f4ffd660855af22f0525673">AdcBank1</a>(7)</td></tr>
-<tr class="memitem:a482794539449d37c65de123d0d629acb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#a482794539449d37c65de123d0d629acb">ADC_5</a>&#160;&#160;&#160;<a class="el" href="stm32_2mcu__periph_2adc__arch_8h.html#a4be463338f4ffd660855af22f0525673">AdcBank1</a>(3)</td></tr>
-<tr class="memitem:a11092789cb59e14976636d00760ed45f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#a11092789cb59e14976636d00760ed45f">ADC_6</a>&#160;&#160;&#160;<a class="el" href="stm32_2mcu__periph_2adc__arch_8h.html#a4be463338f4ffd660855af22f0525673">AdcBank1</a>(4)</td></tr>
-<tr class="memitem:aa8ade7e32d46ae622ee886a90b1ea9c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#aa8ade7e32d46ae622ee886a90b1ea9c8">ADC_7</a>&#160;&#160;&#160;<a class="el" href="stm32_2mcu__periph_2adc__arch_8h.html#a4be463338f4ffd660855af22f0525673">AdcBank1</a>(5)</td></tr>
-<tr class="memitem:ad5a6636ee170fccf62a748fc72374d3b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#ad5a6636ee170fccf62a748fc72374d3b">ADC_CHANNEL_VSUPPLY</a>&#160;&#160;&#160;<a class="el" href="stm32_2mcu__periph_2adc__arch_8h.html#a4be463338f4ffd660855af22f0525673">AdcBank1</a>(6)</td></tr>
+<tr class="memitem:a5cbcaa568e20fcd4cc9325927d370860"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#a5cbcaa568e20fcd4cc9325927d370860">ADC_0</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2adc__arch_8h.html#a5bd27acb42df1cd458049e5b88262c59">AdcBank0</a>(3)</td></tr>
+<tr class="memitem:a3d767e16f12a6ee542079f3c9677192c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#a3d767e16f12a6ee542079f3c9677192c">ADC_1</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2adc__arch_8h.html#a5bd27acb42df1cd458049e5b88262c59">AdcBank0</a>(2)</td></tr>
+<tr class="memitem:a01ac9d2f00660408bcc8c809020904f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#a01ac9d2f00660408bcc8c809020904f9">ADC_2</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2adc__arch_8h.html#a5bd27acb42df1cd458049e5b88262c59">AdcBank0</a>(1)</td></tr>
+<tr class="memitem:a474279f28350114950d862951d72de66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#a474279f28350114950d862951d72de66">ADC_3</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2adc__arch_8h.html#a5bd27acb42df1cd458049e5b88262c59">AdcBank0</a>(4)</td></tr>
+<tr class="memitem:a1d0bc863ec3717e7ed493491c0f82b24"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#a1d0bc863ec3717e7ed493491c0f82b24">ADC_4</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2adc__arch_8h.html#a4be463338f4ffd660855af22f0525673">AdcBank1</a>(7)</td></tr>
+<tr class="memitem:a482794539449d37c65de123d0d629acb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#a482794539449d37c65de123d0d629acb">ADC_5</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2adc__arch_8h.html#a4be463338f4ffd660855af22f0525673">AdcBank1</a>(3)</td></tr>
+<tr class="memitem:a11092789cb59e14976636d00760ed45f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#a11092789cb59e14976636d00760ed45f">ADC_6</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2adc__arch_8h.html#a4be463338f4ffd660855af22f0525673">AdcBank1</a>(4)</td></tr>
+<tr class="memitem:aa8ade7e32d46ae622ee886a90b1ea9c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#aa8ade7e32d46ae622ee886a90b1ea9c8">ADC_7</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2adc__arch_8h.html#a4be463338f4ffd660855af22f0525673">AdcBank1</a>(5)</td></tr>
+<tr class="memitem:ad5a6636ee170fccf62a748fc72374d3b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#ad5a6636ee170fccf62a748fc72374d3b">ADC_CHANNEL_VSUPPLY</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2adc__arch_8h.html#a4be463338f4ffd660855af22f0525673">AdcBank1</a>(6)</td></tr>
 <tr class="memitem:a2934d6c02a6319444fb3e892c72cb8f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#a2934d6c02a6319444fb3e892c72cb8f6">USE_AD1</a></td></tr>
 <tr class="memitem:a23307af3b1535aec88dcd4b1c69d56e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#a23307af3b1535aec88dcd4b1c69d56e0">USE_AD1_6</a></td></tr>
 <tr class="memitem:a94fa241ceca04635f282e09bdd829f5f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tiny__1_81_8h.html#a94fa241ceca04635f282e09bdd829f5f">DefaultVoltageOfAdc</a>(adc)&#160;&#160;&#160;(0.01787109375*adc)</td></tr>
@@ -202,7 +199,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00051">51</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00045">45</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -219,7 +216,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00053">53</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00047">47</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -236,7 +233,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00052">52</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00046">46</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -245,12 +242,12 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ADC_0&#160;&#160;&#160;<a class="el" href="stm32_2mcu__periph_2adc__arch_8h.html#a5bd27acb42df1cd458049e5b88262c59">AdcBank0</a>(3)</td>
+          <td class="memname">#define ADC_0&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2adc__arch_8h.html#a5bd27acb42df1cd458049e5b88262c59">AdcBank0</a>(3)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00077">77</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00071">71</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -259,12 +256,12 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ADC_1&#160;&#160;&#160;<a class="el" href="stm32_2mcu__periph_2adc__arch_8h.html#a5bd27acb42df1cd458049e5b88262c59">AdcBank0</a>(2)</td>
+          <td class="memname">#define ADC_1&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2adc__arch_8h.html#a5bd27acb42df1cd458049e5b88262c59">AdcBank0</a>(2)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00085">85</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00079">79</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -273,12 +270,12 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ADC_2&#160;&#160;&#160;<a class="el" href="stm32_2mcu__periph_2adc__arch_8h.html#a5bd27acb42df1cd458049e5b88262c59">AdcBank0</a>(1)</td>
+          <td class="memname">#define ADC_2&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2adc__arch_8h.html#a5bd27acb42df1cd458049e5b88262c59">AdcBank0</a>(1)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00094">94</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00088">88</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -287,12 +284,12 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ADC_3&#160;&#160;&#160;<a class="el" href="stm32_2mcu__periph_2adc__arch_8h.html#a5bd27acb42df1cd458049e5b88262c59">AdcBank0</a>(4)</td>
+          <td class="memname">#define ADC_3&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2adc__arch_8h.html#a5bd27acb42df1cd458049e5b88262c59">AdcBank0</a>(4)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00102">102</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00096">96</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -301,12 +298,12 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ADC_4&#160;&#160;&#160;<a class="el" href="stm32_2mcu__periph_2adc__arch_8h.html#a4be463338f4ffd660855af22f0525673">AdcBank1</a>(7)</td>
+          <td class="memname">#define ADC_4&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2adc__arch_8h.html#a4be463338f4ffd660855af22f0525673">AdcBank1</a>(7)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00110">110</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00104">104</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -315,12 +312,12 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ADC_5&#160;&#160;&#160;<a class="el" href="stm32_2mcu__periph_2adc__arch_8h.html#a4be463338f4ffd660855af22f0525673">AdcBank1</a>(3)</td>
+          <td class="memname">#define ADC_5&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2adc__arch_8h.html#a4be463338f4ffd660855af22f0525673">AdcBank1</a>(3)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00118">118</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00112">112</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -329,12 +326,12 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ADC_6&#160;&#160;&#160;<a class="el" href="stm32_2mcu__periph_2adc__arch_8h.html#a4be463338f4ffd660855af22f0525673">AdcBank1</a>(4)</td>
+          <td class="memname">#define ADC_6&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2adc__arch_8h.html#a4be463338f4ffd660855af22f0525673">AdcBank1</a>(4)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00126">126</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00120">120</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -343,12 +340,12 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ADC_7&#160;&#160;&#160;<a class="el" href="stm32_2mcu__periph_2adc__arch_8h.html#a4be463338f4ffd660855af22f0525673">AdcBank1</a>(5)</td>
+          <td class="memname">#define ADC_7&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2adc__arch_8h.html#a4be463338f4ffd660855af22f0525673">AdcBank1</a>(5)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00134">134</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00128">128</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -357,12 +354,12 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ADC_CHANNEL_VSUPPLY&#160;&#160;&#160;<a class="el" href="stm32_2mcu__periph_2adc__arch_8h.html#a4be463338f4ffd660855af22f0525673">AdcBank1</a>(6)</td>
+          <td class="memname">#define ADC_CHANNEL_VSUPPLY&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2adc__arch_8h.html#a4be463338f4ffd660855af22f0525673">AdcBank1</a>(6)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00144">144</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00138">138</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -390,7 +387,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00050">50</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00044">44</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -408,7 +405,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00151">151</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00145">145</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -482,34 +479,6 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7dfa5391e683db824c2a546dd5d00746"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define LED_3_BANK&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00044">44</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5ea98da36d05b171b54c342bcf4a35f7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define LED_3_PIN&#160;&#160;&#160;11</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00045">45</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="af1e0361313b85ea3850e3d83b185d639"></a>
 <div class="memitem">
 <div class="memproto">
@@ -520,7 +489,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00170">170</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00164">164</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -534,7 +503,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00166">166</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00160">160</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -548,7 +517,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00167">167</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00161">161</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -562,7 +531,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00168">168</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00162">162</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -576,7 +545,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00169">169</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00163">163</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -590,7 +559,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00171">171</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00165">165</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -650,17 +619,17 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3a5cfe68fa39b534d190c7bfaa6d8e33"></a>
+<a class="anchor" id="a76069dd8b39c52bab9027c808ad505a9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define POWER_SWITCH_LED&#160;&#160;&#160;3</td>
+          <td class="memname">#define POWER_SWITCH_GPIO&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#ac485358099728ddae050db37924dd6b7">GPIOA</a>,<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#ac376b1c124378935df7b3c171b2bef35">GPIO11</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00047">47</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00041">41</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -674,7 +643,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00070">70</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00064">64</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -688,7 +657,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00072">72</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00066">66</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -702,7 +671,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00071">71</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00065">65</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -716,7 +685,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00073">73</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00067">67</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -730,7 +699,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00069">69</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00063">63</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -744,7 +713,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00066">66</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00060">60</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -758,7 +727,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00068">68</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00062">62</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -772,7 +741,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00067">67</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00061">61</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -786,7 +755,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00056">56</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00050">50</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -800,7 +769,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00057">57</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00051">51</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -814,7 +783,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00059">59</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00053">53</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -828,7 +797,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00058">58</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00052">52</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -842,7 +811,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00061">61</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00055">55</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -856,7 +825,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00063">63</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00057">57</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -870,7 +839,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00162">162</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00156">156</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -884,7 +853,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00159">159</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00153">153</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -898,7 +867,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00160">160</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00154">154</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -912,7 +881,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00161">161</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00155">155</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -926,7 +895,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00163">163</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00157">157</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -940,7 +909,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00154">154</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00148">148</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -954,7 +923,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00155">155</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00149">149</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -968,7 +937,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00156">156</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00150">150</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -982,7 +951,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00157">157</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00151">151</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -996,7 +965,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00153">153</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00147">147</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -1010,7 +979,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00146">146</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00140">140</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -1024,7 +993,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00148">148</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
+<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00142">142</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
 
 </div>
 </div>
@@ -1056,27 +1025,13 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4da08b59c725550efa312cf16ecdd77c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define USE_LED_3&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="tiny__1_81_8h_source.html#l00042">42</a> of file <a class="el" href="tiny__1_81_8h_source.html">tiny_1.1.h</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="tiny__1_81_8h.html">tiny_1.1.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:09 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:52 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

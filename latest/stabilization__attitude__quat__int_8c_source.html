@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('stabilization__attitude__quat__int_8c_
 <div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="stabilization__attitude__quat__int_8c.html#af833bed099e96bd96fe397dfdb5049b3">   65</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GAIN_PRESCALER_D 48</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno"><a class="code" href="stabilization__attitude__quat__int_8c.html#ac66f764f58e6484be051c4c0214bc60d">   66</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GAIN_PRESCALER_I 48</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#if DOWNLINK</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#if PERIODIC_TELEMETRY</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code).">subsystems/datalink/telemetry.h</a>&quot;</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> send_att(<span class="keywordtype">void</span>) { <span class="comment">//FIXME really use this message here ?</span></div>
@@ -233,7 +233,7 @@ $(document).ready(function(){initNavTree('stabilization__attitude__quat__int_8c_
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <a class="code" href="pprz__algebra__int_8h.html#a90a76ea9c292e6d8336e1b2250141528">INT32_QUAT_ZERO</a>( <a class="code" href="stabilization__attitude__quat__float_8c.html#a87a434e9e144116b70f4b5f5edd58052">stabilization_att_sum_err_quat</a> );</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <a class="code" href="pprz__algebra__int_8h.html#ae50c9d57fd75689c678e80a05be9ec1b">INT_EULERS_ZERO</a>( <a class="code" href="stabilization__attitude__common__float_8h.html#ad3a90f9a260aaff45b749c9939422783">stabilization_att_sum_err</a> );</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#if DOWNLINK</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#if PERIODIC_TELEMETRY</span></div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor"></span>  <a class="code" href="telemetry_8c.html#abb4aa9b3c0c8d93e1372de5da86de828" title="Register a telemetry callback function.">register_periodic_telemetry</a>(DefaultPeriodic, <span class="stringliteral">&quot;STAB_ATTITUDE&quot;</span>, send_att);</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <a class="code" href="telemetry_8c.html#abb4aa9b3c0c8d93e1372de5da86de828" title="Register a telemetry callback function.">register_periodic_telemetry</a>(DefaultPeriodic, <span class="stringliteral">&quot;STAB_ATTITUDE_REF&quot;</span>, send_att_ref);</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <a class="code" href="telemetry_8c.html#abb4aa9b3c0c8d93e1372de5da86de828" title="Register a telemetry callback function.">register_periodic_telemetry</a>(DefaultPeriodic, <span class="stringliteral">&quot;AHRS_REF_QUAT&quot;</span>, send_ahrs_ref_quat);</div>
@@ -380,12 +380,12 @@ $(document).ready(function(){initNavTree('stabilization__attitude__quat__int_8c_
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  BoundAbs(<a class="code" href="stabilization_8c.html#a7db6cb929d989e142cf136ac4af10add" title="Stabilization commands.">stabilization_cmd</a>[COMMAND_YAW], <a class="code" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a>);</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;}</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
-<div class="line"><a name="l00278"></a><span class="lineno"><a class="code" href="stabilization__attitude__quat__int_8c.html#a147b1b8bfdde52f82d0829ce748bf1e9">  278</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#a147b1b8bfdde52f82d0829ce748bf1e9">stabilization_attitude_read_rc</a>(bool_t in_flight) {</div>
+<div class="line"><a name="l00278"></a><span class="lineno"><a class="code" href="stabilization__attitude__quat__int_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc">  278</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#add34cd878dfdd9fd4d0912a06fbc58bc">stabilization_attitude_read_rc</a>(bool_t in_flight, bool_t in_carefree, bool_t coordinated_turn) {</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  <span class="keyword">struct </span><a class="code" href="structFloatQuat.html" title="Roation quaternion.">FloatQuat</a> q_sp;</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="preprocessor">#if USE_EARTH_BOUND_RC_SETPOINT</span></div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="preprocessor"></span>  <a class="code" href="stabilization__attitude__rc__setpoint_8c.html#aba62c9232f5603a1c4f20154c8e45b07">stabilization_attitude_read_rc_setpoint_quat_earth_bound_f</a>(&amp;q_sp, in_flight);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="preprocessor"></span>  <a class="code" href="stabilization__attitude__rc__setpoint_8c.html#a2c7e084c171f2656b071f20895ce2ce0">stabilization_attitude_read_rc_setpoint_quat_earth_bound_f</a>(&amp;q_sp, in_flight, in_carefree, coordinated_turn);</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="preprocessor"></span>  <a class="code" href="stabilization__attitude__rc__setpoint_8c.html#a76ee04bb23d6f8df9a998e8681af384d">stabilization_attitude_read_rc_setpoint_quat_f</a>(&amp;q_sp, in_flight);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="preprocessor"></span>  <a class="code" href="stabilization__attitude__rc__setpoint_8c.html#a9d0b7ad4c9f5c936c3f06910ac5d0185" title="Read attitude setpoint from RC as quaternion Interprets the stick positions as axes.">stabilization_attitude_read_rc_setpoint_quat_f</a>(&amp;q_sp, in_flight, in_carefree, coordinated_turn);</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="preprocessor"></span>  <a class="code" href="pprz__algebra_8h.html#a9298838a190422950794f95df4762d7e">QUAT_BFP_OF_REAL</a>(<a class="code" href="stabilization__attitude__ref__float_8h.html#a8a7faa82a4a14113987c600d7e38d836">stab_att_sp_quat</a>, q_sp);</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;}</div>
@@ -395,7 +395,7 @@ $(document).ready(function(){initNavTree('stabilization__attitude__quat__int_8c_
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_d1b81cc433edb6118e3c3e3bc7700be0.html">stabilization</a></li><li class="navelem"><a class="el" href="stabilization__attitude__quat__int_8c.html">stabilization_attitude_quat_int.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

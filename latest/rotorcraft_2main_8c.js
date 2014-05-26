@@ -3,6 +3,7 @@ var rotorcraft_2main_8c =
     [ "ABI_C", "rotorcraft_2main_8c.html#a1d9ee6657ac8c3da096a12fec464d803", null ],
     [ "BARO_PERIODIC_FREQUENCY", "rotorcraft_2main_8c.html#a124e8be962a54f3f7a0957fa34ec5876", null ],
     [ "MODULES_C", "rotorcraft_2main_8c.html#ac3c586d9cc5d614d34061b3844a1e45b", null ],
+    [ "RC_LOST_MODE", "rotorcraft_2main_8c.html#ad2d4961da684eacdb42ba6907edc216d", null ],
     [ "failsafe_check", "rotorcraft_2main_8c.html#a6266a73fe8c0512f1de72cea96e5110b", null ],
     [ "handle_periodic_tasks", "rotorcraft_2main_8c.html#acfa2a521a46d9beb8a3fa77bb0c9e407", null ],
     [ "main", "rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe", null ],

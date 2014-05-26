@@ -19,7 +19,7 @@ var dir_3f7617cb4a5e4fe5cc816b7b3bbdea3a =
     [ "ssp_hw.h", "ssp__hw_8h.html", "ssp__hw_8h" ],
     [ "tacho_mb.c", "tacho__mb_8c.html", "tacho__mb_8c" ],
     [ "tacho_mb.h", "tacho__mb_8h.html", "tacho__mb_8h" ],
-    [ "uart_tunnel.c", "uart__tunnel_8c.html", "uart__tunnel_8c" ],
+    [ "uart_tunnel.c", "lpc21_2uart__tunnel_8c.html", "lpc21_2uart__tunnel_8c" ],
     [ "usb_msc_hw.c", "usb__msc__hw_8c.html", "usb__msc__hw_8c" ],
     [ "usb_msc_hw.h", "usb__msc__hw_8h.html", "usb__msc__hw_8h" ],
     [ "usb_ser_hw.c", "usb__ser__hw_8c.html", "usb__ser__hw_8c" ],

@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -111,6 +111,9 @@ $(document).ready(function(){initNavTree('structspi__periph.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>SPI peripheral structure.  
+ <a href="structspi__periph.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="spi_8h_source.html">spi.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for spi_periph:</div>
@@ -119,7 +122,7 @@ $(document).ready(function(){initNavTree('structspi__periph.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structspi__periph__coll__graph.png" border="0" usemap="#spi__periph_coll__map" alt="Collaboration graph"/></div>
 <map name="spi__periph_coll__map" id="spi__periph_coll__map">
-<area shape="rect" id="node2" href="structspi__transaction.html" title="SPI transaction structure." alt="" coords="5,7,115,35"/></map>
+<area shape="rect" id="node2" href="structspi__transaction.html" title="SPI transaction structure." alt="" coords="5,7,123,35"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-attribs"></a>
@@ -139,8 +142,9 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:acd3194574f680b35ece651e784c4327a"><td class="mdescLeft">&#160;</td><td class="mdescRight">control for stop/resume of the fifo  <a href="#acd3194574f680b35ece651e784c4327a"></a><br/></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00163">163</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<div class="textblock"><p>SPI peripheral structure. </p>
+
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00168">168</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 </div><h2>Field Documentation</h2>
 <a class="anchor" id="a8b32489ec5498094c97fd4d31209ab47"></a>
 <div class="memitem">
@@ -152,9 +156,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00173">173</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00178">178</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01067">process_rx_dma_interrupt()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01383">process_slave_rx_dma_interrupt()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01143">process_tx_dma_interrupt()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00397">spi0_arch_init()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00490">spi_arch_int_disable()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00479">spi_arch_int_enable()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00536">spi_lock()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00548">spi_resume()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01334">spi_slave_register()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01311">spi_slave_set_config()</a>, and <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00515">spi_start_dma_transaction()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01068">process_rx_dma_interrupt()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01384">process_slave_rx_dma_interrupt()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01144">process_tx_dma_interrupt()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00397">spi0_arch_init()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00495">spi_arch_int_disable()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00484">spi_arch_int_enable()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00536">spi_lock()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00548">spi_resume()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01335">spi_slave_register()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01312">spi_slave_set_config()</a>, and <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00520">spi_start_dma_transaction()</a>.</p>
 
 </div>
 </div>
@@ -168,7 +172,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00174">174</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00179">179</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 
 <p>Referenced by <a class="el" href="spi_8c_source.html#l00074">spi_init()</a>, and <a class="el" href="spi_8c_source.html#l00127">spi_slave_init()</a>.</p>
 
@@ -184,9 +188,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00172">172</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00177">177</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01067">process_rx_dma_interrupt()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01383">process_slave_rx_dma_interrupt()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01143">process_tx_dma_interrupt()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00397">spi0_arch_init()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01334">spi_slave_register()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01311">spi_slave_set_config()</a>, and <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00515">spi_start_dma_transaction()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01068">process_rx_dma_interrupt()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01384">process_slave_rx_dma_interrupt()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01144">process_tx_dma_interrupt()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00397">spi0_arch_init()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01335">spi_slave_register()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01312">spi_slave_set_config()</a>, and <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00520">spi_start_dma_transaction()</a>.</p>
 
 </div>
 </div>
@@ -200,7 +204,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00171">171</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00176">176</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 
 </div>
 </div>
@@ -216,9 +220,9 @@ Data Fields</h2></td></tr>
 
 <p>internal state of the peripheral </p>
 
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00169">169</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00174">174</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 
-<p>Referenced by <a class="el" href="spi_8c_source.html#l00074">spi_init()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00496">spi_next_transaction()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00548">spi_resume()</a>, <a class="el" href="spi_8c_source.html#l00127">spi_slave_init()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00648">spi_slave_register()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00515">spi_start_dma_transaction()</a>, and <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00470">spi_submit()</a>.</p>
+<p>Referenced by <a class="el" href="spi_8c_source.html#l00074">spi_init()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00501">spi_next_transaction()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00548">spi_resume()</a>, <a class="el" href="spi_8c_source.html#l00127">spi_slave_init()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00648">spi_slave_register()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00520">spi_start_dma_transaction()</a>, and <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00470">spi_submit()</a>.</p>
 
 </div>
 </div>
@@ -234,9 +238,9 @@ Data Fields</h2></td></tr>
 
 <p>control for stop/resume of the fifo </p>
 
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00176">176</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00181">181</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 
-<p>Referenced by <a class="el" href="spi_8c_source.html#l00074">spi_init()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00536">spi_lock()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00496">spi_next_transaction()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00548">spi_resume()</a>, <a class="el" href="spi_8c_source.html#l00127">spi_slave_init()</a>, and <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00470">spi_submit()</a>.</p>
+<p>Referenced by <a class="el" href="spi_8c_source.html#l00074">spi_init()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00536">spi_lock()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00501">spi_next_transaction()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00548">spi_resume()</a>, <a class="el" href="spi_8c_source.html#l00127">spi_slave_init()</a>, and <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00470">spi_submit()</a>.</p>
 
 </div>
 </div>
@@ -252,9 +256,9 @@ Data Fields</h2></td></tr>
 
 <p>circular buffer holding transactions </p>
 
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00165">165</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00170">170</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01067">process_rx_dma_interrupt()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01383">process_slave_rx_dma_interrupt()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01143">process_tx_dma_interrupt()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00496">spi_next_transaction()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00548">spi_resume()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00648">spi_slave_register()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00671">spi_slave_wait()</a>, and <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00470">spi_submit()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01068">process_rx_dma_interrupt()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01384">process_slave_rx_dma_interrupt()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01144">process_tx_dma_interrupt()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00501">spi_next_transaction()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00548">spi_resume()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00648">spi_slave_register()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00671">spi_slave_wait()</a>, and <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00470">spi_submit()</a>.</p>
 
 </div>
 </div>
@@ -268,9 +272,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00167">167</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00172">172</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01067">process_rx_dma_interrupt()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01383">process_slave_rx_dma_interrupt()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01143">process_tx_dma_interrupt()</a>, <a class="el" href="spi_8c_source.html#l00074">spi_init()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00496">spi_next_transaction()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00548">spi_resume()</a>, <a class="el" href="spi_8c_source.html#l00127">spi_slave_init()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00671">spi_slave_wait()</a>, and <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00470">spi_submit()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01068">process_rx_dma_interrupt()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01384">process_slave_rx_dma_interrupt()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01144">process_tx_dma_interrupt()</a>, <a class="el" href="spi_8c_source.html#l00074">spi_init()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00501">spi_next_transaction()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00548">spi_resume()</a>, <a class="el" href="spi_8c_source.html#l00127">spi_slave_init()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00671">spi_slave_wait()</a>, and <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00470">spi_submit()</a>.</p>
 
 </div>
 </div>
@@ -284,9 +288,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00166">166</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00171">171</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 
-<p>Referenced by <a class="el" href="spi_8c_source.html#l00074">spi_init()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00496">spi_next_transaction()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00548">spi_resume()</a>, <a class="el" href="spi_8c_source.html#l00127">spi_slave_init()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00648">spi_slave_register()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00671">spi_slave_wait()</a>, and <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00470">spi_submit()</a>.</p>
+<p>Referenced by <a class="el" href="spi_8c_source.html#l00074">spi_init()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00501">spi_next_transaction()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00548">spi_resume()</a>, <a class="el" href="spi_8c_source.html#l00127">spi_slave_init()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00648">spi_slave_register()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00671">spi_slave_wait()</a>, and <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00470">spi_submit()</a>.</p>
 
 </div>
 </div>
@@ -300,7 +304,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00170">170</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00175">175</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 
 </div>
 </div>
@@ -313,7 +317,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structspi__periph.html">spi_periph</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:12 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:15 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

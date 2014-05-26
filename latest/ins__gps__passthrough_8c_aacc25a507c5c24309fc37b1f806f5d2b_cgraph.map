@@ -1,4 +1,9 @@
 <map id="ins_update_gps" name="ins_update_gps">
-<area shape="rect" id="node3" href="$group__state__position.html#gac6c73e42fc6b5891cb23454ad9c68c92" title="Set position from UTM coordinates (float)." alt="" coords="168,5,323,33"/>
-<area shape="rect" id="node5" href="$group__state__velocity.html#gae6549b15cd961047c89481ab2d87171f" title="Set ground speed in local NED coordinates (float)." alt="" coords="175,55,316,83"/>
+<area shape="rect" id="node3" href="$ins__alt__float_8c.html#a14cb66a86c67d8b9216a8c12f58c311b" title="Reset the geographic reference to the current GPS fix." alt="" coords="179,5,336,33"/>
+<area shape="rect" id="node5" href="$pprz__geodetic__int_8c.html#a9307e97057d51e781def8a03dea804f6" title="Convert a point from ECEF to local NED." alt="" coords="184,55,331,83"/>
+<area shape="rect" id="node9" href="$pprz__geodetic__int_8c.html#ab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED." alt="" coords="187,106,328,134"/>
+<area shape="rect" id="node13" href="$group__state__position.html#ga83bd9c7ef9bfff9ff41a5d290be52438" title="Set position from local NED coordinates (int)." alt="" coords="176,157,339,185"/>
+<area shape="rect" id="node15" href="$group__state__velocity.html#gaa6cbe14043ae394f4994ac02bee85644" title="Set ground speed in local NED coordinates (int)." alt="" coords="180,207,335,235"/>
+<area shape="rect" id="node7" href="$pprz__geodetic__int_8c.html#a85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="388,55,535,83"/>
+<area shape="rect" id="node11" href="$pprz__geodetic__int_8c.html#af0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU." alt="" coords="391,106,532,134"/>
 </map>

@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('ahrs__sim_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__sim_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2ahrs_2ahrs__sim_8c" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2ahrs_2ahrs__sim_8c" id="sw_2airborne_2subsystems_2ahrs_2ahrs__sim_8c">
-<area shape="rect" id="node3" href="ahrs_8h.html" title="Attitude and Heading Reference System interface." alt="" coords="569,193,700,221"/><area shape="rect" id="node23" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="73,441,241,469"/><area shape="rect" id="node51" href="ahrs__sim_8h.html" title="Interface to set the AHRS from the simple OCaml simulator." alt="" coords="616,99,765,143"/><area shape="rect" id="node7" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="660,441,817,469"/><area shape="rect" id="node29" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="389,270,451,298"/><area shape="rect" id="node10" href="pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="209,518,348,546"/><area shape="rect" id="node17" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="776,518,909,546"/><area shape="rect" id="node33" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="573,347,707,391"/><area shape="rect" id="node39" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="195,347,328,391"/><area shape="rect" id="node44" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversion." alt="" coords="403,347,549,391"/><area shape="rect" id="node35" href="pprz__geodetic_8h.html" title="pprz_geodetic.h" alt="" coords="403,441,515,469"/></map>
+<area shape="rect" id="node3" href="ahrs_8h.html" title="Attitude and Heading Reference System interface." alt="" coords="600,193,741,221"/><area shape="rect" id="node23" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="63,441,252,469"/><area shape="rect" id="node51" href="ahrs__sim_8h.html" title="Interface to set the AHRS from the simple OCaml simulator." alt="" coords="648,99,811,143"/><area shape="rect" id="node7" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="681,441,860,469"/><area shape="rect" id="node29" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="407,270,473,298"/><area shape="rect" id="node10" href="pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="204,518,359,546"/><area shape="rect" id="node17" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="808,518,957,546"/><area shape="rect" id="node33" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="605,347,755,391"/><area shape="rect" id="node39" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="195,347,344,391"/><area shape="rect" id="node44" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversion." alt="" coords="419,347,581,391"/><area shape="rect" id="node35" href="pprz__geodetic_8h.html" title="pprz_geodetic.h" alt="" coords="419,441,541,469"/></map>
 </div>
 </div>
 <p><a href="ahrs__sim_8c_source.html">Go to the source code of this file.</a></p>
@@ -138,12 +138,6 @@ Functions</h2></td></tr>
 <tr class="memdesc:a81e17b09f47068c02c345da1523f589b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aligns the AHRS.  <a href="#a81e17b09f47068c02c345da1523f589b"></a><br/></td></tr>
 <tr class="memitem:af8f4df7ae38ca5b239eac30e7d259e46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__sim_8c.html#af8f4df7ae38ca5b239eac30e7d259e46">ahrs_propagate</a> (void)</td></tr>
 <tr class="memdesc:af8f4df7ae38ca5b239eac30e7d259e46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Propagation.  <a href="#af8f4df7ae38ca5b239eac30e7d259e46"></a><br/></td></tr>
-<tr class="memitem:a8bf83860498b05e7e94484cdcbcb1b7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__sim_8c.html#a8bf83860498b05e7e94484cdcbcb1b7a">ahrs_update_accel</a> (void)</td></tr>
-<tr class="memdesc:a8bf83860498b05e7e94484cdcbcb1b7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update AHRS state with accerleration measurements.  <a href="#a8bf83860498b05e7e94484cdcbcb1b7a"></a><br/></td></tr>
-<tr class="memitem:a781832a9119845d31bda0fc8a8bb8bf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__sim_8c.html#a781832a9119845d31bda0fc8a8bb8bf3">ahrs_update_mag</a> (void)</td></tr>
-<tr class="memdesc:a781832a9119845d31bda0fc8a8bb8bf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update AHRS state with magnetometer measurements.  <a href="#a781832a9119845d31bda0fc8a8bb8bf3"></a><br/></td></tr>
-<tr class="memitem:a0156f6669675c216bbcb413ea1879960"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__sim_8c.html#a0156f6669675c216bbcb413ea1879960">ahrs_update_gps</a> (void)</td></tr>
-<tr class="memdesc:a0156f6669675c216bbcb413ea1879960"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update AHRS state with GPS measurements.  <a href="#a0156f6669675c216bbcb413ea1879960"></a><br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -194,7 +188,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__sim_8c_a81e17b09f47068c02c345da1523f589b_cgraph.png" border="0" usemap="#ahrs__sim_8c_a81e17b09f47068c02c345da1523f589b_cgraph" alt=""/></div>
 <map name="ahrs__sim_8c_a81e17b09f47068c02c345da1523f589b_cgraph" id="ahrs__sim_8c_a81e17b09f47068c02c345da1523f589b_cgraph">
-<area shape="rect" id="node3" href="ahrs__sim_8c.html#a631ce4de5e99850af24482335a960acf" title="update_ahrs_from_sim" alt="" coords="136,30,291,58"/><area shape="rect" id="node5" href="group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float)." alt="" coords="339,5,525,33"/><area shape="rect" id="node9" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float)." alt="" coords="360,55,504,83"/><area shape="rect" id="node7" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="573,5,723,33"/></map>
+<area shape="rect" id="node3" href="ahrs__sim_8c.html#a631ce4de5e99850af24482335a960acf" title="update_ahrs_from_sim" alt="" coords="143,30,311,58"/><area shape="rect" id="node5" href="group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float)." alt="" coords="361,5,559,33"/><area shape="rect" id="node9" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float)." alt="" coords="383,55,537,83"/><area shape="rect" id="node7" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="608,5,771,33"/></map>
 </div>
 </p>
 
@@ -219,18 +213,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__sim_8c_source.html#l00069">69</a> of file <a class="el" href="ahrs__sim_8c_source.html">ahrs_sim.c</a>.</p>
 
-<p>References <a class="el" href="ahrs_8c_source.html#l00030">ahrs</a>, <a class="el" href="ahrs_8h_source.html#l00036">AHRS_RUNNING</a>, <a class="el" href="jsbsim__ahrs_8c_source.html#l00017">ahrs_sim_available</a>, <a class="el" href="ahrs_8h_source.html#l00035">AHRS_UNINIT</a>, <a class="el" href="imu__chimu_8h_source.html#l00048">CHIMU_BROADCAST</a>, <a class="el" href="imu__chimu_8c_source.html#l00083">CHIMU_Checksum()</a>, <a class="el" href="imu__chimu_8c_source.html#l00109">CHIMU_Init()</a>, <a class="el" href="imu__chimu_8h_source.html#l00047">CHIMU_STX</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="arch_2sim_2modules_2ins_2ins__arduimu_8c_source.html#l00015">ins_pitch_neutral</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00067">INS_PITCH_NEUTRAL_DEFAULT</a>, <a class="el" href="arch_2sim_2modules_2ins_2ins__arduimu_8c_source.html#l00014">ins_roll_neutral</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00064">INS_ROLL_NEUTRAL_DEFAULT</a>, <a class="el" href="ins__module_8h_source.html#l00085">InsSend</a>, <a class="el" href="ins__module_8h_source.html#l00083">InsSend1</a>, <a class="el" href="imu__chimu_8h_source.html#l00060">MSG09_ESTIMATOR</a>, <a class="el" href="imu__chimu_8h_source.html#l00067">MSG10_UARTSETTINGS</a>, <a class="el" href="ins__module_8h.html#a664a8d539ee7893c78e101c06152fc18">new_ins_attitude</a>, and <a class="el" href="ahrs_8h_source.html#l00045">Ahrs::status</a>.</p>
-
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__sim_8c_aa3721663c9df7c7af5613486a3566afb_cgraph.png" border="0" usemap="#ahrs__sim_8c_aa3721663c9df7c7af5613486a3566afb_cgraph" alt=""/></div>
-<map name="ahrs__sim_8c_aa3721663c9df7c7af5613486a3566afb_cgraph" id="ahrs__sim_8c_aa3721663c9df7c7af5613486a3566afb_cgraph">
-<area shape="rect" id="node3" href="imu__chimu_8c.html#a70dfa9eb8b0dff840f01869418c7de61" title="CHIMU_Checksum" alt="" coords="127,5,260,33"/><area shape="rect" id="node7" href="imu__chimu_8c.html#a8f9d1eeb69a4253543b66c06e258086e" title="CHIMU_Init" alt="" coords="148,55,239,83"/><area shape="rect" id="node5" href="imu__chimu_8c.html#a2c788af1398c314b3985546d7177df54" title="UpdateCRC" alt="" coords="309,5,400,33"/></map>
-</div>
-</p>
+<p>References <a class="el" href="ahrs_8c_source.html#l00030">ahrs</a>, <a class="el" href="ahrs_8h_source.html#l00036">AHRS_RUNNING</a>, <a class="el" href="jsbsim__ahrs_8c_source.html#l00017">ahrs_sim_available</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, and <a class="el" href="ahrs_8h_source.html#l00045">Ahrs::status</a>.</p>
 
 </div>
 </div>
@@ -249,98 +232,22 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Propagation. </p>
-<p>Usually integrates the gyro rates to angles. Reads the global <a class="el" href="imu_8h.html#a77b76ed533bc56f50d714f8958dd26cc" title="global IMU state">imu</a> data struct. Needs to be implemented by each AHRS algorithm. </p>
+<p>Usually integrates the gyro rates to angles. Reads the global <a class="el" href="imu_8h.html#a77b76ed533bc56f50d714f8958dd26cc" title="global IMU state">imu</a> data struct. Does nothing if not implemented by specific AHRS algorithm. </p>
 
 <p>Definition at line <a class="el" href="ahrs__sim_8c_source.html#l00090">90</a> of file <a class="el" href="ahrs__sim_8c_source.html">ahrs_sim.c</a>.</p>
 
 <p>References <a class="el" href="jsbsim__ahrs_8c_source.html#l00017">ahrs_sim_available</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, and <a class="el" href="ahrs__sim_8c_source.html#l00054">update_ahrs_from_sim()</a>.</p>
 
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__sim_8c_af8f4df7ae38ca5b239eac30e7d259e46_cgraph.png" border="0" usemap="#ahrs__sim_8c_af8f4df7ae38ca5b239eac30e7d259e46_cgraph" alt=""/></div>
 <map name="ahrs__sim_8c_af8f4df7ae38ca5b239eac30e7d259e46_cgraph" id="ahrs__sim_8c_af8f4df7ae38ca5b239eac30e7d259e46_cgraph">
-<area shape="rect" id="node3" href="ahrs__sim_8c.html#a631ce4de5e99850af24482335a960acf" title="update_ahrs_from_sim" alt="" coords="165,30,320,58"/><area shape="rect" id="node5" href="group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float)." alt="" coords="368,5,555,33"/><area shape="rect" id="node9" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float)." alt="" coords="389,55,533,83"/><area shape="rect" id="node7" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="603,5,752,33"/></map>
+<area shape="rect" id="node3" href="ahrs__sim_8c.html#a631ce4de5e99850af24482335a960acf" title="update_ahrs_from_sim" alt="" coords="177,30,345,58"/><area shape="rect" id="node5" href="group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float)." alt="" coords="396,5,593,33"/><area shape="rect" id="node9" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float)." alt="" coords="417,55,572,83"/><area shape="rect" id="node7" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="643,5,805,33"/></map>
 </div>
 </p>
-
-</div>
-</div>
-<a class="anchor" id="a8bf83860498b05e7e94484cdcbcb1b7a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ahrs_update_accel </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Update AHRS state with accerleration measurements. </p>
-<p>Reads the global <a class="el" href="imu_8h.html#a77b76ed533bc56f50d714f8958dd26cc" title="global IMU state">imu</a> data struct. Needs to be implemented by each AHRS algorithm. </p>
-
-<p>Definition at line <a class="el" href="ahrs__sim_8c_source.html#l00097">97</a> of file <a class="el" href="ahrs__sim_8c_source.html">ahrs_sim.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0156f6669675c216bbcb413ea1879960"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ahrs_update_gps </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Update AHRS state with GPS measurements. </p>
-<p>Reads the global <a class="el" href="gps_8h.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a> data struct. Needs to be implemented by each AHRS algorithm. </p>
-
-<p>Definition at line <a class="el" href="ahrs__sim_8c_source.html#l00103">103</a> of file <a class="el" href="ahrs__sim_8c_source.html">ahrs_sim.c</a>.</p>
-
-<p>References <a class="el" href="imu__chimu_8c_source.html#l00083">CHIMU_Checksum()</a>, <a class="el" href="gps_8h_source.html#l00078">GpsState::fix</a>, <a class="el" href="imu__chimu_8h_source.html#l00113">FloatSwap</a>, <a class="el" href="gps_8c_source.html#l00033">gps</a>, <a class="el" href="gps_8h_source.html#l00043">GPS_FIX_3D</a>, <a class="el" href="ins__module_8h_source.html#l00085">InsSend</a>, and <a class="el" href="gps_8h_source.html#l00071">GpsState::speed_3d</a>.</p>
-
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__sim_8c_a0156f6669675c216bbcb413ea1879960_cgraph.png" border="0" usemap="#ahrs__sim_8c_a0156f6669675c216bbcb413ea1879960_cgraph" alt=""/></div>
-<map name="ahrs__sim_8c_a0156f6669675c216bbcb413ea1879960_cgraph" id="ahrs__sim_8c_a0156f6669675c216bbcb413ea1879960_cgraph">
-<area shape="rect" id="node3" href="imu__chimu_8c.html#a70dfa9eb8b0dff840f01869418c7de61" title="CHIMU_Checksum" alt="" coords="177,5,311,33"/><area shape="rect" id="node5" href="imu__chimu_8c.html#a2c788af1398c314b3985546d7177df54" title="UpdateCRC" alt="" coords="360,5,451,33"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a781832a9119845d31bda0fc8a8bb8bf3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ahrs_update_mag </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Update AHRS state with magnetometer measurements. </p>
-<p>Reads the global <a class="el" href="imu_8h.html#a77b76ed533bc56f50d714f8958dd26cc" title="global IMU state">imu</a> data struct. Needs to be implemented by each AHRS algorithm. </p>
-
-<p>Definition at line <a class="el" href="ahrs__sim_8c_source.html#l00100">100</a> of file <a class="el" href="ahrs__sim_8c_source.html">ahrs_sim.c</a>.</p>
 
 </div>
 </div>
@@ -364,25 +271,25 @@ Variables</h2></td></tr>
 
 <p>Referenced by <a class="el" href="ahrs__sim_8c_source.html#l00078">ahrs_align()</a>, and <a class="el" href="ahrs__sim_8c_source.html#l00090">ahrs_propagate()</a>.</p>
 
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__sim_8c_a631ce4de5e99850af24482335a960acf_cgraph.png" border="0" usemap="#ahrs__sim_8c_a631ce4de5e99850af24482335a960acf_cgraph" alt=""/></div>
 <map name="ahrs__sim_8c_a631ce4de5e99850af24482335a960acf_cgraph" id="ahrs__sim_8c_a631ce4de5e99850af24482335a960acf_cgraph">
-<area shape="rect" id="node3" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float)." alt="" coords="229,5,373,33"/><area shape="rect" id="node5" href="group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float)." alt="" coords="208,55,395,83"/><area shape="rect" id="node7" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="443,55,592,83"/></map>
+<area shape="rect" id="node3" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float)." alt="" coords="247,5,401,33"/><area shape="rect" id="node5" href="group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float)." alt="" coords="225,55,423,83"/><area shape="rect" id="node7" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="472,55,635,83"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__sim_8c_a631ce4de5e99850af24482335a960acf_icgraph.png" border="0" usemap="#ahrs__sim_8c_a631ce4de5e99850af24482335a960acf_icgraph" alt=""/></div>
 <map name="ahrs__sim_8c_a631ce4de5e99850af24482335a960acf_icgraph" id="ahrs__sim_8c_a631ce4de5e99850af24482335a960acf_icgraph">
-<area shape="rect" id="node3" href="ahrs__sim_8c.html#a81e17b09f47068c02c345da1523f589b" title="Aligns the AHRS." alt="" coords="224,5,304,33"/><area shape="rect" id="node5" href="ahrs__sim_8c.html#af8f4df7ae38ca5b239eac30e7d259e46" title="Propagation." alt="" coords="209,55,319,83"/></map>
+<area shape="rect" id="node3" href="ahrs__sim_8c.html#a81e17b09f47068c02c345da1523f589b" title="Aligns the AHRS." alt="" coords="243,5,328,33"/><area shape="rect" id="node5" href="ahrs__sim_8c.html#af8f4df7ae38ca5b239eac30e7d259e46" title="Propagation." alt="" coords="224,55,347,83"/></map>
 </div>
 </p>
 
@@ -517,7 +424,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_46fef683200e96ccf1a2f608d90c4a2d.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__sim_8c.html">ahrs_sim.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:11 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:06 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

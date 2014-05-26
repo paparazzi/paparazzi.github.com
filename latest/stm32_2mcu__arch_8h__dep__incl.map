@@ -1,51 +1,29 @@
 <map id="sw/airborne/arch/stm32/mcu_arch.h" name="sw/airborne/arch/stm32/mcu_arch.h">
-<area shape="rect" id="node3" href="$mcu_8h.html" title="Arch independent mcu ( Micro Controller Unit ) utilities." alt="" coords="4229,99,4357,127"/>
-<area shape="rect" id="node5" href="$lpc21_2mcu__arch_8c.html" title="lpc21 arch dependant microcontroller initialisation functions." alt="" coords="5,185,157,229"/>
-<area shape="rect" id="node7" href="$spi__slave__hs__arch_8c.html" title="Highspeed SPI Slave Interface." alt="" coords="181,177,333,237"/>
-<area shape="rect" id="node9" href="$mag__micromag__fw__hw_8h.html" title="sw/airborne/arch/lpc21\l/modules/sensors/mag_micromag\l_fw_hw.h" alt="" coords="357,177,576,237"/>
-<area shape="rect" id="node11" href="$uart__tunnel_8c.html" title="sw/airborne/arch/lpc21\l/uart_tunnel.c" alt="" coords="600,185,752,229"/>
-<area shape="rect" id="node13" href="$usb__tunnel_8c.html" title="USB tunnel application." alt="" coords="776,185,928,229"/>
-<area shape="rect" id="node15" href="$stm32_2mcu__arch_8c.html" title="stm32 arch dependant microcontroller initialisation functions." alt="" coords="952,185,1109,229"/>
-<area shape="rect" id="node17" href="$test__baro_8c.html" title="sw/airborne/boards\l/booz/test_baro.c" alt="" coords="1133,185,1264,229"/>
-<area shape="rect" id="node19" href="$main__ap_8c.html" title="AP ( AutoPilot ) tasks." alt="" coords="1288,185,1437,229"/>
-<area shape="rect" id="node21" href="$main__fbw_8c.html" title="FBW ( FlyByWire ) process." alt="" coords="1461,185,1611,229"/>
-<area shape="rect" id="node23" href="$rotorcraft_2main_8c.html" title="Rotorcraft main loop." alt="" coords="1635,185,1784,229"/>
-<area shape="rect" id="node25" href="$setup__actuators_8c.html" title="sw/airborne/firmwares\l/setup/setup_actuators.c" alt="" coords="1808,185,1973,229"/>
-<area shape="rect" id="node27" href="$main__demo2_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo2.c" alt="" coords="1997,185,2149,229"/>
-<area shape="rect" id="node29" href="$main__demo3_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo3.c" alt="" coords="2173,185,2325,229"/>
-<area shape="rect" id="node31" href="$main__demo4_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo4.c" alt="" coords="2349,185,2501,229"/>
-<area shape="rect" id="node33" href="$main__demo5_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo5.c" alt="" coords="2525,185,2677,229"/>
-<area shape="rect" id="node35" href="$main__demo6_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo6.c" alt="" coords="2701,185,2853,229"/>
-<area shape="rect" id="node37" href="$lisa__stm__gps__passthrough__main_8c.html" title="sw/airborne/lisa/lisa\l_stm_gps_passthrough\l_main.c" alt="" coords="2877,177,3035,237"/>
-<area shape="rect" id="node39" href="$lisa__stm__passthrough__main_8c.html" title="sw/airborne/lisa/lisa\l_stm_passthrough_main.c" alt="" coords="3059,185,3232,229"/>
-<area shape="rect" id="node41" href="$stm__test__spi__link_8c.html" title="sw/airborne/lisa/stm\l_test_spi_link.c" alt="" coords="3256,185,3395,229"/>
-<area shape="rect" id="node43" href="$hs__gyro_8c.html" title="sw/airborne/lisa/test\l/hs_gyro.c" alt="" coords="3419,185,3557,229"/>
-<area shape="rect" id="node45" href="$lisa__test__actuators__mkk_8c.html" title="sw/airborne/lisa/test\l/lisa_test_actuators_mkk.c" alt="" coords="3581,185,3760,229"/>
-<area shape="rect" id="node47" href="$lisa__test__adxl345__dma_8c.html" title="sw/airborne/lisa/test\l/lisa_test_adxl345_dma.c" alt="" coords="3784,185,3952,229"/>
-<area shape="rect" id="node49" href="$lisa__test__aspirin_8c.html" title="sw/airborne/lisa/test\l/lisa_test_aspirin.c" alt="" coords="3976,185,4115,229"/>
-<area shape="rect" id="node51" href="$lisa__test__hmc5843_8c.html" title="sw/airborne/lisa/test\l/lisa_test_hmc5843.c" alt="" coords="4139,185,4283,229"/>
-<area shape="rect" id="node53" href="$lisa__test__itg3200_8c.html" title="sw/airborne/lisa/test\l/lisa_test_itg3200.c" alt="" coords="4307,185,4445,229"/>
-<area shape="rect" id="node55" href="$lisa__test__max1168_8c.html" title="sw/airborne/lisa/test\l/lisa_test_max1168.c" alt="" coords="4469,185,4613,229"/>
-<area shape="rect" id="node57" href="$lisa__test__sc18is600_8c.html" title="sw/airborne/lisa/test\l/lisa_test_sc18is600.c" alt="" coords="4637,185,4787,229"/>
-<area shape="rect" id="node59" href="$lisa__tunnel_8c.html" title="sw/airborne/lisa/test\l/lisa_tunnel.c" alt="" coords="4811,185,4949,229"/>
-<area shape="rect" id="node61" href="$test__board_8c.html" title="sw/airborne/lisa/test\l/test_board.c" alt="" coords="4973,185,5112,229"/>
-<area shape="rect" id="node63" href="$test__bswap_8c.html" title="sw/airborne/lisa/test\l/test_bswap.c" alt="" coords="5136,185,5275,229"/>
-<area shape="rect" id="node65" href="$test__mc__asctec__v1__simple_8c.html" title="sw/airborne/lisa/test\l/test_mc_asctec_v1_simple.c" alt="" coords="5299,185,5493,229"/>
-<area shape="rect" id="node67" href="$test__adc_8c.html" title="sw/airborne/lisa/test\l_adc.c" alt="" coords="5517,185,5656,229"/>
-<area shape="rect" id="node69" href="$test__baro__i2c_8c.html" title="sw/airborne/lisa/test\l_baro_i2c.c" alt="" coords="5680,185,5819,229"/>
-<area shape="rect" id="node71" href="$test__can_8c.html" title="sw/airborne/lisa/test\l_can.c" alt="" coords="5843,185,5981,229"/>
-<area shape="rect" id="node73" href="$test__csc__servo_8c.html" title="sw/airborne/lisa/test\l_csc_servo.c" alt="" coords="6005,185,6144,229"/>
-<area shape="rect" id="node75" href="$test__datalink_8c.html" title="sw/airborne/lisa/test\l_datalink.c" alt="" coords="6168,185,6307,229"/>
-<area shape="rect" id="node77" href="$test__float_8c.html" title="sw/airborne/lisa/test\l_float.c" alt="" coords="6331,185,6469,229"/>
-<area shape="rect" id="node79" href="$test__led_8c.html" title="sw/airborne/lisa/test\l_led.c" alt="" coords="6493,185,6632,229"/>
-<area shape="rect" id="node81" href="$test__mc_8c.html" title="sw/airborne/lisa/test_mc.c" alt="" coords="6656,193,6829,221"/>
-<area shape="rect" id="node83" href="$test__periodic_8c.html" title="sw/airborne/lisa/test\l_periodic.c" alt="" coords="6853,185,6992,229"/>
-<area shape="rect" id="node85" href="$test__servos_8c.html" title="sw/airborne/lisa/test\l_servos.c" alt="" coords="7016,185,7155,229"/>
-<area shape="rect" id="node87" href="$test__spi__slave_8c.html" title="sw/airborne/lisa/test\l_spi_slave.c" alt="" coords="7179,185,7317,229"/>
-<area shape="rect" id="node89" href="$test__spi__slave2_8c.html" title="sw/airborne/lisa/test\l_spi_slave2.c" alt="" coords="7341,185,7480,229"/>
-<area shape="rect" id="node91" href="$test__uart__lisal_8c.html" title="sw/airborne/lisa/test\l_uart_lisal.c" alt="" coords="7504,185,7643,229"/>
-<area shape="rect" id="node93" href="$test__uart__lisam_8c.html" title="sw/airborne/lisa/test\l_uart_lisam.c" alt="" coords="7667,185,7805,229"/>
-<area shape="rect" id="node95" href="$tunnel__hw_8c.html" title="sw/airborne/lisa/tunnel_hw.c" alt="" coords="7829,193,8016,221"/>
-<area shape="rect" id="node97" href="$mcu_8c.html" title="Arch independent mcu ( Micro Controller Unit ) utilities." alt="" coords="8040,193,8168,221"/>
-<area shape="rect" id="node99" href="$sys__time_8c.html" title="Architecture independent timing functions." alt="" coords="8192,185,8352,229"/>
+<area shape="rect" id="node3" href="$mcu_8h.html" title="Arch independent mcu ( Micro Controller Unit ) utilities." alt="" coords="2252,99,2391,127"/>
+<area shape="rect" id="node5" href="$lpc21_2mcu__arch_8c.html" title="lpc21 arch dependant microcontroller initialisation functions." alt="" coords="5,185,171,229"/>
+<area shape="rect" id="node7" href="$spi__slave__hs__arch_8c.html" title="Highspeed SPI Slave Interface." alt="" coords="195,177,360,237"/>
+<area shape="rect" id="node9" href="$mag__micromag__fw__hw_8h.html" title="sw/airborne/arch/lpc21\l/modules/sensors/mag_micromag\l_fw_hw.h" alt="" coords="384,177,624,237"/>
+<area shape="rect" id="node15" href="$lpc21_2uart__tunnel_8c.html" title="sw/airborne/arch/lpc21\l/uart_tunnel.c" alt="" coords="648,185,813,229"/>
+<area shape="rect" id="node17" href="$usb__tunnel_8c.html" title="USB tunnel application." alt="" coords="837,185,1003,229"/>
+<area shape="rect" id="node19" href="$stm32_2mcu__arch_8c.html" title="stm32 arch dependant microcontroller initialisation functions." alt="" coords="1027,185,1197,229"/>
+<area shape="rect" id="node21" href="$test__bswap_8c.html" title="sw/airborne/arch/stm32\l/test_bswap.c" alt="" coords="1221,185,1392,229"/>
+<area shape="rect" id="node23" href="$stm32_2uart__tunnel_8c.html" title="sw/airborne/arch/stm32\l/uart_tunnel.c" alt="" coords="1416,185,1587,229"/>
+<area shape="rect" id="node25" href="$test__baro_8c.html" title="sw/airborne/boards\l/booz/test_baro.c" alt="" coords="1611,185,1752,229"/>
+<area shape="rect" id="node27" href="$main__ap_8c.html" title="AP ( AutoPilot ) tasks." alt="" coords="1776,185,1936,229"/>
+<area shape="rect" id="node29" href="$main__fbw_8c.html" title="FBW ( FlyByWire ) process." alt="" coords="1960,185,2120,229"/>
+<area shape="rect" id="node31" href="$rotorcraft_2main_8c.html" title="Rotorcraft main loop." alt="" coords="2144,185,2304,229"/>
+<area shape="rect" id="node33" href="$setup__actuators_8c.html" title="sw/airborne/firmwares\l/setup/setup_actuators.c" alt="" coords="2328,185,2509,229"/>
+<area shape="rect" id="node35" href="$main__demo2_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo2.c" alt="" coords="2533,185,2704,229"/>
+<area shape="rect" id="node37" href="$main__demo3_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo3.c" alt="" coords="2728,185,2899,229"/>
+<area shape="rect" id="node39" href="$main__demo4_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo4.c" alt="" coords="2923,185,3093,229"/>
+<area shape="rect" id="node41" href="$main__demo5_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo5.c" alt="" coords="3117,185,3288,229"/>
+<area shape="rect" id="node43" href="$main__demo6_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo6.c" alt="" coords="3312,185,3483,229"/>
+<area shape="rect" id="node45" href="$lisa__stm__gps__passthrough__main_8c.html" title="sw/airborne/lisa/lisa\l_stm_gps_passthrough\l_main.c" alt="" coords="3507,177,3677,237"/>
+<area shape="rect" id="node47" href="$lisa__stm__passthrough__main_8c.html" title="sw/airborne/lisa/lisa\l_stm_passthrough_main.c" alt="" coords="3701,185,3891,229"/>
+<area shape="rect" id="node49" href="$stm__test__spi__link_8c.html" title="sw/airborne/lisa/stm\l_test_spi_link.c" alt="" coords="3915,185,4064,229"/>
+<area shape="rect" id="node51" href="$mcu_8c.html" title="Arch independent mcu ( Micro Controller Unit ) utilities." alt="" coords="4088,193,4227,221"/>
+<area shape="rect" id="node53" href="$sys__time_8c.html" title="Architecture independent timing functions." alt="" coords="4251,185,4424,229"/>
+<area shape="rect" id="node55" href="$baro__scp_8c.html" title="sw/airborne/modules\l/sensors/baro_scp.c" alt="" coords="4448,185,4603,229"/>
+<area shape="rect" id="node11" href="$mag__micromag__fw__hw_8c.html" title="sw/airborne/arch/lpc21\l/modules/sensors/mag_micromag\l_fw_hw.c" alt="" coords="259,286,499,346"/>
+<area shape="rect" id="node13" href="$mag__micromag__fw_8c.html" title="sw/airborne/modules\l/sensors/mag_micromag_fw.c" alt="" coords="523,294,733,338"/>
 </map>

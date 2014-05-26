@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -107,20 +107,16 @@ $(document).ready(function(){initNavTree('module__gps_ubx_ucenter.html','');});
 <li>configures all the messages, and the rates</li>
 <li>automatic baudrate detection</li>
 </ul>
-<p>Warning: you still need to tell the driver</p>
-<ol type="1">
-<li>Which paparazzi uart you use</li>
-<li>Inside the ublox gps there are also many ports. The tiny/ppzgps use ublox_internal_port1 (UART1) but if for instance you use a LS-SAM or I2C device you need to set this by defining GPS_PORT_ID.</li>
-</ol>
+<p>Warning: you still need to tell the driver, which paparazzi port you use.</p>
 <h1><a class="anchor" id="configuration"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
 Define Options</h2>
 <ul>
-<li><b>name:</b> <code>GPS_PORT_ID</code> <b>value:</b> <em>GPS_PORT_UART1</em> <br/>
- Description: Port inside the Ublox GPS (GPS_PORT_DDC, GPS_PORT_UART1, GPS_PORT_UART2, GPS_PORT_USB, GPS_PORT_SPI)</li>
 <li><b>name:</b> <code>GPS_UBX_UCENTER_RATE</code> <b>value:</b> <em>250</em> <br/>
  Description: Data output rate in ms</li>
+<li><b>name:</b> <code>GPS_UBX_NAV5_DYNAMICS</code> <b>value:</b> <em>NAV5_DYN_PORTABLE|NAV5_DYN_FIXED|NAV5_DYN_STATIONARY|NAV5_DYN_PEDESTRIAN|NAV5_DYN_AUTOMOTIVE|NAV5_DYN_SEA|NAV5_DYN_AIRBORNE_1G|NAV5_DYN_AIRBORNE_2G|NAV5_DYN_AIRBORNE_4G</em> <br/>
+ Description: Dynamic model used by ublox GPS filter. Default:NAV5_DYN_AIRBORNE_2G</li>
 <li><b>name:</b> <code>USE_GPS_UBX_RXM_RAW</code> <b>value:</b> <em>None</em> <br/>
  Description: Activate raw measurments (only available on U-Blox T versions)</li>
 </ul>
@@ -172,24 +168,22 @@ Raw gps_ubx_ucenter.xml file:</h2>
 <div class="line">- configures all the messages, and the rates</div>
 <div class="line">- automatic baudrate detection</div>
 <div class="line"></div>
-<div class="line">Warning: you still need to tell the driver</div>
-<div class="line">1. Which paparazzi uart you use</div>
-<div class="line">2. Inside the ublox <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a> there are also many ports.</div>
-<div class="line">   The tiny/ppzgps use ublox_internal_port1 (UART1) but <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a22787b7744375550b4b631b0fec03bd0">if</a> for instance you use a LS-SAM</div>
-<div class="line">   or I2C device you need to set this by defining <a class="code" href="gps__ubx__ucenter_8c.html#a7726b5b61fb5d30c1a8136f947000248">GPS_PORT_ID</a>.</div>
+<div class="line">Warning: you still need to tell the driver, which paparazzi <a class="code" href="navdata_8h.html#abd160e9c56e6ebc3ef6a4d8990d4fc92">port</a> you use.</div>
 <div class="line">    &lt;/description&gt;</div>
-<div class="line">    &lt;define name=&quot;<a class="code" href="gps__ubx__ucenter_8c.html#a7726b5b61fb5d30c1a8136f947000248">GPS_PORT_ID</a>&quot; value=&quot;<a class="code" href="gps__ubx__ucenter_8c.html#ad0bbbfc9dec7878b6f5e0eecc5707928">GPS_PORT_UART1</a>&quot; description=&quot;Port inside the Ublox GPS (<a class="code" href="gps__ubx__ucenter_8c.html#a54a4fdda8f83295995219af42ed0b715">GPS_PORT_DDC</a>, <a class="code" href="gps__ubx__ucenter_8c.html#ad0bbbfc9dec7878b6f5e0eecc5707928">GPS_PORT_UART1</a>, <a class="code" href="gps__ubx__ucenter_8c.html#afd76c87654bd547a6b8932b8f798c99f">GPS_PORT_UART2</a>, <a class="code" href="gps__ubx__ucenter_8c.html#a3a154417a0097b7eb296e7166d232795">GPS_PORT_USB</a>, <a class="code" href="gps__ubx__ucenter_8c.html#ac78173e2ac3c7b1dd2071157d55cb695">GPS_PORT_SPI</a>)&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;<a class="code" href="gps__ubx__ucenter_8c.html#a179870d9ccd3fc30f92fb7c66f27953b">GPS_UBX_UCENTER_RATE</a>&quot; value=&quot;250&quot; description=&quot;Data output rate in ms&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;USE_GPS_UBX_RXM_RAW&quot; description=&quot;Activate raw measurments (only available on U-Blox T versions)&quot;/&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;GPS_UBX_UCENTER_RATE&quot;</span> value=<span class="stringliteral">&quot;250&quot;</span> description=<span class="stringliteral">&quot;Data output rate in ms&quot;</span>/&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;GPS_UBX_NAV5_DYNAMICS&quot;</span></div>
+<div class="line">            value=<span class="stringliteral">&quot;NAV5_DYN_PORTABLE|NAV5_DYN_FIXED|NAV5_DYN_STATIONARY|NAV5_DYN_PEDESTRIAN|NAV5_DYN_AUTOMOTIVE|NAV5_DYN_SEA|NAV5_DYN_AIRBORNE_1G|NAV5_DYN_AIRBORNE_2G|NAV5_DYN_AIRBORNE_4G&quot;</span></div>
+<div class="line">            description=<span class="stringliteral">&quot;Dynamic model used by ublox GPS filter. Default:NAV5_DYN_AIRBORNE_2G&quot;</span>/&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;USE_GPS_UBX_RXM_RAW&quot;</span> description=<span class="stringliteral">&quot;Activate raw measurments (only available on U-Blox T versions)&quot;</span>/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line">  &lt;header&gt;</div>
-<div class="line">    &lt;file name=&quot;<a class="code" href="gps__ubx__ucenter_8c.html#a080e2318dbd7b4cb34822c4fbbfc701d">gps_ubx_ucenter</a>.h&quot;/&gt;</div>
+<div class="line">    &lt;file name=<span class="stringliteral">&quot;gps_ubx_ucenter.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
-<div class="line">  &lt;<a class="code" href="gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=&quot;<a class="code" href="gps__ubx__ucenter_8c.html#ab3e87f1813c44b35cf8df6774715a4a9">gps_ubx_ucenter_init</a>()&quot;/&gt;</div>
-<div class="line">  &lt;periodic fun=&quot;<a class="code" href="gps__ubx__ucenter_8c.html#a483da5be54cf6eca071cd6c1ee0e3675">gps_ubx_ucenter_periodic</a>()&quot; start=&quot;<a class="code" href="gps__ubx__ucenter_8c.html#ab3e87f1813c44b35cf8df6774715a4a9">gps_ubx_ucenter_init</a>()&quot; freq=&quot;4.&quot; autorun=&quot;<a class="code" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>&quot;/&gt;</div>
-<div class="line">  &lt;makefile target=&quot;ap&quot;&gt;</div>
-<div class="line">    &lt;file name=&quot;<a class="code" href="gps__ubx__ucenter_8c.html#a080e2318dbd7b4cb34822c4fbbfc701d">gps_ubx_ucenter</a>.<a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;GPS_UBX_UCENTER&quot;/&gt;</div>
+<div class="line">  &lt;<a class="code" href="nav__gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;gps_ubx_ucenter_init()&quot;</span>/&gt;</div>
+<div class="line">  &lt;periodic fun=<span class="stringliteral">&quot;gps_ubx_ucenter_periodic()&quot;</span> start=<span class="stringliteral">&quot;gps_ubx_ucenter_init()&quot;</span> freq=<span class="stringliteral">&quot;4.&quot;</span> autorun=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
+<div class="line">  &lt;makefile target=<span class="stringliteral">&quot;ap&quot;</span>&gt;</div>
+<div class="line">    &lt;file name=<span class="stringliteral">&quot;gps_ubx_ucenter.c&quot;</span>/&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;GPS_UBX_UCENTER&quot;</span>/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">&lt;/module&gt;</div>
 <div class="line"></div>
@@ -200,7 +194,7 @@ Raw gps_ubx_ucenter.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:12 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:11 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

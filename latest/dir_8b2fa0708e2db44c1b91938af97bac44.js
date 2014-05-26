@@ -23,6 +23,8 @@ var dir_8b2fa0708e2db44c1b91938af97bac44 =
     [ "imu_gl1.c", "imu__gl1_8c.html", "imu__gl1_8c" ],
     [ "imu_gl1.h", "imu__gl1_8h.html", "imu__gl1_8h" ],
     [ "imu_gl1_defaults.h", "imu__gl1__defaults_8h.html", "imu__gl1__defaults_8h" ],
+    [ "imu_mpu6000_hmc5883.c", "imu__mpu6000__hmc5883_8c.html", "imu__mpu6000__hmc5883_8c" ],
+    [ "imu_mpu6000_hmc5883.h", "imu__mpu6000__hmc5883_8h.html", "imu__mpu6000__hmc5883_8h" ],
     [ "imu_mpu60x0_defaults.h", "imu__mpu60x0__defaults_8h.html", "imu__mpu60x0__defaults_8h" ],
     [ "imu_nps.c", "imu__nps_8c.html", "imu__nps_8c" ],
     [ "imu_nps.h", "imu__nps_8h.html", "imu__nps_8h" ],

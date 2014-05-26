@@ -15,7 +15,7 @@ var searchData=
   ['ref_5ftakeoff',['REF_TAKEOFF',['../at__com_8h.html#a5a6fdcbdb3a1a1b8f5f213e956cfd6e3ac8aeefbcec42aeeda0d4e3b9b417392f',1,'at_com.h']]],
   ['replaceall',['ReplaceAll',['../mission_8h.html#add225f937fa97e4f76900b7f5e73872ead55a1685be3004600647f9607d70aa70',1,'mission.h']]],
   ['replacecurrent',['ReplaceCurrent',['../mission_8h.html#add225f937fa97e4f76900b7f5e73872ea1fd0704fd22b0ea1388f7d19f84f8161',1,'mission.h']]],
-  ['ret',['RET',['../poly__survey__adv_8h.html#aa46eae8395ef867c63e26dd5d86e97d5ab2510768eaba5e52ba71678e19a65464',1,'poly_survey_adv.h']]],
+  ['ret',['RET',['../nav__survey__polygon_8h.html#aa9c58cb0ccc605869d75547268f59fa6ab2510768eaba5e52ba71678e19a65464',1,'nav_survey_polygon.h']]],
   ['reverse',['REVERSE',['../actuators__asctec_8h.html#a6ab1b9217ee457a8e4352cf0b28af79da906b7cc20b42994dda4da492767c1de9',1,'REVERSE():&#160;actuators_asctec.h'],['../actuators__asctec__v2_8h.html#a4fc4c81cd178f2e57a6d8ce74785742ea906b7cc20b42994dda4da492767c1de9',1,'REVERSE():&#160;actuators_asctec_v2.h']]],
   ['right',['RIGHT',['../actuators__asctec_8h.html#ad2db450a6c9862a4f81ba35a4d5f4f20aec8379af7490bb9eaaf579cf17876f38',1,'RIGHT():&#160;actuators_asctec.h'],['../actuators__asctec__v2_8h.html#a6a84074f57bc5110d7e301d4662c4899aec8379af7490bb9eaaf579cf17876f38',1,'RIGHT():&#160;actuators_asctec_v2.h']]],
   ['roll',['ROLL',['../actuators__asctec_8h.html#a82d0d12190beb7d9db322455bf6a4d1da2eeb9fef8a6a516fa6437a44a6efbd52',1,'actuators_asctec.h']]],

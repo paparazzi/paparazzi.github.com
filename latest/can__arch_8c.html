@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('can__arch_8c.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -117,8 +118,8 @@ $(document).ready(function(){initNavTree('can__arch_8c.html','');});
 <code>#include &lt;string.h&gt;</code><br/>
 <code>#include &quot;<a class="el" href="can__arch_8h_source.html">mcu_periph/can_arch.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="can_8h_source.html">mcu_periph/can.h</a>&quot;</code><br/>
-<code>#include &lt;libopencm3/stm32/f1/rcc.h&gt;</code><br/>
-<code>#include &lt;libopencm3/stm32/f1/gpio.h&gt;</code><br/>
+<code>#include &lt;libopencm3/stm32/rcc.h&gt;</code><br/>
+<code>#include &lt;libopencm3/stm32/gpio.h&gt;</code><br/>
 <code>#include &lt;libopencm3/stm32/can.h&gt;</code><br/>
 <code>#include &lt;libopencm3/cm3/nvic.h&gt;</code><br/>
 <code>#include &quot;<a class="el" href="led_8h_source.html">led.h</a>&quot;</code><br/>
@@ -129,11 +130,15 @@ $(document).ready(function(){initNavTree('can__arch_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="can__arch_8c__incl.png" border="0" usemap="#sw_2airborne_2arch_2stm32_2mcu__periph_2can__arch_8c" alt=""/></div>
 <map name="sw_2airborne_2arch_2stm32_2mcu__periph_2can__arch_8c" id="sw_2airborne_2arch_2stm32_2mcu__periph_2can__arch_8c">
-<area shape="rect" id="node7" href="can__arch_8h.html" title="Handling of CAN hardware for STM32." alt="" coords="181,107,336,135"/><area shape="rect" id="node9" href="can_8h.html" title="mcu_periph/can.h" alt="" coords="360,107,483,135"/><area shape="rect" id="node19" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API" alt="" coords="1203,107,1251,135"/></map>
+<area shape="rect" id="node7" href="can__arch_8h.html" title="Handling of CAN hardware for STM32." alt="" coords="192,99,363,127"/><area shape="rect" id="node9" href="can_8h.html" title="mcu_periph/can.h" alt="" coords="387,99,523,127"/><area shape="rect" id="node19" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API" alt="" coords="1349,99,1403,127"/></map>
 </div>
 </div>
 <p><a href="can__arch_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a8562db5147ae13ba0c776e5374184c54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="can__arch_8c.html#a8562db5147ae13ba0c776e5374184c54">NVIC_USB_LP_CAN_RX0_IRQ_PRIO</a>&#160;&#160;&#160;1</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a29e5282665581fc7533fb24eb96bf30c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="can__arch_8c.html#a29e5282665581fc7533fb24eb96bf30c">_can_run_rx_callback</a> (<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> id, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> len)</td></tr>
@@ -149,7 +154,24 @@ Variables</h2></td></tr>
 <div class="textblock"><p>Handling of CAN hardware for STM32. </p>
 
 <p>Definition in file <a class="el" href="can__arch_8c_source.html">can_arch.c</a>.</p>
-</div><h2>Function Documentation</h2>
+</div><h2>Macro Definition Documentation</h2>
+<a class="anchor" id="a8562db5147ae13ba0c776e5374184c54"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NVIC_USB_LP_CAN_RX0_IRQ_PRIO&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="can__arch_8c_source.html#l00050">50</a> of file <a class="el" href="can__arch_8c_source.html">can_arch.c</a>.</p>
+
+<p>Referenced by <a class="el" href="can__arch_8c_source.html#l00057">can_hw_init()</a>.</p>
+
+</div>
+</div>
+<h2>Function Documentation</h2>
 <a class="anchor" id="a29e5282665581fc7533fb24eb96bf30c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -184,7 +206,7 @@ Variables</h2></td></tr>
 
 <p>References <a class="el" href="can_8c_source.html#l00028">can_rx_callback</a>.</p>
 
-<p>Referenced by <a class="el" href="can__arch_8c_source.html#l00167">usb_lp_can_rx0_isr()</a>.</p>
+<p>Referenced by <a class="el" href="can__arch_8c_source.html#l00177">usb_lp_can_rx0_isr()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -193,7 +215,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="can__arch_8c_a29e5282665581fc7533fb24eb96bf30c_icgraph.png" border="0" usemap="#can__arch_8c_a29e5282665581fc7533fb24eb96bf30c_icgraph" alt=""/></div>
 <map name="can__arch_8c_a29e5282665581fc7533fb24eb96bf30c_icgraph" id="can__arch_8c_a29e5282665581fc7533fb24eb96bf30c_icgraph">
-<area shape="rect" id="node3" href="can__arch_8c.html#aac0d36e759b3f7a070fe08d9dddc9cd0" title="usb_lp_can_rx0_isr" alt="" coords="200,5,333,33"/></map>
+<area shape="rect" id="node3" href="can__arch_8c.html#aac0d36e759b3f7a070fe08d9dddc9cd0" title="usb_lp_can_rx0_isr" alt="" coords="212,5,353,33"/></map>
 </div>
 </p>
 
@@ -213,9 +235,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="can__arch_8c_source.html#l00047">47</a> of file <a class="el" href="can__arch_8c_source.html">can_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="can__arch_8c_source.html#l00057">57</a> of file <a class="el" href="can__arch_8c_source.html">can_arch.c</a>.</p>
 
-<p>References <a class="el" href="LPC21xx_8h_source.html#l00484">CAN1</a>, <a class="el" href="can__arch_8c_source.html#l00045">can_initialized</a>, and <a class="el" href="omap_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85">gpio_set()</a>.</p>
+<p>References <a class="el" href="LPC21xx_8h_source.html#l00484">CAN1</a>, <a class="el" href="can__arch_8c_source.html#l00055">can_initialized</a>, <a class="el" href="omap_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85">gpio_set()</a>, and <a class="el" href="can__arch_8c_source.html#l00050">NVIC_USB_LP_CAN_RX0_IRQ_PRIO</a>.</p>
 
 <p>Referenced by <a class="el" href="can_8c_source.html#l00032">ppz_can_init()</a>.</p>
 
@@ -226,7 +248,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="can__arch_8c_aea9abdf3d92f6edf1fbfeebec07eb2a2_cgraph.png" border="0" usemap="#can__arch_8c_aea9abdf3d92f6edf1fbfeebec07eb2a2_cgraph" alt=""/></div>
 <map name="can__arch_8c_aea9abdf3d92f6edf1fbfeebec07eb2a2_cgraph" id="can__arch_8c_aea9abdf3d92f6edf1fbfeebec07eb2a2_cgraph">
-<area shape="rect" id="node3" href="omap_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85" title="Set a gpio output to high level." alt="" coords="145,5,215,33"/></map>
+<area shape="rect" id="node3" href="omap_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85" title="Set a gpio output to high level." alt="" coords="151,5,225,33"/></map>
 </div>
 </p>
 
@@ -237,7 +259,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="can__arch_8c_aea9abdf3d92f6edf1fbfeebec07eb2a2_icgraph.png" border="0" usemap="#can__arch_8c_aea9abdf3d92f6edf1fbfeebec07eb2a2_icgraph" alt=""/></div>
 <map name="can__arch_8c_aea9abdf3d92f6edf1fbfeebec07eb2a2_icgraph" id="can__arch_8c_aea9abdf3d92f6edf1fbfeebec07eb2a2_icgraph">
-<area shape="rect" id="node3" href="can_8h.html#ac7e36a7bd650eb577df12f0437f270bc" title="ppz_can_init" alt="" coords="145,5,239,33"/></map>
+<area shape="rect" id="node3" href="can_8h.html#ac7e36a7bd650eb577df12f0437f270bc" title="ppz_can_init" alt="" coords="149,5,251,33"/></map>
 </div>
 </p>
 
@@ -273,9 +295,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="can__arch_8c_source.html#l00139">139</a> of file <a class="el" href="can__arch_8c_source.html">can_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="can__arch_8c_source.html#l00149">149</a> of file <a class="el" href="can__arch_8c_source.html">can_arch.c</a>.</p>
 
-<p>References <a class="el" href="LPC21xx_8h_source.html#l00484">CAN1</a>, and <a class="el" href="can__arch_8c_source.html#l00045">can_initialized</a>.</p>
+<p>References <a class="el" href="LPC21xx_8h_source.html#l00484">CAN1</a>, and <a class="el" href="can__arch_8c_source.html#l00055">can_initialized</a>.</p>
 
 <p>Referenced by <a class="el" href="can_8c_source.html#l00038">ppz_can_transmit()</a>.</p>
 
@@ -286,7 +308,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="can__arch_8c_ad218f19fbf59d6dd7b788899dfd50b25_icgraph.png" border="0" usemap="#can__arch_8c_ad218f19fbf59d6dd7b788899dfd50b25_icgraph" alt=""/></div>
 <map name="can__arch_8c_ad218f19fbf59d6dd7b788899dfd50b25_icgraph" id="can__arch_8c_ad218f19fbf59d6dd7b788899dfd50b25_icgraph">
-<area shape="rect" id="node3" href="can_8h.html#a152615d451206e5d152705c704cdf89f" title="ppz_can_transmit" alt="" coords="177,5,300,33"/><area shape="rect" id="node5" href="test__can_8c.html#a791eaf74023b4de8d10fbfe0de040ed8" title="main_periodic_task" alt="" coords="351,5,484,33"/><area shape="rect" id="node7" href="test__can_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="533,5,584,33"/></map>
+<area shape="rect" id="node3" href="can_8h.html#a152615d451206e5d152705c704cdf89f" title="ppz_can_transmit" alt="" coords="184,5,320,33"/></map>
 </div>
 </p>
 
@@ -306,7 +328,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="can__arch_8c_source.html#l00167">167</a> of file <a class="el" href="can__arch_8c_source.html">can_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="can__arch_8c_source.html#l00177">177</a> of file <a class="el" href="can__arch_8c_source.html">can_arch.c</a>.</p>
 
 <p>References <a class="el" href="can_8c_source.html#l00043">_can_run_rx_callback()</a>, and <a class="el" href="LPC21xx_8h_source.html#l00484">CAN1</a>.</p>
 
@@ -317,7 +339,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="can__arch_8c_aac0d36e759b3f7a070fe08d9dddc9cd0_cgraph.png" border="0" usemap="#can__arch_8c_aac0d36e759b3f7a070fe08d9dddc9cd0_cgraph" alt=""/></div>
 <map name="can__arch_8c_aac0d36e759b3f7a070fe08d9dddc9cd0_cgraph" id="can__arch_8c_aac0d36e759b3f7a070fe08d9dddc9cd0_cgraph">
-<area shape="rect" id="node3" href="can__arch_8c.html#a29e5282665581fc7533fb24eb96bf30c" title="_can_run_rx_callback" alt="" coords="187,5,333,33"/></map>
+<area shape="rect" id="node3" href="can__arch_8c.html#a29e5282665581fc7533fb24eb96bf30c" title="_can_run_rx_callback" alt="" coords="197,5,355,33"/></map>
 </div>
 </p>
 
@@ -334,9 +356,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="can__arch_8c_source.html#l00045">45</a> of file <a class="el" href="can__arch_8c_source.html">can_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="can__arch_8c_source.html#l00055">55</a> of file <a class="el" href="can__arch_8c_source.html">can_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="can__arch_8c_source.html#l00047">can_hw_init()</a>, and <a class="el" href="can__arch_8c_source.html#l00139">can_hw_transmit()</a>.</p>
+<p>Referenced by <a class="el" href="can__arch_8c_source.html#l00057">can_hw_init()</a>, and <a class="el" href="can__arch_8c_source.html#l00149">can_hw_transmit()</a>.</p>
 
 </div>
 </div>
@@ -346,7 +368,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_0722e4cfffe4ffd4c81bbc7e5d686ba4.html">mcu_periph</a></li><li class="navelem"><a class="el" href="can__arch_8c.html">can_arch.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:09 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:50 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

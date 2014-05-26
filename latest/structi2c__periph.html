@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -111,6 +111,9 @@ $(document).ready(function(){initNavTree('structi2c__periph.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>I2C peripheral structure.  
+ <a href="structi2c__periph.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="i2c_8h_source.html">i2c.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for i2c_periph:</div>
@@ -119,7 +122,7 @@ $(document).ready(function(){initNavTree('structi2c__periph.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structi2c__periph__coll__graph.png" border="0" usemap="#i2c__periph_coll__map" alt="Collaboration graph"/></div>
 <map name="i2c__periph_coll__map" id="i2c__periph_coll__map">
-<area shape="rect" id="node2" href="structi2c__errors.html" title="i2c_errors" alt="" coords="5,6,83,34"/><area shape="rect" id="node4" href="structi2c__transaction.html" title="i2c_transaction" alt="" coords="107,6,216,34"/></map>
+<area shape="rect" id="node2" href="structi2c__errors.html" title="I2C errors counter." alt="" coords="5,6,91,34"/><area shape="rect" id="node4" href="structi2c__transaction.html" title="I2C transaction structure." alt="" coords="115,6,232,34"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-attribs"></a>
@@ -132,10 +135,12 @@ Data Fields</h2></td></tr>
 <tr class="memitem:ab87b1de4062efa2a073a28748b9cec38"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__periph.html#ab87b1de4062efa2a073a28748b9cec38">reg_addr</a></td></tr>
 <tr class="memitem:a76d89c1653cd5da167ec5ce1edaf3d7c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__periph.html#a76d89c1653cd5da167ec5ce1edaf3d7c">init_struct</a></td></tr>
 <tr class="memitem:a4b1270562d3320ff0151bd7856ec0c6e"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structi2c__errors.html">i2c_errors</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__periph.html#a4b1270562d3320ff0151bd7856ec0c6e">errors</a></td></tr>
+<tr class="memitem:adb02b71a163584f08afeba429abda130"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__periph.html#adb02b71a163584f08afeba429abda130">watchdog</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="i2c_8h_source.html#l00090">90</a> of file <a class="el" href="i2c_8h_source.html">i2c.h</a>.</p>
+<div class="textblock"><p>I2C peripheral structure. </p>
+
+<p>Definition at line <a class="el" href="i2c_8h_source.html#l00138">138</a> of file <a class="el" href="i2c_8h_source.html">i2c.h</a>.</p>
 </div><h2>Field Documentation</h2>
 <a class="anchor" id="a4b1270562d3320ff0151bd7856ec0c6e"></a>
 <div class="memitem">
@@ -147,9 +152,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="i2c_8h_source.html#l00100">100</a> of file <a class="el" href="i2c_8h_source.html">i2c.h</a>.</p>
+<p>Definition at line <a class="el" href="i2c_8h_source.html#l00148">148</a> of file <a class="el" href="i2c_8h_source.html">i2c.h</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00470">i2c_error()</a>, <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00574">i2c_irq()</a>, and <a class="el" href="lpc21_2mcu__periph_2i2c__arch_8c_source.html#l00333">i2c_submit()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00558">i2c_error()</a>, <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00662">i2c_irq()</a>, and <a class="el" href="lpc21_2mcu__periph_2i2c__arch_8c_source.html#l00335">i2c_submit()</a>.</p>
 
 </div>
 </div>
@@ -163,9 +168,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="i2c_8h_source.html#l00097">97</a> of file <a class="el" href="i2c_8h_source.html">i2c.h</a>.</p>
+<p>Definition at line <a class="el" href="i2c_8h_source.html#l00145">145</a> of file <a class="el" href="i2c_8h_source.html">i2c.h</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00089">PPRZ_I2C_SEND_START()</a>, <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00351">stmi2c_readmany()</a>, and <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00137">stmi2c_send()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00171">PPRZ_I2C_SEND_START()</a>, <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00437">stmi2c_readmany()</a>, and <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00223">stmi2c_send()</a>.</p>
 
 </div>
 </div>
@@ -179,7 +184,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="i2c_8h_source.html#l00099">99</a> of file <a class="el" href="i2c_8h_source.html">i2c.h</a>.</p>
+<p>Definition at line <a class="el" href="i2c_8h_source.html#l00147">147</a> of file <a class="el" href="i2c_8h_source.html">i2c.h</a>.</p>
 
 </div>
 </div>
@@ -193,9 +198,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="i2c_8h_source.html#l00098">98</a> of file <a class="el" href="i2c_8h_source.html">i2c.h</a>.</p>
+<p>Definition at line <a class="el" href="i2c_8h_source.html#l00146">146</a> of file <a class="el" href="i2c_8h_source.html">i2c.h</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00470">i2c_error()</a>, <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l01363">i2c_idle()</a>, <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00574">i2c_irq()</a>, <a class="el" href="lpc21_2mcu__periph_2i2c__arch_8c_source.html#l00368">i2c_setbitrate()</a>, and <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00089">PPRZ_I2C_SEND_START()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00558">i2c_error()</a>, <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l01452">i2c_idle()</a>, <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00662">i2c_irq()</a>, <a class="el" href="lpc21_2mcu__periph_2i2c__arch_8c_source.html#l00370">i2c_setbitrate()</a>, and <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00171">PPRZ_I2C_SEND_START()</a>.</p>
 
 </div>
 </div>
@@ -209,9 +214,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="i2c_8h_source.html#l00096">96</a> of file <a class="el" href="i2c_8h_source.html">i2c.h</a>.</p>
+<p>Definition at line <a class="el" href="i2c_8h_source.html#l00144">144</a> of file <a class="el" href="i2c_8h_source.html">i2c.h</a>.</p>
 
-<p>Referenced by <a class="el" href="lpc21_2mcu__periph_2i2c__arch_8c_source.html#l00329">i2c_idle()</a>, <a class="el" href="i2c_8c_source.html#l00226">i2c_init()</a>, <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00574">i2c_irq()</a>, <a class="el" href="lpc21_2mcu__periph_2i2c__arch_8c_source.html#l00333">i2c_submit()</a>, <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00089">PPRZ_I2C_SEND_START()</a>, <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00218">stmi2c_read1()</a>, <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00281">stmi2c_read2()</a>, <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00351">stmi2c_readmany()</a>, and <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00137">stmi2c_send()</a>.</p>
+<p>Referenced by <a class="el" href="lpc21_2mcu__periph_2i2c__arch_8c_source.html#l00331">i2c_idle()</a>, <a class="el" href="i2c_8c_source.html#l00226">i2c_init()</a>, <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00662">i2c_irq()</a>, <a class="el" href="lpc21_2mcu__periph_2i2c__arch_8c_source.html#l00335">i2c_submit()</a>, <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00171">PPRZ_I2C_SEND_START()</a>, <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00304">stmi2c_read1()</a>, <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00367">stmi2c_read2()</a>, <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00437">stmi2c_readmany()</a>, and <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00223">stmi2c_send()</a>.</p>
 
 </div>
 </div>
@@ -225,9 +230,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="i2c_8h_source.html#l00092">92</a> of file <a class="el" href="i2c_8h_source.html">i2c.h</a>.</p>
+<p>Definition at line <a class="el" href="i2c_8h_source.html#l00140">140</a> of file <a class="el" href="i2c_8h_source.html">i2c.h</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00574">i2c_irq()</a>, and <a class="el" href="lpc21_2mcu__periph_2i2c__arch_8c_source.html#l00333">i2c_submit()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00662">i2c_irq()</a>, and <a class="el" href="lpc21_2mcu__periph_2i2c__arch_8c_source.html#l00335">i2c_submit()</a>.</p>
 
 </div>
 </div>
@@ -241,9 +246,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="i2c_8h_source.html#l00094">94</a> of file <a class="el" href="i2c_8h_source.html">i2c.h</a>.</p>
+<p>Definition at line <a class="el" href="i2c_8h_source.html#l00142">142</a> of file <a class="el" href="i2c_8h_source.html">i2c.h</a>.</p>
 
-<p>Referenced by <a class="el" href="i2c_8c_source.html#l00226">i2c_init()</a>, <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00574">i2c_irq()</a>, and <a class="el" href="lpc21_2mcu__periph_2i2c__arch_8c_source.html#l00333">i2c_submit()</a>.</p>
+<p>Referenced by <a class="el" href="i2c_8c_source.html#l00226">i2c_init()</a>, <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00662">i2c_irq()</a>, and <a class="el" href="lpc21_2mcu__periph_2i2c__arch_8c_source.html#l00335">i2c_submit()</a>.</p>
 
 </div>
 </div>
@@ -257,9 +262,25 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="i2c_8h_source.html#l00093">93</a> of file <a class="el" href="i2c_8h_source.html">i2c.h</a>.</p>
+<p>Definition at line <a class="el" href="i2c_8h_source.html#l00141">141</a> of file <a class="el" href="i2c_8h_source.html">i2c.h</a>.</p>
 
-<p>Referenced by <a class="el" href="i2c_8c_source.html#l00226">i2c_init()</a>, <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00574">i2c_irq()</a>, and <a class="el" href="lpc21_2mcu__periph_2i2c__arch_8c_source.html#l00333">i2c_submit()</a>.</p>
+<p>Referenced by <a class="el" href="i2c_8c_source.html#l00226">i2c_init()</a>, <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00662">i2c_irq()</a>, and <a class="el" href="lpc21_2mcu__periph_2i2c__arch_8c_source.html#l00335">i2c_submit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adb02b71a163584f08afeba429abda130"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile <a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> i2c_periph::watchdog</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="i2c_8h_source.html#l00149">149</a> of file <a class="el" href="i2c_8h_source.html">i2c.h</a>.</p>
+
+<p>Referenced by <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00662">i2c_irq()</a>.</p>
 
 </div>
 </div>
@@ -272,7 +293,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structi2c__periph.html">i2c_periph</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:12 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:13 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

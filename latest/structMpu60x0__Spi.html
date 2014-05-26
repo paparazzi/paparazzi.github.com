@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('structMpu60x0__Spi.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structMpu60x0__Spi__coll__graph.png" border="0" usemap="#Mpu60x0__Spi_coll__map" alt="Collaboration graph"/></div>
 <map name="Mpu60x0__Spi_coll__map" id="Mpu60x0__Spi_coll__map">
-<area shape="rect" id="node2" href="structMpu60x0Config.html" title="Mpu60x0Config" alt="" coords="13,102,123,130"/><area shape="rect" id="node4" href="structMpu60x0I2cSlave.html" title="Mpu60x0I2cSlave" alt="" coords="5,7,131,35"/><area shape="rect" id="node6" href="structInt16Rates.html" title="Int16Rates" alt="" coords="147,102,232,130"/><area shape="rect" id="node8" href="structInt16Vect3.html" title="Int16Vect3" alt="" coords="256,102,341,130"/><area shape="rect" id="node10" href="structspi__transaction.html" title="SPI transaction structure." alt="" coords="376,7,485,35"/><area shape="rect" id="node13" href="structspi__periph.html" title="spi_periph" alt="" coords="471,102,551,130"/></map>
+<area shape="rect" id="node2" href="structMpu60x0Config.html" title="Mpu60x0Config" alt="" coords="12,102,132,130"/><area shape="rect" id="node4" href="structMpu60x0I2cSlave.html" title="Mpu60x0I2cSlave" alt="" coords="5,7,139,35"/><area shape="rect" id="node6" href="structInt16Rates.html" title="Int16Rates" alt="" coords="156,102,247,130"/><area shape="rect" id="node8" href="structInt16Vect3.html" title="Int16Vect3" alt="" coords="271,102,361,130"/><area shape="rect" id="node10" href="structspi__transaction.html" title="SPI transaction structure." alt="" coords="393,7,511,35"/><area shape="rect" id="node13" href="structspi__periph.html" title="SPI peripheral structure." alt="" coords="496,102,581,130"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-attribs"></a>
@@ -130,18 +130,18 @@ Data Fields</h2></td></tr>
 <tr class="memitem:aac2c5a39f64f336ccb130c06b247bebf"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMpu60x0__Spi.html#aac2c5a39f64f336ccb130c06b247bebf">rx_buf</a> [<a class="el" href="mpu60x0__spi_8h.html#ab850011ed8df616036bc796940768f35">MPU60X0_BUFFER_LEN</a>]</td></tr>
 <tr class="memitem:a03e02b3bf085be7f33c8505b827fb624"><td class="memItemLeft" align="right" valign="top">volatile bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMpu60x0__Spi.html#a03e02b3bf085be7f33c8505b827fb624">data_available</a></td></tr>
 <tr class="memdesc:a03e02b3bf085be7f33c8505b827fb624"><td class="mdescLeft">&#160;</td><td class="mdescRight">data ready flag  <a href="#a03e02b3bf085be7f33c8505b827fb624"></a><br/></td></tr>
-<tr class="memitem:a630c48e0b1b58470b93297fa85dd468b"><td class="memItemLeft" >union {</td></tr>
-<tr class="memitem:a81c70a3087775d822ad0d03f98e1979d"><td class="memItemLeft" >&#160;&#160;&#160;struct <a class="el" href="structInt16Vect3.html">Int16Vect3</a>&#160;&#160;&#160;<a class="el" href="structMpu60x0__Spi.html#abd4a3eac603bf0f2efce7bc6faaf3dc9">vect</a></td></tr>
-<tr class="memdesc:a81c70a3087775d822ad0d03f98e1979d"><td class="mdescLeft">&#160;</td><td class="mdescRight">accel data vector in accel coordinate system  <a href="#a81c70a3087775d822ad0d03f98e1979d"></a><br/></td></tr>
-<tr class="memitem:a2f214637c1144f594809aa66e07bcf02"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;&#160;&#160;<a class="el" href="structMpu60x0__Spi.html#a0be522018c94550f85c99b720615be2e">value</a> [3]</td></tr>
-<tr class="memdesc:a2f214637c1144f594809aa66e07bcf02"><td class="mdescLeft">&#160;</td><td class="mdescRight">accel data values accessible by channel index  <a href="#a2f214637c1144f594809aa66e07bcf02"></a><br/></td></tr>
-<tr class="memitem:a630c48e0b1b58470b93297fa85dd468b"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMpu60x0__Spi.html#a630c48e0b1b58470b93297fa85dd468b">data_accel</a></td></tr>
-<tr class="memitem:a6d5e201f29292cdd38cd56054ce571a2"><td class="memItemLeft" >union {</td></tr>
-<tr class="memitem:a6ffff0b44e00cbf355e846fb476f964f"><td class="memItemLeft" >&#160;&#160;&#160;struct <a class="el" href="structInt16Rates.html">Int16Rates</a>&#160;&#160;&#160;<a class="el" href="structMpu60x0__Spi.html#a827c7fc8dd9431e7a1b7c74c3505d3cf">rates</a></td></tr>
-<tr class="memdesc:a6ffff0b44e00cbf355e846fb476f964f"><td class="mdescLeft">&#160;</td><td class="mdescRight">rates data as angular rates in gyro coordinate system  <a href="#a6ffff0b44e00cbf355e846fb476f964f"></a><br/></td></tr>
-<tr class="memitem:a43957e637d646233789ca4a5da18bdf7"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;&#160;&#160;<a class="el" href="structMpu60x0__Spi.html#a0be522018c94550f85c99b720615be2e">value</a> [3]</td></tr>
-<tr class="memdesc:a43957e637d646233789ca4a5da18bdf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">rates data values accessible by channel index  <a href="#a43957e637d646233789ca4a5da18bdf7"></a><br/></td></tr>
-<tr class="memitem:a6d5e201f29292cdd38cd56054ce571a2"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMpu60x0__Spi.html#a6d5e201f29292cdd38cd56054ce571a2">data_rates</a></td></tr>
+<tr class="memitem:a31b77070c846b59c8624816c6b445a37"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a6a3d2c7357ed92304c5c089a8a8dbe0c"><td class="memItemLeft" >&#160;&#160;&#160;struct <a class="el" href="structInt16Vect3.html">Int16Vect3</a>&#160;&#160;&#160;<a class="el" href="structMpu60x0__Spi.html#abd4a3eac603bf0f2efce7bc6faaf3dc9">vect</a></td></tr>
+<tr class="memdesc:a6a3d2c7357ed92304c5c089a8a8dbe0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">accel data vector in accel coordinate system  <a href="#a6a3d2c7357ed92304c5c089a8a8dbe0c"></a><br/></td></tr>
+<tr class="memitem:a31c09419b1b88b0509c2194c3e8928aa"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;&#160;&#160;<a class="el" href="structMpu60x0__Spi.html#a0be522018c94550f85c99b720615be2e">value</a> [3]</td></tr>
+<tr class="memdesc:a31c09419b1b88b0509c2194c3e8928aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">accel data values accessible by channel index  <a href="#a31c09419b1b88b0509c2194c3e8928aa"></a><br/></td></tr>
+<tr class="memitem:a31b77070c846b59c8624816c6b445a37"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMpu60x0__Spi.html#a31b77070c846b59c8624816c6b445a37">data_accel</a></td></tr>
+<tr class="memitem:a7f43d15d9943a43bbb837d0117793d3d"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a6454fd3e54744b261573fa50ebcd7e56"><td class="memItemLeft" >&#160;&#160;&#160;struct <a class="el" href="structInt16Rates.html">Int16Rates</a>&#160;&#160;&#160;<a class="el" href="structMpu60x0__Spi.html#a827c7fc8dd9431e7a1b7c74c3505d3cf">rates</a></td></tr>
+<tr class="memdesc:a6454fd3e54744b261573fa50ebcd7e56"><td class="mdescLeft">&#160;</td><td class="mdescRight">rates data as angular rates in gyro coordinate system  <a href="#a6454fd3e54744b261573fa50ebcd7e56"></a><br/></td></tr>
+<tr class="memitem:a41a08b950cbacf21f69924fcf93fa743"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;&#160;&#160;<a class="el" href="structMpu60x0__Spi.html#a0be522018c94550f85c99b720615be2e">value</a> [3]</td></tr>
+<tr class="memdesc:a41a08b950cbacf21f69924fcf93fa743"><td class="mdescLeft">&#160;</td><td class="mdescRight">rates data values accessible by channel index  <a href="#a41a08b950cbacf21f69924fcf93fa743"></a><br/></td></tr>
+<tr class="memitem:a7f43d15d9943a43bbb837d0117793d3d"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMpu60x0__Spi.html#a7f43d15d9943a43bbb837d0117793d3d">data_rates</a></td></tr>
 <tr class="memitem:a20028497bd8f071099b0f020462ac3f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMpu60x0__Spi.html#a20028497bd8f071099b0f020462ac3f6">data_ext</a> [<a class="el" href="mpu60x0__spi_8h.html#a6b700f6c51b798ceb4ba491922f6531e">MPU60X0_BUFFER_EXT_LEN</a>]</td></tr>
 <tr class="memitem:a312df0b73091e56a69d246626955974a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structMpu60x0Config.html">Mpu60x0Config</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMpu60x0__Spi.html#a312df0b73091e56a69d246626955974a">config</a></td></tr>
 <tr class="memitem:a9beb9ee594db50aaa29bb140cb0ac68c"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="mpu60x0__spi_8h.html#aa2cbe17783d82d3f1ccf6661da0fd8ed">Mpu60x0SpiSlaveInitStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMpu60x0__Spi.html#a9beb9ee594db50aaa29bb140cb0ac68c">slave_init_status</a></td></tr>
@@ -166,7 +166,7 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a630c48e0b1b58470b93297fa85dd468b"></a>
+<a class="anchor" id="a31b77070c846b59c8624816c6b445a37"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -176,7 +176,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00158">imu_aspirin2_event()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00095">imu_px4fmu_event()</a>, and <a class="el" href="mpu60x0__spi_8c_source.html#l00099">mpu60x0_spi_event()</a>.</p>
+<p>Referenced by <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00158">imu_aspirin2_event()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00103">imu_mpu_hmc_event()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00095">imu_px4fmu_event()</a>, and <a class="el" href="mpu60x0__spi_8c_source.html#l00099">mpu60x0_spi_event()</a>.</p>
 
 </div>
 </div>
@@ -194,7 +194,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="mpu60x0__spi_8h_source.html#l00056">56</a> of file <a class="el" href="mpu60x0__spi_8h_source.html">mpu60x0_spi.h</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00158">imu_aspirin2_event()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00095">imu_px4fmu_event()</a>, <a class="el" href="mpu60x0__spi_8c_source.html#l00099">mpu60x0_spi_event()</a>, and <a class="el" href="mpu60x0__spi_8c_source.html#l00031">mpu60x0_spi_init()</a>.</p>
+<p>Referenced by <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00158">imu_aspirin2_event()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00103">imu_mpu_hmc_event()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00095">imu_px4fmu_event()</a>, <a class="el" href="mpu60x0__spi_8c_source.html#l00099">mpu60x0_spi_event()</a>, and <a class="el" href="mpu60x0__spi_8c_source.html#l00031">mpu60x0_spi_init()</a>.</p>
 
 </div>
 </div>
@@ -214,7 +214,7 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6d5e201f29292cdd38cd56054ce571a2"></a>
+<a class="anchor" id="a7f43d15d9943a43bbb837d0117793d3d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -224,7 +224,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00158">imu_aspirin2_event()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00095">imu_px4fmu_event()</a>, and <a class="el" href="mpu60x0__spi_8c_source.html#l00099">mpu60x0_spi_event()</a>.</p>
+<p>Referenced by <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00158">imu_aspirin2_event()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00103">imu_mpu_hmc_event()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00095">imu_px4fmu_event()</a>, and <a class="el" href="mpu60x0__spi_8c_source.html#l00099">mpu60x0_spi_event()</a>.</p>
 
 </div>
 </div>
@@ -242,7 +242,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="mpu60x0__spi_8h_source.html#l00062">62</a> of file <a class="el" href="mpu60x0__spi_8h_source.html">mpu60x0_spi.h</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00158">imu_aspirin2_event()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00095">imu_px4fmu_event()</a>, and <a class="el" href="mpu60x0__spi_8c_source.html#l00099">mpu60x0_spi_event()</a>.</p>
+<p>Referenced by <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00158">imu_aspirin2_event()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00103">imu_mpu_hmc_event()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00095">imu_px4fmu_event()</a>, and <a class="el" href="mpu60x0__spi_8c_source.html#l00099">mpu60x0_spi_event()</a>.</p>
 
 </div>
 </div>
@@ -357,7 +357,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="mpu60x0__spi_8h_source.html#l00058">58</a> of file <a class="el" href="mpu60x0__spi_8h_source.html">mpu60x0_spi.h</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00158">imu_aspirin2_event()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00095">imu_px4fmu_event()</a>, and <a class="el" href="mpu60x0__spi_8c_source.html#l00099">mpu60x0_spi_event()</a>.</p>
+<p>Referenced by <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00158">imu_aspirin2_event()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00103">imu_mpu_hmc_event()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00095">imu_px4fmu_event()</a>, and <a class="el" href="mpu60x0__spi_8c_source.html#l00099">mpu60x0_spi_event()</a>.</p>
 
 </div>
 </div>
@@ -370,7 +370,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structMpu60x0__Spi.html">Mpu60x0_Spi</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:12 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:14 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

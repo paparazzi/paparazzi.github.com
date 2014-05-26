@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -110,10 +110,10 @@ $(document).ready(function(){initNavTree('stm32_2peripherals_2max1168__arch_8c.h
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="max1168_8h_source.html">peripherals/max1168.h</a>&quot;</code><br/>
-<code>#include &quot;libopencm3/stm32/f1/rcc.h&quot;</code><br/>
-<code>#include &quot;libopencm3/stm32/f1/gpio.h&quot;</code><br/>
+<code>#include &quot;libopencm3/stm32/rcc.h&quot;</code><br/>
+<code>#include &quot;libopencm3/stm32/gpio.h&quot;</code><br/>
 <code>#include &quot;libopencm3/stm32/exti.h&quot;</code><br/>
-<code>#include &quot;libopencm3/stm32/f1/nvic.h&quot;</code><br/>
+<code>#include &lt;libopencm3/cm3/nvic.h&gt;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for max1168_arch.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('stm32_2peripherals_2max1168__arch_8c.h
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2peripherals_2max1168__arch_8c__incl.png" border="0" usemap="#sw_2airborne_2arch_2stm32_2peripherals_2max1168__arch_8c" alt=""/></div>
 <map name="sw_2airborne_2arch_2stm32_2peripherals_2max1168__arch_8c" id="sw_2airborne_2arch_2stm32_2peripherals_2max1168__arch_8c">
-<area shape="rect" id="node3" href="max1168_8h.html" title="peripherals/max1168.h" alt="" coords="16,107,165,135"/></map>
+<area shape="rect" id="node3" href="max1168_8h.html" title="peripherals/max1168.h" alt="" coords="12,99,180,127"/></map>
 </div>
 </div>
 <p><a href="stm32_2peripherals_2max1168__arch_8c_source.html">Go to the source code of this file.</a></p>
@@ -146,9 +146,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2peripherals_2max1168__arch_8c_source.html#l00045">45</a> of file <a class="el" href="stm32_2peripherals_2max1168__arch_8c_source.html">max1168_arch.c</a>.</p>
-
-<p>References <a class="el" href="max1168_8h_source.html#l00061">MAX1168_GOT_EOC</a>, and <a class="el" href="max1168_8c_source.html#l00027">max1168_status</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2peripherals_2max1168__arch_8c_source.html#l00050">50</a> of file <a class="el" href="stm32_2peripherals_2max1168__arch_8c_source.html">max1168_arch.c</a>.</p>
 
 </div>
 </div>
@@ -166,9 +164,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2peripherals_2max1168__arch_8c_source.html#l00028">28</a> of file <a class="el" href="stm32_2peripherals_2max1168__arch_8c_source.html">max1168_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2peripherals_2max1168__arch_8c_source.html#l00032">32</a> of file <a class="el" href="stm32_2peripherals_2max1168__arch_8c_source.html">max1168_arch.c</a>.</p>
 
-<p>References <a class="el" href="armVIC_8h_source.html#l00020">_VIC_ADDR</a>, <a class="el" href="armVIC_8h_source.html#l00019">_VIC_CNTL</a>, <a class="el" href="LPC21xx_8h_source.html#l00417">EXTINT</a>, <a class="el" href="lpc21_2peripherals_2max1168__arch_8c_source.html#l00050">EXTINT0_ISR()</a>, <a class="el" href="LPC21xx_8h_source.html#l00419">EXTMODE</a>, <a class="el" href="LPC21xx_8h_source.html#l00420">EXTPOLAR</a>, <a class="el" href="booz__1_80_8h_source.html#l00150">MAX1168_EOC_EINT</a>, <a class="el" href="booz__1_80_8h_source.html#l00147">MAX1168_EOC_PINSEL</a>, <a class="el" href="booz__1_80_8h_source.html#l00148">MAX1168_EOC_PINSEL_BIT</a>, <a class="el" href="booz__1_80_8h_source.html#l00149">MAX1168_EOC_PINSEL_VAL</a>, <a class="el" href="booz__1_80_8h_source.html#l00151">MAX1168_EOC_VIC_IT</a>, <a class="el" href="lpcVIC_8h_source.html#l00105">VIC_BIT</a>, <a class="el" href="lpcVIC_8h_source.html#l00102">VIC_ENABLE</a>, <a class="el" href="LPC21xx_8h_source.html#l00431">VICIntEnable</a>, and <a class="el" href="LPC21xx_8h_source.html#l00430">VICIntSelect</a>.</p>
+<p>References <a class="el" href="armVIC_8h_source.html#l00020">_VIC_ADDR</a>, <a class="el" href="armVIC_8h_source.html#l00019">_VIC_CNTL</a>, <a class="el" href="LPC21xx_8h_source.html#l00417">EXTINT</a>, <a class="el" href="lpc21_2peripherals_2max1168__arch_8c_source.html#l00050">EXTINT0_ISR()</a>, <a class="el" href="LPC21xx_8h_source.html#l00419">EXTMODE</a>, <a class="el" href="LPC21xx_8h_source.html#l00420">EXTPOLAR</a>, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h_source.html#l00039">GPIO2</a>, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h_source.html#l00035">GPIOB</a>, <a class="el" href="booz__1_80_8h_source.html#l00137">MAX1168_EOC_EINT</a>, <a class="el" href="booz__1_80_8h_source.html#l00134">MAX1168_EOC_PINSEL</a>, <a class="el" href="booz__1_80_8h_source.html#l00135">MAX1168_EOC_PINSEL_BIT</a>, <a class="el" href="booz__1_80_8h_source.html#l00136">MAX1168_EOC_PINSEL_VAL</a>, <a class="el" href="booz__1_80_8h_source.html#l00138">MAX1168_EOC_VIC_IT</a>, <a class="el" href="stm32f4__chibios__vectors_8h_source.html#l00026">NVIC_EXTI2_IRQ</a>, <a class="el" href="lpcVIC_8h_source.html#l00105">VIC_BIT</a>, <a class="el" href="lpcVIC_8h_source.html#l00102">VIC_ENABLE</a>, <a class="el" href="LPC21xx_8h_source.html#l00431">VICIntEnable</a>, and <a class="el" href="LPC21xx_8h_source.html#l00430">VICIntSelect</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -177,7 +175,7 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2peripherals_2max1168__arch_8c_a712f39d80c2b46e08a4d0230bf74bef2_cgraph.png" border="0" usemap="#stm32_2peripherals_2max1168__arch_8c_a712f39d80c2b46e08a4d0230bf74bef2_cgraph" alt=""/></div>
 <map name="stm32_2peripherals_2max1168__arch_8c_a712f39d80c2b46e08a4d0230bf74bef2_cgraph" id="stm32_2peripherals_2max1168__arch_8c_a712f39d80c2b46e08a4d0230bf74bef2_cgraph">
-<area shape="rect" id="node3" href="lpc21_2peripherals_2max1168__arch_8c.html#ab3a8b665f5a12cd2487f4e3aa86046b7" title="EXTINT0_ISR" alt="" coords="185,5,289,33"/></map>
+<area shape="rect" id="node3" href="lpc21_2peripherals_2max1168__arch_8c.html#ab3a8b665f5a12cd2487f4e3aa86046b7" title="EXTINT0_ISR" alt="" coords="199,5,297,33"/></map>
 </div>
 </p>
 
@@ -189,7 +187,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_40949b6ea70303acfc197760b8c0e0ae.html">peripherals</a></li><li class="navelem"><a class="el" href="stm32_2peripherals_2max1168__arch_8c.html">max1168_arch.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:09 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:49 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('adxl345__spi_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="adxl345__spi_8c__incl.png" border="0" usemap="#sw_2airborne_2peripherals_2adxl345__spi_8c" alt=""/></div>
 <map name="sw_2airborne_2peripherals_2adxl345__spi_8c" id="sw_2airborne_2peripherals_2adxl345__spi_8c">
-<area shape="rect" id="node3" href="adxl345__spi_8h.html" title="Driver for the accelerometer ADXL345 from Analog Devices using SPI." alt="" coords="532,99,665,143"/><area shape="rect" id="node7" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="437,193,595,221"/><area shape="rect" id="node23" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="623,193,743,221"/><area shape="rect" id="node28" href="adxl345_8h.html" title="Analog Devices ADXL345 accelerometer driver common interface (I2C and SPI)." alt="" coords="268,193,409,221"/><area shape="rect" id="node10" href="pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="163,278,301,306"/><area shape="rect" id="node17" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="512,278,645,306"/><area shape="rect" id="node31" href="adxl345__regs_8h.html" title="Register and address definitions for ADXL345 accelerometer." alt="" coords="5,270,139,314"/></map>
+<area shape="rect" id="node3" href="adxl345__spi_8h.html" title="Driver for the accelerometer ADXL345 from Analog Devices using SPI." alt="" coords="573,99,720,143"/><area shape="rect" id="node7" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="468,193,647,221"/><area shape="rect" id="node23" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="671,193,801,221"/><area shape="rect" id="node28" href="adxl345_8h.html" title="Analog Devices ADXL345 accelerometer driver common interface (I2C and SPI)." alt="" coords="287,193,444,221"/><area shape="rect" id="node10" href="pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="176,278,331,306"/><area shape="rect" id="node17" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="547,278,696,306"/><area shape="rect" id="node31" href="adxl345__regs_8h.html" title="Register and address definitions for ADXL345 accelerometer." alt="" coords="5,270,152,314"/></map>
 </div>
 </div>
 <p><a href="adxl345__spi_8c_source.html">Go to the source code of this file.</a></p>
@@ -141,7 +141,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Driver for the accelerometer ADXL345 from Analog Devices using SPI. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000017">Todo:</a></b></dt><dd>Use SPICallback to copy data from rx_buf when transaction is successful, instead of checking transaction status for SPITransSuccess in event loop. Problem is that in the callback we don't have a reference to the <a class="el" href="structAdxl345__Spi.html">Adxl345_Spi</a> struct. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000016">Todo:</a></b></dt><dd>Use SPICallback to copy data from rx_buf when transaction is successful, instead of checking transaction status for SPITransSuccess in event loop. Problem is that in the callback we don't have a reference to the <a class="el" href="structAdxl345__Spi.html">Adxl345_Spi</a> struct. </dd></dl>
 
 <p>Definition in file <a class="el" href="adxl345__spi_8c_source.html">adxl345_spi.c</a>.</p>
 </div><h2>Macro Definition Documentation</h2>
@@ -203,7 +203,7 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="adxl345__spi_8c_ad173a40977f6e9ba53b9e5a90edd82fd_cgraph.png" border="0" usemap="#adxl345__spi_8c_ad173a40977f6e9ba53b9e5a90edd82fd_cgraph" alt=""/></div>
 <map name="adxl345__spi_8c_ad173a40977f6e9ba53b9e5a90edd82fd_cgraph" id="adxl345__spi_8c_ad173a40977f6e9ba53b9e5a90edd82fd_cgraph">
-<area shape="rect" id="node3" href="adxl345__spi_8c.html#a058719d4e8c1943ada72dd98d56713d1" title="adxl345_spi_send_config" alt="" coords="185,30,351,58"/><area shape="rect" id="node5" href="adxl345__spi_8c.html#aae763e182a428fc73d70dcccda195417" title="adxl345_spi_write_to_reg" alt="" coords="400,5,568,33"/><area shape="rect" id="node9" href="adxl345_8h.html#ac6863633d46c7db4982eb0f78fec8a3f" title="adxl345_data_format" alt="" coords="413,55,555,83"/><area shape="rect" id="node7" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction." alt="" coords="616,5,701,33"/></map>
+<area shape="rect" id="node3" href="adxl345__spi_8c.html#a058719d4e8c1943ada72dd98d56713d1" title="adxl345_spi_send_config" alt="" coords="196,30,375,58"/><area shape="rect" id="node5" href="adxl345__spi_8c.html#aae763e182a428fc73d70dcccda195417" title="adxl345_spi_write_to_reg" alt="" coords="425,5,607,33"/><area shape="rect" id="node9" href="adxl345_8h.html#ac6863633d46c7db4982eb0f78fec8a3f" title="adxl345_data_format" alt="" coords="437,55,595,83"/><area shape="rect" id="node7" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction." alt="" coords="656,5,747,33"/></map>
 </div>
 </p>
 
@@ -214,7 +214,7 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="adxl345__spi_8c_ad173a40977f6e9ba53b9e5a90edd82fd_icgraph.png" border="0" usemap="#adxl345__spi_8c_ad173a40977f6e9ba53b9e5a90edd82fd_icgraph" alt=""/></div>
 <map name="adxl345__spi_8c_ad173a40977f6e9ba53b9e5a90edd82fd_icgraph" id="adxl345__spi_8c_ad173a40977f6e9ba53b9e5a90edd82fd_icgraph">
-<area shape="rect" id="node3" href="imu__aspirin_8h.html#aa229c37c4339ad08d83c4d72f30a1fd5" title="imu_aspirin_event" alt="" coords="185,5,311,33"/><area shape="rect" id="node5" href="imu__aspirin_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="360,5,437,33"/></map>
+<area shape="rect" id="node3" href="imu__aspirin_8h.html#aa229c37c4339ad08d83c4d72f30a1fd5" title="imu_aspirin_event" alt="" coords="195,5,333,33"/><area shape="rect" id="node5" href="imu__aspirin_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="381,5,464,33"/></map>
 </div>
 </p>
 
@@ -263,7 +263,7 @@ Functions</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="adxl345__spi_8c_a2c3a96cfe3f877128294bc0b9e60a0fc_cgraph.png" border="0" usemap="#adxl345__spi_8c_a2c3a96cfe3f877128294bc0b9e60a0fc_cgraph" alt=""/></div>
 <map name="adxl345__spi_8c_a2c3a96cfe3f877128294bc0b9e60a0fc_cgraph" id="adxl345__spi_8c_a2c3a96cfe3f877128294bc0b9e60a0fc_cgraph">
-<area shape="rect" id="node3" href="adxl345_8h.html#a5e8e2514332efd14ec188331fba0b6fc" title="adxl345_set_default\l_config" alt="" coords="169,5,305,49"/></map>
+<area shape="rect" id="node3" href="adxl345_8h.html#a5e8e2514332efd14ec188331fba0b6fc" title="adxl345_set_default\l_config" alt="" coords="177,5,327,49"/></map>
 </div>
 </p>
 
@@ -274,7 +274,7 @@ Functions</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="adxl345__spi_8c_a2c3a96cfe3f877128294bc0b9e60a0fc_icgraph.png" border="0" usemap="#adxl345__spi_8c_a2c3a96cfe3f877128294bc0b9e60a0fc_icgraph" alt=""/></div>
 <map name="adxl345__spi_8c_a2c3a96cfe3f877128294bc0b9e60a0fc_icgraph" id="adxl345__spi_8c_a2c3a96cfe3f877128294bc0b9e60a0fc_icgraph">
-<area shape="rect" id="node3" href="imu__aspirin_8c.html#ad32faae58e391642ec8048cb11011998" title="imu_impl_init" alt="" coords="168,5,267,33"/></map>
+<area shape="rect" id="node3" href="imu__aspirin_8c.html#ad32faae58e391642ec8048cb11011998" title="imu_impl_init" alt="" coords="176,5,283,33"/></map>
 </div>
 </p>
 
@@ -307,7 +307,7 @@ Functions</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="adxl345__spi_8c_add9575711d304680e75e41b11bb9e511_cgraph.png" border="0" usemap="#adxl345__spi_8c_add9575711d304680e75e41b11bb9e511_cgraph" alt=""/></div>
 <map name="adxl345__spi_8c_add9575711d304680e75e41b11bb9e511_cgraph" id="adxl345__spi_8c_add9575711d304680e75e41b11bb9e511_cgraph">
-<area shape="rect" id="node3" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction." alt="" coords="176,5,261,33"/></map>
+<area shape="rect" id="node3" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction." alt="" coords="187,5,277,33"/></map>
 </div>
 </p>
 
@@ -318,7 +318,7 @@ Functions</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="adxl345__spi_8c_add9575711d304680e75e41b11bb9e511_icgraph.png" border="0" usemap="#adxl345__spi_8c_add9575711d304680e75e41b11bb9e511_icgraph" alt=""/></div>
 <map name="adxl345__spi_8c_add9575711d304680e75e41b11bb9e511_icgraph" id="adxl345__spi_8c_add9575711d304680e75e41b11bb9e511_icgraph">
-<area shape="rect" id="node3" href="adxl345__spi_8h.html#aa96b23656a71720f2d9ad4251e655775" title="convenience function: read or start configuration if not already initialized" alt="" coords="177,5,319,33"/><area shape="rect" id="node5" href="imu__aspirin_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="imu_periodic" alt="" coords="369,5,463,33"/></map>
+<area shape="rect" id="node3" href="adxl345__spi_8h.html#aa96b23656a71720f2d9ad4251e655775" title="convenience function: read or start configuration if not already initialized" alt="" coords="187,5,341,33"/><area shape="rect" id="node5" href="imu__aspirin_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="imu_periodic" alt="" coords="391,5,492,33"/></map>
 </div>
 </p>
 
@@ -359,7 +359,7 @@ Functions</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="adxl345__spi_8c_a058719d4e8c1943ada72dd98d56713d1_cgraph.png" border="0" usemap="#adxl345__spi_8c_a058719d4e8c1943ada72dd98d56713d1_cgraph" alt=""/></div>
 <map name="adxl345__spi_8c_a058719d4e8c1943ada72dd98d56713d1_cgraph" id="adxl345__spi_8c_a058719d4e8c1943ada72dd98d56713d1_cgraph">
-<area shape="rect" id="node3" href="adxl345_8h.html#ac6863633d46c7db4982eb0f78fec8a3f" title="adxl345_data_format" alt="" coords="235,5,376,33"/><area shape="rect" id="node5" href="adxl345__spi_8c.html#aae763e182a428fc73d70dcccda195417" title="adxl345_spi_write_to_reg" alt="" coords="221,55,389,83"/><area shape="rect" id="node7" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction." alt="" coords="437,55,523,83"/></map>
+<area shape="rect" id="node3" href="adxl345_8h.html#ac6863633d46c7db4982eb0f78fec8a3f" title="adxl345_data_format" alt="" coords="248,5,405,33"/><area shape="rect" id="node5" href="adxl345__spi_8c.html#aae763e182a428fc73d70dcccda195417" title="adxl345_spi_write_to_reg" alt="" coords="236,55,417,83"/><area shape="rect" id="node7" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction." alt="" coords="467,55,557,83"/></map>
 </div>
 </p>
 
@@ -370,7 +370,7 @@ Functions</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="adxl345__spi_8c_a058719d4e8c1943ada72dd98d56713d1_icgraph.png" border="0" usemap="#adxl345__spi_8c_a058719d4e8c1943ada72dd98d56713d1_icgraph" alt=""/></div>
 <map name="adxl345__spi_8c_a058719d4e8c1943ada72dd98d56713d1_icgraph" id="adxl345__spi_8c_a058719d4e8c1943ada72dd98d56713d1_icgraph">
-<area shape="rect" id="node3" href="adxl345__spi_8h.html#ad173a40977f6e9ba53b9e5a90edd82fd" title="adxl345_spi_event" alt="" coords="249,5,377,33"/><area shape="rect" id="node9" href="adxl345__spi_8h.html#a453c33c44618c770b2f3adc12bed69d7" title="adxl345_spi_start_configure" alt="" coords="223,55,404,83"/><area shape="rect" id="node5" href="imu__aspirin_8h.html#aa229c37c4339ad08d83c4d72f30a1fd5" title="imu_aspirin_event" alt="" coords="463,5,588,33"/><area shape="rect" id="node7" href="imu__aspirin_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="655,5,732,33"/><area shape="rect" id="node11" href="adxl345__spi_8h.html#aa96b23656a71720f2d9ad4251e655775" title="convenience function: read or start configuration if not already initialized" alt="" coords="455,55,596,83"/><area shape="rect" id="node13" href="imu__aspirin_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="imu_periodic" alt="" coords="647,55,740,83"/></map>
+<area shape="rect" id="node3" href="adxl345__spi_8h.html#ad173a40977f6e9ba53b9e5a90edd82fd" title="adxl345_spi_event" alt="" coords="265,5,404,33"/><area shape="rect" id="node9" href="adxl345__spi_8h.html#a453c33c44618c770b2f3adc12bed69d7" title="adxl345_spi_start_configure" alt="" coords="235,55,435,83"/><area shape="rect" id="node5" href="imu__aspirin_8h.html#aa229c37c4339ad08d83c4d72f30a1fd5" title="imu_aspirin_event" alt="" coords="491,5,629,33"/><area shape="rect" id="node7" href="imu__aspirin_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="696,5,779,33"/><area shape="rect" id="node11" href="adxl345__spi_8h.html#aa96b23656a71720f2d9ad4251e655775" title="convenience function: read or start configuration if not already initialized" alt="" coords="483,55,637,83"/><area shape="rect" id="node13" href="imu__aspirin_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="imu_periodic" alt="" coords="687,55,788,83"/></map>
 </div>
 </p>
 
@@ -403,7 +403,7 @@ Functions</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="adxl345__spi_8c_a453c33c44618c770b2f3adc12bed69d7_cgraph.png" border="0" usemap="#adxl345__spi_8c_a453c33c44618c770b2f3adc12bed69d7_cgraph" alt=""/></div>
 <map name="adxl345__spi_8c_a453c33c44618c770b2f3adc12bed69d7_cgraph" id="adxl345__spi_8c_a453c33c44618c770b2f3adc12bed69d7_cgraph">
-<area shape="rect" id="node3" href="adxl345__spi_8c.html#a058719d4e8c1943ada72dd98d56713d1" title="adxl345_spi_send_config" alt="" coords="239,30,404,58"/><area shape="rect" id="node5" href="adxl345_8h.html#ac6863633d46c7db4982eb0f78fec8a3f" title="adxl345_data_format" alt="" coords="467,5,608,33"/><area shape="rect" id="node7" href="adxl345__spi_8c.html#aae763e182a428fc73d70dcccda195417" title="adxl345_spi_write_to_reg" alt="" coords="453,55,621,83"/><area shape="rect" id="node9" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction." alt="" coords="669,55,755,83"/></map>
+<area shape="rect" id="node3" href="adxl345__spi_8c.html#a058719d4e8c1943ada72dd98d56713d1" title="adxl345_spi_send_config" alt="" coords="255,30,433,58"/><area shape="rect" id="node5" href="adxl345_8h.html#ac6863633d46c7db4982eb0f78fec8a3f" title="adxl345_data_format" alt="" coords="496,5,653,33"/><area shape="rect" id="node7" href="adxl345__spi_8c.html#aae763e182a428fc73d70dcccda195417" title="adxl345_spi_write_to_reg" alt="" coords="484,55,665,83"/><area shape="rect" id="node9" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction." alt="" coords="715,55,805,83"/></map>
 </div>
 </p>
 
@@ -414,7 +414,7 @@ Functions</h2></td></tr>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="adxl345__spi_8c_a453c33c44618c770b2f3adc12bed69d7_icgraph.png" border="0" usemap="#adxl345__spi_8c_a453c33c44618c770b2f3adc12bed69d7_icgraph" alt=""/></div>
 <map name="adxl345__spi_8c_a453c33c44618c770b2f3adc12bed69d7_icgraph" id="adxl345__spi_8c_a453c33c44618c770b2f3adc12bed69d7_icgraph">
-<area shape="rect" id="node3" href="adxl345__spi_8h.html#aa96b23656a71720f2d9ad4251e655775" title="convenience function: read or start configuration if not already initialized" alt="" coords="239,5,380,33"/><area shape="rect" id="node5" href="imu__aspirin_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="imu_periodic" alt="" coords="431,5,524,33"/></map>
+<area shape="rect" id="node3" href="adxl345__spi_8h.html#aa96b23656a71720f2d9ad4251e655775" title="convenience function: read or start configuration if not already initialized" alt="" coords="253,5,408,33"/><area shape="rect" id="node5" href="imu__aspirin_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="imu_periodic" alt="" coords="457,5,559,33"/></map>
 </div>
 </p>
 
@@ -471,7 +471,7 @@ Functions</h2></td></tr>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="adxl345__spi_8c_aae763e182a428fc73d70dcccda195417_cgraph.png" border="0" usemap="#adxl345__spi_8c_aae763e182a428fc73d70dcccda195417_cgraph" alt=""/></div>
 <map name="adxl345__spi_8c_aae763e182a428fc73d70dcccda195417_cgraph" id="adxl345__spi_8c_aae763e182a428fc73d70dcccda195417_cgraph">
-<area shape="rect" id="node3" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction." alt="" coords="221,5,307,33"/></map>
+<area shape="rect" id="node3" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction." alt="" coords="237,5,328,33"/></map>
 </div>
 </p>
 
@@ -482,7 +482,7 @@ Functions</h2></td></tr>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="adxl345__spi_8c_aae763e182a428fc73d70dcccda195417_icgraph.png" border="0" usemap="#adxl345__spi_8c_aae763e182a428fc73d70dcccda195417_icgraph" alt=""/></div>
 <map name="adxl345__spi_8c_aae763e182a428fc73d70dcccda195417_icgraph" id="adxl345__spi_8c_aae763e182a428fc73d70dcccda195417_icgraph">
-<area shape="rect" id="node3" href="adxl345__spi_8c.html#a058719d4e8c1943ada72dd98d56713d1" title="adxl345_spi_send_config" alt="" coords="223,30,388,58"/><area shape="rect" id="node5" href="adxl345__spi_8h.html#ad173a40977f6e9ba53b9e5a90edd82fd" title="adxl345_spi_event" alt="" coords="465,5,593,33"/><area shape="rect" id="node11" href="adxl345__spi_8h.html#a453c33c44618c770b2f3adc12bed69d7" title="adxl345_spi_start_configure" alt="" coords="439,55,620,83"/><area shape="rect" id="node7" href="imu__aspirin_8h.html#aa229c37c4339ad08d83c4d72f30a1fd5" title="imu_aspirin_event" alt="" coords="679,5,804,33"/><area shape="rect" id="node9" href="imu__aspirin_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="871,5,948,33"/><area shape="rect" id="node13" href="adxl345__spi_8h.html#aa96b23656a71720f2d9ad4251e655775" title="convenience function: read or start configuration if not already initialized" alt="" coords="671,55,812,83"/><area shape="rect" id="node15" href="imu__aspirin_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="imu_periodic" alt="" coords="863,55,956,83"/></map>
+<area shape="rect" id="node3" href="adxl345__spi_8c.html#a058719d4e8c1943ada72dd98d56713d1" title="adxl345_spi_send_config" alt="" coords="239,30,417,58"/><area shape="rect" id="node5" href="adxl345__spi_8h.html#ad173a40977f6e9ba53b9e5a90edd82fd" title="adxl345_spi_event" alt="" coords="497,5,636,33"/><area shape="rect" id="node11" href="adxl345__spi_8h.html#a453c33c44618c770b2f3adc12bed69d7" title="adxl345_spi_start_configure" alt="" coords="467,55,667,83"/><area shape="rect" id="node7" href="imu__aspirin_8h.html#aa229c37c4339ad08d83c4d72f30a1fd5" title="imu_aspirin_event" alt="" coords="723,5,861,33"/><area shape="rect" id="node9" href="imu__aspirin_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="928,5,1011,33"/><area shape="rect" id="node13" href="adxl345__spi_8h.html#aa96b23656a71720f2d9ad4251e655775" title="convenience function: read or start configuration if not already initialized" alt="" coords="715,55,869,83"/><area shape="rect" id="node15" href="imu__aspirin_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="imu_periodic" alt="" coords="919,55,1020,83"/></map>
 </div>
 </p>
 
@@ -494,7 +494,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="adxl345__spi_8c.html">adxl345_spi.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:11 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:04 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

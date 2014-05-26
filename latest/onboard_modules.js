@@ -14,7 +14,6 @@ var onboard_modules =
       [ "Multi modules", "onboard_modules.html#modules_category_multi", null ],
       [ "Nav modules", "onboard_modules.html#modules_category_nav", null ],
       [ "Sensors modules", "onboard_modules.html#modules_category_sensors", null ],
-      [ "Sonar modules", "onboard_modules.html#modules_category_sonar", null ],
       [ "Vehicle_Interface modules", "onboard_modules.html#modules_category_vehicle_interface", null ],
       [ "Misc modules", "onboard_modules.html#modules_category_misc", null ]
     ] ],
@@ -190,6 +189,9 @@ var onboard_modules =
       ] ]
     ] ],
     [ "Extra datalink (PPRZ transport)", "module__extra_dl.html", [
+      [ "Module configuration options", "module__extra_dl.html#configuration", [
+        [ "Configure Options", "module__extra_dl.html#configure", null ]
+      ] ],
       [ "Module functions", "module__extra_dl.html#functions", [
         [ "Event Functions", "module__extra_dl.html#event_functions", null ]
       ] ],
@@ -225,7 +227,7 @@ var onboard_modules =
         [ "Raw xtend_rssi.xml file:", "module__xtend_rssi.html#module_xml__xtend_rssi", null ]
       ] ]
     ] ],
-    [ "Digital camera control (trigger using led)", "module__digital_cam.html", [
+    [ "Digital camera control (trigger using GPIO)", "module__digital_cam.html", [
       [ "Module configuration options", "module__digital_cam.html#configuration", [
         [ "Define Options", "module__digital_cam.html#define", null ]
       ] ],
@@ -485,6 +487,9 @@ var onboard_modules =
       ] ]
     ] ],
     [ "SHTxx humidity sensor", "module__humid_sht.html", [
+      [ "Module configuration options", "module__humid_sht.html#configuration", [
+        [ "Define Options", "module__humid_sht.html#define", null ]
+      ] ],
       [ "Module functions", "module__humid_sht.html#functions", [
         [ "Init Functions", "module__humid_sht.html#init_functions", null ],
         [ "Periodic Functions", "module__humid_sht.html#periodic_functions", null ]
@@ -542,6 +547,17 @@ var onboard_modules =
         [ "Header Files", "module__light_temt.html#headers", null ],
         [ "Source Files", "module__light_temt.html#sources", null ],
         [ "Raw light_temt.xml file:", "module__light_temt.html#module_xml__light_temt", null ]
+      ] ]
+    ] ],
+    [ "Data acquisition board used by Meteo France", "module__meteo_france_daq.html", [
+      [ "Module functions", "module__meteo_france_daq.html#functions", [
+        [ "Init Functions", "module__meteo_france_daq.html#init_functions", null ],
+        [ "Periodic Functions", "module__meteo_france_daq.html#periodic_functions", null ]
+      ] ],
+      [ "Files", "module__meteo_france_daq.html#files", [
+        [ "Header Files", "module__meteo_france_daq.html#headers", null ],
+        [ "Source Files", "module__meteo_france_daq.html#sources", null ],
+        [ "Raw meteo_france_DAQ.xml file:", "module__meteo_france_daq.html#module_xml__meteo_france_daq", null ]
       ] ]
     ] ],
     [ "LM75 temparature sensor", "module__temp_lm75.html", [
@@ -616,6 +632,19 @@ var onboard_modules =
         [ "Raw windturbine.xml file:", "module__windturbine.html#module_xml__windturbine", null ]
       ] ]
     ] ],
+    [ "Follow a certain AC_ID trough remote GPS", "module__follow.html", [
+      [ "Module configuration options", "module__follow.html#configuration", [
+        [ "Define Options", "module__follow.html#define", null ]
+      ] ],
+      [ "Module functions", "module__follow.html#functions", [
+        [ "Init Functions", "module__follow.html#init_functions", null ]
+      ] ],
+      [ "Files", "module__follow.html#files", [
+        [ "Header Files", "module__follow.html#headers", null ],
+        [ "Source Files", "module__follow.html#sources", null ],
+        [ "Raw follow.xml file:", "module__follow.html#module_xml__follow", null ]
+      ] ]
+    ] ],
     [ "Formation flight control", "module__formation_flight.html", [
       [ "Module functions", "module__formation_flight.html#functions", [
         [ "Init Functions", "module__formation_flight.html#init_functions", null ]
@@ -647,6 +676,16 @@ var onboard_modules =
         [ "Raw tcas.xml file:", "module__tcas.html#module_xml__tcas", null ]
       ] ]
     ] ],
+    [ "Takeoff functions for bungee takeoff", "module__nav_bungee_takeoff.html", [
+      [ "Module configuration options", "module__nav_bungee_takeoff.html#configuration", [
+        [ "Airframe file section", "module__nav_bungee_takeoff.html#af_section", null ]
+      ] ],
+      [ "Files", "module__nav_bungee_takeoff.html#files", [
+        [ "Header Files", "module__nav_bungee_takeoff.html#headers", null ],
+        [ "Source Files", "module__nav_bungee_takeoff.html#sources", null ],
+        [ "Raw nav_bungee_takeoff.xml file:", "module__nav_bungee_takeoff.html#module_xml__nav_bungee_takeoff", null ]
+      ] ]
+    ] ],
     [ "Catapult", "module__nav_catapult.html", [
       [ "Module configuration options", "module__nav_catapult.html#configuration", [
         [ "Define Options", "module__nav_catapult.html#define", null ]
@@ -661,11 +700,105 @@ var onboard_modules =
         [ "Raw nav_catapult.xml file:", "module__nav_catapult.html#module_xml__nav_catapult", null ]
       ] ]
     ] ],
-    [ "Zamboni pattern survey for fixedwings", "module__zamboni_survey.html", [
-      [ "Files", "module__zamboni_survey.html#files", [
-        [ "Header Files", "module__zamboni_survey.html#headers", null ],
-        [ "Source Files", "module__zamboni_survey.html#sources", null ],
-        [ "Raw zamboni_survey.xml file:", "module__zamboni_survey.html#module_xml__zamboni_survey", null ]
+    [ "Fixedwing Navigation in a cube towards a center", "module__nav_cube.html", [
+      [ "Files", "module__nav_cube.html#files", [
+        [ "Header Files", "module__nav_cube.html#headers", null ],
+        [ "Source Files", "module__nav_cube.html#sources", null ],
+        [ "Raw nav_cube.xml file:", "module__nav_cube.html#module_xml__nav_cube", null ]
+      ] ]
+    ] ],
+    [ "Compute the dropping point for a fixedwing aircraft", "module__nav_drop.html", [
+      [ "Files", "module__nav_drop.html#files", [
+        [ "Header Files", "module__nav_drop.html#headers", null ],
+        [ "Source Files", "module__nav_drop.html#sources", null ],
+        [ "Raw nav_drop.xml file:", "module__nav_drop.html#module_xml__nav_drop", null ]
+      ] ]
+    ] ],
+    [ "Make a flower navigation pattern", "module__nav_flower.html", [
+      [ "Files", "module__nav_flower.html#files", [
+        [ "Header Files", "module__nav_flower.html#headers", null ],
+        [ "Source Files", "module__nav_flower.html#sources", null ],
+        [ "Raw nav_flower.xml file:", "module__nav_flower.html#module_xml__nav_flower", null ]
+      ] ]
+    ] ],
+    [ "gps landing system", "module__nav_gls.html", [
+      [ "Files", "module__nav_gls.html#files", [
+        [ "Header Files", "module__nav_gls.html#headers", null ],
+        [ "Source Files", "module__nav_gls.html#sources", null ],
+        [ "Raw nav_gls.xml file:", "module__nav_gls.html#module_xml__nav_gls", null ]
+      ] ]
+    ] ],
+    [ "Fixedwing navigation along a line with nice U-turns", "module__nav_line.html", [
+      [ "Files", "module__nav_line.html#files", [
+        [ "Header Files", "module__nav_line.html#headers", null ],
+        [ "Source Files", "module__nav_line.html#sources", null ],
+        [ "Raw nav_line.xml file:", "module__nav_line.html#module_xml__nav_line", null ]
+      ] ]
+    ] ],
+    [ "navigate along a border line (line 1-2) with turns in the same direction", "module__nav_line_border.html", [
+      [ "Files", "module__nav_line_border.html#files", [
+        [ "Header Files", "module__nav_line_border.html#headers", null ],
+        [ "Source Files", "module__nav_line_border.html#sources", null ],
+        [ "Raw nav_line_border.xml file:", "module__nav_line_border.html#module_xml__nav_line_border", null ]
+      ] ]
+    ] ],
+    [ "Fly along a line", "module__nav_line_osam.html", [
+      [ "Files", "module__nav_line_osam.html#files", [
+        [ "Header Files", "module__nav_line_osam.html#headers", null ],
+        [ "Source Files", "module__nav_line_osam.html#sources", null ],
+        [ "Raw nav_line_osam.xml file:", "module__nav_line_osam.html#module_xml__nav_line_osam", null ]
+      ] ]
+    ] ],
+    [ "Smooth navigation to wp_a along an arc (around wp_cd), a segment (from wp_rd to wp_ta) and a second arc (around wp_ca)", "module__nav_smooth.html", [
+      [ "Files", "module__nav_smooth.html#files", [
+        [ "Header Files", "module__nav_smooth.html#headers", null ],
+        [ "Source Files", "module__nav_smooth.html#sources", null ],
+        [ "Raw nav_smooth.xml file:", "module__nav_smooth.html#module_xml__nav_smooth", null ]
+      ] ]
+    ] ],
+    [ "Fixedwing navigation in a spiral/helix", "module__nav_spiral.html", [
+      [ "Module configuration options", "module__nav_spiral.html#configuration", [
+        [ "Define Options", "module__nav_spiral.html#define", null ]
+      ] ],
+      [ "Files", "module__nav_spiral.html#files", [
+        [ "Header Files", "module__nav_spiral.html#headers", null ],
+        [ "Source Files", "module__nav_spiral.html#sources", null ],
+        [ "Raw nav_spiral.xml file:", "module__nav_spiral.html#module_xml__nav_spiral", null ]
+      ] ]
+    ] ],
+    [ "Disc Survey", "module__nav_survey_disc.html", [
+      [ "Files", "module__nav_survey_disc.html#files", [
+        [ "Header Files", "module__nav_survey_disc.html#headers", null ],
+        [ "Source Files", "module__nav_survey_disc.html#sources", null ],
+        [ "Raw nav_survey_disc.xml file:", "module__nav_survey_disc.html#module_xml__nav_survey_disc", null ]
+      ] ]
+    ] ],
+    [ "Polygon survey from OSAM", "module__nav_survey_poly_osam.html", [
+      [ "Files", "module__nav_survey_poly_osam.html#files", [
+        [ "Header Files", "module__nav_survey_poly_osam.html#headers", null ],
+        [ "Source Files", "module__nav_survey_poly_osam.html#sources", null ],
+        [ "Raw nav_survey_poly_osam.xml file:", "module__nav_survey_poly_osam.html#module_xml__nav_survey_poly_osam", null ]
+      ] ]
+    ] ],
+    [ "Survey a polygon with a fixedwing", "module__nav_survey_polygon.html", [
+      [ "Files", "module__nav_survey_polygon.html#files", [
+        [ "Header Files", "module__nav_survey_polygon.html#headers", null ],
+        [ "Source Files", "module__nav_survey_polygon.html#sources", null ],
+        [ "Raw nav_survey_polygon.xml file:", "module__nav_survey_polygon.html#module_xml__nav_survey_polygon", null ]
+      ] ]
+    ] ],
+    [ "Zamboni pattern survey for fixedwings", "module__nav_survey_zamboni.html", [
+      [ "Files", "module__nav_survey_zamboni.html#files", [
+        [ "Header Files", "module__nav_survey_zamboni.html#headers", null ],
+        [ "Source Files", "module__nav_survey_zamboni.html#sources", null ],
+        [ "Raw nav_survey_zamboni.xml file:", "module__nav_survey_zamboni.html#module_xml__nav_survey_zamboni", null ]
+      ] ]
+    ] ],
+    [ "Copy of nav line with altitude changes at every sweep", "module__nav_vertical_raster.html", [
+      [ "Files", "module__nav_vertical_raster.html#files", [
+        [ "Header Files", "module__nav_vertical_raster.html#headers", null ],
+        [ "Source Files", "module__nav_vertical_raster.html#sources", null ],
+        [ "Raw nav_vertical_raster.xml file:", "module__nav_vertical_raster.html#module_xml__nav_vertical_raster", null ]
       ] ]
     ] ],
     [ "Angle of Attack using internal ADC", "module__aoa_adc.html", [
@@ -1027,36 +1160,6 @@ var onboard_modules =
         [ "Raw trigger_ext.xml file:", "module__trigger_ext.html#module_xml__trigger_ext", null ]
       ] ]
     ] ],
-    [ "Sonar ADC driver", "module__sonar_adc.html", [
-      [ "Module configuration options", "module__sonar_adc.html#configuration", [
-        [ "Configure Options", "module__sonar_adc.html#configure", null ],
-        [ "Define Options", "module__sonar_adc.html#define", null ]
-      ] ],
-      [ "Module functions", "module__sonar_adc.html#functions", [
-        [ "Init Functions", "module__sonar_adc.html#init_functions", null ],
-        [ "Periodic Functions", "module__sonar_adc.html#periodic_functions", null ]
-      ] ],
-      [ "Files", "module__sonar_adc.html#files", [
-        [ "Header Files", "module__sonar_adc.html#headers", null ],
-        [ "Source Files", "module__sonar_adc.html#sources", null ],
-        [ "Raw sonar_adc.xml file:", "module__sonar_adc.html#module_xml__sonar_adc", null ]
-      ] ]
-    ] ],
-    [ "Sonar ADC (INS bindings)", "module__sonar_adc_ins.html", [
-      [ "Module configuration options", "module__sonar_adc_ins.html#configuration", [
-        [ "Configure Options", "module__sonar_adc_ins.html#configure", null ]
-      ] ],
-      [ "Module functions", "module__sonar_adc_ins.html#functions", [
-        [ "Init Functions", "module__sonar_adc_ins.html#init_functions", null ],
-        [ "Event Functions", "module__sonar_adc_ins.html#event_functions", null ],
-        [ "Periodic Functions", "module__sonar_adc_ins.html#periodic_functions", null ]
-      ] ],
-      [ "Files", "module__sonar_adc_ins.html#files", [
-        [ "Header Files", "module__sonar_adc_ins.html#headers", null ],
-        [ "Source Files", "module__sonar_adc_ins.html#sources", null ],
-        [ "Raw sonar_adc_ins.xml file:", "module__sonar_adc_ins.html#module_xml__sonar_adc_ins", null ]
-      ] ]
-    ] ],
     [ "Vehicule Interface over Datalink", "module__vehicle_interface_datalink.html", [
       [ "Module functions", "module__vehicle_interface_datalink.html#functions", [
         [ "Init Functions", "module__vehicle_interface_datalink.html#init_functions", null ],
@@ -1182,6 +1285,16 @@ var onboard_modules =
         [ "Raw gain_scheduling.xml file:", "module__gain_scheduling.html#module_xml__gain_scheduling", null ]
       ] ]
     ] ],
+    [ "Gas Engine Idle", "module__gas_engine_idle.html", [
+      [ "Module functions", "module__gas_engine_idle.html#functions", [
+        [ "Periodic Functions", "module__gas_engine_idle.html#periodic_functions", null ]
+      ] ],
+      [ "Files", "module__gas_engine_idle.html#files", [
+        [ "Header Files", "module__gas_engine_idle.html#headers", null ],
+        [ "Source Files", "module__gas_engine_idle.html#sources", null ],
+        [ "Raw gas_engine_idle.xml file:", "module__gas_engine_idle.html#module_xml__gas_engine_idle", null ]
+      ] ]
+    ] ],
     [ "Generic com", "module__generic_com.html", [
       [ "Module configuration options", "module__generic_com.html#configuration", [
         [ "Define Options", "module__generic_com.html#define", null ]
@@ -1197,7 +1310,7 @@ var onboard_modules =
         [ "Raw generic_com.xml file:", "module__generic_com.html#module_xml__generic_com", null ]
       ] ]
     ] ],
-    [ "Geo Mag modell", "module__geo_mag.html", [
+    [ "GeoMagnetic field vector", "module__geo_mag.html", [
       [ "Module functions", "module__geo_mag.html#functions", [
         [ "Init Functions", "module__geo_mag.html#init_functions", null ],
         [ "Event Functions", "module__geo_mag.html#event_functions", null ],
@@ -1255,6 +1368,21 @@ var onboard_modules =
         [ "Raw high_speed_logger_spi_link.xml file:", "module__high_speed_logger_spi_link.html#module_xml__high_speed_logger_spi_link", null ]
       ] ]
     ] ],
+    [ "Graupner HOTT telemetry control module", "module__hott_telemetry.html", [
+      [ "Module configuration options", "module__hott_telemetry.html#configuration", [
+        [ "Configure Options", "module__hott_telemetry.html#configure", null ]
+      ] ],
+      [ "Module functions", "module__hott_telemetry.html#functions", [
+        [ "Init Functions", "module__hott_telemetry.html#init_functions", null ],
+        [ "Event Functions", "module__hott_telemetry.html#event_functions", null ],
+        [ "Periodic Functions", "module__hott_telemetry.html#periodic_functions", null ]
+      ] ],
+      [ "Files", "module__hott_telemetry.html#files", [
+        [ "Header Files", "module__hott_telemetry.html#headers", null ],
+        [ "Source Files", "module__hott_telemetry.html#sources", null ],
+        [ "Raw hott_telemetry.xml file:", "module__hott_telemetry.html#module_xml__hott_telemetry", null ]
+      ] ]
+    ] ],
     [ "EA DOG-M163 LCD (SPI)", "module__lcd_dogm.html", [
       [ "Module functions", "module__lcd_dogm.html#functions", [
         [ "Init Functions", "module__lcd_dogm.html#init_functions", null ]
@@ -1303,7 +1431,8 @@ var onboard_modules =
     ] ],
     [ "Interface for mission control of fixed wing aircraft", "module__mission_fw.html", [
       [ "Module functions", "module__mission_fw.html#functions", [
-        [ "Init Functions", "module__mission_fw.html#init_functions", null ]
+        [ "Init Functions", "module__mission_fw.html#init_functions", null ],
+        [ "Periodic Functions", "module__mission_fw.html#periodic_functions", null ]
       ] ],
       [ "Files", "module__mission_fw.html#files", [
         [ "Header Files", "module__mission_fw.html#headers", null ],
@@ -1374,6 +1503,21 @@ var onboard_modules =
         [ "Header Files", "module__servo_switch.html#headers", null ],
         [ "Source Files", "module__servo_switch.html#sources", null ],
         [ "Raw servo_switch.xml file:", "module__servo_switch.html#module_xml__servo_switch", null ]
+      ] ]
+    ] ],
+    [ "Sonar ADC driver", "module__sonar_adc.html", [
+      [ "Module configuration options", "module__sonar_adc.html#configuration", [
+        [ "Configure Options", "module__sonar_adc.html#configure", null ],
+        [ "Define Options", "module__sonar_adc.html#define", null ]
+      ] ],
+      [ "Module functions", "module__sonar_adc.html#functions", [
+        [ "Init Functions", "module__sonar_adc.html#init_functions", null ],
+        [ "Periodic Functions", "module__sonar_adc.html#periodic_functions", null ]
+      ] ],
+      [ "Files", "module__sonar_adc.html#files", [
+        [ "Header Files", "module__sonar_adc.html#headers", null ],
+        [ "Source Files", "module__sonar_adc.html#sources", null ],
+        [ "Raw sonar_adc.xml file:", "module__sonar_adc.html#module_xml__sonar_adc", null ]
       ] ]
     ] ]
 ];

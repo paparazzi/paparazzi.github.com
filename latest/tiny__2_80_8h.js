@@ -22,8 +22,6 @@ var tiny__2_80_8h =
     [ "LED_2_PIN", "tiny__2_80_8h.html#a78579f743b58c20ec8d10120d8381148", null ],
     [ "LED_3_BANK", "tiny__2_80_8h.html#a7dfa5391e683db824c2a546dd5d00746", null ],
     [ "LED_3_PIN", "tiny__2_80_8h.html#a5ea98da36d05b171b54c342bcf4a35f7", null ],
-    [ "LED_4_BANK", "tiny__2_80_8h.html#a7631476c940b199dfc9d1f6dbc5a931d", null ],
-    [ "LED_4_PIN", "tiny__2_80_8h.html#a85f36fccd0bafe6be62608812b56e2ca", null ],
     [ "MAX1168_EOC_EINT", "tiny__2_80_8h.html#af1e0361313b85ea3850e3d83b185d639", null ],
     [ "MAX1168_EOC_PIN", "tiny__2_80_8h.html#a0bcba718f0d39a93820b2691de8c1ea3", null ],
     [ "MAX1168_EOC_PINSEL", "tiny__2_80_8h.html#aaa37fe060b308c5808f70b01dda594af", null ],
@@ -34,7 +32,7 @@ var tiny__2_80_8h =
     [ "PBSD_VAL", "tiny__2_80_8h.html#ab6906a1f3d77eb3e6cd99414d714fe90", null ],
     [ "PCLK", "tiny__2_80_8h.html#a4e4204874a63b2a01811ee2819285f58", null ],
     [ "PLL_MUL", "tiny__2_80_8h.html#a43abb7ff318cb315c8b5134ee8d96fd2", null ],
-    [ "POWER_SWITCH_LED", "tiny__2_80_8h.html#a3a5cfe68fa39b534d190c7bfaa6d8e33", null ],
+    [ "POWER_SWITCH_GPIO", "tiny__2_80_8h.html#a76069dd8b39c52bab9027c808ad505a9", null ],
     [ "PPM_CCR_CRF", "tiny__2_80_8h.html#ad25058c1245a5a986632aae0f3f91ebc", null ],
     [ "PPM_CCR_CRI", "tiny__2_80_8h.html#a527cf6cfbed24e043ed4ee710baed3f1", null ],
     [ "PPM_CCR_CRR", "tiny__2_80_8h.html#a9554c21ac4db9f0b888079de6c70521a", null ],
@@ -57,6 +55,5 @@ var tiny__2_80_8h =
     [ "USE_AD1_5", "tiny__2_80_8h.html#a7d4b4afb86933a2a96479ed256293f01", null ],
     [ "USE_LED_1", "tiny__2_80_8h.html#ae7a2417096c8215257d073da4d6d4c5f", null ],
     [ "USE_LED_2", "tiny__2_80_8h.html#aad615ff6a6f5e1f55769b625fd8ec8bf", null ],
-    [ "USE_LED_3", "tiny__2_80_8h.html#a4da08b59c725550efa312cf16ecdd77c", null ],
-    [ "USE_LED_4", "tiny__2_80_8h.html#ae74a702840b15e71530a2716b1ef497c", null ]
+    [ "USE_LED_3", "tiny__2_80_8h.html#a4da08b59c725550efa312cf16ecdd77c", null ]
 ];

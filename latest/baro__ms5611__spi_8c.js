@@ -1,6 +1,5 @@
 var baro__ms5611__spi_8c =
 [
-    [ "DOWNLINK_DEVICE", "baro__ms5611__spi_8c.html#a2978a46b47cbc9d17a0924014ff9658b", null ],
     [ "MS5611_SLAVE_IDX", "baro__ms5611__spi_8c.html#afdce77677314af8a6cf2b497e536c94e", null ],
     [ "MS5611_SPI_DEV", "baro__ms5611__spi_8c.html#afd80227f5b8dc165b04d4ee75a644115", null ],
     [ "baro_ms5611_event", "baro__ms5611__spi_8c.html#afd15b3c514cb6c7763b0db2788665185", null ],

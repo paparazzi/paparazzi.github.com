@@ -1,16 +1,20 @@
 <map id="ahrs_update_gps" name="ahrs_update_gps">
-<area shape="rect" id="node3" href="$ahrs__float__cmpl_8c.html#a542422de172f1f25b7987850825cb587" title="Hard reset yaw to a heading." alt="" coords="207,55,351,83"/>
-<area shape="rect" id="node15" href="$ahrs__float__cmpl_8c.html#a2e1662dfa78e68c773e6d60e0a46cea2" title="Update yaw based on a heading measurement." alt="" coords="207,106,351,134"/>
-<area shape="rect" id="node23" href="$imu__chimu_8c.html#a70dfa9eb8b0dff840f01869418c7de61" title="CHIMU_Checksum" alt="" coords="212,157,345,185"/>
-<area shape="rect" id="node27" href="$group__state__wind__airspeed.html#gafca4742430c7c68d21649b89096dde8a" title="Get horizontal windspeed (float)." alt="" coords="176,207,381,235"/>
-<area shape="rect" id="node5" href="$group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float)." alt="" coords="445,5,624,33"/>
-<area shape="rect" id="node11" href="$group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float)." alt="" coords="445,55,624,83"/>
-<area shape="rect" id="node7" href="$group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float)." alt="" coords="691,5,832,33"/>
-<area shape="rect" id="node9" href="$group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title="orientationCalcQuat_f" alt="" coords="885,5,1032,33"/>
-<area shape="rect" id="node13" href="$group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="691,55,832,83"/>
-<area shape="rect" id="node17" href="$group__state__attitude.html#ga6eb4f715759518e5703890eca116ce8d" title="Get vehicle body attitude rotation matrix (float)." alt="" coords="444,106,625,134"/>
-<area shape="rect" id="node19" href="$group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float)." alt="" coords="689,106,833,134"/>
-<area shape="rect" id="node21" href="$group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title="orientationCalcRMat_f" alt="" coords="884,106,1033,134"/>
-<area shape="rect" id="node25" href="$imu__chimu_8c.html#a2c788af1398c314b3985546d7177df54" title="UpdateCRC" alt="" coords="489,157,580,185"/>
-<area shape="rect" id="node29" href="$group__state__wind__airspeed.html#gac9957602767f1a6c2a00c97e999ce48c" title="stateCalcHorizontalWindspeed_f" alt="" coords="429,207,640,235"/>
+<area shape="rect" id="node3" href="$ahrs__float__cmpl_8c.html#a542422de172f1f25b7987850825cb587" title="Hard reset yaw to a heading." alt="" coords="220,55,377,83"/>
+<area shape="rect" id="node15" href="$ahrs__float__cmpl_8c.html#a2e1662dfa78e68c773e6d60e0a46cea2" title="Update yaw based on a heading measurement." alt="" coords="219,106,379,134"/>
+<area shape="rect" id="node23" href="$imu__chimu_8c.html#a70dfa9eb8b0dff840f01869418c7de61" title="CHIMU_Checksum" alt="" coords="229,157,368,185"/>
+<area shape="rect" id="node27" href="$pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="224,207,373,235"/>
+<area shape="rect" id="node31" href="$pprz__geodetic__float_8c.html#ac36c2e51de3064e3919a1f58f884342e" title="ned_of_ecef_vect_f" alt="" coords="227,258,371,286"/>
+<area shape="rect" id="node35" href="$group__state__wind__airspeed.html#gafca4742430c7c68d21649b89096dde8a" title="Get horizontal windspeed (float)." alt="" coords="188,309,409,337"/>
+<area shape="rect" id="node5" href="$group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float)." alt="" coords="477,5,667,33"/>
+<area shape="rect" id="node11" href="$group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float)." alt="" coords="477,55,667,83"/>
+<area shape="rect" id="node7" href="$group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float)." alt="" coords="735,5,889,33"/>
+<area shape="rect" id="node9" href="$group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title="orientationCalcQuat_f" alt="" coords="940,5,1100,33"/>
+<area shape="rect" id="node13" href="$group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="735,55,889,83"/>
+<area shape="rect" id="node17" href="$group__state__attitude.html#ga6eb4f715759518e5703890eca116ce8d" title="Get vehicle body attitude rotation matrix (float)." alt="" coords="476,106,668,134"/>
+<area shape="rect" id="node19" href="$group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float)." alt="" coords="733,106,891,134"/>
+<area shape="rect" id="node21" href="$group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title="orientationCalcRMat_f" alt="" coords="940,106,1100,134"/>
+<area shape="rect" id="node25" href="$imu__chimu_8c.html#a2c788af1398c314b3985546d7177df54" title="UpdateCRC" alt="" coords="525,157,619,185"/>
+<area shape="rect" id="node29" href="$pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="497,207,647,235"/>
+<area shape="rect" id="node33" href="$pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title="enu_of_ecef_vect_f" alt="" coords="500,258,644,286"/>
+<area shape="rect" id="node37" href="$group__state__wind__airspeed.html#gac9957602767f1a6c2a00c97e999ce48c" title="stateCalcHorizontalWindspeed_f" alt="" coords="459,309,685,337"/>
 </map>

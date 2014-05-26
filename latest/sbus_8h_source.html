@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -131,54 +131,37 @@ $(document).ready(function(){initNavTree('sbus_8h_source.html','');});
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#ifndef RC_SBUS_H</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define RC_SBUS_H</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;std.h&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="sbus__common_8h.html" title="Futaba SBUS decoder.">subsystems/radio_control/sbus_common.h</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="sbus_8h.html#aad33b862bb6166593e16a30779799b51">   35</a></span>&#160;<span class="preprocessor">#define RC_PPM_TICKS_OF_USEC(_v)        (_v)</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="sbus_8h.html#a89dbcbaebdf3485e1fdecc29fb6f16db">   36</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define RC_PPM_SIGNED_TICKS_OF_USEC(_v) (_v)</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="sbus_8h.html#a962b9942b2dfacf94028a3c538341b4e">   37</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define USEC_OF_RC_PPM_TICKS(_v)        (_v)</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &quot;generated/radio.h&quot;</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="sbus_8h.html#ab8f86c137438a99b0143cc90312ee571">   54</a></span>&#160;<span class="preprocessor">#define SBUS_BUF_LENGTH 24</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="sbus_8h.html#afb790236a604cd21678b157b429e16fa">   55</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SBUS_NB_CHANNEL 16</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="code" href="sbus_8h.html#a1beed9c63b07301d72b3516543545652">   56</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define RADIO_CONTROL_NB_CHANNEL SBUS_NB_CHANNEL</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="code" href="struct__sbus.html">   61</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__sbus.html" title="SBUS structure.">_sbus</a> {</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="struct__sbus.html#a0f5a7630a004926c6c1d1200acc31649">   62</a></span>&#160;  <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="struct__sbus.html#a0f5a7630a004926c6c1d1200acc31649" title="decoded values">pulses</a>[<a class="code" href="sbus_8h.html#afb790236a604cd21678b157b429e16fa">SBUS_NB_CHANNEL</a>]; </div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="code" href="struct__sbus.html#aeb5ff082456d23cd8a6f7bfd5231db21">   63</a></span>&#160;  bool_t <a class="code" href="struct__sbus.html#aeb5ff082456d23cd8a6f7bfd5231db21" title="new frame available">frame_available</a>;           </div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="struct__sbus.html#a8c779f162d54b93d941313ffb947341d">   64</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="struct__sbus.html#a8c779f162d54b93d941313ffb947341d" title="input buffer">buffer</a>[<a class="code" href="sbus_8h.html#ab8f86c137438a99b0143cc90312ee571" title="Generated code holding the description of a given transmitter.">SBUS_BUF_LENGTH</a>];  </div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="struct__sbus.html#a95dde4a7b5757062de9c15717fd0a492">   65</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="struct__sbus.html#a95dde4a7b5757062de9c15717fd0a492" title="input index">idx</a>;                      </div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="code" href="struct__sbus.html#a9c4946e9b440b93d2c50e02d7ae8499c">   66</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="struct__sbus.html#a9c4946e9b440b93d2c50e02d7ae8499c" title="decoder state machine status">status</a>;                   </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="struct__sbus.html" title="SBUS structure.">_sbus</a> <a class="code" href="sbus_8c.html#abae36fb8de2471c12894f179771dede3" title="SBUS struct.">sbus</a>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="sbus_8c.html#afbbaa0add77b9a4241d5af039548bc29" title="Decoding event function.">sbus_decode_event</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="code" href="sbus_8h.html#a48c5aff514f8ac1ab891bb12b748922b">   79</a></span>&#160;<span class="preprocessor">#define RadioControlEvent(_received_frame_handler) {  \</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">  sbus_decode_event();                                \</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">  if (sbus.frame_available) {                         \</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">    radio_control.frame_cpt++;                        \</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">    radio_control.time_since_last_frame = 0;          \</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">    if (radio_control.radio_ok_cpt &gt; 0) {             \</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">      radio_control.radio_ok_cpt--;                   \</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">    } else {                                          \</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">      radio_control.status = RC_OK;                   \</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">      NormalizePpmIIR(sbus.pulses,radio_control);     \</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">      _received_frame_handler();                      \</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">    }                                                 \</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">    sbus.frame_available = FALSE;                     \</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">  }                                                   \</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">}</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* RC_SBUS_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="struct__sbus.html" title="SBUS structure.">_sbus</a> <a class="code" href="sbus_8c.html#abae36fb8de2471c12894f179771dede3" title="SBUS struct.">sbus</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="sbus_8c.html#afbbaa0add77b9a4241d5af039548bc29" title="Decoding event function.">sbus_decode_event</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="sbus_8h.html#a48c5aff514f8ac1ab891bb12b748922b">   43</a></span>&#160;<span class="preprocessor">#define RadioControlEvent(_received_frame_handler) {  \</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">  sbus_decode_event();                                \</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">  if (sbus.frame_available) {                         \</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">    radio_control.frame_cpt++;                        \</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">    radio_control.time_since_last_frame = 0;          \</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">    if (radio_control.radio_ok_cpt &gt; 0) {             \</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">      radio_control.radio_ok_cpt--;                   \</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">    } else {                                          \</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">      radio_control.status = RC_OK;                   \</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">      NormalizePpmIIR(sbus.pulses,radio_control);     \</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">      _received_frame_handler();                      \</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">    }                                                 \</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">    sbus.frame_available = FALSE;                     \</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">  }                                                   \</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">}</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* RC_SBUS_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_a146ed466020daad33793c9994e8ab3e.html">radio_control</a></li><li class="navelem"><a class="el" href="sbus_8h.html">sbus.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:09 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:46 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

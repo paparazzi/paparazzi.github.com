@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -109,13 +109,13 @@ Module functions</h1>
 Init Functions</h2>
 <p>These initialization functions are called once on startup.</p>
 <ul>
-<li><a class="el" href="ins__xsens700_8c.html#abf3028c2ada542781b8a5e1eb20c17ce" title="INS initialization.">ins_init()</a></li>
+<li><a class="el" href="ins__alt__float_8c.html#abf3028c2ada542781b8a5e1eb20c17ce" title="INS initialization.">ins_init()</a></li>
 </ul>
 <h2><a class="anchor" id="periodic_functions"></a>
 Periodic Functions</h2>
 <p>These functions are called periodically at the specified frequency from the module periodic loop.</p>
 <ul>
-<li><a class="el" href="ins__alt__float_8c.html#acb548b510075b086cc7cc5e2d80b3a71" title="INS periodic call.">ins_periodic()</a><ul>
+<li><a class="el" href="ins__ardrone2_8c.html#acb548b510075b086cc7cc5e2d80b3a71" title="INS periodic call.">ins_periodic()</a><ul>
 <li>Frequency in Hz: <em>60</em> </li>
 <li>Autorun: <em>LOCK</em> <br/>
  Periodic function automatically starts after init and can't be stopped.</li>
@@ -147,7 +147,7 @@ Raw ins_xsens.xml file:</h2>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;ins_module.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
-<div class="line">  &lt;<a class="code" href="gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;ins_init()&quot;</span>/&gt;</div>
+<div class="line">  &lt;<a class="code" href="nav__gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;ins_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;periodic fun=<span class="stringliteral">&quot;ins_periodic()&quot;</span> freq=<span class="stringliteral">&quot;60&quot;</span>/&gt;</div>
 <div class="line">  &lt;makefile&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;ins_xsens.c&quot;</span>/&gt;</div>
@@ -160,7 +160,7 @@ Raw ins_xsens.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:12 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:11 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('sim_2subsystems_2radio__control_2ppm__
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#elif !USE_JSBSIM // not NPS and not JSBSIM -&gt; simple ocaml sim</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifdef RADIO_CONTROL</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="code" href="sim_2subsystems_2radio__control_2ppm__arch_8c.html#a50c13e7e6658484cb5565f2f3c01b851">   79</a></span>&#160;<span class="preprocessor"></span>value <a class="code" href="sim_2subsystems_2radio__control_2ppm__arch_8c.html#a50c13e7e6658484cb5565f2f3c01b851">update_rc_channel</a>(value <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>, value v) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="code" href="sim_2subsystems_2radio__control_2ppm__arch_8c.html#a50c13e7e6658484cb5565f2f3c01b851">   79</a></span>&#160;<span class="preprocessor"></span>value <a class="code" href="sim_2subsystems_2radio__control_2ppm__arch_8c.html#a50c13e7e6658484cb5565f2f3c01b851">update_rc_channel</a>(value c, value v) {</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="ppm_8c.html#af4e648091d7606499cac0f13ce44c8b6">ppm_pulses</a>[Int_val(c)] = Double_val(v);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordflow">return</span> Val_unit;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
@@ -195,7 +195,7 @@ $(document).ready(function(){initNavTree('sim_2subsystems_2radio__control_2ppm__
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="nav_8c.html#a04b783250b1673126fa3f4729cb2078e">unit</a>;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#else // RADIO_CONTROL</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor"></span>value <a class="code" href="sim_2subsystems_2radio__control_2ppm__arch_8c.html#a50c13e7e6658484cb5565f2f3c01b851">update_rc_channel</a>(value <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a> __attribute__ ((unused)), value v __attribute__ ((unused))) {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor"></span>value <a class="code" href="sim_2subsystems_2radio__control_2ppm__arch_8c.html#a50c13e7e6658484cb5565f2f3c01b851">update_rc_channel</a>(value c __attribute__ ((unused)), value v __attribute__ ((unused))) {</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordflow">return</span> Val_unit;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;value <a class="code" href="sim_2subsystems_2radio__control_2ppm__arch_8c.html#ad5c714aac41977d2adee4ad5054823ce">send_ppm</a>(value <a class="code" href="nav_8c.html#a04b783250b1673126fa3f4729cb2078e">unit</a>) {<span class="keywordflow">return</span> <a class="code" href="nav_8c.html#a04b783250b1673126fa3f4729cb2078e">unit</a>;}</div>
@@ -207,7 +207,7 @@ $(document).ready(function(){initNavTree('sim_2subsystems_2radio__control_2ppm__
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_c87a6d12365ead88e0b90ddbc1b3c9bb.html">sim</a></li><li class="navelem"><a class="el" href="dir_666d3c43b9df888d27617864b1f0db99.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_6b148c25f427ac62159d4ea5931aeff5.html">radio_control</a></li><li class="navelem"><a class="el" href="sim_2subsystems_2radio__control_2ppm__arch_8c.html">ppm_arch.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:07 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:36 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

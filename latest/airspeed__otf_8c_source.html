@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -154,11 +154,11 @@ $(document).ready(function(){initNavTree('airspeed__otf_8c_source.html','');});
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="airspeed__otf_8c.html#a6ff05b18464c7f57231aae849eed5ebf">   51</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OTF_END     0x0D</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">/* workaround for newlib */</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">void</span>* <a class="code" href="plug__sys_8c.html#a50d0541bd42367bb4b26013ff383318d">_sbrk</a>(<span class="keywordtype">int</span>);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">void</span>* <a class="code" href="plug__sys_8c.html#a50d0541bd42367bb4b26013ff383318d">_sbrk</a>(<span class="keywordtype">int</span> a) {<span class="keywordflow">return</span> 0;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">void</span>* <a class="code" href="airspeed__otf_8c.html#a50d0541bd42367bb4b26013ff383318d">_sbrk</a>(<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="airspeed__otf_8c.html#a50d0541bd42367bb4b26013ff383318d">   55</a></span>&#160;<span class="keywordtype">void</span>* <a class="code" href="airspeed__otf_8c.html#a50d0541bd42367bb4b26013ff383318d">_sbrk</a>(<span class="keywordtype">int</span> a) {<span class="keywordflow">return</span> 0;}</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">/* airspeed_otf_parse */</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="airspeed__otf_8h.html#a10616f1c2762b766f82daf5e37c5c10e">   58</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="airspeed__otf_8c.html#a10616f1c2762b766f82daf5e37c5c10e">airspeed_otf_parse</a>(<span class="keywordtype">char</span> <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>)</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="airspeed__otf_8h.html#a10616f1c2762b766f82daf5e37c5c10e">   58</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="airspeed__otf_8c.html#a10616f1c2762b766f82daf5e37c5c10e">airspeed_otf_parse</a>(<span class="keywordtype">char</span> c)</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> otf_status = <a class="code" href="airspeed__otf_8c.html#a408f5c648d9a2af1bb82916aaf84a31e">OTF_UNINIT</a>, otf_idx = 0, otf_crs_idx;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">char</span> otf_inp[64];</div>
@@ -183,7 +183,7 @@ $(document).ready(function(){initNavTree('airspeed__otf_8c_source.html','');});
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keywordflow">if</span> (otf_idx == 0) {</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">//FIXME        otf_timestamp = getclock();</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      otf_inp[otf_idx++] = <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      otf_inp[otf_idx++] = c;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <span class="keywordflow">if</span> ((otf_idx == 5) &amp;&amp; (c == <a class="code" href="airspeed__otf_8c.html#a5d3ebdcf7cc1d13eeefab9d23e5f0b4f">OTF_LIMITER</a>)) {</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        otf_inp[otf_idx] = 0;</div>
@@ -199,7 +199,7 @@ $(document).ready(function(){initNavTree('airspeed__otf_8c_source.html','');});
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="airspeed__otf_8c.html#a0ca37c712036d89067a158141926af53">OTF_WAIT_ANGLES</a>:</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">if</span> (isdigit((<span class="keywordtype">int</span>)c) || (c == <span class="charliteral">&#39;-&#39;</span>) || (c == <span class="charliteral">&#39;.&#39;</span>)) {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      otf_inp[otf_idx++] = <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      otf_inp[otf_idx++] = c;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <span class="keywordflow">if</span> ((otf_idx &gt; 1) &amp;&amp; (otf_idx &lt; 9) &amp;&amp; (c == <a class="code" href="airspeed__otf_8c.html#a5d3ebdcf7cc1d13eeefab9d23e5f0b4f">OTF_LIMITER</a>)) {</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        otf_inp[otf_idx] = 0;</div>
@@ -216,7 +216,7 @@ $(document).ready(function(){initNavTree('airspeed__otf_8c_source.html','');});
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="airspeed__otf_8c.html#ad1fb70281b00f5907bb3e1ba388d889c">OTF_WAIT_ALTITUDE</a>:</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">if</span> (isdigit((<span class="keywordtype">int</span>)c) || (c == <span class="charliteral">&#39;-&#39;</span>) || (c == <span class="charliteral">&#39;.&#39;</span>)) {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      otf_inp[otf_idx++] = <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      otf_inp[otf_idx++] = c;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <span class="keywordflow">if</span> ((otf_idx &gt; 1) &amp;&amp; (otf_idx &lt; 9) &amp;&amp; (c == <a class="code" href="airspeed__otf_8c.html#a5d3ebdcf7cc1d13eeefab9d23e5f0b4f">OTF_LIMITER</a>)) {</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        otf_inp[otf_idx] = 0;</div>
@@ -230,8 +230,8 @@ $(document).ready(function(){initNavTree('airspeed__otf_8c_source.html','');});
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="airspeed__otf_8c.html#a2c9aaaa064d24bfc5ac6c65ed0c0050c">OTF_WAIT_CHECKSUM</a>:</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordflow">if</span> (isxdigit((<span class="keywordtype">int</span>)<a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>)) {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      otf_inp[otf_idx++] = <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordflow">if</span> (isxdigit((<span class="keywordtype">int</span>)c)) {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      otf_inp[otf_idx++] = c;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      <span class="keywordflow">if</span> ((otf_idx == 2) &amp;&amp; (c == <a class="code" href="airspeed__otf_8c.html#a6ff05b18464c7f57231aae849eed5ebf">OTF_END</a>)) {</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        otf_inp[otf_idx] = 0;</div>
@@ -267,7 +267,7 @@ $(document).ready(function(){initNavTree('airspeed__otf_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="airspeed__otf_8c.html">airspeed_otf.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:43 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

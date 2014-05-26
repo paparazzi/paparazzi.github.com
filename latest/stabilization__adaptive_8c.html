@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('stabilization__adaptive_8c.html','');}
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -119,7 +120,7 @@ $(document).ready(function(){initNavTree('stabilization__adaptive_8c.html','');}
 <code>#include &quot;<a class="el" href="fixedwing_2stabilization_2stabilization__attitude_8h_source.html">firmwares/fixedwing/stabilization/stabilization_attitude.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="stabilization__adaptive_8h_source.html">firmwares/fixedwing/stabilization/stabilization_adaptive.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="nav_8h_source.html">subsystems/nav.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="nav_8h_source.html">firmwares/fixedwing/nav.h</a>&quot;</code><br/>
 <code>#include &quot;generated/airframe.h&quot;</code><br/>
 <code>#include &lt;CTRL_TYPE_H&gt;</code><br/>
 <code>#include &quot;<a class="el" href="fixedwing_2autopilot_8h_source.html">firmwares/fixedwing/autopilot.h</a>&quot;</code><br/>
@@ -130,21 +131,28 @@ $(document).ready(function(){initNavTree('stabilization__adaptive_8c.html','');}
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__adaptive_8c__incl.png" border="0" usemap="#sw_2airborne_2firmwares_2fixedwing_2stabilization_2stabilization__adaptive_8c" alt=""/></div>
 <map name="sw_2airborne_2firmwares_2fixedwing_2stabilization_2stabilization__adaptive_8c" id="sw_2airborne_2firmwares_2fixedwing_2stabilization_2stabilization__adaptive_8c">
-<area shape="rect" id="node5" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API" alt="" coords="47,131,95,159"/><area shape="rect" id="node7" href="fixedwing_2stabilization_2stabilization__attitude_8h.html" title="Fixed wing horizontal control." alt="" coords="119,115,284,175"/><area shape="rect" id="node17" href="stabilization__adaptive_8h.html" title="Fixed wing horizontal adaptive control." alt="" coords="359,115,524,175"/><area shape="rect" id="node23" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="1176,326,1238,354"/><area shape="rect" id="node65" href="nav_8h.html" title="Fixedwing Navigation library." alt="" coords="706,131,831,159"/><area shape="rect" id="node84" href="fixedwing_2autopilot_8h.html" title="Fixedwing autopilot modes." alt="" coords="548,123,682,167"/><area shape="rect" id="node9" href="inttypes_8h.html" title="inttypes.h" alt="" coords="462,326,539,354"/><area shape="rect" id="node12" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="486,233,571,261"/><area shape="rect" id="node25" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="940,505,1098,533"/><area shape="rect" id="node41" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="1382,505,1550,533"/><area shape="rect" id="node47" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="954,411,1087,455"/><area shape="rect" id="node53" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="1282,411,1415,455"/><area shape="rect" id="node58" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversion." alt="" coords="1111,411,1258,455"/><area shape="rect" id="node28" href="pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="1294,582,1432,610"/><area shape="rect" id="node35" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="950,582,1083,610"/><area shape="rect" id="node49" href="pprz__geodetic_8h.html" title="pprz_geodetic.h" alt="" coords="1195,505,1307,533"/><area shape="rect" id="node70" href="nav__survey__rectangle_8h.html" title="subsystems/navigation\l/nav_survey_rectangle.h" alt="" coords="798,225,960,269"/><area shape="rect" id="node73" href="common__flight__plan_8h.html" title="subsystems/navigation\l/common_flight_plan.h" alt="" coords="747,318,902,362"/><area shape="rect" id="node76" href="common__nav_8h.html" title="subsystems/navigation\l/common_nav.h" alt="" coords="984,225,1139,269"/></map>
+<area shape="rect" id="node5" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API" alt="" coords="1855,131,1908,159"/><area shape="rect" id="node9" href="fixedwing_2stabilization_2stabilization__attitude_8h.html" title="Fixed wing horizontal control." alt="" coords="1599,115,1780,175"/><area shape="rect" id="node19" href="stabilization__adaptive_8h.html" title="Fixed wing horizontal adaptive control." alt="" coords="1343,115,1524,175"/><area shape="rect" id="node25" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="535,326,601,354"/><area shape="rect" id="node67" href="nav_8h.html" title="Fixedwing Navigation library." alt="" coords="897,123,1044,167"/><area shape="rect" id="node86" href="fixedwing_2autopilot_8h.html" title="Fixedwing autopilot modes." alt="" coords="1172,123,1319,167"/><area shape="rect" id="node11" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1325,326,1411,354"/><area shape="rect" id="node14" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1292,233,1388,261"/><area shape="rect" id="node27" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="653,505,832,533"/><area shape="rect" id="node43" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="137,505,327,533"/><area shape="rect" id="node49" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="488,411,637,455"/><area shape="rect" id="node55" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="264,411,413,455"/><area shape="rect" id="node60" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversion." alt="" coords="661,411,824,455"/><area shape="rect" id="node30" href="pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="176,582,331,610"/><area shape="rect" id="node37" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="632,582,781,610"/><area shape="rect" id="node51" href="pprz__geodetic_8h.html" title="pprz_geodetic.h" alt="" coords="456,505,579,533"/><area shape="rect" id="node72" href="nav__survey__rectangle_8h.html" title="subsystems/navigation\l/nav_survey_rectangle.h" alt="" coords="647,225,823,269"/><area shape="rect" id="node75" href="common__flight__plan_8h.html" title="subsystems/navigation\l/common_flight_plan.h" alt="" coords="999,318,1167,362"/><area shape="rect" id="node78" href="common__nav_8h.html" title="subsystems/navigation\l/common_nav.h" alt="" coords="948,225,1116,269"/></map>
 </div>
 </div>
 <p><a href="stabilization__adaptive_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHCtlAdaptRef.html">HCtlAdaptRef</a></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a79323c2025a0d79009943ca5c06966cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#a79323c2025a0d79009943ca5c06966cc">H_CTL_REF_W</a>&#160;&#160;&#160;5.</td></tr>
-<tr class="memitem:af70644377dd434759cff681145dd43f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#af70644377dd434759cff681145dd43f6">H_CTL_REF_XI</a>&#160;&#160;&#160;0.85</td></tr>
+<tr class="memitem:acc779a581eb5434bf38a16e010d77951"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#acc779a581eb5434bf38a16e010d77951">H_CTL_REF_W_P</a>&#160;&#160;&#160;5.</td></tr>
+<tr class="memitem:a442f30f89df2f11f553baa37974759ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#a442f30f89df2f11f553baa37974759ce">H_CTL_REF_XI_P</a>&#160;&#160;&#160;0.85</td></tr>
+<tr class="memitem:ac9aee6f0d04f722f3daaf9e4430658f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#ac9aee6f0d04f722f3daaf9e4430658f6">H_CTL_REF_W_Q</a>&#160;&#160;&#160;5.</td></tr>
+<tr class="memitem:aaca95839ffbc7b9a845e487b320b69a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#aaca95839ffbc7b9a845e487b320b69a0">H_CTL_REF_XI_Q</a>&#160;&#160;&#160;0.85</td></tr>
 <tr class="memitem:ab0b189c493ad0e6e6a12afd77b4dce7b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#ab0b189c493ad0e6e6a12afd77b4dce7b">H_CTL_REF_MAX_P</a>&#160;&#160;&#160;RadOfDeg(150.)</td></tr>
 <tr class="memitem:a7ace6141157f3ba5a2aaa61869207c2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#a7ace6141157f3ba5a2aaa61869207c2d">H_CTL_REF_MAX_P_DOT</a>&#160;&#160;&#160;RadOfDeg(500.)</td></tr>
 <tr class="memitem:a35f09729c42ad7dceacaded512012ba6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#a35f09729c42ad7dceacaded512012ba6">H_CTL_REF_MAX_Q</a>&#160;&#160;&#160;RadOfDeg(150.)</td></tr>
 <tr class="memitem:a942d0d6bd5f3a180c19004eda9f17bf3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#a942d0d6bd5f3a180c19004eda9f17bf3">H_CTL_REF_MAX_Q_DOT</a>&#160;&#160;&#160;RadOfDeg(500.)</td></tr>
 <tr class="memitem:a029ab27e9bceb4766b54229ec6e7b098"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#a029ab27e9bceb4766b54229ec6e7b098">AIRSPEED_RATIO_MIN</a>&#160;&#160;&#160;0.5</td></tr>
 <tr class="memitem:a240757b5d62f88f7eb1a65bdf477e0b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#a240757b5d62f88f7eb1a65bdf477e0b4">AIRSPEED_RATIO_MAX</a>&#160;&#160;&#160;2.</td></tr>
+<tr class="memitem:a46154f002847a26dfa139702a04a76cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#a46154f002847a26dfa139702a04a76cc">PITCH_TRIM_RATE_LIMITER</a>&#160;&#160;&#160;3.</td></tr>
 <tr class="memitem:a284af756c7c924a50a135f888b204c47"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#a284af756c7c924a50a135f888b204c47">H_CTL_COURSE_PRE_BANK_CORRECTION</a>&#160;&#160;&#160;1.</td></tr>
 <tr class="memitem:ad55f35902c8ec008f2269e8b92e2b58b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#ad55f35902c8ec008f2269e8b92e2b58b">H_CTL_COURSE_DGAIN</a>&#160;&#160;&#160;0.</td></tr>
 <tr class="memitem:af5250c24f99881c090561341e9c554e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#af5250c24f99881c090561341e9c554e1">H_CTL_ROLL_RATE_GAIN</a>&#160;&#160;&#160;0.</td></tr>
@@ -155,8 +163,11 @@ Macros</h2></td></tr>
 <tr class="memitem:a02c5961350a53d8e5f9a0c0ff3a7a3b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#a02c5961350a53d8e5f9a0c0ff3a7a3b8">H_CTL_PITCH_IGAIN</a>&#160;&#160;&#160;0.</td></tr>
 <tr class="memitem:a77b9136d008c108fd386a4e4388e25f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#a77b9136d008c108fd386a4e4388e25f5">H_CTL_PITCH_KFFA</a>&#160;&#160;&#160;0.</td></tr>
 <tr class="memitem:a467d5aed252bd43083b18d128fcc17c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#a467d5aed252bd43083b18d128fcc17c5">H_CTL_PITCH_KFFD</a>&#160;&#160;&#160;0.</td></tr>
-<tr class="memitem:adff1c54c06dd9c72c53966c6e1731ada"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#adff1c54c06dd9c72c53966c6e1731ada">H_CTL_REF_DT</a>&#160;&#160;&#160;(1./60.)</td></tr>
+<tr class="memitem:adf1aed6942bd497d6a76161a755b1f44"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#adf1aed6942bd497d6a76161a755b1f44">USE_GYRO_PITCH_RATE</a>&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td></tr>
+<tr class="memitem:adff1c54c06dd9c72c53966c6e1731ada"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#adff1c54c06dd9c72c53966c6e1731ada">H_CTL_REF_DT</a>&#160;&#160;&#160;(1./<a class="el" href="fixedwing_2autopilot_8h.html#a992e6194ee1d6c879faa66e51b72840a">CONTROL_FREQUENCY</a>)</td></tr>
+<tr class="memdesc:adff1c54c06dd9c72c53966c6e1731ada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define reference generator time step default to control frequency and ahrs propagation freq if control is triggered by ahrs.  <a href="#adff1c54c06dd9c72c53966c6e1731ada"></a><br/></td></tr>
 <tr class="memitem:a9ce1427c8d77d4ba3f15ebc8015c43f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#a9ce1427c8d77d4ba3f15ebc8015c43f5">KFFA_UPDATE</a>&#160;&#160;&#160;0.1</td></tr>
+<tr class="memdesc:a9ce1427c8d77d4ba3f15ebc8015c43f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adaptive control tuning parameters activate with USE_KFF_UPDATE.  <a href="#a9ce1427c8d77d4ba3f15ebc8015c43f5"></a><br/></td></tr>
 <tr class="memitem:a137ae9f2160155e39e93f139877d113a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#a137ae9f2160155e39e93f139877d113a">KFFD_UPDATE</a>&#160;&#160;&#160;0.05</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
@@ -177,12 +188,7 @@ Variables</h2></td></tr>
 <tr class="memitem:a36b4caa0eb30ecfb44d54f83ad1ada2a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#a36b4caa0eb30ecfb44d54f83ad1ada2a">h_ctl_roll_max_setpoint</a></td></tr>
 <tr class="memitem:a87b4ff48aa369dd1510ccdd12ab2174d"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#a87b4ff48aa369dd1510ccdd12ab2174d">h_ctl_disabled</a></td></tr>
 <tr class="memitem:a411e22787d626834c693dcbf3ca62be2"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#a411e22787d626834c693dcbf3ca62be2">h_ctl_auto1_rate</a></td></tr>
-<tr class="memitem:abcf19e1061be4f1255c7c05f6d627a3e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#abcf19e1061be4f1255c7c05f6d627a3e">h_ctl_ref_roll_angle</a></td></tr>
-<tr class="memitem:a6209e908e64de602bd7f03e8d4b26787"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#a6209e908e64de602bd7f03e8d4b26787">h_ctl_ref_roll_rate</a></td></tr>
-<tr class="memitem:a5c51724d30734d08e6a10219ff828678"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#a5c51724d30734d08e6a10219ff828678">h_ctl_ref_roll_accel</a></td></tr>
-<tr class="memitem:a58a1226bd57f4ee939eb4605c5f980c3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#a58a1226bd57f4ee939eb4605c5f980c3">h_ctl_ref_pitch_angle</a></td></tr>
-<tr class="memitem:a1ace82d27c45b75d36f8e6bbecf59481"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#a1ace82d27c45b75d36f8e6bbecf59481">h_ctl_ref_pitch_rate</a></td></tr>
-<tr class="memitem:a2965648296b4503b7719e1225af38216"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#a2965648296b4503b7719e1225af38216">h_ctl_ref_pitch_accel</a></td></tr>
+<tr class="memitem:a54246e6be66b54f0ef6f66b59d33e398"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structHCtlAdaptRef.html">HCtlAdaptRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#a54246e6be66b54f0ef6f66b59d33e398">h_ctl_ref</a></td></tr>
 <tr class="memitem:a3a1314c56cb0890cfff183968904f0ce"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#a3a1314c56cb0890cfff183968904f0ce">h_ctl_roll_setpoint</a></td></tr>
 <tr class="memitem:a92f6452c3b367e9ff2bc6180caee2ca3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#a92f6452c3b367e9ff2bc6180caee2ca3">h_ctl_roll_attitude_gain</a></td></tr>
 <tr class="memitem:a770980c94665fbd4d6970bff6cb9dff5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__adaptive_8c.html#a770980c94665fbd4d6970bff6cb9dff5">h_ctl_roll_rate_gain</a></td></tr>
@@ -225,7 +231,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00099">99</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00137">137</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
 </div>
 </div>
@@ -239,7 +245,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00098">98</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00136">136</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
 </div>
 </div>
@@ -253,9 +259,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00113">113</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00155">155</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00219">h_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -269,9 +275,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00110">110</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00152">152</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00219">h_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -285,9 +291,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00134">134</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00176">176</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00219">h_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -301,9 +307,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00137">137</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00179">179</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00219">h_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -317,9 +323,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00140">140</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00182">182</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00219">h_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -333,9 +339,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00143">143</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00185">185</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00219">h_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -344,14 +350,16 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define H_CTL_REF_DT&#160;&#160;&#160;(1./60.)</td>
+          <td class="memname">#define H_CTL_REF_DT&#160;&#160;&#160;(1./<a class="el" href="fixedwing_2autopilot_8h.html#a992e6194ee1d6c879faa66e51b72840a">CONTROL_FREQUENCY</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00269">269</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Define reference generator time step default to control frequency and ahrs propagation freq if control is triggered by ahrs. </p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00372">h_ctl_pitch_loop()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00273">h_ctl_roll_loop()</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00336">336</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00447">h_ctl_pitch_loop()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00347">h_ctl_roll_loop()</a>.</p>
 
 </div>
 </div>
@@ -365,9 +373,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00062">62</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00083">83</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00273">h_ctl_roll_loop()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00219">h_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -381,9 +389,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00063">63</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00086">86</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00273">h_ctl_roll_loop()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00219">h_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -397,9 +405,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00064">64</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00089">89</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00372">h_ctl_pitch_loop()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00219">h_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -413,41 +421,73 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00065">65</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00092">92</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00372">h_ctl_pitch_loop()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00219">h_ctl_init()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a79323c2025a0d79009943ca5c06966cc"></a>
+<a class="anchor" id="acc779a581eb5434bf38a16e010d77951"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define H_CTL_REF_W&#160;&#160;&#160;5.</td>
+          <td class="memname">#define H_CTL_REF_W_P&#160;&#160;&#160;5.</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00060">60</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00071">71</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00372">h_ctl_pitch_loop()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00273">h_ctl_roll_loop()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00347">h_ctl_roll_loop()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af70644377dd434759cff681145dd43f6"></a>
+<a class="anchor" id="ac9aee6f0d04f722f3daaf9e4430658f6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define H_CTL_REF_XI&#160;&#160;&#160;0.85</td>
+          <td class="memname">#define H_CTL_REF_W_Q&#160;&#160;&#160;5.</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00061">61</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00077">77</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00372">h_ctl_pitch_loop()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00273">h_ctl_roll_loop()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00447">h_ctl_pitch_loop()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a442f30f89df2f11f553baa37974759ce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define H_CTL_REF_XI_P&#160;&#160;&#160;0.85</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00074">74</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00347">h_ctl_roll_loop()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaca95839ffbc7b9a845e487b320b69a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define H_CTL_REF_XI_Q&#160;&#160;&#160;0.85</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00080">80</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00447">h_ctl_pitch_loop()</a>.</p>
 
 </div>
 </div>
@@ -461,9 +501,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00122">122</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00164">164</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00219">h_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -477,9 +517,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00125">125</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00167">167</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00219">h_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -493,9 +533,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00128">128</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00170">170</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00219">h_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -509,9 +549,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00119">119</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00161">161</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00219">h_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -525,9 +565,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00270">270</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Adaptive control tuning parameters activate with USE_KFF_UPDATE. </p>
+<p>!!! under development, use with care !!! </p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00273">h_ctl_roll_loop()</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00344">344</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00347">h_ctl_roll_loop()</a>.</p>
 
 </div>
 </div>
@@ -541,9 +584,37 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00271">271</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00345">345</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00273">h_ctl_roll_loop()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00347">h_ctl_roll_loop()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a46154f002847a26dfa139702a04a76cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PITCH_TRIM_RATE_LIMITER&#160;&#160;&#160;3.</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00144">144</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adf1aed6942bd497d6a76161a755b1f44"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USE_GYRO_PITCH_RATE&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00189">189</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
 </div>
 </div>
@@ -562,9 +633,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00259">259</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00319">319</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00528">attitude_loop()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00531">attitude_loop()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -573,7 +644,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__adaptive_8c_a86f0d47644538be1345aab19c7dc3de4_icgraph.png" border="0" usemap="#stabilization__adaptive_8c_a86f0d47644538be1345aab19c7dc3de4_icgraph" alt=""/></div>
 <map name="stabilization__adaptive_8c_a86f0d47644538be1345aab19c7dc3de4_icgraph" id="stabilization__adaptive_8c_a86f0d47644538be1345aab19c7dc3de4_icgraph">
-<area shape="rect" id="node3" href="main__ap_8h.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="184,55,280,83"/><area shape="rect" id="node5" href="main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="361,5,468,33"/><area shape="rect" id="node7" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="551,30,676,58"/><area shape="rect" id="node9" href="main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="329,106,500,134"/></map>
+<area shape="rect" id="node3" href="main__ap_8h.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="197,55,304,83"/><area shape="rect" id="node5" href="main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="388,5,503,33"/><area shape="rect" id="node7" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="587,30,723,58"/><area shape="rect" id="node9" href="main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="352,106,539,134"/></map>
 </div>
 </p>
 
@@ -593,9 +664,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00222">222</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00282">282</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00463">navigation_task()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00467">navigation_task()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -604,7 +675,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__adaptive_8c_a02ae04f0f1bbe7588572e87e3dadb381_icgraph.png" border="0" usemap="#stabilization__adaptive_8c_a02ae04f0f1bbe7588572e87e3dadb381_icgraph" alt=""/></div>
 <map name="stabilization__adaptive_8c_a02ae04f0f1bbe7588572e87e3dadb381_icgraph" id="stabilization__adaptive_8c_a02ae04f0f1bbe7588572e87e3dadb381_icgraph">
-<area shape="rect" id="node3" href="main__ap_8h.html#a79f823520ea0823e20084686978281e6" title="Compute desired_course." alt="" coords="183,30,295,58"/><area shape="rect" id="node5" href="main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="345,5,516,33"/><area shape="rect" id="node7" href="sim__ap_8c.html#a8c0970e9878d0e3e3e6c5d6ff0741d4f" title="sim_nav_task" alt="" coords="380,55,481,83"/></map>
+<area shape="rect" id="node3" href="main__ap_8h.html#a79f823520ea0823e20084686978281e6" title="Compute desired_course." alt="" coords="189,30,312,58"/><area shape="rect" id="node5" href="main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="360,5,547,33"/><area shape="rect" id="node7" href="sim__ap_8c.html#a8c0970e9878d0e3e3e6c5d6ff0741d4f" title="sim_nav_task" alt="" coords="399,55,508,83"/></map>
 </div>
 </p>
 
@@ -624,7 +695,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00164">164</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00219">219</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
 <p>Referenced by <a class="el" href="main__ap_8c_source.html#l00177">init_ap()</a>.</p>
 
@@ -635,7 +706,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__adaptive_8c_a83c0e92b972269e326eb6be18adcf715_icgraph.png" border="0" usemap="#stabilization__adaptive_8c_a83c0e92b972269e326eb6be18adcf715_icgraph" alt=""/></div>
 <map name="stabilization__adaptive_8c_a83c0e92b972269e326eb6be18adcf715_icgraph" id="stabilization__adaptive_8c_a83c0e92b972269e326eb6be18adcf715_icgraph">
-<area shape="rect" id="node3" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="129,5,188,33"/><area shape="rect" id="node5" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="237,5,304,33"/></map>
+<area shape="rect" id="node3" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="133,5,197,33"/><area shape="rect" id="node5" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="247,5,316,33"/></map>
 </div>
 </p>
 
@@ -663,11 +734,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00372">372</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00447">447</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>References <a class="el" href="stabilization__adaptive_8c_source.html#l00097">airspeed_ratio2</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00089">h_ctl_elevator_setpoint</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00084">h_ctl_pitch_dgain</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00085">h_ctl_pitch_igain</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00087">h_ctl_pitch_Kffa</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00088">h_ctl_pitch_Kffd</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00082">h_ctl_pitch_loop_setpoint</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00094">h_ctl_pitch_of_roll</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00083">h_ctl_pitch_pgain</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00081">h_ctl_pitch_setpoint</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00086">h_ctl_pitch_sum_err</a>, <a class="el" href="stabilization__adaptive_8h_source.html#l00048">H_CTL_PITCH_SUM_ERR_MAX</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00269">H_CTL_REF_DT</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00064">H_CTL_REF_MAX_Q</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00065">H_CTL_REF_MAX_Q_DOT</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00059">h_ctl_ref_pitch_accel</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00057">h_ctl_ref_pitch_angle</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00058">h_ctl_ref_pitch_rate</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00060">H_CTL_REF_W</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00061">H_CTL_REF_XI</a>, <a class="el" href="sim__ap_8c_source.html#l00040">launch</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00036">pprz_mode</a>, <a class="el" href="fixedwing_2autopilot_8h_source.html#l00050">PPRZ_MODE_MANUAL</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00089">FloatRates::q</a>, <a class="el" href="state_8h_source.html#l01078">stateGetBodyRates_f()</a>, <a class="el" href="state_8h_source.html#l01027">stateGetNedToBodyEulers_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00080">FloatEulers::theta</a>, and <a class="el" href="paparazzi_8h_source.html#l00011">TRIM_PPRZ</a>.</p>
+<p>References <a class="el" href="stabilization__adaptive_8c_source.html#l00135">airspeed_ratio2</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00120">h_ctl_pitch_loop_setpoint</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00124">h_ctl_pitch_sum_err</a>, <a class="el" href="stabilization__adaptive_8h_source.html#l00048">H_CTL_PITCH_SUM_ERR_MAX</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00067">h_ctl_ref</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00336">H_CTL_REF_DT</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00077">H_CTL_REF_W_Q</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00080">H_CTL_REF_XI_Q</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a22787b7744375550b4b631b0fec03bd0">if()</a>, <a class="el" href="sim__ap_8c_source.html#l00040">launch</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00063">HCtlAdaptRef::max_q</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00064">HCtlAdaptRef::max_q_dot</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00059">HCtlAdaptRef::pitch_accel</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00057">HCtlAdaptRef::pitch_angle</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00058">HCtlAdaptRef::pitch_rate</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00040">pprz_mode</a>, <a class="el" href="fixedwing_2autopilot_8h_source.html#l00050">PPRZ_MODE_MANUAL</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00089">FloatRates::q</a>, <a class="el" href="state_8h_source.html#l01078">stateGetBodyRates_f()</a>, <a class="el" href="state_8h_source.html#l01027">stateGetNedToBodyEulers_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00080">FloatEulers::theta</a>, and <a class="el" href="paparazzi_8h_source.html#l00011">TRIM_PPRZ</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00259">h_ctl_attitude_loop()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00319">h_ctl_attitude_loop()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -676,7 +747,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__adaptive_8c_a10c9851e192217d5a4e7b6dc98e16c2d_cgraph.png" border="0" usemap="#stabilization__adaptive_8c_a10c9851e192217d5a4e7b6dc98e16c2d_cgraph" alt=""/></div>
 <map name="stabilization__adaptive_8c_a10c9851e192217d5a4e7b6dc98e16c2d_cgraph" id="stabilization__adaptive_8c_a10c9851e192217d5a4e7b6dc98e16c2d_cgraph">
-<area shape="rect" id="node3" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float)." alt="" coords="191,5,337,33"/><area shape="rect" id="node7" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="171,55,357,83"/><area shape="rect" id="node5" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title="stateCalcBodyRates_f" alt="" coords="407,5,556,33"/><area shape="rect" id="node9" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="407,55,556,83"/><area shape="rect" id="node11" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="605,55,760,83"/></map>
+<area shape="rect" id="node3" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a22787b7744375550b4b631b0fec03bd0" title="if" alt="" coords="260,5,297,33"/><area shape="rect" id="node5" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float)." alt="" coords="200,55,357,83"/><area shape="rect" id="node9" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="180,106,377,134"/><area shape="rect" id="node7" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title="stateCalcBodyRates_f" alt="" coords="429,55,589,83"/><area shape="rect" id="node11" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="428,106,591,134"/><area shape="rect" id="node13" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="640,106,808,134"/></map>
 </div>
 </p>
 
@@ -687,7 +758,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__adaptive_8c_a10c9851e192217d5a4e7b6dc98e16c2d_icgraph.png" border="0" usemap="#stabilization__adaptive_8c_a10c9851e192217d5a4e7b6dc98e16c2d_icgraph" alt=""/></div>
 <map name="stabilization__adaptive_8c_a10c9851e192217d5a4e7b6dc98e16c2d_icgraph" id="stabilization__adaptive_8c_a10c9851e192217d5a4e7b6dc98e16c2d_icgraph">
-<area shape="rect" id="node3" href="fixedwing_2stabilization_2stabilization__attitude_8h.html#a86f0d47644538be1345aab19c7dc3de4" title="h_ctl_attitude_loop" alt="" coords="171,55,301,83"/><area shape="rect" id="node5" href="main__ap_8h.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="349,55,445,83"/><area shape="rect" id="node7" href="main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="527,5,633,33"/><area shape="rect" id="node9" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="716,30,841,58"/><area shape="rect" id="node11" href="main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="495,106,665,134"/></map>
+<area shape="rect" id="node3" href="fixedwing_2stabilization_2stabilization__attitude_8h.html#a86f0d47644538be1345aab19c7dc3de4" title="h_ctl_attitude_loop" alt="" coords="180,55,321,83"/><area shape="rect" id="node5" href="main__ap_8h.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="371,55,477,83"/><area shape="rect" id="node7" href="main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="561,5,676,33"/><area shape="rect" id="node9" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="760,30,896,58"/><area shape="rect" id="node11" href="main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="525,106,712,134"/></map>
 </div>
 </p>
 
@@ -715,11 +786,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00273">273</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00347">347</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>References <a class="el" href="stabilization__adaptive_8c_source.html#l00097">airspeed_ratio2</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00092">h_ctl_aileron_of_throttle</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00075">h_ctl_aileron_setpoint</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00269">H_CTL_REF_DT</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00062">H_CTL_REF_MAX_P</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00063">H_CTL_REF_MAX_P_DOT</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00056">h_ctl_ref_roll_accel</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00054">h_ctl_ref_roll_angle</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00055">h_ctl_ref_roll_rate</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00060">H_CTL_REF_W</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00061">H_CTL_REF_XI</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00069">h_ctl_roll_attitude_gain</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00071">h_ctl_roll_igain</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00073">h_ctl_roll_Kffa</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00074">h_ctl_roll_Kffd</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00070">h_ctl_roll_rate_gain</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00068">h_ctl_roll_setpoint</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00072">h_ctl_roll_sum_err</a>, <a class="el" href="stabilization__adaptive_8h_source.html#l00047">H_CTL_ROLL_SUM_ERR_MAX</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00270">KFFA_UPDATE</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00271">KFFD_UPDATE</a>, <a class="el" href="sim__ap_8c_source.html#l00040">launch</a>, <a class="el" href="common__flight__plan_8h_source.html#l00061">Max</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00088">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00079">FloatEulers::phi</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00036">pprz_mode</a>, <a class="el" href="fixedwing_2autopilot_8h_source.html#l00050">PPRZ_MODE_MANUAL</a>, <a class="el" href="state_8h_source.html#l01078">stateGetBodyRates_f()</a>, <a class="el" href="state_8h_source.html#l01027">stateGetNedToBodyEulers_f()</a>, <a class="el" href="paparazzi_8h_source.html#l00011">TRIM_PPRZ</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00134">v_ctl_throttle_setpoint</a>.</p>
+<p>References <a class="el" href="stabilization__adaptive_8c_source.html#l00135">airspeed_ratio2</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00130">h_ctl_aileron_of_throttle</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00067">h_ctl_ref</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00336">H_CTL_REF_DT</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00071">H_CTL_REF_W_P</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00074">H_CTL_REF_XI_P</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00106">h_ctl_roll_setpoint</a>, <a class="el" href="stabilization__adaptive_8h_source.html#l00047">H_CTL_ROLL_SUM_ERR_MAX</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00344">KFFA_UPDATE</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00345">KFFD_UPDATE</a>, <a class="el" href="sim__ap_8c_source.html#l00040">launch</a>, <a class="el" href="common__flight__plan_8h_source.html#l00061">Max</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00061">HCtlAdaptRef::max_p</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00062">HCtlAdaptRef::max_p_dot</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00088">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00079">FloatEulers::phi</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00040">pprz_mode</a>, <a class="el" href="fixedwing_2autopilot_8h_source.html#l00050">PPRZ_MODE_MANUAL</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00056">HCtlAdaptRef::roll_accel</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00054">HCtlAdaptRef::roll_angle</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00055">HCtlAdaptRef::roll_rate</a>, <a class="el" href="state_8h_source.html#l01078">stateGetBodyRates_f()</a>, <a class="el" href="state_8h_source.html#l01027">stateGetNedToBodyEulers_f()</a>, <a class="el" href="paparazzi_8h_source.html#l00011">TRIM_PPRZ</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00134">v_ctl_throttle_setpoint</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00259">h_ctl_attitude_loop()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00319">h_ctl_attitude_loop()</a>.</p>
 
 <p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -728,7 +799,7 @@ Variables</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__adaptive_8c_a56e08c7c847634b91bec39dc929ade80_cgraph.png" border="0" usemap="#stabilization__adaptive_8c_a56e08c7c847634b91bec39dc929ade80_cgraph" alt=""/></div>
 <map name="stabilization__adaptive_8c_a56e08c7c847634b91bec39dc929ade80_cgraph" id="stabilization__adaptive_8c_a56e08c7c847634b91bec39dc929ade80_cgraph">
-<area shape="rect" id="node3" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float)." alt="" coords="180,5,327,33"/><area shape="rect" id="node7" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="160,55,347,83"/><area shape="rect" id="node5" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title="stateCalcBodyRates_f" alt="" coords="396,5,545,33"/><area shape="rect" id="node9" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="396,55,545,83"/><area shape="rect" id="node11" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="595,55,749,83"/></map>
+<area shape="rect" id="node3" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float)." alt="" coords="187,5,344,33"/><area shape="rect" id="node7" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="167,55,364,83"/><area shape="rect" id="node5" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title="stateCalcBodyRates_f" alt="" coords="416,5,576,33"/><area shape="rect" id="node9" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="415,55,577,83"/><area shape="rect" id="node11" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="627,55,795,83"/></map>
 </div>
 </p>
 
@@ -739,7 +810,7 @@ Variables</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__adaptive_8c_a56e08c7c847634b91bec39dc929ade80_icgraph.png" border="0" usemap="#stabilization__adaptive_8c_a56e08c7c847634b91bec39dc929ade80_icgraph" alt=""/></div>
 <map name="stabilization__adaptive_8c_a56e08c7c847634b91bec39dc929ade80_icgraph" id="stabilization__adaptive_8c_a56e08c7c847634b91bec39dc929ade80_icgraph">
-<area shape="rect" id="node3" href="fixedwing_2stabilization_2stabilization__attitude_8h.html#a86f0d47644538be1345aab19c7dc3de4" title="h_ctl_attitude_loop" alt="" coords="160,55,291,83"/><area shape="rect" id="node5" href="main__ap_8h.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="339,55,435,83"/><area shape="rect" id="node7" href="main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="516,5,623,33"/><area shape="rect" id="node9" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="705,30,831,58"/><area shape="rect" id="node11" href="main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="484,106,655,134"/></map>
+<area shape="rect" id="node3" href="fixedwing_2stabilization_2stabilization__attitude_8h.html#a86f0d47644538be1345aab19c7dc3de4" title="h_ctl_attitude_loop" alt="" coords="167,55,308,83"/><area shape="rect" id="node5" href="main__ap_8h.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="357,55,464,83"/><area shape="rect" id="node7" href="main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="548,5,663,33"/><area shape="rect" id="node9" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="747,30,883,58"/><area shape="rect" id="node11" href="main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="512,106,699,134"/></map>
 </div>
 </p>
 
@@ -756,9 +827,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00097">97</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00135">135</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00372">h_ctl_pitch_loop()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00273">h_ctl_roll_loop()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00447">h_ctl_pitch_loop()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00347">h_ctl_roll_loop()</a>.</p>
 
 </div>
 </div>
@@ -772,9 +843,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00092">92</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00130">130</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00273">h_ctl_roll_loop()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__attitude_8c_source.html#l00123">h_ctl_init()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00347">h_ctl_roll_loop()</a>.</p>
 
 </div>
 </div>
@@ -788,9 +859,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00075">75</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00113">113</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00528">attitude_loop()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00273">h_ctl_roll_loop()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00531">attitude_loop()</a>, <a class="el" href="stabilization__attitude_8c_source.html#l00123">h_ctl_init()</a>, and <a class="el" href="stabilization__attitude_8c_source.html#l00344">h_ctl_roll_loop()</a>.</p>
 
 </div>
 </div>
@@ -806,7 +877,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00051">51</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__attitude_8c_source.html#l00344">h_ctl_roll_loop()</a>, and <a class="el" href="main__ap_8c_source.html#l00463">navigation_task()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__attitude_8c_source.html#l00344">h_ctl_roll_loop()</a>, and <a class="el" href="main__ap_8c_source.html#l00467">navigation_task()</a>.</p>
 
 </div>
 </div>
@@ -822,7 +893,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00044">44</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00222">h_ctl_course_loop()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00282">h_ctl_course_loop()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00219">h_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -838,7 +909,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00043">43</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="nav_8c_source.html#l00340">fly_to_xy()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00222">h_ctl_course_loop()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="nav_8c_source.html#l00354">fly_to_xy()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00282">h_ctl_course_loop()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00219">h_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -854,7 +925,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00041">41</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00222">h_ctl_course_loop()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>, and <a class="el" href="nav_8c_source.html#l00416">nav_periodic_task()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00282">h_ctl_course_loop()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00219">h_ctl_init()</a>, and <a class="el" href="nav_8c_source.html#l00430">nav_periodic_task()</a>.</p>
 
 </div>
 </div>
@@ -870,7 +941,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00042">42</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00222">h_ctl_course_loop()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00282">h_ctl_course_loop()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00219">h_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -886,7 +957,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00040">40</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="nav_8c_source.html#l00340">fly_to_xy()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00222">h_ctl_course_loop()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>, and <a class="el" href="fixedwing_2autopilot_8c_source.html#l00109">send_desired()</a>.</p>
+<p>Referenced by <a class="el" href="nav_8c_source.html#l00354">fly_to_xy()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00282">h_ctl_course_loop()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00219">h_ctl_init()</a>, and <a class="el" href="fixedwing_2autopilot_8c_source.html#l00113">send_desired()</a>.</p>
 
 </div>
 </div>
@@ -902,7 +973,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00048">48</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00259">h_ctl_attitude_loop()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00319">h_ctl_attitude_loop()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00219">h_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -916,9 +987,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00093">93</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00131">131</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>, and <a class="el" href="stabilization__attitude_8c_source.html#l00429">h_ctl_pitch_loop()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__attitude_8c_source.html#l00123">h_ctl_init()</a>, and <a class="el" href="stabilization__attitude_8c_source.html#l00429">h_ctl_pitch_loop()</a>.</p>
 
 </div>
 </div>
@@ -932,9 +1003,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00089">89</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00127">127</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00528">attitude_loop()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00372">h_ctl_pitch_loop()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00531">attitude_loop()</a>, <a class="el" href="stabilization__attitude_8c_source.html#l00123">h_ctl_init()</a>, and <a class="el" href="stabilization__attitude_8c_source.html#l00429">h_ctl_pitch_loop()</a>.</p>
 
 </div>
 </div>
@@ -948,9 +1019,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00084">84</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00122">122</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00372">h_ctl_pitch_loop()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__attitude_8c_source.html#l00123">h_ctl_init()</a>, and <a class="el" href="stabilization__attitude_8c_source.html#l00429">h_ctl_pitch_loop()</a>.</p>
 
 </div>
 </div>
@@ -964,9 +1035,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00085">85</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
-
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00372">h_ctl_pitch_loop()</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00123">123</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
 </div>
 </div>
@@ -980,9 +1049,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00087">87</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
-
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00372">h_ctl_pitch_loop()</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00125">125</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
 </div>
 </div>
@@ -996,9 +1063,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00088">88</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
-
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00372">h_ctl_pitch_loop()</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00126">126</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
 </div>
 </div>
@@ -1012,9 +1077,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00082">82</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00120">120</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00372">h_ctl_pitch_loop()</a>, and <a class="el" href="fixedwing_2autopilot_8c_source.html#l00109">send_desired()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__attitude_8c_source.html#l00123">h_ctl_init()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00447">h_ctl_pitch_loop()</a>, and <a class="el" href="fixedwing_2autopilot_8c_source.html#l00113">send_desired()</a>.</p>
 
 </div>
 </div>
@@ -1028,9 +1093,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00094">94</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
-
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00372">h_ctl_pitch_loop()</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00132">132</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
 </div>
 </div>
@@ -1044,9 +1107,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00083">83</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00121">121</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00372">h_ctl_pitch_loop()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__attitude_8c_source.html#l00123">h_ctl_init()</a>, and <a class="el" href="stabilization__attitude_8c_source.html#l00429">h_ctl_pitch_loop()</a>.</p>
 
 </div>
 </div>
@@ -1060,9 +1123,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00081">81</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00119">119</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00528">attitude_loop()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00372">h_ctl_pitch_loop()</a>, and <a class="el" href="main__ap_8c_source.html#l00371">telecommand_task()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00531">attitude_loop()</a>, <a class="el" href="stabilization__attitude_8c_source.html#l00123">h_ctl_init()</a>, <a class="el" href="stabilization__attitude_8c_source.html#l00429">h_ctl_pitch_loop()</a>, and <a class="el" href="main__ap_8c_source.html#l00371">telecommand_task()</a>.</p>
 
 </div>
 </div>
@@ -1076,105 +1139,25 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00086">86</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00124">124</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00372">h_ctl_pitch_loop()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00447">h_ctl_pitch_loop()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a2965648296b4503b7719e1225af38216"></a>
+<a class="anchor" id="a54246e6be66b54f0ef6f66b59d33e398"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float h_ctl_ref_pitch_accel</td>
+          <td class="memname">struct <a class="el" href="structHCtlAdaptRef.html">HCtlAdaptRef</a> h_ctl_ref</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00059">59</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00067">67</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00372">h_ctl_pitch_loop()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a58a1226bd57f4ee939eb4605c5f980c3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float h_ctl_ref_pitch_angle</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00057">57</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
-
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00372">h_ctl_pitch_loop()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a1ace82d27c45b75d36f8e6bbecf59481"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float h_ctl_ref_pitch_rate</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00058">58</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
-
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00372">h_ctl_pitch_loop()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5c51724d30734d08e6a10219ff828678"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float h_ctl_ref_roll_accel</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00056">56</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
-
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00273">h_ctl_roll_loop()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="abcf19e1061be4f1255c7c05f6d627a3e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float h_ctl_ref_roll_angle</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00054">54</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
-
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00273">h_ctl_roll_loop()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6209e908e64de602bd7f03e8d4b26787"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float h_ctl_ref_roll_rate</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00055">55</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
-
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00273">h_ctl_roll_loop()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00219">h_ctl_init()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00447">h_ctl_pitch_loop()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00347">h_ctl_roll_loop()</a>.</p>
 
 </div>
 </div>
@@ -1188,9 +1171,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00069">69</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00107">107</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00273">h_ctl_roll_loop()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__attitude_8c_source.html#l00123">h_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -1204,9 +1187,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00071">71</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
-
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00273">h_ctl_roll_loop()</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00109">109</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
 </div>
 </div>
@@ -1220,9 +1201,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00073">73</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
-
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00273">h_ctl_roll_loop()</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00111">111</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
 </div>
 </div>
@@ -1236,9 +1215,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00074">74</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
-
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00273">h_ctl_roll_loop()</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00112">112</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
 </div>
 </div>
@@ -1254,7 +1231,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00045">45</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="nav_8c_source.html#l00340">fly_to_xy()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00222">h_ctl_course_loop()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="nav_8c_source.html#l00354">fly_to_xy()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00282">h_ctl_course_loop()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00219">h_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -1268,7 +1245,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00078">78</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00116">116</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
 <p>Referenced by <a class="el" href="stabilization__attitude_8c_source.html#l00123">h_ctl_init()</a>, and <a class="el" href="stabilization__attitude_8c_source.html#l00344">h_ctl_roll_loop()</a>.</p>
 
@@ -1284,9 +1261,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00070">70</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00108">108</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00273">h_ctl_roll_loop()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__attitude_8c_source.html#l00123">h_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -1300,9 +1277,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00068">68</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00106">106</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
-<p>Referenced by <a class="el" href="nav_8c_source.html#l00340">fly_to_xy()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00222">h_ctl_course_loop()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00273">h_ctl_roll_loop()</a>, <a class="el" href="nav_8c_source.html#l00510">nav_without_gps()</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00109">send_desired()</a>, and <a class="el" href="main__ap_8c_source.html#l00371">telecommand_task()</a>.</p>
+<p>Referenced by <a class="el" href="nav_8c_source.html#l00354">fly_to_xy()</a>, <a class="el" href="stabilization__attitude_8c_source.html#l00188">h_ctl_course_loop()</a>, <a class="el" href="stabilization__attitude_8c_source.html#l00123">h_ctl_init()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00347">h_ctl_roll_loop()</a>, <a class="el" href="nav_8c_source.html#l00524">nav_without_gps()</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00113">send_desired()</a>, and <a class="el" href="main__ap_8c_source.html#l00371">telecommand_task()</a>.</p>
 
 </div>
 </div>
@@ -1316,7 +1293,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00076">76</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00114">114</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
 <p>Referenced by <a class="el" href="stabilization__attitude_8c_source.html#l00188">h_ctl_course_loop()</a>, and <a class="el" href="stabilization__attitude_8c_source.html#l00123">h_ctl_init()</a>.</p>
 
@@ -1332,9 +1309,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00072">72</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
-
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>, and <a class="el" href="stabilization__adaptive_8c_source.html#l00273">h_ctl_roll_loop()</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00110">110</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
 </div>
 </div>
@@ -1348,9 +1323,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00096">96</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
-
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00134">134</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
 </div>
 </div>
@@ -1364,9 +1337,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00102">102</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
-
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00140">140</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
 </div>
 </div>
@@ -1380,9 +1351,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00101">101</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
-
-<p>Referenced by <a class="el" href="stabilization__adaptive_8c_source.html#l00164">h_ctl_init()</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__adaptive_8c_source.html#l00139">139</a> of file <a class="el" href="stabilization__adaptive_8c_source.html">stabilization_adaptive.c</a>.</p>
 
 </div>
 </div>
@@ -1392,7 +1361,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_cb1b347b64b61ba7f369ccfe68448b26.html">fixedwing</a></li><li class="navelem"><a class="el" href="dir_517430ae22334069e857fa1922a1fddc.html">stabilization</a></li><li class="navelem"><a class="el" href="stabilization__adaptive_8c.html">stabilization_adaptive.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:09 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:54 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

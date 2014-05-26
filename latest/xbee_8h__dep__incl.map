@@ -1,51 +1,51 @@
 <map id="sw/airborne/subsystems/datalink/xbee.h" name="sw/airborne/subsystems/datalink/xbee.h">
-<area shape="rect" id="node3" href="$main__ap_8c.html" title="AP ( AutoPilot ) tasks." alt="" coords="3524,99,3673,143"/>
-<area shape="rect" id="node5" href="$rotorcraft_2main_8c.html" title="Rotorcraft main loop." alt="" coords="3697,99,3847,143"/>
-<area shape="rect" id="node7" href="$downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="3871,99,4033,143"/>
-<area shape="rect" id="node99" href="$xbee_8c.html" title="sw/airborne/subsystems\l/datalink/xbee.c" alt="" coords="4057,99,4220,143"/>
-<area shape="rect" id="node9" href="$jsbsim__hw_8h.html" title="sw/airborne/arch/sim\l/jsbsim_hw.h" alt="" coords="5,201,147,245"/>
-<area shape="rect" id="node11" href="$imu__apogee_8c.html" title="Driver for the IMU on the Apogee board." alt="" coords="171,201,323,245"/>
-<area shape="rect" id="node13" href="$baro__board__ms5611__i2c_8c.html" title="Driver for onboard MS5611 baro via I2C." alt="" coords="347,201,523,245"/>
-<area shape="rect" id="node15" href="$baro__board__ms5611__spi_8c.html" title="Driver for onboard MS5611 baro via SPI." alt="" coords="547,201,723,245"/>
-<area shape="rect" id="node17" href="$test__baro_8c.html" title="sw/airborne/boards\l/booz/test_baro.c" alt="" coords="747,201,877,245"/>
-<area shape="rect" id="node19" href="$imu__krooz_8c.html" title="Driver for the IMU on the KroozSD board." alt="" coords="901,201,1032,245"/>
-<area shape="rect" id="node21" href="$imu__navgo_8c.html" title="Driver for the IMU on the NavGo board." alt="" coords="1056,201,1195,245"/>
-<area shape="rect" id="node23" href="$imu__umarim_8c.html" title="Driver for the IMU on the Umarim board." alt="" coords="1219,201,1373,245"/>
-<area shape="rect" id="node25" href="$rotorcraft_2datalink_8c.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="1397,201,1547,245"/>
-<area shape="rect" id="node27" href="$navigation_8c.html" title="Rotorcraft navigation functions." alt="" coords="1571,201,1720,245"/>
-<area shape="rect" id="node29" href="$setup__actuators_8c.html" title="sw/airborne/firmwares\l/setup/setup_actuators.c" alt="" coords="1744,201,1909,245"/>
-<area shape="rect" id="node31" href="$main__demo4_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo4.c" alt="" coords="1933,201,2085,245"/>
-<area shape="rect" id="node33" href="$main__demo5_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo5.c" alt="" coords="2109,201,2261,245"/>
-<area shape="rect" id="node35" href="$main__demo6_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo6.c" alt="" coords="2285,201,2437,245"/>
-<area shape="rect" id="node37" href="$lisa__stm__passthrough__main_8c.html" title="sw/airborne/lisa/lisa\l_stm_passthrough_main.c" alt="" coords="2461,201,2635,245"/>
-<area shape="rect" id="node39" href="$hs__gyro_8c.html" title="sw/airborne/lisa/test\l/hs_gyro.c" alt="" coords="2659,201,2797,245"/>
-<area shape="rect" id="node41" href="$lisa__test__actuators__mkk_8c.html" title="sw/airborne/lisa/test\l/lisa_test_actuators_mkk.c" alt="" coords="2821,201,3000,245"/>
-<area shape="rect" id="node43" href="$lisa__test__adxl345__dma_8c.html" title="sw/airborne/lisa/test\l/lisa_test_adxl345_dma.c" alt="" coords="3024,201,3192,245"/>
-<area shape="rect" id="node45" href="$lisa__test__aspirin_8c.html" title="sw/airborne/lisa/test\l/lisa_test_aspirin.c" alt="" coords="3216,201,3355,245"/>
-<area shape="rect" id="node47" href="$lisa__test__hmc5843_8c.html" title="sw/airborne/lisa/test\l/lisa_test_hmc5843.c" alt="" coords="3379,201,3523,245"/>
-<area shape="rect" id="node49" href="$lisa__test__itg3200_8c.html" title="sw/airborne/lisa/test\l/lisa_test_itg3200.c" alt="" coords="3547,201,3685,245"/>
-<area shape="rect" id="node51" href="$lisa__test__max1168_8c.html" title="sw/airborne/lisa/test\l/lisa_test_max1168.c" alt="" coords="3709,201,3853,245"/>
-<area shape="rect" id="node53" href="$lisa__test__sc18is600_8c.html" title="sw/airborne/lisa/test\l/lisa_test_sc18is600.c" alt="" coords="3877,201,4027,245"/>
-<area shape="rect" id="node55" href="$test__board_8c.html" title="sw/airborne/lisa/test\l/test_board.c" alt="" coords="4051,201,4189,245"/>
-<area shape="rect" id="node57" href="$test__mc__asctec__v1__simple_8c.html" title="sw/airborne/lisa/test\l/test_mc_asctec_v1_simple.c" alt="" coords="4213,201,4408,245"/>
-<area shape="rect" id="node59" href="$test__adc_8c.html" title="sw/airborne/lisa/test\l_adc.c" alt="" coords="4432,201,4571,245"/>
-<area shape="rect" id="node61" href="$test__baro__i2c_8c.html" title="sw/airborne/lisa/test\l_baro_i2c.c" alt="" coords="4595,201,4733,245"/>
-<area shape="rect" id="node63" href="$test__can_8c.html" title="sw/airborne/lisa/test\l_can.c" alt="" coords="4757,201,4896,245"/>
-<area shape="rect" id="node65" href="$test__csc__servo_8c.html" title="sw/airborne/lisa/test\l_csc_servo.c" alt="" coords="4920,201,5059,245"/>
-<area shape="rect" id="node67" href="$test__datalink_8c.html" title="sw/airborne/lisa/test\l_datalink.c" alt="" coords="5083,201,5221,245"/>
-<area shape="rect" id="node69" href="$test__float_8c.html" title="sw/airborne/lisa/test\l_float.c" alt="" coords="5245,201,5384,245"/>
-<area shape="rect" id="node71" href="$test__spi__slave_8c.html" title="sw/airborne/lisa/test\l_spi_slave.c" alt="" coords="5408,201,5547,245"/>
-<area shape="rect" id="node73" href="$test__spi__slave2_8c.html" title="sw/airborne/lisa/test\l_spi_slave2.c" alt="" coords="5571,201,5709,245"/>
-<area shape="rect" id="node75" href="$adc__generic_8c.html" title="sw/airborne/modules\l/adcs/adc_generic.c" alt="" coords="5733,201,5875,245"/>
-<area shape="rect" id="node77" href="$max11040_8c.html" title="Maxim MAX11040 ADC hw interface." alt="" coords="5899,201,6040,245"/>
-<area shape="rect" id="node79" href="$flight__benchmark_8c.html" title="sw/airborne/modules\l/benchmark/flight_benchmark.c" alt="" coords="6064,201,6267,245"/>
-<area shape="rect" id="node81" href="$send__imu__mag__current_8c.html" title="Enables sending of IMU_MAG_CURRENT_CALIBRATION message." alt="" coords="6291,193,6435,253"/>
-<area shape="rect" id="node83" href="$cam__track_8c.html" title="sw/airborne/modules\l/cam_control/cam_track.c" alt="" coords="6459,201,6629,245"/>
-<area shape="rect" id="node85" href="$cartography_8c.html" title="Navigation functions for cartography of the ground." alt="" coords="6653,201,6827,245"/>
-<area shape="rect" id="node87" href="$config__mkk__v2_8c.html" title="sw/airborne/modules\l/config/config_mkk_v2.c" alt="" coords="6851,201,7011,245"/>
-<area shape="rect" id="node89" href="$sys__mon_8c.html" title="sw/airborne/modules\l/core/sys_mon.c" alt="" coords="7035,201,7176,245"/>
-<area shape="rect" id="node91" href="$xtend__rssi_8c.html" title="This measures the rssi pwm signal from a Digi XTend radio modem and sends a message with the info..." alt="" coords="7200,201,7344,245"/>
-<area shape="rect" id="node93" href="$atmega__i2c__cam__ctrl_8c.html" title="Interface with digital camera though AVR AtMega chip." alt="" coords="7368,193,7509,253"/>
-<area shape="rect" id="node95" href="$sim__i2c__cam__ctrl_8c.html" title="Simulated Interface with digital camera." alt="" coords="7533,193,7675,253"/>
-<area shape="rect" id="node97" href="$anemotaxis_8c.html" title="sw/airborne/modules\l/enose/anemotaxis.c" alt="" coords="7699,201,7840,245"/>
+<area shape="rect" id="node3" href="$main__ap_8c.html" title="AP ( AutoPilot ) tasks." alt="" coords="3885,99,4045,143"/>
+<area shape="rect" id="node5" href="$rotorcraft_2main_8c.html" title="Rotorcraft main loop." alt="" coords="4069,99,4229,143"/>
+<area shape="rect" id="node7" href="$downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="4253,99,4429,143"/>
+<area shape="rect" id="node99" href="$xbee_8c.html" title="sw/airborne/subsystems\l/datalink/xbee.c" alt="" coords="4453,99,4629,143"/>
+<area shape="rect" id="node9" href="$jsbsim__hw_8h.html" title="sw/airborne/arch/sim\l/jsbsim_hw.h" alt="" coords="5,201,160,245"/>
+<area shape="rect" id="node11" href="$imu__apogee_8c.html" title="Driver for the IMU on the Apogee board." alt="" coords="184,201,352,245"/>
+<area shape="rect" id="node13" href="$baro__board__ms5611__i2c_8c.html" title="Driver for onboard MS5611 baro via I2C." alt="" coords="376,201,571,245"/>
+<area shape="rect" id="node15" href="$baro__board__ms5611__spi_8c.html" title="Driver for onboard MS5611 baro via SPI." alt="" coords="595,201,789,245"/>
+<area shape="rect" id="node17" href="$test__baro_8c.html" title="sw/airborne/boards\l/booz/test_baro.c" alt="" coords="813,201,955,245"/>
+<area shape="rect" id="node19" href="$imu__krooz_8c.html" title="Driver for the IMU on the KroozSD board." alt="" coords="979,201,1120,245"/>
+<area shape="rect" id="node21" href="$imu__navgo_8c.html" title="Driver for the IMU on the NavGo board." alt="" coords="1144,201,1293,245"/>
+<area shape="rect" id="node23" href="$imu__umarim_8c.html" title="Driver for the IMU on the Umarim board." alt="" coords="1317,201,1488,245"/>
+<area shape="rect" id="node25" href="$rotorcraft_2datalink_8c.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="1512,201,1672,245"/>
+<area shape="rect" id="node27" href="$navigation_8c.html" title="Rotorcraft navigation functions." alt="" coords="1696,201,1861,245"/>
+<area shape="rect" id="node29" href="$setup__actuators_8c.html" title="sw/airborne/firmwares\l/setup/setup_actuators.c" alt="" coords="1885,201,2067,245"/>
+<area shape="rect" id="node31" href="$main__demo4_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo4.c" alt="" coords="2091,201,2261,245"/>
+<area shape="rect" id="node33" href="$main__demo5_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo5.c" alt="" coords="2285,201,2456,245"/>
+<area shape="rect" id="node35" href="$main__demo6_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo6.c" alt="" coords="2480,201,2651,245"/>
+<area shape="rect" id="node37" href="$lisa__stm__passthrough__main_8c.html" title="sw/airborne/lisa/lisa\l_stm_passthrough_main.c" alt="" coords="2675,201,2864,245"/>
+<area shape="rect" id="node39" href="$adc__generic_8c.html" title="sw/airborne/modules\l/adcs/adc_generic.c" alt="" coords="2888,201,3043,245"/>
+<area shape="rect" id="node41" href="$max11040_8c.html" title="Maxim MAX11040 ADC hw interface." alt="" coords="3067,201,3221,245"/>
+<area shape="rect" id="node43" href="$flight__benchmark_8c.html" title="sw/airborne/modules\l/benchmark/flight_benchmark.c" alt="" coords="3245,201,3467,245"/>
+<area shape="rect" id="node45" href="$send__imu__mag__current_8c.html" title="Enables sending of IMU_MAG_CURRENT_CALIBRATION message." alt="" coords="3491,193,3648,253"/>
+<area shape="rect" id="node47" href="$cartography_8c.html" title="Navigation functions for cartography of the ground." alt="" coords="3672,201,3864,245"/>
+<area shape="rect" id="node49" href="$config__mkk__v2_8c.html" title="sw/airborne/modules\l/config/config_mkk_v2.c" alt="" coords="3888,201,4061,245"/>
+<area shape="rect" id="node51" href="$sys__mon_8c.html" title="sw/airborne/modules\l/core/sys_mon.c" alt="" coords="4085,201,4240,245"/>
+<area shape="rect" id="node53" href="$xtend__rssi_8c.html" title="This measures the rssi pwm signal from a Digi XTend radio modem and sends a message with the info..." alt="" coords="4264,201,4419,245"/>
+<area shape="rect" id="node55" href="$atmega__i2c__cam__ctrl_8c.html" title="Interface with digital camera though AVR AtMega chip." alt="" coords="4443,193,4597,253"/>
+<area shape="rect" id="node57" href="$sim__i2c__cam__ctrl_8c.html" title="Simulated Interface with digital camera." alt="" coords="4621,193,4776,253"/>
+<area shape="rect" id="node59" href="$anemotaxis_8c.html" title="sw/airborne/modules\l/enose/anemotaxis.c" alt="" coords="4800,201,4955,245"/>
+<area shape="rect" id="node61" href="$chemotaxis_8c.html" title="sw/airborne/modules\l/enose/chemotaxis.c" alt="" coords="4979,201,5133,245"/>
+<area shape="rect" id="node63" href="$enose_8c.html" title="sw/airborne/modules\l/enose/enose.c" alt="" coords="5157,201,5312,245"/>
+<area shape="rect" id="node65" href="$gps__ubx__ucenter_8c.html" title="Configure Ublox GPS." alt="" coords="5336,201,5507,245"/>
+<area shape="rect" id="node67" href="$gsm_8c.html" title="sw/airborne/modules\l/gsm/gsm.c" alt="" coords="5531,201,5685,245"/>
+<area shape="rect" id="node69" href="$qr__code__spi__link_8c.html" title="sw/airborne/modules\l/gumstix_interface/qr\l_code_spi_link.c" alt="" coords="5709,193,5867,253"/>
+<area shape="rect" id="node71" href="$alt__filter_8c.html" title="sw/airborne/modules\l/ins/alt_filter.c" alt="" coords="5891,201,6045,245"/>
+<area shape="rect" id="node73" href="$modules_2ins_2ins__arduimu_8c.html" title="sw/airborne/modules\l/ins/ins_arduimu.c" alt="" coords="6069,201,6224,245"/>
+<area shape="rect" id="node75" href="$ins__vn100_8c.html" title="sw/airborne/modules\l/ins/ins_vn100.c" alt="" coords="6248,201,6403,245"/>
+<area shape="rect" id="node77" href="$ins__xsens_8c.html" title="Parser for the Xsens protocol." alt="" coords="6427,201,6581,245"/>
+<area shape="rect" id="node79" href="$ins__xsens700_8c.html" title="Parser for the Xsens protocol." alt="" coords="6605,201,6760,245"/>
+<area shape="rect" id="node81" href="$max3100__hw_8c.html" title="sw/airborne/modules\l/max3100/max3100_hw.c" alt="" coords="6784,201,6968,245"/>
+<area shape="rect" id="node83" href="$max7456_8c.html" title="Maxim MAX7456 single&#45;channel monochrome on&#45;screen display driver." alt="" coords="6992,201,7152,245"/>
+<area shape="rect" id="node85" href="$charge__sens_8c.html" title="I2C interface for University of Reading charge sensor." alt="" coords="7176,201,7339,245"/>
+<area shape="rect" id="node87" href="$dust__gp2y_8c.html" title="Sharp GP2Y1010AU dust sensor interface." alt="" coords="7363,201,7517,245"/>
+<area shape="rect" id="node89" href="$geiger__counter_8c.html" title="I2C interface for University of Reading Geiger counter." alt="" coords="7541,201,7720,245"/>
+<area shape="rect" id="node91" href="$humid__dpicco_8c.html" title="DigiPicco I2C sensor interface." alt="" coords="7744,201,7915,245"/>
+<area shape="rect" id="node93" href="$humid__hih_8c.html" title="Honeywell HIH&#45;4030 sensor interface." alt="" coords="7939,201,8093,245"/>
+<area shape="rect" id="node95" href="$humid__htm__b71_8c.html" title="TronSens HTM&#45;B71 humidity/temperature sensor i2c interface." alt="" coords="8117,201,8304,245"/>
+<area shape="rect" id="node97" href="$humid__pcap01_8c.html" title="ACAM Picocap Single&#45;chip Solution for Capacitance Measurement." alt="" coords="8328,201,8504,245"/>
 </map>

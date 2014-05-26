@@ -2,7 +2,6 @@ var searchData=
 [
   ['abi_5fstruct',['abi_struct',['../structabi__struct.html',1,'']]],
   ['ac_5finfo_5f',['ac_info_',['../structac__info__.html',1,'']]],
-  ['accbuf',['AccBuf',['../structAccBuf.html',1,'']]],
   ['actuators_5fmkk_5fv2_5fstruct',['actuators_mkk_v2_struct',['../structactuators__mkk__v2__struct.html',1,'']]],
   ['actuators_5fmkk_5fv2_5ftelemetry_5fstruct',['actuators_mkk_v2_telemetry_struct',['../structactuators__mkk__v2__telemetry__struct.html',1,'']]],
   ['actuatorsasctec',['ActuatorsAsctec',['../structActuatorsAsctec.html',1,'']]],

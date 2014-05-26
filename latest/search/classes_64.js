@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['discsurvey',['DiscSurvey',['../structDiscSurvey.html',1,'']]],
   ['doubleeulers',['DoubleEulers',['../structDoubleEulers.html',1,'']]],
   ['doublemat33',['DoubleMat33',['../structDoubleMat33.html',1,'']]],
   ['doublequat',['DoubleQuat',['../structDoubleQuat.html',1,'']]],

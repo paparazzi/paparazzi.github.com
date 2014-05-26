@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -149,24 +149,25 @@ $(document).ready(function(){initNavTree('electrical_8h_source.html','');});
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="structElectrical.html#aa06d22221dc04d5615b4bbc0a7e66556">   48</a></span>&#160;  <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="structElectrical.html#aa06d22221dc04d5615b4bbc0a7e66556" title="supply voltage in decivolts">vsupply</a>;       </div>
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="structElectrical.html#aad2e82bde4cf4c3851ead15ad1dca550">   49</a></span>&#160;  <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>  <a class="code" href="structElectrical.html#aad2e82bde4cf4c3851ead15ad1dca550" title="current in milliamps">current</a>;       </div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="structElectrical.html#aded18d0de371b25162f53cb5f6e1e6a1">   50</a></span>&#160;  <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>  <a class="code" href="structElectrical.html#aded18d0de371b25162f53cb5f6e1e6a1" title="consumption in mAh">consumed</a>;      </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="structElectrical.html#ac46da7bf09c71ea723c021ad4a6adfa6">   51</a></span>&#160;  bool_t   <a class="code" href="structElectrical.html#ac46da7bf09c71ea723c021ad4a6adfa6" title="battery low status">bat_low</a>;       </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="structElectrical.html#a43489c65fd6820535308f78eb63f474c">   52</a></span>&#160;  bool_t   <a class="code" href="structElectrical.html#a43489c65fd6820535308f78eb63f474c" title="battery critical status">bat_critical</a>;  </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="structElectrical.html">Electrical</a> <a class="code" href="electrical__dummy_8c.html#a935f74638cd658e7dac75915bcb63bde">electrical</a>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="electrical__dummy_8c.html#ac5e9a56281268bdf6ddec2143b25f16a">electrical_init</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="electrical__dummy_8c.html#aeef6ce2fb40e76ed52df5a1d45646ba1">electrical_periodic</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SUBSYSTEMS_ELECTRICAL_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="structElectrical.html#a6426131a0ccee0da57ae320f5a7a8fe0">   51</a></span>&#160;  <span class="keywordtype">float</span>    <a class="code" href="structElectrical.html#a6426131a0ccee0da57ae320f5a7a8fe0" title="consumed energy in mAh">energy</a>;        </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="structElectrical.html#ac46da7bf09c71ea723c021ad4a6adfa6">   52</a></span>&#160;  bool_t   <a class="code" href="structElectrical.html#ac46da7bf09c71ea723c021ad4a6adfa6" title="battery low status">bat_low</a>;       </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="structElectrical.html#a43489c65fd6820535308f78eb63f474c">   53</a></span>&#160;  bool_t   <a class="code" href="structElectrical.html#a43489c65fd6820535308f78eb63f474c" title="battery critical status">bat_critical</a>;  </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="structElectrical.html">Electrical</a> <a class="code" href="electrical__dummy_8c.html#a935f74638cd658e7dac75915bcb63bde">electrical</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="electrical__dummy_8c.html#ac5e9a56281268bdf6ddec2143b25f16a">electrical_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="electrical__dummy_8c.html#aeef6ce2fb40e76ed52df5a1d45646ba1">electrical_periodic</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SUBSYSTEMS_ELECTRICAL_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="electrical_8h.html">electrical.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:45 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

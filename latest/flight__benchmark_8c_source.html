@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('flight__benchmark_8c_source.html','');
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="downlink_8h.html" title="Common code for AP and FBW telemetry.">subsystems/datalink/downlink.h</a>&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API">mcu_periph/uart.h</a>&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;generated/airframe.h&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="nav_8h.html" title="Fixedwing Navigation library.">subsystems/nav.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="nav_8h.html" title="Fixedwing Navigation library.">firmwares/fixedwing/nav.h</a>&quot;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// #include &quot;math/pprz_algebra_int.h&quot;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// #include &quot;math/pprz_algebra_float.h&quot;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
@@ -174,7 +174,7 @@ $(document).ready(function(){initNavTree('flight__benchmark_8c_source.html','');
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">  #endif</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">  #ifdef BENCHMARK_ALTITUDE</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor"></span>    Err_altitude = fabs(<a class="code" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float).">stateGetPositionEnu_f</a>()-&gt;z - <a class="code" href="energy__ctrl_8c.html#a8ca3adfa488b360ca07396ef54c199f3" title="in meters above MSL">v_ctl_altitude_setpoint</a>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor"></span>    Err_altitude = fabs(<a class="code" href="group__state__position.html#ga7488f3b1e3afa9515541c0130278bdac" title="Get position in UTM coordinates (float).">stateGetPositionUtm_f</a>()-&gt;alt - <a class="code" href="energy__ctrl_8c.html#a8ca3adfa488b360ca07396ef54c199f3" title="in meters above MSL">v_ctl_altitude_setpoint</a>);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">if</span> (Err_altitude&gt;<a class="code" href="flight__benchmark_8c.html#a9c89ccb67edcffa690db968ae55d0e38">ToleranceAltitude</a>){</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      Err_altitude = Err_altitude-<a class="code" href="flight__benchmark_8c.html#a9c89ccb67edcffa690db968ae55d0e38">ToleranceAltitude</a>;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <a class="code" href="flight__benchmark_8c.html#ade3a33aa6a5dde5d1520c3a72f2bddad">SquareSumErr_altitude</a> += (Err_altitude * Err_altitude);</div>
@@ -205,7 +205,7 @@ $(document).ready(function(){initNavTree('flight__benchmark_8c_source.html','');
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">//    if (nav_in_circle){</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      deltaPlaneX = <a class="code" href="nav_8c.html#ac1af27920d41a6dbc343fc1d7f55e08c">nav_circle_x</a> - <a class="code" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float).">stateGetPositionEnu_f</a>()-&gt;<a class="code" href="structEnuCoor__f.html#a1477647029e175947a6bd860322c98ff" title="in meters">x</a>;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      deltaPlaneY = <a class="code" href="nav_8c.html#a7b01191b794559f9d485b67c2be62c39">nav_circle_y</a> - <a class="code" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float).">stateGetPositionEnu_f</a>()-&gt;<a class="code" href="structEnuCoor__f.html#a03a1d7fc5e459dd6cbdb7893ef631dde" title="in meters">y</a>;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      Err_position_circle = fabs(sqrt(deltaPlaneX*deltaPlaneX+deltaPlaneY*deltaPlaneY)-<a class="code" href="navigation_8c.html#aa912cd5993a128e66d6e5391e5dc812f">nav_circle_radius</a>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      Err_position_circle = fabs(sqrt(deltaPlaneX*deltaPlaneX+deltaPlaneY*deltaPlaneY)-<a class="code" href="nav_8c.html#a3e545eca284b674d03e90c15f58e1ff4">nav_circle_radius</a>);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">//    }</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">if</span> (Err_position_circle &lt; Err_position_segment){</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      Err_position = Err_position_circle;</div>
@@ -248,7 +248,7 @@ $(document).ready(function(){initNavTree('flight__benchmark_8c_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_8d6f6e9d45d173b830508905ddd2e0a8.html">benchmark</a></li><li class="navelem"><a class="el" href="flight__benchmark_8c.html">flight_benchmark.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

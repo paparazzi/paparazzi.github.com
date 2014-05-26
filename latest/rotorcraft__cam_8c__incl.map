@@ -1,28 +1,30 @@
 <map id="sw/airborne/modules/cam_control/rotorcraft_cam.c" name="sw/airborne/modules/cam_control/rotorcraft_cam.c">
-<area shape="rect" id="node3" href="$rotorcraft__cam_8h.html" title="Camera control module for rotorcraft." alt="" coords="1071,286,1217,330"/>
-<area shape="rect" id="node29" href="$actuators_8h.html" title="Hardware independent API for actuators (servos, motor controllers)." alt="" coords="1292,294,1452,322"/>
-<area shape="rect" id="node37" href="$state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="701,201,763,229"/>
-<area shape="rect" id="node64" href="$navigation_8h.html" title="Rotorcraft navigation functions." alt="" coords="275,193,408,237"/>
-<area shape="rect" id="node73" href="$telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code)." alt="" coords="1799,99,1940,143"/>
-<area shape="rect" id="node9" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="765,387,923,415"/>
-<area shape="rect" id="node27" href="$led_8h.html" title="arch independent LED (Light Emitting Diodes) API" alt="" coords="997,387,1045,415"/>
-<area shape="rect" id="node13" href="$pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="501,481,640,509"/>
-<area shape="rect" id="node20" href="$pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="901,481,1035,509"/>
-<area shape="rect" id="node31" href="$paparazzi_8h.html" title="paparazzi.h" alt="" coords="1657,481,1743,509"/>
-<area shape="rect" id="node33" href="$inttypes_8h.html" title="inttypes.h" alt="" coords="2124,566,2201,594"/>
-<area shape="rect" id="node40" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="472,387,640,415"/>
-<area shape="rect" id="node46" href="$pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="432,286,565,330"/>
-<area shape="rect" id="node52" href="$pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="275,286,408,330"/>
-<area shape="rect" id="node57" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversion." alt="" coords="715,286,861,330"/>
-<area shape="rect" id="node48" href="$pprz__geodetic_8h.html" title="pprz_geodetic.h" alt="" coords="285,387,397,415"/>
-<area shape="rect" id="node69" href="$common__flight__plan_8h.html" title="subsystems/navigation\l/common_flight_plan.h" alt="" coords="5,473,160,517"/>
-<area shape="rect" id="node78" href="$uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="1527,294,1652,322"/>
-<area shape="rect" id="node83" href="$downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="1892,193,2033,237"/>
-<area shape="rect" id="node90" href="$udp_8h.html" title="subsystems/datalink\l/udp.h" alt="" coords="2057,286,2199,330"/>
-<area shape="rect" id="node98" href="$pprz__transport_8h.html" title="Extra datalink using PPRZ protocol." alt="" coords="2093,379,2235,423"/>
-<area shape="rect" id="node108" href="$xbee_8h.html" title="subsystems/datalink\l/xbee.h" alt="" coords="2273,286,2415,330"/>
-<area shape="rect" id="node115" href="$w5100_8h.html" title="subsystems/datalink\l/w5100.h" alt="" coords="1676,286,1817,330"/>
-<area shape="rect" id="node92" href="$datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="1823,473,1964,517"/>
-<area shape="rect" id="node103" href="$transport_8h.html" title="generic transport header" alt="" coords="2039,473,2180,517"/>
-<area shape="rect" id="node112" href="$xbee24_8h.html" title="subsystems/datalink\l/xbee24.h" alt="" coords="2309,379,2451,423"/>
+<area shape="rect" id="node3" href="$rotorcraft__cam_8h.html" title="Camera control module for rotorcraft." alt="" coords="345,286,505,330"/>
+<area shape="rect" id="node32" href="$actuators_8h.html" title="Hardware independent API for actuators (servos, motor controllers)." alt="" coords="2657,294,2833,322"/>
+<area shape="rect" id="node40" href="$state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="790,201,857,229"/>
+<area shape="rect" id="node67" href="$navigation_8h.html" title="Rotorcraft navigation functions." alt="" coords="1061,193,1208,237"/>
+<area shape="rect" id="node76" href="$telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code)." alt="" coords="1450,99,1602,143"/>
+<area shape="rect" id="node11" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="716,387,894,415"/>
+<area shape="rect" id="node27" href="$gpio_8h.html" title="Some architecture independent helper functions for GPIOs." alt="" coords="238,387,377,415"/>
+<area shape="rect" id="node14" href="$pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="486,481,641,509"/>
+<area shape="rect" id="node21" href="$pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="766,481,916,509"/>
+<area shape="rect" id="node34" href="$paparazzi_8h.html" title="paparazzi.h" alt="" coords="2726,481,2822,509"/>
+<area shape="rect" id="node36" href="$inttypes_8h.html" title="inttypes.h" alt="" coords="2646,566,2732,594"/>
+<area shape="rect" id="node43" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="452,387,641,415"/>
+<area shape="rect" id="node49" href="$pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="1060,286,1209,330"/>
+<area shape="rect" id="node55" href="$pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="886,286,1036,330"/>
+<area shape="rect" id="node60" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversion." alt="" coords="597,286,760,330"/>
+<area shape="rect" id="node51" href="$pprz__geodetic_8h.html" title="pprz_geodetic.h" alt="" coords="1020,387,1142,415"/>
+<area shape="rect" id="node72" href="$common__flight__plan_8h.html" title="subsystems/navigation\l/common_flight_plan.h" alt="" coords="1092,473,1260,517"/>
+<area shape="rect" id="node81" href="$uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="1385,294,1524,322"/>
+<area shape="rect" id="node86" href="$downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="1902,193,2054,237"/>
+<area shape="rect" id="node93" href="$udp_8h.html" title="subsystems/datalink\l/udp.h" alt="" coords="2430,286,2582,330"/>
+<area shape="rect" id="node101" href="$pprz__transport_8h.html" title="Extra datalink using PPRZ protocol." alt="" coords="2482,379,2634,423"/>
+<area shape="rect" id="node111" href="$pprzlog__transport_8h.html" title="Building and Paparazzi frames with timestamp for data logger." alt="" coords="1670,286,1822,330"/>
+<area shape="rect" id="node122" href="$xbee_8h.html" title="subsystems/datalink\l/xbee.h" alt="" coords="2254,286,2406,330"/>
+<area shape="rect" id="node129" href="$w5100_8h.html" title="W5100 ethernet chip I/O." alt="" coords="1846,286,1998,330"/>
+<area shape="rect" id="node95" href="$datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="2318,473,2470,517"/>
+<area shape="rect" id="node106" href="$transport_8h.html" title="generic transport header" alt="" coords="2092,473,2244,517"/>
+<area shape="rect" id="node113" href="$sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1677,387,1848,415"/>
+<area shape="rect" id="node126" href="$xbee24_8h.html" title="subsystems/datalink\l/xbee24.h" alt="" coords="2205,379,2357,423"/>
 </map>

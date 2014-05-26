@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -186,11 +186,17 @@ $(document).ready(function(){initNavTree('globals_defs_0x68.html','');});
 <li>H_CTL_REF_MAX_Q_DOT
 : <a class="el" href="stabilization__adaptive_8c.html#a942d0d6bd5f3a180c19004eda9f17bf3">stabilization_adaptive.c</a>
 </li>
-<li>H_CTL_REF_W
-: <a class="el" href="stabilization__adaptive_8c.html#a79323c2025a0d79009943ca5c06966cc">stabilization_adaptive.c</a>
+<li>H_CTL_REF_W_P
+: <a class="el" href="stabilization__adaptive_8c.html#acc779a581eb5434bf38a16e010d77951">stabilization_adaptive.c</a>
 </li>
-<li>H_CTL_REF_XI
-: <a class="el" href="stabilization__adaptive_8c.html#af70644377dd434759cff681145dd43f6">stabilization_adaptive.c</a>
+<li>H_CTL_REF_W_Q
+: <a class="el" href="stabilization__adaptive_8c.html#ac9aee6f0d04f722f3daaf9e4430658f6">stabilization_adaptive.c</a>
+</li>
+<li>H_CTL_REF_XI_P
+: <a class="el" href="stabilization__adaptive_8c.html#a442f30f89df2f11f553baa37974759ce">stabilization_adaptive.c</a>
+</li>
+<li>H_CTL_REF_XI_Q
+: <a class="el" href="stabilization__adaptive_8c.html#aaca95839ffbc7b9a845e487b320b69a0">stabilization_adaptive.c</a>
 </li>
 <li>H_CTL_ROLL_IGAIN
 : <a class="el" href="stabilization__adaptive_8c.html#aaec90f1f260626dfaa524247431f578f">stabilization_adaptive.c</a>
@@ -251,8 +257,14 @@ $(document).ready(function(){initNavTree('globals_defs_0x68.html','');});
 <li>HIGH_ACCEL_LOW_SPEED_RESUME
 : <a class="el" href="modules_2ins_2ins__arduimu__basic_8c.html#afe7eeee2e1b44f3d4533e7ab52d75a90">ins_arduimu_basic.c</a>
 </li>
+<li>HIGH_RES_RMAT_BFP_OF_REAL
+: <a class="el" href="pprz__geodetic__int_8h.html#a0fba90ad1fb5c0dec5f9c8d5ca1ec104">pprz_geodetic_int.h</a>
+</li>
+<li>HIGH_RES_RMAT_FLOAT_OF_BFP
+: <a class="el" href="pprz__geodetic__int_8h.html#abd0713b7771dfb7b32c32b0927b836e9">pprz_geodetic_int.h</a>
+</li>
 <li>HIGH_RES_TRIG_FRAC
-: <a class="el" href="pprz__geodetic__int_8c.html#a6d38b5f61c7150a89add372e91650595">pprz_geodetic_int.c</a>
+: <a class="el" href="pprz__geodetic__int_8h.html#a6d38b5f61c7150a89add372e91650595">pprz_geodetic_int.h</a>
 </li>
 <li>HMC5843_ADDR
 : <a class="el" href="hmc5843_8h.html#af5698fe0de8ea262fc27e0680c3270e2">hmc5843.h</a>
@@ -386,12 +398,30 @@ $(document).ready(function(){initNavTree('globals_defs_0x68.html','');});
 , <a class="el" href="navigation_8h.html#a5bfcd798f85be44cd7766b55ef9c9c08">navigation.h</a>
 </li>
 <li>HORIZONTAL_MODE_ROUTE
-: <a class="el" href="navigation_8h.html#a6084dc0a6bca1d7ca7c39dad6614bce0">navigation.h</a>
-, <a class="el" href="nav_8h.html#a6084dc0a6bca1d7ca7c39dad6614bce0">nav.h</a>
+: <a class="el" href="nav_8h.html#a6084dc0a6bca1d7ca7c39dad6614bce0">nav.h</a>
+, <a class="el" href="navigation_8h.html#a6084dc0a6bca1d7ca7c39dad6614bce0">navigation.h</a>
 </li>
 <li>HORIZONTAL_MODE_WAYPOINT
-: <a class="el" href="nav_8h.html#a303d1b36f192af5f774d7a660ea83fff">nav.h</a>
-, <a class="el" href="navigation_8h.html#a303d1b36f192af5f774d7a660ea83fff">navigation.h</a>
+: <a class="el" href="navigation_8h.html#a303d1b36f192af5f774d7a660ea83fff">navigation.h</a>
+, <a class="el" href="nav_8h.html#a303d1b36f192af5f774d7a660ea83fff">nav.h</a>
+</li>
+<li>HOTT_BINARY_MODE_REQUEST_ID
+: <a class="el" href="hott_8c.html#a21af4e2c34be1e31f188f65f7cde711d">hott.c</a>
+</li>
+<li>HOTT_TELEMETRY_EAM_SENSOR_ID
+: <a class="el" href="hott__eam_8h.html#a79a337a859ca95062bfbd77dd1a13ec4">hott_eam.h</a>
+</li>
+<li>HOTT_TELEMETRY_GAM_SENSOR_ID
+: <a class="el" href="hott__gam_8h.html#a221244730e4f96c650f744645a79b43a">hott_gam.h</a>
+</li>
+<li>HOTT_TELEMETRY_GPS_SENSOR_ID
+: <a class="el" href="hott_8c.html#ae9ec52c71dc992f3da387fd9b52df7bf">hott.c</a>
+</li>
+<li>HOTT_TELEMETRY_VARIO_SENSOR_ID
+: <a class="el" href="hott_8c.html#a7d1922d7d3330f6b674c994a1bfff42b">hott.c</a>
+</li>
+<li>HOTT_TEXT_MODE_REQUEST_ID
+: <a class="el" href="hott_8c.html#a30a84272738595e61de9e52166a175cf">hott.c</a>
 </li>
 <li>HTM_I2C_DEV
 : <a class="el" href="humid__htm__b71_8c.html#a37f0407ea00c0a7c0293631507b4aa46">humid_htm_b71.c</a>
@@ -400,7 +430,7 @@ $(document).ready(function(){initNavTree('globals_defs_0x68.html','');});
 : <a class="el" href="humid__htm__b71_8c.html#ae4aeefdce8e2dc898edec7541d412f0e">humid_htm_b71.c</a>
 </li>
 <li>HUMI
-: <a class="el" href="humid__sht_8h.html#a51ac1a55c11f4fd1b202ca488b9d5e3d">humid_sht.h</a>
+: <a class="el" href="humid__sht_8c.html#a51ac1a55c11f4fd1b202ca488b9d5e3d">humid_sht.c</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -408,7 +438,7 @@ $(document).ready(function(){initNavTree('globals_defs_0x68.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:14 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:23 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

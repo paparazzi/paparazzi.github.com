@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -163,12 +163,12 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2imu_2imu__crista__a
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_13 | GPIO_Pin_14 | GPIO_Pin_15;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  GPIO_Init(GPIOB, &amp;GPIO_InitStructure);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  GPIO_Init(<a class="code" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a68b66ac73be4c836db878a42e1fea3cd">GPIOB</a>, &amp;GPIO_InitStructure);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="comment">/* set slave select as output and assert it ( on PB12) */</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_12;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  GPIO_Init(GPIOB, &amp;GPIO_InitStructure);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  GPIO_Init(<a class="code" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a68b66ac73be4c836db878a42e1fea3cd">GPIOB</a>, &amp;GPIO_InitStructure);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="stm32_2subsystems_2imu_2imu__crista__arch_8c.html#aa9817622c338285730aca3a5c84c289c">ADS8344Unselect</a>();</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="comment">/* configure SPI after enabling it*/</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  SPI_Cmd(SPI2, ENABLE);</div>
@@ -285,7 +285,7 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2imu_2imu__crista__a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_71548ae744da26ac2c7ca213b679dc43.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_2ac6ff96257b3d96ab38d195787bdd5e.html">imu</a></li><li class="navelem"><a class="el" href="stm32_2subsystems_2imu_2imu__crista__arch_8c.html">imu_crista_arch.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:07 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:36 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -165,7 +165,7 @@ $(document).ready(function(){initNavTree('ahrs__gx3_8h_source.html','');});
 <div class="line"><a name="l00066"></a><span class="lineno"><a class="code" href="ahrs__gx3_8h.html#af2597299e11f674f4def38b0a34acbea">   66</a></span>&#160;<span class="preprocessor">#define IMU_GX3_LONG_DELAY 4000000</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ahrs__gx3_8c.html#acb7a83c7954119b08e90b88661889883">gx3_packet_read_message</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ahrs__gx3_8c.html#a57d29ec8ef9a33804865bedd9c578555">gx3_packet_parse</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ahrs__gx3_8c.html#a57d29ec8ef9a33804865bedd9c578555">gx3_packet_parse</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> c);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="structGX3Packet.html">   71</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structGX3Packet.html">GX3Packet</a> {</div>
 <div class="line"><a name="l00072"></a><span class="lineno"><a class="code" href="structGX3Packet.html#a0e15803aacff56a73f558462c02708c3">   72</a></span>&#160;  bool_t  <a class="code" href="structGX3Packet.html#a0e15803aacff56a73f558462c02708c3">msg_available</a>;</div>
@@ -205,12 +205,12 @@ $(document).ready(function(){initNavTree('ahrs__gx3_8h_source.html','');});
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="structAhrsFloatQuat.html">AhrsFloatQuat</a> <a class="code" href="ahrs__ardrone2_8c.html#a2574c1667115a3c93fd882502d0c061b">ahrs_impl</a>;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
 <div class="line"><a name="l00108"></a><span class="lineno"><a class="code" href="ahrs__gx3_8h.html#a7d7b981270fa60a248894025e1791de6">  108</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="ahrs__gx3_8h.html#a7d7b981270fa60a248894025e1791de6">ReadGX3Buffer</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordflow">while</span> (<a class="code" href="uart_8h.html#a8fcf1d056b9856747bbe06995a9928ff">uart_char_available</a>(&amp;GX3_PORT) &amp;&amp; !<a class="code" href="ahrs__ardrone2_8c.html#a2574c1667115a3c93fd882502d0c061b">ahrs_impl</a>.gx3_packet.msg_available)</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordflow">while</span> (<a class="code" href="uart_8h.html#ac12152ef3f260cb4eb96be5f6027bc9f" title="Check UART for available chars in receive buffer.">uart_char_available</a>(&amp;GX3_PORT) &amp;&amp; !<a class="code" href="ahrs__ardrone2_8c.html#a2574c1667115a3c93fd882502d0c061b">ahrs_impl</a>.gx3_packet.msg_available)</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="ahrs__gx3_8c.html#a57d29ec8ef9a33804865bedd9c578555">gx3_packet_parse</a>(<a class="code" href="uart_8c.html#adb9a60ec94a31a08e6454ccf64f24039">uart_getch</a>(&amp;GX3_PORT));</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
 <div class="line"><a name="l00113"></a><span class="lineno"><a class="code" href="ahrs__gx3_8h.html#a9d95db588addd0a03f6e7e749fbb032a">  113</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="ahrs__gx3_8h.html#a9d95db588addd0a03f6e7e749fbb032a">ImuEvent</a>(<span class="keywordtype">void</span> (* _gyro_handler)(<span class="keywordtype">void</span>), <span class="keywordtype">void</span> (* _accel_handler)(<span class="keywordtype">void</span>), <span class="keywordtype">void</span> (* _mag_handler)(<span class="keywordtype">void</span>)) {</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="uart_8h.html#a8fcf1d056b9856747bbe06995a9928ff">uart_char_available</a>(&amp;GX3_PORT)) {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="uart_8h.html#ac12152ef3f260cb4eb96be5f6027bc9f" title="Check UART for available chars in receive buffer.">uart_char_available</a>(&amp;GX3_PORT)) {</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="ahrs__gx3_8h.html#a7d7b981270fa60a248894025e1791de6">ReadGX3Buffer</a>();</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  }</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="ahrs__ardrone2_8c.html#a2574c1667115a3c93fd882502d0c061b">ahrs_impl</a>.gx3_packet.msg_available) {</div>
@@ -234,7 +234,7 @@ $(document).ready(function(){initNavTree('ahrs__gx3_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_46fef683200e96ccf1a2f608d90c4a2d.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__gx3_8h.html">ahrs_gx3.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:45 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

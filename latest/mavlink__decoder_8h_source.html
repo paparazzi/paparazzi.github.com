@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -230,7 +230,7 @@ $(document).ready(function(){initNavTree('mavlink__decoder_8h_source.html','');}
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  t-&gt;<a class="code" href="structmavlink__transport.html#af380484caf041a7723bb17f04178f586">req</a> = <a class="code" href="px4flow_8c.html#a11dd1089b4ce30528383cfa24a3c6c23">req</a>;</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;}</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno"><a class="code" href="mavlink__decoder_8h.html#a57cda9459960272cbca0c1e75879bf15">  171</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="mavlink__decoder_8h.html#a57cda9459960272cbca0c1e75879bf15" title="Mavlink character parser.">parse_mavlink</a>(<span class="keyword">struct</span> <a class="code" href="structmavlink__transport.html" title="Mavlink transport protocol.">mavlink_transport</a> * t, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a> ) {</div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="code" href="mavlink__decoder_8h.html#a57cda9459960272cbca0c1e75879bf15">  171</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="mavlink__decoder_8h.html#a57cda9459960272cbca0c1e75879bf15" title="Mavlink character parser.">parse_mavlink</a>(<span class="keyword">struct</span> <a class="code" href="structmavlink__transport.html" title="Mavlink transport protocol.">mavlink_transport</a> * t, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> c ) {</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keywordflow">switch</span> (t-&gt;<a class="code" href="structmavlink__transport.html#a99d5a15ea0ec63edf18eb44863e67228">status</a>) {</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="mavlink__decoder_8h.html#acaeb9b4f7a75e27cafde0ac37aa31826a939d196b8931cc1955518f4f7a43bfb7">MAVLINK_PARSE_STATE_UNINIT</a>:</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      t-&gt;<a class="code" href="structmavlink__transport.html#a99d5a15ea0ec63edf18eb44863e67228">status</a> = <a class="code" href="mavlink__decoder_8h.html#acaeb9b4f7a75e27cafde0ac37aa31826a0b9cd6ff26b5b2a126182a7897456444">MAVLINK_PARSE_STATE_IDLE</a>; <span class="comment">// directly go to idle state (no break)</span></div>
@@ -251,7 +251,7 @@ $(document).ready(function(){initNavTree('mavlink__decoder_8h_source.html','');}
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      t-&gt;<a class="code" href="structmavlink__transport.html#afbdbf62886c2364326115aad3a0bd062">payload_idx</a> = 0;</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="mavlink__decoder_8h.html#acaeb9b4f7a75e27cafde0ac37aa31826a4b9ad9e12be9111207da32d6630d91d7">MAVLINK_PARSE_STATE_GOT_LENGTH</a>:</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      t-&gt;<a class="code" href="structmavlink__transport.html#a72899486b1a868953f484610f1c32373">trans</a>.<a class="code" href="structtransport.html#a8c8ad453c46b99b7a49e072a6b7d4240">payload</a>[t-&gt;<a class="code" href="structmavlink__transport.html#afbdbf62886c2364326115aad3a0bd062">payload_idx</a>] = <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      t-&gt;<a class="code" href="structmavlink__transport.html#a72899486b1a868953f484610f1c32373">trans</a>.<a class="code" href="structtransport.html#a8c8ad453c46b99b7a49e072a6b7d4240">payload</a>[t-&gt;<a class="code" href="structmavlink__transport.html#afbdbf62886c2364326115aad3a0bd062">payload_idx</a>] = c;</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;      <a class="code" href="mavlink__decoder_8h.html#a2c0dd18813292f2b50e6a8538b4f11ed" title="Accumulate the X.25 CRC by adding one char at a time.">mavlink_crc_accumulate</a>(c, &amp;(t-&gt;<a class="code" href="structmavlink__transport.html#aa11aaa8f41e1d5f7882d2e992ddd4e9a">checksum</a>));</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;      t-&gt;<a class="code" href="structmavlink__transport.html#afbdbf62886c2364326115aad3a0bd062">payload_idx</a>++;</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;      <span class="keywordflow">if</span> (t-&gt;<a class="code" href="structmavlink__transport.html#afbdbf62886c2364326115aad3a0bd062">payload_idx</a> == t-&gt;<a class="code" href="structmavlink__transport.html#a72899486b1a868953f484610f1c32373">trans</a>.<a class="code" href="structtransport.html#a8f0de29a331a52edb829cfd47c44df03">payload_len</a>)</div>
@@ -330,7 +330,7 @@ $(document).ready(function(){initNavTree('mavlink__decoder_8h_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_164c7aa663179b26059278e7f36078da.html">datalink</a></li><li class="navelem"><a class="el" href="mavlink__decoder_8h.html">mavlink_decoder.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:41 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

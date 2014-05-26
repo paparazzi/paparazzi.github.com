@@ -1,38 +1,38 @@
 <map id="sim_init" name="sim_init">
-<area shape="rect" id="node3" href="$main__ap_8c.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="124,435,183,463"/>
-<area shape="rect" id="node79" href="$main__fbw_8c.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="120,486,187,514"/>
-<area shape="rect" id="node5" href="$group__state__interface.html#gae841c56c9a83bf54bcdd8d7f166f2e2a" title="stateInit" alt="" coords="280,5,349,33"/>
-<area shape="rect" id="node7" href="$gps_8c.html#ab37f7040b9efd19fdd3f92b1df77e771" title="initialize the global GPS state" alt="" coords="281,55,348,83"/>
-<area shape="rect" id="node11" href="$ins__xsens700_8c.html#a86a06fe7a9831292bd92867da2d12f80" title="imu_init" alt="" coords="281,106,348,134"/>
-<area shape="rect" id="node13" href="$ahrs__aligner_8c.html#a321c9a82fcb75074c3041cbf6906e5ea" title="ahrs_aligner_init" alt="" coords="257,157,372,185"/>
-<area shape="rect" id="node15" href="$ahrs__chimu__spi_8c.html#aa3721663c9df7c7af5613486a3566afb" title="AHRS initialization." alt="" coords="280,207,349,235"/>
-<area shape="rect" id="node17" href="$apogee_2baro__board_8c.html#a9b25546908842f1d38fc56e438d46e21" title="baro_init" alt="" coords="280,258,349,286"/>
-<area shape="rect" id="node19" href="$ins__xsens700_8c.html#abf3028c2ada542781b8a5e1eb20c17ce" title="INS initialization." alt="" coords="284,309,345,337"/>
-<area shape="rect" id="node21" href="$link__mcu__spi_8h.html#a4811adaa420099181f04d75d5ba24c25" title="link_mcu_init" alt="" coords="265,359,364,387"/>
-<area shape="rect" id="node23" href="$audio__telemetry__hw_8h.html#a7f872e47862e10fceebb19680cd61868" title="audio_telemetry_init" alt="" coords="247,410,383,438"/>
-<area shape="rect" id="node29" href="$fixedwing_2autopilot_8c.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization." alt="" coords="268,461,361,489"/>
-<area shape="rect" id="node31" href="$stabilization__adaptive_8c.html#a83c0e92b972269e326eb6be18adcf715" title="h_ctl_init" alt="" coords="277,511,352,539"/>
-<area shape="rect" id="node33" href="$energy__ctrl_8c.html#ac48c5fff2d5aca1dd1fc58622709d7eb" title="v_ctl_init" alt="" coords="277,562,352,590"/>
-<area shape="rect" id="node35" href="$navigation_8c.html#a64a3814d1672e69989f80701a0ff5749" title="nav_init" alt="" coords="281,613,348,641"/>
-<area shape="rect" id="node37" href="$settings_8c.html#a5f9a5a2e826aec11c77548f2a541fb9e" title="settings_init" alt="" coords="269,663,360,691"/>
-<area shape="rect" id="node41" href="$sys__time_8c.html#a60ef6df0154a4b93f4424fd809c466a3" title="Register a new system timer." alt="" coords="235,714,395,742"/>
-<area shape="rect" id="node45" href="$xbee_8c.html#a964a1e8461e9c1187e5d69f521e5e107" title="xbee_init" alt="" coords="279,765,351,793"/>
-<area shape="rect" id="node56" href="$w5100_8c.html#a3a4ec6731e43710788d3e51f7749259c" title="w5100_init" alt="" coords="273,891,356,919"/>
-<area shape="rect" id="node77" href="$traffic__info_8c.html#aae96e15faf2bb8e4c1f82c01cdf869c2" title="traffic_info_init" alt="" coords="263,942,367,970"/>
-<area shape="rect" id="node9" href="$gps__ardrone2_8c.html#ac51e6a5f7940a0acc9dc44b1b8085331" title="gps_impl_init" alt="" coords="471,55,569,83"/>
-<area shape="rect" id="node25" href="$audio__telemetry__hw_8c.html#a99e8727d75d63da3ea5dd369394f1299" title="TIMER1_ISR" alt="" coords="471,410,569,438"/>
-<area shape="rect" id="node27" href="$audio__telemetry__hw_8c.html#aaf0b186491384d008761c572c08b386d" title="get_next_bit" alt="" coords="675,410,765,438"/>
-<area shape="rect" id="node39" href="$lpc21_2subsystems_2settings__arch_8c.html#a4d0dc6e4cdefbf2eeba08f82b8e15a37" title="persistent_read" alt="" coords="465,638,575,666"/>
-<area shape="rect" id="node43" href="$sys__time_8h.html#a2894f16d75a4d3c6ad1449d7bba85406" title="sys_time_ticks_of_sec" alt="" coords="443,689,597,717"/>
-<area shape="rect" id="node47" href="$lpc21_2mcu__periph_2sys__time__arch_8h.html#ac7670fcda069c778861e6d2e36f212aa" title="Busy wait, in microseconds." alt="" coords="661,790,779,818"/>
-<area shape="rect" id="node51" href="$xbee_8c.html#a34220e5c404d3d811ed2739ff2f0a84e" title="xbee_try_to_enter_api" alt="" coords="447,739,593,767"/>
-<area shape="rect" id="node49" href="$sys__time_8h.html#a8ef407ab9dc5065c7e7768da22bd2ab7" title="cpu_ticks_of_usec" alt="" coords="843,790,973,818"/>
-<area shape="rect" id="node54" href="$xbee_8c.html#a5c4a396e2158905e1c456ea5ef974285" title="xbee_text_reply_is_ok" alt="" coords="645,739,795,767"/>
-<area shape="rect" id="node59" href="$gpio__ardrone_8c.html#a60799ff92015d69272ed95f1a458482b" title="gpio_set" alt="" coords="485,942,555,970"/>
-<area shape="rect" id="node61" href="$w5100_8c.html#acf688d7d46d5a20eb893df94ba4b2f5c" title="w5100_set" alt="" coords="1021,993,1107,1021"/>
-<area shape="rect" id="node65" href="$w5100_8c.html#a0e5e1246b804cc518d06492f384ae50d" title="w5100_set_buffer" alt="" coords="659,993,781,1021"/>
-<area shape="rect" id="node68" href="$w5100_8c.html#ad88334d2cf04bfaad89b0f8a4c5239a4" title="configure_socket" alt="" coords="460,891,580,919"/>
-<area shape="rect" id="node63" href="$group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction." alt="" coords="1155,993,1240,1021"/>
-<area shape="rect" id="node70" href="$w5100_8c.html#abade1f8840f1a6de842036d8868706a8" title="w5100_close_socket" alt="" coords="648,942,792,970"/>
-<area shape="rect" id="node72" href="$w5100_8c.html#add4fef731325e39e35816a0372d6e9c6" title="w5100_sock_set" alt="" coords="848,942,968,970"/>
+<area shape="rect" id="node3" href="$main__ap_8c.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="128,435,192,463"/>
+<area shape="rect" id="node79" href="$main__fbw_8c.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="125,486,195,514"/>
+<area shape="rect" id="node5" href="$group__state__interface.html#gae841c56c9a83bf54bcdd8d7f166f2e2a" title="stateInit" alt="" coords="293,5,368,33"/>
+<area shape="rect" id="node7" href="$gps_8c.html#ab37f7040b9efd19fdd3f92b1df77e771" title="initialize the global GPS state" alt="" coords="296,55,365,83"/>
+<area shape="rect" id="node11" href="$ins__xsens700_8c.html#a86a06fe7a9831292bd92867da2d12f80" title="imu_init" alt="" coords="295,106,367,134"/>
+<area shape="rect" id="node13" href="$ahrs__aligner_8c.html#a321c9a82fcb75074c3041cbf6906e5ea" title="ahrs_aligner_init" alt="" coords="268,157,393,185"/>
+<area shape="rect" id="node15" href="$ahrs__chimu__spi_8c.html#aa3721663c9df7c7af5613486a3566afb" title="AHRS initialization." alt="" coords="293,207,368,235"/>
+<area shape="rect" id="node17" href="$apogee_2baro__board_8c.html#a9b25546908842f1d38fc56e438d46e21" title="baro_init" alt="" coords="292,258,369,286"/>
+<area shape="rect" id="node19" href="$ins__xsens700_8c.html#abf3028c2ada542781b8a5e1eb20c17ce" title="INS initialization." alt="" coords="297,309,364,337"/>
+<area shape="rect" id="node21" href="$link__mcu__spi_8h.html#a4811adaa420099181f04d75d5ba24c25" title="link_mcu_init" alt="" coords="279,359,383,387"/>
+<area shape="rect" id="node23" href="$audio__telemetry__hw_8h.html#a7f872e47862e10fceebb19680cd61868" title="audio_telemetry_init" alt="" coords="255,410,407,438"/>
+<area shape="rect" id="node29" href="$fixedwing_2autopilot_8c.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization." alt="" coords="279,461,383,489"/>
+<area shape="rect" id="node31" href="$stabilization__adaptive_8c.html#a83c0e92b972269e326eb6be18adcf715" title="h_ctl_init" alt="" coords="292,511,369,539"/>
+<area shape="rect" id="node33" href="$energy__ctrl_8c.html#ac48c5fff2d5aca1dd1fc58622709d7eb" title="v_ctl_init" alt="" coords="292,562,369,590"/>
+<area shape="rect" id="node35" href="$navigation_8c.html#a64a3814d1672e69989f80701a0ff5749" title="nav_init" alt="" coords="296,613,365,641"/>
+<area shape="rect" id="node37" href="$settings_8c.html#a5f9a5a2e826aec11c77548f2a541fb9e" title="settings_init" alt="" coords="281,663,380,691"/>
+<area shape="rect" id="node41" href="$sys__time_8c.html#a60ef6df0154a4b93f4424fd809c466a3" title="Register a new system timer." alt="" coords="243,714,419,742"/>
+<area shape="rect" id="node45" href="$xbee_8c.html#a964a1e8461e9c1187e5d69f521e5e107" title="xbee_init" alt="" coords="292,765,369,793"/>
+<area shape="rect" id="node56" href="$w5100_8c.html#a3a4ec6731e43710788d3e51f7749259c" title="w5100_init" alt="" coords="287,891,375,919"/>
+<area shape="rect" id="node77" href="$traffic__info_8c.html#aae96e15faf2bb8e4c1f82c01cdf869c2" title="traffic_info_init" alt="" coords="273,942,388,970"/>
+<area shape="rect" id="node9" href="$gps__ardrone2_8c.html#ac51e6a5f7940a0acc9dc44b1b8085331" title="gps_impl_init" alt="" coords="497,55,601,83"/>
+<area shape="rect" id="node25" href="$audio__telemetry__hw_8c.html#a99e8727d75d63da3ea5dd369394f1299" title="TIMER1_ISR" alt="" coords="503,410,596,438"/>
+<area shape="rect" id="node27" href="$audio__telemetry__hw_8c.html#aaf0b186491384d008761c572c08b386d" title="get_next_bit" alt="" coords="711,410,812,438"/>
+<area shape="rect" id="node39" href="$lpc21_2subsystems_2settings__arch_8c.html#a4d0dc6e4cdefbf2eeba08f82b8e15a37" title="persistent_read" alt="" coords="488,638,611,666"/>
+<area shape="rect" id="node43" href="$sys__time_8h.html#a2894f16d75a4d3c6ad1449d7bba85406" title="sys_time_ticks_of_sec" alt="" coords="468,689,631,717"/>
+<area shape="rect" id="node47" href="$lpc21_2mcu__periph_2sys__time__arch_8h.html#ac7670fcda069c778861e6d2e36f212aa" title="Busy wait, in microseconds." alt="" coords="697,790,825,818"/>
+<area shape="rect" id="node51" href="$xbee_8c.html#a34220e5c404d3d811ed2739ff2f0a84e" title="xbee_try_to_enter_api" alt="" coords="468,739,631,767"/>
+<area shape="rect" id="node49" href="$sys__time_8h.html#a8ef407ab9dc5065c7e7768da22bd2ab7" title="cpu_ticks_of_usec" alt="" coords="892,790,1028,818"/>
+<area shape="rect" id="node54" href="$xbee_8c.html#a5c4a396e2158905e1c456ea5ef974285" title="xbee_text_reply_is_ok" alt="" coords="680,739,843,767"/>
+<area shape="rect" id="node59" href="$gpio__ardrone_8c.html#a60799ff92015d69272ed95f1a458482b" title="gpio_set" alt="" coords="512,942,587,970"/>
+<area shape="rect" id="node61" href="$w5100_8c.html#acf688d7d46d5a20eb893df94ba4b2f5c" title="w5100_set" alt="" coords="1077,993,1168,1021"/>
+<area shape="rect" id="node65" href="$w5100_8c.html#a0e5e1246b804cc518d06492f384ae50d" title="w5100_set_buffer" alt="" coords="695,993,828,1021"/>
+<area shape="rect" id="node68" href="$w5100_8c.html#ad88334d2cf04bfaad89b0f8a4c5239a4" title="configure_socket" alt="" coords="484,891,615,919"/>
+<area shape="rect" id="node63" href="$group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction." alt="" coords="1216,993,1307,1021"/>
+<area shape="rect" id="node70" href="$w5100_8c.html#abade1f8840f1a6de842036d8868706a8" title="w5100_close_socket" alt="" coords="685,942,837,970"/>
+<area shape="rect" id="node72" href="$w5100_8c.html#add4fef731325e39e35816a0372d6e9c6" title="w5100_sock_set" alt="" coords="897,942,1023,970"/>
 </map>

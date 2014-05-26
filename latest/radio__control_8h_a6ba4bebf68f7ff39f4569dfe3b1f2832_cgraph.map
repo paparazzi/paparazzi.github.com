@@ -1,23 +1,24 @@
 <map id="radio_control_impl_init" name="radio_control_impl_init">
-<area shape="rect" id="node3" href="$gpio_8h.html#ab67c868f659e629f6d01d92d0f5ce9a8" title="Setup gpio pin as generic output." alt="" coords="663,114,791,142"/>
-<area shape="rect" id="node5" href="$lpc21_2subsystems_2radio__control_2ppm__arch_8c.html#aa933c6924c3511448e65fc31e2d26129" title="Architecture dependant code." alt="" coords="239,50,340,78"/>
-<area shape="rect" id="node7" href="$telemetry_8c.html#abb4aa9b3c0c8d93e1372de5da86de828" title="Register a telemetry callback function." alt="" coords="423,252,599,280"/>
-<area shape="rect" id="node9" href="$sim_2subsystems_2radio__control_2ppm__arch_8c.html#ad5c714aac41977d2adee4ad5054823ce" title="send_ppm" alt="" coords="248,151,331,179"/>
-<area shape="rect" id="node11" href="$stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#af38434843fde1e03292e09a8658f9fbb" title="SpektrumTimerInit" alt="" coords="225,100,353,128"/>
-<area shape="rect" id="node15" href="$stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#ac4f1b2d7f0844ae795adfd74bdeb18f0" title="SpektrumUartInit" alt="" coords="229,202,349,230"/>
-<area shape="rect" id="node21" href="$superbitrf_8c.html#a7b9a2741375ca1dffc4f2e6a6d7a9307" title="Initialize the superbitrf." alt="" coords="240,303,339,331"/>
-<area shape="rect" id="node43" href="$lpc21_2mcu__periph_2uart__arch_8c.html#a3eff2a82ddc632e5626c04ad4e717e3b" title="uart_periph_set_baudrate" alt="" coords="205,354,373,382"/>
-<area shape="rect" id="node45" href="$lpc21_2mcu__periph_2uart__arch_8c.html#a0cdaf8266fcef9b52d422621b36413d6" title="uart_periph_set_bits\l_stop_parity" alt="" coords="220,404,359,448"/>
-<area shape="rect" id="node13" href="$stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#ad7302d5c131dfe906edb8bba209c2ce3" title="timer_clear_flag" alt="" coords="455,100,567,128"/>
-<area shape="rect" id="node17" href="$stm32_2mcu__periph_2gpio__arch_8h.html#a457a82963882d55568983cedd74c5ff2" title="gpio_enable_clock" alt="" coords="447,202,575,230"/>
-<area shape="rect" id="node19" href="$stm32_2mcu__periph_2gpio__arch_8h.html#a3b5f0a992d58d84615e502585419d0b3" title="Setup a gpio for input or output with alternate function." alt="" coords="448,151,573,179"/>
-<area shape="rect" id="node23" href="$cyrf6936_8c.html#a27414d1e4d63182c97357b576f05b37d" title="Initializing the cyrf chip." alt="" coords="464,354,557,382"/>
-<area shape="rect" id="node40" href="$gpio_8h.html#a35043adb1f2c8d18ed698c3925a0762a" title="Setup a gpio pin as generic input." alt="" coords="451,303,571,331"/>
-<area shape="rect" id="node25" href="$cyrf6936_8c.html#acff08dbccbdb911901ca44e0cdf6976b" title="Write a byte to a register." alt="" coords="649,328,804,356"/>
-<area shape="rect" id="node31" href="$omap_2mcu__periph_2gpio__arch_8h.html#aa94dfa6db378d98566e22e193c7a8ab7" title="Clear a gpio output to low level." alt="" coords="687,379,767,407"/>
-<area shape="rect" id="node33" href="$omap_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85" title="Set a gpio output to high level." alt="" coords="692,430,761,458"/>
-<area shape="rect" id="node36" href="$lpc21_2mcu__periph_2sys__time__arch_8h.html#ac7670fcda069c778861e6d2e36f212aa" title="Busy wait, in microseconds." alt="" coords="668,278,785,306"/>
-<area shape="rect" id="node27" href="$cyrf6936_8c.html#a7d88cab1f6ef6220ca722c2e23196dec" title="Write multiple bytes to a register." alt="" coords="853,328,997,356"/>
-<area shape="rect" id="node29" href="$group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction." alt="" coords="1045,328,1131,356"/>
-<area shape="rect" id="node38" href="$sys__time_8h.html#a8ef407ab9dc5065c7e7768da22bd2ab7" title="cpu_ticks_of_usec" alt="" coords="860,278,991,306"/>
+<area shape="rect" id="node3" href="$lpc21_2subsystems_2radio__control_2ppm__arch_8c.html#aa933c6924c3511448e65fc31e2d26129" title="Architecture dependant code." alt="" coords="235,5,347,33"/>
+<area shape="rect" id="node5" href="$telemetry_8c.html#abb4aa9b3c0c8d93e1372de5da86de828" title="Register a telemetry callback function." alt="" coords="411,5,608,33"/>
+<area shape="rect" id="node7" href="$sbus__common_8c.html#a1e22a8fbbabb9c272f93922e78d2f9b8" title="Init function." alt="" coords="220,182,361,210"/>
+<area shape="rect" id="node15" href="$sim_2subsystems_2radio__control_2ppm__arch_8c.html#ad5c714aac41977d2adee4ad5054823ce" title="send_ppm" alt="" coords="247,233,335,261"/>
+<area shape="rect" id="node17" href="$stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#af38434843fde1e03292e09a8658f9fbb" title="SpektrumTimerInit" alt="" coords="221,291,360,319"/>
+<area shape="rect" id="node21" href="$stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#ac4f1b2d7f0844ae795adfd74bdeb18f0" title="SpektrumUartInit" alt="" coords="225,375,356,403"/>
+<area shape="rect" id="node27" href="$superbitrf_8c.html#a7b9a2741375ca1dffc4f2e6a6d7a9307" title="Initialize the superbitrf." alt="" coords="236,106,345,134"/>
+<area shape="rect" id="node9" href="$lpc21_2mcu__periph_2uart__arch_8c.html#a0cdaf8266fcef9b52d422621b36413d6" title="uart_periph_set_bits\l_stop_parity" alt="" coords="433,258,585,302"/>
+<area shape="rect" id="node11" href="$lpc21_2mcu__periph_2uart__arch_8c.html#a3eff2a82ddc632e5626c04ad4e717e3b" title="uart_periph_set_baudrate" alt="" coords="416,157,603,185"/>
+<area shape="rect" id="node13" href="$lpc21_2mcu__periph_2gpio__arch_8h.html#a9623a3774c44d3fc1cca04ccc9bc69f6" title="Setup one or more pins of the given GPIO port as outputs." alt="" coords="671,207,812,235"/>
+<area shape="rect" id="node19" href="$stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#ad7302d5c131dfe906edb8bba209c2ce3" title="timer_clear_flag" alt="" coords="448,325,571,353"/>
+<area shape="rect" id="node23" href="$gpio__arch_8c.html#a457a82963882d55568983cedd74c5ff2" title="Enable the relevant clock." alt="" coords="440,426,579,454"/>
+<area shape="rect" id="node25" href="$stm32_2mcu__periph_2gpio__arch_8h.html#a3b5f0a992d58d84615e502585419d0b3" title="Setup a gpio for input or output with alternate function." alt="" coords="441,375,577,403"/>
+<area shape="rect" id="node29" href="$cyrf6936_8c.html#a27414d1e4d63182c97357b576f05b37d" title="Initializing the cyrf chip." alt="" coords="459,106,560,134"/>
+<area shape="rect" id="node46" href="$lpc21_2mcu__periph_2gpio__arch_8h.html#ada0fcb2fa4a97c20e81bb1a422446137" title="Setup one or more pins of the given GPIO port as inputs." alt="" coords="444,55,575,83"/>
+<area shape="rect" id="node31" href="$cyrf6936_8c.html#acff08dbccbdb911901ca44e0cdf6976b" title="Write a byte to a register." alt="" coords="656,55,827,83"/>
+<area shape="rect" id="node37" href="$omap_2mcu__periph_2gpio__arch_8h.html#aa94dfa6db378d98566e22e193c7a8ab7" title="Clear a gpio output to low level." alt="" coords="699,106,784,134"/>
+<area shape="rect" id="node39" href="$omap_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85" title="Set a gpio output to high level." alt="" coords="704,157,779,185"/>
+<area shape="rect" id="node42" href="$lpc21_2mcu__periph_2sys__time__arch_8h.html#ac7670fcda069c778861e6d2e36f212aa" title="Busy wait, in microseconds." alt="" coords="677,5,805,33"/>
+<area shape="rect" id="node33" href="$cyrf6936_8c.html#a7d88cab1f6ef6220ca722c2e23196dec" title="Write multiple bytes to a register." alt="" coords="875,55,1029,83"/>
+<area shape="rect" id="node35" href="$group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction." alt="" coords="1077,55,1168,83"/>
+<area shape="rect" id="node44" href="$sys__time_8h.html#a8ef407ab9dc5065c7e7768da22bd2ab7" title="cpu_ticks_of_usec" alt="" coords="884,5,1020,33"/>
 </map>

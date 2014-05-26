@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -111,6 +111,17 @@ Init Functions</h2>
 <ul>
 <li><a class="el" href="mission_8c.html#a19c6efe9565f7d4a03291cb165b931ff" title="Init mission structure.">mission_init()</a></li>
 </ul>
+<h2><a class="anchor" id="periodic_functions"></a>
+Periodic Functions</h2>
+<p>These functions are called periodically at the specified frequency from the module periodic loop.</p>
+<ul>
+<li><a class="el" href="mission_8c.html#a3539ca9cd9417f5d2bfda2fdaf6973fa" title="Report mission status.">mission_status_report()</a><ul>
+<li>Frequency in Hz: <em>2</em> </li>
+<li>Autorun: <em>TRUE</em> <br/>
+ Periodic function automatically starts after init.</li>
+</ul>
+</li>
+</ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
 <h2><a class="anchor" id="headers"></a>
@@ -140,7 +151,8 @@ Raw mission_fw.xml file:</h2>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;mission.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
-<div class="line">  &lt;<a class="code" href="gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;mission_init()&quot;</span>/&gt;</div>
+<div class="line">  &lt;<a class="code" href="nav__gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;mission_init()&quot;</span>/&gt;</div>
+<div class="line">  &lt;periodic fun=<span class="stringliteral">&quot;mission_status_report()&quot;</span> freq=<span class="stringliteral">&quot;2&quot;</span> autorun=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;datalink message=<span class="stringliteral">&quot;MISSION_GOTO_WP&quot;</span> fun=<span class="stringliteral">&quot;mission_parse_GOTO_WP()&quot;</span>/&gt;</div>
 <div class="line">  &lt;datalink message=<span class="stringliteral">&quot;MISSION_GOTO_WP_LLA&quot;</span> fun=<span class="stringliteral">&quot;mission_parse_GOTO_WP_LLA()&quot;</span>/&gt;</div>
@@ -165,7 +177,7 @@ Raw mission_fw.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:12 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:10 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

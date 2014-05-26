@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('temp__temod_8c_source.html','');});
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="downlink_8h.html" title="Common code for AP and FBW telemetry.">subsystems/datalink/downlink.h</a>&quot;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="temp__temod_8h.html#aaaf211bc5462b03ca020351920b40586">   36</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="temp__temod_8c.html#aaaf211bc5462b03ca020351920b40586">ftmd_temperature</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="temp__temod_8c.html#af1da51a8e0ebecf34a62177f2e10e0e4">   37</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structi2c__transaction.html">i2c_transaction</a> <a class="code" href="temp__temod_8c.html#af1da51a8e0ebecf34a62177f2e10e0e4">tmd_trans</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="temp__temod_8c.html#af1da51a8e0ebecf34a62177f2e10e0e4">   37</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structi2c__transaction.html" title="I2C transaction structure.">i2c_transaction</a> <a class="code" href="temp__temod_8c.html#af1da51a8e0ebecf34a62177f2e10e0e4">tmd_trans</a>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#ifndef TEMOD_I2C_DEV</span></div>
@@ -151,27 +151,27 @@ $(document).ready(function(){initNavTree('temp__temod_8c_source.html','');});
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="temp__temod_8c.html#a62a48fa6936acc53e24474f4a00f1bda">   48</a></span>&#160;<span class="preprocessor">#define TEMOD_SLAVE_ADDR 0xF0</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="temp__temod_8h.html#a1d6e030ccc920b0bfa42209138b06f3d">   50</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="temp__temod_8c.html#a1d6e030ccc920b0bfa42209138b06f3d">temod_init</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <a class="code" href="temp__temod_8c.html#af1da51a8e0ebecf34a62177f2e10e0e4">tmd_trans</a>.<a class="code" href="structi2c__transaction.html#ac4f80563bab524eee997c5c27ef570a4">status</a> = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace">I2CTransDone</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <a class="code" href="temp__temod_8c.html#af1da51a8e0ebecf34a62177f2e10e0e4">tmd_trans</a>.<a class="code" href="structi2c__transaction.html#ac4f80563bab524eee997c5c27ef570a4" title="Transaction status.">status</a> = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace" title="transaction set to done by user level">I2CTransDone</a>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="temp__temod_8h.html#acaab54d6e397dba4b085c68b909c6c11">   54</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="temp__temod_8c.html#acaab54d6e397dba4b085c68b909c6c11">temod_periodic</a>( <span class="keywordtype">void</span> ) {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="group__i2c.html#ga9bdc2f5162d3e77dd58b7541ddcbe5d1">i2c_receive</a>(&amp;<a class="code" href="temp__temod_8c.html#a72d8f8853a63fbe6a7400ebabef0ed55">TEMOD_I2C_DEV</a>, &amp;<a class="code" href="temp__temod_8c.html#af1da51a8e0ebecf34a62177f2e10e0e4">tmd_trans</a>, <a class="code" href="temp__temod_8c.html#a62a48fa6936acc53e24474f4a00f1bda">TEMOD_SLAVE_ADDR</a>, 2);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="group__i2c.html#ga9bdc2f5162d3e77dd58b7541ddcbe5d1" title="Submit a read only transaction.">i2c_receive</a>(&amp;<a class="code" href="temp__temod_8c.html#a72d8f8853a63fbe6a7400ebabef0ed55">TEMOD_I2C_DEV</a>, &amp;<a class="code" href="temp__temod_8c.html#af1da51a8e0ebecf34a62177f2e10e0e4">tmd_trans</a>, <a class="code" href="temp__temod_8c.html#a62a48fa6936acc53e24474f4a00f1bda">TEMOD_SLAVE_ADDR</a>, 2);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="temp__temod_8h.html#a40dbb5e2d191dcd22c11a598d5169295">   58</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="temp__temod_8c.html#a40dbb5e2d191dcd22c11a598d5169295">temod_event</a>( <span class="keywordtype">void</span> ) {</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="temp__temod_8c.html#af1da51a8e0ebecf34a62177f2e10e0e4">tmd_trans</a>.<a class="code" href="structi2c__transaction.html#ac4f80563bab524eee997c5c27ef570a4">status</a> == <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a>) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="temp__temod_8c.html#af1da51a8e0ebecf34a62177f2e10e0e4">tmd_trans</a>.<a class="code" href="structi2c__transaction.html#ac4f80563bab524eee997c5c27ef570a4" title="Transaction status.">status</a> == <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b" title="transaction successfully finished by I2C driver">I2CTransSuccess</a>) {</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> tmd_temperature;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="comment">/* read two byte temperature */</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      tmd_temperature  = <a class="code" href="temp__temod_8c.html#af1da51a8e0ebecf34a62177f2e10e0e4">tmd_trans</a>.<a class="code" href="structi2c__transaction.html#a295b2671835ae06b28905433cd1096ee">buf</a>[0] &lt;&lt; 8;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      tmd_temperature |= <a class="code" href="temp__temod_8c.html#af1da51a8e0ebecf34a62177f2e10e0e4">tmd_trans</a>.<a class="code" href="structi2c__transaction.html#a295b2671835ae06b28905433cd1096ee">buf</a>[1];</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      tmd_temperature  = <a class="code" href="temp__temod_8c.html#af1da51a8e0ebecf34a62177f2e10e0e4">tmd_trans</a>.<a class="code" href="structi2c__transaction.html#a295b2671835ae06b28905433cd1096ee" title="Transaction buffer With I2C_BUF_LEN number of bytes.">buf</a>[0] &lt;&lt; 8;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      tmd_temperature |= <a class="code" href="temp__temod_8c.html#af1da51a8e0ebecf34a62177f2e10e0e4">tmd_trans</a>.<a class="code" href="structi2c__transaction.html#a295b2671835ae06b28905433cd1096ee" title="Transaction buffer With I2C_BUF_LEN number of bytes.">buf</a>[1];</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <a class="code" href="temp__temod_8c.html#aaaf211bc5462b03ca020351920b40586">ftmd_temperature</a> = (tmd_temperature / <a class="code" href="temp__temod_8c.html#ad42cc3c798b6aa0588a247d81fffb2e5">TEMOD_TYPE</a>) - 32.;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      DOWNLINK_SEND_TMP_STATUS(<a class="code" href="downlink_8h.html#a891b19a3eba08208d4e550aa6c6188dd" title="SITL.">DefaultChannel</a>, <a class="code" href="downlink_8h.html#a028b405f95cecb4af565b17c8ee71d80">DefaultDevice</a>, &amp;tmd_temperature, &amp;<a class="code" href="temp__temod_8c.html#aaaf211bc5462b03ca020351920b40586">ftmd_temperature</a>);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <a class="code" href="temp__temod_8c.html#af1da51a8e0ebecf34a62177f2e10e0e4">tmd_trans</a>.<a class="code" href="structi2c__transaction.html#ac4f80563bab524eee997c5c27ef570a4">status</a> = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace">I2CTransDone</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <a class="code" href="temp__temod_8c.html#af1da51a8e0ebecf34a62177f2e10e0e4">tmd_trans</a>.<a class="code" href="structi2c__transaction.html#ac4f80563bab524eee997c5c27ef570a4" title="Transaction status.">status</a> = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace" title="transaction set to done by user level">I2CTransDone</a>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
@@ -181,7 +181,7 @@ $(document).ready(function(){initNavTree('temp__temod_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_dcc9af59dc35b42e32db80b18066e136.html">meteo</a></li><li class="navelem"><a class="el" href="temp__temod_8c.html">temp_temod.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:42 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -263,14 +263,14 @@ $(document).ready(function(){initNavTree('imu__krooz__memsic_8c_source.html','')
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="comment">// If the MPU6050 I2C transaction has succeeded: convert the data</span></div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <a class="code" href="mpu60x0__i2c_8c.html#a4929a8161b6ff6301f48f6dbcc0b449c">mpu60x0_i2c_event</a>(&amp;imu_krooz.<a class="code" href="structImuKrooz.html#ae5fb923ac0cfb293ba11f72641b56e76">mpu</a>);</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keywordflow">if</span> (imu_krooz.<a class="code" href="structImuKrooz.html#ae5fb923ac0cfb293ba11f72641b56e76">mpu</a>.<a class="code" href="structMpu60x0__I2c.html#a87ac6605726cc59b9faf824037b547b0" title="data ready flag">data_available</a>) {</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <a class="code" href="pprz__algebra_8h.html#ab25a21d173c4626c08a8de50024d6aff">RATES_ADD</a>(imu_krooz.<a class="code" href="structImuKrooz.html#ae1d9ac5755161bf36144fff9ac2ebea9">rates_sum</a>, imu_krooz.<a class="code" href="structImuKrooz.html#ae5fb923ac0cfb293ba11f72641b56e76">mpu</a>.<a class="code" href="structMpu60x0__I2c.html#a5c8f358ec1fee64f72629bdd12774324">data_rates</a>.<a class="code" href="structMpu60x0__I2c.html#a3f9d938897ec1907e910b17fcdda0b0f" title="rates data as angular rates in gyro coordinate system">rates</a>);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <a class="code" href="pprz__algebra_8h.html#ab25a21d173c4626c08a8de50024d6aff">RATES_ADD</a>(imu_krooz.<a class="code" href="structImuKrooz.html#ae1d9ac5755161bf36144fff9ac2ebea9">rates_sum</a>, imu_krooz.<a class="code" href="structImuKrooz.html#ae5fb923ac0cfb293ba11f72641b56e76">mpu</a>.<a class="code" href="structMpu60x0__I2c.html#a71bcb752df33dae01c47d6fb20879279">data_rates</a>.<a class="code" href="structMpu60x0__I2c.html#a3f9d938897ec1907e910b17fcdda0b0f" title="rates data as angular rates in gyro coordinate system">rates</a>);</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    imu_krooz.<a class="code" href="structImuKrooz.html#a99a7dd748c8c39ec42a8daf4b15f1f09">meas_nb</a>++;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    imu_krooz.<a class="code" href="structImuKrooz.html#ae5fb923ac0cfb293ba11f72641b56e76">mpu</a>.<a class="code" href="structMpu60x0__I2c.html#a87ac6605726cc59b9faf824037b547b0" title="data ready flag">data_available</a> = <a class="code" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  }</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="lpc21_2mcu__periph_2sys__time__arch_8h.html#a2dfaf7d6ae83a19972aca429fc687e87">SysTimeTimer</a>(ad7689_event_timer) &gt; 215) {</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <a class="code" href="lpc21_2mcu__periph_2sys__time__arch_8h.html#a0583c93a24eed5f81e1f647ca63a652a">SysTimeTimerStart</a>(ad7689_event_timer);</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordflow">if</span>(axis_cnt &lt; axis_nb)</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="sys__time_8h.html#a2dfaf7d6ae83a19972aca429fc687e87">SysTimeTimer</a>(ad7689_event_timer) &gt; 215) {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <a class="code" href="sys__time_8h.html#a0583c93a24eed5f81e1f647ca63a652a">SysTimeTimerStart</a>(ad7689_event_timer);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordflow">if</span> (axis_cnt &lt; axis_nb)</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      axis_cnt++;</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;      axis_cnt = 0;</div>
@@ -328,7 +328,7 @@ $(document).ready(function(){initNavTree('imu__krooz__memsic_8c_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_322085cfe7bd48fa6c9bcf3bf3c8af11.html">krooz</a></li><li class="navelem"><a class="el" href="imu__krooz__memsic_8c.html">imu_krooz_memsic.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:07 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:38 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

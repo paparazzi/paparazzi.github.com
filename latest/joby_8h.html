@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('joby_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="joby_8h__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2radio__control_2joby_8h" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2radio__control_2joby_8h" id="sw_2airborne_2subsystems_2radio__control_2joby_8h">
-<area shape="rect" id="node5" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="68,107,193,135"/></map>
+<area shape="rect" id="node5" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="69,107,208,135"/></map>
 </div>
 </div>
 <p><a href="joby_8h_source.html">Go to the source code of this file.</a></p>
@@ -152,7 +152,7 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6df4cf9bcc7728136dcfe12367a00491"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joby_8h.html#a6df4cf9bcc7728136dcfe12367a00491">rc_joby_parse</a> (<a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> <a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>, void(*callback)(void))</td></tr>
+<tr class="memitem:a6df4cf9bcc7728136dcfe12367a00491"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joby_8h.html#a6df4cf9bcc7728136dcfe12367a00491">rc_joby_parse</a> (<a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> c, void(*callback)(void))</td></tr>
 </table>
 <h2>Macro Definition Documentation</h2>
 <a class="anchor" id="a89da41b25db2c79b8deeb26fbb5de53a"></a>
@@ -374,7 +374,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="joby_8c_source.html#l00074">74</a> of file <a class="el" href="joby_8c_source.html">joby.c</a>.</p>
 
-<p>References <a class="el" href="discsurvey_8c_source.html#l00038">c</a>, <a class="el" href="joby_8h_source.html#l00045">rc_joby_parser_state::current_byte</a>, <a class="el" href="joby_8h_source.html#l00047">rc_joby_parser_state::current_channel</a>, <a class="el" href="joby_8h_source.html#l00046">rc_joby_parser_state::current_inverted</a>, <a class="el" href="joby_8c_source.html#l00054">handle_tuple()</a>, <a class="el" href="joby_8h_source.html#l00051">rc_joby_parser_state::high_byte_buf</a>, <a class="el" href="joby_8h_source.html#l00052">rc_joby_parser_state::low_byte_buf</a>, <a class="el" href="joby_8c_source.html#l00025">parser</a>, <a class="el" href="joby_8h_source.html#l00029">RC_JOBY_MAGIC_START</a>, <a class="el" href="joby_8h_source.html#l00035">READING_HIGH_BYTE</a>, <a class="el" href="joby_8h_source.html#l00040">READING_INVERTED</a>, and <a class="el" href="joby_8h_source.html#l00034">READING_LOW_BYTE</a>.</p>
+<p>References <a class="el" href="joby_8h_source.html#l00045">rc_joby_parser_state::current_byte</a>, <a class="el" href="joby_8h_source.html#l00047">rc_joby_parser_state::current_channel</a>, <a class="el" href="joby_8h_source.html#l00046">rc_joby_parser_state::current_inverted</a>, <a class="el" href="joby_8c_source.html#l00054">handle_tuple()</a>, <a class="el" href="joby_8h_source.html#l00051">rc_joby_parser_state::high_byte_buf</a>, <a class="el" href="joby_8h_source.html#l00052">rc_joby_parser_state::low_byte_buf</a>, <a class="el" href="joby_8c_source.html#l00025">parser</a>, <a class="el" href="joby_8h_source.html#l00029">RC_JOBY_MAGIC_START</a>, <a class="el" href="joby_8h_source.html#l00035">READING_HIGH_BYTE</a>, <a class="el" href="joby_8h_source.html#l00040">READING_INVERTED</a>, and <a class="el" href="joby_8h_source.html#l00034">READING_LOW_BYTE</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -383,7 +383,7 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="joby_8h_a6df4cf9bcc7728136dcfe12367a00491_cgraph.png" border="0" usemap="#joby_8h_a6df4cf9bcc7728136dcfe12367a00491_cgraph" alt=""/></div>
 <map name="joby_8h_a6df4cf9bcc7728136dcfe12367a00491_cgraph" id="joby_8h_a6df4cf9bcc7728136dcfe12367a00491_cgraph">
-<area shape="rect" id="node3" href="joby_8c.html#abc3a10022a267b9bb0d1c4cb7fea713e" title="handle_tuple" alt="" coords="159,5,252,33"/><area shape="rect" id="node5" href="joby_8c.html#a09a67f4357d7773a763b18fda12252da" title="handle_channel" alt="" coords="301,5,413,33"/></map>
+<area shape="rect" id="node3" href="joby_8c.html#abc3a10022a267b9bb0d1c4cb7fea713e" title="handle_tuple" alt="" coords="165,5,269,33"/><area shape="rect" id="node5" href="joby_8c.html#a09a67f4357d7773a763b18fda12252da" title="handle_channel" alt="" coords="317,5,440,33"/></map>
 </div>
 </p>
 
@@ -395,7 +395,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_a146ed466020daad33793c9994e8ab3e.html">radio_control</a></li><li class="navelem"><a class="el" href="joby_8h.html">joby.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:12 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:09 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

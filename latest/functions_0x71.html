@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -165,18 +165,22 @@ $(document).ready(function(){initNavTree('functions_0x71.html','');});
 : <a class="el" href="structimu__quality__assessment__data__struct.html#a0b37e6ce9fd493c029f9cd67189bbabe">imu_quality_assessment_data_struct</a>
 </li>
 <li>qfe
-: <a class="el" href="structInsArdrone2.html#a4c9b6113b6957ffcedf162ee91e716bc">InsArdrone2</a>
+: <a class="el" href="structInsAltFloat.html#a15d590f01b0a8362874f749ddcc62a5e">InsAltFloat</a>
+, <a class="el" href="structInsArdrone2.html#a4c9b6113b6957ffcedf162ee91e716bc">InsArdrone2</a>
 , <a class="el" href="structInsInt.html#abe2b059d9e565fa7dd79de7a9e65b778">InsInt</a>
 </li>
 <li>qi
-: <a class="el" href="structInt32Quat.html#a7509e8c87300579e27be3ac50758ee8d">Int32Quat</a>
+: <a class="el" href="structFloatQuat.html#a4e645cefcbdb25a8cfb0fc0c76d63044">FloatQuat</a>
+, <a class="el" href="structInt32Quat.html#a7509e8c87300579e27be3ac50758ee8d">Int32Quat</a>
 , <a class="el" href="structInt64Quat.html#a962cef220070c0af2f8064b3fd6cb47d">Int64Quat</a>
 , <a class="el" href="structSVinfo.html#a0f082bb982115960077c5c4f8cab9653">SVinfo</a>
 , <a class="el" href="structDoubleQuat.html#a426587d46d9d560eaf329a93ed756dc9">DoubleQuat</a>
-, <a class="el" href="structFloatQuat.html#a4e645cefcbdb25a8cfb0fc0c76d63044">FloatQuat</a>
 </li>
 <li>quality
 : <a class="el" href="structmavlink__optical__flow.html#a37141317f9f0b65722368a4dde470570">mavlink_optical_flow</a>
+</li>
+<li>quat
+: <a class="el" href="structinv__state.html#aa8145c3d2ce042a42215fec06c9cd187">inv_state</a>
 </li>
 <li>quat_f
 : <a class="el" href="structOrientationReps.html#af08d1a1987ca1989e45279a961bfc072">OrientationReps</a>
@@ -189,21 +193,21 @@ $(document).ready(function(){initNavTree('functions_0x71.html','');});
 </li>
 <li>qx
 : <a class="el" href="structInt32Quat.html#afefde00ee3026b3734e2c81b79af7855">Int32Quat</a>
+, <a class="el" href="structDoubleQuat.html#a308df6fc15a5092f850ed3294a34ae84">DoubleQuat</a>
 , <a class="el" href="structFloatQuat.html#a0687e8bd8978426a17705719298d2bdb">FloatQuat</a>
 , <a class="el" href="structInt64Quat.html#a9e497f25fd3979ac0985933952f48222">Int64Quat</a>
-, <a class="el" href="structDoubleQuat.html#a308df6fc15a5092f850ed3294a34ae84">DoubleQuat</a>
 </li>
 <li>qy
-: <a class="el" href="structInt32Quat.html#a2361ea5d4d3a544faa2c483a3763afed">Int32Quat</a>
+: <a class="el" href="structDoubleQuat.html#a01b62483d872e64b47e33d931c8ec2cc">DoubleQuat</a>
+, <a class="el" href="structInt32Quat.html#a2361ea5d4d3a544faa2c483a3763afed">Int32Quat</a>
 , <a class="el" href="structInt64Quat.html#adccab6d6a8cf3b6333eeb5cbc510939c">Int64Quat</a>
 , <a class="el" href="structFloatQuat.html#a5ceb12dd2afeb86ce8b2065dde0cd61e">FloatQuat</a>
-, <a class="el" href="structDoubleQuat.html#a01b62483d872e64b47e33d931c8ec2cc">DoubleQuat</a>
 </li>
 <li>qz
-: <a class="el" href="structInt64Quat.html#aa4ea113b357039ce8b712284b92da054">Int64Quat</a>
-, <a class="el" href="structFloatQuat.html#ada1c73599b4a1dca9752f4106c20d292">FloatQuat</a>
-, <a class="el" href="structInt32Quat.html#a3ce446dd0060ca59dcab0d04c684c11b">Int32Quat</a>
+: <a class="el" href="structFloatQuat.html#ada1c73599b4a1dca9752f4106c20d292">FloatQuat</a>
 , <a class="el" href="structDoubleQuat.html#a552b55ff2231e534d47c489e522d94bf">DoubleQuat</a>
+, <a class="el" href="structInt32Quat.html#a3ce446dd0060ca59dcab0d04c684c11b">Int32Quat</a>
+, <a class="el" href="structInt64Quat.html#aa4ea113b357039ce8b712284b92da054">Int64Quat</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -211,7 +215,7 @@ $(document).ready(function(){initNavTree('functions_0x71.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:14 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:21 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

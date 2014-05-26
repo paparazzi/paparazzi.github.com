@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -216,7 +216,7 @@ $(document).ready(function(){initNavTree('ahrs__float__cmpl_8c_source.html','');
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
 <div class="line"><a name="l00117"></a><span class="lineno"><a class="code" href="ahrs__float__cmpl_8c.html#a90e8e1dcd1cef8d02c29de2c3d30d734">  117</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structAhrsFloatCmpl.html">AhrsFloatCmpl</a> <a class="code" href="ahrs__ardrone2_8c.html#a2574c1667115a3c93fd882502d0c061b">ahrs_impl</a>;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#if DOWNLINK</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#if PERIODIC_TELEMETRY</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code).">subsystems/datalink/telemetry.h</a>&quot;</span></div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> send_att(<span class="keywordtype">void</span>) {</div>
@@ -294,7 +294,7 @@ $(document).ready(function(){initNavTree('ahrs__float__cmpl_8c_source.html','');
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <a class="code" href="pprz__algebra_8h.html#aabe6b68b36e19217c178ddc14515c9af">VECT3_ASSIGN</a>(<a class="code" href="ahrs__ardrone2_8c.html#a2574c1667115a3c93fd882502d0c061b">ahrs_impl</a>.mag_h, <a class="code" href="ahrs__magnetic__field__model_8h.html#a215f39832bbeb7ae9f2c1761d391ff36">AHRS_H_X</a>, <a class="code" href="ahrs__magnetic__field__model_8h.html#a2ea5deffc7e04c9f558a4d797425b145">AHRS_H_Y</a>, AHRS_H_Z);</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor">#if DOWNLINK</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor">#if PERIODIC_TELEMETRY</span></div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="preprocessor"></span>  <a class="code" href="telemetry_8c.html#abb4aa9b3c0c8d93e1372de5da86de828" title="Register a telemetry callback function.">register_periodic_telemetry</a>(DefaultPeriodic, <span class="stringliteral">&quot;AHRS_EULER_INT&quot;</span>, send_att);</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor"></span>}</div>
@@ -346,7 +346,7 @@ $(document).ready(function(){initNavTree('ahrs__float__cmpl_8c_source.html','');
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <span class="comment">/* and zeros it */</span></div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <a class="code" href="pprz__algebra__float_8h.html#ada94cef1274ff8daf6c8e91fae707b66">FLOAT_RATES_ZERO</a>(<a class="code" href="ahrs__ardrone2_8c.html#a2574c1667115a3c93fd882502d0c061b">ahrs_impl</a>.rate_correction);</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> dt = 1./<a class="code" href="ahrs__float__cmpl_8c.html#a8b1ace7fb278ed8284cb2e3579f14798">AHRS_PROPAGATE_FREQUENCY</a>;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="ins__float__invariant_8c.html#a0ef9f3f97ee5db39da6a134c1f4aab3c">dt</a> = 1./<a class="code" href="ahrs__float__cmpl_8c.html#a8b1ace7fb278ed8284cb2e3579f14798">AHRS_PROPAGATE_FREQUENCY</a>;</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor">#if AHRS_PROPAGATE_RMAT</span></div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="preprocessor"></span>  <a class="code" href="pprz__algebra__float_8h.html#af4895fc63cc9e0a51f5a9cbe6bc27233">FLOAT_RMAT_INTEGRATE_FI</a>(<a class="code" href="ahrs__ardrone2_8c.html#a2574c1667115a3c93fd882502d0c061b">ahrs_impl</a>.ltp_to_imu_rmat, omega, dt);</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <a class="code" href="pprz__algebra__float_8h.html#a49632b88ccee042652b8706a2fde6d0c">float_rmat_reorthogonalize</a>(&amp;<a class="code" href="ahrs__ardrone2_8c.html#a2574c1667115a3c93fd882502d0c061b">ahrs_impl</a>.ltp_to_imu_rmat);</div>
@@ -442,7 +442,7 @@ $(document).ready(function(){initNavTree('ahrs__float__cmpl_8c_source.html','');
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;}</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
-<div class="line"><a name="l00345"></a><span class="lineno"><a class="code" href="ahrs__float__cmpl_8c.html#a781832a9119845d31bda0fc8a8bb8bf3">  345</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ahrs__ardrone2_8c.html#a781832a9119845d31bda0fc8a8bb8bf3" title="Update AHRS state with magnetometer measurements.">ahrs_update_mag</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a name="l00345"></a><span class="lineno"><a class="code" href="ahrs_8h.html#a781832a9119845d31bda0fc8a8bb8bf3">  345</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ahrs__float__cmpl_8c.html#a781832a9119845d31bda0fc8a8bb8bf3" title="Update AHRS state with magnetometer measurements.">ahrs_update_mag</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="preprocessor">#if AHRS_MAG_UPDATE_ALL_AXES</span></div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="preprocessor"></span>  <a class="code" href="ahrs__float__cmpl_8c.html#a6b9d75b52718685315f0a80850cb1b29">ahrs_update_mag_full</a>();</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="preprocessor">#else</span></div>
@@ -687,7 +687,7 @@ $(document).ready(function(){initNavTree('ahrs__float__cmpl_8c_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_46fef683200e96ccf1a2f608d90c4a2d.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__float__cmpl_8c.html">ahrs_float_cmpl.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:44 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -132,10 +132,12 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ac51e6a5f7940a0acc9dc44b1b8085331"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__sim_8h.html#ac51e6a5f7940a0acc9dc44b1b8085331">gps_impl_init</a> (void)</td></tr>
+<tr class="memdesc:ac51e6a5f7940a0acc9dc44b1b8085331"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPS initialization.  <a href="#ac51e6a5f7940a0acc9dc44b1b8085331"></a><br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a62a4a0f2fc32a105289eb2cf890a1e5d"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__sim_8h.html#a62a4a0f2fc32a105289eb2cf890a1e5d">gps_available</a></td></tr>
+<tr class="memdesc:a62a4a0f2fc32a105289eb2cf890a1e5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is set to TRUE when a new REMOTE_GPS packet is received and parsed.  <a href="#a62a4a0f2fc32a105289eb2cf890a1e5d"></a><br/></td></tr>
 </table>
 <h2>Macro Definition Documentation</h2>
 <a class="anchor" id="a63f1b81cf4a1e8e0fe80f065224826fe"></a>
@@ -165,14 +167,17 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{     \</div>
-<div class="line">    if (<a class="code" href="gps__sim_8c.html#a62a4a0f2fc32a105289eb2cf890a1e5d">gps_available</a>) {                        \</div>
-<div class="line">      if (<a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#afeffb02bdd18d27a87e96bb77175168f" title="status of fix">fix</a> == <a class="code" href="gps_8h.html#ac5e980c8325a29dd79a45ed26af404be">GPS_FIX_3D</a>) {              \</div>
-<div class="line">        gps.last_fix_time = <a class="code" href="structsys__time.html">sys_time</a>.<a class="code" href="structsys__time.html#a2e86fdabba99a0ac8f6409e0d1e694a3" title="full seconds since startup">nb_sec</a>;    \</div>
-<div class="line">      }                                         \</div>
-<div class="line">      _sol_available_callback();                \</div>
-<div class="line">      gps_available = <a class="code" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;                    \</div>
-<div class="line">    }                                           \</div>
+<b>Value:</b><div class="fragment"><div class="line">{         \</div>
+<div class="line">    if (<a class="code" href="gps__datalink_8c.html#a62a4a0f2fc32a105289eb2cf890a1e5d" title="Is set to TRUE when a new REMOTE_GPS packet is received and parsed.">gps_available</a>) {                            \</div>
+<div class="line">      gps.last_msg_ticks = <a class="code" href="structsys__time.html">sys_time</a>.<a class="code" href="structsys__time.html#a8654f589772b3eef22ab59594c97e513" title="remainder of seconds since startup in CPU_TICKS">nb_sec_rem</a>;     \</div>
+<div class="line">      gps.last_msg_time = <a class="code" href="structsys__time.html">sys_time</a>.<a class="code" href="structsys__time.html#a2e86fdabba99a0ac8f6409e0d1e694a3" title="full seconds since startup">nb_sec</a>;          \</div>
+<div class="line">      if (<a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#afeffb02bdd18d27a87e96bb77175168f" title="status of fix">fix</a> == <a class="code" href="gps_8h.html#ac5e980c8325a29dd79a45ed26af404be">GPS_FIX_3D</a>) {                  \</div>
+<div class="line">        gps.last_3dfix_ticks = <a class="code" href="structsys__time.html">sys_time</a>.<a class="code" href="structsys__time.html#a8654f589772b3eef22ab59594c97e513" title="remainder of seconds since startup in CPU_TICKS">nb_sec_rem</a>; \</div>
+<div class="line">        gps.last_3dfix_time = <a class="code" href="structsys__time.html">sys_time</a>.<a class="code" href="structsys__time.html#a2e86fdabba99a0ac8f6409e0d1e694a3" title="full seconds since startup">nb_sec</a>;      \</div>
+<div class="line">      }                                             \</div>
+<div class="line">      _sol_available_callback();                    \</div>
+<div class="line">      gps_available = <a class="code" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;                        \</div>
+<div class="line">    }                                               \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="gps__sim_8h_source.html#l00014">14</a> of file <a class="el" href="gps__sim_8h_source.html">gps_sim.h</a>.</p>
@@ -194,6 +199,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>GPS initialization. </p>
+
 <p>Definition at line <a class="el" href="gps__ardrone2_8c_source.html#l00038">38</a> of file <a class="el" href="gps__ardrone2_8c_source.html">gps_ardrone2.c</a>.</p>
 
 </div>
@@ -209,7 +216,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__sim_8c_source.html#l00024">24</a> of file <a class="el" href="gps__sim_8c_source.html">gps_sim.c</a>.</p>
+<p>Is set to TRUE when a new REMOTE_GPS packet is received and parsed. </p>
+
+<p>Definition at line <a class="el" href="gps__datalink_8c_source.html#l00032">32</a> of file <a class="el" href="gps__datalink_8c_source.html">gps_datalink.c</a>.</p>
 
 </div>
 </div>
@@ -219,7 +228,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8c4cbb881db224ddaf0756e79ed706ce.html">gps</a></li><li class="navelem"><a class="el" href="gps__sim_8h.html">gps_sim.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:11 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:07 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

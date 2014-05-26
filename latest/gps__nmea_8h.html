@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('gps__nmea_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__nmea_8h__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2gps_2gps__nmea_8h" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2gps_2gps__nmea_8h" id="sw_2airborne_2subsystems_2gps_2gps__nmea_8h">
-<area shape="rect" id="node3" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="85,99,211,127"/></map>
+<area shape="rect" id="node3" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="91,99,229,127"/></map>
 </div>
 </div>
 <p><a href="gps__nmea_8h_source.html">Go to the source code of this file.</a></p>
@@ -147,7 +147,7 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af2c40746dbb1a1371e3411033e64239a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__nmea_8h.html#af2c40746dbb1a1371e3411033e64239a">nmea_parse_char</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>)</td></tr>
+<tr class="memitem:af2c40746dbb1a1371e3411033e64239a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__nmea_8h.html#af2c40746dbb1a1371e3411033e64239a">nmea_parse_char</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> c)</td></tr>
 <tr class="memdesc:af2c40746dbb1a1371e3411033e64239a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function to be called when a characted friom the device is available.  <a href="#af2c40746dbb1a1371e3411033e64239a"></a><br/></td></tr>
 <tr class="memitem:a2f49ea43d042f884e3ec12e5e14abc97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__nmea_8h.html#a2f49ea43d042f884e3ec12e5e14abc97">nmea_parse_msg</a> (void)</td></tr>
 <tr class="memdesc:a2f49ea43d042f884e3ec12e5e14abc97"><td class="mdescLeft">&#160;</td><td class="mdescRight">parse_nmea_char() has a complete line.  <a href="#a2f49ea43d042f884e3ec12e5e14abc97"></a><br/></td></tr>
@@ -245,7 +245,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__nmea_8h_source.html#l00094">94</a> of file <a class="el" href="gps__nmea_8h_source.html">gps_nmea.h</a>.</p>
+<p>Definition at line <a class="el" href="gps__nmea_8h_source.html#l00096">96</a> of file <a class="el" href="gps__nmea_8h_source.html">gps_nmea.h</a>.</p>
 
 </div>
 </div>
@@ -279,21 +279,23 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{        \</div>
-<div class="line">    if (<a class="code" href="gps__nmea_8h.html#a1e52156e0d0d33e35ac9ace67b4a8533">GpsBuffer</a>()) {                             \</div>
-<div class="line">      ReadGpsBuffer();                             \</div>
-<div class="line">    }                                              \</div>
-<div class="line">    if (<a class="code" href="gps__nmea_8c.html#a1c5d1eddb60d3aa0ef96bed0e0bdc169">gps_nmea</a>.<a class="code" href="structGpsNmea.html#a843d412bb6cb793debcc2b0ded4d048e">msg_available</a>) {                  \</div>
-<div class="line">      nmea_parse_msg();          \</div>
-<div class="line">      if (<a class="code" href="gps__nmea_8c.html#a1c5d1eddb60d3aa0ef96bed0e0bdc169">gps_nmea</a>.<a class="code" href="structGpsNmea.html#a8f5235b8167adbf866f3f803355ecd30">pos_available</a>) {      \</div>
-<div class="line">        if (<a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#afeffb02bdd18d27a87e96bb77175168f" title="status of fix">fix</a> == <a class="code" href="gps_8h.html#ac5e980c8325a29dd79a45ed26af404be">GPS_FIX_3D</a>) {               \</div>
-<div class="line">          gps.last_fix_ticks = <a class="code" href="structsys__time.html">sys_time</a>.<a class="code" href="structsys__time.html#a8654f589772b3eef22ab59594c97e513" title="remainder of seconds since startup in CPU_TICKS">nb_sec_rem</a>;     \</div>
-<div class="line">          gps.last_fix_time = <a class="code" href="structsys__time.html">sys_time</a>.<a class="code" href="structsys__time.html#a2e86fdabba99a0ac8f6409e0d1e694a3" title="full seconds since startup">nb_sec</a>;        \</div>
-<div class="line">        }                                          \</div>
-<div class="line">        _sol_available_callback();                 \</div>
-<div class="line">      }                                            \</div>
-<div class="line">      gps_nmea.msg_available = <a class="code" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;               \</div>
-<div class="line">    }                                              \</div>
+<b>Value:</b><div class="fragment"><div class="line">{             \</div>
+<div class="line">    if (<a class="code" href="gps__nmea_8h.html#a1e52156e0d0d33e35ac9ace67b4a8533">GpsBuffer</a>()) {                                  \</div>
+<div class="line">      ReadGpsBuffer();                                  \</div>
+<div class="line">    }                                                   \</div>
+<div class="line">    if (<a class="code" href="gps__nmea_8c.html#a1c5d1eddb60d3aa0ef96bed0e0bdc169">gps_nmea</a>.<a class="code" href="structGpsNmea.html#a843d412bb6cb793debcc2b0ded4d048e">msg_available</a>) {                       \</div>
+<div class="line">      gps.last_msg_ticks = <a class="code" href="structsys__time.html">sys_time</a>.<a class="code" href="structsys__time.html#a8654f589772b3eef22ab59594c97e513" title="remainder of seconds since startup in CPU_TICKS">nb_sec_rem</a>;         \</div>
+<div class="line">      gps.last_msg_time = <a class="code" href="structsys__time.html">sys_time</a>.<a class="code" href="structsys__time.html#a2e86fdabba99a0ac8f6409e0d1e694a3" title="full seconds since startup">nb_sec</a>;              \</div>
+<div class="line">      nmea_parse_msg();                                 \</div>
+<div class="line">      if (<a class="code" href="gps__nmea_8c.html#a1c5d1eddb60d3aa0ef96bed0e0bdc169">gps_nmea</a>.<a class="code" href="structGpsNmea.html#a8f5235b8167adbf866f3f803355ecd30">pos_available</a>) {                     \</div>
+<div class="line">        if (<a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#afeffb02bdd18d27a87e96bb77175168f" title="status of fix">fix</a> == <a class="code" href="gps_8h.html#ac5e980c8325a29dd79a45ed26af404be">GPS_FIX_3D</a>) {                    \</div>
+<div class="line">          gps.last_3dfix_ticks = <a class="code" href="structsys__time.html">sys_time</a>.<a class="code" href="structsys__time.html#a8654f589772b3eef22ab59594c97e513" title="remainder of seconds since startup in CPU_TICKS">nb_sec_rem</a>;   \</div>
+<div class="line">          gps.last_3dfix_time = <a class="code" href="structsys__time.html">sys_time</a>.<a class="code" href="structsys__time.html#a2e86fdabba99a0ac8f6409e0d1e694a3" title="full seconds since startup">nb_sec</a>;        \</div>
+<div class="line">        }                                               \</div>
+<div class="line">        _sol_available_callback();                      \</div>
+<div class="line">      }                                                 \</div>
+<div class="line">      gps_nmea.msg_available = <a class="code" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;                   \</div>
+<div class="line">    }                                                   \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="gps__nmea_8h_source.html#l00064">64</a> of file <a class="el" href="gps__nmea_8h_source.html">gps_nmea.h</a>.</p>
@@ -371,7 +373,7 @@ Variables</h2></td></tr>
 <div class="line">      nmea_parse_char(<a class="code" href="gps__nmea_8h.html#a47874681328e0707ec52d1ab3da2e9f6">GpsLink</a>(Getch()));      \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="gps__nmea_8h_source.html#l00081">81</a> of file <a class="el" href="gps__nmea_8h_source.html">gps_nmea.h</a>.</p>
+<p>Definition at line <a class="el" href="gps__nmea_8h_source.html#l00083">83</a> of file <a class="el" href="gps__nmea_8h_source.html">gps_nmea.h</a>.</p>
 
 </div>
 </div>
@@ -396,7 +398,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="gps__nmea_8c_source.html#l00410">410</a> of file <a class="el" href="gps__nmea_8c_source.html">gps_nmea.c</a>.</p>
 
-<p>References <a class="el" href="discsurvey_8c_source.html#l00038">c</a>, <a class="el" href="gps__nmea_8c_source.html#l00054">gps_nmea</a>, <a class="el" href="gps__nmea_8h_source.html#l00045">GpsNmea::msg_available</a>, <a class="el" href="gps__nmea_8h_source.html#l00048">GpsNmea::msg_buf</a>, <a class="el" href="gps__nmea_8h_source.html#l00049">GpsNmea::msg_len</a>, <a class="el" href="gps__nmea_8h_source.html#l00042">NMEA_MAXLEN</a>, and <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>.</p>
+<p>References <a class="el" href="gps__nmea_8c_source.html#l00054">gps_nmea</a>, <a class="el" href="gps__nmea_8h_source.html#l00045">GpsNmea::msg_available</a>, <a class="el" href="gps__nmea_8h_source.html#l00048">GpsNmea::msg_buf</a>, <a class="el" href="gps__nmea_8h_source.html#l00049">GpsNmea::msg_len</a>, <a class="el" href="gps__nmea_8h_source.html#l00042">NMEA_MAXLEN</a>, and <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>.</p>
 
 </div>
 </div>
@@ -428,7 +430,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__nmea_8h_a2f49ea43d042f884e3ec12e5e14abc97_cgraph.png" border="0" usemap="#gps__nmea_8h_a2f49ea43d042f884e3ec12e5e14abc97_cgraph" alt=""/></div>
 <map name="gps__nmea_8h_a2f49ea43d042f884e3ec12e5e14abc97_cgraph" id="gps__nmea_8h_a2f49ea43d042f884e3ec12e5e14abc97_cgraph">
-<area shape="rect" id="node3" href="gps__nmea_8c.html#a74a83fd70b6938efd06c13aec8c56d1a" title="parse GPGGA&#45;nmea&#45;messages stored in gps_nmea.msg_buf ." alt="" coords="180,30,327,58"/><area shape="rect" id="node13" href="gps__nmea_8c.html#aa506b73494b7e7e669a7dacd8a571212" title="parse GPGSA&#45;nmea&#45;messages stored in nmea_msg_buf ." alt="" coords="180,81,327,109"/><area shape="rect" id="node15" href="gps__nmea_8c.html#a9203e66df27fb74b006d2317dc05d98a" title="parse GPRMC&#45;nmea&#45;messages stored in gps_nmea.msg_buf ." alt="" coords="180,131,327,159"/><area shape="rect" id="node5" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="376,5,472,33"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="377,55,471,83"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="521,26,655,54"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="527,77,649,121"/></map>
+<area shape="rect" id="node3" href="gps__nmea_8c.html#a74a83fd70b6938efd06c13aec8c56d1a" title="parse GPGGA&#45;nmea&#45;messages stored in gps_nmea.msg_buf ." alt="" coords="193,30,348,58"/><area shape="rect" id="node13" href="gps__nmea_8c.html#aa506b73494b7e7e669a7dacd8a571212" title="parse GPGSA&#45;nmea&#45;messages stored in nmea_msg_buf ." alt="" coords="193,81,348,109"/><area shape="rect" id="node15" href="gps__nmea_8c.html#a9203e66df27fb74b006d2317dc05d98a" title="parse GPRMC&#45;nmea&#45;messages stored in gps_nmea.msg_buf ." alt="" coords="193,131,348,159"/><area shape="rect" id="node5" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="399,5,497,33"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="399,55,497,83"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="547,26,693,54"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="552,77,688,121"/></map>
 </div>
 </p>
 
@@ -457,7 +459,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8c4cbb881db224ddaf0756e79ed706ce.html">gps</a></li><li class="navelem"><a class="el" href="gps__nmea_8h.html">gps_nmea.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:11 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:07 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

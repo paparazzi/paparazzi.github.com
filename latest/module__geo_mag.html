@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Paparazzi UAS: Geo Mag modell</title>
+<title>Paparazzi UAS: GeoMagnetic field vector</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -98,11 +98,11 @@ $(document).ready(function(){initNavTree('module__geo_mag.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Geo Mag modell </div>  </div>
+<div class="title">GeoMagnetic field vector </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Module XML file: <code>geo_mag.xml</code> </p>
-<p>by Sergey Kruskowski</p>
+<p>Calculation of the normalized geomagnetic field vector (saved to ahrs_impl.mag_h) at startup using GPS fix. Based on the WMM2010 model (<a href="http://www.ngdc.noaa.gov/geomag/models.shtml">http://www.ngdc.noaa.gov/geomag/models.shtml</a>).</p>
 <h1><a class="anchor" id="functions"></a>
 Module functions</h1>
 <h2><a class="anchor" id="init_functions"></a>
@@ -149,19 +149,19 @@ Raw geo_mag.xml file:</h2>
 <div class="line">&lt;module name=<span class="stringliteral">&quot;geo_mag&quot;</span> dir=<span class="stringliteral">&quot;geo_mag&quot;</span>&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;</div>
-<div class="line">      Geo Mag modell</div>
-<div class="line">      by Sergey Kruskowski</div>
+<div class="line">      GeoMagnetic field vector.</div>
+<div class="line">      Calculation of the normalized geomagnetic field vector (saved to <a class="code" href="ahrs__ardrone2_8c.html#a2574c1667115a3c93fd882502d0c061b">ahrs_impl</a>.mag_h) at startup <span class="keyword">using</span> GPS fix.</div>
+<div class="line">      Based on the WMM2010 model (http:<span class="comment">//www.ngdc.noaa.gov/geomag/models.shtml).</span></div>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;geo_mag.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
-<div class="line">  &lt;<a class="code" href="gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;geo_mag_init()&quot;</span>/&gt;</div>
+<div class="line">  &lt;<a class="code" href="nav__gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;geo_mag_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;periodic fun=<span class="stringliteral">&quot;geo_mag_periodic()&quot;</span> freq=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
-<div class="line">  &lt;<span class="keyword">event</span> fun=<span class="stringliteral">&quot;geo_mag_event()&quot;</span>/&gt;&lt;!----&gt;</div>
+<div class="line">  &lt;event fun=<span class="stringliteral">&quot;geo_mag_event()&quot;</span>/&gt;</div>
 <div class="line">  &lt;makefile&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;geo_mag.c&quot;</span>/&gt;</div>
-<div class="line">    &lt;define name=<span class="stringliteral">&quot;USE_GEO_MAG&quot;</span>/&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;pprz_geodetic_wmm2010.c&quot;</span> dir=<span class="stringliteral">&quot;math&quot;</span>/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">&lt;/module&gt;</div>
@@ -171,7 +171,7 @@ Raw geo_mag.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:12 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:11 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

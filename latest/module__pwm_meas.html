@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -129,7 +129,7 @@ Source Files</h2>
 <ul>
 <li><a class="el" href="pwm__meas_8c.html">modules/core/pwm_meas.c</a></li>
 <li><a class="el" href="pwm__input_8c.html">mcu_periph/pwm_input.c</a></li>
-<li>arch dependent: mcu_periph/pwm_input_arch.c</li>
+<li>arch dependent: <a class="el" href="pwm__input__arch_8c.html" title="handling of arm7 PWM input using a timer with capture.">mcu_periph/pwm_input_arch.c</a></li>
 </ul>
 <h2><a class="anchor" id="module_xml__pwm_meas"></a>
 Raw pwm_meas.xml file:</h2>
@@ -140,7 +140,7 @@ Raw pwm_meas.xml file:</h2>
 <div class="line">    &lt;description&gt;</div>
 <div class="line">      <a class="code" href="LPC21xx_8h.html#a538e3ec60828cfabae7e3011d73d2093">PWM</a> measurement.</div>
 <div class="line"></div>
-<div class="line">      <a class="code" href="LPC21xx_8h.html#a538e3ec60828cfabae7e3011d73d2093">PWM</a> input measurement mcu periph access and <a class="code" href="gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> wrapper <span class="keywordflow">for</span> other modules.</div>
+<div class="line">      <a class="code" href="LPC21xx_8h.html#a538e3ec60828cfabae7e3011d73d2093">PWM</a> input measurement mcu periph access and <a class="code" href="nav__gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> wrapper <span class="keywordflow">for</span> other modules.</div>
 <div class="line"></div>
 <div class="line">      For LPC21xx on the TWOG:</div>
 <div class="line">      - INPUT CAPTURE CAP0.3 on P0.29 (TWOG ADC5, 5V to 3.3V voltage divider)</div>
@@ -152,7 +152,7 @@ Raw pwm_meas.xml file:</h2>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;pwm_meas.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
-<div class="line">  &lt;<a class="code" href="gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;pwm_meas_init()&quot;</span>/&gt;</div>
+<div class="line">  &lt;<a class="code" href="nav__gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;pwm_meas_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;makefile target=<span class="stringliteral">&quot;ap&quot;</span>&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;pwm_meas.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;pwm_input.c&quot;</span> dir=<span class="stringliteral">&quot;mcu_periph&quot;</span>/&gt;</div>
@@ -166,7 +166,7 @@ Raw pwm_meas.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:12 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:10 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

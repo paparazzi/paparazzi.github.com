@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -114,10 +114,12 @@ Configure Options</h2>
 <h2><a class="anchor" id="define"></a>
 Define Options</h2>
 <ul>
-<li><b>name:</b> <code>SONAR_OFFSET</code> <b>value:</b> <em>0.0</em> <br/>
- Description: sensor offset in [m] - default is 0.0</li>
+<li><b>name:</b> <code>SONAR_OFFSET</code> <b>value:</b> <em>0</em> <br/>
+ Description: sensor offset in [adc] - default is 0</li>
 <li><b>name:</b> <code>SONAR_SCALE</code> <b>value:</b> <em>0.0166</em> <br/>
  Description: sensor scale factor [m/adc] - default is 0.0166</li>
+<li><b>name:</b> <code>USE_SONAR</code> <b>value:</b> <em></em> <br/>
+ Description: activate use of sonar in INS extended filter (only rotorcraft)</li>
 </ul>
 <h1><a class="anchor" id="functions"></a>
 Module functions</h1>
@@ -162,24 +164,24 @@ Raw sonar_adc.xml file:</h2>
 <div class="line">     Reads an anlog sonar sensor and outputs sonar distance in [m]</div>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line">    &lt;configure name=<span class="stringliteral">&quot;ADC_SONAR&quot;</span> value=<span class="stringliteral">&quot;ADC_X&quot;</span> description=<span class="stringliteral">&quot;select ADC to use with the sonar&quot;</span>/&gt;</div>
-<div class="line">    &lt;define name=<span class="stringliteral">&quot;SONAR_OFFSET&quot;</span> value=<span class="stringliteral">&quot;0.0&quot;</span>  description=<span class="stringliteral">&quot;sensor offset in [m] - default is 0.0&quot;</span>/&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;SONAR_OFFSET&quot;</span> value=<span class="stringliteral">&quot;0&quot;</span>  description=<span class="stringliteral">&quot;sensor offset in [adc] - default is 0&quot;</span>/&gt;</div>
 <div class="line">    &lt;define name=<span class="stringliteral">&quot;SONAR_SCALE&quot;</span> value=<span class="stringliteral">&quot;0.0166&quot;</span> description=<span class="stringliteral">&quot;sensor scale factor [m/adc] - default is 0.0166&quot;</span>/&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;USE_SONAR&quot;</span> value=<span class="stringliteral">&quot;&quot;</span> description=<span class="stringliteral">&quot;activate use of sonar in INS extended filter (only rotorcraft)&quot;</span>/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;sonar_adc.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
 <div class="line"></div>
-<div class="line">  &lt;<a class="code" href="gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;sonar_adc_init()&quot;</span>/&gt;</div>
+<div class="line">  &lt;<a class="code" href="nav__gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;sonar_adc_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;periodic fun=<span class="stringliteral">&quot;sonar_adc_read()&quot;</span> freq=<span class="stringliteral">&quot;10&quot;</span>/&gt;</div>
 <div class="line"></div>
-<div class="line">  &lt;makefile&gt;</div>
+<div class="line">  &lt;makefile target=<span class="stringliteral">&quot;ap|sim&quot;</span>&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;sonar_adc.c&quot;</span>/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">  &lt;makefile target=<span class="stringliteral">&quot;ap&quot;</span>&gt;</div>
 <div class="line">    &lt;define name=<span class="stringliteral">&quot;ADC_CHANNEL_SONAR&quot;</span> value=<span class="stringliteral">&quot;$(ADC_SONAR)&quot;</span>/&gt;</div>
 <div class="line">    &lt;define name=<span class="stringliteral">&quot;USE_$(ADC_SONAR)&quot;</span>/&gt;</div>
-<div class="line">    &lt;define name=<span class="stringliteral">&quot;USE_SONAR&quot;</span>/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line"></div>
 <div class="line">&lt;/module&gt;</div>
@@ -189,7 +191,7 @@ Raw sonar_adc.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:12 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:11 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

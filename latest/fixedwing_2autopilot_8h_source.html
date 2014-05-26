@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -182,7 +182,7 @@ $(document).ready(function(){initNavTree('fixedwing_2autopilot_8h_source.html','
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">extern</span> <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="fixedwing_2autopilot_8c.html#ae6a404c4d3d4da15402e4a8629e7e272" title="Supply current in milliAmpere.">current</a>; <span class="comment">// milliAmpere</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="fixedwing_2autopilot_8c.html#a2d107b3b2dcebab8a10c9d39894f6b2a" title="Fuel consumption (mAh) TODO: move to electrical subsystem.">energy</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="fixedwing_2autopilot_8c.html#a2d107b3b2dcebab8a10c9d39894f6b2a" title="Energy consumption (mAh) This is the ap copy of the measurement from fbw.">energy</a>;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">extern</span> bool_t <a class="code" href="sim__ap_8c.html#af32f81f02a3187c12c08e11caf354abd">launch</a>;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
@@ -197,40 +197,42 @@ $(document).ready(function(){initNavTree('fixedwing_2autopilot_8h_source.html','
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">extern</span> bool_t <a class="code" href="fixedwing_2autopilot_8c.html#adda0cb88d172048dd19b50ad66e7881e" title="Power switch control.">power_switch</a>;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#ifdef POWER_SWITCH_LED</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define autopilot_SetPowerSwitch(_x) { \</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">  power_switch = _x; \</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">  if (_x) LED_ON(POWER_SWITCH_LED) else LED_OFF(POWER_SWITCH_LED); \</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">}</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else // POWER_SWITCH_LED</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno"><a class="code" href="fixedwing_2autopilot_8h.html#ad08218d3e8fc1fd4c0b7f127e69a86d6">  126</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define autopilot_SetPowerSwitch(_x) { power_switch = _x; }</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif // POWER_SWITCH_LED</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment">/* CONTROL_RATE will be removed in the next release</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment"> * please use CONTROL_FREQUENCY instead</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#ifndef CONTROL_FREQUENCY</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifdef  CONTROL_RATE</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CONTROL_FREQUENCY CONTROL_RATE</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#warning &quot;CONTROL_RATE is deprecated. Please use CONTROL_FREQUENCY instead. Defaults to 60Hz if not defined.&quot;</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno"><a class="code" href="fixedwing_2autopilot_8h.html#a992e6194ee1d6c879faa66e51b72840a">  138</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CONTROL_FREQUENCY 60</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif  // CONTROL_RATE</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif  // CONTROL_FREQUENCY</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor">#ifndef NAVIGATION_FREQUENCY</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno"><a class="code" href="fixedwing_2autopilot_8h.html#aba17f9ac72f7e9dd1dcd95457bf5c87f">  143</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define NAVIGATION_FREQUENCY 4</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* AUTOPILOT_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#ifdef POWER_SWITCH_GPIO</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="gpio_8h.html" title="Some architecture independent helper functions for GPIOs.">mcu_periph/gpio.h</a>&quot;</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#define autopilot_SetPowerSwitch(_x) { \</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">  power_switch = _x; \</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">  if (_x) { gpio_set(POWER_SWITCH_GPIO); } \</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">  else { gpio_clear(POWER_SWITCH_GPIO); } \</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">}</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else // POWER_SWITCH_GPIO</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="code" href="fixedwing_2autopilot_8h.html#ad08218d3e8fc1fd4c0b7f127e69a86d6">  128</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define autopilot_SetPowerSwitch(_x) { power_switch = _x; }</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif // POWER_SWITCH_GPIO</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment">/* CONTROL_RATE will be removed in the next release</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment"> * please use CONTROL_FREQUENCY instead</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#ifndef CONTROL_FREQUENCY</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifdef  CONTROL_RATE</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CONTROL_FREQUENCY CONTROL_RATE</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#warning &quot;CONTROL_RATE is deprecated. Please use CONTROL_FREQUENCY instead. Defaults to 60Hz if not defined.&quot;</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="code" href="fixedwing_2autopilot_8h.html#a992e6194ee1d6c879faa66e51b72840a">  140</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CONTROL_FREQUENCY 60</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif  // CONTROL_RATE</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif  // CONTROL_FREQUENCY</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="preprocessor">#ifndef NAVIGATION_FREQUENCY</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="code" href="fixedwing_2autopilot_8h.html#aba17f9ac72f7e9dd1dcd95457bf5c87f">  145</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define NAVIGATION_FREQUENCY 4</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* AUTOPILOT_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_cb1b347b64b61ba7f369ccfe68448b26.html">fixedwing</a></li><li class="navelem"><a class="el" href="fixedwing_2autopilot_8h.html">autopilot.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:07 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:38 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

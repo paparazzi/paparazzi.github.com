@@ -16,19 +16,13 @@ var vf__extended__float_8c =
     [ "update_baro_conf", "vf__extended__float_8c.html#a7cc8f440a2dfd6769810468a88ccec67", null ],
     [ "update_offset_conf", "vf__extended__float_8c.html#a3b99dfff6cd512233a5bf7b9bdd49208", null ],
     [ "vff_init", "vf__extended__float_8c.html#a7858e35c59bd12fd401af33a4fbfa580", null ],
+    [ "vff_init_zero", "vf__extended__float_8c.html#a2358072559748851df8c44c975c43ebb", null ],
     [ "vff_propagate", "vf__extended__float_8c.html#aaff6390ecf9c28ae4c77977cb22aed95", null ],
     [ "vff_realign", "vf__extended__float_8c.html#a9871b34cda71fc04b9e312b8ce4f11af", null ],
-    [ "vff_update_alt", "vf__extended__float_8c.html#aa7be1a38f359b14ce8f7bd719086541a", null ],
-    [ "vff_update_alt_conf", "vf__extended__float_8c.html#a71a8b7ccf3526fe63cd48ac4117864fa", null ],
     [ "vff_update_baro", "vf__extended__float_8c.html#a94b26d899a6d7ca4e26cb7df3f45ef49", null ],
     [ "vff_update_baro_conf", "vf__extended__float_8c.html#aa7f8c70d85481ee00728646ab5d82e2a", null ],
     [ "vff_update_offset", "vf__extended__float_8c.html#a3726fbb9f54c7ec7a8579c7af3f15a4c", null ],
-    [ "vff_bias", "vf__extended__float_8c.html#a24c283535083af381e89d00c91761df9", null ],
-    [ "vff_offset", "vf__extended__float_8c.html#a2d44477636d691d3c1e51e0e092a878b", null ],
-    [ "vff_P", "vf__extended__float_8c.html#a0770019985f92fda99f2bdc98f47c267", null ],
-    [ "vff_z", "vf__extended__float_8c.html#a1222ca88d397976e39d7074c3467974a", null ],
-    [ "vff_z_meas", "vf__extended__float_8c.html#a70bf4fe0af826d88a29e934e4768b9fc", null ],
-    [ "vff_z_meas_baro", "vf__extended__float_8c.html#a78d01fa5691c897301843af95d1c73f4", null ],
-    [ "vff_zdot", "vf__extended__float_8c.html#abf478862714adc9584d537b9363011a4", null ],
-    [ "vff_zdotdot", "vf__extended__float_8c.html#ac36a73bd31bb8d32ee5627b70aadd855", null ]
+    [ "vff_update_z", "vf__extended__float_8c.html#a43ba970ac8015812427c9681be41100a", null ],
+    [ "vff_update_z_conf", "vf__extended__float_8c.html#a383a56a1eaa73890c3b6ca0599c3fb67", null ],
+    [ "vff", "vf__extended__float_8c.html#aa8558bc47d778efba706bc1fc7f08d36", null ]
 ];

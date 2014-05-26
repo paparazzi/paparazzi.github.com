@@ -34,7 +34,7 @@ var searchData=
   ['dl_5ftype_5fuint32',['DL_TYPE_UINT32',['../downlink__transport_8h.html#a7e34d1ce8122429af2e68f87148b7778a44678f16e58be01c51dcf03b7995e079',1,'downlink_transport.h']]],
   ['dl_5ftype_5fuint64',['DL_TYPE_UINT64',['../downlink__transport_8h.html#a7e34d1ce8122429af2e68f87148b7778acd918cbea5512690773b26c42f7ea0e2',1,'downlink_transport.h']]],
   ['dl_5ftype_5fuint8',['DL_TYPE_UINT8',['../downlink__transport_8h.html#a7e34d1ce8122429af2e68f87148b7778a69cfd57126c7b7d902e41a4b2b82d307',1,'downlink_transport.h']]],
-  ['downwind',['DOWNWIND',['../discsurvey_8c.html#a015eb90e0de9f16e87bd149d4b9ce959a35abed5af66323d351a30da96835fea5',1,'discsurvey.c']]],
+  ['downwind',['DOWNWIND',['../nav__survey__disc_8c.html#ac9afc0cb207e93bdf17ae7a0f93a5c44a35abed5af66323d351a30da96835fea5',1,'nav_survey_disc.c']]],
   ['dsm_5fdsm2_5f1',['DSM_DSM2_1',['../superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3abe130355db41b6aa76a4e96a471a4635',1,'superbitrf.h']]],
   ['dsm_5fdsm2_5f2',['DSM_DSM2_2',['../superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3a9b1ed02c342b713e72b3c987646e5dfb',1,'superbitrf.h']]],
   ['dsm_5fdsm2p',['DSM_DSM2P',['../superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3ae5c1ce540e84f7ffb80ee444c0f95902',1,'superbitrf.h']]],

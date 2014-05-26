@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -119,6 +119,7 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a88e84e5c89e51085c6428b677d0afab6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMotorMixing.html#a88e84e5c89e51085c6428b677d0afab6">trim</a> [MOTOR_MIXING_NB_MOTOR]</td></tr>
 <tr class="memitem:a18d6ee455128950bc3404cd02792d2cc"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMotorMixing.html#a18d6ee455128950bc3404cd02792d2cc">override_enabled</a> [MOTOR_MIXING_NB_MOTOR]</td></tr>
 <tr class="memitem:a01243d97bfe086020377a3da7b2349c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMotorMixing.html#a01243d97bfe086020377a3da7b2349c5">override_value</a> [MOTOR_MIXING_NB_MOTOR]</td></tr>
+<tr class="memitem:aae518a012ba145408429c815e2be10e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMotorMixing.html#aae518a012ba145408429c815e2be10e0">nb_saturation</a></td></tr>
 <tr class="memitem:a70d15998e2e9921440601b9a27f3b286"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMotorMixing.html#a70d15998e2e9921440601b9a27f3b286">nb_failure</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
@@ -137,7 +138,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="motor__mixing_8h_source.html#l00036">36</a> of file <a class="el" href="motor__mixing_8h_source.html">motor_mixing.h</a>.</p>
 
-<p>Referenced by <a class="el" href="motor__mixing_8c_source.html#l00098">bound_commands()</a>, <a class="el" href="motor__mixing_8c_source.html#l00078">motor_mixing_init()</a>, <a class="el" href="motor__mixing_8c_source.html#l00152">motor_mixing_run()</a>, <a class="el" href="motor__mixing_8c_source.html#l00130">motor_mixing_run_spinup()</a>, and <a class="el" href="motor__mixing_8c_source.html#l00092">offset_commands()</a>.</p>
+<p>Referenced by <a class="el" href="motor__mixing_8c_source.html#l00105">bound_commands()</a>, <a class="el" href="motor__mixing_8c_source.html#l00084">motor_mixing_init()</a>, <a class="el" href="motor__mixing_8c_source.html#l00159">motor_mixing_run()</a>, <a class="el" href="motor__mixing_8c_source.html#l00137">motor_mixing_run_spinup()</a>, and <a class="el" href="motor__mixing_8c_source.html#l00099">offset_commands()</a>.</p>
 
 </div>
 </div>
@@ -151,9 +152,25 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="motor__mixing_8h_source.html#l00041">41</a> of file <a class="el" href="motor__mixing_8h_source.html">motor_mixing.h</a>.</p>
+
+<p>Referenced by <a class="el" href="motor__mixing_8c_source.html#l00084">motor_mixing_init()</a>, <a class="el" href="motor__mixing_8c_source.html#l00159">motor_mixing_run()</a>, and <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00131">send_status()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aae518a012ba145408429c815e2be10e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> MotorMixing::nb_saturation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 <p>Definition at line <a class="el" href="motor__mixing_8h_source.html#l00040">40</a> of file <a class="el" href="motor__mixing_8h_source.html">motor_mixing.h</a>.</p>
 
-<p>Referenced by <a class="el" href="motor__mixing_8c_source.html#l00078">motor_mixing_init()</a>, and <a class="el" href="motor__mixing_8c_source.html#l00152">motor_mixing_run()</a>.</p>
+<p>Referenced by <a class="el" href="motor__mixing_8c_source.html#l00084">motor_mixing_init()</a>, <a class="el" href="motor__mixing_8c_source.html#l00159">motor_mixing_run()</a>, and <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00131">send_status()</a>.</p>
 
 </div>
 </div>
@@ -169,7 +186,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="motor__mixing_8h_source.html#l00038">38</a> of file <a class="el" href="motor__mixing_8h_source.html">motor_mixing.h</a>.</p>
 
-<p>Referenced by <a class="el" href="motor__mixing_8c_source.html#l00078">motor_mixing_init()</a>, and <a class="el" href="motor__mixing_8c_source.html#l00152">motor_mixing_run()</a>.</p>
+<p>Referenced by <a class="el" href="motor__mixing_8c_source.html#l00084">motor_mixing_init()</a>, and <a class="el" href="motor__mixing_8c_source.html#l00159">motor_mixing_run()</a>.</p>
 
 </div>
 </div>
@@ -185,7 +202,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="motor__mixing_8h_source.html#l00039">39</a> of file <a class="el" href="motor__mixing_8h_source.html">motor_mixing.h</a>.</p>
 
-<p>Referenced by <a class="el" href="motor__mixing_8c_source.html#l00078">motor_mixing_init()</a>, and <a class="el" href="motor__mixing_8c_source.html#l00152">motor_mixing_run()</a>.</p>
+<p>Referenced by <a class="el" href="motor__mixing_8c_source.html#l00084">motor_mixing_init()</a>, and <a class="el" href="motor__mixing_8c_source.html#l00159">motor_mixing_run()</a>.</p>
 
 </div>
 </div>
@@ -201,7 +218,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="motor__mixing_8h_source.html#l00037">37</a> of file <a class="el" href="motor__mixing_8h_source.html">motor_mixing.h</a>.</p>
 
-<p>Referenced by <a class="el" href="motor__mixing_8c_source.html#l00078">motor_mixing_init()</a>, and <a class="el" href="motor__mixing_8c_source.html#l00152">motor_mixing_run()</a>.</p>
+<p>Referenced by <a class="el" href="motor__mixing_8c_source.html#l00084">motor_mixing_init()</a>, and <a class="el" href="motor__mixing_8c_source.html#l00159">motor_mixing_run()</a>.</p>
 
 </div>
 </div>
@@ -214,7 +231,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structMotorMixing.html">MotorMixing</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:12 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:14 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

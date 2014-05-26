@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('main__fbw_8c_source.html','');});
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="paparazzi_8h.html">paparazzi.h</a>&quot;</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="i2c_8h.html" title="Architecture independent I2C (Inter-Integrated Circuit Bus) API.">mcu_periph/i2c.h</a>&quot;</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#if DOWNLINK</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#if PERIODIC_TELEMETRY</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code).">subsystems/datalink/telemetry.h</a>&quot;</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span></div>
@@ -173,7 +173,7 @@ $(document).ready(function(){initNavTree('main__fbw_8c_source.html','');});
 <div class="line"><a name="l00078"></a><span class="lineno"><a class="code" href="main__fbw_8c.html#a447fbe99f4dc78a3fa46e02fb396f1fe">   78</a></span>&#160;<a class="code" href="sys__time_8h.html#aa448b29ae120d238dba2cb20079540ab" title="sys_time timer id type">tid_t</a> <a class="code" href="main__fbw_8c.html#a447fbe99f4dc78a3fa46e02fb396f1fe" title="id for electrical_periodic() timer">electrical_tid</a>;   </div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">/********** PERIODIC MESSAGES ************************************************/</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#if DOWNLINK</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#if PERIODIC_TELEMETRY</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keywordtype">void</span> send_commands(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  DOWNLINK_SEND_COMMANDS(<a class="code" href="downlink_8h.html#a891b19a3eba08208d4e550aa6c6188dd" title="SITL.">DefaultChannel</a>, <a class="code" href="downlink_8h.html#a028b405f95cecb4af565b17c8ee71d80">DefaultDevice</a>, COMMANDS_NB, <a class="code" href="commands_8c.html#a929b1098e1af3f34ee056eeed9227136" title="Storage of intermediate command values.">commands</a>);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
@@ -240,7 +240,7 @@ $(document).ready(function(){initNavTree('main__fbw_8c_source.html','');});
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor"></span>  <a class="code" href="lpc21_2mcu__arch_8h.html#ab24387a9ce83a0dae7bc7aa816cd6ebd">mcu_int_enable</a>();</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">#if DOWNLINK</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">#if PERIODIC_TELEMETRY</span></div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor"></span>  <a class="code" href="telemetry_8c.html#abb4aa9b3c0c8d93e1372de5da86de828" title="Register a telemetry callback function.">register_periodic_telemetry</a>(&amp;telemetry_Fbw, <span class="stringliteral">&quot;FBW_STATUS&quot;</span>, send_fbw_status);</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <a class="code" href="telemetry_8c.html#abb4aa9b3c0c8d93e1372de5da86de828" title="Register a telemetry callback function.">register_periodic_telemetry</a>(&amp;telemetry_Fbw, <span class="stringliteral">&quot;COMMANDS&quot;</span>, send_commands);</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">#ifdef ACTUATORS</span></div>
@@ -396,7 +396,7 @@ $(document).ready(function(){initNavTree('main__fbw_8c_source.html','');});
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  <a class="code" href="link__mcu__usart_8h.html#a822c4985aa0c0410ceb98e31dc539aa9">link_mcu_periodic_task</a>();</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="preprocessor">#ifdef DOWNLINK</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="preprocessor">#if PERIODIC_TELEMETRY</span></div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="preprocessor"></span>  periodic_telemetry_send_Fbw();</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="preprocessor"></span></div>
@@ -419,7 +419,7 @@ $(document).ready(function(){initNavTree('main__fbw_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_cb1b347b64b61ba7f369ccfe68448b26.html">fixedwing</a></li><li class="navelem"><a class="el" href="main__fbw_8c.html">main_fbw.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:07 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:38 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

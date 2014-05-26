@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('pprz__geodetic__double_8c_source.html'
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> r = sqrt(r2);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> F = 54.*b2*z2;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> G = r2 + (1-e2)*z2 - e2*E2;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a> = (e2*e2*F*r2)/(G*G*G);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> c = (e2*e2*F*r2)/(G*G*G);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> s = pow( (1 + c + sqrt(c*c + 2*c)), 1./3.);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> s1 = 1+s+1/s;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> P = F/(3*s1*s1*G*G);</div>
@@ -325,7 +325,7 @@ $(document).ready(function(){initNavTree('pprz__geodetic__double_8c_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_29343b6f5fcd4b75a5dfbb985ff56864.html">math</a></li><li class="navelem"><a class="el" href="pprz__geodetic__double_8c.html">pprz_geodetic_double.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

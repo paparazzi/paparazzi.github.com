@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Paparazzi UAS: Digital camera control (trigger using led)</title>
+<title>Paparazzi UAS: Digital camera control (trigger using GPIO)</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('module__digital_cam.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Digital camera control (trigger using led) </div>  </div>
+<div class="title">Digital camera control (trigger using GPIO) </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Module XML file: <code>digital_cam.xml</code> </p>
@@ -108,10 +108,22 @@ Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
 Define Options</h2>
 <ul>
-<li><b>name:</b> <code>DC_SHOOT_ON_BUTTON_RELEASE</code> <b>value:</b> <em>None</em></li>
-<li><b>name:</b> <code>SENSOR_SYNC_SEND</code> <b>value:</b> <em>1</em></li>
-<li><b>name:</b> <code>DC_PUSH</code> <b>value:</b> <em>LED_ON</em></li>
-<li><b>name:</b> <code>DC_RELEASE</code> <b>value:</b> <em>LED_OFF</em></li>
+<li><b>name:</b> <code>DC_SHOOT_ON_BUTTON_RELEASE</code> <b>value:</b> <em>None</em> <br/>
+ Description: if defined, call dc_send_shot_postion on button release instead of on push</li>
+<li><b>name:</b> <code>DC_SHUTTER_GPIO</code> <b>value:</b> <em>GPIOC,GPIO12</em> <br/>
+ Description: mandatory, gpio to control shutter</li>
+<li><b>name:</b> <code>DC_ZOOM_IN_GPIO</code> <b>value:</b> <em>GPIOC,GPIO2</em> <br/>
+ Description: optional, gpio to activate zoom in</li>
+<li><b>name:</b> <code>DC_ZOOM_OUT_GPIO</code> <b>value:</b> <em>GPIOC,GPIO5</em> <br/>
+ Description: optional, gpio to activate zoom out</li>
+<li><b>name:</b> <code>DC_POWER_GPIO</code> <b>value:</b> <em>GPIOB,GPIO1</em> <br/>
+ Description: optional, gpio to turn power on</li>
+<li><b>name:</b> <code>DC_POWER_OFF_GPIO</code> <b>value:</b> <em>GPIOC,GPIO1</em> <br/>
+ Description: optional, gpio to turn power off</li>
+<li><b>name:</b> <code>DC_PUSH</code> <b>value:</b> <em>gpio_set|gpio_clear</em> <br/>
+ Description: specifies whether to set or clear gpio to push the shutter (default: gpio_set)</li>
+<li><b>name:</b> <code>DC_RELEASE</code> <b>value:</b> <em>gpio_clear|gpio_set</em> <br/>
+ Description: specifies whether to set or clear gpio to release the shutter (default: gpio_clear)</li>
 <li><b>name:</b> <code>DC_AUTOSHOOT_QUARTERSEC_PERIOD</code> <b>value:</b> <em>6</em> <br/>
  Description: quarter_second</li>
 <li><b>name:</b> <code>DC_AUTOSHOOT_METER_GRID</code> <b>value:</b> <em>50</em> <br/>
@@ -123,13 +135,13 @@ Module functions</h1>
 Init Functions</h2>
 <p>These initialization functions are called once on startup.</p>
 <ul>
-<li><a class="el" href="led__cam__ctrl_8h.html#a7c9891620f73eb93e8d917c5ff17451f">led_cam_ctrl_init()</a></li>
+<li><a class="el" href="gpio__cam__ctrl_8c.html#a8579fc8f4ca4dd9c48436a4ccfa55598">gpio_cam_ctrl_init()</a></li>
 </ul>
 <h2><a class="anchor" id="periodic_functions"></a>
 Periodic Functions</h2>
 <p>These functions are called periodically at the specified frequency from the module periodic loop.</p>
 <ul>
-<li><a class="el" href="led__cam__ctrl_8h.html#afdc2d18eb53993638b475edbd3a79bdd">led_cam_ctrl_periodic()</a><ul>
+<li><a class="el" href="gpio__cam__ctrl_8c.html#a9ea235d04c38558097d37bc2dacdef1e" title="4Hz Periodic">gpio_cam_ctrl_periodic()</a><ul>
 <li>Frequency in Hz: <em>4</em> </li>
 <li>Autorun: <em>TRUE</em> <br/>
  Periodic function automatically starts after init.</li>
@@ -142,58 +154,48 @@ Files</h1>
 Header Files</h2>
 <p>The following headers are automatically included in modules.h</p>
 <ul>
-<li><a class="el" href="led__cam__ctrl_8h.html">led_cam_ctrl.h</a></li>
+<li><a class="el" href="gpio__cam__ctrl_8h.html">gpio_cam_ctrl.h</a></li>
 </ul>
 <h2><a class="anchor" id="sources"></a>
 Source Files</h2>
 <ul>
-<li><a class="el" href="led__cam__ctrl_8c.html">modules/digital_cam/led_cam_ctrl.c</a></li>
+<li><a class="el" href="gpio__cam__ctrl_8c.html">modules/digital_cam/gpio_cam_ctrl.c</a></li>
 <li><a class="el" href="dc_8c.html">modules/digital_cam/dc.c</a></li>
 </ul>
 <h2><a class="anchor" id="module_xml__digital_cam"></a>
 Raw digital_cam.xml file:</h2>
 <div class="fragment"><div class="line">&lt;!DOCTYPE module SYSTEM <span class="stringliteral">&quot;./module.dtd&quot;</span>&gt;</div>
 <div class="line"></div>
-<div class="line">&lt;!--</div>
-<div class="line"></div>
-<div class="line"><span class="comment">// Use (parts of) the following section in airframe file to change</span></div>
-<div class="line"></div>
-<div class="line"><span class="preprocessor"># ap.CFLAGS += -DGPS_TRIGGERED_FUNCTION=&quot;dc_shoot_on_gps&quot;</span></div>
-<div class="line"><span class="preprocessor"></span><span class="preprocessor"># ap.CFLAGS += -DDC_GPS_TRIGGER_START=1</span></div>
-<div class="line"><span class="preprocessor"></span><span class="preprocessor"># ap.CFLAGS += -DDC_GPS_TRIGGER_STOP=3</span></div>
-<div class="line"><span class="preprocessor"></span></div>
-<div class="line">--&gt;</div>
-<div class="line"></div>
 <div class="line">&lt;module name=<span class="stringliteral">&quot;digital_cam&quot;</span>&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
-<div class="line">    &lt;description&gt;Digital camera control (trigger <span class="keyword">using</span> led)&lt;/description&gt;</div>
-<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_SHOOT_ON_BUTTON_RELEASE&quot;</span> /&gt;</div>
-<div class="line">    &lt;define name=<span class="stringliteral">&quot;SENSOR_SYNC_SEND&quot;</span> value=<span class="stringliteral">&quot;1&quot;</span> /&gt;</div>
-<div class="line"></div>
-<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_PUSH&quot;</span> value=<span class="stringliteral">&quot;LED_ON&quot;</span> /&gt;</div>
-<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_RELEASE&quot;</span> value=<span class="stringliteral">&quot;LED_OFF&quot;</span> /&gt;</div>
+<div class="line">    &lt;description&gt;Digital camera control (trigger <span class="keyword">using</span> <a class="code" href="LPC21xx_8h.html#a1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>)&lt;/description&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_SHOOT_ON_BUTTON_RELEASE&quot;</span> description=<span class="stringliteral">&quot;if defined, call dc_send_shot_postion on button release instead of on push&quot;</span>/&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_SHUTTER_GPIO&quot;</span> value=<span class="stringliteral">&quot;GPIOC,GPIO12&quot;</span> description=<span class="stringliteral">&quot;mandatory, gpio to control shutter&quot;</span>/&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_ZOOM_IN_GPIO&quot;</span> value=<span class="stringliteral">&quot;GPIOC,GPIO2&quot;</span> description=<span class="stringliteral">&quot;optional, gpio to activate zoom in&quot;</span>/&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_ZOOM_OUT_GPIO&quot;</span> value=<span class="stringliteral">&quot;GPIOC,GPIO5&quot;</span> description=<span class="stringliteral">&quot;optional, gpio to activate zoom out&quot;</span>/&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_POWER_GPIO&quot;</span> value=<span class="stringliteral">&quot;GPIOB,GPIO1&quot;</span> description=<span class="stringliteral">&quot;optional, gpio to turn power on&quot;</span>/&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_POWER_OFF_GPIO&quot;</span> value=<span class="stringliteral">&quot;GPIOC,GPIO1&quot;</span> description=<span class="stringliteral">&quot;optional, gpio to turn power off&quot;</span>/&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_PUSH&quot;</span> value=<span class="stringliteral">&quot;gpio_set|gpio_clear&quot;</span> description=<span class="stringliteral">&quot;specifies whether to set or clear gpio to push the shutter (default: gpio_set)&quot;</span>/&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_RELEASE&quot;</span> value=<span class="stringliteral">&quot;gpio_clear|gpio_set&quot;</span> description=<span class="stringliteral">&quot;specifies whether to set or clear gpio to release the shutter (default: gpio_clear)&quot;</span>/&gt;</div>
 <div class="line"></div>
 <div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_AUTOSHOOT_QUARTERSEC_PERIOD&quot;</span> value=<span class="stringliteral">&quot;6&quot;</span> description=<span class="stringliteral">&quot;quarter_second&quot;</span>/&gt;</div>
 <div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_AUTOSHOOT_METER_GRID&quot;</span> value=<span class="stringliteral">&quot;50&quot;</span> description=<span class="stringliteral">&quot;grid in meters&quot;</span>/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;header&gt;</div>
-<div class="line">    &lt;file name=<span class="stringliteral">&quot;led_cam_ctrl.h&quot;</span>/&gt;</div>
+<div class="line">    &lt;file name=<span class="stringliteral">&quot;gpio_cam_ctrl.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
 <div class="line"></div>
-<div class="line">  &lt;<a class="code" href="gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;led_cam_ctrl_init()&quot;</span>/&gt;</div>
+<div class="line">  &lt;<a class="code" href="nav__gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;gpio_cam_ctrl_init()&quot;</span>/&gt;</div>
 <div class="line"></div>
-<div class="line">  &lt;periodic fun=<span class="stringliteral">&quot;led_cam_ctrl_periodic()&quot;</span> freq=<span class="stringliteral">&quot;4&quot;</span> autorun=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
+<div class="line">  &lt;periodic fun=<span class="stringliteral">&quot;gpio_cam_ctrl_periodic()&quot;</span> freq=<span class="stringliteral">&quot;4&quot;</span> autorun=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;makefile &gt;</div>
-<div class="line"></div>
 <div class="line">    &lt;define name=<span class="stringliteral">&quot;DIGITAL_CAM&quot;</span> /&gt;</div>
-<div class="line">    &lt;file name=<span class="stringliteral">&quot;led_cam_ctrl.c&quot;</span>/&gt;</div>
+<div class="line">    &lt;file name=<span class="stringliteral">&quot;gpio_cam_ctrl.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;dc.c&quot;</span>/&gt;</div>
-<div class="line">    &lt;define name=<span class="stringliteral">&quot;SENSOR_SYNC_SEND&quot;</span> value=<span class="stringliteral">&quot;1&quot;</span> /&gt;</div>
-<div class="line"></div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;SENSOR_SYNC_SEND&quot;</span> value=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
-<div class="line"></div>
 <div class="line"></div>
 <div class="line">&lt;/module&gt;</div>
 </div><!-- fragment --> </div></div><!-- contents -->
@@ -202,7 +204,7 @@ Raw digital_cam.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:12 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:11 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

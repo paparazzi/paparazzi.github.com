@@ -20,7 +20,6 @@ var searchData=
   ['adxl_5fconf_5frate',['ADXL_CONF_RATE',['../adxl345_8h.html#aa006d32535082f7872bc58cd529c9177a9cc54611609e5e75f9d5ddb13f7a397d',1,'adxl345.h']]],
   ['adxl_5fconf_5funinit',['ADXL_CONF_UNINIT',['../adxl345_8h.html#aa006d32535082f7872bc58cd529c9177ae80bfd865b45a8a8708ec7ed2a1af76e',1,'adxl345.h']]],
   ['append',['Append',['../mission_8h.html#add225f937fa97e4f76900b7f5e73872ea71f30510b076569dd2830e348fb77a13',1,'mission.h']]],
-  ['approach',['Approach',['../OSAMNav_8c.html#a61a75394da51ededcb57cd59a9e3cefeaa19b7b7f6eb8f8eedb2055bf1050f81f',1,'OSAMNav.c']]],
   ['ardrone_5facq_5fthread_5fon',['ARDRONE_ACQ_THREAD_ON',['../at__com_8h.html#a085ecbab5cd867407912fa0892583856a4a8ab6ff088243faf601ebfc58ca97fe',1,'at_com.h']]],
   ['ardrone_5fadc_5fwatchdog_5fmask',['ARDRONE_ADC_WATCHDOG_MASK',['../at__com_8h.html#a085ecbab5cd867407912fa0892583856ae6f4a19dad8da8ff2c4287f2c0a29e84',1,'at_com.h']]],
   ['ardrone_5faltitude_5fmask',['ARDRONE_ALTITUDE_MASK',['../at__com_8h.html#a085ecbab5cd867407912fa0892583856a6b35a8ac73986257ea4d4832c8da7cbd',1,'at_com.h']]],

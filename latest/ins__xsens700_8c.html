@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -116,15 +116,14 @@ $(document).ready(function(){initNavTree('ins__xsens700_8c.html','');});
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="ins__module_8h_source.html">ins_module.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="ins__xsens_8h_source.html">ins_xsens.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="ins_8h_source.html">subsystems/ins.h</a>&quot;</code><br/>
 <code>#include &lt;<a class="el" href="inttypes_8h_source.html">inttypes.h</a>&gt;</code><br/>
 <code>#include &quot;generated/airframe.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br/>
 <code>#include &quot;messages.h&quot;</code><br/>
-<code>#include &quot;<a class="el" href="imu_8h_source.html">subsystems/imu.h</a>&quot;</code><br/>
 <code>#include &quot;xsens_protocol.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br/>
-<code>#include &quot;estimator.h&quot;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for ins_xsens700.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -132,7 +131,7 @@ $(document).ready(function(){initNavTree('ins__xsens700_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__xsens700_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2ins_2ins__xsens700_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2ins_2ins__xsens700_8c" id="sw_2airborne_2modules_2ins_2ins__xsens700_8c">
-<area shape="rect" id="node3" href="ins__module_8h.html" title="Device independent INS code." alt="" coords="931,185,1029,213"/><area shape="rect" id="node54" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="1087,278,1212,306"/><area shape="rect" id="node59" href="ins__xsens_8h.html" title="ins_xsens.h" alt="" coords="859,99,949,127"/><area shape="rect" id="node63" href="imu_8h.html" title="Inertial Measurement Unit interface." alt="" coords="531,278,656,306"/><area shape="rect" id="node69" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1773,558,1851,586"/><area shape="rect" id="node72" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1051,465,1205,493"/><area shape="rect" id="node81" href="downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="1585,177,1727,221"/><area shape="rect" id="node7" href="ins_8h.html" title="Integrated Navigation System interface." alt="" coords="680,278,803,306"/><area shape="rect" id="node10" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="621,457,755,501"/><area shape="rect" id="node31" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="52,558,220,586"/><area shape="rect" id="node37" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="456,371,517,399"/><area shape="rect" id="node12" href="pprz__geodetic_8h.html" title="pprz_geodetic.h" alt="" coords="592,558,704,586"/><area shape="rect" id="node15" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="384,558,509,586"/><area shape="rect" id="node18" href="pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="171,643,309,671"/><area shape="rect" id="node25" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="435,643,568,671"/><area shape="rect" id="node42" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="464,457,597,501"/><area shape="rect" id="node47" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversion." alt="" coords="192,457,339,501"/><area shape="rect" id="node89" href="udp_8h.html" title="subsystems/datalink\l/udp.h" alt="" coords="1337,270,1479,314"/><area shape="rect" id="node97" href="pprz__transport_8h.html" title="Extra datalink using PPRZ protocol." alt="" coords="1633,363,1775,407"/><area shape="rect" id="node107" href="xbee_8h.html" title="subsystems/datalink\l/xbee.h" alt="" coords="1884,270,2025,314"/><area shape="rect" id="node114" href="w5100_8h.html" title="subsystems/datalink\l/w5100.h" alt="" coords="1668,270,1809,314"/><area shape="rect" id="node91" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="1475,457,1616,501"/><area shape="rect" id="node102" href="transport_8h.html" title="generic transport header" alt="" coords="1741,457,1883,501"/><area shape="rect" id="node111" href="xbee24_8h.html" title="subsystems/datalink\l/xbee24.h" alt="" coords="1900,363,2041,407"/></map>
+<area shape="rect" id="node3" href="ins__module_8h.html" title="Device independent INS code." alt="" coords="796,185,902,213"/><area shape="rect" id="node7" href="ins_8h.html" title="Integrated Navigation System interface." alt="" coords="594,278,728,306"/><area shape="rect" id="node54" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="1028,278,1166,306"/><area shape="rect" id="node59" href="ins__xsens_8h.html" title="ins_xsens.h" alt="" coords="929,99,1025,127"/><area shape="rect" id="node70" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1977,558,2062,586"/><area shape="rect" id="node73" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="2164,465,2334,493"/><area shape="rect" id="node82" href="downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="1649,177,1801,221"/><area shape="rect" id="node10" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="550,457,700,501"/><area shape="rect" id="node31" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="58,558,248,586"/><area shape="rect" id="node37" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="472,371,538,399"/><area shape="rect" id="node12" href="pprz__geodetic_8h.html" title="pprz_geodetic.h" alt="" coords="465,558,588,586"/><area shape="rect" id="node15" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="662,558,801,586"/><area shape="rect" id="node18" href="pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="200,643,354,671"/><area shape="rect" id="node25" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="652,643,801,671"/><area shape="rect" id="node42" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="190,457,340,501"/><area shape="rect" id="node47" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversion." alt="" coords="364,457,526,501"/><area shape="rect" id="node63" href="imu_8h.html" title="Inertial Measurement Unit interface." alt="" coords="814,278,953,306"/><area shape="rect" id="node90" href="udp_8h.html" title="subsystems/datalink\l/udp.h" alt="" coords="1473,270,1625,314"/><area shape="rect" id="node98" href="pprz__transport_8h.html" title="Extra datalink using PPRZ protocol." alt="" coords="1609,363,1761,407"/><area shape="rect" id="node108" href="pprzlog__transport_8h.html" title="Building and Paparazzi frames with timestamp for data logger." alt="" coords="2164,363,2316,407"/><area shape="rect" id="node111" href="xbee_8h.html" title="subsystems/datalink\l/xbee.h" alt="" coords="1825,270,1977,314"/><area shape="rect" id="node118" href="w5100_8h.html" title="W5100 ethernet chip I/O." alt="" coords="1649,270,1801,314"/><area shape="rect" id="node92" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="1445,457,1597,501"/><area shape="rect" id="node103" href="transport_8h.html" title="generic transport header" alt="" coords="1722,457,1874,501"/><area shape="rect" id="node115" href="xbee24_8h.html" title="subsystems/datalink\l/xbee24.h" alt="" coords="1836,363,1988,407"/></map>
 </div>
 </div>
 <p><a href="ins__xsens700_8c_source.html">Go to the source code of this file.</a></p>
@@ -140,8 +139,8 @@ $(document).ready(function(){initNavTree('ins__xsens700_8c.html','');});
 <tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a209a5df2f3b2ca2cff354b8b96f2cd83"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens700_8c.html#a209a5df2f3b2ca2cff354b8b96f2cd83">XsensInitCheksum</a>()&#160;&#160;&#160;{ <a class="el" href="ins__xsens700_8c.html#a934ca0061f712fc5b516fb27f5ee24a1">send_ck</a> = 0; }</td></tr>
-<tr class="memitem:af174d6cd94fda273df23563c16e21b57"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens700_8c.html#af174d6cd94fda273df23563c16e21b57">XsensUpdateChecksum</a>(<a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>)&#160;&#160;&#160;{ <a class="el" href="ins__xsens700_8c.html#a934ca0061f712fc5b516fb27f5ee24a1">send_ck</a> += <a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>; }</td></tr>
-<tr class="memitem:a1346c87fd145b7be76f9ea35147f67d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens700_8c.html#a1346c87fd145b7be76f9ea35147f67d1">XsensSend1</a>(<a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>)&#160;&#160;&#160;{ <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i8=<a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>; <a class="el" href="ins__module_8h.html#ab54de1be72ee30247aa9295a6ff23b30">InsUartSend1</a>(i8); <a class="el" href="ins__xsens700_8c.html#af174d6cd94fda273df23563c16e21b57">XsensUpdateChecksum</a>(i8); }</td></tr>
+<tr class="memitem:af174d6cd94fda273df23563c16e21b57"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens700_8c.html#af174d6cd94fda273df23563c16e21b57">XsensUpdateChecksum</a>(c)&#160;&#160;&#160;{ <a class="el" href="ins__xsens700_8c.html#a934ca0061f712fc5b516fb27f5ee24a1">send_ck</a> += c; }</td></tr>
+<tr class="memitem:a1346c87fd145b7be76f9ea35147f67d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens700_8c.html#a1346c87fd145b7be76f9ea35147f67d1">XsensSend1</a>(c)&#160;&#160;&#160;{ <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i8=c; <a class="el" href="ins__module_8h.html#ab54de1be72ee30247aa9295a6ff23b30">InsUartSend1</a>(i8); <a class="el" href="ins__xsens700_8c.html#af174d6cd94fda273df23563c16e21b57">XsensUpdateChecksum</a>(i8); }</td></tr>
 <tr class="memitem:af887fa0d4f09868b11edbf01356683e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens700_8c.html#af887fa0d4f09868b11edbf01356683e2">XsensSend1ByAddr</a>(x)&#160;&#160;&#160;{ <a class="el" href="ins__xsens700_8c.html#a1346c87fd145b7be76f9ea35147f67d1">XsensSend1</a>(*x); }</td></tr>
 <tr class="memitem:ae273420a9b498dbf17ff7316fba11b3c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens700_8c.html#ae273420a9b498dbf17ff7316fba11b3c">XsensSend2ByAddr</a>(x)&#160;&#160;&#160;{ <a class="el" href="ins__xsens700_8c.html#a1346c87fd145b7be76f9ea35147f67d1">XsensSend1</a>(*(x+1)); <a class="el" href="ins__xsens700_8c.html#a1346c87fd145b7be76f9ea35147f67d1">XsensSend1</a>(*x); }</td></tr>
 <tr class="memitem:a03da8c250f594fced17c9bb42029bf5f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens700_8c.html#a03da8c250f594fced17c9bb42029bf5f">XsensSend4ByAddr</a>(x)&#160;&#160;&#160;{ <a class="el" href="ins__xsens700_8c.html#a1346c87fd145b7be76f9ea35147f67d1">XsensSend1</a>(*(x+3)); <a class="el" href="ins__xsens700_8c.html#a1346c87fd145b7be76f9ea35147f67d1">XsensSend1</a>(*(x+2)); <a class="el" href="ins__xsens700_8c.html#a1346c87fd145b7be76f9ea35147f67d1">XsensSend1</a>(*(x+1)); <a class="el" href="ins__xsens700_8c.html#a1346c87fd145b7be76f9ea35147f67d1">XsensSend1</a>(*x); }</td></tr>
@@ -159,17 +158,12 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa3721663c9df7c7af5613486a3566afb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens700_8c.html#aa3721663c9df7c7af5613486a3566afb">ahrs_init</a> (void)</td></tr>
-<tr class="memdesc:aa3721663c9df7c7af5613486a3566afb"><td class="mdescLeft">&#160;</td><td class="mdescRight">AHRS initialization.  <a href="#aa3721663c9df7c7af5613486a3566afb"></a><br/></td></tr>
-<tr class="memitem:a86a06fe7a9831292bd92867da2d12f80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens700_8c.html#a86a06fe7a9831292bd92867da2d12f80">imu_init</a> (void)</td></tr>
-<tr class="memitem:a6623d4c90e7b1bfb73abc0da1195f29b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens700_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b">imu_periodic</a> (void)</td></tr>
-<tr class="memitem:abf3028c2ada542781b8a5e1eb20c17ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens700_8c.html#abf3028c2ada542781b8a5e1eb20c17ce">ins_init</a> (void)</td></tr>
-<tr class="memdesc:abf3028c2ada542781b8a5e1eb20c17ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">INS initialization.  <a href="#abf3028c2ada542781b8a5e1eb20c17ce"></a><br/></td></tr>
-<tr class="memitem:ac3c716f124f5e6ec6161955d18aa8cde"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens700_8c.html#ac3c716f124f5e6ec6161955d18aa8cde">xsens_ask_message_rate</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="discsurvey_8c.html#ae686c0c996ea6ecdf1eb6bf2def17830">c1</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="discsurvey_8c.html#a59be97bb2a8a00d8b5491a8fe2429e9b">c2</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> freq)</td></tr>
-<tr class="memitem:a8dc6e488ca20854b1f96fb7a2933bbfe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens700_8c.html#a8dc6e488ca20854b1f96fb7a2933bbfe">ins_periodic_task</a> (void)</td></tr>
+<tr class="memitem:a47f12136c89e8cc13ff45e72caab8a19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens700_8c.html#a47f12136c89e8cc13ff45e72caab8a19">xsens_init</a> (void)</td></tr>
+<tr class="memitem:a6345aa5f7a6fc2de9539539d91bf0cba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens700_8c.html#a6345aa5f7a6fc2de9539539d91bf0cba">xsens_periodic</a> (void)</td></tr>
+<tr class="memitem:ac3c716f124f5e6ec6161955d18aa8cde"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens700_8c.html#ac3c716f124f5e6ec6161955d18aa8cde">xsens_ask_message_rate</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="baro__MS5534A_8c.html#a6d94ee929fd62c2982e49f8e2a04166e">c1</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="baro__MS5534A_8c.html#ac7bcd4e07054b2ecda5619619b8bfa19">c2</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> freq)</td></tr>
 <tr class="memitem:ac5da428408b44b6b22e510c36f7f2bc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens700_8c.html#ac5da428408b44b6b22e510c36f7f2bc7">handle_ins_msg</a> (void)</td></tr>
 <tr class="memitem:a8cb976f9e02352af6815c51a4b18faec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens700_8c.html#a8cb976f9e02352af6815c51a4b18faec">parse_ins_msg</a> (void)</td></tr>
-<tr class="memitem:a7cb52371283c2313f6dfe53139c56bb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens700_8c.html#a7cb52371283c2313f6dfe53139c56bb4">parse_ins_buffer</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>)</td></tr>
+<tr class="memitem:a7cb52371283c2313f6dfe53139c56bb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens700_8c.html#a7cb52371283c2313f6dfe53139c56bb4">parse_ins_buffer</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> c)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -191,8 +185,6 @@ Variables</h2></td></tr>
 <tr class="memitem:a81ec12c20410fa078a450bdbdd3eb584"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ins__module_8h.html#af7a0eee39bb6bb96792762bbbb34cb4a">INS_FORMAT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens700_8c.html#a81ec12c20410fa078a450bdbdd3eb584">ins_mx</a></td></tr>
 <tr class="memitem:a2f8843ba5648755270172df9c0687b96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ins__module_8h.html#af7a0eee39bb6bb96792762bbbb34cb4a">INS_FORMAT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens700_8c.html#a2f8843ba5648755270172df9c0687b96">ins_my</a></td></tr>
 <tr class="memitem:addf80ff74cc64f18481a14b5448f1645"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ins__module_8h.html#af7a0eee39bb6bb96792762bbbb34cb4a">INS_FORMAT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens700_8c.html#addf80ff74cc64f18481a14b5448f1645">ins_mz</a></td></tr>
-<tr class="memitem:ac5803b6353ae28ae52ab9284d222d8d5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens700_8c.html#ac5803b6353ae28ae52ab9284d222d8d5">ins_pitch_neutral</a></td></tr>
-<tr class="memitem:a70b61a4232cbf0e9acbde8d9b62ce1c5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens700_8c.html#a70b61a4232cbf0e9acbde8d9b62ce1c5">ins_roll_neutral</a></td></tr>
 <tr class="memitem:af3989b340d21f6f17c56833594d188c6"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens700_8c.html#af3989b340d21f6f17c56833594d188c6">ins_msg_received</a></td></tr>
 <tr class="memitem:a1685356ace76940e06c455f2dcb00f75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens700_8c.html#a1685356ace76940e06c455f2dcb00f75">xsens_msg_buf</a> [<a class="el" href="ins__xsens700_8c.html#a473d343a49500ecfb5624bdaf98f1f69">XSENS_MAX_PAYLOAD</a>]</td></tr>
 <tr class="memitem:a6fd7226d58d4ca50080c605101d75f99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens700_8c.html#a6fd7226d58d4ca50080c605101d75f99">xsens_errorcode</a></td></tr>
@@ -236,9 +228,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00132">132</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00121">121</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00532">parse_ins_buffer()</a>.</p>
+<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00575">parse_ins_buffer()</a>.</p>
 
 </div>
 </div>
@@ -252,7 +244,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00136">136</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00125">125</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 </div>
 </div>
@@ -266,9 +258,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00135">135</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00124">124</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00532">parse_ins_buffer()</a>.</p>
+<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00575">parse_ins_buffer()</a>.</p>
 
 </div>
 </div>
@@ -282,9 +274,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00134">134</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00123">123</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00532">parse_ins_buffer()</a>.</p>
+<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00575">parse_ins_buffer()</a>.</p>
 
 </div>
 </div>
@@ -298,9 +290,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00133">133</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00122">122</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00532">parse_ins_buffer()</a>.</p>
+<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00575">parse_ins_buffer()</a>.</p>
 
 </div>
 </div>
@@ -314,9 +306,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00131">131</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00120">120</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00532">parse_ins_buffer()</a>.</p>
+<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00575">parse_ins_buffer()</a>.</p>
 
 </div>
 </div>
@@ -330,9 +322,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00130">130</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00119">119</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00175">ins_init()</a>, and <a class="el" href="ins__xsens700_8c_source.html#l00532">parse_ins_buffer()</a>.</p>
+<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00575">parse_ins_buffer()</a>.</p>
 
 </div>
 </div>
@@ -348,9 +340,9 @@ Variables</h2></td></tr>
 
 <p>Includes macros generated from xsens_MTi-G.xml. </p>
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00126">126</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00115">115</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00532">parse_ins_buffer()</a>.</p>
+<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00575">parse_ins_buffer()</a>.</p>
 
 </div>
 </div>
@@ -377,17 +369,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{ \</div>
-<div class="line">  InsUartSend1(XSENS_START); \</div>
-<div class="line">  XsensInitCheksum(); \</div>
-<div class="line">  XsensSend1(XSENS_BID); \</div>
-<div class="line">  XsensSend1(msg_id); \</div>
-<div class="line">  XsensSend1(len); \</div>
-<div class="line">}</div>
+<b>Value:</b><div class="fragment"><div class="line">{              \</div>
+<div class="line">    InsUartSend1(XSENS_START);                  \</div>
+<div class="line">    XsensInitCheksum();                         \</div>
+<div class="line">    XsensSend1(XSENS_BID);                      \</div>
+<div class="line">    XsensSend1(msg_id);                         \</div>
+<div class="line">    XsensSend1(len);                            \</div>
+<div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00113">113</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
-
-<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00198">ins_periodic_task()</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00102">102</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 </div>
 </div>
@@ -404,7 +394,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00105">105</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00094">94</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 </div>
 </div>
@@ -416,13 +406,13 @@ Variables</h2></td></tr>
           <td class="memname">#define XsensSend1</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a></td><td>)</td>
-          <td>&#160;&#160;&#160;{ <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i8=<a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>; <a class="el" href="ins__module_8h.html#ab54de1be72ee30247aa9295a6ff23b30">InsUartSend1</a>(i8); <a class="el" href="ins__xsens700_8c.html#af174d6cd94fda273df23563c16e21b57">XsensUpdateChecksum</a>(i8); }</td>
+          <td class="paramname">c</td><td>)</td>
+          <td>&#160;&#160;&#160;{ <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i8=c; <a class="el" href="ins__module_8h.html#ab54de1be72ee30247aa9295a6ff23b30">InsUartSend1</a>(i8); <a class="el" href="ins__xsens700_8c.html#af174d6cd94fda273df23563c16e21b57">XsensUpdateChecksum</a>(i8); }</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00108">108</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00097">97</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 </div>
 </div>
@@ -440,9 +430,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00109">109</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00098">98</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00189">xsens_ask_message_rate()</a>.</p>
+<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00220">xsens_ask_message_rate()</a>.</p>
 
 </div>
 </div>
@@ -460,7 +450,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00110">110</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00099">99</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 </div>
 </div>
@@ -478,7 +468,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00111">111</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00100">100</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 </div>
 </div>
@@ -495,9 +485,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00120">120</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
-
-<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00198">ins_periodic_task()</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00109">109</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 </div>
 </div>
@@ -509,51 +497,17 @@ Variables</h2></td></tr>
           <td class="memname">#define XsensUpdateChecksum</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a></td><td>)</td>
-          <td>&#160;&#160;&#160;{ <a class="el" href="ins__xsens700_8c.html#a934ca0061f712fc5b516fb27f5ee24a1">send_ck</a> += <a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>; }</td>
+          <td class="paramname">c</td><td>)</td>
+          <td>&#160;&#160;&#160;{ <a class="el" href="ins__xsens700_8c.html#a934ca0061f712fc5b516fb27f5ee24a1">send_ck</a> += c; }</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00106">106</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00095">95</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 </div>
 </div>
 <h2>Function Documentation</h2>
-<a class="anchor" id="aa3721663c9df7c7af5613486a3566afb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ahrs_init </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>AHRS initialization. </p>
-<p>Called at startup. Needs to be implemented by each AHRS algorithm. </p>
-
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00076">76</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
-
-<p>References <a class="el" href="ins__xsens700_8c_source.html#l00175">ins_init()</a>.</p>
-
-<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__xsens700_8c_aa3721663c9df7c7af5613486a3566afb_cgraph.png" border="0" usemap="#ins__xsens700_8c_aa3721663c9df7c7af5613486a3566afb_cgraph" alt=""/></div>
-<map name="ins__xsens700_8c_aa3721663c9df7c7af5613486a3566afb_cgraph" id="ins__xsens700_8c_aa3721663c9df7c7af5613486a3566afb_cgraph">
-<area shape="rect" id="node3" href="ins__xsens700_8c.html#abf3028c2ada542781b8a5e1eb20c17ce" title="INS initialization." alt="" coords="127,5,188,33"/></map>
-</div>
-</p>
-
-</div>
-</div>
 <a class="anchor" id="ac5da428408b44b6b22e510c36f7f2bc7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -568,149 +522,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00270">270</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00334">334</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
-<p>References <a class="el" href="gps_8h_source.html#l00072">GpsState::course</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00083">UtmCoor_i::east</a>, <a class="el" href="ins__alt__float_8h_source.html#l00075">EstimatorSetAlt</a>, <a class="el" href="gps_8h_source.html#l00078">GpsState::fix</a>, <a class="el" href="gps_8c_source.html#l00033">gps</a>, <a class="el" href="gps_8h_source.html#l00043">GPS_FIX_3D</a>, <a class="el" href="gps_8h_source.html#l00070">GpsState::gspeed</a>, <a class="el" href="gps_8h_source.html#l00067">GpsState::hmsl</a>, <a class="el" href="ins__xsens_8c_source.html#l00065">ins_p</a>, <a class="el" href="ins__xsens_8c_source.html#l00060">ins_phi</a>, <a class="el" href="arch_2sim_2modules_2ins_2ins__arduimu_8c_source.html#l00015">ins_pitch_neutral</a>, <a class="el" href="ins__xsens_8c_source.html#l00062">ins_psi</a>, <a class="el" href="ins__xsens_8c_source.html#l00066">ins_q</a>, <a class="el" href="ins__xsens_8c_source.html#l00067">ins_r</a>, <a class="el" href="arch_2sim_2modules_2ins_2ins__arduimu_8c_source.html#l00014">ins_roll_neutral</a>, <a class="el" href="ins__xsens_8c_source.html#l00061">ins_theta</a>, <a class="el" href="ins__xsens_8c_source.html#l00055">ins_vx</a>, <a class="el" href="ins__xsens_8c_source.html#l00056">ins_vy</a>, <a class="el" href="ins__xsens_8c_source.html#l00057">ins_vz</a>, <a class="el" href="common__nav_8c_source.html#l00043">nav_utm_east0</a>, <a class="el" href="common__nav_8c_source.html#l00044">nav_utm_north0</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00082">UtmCoor_i::north</a>, <a class="el" href="gps_8h_source.html#l00071">GpsState::speed_3d</a>, and <a class="el" href="gps_8h_source.html#l00066">GpsState::utm_pos</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a86a06fe7a9831292bd92867da2d12f80"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void imu_init </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00086">86</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
-
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00177">init_ap()</a>, and <a class="el" href="rotorcraft_2main_8c_source.html#l00140">main_init()</a>.</p>
-
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__xsens700_8c_a86a06fe7a9831292bd92867da2d12f80_icgraph.png" border="0" usemap="#ins__xsens700_8c_a86a06fe7a9831292bd92867da2d12f80_icgraph" alt=""/></div>
-<map name="ins__xsens700_8c_a86a06fe7a9831292bd92867da2d12f80_icgraph" id="ins__xsens700_8c_a86a06fe7a9831292bd92867da2d12f80_icgraph">
-<area shape="rect" id="node3" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="128,5,187,33"/><area shape="rect" id="node7" href="main_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="main_init" alt="" coords="120,55,195,83"/><area shape="rect" id="node5" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="243,5,309,33"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a6623d4c90e7b1bfb73abc0da1195f29b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void imu_periodic </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00091">91</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
-
-<p>References <a class="el" href="ins__xsens700_8c_source.html#l00198">ins_periodic_task()</a>.</p>
-
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__xsens700_8c_a6623d4c90e7b1bfb73abc0da1195f29b_cgraph.png" border="0" usemap="#ins__xsens700_8c_a6623d4c90e7b1bfb73abc0da1195f29b_cgraph" alt=""/></div>
-<map name="ins__xsens700_8c_a6623d4c90e7b1bfb73abc0da1195f29b_cgraph" id="ins__xsens700_8c_a6623d4c90e7b1bfb73abc0da1195f29b_cgraph">
-<area shape="rect" id="node3" href="ins__xsens700_8c.html#a8dc6e488ca20854b1f96fb7a2933bbfe" title="ins_periodic_task" alt="" coords="149,5,272,33"/><area shape="rect" id="node5" href="ins__xsens700_8c.html#ac3c716f124f5e6ec6161955d18aa8cde" title="xsens_ask_message_rate" alt="" coords="320,5,493,33"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="abf3028c2ada542781b8a5e1eb20c17ce"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ins_init </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>INS initialization. </p>
-<p>Called at startup. Needs to be implemented by each INS algorithm. </p>
-
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00175">175</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
-
-<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00076">ahrs_init()</a>, <a class="el" href="ins__xsens700_8c_source.html#l00086">imu_init()</a>, <a class="el" href="main__ap_8c_source.html#l00177">init_ap()</a>, and <a class="el" href="rotorcraft_2main_8c_source.html#l00140">main_init()</a>.</p>
-
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__xsens700_8c_abf3028c2ada542781b8a5e1eb20c17ce_icgraph.png" border="0" usemap="#ins__xsens700_8c_abf3028c2ada542781b8a5e1eb20c17ce_icgraph" alt=""/></div>
-<map name="ins__xsens700_8c_abf3028c2ada542781b8a5e1eb20c17ce_icgraph" id="ins__xsens700_8c_abf3028c2ada542781b8a5e1eb20c17ce_icgraph">
-<area shape="rect" id="node3" href="ins__xsens700_8c.html#aa3721663c9df7c7af5613486a3566afb" title="AHRS initialization." alt="" coords="119,5,188,33"/><area shape="rect" id="node5" href="imu_8h.html#a86a06fe7a9831292bd92867da2d12f80" title="imu_init" alt="" coords="120,106,187,134"/><area shape="rect" id="node7" href="main_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="main_init" alt="" coords="237,81,312,109"/><area shape="rect" id="node9" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="245,143,304,171"/><area shape="rect" id="node11" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="360,143,427,171"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a8dc6e488ca20854b1f96fb7a2933bbfe"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ins_periodic_task </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00198">198</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
-
-<p>References <a class="el" href="ins__xsens700_8c_source.html#l00189">xsens_ask_message_rate()</a>, <a class="el" href="ins__xsens_8c_source.html#l00210">xsens_configured</a>, <a class="el" href="ins__xsens700_8c_source.html#l00113">XsensHeader</a>, and <a class="el" href="ins__xsens700_8c_source.html#l00120">XsensTrailer</a>.</p>
-
-<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00091">imu_periodic()</a>.</p>
-
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__xsens700_8c_a8dc6e488ca20854b1f96fb7a2933bbfe_cgraph.png" border="0" usemap="#ins__xsens700_8c_a8dc6e488ca20854b1f96fb7a2933bbfe_cgraph" alt=""/></div>
-<map name="ins__xsens700_8c_a8dc6e488ca20854b1f96fb7a2933bbfe_cgraph" id="ins__xsens700_8c_a8dc6e488ca20854b1f96fb7a2933bbfe_cgraph">
-<area shape="rect" id="node3" href="ins__xsens700_8c.html#ac3c716f124f5e6ec6161955d18aa8cde" title="xsens_ask_message_rate" alt="" coords="176,5,349,33"/></map>
-</div>
-</p>
-
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__xsens700_8c_a8dc6e488ca20854b1f96fb7a2933bbfe_icgraph.png" border="0" usemap="#ins__xsens700_8c_a8dc6e488ca20854b1f96fb7a2933bbfe_icgraph" alt=""/></div>
-<map name="ins__xsens700_8c_a8dc6e488ca20854b1f96fb7a2933bbfe_icgraph" id="ins__xsens700_8c_a8dc6e488ca20854b1f96fb7a2933bbfe_icgraph">
-<area shape="rect" id="node3" href="ins__xsens700_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="imu_periodic" alt="" coords="177,5,271,33"/></map>
-</div>
-</p>
+<p>References <a class="el" href="gps_8h_source.html#l00072">GpsState::course</a>, <a class="el" href="gps_8h_source.html#l00078">GpsState::fix</a>, <a class="el" href="gps_8c_source.html#l00041">gps</a>, <a class="el" href="gps_8h_source.html#l00043">GPS_FIX_3D</a>, <a class="el" href="gps_8h_source.html#l00070">GpsState::gspeed</a>, <a class="el" href="ins__xsens_8c_source.html#l00055">ins_vx</a>, <a class="el" href="ins__xsens_8c_source.html#l00056">ins_vy</a>, <a class="el" href="ins__xsens_8c_source.html#l00057">ins_vz</a>, and <a class="el" href="gps_8h_source.html#l00071">GpsState::speed_3d</a>.</p>
 
 </div>
 </div>
@@ -728,9 +542,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00532">532</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00575">575</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
-<p>References <a class="el" href="discsurvey_8c_source.html#l00038">c</a>, <a class="el" href="ins__xsens700_8c_source.html#l00167">ck</a>, <a class="el" href="ins__xsens700_8c_source.html#l00132">GOT_BID</a>, <a class="el" href="ins__xsens700_8c_source.html#l00135">GOT_DATA</a>, <a class="el" href="ins__xsens700_8c_source.html#l00134">GOT_LEN</a>, <a class="el" href="ins__xsens700_8c_source.html#l00133">GOT_MID</a>, <a class="el" href="ins__xsens700_8c_source.html#l00131">GOT_START</a>, <a class="el" href="ins__vn100_8c_source.html#l00064">ins_msg_received</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="ins__xsens700_8c_source.html#l00130">UNINIT</a>, <a class="el" href="ins__xsens700_8c_source.html#l00163">xsens_id</a>, <a class="el" href="ins__xsens700_8c_source.html#l00165">xsens_len</a>, <a class="el" href="ins__xsens700_8c_source.html#l00126">XSENS_MAX_PAYLOAD</a>, <a class="el" href="ins__xsens_8c_source.html#l00114">xsens_msg_buf</a>, <a class="el" href="ins__xsens700_8c_source.html#l00166">xsens_msg_idx</a>, and <a class="el" href="ins__xsens700_8c_source.html#l00164">xsens_status</a>.</p>
+<p>References <a class="el" href="ins__xsens700_8c_source.html#l00156">ck</a>, <a class="el" href="ins__xsens700_8c_source.html#l00121">GOT_BID</a>, <a class="el" href="ins__xsens700_8c_source.html#l00124">GOT_DATA</a>, <a class="el" href="ins__xsens700_8c_source.html#l00123">GOT_LEN</a>, <a class="el" href="ins__xsens700_8c_source.html#l00122">GOT_MID</a>, <a class="el" href="ins__xsens700_8c_source.html#l00120">GOT_START</a>, <a class="el" href="ins__vn100_8c_source.html#l00064">ins_msg_received</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="ins__xsens700_8c_source.html#l00119">UNINIT</a>, <a class="el" href="ins__xsens700_8c_source.html#l00152">xsens_id</a>, <a class="el" href="ins__xsens700_8c_source.html#l00154">xsens_len</a>, <a class="el" href="ins__xsens700_8c_source.html#l00115">XSENS_MAX_PAYLOAD</a>, <a class="el" href="ins__xsens_8c_source.html#l00114">xsens_msg_buf</a>, <a class="el" href="ins__xsens700_8c_source.html#l00155">xsens_msg_idx</a>, and <a class="el" href="ins__xsens700_8c_source.html#l00153">xsens_status</a>.</p>
 
 </div>
 </div>
@@ -756,18 +570,18 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00315">315</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00354">354</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00084">UtmCoor_i::alt</a>, <a class="el" href="imu__chimu_8h_source.html#l00074">CHIMU_Msg_3_IMU_Attitude</a>, <a class="el" href="imu__chimu_8c_source.html#l00150">CHIMU_Parse()</a>, <a class="el" href="gps_8h_source.html#l00057">SVinfo::cno</a>, <a class="el" href="downlink_8h_source.html#l00068">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00078">DefaultDevice</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00081">UtmCoor_f::east</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00083">UtmCoor_i::east</a>, <a class="el" href="imu__chimu_8h_source.html#l00136">CHIMU_attitude_data::euler</a>, <a class="el" href="gps_8h_source.html#l00078">GpsState::fix</a>, <a class="el" href="gps_8h_source.html#l00055">SVinfo::flags</a>, <a class="el" href="gps_8c_source.html#l00033">gps</a>, <a class="el" href="gps_8h_source.html#l00042">GPS_FIX_2D</a>, <a class="el" href="gps_8h_source.html#l00043">GPS_FIX_3D</a>, <a class="el" href="gps_8h_source.html#l00041">GPS_FIX_NONE</a>, <a class="el" href="gps__ardrone2_8h_source.html#l00033">GPS_NB_CHANNELS</a>, <a class="el" href="gps_8h_source.html#l00067">GpsState::hmsl</a>, <a class="el" href="ins__xsens_8c_source.html#l00070">ins_ax</a>, <a class="el" href="ins__xsens_8c_source.html#l00071">ins_ay</a>, <a class="el" href="ins__xsens_8c_source.html#l00072">ins_az</a>, <a class="el" href="ins__module_8h_source.html#l00035">INS_FORMAT</a>, <a class="el" href="ins__xsens_8c_source.html#l00065">ins_p</a>, <a class="el" href="ins__xsens_8c_source.html#l00060">ins_phi</a>, <a class="el" href="ins__xsens_8c_source.html#l00062">ins_psi</a>, <a class="el" href="ins__xsens_8c_source.html#l00066">ins_q</a>, <a class="el" href="ins__xsens_8c_source.html#l00067">ins_r</a>, <a class="el" href="ins__xsens_8c_source.html#l00061">ins_theta</a>, <a class="el" href="ins__xsens_8c_source.html#l00055">ins_vx</a>, <a class="el" href="ins__xsens_8c_source.html#l00056">ins_vy</a>, <a class="el" href="ins__xsens_8c_source.html#l00057">ins_vz</a>, <a class="el" href="ins__module_8h_source.html#l00079">InsLink</a>, <a class="el" href="gps_8h_source.html#l00086">GpsState::last_fix_time</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00054">LlaCoor_f::lat</a>, <a class="el" href="lpc21_2led__hw_8h_source.html#l00030">LED_TOGGLE</a>, <a class="el" href="ins__xsens700_8c_source.html#l00170">lla_f</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00053">LlaCoor_f::lon</a>, <a class="el" href="imu__chimu_8h_source.html#l00169">CHIMU_PARSER_DATA::m_attitude</a>, <a class="el" href="imu__chimu_8h_source.html#l00170">CHIMU_PARSER_DATA::m_attrates</a>, <a class="el" href="imu__chimu_8h_source.html#l00163">CHIMU_PARSER_DATA::m_MsgID</a>, <a class="el" href="imu__chimu_8h_source.html#l00171">CHIMU_PARSER_DATA::m_sensor</a>, <a class="el" href="common__flight__plan_8h_source.html#l00060">Min</a>, <a class="el" href="common__nav_8c_source.html#l00045">nav_utm_zone0</a>, <a class="el" href="gps_8h_source.html#l00082">GpsState::nb_channels</a>, <a class="el" href="sys__time_8h_source.html#l00069">sys_time::nb_sec</a>, <a class="el" href="gps_8h_source.html#l00069">GpsState::ned_vel</a>, <a class="el" href="ins__module_8h.html#a664a8d539ee7893c78e101c06152fc18">new_ins_attitude</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00080">UtmCoor_f::north</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00082">UtmCoor_i::north</a>, <a class="el" href="gps_8h_source.html#l00077">GpsState::num_sv</a>, <a class="el" href="gps_8h_source.html#l00073">GpsState::pacc</a>, <a class="el" href="gps_8h_source.html#l00076">GpsState::pdop</a>, <a class="el" href="imu__chimu_8h_source.html#l00119">CHIMU_Euler::phi</a>, <a class="el" href="imu__chimu_8h_source.html#l00121">CHIMU_Euler::psi</a>, <a class="el" href="gps_8h_source.html#l00056">SVinfo::qi</a>, <a class="el" href="imu__chimu_8h_source.html#l00150">CHIMU_sensor_data::rate</a>, <a class="el" href="gps_8h_source.html#l00074">GpsState::sacc</a>, <a class="el" href="state_8h_source.html#l01062">stateSetBodyRates_f()</a>, <a class="el" href="state_8h_source.html#l00995">stateSetNedToBodyEulers_f()</a>, <a class="el" href="gps_8h_source.html#l00054">SVinfo::svid</a>, <a class="el" href="gps_8h_source.html#l00083">GpsState::svinfos</a>, <a class="el" href="imu__chimu_8h_source.html#l00120">CHIMU_Euler::theta</a>, <a class="el" href="gps_8h_source.html#l00080">GpsState::tow</a>, <a class="el" href="ins__xsens700_8c_source.html#l00171">utm_f</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00257">utm_of_lla_f()</a>, <a class="el" href="gps_8h_source.html#l00066">GpsState::utm_pos</a>, <a class="el" href="gps_8h_source.html#l00079">GpsState::week</a>, <a class="el" href="pprz__geodetic__wgs84_8h_source.html#l00024">WGS84_ELLIPSOID_TO_GEOID</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00064">NedCoor_i::x</a>, <a class="el" href="ins__xsens_8c_source.html#l00191">xsens_declination</a>, <a class="el" href="ins__xsens_8c_source.html#l00184">xsens_errorcode</a>, <a class="el" href="ins__xsens_8c_source.html#l00192">xsens_gps_arm_x</a>, <a class="el" href="ins__xsens_8c_source.html#l00193">xsens_gps_arm_y</a>, <a class="el" href="ins__xsens_8c_source.html#l00194">xsens_gps_arm_z</a>, <a class="el" href="ins__xsens700_8c_source.html#l00163">xsens_id</a>, <a class="el" href="ins__xsens700_8c_source.html#l00165">xsens_len</a>, <a class="el" href="ins__xsens_8c_source.html#l00114">xsens_msg_buf</a>, <a class="el" href="ins__xsens700_8c_source.html#l00145">xsens_msg_statusword</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00065">NedCoor_i::y</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00066">NedCoor_i::z</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00083">UtmCoor_f::zone</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00085">UtmCoor_i::zone</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00084">UtmCoor_i::alt</a>, <a class="el" href="imu__chimu_8h_source.html#l00074">CHIMU_Msg_3_IMU_Attitude</a>, <a class="el" href="imu__chimu_8c_source.html#l00150">CHIMU_Parse()</a>, <a class="el" href="gps_8h_source.html#l00057">SVinfo::cno</a>, <a class="el" href="downlink_8h_source.html#l00081">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00091">DefaultDevice</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00081">UtmCoor_f::east</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00083">UtmCoor_i::east</a>, <a class="el" href="imu__chimu_8h_source.html#l00136">CHIMU_attitude_data::euler</a>, <a class="el" href="gps_8h_source.html#l00078">GpsState::fix</a>, <a class="el" href="gps_8h_source.html#l00055">SVinfo::flags</a>, <a class="el" href="gps_8c_source.html#l00041">gps</a>, <a class="el" href="gps_8h_source.html#l00042">GPS_FIX_2D</a>, <a class="el" href="gps_8h_source.html#l00043">GPS_FIX_3D</a>, <a class="el" href="gps_8h_source.html#l00041">GPS_FIX_NONE</a>, <a class="el" href="gps__ardrone2_8h_source.html#l00033">GPS_NB_CHANNELS</a>, <a class="el" href="gps_8h_source.html#l00067">GpsState::hmsl</a>, <a class="el" href="ins__xsens_8c_source.html#l00070">ins_ax</a>, <a class="el" href="ins__xsens_8c_source.html#l00071">ins_ay</a>, <a class="el" href="ins__xsens_8c_source.html#l00072">ins_az</a>, <a class="el" href="ins__module_8h_source.html#l00035">INS_FORMAT</a>, <a class="el" href="ins__xsens_8c_source.html#l00065">ins_p</a>, <a class="el" href="ins__xsens_8c_source.html#l00060">ins_phi</a>, <a class="el" href="ins__xsens_8c_source.html#l00062">ins_psi</a>, <a class="el" href="ins__xsens_8c_source.html#l00066">ins_q</a>, <a class="el" href="ins__xsens_8c_source.html#l00067">ins_r</a>, <a class="el" href="ins__xsens_8c_source.html#l00061">ins_theta</a>, <a class="el" href="ins__xsens_8c_source.html#l00055">ins_vx</a>, <a class="el" href="ins__xsens_8c_source.html#l00056">ins_vy</a>, <a class="el" href="ins__xsens_8c_source.html#l00057">ins_vz</a>, <a class="el" href="ins__module_8h_source.html#l00079">InsLink</a>, <a class="el" href="gps_8h_source.html#l00085">GpsState::last_3dfix_ticks</a>, <a class="el" href="gps_8h_source.html#l00086">GpsState::last_3dfix_time</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00054">LlaCoor_f::lat</a>, <a class="el" href="lpc21_2led__hw_8h_source.html#l00030">LED_TOGGLE</a>, <a class="el" href="ins__xsens700_8c_source.html#l00159">lla_f</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00053">LlaCoor_f::lon</a>, <a class="el" href="imu__chimu_8h_source.html#l00169">CHIMU_PARSER_DATA::m_attitude</a>, <a class="el" href="imu__chimu_8h_source.html#l00170">CHIMU_PARSER_DATA::m_attrates</a>, <a class="el" href="imu__chimu_8h_source.html#l00163">CHIMU_PARSER_DATA::m_MsgID</a>, <a class="el" href="imu__chimu_8h_source.html#l00171">CHIMU_PARSER_DATA::m_sensor</a>, <a class="el" href="common__flight__plan_8h_source.html#l00060">Min</a>, <a class="el" href="common__nav_8c_source.html#l00044">nav_utm_zone0</a>, <a class="el" href="gps_8h_source.html#l00082">GpsState::nb_channels</a>, <a class="el" href="sys__time_8h_source.html#l00069">sys_time::nb_sec</a>, <a class="el" href="sys__time_8h_source.html#l00070">sys_time::nb_sec_rem</a>, <a class="el" href="gps_8h_source.html#l00069">GpsState::ned_vel</a>, <a class="el" href="ins__module_8h.html#a664a8d539ee7893c78e101c06152fc18">new_ins_attitude</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00080">UtmCoor_f::north</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00082">UtmCoor_i::north</a>, <a class="el" href="gps_8h_source.html#l00077">GpsState::num_sv</a>, <a class="el" href="gps_8h_source.html#l00073">GpsState::pacc</a>, <a class="el" href="gps_8h_source.html#l00076">GpsState::pdop</a>, <a class="el" href="imu__chimu_8h_source.html#l00119">CHIMU_Euler::phi</a>, <a class="el" href="imu__chimu_8h_source.html#l00121">CHIMU_Euler::psi</a>, <a class="el" href="gps_8h_source.html#l00056">SVinfo::qi</a>, <a class="el" href="imu__chimu_8h_source.html#l00150">CHIMU_sensor_data::rate</a>, <a class="el" href="gps_8h_source.html#l00074">GpsState::sacc</a>, <a class="el" href="state_8h_source.html#l01062">stateSetBodyRates_f()</a>, <a class="el" href="state_8h_source.html#l00995">stateSetNedToBodyEulers_f()</a>, <a class="el" href="gps_8h_source.html#l00054">SVinfo::svid</a>, <a class="el" href="gps_8h_source.html#l00083">GpsState::svinfos</a>, <a class="el" href="imu__chimu_8h_source.html#l00120">CHIMU_Euler::theta</a>, <a class="el" href="gps_8h_source.html#l00080">GpsState::tow</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="ins__xsens700_8c_source.html#l00160">utm_f</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00257">utm_of_lla_f()</a>, <a class="el" href="gps_8h_source.html#l00066">GpsState::utm_pos</a>, <a class="el" href="gps_8h_source.html#l00079">GpsState::week</a>, <a class="el" href="pprz__geodetic__wgs84_8h_source.html#l00024">WGS84_ELLIPSOID_TO_GEOID</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00064">NedCoor_i::x</a>, <a class="el" href="ins__xsens_8c_source.html#l00191">xsens_declination</a>, <a class="el" href="ins__xsens_8c_source.html#l00184">xsens_errorcode</a>, <a class="el" href="ins__xsens_8c_source.html#l00192">xsens_gps_arm_x</a>, <a class="el" href="ins__xsens_8c_source.html#l00193">xsens_gps_arm_y</a>, <a class="el" href="ins__xsens_8c_source.html#l00194">xsens_gps_arm_z</a>, <a class="el" href="ins__xsens700_8c_source.html#l00152">xsens_id</a>, <a class="el" href="ins__xsens700_8c_source.html#l00154">xsens_len</a>, <a class="el" href="ins__xsens_8c_source.html#l00114">xsens_msg_buf</a>, <a class="el" href="ins__xsens700_8c_source.html#l00134">xsens_msg_statusword</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00065">NedCoor_i::y</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00066">NedCoor_i::z</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00083">UtmCoor_f::zone</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00085">UtmCoor_i::zone</a>.</p>
 
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__xsens700_8c_a8cb976f9e02352af6815c51a4b18faec_cgraph.png" border="0" usemap="#ins__xsens700_8c_a8cb976f9e02352af6815c51a4b18faec_cgraph" alt=""/></div>
 <map name="ins__xsens700_8c_a8cb976f9e02352af6815c51a4b18faec_cgraph" id="ins__xsens700_8c_a8cb976f9e02352af6815c51a4b18faec_cgraph">
-<area shape="rect" id="node3" href="imu__chimu_8c.html#a7ac39179eecc107f50d9730a179b1827" title="CHIMU_Parse" alt="" coords="205,55,312,83"/><area shape="rect" id="node13" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float)." alt="" coords="187,106,331,134"/><area shape="rect" id="node15" href="group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float)." alt="" coords="165,157,352,185"/><area shape="rect" id="node19" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="212,207,305,235"/><area shape="rect" id="node5" href="imu__chimu_8c.html#a18b09515aee60d52a79df0c4b05d934d" title="CHIMU_ProcessMessage" alt="" coords="401,30,575,58"/><area shape="rect" id="node11" href="imu__chimu_8c.html#a2c788af1398c314b3985546d7177df54" title="UpdateCRC" alt="" coords="443,81,533,109"/><area shape="rect" id="node7" href="imu__chimu_8c.html#acda06f9abeac46aac0c37fe9faafcb5f" title="BitTest" alt="" coords="661,5,725,33"/><area shape="rect" id="node9" href="imu__chimu_8c.html#aa0df1ea95e60894cb1747257da38f17f" title="GetEulersFromQuat" alt="" coords="625,55,761,83"/><area shape="rect" id="node17" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="413,157,563,185"/><area shape="rect" id="node21" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="421,207,555,235"/><area shape="rect" id="node23" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="427,258,549,302"/></map>
+<area shape="rect" id="node3" href="imu__chimu_8c.html#a7ac39179eecc107f50d9730a179b1827" title="CHIMU_Parse" alt="" coords="220,55,327,83"/><area shape="rect" id="node13" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float)." alt="" coords="196,106,351,134"/><area shape="rect" id="node15" href="group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float)." alt="" coords="175,157,372,185"/><area shape="rect" id="node19" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="224,207,323,235"/><area shape="rect" id="node5" href="imu__chimu_8c.html#a18b09515aee60d52a79df0c4b05d934d" title="CHIMU_ProcessMessage" alt="" coords="421,30,600,58"/><area shape="rect" id="node11" href="imu__chimu_8c.html#a2c788af1398c314b3985546d7177df54" title="UpdateCRC" alt="" coords="464,81,557,109"/><area shape="rect" id="node7" href="imu__chimu_8c.html#acda06f9abeac46aac0c37fe9faafcb5f" title="BitTest" alt="" coords="689,5,753,33"/><area shape="rect" id="node9" href="imu__chimu_8c.html#aa0df1ea95e60894cb1747257da38f17f" title="GetEulersFromQuat" alt="" coords="648,55,795,83"/><area shape="rect" id="node17" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float)." alt="" coords="429,157,592,185"/><area shape="rect" id="node21" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="437,207,584,235"/><area shape="rect" id="node23" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="443,258,579,302"/></map>
 </div>
 </p>
 
@@ -811,22 +625,41 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00189">189</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00220">220</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
-<p>References <a class="el" href="main__demo5_8c_source.html#l00054">foo</a>, and <a class="el" href="ins__xsens700_8c_source.html#l00109">XsensSend1ByAddr</a>.</p>
+<p>References <a class="el" href="main__demo5_8c_source.html#l00054">foo</a>, and <a class="el" href="ins__xsens700_8c_source.html#l00098">XsensSend1ByAddr</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00198">ins_periodic_task()</a>.</p>
-
-<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__xsens700_8c_ac3c716f124f5e6ec6161955d18aa8cde_icgraph.png" border="0" usemap="#ins__xsens700_8c_ac3c716f124f5e6ec6161955d18aa8cde_icgraph" alt=""/></div>
-<map name="ins__xsens700_8c_ac3c716f124f5e6ec6161955d18aa8cde_icgraph" id="ins__xsens700_8c_ac3c716f124f5e6ec6161955d18aa8cde_icgraph">
-<area shape="rect" id="node3" href="ins__xsens700_8c.html#a8dc6e488ca20854b1f96fb7a2933bbfe" title="ins_periodic_task" alt="" coords="227,5,349,33"/><area shape="rect" id="node5" href="ins__xsens700_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="imu_periodic" alt="" coords="399,5,492,33"/></map>
 </div>
-</p>
+<a class="anchor" id="a47f12136c89e8cc13ff45e72caab8a19"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xsens_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6345aa5f7a6fc2de9539539d91bf0cba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xsens_periodic </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -849,9 +682,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00167">167</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00156">156</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00532">parse_ins_buffer()</a>.</p>
+<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00575">parse_ins_buffer()</a>.</p>
 
 </div>
 </div>
@@ -865,7 +698,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00064">64</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00072">72</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 <p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00380">handle_ins_msg()</a>, and <a class="el" href="ins__xsens_8c_source.html#l00425">parse_ins_msg()</a>.</p>
 
@@ -881,7 +714,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00065">65</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00073">73</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 <p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00380">handle_ins_msg()</a>, and <a class="el" href="ins__xsens_8c_source.html#l00425">parse_ins_msg()</a>.</p>
 
@@ -897,7 +730,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00066">66</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00074">74</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 <p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00380">handle_ins_msg()</a>, and <a class="el" href="ins__xsens_8c_source.html#l00425">parse_ins_msg()</a>.</p>
 
@@ -913,7 +746,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00103">103</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00092">92</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 <p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00670">parse_ins_buffer()</a>.</p>
 
@@ -929,7 +762,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00068">68</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00077">77</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 <p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00380">handle_ins_msg()</a>, and <a class="el" href="ins__xsens_8c_source.html#l00425">parse_ins_msg()</a>.</p>
 
@@ -945,7 +778,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00069">69</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00078">78</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 <p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00380">handle_ins_msg()</a>, and <a class="el" href="ins__xsens_8c_source.html#l00425">parse_ins_msg()</a>.</p>
 
@@ -961,7 +794,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00070">70</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00079">79</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 <p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00380">handle_ins_msg()</a>, and <a class="el" href="ins__xsens_8c_source.html#l00425">parse_ins_msg()</a>.</p>
 
@@ -977,7 +810,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00060">60</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00067">67</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 <p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00380">handle_ins_msg()</a>, and <a class="el" href="ins__xsens_8c_source.html#l00425">parse_ins_msg()</a>.</p>
 
@@ -993,23 +826,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00056">56</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00062">62</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00270">handle_ins_msg()</a>, and <a class="el" href="ins__xsens_8c_source.html#l00425">parse_ins_msg()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac5803b6353ae28ae52ab9284d222d8d5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float ins_pitch_neutral</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00072">72</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00425">parse_ins_msg()</a>.</p>
 
 </div>
 </div>
@@ -1023,9 +842,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00058">58</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00064">64</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00270">handle_ins_msg()</a>, and <a class="el" href="ins__xsens_8c_source.html#l00425">parse_ins_msg()</a>.</p>
+<p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00425">parse_ins_msg()</a>.</p>
 
 </div>
 </div>
@@ -1039,7 +858,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00061">61</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00068">68</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 <p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00380">handle_ins_msg()</a>, and <a class="el" href="ins__xsens_8c_source.html#l00425">parse_ins_msg()</a>.</p>
 
@@ -1055,24 +874,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00062">62</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00069">69</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 <p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00380">handle_ins_msg()</a>, and <a class="el" href="ins__xsens_8c_source.html#l00425">parse_ins_msg()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a70b61a4232cbf0e9acbde8d9b62ce1c5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float ins_roll_neutral</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000028">Todo:</a></b></dt><dd>harmonize infrared neutrals with ins_neutrals or get rid of ins neutrals this ins only needed for sim right now </dd></dl>
-
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00073">73</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 </div>
 </div>
@@ -1086,9 +890,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00057">57</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00063">63</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00270">handle_ins_msg()</a>, and <a class="el" href="ins__xsens_8c_source.html#l00425">parse_ins_msg()</a>.</p>
+<p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00425">parse_ins_msg()</a>.</p>
 
 </div>
 </div>
@@ -1102,7 +906,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00052">52</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00057">57</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 <p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00380">handle_ins_msg()</a>, and <a class="el" href="ins__xsens_8c_source.html#l00425">parse_ins_msg()</a>.</p>
 
@@ -1118,7 +922,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00053">53</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00058">58</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 <p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00380">handle_ins_msg()</a>, and <a class="el" href="ins__xsens_8c_source.html#l00425">parse_ins_msg()</a>.</p>
 
@@ -1134,7 +938,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00054">54</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00059">59</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 <p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00380">handle_ins_msg()</a>, and <a class="el" href="ins__xsens_8c_source.html#l00425">parse_ins_msg()</a>.</p>
 
@@ -1150,7 +954,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00048">48</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00052">52</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 <p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00425">parse_ins_msg()</a>.</p>
 
@@ -1166,7 +970,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00049">49</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00053">53</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 <p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00425">parse_ins_msg()</a>.</p>
 
@@ -1182,7 +986,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00050">50</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00054">54</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 <p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00425">parse_ins_msg()</a>.</p>
 
@@ -1198,7 +1002,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00170">170</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00159">159</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 <p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00425">parse_ins_msg()</a>.</p>
 
@@ -1214,7 +1018,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00168">168</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00157">157</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 </div>
 </div>
@@ -1228,7 +1032,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00171">171</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00160">160</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 <p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00425">parse_ins_msg()</a>.</p>
 
@@ -1244,7 +1048,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00173">173</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00162">162</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 </div>
 </div>
@@ -1258,7 +1062,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00161">161</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00150">150</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 </div>
 </div>
@@ -1272,7 +1076,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00149">149</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00138">138</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 </div>
 </div>
@@ -1286,7 +1090,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00144">144</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00133">133</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 </div>
 </div>
@@ -1300,7 +1104,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00150">150</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00139">139</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 </div>
 </div>
@@ -1314,7 +1118,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00151">151</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00140">140</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 </div>
 </div>
@@ -1328,7 +1132,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00152">152</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00141">141</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 </div>
 </div>
@@ -1342,7 +1146,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00155">155</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00144">144</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 </div>
 </div>
@@ -1364,9 +1168,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00163">163</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00152">152</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00532">parse_ins_buffer()</a>, and <a class="el" href="ins__xsens700_8c_source.html#l00315">parse_ins_msg()</a>.</p>
+<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00575">parse_ins_buffer()</a>, and <a class="el" href="ins__xsens700_8c_source.html#l00354">parse_ins_msg()</a>.</p>
 
 </div>
 </div>
@@ -1388,9 +1192,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00165">165</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00154">154</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00532">parse_ins_buffer()</a>, and <a class="el" href="ins__xsens700_8c_source.html#l00315">parse_ins_msg()</a>.</p>
+<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00575">parse_ins_buffer()</a>, and <a class="el" href="ins__xsens700_8c_source.html#l00354">parse_ins_msg()</a>.</p>
 
 </div>
 </div>
@@ -1404,7 +1208,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00156">156</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00145">145</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 </div>
 </div>
@@ -1418,7 +1222,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00160">160</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00149">149</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 </div>
 </div>
@@ -1432,7 +1236,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00127">127</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00116">116</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 </div>
 </div>
@@ -1454,9 +1258,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00166">166</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00155">155</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00532">parse_ins_buffer()</a>.</p>
+<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00575">parse_ins_buffer()</a>.</p>
 
 </div>
 </div>
@@ -1470,9 +1274,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00145">145</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00134">134</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00175">ins_init()</a>, and <a class="el" href="ins__xsens700_8c_source.html#l00315">parse_ins_msg()</a>.</p>
+<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00354">parse_ins_msg()</a>.</p>
 
 </div>
 </div>
@@ -1486,7 +1290,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00158">158</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00147">147</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 </div>
 </div>
@@ -1500,7 +1304,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00147">147</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00136">136</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 </div>
 </div>
@@ -1514,7 +1318,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00148">148</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00137">137</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 </div>
 </div>
@@ -1528,7 +1332,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00157">157</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00146">146</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 </div>
 </div>
@@ -1550,9 +1354,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00164">164</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00153">153</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00175">ins_init()</a>, and <a class="el" href="ins__xsens700_8c_source.html#l00532">parse_ins_buffer()</a>.</p>
+<p>Referenced by <a class="el" href="ins__xsens700_8c_source.html#l00575">parse_ins_buffer()</a>.</p>
 
 </div>
 </div>
@@ -1566,7 +1370,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00146">146</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00135">135</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 </div>
 </div>
@@ -1580,7 +1384,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00159">159</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens700_8c_source.html#l00148">148</a> of file <a class="el" href="ins__xsens700_8c_source.html">ins_xsens700.c</a>.</p>
 
 </div>
 </div>
@@ -1590,7 +1394,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="ins__xsens700_8c.html">ins_xsens700.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:10 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:00 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

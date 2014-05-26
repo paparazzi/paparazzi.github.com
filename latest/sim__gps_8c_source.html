@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('sim__gps_8c_source.html','');});
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;caml/mlvalues.h&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="sim__gps_8c.html#a07f63734731109c0ed43e4f4dbcb98f2">   20</a></span>&#160;value <a class="code" href="jsbsim__gps_8c.html#a1e5ac4a144342a18c18f45efe6196698" title="From airborne/autopilot/.">sim_use_gps_pos</a>(value x, value y, value z, value <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>, value a, value s, value cl, value t, value m, value lat, value lon) {</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="sim__gps_8c.html#a07f63734731109c0ed43e4f4dbcb98f2">   20</a></span>&#160;value <a class="code" href="jsbsim__gps_8c.html#a1e5ac4a144342a18c18f45efe6196698" title="From airborne/autopilot/.">sim_use_gps_pos</a>(value x, value y, value z, value c, value a, value s, value cl, value t, value m, value lat, value lon) {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#afeffb02bdd18d27a87e96bb77175168f" title="status of fix">fix</a> = (Bool_val(m) ? 3 : 0);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#a3665e85487519aef462c0c44cb8e3b40" title="GPS course over ground in rad*1e7, [0, 2*Pi]*1e7 (CW/north)">course</a> = Double_val(c) * 1e7;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#a10af95f7fdab3171a789866838b0c8c3" title="height above mean sea level in mm">hmsl</a> = Double_val(a) * 1000.;</div>
@@ -179,7 +179,7 @@ $(document).ready(function(){initNavTree('sim__gps_8c_source.html','');});
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="comment">//gps_verbose_downlink = !launch;</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="comment">//gps_downlink();</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <a class="code" href="gps__sim_8c.html#a62a4a0f2fc32a105289eb2cf890a1e5d">gps_available</a> = <a class="code" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <a class="code" href="gps__datalink_8c.html#a62a4a0f2fc32a105289eb2cf890a1e5d" title="Is set to TRUE when a new REMOTE_GPS packet is received and parsed.">gps_available</a> = <a class="code" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordflow">return</span> Val_unit;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
@@ -200,7 +200,7 @@ $(document).ready(function(){initNavTree('sim__gps_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_c87a6d12365ead88e0b90ddbc1b3c9bb.html">sim</a></li><li class="navelem"><a class="el" href="sim__gps_8c.html">sim_gps.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:07 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:37 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

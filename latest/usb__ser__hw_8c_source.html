@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -234,7 +234,7 @@ $(document).ready(function(){initNavTree('usb__ser__hw_8c_source.html','');});
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keywordtype">void</span> <a class="code" href="usb__ser__hw_8c.html#a62c1c3a993bb7e76089279dd5bf6e206">fifo_init</a>(<a class="code" href="structfifo__t.html">fifo_t</a> *fifo, U8 *buf);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;BOOL <a class="code" href="usb__ser__hw_8c.html#a60cebaa767a05f06a7b66c751c12318a">fifo_put</a>(<a class="code" href="structfifo__t.html">fifo_t</a> *fifo, U8 <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;BOOL <a class="code" href="usb__ser__hw_8c.html#a60cebaa767a05f06a7b66c751c12318a">fifo_put</a>(<a class="code" href="structfifo__t.html">fifo_t</a> *fifo, U8 c);</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;BOOL <a class="code" href="usb__ser__hw_8c.html#ae9e700bbf9ad6ed809b2879eeda18417">fifo_get</a>(<a class="code" href="structfifo__t.html">fifo_t</a> *fifo, U8 *pc);</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keywordtype">int</span>  <a class="code" href="usb__ser__hw_8c.html#a14ec031da793cb08aa5e3e3b5d551431">fifo_avail</a>(<a class="code" href="structfifo__t.html">fifo_t</a> *fifo);</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keywordtype">int</span>  <a class="code" href="usb__ser__hw_8c.html#adfd6ebb4b8039e06d214b227db30e3b2">fifo_free</a>(<a class="code" href="structfifo__t.html">fifo_t</a> *fifo);</div>
@@ -361,7 +361,7 @@ $(document).ready(function(){initNavTree('usb__ser__hw_8c_source.html','');});
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  fifo-&gt;<a class="code" href="structfifo__t.html#a6179dabda649717df17b5a38dbf0d744">buf</a> = buf;</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;}</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;BOOL <a class="code" href="usb__ser__hw_8c.html#a60cebaa767a05f06a7b66c751c12318a">fifo_put</a>(<a class="code" href="structfifo__t.html">fifo_t</a> *fifo, U8 <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>)</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;BOOL <a class="code" href="usb__ser__hw_8c.html#a60cebaa767a05f06a7b66c751c12318a">fifo_put</a>(<a class="code" href="structfifo__t.html">fifo_t</a> *fifo, U8 c)</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;{</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  <span class="keywordtype">int</span> next;</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
@@ -372,7 +372,7 @@ $(document).ready(function(){initNavTree('usb__ser__hw_8c_source.html','');});
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  }</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  fifo-&gt;<a class="code" href="structfifo__t.html#a6179dabda649717df17b5a38dbf0d744">buf</a>[fifo-&gt;<a class="code" href="structfifo__t.html#ae93028e986799fceacecbd153729f855">head</a>] = <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  fifo-&gt;<a class="code" href="structfifo__t.html#a6179dabda649717df17b5a38dbf0d744">buf</a>[fifo-&gt;<a class="code" href="structfifo__t.html#ae93028e986799fceacecbd153729f855">head</a>] = c;</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  fifo-&gt;<a class="code" href="structfifo__t.html#ae93028e986799fceacecbd153729f855">head</a> = next;</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
@@ -459,13 +459,13 @@ $(document).ready(function(){initNavTree('usb__ser__hw_8c_source.html','');});
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    }</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="preprocessor">#ifdef USE_UART0</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="preprocessor">#if USE_UART0</span></div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="preprocessor"></span>    <a class="code" href="LPC21xx_8h.html#ac04af46e5aa3dc369e089dac159536d6">U0LCR</a> = <a class="code" href="lpcUART_8h.html#a75a5f63558ad3fbbdd4e29d500ee5f2d">ULCR_DLAB_ENABLE</a>;             <span class="comment">// select divisor latches</span></div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <a class="code" href="LPC21xx_8h.html#a2cbc2d5592327ef6365580a4e3add7f4">U0DLL</a> = (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>)baud;                <span class="comment">// set for baud low byte</span></div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <a class="code" href="LPC21xx_8h.html#a0c1e0ad22e8f1f03914b31d64a3fed7d">U0DLM</a> = (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>)(baud &gt;&gt; 8);         <span class="comment">// set for baud high byte</span></div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <a class="code" href="LPC21xx_8h.html#ac04af46e5aa3dc369e089dac159536d6">U0LCR</a> = (mode &amp; ~<a class="code" href="lpcUART_8h.html#a75a5f63558ad3fbbdd4e29d500ee5f2d">ULCR_DLAB_ENABLE</a>);</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifdef USE_UART1</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if USE_UART1</span></div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="preprocessor"></span>    <a class="code" href="LPC21xx_8h.html#ade2179d0137cbfe52c8195000c501b64">U1LCR</a> = <a class="code" href="lpcUART_8h.html#a75a5f63558ad3fbbdd4e29d500ee5f2d">ULCR_DLAB_ENABLE</a>;             <span class="comment">// select divisor latches</span></div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <a class="code" href="LPC21xx_8h.html#aa17272c4fef5bc599e67cbff87278bb2">U1DLL</a> = (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>)baud;                <span class="comment">// set for baud low byte</span></div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <a class="code" href="LPC21xx_8h.html#abe4a266871f6a8000cf8596527411bc4">U1DLM</a> = (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>)(baud &gt;&gt; 8);         <span class="comment">// set for baud high byte</span></div>
@@ -489,7 +489,7 @@ $(document).ready(function(){initNavTree('usb__ser__hw_8c_source.html','');});
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="keywordtype">int</span> <a class="code" href="usb__serial_8h.html#a184633f63ad351d8e70857d9e5ba4a3e">VCOM_getchar</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;{</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;  <span class="keywordtype">int</span> result;</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;  U8 <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>;</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;  U8 c;</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;  result = <a class="code" href="usb__ser__hw_8c.html#ae9e700bbf9ad6ed809b2879eeda18417">fifo_get</a>(&amp;rxfifo, &amp;c) ? c : <a class="code" href="usb__ser__hw_8c.html#a59adc4c82490d23754cd39c2fb99b0da">EOF</a>;</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;</div>
@@ -662,7 +662,7 @@ $(document).ready(function(){initNavTree('usb__ser__hw_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_3f7617cb4a5e4fe5cc816b7b3bbdea3a.html">lpc21</a></li><li class="navelem"><a class="el" href="usb__ser__hw_8c.html">usb_ser_hw.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:07 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:37 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

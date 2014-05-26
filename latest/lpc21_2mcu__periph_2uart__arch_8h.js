@@ -26,5 +26,6 @@ var lpc21_2mcu__periph_2uart__arch_8h =
     [ "UART_FIFO_14", "lpc21_2mcu__periph_2uart__arch_8h.html#ab30064c2e8bf2501cf5e309a5af3c1f8", null ],
     [ "UART_FIFO_4", "lpc21_2mcu__periph_2uart__arch_8h.html#a3e8f913e7f5a8dc764fe0725a44674d8", null ],
     [ "UART_FIFO_8", "lpc21_2mcu__periph_2uart__arch_8h.html#ad3b4cfbf066b1b31f3ffd060131384c5", null ],
-    [ "UART_FIFO_OFF", "lpc21_2mcu__periph_2uart__arch_8h.html#adec9cdf6007cdd8e07d76f7b879797d0", null ]
+    [ "UART_FIFO_OFF", "lpc21_2mcu__periph_2uart__arch_8h.html#adec9cdf6007cdd8e07d76f7b879797d0", null ],
+    [ "UART_SPEED", "lpc21_2mcu__periph_2uart__arch_8h.html#ac9378c8432472f49ced54ebd148d7af1", null ]
 ];

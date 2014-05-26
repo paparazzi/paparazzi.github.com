@@ -1,30 +1,32 @@
 <map id="cam_periodic" name="cam_periodic">
-<area shape="rect" id="node3" href="$cam_8c.html#a7e228da24201c997a297f7c49bffa74c" title="cam_ac_target" alt="" coords="172,111,279,139"/>
-<area shape="rect" id="node5" href="$cam_8c.html#aab3da8ed719ee01699f50450b3df3b13" title="Computes the right angles from target_x, target_y, target_alt." alt="" coords="349,213,435,241"/>
-<area shape="rect" id="node53" href="$cam_8c.html#a38adb5d1136278301352a4a57e463045" title="Computes the servo values from cam_pan_c and cam_tilt_c." alt="" coords="537,314,628,342"/>
-<area shape="rect" id="node58" href="$cam_8c.html#aa5c7c762b35b57ec479e6244f006c5d1" title="Point straight down." alt="" coords="184,263,267,291"/>
-<area shape="rect" id="node63" href="$cam_8c.html#a91c2133236e62688f7acfe1ab9fe2f11" title="cam_waypoint_target" alt="" coords="153,162,297,190"/>
-<area shape="rect" id="node55" href="$traffic__info_8c.html#a7e85d322af164f27094da0f8aca67b21" title="get_ac_info" alt="" coords="348,111,436,139"/>
-<area shape="rect" id="node7" href="$point_8c.html#a3317a3a368f54d6c89acfbbaa49b4ed2" title="vPoint" alt="" coords="553,81,612,109"/>
-<area shape="rect" id="node19" href="$group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float)." alt="" coords="507,263,659,291"/>
-<area shape="rect" id="node43" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="489,158,676,186"/>
-<area shape="rect" id="node49" href="$group__state__velocity.html#gaf16409f23300380a2a5a84cb77f5305a" title="Get dir of horizontal ground speed (float)." alt="" coords="485,213,680,241"/>
-<area shape="rect" id="node9" href="$point_8c.html#a553fdfb308cb850023076e6a58842796" title="vSubtractVectors" alt="" coords="753,55,876,83"/>
-<area shape="rect" id="node11" href="$point_8c.html#a0e392f07c1bc4a72fa292c1fb98fbffe" title="vMultiplyMatrixByVector" alt="" coords="735,106,895,134"/>
-<area shape="rect" id="node13" href="$pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title="lla_of_utm_f" alt="" coords="768,5,861,33"/>
-<area shape="rect" id="node15" href="$pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title="inverse_isometric_latitude_f" alt="" coords="949,55,1133,83"/>
-<area shape="rect" id="node17" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1189,51,1312,95"/>
-<area shape="rect" id="node21" href="$group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title="stateCalcPositionEnu_f" alt="" coords="736,274,893,302"/>
-<area shape="rect" id="node23" href="$pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1181,325,1320,353"/>
-<area shape="rect" id="node25" href="$pprz__geodetic__int_8c.html#a710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="976,223,1107,251"/>
-<area shape="rect" id="node29" href="$pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title="enu_of_lla_point_f" alt="" coords="979,274,1104,302"/>
-<area shape="rect" id="node34" href="$pprz__geodetic__int_8c.html#a386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="995,375,1088,403"/>
-<area shape="rect" id="node38" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="995,173,1088,201"/>
-<area shape="rect" id="node27" href="$pprz__geodetic__int_8c.html#a85bcbfc73a43b120465422ec55647573" title="enu_of_ecef_point_i" alt="" coords="1181,223,1320,251"/>
-<area shape="rect" id="node31" href="$pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1203,274,1299,302"/>
-<area shape="rect" id="node36" href="$pprz__geodetic__double_8c.html#a33dae600eb50aea456b6cdbeec53c849" title="ecef_of_lla_d" alt="" coords="1201,375,1300,403"/>
-<area shape="rect" id="node40" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1184,173,1317,201"/>
-<area shape="rect" id="node45" href="$group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="740,157,889,185"/>
-<area shape="rect" id="node47" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="964,122,1119,150"/>
-<area shape="rect" id="node51" href="$group__state__velocity.html#gad9b7b6ea39d5a4ee3e824f97204c4bb5" title="stateCalcHorizontalSpeed\lDir_f" alt="" coords="729,207,900,251"/>
+<area shape="rect" id="node3" href="$cam_8c.html#a7e228da24201c997a297f7c49bffa74c" title="cam_ac_target" alt="" coords="181,173,299,201"/>
+<area shape="rect" id="node5" href="$cam_8c.html#aab3da8ed719ee01699f50450b3df3b13" title="Computes the right angles from target_x, target_y, target_alt." alt="" coords="368,249,464,277"/>
+<area shape="rect" id="node58" href="$cam_8c.html#a38adb5d1136278301352a4a57e463045" title="Computes the servo values from cam_pan_c and cam_tilt_c." alt="" coords="569,375,668,403"/>
+<area shape="rect" id="node63" href="$cam_8c.html#aa5c7c762b35b57ec479e6244f006c5d1" title="Point straight down." alt="" coords="196,325,284,353"/>
+<area shape="rect" id="node68" href="$cam_8c.html#a91c2133236e62688f7acfe1ab9fe2f11" title="cam_waypoint_target" alt="" coords="161,223,319,251"/>
+<area shape="rect" id="node60" href="$traffic__info_8c.html#a7e85d322af164f27094da0f8aca67b21" title="get_ac_info" alt="" coords="369,173,463,201"/>
+<area shape="rect" id="node7" href="$point_8c.html#a3317a3a368f54d6c89acfbbaa49b4ed2" title="vPoint" alt="" coords="588,147,649,175"/>
+<area shape="rect" id="node19" href="$group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float)." alt="" coords="537,325,700,353"/>
+<area shape="rect" id="node43" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="520,223,717,251"/>
+<area shape="rect" id="node49" href="$group__state__position.html#ga7488f3b1e3afa9515541c0130278bdac" title="Get position in UTM coordinates (float)." alt="" coords="536,274,701,302"/>
+<area shape="rect" id="node54" href="$group__state__velocity.html#gaf16409f23300380a2a5a84cb77f5305a" title="Get dir of horizontal ground speed (float)." alt="" coords="512,67,725,95"/>
+<area shape="rect" id="node9" href="$point_8c.html#a553fdfb308cb850023076e6a58842796" title="vSubtractVectors" alt="" coords="803,173,933,201"/>
+<area shape="rect" id="node11" href="$point_8c.html#a0e392f07c1bc4a72fa292c1fb98fbffe" title="vMultiplyMatrixByVector" alt="" coords="781,122,955,150"/>
+<area shape="rect" id="node13" href="$pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title="lla_of_utm_f" alt="" coords="819,71,917,99"/>
+<area shape="rect" id="node15" href="$pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title="inverse_isometric_latitude_f" alt="" coords="1011,122,1211,150"/>
+<area shape="rect" id="node17" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1265,129,1401,173"/>
+<area shape="rect" id="node21" href="$group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title="stateCalcPositionEnu_f" alt="" coords="785,350,951,378"/>
+<area shape="rect" id="node23" href="$pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1259,362,1408,390"/>
+<area shape="rect" id="node25" href="$pprz__geodetic__int_8c.html#a710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="1041,463,1180,491"/>
+<area shape="rect" id="node29" href="$pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title="enu_of_lla_point_f" alt="" coords="1043,311,1179,339"/>
+<area shape="rect" id="node34" href="$pprz__geodetic__int_8c.html#a386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="1061,413,1160,441"/>
+<area shape="rect" id="node38" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="1061,261,1160,289"/>
+<area shape="rect" id="node27" href="$pprz__geodetic__int_8c.html#a85bcbfc73a43b120465422ec55647573" title="enu_of_ecef_point_i" alt="" coords="1260,463,1407,491"/>
+<area shape="rect" id="node31" href="$pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1284,311,1383,339"/>
+<area shape="rect" id="node36" href="$pprz__geodetic__double_8c.html#a33dae600eb50aea456b6cdbeec53c849" title="ecef_of_lla_d" alt="" coords="1281,413,1385,441"/>
+<area shape="rect" id="node40" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1260,261,1407,289"/>
+<area shape="rect" id="node45" href="$group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="787,223,949,251"/>
+<area shape="rect" id="node47" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="1027,210,1195,238"/>
+<area shape="rect" id="node51" href="$group__state__position.html#ga6893f5e3d84e0464d2bc6fc86a08f16d" title="stateCalcPositionUtm_f" alt="" coords="783,274,953,302"/>
+<area shape="rect" id="node56" href="$group__state__velocity.html#gad9b7b6ea39d5a4ee3e824f97204c4bb5" title="stateCalcHorizontalSpeed\lDir_f" alt="" coords="775,5,961,49"/>
 </map>

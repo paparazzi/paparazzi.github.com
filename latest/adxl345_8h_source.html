@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('adxl345_8h_source.html','');});
 <div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="structAdxl345Config.html#a3ddf6d2e394d53c1d7e329fcf9565f80">   53</a></span>&#160;  <span class="keyword">enum</span> <a class="code" href="adxl345__regs_8h.html#a746dd7df1b3e0f992547870f19047133" title="Selectable data rates in ADXL345_REG_BW_RATE bandwith is always half of data rate.">Adxl345Rates</a> <a class="code" href="structAdxl345Config.html#a3ddf6d2e394d53c1d7e329fcf9565f80" title="Data Output Rate.">rate</a>;   </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="code" href="adxl345_8h.html#a5e8e2514332efd14ec188331fba0b6fc">   56</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="adxl345_8h.html#a5e8e2514332efd14ec188331fba0b6fc">adxl345_set_default_config</a>(<span class="keyword">struct</span> <a class="code" href="structAdxl345Config.html">Adxl345Config</a> *<a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>)</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="code" href="adxl345_8h.html#a5e8e2514332efd14ec188331fba0b6fc">   56</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="adxl345_8h.html#a5e8e2514332efd14ec188331fba0b6fc">adxl345_set_default_config</a>(<span class="keyword">struct</span> <a class="code" href="structAdxl345Config.html">Adxl345Config</a> *c)</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  c-&gt;<a class="code" href="structAdxl345Config.html#a9afc67ca469a7b354835c24b28137621" title="Enable Data Ready Interrupt.">drdy_int_enable</a> = <a class="code" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  c-&gt;<a class="code" href="structAdxl345Config.html#a7756303adffbd4db9544cf913c6ecba9" title="Invert Interrupt FALSE: active high, TRUE: active low.">int_invert</a> = <a class="code" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
@@ -169,7 +169,7 @@ $(document).ready(function(){initNavTree('adxl345_8h_source.html','');});
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  c-&gt;<a class="code" href="structAdxl345Config.html#a6ee5db11ac7e24698803d3f5b1ec54fb" title="g Range">range</a> = <a class="code" href="adxl345__regs_8h.html#abc3494afc65a86812ed33040266ce16fae5641dd5b58e2fdb7018903fb9c4e21b">ADXL345_RANGE_16G</a>;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="code" href="adxl345_8h.html#ac6863633d46c7db4982eb0f78fec8a3f">   69</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="adxl345_8h.html#ac6863633d46c7db4982eb0f78fec8a3f">adxl345_data_format</a>(<span class="keyword">struct</span> <a class="code" href="structAdxl345Config.html">Adxl345Config</a> *<a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>)</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="code" href="adxl345_8h.html#ac6863633d46c7db4982eb0f78fec8a3f">   69</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="adxl345_8h.html#ac6863633d46c7db4982eb0f78fec8a3f">adxl345_data_format</a>(<span class="keyword">struct</span> <a class="code" href="structAdxl345Config.html">Adxl345Config</a> *c)</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordflow">return</span> ((c-&gt;<a class="code" href="structAdxl345Config.html#a19f562fcf746acc8bd51174d449f3b57" title="Enable self-test-force causing shift in output data.">self_test</a> &lt;&lt; 7) | (c-&gt;<a class="code" href="structAdxl345Config.html#a0921e7a8940b21c3a8d9109e02c12174" title="Set 3-wire SPI mode, if FALSE: 4-wire SPI mode.">spi_3_wire</a> &lt;&lt; 6) | (c-&gt;<a class="code" href="structAdxl345Config.html#a7756303adffbd4db9544cf913c6ecba9" title="Invert Interrupt FALSE: active high, TRUE: active low.">int_invert</a> &lt;&lt; 5) |</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;          (c-&gt;<a class="code" href="structAdxl345Config.html#aae40365094e01152c5638a51caa2c52e" title="Full Resolution: FALSE: 10bit, TRUE: full with 4mg/LSB.">full_res</a> &lt;&lt; 3) | (c-&gt;<a class="code" href="structAdxl345Config.html#a6359097c27eff4791d327c4cf2934877" title="justify: FALSE: right with sign-extension, TRUE: MSB (left)">justify_msb</a> &lt;&lt; 2) | (c-&gt;<a class="code" href="structAdxl345Config.html#a6ee5db11ac7e24698803d3f5b1ec54fb" title="g Range">range</a>));</div>
@@ -182,7 +182,7 @@ $(document).ready(function(){initNavTree('adxl345_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="adxl345_8h.html">adxl345.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:43 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

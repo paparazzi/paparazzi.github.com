@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -248,9 +248,6 @@ $(document).ready(function(){initNavTree('globals_defs_0x76.html','');});
 <li>VCOM_FIFO_SIZE
 : <a class="el" href="usb__ser__hw_8c.html#a8c7c58c5dba905e6348263134f6b4fbd">usb_ser_hw.c</a>
 </li>
-<li>VEC_CALC
-: <a class="el" href="poly__survey__adv_8c.html#a71ed542a396be2d70a62c277c0982f6c">poly_survey_adv.c</a>
-</li>
 <li>VECT2_ADD
 : <a class="el" href="pprz__algebra_8h.html#a032fb9e1e6734e83934ab3dc49306abf">pprz_algebra.h</a>
 </li>
@@ -262,6 +259,9 @@ $(document).ready(function(){initNavTree('globals_defs_0x76.html','');});
 </li>
 <li>VECT2_DIFF
 : <a class="el" href="pprz__algebra_8h.html#a3f3302835b5631d50ea560180ebf7e59">pprz_algebra.h</a>
+</li>
+<li>VECT2_DOT_PRODUCT
+: <a class="el" href="pprz__algebra_8h.html#aeeb5ad240f0b23da9e8372059bbef5b3">pprz_algebra.h</a>
 </li>
 <li>VECT2_SDIV
 : <a class="el" href="pprz__algebra_8h.html#a8c085b8a08dc01ca2728946f371e6d2e">pprz_algebra.h</a>
@@ -308,6 +308,9 @@ $(document).ready(function(){initNavTree('globals_defs_0x76.html','');});
 <li>VECT3_DIFF
 : <a class="el" href="pprz__algebra_8h.html#acb026b0d08a603ca3e47f977cf4ce4df">pprz_algebra.h</a>
 </li>
+<li>VECT3_DOT_PRODUCT
+: <a class="el" href="pprz__algebra_8h.html#a4623a4cd2e533b72c27b05b47d5a16c6">pprz_algebra.h</a>
+</li>
 <li>VECT3_ENU_OF_NED
 : <a class="el" href="pprz__geodetic__int_8h.html#aad3bc5d0d188cef75df495af6eadfb5b">pprz_geodetic_int.h</a>
 </li>
@@ -316,6 +319,9 @@ $(document).ready(function(){initNavTree('globals_defs_0x76.html','');});
 </li>
 <li>VECT3_EW_MUL
 : <a class="el" href="pprz__algebra_8h.html#a10fd7e22809c6302d9ef0e1c60b4dac6">pprz_algebra.h</a>
+</li>
+<li>VECT3_MUL
+: <a class="el" href="pprz__algebra_8h.html#ad297c0811be5259606cfb996a072eac8">pprz_algebra.h</a>
 </li>
 <li>VECT3_NED_OF_ENU
 : <a class="el" href="pprz__geodetic__int_8h.html#aaf18a0e7d4f29a9e55c0428d1adb0a2d">pprz_geodetic_int.h</a>
@@ -368,72 +374,6 @@ $(document).ready(function(){initNavTree('globals_defs_0x76.html','');});
 <li>VFF_STATE_SIZE
 : <a class="el" href="vf__extended__float_8h.html#a18723b10d465c48b447ad96b46f8a25b">vf_extended_float.h</a>
 , <a class="el" href="vf__float_8h.html#a18723b10d465c48b447ad96b46f8a25b">vf_float.h</a>
-</li>
-<li>VFI_ACCEL_NOISE
-: <a class="el" href="vf__int_8c.html#affdce61fde23e986795a226e11225d10">vf_int.c</a>
-</li>
-<li>VFI_BIAS_FRAC
-: <a class="el" href="vf__int_8h.html#a9a2ed1a0ae002149efa5a3e62d4a6bb9">vf_int.h</a>
-</li>
-<li>VFI_DT
-: <a class="el" href="vf__int_8c.html#a0be06874c78ee98c98051dfb439a0415">vf_int.c</a>
-</li>
-<li>VFI_DT2_2
-: <a class="el" href="vf__int_8c.html#ad700a9756789ca4c87d163b7b8bc4835">vf_int.c</a>
-</li>
-<li>VFI_F_UPDATE
-: <a class="el" href="vf__int_8h.html#aec73c9e2090ae1255201f5d64a4d4afa">vf_int.h</a>
-</li>
-<li>VFI_F_UPDATE_FRAC
-: <a class="el" href="vf__int_8h.html#ae2b689301ca063b9caa29bcdbd4281e3">vf_int.h</a>
-</li>
-<li>VFI_INIT_PABAB
-: <a class="el" href="vf__int_8c.html#a1b1cf31b23b581501b75fc4cd2473042">vf_int.c</a>
-</li>
-<li>VFI_INIT_PZDZD
-: <a class="el" href="vf__int_8c.html#a261c8061ad86f79dfdda267475af2062">vf_int.c</a>
-</li>
-<li>VFI_INIT_PZZ
-: <a class="el" href="vf__int_8c.html#a9935dcb65ef33167b9210141c56d7bba">vf_int.c</a>
-</li>
-<li>VFI_P_FRAC
-: <a class="el" href="vf__int_8h.html#a4e11f707967b0a313a69a8c64b439f2a">vf_int.h</a>
-</li>
-<li>VFI_QABAB
-: <a class="el" href="vf__int_8c.html#a6ca0cc1efbf5a1232c7085e4320f6d8b">vf_int.c</a>
-</li>
-<li>VFI_QZDZD
-: <a class="el" href="vf__int_8c.html#a9cc82192341f2783b4765ffc7a617225">vf_int.c</a>
-</li>
-<li>VFI_QZZ
-: <a class="el" href="vf__int_8c.html#a7d24b3d5dd4c757018ecd9db64c5f60f">vf_int.c</a>
-</li>
-<li>VFI_R
-: <a class="el" href="vf__int_8c.html#a09e6021ab82a537b3f2d024921e34dac">vf_int.c</a>
-</li>
-<li>VFI_S_AB
-: <a class="el" href="vf__int_8h.html#a60e0abddafe51142d611e39894d8fbe5">vf_int.h</a>
-</li>
-<li>VFI_S_SIZE
-: <a class="el" href="vf__int_8h.html#ae67c81535da2a6e5938264b25b374f66">vf_int.h</a>
-</li>
-<li>VFI_S_Z
-: <a class="el" href="vf__int_8h.html#a04d0df59989720fc082be465f05af7fa">vf_int.h</a>
-</li>
-<li>VFI_S_ZD
-: <a class="el" href="vf__int_8h.html#ae876aeab13444658d77909d613532500">vf_int.h</a>
-</li>
-<li>VFI_Z_FRAC
-: <a class="el" href="vf__int_8h.html#a26d0153cc04ab10fccbd6bbed04fadb2">vf_int.h</a>
-</li>
-<li>VFI_Z_MEAS_FRAC
-: <a class="el" href="vf__int_8h.html#a9fd732634eb8c12f90971970bb8e6dee">vf_int.h</a>
-</li>
-<li>VFI_ZD_FRAC
-: <a class="el" href="vf__int_8h.html#a2da9f4a853e1887e4a77d7aabffd6ace">vf_int.h</a>
-</li>
-<li>VFI_ZDD_FRAC
-: <a class="el" href="vf__int_8h.html#ae29abe9736fbd7cdc301727ba5e92019">vf_int.h</a>
 </li>
 <li>VI_LIMIT_ATTITUDE
 : <a class="el" href="vi__datalink_8h.html#ab7b9d8a66f7451fa55c9c665d26d98fc">vi_datalink.h</a>
@@ -1131,7 +1071,7 @@ $(document).ready(function(){initNavTree('globals_defs_0x76.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:14 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:23 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

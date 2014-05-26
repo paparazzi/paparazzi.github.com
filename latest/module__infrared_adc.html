@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -108,13 +108,14 @@ Module configuration options</h1>
 <h2><a class="anchor" id="configure"></a>
 Configure Options</h2>
 <ul>
-<li><b>name:</b> <code>ADC_IR1</code> <b>value:</b> <em>ADCX</em> <br/>
+<li><b>name:</b> <code>ADC_IR1</code> <b>value:</b> <em>ADC_1</em> <br/>
  Description: ADC for IR horizontal channel 1</li>
-<li><b>name:</b> <code>ADC_IR2</code> <b>value:</b> <em>ADCX</em> <br/>
+<li><b>name:</b> <code>ADC_IR2</code> <b>value:</b> <em>ADC_2</em> <br/>
  Description: ADC for IR horizontal channel 2</li>
-<li><b>name:</b> <code>ADC_IR_TOP</code> <b>value:</b> <em>ADCX</em> <br/>
+<li><b>name:</b> <code>ADC_IR_TOP</code> <b>value:</b> <em>ADC_0</em> <br/>
  Description: ADC for IR vertical channel</li>
-<li><b>name:</b> <code>ADC_IR_NB_SAMPLES</code> <b>value:</b> <em>nb samples</em></li>
+<li><b>name:</b> <code>ADC_IR_NB_SAMPLES</code> <b>value:</b> <em>16</em> <br/>
+ Description: number of samples</li>
 </ul>
 <h1><a class="anchor" id="functions"></a>
 Module functions</h1>
@@ -156,15 +157,15 @@ Raw infrared_adc.xml file:</h2>
 <div class="line">&lt;module name=<span class="stringliteral">&quot;ir_adc&quot;</span> dir=<span class="stringliteral">&quot;sensors&quot;</span>&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;<a class="code" href="structInfrared.html" title="Infrared structure.">Infrared</a> sensor <span class="keyword">using</span> ADC&lt;/description&gt;</div>
-<div class="line">    &lt;configure name=<span class="stringliteral">&quot;ADC_IR1&quot;</span> value=<span class="stringliteral">&quot;ADCX&quot;</span> description=<span class="stringliteral">&quot;ADC for IR horizontal channel 1&quot;</span>/&gt;</div>
-<div class="line">    &lt;configure name=<span class="stringliteral">&quot;ADC_IR2&quot;</span> value=<span class="stringliteral">&quot;ADCX&quot;</span> description=<span class="stringliteral">&quot;ADC for IR horizontal channel 2&quot;</span>/&gt;</div>
-<div class="line">    &lt;configure name=<span class="stringliteral">&quot;ADC_IR_TOP&quot;</span> value=<span class="stringliteral">&quot;ADCX&quot;</span> description=<span class="stringliteral">&quot;ADC for IR vertical channel&quot;</span>/&gt;</div>
-<div class="line">    &lt;configure name=<span class="stringliteral">&quot;ADC_IR_NB_SAMPLES&quot;</span> value=<span class="stringliteral">&quot;nb samples&quot;</span>/&gt;</div>
+<div class="line">    &lt;configure name=<span class="stringliteral">&quot;ADC_IR1&quot;</span> value=<span class="stringliteral">&quot;ADC_1&quot;</span> description=<span class="stringliteral">&quot;ADC for IR horizontal channel 1&quot;</span>/&gt;</div>
+<div class="line">    &lt;configure name=<span class="stringliteral">&quot;ADC_IR2&quot;</span> value=<span class="stringliteral">&quot;ADC_2&quot;</span> description=<span class="stringliteral">&quot;ADC for IR horizontal channel 2&quot;</span>/&gt;</div>
+<div class="line">    &lt;configure name=<span class="stringliteral">&quot;ADC_IR_TOP&quot;</span> value=<span class="stringliteral">&quot;ADC_0&quot;</span> description=<span class="stringliteral">&quot;ADC for IR vertical channel&quot;</span>/&gt;</div>
+<div class="line">    &lt;configure name=<span class="stringliteral">&quot;ADC_IR_NB_SAMPLES&quot;</span> value=<span class="stringliteral">&quot;16&quot;</span> description=<span class="stringliteral">&quot;number of samples&quot;</span>/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;infrared_adc.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
-<div class="line">  &lt;<a class="code" href="gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;infrared_adc_init()&quot;</span>/&gt;</div>
+<div class="line">  &lt;<a class="code" href="nav__gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;infrared_adc_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;periodic fun=<span class="stringliteral">&quot;infrared_adc_update()&quot;</span> freq=<span class="stringliteral">&quot;60.&quot;</span>/&gt;</div>
 <div class="line">  &lt;makefile target=<span class="stringliteral">&quot;ap|sim|jsbsim&quot;</span>&gt;</div>
 <div class="line">    &lt;define name=<span class="stringliteral">&quot;USE_INFRARED_TELEMETRY&quot;</span>/&gt;</div>
@@ -173,24 +174,14 @@ Raw infrared_adc.xml file:</h2>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">  &lt;makefile target=<span class="stringliteral">&quot;ap&quot;</span>&gt;</div>
 <div class="line">    &lt;raw&gt;</div>
-<div class="line"><span class="preprocessor">#</span></div>
-<div class="line"><span class="preprocessor"></span><span class="preprocessor"># LPC only has one ADC</span></div>
-<div class="line"><span class="preprocessor"></span><span class="preprocessor">#</span></div>
-<div class="line"><span class="preprocessor"></span>ifeq ($(ARCH), lpc21)</div>
+<div class="line">ADC_IR_TOP ?= <a class="code" href="booz__1_80_8h.html#a5cbcaa568e20fcd4cc9325927d370860">ADC_0</a></div>
+<div class="line">ADC_IR1 ?= <a class="code" href="booz__1_80_8h.html#a3d767e16f12a6ee542079f3c9677192c">ADC_1</a></div>
+<div class="line">ADC_IR2 ?= <a class="code" href="booz__1_80_8h.html#a01ac9d2f00660408bcc8c809020904f9">ADC_2</a></div>
+<div class="line">ADC_IR_NB_SAMPLES ?= 16</div>
+<div class="line"></div>
 <div class="line">ap.CFLAGS += -DADC_CHANNEL_IR1=$(ADC_IR1) -DUSE_$(ADC_IR1)</div>
 <div class="line">ap.CFLAGS += -DADC_CHANNEL_IR2=$(ADC_IR2) -DUSE_$(ADC_IR2)</div>
 <div class="line">ap.CFLAGS += -DADC_CHANNEL_IR_TOP=$(ADC_IR_TOP) -DUSE_$(ADC_IR_TOP)</div>
-<div class="line">endif</div>
-<div class="line"></div>
-<div class="line"><span class="preprocessor">#</span></div>
-<div class="line"><span class="preprocessor"></span><span class="preprocessor"># On STM32 let&#39;s hardwire infrared sensors to AD1 for now</span></div>
-<div class="line"><span class="preprocessor"></span><span class="preprocessor">#</span></div>
-<div class="line"><span class="preprocessor"></span>ifeq ($(ARCH), stm32)</div>
-<div class="line">ap.CFLAGS += -DUSE_AD1</div>
-<div class="line">ap.CFLAGS += -DADC_CHANNEL_IR1=$(ADC_IR1_CHAN) -DUSE_AD1_$(ADC_IR1)</div>
-<div class="line">ap.CFLAGS += -DADC_CHANNEL_IR2=$(ADC_IR2_CHAN) -DUSE_AD1_$(ADC_IR2)</div>
-<div class="line">ap.CFLAGS += -DADC_CHANNEL_IR_TOP=$(ADC_IR_TOP_CHAN) -DUSE_AD1_$(ADC_IR_TOP)</div>
-<div class="line">endif</div>
 <div class="line"></div>
 <div class="line">ap.CFLAGS += -DADC_CHANNEL_IR_NB_SAMPLES=$(ADC_IR_NB_SAMPLES)</div>
 <div class="line">    &lt;/raw&gt;</div>
@@ -204,7 +195,7 @@ Raw infrared_adc.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:12 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:10 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

@@ -7,6 +7,8 @@ var dir_6567a5a7be991f15b7628b3b0eb084bd =
     [ "downlink_transport.h", "downlink__transport_8h.html", "downlink__transport_8h" ],
     [ "pprz_transport.c", "pprz__transport_8c.html", "pprz__transport_8c" ],
     [ "pprz_transport.h", "pprz__transport_8h.html", "pprz__transport_8h" ],
+    [ "pprzlog_transport.c", "pprzlog__transport_8c.html", "pprzlog__transport_8c" ],
+    [ "pprzlog_transport.h", "pprzlog__transport_8h.html", "pprzlog__transport_8h" ],
     [ "superbitrf.c", "superbitrf_8c.html", "superbitrf_8c" ],
     [ "superbitrf.h", "superbitrf_8h.html", "superbitrf_8h" ],
     [ "telemetry.c", "telemetry_8c.html", "telemetry_8c" ],

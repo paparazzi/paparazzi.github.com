@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -86,7 +86,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
-      <li><a href="globals_vars.html#index_a"><span>a</span></a></li>
+      <li><a href="globals_vars.html#index__"><span>_</span></a></li>
+      <li><a href="globals_vars_0x61.html#index_a"><span>a</span></a></li>
       <li><a href="globals_vars_0x62.html#index_b"><span>b</span></a></li>
       <li><a href="globals_vars_0x63.html#index_c"><span>c</span></a></li>
       <li class="current"><a href="globals_vars_0x64.html#index_d"><span>d</span></a></li>
@@ -154,7 +155,7 @@ $(document).ready(function(){initNavTree('globals_vars_0x64.html','');});
 : <a class="el" href="baro__MS5534A_8c.html#a46cfce8e9a54660edadd981d32e3df0f">baro_MS5534A.c</a>
 </li>
 <li>d_radius
-: <a class="el" href="snav_8c.html#aad9cde020f86248f197056a4abedbff2">snav.c</a>
+: <a class="el" href="nav__smooth_8c.html#aad9cde020f86248f197056a4abedbff2">nav_smooth.c</a>
 </li>
 <li>data_chk
 : <a class="el" href="imu__um6_8c.html#a004d9fd363b52aa0d92a3b14d366180f">imu_um6.c</a>
@@ -240,8 +241,7 @@ $(document).ready(function(){initNavTree('globals_vars_0x64.html','');});
 , <a class="el" href="dc_8h.html#ad1ba6719aa52188ab3d0102b3214608d">dc.h</a>
 </li>
 <li>dc_timer
-: <a class="el" href="led__cam__ctrl_8c.html#adaa2e99fa0592d3507c02a961b71d532">led_cam_ctrl.c</a>
-, <a class="el" href="led__cam__ctrl_8h.html#adaa2e99fa0592d3507c02a961b71d532">led_cam_ctrl.h</a>
+: <a class="el" href="gpio__cam__ctrl_8c.html#adaa2e99fa0592d3507c02a961b71d532">gpio_cam_ctrl.c</a>
 , <a class="el" href="servo__cam__ctrl_8c.html#adaa2e99fa0592d3507c02a961b71d532">servo_cam_ctrl.c</a>
 , <a class="el" href="servo__cam__ctrl_8h.html#adaa2e99fa0592d3507c02a961b71d532">servo_cam_ctrl.h</a>
 </li>
@@ -263,14 +263,13 @@ $(document).ready(function(){initNavTree('globals_vars_0x64.html','');});
 <li>dest
 : <a class="el" href="w5100_8c.html#a1933bb767999546a3e2e6dfd20363641">w5100.c</a>
 </li>
-<li>dir_vec
-: <a class="el" href="poly__survey__adv_8c.html#a3e38b4d7c8bb1c72fa2a5129337d4060">poly_survey_adv.c</a>
-</li>
-<li>direction
-: <a class="el" href="test__board_8c.html#abc576eb3bad3371177d1402d7a772be7">test_board.c</a>
+<li>disc_survey
+: <a class="el" href="nav__survey__disc_8c.html#a5626fa655f367ae1fdf3ead964f8932a">nav_survey_disc.c</a>
 </li>
 <li>dist2_to_home
-: <a class="el" href="common__nav_8c.html#aaa0755e7078e30953f14178d3dcd90ee">common_nav.c</a>
+: <a class="el" href="navigation_8c.html#aaa0755e7078e30953f14178d3dcd90ee">navigation.c</a>
+, <a class="el" href="navigation_8h.html#aaa0755e7078e30953f14178d3dcd90ee">navigation.h</a>
+, <a class="el" href="common__nav_8c.html#aaa0755e7078e30953f14178d3dcd90ee">common_nav.c</a>
 , <a class="el" href="common__nav_8h.html#aaa0755e7078e30953f14178d3dcd90ee">common_nav.h</a>
 </li>
 <li>dist2_to_wp
@@ -278,8 +277,7 @@ $(document).ready(function(){initNavTree('globals_vars_0x64.html','');});
 , <a class="el" href="common__nav_8h.html#a1ea7c4cd1046a57c3444b89a1dce6250">common_nav.h</a>
 </li>
 <li>DistanceFromCenter
-: <a class="el" href="OSAMNav_8c.html#a6327730ac29ad3556b8ccb0380b8b368">OSAMNav.c</a>
-, <a class="el" href="spiral_8c.html#a6327730ac29ad3556b8ccb0380b8b368">spiral.c</a>
+: <a class="el" href="nav__flower_8c.html#a6327730ac29ad3556b8ccb0380b8b368">nav_flower.c</a>
 </li>
 <li>distancefromrail
 : <a class="el" href="cartography_8c.html#ae9888b63ebf545f6b2b02fde49d3a247">cartography.c</a>
@@ -291,8 +289,8 @@ $(document).ready(function(){initNavTree('globals_vars_0x64.html','');});
 : <a class="el" href="cartography_8c.html#a33c448c868700ca3cb8a7e7acff318f2">cartography.c</a>
 </li>
 <li>distrailinteractif
-: <a class="el" href="cartography_8h.html#ad41720fc7db0f6da6ddab02fc85609f9">cartography.h</a>
-, <a class="el" href="cartography_8c.html#ad41720fc7db0f6da6ddab02fc85609f9">cartography.c</a>
+: <a class="el" href="cartography_8c.html#ad41720fc7db0f6da6ddab02fc85609f9">cartography.c</a>
+, <a class="el" href="cartography_8h.html#ad41720fc7db0f6da6ddab02fc85609f9">cartography.h</a>
 </li>
 <li>dl_buffer
 : <a class="el" href="datalink_8h.html#a29f10b8efb77aba1854cd7b57497b5d5">datalink.h</a>
@@ -302,30 +300,21 @@ $(document).ready(function(){initNavTree('globals_vars_0x64.html','');});
 : <a class="el" href="main__demo5_8c.html#a5da8932586e81510ec4b202a0d0abacd">main_demo5.c</a>
 , <a class="el" href="datalink_8h.html#a6d1aa46a515e17fda85b489f96d0a3d9">datalink.h</a>
 </li>
-<li>dma_rx_buf
-: <a class="el" href="lisa__test__adxl345__dma_8c.html#a786c2c9cb859677db86b71efe2fa58dc">lisa_test_adxl345_dma.c</a>
-</li>
-<li>dma_tx_buf
-: <a class="el" href="lisa__test__adxl345__dma_8c.html#a3491e4b6639386063c95420363dd317b">lisa_test_adxl345_dma.c</a>
-</li>
 <li>dn
-: <a class="el" href="light__solar_8c.html#aca7d0671f027071758d544dd2008cd2c">light_solar.c</a>
-, <a class="el" href="light__solar_8h.html#aca7d0671f027071758d544dd2008cd2c">light_solar.h</a>
+: <a class="el" href="light__solar_8h.html#aca7d0671f027071758d544dd2008cd2c">light_solar.h</a>
+, <a class="el" href="light__solar_8c.html#aca7d0671f027071758d544dd2008cd2c">light_solar.c</a>
 </li>
 <li>downlink_nb_bytes
 : <a class="el" href="downlink_8c.html#a3dc15efb9fbdc8dc20740e0ab0ee10ba">downlink.c</a>
 , <a class="el" href="downlink_8h.html#a3dc15efb9fbdc8dc20740e0ab0ee10ba">downlink.h</a>
 </li>
 <li>downlink_nb_msgs
-: <a class="el" href="downlink_8c.html#a1982c205bdc9bfcb6b465d7554bd91ea">downlink.c</a>
-, <a class="el" href="downlink_8h.html#a1982c205bdc9bfcb6b465d7554bd91ea">downlink.h</a>
+: <a class="el" href="downlink_8h.html#a1982c205bdc9bfcb6b465d7554bd91ea">downlink.h</a>
+, <a class="el" href="downlink_8c.html#a1982c205bdc9bfcb6b465d7554bd91ea">downlink.c</a>
 </li>
 <li>downlink_nb_ovrn
 : <a class="el" href="downlink_8h.html#a9a2f87e6be6b5a90741eec74d18a10ff">downlink.h</a>
 , <a class="el" href="downlink_8c.html#a9a2f87e6be6b5a90741eec74d18a10ff">downlink.c</a>
-</li>
-<li>downwind_altitude
-: <a class="el" href="bomb_8h.html#ab25dd440eeac20e95e80bbb899816aea">bomb.h</a>
 </li>
 <li>dpicco_humid
 : <a class="el" href="humid__dpicco_8c.html#ab64952001108c919639688798891aeb5">humid_dpicco.c</a>
@@ -344,18 +333,21 @@ $(document).ready(function(){initNavTree('globals_vars_0x64.html','');});
 : <a class="el" href="w5100_8c.html#a505d2ef52cf63a10ae2ed61dbd4a9fb3">w5100.c</a>
 </li>
 <li>dSweep
-: <a class="el" href="OSAMNav_8c.html#ab41811d2b47b265883fa04775fde9636">OSAMNav.c</a>
+: <a class="el" href="nav__survey__poly__osam_8c.html#ab41811d2b47b265883fa04775fde9636">nav_survey_poly_osam.c</a>
+</li>
+<li>dt
+: <a class="el" href="ins__float__invariant_8c.html#a0ef9f3f97ee5db39da6a134c1f4aab3c">ins_float_invariant.c</a>
 </li>
 <li>dt_attidude
 : <a class="el" href="energy__ctrl_8c.html#a92567b7b8fe7a0f723ddcee5d30c5d13">energy_ctrl.c</a>
 </li>
 <li>dt_navigation
-: <a class="el" href="mission__fw__nav_8c.html#a92032860fee41019bb05444dec447451">mission_fw_nav.c</a>
-, <a class="el" href="energy__ctrl_8c.html#a92032860fee41019bb05444dec447451">energy_ctrl.c</a>
+: <a class="el" href="energy__ctrl_8c.html#a92032860fee41019bb05444dec447451">energy_ctrl.c</a>
+, <a class="el" href="mission__fw__nav_8c.html#a92032860fee41019bb05444dec447451">mission_fw_nav.c</a>
 </li>
 <li>dust_gp2y_density
-: <a class="el" href="dust__gp2y_8h.html#adb392a107b3921a036fa19806e50f66d">dust_gp2y.h</a>
-, <a class="el" href="dust__gp2y_8c.html#adb392a107b3921a036fa19806e50f66d">dust_gp2y.c</a>
+: <a class="el" href="dust__gp2y_8c.html#adb392a107b3921a036fa19806e50f66d">dust_gp2y.c</a>
+, <a class="el" href="dust__gp2y_8h.html#adb392a107b3921a036fa19806e50f66d">dust_gp2y.h</a>
 </li>
 <li>dust_gp2y_density_f
 : <a class="el" href="dust__gp2y_8h.html#a1760922e794a13871c9bfd259c150fc7">dust_gp2y.h</a>
@@ -371,7 +363,7 @@ $(document).ready(function(){initNavTree('globals_vars_0x64.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:14 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:23 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

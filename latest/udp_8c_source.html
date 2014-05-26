@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -176,38 +176,39 @@ $(document).ready(function(){initNavTree('udp_8c_source.html','');});
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="comment">//Read from the network</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  network_read(<a class="code" href="udp_8c.html#a199d2086045a1d9b1c638cd44e0a5509">network</a>, <a class="code" href="udp_8c.html#a579ef874440a6b93a341fcc2e2c93252">udp_read_buffer</a>, <a class="code" href="transport_8h.html#a90f854efbacd1ba7e52f9922f17f7223">TRANSPORT_PAYLOAD_LEN</a>);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="comment">//Parse the packet</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="udp_8c.html#a579ef874440a6b93a341fcc2e2c93252">udp_read_buffer</a>[0] == <a class="code" href="pprz__transport_8h.html#aacd744a917e61146ec8b7175b4761683">STX</a>) {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> size = <a class="code" href="udp_8c.html#a579ef874440a6b93a341fcc2e2c93252">udp_read_buffer</a>[1]-4; <span class="comment">// minus STX, LENGTH, CK_A, CK_B</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ck_aa, ck_bb;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    ck_aa = ck_bb = size+4;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// index-offset plus 2 for STX and LENGTH</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 2; i &lt; size+2; i++) {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <a class="code" href="main__demo5_8c.html#a41ca1f0c42c768e235066d83071b1ed9">dl_buffer</a>[i-2] = <a class="code" href="udp_8c.html#a579ef874440a6b93a341fcc2e2c93252">udp_read_buffer</a>[i];</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      ck_aa += <a class="code" href="udp_8c.html#a579ef874440a6b93a341fcc2e2c93252">udp_read_buffer</a>[i];</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      ck_bb += ck_aa;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">// if both checksums are good, tell datalink that the message is available</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="udp_8c.html#a579ef874440a6b93a341fcc2e2c93252">udp_read_buffer</a>[2+size] == ck_aa &amp;&amp; <a class="code" href="udp_8c.html#a579ef874440a6b93a341fcc2e2c93252">udp_read_buffer</a>[2+size+1] == ck_bb) {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <a class="code" href="main__demo5_8c.html#a5da8932586e81510ec4b202a0d0abacd">dl_msg_available</a> = <a class="code" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> read = network_read(<a class="code" href="udp_8c.html#a199d2086045a1d9b1c638cd44e0a5509">network</a>, <a class="code" href="udp_8c.html#a579ef874440a6b93a341fcc2e2c93252">udp_read_buffer</a>, <a class="code" href="transport_8h.html#a90f854efbacd1ba7e52f9922f17f7223">TRANSPORT_PAYLOAD_LEN</a>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordflow">if</span>(read &gt; 0) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">//Parse the packet</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="udp_8c.html#a579ef874440a6b93a341fcc2e2c93252">udp_read_buffer</a>[0] == <a class="code" href="pprz__transport_8h.html#aacd744a917e61146ec8b7175b4761683">STX</a>) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> size = <a class="code" href="udp_8c.html#a579ef874440a6b93a341fcc2e2c93252">udp_read_buffer</a>[1]-4; <span class="comment">// minus STX, LENGTH, CK_A, CK_B</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ck_aa, ck_bb;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      ck_aa = ck_bb = size+4;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="comment">// index-offset plus 2 for STX and LENGTH</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 2; i &lt; size+2; i++) {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="main__demo5_8c.html#a41ca1f0c42c768e235066d83071b1ed9">dl_buffer</a>[i-2] = <a class="code" href="udp_8c.html#a579ef874440a6b93a341fcc2e2c93252">udp_read_buffer</a>[i];</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        ck_aa += <a class="code" href="udp_8c.html#a579ef874440a6b93a341fcc2e2c93252">udp_read_buffer</a>[i];</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        ck_bb += ck_aa;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <span class="comment">// if both checksums are good, tell datalink that the message is available</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="udp_8c.html#a579ef874440a6b93a341fcc2e2c93252">udp_read_buffer</a>[2+size] == ck_aa &amp;&amp; <a class="code" href="udp_8c.html#a579ef874440a6b93a341fcc2e2c93252">udp_read_buffer</a>[2+size+1] == ck_bb) {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="main__demo5_8c.html#a5da8932586e81510ec4b202a0d0abacd">dl_msg_available</a> = <a class="code" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  memset(&amp;<a class="code" href="udp_8c.html#a579ef874440a6b93a341fcc2e2c93252">udp_read_buffer</a>[0], 0, <span class="keyword">sizeof</span>(<a class="code" href="udp_8c.html#a579ef874440a6b93a341fcc2e2c93252">udp_read_buffer</a>));</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    memset(&amp;<a class="code" href="udp_8c.html#a579ef874440a6b93a341fcc2e2c93252">udp_read_buffer</a>[0], 0, <span class="keyword">sizeof</span>(<a class="code" href="udp_8c.html#a579ef874440a6b93a341fcc2e2c93252">udp_read_buffer</a>));</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_6567a5a7be991f15b7628b3b0eb084bd.html">datalink</a></li><li class="navelem"><a class="el" href="udp_8c.html">udp.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:45 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

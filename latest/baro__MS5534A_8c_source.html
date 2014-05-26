@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('baro__MS5534A_8c_source.html','');});
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="downlink_8h.html" title="Common code for AP and FBW telemetry.">subsystems/datalink/downlink.h</a>&quot;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="abi_8h.html" title="Main include for ABI (AirBorneInterface).">subsystems/abi.h</a>&quot;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="nav_8h.html" title="Fixedwing Navigation library.">subsystems/nav.h</a>&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="nav_8h.html" title="Fixedwing Navigation library.">firmwares/fixedwing/nav.h</a>&quot;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="state_8h.html" title="API to get/set the generic vehicle states.">state.h</a>&quot;</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
@@ -362,7 +362,7 @@ $(document).ready(function(){initNavTree('baro__MS5534A_8c_source.html','');});
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <a class="code" href="baro__MS5534A_8c.html#a09c949d7892f5002fbd9624a616de846">baro_MS5534A_event_task</a>();</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="baro__MS5534A_8c.html#ac282a66f97101959b4845a0531a334c6">baro_MS5534A_available</a>) {</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;      <a class="code" href="baro__MS5534A_8c.html#ac282a66f97101959b4845a0531a334c6">baro_MS5534A_available</a> = <a class="code" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;      <a class="code" href="baro__MS5534A_8c.html#a1ae668459a11f180e706ac89bc4c6be5">baro_MS5534A_z</a> = <a class="code" href="navigation_8c.html#ab21c78d7a323ace0bcca84fc0be63cb2" title="size == nb_waypoint, waypoint 0 is a dummy waypoint">ground_alt</a> +((float)<a class="code" href="baro__MS5534A_8c.html#af3da06ba0ea0b37b2a18eb14449677e5">baro_MS5534A_ground_pressure</a> - <a class="code" href="baro__MS5534A_8c.html#a7169f211f94cc4ea2f0d00897375bb16">baro_MS5534A_pressure</a>)*0.084;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;      <a class="code" href="baro__MS5534A_8c.html#a1ae668459a11f180e706ac89bc4c6be5">baro_MS5534A_z</a> = <a class="code" href="navigation_8c.html#ab21c78d7a323ace0bcca84fc0be63cb2" title="ground reference altitude in meters &lt;&lt; INT32_POS_FRAC">ground_alt</a> +((float)<a class="code" href="baro__MS5534A_8c.html#af3da06ba0ea0b37b2a18eb14449677e5">baro_MS5534A_ground_pressure</a> - <a class="code" href="baro__MS5534A_8c.html#a7169f211f94cc4ea2f0d00897375bb16">baro_MS5534A_pressure</a>)*0.084;</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor">#if SENSO_SYNC_SEND</span></div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="preprocessor"></span>      DOWNLINK_SEND_BARO_MS5534A(<a class="code" href="downlink_8h.html#a891b19a3eba08208d4e550aa6c6188dd" title="SITL.">DefaultChannel</a>, <a class="code" href="downlink_8h.html#a028b405f95cecb4af565b17c8ee71d80">DefaultDevice</a>, &amp;<a class="code" href="baro__MS5534A_8c.html#a7169f211f94cc4ea2f0d00897375bb16">baro_MS5534A_pressure</a>, &amp;<a class="code" href="baro__MS5534A_8c.html#a1f0c02ec3b23951f1163b62e62c80183">baro_MS5534A_temp</a>, &amp;<a class="code" href="baro__MS5534A_8c.html#a1ae668459a11f180e706ac89bc4c6be5">baro_MS5534A_z</a>);</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -377,7 +377,7 @@ $(document).ready(function(){initNavTree('baro__MS5534A_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="baro__MS5534A_8c.html">baro_MS5534A.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:43 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

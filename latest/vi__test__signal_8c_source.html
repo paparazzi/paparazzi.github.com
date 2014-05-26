@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -176,7 +176,7 @@ $(document).ready(function(){initNavTree('vi__test__signal_8c_source.html','');}
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#if 0</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">case</span> BOOZ_FMS_TEST_SIGNAL_MODE_VERTICAL: {</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="rotorcraft_2guidance_2guidance__v_8c.html#a09896d1671aacfd563071566b7562fc1">guidance_v_mode</a> &lt; <a class="code" href="rotorcraft_2guidance_2guidance__v_8h.html#ad9ee5da48b80fa2cd7db8d79af0e185a">GUIDANCE_V_MODE_HOVER</a>)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      booz_fms_test_signal_start_z = <a class="code" href="ins__ardrone2_8c.html#a320642c5df6a92862df286877c7d238a" title="global INS state">ins_impl</a>.<a class="code" href="structInsArdrone2.html#aebf8607620f7e19d2bcf57584b4aea2a">ltp_pos</a>.<a class="code" href="structNedCoor__i.html#a52586e90ccb7aa5f0960bcb480bfcaa3" title="Down.">z</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      booz_fms_test_signal_start_z = <a class="code" href="ins__alt__float_8c.html#adc2d9583c7b10b920500e2eb179ac924" title="global INS state">ins_impl</a>.ltp_pos.z;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      booz_fms_input.v_sp.height = (booz_fms_test_signal_counter &lt; booz_fms_test_signal_period) ?</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  booz_fms_test_signal_start_z :</div>
@@ -202,7 +202,7 @@ $(document).ready(function(){initNavTree('vi__test__signal_8c_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_372c0c9a1fec4794716fe8f0e2a7607d.html">vehicle_interface</a></li><li class="navelem"><a class="el" href="vi__test__signal_8c.html">vi_test_signal.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:43 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

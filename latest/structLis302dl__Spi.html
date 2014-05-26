@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('structLis302dl__Spi.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structLis302dl__Spi__coll__graph.png" border="0" usemap="#Lis302dl__Spi_coll__map" alt="Collaboration graph"/></div>
 <map name="Lis302dl__Spi_coll__map" id="Lis302dl__Spi_coll__map">
-<area shape="rect" id="node2" href="structLis302dlConfig.html" title="Lis302dlConfig" alt="" coords="5,102,112,130"/><area shape="rect" id="node4" href="structInt8Vect3.html" title="Int8Vect3" alt="" coords="136,102,213,130"/><area shape="rect" id="node6" href="structspi__transaction.html" title="SPI transaction structure." alt="" coords="248,7,357,35"/><area shape="rect" id="node9" href="structspi__periph.html" title="spi_periph" alt="" coords="343,102,423,130"/></map>
+<area shape="rect" id="node2" href="structLis302dlConfig.html" title="Lis302dlConfig" alt="" coords="5,102,120,130"/><area shape="rect" id="node4" href="structInt8Vect3.html" title="Int8Vect3" alt="" coords="144,102,227,130"/><area shape="rect" id="node6" href="structspi__transaction.html" title="SPI transaction structure." alt="" coords="259,7,376,35"/><area shape="rect" id="node9" href="structspi__periph.html" title="SPI peripheral structure." alt="" coords="361,102,447,130"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-attribs"></a>
@@ -134,12 +134,12 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:a81d1f4db4676f97df4ef2b81424b17d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">config done flag  <a href="#a81d1f4db4676f97df4ef2b81424b17d9"></a><br/></td></tr>
 <tr class="memitem:a236750da147692ae694965669a4cc240"><td class="memItemLeft" align="right" valign="top">volatile bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLis302dl__Spi.html#a236750da147692ae694965669a4cc240">data_available</a></td></tr>
 <tr class="memdesc:a236750da147692ae694965669a4cc240"><td class="mdescLeft">&#160;</td><td class="mdescRight">data ready flag  <a href="#a236750da147692ae694965669a4cc240"></a><br/></td></tr>
-<tr class="memitem:a830b5579ef73065ca4142b8c4b4480e9"><td class="memItemLeft" >union {</td></tr>
-<tr class="memitem:ad9ae77aa1bb1d6a2922bfaa732781e1f"><td class="memItemLeft" >&#160;&#160;&#160;struct <a class="el" href="structInt8Vect3.html">Int8Vect3</a>&#160;&#160;&#160;<a class="el" href="structLis302dl__Spi.html#a7e4b13ff829b35ab8589a9ef5219b1c7">vect</a></td></tr>
-<tr class="memdesc:ad9ae77aa1bb1d6a2922bfaa732781e1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">data vector in accel coordinate system  <a href="#ad9ae77aa1bb1d6a2922bfaa732781e1f"></a><br/></td></tr>
-<tr class="memitem:a0f4e228c09d5ff4c797c42b110392702"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;&#160;&#160;<a class="el" href="structLis302dl__Spi.html#ad5c4445bea4fea7c8fc16a5534593bec">value</a> [3]</td></tr>
-<tr class="memdesc:a0f4e228c09d5ff4c797c42b110392702"><td class="mdescLeft">&#160;</td><td class="mdescRight">data values accessible by channel index  <a href="#a0f4e228c09d5ff4c797c42b110392702"></a><br/></td></tr>
-<tr class="memitem:a830b5579ef73065ca4142b8c4b4480e9"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLis302dl__Spi.html#a830b5579ef73065ca4142b8c4b4480e9">data</a></td></tr>
+<tr class="memitem:a2a33a15ad725a2ce7e473c4584add6a1"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:abe343fd30a319506b45acd9506766aab"><td class="memItemLeft" >&#160;&#160;&#160;struct <a class="el" href="structInt8Vect3.html">Int8Vect3</a>&#160;&#160;&#160;<a class="el" href="structLis302dl__Spi.html#a7e4b13ff829b35ab8589a9ef5219b1c7">vect</a></td></tr>
+<tr class="memdesc:abe343fd30a319506b45acd9506766aab"><td class="mdescLeft">&#160;</td><td class="mdescRight">data vector in accel coordinate system  <a href="#abe343fd30a319506b45acd9506766aab"></a><br/></td></tr>
+<tr class="memitem:a231faafa456632308040b68bb478f552"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;&#160;&#160;<a class="el" href="structLis302dl__Spi.html#ad5c4445bea4fea7c8fc16a5534593bec">value</a> [3]</td></tr>
+<tr class="memdesc:a231faafa456632308040b68bb478f552"><td class="mdescLeft">&#160;</td><td class="mdescRight">data values accessible by channel index  <a href="#a231faafa456632308040b68bb478f552"></a><br/></td></tr>
+<tr class="memitem:a2a33a15ad725a2ce7e473c4584add6a1"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLis302dl__Spi.html#a2a33a15ad725a2ce7e473c4584add6a1">data</a></td></tr>
 <tr class="memitem:aa81037d166efd26a319348f8f41f669c"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structLis302dlConfig.html">Lis302dlConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLis302dl__Spi.html#aa81037d166efd26a319348f8f41f669c">config</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
@@ -162,7 +162,7 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a830b5579ef73065ca4142b8c4b4480e9"></a>
+<a class="anchor" id="a2a33a15ad725a2ce7e473c4584add6a1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -337,7 +337,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structLis302dl__Spi.html">Lis302dl_Spi</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:12 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:14 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

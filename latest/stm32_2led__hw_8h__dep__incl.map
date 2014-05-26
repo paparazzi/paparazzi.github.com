@@ -1,3 +1,51 @@
 <map id="sw/airborne/arch/stm32/led_hw.h" name="sw/airborne/arch/stm32/led_hw.h">
-<area shape="rect" id="node3" href="$actuators__ardrone2__raw_8c.html" title="Actuator driver for ardrone2&#45;raw version." alt="" coords="5,99,227,143"/>
+<area shape="rect" id="node3" href="$actuators__ardrone2__raw_8c.html" title="Actuator driver for ardrone2&#45;raw version." alt="" coords="2513,286,2758,330"/>
+<area shape="rect" id="node5" href="$led_8h.html" title="arch independent LED (Light Emitting Diodes) API" alt="" coords="4457,99,4587,127"/>
+<area shape="rect" id="node7" href="$ADS8344_8c.html" title="sw/airborne/arch/lpc21\l/ADS8344.c" alt="" coords="31,185,197,229"/>
+<area shape="rect" id="node9" href="$icp__scale_8h.html" title="sw/airborne/arch/lpc21\l/icp_scale.h" alt="" coords="221,185,386,229"/>
+<area shape="rect" id="node11" href="$spi__slave__hs__arch_8c.html" title="Highspeed SPI Slave Interface." alt="" coords="410,177,575,237"/>
+<area shape="rect" id="node13" href="$lcd__dogm__hw_8h.html" title="sw/airborne/arch/lpc21\l/modules/display/lcd_dogm_hw.h" alt="" coords="599,185,829,229"/>
+<area shape="rect" id="node15" href="$mag__micromag__fw__hw_8c.html" title="sw/airborne/arch/lpc21\l/modules/sensors/mag_micromag\l_fw_hw.c" alt="" coords="853,177,1093,237"/>
+<area shape="rect" id="node17" href="$lpc21_2uart__tunnel_8c.html" title="sw/airborne/arch/lpc21\l/uart_tunnel.c" alt="" coords="1117,185,1282,229"/>
+<area shape="rect" id="node19" href="$usb__tunnel_8c.html" title="USB tunnel application." alt="" coords="1306,185,1471,229"/>
+<area shape="rect" id="node21" href="$stm32_2led__hw_8c.html" title="sw/airborne/arch/stm32\l/led_hw.c" alt="" coords="1495,185,1666,229"/>
+<area shape="rect" id="node23" href="$stm32_2mcu__periph_2adc__arch_8c.html" title="Driver for the analog to digital converters on STM32." alt="" coords="1690,185,1863,229"/>
+<area shape="rect" id="node25" href="$can__arch_8c.html" title="Handling of CAN hardware for STM32." alt="" coords="1887,185,2061,229"/>
+<area shape="rect" id="node27" href="$stm32_2uart__tunnel_8c.html" title="sw/airborne/arch/stm32\l/uart_tunnel.c" alt="" coords="2085,185,2255,229"/>
+<area shape="rect" id="node29" href="$apogee_2baro__board_8c.html" title="integrated barometer for Apogee boards (mpl3115)" alt="" coords="2279,185,2442,229"/>
+<area shape="rect" id="node31" href="$imu__apogee_8c.html" title="Driver for the IMU on the Apogee board." alt="" coords="2466,185,2634,229"/>
+<area shape="rect" id="node33" href="$baro__board__ms5611__i2c_8c.html" title="Driver for onboard MS5611 baro via I2C." alt="" coords="2658,185,2853,229"/>
+<area shape="rect" id="node35" href="$baro__board__ms5611__spi_8c.html" title="Driver for onboard MS5611 baro via SPI." alt="" coords="2877,185,3071,229"/>
+<area shape="rect" id="node37" href="$booz_2baro__board_8c.html" title="sw/airborne/boards\l/booz/baro_board.c" alt="" coords="3095,185,3239,229"/>
+<area shape="rect" id="node39" href="$imu__krooz_8c.html" title="Driver for the IMU on the KroozSD board." alt="" coords="3263,185,3405,229"/>
+<area shape="rect" id="node41" href="$imu__krooz__memsic_8c.html" title="Driver for the IMU on the KroozSD Big Rotorcraft Edition board." alt="" coords="3429,185,3629,229"/>
+<area shape="rect" id="node43" href="$lisa__l_2baro__board_8c.html" title="sw/airborne/boards\l/lisa_l/baro_board.c" alt="" coords="3653,185,3797,229"/>
+<area shape="rect" id="node45" href="$lisa__m_2baro__board_8c.html" title="Baro board interface for Bosch BMP085 on LisaM I2C2 with EOC check." alt="" coords="3821,185,3975,229"/>
+<area shape="rect" id="node47" href="$navgo_2baro__board_8c.html" title="sw/airborne/boards\l/navgo/baro_board.c" alt="" coords="3999,185,4151,229"/>
+<area shape="rect" id="node49" href="$imu__navgo_8c.html" title="Driver for the IMU on the NavGo board." alt="" coords="4175,185,4325,229"/>
+<area shape="rect" id="node51" href="$umarim_2baro__board_8c.html" title="sw/airborne/boards\l/umarim/baro_board.c" alt="" coords="4349,185,4511,229"/>
+<area shape="rect" id="node53" href="$main__ap_8c.html" title="AP ( AutoPilot ) tasks." alt="" coords="4535,185,4695,229"/>
+<area shape="rect" id="node55" href="$main__chibios__libopencm3_8c.html" title="sw/airborne/firmwares\l/fixedwing/main_chibios\l_libopencm3.c" alt="" coords="4719,177,4890,237"/>
+<area shape="rect" id="node57" href="$stabilization__adaptive_8c.html" title="Fixed wing horizontal adaptive control." alt="" coords="4914,177,5087,237"/>
+<area shape="rect" id="node59" href="$stabilization__attitude_8c.html" title="Fixed wing horizontal control." alt="" coords="5111,177,5282,237"/>
+<area shape="rect" id="node61" href="$rotorcraft_2autopilot_8h.html" title="Autopilot modes." alt="" coords="5306,185,5466,229"/>
+<area shape="rect" id="node64" href="$rotorcraft_2main_8c.html" title="Rotorcraft main loop." alt="" coords="5365,286,5525,330"/>
+<area shape="rect" id="node66" href="$rotorcraft_2datalink_8c.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="5541,185,5701,229"/>
+<area shape="rect" id="node69" href="$setup__actuators_8c.html" title="sw/airborne/firmwares\l/setup/setup_actuators.c" alt="" coords="5725,185,5906,229"/>
+<area shape="rect" id="node71" href="$main__demo2_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo2.c" alt="" coords="5930,185,6101,229"/>
+<area shape="rect" id="node73" href="$main__demo3_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo3.c" alt="" coords="6125,185,6295,229"/>
+<area shape="rect" id="node75" href="$main__demo4_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo4.c" alt="" coords="6319,185,6490,229"/>
+<area shape="rect" id="node77" href="$main__demo5_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo5.c" alt="" coords="6514,185,6685,229"/>
+<area shape="rect" id="node79" href="$main__demo6_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo6.c" alt="" coords="6709,185,6879,229"/>
+<area shape="rect" id="node81" href="$link__mcu__usart_8c.html" title="sw/airborne/link_mcu\l_usart.c" alt="" coords="6903,185,7058,229"/>
+<area shape="rect" id="node83" href="$lisa__stm__gps__passthrough__main_8c.html" title="sw/airborne/lisa/lisa\l_stm_gps_passthrough\l_main.c" alt="" coords="7082,177,7253,237"/>
+<area shape="rect" id="node85" href="$stm__test__spi__link_8c.html" title="sw/airborne/lisa/stm\l_test_spi_link.c" alt="" coords="7277,185,7426,229"/>
+<area shape="rect" id="node87" href="$max11040_8c.html" title="Maxim MAX11040 ADC hw interface." alt="" coords="7450,185,7605,229"/>
+<area shape="rect" id="node89" href="$bat__checker_8c.html" title="Activate a buzzer/LED periodically or periodically to warn of low/critical battery level..." alt="" coords="7629,185,7823,229"/>
+<area shape="rect" id="node91" href="$i2c__abuse__test_8c.html" title="Total I2C Abuse:" alt="" coords="7847,177,8013,237"/>
+<area shape="rect" id="node93" href="$demo__module_8c.html" title="sw/airborne/modules\l/demo_module/demo_module.c" alt="" coords="8037,185,8261,229"/>
+<area shape="rect" id="node95" href="$dc_8h.html" title="Standard Digital Camera Control Interface." alt="" coords="8285,185,8439,229"/>
+<area shape="rect" id="node97" href="$atmega__i2c__cam__ctrl_8c.html" title="Interface with digital camera though AVR AtMega chip." alt="" coords="8463,177,8618,237"/>
+<area shape="rect" id="node99" href="$lcd__dogm_8h.html" title="sw/airborne/modules\l/display/lcd_dogm.h" alt="" coords="8642,185,8797,229"/>
+<area shape="rect" id="node101" href="$ahrs__chimu__spi_8c.html" title="sw/airborne/modules\l/ins/ahrs_chimu_spi.c" alt="" coords="8821,185,8978,229"/>
 </map>

@@ -13,8 +13,6 @@ var searchData=
   ['demo_5fmodule_2eh',['demo_module.h',['../demo__module_8h.html',1,'']]],
   ['deploy_5fsonar_5fbuoy_2ec',['deploy_sonar_buoy.c',['../deploy__sonar__buoy_8c.html',1,'']]],
   ['deploy_5fsonar_5fbuoy_2eh',['deploy_sonar_buoy.h',['../deploy__sonar__buoy_8h.html',1,'']]],
-  ['discsurvey_2ec',['discsurvey.c',['../discsurvey_8c.html',1,'']]],
-  ['discsurvey_2eh',['discsurvey.h',['../discsurvey_8h.html',1,'']]],
   ['downlink_2ec',['downlink.c',['../downlink_8c.html',1,'']]],
   ['downlink_2eh',['downlink.h',['../downlink_8h.html',1,'']]],
   ['downlink_5ftransport_2eh',['downlink_transport.h',['../downlink__transport_8h.html',1,'']]],

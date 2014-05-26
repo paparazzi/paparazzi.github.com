@@ -39,6 +39,7 @@ var mission_8h =
     [ "mission_parse_SEGMENT_LLA", "mission_8h.html#aa6ff1ff42af5ec7f32536bc2bddd70b0", null ],
     [ "mission_parse_SURVEY", "mission_8h.html#a8ce23e7ba2dff58c1fa305ee22b32c1d", null ],
     [ "mission_parse_SURVEY_LLA", "mission_8h.html#a2cc891743321ab1e7e0b22f0f2f38c11", null ],
-    [ "mission_run", "mission_8h.html#a77c170761e804706933b8eccce1e93ea", null ],
+    [ "mission_run", "mission_8h.html#a30b803cd44fe2ee518d935dccbcc2de7", null ],
+    [ "mission_status_report", "mission_8h.html#a3539ca9cd9417f5d2bfda2fdaf6973fa", null ],
     [ "mission", "mission_8h.html#a06160041db75e80665ebf0f22f13cc98", null ]
 ];

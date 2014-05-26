@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -116,8 +116,8 @@ $(document).ready(function(){initNavTree('photogrammetry__calculator_8h.html',''
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;std.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="paparazzi_8h_source.html">paparazzi.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="OSAMNav_8h_source.html">subsystems/navigation/OSAMNav.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="poly__survey__adv_8h_source.html">subsystems/navigation/poly_survey_adv.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="nav__survey__poly__osam_8h_source.html">modules/nav/nav_survey_poly_osam.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="nav__survey__polygon_8h_source.html">modules/nav/nav_survey_polygon.h</a>&quot;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for photogrammetry_calculator.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('photogrammetry__calculator_8h.html',''
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="photogrammetry__calculator_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2cartography_2photogrammetry__calculator_8h" alt=""/></div>
 <map name="sw_2airborne_2modules_2cartography_2photogrammetry__calculator_8h" id="sw_2airborne_2modules_2cartography_2photogrammetry__calculator_8h">
-<area shape="rect" id="node5" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="382,123,468,151"/><area shape="rect" id="node9" href="OSAMNav_8h.html" title="subsystems/navigation\l/OSAMNav.h" alt="" coords="25,115,180,159"/><area shape="rect" id="node12" href="poly__survey__adv_8h.html" title="Advanced polygon survey for fixedwings from Uni Stuttgart." alt="" coords="204,115,358,159"/><area shape="rect" id="node7" href="inttypes_8h.html" title="inttypes.h" alt="" coords="386,209,464,237"/></map>
+<area shape="rect" id="node5" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="53,123,149,151"/><area shape="rect" id="node9" href="nav__survey__poly__osam_8h.html" title="modules/nav/nav_survey\l_poly_osam.h" alt="" coords="145,209,324,253"/><area shape="rect" id="node12" href="nav__survey__polygon_8h.html" title="Advanced polygon survey for fixedwings from Uni Stuttgart." alt="" coords="272,115,451,159"/><area shape="rect" id="node7" href="inttypes_8h.html" title="inttypes.h" alt="" coords="36,217,121,245"/><area shape="rect" id="node15" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="429,217,619,245"/><area shape="rect" id="node17" href="pprz__algebra_8h.html" title="pprz_algebra.h" alt="" coords="399,302,516,330"/></map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('photogrammetry__calculator_8h.html',''
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="photogrammetry__calculator_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2cartography_2photogrammetry__calculator_8hdep" alt=""/></div>
 <map name="sw_2airborne_2modules_2cartography_2photogrammetry__calculator_8hdep" id="sw_2airborne_2modules_2cartography_2photogrammetry__calculator_8hdep">
-<area shape="rect" id="node3" href="photogrammetry__calculator_8c.html" title="sw/airborne/modules\l/cartography/photogrammetry\l_calculator.c" alt="" coords="5,115,195,175"/></map>
+<area shape="rect" id="node3" href="photogrammetry__calculator_8c.html" title="sw/airborne/modules\l/cartography/photogrammetry\l_calculator.c" alt="" coords="5,115,221,175"/></map>
 </div>
 </div>
 <p><a href="photogrammetry__calculator_8h_source.html">Go to the source code of this file.</a></p>
@@ -147,8 +147,8 @@ Macros</h2></td></tr>
 <tr class="memitem:a4e8a2f66c719602ebfd80bf658168064"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="photogrammetry__calculator_8h.html#a4e8a2f66c719602ebfd80bf658168064">photogrammetry_calculator_UpdateHeight</a>(X)</td></tr>
 <tr class="memitem:a1563ec1607658035e6d7f20329025854"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="photogrammetry__calculator_8h.html#a1563ec1607658035e6d7f20329025854">photogrammetry_calculator_UpdateSideStep</a>(X)</td></tr>
 <tr class="memitem:ab2fd18fce8e435350e97355dbfe94ed3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="photogrammetry__calculator_8h.html#ab2fd18fce8e435350e97355dbfe94ed3">photogrammetry_calculator_UpdateTriggerStep</a>(X)</td></tr>
+<tr class="memitem:a760815abf5e398ad7b4e40c3bbd925da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="photogrammetry__calculator_8h.html#a760815abf5e398ad7b4e40c3bbd925da">PhotogrammetryCalculatorPolygonSurveyOsam</a>(_WP, _COUNT)</td></tr>
 <tr class="memitem:ab40c25f16cf466577767c62a8527c2ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="photogrammetry__calculator_8h.html#ab40c25f16cf466577767c62a8527c2ca">PhotogrammetryCalculatorPolygonSurvey</a>(_WP, _COUNT)</td></tr>
-<tr class="memitem:af0094c97d324ce001745105ed7c9689c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="photogrammetry__calculator_8h.html#af0094c97d324ce001745105ed7c9689c">PhotogrammetryCalculatorPolygonSurveyADV</a>(_WP, _COUNT)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -194,10 +194,10 @@ Variables</h2></td></tr>
     &lt;define name="RESOLUTION" value="50" unit="mm pixel projection"/&gt;
 </pre><p>Add to flightplan </p>
 <pre class="fragment">  &lt;header&gt;
-#define PHOTOGRAMMETRY_SWEEP_ANGLE 53   // Degrees from the North
-#define PHOTOGRAMMETRY_OVERLAP 50   // 1-99 Procent
-#define PHOTOGRAMMETRY_SIDELAP 50   // 1-99 Procent
-#define PHOTOGRAMMETRY_RESOLUTION 80    // mm pixel projection size
+#define PHOTOGRAMMETRY_SWEEP_ANGLE RadOfDeg(53)  // angle in radians from the North
+#define PHOTOGRAMMETRY_OVERLAP 50              // 1-99 Procent
+#define PHOTOGRAMMETRY_SIDELAP 50              // 1-99 Procent
+#define PHOTOGRAMMETRY_RESOLUTION 80             // mm pixel projection size
 &lt;/header&gt;
 
     &lt;block group="survey" name="Initialize Poly Survey 56789" strip_button="Survey5678" strip_icon="survey.png"&gt;
@@ -366,23 +366,22 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{       \</div>
-<div class="line">  WaypointAlt(_WP) = <a class="code" href="photogrammetry__calculator_8c.html#a45930e976ca587d4b9d1d0e225f23410">photogrammetry_height</a> + GROUND_ALT;      \</div>
-<div class="line">  int _ang = 90 - DegOfRad(<a class="code" href="photogrammetry__calculator_8c.html#a35cc5dcc88bdfb0be7fd97367dc7e037">photogrammetry_sweep_angle</a>);       \</div>
-<div class="line">  if (_ang &gt; 90) _ang -= 180; <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a22787b7744375550b4b631b0fec03bd0">if</a> (_ang &lt; -90) _ang += 180;      \</div>
-<div class="line">  <a class="code" href="OSAMNav_8c.html#ac7c8a601c7f9d340bda688d25caf3406">InitializePolygonSurvey</a>((_WP), (_COUNT), 2*<a class="code" href="photogrammetry__calculator_8c.html#a1dbe925a7f90228d2b3ca852585492d0">photogrammetry_sidestep</a>, _ang);  \</div>
+<b>Value:</b><div class="fragment"><div class="line">{     \</div>
+<div class="line">  nav_survey_polygon_setup((_WP), (_COUNT), DegOfRad(<a class="code" href="photogrammetry__calculator_8c.html#a35cc5dcc88bdfb0be7fd97367dc7e037">photogrammetry_sweep_angle</a>), \</div>
+<div class="line">    <a class="code" href="photogrammetry__calculator_8c.html#a1dbe925a7f90228d2b3ca852585492d0">photogrammetry_sidestep</a>, <a class="code" href="photogrammetry__calculator_8c.html#abe157c044730cb245a92dc027923d61b">photogrammetry_triggerstep</a>,      \</div>
+<div class="line">  <a class="code" href="photogrammetry__calculator_8c.html#a4417b4836a8a82e7a8f11b640602e648">photogrammetry_radius_min</a>,  <a class="code" href="photogrammetry__calculator_8c.html#a45930e976ca587d4b9d1d0e225f23410">photogrammetry_height</a> + GROUND_ALT);    \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="photogrammetry__calculator_8h_source.html#l00139">139</a> of file <a class="el" href="photogrammetry__calculator_8h_source.html">photogrammetry_calculator.h</a>.</p>
+<p>Definition at line <a class="el" href="photogrammetry__calculator_8h_source.html#l00146">146</a> of file <a class="el" href="photogrammetry__calculator_8h_source.html">photogrammetry_calculator.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af0094c97d324ce001745105ed7c9689c"></a>
+<a class="anchor" id="a760815abf5e398ad7b4e40c3bbd925da"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PhotogrammetryCalculatorPolygonSurveyADV</td>
+          <td class="memname">#define PhotogrammetryCalculatorPolygonSurveyOsam</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_WP, </td>
@@ -400,13 +399,14 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{     \</div>
-<div class="line">  init_poly_survey_adv((_WP), (_COUNT), DegOfRad(<a class="code" href="photogrammetry__calculator_8c.html#a35cc5dcc88bdfb0be7fd97367dc7e037">photogrammetry_sweep_angle</a>), \</div>
-<div class="line">    <a class="code" href="photogrammetry__calculator_8c.html#a1dbe925a7f90228d2b3ca852585492d0">photogrammetry_sidestep</a>, <a class="code" href="photogrammetry__calculator_8c.html#abe157c044730cb245a92dc027923d61b">photogrammetry_triggerstep</a>,      \</div>
-<div class="line">  <a class="code" href="photogrammetry__calculator_8c.html#a4417b4836a8a82e7a8f11b640602e648">photogrammetry_radius_min</a>,  <a class="code" href="photogrammetry__calculator_8c.html#a45930e976ca587d4b9d1d0e225f23410">photogrammetry_height</a> + GROUND_ALT);    \</div>
+<b>Value:</b><div class="fragment"><div class="line">{       \</div>
+<div class="line">  WaypointAlt(_WP) = <a class="code" href="photogrammetry__calculator_8c.html#a45930e976ca587d4b9d1d0e225f23410">photogrammetry_height</a> + GROUND_ALT;      \</div>
+<div class="line">  int _ang = 90 - DegOfRad(<a class="code" href="photogrammetry__calculator_8c.html#a35cc5dcc88bdfb0be7fd97367dc7e037">photogrammetry_sweep_angle</a>);       \</div>
+<div class="line">  while (_ang &gt; 90) _ang -= 180; while (_ang &lt; -90) _ang += 180;      \</div>
+<div class="line">  <a class="code" href="nav__survey__poly__osam_8c.html#a2e85f6ea2741a257dac4a7a4a15d34e8">nav_survey_poly_osam_setup</a>((_WP), (_COUNT), 2*<a class="code" href="photogrammetry__calculator_8c.html#a1dbe925a7f90228d2b3ca852585492d0">photogrammetry_sidestep</a>, _ang);   \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="photogrammetry__calculator_8h_source.html#l00146">146</a> of file <a class="el" href="photogrammetry__calculator_8h_source.html">photogrammetry_calculator.h</a>.</p>
+<p>Definition at line <a class="el" href="photogrammetry__calculator_8h_source.html#l00139">139</a> of file <a class="el" href="photogrammetry__calculator_8h_source.html">photogrammetry_calculator.h</a>.</p>
 
 </div>
 </div>
@@ -425,9 +425,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="photogrammetry__calculator_8c_source.html#l00064">64</a> of file <a class="el" href="photogrammetry__calculator_8c_source.html">photogrammetry_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="photogrammetry__calculator_8c_source.html#l00067">67</a> of file <a class="el" href="photogrammetry__calculator_8c_source.html">photogrammetry_calculator.c</a>.</p>
 
-<p>References <a class="el" href="photogrammetry__calculator_8c_source.html#l00079">photogrammetry_calculator_update_camera2flightplan()</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00060">photogrammetry_height_max</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00059">photogrammetry_height_min</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00034">PHOTOGRAMMETRY_OVERLAP</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00055">photogrammetry_overlap</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00061">photogrammetry_radius_min</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00042">PHOTOGRAMMETRY_RESOLUTION</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00056">photogrammetry_resolution</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00038">PHOTOGRAMMETRY_SIDELAP</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00054">photogrammetry_sidelap</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00030">PHOTOGRAMMETRY_SWEEP_ANGLE</a>, and <a class="el" href="photogrammetry__calculator_8c_source.html#l00047">photogrammetry_sweep_angle</a>.</p>
+<p>References <a class="el" href="photogrammetry__calculator_8c_source.html#l00082">photogrammetry_calculator_update_camera2flightplan()</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00063">photogrammetry_height_max</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00062">photogrammetry_height_min</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00035">PHOTOGRAMMETRY_OVERLAP</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00058">photogrammetry_overlap</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00064">photogrammetry_radius_min</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00045">PHOTOGRAMMETRY_RESOLUTION</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00059">photogrammetry_resolution</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00040">PHOTOGRAMMETRY_SIDELAP</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00057">photogrammetry_sidelap</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00030">PHOTOGRAMMETRY_SWEEP_ANGLE</a>, and <a class="el" href="photogrammetry__calculator_8c_source.html#l00050">photogrammetry_sweep_angle</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -436,7 +436,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="photogrammetry__calculator_8h_a57cb602a707e9632e91510b358e2646b_cgraph.png" border="0" usemap="#photogrammetry__calculator_8h_a57cb602a707e9632e91510b358e2646b_cgraph" alt=""/></div>
 <map name="photogrammetry__calculator_8h_a57cb602a707e9632e91510b358e2646b_cgraph" id="photogrammetry__calculator_8h_a57cb602a707e9632e91510b358e2646b_cgraph">
-<area shape="rect" id="node3" href="photogrammetry__calculator_8c.html#a56876ea9e35c1ab1049a67f41a301243" title="photogrammetry_calculator\l_update_camera2flightplan" alt="" coords="192,5,371,49"/></map>
+<area shape="rect" id="node3" href="photogrammetry__calculator_8c.html#a56876ea9e35c1ab1049a67f41a301243" title="photogrammetry_calculator\l_update_camera2flightplan" alt="" coords="211,5,411,49"/></map>
 </div>
 </p>
 
@@ -456,11 +456,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="photogrammetry__calculator_8c_source.html#l00079">79</a> of file <a class="el" href="photogrammetry__calculator_8c_source.html">photogrammetry_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="photogrammetry__calculator_8c_source.html#l00082">82</a> of file <a class="el" href="photogrammetry__calculator_8c_source.html">photogrammetry_calculator.c</a>.</p>
 
-<p>References <a class="el" href="photogrammetry__calculator_8c_source.html#l00051">photogrammetry_height</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00060">photogrammetry_height_max</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00059">photogrammetry_height_min</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00055">photogrammetry_overlap</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00056">photogrammetry_resolution</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00054">photogrammetry_sidelap</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00049">photogrammetry_sidestep</a>, and <a class="el" href="photogrammetry__calculator_8c_source.html#l00050">photogrammetry_triggerstep</a>.</p>
+<p>References <a class="el" href="photogrammetry__calculator_8c_source.html#l00054">photogrammetry_height</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00063">photogrammetry_height_max</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00062">photogrammetry_height_min</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00058">photogrammetry_overlap</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00059">photogrammetry_resolution</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00057">photogrammetry_sidelap</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00052">photogrammetry_sidestep</a>, and <a class="el" href="photogrammetry__calculator_8c_source.html#l00053">photogrammetry_triggerstep</a>.</p>
 
-<p>Referenced by <a class="el" href="photogrammetry__calculator_8c_source.html#l00064">init_photogrammetry_calculator()</a>.</p>
+<p>Referenced by <a class="el" href="photogrammetry__calculator_8c_source.html#l00067">init_photogrammetry_calculator()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -469,7 +469,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="photogrammetry__calculator_8h_a56876ea9e35c1ab1049a67f41a301243_icgraph.png" border="0" usemap="#photogrammetry__calculator_8h_a56876ea9e35c1ab1049a67f41a301243_icgraph" alt=""/></div>
 <map name="photogrammetry__calculator_8h_a56876ea9e35c1ab1049a67f41a301243_icgraph" id="photogrammetry__calculator_8h_a56876ea9e35c1ab1049a67f41a301243_icgraph">
-<area shape="rect" id="node3" href="photogrammetry__calculator_8h.html#a57cb602a707e9632e91510b358e2646b" title="init_photogrammetry\l_calculator" alt="" coords="232,5,371,49"/></map>
+<area shape="rect" id="node3" href="photogrammetry__calculator_8h.html#a57cb602a707e9632e91510b358e2646b" title="init_photogrammetry\l_calculator" alt="" coords="253,5,411,49"/></map>
 </div>
 </p>
 
@@ -489,9 +489,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="photogrammetry__calculator_8c_source.html#l00103">103</a> of file <a class="el" href="photogrammetry__calculator_8c_source.html">photogrammetry_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="photogrammetry__calculator_8c_source.html#l00106">106</a> of file <a class="el" href="photogrammetry__calculator_8c_source.html">photogrammetry_calculator.c</a>.</p>
 
-<p>References <a class="el" href="photogrammetry__calculator_8c_source.html#l00051">photogrammetry_height</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00055">photogrammetry_overlap</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00056">photogrammetry_resolution</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00054">photogrammetry_sidelap</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00049">photogrammetry_sidestep</a>, and <a class="el" href="photogrammetry__calculator_8c_source.html#l00050">photogrammetry_triggerstep</a>.</p>
+<p>References <a class="el" href="photogrammetry__calculator_8c_source.html#l00054">photogrammetry_height</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00058">photogrammetry_overlap</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00059">photogrammetry_resolution</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00057">photogrammetry_sidelap</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00052">photogrammetry_sidestep</a>, and <a class="el" href="photogrammetry__calculator_8c_source.html#l00053">photogrammetry_triggerstep</a>.</p>
 
 </div>
 </div>
@@ -506,9 +506,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="photogrammetry__calculator_8c_source.html#l00051">51</a> of file <a class="el" href="photogrammetry__calculator_8c_source.html">photogrammetry_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="photogrammetry__calculator_8c_source.html#l00054">54</a> of file <a class="el" href="photogrammetry__calculator_8c_source.html">photogrammetry_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="photogrammetry__calculator_8c_source.html#l00079">photogrammetry_calculator_update_camera2flightplan()</a>, and <a class="el" href="photogrammetry__calculator_8c_source.html#l00103">photogrammetry_calculator_update_flightplan2camera()</a>.</p>
+<p>Referenced by <a class="el" href="photogrammetry__calculator_8c_source.html#l00082">photogrammetry_calculator_update_camera2flightplan()</a>, and <a class="el" href="photogrammetry__calculator_8c_source.html#l00106">photogrammetry_calculator_update_flightplan2camera()</a>.</p>
 
 </div>
 </div>
@@ -522,9 +522,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="photogrammetry__calculator_8c_source.html#l00060">60</a> of file <a class="el" href="photogrammetry__calculator_8c_source.html">photogrammetry_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="photogrammetry__calculator_8c_source.html#l00063">63</a> of file <a class="el" href="photogrammetry__calculator_8c_source.html">photogrammetry_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="photogrammetry__calculator_8c_source.html#l00064">init_photogrammetry_calculator()</a>, and <a class="el" href="photogrammetry__calculator_8c_source.html#l00079">photogrammetry_calculator_update_camera2flightplan()</a>.</p>
+<p>Referenced by <a class="el" href="photogrammetry__calculator_8c_source.html#l00067">init_photogrammetry_calculator()</a>, and <a class="el" href="photogrammetry__calculator_8c_source.html#l00082">photogrammetry_calculator_update_camera2flightplan()</a>.</p>
 
 </div>
 </div>
@@ -538,9 +538,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="photogrammetry__calculator_8c_source.html#l00059">59</a> of file <a class="el" href="photogrammetry__calculator_8c_source.html">photogrammetry_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="photogrammetry__calculator_8c_source.html#l00062">62</a> of file <a class="el" href="photogrammetry__calculator_8c_source.html">photogrammetry_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="photogrammetry__calculator_8c_source.html#l00064">init_photogrammetry_calculator()</a>, and <a class="el" href="photogrammetry__calculator_8c_source.html#l00079">photogrammetry_calculator_update_camera2flightplan()</a>.</p>
+<p>Referenced by <a class="el" href="photogrammetry__calculator_8c_source.html#l00067">init_photogrammetry_calculator()</a>, and <a class="el" href="photogrammetry__calculator_8c_source.html#l00082">photogrammetry_calculator_update_camera2flightplan()</a>.</p>
 
 </div>
 </div>
@@ -554,9 +554,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="photogrammetry__calculator_8c_source.html#l00055">55</a> of file <a class="el" href="photogrammetry__calculator_8c_source.html">photogrammetry_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="photogrammetry__calculator_8c_source.html#l00058">58</a> of file <a class="el" href="photogrammetry__calculator_8c_source.html">photogrammetry_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="photogrammetry__calculator_8c_source.html#l00064">init_photogrammetry_calculator()</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00079">photogrammetry_calculator_update_camera2flightplan()</a>, and <a class="el" href="photogrammetry__calculator_8c_source.html#l00103">photogrammetry_calculator_update_flightplan2camera()</a>.</p>
+<p>Referenced by <a class="el" href="photogrammetry__calculator_8c_source.html#l00067">init_photogrammetry_calculator()</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00082">photogrammetry_calculator_update_camera2flightplan()</a>, and <a class="el" href="photogrammetry__calculator_8c_source.html#l00106">photogrammetry_calculator_update_flightplan2camera()</a>.</p>
 
 </div>
 </div>
@@ -570,9 +570,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="photogrammetry__calculator_8c_source.html#l00061">61</a> of file <a class="el" href="photogrammetry__calculator_8c_source.html">photogrammetry_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="photogrammetry__calculator_8c_source.html#l00064">64</a> of file <a class="el" href="photogrammetry__calculator_8c_source.html">photogrammetry_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="photogrammetry__calculator_8c_source.html#l00064">init_photogrammetry_calculator()</a>.</p>
+<p>Referenced by <a class="el" href="photogrammetry__calculator_8c_source.html#l00067">init_photogrammetry_calculator()</a>.</p>
 
 </div>
 </div>
@@ -586,9 +586,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="photogrammetry__calculator_8c_source.html#l00056">56</a> of file <a class="el" href="photogrammetry__calculator_8c_source.html">photogrammetry_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="photogrammetry__calculator_8c_source.html#l00059">59</a> of file <a class="el" href="photogrammetry__calculator_8c_source.html">photogrammetry_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="photogrammetry__calculator_8c_source.html#l00064">init_photogrammetry_calculator()</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00079">photogrammetry_calculator_update_camera2flightplan()</a>, and <a class="el" href="photogrammetry__calculator_8c_source.html#l00103">photogrammetry_calculator_update_flightplan2camera()</a>.</p>
+<p>Referenced by <a class="el" href="photogrammetry__calculator_8c_source.html#l00067">init_photogrammetry_calculator()</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00082">photogrammetry_calculator_update_camera2flightplan()</a>, and <a class="el" href="photogrammetry__calculator_8c_source.html#l00106">photogrammetry_calculator_update_flightplan2camera()</a>.</p>
 
 </div>
 </div>
@@ -602,9 +602,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="photogrammetry__calculator_8c_source.html#l00054">54</a> of file <a class="el" href="photogrammetry__calculator_8c_source.html">photogrammetry_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="photogrammetry__calculator_8c_source.html#l00057">57</a> of file <a class="el" href="photogrammetry__calculator_8c_source.html">photogrammetry_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="photogrammetry__calculator_8c_source.html#l00064">init_photogrammetry_calculator()</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00079">photogrammetry_calculator_update_camera2flightplan()</a>, and <a class="el" href="photogrammetry__calculator_8c_source.html#l00103">photogrammetry_calculator_update_flightplan2camera()</a>.</p>
+<p>Referenced by <a class="el" href="photogrammetry__calculator_8c_source.html#l00067">init_photogrammetry_calculator()</a>, <a class="el" href="photogrammetry__calculator_8c_source.html#l00082">photogrammetry_calculator_update_camera2flightplan()</a>, and <a class="el" href="photogrammetry__calculator_8c_source.html#l00106">photogrammetry_calculator_update_flightplan2camera()</a>.</p>
 
 </div>
 </div>
@@ -618,9 +618,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="photogrammetry__calculator_8c_source.html#l00049">49</a> of file <a class="el" href="photogrammetry__calculator_8c_source.html">photogrammetry_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="photogrammetry__calculator_8c_source.html#l00052">52</a> of file <a class="el" href="photogrammetry__calculator_8c_source.html">photogrammetry_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="photogrammetry__calculator_8c_source.html#l00079">photogrammetry_calculator_update_camera2flightplan()</a>, and <a class="el" href="photogrammetry__calculator_8c_source.html#l00103">photogrammetry_calculator_update_flightplan2camera()</a>.</p>
+<p>Referenced by <a class="el" href="photogrammetry__calculator_8c_source.html#l00082">photogrammetry_calculator_update_camera2flightplan()</a>, and <a class="el" href="photogrammetry__calculator_8c_source.html#l00106">photogrammetry_calculator_update_flightplan2camera()</a>.</p>
 
 </div>
 </div>
@@ -634,9 +634,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="photogrammetry__calculator_8c_source.html#l00047">47</a> of file <a class="el" href="photogrammetry__calculator_8c_source.html">photogrammetry_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="photogrammetry__calculator_8c_source.html#l00050">50</a> of file <a class="el" href="photogrammetry__calculator_8c_source.html">photogrammetry_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="photogrammetry__calculator_8c_source.html#l00064">init_photogrammetry_calculator()</a>.</p>
+<p>Referenced by <a class="el" href="photogrammetry__calculator_8c_source.html#l00067">init_photogrammetry_calculator()</a>.</p>
 
 </div>
 </div>
@@ -650,9 +650,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="photogrammetry__calculator_8c_source.html#l00050">50</a> of file <a class="el" href="photogrammetry__calculator_8c_source.html">photogrammetry_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="photogrammetry__calculator_8c_source.html#l00053">53</a> of file <a class="el" href="photogrammetry__calculator_8c_source.html">photogrammetry_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="photogrammetry__calculator_8c_source.html#l00079">photogrammetry_calculator_update_camera2flightplan()</a>, and <a class="el" href="photogrammetry__calculator_8c_source.html#l00103">photogrammetry_calculator_update_flightplan2camera()</a>.</p>
+<p>Referenced by <a class="el" href="photogrammetry__calculator_8c_source.html#l00082">photogrammetry_calculator_update_camera2flightplan()</a>, and <a class="el" href="photogrammetry__calculator_8c_source.html#l00106">photogrammetry_calculator_update_flightplan2camera()</a>.</p>
 
 </div>
 </div>
@@ -662,7 +662,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_792c2a84fee7c4fb401cf6815b5aa97f.html">cartography</a></li><li class="navelem"><a class="el" href="photogrammetry__calculator_8h.html">photogrammetry_calculator.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:10 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:59 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

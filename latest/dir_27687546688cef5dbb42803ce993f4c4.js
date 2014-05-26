@@ -7,6 +7,7 @@ var dir_27687546688cef5dbb42803ce993f4c4 =
     [ "actuators_asctec_v2.c", "actuators__asctec__v2_8c.html", "actuators__asctec__v2_8c" ],
     [ "actuators_asctec_v2.h", "actuators__asctec__v2_8h.html", "actuators__asctec__v2_8h" ],
     [ "actuators_default.h", "actuators__default_8h.html", null ],
+    [ "actuators_dualpwm.h", "actuators__dualpwm_8h.html", "actuators__dualpwm_8h" ],
     [ "actuators_dummy.h", "actuators__dummy_8h.html", "actuators__dummy_8h" ],
     [ "actuators_mkk.c", "actuators__mkk_8c.html", "actuators__mkk_8c" ],
     [ "actuators_mkk.h", "actuators__mkk_8h.html", "actuators__mkk_8h" ],

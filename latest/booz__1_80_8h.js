@@ -6,7 +6,7 @@ var booz__1_80_8h =
     [ "ADC_3", "booz__1_80_8h.html#a474279f28350114950d862951d72de66", null ],
     [ "ADC_CHANNEL_BARO", "booz__1_80_8h.html#ad4c25248375975e44797d99bfeb3d026", null ],
     [ "ADC_CHANNEL_VSUPPLY", "booz__1_80_8h.html#ad5a6636ee170fccf62a748fc72374d3b", null ],
-    [ "CAM_SWITCH_LED", "booz__1_80_8h.html#a8e38748f9b461b496baa62fac23d0090", null ],
+    [ "CAM_SWITCH_GPIO", "booz__1_80_8h.html#a0852174dce833fa12463f588c71f926a", null ],
     [ "CCLK", "booz__1_80_8h.html#addec7d88e04ddfe6ac90caf602636c51", null ],
     [ "DefaultVoltageOfAdc", "booz__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f", null ],
     [ "FOSC", "booz__1_80_8h.html#a802b2b582b121e4632aa9a491d503720", null ],
@@ -18,10 +18,6 @@ var booz__1_80_8h =
     [ "LED_3_PIN", "booz__1_80_8h.html#a5ea98da36d05b171b54c342bcf4a35f7", null ],
     [ "LED_4_BANK", "booz__1_80_8h.html#a7631476c940b199dfc9d1f6dbc5a931d", null ],
     [ "LED_4_PIN", "booz__1_80_8h.html#a85f36fccd0bafe6be62608812b56e2ca", null ],
-    [ "LED_5_BANK", "booz__1_80_8h.html#a2ebb1421b960c1d377594a166c094428", null ],
-    [ "LED_5_PIN", "booz__1_80_8h.html#a6e4386a4032581f788d9d2577b0c9aaa", null ],
-    [ "LED_6_BANK", "booz__1_80_8h.html#ab190d158fc7ae12b6cb43450a31ccacf", null ],
-    [ "LED_6_PIN", "booz__1_80_8h.html#af83172cd2f4f923f875c77d708cb268a", null ],
     [ "MAX1168_EOC_EINT", "booz__1_80_8h.html#af1e0361313b85ea3850e3d83b185d639", null ],
     [ "MAX1168_EOC_PIN", "booz__1_80_8h.html#a0bcba718f0d39a93820b2691de8c1ea3", null ],
     [ "MAX1168_EOC_PINSEL", "booz__1_80_8h.html#aaa37fe060b308c5808f70b01dda594af", null ],
@@ -42,7 +38,7 @@ var booz__1_80_8h =
     [ "PBSD_VAL", "booz__1_80_8h.html#ab6906a1f3d77eb3e6cd99414d714fe90", null ],
     [ "PCLK", "booz__1_80_8h.html#a4e4204874a63b2a01811ee2819285f58", null ],
     [ "PLL_MUL", "booz__1_80_8h.html#a43abb7ff318cb315c8b5134ee8d96fd2", null ],
-    [ "POWER_SWITCH_LED", "booz__1_80_8h.html#a3a5cfe68fa39b534d190c7bfaa6d8e33", null ],
+    [ "POWER_SWITCH_GPIO", "booz__1_80_8h.html#a76069dd8b39c52bab9027c808ad505a9", null ],
     [ "PPM_CCR_CRF", "booz__1_80_8h.html#ad25058c1245a5a986632aae0f3f91ebc", null ],
     [ "PPM_CCR_CRI", "booz__1_80_8h.html#a527cf6cfbed24e043ed4ee710baed3f1", null ],
     [ "PPM_CCR_CRR", "booz__1_80_8h.html#a9554c21ac4db9f0b888079de6c70521a", null ],
@@ -69,7 +65,5 @@ var booz__1_80_8h =
     [ "USE_LED_1", "booz__1_80_8h.html#ae7a2417096c8215257d073da4d6d4c5f", null ],
     [ "USE_LED_2", "booz__1_80_8h.html#aad615ff6a6f5e1f55769b625fd8ec8bf", null ],
     [ "USE_LED_3", "booz__1_80_8h.html#a4da08b59c725550efa312cf16ecdd77c", null ],
-    [ "USE_LED_4", "booz__1_80_8h.html#ae74a702840b15e71530a2716b1ef497c", null ],
-    [ "USE_LED_5", "booz__1_80_8h.html#aa8b07cb021b87d0c5868a3cb2851510e", null ],
-    [ "USE_LED_6", "booz__1_80_8h.html#a01d0c0f27c401bfd2e594261669a4b50", null ]
+    [ "USE_LED_4", "booz__1_80_8h.html#ae74a702840b15e71530a2716b1ef497c", null ]
 ];

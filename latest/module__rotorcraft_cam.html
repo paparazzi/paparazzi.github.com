@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('module__rotorcraft_cam.html','');});
 <li>HEADING: the servo position and the heading of the rotorcraft are set with angles</li>
 <li>WP: the camera is tracking a waypoint (Default: CAM)</li>
 </ul>
-<p>The CAM_SWITCH can be used to power the camera in normal modes and disable it when in NONE mode.</p>
+<p>If ROTORCRAFT_CAM_SWITCH_GPIO is defined, this gpio is set/cleared to switch the power of the camera on in normal modes and disable it when in NONE mode. On boards with CAM_SWITCH, ROTORCRAFT_CAM_SWITCH_GPIO can be defined to CAM_SWITCH_GPIO.</p>
 <h1><a class="anchor" id="configuration"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="af_section"></a>
@@ -119,10 +119,12 @@ Airframe file section</h2>
 <li><b>section</b> name: <code>CAM</code> prefix: <code>ROTORCRAFT_CAM_</code> <ul>
 <li><b>name</b> <code>DEFAULT_MODE</code> <b>value:</b> <em>MODE_NONE|MODE_MANUAL|MODE_HEADING|MODE_WP</em> <br/>
  Description: Select default mode (default: MODE_NONE)</li>
-<li><b>name</b> <code>CAM_ON</code> <b>value:</b> <em>handler</em> <br/>
- Description: Handler to power on the camera ({} to disable)</li>
-<li><b>name</b> <code>CAM_OFF</code> <b>value:</b> <em>handler</em> <br/>
- Description: Handler to power off the camera ({} to disable)</li>
+<li><b>name</b> <code>SWITCH_GPIO</code> <b>value:</b> <em>gpio</em> <br/>
+ Description: GPIO used to turn on/off the camer power, e.g. CAM_SWITCH_GPIO or GPIOB,GPIO22. Nothing set by default.</li>
+<li><b>name</b> <code>CAM_ON</code> <b>value:</b> <em>gpio_set|gpio_clear</em> <br/>
+ Description: Gpio output level to turn camera power power on. gpio_set (default) or gpio_clear</li>
+<li><b>name</b> <code>CAM_OFF</code> <b>value:</b> <em>gpio_set|gpio_clear</em> <br/>
+ Description: Gpio output level to turn camera power power off. gpio_set or gpio_clear (default)</li>
 <li><b>name</b> <code>TILT_SERVO</code> <b>value:</b> <em>name</em> <br/>
  Description: Servo name for tilt control (no tilt control if not defined)</li>
 <li><b>name</b> <code>TILT_ANGLE_MIN</code> <b>value:</b> <em>angle</em> <br/>
@@ -188,12 +190,16 @@ Raw rotorcraft_cam.xml file:</h2>
 <div class="line">  - HEADING: the servo position and the <a class="code" href="ahrs__infrared_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a> of the rotorcraft are <span class="keyword">set</span> with angles</div>
 <div class="line">  - WP: the camera is tracking a waypoint (Default: CAM)</div>
 <div class="line"></div>
-<div class="line">The CAM_SWITCH can be used to power the camera in normal modes and disable it when in <a class="code" href="actuators__asctec_8h.html#a6ab1b9217ee457a8e4352cf0b28af79dac157bdf0b85a40d2619cbc8bc1ae5fe2">NONE</a> mode.</div>
+<div class="line">If ROTORCRAFT_CAM_SWITCH_GPIO is defined, <span class="keyword">this</span> gpio is <span class="keyword">set</span>/cleared to <span class="keywordflow">switch</span> the power</div>
+<div class="line">of the camera on in normal modes and disable it when in <a class="code" href="actuators__asctec_8h.html#a6ab1b9217ee457a8e4352cf0b28af79dac157bdf0b85a40d2619cbc8bc1ae5fe2">NONE</a> mode.</div>
+<div class="line">On boards with CAM_SWITCH, ROTORCRAFT_CAM_SWITCH_GPIO can be defined to <a class="code" href="booz__1_80_8h.html#a0852174dce833fa12463f588c71f926a">CAM_SWITCH_GPIO</a>.</div>
+<div class="line"></div>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line">    &lt;section name=<span class="stringliteral">&quot;CAM&quot;</span> prefix=<span class="stringliteral">&quot;ROTORCRAFT_CAM_&quot;</span>&gt;</div>
 <div class="line">      &lt;define name=<span class="stringliteral">&quot;DEFAULT_MODE&quot;</span> value=<span class="stringliteral">&quot;MODE_NONE|MODE_MANUAL|MODE_HEADING|MODE_WP&quot;</span> description=<span class="stringliteral">&quot;Select default mode (default: MODE_NONE)&quot;</span>/&gt;</div>
-<div class="line">      &lt;define name=<span class="stringliteral">&quot;CAM_ON&quot;</span> value=<span class="stringliteral">&quot;handler&quot;</span> description=<span class="stringliteral">&quot;Handler to power on the camera ({} to disable)&quot;</span>/&gt;</div>
-<div class="line">      &lt;define name=<span class="stringliteral">&quot;CAM_OFF&quot;</span> value=<span class="stringliteral">&quot;handler&quot;</span> description=<span class="stringliteral">&quot;Handler to power off the camera ({} to disable)&quot;</span>/&gt;</div>
+<div class="line">      &lt;define name=<span class="stringliteral">&quot;SWITCH_GPIO&quot;</span> value=<span class="stringliteral">&quot;gpio&quot;</span> description=<span class="stringliteral">&quot;GPIO used to turn on/off the camer power, e.g. CAM_SWITCH_GPIO or GPIOB,GPIO22. Nothing set by default.&quot;</span>/&gt;</div>
+<div class="line">      &lt;define name=<span class="stringliteral">&quot;CAM_ON&quot;</span> value=<span class="stringliteral">&quot;gpio_set|gpio_clear&quot;</span> description=<span class="stringliteral">&quot;Gpio output level to turn camera power power on. gpio_set (default) or gpio_clear&quot;</span>/&gt;</div>
+<div class="line">      &lt;define name=<span class="stringliteral">&quot;CAM_OFF&quot;</span> value=<span class="stringliteral">&quot;gpio_set|gpio_clear&quot;</span> description=<span class="stringliteral">&quot;Gpio output level to turn camera power power off. gpio_set or gpio_clear (default) &quot;</span>/&gt;</div>
 <div class="line">      &lt;define name=<span class="stringliteral">&quot;TILT_SERVO&quot;</span> value=<span class="stringliteral">&quot;name&quot;</span> description=<span class="stringliteral">&quot;Servo name for tilt control (no tilt control if not defined)&quot;</span>/&gt;</div>
 <div class="line">      &lt;define name=<span class="stringliteral">&quot;TILT_ANGLE_MIN&quot;</span> value=<span class="stringliteral">&quot;angle&quot;</span> description=<span class="stringliteral">&quot;Tilt angle corresponding to the servo min position&quot;</span>/&gt;</div>
 <div class="line">      &lt;define name=<span class="stringliteral">&quot;TILT_ANGLE_MAX&quot;</span> value=<span class="stringliteral">&quot;angle&quot;</span> description=<span class="stringliteral">&quot;Tilt angle corresponding to the servo max position&quot;</span>/&gt;</div>
@@ -206,7 +212,7 @@ Raw rotorcraft_cam.xml file:</h2>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;rotorcraft_cam.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
-<div class="line">  &lt;<a class="code" href="gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;rotorcraft_cam_init()&quot;</span>/&gt;</div>
+<div class="line">  &lt;<a class="code" href="nav__gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;rotorcraft_cam_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;periodic fun=<span class="stringliteral">&quot;rotorcraft_cam_periodic()&quot;</span> freq=<span class="stringliteral">&quot;10.&quot;</span>/&gt;</div>
 <div class="line">  &lt;datalink message=<span class="stringliteral">&quot;ROTORCRAFT_CAM_STICK&quot;</span> fun=<span class="stringliteral">&quot;ROTORCRAFT_CAM_STICK_PARSE(dl_buffer)&quot;</span>/&gt;</div>
 <div class="line">  &lt;makefile&gt;</div>
@@ -220,7 +226,7 @@ Raw rotorcraft_cam.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:12 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:11 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

@@ -5,7 +5,7 @@ var dir_0722e4cfffe4ffd4c81bbc7e5d686ba4 =
     [ "can_arch.c", "can__arch_8c.html", "can__arch_8c" ],
     [ "can_arch.h", "can__arch_8h.html", "can__arch_8h" ],
     [ "debug_led.h", "debug__led_8h.html", "debug__led_8h" ],
-    [ "gpio_arch.c", "gpio__arch_8c.html", null ],
+    [ "gpio_arch.c", "gpio__arch_8c.html", "gpio__arch_8c" ],
     [ "gpio_arch.h", "stm32_2mcu__periph_2gpio__arch_8h.html", "stm32_2mcu__periph_2gpio__arch_8h" ],
     [ "i2c_arch.c", "stm32_2mcu__periph_2i2c__arch_8c.html", "stm32_2mcu__periph_2i2c__arch_8c" ],
     [ "i2c_arch.h", "stm32_2mcu__periph_2i2c__arch_8h.html", null ],

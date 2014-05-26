@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -104,7 +104,6 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2actuators_2actuator
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -114,7 +113,8 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2actuators_2actuator
 
 <p>STM32 PWM servos handling.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;subsystems/actuators/actuators_pwm_arch.h&quot;</code><br/>
+<div class="textblock"><code>#include &quot;<a class="el" href="actuators__shared__arch_8h_source.html">subsystems/actuators/actuators_shared_arch.h</a>&quot;</code><br/>
+<code>#include &quot;subsystems/actuators/actuators_pwm_arch.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="actuators__pwm_8h_source.html">subsystems/actuators/actuators_pwm.h</a>&quot;</code><br/>
 <code>#include &lt;libopencm3/stm32/gpio.h&gt;</code><br/>
 <code>#include &lt;libopencm3/stm32/rcc.h&gt;</code><br/>
@@ -126,32 +126,13 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2actuators_2actuator
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c__incl.png" border="0" usemap="#sw_2airborne_2arch_2stm32_2subsystems_2actuators_2actuators__pwm__arch_8c" alt=""/></div>
 <map name="sw_2airborne_2arch_2stm32_2subsystems_2actuators_2actuators__pwm__arch_8c" id="sw_2airborne_2arch_2stm32_2subsystems_2actuators_2actuators__pwm__arch_8c">
-<area shape="rect" id="node5" href="actuators__pwm_8h.html" title="subsystems/actuators\l/actuators_pwm.h" alt="" coords="65,115,215,159"/></map>
+<area shape="rect" id="node3" href="actuators__shared__arch_8h.html" title="STM32 PWM and dualPWM servos shared functions." alt="" coords="429,115,613,159"/><area shape="rect" id="node19" href="actuators__pwm_8h.html" title="subsystems/actuators\l/actuators_pwm.h" alt="" coords="1035,115,1197,159"/></map>
 </div>
 </div>
 <p><a href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a644a06e4166982dcb58fbd25d65f1f65"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a644a06e4166982dcb58fbd25d65f1f65">ONE_MHZ_CLK</a>&#160;&#160;&#160;1000000</td></tr>
-<tr class="memitem:a53d6198818143ce640add7be0555424f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a53d6198818143ce640add7be0555424f">SERVO_HZ</a>&#160;&#160;&#160;40</td></tr>
-<tr class="memdesc:a53d6198818143ce640add7be0555424f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default servo update rate in Hz.  <a href="#a53d6198818143ce640add7be0555424f"></a><br/></td></tr>
-<tr class="memitem:a6f40889ba01ae66aee24c171e00d1d81"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a6f40889ba01ae66aee24c171e00d1d81">TIM1_SERVO_HZ</a>&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a53d6198818143ce640add7be0555424f">SERVO_HZ</a></td></tr>
-<tr class="memitem:a8abad7360c351e9e146dbc677ec6ddd9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a8abad7360c351e9e146dbc677ec6ddd9">TIM2_SERVO_HZ</a>&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a53d6198818143ce640add7be0555424f">SERVO_HZ</a></td></tr>
-<tr class="memitem:a259ce095e835ac75adb9a9981eb1b711"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a259ce095e835ac75adb9a9981eb1b711">TIM3_SERVO_HZ</a>&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a53d6198818143ce640add7be0555424f">SERVO_HZ</a></td></tr>
-<tr class="memitem:a4e9a5ee2811aab2cc7274715310d640d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a4e9a5ee2811aab2cc7274715310d640d">TIM4_SERVO_HZ</a>&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a53d6198818143ce640add7be0555424f">SERVO_HZ</a></td></tr>
-<tr class="memitem:a2f849835e0306ec0290feac475d2cfb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a2f849835e0306ec0290feac475d2cfb0">TIM5_SERVO_HZ</a>&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a53d6198818143ce640add7be0555424f">SERVO_HZ</a></td></tr>
-<tr class="memitem:a5cca030e9242d74bda94022625298cec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a5cca030e9242d74bda94022625298cec">TIM9_SERVO_HZ</a>&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a53d6198818143ce640add7be0555424f">SERVO_HZ</a></td></tr>
-<tr class="memitem:a61301c31538dcbdb2c7018715847b446"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a61301c31538dcbdb2c7018715847b446">TIM12_SERVO_HZ</a>&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a53d6198818143ce640add7be0555424f">SERVO_HZ</a></td></tr>
-<tr class="memitem:af52b4b4c36110a0addfa98059f54a50e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#af52b4b4c36110a0addfa98059f54a50e">TIM9</a>&#160;&#160;&#160;TIM9_BASE</td></tr>
-<tr class="memitem:a2397f8a0f8e7aa10cf8e8c049e431e53"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a2397f8a0f8e7aa10cf8e8c049e431e53">TIM12</a>&#160;&#160;&#160;TIM12_BASE</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab8fdf92b245b144b76d7fc5511036748"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#ab8fdf92b245b144b76d7fc5511036748">actuators_pwm_arch_channel_init</a> (<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> timer_peripheral, enum tim_oc_id oc_id)</td></tr>
-<tr class="memdesc:ab8fdf92b245b144b76d7fc5511036748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set PWM channel configuration.  <a href="#ab8fdf92b245b144b76d7fc5511036748"></a><br/></td></tr>
-<tr class="memitem:a7781baca643026fac5601a373feb1142"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a7781baca643026fac5601a373feb1142">set_servo_timer</a> (<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> timer, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> period, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> channels_mask)</td></tr>
-<tr class="memdesc:a7781baca643026fac5601a373feb1142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set GPIO configuration.  <a href="#a7781baca643026fac5601a373feb1142"></a><br/></td></tr>
 <tr class="memitem:a8f67fe525140a6f4b07b3416bc70f606"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a8f67fe525140a6f4b07b3416bc70f606">actuators_pwm_arch_init</a> (void)</td></tr>
 <tr class="memdesc:a8f67fe525140a6f4b07b3416bc70f606"><td class="mdescLeft">&#160;</td><td class="mdescRight">PWM arch init called by generic pwm driver.  <a href="#a8f67fe525140a6f4b07b3416bc70f606"></a><br/></td></tr>
 <tr class="memitem:a8fdcc2a7e8712e51ffcbce4fd77dcfab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a8fdcc2a7e8712e51ffcbce4fd77dcfab">actuators_pwm_commit</a> (void)</td></tr>
@@ -165,238 +146,7 @@ Variables</h2></td></tr>
 <div class="textblock"><p>STM32 PWM servos handling. </p>
 
 <p>Definition in file <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html">actuators_pwm_arch.c</a>.</p>
-</div><h2>Macro Definition Documentation</h2>
-<a class="anchor" id="a644a06e4166982dcb58fbd25d65f1f65"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ONE_MHZ_CLK&#160;&#160;&#160;1000000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00044">44</a> of file <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html">actuators_pwm_arch.c</a>.</p>
-
-<p>Referenced by <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00138">set_servo_timer()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a53d6198818143ce640add7be0555424f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SERVO_HZ&#160;&#160;&#160;40</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Default servo update rate in Hz. </p>
-
-<p>Definition at line <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00068">68</a> of file <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html">actuators_pwm_arch.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2397f8a0f8e7aa10cf8e8c049e431e53"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define TIM12&#160;&#160;&#160;TIM12_BASE</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00097">97</a> of file <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html">actuators_pwm_arch.c</a>.</p>
-
-<p>Referenced by <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00104">actuators_pwm_arch_channel_init()</a>, <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00207">actuators_pwm_arch_init()</a>, and <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00138">set_servo_timer()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a61301c31538dcbdb2c7018715847b446"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define TIM12_SERVO_HZ&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a53d6198818143ce640add7be0555424f">SERVO_HZ</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00091">91</a> of file <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html">actuators_pwm_arch.c</a>.</p>
-
-<p>Referenced by <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00207">actuators_pwm_arch_init()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6f40889ba01ae66aee24c171e00d1d81"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define TIM1_SERVO_HZ&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a53d6198818143ce640add7be0555424f">SERVO_HZ</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00073">73</a> of file <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html">actuators_pwm_arch.c</a>.</p>
-
-<p>Referenced by <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00207">actuators_pwm_arch_init()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8abad7360c351e9e146dbc677ec6ddd9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define TIM2_SERVO_HZ&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a53d6198818143ce640add7be0555424f">SERVO_HZ</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00076">76</a> of file <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html">actuators_pwm_arch.c</a>.</p>
-
-<p>Referenced by <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00207">actuators_pwm_arch_init()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a259ce095e835ac75adb9a9981eb1b711"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define TIM3_SERVO_HZ&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a53d6198818143ce640add7be0555424f">SERVO_HZ</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00079">79</a> of file <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html">actuators_pwm_arch.c</a>.</p>
-
-<p>Referenced by <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00207">actuators_pwm_arch_init()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4e9a5ee2811aab2cc7274715310d640d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define TIM4_SERVO_HZ&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a53d6198818143ce640add7be0555424f">SERVO_HZ</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00082">82</a> of file <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html">actuators_pwm_arch.c</a>.</p>
-
-<p>Referenced by <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00207">actuators_pwm_arch_init()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2f849835e0306ec0290feac475d2cfb0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define TIM5_SERVO_HZ&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a53d6198818143ce640add7be0555424f">SERVO_HZ</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00085">85</a> of file <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html">actuators_pwm_arch.c</a>.</p>
-
-<p>Referenced by <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00207">actuators_pwm_arch_init()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af52b4b4c36110a0addfa98059f54a50e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define TIM9&#160;&#160;&#160;TIM9_BASE</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>: these should go into libopencm3 </dd></dl>
-
-<p>Definition at line <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00096">96</a> of file <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html">actuators_pwm_arch.c</a>.</p>
-
-<p>Referenced by <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00104">actuators_pwm_arch_channel_init()</a>, <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00207">actuators_pwm_arch_init()</a>, and <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00138">set_servo_timer()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5cca030e9242d74bda94022625298cec"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define TIM9_SERVO_HZ&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a53d6198818143ce640add7be0555424f">SERVO_HZ</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00088">88</a> of file <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html">actuators_pwm_arch.c</a>.</p>
-
-<p>Referenced by <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00207">actuators_pwm_arch_init()</a>.</p>
-
-</div>
-</div>
-<h2>Function Documentation</h2>
-<a class="anchor" id="ab8fdf92b245b144b76d7fc5511036748"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void actuators_pwm_arch_channel_init </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
-          <td class="paramname"><em>timer_peripheral</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">enum tim_oc_id&#160;</td>
-          <td class="paramname"><em>oc_id</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Set PWM channel configuration. </p>
-
-<p>Definition at line <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00104">104</a> of file <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html">actuators_pwm_arch.c</a>.</p>
-
-<p>References <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00097">TIM12</a>, and <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00096">TIM9</a>.</p>
-
-<p>Referenced by <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00138">set_servo_timer()</a>.</p>
-
-<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_ab8fdf92b245b144b76d7fc5511036748_icgraph.png" border="0" usemap="#stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_ab8fdf92b245b144b76d7fc5511036748_icgraph" alt=""/></div>
-<map name="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_ab8fdf92b245b144b76d7fc5511036748_icgraph" id="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_ab8fdf92b245b144b76d7fc5511036748_icgraph">
-<area shape="rect" id="node3" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a7781baca643026fac5601a373feb1142" title="Set GPIO configuration." alt="" coords="197,13,312,41"/><area shape="rect" id="node5" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a8f67fe525140a6f4b07b3416bc70f606" title="PWM arch init called by generic pwm driver." alt="" coords="361,13,527,41"/></map>
-</div>
-</p>
-
-</div>
-</div>
+</div><h2>Function Documentation</h2>
 <a class="anchor" id="a8f67fe525140a6f4b07b3416bc70f606"></a>
 <div class="memitem">
 <div class="memproto">
@@ -414,18 +164,18 @@ Variables</h2></td></tr>
 <p>PWM arch init called by generic pwm driver. </p>
 <p>Arch dependent init file. </p>
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00207">207</a> of file <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html">actuators_pwm_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00042">42</a> of file <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html">actuators_pwm_arch.c</a>.</p>
 
-<p>References <a class="el" href="apogee__0_899_8h_source.html#l00209">PWM_SERVO_0_AF</a>, <a class="el" href="apogee__0_899_8h_source.html#l00207">PWM_SERVO_0_GPIO</a>, <a class="el" href="apogee__0_899_8h_source.html#l00208">PWM_SERVO_0_PIN</a>, <a class="el" href="apogee__0_899_8h_source.html#l00206">PWM_SERVO_0_RCC_IOP</a>, <a class="el" href="apogee__0_899_8h_source.html#l00222">PWM_SERVO_1_AF</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00073">PWM_SERVO_1_ENA</a>, <a class="el" href="apogee__0_899_8h_source.html#l00220">PWM_SERVO_1_GPIO</a>, <a class="el" href="apogee__0_899_8h_source.html#l00221">PWM_SERVO_1_PIN</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00069">PWM_SERVO_1_PINSEL</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00071">PWM_SERVO_1_PINSEL_BIT</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00072">PWM_SERVO_1_PINSEL_MASK</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00070">PWM_SERVO_1_PINSEL_VAL</a>, <a class="el" href="apogee__0_899_8h_source.html#l00219">PWM_SERVO_1_RCC_IOP</a>, <a class="el" href="apogee__0_899_8h_source.html#l00235">PWM_SERVO_2_AF</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00080">PWM_SERVO_2_ENA</a>, <a class="el" href="apogee__0_899_8h_source.html#l00233">PWM_SERVO_2_GPIO</a>, <a class="el" href="apogee__0_899_8h_source.html#l00234">PWM_SERVO_2_PIN</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00076">PWM_SERVO_2_PINSEL</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00078">PWM_SERVO_2_PINSEL_BIT</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00079">PWM_SERVO_2_PINSEL_MASK</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00077">PWM_SERVO_2_PINSEL_VAL</a>, <a class="el" href="apogee__0_899_8h_source.html#l00232">PWM_SERVO_2_RCC_IOP</a>, <a class="el" href="apogee__0_899_8h_source.html#l00248">PWM_SERVO_3_AF</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00087">PWM_SERVO_3_ENA</a>, <a class="el" href="apogee__0_899_8h_source.html#l00246">PWM_SERVO_3_GPIO</a>, <a class="el" href="apogee__0_899_8h_source.html#l00247">PWM_SERVO_3_PIN</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00083">PWM_SERVO_3_PINSEL</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00085">PWM_SERVO_3_PINSEL_BIT</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00086">PWM_SERVO_3_PINSEL_MASK</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00084">PWM_SERVO_3_PINSEL_VAL</a>, <a class="el" href="apogee__0_899_8h_source.html#l00245">PWM_SERVO_3_RCC_IOP</a>, <a class="el" href="apogee__0_899_8h_source.html#l00261">PWM_SERVO_4_AF</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00094">PWM_SERVO_4_ENA</a>, <a class="el" href="apogee__0_899_8h_source.html#l00259">PWM_SERVO_4_GPIO</a>, <a class="el" href="apogee__0_899_8h_source.html#l00260">PWM_SERVO_4_PIN</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00090">PWM_SERVO_4_PINSEL</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00092">PWM_SERVO_4_PINSEL_BIT</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00093">PWM_SERVO_4_PINSEL_MASK</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00091">PWM_SERVO_4_PINSEL_VAL</a>, <a class="el" href="apogee__0_899_8h_source.html#l00258">PWM_SERVO_4_RCC_IOP</a>, <a class="el" href="apogee__0_899_8h_source.html#l00274">PWM_SERVO_5_AF</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00101">PWM_SERVO_5_ENA</a>, <a class="el" href="apogee__0_899_8h_source.html#l00272">PWM_SERVO_5_GPIO</a>, <a class="el" href="apogee__0_899_8h_source.html#l00273">PWM_SERVO_5_PIN</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00097">PWM_SERVO_5_PINSEL</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00099">PWM_SERVO_5_PINSEL_BIT</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00100">PWM_SERVO_5_PINSEL_MASK</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00098">PWM_SERVO_5_PINSEL_VAL</a>, <a class="el" href="apogee__0_899_8h_source.html#l00271">PWM_SERVO_5_RCC_IOP</a>, <a class="el" href="krooz__sd_8h_source.html#l00343">PWM_SERVO_6_AF</a>, <a class="el" href="krooz__sd_8h_source.html#l00341">PWM_SERVO_6_GPIO</a>, <a class="el" href="krooz__sd_8h_source.html#l00342">PWM_SERVO_6_PIN</a>, <a class="el" href="krooz__sd_8h_source.html#l00340">PWM_SERVO_6_RCC_IOP</a>, <a class="el" href="krooz__sd_8h_source.html#l00356">PWM_SERVO_7_AF</a>, <a class="el" href="krooz__sd_8h_source.html#l00354">PWM_SERVO_7_GPIO</a>, <a class="el" href="krooz__sd_8h_source.html#l00355">PWM_SERVO_7_PIN</a>, <a class="el" href="krooz__sd_8h_source.html#l00353">PWM_SERVO_7_RCC_IOP</a>, <a class="el" href="krooz__sd_8h_source.html#l00369">PWM_SERVO_8_AF</a>, <a class="el" href="krooz__sd_8h_source.html#l00367">PWM_SERVO_8_GPIO</a>, <a class="el" href="krooz__sd_8h_source.html#l00368">PWM_SERVO_8_PIN</a>, <a class="el" href="krooz__sd_8h_source.html#l00366">PWM_SERVO_8_RCC_IOP</a>, <a class="el" href="krooz__sd_8h_source.html#l00382">PWM_SERVO_9_AF</a>, <a class="el" href="krooz__sd_8h_source.html#l00380">PWM_SERVO_9_GPIO</a>, <a class="el" href="krooz__sd_8h_source.html#l00381">PWM_SERVO_9_PIN</a>, <a class="el" href="krooz__sd_8h_source.html#l00379">PWM_SERVO_9_RCC_IOP</a>, <a class="el" href="stm32f4__discovery_8h_source.html#l00568">PWM_TIM12_CHAN_MASK</a>, <a class="el" href="stm32f4__discovery_8h_source.html#l00565">PWM_TIM1_CHAN_MASK</a>, <a class="el" href="apogee__0_899_8h_source.html#l00283">PWM_TIM2_CHAN_MASK</a>, <a class="el" href="apogee__0_899_8h_source.html#l00284">PWM_TIM3_CHAN_MASK</a>, <a class="el" href="krooz__sd_8h_source.html#l00404">PWM_TIM4_CHAN_MASK</a>, <a class="el" href="krooz__sd_8h_source.html#l00405">PWM_TIM5_CHAN_MASK</a>, <a class="el" href="stm32f4__discovery_8h_source.html#l00566">PWM_TIM9_CHAN_MASK</a>, <a class="el" href="LPC21xx_8h_source.html#l00108">PWMLER</a>, <a class="el" href="lpcTMR_8h_source.html#l00124">PWMLER_LATCH0</a>, <a class="el" href="LPC21xx_8h_source.html#l00100">PWMMR0</a>, <a class="el" href="LPC21xx_8h_source.html#l00107">PWMPCR</a>, <a class="el" href="LPC21xx_8h_source.html#l00097">PWMPR</a>, <a class="el" href="LPC21xx_8h_source.html#l00095">PWMTCR</a>, <a class="el" href="lpcTMR_8h_source.html#l00083">PWMTCR_COUNTER_ENABLE</a>, <a class="el" href="lpcTMR_8h_source.html#l00085">PWMTCR_PWM_ENABLE</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00030">SERVOS_PERIOD</a>, <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00138">set_servo_timer()</a>, <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00097">TIM12</a>, <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00091">TIM12_SERVO_HZ</a>, <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00073">TIM1_SERVO_HZ</a>, <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00076">TIM2_SERVO_HZ</a>, <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00079">TIM3_SERVO_HZ</a>, <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00082">TIM4_SERVO_HZ</a>, <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00085">TIM5_SERVO_HZ</a>, <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00096">TIM9</a>, and <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00088">TIM9_SERVO_HZ</a>.</p>
+<p>References <a class="el" href="apogee__0_899_8h_source.html#l00171">PWM_SERVO_0_AF</a>, <a class="el" href="apogee__0_899_8h_source.html#l00169">PWM_SERVO_0_GPIO</a>, <a class="el" href="apogee__0_899_8h_source.html#l00170">PWM_SERVO_0_PIN</a>, <a class="el" href="apogee__0_899_8h_source.html#l00168">PWM_SERVO_0_RCC</a>, <a class="el" href="apogee__0_899_8h_source.html#l00184">PWM_SERVO_1_AF</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00073">PWM_SERVO_1_ENA</a>, <a class="el" href="apogee__0_899_8h_source.html#l00182">PWM_SERVO_1_GPIO</a>, <a class="el" href="apogee__0_899_8h_source.html#l00183">PWM_SERVO_1_PIN</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00069">PWM_SERVO_1_PINSEL</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00071">PWM_SERVO_1_PINSEL_BIT</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00072">PWM_SERVO_1_PINSEL_MASK</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00070">PWM_SERVO_1_PINSEL_VAL</a>, <a class="el" href="apogee__0_899_8h_source.html#l00181">PWM_SERVO_1_RCC</a>, <a class="el" href="apogee__0_899_8h_source.html#l00197">PWM_SERVO_2_AF</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00080">PWM_SERVO_2_ENA</a>, <a class="el" href="apogee__0_899_8h_source.html#l00195">PWM_SERVO_2_GPIO</a>, <a class="el" href="apogee__0_899_8h_source.html#l00196">PWM_SERVO_2_PIN</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00076">PWM_SERVO_2_PINSEL</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00078">PWM_SERVO_2_PINSEL_BIT</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00079">PWM_SERVO_2_PINSEL_MASK</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00077">PWM_SERVO_2_PINSEL_VAL</a>, <a class="el" href="apogee__0_899_8h_source.html#l00194">PWM_SERVO_2_RCC</a>, <a class="el" href="apogee__0_899_8h_source.html#l00210">PWM_SERVO_3_AF</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00087">PWM_SERVO_3_ENA</a>, <a class="el" href="apogee__0_899_8h_source.html#l00208">PWM_SERVO_3_GPIO</a>, <a class="el" href="apogee__0_899_8h_source.html#l00209">PWM_SERVO_3_PIN</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00083">PWM_SERVO_3_PINSEL</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00085">PWM_SERVO_3_PINSEL_BIT</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00086">PWM_SERVO_3_PINSEL_MASK</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00084">PWM_SERVO_3_PINSEL_VAL</a>, <a class="el" href="apogee__0_899_8h_source.html#l00207">PWM_SERVO_3_RCC</a>, <a class="el" href="apogee__0_899_8h_source.html#l00223">PWM_SERVO_4_AF</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00094">PWM_SERVO_4_ENA</a>, <a class="el" href="apogee__0_899_8h_source.html#l00221">PWM_SERVO_4_GPIO</a>, <a class="el" href="apogee__0_899_8h_source.html#l00222">PWM_SERVO_4_PIN</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00090">PWM_SERVO_4_PINSEL</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00092">PWM_SERVO_4_PINSEL_BIT</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00093">PWM_SERVO_4_PINSEL_MASK</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00091">PWM_SERVO_4_PINSEL_VAL</a>, <a class="el" href="apogee__0_899_8h_source.html#l00220">PWM_SERVO_4_RCC</a>, <a class="el" href="apogee__0_899_8h_source.html#l00236">PWM_SERVO_5_AF</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00101">PWM_SERVO_5_ENA</a>, <a class="el" href="apogee__0_899_8h_source.html#l00234">PWM_SERVO_5_GPIO</a>, <a class="el" href="apogee__0_899_8h_source.html#l00235">PWM_SERVO_5_PIN</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00097">PWM_SERVO_5_PINSEL</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00099">PWM_SERVO_5_PINSEL_BIT</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00100">PWM_SERVO_5_PINSEL_MASK</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00098">PWM_SERVO_5_PINSEL_VAL</a>, <a class="el" href="apogee__0_899_8h_source.html#l00233">PWM_SERVO_5_RCC</a>, <a class="el" href="krooz__sd_8h_source.html#l00303">PWM_SERVO_6_AF</a>, <a class="el" href="krooz__sd_8h_source.html#l00301">PWM_SERVO_6_GPIO</a>, <a class="el" href="krooz__sd_8h_source.html#l00302">PWM_SERVO_6_PIN</a>, <a class="el" href="krooz__sd_8h_source.html#l00300">PWM_SERVO_6_RCC</a>, <a class="el" href="krooz__sd_8h_source.html#l00316">PWM_SERVO_7_AF</a>, <a class="el" href="krooz__sd_8h_source.html#l00314">PWM_SERVO_7_GPIO</a>, <a class="el" href="krooz__sd_8h_source.html#l00315">PWM_SERVO_7_PIN</a>, <a class="el" href="krooz__sd_8h_source.html#l00313">PWM_SERVO_7_RCC</a>, <a class="el" href="krooz__sd_8h_source.html#l00329">PWM_SERVO_8_AF</a>, <a class="el" href="krooz__sd_8h_source.html#l00327">PWM_SERVO_8_GPIO</a>, <a class="el" href="krooz__sd_8h_source.html#l00328">PWM_SERVO_8_PIN</a>, <a class="el" href="krooz__sd_8h_source.html#l00326">PWM_SERVO_8_RCC</a>, <a class="el" href="krooz__sd_8h_source.html#l00342">PWM_SERVO_9_AF</a>, <a class="el" href="krooz__sd_8h_source.html#l00340">PWM_SERVO_9_GPIO</a>, <a class="el" href="krooz__sd_8h_source.html#l00341">PWM_SERVO_9_PIN</a>, <a class="el" href="krooz__sd_8h_source.html#l00339">PWM_SERVO_9_RCC</a>, <a class="el" href="stm32f4__discovery_8h_source.html#l00554">PWM_TIM12_CHAN_MASK</a>, <a class="el" href="stm32f4__discovery_8h_source.html#l00551">PWM_TIM1_CHAN_MASK</a>, <a class="el" href="apogee__0_899_8h_source.html#l00245">PWM_TIM2_CHAN_MASK</a>, <a class="el" href="apogee__0_899_8h_source.html#l00246">PWM_TIM3_CHAN_MASK</a>, <a class="el" href="krooz__sd_8h_source.html#l00364">PWM_TIM4_CHAN_MASK</a>, <a class="el" href="krooz__sd_8h_source.html#l00365">PWM_TIM5_CHAN_MASK</a>, <a class="el" href="stm32f4__discovery_8h_source.html#l00552">PWM_TIM9_CHAN_MASK</a>, <a class="el" href="LPC21xx_8h_source.html#l00108">PWMLER</a>, <a class="el" href="lpcTMR_8h_source.html#l00124">PWMLER_LATCH0</a>, <a class="el" href="LPC21xx_8h_source.html#l00100">PWMMR0</a>, <a class="el" href="LPC21xx_8h_source.html#l00107">PWMPCR</a>, <a class="el" href="LPC21xx_8h_source.html#l00097">PWMPR</a>, <a class="el" href="LPC21xx_8h_source.html#l00095">PWMTCR</a>, <a class="el" href="lpcTMR_8h_source.html#l00083">PWMTCR_COUNTER_ENABLE</a>, <a class="el" href="lpcTMR_8h_source.html#l00085">PWMTCR_PWM_ENABLE</a>, <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00030">SERVOS_PERIOD</a>, <a class="el" href="actuators__shared__arch_8c_source.html#l00069">set_servo_timer()</a>, <a class="el" href="actuators__shared__arch_8h_source.html#l00105">TIM12</a>, <a class="el" href="actuators__shared__arch_8h_source.html#l00099">TIM12_SERVO_HZ</a>, <a class="el" href="actuators__shared__arch_8h_source.html#l00081">TIM1_SERVO_HZ</a>, <a class="el" href="actuators__shared__arch_8h_source.html#l00084">TIM2_SERVO_HZ</a>, <a class="el" href="actuators__shared__arch_8h_source.html#l00087">TIM3_SERVO_HZ</a>, <a class="el" href="actuators__shared__arch_8h_source.html#l00090">TIM4_SERVO_HZ</a>, <a class="el" href="actuators__shared__arch_8h_source.html#l00093">TIM5_SERVO_HZ</a>, <a class="el" href="actuators__shared__arch_8h_source.html#l00104">TIM9</a>, and <a class="el" href="actuators__shared__arch_8h_source.html#l00096">TIM9_SERVO_HZ</a>.</p>
 
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_a8f67fe525140a6f4b07b3416bc70f606_cgraph.png" border="0" usemap="#stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_a8f67fe525140a6f4b07b3416bc70f606_cgraph" alt=""/></div>
 <map name="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_a8f67fe525140a6f4b07b3416bc70f606_cgraph" id="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_a8f67fe525140a6f4b07b3416bc70f606_cgraph">
-<area shape="rect" id="node3" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a7781baca643026fac5601a373feb1142" title="Set GPIO configuration." alt="" coords="221,13,336,41"/><area shape="rect" id="node5" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#ab8fdf92b245b144b76d7fc5511036748" title="Set PWM channel configuration." alt="" coords="385,5,527,49"/></map>
+<area shape="rect" id="node3" href="actuators__shared__arch_8c.html#af427e4bd9cbac365246675a3dab8e548" title="Set Timer configuration." alt="" coords="235,13,360,41"/><area shape="rect" id="node5" href="actuators__shared__arch_8c.html#a5845163f5b2bb32af33d32280b7c40be" title="Set GPIO configuration." alt="" coords="408,5,563,49"/></map>
 </div>
 </p>
 
@@ -447,91 +197,20 @@ Variables</h2></td></tr>
 
 <p>Set pulse widths from actuator values, assumed to be in us. </p>
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00322">322</a> of file <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html">actuators_pwm_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00154">154</a> of file <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html">actuators_pwm_arch.c</a>.</p>
 
-<p>References <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00099">actuators_pwm_values</a>, <a class="el" href="apogee__0_899_8h_source.html#l00204">PWM_SERVO_0</a>, <a class="el" href="apogee__0_899_8h_source.html#l00210">PWM_SERVO_0_OC</a>, <a class="el" href="apogee__0_899_8h_source.html#l00205">PWM_SERVO_0_TIMER</a>, <a class="el" href="apogee__0_899_8h_source.html#l00217">PWM_SERVO_1</a>, <a class="el" href="apogee__0_899_8h_source.html#l00223">PWM_SERVO_1_OC</a>, <a class="el" href="apogee__0_899_8h_source.html#l00218">PWM_SERVO_1_TIMER</a>, <a class="el" href="apogee__0_899_8h_source.html#l00230">PWM_SERVO_2</a>, <a class="el" href="apogee__0_899_8h_source.html#l00236">PWM_SERVO_2_OC</a>, <a class="el" href="apogee__0_899_8h_source.html#l00231">PWM_SERVO_2_TIMER</a>, <a class="el" href="apogee__1_80_8h_source.html#l00314">PWM_SERVO_3</a>, <a class="el" href="apogee__0_899_8h_source.html#l00249">PWM_SERVO_3_OC</a>, <a class="el" href="apogee__0_899_8h_source.html#l00244">PWM_SERVO_3_TIMER</a>, <a class="el" href="apogee__0_899_8h_source.html#l00256">PWM_SERVO_4</a>, <a class="el" href="apogee__0_899_8h_source.html#l00262">PWM_SERVO_4_OC</a>, <a class="el" href="apogee__0_899_8h_source.html#l00257">PWM_SERVO_4_TIMER</a>, <a class="el" href="apogee__0_899_8h_source.html#l00269">PWM_SERVO_5</a>, <a class="el" href="apogee__0_899_8h_source.html#l00275">PWM_SERVO_5_OC</a>, <a class="el" href="apogee__0_899_8h_source.html#l00270">PWM_SERVO_5_TIMER</a>, <a class="el" href="krooz__sd_8h_source.html#l00338">PWM_SERVO_6</a>, <a class="el" href="krooz__sd_8h_source.html#l00344">PWM_SERVO_6_OC</a>, <a class="el" href="krooz__sd_8h_source.html#l00339">PWM_SERVO_6_TIMER</a>, <a class="el" href="krooz__sd_8h_source.html#l00351">PWM_SERVO_7</a>, <a class="el" href="krooz__sd_8h_source.html#l00357">PWM_SERVO_7_OC</a>, <a class="el" href="krooz__sd_8h_source.html#l00352">PWM_SERVO_7_TIMER</a>, <a class="el" href="krooz__sd_8h_source.html#l00364">PWM_SERVO_8</a>, <a class="el" href="krooz__sd_8h_source.html#l00370">PWM_SERVO_8_OC</a>, <a class="el" href="krooz__sd_8h_source.html#l00365">PWM_SERVO_8_TIMER</a>, <a class="el" href="krooz__sd_8h_source.html#l00377">PWM_SERVO_9</a>, <a class="el" href="krooz__sd_8h_source.html#l00383">PWM_SERVO_9_OC</a>, and <a class="el" href="krooz__sd_8h_source.html#l00378">PWM_SERVO_9_TIMER</a>.</p>
+<p>References <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00037">actuators_pwm_values</a>, <a class="el" href="apogee__0_899_8h_source.html#l00166">PWM_SERVO_0</a>, <a class="el" href="apogee__0_899_8h_source.html#l00172">PWM_SERVO_0_OC</a>, <a class="el" href="apogee__0_899_8h_source.html#l00167">PWM_SERVO_0_TIMER</a>, <a class="el" href="apogee__0_899_8h_source.html#l00179">PWM_SERVO_1</a>, <a class="el" href="apogee__0_899_8h_source.html#l00185">PWM_SERVO_1_OC</a>, <a class="el" href="apogee__0_899_8h_source.html#l00180">PWM_SERVO_1_TIMER</a>, <a class="el" href="apogee__0_899_8h_source.html#l00192">PWM_SERVO_2</a>, <a class="el" href="apogee__0_899_8h_source.html#l00198">PWM_SERVO_2_OC</a>, <a class="el" href="apogee__0_899_8h_source.html#l00193">PWM_SERVO_2_TIMER</a>, <a class="el" href="apogee__1_80_8h_source.html#l00271">PWM_SERVO_3</a>, <a class="el" href="apogee__0_899_8h_source.html#l00211">PWM_SERVO_3_OC</a>, <a class="el" href="apogee__0_899_8h_source.html#l00206">PWM_SERVO_3_TIMER</a>, <a class="el" href="apogee__0_899_8h_source.html#l00218">PWM_SERVO_4</a>, <a class="el" href="apogee__0_899_8h_source.html#l00224">PWM_SERVO_4_OC</a>, <a class="el" href="apogee__0_899_8h_source.html#l00219">PWM_SERVO_4_TIMER</a>, <a class="el" href="apogee__0_899_8h_source.html#l00231">PWM_SERVO_5</a>, <a class="el" href="apogee__0_899_8h_source.html#l00237">PWM_SERVO_5_OC</a>, <a class="el" href="apogee__0_899_8h_source.html#l00232">PWM_SERVO_5_TIMER</a>, <a class="el" href="krooz__sd_8h_source.html#l00298">PWM_SERVO_6</a>, <a class="el" href="krooz__sd_8h_source.html#l00304">PWM_SERVO_6_OC</a>, <a class="el" href="krooz__sd_8h_source.html#l00299">PWM_SERVO_6_TIMER</a>, <a class="el" href="krooz__sd_8h_source.html#l00311">PWM_SERVO_7</a>, <a class="el" href="krooz__sd_8h_source.html#l00317">PWM_SERVO_7_OC</a>, <a class="el" href="krooz__sd_8h_source.html#l00312">PWM_SERVO_7_TIMER</a>, <a class="el" href="krooz__sd_8h_source.html#l00324">PWM_SERVO_8</a>, <a class="el" href="krooz__sd_8h_source.html#l00330">PWM_SERVO_8_OC</a>, <a class="el" href="krooz__sd_8h_source.html#l00325">PWM_SERVO_8_TIMER</a>, <a class="el" href="krooz__sd_8h_source.html#l00337">PWM_SERVO_9</a>, <a class="el" href="krooz__sd_8h_source.html#l00343">PWM_SERVO_9_OC</a>, and <a class="el" href="krooz__sd_8h_source.html#l00338">PWM_SERVO_9_TIMER</a>.</p>
 
-<p>Referenced by <a class="el" href="lisa__stm__passthrough__main_8c_source.html#l00203">on_overo_link_msg_received()</a>, and <a class="el" href="test__board_8c_source.html#l00240">test_srvo_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="lisa__stm__passthrough__main_8c_source.html#l00204">on_overo_link_msg_received()</a>.</p>
 
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_a8fdcc2a7e8712e51ffcbce4fd77dcfab_icgraph.png" border="0" usemap="#stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_a8fdcc2a7e8712e51ffcbce4fd77dcfab_icgraph" alt=""/></div>
 <map name="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_a8fdcc2a7e8712e51ffcbce4fd77dcfab_icgraph" id="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_a8fdcc2a7e8712e51ffcbce4fd77dcfab_icgraph">
-<area shape="rect" id="node3" href="lisa__stm__passthrough__main_8c.html#abab689efb09e677b0b7833c21bed8115" title="on_overo_link_msg_received" alt="" coords="217,5,407,33"/><area shape="rect" id="node5" href="test__board_8c.html#a5653b40d22b71847f8637b21f912cd92" title="test_srvo_periodic" alt="" coords="248,55,376,83"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a7781baca643026fac5601a373feb1142"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void set_servo_timer </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
-          <td class="paramname"><em>timer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
-          <td class="paramname"><em>period</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
-          <td class="paramname"><em>channels_mask</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Set GPIO configuration. </p>
-<p>Set Timer configuration </p>
-
-<p>Definition at line <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00138">138</a> of file <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html">actuators_pwm_arch.c</a>.</p>
-
-<p>References <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00104">actuators_pwm_arch_channel_init()</a>, <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00044">ONE_MHZ_CLK</a>, <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00097">TIM12</a>, and <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00096">TIM9</a>.</p>
-
-<p>Referenced by <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00207">actuators_pwm_arch_init()</a>.</p>
-
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_a7781baca643026fac5601a373feb1142_cgraph.png" border="0" usemap="#stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_a7781baca643026fac5601a373feb1142_cgraph" alt=""/></div>
-<map name="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_a7781baca643026fac5601a373feb1142_cgraph" id="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_a7781baca643026fac5601a373feb1142_cgraph">
-<area shape="rect" id="node3" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#ab8fdf92b245b144b76d7fc5511036748" title="Set PWM channel configuration." alt="" coords="169,5,311,49"/></map>
-</div>
-</p>
-
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_a7781baca643026fac5601a373feb1142_icgraph.png" border="0" usemap="#stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_a7781baca643026fac5601a373feb1142_icgraph" alt=""/></div>
-<map name="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_a7781baca643026fac5601a373feb1142_icgraph" id="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_a7781baca643026fac5601a373feb1142_icgraph">
-<area shape="rect" id="node3" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a8f67fe525140a6f4b07b3416bc70f606" title="PWM arch init called by generic pwm driver." alt="" coords="169,5,335,33"/></map>
+<area shape="rect" id="node3" href="lisa__stm__passthrough__main_8c.html#abab689efb09e677b0b7833c21bed8115" title="on_overo_link_msg_received" alt="" coords="229,5,435,33"/></map>
 </div>
 </p>
 
@@ -548,9 +227,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00099">99</a> of file <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html">actuators_pwm_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00037">37</a> of file <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html">actuators_pwm_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="actuators__ardrone2__raw_8c_source.html#l00231">actuators_ardrone_commit()</a>, <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00322">actuators_pwm_commit()</a>, <a class="el" href="lisa__stm__passthrough__main_8c_source.html#l00203">on_overo_link_msg_received()</a>, and <a class="el" href="test__board_8c_source.html#l00240">test_srvo_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="actuators__ardrone2__raw_8c_source.html#l00231">actuators_ardrone_commit()</a>, <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00154">actuators_pwm_commit()</a>, and <a class="el" href="lisa__stm__passthrough__main_8c_source.html#l00204">on_overo_link_msg_received()</a>.</p>
 
 </div>
 </div>
@@ -560,7 +239,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_71548ae744da26ac2c7ca213b679dc43.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_25ba966e11d2062039182252e5025889.html">actuators</a></li><li class="navelem"><a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html">actuators_pwm_arch.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:09 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:49 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

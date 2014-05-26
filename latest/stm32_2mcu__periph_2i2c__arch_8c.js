@@ -4,6 +4,9 @@ var stm32_2mcu__periph_2i2c__arch_8c =
     [ "__I2C_REG_CRITICAL_ZONE_STOP", "stm32_2mcu__periph_2i2c__arch_8c.html#a57b9ce58e89f994cb2209448bfd65de1", null ],
     [ "BIT_X_IS_SET_IN_REG", "stm32_2mcu__periph_2i2c__arch_8c.html#a007bb527478e35deb7dd7bac8a81ae96", null ],
     [ "I2C_SR1_ERR_MASK", "stm32_2mcu__periph_2i2c__arch_8c.html#a39ca8cd22c06ced2a49fa8ca9d77fd9f", null ],
+    [ "NVIC_I2C1_IRQ_PRIO", "stm32_2mcu__periph_2i2c__arch_8c.html#a51ee0aafd3ec8a5ab3458cfb1e327f42", null ],
+    [ "NVIC_I2C2_IRQ_PRIO", "stm32_2mcu__periph_2i2c__arch_8c.html#a01bedc7e3a9512132b68b6808fbf54bf", null ],
+    [ "NVIC_I2C3_IRQ_PRIO", "stm32_2mcu__periph_2i2c__arch_8c.html#a9f8ae01465e43501aabd230ba1900fa8", null ],
     [ "STMI2CSubTransactionStatus", "stm32_2mcu__periph_2i2c__arch_8c.html#a3e5aa70e49e955c0fe96861a45b77fa8", [
       [ "STMI2C_SubTra_Busy", "stm32_2mcu__periph_2i2c__arch_8c.html#a3e5aa70e49e955c0fe96861a45b77fa8a4ed7b09a37e06d3f30b2e8592e77356a", null ],
       [ "STMI2C_SubTra_Ready_StopRequested", "stm32_2mcu__periph_2i2c__arch_8c.html#a3e5aa70e49e955c0fe96861a45b77fa8a2bf43d2a6766ade733171703bb4f0ae1", null ],

@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('baro__amsys_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="baro__amsys_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2sensors_2baro__amsys_8h" alt=""/></div>
 <map name="sw_2airborne_2modules_2sensors_2baro__amsys_8h" id="sw_2airborne_2modules_2sensors_2baro__amsys_8h">
-<area shape="rect" id="node5" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="88,99,208,127"/></map>
+<area shape="rect" id="node5" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="92,99,223,127"/></map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('baro__amsys_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="baro__amsys_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2sensors_2baro__amsys_8hdep" alt=""/></div>
 <map name="sw_2airborne_2modules_2sensors_2baro__amsys_8hdep" id="sw_2airborne_2modules_2sensors_2baro__amsys_8hdep">
-<area shape="rect" id="node3" href="baro__amsys_8c.html" title="sw/airborne/modules\l/sensors/baro_amsys.c" alt="" coords="5,99,160,143"/></map>
+<area shape="rect" id="node3" href="baro__amsys_8c.html" title="sw/airborne/modules\l/sensors/baro_amsys.c" alt="" coords="7,99,175,143"/></map>
 </div>
 </div>
 <p><a href="baro__amsys_8h_source.html">Go to the source code of this file.</a></p>
@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('baro__amsys_8h.html','');});
 Macros</h2></td></tr>
 <tr class="memitem:a3490e1f75d2caead517bb758742b83ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__amsys_8h.html#a3490e1f75d2caead517bb758742b83ab">BARO_AMSYS_DT</a>&#160;&#160;&#160;BARO_AMSYS_READ_PERIODIC_PERIOD</td></tr>
 <tr class="memdesc:a3490e1f75d2caead517bb758742b83ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">new measurement every baro_amsys_read_periodic  <a href="#a3490e1f75d2caead517bb758742b83ab"></a><br/></td></tr>
-<tr class="memitem:a4b3c9b697894eca84d22ede3171fc05e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__amsys_8h.html#a4b3c9b697894eca84d22ede3171fc05e">BaroAmsysEvent</a>()&#160;&#160;&#160;{ <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a22787b7744375550b4b631b0fec03bd0">if</a> (<a class="el" href="discsurvey_8c.html#abe1d30c393ff2113a1ad4f9f97640af2">baro_amsys_i2c_trans.status</a> == <a class="el" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a>) <a class="el" href="baro__amsys_8h.html#a195eb95b7cb2408b42ebfa4ea0a4f2ba">baro_amsys_read_event</a>(); }</td></tr>
+<tr class="memitem:a4b3c9b697894eca84d22ede3171fc05e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__amsys_8h.html#a4b3c9b697894eca84d22ede3171fc05e">BaroAmsysEvent</a>()&#160;&#160;&#160;{ <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a22787b7744375550b4b631b0fec03bd0">if</a> (<a class="el" href="baro__MS5534A_8c.html#ade818037fd6c985038ff29656089758d">baro_amsys_i2c_trans.status</a> == <a class="el" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a>) <a class="el" href="baro__amsys_8h.html#a195eb95b7cb2408b42ebfa4ea0a4f2ba">baro_amsys_read_event</a>(); }</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -172,7 +172,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="baro__amsys_8h_source.html#l00032">32</a> of file <a class="el" href="baro__amsys_8h_source.html">baro_amsys.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__alt__float_8c_source.html#l00194">alt_kalman()</a>.</p>
+<p>Referenced by <a class="el" href="ins__alt__float_8c_source.html#l00222">alt_kalman()</a>.</p>
 
 </div>
 </div>
@@ -184,7 +184,7 @@ Variables</h2></td></tr>
           <td class="memname">#define BaroAmsysEvent</td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;{ <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a22787b7744375550b4b631b0fec03bd0">if</a> (<a class="el" href="discsurvey_8c.html#abe1d30c393ff2113a1ad4f9f97640af2">baro_amsys_i2c_trans.status</a> == <a class="el" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a>) <a class="el" href="baro__amsys_8h.html#a195eb95b7cb2408b42ebfa4ea0a4f2ba">baro_amsys_read_event</a>(); }</td>
+          <td>&#160;&#160;&#160;{ <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a22787b7744375550b4b631b0fec03bd0">if</a> (<a class="el" href="baro__MS5534A_8c.html#ade818037fd6c985038ff29656089758d">baro_amsys_i2c_trans.status</a> == <a class="el" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a>) <a class="el" href="baro__amsys_8h.html#a195eb95b7cb2408b42ebfa4ea0a4f2ba">baro_amsys_read_event</a>(); }</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -210,7 +210,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="baro__amsys_8c_source.html#l00097">97</a> of file <a class="el" href="baro__amsys_8c_source.html">baro_amsys.c</a>.</p>
 
-<p>References <a class="el" href="baro__amsys_8c_source.html#l00076">baro_amsys_altitude</a>, <a class="el" href="baro__amsys_8c_source.html#l00095">baro_amsys_cnt</a>, <a class="el" href="baro__amsys_8c_source.html#l00077">baro_amsys_enabled</a>, <a class="el" href="baro__amsys_8c_source.html#l00052">BARO_AMSYS_FILTER</a>, <a class="el" href="baro__amsys_8c_source.html#l00090">baro_amsys_i2c_trans</a>, <a class="el" href="baro__amsys_8c_source.html#l00074">baro_amsys_offset</a>, <a class="el" href="baro__amsys_8c_source.html#l00093">baro_amsys_offset_init</a>, <a class="el" href="baro__amsys_8c_source.html#l00050">BARO_AMSYS_OFFSET_NBSAMPLES_AVRG</a>, <a class="el" href="baro__amsys_8c_source.html#l00049">BARO_AMSYS_OFFSET_NBSAMPLES_INIT</a>, <a class="el" href="baro__amsys_8c_source.html#l00094">baro_amsys_offset_tmp</a>, <a class="el" href="baro__amsys_8c_source.html#l00081">baro_amsys_p</a>, <a class="el" href="baro__amsys_8c_source.html#l00054">BARO_AMSYS_R</a>, <a class="el" href="baro__amsys_8c_source.html#l00078">baro_amsys_r</a>, <a class="el" href="baro__amsys_8c_source.html#l00042">BARO_AMSYS_SCALE</a>, <a class="el" href="baro__amsys_8c_source.html#l00055">BARO_AMSYS_SIGMA2</a>, <a class="el" href="baro__amsys_8c_source.html#l00079">baro_amsys_sigma2</a>, <a class="el" href="baro__amsys_8c_source.html#l00075">baro_amsys_valid</a>, <a class="el" href="baro__amsys_8c_source.html#l00086">baro_filter</a>, <a class="el" href="baro__amsys_8c_source.html#l00085">baro_scale</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="i2c_8h_source.html#l00055">I2CTransDone</a>, <a class="el" href="baro__amsys_8c_source.html#l00071">pBaroRaw</a>, <a class="el" href="baro__amsys_8c_source.html#l00084">ref_alt_init</a>, <a class="el" href="i2c_8h_source.html#l00083">i2c_transaction::status</a>, <a class="el" href="baro__amsys_8c_source.html#l00072">tBaroRaw</a>, and <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>.</p>
+<p>References <a class="el" href="baro__amsys_8c_source.html#l00076">baro_amsys_altitude</a>, <a class="el" href="baro__amsys_8c_source.html#l00095">baro_amsys_cnt</a>, <a class="el" href="baro__amsys_8c_source.html#l00077">baro_amsys_enabled</a>, <a class="el" href="baro__amsys_8c_source.html#l00052">BARO_AMSYS_FILTER</a>, <a class="el" href="baro__amsys_8c_source.html#l00090">baro_amsys_i2c_trans</a>, <a class="el" href="baro__amsys_8c_source.html#l00074">baro_amsys_offset</a>, <a class="el" href="baro__amsys_8c_source.html#l00093">baro_amsys_offset_init</a>, <a class="el" href="baro__amsys_8c_source.html#l00050">BARO_AMSYS_OFFSET_NBSAMPLES_AVRG</a>, <a class="el" href="baro__amsys_8c_source.html#l00049">BARO_AMSYS_OFFSET_NBSAMPLES_INIT</a>, <a class="el" href="baro__amsys_8c_source.html#l00094">baro_amsys_offset_tmp</a>, <a class="el" href="baro__amsys_8c_source.html#l00081">baro_amsys_p</a>, <a class="el" href="baro__amsys_8c_source.html#l00054">BARO_AMSYS_R</a>, <a class="el" href="baro__amsys_8c_source.html#l00078">baro_amsys_r</a>, <a class="el" href="baro__amsys_8c_source.html#l00042">BARO_AMSYS_SCALE</a>, <a class="el" href="baro__amsys_8c_source.html#l00055">BARO_AMSYS_SIGMA2</a>, <a class="el" href="baro__amsys_8c_source.html#l00079">baro_amsys_sigma2</a>, <a class="el" href="baro__amsys_8c_source.html#l00075">baro_amsys_valid</a>, <a class="el" href="baro__amsys_8c_source.html#l00086">baro_filter</a>, <a class="el" href="baro__amsys_8c_source.html#l00085">baro_scale</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="baro__amsys_8c_source.html#l00071">pBaroRaw</a>, <a class="el" href="baro__amsys_8c_source.html#l00084">ref_alt_init</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, <a class="el" href="baro__amsys_8c_source.html#l00072">tBaroRaw</a>, and <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>.</p>
 
 </div>
 </div>
@@ -230,7 +230,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="baro__amsys_8c_source.html#l00134">134</a> of file <a class="el" href="baro__amsys_8c_source.html">baro_amsys.c</a>.</p>
 
-<p>References <a class="el" href="baro__amsys_8c_source.html#l00083">baro_amsys_abs_altitude</a>, <a class="el" href="baro__amsys_8c_source.html#l00073">baro_amsys_adc</a>, <a class="el" href="baro__amsys_8c_source.html#l00076">baro_amsys_altitude</a>, <a class="el" href="baro__amsys_8c_source.html#l00095">baro_amsys_cnt</a>, <a class="el" href="baro__amsys_8c_source.html#l00090">baro_amsys_i2c_trans</a>, <a class="el" href="baro__amsys_8c_source.html#l00045">BARO_AMSYS_MAX_PRESSURE</a>, <a class="el" href="baro__amsys_8c_source.html#l00074">baro_amsys_offset</a>, <a class="el" href="baro__amsys_8c_source.html#l00093">baro_amsys_offset_init</a>, <a class="el" href="baro__amsys_8c_source.html#l00047">BARO_AMSYS_OFFSET_MAX</a>, <a class="el" href="baro__amsys_8c_source.html#l00048">BARO_AMSYS_OFFSET_MIN</a>, <a class="el" href="baro__amsys_8c_source.html#l00050">BARO_AMSYS_OFFSET_NBSAMPLES_AVRG</a>, <a class="el" href="baro__amsys_8c_source.html#l00094">baro_amsys_offset_tmp</a>, <a class="el" href="baro__amsys_8c_source.html#l00081">baro_amsys_p</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00044">BARO_AMSYS_SENDER_ID</a>, <a class="el" href="baro__amsys_8c_source.html#l00080">baro_amsys_temp</a>, <a class="el" href="baro__amsys_8c_source.html#l00075">baro_amsys_valid</a>, <a class="el" href="baro__amsys_8c_source.html#l00086">baro_filter</a>, <a class="el" href="baro__amsys_8c_source.html#l00087">baro_old</a>, <a class="el" href="baro__amsys_8c_source.html#l00085">baro_scale</a>, <a class="el" href="i2c_8h_source.html#l00082">i2c_transaction::buf</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="i2c_8h_source.html#l00055">I2CTransDone</a>, <a class="el" href="baro__amsys_8c_source.html#l00071">pBaroRaw</a>, <a class="el" href="baro__amsys_8c_source.html#l00084">ref_alt_init</a>, <a class="el" href="i2c_8h_source.html#l00083">i2c_transaction::status</a>, <a class="el" href="baro__amsys_8c_source.html#l00072">tBaroRaw</a>, and <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>.</p>
+<p>References <a class="el" href="baro__amsys_8c_source.html#l00083">baro_amsys_abs_altitude</a>, <a class="el" href="baro__amsys_8c_source.html#l00073">baro_amsys_adc</a>, <a class="el" href="baro__amsys_8c_source.html#l00076">baro_amsys_altitude</a>, <a class="el" href="baro__amsys_8c_source.html#l00095">baro_amsys_cnt</a>, <a class="el" href="baro__amsys_8c_source.html#l00090">baro_amsys_i2c_trans</a>, <a class="el" href="baro__amsys_8c_source.html#l00045">BARO_AMSYS_MAX_PRESSURE</a>, <a class="el" href="baro__amsys_8c_source.html#l00074">baro_amsys_offset</a>, <a class="el" href="baro__amsys_8c_source.html#l00093">baro_amsys_offset_init</a>, <a class="el" href="baro__amsys_8c_source.html#l00047">BARO_AMSYS_OFFSET_MAX</a>, <a class="el" href="baro__amsys_8c_source.html#l00048">BARO_AMSYS_OFFSET_MIN</a>, <a class="el" href="baro__amsys_8c_source.html#l00050">BARO_AMSYS_OFFSET_NBSAMPLES_AVRG</a>, <a class="el" href="baro__amsys_8c_source.html#l00094">baro_amsys_offset_tmp</a>, <a class="el" href="baro__amsys_8c_source.html#l00081">baro_amsys_p</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00044">BARO_AMSYS_SENDER_ID</a>, <a class="el" href="baro__amsys_8c_source.html#l00080">baro_amsys_temp</a>, <a class="el" href="baro__amsys_8c_source.html#l00075">baro_amsys_valid</a>, <a class="el" href="baro__amsys_8c_source.html#l00086">baro_filter</a>, <a class="el" href="baro__amsys_8c_source.html#l00087">baro_old</a>, <a class="el" href="baro__amsys_8c_source.html#l00085">baro_scale</a>, <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="baro__amsys_8c_source.html#l00071">pBaroRaw</a>, <a class="el" href="baro__amsys_8c_source.html#l00084">ref_alt_init</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, <a class="el" href="baro__amsys_8c_source.html#l00072">tBaroRaw</a>, and <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>.</p>
 
 </div>
 </div>
@@ -250,7 +250,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="baro__amsys_8c_source.html#l00117">117</a> of file <a class="el" href="baro__amsys_8c_source.html">baro_amsys.c</a>.</p>
 
-<p>References <a class="el" href="baro__amsys_8c_source.html#l00083">baro_amsys_abs_altitude</a>, <a class="el" href="baro__amsys_8c_source.html#l00039">BARO_AMSYS_ADDR</a>, <a class="el" href="baro__amsys_8c_source.html#l00076">baro_amsys_altitude</a>, <a class="el" href="baro__amsys_8c_source.html#l00066">BARO_AMSYS_I2C_DEV</a>, <a class="el" href="baro__amsys_8c_source.html#l00090">baro_amsys_i2c_trans</a>, <a class="el" href="baro__amsys_8c_source.html#l00074">baro_amsys_offset</a>, <a class="el" href="baro__amsys_8c_source.html#l00081">baro_amsys_p</a>, <a class="el" href="baro__amsys_8c_source.html#l00080">baro_amsys_temp</a>, <a class="el" href="downlink_8h_source.html#l00068">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00078">DefaultDevice</a>, <a class="el" href="i2c_8c_source.html#l00248">i2c_receive()</a>, <a class="el" href="i2c_8h_source.html#l00055">I2CTransDone</a>, <a class="el" href="baro__amsys_8c_source.html#l00071">pBaroRaw</a>, <a class="el" href="baro__amsys_8c_source.html#l00084">ref_alt_init</a>, and <a class="el" href="i2c_8h_source.html#l00083">i2c_transaction::status</a>.</p>
+<p>References <a class="el" href="baro__amsys_8c_source.html#l00083">baro_amsys_abs_altitude</a>, <a class="el" href="baro__amsys_8c_source.html#l00039">BARO_AMSYS_ADDR</a>, <a class="el" href="baro__amsys_8c_source.html#l00076">baro_amsys_altitude</a>, <a class="el" href="baro__amsys_8c_source.html#l00066">BARO_AMSYS_I2C_DEV</a>, <a class="el" href="baro__amsys_8c_source.html#l00090">baro_amsys_i2c_trans</a>, <a class="el" href="baro__amsys_8c_source.html#l00074">baro_amsys_offset</a>, <a class="el" href="baro__amsys_8c_source.html#l00081">baro_amsys_p</a>, <a class="el" href="baro__amsys_8c_source.html#l00080">baro_amsys_temp</a>, <a class="el" href="downlink_8h_source.html#l00081">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00091">DefaultDevice</a>, <a class="el" href="i2c_8c_source.html#l00248">i2c_receive()</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="baro__amsys_8c_source.html#l00071">pBaroRaw</a>, <a class="el" href="baro__amsys_8c_source.html#l00084">ref_alt_init</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -259,7 +259,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="baro__amsys_8h_a5903f1c962f61487d09dff8ffd52473c_cgraph.png" border="0" usemap="#baro__amsys_8h_a5903f1c962f61487d09dff8ffd52473c_cgraph" alt=""/></div>
 <map name="baro__amsys_8h_a5903f1c962f61487d09dff8ffd52473c_cgraph" id="baro__amsys_8h_a5903f1c962f61487d09dff8ffd52473c_cgraph">
-<area shape="rect" id="node3" href="group__i2c.html#ga9bdc2f5162d3e77dd58b7541ddcbe5d1" title="i2c_receive" alt="" coords="229,5,317,33"/><area shape="rect" id="node5" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="i2c_submit" alt="" coords="365,5,451,33"/></map>
+<area shape="rect" id="node3" href="group__i2c.html#ga9bdc2f5162d3e77dd58b7541ddcbe5d1" title="Submit a read only transaction." alt="" coords="248,5,341,33"/><area shape="rect" id="node5" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction." alt="" coords="389,5,480,33"/></map>
 </div>
 </p>
 
@@ -310,7 +310,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="baro__amsys_8c_source.html#l00077">77</a> of file <a class="el" href="baro__amsys_8c_source.html">baro_amsys.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__alt__float_8c_source.html#l00194">alt_kalman()</a>, and <a class="el" href="baro__amsys_8c_source.html#l00097">baro_amsys_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__alt__float_8c_source.html#l00222">alt_kalman()</a>, and <a class="el" href="baro__amsys_8c_source.html#l00097">baro_amsys_init()</a>.</p>
 
 </div>
 </div>
@@ -342,7 +342,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="baro__amsys_8c_source.html#l00078">78</a> of file <a class="el" href="baro__amsys_8c_source.html">baro_amsys.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__alt__float_8c_source.html#l00194">alt_kalman()</a>, and <a class="el" href="baro__amsys_8c_source.html#l00097">baro_amsys_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__alt__float_8c_source.html#l00222">alt_kalman()</a>, and <a class="el" href="baro__amsys_8c_source.html#l00097">baro_amsys_init()</a>.</p>
 
 </div>
 </div>
@@ -358,7 +358,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="baro__amsys_8c_source.html#l00079">79</a> of file <a class="el" href="baro__amsys_8c_source.html">baro_amsys.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__alt__float_8c_source.html#l00194">alt_kalman()</a>, and <a class="el" href="baro__amsys_8c_source.html#l00097">baro_amsys_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__alt__float_8c_source.html#l00222">alt_kalman()</a>, and <a class="el" href="baro__amsys_8c_source.html#l00097">baro_amsys_init()</a>.</p>
 
 </div>
 </div>
@@ -400,7 +400,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="baro__amsys_8h.html">baro_amsys.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:10 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:03 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

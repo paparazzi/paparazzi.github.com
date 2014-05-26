@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('ppm_8c_source.html','');});
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="ppm_8h.html#a22b088ef81ec0d31c6d296aaed87b9ec">   25</a></span>&#160;<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="ppm_8c.html#af4e648091d7606499cac0f13ce44c8b6">ppm_pulses</a>[ <a class="code" href="lpc21_2subsystems_2radio__control_2ppm__arch_8h.html#aeaaf57e63686c19ad0a287287d33ce2f">PPM_NB_CHANNEL</a> ];</div>
 <div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="ppm_8h.html#a40135dd9f74fd7e3e77d603b0dd4e3e7">   26</a></span>&#160;<span class="keyword">volatile</span> bool_t <a class="code" href="ppm_8c.html#a40135dd9f74fd7e3e77d603b0dd4e3e7">ppm_frame_available</a>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#if DOWNLINK</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#if PERIODIC_TELEMETRY</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifdef FBW</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DOWNLINK_TELEMETRY &amp;telemetry_Fbw</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('ppm_8c_source.html','');});
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="ppm_8c.html#a40135dd9f74fd7e3e77d603b0dd4e3e7">ppm_frame_available</a> = <a class="code" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="lpc21_2subsystems_2radio__control_2ppm__arch_8c.html#aa933c6924c3511448e65fc31e2d26129" title="Architecture dependant code.">ppm_arch_init</a>();</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#if DOWNLINK</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#if PERIODIC_TELEMETRY</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor"></span>  <a class="code" href="telemetry_8c.html#abb4aa9b3c0c8d93e1372de5da86de828" title="Register a telemetry callback function.">register_periodic_telemetry</a>(DOWNLINK_TELEMETRY, <span class="stringliteral">&quot;PPM&quot;</span>, <a class="code" href="sim_2subsystems_2radio__control_2ppm__arch_8c.html#ad5c714aac41977d2adee4ad5054823ce">send_ppm</a>);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor"></span>}</div>
@@ -166,7 +166,7 @@ $(document).ready(function(){initNavTree('ppm_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_a146ed466020daad33793c9994e8ab3e.html">radio_control</a></li><li class="navelem"><a class="el" href="ppm_8c.html">ppm.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:09 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:46 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

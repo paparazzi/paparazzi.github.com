@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('geo__mag_8c_source.html','');});
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * Boston, MA 02111-1307, USA.</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="geo__mag_8h.html" title="Calculation of the Geomagnetic field vector based on current GPS fix.">modules/geo_mag/geo_mag.h</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="geo__mag_8h.html" title="Calculation of the Geomagnetic field vector from current GPS fix.">modules/geo_mag/geo_mag.h</a>&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pprz__geodetic__wmm2010_8h.html">math/pprz_geodetic_wmm2010.h</a>&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pprz__algebra__double_8h.html" title="Paparazzi double precision floating point algebra.">math/pprz_algebra_double.h</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gps_8h.html" title="Device independent GPS code (interface)">subsystems/gps.h</a>&quot;</span></div>
@@ -145,13 +145,13 @@ $(document).ready(function(){initNavTree('geo__mag_8c_source.html','');});
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="geo__mag_8h.html#a0b31ff993a34eceda1a56f755470c413">   44</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="geo__mag_8c.html#a0b31ff993a34eceda1a56f755470c413">geo_mag_periodic</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#afeffb02bdd18d27a87e96bb77175168f" title="status of fix">fix</a> == <a class="code" href="gps_8h.html#ac5e980c8325a29dd79a45ed26af404be">GPS_FIX_3D</a> &amp;&amp; !<a class="code" href="geo__mag_8c.html#ae4711a18aa86215b5dd64ef9da7bdebd">geo_mag_vect</a>.<a class="code" href="structGeoMagVect.html#af824842bef1cc8e81693d8779f8f5aaa">ready</a> &amp;&amp; !<a class="code" href="rotorcraft_2autopilot_8c.html#a7e21dda68d44d395845b5f36e254cd4b">autopilot_motors_on</a>)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#afeffb02bdd18d27a87e96bb77175168f" title="status of fix">fix</a> == <a class="code" href="gps_8h.html#ac5e980c8325a29dd79a45ed26af404be">GPS_FIX_3D</a> &amp;&amp; !<a class="code" href="geo__mag_8c.html#ae4711a18aa86215b5dd64ef9da7bdebd">geo_mag_vect</a>.<a class="code" href="structGeoMagVect.html#af824842bef1cc8e81693d8779f8f5aaa">ready</a> &amp;&amp; !<a class="code" href="rotorcraft_2autopilot_8c.html#a7e21dda68d44d395845b5f36e254cd4b">autopilot_motors_on</a>)</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="geo__mag_8c.html#a860fcef9bf99d58d3f1386ae176c0e90">geo_mag_calc_flag</a> = <a class="code" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="geo__mag_8h.html#acbcdb044d58bcc512ab1e87e31020d81">   49</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="geo__mag_8c.html#acbcdb044d58bcc512ab1e87e31020d81">geo_mag_event</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="geo__mag_8c.html#a860fcef9bf99d58d3f1386ae176c0e90">geo_mag_calc_flag</a>) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="geo__mag_8c.html#a860fcef9bf99d58d3f1386ae176c0e90">geo_mag_calc_flag</a>) {</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">double</span> gha[<a class="code" href="pprz__geodetic__wmm2010_8h.html#a79bd2810e131df6189e69ed5662911d1">MAXCOEFF</a>]; <span class="comment">// Geomag global variables</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> nmax;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
@@ -191,7 +191,7 @@ $(document).ready(function(){initNavTree('geo__mag_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_45631f37b0deddad5fac6a40f1cf48fa.html">geo_mag</a></li><li class="navelem"><a class="el" href="geo__mag_8c.html">geo_mag.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:41 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

@@ -1,48 +1,47 @@
 <map id="stateGetHorizontalSpeedDir_f" name="stateGetHorizontalSpeedDir_f">
-<area shape="rect" id="node3" href="$cam_8c.html#aab3da8ed719ee01699f50450b3df3b13" title="Computes the right angles from target_x, target_y, target_alt." alt="" coords="292,78,377,106"/>
-<area shape="rect" id="node16" href="$nav_8h.html#ae9d11d2e378b23ecbee86419cbf341f0" title="Computes desired_x, desired_y and desired_course." alt="" coords="300,752,369,780"/>
-<area shape="rect" id="node18" href="$formation_8h.html#a18de0c4f9e864cb4db84458b33b463dd" title="formation_flight" alt="" coords="488,458,597,486"/>
-<area shape="rect" id="node84" href="$cartography_8h.html#a7b94efa215c22c1373bed3e596c4daac" title="nav_survey_losange\l_carto" alt="" coords="681,912,820,956"/>
-<area shape="rect" id="node95" href="$potential_8h.html#a2ecae8ed4b80ccfece655453a56db7cd" title="potential_task" alt="" coords="492,854,593,882"/>
-<area shape="rect" id="node98" href="$fixedwing_2stabilization_2stabilization__attitude_8h.html#a02ae04f0f1bbe7588572e87e3dadb381" title="h_ctl_course_loop" alt="" coords="272,955,397,983"/>
-<area shape="rect" id="node106" href="$chemotaxis_8h.html#af255179af8614e93ad7fbea50756c7a8" title="nav_chemotaxis" alt="" coords="277,1006,392,1034"/>
-<area shape="rect" id="node109" href="$nav__survey__rectangle_8h.html#acb7f46110d7005aa6fa0e73814a81aef" title="nav_survey_rectangle_init" alt="" coords="249,1056,420,1084"/>
-<area shape="rect" id="node112" href="$snav_8h.html#a3cce9f9114db55083276eb9a4643cdcc" title="snav_init" alt="" coords="297,1107,372,1135"/>
-<area shape="rect" id="node114" href="$tcas_8h.html#adb2f00821358ed6ad0f366e6a2422558" title="tcas_periodic_task_1Hz" alt="" coords="255,1158,415,1186"/>
-<area shape="rect" id="node5" href="$cam_8c.html#a7e228da24201c997a297f7c49bffa74c" title="cam_ac_target" alt="" coords="489,27,596,55"/>
-<area shape="rect" id="node7" href="$cam_8h.html#a1ac78decc31cdd4c6b7584a8bf42d315" title="For CAM_MODE_AC_TARGET mode." alt="" coords="701,27,800,55"/>
-<area shape="rect" id="node9" href="$cam_8c.html#aa5c7c762b35b57ec479e6244f006c5d1" title="Point straight down." alt="" coords="501,78,584,106"/>
-<area shape="rect" id="node13" href="$cam_8c.html#a91c2133236e62688f7acfe1ab9fe2f11" title="cam_waypoint_target" alt="" coords="471,128,615,156"/>
-<area shape="rect" id="node20" href="$mission__fw__nav_8c.html#a5c42cd8acf9fd5c504a993ea3cf91a6a" title="Navigation function to a single waypoint." alt="" coords="484,508,601,536"/>
-<area shape="rect" id="node27" href="$nav_8h.html#ad1b9d2e8da4a32477ca8bedc0bca86fe" title="Angle from center to mobile." alt="" coords="489,752,596,780"/>
-<area shape="rect" id="node66" href="$nav_8c.html#a51583ee86b14f2a389b28f2641c4e010" title="nav_follow" alt="" coords="501,803,584,831"/>
-<area shape="rect" id="node68" href="$nav_8h.html#ab4247c9f3dc0417690e1404add032cbe" title="Computes the carrot position along the desired segment." alt="" coords="493,559,592,587"/>
-<area shape="rect" id="node22" href="$mission__fw__nav_8c.html#a1039c6cd8dd27b784412d6e9cee0d091" title="Navigation function along a path." alt="" coords="688,128,813,156"/>
-<area shape="rect" id="node24" href="$mission__fw__nav_8c.html#a77c170761e804706933b8eccce1e93ea" title="Run mission." alt="" coords="900,154,991,182"/>
-<area shape="rect" id="node29" href="$border__line_8h.html#a8f3e2c1e5e3fc9cad4148e41fcf3b02e" title="border_line" alt="" coords="708,1080,793,1108"/>
-<area shape="rect" id="node31" href="$discsurvey_8h.html#a66ae4c7ce2ec2a5a145c2d325814987a" title="disc_survey" alt="" coords="705,534,796,562"/>
-<area shape="rect" id="node33" href="$OSAMNav_8h.html#a05ab832ffae933cb0abcbdd8f7ab16cd" title="FlightLine" alt="" coords="712,483,789,511"/>
-<area shape="rect" id="node37" href="$OSAMNav_8h.html#a7cfb0b1945fa72c85a15fe5f68957eaa" title="FlowerNav" alt="" coords="708,736,793,764"/>
-<area shape="rect" id="node39" href="$mission__fw__nav_8c.html#a14831a73e604ff798ed1f0bc7f871e02" title="Navigation function on a circle." alt="" coords="684,979,817,1007"/>
-<area shape="rect" id="node42" href="$nav_8h.html#a083964068940390afc5e6621f015c19f" title="Navigation along a figure 8." alt="" coords="712,787,789,815"/>
-<area shape="rect" id="node44" href="$nav__line_8h.html#ac3f15d21270774050b4aca00e3d7bfa8" title="nav_line" alt="" coords="716,1131,785,1159"/>
-<area shape="rect" id="node46" href="$nav_8h.html#a5a4a7ec5d3cf1734dca01d87b3d1eef5" title="nav_oval" alt="" coords="713,838,788,866"/>
-<area shape="rect" id="node48" href="$poly__survey__adv_8h.html#a586979cca6c5ffbd1852333c379cc959" title="main navigation routine." alt="" coords="887,407,1004,435"/>
-<area shape="rect" id="node50" href="$OSAMNav_8h.html#af8143af1dfd5795fb74590b32ff0d7d9" title="PolygonSurvey" alt="" coords="697,432,804,460"/>
-<area shape="rect" id="node52" href="$OSAMNav_8h.html#ad63babe6310a186e171b18cc98ed9158" title="SkidLanding" alt="" coords="704,584,797,612"/>
-<area shape="rect" id="node54" href="$snav_8h.html#ac14ae6946aa250ffb65064f0c479553c" title="snav_circle1" alt="" coords="704,1182,797,1210"/>
-<area shape="rect" id="node56" href="$snav_8h.html#acd06ffc96fc54df1e7cb4b835c4c2cdd" title="snav_circle2" alt="" coords="704,1283,797,1311"/>
-<area shape="rect" id="node58" href="$snav_8h.html#a3e498af4debb840cd3fec68d86b94b17" title="snav_on_time" alt="" coords="700,1334,801,1362"/>
-<area shape="rect" id="node60" href="$spiral_8h.html#af5423b91973dcb13dc1409e5131d194d" title="SpiralNav" alt="" coords="712,635,789,663"/>
-<area shape="rect" id="node62" href="$OSAMNav_8h.html#a09ea908213bb2d10a04f262d5c578854" title="VerticalRaster" alt="" coords="699,1030,803,1058"/>
-<area shape="rect" id="node64" href="$zamboni__survey_8h.html#acd6fbfb1f647a21a59e0f7d00fc9d37a" title="main navigation routine." alt="" coords="693,686,808,714"/>
-<area shape="rect" id="node35" href="$OSAMNav_8h.html#a35730be09cdeb6b537eb047c0bff7b38" title="FlightLineBlock" alt="" coords="889,483,1001,511"/>
-<area shape="rect" id="node70" href="$OSAMNav_8h.html#a77610706017cbfb06ae7449b91382a01" title="BungeeTakeoff" alt="" coords="696,331,805,359"/>
-<area shape="rect" id="node76" href="$mission__fw__nav_8c.html#a152a2539d75d45caa437fce535b9e6ab" title="Navigation function along a segment." alt="" coords="675,179,827,207"/>
-<area shape="rect" id="node81" href="$poly__survey__adv_8c.html#a41b3306deea7bd6aba91b132e93e1205" title="nav_points" alt="" coords="708,382,793,410"/>
-<area shape="rect" id="node87" href="$nav__survey__rectangle_8h.html#a385a092826884a58b3b6fb909fe61c6f" title="nav_survey_rectangle" alt="" coords="677,230,824,258"/>
-<area shape="rect" id="node91" href="$snav_8h.html#a74b915e272f1232d7ad01950b68557b1" title="snav_route" alt="" coords="708,280,793,308"/>
-<area shape="rect" id="node100" href="$main__ap_8h.html#a79f823520ea0823e20084686978281e6" title="Compute desired_course." alt="" coords="487,1384,599,1412"/>
-<area shape="rect" id="node102" href="$main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="665,1384,836,1412"/>
-<area shape="rect" id="node104" href="$sim__ap_8c.html#a8c0970e9878d0e3e3e6c5d6ff0741d4f" title="sim_nav_task" alt="" coords="700,1435,801,1463"/>
+<area shape="rect" id="node3" href="$cam_8c.html#aab3da8ed719ee01699f50450b3df3b13" title="Computes the right angles from target_x, target_y, target_alt." alt="" coords="312,78,408,106"/>
+<area shape="rect" id="node16" href="$nav_8h.html#ae9d11d2e378b23ecbee86419cbf341f0" title="Computes desired_x, desired_y and desired_course." alt="" coords="321,574,399,602"/>
+<area shape="rect" id="node18" href="$formation_8h.html#a18de0c4f9e864cb4db84458b33b463dd" title="formation_flight" alt="" coords="520,422,643,450"/>
+<area shape="rect" id="node83" href="$cartography_8h.html#a7b94efa215c22c1373bed3e596c4daac" title="nav_survey_losange\l_carto" alt="" coords="735,457,884,501"/>
+<area shape="rect" id="node92" href="$potential_8h.html#a2ecae8ed4b80ccfece655453a56db7cd" title="potential_task" alt="" coords="525,878,637,906"/>
+<area shape="rect" id="node95" href="$fixedwing_2stabilization_2stabilization__attitude_8h.html#a02ae04f0f1bbe7588572e87e3dadb381" title="h_ctl_course_loop" alt="" coords="292,726,428,754"/>
+<area shape="rect" id="node103" href="$chemotaxis_8h.html#af255179af8614e93ad7fbea50756c7a8" title="nav_chemotaxis" alt="" coords="297,777,423,805"/>
+<area shape="rect" id="node106" href="$nav__survey__rectangle_8h.html#acb7f46110d7005aa6fa0e73814a81aef" title="nav_survey_rectangle_init" alt="" coords="267,828,453,856"/>
+<area shape="rect" id="node109" href="$nav__smooth_8h.html#a3cce9f9114db55083276eb9a4643cdcc" title="snav_init" alt="" coords="321,878,399,906"/>
+<area shape="rect" id="node111" href="$tcas_8h.html#adb2f00821358ed6ad0f366e6a2422558" title="tcas_periodic_task_1Hz" alt="" coords="275,929,445,957"/>
+<area shape="rect" id="node5" href="$cam_8c.html#a7e228da24201c997a297f7c49bffa74c" title="cam_ac_target" alt="" coords="523,28,640,56"/>
+<area shape="rect" id="node7" href="$cam_8h.html#a1ac78decc31cdd4c6b7584a8bf42d315" title="For CAM_MODE_AC_TARGET mode." alt="" coords="756,28,863,56"/>
+<area shape="rect" id="node9" href="$cam_8c.html#aa5c7c762b35b57ec479e6244f006c5d1" title="Point straight down." alt="" coords="537,78,625,106"/>
+<area shape="rect" id="node13" href="$cam_8c.html#a91c2133236e62688f7acfe1ab9fe2f11" title="cam_waypoint_target" alt="" coords="503,129,660,157"/>
+<area shape="rect" id="node20" href="$mission__fw__nav_8c.html#a5c42cd8acf9fd5c504a993ea3cf91a6a" title="Navigation function to a single waypoint." alt="" coords="519,473,644,501"/>
+<area shape="rect" id="node27" href="$nav_8h.html#ad1b9d2e8da4a32477ca8bedc0bca86fe" title="Angle from center to mobile." alt="" coords="528,828,635,856"/>
+<area shape="rect" id="node64" href="$nav_8c.html#a51583ee86b14f2a389b28f2641c4e010" title="nav_follow" alt="" coords="539,574,624,602"/>
+<area shape="rect" id="node66" href="$nav_8h.html#ab4247c9f3dc0417690e1404add032cbe" title="Computes the carrot position along the desired segment." alt="" coords="528,524,635,552"/>
+<area shape="rect" id="node22" href="$mission__fw__nav_8c.html#a1039c6cd8dd27b784412d6e9cee0d091" title="Navigation function along a path." alt="" coords="741,129,877,157"/>
+<area shape="rect" id="node24" href="$mission__fw__nav_8c.html#a77c170761e804706933b8eccce1e93ea" title="Run mission." alt="" coords="1001,154,1100,182"/>
+<area shape="rect" id="node29" href="$mission__fw__nav_8c.html#a14831a73e604ff798ed1f0bc7f871e02" title="Navigation function on a circle." alt="" coords="739,929,880,957"/>
+<area shape="rect" id="node32" href="$nav_8h.html#a083964068940390afc5e6621f015c19f" title="Navigation along a figure 8." alt="" coords="768,878,851,906"/>
+<area shape="rect" id="node34" href="$nav__flower_8h.html#a9637e56920fce5762d00146a76a7544c" title="nav_flower_run" alt="" coords="751,574,868,602"/>
+<area shape="rect" id="node36" href="$nav__line__border_8h.html#aeddef6246d345208b245f65e887d171d" title="nav_line_border_run" alt="" coords="735,1233,884,1261"/>
+<area shape="rect" id="node38" href="$nav__line__osam_8h.html#a47d8cfcc2d1a53cd30b517eddd1685cd" title="nav_line_osam_run" alt="" coords="737,524,881,552"/>
+<area shape="rect" id="node42" href="$nav__line_8h.html#a18b0b7d01bb201ada839b53b21a09c4a" title="nav_line_run" alt="" coords="759,1284,860,1312"/>
+<area shape="rect" id="node44" href="$nav_8h.html#a5a4a7ec5d3cf1734dca01d87b3d1eef5" title="nav_oval" alt="" coords="771,777,848,805"/>
+<area shape="rect" id="node46" href="$nav__spiral_8h.html#aabff5631bd3af116a30f1d907a71407c" title="nav_spiral_run" alt="" coords="752,828,867,856"/>
+<area shape="rect" id="node48" href="$nav__survey__disc_8h.html#abab191ba4f14b5209d378030951cf847" title="nav_survey_disc_run" alt="" coords="732,625,887,653"/>
+<area shape="rect" id="node50" href="$nav__survey__poly__osam_8h.html#a9198ff1abdfc355712f7a4d3f79035bc" title="nav_survey_poly_osam_run" alt="" coords="711,676,908,704"/>
+<area shape="rect" id="node52" href="$nav__survey__polygon_8h.html#ad56bdec94ac98495799a04f0d12b51e2" title="main navigation routine." alt="" coords="961,777,1140,805"/>
+<area shape="rect" id="node54" href="$nav__survey__zamboni_8h.html#a8030e694329c0ae385b028a83cf32f53" title="main navigation routine." alt="" coords="717,726,901,754"/>
+<area shape="rect" id="node56" href="$nav__vertical__raster_8h.html#a3ffc1f9f9d45bc62c9f22399033a82e3" title="nav_vertical_raster_run" alt="" coords="724,1030,895,1058"/>
+<area shape="rect" id="node58" href="$nav__smooth_8h.html#ac14ae6946aa250ffb65064f0c479553c" title="snav_circle1" alt="" coords="760,1081,859,1109"/>
+<area shape="rect" id="node60" href="$nav__smooth_8h.html#acd06ffc96fc54df1e7cb4b835c4c2cdd" title="snav_circle2" alt="" coords="760,1132,859,1160"/>
+<area shape="rect" id="node62" href="$nav__smooth_8h.html#a3e498af4debb840cd3fec68d86b94b17" title="snav_on_time" alt="" coords="755,1182,864,1210"/>
+<area shape="rect" id="node40" href="$nav__line__osam_8h.html#a52b50be4546af7cd9fa898f73caf62f0" title="nav_line_osam_block_run" alt="" coords="959,524,1143,552"/>
+<area shape="rect" id="node69" href="$mission__fw__nav_8c.html#a152a2539d75d45caa437fce535b9e6ab" title="Navigation function along a segment." alt="" coords="727,180,892,208"/>
+<area shape="rect" id="node72" href="$nav__bungee__takeoff_8h.html#a1443c39c57b7a5a54782b4fdff5a0f8e" title="nav_bungee_takeoff_run" alt="" coords="720,332,899,360"/>
+<area shape="rect" id="node78" href="$nav__survey__polygon_8c.html#aaef5f3a37a82d5b3eb87209fb73cfb36" title="nav_points" alt="" coords="764,382,855,410"/>
+<area shape="rect" id="node87" href="$nav__survey__rectangle_8h.html#a385a092826884a58b3b6fb909fe61c6f" title="nav_survey_rectangle" alt="" coords="729,230,889,258"/>
+<area shape="rect" id="node90" href="$nav__smooth_8h.html#a74b915e272f1232d7ad01950b68557b1" title="snav_route" alt="" coords="763,281,856,309"/>
+<area shape="rect" id="node97" href="$main__ap_8h.html#a79f823520ea0823e20084686978281e6" title="Compute desired_course." alt="" coords="520,1334,643,1362"/>
+<area shape="rect" id="node99" href="$main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="716,1385,903,1413"/>
+<area shape="rect" id="node101" href="$sim__ap_8c.html#a8c0970e9878d0e3e3e6c5d6ff0741d4f" title="sim_nav_task" alt="" coords="755,1334,864,1362"/>
 </map>

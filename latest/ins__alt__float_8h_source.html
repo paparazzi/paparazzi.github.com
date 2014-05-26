@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -136,65 +136,30 @@ $(document).ready(function(){initNavTree('ins__alt__float_8h_source.html','');})
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="inttypes_8h.html">inttypes.h</a>&gt;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;std.h&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="state_8h.html" title="API to get/set the generic vehicle states.">state.h</a>&quot;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;generated/modules.h&quot;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#if USE_BAROMETER</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifdef BARO_MS5534A</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;baro_MS5534A.h&quot;</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#if USE_BARO_ETS</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="baro__ets_8h.html" title="Driver for the EagleTree Systems Altitude Sensor.">modules/sensors/baro_ets.h</a>&quot;</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#if USE_BARO_BMP</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="baro__bmp_8h.html" title="Bosch BMP085 I2C sensor interface.">modules/sensors/baro_bmp.h</a>&quot;</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#if USE_BARO_MS5611</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="baro__ms5611__i2c_8h.html">modules/sensors/baro_ms5611_i2c.h</a>&quot;</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#if USE_BARO_AMSYS</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="baro__amsys_8h.html">modules/sensors/baro_amsys.h</a>&quot;</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="ins__alt__float_8c.html#a3ebdd84c4d3fbb1cfc538ec78c338c4e">ins_qfe</a>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="ins__alt__float_8c.html#a27e0d1780b58ba41c14610e35c069363">ins_baro_alt</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">extern</span> bool_t <a class="code" href="ins__alt__float_8c.html#a553dc8d7c1cce9ee04904fe2104a4e4b">ins_baro_initialized</a>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif //USE_BAROMETER</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="ins__alt__float_8c.html#a1bee93c6ac3b7c73de54e676b169c406" title="estimated altitude above MSL in meters">ins_alt</a>; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="ins__alt__float_8c.html#a9d8c607bff96d273f2549ec595c15a1f" title="estimated vertical speed in m/s (positive-up)">ins_alt_dot</a>; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">extern</span> bool_t <a class="code" href="ins__alt__float_8c.html#a0fc68d40afe495ea45845407887f4874">alt_kalman_enabled</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ins__alt__float_8c.html#a82c5f9a896d4617e4f329c41063d2ad4">alt_kalman_reset</a>( <span class="keywordtype">void</span> );</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ins__alt__float_8c.html#a0eccb7c609b6468276c102afd386d8a9">alt_kalman_init</a>( <span class="keywordtype">void</span> );</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ins__alt__float_8c.html#ad953204fa138bf6a4eb492fe88b71d5d">alt_kalman</a>( <span class="keywordtype">float</span> );</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#if USE_BAROMETER</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor"></span><span class="comment">/* Kalman filter cannot be disabled in this mode (no z_dot) */</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="code" href="ins__alt__float_8h.html#ab328c266a556c34d5383ff77c8cd77b7">   75</a></span>&#160;<span class="preprocessor">#define EstimatorSetAlt(z) alt_kalman(z)</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else </span><span class="comment">/* USE_BAROMETER */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EstimatorSetAlt(z) { \</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">  if (!alt_kalman_enabled) { \</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">    ins_alt = z; \</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">  } else { \</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">    alt_kalman(z); \</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">  } \</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">}</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* ! USE_BAROMETER */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INS_ALT_FLOAT_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="structInsAltFloat.html">   37</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structInsAltFloat.html" title="Ins implementation state (altitude, float)">InsAltFloat</a> {</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="structInsAltFloat.html#a1a2a36952efd935b096d52162eddb08f">   38</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="structInsAltFloat.html#a1a2a36952efd935b096d52162eddb08f" title="estimated altitude above MSL in meters">alt</a>;     </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="structInsAltFloat.html#a1217719c5dda7284f8d77c2163990fc7">   39</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="structInsAltFloat.html#a1217719c5dda7284f8d77c2163990fc7" title="estimated vertical speed in m/s (positive-up)">alt_dot</a>; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="structInsAltFloat.html#a78355a456cc22ef0c4e3165c7e8278ac">   41</a></span>&#160;  bool_t <a class="code" href="structInsAltFloat.html#a78355a456cc22ef0c4e3165c7e8278ac" title="flag to request reset of altitude reference to current alt">reset_alt_ref</a>;  </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#if USE_BAROMETER</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="structInsAltFloat.html#a15d590f01b0a8362874f749ddcc62a5e">   44</a></span>&#160;<span class="preprocessor"></span>  <span class="keywordtype">float</span> <a class="code" href="structInsAltFloat.html#a15d590f01b0a8362874f749ddcc62a5e">qfe</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="structInsAltFloat.html#a7494df7fc8dee14f90c0aadce0f9cbc5">   45</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="structInsAltFloat.html#a7494df7fc8dee14f90c0aadce0f9cbc5">baro_alt</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="structInsAltFloat.html#aba7baae5d2d06cd3e62018c991fe9f74">   46</a></span>&#160;  bool_t <a class="code" href="structInsAltFloat.html#aba7baae5d2d06cd3e62018c991fe9f74">baro_initialized</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span>};</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="structInsAltFloat.html" title="Ins implementation state (altitude, float)">InsAltFloat</a> <a class="code" href="ins__alt__float_8c.html#adc2d9583c7b10b920500e2eb179ac924" title="global INS state">ins_impl</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INS_ALT_FLOAT_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_800f0b451dc44a2b86d16d857cea778d.html">ins</a></li><li class="navelem"><a class="el" href="ins__alt__float_8h.html">ins_alt_float.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:46 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

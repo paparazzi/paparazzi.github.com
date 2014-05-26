@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -184,60 +184,61 @@ $(document).ready(function(){initNavTree('gps_8h_source.html','');});
 <div class="line"><a name="l00082"></a><span class="lineno"><a class="code" href="structGpsState.html#a9d430d7c900b362327e4fd9551a6aae6">   82</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="structGpsState.html#a9d430d7c900b362327e4fd9551a6aae6" title="Number of scanned satellites.">nb_channels</a>;           </div>
 <div class="line"><a name="l00083"></a><span class="lineno"><a class="code" href="structGpsState.html#adfb660c78ce0e28566c6f3dc6ad6202e">   83</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structSVinfo.html" title="data structure for Space Vehicle Information of a single satellite">SVinfo</a> <a class="code" href="structGpsState.html#adfb660c78ce0e28566c6f3dc6ad6202e" title="holds information from the Space Vehicles (Satellites)">svinfos</a>[<a class="code" href="gps_8h.html#a63f1b81cf4a1e8e0fe80f065224826fe">GPS_NB_CHANNELS</a>]; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="code" href="structGpsState.html#ae57cb88a232985880e19989f99795245">   85</a></span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="structGpsState.html#ae57cb88a232985880e19989f99795245" title="cpu time ticks at last valid fix">last_fix_ticks</a>;       </div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="code" href="structGpsState.html#ac6e982464156a3aa6d1967b7cf468b84">   86</a></span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="structGpsState.html#ac6e982464156a3aa6d1967b7cf468b84" title="cpu time in sec at last valid fix">last_fix_time</a>;        </div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="code" href="structGpsState.html#ae9f9449dccc1b1f9404d44246245ef7b">   87</a></span>&#160;  <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="structGpsState.html#ae9f9449dccc1b1f9404d44246245ef7b" title="hotstart, warmstart, coldstart">reset</a>;                </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="code" href="structGpsTimeSync.html">   91</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structGpsTimeSync.html" title="data structure for GPS time sync">GpsTimeSync</a> {</div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="code" href="structGpsTimeSync.html#a8f4002623b4a2a838d6e69181b533bd4">   92</a></span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="structGpsTimeSync.html#a8f4002623b4a2a838d6e69181b533bd4" title="GPS time of week in ms from last message.">t0_tow</a>;      </div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="code" href="structGpsTimeSync.html#a36bdae78da6e3c513f7a5aec65ae6416">   93</a></span>&#160;  <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="structGpsTimeSync.html#a36bdae78da6e3c513f7a5aec65ae6416" title="fractional ns remainder of tow [ms], range -500000 .. 500000">t0_tow_frac</a>;  </div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="code" href="structGpsTimeSync.html#a62bc223d24475ca9f5ba01a4dbdf59c5">   94</a></span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="structGpsTimeSync.html#a62bc223d24475ca9f5ba01a4dbdf59c5" title="hw clock ticks when GPS message is received">t0_ticks</a>;    </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="structGpsState.html" title="data structure for GPS information">GpsState</a> <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gps_8c.html#ab37f7040b9efd19fdd3f92b1df77e771" title="initialize the global GPS state">gps_init</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">/* GPS model specific init implementation */</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gps__ardrone2_8c.html#ac51e6a5f7940a0acc9dc44b1b8085331">gps_impl_init</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">/* mark GPS as lost when no valid 3D fix was received for GPS_TIMEOUT secs */</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#ifndef GPS_TIMEOUT</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno"><a class="code" href="gps_8h.html#a75e36ec8607f707f480ac824c7f793ef">  109</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GPS_TIMEOUT 5</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">inline</span> bool_t <a class="code" href="gps_8h.html#a3c9ec0734c3ac235abd40c500746de5a">GpsIsLost</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno"><a class="code" href="gps_8h.html#a3c9ec0734c3ac235abd40c500746de5a">  114</a></span>&#160;<span class="keyword">inline</span> bool_t <a class="code" href="gps_8h.html#a3c9ec0734c3ac235abd40c500746de5a">GpsIsLost</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="structsys__time.html">sys_time</a>.<a class="code" href="structsys__time.html#a2e86fdabba99a0ac8f6409e0d1e694a3" title="full seconds since startup">nb_sec</a> - <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#ac6e982464156a3aa6d1967b7cf468b84" title="cpu time in sec at last valid fix">last_fix_time</a> &gt; <a class="code" href="gps_8h.html#a75e36ec8607f707f480ac824c7f793ef">GPS_TIMEOUT</a>) {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#afeffb02bdd18d27a87e96bb77175168f" title="status of fix">fix</a> = <a class="code" href="gps_8h.html#a84f437a5cef3517e2c56fdd4c8c09ff5">GPS_FIX_NONE</a>;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  }</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="code" href="structGpsState.html#a5c50b02201b63dc34282b6c353b23589">   85</a></span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="structGpsState.html#a5c50b02201b63dc34282b6c353b23589" title="cpu time ticks at last valid 3D fix">last_3dfix_ticks</a>;     </div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="code" href="structGpsState.html#a9eb7e10f8a297f62eceb452a534264f2">   86</a></span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="structGpsState.html#a9eb7e10f8a297f62eceb452a534264f2" title="cpu time in sec at last valid 3D fix">last_3dfix_time</a>;      </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="code" href="structGpsState.html#aebc3a177501ee0144c68d19cd59c9ce0">   87</a></span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="structGpsState.html#aebc3a177501ee0144c68d19cd59c9ce0" title="cpu time ticks at last received GPS message">last_msg_ticks</a>;       </div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="code" href="structGpsState.html#a8ef2a27a6656576aca1af1bbac6062ce">   88</a></span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="structGpsState.html#a8ef2a27a6656576aca1af1bbac6062ce" title="cpu time in sec at last received GPS message">last_msg_time</a>;        </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="code" href="structGpsState.html#ae9f9449dccc1b1f9404d44246245ef7b">   89</a></span>&#160;  <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="structGpsState.html#ae9f9449dccc1b1f9404d44246245ef7b" title="hotstart, warmstart, coldstart">reset</a>;                </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="code" href="structGpsTimeSync.html">   93</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structGpsTimeSync.html" title="data structure for GPS time sync">GpsTimeSync</a> {</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="code" href="structGpsTimeSync.html#a8f4002623b4a2a838d6e69181b533bd4">   94</a></span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="structGpsTimeSync.html#a8f4002623b4a2a838d6e69181b533bd4" title="GPS time of week in ms from last message.">t0_tow</a>;      </div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="code" href="structGpsTimeSync.html#a36bdae78da6e3c513f7a5aec65ae6416">   95</a></span>&#160;  <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="structGpsTimeSync.html#a36bdae78da6e3c513f7a5aec65ae6416" title="fractional ns remainder of tow [ms], range -500000 .. 500000">t0_tow_frac</a>;  </div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="code" href="structGpsTimeSync.html#a62bc223d24475ca9f5ba01a4dbdf59c5">   96</a></span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="structGpsTimeSync.html#a62bc223d24475ca9f5ba01a4dbdf59c5" title="hw clock ticks when GPS message is received">t0_ticks</a>;    </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="structGpsState.html" title="data structure for GPS information">GpsState</a> <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gps_8c.html#ab37f7040b9efd19fdd3f92b1df77e771" title="initialize the global GPS state">gps_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">/* GPS model specific init implementation */</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gps__ardrone2_8c.html#ac51e6a5f7940a0acc9dc44b1b8085331">gps_impl_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#ifndef GPS_TIMEOUT</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="code" href="gps_8h.html#a75e36ec8607f707f480ac824c7f793ef">  111</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GPS_TIMEOUT 2</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">inline</span> bool_t <a class="code" href="gps_8h.html#a3c9ec0734c3ac235abd40c500746de5a">GpsIsLost</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="code" href="gps_8h.html#a3c9ec0734c3ac235abd40c500746de5a">  116</a></span>&#160;<span class="keyword">inline</span> bool_t <a class="code" href="gps_8h.html#a3c9ec0734c3ac235abd40c500746de5a">GpsIsLost</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#afeffb02bdd18d27a87e96bb77175168f" title="status of fix">fix</a> == <a class="code" href="gps_8h.html#ac5e980c8325a29dd79a45ed26af404be">GPS_FIX_3D</a>) {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno"><a class="code" href="gps_8h.html#abf1292ea8345480e9eb1408a7dbc08de">  127</a></span>&#160;<span class="preprocessor">#define gps_Reset(_val) {                               \</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">}</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment"> * For GPS time synchronizaiton...</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="structGpsTimeSync.html" title="data structure for GPS time sync">GpsTimeSync</a> <a class="code" href="gps_8c.html#a4cd3856a89c7a6a56135788fa9f33922">gps_time_sync</a>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gps_8c.html#af6a16adfe8c9a84b13f49b4ceb681b30" title="Periodic GPS check.">gps_periodic_check</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="code" href="gps_8h.html#abf1292ea8345480e9eb1408a7dbc08de">  132</a></span>&#160;<span class="preprocessor">#define gps_Reset(_val) {                               \</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">}</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="keyword">extern</span> <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="gps_8c.html#ad68ada7274989a4c9f08bc06d74ee5bd" title="Convert time in sys_time ticks to GPS time of week.">gps_tow_from_sys_ticks</a>(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> sys_ticks);</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GPS_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="comment"> * For GPS time synchronizaiton...</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="structGpsTimeSync.html" title="data structure for GPS time sync">GpsTimeSync</a> <a class="code" href="gps_8c.html#a4cd3856a89c7a6a56135788fa9f33922">gps_time_sync</a>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="keyword">extern</span> <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="gps_8c.html#ad68ada7274989a4c9f08bc06d74ee5bd" title="Convert time in sys_time ticks to GPS time of week.">gps_tow_from_sys_ticks</a>(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> sys_ticks);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GPS_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="gps_8h.html">gps.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:45 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

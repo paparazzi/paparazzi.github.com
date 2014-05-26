@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('autopilot__arming__throttle_8h_source.
 <div class="line"><a name="l00074"></a><span class="lineno"><a class="code" href="autopilot__arming__throttle_8h.html#abbbe9ccad851ff6d7ef88e298059b6ce">   74</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="autopilot__arming__throttle_8h.html#abbbe9ccad851ff6d7ef88e298059b6ce" title="State machine to check if motors should be turned ON or OFF.">autopilot_arming_check_motors_on</a>( <span class="keywordtype">void</span> ) {</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="comment">/* only allow switching motor if not in FAILSAFE or KILL mode */</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="rotorcraft_2autopilot_8c.html#a0db277a81196cdbbeb50b18244516ca5">autopilot_mode</a> &gt; <a class="code" href="rotorcraft_2autopilot_8h.html#ab6ce21c89b3540050089f5249f64933d">AP_MODE_KILL</a>) {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="rotorcraft_2autopilot_8c.html#a0db277a81196cdbbeb50b18244516ca5">autopilot_mode</a> != <a class="code" href="rotorcraft_2autopilot_8h.html#ab6ce21c89b3540050089f5249f64933d">AP_MODE_KILL</a> &amp;&amp; <a class="code" href="rotorcraft_2autopilot_8c.html#a0db277a81196cdbbeb50b18244516ca5">autopilot_mode</a> != <a class="code" href="rotorcraft_2autopilot_8h.html#ac01e66c09ff9aa539479ea5e5b120d36">AP_MODE_FAILSAFE</a>) {</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">switch</span>(<a class="code" href="autopilot__arming__switch_8h.html#a426025835890b253dc035d04d0d98d5a">autopilot_arming_state</a>) {</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="autopilot__arming__switch_8h.html#abd7b974a7084669ffc2893dd65db427ea0075eeb0f3377fa2dad84d3656ab8c6d">STATE_UNINIT</a>:</div>
@@ -246,7 +246,7 @@ $(document).ready(function(){initNavTree('autopilot__arming__throttle_8h_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="autopilot__arming__throttle_8h.html">autopilot_arming_throttle.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

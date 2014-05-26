@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('stm32_2mcu__periph_2sys__time__arch_8c
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">sys_time_arch.c File Reference<div class="ingroups"><a class="el" href="group__stm32__arch.html">STM32 architecture</a></div></div>  </div>
@@ -121,11 +122,15 @@ $(document).ready(function(){initNavTree('stm32_2mcu__periph_2sys__time__arch_8c
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2mcu__periph_2sys__time__arch_8c__incl.png" border="0" usemap="#sw_2airborne_2arch_2stm32_2mcu__periph_2sys__time__arch_8c" alt=""/></div>
 <map name="sw_2airborne_2arch_2stm32_2mcu__periph_2sys__time__arch_8c" id="sw_2airborne_2arch_2stm32_2mcu__periph_2sys__time__arch_8c">
-<area shape="rect" id="node3" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="140,99,295,127"/><area shape="rect" id="node5" href="inttypes_8h.html" title="inttypes.h" alt="" coords="5,185,83,213"/></map>
+<area shape="rect" id="node3" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="147,99,317,127"/><area shape="rect" id="node5" href="inttypes_8h.html" title="inttypes.h" alt="" coords="5,185,91,213"/></map>
 </div>
 </div>
 <p><a href="stm32_2mcu__periph_2sys__time__arch_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a838a9b2f4b781fbdbc8e7de535ffed07"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c.html#a838a9b2f4b781fbdbc8e7de535ffed07">USE_OCM3_SYSTICK_INIT</a>&#160;&#160;&#160;1</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:afdd94f850b193691f1bfc60c724b542a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c.html#afdd94f850b193691f1bfc60c724b542a">sys_tick_handler</a> (void)</td></tr>
@@ -136,7 +141,22 @@ Functions</h2></td></tr>
 <div class="textblock"><p>STM32 timing functions. </p>
 
 <p>Definition in file <a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
-</div><h2>Function Documentation</h2>
+</div><h2>Macro Definition Documentation</h2>
+<a class="anchor" id="a838a9b2f4b781fbdbc8e7de535ffed07"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USE_OCM3_SYSTICK_INIT&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c_source.html#l00039">39</a> of file <a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+
+</div>
+</div>
+<h2>Function Documentation</h2>
 <a class="anchor" id="afdd94f850b193691f1bfc60c724b542a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -174,7 +194,7 @@ Functions</h2></td></tr>
 <p>Initialize SysTick. </p>
 <p>Generate SysTick interrupt every <a class="el" href="structsys__time.html#a6afb6a9b84be1fe714c946b509585de9" title="sys_time_timer resolution in cpu ticks">sys_time.resolution_cpu_ticks</a> </p>
 
-<p>Definition at line <a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c_source.html#l00043">43</a> of file <a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c_source.html#l00047">47</a> of file <a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c_source.html">sys_time_arch.c</a>.</p>
 
 <p>References <a class="el" href="armVIC_8h_source.html#l00020">_VIC_ADDR</a>, <a class="el" href="armVIC_8h_source.html#l00019">_VIC_CNTL</a>, <a class="el" href="apogee__0_899_8h_source.html#l00008">AHB_CLK</a>, <a class="el" href="sys__time_8h_source.html#l00077">sys_time::cpu_ticks_per_sec</a>, <a class="el" href="booz__1_80_8h_source.html#l00018">PCLK</a>, <a class="el" href="sys__time_8h_source.html#l00074">sys_time::resolution</a>, <a class="el" href="sys__time_8h_source.html#l00076">sys_time::resolution_cpu_ticks</a>, <a class="el" href="LPC21xx_8h_source.html#l00060">T0CCR</a>, <a class="el" href="LPC21xx_8h_source.html#l00065">T0EMR</a>, <a class="el" href="LPC21xx_8h_source.html#l00055">T0MCR</a>, <a class="el" href="LPC21xx_8h_source.html#l00056">T0MR0</a>, <a class="el" href="LPC21xx_8h_source.html#l00053">T0PR</a>, <a class="el" href="LPC21xx_8h_source.html#l00051">T0TCR</a>, <a class="el" href="lpcTMR_8h_source.html#l00054">TCR_ENABLE</a>, <a class="el" href="lpcTMR_8h_source.html#l00055">TCR_RESET</a>, <a class="el" href="lpc21_2mcu__periph_2sys__time__arch_8c_source.html#l00177">TIMER0_ISR()</a>, <a class="el" href="lpc21_2mcu__periph_2sys__time__arch_8h_source.html#l00059">TIMER0_VIC_SLOT</a>, <a class="el" href="lpcTMR_8h_source.html#l00059">TMCR_MR0_I</a>, <a class="el" href="lpcVIC_8h_source.html#l00105">VIC_BIT</a>, <a class="el" href="lpcVIC_8h_source.html#l00102">VIC_ENABLE</a>, <a class="el" href="lpcVIC_8h_source.html#l00072">VIC_TIMER0</a>, <a class="el" href="LPC21xx_8h_source.html#l00431">VICIntEnable</a>, and <a class="el" href="LPC21xx_8h_source.html#l00430">VICIntSelect</a>.</p>
 
@@ -185,7 +205,7 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2mcu__periph_2sys__time__arch_8c_a9b31c2feb846b96205ae20ea6883e1c4_cgraph.png" border="0" usemap="#stm32_2mcu__periph_2sys__time__arch_8c_a9b31c2feb846b96205ae20ea6883e1c4_cgraph" alt=""/></div>
 <map name="stm32_2mcu__periph_2sys__time__arch_8c_a9b31c2feb846b96205ae20ea6883e1c4_cgraph" id="stm32_2mcu__periph_2sys__time__arch_8c_a9b31c2feb846b96205ae20ea6883e1c4_cgraph">
-<area shape="rect" id="node3" href="lpc21_2mcu__periph_2sys__time__arch_8c.html#ae189f8759d6fc0d0ea13267459b1f2ad" title="TIMER0_ISR" alt="" coords="184,30,283,58"/><area shape="rect" id="node5" href="lpc21_2mcu__periph_2sys__time__arch_8c.html#a50143082e3718f274e86ae7e5d4e86cf" title="sys_tick_irq_handler" alt="" coords="332,5,471,33"/><area shape="rect" id="node7" href="lpc21_2modules_2core_2trigger__ext__hw_8c.html#ad7ca2e350f249bba99a8a506cf5892c4" title="TRIG_ISR" alt="" coords="360,55,443,83"/></map>
+<area shape="rect" id="node3" href="lpc21_2mcu__periph_2sys__time__arch_8c.html#ae189f8759d6fc0d0ea13267459b1f2ad" title="TIMER0_ISR" alt="" coords="196,30,289,58"/><area shape="rect" id="node5" href="lpc21_2mcu__periph_2sys__time__arch_8c.html#a50143082e3718f274e86ae7e5d4e86cf" title="sys_tick_irq_handler" alt="" coords="340,5,489,33"/><area shape="rect" id="node7" href="lpc21_2modules_2core_2trigger__ext__hw_8c.html#ad7ca2e350f249bba99a8a506cf5892c4" title="TRIG_ISR" alt="" coords="376,55,453,83"/></map>
 </div>
 </p>
 
@@ -197,7 +217,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_0722e4cfffe4ffd4c81bbc7e5d686ba4.html">mcu_periph</a></li><li class="navelem"><a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c.html">sys_time_arch.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:09 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:48 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

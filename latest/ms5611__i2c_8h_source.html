@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -137,8 +137,8 @@ $(document).ready(function(){initNavTree('ms5611__i2c_8h_source.html','');});
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ms5611_8h.html" title="MS5611 barometer driver common interface (I2C and SPI).">peripherals/ms5611.h</a>&quot;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="structMs5611__I2c.html">   36</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMs5611__I2c.html">Ms5611_I2c</a> {</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="structMs5611__I2c.html#ad16b6379be4aa10c6bdc8871e6ed6967">   37</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structi2c__periph.html">i2c_periph</a> *<a class="code" href="structMs5611__I2c.html#ad16b6379be4aa10c6bdc8871e6ed6967">i2c_p</a>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="structMs5611__I2c.html#a4d158b2e88d395a24a4d533d301ff522">   38</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structi2c__transaction.html">i2c_transaction</a> <a class="code" href="structMs5611__I2c.html#a4d158b2e88d395a24a4d533d301ff522">i2c_trans</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="structMs5611__I2c.html#ad16b6379be4aa10c6bdc8871e6ed6967">   37</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structi2c__periph.html" title="I2C peripheral structure.">i2c_periph</a> *<a class="code" href="structMs5611__I2c.html#ad16b6379be4aa10c6bdc8871e6ed6967">i2c_p</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="structMs5611__I2c.html#a4d158b2e88d395a24a4d533d301ff522">   38</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structi2c__transaction.html" title="I2C transaction structure.">i2c_transaction</a> <a class="code" href="structMs5611__I2c.html#a4d158b2e88d395a24a4d533d301ff522">i2c_trans</a>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="structMs5611__I2c.html#a0024dab605389b352bace1c1fc05d526">   39</a></span>&#160;  <span class="keyword">enum</span> <a class="code" href="ms5611_8h.html#aeabcd6fb6c9a54ba10c34130f71f855b">Ms5611Status</a> <a class="code" href="structMs5611__I2c.html#a0024dab605389b352bace1c1fc05d526">status</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="structMs5611__I2c.html#a7fe87a71be1480386f352df4c4ca4545">   40</a></span>&#160;  bool_t <a class="code" href="structMs5611__I2c.html#a7fe87a71be1480386f352df4c4ca4545" title="config done flag">initialized</a>;                 </div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="structMs5611__I2c.html#a73769aea977f08caa7a9d82522cfa764">   41</a></span>&#160;  <span class="keyword">volatile</span> bool_t <a class="code" href="structMs5611__I2c.html#a73769aea977f08caa7a9d82522cfa764" title="data ready flag">data_available</a>;     </div>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('ms5611__i2c_8h_source.html','');});
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">// Functions</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ms5611__i2c_8c.html#a4a5bd8536ca3ae9bd32e5b2ea0726cc3">ms5611_i2c_init</a>(<span class="keyword">struct</span> <a class="code" href="structMs5611__I2c.html">Ms5611_I2c</a>* ms, <span class="keyword">struct</span> <a class="code" href="structi2c__periph.html">i2c_periph</a>* i2c_p, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> addr);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ms5611__i2c_8c.html#a4a5bd8536ca3ae9bd32e5b2ea0726cc3">ms5611_i2c_init</a>(<span class="keyword">struct</span> <a class="code" href="structMs5611__I2c.html">Ms5611_I2c</a>* ms, <span class="keyword">struct</span> <a class="code" href="structi2c__periph.html" title="I2C peripheral structure.">i2c_periph</a>* i2c_p, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> addr);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ms5611__i2c_8c.html#aede904dca434d648c441a0f51d9850af">ms5611_i2c_start_configure</a>(<span class="keyword">struct</span> <a class="code" href="structMs5611__I2c.html">Ms5611_I2c</a>* ms);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ms5611__i2c_8c.html#aa7ea4f69e5b5ff916ac4571219d829e1">ms5611_i2c_start_conversion</a>(<span class="keyword">struct</span> <a class="code" href="structMs5611__I2c.html">Ms5611_I2c</a>* ms);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ms5611__i2c_8c.html#a45123afce6b944dbe03552035e6b6e5e" title="Periodic function to ensure proper delay after triggering reset or conversion.">ms5611_i2c_periodic_check</a>(<span class="keyword">struct</span> <a class="code" href="structMs5611__I2c.html">Ms5611_I2c</a>* ms);</div>
@@ -173,7 +173,7 @@ $(document).ready(function(){initNavTree('ms5611__i2c_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="ms5611__i2c_8h.html">ms5611_i2c.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:44 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

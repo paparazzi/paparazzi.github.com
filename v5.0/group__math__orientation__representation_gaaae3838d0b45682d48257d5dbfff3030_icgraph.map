@@ -1,51 +1,51 @@
 <map id="orientationGetEulers_f" name="orientationGetEulers_f">
-<area shape="rect" id="node3" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="205,442,392,470"/>
-<area shape="rect" id="node5" href="$fixedwing_2guidance_2guidance__v_8h.html#a38f0bbceda8812281fc650c2c1aac6c8" title="auto throttle inner loop" alt="" coords="467,30,584,58"/>
-<area shape="rect" id="node16" href="$stabilization__adaptive_8c.html#a56e08c7c847634b91bec39dc929ade80" title="h_ctl_roll_loop" alt="" coords="473,81,577,109"/>
-<area shape="rect" id="node21" href="$stabilization__adaptive_8c.html#a10c9851e192217d5a4e7b6dc98e16c2d" title="h_ctl_pitch_loop" alt="" coords="468,131,583,159"/>
-<area shape="rect" id="node24" href="$stabilization__attitude_8c.html#a02ae04f0f1bbe7588572e87e3dadb381" title="h_ctl_course_loop" alt="" coords="463,182,588,210"/>
-<area shape="rect" id="node26" href="$stabilization__attitude__euler__float_8c.html#a5a2d8d3947ba9cdc571cea5778c93f4a" title="stabilization_attitude\l_set_failsafe_setpoint" alt="" coords="451,233,600,277"/>
-<area shape="rect" id="node28" href="$stabilization__attitude__euler__float_8c.html#afb59ecc3049842f940a46a81698b79e9" title="stabilization_attitude_run" alt="" coords="443,299,608,327"/>
-<area shape="rect" id="node30" href="$stabilization__attitude__rc__setpoint_8h.html#abdf70201d8682a7d5b567fc6f3790063" title="reset the heading for care&#45;free mode to current heading" alt="" coords="440,350,611,394"/>
-<area shape="rect" id="node53" href="$stabilization__attitude__rc__setpoint_8h.html#aef31d05722347c8213ef503f5c6f1113" title="stabilization_attitude\l_get_heading_f" alt="" coords="456,569,595,613"/>
-<area shape="rect" id="node57" href="$stabilization__attitude__rc__setpoint_8h.html#a6189af1f1c10b4d9719811d909912ebe" title="stabilization_attitude\l_read_rc_setpoint_eulers_f" alt="" coords="661,451,840,495"/>
-<area shape="rect" id="node61" href="$stabilization__attitude__rc__setpoint_8h.html#aba62c9232f5603a1c4f20154c8e45b07" title="stabilization_attitude\l_read_rc_setpoint_quat\l_earth_bound_f" alt="" coords="896,377,1053,437"/>
-<area shape="rect" id="node68" href="$stabilization__attitude__rc__setpoint_8h.html#a76ee04bb23d6f8df9a998e8681af384d" title="stabilization_attitude\l_read_rc_setpoint_quat_f" alt="" coords="891,526,1059,570"/>
-<area shape="rect" id="node77" href="$cam_8c.html#aab3da8ed719ee01699f50450b3df3b13" title="Computes the right angles from target_x, target_y, target_alt." alt="" coords="483,727,568,755"/>
-<area shape="rect" id="node90" href="$cam__track_8h.html#ae7eff66f25d4d0cae8db6f3ea188c98b" title="track_periodic_task" alt="" coords="459,778,592,806"/>
-<area shape="rect" id="node92" href="$dc_8h.html#ab4b5d12f3c9829a0f0e538496ad5c547" title="Send an info message containing information about position, course, buffer and all other internal var..." alt="" coords="493,930,557,958"/>
-<area shape="rect" id="node94" href="$dc_8h.html#ac1d419ec639ffd43193ebcbd6e1131c0" title="Sets the dc control in circle mode." alt="" coords="713,905,788,933"/>
-<area shape="rect" id="node106" href="$dc_8h.html#ab10db2b1ff3850eb40bb19881fabe48d" title="dc_periodic_4Hz" alt="" coords="467,1094,584,1122"/>
-<area shape="rect" id="node7" href="$main__ap_8h.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="927,55,1023,83"/>
-<area shape="rect" id="node9" href="$main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="1140,5,1247,33"/>
-<area shape="rect" id="node11" href="$sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="1335,30,1460,58"/>
-<area shape="rect" id="node13" href="$main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="1108,106,1279,134"/>
-<area shape="rect" id="node18" href="$fixedwing_2stabilization_2stabilization__attitude_8h.html#a86f0d47644538be1345aab19c7dc3de4" title="h_ctl_attitude_loop" alt="" coords="685,81,816,109"/>
-<area shape="rect" id="node32" href="$guidance__h_8h.html#a2903786227eb11507928f99870099225" title="guidance_h_mode_changed" alt="" coords="660,323,841,351"/>
-<area shape="rect" id="node34" href="$rotorcraft_2autopilot_8h.html#a3aaa2cf16ee3b25e8fca9bbd1d579d64" title="autopilot_set_mode" alt="" coords="908,305,1041,333"/>
-<area shape="rect" id="node36" href="$rotorcraft_2autopilot_8c.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization." alt="" coords="1147,305,1240,333"/>
-<area shape="rect" id="node38" href="$rotorcraft_2autopilot_8h.html#a7339f5741706cb9c2e2186b1174cc770" title="autopilot_on_rc_frame" alt="" coords="1516,382,1665,410"/>
-<area shape="rect" id="node44" href="$rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="1132,203,1255,231"/>
-<area shape="rect" id="node50" href="$main_8h.html#a6266a73fe8c0512f1de72cea96e5110b" title="failsafe_check" alt="" coords="1344,254,1451,282"/>
-<area shape="rect" id="node40" href="$main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="1728,357,1816,385"/>
-<area shape="rect" id="node42" href="$lisa__stm__passthrough__main_8c.html#a05af0e883be22f206a58099661bcad06" title="on_rc_message" alt="" coords="1715,407,1829,435"/>
-<area shape="rect" id="node46" href="$test__adc_8c.html#a49a0e950c9c9d7b7f39d50a6e39e0aa4" title="main_periodic" alt="" coords="1347,203,1448,231"/>
-<area shape="rect" id="node48" href="$main_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="1516,229,1665,257"/>
-<area shape="rect" id="node55" href="$stabilization__attitude__euler__float_8c.html#a23f862ca823e6fd23fc9c111178be077" title="stabilization_attitude\l_enter" alt="" coords="681,569,820,613"/>
-<area shape="rect" id="node72" href="$stabilization__attitude__quat__float_8c.html#a5a2d8d3947ba9cdc571cea5778c93f4a" title="stabilization_attitude\l_set_failsafe_setpoint" alt="" coords="676,635,825,679"/>
-<area shape="rect" id="node59" href="$stabilization__attitude__euler__float_8c.html#a147b1b8bfdde52f82d0829ce748bf1e9" title="stabilization_attitude\l_read_rc" alt="" coords="905,459,1044,503"/>
-<area shape="rect" id="node63" href="$stabilization__attitude__quat__int_8c.html#a147b1b8bfdde52f82d0829ce748bf1e9" title="stabilization_attitude\l_read_rc" alt="" coords="1124,406,1263,450"/>
-<area shape="rect" id="node65" href="$guidance__h_8h.html#a7db3290fc5f62abc15a1bb1638b4922f" title="guidance_h_read_rc" alt="" coords="1328,410,1467,438"/>
-<area shape="rect" id="node70" href="$stabilization__attitude__quat__float_8c.html#a147b1b8bfdde52f82d0829ce748bf1e9" title="stabilization_attitude\l_read_rc" alt="" coords="1124,526,1263,570"/>
-<area shape="rect" id="node79" href="$cam_8c.html#a7e228da24201c997a297f7c49bffa74c" title="cam_ac_target" alt="" coords="697,753,804,781"/>
-<area shape="rect" id="node81" href="$cam_8h.html#a1ac78decc31cdd4c6b7584a8bf42d315" title="For CAM_MODE_AC_TARGET mode." alt="" coords="925,778,1024,806"/>
-<area shape="rect" id="node83" href="$cam_8c.html#aa5c7c762b35b57ec479e6244f006c5d1" title="Point straight down." alt="" coords="709,803,792,831"/>
-<area shape="rect" id="node87" href="$cam_8c.html#a91c2133236e62688f7acfe1ab9fe2f11" title="cam_waypoint_target" alt="" coords="679,854,823,882"/>
-<area shape="rect" id="node96" href="$dc_8h.html#a47c625a53743f8ad41baaf54a6fcf144" title="Sets the dc control in inactive mode, stopping all current actions." alt="" coords="717,1006,784,1034"/>
-<area shape="rect" id="node102" href="$dc_8h.html#a2b50d2725b576697bde98a8bdb358093" title="Sets the dc control in distance mode." alt="" coords="711,955,791,983"/>
-<area shape="rect" id="node98" href="$poly__survey__adv_8h.html#a586979cca6c5ffbd1852333c379cc959" title="main navigation routine." alt="" coords="916,955,1033,983"/>
-<area shape="rect" id="node100" href="$spiral_8h.html#af5423b91973dcb13dc1409e5131d194d" title="SpiralNav" alt="" coords="936,1006,1013,1034"/>
-<area shape="rect" id="node108" href="$atmega__i2c__cam__ctrl_8h.html#aeb25c30f109ccd0c3046715e4f3df6b5" title="atmega_i2c_cam_ctrl\l_periodic" alt="" coords="677,1057,824,1101"/>
-<area shape="rect" id="node110" href="$led__cam__ctrl_8h.html#afdc2d18eb53993638b475edbd3a79bdd" title="led_cam_ctrl_periodic" alt="" coords="677,1123,824,1151"/>
-<area shape="rect" id="node112" href="$servo__cam__ctrl_8h.html#ab18e6fdd6b4dbc3e80eab505bb9f73ee" title="servo_cam_ctrl_periodic" alt="" coords="669,1174,832,1202"/>
+<area shape="rect" id="node3" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="220,442,417,470"/>
+<area shape="rect" id="node5" href="$fixedwing_2guidance_2guidance__v_8h.html#a38f0bbceda8812281fc650c2c1aac6c8" title="auto throttle inner loop" alt="" coords="497,30,623,58"/>
+<area shape="rect" id="node16" href="$stabilization__adaptive_8c.html#a56e08c7c847634b91bec39dc929ade80" title="h_ctl_roll_loop" alt="" coords="504,81,616,109"/>
+<area shape="rect" id="node21" href="$stabilization__adaptive_8c.html#a10c9851e192217d5a4e7b6dc98e16c2d" title="h_ctl_pitch_loop" alt="" coords="499,131,621,159"/>
+<area shape="rect" id="node24" href="$stabilization__attitude_8c.html#a02ae04f0f1bbe7588572e87e3dadb381" title="h_ctl_course_loop" alt="" coords="492,182,628,210"/>
+<area shape="rect" id="node26" href="$stabilization__attitude__euler__float_8c.html#a5a2d8d3947ba9cdc571cea5778c93f4a" title="stabilization_attitude\l_set_failsafe_setpoint" alt="" coords="480,233,640,277"/>
+<area shape="rect" id="node28" href="$stabilization__attitude__euler__float_8c.html#afb59ecc3049842f940a46a81698b79e9" title="stabilization_attitude_run" alt="" coords="469,299,651,327"/>
+<area shape="rect" id="node30" href="$stabilization__attitude__rc__setpoint_8h.html#abdf70201d8682a7d5b567fc6f3790063" title="reset the heading for care&#45;free mode to current heading" alt="" coords="467,350,653,394"/>
+<area shape="rect" id="node53" href="$stabilization__attitude__rc__setpoint_8h.html#aef31d05722347c8213ef503f5c6f1113" title="stabilization_attitude\l_get_heading_f" alt="" coords="483,569,637,613"/>
+<area shape="rect" id="node57" href="$stabilization__attitude__rc__setpoint_8h.html#a6189af1f1c10b4d9719811d909912ebe" title="stabilization_attitude\l_read_rc_setpoint_eulers_f" alt="" coords="707,451,899,495"/>
+<area shape="rect" id="node61" href="$stabilization__attitude__rc__setpoint_8h.html#aba62c9232f5603a1c4f20154c8e45b07" title="stabilization_attitude\l_read_rc_setpoint_quat\l_earth_bound_f" alt="" coords="959,377,1129,437"/>
+<area shape="rect" id="node68" href="$stabilization__attitude__rc__setpoint_8h.html#a76ee04bb23d6f8df9a998e8681af384d" title="stabilization_attitude\l_read_rc_setpoint_quat_f" alt="" coords="953,526,1135,570"/>
+<area shape="rect" id="node77" href="$cam_8c.html#aab3da8ed719ee01699f50450b3df3b13" title="Computes the right angles from target_x, target_y, target_alt." alt="" coords="512,727,608,755"/>
+<area shape="rect" id="node90" href="$cam__track_8h.html#ae7eff66f25d4d0cae8db6f3ea188c98b" title="track_periodic_task" alt="" coords="488,778,632,806"/>
+<area shape="rect" id="node92" href="$dc_8h.html#ab4b5d12f3c9829a0f0e538496ad5c547" title="Send an info message containing information about position, course, buffer and all other internal var..." alt="" coords="527,930,593,958"/>
+<area shape="rect" id="node94" href="$dc_8h.html#ac1d419ec639ffd43193ebcbd6e1131c0" title="Sets the dc control in circle mode." alt="" coords="764,905,841,933"/>
+<area shape="rect" id="node106" href="$dc_8h.html#ab10db2b1ff3850eb40bb19881fabe48d" title="dc_periodic_4Hz" alt="" coords="497,1094,623,1122"/>
+<area shape="rect" id="node7" href="$main__ap_8h.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="991,55,1097,83"/>
+<area shape="rect" id="node9" href="$main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="1220,5,1335,33"/>
+<area shape="rect" id="node11" href="$sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="1427,30,1563,58"/>
+<area shape="rect" id="node13" href="$main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="1184,106,1371,134"/>
+<area shape="rect" id="node18" href="$fixedwing_2stabilization_2stabilization__attitude_8h.html#a86f0d47644538be1345aab19c7dc3de4" title="h_ctl_attitude_loop" alt="" coords="732,81,873,109"/>
+<area shape="rect" id="node32" href="$guidance__h_8h.html#a2903786227eb11507928f99870099225" title="guidance_h_mode_changed" alt="" coords="703,323,903,351"/>
+<area shape="rect" id="node34" href="$rotorcraft_2autopilot_8h.html#a3aaa2cf16ee3b25e8fca9bbd1d579d64" title="autopilot_set_mode" alt="" coords="969,305,1119,333"/>
+<area shape="rect" id="node36" href="$rotorcraft_2autopilot_8c.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization." alt="" coords="1225,305,1329,333"/>
+<area shape="rect" id="node38" href="$rotorcraft_2autopilot_8h.html#a7339f5741706cb9c2e2186b1174cc770" title="autopilot_on_rc_frame" alt="" coords="1619,382,1784,410"/>
+<area shape="rect" id="node44" href="$rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="1211,203,1344,231"/>
+<area shape="rect" id="node50" href="$main_8h.html#a6266a73fe8c0512f1de72cea96e5110b" title="failsafe_check" alt="" coords="1440,254,1549,282"/>
+<area shape="rect" id="node40" href="$main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="1845,357,1941,385"/>
+<area shape="rect" id="node42" href="$lisa__stm__passthrough__main_8c.html#a05af0e883be22f206a58099661bcad06" title="on_rc_message" alt="" coords="1832,407,1955,435"/>
+<area shape="rect" id="node46" href="$test__adc_8c.html#a49a0e950c9c9d7b7f39d50a6e39e0aa4" title="main_periodic" alt="" coords="1440,203,1549,231"/>
+<area shape="rect" id="node48" href="$main_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="1620,229,1783,257"/>
+<area shape="rect" id="node55" href="$stabilization__attitude__euler__float_8c.html#a23f862ca823e6fd23fc9c111178be077" title="stabilization_attitude\l_enter" alt="" coords="725,569,880,613"/>
+<area shape="rect" id="node72" href="$stabilization__attitude__quat__float_8c.html#a5a2d8d3947ba9cdc571cea5778c93f4a" title="stabilization_attitude\l_set_failsafe_setpoint" alt="" coords="723,635,883,679"/>
+<area shape="rect" id="node59" href="$stabilization__attitude__euler__float_8c.html#a147b1b8bfdde52f82d0829ce748bf1e9" title="stabilization_attitude\l_read_rc" alt="" coords="967,459,1121,503"/>
+<area shape="rect" id="node63" href="$stabilization__attitude__quat__int_8c.html#a147b1b8bfdde52f82d0829ce748bf1e9" title="stabilization_attitude\l_read_rc" alt="" coords="1200,406,1355,450"/>
+<area shape="rect" id="node65" href="$guidance__h_8h.html#a7db3290fc5f62abc15a1bb1638b4922f" title="guidance_h_read_rc" alt="" coords="1420,410,1569,438"/>
+<area shape="rect" id="node70" href="$stabilization__attitude__quat__float_8c.html#a147b1b8bfdde52f82d0829ce748bf1e9" title="stabilization_attitude\l_read_rc" alt="" coords="1200,526,1355,570"/>
+<area shape="rect" id="node79" href="$cam_8c.html#a7e228da24201c997a297f7c49bffa74c" title="cam_ac_target" alt="" coords="744,753,861,781"/>
+<area shape="rect" id="node81" href="$cam_8h.html#a1ac78decc31cdd4c6b7584a8bf42d315" title="For CAM_MODE_AC_TARGET mode." alt="" coords="991,778,1097,806"/>
+<area shape="rect" id="node83" href="$cam_8c.html#aa5c7c762b35b57ec479e6244f006c5d1" title="Point straight down." alt="" coords="759,803,847,831"/>
+<area shape="rect" id="node87" href="$cam_8c.html#a91c2133236e62688f7acfe1ab9fe2f11" title="cam_waypoint_target" alt="" coords="724,854,881,882"/>
+<area shape="rect" id="node96" href="$dc_8h.html#a47c625a53743f8ad41baaf54a6fcf144" title="Sets the dc control in inactive mode, stopping all current actions." alt="" coords="767,1006,839,1034"/>
+<area shape="rect" id="node102" href="$dc_8h.html#a2b50d2725b576697bde98a8bdb358093" title="Sets the dc control in distance mode." alt="" coords="760,955,845,983"/>
+<area shape="rect" id="node98" href="$poly__survey__adv_8h.html#a586979cca6c5ffbd1852333c379cc959" title="main navigation routine." alt="" coords="981,955,1107,983"/>
+<area shape="rect" id="node100" href="$spiral_8h.html#af5423b91973dcb13dc1409e5131d194d" title="SpiralNav" alt="" coords="1003,1006,1085,1034"/>
+<area shape="rect" id="node108" href="$atmega__i2c__cam__ctrl_8h.html#aeb25c30f109ccd0c3046715e4f3df6b5" title="atmega_i2c_cam_ctrl\l_periodic" alt="" coords="724,1057,881,1101"/>
+<area shape="rect" id="node110" href="$led__cam__ctrl_8h.html#afdc2d18eb53993638b475edbd3a79bdd" title="led_cam_ctrl_periodic" alt="" coords="723,1123,883,1151"/>
+<area shape="rect" id="node112" href="$servo__cam__ctrl_8h.html#ab18e6fdd6b4dbc3e80eab505bb9f73ee" title="servo_cam_ctrl_periodic" alt="" coords="715,1174,891,1202"/>
 </map>

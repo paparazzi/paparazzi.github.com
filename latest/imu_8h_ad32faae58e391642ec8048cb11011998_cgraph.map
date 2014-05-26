@@ -1,51 +1,51 @@
 <map id="imu_impl_init" name="imu_impl_init">
-<area shape="rect" id="node3" href="$lpc21_2mcu__periph_2adc__arch_8c.html#a289883844d6749adab1cee5aabe41824" title="Registers a buffer to be used to store the specified converted channel Usage:" alt="" coords="184,5,304,33"/>
-<area shape="rect" id="node5" href="$adxl345__i2c_8c.html#a8d4cfcfb4d533b36f9a60cd9cc5d6632" title="adxl345_i2c_init" alt="" coords="187,55,301,83"/>
-<area shape="rect" id="node9" href="$adxl345__spi_8c.html#a2c3a96cfe3f877128294bc0b9e60a0fc" title="adxl345_spi_init" alt="" coords="187,106,301,134"/>
-<area shape="rect" id="node12" href="$ahrs__chimu__spi_8c.html#a81e17b09f47068c02c345da1523f589b" title="Aligns the AHRS." alt="" coords="204,157,284,185"/>
-<area shape="rect" id="node14" href="$ami601_8c.html#a371838c77c193499b453d769fb6d4cc2" title="ami601_init" alt="" coords="200,207,288,235"/>
-<area shape="rect" id="node16" href="$imu__apogee_8c.html#aab891048e9d735090820c213f22a33e5" title="configure_baro_slave" alt="" coords="172,258,316,286"/>
-<area shape="rect" id="node18" href="$omap_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85" title="Set a gpio output to high level." alt="" coords="209,309,279,337"/>
-<area shape="rect" id="node20" href="$gpio_8h.html#ab67c868f659e629f6d01d92d0f5ce9a8" title="Setup gpio pin as generic output." alt="" coords="180,359,308,387"/>
-<area shape="rect" id="node22" href="$hmc5843_8c.html#af07ba9764727d8692eb33cd271080cdc" title="hmc5843_init" alt="" coords="195,410,293,438"/>
-<area shape="rect" id="node26" href="$hmc58xx_8c.html#a1daa9072b668998f936fb469e5c6c515" title="Initialize Hmc58xx struct and set default config options." alt="" coords="196,461,292,489"/>
-<area shape="rect" id="node30" href="$group__i2c.html#ga68659e03504627925829f2f12c2ec6d2" title="i2c_transmit" alt="" coords="197,511,291,539"/>
-<area shape="rect" id="node34" href="$imu__aspirin__2__spi_8c.html#aaacbfcebdd1958bee817daf3e47d6274" title="function to configure hmc5883 mag" alt="" coords="167,562,321,606"/>
-<area shape="rect" id="node42" href="$lpc21_2subsystems_2imu_2imu__aspirin__arch_8c.html#a592698b1cfe18b6c6a33e450221ea2cf" title="imu_aspirin_arch_init" alt="" coords="172,629,316,657"/>
-<area shape="rect" id="node44" href="$lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#ab553dbda318119d1367742a4e59e38ed" title="imu_crista_arch_init" alt="" coords="175,679,313,707"/>
-<area shape="rect" id="node46" href="$imu__drotek__10dof__v2_8c.html#a4ff8194f50bedf14d3d6bf7a4d9efd9c" title="callback function to configure hmc5883 mag" alt="" coords="168,730,320,774"/>
-<area shape="rect" id="node52" href="$imu__krooz__sd__arch_8c.html#afc6a4e2ad9c3c6c70b829f71d3cf3b79" title="imu_krooz_sd_arch_init" alt="" coords="165,797,323,825"/>
-<area shape="rect" id="node54" href="$itg3200_8c.html#a240c1ab04d15bb3f556189887939765f" title="Initialize Itg3200 struct and set default config options." alt="" coords="200,847,288,875"/>
-<area shape="rect" id="node58" href="$l3g4200_8c.html#acda51925a723a1df17a65d9e377c6e8f" title="Initialize L3g4200 struct and set default config options." alt="" coords="199,898,289,926"/>
-<area shape="rect" id="node62" href="$max1168_8c.html#a6130e20b7ea3c56aa94a9e449b773b4a" title="max1168_init" alt="" coords="195,949,293,977"/>
-<area shape="rect" id="node70" href="$mpu60x0__i2c_8c.html#a18c3145fc5159f824a0bb9c6e327ede0" title="mpu60x0_i2c_init" alt="" coords="183,999,305,1027"/>
-<area shape="rect" id="node74" href="$mpu60x0__spi_8c.html#a85fc80c0c35e284d326d17fca254620c" title="mpu60x0_spi_init" alt="" coords="183,1050,305,1078"/>
-<area shape="rect" id="node77" href="$imu__aspirin__2__spi_8c.html#a7223761de0cabf70ad3961ac1764d621" title="mpu_wait_slave4_ready_cb" alt="" coords="153,1101,335,1129"/>
-<area shape="rect" id="node79" href="$ms2100_8c.html#abd4a73602ed7661eccacb070eb07896a" title="ms2100_init" alt="" coords="199,1151,289,1179"/>
-<area shape="rect" id="node85" href="$navdata_8c.html#ac7f9799653789d8cbb05d4c8d8184bb6" title="navdata_init" alt="" coords="199,1202,289,1230"/>
-<area shape="rect" id="node92" href="$telemetry_8c.html#abb4aa9b3c0c8d93e1372de5da86de828" title="Register a telemetry callback function." alt="" coords="385,1303,561,1331"/>
-<area shape="rect" id="node95" href="$lpc21_2mcu__periph_2uart__arch_8c.html#a916fbda270604fca87f8bc235ddcbaaa" title="uart_transmit" alt="" coords="195,1303,293,1331"/>
-<area shape="rect" id="node97" href="$imu__um6_8c.html#a46ab6529f0069a0ca28b7a7f05d367a0" title="UM6_calculate_checksum" alt="" coords="385,1379,561,1407"/>
-<area shape="rect" id="node99" href="$imu__um6_8c.html#a9afb7dbd1cfa371326da8b7406b7ad82" title="UM6_imu_align" alt="" coords="188,1405,300,1433"/>
-<area shape="rect" id="node102" href="$imu__um6_8c.html#abd766713dd3a7b205c16c8e2bfc539eb" title="UM6_send_packet" alt="" coords="408,1430,539,1458"/>
-<area shape="rect" id="node105" href="$ins__xsens_8c.html#a47f12136c89e8cc13ff45e72caab8a19" title="xsens_init" alt="" coords="204,1506,284,1534"/>
-<area shape="rect" id="node7" href="$adxl345_8h.html#a5e8e2514332efd14ec188331fba0b6fc" title="adxl345_set_default\l_config" alt="" coords="405,73,541,117"/>
-<area shape="rect" id="node24" href="$sim_2peripherals_2hmc5843__arch_8c.html#ac346fa452f9a5c3412581aba7e5af4e7" title="hmc5843_arch_init" alt="" coords="408,402,539,430"/>
-<area shape="rect" id="node28" href="$hmc58xx_8c.html#a2165794d296c28b9d22eb0490ec3049b" title="hmc58xx_set_default\l_config" alt="" coords="401,453,545,497"/>
-<area shape="rect" id="node32" href="$group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="i2c_submit" alt="" coords="431,519,516,547"/>
-<area shape="rect" id="node36" href="$imu__aspirin__2__spi_8c.html#af6cc1892146bf84ff3f4999c1ab5a753" title="mpu_set_and_wait" alt="" coords="408,570,539,598"/>
-<area shape="rect" id="node38" href="$imu__aspirin__2__spi_8c.html#aa5e5c5229245a1ef2e8f7dd58bfe8feb" title="mpu_wait_slave4_ready" alt="" coords="393,621,553,649"/>
-<area shape="rect" id="node40" href="$group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction." alt="" coords="643,621,728,649"/>
-<area shape="rect" id="node48" href="$hmc58xx_8c.html#a89a7b5456b1a87c83aef85779c4fc5e9" title="hmc58xx_start_configure" alt="" coords="391,738,556,766"/>
-<area shape="rect" id="node50" href="$hmc58xx_8c.html#a2eff0c407b139d17a73bf75a611c32cb" title="Configuration function called once before normal use." alt="" coords="611,738,760,766"/>
-<area shape="rect" id="node56" href="$itg3200_8c.html#afb54551377578d676facc80c71379182" title="itg3200_set_default\l_config" alt="" coords="407,799,540,843"/>
-<area shape="rect" id="node60" href="$l3g4200_8c.html#a67ca73762166a11d1b624e0b30c28039" title="l3g4200_set_default\l_config" alt="" coords="404,866,543,910"/>
-<area shape="rect" id="node64" href="$lpc21_2peripherals_2max1168__arch_8c.html#a712f39d80c2b46e08a4d0230bf74bef2" title="max1168_arch_init" alt="" coords="408,933,539,961"/>
-<area shape="rect" id="node66" href="$max1168_8c.html#a65bdce5cdf607ff4f87fd590f20d16c3" title="max1168_lock_cb" alt="" coords="411,983,536,1011"/>
-<area shape="rect" id="node68" href="$group__spi.html#ga2db1b869a8aea431e3d3e63106290db9" title="Lock the SPI fifo." alt="" coords="651,983,720,1011"/>
-<area shape="rect" id="node72" href="$mpu60x0_8c.html#a18e7053e4b28374edb52fcad20e78096" title="mpu60x0_set_default\l_config" alt="" coords="401,1034,545,1078"/>
-<area shape="rect" id="node81" href="$lpc21_2peripherals_2ms2100__arch_8c.html#a6c42c614481a60c538d48f9ceef25132" title="ms2100_arch_init" alt="" coords="412,1101,535,1129"/>
-<area shape="rect" id="node83" href="$lpc21_2peripherals_2ms2100__arch_8c.html#aebb1f87ab92e583e78e79686e935e3b8" title="Reset callback." alt="" coords="411,1151,536,1179"/>
-<area shape="rect" id="node87" href="$navdata_8c.html#a1e33b757fc60c83b5fbc7b03945cfc9d" title="acquire_baro_calibration" alt="" coords="392,1202,555,1230"/>
-<area shape="rect" id="node89" href="$navdata_8c.html#a13cb3b609c16774604ae1a27170c331a" title="navdata_write" alt="" coords="635,1227,736,1255"/>
+<area shape="rect" id="node3" href="$lpc21_2mcu__periph_2adc__arch_8c.html#a289883844d6749adab1cee5aabe41824" title="Registers a buffer to be used to store the specified converted channel Usage:" alt="" coords="195,5,323,33"/>
+<area shape="rect" id="node5" href="$adxl345__i2c_8c.html#a8d4cfcfb4d533b36f9a60cd9cc5d6632" title="adxl345_i2c_init" alt="" coords="197,55,320,83"/>
+<area shape="rect" id="node9" href="$adxl345__spi_8c.html#a2c3a96cfe3f877128294bc0b9e60a0fc" title="adxl345_spi_init" alt="" coords="197,106,320,134"/>
+<area shape="rect" id="node12" href="$ahrs__chimu__spi_8c.html#a81e17b09f47068c02c345da1523f589b" title="Aligns the AHRS." alt="" coords="216,157,301,185"/>
+<area shape="rect" id="node14" href="$ami601_8c.html#a371838c77c193499b453d769fb6d4cc2" title="ami601_init" alt="" coords="211,207,307,235"/>
+<area shape="rect" id="node16" href="$imu__apogee_8c.html#aab891048e9d735090820c213f22a33e5" title="configure_baro_slave" alt="" coords="180,258,337,286"/>
+<area shape="rect" id="node18" href="$omap_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85" title="Set a gpio output to high level." alt="" coords="221,309,296,337"/>
+<area shape="rect" id="node20" href="$lpc21_2mcu__periph_2gpio__arch_8h.html#a9623a3774c44d3fc1cca04ccc9bc69f6" title="Setup one or more pins of the given GPIO port as outputs." alt="" coords="188,359,329,387"/>
+<area shape="rect" id="node22" href="$hmc5843_8c.html#af07ba9764727d8692eb33cd271080cdc" title="hmc5843_init" alt="" coords="205,410,312,438"/>
+<area shape="rect" id="node26" href="$hmc58xx_8c.html#a1daa9072b668998f936fb469e5c6c515" title="Initialize Hmc58xx struct and set default config options." alt="" coords="205,461,312,489"/>
+<area shape="rect" id="node30" href="$group__i2c.html#ga68659e03504627925829f2f12c2ec6d2" title="Submit a write only transaction." alt="" coords="208,511,309,539"/>
+<area shape="rect" id="node34" href="$imu__aspirin__2__spi_8c.html#aaacbfcebdd1958bee817daf3e47d6274" title="function to configure hmc5883 mag" alt="" coords="175,562,343,606"/>
+<area shape="rect" id="node42" href="$lpc21_2subsystems_2imu_2imu__aspirin__arch_8c.html#a592698b1cfe18b6c6a33e450221ea2cf" title="imu_aspirin_arch_init" alt="" coords="181,629,336,657"/>
+<area shape="rect" id="node44" href="$lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#ab553dbda318119d1367742a4e59e38ed" title="imu_crista_arch_init" alt="" coords="184,679,333,707"/>
+<area shape="rect" id="node46" href="$imu__drotek__10dof__v2_8c.html#a4ff8194f50bedf14d3d6bf7a4d9efd9c" title="callback function to configure hmc5883 mag" alt="" coords="175,730,343,774"/>
+<area shape="rect" id="node52" href="$imu__krooz__sd__arch_8c.html#afc6a4e2ad9c3c6c70b829f71d3cf3b79" title="imu_krooz_sd_arch_init" alt="" coords="173,797,344,825"/>
+<area shape="rect" id="node54" href="$itg3200_8c.html#a240c1ab04d15bb3f556189887939765f" title="Initialize Itg3200 struct and set default config options." alt="" coords="211,847,307,875"/>
+<area shape="rect" id="node58" href="$l3g4200_8c.html#acda51925a723a1df17a65d9e377c6e8f" title="Initialize L3g4200 struct and set default config options." alt="" coords="209,898,308,926"/>
+<area shape="rect" id="node62" href="$max1168_8c.html#a6130e20b7ea3c56aa94a9e449b773b4a" title="max1168_init" alt="" coords="205,949,312,977"/>
+<area shape="rect" id="node70" href="$mpu60x0__i2c_8c.html#a18c3145fc5159f824a0bb9c6e327ede0" title="mpu60x0_i2c_init" alt="" coords="192,999,325,1027"/>
+<area shape="rect" id="node74" href="$mpu60x0__spi_8c.html#a85fc80c0c35e284d326d17fca254620c" title="mpu60x0_spi_init" alt="" coords="192,1050,325,1078"/>
+<area shape="rect" id="node77" href="$imu__aspirin__2__spi_8c.html#a7223761de0cabf70ad3961ac1764d621" title="mpu_wait_slave4_ready_cb" alt="" coords="161,1101,356,1129"/>
+<area shape="rect" id="node79" href="$ms2100_8c.html#abd4a73602ed7661eccacb070eb07896a" title="ms2100_init" alt="" coords="209,1151,308,1179"/>
+<area shape="rect" id="node85" href="$navdata_8c.html#ac7f9799653789d8cbb05d4c8d8184bb6" title="navdata_init" alt="" coords="209,1202,308,1230"/>
+<area shape="rect" id="node92" href="$telemetry_8c.html#abb4aa9b3c0c8d93e1372de5da86de828" title="Register a telemetry callback function." alt="" coords="405,1303,603,1331"/>
+<area shape="rect" id="node95" href="$lpc21_2mcu__periph_2uart__arch_8c.html#a916fbda270604fca87f8bc235ddcbaaa" title="uart_transmit" alt="" coords="204,1303,313,1331"/>
+<area shape="rect" id="node97" href="$imu__um6_8c.html#a46ab6529f0069a0ca28b7a7f05d367a0" title="UM6_calculate_checksum" alt="" coords="411,1379,597,1407"/>
+<area shape="rect" id="node99" href="$imu__um6_8c.html#a9afb7dbd1cfa371326da8b7406b7ad82" title="UM6_imu_align" alt="" coords="200,1405,317,1433"/>
+<area shape="rect" id="node102" href="$imu__um6_8c.html#abd766713dd3a7b205c16c8e2bfc539eb" title="UM6_send_packet" alt="" coords="435,1430,573,1458"/>
+<area shape="rect" id="node105" href="$ins__xsens_8c.html#a47f12136c89e8cc13ff45e72caab8a19" title="xsens_init" alt="" coords="216,1506,301,1534"/>
+<area shape="rect" id="node7" href="$adxl345_8h.html#a5e8e2514332efd14ec188331fba0b6fc" title="adxl345_set_default\l_config" alt="" coords="429,73,579,117"/>
+<area shape="rect" id="node24" href="$sim_2peripherals_2hmc5843__arch_8c.html#ac346fa452f9a5c3412581aba7e5af4e7" title="hmc5843_arch_init" alt="" coords="433,402,575,430"/>
+<area shape="rect" id="node28" href="$hmc58xx_8c.html#a2165794d296c28b9d22eb0490ec3049b" title="hmc58xx_set_default\l_config" alt="" coords="425,453,583,497"/>
+<area shape="rect" id="node32" href="$group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction." alt="" coords="459,519,549,547"/>
+<area shape="rect" id="node36" href="$imu__aspirin__2__spi_8c.html#af6cc1892146bf84ff3f4999c1ab5a753" title="mpu_set_and_wait" alt="" coords="433,570,575,598"/>
+<area shape="rect" id="node38" href="$imu__aspirin__2__spi_8c.html#aa5e5c5229245a1ef2e8f7dd58bfe8feb" title="mpu_wait_slave4_ready" alt="" coords="417,621,591,649"/>
+<area shape="rect" id="node40" href="$group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction." alt="" coords="687,621,777,649"/>
+<area shape="rect" id="node48" href="$hmc58xx_8c.html#a89a7b5456b1a87c83aef85779c4fc5e9" title="hmc58xx_start_configure" alt="" coords="413,738,595,766"/>
+<area shape="rect" id="node50" href="$hmc58xx_8c.html#a2eff0c407b139d17a73bf75a611c32cb" title="Configuration function called once before normal use." alt="" coords="651,738,813,766"/>
+<area shape="rect" id="node56" href="$itg3200_8c.html#afb54551377578d676facc80c71379182" title="itg3200_set_default\l_config" alt="" coords="431,799,577,843"/>
+<area shape="rect" id="node60" href="$l3g4200_8c.html#a67ca73762166a11d1b624e0b30c28039" title="l3g4200_set_default\l_config" alt="" coords="429,866,579,910"/>
+<area shape="rect" id="node64" href="$lpc21_2peripherals_2max1168__arch_8c.html#a712f39d80c2b46e08a4d0230bf74bef2" title="max1168_arch_init" alt="" coords="433,933,575,961"/>
+<area shape="rect" id="node66" href="$max1168_8c.html#a65bdce5cdf607ff4f87fd590f20d16c3" title="max1168_lock_cb" alt="" coords="436,983,572,1011"/>
+<area shape="rect" id="node68" href="$group__spi.html#ga2db1b869a8aea431e3d3e63106290db9" title="Lock the SPI fifo." alt="" coords="696,983,768,1011"/>
+<area shape="rect" id="node72" href="$mpu60x0_8c.html#a18e7053e4b28374edb52fcad20e78096" title="mpu60x0_set_default\l_config" alt="" coords="424,1034,584,1078"/>
+<area shape="rect" id="node81" href="$lpc21_2peripherals_2ms2100__arch_8c.html#a6c42c614481a60c538d48f9ceef25132" title="ms2100_arch_init" alt="" coords="437,1101,571,1129"/>
+<area shape="rect" id="node83" href="$lpc21_2peripherals_2ms2100__arch_8c.html#aebb1f87ab92e583e78e79686e935e3b8" title="Reset callback." alt="" coords="436,1151,572,1179"/>
+<area shape="rect" id="node87" href="$navdata_8c.html#a1e33b757fc60c83b5fbc7b03945cfc9d" title="acquire_baro_calibration" alt="" coords="415,1202,593,1230"/>
+<area shape="rect" id="node89" href="$navdata_8c.html#a13cb3b609c16774604ae1a27170c331a" title="navdata_write" alt="" coords="677,1227,787,1255"/>
 </map>

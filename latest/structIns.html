@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -118,69 +118,29 @@ $(document).ready(function(){initNavTree('structIns.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ae0dbe8083a7281227e3023cb145ab9a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIns.html#ae0dbe8083a7281227e3023cb145ab9a4">status</a></td></tr>
-<tr class="memdesc:ae0dbe8083a7281227e3023cb145ab9a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">status of the INS  <a href="#ae0dbe8083a7281227e3023cb145ab9a4"></a><br/></td></tr>
-<tr class="memitem:a93d34d1ef72b4793e20d9cc54758ac48"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIns.html#a93d34d1ef72b4793e20d9cc54758ac48">hf_realign</a></td></tr>
-<tr class="memdesc:a93d34d1ef72b4793e20d9cc54758ac48"><td class="mdescLeft">&#160;</td><td class="mdescRight">realign horizontally if true  <a href="#a93d34d1ef72b4793e20d9cc54758ac48"></a><br/></td></tr>
-<tr class="memitem:a565497311aa048dcd749df94bb5c0b17"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIns.html#a565497311aa048dcd749df94bb5c0b17">vf_realign</a></td></tr>
-<tr class="memdesc:a565497311aa048dcd749df94bb5c0b17"><td class="mdescLeft">&#160;</td><td class="mdescRight">realign vertically if true  <a href="#a565497311aa048dcd749df94bb5c0b17"></a><br/></td></tr>
+<tr class="memitem:a71915da148d31a3e88f06eaa3be9bfb6"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="ins_8h.html#a0840efa3fbae3f375b8a2cdf048907a4">InsStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIns.html#a71915da148d31a3e88f06eaa3be9bfb6">status</a></td></tr>
+<tr class="memdesc:a71915da148d31a3e88f06eaa3be9bfb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">status of the INS  <a href="#a71915da148d31a3e88f06eaa3be9bfb6"></a><br/></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Inertial Navigation System state. </p>
 
-<p>Definition at line <a class="el" href="ins_8h_source.html#l00044">44</a> of file <a class="el" href="ins_8h_source.html">ins.h</a>.</p>
-</div><h2>Field Documentation</h2>
-<a class="anchor" id="a93d34d1ef72b4793e20d9cc54758ac48"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool_t Ins::hf_realign</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>realign horizontally if true </p>
-
 <p>Definition at line <a class="el" href="ins_8h_source.html#l00046">46</a> of file <a class="el" href="ins_8h_source.html">ins.h</a>.</p>
-
-<p>Referenced by <a class="el" href="ins__ardrone2_8c_source.html#l00046">ins_init()</a>, <a class="el" href="ins__int_8c_source.html#l00249">ins_update_gps()</a>, <a class="el" href="navigation_8c_source.html#l00309">nav_reset_reference()</a>, and <a class="el" href="cam__track_8c_source.html#l00131">track_event()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae0dbe8083a7281227e3023cb145ab9a4"></a>
+</div><h2>Field Documentation</h2>
+<a class="anchor" id="a71915da148d31a3e88f06eaa3be9bfb6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> Ins::status</td>
+          <td class="memname">enum <a class="el" href="ins_8h.html#a0840efa3fbae3f375b8a2cdf048907a4">InsStatus</a> Ins::status</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>status of the INS </p>
 
-<p>Definition at line <a class="el" href="ins_8h_source.html#l00045">45</a> of file <a class="el" href="ins_8h_source.html">ins.h</a>.</p>
-
-<p>Referenced by <a class="el" href="ins__alt__float_8c_source.html#l00066">ins_init()</a>, and <a class="el" href="ins__ardrone2_8c_source.html#l00074">ins_periodic()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a565497311aa048dcd749df94bb5c0b17"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool_t Ins::vf_realign</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>realign vertically if true </p>
-
 <p>Definition at line <a class="el" href="ins_8h_source.html#l00047">47</a> of file <a class="el" href="ins_8h_source.html">ins.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__alt__float_8c_source.html#l00104">baro_cb()</a>, <a class="el" href="imu__um6_8c_source.html#l00189">imu_periodic()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00066">ins_init()</a>, <a class="el" href="navigation_8c_source.html#l00316">nav_reset_alt()</a>, and <a class="el" href="navigation_8c_source.html#l00309">nav_reset_reference()</a>.</p>
+<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00326">ahrs_align()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00341">ahrs_propagate()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00465">ahrs_update_gps()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00598">error_output()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00076">ins_init()</a>, and <a class="el" href="ins__ardrone2_8c_source.html#l00071">ins_periodic()</a>.</p>
 
 </div>
 </div>
@@ -193,7 +153,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structIns.html">Ins</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:12 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:14 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

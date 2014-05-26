@@ -1,27 +1,34 @@
 <map id="ins_init" name="ins_init">
-<area shape="rect" id="node3" href="$hf__float_8c.html#a77441191105f3d3f31cfd26d712dec07" title="b2_hff_init" alt="" coords="145,55,225,83"/>
-<area shape="rect" id="node9" href="$telemetry_8c.html#abb4aa9b3c0c8d93e1372de5da86de828" title="Register a telemetry callback function." alt="" coords="303,106,479,134"/>
-<area shape="rect" id="node11" href="$ins__int_8c.html#a3c7bfebd16999823476aada2b31b426e" title="baro_cb" alt="" coords="152,262,219,290"/>
-<area shape="rect" id="node33" href="$median__filter_8h.html#ad880c294f1bee96a283cf9c9511658a3" title="init_median_filter" alt="" coords="127,207,244,235"/>
-<area shape="rect" id="node35" href="$ins__int_8c.html#a4a87b109da7096f36e497b491ebfdfd6" title="initialize the local origin (ltp_def) from flight plan position" alt="" coords="119,451,252,495"/>
-<area shape="rect" id="node52" href="$vf__extended__float_8c.html#a7858e35c59bd12fd401af33a4fbfa580" title="vff_init" alt="" coords="156,157,215,185"/>
-<area shape="rect" id="node5" href="$hf__float_8c.html#ab2a60c30b22bd5e85a329b9c5aa91659" title="b2_hff_init_x" alt="" coords="344,55,437,83"/>
-<area shape="rect" id="node7" href="$hf__float_8c.html#a9f9b984b4f9959258156f3f79acaa03a" title="b2_hff_init_y" alt="" coords="344,5,437,33"/>
-<area shape="rect" id="node13" href="$ins__int_8c.html#a906e42c3bdc95d6fa78d129fbf20719e" title="copy position and speed to state interface" alt="" coords="331,207,451,235"/>
-<area shape="rect" id="node21" href="$pprz__isa_8h.html#af35822e328350f7e37f6d8bd47a81ca2" title="Get relative altitude from pressure (using simplified equation)." alt="" coords="325,258,456,302"/>
-<area shape="rect" id="node23" href="$vf__extended__float_8c.html#a9871b34cda71fc04b9e312b8ce4f11af" title="vff_realign" alt="" coords="351,325,431,353"/>
-<area shape="rect" id="node25" href="$vf__float_8c.html#a067f2a1bed73d1940c35450706a56265" title="vff_update" alt="" coords="349,375,432,403"/>
-<area shape="rect" id="node29" href="$vf__extended__float_8c.html#a94b26d899a6d7ca4e26cb7df3f45ef49" title="vff_update_baro" alt="" coords="333,157,448,185"/>
-<area shape="rect" id="node15" href="$group__state__position.html#ga83bd9c7ef9bfff9ff41a5d290be52438" title="Set position from local NED coordinates (int)." alt="" coords="528,233,680,261"/>
-<area shape="rect" id="node17" href="$group__state__velocity.html#gaa6cbe14043ae394f4994ac02bee85644" title="Set ground speed in local NED coordinates (int)." alt="" coords="533,283,675,311"/>
-<area shape="rect" id="node19" href="$group__state__acceleration.html#ga44bccfd32b2928abef6b08c4f867c1be" title="Set acceleration in NED coordinates (int)." alt="" coords="535,182,673,210"/>
-<area shape="rect" id="node27" href="$vf__float_8c.html#aafd7012999c4a5c623b6b6f311ec595a" title="update_z_conf" alt="" coords="551,373,657,401"/>
-<area shape="rect" id="node31" href="$vf__extended__float_8c.html#a7cc8f440a2dfd6769810468a88ccec67" title="update_baro_conf" alt="" coords="541,131,667,159"/>
-<area shape="rect" id="node37" href="$pprz__geodetic__int_8c.html#a386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="344,539,437,567"/>
-<area shape="rect" id="node41" href="$pprz__geodetic__int_8c.html#a5afd098a83e572b854e157486ccb569f" title="ltp_def_from_ecef_i" alt="" coords="323,434,459,462"/>
-<area shape="rect" id="node49" href="$group__state__position.html#gacc086fcd500269371c8c6eabbf3d557e" title="Set the local (flat earth) coordinate frame origin (int)." alt="" coords="317,485,464,513"/>
-<area shape="rect" id="node39" href="$pprz__geodetic__double_8c.html#a33dae600eb50aea456b6cdbeec53c849" title="ecef_of_lla_d" alt="" coords="555,541,653,569"/>
-<area shape="rect" id="node43" href="$pprz__geodetic__int_8c.html#aea47a32071c2427f895fcb1df32c4e23" title="lla_of_ecef_i" alt="" coords="557,423,651,451"/>
-<area shape="rect" id="node47" href="$pprz__geodetic__int_8c.html#a143e7f5c7f3df4f188daf6c06ec7ec56" title="ltp_of_ecef_rmat_from\l_lla_i" alt="" coords="528,474,680,518"/>
-<area shape="rect" id="node45" href="$pprz__geodetic__double_8c.html#a03262ba97728d6e61bc645e69bd7c332" title="lla_of_ecef_d" alt="" coords="728,423,827,451"/>
+<area shape="rect" id="node3" href="$ins__alt__float_8c.html#af1c41f4924907141e439cbbca1ded55e" title="alt_kalman" alt="" coords="408,5,499,33"/>
+<area shape="rect" id="node5" href="$ins__alt__float_8c.html#a4ae7c5f09f78408cfce9731778a82494" title="alt_kalman_init" alt="" coords="155,97,272,125"/>
+<area shape="rect" id="node9" href="$hf__float_8c.html#a77441191105f3d3f31cfd26d712dec07" title="b2_hff_init" alt="" coords="171,438,256,466"/>
+<area shape="rect" id="node19" href="$telemetry_8c.html#abb4aa9b3c0c8d93e1372de5da86de828" title="Register a telemetry callback function." alt="" coords="355,543,552,571"/>
+<area shape="rect" id="node21" href="$ins__alt__float_8c.html#a3c7bfebd16999823476aada2b31b426e" title="baro_cb" alt="" coords="177,202,249,230"/>
+<area shape="rect" id="node45" href="$group__state__position.html#gac6c73e42fc6b5891cb23454ad9c68c92" title="Set position from UTM coordinates (float)." alt="" coords="371,325,536,353"/>
+<area shape="rect" id="node49" href="$ins__int_8c.html#a4a87b109da7096f36e497b491ebfdfd6" title="initialize the local origin (ltp_def) from flight plan position" alt="" coords="141,579,285,623"/>
+<area shape="rect" id="node66" href="$group__state__position.html#gae180e6252c12221500767c9a4a34b20d" title="Set the local (flat earth) coordinate frame origin from UTM (float)." alt="" coords="120,646,307,674"/>
+<area shape="rect" id="node69" href="$vf__extended__float_8c.html#a2358072559748851df8c44c975c43ebb" title="vff_init_zero" alt="" coords="164,697,263,725"/>
+<area shape="rect" id="node7" href="$ins__alt__float_8c.html#ae9b929985ac97a4adb5f6f3385485132" title="alt_kalman_reset" alt="" coords="388,55,519,83"/>
+<area shape="rect" id="node11" href="$hf__float_8c.html#ab2a60c30b22bd5e85a329b9c5aa91659" title="b2_hff_init_x" alt="" coords="403,375,504,403"/>
+<area shape="rect" id="node13" href="$hf__float_8c.html#a9f9b984b4f9959258156f3f79acaa03a" title="b2_hff_init_y" alt="" coords="403,426,504,454"/>
+<area shape="rect" id="node15" href="$low__pass__filter_8h.html#a1909d1e3c0d2c64a4df66cecea703e33" title="Init a second order Butterworth filter." alt="" coords="385,477,521,521"/>
+<area shape="rect" id="node17" href="$low__pass__filter_8h.html#a71eaaf92d7c19c9c82578ff686af3332" title="Init second order low pass filter(fixed point version)." alt="" coords="604,477,767,521"/>
+<area shape="rect" id="node25" href="$pprz__isa_8h.html#af35822e328350f7e37f6d8bd47a81ca2" title="Get relative altitude from pressure (using simplified equation)." alt="" coords="383,207,524,251"/>
+<area shape="rect" id="node27" href="$group__state__position.html#ga7488f3b1e3afa9515541c0130278bdac" title="Get position in UTM coordinates (float)." alt="" coords="371,274,536,302"/>
+<area shape="rect" id="node37" href="$group__state__velocity.html#ga50a44ddecd4b2517b549549e953ffea2" title="Get ground speed in local NED coordinates (float)." alt="" coords="376,106,531,134"/>
+<area shape="rect" id="node47" href="$group__state__velocity.html#gae6549b15cd961047c89481ab2d87171f" title="Set ground speed in local NED coordinates (float)." alt="" coords="376,157,531,185"/>
+<area shape="rect" id="node29" href="$group__state__position.html#ga6893f5e3d84e0464d2bc6fc86a08f16d" title="stateCalcPositionUtm_f" alt="" coords="600,274,771,302"/>
+<area shape="rect" id="node31" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="841,274,940,302"/>
+<area shape="rect" id="node33" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1011,303,1157,331"/>
+<area shape="rect" id="node35" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1016,237,1152,281"/>
+<area shape="rect" id="node39" href="$group__state__velocity.html#ga440e1db9aa0854e8cea50670d7055450" title="stateCalcSpeedNed_f" alt="" coords="605,106,765,134"/>
+<area shape="rect" id="node41" href="$pprz__geodetic__float_8c.html#ac36c2e51de3064e3919a1f58f884342e" title="ned_of_ecef_vect_f" alt="" coords="819,106,963,134"/>
+<area shape="rect" id="node43" href="$pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title="enu_of_ecef_vect_f" alt="" coords="1012,106,1156,134"/>
+<area shape="rect" id="node51" href="$pprz__geodetic__int_8c.html#a386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="404,594,503,622"/>
+<area shape="rect" id="node55" href="$pprz__geodetic__int_8c.html#a5afd098a83e572b854e157486ccb569f" title="ltp_def_from_ecef_i" alt="" coords="380,645,527,673"/>
+<area shape="rect" id="node63" href="$group__state__position.html#gacc086fcd500269371c8c6eabbf3d557e" title="Set the local (flat earth) coordinate frame origin (int)." alt="" coords="375,695,532,723"/>
+<area shape="rect" id="node53" href="$pprz__geodetic__double_8c.html#a33dae600eb50aea456b6cdbeec53c849" title="ecef_of_lla_d" alt="" coords="633,586,737,614"/>
+<area shape="rect" id="node57" href="$pprz__geodetic__int_8c.html#aea47a32071c2427f895fcb1df32c4e23" title="lla_of_ecef_i" alt="" coords="636,703,735,731"/>
+<area shape="rect" id="node61" href="$pprz__geodetic__int_8c.html#a143e7f5c7f3df4f188daf6c06ec7ec56" title="ltp_of_ecef_rmat_from\l_lla_i" alt="" coords="603,637,768,681"/>
+<area shape="rect" id="node59" href="$pprz__geodetic__double_8c.html#a03262ba97728d6e61bc645e69bd7c332" title="lla_of_ecef_d" alt="" coords="839,703,943,731"/>
 </map>

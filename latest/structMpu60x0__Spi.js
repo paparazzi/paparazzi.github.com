@@ -1,10 +1,10 @@
 var structMpu60x0__Spi =
 [
     [ "config", "structMpu60x0__Spi.html#a312df0b73091e56a69d246626955974a", null ],
-    [ "data_accel", "structMpu60x0__Spi.html#a630c48e0b1b58470b93297fa85dd468b", null ],
+    [ "data_accel", "structMpu60x0__Spi.html#a31b77070c846b59c8624816c6b445a37", null ],
     [ "data_available", "structMpu60x0__Spi.html#a03e02b3bf085be7f33c8505b827fb624", null ],
     [ "data_ext", "structMpu60x0__Spi.html#a20028497bd8f071099b0f020462ac3f6", null ],
-    [ "data_rates", "structMpu60x0__Spi.html#a6d5e201f29292cdd38cd56054ce571a2", null ],
+    [ "data_rates", "structMpu60x0__Spi.html#a7f43d15d9943a43bbb837d0117793d3d", null ],
     [ "rates", "structMpu60x0__Spi.html#a827c7fc8dd9431e7a1b7c74c3505d3cf", null ],
     [ "rx_buf", "structMpu60x0__Spi.html#aac2c5a39f64f336ccb130c06b247bebf", null ],
     [ "slave_init_status", "structMpu60x0__Spi.html#a9beb9ee594db50aaa29bb140cb0ac68c", null ],

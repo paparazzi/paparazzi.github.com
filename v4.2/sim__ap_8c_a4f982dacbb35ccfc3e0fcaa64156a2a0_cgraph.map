@@ -1,41 +1,41 @@
 <map id="sim_periodic_task" name="sim_periodic_task">
-<area shape="rect" id="node3" href="$main__ap_8c.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="383,157,479,185"/>
-<area shape="rect" id="node17" href="$electrical_8c.html#aeef6ce2fb40e76ed52df5a1d45646ba1" title="electrical_periodic" alt="" coords="183,461,308,489"/>
-<area shape="rect" id="node19" href="$main__ap_8c.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="192,511,299,539"/>
-<area shape="rect" id="node70" href="$main__fbw_8c.html#ae1f060d6fcf56653e3db62e402c8701a" title="event_task_fbw" alt="" coords="188,562,303,590"/>
-<area shape="rect" id="node72" href="$main__fbw_8c.html#a02fb7014646db38d7d3bca6a12719f15" title="periodic_task_fbw" alt="" coords="183,613,308,641"/>
-<area shape="rect" id="node74" href="$main__ap_8c.html#a35e24bbf955d315ca24de207ead69ce2" title="Send a series of initialisation messages followed by a stream of periodic ones." alt="" coords="193,663,297,691"/>
-<area shape="rect" id="node76" href="$main__ap_8c.html#aaae462f08bad040640b5d7d9dac4e5d3" title="Run at PERIODIC_FREQUENCY (60Hz if not defined)" alt="" coords="196,739,295,767"/>
-<area shape="rect" id="node5" href="$ahrs__infrared_8c.html#a8428916e937864198ba37b1ea356aaac" title="ahrs_update_infrared" alt="" coords="561,5,703,33"/>
-<area shape="rect" id="node9" href="$energy__ctrl_8c.html#a38f0bbceda8812281fc650c2c1aac6c8" title="v_ctl_climb_loop" alt="" coords="573,55,691,83"/>
-<area shape="rect" id="node11" href="$stabilization__adaptive_8c.html#a86f0d47644538be1345aab19c7dc3de4" title="h_ctl_attitude_loop" alt="" coords="567,106,697,134"/>
-<area shape="rect" id="node13" href="$energy__ctrl_8c.html#a7fefa3c115f6c0f7453db6c2edd2dbbb" title="Computes slewed throttle from throttle setpoint called at 20Hz." alt="" coords="567,157,697,185"/>
-<area shape="rect" id="node15" href="$link__mcu__usart_8h.html#ad2f41351eb7b54410360a1e9f1f2407a" title="link_mcu_send" alt="" coords="577,207,687,235"/>
-<area shape="rect" id="node7" href="$ahrs__infrared_8c.html#acfb588823e7daf8f26abac33fb48baba" title="ahrs_update_fw_estimator" alt="" coords="761,5,935,33"/>
-<area shape="rect" id="node21" href="$lpc21_2mcu__periph_2i2c__arch_8c.html#a05763355d0e087ba41feab61dd773fe6" title="i2c_event" alt="" coords="392,359,469,387"/>
-<area shape="rect" id="node23" href="$firmwares_2rotorcraft_2main_8c.html#a9ad44dfc9d1342835451bd87613fb610" title="on_gyro_event" alt="" coords="377,410,484,438"/>
-<area shape="rect" id="node47" href="$firmwares_2rotorcraft_2main_8c.html#aff00de1e5817007c0daf0de123dfa1f6" title="on_accel_event" alt="" coords="375,511,487,539"/>
-<area shape="rect" id="node51" href="$firmwares_2rotorcraft_2main_8c.html#a00877cb9155773120515df456aa457a2" title="on_mag_event" alt="" coords="377,562,484,590"/>
-<area shape="rect" id="node57" href="$link__mcu__spi_8h.html#ac8ca91741aea5e6803a8db35d4c8188e" title="link_mcu_event_task" alt="" coords="359,613,503,641"/>
-<area shape="rect" id="node59" href="$main__ap_8c.html#add4d9babf9be4522b8a4a97e1f1e7b84" title="Function to be called when a message from FBW is available." alt="" coords="365,689,496,717"/>
-<area shape="rect" id="node25" href="$ahrs__aligner_8c.html#aa8c5b5a4ce38e0dd4e1234bad8adf92d" title="ahrs_aligner_run" alt="" coords="573,258,691,286"/>
-<area shape="rect" id="node27" href="$ahrs__float__cmpl_8c.html#a81e17b09f47068c02c345da1523f589b" title="Aligns the AHRS." alt="" coords="592,309,672,337"/>
-<area shape="rect" id="node29" href="$ahrs__float__cmpl_8c.html#af8f4df7ae38ca5b239eac30e7d259e46" title="Propagation." alt="" coords="577,359,687,387"/>
-<area shape="rect" id="node31" href="$ins_8c.html#a77b5ba9f198b91b698062cc0dc0c953d" title="ins_propagate" alt="" coords="581,410,683,438"/>
-<area shape="rect" id="node45" href="$vi_8h.html#ae5e1984ed0188c09d9bd0d0a39f281c3" title="vi_notify_imu_available" alt="" coords="555,461,709,489"/>
-<area shape="rect" id="node33" href="$vf__float_8c.html#aaff6390ecf9c28ae4c77977cb22aed95" title="vff_propagate" alt="" coords="799,385,897,413"/>
-<area shape="rect" id="node35" href="$hf__float_8c.html#a73aab61de49440834b84d49789325439" title="b2_hff_propagate" alt="" coords="788,435,908,463"/>
-<area shape="rect" id="node37" href="$hf__float_8c.html#aef01881eabc18087fc50d2775b47f995" title="b2_hff_store_accel_body" alt="" coords="984,347,1149,375"/>
-<area shape="rect" id="node39" href="$hf__float_8c.html#ae7c470ebe7493f2f4c494da329750543" title="b2_hff_compute_accel\l_body_mean" alt="" coords="991,398,1143,442"/>
-<area shape="rect" id="node41" href="$hf__float_8c.html#a805d2311d32d8db051cf5526d70386d6" title="b2_hff_propagate_x" alt="" coords="1000,465,1133,493"/>
-<area shape="rect" id="node43" href="$hf__float_8c.html#a9e09cd67712ce4dbaca98be46026aa5c" title="b2_hff_propagate_y" alt="" coords="1000,515,1133,543"/>
-<area shape="rect" id="node49" href="$ahrs__float__cmpl_8c.html#a8bf83860498b05e7e94484cdcbcb1b7a" title="Update AHRS state with accerleration measurements." alt="" coords="567,511,697,539"/>
-<area shape="rect" id="node53" href="$ahrs__float__cmpl_8c.html#a781832a9119845d31bda0fc8a8bb8bf3" title="Update AHRS state with magnetometer measurements." alt="" coords="569,562,695,590"/>
-<area shape="rect" id="node55" href="$vi_8h.html#a0e05949840bd7c88ec8d003230527932" title="vi_notify_mag_available" alt="" coords="552,613,712,641"/>
-<area shape="rect" id="node61" href="$main__ap_8c.html#ab8d2d846e05038e13cfb45b8bb8f0921" title="Send back uncontrolled channels." alt="" coords="568,663,696,691"/>
-<area shape="rect" id="node63" href="$main__ap_8c.html#a83e52893d778a46aeda1b3c09ffd0656" title="Update paparazzi mode." alt="" coords="567,714,697,742"/>
-<area shape="rect" id="node65" href="$rc__settings_8c.html#ad1720f3c08225e43c878c50798cb9dba" title="Includes generated code from tuning_rc.xml." alt="" coords="589,765,675,793"/>
-<area shape="rect" id="node67" href="$main__ap_8c.html#a32617d43a5d19758585b961a4ac30b61" title="mcu1_status_update" alt="" coords="561,815,703,843"/>
-<area shape="rect" id="node78" href="$lpc21_2subsystems_2imu_2imu__b2__arch_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="imu_periodic" alt="" coords="384,739,477,767"/>
-<area shape="rect" id="node80" href="$fw__ins__vn100_8c.html#a8dc6e488ca20854b1f96fb7a2933bbfe" title="ins_periodic_task" alt="" coords="369,790,492,818"/>
+<area shape="rect" id="node3" href="$main__ap_8c.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="397,157,504,185"/>
+<area shape="rect" id="node17" href="$electrical_8c.html#aeef6ce2fb40e76ed52df5a1d45646ba1" title="electrical_periodic" alt="" coords="189,461,325,489"/>
+<area shape="rect" id="node19" href="$main__ap_8c.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="200,511,315,539"/>
+<area shape="rect" id="node70" href="$main__fbw_8c.html#ae1f060d6fcf56653e3db62e402c8701a" title="event_task_fbw" alt="" coords="197,562,317,590"/>
+<area shape="rect" id="node72" href="$main__fbw_8c.html#a02fb7014646db38d7d3bca6a12719f15" title="periodic_task_fbw" alt="" coords="191,613,324,641"/>
+<area shape="rect" id="node74" href="$main__ap_8c.html#a35e24bbf955d315ca24de207ead69ce2" title="Send a series of initialisation messages followed by a stream of periodic ones." alt="" coords="200,663,315,691"/>
+<area shape="rect" id="node76" href="$main__ap_8c.html#aaae462f08bad040640b5d7d9dac4e5d3" title="Run at PERIODIC_FREQUENCY (60Hz if not defined)" alt="" coords="204,739,311,767"/>
+<area shape="rect" id="node5" href="$ahrs__infrared_8c.html#a8428916e937864198ba37b1ea356aaac" title="ahrs_update_infrared" alt="" coords="584,5,741,33"/>
+<area shape="rect" id="node9" href="$energy__ctrl_8c.html#a38f0bbceda8812281fc650c2c1aac6c8" title="v_ctl_climb_loop" alt="" coords="600,55,725,83"/>
+<area shape="rect" id="node11" href="$stabilization__adaptive_8c.html#a86f0d47644538be1345aab19c7dc3de4" title="h_ctl_attitude_loop" alt="" coords="592,106,733,134"/>
+<area shape="rect" id="node13" href="$energy__ctrl_8c.html#a7fefa3c115f6c0f7453db6c2edd2dbbb" title="Computes slewed throttle from throttle setpoint called at 20Hz." alt="" coords="593,157,732,185"/>
+<area shape="rect" id="node15" href="$link__mcu__usart_8h.html#ad2f41351eb7b54410360a1e9f1f2407a" title="link_mcu_send" alt="" coords="605,207,720,235"/>
+<area shape="rect" id="node7" href="$ahrs__infrared_8c.html#acfb588823e7daf8f26abac33fb48baba" title="ahrs_update_fw_estimator" alt="" coords="799,5,988,33"/>
+<area shape="rect" id="node21" href="$lpc21_2mcu__periph_2i2c__arch_8c.html#a05763355d0e087ba41feab61dd773fe6" title="i2c_event" alt="" coords="409,359,492,387"/>
+<area shape="rect" id="node23" href="$firmwares_2rotorcraft_2main_8c.html#a9ad44dfc9d1342835451bd87613fb610" title="on_gyro_event" alt="" coords="393,410,508,438"/>
+<area shape="rect" id="node47" href="$firmwares_2rotorcraft_2main_8c.html#aff00de1e5817007c0daf0de123dfa1f6" title="on_accel_event" alt="" coords="391,511,511,539"/>
+<area shape="rect" id="node51" href="$firmwares_2rotorcraft_2main_8c.html#a00877cb9155773120515df456aa457a2" title="on_mag_event" alt="" coords="392,562,509,590"/>
+<area shape="rect" id="node57" href="$link__mcu__spi_8h.html#ac8ca91741aea5e6803a8db35d4c8188e" title="link_mcu_event_task" alt="" coords="373,613,528,641"/>
+<area shape="rect" id="node59" href="$main__ap_8c.html#add4d9babf9be4522b8a4a97e1f1e7b84" title="Function to be called when a message from FBW is available." alt="" coords="379,689,523,717"/>
+<area shape="rect" id="node25" href="$ahrs__aligner_8c.html#aa8c5b5a4ce38e0dd4e1234bad8adf92d" title="ahrs_aligner_run" alt="" coords="599,258,727,286"/>
+<area shape="rect" id="node27" href="$ahrs__float__cmpl_8c.html#a81e17b09f47068c02c345da1523f589b" title="Aligns the AHRS." alt="" coords="620,309,705,337"/>
+<area shape="rect" id="node29" href="$ahrs__float__cmpl_8c.html#af8f4df7ae38ca5b239eac30e7d259e46" title="Propagation." alt="" coords="601,359,724,387"/>
+<area shape="rect" id="node31" href="$ins_8c.html#a77b5ba9f198b91b698062cc0dc0c953d" title="ins_propagate" alt="" coords="607,410,719,438"/>
+<area shape="rect" id="node45" href="$vi_8h.html#ae5e1984ed0188c09d9bd0d0a39f281c3" title="vi_notify_imu_available" alt="" coords="579,461,747,489"/>
+<area shape="rect" id="node33" href="$vf__float_8c.html#aaff6390ecf9c28ae4c77977cb22aed95" title="vff_propagate" alt="" coords="839,385,948,413"/>
+<area shape="rect" id="node35" href="$hf__float_8c.html#a73aab61de49440834b84d49789325439" title="b2_hff_propagate" alt="" coords="827,435,960,463"/>
+<area shape="rect" id="node37" href="$hf__float_8c.html#aef01881eabc18087fc50d2775b47f995" title="b2_hff_store_accel_body" alt="" coords="1037,347,1216,375"/>
+<area shape="rect" id="node39" href="$hf__float_8c.html#ae7c470ebe7493f2f4c494da329750543" title="b2_hff_compute_accel\l_body_mean" alt="" coords="1044,398,1209,442"/>
+<area shape="rect" id="node41" href="$hf__float_8c.html#a805d2311d32d8db051cf5526d70386d6" title="b2_hff_propagate_x" alt="" coords="1053,465,1200,493"/>
+<area shape="rect" id="node43" href="$hf__float_8c.html#a9e09cd67712ce4dbaca98be46026aa5c" title="b2_hff_propagate_y" alt="" coords="1053,515,1200,543"/>
+<area shape="rect" id="node49" href="$ahrs__float__cmpl_8c.html#a8bf83860498b05e7e94484cdcbcb1b7a" title="Update AHRS state with accerleration measurements." alt="" coords="592,511,733,539"/>
+<area shape="rect" id="node53" href="$ahrs__float__cmpl_8c.html#a781832a9119845d31bda0fc8a8bb8bf3" title="Update AHRS state with magnetometer measurements." alt="" coords="593,562,732,590"/>
+<area shape="rect" id="node55" href="$vi_8h.html#a0e05949840bd7c88ec8d003230527932" title="vi_notify_mag_available" alt="" coords="576,613,749,641"/>
+<area shape="rect" id="node61" href="$main__ap_8c.html#ab8d2d846e05038e13cfb45b8bb8f0921" title="Send back uncontrolled channels." alt="" coords="595,663,731,691"/>
+<area shape="rect" id="node63" href="$main__ap_8c.html#a83e52893d778a46aeda1b3c09ffd0656" title="Update paparazzi mode." alt="" coords="589,714,736,742"/>
+<area shape="rect" id="node65" href="$rc__settings_8c.html#ad1720f3c08225e43c878c50798cb9dba" title="Includes generated code from tuning_rc.xml." alt="" coords="617,765,708,793"/>
+<area shape="rect" id="node67" href="$main__ap_8c.html#a32617d43a5d19758585b961a4ac30b61" title="mcu1_status_update" alt="" coords="584,815,741,843"/>
+<area shape="rect" id="node78" href="$lpc21_2subsystems_2imu_2imu__b2__arch_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="imu_periodic" alt="" coords="400,739,501,767"/>
+<area shape="rect" id="node80" href="$fw__ins__vn100_8c.html#a8dc6e488ca20854b1f96fb7a2933bbfe" title="ins_periodic_task" alt="" coords="385,790,516,818"/>
 </map>

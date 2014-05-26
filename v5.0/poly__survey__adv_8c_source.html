@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.0.2_stable-5-gc76da3d</span>
+   &#160;<span id="projectnumber">v5.0.4_stable-4-g32bffa6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -380,7 +380,7 @@ $(document).ready(function(){initNavTree('poly__survey__adv_8c_source.html','');
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <a class="code" href="nav_8c.html#ad1b9d2e8da4a32477ca8bedc0bca86fe" title="Navigates around (x, y).">nav_circle_XY</a>(entry_center.<a class="code" href="structpoint2d.html#a6e9238b52e9b297f08e0c5103400268e">x</a>, entry_center.<a class="code" href="structpoint2d.html#a0e90a15d05bd385761a5afe03ecdc152">y</a>, -<a class="code" href="poly__survey__adv_8c.html#a4a847e4a2f39ee557b1ca0e5e2d693c5">psa_min_rad</a>);</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="navigation_8h.html#a68ab3f04c3fcd85380c950db512fd97e">NavCourseCloseTo</a>(<a class="code" href="poly__survey__adv_8c.html#a2a6fd0142c89a2b743125a4c972f38b6">segment_angle</a>)</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        &amp;&amp; <a class="code" href="nav_8c.html#a771b907350b836982ba4e31fd4bcbf4b" title="Decide if the UAV is approaching the current waypoint.">nav_approaching_xy</a>(seg_start.<a class="code" href="structpoint2d.html#a6e9238b52e9b297f08e0c5103400268e">x</a>, seg_start.<a class="code" href="structpoint2d.html#a0e90a15d05bd385761a5afe03ecdc152">y</a>, <a class="code" href="nav_8c.html#ab2e97613bcf8e5721e639812c7a3469a">last_x</a>, <a class="code" href="nav_8c.html#a38c13a13ef3e5a3b6480f71bf244e668">last_y</a>, CARROT)</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        &amp;&amp; fabs(<a class="code" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float).">stateGetPositionEnu_f</a>()-&gt;z - <a class="code" href="poly__survey__adv_8c.html#a901866795c287550aca820632084a03a">psa_altitude</a>) &lt;= 20) {</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        &amp;&amp; fabs(<a class="code" href="group__state__position.html#ga7488f3b1e3afa9515541c0130278bdac" title="Get position in UTM coordinates (float).">stateGetPositionUtm_f</a>()-&gt;alt - <a class="code" href="poly__survey__adv_8c.html#a901866795c287550aca820632084a03a">psa_altitude</a>) &lt;= 20) {</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      <a class="code" href="poly__survey__adv_8c.html#a78ea7c15fb5e95bf19f58038afbf77db">psa_stage</a> = <a class="code" href="poly__survey__adv_8h.html#aa46eae8395ef867c63e26dd5d86e97d5a04ac0c05629917c780c280202e107178">SEG</a>;</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;      <a class="code" href="navigation_8c.html#a2580ee456d7dd3d157fd7c43ad2eac2d">nav_init_stage</a>();</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="preprocessor">#ifdef DIGITAL_CAM</span></div>
@@ -448,7 +448,7 @@ $(document).ready(function(){initNavTree('poly__survey__adv_8c_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8a28edc49a666abb23d4888eaf71220c.html">navigation</a></li><li class="navelem"><a class="el" href="poly__survey__adv_8c.html">poly_survey_adv.c</a></li>
-    <li class="footer">Generated on Tue Nov 19 2013 00:02:55 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Apr 9 2014 18:08:57 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

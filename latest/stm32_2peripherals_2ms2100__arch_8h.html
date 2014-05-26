@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('stm32_2peripherals_2ms2100__arch_8h.ht
 
 <p>STM32 specific functions for the ms2100 magnetic sensor from PNI.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;libopencm3/stm32/f1/gpio.h&gt;</code><br/>
+<div class="textblock"><code>#include &lt;libopencm3/stm32/gpio.h&gt;</code><br/>
 <code>#include &quot;<a class="el" href="spi_8h_source.html">mcu_periph/spi.h</a>&quot;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for ms2100_arch.h:</div>
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('stm32_2peripherals_2ms2100__arch_8h.ht
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2peripherals_2ms2100__arch_8h__incl.png" border="0" usemap="#sw_2airborne_2arch_2stm32_2peripherals_2ms2100__arch_8h" alt=""/></div>
 <map name="sw_2airborne_2arch_2stm32_2peripherals_2ms2100__arch_8h" id="sw_2airborne_2arch_2stm32_2peripherals_2ms2100__arch_8h">
-<area shape="rect" id="node5" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="171,107,291,135"/></map>
+<area shape="rect" id="node5" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="213,99,344,127"/></map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -131,14 +131,14 @@ $(document).ready(function(){initNavTree('stm32_2peripherals_2ms2100__arch_8h.ht
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2peripherals_2ms2100__arch_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2arch_2stm32_2peripherals_2ms2100__arch_8hdep" alt=""/></div>
 <map name="sw_2airborne_2arch_2stm32_2peripherals_2ms2100__arch_8hdep" id="sw_2airborne_2arch_2stm32_2peripherals_2ms2100__arch_8hdep">
-<area shape="rect" id="node3" href="ms2100_8h.html" title="Driver for the ms2100 magnetic sensor from PNI." alt="" coords="224,99,379,143"/><area shape="rect" id="node5" href="lpc21_2peripherals_2ms2100__arch_8c.html" title="LPC21xx specific functions for the ms2100 magnetic sensor from PNI." alt="" coords="5,193,187,237"/><area shape="rect" id="node7" href="stm32_2peripherals_2ms2100__arch_8c.html" title="STM32 specific functions for the ms2100 magnetic sensor from PNI." alt="" coords="211,193,392,237"/><area shape="rect" id="node9" href="ms2100_8c.html" title="Driver for the ms2100 magnetic sensor from PNI." alt="" coords="416,193,571,237"/></map>
+<area shape="rect" id="node3" href="ms2100_8h.html" title="Driver for the ms2100 magnetic sensor from PNI." alt="" coords="240,99,411,143"/><area shape="rect" id="node5" href="lpc21_2peripherals_2ms2100__arch_8c.html" title="LPC21xx specific functions for the ms2100 magnetic sensor from PNI." alt="" coords="5,193,203,237"/><area shape="rect" id="node7" href="stm32_2peripherals_2ms2100__arch_8c.html" title="STM32 specific functions for the ms2100 magnetic sensor from PNI." alt="" coords="227,193,424,237"/><area shape="rect" id="node9" href="ms2100_8c.html" title="Driver for the ms2100 magnetic sensor from PNI." alt="" coords="448,193,619,237"/></map>
 </div>
 </div>
 <p><a href="stm32_2peripherals_2ms2100__arch_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a0cf9a8222937cd9036b0872730a2f036"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2peripherals_2ms2100__arch_8h.html#a0cf9a8222937cd9036b0872730a2f036">Ms2100HasEOC</a>()&#160;&#160;&#160;(<a class="el" href="omap_2mcu__periph_2gpio__arch_8h.html#a5fee90e8e5af7de567890ffae5ed50c8">gpio_get</a>(GPIOB, GPIO5) != 0)</td></tr>
+<tr class="memitem:a0cf9a8222937cd9036b0872730a2f036"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2peripherals_2ms2100__arch_8h.html#a0cf9a8222937cd9036b0872730a2f036">Ms2100HasEOC</a>()&#160;&#160;&#160;(<a class="el" href="omap_2mcu__periph_2gpio__arch_8h.html#a5fee90e8e5af7de567890ffae5ed50c8">gpio_get</a>(<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a68b66ac73be4c836db878a42e1fea3cd">GPIOB</a>, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a1a96368c99d63b0e715b7e0421f4a209">GPIO5</a>) != 0)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -162,7 +162,7 @@ Functions</h2></td></tr>
           <td class="memname">#define Ms2100HasEOC</td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="omap_2mcu__periph_2gpio__arch_8h.html#a5fee90e8e5af7de567890ffae5ed50c8">gpio_get</a>(GPIOB, GPIO5) != 0)</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="omap_2mcu__periph_2gpio__arch_8h.html#a5fee90e8e5af7de567890ffae5ed50c8">gpio_get</a>(<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a68b66ac73be4c836db878a42e1fea3cd">GPIOB</a>, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a1a96368c99d63b0e715b7e0421f4a209">GPIO5</a>) != 0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -191,7 +191,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lpc21_2peripherals_2ms2100__arch_8c_source.html#l00069">69</a> of file <a class="el" href="lpc21_2peripherals_2ms2100__arch_8c_source.html">ms2100_arch.c</a>.</p>
 
-<p>References <a class="el" href="sys__time_8h_source.html#l00172">cpu_ticks_of_nsec()</a>, <a class="el" href="lpc21_2peripherals_2ms2100__arch_8h_source.html#l00034">Ms2100Reset</a>, <a class="el" href="lpc21_2peripherals_2ms2100__arch_8h_source.html#l00035">Ms2100Set</a>, and <a class="el" href="LPC21xx_8h_source.html#l00052">T0TC</a>.</p>
+<p>References <a class="el" href="sys__time_8h_source.html#l00172">cpu_ticks_of_nsec()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00175">dt</a>, <a class="el" href="lpc21_2peripherals_2ms2100__arch_8h_source.html#l00034">Ms2100Reset</a>, <a class="el" href="lpc21_2peripherals_2ms2100__arch_8h_source.html#l00035">Ms2100Set</a>, and <a class="el" href="LPC21xx_8h_source.html#l00052">T0TC</a>.</p>
 
 <p>Referenced by <a class="el" href="ms2100_8c_source.html#l00047">ms2100_init()</a>.</p>
 
@@ -202,7 +202,7 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2peripherals_2ms2100__arch_8h_aebb1f87ab92e583e78e79686e935e3b8_cgraph.png" border="0" usemap="#stm32_2peripherals_2ms2100__arch_8h_aebb1f87ab92e583e78e79686e935e3b8_cgraph" alt=""/></div>
 <map name="stm32_2peripherals_2ms2100__arch_8h_aebb1f87ab92e583e78e79686e935e3b8_cgraph" id="stm32_2peripherals_2ms2100__arch_8h_aebb1f87ab92e583e78e79686e935e3b8_cgraph">
-<area shape="rect" id="node3" href="sys__time_8h.html#ab9fdc67ec3fff3769bebcd04e7ee86c2" title="cpu_ticks_of_nsec" alt="" coords="179,5,309,33"/></map>
+<area shape="rect" id="node3" href="sys__time_8h.html#ab9fdc67ec3fff3769bebcd04e7ee86c2" title="cpu_ticks_of_nsec" alt="" coords="191,5,327,33"/></map>
 </div>
 </p>
 
@@ -213,7 +213,7 @@ Functions</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2peripherals_2ms2100__arch_8h_aebb1f87ab92e583e78e79686e935e3b8_icgraph.png" border="0" usemap="#stm32_2peripherals_2ms2100__arch_8h_aebb1f87ab92e583e78e79686e935e3b8_icgraph" alt=""/></div>
 <map name="stm32_2peripherals_2ms2100__arch_8h_aebb1f87ab92e583e78e79686e935e3b8_icgraph" id="stm32_2peripherals_2ms2100__arch_8h_aebb1f87ab92e583e78e79686e935e3b8_icgraph">
-<area shape="rect" id="node3" href="ms2100_8h.html#abd4a73602ed7661eccacb070eb07896a" title="ms2100_init" alt="" coords="180,5,271,33"/><area shape="rect" id="node5" href="imu__b2_8c.html#ad32faae58e391642ec8048cb11011998" title="imu_impl_init" alt="" coords="320,5,419,33"/></map>
+<area shape="rect" id="node3" href="ms2100_8h.html#abd4a73602ed7661eccacb070eb07896a" title="ms2100_init" alt="" coords="191,5,289,33"/><area shape="rect" id="node5" href="imu__b2_8c.html#ad32faae58e391642ec8048cb11011998" title="imu_impl_init" alt="" coords="339,5,445,33"/></map>
 </div>
 </p>
 
@@ -246,6 +246,8 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="stm32_2peripherals_2ms2100__arch_8h_source.html#l00038">38</a> of file <a class="el" href="stm32_2peripherals_2ms2100__arch_8h_source.html">ms2100_arch.h</a>.</p>
 
+<p>References <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h_source.html#l00050">GPIO13</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a08541890cc5142626b13054da3d7c804"></a>
@@ -275,6 +277,8 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="stm32_2peripherals_2ms2100__arch_8h_source.html#l00046">46</a> of file <a class="el" href="stm32_2peripherals_2ms2100__arch_8h_source.html">ms2100_arch.h</a>.</p>
 
+<p>References <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h_source.html#l00050">GPIO13</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -283,7 +287,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_40949b6ea70303acfc197760b8c0e0ae.html">peripherals</a></li><li class="navelem"><a class="el" href="stm32_2peripherals_2ms2100__arch_8h.html">ms2100_arch.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:09 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:49 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

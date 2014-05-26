@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -299,98 +299,103 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2settings__arch_8c_s
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment">// (gdb) p *flash</span></div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment">// $1 = {addr = 134739968, total_size = 524288, page_nr = 255, page_size = 2048}</span></div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment">//              0x807F800             0x80000</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
-<div class="line"><a name="l00194"></a><span class="lineno"><a class="code" href="stm32_2subsystems_2settings__arch_8c.html#a411e0bd753ef59a0381f9d478d3d1bd2">  194</a></span>&#160;<span class="keyword">static</span> <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="stm32_2subsystems_2settings__arch_8c.html#a411e0bd753ef59a0381f9d478d3d1bd2">pflash_program_bytes</a>(<span class="keyword">struct</span> <a class="code" href="structFlashInfo.html">FlashInfo</a>* flash,</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="preprocessor">#if defined(STM32F1)</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="stm32_2subsystems_2settings__arch_8c.html#a411e0bd753ef59a0381f9d478d3d1bd2">pflash_program_bytes</a>(<span class="keyword">struct</span> <a class="code" href="structFlashInfo.html">FlashInfo</a>* flash,</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                    <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>   src,</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                    <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>   size,</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                    <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>   chksum) {</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="preprocessor">#if defined(STM32F1)</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor"></span>  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> i;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <span class="comment">/* erase */</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  flash_unlock();</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  flash_erase_page(flash-&gt;<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a>);</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  flash_lock();</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="comment">/* verify erase */</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  <span class="keywordflow">for</span> (i=0; i&lt;flash-&gt;<a class="code" href="structFlashInfo.html#aed1e92d83a4afdda1a3e9cc7a7a779f0">page_size</a>; i+=4) {</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordflow">if</span> ((*(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>*) (flash-&gt;<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a> + i)) != 0xFFFFFFFF) <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  }</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  flash_unlock();</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <span class="comment">/* write full 16 bit words */</span></div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  <span class="keywordflow">for</span> (i=0; i&lt;(size &amp; ~1); i+=2) {</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    flash_program_half_word(flash-&gt;<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a>+i,</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        (<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(*(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)(src+i) | (*(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)(src+i+1)) &lt;&lt; 8));</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  }</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <span class="comment">/* fill bytes with a zero */</span></div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <span class="keywordflow">if</span> (size &amp; 1) {</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    flash_program_half_word(flash-&gt;<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a>+i, (<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(*(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)(src+i)));</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  }</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="comment">/* write size */</span></div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  flash_program_half_word(flash-&gt;<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a>+flash-&gt;<a class="code" href="structFlashInfo.html#aed1e92d83a4afdda1a3e9cc7a7a779f0">page_size</a>-<a class="code" href="stm32_2subsystems_2settings__arch_8c.html#aad7842fbef06c8ec39045d2bf58455b9">FSIZ</a>,</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                          (<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(size &amp; 0xFFFF));</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  flash_program_half_word(flash-&gt;<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a>+flash-&gt;<a class="code" href="structFlashInfo.html#aed1e92d83a4afdda1a3e9cc7a7a779f0">page_size</a>-<a class="code" href="stm32_2subsystems_2settings__arch_8c.html#aad7842fbef06c8ec39045d2bf58455b9">FSIZ</a>+2,</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                          (<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)((size &gt;&gt; 16) &amp; 0xFFFF));</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="comment">/* write checksum */</span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  flash_program_half_word(flash-&gt;<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a>+flash-&gt;<a class="code" href="structFlashInfo.html#aed1e92d83a4afdda1a3e9cc7a7a779f0">page_size</a>-<a class="code" href="stm32_2subsystems_2settings__arch_8c.html#a486ad2adc27b733aa4476b6ddcfa2edb">FCHK</a>,</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                          (<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(chksum &amp; 0xFFFF));</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  flash_program_half_word(flash-&gt;<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a>+flash-&gt;<a class="code" href="structFlashInfo.html#aed1e92d83a4afdda1a3e9cc7a7a779f0">page_size</a>-<a class="code" href="stm32_2subsystems_2settings__arch_8c.html#a486ad2adc27b733aa4476b6ddcfa2edb">FCHK</a>+2,</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                          (<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)((chksum &gt;&gt; 16) &amp; 0xFFFF));</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  flash_lock();</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <span class="comment">/* verify data */</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  <span class="keywordflow">for</span> (i=0; i&lt;size; i++) {</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordflow">if</span> ((*(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*) (flash-&gt;<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a>+i)) != (*(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*) (src+i))) <span class="keywordflow">return</span> -2;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  }</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="keywordflow">if</span> (*(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>*) (flash-&gt;<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a>+flash-&gt;<a class="code" href="structFlashInfo.html#aed1e92d83a4afdda1a3e9cc7a7a779f0">page_size</a>-<a class="code" href="stm32_2subsystems_2settings__arch_8c.html#aad7842fbef06c8ec39045d2bf58455b9">FSIZ</a>) != size) <span class="keywordflow">return</span> -3;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  <span class="keywordflow">if</span> (*(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>*) (flash-&gt;<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a>+flash-&gt;<a class="code" href="structFlashInfo.html#aed1e92d83a4afdda1a3e9cc7a7a779f0">page_size</a>-<a class="code" href="stm32_2subsystems_2settings__arch_8c.html#a486ad2adc27b733aa4476b6ddcfa2edb">FCHK</a>) != chksum) <span class="keywordflow">return</span> -4;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="preprocessor">#elif defined(STM32F4)</span></div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;}</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
-<div class="line"><a name="l00246"></a><span class="lineno"><a class="code" href="stm32_2subsystems_2settings__arch_8c.html#a1497901ac40153b238ee0524257a5f3b">  246</a></span>&#160;<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="lpc21_2subsystems_2settings__arch_8c.html#a1497901ac40153b238ee0524257a5f3b">persistent_write</a>(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> ptr, <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> size) {</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <span class="keyword">struct </span><a class="code" href="structFlashInfo.html">FlashInfo</a> flash_info;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="stm32_2subsystems_2settings__arch_8c.html#a6e9ee5b58a0f71f5267a43dbca4fc5b5">flash_detect</a>(&amp;flash_info)) <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="keywordflow">if</span> ((size &gt; flash_info.<a class="code" href="structFlashInfo.html#aed1e92d83a4afdda1a3e9cc7a7a779f0">page_size</a>-<a class="code" href="stm32_2subsystems_2settings__arch_8c.html#aad7842fbef06c8ec39045d2bf58455b9">FSIZ</a>) || (size == 0)) <span class="keywordflow">return</span> -2;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> i;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="comment">/* erase */</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  flash_unlock();</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  flash_erase_page(flash-&gt;<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a>);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  flash_lock();</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="comment">/* verify erase */</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="keywordflow">for</span> (i=0; i&lt;flash-&gt;<a class="code" href="structFlashInfo.html#aed1e92d83a4afdda1a3e9cc7a7a779f0">page_size</a>; i+=4) {</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordflow">if</span> ((*(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>*) (flash-&gt;<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a> + i)) != 0xFFFFFFFF) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  }</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  flash_unlock();</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  <span class="comment">/* write full 16 bit words */</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <span class="keywordflow">for</span> (i=0; i&lt;(size &amp; ~1); i+=2) {</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    flash_program_half_word(flash-&gt;<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a>+i,</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        (<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(*(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)(src+i) | (*(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)(src+i+1)) &lt;&lt; 8));</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  }</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="comment">/* fill bytes with a zero */</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <span class="keywordflow">if</span> (size &amp; 1) {</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    flash_program_half_word(flash-&gt;<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a>+i, (<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(*(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*)(src+i)));</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  }</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="comment">/* write size */</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  flash_program_half_word(flash-&gt;<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a>+flash-&gt;<a class="code" href="structFlashInfo.html#aed1e92d83a4afdda1a3e9cc7a7a779f0">page_size</a>-<a class="code" href="stm32_2subsystems_2settings__arch_8c.html#aad7842fbef06c8ec39045d2bf58455b9">FSIZ</a>,</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                          (<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(size &amp; 0xFFFF));</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  flash_program_half_word(flash-&gt;<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a>+flash-&gt;<a class="code" href="structFlashInfo.html#aed1e92d83a4afdda1a3e9cc7a7a779f0">page_size</a>-<a class="code" href="stm32_2subsystems_2settings__arch_8c.html#aad7842fbef06c8ec39045d2bf58455b9">FSIZ</a>+2,</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                          (<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)((size &gt;&gt; 16) &amp; 0xFFFF));</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <span class="comment">/* write checksum */</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  flash_program_half_word(flash-&gt;<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a>+flash-&gt;<a class="code" href="structFlashInfo.html#aed1e92d83a4afdda1a3e9cc7a7a779f0">page_size</a>-<a class="code" href="stm32_2subsystems_2settings__arch_8c.html#a486ad2adc27b733aa4476b6ddcfa2edb">FCHK</a>,</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                          (<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(chksum &amp; 0xFFFF));</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  flash_program_half_word(flash-&gt;<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a>+flash-&gt;<a class="code" href="structFlashInfo.html#aed1e92d83a4afdda1a3e9cc7a7a779f0">page_size</a>-<a class="code" href="stm32_2subsystems_2settings__arch_8c.html#a486ad2adc27b733aa4476b6ddcfa2edb">FCHK</a>+2,</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                          (<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)((chksum &gt;&gt; 16) &amp; 0xFFFF));</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  flash_lock();</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="comment">/* verify data */</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <span class="keywordflow">for</span> (i=0; i&lt;size; i++) {</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keywordflow">if</span> ((*(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*) (flash-&gt;<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a>+i)) != (*(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*) (src+i))) <span class="keywordflow">return</span> -2;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  }</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <span class="keywordflow">if</span> (*(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>*) (flash-&gt;<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a>+flash-&gt;<a class="code" href="structFlashInfo.html#aed1e92d83a4afdda1a3e9cc7a7a779f0">page_size</a>-<a class="code" href="stm32_2subsystems_2settings__arch_8c.html#aad7842fbef06c8ec39045d2bf58455b9">FSIZ</a>) != size) <span class="keywordflow">return</span> -3;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="keywordflow">if</span> (*(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>*) (flash-&gt;<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a>+flash-&gt;<a class="code" href="structFlashInfo.html#aed1e92d83a4afdda1a3e9cc7a7a779f0">page_size</a>-<a class="code" href="stm32_2subsystems_2settings__arch_8c.html#a486ad2adc27b733aa4476b6ddcfa2edb">FCHK</a>) != chksum) <span class="keywordflow">return</span> -4;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;}</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="preprocessor">#elif defined(STM32F4)</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="stm32_2subsystems_2settings__arch_8c.html#a411e0bd753ef59a0381f9d478d3d1bd2">pflash_program_bytes</a>(<span class="keyword">struct</span> <a class="code" href="structFlashInfo.html">FlashInfo</a>* flash __attribute__((unused)),</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                                    <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>   src __attribute__((unused)),</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                                    <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>   size __attribute__((unused)),</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                                    <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>   chksum __attribute__((unused))) {</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;}</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="stm32_2subsystems_2settings__arch_8c.html#a411e0bd753ef59a0381f9d478d3d1bd2">pflash_program_bytes</a>(&amp;flash_info,</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                              ptr,</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                              size,</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                              <a class="code" href="stm32_2subsystems_2settings__arch_8c.html#a22c9ce72b72cd4dfe56c4008626cff19">pflash_checksum</a>(ptr, size));</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;}</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
-<div class="line"><a name="l00257"></a><span class="lineno"><a class="code" href="stm32_2subsystems_2settings__arch_8c.html#a4d0dc6e4cdefbf2eeba08f82b8e15a37">  257</a></span>&#160;<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="lpc21_2subsystems_2settings__arch_8c.html#a4d0dc6e4cdefbf2eeba08f82b8e15a37">persistent_read</a>(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> ptr, <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> size) {</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  <span class="keyword">struct </span><a class="code" href="structFlashInfo.html">FlashInfo</a> flash;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> i;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  <span class="comment">/* check parameters */</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="stm32_2subsystems_2settings__arch_8c.html#a6e9ee5b58a0f71f5267a43dbca4fc5b5">flash_detect</a>(&amp;flash)) <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keywordflow">if</span> ((size &gt; flash.<a class="code" href="structFlashInfo.html#aed1e92d83a4afdda1a3e9cc7a7a779f0">page_size</a>-<a class="code" href="stm32_2subsystems_2settings__arch_8c.html#aad7842fbef06c8ec39045d2bf58455b9">FSIZ</a>) || (size == 0)) <span class="keywordflow">return</span> -2;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  <span class="comment">/* check consistency */</span></div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  <span class="keywordflow">if</span> (size != *(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>*)(flash.<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a>+flash.<a class="code" href="structFlashInfo.html#aed1e92d83a4afdda1a3e9cc7a7a779f0">page_size</a>-<a class="code" href="stm32_2subsystems_2settings__arch_8c.html#aad7842fbef06c8ec39045d2bf58455b9">FSIZ</a>)) <span class="keywordflow">return</span> -3;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="stm32_2subsystems_2settings__arch_8c.html#a22c9ce72b72cd4dfe56c4008626cff19">pflash_checksum</a>(flash.<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a>, size) !=</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      *(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>*)(flash.<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a>+flash.<a class="code" href="structFlashInfo.html#aed1e92d83a4afdda1a3e9cc7a7a779f0">page_size</a>-<a class="code" href="stm32_2subsystems_2settings__arch_8c.html#a486ad2adc27b733aa4476b6ddcfa2edb">FCHK</a>))</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordflow">return</span> -4;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  <span class="comment">/* copy data */</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  <span class="keywordflow">for</span> (i=0; i&lt;size; i++) {</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    *(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*) (ptr+i) = *(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*) (flash.<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a>+i);</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  }</div>
+<div class="line"><a name="l00251"></a><span class="lineno"><a class="code" href="stm32_2subsystems_2settings__arch_8c.html#a1497901ac40153b238ee0524257a5f3b">  251</a></span>&#160;<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="lpc21_2subsystems_2settings__arch_8c.html#a1497901ac40153b238ee0524257a5f3b">persistent_write</a>(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> ptr, <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> size) {</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <span class="keyword">struct </span><a class="code" href="structFlashInfo.html">FlashInfo</a> flash_info;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="stm32_2subsystems_2settings__arch_8c.html#a6e9ee5b58a0f71f5267a43dbca4fc5b5">flash_detect</a>(&amp;flash_info)) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <span class="keywordflow">if</span> ((size &gt; flash_info.<a class="code" href="structFlashInfo.html#aed1e92d83a4afdda1a3e9cc7a7a779f0">page_size</a>-<a class="code" href="stm32_2subsystems_2settings__arch_8c.html#aad7842fbef06c8ec39045d2bf58455b9">FSIZ</a>) || (size == 0)) <span class="keywordflow">return</span> -2;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="stm32_2subsystems_2settings__arch_8c.html#a411e0bd753ef59a0381f9d478d3d1bd2">pflash_program_bytes</a>(&amp;flash_info,</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                              ptr,</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                              size,</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                              <a class="code" href="stm32_2subsystems_2settings__arch_8c.html#a22c9ce72b72cd4dfe56c4008626cff19">pflash_checksum</a>(ptr, size));</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;}</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
+<div class="line"><a name="l00262"></a><span class="lineno"><a class="code" href="stm32_2subsystems_2settings__arch_8c.html#a4d0dc6e4cdefbf2eeba08f82b8e15a37">  262</a></span>&#160;<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="lpc21_2subsystems_2settings__arch_8c.html#a4d0dc6e4cdefbf2eeba08f82b8e15a37">persistent_read</a>(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> ptr, <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> size) {</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keyword">struct </span><a class="code" href="structFlashInfo.html">FlashInfo</a> flash;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> i;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  <span class="comment">/* check parameters */</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="stm32_2subsystems_2settings__arch_8c.html#a6e9ee5b58a0f71f5267a43dbca4fc5b5">flash_detect</a>(&amp;flash)) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  <span class="keywordflow">if</span> ((size &gt; flash.<a class="code" href="structFlashInfo.html#aed1e92d83a4afdda1a3e9cc7a7a779f0">page_size</a>-<a class="code" href="stm32_2subsystems_2settings__arch_8c.html#aad7842fbef06c8ec39045d2bf58455b9">FSIZ</a>) || (size == 0)) <span class="keywordflow">return</span> -2;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  <span class="comment">/* check consistency */</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  <span class="keywordflow">if</span> (size != *(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>*)(flash.<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a>+flash.<a class="code" href="structFlashInfo.html#aed1e92d83a4afdda1a3e9cc7a7a779f0">page_size</a>-<a class="code" href="stm32_2subsystems_2settings__arch_8c.html#aad7842fbef06c8ec39045d2bf58455b9">FSIZ</a>)) <span class="keywordflow">return</span> -3;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="stm32_2subsystems_2settings__arch_8c.html#a22c9ce72b72cd4dfe56c4008626cff19">pflash_checksum</a>(flash.<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a>, size) !=</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      *(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>*)(flash.<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a>+flash.<a class="code" href="structFlashInfo.html#aed1e92d83a4afdda1a3e9cc7a7a779f0">page_size</a>-<a class="code" href="stm32_2subsystems_2settings__arch_8c.html#a486ad2adc27b733aa4476b6ddcfa2edb">FCHK</a>))</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="keywordflow">return</span> -4;</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;}</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  <span class="comment">/* copy data */</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  <span class="keywordflow">for</span> (i=0; i&lt;size; i++) {</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    *(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*) (ptr+i) = *(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>*) (flash.<a class="code" href="structFlashInfo.html#a1aa5b8f990702e097bda602bc2464014">addr</a>+i);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  }</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_71548ae744da26ac2c7ca213b679dc43.html">subsystems</a></li><li class="navelem"><a class="el" href="stm32_2subsystems_2settings__arch_8c.html">settings_arch.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:07 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:37 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

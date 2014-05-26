@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('humid__sht_8c.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -114,12 +115,11 @@ $(document).ready(function(){initNavTree('humid__sht_8c.html','');});
 <p>SHTxx sensor interface.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;std.h&quot;</code><br/>
-<code>#include &quot;<a class="el" href="LPC21xx_8h_source.html">LPC21xx.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="gpio_8h_source.html">mcu_periph/gpio.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br/>
 <code>#include &quot;messages.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="humid__sht_8h_source.html">humid_sht.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="led_8h_source.html">led.h</a>&quot;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for humid_sht.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -127,11 +127,36 @@ $(document).ready(function(){initNavTree('humid__sht_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="humid__sht_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2meteo_2humid__sht_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2meteo_2humid__sht_8c" id="sw_2airborne_2modules_2meteo_2humid__sht_8c">
-<area shape="rect" id="node5" href="LPC21xx_8h.html" title="LPC21xx.h" alt="" coords="596,107,679,135"/><area shape="rect" id="node31" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="1291,201,1416,229"/><area shape="rect" id="node38" href="downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="1720,99,1861,143"/><area shape="rect" id="node78" href="humid__sht_8h.html" title="humid_sht.h" alt="" coords="1125,387,1216,415"/><area shape="rect" id="node81" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API" alt="" coords="1885,107,1933,135"/><area shape="rect" id="node7" href="lpcWD_8h.html" title="lpcWD.h" alt="" coords="299,201,368,229"/><area shape="rect" id="node9" href="lpcTMR_8h.html" title="lpcTMR.h" alt="" coords="392,201,469,229"/><area shape="rect" id="node11" href="lpcUART_8h.html" title="lpcUART.h" alt="" coords="493,201,579,229"/><area shape="rect" id="node13" href="lpcI2C_8h.html" title="lpcI2C.h" alt="" coords="603,201,672,229"/><area shape="rect" id="node15" href="lpcSPI_8h.html" title="lpcSPI.h" alt="" coords="696,201,765,229"/><area shape="rect" id="node17" href="lpcRTC_8h.html" title="lpcRTC.h" alt="" coords="789,201,864,229"/><area shape="rect" id="node19" href="lpcGPIO_8h.html" title="lpcGPIO.h" alt="" coords="888,201,971,229"/><area shape="rect" id="node21" href="lpcPIN_8h.html" title="lpcPIN.h" alt="" coords="995,201,1067,229"/><area shape="rect" id="node23" href="lpcADC_8h.html" title="lpcADC.h" alt="" coords="1091,201,1165,229"/><area shape="rect" id="node25" href="lpcSCB_8h.html" title="lpcSCB.h" alt="" coords="5,201,80,229"/><area shape="rect" id="node27" href="lpcVIC_8h.html" title="lpcVIC.h" alt="" coords="104,201,173,229"/><area shape="rect" id="node29" href="lpcCAN_8h.html" title="lpcCAN.h" alt="" coords="197,201,275,229"/><area shape="rect" id="node40" href="inttypes_8h.html" title="inttypes.h" alt="" coords="2184,473,2261,501"/><area shape="rect" id="node47" href="udp_8h.html" title="subsystems/datalink\l/udp.h" alt="" coords="2101,193,2243,237"/><area shape="rect" id="node55" href="pprz__transport_8h.html" title="Extra datalink using PPRZ protocol." alt="" coords="2152,286,2293,330"/><area shape="rect" id="node65" href="xbee_8h.html" title="subsystems/datalink\l/xbee.h" alt="" coords="1555,193,1696,237"/><area shape="rect" id="node72" href="w5100_8h.html" title="subsystems/datalink\l/w5100.h" alt="" coords="1885,193,2027,237"/><area shape="rect" id="node49" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="1888,379,2029,423"/><area shape="rect" id="node60" href="transport_8h.html" title="generic transport header" alt="" coords="1723,379,1864,423"/><area shape="rect" id="node69" href="xbee24_8h.html" title="subsystems/datalink\l/xbee24.h" alt="" coords="1621,286,1763,330"/></map>
+<area shape="rect" id="node5" href="gpio_8h.html" title="Some architecture independent helper functions for GPIOs." alt="" coords="235,107,373,135"/><area shape="rect" id="node10" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="341,201,480,229"/><area shape="rect" id="node17" href="downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="856,99,1008,143"/><area shape="rect" id="node69" href="humid__sht_8h.html" title="SHTxx sensor interface." alt="" coords="76,107,177,135"/><area shape="rect" id="node19" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1307,481,1392,509"/><area shape="rect" id="node26" href="udp_8h.html" title="subsystems/datalink\l/udp.h" alt="" coords="1035,193,1187,237"/><area shape="rect" id="node34" href="pprz__transport_8h.html" title="Extra datalink using PPRZ protocol." alt="" coords="1151,286,1303,330"/><area shape="rect" id="node44" href="pprzlog__transport_8h.html" title="Building and Paparazzi frames with timestamp for data logger." alt="" coords="1491,286,1643,330"/><area shape="rect" id="node56" href="xbee_8h.html" title="subsystems/datalink\l/xbee.h" alt="" coords="627,193,779,237"/><area shape="rect" id="node63" href="w5100_8h.html" title="W5100 ethernet chip I/O." alt="" coords="1211,193,1363,237"/><area shape="rect" id="node28" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="928,379,1080,423"/><area shape="rect" id="node39" href="transport_8h.html" title="generic transport header" alt="" coords="1155,379,1307,423"/><area shape="rect" id="node46" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1484,387,1655,415"/><area shape="rect" id="node60" href="xbee24_8h.html" title="subsystems/datalink\l/xbee24.h" alt="" coords="591,286,743,330"/></map>
 </div>
 </div>
 <p><a href="humid__sht_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a608ff686c5fbdfd9631fc11c57cee9a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht_8c.html#a608ff686c5fbdfd9631fc11c57cee9a8">noACK</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a6f6489887e08bff4887d0bc5dcf214d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht_8c.html#a6f6489887e08bff4887d0bc5dcf214d8">ACK</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:a10bed19ceedeb2c12c5aad6de1d3b1a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht_8c.html#a10bed19ceedeb2c12c5aad6de1d3b1a1">TEMP</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a51ac1a55c11f4fd1b202ca488b9d5e3d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht_8c.html#a51ac1a55c11f4fd1b202ca488b9d5e3d">HUMI</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:a7a4870a4dd5d7aa61b3103bbc761faf3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht_8c.html#a7a4870a4dd5d7aa61b3103bbc761faf3">STATUS_REG_W</a>&#160;&#160;&#160;0x06</td></tr>
+<tr class="memitem:a994ee16ccf694f3e8deb914ca8dcd6dd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht_8c.html#a994ee16ccf694f3e8deb914ca8dcd6dd">STATUS_REG_R</a>&#160;&#160;&#160;0x07</td></tr>
+<tr class="memitem:ab0efff74458294a5338db42ad3b7f09d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht_8c.html#ab0efff74458294a5338db42ad3b7f09d">MEASURE_TEMP</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="memitem:a0e0a75788c3da083fa6f85e0f03dd72d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht_8c.html#a0e0a75788c3da083fa6f85e0f03dd72d">MEASURE_HUMI</a>&#160;&#160;&#160;0x05</td></tr>
+<tr class="memitem:ab702106cf3b3e96750b6845ded4e0299"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht_8c.html#ab702106cf3b3e96750b6845ded4e0299">RESET</a>&#160;&#160;&#160;0x1e</td></tr>
+<tr class="memitem:a50b19c0f93aefeedbfe334f81064159a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht_8c.html#a50b19c0f93aefeedbfe334f81064159a">SHT_IDLE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a4fc00fb9919f9d430d6fa80bc1079a50"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht_8c.html#a4fc00fb9919f9d430d6fa80bc1079a50">SHT_MEASURING_HUMID</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:aa4b4872337914e83262da73f3de0a755"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht_8c.html#aa4b4872337914e83262da73f3de0a755">SHT_MEASURING_TEMP</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memitem:aef3aa4f1e874ae5df12e180d51dfc73b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht_8c.html#aef3aa4f1e874ae5df12e180d51dfc73b">DATA_SET</a>&#160;&#160;&#160;<a class="el" href="stm32_2mcu__periph_2gpio__arch_8h.html#adf5626a74ea3720f4e640a960f5c947a">gpio_setup_input</a>(SHT_DAT_GPIO)</td></tr>
+<tr class="memdesc:aef3aa4f1e874ae5df12e180d51dfc73b"><td class="mdescLeft">&#160;</td><td class="mdescRight">set data pin to input  <a href="#aef3aa4f1e874ae5df12e180d51dfc73b"></a><br/></td></tr>
+<tr class="memitem:a304b342c8a2033227f5c131a2114050b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht_8c.html#a304b342c8a2033227f5c131a2114050b">DATA_CLR</a>&#160;&#160;&#160;<a class="el" href="stm32_2mcu__periph_2gpio__arch_8h.html#a5b778ed65199db17a02961791e4ee8b8">gpio_setup_output</a>(SHT_DAT_GPIO)</td></tr>
+<tr class="memdesc:a304b342c8a2033227f5c131a2114050b"><td class="mdescLeft">&#160;</td><td class="mdescRight">set data pin to output  <a href="#a304b342c8a2033227f5c131a2114050b"></a><br/></td></tr>
+<tr class="memitem:abebff40b775e10e37faa4ec7b45d6a89"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht_8c.html#abebff40b775e10e37faa4ec7b45d6a89">DATA_IN</a>&#160;&#160;&#160;<a class="el" href="omap_2mcu__periph_2gpio__arch_8h.html#a5fee90e8e5af7de567890ffae5ed50c8">gpio_get</a>(SHT_DAT_GPIO)</td></tr>
+<tr class="memdesc:abebff40b775e10e37faa4ec7b45d6a89"><td class="mdescLeft">&#160;</td><td class="mdescRight">get data pin  <a href="#abebff40b775e10e37faa4ec7b45d6a89"></a><br/></td></tr>
+<tr class="memitem:acf3bb8b7e02613e72ae86932b074f04f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht_8c.html#acf3bb8b7e02613e72ae86932b074f04f">SCK_SET</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a3daf2eca866093ba9bbf8e323affd9e0">gpio_set</a>(SHT_SCK_GPIO)</td></tr>
+<tr class="memdesc:acf3bb8b7e02613e72ae86932b074f04f"><td class="mdescLeft">&#160;</td><td class="mdescRight">set clock pin to high  <a href="#acf3bb8b7e02613e72ae86932b074f04f"></a><br/></td></tr>
+<tr class="memitem:a512a5703d0f1c6944a2eedac4f187df5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht_8c.html#a512a5703d0f1c6944a2eedac4f187df5">SCK_CLR</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a5d6d4dc62e9dd73104e95a7945fc029d">gpio_clear</a>(SHT_SCK_GPIO)</td></tr>
+<tr class="memdesc:a512a5703d0f1c6944a2eedac4f187df5"><td class="mdescLeft">&#160;</td><td class="mdescRight">set clock pin to low  <a href="#a512a5703d0f1c6944a2eedac4f187df5"></a><br/></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:add5886a69f8f33fe13ebf3b995abcdd1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="humid__sht_8c.html#add5886a69f8f33fe13ebf3b995abcdd1">s_write_byte</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> value)</td></tr>
@@ -162,7 +187,290 @@ Variables</h2></td></tr>
 <p>This reads the values for humidity and temperature from the SHTxx sensor through bit banging. </p>
 
 <p>Definition in file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
-</div><h2>Function Documentation</h2>
+</div><h2>Macro Definition Documentation</h2>
+<a class="anchor" id="a6f6489887e08bff4887d0bc5dcf214d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ACK&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00041">41</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+
+<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00204">s_measure()</a>, <a class="el" href="humid__sht_8c_source.html#l00240">s_read_measure()</a>, and <a class="el" href="humid__sht_8c_source.html#l00181">s_read_statusreg()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a304b342c8a2033227f5c131a2114050b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_CLR&#160;&#160;&#160;<a class="el" href="stm32_2mcu__periph_2gpio__arch_8h.html#a5b778ed65199db17a02961791e4ee8b8">gpio_setup_output</a>(SHT_DAT_GPIO)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set data pin to output </p>
+
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00069">69</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+
+<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00118">s_read_byte()</a>, <a class="el" href="humid__sht_8c_source.html#l00139">s_transstart()</a>, and <a class="el" href="humid__sht_8c_source.html#l00097">s_write_byte()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abebff40b775e10e37faa4ec7b45d6a89"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_IN&#160;&#160;&#160;<a class="el" href="omap_2mcu__periph_2gpio__arch_8h.html#a5fee90e8e5af7de567890ffae5ed50c8">gpio_get</a>(SHT_DAT_GPIO)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get data pin </p>
+
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00071">71</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+
+<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00204">s_measure()</a>, <a class="el" href="humid__sht_8c_source.html#l00118">s_read_byte()</a>, <a class="el" href="humid__sht_8c_source.html#l00240">s_read_measure()</a>, and <a class="el" href="humid__sht_8c_source.html#l00097">s_write_byte()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aef3aa4f1e874ae5df12e180d51dfc73b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_SET&#160;&#160;&#160;<a class="el" href="stm32_2mcu__periph_2gpio__arch_8h.html#adf5626a74ea3720f4e640a960f5c947a">gpio_setup_input</a>(SHT_DAT_GPIO)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set data pin to input </p>
+
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00067">67</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+
+<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00162">s_connectionreset()</a>, <a class="el" href="humid__sht_8c_source.html#l00118">s_read_byte()</a>, <a class="el" href="humid__sht_8c_source.html#l00139">s_transstart()</a>, and <a class="el" href="humid__sht_8c_source.html#l00097">s_write_byte()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a51ac1a55c11f4fd1b202ca488b9d5e3d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HUMI&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00043">43</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+
+<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00307">humid_sht_periodic()</a>, <a class="el" href="humid__sht_8c_source.html#l00204">s_measure()</a>, and <a class="el" href="humid__sht_8c_source.html#l00225">s_start_measure()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0e0a75788c3da083fa6f85e0f03dd72d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MEASURE_HUMI&#160;&#160;&#160;0x05</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00053">53</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+
+<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00204">s_measure()</a>, and <a class="el" href="humid__sht_8c_source.html#l00225">s_start_measure()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab0efff74458294a5338db42ad3b7f09d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MEASURE_TEMP&#160;&#160;&#160;0x03</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00051">51</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+
+<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00204">s_measure()</a>, and <a class="el" href="humid__sht_8c_source.html#l00225">s_start_measure()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a608ff686c5fbdfd9631fc11c57cee9a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define noACK&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00040">40</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+
+<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00204">s_measure()</a>, <a class="el" href="humid__sht_8c_source.html#l00240">s_read_measure()</a>, and <a class="el" href="humid__sht_8c_source.html#l00181">s_read_statusreg()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab702106cf3b3e96750b6845ded4e0299"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RESET&#160;&#160;&#160;0x1e</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00055">55</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+
+<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00284">humid_sht_reset()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a512a5703d0f1c6944a2eedac4f187df5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCK_CLR&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a5d6d4dc62e9dd73104e95a7945fc029d">gpio_clear</a>(SHT_SCK_GPIO)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set clock pin to low </p>
+
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00076">76</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+
+<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00162">s_connectionreset()</a>, <a class="el" href="humid__sht_8c_source.html#l00118">s_read_byte()</a>, <a class="el" href="humid__sht_8c_source.html#l00139">s_transstart()</a>, and <a class="el" href="humid__sht_8c_source.html#l00097">s_write_byte()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acf3bb8b7e02613e72ae86932b074f04f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCK_SET&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a3daf2eca866093ba9bbf8e323affd9e0">gpio_set</a>(SHT_SCK_GPIO)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set clock pin to high </p>
+
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00074">74</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+
+<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00162">s_connectionreset()</a>, <a class="el" href="humid__sht_8c_source.html#l00118">s_read_byte()</a>, <a class="el" href="humid__sht_8c_source.html#l00139">s_transstart()</a>, and <a class="el" href="humid__sht_8c_source.html#l00097">s_write_byte()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a50b19c0f93aefeedbfe334f81064159a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SHT_IDLE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00058">58</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+
+<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00295">humid_sht_init()</a>, and <a class="el" href="humid__sht_8c_source.html#l00307">humid_sht_periodic()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4fc00fb9919f9d430d6fa80bc1079a50"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SHT_MEASURING_HUMID&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00059">59</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+
+<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00307">humid_sht_periodic()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa4b4872337914e83262da73f3de0a755"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SHT_MEASURING_TEMP&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00060">60</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+
+<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00307">humid_sht_periodic()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a994ee16ccf694f3e8deb914ca8dcd6dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATUS_REG_R&#160;&#160;&#160;0x07</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00049">49</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+
+<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00181">s_read_statusreg()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7a4870a4dd5d7aa61b3103bbc761faf3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATUS_REG_W&#160;&#160;&#160;0x06</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00047">47</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+
+<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00193">s_write_statusreg()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a10bed19ceedeb2c12c5aad6de1d3b1a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TEMP&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00042">42</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+
+<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00307">humid_sht_periodic()</a>, <a class="el" href="humid__sht_8c_source.html#l00204">s_measure()</a>, and <a class="el" href="humid__sht_8c_source.html#l00225">s_start_measure()</a>.</p>
+
+</div>
+</div>
+<h2>Function Documentation</h2>
 <a class="anchor" id="a73fae161c1291d629d3ddd86f3c8d4ba"></a>
 <div class="memitem">
 <div class="memproto">
@@ -199,11 +507,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00193">193</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00253">253</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
 
-<p>References <a class="el" href="nav_8c_source.html#l00529">C1</a>, and <a class="el" href="nav_8c_source.html#l00529">C2</a>.</p>
+<p>References <a class="el" href="nav_8c_source.html#l00543">C1</a>, and <a class="el" href="nav_8c_source.html#l00543">C2</a>.</p>
 
-<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00282">humid_sht_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00307">humid_sht_periodic()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -212,7 +520,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="humid__sht_8c_a73fae161c1291d629d3ddd86f3c8d4ba_icgraph.png" border="0" usemap="#humid__sht_8c_a73fae161c1291d629d3ddd86f3c8d4ba_icgraph" alt=""/></div>
 <map name="humid__sht_8c_a73fae161c1291d629d3ddd86f3c8d4ba_icgraph" id="humid__sht_8c_a73fae161c1291d629d3ddd86f3c8d4ba_icgraph">
-<area shape="rect" id="node3" href="humid__sht_8h.html#ad715aaca3766d169ac2ea69bd0ead2d7" title="humid_sht_periodic" alt="" coords="127,5,260,33"/></map>
+<area shape="rect" id="node3" href="humid__sht_8h.html#ad715aaca3766d169ac2ea69bd0ead2d7" title="humid_sht_periodic" alt="" coords="128,5,275,33"/></map>
 </div>
 </p>
 
@@ -232,9 +540,20 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00235">235</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00295">295</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
 
-<p>References <a class="el" href="humid__sht_8h_source.html#l00013">DAT_PIN</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="humid__sht_8c_source.html#l00021">humid_sht_available</a>, <a class="el" href="humid__sht_8c_source.html#l00022">humid_sht_status</a>, <a class="el" href="LPC21xx_8h_source.html#l00336">IO0CLR</a>, <a class="el" href="LPC21xx_8h_source.html#l00335">IO0DIR</a>, <a class="el" href="LPC21xx_8h_source.html#l00347">PINSEL0</a>, <a class="el" href="LPC21xx_8h_source.html#l00348">PINSEL1</a>, <a class="el" href="humid__sht_8h_source.html#l00020">SCK_PIN</a>, and <a class="el" href="humid__sht_8h_source.html#l00058">SHT_IDLE</a>.</p>
+<p>References <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="omap_2mcu__periph_2gpio__arch_8h.html#aa94dfa6db378d98566e22e193c7a8ab7">gpio_clear()</a>, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h_source.html#l00088">gpio_setup_input()</a>, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h_source.html#l00076">gpio_setup_output()</a>, <a class="el" href="humid__sht_8c_source.html#l00081">humid_sht_available</a>, <a class="el" href="humid__sht_8c_source.html#l00082">humid_sht_status</a>, and <a class="el" href="humid__sht_8c_source.html#l00058">SHT_IDLE</a>.</p>
+
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="humid__sht_8c_a5228e7530912bfa410d5e701ebb7a18b_cgraph.png" border="0" usemap="#humid__sht_8c_a5228e7530912bfa410d5e701ebb7a18b_cgraph" alt=""/></div>
+<map name="humid__sht_8c_a5228e7530912bfa410d5e701ebb7a18b_cgraph" id="humid__sht_8c_a5228e7530912bfa410d5e701ebb7a18b_cgraph">
+<area shape="rect" id="node3" href="omap_2mcu__periph_2gpio__arch_8h.html#aa94dfa6db378d98566e22e193c7a8ab7" title="Clear a gpio output to low level." alt="" coords="196,5,281,33"/><area shape="rect" id="node5" href="lpc21_2mcu__periph_2gpio__arch_8h.html#ada0fcb2fa4a97c20e81bb1a422446137" title="Setup one or more pins of the given GPIO port as inputs." alt="" coords="173,55,304,83"/><area shape="rect" id="node7" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a9623a3774c44d3fc1cca04ccc9bc69f6" title="Setup one or more pins of the given GPIO port as outputs." alt="" coords="168,106,309,134"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -252,18 +571,18 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00282">282</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00307">307</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
 
-<p>References <a class="el" href="humid__sht_8c_source.html#l00193">calc_sht()</a>, <a class="el" href="downlink_8h_source.html#l00068">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00078">DefaultDevice</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="humid__sht_8c_source.html#l00020">fhumidsht</a>, <a class="el" href="humid__sht_8c_source.html#l00020">ftempsht</a>, <a class="el" href="humid__sht_8h_source.html#l00028">HUMI</a>, <a class="el" href="humid__sht_8c_source.html#l00021">humid_sht_available</a>, <a class="el" href="humid__sht_8c_source.html#l00022">humid_sht_status</a>, <a class="el" href="humid__sht_8c_source.html#l00019">humidsht</a>, <a class="el" href="lpc21_2led__hw_8h_source.html#l00030">LED_TOGGLE</a>, <a class="el" href="humid__sht_8c_source.html#l00102">s_connectionreset()</a>, <a class="el" href="humid__sht_8c_source.html#l00180">s_read_measure()</a>, <a class="el" href="humid__sht_8c_source.html#l00165">s_start_measure()</a>, <a class="el" href="humid__sht_8h_source.html#l00058">SHT_IDLE</a>, <a class="el" href="humid__sht_8h_source.html#l00059">SHT_MEASURING_HUMID</a>, <a class="el" href="humid__sht_8h_source.html#l00060">SHT_MEASURING_TEMP</a>, <a class="el" href="humid__sht_8h_source.html#l00027">TEMP</a>, <a class="el" href="humid__sht_8c_source.html#l00019">tempsht</a>, and <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>.</p>
+<p>References <a class="el" href="humid__sht_8c_source.html#l00253">calc_sht()</a>, <a class="el" href="downlink_8h_source.html#l00081">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00091">DefaultDevice</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="humid__sht_8c_source.html#l00080">fhumidsht</a>, <a class="el" href="humid__sht_8c_source.html#l00080">ftempsht</a>, <a class="el" href="humid__sht_8c_source.html#l00043">HUMI</a>, <a class="el" href="humid__sht_8c_source.html#l00081">humid_sht_available</a>, <a class="el" href="humid__sht_8c_source.html#l00082">humid_sht_status</a>, <a class="el" href="humid__sht_8c_source.html#l00079">humidsht</a>, <a class="el" href="humid__sht_8c_source.html#l00162">s_connectionreset()</a>, <a class="el" href="humid__sht_8c_source.html#l00240">s_read_measure()</a>, <a class="el" href="humid__sht_8c_source.html#l00225">s_start_measure()</a>, <a class="el" href="humid__sht_8c_source.html#l00058">SHT_IDLE</a>, <a class="el" href="humid__sht_8c_source.html#l00059">SHT_MEASURING_HUMID</a>, <a class="el" href="humid__sht_8c_source.html#l00060">SHT_MEASURING_TEMP</a>, <a class="el" href="humid__sht_8c_source.html#l00042">TEMP</a>, <a class="el" href="humid__sht_8c_source.html#l00079">tempsht</a>, and <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>.</p>
 
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="humid__sht_8c_ad715aaca3766d169ac2ea69bd0ead2d7_cgraph.png" border="0" usemap="#humid__sht_8c_ad715aaca3766d169ac2ea69bd0ead2d7_cgraph" alt=""/></div>
 <map name="humid__sht_8c_ad715aaca3766d169ac2ea69bd0ead2d7_cgraph" id="humid__sht_8c_ad715aaca3766d169ac2ea69bd0ead2d7_cgraph">
-<area shape="rect" id="node3" href="humid__sht_8c.html#a73fae161c1291d629d3ddd86f3c8d4ba" title="calc_sht" alt="" coords="219,5,288,33"/><area shape="rect" id="node5" href="humid__sht_8c.html#a2911676bb77e03a71fbbd714d03d10c8" title="s_connectionreset" alt="" coords="189,106,317,134"/><area shape="rect" id="node9" href="humid__sht_8c.html#a50111ba8e53bc3ba3d09838d0f970070" title="s_read_measure" alt="" coords="195,55,312,83"/><area shape="rect" id="node13" href="humid__sht_8c.html#a3686df6b67e42437c8a8e221f2e9630f" title="s_start_measure" alt="" coords="195,157,312,185"/><area shape="rect" id="node7" href="humid__sht_8c.html#ac050a2242a1eb18e147c12192ad4a81a" title="s_transstart" alt="" coords="368,106,459,134"/><area shape="rect" id="node11" href="humid__sht_8c.html#ac144feb66d5edf10a401e1192264b5d6" title="s_read_byte" alt="" coords="368,55,459,83"/><area shape="rect" id="node16" href="humid__sht_8c.html#add5886a69f8f33fe13ebf3b995abcdd1" title="s_write_byte" alt="" coords="367,157,460,185"/></map>
+<area shape="rect" id="node3" href="humid__sht_8c.html#a73fae161c1291d629d3ddd86f3c8d4ba" title="calc_sht" alt="" coords="232,5,307,33"/><area shape="rect" id="node5" href="humid__sht_8c.html#a2911676bb77e03a71fbbd714d03d10c8" title="s_connectionreset" alt="" coords="200,106,339,134"/><area shape="rect" id="node9" href="humid__sht_8c.html#a50111ba8e53bc3ba3d09838d0f970070" title="s_read_measure" alt="" coords="205,55,333,83"/><area shape="rect" id="node13" href="humid__sht_8c.html#a3686df6b67e42437c8a8e221f2e9630f" title="s_start_measure" alt="" coords="204,157,335,185"/><area shape="rect" id="node7" href="humid__sht_8c.html#ac050a2242a1eb18e147c12192ad4a81a" title="s_transstart" alt="" coords="388,106,487,134"/><area shape="rect" id="node11" href="humid__sht_8c.html#ac144feb66d5edf10a401e1192264b5d6" title="s_read_byte" alt="" coords="388,55,487,83"/><area shape="rect" id="node16" href="humid__sht_8c.html#add5886a69f8f33fe13ebf3b995abcdd1" title="s_write_byte" alt="" coords="387,157,488,185"/></map>
 </div>
 </p>
 
@@ -283,18 +602,18 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00224">224</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00284">284</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
 
-<p>References <a class="el" href="humid__sht_8h_source.html#l00040">RESET</a>, <a class="el" href="humid__sht_8c_source.html#l00102">s_connectionreset()</a>, and <a class="el" href="humid__sht_8c_source.html#l00037">s_write_byte()</a>.</p>
+<p>References <a class="el" href="humid__sht_8c_source.html#l00055">RESET</a>, <a class="el" href="humid__sht_8c_source.html#l00162">s_connectionreset()</a>, and <a class="el" href="humid__sht_8c_source.html#l00097">s_write_byte()</a>.</p>
 
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="humid__sht_8c_ae0feab9236f310949fc0983bab5a0cce_cgraph.png" border="0" usemap="#humid__sht_8c_ae0feab9236f310949fc0983bab5a0cce_cgraph" alt=""/></div>
 <map name="humid__sht_8c_ae0feab9236f310949fc0983bab5a0cce_cgraph" id="humid__sht_8c_ae0feab9236f310949fc0983bab5a0cce_cgraph">
-<area shape="rect" id="node3" href="humid__sht_8c.html#a2911676bb77e03a71fbbd714d03d10c8" title="s_connectionreset" alt="" coords="173,5,301,33"/><area shape="rect" id="node7" href="humid__sht_8c.html#add5886a69f8f33fe13ebf3b995abcdd1" title="s_write_byte" alt="" coords="191,55,284,83"/><area shape="rect" id="node5" href="humid__sht_8c.html#ac050a2242a1eb18e147c12192ad4a81a" title="s_transstart" alt="" coords="349,5,440,33"/></map>
+<area shape="rect" id="node3" href="humid__sht_8c.html#a2911676bb77e03a71fbbd714d03d10c8" title="s_connectionreset" alt="" coords="184,5,323,33"/><area shape="rect" id="node7" href="humid__sht_8c.html#add5886a69f8f33fe13ebf3b995abcdd1" title="s_write_byte" alt="" coords="203,55,304,83"/><area shape="rect" id="node5" href="humid__sht_8c.html#ac050a2242a1eb18e147c12192ad4a81a" title="s_transstart" alt="" coords="371,5,469,33"/></map>
 </div>
 </p>
 
@@ -314,31 +633,31 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00102">102</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00162">162</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
 
-<p>References <a class="el" href="humid__sht_8h_source.html#l00045">DATA_SET</a>, <a class="el" href="humid__sht_8c_source.html#l00079">s_transstart()</a>, <a class="el" href="humid__sht_8h_source.html#l00056">SCK_CLR</a>, and <a class="el" href="humid__sht_8h_source.html#l00054">SCK_SET</a>.</p>
+<p>References <a class="el" href="humid__sht_8c_source.html#l00067">DATA_SET</a>, <a class="el" href="humid__sht_8c_source.html#l00139">s_transstart()</a>, <a class="el" href="humid__sht_8c_source.html#l00076">SCK_CLR</a>, and <a class="el" href="humid__sht_8c_source.html#l00074">SCK_SET</a>.</p>
 
-<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00282">humid_sht_periodic()</a>, and <a class="el" href="humid__sht_8c_source.html#l00224">humid_sht_reset()</a>.</p>
-
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="humid__sht_8c_a2911676bb77e03a71fbbd714d03d10c8_cgraph.png" border="0" usemap="#humid__sht_8c_a2911676bb77e03a71fbbd714d03d10c8_cgraph" alt=""/></div>
-<map name="humid__sht_8c_a2911676bb77e03a71fbbd714d03d10c8_cgraph" id="humid__sht_8c_a2911676bb77e03a71fbbd714d03d10c8_cgraph">
-<area shape="rect" id="node3" href="humid__sht_8c.html#ac050a2242a1eb18e147c12192ad4a81a" title="s_transstart" alt="" coords="181,5,272,33"/></map>
-</div>
-</p>
+<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00307">humid_sht_periodic()</a>, and <a class="el" href="humid__sht_8c_source.html#l00284">humid_sht_reset()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="humid__sht_8c_a2911676bb77e03a71fbbd714d03d10c8_cgraph.png" border="0" usemap="#humid__sht_8c_a2911676bb77e03a71fbbd714d03d10c8_cgraph" alt=""/></div>
+<map name="humid__sht_8c_a2911676bb77e03a71fbbd714d03d10c8_cgraph" id="humid__sht_8c_a2911676bb77e03a71fbbd714d03d10c8_cgraph">
+<area shape="rect" id="node3" href="humid__sht_8c.html#ac050a2242a1eb18e147c12192ad4a81a" title="s_transstart" alt="" coords="192,5,291,33"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="humid__sht_8c_a2911676bb77e03a71fbbd714d03d10c8_icgraph.png" border="0" usemap="#humid__sht_8c_a2911676bb77e03a71fbbd714d03d10c8_icgraph" alt=""/></div>
 <map name="humid__sht_8c_a2911676bb77e03a71fbbd714d03d10c8_icgraph" id="humid__sht_8c_a2911676bb77e03a71fbbd714d03d10c8_icgraph">
-<area shape="rect" id="node3" href="humid__sht_8h.html#ad715aaca3766d169ac2ea69bd0ead2d7" title="humid_sht_periodic" alt="" coords="183,5,316,33"/><area shape="rect" id="node5" href="humid__sht_8c.html#ae0feab9236f310949fc0983bab5a0cce" title="humid_sht_reset" alt="" coords="191,55,308,83"/></map>
+<area shape="rect" id="node3" href="humid__sht_8h.html#ad715aaca3766d169ac2ea69bd0ead2d7" title="humid_sht_periodic" alt="" coords="192,5,339,33"/><area shape="rect" id="node5" href="humid__sht_8c.html#ae0feab9236f310949fc0983bab5a0cce" title="humid_sht_reset" alt="" coords="201,55,329,83"/></map>
 </div>
 </p>
 
@@ -374,18 +693,18 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00144">144</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00204">204</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
 
-<p>References <a class="el" href="humid__sht_8h_source.html#l00026">ACK</a>, <a class="el" href="humid__sht_8h_source.html#l00049">DATA_IN</a>, <a class="el" href="humid__sht_8h_source.html#l00028">HUMI</a>, <a class="el" href="humid__sht_8h_source.html#l00038">MEASURE_HUMI</a>, <a class="el" href="humid__sht_8h_source.html#l00036">MEASURE_TEMP</a>, <a class="el" href="humid__sht_8h_source.html#l00025">noACK</a>, <a class="el" href="humid__sht_8c_source.html#l00058">s_read_byte()</a>, <a class="el" href="humid__sht_8c_source.html#l00079">s_transstart()</a>, <a class="el" href="humid__sht_8c_source.html#l00037">s_write_byte()</a>, and <a class="el" href="humid__sht_8h_source.html#l00027">TEMP</a>.</p>
+<p>References <a class="el" href="humid__sht_8c_source.html#l00041">ACK</a>, <a class="el" href="humid__sht_8c_source.html#l00071">DATA_IN</a>, <a class="el" href="humid__sht_8c_source.html#l00043">HUMI</a>, <a class="el" href="humid__sht_8c_source.html#l00053">MEASURE_HUMI</a>, <a class="el" href="humid__sht_8c_source.html#l00051">MEASURE_TEMP</a>, <a class="el" href="humid__sht_8c_source.html#l00040">noACK</a>, <a class="el" href="humid__sht_8c_source.html#l00118">s_read_byte()</a>, <a class="el" href="humid__sht_8c_source.html#l00139">s_transstart()</a>, <a class="el" href="humid__sht_8c_source.html#l00097">s_write_byte()</a>, and <a class="el" href="humid__sht_8c_source.html#l00042">TEMP</a>.</p>
 
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="humid__sht_8c_a0f5c282289678921be787215d98cb3aa_cgraph.png" border="0" usemap="#humid__sht_8c_a0f5c282289678921be787215d98cb3aa_cgraph" alt=""/></div>
 <map name="humid__sht_8c_a0f5c282289678921be787215d98cb3aa_cgraph" id="humid__sht_8c_a0f5c282289678921be787215d98cb3aa_cgraph">
-<area shape="rect" id="node3" href="humid__sht_8c.html#ac144feb66d5edf10a401e1192264b5d6" title="s_read_byte" alt="" coords="144,5,235,33"/><area shape="rect" id="node5" href="humid__sht_8c.html#ac050a2242a1eb18e147c12192ad4a81a" title="s_transstart" alt="" coords="144,55,235,83"/><area shape="rect" id="node7" href="humid__sht_8c.html#add5886a69f8f33fe13ebf3b995abcdd1" title="s_write_byte" alt="" coords="143,106,236,134"/></map>
+<area shape="rect" id="node3" href="humid__sht_8c.html#ac144feb66d5edf10a401e1192264b5d6" title="s_read_byte" alt="" coords="148,5,247,33"/><area shape="rect" id="node5" href="humid__sht_8c.html#ac050a2242a1eb18e147c12192ad4a81a" title="s_transstart" alt="" coords="148,55,247,83"/><area shape="rect" id="node7" href="humid__sht_8c.html#add5886a69f8f33fe13ebf3b995abcdd1" title="s_write_byte" alt="" coords="147,106,248,134"/></map>
 </div>
 </p>
 
@@ -405,20 +724,20 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00058">58</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00118">118</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
 
-<p>References <a class="el" href="humid__sht_8h_source.html#l00047">DATA_CLR</a>, <a class="el" href="humid__sht_8h_source.html#l00049">DATA_IN</a>, <a class="el" href="humid__sht_8h_source.html#l00045">DATA_SET</a>, <a class="el" href="humid__sht_8h_source.html#l00056">SCK_CLR</a>, <a class="el" href="humid__sht_8h_source.html#l00054">SCK_SET</a>, and <a class="el" href="temp__tcouple__adc_8c_source.html#l00049">val</a>.</p>
+<p>References <a class="el" href="humid__sht_8c_source.html#l00069">DATA_CLR</a>, <a class="el" href="humid__sht_8c_source.html#l00071">DATA_IN</a>, <a class="el" href="humid__sht_8c_source.html#l00067">DATA_SET</a>, <a class="el" href="humid__sht_8c_source.html#l00076">SCK_CLR</a>, <a class="el" href="humid__sht_8c_source.html#l00074">SCK_SET</a>, and <a class="el" href="temp__tcouple__adc_8c_source.html#l00049">val</a>.</p>
 
-<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00144">s_measure()</a>, <a class="el" href="humid__sht_8c_source.html#l00180">s_read_measure()</a>, and <a class="el" href="humid__sht_8c_source.html#l00121">s_read_statusreg()</a>.</p>
+<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00204">s_measure()</a>, <a class="el" href="humid__sht_8c_source.html#l00240">s_read_measure()</a>, and <a class="el" href="humid__sht_8c_source.html#l00181">s_read_statusreg()</a>.</p>
 
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="humid__sht_8c_ac144feb66d5edf10a401e1192264b5d6_icgraph.png" border="0" usemap="#humid__sht_8c_ac144feb66d5edf10a401e1192264b5d6_icgraph" alt=""/></div>
 <map name="humid__sht_8c_ac144feb66d5edf10a401e1192264b5d6_icgraph" id="humid__sht_8c_ac144feb66d5edf10a401e1192264b5d6_icgraph">
-<area shape="rect" id="node3" href="humid__sht_8c.html#a0f5c282289678921be787215d98cb3aa" title="s_measure" alt="" coords="165,5,251,33"/><area shape="rect" id="node5" href="humid__sht_8c.html#a50111ba8e53bc3ba3d09838d0f970070" title="s_read_measure" alt="" coords="149,55,267,83"/><area shape="rect" id="node9" href="humid__sht_8c.html#a57aae5c3f490c30fbdd5f7970e928a45" title="s_read_statusreg" alt="" coords="147,106,269,134"/><area shape="rect" id="node7" href="humid__sht_8h.html#ad715aaca3766d169ac2ea69bd0ead2d7" title="humid_sht_periodic" alt="" coords="319,55,452,83"/></map>
+<area shape="rect" id="node3" href="humid__sht_8c.html#a0f5c282289678921be787215d98cb3aa" title="s_measure" alt="" coords="175,5,268,33"/><area shape="rect" id="node5" href="humid__sht_8c.html#a50111ba8e53bc3ba3d09838d0f970070" title="s_read_measure" alt="" coords="157,55,285,83"/><area shape="rect" id="node9" href="humid__sht_8c.html#a57aae5c3f490c30fbdd5f7970e928a45" title="s_read_statusreg" alt="" coords="155,106,288,134"/><area shape="rect" id="node7" href="humid__sht_8h.html#ad715aaca3766d169ac2ea69bd0ead2d7" title="humid_sht_periodic" alt="" coords="336,55,483,83"/></map>
 </div>
 </p>
 
@@ -448,31 +767,31 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00180">180</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00240">240</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
 
-<p>References <a class="el" href="humid__sht_8h_source.html#l00026">ACK</a>, <a class="el" href="humid__sht_8h_source.html#l00049">DATA_IN</a>, <a class="el" href="humid__sht_8h_source.html#l00025">noACK</a>, and <a class="el" href="humid__sht_8c_source.html#l00058">s_read_byte()</a>.</p>
+<p>References <a class="el" href="humid__sht_8c_source.html#l00041">ACK</a>, <a class="el" href="humid__sht_8c_source.html#l00071">DATA_IN</a>, <a class="el" href="humid__sht_8c_source.html#l00040">noACK</a>, and <a class="el" href="humid__sht_8c_source.html#l00118">s_read_byte()</a>.</p>
 
-<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00282">humid_sht_periodic()</a>.</p>
-
-<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="humid__sht_8c_a50111ba8e53bc3ba3d09838d0f970070_cgraph.png" border="0" usemap="#humid__sht_8c_a50111ba8e53bc3ba3d09838d0f970070_cgraph" alt=""/></div>
-<map name="humid__sht_8c_a50111ba8e53bc3ba3d09838d0f970070_cgraph" id="humid__sht_8c_a50111ba8e53bc3ba3d09838d0f970070_cgraph">
-<area shape="rect" id="node3" href="humid__sht_8c.html#ac144feb66d5edf10a401e1192264b5d6" title="s_read_byte" alt="" coords="175,5,265,33"/></map>
-</div>
-</p>
+<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00307">humid_sht_periodic()</a>.</p>
 
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="humid__sht_8c_a50111ba8e53bc3ba3d09838d0f970070_cgraph.png" border="0" usemap="#humid__sht_8c_a50111ba8e53bc3ba3d09838d0f970070_cgraph" alt=""/></div>
+<map name="humid__sht_8c_a50111ba8e53bc3ba3d09838d0f970070_cgraph" id="humid__sht_8c_a50111ba8e53bc3ba3d09838d0f970070_cgraph">
+<area shape="rect" id="node3" href="humid__sht_8c.html#ac144feb66d5edf10a401e1192264b5d6" title="s_read_byte" alt="" coords="185,5,284,33"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="humid__sht_8c_a50111ba8e53bc3ba3d09838d0f970070_icgraph.png" border="0" usemap="#humid__sht_8c_a50111ba8e53bc3ba3d09838d0f970070_icgraph" alt=""/></div>
 <map name="humid__sht_8c_a50111ba8e53bc3ba3d09838d0f970070_icgraph" id="humid__sht_8c_a50111ba8e53bc3ba3d09838d0f970070_icgraph">
-<area shape="rect" id="node3" href="humid__sht_8h.html#ad715aaca3766d169ac2ea69bd0ead2d7" title="humid_sht_periodic" alt="" coords="175,5,308,33"/></map>
+<area shape="rect" id="node3" href="humid__sht_8h.html#ad715aaca3766d169ac2ea69bd0ead2d7" title="humid_sht_periodic" alt="" coords="184,5,331,33"/></map>
 </div>
 </p>
 
@@ -502,18 +821,18 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00121">121</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00181">181</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
 
-<p>References <a class="el" href="humid__sht_8h_source.html#l00026">ACK</a>, <a class="el" href="humid__sht_8h_source.html#l00025">noACK</a>, <a class="el" href="humid__sht_8c_source.html#l00058">s_read_byte()</a>, <a class="el" href="humid__sht_8c_source.html#l00079">s_transstart()</a>, <a class="el" href="humid__sht_8c_source.html#l00037">s_write_byte()</a>, and <a class="el" href="humid__sht_8h_source.html#l00034">STATUS_REG_R</a>.</p>
+<p>References <a class="el" href="humid__sht_8c_source.html#l00041">ACK</a>, <a class="el" href="humid__sht_8c_source.html#l00040">noACK</a>, <a class="el" href="humid__sht_8c_source.html#l00118">s_read_byte()</a>, <a class="el" href="humid__sht_8c_source.html#l00139">s_transstart()</a>, <a class="el" href="humid__sht_8c_source.html#l00097">s_write_byte()</a>, and <a class="el" href="humid__sht_8c_source.html#l00049">STATUS_REG_R</a>.</p>
 
-<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="humid__sht_8c_a57aae5c3f490c30fbdd5f7970e928a45_cgraph.png" border="0" usemap="#humid__sht_8c_a57aae5c3f490c30fbdd5f7970e928a45_cgraph" alt=""/></div>
 <map name="humid__sht_8c_a57aae5c3f490c30fbdd5f7970e928a45_cgraph" id="humid__sht_8c_a57aae5c3f490c30fbdd5f7970e928a45_cgraph">
-<area shape="rect" id="node3" href="humid__sht_8c.html#ac144feb66d5edf10a401e1192264b5d6" title="s_read_byte" alt="" coords="179,5,269,33"/><area shape="rect" id="node5" href="humid__sht_8c.html#ac050a2242a1eb18e147c12192ad4a81a" title="s_transstart" alt="" coords="179,55,269,83"/><area shape="rect" id="node7" href="humid__sht_8c.html#add5886a69f8f33fe13ebf3b995abcdd1" title="s_write_byte" alt="" coords="177,106,271,134"/></map>
+<area shape="rect" id="node3" href="humid__sht_8c.html#ac144feb66d5edf10a401e1192264b5d6" title="s_read_byte" alt="" coords="188,5,287,33"/><area shape="rect" id="node5" href="humid__sht_8c.html#ac050a2242a1eb18e147c12192ad4a81a" title="s_transstart" alt="" coords="188,55,287,83"/><area shape="rect" id="node7" href="humid__sht_8c.html#add5886a69f8f33fe13ebf3b995abcdd1" title="s_write_byte" alt="" coords="187,106,288,134"/></map>
 </div>
 </p>
 
@@ -533,31 +852,31 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00165">165</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00225">225</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
 
-<p>References <a class="el" href="humid__sht_8h_source.html#l00028">HUMI</a>, <a class="el" href="humid__sht_8h_source.html#l00038">MEASURE_HUMI</a>, <a class="el" href="humid__sht_8h_source.html#l00036">MEASURE_TEMP</a>, <a class="el" href="humid__sht_8c_source.html#l00079">s_transstart()</a>, <a class="el" href="humid__sht_8c_source.html#l00037">s_write_byte()</a>, and <a class="el" href="humid__sht_8h_source.html#l00027">TEMP</a>.</p>
+<p>References <a class="el" href="humid__sht_8c_source.html#l00043">HUMI</a>, <a class="el" href="humid__sht_8c_source.html#l00053">MEASURE_HUMI</a>, <a class="el" href="humid__sht_8c_source.html#l00051">MEASURE_TEMP</a>, <a class="el" href="humid__sht_8c_source.html#l00139">s_transstart()</a>, <a class="el" href="humid__sht_8c_source.html#l00097">s_write_byte()</a>, and <a class="el" href="humid__sht_8c_source.html#l00042">TEMP</a>.</p>
 
-<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00282">humid_sht_periodic()</a>.</p>
-
-<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="humid__sht_8c_a3686df6b67e42437c8a8e221f2e9630f_cgraph.png" border="0" usemap="#humid__sht_8c_a3686df6b67e42437c8a8e221f2e9630f_cgraph" alt=""/></div>
-<map name="humid__sht_8c_a3686df6b67e42437c8a8e221f2e9630f_cgraph" id="humid__sht_8c_a3686df6b67e42437c8a8e221f2e9630f_cgraph">
-<area shape="rect" id="node3" href="humid__sht_8c.html#ac050a2242a1eb18e147c12192ad4a81a" title="s_transstart" alt="" coords="176,5,267,33"/><area shape="rect" id="node5" href="humid__sht_8c.html#add5886a69f8f33fe13ebf3b995abcdd1" title="s_write_byte" alt="" coords="175,55,268,83"/></map>
-</div>
-</p>
+<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00307">humid_sht_periodic()</a>.</p>
 
 <p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="humid__sht_8c_a3686df6b67e42437c8a8e221f2e9630f_cgraph.png" border="0" usemap="#humid__sht_8c_a3686df6b67e42437c8a8e221f2e9630f_cgraph" alt=""/></div>
+<map name="humid__sht_8c_a3686df6b67e42437c8a8e221f2e9630f_cgraph" id="humid__sht_8c_a3686df6b67e42437c8a8e221f2e9630f_cgraph">
+<area shape="rect" id="node3" href="humid__sht_8c.html#ac050a2242a1eb18e147c12192ad4a81a" title="s_transstart" alt="" coords="185,5,284,33"/><area shape="rect" id="node5" href="humid__sht_8c.html#add5886a69f8f33fe13ebf3b995abcdd1" title="s_write_byte" alt="" coords="184,55,285,83"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="humid__sht_8c_a3686df6b67e42437c8a8e221f2e9630f_icgraph.png" border="0" usemap="#humid__sht_8c_a3686df6b67e42437c8a8e221f2e9630f_icgraph" alt=""/></div>
 <map name="humid__sht_8c_a3686df6b67e42437c8a8e221f2e9630f_icgraph" id="humid__sht_8c_a3686df6b67e42437c8a8e221f2e9630f_icgraph">
-<area shape="rect" id="node3" href="humid__sht_8h.html#ad715aaca3766d169ac2ea69bd0ead2d7" title="humid_sht_periodic" alt="" coords="175,5,308,33"/></map>
+<area shape="rect" id="node3" href="humid__sht_8h.html#ad715aaca3766d169ac2ea69bd0ead2d7" title="humid_sht_periodic" alt="" coords="184,5,331,33"/></map>
 </div>
 </p>
 
@@ -577,20 +896,20 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00079">79</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00139">139</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
 
-<p>References <a class="el" href="humid__sht_8h_source.html#l00047">DATA_CLR</a>, <a class="el" href="humid__sht_8h_source.html#l00045">DATA_SET</a>, <a class="el" href="humid__sht_8h_source.html#l00056">SCK_CLR</a>, and <a class="el" href="humid__sht_8h_source.html#l00054">SCK_SET</a>.</p>
+<p>References <a class="el" href="humid__sht_8c_source.html#l00069">DATA_CLR</a>, <a class="el" href="humid__sht_8c_source.html#l00067">DATA_SET</a>, <a class="el" href="humid__sht_8c_source.html#l00076">SCK_CLR</a>, and <a class="el" href="humid__sht_8c_source.html#l00074">SCK_SET</a>.</p>
 
-<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00102">s_connectionreset()</a>, <a class="el" href="humid__sht_8c_source.html#l00144">s_measure()</a>, <a class="el" href="humid__sht_8c_source.html#l00121">s_read_statusreg()</a>, <a class="el" href="humid__sht_8c_source.html#l00165">s_start_measure()</a>, and <a class="el" href="humid__sht_8c_source.html#l00133">s_write_statusreg()</a>.</p>
+<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00162">s_connectionreset()</a>, <a class="el" href="humid__sht_8c_source.html#l00204">s_measure()</a>, <a class="el" href="humid__sht_8c_source.html#l00181">s_read_statusreg()</a>, <a class="el" href="humid__sht_8c_source.html#l00225">s_start_measure()</a>, and <a class="el" href="humid__sht_8c_source.html#l00193">s_write_statusreg()</a>.</p>
 
-<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="humid__sht_8c_ac050a2242a1eb18e147c12192ad4a81a_icgraph.png" border="0" usemap="#humid__sht_8c_ac050a2242a1eb18e147c12192ad4a81a_icgraph" alt=""/></div>
 <map name="humid__sht_8c_ac050a2242a1eb18e147c12192ad4a81a_icgraph" id="humid__sht_8c_ac050a2242a1eb18e147c12192ad4a81a_icgraph">
-<area shape="rect" id="node3" href="humid__sht_8c.html#a2911676bb77e03a71fbbd714d03d10c8" title="s_connectionreset" alt="" coords="144,5,272,33"/><area shape="rect" id="node9" href="humid__sht_8c.html#a0f5c282289678921be787215d98cb3aa" title="s_measure" alt="" coords="165,55,251,83"/><area shape="rect" id="node11" href="humid__sht_8c.html#a57aae5c3f490c30fbdd5f7970e928a45" title="s_read_statusreg" alt="" coords="147,106,269,134"/><area shape="rect" id="node13" href="humid__sht_8c.html#a3686df6b67e42437c8a8e221f2e9630f" title="s_start_measure" alt="" coords="149,157,267,185"/><area shape="rect" id="node16" href="humid__sht_8c.html#ad70aa5e85ee5cc737acec83166f3ef10" title="s_write_statusreg" alt="" coords="145,207,271,235"/><area shape="rect" id="node5" href="humid__sht_8h.html#ad715aaca3766d169ac2ea69bd0ead2d7" title="humid_sht_periodic" alt="" coords="321,106,455,134"/><area shape="rect" id="node7" href="humid__sht_8c.html#ae0feab9236f310949fc0983bab5a0cce" title="humid_sht_reset" alt="" coords="329,5,447,33"/></map>
+<area shape="rect" id="node3" href="humid__sht_8c.html#a2911676bb77e03a71fbbd714d03d10c8" title="s_connectionreset" alt="" coords="152,5,291,33"/><area shape="rect" id="node9" href="humid__sht_8c.html#a0f5c282289678921be787215d98cb3aa" title="s_measure" alt="" coords="175,55,268,83"/><area shape="rect" id="node11" href="humid__sht_8c.html#a57aae5c3f490c30fbdd5f7970e928a45" title="s_read_statusreg" alt="" coords="155,106,288,134"/><area shape="rect" id="node13" href="humid__sht_8c.html#a3686df6b67e42437c8a8e221f2e9630f" title="s_start_measure" alt="" coords="156,157,287,185"/><area shape="rect" id="node16" href="humid__sht_8c.html#ad70aa5e85ee5cc737acec83166f3ef10" title="s_write_statusreg" alt="" coords="155,207,288,235"/><area shape="rect" id="node5" href="humid__sht_8h.html#ad715aaca3766d169ac2ea69bd0ead2d7" title="humid_sht_periodic" alt="" coords="339,106,485,134"/><area shape="rect" id="node7" href="humid__sht_8c.html#ae0feab9236f310949fc0983bab5a0cce" title="humid_sht_reset" alt="" coords="348,5,476,33"/></map>
 </div>
 </p>
 
@@ -610,20 +929,20 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00037">37</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00097">97</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
 
-<p>References <a class="el" href="humid__sht_8h_source.html#l00047">DATA_CLR</a>, <a class="el" href="humid__sht_8h_source.html#l00049">DATA_IN</a>, <a class="el" href="humid__sht_8h_source.html#l00045">DATA_SET</a>, <a class="el" href="humid__sht_8h_source.html#l00056">SCK_CLR</a>, and <a class="el" href="humid__sht_8h_source.html#l00054">SCK_SET</a>.</p>
+<p>References <a class="el" href="humid__sht_8c_source.html#l00069">DATA_CLR</a>, <a class="el" href="humid__sht_8c_source.html#l00071">DATA_IN</a>, <a class="el" href="humid__sht_8c_source.html#l00067">DATA_SET</a>, <a class="el" href="humid__sht_8c_source.html#l00076">SCK_CLR</a>, and <a class="el" href="humid__sht_8c_source.html#l00074">SCK_SET</a>.</p>
 
-<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00224">humid_sht_reset()</a>, <a class="el" href="humid__sht_8c_source.html#l00144">s_measure()</a>, <a class="el" href="humid__sht_8c_source.html#l00121">s_read_statusreg()</a>, <a class="el" href="humid__sht_8c_source.html#l00165">s_start_measure()</a>, and <a class="el" href="humid__sht_8c_source.html#l00133">s_write_statusreg()</a>.</p>
+<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00284">humid_sht_reset()</a>, <a class="el" href="humid__sht_8c_source.html#l00204">s_measure()</a>, <a class="el" href="humid__sht_8c_source.html#l00181">s_read_statusreg()</a>, <a class="el" href="humid__sht_8c_source.html#l00225">s_start_measure()</a>, and <a class="el" href="humid__sht_8c_source.html#l00193">s_write_statusreg()</a>.</p>
 
-<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="humid__sht_8c_add5886a69f8f33fe13ebf3b995abcdd1_icgraph.png" border="0" usemap="#humid__sht_8c_add5886a69f8f33fe13ebf3b995abcdd1_icgraph" alt=""/></div>
 <map name="humid__sht_8c_add5886a69f8f33fe13ebf3b995abcdd1_icgraph" id="humid__sht_8c_add5886a69f8f33fe13ebf3b995abcdd1_icgraph">
-<area shape="rect" id="node3" href="humid__sht_8c.html#ae0feab9236f310949fc0983bab5a0cce" title="humid_sht_reset" alt="" coords="153,5,271,33"/><area shape="rect" id="node5" href="humid__sht_8c.html#a0f5c282289678921be787215d98cb3aa" title="s_measure" alt="" coords="169,55,255,83"/><area shape="rect" id="node7" href="humid__sht_8c.html#a57aae5c3f490c30fbdd5f7970e928a45" title="s_read_statusreg" alt="" coords="151,106,273,134"/><area shape="rect" id="node9" href="humid__sht_8c.html#a3686df6b67e42437c8a8e221f2e9630f" title="s_start_measure" alt="" coords="153,157,271,185"/><area shape="rect" id="node13" href="humid__sht_8c.html#ad70aa5e85ee5cc737acec83166f3ef10" title="s_write_statusreg" alt="" coords="149,207,275,235"/><area shape="rect" id="node11" href="humid__sht_8h.html#ad715aaca3766d169ac2ea69bd0ead2d7" title="humid_sht_periodic" alt="" coords="324,157,457,185"/></map>
+<area shape="rect" id="node3" href="humid__sht_8c.html#ae0feab9236f310949fc0983bab5a0cce" title="humid_sht_reset" alt="" coords="159,5,287,33"/><area shape="rect" id="node5" href="humid__sht_8c.html#a0f5c282289678921be787215d98cb3aa" title="s_measure" alt="" coords="176,55,269,83"/><area shape="rect" id="node7" href="humid__sht_8c.html#a57aae5c3f490c30fbdd5f7970e928a45" title="s_read_statusreg" alt="" coords="156,106,289,134"/><area shape="rect" id="node9" href="humid__sht_8c.html#a3686df6b67e42437c8a8e221f2e9630f" title="s_start_measure" alt="" coords="157,157,288,185"/><area shape="rect" id="node13" href="humid__sht_8c.html#ad70aa5e85ee5cc737acec83166f3ef10" title="s_write_statusreg" alt="" coords="156,207,289,235"/><area shape="rect" id="node11" href="humid__sht_8h.html#ad715aaca3766d169ac2ea69bd0ead2d7" title="humid_sht_periodic" alt="" coords="339,157,485,185"/></map>
 </div>
 </p>
 
@@ -643,18 +962,18 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00133">133</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00193">193</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
 
-<p>References <a class="el" href="humid__sht_8c_source.html#l00079">s_transstart()</a>, <a class="el" href="humid__sht_8c_source.html#l00037">s_write_byte()</a>, and <a class="el" href="humid__sht_8h_source.html#l00032">STATUS_REG_W</a>.</p>
+<p>References <a class="el" href="humid__sht_8c_source.html#l00139">s_transstart()</a>, <a class="el" href="humid__sht_8c_source.html#l00097">s_write_byte()</a>, and <a class="el" href="humid__sht_8c_source.html#l00047">STATUS_REG_W</a>.</p>
 
-<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="humid__sht_8c_ad70aa5e85ee5cc737acec83166f3ef10_cgraph.png" border="0" usemap="#humid__sht_8c_ad70aa5e85ee5cc737acec83166f3ef10_cgraph" alt=""/></div>
 <map name="humid__sht_8c_ad70aa5e85ee5cc737acec83166f3ef10_cgraph" id="humid__sht_8c_ad70aa5e85ee5cc737acec83166f3ef10_cgraph">
-<area shape="rect" id="node3" href="humid__sht_8c.html#ac050a2242a1eb18e147c12192ad4a81a" title="s_transstart" alt="" coords="181,5,272,33"/><area shape="rect" id="node5" href="humid__sht_8c.html#add5886a69f8f33fe13ebf3b995abcdd1" title="s_write_byte" alt="" coords="180,55,273,83"/></map>
+<area shape="rect" id="node3" href="humid__sht_8c.html#ac050a2242a1eb18e147c12192ad4a81a" title="s_transstart" alt="" coords="191,5,289,33"/><area shape="rect" id="node5" href="humid__sht_8c.html#add5886a69f8f33fe13ebf3b995abcdd1" title="s_write_byte" alt="" coords="189,55,291,83"/></map>
 </div>
 </p>
 
@@ -671,9 +990,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00020">20</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00080">80</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
 
-<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00282">humid_sht_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00307">humid_sht_periodic()</a>.</p>
 
 </div>
 </div>
@@ -687,9 +1006,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00020">20</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00080">80</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
 
-<p>Referenced by <a class="el" href="humid__hih_8c_source.html#l00057">humid_hih_periodic()</a>, and <a class="el" href="humid__sht_8c_source.html#l00282">humid_sht_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="humid__hih_8c_source.html#l00057">humid_hih_periodic()</a>, and <a class="el" href="humid__sht_8c_source.html#l00307">humid_sht_periodic()</a>.</p>
 
 </div>
 </div>
@@ -703,9 +1022,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00021">21</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00081">81</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
 
-<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00235">humid_sht_init()</a>, and <a class="el" href="humid__sht_8c_source.html#l00282">humid_sht_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00295">humid_sht_init()</a>, and <a class="el" href="humid__sht_8c_source.html#l00307">humid_sht_periodic()</a>.</p>
 
 </div>
 </div>
@@ -719,9 +1038,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00022">22</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00082">82</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
 
-<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00235">humid_sht_init()</a>, and <a class="el" href="humid__sht_8c_source.html#l00282">humid_sht_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00295">humid_sht_init()</a>, and <a class="el" href="humid__sht_8c_source.html#l00307">humid_sht_periodic()</a>.</p>
 
 </div>
 </div>
@@ -735,9 +1054,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00019">19</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00079">79</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
 
-<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00282">humid_sht_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00307">humid_sht_periodic()</a>.</p>
 
 </div>
 </div>
@@ -751,9 +1070,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00019">19</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
+<p>Definition at line <a class="el" href="humid__sht_8c_source.html#l00079">79</a> of file <a class="el" href="humid__sht_8c_source.html">humid_sht.c</a>.</p>
 
-<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00282">humid_sht_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="humid__sht_8c_source.html#l00307">humid_sht_periodic()</a>.</p>
 
 </div>
 </div>
@@ -763,7 +1082,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_dcc9af59dc35b42e32db80b18066e136.html">meteo</a></li><li class="navelem"><a class="el" href="humid__sht_8c.html">humid_sht.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:10 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:01 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

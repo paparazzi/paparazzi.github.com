@@ -11,7 +11,6 @@ var ahrs__int__cmpl__euler_8c =
     [ "ahrs_init", "ahrs__int__cmpl__euler_8c.html#aa3721663c9df7c7af5613486a3566afb", null ],
     [ "ahrs_propagate", "ahrs__int__cmpl__euler_8c.html#af8f4df7ae38ca5b239eac30e7d259e46", null ],
     [ "ahrs_update_accel", "ahrs__int__cmpl__euler_8c.html#a8bf83860498b05e7e94484cdcbcb1b7a", null ],
-    [ "ahrs_update_gps", "ahrs__int__cmpl__euler_8c.html#a0156f6669675c216bbcb413ea1879960", null ],
     [ "ahrs_update_mag", "ahrs__int__cmpl__euler_8c.html#a781832a9119845d31bda0fc8a8bb8bf3", null ],
     [ "get_phi_theta_measurement_fom_accel", "ahrs__int__cmpl__euler_8c.html#a6132add3aefdc9f80d14f1c2f3d8333d", null ],
     [ "get_psi_measurement_from_mag", "ahrs__int__cmpl__euler_8c.html#a5d95a785fc9325167394296734a26fb1", null ],

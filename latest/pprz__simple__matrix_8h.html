@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('pprz__simple__matrix_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pprz__simple__matrix_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2math_2pprz__simple__matrix_8hdep" alt=""/></div>
 <map name="sw_2airborne_2math_2pprz__simple__matrix_8hdep" id="sw_2airborne_2math_2pprz__simple__matrix_8hdep">
-<area shape="rect" id="node3" href="ahrs__float__cmpl_8c.html" title="Complementary filter in float to estimate the attitude, heading and gyro bias." alt="" coords="5,99,168,143"/><area shape="rect" id="node5" href="ahrs__float__mlkf_8c.html" title="Multiplicative linearized Kalman Filter in quaternion formulation." alt="" coords="192,99,355,143"/></map>
+<area shape="rect" id="node3" href="ahrs__float__cmpl_8c.html" title="Complementary filter in float to estimate the attitude, heading and gyro bias." alt="" coords="5,99,181,143"/><area shape="rect" id="node5" href="ahrs__float__mlkf_8c.html" title="Multiplicative linearized Kalman Filter in quaternion formulation." alt="" coords="205,99,381,143"/></map>
 </div>
 </div>
 <p><a href="pprz__simple__matrix_8h_source.html">Go to the source code of this file.</a></p>
@@ -135,9 +135,9 @@ $(document).ready(function(){initNavTree('pprz__simple__matrix_8h.html','');});
 <tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a09eb14a8c70b8473c12388ce49e7cb0d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__simple__matrix_8h.html#a09eb14a8c70b8473c12388ce49e7cb0d">warn_message</a>(...)&#160;&#160;&#160;do { } while(0)</td></tr>
-<tr class="memitem:a8e05d6535e6658735179deeb5838a7c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__simple__matrix_8h.html#a8e05d6535e6658735179deeb5838a7c2">MAT_MUL</a>(_i, _k, _j, C, <a class="el" href="pprz__geodetic__utm_8h.html#a955f504eccf76b4eb2489c0adab03121">A</a>, B)</td></tr>
-<tr class="memitem:a02c0ae5fb437280749638994286c902a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__simple__matrix_8h.html#a02c0ae5fb437280749638994286c902a">MAT_MUL_T</a>(_i, _k, _j, C, <a class="el" href="pprz__geodetic__utm_8h.html#a955f504eccf76b4eb2489c0adab03121">A</a>, B)</td></tr>
-<tr class="memitem:ac2de61f4f66043eb03434ee1967c1426"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__simple__matrix_8h.html#ac2de61f4f66043eb03434ee1967c1426">MAT_SUB</a>(_i, _j, C, <a class="el" href="pprz__geodetic__utm_8h.html#a955f504eccf76b4eb2489c0adab03121">A</a>, B)</td></tr>
+<tr class="memitem:a8e05d6535e6658735179deeb5838a7c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__simple__matrix_8h.html#a8e05d6535e6658735179deeb5838a7c2">MAT_MUL</a>(_i, _k, _j, C, <a class="el" href="ins__float__invariant_8c.html#a77f40b118a2e44fe45a8dd8250f72310">A</a>, <a class="el" href="ins__float__invariant_8c.html#a320773df8b46a1423fe8b62a3be99eb3">B</a>)</td></tr>
+<tr class="memitem:a02c0ae5fb437280749638994286c902a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__simple__matrix_8h.html#a02c0ae5fb437280749638994286c902a">MAT_MUL_T</a>(_i, _k, _j, C, <a class="el" href="ins__float__invariant_8c.html#a77f40b118a2e44fe45a8dd8250f72310">A</a>, <a class="el" href="ins__float__invariant_8c.html#a320773df8b46a1423fe8b62a3be99eb3">B</a>)</td></tr>
+<tr class="memitem:ac2de61f4f66043eb03434ee1967c1426"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__simple__matrix_8h.html#ac2de61f4f66043eb03434ee1967c1426">MAT_SUB</a>(_i, _j, C, <a class="el" href="ins__float__invariant_8c.html#a77f40b118a2e44fe45a8dd8250f72310">A</a>, <a class="el" href="ins__float__invariant_8c.html#a320773df8b46a1423fe8b62a3be99eb3">B</a>)</td></tr>
 <tr class="memitem:ae7a13444cdd63ef7b4f6e246dc46ab6e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__simple__matrix_8h.html#ae7a13444cdd63ef7b4f6e246dc46ab6e">MAT_INV33</a>(_invS, _S)</td></tr>
 </table>
 <h2>Macro Definition Documentation</h2>
@@ -193,7 +193,7 @@ Macros</h2></td></tr>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="pprz__simple__matrix_8h_source.html#l00056">56</a> of file <a class="el" href="pprz__simple__matrix_8h_source.html">pprz_simple_matrix.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00209">update_state()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00206">update_state()</a>.</p>
 
 </div>
 </div>
@@ -229,13 +229,13 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="pprz__geodetic__utm_8h.html#a955f504eccf76b4eb2489c0adab03121">A</a>, </td>
+          <td class="paramname"><a class="el" href="ins__float__invariant_8c.html#a77f40b118a2e44fe45a8dd8250f72310">A</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">B&#160;</td>
+          <td class="paramname"><a class="el" href="ins__float__invariant_8c.html#a320773df8b46a1423fe8b62a3be99eb3">B</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -245,18 +245,18 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{          \</div>
-<div class="line">    int l,<a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>,m;                                  \</div>
+<div class="line">    int l,c,m;                                  \</div>
 <div class="line">    for (l=0; l&lt;_i; l++)                        \</div>
 <div class="line">      <span class="keywordflow">for</span> (c=0; c&lt;_j; c++) {                    \</div>
-<div class="line">        C[l][<a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>] = 0.;                           \</div>
+<div class="line">        C[l][c] = 0.;                           \</div>
 <div class="line">        for (m=0; m&lt;_k; m++)                    \</div>
-<div class="line">          C[l][c] += <a class="code" href="pprz__geodetic__utm_8h.html#a955f504eccf76b4eb2489c0adab03121">A</a>[l][m]*B[m][c];           \</div>
+<div class="line">          C[l][c] += <a class="code" href="pprz__geodetic__utm_8h.html#a955f504eccf76b4eb2489c0adab03121">A</a>[l][m]*<a class="code" href="ins__float__invariant_8c.html#a320773df8b46a1423fe8b62a3be99eb3">B</a>[m][c];           \</div>
 <div class="line">      }                                         \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="pprz__simple__matrix_8h_source.html#l00016">16</a> of file <a class="el" href="pprz__simple__matrix_8h_source.html">pprz_simple_matrix.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00180">propagate_state()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00209">update_state()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00177">propagate_state()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00206">update_state()</a>.</p>
 
 </div>
 </div>
@@ -292,13 +292,13 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="pprz__geodetic__utm_8h.html#a955f504eccf76b4eb2489c0adab03121">A</a>, </td>
+          <td class="paramname"><a class="el" href="ins__float__invariant_8c.html#a77f40b118a2e44fe45a8dd8250f72310">A</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">B&#160;</td>
+          <td class="paramname"><a class="el" href="ins__float__invariant_8c.html#a320773df8b46a1423fe8b62a3be99eb3">B</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -308,18 +308,18 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{        \</div>
-<div class="line">    int l,<a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>,m;                                  \</div>
+<div class="line">    int l,c,m;                                  \</div>
 <div class="line">    for (l=0; l&lt;_i; l++)                        \</div>
 <div class="line">      <span class="keywordflow">for</span> (c=0; c&lt;_j; c++) {                    \</div>
-<div class="line">        C[l][<a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>] = 0.;                           \</div>
+<div class="line">        C[l][c] = 0.;                           \</div>
 <div class="line">        for (m=0; m&lt;_k; m++)                    \</div>
-<div class="line">          C[l][c] += <a class="code" href="pprz__geodetic__utm_8h.html#a955f504eccf76b4eb2489c0adab03121">A</a>[l][m]*B[c][m];           \</div>
+<div class="line">          C[l][c] += <a class="code" href="pprz__geodetic__utm_8h.html#a955f504eccf76b4eb2489c0adab03121">A</a>[l][m]*<a class="code" href="ins__float__invariant_8c.html#a320773df8b46a1423fe8b62a3be99eb3">B</a>[c][m];           \</div>
 <div class="line">      }                                         \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="pprz__simple__matrix_8h_source.html#l00029">29</a> of file <a class="el" href="pprz__simple__matrix_8h_source.html">pprz_simple_matrix.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00180">propagate_state()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00209">update_state()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00177">propagate_state()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00206">update_state()</a>.</p>
 
 </div>
 </div>
@@ -349,13 +349,13 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="pprz__geodetic__utm_8h.html#a955f504eccf76b4eb2489c0adab03121">A</a>, </td>
+          <td class="paramname"><a class="el" href="ins__float__invariant_8c.html#a77f40b118a2e44fe45a8dd8250f72310">A</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">B&#160;</td>
+          <td class="paramname"><a class="el" href="ins__float__invariant_8c.html#a320773df8b46a1423fe8b62a3be99eb3">B</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -365,15 +365,15 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{              \</div>
-<div class="line">    int l,<a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>;                                    \</div>
+<div class="line">    int l,c;                                    \</div>
 <div class="line">    for (l=0; l&lt;_i; l++)                        \</div>
 <div class="line">      <span class="keywordflow">for</span> (c=0; c&lt;_j; c++)                      \</div>
-<div class="line">        C[l][c] = <a class="code" href="pprz__geodetic__utm_8h.html#a955f504eccf76b4eb2489c0adab03121">A</a>[l][c] - B[l][c];            \</div>
+<div class="line">        C[l][c] = <a class="code" href="pprz__geodetic__utm_8h.html#a955f504eccf76b4eb2489c0adab03121">A</a>[l][c] - <a class="code" href="ins__float__invariant_8c.html#a320773df8b46a1423fe8b62a3be99eb3">B</a>[l][c];            \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="pprz__simple__matrix_8h_source.html#l00043">43</a> of file <a class="el" href="pprz__simple__matrix_8h_source.html">pprz_simple_matrix.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00209">update_state()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00206">update_state()</a>.</p>
 
 </div>
 </div>
@@ -401,7 +401,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_29343b6f5fcd4b75a5dfbb985ff56864.html">math</a></li><li class="navelem"><a class="el" href="pprz__simple__matrix_8h.html">pprz_simple_matrix.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:10 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:58 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

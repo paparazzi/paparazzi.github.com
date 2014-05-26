@@ -10,5 +10,6 @@ var stm32_2mcu__periph_2uart__arch_8h =
     [ "B4800", "stm32_2mcu__periph_2uart__arch_8h.html#a3b0ce0abd5ad4af8d485c843c9bab66c", null ],
     [ "B57600", "stm32_2mcu__periph_2uart__arch_8h.html#a4bde6a10c31adfe1959fb9724e13029a", null ],
     [ "B921600", "stm32_2mcu__periph_2uart__arch_8h.html#ae2d3cdb046f933a4a6ccd5497516c2a5", null ],
-    [ "B9600", "stm32_2mcu__periph_2uart__arch_8h.html#ad0539916b8412eb7ddfb9ae02aff0853", null ]
+    [ "B9600", "stm32_2mcu__periph_2uart__arch_8h.html#ad0539916b8412eb7ddfb9ae02aff0853", null ],
+    [ "UART_SPEED", "stm32_2mcu__periph_2uart__arch_8h.html#ac9378c8432472f49ced54ebd148d7af1", null ]
 ];

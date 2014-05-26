@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -110,11 +110,11 @@ $(document).ready(function(){initNavTree('stm32_2peripherals_2hmc5843__arch_8c.h
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="hmc5843_8h_source.html">peripherals/hmc5843.h</a>&quot;</code><br/>
-<code>#include &lt;libopencm3/stm32/f1/gpio.h&gt;</code><br/>
-<code>#include &lt;libopencm3/stm32/f1/rcc.h&gt;</code><br/>
-<code>#include &lt;libopencm3/stm32/f1/nvic.h&gt;</code><br/>
+<code>#include &lt;libopencm3/stm32/gpio.h&gt;</code><br/>
+<code>#include &lt;libopencm3/stm32/rcc.h&gt;</code><br/>
 <code>#include &lt;libopencm3/stm32/spi.h&gt;</code><br/>
 <code>#include &lt;libopencm3/stm32/exti.h&gt;</code><br/>
+<code>#include &lt;libopencm3/cm3/nvic.h&gt;</code><br/>
 <code>#include &quot;<a class="el" href="i2c_8h_source.html">mcu_periph/i2c.h</a>&quot;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for hmc5843_arch.c:</div>
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('stm32_2peripherals_2hmc5843__arch_8c.h
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2peripherals_2hmc5843__arch_8c__incl.png" border="0" usemap="#sw_2airborne_2arch_2stm32_2peripherals_2hmc5843__arch_8c" alt=""/></div>
 <map name="sw_2airborne_2arch_2stm32_2peripherals_2hmc5843__arch_8c" id="sw_2airborne_2arch_2stm32_2peripherals_2hmc5843__arch_8c">
-<area shape="rect" id="node3" href="hmc5843_8h.html" title="peripherals/hmc5843.h" alt="" coords="177,107,329,135"/><area shape="rect" id="node7" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="80,201,200,229"/></map>
+<area shape="rect" id="node3" href="hmc5843_8h.html" title="peripherals/hmc5843.h" alt="" coords="191,99,359,127"/><area shape="rect" id="node7" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="88,185,219,213"/></map>
 </div>
 </div>
 <p><a href="stm32_2peripherals_2hmc5843__arch_8c_source.html">Go to the source code of this file.</a></p>
@@ -149,7 +149,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2peripherals_2hmc5843__arch_8c_source.html#l00052">52</a> of file <a class="el" href="stm32_2peripherals_2hmc5843__arch_8c_source.html">hmc5843_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2peripherals_2hmc5843__arch_8c_source.html#l00057">57</a> of file <a class="el" href="stm32_2peripherals_2hmc5843__arch_8c_source.html">hmc5843_arch.c</a>.</p>
 
 </div>
 </div>
@@ -167,7 +167,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2peripherals_2hmc5843__arch_8c_source.html#l00030">30</a> of file <a class="el" href="stm32_2peripherals_2hmc5843__arch_8c_source.html">hmc5843_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2peripherals_2hmc5843__arch_8c_source.html#l00035">35</a> of file <a class="el" href="stm32_2peripherals_2hmc5843__arch_8c_source.html">hmc5843_arch.c</a>.</p>
+
+<p>References <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h_source.html#l00042">GPIO5</a>, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h_source.html#l00035">GPIOB</a>, and <a class="el" href="stm32f4__chibios__vectors_8h_source.html#l00041">NVIC_EXTI9_5_IRQ</a>.</p>
 
 </div>
 </div>
@@ -185,7 +187,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2peripherals_2hmc5843__arch_8c_source.html#l00047">47</a> of file <a class="el" href="stm32_2peripherals_2hmc5843__arch_8c_source.html">hmc5843_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2peripherals_2hmc5843__arch_8c_source.html#l00052">52</a> of file <a class="el" href="stm32_2peripherals_2hmc5843__arch_8c_source.html">hmc5843_arch.c</a>.</p>
 
 <p>Referenced by <a class="el" href="hmc5843_8c_source.html#l00103">hmc5843_periodic()</a>.</p>
 
@@ -196,7 +198,7 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2peripherals_2hmc5843__arch_8c_aea219a14b12c8fb0fe874ebde7a9a806_icgraph.png" border="0" usemap="#stm32_2peripherals_2hmc5843__arch_8c_aea219a14b12c8fb0fe874ebde7a9a806_icgraph" alt=""/></div>
 <map name="stm32_2peripherals_2hmc5843__arch_8c_aea219a14b12c8fb0fe874ebde7a9a806_icgraph" id="stm32_2peripherals_2hmc5843__arch_8c_aea219a14b12c8fb0fe874ebde7a9a806_icgraph">
-<area shape="rect" id="node3" href="hmc5843_8h.html#ab17f5e43fbd1dcadea20ede30e06568b" title="hmc5843_periodic" alt="" coords="199,30,324,58"/><area shape="rect" id="node5" href="mag__hmc5843_8h.html#a73430e5bacbce50ebd8b9acf682c82aa" title="hmc5843_module_periodic" alt="" coords="373,5,549,33"/><area shape="rect" id="node7" href="imu__crista_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="imu_periodic" alt="" coords="415,55,508,83"/></map>
+<area shape="rect" id="node3" href="hmc5843_8h.html#ab17f5e43fbd1dcadea20ede30e06568b" title="hmc5843_periodic" alt="" coords="211,30,349,58"/><area shape="rect" id="node5" href="mag__hmc5843_8h.html#a73430e5bacbce50ebd8b9acf682c82aa" title="hmc5843_module_periodic" alt="" coords="397,5,592,33"/><area shape="rect" id="node7" href="imu__crista_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="imu_periodic" alt="" coords="444,55,545,83"/></map>
 </div>
 </p>
 
@@ -208,7 +210,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_40949b6ea70303acfc197760b8c0e0ae.html">peripherals</a></li><li class="navelem"><a class="el" href="stm32_2peripherals_2hmc5843__arch_8c.html">hmc5843_arch.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:09 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:50 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

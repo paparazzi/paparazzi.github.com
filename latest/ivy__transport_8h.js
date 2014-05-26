@@ -1,6 +1,8 @@
 var ivy__transport_8h =
 [
     [ "Comma", "ivy__transport_8h.html#ab76f6d3ff670dccc6aca97241f0c53c2", null ],
+    [ "DelimEnd", "ivy__transport_8h.html#acf5b16656797a7a222b38280abb851fd", null ],
+    [ "DelimStart", "ivy__transport_8h.html#a0466b1dbdd84fc0dca98768000a3a324", null ],
     [ "IvyTransportCheckFreeSpace", "ivy__transport_8h.html#a3ce4045e992f56d4d0e1cb79fb6ad4e8", null ],
     [ "IvyTransportHeader", "ivy__transport_8h.html#a3e168a0894d626b2fd491e919a38e5a8", null ],
     [ "IvyTransportPutArray", "ivy__transport_8h.html#a00e860700cc4a6b5f7015e5206f6b2e0", null ],
@@ -47,5 +49,6 @@ var ivy__transport_8h =
     [ "IvyTransportTrailer", "ivy__transport_8h.html#a9f1e1353ce79ba21102735548dccd99c", null ],
     [ "Space", "ivy__transport_8h.html#a0385aa9a9736980a9179c99a2e9d17df", null ],
     [ "ivy_buf", "ivy__transport_8h.html#a9dcba535423f4d84f850dba1ddbe3875", null ],
+    [ "ivy_dl_enabled", "ivy__transport_8h.html#abda49d8d66f69d6c0cc80ea5d26d3c94", null ],
     [ "ivy_p", "ivy__transport_8h.html#aa4847ba385c35aeb5bc5c3222050e1c0", null ]
 ];

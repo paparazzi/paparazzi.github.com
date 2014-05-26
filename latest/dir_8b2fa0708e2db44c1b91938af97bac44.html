@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('dir_8b2fa0708e2db44c1b91938af97bac44.h
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="dir_8b2fa0708e2db44c1b91938af97bac44_dep.png" border="0" usemap="#dir__8b2fa0708e2db44c1b91938af97bac44__dep" alt="sw/airborne/subsystems/imu/"/></div>
 <map name="dir__8b2fa0708e2db44c1b91938af97bac44__dep" id="dir__8b2fa0708e2db44c1b91938af97bac44__dep">
-<area shape="rect" id="node2" href="dir_8b2fa0708e2db44c1b91938af97bac44.html" title="imu" alt="" coords="77,53,149,101"/><area shape="rect" id="node3" href="dir_0a48ba2c0a76794adfddddc873522f67.html" title="peripherals" alt="" coords="5,245,91,293"/><area shape="rect" id="edge9" href="dir_000115_000071.html" title="20" alt="" coords="51,220,65,236"/><area shape="rect" id="node4" href="dir_e030268cd18297cf6282390f76bfcf7f.html" title="boards" alt="" coords="77,149,149,197"/><area shape="rect" id="edge11" href="dir_000115_000042.html" title="2" alt="" coords="118,123,126,139"/><area shape="rect" id="node5" href="dir_1ca43f6a116d741d80fb1d0555a2b198.html" title="mcu_periph" alt="" coords="84,341,172,389"/><area shape="rect" id="edge13" href="dir_000115_000069.html" title="13" alt="" coords="146,319,160,335"/><area shape="rect" id="edge3" href="dir_000071_000069.html" title="25" alt="" coords="95,313,110,329"/><area shape="rect" id="edge5" href="dir_000042_000071.html" title="17" alt="" coords="75,227,89,243"/><area shape="rect" id="edge7" href="dir_000042_000069.html" title="21" alt="" coords="126,314,141,330"/><area shape="rect" id="graph2" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html" title="subsystems" alt="" coords="67,16,160,112"/></map>
+<area shape="rect" id="node2" href="dir_8b2fa0708e2db44c1b91938af97bac44.html" title="imu" alt="" coords="83,53,155,101"/><area shape="rect" id="node3" href="dir_0a48ba2c0a76794adfddddc873522f67.html" title="peripherals" alt="" coords="5,245,99,293"/><area shape="rect" id="edge9" href="dir_000117_000071.html" title="23" alt="" coords="54,220,71,236"/><area shape="rect" id="node4" href="dir_e030268cd18297cf6282390f76bfcf7f.html" title="boards" alt="" coords="83,149,155,197"/><area shape="rect" id="edge11" href="dir_000117_000042.html" title="2" alt="" coords="122,123,132,139"/><area shape="rect" id="node5" href="dir_1ca43f6a116d741d80fb1d0555a2b198.html" title="mcu_periph" alt="" coords="88,341,184,389"/><area shape="rect" id="edge13" href="dir_000117_000069.html" title="14" alt="" coords="152,319,169,335"/><area shape="rect" id="edge3" href="dir_000071_000069.html" title="27" alt="" coords="100,314,118,330"/><area shape="rect" id="edge5" href="dir_000042_000071.html" title="17" alt="" coords="78,227,95,243"/><area shape="rect" id="edge7" href="dir_000042_000069.html" title="21" alt="" coords="132,314,149,330"/><area shape="rect" id="graph2" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html" title="subsystems" alt="" coords="69,16,168,112"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="files"></a>
@@ -152,6 +152,10 @@ Files</h2></td></tr>
 <tr class="memdesc:imu__gl1_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for I2c IMU using using L3G4200, ADXL345, HMC5883 and BMP085. <br/></td></tr>
 <tr class="memitem:imu__gl1__defaults_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__gl1__defaults_8h.html">imu_gl1_defaults.h</a> <a href="imu__gl1__defaults_8h_source.html">[code]</a></td></tr>
 <tr class="memdesc:imu__gl1__defaults_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default sensitivity definitions for IMU GL1. <br/></td></tr>
+<tr class="memitem:imu__mpu6000__hmc5883_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu6000__hmc5883_8c.html">imu_mpu6000_hmc5883.c</a> <a href="imu__mpu6000__hmc5883_8c_source.html">[code]</a></td></tr>
+<tr class="memdesc:imu__mpu6000__hmc5883_8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Driver for IMU with MPU6000 via SPI and HMC5883 via I2c. <br/></td></tr>
+<tr class="memitem:imu__mpu6000__hmc5883_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu6000__hmc5883_8h.html">imu_mpu6000_hmc5883.h</a> <a href="imu__mpu6000__hmc5883_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:imu__mpu6000__hmc5883_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Driver for IMU with MPU6000 via SPI and HMC5883 via I2c. <br/></td></tr>
 <tr class="memitem:imu__mpu60x0__defaults_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu60x0__defaults_8h.html">imu_mpu60x0_defaults.h</a> <a href="imu__mpu60x0__defaults_8h_source.html">[code]</a></td></tr>
 <tr class="memdesc:imu__mpu60x0__defaults_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default sensitivity definitions for an IMU using the MPU60x0. <br/></td></tr>
 <tr class="memitem:imu__nps_8c"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__nps_8c.html">imu_nps.c</a> <a href="imu__nps_8c_source.html">[code]</a></td></tr>
@@ -174,7 +178,7 @@ Files</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8b2fa0708e2db44c1b91938af97bac44.html">imu</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:12 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:16 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

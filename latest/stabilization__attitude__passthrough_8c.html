@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -114,7 +114,8 @@ $(document).ready(function(){initNavTree('stabilization__attitude__passthrough_8
 
 <p>passthrough attitude stabilization  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="stabilization_8h_source.html">firmwares/rotorcraft/stabilization.h</a>&quot;</code><br/>
+<div class="textblock"><code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="stabilization_8h_source.html">firmwares/rotorcraft/stabilization.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="stabilization__attitude__rc__setpoint_8h_source.html">firmwares/rotorcraft/stabilization/stabilization_attitude_rc_setpoint.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="paparazzi_8h_source.html">paparazzi.h</a>&quot;</code><br/>
 <code>#include &quot;generated/airframe.h&quot;</code><br/>
@@ -125,7 +126,7 @@ $(document).ready(function(){initNavTree('stabilization__attitude__passthrough_8
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__passthrough_8c__incl.png" border="0" usemap="#sw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__attitude__passthrough_8c" alt=""/></div>
 <map name="sw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__attitude__passthrough_8c" id="sw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__attitude__passthrough_8c">
-<area shape="rect" id="node3" href="stabilization_8h.html" title="General stabilization interface for rotorcrafts." alt="" coords="1188,241,1321,285"/><area shape="rect" id="node34" href="stabilization__attitude__rc__setpoint_8h.html" title="Read an attitude setpoint from the RC." alt="" coords="511,131,676,191"/><area shape="rect" id="node50" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="5,350,91,378"/><area shape="rect" id="node9" href="stabilization__none_8h.html" title="Dummy stabilization for rotorcrafts." alt="" coords="1336,334,1501,394"/><area shape="rect" id="node27" href="stabilization__rate_8h.html" title="Rate stabilization for rotorcrafts." alt="" coords="989,334,1155,394"/><area shape="rect" id="node30" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html" title="General attitude stabilization interface for rotorcrafts." alt="" coords="1791,334,1956,394"/><area shape="rect" id="node11" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="1017,451,1175,479"/><area shape="rect" id="node14" href="pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="804,537,943,565"/><area shape="rect" id="node21" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="1029,537,1163,565"/><area shape="rect" id="node39" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="667,451,835,479"/><area shape="rect" id="node45" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="257,249,436,277"/><area shape="rect" id="node56" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="939,249,1000,277"/><area shape="rect" id="node47" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API" alt="" coords="331,350,379,378"/><area shape="rect" id="node52" href="inttypes_8h.html" title="inttypes.h" alt="" coords="9,451,87,479"/><area shape="rect" id="node60" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="1525,342,1659,386"/><area shape="rect" id="node66" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="1179,342,1312,386"/><area shape="rect" id="node71" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversion." alt="" coords="717,342,864,386"/><area shape="rect" id="node62" href="pprz__geodetic_8h.html" title="pprz_geodetic.h" alt="" coords="1391,451,1503,479"/></map>
+<area shape="rect" id="node3" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="541,249,608,277"/><area shape="rect" id="node46" href="stabilization_8h.html" title="General stabilization interface for rotorcrafts." alt="" coords="1177,241,1324,285"/><area shape="rect" id="node61" href="stabilization__attitude__rc__setpoint_8h.html" title="Read an attitude setpoint from the RC." alt="" coords="742,131,924,191"/><area shape="rect" id="node74" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="2006,350,2102,378"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="662,451,841,479"/><area shape="rect" id="node22" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="24,451,213,479"/><area shape="rect" id="node28" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="500,342,649,386"/><area shape="rect" id="node34" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="140,342,289,386"/><area shape="rect" id="node39" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversion." alt="" coords="313,342,476,386"/><area shape="rect" id="node9" href="pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="165,537,320,565"/><area shape="rect" id="node16" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="804,537,953,565"/><area shape="rect" id="node30" href="pprz__geodetic_8h.html" title="pprz_geodetic.h" alt="" coords="364,451,486,479"/><area shape="rect" id="node51" href="stabilization__none_8h.html" title="Dummy stabilization for rotorcrafts." alt="" coords="1057,334,1238,394"/><area shape="rect" id="node54" href="stabilization__rate_8h.html" title="Rate stabilization for rotorcrafts." alt="" coords="1262,334,1444,394"/><area shape="rect" id="node57" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html" title="General attitude stabilization interface for rotorcrafts." alt="" coords="1518,334,1700,394"/><area shape="rect" id="node67" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="1716,249,1913,277"/><area shape="rect" id="node69" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API" alt="" coords="1929,350,1982,378"/><area shape="rect" id="node76" href="inttypes_8h.html" title="inttypes.h" alt="" coords="2014,451,2100,479"/></map>
 </div>
 </div>
 <p><a href="stabilization__attitude__passthrough_8c_source.html">Go to the source code of this file.</a></p>
@@ -137,11 +138,12 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a03d27593d891182c04fc5337766733d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__attitude__passthrough_8c.html#a03d27593d891182c04fc5337766733d1">stabilization_attitude_init</a> (void)</td></tr>
-<tr class="memitem:a147b1b8bfdde52f82d0829ce748bf1e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__attitude__passthrough_8c.html#a147b1b8bfdde52f82d0829ce748bf1e9">stabilization_attitude_read_rc</a> (bool_t in_flight)</td></tr>
+<tr class="memitem:add34cd878dfdd9fd4d0912a06fbc58bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__attitude__passthrough_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc">stabilization_attitude_read_rc</a> (bool_t in_flight, bool_t in_carefree, bool_t coordinated_turn)</td></tr>
 <tr class="memitem:a23f862ca823e6fd23fc9c111178be077"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__attitude__passthrough_8c.html#a23f862ca823e6fd23fc9c111178be077">stabilization_attitude_enter</a> (void)</td></tr>
 <tr class="memitem:afb59ecc3049842f940a46a81698b79e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__attitude__passthrough_8c.html#afb59ecc3049842f940a46a81698b79e9">stabilization_attitude_run</a> (bool_t in_flight)</td></tr>
 <tr class="memitem:a5a2d8d3947ba9cdc571cea5778c93f4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__attitude__passthrough_8c.html#a5a2d8d3947ba9cdc571cea5778c93f4a">stabilization_attitude_set_failsafe_setpoint</a> (void)</td></tr>
-<tr class="memitem:ae6c5d52435f66ed34183162d597c4fc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__attitude__passthrough_8c.html#ae6c5d52435f66ed34183162d597c4fc4">stabilization_attitude_set_cmd_i</a> (struct <a class="el" href="structInt32Eulers.html">Int32Eulers</a> *sp_cmd)</td></tr>
+<tr class="memitem:ac064607f64988793cadfe5ed346b269f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__attitude__passthrough_8c.html#ac064607f64988793cadfe5ed346b269f">stabilization_attitude_set_rpy_setpoint_i</a> (struct <a class="el" href="structInt32Eulers.html">Int32Eulers</a> *rpy)</td></tr>
+<tr class="memitem:ada3ef183c206d08fd0a902adc118f542"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__attitude__passthrough_8c.html#ada3ef183c206d08fd0a902adc118f542">stabilization_attitude_set_earth_cmd_i</a> (struct <a class="el" href="structInt32Vect2.html">Int32Vect2</a> *cmd, <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="el" href="ahrs__infrared_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a>)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -164,9 +166,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00037">37</a> of file <a class="el" href="stabilization__attitude__passthrough_8c_source.html">stabilization_attitude_passthrough.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00038">38</a> of file <a class="el" href="stabilization__attitude__passthrough_8c_source.html">stabilization_attitude_passthrough.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00057">stabilization_attitude_run()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00056">stabilization_attitude_run()</a>.</p>
 
 </div>
 </div>
@@ -185,7 +187,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00053">53</a> of file <a class="el" href="stabilization__attitude__passthrough_8c_source.html">stabilization_attitude_passthrough.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00052">52</a> of file <a class="el" href="stabilization__attitude__passthrough_8c_source.html">stabilization_attitude_passthrough.c</a>.</p>
 
 </div>
 </div>
@@ -203,13 +205,13 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00042">42</a> of file <a class="el" href="stabilization__attitude__passthrough_8c_source.html">stabilization_attitude_passthrough.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00043">43</a> of file <a class="el" href="stabilization__attitude__passthrough_8c_source.html">stabilization_attitude_passthrough.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00778">INT_EULERS_ZERO</a>, and <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00039">stab_att_sp_euler</a>.</p>
+<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00778">INT_EULERS_ZERO</a>, and <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00040">stab_att_sp_euler</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a147b1b8bfdde52f82d0829ce748bf1e9"></a>
+<a class="anchor" id="add34cd878dfdd9fd4d0912a06fbc58bc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -217,24 +219,40 @@ Variables</h2></td></tr>
           <td class="memname">void stabilization_attitude_read_rc </td>
           <td>(</td>
           <td class="paramtype">bool_t&#160;</td>
-          <td class="paramname"><em>in_flight</em></td><td>)</td>
+          <td class="paramname"><em>in_flight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool_t&#160;</td>
+          <td class="paramname"><em>in_carefree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool_t&#160;</td>
+          <td class="paramname"><em>coordinated_turn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00047">47</a> of file <a class="el" href="stabilization__attitude__passthrough_8c_source.html">stabilization_attitude_passthrough.c</a>.</p>
 
-<p>References <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00039">stab_att_sp_euler</a>, and <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00086">stabilization_attitude_read_rc_setpoint_eulers()</a>.</p>
+<p>References <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00040">stab_att_sp_euler</a>, and <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00088">stabilization_attitude_read_rc_setpoint_eulers()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="stabilization__attitude__passthrough_8c_a147b1b8bfdde52f82d0829ce748bf1e9_cgraph.png" border="0" usemap="#stabilization__attitude__passthrough_8c_a147b1b8bfdde52f82d0829ce748bf1e9_cgraph" alt=""/></div>
-<map name="stabilization__attitude__passthrough_8c_a147b1b8bfdde52f82d0829ce748bf1e9_cgraph" id="stabilization__attitude__passthrough_8c_a147b1b8bfdde52f82d0829ce748bf1e9_cgraph">
-<area shape="rect" id="node3" href="stabilization__attitude__rc__setpoint_8c.html#a0722fad1f388d7a2f210cbf08a4d2913" title="Read attitude setpoint from RC as euler angles." alt="" coords="196,34,361,78"/><area shape="rect" id="node5" href="stabilization__attitude__rc__setpoint_8c.html#a1270210b635f040b5bdd7d974f29c71f" title="stabilization_attitude\l_get_heading_i" alt="" coords="412,5,551,49"/><area shape="rect" id="node7" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int)." alt="" coords="600,42,787,70"/><area shape="rect" id="node9" href="group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int)." alt="" coords="835,42,984,70"/><area shape="rect" id="node11" href="group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title="orientationCalcEulers_i" alt="" coords="1032,42,1187,70"/></map>
+<div class="center"><img src="stabilization__attitude__passthrough_8c_add34cd878dfdd9fd4d0912a06fbc58bc_cgraph.png" border="0" usemap="#stabilization__attitude__passthrough_8c_add34cd878dfdd9fd4d0912a06fbc58bc_cgraph" alt=""/></div>
+<map name="stabilization__attitude__passthrough_8c_add34cd878dfdd9fd4d0912a06fbc58bc_cgraph" id="stabilization__attitude__passthrough_8c_add34cd878dfdd9fd4d0912a06fbc58bc_cgraph">
+<area shape="rect" id="node3" href="stabilization__attitude__rc__setpoint_8c.html#a60929bf25f6bd542fd13629fc452c1b6" title="Read attitude setpoint from RC as euler angles." alt="" coords="209,34,391,78"/><area shape="rect" id="node5" href="stabilization__attitude__rc__setpoint_8c.html#a1270210b635f040b5bdd7d974f29c71f" title="stabilization_attitude\l_get_heading_i" alt="" coords="440,5,595,49"/><area shape="rect" id="node7" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int)." alt="" coords="644,42,841,70"/><area shape="rect" id="node9" href="group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int)." alt="" coords="891,42,1053,70"/><area shape="rect" id="node11" href="group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title="orientationCalcEulers_i" alt="" coords="1103,42,1268,70"/></map>
 </div>
 </p>
 
@@ -254,9 +272,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00057">57</a> of file <a class="el" href="stabilization__attitude__passthrough_8c_source.html">stabilization_attitude_passthrough.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00056">56</a> of file <a class="el" href="stabilization__attitude__passthrough_8c_source.html">stabilization_attitude_passthrough.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00122">INT32_ANGLE_NORMALIZE</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00143">Int32Eulers::phi</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00145">Int32Eulers::psi</a>, <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00039">stab_att_sp_euler</a>, <a class="el" href="stabilization_8c_source.html#l00028">stabilization_cmd</a>, <a class="el" href="state_8h_source.html#l01012">stateGetNedToBodyEulers_i()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00144">Int32Eulers::theta</a>, and <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00037">TRAJ_MAX_BANK</a>.</p>
+<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00122">INT32_ANGLE_NORMALIZE</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00143">Int32Eulers::phi</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00145">Int32Eulers::psi</a>, <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00040">stab_att_sp_euler</a>, <a class="el" href="stabilization_8c_source.html#l00028">stabilization_cmd</a>, <a class="el" href="state_8h_source.html#l01012">stateGetNedToBodyEulers_i()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00144">Int32Eulers::theta</a>, and <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00038">TRAJ_MAX_BANK</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -265,29 +283,50 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__passthrough_8c_afb59ecc3049842f940a46a81698b79e9_cgraph.png" border="0" usemap="#stabilization__attitude__passthrough_8c_afb59ecc3049842f940a46a81698b79e9_cgraph" alt=""/></div>
 <map name="stabilization__attitude__passthrough_8c_afb59ecc3049842f940a46a81698b79e9_cgraph" id="stabilization__attitude__passthrough_8c_afb59ecc3049842f940a46a81698b79e9_cgraph">
-<area shape="rect" id="node3" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int)." alt="" coords="219,5,405,33"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int)." alt="" coords="453,5,603,33"/><area shape="rect" id="node7" href="group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title="orientationCalcEulers_i" alt="" coords="651,5,805,33"/></map>
+<area shape="rect" id="node3" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int)." alt="" coords="239,5,436,33"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int)." alt="" coords="485,5,648,33"/><area shape="rect" id="node7" href="group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title="orientationCalcEulers_i" alt="" coords="697,5,863,33"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="ae6c5d52435f66ed34183162d597c4fc4"></a>
+<a class="anchor" id="ada3ef183c206d08fd0a902adc118f542"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void stabilization_attitude_set_cmd_i </td>
+          <td class="memname">void stabilization_attitude_set_earth_cmd_i </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structInt32Eulers.html">Int32Eulers</a> *&#160;</td>
-          <td class="paramname"><em>sp_cmd</em></td><td>)</td>
+          <td class="paramtype">struct <a class="el" href="structInt32Vect2.html">Int32Vect2</a> *&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td>
+          <td class="paramname"><em>heading</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00081">81</a> of file <a class="el" href="stabilization__attitude__passthrough_8c_source.html">stabilization_attitude_passthrough.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00084">84</a> of file <a class="el" href="stabilization__attitude__passthrough_8c_source.html">stabilization_attitude_passthrough.c</a>.</p>
 
-<p>References <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00039">stab_att_sp_euler</a>.</p>
+<p>References <a class="el" href="ahrs__infrared_8c_source.html#l00040">heading</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00150">INT32_TRIG_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00143">Int32Eulers::phi</a>, <a class="el" href="pprz__trig__int_8h_source.html#l00050">PPRZ_ITRIG_COS</a>, <a class="el" href="pprz__trig__int_8h_source.html#l00040">PPRZ_ITRIG_SIN</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00145">Int32Eulers::psi</a>, <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00040">stab_att_sp_euler</a>, <a class="el" href="state_8h_source.html#l01012">stateGetNedToBodyEulers_i()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00144">Int32Eulers::theta</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00080">Int32Vect2::x</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00081">Int32Vect2::y</a>.</p>
+
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="stabilization__attitude__passthrough_8c_ada3ef183c206d08fd0a902adc118f542_cgraph.png" border="0" usemap="#stabilization__attitude__passthrough_8c_ada3ef183c206d08fd0a902adc118f542_cgraph" alt=""/></div>
+<map name="stabilization__attitude__passthrough_8c_ada3ef183c206d08fd0a902adc118f542_cgraph" id="stabilization__attitude__passthrough_8c_ada3ef183c206d08fd0a902adc118f542_cgraph">
+<area shape="rect" id="node3" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int)." alt="" coords="209,13,407,41"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int)." alt="" coords="456,13,619,41"/><area shape="rect" id="node7" href="group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title="orientationCalcEulers_i" alt="" coords="668,13,833,41"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -305,20 +344,40 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00075">75</a> of file <a class="el" href="stabilization__attitude__passthrough_8c_source.html">stabilization_attitude_passthrough.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00074">74</a> of file <a class="el" href="stabilization__attitude__passthrough_8c_source.html">stabilization_attitude_passthrough.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00143">Int32Eulers::phi</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00145">Int32Eulers::psi</a>, <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00039">stab_att_sp_euler</a>, <a class="el" href="state_8h_source.html#l01012">stateGetNedToBodyEulers_i()</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00144">Int32Eulers::theta</a>.</p>
+<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00143">Int32Eulers::phi</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00145">Int32Eulers::psi</a>, <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00040">stab_att_sp_euler</a>, <a class="el" href="state_8h_source.html#l01012">stateGetNedToBodyEulers_i()</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00144">Int32Eulers::theta</a>.</p>
 
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__passthrough_8c_a5a2d8d3947ba9cdc571cea5778c93f4a_cgraph.png" border="0" usemap="#stabilization__attitude__passthrough_8c_a5a2d8d3947ba9cdc571cea5778c93f4a_cgraph" alt=""/></div>
 <map name="stabilization__attitude__passthrough_8c_a5a2d8d3947ba9cdc571cea5778c93f4a_cgraph" id="stabilization__attitude__passthrough_8c_a5a2d8d3947ba9cdc571cea5778c93f4a_cgraph">
-<area shape="rect" id="node3" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int)." alt="" coords="203,13,389,41"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int)." alt="" coords="437,13,587,41"/><area shape="rect" id="node7" href="group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title="orientationCalcEulers_i" alt="" coords="635,13,789,41"/></map>
+<area shape="rect" id="node3" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int)." alt="" coords="215,13,412,41"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int)." alt="" coords="461,13,624,41"/><area shape="rect" id="node7" href="group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title="orientationCalcEulers_i" alt="" coords="673,13,839,41"/></map>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="ac064607f64988793cadfe5ed346b269f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stabilization_attitude_set_rpy_setpoint_i </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structInt32Eulers.html">Int32Eulers</a> *&#160;</td>
+          <td class="paramname"><em>rpy</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00080">80</a> of file <a class="el" href="stabilization__attitude__passthrough_8c_source.html">stabilization_attitude_passthrough.c</a>.</p>
+
+<p>References <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00040">stab_att_sp_euler</a>.</p>
 
 </div>
 </div>
@@ -335,9 +394,9 @@ Variables</h2></td></tr>
 
 <p>with <a class="el" href="pprz__algebra__int_8h.html#aa44eb0f6e2852cfa82eadb3fa158a5e8">INT32_ANGLE_FRAC</a> </p>
 
-<p>Definition at line <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00039">39</a> of file <a class="el" href="stabilization__attitude__passthrough_8c_source.html">stabilization_attitude_passthrough.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00040">40</a> of file <a class="el" href="stabilization__attitude__passthrough_8c_source.html">stabilization_attitude_passthrough.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__attitude__euler__int_8c_source.html#l00051">reset_psi_ref_from_body()</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00121">stabilization_attitude_enter()</a>, <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00042">stabilization_attitude_init()</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00116">stabilization_attitude_read_rc()</a>, <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00310">stabilization_attitude_read_rc_setpoint_quat_earth_bound_f()</a>, <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00257">stabilization_attitude_read_rc_setpoint_quat_f()</a>, <a class="el" href="stabilization__attitude__ref__euler__float_8c_source.html#l00010">stabilization_attitude_ref_init()</a>, <a class="el" href="stabilization__attitude__ref__euler__float_8c_source.html#l00056">stabilization_attitude_ref_update()</a>, <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00057">stabilization_attitude_run()</a>, <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00081">stabilization_attitude_set_cmd_i()</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00141">stabilization_attitude_set_earth_cmd_i()</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00131">stabilization_attitude_set_failsafe_setpoint()</a>, and <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00137">stabilization_attitude_set_rpy_setpoint_i()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__attitude__euler__int_8c_source.html#l00051">reset_psi_ref_from_body()</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00119">stabilization_attitude_enter()</a>, <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00043">stabilization_attitude_init()</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00115">stabilization_attitude_read_rc()</a>, <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00319">stabilization_attitude_read_rc_setpoint_quat_earth_bound_f()</a>, <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00266">stabilization_attitude_read_rc_setpoint_quat_f()</a>, <a class="el" href="stabilization__attitude__ref__euler__float_8c_source.html#l00010">stabilization_attitude_ref_init()</a>, <a class="el" href="stabilization__attitude__ref__euler__float_8c_source.html#l00056">stabilization_attitude_ref_update()</a>, <a class="el" href="stabilization__attitude__passthrough_8c_source.html#l00056">stabilization_attitude_run()</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00139">stabilization_attitude_set_earth_cmd_i()</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00129">stabilization_attitude_set_failsafe_setpoint()</a>, and <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00135">stabilization_attitude_set_rpy_setpoint_i()</a>.</p>
 
 </div>
 </div>
@@ -347,7 +406,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_d1b81cc433edb6118e3c3e3bc7700be0.html">stabilization</a></li><li class="navelem"><a class="el" href="stabilization__attitude__passthrough_8c.html">stabilization_attitude_passthrough.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:10 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:55 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

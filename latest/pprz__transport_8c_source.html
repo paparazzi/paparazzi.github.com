@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -130,19 +130,22 @@ $(document).ready(function(){initNavTree('pprz__transport_8c_source.html','');})
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="inttypes_8h.html">inttypes.h</a>&gt;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pprz__transport_8h.html" title="Extra datalink using PPRZ protocol.">subsystems/datalink/pprz_transport.h</a>&quot;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API">mcu_periph/uart.h</a>&quot;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="pprz__transport_8c.html#aaef6f57fdac39726811fd081a16fa711">   27</a></span>&#160;<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="audio__telemetry__hw_8c.html#a51ab444129c13f6f6f44765945b7c1f7">ck_a</a>, <a class="code" href="audio__telemetry__hw_8c.html#aaef6f57fdac39726811fd081a16fa711">ck_b</a>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="pprz__transport_8h.html#ac7d185dc6518d6eabe7cab132f9b8cda">   29</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structpprz__transport.html">pprz_transport</a> <a class="code" href="pprz__transport_8c.html#ac7d185dc6518d6eabe7cab132f9b8cda">pprz_tp</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#ifndef PPRZ_DATALINK_EXPORT</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="pprz__transport_8h.html" title="Extra datalink using PPRZ protocol.">subsystems/datalink/pprz_transport.h</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#else </span><span class="comment">/* PPRZ_DATALINK_EXPORT defined */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="pprz__transport_8h.html" title="Extra datalink using PPRZ protocol.">pprz_transport.h</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="pprz__transport_8c.html#aaef6f57fdac39726811fd081a16fa711">   30</a></span>&#160;<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="audio__telemetry__hw_8c.html#a51ab444129c13f6f6f44765945b7c1f7">ck_a</a>, <a class="code" href="audio__telemetry__hw_8c.html#aaef6f57fdac39726811fd081a16fa711">ck_b</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="pprz__transport_8h.html#ac7d185dc6518d6eabe7cab132f9b8cda">   32</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structpprz__transport.html">pprz_transport</a> <a class="code" href="pprz__transport_8c.html#ac7d185dc6518d6eabe7cab132f9b8cda">pprz_tp</a>;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_6567a5a7be991f15b7628b3b0eb084bd.html">datalink</a></li><li class="navelem"><a class="el" href="pprz__transport_8c.html">pprz_transport.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:45 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

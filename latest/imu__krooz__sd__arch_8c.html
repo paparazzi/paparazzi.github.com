@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -110,10 +110,10 @@ $(document).ready(function(){initNavTree('imu__krooz__sd__arch_8c.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="imu_8h_source.html">subsystems/imu.h</a>&quot;</code><br/>
-<code>#include &lt;libopencm3/stm32/f4/rcc.h&gt;</code><br/>
-<code>#include &lt;libopencm3/stm32/f4/gpio.h&gt;</code><br/>
-<code>#include &lt;libopencm3/stm32/f4/nvic.h&gt;</code><br/>
+<code>#include &lt;libopencm3/stm32/rcc.h&gt;</code><br/>
+<code>#include &lt;libopencm3/stm32/gpio.h&gt;</code><br/>
 <code>#include &lt;libopencm3/stm32/exti.h&gt;</code><br/>
+<code>#include &lt;libopencm3/cm3/nvic.h&gt;</code><br/>
 <code>#include &quot;<a class="el" href="imu__krooz__sd__arch_8h_source.html">subsystems/imu/imu_krooz_sd_arch.h</a>&quot;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for imu_krooz_sd_arch.c:</div>
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('imu__krooz__sd__arch_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__krooz__sd__arch_8c__incl.png" border="0" usemap="#sw_2airborne_2arch_2stm32_2subsystems_2imu_2imu__krooz__sd__arch_8c" alt=""/></div>
 <map name="sw_2airborne_2arch_2stm32_2subsystems_2imu_2imu__krooz__sd__arch_8c" id="sw_2airborne_2arch_2stm32_2subsystems_2imu_2imu__krooz__sd__arch_8c">
-<area shape="rect" id="node3" href="imu_8h.html" title="Inertial Measurement Unit interface." alt="" coords="328,209,453,237"/><area shape="rect" id="node38" href="imu__krooz__sd__arch_8h.html" title="subsystems/imu/imu\l_krooz_sd_arch.h" alt="" coords="716,115,857,159"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="96,286,253,314"/><area shape="rect" id="node22" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="306,286,474,314"/><area shape="rect" id="node9" href="pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="276,363,414,391"/><area shape="rect" id="node16" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="33,363,166,391"/></map>
+<area shape="rect" id="node3" href="imu_8h.html" title="Inertial Measurement Unit interface." alt="" coords="379,209,518,237"/><area shape="rect" id="node38" href="imu__krooz__sd__arch_8h.html" title="subsystems/imu/imu\l_krooz_sd_arch.h" alt="" coords="830,115,984,159"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="122,286,300,314"/><area shape="rect" id="node22" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="354,286,543,314"/><area shape="rect" id="node9" href="pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="320,363,475,391"/><area shape="rect" id="node16" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="56,363,206,391"/></map>
 </div>
 </div>
 <p><a href="imu__krooz__sd__arch_8c_source.html">Go to the source code of this file.</a></p>
@@ -169,6 +169,8 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="imu__krooz__sd__arch_8c_source.html#l00010">10</a> of file <a class="el" href="imu__krooz__sd__arch_8c_source.html">imu_krooz_sd_arch.c</a>.</p>
 
+<p>References <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h_source.html#l00042">GPIO5</a>, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h_source.html#l00043">GPIO6</a>, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h_source.html#l00035">GPIOB</a>, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h_source.html#l00034">GPIOC</a>, and <a class="el" href="stm32f4__chibios__vectors_8h_source.html#l00041">NVIC_EXTI9_5_IRQ</a>.</p>
+
 <p>Referenced by <a class="el" href="imu__krooz_8c_source.html#l00067">imu_impl_init()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -178,7 +180,7 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__krooz__sd__arch_8c_afc6a4e2ad9c3c6c70b829f71d3cf3b79_icgraph.png" border="0" usemap="#imu__krooz__sd__arch_8c_afc6a4e2ad9c3c6c70b829f71d3cf3b79_icgraph" alt=""/></div>
 <map name="imu__krooz__sd__arch_8c_afc6a4e2ad9c3c6c70b829f71d3cf3b79_icgraph" id="imu__krooz__sd__arch_8c_afc6a4e2ad9c3c6c70b829f71d3cf3b79_icgraph">
-<area shape="rect" id="node3" href="imu__krooz_8c.html#ad32faae58e391642ec8048cb11011998" title="imu_impl_init" alt="" coords="213,5,312,33"/></map>
+<area shape="rect" id="node3" href="imu__krooz_8c.html#ad32faae58e391642ec8048cb11011998" title="imu_impl_init" alt="" coords="224,5,331,33"/></map>
 </div>
 </p>
 
@@ -190,7 +192,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_71548ae744da26ac2c7ca213b679dc43.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_2ac6ff96257b3d96ab38d195787bdd5e.html">imu</a></li><li class="navelem"><a class="el" href="imu__krooz__sd__arch_8c.html">imu_krooz_sd_arch.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:09 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:50 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('atmega__i2c__cam__ctrl_8c_source.html'
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="atmega__i2c__cam__ctrl_8c.html#ad7c06f4d1c398ba41252eb2e7ecd1a85">atmega_i2c_cam_ctrl_send</a>(cmd);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="atmega__i2c__cam__ctrl_8c.html#ac18b747eea3fe6799a13cc8c84343749">   46</a></span>&#160;<span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="structi2c__transaction.html">i2c_transaction</a> <a class="code" href="atmega__i2c__cam__ctrl_8c.html#ac18b747eea3fe6799a13cc8c84343749">atmega_i2c_cam_ctrl_trans</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="atmega__i2c__cam__ctrl_8c.html#ac18b747eea3fe6799a13cc8c84343749">   46</a></span>&#160;<span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="structi2c__transaction.html" title="I2C transaction structure.">i2c_transaction</a> <a class="code" href="atmega__i2c__cam__ctrl_8c.html#ac18b747eea3fe6799a13cc8c84343749">atmega_i2c_cam_ctrl_trans</a>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#ifndef ATMEGA_I2C_DEV</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="atmega__i2c__cam__ctrl_8c.html#a78a9cddd181967e5412f27b15ee55770">   49</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ATMEGA_I2C_DEV i2c0</span></div>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('atmega__i2c__cam__ctrl_8c_source.html'
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="atmega__i2c__cam__ctrl_8h.html#a9aa5dbe7af9ddeb4f68c6bd2f0c7cf1e">   59</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="atmega__i2c__cam__ctrl_8c.html#a9aa5dbe7af9ddeb4f68c6bd2f0c7cf1e">atmega_i2c_cam_ctrl_init</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="atmega__i2c__cam__ctrl_8c.html#ac18b747eea3fe6799a13cc8c84343749">atmega_i2c_cam_ctrl_trans</a>.<a class="code" href="structi2c__transaction.html#ac4f80563bab524eee997c5c27ef570a4">status</a> = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace">I2CTransDone</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="atmega__i2c__cam__ctrl_8c.html#ac18b747eea3fe6799a13cc8c84343749">atmega_i2c_cam_ctrl_trans</a>.<a class="code" href="structi2c__transaction.html#ac4f80563bab524eee997c5c27ef570a4" title="Transaction status.">status</a> = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace" title="transaction set to done by user level">I2CTransDone</a>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="dc_8h.html#a024994912e1ec2619c456fe23f7009a6">dc_init</a>();</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
@@ -183,8 +183,8 @@ $(document).ready(function(){initNavTree('atmega__i2c__cam__ctrl_8c_source.html'
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="atmega__i2c__cam__ctrl_8c.html#a0e6be21afeddec942e18532618a95b6f">atmega_i2c_cam_ctrl_just_sent_command</a> = 1;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="comment">// Send Command</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="atmega__i2c__cam__ctrl_8c.html#ac18b747eea3fe6799a13cc8c84343749">atmega_i2c_cam_ctrl_trans</a>.<a class="code" href="structi2c__transaction.html#a295b2671835ae06b28905433cd1096ee">buf</a>[0] = cmd;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="group__i2c.html#gae029fe6bf43eaf9e46428fec7e7b91c7">i2c_transceive</a>(&amp;<a class="code" href="atmega__i2c__cam__ctrl_8c.html#a78a9cddd181967e5412f27b15ee55770">ATMEGA_I2C_DEV</a>, &amp;<a class="code" href="atmega__i2c__cam__ctrl_8c.html#ac18b747eea3fe6799a13cc8c84343749">atmega_i2c_cam_ctrl_trans</a>, <a class="code" href="atmega__i2c__cam__ctrl_8c.html#a9517bc579c68c98134db7068982b765a">ATMEGA_SLAVE_ADDR</a>, 1, 1);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="atmega__i2c__cam__ctrl_8c.html#ac18b747eea3fe6799a13cc8c84343749">atmega_i2c_cam_ctrl_trans</a>.<a class="code" href="structi2c__transaction.html#a295b2671835ae06b28905433cd1096ee" title="Transaction buffer With I2C_BUF_LEN number of bytes.">buf</a>[0] = cmd;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="group__i2c.html#gae029fe6bf43eaf9e46428fec7e7b91c7" title="Submit a write/read transaction.">i2c_transceive</a>(&amp;<a class="code" href="atmega__i2c__cam__ctrl_8c.html#a78a9cddd181967e5412f27b15ee55770">ATMEGA_I2C_DEV</a>, &amp;<a class="code" href="atmega__i2c__cam__ctrl_8c.html#ac18b747eea3fe6799a13cc8c84343749">atmega_i2c_cam_ctrl_trans</a>, <a class="code" href="atmega__i2c__cam__ctrl_8c.html#a9517bc579c68c98134db7068982b765a">ATMEGA_SLAVE_ADDR</a>, 1, 1);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordflow">if</span> (cmd == <a class="code" href="dc_8h.html#a5bcad6137b0e9f54ae973b52e8a94d34a8680b60f2e92d2e261a7e44e21b9c9c2">DC_SHOOT</a>)</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  {</div>
@@ -194,12 +194,12 @@ $(document).ready(function(){initNavTree('atmega__i2c__cam__ctrl_8c_source.html'
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
 <div class="line"><a name="l00093"></a><span class="lineno"><a class="code" href="atmega__i2c__cam__ctrl_8h.html#a623f6c883be11330b494fec437a3787b">   93</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="atmega__i2c__cam__ctrl_8c.html#a623f6c883be11330b494fec437a3787b">atmega_i2c_cam_ctrl_event</a>( <span class="keywordtype">void</span> )</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="atmega__i2c__cam__ctrl_8c.html#ac18b747eea3fe6799a13cc8c84343749">atmega_i2c_cam_ctrl_trans</a>.<a class="code" href="structi2c__transaction.html#ac4f80563bab524eee997c5c27ef570a4">status</a> == <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a>)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="atmega__i2c__cam__ctrl_8c.html#ac18b747eea3fe6799a13cc8c84343749">atmega_i2c_cam_ctrl_trans</a>.<a class="code" href="structi2c__transaction.html#ac4f80563bab524eee997c5c27ef570a4" title="Transaction status.">status</a> == <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b" title="transaction successfully finished by I2C driver">I2CTransSuccess</a>)</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  {</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> cam_ret[1];</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    cam_ret[0] = <a class="code" href="atmega__i2c__cam__ctrl_8c.html#ac18b747eea3fe6799a13cc8c84343749">atmega_i2c_cam_ctrl_trans</a>.<a class="code" href="structi2c__transaction.html#a295b2671835ae06b28905433cd1096ee">buf</a>[0];</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    cam_ret[0] = <a class="code" href="atmega__i2c__cam__ctrl_8c.html#ac18b747eea3fe6799a13cc8c84343749">atmega_i2c_cam_ctrl_trans</a>.<a class="code" href="structi2c__transaction.html#a295b2671835ae06b28905433cd1096ee" title="Transaction buffer With I2C_BUF_LEN number of bytes.">buf</a>[0];</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    RunOnceEvery(6,DOWNLINK_SEND_PAYLOAD(<a class="code" href="downlink_8h.html#a891b19a3eba08208d4e550aa6c6188dd" title="SITL.">DefaultChannel</a>, <a class="code" href="downlink_8h.html#a028b405f95cecb4af565b17c8ee71d80">DefaultDevice</a>, 1, cam_ret ));</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="atmega__i2c__cam__ctrl_8c.html#ac18b747eea3fe6799a13cc8c84343749">atmega_i2c_cam_ctrl_trans</a>.<a class="code" href="structi2c__transaction.html#ac4f80563bab524eee997c5c27ef570a4">status</a> = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace">I2CTransDone</a>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="atmega__i2c__cam__ctrl_8c.html#ac18b747eea3fe6799a13cc8c84343749">atmega_i2c_cam_ctrl_trans</a>.<a class="code" href="structi2c__transaction.html#ac4f80563bab524eee997c5c27ef570a4" title="Transaction status.">status</a> = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace" title="transaction set to done by user level">I2CTransDone</a>;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  }</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
@@ -208,7 +208,7 @@ $(document).ready(function(){initNavTree('atmega__i2c__cam__ctrl_8c_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_9cd42eb44f1e76fa7c8c7cd9c9a53863.html">digital_cam</a></li><li class="navelem"><a class="el" href="atmega__i2c__cam__ctrl_8c.html">atmega_i2c_cam_ctrl.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:41 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

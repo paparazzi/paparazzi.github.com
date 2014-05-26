@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -104,7 +104,6 @@ $(document).ready(function(){initNavTree('hf__float_8c.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -120,6 +119,7 @@ $(document).ready(function(){initNavTree('hf__float_8c.html','');});
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="gps_8h_source.html">subsystems/gps.h</a>&quot;</code><br/>
 <code>#include &lt;stdlib.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="low__pass__filter_8h_source.html">filters/low_pass_filter.h</a>&quot;</code><br/>
 <code>#include &quot;generated/airframe.h&quot;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for hf_float.c:</div>
@@ -128,15 +128,11 @@ $(document).ready(function(){initNavTree('hf__float_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="hf__float_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2ins_2hf__float_8c" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2ins_2hf__float_8c" id="sw_2airborne_2subsystems_2ins_2hf__float_8c">
-<area shape="rect" id="node3" href="hf__float_8h.html" title="Horizontal filter (x,y) to estimate position and velocity." alt="" coords="52,185,220,213"/><area shape="rect" id="node21" href="imu_8h.html" title="Inertial Measurement Unit interface." alt="" coords="244,185,370,213"/><area shape="rect" id="node35" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="482,99,543,127"/><area shape="rect" id="node57" href="gps_8h.html" title="Device independent GPS code (interface)" alt="" coords="930,99,1055,127"/><area shape="rect" id="node7" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="258,270,426,298"/><area shape="rect" id="node9" href="pprz__algebra_8h.html" title="pprz_algebra.h" alt="" coords="363,355,467,383"/><area shape="rect" id="node23" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="600,270,758,298"/><area shape="rect" id="node27" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="643,355,776,383"/><area shape="rect" id="node39" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="874,177,1007,221"/><area shape="rect" id="node45" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="716,177,850,221"/><area shape="rect" id="node50" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversion." alt="" coords="495,177,642,221"/><area shape="rect" id="node41" href="pprz__geodetic_8h.html" title="pprz_geodetic.h" alt="" coords="844,270,956,298"/><area shape="rect" id="node61" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1219,270,1374,298"/><area shape="rect" id="node63" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1167,355,1244,383"/></map>
+<area shape="rect" id="node3" href="hf__float_8h.html" title="Horizontal filter (x,y) to estimate position and velocity." alt="" coords="42,185,226,213"/><area shape="rect" id="node21" href="imu_8h.html" title="Inertial Measurement Unit interface." alt="" coords="250,185,388,213"/><area shape="rect" id="node35" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="596,99,663,127"/><area shape="rect" id="node57" href="gps_8h.html" title="Device independent GPS code (interface)" alt="" coords="1207,99,1346,127"/><area shape="rect" id="node72" href="low__pass__filter_8h.html" title="Simple first order low pass filter with bilinear transform." alt="" coords="395,99,558,127"/><area shape="rect" id="node7" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="250,270,439,298"/><area shape="rect" id="node9" href="pprz__algebra_8h.html" title="pprz_algebra.h" alt="" coords="322,355,439,383"/><area shape="rect" id="node23" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="666,270,844,298"/><area shape="rect" id="node27" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="716,355,866,383"/><area shape="rect" id="node39" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="975,177,1124,221"/><area shape="rect" id="node45" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="751,177,900,221"/><area shape="rect" id="node50" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversion." alt="" coords="564,177,727,221"/><area shape="rect" id="node41" href="pprz__geodetic_8h.html" title="pprz_geodetic.h" alt="" coords="868,270,991,298"/><area shape="rect" id="node61" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1199,270,1370,298"/><area shape="rect" id="node63" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1535,355,1620,383"/></map>
 </div>
 </div>
 <p><a href="hf__float_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAccBuf.html">AccBuf</a></td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a0f2cd18289868b5160262b21047dbd51"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hf__float_8c.html#a0f2cd18289868b5160262b21047dbd51">PRINT_DBG</a>(_l, _p)&#160;&#160;&#160;{}</td></tr>
@@ -148,15 +144,12 @@ Macros</h2></td></tr>
 <tr class="memitem:a17d374e932baf307bb4cd7901a893e17"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hf__float_8c.html#a17d374e932baf307bb4cd7901a893e17">HFF_R_POS_MIN</a>&#160;&#160;&#160;3.</td></tr>
 <tr class="memitem:aff15f81b7ee1ecae3856ed397d609e00"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hf__float_8c.html#aff15f81b7ee1ecae3856ed397d609e00">HFF_R_SPEED</a>&#160;&#160;&#160;2.</td></tr>
 <tr class="memitem:a0bc2309d2d5da23586eaaba057d77fe4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hf__float_8c.html#a0bc2309d2d5da23586eaaba057d77fe4">HFF_R_SPEED_MIN</a>&#160;&#160;&#160;1.</td></tr>
-<tr class="memitem:ab59a210a73537a6d1ac061cb5f2e718f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hf__float_8c.html#ab59a210a73537a6d1ac061cb5f2e718f">ACC_RB_MAXN</a>&#160;&#160;&#160;64</td></tr>
 <tr class="memitem:adcd5c23ffb4f8a09c90c3a9d29e151fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hf__float_8c.html#adcd5c23ffb4f8a09c90c3a9d29e151fc">SAVE_NOW</a>&#160;&#160;&#160;0</td></tr>
 <tr class="memitem:a8f336ca4734ceaf4a24252f60b0ac642"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hf__float_8c.html#a8f336ca4734ceaf4a24252f60b0ac642">SAVING</a>&#160;&#160;&#160;-1</td></tr>
 <tr class="memitem:a2b4b604c5c95d7fd6654739d9077dd72"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hf__float_8c.html#a2b4b604c5c95d7fd6654739d9077dd72">SAVE_DONE</a>&#160;&#160;&#160;-2</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aef01881eabc18087fc50d2775b47f995"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hf__float_8c.html#aef01881eabc18087fc50d2775b47f995">b2_hff_store_accel_body</a> (void)</td></tr>
-<tr class="memitem:ae7c470ebe7493f2f4c494da329750543"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hf__float_8c.html#ae7c470ebe7493f2f4c494da329750543">b2_hff_compute_accel_body_mean</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> n)</td></tr>
 <tr class="memitem:ab2a60c30b22bd5e85a329b9c5aa91659"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hf__float_8c.html#ab2a60c30b22bd5e85a329b9c5aa91659">b2_hff_init_x</a> (float init_x, float init_xdot)</td></tr>
 <tr class="memitem:a9f9b984b4f9959258156f3f79acaa03a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hf__float_8c.html#a9f9b984b4f9959258156f3f79acaa03a">b2_hff_init_y</a> (float init_y, float init_ydot)</td></tr>
 <tr class="memitem:a805d2311d32d8db051cf5526d70386d6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hf__float_8c.html#a805d2311d32d8db051cf5526d70386d6">b2_hff_propagate_x</a> (struct <a class="el" href="structHfilterFloat.html">HfilterFloat</a> *hff_work)</td></tr>
@@ -174,6 +167,9 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:afdb654ec9b7836802d036412dfd8ba09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="low__pass__filter_8h.html#a95c2f4c4aad6babb08101b2950fc1917">Butterworth2LowPass_int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hf__float_8c.html#afdb654ec9b7836802d036412dfd8ba09">filter_x</a></td></tr>
+<tr class="memitem:a70ccbd56ba5cebf0f68f8c8249f6ab0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="low__pass__filter_8h.html#a95c2f4c4aad6babb08101b2950fc1917">Butterworth2LowPass_int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hf__float_8c.html#a70ccbd56ba5cebf0f68f8c8249f6ab0e">filter_y</a></td></tr>
+<tr class="memitem:a1c5039e7e44e6773680ce40c1c5df75b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="low__pass__filter_8h.html#a95c2f4c4aad6babb08101b2950fc1917">Butterworth2LowPass_int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hf__float_8c.html#a1c5039e7e44e6773680ce40c1c5df75b">filter_z</a></td></tr>
 <tr class="memitem:af6333ef44fbaf7aaf25c27a56429144f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hf__float_8c.html#af6333ef44fbaf7aaf25c27a56429144f">Rgps_pos</a></td></tr>
 <tr class="memitem:afec83e3697675c3915f9d3b46f040fe1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hf__float_8c.html#afec83e3697675c3915f9d3b46f040fe1">Rgps_vel</a></td></tr>
 <tr class="memitem:a406e91f576a3595731d97597c14b898a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structHfilterFloat.html">HfilterFloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hf__float_8c.html#a406e91f576a3595731d97597c14b898a">b2_hff_state</a></td></tr>
@@ -184,8 +180,6 @@ Variables</h2></td></tr>
 <tr class="memitem:ad8e333ff43f6f593ecec39b54ff3744c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hf__float_8c.html#ad8e333ff43f6f593ecec39b54ff3744c">b2_hff_x_meas</a></td></tr>
 <tr class="memitem:a5540d09f6b70a16c0c3fa3f1dc04981b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hf__float_8c.html#a5540d09f6b70a16c0c3fa3f1dc04981b">b2_hff_y_meas</a></td></tr>
 <tr class="memitem:af5046cb21718a0df36296a19082d9a96"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hf__float_8c.html#af5046cb21718a0df36296a19082d9a96">b2_hff_ps_counter</a></td></tr>
-<tr class="memitem:aa778a18917fb489f09c7ffa75527fd07"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structAccBuf.html">AccBuf</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hf__float_8c.html#aa778a18917fb489f09c7ffa75527fd07">acc_body</a></td></tr>
-<tr class="memitem:a5ed3a79f18327ff6a2885f56b1a81c91"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structInt32Vect3.html">Int32Vect3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hf__float_8c.html#a5ed3a79f18327ff6a2885f56b1a81c91">acc_body_mean</a></td></tr>
 <tr class="memitem:abd9a30617aec6335c21f41a81b69a61c"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structHfilterFloat.html">HfilterFloat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hf__float_8c.html#abd9a30617aec6335c21f41a81b69a61c">b2_hff_rb_last</a></td></tr>
 <tr class="memitem:a2812f3fcb5eebb920e7bd275c6180162"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hf__float_8c.html#a2812f3fcb5eebb920e7bd275c6180162">b2_hff_rb_n</a></td></tr>
 <tr class="memitem:a74ba4fd3f0ea5e4190d080b8f7e11c72"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hf__float_8c.html#a74ba4fd3f0ea5e4190d080b8f7e11c72">lag_counter_err</a></td></tr>
@@ -199,22 +193,6 @@ Variables</h2></td></tr>
 
 <p>Definition in file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 </div><h2>Macro Definition Documentation</h2>
-<a class="anchor" id="ab59a210a73537a6d1ac061cb5f2e718f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ACC_RB_MAXN&#160;&#160;&#160;64</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00107">107</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
-
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00275">b2_hff_init()</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="adfd8e6a9e652df9dde3ea9c95e4f2a10"></a>
 <div class="memitem">
 <div class="memproto">
@@ -241,7 +219,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="hf__float_8c_source.html#l00061">61</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00275">b2_hff_init()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00231">b2_hff_init()</a>.</p>
 
 </div>
 </div>
@@ -257,7 +235,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="hf__float_8c_source.html#l00064">64</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00526">b2_hff_update_gps()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00477">b2_hff_update_gps()</a>.</p>
 
 </div>
 </div>
@@ -273,7 +251,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="hf__float_8c_source.html#l00068">68</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00275">b2_hff_init()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00231">b2_hff_init()</a>.</p>
 
 </div>
 </div>
@@ -289,7 +267,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="hf__float_8c_source.html#l00071">71</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00526">b2_hff_update_gps()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00477">b2_hff_update_gps()</a>.</p>
 
 </div>
 </div>
@@ -305,7 +283,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="hf__float_8c_source.html#l00051">51</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00324">b2_hff_init_x()</a>, and <a class="el" href="hf__float_8c_source.html#l00336">b2_hff_init_y()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00279">b2_hff_init_x()</a>, and <a class="el" href="hf__float_8c_source.html#l00290">b2_hff_init_y()</a>.</p>
 
 </div>
 </div>
@@ -335,7 +313,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="hf__float_8c_source.html#l00046">46</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00467">b2_hff_propagate()</a>, and <a class="el" href="hf__float_8c_source.html#l00526">b2_hff_update_gps()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00419">b2_hff_propagate()</a>, and <a class="el" href="hf__float_8c_source.html#l00477">b2_hff_update_gps()</a>.</p>
 
 </div>
 </div>
@@ -351,7 +329,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="hf__float_8c_source.html#l00056">56</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00618">b2_hff_propagate_x()</a>, <a class="el" href="hf__float_8c_source.html#l00635">b2_hff_propagate_y()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00031">lla_of_ecef_d()</a>, and <a class="el" href="pprz__geodetic__float_8c_source.html#l00164">lla_of_ecef_f()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00569">b2_hff_propagate_x()</a>, <a class="el" href="hf__float_8c_source.html#l00586">b2_hff_propagate_y()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00031">lla_of_ecef_d()</a>, and <a class="el" href="pprz__geodetic__float_8c_source.html#l00164">lla_of_ecef_f()</a>.</p>
 
 </div>
 </div>
@@ -367,7 +345,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="hf__float_8c_source.html#l00057">57</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00618">b2_hff_propagate_x()</a>, and <a class="el" href="hf__float_8c_source.html#l00635">b2_hff_propagate_y()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00569">b2_hff_propagate_x()</a>, and <a class="el" href="hf__float_8c_source.html#l00586">b2_hff_propagate_y()</a>.</p>
 
 </div>
 </div>
@@ -381,9 +359,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00213">213</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00170">170</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00275">b2_hff_init()</a>, and <a class="el" href="hf__float_8c_source.html#l00584">b2_hff_realign()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00231">b2_hff_init()</a>, and <a class="el" href="hf__float_8c_source.html#l00535">b2_hff_realign()</a>.</p>
 
 </div>
 </div>
@@ -397,7 +375,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00211">211</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00168">168</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
 </div>
 </div>
@@ -411,52 +389,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00212">212</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00169">169</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
 </div>
 </div>
 <h2>Function Documentation</h2>
-<a class="anchor" id="ae7c470ebe7493f2f4c494da329750543"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void b2_hff_compute_accel_body_mean </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
-          <td class="paramname"><em>n</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00131">131</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
-
-<p>References <a class="el" href="hf__float_8c_source.html#l00115">acc_body</a>, <a class="el" href="hf__float_8c_source.html#l00116">acc_body_mean</a>, <a class="el" href="hf__float_8c_source.html#l00109">AccBuf::buf</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00260">INT_VECT3_ZERO</a>, <a class="el" href="hf__float_8c_source.html#l00112">AccBuf::n</a>, <a class="el" href="hf__float_8c_source.html#l00113">AccBuf::size</a>, <a class="el" href="pprz__algebra_8h_source.html#l00118">VECT3_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00111">VECT3_COPY</a>, <a class="el" href="pprz__algebra_8h_source.html#l00167">VECT3_SDIV</a>, and <a class="el" href="hf__float_8c_source.html#l00111">AccBuf::w</a>.</p>
-
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00467">b2_hff_propagate()</a>.</p>
-
-<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="hf__float_8c_ae7c470ebe7493f2f4c494da329750543_icgraph.png" border="0" usemap="#hf__float_8c_ae7c470ebe7493f2f4c494da329750543_icgraph" alt=""/></div>
-<map name="hf__float_8c_ae7c470ebe7493f2f4c494da329750543_icgraph" id="hf__float_8c_ae7c470ebe7493f2f4c494da329750543_icgraph">
-<area shape="rect" id="node3" href="hf__float_8h.html#a73aab61de49440834b84d49789325439" title="b2_hff_propagate" alt="" coords="207,13,327,41"/><area shape="rect" id="node5" href="ins__int_8c.html#a77b5ba9f198b91b698062cc0dc0c953d" title="Propagation." alt="" coords="377,13,479,41"/></map>
-</div>
-</p>
-
-</div>
-</div>
 <a class="anchor" id="a77441191105f3d3f31cfd26d712dec07"></a>
 <div class="memitem">
 <div class="memproto">
@@ -493,31 +430,31 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00275">275</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00231">231</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>References <a class="el" href="hf__float_8c_source.html#l00115">acc_body</a>, <a class="el" href="hf__float_8c_source.html#l00107">ACC_RB_MAXN</a>, <a class="el" href="hf__float_8c_source.html#l00324">b2_hff_init_x()</a>, <a class="el" href="hf__float_8c_source.html#l00336">b2_hff_init_y()</a>, <a class="el" href="hf__float_8c_source.html#l00216">b2_hff_lost_counter</a>, <a class="el" href="hf__float_8c_source.html#l00215">b2_hff_lost_limit</a>, <a class="el" href="hf__float_8c_source.html#l00101">b2_hff_ps_counter</a>, <a class="el" href="hf__float_8c_source.html#l00202">b2_hff_rb_n</a>, <a class="el" href="hf__float_8c_source.html#l00085">b2_hff_state</a>, <a class="el" href="hf__float_8h_source.html#l00054">DT_HFILTER</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="hf__float_8h_source.html#l00089">HFF_LOST_LIMIT</a>, <a class="el" href="hf__float_8c_source.html#l00061">HFF_R_POS</a>, <a class="el" href="hf__float_8c_source.html#l00068">HFF_R_SPEED</a>, <a class="el" href="hf__float_8h_source.html#l00069">HfilterFloat::lag_counter</a>, <a class="el" href="hf__float_8c_source.html#l00206">lag_counter_err</a>, <a class="el" href="hf__float_8c_source.html#l00112">AccBuf::n</a>, <a class="el" href="hf__float_8c_source.html#l00210">past_save_counter</a>, <a class="el" href="hf__float_8c_source.html#l00110">AccBuf::r</a>, <a class="el" href="telemetry_8c_source.html#l00038">register_periodic_telemetry()</a>, <a class="el" href="hf__float_8c_source.html#l00075">Rgps_pos</a>, <a class="el" href="hf__float_8c_source.html#l00075">Rgps_vel</a>, <a class="el" href="hf__float_8h_source.html#l00070">HfilterFloat::rollback</a>, <a class="el" href="hf__float_8c_source.html#l00209">save_counter</a>, <a class="el" href="hf__float_8c_source.html#l00213">SAVE_DONE</a>, <a class="el" href="hf__float_8c_source.html#l00113">AccBuf::size</a>, and <a class="el" href="hf__float_8c_source.html#l00111">AccBuf::w</a>.</p>
+<p>References <a class="el" href="main__ap_8c_source.html#l00128">AHRS_PROPAGATE_FREQUENCY</a>, <a class="el" href="hf__float_8c_source.html#l00279">b2_hff_init_x()</a>, <a class="el" href="hf__float_8c_source.html#l00290">b2_hff_init_y()</a>, <a class="el" href="hf__float_8c_source.html#l00173">b2_hff_lost_counter</a>, <a class="el" href="hf__float_8c_source.html#l00172">b2_hff_lost_limit</a>, <a class="el" href="hf__float_8c_source.html#l00106">b2_hff_ps_counter</a>, <a class="el" href="hf__float_8c_source.html#l00159">b2_hff_rb_n</a>, <a class="el" href="hf__float_8c_source.html#l00090">b2_hff_state</a>, <a class="el" href="hf__float_8h_source.html#l00054">DT_HFILTER</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="hf__float_8h_source.html#l00082">HFF_LOST_LIMIT</a>, <a class="el" href="hf__float_8c_source.html#l00061">HFF_R_POS</a>, <a class="el" href="hf__float_8c_source.html#l00068">HFF_R_SPEED</a>, <a class="el" href="low__pass__filter_8h_source.html#l00292">init_butterworth_2_low_pass_int()</a>, <a class="el" href="hf__float_8h_source.html#l00069">HfilterFloat::lag_counter</a>, <a class="el" href="hf__float_8c_source.html#l00163">lag_counter_err</a>, <a class="el" href="hf__float_8c_source.html#l00167">past_save_counter</a>, <a class="el" href="telemetry_8c_source.html#l00038">register_periodic_telemetry()</a>, <a class="el" href="hf__float_8c_source.html#l00080">Rgps_pos</a>, <a class="el" href="hf__float_8c_source.html#l00080">Rgps_vel</a>, <a class="el" href="hf__float_8h_source.html#l00070">HfilterFloat::rollback</a>, <a class="el" href="hf__float_8c_source.html#l00166">save_counter</a>, and <a class="el" href="hf__float_8c_source.html#l00170">SAVE_DONE</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00125">ins_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00152">ins_init()</a>.</p>
 
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="hf__float_8c_a77441191105f3d3f31cfd26d712dec07_cgraph.png" border="0" usemap="#hf__float_8c_a77441191105f3d3f31cfd26d712dec07_cgraph" alt=""/></div>
 <map name="hf__float_8c_a77441191105f3d3f31cfd26d712dec07_cgraph" id="hf__float_8c_a77441191105f3d3f31cfd26d712dec07_cgraph">
-<area shape="rect" id="node3" href="hf__float_8c.html#ab2a60c30b22bd5e85a329b9c5aa91659" title="b2_hff_init_x" alt="" coords="179,5,272,33"/><area shape="rect" id="node5" href="hf__float_8c.html#a9f9b984b4f9959258156f3f79acaa03a" title="b2_hff_init_y" alt="" coords="179,55,272,83"/><area shape="rect" id="node7" href="telemetry_8c.html#abb4aa9b3c0c8d93e1372de5da86de828" title="Register a telemetry callback function." alt="" coords="137,106,313,134"/></map>
+<area shape="rect" id="node3" href="hf__float_8c.html#ab2a60c30b22bd5e85a329b9c5aa91659" title="b2_hff_init_x" alt="" coords="189,5,291,33"/><area shape="rect" id="node5" href="hf__float_8c.html#a9f9b984b4f9959258156f3f79acaa03a" title="b2_hff_init_y" alt="" coords="189,55,291,83"/><area shape="rect" id="node7" href="low__pass__filter_8h.html#a1909d1e3c0d2c64a4df66cecea703e33" title="Init a second order Butterworth filter." alt="" coords="172,106,308,150"/><area shape="rect" id="node11" href="telemetry_8c.html#abb4aa9b3c0c8d93e1372de5da86de828" title="Register a telemetry callback function." alt="" coords="141,173,339,201"/><area shape="rect" id="node9" href="low__pass__filter_8h.html#a71eaaf92d7c19c9c82578ff686af3332" title="Init second order low pass filter(fixed point version)." alt="" coords="387,106,549,150"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="hf__float_8c_a77441191105f3d3f31cfd26d712dec07_icgraph.png" border="0" usemap="#hf__float_8c_a77441191105f3d3f31cfd26d712dec07_icgraph" alt=""/></div>
 <map name="hf__float_8c_a77441191105f3d3f31cfd26d712dec07_icgraph" id="hf__float_8c_a77441191105f3d3f31cfd26d712dec07_icgraph">
-<area shape="rect" id="node3" href="ins__int_8c.html#abf3028c2ada542781b8a5e1eb20c17ce" title="INS initialization." alt="" coords="137,5,199,33"/></map>
+<area shape="rect" id="node3" href="ins__int_8c.html#abf3028c2ada542781b8a5e1eb20c17ce" title="INS initialization." alt="" coords="141,5,208,33"/></map>
 </div>
 </p>
 
@@ -550,25 +487,25 @@ Variables</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00324">324</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00279">279</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>References <a class="el" href="hf__float_8c_source.html#l00085">b2_hff_state</a>, <a class="el" href="hf__float_8h_source.html#l00036">HFF_STATE_SIZE</a>, <a class="el" href="hf__float_8c_source.html#l00051">INIT_PXX</a>, <a class="el" href="hf__float_8h_source.html#l00059">HfilterFloat::x</a>, <a class="el" href="hf__float_8h_source.html#l00061">HfilterFloat::xdot</a>, and <a class="el" href="hf__float_8h_source.html#l00067">HfilterFloat::xP</a>.</p>
+<p>References <a class="el" href="hf__float_8c_source.html#l00090">b2_hff_state</a>, <a class="el" href="hf__float_8h_source.html#l00036">HFF_STATE_SIZE</a>, <a class="el" href="hf__float_8c_source.html#l00051">INIT_PXX</a>, <a class="el" href="hf__float_8h_source.html#l00059">HfilterFloat::x</a>, <a class="el" href="hf__float_8h_source.html#l00061">HfilterFloat::xdot</a>, and <a class="el" href="hf__float_8h_source.html#l00067">HfilterFloat::xP</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00275">b2_hff_init()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00231">b2_hff_init()</a>.</p>
 
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="hf__float_8c_ab2a60c30b22bd5e85a329b9c5aa91659_icgraph.png" border="0" usemap="#hf__float_8c_ab2a60c30b22bd5e85a329b9c5aa91659_icgraph" alt=""/></div>
 <map name="hf__float_8c_ab2a60c30b22bd5e85a329b9c5aa91659_icgraph" id="hf__float_8c_ab2a60c30b22bd5e85a329b9c5aa91659_icgraph">
-<area shape="rect" id="node3" href="hf__float_8h.html#a77441191105f3d3f31cfd26d712dec07" title="b2_hff_init" alt="" coords="151,5,231,33"/><area shape="rect" id="node5" href="ins__int_8c.html#abf3028c2ada542781b8a5e1eb20c17ce" title="INS initialization." alt="" coords="281,5,343,33"/></map>
+<area shape="rect" id="node3" href="hf__float_8h.html#a77441191105f3d3f31cfd26d712dec07" title="b2_hff_init" alt="" coords="156,5,241,33"/><area shape="rect" id="node5" href="ins__int_8c.html#abf3028c2ada542781b8a5e1eb20c17ce" title="INS initialization." alt="" coords="291,5,357,33"/></map>
 </div>
 </p>
 
@@ -601,25 +538,25 @@ Variables</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00336">336</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00290">290</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>References <a class="el" href="hf__float_8c_source.html#l00085">b2_hff_state</a>, <a class="el" href="hf__float_8h_source.html#l00036">HFF_STATE_SIZE</a>, <a class="el" href="hf__float_8c_source.html#l00051">INIT_PXX</a>, <a class="el" href="hf__float_8h_source.html#l00063">HfilterFloat::y</a>, <a class="el" href="hf__float_8h_source.html#l00065">HfilterFloat::ydot</a>, and <a class="el" href="hf__float_8h_source.html#l00068">HfilterFloat::yP</a>.</p>
+<p>References <a class="el" href="hf__float_8c_source.html#l00090">b2_hff_state</a>, <a class="el" href="hf__float_8h_source.html#l00036">HFF_STATE_SIZE</a>, <a class="el" href="hf__float_8c_source.html#l00051">INIT_PXX</a>, <a class="el" href="hf__float_8h_source.html#l00063">HfilterFloat::y</a>, <a class="el" href="hf__float_8h_source.html#l00065">HfilterFloat::ydot</a>, and <a class="el" href="hf__float_8h_source.html#l00068">HfilterFloat::yP</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00275">b2_hff_init()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00231">b2_hff_init()</a>.</p>
 
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="hf__float_8c_a9f9b984b4f9959258156f3f79acaa03a_icgraph.png" border="0" usemap="#hf__float_8c_a9f9b984b4f9959258156f3f79acaa03a_icgraph" alt=""/></div>
 <map name="hf__float_8c_a9f9b984b4f9959258156f3f79acaa03a_icgraph" id="hf__float_8c_a9f9b984b4f9959258156f3f79acaa03a_icgraph">
-<area shape="rect" id="node3" href="hf__float_8h.html#a77441191105f3d3f31cfd26d712dec07" title="b2_hff_init" alt="" coords="151,5,231,33"/><area shape="rect" id="node5" href="ins__int_8c.html#abf3028c2ada542781b8a5e1eb20c17ce" title="INS initialization." alt="" coords="281,5,343,33"/></map>
+<area shape="rect" id="node3" href="hf__float_8h.html#a77441191105f3d3f31cfd26d712dec07" title="b2_hff_init" alt="" coords="156,5,241,33"/><area shape="rect" id="node5" href="ins__int_8c.html#abf3028c2ada542781b8a5e1eb20c17ce" title="INS initialization." alt="" coords="291,5,357,33"/></map>
 </div>
 </p>
 
@@ -639,31 +576,31 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00467">467</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00419">419</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>References <a class="el" href="hf__float_8c_source.html#l00116">acc_body_mean</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00216">ACCEL_FLOAT_OF_BFP</a>, <a class="el" href="hf__float_8c_source.html#l00131">b2_hff_compute_accel_body_mean()</a>, <a class="el" href="hf__float_8c_source.html#l00216">b2_hff_lost_counter</a>, <a class="el" href="hf__float_8c_source.html#l00215">b2_hff_lost_limit</a>, <a class="el" href="hf__float_8c_source.html#l00618">b2_hff_propagate_x()</a>, <a class="el" href="hf__float_8c_source.html#l00635">b2_hff_propagate_y()</a>, <a class="el" href="hf__float_8c_source.html#l00101">b2_hff_ps_counter</a>, <a class="el" href="hf__float_8c_source.html#l00202">b2_hff_rb_n</a>, <a class="el" href="hf__float_8c_source.html#l00085">b2_hff_state</a>, <a class="el" href="hf__float_8c_source.html#l00118">b2_hff_store_accel_body()</a>, <a class="el" href="hf__float_8c_source.html#l00089">b2_hff_xdd_meas</a>, <a class="el" href="hf__float_8c_source.html#l00090">b2_hff_ydd_meas</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00382">INT32_RMAT_TRANSP_VMULT</a>, <a class="el" href="hf__float_8h_source.html#l00069">HfilterFloat::lag_counter</a>, <a class="el" href="hf__float_8c_source.html#l00046">PRINT_DBG</a>, <a class="el" href="hf__float_8h_source.html#l00070">HfilterFloat::rollback</a>, <a class="el" href="hf__float_8c_source.html#l00209">save_counter</a>, <a class="el" href="state_8h_source.html#l01007">stateGetNedToBodyRMat_i()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00085">Int32Vect3::x</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00086">Int32Vect3::y</a>.</p>
+<p>References <a class="el" href="imu_8h_source.html#l00041">Imu::accel</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00216">ACCEL_FLOAT_OF_BFP</a>, <a class="el" href="hf__float_8c_source.html#l00173">b2_hff_lost_counter</a>, <a class="el" href="hf__float_8c_source.html#l00172">b2_hff_lost_limit</a>, <a class="el" href="hf__float_8c_source.html#l00569">b2_hff_propagate_x()</a>, <a class="el" href="hf__float_8c_source.html#l00586">b2_hff_propagate_y()</a>, <a class="el" href="hf__float_8c_source.html#l00106">b2_hff_ps_counter</a>, <a class="el" href="hf__float_8c_source.html#l00159">b2_hff_rb_n</a>, <a class="el" href="hf__float_8c_source.html#l00090">b2_hff_state</a>, <a class="el" href="hf__float_8c_source.html#l00094">b2_hff_xdd_meas</a>, <a class="el" href="hf__float_8c_source.html#l00095">b2_hff_ydd_meas</a>, <a class="el" href="imu_8h_source.html#l00052">Imu::body_to_imu_rmat</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00047">imu</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00382">INT32_RMAT_TRANSP_VMULT</a>, <a class="el" href="hf__float_8h_source.html#l00069">HfilterFloat::lag_counter</a>, <a class="el" href="hf__float_8c_source.html#l00046">PRINT_DBG</a>, <a class="el" href="hf__float_8h_source.html#l00070">HfilterFloat::rollback</a>, <a class="el" href="hf__float_8c_source.html#l00166">save_counter</a>, <a class="el" href="state_8h_source.html#l01007">stateGetNedToBodyRMat_i()</a>, <a class="el" href="low__pass__filter_8h_source.html#l00302">update_butterworth_2_low_pass_int()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00085">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00086">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00087">Int32Vect3::z</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00187">ins_propagate()</a>.</p>
+<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00218">ins_propagate()</a>.</p>
 
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="hf__float_8c_a73aab61de49440834b84d49789325439_cgraph.png" border="0" usemap="#hf__float_8c_a73aab61de49440834b84d49789325439_cgraph" alt=""/></div>
 <map name="hf__float_8c_a73aab61de49440834b84d49789325439_cgraph" id="hf__float_8c_a73aab61de49440834b84d49789325439_cgraph">
-<area shape="rect" id="node3" href="hf__float_8c.html#ae7c470ebe7493f2f4c494da329750543" title="b2_hff_compute_accel\l_body_mean" alt="" coords="191,5,343,49"/><area shape="rect" id="node5" href="hf__float_8c.html#a805d2311d32d8db051cf5526d70386d6" title="b2_hff_propagate_x" alt="" coords="200,71,333,99"/><area shape="rect" id="node7" href="hf__float_8c.html#a9e09cd67712ce4dbaca98be46026aa5c" title="b2_hff_propagate_y" alt="" coords="200,122,333,150"/><area shape="rect" id="node9" href="hf__float_8c.html#aef01881eabc18087fc50d2775b47f995" title="b2_hff_store_accel_body" alt="" coords="184,173,349,201"/><area shape="rect" id="node11" href="group__state__attitude.html#ga7c541b9b2e6231ac9a11a9e21562a5b3" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="176,223,357,251"/><area shape="rect" id="node13" href="group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="405,223,549,251"/><area shape="rect" id="node15" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title="orientationCalcRMat_i" alt="" coords="597,223,747,251"/></map>
+<area shape="rect" id="node3" href="hf__float_8c.html#a805d2311d32d8db051cf5526d70386d6" title="b2_hff_propagate_x" alt="" coords="212,5,359,33"/><area shape="rect" id="node5" href="hf__float_8c.html#a9e09cd67712ce4dbaca98be46026aa5c" title="b2_hff_propagate_y" alt="" coords="212,55,359,83"/><area shape="rect" id="node7" href="group__state__attitude.html#ga7c541b9b2e6231ac9a11a9e21562a5b3" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="191,106,380,134"/><area shape="rect" id="node13" href="low__pass__filter_8h.html#a2f2143b974670872a03cc02fa29ed066" title="Update second order Butterworth low pass filter state with a new value(fixed point version)..." alt="" coords="212,157,359,201"/><area shape="rect" id="node9" href="group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="433,106,588,134"/><area shape="rect" id="node11" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title="orientationCalcRMat_i" alt="" coords="640,106,800,134"/><area shape="rect" id="node15" href="low__pass__filter_8h.html#a9b7d8efe8f0511c29c27d714d8bc0f44" title="Update second order low pass filter state with a new value(fixed point version)." alt="" coords="431,157,591,201"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="hf__float_8c_a73aab61de49440834b84d49789325439_icgraph.png" border="0" usemap="#hf__float_8c_a73aab61de49440834b84d49789325439_icgraph" alt=""/></div>
 <map name="hf__float_8c_a73aab61de49440834b84d49789325439_icgraph" id="hf__float_8c_a73aab61de49440834b84d49789325439_icgraph">
-<area shape="rect" id="node3" href="ins__int_8c.html#a77b5ba9f198b91b698062cc0dc0c953d" title="Propagation." alt="" coords="177,5,279,33"/></map>
+<area shape="rect" id="node3" href="ins__int_8c.html#a84f7fd94669bc73e048c3926a27fd3aa" title="Propagation." alt="" coords="191,5,303,33"/></map>
 </div>
 </p>
 
@@ -686,25 +623,25 @@ Variables</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00618">618</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00569">569</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>References <a class="el" href="hf__float_8c_source.html#l00089">b2_hff_xdd_meas</a>, <a class="el" href="hf__float_8h_source.html#l00054">DT_HFILTER</a>, <a class="el" href="hf__float_8c_source.html#l00056">Q</a>, <a class="el" href="hf__float_8c_source.html#l00057">Qdotdot</a>, <a class="el" href="hf__float_8h_source.html#l00059">HfilterFloat::x</a>, <a class="el" href="hf__float_8h_source.html#l00061">HfilterFloat::xdot</a>, <a class="el" href="hf__float_8h_source.html#l00062">HfilterFloat::xdotdot</a>, and <a class="el" href="hf__float_8h_source.html#l00067">HfilterFloat::xP</a>.</p>
+<p>References <a class="el" href="hf__float_8c_source.html#l00094">b2_hff_xdd_meas</a>, <a class="el" href="hf__float_8h_source.html#l00054">DT_HFILTER</a>, <a class="el" href="hf__float_8c_source.html#l00056">Q</a>, <a class="el" href="hf__float_8c_source.html#l00057">Qdotdot</a>, <a class="el" href="hf__float_8h_source.html#l00059">HfilterFloat::x</a>, <a class="el" href="hf__float_8h_source.html#l00061">HfilterFloat::xdot</a>, <a class="el" href="hf__float_8h_source.html#l00062">HfilterFloat::xdotdot</a>, and <a class="el" href="hf__float_8h_source.html#l00067">HfilterFloat::xP</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00467">b2_hff_propagate()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00419">b2_hff_propagate()</a>.</p>
 
-<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="hf__float_8c_a805d2311d32d8db051cf5526d70386d6_icgraph.png" border="0" usemap="#hf__float_8c_a805d2311d32d8db051cf5526d70386d6_icgraph" alt=""/></div>
 <map name="hf__float_8c_a805d2311d32d8db051cf5526d70386d6_icgraph" id="hf__float_8c_a805d2311d32d8db051cf5526d70386d6_icgraph">
-<area shape="rect" id="node3" href="hf__float_8h.html#a73aab61de49440834b84d49789325439" title="b2_hff_propagate" alt="" coords="191,5,311,33"/><area shape="rect" id="node5" href="ins__int_8c.html#a77b5ba9f198b91b698062cc0dc0c953d" title="Propagation." alt="" coords="361,5,463,33"/></map>
+<area shape="rect" id="node3" href="hf__float_8h.html#a73aab61de49440834b84d49789325439" title="b2_hff_propagate" alt="" coords="204,5,337,33"/><area shape="rect" id="node5" href="ins__int_8c.html#a84f7fd94669bc73e048c3926a27fd3aa" title="Propagation." alt="" coords="388,5,500,33"/></map>
 </div>
 </p>
 
@@ -727,25 +664,25 @@ Variables</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00635">635</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00586">586</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>References <a class="el" href="hf__float_8c_source.html#l00090">b2_hff_ydd_meas</a>, <a class="el" href="hf__float_8h_source.html#l00054">DT_HFILTER</a>, <a class="el" href="hf__float_8c_source.html#l00056">Q</a>, <a class="el" href="hf__float_8c_source.html#l00057">Qdotdot</a>, <a class="el" href="hf__float_8h_source.html#l00063">HfilterFloat::y</a>, <a class="el" href="hf__float_8h_source.html#l00065">HfilterFloat::ydot</a>, <a class="el" href="hf__float_8h_source.html#l00066">HfilterFloat::ydotdot</a>, and <a class="el" href="hf__float_8h_source.html#l00068">HfilterFloat::yP</a>.</p>
+<p>References <a class="el" href="hf__float_8c_source.html#l00095">b2_hff_ydd_meas</a>, <a class="el" href="hf__float_8h_source.html#l00054">DT_HFILTER</a>, <a class="el" href="hf__float_8c_source.html#l00056">Q</a>, <a class="el" href="hf__float_8c_source.html#l00057">Qdotdot</a>, <a class="el" href="hf__float_8h_source.html#l00063">HfilterFloat::y</a>, <a class="el" href="hf__float_8h_source.html#l00065">HfilterFloat::ydot</a>, <a class="el" href="hf__float_8h_source.html#l00066">HfilterFloat::ydotdot</a>, and <a class="el" href="hf__float_8h_source.html#l00068">HfilterFloat::yP</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00467">b2_hff_propagate()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00419">b2_hff_propagate()</a>.</p>
 
-<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="hf__float_8c_a9e09cd67712ce4dbaca98be46026aa5c_icgraph.png" border="0" usemap="#hf__float_8c_a9e09cd67712ce4dbaca98be46026aa5c_icgraph" alt=""/></div>
 <map name="hf__float_8c_a9e09cd67712ce4dbaca98be46026aa5c_icgraph" id="hf__float_8c_a9e09cd67712ce4dbaca98be46026aa5c_icgraph">
-<area shape="rect" id="node3" href="hf__float_8h.html#a73aab61de49440834b84d49789325439" title="b2_hff_propagate" alt="" coords="191,5,311,33"/><area shape="rect" id="node5" href="ins__int_8c.html#a77b5ba9f198b91b698062cc0dc0c953d" title="Propagation." alt="" coords="361,5,463,33"/></map>
+<area shape="rect" id="node3" href="hf__float_8h.html#a73aab61de49440834b84d49789325439" title="b2_hff_propagate" alt="" coords="204,5,337,33"/><area shape="rect" id="node5" href="ins__int_8c.html#a84f7fd94669bc73e048c3926a27fd3aa" title="Propagation." alt="" coords="388,5,500,33"/></map>
 </div>
 </p>
 
@@ -775,53 +712,20 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00584">584</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00535">535</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>References <a class="el" href="hf__float_8c_source.html#l00202">b2_hff_rb_n</a>, <a class="el" href="hf__float_8c_source.html#l00085">b2_hff_state</a>, <a class="el" href="hf__float_8c_source.html#l00210">past_save_counter</a>, <a class="el" href="hf__float_8c_source.html#l00209">save_counter</a>, <a class="el" href="hf__float_8c_source.html#l00213">SAVE_DONE</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00044">FloatVect2::x</a>, <a class="el" href="hf__float_8h_source.html#l00059">HfilterFloat::x</a>, <a class="el" href="hf__float_8h_source.html#l00061">HfilterFloat::xdot</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00045">FloatVect2::y</a>, <a class="el" href="hf__float_8h_source.html#l00063">HfilterFloat::y</a>, and <a class="el" href="hf__float_8h_source.html#l00065">HfilterFloat::ydot</a>.</p>
+<p>References <a class="el" href="hf__float_8c_source.html#l00159">b2_hff_rb_n</a>, <a class="el" href="hf__float_8c_source.html#l00090">b2_hff_state</a>, <a class="el" href="hf__float_8c_source.html#l00167">past_save_counter</a>, <a class="el" href="hf__float_8c_source.html#l00166">save_counter</a>, <a class="el" href="hf__float_8c_source.html#l00170">SAVE_DONE</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00044">FloatVect2::x</a>, <a class="el" href="hf__float_8h_source.html#l00059">HfilterFloat::x</a>, <a class="el" href="hf__float_8h_source.html#l00061">HfilterFloat::xdot</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00045">FloatVect2::y</a>, <a class="el" href="hf__float_8h_source.html#l00063">HfilterFloat::y</a>, and <a class="el" href="hf__float_8h_source.html#l00065">HfilterFloat::ydot</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00249">ins_update_gps()</a>.</p>
+<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00276">ins_update_gps()</a>.</p>
 
-<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="hf__float_8c_af628e2bc576792fbc2e8b4d5fab40191_icgraph.png" border="0" usemap="#hf__float_8c_af628e2bc576792fbc2e8b4d5fab40191_icgraph" alt=""/></div>
 <map name="hf__float_8c_af628e2bc576792fbc2e8b4d5fab40191_icgraph" id="hf__float_8c_af628e2bc576792fbc2e8b4d5fab40191_icgraph">
-<area shape="rect" id="node3" href="ins__int_8c.html#aacc25a507c5c24309fc37b1f806f5d2b" title="Update INS state with GPS measurements." alt="" coords="159,5,271,33"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="aef01881eabc18087fc50d2775b47f995"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void b2_hff_store_accel_body </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00118">118</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
-
-<p>References <a class="el" href="hf__float_8c_source.html#l00115">acc_body</a>, <a class="el" href="imu_8h_source.html#l00041">Imu::accel</a>, <a class="el" href="imu_8h_source.html#l00052">Imu::body_to_imu_rmat</a>, <a class="el" href="hf__float_8c_source.html#l00109">AccBuf::buf</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00047">imu</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00382">INT32_RMAT_TRANSP_VMULT</a>, <a class="el" href="hf__float_8c_source.html#l00112">AccBuf::n</a>, <a class="el" href="hf__float_8c_source.html#l00110">AccBuf::r</a>, <a class="el" href="hf__float_8c_source.html#l00113">AccBuf::size</a>, and <a class="el" href="hf__float_8c_source.html#l00111">AccBuf::w</a>.</p>
-
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00467">b2_hff_propagate()</a>.</p>
-
-<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="hf__float_8c_aef01881eabc18087fc50d2775b47f995_icgraph.png" border="0" usemap="#hf__float_8c_aef01881eabc18087fc50d2775b47f995_icgraph" alt=""/></div>
-<map name="hf__float_8c_aef01881eabc18087fc50d2775b47f995_icgraph" id="hf__float_8c_aef01881eabc18087fc50d2775b47f995_icgraph">
-<area shape="rect" id="node3" href="hf__float_8h.html#a73aab61de49440834b84d49789325439" title="b2_hff_propagate" alt="" coords="220,5,340,33"/><area shape="rect" id="node5" href="ins__int_8c.html#a77b5ba9f198b91b698062cc0dc0c953d" title="Propagation." alt="" coords="391,5,492,33"/></map>
+<area shape="rect" id="node3" href="ins__int_8c.html#aacc25a507c5c24309fc37b1f806f5d2b" title="Update INS state with GPS measurements." alt="" coords="165,5,288,33"/></map>
 </div>
 </p>
 
@@ -851,31 +755,31 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00526">526</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00477">477</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>References <a class="el" href="hf__float_8c_source.html#l00216">b2_hff_lost_counter</a>, <a class="el" href="hf__float_8c_source.html#l00202">b2_hff_rb_n</a>, <a class="el" href="hf__float_8c_source.html#l00085">b2_hff_state</a>, <a class="el" href="hf__float_8c_source.html#l00526">b2_hff_update_gps()</a>, <a class="el" href="hf__float_8c_source.html#l00677">b2_hff_update_x()</a>, <a class="el" href="hf__float_8c_source.html#l00748">b2_hff_update_xdot()</a>, <a class="el" href="hf__float_8c_source.html#l00699">b2_hff_update_y()</a>, <a class="el" href="hf__float_8c_source.html#l00770">b2_hff_update_ydot()</a>, <a class="el" href="gps_8c_source.html#l00033">gps</a>, <a class="el" href="hf__float_8c_source.html#l00064">HFF_R_POS_MIN</a>, <a class="el" href="hf__float_8c_source.html#l00071">HFF_R_SPEED_MIN</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a22787b7744375550b4b631b0fec03bd0">if()</a>, <a class="el" href="hf__float_8h_source.html#l00069">HfilterFloat::lag_counter</a>, <a class="el" href="hf__float_8c_source.html#l00206">lag_counter_err</a>, <a class="el" href="gps_8h_source.html#l00073">GpsState::pacc</a>, <a class="el" href="hf__float_8c_source.html#l00210">past_save_counter</a>, <a class="el" href="hf__float_8c_source.html#l00046">PRINT_DBG</a>, <a class="el" href="hf__float_8c_source.html#l00075">Rgps_pos</a>, <a class="el" href="hf__float_8c_source.html#l00075">Rgps_vel</a>, <a class="el" href="hf__float_8h_source.html#l00070">HfilterFloat::rollback</a>, <a class="el" href="gps_8h_source.html#l00074">GpsState::sacc</a>, <a class="el" href="hf__float_8c_source.html#l00209">save_counter</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00044">FloatVect2::x</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00045">FloatVect2::y</a>.</p>
+<p>References <a class="el" href="hf__float_8c_source.html#l00173">b2_hff_lost_counter</a>, <a class="el" href="hf__float_8c_source.html#l00159">b2_hff_rb_n</a>, <a class="el" href="hf__float_8c_source.html#l00090">b2_hff_state</a>, <a class="el" href="hf__float_8c_source.html#l00477">b2_hff_update_gps()</a>, <a class="el" href="hf__float_8c_source.html#l00628">b2_hff_update_x()</a>, <a class="el" href="hf__float_8c_source.html#l00697">b2_hff_update_xdot()</a>, <a class="el" href="hf__float_8c_source.html#l00650">b2_hff_update_y()</a>, <a class="el" href="hf__float_8c_source.html#l00719">b2_hff_update_ydot()</a>, <a class="el" href="gps_8c_source.html#l00041">gps</a>, <a class="el" href="hf__float_8c_source.html#l00064">HFF_R_POS_MIN</a>, <a class="el" href="hf__float_8c_source.html#l00071">HFF_R_SPEED_MIN</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a22787b7744375550b4b631b0fec03bd0">if()</a>, <a class="el" href="hf__float_8h_source.html#l00069">HfilterFloat::lag_counter</a>, <a class="el" href="hf__float_8c_source.html#l00163">lag_counter_err</a>, <a class="el" href="gps_8h_source.html#l00073">GpsState::pacc</a>, <a class="el" href="hf__float_8c_source.html#l00167">past_save_counter</a>, <a class="el" href="hf__float_8c_source.html#l00046">PRINT_DBG</a>, <a class="el" href="hf__float_8c_source.html#l00080">Rgps_pos</a>, <a class="el" href="hf__float_8c_source.html#l00080">Rgps_vel</a>, <a class="el" href="hf__float_8h_source.html#l00070">HfilterFloat::rollback</a>, <a class="el" href="gps_8h_source.html#l00074">GpsState::sacc</a>, <a class="el" href="hf__float_8c_source.html#l00166">save_counter</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00044">FloatVect2::x</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00045">FloatVect2::y</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00526">b2_hff_update_gps()</a>, and <a class="el" href="ins__int_8c_source.html#l00249">ins_update_gps()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00477">b2_hff_update_gps()</a>, and <a class="el" href="ins__int_8c_source.html#l00276">ins_update_gps()</a>.</p>
 
-<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="hf__float_8c_a9b7bbf147e7e8c8978fb72440539d598_cgraph.png" border="0" usemap="#hf__float_8c_a9b7bbf147e7e8c8978fb72440539d598_cgraph" alt=""/></div>
 <map name="hf__float_8c_a9b7bbf147e7e8c8978fb72440539d598_cgraph" id="hf__float_8c_a9b7bbf147e7e8c8978fb72440539d598_cgraph">
-<area shape="rect" id="node4" href="hf__float_8c.html#adce5673c1914dcb3fa086601c8b36939" title="b2_hff_update_x" alt="" coords="195,5,309,33"/><area shape="rect" id="node6" href="hf__float_8c.html#a5b42318dc157c5686a35307432d7fb95" title="b2_hff_update_xdot" alt="" coords="185,55,319,83"/><area shape="rect" id="node8" href="hf__float_8c.html#a0fa61df808fb070a1ae9e847ff9081ea" title="b2_hff_update_y" alt="" coords="195,106,309,134"/><area shape="rect" id="node10" href="hf__float_8c.html#ad418127e269daab29f229899e618e9fc" title="b2_hff_update_ydot" alt="" coords="185,157,319,185"/><area shape="rect" id="node12" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a22787b7744375550b4b631b0fec03bd0" title="if" alt="" coords="233,207,271,235"/></map>
+<area shape="rect" id="node4" href="hf__float_8c.html#adce5673c1914dcb3fa086601c8b36939" title="b2_hff_update_x" alt="" coords="209,5,335,33"/><area shape="rect" id="node6" href="hf__float_8c.html#a5b42318dc157c5686a35307432d7fb95" title="b2_hff_update_xdot" alt="" coords="199,55,345,83"/><area shape="rect" id="node8" href="hf__float_8c.html#a0fa61df808fb070a1ae9e847ff9081ea" title="b2_hff_update_y" alt="" coords="209,106,335,134"/><area shape="rect" id="node10" href="hf__float_8c.html#ad418127e269daab29f229899e618e9fc" title="b2_hff_update_ydot" alt="" coords="199,157,345,185"/><area shape="rect" id="node12" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a22787b7744375550b4b631b0fec03bd0" title="if" alt="" coords="253,207,291,235"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="hf__float_8c_a9b7bbf147e7e8c8978fb72440539d598_icgraph.png" border="0" usemap="#hf__float_8c_a9b7bbf147e7e8c8978fb72440539d598_icgraph" alt=""/></div>
 <map name="hf__float_8c_a9b7bbf147e7e8c8978fb72440539d598_icgraph" id="hf__float_8c_a9b7bbf147e7e8c8978fb72440539d598_icgraph">
-<area shape="rect" id="node3" href="hf__float_8h.html#a9b7bbf147e7e8c8978fb72440539d598" title="b2_hff_update_gps" alt="" coords="184,29,315,57"/><area shape="rect" id="node6" href="ins__int_8c.html#aacc25a507c5c24309fc37b1f806f5d2b" title="Update INS state with GPS measurements." alt="" coords="364,54,476,82"/></map>
+<area shape="rect" id="node3" href="hf__float_8h.html#a9b7bbf147e7e8c8978fb72440539d598" title="b2_hff_update_gps" alt="" coords="199,29,340,57"/><area shape="rect" id="node6" href="ins__int_8c.html#aacc25a507c5c24309fc37b1f806f5d2b" title="Update INS state with GPS measurements." alt="" coords="389,54,512,82"/></map>
 </div>
 </p>
 
@@ -905,31 +809,18 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00672">672</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00623">623</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>References <a class="el" href="hf__float_8c_source.html#l00085">b2_hff_state</a>, <a class="el" href="hf__float_8c_source.html#l00677">b2_hff_update_x()</a>, <a class="el" href="hf__float_8c_source.html#l00699">b2_hff_update_y()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00044">FloatVect2::x</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00045">FloatVect2::y</a>.</p>
+<p>References <a class="el" href="hf__float_8c_source.html#l00090">b2_hff_state</a>, <a class="el" href="hf__float_8c_source.html#l00628">b2_hff_update_x()</a>, <a class="el" href="hf__float_8c_source.html#l00650">b2_hff_update_y()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00044">FloatVect2::x</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00045">FloatVect2::y</a>.</p>
 
-<p>Referenced by <a class="el" href="cam__track_8c_source.html#l00131">track_event()</a>.</p>
-
-<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="hf__float_8c_a1c37d8eb6e67016fea8398e2f4e05163_cgraph.png" border="0" usemap="#hf__float_8c_a1c37d8eb6e67016fea8398e2f4e05163_cgraph" alt=""/></div>
 <map name="hf__float_8c_a1c37d8eb6e67016fea8398e2f4e05163_cgraph" id="hf__float_8c_a1c37d8eb6e67016fea8398e2f4e05163_cgraph">
-<area shape="rect" id="node3" href="hf__float_8c.html#adce5673c1914dcb3fa086601c8b36939" title="b2_hff_update_x" alt="" coords="185,5,300,33"/><area shape="rect" id="node5" href="hf__float_8c.html#a0fa61df808fb070a1ae9e847ff9081ea" title="b2_hff_update_y" alt="" coords="185,55,300,83"/></map>
-</div>
-</p>
-
-<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="hf__float_8c_a1c37d8eb6e67016fea8398e2f4e05163_icgraph.png" border="0" usemap="#hf__float_8c_a1c37d8eb6e67016fea8398e2f4e05163_icgraph" alt=""/></div>
-<map name="hf__float_8c_a1c37d8eb6e67016fea8398e2f4e05163_icgraph" id="hf__float_8c_a1c37d8eb6e67016fea8398e2f4e05163_icgraph">
-<area shape="rect" id="node3" href="cam__track_8h.html#a516e9822a9f37583616fea983e984897" title="track_event" alt="" coords="184,5,275,33"/></map>
+<area shape="rect" id="node3" href="hf__float_8c.html#adce5673c1914dcb3fa086601c8b36939" title="b2_hff_update_x" alt="" coords="199,5,324,33"/><area shape="rect" id="node5" href="hf__float_8c.html#a0fa61df808fb070a1ae9e847ff9081ea" title="b2_hff_update_y" alt="" coords="199,55,324,83"/></map>
 </div>
 </p>
 
@@ -959,18 +850,18 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00743">743</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00692">692</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>References <a class="el" href="hf__float_8c_source.html#l00085">b2_hff_state</a>, <a class="el" href="hf__float_8c_source.html#l00748">b2_hff_update_xdot()</a>, <a class="el" href="hf__float_8c_source.html#l00770">b2_hff_update_ydot()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00044">FloatVect2::x</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00045">FloatVect2::y</a>.</p>
+<p>References <a class="el" href="hf__float_8c_source.html#l00090">b2_hff_state</a>, <a class="el" href="hf__float_8c_source.html#l00697">b2_hff_update_xdot()</a>, <a class="el" href="hf__float_8c_source.html#l00719">b2_hff_update_ydot()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00044">FloatVect2::x</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00045">FloatVect2::y</a>.</p>
 
-<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="hf__float_8c_a3c837726074cbe49fc93b83c223936de_cgraph.png" border="0" usemap="#hf__float_8c_a3c837726074cbe49fc93b83c223936de_cgraph" alt=""/></div>
 <map name="hf__float_8c_a3c837726074cbe49fc93b83c223936de_cgraph" id="hf__float_8c_a3c837726074cbe49fc93b83c223936de_cgraph">
-<area shape="rect" id="node3" href="hf__float_8c.html#a5b42318dc157c5686a35307432d7fb95" title="b2_hff_update_xdot" alt="" coords="183,5,316,33"/><area shape="rect" id="node5" href="hf__float_8c.html#ad418127e269daab29f229899e618e9fc" title="b2_hff_update_ydot" alt="" coords="183,55,316,83"/></map>
+<area shape="rect" id="node3" href="hf__float_8c.html#a5b42318dc157c5686a35307432d7fb95" title="b2_hff_update_xdot" alt="" coords="193,5,340,33"/><area shape="rect" id="node5" href="hf__float_8c.html#ad418127e269daab29f229899e618e9fc" title="b2_hff_update_ydot" alt="" coords="193,55,340,83"/></map>
 </div>
 </p>
 
@@ -1009,25 +900,25 @@ Variables</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00677">677</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00628">628</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>References <a class="el" href="hf__float_8c_source.html#l00097">b2_hff_x_meas</a>, <a class="el" href="hf__float_8h_source.html#l00059">HfilterFloat::x</a>, <a class="el" href="hf__float_8h_source.html#l00061">HfilterFloat::xdot</a>, and <a class="el" href="hf__float_8h_source.html#l00067">HfilterFloat::xP</a>.</p>
+<p>References <a class="el" href="hf__float_8c_source.html#l00102">b2_hff_x_meas</a>, <a class="el" href="hf__float_8h_source.html#l00059">HfilterFloat::x</a>, <a class="el" href="hf__float_8h_source.html#l00061">HfilterFloat::xdot</a>, and <a class="el" href="hf__float_8h_source.html#l00067">HfilterFloat::xP</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00526">b2_hff_update_gps()</a>, and <a class="el" href="hf__float_8c_source.html#l00672">b2_hff_update_pos()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00477">b2_hff_update_gps()</a>, and <a class="el" href="hf__float_8c_source.html#l00623">b2_hff_update_pos()</a>.</p>
 
-<p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="hf__float_8c_adce5673c1914dcb3fa086601c8b36939_icgraph.png" border="0" usemap="#hf__float_8c_adce5673c1914dcb3fa086601c8b36939_icgraph" alt=""/></div>
 <map name="hf__float_8c_adce5673c1914dcb3fa086601c8b36939_icgraph" id="hf__float_8c_adce5673c1914dcb3fa086601c8b36939_icgraph">
-<area shape="rect" id="node3" href="hf__float_8h.html#a9b7bbf147e7e8c8978fb72440539d598" title="b2_hff_update_gps" alt="" coords="171,29,301,57"/><area shape="rect" id="node8" href="hf__float_8h.html#a1c37d8eb6e67016fea8398e2f4e05163" title="b2_hff_update_pos" alt="" coords="171,79,301,107"/><area shape="rect" id="node6" href="ins__int_8c.html#aacc25a507c5c24309fc37b1f806f5d2b" title="Update INS state with GPS measurements." alt="" coords="351,29,463,57"/><area shape="rect" id="node10" href="cam__track_8h.html#a516e9822a9f37583616fea983e984897" title="track_event" alt="" coords="361,79,452,107"/></map>
+<area shape="rect" id="node3" href="hf__float_8h.html#a9b7bbf147e7e8c8978fb72440539d598" title="b2_hff_update_gps" alt="" coords="183,29,324,57"/><area shape="rect" id="node8" href="hf__float_8h.html#a1c37d8eb6e67016fea8398e2f4e05163" title="b2_hff_update_pos" alt="" coords="183,79,324,107"/><area shape="rect" id="node6" href="ins__int_8c.html#aacc25a507c5c24309fc37b1f806f5d2b" title="Update INS state with GPS measurements." alt="" coords="373,29,496,57"/></map>
 </div>
 </p>
 
@@ -1066,25 +957,25 @@ Variables</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00748">748</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00697">697</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>References <a class="el" href="hf__float_8c_source.html#l00093">b2_hff_xd_meas</a>, <a class="el" href="hf__float_8h_source.html#l00059">HfilterFloat::x</a>, <a class="el" href="hf__float_8h_source.html#l00061">HfilterFloat::xdot</a>, and <a class="el" href="hf__float_8h_source.html#l00067">HfilterFloat::xP</a>.</p>
+<p>References <a class="el" href="hf__float_8c_source.html#l00098">b2_hff_xd_meas</a>, <a class="el" href="hf__float_8h_source.html#l00059">HfilterFloat::x</a>, <a class="el" href="hf__float_8h_source.html#l00061">HfilterFloat::xdot</a>, and <a class="el" href="hf__float_8h_source.html#l00067">HfilterFloat::xP</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00526">b2_hff_update_gps()</a>, and <a class="el" href="hf__float_8c_source.html#l00743">b2_hff_update_vel()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00477">b2_hff_update_gps()</a>, and <a class="el" href="hf__float_8c_source.html#l00692">b2_hff_update_vel()</a>.</p>
 
-<p><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="hf__float_8c_a5b42318dc157c5686a35307432d7fb95_icgraph.png" border="0" usemap="#hf__float_8c_a5b42318dc157c5686a35307432d7fb95_icgraph" alt=""/></div>
 <map name="hf__float_8c_a5b42318dc157c5686a35307432d7fb95_icgraph" id="hf__float_8c_a5b42318dc157c5686a35307432d7fb95_icgraph">
-<area shape="rect" id="node3" href="hf__float_8h.html#a9b7bbf147e7e8c8978fb72440539d598" title="b2_hff_update_gps" alt="" coords="189,29,320,57"/><area shape="rect" id="node8" href="hf__float_8h.html#a3c837726074cbe49fc93b83c223936de" title="b2_hff_update_vel" alt="" coords="192,79,317,107"/><area shape="rect" id="node6" href="ins__int_8c.html#aacc25a507c5c24309fc37b1f806f5d2b" title="Update INS state with GPS measurements." alt="" coords="369,29,481,57"/></map>
+<area shape="rect" id="node3" href="hf__float_8h.html#a9b7bbf147e7e8c8978fb72440539d598" title="b2_hff_update_gps" alt="" coords="204,29,345,57"/><area shape="rect" id="node8" href="hf__float_8h.html#a3c837726074cbe49fc93b83c223936de" title="b2_hff_update_vel" alt="" coords="205,79,344,107"/><area shape="rect" id="node6" href="ins__int_8c.html#aacc25a507c5c24309fc37b1f806f5d2b" title="Update INS state with GPS measurements." alt="" coords="395,29,517,57"/></map>
 </div>
 </p>
 
@@ -1123,25 +1014,25 @@ Variables</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00699">699</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00650">650</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>References <a class="el" href="hf__float_8c_source.html#l00098">b2_hff_y_meas</a>, <a class="el" href="hf__float_8h_source.html#l00063">HfilterFloat::y</a>, <a class="el" href="hf__float_8h_source.html#l00065">HfilterFloat::ydot</a>, and <a class="el" href="hf__float_8h_source.html#l00068">HfilterFloat::yP</a>.</p>
+<p>References <a class="el" href="hf__float_8c_source.html#l00103">b2_hff_y_meas</a>, <a class="el" href="hf__float_8h_source.html#l00063">HfilterFloat::y</a>, <a class="el" href="hf__float_8h_source.html#l00065">HfilterFloat::ydot</a>, and <a class="el" href="hf__float_8h_source.html#l00068">HfilterFloat::yP</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00526">b2_hff_update_gps()</a>, and <a class="el" href="hf__float_8c_source.html#l00672">b2_hff_update_pos()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00477">b2_hff_update_gps()</a>, and <a class="el" href="hf__float_8c_source.html#l00623">b2_hff_update_pos()</a>.</p>
 
-<p><div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="hf__float_8c_a0fa61df808fb070a1ae9e847ff9081ea_icgraph.png" border="0" usemap="#hf__float_8c_a0fa61df808fb070a1ae9e847ff9081ea_icgraph" alt=""/></div>
 <map name="hf__float_8c_a0fa61df808fb070a1ae9e847ff9081ea_icgraph" id="hf__float_8c_a0fa61df808fb070a1ae9e847ff9081ea_icgraph">
-<area shape="rect" id="node3" href="hf__float_8h.html#a9b7bbf147e7e8c8978fb72440539d598" title="b2_hff_update_gps" alt="" coords="171,29,301,57"/><area shape="rect" id="node8" href="hf__float_8h.html#a1c37d8eb6e67016fea8398e2f4e05163" title="b2_hff_update_pos" alt="" coords="171,79,301,107"/><area shape="rect" id="node6" href="ins__int_8c.html#aacc25a507c5c24309fc37b1f806f5d2b" title="Update INS state with GPS measurements." alt="" coords="351,29,463,57"/><area shape="rect" id="node10" href="cam__track_8h.html#a516e9822a9f37583616fea983e984897" title="track_event" alt="" coords="361,79,452,107"/></map>
+<area shape="rect" id="node3" href="hf__float_8h.html#a9b7bbf147e7e8c8978fb72440539d598" title="b2_hff_update_gps" alt="" coords="183,29,324,57"/><area shape="rect" id="node8" href="hf__float_8h.html#a1c37d8eb6e67016fea8398e2f4e05163" title="b2_hff_update_pos" alt="" coords="183,79,324,107"/><area shape="rect" id="node6" href="ins__int_8c.html#aacc25a507c5c24309fc37b1f806f5d2b" title="Update INS state with GPS measurements." alt="" coords="373,29,496,57"/></map>
 </div>
 </p>
 
@@ -1180,63 +1071,31 @@ Variables</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00770">770</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00719">719</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>References <a class="el" href="hf__float_8c_source.html#l00094">b2_hff_yd_meas</a>, <a class="el" href="hf__float_8h_source.html#l00063">HfilterFloat::y</a>, <a class="el" href="hf__float_8h_source.html#l00065">HfilterFloat::ydot</a>, and <a class="el" href="hf__float_8h_source.html#l00068">HfilterFloat::yP</a>.</p>
+<p>References <a class="el" href="hf__float_8c_source.html#l00099">b2_hff_yd_meas</a>, <a class="el" href="hf__float_8h_source.html#l00063">HfilterFloat::y</a>, <a class="el" href="hf__float_8h_source.html#l00065">HfilterFloat::ydot</a>, and <a class="el" href="hf__float_8h_source.html#l00068">HfilterFloat::yP</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00526">b2_hff_update_gps()</a>, and <a class="el" href="hf__float_8c_source.html#l00743">b2_hff_update_vel()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00477">b2_hff_update_gps()</a>, and <a class="el" href="hf__float_8c_source.html#l00692">b2_hff_update_vel()</a>.</p>
 
-<p><div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="hf__float_8c_ad418127e269daab29f229899e618e9fc_icgraph.png" border="0" usemap="#hf__float_8c_ad418127e269daab29f229899e618e9fc_icgraph" alt=""/></div>
 <map name="hf__float_8c_ad418127e269daab29f229899e618e9fc_icgraph" id="hf__float_8c_ad418127e269daab29f229899e618e9fc_icgraph">
-<area shape="rect" id="node3" href="hf__float_8h.html#a9b7bbf147e7e8c8978fb72440539d598" title="b2_hff_update_gps" alt="" coords="189,29,320,57"/><area shape="rect" id="node8" href="hf__float_8h.html#a3c837726074cbe49fc93b83c223936de" title="b2_hff_update_vel" alt="" coords="192,79,317,107"/><area shape="rect" id="node6" href="ins__int_8c.html#aacc25a507c5c24309fc37b1f806f5d2b" title="Update INS state with GPS measurements." alt="" coords="369,29,481,57"/></map>
+<area shape="rect" id="node3" href="hf__float_8h.html#a9b7bbf147e7e8c8978fb72440539d598" title="b2_hff_update_gps" alt="" coords="204,29,345,57"/><area shape="rect" id="node8" href="hf__float_8h.html#a3c837726074cbe49fc93b83c223936de" title="b2_hff_update_vel" alt="" coords="205,79,344,107"/><area shape="rect" id="node6" href="ins__int_8c.html#aacc25a507c5c24309fc37b1f806f5d2b" title="Update INS state with GPS measurements." alt="" coords="395,29,517,57"/></map>
 </div>
 </p>
 
 </div>
 </div>
 <h2>Variable Documentation</h2>
-<a class="anchor" id="aa778a18917fb489f09c7ffa75527fd07"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structAccBuf.html">AccBuf</a> acc_body</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00115">115</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
-
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00131">b2_hff_compute_accel_body_mean()</a>, <a class="el" href="hf__float_8c_source.html#l00275">b2_hff_init()</a>, and <a class="el" href="hf__float_8c_source.html#l00118">b2_hff_store_accel_body()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5ed3a79f18327ff6a2885f56b1a81c91"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structInt32Vect3.html">Int32Vect3</a> acc_body_mean</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00116">116</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
-
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00131">b2_hff_compute_accel_body_mean()</a>, and <a class="el" href="hf__float_8c_source.html#l00467">b2_hff_propagate()</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a968693a83920785956729b914c148eb9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1247,9 +1106,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00216">216</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00173">173</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00275">b2_hff_init()</a>, <a class="el" href="hf__float_8c_source.html#l00467">b2_hff_propagate()</a>, <a class="el" href="hf__float_8c_source.html#l00526">b2_hff_update_gps()</a>, and <a class="el" href="cam__track_8c_source.html#l00131">track_event()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00231">b2_hff_init()</a>, <a class="el" href="hf__float_8c_source.html#l00419">b2_hff_propagate()</a>, and <a class="el" href="hf__float_8c_source.html#l00477">b2_hff_update_gps()</a>.</p>
 
 </div>
 </div>
@@ -1263,9 +1122,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00215">215</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00172">172</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00275">b2_hff_init()</a>, and <a class="el" href="hf__float_8c_source.html#l00467">b2_hff_propagate()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00231">b2_hff_init()</a>, and <a class="el" href="hf__float_8c_source.html#l00419">b2_hff_propagate()</a>.</p>
 
 </div>
 </div>
@@ -1279,9 +1138,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00101">101</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00106">106</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00275">b2_hff_init()</a>, and <a class="el" href="hf__float_8c_source.html#l00467">b2_hff_propagate()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00231">b2_hff_init()</a>, and <a class="el" href="hf__float_8c_source.html#l00419">b2_hff_propagate()</a>.</p>
 
 </div>
 </div>
@@ -1295,7 +1154,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00201">201</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00158">158</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
 </div>
 </div>
@@ -1309,9 +1168,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00202">202</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00159">159</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00275">b2_hff_init()</a>, <a class="el" href="hf__float_8c_source.html#l00467">b2_hff_propagate()</a>, <a class="el" href="hf__float_8c_source.html#l00584">b2_hff_realign()</a>, and <a class="el" href="hf__float_8c_source.html#l00526">b2_hff_update_gps()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00231">b2_hff_init()</a>, <a class="el" href="hf__float_8c_source.html#l00419">b2_hff_propagate()</a>, <a class="el" href="hf__float_8c_source.html#l00535">b2_hff_realign()</a>, and <a class="el" href="hf__float_8c_source.html#l00477">b2_hff_update_gps()</a>.</p>
 
 </div>
 </div>
@@ -1325,9 +1184,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00085">85</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00090">90</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00275">b2_hff_init()</a>, <a class="el" href="hf__float_8c_source.html#l00324">b2_hff_init_x()</a>, <a class="el" href="hf__float_8c_source.html#l00336">b2_hff_init_y()</a>, <a class="el" href="hf__float_8c_source.html#l00467">b2_hff_propagate()</a>, <a class="el" href="hf__float_8c_source.html#l00584">b2_hff_realign()</a>, <a class="el" href="hf__float_8c_source.html#l00526">b2_hff_update_gps()</a>, <a class="el" href="hf__float_8c_source.html#l00672">b2_hff_update_pos()</a>, <a class="el" href="hf__float_8c_source.html#l00743">b2_hff_update_vel()</a>, and <a class="el" href="cam__track_8c_source.html#l00131">track_event()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00231">b2_hff_init()</a>, <a class="el" href="hf__float_8c_source.html#l00279">b2_hff_init_x()</a>, <a class="el" href="hf__float_8c_source.html#l00290">b2_hff_init_y()</a>, <a class="el" href="hf__float_8c_source.html#l00419">b2_hff_propagate()</a>, <a class="el" href="hf__float_8c_source.html#l00535">b2_hff_realign()</a>, <a class="el" href="hf__float_8c_source.html#l00477">b2_hff_update_gps()</a>, <a class="el" href="hf__float_8c_source.html#l00623">b2_hff_update_pos()</a>, and <a class="el" href="hf__float_8c_source.html#l00692">b2_hff_update_vel()</a>.</p>
 
 </div>
 </div>
@@ -1341,9 +1200,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00097">97</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00102">102</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00677">b2_hff_update_x()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00628">b2_hff_update_x()</a>.</p>
 
 </div>
 </div>
@@ -1357,9 +1216,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00093">93</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00098">98</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00748">b2_hff_update_xdot()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00697">b2_hff_update_xdot()</a>.</p>
 
 </div>
 </div>
@@ -1373,9 +1232,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00089">89</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00094">94</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00467">b2_hff_propagate()</a>, and <a class="el" href="hf__float_8c_source.html#l00618">b2_hff_propagate_x()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00419">b2_hff_propagate()</a>, and <a class="el" href="hf__float_8c_source.html#l00569">b2_hff_propagate_x()</a>.</p>
 
 </div>
 </div>
@@ -1389,9 +1248,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00098">98</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00103">103</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00699">b2_hff_update_y()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00650">b2_hff_update_y()</a>.</p>
 
 </div>
 </div>
@@ -1405,9 +1264,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00094">94</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00099">99</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00770">b2_hff_update_ydot()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00719">b2_hff_update_ydot()</a>.</p>
 
 </div>
 </div>
@@ -1421,9 +1280,51 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00090">90</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00095">95</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00467">b2_hff_propagate()</a>, and <a class="el" href="hf__float_8c_source.html#l00635">b2_hff_propagate_y()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00419">b2_hff_propagate()</a>, and <a class="el" href="hf__float_8c_source.html#l00586">b2_hff_propagate_y()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afdb654ec9b7836802d036412dfd8ba09"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="low__pass__filter_8h.html#a95c2f4c4aad6babb08101b2950fc1917">Butterworth2LowPass_int</a> filter_x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00075">75</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a70ccbd56ba5cebf0f68f8c8249f6ab0e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="low__pass__filter_8h.html#a95c2f4c4aad6babb08101b2950fc1917">Butterworth2LowPass_int</a> filter_y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00076">76</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1c5039e7e44e6773680ce40c1c5df75b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="low__pass__filter_8h.html#a95c2f4c4aad6babb08101b2950fc1917">Butterworth2LowPass_int</a> filter_z</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00077">77</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
 </div>
 </div>
@@ -1437,9 +1338,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00206">206</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00163">163</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00275">b2_hff_init()</a>, and <a class="el" href="hf__float_8c_source.html#l00526">b2_hff_update_gps()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00231">b2_hff_init()</a>, and <a class="el" href="hf__float_8c_source.html#l00477">b2_hff_update_gps()</a>.</p>
 
 </div>
 </div>
@@ -1453,9 +1354,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00210">210</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00167">167</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00275">b2_hff_init()</a>, <a class="el" href="hf__float_8c_source.html#l00584">b2_hff_realign()</a>, and <a class="el" href="hf__float_8c_source.html#l00526">b2_hff_update_gps()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00231">b2_hff_init()</a>, <a class="el" href="hf__float_8c_source.html#l00535">b2_hff_realign()</a>, and <a class="el" href="hf__float_8c_source.html#l00477">b2_hff_update_gps()</a>.</p>
 
 </div>
 </div>
@@ -1469,9 +1370,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00075">75</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00080">80</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00275">b2_hff_init()</a>, and <a class="el" href="hf__float_8c_source.html#l00526">b2_hff_update_gps()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00231">b2_hff_init()</a>, and <a class="el" href="hf__float_8c_source.html#l00477">b2_hff_update_gps()</a>.</p>
 
 </div>
 </div>
@@ -1485,9 +1386,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00075">75</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00080">80</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00275">b2_hff_init()</a>, and <a class="el" href="hf__float_8c_source.html#l00526">b2_hff_update_gps()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00231">b2_hff_init()</a>, and <a class="el" href="hf__float_8c_source.html#l00477">b2_hff_update_gps()</a>.</p>
 
 </div>
 </div>
@@ -1501,9 +1402,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00209">209</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
+<p>Definition at line <a class="el" href="hf__float_8c_source.html#l00166">166</a> of file <a class="el" href="hf__float_8c_source.html">hf_float.c</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00275">b2_hff_init()</a>, <a class="el" href="hf__float_8c_source.html#l00467">b2_hff_propagate()</a>, <a class="el" href="hf__float_8c_source.html#l00584">b2_hff_realign()</a>, and <a class="el" href="hf__float_8c_source.html#l00526">b2_hff_update_gps()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00231">b2_hff_init()</a>, <a class="el" href="hf__float_8c_source.html#l00419">b2_hff_propagate()</a>, <a class="el" href="hf__float_8c_source.html#l00535">b2_hff_realign()</a>, and <a class="el" href="hf__float_8c_source.html#l00477">b2_hff_update_gps()</a>.</p>
 
 </div>
 </div>
@@ -1513,7 +1414,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_800f0b451dc44a2b86d16d857cea778d.html">ins</a></li><li class="navelem"><a class="el" href="hf__float_8c.html">hf_float.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:11 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:09 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

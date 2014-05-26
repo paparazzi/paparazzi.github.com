@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('ami601_8h_source.html','');});
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="ami601_8h.html#a76644df0ca2d0e1f379bd8a32b607cde">   22</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AMI601_READING_MEASURE 3</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="ami601_8h.html#a303b86e3946e6401c7786c614fdae26e">   23</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AMI601_DATA_AVAILABLE  4</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="keyword">volatile</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>  <a class="code" href="ami601_8c.html#a6bed21fcbc9d3cc04d1d46debaf38441">ami601_status</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="structi2c__transaction.html">i2c_transaction</a>  <a class="code" href="ami601_8c.html#a4da0ca05c9021983ee7b13f4c2e73d26">ami601_i2c_trans</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="structi2c__transaction.html" title="I2C transaction structure.">i2c_transaction</a>  <a class="code" href="ami601_8c.html#a4da0ca05c9021983ee7b13f4c2e73d26">ami601_i2c_trans</a>;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">extern</span> <span class="keyword">volatile</span> <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="ami601_8c.html#a7e426abe308781deb72e818563885b29">ami601_nb_err</a>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="ami601_8h.html#a9b4f4a8f027fb2a7e3b0fce58d90d45a">   28</a></span>&#160;<span class="preprocessor">#define AMI601_SLAVE_ADDR 0x60</span></div>
@@ -139,52 +139,54 @@ $(document).ready(function(){initNavTree('ami601_8h_source.html','');});
 <div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="ami601_8h.html#ac03610dde8bea07924256e92925c9877">   30</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AMI601_ISR()  {}</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#ifdef SITL</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AMI601Event(_handler) {                                         \</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">  if (ami601_status == AMI601_DATA_AVAILABLE)                           \</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">      _handler();                                                       \</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AMI601Event(_handler) {                 \</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">    if (ami601_status == AMI601_DATA_AVAILABLE) \</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">      _handler();                               \</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">  }</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="ami601_8h.html#ac9d3ff5522367180586ee25c046b38f7">   38</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define AMI601Event(_handler) {                                         \</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">  switch (ami601_status) {                                              \</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">    case AMI601_SENDING_REQ :                                           \</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">      if ( ami601_i2c_trans.status == I2CTransSuccess ) {               \</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">        ami601_status =  AMI601_WAITING_MEASURE;                        \</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">      }                                                                 \</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">      break;                                                            \</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">    case AMI601_WAITING_MEASURE :                                       \</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">      ami601_status =  AMI601_READING_MEASURE;                          \</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">      ami601_i2c_trans.type = I2CTransRx;                               \</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">      ami601_i2c_trans.len_r = 15;                                      \</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">      i2c_submit(&amp;i2c1, &amp;ami601_i2c_trans);                             \</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">      break;                                                            \</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">    case AMI601_READING_MEASURE :                                       \</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">      if ( ami601_i2c_trans.status == I2CTransSuccess ) {               \</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">        ami601_foo1 = ami601_i2c_trans.buf[0]; </span><span class="comment">/* AA ?  */</span><span class="preprocessor">              \</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">        ami601_foo2 = ami601_i2c_trans.buf[1]; </span><span class="comment">/* 55 ?  */</span><span class="preprocessor">              \</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">        ami601_foo3 = ami601_i2c_trans.buf[2]; </span><span class="comment">/* ERR ? */</span><span class="preprocessor">              \</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">        uint8_t i;                                                      \</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">        for (i=0; i&lt; AMI601_NB_CHAN; i++) {                             \</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">          ami601_values[i]  = ami601_i2c_trans.buf[3 + 2 * i];          \</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">          ami601_values[i] += ami601_i2c_trans.buf[3 + 2 * i + 1] * 256;\</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">        }                                                               \</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">        ami601_status = AMI601_DATA_AVAILABLE;                          \</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">        _handler();                                                     \</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">      }                                                                 \</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">    break;                                                              \</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">  }                                                                     \</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">}</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* AMI601_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">    switch (ami601_status) {                                            \</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">      case AMI601_SENDING_REQ :                                         \</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">        if ( ami601_i2c_trans.status == I2CTransSuccess ) {             \</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">        ami601_status =  AMI601_WAITING_MEASURE;                      \</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">        }                                                               \</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">        break;                                                          \</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">      case AMI601_WAITING_MEASURE :                                     \</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">        ami601_status =  AMI601_READING_MEASURE;                        \</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">        ami601_i2c_trans.type = I2CTransRx;                             \</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">        ami601_i2c_trans.len_r = 15;                                    \</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">        i2c_submit(&amp;i2c1, &amp;ami601_i2c_trans);                           \</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">        break;                                                          \</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">      case AMI601_READING_MEASURE :                                     \</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">        if ( ami601_i2c_trans.status == I2CTransSuccess ) {             \</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">        ami601_foo1 = ami601_i2c_trans.buf[0]; </span><span class="comment">/* AA ?  */</span><span class="preprocessor">            \</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">        ami601_foo2 = ami601_i2c_trans.buf[1]; </span><span class="comment">/* 55 ?  */</span><span class="preprocessor">            \</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">        ami601_foo3 = ami601_i2c_trans.buf[2]; </span><span class="comment">/* ERR ? */</span><span class="preprocessor">            \</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">        uint8_t i;                                                    \</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">        for (i=0; i&lt; AMI601_NB_CHAN; i++) {                           \</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">          ami601_values[i]  = ami601_i2c_trans.buf[3 + 2 * i];        \</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">          ami601_values[i] += ami601_i2c_trans.buf[3 + 2 * i + 1] * 256; \</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">        }                                                             \</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">        ami601_status = AMI601_DATA_AVAILABLE;                        \</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">        _handler();                                                   \</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">        }                                                               \</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">        break;                                                          \</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">      default:                                                          \</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">        break;                                                          \</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">    }                                                                   \</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">  }</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* AMI601_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="ami601_8h.html">ami601.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:43 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

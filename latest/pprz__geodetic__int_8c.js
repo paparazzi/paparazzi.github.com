@@ -1,6 +1,5 @@
 var pprz__geodetic__int_8c =
 [
-    [ "HIGH_RES_TRIG_FRAC", "pprz__geodetic__int_8c.html#a6d38b5f61c7150a89add372e91650595", null ],
     [ "ecef_of_enu_point_i", "pprz__geodetic__int_8c.html#ad8c22560014d3cb00cccd50f9b79478d", null ],
     [ "ecef_of_enu_pos_i", "pprz__geodetic__int_8c.html#aaeff7441301129ca712e828b9b4f474e", null ],
     [ "ecef_of_enu_vect_i", "pprz__geodetic__int_8c.html#aabe6e63048c95afdffdd4a581dc5f2b8", null ],

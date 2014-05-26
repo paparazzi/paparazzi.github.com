@@ -34,6 +34,8 @@ var w5100_8c =
     [ "SOCKETS", "w5100_8c.html#a4922ca8ccdd9ce56b2457d477a6c88d1", null ],
     [ "TELEM_SOCKET", "w5100_8c.html#ad9e6b49b12cd9c7ea56b37a36d7e3407", null ],
     [ "TXBUF_BASE", "w5100_8c.html#acd3caafdf38d3dd4bf97d4dd8da30f50", null ],
+    [ "W5100_DRDY_GPIO", "w5100_8c.html#a773684072d62ac9f0479783de9e6f4a2", null ],
+    [ "W5100_DRDY_GPIO_PIN", "w5100_8c.html#aa35df547875649ddf4f6cd0aa7a01121", null ],
     [ "W5100_SLAVE_IDX", "w5100_8c.html#a7972983695fe0e1fc867196359ce0a86", null ],
     [ "W5100_SPI_DEV", "w5100_8c.html#aa3af4f16178f96f9162b967d4efc9f8e", null ],
     [ "configure_socket", "w5100_8c.html#ad88334d2cf04bfaad89b0f8a4c5239a4", null ],
@@ -62,10 +64,10 @@ var w5100_8c =
     [ "RBASE", "w5100_8c.html#ab0d925a91f3413188da5760bcb0ab134", null ],
     [ "RSIZE", "w5100_8c.html#a80a9583c56581301cc2877a18176b654", null ],
     [ "RST", "w5100_8c.html#a627f213804256ddcafeb943052fa63e5", null ],
-    [ "rx_buf", "w5100_8c.html#a0e465b84aa569b64e943366158b67b93", null ],
     [ "SBASE", "w5100_8c.html#ad5418936576f4ba56fbdb5f0ceea968a", null ],
     [ "SSIZE", "w5100_8c.html#a79b71d620c1b85a9987045b9faec417b", null ],
     [ "subnet", "w5100_8c.html#a77df0a4bb15ed6f86b91f4afe49b09e1", null ],
+    [ "w5100_rx_buf", "w5100_8c.html#aaf8c4df492a46538b29a1787dd03abe9", null ],
     [ "w5100_spi", "w5100_8c.html#aca7e83929212b5df9f13df77ba480a6d", null ],
     [ "w5100_tp", "w5100_8c.html#aaf33508c9c49aa3ee2c8fcf2deda8325", null ]
 ];

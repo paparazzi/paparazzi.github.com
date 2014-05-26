@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2imu_2imu__crista__a
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2subsystems_2imu_2imu__crista__arch_8c__incl.png" border="0" usemap="#sw_2airborne_2arch_2stm32_2subsystems_2imu_2imu__crista__arch_8c" alt=""/></div>
 <map name="sw_2airborne_2arch_2stm32_2subsystems_2imu_2imu__crista__arch_8c" id="sw_2airborne_2arch_2stm32_2subsystems_2imu_2imu__crista__arch_8c">
-<area shape="rect" id="node3" href="imu_8h.html" title="Inertial Measurement Unit interface." alt="" coords="317,115,443,143"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="85,193,243,221"/><area shape="rect" id="node22" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="296,193,464,221"/><area shape="rect" id="node9" href="pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="265,270,404,298"/><area shape="rect" id="node16" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="23,270,156,298"/></map>
+<area shape="rect" id="node3" href="imu_8h.html" title="Inertial Measurement Unit interface." alt="" coords="346,115,484,143"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="88,193,267,221"/><area shape="rect" id="node22" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="320,193,510,221"/><area shape="rect" id="node9" href="pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="287,270,442,298"/><area shape="rect" id="node16" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="23,270,172,298"/></map>
 </div>
 </div>
 <p><a href="stm32_2subsystems_2imu_2imu__crista__arch_8c_source.html">Go to the source code of this file.</a></p>
@@ -133,8 +133,8 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2imu_2imu__crista__a
 Macros</h2></td></tr>
 <tr class="memitem:a4e7bf0c205872c6db180b06792a62118"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2imu_2imu__crista__arch_8c.html#a4e7bf0c205872c6db180b06792a62118">POWER_MODE</a>&#160;&#160;&#160;(1 &lt;&lt; 1 | 1)</td></tr>
 <tr class="memitem:a87866f9987fb38ca70a19a737bbd0628"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2imu_2imu__crista__arch_8c.html#a87866f9987fb38ca70a19a737bbd0628">SGL_DIF</a>&#160;&#160;&#160;1</td></tr>
-<tr class="memitem:aa9817622c338285730aca3a5c84c289c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2imu_2imu__crista__arch_8c.html#aa9817622c338285730aca3a5c84c289c">ADS8344Unselect</a>()&#160;&#160;&#160;GPIOB-&gt;BSRR = GPIO_Pin_12</td></tr>
-<tr class="memitem:a3c7550edc886553fe543850409648513"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2imu_2imu__crista__arch_8c.html#a3c7550edc886553fe543850409648513">ADS8344Select</a>()&#160;&#160;&#160;GPIOB-&gt;BRR  = GPIO_Pin_12</td></tr>
+<tr class="memitem:aa9817622c338285730aca3a5c84c289c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2imu_2imu__crista__arch_8c.html#aa9817622c338285730aca3a5c84c289c">ADS8344Unselect</a>()&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a68b66ac73be4c836db878a42e1fea3cd">GPIOB</a>-&gt;BSRR = GPIO_Pin_12</td></tr>
+<tr class="memitem:a3c7550edc886553fe543850409648513"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2imu_2imu__crista__arch_8c.html#a3c7550edc886553fe543850409648513">ADS8344Select</a>()&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a68b66ac73be4c836db878a42e1fea3cd">GPIOB</a>-&gt;BRR  = GPIO_Pin_12</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -158,7 +158,7 @@ Variables</h2></td></tr>
           <td class="memname">#define ADS8344Select</td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;GPIOB-&gt;BRR  = GPIO_Pin_12</td>
+          <td>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a68b66ac73be4c836db878a42e1fea3cd">GPIOB</a>-&gt;BRR  = GPIO_Pin_12</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -177,7 +177,7 @@ Variables</h2></td></tr>
           <td class="memname">#define ADS8344Unselect</td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;GPIOB-&gt;BSRR = GPIO_Pin_12</td>
+          <td>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a68b66ac73be4c836db878a42e1fea3cd">GPIOB</a>-&gt;BSRR = GPIO_Pin_12</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -256,7 +256,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2subsystems_2imu_2imu__crista__arch_8c_a72dcb7ac06dbc793baf3b3b6575f5d2d_cgraph.png" border="0" usemap="#stm32_2subsystems_2imu_2imu__crista__arch_8c_a72dcb7ac06dbc793baf3b3b6575f5d2d_cgraph" alt=""/></div>
 <map name="stm32_2subsystems_2imu_2imu__crista__arch_8c_a72dcb7ac06dbc793baf3b3b6575f5d2d_cgraph" id="stm32_2subsystems_2imu_2imu__crista__arch_8c_a72dcb7ac06dbc793baf3b3b6575f5d2d_cgraph">
-<area shape="rect" id="node3" href="lpc21_2subsystems_2imu_2imu__aspirin__arch_8c.html#a4a669b9d2efca9fcda5db4b642a990e4" title="dma1_c4_irq_handler" alt="" coords="217,5,361,33"/></map>
+<area shape="rect" id="node3" href="lpc21_2subsystems_2imu_2imu__aspirin__arch_8c.html#a4a669b9d2efca9fcda5db4b642a990e4" title="dma1_c4_irq_handler" alt="" coords="231,5,388,33"/></map>
 </div>
 </p>
 
@@ -267,7 +267,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2subsystems_2imu_2imu__crista__arch_8c_a72dcb7ac06dbc793baf3b3b6575f5d2d_icgraph.png" border="0" usemap="#stm32_2subsystems_2imu_2imu__crista__arch_8c_a72dcb7ac06dbc793baf3b3b6575f5d2d_icgraph" alt=""/></div>
 <map name="stm32_2subsystems_2imu_2imu__crista__arch_8c_a72dcb7ac06dbc793baf3b3b6575f5d2d_icgraph" id="stm32_2subsystems_2imu_2imu__crista__arch_8c_a72dcb7ac06dbc793baf3b3b6575f5d2d_icgraph">
-<area shape="rect" id="node3" href="stm32_2subsystems_2imu_2imu__crista__arch_8c.html#a998b4ce1e557d7dd9256f33a85c1ec37" title="ADS8344_start" alt="" coords="217,5,327,33"/></map>
+<area shape="rect" id="node3" href="stm32_2subsystems_2imu_2imu__crista__arch_8c.html#a998b4ce1e557d7dd9256f33a85c1ec37" title="ADS8344_start" alt="" coords="231,5,348,33"/></map>
 </div>
 </p>
 
@@ -298,7 +298,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2subsystems_2imu_2imu__crista__arch_8c_a998b4ce1e557d7dd9256f33a85c1ec37_cgraph.png" border="0" usemap="#stm32_2subsystems_2imu_2imu__crista__arch_8c_a998b4ce1e557d7dd9256f33a85c1ec37_cgraph" alt=""/></div>
 <map name="stm32_2subsystems_2imu_2imu__crista__arch_8c_a998b4ce1e557d7dd9256f33a85c1ec37_cgraph" id="stm32_2subsystems_2imu_2imu__crista__arch_8c_a998b4ce1e557d7dd9256f33a85c1ec37_cgraph">
-<area shape="rect" id="node3" href="stm32_2subsystems_2imu_2imu__crista__arch_8c.html#a72dcb7ac06dbc793baf3b3b6575f5d2d" title="ADS8344_read_channel" alt="" coords="167,5,327,33"/><area shape="rect" id="node7" href="ADS8344_8c.html#a3f17d7c8cdacbbfc2ee4cb8609fdb83a" title="send_request" alt="" coords="197,55,296,83"/><area shape="rect" id="node9" href="lpc21_2mcu__periph_2spi__arch_8c.html#a4c328147d259ed459aa71ba246bbf1cf" title="SpiClearRti" alt="" coords="204,106,289,134"/><area shape="rect" id="node11" href="lpc21_2mcu__periph_2spi__arch_8c.html#a2f597567924a3000e5afb340e4aa5592" title="SpiEnableRti" alt="" coords="199,157,295,185"/><area shape="rect" id="node5" href="lpc21_2subsystems_2imu_2imu__aspirin__arch_8c.html#a4a669b9d2efca9fcda5db4b642a990e4" title="dma1_c4_irq_handler" alt="" coords="377,5,521,33"/></map>
+<area shape="rect" id="node3" href="stm32_2subsystems_2imu_2imu__crista__arch_8c.html#a72dcb7ac06dbc793baf3b3b6575f5d2d" title="ADS8344_read_channel" alt="" coords="175,5,348,33"/><area shape="rect" id="node7" href="ADS8344_8c.html#a3f17d7c8cdacbbfc2ee4cb8609fdb83a" title="send_request" alt="" coords="207,55,316,83"/><area shape="rect" id="node9" href="lpc21_2mcu__periph_2spi__arch_8c.html#a4c328147d259ed459aa71ba246bbf1cf" title="SpiClearRti" alt="" coords="216,106,307,134"/><area shape="rect" id="node11" href="lpc21_2mcu__periph_2spi__arch_8c.html#a2f597567924a3000e5afb340e4aa5592" title="SpiEnableRti" alt="" coords="211,157,312,185"/><area shape="rect" id="node5" href="lpc21_2subsystems_2imu_2imu__aspirin__arch_8c.html#a4a669b9d2efca9fcda5db4b642a990e4" title="dma1_c4_irq_handler" alt="" coords="399,5,556,33"/></map>
 </div>
 </p>
 
@@ -336,7 +336,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="stm32_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00043">43</a> of file <a class="el" href="stm32_2subsystems_2imu_2imu__crista__arch_8c_source.html">imu_crista_arch.c</a>.</p>
 
-<p>References <a class="el" href="armVIC_8h_source.html#l00020">_VIC_ADDR</a>, <a class="el" href="armVIC_8h_source.html#l00019">_VIC_CNTL</a>, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00029">ADS8344_SS_IODIR</a>, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00032">ADS8344_SS_PIN</a>, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00035">ADS8344Unselect</a>, <a class="el" href="stm32_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00030">channel</a>, <a class="el" href="LPC21xx_8h_source.html#l00348">PINSEL1</a>, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00106">SPI1_ISR()</a>, <a class="el" href="ADS8344_8c_source.html#l00085">SPI1_VIC_SLOT</a>, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00044">SSP_CPHA</a>, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00043">SSP_CPOL</a>, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00041">SSP_DSS</a>, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00042">SSP_FRF</a>, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00048">SSP_LBM</a>, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00050">SSP_MS</a>, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00045">SSP_SCR</a>, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00051">SSP_SOD</a>, <a class="el" href="LPC21xx_8h_source.html#l00226">SSPCPSR</a>, <a class="el" href="LPC21xx_8h_source.html#l00222">SSPCR0</a>, <a class="el" href="LPC21xx_8h_source.html#l00223">SSPCR1</a>, <a class="el" href="lpcVIC_8h_source.html#l00105">VIC_BIT</a>, <a class="el" href="lpcVIC_8h_source.html#l00102">VIC_ENABLE</a>, <a class="el" href="lpcVIC_8h_source.html#l00081">VIC_SPI1</a>, <a class="el" href="LPC21xx_8h_source.html#l00431">VICIntEnable</a>, and <a class="el" href="LPC21xx_8h_source.html#l00430">VICIntSelect</a>.</p>
+<p>References <a class="el" href="armVIC_8h_source.html#l00020">_VIC_ADDR</a>, <a class="el" href="armVIC_8h_source.html#l00019">_VIC_CNTL</a>, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00029">ADS8344_SS_IODIR</a>, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00032">ADS8344_SS_PIN</a>, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00035">ADS8344Unselect</a>, <a class="el" href="stm32_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00030">channel</a>, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h_source.html#l00035">GPIOB</a>, <a class="el" href="LPC21xx_8h_source.html#l00348">PINSEL1</a>, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00106">SPI1_ISR()</a>, <a class="el" href="ADS8344_8c_source.html#l00085">SPI1_VIC_SLOT</a>, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00044">SSP_CPHA</a>, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00043">SSP_CPOL</a>, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00041">SSP_DSS</a>, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00042">SSP_FRF</a>, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00048">SSP_LBM</a>, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00050">SSP_MS</a>, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00045">SSP_SCR</a>, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00051">SSP_SOD</a>, <a class="el" href="LPC21xx_8h_source.html#l00226">SSPCPSR</a>, <a class="el" href="LPC21xx_8h_source.html#l00222">SSPCR0</a>, <a class="el" href="LPC21xx_8h_source.html#l00223">SSPCR1</a>, <a class="el" href="lpcVIC_8h_source.html#l00105">VIC_BIT</a>, <a class="el" href="lpcVIC_8h_source.html#l00102">VIC_ENABLE</a>, <a class="el" href="lpcVIC_8h_source.html#l00081">VIC_SPI1</a>, <a class="el" href="LPC21xx_8h_source.html#l00431">VICIntEnable</a>, and <a class="el" href="LPC21xx_8h_source.html#l00430">VICIntSelect</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -345,7 +345,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2subsystems_2imu_2imu__crista__arch_8c_ab553dbda318119d1367742a4e59e38ed_cgraph.png" border="0" usemap="#stm32_2subsystems_2imu_2imu__crista__arch_8c_ab553dbda318119d1367742a4e59e38ed_cgraph" alt=""/></div>
 <map name="stm32_2subsystems_2imu_2imu__crista__arch_8c_ab553dbda318119d1367742a4e59e38ed_cgraph" id="stm32_2subsystems_2imu_2imu__crista__arch_8c_ab553dbda318119d1367742a4e59e38ed_cgraph">
-<area shape="rect" id="node3" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#a65d6ea131026affbdf33be235dfdb49d" title="SPI1_ISR" alt="" coords="192,30,272,58"/><area shape="rect" id="node5" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#a7ff7b13f1a2040251b13dd82461dfdac" title="read_values" alt="" coords="325,5,416,33"/><area shape="rect" id="node7" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#a3f17d7c8cdacbbfc2ee4cb8609fdb83a" title="send_request" alt="" coords="321,55,420,83"/></map>
+<area shape="rect" id="node3" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#a65d6ea131026affbdf33be235dfdb49d" title="SPI1_ISR" alt="" coords="203,30,280,58"/><area shape="rect" id="node5" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#a7ff7b13f1a2040251b13dd82461dfdac" title="read_values" alt="" coords="333,5,432,33"/><area shape="rect" id="node7" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#a3f17d7c8cdacbbfc2ee4cb8609fdb83a" title="send_request" alt="" coords="328,55,437,83"/></map>
 </div>
 </p>
 
@@ -430,7 +430,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_71548ae744da26ac2c7ca213b679dc43.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_2ac6ff96257b3d96ab38d195787bdd5e.html">imu</a></li><li class="navelem"><a class="el" href="stm32_2subsystems_2imu_2imu__crista__arch_8c.html">imu_crista_arch.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:09 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:49 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

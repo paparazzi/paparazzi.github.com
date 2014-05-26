@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('can_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="can_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2mcu__periph_2can_8hdep" alt=""/></div>
 <map name="sw_2airborne_2mcu__periph_2can_8hdep" id="sw_2airborne_2mcu__periph_2can_8hdep">
-<area shape="rect" id="node3" href="can__arch_8c.html" title="Handling of CAN hardware for STM32." alt="" coords="5,99,165,143"/><area shape="rect" id="node5" href="test__can_8c.html" title="sw/airborne/lisa/test\l_can.c" alt="" coords="189,99,328,143"/><area shape="rect" id="node7" href="can_8c.html" title="sw/airborne/mcu_periph\l/can.c" alt="" coords="352,99,512,143"/></map>
+<area shape="rect" id="node3" href="can__arch_8c.html" title="Handling of CAN hardware for STM32." alt="" coords="5,99,179,143"/><area shape="rect" id="node5" href="can_8c.html" title="sw/airborne/mcu_periph\l/can.c" alt="" coords="203,99,376,143"/></map>
 </div>
 </div>
 <p><a href="can_8h_source.html">Go to the source code of this file.</a></p>
@@ -163,7 +163,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="can_8c_source.html#l00032">32</a> of file <a class="el" href="can_8c_source.html">can.c</a>.</p>
 
-<p>References <a class="el" href="can__arch_8c_source.html#l00047">can_hw_init()</a>, and <a class="el" href="can_8c_source.html#l00028">can_rx_callback</a>.</p>
+<p>References <a class="el" href="can__arch_8c_source.html#l00057">can_hw_init()</a>, and <a class="el" href="can_8c_source.html#l00028">can_rx_callback</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -172,7 +172,7 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="can_8h_ac7e36a7bd650eb577df12f0437f270bc_cgraph.png" border="0" usemap="#can_8h_ac7e36a7bd650eb577df12f0437f270bc_cgraph" alt=""/></div>
 <map name="can_8h_ac7e36a7bd650eb577df12f0437f270bc_cgraph" id="can_8h_ac7e36a7bd650eb577df12f0437f270bc_cgraph">
-<area shape="rect" id="node3" href="can__arch_8c.html#aea9abdf3d92f6edf1fbfeebec07eb2a2" title="can_hw_init" alt="" coords="149,5,240,33"/><area shape="rect" id="node5" href="omap_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85" title="Set a gpio output to high level." alt="" coords="289,5,359,33"/></map>
+<area shape="rect" id="node3" href="can__arch_8c.html#aea9abdf3d92f6edf1fbfeebec07eb2a2" title="can_hw_init" alt="" coords="156,5,249,33"/><area shape="rect" id="node5" href="omap_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85" title="Set a gpio output to high level." alt="" coords="300,5,375,33"/></map>
 </div>
 </p>
 
@@ -210,9 +210,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="can_8c_source.html#l00038">38</a> of file <a class="el" href="can_8c_source.html">can.c</a>.</p>
 
-<p>References <a class="el" href="can__arch_8c_source.html#l00139">can_hw_transmit()</a>.</p>
-
-<p>Referenced by <a class="el" href="test__can_8c_source.html#l00070">main_periodic_task()</a>.</p>
+<p>References <a class="el" href="can__arch_8c_source.html#l00149">can_hw_transmit()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -221,18 +219,7 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="can_8h_a152615d451206e5d152705c704cdf89f_cgraph.png" border="0" usemap="#can_8h_a152615d451206e5d152705c704cdf89f_cgraph" alt=""/></div>
 <map name="can_8h_a152615d451206e5d152705c704cdf89f_cgraph" id="can_8h_a152615d451206e5d152705c704cdf89f_cgraph">
-<area shape="rect" id="node3" href="can__arch_8c.html#ad218f19fbf59d6dd7b788899dfd50b25" title="can_hw_transmit" alt="" coords="180,5,300,33"/></map>
-</div>
-</p>
-
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="can_8h_a152615d451206e5d152705c704cdf89f_icgraph.png" border="0" usemap="#can_8h_a152615d451206e5d152705c704cdf89f_icgraph" alt=""/></div>
-<map name="can_8h_a152615d451206e5d152705c704cdf89f_icgraph" id="can_8h_a152615d451206e5d152705c704cdf89f_icgraph">
-<area shape="rect" id="node3" href="test__can_8c.html#a791eaf74023b4de8d10fbfe0de040ed8" title="main_periodic_task" alt="" coords="180,5,313,33"/><area shape="rect" id="node5" href="test__can_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="363,5,413,33"/></map>
+<area shape="rect" id="node3" href="can__arch_8c.html#ad218f19fbf59d6dd7b788899dfd50b25" title="can_hw_transmit" alt="" coords="189,5,320,33"/></map>
 </div>
 </p>
 
@@ -244,7 +231,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_1ca43f6a116d741d80fb1d0555a2b198.html">mcu_periph</a></li><li class="navelem"><a class="el" href="can_8h.html">can.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:10 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:58 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

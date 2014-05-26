@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -132,33 +132,33 @@ $(document).ready(function(){initNavTree('servo__cam__ctrl_8c_source.html','');}
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="servo__cam__ctrl_8h.html" title="Digital Camera Control.">servo_cam_ctrl.h</a>&quot;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">// Button Timer</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="servo__cam__ctrl_8c.html#adaa2e99fa0592d3507c02a961b71d532">   26</a></span>&#160;<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="led__cam__ctrl_8c.html#adaa2e99fa0592d3507c02a961b71d532">dc_timer</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="servo__cam__ctrl_8c.html#adaa2e99fa0592d3507c02a961b71d532">   26</a></span>&#160;<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="gpio__cam__ctrl_8c.html#adaa2e99fa0592d3507c02a961b71d532">dc_timer</a>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">/* Command The Camera */</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="servo__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95">   29</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="atmega__i2c__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95">dc_send_command</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> cmd)</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <a class="code" href="led__cam__ctrl_8c.html#adaa2e99fa0592d3507c02a961b71d532">dc_timer</a> = <a class="code" href="led__cam__ctrl_8h.html#a9642f48627a6517582c38e3593939e28">DC_SHUTTER_DELAY</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <a class="code" href="gpio__cam__ctrl_8c.html#adaa2e99fa0592d3507c02a961b71d532">dc_timer</a> = <a class="code" href="gpio__cam__ctrl_8c.html#a9642f48627a6517582c38e3593939e28">DC_SHUTTER_DELAY</a>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordflow">switch</span> (cmd)</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  {</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="dc_8h.html#a5bcad6137b0e9f54ae973b52e8a94d34a8680b60f2e92d2e261a7e44e21b9c9c2">DC_SHOOT</a>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <a class="code" href="led__cam__ctrl_8h.html#a083ec1623bd3e3eb99edae0c55fd4b23">DC_PUSH</a>(DC_SHUTTER_SERVO);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <a class="code" href="gpio__cam__ctrl_8c.html#a083ec1623bd3e3eb99edae0c55fd4b23">DC_PUSH</a>(DC_SHUTTER_SERVO);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#ifndef DC_SHOOT_ON_BUTTON_RELEASE</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span>      <a class="code" href="dc_8h.html#a6975f41e5584f2d9d5d4a3904452bf98">dc_send_shot_position</a>();</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span>      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#ifdef DC_ZOOM_IN_SERVO</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">case</span> <a class="code" href="dc_8h.html#a5bcad6137b0e9f54ae973b52e8a94d34adb654606b6903dfa316f5ecae39e378a">DC_TALLER</a>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <a class="code" href="led__cam__ctrl_8h.html#a083ec1623bd3e3eb99edae0c55fd4b23">DC_PUSH</a>(DC_ZOOM_IN_SERVO);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <a class="code" href="gpio__cam__ctrl_8c.html#a083ec1623bd3e3eb99edae0c55fd4b23">DC_PUSH</a>(DC_ZOOM_IN_SERVO);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifdef DC_ZOOM_OUT_SERVO</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">case</span> <a class="code" href="dc_8h.html#a5bcad6137b0e9f54ae973b52e8a94d34a6f7a704df22428ad15570dee4f1337b8">DC_WIDER</a>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <a class="code" href="led__cam__ctrl_8h.html#a083ec1623bd3e3eb99edae0c55fd4b23">DC_PUSH</a>(DC_ZOOM_OUT_SERVO);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <a class="code" href="gpio__cam__ctrl_8c.html#a083ec1623bd3e3eb99edae0c55fd4b23">DC_PUSH</a>(DC_ZOOM_OUT_SERVO);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifdef DC_POWER_SERVO</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">case</span> <a class="code" href="dc_8h.html#a5bcad6137b0e9f54ae973b52e8a94d34ae9e8886c0133a5c0d77247fc37ce51d5">DC_ON</a>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <a class="code" href="led__cam__ctrl_8h.html#a083ec1623bd3e3eb99edae0c55fd4b23">DC_PUSH</a>(DC_POWER_SERVO);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <a class="code" href="gpio__cam__ctrl_8c.html#a083ec1623bd3e3eb99edae0c55fd4b23">DC_PUSH</a>(DC_POWER_SERVO);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">default</span>:</div>
@@ -174,7 +174,7 @@ $(document).ready(function(){initNavTree('servo__cam__ctrl_8c_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_9cd42eb44f1e76fa7c8c7cd9c9a53863.html">digital_cam</a></li><li class="navelem"><a class="el" href="servo__cam__ctrl_8c.html">servo_cam_ctrl.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:41 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

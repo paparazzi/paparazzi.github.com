@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -143,7 +143,7 @@ $(document).ready(function(){initNavTree('lisa__m_2baro__board_8c_source.html','
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="lisa__m_2baro__board_8c.html#a41a16588297befdc686a6813d9060265">   39</a></span>&#160;<span class="keyword">static</span> bool_t <a class="code" href="lisa__m_2baro__board_8c.html#a41a16588297befdc686a6813d9060265">baro_eoc</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="omap_2mcu__periph_2gpio__arch_8h.html#a5fee90e8e5af7de567890ffae5ed50c8" title="Read a gpio value.">gpio_get</a>(GPIOB, GPIO0);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="omap_2mcu__periph_2gpio__arch_8h.html#a5fee90e8e5af7de567890ffae5ed50c8" title="Read a gpio value.">gpio_get</a>(<a class="code" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a68b66ac73be4c836db878a42e1fea3cd">GPIOB</a>, <a class="code" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a20f88dbc839eb32b5fec903474befdd7">GPIO0</a>);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="lisa__m_2baro__board_8c.html#a9b25546908842f1d38fc56e438d46e21">   44</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="apogee_2baro__board_8c.html#a9b25546908842f1d38fc56e438d46e21">baro_init</a>(<span class="keywordtype">void</span>) {</div>
@@ -152,9 +152,9 @@ $(document).ready(function(){initNavTree('lisa__m_2baro__board_8c_source.html','
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="comment">/* setup eoc check function */</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="lisa__m_2baro__board_8c.html#acefc6db83b8dc325514608a766413bc1">baro_bmp085</a>.<a class="code" href="structBmp085.html#a4bee5687f0b4e97d73b023e0d530b1b8" title="function to check End Of Conversion">eoc</a> = &amp;<a class="code" href="lisa__m_2baro__board_8c.html#a41a16588297befdc686a6813d9060265">baro_eoc</a>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="omap_2mcu__periph_2gpio__arch_8h.html#aa94dfa6db378d98566e22e193c7a8ab7" title="Clear a gpio output to low level.">gpio_clear</a>(GPIOB, GPIO0);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  gpio_set_mode(GPIOB, GPIO_MODE_INPUT,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;          GPIO_CNF_INPUT_PULL_UPDOWN, GPIO0);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="omap_2mcu__periph_2gpio__arch_8h.html#aa94dfa6db378d98566e22e193c7a8ab7" title="Clear a gpio output to low level.">gpio_clear</a>(<a class="code" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a68b66ac73be4c836db878a42e1fea3cd">GPIOB</a>, <a class="code" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a20f88dbc839eb32b5fec903474befdd7">GPIO0</a>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  gpio_set_mode(<a class="code" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a68b66ac73be4c836db878a42e1fea3cd">GPIOB</a>, GPIO_MODE_INPUT,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;          GPIO_CNF_INPUT_PULL_UPDOWN, <a class="code" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a20f88dbc839eb32b5fec903474befdd7">GPIO0</a>);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#ifdef BARO_LED</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor"></span>  <a class="code" href="lpc21_2led__hw_8h.html#a76c86a9c700e32e68f48f85271970b7f">LED_OFF</a>(BARO_LED);</div>
@@ -192,7 +192,7 @@ $(document).ready(function(){initNavTree('lisa__m_2baro__board_8c_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_145fb4f8ee0a9eed1c6459cedb494b89.html">lisa_m</a></li><li class="navelem"><a class="el" href="lisa__m_2baro__board_8c.html">baro_board.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:07 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:37 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

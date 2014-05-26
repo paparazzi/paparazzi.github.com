@@ -11,6 +11,8 @@ var searchData=
   ['chemical_20enose_20sensor',['Chemical Enose sensor',['../module__enose.html',1,'onboard_modules']]],
   ['connect_20to_20external_20high_2dspeed_20sd_2dlogger_20via_20spi',['Connect to external High-Speed SD-logger via SPI',['../module__high_speed_logger_spi_link.html',1,'onboard_modules']]],
   ['catapult',['Catapult',['../module__nav_catapult.html',1,'onboard_modules']]],
+  ['compute_20the_20dropping_20point_20for_20a_20fixedwing_20aircraft',['Compute the dropping point for a fixedwing aircraft',['../module__nav_drop.html',1,'onboard_modules']]],
+  ['copy_20of_20nav_20line_20with_20altitude_20changes_20at_20every_20sweep',['Copy of nav line with altitude changes at every sweep',['../module__nav_vertical_raster.html',1,'onboard_modules']]],
   ['camera_20control_20for_20rotorcraft',['Camera control for rotorcraft',['../module__rotorcraft_cam.html',1,'onboard_modules']]],
   ['c_20style_20guide',['C Style Guide',['../stylec.html',1,'styleguide']]]
 ];

@@ -3,6 +3,7 @@ var common__nav_8c =
     [ "common_nav_periodic_task_4Hz", "common__nav_8c.html#a41fefa6b96afeb9a5d9f8bc41b7b8c2e", null ],
     [ "compute_dist2_to_home", "common__nav_8c.html#a4603515f41786b54ea9383a65a9f249e", null ],
     [ "nav_move_waypoint", "common__nav_8c.html#af9adf1af7508631a6122c216c6b57602", null ],
+    [ "nav_reset_alt", "common__nav_8c.html#ad2cf49c6186e482ca67ec67d17d9107b", null ],
     [ "nav_reset_reference", "common__nav_8c.html#a9be99612e24c6ba96a13c2c1d657ee99", null ],
     [ "nav_reset_utm_zone", "common__nav_8c.html#a3ef010d83e7da90d33327f0e69b9a169", null ],
     [ "nav_update_waypoints_alt", "common__nav_8c.html#a34dae3b6ee415907433b0d92cfa46eac", null ],

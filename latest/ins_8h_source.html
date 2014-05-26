@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -136,47 +136,44 @@ $(document).ready(function(){initNavTree('ins_8h_source.html','');});
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra.">math/pprz_algebra_float.h</a>&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="state_8h.html" title="API to get/set the generic vehicle states.">state.h</a>&quot;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="ins_8h.html#ab7a761fb8ab000e4a95cec8ce5efb813">   35</a></span>&#160;<span class="preprocessor">#define INS_UNINIT  0</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="ins_8h.html#a87f8301a9740df44f94d3565ed0be3e5">   36</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define INS_RUNNING 1</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">/* underlying includes (needed for parameters) */</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#ifdef INS_TYPE_H</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include INS_TYPE_H</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="structIns.html">   44</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structIns.html" title="Inertial Navigation System state.">Ins</a> {</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="structIns.html#ae0dbe8083a7281227e3023cb145ab9a4">   45</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="structIns.html#ae0dbe8083a7281227e3023cb145ab9a4" title="status of the INS">status</a>; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="structIns.html#a93d34d1ef72b4793e20d9cc54758ac48">   46</a></span>&#160;  bool_t <a class="code" href="structIns.html#a93d34d1ef72b4793e20d9cc54758ac48" title="realign horizontally if true">hf_realign</a>; </div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="structIns.html#a565497311aa048dcd749df94bb5c0b17">   47</a></span>&#160;  bool_t <a class="code" href="structIns.html#a565497311aa048dcd749df94bb5c0b17" title="realign vertically if true">vf_realign</a>; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="ins_8h.html#a0840efa3fbae3f375b8a2cdf048907a4">   35</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="ins_8h.html#a0840efa3fbae3f375b8a2cdf048907a4">InsStatus</a> {</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="ins_8h.html#a0840efa3fbae3f375b8a2cdf048907a4a1276f767d11f6d9febc47407570b2bd3">   36</a></span>&#160; <a class="code" href="ins_8h.html#a0840efa3fbae3f375b8a2cdf048907a4a1276f767d11f6d9febc47407570b2bd3">INS_UNINIT</a>=0,</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="ins_8h.html#a0840efa3fbae3f375b8a2cdf048907a4ab9031c37fa03a6f9db19e81529f05ec3">   37</a></span>&#160; <a class="code" href="ins_8h.html#a0840efa3fbae3f375b8a2cdf048907a4ab9031c37fa03a6f9db19e81529f05ec3">INS_RUNNING</a>=1</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">/* underlying includes (needed for parameters) */</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#ifdef INS_TYPE_H</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include INS_TYPE_H</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="structIns.html">   46</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structIns.html" title="Inertial Navigation System state.">Ins</a> {</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="structIns.html#a71915da148d31a3e88f06eaa3be9bfb6">   47</a></span>&#160;  <span class="keyword">enum</span> <a class="code" href="ins_8h.html#a0840efa3fbae3f375b8a2cdf048907a4">InsStatus</a> <a class="code" href="structIns.html#a71915da148d31a3e88f06eaa3be9bfb6" title="status of the INS">status</a>;     </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="structIns.html" title="Inertial Navigation System state.">Ins</a> <a class="code" href="ins_8c.html#a93b83435a11f973aa9aceab13c2f2b3f" title="global INS state">ins</a>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ins__xsens700_8c.html#abf3028c2ada542781b8a5e1eb20c17ce" title="INS initialization.">ins_init</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ins__alt__float_8c.html#abf3028c2ada542781b8a5e1eb20c17ce" title="INS initialization.">ins_init</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ins__alt__float_8c.html#acb548b510075b086cc7cc5e2d80b3a71" title="INS periodic call.">ins_periodic</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ins__ardrone2_8c.html#acb548b510075b086cc7cc5e2d80b3a71" title="INS periodic call.">ins_periodic</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ins__alt__float_8c.html#a367fd5f376086a318ca1719e3a5584ba" title="INS horizontal realign.">ins_realign_h</a>(<span class="keyword">struct</span> <a class="code" href="structFloatVect2.html">FloatVect2</a> pos, <span class="keyword">struct</span> <a class="code" href="structFloatVect2.html">FloatVect2</a> speed);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ins__alt__float_8c.html#a280ea4c959a462604573f57637749791" title="INS vertical realign.">ins_realign_v</a>(<span class="keywordtype">float</span> z);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ins__alt__float_8c.html#a77b5ba9f198b91b698062cc0dc0c953d" title="Propagation.">ins_propagate</a>( <span class="keywordtype">void</span> );</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ins__alt__float_8c.html#a6e1a3600e1905c414ff96c92775237d3" title="Update INS state with barometer measurements.">ins_update_baro</a>( <span class="keywordtype">void</span> );</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ins__alt__float_8c.html#aacc25a507c5c24309fc37b1f806f5d2b" title="Update INS state with GPS measurements.">ins_update_gps</a>( <span class="keywordtype">void</span> );</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ins__alt__float_8c.html#acc04164712bf9640e891c67dc6eeb424" title="Update INS state with sonar measurements.">ins_update_sonar</a>( <span class="keywordtype">void</span> );</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INS_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ins__alt__float_8c.html#a14cb66a86c67d8b9216a8c12f58c311b" title="Reset the geographic reference to the current GPS fix.">ins_reset_local_origin</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ins__alt__float_8c.html#aa389e650ab7aa5a7f4650afde6358d86" title="INS altitude reference reset.">ins_reset_altitude_ref</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ins_8c.html#af108226ec7957a145cb2c57ab14e6da7" title="INS utm zone reset.">ins_reset_utm_zone</a>(<span class="keyword">struct</span> <a class="code" href="structUtmCoor__f.html" title="position in UTM coordinates Units: meters">UtmCoor_f</a> * utm);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ins__ardrone2_8c.html#a77b5ba9f198b91b698062cc0dc0c953d" title="Propagation.">ins_propagate</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ins__alt__float_8c.html#aacc25a507c5c24309fc37b1f806f5d2b" title="Update INS state with GPS measurements.">ins_update_gps</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INS_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="ins_8h.html">ins.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:46 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

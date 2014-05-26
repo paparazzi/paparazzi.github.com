@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('spi_8c_source.html','');});
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#if SPI_MASTER</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#if USE_SPI0</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="group__spi.html#gae920399b05f855df64dd584fe647eab3">   35</a></span>&#160;<span class="preprocessor"></span><span class="keyword">struct </span><a class="code" href="structspi__periph.html">spi_periph</a> <a class="code" href="group__spi.html#gae920399b05f855df64dd584fe647eab3">spi0</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="group__spi.html#gae920399b05f855df64dd584fe647eab3">   35</a></span>&#160;<span class="preprocessor"></span><span class="keyword">struct </span><a class="code" href="structspi__periph.html" title="SPI peripheral structure.">spi_periph</a> <a class="code" href="group__spi.html#gae920399b05f855df64dd584fe647eab3">spi0</a>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="group__spi.html#ga2437939c4fca0a4a5a4f79460ed3f731">   37</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__spi.html#ga2437939c4fca0a4a5a4f79460ed3f731">spi0_init</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="group__spi.html#ga6c0861f0c2184cab82f883ca29312011" title="Initialize a spi peripheral.">spi_init</a>(&amp;<a class="code" href="group__spi.html#gae920399b05f855df64dd584fe647eab3">spi0</a>);</div>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('spi_8c_source.html','');});
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#if USE_SPI1</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="group__spi.html#gaedccba8390a9d630d522a0b282c4f9b9">   45</a></span>&#160;<span class="preprocessor"></span><span class="keyword">struct </span><a class="code" href="structspi__periph.html">spi_periph</a> <a class="code" href="group__spi.html#gaedccba8390a9d630d522a0b282c4f9b9" title="receive transferred over DMA">spi1</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="group__spi.html#gaedccba8390a9d630d522a0b282c4f9b9">   45</a></span>&#160;<span class="preprocessor"></span><span class="keyword">struct </span><a class="code" href="structspi__periph.html" title="SPI peripheral structure.">spi_periph</a> <a class="code" href="group__spi.html#gaedccba8390a9d630d522a0b282c4f9b9" title="receive transferred over DMA">spi1</a>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="group__spi.html#ga7da3469436debceb731ecb76c920efda">   47</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__spi.html#ga7da3469436debceb731ecb76c920efda">spi1_init</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="group__spi.html#ga6c0861f0c2184cab82f883ca29312011" title="Initialize a spi peripheral.">spi_init</a>(&amp;<a class="code" href="group__spi.html#gaedccba8390a9d630d522a0b282c4f9b9" title="receive transferred over DMA">spi1</a>);</div>
@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('spi_8c_source.html','');});
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#if USE_SPI2</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="group__spi.html#gabc3004247e95c09c15cfdf7d3e6402b7">   55</a></span>&#160;<span class="preprocessor"></span><span class="keyword">struct </span><a class="code" href="structspi__periph.html">spi_periph</a> <a class="code" href="group__spi.html#gabc3004247e95c09c15cfdf7d3e6402b7" title="receive transferred over DMA">spi2</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="group__spi.html#gabc3004247e95c09c15cfdf7d3e6402b7">   55</a></span>&#160;<span class="preprocessor"></span><span class="keyword">struct </span><a class="code" href="structspi__periph.html" title="SPI peripheral structure.">spi_periph</a> <a class="code" href="group__spi.html#gabc3004247e95c09c15cfdf7d3e6402b7" title="receive transferred over DMA">spi2</a>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="group__spi.html#ga1c8c4e89459606c70f6749714abd4a86">   57</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__spi.html#ga1c8c4e89459606c70f6749714abd4a86">spi2_init</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="group__spi.html#ga6c0861f0c2184cab82f883ca29312011" title="Initialize a spi peripheral.">spi_init</a>(&amp;<a class="code" href="group__spi.html#gabc3004247e95c09c15cfdf7d3e6402b7" title="receive transferred over DMA">spi2</a>);</div>
@@ -165,7 +165,7 @@ $(document).ready(function(){initNavTree('spi_8c_source.html','');});
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#if USE_SPI3</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor"></span><span class="keyword">struct </span><a class="code" href="structspi__periph.html">spi_periph</a> spi3;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor"></span><span class="keyword">struct </span><a class="code" href="structspi__periph.html" title="SPI peripheral structure.">spi_periph</a> spi3;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">void</span> spi3_init(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="group__spi.html#ga6c0861f0c2184cab82f883ca29312011" title="Initialize a spi peripheral.">spi_init</a>(&amp;spi3);</div>
@@ -174,7 +174,7 @@ $(document).ready(function(){initNavTree('spi_8c_source.html','');});
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif // USE_SPI3</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="code" href="group__spi.html#ga6c0861f0c2184cab82f883ca29312011">   74</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__spi.html#ga6c0861f0c2184cab82f883ca29312011" title="Initialize a spi peripheral.">spi_init</a>(<span class="keyword">struct</span> <a class="code" href="structspi__periph.html">spi_periph</a>* <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="code" href="group__spi.html#ga6c0861f0c2184cab82f883ca29312011">   74</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__spi.html#ga6c0861f0c2184cab82f883ca29312011" title="Initialize a spi peripheral.">spi_init</a>(<span class="keyword">struct</span> <a class="code" href="structspi__periph.html" title="SPI peripheral structure.">spi_periph</a>* <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>) {</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  p-&gt;<a class="code" href="structspi__periph.html#ab96104b648a016e934752e01ec4f2b59">trans_insert_idx</a> = 0;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  p-&gt;<a class="code" href="structspi__periph.html#af1cd87f1e6b8cf0bfad3ba646224601f">trans_extract_idx</a> = 0;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  p-&gt;<a class="code" href="structspi__periph.html#a413be255346b4fefbb01e9a55ee8a286" title="internal state of the peripheral">status</a> = <a class="code" href="group__spi.html#gga495f0019475966e28264aaf8e37c6529a043fd5f30e831835768732e5f373dada">SPIIdle</a>;</div>
@@ -188,7 +188,7 @@ $(document).ready(function(){initNavTree('spi_8c_source.html','');});
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#if SPI_SLAVE</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#if USE_SPI0_SLAVE</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor"></span><span class="keyword">struct </span><a class="code" href="structspi__periph.html">spi_periph</a> <a class="code" href="group__spi.html#gae920399b05f855df64dd584fe647eab3">spi0</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor"></span><span class="keyword">struct </span><a class="code" href="structspi__periph.html" title="SPI peripheral structure.">spi_periph</a> <a class="code" href="group__spi.html#gae920399b05f855df64dd584fe647eab3">spi0</a>;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">void</span> spi0_slave_init(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <a class="code" href="group__spi.html#ga7321d472bfa9548243ea6f22cf3ff8a4" title="Initialize a spi peripheral in slave mode.">spi_slave_init</a>(&amp;<a class="code" href="group__spi.html#gae920399b05f855df64dd584fe647eab3">spi0</a>);</div>
@@ -198,7 +198,7 @@ $(document).ready(function(){initNavTree('spi_8c_source.html','');});
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#if USE_SPI1_SLAVE</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor"></span><span class="keyword">struct </span><a class="code" href="structspi__periph.html">spi_periph</a> <a class="code" href="group__spi.html#gaedccba8390a9d630d522a0b282c4f9b9" title="receive transferred over DMA">spi1</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor"></span><span class="keyword">struct </span><a class="code" href="structspi__periph.html" title="SPI peripheral structure.">spi_periph</a> <a class="code" href="group__spi.html#gaedccba8390a9d630d522a0b282c4f9b9" title="receive transferred over DMA">spi1</a>;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keywordtype">void</span> spi1_slave_init(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <a class="code" href="group__spi.html#ga7321d472bfa9548243ea6f22cf3ff8a4" title="Initialize a spi peripheral in slave mode.">spi_slave_init</a>(&amp;<a class="code" href="group__spi.html#gaedccba8390a9d630d522a0b282c4f9b9" title="receive transferred over DMA">spi1</a>);</div>
@@ -208,7 +208,7 @@ $(document).ready(function(){initNavTree('spi_8c_source.html','');});
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#if USE_SPI2_SLAVE</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor"></span><span class="keyword">struct </span><a class="code" href="structspi__periph.html">spi_periph</a> <a class="code" href="group__spi.html#gabc3004247e95c09c15cfdf7d3e6402b7" title="receive transferred over DMA">spi2</a>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor"></span><span class="keyword">struct </span><a class="code" href="structspi__periph.html" title="SPI peripheral structure.">spi_periph</a> <a class="code" href="group__spi.html#gabc3004247e95c09c15cfdf7d3e6402b7" title="receive transferred over DMA">spi2</a>;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keywordtype">void</span> spi2_slave_init(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <a class="code" href="group__spi.html#ga7321d472bfa9548243ea6f22cf3ff8a4" title="Initialize a spi peripheral in slave mode.">spi_slave_init</a>(&amp;<a class="code" href="group__spi.html#gabc3004247e95c09c15cfdf7d3e6402b7" title="receive transferred over DMA">spi2</a>);</div>
@@ -218,7 +218,7 @@ $(document).ready(function(){initNavTree('spi_8c_source.html','');});
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#if USE_SPI3_SLAVE</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor"></span><span class="keyword">struct </span><a class="code" href="structspi__periph.html">spi_periph</a> spi3;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor"></span><span class="keyword">struct </span><a class="code" href="structspi__periph.html" title="SPI peripheral structure.">spi_periph</a> spi3;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keywordtype">void</span> spi3_slave_init(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <a class="code" href="group__spi.html#ga7321d472bfa9548243ea6f22cf3ff8a4" title="Initialize a spi peripheral in slave mode.">spi_slave_init</a>(&amp;spi3);</div>
@@ -227,7 +227,7 @@ $(document).ready(function(){initNavTree('spi_8c_source.html','');});
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif // USE_SPI3_SLAVE</span></div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno"><a class="code" href="group__spi.html#ga7321d472bfa9548243ea6f22cf3ff8a4">  127</a></span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="group__spi.html#ga7321d472bfa9548243ea6f22cf3ff8a4" title="Initialize a spi peripheral in slave mode.">spi_slave_init</a>(<span class="keyword">struct</span> <a class="code" href="structspi__periph.html">spi_periph</a>* <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>) {</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="code" href="group__spi.html#ga7321d472bfa9548243ea6f22cf3ff8a4">  127</a></span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="group__spi.html#ga7321d472bfa9548243ea6f22cf3ff8a4" title="Initialize a spi peripheral in slave mode.">spi_slave_init</a>(<span class="keyword">struct</span> <a class="code" href="structspi__periph.html" title="SPI peripheral structure.">spi_periph</a>* <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>) {</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  p-&gt;<a class="code" href="structspi__periph.html#ab96104b648a016e934752e01ec4f2b59">trans_insert_idx</a> = 0;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  p-&gt;<a class="code" href="structspi__periph.html#af1cd87f1e6b8cf0bfad3ba646224601f">trans_extract_idx</a> = 0;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  p-&gt;<a class="code" href="structspi__periph.html#a413be255346b4fefbb01e9a55ee8a286" title="internal state of the peripheral">status</a> = <a class="code" href="group__spi.html#gga495f0019475966e28264aaf8e37c6529a043fd5f30e831835768732e5f373dada">SPIIdle</a>;</div>
@@ -243,7 +243,7 @@ $(document).ready(function(){initNavTree('spi_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_1ca43f6a116d741d80fb1d0555a2b198.html">mcu_periph</a></li><li class="navelem"><a class="el" href="spi_8c.html">spi.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

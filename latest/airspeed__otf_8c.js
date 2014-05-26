@@ -9,7 +9,7 @@ var airspeed__otf_8c =
     [ "OTF_WAIT_CHECKSUM", "airspeed__otf_8c.html#a2c9aaaa064d24bfc5ac6c65ed0c0050c", null ],
     [ "OTF_WAIT_COUNTER", "airspeed__otf_8c.html#ab29ceac02db4d7abae37b3f4f6bd328e", null ],
     [ "OTF_WAIT_START", "airspeed__otf_8c.html#a1e6eb54ce27391fcd387164a36280558", null ],
-    [ "_sbrk", "airspeed__otf_8c.html#ab3478c8e46b7536743c16f2dd4c4021f", null ],
+    [ "_sbrk", "airspeed__otf_8c.html#a50d0541bd42367bb4b26013ff383318d", null ],
     [ "airspeed_otf_event", "airspeed__otf_8c.html#a8e36db24cf5b93acf35d81dfceb7579b", null ],
     [ "airspeed_otf_init", "airspeed__otf_8c.html#a02b3bbf31573ea5085b1764b55aa1e0c", null ],
     [ "airspeed_otf_parse", "airspeed__otf_8c.html#a10616f1c2762b766f82daf5e37c5c10e", null ],

@@ -11,7 +11,7 @@ var uart_8h =
     [ "UPARITY_ODD", "uart_8h.html#a2e783f6c72b411322e6a7472602de1a5", null ],
     [ "USTOP_1", "uart_8h.html#acd4dcaba3d4608ddde2fc364a1cf8f79", null ],
     [ "USTOP_2", "uart_8h.html#a9e425ef705476c0a778712761281a232", null ],
-    [ "uart_char_available", "uart_8h.html#a8fcf1d056b9856747bbe06995a9928ff", null ],
+    [ "uart_char_available", "uart_8h.html#ac12152ef3f260cb4eb96be5f6027bc9f", null ],
     [ "uart_check_free_space", "uart_8h.html#abd3d741fab97eedc4b48bbda25b74e50", null ],
     [ "uart_getch", "uart_8h.html#adb9a60ec94a31a08e6454ccf64f24039", null ],
     [ "uart_periph_init", "uart_8h.html#a43baf084a9bcc968ef00790e25becbb7", null ],

@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('ms5611__spi_8h_source.html','');});
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ms5611_8h.html" title="MS5611 barometer driver common interface (I2C and SPI).">peripherals/ms5611.h</a>&quot;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="structMs5611__Spi.html">   36</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMs5611__Spi.html">Ms5611_Spi</a> {</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="structMs5611__Spi.html#ac381942933d86255a7abe38fcef1ce28">   37</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structspi__periph.html">spi_periph</a> *<a class="code" href="structMs5611__Spi.html#ac381942933d86255a7abe38fcef1ce28">spi_p</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="structMs5611__Spi.html#ac381942933d86255a7abe38fcef1ce28">   37</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structspi__periph.html" title="SPI peripheral structure.">spi_periph</a> *<a class="code" href="structMs5611__Spi.html#ac381942933d86255a7abe38fcef1ce28">spi_p</a>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="structMs5611__Spi.html#ac9198d857286e8fd2fbdfac49d492481">   38</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structspi__transaction.html" title="SPI transaction structure.">spi_transaction</a> <a class="code" href="structMs5611__Spi.html#ac9198d857286e8fd2fbdfac49d492481">spi_trans</a>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="structMs5611__Spi.html#a091824db413eb26c20ea3c7f6aaff694">   39</a></span>&#160;  <span class="keyword">volatile</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="structMs5611__Spi.html#a091824db413eb26c20ea3c7f6aaff694">tx_buf</a>[1];</div>
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="structMs5611__Spi.html#a5e59eb056cb6beebe8ef0c9c4ef8ff97">   40</a></span>&#160;  <span class="keyword">volatile</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="structMs5611__Spi.html#a5e59eb056cb6beebe8ef0c9c4ef8ff97">rx_buf</a>[4];</div>
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('ms5611__spi_8h_source.html','');});
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">// Functions</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ms5611__spi_8c.html#aa5d5676c8d64da7b9c569bc97ee00c0a">ms5611_spi_init</a>(<span class="keyword">struct</span> <a class="code" href="structMs5611__Spi.html">Ms5611_Spi</a>* ms, <span class="keyword">struct</span> <a class="code" href="structspi__periph.html">spi_periph</a>* spi_p, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> addr);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ms5611__spi_8c.html#aa5d5676c8d64da7b9c569bc97ee00c0a">ms5611_spi_init</a>(<span class="keyword">struct</span> <a class="code" href="structMs5611__Spi.html">Ms5611_Spi</a>* ms, <span class="keyword">struct</span> <a class="code" href="structspi__periph.html" title="SPI peripheral structure.">spi_periph</a>* spi_p, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> addr);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ms5611__spi_8c.html#a23682a3c5d36bc1c95f61b80ab101b53">ms5611_spi_start_configure</a>(<span class="keyword">struct</span> <a class="code" href="structMs5611__Spi.html">Ms5611_Spi</a>* ms);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ms5611__spi_8c.html#a82e1cf6372b20fbfd4ec58f4cc8e58b9">ms5611_spi_start_conversion</a>(<span class="keyword">struct</span> <a class="code" href="structMs5611__Spi.html">Ms5611_Spi</a>* ms);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="ms5611__spi_8c.html#ab46a8e3a6d57f0c4b1368abbb786f905" title="Periodic function to ensure proper delay after triggering reset or conversion.">ms5611_spi_periodic_check</a>(<span class="keyword">struct</span> <a class="code" href="structMs5611__Spi.html">Ms5611_Spi</a>* ms);</div>
@@ -175,7 +175,7 @@ $(document).ready(function(){initNavTree('ms5611__spi_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="ms5611__spi_8h.html">ms5611_spi.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:44 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

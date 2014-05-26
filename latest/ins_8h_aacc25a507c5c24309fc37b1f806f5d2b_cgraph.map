@@ -1,24 +1,28 @@
 <map id="ins_update_gps" name="ins_update_gps">
-<area shape="rect" id="node3" href="$hf__float_8c.html#af628e2bc576792fbc2e8b4d5fab40191" title="b2_hff_realign" alt="" coords="195,82,296,110"/>
-<area shape="rect" id="node5" href="$hf__float_8c.html#a9b7bbf147e7e8c8978fb72440539d598" title="b2_hff_update_gps" alt="" coords="180,157,311,185"/>
-<area shape="rect" id="node18" href="$ins__int_8c.html#a906e42c3bdc95d6fa78d129fbf20719e" title="copy position and speed to state interface" alt="" coords="185,341,305,369"/>
-<area shape="rect" id="node20" href="$group__state__position.html#ga83bd9c7ef9bfff9ff41a5d290be52438" title="Set position from local NED coordinates (int)." alt="" coords="371,258,523,286"/>
-<area shape="rect" id="node26" href="$pprz__geodetic__int_8c.html#a5afd098a83e572b854e157486ccb569f" title="ltp_def_from_ecef_i" alt="" coords="177,403,313,431"/>
-<area shape="rect" id="node34" href="$pprz__geodetic__int_8c.html#a9307e97057d51e781def8a03dea804f6" title="ned_of_ecef_point_i" alt="" coords="176,454,315,482"/>
-<area shape="rect" id="node38" href="$pprz__geodetic__int_8c.html#ab4eda479f4c01e96082d8a352f16cfea" title="ned_of_ecef_vect_i" alt="" coords="179,505,312,533"/>
-<area shape="rect" id="node42" href="$group__state__position.html#gacc086fcd500269371c8c6eabbf3d557e" title="Set the local (flat earth) coordinate frame origin (int)." alt="" coords="172,555,319,583"/>
-<area shape="rect" id="node45" href="$group__state__position.html#gac6c73e42fc6b5891cb23454ad9c68c92" title="Set position from UTM coordinates (float)." alt="" coords="168,606,323,634"/>
-<area shape="rect" id="node47" href="$group__state__velocity.html#gae6549b15cd961047c89481ab2d87171f" title="Set ground speed in local NED coordinates (float)." alt="" coords="175,657,316,685"/>
-<area shape="rect" id="node7" href="$stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a22787b7744375550b4b631b0fec03bd0" title="if" alt="" coords="428,5,465,33"/>
-<area shape="rect" id="node9" href="$hf__float_8c.html#adce5673c1914dcb3fa086601c8b36939" title="b2_hff_update_x" alt="" coords="389,55,504,83"/>
-<area shape="rect" id="node11" href="$hf__float_8c.html#a0fa61df808fb070a1ae9e847ff9081ea" title="b2_hff_update_y" alt="" coords="389,106,504,134"/>
-<area shape="rect" id="node13" href="$hf__float_8c.html#a5b42318dc157c5686a35307432d7fb95" title="b2_hff_update_xdot" alt="" coords="380,157,513,185"/>
-<area shape="rect" id="node15" href="$hf__float_8c.html#ad418127e269daab29f229899e618e9fc" title="b2_hff_update_ydot" alt="" coords="380,207,513,235"/>
-<area shape="rect" id="node22" href="$group__state__velocity.html#gaa6cbe14043ae394f4994ac02bee85644" title="Set ground speed in local NED coordinates (int)." alt="" coords="376,309,517,337"/>
-<area shape="rect" id="node24" href="$group__state__acceleration.html#ga44bccfd32b2928abef6b08c4f867c1be" title="Set acceleration in NED coordinates (int)." alt="" coords="377,359,516,387"/>
-<area shape="rect" id="node28" href="$pprz__geodetic__int_8c.html#aea47a32071c2427f895fcb1df32c4e23" title="lla_of_ecef_i" alt="" coords="400,410,493,438"/>
-<area shape="rect" id="node32" href="$pprz__geodetic__int_8c.html#a143e7f5c7f3df4f188daf6c06ec7ec56" title="ltp_of_ecef_rmat_from\l_lla_i" alt="" coords="371,461,523,505"/>
-<area shape="rect" id="node30" href="$pprz__geodetic__double_8c.html#a03262ba97728d6e61bc645e69bd7c332" title="lla_of_ecef_d" alt="" coords="571,410,669,438"/>
-<area shape="rect" id="node36" href="$pprz__geodetic__int_8c.html#a85bcbfc73a43b120465422ec55647573" title="enu_of_ecef_point_i" alt="" coords="377,527,516,555"/>
-<area shape="rect" id="node40" href="$pprz__geodetic__int_8c.html#af0ee62cd162ca87bc294be6cfd107986" title="enu_of_ecef_vect_i" alt="" coords="380,578,513,606"/>
+<area shape="rect" id="node3" href="$ins__alt__float_8c.html#af1c41f4924907141e439cbbca1ded55e" title="alt_kalman" alt="" coords="215,31,305,59"/>
+<area shape="rect" id="node5" href="$ins__alt__float_8c.html#ae9b929985ac97a4adb5f6f3385485132" title="alt_kalman_reset" alt="" coords="195,82,325,110"/>
+<area shape="rect" id="node7" href="$hf__float_8c.html#af628e2bc576792fbc2e8b4d5fab40191" title="b2_hff_realign" alt="" coords="205,133,315,161"/>
+<area shape="rect" id="node9" href="$hf__float_8c.html#a9b7bbf147e7e8c8978fb72440539d598" title="b2_hff_update_gps" alt="" coords="189,207,331,235"/>
+<area shape="rect" id="node22" href="$ins__int_8c.html#a906e42c3bdc95d6fa78d129fbf20719e" title="copy position and speed to state interface" alt="" coords="195,309,325,337"/>
+<area shape="rect" id="node24" href="$group__state__position.html#ga83bd9c7ef9bfff9ff41a5d290be52438" title="Set position from local NED coordinates (int)." alt="" coords="395,258,557,286"/>
+<area shape="rect" id="node26" href="$group__state__velocity.html#gaa6cbe14043ae394f4994ac02bee85644" title="Set ground speed in local NED coordinates (int)." alt="" coords="399,359,553,387"/>
+<area shape="rect" id="node30" href="$ins__alt__float_8c.html#a14cb66a86c67d8b9216a8c12f58c311b" title="Reset the geographic reference to the current GPS fix." alt="" coords="181,410,339,438"/>
+<area shape="rect" id="node32" href="$pprz__geodetic__int_8c.html#a5afd098a83e572b854e157486ccb569f" title="ltp_def_from_ecef_i" alt="" coords="187,461,333,489"/>
+<area shape="rect" id="node40" href="$pprz__geodetic__int_8c.html#a9307e97057d51e781def8a03dea804f6" title="Convert a point from ECEF to local NED." alt="" coords="187,511,333,539"/>
+<area shape="rect" id="node44" href="$pprz__geodetic__int_8c.html#ab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED." alt="" coords="189,562,331,590"/>
+<area shape="rect" id="node48" href="$group__state__position.html#gacc086fcd500269371c8c6eabbf3d557e" title="Set the local (flat earth) coordinate frame origin (int)." alt="" coords="181,613,339,641"/>
+<area shape="rect" id="node51" href="$group__state__position.html#gac6c73e42fc6b5891cb23454ad9c68c92" title="Set position from UTM coordinates (float)." alt="" coords="177,663,343,691"/>
+<area shape="rect" id="node53" href="$group__state__velocity.html#gae6549b15cd961047c89481ab2d87171f" title="Set ground speed in local NED coordinates (float)." alt="" coords="183,714,337,742"/>
+<area shape="rect" id="node56" href="$vf__extended__float_8c.html#a383a56a1eaa73890c3b6ca0599c3fb67" title="vff_update_z_conf" alt="" coords="192,765,328,793"/>
+<area shape="rect" id="node11" href="$stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a22787b7744375550b4b631b0fec03bd0" title="if" alt="" coords="457,5,495,33"/>
+<area shape="rect" id="node13" href="$hf__float_8c.html#adce5673c1914dcb3fa086601c8b36939" title="b2_hff_update_x" alt="" coords="413,55,539,83"/>
+<area shape="rect" id="node15" href="$hf__float_8c.html#a0fa61df808fb070a1ae9e847ff9081ea" title="b2_hff_update_y" alt="" coords="413,106,539,134"/>
+<area shape="rect" id="node17" href="$hf__float_8c.html#a5b42318dc157c5686a35307432d7fb95" title="b2_hff_update_xdot" alt="" coords="403,157,549,185"/>
+<area shape="rect" id="node19" href="$hf__float_8c.html#ad418127e269daab29f229899e618e9fc" title="b2_hff_update_ydot" alt="" coords="403,207,549,235"/>
+<area shape="rect" id="node28" href="$group__state__acceleration.html#ga44bccfd32b2928abef6b08c4f867c1be" title="Set acceleration in NED coordinates (int)." alt="" coords="403,309,549,337"/>
+<area shape="rect" id="node34" href="$pprz__geodetic__int_8c.html#aea47a32071c2427f895fcb1df32c4e23" title="lla_of_ecef_i" alt="" coords="427,410,525,438"/>
+<area shape="rect" id="node38" href="$pprz__geodetic__int_8c.html#a143e7f5c7f3df4f188daf6c06ec7ec56" title="ltp_of_ecef_rmat_from\l_lla_i" alt="" coords="393,461,559,505"/>
+<area shape="rect" id="node36" href="$pprz__geodetic__double_8c.html#a03262ba97728d6e61bc645e69bd7c332" title="lla_of_ecef_d" alt="" coords="608,410,712,438"/>
+<area shape="rect" id="node42" href="$pprz__geodetic__int_8c.html#a85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="403,527,549,555"/>
+<area shape="rect" id="node46" href="$pprz__geodetic__int_8c.html#af0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU." alt="" coords="405,578,547,606"/>
 </map>

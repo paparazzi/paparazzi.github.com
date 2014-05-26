@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -102,6 +102,7 @@ $(document).ready(function(){initNavTree('stylec.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>This page contains guidelines for writing new C source code for the Paparazzi project.</p>
+<p>If you are using Eclipse, you can use Eclipse code style located in the repository (paparazzi_code_profile_eclipse.xml)</p>
 <h1><a class="anchor" id="styleformat"></a>
 Formatting Guide</h1>
 <ul>
@@ -145,8 +146,7 @@ Functions</h1>
 <li>define static functions before first usage to avoid forward declarations.</li>
 </ul>
 </li>
-<li>Functions should have no space between its name and its parameter list: <div class="fragment"><div class="line"><a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> f(<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> x1, <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> x2)</div>
-<div class="line">{</div>
+<li>Functions should have no space between its name and its parameter list: <div class="fragment"><div class="line"><a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> f(<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> x1, <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> x2) {</div>
 <div class="line">  ...</div>
 <div class="line">  <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> y = f(x1, x2 - x1);</div>
 <div class="line">  ...</div>
@@ -157,14 +157,12 @@ Functions</h1>
 Switch statements</h1>
 <ul>
 <li>specify a default case</li>
-<li>prefer an enum over defines for the different states <div class="fragment"><div class="line"><span class="keyword">enum</span> <a class="code" href="group__state__interface.html#gad04519a48b59cfe96f361afe9eb151ba">state</a></div>
-<div class="line">{</div>
+<li>prefer an enum over defines for the different states <div class="fragment"><div class="line"><span class="keyword">enum</span> <a class="code" href="group__state__interface.html#gad04519a48b59cfe96f361afe9eb151ba">state</a> {</div>
 <div class="line">  STATE_FOO = 1,</div>
 <div class="line">  STATE_BAR = 2</div>
 <div class="line">};</div>
 <div class="line"></div>
-<div class="line"><span class="keywordflow">switch</span>( <a class="code" href="group__state__interface.html#gad04519a48b59cfe96f361afe9eb151ba">state</a> )</div>
-<div class="line">{</div>
+<div class="line"><span class="keywordflow">switch</span> (<a class="code" href="group__state__interface.html#gad04519a48b59cfe96f361afe9eb151ba">state</a>) {</div>
 <div class="line">  <span class="keywordflow">case</span> STATE_FOO:</div>
 <div class="line">    <a class="code" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">foo</a>();</div>
 <div class="line">    <span class="keywordflow">break</span>;</div>
@@ -173,6 +171,24 @@ Switch statements</h1>
 <div class="line">    <span class="keywordflow">break</span>;</div>
 <div class="line">  <span class="keywordflow">default</span>:</div>
 <div class="line">    <span class="keywordflow">break</span>;</div>
+<div class="line">}</div>
+</div><!-- fragment --></li>
+</ul>
+<h1><a class="anchor" id="styleif"></a>
+If statements</h1>
+<ul>
+<li>return statement on the new line even for ""simple if"" case <div class="fragment"><div class="line"><span class="keywordflow">if</span> (<a class="code" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>) {</div>
+<div class="line">  <span class="keywordflow">return</span> 1;</div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line"><span class="keywordflow">if</span> (x &lt; other.x) {</div>
+<div class="line">  <span class="keywordflow">return</span> -1;</div>
+<div class="line">}</div>
+<div class="line"><span class="keywordflow">else</span> <span class="keywordflow">if</span> (x &gt; other.x) {</div>
+<div class="line">  <span class="keywordflow">return</span> 1;</div>
+<div class="line">}</div>
+<div class="line"><span class="keywordflow">else</span> {</div>
+<div class="line">  <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 </div><!-- fragment --></li>
 </ul>
@@ -195,7 +211,7 @@ Preprocessor directives</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">Paparazzi Developer's Guide</a></li><li class="navelem"><a class="el" href="styleguide.html">Style Guides</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:12 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:11 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

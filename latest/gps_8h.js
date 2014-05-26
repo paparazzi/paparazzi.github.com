@@ -12,6 +12,7 @@ var gps_8h =
     [ "GpsFixValid", "gps_8h.html#aae01b53fbd555bc8954b7ba297cb2cae", null ],
     [ "gps_impl_init", "gps_8h.html#ac51e6a5f7940a0acc9dc44b1b8085331", null ],
     [ "gps_init", "gps_8h.html#ab37f7040b9efd19fdd3f92b1df77e771", null ],
+    [ "gps_periodic_check", "gps_8h.html#af6a16adfe8c9a84b13f49b4ceb681b30", null ],
     [ "gps_tow_from_sys_ticks", "gps_8h.html#ad68ada7274989a4c9f08bc06d74ee5bd", null ],
     [ "GpsIsLost", "gps_8h.html#a3c9ec0734c3ac235abd40c500746de5a", null ],
     [ "gps", "gps_8h.html#a5cf954024f8e0433b21db7439c5bee9d", null ],

@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -110,7 +110,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals_func_0x76.html#index_v"><span>v</span></a></li>
       <li><a href="globals_func_0x77.html#index_w"><span>w</span></a></li>
       <li><a href="globals_func_0x78.html#index_x"><span>x</span></a></li>
-      <li><a href="globals_func_0x7a.html#index_z"><span>z</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -170,7 +169,7 @@ $(document).ready(function(){initNavTree('globals_func_0x64.html','');});
 <li>dc_send_command()
 : <a class="el" href="atmega__i2c__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95">atmega_i2c_cam_ctrl.c</a>
 , <a class="el" href="dc_8h.html#a833f16388be36136f5d7d173200d5e95">dc.h</a>
-, <a class="el" href="led__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95">led_cam_ctrl.c</a>
+, <a class="el" href="gpio__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95">gpio_cam_ctrl.c</a>
 , <a class="el" href="servo__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95">servo_cam_ctrl.c</a>
 </li>
 <li>dc_stop()
@@ -181,15 +180,20 @@ $(document).ready(function(){initNavTree('globals_func_0x64.html','');});
 : <a class="el" href="dc_8c.html#a2b50d2725b576697bde98a8bdb358093">dc.c</a>
 , <a class="el" href="dc_8h.html#a2b50d2725b576697bde98a8bdb358093">dc.h</a>
 </li>
+<li>dcmi_isr()
+: <a class="el" href="stm32f4__chibios__vectors_8h.html#a9ada0a8fd3a336b095be8a6dae3b9d54">stm32f4_chibios_vectors.h</a>
+</li>
+<li>DebugMonitorVector()
+: <a class="el" href="stm32f4__chibios__vectors_8c.html#a48eec3af97de26aa1acd931504e4c33b">stm32f4_chibios_vectors.c</a>
+</li>
 <li>decode_optical_flow_msg()
 : <a class="el" href="px4flow_8c.html#a9a3bfd0997e1386b7e6657cdddbd1681">px4flow.c</a>
 </li>
 <li>decode_sbus_buffer()
-: <a class="el" href="sbus_8c.html#af82ce9ebb300ae46a29574589391f307">sbus.c</a>
+: <a class="el" href="sbus__common_8c.html#a6e325da4a4dfc2bd274b47b09febfa1a">sbus_common.c</a>
 </li>
 <li>Delay()
-: <a class="el" href="test__led_8c.html#aea41b1becfb5d562877fe67cd53d43e9">test_led.c</a>
-, <a class="el" href="tunnel__hw_8c.html#aea41b1becfb5d562877fe67cd53d43e9">tunnel_hw.c</a>
+: <a class="el" href="stm32_2uart__tunnel_8c.html#aea41b1becfb5d562877fe67cd53d43e9">uart_tunnel.c</a>
 </li>
 <li>DelayMs()
 : <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#aeeda81e8dcacff3172020a9f2e2a49d9">spektrum_arch.c</a>
@@ -212,51 +216,84 @@ $(document).ready(function(){initNavTree('globals_func_0x64.html','');});
 : <a class="el" href="dc_8h.html#a86a10378746828e01845db892616829e">dc.h</a>
 </li>
 <li>disableFIQ()
-: <a class="el" href="armVIC_8c.html#a3d56223a5040f26eb8c60161fd67d864">armVIC.c</a>
-, <a class="el" href="armVIC_8h.html#a3d56223a5040f26eb8c60161fd67d864">armVIC.h</a>
+: <a class="el" href="armVIC_8h.html#a3d56223a5040f26eb8c60161fd67d864">armVIC.h</a>
+, <a class="el" href="armVIC_8c.html#a3d56223a5040f26eb8c60161fd67d864">armVIC.c</a>
 </li>
 <li>disableIRQ()
 : <a class="el" href="armVIC_8c.html#a495b577a0ad5c4dc620339b2edff1ac5">armVIC.c</a>
 , <a class="el" href="armVIC_8h.html#a495b577a0ad5c4dc620339b2edff1ac5">armVIC.h</a>
 </li>
-<li>disc_survey()
-: <a class="el" href="discsurvey_8c.html#ac5e1ab3b75ad072f1eb43ccd6af9cb25">discsurvey.c</a>
-, <a class="el" href="discsurvey_8h.html#a66ae4c7ce2ec2a5a145c2d325814987a">discsurvey.h</a>
-</li>
-<li>disc_survey_init()
-: <a class="el" href="discsurvey_8c.html#a04f149ff81f5daa20df581acafefc011">discsurvey.c</a>
-, <a class="el" href="discsurvey_8h.html#a04f149ff81f5daa20df581acafefc011">discsurvey.h</a>
-</li>
 <li>distance_too_great()
 : <a class="el" href="gps__skytraq_8c.html#adf131e077c10d69ef3d5bed870040fc0">gps_skytraq.c</a>
 </li>
-<li>DistanceEquation()
-: <a class="el" href="OSAMNav_8h.html#a250687678f587f466e7611a982c6a34d">OSAMNav.h</a>
-, <a class="el" href="OSAMNav_8c.html#a250687678f587f466e7611a982c6a34d">OSAMNav.c</a>
-</li>
 <li>dl_parse_msg()
-: <a class="el" href="setup__actuators_8c.html#a87ff8c0ffff657dbde8566f062779428">setup_actuators.c</a>
-, <a class="el" href="test__datalink_8c.html#a87ff8c0ffff657dbde8566f062779428">test_datalink.c</a>
+: <a class="el" href="fixedwing_2datalink_8c.html#a87ff8c0ffff657dbde8566f062779428">datalink.c</a>
+, <a class="el" href="setup__actuators_8c.html#a87ff8c0ffff657dbde8566f062779428">setup_actuators.c</a>
 , <a class="el" href="datalink_8h.html#ad3bda4915c69f8c470d2bdba039e8ca8">datalink.h</a>
-, <a class="el" href="rotorcraft_2datalink_8c.html#a87ff8c0ffff657dbde8566f062779428">datalink.c</a>
-, <a class="el" href="test__board_8c.html#a87ff8c0ffff657dbde8566f062779428">test_board.c</a>
-, <a class="el" href="fixedwing_2datalink_8c.html#a87ff8c0ffff657dbde8566f062779428">datalink.c</a>
 </li>
 <li>dma1_c2_irq_handler()
 : <a class="el" href="lisa__overo__link__arch_8c.html#ac935eddf43408f31cd6ed55e32501939">lisa_overo_link_arch.c</a>
 </li>
 <li>dma1_c4_irq_handler()
-: <a class="el" href="sc18is600__arch_8c.html#a4a669b9d2efca9fcda5db4b642a990e4">sc18is600_arch.c</a>
-, <a class="el" href="stm32_2subsystems_2imu_2imu__crista__arch_8c.html#a4a669b9d2efca9fcda5db4b642a990e4">imu_crista_arch.c</a>
+: <a class="el" href="stm32_2subsystems_2imu_2imu__crista__arch_8c.html#a4a669b9d2efca9fcda5db4b642a990e4">imu_crista_arch.c</a>
 , <a class="el" href="lpc21_2subsystems_2imu_2imu__aspirin__arch_8c.html#a4a669b9d2efca9fcda5db4b642a990e4">imu_aspirin_arch.c</a>
+, <a class="el" href="sc18is600__arch_8c.html#a4a669b9d2efca9fcda5db4b642a990e4">sc18is600_arch.c</a>
+</li>
+<li>dma1_stream0_isr()
+: <a class="el" href="stm32f4__chibios__vectors_8h.html#aad7f318ceb991f3ab1779406044f4bec">stm32f4_chibios_vectors.h</a>
+</li>
+<li>dma1_stream1_isr()
+: <a class="el" href="stm32f4__chibios__vectors_8h.html#afd610d8eee10ed7a855c55de1b088960">stm32f4_chibios_vectors.h</a>
+</li>
+<li>dma1_stream2_isr()
+: <a class="el" href="stm32f4__chibios__vectors_8h.html#a6cc6f1196a938bea50f1e90fa7ce7bc2">stm32f4_chibios_vectors.h</a>
+</li>
+<li>dma1_stream3_isr()
+: <a class="el" href="stm32f4__chibios__vectors_8h.html#a1f02ec8a0937b5090a5b40eda040d33a">stm32f4_chibios_vectors.h</a>
+</li>
+<li>dma1_stream4_isr()
+: <a class="el" href="stm32f4__chibios__vectors_8h.html#a3324e52a40e07343dbee5f13b3c4a4eb">stm32f4_chibios_vectors.h</a>
+</li>
+<li>dma1_stream5_isr()
+: <a class="el" href="stm32f4__chibios__vectors_8h.html#a1d1741a98f1525a906e8c3ed43031d79">stm32f4_chibios_vectors.h</a>
+</li>
+<li>dma1_stream6_isr()
+: <a class="el" href="stm32f4__chibios__vectors_8h.html#a301e18fea373cdaa3919f1964fc83ebe">stm32f4_chibios_vectors.h</a>
+</li>
+<li>dma1_stream7_isr()
+: <a class="el" href="stm32f4__chibios__vectors_8h.html#a23c4a58ee865c5db5cd5311f90e5e92d">stm32f4_chibios_vectors.h</a>
+</li>
+<li>dma2_stream0_isr()
+: <a class="el" href="stm32f4__chibios__vectors_8h.html#ae573d0efee3d593db4a130960c989f8d">stm32f4_chibios_vectors.h</a>
+</li>
+<li>dma2_stream1_isr()
+: <a class="el" href="stm32f4__chibios__vectors_8h.html#a6a7232deb6a2252dbc9360bda266181e">stm32f4_chibios_vectors.h</a>
+</li>
+<li>dma2_stream2_isr()
+: <a class="el" href="stm32f4__chibios__vectors_8h.html#a1de5426650a4976787b1a747692f8274">stm32f4_chibios_vectors.h</a>
+</li>
+<li>dma2_stream3_isr()
+: <a class="el" href="stm32f4__chibios__vectors_8h.html#a974c972b8111908533a486c1dbbdd4f0">stm32f4_chibios_vectors.h</a>
+</li>
+<li>dma2_stream4_isr()
+: <a class="el" href="stm32f4__chibios__vectors_8h.html#a33d1d106d8fec48b01b06e3fb1722a39">stm32f4_chibios_vectors.h</a>
+</li>
+<li>dma2_stream5_isr()
+: <a class="el" href="stm32f4__chibios__vectors_8h.html#a61c880309330a386236cb98b649c3be1">stm32f4_chibios_vectors.h</a>
+</li>
+<li>dma2_stream6_isr()
+: <a class="el" href="stm32f4__chibios__vectors_8h.html#a3592fa8fdd929957f3a2a613ef81e650">stm32f4_chibios_vectors.h</a>
+</li>
+<li>dma2_stream7_isr()
+: <a class="el" href="stm32f4__chibios__vectors_8h.html#a042176ffc09cd6a69e08b0c3b0245b15">stm32f4_chibios_vectors.h</a>
 </li>
 <li>dpicco_event()
 : <a class="el" href="humid__dpicco_8h.html#a21d3360f2dd2927961136f5a596a7c6f">humid_dpicco.h</a>
 , <a class="el" href="humid__dpicco_8c.html#a21d3360f2dd2927961136f5a596a7c6f">humid_dpicco.c</a>
 </li>
 <li>dpicco_init()
-: <a class="el" href="humid__dpicco_8h.html#aa5d92a1b06d3b655cc24cf681c8530a0">humid_dpicco.h</a>
-, <a class="el" href="humid__dpicco_8c.html#aa5d92a1b06d3b655cc24cf681c8530a0">humid_dpicco.c</a>
+: <a class="el" href="humid__dpicco_8c.html#aa5d92a1b06d3b655cc24cf681c8530a0">humid_dpicco.c</a>
+, <a class="el" href="humid__dpicco_8h.html#aa5d92a1b06d3b655cc24cf681c8530a0">humid_dpicco.h</a>
 </li>
 <li>dpicco_periodic()
 : <a class="el" href="humid__dpicco_8h.html#ac6926cbcd5906d08ed738bdf698bfb01">humid_dpicco.h</a>
@@ -265,13 +302,17 @@ $(document).ready(function(){initNavTree('globals_func_0x64.html','');});
 <li>Drift_correction()
 : <a class="el" href="ahrs__float__dcm_8c.html#a0983667a3515b42c82ce0b23d0007439">ahrs_float_dcm.c</a>
 </li>
+<li>dual_pwm_isr()
+: <a class="el" href="stm32_2subsystems_2actuators_2actuators__dualpwm__arch_8h.html#aa4bbd9d7d8bc0e055cdc7d4b1bcb17f0">actuators_dualpwm_arch.h</a>
+, <a class="el" href="stm32_2subsystems_2actuators_2actuators__dualpwm__arch_8c.html#aa4bbd9d7d8bc0e055cdc7d4b1bcb17f0">actuators_dualpwm_arch.c</a>
+</li>
 <li>dust_gp2y_event()
 : <a class="el" href="dust__gp2y_8h.html#aaa73fb1b430bfb2487a71083ea9aefa6">dust_gp2y.h</a>
 , <a class="el" href="dust__gp2y_8c.html#aaa73fb1b430bfb2487a71083ea9aefa6">dust_gp2y.c</a>
 </li>
 <li>dust_gp2y_init()
-: <a class="el" href="dust__gp2y_8c.html#ad49f51aecf22ec97306889dad6db13e7">dust_gp2y.c</a>
-, <a class="el" href="dust__gp2y_8h.html#ad49f51aecf22ec97306889dad6db13e7">dust_gp2y.h</a>
+: <a class="el" href="dust__gp2y_8h.html#ad49f51aecf22ec97306889dad6db13e7">dust_gp2y.h</a>
+, <a class="el" href="dust__gp2y_8c.html#ad49f51aecf22ec97306889dad6db13e7">dust_gp2y.c</a>
 </li>
 <li>dust_gp2y_periodic()
 : <a class="el" href="dust__gp2y_8h.html#a7ba1d364e765abcc7fe0ff35f4364f17">dust_gp2y.h</a>
@@ -283,7 +324,7 @@ $(document).ready(function(){initNavTree('globals_func_0x64.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:14 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:23 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

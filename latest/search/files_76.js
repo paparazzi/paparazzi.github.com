@@ -4,8 +4,6 @@ var searchData=
   ['vf_5fextended_5ffloat_2eh',['vf_extended_float.h',['../vf__extended__float_8h.html',1,'']]],
   ['vf_5ffloat_2ec',['vf_float.c',['../vf__float_8c.html',1,'']]],
   ['vf_5ffloat_2eh',['vf_float.h',['../vf__float_8h.html',1,'']]],
-  ['vf_5fint_2ec',['vf_int.c',['../vf__int_8c.html',1,'']]],
-  ['vf_5fint_2eh',['vf_int.h',['../vf__int_8h.html',1,'']]],
   ['vi_2ec',['vi.c',['../vi_8c.html',1,'']]],
   ['vi_2eh',['vi.h',['../vi_8h.html',1,'']]],
   ['vi_5fdatalink_2ec',['vi_datalink.c',['../vi__datalink_8c.html',1,'']]],

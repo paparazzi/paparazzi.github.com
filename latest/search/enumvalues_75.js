@@ -9,5 +9,5 @@ var searchData=
   ['um6running',['UM6Running',['../imu__um6_8h.html#a26ca138779c71e0bc7de2b8b338d91fcab23796ae28cba8f6396aa0c1005cad5c',1,'imu_um6.h']]],
   ['um6uninit',['UM6Uninit',['../imu__um6_8h.html#a26ca138779c71e0bc7de2b8b338d91fca0a15c4dce3599a0cf01ce7e5d0f4a5b4',1,'imu_um6.h']]],
   ['unset',['UNSET',['../formation_8h.html#a4c0e214062079ff665c54dbc682bb832aec1d962808cbb9cf1b89a5cdd6197923',1,'formation.h']]],
-  ['uturn',['UTURN',['../anemotaxis_8c.html#a015eb90e0de9f16e87bd149d4b9ce959aba124336c528f7b9755eb778bdc45f5a',1,'UTURN():&#160;anemotaxis.c'],['../discsurvey_8c.html#a015eb90e0de9f16e87bd149d4b9ce959aba124336c528f7b9755eb778bdc45f5a',1,'UTURN():&#160;discsurvey.c']]]
+  ['uturn',['UTURN',['../anemotaxis_8c.html#a015eb90e0de9f16e87bd149d4b9ce959aba124336c528f7b9755eb778bdc45f5a',1,'UTURN():&#160;anemotaxis.c'],['../nav__survey__disc_8c.html#ac9afc0cb207e93bdf17ae7a0f93a5c44aba124336c528f7b9755eb778bdc45f5a',1,'UTURN():&#160;nav_survey_disc.c']]]
 ];

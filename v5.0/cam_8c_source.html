@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.0.2_stable-5-gc76da3d</span>
+   &#160;<span id="projectnumber">v5.0.4_stable-4-g32bffa6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -336,7 +336,7 @@ $(document).ready(function(){initNavTree('cam_8c_source.html','');});
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="preprocessor"></span>  <span class="keyword">struct </span><a class="code" href="structEnuCoor__f.html" title="vector in East North Up coordinates Units: meters">EnuCoor_f</a>* pos = <a class="code" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float).">stateGetPositionEnu_f</a>();</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <span class="keyword">struct </span><a class="code" href="structFloatEulers.html" title="euler angles">FloatEulers</a>* att = <a class="code" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float).">stateGetNedToBodyEulers_f</a>();</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <a class="code" href="point_8c.html#a3317a3a368f54d6c89acfbbaa49b4ed2">vPoint</a>(pos-&gt;<a class="code" href="structEnuCoor__f.html#a1477647029e175947a6bd860322c98ff" title="in meters">x</a>, pos-&gt;<a class="code" href="structEnuCoor__f.html#a03a1d7fc5e459dd6cbdb7893ef631dde" title="in meters">y</a>, pos-&gt;<a class="code" href="structEnuCoor__f.html#af45d8ff67563a7c7bf0c7883aa0f3e3a" title="in meters">z</a>,</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <a class="code" href="point_8c.html#a3317a3a368f54d6c89acfbbaa49b4ed2">vPoint</a>(pos-&gt;<a class="code" href="structEnuCoor__f.html#a1477647029e175947a6bd860322c98ff" title="in meters">x</a>, pos-&gt;<a class="code" href="structEnuCoor__f.html#a03a1d7fc5e459dd6cbdb7893ef631dde" title="in meters">y</a>, <a class="code" href="group__state__position.html#ga7488f3b1e3afa9515541c0130278bdac" title="Get position in UTM coordinates (float).">stateGetPositionUtm_f</a>()-&gt;alt,</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;         att-&gt;<a class="code" href="structFloatEulers.html#a4b2c73d59e89d78354658b20058720e0" title="in radians">phi</a>, att-&gt;<a class="code" href="structFloatEulers.html#a98f8790d7dbb4d3ef03e99cdf27f844e" title="in radians">theta</a>, *<a class="code" href="group__state__velocity.html#gaf16409f23300380a2a5a84cb77f5305a" title="Get dir of horizontal ground speed (float).">stateGetHorizontalSpeedDir_f</a>(),</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;         <a class="code" href="cam_8c.html#ad2170cb84810320485d168a9ab8f7efc" title="Radians, for CAM_MODE_ANGLES mode.">cam_target_x</a>, <a class="code" href="cam_8c.html#a271ee35440eae7b3a69afc6ebc167cac">cam_target_y</a>, <a class="code" href="cam_8c.html#af3098e4d774dcc8eb7650d54a737a9bd">cam_target_alt</a>,</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;         &amp;<a class="code" href="cam_8c.html#a4594bf9761835894a1baa11831c37d50">cam_pan_c</a>, &amp;<a class="code" href="cam_8c.html#ad02900f1c2639aa4f8b6fd05614c26c6">cam_tilt_c</a>);</div>
@@ -382,7 +382,7 @@ $(document).ready(function(){initNavTree('cam_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_900c035387cecacfdb66232491aebefe.html">cam_control</a></li><li class="navelem"><a class="el" href="cam_8c.html">cam.c</a></li>
-    <li class="footer">Generated on Tue Nov 19 2013 00:02:54 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Apr 9 2014 18:08:52 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

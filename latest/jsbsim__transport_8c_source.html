@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('jsbsim__transport_8c_source.html','');
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordtype">float</span> ux = <a class="code" href="jsbsim__transport_8c.html#a2743dcc4e9c41b9e1d64aab1b991b6fc">MOfCm</a>(atoi(argv[2]));</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordtype">float</span> uy = <a class="code" href="jsbsim__transport_8c.html#a2743dcc4e9c41b9e1d64aab1b991b6fc">MOfCm</a>(atoi(argv[3]));</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">float</span> a = <a class="code" href="jsbsim__transport_8c.html#a2743dcc4e9c41b9e1d64aab1b991b6fc">MOfCm</a>(atoi(argv[4]));</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a> = RadOfDeg(((<span class="keywordtype">float</span>)atoi(argv[1]))/ 10.);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordtype">float</span> c = RadOfDeg(((<span class="keywordtype">float</span>)atoi(argv[1]))/ 10.);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordtype">float</span> s = <a class="code" href="jsbsim__transport_8c.html#a2743dcc4e9c41b9e1d64aab1b991b6fc">MOfCm</a>(atoi(argv[6]));</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordtype">float</span> cl = <a class="code" href="jsbsim__transport_8c.html#a2743dcc4e9c41b9e1d64aab1b991b6fc">MOfCm</a>(atoi(argv[7]));</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> t = atoi(argv[5]);</div>
@@ -159,8 +159,8 @@ $(document).ready(function(){initNavTree('jsbsim__transport_8c_source.html','');
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="comment">/* Computes from (lat, long) in the referenced UTM zone */</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">struct </span><a class="code" href="structLlaCoor__f.html" title="vector in Latitude, Longitude and Altitude">LlaCoor_f</a> lla;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  lla.<a class="code" href="structLlaCoor__f.html#ace542562586741aeb022a5a57c30dea5" title="in radians">lat</a> = RadOfDeg((<span class="keywordtype">float</span>)(DL_MOVE_WP_lat(<a class="code" href="main__demo5_8c.html#a41ca1f0c42c768e235066d83071b1ed9">dl_buffer</a>) / 1e7));</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  lla.<a class="code" href="structLlaCoor__f.html#a92e1d4633b74c620a7e8bf49e851330e" title="in radians">lon</a> = RadOfDeg((<span class="keywordtype">float</span>)(DL_MOVE_WP_lon(<a class="code" href="main__demo5_8c.html#a41ca1f0c42c768e235066d83071b1ed9">dl_buffer</a>) / 1e7));</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  lla.<a class="code" href="structLlaCoor__f.html#ace542562586741aeb022a5a57c30dea5" title="in radians">lat</a> = RadOfDeg((<span class="keywordtype">float</span>)(atoi(argv[3]) / 1e7));</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  lla.<a class="code" href="structLlaCoor__f.html#a92e1d4633b74c620a7e8bf49e851330e" title="in radians">lon</a> = RadOfDeg((<span class="keywordtype">float</span>)(atoi(argv[4]) / 1e7));</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">struct </span><a class="code" href="structUtmCoor__f.html" title="position in UTM coordinates Units: meters">UtmCoor_f</a> utm;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  utm.<a class="code" href="structUtmCoor__f.html#a86adc8b9ebb389f4716c6c569a0b5d91" title="UTM zone number.">zone</a> = <a class="code" href="common__nav_8c.html#a66bdefcf7a79ffd01863bc4057e2bf5a">nav_utm_zone0</a>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd">utm_of_lla_f</a>(&amp;utm, &amp;lla);</div>
@@ -179,7 +179,7 @@ $(document).ready(function(){initNavTree('jsbsim__transport_8c_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_c87a6d12365ead88e0b90ddbc1b3c9bb.html">sim</a></li><li class="navelem"><a class="el" href="jsbsim__transport_8c.html">jsbsim_transport.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:07 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:37 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

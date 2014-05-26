@@ -11,8 +11,8 @@ var searchData=
   ['sc18is600transmit',['Sc18Is600Transmit',['../sc18i600_8h.html#a3957e1fb4a73fc23b0ed60c91f613fafa00f1bb8c8d294f3e6d30c856d51988d8',1,'sc18i600.h']]],
   ['sc18is600waitingfori2c',['Sc18Is600WaitingForI2C',['../sc18i600_8h.html#ac78382be26749fa7dac3f7c2b479ea9ca992590e3f28fec3a344be4c6d27350bd',1,'sc18i600.h']]],
   ['sc18is600writeregister',['Sc18Is600WriteRegister',['../sc18i600_8h.html#a3957e1fb4a73fc23b0ed60c91f613fafae2edb39ae6c777831f6a48df6106c450',1,'sc18i600.h']]],
-  ['seg',['SEG',['../poly__survey__adv_8h.html#aa46eae8395ef867c63e26dd5d86e97d5a04ac0c05629917c780c280202e107178',1,'poly_survey_adv.h']]],
-  ['segment',['SEGMENT',['../discsurvey_8c.html#a015eb90e0de9f16e87bd149d4b9ce959a27b259b0b507f42df31ed13cc0a5d569',1,'discsurvey.c']]],
+  ['seg',['SEG',['../nav__survey__polygon_8h.html#aa9c58cb0ccc605869d75547268f59fa6a04ac0c05629917c780c280202e107178',1,'nav_survey_polygon.h']]],
+  ['segment',['SEGMENT',['../nav__survey__disc_8c.html#ac9afc0cb207e93bdf17ae7a0f93a5c44a27b259b0b507f42df31ed13cc0a5d569',1,'nav_survey_disc.c']]],
   ['set_5faddr',['SET_ADDR',['../actuators__asctec_8h.html#a6ab1b9217ee457a8e4352cf0b28af79da94edc8e83fd7d0718449d0caeb168ad9',1,'SET_ADDR():&#160;actuators_asctec.h'],['../actuators__asctec__v2_8h.html#a4fc4c81cd178f2e57a6d8ce74785742ea94edc8e83fd7d0718449d0caeb168ad9',1,'SET_ADDR():&#160;actuators_asctec_v2.h']]],
   ['sht2_5fget_5fhumid',['SHT2_GET_HUMID',['../humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67aabb0f16bd99f18df6c989314ad448a04c',1,'humid_sht_i2c.h']]],
   ['sht2_5fget_5ftemp',['SHT2_GET_TEMP',['../humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67aa4c07684db117aa2f686089a490a822b4',1,'humid_sht_i2c.h']]],
@@ -59,7 +59,7 @@ var searchData=
   ['spitransrunning',['SPITransRunning',['../group__spi.html#gga52e70c55efc6a9b04903157a0965baacaa9502bb1de8d8491ceb5443ef51c4f4a',1,'spi.h']]],
   ['spitranssuccess',['SPITransSuccess',['../group__spi.html#gga52e70c55efc6a9b04903157a0965baacaa4021c68696337695cfdb356866f3b53',1,'spi.h']]],
   ['spiunselect',['SPIUnselect',['../group__spi.html#gga7a54d65ebae5c91cb0b5f28cd7111ae3acfd3336d9cd80d7a1b9eb7582848def5',1,'spi.h']]],
-  ['startcircle',['StartCircle',['../spiral_8c.html#ab1ef3d1e834bd62f55deec9293529026a7f1609667ab956472d5f383683e4b996',1,'spiral.c']]],
+  ['startcircle',['StartCircle',['../nav__spiral_8h.html#ab1ef3d1e834bd62f55deec9293529026a7f1609667ab956472d5f383683e4b996',1,'nav_spiral.h']]],
   ['state_5farming',['STATE_ARMING',['../autopilot__arming__throttle_8h.html#a67f42ccf33e2918fef63b1a6c729e759a4782b6ecc31dc1819db2d9ab92fedeff',1,'autopilot_arming_throttle.h']]],
   ['state_5fmotors_5foff_5fready',['STATE_MOTORS_OFF_READY',['../autopilot__arming__throttle_8h.html#a67f42ccf33e2918fef63b1a6c729e759aad921d96fea7cec905a7ef36a58bf934',1,'autopilot_arming_throttle.h']]],
   ['state_5fmotors_5fon',['STATE_MOTORS_ON',['../autopilot__arming__switch_8h.html#abd7b974a7084669ffc2893dd65db427ea5d9b03165b6d8bb49b125baa065bdc39',1,'STATE_MOTORS_ON():&#160;autopilot_arming_switch.h'],['../autopilot__arming__throttle_8h.html#a67f42ccf33e2918fef63b1a6c729e759a5d9b03165b6d8bb49b125baa065bdc39',1,'STATE_MOTORS_ON():&#160;autopilot_arming_throttle.h']]],
@@ -90,6 +90,6 @@ var searchData=
   ['superbitrf_5fsyncing_5fb',['SUPERBITRF_SYNCING_B',['../superbitrf_8h.html#aff46e2692b6bb527a21559a9faf61dd3af949af650a3a03cc323054fe6f9baaad',1,'superbitrf.h']]],
   ['superbitrf_5ftransfer',['SUPERBITRF_TRANSFER',['../superbitrf_8h.html#aff46e2692b6bb527a21559a9faf61dd3a118efba928d6599a1475093903a9a1d4',1,'superbitrf.h']]],
   ['superbitrf_5funinit',['SUPERBITRF_UNINIT',['../superbitrf_8h.html#aff46e2692b6bb527a21559a9faf61dd3a6b6ab5263704d96de6ad4e5612205020',1,'superbitrf.h']]],
-  ['sweep',['Sweep',['../OSAMNav_8c.html#a8c59693bfb0c154698979de6e77bb0c5a6e181b59624c49600dfdb1df3b47272f',1,'OSAMNav.c']]],
-  ['sweepcircle',['SweepCircle',['../OSAMNav_8c.html#a8c59693bfb0c154698979de6e77bb0c5ac555870e8a5a6176a7a76bd11a66065c',1,'OSAMNav.c']]]
+  ['sweep',['Sweep',['../nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5a6e181b59624c49600dfdb1df3b47272f',1,'nav_survey_poly_osam.c']]],
+  ['sweepcircle',['SweepCircle',['../nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5ac555870e8a5a6176a7a76bd11a66065c',1,'nav_survey_poly_osam.c']]]
 ];

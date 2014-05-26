@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('gps__sim__nps_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__sim__nps_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2gps_2gps__sim__nps_8hdep" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2gps_2gps__sim__nps_8hdep" id="sw_2airborne_2subsystems_2gps_2gps__sim__nps_8hdep">
-<area shape="rect" id="node3" href="gps__sim__nps_8c.html" title="sw/airborne/subsystems\l/gps/gps_sim_nps.c" alt="" coords="5,99,168,143"/></map>
+<area shape="rect" id="node3" href="gps__sim__nps_8c.html" title="sw/airborne/subsystems\l/gps/gps_sim_nps.c" alt="" coords="5,99,181,143"/></map>
 </div>
 </div>
 <p><a href="gps__sim__nps_8h_source.html">Go to the source code of this file.</a></p>
@@ -142,10 +142,12 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a1acb1b66a5b2d172cff383fdb9b6de4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__sim__nps_8h.html#a1acb1b66a5b2d172cff383fdb9b6de4d">gps_feed_value</a> ()</td></tr>
 <tr class="memitem:a443bb1937ab52c30a22453c4d3c24590"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__sim__nps_8h.html#a443bb1937ab52c30a22453c4d3c24590">gps_impl_init</a> ()</td></tr>
+<tr class="memdesc:a443bb1937ab52c30a22453c4d3c24590"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPS initialization.  <a href="#a443bb1937ab52c30a22453c4d3c24590"></a><br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a62a4a0f2fc32a105289eb2cf890a1e5d"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__sim__nps_8h.html#a62a4a0f2fc32a105289eb2cf890a1e5d">gps_available</a></td></tr>
+<tr class="memdesc:a62a4a0f2fc32a105289eb2cf890a1e5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is set to TRUE when a new REMOTE_GPS packet is received and parsed.  <a href="#a62a4a0f2fc32a105289eb2cf890a1e5d"></a><br/></td></tr>
 <tr class="memitem:a662a8a716182b1eba2896ba0c89d5213"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__sim__nps_8h.html#a662a8a716182b1eba2896ba0c89d5213">gps_has_fix</a></td></tr>
 </table>
 <h2>Macro Definition Documentation</h2>
@@ -176,13 +178,17 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{     \</div>
-<div class="line">    if (<a class="code" href="gps__sim_8c.html#a62a4a0f2fc32a105289eb2cf890a1e5d">gps_available</a>) {                        \</div>
-<div class="line">      if (<a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#afeffb02bdd18d27a87e96bb77175168f" title="status of fix">fix</a> == <a class="code" href="gps_8h.html#ac5e980c8325a29dd79a45ed26af404be">GPS_FIX_3D</a>)                \</div>
-<div class="line">        gps.last_fix_time = <a class="code" href="structsys__time.html">sys_time</a>.<a class="code" href="structsys__time.html#a2e86fdabba99a0ac8f6409e0d1e694a3" title="full seconds since startup">nb_sec</a>;    \</div>
-<div class="line">      _sol_available_callback();        \</div>
-<div class="line">      gps_available = <a class="code" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;                    \</div>
-<div class="line">    }                                           \</div>
+<b>Value:</b><div class="fragment"><div class="line">{         \</div>
+<div class="line">    if (<a class="code" href="gps__datalink_8c.html#a62a4a0f2fc32a105289eb2cf890a1e5d" title="Is set to TRUE when a new REMOTE_GPS packet is received and parsed.">gps_available</a>) {                            \</div>
+<div class="line">      gps.last_msg_ticks = <a class="code" href="structsys__time.html">sys_time</a>.<a class="code" href="structsys__time.html#a8654f589772b3eef22ab59594c97e513" title="remainder of seconds since startup in CPU_TICKS">nb_sec_rem</a>;     \</div>
+<div class="line">      gps.last_msg_time = <a class="code" href="structsys__time.html">sys_time</a>.<a class="code" href="structsys__time.html#a2e86fdabba99a0ac8f6409e0d1e694a3" title="full seconds since startup">nb_sec</a>;          \</div>
+<div class="line">      if (<a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#afeffb02bdd18d27a87e96bb77175168f" title="status of fix">fix</a> == <a class="code" href="gps_8h.html#ac5e980c8325a29dd79a45ed26af404be">GPS_FIX_3D</a>) {                  \</div>
+<div class="line">        gps.last_3dfix_ticks = <a class="code" href="structsys__time.html">sys_time</a>.<a class="code" href="structsys__time.html#a8654f589772b3eef22ab59594c97e513" title="remainder of seconds since startup in CPU_TICKS">nb_sec_rem</a>; \</div>
+<div class="line">        gps.last_3dfix_time = <a class="code" href="structsys__time.html">sys_time</a>.<a class="code" href="structsys__time.html#a2e86fdabba99a0ac8f6409e0d1e694a3" title="full seconds since startup">nb_sec</a>;      \</div>
+<div class="line">      }                                             \</div>
+<div class="line">      _sol_available_callback();                    \</div>
+<div class="line">      gps_available = <a class="code" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;                        \</div>
+<div class="line">    }                                               \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="gps__sim__nps_8h_source.html#l00015">15</a> of file <a class="el" href="gps__sim__nps_8h_source.html">gps_sim_nps.h</a>.</p>
@@ -205,7 +211,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="gps__sim__nps_8c_source.html#l00034">34</a> of file <a class="el" href="gps__sim__nps_8c_source.html">gps_sim_nps.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00057">LlaCoor_i::alt</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00084">UtmCoor_i::alt</a>, <a class="el" href="gps_8h_source.html#l00072">GpsState::course</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00081">UtmCoor_f::east</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00083">UtmCoor_i::east</a>, <a class="el" href="gps_8h_source.html#l00064">GpsState::ecef_pos</a>, <a class="el" href="gps_8h_source.html#l00068">GpsState::ecef_vel</a>, <a class="el" href="gps_8h_source.html#l00078">GpsState::fix</a>, <a class="el" href="gps_8c_source.html#l00033">gps</a>, <a class="el" href="gps__sim_8c_source.html#l00024">gps_available</a>, <a class="el" href="gps_8h_source.html#l00043">GPS_FIX_3D</a>, <a class="el" href="gps_8h_source.html#l00041">GPS_FIX_NONE</a>, <a class="el" href="gps__sim__nps_8c_source.html#l00032">gps_has_fix</a>, <a class="el" href="gps_8h_source.html#l00070">GpsState::gspeed</a>, <a class="el" href="gps_8h_source.html#l00067">GpsState::hmsl</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00054">LlaCoor_f::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00056">LlaCoor_i::lat</a>, <a class="el" href="gps_8h_source.html#l00065">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00053">LlaCoor_f::lon</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00055">LlaCoor_i::lon</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00007">ltp_def_from_ecef_d()</a>, <a class="el" href="common__nav_8c_source.html#l00045">nav_utm_zone0</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00101">ned_of_ecef_vect_d()</a>, <a class="el" href="gps_8h_source.html#l00069">GpsState::ned_vel</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00080">UtmCoor_f::north</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00082">UtmCoor_i::north</a>, <a class="el" href="gps_8h_source.html#l00071">GpsState::speed_3d</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00257">utm_of_lla_f()</a>, <a class="el" href="gps_8h_source.html#l00066">GpsState::utm_pos</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00046">EcefCoor_i::x</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00062">NedCoor_d::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00064">NedCoor_i::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00047">EcefCoor_i::y</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00063">NedCoor_d::y</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00065">NedCoor_i::y</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00048">EcefCoor_i::z</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00064">NedCoor_d::z</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00066">NedCoor_i::z</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00083">UtmCoor_f::zone</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00085">UtmCoor_i::zone</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00057">LlaCoor_i::alt</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00084">UtmCoor_i::alt</a>, <a class="el" href="gps_8h_source.html#l00072">GpsState::course</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00081">UtmCoor_f::east</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00083">UtmCoor_i::east</a>, <a class="el" href="gps_8h_source.html#l00064">GpsState::ecef_pos</a>, <a class="el" href="gps_8h_source.html#l00068">GpsState::ecef_vel</a>, <a class="el" href="gps_8h_source.html#l00078">GpsState::fix</a>, <a class="el" href="gps_8c_source.html#l00041">gps</a>, <a class="el" href="gps__datalink_8c_source.html#l00032">gps_available</a>, <a class="el" href="gps_8h_source.html#l00043">GPS_FIX_3D</a>, <a class="el" href="gps_8h_source.html#l00041">GPS_FIX_NONE</a>, <a class="el" href="gps__sim__nps_8c_source.html#l00032">gps_has_fix</a>, <a class="el" href="gps_8h_source.html#l00070">GpsState::gspeed</a>, <a class="el" href="gps_8h_source.html#l00067">GpsState::hmsl</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00054">LlaCoor_f::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00056">LlaCoor_i::lat</a>, <a class="el" href="gps_8h_source.html#l00065">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00053">LlaCoor_f::lon</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00055">LlaCoor_i::lon</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00007">ltp_def_from_ecef_d()</a>, <a class="el" href="common__nav_8c_source.html#l00044">nav_utm_zone0</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00101">ned_of_ecef_vect_d()</a>, <a class="el" href="gps_8h_source.html#l00069">GpsState::ned_vel</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00080">UtmCoor_f::north</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00082">UtmCoor_i::north</a>, <a class="el" href="gps_8h_source.html#l00071">GpsState::speed_3d</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00257">utm_of_lla_f()</a>, <a class="el" href="gps_8h_source.html#l00066">GpsState::utm_pos</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00046">EcefCoor_i::x</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00062">NedCoor_d::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00064">NedCoor_i::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00047">EcefCoor_i::y</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00063">NedCoor_d::y</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00065">NedCoor_i::y</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00048">EcefCoor_i::z</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00064">NedCoor_d::z</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00066">NedCoor_i::z</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00083">UtmCoor_f::zone</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00085">UtmCoor_i::zone</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -214,7 +220,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__sim__nps_8h_a1acb1b66a5b2d172cff383fdb9b6de4d_cgraph.png" border="0" usemap="#gps__sim__nps_8h_a1acb1b66a5b2d172cff383fdb9b6de4d_cgraph" alt=""/></div>
 <map name="gps__sim__nps_8h_a1acb1b66a5b2d172cff383fdb9b6de4d_cgraph" id="gps__sim__nps_8h_a1acb1b66a5b2d172cff383fdb9b6de4d_cgraph">
-<area shape="rect" id="node3" href="pprz__geodetic__double_8c.html#a3b487b485bc51b98307acae35009d1bb" title="ltp_def_from_ecef_d" alt="" coords="169,5,308,33"/><area shape="rect" id="node7" href="pprz__geodetic__double_8c.html#a9a6c153bbedbbcc05dedcc6f5bc3266a" title="ned_of_ecef_vect_d" alt="" coords="169,55,308,83"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="192,106,285,134"/><area shape="rect" id="node5" href="pprz__geodetic__double_8c.html#a03262ba97728d6e61bc645e69bd7c332" title="lla_of_ecef_d" alt="" coords="377,5,476,33"/><area shape="rect" id="node9" href="pprz__geodetic__double_8c.html#a551843d3633704415e80a8368b1935eb" title="enu_of_ecef_vect_d" alt="" coords="357,55,496,83"/><area shape="rect" id="node13" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="360,106,493,134"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="365,157,488,201"/></map>
+<area shape="rect" id="node3" href="pprz__geodetic__double_8c.html#a3b487b485bc51b98307acae35009d1bb" title="ltp_def_from_ecef_d" alt="" coords="177,5,327,33"/><area shape="rect" id="node7" href="pprz__geodetic__double_8c.html#a9a6c153bbedbbcc05dedcc6f5bc3266a" title="ned_of_ecef_vect_d" alt="" coords="179,55,325,83"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="203,106,301,134"/><area shape="rect" id="node5" href="pprz__geodetic__double_8c.html#a03262ba97728d6e61bc645e69bd7c332" title="lla_of_ecef_d" alt="" coords="399,5,503,33"/><area shape="rect" id="node9" href="pprz__geodetic__double_8c.html#a551843d3633704415e80a8368b1935eb" title="enu_of_ecef_vect_d" alt="" coords="377,55,524,83"/><area shape="rect" id="node13" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="377,106,524,134"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="383,157,519,201"/></map>
 </div>
 </p>
 
@@ -233,6 +239,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>GPS initialization. </p>
+
 <p>Definition at line <a class="el" href="gps__ardrone2_8c_source.html#l00038">38</a> of file <a class="el" href="gps__ardrone2_8c_source.html">gps_ardrone2.c</a>.</p>
 
 </div>
@@ -248,9 +256,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__sim_8c_source.html#l00024">24</a> of file <a class="el" href="gps__sim_8c_source.html">gps_sim.c</a>.</p>
+<p>Is set to TRUE when a new REMOTE_GPS packet is received and parsed. </p>
 
-<p>Referenced by <a class="el" href="gps__sim__nps_8c_source.html#l00034">gps_feed_value()</a>, <a class="el" href="gps__sim_8c_source.html#l00041">gps_impl_init()</a>, and <a class="el" href="jsbsim__gps_8c_source.html#l00019">sim_use_gps_pos()</a>.</p>
+<p>Definition at line <a class="el" href="gps__datalink_8c_source.html#l00032">32</a> of file <a class="el" href="gps__datalink_8c_source.html">gps_datalink.c</a>.</p>
 
 </div>
 </div>
@@ -276,7 +284,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8c4cbb881db224ddaf0756e79ed706ce.html">gps</a></li><li class="navelem"><a class="el" href="gps__sim__nps_8h.html">gps_sim_nps.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:11 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:07 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

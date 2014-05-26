@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -222,7 +222,7 @@ $(document).ready(function(){initNavTree('stabilization__rate_8c_source.html',''
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">  (radio_control.values[RADIO_YAW] &gt;  STABILIZATION_RATE_DEADBAND_R || \</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">   radio_control.values[RADIO_YAW] &lt; -STABILIZATION_RATE_DEADBAND_R)</span></div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#if DOWNLINK</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#if PERIODIC_TELEMETRY</span></div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code).">subsystems/datalink/telemetry.h</a>&quot;</span></div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> send_rate(<span class="keywordtype">void</span>) {</div>
@@ -270,7 +270,7 @@ $(document).ready(function(){initNavTree('stabilization__rate_8c_source.html',''
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <a class="code" href="pprz__algebra__int_8h.html#a058767cf91a8a4624fe10a4d56ef4561">INT_RATES_ZERO</a>(<a class="code" href="stabilization__rate_8c.html#a28986a5cf9d81f11e96f7001e71cc2db">stabilization_rate_refdot</a>);</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <a class="code" href="pprz__algebra__int_8h.html#a058767cf91a8a4624fe10a4d56ef4561">INT_RATES_ZERO</a>(<a class="code" href="stabilization__rate_8c.html#a9c5e4d781cf7f2ac4d4e0fc288ab62db">stabilization_rate_sum_err</a>);</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="preprocessor">#if DOWNLINK</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="preprocessor">#if PERIODIC_TELEMETRY</span></div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor"></span>  <a class="code" href="telemetry_8c.html#abb4aa9b3c0c8d93e1372de5da86de828" title="Register a telemetry callback function.">register_periodic_telemetry</a>(DefaultPeriodic, <span class="stringliteral">&quot;RATE_LOOP&quot;</span>, send_rate);</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor"></span>}</div>
@@ -390,7 +390,7 @@ $(document).ready(function(){initNavTree('stabilization__rate_8c_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_d1b81cc433edb6118e3c3e3bc7700be0.html">stabilization</a></li><li class="navelem"><a class="el" href="stabilization__rate_8c.html">stabilization_rate.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

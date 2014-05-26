@@ -1,51 +1,51 @@
 <map id="sw/airborne/subsystems/nav.h" name="sw/airborne/subsystems/nav.h">
-<area shape="rect" id="node3" href="$jsbsim__hw_8h.html" title="sw/airborne/arch/sim\l/jsbsim_hw.h" alt="" coords="171,107,312,151"/>
-<area shape="rect" id="node11" href="$sim__ap_8c.html" title="sw/airborne/arch/sim\l/sim_ap.c" alt="" coords="336,107,477,151"/>
-<area shape="rect" id="node13" href="$sim__baro_8c.html" title="sw/airborne/arch/sim\l/sim_baro.c" alt="" coords="501,107,643,151"/>
-<area shape="rect" id="node15" href="$estimator_8c.html" title="State estimate, fusioning sensors." alt="" coords="667,115,824,143"/>
-<area shape="rect" id="node17" href="$energy__ctrl_8c.html" title="Total Energy (speed + height) control for fixed wing vehicles." alt="" coords="848,99,1024,159"/>
-<area shape="rect" id="node19" href="$fixedwing_2guidance_2guidance__v_8c.html" title="Vertical control for fixed wing vehicles." alt="" coords="1048,107,1261,151"/>
-<area shape="rect" id="node21" href="$guidance__v__n_8c.html" title="&quot;New&quot; vertical control for fixed wing vehicles." alt="" coords="1285,107,1515,151"/>
-<area shape="rect" id="node23" href="$main__ap_8c.html" title="AP ( AutoPilot ) tasks." alt="" coords="1539,107,1688,151"/>
-<area shape="rect" id="node25" href="$stabilization__adaptive_8c.html" title="sw/airborne/firmwares\l/fixedwing/stabilization\l/stabilization_adaptive.c" alt="" coords="1712,99,1872,159"/>
-<area shape="rect" id="node27" href="$stabilization__attitude_8c.html" title="sw/airborne/firmwares\l/fixedwing/stabilization\l/stabilization_attitude.c" alt="" coords="1896,99,2051,159"/>
-<area shape="rect" id="node29" href="$flight__benchmark_8c.html" title="sw/airborne/modules\l/benchmark/flight_benchmark.c" alt="" coords="2075,107,2277,151"/>
-<area shape="rect" id="node31" href="$cam__roll_8c.html" title="sw/airborne/modules\l/cam_control/cam_roll.c" alt="" coords="2301,107,2461,151"/>
-<area shape="rect" id="node33" href="$cam__segment_8c.html" title="camera control to track a segment using the general cam driver (target mode)" alt="" coords="2485,107,2677,151"/>
-<area shape="rect" id="node35" href="$cartography_8c.html" title="Navigation functions for cartography of the ground." alt="" coords="2701,107,2875,151"/>
-<area shape="rect" id="node37" href="$dc_8h.html" title="Standard Digital Camera Control Interface." alt="" coords="2899,107,3040,151"/>
-<area shape="rect" id="node49" href="$anemotaxis_8c.html" title="sw/airborne/modules\l/enose/anemotaxis.c" alt="" coords="3064,107,3205,151"/>
-<area shape="rect" id="node51" href="$chemotaxis_8c.html" title="sw/airborne/modules\l/enose/chemotaxis.c" alt="" coords="3229,107,3371,151"/>
-<area shape="rect" id="node53" href="$formation_8h.html" title="Formation flight library." alt="" coords="3395,107,3536,151"/>
-<area shape="rect" id="node57" href="$potential_8h.html" title="flying with potential field to avoid collision" alt="" coords="3560,107,3701,151"/>
-<area shape="rect" id="node61" href="$tcas_8c.html" title="Collision avoidance library." alt="" coords="3725,107,3867,151"/>
-<area shape="rect" id="node63" href="$nav__catapult_8c.html" title="sw/airborne/modules\l/nav/nav_catapult.c" alt="" coords="3891,107,4032,151"/>
-<area shape="rect" id="node65" href="$baro__bmp_8c.html" title="Bosch BMP085 I2C sensor interface." alt="" coords="4056,107,4197,151"/>
-<area shape="rect" id="node67" href="$baro__ets_8c.html" title="sw/airborne/modules\l/sensors/baro_ets.c" alt="" coords="4221,107,4363,151"/>
-<area shape="rect" id="node69" href="$baro__MS5534A_8c.html" title="Handling of the MS5534a pressure sensor." alt="" coords="4387,107,4560,151"/>
-<area shape="rect" id="node71" href="$baro__ms5611__i2c_8c.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA pressure/temperature sensor interface for I2C..." alt="" coords="4584,107,4771,151"/>
-<area shape="rect" id="node73" href="$rc__settings_8c.html" title="sw/airborne/rc_settings.c" alt="" coords="4795,115,4960,143"/>
-<area shape="rect" id="node75" href="$nav_8c.html" title="Regroup functions to compute navigation." alt="" coords="4984,107,5147,151"/>
-<area shape="rect" id="node77" href="$bomb_8c.html" title="sw/airborne/subsystems\l/navigation/bomb.c" alt="" coords="5171,107,5333,151"/>
-<area shape="rect" id="node79" href="$border__line_8c.html" title="navigate along a border line (line 1&#45;2) with turns in the same direction" alt="" coords="5357,107,5520,151"/>
-<area shape="rect" id="node81" href="$discsurvey_8c.html" title="sw/airborne/subsystems\l/navigation/discsurvey.c" alt="" coords="5544,107,5707,151"/>
-<area shape="rect" id="node83" href="$gls_8c.html" title="gps landing system" alt="" coords="5731,107,5893,151"/>
-<area shape="rect" id="node85" href="$nav__cube_8c.html" title="Navigation in a cube towards a center." alt="" coords="5917,107,6080,151"/>
-<area shape="rect" id="node87" href="$nav__line_8c.html" title="Navigation along a line with nice U&#45;turns." alt="" coords="6104,107,6267,151"/>
-<area shape="rect" id="node89" href="$nav__survey__rectangle_8h.html" title="sw/airborne/subsystems\l/navigation/nav_survey\l_rectangle.h" alt="" coords="6291,99,6453,159"/>
-<area shape="rect" id="node94" href="$OSAMNav_8c.html" title="sw/airborne/subsystems\l/navigation/OSAMNav.c" alt="" coords="6477,107,6640,151"/>
-<area shape="rect" id="node96" href="$poly__survey__adv_8c.html" title="sw/airborne/subsystems\l/navigation/poly_survey_adv.c" alt="" coords="6664,107,6859,151"/>
-<area shape="rect" id="node98" href="$snav_8c.html" title="sw/airborne/subsystems\l/navigation/snav.c" alt="" coords="6883,107,7045,151"/>
-<area shape="rect" id="node100" href="$spiral_8c.html" title="sw/airborne/subsystems\l/navigation/spiral.c" alt="" coords="7069,107,7232,151"/>
-<area shape="rect" id="node5" href="$jsbsim__hw_8c.html" title="sw/airborne/arch/sim\l/jsbsim_hw.c" alt="" coords="5,217,147,261"/>
-<area shape="rect" id="node7" href="$jsbsim__ir_8c.html" title="sw/airborne/arch/sim\l/jsbsim_ir.c" alt="" coords="171,217,312,261"/>
-<area shape="rect" id="node9" href="$jsbsim__transport_8c.html" title="sw/airborne/arch/sim\l/jsbsim_transport.c" alt="" coords="336,217,477,261"/>
-<area shape="rect" id="node39" href="$atmega__i2c__cam__ctrl_8h.html" title="sw/airborne/modules\l/digital_cam/atmega\l_i2c_cam_ctrl.h" alt="" coords="2639,209,2780,269"/>
-<area shape="rect" id="node43" href="$dc_8c.html" title="sw/airborne/modules\l/digital_cam/dc.c" alt="" coords="2804,217,2945,261"/>
-<area shape="rect" id="node45" href="$led__cam__ctrl_8h.html" title="Digital Camera Control." alt="" coords="2969,209,3113,269"/>
-<area shape="rect" id="node47" href="$servo__cam__ctrl_8h.html" title="Digital Camera Control." alt="" coords="3137,209,3297,269"/>
-<area shape="rect" id="node41" href="$atmega__i2c__cam__ctrl_8c.html" title="Interface with digital camera though AVR AtMega chip." alt="" coords="2639,318,2780,378"/>
-<area shape="rect" id="node55" href="$formation_8c.html" title="library for formation flight" alt="" coords="3395,217,3536,261"/>
-<area shape="rect" id="node59" href="$potential_8c.html" title="sw/airborne/modules\l/multi/potential.c" alt="" coords="3560,217,3701,261"/>
-<area shape="rect" id="node92" href="$nav__survey__rectangle_8c.html" title="sw/airborne/subsystems\l/navigation/nav_survey\l_rectangle.c" alt="" coords="6291,209,6453,269"/>
+<area shape="rect" id="node3" href="$jsbsim__hw_8h.html" title="sw/airborne/arch/sim\l/jsbsim_hw.h" alt="" coords="184,107,339,151"/>
+<area shape="rect" id="node11" href="$sim__ap_8c.html" title="sw/airborne/arch/sim\l/sim_ap.c" alt="" coords="363,107,517,151"/>
+<area shape="rect" id="node13" href="$sim__baro_8c.html" title="sw/airborne/arch/sim\l/sim_baro.c" alt="" coords="541,107,696,151"/>
+<area shape="rect" id="node15" href="$estimator_8c.html" title="State estimate, fusioning sensors." alt="" coords="720,115,891,143"/>
+<area shape="rect" id="node17" href="$energy__ctrl_8c.html" title="Total Energy (speed + height) control for fixed wing vehicles." alt="" coords="915,99,1109,159"/>
+<area shape="rect" id="node19" href="$fixedwing_2guidance_2guidance__v_8c.html" title="Vertical control for fixed wing vehicles." alt="" coords="1133,107,1365,151"/>
+<area shape="rect" id="node21" href="$guidance__v__n_8c.html" title="&quot;New&quot; vertical control for fixed wing vehicles." alt="" coords="1389,107,1637,151"/>
+<area shape="rect" id="node23" href="$main__ap_8c.html" title="AP ( AutoPilot ) tasks." alt="" coords="1661,107,1821,151"/>
+<area shape="rect" id="node25" href="$stabilization__adaptive_8c.html" title="sw/airborne/firmwares\l/fixedwing/stabilization\l/stabilization_adaptive.c" alt="" coords="1845,99,2019,159"/>
+<area shape="rect" id="node27" href="$stabilization__attitude_8c.html" title="sw/airborne/firmwares\l/fixedwing/stabilization\l/stabilization_attitude.c" alt="" coords="2043,99,2213,159"/>
+<area shape="rect" id="node29" href="$flight__benchmark_8c.html" title="sw/airborne/modules\l/benchmark/flight_benchmark.c" alt="" coords="2237,107,2459,151"/>
+<area shape="rect" id="node31" href="$cam__roll_8c.html" title="sw/airborne/modules\l/cam_control/cam_roll.c" alt="" coords="2483,107,2656,151"/>
+<area shape="rect" id="node33" href="$cam__segment_8c.html" title="camera control to track a segment using the general cam driver (target mode)" alt="" coords="2680,107,2891,151"/>
+<area shape="rect" id="node35" href="$cartography_8c.html" title="Navigation functions for cartography of the ground." alt="" coords="2915,107,3107,151"/>
+<area shape="rect" id="node37" href="$dc_8h.html" title="Standard Digital Camera Control Interface." alt="" coords="3131,107,3285,151"/>
+<area shape="rect" id="node49" href="$anemotaxis_8c.html" title="sw/airborne/modules\l/enose/anemotaxis.c" alt="" coords="3309,107,3464,151"/>
+<area shape="rect" id="node51" href="$chemotaxis_8c.html" title="sw/airborne/modules\l/enose/chemotaxis.c" alt="" coords="3488,107,3643,151"/>
+<area shape="rect" id="node53" href="$formation_8h.html" title="Formation flight library." alt="" coords="3667,107,3821,151"/>
+<area shape="rect" id="node57" href="$potential_8h.html" title="flying with potential field to avoid collision" alt="" coords="3845,107,4000,151"/>
+<area shape="rect" id="node61" href="$tcas_8c.html" title="Collision avoidance library." alt="" coords="4024,107,4179,151"/>
+<area shape="rect" id="node63" href="$nav__catapult_8c.html" title="sw/airborne/modules\l/nav/nav_catapult.c" alt="" coords="4203,107,4357,151"/>
+<area shape="rect" id="node65" href="$baro__bmp_8c.html" title="Bosch BMP085 I2C sensor interface." alt="" coords="4381,107,4536,151"/>
+<area shape="rect" id="node67" href="$baro__ets_8c.html" title="sw/airborne/modules\l/sensors/baro_ets.c" alt="" coords="4560,107,4715,151"/>
+<area shape="rect" id="node69" href="$baro__MS5534A_8c.html" title="Handling of the MS5534a pressure sensor." alt="" coords="4739,107,4925,151"/>
+<area shape="rect" id="node71" href="$baro__ms5611__i2c_8c.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA pressure/temperature sensor interface for I2C..." alt="" coords="4949,107,5152,151"/>
+<area shape="rect" id="node73" href="$rc__settings_8c.html" title="sw/airborne/rc_settings.c" alt="" coords="5176,115,5355,143"/>
+<area shape="rect" id="node75" href="$nav_8c.html" title="Regroup functions to compute navigation." alt="" coords="5379,107,5555,151"/>
+<area shape="rect" id="node77" href="$bomb_8c.html" title="sw/airborne/subsystems\l/navigation/bomb.c" alt="" coords="5579,107,5755,151"/>
+<area shape="rect" id="node79" href="$border__line_8c.html" title="navigate along a border line (line 1&#45;2) with turns in the same direction" alt="" coords="5779,107,5957,151"/>
+<area shape="rect" id="node81" href="$discsurvey_8c.html" title="sw/airborne/subsystems\l/navigation/discsurvey.c" alt="" coords="5981,107,6157,151"/>
+<area shape="rect" id="node83" href="$gls_8c.html" title="gps landing system" alt="" coords="6181,107,6357,151"/>
+<area shape="rect" id="node85" href="$nav__cube_8c.html" title="Navigation in a cube towards a center." alt="" coords="6381,107,6557,151"/>
+<area shape="rect" id="node87" href="$nav__line_8c.html" title="Navigation along a line with nice U&#45;turns." alt="" coords="6581,107,6757,151"/>
+<area shape="rect" id="node89" href="$nav__survey__rectangle_8h.html" title="sw/airborne/subsystems\l/navigation/nav_survey\l_rectangle.h" alt="" coords="6781,99,6957,159"/>
+<area shape="rect" id="node94" href="$OSAMNav_8c.html" title="sw/airborne/subsystems\l/navigation/OSAMNav.c" alt="" coords="6981,107,7157,151"/>
+<area shape="rect" id="node96" href="$poly__survey__adv_8c.html" title="sw/airborne/subsystems\l/navigation/poly_survey_adv.c" alt="" coords="7181,107,7392,151"/>
+<area shape="rect" id="node98" href="$snav_8c.html" title="sw/airborne/subsystems\l/navigation/snav.c" alt="" coords="7416,107,7592,151"/>
+<area shape="rect" id="node100" href="$spiral_8c.html" title="sw/airborne/subsystems\l/navigation/spiral.c" alt="" coords="7616,107,7792,151"/>
+<area shape="rect" id="node5" href="$jsbsim__hw_8c.html" title="sw/airborne/arch/sim\l/jsbsim_hw.c" alt="" coords="5,217,160,261"/>
+<area shape="rect" id="node7" href="$jsbsim__ir_8c.html" title="sw/airborne/arch/sim\l/jsbsim_ir.c" alt="" coords="184,217,339,261"/>
+<area shape="rect" id="node9" href="$jsbsim__transport_8c.html" title="sw/airborne/arch/sim\l/jsbsim_transport.c" alt="" coords="363,217,517,261"/>
+<area shape="rect" id="node39" href="$atmega__i2c__cam__ctrl_8h.html" title="sw/airborne/modules\l/digital_cam/atmega\l_i2c_cam_ctrl.h" alt="" coords="2851,209,3005,269"/>
+<area shape="rect" id="node43" href="$dc_8c.html" title="sw/airborne/modules\l/digital_cam/dc.c" alt="" coords="3029,217,3184,261"/>
+<area shape="rect" id="node45" href="$led__cam__ctrl_8h.html" title="Digital Camera Control." alt="" coords="3208,209,3365,269"/>
+<area shape="rect" id="node47" href="$servo__cam__ctrl_8h.html" title="Digital Camera Control." alt="" coords="3389,209,3563,269"/>
+<area shape="rect" id="node41" href="$atmega__i2c__cam__ctrl_8c.html" title="Interface with digital camera though AVR AtMega chip." alt="" coords="2851,318,3005,378"/>
+<area shape="rect" id="node55" href="$formation_8c.html" title="library for formation flight" alt="" coords="3667,217,3821,261"/>
+<area shape="rect" id="node59" href="$potential_8c.html" title="sw/airborne/modules\l/multi/potential.c" alt="" coords="3845,217,4000,261"/>
+<area shape="rect" id="node92" href="$nav__survey__rectangle_8c.html" title="sw/airborne/subsystems\l/navigation/nav_survey\l_rectangle.c" alt="" coords="6781,209,6957,269"/>
 </map>

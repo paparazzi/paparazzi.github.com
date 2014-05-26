@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('ms5611__spi_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ms5611__spi_8c__incl.png" border="0" usemap="#sw_2airborne_2peripherals_2ms5611__spi_8c" alt=""/></div>
 <map name="sw_2airborne_2peripherals_2ms5611__spi_8c" id="sw_2airborne_2peripherals_2ms5611__spi_8c">
-<area shape="rect" id="node3" href="ms5611__spi_8h.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA pressure/temperature sensor interface for SPI..." alt="" coords="135,99,268,143"/><area shape="rect" id="node5" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="64,193,184,221"/><area shape="rect" id="node11" href="ms5611_8h.html" title="MS5611 barometer driver common interface (I2C and SPI)." alt="" coords="208,193,352,221"/><area shape="rect" id="node14" href="ms5611__regs_8h.html" title="Register definitions for MS5611 barometer." alt="" coords="256,270,389,314"/></map>
+<area shape="rect" id="node3" href="ms5611__spi_8h.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA pressure/temperature sensor interface for SPI..." alt="" coords="141,99,291,143"/><area shape="rect" id="node5" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="67,193,197,221"/><area shape="rect" id="node11" href="ms5611_8h.html" title="MS5611 barometer driver common interface (I2C and SPI)." alt="" coords="221,193,381,221"/><area shape="rect" id="node14" href="ms5611__regs_8h.html" title="Register definitions for MS5611 barometer." alt="" coords="272,270,421,314"/></map>
 </div>
 </div>
 <p><a href="ms5611__spi_8c_source.html">Go to the source code of this file.</a></p>
@@ -157,7 +157,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="ms5611_8h_source.html#l00054">Ms5611Data::c</a>, <a class="el" href="ms5611_8h_source.html#l00055">Ms5611Data::d1</a>, <a class="el" href="ms5611_8h_source.html#l00056">Ms5611Data::d2</a>, <a class="el" href="ms5611__spi_8h_source.html#l00044">Ms5611_Spi::data</a>, <a class="el" href="ms5611__spi_8h_source.html#l00043">Ms5611_Spi::data_available</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a22787b7744375550b4b631b0fec03bd0">if()</a>, <a class="el" href="ms5611__spi_8h_source.html#l00042">Ms5611_Spi::initialized</a>, <a class="el" href="ms5611_8c_source.html#l00062">ms5611_calc()</a>, <a class="el" href="ms5611_8c_source.html#l00036">ms5611_prom_crc_ok()</a>, <a class="el" href="ms5611__regs_8h_source.html#l00068">MS5611_PROM_READ</a>, <a class="el" href="ms5611__regs_8h_source.html#l00070">MS5611_START_CONV_D2</a>, <a class="el" href="ms5611_8h_source.html#l00045">MS5611_STATUS_ADC_D1</a>, <a class="el" href="ms5611_8h_source.html#l00048">MS5611_STATUS_ADC_D2</a>, <a class="el" href="ms5611_8h_source.html#l00046">MS5611_STATUS_CONV_D2</a>, <a class="el" href="ms5611_8h_source.html#l00042">MS5611_STATUS_IDLE</a>, <a class="el" href="ms5611_8h_source.html#l00041">MS5611_STATUS_PROM</a>, <a class="el" href="ms5611_8h_source.html#l00038">MS5611_STATUS_UNINIT</a>, <a class="el" href="ms5611__spi_8h_source.html#l00045">Ms5611_Spi::prom_cnt</a>, <a class="el" href="ms5611__regs_8h_source.html#l00038">PROM_NB</a>, <a class="el" href="ms5611__spi_8h_source.html#l00040">Ms5611_Spi::rx_buf</a>, <a class="el" href="ms5611__spi_8h_source.html#l00037">Ms5611_Spi::spi_p</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00470">spi_submit()</a>, <a class="el" href="ms5611__spi_8h_source.html#l00038">Ms5611_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00094">SPITransFailed</a>, <a class="el" href="spi_8h_source.html#l00093">SPITransSuccess</a>, <a class="el" href="ms5611__spi_8h_source.html#l00041">Ms5611_Spi::status</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, and <a class="el" href="ms5611__spi_8h_source.html#l00039">Ms5611_Spi::tx_buf</a>.</p>
 
-<p>Referenced by <a class="el" href="baro__board__ms5611__spi_8c_source.html#l00078">baro_event()</a>, and <a class="el" href="baro__ms5611__spi_8c_source.html#l00091">baro_ms5611_event()</a>.</p>
+<p>Referenced by <a class="el" href="baro__board__ms5611__spi_8c_source.html#l00075">baro_event()</a>, and <a class="el" href="baro__ms5611__spi_8c_source.html#l00087">baro_ms5611_event()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -166,7 +166,7 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ms5611__spi_8c_a7b23274ad291a9e686044d66f378d91d_cgraph.png" border="0" usemap="#ms5611__spi_8c_a7b23274ad291a9e686044d66f378d91d_cgraph" alt=""/></div>
 <map name="ms5611__spi_8c_a7b23274ad291a9e686044d66f378d91d_cgraph" id="ms5611__spi_8c_a7b23274ad291a9e686044d66f378d91d_cgraph">
-<area shape="rect" id="node3" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a22787b7744375550b4b631b0fec03bd0" title="if" alt="" coords="241,5,279,33"/><area shape="rect" id="node5" href="ms5611_8c.html#aaeb2ca7e796a7ed3d7393b34ab166c72" title="Calculate temperature and compensated pressure." alt="" coords="211,55,309,83"/><area shape="rect" id="node7" href="ms5611_8c.html#a1afefece4545988101dac95290cacde6" title="Check if CRC of PROM data is OK." alt="" coords="185,106,335,134"/><area shape="rect" id="node9" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction." alt="" coords="217,157,303,185"/></map>
+<area shape="rect" id="node3" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a22787b7744375550b4b631b0fec03bd0" title="if" alt="" coords="260,5,297,33"/><area shape="rect" id="node5" href="ms5611_8c.html#aaeb2ca7e796a7ed3d7393b34ab166c72" title="Calculate temperature and compensated pressure." alt="" coords="225,55,332,83"/><area shape="rect" id="node7" href="ms5611_8c.html#a1afefece4545988101dac95290cacde6" title="Check if CRC of PROM data is OK." alt="" coords="197,106,360,134"/><area shape="rect" id="node9" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction." alt="" coords="233,157,324,185"/></map>
 </div>
 </p>
 
@@ -177,7 +177,7 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ms5611__spi_8c_a7b23274ad291a9e686044d66f378d91d_icgraph.png" border="0" usemap="#ms5611__spi_8c_a7b23274ad291a9e686044d66f378d91d_icgraph" alt=""/></div>
 <map name="ms5611__spi_8c_a7b23274ad291a9e686044d66f378d91d_icgraph" id="ms5611__spi_8c_a7b23274ad291a9e686044d66f378d91d_icgraph">
-<area shape="rect" id="node3" href="baro__board__ms5611__spi_8c.html#a35cf6cc4a308999840a583900a3d35ff" title="baro_event" alt="" coords="211,5,296,33"/><area shape="rect" id="node5" href="baro__ms5611__spi_8c.html#afd15b3c514cb6c7763b0db2788665185" title="baro_ms5611_event" alt="" coords="184,55,323,83"/></map>
+<area shape="rect" id="node3" href="baro__board__ms5611__spi_8c.html#a35cf6cc4a308999840a583900a3d35ff" title="baro_event" alt="" coords="228,5,321,33"/><area shape="rect" id="node5" href="baro__ms5611__spi_8c.html#afd15b3c514cb6c7763b0db2788665185" title="baro_ms5611_event" alt="" coords="199,55,351,83"/></map>
 </div>
 </p>
 
@@ -217,7 +217,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="spi_8h_source.html#l00155">spi_transaction::after_cb</a>, <a class="el" href="spi_8h_source.html#l00154">spi_transaction::before_cb</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::bitorder</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::cdiv</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::cpha</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::cpol</a>, <a class="el" href="ms5611__spi_8h_source.html#l00043">Ms5611_Spi::data_available</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::dss</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="ms5611__spi_8h_source.html#l00042">Ms5611_Spi::initialized</a>, <a class="el" href="spi_8h_source.html#l00143">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="ms5611_8h_source.html#l00038">MS5611_STATUS_UNINIT</a>, <a class="el" href="spi_8h_source.html#l00144">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="ms5611__spi_8h_source.html#l00045">Ms5611_Spi::prom_cnt</a>, <a class="el" href="ms5611__spi_8h_source.html#l00040">Ms5611_Spi::rx_buf</a>, <a class="el" href="spi_8h_source.html#l00148">spi_transaction::select</a>, <a class="el" href="spi_8h_source.html#l00147">spi_transaction::slave_idx</a>, <a class="el" href="ms5611__spi_8h_source.html#l00037">Ms5611_Spi::spi_p</a>, <a class="el" href="ms5611__spi_8h_source.html#l00038">Ms5611_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00069">SPICphaEdge2</a>, <a class="el" href="spi_8h_source.html#l00078">SPICpolIdleHigh</a>, <a class="el" href="spi_8h_source.html#l00119">SPIDiv64</a>, <a class="el" href="spi_8h_source.html#l00084">SPIDss8bit</a>, <a class="el" href="spi_8h_source.html#l00106">SPIMSBFirst</a>, <a class="el" href="spi_8h_source.html#l00057">SPISelectUnselect</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="ms5611__spi_8h_source.html#l00041">Ms5611_Spi::status</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, and <a class="el" href="ms5611__spi_8h_source.html#l00039">Ms5611_Spi::tx_buf</a>.</p>
 
-<p>Referenced by <a class="el" href="baro__board__ms5611__spi_8c_source.html#l00049">baro_init()</a>, and <a class="el" href="baro__ms5611__spi_8c_source.html#l00063">baro_ms5611_init()</a>.</p>
+<p>Referenced by <a class="el" href="baro__board__ms5611__spi_8c_source.html#l00046">baro_init()</a>, and <a class="el" href="baro__ms5611__spi_8c_source.html#l00059">baro_ms5611_init()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -226,7 +226,7 @@ Functions</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ms5611__spi_8c_aa5d5676c8d64da7b9c569bc97ee00c0a_icgraph.png" border="0" usemap="#ms5611__spi_8c_aa5d5676c8d64da7b9c569bc97ee00c0a_icgraph" alt=""/></div>
 <map name="ms5611__spi_8c_aa5d5676c8d64da7b9c569bc97ee00c0a_icgraph" id="ms5611__spi_8c_aa5d5676c8d64da7b9c569bc97ee00c0a_icgraph">
-<area shape="rect" id="node3" href="baro__board__ms5611__spi_8c.html#a9b25546908842f1d38fc56e438d46e21" title="baro_init" alt="" coords="199,5,268,33"/><area shape="rect" id="node5" href="baro__ms5611__spi_8c.html#a3f95f9dea9a4f9246be1cd133ff424a7" title="baro_ms5611_init" alt="" coords="172,55,295,83"/></map>
+<area shape="rect" id="node3" href="baro__board__ms5611__spi_8c.html#a9b25546908842f1d38fc56e438d46e21" title="baro_init" alt="" coords="208,5,285,33"/><area shape="rect" id="node5" href="baro__ms5611__spi_8c.html#a3f95f9dea9a4f9246be1cd133ff424a7" title="baro_ms5611_init" alt="" coords="179,55,315,83"/></map>
 </div>
 </p>
 
@@ -253,7 +253,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="ms5611__regs_8h_source.html#l00066">MS5611_ADC_READ</a>, <a class="el" href="ms5611__regs_8h_source.html#l00068">MS5611_PROM_READ</a>, <a class="el" href="ms5611_8h_source.html#l00045">MS5611_STATUS_ADC_D1</a>, <a class="el" href="ms5611_8h_source.html#l00048">MS5611_STATUS_ADC_D2</a>, <a class="el" href="ms5611_8h_source.html#l00043">MS5611_STATUS_CONV_D1</a>, <a class="el" href="ms5611_8h_source.html#l00044">MS5611_STATUS_CONV_D1_OK</a>, <a class="el" href="ms5611_8h_source.html#l00046">MS5611_STATUS_CONV_D2</a>, <a class="el" href="ms5611_8h_source.html#l00047">MS5611_STATUS_CONV_D2_OK</a>, <a class="el" href="ms5611_8h_source.html#l00041">MS5611_STATUS_PROM</a>, <a class="el" href="ms5611_8h_source.html#l00039">MS5611_STATUS_RESET</a>, <a class="el" href="ms5611_8h_source.html#l00040">MS5611_STATUS_RESET_OK</a>, <a class="el" href="ms5611__spi_8h_source.html#l00045">Ms5611_Spi::prom_cnt</a>, <a class="el" href="ms5611__spi_8h_source.html#l00037">Ms5611_Spi::spi_p</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00470">spi_submit()</a>, <a class="el" href="ms5611__spi_8h_source.html#l00038">Ms5611_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="ms5611__spi_8h_source.html#l00041">Ms5611_Spi::status</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, and <a class="el" href="ms5611__spi_8h_source.html#l00039">Ms5611_Spi::tx_buf</a>.</p>
 
-<p>Referenced by <a class="el" href="baro__ms5611__spi_8c_source.html#l00073">baro_ms5611_periodic_check()</a>, and <a class="el" href="ms5611__spi_8h_source.html#l00067">ms5611_spi_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="baro__ms5611__spi_8c_source.html#l00069">baro_ms5611_periodic_check()</a>, and <a class="el" href="ms5611__spi_8h_source.html#l00067">ms5611_spi_periodic()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -262,7 +262,7 @@ Functions</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ms5611__spi_8c_ab46a8e3a6d57f0c4b1368abbb786f905_cgraph.png" border="0" usemap="#ms5611__spi_8c_ab46a8e3a6d57f0c4b1368abbb786f905_cgraph" alt=""/></div>
 <map name="ms5611__spi_8c_ab46a8e3a6d57f0c4b1368abbb786f905_cgraph" id="ms5611__spi_8c_ab46a8e3a6d57f0c4b1368abbb786f905_cgraph">
-<area shape="rect" id="node3" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction." alt="" coords="197,13,283,41"/></map>
+<area shape="rect" id="node3" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction." alt="" coords="211,13,301,41"/></map>
 </div>
 </p>
 
@@ -273,7 +273,7 @@ Functions</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ms5611__spi_8c_ab46a8e3a6d57f0c4b1368abbb786f905_icgraph.png" border="0" usemap="#ms5611__spi_8c_ab46a8e3a6d57f0c4b1368abbb786f905_icgraph" alt=""/></div>
 <map name="ms5611__spi_8c_ab46a8e3a6d57f0c4b1368abbb786f905_icgraph" id="ms5611__spi_8c_ab46a8e3a6d57f0c4b1368abbb786f905_icgraph">
-<area shape="rect" id="node3" href="baro__ms5611__spi_8c.html#a2f3b2eefc1da2e3f22e30ee05aa090d2" title="baro_ms5611_periodic\l_check" alt="" coords="197,5,349,49"/><area shape="rect" id="node5" href="ms5611__spi_8h.html#a950b89b21f5e7b97df350ec56ed1bdc9" title="convenience function" alt="" coords="201,71,345,99"/><area shape="rect" id="node7" href="baro__board__ms5611__spi_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00" title="baro_periodic" alt="" coords="397,71,496,99"/></map>
+<area shape="rect" id="node3" href="baro__ms5611__spi_8c.html#a2f3b2eefc1da2e3f22e30ee05aa090d2" title="baro_ms5611_periodic\l_check" alt="" coords="212,5,377,49"/><area shape="rect" id="node5" href="ms5611__spi_8h.html#a950b89b21f5e7b97df350ec56ed1bdc9" title="convenience function" alt="" coords="217,71,372,99"/><area shape="rect" id="node7" href="baro__board__ms5611__spi_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00" title="baro_periodic" alt="" coords="428,71,535,99"/></map>
 </div>
 </p>
 
@@ -306,7 +306,7 @@ Functions</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ms5611__spi_8c_a23682a3c5d36bc1c95f61b80ab101b53_cgraph.png" border="0" usemap="#ms5611__spi_8c_a23682a3c5d36bc1c95f61b80ab101b53_cgraph" alt=""/></div>
 <map name="ms5611__spi_8c_a23682a3c5d36bc1c95f61b80ab101b53_cgraph" id="ms5611__spi_8c_a23682a3c5d36bc1c95f61b80ab101b53_cgraph">
-<area shape="rect" id="node3" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction." alt="" coords="237,5,323,33"/></map>
+<area shape="rect" id="node3" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction." alt="" coords="256,5,347,33"/></map>
 </div>
 </p>
 
@@ -317,7 +317,7 @@ Functions</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ms5611__spi_8c_a23682a3c5d36bc1c95f61b80ab101b53_icgraph.png" border="0" usemap="#ms5611__spi_8c_a23682a3c5d36bc1c95f61b80ab101b53_icgraph" alt=""/></div>
 <map name="ms5611__spi_8c_a23682a3c5d36bc1c95f61b80ab101b53_icgraph" id="ms5611__spi_8c_a23682a3c5d36bc1c95f61b80ab101b53_icgraph">
-<area shape="rect" id="node3" href="ms5611__spi_8h.html#ad675f17b7fb527f6170b5a18bf09b5bd" title="convenience function to trigger new measurement." alt="" coords="239,30,361,58"/><area shape="rect" id="node5" href="baro__ms5611__spi_8c.html#ab15686f869e48b46f232136b24ccf3cd" title="trigger new measurement or initialize if needed" alt="" coords="417,5,548,33"/><area shape="rect" id="node7" href="ms5611__spi_8h.html#a950b89b21f5e7b97df350ec56ed1bdc9" title="convenience function" alt="" coords="411,55,555,83"/><area shape="rect" id="node9" href="baro__board__ms5611__spi_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00" title="baro_periodic" alt="" coords="603,55,701,83"/></map>
+<area shape="rect" id="node3" href="ms5611__spi_8h.html#ad675f17b7fb527f6170b5a18bf09b5bd" title="convenience function to trigger new measurement." alt="" coords="257,30,391,58"/><area shape="rect" id="node5" href="baro__ms5611__spi_8c.html#ab15686f869e48b46f232136b24ccf3cd" title="trigger new measurement or initialize if needed" alt="" coords="445,5,592,33"/><area shape="rect" id="node7" href="ms5611__spi_8h.html#a950b89b21f5e7b97df350ec56ed1bdc9" title="convenience function" alt="" coords="441,55,596,83"/><area shape="rect" id="node9" href="baro__board__ms5611__spi_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00" title="baro_periodic" alt="" coords="647,55,753,83"/></map>
 </div>
 </p>
 
@@ -350,7 +350,7 @@ Functions</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ms5611__spi_8c_a82e1cf6372b20fbfd4ec58f4cc8e58b9_cgraph.png" border="0" usemap="#ms5611__spi_8c_a82e1cf6372b20fbfd4ec58f4cc8e58b9_cgraph" alt=""/></div>
 <map name="ms5611__spi_8c_a82e1cf6372b20fbfd4ec58f4cc8e58b9_cgraph" id="ms5611__spi_8c_a82e1cf6372b20fbfd4ec58f4cc8e58b9_cgraph">
-<area shape="rect" id="node3" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction." alt="" coords="248,5,333,33"/></map>
+<area shape="rect" id="node3" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction." alt="" coords="267,5,357,33"/></map>
 </div>
 </p>
 
@@ -361,7 +361,7 @@ Functions</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ms5611__spi_8c_a82e1cf6372b20fbfd4ec58f4cc8e58b9_icgraph.png" border="0" usemap="#ms5611__spi_8c_a82e1cf6372b20fbfd4ec58f4cc8e58b9_icgraph" alt=""/></div>
 <map name="ms5611__spi_8c_a82e1cf6372b20fbfd4ec58f4cc8e58b9_icgraph" id="ms5611__spi_8c_a82e1cf6372b20fbfd4ec58f4cc8e58b9_icgraph">
-<area shape="rect" id="node3" href="ms5611__spi_8h.html#ad675f17b7fb527f6170b5a18bf09b5bd" title="convenience function to trigger new measurement." alt="" coords="249,30,372,58"/><area shape="rect" id="node5" href="baro__ms5611__spi_8c.html#ab15686f869e48b46f232136b24ccf3cd" title="trigger new measurement or initialize if needed" alt="" coords="428,5,559,33"/><area shape="rect" id="node7" href="ms5611__spi_8h.html#a950b89b21f5e7b97df350ec56ed1bdc9" title="convenience function" alt="" coords="421,55,565,83"/><area shape="rect" id="node9" href="baro__board__ms5611__spi_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00" title="baro_periodic" alt="" coords="613,55,712,83"/></map>
+<area shape="rect" id="node3" href="ms5611__spi_8h.html#ad675f17b7fb527f6170b5a18bf09b5bd" title="convenience function to trigger new measurement." alt="" coords="268,30,401,58"/><area shape="rect" id="node5" href="baro__ms5611__spi_8c.html#ab15686f869e48b46f232136b24ccf3cd" title="trigger new measurement or initialize if needed" alt="" coords="456,5,603,33"/><area shape="rect" id="node7" href="ms5611__spi_8h.html#a950b89b21f5e7b97df350ec56ed1bdc9" title="convenience function" alt="" coords="452,55,607,83"/><area shape="rect" id="node9" href="baro__board__ms5611__spi_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00" title="baro_periodic" alt="" coords="657,55,764,83"/></map>
 </div>
 </p>
 
@@ -373,7 +373,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="ms5611__spi_8c.html">ms5611_spi.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:11 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:05 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

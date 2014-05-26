@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -199,8 +199,8 @@ $(document).ready(function(){initNavTree('sys__mon_8c_source.html','');});
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
 <div class="line"><a name="l00094"></a><span class="lineno"><a class="code" href="sys__mon_8h.html#abaa925469e5ec124a8333c7bce1c5c12">   94</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="sys__mon_8c.html#abaa925469e5ec124a8333c7bce1c5c12" title="Analyse periodic calls Should be run at the highest frequency.">periodic_sysmon</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> periodic_usec = <a class="code" href="lpc21_2mcu__periph_2sys__time__arch_8h.html#a2dfaf7d6ae83a19972aca429fc687e87">SysTimeTimer</a>(<a class="code" href="sys__mon_8c.html#ad85e58d7097a209fb940f0f13375ee5d">periodic_timer</a>);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <a class="code" href="lpc21_2mcu__periph_2sys__time__arch_8h.html#a0583c93a24eed5f81e1f647ca63a652a">SysTimeTimerStart</a>(<a class="code" href="sys__mon_8c.html#ad85e58d7097a209fb940f0f13375ee5d">periodic_timer</a>);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> periodic_usec = <a class="code" href="sys__time_8h.html#a2dfaf7d6ae83a19972aca429fc687e87">SysTimeTimer</a>(<a class="code" href="sys__mon_8c.html#ad85e58d7097a209fb940f0f13375ee5d">periodic_timer</a>);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <a class="code" href="sys__time_8h.html#a0583c93a24eed5f81e1f647ca63a652a">SysTimeTimerStart</a>(<a class="code" href="sys__mon_8c.html#ad85e58d7097a209fb940f0f13375ee5d">periodic_timer</a>);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <a class="code" href="sys__mon_8c.html#a4e46b5ea63e3192271574ca326b7d278" title="in usec">sum_time_periodic</a> += periodic_usec;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="comment">/* only periodic cycle : periodic_cycle = periodic_usec - sum_time_event; */</span></div>
@@ -227,12 +227,12 @@ $(document).ready(function(){initNavTree('sys__mon_8c_source.html','');});
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
 <div class="line"><a name="l00122"></a><span class="lineno"><a class="code" href="sys__mon_8h.html#a5b750b36817e9e5d6717863bc4e61194">  122</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="sys__mon_8c.html#a5b750b36817e9e5d6717863bc4e61194" title="Analyse event calls.">event_sysmon</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="sys__mon_8c.html#a2ffeeceeb63d6563ea035e8cd72848cf">n_event</a> &gt; 0) {</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> t = <a class="code" href="lpc21_2mcu__periph_2sys__time__arch_8h.html#a2dfaf7d6ae83a19972aca429fc687e87">SysTimeTimer</a>(<a class="code" href="sys__mon_8c.html#a2adeca6a5c58a55de7459564c04ceee7">event_timer</a>);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> t = <a class="code" href="sys__time_8h.html#a2dfaf7d6ae83a19972aca429fc687e87">SysTimeTimer</a>(<a class="code" href="sys__mon_8c.html#a2adeca6a5c58a55de7459564c04ceee7">event_timer</a>);</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">if</span> (t &lt; <a class="code" href="sys__mon_8c.html#aafefcdcd9d13d49795c6403bc19b19f9" title="in usec">min_time_event</a>)</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      <a class="code" href="sys__mon_8c.html#aafefcdcd9d13d49795c6403bc19b19f9" title="in usec">min_time_event</a> = t;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="sys__mon_8c.html#a4b57dc0e39b732d7d7ea6290d7c9c525" title="in usec">sum_time_event</a> += t;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  }</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <a class="code" href="lpc21_2mcu__periph_2sys__time__arch_8h.html#a0583c93a24eed5f81e1f647ca63a652a">SysTimeTimerStart</a>(<a class="code" href="sys__mon_8c.html#a2adeca6a5c58a55de7459564c04ceee7">event_timer</a>);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <a class="code" href="sys__time_8h.html#a0583c93a24eed5f81e1f647ca63a652a">SysTimeTimerStart</a>(<a class="code" href="sys__mon_8c.html#a2adeca6a5c58a55de7459564c04ceee7">event_timer</a>);</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <a class="code" href="sys__mon_8c.html#a2ffeeceeb63d6563ea035e8cd72848cf">n_event</a>++;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
@@ -242,7 +242,7 @@ $(document).ready(function(){initNavTree('sys__mon_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_0e703de7e76e38c62de795c957434487.html">core</a></li><li class="navelem"><a class="el" href="sys__mon_8c.html">sys_mon.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:41 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

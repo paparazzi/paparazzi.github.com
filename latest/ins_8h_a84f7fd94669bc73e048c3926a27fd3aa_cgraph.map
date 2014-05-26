@@ -1,20 +1,21 @@
 <map id="ins_propagate" name="ins_propagate">
-<area shape="rect" id="node3" href="$hf__float_8c.html#a73aab61de49440834b84d49789325439" title="b2_hff_propagate" alt="" coords="189,147,309,175"/>
-<area shape="rect" id="node9" href="$group__state__attitude.html#ga7c541b9b2e6231ac9a11a9e21562a5b3" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="389,223,571,251"/>
-<area shape="rect" id="node19" href="$ins__int_8c.html#a906e42c3bdc95d6fa78d129fbf20719e" title="copy position and speed to state interface" alt="" coords="189,325,309,353"/>
-<area shape="rect" id="node21" href="$group__state__position.html#ga83bd9c7ef9bfff9ff41a5d290be52438" title="Set position from local NED coordinates (int)." alt="" coords="404,274,556,302"/>
-<area shape="rect" id="node27" href="$group__state__attitude.html#ga6eb4f715759518e5703890eca116ce8d" title="Get vehicle body attitude rotation matrix (float)." alt="" coords="159,375,340,403"/>
-<area shape="rect" id="node34" href="$group__state__acceleration.html#ga27b8f24af6ddce14389efaa5ec119967" title="Set acceleration in NED coordinates (float)." alt="" coords="180,426,319,454"/>
-<area shape="rect" id="node37" href="$group__state__velocity.html#gae6549b15cd961047c89481ab2d87171f" title="Set ground speed in local NED coordinates (float)." alt="" coords="179,477,320,505"/>
-<area shape="rect" id="node39" href="$vf__extended__float_8c.html#aaff6390ecf9c28ae4c77977cb22aed95" title="vff_propagate" alt="" coords="200,527,299,555"/>
-<area shape="rect" id="node5" href="$hf__float_8c.html#aef01881eabc18087fc50d2775b47f995" title="b2_hff_store_accel_body" alt="" coords="397,5,563,33"/>
-<area shape="rect" id="node7" href="$hf__float_8c.html#ae7c470ebe7493f2f4c494da329750543" title="b2_hff_compute_accel\l_body_mean" alt="" coords="404,55,556,99"/>
-<area shape="rect" id="node15" href="$hf__float_8c.html#a805d2311d32d8db051cf5526d70386d6" title="b2_hff_propagate_x" alt="" coords="413,122,547,150"/>
-<area shape="rect" id="node17" href="$hf__float_8c.html#a9e09cd67712ce4dbaca98be46026aa5c" title="b2_hff_propagate_y" alt="" coords="413,173,547,201"/>
-<area shape="rect" id="node11" href="$group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="623,223,767,251"/>
-<area shape="rect" id="node13" href="$group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title="orientationCalcRMat_i" alt="" coords="819,223,968,251"/>
-<area shape="rect" id="node23" href="$group__state__velocity.html#gaa6cbe14043ae394f4994ac02bee85644" title="Set ground speed in local NED coordinates (int)." alt="" coords="409,325,551,353"/>
-<area shape="rect" id="node25" href="$group__state__acceleration.html#ga44bccfd32b2928abef6b08c4f867c1be" title="Set acceleration in NED coordinates (int)." alt="" coords="411,375,549,403"/>
-<area shape="rect" id="node29" href="$group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float)." alt="" coords="408,426,552,454"/>
-<area shape="rect" id="node31" href="$group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title="orientationCalcRMat_f" alt="" coords="620,426,769,454"/>
+<area shape="rect" id="node3" href="$hf__float_8c.html#a73aab61de49440834b84d49789325439" title="b2_hff_propagate" alt="" coords="197,114,331,142"/>
+<area shape="rect" id="node9" href="$group__state__attitude.html#ga7c541b9b2e6231ac9a11a9e21562a5b3" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="409,5,599,33"/>
+<area shape="rect" id="node19" href="$ins__int_8c.html#a906e42c3bdc95d6fa78d129fbf20719e" title="copy position and speed to state interface" alt="" coords="199,274,329,302"/>
+<area shape="rect" id="node21" href="$group__state__position.html#ga83bd9c7ef9bfff9ff41a5d290be52438" title="Set position from local NED coordinates (int)." alt="" coords="423,223,585,251"/>
+<area shape="rect" id="node27" href="$ins__int_8c.html#a1c58640eca6d3495200de79b4daf134c" title="update ins state from vertical filter" alt="" coords="189,325,339,353"/>
+<area shape="rect" id="node29" href="$group__state__attitude.html#ga6eb4f715759518e5703890eca116ce8d" title="Get vehicle body attitude rotation matrix (float)." alt="" coords="168,375,360,403"/>
+<area shape="rect" id="node36" href="$group__state__acceleration.html#ga27b8f24af6ddce14389efaa5ec119967" title="Set acceleration in NED coordinates (float)." alt="" coords="191,426,337,454"/>
+<area shape="rect" id="node39" href="$group__state__velocity.html#gae6549b15cd961047c89481ab2d87171f" title="Set ground speed in local NED coordinates (float)." alt="" coords="187,477,341,505"/>
+<area shape="rect" id="node41" href="$vf__extended__float_8c.html#aaff6390ecf9c28ae4c77977cb22aed95" title="vff_propagate" alt="" coords="209,527,319,555"/>
+<area shape="rect" id="node5" href="$low__pass__filter_8h.html#a2f2143b974670872a03cc02fa29ed066" title="Update second order Butterworth low pass filter state with a new value(fixed point version)..." alt="" coords="431,106,577,150"/>
+<area shape="rect" id="node15" href="$hf__float_8c.html#a805d2311d32d8db051cf5526d70386d6" title="b2_hff_propagate_x" alt="" coords="431,55,577,83"/>
+<area shape="rect" id="node17" href="$hf__float_8c.html#a9e09cd67712ce4dbaca98be46026aa5c" title="b2_hff_propagate_y" alt="" coords="431,173,577,201"/>
+<area shape="rect" id="node7" href="$low__pass__filter_8h.html#a9b7d8efe8f0511c29c27d714d8bc0f44" title="Update second order low pass filter state with a new value(fixed point version)." alt="" coords="649,106,809,150"/>
+<area shape="rect" id="node11" href="$group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int)." alt="" coords="652,5,807,33"/>
+<area shape="rect" id="node13" href="$group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title="orientationCalcRMat_i" alt="" coords="859,5,1019,33"/>
+<area shape="rect" id="node23" href="$group__state__velocity.html#gaa6cbe14043ae394f4994ac02bee85644" title="Set ground speed in local NED coordinates (int)." alt="" coords="427,274,581,302"/>
+<area shape="rect" id="node25" href="$group__state__acceleration.html#ga44bccfd32b2928abef6b08c4f867c1be" title="Set acceleration in NED coordinates (int)." alt="" coords="431,325,577,353"/>
+<area shape="rect" id="node31" href="$group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float)." alt="" coords="425,375,583,403"/>
+<area shape="rect" id="node33" href="$group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title="orientationCalcRMat_f" alt="" coords="649,375,809,403"/>
 </map>

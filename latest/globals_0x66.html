@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -164,11 +164,24 @@ $(document).ready(function(){initNavTree('globals_0x66.html','');});
 : <a class="el" href="main_8h.html#a6266a73fe8c0512f1de72cea96e5110b">main.h</a>
 , <a class="el" href="rotorcraft_2main_8c.html#a6266a73fe8c0512f1de72cea96e5110b">main.c</a>
 </li>
+<li>FAILSAFE_DESCENT_SPEED
+: <a class="el" href="rotorcraft_2autopilot_8c.html#ae499b9b99c98c93b86aa769b6c6401e6">autopilot.c</a>
+</li>
 <li>FAILSAFE_HOME_RADIUS
 : <a class="el" href="nav_8c.html#abb778e487ebe98aedea7858361496264">nav.c</a>
 </li>
 <li>failsafe_mode
 : <a class="el" href="main__fbw_8h.html#ab350241ceab15e8a7850f54165689389">main_fbw.h</a>
+</li>
+<li>failsafe_mode_dist2
+: <a class="el" href="navigation_8c.html#a7369d742619e7cbb1b71ec46f845f06e">navigation.c</a>
+, <a class="el" href="navigation_8h.html#a7369d742619e7cbb1b71ec46f845f06e">navigation.h</a>
+</li>
+<li>FAILSAFE_MODE_DISTANCE
+: <a class="el" href="navigation_8c.html#ad8f7f47978b86f35f596d86fe6576425">navigation.c</a>
+</li>
+<li>FAILSAFE_MODE_TOO_FAR_FROM_HOME
+: <a class="el" href="rotorcraft_2autopilot_8c.html#a19d94a4015e78df48cbb4e4514bf3012">autopilot.c</a>
 </li>
 <li>failsafe_tid
 : <a class="el" href="rotorcraft_2main_8c.html#ab3e516754299b88759000e60e490f5a8">main.c</a>
@@ -181,11 +194,12 @@ $(document).ready(function(){initNavTree('globals_0x66.html','');});
 : <a class="el" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">imu_chimu.h</a>
 </li>
 <li>fbaroms
-: <a class="el" href="baro__ms5611__spi_8c.html#a4cd87df09b5c003ea87e593e7be5d80f">baro_ms5611_spi.c</a>
-, <a class="el" href="baro__ms5611__i2c_8c.html#a4cd87df09b5c003ea87e593e7be5d80f">baro_ms5611_i2c.c</a>
+: <a class="el" href="baro__ms5611__i2c_8c.html#a4cd87df09b5c003ea87e593e7be5d80f">baro_ms5611_i2c.c</a>
+, <a class="el" href="baro__ms5611__spi_8c.html#a4cd87df09b5c003ea87e593e7be5d80f">baro_ms5611_spi.c</a>
 </li>
 <li>Fbw
 : <a class="el" href="fixedwing_2main_8c.html#abd9cfa920ef8d0e0d39bf1192665f66b">main.c</a>
+, <a class="el" href="main__chibios__libopencm3_8c.html#abd9cfa920ef8d0e0d39bf1192665f66b">main_chibios_libopencm3.c</a>
 </li>
 <li>fbw_mode
 : <a class="el" href="main__fbw_8c.html#ac72590ceb6632f7874a3240836537857">main_fbw.c</a>
@@ -266,24 +280,23 @@ $(document).ready(function(){initNavTree('globals_0x66.html','');});
 : <a class="el" href="generic__com_8c.html#a539730afad5660e5a0f9785ef8c2107d">generic_com.c</a>
 , <a class="el" href="modules_2ins_2ins__arduimu__basic_8c.html#a539730afad5660e5a0f9785ef8c2107d">ins_arduimu_basic.c</a>
 </li>
+<li>filter_x
+: <a class="el" href="hf__float_8c.html#afdb654ec9b7836802d036412dfd8ba09">hf_float.c</a>
+</li>
+<li>filter_y
+: <a class="el" href="hf__float_8c.html#a70ccbd56ba5cebf0f68f8c8249f6ab0e">hf_float.c</a>
+</li>
+<li>filter_z
+: <a class="el" href="hf__float_8c.html#a1c5039e7e44e6773680ce40c1c5df75b">hf_float.c</a>
+</li>
 <li>FilterIR
 : <a class="el" href="infrared__i2c_8c.html#a24f4ed3c3ad59ddf986d01cd9ded85bf">infrared_i2c.c</a>
 </li>
-<li>Final
-: <a class="el" href="OSAMNav_8c.html#a61a75394da51ededcb57cd59a9e3cefeab068018251f551730c472862a3b2fca9">OSAMNav.c</a>
-</li>
-<li>FinalLandAltitude
-: <a class="el" href="OSAMNav_8c.html#a7b4d4661c11b79a32b8fc72cf1d928ea">OSAMNav.c</a>
-</li>
-<li>FinalLandCount
-: <a class="el" href="OSAMNav_8c.html#ab404c5e08e3ee5a04557f6a4c3c21777">OSAMNav.c</a>
-</li>
 <li>FindInterceptOfTwoLines()
-: <a class="el" href="OSAMNav_8c.html#a7d7df26d6723c61622ad77133554b6f1">OSAMNav.c</a>
-, <a class="el" href="OSAMNav_8h.html#a7d7df26d6723c61622ad77133554b6f1">OSAMNav.h</a>
+: <a class="el" href="nav__survey__poly__osam_8c.html#a7d7df26d6723c61622ad77133554b6f1">nav_survey_poly_osam.c</a>
 </li>
 <li>Finished
-: <a class="el" href="OSAMNav_8c.html#a537434c0146d72f1c0f111539eb1945aab68c130eb6caa378c2c394e9054bbb63">OSAMNav.c</a>
+: <a class="el" href="nav__bungee__takeoff_8c.html#a537434c0146d72f1c0f111539eb1945aab68c130eb6caa378c2c394e9054bbb63">nav_bungee_takeoff.c</a>
 </li>
 <li>FIQ_MASK
 : <a class="el" href="armVIC_8c.html#abde0646650c692b54babc5c7a3b11bc4">armVIC.c</a>
@@ -298,26 +311,29 @@ $(document).ready(function(){initNavTree('globals_0x66.html','');});
 <li>flash_detect()
 : <a class="el" href="lpc21_2subsystems_2settings__arch_8c.html#ad823eefc2cb06fb3581e165cabbbc053">settings_arch.c</a>
 </li>
+<li>flash_isr()
+: <a class="el" href="stm32f4__chibios__vectors_8h.html#a94a481a2a9d3aded831c580ec5b995ce">stm32f4_chibios_vectors.h</a>
+</li>
 <li>FLBlockCount
-: <a class="el" href="OSAMNav_8c.html#a6153b4202ff509ca28071434233c4ccb">OSAMNav.c</a>
+: <a class="el" href="nav__line__osam_8c.html#a6153b4202ff509ca28071434233c4ccb">nav_line_osam.c</a>
 </li>
 <li>FLCircle
-: <a class="el" href="OSAMNav_8c.html#afab40e3701d6db7370903cda04520d35">OSAMNav.c</a>
+: <a class="el" href="nav__line__osam_8c.html#afab40e3701d6db7370903cda04520d35">nav_line_osam.c</a>
 </li>
 <li>FLCircleS
-: <a class="el" href="OSAMNav_8c.html#a9dbd76495d70a6f62b70274c35348271a352136f9228a3db3455edf0ad4fa08e7">OSAMNav.c</a>
+: <a class="el" href="nav__line__osam_8c.html#a9dbd76495d70a6f62b70274c35348271a352136f9228a3db3455edf0ad4fa08e7">nav_line_osam.c</a>
 </li>
 <li>FLFinished
-: <a class="el" href="OSAMNav_8c.html#a9dbd76495d70a6f62b70274c35348271aee96ee9abb5a1cd4e95f91afc0914059">OSAMNav.c</a>
+: <a class="el" href="nav__line__osam_8c.html#a9dbd76495d70a6f62b70274c35348271aee96ee9abb5a1cd4e95f91afc0914059">nav_line_osam.c</a>
 </li>
 <li>FLFROMWP
-: <a class="el" href="OSAMNav_8c.html#a0a9406a808d2eda7550be2796b37f3cc">OSAMNav.c</a>
+: <a class="el" href="nav__line__osam_8c.html#a0a9406a808d2eda7550be2796b37f3cc">nav_line_osam.c</a>
 </li>
 <li>flight_altitude
-: <a class="el" href="navigation_8c.html#a1612ea0e1474e49b800cb3f497096523">navigation.c</a>
-, <a class="el" href="navigation_8h.html#a1612ea0e1474e49b800cb3f497096523">navigation.h</a>
-, <a class="el" href="nav_8c.html#a1612ea0e1474e49b800cb3f497096523">nav.c</a>
+: <a class="el" href="nav_8c.html#a1612ea0e1474e49b800cb3f497096523">nav.c</a>
 , <a class="el" href="nav_8h.html#a1612ea0e1474e49b800cb3f497096523">nav.h</a>
+, <a class="el" href="navigation_8c.html#a1612ea0e1474e49b800cb3f497096523">navigation.c</a>
+, <a class="el" href="navigation_8h.html#a1612ea0e1474e49b800cb3f497096523">navigation.h</a>
 </li>
 <li>flight_benchmark_init()
 : <a class="el" href="flight__benchmark_8c.html#a4dcacc8a9bc906ab084299c2614669ec">flight_benchmark.c</a>
@@ -342,19 +358,11 @@ $(document).ready(function(){initNavTree('globals_0x66.html','');});
 : <a class="el" href="flight__time_8c.html#af7799c769a989f414796b82d8018c7f9">flight_time.c</a>
 , <a class="el" href="flight__time_8h.html#af7799c769a989f414796b82d8018c7f9">flight_time.h</a>
 </li>
-<li>FlightLine()
-: <a class="el" href="OSAMNav_8c.html#a05ab832ffae933cb0abcbdd8f7ab16cd">OSAMNav.c</a>
-, <a class="el" href="OSAMNav_8h.html#a05ab832ffae933cb0abcbdd8f7ab16cd">OSAMNav.h</a>
-</li>
-<li>FlightLineBlock()
-: <a class="el" href="OSAMNav_8c.html#a35730be09cdeb6b537eb047c0bff7b38">OSAMNav.c</a>
-, <a class="el" href="OSAMNav_8h.html#a35730be09cdeb6b537eb047c0bff7b38">OSAMNav.h</a>
-</li>
 <li>FLInitialize
-: <a class="el" href="OSAMNav_8c.html#a9dbd76495d70a6f62b70274c35348271a33ce4a7fa85476cf7381b53581cb6d4e">OSAMNav.c</a>
+: <a class="el" href="nav__line__osam_8c.html#a9dbd76495d70a6f62b70274c35348271a33ce4a7fa85476cf7381b53581cb6d4e">nav_line_osam.c</a>
 </li>
 <li>FLLine
-: <a class="el" href="OSAMNav_8c.html#a9dbd76495d70a6f62b70274c35348271a2af689876914fe460a0e44980689f906">OSAMNav.c</a>
+: <a class="el" href="nav__line__osam_8c.html#a9dbd76495d70a6f62b70274c35348271a2af689876914fe460a0e44980689f906">nav_line_osam.c</a>
 </li>
 <li>float32_t
 : <a class="el" href="at__com_8h.html#a4611b605e45ab401f02cab15c5e38715">at_com.h</a>
@@ -383,6 +391,33 @@ $(document).ready(function(){initNavTree('globals_0x66.html','');});
 <li>FLOAT_MAT33_ZERO
 : <a class="el" href="pprz__algebra__float_8h.html#af7d71c6424c5d2fa1e77992fc214d7c0">pprz_algebra_float.h</a>
 </li>
+<li>float_mat_col()
+: <a class="el" href="pprz__algebra__float_8h.html#a364136a53a6725df4bebcf3f553dce20">pprz_algebra_float.h</a>
+</li>
+<li>float_mat_copy()
+: <a class="el" href="pprz__algebra__float_8h.html#a754c66fe568df91ead5586882a23a11c">pprz_algebra_float.h</a>
+</li>
+<li>float_mat_diff()
+: <a class="el" href="pprz__algebra__float_8h.html#a1745d42e98bc12c54451a2798b8804a8">pprz_algebra_float.h</a>
+</li>
+<li>float_mat_minor()
+: <a class="el" href="pprz__algebra__float_8h.html#a9f40c21573aebc959cca3b87a8329fee">pprz_algebra_float.h</a>
+</li>
+<li>float_mat_mul()
+: <a class="el" href="pprz__algebra__float_8h.html#aa2086b4cd9a5203452c165ee3c55eaee">pprz_algebra_float.h</a>
+</li>
+<li>float_mat_sum()
+: <a class="el" href="pprz__algebra__float_8h.html#a2d143f10f40b2f1299abc89b74d45a7d">pprz_algebra_float.h</a>
+</li>
+<li>float_mat_transpose()
+: <a class="el" href="pprz__algebra__float_8h.html#aea16c1e55d0ed2e1addcd5f8b4484fe1">pprz_algebra_float.h</a>
+</li>
+<li>float_mat_vmul()
+: <a class="el" href="pprz__algebra__float_8h.html#a1626fe381927d3eb3d550566860398c7">pprz_algebra_float.h</a>
+</li>
+<li>float_mat_zero()
+: <a class="el" href="pprz__algebra__float_8h.html#a9a4f92b5522ef528fb5a9d97e5081deb">pprz_algebra_float.h</a>
+</li>
 <li>FLOAT_OF_BFP
 : <a class="el" href="pprz__algebra__int_8h.html#a98e4a29359dcdfddea12ad51f67af720">pprz_algebra_int.h</a>
 </li>
@@ -391,6 +426,9 @@ $(document).ready(function(){initNavTree('globals_0x66.html','');});
 </li>
 <li>FLOAT_QUAT_ADD
 : <a class="el" href="pprz__algebra__float_8h.html#a81cb6e463772095aae1cc9cf9afb19d9">pprz_algebra_float.h</a>
+</li>
+<li>FLOAT_QUAT_ASSIGN
+: <a class="el" href="pprz__algebra__float_8h.html#a52facb3ef220a162befe7eb9f03a63de">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_QUAT_COMP
 : <a class="el" href="pprz__algebra__float_8h.html#a0a76eb680a60ea46d382cee034fbfeb8">pprz_algebra_float.h</a>
@@ -418,6 +456,9 @@ $(document).ready(function(){initNavTree('globals_0x66.html','');});
 </li>
 <li>FLOAT_QUAT_EXPLEMENTARY
 : <a class="el" href="pprz__algebra__float_8h.html#a5daf03b0b46397ee463de3a3df18db42">pprz_algebra_float.h</a>
+</li>
+<li>FLOAT_QUAT_EXTRACT
+: <a class="el" href="pprz__algebra__float_8h.html#a3d2fbccf8229c3bb390f1ff342defde7">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_QUAT_INTEGRATE
 : <a class="el" href="pprz__algebra__float_8h.html#ae26d803eb5efcd02ea84d3c8b2d5904e">pprz_algebra_float.h</a>
@@ -452,8 +493,23 @@ $(document).ready(function(){initNavTree('globals_0x66.html','');});
 <li>FLOAT_QUAT_OF_RMAT
 : <a class="el" href="pprz__algebra__float_8h.html#a0ea8bd3c4096f5a5544672e3f043abf6">pprz_algebra_float.h</a>
 </li>
+<li>FLOAT_QUAT_RMAT_B2N
+: <a class="el" href="pprz__algebra__float_8h.html#a73364d97afa119eb53aed6e427282d23">pprz_algebra_float.h</a>
+</li>
+<li>FLOAT_QUAT_RMAT_N2B
+: <a class="el" href="pprz__algebra__float_8h.html#aa0b54027c9d860b9331cdfc3633b1e8b">pprz_algebra_float.h</a>
+</li>
+<li>FLOAT_QUAT_SDIV
+: <a class="el" href="pprz__algebra__float_8h.html#a20cd944d80921880c25f791fce64e2ca">pprz_algebra_float.h</a>
+</li>
 <li>FLOAT_QUAT_SMUL
 : <a class="el" href="pprz__algebra__float_8h.html#ab6688105028a4d0ee64c7937a9a76229">pprz_algebra_float.h</a>
+</li>
+<li>FLOAT_QUAT_VMUL_LEFT
+: <a class="el" href="pprz__algebra__float_8h.html#abc7167856db58fa7c4eab9c8a69a044e">pprz_algebra_float.h</a>
+</li>
+<li>FLOAT_QUAT_VMUL_RIGHT
+: <a class="el" href="pprz__algebra__float_8h.html#a2903066e38b217eb9507c3dfde1107f1">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_QUAT_VMULT
 : <a class="el" href="pprz__algebra__float_8h.html#a06cf4d5cd7ee5b43988d30d99ed7467b">pprz_algebra_float.h</a>
@@ -545,8 +601,14 @@ $(document).ready(function(){initNavTree('globals_0x66.html','');});
 <li>FLOAT_VECT2_DIFF
 : <a class="el" href="pprz__algebra__float_8h.html#a3bb4b57ed80281639f9664668734949a">pprz_algebra_float.h</a>
 </li>
+<li>FLOAT_VECT2_DOT_PRODUCT
+: <a class="el" href="pprz__algebra__float_8h.html#a88e2af0a0cd471f32f8e237bff27c4a1">pprz_algebra_float.h</a>
+</li>
 <li>FLOAT_VECT2_NORM
-: <a class="el" href="pprz__algebra__float_8h.html#a77c5752d894462efc3881297062e4664">pprz_algebra_float.h</a>
+: <a class="el" href="pprz__algebra__float_8h.html#a2ac36ba4f7824d8bb66cde1dded2b47e">pprz_algebra_float.h</a>
+</li>
+<li>FLOAT_VECT2_NORM2
+: <a class="el" href="pprz__algebra__float_8h.html#a3960a99127c1ca0195478e4fdeb57a11">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_VECT2_NORMALIZE
 : <a class="el" href="pprz__algebra__float_8h.html#a07988300b23cc21ea197dd72f8de9046">pprz_algebra_float.h</a>
@@ -563,8 +625,14 @@ $(document).ready(function(){initNavTree('globals_0x66.html','');});
 <li>FLOAT_VECT2_ZERO
 : <a class="el" href="pprz__algebra__float_8h.html#accedb5bf722a0466b35ade54c3f81b19">pprz_algebra_float.h</a>
 </li>
+<li>FLOAT_VECT3_ADD
+: <a class="el" href="pprz__algebra__float_8h.html#a7b3d7a2adca23de89fb3962f351f82d1">pprz_algebra_float.h</a>
+</li>
 <li>FLOAT_VECT3_ASSIGN
 : <a class="el" href="pprz__algebra__float_8h.html#a6cc9b067d753bfe68de6c3d5565b6f99">pprz_algebra_float.h</a>
+</li>
+<li>FLOAT_VECT3_COPY
+: <a class="el" href="pprz__algebra__float_8h.html#a72c77d277cbcf35160e28bcbd884ee34">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_VECT3_CROSS_PRODUCT
 : <a class="el" href="pprz__algebra__float_8h.html#a3e4e268c0bbddfa691dfb186f5b5df65">pprz_algebra_float.h</a>
@@ -578,6 +646,9 @@ $(document).ready(function(){initNavTree('globals_0x66.html','');});
 <li>FLOAT_VECT3_INTEGRATE_FI
 : <a class="el" href="pprz__algebra__float_8h.html#a6f3c0c35ebda0016f6647ea4d5554eaf">pprz_algebra_float.h</a>
 </li>
+<li>FLOAT_VECT3_MUL
+: <a class="el" href="pprz__algebra__float_8h.html#ad1e9dfb720b0c8612d1dc79e81542cb2">pprz_algebra_float.h</a>
+</li>
 <li>FLOAT_VECT3_NORM
 : <a class="el" href="pprz__algebra__float_8h.html#a94d348775d7a0beafa3f15967ea4a9e2">pprz_algebra_float.h</a>
 </li>
@@ -587,63 +658,93 @@ $(document).ready(function(){initNavTree('globals_0x66.html','');});
 <li>FLOAT_VECT3_NORMALIZE
 : <a class="el" href="pprz__algebra__float_8h.html#aac913329f9a0d5e1db77c6fc2480fff7">pprz_algebra_float.h</a>
 </li>
+<li>FLOAT_VECT3_SDIV
+: <a class="el" href="pprz__algebra__float_8h.html#a92657ab48af3a29f43ab3a9da976bc66">pprz_algebra_float.h</a>
+</li>
 <li>FLOAT_VECT3_SMUL
 : <a class="el" href="pprz__algebra__float_8h.html#aa3c2387563382b1ecb24148d09e8b603">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_VECT3_SUB
 : <a class="el" href="pprz__algebra__float_8h.html#a3c971ae8f35ffab12ddec5743683d4e3">pprz_algebra_float.h</a>
 </li>
+<li>FLOAT_VECT3_SUM
+: <a class="el" href="pprz__algebra__float_8h.html#ab27afa77f7f820a5eff478910922cf53">pprz_algebra_float.h</a>
+</li>
 <li>FLOAT_VECT3_ZERO
 : <a class="el" href="pprz__algebra__float_8h.html#a41de102be6b28101c9568380f729a88d">pprz_algebra_float.h</a>
+</li>
+<li>float_vect_add()
+: <a class="el" href="pprz__algebra__float_8h.html#a054c0afdf1c4c9316dffe8763363a1b8">pprz_algebra_float.h</a>
+</li>
+<li>float_vect_copy()
+: <a class="el" href="pprz__algebra__float_8h.html#a90298b458dad65af4a4bc5f7491da823">pprz_algebra_float.h</a>
+</li>
+<li>float_vect_diff()
+: <a class="el" href="pprz__algebra__float_8h.html#aa33d68b46bc4922889e1fc931c6318fd">pprz_algebra_float.h</a>
+</li>
+<li>float_vect_mul()
+: <a class="el" href="pprz__algebra__float_8h.html#a28437c6b841646e10f34436a76c82044">pprz_algebra_float.h</a>
+</li>
+<li>float_vect_norm()
+: <a class="el" href="pprz__algebra__float_8h.html#ad3e4fbe2ede8f068d46f7c617227e3f1">pprz_algebra_float.h</a>
+</li>
+<li>float_vect_sdiv()
+: <a class="el" href="pprz__algebra__float_8h.html#a3e14b0798bbad05e64ed477c027d1411">pprz_algebra_float.h</a>
+</li>
+<li>float_vect_smul()
+: <a class="el" href="pprz__algebra__float_8h.html#a2a16655dc0d98a40ff17c6728fa1e4fb">pprz_algebra_float.h</a>
+</li>
+<li>float_vect_sub()
+: <a class="el" href="pprz__algebra__float_8h.html#a03ad700d1b32902c199a841eb3f7e5c9">pprz_algebra_float.h</a>
+</li>
+<li>float_vect_sum()
+: <a class="el" href="pprz__algebra__float_8h.html#a0c9a0d18305c582cf58a79771919c1e9">pprz_algebra_float.h</a>
+</li>
+<li>float_vect_zero()
+: <a class="el" href="pprz__algebra__float_8h.html#a132a789820c2d2610906e87120af9d18">pprz_algebra_float.h</a>
 </li>
 <li>FloatSwap
 : <a class="el" href="imu__chimu_8h.html#a5bff2dac690c44d95339377f2074cf31">imu_chimu.h</a>
 </li>
 <li>FlowerLine
-: <a class="el" href="OSAMNav_8c.html#ab3972f7766a79f22a1ed10c84e294551a67ace41cbedde07dc60db766a1f42b2f">OSAMNav.c</a>
-</li>
-<li>FlowerNav()
-: <a class="el" href="OSAMNav_8c.html#a7cfb0b1945fa72c85a15fe5f68957eaa">OSAMNav.c</a>
-, <a class="el" href="OSAMNav_8h.html#a7cfb0b1945fa72c85a15fe5f68957eaa">OSAMNav.h</a>
+: <a class="el" href="nav__flower_8c.html#ab3972f7766a79f22a1ed10c84e294551a67ace41cbedde07dc60db766a1f42b2f">nav_flower.c</a>
 </li>
 <li>Flowerradius
-: <a class="el" href="OSAMNav_8c.html#a749c10912d2da64cb074dc73352bfcc3">OSAMNav.c</a>
+: <a class="el" href="nav__flower_8c.html#a749c10912d2da64cb074dc73352bfcc3">nav_flower.c</a>
 </li>
 <li>FlowerStatus
-: <a class="el" href="OSAMNav_8c.html#ab3972f7766a79f22a1ed10c84e294551">OSAMNav.c</a>
+: <a class="el" href="nav__flower_8c.html#ab3972f7766a79f22a1ed10c84e294551">nav_flower.c</a>
 </li>
 <li>FlowerTheta
-: <a class="el" href="OSAMNav_8c.html#a0c935f750d6c391ac00b92505c7513f6">OSAMNav.c</a>
+: <a class="el" href="nav__flower_8c.html#a0c935f750d6c391ac00b92505c7513f6">nav_flower.c</a>
 </li>
 <li>FLQDR
-: <a class="el" href="OSAMNav_8c.html#ac4d94e31e6e80714f7505df99243b5fa">OSAMNav.c</a>
+: <a class="el" href="nav__line__osam_8c.html#ac4d94e31e6e80714f7505df99243b5fa">nav_line_osam.c</a>
 </li>
 <li>FLRadius
-: <a class="el" href="OSAMNav_8c.html#ac5ac5c92ab9959db425b53c1c14b0dcd">OSAMNav.c</a>
+: <a class="el" href="nav__line__osam_8c.html#ac5ac5c92ab9959db425b53c1c14b0dcd">nav_line_osam.c</a>
 </li>
 <li>FLStatus
-: <a class="el" href="OSAMNav_8c.html#a9dbd76495d70a6f62b70274c35348271">OSAMNav.c</a>
+: <a class="el" href="nav__line__osam_8c.html#a9dbd76495d70a6f62b70274c35348271">nav_line_osam.c</a>
 </li>
 <li>FLTOWP
-: <a class="el" href="OSAMNav_8c.html#a4f5f624871df9860a47991a60f3db27c">OSAMNav.c</a>
+: <a class="el" href="nav__line__osam_8c.html#a4f5f624871df9860a47991a60f3db27c">nav_line_osam.c</a>
 </li>
 <li>Fly2X
-: <a class="el" href="OSAMNav_8c.html#a1b2ced02c3f3f05a7d4ff5532fb8eaf8">OSAMNav.c</a>
+: <a class="el" href="nav__flower_8c.html#a1b2ced02c3f3f05a7d4ff5532fb8eaf8">nav_flower.c</a>
 </li>
 <li>Fly2Y
-: <a class="el" href="OSAMNav_8c.html#af1413913c868f92a21ad14656364d8f1">OSAMNav.c</a>
+: <a class="el" href="nav__flower_8c.html#af1413913c868f92a21ad14656364d8f1">nav_flower.c</a>
 </li>
 <li>fly_to_xy()
 : <a class="el" href="nav_8c.html#ae9d11d2e378b23ecbee86419cbf341f0">nav.c</a>
 , <a class="el" href="nav_8h.html#ae9d11d2e378b23ecbee86419cbf341f0">nav.h</a>
 </li>
 <li>FlyFromX
-: <a class="el" href="OSAMNav_8c.html#a367901cf9b9ad71882d1a75785df5dc2">OSAMNav.c</a>
-, <a class="el" href="spiral_8c.html#a367901cf9b9ad71882d1a75785df5dc2">spiral.c</a>
+: <a class="el" href="nav__flower_8c.html#a367901cf9b9ad71882d1a75785df5dc2">nav_flower.c</a>
 </li>
 <li>FlyFromY
-: <a class="el" href="OSAMNav_8c.html#ae4fb24d68cd90599e3a6769af915c179">OSAMNav.c</a>
-, <a class="el" href="spiral_8c.html#ae4fb24d68cd90599e3a6769af915c179">spiral.c</a>
+: <a class="el" href="nav__flower_8c.html#ae4fb24d68cd90599e3a6769af915c179">nav_flower.c</a>
 </li>
 <li>FM_ADDRH_READ
 : <a class="el" href="max7456__regs_8h.html#a281aa6d25c8bbd5575c78d09d52ede2c">max7456_regs.h</a>
@@ -676,8 +777,8 @@ $(document).ready(function(){initNavTree('globals_0x66.html','');});
 : <a class="el" href="udp_8c.html#a7d3d557fda2a00a82f6c61ffa1efc804">udp.c</a>
 </li>
 <li>fms_test_signal
-: <a class="el" href="vi__test__signal_8h.html#ae6d3e04dca282fc76e27d3a99d06a085">vi_test_signal.h</a>
-, <a class="el" href="vi__test__signal_8c.html#ae6d3e04dca282fc76e27d3a99d06a085">vi_test_signal.c</a>
+: <a class="el" href="vi__test__signal_8c.html#ae6d3e04dca282fc76e27d3a99d06a085">vi_test_signal.c</a>
+, <a class="el" href="vi__test__signal_8h.html#ae6d3e04dca282fc76e27d3a99d06a085">vi_test_signal.h</a>
 </li>
 <li>FMS_TEST_SIGNAL_DEFAULT_AMPLITUDE
 : <a class="el" href="vi__test__signal_8c.html#a2bb1c70e411d7afa301700d69b3bfadc">vi_test_signal.c</a>
@@ -691,38 +792,49 @@ $(document).ready(function(){initNavTree('globals_0x66.html','');});
 <li>fms_ts_mode
 : <a class="el" href="vi__test__signal_8h.html#a348d7aa59a4cc06408815b6e39513b0c">vi_test_signal.h</a>
 </li>
-<li>foo
-: <a class="el" href="lisa__test__adxl345__dma_8c.html#aad9480ffa38c1335bd7c5b85a82280d2">lisa_test_adxl345_dma.c</a>
-, <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">main_demo5.c</a>
-, <a class="el" href="lisa__test__aspirin_8c.html#a06cc3dbee55a2cf7b23bdb8ab4482f1a">lisa_test_aspirin.c</a>
+<li>follow_change_wp()
+: <a class="el" href="follow_8c.html#ae56966b7d44ce338c41405e8a070adfd">follow.c</a>
+, <a class="el" href="follow_8h.html#ae56966b7d44ce338c41405e8a070adfd">follow.h</a>
 </li>
-<li>force_climb_gain
-: <a class="el" href="potential_8h.html#a733641d1fb4e79d1e4e80daf4c5e09d0">potential.h</a>
+<li>follow_init()
+: <a class="el" href="follow_8c.html#ab234fa25658f4e57d63125a30200811a">follow.c</a>
+, <a class="el" href="follow_8h.html#ab234fa25658f4e57d63125a30200811a">follow.h</a>
+</li>
+<li>FOLLOW_OFFSET_X
+: <a class="el" href="follow_8c.html#ae326226c92c0cf8c0d8252c7bdb51f72">follow.c</a>
+</li>
+<li>FOLLOW_OFFSET_Y
+: <a class="el" href="follow_8c.html#a767f3bb6f219f9f50a74deb8eadbbea1">follow.c</a>
+</li>
+<li>FOLLOW_OFFSET_Z
+: <a class="el" href="follow_8c.html#ab0985f60003af7db522665def56fa729">follow.c</a>
+</li>
+<li>foo
+: <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">main_demo5.c</a>
 </li>
 <li>FORCE_CLIMB_GAIN
 : <a class="el" href="potential_8c.html#ad0b5aeaf048b2d7b5836418d13eb93e5">potential.c</a>
 </li>
 <li>force_climb_gain
 : <a class="el" href="potential_8c.html#a733641d1fb4e79d1e4e80daf4c5e09d0">potential.c</a>
+, <a class="el" href="potential_8h.html#a733641d1fb4e79d1e4e80daf4c5e09d0">potential.h</a>
 </li>
 <li>FORCE_MAX_DIST
 : <a class="el" href="potential_8c.html#a9bff43b295c79baf79697717512f3b5b">potential.c</a>
 </li>
+<li>force_pos_gain
+: <a class="el" href="potential_8c.html#ab854e51b04432e809f3d60e85d19ded3">potential.c</a>
+, <a class="el" href="potential_8h.html#ab854e51b04432e809f3d60e85d19ded3">potential.h</a>
+</li>
 <li>FORCE_POS_GAIN
 : <a class="el" href="potential_8c.html#a70ae37200fbabaceb0665d702cfe63d0">potential.c</a>
 </li>
-<li>force_pos_gain
-: <a class="el" href="potential_8h.html#ab854e51b04432e809f3d60e85d19ded3">potential.h</a>
-, <a class="el" href="potential_8c.html#ab854e51b04432e809f3d60e85d19ded3">potential.c</a>
-</li>
 <li>force_speed_gain
 : <a class="el" href="potential_8h.html#adda93a003e9b84061c28b3b2ef8bea4b">potential.h</a>
+, <a class="el" href="potential_8c.html#adda93a003e9b84061c28b3b2ef8bea4b">potential.c</a>
 </li>
 <li>FORCE_SPEED_GAIN
 : <a class="el" href="potential_8c.html#aadd9ec4644f273ebb4aa189a93e08269">potential.c</a>
-</li>
-<li>force_speed_gain
-: <a class="el" href="potential_8c.html#adda93a003e9b84061c28b3b2ef8bea4b">potential.c</a>
 </li>
 <li>form_a
 : <a class="el" href="formation_8c.html#afc629dd59f363557c0c07350822f9e11">formation.c</a>
@@ -744,10 +856,12 @@ $(document).ready(function(){initNavTree('globals_0x66.html','');});
 </li>
 <li>form_mode
 : <a class="el" href="formation_8c.html#a5e08859d5f7c09e8d087590c1cc5d591">formation.c</a>
-, <a class="el" href="formation_8h.html#a5e08859d5f7c09e8d087590c1cc5d591">formation.h</a>
 </li>
 <li>FORM_MODE
 : <a class="el" href="formation_8c.html#a0a7c68ae131645cdbecdf1741a2b2e04">formation.c</a>
+</li>
+<li>form_mode
+: <a class="el" href="formation_8h.html#a5e08859d5f7c09e8d087590c1cc5d591">formation.h</a>
 </li>
 <li>FORM_MODE_COURSE
 : <a class="el" href="formation_8h.html#ab669f7ba64f662a9811c2a7b6c3521e5">formation.h</a>
@@ -761,12 +875,12 @@ $(document).ready(function(){initNavTree('globals_0x66.html','');});
 <li>FORM_POS_PGAIN
 : <a class="el" href="formation_8c.html#a9aaed6b0ee648cb21fa0cdd8e9633d9e">formation.c</a>
 </li>
-<li>FORM_PROX
-: <a class="el" href="formation_8c.html#ad0496c9f7e8ef158773e24c6c763a20e">formation.c</a>
-</li>
 <li>form_prox
 : <a class="el" href="formation_8c.html#ac0c595691716cf211d3ce0d7a7f60f8a">formation.c</a>
 , <a class="el" href="formation_8h.html#ac0c595691716cf211d3ce0d7a7f60f8a">formation.h</a>
+</li>
+<li>FORM_PROX
+: <a class="el" href="formation_8c.html#ad0496c9f7e8ef158773e24c6c763a20e">formation.c</a>
 </li>
 <li>form_speed
 : <a class="el" href="formation_8c.html#a6402fc21e97e1b740b6973dc6a3e7000">formation.c</a>
@@ -781,15 +895,15 @@ $(document).ready(function(){initNavTree('globals_0x66.html','');});
 : <a class="el" href="formation_8c.html#a0d0789fe7e6087914de64c9814c19ad9">formation.c</a>
 </li>
 <li>formation
-: <a class="el" href="formation_8c.html#a86703694a52eca211bffb90b5163c75a">formation.c</a>
-, <a class="el" href="formation_8h.html#a86703694a52eca211bffb90b5163c75a">formation.h</a>
+: <a class="el" href="formation_8h.html#a86703694a52eca211bffb90b5163c75a">formation.h</a>
+, <a class="el" href="formation_8c.html#a86703694a52eca211bffb90b5163c75a">formation.c</a>
 </li>
 <li>FORMATION_C
 : <a class="el" href="formation_8c.html#af1b8a23bb0e5cce8f030e30917eca0b7">formation.c</a>
 </li>
 <li>formation_flight()
-: <a class="el" href="formation_8h.html#a18de0c4f9e864cb4db84458b33b463dd">formation.h</a>
-, <a class="el" href="formation_8c.html#a18de0c4f9e864cb4db84458b33b463dd">formation.c</a>
+: <a class="el" href="formation_8c.html#a18de0c4f9e864cb4db84458b33b463dd">formation.c</a>
+, <a class="el" href="formation_8h.html#a18de0c4f9e864cb4db84458b33b463dd">formation.h</a>
 </li>
 <li>formation_init()
 : <a class="el" href="formation_8c.html#acf4b41c93bf9fcca41532eb8a22ec466">formation.c</a>
@@ -800,23 +914,23 @@ $(document).ready(function(){initNavTree('globals_0x66.html','');});
 , <a class="el" href="formation_8c.html#ae22bbb9b0cbc9aa4e541ab47d5a42989">formation.c</a>
 </li>
 <li>FOSC
-: <a class="el" href="tiny__2_80_8h.html#a802b2b582b121e4632aa9a491d503720">tiny_2.0.h</a>
+: <a class="el" href="booz__1_80_8h.html#a802b2b582b121e4632aa9a491d503720">booz_1.0.h</a>
 , <a class="el" href="umarim__lite__2_80_8h.html#a802b2b582b121e4632aa9a491d503720">umarim_lite_2.0.h</a>
+, <a class="el" href="tiny__0_899_8h.html#a802b2b582b121e4632aa9a491d503720">tiny_0.99.h</a>
 , <a class="el" href="hb__1_81_8h.html#a802b2b582b121e4632aa9a491d503720">hb_1.1.h</a>
+, <a class="el" href="olimex__lpc__h2148_8h.html#a802b2b582b121e4632aa9a491d503720">olimex_lpc_h2148.h</a>
+, <a class="el" href="tiny__2_80_8h.html#a802b2b582b121e4632aa9a491d503720">tiny_2.0.h</a>
 , <a class="el" href="sdlog__1_80_8h.html#a802b2b582b121e4632aa9a491d503720">sdlog_1.0.h</a>
+, <a class="el" href="umarim__1_80_8h.html#a802b2b582b121e4632aa9a491d503720">umarim_1.0.h</a>
+, <a class="el" href="navgo__1_80_8h.html#a802b2b582b121e4632aa9a491d503720">navgo_1.0.h</a>
+, <a class="el" href="tiny__2_81_8h.html#a802b2b582b121e4632aa9a491d503720">tiny_2.1.h</a>
 , <a class="el" href="logom__2_86_8h.html#a802b2b582b121e4632aa9a491d503720">logom_2.6.h</a>
 , <a class="el" href="tiny__1_81_8h.html#a802b2b582b121e4632aa9a491d503720">tiny_1.1.h</a>
-, <a class="el" href="tiny__0_899_8h.html#a802b2b582b121e4632aa9a491d503720">tiny_0.99.h</a>
-, <a class="el" href="tiny__2_81_8h.html#a802b2b582b121e4632aa9a491d503720">tiny_2.1.h</a>
-, <a class="el" href="umarim__1_80_8h.html#a802b2b582b121e4632aa9a491d503720">umarim_1.0.h</a>
-, <a class="el" href="booz__1_80_8h.html#a802b2b582b121e4632aa9a491d503720">booz_1.0.h</a>
 , <a class="el" href="classix__1_80_8h.html#a802b2b582b121e4632aa9a491d503720">classix_1.0.h</a>
-, <a class="el" href="olimex__lpc__h2148_8h.html#a802b2b582b121e4632aa9a491d503720">olimex_lpc_h2148.h</a>
-, <a class="el" href="navgo__1_80_8h.html#a802b2b582b121e4632aa9a491d503720">navgo_1.0.h</a>
 </li>
 <li>fp_pitch
-: <a class="el" href="nav_8h.html#a737a463b508f62286a0e62c5ed5648b4">nav.h</a>
-, <a class="el" href="nav_8c.html#a737a463b508f62286a0e62c5ed5648b4">nav.c</a>
+: <a class="el" href="nav_8c.html#a737a463b508f62286a0e62c5ed5648b4">nav.c</a>
+, <a class="el" href="nav_8h.html#a737a463b508f62286a0e62c5ed5648b4">nav.h</a>
 </li>
 <li>fref
 : <a class="el" href="temp__tcouple__adc_8c.html#aa67736b889b8eff5752f3d0b6367906c">temp_tcouple_adc.c</a>
@@ -828,11 +942,14 @@ $(document).ready(function(){initNavTree('globals_0x66.html','');});
 : <a class="el" href="at__com_8c.html#ae17b1fbd0d2858329af3554bff58d9be">at_com.c</a>
 </li>
 <li>FRONT
-: <a class="el" href="actuators__asctec__v2_8h.html#a6a84074f57bc5110d7e301d4662c4899a76bd5ec6ea9d8a1b582d8d5e43102a02">actuators_asctec_v2.h</a>
-, <a class="el" href="actuators__asctec_8h.html#ad2db450a6c9862a4f81ba35a4d5f4f20a76bd5ec6ea9d8a1b582d8d5e43102a02">actuators_asctec.h</a>
+: <a class="el" href="actuators__asctec_8h.html#ad2db450a6c9862a4f81ba35a4d5f4f20a76bd5ec6ea9d8a1b582d8d5e43102a02">actuators_asctec.h</a>
+, <a class="el" href="actuators__asctec__v2_8h.html#a6a84074f57bc5110d7e301d4662c4899a76bd5ec6ea9d8a1b582d8d5e43102a02">actuators_asctec_v2.h</a>
 </li>
 <li>FSIZ
-: <a class="el" href="lpc21_2subsystems_2settings__arch_8c.html#aad7842fbef06c8ec39045d2bf58455b9">settings_arch.c</a>
+: <a class="el" href="stm32_2subsystems_2settings__arch_8c.html#aad7842fbef06c8ec39045d2bf58455b9">settings_arch.c</a>
+</li>
+<li>fsmc_isr()
+: <a class="el" href="stm32f4__chibios__vectors_8h.html#a0f9824eb50ffc9066ac14f9af5f7dd08">stm32f4_chibios_vectors.h</a>
 </li>
 <li>ftemphtm
 : <a class="el" href="humid__htm__b71_8c.html#adfb08fb58d62ab3300c38d22cc1f9c22">humid_htm_b71.c</a>
@@ -846,15 +963,15 @@ $(document).ready(function(){initNavTree('globals_0x66.html','');});
 , <a class="el" href="humid__sht_8h.html#ab5111f7c86720c03eca02d5362d3373f">humid_sht.h</a>
 </li>
 <li>ftempsht_i2c
-: <a class="el" href="humid__sht__i2c_8h.html#ad52c52ca36e2d9bad2918adee20b2a54">humid_sht_i2c.h</a>
-, <a class="el" href="humid__sht__i2c_8c.html#ad52c52ca36e2d9bad2918adee20b2a54">humid_sht_i2c.c</a>
+: <a class="el" href="humid__sht__i2c_8c.html#ad52c52ca36e2d9bad2918adee20b2a54">humid_sht_i2c.c</a>
+, <a class="el" href="humid__sht__i2c_8h.html#ad52c52ca36e2d9bad2918adee20b2a54">humid_sht_i2c.h</a>
 </li>
 <li>ftimeofday()
 : <a class="el" href="sim__ap_8c.html#a9037ef79ac8d270ab46865ea3c7e66d6">sim_ap.c</a>
 </li>
 <li>ftmd_temperature
-: <a class="el" href="temp__temod_8h.html#aaaf211bc5462b03ca020351920b40586">temp_temod.h</a>
-, <a class="el" href="temp__temod_8c.html#aaaf211bc5462b03ca020351920b40586">temp_temod.c</a>
+: <a class="el" href="temp__temod_8c.html#aaaf211bc5462b03ca020351920b40586">temp_temod.c</a>
+, <a class="el" href="temp__temod_8h.html#aaaf211bc5462b03ca020351920b40586">temp_temod.h</a>
 </li>
 <li>ftmp_temperature
 : <a class="el" href="temp__tmp102_8h.html#a8912f650188fc5048acd54fb13fdb70a">temp_tmp102.h</a>
@@ -877,7 +994,7 @@ $(document).ready(function(){initNavTree('globals_0x66.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:14 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:22 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

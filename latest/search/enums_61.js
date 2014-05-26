@@ -7,6 +7,7 @@ var searchData=
   ['actuators_5fasctec_5fv2_5fcmd',['actuators_asctec_v2_cmd',['../actuators__asctec__v2_8h.html#a4fc4c81cd178f2e57a6d8ce74785742e',1,'actuators_asctec_v2.h']]],
   ['adc1_5fchannels',['adc1_channels',['../stm32_2mcu__periph_2adc__arch_8h.html#ac1dbdbf706177270f68597836106d8c9',1,'adc_arch.h']]],
   ['adc2_5fchannels',['adc2_channels',['../stm32_2mcu__periph_2adc__arch_8h.html#a33afbc7bbad301d909dfd2faaeae1b45',1,'adc_arch.h']]],
+  ['adc3_5fchannels',['adc3_channels',['../stm32_2mcu__periph_2adc__arch_8h.html#ab970f46debc24fe7a8a068048c94085b',1,'adc_arch.h']]],
   ['adxl345confstatus',['Adxl345ConfStatus',['../adxl345_8h.html#aa006d32535082f7872bc58cd529c9177',1,'adxl345.h']]],
   ['adxl345ranges',['Adxl345Ranges',['../adxl345__regs_8h.html#abc3494afc65a86812ed33040266ce16f',1,'adxl345_regs.h']]],
   ['adxl345rates',['Adxl345Rates',['../adxl345__regs_8h.html#a746dd7df1b3e0f992547870f19047133',1,'adxl345_regs.h']]],

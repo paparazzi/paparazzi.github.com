@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -143,19 +143,31 @@ $(document).ready(function(){initNavTree('functions_0x70.html','');});
 <div class="textblock">Here is a list of all struct and union fields with links to the structures/unions they belong to:</div>
 
 <h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
+<li>p
+: <a class="el" href="structscbRegs__t.html#ac9c2280652ad619ca751f3ebee229d90">scbRegs_t</a>
+, <a class="el" href="structFloatAttitudeGains.html#a9ab9c0022f5120a4aab45e1e21433b75">FloatAttitudeGains</a>
+, <a class="el" href="structDoubleRates.html#a37b5d6d0b3733ce3ea196f6c8082eaef">DoubleRates</a>
+, <a class="el" href="structInt64Rates.html#ad21d711fd40730ea136ebe9d7bd56b66">Int64Rates</a>
+</li>
 <li>P
 : <a class="el" href="structTypeKalman.html#a2ef29d05e829ab561c0bb8210c466d12">TypeKalman</a>
-, <a class="el" href="structAhrsMlkf.html#a0081a1710872516b7083335077675627">AhrsMlkf</a>
 </li>
 <li>p
-: <a class="el" href="structFloatAttitudeGains.html#a9ab9c0022f5120a4aab45e1e21433b75">FloatAttitudeGains</a>
+: <a class="el" href="structFloatRates.html#a4bc81b8dfc82c389671683596d4ad15e">FloatRates</a>
+</li>
+<li>P
+: <a class="el" href="structAhrsMlkf.html#a0081a1710872516b7083335077675627">AhrsMlkf</a>
+, <a class="el" href="structVffExtended.html#aab59b358522959c9ceb437c39a93722e">VffExtended</a>
+</li>
+<li>p
+: <a class="el" href="structInt32AttitudeGains.html#ad199610cbcc6aab8f6782bc22794d89e">Int32AttitudeGains</a>
 , <a class="el" href="structInt16Rates.html#a0083938b7e369efce5ebf120840a38d2">Int16Rates</a>
-, <a class="el" href="structInt32Rates.html#a34093c15eec29e77b8cc0102f6d216dd">Int32Rates</a>
-, <a class="el" href="structInt32AttitudeGains.html#ad199610cbcc6aab8f6782bc22794d89e">Int32AttitudeGains</a>
-, <a class="el" href="structInt64Rates.html#ad21d711fd40730ea136ebe9d7bd56b66">Int64Rates</a>
-, <a class="el" href="structscbRegs__t.html#ac9c2280652ad619ca751f3ebee229d90">scbRegs_t</a>
-, <a class="el" href="structDoubleRates.html#a37b5d6d0b3733ce3ea196f6c8082eaef">DoubleRates</a>
-, <a class="el" href="structFloatRates.html#a4bc81b8dfc82c389671683596d4ad15e">FloatRates</a>
+</li>
+<li>P
+: <a class="el" href="structVff.html#a062013f95870fd81e88895598e9e49ea">Vff</a>
+</li>
+<li>p
+: <a class="el" href="structInt32Rates.html#a34093c15eec29e77b8cc0102f6d216dd">Int32Rates</a>
 </li>
 <li>pacc
 : <a class="el" href="structVi__gps__info.html#a69fde2065c05cc8523ed0c68a5787d83">Vi_gps_info</a>
@@ -215,6 +227,9 @@ $(document).ready(function(){initNavTree('functions_0x70.html','');});
 <li>pec_recep_cnt
 : <a class="el" href="structi2c__errors.html#a05faedf401286bc8e6a4a25c949af3e3">i2c_errors</a>
 </li>
+<li>pendsv_vector
+: <a class="el" href="structvectors__t.html#a2ea69007d9769f0cd81893dd6e7cd42b">vectors_t</a>
+</li>
 <li>period
 : <a class="el" href="structBoozFmsTestSignal.html#afd5e1105c20108debed35f364310e287">BoozFmsTestSignal</a>
 </li>
@@ -257,8 +272,17 @@ $(document).ready(function(){initNavTree('functions_0x70.html','');});
 <li>pitch
 : <a class="el" href="structInfrared.html#ae86ecec8d0eda43d29fd65efba9bbc69">Infrared</a>
 </li>
+<li>pitch_accel
+: <a class="el" href="structHCtlAdaptRef.html#a900c1f120ad4692ceda67ac5553d12f8">HCtlAdaptRef</a>
+</li>
+<li>pitch_angle
+: <a class="el" href="structHCtlAdaptRef.html#a4d54f34d5f3ccbc2fd93a4a68aad8f88">HCtlAdaptRef</a>
+</li>
 <li>pitch_neutral
 : <a class="el" href="structInfrared.html#ada37f5ce5e10d1409e25bcbad218bd11">Infrared</a>
+</li>
+<li>pitch_rate
+: <a class="el" href="structHCtlAdaptRef.html#a442502fa9edb30e4c9a88665c1844102">HCtlAdaptRef</a>
 </li>
 <li>pitch_vneutral
 : <a class="el" href="structInfrared.html#af412edb2c754284cb1aeeef836c300e4">Infrared</a>
@@ -269,9 +293,19 @@ $(document).ready(function(){initNavTree('functions_0x70.html','');});
 <li>polar
 : <a class="el" href="structscbRegs__t.html#adb38e45eef296edd0a6b4d9c1a9b51bc">scbRegs_t</a>
 </li>
+<li>poly_count
+: <a class="el" href="structSurveyPolyAdv.html#a17f18422ef4795276fea5e55fdaca0d0">SurveyPolyAdv</a>
+</li>
+<li>poly_first
+: <a class="el" href="structSurveyPolyAdv.html#ae256f36c36e871cc4773c9ac8845e90b">SurveyPolyAdv</a>
+</li>
+<li>port_id
+: <a class="el" href="structgps__ubx__ucenter__struct.html#affa2a0b27d127c7662214c9c0c506770">gps_ubx_ucenter_struct</a>
+</li>
 <li>pos
-: <a class="el" href="structVi__command.html#abff41d60c44f6e013c09253cfaa68867">Vi_command</a>
-, <a class="el" href="structVi__gps__info.html#ab702300a590e9e8e881ab73eafa6e1f8">Vi_gps_info</a>
+: <a class="el" href="structVi__gps__info.html#ab702300a590e9e8e881ab73eafa6e1f8">Vi_gps_info</a>
+, <a class="el" href="structVi__command.html#abff41d60c44f6e013c09253cfaa68867">Vi_command</a>
+, <a class="el" href="structinv__state.html#a96cce18d8b8a223084e53389e142475b">inv_state</a>
 </li>
 <li>pos_accur_c0
 : <a class="el" href="struct__navdata__gps__t.html#a741c7f45033343ff74aa0f8f38b750bb">_navdata_gps_t</a>
@@ -283,11 +317,20 @@ $(document).ready(function(){initNavTree('functions_0x70.html','');});
 : <a class="el" href="struct__navdata__gps__t.html#ad414283c5b7e2531137b65db10709204">_navdata_gps_t</a>
 </li>
 <li>pos_available
-: <a class="el" href="structGpsSirf.html#a56cef446eae82de87ebaec239e5b7abc">GpsSirf</a>
-, <a class="el" href="structGpsNmea.html#a8f5235b8167adbf866f3f803355ecd30">GpsNmea</a>
+: <a class="el" href="structGpsNmea.html#a8f5235b8167adbf866f3f803355ecd30">GpsNmea</a>
+, <a class="el" href="structGpsSirf.html#a56cef446eae82de87ebaec239e5b7abc">GpsSirf</a>
+</li>
+<li>pos_gps
+: <a class="el" href="structinv__measures.html#ad6a395ad3805de36d785ab753d5df461">inv_measures</a>
 </li>
 <li>pos_status
 : <a class="el" href="group__state__position.html#ga653583f32fe4e3e5e075f4b767859b7f">State</a>
+</li>
+<li>power
+: <a class="el" href="structMF__DAQ.html#a24d73873e9a46e4d42776e1623b72c31">MF_DAQ</a>
+</li>
+<li>ppm
+: <a class="el" href="struct__sbus.html#a6b01893497c0fee7db1c81a04d8fdf4e">_sbus</a>
 </li>
 <li>pr
 : <a class="el" href="structpwmTmrRegs__t.html#a8b57106d14e8cc93d55a5cfd60969d54">pwmTmrRegs_t</a>
@@ -302,11 +345,12 @@ $(document).ready(function(){initNavTree('functions_0x70.html','');});
 : <a class="el" href="structrtcRegs__t.html#a956d4045977d5de2687ec0502bd9550f">rtcRegs_t</a>
 </li>
 <li>pressure
-: <a class="el" href="structMpl3115.html#a031d8d4f8fdce1d9155ffb19f2021df1">Mpl3115</a>
+: <a class="el" href="structmeasures__t.html#ac32a209df158507c2adc0ef40819bca1">measures_t</a>
+, <a class="el" href="structMpl3115.html#a031d8d4f8fdce1d9155ffb19f2021df1">Mpl3115</a>
+, <a class="el" href="structMs5611Data.html#a566e6baf00ae1e2558bcd9bdaabbf68e">Ms5611Data</a>
+, <a class="el" href="structHOTT__GAM__MSG.html#a19a71715f8aeabc745a60155630615f8">HOTT_GAM_MSG</a>
 , <a class="el" href="struct__navdata__gps__t.html#a1e81308fa16c4d788b47ead74802c3d7">_navdata_gps_t</a>
 , <a class="el" href="structBmp085.html#a2d94697b11e19dc20f6a7e26154c5e16">Bmp085</a>
-, <a class="el" href="structMs5611Data.html#a566e6baf00ae1e2558bcd9bdaabbf68e">Ms5611Data</a>
-, <a class="el" href="structmeasures__t.html#ac32a209df158507c2adc0ef40819bca1">measures_t</a>
 , <a class="el" href="structAirData.html#ac1045f98581056ac519880e19ac3a6e2">AirData</a>
 </li>
 <li>priv_rx_buf
@@ -325,14 +369,26 @@ $(document).ready(function(){initNavTree('functions_0x70.html','');});
 <li>protocol
 : <a class="el" href="structSuperbitRF.html#a694f702b729360c1afc0c5aaa1b6339a">SuperbitRF</a>
 </li>
+<li>psa_altitude
+: <a class="el" href="structSurveyPolyAdv.html#a8dc56efe2a86c83b2d0daa88ee6ec17a">SurveyPolyAdv</a>
+</li>
+<li>psa_min_rad
+: <a class="el" href="structSurveyPolyAdv.html#aa59bac993d21a2189cd10c40665aa513">SurveyPolyAdv</a>
+</li>
+<li>psa_shot_dist
+: <a class="el" href="structSurveyPolyAdv.html#afa708ec93cd32d6d6c048e7dd647a27f">SurveyPolyAdv</a>
+</li>
+<li>psa_sweep_width
+: <a class="el" href="structSurveyPolyAdv.html#a982d5405eb6641304a3b5b7244668a1a">SurveyPolyAdv</a>
+</li>
 <li>psi
 : <a class="el" href="structInt32Eulers.html#a825be67fd89b9a420fda84770e2b11ae">Int32Eulers</a>
 , <a class="el" href="structInt16Eulers.html#a4decabaf7514d474282db8ff623a3544">Int16Eulers</a>
-, <a class="el" href="structhigh__speed__logger__spi__link__data.html#abbe15ef040d65450c08214cc51be8447">high_speed_logger_spi_link_data</a>
-, <a class="el" href="structDoubleEulers.html#a00c6a387099e94f2eed59fcdae3a5e28">DoubleEulers</a>
-, <a class="el" href="struct__navdata__demo__t.html#a3805e74b8165a8adbc63455b02c4879c">_navdata_demo_t</a>
-, <a class="el" href="structFloatEulers.html#adafcac96d547392e830b872ac4dcdc75">FloatEulers</a>
 , <a class="el" href="structCHIMU__Euler.html#a775da36ecdad57539dc0f3f359ee315d">CHIMU_Euler</a>
+, <a class="el" href="structhigh__speed__logger__spi__link__data.html#abbe15ef040d65450c08214cc51be8447">high_speed_logger_spi_link_data</a>
+, <a class="el" href="struct__navdata__demo__t.html#a3805e74b8165a8adbc63455b02c4879c">_navdata_demo_t</a>
+, <a class="el" href="structDoubleEulers.html#a00c6a387099e94f2eed59fcdae3a5e28">DoubleEulers</a>
+, <a class="el" href="structFloatEulers.html#adafcac96d547392e830b872ac4dcdc75">FloatEulers</a>
 </li>
 <li>pulses
 : <a class="el" href="struct__sbus.html#a0f5a7630a004926c6c1d1200acc31649">_sbus</a>
@@ -349,7 +405,7 @@ $(document).ready(function(){initNavTree('functions_0x70.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:14 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:21 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

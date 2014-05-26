@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -146,26 +146,44 @@ $(document).ready(function(){initNavTree('functions_vars_0x6c.html','');});
 <li>lag_counter
 : <a class="el" href="structHfilterFloat.html#a0d390aab7aa6ed5be9fb5a046e4914a4">HfilterFloat</a>
 </li>
-<li>last_fix_ticks
-: <a class="el" href="structGpsState.html#ae57cb88a232985880e19989f99795245">GpsState</a>
+<li>last_3dfix_ticks
+: <a class="el" href="structGpsState.html#a5c50b02201b63dc34282b6c353b23589">GpsState</a>
 </li>
-<li>last_fix_time
-: <a class="el" href="structGpsState.html#ac6e982464156a3aa6d1967b7cf468b84">GpsState</a>
+<li>last_3dfix_time
+: <a class="el" href="structGpsState.html#a9eb7e10f8a297f62eceb452a534264f2">GpsState</a>
+</li>
+<li>last_circle
+: <a class="el" href="structNavSpiral.html#afa70e3c75d7423d9af1b5547b811e5d1">NavSpiral</a>
 </li>
 <li>last_frame_timestamp
 : <a class="el" href="struct__navdata__gps__t.html#a6c6667f060e5eea5a298a288d78b0b92">_navdata_gps_t</a>
 </li>
+<li>last_in
+: <a class="el" href="structFirstOrderLowPass.html#adc665d25f3161f1405e10055155da332">FirstOrderLowPass</a>
+</li>
 <li>last_msg
 : <a class="el" href="structVehicleInterface.html#a1bfd15310f8c8127120cad9efcdb05ed">VehicleInterface</a>
+</li>
+<li>last_msg_ticks
+: <a class="el" href="structGpsState.html#aebc3a177501ee0144c68d19cd59c9ce0">GpsState</a>
+</li>
+<li>last_msg_time
+: <a class="el" href="structGpsState.html#a8ef2a27a6656576aca1af1bbac6062ce">GpsState</a>
+</li>
+<li>last_out
+: <a class="el" href="structFirstOrderLowPass.html#a9cacb303c6f55e28e7d1061430c0ee25">FirstOrderLowPass</a>
+</li>
+<li>last_packet_number
+: <a class="el" href="structnavdata__port.html#af70eb19906b039a378273d891a88b536">navdata_port</a>
 </li>
 <li>last_unexpected_event
 : <a class="el" href="structi2c__errors.html#a8873e61902c73fefa2919fc1115c2596">i2c_errors</a>
 </li>
 <li>lat
-: <a class="el" href="structLlaCoor__d.html#aef3141e3b81b82399e4a774f322ba9ff">LlaCoor_d</a>
-, <a class="el" href="structLlaCoor__f.html#ace542562586741aeb022a5a57c30dea5">LlaCoor_f</a>
-, <a class="el" href="structLlaCoor__i.html#a083f5d7acd142e12865d9f4a918fee07">LlaCoor_i</a>
+: <a class="el" href="structLlaCoor__i.html#a083f5d7acd142e12865d9f4a918fee07">LlaCoor_i</a>
 , <a class="el" href="struct__navdata__gps__t.html#ae9f755368b000e97bde1028a1681ccc1">_navdata_gps_t</a>
+, <a class="el" href="structLlaCoor__d.html#aef3141e3b81b82399e4a774f322ba9ff">LlaCoor_d</a>
+, <a class="el" href="structLlaCoor__f.html#ace542562586741aeb022a5a57c30dea5">LlaCoor_f</a>
 </li>
 <li>lat0
 : <a class="el" href="struct__navdata__gps__t.html#adf619f5e81d5792bc19b3728faf23602">_navdata_gps_t</a>
@@ -179,8 +197,14 @@ $(document).ready(function(){initNavTree('functions_vars_0x6c.html','');});
 <li>latitude
 : <a class="el" href="structsirf__msg__41.html#a4cd261f96b791f303bb93acfb82acf60">sirf_msg_41</a>
 </li>
+<li>lb
+: <a class="el" href="structinv__gains.html#aaa4ffcc9559221b3fd61bc11d0ea5c8a">inv_gains</a>
+</li>
 <li>lcr
 : <a class="el" href="structuartRegs__t.html#a36ade6e05d5dd5ad6e1ffa9edcb74430">uartRegs_t</a>
+</li>
+<li>LE
+: <a class="el" href="structinv__correction__gains.html#a82631b541264791d9d116f8043e55e36">inv_correction_gains</a>
 </li>
 <li>len
 : <a class="el" href="structi2c__msg.html#a10d1943df9a527109bf60733baf7b0a4">i2c_msg</a>
@@ -213,10 +237,10 @@ $(document).ready(function(){initNavTree('functions_vars_0x6c.html','');});
 : <a class="el" href="group__state__position.html#ga681db22a9b5840547bf23a6fbceb4425">State</a>
 </li>
 <li>lon
-: <a class="el" href="structLlaCoor__f.html#a92e1d4633b74c620a7e8bf49e851330e">LlaCoor_f</a>
-, <a class="el" href="structLlaCoor__i.html#ad6a02c197a16ad76cf794e6e4935f5c9">LlaCoor_i</a>
-, <a class="el" href="struct__navdata__gps__t.html#a62ffdebe89d44a7a20ae1ebeaca27681">_navdata_gps_t</a>
+: <a class="el" href="struct__navdata__gps__t.html#a62ffdebe89d44a7a20ae1ebeaca27681">_navdata_gps_t</a>
 , <a class="el" href="structLlaCoor__d.html#af2b0669dd11260aaa4c54a462344852a">LlaCoor_d</a>
+, <a class="el" href="structLlaCoor__f.html#a92e1d4633b74c620a7e8bf49e851330e">LlaCoor_f</a>
+, <a class="el" href="structLlaCoor__i.html#ad6a02c197a16ad76cf794e6e4935f5c9">LlaCoor_i</a>
 </li>
 <li>lon0
 : <a class="el" href="struct__navdata__gps__t.html#a63e6e03caf84ffc5c900a31586b18f6f">_navdata_gps_t</a>
@@ -230,6 +254,12 @@ $(document).ready(function(){initNavTree('functions_vars_0x6c.html','');});
 <li>longitudinal_correction
 : <a class="el" href="structInfrared.html#a769cb4dc22ec955d0c915ad8106fff26">Infrared</a>
 </li>
+<li>loop_gain
+: <a class="el" href="structSecondOrderLowPass__int.html#a02d36b80f8fe1f244e6ef09b353f2de7">SecondOrderLowPass_int</a>
+</li>
+<li>lost_imu_frames
+: <a class="el" href="structnavdata__port.html#ac1faa18b825f82c36551535dddd15763">navdata_port</a>
+</li>
 <li>LostFrameCnt
 : <a class="el" href="structSpektrumStateStruct.html#ae73eb7b5b6d2fbc1ebf98416b9959d94">SpektrumStateStruct</a>
 </li>
@@ -238,6 +268,14 @@ $(document).ready(function(){initNavTree('functions_vars_0x6c.html','');});
 </li>
 <li>low_noise_cnt
 : <a class="el" href="structAhrsAligner.html#a722570b8e5c7077bf64bfd184c017cd6">AhrsAligner</a>
+</li>
+<li>lp1
+: <a class="el" href="structButterworth4LowPass.html#ae7fd6d05b7f234f717dddfadf4bb0f52">Butterworth4LowPass</a>
+, <a class="el" href="structButterworth4LowPass__int.html#a93b9c1290a8db1f57f92da352d940489">Butterworth4LowPass_int</a>
+</li>
+<li>lp2
+: <a class="el" href="structButterworth4LowPass.html#a3019a2e32f68d0a90956b69b4d0a28f2">Butterworth4LowPass</a>
+, <a class="el" href="structButterworth4LowPass__int.html#abf8bfdef66a33d7dac4225bd8e7372a2">Butterworth4LowPass_int</a>
 </li>
 <li>lp_accel
 : <a class="el" href="structAhrsAligner.html#abfbd315f6a7fc5b98831eb3741d07e55">AhrsAligner</a>
@@ -249,6 +287,9 @@ $(document).ready(function(){initNavTree('functions_vars_0x6c.html','');});
 <li>lp_mag
 : <a class="el" href="structAhrsAligner.html#aaf9f84dd40ecc27b22541b3e22096c98">AhrsAligner</a>
 </li>
+<li>lp_mode
+: <a class="el" href="structLsm303dlhcAccConfig.html#ab0c8fc359b92fcd79cb6a3c68f5c3397">Lsm303dlhcAccConfig</a>
+</li>
 <li>lsbfirst
 : <a class="el" href="structlocm3__spi__comm.html#a5813f7a2cb1fe7061dc655a1abc91699">locm3_spi_comm</a>
 </li>
@@ -257,28 +298,33 @@ $(document).ready(function(){initNavTree('functions_vars_0x6c.html','');});
 </li>
 <li>ltp_accel
 : <a class="el" href="structInsInt.html#ae19fc5aab05a383cb10c89ad6da2840a">InsInt</a>
-, <a class="el" href="structInsArdrone2.html#a57b8078a44f87af30b5619d03108494f">InsArdrone2</a>
+, <a class="el" href="structInsGpsPassthrough.html#a31aa1577566becbec87293decec89105">InsGpsPassthrough</a>
+, <a class="el" href="structInsArdrone2.html#aee888f626f1ecadf757af4fa4b4870c4">InsArdrone2</a>
 </li>
 <li>ltp_def
 : <a class="el" href="structInsArdrone2.html#a3c91695872832b3b6daad84f56148454">InsArdrone2</a>
+, <a class="el" href="structInsGpsPassthrough.html#a8b1c6c77fe65d1a14ab4b711868dac94">InsGpsPassthrough</a>
 , <a class="el" href="structInsInt.html#a3798a9f466569b33fe7c582214b9ca76">InsInt</a>
 </li>
 <li>ltp_initialized
-: <a class="el" href="structInsArdrone2.html#ad711c54f76bf620bd1741c0670b1f853">InsArdrone2</a>
-, <a class="el" href="structInsInt.html#a5a6047530a0cbf266c6d8cafd5009f35">InsInt</a>
+: <a class="el" href="structInsInt.html#a5a6047530a0cbf266c6d8cafd5009f35">InsInt</a>
+, <a class="el" href="structInsArdrone2.html#ad711c54f76bf620bd1741c0670b1f853">InsArdrone2</a>
+, <a class="el" href="structInsGpsPassthrough.html#aa9c32544cf0ba9cd75c4ecac73bc29f8">InsGpsPassthrough</a>
 </li>
 <li>ltp_of_ecef
-: <a class="el" href="structLtpDef__i.html#ab31ec1d7b6313f91cb7d4c4e973a4219">LtpDef_i</a>
+: <a class="el" href="structLtpDef__f.html#a908ef9c9a408a734f41b7dedc4cce995">LtpDef_f</a>
+, <a class="el" href="structLtpDef__i.html#ab31ec1d7b6313f91cb7d4c4e973a4219">LtpDef_i</a>
 , <a class="el" href="structLtpDef__d.html#a5bc74e13434be179b097d3c7baf456e0">LtpDef_d</a>
-, <a class="el" href="structLtpDef__f.html#a908ef9c9a408a734f41b7dedc4cce995">LtpDef_f</a>
 </li>
 <li>ltp_pos
 : <a class="el" href="structInsInt.html#a8c79f80a571473ffebea9409c9eb044e">InsInt</a>
+, <a class="el" href="structInsGpsPassthrough.html#aeb61c822b0a917c1cb2232bb5d794e6d">InsGpsPassthrough</a>
 , <a class="el" href="structInsArdrone2.html#aebf8607620f7e19d2bcf57584b4aea2a">InsArdrone2</a>
 </li>
 <li>ltp_speed
 : <a class="el" href="structInsInt.html#a926aac03155fa6277ecb06540e034314">InsInt</a>
-, <a class="el" href="structInsArdrone2.html#a9f87f61db562fa41d33a6c039de5a6e8">InsArdrone2</a>
+, <a class="el" href="structInsGpsPassthrough.html#a25a266a515ce71819522f12ef6d99f42">InsGpsPassthrough</a>
+, <a class="el" href="structInsArdrone2.html#aad228471f63bf34320db341573dcb739">InsArdrone2</a>
 </li>
 <li>ltp_to_body_quat
 : <a class="el" href="structAhrsMlkf.html#acd8a59685835f428a506aa3c0510eb34">AhrsMlkf</a>
@@ -289,17 +335,17 @@ $(document).ready(function(){initNavTree('functions_vars_0x6c.html','');});
 </li>
 <li>ltp_to_imu_quat
 : <a class="el" href="structAhrsARDrone.html#a91f17a0af5df256733f4cf36db43d3bf">AhrsARDrone</a>
-, <a class="el" href="structAhrsIntCmplQuat.html#aab69fef64028a7a3f3ae3249f644b46f">AhrsIntCmplQuat</a>
 , <a class="el" href="structAhrsFloatCmpl.html#aa55b72aff2e4f10587e7bbd90da4b418">AhrsFloatCmpl</a>
-, <a class="el" href="structAhrsMlkf.html#adcf3012d83dd9bb018d8c9ac307c77a5">AhrsMlkf</a>
+, <a class="el" href="structAhrsIntCmplQuat.html#aab69fef64028a7a3f3ae3249f644b46f">AhrsIntCmplQuat</a>
 , <a class="el" href="structAhrsFloatQuat.html#af6bd0d687f89d483baa778e1ebf31cdd">AhrsFloatQuat</a>
+, <a class="el" href="structAhrsMlkf.html#adcf3012d83dd9bb018d8c9ac307c77a5">AhrsMlkf</a>
 </li>
 <li>ltp_to_imu_rmat
 : <a class="el" href="structAhrsFloatCmpl.html#a1c60d5daaefd2376ad97c5fe072ce878">AhrsFloatCmpl</a>
 </li>
 <li>ltp_vel_norm
-: <a class="el" href="structAhrsFloatCmpl.html#aa634b9c59a692e01a3b2b5d3d98c26ac">AhrsFloatCmpl</a>
-, <a class="el" href="structAhrsIntCmplQuat.html#a95146d654dfe3c9fbdb3a298667bb28c">AhrsIntCmplQuat</a>
+: <a class="el" href="structAhrsIntCmplQuat.html#a95146d654dfe3c9fbdb3a298667bb28c">AhrsIntCmplQuat</a>
+, <a class="el" href="structAhrsFloatCmpl.html#aa634b9c59a692e01a3b2b5d3d98c26ac">AhrsFloatCmpl</a>
 </li>
 <li>ltp_vel_norm_valid
 : <a class="el" href="structAhrsFloatCmpl.html#ab7a89db70843c70b83fd358e881b5e7c">AhrsFloatCmpl</a>
@@ -311,13 +357,16 @@ $(document).ready(function(){initNavTree('functions_vars_0x6c.html','');});
 <li>lut_err_reg
 : <a class="el" href="structcan__accept__Regs__t.html#ac8311f647b75a7b740445675a8ea199a">can_accept_Regs_t</a>
 </li>
+<li>lv
+: <a class="el" href="structinv__gains.html#a1fac16851665ae96a0eb04438ff7a0c8">inv_gains</a>
+</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:14 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:21 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -136,27 +136,45 @@ $(document).ready(function(){initNavTree('omap_2mcu__periph_2uart__arch_8h_sourc
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">// for definition of baud rates</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;termios.h&gt;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="omap_2mcu__periph_2uart__arch_8h.html#a96029440e99d43da3d7c09b458bc5615">   34</a></span>&#160;<span class="preprocessor">#define UART1_irq_handler usart1_irq_handler</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="omap_2mcu__periph_2uart__arch_8h.html#a786917fc335789b0bd08d1d5d4fc18f6">   35</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UART2_irq_handler usart2_irq_handler</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="omap_2mcu__periph_2uart__arch_8h.html#ae44c83f7073063e28df2eae2da20c10b">   36</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UART3_irq_handler usart3_irq_handler</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="omap_2mcu__periph_2uart__arch_8h.html#a08ea791b3b82248c47974b1c1220ad62">   37</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UART5_irq_handler usart5_irq_handler</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#if defined USE_UART0 || OVERRIDE_UART0_IRQ_HANDLER</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="keywordtype">void</span> uart0_handler(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#if defined USE_UART1 || OVERRIDE_UART1_IRQ_HANDLER</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="keywordtype">void</span> uart1_handler(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* UART_ARCH_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">// for conversion between linux baud rate definition and actual speed</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="omap_2mcu__periph_2uart__arch_8h.html#a5bffc785e3d573a3d06ea17334623162">   35</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="omap_2mcu__periph_2uart__arch_8h.html#a5bffc785e3d573a3d06ea17334623162">uart_speed</a>(<span class="keywordtype">int</span> def) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordflow">switch</span> (def) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="lpc21_2mcu__periph_2uart__arch_8h.html#a36fdf3b468aa37c932c5feb0f3a9d7d7">B1200</a>: <span class="keywordflow">return</span> 1200;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="lpc21_2mcu__periph_2uart__arch_8h.html#af5bd4045b436cba08feb96e15994c04b">B2400</a>: <span class="keywordflow">return</span> 2400;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="lpc21_2mcu__periph_2uart__arch_8h.html#a3b0ce0abd5ad4af8d485c843c9bab66c">B4800</a>: <span class="keywordflow">return</span> 4800;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="lpc21_2mcu__periph_2uart__arch_8h.html#ad0539916b8412eb7ddfb9ae02aff0853">B9600</a>: <span class="keywordflow">return</span> 9600;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="lpc21_2mcu__periph_2uart__arch_8h.html#ae9baab0dacc8d414681e1cb5c354a058">B19200</a>: <span class="keywordflow">return</span> 19200;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="lpc21_2mcu__periph_2uart__arch_8h.html#ab282ae5b7fb59155ee42d1b6c9a80683">B38400</a>: <span class="keywordflow">return</span> 38400;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="lpc21_2mcu__periph_2uart__arch_8h.html#a4bde6a10c31adfe1959fb9724e13029a">B57600</a>: <span class="keywordflow">return</span> 57600;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="lpc21_2mcu__periph_2uart__arch_8h.html#aef3a1340ea0fba1573691a9e74a43d11">B115200</a>: <span class="keywordflow">return</span> 115200;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="lpc21_2mcu__periph_2uart__arch_8h.html#aa0a8a3b09c593c7be5bfbbeb09f14d76">B230400</a>: <span class="keywordflow">return</span> 230400;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="stm32_2mcu__periph_2uart__arch_8h.html#ae2d3cdb046f933a4a6ccd5497516c2a5">B921600</a>: <span class="keywordflow">return</span> 921600;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">default</span>: <span class="keywordflow">return</span> 9600;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="omap_2mcu__periph_2uart__arch_8h.html#ac9378c8432472f49ced54ebd148d7af1">   50</a></span>&#160;<span class="preprocessor">#define UART_SPEED(_def) uart_speed(_def)</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="omap_2mcu__periph_2uart__arch_8h.html#a96029440e99d43da3d7c09b458bc5615">   52</a></span>&#160;<span class="preprocessor">#define UART1_irq_handler usart1_irq_handler</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="omap_2mcu__periph_2uart__arch_8h.html#a786917fc335789b0bd08d1d5d4fc18f6">   53</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UART2_irq_handler usart2_irq_handler</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="omap_2mcu__periph_2uart__arch_8h.html#ae44c83f7073063e28df2eae2da20c10b">   54</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UART3_irq_handler usart3_irq_handler</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="omap_2mcu__periph_2uart__arch_8h.html#a08ea791b3b82248c47974b1c1220ad62">   55</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UART5_irq_handler usart5_irq_handler</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#if USE_UART0</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="keywordtype">void</span> uart0_handler(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#if USE_UART1</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="keywordtype">void</span> uart1_handler(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* UART_ARCH_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_05bb9bcacf5fa0e2669053a6f23a5278.html">omap</a></li><li class="navelem"><a class="el" href="dir_db33ee18edb0b90d0e8973c246d257bc.html">mcu_periph</a></li><li class="navelem"><a class="el" href="omap_2mcu__periph_2uart__arch_8h.html">uart_arch.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:07 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:36 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

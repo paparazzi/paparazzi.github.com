@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -110,8 +110,8 @@ $(document).ready(function(){initNavTree('my__debug__servo_8h_source.html','');}
 <a href="my__debug__servo_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MY_DEBUG_SERVO_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MY_DEBUG_SERVO_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;libopencm3/stm32/f1/gpio.h&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;libopencm3/stm32/f1/rcc.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;libopencm3/stm32/gpio.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;libopencm3/stm32/rcc.h&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">/* using servo 2 connector as debug */</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('my__debug__servo_8h_source.html','');}
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="my__debug__servo_8h.html#a6c509951ee2deda34eb41b5524798d41">   35</a></span>&#160;<span class="preprocessor">#define DEBUG_SERVO1_INIT() {                                           \</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">    </span><span class="comment">/* S1: PC6    S2: PC7    S3: PC8 */</span><span class="preprocessor">                                 \</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">    GPIOC_BSRR = GPIO6 | GPIO7 | GPIO8 ;                                \</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">    rcc_peripheral_enable_clock(&amp;RCC_APB2ENR, RCC_APB2ENR_IOPCEN);      \</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">    rcc_periph_clock_enable(RCC_GPIOC);                                 \</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">    gpio_set_mode(GPIOC, GPIO_MODE_OUTPUT_50_MHZ,                       \</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">                  GPIO_CNF_OUTPUT_PUSHPULL, GPIO6 | GPIO7 | GPIO8);     \</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">    DEBUG_S1_OFF();                                                     \</span></div>
@@ -155,12 +155,12 @@ $(document).ready(function(){initNavTree('my__debug__servo_8h_source.html','');}
 <div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="my__debug__servo_8h.html#a46708ae8b17b722c2c57f0c4de10d75a">   46</a></span>&#160;<span class="preprocessor">#define DEBUG_SERVO2_INIT() {                                           \</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">    </span><span class="comment">/* S4: PC9 */</span><span class="preprocessor">                                                       \</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">    GPIOC_BSRR = GPIO9;                                                 \</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">    rcc_peripheral_enable_clock(&amp;RCC_APB2ENR, RCC_APB2ENR_IOPCEN);      \</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">    rcc_periph_clock_enable(RCC_GPIOC);                                 \</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">    gpio_set_mode(GPIOC, GPIO_MODE_OUTPUT_50_MHZ,                       \</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">                  GPIO_CNF_OUTPUT_PUSHPULL, GPIO9);                     \</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">    </span><span class="comment">/* S5: PB8 and S6: PB9 */</span><span class="preprocessor">                                           \</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">    GPIOB_BSRR = GPIO8 | GPIO9;                                         \</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">    rcc_peripheral_enable_clock(&amp;RCC_APB2ENR, RCC_APB2ENR_IOPBEN);      \</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">    rcc_periph_clock_enable(RCC_GPIOB);                                 \</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">    gpio_set_mode(GPIOB, GPIO_MODE_OUTPUT_50_MHZ,                       \</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">                  GPIO_CNF_OUTPUT_PUSHPULL, GPIO8 | GPIO9);             \</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">    DEBUG_S4_OFF();                                                     \</span></div>
@@ -176,7 +176,7 @@ $(document).ready(function(){initNavTree('my__debug__servo_8h_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="my__debug__servo_8h.html">my_debug_servo.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:07 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:37 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

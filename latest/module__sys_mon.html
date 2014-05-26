@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -175,9 +175,9 @@ Raw sys_mon.xml file:</h2>
 <div class="line">- @b periodic_time : time between two calls of the modules_periodic_task (averaged over 1s)</div>
 <div class="line">- @b periodic_time_min : minimum time between two calls of the modules_periodic_task() during the last second</div>
 <div class="line">- @b periodic_time_max : maximum time between two calls of the modules_periodic_task() during the last second</div>
-<div class="line">- @b <a class="code" href="sys__mon_8c.html#a75e3b171aa3316da1718659477ca3baf">periodic_cycle</a> : time it took to execute the <a class="code" href="uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> periodic functions (averaged over 1s)</div>
-<div class="line">- @b periodic_cycle_min : minimum time it took to execute the <a class="code" href="uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> periodic functions during the last second</div>
-<div class="line">- @b periodic_cycle_max : maximum time it took to execute the <a class="code" href="uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> periodic functions during the last second</div>
+<div class="line">- @b <a class="code" href="sys__mon_8c.html#a75e3b171aa3316da1718659477ca3baf">periodic_cycle</a> : time it took to execute the <a class="code" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> periodic functions (averaged over 1s)</div>
+<div class="line">- @b periodic_cycle_min : minimum time it took to execute the <a class="code" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> periodic functions during the last second</div>
+<div class="line">- @b periodic_cycle_max : maximum time it took to execute the <a class="code" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> periodic functions during the last second</div>
 <div class="line">- @b event_number : number of times the event loop was called during the last second</div>
 <div class="line">- @b cpu_load : rough estimate of cpu load (averaged over 1 sec)</div>
 <div class="line"></div>
@@ -186,7 +186,7 @@ Raw sys_mon.xml file:</h2>
 <div class="line">The periodic_cycle_max should not be over the periodic_time, otherwise in at least one cycle it took longer to calculate everything and the next one was slightly delayed.</div>
 <div class="line"></div>
 <div class="line"></div>
-<div class="line">The <a class="code" href="sys__mon_8c.html#ac703cfec1b447f18605d58a9c3a0f856" title="Global system monitor data (averaged over 1 sec)">sys_mon</a> module has to run at the full <a class="code" href="uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> frequency!</div>
+<div class="line">The <a class="code" href="sys__mon_8c.html#ac703cfec1b447f18605d58a9c3a0f856" title="Global system monitor data (averaged over 1 sec)">sys_mon</a> module has to run at the full <a class="code" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> frequency!</div>
 <div class="line"></div>
 <div class="line">So either don<span class="stringliteral">&#39;t specify a main_freq parameter for the modules node or set your actual main frequency</span></div>
 <div class="line"><span class="stringliteral">    &lt;/description&gt;</span></div>
@@ -209,7 +209,7 @@ Raw sys_mon.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:12 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:10 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

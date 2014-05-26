@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('met__module_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="met__module_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2sensors_2met__module_8h" alt=""/></div>
 <map name="sw_2airborne_2modules_2sensors_2met__module_8h" id="sw_2airborne_2modules_2sensors_2met__module_8h">
-<area shape="rect" id="node5" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API" alt="" coords="60,99,108,127"/><area shape="rect" id="node7" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="132,99,257,127"/></map>
+<area shape="rect" id="node5" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API" alt="" coords="28,99,81,127"/><area shape="rect" id="node9" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="161,99,300,127"/></map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('met__module_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="met__module_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2sensors_2met__module_8hdep" alt=""/></div>
 <map name="sw_2airborne_2modules_2sensors_2met__module_8hdep" id="sw_2airborne_2modules_2sensors_2met__module_8hdep">
-<area shape="rect" id="node3" href="airspeed__otf_8c.html" title="UART interface for Aeroprobe On&#45;The&#45;Fly! air data computer." alt="" coords="5,99,163,143"/></map>
+<area shape="rect" id="node3" href="airspeed__otf_8c.html" title="UART interface for Aeroprobe On&#45;The&#45;Fly! air data computer." alt="" coords="8,99,176,143"/></map>
 </div>
 </div>
 <p><a href="met__module_8h_source.html">Go to the source code of this file.</a></p>
@@ -143,8 +143,8 @@ Macros</h2></td></tr>
 <tr class="memitem:a26e6296737897d0b414705650d900fc0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="met__module_8h.html#a26e6296737897d0b414705650d900fc0">MetLink</a>(_x)&#160;&#160;&#160;<a class="el" href="met__module_8h.html#a627c2e8ba921ae9dc63a8b354c5becd2">_MetLink</a>(MET_LINK, _x)</td></tr>
 <tr class="memitem:a38c8b0c5097cc73e235f57b6e207dacc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="met__module_8h.html#a38c8b0c5097cc73e235f57b6e207dacc">MetBuffer</a>()&#160;&#160;&#160;<a class="el" href="met__module_8h.html#a26e6296737897d0b414705650d900fc0">MetLink</a>(ChAvailable())</td></tr>
 <tr class="memitem:a0d90337932a2d91aadcd594f53bbede0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="met__module_8h.html#a0d90337932a2d91aadcd594f53bbede0">ReadMetBuffer</a>()&#160;&#160;&#160;{ while (<a class="el" href="met__module_8h.html#a26e6296737897d0b414705650d900fc0">MetLink</a>(ChAvailable())&amp;&amp;!met_msg_received) parse_met_buffer(<a class="el" href="met__module_8h.html#a26e6296737897d0b414705650d900fc0">MetLink</a>(Getch())); }</td></tr>
-<tr class="memitem:ac8da7d57fd856850000c369aae9761a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="met__module_8h.html#ac8da7d57fd856850000c369aae9761a9">MetSend1</a>(<a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>)&#160;&#160;&#160;<a class="el" href="met__module_8h.html#a26e6296737897d0b414705650d900fc0">MetLink</a>(Transmit(<a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>))</td></tr>
-<tr class="memitem:ac7eb0f3d418e9837ff5ee1fad3b91af6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="met__module_8h.html#ac7eb0f3d418e9837ff5ee1fad3b91af6">MetUartSend1</a>(<a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>)&#160;&#160;&#160;<a class="el" href="met__module_8h.html#ac8da7d57fd856850000c369aae9761a9">MetSend1</a>(<a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>)</td></tr>
+<tr class="memitem:ac8da7d57fd856850000c369aae9761a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="met__module_8h.html#ac8da7d57fd856850000c369aae9761a9">MetSend1</a>(c)&#160;&#160;&#160;<a class="el" href="met__module_8h.html#a26e6296737897d0b414705650d900fc0">MetLink</a>(Transmit(c))</td></tr>
+<tr class="memitem:ac7eb0f3d418e9837ff5ee1fad3b91af6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="met__module_8h.html#ac7eb0f3d418e9837ff5ee1fad3b91af6">MetUartSend1</a>(c)&#160;&#160;&#160;<a class="el" href="met__module_8h.html#ac8da7d57fd856850000c369aae9761a9">MetSend1</a>(c)</td></tr>
 <tr class="memitem:aa4ce83df68841849008efac36a05e478"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="met__module_8h.html#aa4ce83df68841849008efac36a05e478">MetSend</a>(_dat, _len)&#160;&#160;&#160;{ for (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = 0; i&lt; (_len); i++) <a class="el" href="met__module_8h.html#ac8da7d57fd856850000c369aae9761a9">MetSend1</a>(_dat[i]); };</td></tr>
 <tr class="memitem:aa337ffbe8cf37b9f56824c1fe9037641"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="met__module_8h.html#aa337ffbe8cf37b9f56824c1fe9037641">MetUartSetBaudrate</a>(_b)&#160;&#160;&#160;<a class="el" href="met__module_8h.html#a26e6296737897d0b414705650d900fc0">MetLink</a>(SetBaudrate(_b))</td></tr>
 <tr class="memitem:a8c80d4c735b00cea3fa682112f517579"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="met__module_8h.html#a8c80d4c735b00cea3fa682112f517579">MetUartRunning</a>&#160;&#160;&#160;<a class="el" href="met__module_8h.html#a26e6296737897d0b414705650d900fc0">MetLink</a>(TxRunning)</td></tr>
@@ -283,8 +283,8 @@ Macros</h2></td></tr>
           <td class="memname">#define MetSend1</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="met__module_8h.html#a26e6296737897d0b414705650d900fc0">MetLink</a>(Transmit(<a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>))</td>
+          <td class="paramname">c</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="met__module_8h.html#a26e6296737897d0b414705650d900fc0">MetLink</a>(Transmit(c))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -315,8 +315,8 @@ Macros</h2></td></tr>
           <td class="memname">#define MetUartSend1</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="met__module_8h.html#ac8da7d57fd856850000c369aae9761a9">MetSend1</a>(<a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>)</td>
+          <td class="paramname">c</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="met__module_8h.html#ac8da7d57fd856850000c369aae9761a9">MetSend1</a>(c)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -366,7 +366,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="met__module_8h.html">met_module.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:11 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:03 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

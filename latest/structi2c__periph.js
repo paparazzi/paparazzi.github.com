@@ -7,5 +7,6 @@ var structi2c__periph =
     [ "status", "structi2c__periph.html#af293727ce3c1ee16e7b5f51ac5e8ce85", null ],
     [ "trans", "structi2c__periph.html#ad3bd507a4aa9e144366dc2c8a6291240", null ],
     [ "trans_extract_idx", "structi2c__periph.html#a4e572be9f28f1037d7c749a223329aaf", null ],
-    [ "trans_insert_idx", "structi2c__periph.html#a63002740b27aaaf9d847b17001302d9c", null ]
+    [ "trans_insert_idx", "structi2c__periph.html#a63002740b27aaaf9d847b17001302d9c", null ],
+    [ "watchdog", "structi2c__periph.html#adb02b71a163584f08afeba429abda130", null ]
 ];

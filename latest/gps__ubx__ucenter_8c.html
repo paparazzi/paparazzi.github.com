@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -117,6 +117,7 @@ $(document).ready(function(){initNavTree('gps__ubx__ucenter_8c.html','');});
 <div class="textblock"><code>#include &quot;<a class="el" href="gps__ubx__ucenter_8h_source.html">gps_ubx_ucenter.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="gps__ubx_8h_source.html">subsystems/gps/gps_ubx.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br/>
+<code>#include &lt;stdio.h&gt;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for gps_ubx_ucenter.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -124,13 +125,14 @@ $(document).ready(function(){initNavTree('gps__ubx__ucenter_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__ubx__ucenter_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2gps_2gps__ubx__ucenter_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2gps_2gps__ubx__ucenter_8c" id="sw_2airborne_2modules_2gps_2gps__ubx__ucenter_8c">
-<area shape="rect" id="node3" href="gps__ubx__ucenter_8h.html" title="Configure Ublox GPS." alt="" coords="5,387,136,415"/><area shape="rect" id="node7" href="gps__ubx_8h.html" title="UBX protocol specific code." alt="" coords="168,99,309,143"/><area shape="rect" id="node16" href="downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="703,99,844,143"/><area shape="rect" id="node9" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="236,201,361,229"/><area shape="rect" id="node18" href="inttypes_8h.html" title="inttypes.h" alt="" coords="920,473,997,501"/><area shape="rect" id="node26" href="udp_8h.html" title="subsystems/datalink\l/udp.h" alt="" coords="472,193,613,237"/><area shape="rect" id="node34" href="pprz__transport_8h.html" title="Extra datalink using PPRZ protocol." alt="" coords="443,286,584,330"/><area shape="rect" id="node44" href="xbee_8h.html" title="subsystems/datalink\l/xbee.h" alt="" coords="771,193,912,237"/><area shape="rect" id="node51" href="w5100_8h.html" title="subsystems/datalink\l/w5100.h" alt="" coords="955,193,1096,237"/><area shape="rect" id="node28" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="496,379,637,423"/><area shape="rect" id="node39" href="transport_8h.html" title="generic transport header" alt="" coords="888,379,1029,423"/><area shape="rect" id="node48" href="xbee24_8h.html" title="subsystems/datalink\l/xbee24.h" alt="" coords="771,286,912,330"/></map>
+<area shape="rect" id="node3" href="gps__ubx__ucenter_8h.html" title="Configure Ublox GPS." alt="" coords="5,387,147,415"/><area shape="rect" id="node7" href="gps__ubx_8h.html" title="UBX protocol specific code." alt="" coords="175,99,327,143"/><area shape="rect" id="node16" href="downlink_8h.html" title="Common code for AP and FBW telemetry." alt="" coords="659,99,811,143"/><area shape="rect" id="node9" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="181,201,320,229"/><area shape="rect" id="node18" href="inttypes_8h.html" title="inttypes.h" alt="" coords="841,481,927,509"/><area shape="rect" id="node26" href="udp_8h.html" title="subsystems/datalink\l/udp.h" alt="" coords="344,193,496,237"/><area shape="rect" id="node34" href="pprz__transport_8h.html" title="Extra datalink using PPRZ protocol." alt="" coords="624,286,776,330"/><area shape="rect" id="node44" href="pprzlog__transport_8h.html" title="Building and Paparazzi frames with timestamp for data logger." alt="" coords="1132,286,1284,330"/><area shape="rect" id="node56" href="xbee_8h.html" title="subsystems/datalink\l/xbee.h" alt="" coords="747,193,899,237"/><area shape="rect" id="node63" href="w5100_8h.html" title="W5100 ethernet chip I/O." alt="" coords="571,193,723,237"/><area shape="rect" id="node28" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="485,379,637,423"/><area shape="rect" id="node39" href="transport_8h.html" title="generic transport header" alt="" coords="763,379,915,423"/><area shape="rect" id="node46" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1125,387,1296,415"/><area shape="rect" id="node60" href="xbee24_8h.html" title="subsystems/datalink\l/xbee24.h" alt="" coords="901,286,1053,330"/></map>
 </div>
 </div>
 <p><a href="gps__ubx__ucenter_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a88edd2aa4feabff4af21a997d5d8aa23"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a88edd2aa4feabff4af21a997d5d8aa23">DEBUG_PRINT</a>(...)&#160;&#160;&#160;{}</td></tr>
 <tr class="memitem:a55e4a26dfdb97bf102948ba9e4afd5bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a55e4a26dfdb97bf102948ba9e4afd5bf">GPS_UBX_UCENTER_STATUS_STOPPED</a>&#160;&#160;&#160;0</td></tr>
 <tr class="memitem:a60aeaa85caf0b737d92232109ea198b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a60aeaa85caf0b737d92232109ea198b8">GPS_UBX_UCENTER_STATUS_AUTOBAUD</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memitem:a646a4fe1702180d375fff1979dc34ad4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a646a4fe1702180d375fff1979dc34ad4">GPS_UBX_UCENTER_STATUS_CONFIG</a>&#160;&#160;&#160;2</td></tr>
@@ -138,6 +140,7 @@ Macros</h2></td></tr>
 <tr class="memitem:a5f64b650a79b8c6bf7659a95d763ffc5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a5f64b650a79b8c6bf7659a95d763ffc5">GPS_UBX_UCENTER_REPLY_ACK</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memitem:a4681c16e99b7e0536877058cb7f016c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a4681c16e99b7e0536877058cb7f016c3">GPS_UBX_UCENTER_REPLY_NACK</a>&#160;&#160;&#160;2</td></tr>
 <tr class="memitem:aa065c6ae0656a2ee1271452dc39f6787"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#aa065c6ae0656a2ee1271452dc39f6787">GPS_UBX_UCENTER_REPLY_VERSION</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memitem:afa93862910e4692243db525ee523b634"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#afa93862910e4692243db525ee523b634">GPS_UBX_UCENTER_REPLY_CFG_PRT</a>&#160;&#160;&#160;4</td></tr>
 <tr class="memitem:a8a90f2cd7dab634e840dc14d79431494"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a8a90f2cd7dab634e840dc14d79431494">NAV_DYN_STATIONARY</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memitem:a160ab6bb8aade8f3e23693bdca032c11"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a160ab6bb8aade8f3e23693bdca032c11">NAV_DYN_PEDESTRIAN</a>&#160;&#160;&#160;2</td></tr>
 <tr class="memitem:aaed7b6b96d122200c99b0bbd0e660843"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#aaed7b6b96d122200c99b0bbd0e660843">NAV_DYN_AUTOMOTIVE</a>&#160;&#160;&#160;3</td></tr>
@@ -154,11 +157,20 @@ Macros</h2></td></tr>
 <tr class="memitem:a8f4856f67ba5eb2677bfae371dc9f866"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a8f4856f67ba5eb2677bfae371dc9f866">NAV5_DYN_AIRBORNE_1G</a>&#160;&#160;&#160;6</td></tr>
 <tr class="memitem:a8ba730f20c7616a7756b9d3718d69a5b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a8ba730f20c7616a7756b9d3718d69a5b">NAV5_DYN_AIRBORNE_2G</a>&#160;&#160;&#160;7</td></tr>
 <tr class="memitem:a01bf4bdeba300fb0862f1694ee8f9c8a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a01bf4bdeba300fb0862f1694ee8f9c8a">NAV5_DYN_AIRBORNE_4G</a>&#160;&#160;&#160;8</td></tr>
+<tr class="memitem:aebbf8779525abb9e3be454022b86cb8e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#aebbf8779525abb9e3be454022b86cb8e">GPS_UBX_NAV5_DYNAMICS</a>&#160;&#160;&#160;<a class="el" href="gps__ubx__ucenter_8c.html#a8ba730f20c7616a7756b9d3718d69a5b">NAV5_DYN_AIRBORNE_2G</a></td></tr>
+<tr class="memitem:a8c5cee63eae5fd79cd692b7477c3db2f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a8c5cee63eae5fd79cd692b7477c3db2f">NAV5_MASK</a>&#160;&#160;&#160;0x05</td></tr>
 <tr class="memitem:a1bb4e3a75fea929d9fa82afcc050be4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a1bb4e3a75fea929d9fa82afcc050be4e">NAV5_2D_ONLY</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memitem:af163b9e66520a0429b491db8fe8de61c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#af163b9e66520a0429b491db8fe8de61c">NAV5_3D_ONLY</a>&#160;&#160;&#160;2</td></tr>
 <tr class="memitem:a1d28107542772a43fc57731dc6d7c5ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a1d28107542772a43fc57731dc6d7c5ba">NAV5_AUTO</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memitem:a810d3f74716b113b7e15a8a4a5afc8f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a810d3f74716b113b7e15a8a4a5afc8f4">NAV5_DEFAULT_MIN_ELEV</a>&#160;&#160;&#160;5</td></tr>
+<tr class="memitem:a12b19f5d61d604e670f2aab8808f8091"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a12b19f5d61d604e670f2aab8808f8091">NAV5_DEFAULT_PDOP_MASK</a>&#160;&#160;&#160;25</td></tr>
+<tr class="memitem:a76b2d94ca4800273c972a3035d92e522"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a76b2d94ca4800273c972a3035d92e522">NAV5_DEFAULT_TDOP_MASK</a>&#160;&#160;&#160;25</td></tr>
+<tr class="memitem:a9093413f997379604b10d69a0ac20b9e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a9093413f997379604b10d69a0ac20b9e">NAV5_DEFAULT_P_ACC</a>&#160;&#160;&#160;100</td></tr>
+<tr class="memitem:a23b7aaac08e610f2f4ed125496882b70"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a23b7aaac08e610f2f4ed125496882b70">NAV5_DEFAULT_T_ACC</a>&#160;&#160;&#160;300</td></tr>
+<tr class="memitem:a677904c5a13819723dde01bed622d76a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a677904c5a13819723dde01bed622d76a">NAV5_DEFAULT_STATIC_HOLD_THRES</a>&#160;&#160;&#160;0</td></tr>
 <tr class="memitem:a50857b061398038688f450c0da52583e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a50857b061398038688f450c0da52583e">IGNORED</a>&#160;&#160;&#160;0</td></tr>
 <tr class="memitem:a56701f18aaad537f7fc0e9be309503c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a56701f18aaad537f7fc0e9be309503c3">RESERVED</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:ada3a15a43447b9a942c59c7488723b36"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#ada3a15a43447b9a942c59c7488723b36">UBX_UART_MODE_MASK</a>&#160;&#160;&#160;0x000008D0</td></tr>
 <tr class="memitem:a80ea5ec151a883bb9d4526d7362c0bb2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a80ea5ec151a883bb9d4526d7362c0bb2">UBX_PROTO_MASK</a>&#160;&#160;&#160;0x0001</td></tr>
 <tr class="memitem:ab9aa18b1e00f53f983be44115151c92a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#ab9aa18b1e00f53f983be44115151c92a">NMEA_PROTO_MASK</a>&#160;&#160;&#160;0x0002</td></tr>
 <tr class="memitem:a09dfa2e97e29e6e13d19b924250844f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a09dfa2e97e29e6e13d19b924250844f9">RTCM_PROTO_MASK</a>&#160;&#160;&#160;0x0004</td></tr>
@@ -167,7 +179,7 @@ Macros</h2></td></tr>
 <tr class="memitem:afd76c87654bd547a6b8932b8f798c99f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#afd76c87654bd547a6b8932b8f798c99f">GPS_PORT_UART2</a>&#160;&#160;&#160;0x02</td></tr>
 <tr class="memitem:a3a154417a0097b7eb296e7166d232795"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a3a154417a0097b7eb296e7166d232795">GPS_PORT_USB</a>&#160;&#160;&#160;0x03</td></tr>
 <tr class="memitem:ac78173e2ac3c7b1dd2071157d55cb695"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#ac78173e2ac3c7b1dd2071157d55cb695">GPS_PORT_SPI</a>&#160;&#160;&#160;0x04</td></tr>
-<tr class="memitem:a7726b5b61fb5d30c1a8136f947000248"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a7726b5b61fb5d30c1a8136f947000248">GPS_PORT_ID</a>&#160;&#160;&#160;<a class="el" href="gps__ubx__ucenter_8c.html#ad0bbbfc9dec7878b6f5e0eecc5707928">GPS_PORT_UART1</a></td></tr>
+<tr class="memitem:a64e4c9f31016a5dafb0c6dcf66eacc18"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a64e4c9f31016a5dafb0c6dcf66eacc18">GPS_PORT_RESERVED</a>&#160;&#160;&#160;0x05</td></tr>
 <tr class="memitem:a3ed13ac61b5d7de52e85747628081c35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a3ed13ac61b5d7de52e85747628081c35">__UBX_GPS_BAUD</a>(_u)&#160;&#160;&#160;_u##_BAUD</td></tr>
 <tr class="memitem:a527549e0a11836468a3abf81c3221fef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a527549e0a11836468a3abf81c3221fef">_UBX_GPS_BAUD</a>(_u)&#160;&#160;&#160;<a class="el" href="gps__ubx__ucenter_8c.html#a3ed13ac61b5d7de52e85747628081c35">__UBX_GPS_BAUD</a>(_u)</td></tr>
 <tr class="memitem:a48a7c8b56ee5eb14dafb00e290855eb7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a48a7c8b56ee5eb14dafb00e290855eb7">UBX_GPS_BAUD</a>&#160;&#160;&#160;<a class="el" href="gps__ubx__ucenter_8c.html#a527549e0a11836468a3abf81c3221fef">_UBX_GPS_BAUD</a>(GPS_LINK)</td></tr>
@@ -176,18 +188,24 @@ Macros</h2></td></tr>
 <tr class="memitem:ada44e94c8939b49533535f26af388379"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#ada44e94c8939b49533535f26af388379">GPS_SBAS_RANGING</a>&#160;&#160;&#160;0x01</td></tr>
 <tr class="memitem:a42a9ad7f6ee461f5e79766959dac2777"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a42a9ad7f6ee461f5e79766959dac2777">GPS_SBAS_CORRECTIONS</a>&#160;&#160;&#160;0x02</td></tr>
 <tr class="memitem:ac99cb919825d17a9f31af8d067313d8a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#ac99cb919825d17a9f31af8d067313d8a">GPS_SBAS_INTEGRITY</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="memitem:aace3eb0d2dafedb7211e93bb49f29959"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#aace3eb0d2dafedb7211e93bb49f29959">GPS_SBAS_MAX_SBAS</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:a92fba9c1446fe57d41be6ecfc7ee4045"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a92fba9c1446fe57d41be6ecfc7ee4045">GPS_SBAS_AUTOSCAN</a>&#160;&#160;&#160;0x00</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a3adbb7ebc13de8a91ecb98ae0abc7ab7"><td class="memItemLeft" align="right" valign="top">static bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a3adbb7ebc13de8a91ecb98ae0abc7ab7">gps_ubx_ucenter_autobaud</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> nr)</td></tr>
+<tr class="memdesc:a3adbb7ebc13de8a91ecb98ae0abc7ab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Automatically determine the baudrate of the u-blox module.  <a href="#a3adbb7ebc13de8a91ecb98ae0abc7ab7"></a><br/></td></tr>
 <tr class="memitem:aa9c94d7524259686da8ef21a2affd85c"><td class="memItemLeft" align="right" valign="top">static bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#aa9c94d7524259686da8ef21a2affd85c">gps_ubx_ucenter_configure</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> nr)</td></tr>
 <tr class="memitem:ab3e87f1813c44b35cf8df6774715a4a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#ab3e87f1813c44b35cf8df6774715a4a9">gps_ubx_ucenter_init</a> (void)</td></tr>
 <tr class="memitem:a483da5be54cf6eca071cd6c1ee0e3675"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a483da5be54cf6eca071cd6c1ee0e3675">gps_ubx_ucenter_periodic</a> (void)</td></tr>
 <tr class="memitem:a6cb0d0e14aa4700bc5058890f146ca74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a6cb0d0e14aa4700bc5058890f146ca74">gps_ubx_ucenter_event</a> (void)</td></tr>
+<tr class="memitem:a2122042e2188440dd576442a2f0780be"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a2122042e2188440dd576442a2f0780be">gps_ubx_ucenter_config_port_poll</a> (void)</td></tr>
+<tr class="memdesc:a2122042e2188440dd576442a2f0780be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polls the u-blox port configuration When the payload is omitted (zero length), the configuration for the incoming (currently used) port is reported.  <a href="#a2122042e2188440dd576442a2f0780be"></a><br/></td></tr>
+<tr class="memitem:a5a84e05f666e0f50c30772e4ef95cbdb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a5a84e05f666e0f50c30772e4ef95cbdb">gps_ubx_ucenter_enable_msg</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> class, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> id, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> rate)</td></tr>
+<tr class="memdesc:a5a84e05f666e0f50c30772e4ef95cbdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable u-blox message at desired period.  <a href="#a5a84e05f666e0f50c30772e4ef95cbdb"></a><br/></td></tr>
 <tr class="memitem:a12ef579796da8ac1c9cf48eb423f24b8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a12ef579796da8ac1c9cf48eb423f24b8">gps_ubx_ucenter_config_nav</a> (void)</td></tr>
 <tr class="memitem:ac1011da76f5f001b5595df797f278664"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#ac1011da76f5f001b5595df797f278664">gps_ubx_ucenter_config_port</a> (void)</td></tr>
 <tr class="memitem:affc7f9ed07352c71469f8c6d06703691"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#affc7f9ed07352c71469f8c6d06703691">gps_ubx_ucenter_config_sbas</a> (void)</td></tr>
-<tr class="memitem:a5a84e05f666e0f50c30772e4ef95cbdb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__ucenter_8c.html#a5a84e05f666e0f50c30772e4ef95cbdb">gps_ubx_ucenter_enable_msg</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> class, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> id, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> rate)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -212,7 +230,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00284">284</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00373">373</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
 </div>
 </div>
@@ -230,7 +248,27 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00285">285</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00374">374</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a88edd2aa4feabff4af21a997d5d8aa23"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEBUG_PRINT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em></td><td>)</td>
+          <td>&#160;&#160;&#160;{}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00038">38</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00381">gps_ubx_ucenter_config_port()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00431">gps_ubx_ucenter_configure()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00139">gps_ubx_ucenter_event()</a>, and <a class="el" href="gps__ubx__ucenter_8c_source.html#l00092">gps_ubx_ucenter_periodic()</a>.</p>
 
 </div>
 </div>
@@ -244,23 +282,23 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00274">274</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00366">366</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00381">gps_ubx_ucenter_config_port()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a7726b5b61fb5d30c1a8136f947000248"></a>
+<a class="anchor" id="a64e4c9f31016a5dafb0c6dcf66eacc18"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define GPS_PORT_ID&#160;&#160;&#160;<a class="el" href="gps__ubx__ucenter_8c.html#ad0bbbfc9dec7878b6f5e0eecc5707928">GPS_PORT_UART1</a></td>
+          <td class="memname">#define GPS_PORT_RESERVED&#160;&#160;&#160;0x05</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00281">281</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
-
-<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00292">gps_ubx_ucenter_config_port()</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00371">371</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
 </div>
 </div>
@@ -274,7 +312,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00278">278</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00370">370</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00381">gps_ubx_ucenter_config_port()</a>.</p>
 
 </div>
 </div>
@@ -288,7 +328,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00275">275</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00367">367</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00381">gps_ubx_ucenter_config_port()</a>.</p>
 
 </div>
 </div>
@@ -302,7 +344,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00276">276</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00368">368</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00381">gps_ubx_ucenter_config_port()</a>.</p>
 
 </div>
 </div>
@@ -316,7 +360,25 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00277">277</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00369">369</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00381">gps_ubx_ucenter_config_port()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a92fba9c1446fe57d41be6ecfc7ee4045"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GPS_SBAS_AUTOSCAN&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00419">419</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00421">gps_ubx_ucenter_config_sbas()</a>.</p>
 
 </div>
 </div>
@@ -330,9 +392,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00310">310</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00414">414</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00313">gps_ubx_ucenter_config_sbas()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00421">gps_ubx_ucenter_config_sbas()</a>.</p>
 
 </div>
 </div>
@@ -346,9 +408,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00307">307</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00411">411</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00313">gps_ubx_ucenter_config_sbas()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00421">gps_ubx_ucenter_config_sbas()</a>.</p>
 
 </div>
 </div>
@@ -362,9 +424,25 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00311">311</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00415">415</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00313">gps_ubx_ucenter_config_sbas()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00421">gps_ubx_ucenter_config_sbas()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aace3eb0d2dafedb7211e93bb49f29959"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GPS_SBAS_MAX_SBAS&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00417">417</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00421">gps_ubx_ucenter_config_sbas()</a>.</p>
 
 </div>
 </div>
@@ -378,9 +456,25 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00309">309</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00413">413</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00313">gps_ubx_ucenter_config_sbas()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00421">gps_ubx_ucenter_config_sbas()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aebbf8779525abb9e3be454022b86cb8e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GPS_UBX_NAV5_DYNAMICS&#160;&#160;&#160;<a class="el" href="gps__ubx__ucenter_8c.html#a8ba730f20c7616a7756b9d3718d69a5b">NAV5_DYN_AIRBORNE_2G</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00318">318</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00337">gps_ubx_ucenter_config_nav()</a>.</p>
 
 </div>
 </div>
@@ -394,9 +488,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00289">289</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00378">378</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00342">gps_ubx_ucenter_configure()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00431">gps_ubx_ucenter_configure()</a>.</p>
 
 </div>
 </div>
@@ -410,9 +504,25 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00046">46</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00054">54</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00162">gps_ubx_ucenter_autobaud()</a>, and <a class="el" href="gps__ubx__ucenter_8c_source.html#l00125">gps_ubx_ucenter_event()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00229">gps_ubx_ucenter_autobaud()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00431">gps_ubx_ucenter_configure()</a>, and <a class="el" href="gps__ubx__ucenter_8c_source.html#l00139">gps_ubx_ucenter_event()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afa93862910e4692243db525ee523b634"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GPS_UBX_UCENTER_REPLY_CFG_PRT&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00057">57</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00139">gps_ubx_ucenter_event()</a>.</p>
 
 </div>
 </div>
@@ -426,9 +536,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00047">47</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00055">55</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00125">gps_ubx_ucenter_event()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00139">gps_ubx_ucenter_event()</a>.</p>
 
 </div>
 </div>
@@ -442,9 +552,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00045">45</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00053">53</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00162">gps_ubx_ucenter_autobaud()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00342">gps_ubx_ucenter_configure()</a>, and <a class="el" href="gps__ubx__ucenter_8c_source.html#l00057">gps_ubx_ucenter_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00229">gps_ubx_ucenter_autobaud()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00431">gps_ubx_ucenter_configure()</a>, and <a class="el" href="gps__ubx__ucenter_8c_source.html#l00066">gps_ubx_ucenter_init()</a>.</p>
 
 </div>
 </div>
@@ -458,9 +568,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00048">48</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00056">56</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00125">gps_ubx_ucenter_event()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00139">gps_ubx_ucenter_event()</a>.</p>
 
 </div>
 </div>
@@ -474,9 +584,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00042">42</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00050">50</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00057">gps_ubx_ucenter_init()</a>, and <a class="el" href="gps__ubx__ucenter_8c_source.html#l00083">gps_ubx_ucenter_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00066">gps_ubx_ucenter_init()</a>, and <a class="el" href="gps__ubx__ucenter_8c_source.html#l00092">gps_ubx_ucenter_periodic()</a>.</p>
 
 </div>
 </div>
@@ -490,9 +600,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00043">43</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00051">51</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00083">gps_ubx_ucenter_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00092">gps_ubx_ucenter_periodic()</a>.</p>
 
 </div>
 </div>
@@ -506,9 +616,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00041">41</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00049">49</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00125">gps_ubx_ucenter_event()</a>, and <a class="el" href="gps__ubx__ucenter_8c_source.html#l00083">gps_ubx_ucenter_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00139">gps_ubx_ucenter_event()</a>, and <a class="el" href="gps__ubx__ucenter_8c_source.html#l00092">gps_ubx_ucenter_periodic()</a>.</p>
 
 </div>
 </div>
@@ -522,9 +632,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00249">249</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00334">334</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00252">gps_ubx_ucenter_config_nav()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00337">gps_ubx_ucenter_config_nav()</a>.</p>
 
 </div>
 </div>
@@ -538,7 +648,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00245">245</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00323">323</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
 </div>
 </div>
@@ -552,9 +662,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00246">246</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00324">324</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00252">gps_ubx_ucenter_config_nav()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00337">gps_ubx_ucenter_config_nav()</a>.</p>
 
 </div>
 </div>
@@ -568,7 +678,103 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00247">247</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00325">325</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a810d3f74716b113b7e15a8a4a5afc8f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NAV5_DEFAULT_MIN_ELEV&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00327">327</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00337">gps_ubx_ucenter_config_nav()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9093413f997379604b10d69a0ac20b9e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NAV5_DEFAULT_P_ACC&#160;&#160;&#160;100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00330">330</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00337">gps_ubx_ucenter_config_nav()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a12b19f5d61d604e670f2aab8808f8091"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NAV5_DEFAULT_PDOP_MASK&#160;&#160;&#160;25</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00328">328</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00337">gps_ubx_ucenter_config_nav()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a677904c5a13819723dde01bed622d76a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NAV5_DEFAULT_STATIC_HOLD_THRES&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00332">332</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00337">gps_ubx_ucenter_config_nav()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a23b7aaac08e610f2f4ed125496882b70"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NAV5_DEFAULT_T_ACC&#160;&#160;&#160;300</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00331">331</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00337">gps_ubx_ucenter_config_nav()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a76b2d94ca4800273c972a3035d92e522"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NAV5_DEFAULT_TDOP_MASK&#160;&#160;&#160;25</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00329">329</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00337">gps_ubx_ucenter_config_nav()</a>.</p>
 
 </div>
 </div>
@@ -582,7 +788,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00241">241</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00313">313</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
 </div>
 </div>
@@ -596,9 +802,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00242">242</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
-
-<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00252">gps_ubx_ucenter_config_nav()</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00314">314</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
 </div>
 </div>
@@ -612,7 +816,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00243">243</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00315">315</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
 </div>
 </div>
@@ -626,7 +830,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00239">239</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00311">311</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
 </div>
 </div>
@@ -640,7 +844,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00236">236</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00308">308</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
 </div>
 </div>
@@ -654,7 +858,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00238">238</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00310">310</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
 </div>
 </div>
@@ -668,7 +872,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00235">235</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00307">307</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
 </div>
 </div>
@@ -682,7 +886,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00240">240</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00312">312</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
 </div>
 </div>
@@ -696,7 +900,23 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00237">237</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00309">309</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8c5cee63eae5fd79cd692b7477c3db2f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NAV5_MASK&#160;&#160;&#160;0x05</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00321">321</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00337">gps_ubx_ucenter_config_nav()</a>.</p>
 
 </div>
 </div>
@@ -710,7 +930,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00231">231</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00303">303</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
 </div>
 </div>
@@ -724,9 +944,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00232">232</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00304">304</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00252">gps_ubx_ucenter_config_nav()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00337">gps_ubx_ucenter_config_nav()</a>.</p>
 
 </div>
 </div>
@@ -740,7 +960,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00233">233</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00305">305</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
 </div>
 </div>
@@ -754,7 +974,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00229">229</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00301">301</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
 </div>
 </div>
@@ -768,7 +988,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00228">228</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00300">300</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
 </div>
 </div>
@@ -782,7 +1002,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00230">230</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00302">302</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
 </div>
 </div>
@@ -796,7 +1016,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00227">227</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00299">299</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
 </div>
 </div>
@@ -810,7 +1030,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00271">271</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00363">363</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
 </div>
 </div>
@@ -824,9 +1044,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00250">250</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00335">335</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00252">gps_ubx_ucenter_config_nav()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00337">gps_ubx_ucenter_config_nav()</a>.</p>
 
 </div>
 </div>
@@ -840,7 +1060,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00272">272</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00364">364</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
 </div>
 </div>
@@ -854,9 +1074,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00286">286</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00375">375</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00292">gps_ubx_ucenter_config_port()</a>, and <a class="el" href="gps__ubx__ucenter_8c_source.html#l00342">gps_ubx_ucenter_configure()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00381">gps_ubx_ucenter_config_port()</a>, and <a class="el" href="gps__ubx__ucenter_8c_source.html#l00431">gps_ubx_ucenter_configure()</a>.</p>
 
 </div>
 </div>
@@ -870,9 +1090,25 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00270">270</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00362">362</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00292">gps_ubx_ucenter_config_port()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00381">gps_ubx_ucenter_config_port()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ada3a15a43447b9a942c59c7488723b36"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UBX_UART_MODE_MASK&#160;&#160;&#160;0x000008D0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00360">360</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00381">gps_ubx_ucenter_config_port()</a>.</p>
 
 </div>
 </div>
@@ -899,20 +1135,41 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00162">162</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Automatically determine the baudrate of the u-blox module. </p>
+<p>Only needed when connecting to a UART port on the u-blox. The discovered baudrate is copied to gps_ubx_ucenter.baud_init.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nr</td><td>Autobaud step number to perform </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>FALSE when completed </dd></dl>
 
-<p>References <a class="el" href="lpc21_2mcu__periph_2uart__arch_8h_source.html#l00042">B38400</a>, <a class="el" href="lpc21_2mcu__periph_2uart__arch_8h_source.html#l00039">B4800</a>, <a class="el" href="lpc21_2mcu__periph_2uart__arch_8h_source.html#l00043">B57600</a>, <a class="el" href="lpc21_2mcu__periph_2uart__arch_8h_source.html#l00040">B9600</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00042">gps_ubx_ucenter_struct::baud_init</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00051">gps_ubx_ucenter</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00046">GPS_UBX_UCENTER_REPLY_ACK</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00045">GPS_UBX_UCENTER_REPLY_NONE</a>, <a class="el" href="gps__ubx_8h_source.html#l00168">GpsUartSetBaudrate</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00039">gps_ubx_ucenter_struct::reply</a>, and <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00229">229</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00083">gps_ubx_ucenter_periodic()</a>.</p>
+<p>References <a class="el" href="lpc21_2mcu__periph_2uart__arch_8h_source.html#l00045">B115200</a>, <a class="el" href="lpc21_2mcu__periph_2uart__arch_8h_source.html#l00042">B38400</a>, <a class="el" href="lpc21_2mcu__periph_2uart__arch_8h_source.html#l00039">B4800</a>, <a class="el" href="lpc21_2mcu__periph_2uart__arch_8h_source.html#l00043">B57600</a>, <a class="el" href="lpc21_2mcu__periph_2uart__arch_8h_source.html#l00040">B9600</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00042">gps_ubx_ucenter_struct::baud_init</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00043">gps_ubx_ucenter_struct::baud_run</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00060">gps_ubx_ucenter</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00199">gps_ubx_ucenter_config_port_poll()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00054">GPS_UBX_UCENTER_REPLY_ACK</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00053">GPS_UBX_UCENTER_REPLY_NONE</a>, <a class="el" href="gps__ubx_8h_source.html#l00170">GpsUartSetBaudrate</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00039">gps_ubx_ucenter_struct::reply</a>, and <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>.</p>
+
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00092">gps_ubx_ucenter_periodic()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="gps__ubx__ucenter_8c_a3adbb7ebc13de8a91ecb98ae0abc7ab7_cgraph.png" border="0" usemap="#gps__ubx__ucenter_8c_a3adbb7ebc13de8a91ecb98ae0abc7ab7_cgraph" alt=""/></div>
+<map name="gps__ubx__ucenter_8c_a3adbb7ebc13de8a91ecb98ae0abc7ab7_cgraph" id="gps__ubx__ucenter_8c_a3adbb7ebc13de8a91ecb98ae0abc7ab7_cgraph">
+<area shape="rect" id="node3" href="gps__ubx__ucenter_8c.html#a2122042e2188440dd576442a2f0780be" title="Polls the u&#45;blox port configuration When the payload is omitted (zero length), the configuration for ..." alt="" coords="253,5,429,49"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__ubx__ucenter_8c_a3adbb7ebc13de8a91ecb98ae0abc7ab7_icgraph.png" border="0" usemap="#gps__ubx__ucenter_8c_a3adbb7ebc13de8a91ecb98ae0abc7ab7_icgraph" alt=""/></div>
 <map name="gps__ubx__ucenter_8c_a3adbb7ebc13de8a91ecb98ae0abc7ab7_icgraph" id="gps__ubx__ucenter_8c_a3adbb7ebc13de8a91ecb98ae0abc7ab7_icgraph">
-<area shape="rect" id="node3" href="gps__ubx__ucenter_8h.html#a483da5be54cf6eca071cd6c1ee0e3675" title="gps_ubx_ucenter_periodic" alt="" coords="236,5,407,33"/></map>
+<area shape="rect" id="node3" href="gps__ubx__ucenter_8h.html#a483da5be54cf6eca071cd6c1ee0e3675" title="gps_ubx_ucenter_periodic" alt="" coords="255,5,441,33"/></map>
 </div>
 </p>
 
@@ -940,20 +1197,20 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00252">252</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00337">337</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
-<p>References <a class="el" href="gps__ubx__ucenter_8c_source.html#l00051">gps_ubx_ucenter</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00249">IGNORED</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00246">NAV5_3D_ONLY</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00242">NAV5_DYN_AIRBORNE_2G</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00232">NAV_DYN_AIRBORNE_2G</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00250">RESERVED</a>, and <a class="el" href="gps__ubx__ucenter_8h_source.html#l00045">gps_ubx_ucenter_struct::sw_ver_h</a>.</p>
+<p>References <a class="el" href="gps__ubx__ucenter_8c_source.html#l00318">GPS_UBX_NAV5_DYNAMICS</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00060">gps_ubx_ucenter</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00334">IGNORED</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00324">NAV5_3D_ONLY</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00327">NAV5_DEFAULT_MIN_ELEV</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00330">NAV5_DEFAULT_P_ACC</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00328">NAV5_DEFAULT_PDOP_MASK</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00332">NAV5_DEFAULT_STATIC_HOLD_THRES</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00331">NAV5_DEFAULT_T_ACC</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00329">NAV5_DEFAULT_TDOP_MASK</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00321">NAV5_MASK</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00304">NAV_DYN_AIRBORNE_2G</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00335">RESERVED</a>, and <a class="el" href="gps__ubx__ucenter_8h_source.html#l00045">gps_ubx_ucenter_struct::sw_ver_h</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00342">gps_ubx_ucenter_configure()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00431">gps_ubx_ucenter_configure()</a>.</p>
 
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__ubx__ucenter_8c_a12ef579796da8ac1c9cf48eb423f24b8_icgraph.png" border="0" usemap="#gps__ubx__ucenter_8c_a12ef579796da8ac1c9cf48eb423f24b8_icgraph" alt=""/></div>
 <map name="gps__ubx__ucenter_8c_a12ef579796da8ac1c9cf48eb423f24b8_icgraph" id="gps__ubx__ucenter_8c_a12ef579796da8ac1c9cf48eb423f24b8_icgraph">
-<area shape="rect" id="node3" href="gps__ubx__ucenter_8c.html#aa9c94d7524259686da8ef21a2affd85c" title="gps_ubx_ucenter_configure" alt="" coords="243,5,421,33"/><area shape="rect" id="node5" href="gps__ubx__ucenter_8h.html#a483da5be54cf6eca071cd6c1ee0e3675" title="gps_ubx_ucenter_periodic" alt="" coords="471,5,641,33"/></map>
+<area shape="rect" id="node3" href="gps__ubx__ucenter_8c.html#aa9c94d7524259686da8ef21a2affd85c" title="gps_ubx_ucenter_configure" alt="" coords="261,5,459,33"/><area shape="rect" id="node5" href="gps__ubx__ucenter_8h.html#a483da5be54cf6eca071cd6c1ee0e3675" title="gps_ubx_ucenter_periodic" alt="" coords="508,5,695,33"/></map>
 </div>
 </p>
 
@@ -981,20 +1238,61 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00292">292</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00381">381</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
-<p>References <a class="el" href="gps__i2c_8h_source.html#l00028">GPS_I2C_SLAVE_ADDR</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00281">GPS_PORT_ID</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00286">UBX_GPS_BAUD</a>, and <a class="el" href="gps__ubx__ucenter_8c_source.html#l00270">UBX_PROTO_MASK</a>.</p>
+<p>References <a class="el" href="gps__ubx__ucenter_8c_source.html#l00038">DEBUG_PRINT</a>, <a class="el" href="gps__i2c_8h_source.html#l00029">GPS_I2C_SLAVE_ADDR</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00366">GPS_PORT_DDC</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00370">GPS_PORT_SPI</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00367">GPS_PORT_UART1</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00368">GPS_PORT_UART2</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00369">GPS_PORT_USB</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00060">gps_ubx_ucenter</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00052">gps_ubx_ucenter_struct::port_id</a>, <a class="el" href="lpc21_2mcu__periph_2uart__arch_8h_source.html#l00047">UART_SPEED</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00375">UBX_GPS_BAUD</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00362">UBX_PROTO_MASK</a>, and <a class="el" href="gps__ubx__ucenter_8c_source.html#l00360">UBX_UART_MODE_MASK</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00342">gps_ubx_ucenter_configure()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00431">gps_ubx_ucenter_configure()</a>.</p>
 
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__ubx__ucenter_8c_ac1011da76f5f001b5595df797f278664_icgraph.png" border="0" usemap="#gps__ubx__ucenter_8c_ac1011da76f5f001b5595df797f278664_icgraph" alt=""/></div>
 <map name="gps__ubx__ucenter_8c_ac1011da76f5f001b5595df797f278664_icgraph" id="gps__ubx__ucenter_8c_ac1011da76f5f001b5595df797f278664_icgraph">
-<area shape="rect" id="node3" href="gps__ubx__ucenter_8c.html#aa9c94d7524259686da8ef21a2affd85c" title="gps_ubx_ucenter_configure" alt="" coords="245,5,424,33"/><area shape="rect" id="node5" href="gps__ubx__ucenter_8h.html#a483da5be54cf6eca071cd6c1ee0e3675" title="gps_ubx_ucenter_periodic" alt="" coords="473,5,644,33"/></map>
+<area shape="rect" id="node3" href="gps__ubx__ucenter_8c.html#aa9c94d7524259686da8ef21a2affd85c" title="gps_ubx_ucenter_configure" alt="" coords="264,5,461,33"/><area shape="rect" id="node5" href="gps__ubx__ucenter_8h.html#a483da5be54cf6eca071cd6c1ee0e3675" title="gps_ubx_ucenter_periodic" alt="" coords="511,5,697,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2122042e2188440dd576442a2f0780be"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void gps_ubx_ucenter_config_port_poll </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Polls the u-blox port configuration When the payload is omitted (zero length), the configuration for the incoming (currently used) port is reported. </p>
+
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00199">199</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00229">gps_ubx_ucenter_autobaud()</a>.</p>
+
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="gps__ubx__ucenter_8c_a2122042e2188440dd576442a2f0780be_icgraph.png" border="0" usemap="#gps__ubx__ucenter_8c_a2122042e2188440dd576442a2f0780be_icgraph" alt=""/></div>
+<map name="gps__ubx__ucenter_8c_a2122042e2188440dd576442a2f0780be_icgraph" id="gps__ubx__ucenter_8c_a2122042e2188440dd576442a2f0780be_icgraph">
+<area shape="rect" id="node3" href="gps__ubx__ucenter_8c.html#a3adbb7ebc13de8a91ecb98ae0abc7ab7" title="Automatically determine the baudrate of the u&#45;blox module." alt="" coords="231,13,428,41"/><area shape="rect" id="node5" href="gps__ubx__ucenter_8h.html#a483da5be54cf6eca071cd6c1ee0e3675" title="gps_ubx_ucenter_periodic" alt="" coords="479,13,665,41"/></map>
 </div>
 </p>
 
@@ -1022,20 +1320,20 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00313">313</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00421">421</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
-<p>References <a class="el" href="gps__ubx__ucenter_8c_source.html#l00310">GPS_SBAS_CORRECTIONS</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00307">GPS_SBAS_ENABLED</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00311">GPS_SBAS_INTEGRITY</a>, and <a class="el" href="gps__ubx__ucenter_8c_source.html#l00309">GPS_SBAS_RANGING</a>.</p>
+<p>References <a class="el" href="gps__ubx__ucenter_8c_source.html#l00419">GPS_SBAS_AUTOSCAN</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00414">GPS_SBAS_CORRECTIONS</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00411">GPS_SBAS_ENABLED</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00415">GPS_SBAS_INTEGRITY</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00417">GPS_SBAS_MAX_SBAS</a>, and <a class="el" href="gps__ubx__ucenter_8c_source.html#l00413">GPS_SBAS_RANGING</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00342">gps_ubx_ucenter_configure()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00431">gps_ubx_ucenter_configure()</a>.</p>
 
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__ubx__ucenter_8c_affc7f9ed07352c71469f8c6d06703691_icgraph.png" border="0" usemap="#gps__ubx__ucenter_8c_affc7f9ed07352c71469f8c6d06703691_icgraph" alt=""/></div>
 <map name="gps__ubx__ucenter_8c_affc7f9ed07352c71469f8c6d06703691_icgraph" id="gps__ubx__ucenter_8c_affc7f9ed07352c71469f8c6d06703691_icgraph">
-<area shape="rect" id="node3" href="gps__ubx__ucenter_8c.html#aa9c94d7524259686da8ef21a2affd85c" title="gps_ubx_ucenter_configure" alt="" coords="251,5,429,33"/><area shape="rect" id="node5" href="gps__ubx__ucenter_8h.html#a483da5be54cf6eca071cd6c1ee0e3675" title="gps_ubx_ucenter_periodic" alt="" coords="479,5,649,33"/></map>
+<area shape="rect" id="node3" href="gps__ubx__ucenter_8c.html#aa9c94d7524259686da8ef21a2affd85c" title="gps_ubx_ucenter_configure" alt="" coords="267,5,464,33"/><area shape="rect" id="node5" href="gps__ubx__ucenter_8h.html#a483da5be54cf6eca071cd6c1ee0e3675" title="gps_ubx_ucenter_periodic" alt="" coords="513,5,700,33"/></map>
 </div>
 </p>
 
@@ -1063,31 +1361,31 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00342">342</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00431">431</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
-<p>References <a class="el" href="gps__ubx__ucenter_8h_source.html#l00042">gps_ubx_ucenter_struct::baud_init</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00043">gps_ubx_ucenter_struct::baud_run</a>, <a class="el" href="downlink_8h_source.html#l00068">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00078">DefaultDevice</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00051">gps_ubx_ucenter</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00252">gps_ubx_ucenter_config_nav()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00292">gps_ubx_ucenter_config_port()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00313">gps_ubx_ucenter_config_sbas()</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00034">GPS_UBX_UCENTER_CONFIG_STEPS</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00321">gps_ubx_ucenter_enable_msg()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00289">GPS_UBX_UCENTER_RATE</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00045">GPS_UBX_UCENTER_REPLY_NONE</a>, <a class="el" href="gps__ubx_8h_source.html#l00168">GpsUartSetBaudrate</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00048">gps_ubx_ucenter_struct::hw_ver_h</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00049">gps_ubx_ucenter_struct::hw_ver_l</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00051">gps_ubx_ucenter_struct::replies</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00039">gps_ubx_ucenter_struct::reply</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00045">gps_ubx_ucenter_struct::sw_ver_h</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00046">gps_ubx_ucenter_struct::sw_ver_l</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, and <a class="el" href="gps__ubx__ucenter_8c_source.html#l00286">UBX_GPS_BAUD</a>.</p>
+<p>References <a class="el" href="gps__ubx__ucenter_8h_source.html#l00042">gps_ubx_ucenter_struct::baud_init</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00043">gps_ubx_ucenter_struct::baud_run</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00038">DEBUG_PRINT</a>, <a class="el" href="downlink_8h_source.html#l00081">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00091">DefaultDevice</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00060">gps_ubx_ucenter</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00337">gps_ubx_ucenter_config_nav()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00381">gps_ubx_ucenter_config_port()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00421">gps_ubx_ucenter_config_sbas()</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00034">GPS_UBX_UCENTER_CONFIG_STEPS</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00216">gps_ubx_ucenter_enable_msg()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00378">GPS_UBX_UCENTER_RATE</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00054">GPS_UBX_UCENTER_REPLY_ACK</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00053">GPS_UBX_UCENTER_REPLY_NONE</a>, <a class="el" href="gps__ubx_8h_source.html#l00170">GpsUartSetBaudrate</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00048">gps_ubx_ucenter_struct::hw_ver_h</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00049">gps_ubx_ucenter_struct::hw_ver_l</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00054">gps_ubx_ucenter_struct::replies</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00039">gps_ubx_ucenter_struct::reply</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00045">gps_ubx_ucenter_struct::sw_ver_h</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00046">gps_ubx_ucenter_struct::sw_ver_l</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="lpc21_2mcu__periph_2uart__arch_8h_source.html#l00047">UART_SPEED</a>, and <a class="el" href="gps__ubx__ucenter_8c_source.html#l00375">UBX_GPS_BAUD</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00083">gps_ubx_ucenter_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00092">gps_ubx_ucenter_periodic()</a>.</p>
 
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__ubx__ucenter_8c_aa9c94d7524259686da8ef21a2affd85c_cgraph.png" border="0" usemap="#gps__ubx__ucenter_8c_aa9c94d7524259686da8ef21a2affd85c_cgraph" alt=""/></div>
 <map name="gps__ubx__ucenter_8c_aa9c94d7524259686da8ef21a2affd85c_cgraph" id="gps__ubx__ucenter_8c_aa9c94d7524259686da8ef21a2affd85c_cgraph">
-<area shape="rect" id="node3" href="gps__ubx__ucenter_8c.html#a12ef579796da8ac1c9cf48eb423f24b8" title="gps_ubx_ucenter_config_nav" alt="" coords="236,5,425,33"/><area shape="rect" id="node5" href="gps__ubx__ucenter_8c.html#ac1011da76f5f001b5595df797f278664" title="gps_ubx_ucenter_config_port" alt="" coords="236,55,425,83"/><area shape="rect" id="node7" href="gps__ubx__ucenter_8c.html#affc7f9ed07352c71469f8c6d06703691" title="gps_ubx_ucenter_config_sbas" alt="" coords="233,106,428,134"/><area shape="rect" id="node9" href="gps__ubx__ucenter_8c.html#a5a84e05f666e0f50c30772e4ef95cbdb" title="gps_ubx_ucenter_enable_msg" alt="" coords="232,157,429,185"/></map>
+<area shape="rect" id="node3" href="gps__ubx__ucenter_8c.html#a12ef579796da8ac1c9cf48eb423f24b8" title="gps_ubx_ucenter_config_nav" alt="" coords="256,5,461,33"/><area shape="rect" id="node5" href="gps__ubx__ucenter_8c.html#ac1011da76f5f001b5595df797f278664" title="gps_ubx_ucenter_config_port" alt="" coords="255,55,463,83"/><area shape="rect" id="node7" href="gps__ubx__ucenter_8c.html#affc7f9ed07352c71469f8c6d06703691" title="gps_ubx_ucenter_config_sbas" alt="" coords="252,106,465,134"/><area shape="rect" id="node9" href="gps__ubx__ucenter_8c.html#a5a84e05f666e0f50c30772e4ef95cbdb" title="Enable u&#45;blox message at desired period." alt="" coords="251,157,467,185"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__ubx__ucenter_8c_aa9c94d7524259686da8ef21a2affd85c_icgraph.png" border="0" usemap="#gps__ubx__ucenter_8c_aa9c94d7524259686da8ef21a2affd85c_icgraph" alt=""/></div>
 <map name="gps__ubx__ucenter_8c_aa9c94d7524259686da8ef21a2affd85c_icgraph" id="gps__ubx__ucenter_8c_aa9c94d7524259686da8ef21a2affd85c_icgraph">
-<area shape="rect" id="node3" href="gps__ubx__ucenter_8h.html#a483da5be54cf6eca071cd6c1ee0e3675" title="gps_ubx_ucenter_periodic" alt="" coords="233,5,404,33"/></map>
+<area shape="rect" id="node3" href="gps__ubx__ucenter_8h.html#a483da5be54cf6eca071cd6c1ee0e3675" title="gps_ubx_ucenter_periodic" alt="" coords="252,5,439,33"/></map>
 </div>
 </p>
 
@@ -1131,18 +1429,30 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00321">321</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Enable u-blox message at desired period. </p>
+<p>Will enable the message on the port that this command is received on. For example, sending this configuration message over UART1 will cause the desired message to be published on UART1.</p>
+<p>For more information on u-blox messages, see the protocol specification. <a href="http://www.ublox.com/en/download/documents-a-resources.html">http://www.ublox.com/en/download/documents-a-resources.html</a></p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">class</td><td>u-blox message class </td></tr>
+    <tr><td class="paramname">id</td><td>u-blox message ID </td></tr>
+    <tr><td class="paramname">rate</td><td>Desired period to send message. Example: Setting 3 would send the message on every 3rd navigation solution. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00342">gps_ubx_ucenter_configure()</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00216">216</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00431">gps_ubx_ucenter_configure()</a>.</p>
+
+<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__ubx__ucenter_8c_a5a84e05f666e0f50c30772e4ef95cbdb_icgraph.png" border="0" usemap="#gps__ubx__ucenter_8c_a5a84e05f666e0f50c30772e4ef95cbdb_icgraph" alt=""/></div>
 <map name="gps__ubx__ucenter_8c_a5a84e05f666e0f50c30772e4ef95cbdb_icgraph" id="gps__ubx__ucenter_8c_a5a84e05f666e0f50c30772e4ef95cbdb_icgraph">
-<area shape="rect" id="node3" href="gps__ubx__ucenter_8c.html#aa9c94d7524259686da8ef21a2affd85c" title="gps_ubx_ucenter_configure" alt="" coords="251,5,429,33"/><area shape="rect" id="node5" href="gps__ubx__ucenter_8h.html#a483da5be54cf6eca071cd6c1ee0e3675" title="gps_ubx_ucenter_periodic" alt="" coords="479,5,649,33"/></map>
+<area shape="rect" id="node3" href="gps__ubx__ucenter_8c.html#aa9c94d7524259686da8ef21a2affd85c" title="gps_ubx_ucenter_configure" alt="" coords="269,5,467,33"/><area shape="rect" id="node5" href="gps__ubx__ucenter_8h.html#a483da5be54cf6eca071cd6c1ee0e3675" title="gps_ubx_ucenter_periodic" alt="" coords="516,5,703,33"/></map>
 </div>
 </p>
 
@@ -1162,9 +1472,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00125">125</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00139">139</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
-<p>References <a class="el" href="gps__ubx_8c_source.html#l00058">gps_ubx</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00051">gps_ubx_ucenter</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00046">GPS_UBX_UCENTER_REPLY_ACK</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00047">GPS_UBX_UCENTER_REPLY_NACK</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00048">GPS_UBX_UCENTER_REPLY_VERSION</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00041">GPS_UBX_UCENTER_STATUS_STOPPED</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00048">gps_ubx_ucenter_struct::hw_ver_h</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00049">gps_ubx_ucenter_struct::hw_ver_l</a>, <a class="el" href="gps__ubx_8h_source.html#l00044">GpsUbx::msg_buf</a>, <a class="el" href="gps__ubx_8h_source.html#l00046">GpsUbx::msg_class</a>, <a class="el" href="gps__ubx_8h_source.html#l00045">GpsUbx::msg_id</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00039">gps_ubx_ucenter_struct::reply</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00038">gps_ubx_ucenter_struct::status</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00045">gps_ubx_ucenter_struct::sw_ver_h</a>, and <a class="el" href="gps__ubx__ucenter_8h_source.html#l00046">gps_ubx_ucenter_struct::sw_ver_l</a>.</p>
+<p>References <a class="el" href="gps__ubx__ucenter_8h_source.html#l00043">gps_ubx_ucenter_struct::baud_run</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00038">DEBUG_PRINT</a>, <a class="el" href="gps__ubx_8c_source.html#l00058">gps_ubx</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00060">gps_ubx_ucenter</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00054">GPS_UBX_UCENTER_REPLY_ACK</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00057">GPS_UBX_UCENTER_REPLY_CFG_PRT</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00055">GPS_UBX_UCENTER_REPLY_NACK</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00056">GPS_UBX_UCENTER_REPLY_VERSION</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00049">GPS_UBX_UCENTER_STATUS_STOPPED</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00048">gps_ubx_ucenter_struct::hw_ver_h</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00049">gps_ubx_ucenter_struct::hw_ver_l</a>, <a class="el" href="gps__ubx_8h_source.html#l00044">GpsUbx::msg_buf</a>, <a class="el" href="gps__ubx_8h_source.html#l00046">GpsUbx::msg_class</a>, <a class="el" href="gps__ubx_8h_source.html#l00045">GpsUbx::msg_id</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00052">gps_ubx_ucenter_struct::port_id</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00039">gps_ubx_ucenter_struct::reply</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00038">gps_ubx_ucenter_struct::status</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00045">gps_ubx_ucenter_struct::sw_ver_h</a>, and <a class="el" href="gps__ubx__ucenter_8h_source.html#l00046">gps_ubx_ucenter_struct::sw_ver_l</a>.</p>
 
 </div>
 </div>
@@ -1182,9 +1492,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00057">57</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00066">66</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
-<p>References <a class="el" href="gps__ubx__ucenter_8h_source.html#l00042">gps_ubx_ucenter_struct::baud_init</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00043">gps_ubx_ucenter_struct::baud_run</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00040">gps_ubx_ucenter_struct::cnt</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00051">gps_ubx_ucenter</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00034">GPS_UBX_UCENTER_CONFIG_STEPS</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00045">GPS_UBX_UCENTER_REPLY_NONE</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00042">GPS_UBX_UCENTER_STATUS_AUTOBAUD</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00048">gps_ubx_ucenter_struct::hw_ver_h</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00049">gps_ubx_ucenter_struct::hw_ver_l</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00051">gps_ubx_ucenter_struct::replies</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00039">gps_ubx_ucenter_struct::reply</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00038">gps_ubx_ucenter_struct::status</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00045">gps_ubx_ucenter_struct::sw_ver_h</a>, and <a class="el" href="gps__ubx__ucenter_8h_source.html#l00046">gps_ubx_ucenter_struct::sw_ver_l</a>.</p>
+<p>References <a class="el" href="gps__ubx__ucenter_8h_source.html#l00042">gps_ubx_ucenter_struct::baud_init</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00043">gps_ubx_ucenter_struct::baud_run</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00040">gps_ubx_ucenter_struct::cnt</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00060">gps_ubx_ucenter</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00034">GPS_UBX_UCENTER_CONFIG_STEPS</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00053">GPS_UBX_UCENTER_REPLY_NONE</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00050">GPS_UBX_UCENTER_STATUS_AUTOBAUD</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00048">gps_ubx_ucenter_struct::hw_ver_h</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00049">gps_ubx_ucenter_struct::hw_ver_l</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00054">gps_ubx_ucenter_struct::replies</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00039">gps_ubx_ucenter_struct::reply</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00038">gps_ubx_ucenter_struct::status</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00045">gps_ubx_ucenter_struct::sw_ver_h</a>, and <a class="el" href="gps__ubx__ucenter_8h_source.html#l00046">gps_ubx_ucenter_struct::sw_ver_l</a>.</p>
 
 </div>
 </div>
@@ -1202,18 +1512,18 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00083">83</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00092">92</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
-<p>References <a class="el" href="gps__ubx__ucenter_8h_source.html#l00040">gps_ubx_ucenter_struct::cnt</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00051">gps_ubx_ucenter</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00162">gps_ubx_ucenter_autobaud()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00342">gps_ubx_ucenter_configure()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00042">GPS_UBX_UCENTER_STATUS_AUTOBAUD</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00043">GPS_UBX_UCENTER_STATUS_CONFIG</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00041">GPS_UBX_UCENTER_STATUS_STOPPED</a>, and <a class="el" href="gps__ubx__ucenter_8h_source.html#l00038">gps_ubx_ucenter_struct::status</a>.</p>
+<p>References <a class="el" href="gps__ubx__ucenter_8h_source.html#l00042">gps_ubx_ucenter_struct::baud_init</a>, <a class="el" href="gps__ubx__ucenter_8h_source.html#l00040">gps_ubx_ucenter_struct::cnt</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00038">DEBUG_PRINT</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00060">gps_ubx_ucenter</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00229">gps_ubx_ucenter_autobaud()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00431">gps_ubx_ucenter_configure()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00050">GPS_UBX_UCENTER_STATUS_AUTOBAUD</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00051">GPS_UBX_UCENTER_STATUS_CONFIG</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00049">GPS_UBX_UCENTER_STATUS_STOPPED</a>, and <a class="el" href="gps__ubx__ucenter_8h_source.html#l00038">gps_ubx_ucenter_struct::status</a>.</p>
 
-<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__ubx__ucenter_8c_a483da5be54cf6eca071cd6c1ee0e3675_cgraph.png" border="0" usemap="#gps__ubx__ucenter_8c_a483da5be54cf6eca071cd6c1ee0e3675_cgraph" alt=""/></div>
 <map name="gps__ubx__ucenter_8c_a483da5be54cf6eca071cd6c1ee0e3675_cgraph" id="gps__ubx__ucenter_8c_a483da5be54cf6eca071cd6c1ee0e3675_cgraph">
-<area shape="rect" id="node3" href="gps__ubx__ucenter_8c.html#a3adbb7ebc13de8a91ecb98ae0abc7ab7" title="gps_ubx_ucenter_autobaud" alt="" coords="228,30,407,58"/><area shape="rect" id="node5" href="gps__ubx__ucenter_8c.html#aa9c94d7524259686da8ef21a2affd85c" title="gps_ubx_ucenter_configure" alt="" coords="228,81,407,109"/><area shape="rect" id="node7" href="gps__ubx__ucenter_8c.html#a12ef579796da8ac1c9cf48eb423f24b8" title="gps_ubx_ucenter_config_nav" alt="" coords="460,5,649,33"/><area shape="rect" id="node9" href="gps__ubx__ucenter_8c.html#ac1011da76f5f001b5595df797f278664" title="gps_ubx_ucenter_config_port" alt="" coords="460,55,649,83"/><area shape="rect" id="node11" href="gps__ubx__ucenter_8c.html#affc7f9ed07352c71469f8c6d06703691" title="gps_ubx_ucenter_config_sbas" alt="" coords="457,106,652,134"/><area shape="rect" id="node13" href="gps__ubx__ucenter_8c.html#a5a84e05f666e0f50c30772e4ef95cbdb" title="gps_ubx_ucenter_enable_msg" alt="" coords="456,157,653,185"/></map>
+<area shape="rect" id="node3" href="gps__ubx__ucenter_8c.html#a3adbb7ebc13de8a91ecb98ae0abc7ab7" title="Automatically determine the baudrate of the u&#45;blox module." alt="" coords="244,42,441,70"/><area shape="rect" id="node7" href="gps__ubx__ucenter_8c.html#aa9c94d7524259686da8ef21a2affd85c" title="gps_ubx_ucenter_configure" alt="" coords="244,122,441,150"/><area shape="rect" id="node5" href="gps__ubx__ucenter_8c.html#a2122042e2188440dd576442a2f0780be" title="Polls the u&#45;blox port configuration When the payload is omitted (zero length), the configuration for ..." alt="" coords="511,5,687,49"/><area shape="rect" id="node9" href="gps__ubx__ucenter_8c.html#a12ef579796da8ac1c9cf48eb423f24b8" title="gps_ubx_ucenter_config_nav" alt="" coords="496,71,701,99"/><area shape="rect" id="node11" href="gps__ubx__ucenter_8c.html#ac1011da76f5f001b5595df797f278664" title="gps_ubx_ucenter_config_port" alt="" coords="495,122,703,150"/><area shape="rect" id="node13" href="gps__ubx__ucenter_8c.html#affc7f9ed07352c71469f8c6d06703691" title="gps_ubx_ucenter_config_sbas" alt="" coords="492,173,705,201"/><area shape="rect" id="node15" href="gps__ubx__ucenter_8c.html#a5a84e05f666e0f50c30772e4ef95cbdb" title="Enable u&#45;blox message at desired period." alt="" coords="491,223,707,251"/></map>
 </div>
 </p>
 
@@ -1230,9 +1540,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00051">51</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__ucenter_8c_source.html#l00060">60</a> of file <a class="el" href="gps__ubx__ucenter_8c_source.html">gps_ubx_ucenter.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00162">gps_ubx_ucenter_autobaud()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00252">gps_ubx_ucenter_config_nav()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00342">gps_ubx_ucenter_configure()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00125">gps_ubx_ucenter_event()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00057">gps_ubx_ucenter_init()</a>, and <a class="el" href="gps__ubx__ucenter_8c_source.html#l00083">gps_ubx_ucenter_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00229">gps_ubx_ucenter_autobaud()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00337">gps_ubx_ucenter_config_nav()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00381">gps_ubx_ucenter_config_port()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00431">gps_ubx_ucenter_configure()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00139">gps_ubx_ucenter_event()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00066">gps_ubx_ucenter_init()</a>, and <a class="el" href="gps__ubx__ucenter_8c_source.html#l00092">gps_ubx_ucenter_periodic()</a>.</p>
 
 </div>
 </div>
@@ -1242,7 +1552,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_5e5c455c6cc9b4955752fc2ddd0b9fff.html">gps</a></li><li class="navelem"><a class="el" href="gps__ubx__ucenter_8c.html">gps_ubx_ucenter.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:10 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:59 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -238,7 +238,7 @@ $(document).ready(function(){initNavTree('gsm_8c_source.html','');});
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="gsm_8c.html#a77bfcaa5616315e2d3d2dbbadeb582ea">Send_CPMS</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="gsm_8c.html#a51d505e556129ce6194c29d2ee8ce052">Suppr_SMS</a>(<span class="keywordtype">int</span>);</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="gsm_8c.html#a8c36f702b08587b8156291db8d1d5f96">gsm_send_report_continue</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="gsm_8c.html#a252f4f524ac20fd044cd71f1b0c1277d">gsm_parse</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="gsm_8c.html#a252f4f524ac20fd044cd71f1b0c1277d">gsm_parse</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> c);</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="gsm_8c.html#a1908fccdd617aa8d27b37b40388242dc">gsm_got_line</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="gsm_8c.html#a50a87720de6be99927dc9a385cc48f37">gsm_got_prompt</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="gsm_8c.html#a3e93d27d40d75355176ae476885b0c8b" title="Receiving a SMS, third step, content in gsm_buf Message can be Bdd where dd is a block index on two d...">gsm_receive_content</a>(<span class="keywordtype">void</span>);</div>
@@ -508,7 +508,7 @@ $(document).ready(function(){initNavTree('gsm_8c_source.html','');});
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;  sprintf(data_to_send, <span class="stringliteral">&quot;%ld %ld %d %ld %d %d %d %d %d&quot;</span>, <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#a2cf3685a890a6200b334b2c399102ffa" title="position in UTM (north,east: cm; alt: mm over ellipsoid)">utm_pos</a>.<a class="code" href="structUtmCoor__i.html#a93a85f5eec8041c8b6e8bcef4b977de5" title="in centimeters">east</a>, <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#a2cf3685a890a6200b334b2c399102ffa" title="position in UTM (north,east: cm; alt: mm over ellipsoid)">utm_pos</a>.<a class="code" href="structUtmCoor__i.html#af50ae798f5164c2e68d0ed0129d5d6dc" title="in centimeters">north</a>, gps_course, <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#a10af95f7fdab3171a789866838b0c8c3" title="height above mean sea level in mm">hmsl</a>, <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#a17cba6d73da4b727be6494d436160933" title="norm of 2d ground speed in cm/s">gspeed</a>, -<a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#a8c0416718a59e50261890cd870f716ea" title="speed NED in cm/s">ned_vel</a>.<a class="code" href="structNedCoor__i.html#a52586e90ccb7aa5f0960bcb480bfcaa3" title="Down.">z</a>, <a class="code" href="fixedwing_2autopilot_8c.html#a32da1e6e29634773a0e491df93f92414" title="Supply voltage in deciVolt.">vsupply</a>, <a class="code" href="fixedwing_2autopilot_8c.html#a643a1732fc06296050835ab61968d726" title="flight time in seconds.">autopilot_flight_time</a>, rssi);</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;  <span class="comment">// send the number and wait for the prompt</span></div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;  <span class="keywordtype">char</span> <a class="code" href="structi2c__transaction.html#a295b2671835ae06b28905433cd1096ee">buf</a>[32];</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;  <span class="keywordtype">char</span> <a class="code" href="structi2c__transaction.html#a295b2671835ae06b28905433cd1096ee" title="Transaction buffer With I2C_BUF_LEN number of bytes.">buf</a>[32];</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;  <span class="keywordflow">switch</span> (gcs_index) {</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="preprocessor">#ifdef GCS_NUMBER_1</span></div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">case</span> 0 :</div>
@@ -571,7 +571,7 @@ $(document).ready(function(){initNavTree('gsm_8c_source.html','');});
 <div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;}</div>
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;</div>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;</div>
-<div class="line"><a name="l00474"></a><span class="lineno"><a class="code" href="gsm_8c.html#a252f4f524ac20fd044cd71f1b0c1277d">  474</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="gsm_8c.html#a252f4f524ac20fd044cd71f1b0c1277d">gsm_parse</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>) {</div>
+<div class="line"><a name="l00474"></a><span class="lineno"><a class="code" href="gsm_8c.html#a252f4f524ac20fd044cd71f1b0c1277d">  474</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="gsm_8c.html#a252f4f524ac20fd044cd71f1b0c1277d">gsm_parse</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> c) {</div>
 <div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;  <span class="keywordflow">switch</span>(c) {</div>
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;    <span class="keywordflow">case</span> GSM_CMD_LINE_TERMINATION:</div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;      <span class="keywordflow">break</span>;</div>
@@ -586,7 +586,7 @@ $(document).ready(function(){initNavTree('gsm_8c_source.html','');});
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    <span class="keywordflow">default</span>:</div>
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;      <span class="keywordflow">if</span> (gsm_buf_idx &lt; <a class="code" href="gsm_8c.html#af2ca3df907faad74ce2d5ee9446bcc6f">GSM_MAX_PAYLOAD</a>) {</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        <a class="code" href="gsm_8c.html#a5fef8d3744876d6bf1db63daede4c457">gsm_buf</a>[<a class="code" href="gsm_8c.html#af7c7a658fa326bdee42f63ec3da412df">gsm_buf_idx</a>] = <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>;</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        <a class="code" href="gsm_8c.html#a5fef8d3744876d6bf1db63daede4c457">gsm_buf</a>[<a class="code" href="gsm_8c.html#af7c7a658fa326bdee42f63ec3da412df">gsm_buf_idx</a>] = c;</div>
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        gsm_buf_idx++;</div>
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;      } <span class="comment">/* else extra characters are ignored */</span></div>
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;      <span class="keywordflow">break</span>;</div>
@@ -608,7 +608,7 @@ $(document).ready(function(){initNavTree('gsm_8c_source.html','');});
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;</div>
 <div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;<span class="comment">/* Returns a pointer to the first occurrence of the character c in the firtn</span></div>
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;<span class="comment">   n chars of string s. Return NULL if not found */</span></div>
-<div class="line"><a name="l00511"></a><span class="lineno"><a class="code" href="gsm_8c.html#ae471a4807214d672b57a3fa9773be593">  511</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">char</span>* <a class="code" href="gsm_8c.html#ae471a4807214d672b57a3fa9773be593">indexn</a>(<span class="keywordtype">char</span>* s, <span class="keywordtype">char</span> <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> n) {</div>
+<div class="line"><a name="l00511"></a><span class="lineno"><a class="code" href="gsm_8c.html#ae471a4807214d672b57a3fa9773be593">  511</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">char</span>* <a class="code" href="gsm_8c.html#ae471a4807214d672b57a3fa9773be593">indexn</a>(<span class="keywordtype">char</span>* s, <span class="keywordtype">char</span> c, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> n) {</div>
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;  <span class="keywordflow">while</span>(n &amp;&amp; (*s != c)) {</div>
 <div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    n--;</div>
 <div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;    s++;</div>
@@ -621,7 +621,7 @@ $(document).ready(function(){initNavTree('gsm_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_6a22c778aa9d007fbd268b0dbbe385cb.html">gsm</a></li><li class="navelem"><a class="el" href="gsm_8c.html">gsm.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:41 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

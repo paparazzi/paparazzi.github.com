@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('baro__ets_8c.html','');});
 <code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br/>
 <code>#include &lt;math.h&gt;</code><br/>
 <code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="nav_8h_source.html">subsystems/nav.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="nav_8h_source.html">firmwares/fixedwing/nav.h</a>&quot;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for baro_ets.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('baro__ets_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="baro__ets_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2sensors_2baro__ets_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2sensors_2baro__ets_8c" id="sw_2airborne_2modules_2sensors_2baro__ets_8c">
-<area shape="rect" id="node3" href="baro__ets_8h.html" title="Driver for the EagleTree Systems Altitude Sensor." alt="" coords="96,457,227,485"/><area shape="rect" id="node7" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="21,534,141,562"/><area shape="rect" id="node15" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="833,278,895,306"/><area shape="rect" id="node56" href="abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="316,99,439,127"/><area shape="rect" id="node61" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="475,185,629,213"/><area shape="rect" id="node71" href="nav_8h.html" title="Fixedwing Navigation library." alt="" coords="924,99,1049,127"/><area shape="rect" id="node17" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="747,457,904,485"/><area shape="rect" id="node32" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="453,457,621,485"/><area shape="rect" id="node38" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="943,363,1076,407"/><area shape="rect" id="node44" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="735,363,868,407"/><area shape="rect" id="node49" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversion." alt="" coords="564,363,711,407"/><area shape="rect" id="node20" href="pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="539,534,677,562"/><area shape="rect" id="node26" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="853,534,987,562"/><area shape="rect" id="node40" href="pprz__geodetic_8h.html" title="pprz_geodetic.h" alt="" coords="928,457,1040,485"/><area shape="rect" id="node63" href="inttypes_8h.html" title="inttypes.h" alt="" coords="725,278,803,306"/><area shape="rect" id="node74" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="747,185,832,213"/><area shape="rect" id="node78" href="nav__survey__rectangle_8h.html" title="subsystems/navigation\l/nav_survey_rectangle.h" alt="" coords="965,177,1128,221"/><area shape="rect" id="node81" href="common__flight__plan_8h.html" title="subsystems/navigation\l/common_flight_plan.h" alt="" coords="1267,270,1421,314"/><area shape="rect" id="node84" href="common__nav_8h.html" title="subsystems/navigation\l/common_nav.h" alt="" coords="1152,177,1307,221"/></map>
+<area shape="rect" id="node3" href="baro__ets_8h.html" title="Driver for the EagleTree Systems Altitude Sensor." alt="" coords="100,473,244,501"/><area shape="rect" id="node7" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API." alt="" coords="23,550,153,578"/><area shape="rect" id="node15" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="880,294,947,322"/><area shape="rect" id="node56" href="abi_8h.html" title="Main include for ABI (AirBorneInterface)." alt="" coords="321,107,455,135"/><area shape="rect" id="node61" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="501,201,672,229"/><area shape="rect" id="node71" href="nav_8h.html" title="Fixedwing Navigation library." alt="" coords="968,99,1115,143"/><area shape="rect" id="node17" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="785,473,964,501"/><area shape="rect" id="node32" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="471,473,660,501"/><area shape="rect" id="node38" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="997,379,1147,423"/><area shape="rect" id="node44" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="773,379,923,423"/><area shape="rect" id="node49" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversion." alt="" coords="587,379,749,423"/><area shape="rect" id="node20" href="pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="561,550,716,578"/><area shape="rect" id="node26" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="892,550,1041,578"/><area shape="rect" id="node40" href="pprz__geodetic_8h.html" title="pprz_geodetic.h" alt="" coords="988,473,1111,501"/><area shape="rect" id="node63" href="inttypes_8h.html" title="inttypes.h" alt="" coords="763,294,848,322"/><area shape="rect" id="node74" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="776,201,872,229"/><area shape="rect" id="node78" href="nav__survey__rectangle_8h.html" title="subsystems/navigation\l/nav_survey_rectangle.h" alt="" coords="1016,193,1192,237"/><area shape="rect" id="node81" href="common__flight__plan_8h.html" title="subsystems/navigation\l/common_flight_plan.h" alt="" coords="1337,286,1505,330"/><area shape="rect" id="node84" href="common__nav_8h.html" title="subsystems/navigation\l/common_nav.h" alt="" coords="1216,193,1384,237"/></map>
 </div>
 </div>
 <p><a href="baro__ets_8c_source.html">Go to the source code of this file.</a></p>
@@ -308,7 +308,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pressure offset in Pascal when converting raw adc to real pressure (. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000015">Todo:</a></b></dt><dd>find real value) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000014">Todo:</a></b></dt><dd>find real value) </dd></dl>
 
 <p>Definition at line <a class="el" href="baro__ets_8c_source.html#l00085">85</a> of file <a class="el" href="baro__ets_8c_source.html">baro_ets.c</a>.</p>
 
@@ -357,7 +357,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>scale factor to convert raw ADC measurement to pressure in Pascal. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000014">Todo:</a></b></dt><dd>check value At low altitudes pressure change is ~1.2 kPa for every 100 meters. So with a scale ADC-&gt;meters of 0.32 we get: 12 Pascal = 0.32 * ADC -&gt; SCALE = ~ 12 / 0.32 = 37.5 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">Todo:</a></b></dt><dd>check value At low altitudes pressure change is ~1.2 kPa for every 100 meters. So with a scale ADC-&gt;meters of 0.32 we get: 12 Pascal = 0.32 * ADC -&gt; SCALE = ~ 12 / 0.32 = 37.5 </dd></dl>
 
 <p>Definition at line <a class="el" href="baro__ets_8c_source.html#l00075">75</a> of file <a class="el" href="baro__ets_8c_source.html">baro_ets.c</a>.</p>
 
@@ -416,7 +416,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="baro__ets_8c_source.html#l00120">120</a> of file <a class="el" href="baro__ets_8c_source.html">baro_ets.c</a>.</p>
 
-<p>References <a class="el" href="baro__ets_8c_source.html#l00063">BARO_ETS_OFFSET_NBSAMPLES_AVRG</a>, <a class="el" href="baro__ets_8c_source.html#l00062">BARO_ETS_OFFSET_NBSAMPLES_INIT</a>, <a class="el" href="baro__ets_8c_source.html#l00064">BARO_ETS_R</a>, <a class="el" href="baro__ets_8c_source.html#l00065">BARO_ETS_SIGMA2</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="i2c_8h_source.html#l00055">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00083">i2c_transaction::status</a>, <a class="el" href="lpc21_2mcu__periph_2sys__time__arch_8h_source.html#l00064">SysTimeTimerStart</a>, and <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>.</p>
+<p>References <a class="el" href="baro__ets_8c_source.html#l00063">BARO_ETS_OFFSET_NBSAMPLES_AVRG</a>, <a class="el" href="baro__ets_8c_source.html#l00062">BARO_ETS_OFFSET_NBSAMPLES_INIT</a>, <a class="el" href="baro__ets_8c_source.html#l00064">BARO_ETS_R</a>, <a class="el" href="baro__ets_8c_source.html#l00065">BARO_ETS_SIGMA2</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, <a class="el" href="sys__time_8h_source.html#l00198">SysTimeTimerStart</a>, and <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>.</p>
 
 </div>
 </div>
@@ -436,7 +436,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="baro__ets_8c_source.html#l00149">149</a> of file <a class="el" href="baro__ets_8c_source.html">baro_ets.c</a>.</p>
 
-<p>References <a class="el" href="baro__ets_8c_source.html#l00103">baro_ets_adc</a>, <a class="el" href="baro__ets_8c_source.html#l00080">BARO_ETS_ALT_SCALE</a>, <a class="el" href="baro__ets_8c_source.html#l00106">baro_ets_altitude</a>, <a class="el" href="baro__ets_8c_source.html#l00116">baro_ets_cnt</a>, <a class="el" href="baro__ets_8c_source.html#l00111">baro_ets_i2c_trans</a>, <a class="el" href="baro__ets_8c_source.html#l00104">baro_ets_offset</a>, <a class="el" href="baro__ets_8c_source.html#l00114">baro_ets_offset_init</a>, <a class="el" href="baro__ets_8c_source.html#l00060">BARO_ETS_OFFSET_MAX</a>, <a class="el" href="baro__ets_8c_source.html#l00061">BARO_ETS_OFFSET_MIN</a>, <a class="el" href="baro__ets_8c_source.html#l00063">BARO_ETS_OFFSET_NBSAMPLES_AVRG</a>, <a class="el" href="baro__ets_8c_source.html#l00115">baro_ets_offset_tmp</a>, <a class="el" href="baro__ets_8c_source.html#l00085">BARO_ETS_PRESSURE_OFFSET</a>, <a class="el" href="baro__ets_8c_source.html#l00075">BARO_ETS_SCALE</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00052">BARO_ETS_SENDER_ID</a>, <a class="el" href="baro__ets_8c_source.html#l00105">baro_ets_valid</a>, <a class="el" href="i2c_8h_source.html#l00082">i2c_transaction::buf</a>, <a class="el" href="downlink_8h_source.html#l00068">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00078">DefaultDevice</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="navigation_8c_source.html#l00061">ground_alt</a>, <a class="el" href="i2c_8h_source.html#l00055">I2CTransDone</a>, <a class="el" href="bmp085_8h_source.html#l00073">Bmp085::pressure</a>, <a class="el" href="i2c_8h_source.html#l00083">i2c_transaction::status</a>, and <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>.</p>
+<p>References <a class="el" href="baro__ets_8c_source.html#l00103">baro_ets_adc</a>, <a class="el" href="baro__ets_8c_source.html#l00080">BARO_ETS_ALT_SCALE</a>, <a class="el" href="baro__ets_8c_source.html#l00106">baro_ets_altitude</a>, <a class="el" href="baro__ets_8c_source.html#l00116">baro_ets_cnt</a>, <a class="el" href="baro__ets_8c_source.html#l00111">baro_ets_i2c_trans</a>, <a class="el" href="baro__ets_8c_source.html#l00104">baro_ets_offset</a>, <a class="el" href="baro__ets_8c_source.html#l00114">baro_ets_offset_init</a>, <a class="el" href="baro__ets_8c_source.html#l00060">BARO_ETS_OFFSET_MAX</a>, <a class="el" href="baro__ets_8c_source.html#l00061">BARO_ETS_OFFSET_MIN</a>, <a class="el" href="baro__ets_8c_source.html#l00063">BARO_ETS_OFFSET_NBSAMPLES_AVRG</a>, <a class="el" href="baro__ets_8c_source.html#l00115">baro_ets_offset_tmp</a>, <a class="el" href="baro__ets_8c_source.html#l00085">BARO_ETS_PRESSURE_OFFSET</a>, <a class="el" href="baro__ets_8c_source.html#l00075">BARO_ETS_SCALE</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00052">BARO_ETS_SENDER_ID</a>, <a class="el" href="baro__ets_8c_source.html#l00105">baro_ets_valid</a>, <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="downlink_8h_source.html#l00081">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00091">DefaultDevice</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="navigation_8c_source.html#l00061">ground_alt</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="bmp085_8h_source.html#l00073">Bmp085::pressure</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, and <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>.</p>
 
 </div>
 </div>
@@ -456,7 +456,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="baro__ets_8c_source.html#l00138">138</a> of file <a class="el" href="baro__ets_8c_source.html">baro_ets.c</a>.</p>
 
-<p>References <a class="el" href="baro__ets_8c_source.html#l00058">BARO_ETS_ADDR</a>, <a class="el" href="baro__ets_8c_source.html#l00118">baro_ets_delay_done</a>, <a class="el" href="baro__ets_8c_source.html#l00117">baro_ets_delay_time</a>, <a class="el" href="baro__ets_8c_source.html#l00089">BARO_ETS_I2C_DEV</a>, <a class="el" href="baro__ets_8c_source.html#l00111">baro_ets_i2c_trans</a>, <a class="el" href="baro__ets_8c_source.html#l00098">BARO_ETS_START_DELAY</a>, <a class="el" href="i2c_8c_source.html#l00248">i2c_receive()</a>, <a class="el" href="i2c_8h_source.html#l00055">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00083">i2c_transaction::status</a>, <a class="el" href="lpc21_2mcu__periph_2sys__time__arch_8h_source.html#l00065">SysTimeTimer</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, and <a class="el" href="sys__time_8h_source.html#l00190">USEC_OF_SEC</a>.</p>
+<p>References <a class="el" href="baro__ets_8c_source.html#l00058">BARO_ETS_ADDR</a>, <a class="el" href="baro__ets_8c_source.html#l00118">baro_ets_delay_done</a>, <a class="el" href="baro__ets_8c_source.html#l00117">baro_ets_delay_time</a>, <a class="el" href="baro__ets_8c_source.html#l00089">BARO_ETS_I2C_DEV</a>, <a class="el" href="baro__ets_8c_source.html#l00111">baro_ets_i2c_trans</a>, <a class="el" href="baro__ets_8c_source.html#l00098">BARO_ETS_START_DELAY</a>, <a class="el" href="i2c_8c_source.html#l00248">i2c_receive()</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, <a class="el" href="sys__time_8h_source.html#l00199">SysTimeTimer</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, and <a class="el" href="sys__time_8h_source.html#l00190">USEC_OF_SEC</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -465,7 +465,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="baro__ets_8c_a068f56980bf36411a20c15b9d4b4811f_cgraph.png" border="0" usemap="#baro__ets_8c_a068f56980bf36411a20c15b9d4b4811f_cgraph" alt=""/></div>
 <map name="baro__ets_8c_a068f56980bf36411a20c15b9d4b4811f_cgraph" id="baro__ets_8c_a068f56980bf36411a20c15b9d4b4811f_cgraph">
-<area shape="rect" id="node3" href="group__i2c.html#ga9bdc2f5162d3e77dd58b7541ddcbe5d1" title="i2c_receive" alt="" coords="211,5,299,33"/><area shape="rect" id="node5" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="i2c_submit" alt="" coords="347,5,432,33"/></map>
+<area shape="rect" id="node3" href="group__i2c.html#ga9bdc2f5162d3e77dd58b7541ddcbe5d1" title="Submit a read only transaction." alt="" coords="224,5,317,33"/><area shape="rect" id="node5" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction." alt="" coords="365,5,456,33"/></map>
 </div>
 </p>
 
@@ -564,7 +564,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="baro__ets_8c_source.html#l00107">107</a> of file <a class="el" href="baro__ets_8c_source.html">baro_ets.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__alt__float_8c_source.html#l00194">alt_kalman()</a>.</p>
+<p>Referenced by <a class="el" href="ins__alt__float_8c_source.html#l00222">alt_kalman()</a>.</p>
 
 </div>
 </div>
@@ -644,7 +644,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="baro__ets_8c_source.html#l00108">108</a> of file <a class="el" href="baro__ets_8c_source.html">baro_ets.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__alt__float_8c_source.html#l00194">alt_kalman()</a>.</p>
+<p>Referenced by <a class="el" href="ins__alt__float_8c_source.html#l00222">alt_kalman()</a>.</p>
 
 </div>
 </div>
@@ -660,7 +660,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="baro__ets_8c_source.html#l00109">109</a> of file <a class="el" href="baro__ets_8c_source.html">baro_ets.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__alt__float_8c_source.html#l00194">alt_kalman()</a>.</p>
+<p>Referenced by <a class="el" href="ins__alt__float_8c_source.html#l00222">alt_kalman()</a>.</p>
 
 </div>
 </div>
@@ -686,7 +686,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="baro__ets_8c.html">baro_ets.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:11 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:03 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('vf__extended__float_8h.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -121,36 +122,34 @@ $(document).ready(function(){initNavTree('vf__extended__float_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vf__extended__float_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2ins_2vf__extended__float_8hdep" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2ins_2vf__extended__float_8hdep" id="sw_2airborne_2subsystems_2ins_2vf__extended__float_8hdep">
-<area shape="rect" id="node3" href="vf__extended__float_8c.html" title="Extended vertical filter (in float)." alt="" coords="5,99,168,143"/></map>
+<area shape="rect" id="node3" href="vf__extended__float_8c.html" title="Extended vertical filter (in float)." alt="" coords="5,99,181,143"/></map>
 </div>
 </div>
 <p><a href="vf__extended__float_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVffExtended.html">VffExtended</a></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a18723b10d465c48b447ad96b46f8a25b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vf__extended__float_8h.html#a18723b10d465c48b447ad96b46f8a25b">VFF_STATE_SIZE</a>&#160;&#160;&#160;4</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a2358072559748851df8c44c975c43ebb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vf__extended__float_8h.html#a2358072559748851df8c44c975c43ebb">vff_init_zero</a> (void)</td></tr>
 <tr class="memitem:a3cf28b18a6935e816045e43bf6281c67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vf__extended__float_8h.html#a3cf28b18a6935e816045e43bf6281c67">vff_init</a> (float z, float zdot, float accel_bias, float baro_offset)</td></tr>
 <tr class="memitem:aaff6390ecf9c28ae4c77977cb22aed95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vf__extended__float_8h.html#aaff6390ecf9c28ae4c77977cb22aed95">vff_propagate</a> (float accel)</td></tr>
 <tr class="memitem:a94b26d899a6d7ca4e26cb7df3f45ef49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vf__extended__float_8h.html#a94b26d899a6d7ca4e26cb7df3f45ef49">vff_update_baro</a> (float z_meas)</td></tr>
-<tr class="memitem:aa7be1a38f359b14ce8f7bd719086541a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vf__extended__float_8h.html#aa7be1a38f359b14ce8f7bd719086541a">vff_update_alt</a> (float z_meas)</td></tr>
+<tr class="memitem:a43ba970ac8015812427c9681be41100a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vf__extended__float_8h.html#a43ba970ac8015812427c9681be41100a">vff_update_z</a> (float z_meas)</td></tr>
 <tr class="memitem:a3726fbb9f54c7ec7a8579c7af3f15a4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vf__extended__float_8h.html#a3726fbb9f54c7ec7a8579c7af3f15a4c">vff_update_offset</a> (float offset)</td></tr>
 <tr class="memitem:aa7f8c70d85481ee00728646ab5d82e2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vf__extended__float_8h.html#aa7f8c70d85481ee00728646ab5d82e2a">vff_update_baro_conf</a> (float z_meas, float conf)</td></tr>
-<tr class="memitem:a71a8b7ccf3526fe63cd48ac4117864fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vf__extended__float_8h.html#a71a8b7ccf3526fe63cd48ac4117864fa">vff_update_alt_conf</a> (float z_meas, float conf)</td></tr>
+<tr class="memitem:a383a56a1eaa73890c3b6ca0599c3fb67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vf__extended__float_8h.html#a383a56a1eaa73890c3b6ca0599c3fb67">vff_update_z_conf</a> (float z_meas, float conf)</td></tr>
 <tr class="memitem:a9871b34cda71fc04b9e312b8ce4f11af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vf__extended__float_8h.html#a9871b34cda71fc04b9e312b8ce4f11af">vff_realign</a> (float z_meas)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a1222ca88d397976e39d7074c3467974a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vf__extended__float_8h.html#a1222ca88d397976e39d7074c3467974a">vff_z</a></td></tr>
-<tr class="memitem:abf478862714adc9584d537b9363011a4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vf__extended__float_8h.html#abf478862714adc9584d537b9363011a4">vff_zdot</a></td></tr>
-<tr class="memitem:a24c283535083af381e89d00c91761df9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vf__extended__float_8h.html#a24c283535083af381e89d00c91761df9">vff_bias</a></td></tr>
-<tr class="memitem:a2d44477636d691d3c1e51e0e092a878b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vf__extended__float_8h.html#a2d44477636d691d3c1e51e0e092a878b">vff_offset</a></td></tr>
-<tr class="memitem:a0770019985f92fda99f2bdc98f47c267"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vf__extended__float_8h.html#a0770019985f92fda99f2bdc98f47c267">vff_P</a> [<a class="el" href="vf__float_8h.html#a18723b10d465c48b447ad96b46f8a25b">VFF_STATE_SIZE</a>][<a class="el" href="vf__float_8h.html#a18723b10d465c48b447ad96b46f8a25b">VFF_STATE_SIZE</a>]</td></tr>
-<tr class="memitem:ac36a73bd31bb8d32ee5627b70aadd855"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vf__extended__float_8h.html#ac36a73bd31bb8d32ee5627b70aadd855">vff_zdotdot</a></td></tr>
-<tr class="memitem:a70bf4fe0af826d88a29e934e4768b9fc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vf__extended__float_8h.html#a70bf4fe0af826d88a29e934e4768b9fc">vff_z_meas</a></td></tr>
-<tr class="memitem:a78d01fa5691c897301843af95d1c73f4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vf__extended__float_8h.html#a78d01fa5691c897301843af95d1c73f4">vff_z_meas_baro</a></td></tr>
+<tr class="memitem:aa8558bc47d778efba706bc1fc7f08d36"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structVffExtended.html">VffExtended</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vf__extended__float_8h.html#aa8558bc47d778efba706bc1fc7f08d36">vff</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Interface for extended vertical filter (in float). </p>
@@ -169,7 +168,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="vf__extended__float_8h_source.html#l00033">33</a> of file <a class="el" href="vf__extended__float_8h_source.html">vf_extended_float.h</a>.</p>
 
-<p>Referenced by <a class="el" href="vf__extended__float_8c_source.html#l00095">vff_init()</a>.</p>
+<p>Referenced by <a class="el" href="vf__extended__float_8c_source.html#l00098">vff_init()</a>.</p>
 
 </div>
 </div>
@@ -210,11 +209,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00095">95</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
+<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00098">98</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
 
-<p>References <a class="el" href="vf__extended__float_8c_source.html#l00062">INIT_PXX</a>, <a class="el" href="telemetry_8c_source.html#l00038">register_periodic_telemetry()</a>, and <a class="el" href="vf__extended__float_8h_source.html#l00033">VFF_STATE_SIZE</a>.</p>
+<p>References <a class="el" href="vf__extended__float_8h_source.html#l00039">VffExtended::bias</a>, <a class="el" href="vf__extended__float_8c_source.html#l00070">INIT_PXX</a>, <a class="el" href="vf__extended__float_8h_source.html#l00040">VffExtended::offset</a>, <a class="el" href="vf__extended__float_8h_source.html#l00046">VffExtended::P</a>, <a class="el" href="telemetry_8c_source.html#l00038">register_periodic_telemetry()</a>, <a class="el" href="vf__extended__float_8c_source.html#l00081">vff</a>, <a class="el" href="vf__extended__float_8h_source.html#l00033">VFF_STATE_SIZE</a>, <a class="el" href="vf__extended__float_8h_source.html#l00037">VffExtended::z</a>, and <a class="el" href="vf__extended__float_8h_source.html#l00038">VffExtended::zdot</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00125">ins_init()</a>, and <a class="el" href="vf__extended__float_8c_source.html#l00342">vff_realign()</a>.</p>
+<p>Referenced by <a class="el" href="vf__extended__float_8c_source.html#l00094">vff_init_zero()</a>, and <a class="el" href="vf__extended__float_8c_source.html#l00345">vff_realign()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -223,7 +222,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vf__extended__float_8h_a3cf28b18a6935e816045e43bf6281c67_cgraph.png" border="0" usemap="#vf__extended__float_8h_a3cf28b18a6935e816045e43bf6281c67_cgraph" alt=""/></div>
 <map name="vf__extended__float_8h_a3cf28b18a6935e816045e43bf6281c67_cgraph" id="vf__extended__float_8h_a3cf28b18a6935e816045e43bf6281c67_cgraph">
-<area shape="rect" id="node3" href="telemetry_8c.html#abb4aa9b3c0c8d93e1372de5da86de828" title="Register a telemetry callback function." alt="" coords="116,5,292,33"/></map>
+<area shape="rect" id="node3" href="telemetry_8c.html#abb4aa9b3c0c8d93e1372de5da86de828" title="Register a telemetry callback function." alt="" coords="117,5,315,33"/></map>
 </div>
 </p>
 
@@ -234,9 +233,27 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vf__extended__float_8h_a3cf28b18a6935e816045e43bf6281c67_icgraph.png" border="0" usemap="#vf__extended__float_8h_a3cf28b18a6935e816045e43bf6281c67_icgraph" alt=""/></div>
 <map name="vf__extended__float_8h_a3cf28b18a6935e816045e43bf6281c67_icgraph" id="vf__extended__float_8h_a3cf28b18a6935e816045e43bf6281c67_icgraph">
-<area shape="rect" id="node3" href="ins__int_8c.html#abf3028c2ada542781b8a5e1eb20c17ce" title="INS initialization." alt="" coords="393,30,455,58"/><area shape="rect" id="node5" href="vf__float_8h.html#a9871b34cda71fc04b9e312b8ce4f11af" title="vff_realign" alt="" coords="116,30,196,58"/><area shape="rect" id="node7" href="ins__int_8c.html#a280ea4c959a462604573f57637749791" title="INS vertical realign." alt="" coords="245,30,344,58"/><area shape="rect" id="node9" href="ins__int_8c.html#a3c7bfebd16999823476aada2b31b426e" title="baro_cb" alt="" coords="261,81,328,109"/></map>
+<area shape="rect" id="node3" href="vf__float_8h.html#a2358072559748851df8c44c975c43ebb" title="vff_init_zero" alt="" coords="253,5,352,33"/><area shape="rect" id="node7" href="vf__float_8h.html#a9871b34cda71fc04b9e312b8ce4f11af" title="vff_realign" alt="" coords="119,55,204,83"/><area shape="rect" id="node5" href="ins__int_8c.html#abf3028c2ada542781b8a5e1eb20c17ce" title="INS initialization." alt="" coords="400,30,467,58"/><area shape="rect" id="node9" href="ins__int_8c.html#a3c7bfebd16999823476aada2b31b426e" title="baro_cb" alt="" coords="267,55,339,83"/></map>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="a2358072559748851df8c44c975c43ebb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vff_init_zero </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00094">94</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
 
 </div>
 </div>
@@ -254,7 +271,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00132">132</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
+<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00135">135</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
 
 </div>
 </div>
@@ -272,92 +289,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00342">342</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa7be1a38f359b14ce8f7bd719086541a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vff_update_alt </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>z_meas</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00278">278</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
-
-<p>References <a class="el" href="vf__extended__float_8c_source.html#l00070">R_ALT</a>, and <a class="el" href="vf__extended__float_8c_source.html#l00240">update_alt_conf()</a>.</p>
-
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="vf__extended__float_8h_aa7be1a38f359b14ce8f7bd719086541a_cgraph.png" border="0" usemap="#vf__extended__float_8h_aa7be1a38f359b14ce8f7bd719086541a_cgraph" alt=""/></div>
-<map name="vf__extended__float_8h_aa7be1a38f359b14ce8f7bd719086541a_cgraph" id="vf__extended__float_8h_aa7be1a38f359b14ce8f7bd719086541a_cgraph">
-<area shape="rect" id="node3" href="vf__extended__float_8c.html#a8cf6550aed7ee0fab93545ce283d183c" title="update_alt_conf" alt="" coords="157,5,272,33"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a71a8b7ccf3526fe63cd48ac4117864fa"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vff_update_alt_conf </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>z_meas</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>conf</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00282">282</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
-
-<p>References <a class="el" href="vf__extended__float_8c_source.html#l00240">update_alt_conf()</a>.</p>
-
-<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00315">ins_update_sonar()</a>.</p>
-
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="vf__extended__float_8h_a71a8b7ccf3526fe63cd48ac4117864fa_cgraph.png" border="0" usemap="#vf__extended__float_8h_a71a8b7ccf3526fe63cd48ac4117864fa_cgraph" alt=""/></div>
-<map name="vf__extended__float_8h_a71a8b7ccf3526fe63cd48ac4117864fa_cgraph" id="vf__extended__float_8h_a71a8b7ccf3526fe63cd48ac4117864fa_cgraph">
-<area shape="rect" id="node3" href="vf__extended__float_8c.html#a8cf6550aed7ee0fab93545ce283d183c" title="update_alt_conf" alt="" coords="189,5,304,33"/></map>
-</div>
-</p>
-
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="vf__extended__float_8h_a71a8b7ccf3526fe63cd48ac4117864fa_icgraph.png" border="0" usemap="#vf__extended__float_8h_a71a8b7ccf3526fe63cd48ac4117864fa_icgraph" alt=""/></div>
-<map name="vf__extended__float_8h_a71a8b7ccf3526fe63cd48ac4117864fa_icgraph" id="vf__extended__float_8h_a71a8b7ccf3526fe63cd48ac4117864fa_icgraph">
-<area shape="rect" id="node3" href="ins__int_8c.html#acc04164712bf9640e891c67dc6eeb424" title="Update INS state with sonar measurements." alt="" coords="191,5,313,33"/></map>
-</div>
-</p>
+<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00345">345</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
 
 </div>
 </div>
@@ -375,31 +307,31 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00218">218</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
+<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00221">221</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
 
-<p>References <a class="el" href="vf__extended__float_8c_source.html#l00069">R_BARO</a>, and <a class="el" href="vf__extended__float_8c_source.html#l00179">update_baro_conf()</a>.</p>
+<p>References <a class="el" href="vf__extended__float_8c_source.html#l00077">R_BARO</a>, and <a class="el" href="vf__extended__float_8c_source.html#l00182">update_baro_conf()</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00220">baro_cb()</a>.</p>
+<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00249">baro_cb()</a>.</p>
 
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vf__extended__float_8h_a94b26d899a6d7ca4e26cb7df3f45ef49_cgraph.png" border="0" usemap="#vf__extended__float_8h_a94b26d899a6d7ca4e26cb7df3f45ef49_cgraph" alt=""/></div>
 <map name="vf__extended__float_8h_a94b26d899a6d7ca4e26cb7df3f45ef49_cgraph" id="vf__extended__float_8h_a94b26d899a6d7ca4e26cb7df3f45ef49_cgraph">
-<area shape="rect" id="node3" href="vf__extended__float_8c.html#a7cc8f440a2dfd6769810468a88ccec67" title="update_baro_conf" alt="" coords="168,5,293,33"/></map>
+<area shape="rect" id="node3" href="vf__extended__float_8c.html#a7cc8f440a2dfd6769810468a88ccec67" title="update_baro_conf" alt="" coords="180,5,316,33"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vf__extended__float_8h_a94b26d899a6d7ca4e26cb7df3f45ef49_icgraph.png" border="0" usemap="#vf__extended__float_8h_a94b26d899a6d7ca4e26cb7df3f45ef49_icgraph" alt=""/></div>
 <map name="vf__extended__float_8h_a94b26d899a6d7ca4e26cb7df3f45ef49_icgraph" id="vf__extended__float_8h_a94b26d899a6d7ca4e26cb7df3f45ef49_icgraph">
-<area shape="rect" id="node3" href="ins__int_8c.html#a3c7bfebd16999823476aada2b31b426e" title="baro_cb" alt="" coords="169,5,236,33"/><area shape="rect" id="node5" href="ins__int_8c.html#abf3028c2ada542781b8a5e1eb20c17ce" title="INS initialization." alt="" coords="287,5,348,33"/></map>
+<area shape="rect" id="node3" href="ins__int_8c.html#a3c7bfebd16999823476aada2b31b426e" title="baro_cb" alt="" coords="180,5,252,33"/><area shape="rect" id="node5" href="ins__int_8c.html#abf3028c2ada542781b8a5e1eb20c17ce" title="INS initialization." alt="" coords="301,5,368,33"/></map>
 </div>
 </p>
 
@@ -429,18 +361,18 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00222">222</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
+<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00225">225</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
 
-<p>References <a class="el" href="vf__extended__float_8c_source.html#l00179">update_baro_conf()</a>.</p>
+<p>References <a class="el" href="vf__extended__float_8c_source.html#l00182">update_baro_conf()</a>.</p>
 
-<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vf__extended__float_8h_aa7f8c70d85481ee00728646ab5d82e2a_cgraph.png" border="0" usemap="#vf__extended__float_8h_aa7f8c70d85481ee00728646ab5d82e2a_cgraph" alt=""/></div>
 <map name="vf__extended__float_8h_aa7f8c70d85481ee00728646ab5d82e2a_cgraph" id="vf__extended__float_8h_aa7f8c70d85481ee00728646ab5d82e2a_cgraph">
-<area shape="rect" id="node3" href="vf__extended__float_8c.html#a7cc8f440a2dfd6769810468a88ccec67" title="update_baro_conf" alt="" coords="200,5,325,33"/></map>
+<area shape="rect" id="node3" href="vf__extended__float_8c.html#a7cc8f440a2dfd6769810468a88ccec67" title="update_baro_conf" alt="" coords="215,5,351,33"/></map>
 </div>
 </p>
 
@@ -460,148 +392,94 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00337">337</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
+<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00340">340</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
 
-<p>References <a class="el" href="vf__extended__float_8c_source.html#l00071">R_OFFSET</a>, and <a class="el" href="vf__extended__float_8c_source.html#l00300">update_offset_conf()</a>.</p>
+<p>References <a class="el" href="vf__extended__float_8c_source.html#l00079">R_OFFSET</a>, and <a class="el" href="vf__extended__float_8c_source.html#l00303">update_offset_conf()</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00315">ins_update_sonar()</a>.</p>
-
-<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vf__extended__float_8h_a3726fbb9f54c7ec7a8579c7af3f15a4c_cgraph.png" border="0" usemap="#vf__extended__float_8h_a3726fbb9f54c7ec7a8579c7af3f15a4c_cgraph" alt=""/></div>
 <map name="vf__extended__float_8h_a3726fbb9f54c7ec7a8579c7af3f15a4c_cgraph" id="vf__extended__float_8h_a3726fbb9f54c7ec7a8579c7af3f15a4c_cgraph">
-<area shape="rect" id="node3" href="vf__extended__float_8c.html#a3b99dfff6cd512233a5bf7b9bdd49208" title="update_offset_conf" alt="" coords="177,5,308,33"/></map>
+<area shape="rect" id="node3" href="vf__extended__float_8c.html#a3b99dfff6cd512233a5bf7b9bdd49208" title="update_offset_conf" alt="" coords="187,5,331,33"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="vf__extended__float_8h_a3726fbb9f54c7ec7a8579c7af3f15a4c_icgraph.png" border="0" usemap="#vf__extended__float_8h_a3726fbb9f54c7ec7a8579c7af3f15a4c_icgraph" alt=""/></div>
-<map name="vf__extended__float_8h_a3726fbb9f54c7ec7a8579c7af3f15a4c_icgraph" id="vf__extended__float_8h_a3726fbb9f54c7ec7a8579c7af3f15a4c_icgraph">
-<area shape="rect" id="node3" href="ins__int_8c.html#acc04164712bf9640e891c67dc6eeb424" title="Update INS state with sonar measurements." alt="" coords="177,5,300,33"/></map>
+</div>
+<a class="anchor" id="a43ba970ac8015812427c9681be41100a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vff_update_z </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>z_meas</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00281">281</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
+
+<p>References <a class="el" href="vf__extended__float_8c_source.html#l00078">R_ALT</a>, and <a class="el" href="vf__extended__float_8c_source.html#l00243">update_alt_conf()</a>.</p>
+
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="vf__extended__float_8h_a43ba970ac8015812427c9681be41100a_cgraph.png" border="0" usemap="#vf__extended__float_8h_a43ba970ac8015812427c9681be41100a_cgraph" alt=""/></div>
+<map name="vf__extended__float_8h_a43ba970ac8015812427c9681be41100a_cgraph" id="vf__extended__float_8h_a43ba970ac8015812427c9681be41100a_cgraph">
+<area shape="rect" id="node3" href="vf__extended__float_8c.html#a8cf6550aed7ee0fab93545ce283d183c" title="update_alt_conf" alt="" coords="159,5,281,33"/></map>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="a383a56a1eaa73890c3b6ca0599c3fb67"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vff_update_z_conf </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>z_meas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>conf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00285">285</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
 
 </div>
 </div>
 <h2>Variable Documentation</h2>
-<a class="anchor" id="a24c283535083af381e89d00c91761df9"></a>
+<a class="anchor" id="aa8558bc47d778efba706bc1fc7f08d36"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float vff_bias</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00075">75</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2d44477636d691d3c1e51e0e092a878b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float vff_offset</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00076">76</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
-
-<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00315">ins_update_sonar()</a>, <a class="el" href="vf__extended__float_8c_source.html#l00179">update_baro_conf()</a>, and <a class="el" href="vf__extended__float_8c_source.html#l00300">update_offset_conf()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0770019985f92fda99f2bdc98f47c267"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float vff_P[<a class="el" href="vf__float_8h.html#a18723b10d465c48b447ad96b46f8a25b">VFF_STATE_SIZE</a>][<a class="el" href="vf__float_8h.html#a18723b10d465c48b447ad96b46f8a25b">VFF_STATE_SIZE</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00079">79</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a1222ca88d397976e39d7074c3467974a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float vff_z</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00073">73</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a70bf4fe0af826d88a29e934e4768b9fc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float vff_z_meas</td>
+          <td class="memname">struct <a class="el" href="structVffExtended.html">VffExtended</a> vff</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00081">81</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a78d01fa5691c897301843af95d1c73f4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float vff_z_meas_baro</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00082">82</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="abf478862714adc9584d537b9363011a4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float vff_zdot</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00074">74</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac36a73bd31bb8d32ee5627b70aadd855"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float vff_zdotdot</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00077">77</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
 
 </div>
 </div>
@@ -611,7 +489,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_800f0b451dc44a2b86d16d857cea778d.html">ins</a></li><li class="navelem"><a class="el" href="vf__extended__float_8h.html">vf_extended_float.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:11 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:09 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

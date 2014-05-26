@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('cam__roll_8c_source.html','');});
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;math.h&gt;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cam_8h.html" title="Pan/Tilt camera API.">cam.h</a>&quot;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="nav_8h.html" title="Fixedwing Navigation library.">subsystems/nav.h</a>&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="nav_8h.html" title="Fixedwing Navigation library.">firmwares/fixedwing/nav.h</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;autopilot.h&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;generated/flight_plan.h&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="state_8h.html" title="API to get/set the generic vehicle states.">state.h</a>&quot;</span></div>
@@ -152,39 +152,38 @@ $(document).ready(function(){initNavTree('cam__roll_8c_source.html','');});
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#define MODE_MANUAL     0</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MODE_STABILIZED 1</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="cam__roll_8h.html#a2d6dd6df95d711fb9964da5bb15c5706">cam_roll_mode</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;bool_t <a class="code" href="cam__roll_8h.html#ada65368e248aec566f6332c5ef895eff">cam_roll_switch</a>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">void</span> <a class="code" href="cam_8c.html#a1d12354dff08edc23a4890724f1bb8fc">cam_init</a>( <span class="keywordtype">void</span> ) {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="cam__roll_8h.html#ada65368e248aec566f6332c5ef895eff">cam_roll_switch</a> = 0;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#if defined VIDEO_SWITCH_PIN &amp;&amp; !(defined SITL)</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span>  <a class="code" href="LPC21xx_8h.html#aacf5b0c18685afd32ed41af9c3934479">IO0DIR</a> |= _BV(VIDEO_SWITCH_PIN);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="LPC21xx_8h.html#a2aad809a96f91f42efabb2b75c23773a">IO0CLR</a> = _BV(VIDEO_SWITCH_PIN);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">void</span> <a class="code" href="cam_8c.html#a1ac78decc31cdd4c6b7584a8bf42d315" title="For CAM_MODE_AC_TARGET mode.">cam_periodic</a>( <span class="keywordtype">void</span> ) {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordflow">switch</span> (cam_roll_mode) {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordflow">case</span> MODE_STABILIZED:</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="cam__roll_8c.html#abaeaf62e5dc05d5dff6664e5b7f12649">phi_c</a> = <a class="code" href="cam__roll_8c.html#a0d2a1df647356af3a0ecef3970839a58">cam_roll_phi</a> + <a class="code" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float).">stateGetNedToBodyEulers_f</a>()-&gt;<a class="code" href="structFloatEulers.html#a4b2c73d59e89d78354658b20058720e0" title="in radians">phi</a>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="rotorcraft_2autopilot_8h.html#ab3d62edb632309d9a423661747cdb73b" title="Default RC mode.">MODE_MANUAL</a>:</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="cam__roll_8c.html#abaeaf62e5dc05d5dff6664e5b7f12649">phi_c</a> = <a class="code" href="cam__roll_8c.html#a0d2a1df647356af3a0ecef3970839a58">cam_roll_phi</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="cam__roll_8c.html#abaeaf62e5dc05d5dff6664e5b7f12649">phi_c</a> = 0;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <a class="code" href="inter__mcu_8c.html#ac13671906f2663b39fde033f4cb4a410">ap_state</a>-&gt;commands[COMMAND_CAM_ROLL] = <a class="code" href="paparazzi_8h.html#a6fff2a38e48dea3e7e91896c6ab60cf7">TRIM_PPRZ</a>(<a class="code" href="cam__roll_8c.html#abaeaf62e5dc05d5dff6664e5b7f12649">phi_c</a> * <a class="code" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a> / <a class="code" href="cam__roll_8c.html#a5a663e9e6f606007f3b693bc808b1014">CAM_PHI_MAX</a>);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif // MOBILE_CAM</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#ifndef CAM_ROLL_START_MODE</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CAM_ROLL_START_MODE MODE_MANUAL</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="cam__roll_8h.html#a2d6dd6df95d711fb9964da5bb15c5706">cam_roll_mode</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">void</span> <a class="code" href="cam_8c.html#a1d12354dff08edc23a4890724f1bb8fc">cam_init</a>( <span class="keywordtype">void</span> ) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="cam__roll_8h.html#a2d6dd6df95d711fb9964da5bb15c5706">cam_roll_mode</a> = CAM_ROLL_START_MODE;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">void</span> <a class="code" href="cam_8c.html#a1ac78decc31cdd4c6b7584a8bf42d315" title="For CAM_MODE_AC_TARGET mode.">cam_periodic</a>( <span class="keywordtype">void</span> ) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">switch</span> (cam_roll_mode) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordflow">case</span> MODE_STABILIZED:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="cam__roll_8c.html#abaeaf62e5dc05d5dff6664e5b7f12649">phi_c</a> = <a class="code" href="cam__roll_8c.html#a0d2a1df647356af3a0ecef3970839a58">cam_roll_phi</a> + <a class="code" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float).">stateGetNedToBodyEulers_f</a>()-&gt;<a class="code" href="structFloatEulers.html#a4b2c73d59e89d78354658b20058720e0" title="in radians">phi</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="rotorcraft_2autopilot_8h.html#ab3d62edb632309d9a423661747cdb73b" title="Default RC mode.">MODE_MANUAL</a>:</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="cam__roll_8c.html#abaeaf62e5dc05d5dff6664e5b7f12649">phi_c</a> = <a class="code" href="cam__roll_8c.html#a0d2a1df647356af3a0ecef3970839a58">cam_roll_phi</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="cam__roll_8c.html#abaeaf62e5dc05d5dff6664e5b7f12649">phi_c</a> = 0;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="inter__mcu_8c.html#ac13671906f2663b39fde033f4cb4a410">ap_state</a>-&gt;commands[COMMAND_CAM_ROLL] = <a class="code" href="paparazzi_8h.html#a6fff2a38e48dea3e7e91896c6ab60cf7">TRIM_PPRZ</a>(<a class="code" href="cam__roll_8c.html#abaeaf62e5dc05d5dff6664e5b7f12649">phi_c</a> * <a class="code" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a> / <a class="code" href="cam__roll_8c.html#a5a663e9e6f606007f3b693bc808b1014">CAM_PHI_MAX</a>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif // MOBILE_CAM</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_900c035387cecacfdb66232491aebefe.html">cam_control</a></li><li class="navelem"><a class="el" href="cam__roll_8c.html">cam_roll.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

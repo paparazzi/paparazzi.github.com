@@ -1,17 +1,19 @@
 <map id="flight_benchmark_periodic" name="flight_benchmark_periodic">
-<area shape="rect" id="node3" href="$flight__benchmark_8c.html#acf35bacfcd9dae8ab6b2aa057cf8aa77" title="flight_benchmark_reset" alt="" coords="228,5,383,33"/>
-<area shape="rect" id="node5" href="$group__state__wind__airspeed.html#ga0ab69b83eeebb79cbdb2c8e81bfb659b" title="Get airspeed (float)." alt="" coords="239,55,372,83"/>
-<area shape="rect" id="node9" href="$group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float)." alt="" coords="229,106,381,134"/>
-<area shape="rect" id="node7" href="$group__state__wind__airspeed.html#gac2516cd42b66afab524662b27fd96cd5" title="stateCalcAirspeed_f" alt="" coords="441,55,580,83"/>
-<area shape="rect" id="node11" href="$group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title="stateCalcPositionEnu_f" alt="" coords="432,106,589,134"/>
-<area shape="rect" id="node13" href="$pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="816,5,955,33"/>
-<area shape="rect" id="node15" href="$pprz__geodetic__int_8c.html#a710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="637,106,768,134"/>
-<area shape="rect" id="node19" href="$pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title="enu_of_lla_point_f" alt="" coords="640,55,765,83"/>
-<area shape="rect" id="node24" href="$pprz__geodetic__int_8c.html#a386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="656,157,749,185"/>
-<area shape="rect" id="node28" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="656,207,749,235"/>
-<area shape="rect" id="node17" href="$pprz__geodetic__int_8c.html#a85bcbfc73a43b120465422ec55647573" title="enu_of_ecef_point_i" alt="" coords="816,106,955,134"/>
-<area shape="rect" id="node21" href="$pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="837,55,933,83"/>
-<area shape="rect" id="node26" href="$pprz__geodetic__double_8c.html#a33dae600eb50aea456b6cdbeec53c849" title="ecef_of_lla_d" alt="" coords="836,157,935,185"/>
-<area shape="rect" id="node30" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="819,207,952,235"/>
-<area shape="rect" id="node32" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="824,258,947,302"/>
+<area shape="rect" id="node3" href="$flight__benchmark_8c.html#acf35bacfcd9dae8ab6b2aa057cf8aa77" title="flight_benchmark_reset" alt="" coords="244,11,415,39"/>
+<area shape="rect" id="node5" href="$group__state__wind__airspeed.html#ga0ab69b83eeebb79cbdb2c8e81bfb659b" title="Get airspeed (float)." alt="" coords="257,62,401,90"/>
+<area shape="rect" id="node9" href="$group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float)." alt="" coords="248,113,411,141"/>
+<area shape="rect" id="node34" href="$group__state__position.html#ga7488f3b1e3afa9515541c0130278bdac" title="Get position in UTM coordinates (float)." alt="" coords="247,175,412,203"/>
+<area shape="rect" id="node7" href="$group__state__wind__airspeed.html#gac2516cd42b66afab524662b27fd96cd5" title="stateCalcAirspeed_f" alt="" coords="475,62,624,90"/>
+<area shape="rect" id="node11" href="$group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title="stateCalcPositionEnu_f" alt="" coords="467,113,632,141"/>
+<area shape="rect" id="node13" href="$pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="869,106,1019,134"/>
+<area shape="rect" id="node15" href="$pprz__geodetic__int_8c.html#a710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="683,55,821,83"/>
+<area shape="rect" id="node19" href="$pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title="enu_of_lla_point_f" alt="" coords="684,157,820,185"/>
+<area shape="rect" id="node24" href="$pprz__geodetic__int_8c.html#a386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="703,5,801,33"/>
+<area shape="rect" id="node28" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="703,207,801,235"/>
+<area shape="rect" id="node17" href="$pprz__geodetic__int_8c.html#a85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="871,55,1017,83"/>
+<area shape="rect" id="node21" href="$pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="895,157,993,185"/>
+<area shape="rect" id="node26" href="$pprz__geodetic__double_8c.html#a33dae600eb50aea456b6cdbeec53c849" title="ecef_of_lla_d" alt="" coords="892,5,996,33"/>
+<area shape="rect" id="node30" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="871,207,1017,235"/>
+<area shape="rect" id="node32" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="876,258,1012,302"/>
+<area shape="rect" id="node36" href="$group__state__position.html#ga6893f5e3d84e0464d2bc6fc86a08f16d" title="stateCalcPositionUtm_f" alt="" coords="464,201,635,229"/>
 </map>

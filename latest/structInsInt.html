@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -122,13 +122,17 @@ $(document).ready(function(){initNavTree('structInsInt.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structInsInt__coll__graph.png" border="0" usemap="#InsInt_coll__map" alt="Collaboration graph"/></div>
 <map name="InsInt_coll__map" id="InsInt_coll__map">
-<area shape="rect" id="node2" href="structNedCoor__i.html" title="vector in North East Down coordinates" alt="" coords="12,99,95,127"/><area shape="rect" id="node4" href="structLtpDef__i.html" title="definition of the local (flat earth) coordinate system" alt="" coords="119,99,188,127"/><area shape="rect" id="node6" href="structInt32Mat33.html" title="Int32Mat33" alt="" coords="5,6,91,34"/><area shape="rect" id="node8" href="structLlaCoor__i.html" title="vector in Latitude, Longitude and Altitude" alt="" coords="115,6,192,34"/><area shape="rect" id="node10" href="structEcefCoor__i.html" title="vector in EarthCenteredEarthFixed coordinates" alt="" coords="216,6,301,34"/></map>
+<area shape="rect" id="node2" href="structNedCoor__i.html" title="vector in North East Down coordinates" alt="" coords="13,99,101,127"/><area shape="rect" id="node4" href="structLtpDef__i.html" title="definition of the local (flat earth) coordinate system" alt="" coords="125,99,200,127"/><area shape="rect" id="node6" href="structInt32Mat33.html" title="Int32Mat33" alt="" coords="5,6,99,34"/><area shape="rect" id="node8" href="structLlaCoor__i.html" title="vector in Latitude, Longitude and Altitude" alt="" coords="123,6,203,34"/><area shape="rect" id="node10" href="structEcefCoor__i.html" title="vector in EarthCenteredEarthFixed coordinates" alt="" coords="227,6,315,34"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a3798a9f466569b33fe7c582214b9ca76"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structLtpDef__i.html">LtpDef_i</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInsInt.html#a3798a9f466569b33fe7c582214b9ca76">ltp_def</a></td></tr>
 <tr class="memitem:a5a6047530a0cbf266c6d8cafd5009f35"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInsInt.html#a5a6047530a0cbf266c6d8cafd5009f35">ltp_initialized</a></td></tr>
+<tr class="memitem:a7aba8196480bbba939606197608cce68"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInsInt.html#a7aba8196480bbba939606197608cce68">hf_realign</a></td></tr>
+<tr class="memdesc:a7aba8196480bbba939606197608cce68"><td class="mdescLeft">&#160;</td><td class="mdescRight">request to realign horizontal filter.  <a href="#a7aba8196480bbba939606197608cce68"></a><br/></td></tr>
+<tr class="memitem:a014826f2cd6804220fe2c33f78e8fb1a"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInsInt.html#a014826f2cd6804220fe2c33f78e8fb1a">vf_reset</a></td></tr>
+<tr class="memdesc:a014826f2cd6804220fe2c33f78e8fb1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">request to reset vertical filter.  <a href="#a014826f2cd6804220fe2c33f78e8fb1a"></a><br/></td></tr>
 <tr class="memitem:a8c79f80a571473ffebea9409c9eb044e"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structNedCoor__i.html">NedCoor_i</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInsInt.html#a8c79f80a571473ffebea9409c9eb044e">ltp_pos</a></td></tr>
 <tr class="memitem:a926aac03155fa6277ecb06540e034314"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structNedCoor__i.html">NedCoor_i</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInsInt.html#a926aac03155fa6277ecb06540e034314">ltp_speed</a></td></tr>
 <tr class="memitem:ae19fc5aab05a383cb10c89ad6da2840a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structNedCoor__i.html">NedCoor_i</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInsInt.html#ae19fc5aab05a383cb10c89ad6da2840a">ltp_accel</a></td></tr>
@@ -140,7 +144,7 @@ Data Fields</h2></td></tr>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="structIns.html" title="Inertial Navigation System state.">Ins</a> implementation state (fixed point) </p>
 
-<p>Definition at line <a class="el" href="ins__int_8h_source.html#l00042">42</a> of file <a class="el" href="ins__int_8h_source.html">ins_int.h</a>.</p>
+<p>Definition at line <a class="el" href="ins__int_8h_source.html#l00038">38</a> of file <a class="el" href="ins__int_8h_source.html">ins_int.h</a>.</p>
 </div><h2>Field Documentation</h2>
 <a class="anchor" id="aca30dc41d6067fbfe1f106fdbc00b684"></a>
 <div class="memitem">
@@ -152,7 +156,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__int_8h_source.html#l00054">54</a> of file <a class="el" href="ins__int_8h_source.html">ins_int.h</a>.</p>
+<p>Definition at line <a class="el" href="ins__int_8h_source.html#l00060">60</a> of file <a class="el" href="ins__int_8h_source.html">ins_int.h</a>.</p>
+
+<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00249">baro_cb()</a>, <a class="el" href="ins__int_8c_source.html#l00152">ins_init()</a>, and <a class="el" href="ins__int_8c_source.html#l00218">ins_propagate()</a>.</p>
 
 </div>
 </div>
@@ -168,7 +174,28 @@ Data Fields</h2></td></tr>
 
 <p>z-position calculated from baro in meters (z-down) </p>
 
-<p>Definition at line <a class="el" href="ins__int_8h_source.html#l00052">52</a> of file <a class="el" href="ins__int_8h_source.html">ins_int.h</a>.</p>
+<p>Definition at line <a class="el" href="ins__int_8h_source.html#l00058">58</a> of file <a class="el" href="ins__int_8h_source.html">ins_int.h</a>.</p>
+
+<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00249">baro_cb()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7aba8196480bbba939606197608cce68"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool_t InsInt::hf_realign</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>request to realign horizontal filter. </p>
+<p>Sets to current position (local origin unchanged). </p>
+
+<p>Definition at line <a class="el" href="ins__int_8h_source.html#l00045">45</a> of file <a class="el" href="ins__int_8h_source.html">ins_int.h</a>.</p>
+
+<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00152">ins_init()</a>, <a class="el" href="ins__int_8c_source.html#l00196">ins_reset_local_origin()</a>, and <a class="el" href="ins__int_8c_source.html#l00276">ins_update_gps()</a>.</p>
 
 </div>
 </div>
@@ -182,7 +209,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__int_8h_source.html#l00049">49</a> of file <a class="el" href="ins__int_8h_source.html">ins_int.h</a>.</p>
+<p>Definition at line <a class="el" href="ins__int_8h_source.html#l00055">55</a> of file <a class="el" href="ins__int_8h_source.html">ins_int.h</a>.</p>
+
+<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00152">ins_init()</a>, <a class="el" href="ins__int_8c_source.html#l00374">ins_ned_to_state()</a>, <a class="el" href="ins__int_8c_source.html#l00218">ins_propagate()</a>, and <a class="el" href="ins__int_8c_source.html#l00386">ins_update_from_vff()</a>.</p>
 
 </div>
 </div>
@@ -196,7 +225,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__int_8h_source.html#l00043">43</a> of file <a class="el" href="ins__int_8h_source.html">ins_int.h</a>.</p>
+<p>Definition at line <a class="el" href="ins__int_8h_source.html#l00039">39</a> of file <a class="el" href="ins__int_8h_source.html">ins_int.h</a>.</p>
+
+<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00356">ins_init_origin_from_flightplan()</a>, <a class="el" href="ins__int_8c_source.html#l00204">ins_reset_altitude_ref()</a>, and <a class="el" href="ins__int_8c_source.html#l00276">ins_update_gps()</a>.</p>
 
 </div>
 </div>
@@ -210,7 +241,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__int_8h_source.html#l00044">44</a> of file <a class="el" href="ins__int_8h_source.html">ins_int.h</a>.</p>
+<p>Definition at line <a class="el" href="ins__int_8h_source.html#l00040">40</a> of file <a class="el" href="ins__int_8h_source.html">ins_int.h</a>.</p>
+
+<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00152">ins_init()</a>, <a class="el" href="ins__int_8c_source.html#l00191">ins_periodic()</a>, <a class="el" href="ins__int_8c_source.html#l00196">ins_reset_local_origin()</a>, and <a class="el" href="ins__int_8c_source.html#l00276">ins_update_gps()</a>.</p>
 
 </div>
 </div>
@@ -224,7 +257,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__int_8h_source.html#l00047">47</a> of file <a class="el" href="ins__int_8h_source.html">ins_int.h</a>.</p>
+<p>Definition at line <a class="el" href="ins__int_8h_source.html#l00053">53</a> of file <a class="el" href="ins__int_8h_source.html">ins_int.h</a>.</p>
+
+<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00152">ins_init()</a>, <a class="el" href="ins__int_8c_source.html#l00374">ins_ned_to_state()</a>, <a class="el" href="ins__int_8c_source.html#l00386">ins_update_from_vff()</a>, and <a class="el" href="ins__int_8c_source.html#l00276">ins_update_gps()</a>.</p>
 
 </div>
 </div>
@@ -238,7 +273,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__int_8h_source.html#l00048">48</a> of file <a class="el" href="ins__int_8h_source.html">ins_int.h</a>.</p>
+<p>Definition at line <a class="el" href="ins__int_8h_source.html#l00054">54</a> of file <a class="el" href="ins__int_8h_source.html">ins_int.h</a>.</p>
+
+<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00152">ins_init()</a>, <a class="el" href="ins__int_8c_source.html#l00374">ins_ned_to_state()</a>, <a class="el" href="ins__int_8c_source.html#l00386">ins_update_from_vff()</a>, and <a class="el" href="ins__int_8c_source.html#l00276">ins_update_gps()</a>.</p>
 
 </div>
 </div>
@@ -252,7 +289,28 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__int_8h_source.html#l00053">53</a> of file <a class="el" href="ins__int_8h_source.html">ins_int.h</a>.</p>
+<p>Definition at line <a class="el" href="ins__int_8h_source.html#l00059">59</a> of file <a class="el" href="ins__int_8h_source.html">ins_int.h</a>.</p>
+
+<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00249">baro_cb()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a014826f2cd6804220fe2c33f78e8fb1a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool_t InsInt::vf_reset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>request to reset vertical filter. </p>
+<p>Sets the z-position to zero and resets the the z-reference to current altitude. </p>
+
+<p>Definition at line <a class="el" href="ins__int_8h_source.html#l00050">50</a> of file <a class="el" href="ins__int_8h_source.html">ins_int.h</a>.</p>
+
+<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00249">baro_cb()</a>, <a class="el" href="ins__int_8c_source.html#l00152">ins_init()</a>, <a class="el" href="ins__int_8c_source.html#l00204">ins_reset_altitude_ref()</a>, and <a class="el" href="ins__int_8c_source.html#l00196">ins_reset_local_origin()</a>.</p>
 
 </div>
 </div>
@@ -265,7 +323,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structInsInt.html">InsInt</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:12 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:14 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

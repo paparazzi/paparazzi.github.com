@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -132,13 +132,23 @@ $(document).ready(function(){initNavTree('ahrs_8c_source.html','');});
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="ahrs_8h.html#a36881ecb25696757541e4fa62cd45853">   30</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structAhrs.html" title="Attitude and Heading Reference System state.">Ahrs</a> <a class="code" href="ahrs_8c.html#a36881ecb25696757541e4fa62cd45853" title="global AHRS state">ahrs</a>;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="ahrs_8c.html#ad1480e9557edcc543498ca259cee6c7d">   32</a></span>&#160;<span class="preprocessor">#define WEAK __attribute__((weak))</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span><span class="comment">// weak functions, used if not explicitly provided by implementation</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="ahrs_8c.html#acf70d9d43f51ef788ac85f4070ae5d2c">   35</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ahrs_8c.html#ad1480e9557edcc543498ca259cee6c7d">WEAK</a> <a class="code" href="ahrs__chimu__spi_8c.html#af8f4df7ae38ca5b239eac30e7d259e46" title="Propagation.">ahrs_propagate</a>(<span class="keywordtype">void</span>) {}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="ahrs_8c.html#ae1596c22b5c551e0e5871af5cf001462">   37</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ahrs_8c.html#ad1480e9557edcc543498ca259cee6c7d">WEAK</a> <a class="code" href="ahrs__chimu__spi_8c.html#a8bf83860498b05e7e94484cdcbcb1b7a" title="Update AHRS state with accerleration measurements.">ahrs_update_accel</a>(<span class="keywordtype">void</span>) {}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="ahrs_8c.html#ab340046fd93cc5bacfb7213af7d0a124">   39</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ahrs_8c.html#ad1480e9557edcc543498ca259cee6c7d">WEAK</a> <a class="code" href="ahrs__float__cmpl_8c.html#a781832a9119845d31bda0fc8a8bb8bf3" title="Update AHRS state with magnetometer measurements.">ahrs_update_mag</a>(<span class="keywordtype">void</span>) {}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="ahrs_8c.html#a9c24d230fa8b5a9413433fb394beb33b">   41</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ahrs_8c.html#ad1480e9557edcc543498ca259cee6c7d">WEAK</a> <a class="code" href="ahrs__chimu__spi_8c.html#a0156f6669675c216bbcb413ea1879960" title="Update AHRS state with GPS measurements.">ahrs_update_gps</a>(<span class="keywordtype">void</span>) {}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="ahrs_8c.html">ahrs.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:44 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

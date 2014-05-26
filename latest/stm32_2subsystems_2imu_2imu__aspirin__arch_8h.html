@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2imu_2imu__aspirin__
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="imu_8h_source.html">subsystems/imu.h</a>&quot;</code><br/>
-<code>#include &lt;libopencm3/stm32/f1/gpio.h&gt;</code><br/>
+<code>#include &lt;libopencm3/stm32/gpio.h&gt;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for imu_aspirin_arch.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2imu_2imu__aspirin__
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2subsystems_2imu_2imu__aspirin__arch_8h__incl.png" border="0" usemap="#sw_2airborne_2arch_2stm32_2subsystems_2imu_2imu__aspirin__arch_8h" alt=""/></div>
 <map name="sw_2airborne_2arch_2stm32_2subsystems_2imu_2imu__aspirin__arch_8h" id="sw_2airborne_2arch_2stm32_2subsystems_2imu_2imu__aspirin__arch_8h">
-<area shape="rect" id="node3" href="imu_8h.html" title="Inertial Measurement Unit interface." alt="" coords="317,123,443,151"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="85,209,243,237"/><area shape="rect" id="node22" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="296,209,464,237"/><area shape="rect" id="node9" href="pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="265,286,404,314"/><area shape="rect" id="node16" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="23,286,156,314"/></map>
+<area shape="rect" id="node3" href="imu_8h.html" title="Inertial Measurement Unit interface." alt="" coords="346,115,484,143"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="88,193,267,221"/><area shape="rect" id="node22" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="320,193,510,221"/><area shape="rect" id="node9" href="pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="287,270,442,298"/><area shape="rect" id="node16" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="23,270,172,298"/></map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2imu_2imu__aspirin__
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2subsystems_2imu_2imu__aspirin__arch_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2arch_2stm32_2subsystems_2imu_2imu__aspirin__arch_8hdep" alt=""/></div>
 <map name="sw_2airborne_2arch_2stm32_2subsystems_2imu_2imu__aspirin__arch_8hdep" id="sw_2airborne_2arch_2stm32_2subsystems_2imu_2imu__aspirin__arch_8hdep">
-<area shape="rect" id="node3" href="imu__aspirin_8h.html" title="Interface for the Aspirin v1.x IMU using SPI for the accelerometer." alt="" coords="19,115,181,159"/></map>
+<area shape="rect" id="node3" href="imu__aspirin_8h.html" title="Interface for the Aspirin v1.x IMU using SPI for the accelerometer." alt="" coords="21,115,197,159"/></map>
 </div>
 </div>
 <p><a href="stm32_2subsystems_2imu_2imu__aspirin__arch_8h_source.html">Go to the source code of this file.</a></p>
@@ -155,6 +155,8 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lpc21_2subsystems_2imu_2imu__aspirin__arch_8c_source.html#l00015">15</a> of file <a class="el" href="lpc21_2subsystems_2imu_2imu__aspirin__arch_8c_source.html">imu_aspirin_arch.c</a>.</p>
 
+<p>References <a class="el" href="stm32f4__chibios__vectors_8h_source.html#l00058">NVIC_EXTI15_10_IRQ</a>, and <a class="el" href="stm32f4__chibios__vectors_8h_source.html#l00026">NVIC_EXTI2_IRQ</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a61fed49b72c37c140656df83a6d3590a"></a>
@@ -172,6 +174,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="lpc21_2subsystems_2imu_2imu__aspirin__arch_8c_source.html#l00011">11</a> of file <a class="el" href="lpc21_2subsystems_2imu_2imu__aspirin__arch_8c_source.html">imu_aspirin_arch.c</a>.</p>
+
+<p>References <a class="el" href="stm32f4__chibios__vectors_8h_source.html#l00058">NVIC_EXTI15_10_IRQ</a>, and <a class="el" href="stm32f4__chibios__vectors_8h_source.html#l00026">NVIC_EXTI2_IRQ</a>.</p>
 
 </div>
 </div>
@@ -199,7 +203,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="stm32_2subsystems_2imu_2imu__aspirin__arch_8h_source.html#l00011">11</a> of file <a class="el" href="stm32_2subsystems_2imu_2imu__aspirin__arch_8h_source.html">imu_aspirin_arch.h</a>.</p>
 
-<p>References <a class="el" href="omap_2mcu__periph_2gpio__arch_8h.html#a5fee90e8e5af7de567890ffae5ed50c8">gpio_get()</a>.</p>
+<p>References <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h_source.html#l00051">GPIO14</a>, <a class="el" href="omap_2mcu__periph_2gpio__arch_8h.html#a5fee90e8e5af7de567890ffae5ed50c8">gpio_get()</a>, and <a class="el" href="sim_2mcu__periph_2gpio__arch_8h_source.html#l00034">GPIOC</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -208,7 +212,7 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2subsystems_2imu_2imu__aspirin__arch_8h_aa848c00f7d5b5143b7db5b6337d1e230_cgraph.png" border="0" usemap="#stm32_2subsystems_2imu_2imu__aspirin__arch_8h_aa848c00f7d5b5143b7db5b6337d1e230_cgraph" alt=""/></div>
 <map name="stm32_2subsystems_2imu_2imu__aspirin__arch_8h_aa848c00f7d5b5143b7db5b6337d1e230_cgraph" id="stm32_2subsystems_2imu_2imu__aspirin__arch_8h_aa848c00f7d5b5143b7db5b6337d1e230_cgraph">
-<area shape="rect" id="node3" href="omap_2mcu__periph_2gpio__arch_8h.html#a5fee90e8e5af7de567890ffae5ed50c8" title="Read a gpio value." alt="" coords="172,5,241,33"/></map>
+<area shape="rect" id="node3" href="omap_2mcu__periph_2gpio__arch_8h.html#a5fee90e8e5af7de567890ffae5ed50c8" title="Read a gpio value." alt="" coords="179,5,256,33"/></map>
 </div>
 </p>
 
@@ -220,7 +224,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_71548ae744da26ac2c7ca213b679dc43.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_2ac6ff96257b3d96ab38d195787bdd5e.html">imu</a></li><li class="navelem"><a class="el" href="stm32_2subsystems_2imu_2imu__aspirin__arch_8h.html">imu_aspirin_arch.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:09 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:49 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

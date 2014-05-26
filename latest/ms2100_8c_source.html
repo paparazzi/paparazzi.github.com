@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('ms2100_8c_source.html','');});
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="ms2100_8h.html#a030d0b0b09d4acb5b2bc5d4d53c9d546">   44</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structMs2100.html">Ms2100</a> <a class="code" href="ms2100_8c.html#a030d0b0b09d4acb5b2bc5d4d53c9d546">ms2100</a>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="ms2100_8h.html#abd4a73602ed7661eccacb070eb07896a">   47</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ms2100_8c.html#abd4a73602ed7661eccacb070eb07896a">ms2100_init</a>(<span class="keyword">struct</span> <a class="code" href="structMs2100.html">Ms2100</a> *ms, <span class="keyword">struct</span> <a class="code" href="structspi__periph.html">spi_periph</a> *<a class="code" href="structMs2100.html#aad3c1b02e0a8621f7df2338e14b46e36">spi_p</a>, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> slave_idx) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="ms2100_8h.html#abd4a73602ed7661eccacb070eb07896a">   47</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ms2100_8c.html#abd4a73602ed7661eccacb070eb07896a">ms2100_init</a>(<span class="keyword">struct</span> <a class="code" href="structMs2100.html">Ms2100</a> *ms, <span class="keyword">struct</span> <a class="code" href="structspi__periph.html" title="SPI peripheral structure.">spi_periph</a> *<a class="code" href="structMs2100.html#aad3c1b02e0a8621f7df2338e14b46e36">spi_p</a>, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> slave_idx) {</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="comment">/* set spi_peripheral */</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  ms-&gt;<a class="code" href="structMs2100.html#aad3c1b02e0a8621f7df2338e14b46e36">spi_p</a> = <a class="code" href="structMs2100.html#aad3c1b02e0a8621f7df2338e14b46e36">spi_p</a>;</div>
@@ -189,7 +189,7 @@ $(document).ready(function(){initNavTree('ms2100_8c_source.html','');});
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="lpc21_2peripherals_2ms2100__arch_8c.html#a6c42c614481a60c538d48f9ceef25132">ms2100_arch_init</a>();</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <a class="code" href="pprz__algebra__int_8h.html#a90bb29d3030f1bba0535b9369ee0e462">INT_VECT3_ZERO</a>(ms-&gt;<a class="code" href="structMs2100.html#a659ab553b7e70d5fc4f8b85e3e6ba384">data</a>.<a class="code" href="structMs2100.html#a1371f09ac78aa367576b874478d28d2b" title="data vector in mag coordinate system">vect</a>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <a class="code" href="pprz__algebra__int_8h.html#a90bb29d3030f1bba0535b9369ee0e462">INT_VECT3_ZERO</a>(ms-&gt;<a class="code" href="structMs2100.html#a7e27afc5b031ae0b564a115dd83a77bb">data</a>.<a class="code" href="structMs2100.html#a1371f09ac78aa367576b874478d28d2b" title="data vector in mag coordinate system">vect</a>);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  ms-&gt;<a class="code" href="structMs2100.html#a4d319566f8fbdb099371b09cca78b647">cur_axe</a> = 0;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  ms-&gt;<a class="code" href="structMs2100.html#a24720217f6739c591031e5b0837d9c9d">status</a> = <a class="code" href="ms2100_8h.html#a0c113d47eb67dc9e6881cb9b4c8bca65a355c2f9f789b75ae75a06f8ea97f1a06">MS2100_IDLE</a>;</div>
@@ -228,7 +228,7 @@ $(document).ready(function(){initNavTree('ms2100_8c_source.html','');});
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> new_val = <a class="code" href="ms2100_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966">Int16FromBuf</a>(ms-&gt;<a class="code" href="structMs2100.html#a7ca306c6e7eb338624be4edd50efa062" title="SPI buffer for reading a single axis.">read_buf</a>,0);</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      <span class="comment">// what is this check about?</span></div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      <span class="keywordflow">if</span> (abs(new_val) &lt; 2000) {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        ms-&gt;<a class="code" href="structMs2100.html#a659ab553b7e70d5fc4f8b85e3e6ba384">data</a>.<a class="code" href="structMs2100.html#a09e274e935b49928acfa10b3b64d3d93" title="data values accessible by channel index">value</a>[ms-&gt;<a class="code" href="structMs2100.html#a4d319566f8fbdb099371b09cca78b647">cur_axe</a>] = new_val;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        ms-&gt;<a class="code" href="structMs2100.html#a7e27afc5b031ae0b564a115dd83a77bb">data</a>.<a class="code" href="structMs2100.html#a09e274e935b49928acfa10b3b64d3d93" title="data values accessible by channel index">value</a>[ms-&gt;<a class="code" href="structMs2100.html#a4d319566f8fbdb099371b09cca78b647">cur_axe</a>] = new_val;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      }</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      ms-&gt;<a class="code" href="structMs2100.html#a4d319566f8fbdb099371b09cca78b647">cur_axe</a>++;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      <span class="keywordflow">if</span> (ms-&gt;<a class="code" href="structMs2100.html#a4d319566f8fbdb099371b09cca78b647">cur_axe</a> &gt; 2) {</div>
@@ -254,7 +254,7 @@ $(document).ready(function(){initNavTree('ms2100_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="ms2100_8c.html">ms2100.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:44 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('sim__uart_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sim__uart_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2arch_2sim_2sim__uart_8hdep" alt=""/></div>
 <map name="sw_2airborne_2arch_2sim_2sim__uart_8hdep" id="sw_2airborne_2arch_2sim_2sim__uart_8hdep">
-<area shape="rect" id="node3" href="jsbsim__hw_8h.html" title="sw/airborne/arch/sim\l/jsbsim_hw.h" alt="" coords="171,99,312,143"/><area shape="rect" id="node11" href="sim__ap_8c.html" title="sw/airborne/arch/sim\l/sim_ap.c" alt="" coords="336,99,477,143"/><area shape="rect" id="node13" href="sim__uart_8c.html" title="sw/airborne/arch/sim\l/sim_uart.c" alt="" coords="501,99,643,143"/><area shape="rect" id="node5" href="jsbsim__hw_8c.html" title="sw/airborne/arch/sim\l/jsbsim_hw.c" alt="" coords="5,193,147,237"/><area shape="rect" id="node7" href="jsbsim__ir_8c.html" title="sw/airborne/arch/sim\l/jsbsim_ir.c" alt="" coords="171,193,312,237"/><area shape="rect" id="node9" href="jsbsim__transport_8c.html" title="sw/airborne/arch/sim\l/jsbsim_transport.c" alt="" coords="336,193,477,237"/></map>
+<area shape="rect" id="node3" href="jsbsim__hw_8h.html" title="sw/airborne/arch/sim\l/jsbsim_hw.h" alt="" coords="184,99,339,143"/><area shape="rect" id="node11" href="sim__ap_8c.html" title="sw/airborne/arch/sim\l/sim_ap.c" alt="" coords="363,99,517,143"/><area shape="rect" id="node13" href="sim__uart_8c.html" title="sw/airborne/arch/sim\l/sim_uart.c" alt="" coords="541,99,696,143"/><area shape="rect" id="node5" href="jsbsim__hw_8c.html" title="sw/airborne/arch/sim\l/jsbsim_hw.c" alt="" coords="5,193,160,237"/><area shape="rect" id="node7" href="jsbsim__ir_8c.html" title="sw/airborne/arch/sim\l/jsbsim_ir.c" alt="" coords="184,193,339,237"/><area shape="rect" id="node9" href="jsbsim__transport_8c.html" title="sw/airborne/arch/sim\l/jsbsim_transport.c" alt="" coords="363,193,517,237"/></map>
 </div>
 </div>
 <p><a href="sim__uart_8h_source.html">Go to the source code of this file.</a></p>
@@ -141,7 +141,7 @@ Macros</h2></td></tr>
 <tr class="memitem:a634b45c8bfdb43278127595b3dfc0f8d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim__uart_8h.html#a634b45c8bfdb43278127595b3dfc0f8d">SimUartTransmit</a>(_x)&#160;&#160;&#160;fputc(_x, <a class="el" href="sim__uart_8h.html#a4dafaba9a225a8b97dbfbf25fedfcd4d">pipe_stream</a>)</td></tr>
 <tr class="memitem:af650fff88f41b8f5b57bfc7c49f249ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim__uart_8h.html#af650fff88f41b8f5b57bfc7c49f249ea">SimUartPrintString</a>(_s)&#160;&#160;&#160;fputs(_s, <a class="el" href="sim__uart_8h.html#a4dafaba9a225a8b97dbfbf25fedfcd4d">pipe_stream</a>)</td></tr>
 <tr class="memitem:a96dee6485ca4a4cc4bc1ebfc4fe7d4f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim__uart_8h.html#a96dee6485ca4a4cc4bc1ebfc4fe7d4f9">SimUartSendMessage</a>()&#160;&#160;&#160;fflush(<a class="el" href="sim__uart_8h.html#a4dafaba9a225a8b97dbfbf25fedfcd4d">pipe_stream</a>);</td></tr>
-<tr class="memitem:a25a3137f252caa764e9752e5c0b53d13"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim__uart_8h.html#a25a3137f252caa764e9752e5c0b53d13">SimUartPrintHex16</a>(<a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>)&#160;&#160;&#160;<a class="el" href="uart__print_8h.html#a365f5d82398aad5b7adbafa68e59017a">_PrintHex16</a>(<a class="el" href="sim__uart_8h.html#a634b45c8bfdb43278127595b3dfc0f8d">SimUartTransmit</a>, <a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>)</td></tr>
+<tr class="memitem:a25a3137f252caa764e9752e5c0b53d13"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim__uart_8h.html#a25a3137f252caa764e9752e5c0b53d13">SimUartPrintHex16</a>(c)&#160;&#160;&#160;<a class="el" href="uart__print_8h.html#a365f5d82398aad5b7adbafa68e59017a">_PrintHex16</a>(<a class="el" href="sim__uart_8h.html#a634b45c8bfdb43278127595b3dfc0f8d">SimUartTransmit</a>, c)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -178,8 +178,8 @@ Variables</h2></td></tr>
           <td class="memname">#define SimUartPrintHex16</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="uart__print_8h.html#a365f5d82398aad5b7adbafa68e59017a">_PrintHex16</a>(<a class="el" href="sim__uart_8h.html#a634b45c8bfdb43278127595b3dfc0f8d">SimUartTransmit</a>, <a class="el" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a>)</td>
+          <td class="paramname">c</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="uart__print_8h.html#a365f5d82398aad5b7adbafa68e59017a">_PrintHex16</a>(<a class="el" href="sim__uart_8h.html#a634b45c8bfdb43278127595b3dfc0f8d">SimUartTransmit</a>, c)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -264,7 +264,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_c87a6d12365ead88e0b90ddbc1b3c9bb.html">sim</a></li><li class="navelem"><a class="el" href="sim__uart_8h.html">sim_uart.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:09 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:50 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

@@ -9,5 +9,9 @@ var dir_ebfa5059daba0d85a68f1520147b1a51 =
     [ "link_mcu_hw.h", "stm32_2link__mcu__hw_8h.html", "stm32_2link__mcu__hw_8h" ],
     [ "mcu_arch.c", "stm32_2mcu__arch_8c.html", "stm32_2mcu__arch_8c" ],
     [ "mcu_arch.h", "stm32_2mcu__arch_8h.html", "stm32_2mcu__arch_8h" ],
-    [ "my_debug_servo.h", "my__debug__servo_8h.html", "my__debug__servo_8h" ]
+    [ "my_debug_servo.h", "my__debug__servo_8h.html", "my__debug__servo_8h" ],
+    [ "stm32f4_chibios_vectors.c", "stm32f4__chibios__vectors_8c.html", "stm32f4__chibios__vectors_8c" ],
+    [ "stm32f4_chibios_vectors.h", "stm32f4__chibios__vectors_8h.html", "stm32f4__chibios__vectors_8h" ],
+    [ "test_bswap.c", "test__bswap_8c.html", "test__bswap_8c" ],
+    [ "uart_tunnel.c", "stm32_2uart__tunnel_8c.html", "stm32_2uart__tunnel_8c" ]
 ];

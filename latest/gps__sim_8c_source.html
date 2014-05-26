@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('gps__sim_8c_source.html','');});
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gps_8h.html" title="Device independent GPS code (interface)">subsystems/gps.h</a>&quot;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="gps__sim__nps_8h.html#a62a4a0f2fc32a105289eb2cf890a1e5d">   24</a></span>&#160;bool_t <a class="code" href="gps__sim_8c.html#a62a4a0f2fc32a105289eb2cf890a1e5d">gps_available</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="gps__sim_8c.html#a62a4a0f2fc32a105289eb2cf890a1e5d">   24</a></span>&#160;bool_t <a class="code" href="gps__datalink_8c.html#a62a4a0f2fc32a105289eb2cf890a1e5d" title="Is set to TRUE when a new REMOTE_GPS packet is received and parsed.">gps_available</a>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#if 0</span></div>
@@ -143,13 +143,13 @@ $(document).ready(function(){initNavTree('gps__sim_8c_source.html','');});
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#a3665e85487519aef462c0c44cb8e3b40" title="GPS course over ground in rad*1e7, [0, 2*Pi]*1e7 (CW/north)">course</a> = <a class="code" href="pprz__geodetic__int_8h.html#a5f71a1b0d5ebdc36a71b92528bb880d5">EM7RAD_OF_RAD</a>(RadOfDeg(course/10.));</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#a8c0416718a59e50261890cd870f716ea" title="speed NED in cm/s">ned_vel</a>.<a class="code" href="structNedCoor__i.html#a52586e90ccb7aa5f0960bcb480bfcaa3" title="Down.">z</a> = -climb*100.;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#afeffb02bdd18d27a87e96bb77175168f" title="status of fix">fix</a> = <a class="code" href="gps_8h.html#ac5e980c8325a29dd79a45ed26af404be">GPS_FIX_3D</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="gps__sim_8c.html#a62a4a0f2fc32a105289eb2cf890a1e5d">gps_available</a> = <a class="code" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="gps__datalink_8c.html#a62a4a0f2fc32a105289eb2cf890a1e5d" title="Is set to TRUE when a new REMOTE_GPS packet is received and parsed.">gps_available</a> = <a class="code" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="gps__sim_8c.html#ac51e6a5f7940a0acc9dc44b1b8085331">   41</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="gps__ardrone2_8c.html#ac51e6a5f7940a0acc9dc44b1b8085331">gps_impl_init</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#afeffb02bdd18d27a87e96bb77175168f" title="status of fix">fix</a> = <a class="code" href="gps_8h.html#a84f437a5cef3517e2c56fdd4c8c09ff5">GPS_FIX_NONE</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="gps__sim_8c.html#a62a4a0f2fc32a105289eb2cf890a1e5d">gps_available</a> = <a class="code" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="gps__datalink_8c.html#a62a4a0f2fc32a105289eb2cf890a1e5d" title="Is set to TRUE when a new REMOTE_GPS packet is received and parsed.">gps_available</a> = <a class="code" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('gps__sim_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8c4cbb881db224ddaf0756e79ed706ce.html">gps</a></li><li class="navelem"><a class="el" href="gps__sim_8c.html">gps_sim.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:45 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

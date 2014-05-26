@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -269,15 +269,19 @@ $(document).ready(function(){initNavTree('sys__time_8h_source.html','');});
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment">/* architecture specific init implementation */</span></div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="lpc21_2mcu__periph_2sys__time__arch_8c.html#a9b31c2feb846b96205ae20ea6883e1c4">sys_time_arch_init</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SYS_TIME_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="comment">/* Generic timer macros */</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno"><a class="code" href="sys__time_8h.html#a0583c93a24eed5f81e1f647ca63a652a">  198</a></span>&#160;<span class="preprocessor">#define SysTimeTimerStart(_t) { _t = get_sys_time_usec(); }</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno"><a class="code" href="sys__time_8h.html#a2dfaf7d6ae83a19972aca429fc687e87">  199</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SysTimeTimer(_t) ( get_sys_time_usec() - (_t))</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="code" href="sys__time_8h.html#abb950f6634af7da754fa0c6d99d689cb">  200</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SysTimeTimerStop(_t) { _t = ( get_sys_time_usec() - (_t)); }</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SYS_TIME_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_1ca43f6a116d741d80fb1d0555a2b198.html">mcu_periph</a></li><li class="navelem"><a class="el" href="sys__time_8h.html">sys_time.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

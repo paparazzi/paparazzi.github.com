@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('fixedwing_2datalink_8c_source.html',''
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#if defined NAV || defined WIND_INFO</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="state_8h.html" title="API to get/set the generic vehicle states.">state.h</a>&quot;</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="nav_8h.html" title="Fixedwing Navigation library.">subsystems/nav.h</a>&quot;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="nav_8h.html" title="Fixedwing Navigation library.">firmwares/fixedwing/nav.h</a>&quot;</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#ifdef HITL</span></div>
@@ -214,7 +214,7 @@ $(document).ready(function(){initNavTree('fixedwing_2datalink_8c_source.html',''
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">float</span> ux = <a class="code" href="fixedwing_2datalink_8c.html#a2743dcc4e9c41b9e1d64aab1b991b6fc">MOfCm</a>(DL_ACINFO_utm_east(<a class="code" href="main__demo5_8c.html#a41ca1f0c42c768e235066d83071b1ed9">dl_buffer</a>));</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">float</span> uy = <a class="code" href="fixedwing_2datalink_8c.html#a2743dcc4e9c41b9e1d64aab1b991b6fc">MOfCm</a>(DL_ACINFO_utm_north(<a class="code" href="main__demo5_8c.html#a41ca1f0c42c768e235066d83071b1ed9">dl_buffer</a>));</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">float</span> a = <a class="code" href="fixedwing_2datalink_8c.html#a2743dcc4e9c41b9e1d64aab1b991b6fc">MOfCm</a>(DL_ACINFO_alt(<a class="code" href="main__demo5_8c.html#a41ca1f0c42c768e235066d83071b1ed9">dl_buffer</a>));</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="discsurvey_8c.html#a9036cf5ddfd07954ab577403db961e84">c</a> = RadOfDeg(((<span class="keywordtype">float</span>)DL_ACINFO_course(<a class="code" href="main__demo5_8c.html#a41ca1f0c42c768e235066d83071b1ed9">dl_buffer</a>))/ 10.);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">float</span> c = RadOfDeg(((<span class="keywordtype">float</span>)DL_ACINFO_course(<a class="code" href="main__demo5_8c.html#a41ca1f0c42c768e235066d83071b1ed9">dl_buffer</a>))/ 10.);</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">float</span> s = <a class="code" href="fixedwing_2datalink_8c.html#a2743dcc4e9c41b9e1d64aab1b991b6fc">MOfCm</a>(DL_ACINFO_speed(<a class="code" href="main__demo5_8c.html#a41ca1f0c42c768e235066d83071b1ed9">dl_buffer</a>));</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">float</span> cl = <a class="code" href="fixedwing_2datalink_8c.html#a2743dcc4e9c41b9e1d64aab1b991b6fc">MOfCm</a>(DL_ACINFO_climb(<a class="code" href="main__demo5_8c.html#a41ca1f0c42c768e235066d83071b1ed9">dl_buffer</a>));</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> t = DL_ACINFO_itow(<a class="code" href="main__demo5_8c.html#a41ca1f0c42c768e235066d83071b1ed9">dl_buffer</a>);</div>
@@ -331,7 +331,7 @@ $(document).ready(function(){initNavTree('fixedwing_2datalink_8c_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_cb1b347b64b61ba7f369ccfe68448b26.html">fixedwing</a></li><li class="navelem"><a class="el" href="fixedwing_2datalink_8c.html">datalink.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:07 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:38 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

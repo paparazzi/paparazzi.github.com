@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -134,30 +134,25 @@ $(document).ready(function(){initNavTree('sonar__adc_8h_source.html','');});
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;std.h&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">extern</span> <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="navdata_8c.html#a69fadebe7b519d56f5380f55216f5d9a" title="Raw ADC value.">sonar_meas</a>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">extern</span> bool_t <a class="code" href="sonar__adc_8c.html#a0f9b99c29c7b19f98b1f068f90e79e91" title="New data available.">sonar_data_available</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="structSonarAdc.html">   32</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structSonarAdc.html">SonarAdc</a> {</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="structSonarAdc.html#a87a17c6a8f3857a0bfd47e8d086a25f0">   33</a></span>&#160;  <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="structSonarAdc.html#a87a17c6a8f3857a0bfd47e8d086a25f0" title="Raw ADC value.">meas</a>;          </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="structSonarAdc.html#a1573024bf2c354bfc4a4953bb59185f3">   34</a></span>&#160;  <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="structSonarAdc.html#a1573024bf2c354bfc4a4953bb59185f3" title="Sonar offset in ADC units.">offset</a>;        </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="structSonarAdc.html#aae2787b15c1128d1a439a2fa983512a3">   35</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="structSonarAdc.html#aae2787b15c1128d1a439a2fa983512a3" title="Distance measured in meters.">distance</a>;         </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="structSonarAdc.html">SonarAdc</a> <a class="code" href="sonar__adc_8c.html#a627d422633eab1f8bdbf3fdcf9359941">sonar_adc</a>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="sonar__adc_8c.html#acd89ccf677819e72bab6e8478f1da7b7" title="Sonar distance in m.">sonar_distance</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="sonar__adc_8c.html#a466b5be82e90d99245cf4be834f64c98">sonar_adc_init</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="sonar__adc_8c.html#a81358b48616dc678fef01ad225d7e9c4" title="Read ADC value to update sonar measurement.">sonar_adc_read</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="sonar__adc_8h.html#a65d7358a4371be0055f58906ae65f7d1">   47</a></span>&#160;<span class="preprocessor">#define SonarEvent(_handler) { \</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">  if (sonar_data_available) { \</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">    _handler(); \</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">    sonar_data_available = FALSE; \</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">  } \</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">}</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="sonar__adc_8c.html#a466b5be82e90d99245cf4be834f64c98">sonar_adc_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="sonar__adc_8c.html#a81358b48616dc678fef01ad225d7e9c4" title="Read ADC value to update sonar measurement.">sonar_adc_read</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_f794e7c055cca00c0de6f5564d477f09.html">sonar</a></li><li class="navelem"><a class="el" href="sonar__adc_8h.html">sonar_adc.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:43 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

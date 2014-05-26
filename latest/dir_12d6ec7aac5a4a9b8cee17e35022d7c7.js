@@ -28,11 +28,8 @@ var dir_12d6ec7aac5a4a9b8cee17e35022d7c7 =
     [ "imu.h", "imu_8h.html", "imu_8h" ],
     [ "ins.c", "ins_8c.html", "ins_8c" ],
     [ "ins.h", "ins_8h.html", "ins_8h" ],
-    [ "nav.c", "nav_8c.html", "nav_8c" ],
-    [ "nav.h", "nav_8h.html", "nav_8h" ],
     [ "radio_control.c", "radio__control_8c.html", "radio__control_8c" ],
     [ "radio_control.h", "radio__control_8h.html", "radio__control_8h" ],
     [ "settings.c", "settings_8c.html", "settings_8c" ],
-    [ "settings.h", "settings_8h.html", "settings_8h" ],
-    [ "sonar.h", "sonar_8h.html", "sonar_8h" ]
+    [ "settings.h", "settings_8h.html", "settings_8h" ]
 ];

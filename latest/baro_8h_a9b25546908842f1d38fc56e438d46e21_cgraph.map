@@ -1,16 +1,17 @@
 <map id="baro_init" name="baro_init">
-<area shape="rect" id="node3" href="$lpc21_2mcu__periph_2adc__arch_8c.html#a289883844d6749adab1cee5aabe41824" title="Registers a buffer to be used to store the specified converted channel Usage:" alt="" coords="125,5,245,33"/>
-<area shape="rect" id="node5" href="$ads1114_8c.html#a663d281bebd9216206400b2277496baf" title="ads1114_init" alt="" coords="139,55,232,83"/>
-<area shape="rect" id="node11" href="$lisa__m_2baro__board_8c.html#a41a16588297befdc686a6813d9060265" title="baro_eoc" alt="" coords="148,106,223,134"/>
-<area shape="rect" id="node15" href="$bmp085_8c.html#a0408131d52b918456c36b07d13d6a90f" title="bmp085_init" alt="" coords="140,157,231,185"/>
-<area shape="rect" id="node19" href="$dac__arch_8h.html#a5a5ecfcdc62897bc847995c225e301af" title="DACSet" alt="" coords="151,207,220,235"/>
-<area shape="rect" id="node21" href="$omap_2mcu__periph_2gpio__arch_8h.html#aa94dfa6db378d98566e22e193c7a8ab7" title="Clear a gpio output to low level." alt="" coords="145,258,225,286"/>
-<area shape="rect" id="node23" href="$mcp355x_8c.html#a43309b519e20c3a78b08cbae9ce2775a" title="mcp355x_init" alt="" coords="136,309,235,337"/>
-<area shape="rect" id="node25" href="$mpl3115_8c.html#a99a5dd8ffadd3cd757fede313accf050" title="mpl3115_init" alt="" coords="139,359,232,387"/>
-<area shape="rect" id="node27" href="$ms5611__i2c_8c.html#a4a5bd8536ca3ae9bd32e5b2ea0726cc3" title="ms5611_i2c_init" alt="" coords="128,410,243,438"/>
-<area shape="rect" id="node29" href="$ms5611__spi_8c.html#aa5d5676c8d64da7b9c569bc97ee00c0a" title="ms5611_spi_init" alt="" coords="128,461,243,489"/>
-<area shape="rect" id="node7" href="$group__i2c.html#ga68659e03504627925829f2f12c2ec6d2" title="i2c_transmit" alt="" coords="309,55,403,83"/>
-<area shape="rect" id="node9" href="$group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="i2c_submit" alt="" coords="467,55,552,83"/>
-<area shape="rect" id="node13" href="$omap_2mcu__periph_2gpio__arch_8h.html#a5fee90e8e5af7de567890ffae5ed50c8" title="Read a gpio value." alt="" coords="321,106,391,134"/>
-<area shape="rect" id="node17" href="$bmp085_8c.html#ab7dda30fa62c1e697bc782a9c96e4c12" title="Dummy function to always return TRUE on EndOfConversion check." alt="" coords="293,157,419,185"/>
+<area shape="rect" id="node3" href="$lpc21_2mcu__periph_2adc__arch_8c.html#a289883844d6749adab1cee5aabe41824" title="Registers a buffer to be used to store the specified converted channel Usage:" alt="" coords="132,5,260,33"/>
+<area shape="rect" id="node5" href="$ads1114_8c.html#a663d281bebd9216206400b2277496baf" title="ads1114_init" alt="" coords="145,55,247,83"/>
+<area shape="rect" id="node11" href="$lisa__m_2baro__board_8c.html#a41a16588297befdc686a6813d9060265" title="baro_eoc" alt="" coords="156,106,236,134"/>
+<area shape="rect" id="node15" href="$bmp085_8c.html#a0408131d52b918456c36b07d13d6a90f" title="bmp085_init" alt="" coords="145,157,247,185"/>
+<area shape="rect" id="node19" href="$dac__arch_8h.html#a5a5ecfcdc62897bc847995c225e301af" title="DACSet" alt="" coords="160,207,232,235"/>
+<area shape="rect" id="node21" href="$omap_2mcu__periph_2gpio__arch_8h.html#aa94dfa6db378d98566e22e193c7a8ab7" title="Clear a gpio output to low level." alt="" coords="153,258,239,286"/>
+<area shape="rect" id="node23" href="$median__filter_8h.html#ad880c294f1bee96a283cf9c9511658a3" title="init_median_filter" alt="" coords="131,309,261,337"/>
+<area shape="rect" id="node25" href="$mcp355x_8c.html#a43309b519e20c3a78b08cbae9ce2775a" title="mcp355x_init" alt="" coords="143,359,249,387"/>
+<area shape="rect" id="node27" href="$mpl3115_8c.html#a99a5dd8ffadd3cd757fede313accf050" title="mpl3115_init" alt="" coords="144,410,248,438"/>
+<area shape="rect" id="node29" href="$ms5611__i2c_8c.html#a4a5bd8536ca3ae9bd32e5b2ea0726cc3" title="ms5611_i2c_init" alt="" coords="133,461,259,489"/>
+<area shape="rect" id="node31" href="$ms5611__spi_8c.html#aa5d5676c8d64da7b9c569bc97ee00c0a" title="ms5611_spi_init" alt="" coords="133,511,259,539"/>
+<area shape="rect" id="node7" href="$group__i2c.html#ga68659e03504627925829f2f12c2ec6d2" title="Submit a write only transaction." alt="" coords="328,55,429,83"/>
+<area shape="rect" id="node9" href="$group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction." alt="" coords="496,55,587,83"/>
+<area shape="rect" id="node13" href="$omap_2mcu__periph_2gpio__arch_8h.html#a5fee90e8e5af7de567890ffae5ed50c8" title="Read a gpio value." alt="" coords="340,106,417,134"/>
+<area shape="rect" id="node17" href="$bmp085_8c.html#ab7dda30fa62c1e697bc782a9c96e4c12" title="Dummy function to always return TRUE on EndOfConversion check." alt="" coords="309,157,448,185"/>
 </map>

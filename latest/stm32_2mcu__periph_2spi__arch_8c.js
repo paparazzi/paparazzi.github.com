@@ -2,6 +2,7 @@ var stm32_2mcu__periph_2spi__arch_8c =
 [
     [ "locm3_spi_comm", "structlocm3__spi__comm.html", "structlocm3__spi__comm" ],
     [ "spi_periph_dma", "structspi__periph__dma.html", "structspi__periph__dma" ],
+    [ "NVIC_SPI_IRQ_PRIO", "stm32_2mcu__periph_2spi__arch_8c.html#a8994f7c1ff31dac6203cb108c17f037b", null ],
     [ "get_comm_signature", "stm32_2mcu__periph_2spi__arch_8c.html#a1b67d6591f383aeac5cadbcc070af2d3", null ],
     [ "get_transaction_signature", "stm32_2mcu__periph_2spi__arch_8c.html#a0c1bcbefaf569036eb191e18ea849a7a", null ],
     [ "process_rx_dma_interrupt", "stm32_2mcu__periph_2spi__arch_8c.html#ad55db59fe845c613959d0fe874905e5d", null ],

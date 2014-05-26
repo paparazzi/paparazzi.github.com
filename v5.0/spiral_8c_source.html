@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.0.2_stable-5-gc76da3d</span>
+   &#160;<span id="projectnumber">v5.0.4_stable-4-g32bffa6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -188,7 +188,7 @@ $(document).ready(function(){initNavTree('spiral_8c_source.html','');});
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <a class="code" href="spiral_8c.html#a341fcb5f9c40613028748eb25df2f9ac">TransCurrentX</a> = <a class="code" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float).">stateGetPositionEnu_f</a>()-&gt;<a class="code" href="structEnuCoor__f.html#a1477647029e175947a6bd860322c98ff" title="in meters">x</a> - <a class="code" href="navigation_8h.html#a2d51bcd8e90e2dea91009f895a452a22">WaypointX</a>(<a class="code" href="spiral_8c.html#a688461f77762ad7bc85685537182f73c">Center</a>);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <a class="code" href="spiral_8c.html#a116d829509d0cd638a8e1fe85fe7858a">TransCurrentY</a> = <a class="code" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float).">stateGetPositionEnu_f</a>()-&gt;<a class="code" href="structEnuCoor__f.html#a03a1d7fc5e459dd6cbdb7893ef631dde" title="in meters">y</a> - <a class="code" href="navigation_8h.html#a983349c9ccc3f390fafe929d3c9fdd16">WaypointY</a>(<a class="code" href="spiral_8c.html#a688461f77762ad7bc85685537182f73c">Center</a>);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <a class="code" href="spiral_8c.html#a2e11aa8ccf57f0ad1b89a805e4683a15">TransCurrentZ</a> = <a class="code" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float).">stateGetPositionEnu_f</a>()-&gt;<a class="code" href="structEnuCoor__f.html#af45d8ff67563a7c7bf0c7883aa0f3e3a" title="in meters">z</a> - <a class="code" href="spiral_8c.html#af82bcee94a4f402fe4aa29dd12c1dae9">ZPoint</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <a class="code" href="spiral_8c.html#a2e11aa8ccf57f0ad1b89a805e4683a15">TransCurrentZ</a> = <a class="code" href="group__state__position.html#ga7488f3b1e3afa9515541c0130278bdac" title="Get position in UTM coordinates (float).">stateGetPositionUtm_f</a>()-&gt;<a class="code" href="structUtmCoor__f.html#a32317742e37027cb6a438fe1486bb85c" title="in meters above WGS84 reference ellipsoid">alt</a> - <a class="code" href="spiral_8c.html#af82bcee94a4f402fe4aa29dd12c1dae9">ZPoint</a>;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="spiral_8c.html#a6327730ac29ad3556b8ccb0380b8b368">DistanceFromCenter</a> = sqrt(<a class="code" href="spiral_8c.html#a341fcb5f9c40613028748eb25df2f9ac">TransCurrentX</a>*<a class="code" href="spiral_8c.html#a341fcb5f9c40613028748eb25df2f9ac">TransCurrentX</a>+<a class="code" href="spiral_8c.html#a116d829509d0cd638a8e1fe85fe7858a">TransCurrentY</a>*<a class="code" href="spiral_8c.html#a116d829509d0cd638a8e1fe85fe7858a">TransCurrentY</a>);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="comment">//    SpiralTheta = atan2(TransCurrentY,TransCurrentX);</span></div>
@@ -270,7 +270,7 @@ $(document).ready(function(){initNavTree('spiral_8c_source.html','');});
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor">#ifdef DIGITAL_CAM</span></div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor"></span>      <span class="keywordflow">if</span> (<a class="code" href="dc_8c.html#a9e037646096fde04d53a985c23094e98">dc_cam_tracing</a>) {</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="comment">// calculating Cam angle for camera alignment</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <a class="code" href="spiral_8c.html#a2e11aa8ccf57f0ad1b89a805e4683a15">TransCurrentZ</a> = <a class="code" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float).">stateGetPositionEnu_f</a>()-&gt;<a class="code" href="structEnuCoor__f.html#af45d8ff67563a7c7bf0c7883aa0f3e3a" title="in meters">z</a> - <a class="code" href="spiral_8c.html#af82bcee94a4f402fe4aa29dd12c1dae9">ZPoint</a>;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <a class="code" href="spiral_8c.html#a2e11aa8ccf57f0ad1b89a805e4683a15">TransCurrentZ</a> = <a class="code" href="group__state__position.html#ga7488f3b1e3afa9515541c0130278bdac" title="Get position in UTM coordinates (float).">stateGetPositionUtm_f</a>()-&gt;<a class="code" href="structUtmCoor__f.html#a32317742e37027cb6a438fe1486bb85c" title="in meters above WGS84 reference ellipsoid">alt</a> - <a class="code" href="spiral_8c.html#af82bcee94a4f402fe4aa29dd12c1dae9">ZPoint</a>;</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <a class="code" href="dc_8c.html#acad69fa4419a1838008bc68a209d0925">dc_cam_angle</a> = atan(<a class="code" href="spiral_8c.html#a37c8abc22cc70a1ef234f4860befb695">SRad</a>/<a class="code" href="spiral_8c.html#a2e11aa8ccf57f0ad1b89a805e4683a15">TransCurrentZ</a>) * 180  / M_PI;</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      }</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -295,7 +295,7 @@ $(document).ready(function(){initNavTree('spiral_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8a28edc49a666abb23d4888eaf71220c.html">navigation</a></li><li class="navelem"><a class="el" href="spiral_8c.html">spiral.c</a></li>
-    <li class="footer">Generated on Tue Nov 19 2013 00:02:55 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Apr 9 2014 18:08:57 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

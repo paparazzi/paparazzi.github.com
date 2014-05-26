@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('gps__i2c_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__i2c_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2gps__i2c_2gps__i2c_8hdep" alt=""/></div>
 <map name="sw_2airborne_2modules_2gps__i2c_2gps__i2c_8hdep" id="sw_2airborne_2modules_2gps__i2c_2gps__i2c_8hdep">
-<area shape="rect" id="node3" href="gps__i2c_8c.html" title="sw/airborne/modules\l/gps_i2c/gps_i2c.c" alt="" coords="5,99,147,143"/></map>
+<area shape="rect" id="node3" href="gps__i2c_8c.html" title="sw/airborne/modules\l/gps_i2c/gps_i2c.c" alt="" coords="5,99,160,143"/></map>
 </div>
 </div>
 <p><a href="gps__i2c_8h_source.html">Go to the source code of this file.</a></p>
@@ -136,6 +136,7 @@ $(document).ready(function(){initNavTree('gps__i2c_8h.html','');});
 <tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a7d765c07aa171aca913bd5e9832d53b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__i2c_8h.html#a7d765c07aa171aca913bd5e9832d53b6">GPS_I2C_SLAVE_ADDR</a>&#160;&#160;&#160;(0x42 &lt;&lt; 1)</td></tr>
+<tr class="memdesc:a7d765c07aa171aca913bd5e9832d53b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default address for u-blox (and others?)  <a href="#a7d765c07aa171aca913bd5e9832d53b6"></a><br/></td></tr>
 <tr class="memitem:a78ab0b6d01b9a461dd1f8f547f12fb8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__i2c_8h.html#a78ab0b6d01b9a461dd1f8f547f12fb8b">GPS_I2C_BUF_SIZE</a>&#160;&#160;&#160;256</td></tr>
 <tr class="memitem:acb9bb7d30fcb79a284c6f0bcefc64fe2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__i2c_8h.html#acb9bb7d30fcb79a284c6f0bcefc64fe2">gps_i2cEvent</a>()&#160;&#160;&#160;{ <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a22787b7744375550b4b631b0fec03bd0">if</a> (<a class="el" href="gps__i2c_8h.html#aac9abeea850f1652f59b19297fe42664">gps_i2c_done</a>) <a class="el" href="gps__i2c_8h.html#a864483812f79e5fd894330ec73962612">gps_i2c_event</a>(); }</td></tr>
 <tr class="memitem:ab91dc0b39b51b78e1befb52594f7bb6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__i2c_8h.html#ab91dc0b39b51b78e1befb52594f7bb6d">gps_i2cChAvailable</a>()&#160;&#160;&#160;(<a class="el" href="gps__i2c_8h.html#a5a80448ac302d647cac4a1eb4d35c3d3">gps_i2c_rx_insert_idx</a> != <a class="el" href="gps__i2c_8h.html#a5eccf3a14bb399771d0eb34c9875d323">gps_i2c_rx_extract_idx</a>)</td></tr>
@@ -171,7 +172,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__i2c_8h_source.html#l00030">30</a> of file <a class="el" href="gps__i2c_8h_source.html">gps_i2c.h</a>.</p>
+<p>Definition at line <a class="el" href="gps__i2c_8h_source.html#l00031">31</a> of file <a class="el" href="gps__i2c_8h_source.html">gps_i2c.h</a>.</p>
 
 </div>
 </div>
@@ -185,9 +186,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__i2c_8h_source.html#l00028">28</a> of file <a class="el" href="gps__i2c_8h_source.html">gps_i2c.h</a>.</p>
+<p>Default address for u-blox (and others?) </p>
 
-<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00292">gps_ubx_ucenter_config_port()</a>.</p>
+<p>Definition at line <a class="el" href="gps__i2c_8h_source.html#l00029">29</a> of file <a class="el" href="gps__i2c_8h_source.html">gps_i2c.h</a>.</p>
+
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00381">gps_ubx_ucenter_config_port()</a>.</p>
 
 </div>
 </div>
@@ -204,7 +207,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__i2c_8h_source.html#l00043">43</a> of file <a class="el" href="gps__i2c_8h_source.html">gps_i2c.h</a>.</p>
+<p>Definition at line <a class="el" href="gps__i2c_8h_source.html#l00044">44</a> of file <a class="el" href="gps__i2c_8h_source.html">gps_i2c.h</a>.</p>
 
 </div>
 </div>
@@ -221,7 +224,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__i2c_8h_source.html#l00042">42</a> of file <a class="el" href="gps__i2c_8h_source.html">gps_i2c.h</a>.</p>
+<p>Definition at line <a class="el" href="gps__i2c_8h_source.html#l00043">43</a> of file <a class="el" href="gps__i2c_8h_source.html">gps_i2c.h</a>.</p>
 
 </div>
 </div>
@@ -238,7 +241,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__i2c_8h_source.html#l00044">44</a> of file <a class="el" href="gps__i2c_8h_source.html">gps_i2c.h</a>.</p>
+<p>Definition at line <a class="el" href="gps__i2c_8h_source.html#l00045">45</a> of file <a class="el" href="gps__i2c_8h_source.html">gps_i2c.h</a>.</p>
 
 </div>
 </div>
@@ -259,7 +262,7 @@ Variables</h2></td></tr>
 <div class="line">  gps_i2c_tx_extract_idx = 0;            \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="gps__i2c_8h_source.html#l00049">49</a> of file <a class="el" href="gps__i2c_8h_source.html">gps_i2c.h</a>.</p>
+<p>Definition at line <a class="el" href="gps__i2c_8h_source.html#l00050">50</a> of file <a class="el" href="gps__i2c_8h_source.html">gps_i2c.h</a>.</p>
 
 </div>
 </div>
@@ -281,7 +284,7 @@ Variables</h2></td></tr>
 <div class="line">    gps_i2c_tx_buf[<a class="code" href="gps__i2c_8c.html#a6dfae6ffe7e61a7c88f4b5bd5b469a96">gps_i2c_tx_insert_idx</a>++] = _char; \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="gps__i2c_8h_source.html#l00045">45</a> of file <a class="el" href="gps__i2c_8h_source.html">gps_i2c.h</a>.</p>
+<p>Definition at line <a class="el" href="gps__i2c_8h_source.html#l00046">46</a> of file <a class="el" href="gps__i2c_8h_source.html">gps_i2c.h</a>.</p>
 
 </div>
 </div>
@@ -471,7 +474,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_546e88e3e25783ac13a7fed26b3fdadb.html">gps_i2c</a></li><li class="navelem"><a class="el" href="gps__i2c_8h.html">gps_i2c.h</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:10 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:01:00 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

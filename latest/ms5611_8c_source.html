@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -156,26 +156,26 @@ $(document).ready(function(){initNavTree('ms5611_8c_source.html','');});
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="ms5611_8h.html#aaeb2ca7e796a7ed3d7393b34ab166c72">   62</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ms5611_8c.html#aaeb2ca7e796a7ed3d7393b34ab166c72" title="Calculate temperature and compensated pressure.">ms5611_calc</a>(<span class="keyword">struct</span> <a class="code" href="structMs5611Data.html">Ms5611Data</a>* ms) {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="types_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a> dt, tempms, off, sens, <a class="code" href="lisa__test__hmc5843_8c.html#a06af04116b60c6fd3f440a111a006109">t2</a>, off2, sens2;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="types_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a> <a class="code" href="ins__float__invariant_8c.html#a0ef9f3f97ee5db39da6a134c1f4aab3c">dt</a>, tempms, off, sens, t2, off2, sens2;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="comment">/* difference between actual and ref temperature */</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  dt = ms-&gt;<a class="code" href="structMs5611Data.html#a2a2e153d853743adf8caad1d03284559">d2</a> - (<a class="code" href="types_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a>)ms-&gt;<a class="code" href="structMs5611Data.html#a9339741b3228b645469da793bd8ed717">c</a>[5] * (1&lt;&lt;8);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="comment">/* actual temperature */</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  tempms = 2000 + ((<a class="code" href="types_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a>)dt * ms-&gt;<a class="code" href="structMs5611Data.html#a9339741b3228b645469da793bd8ed717">c</a>[6]) / (1&lt;&lt;23);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="comment">/* offset at actual temperature */</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  off = ((<a class="code" href="types_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a>)ms-&gt;<a class="code" href="structMs5611Data.html#a9339741b3228b645469da793bd8ed717">c</a>[2] * (1&lt;&lt;16)) + ((<a class="code" href="types_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a>)ms-&gt;<a class="code" href="structMs5611Data.html#a9339741b3228b645469da793bd8ed717">c</a>[4] * dt) / (1&lt;&lt;7);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  off = ((<a class="code" href="types_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a>)ms-&gt;<a class="code" href="structMs5611Data.html#a9339741b3228b645469da793bd8ed717">c</a>[2] * (1&lt;&lt;16)) + ((<a class="code" href="types_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a>)ms-&gt;<a class="code" href="structMs5611Data.html#a9339741b3228b645469da793bd8ed717">c</a>[4] * <a class="code" href="ins__float__invariant_8c.html#a0ef9f3f97ee5db39da6a134c1f4aab3c">dt</a>) / (1&lt;&lt;7);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="comment">/* sensitivity at actual temperature */</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  sens = ((<a class="code" href="types_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a>)ms-&gt;<a class="code" href="structMs5611Data.html#a9339741b3228b645469da793bd8ed717">c</a>[1] * (1&lt;&lt;15)) + ((<a class="code" href="types_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a>)ms-&gt;<a class="code" href="structMs5611Data.html#a9339741b3228b645469da793bd8ed717">c</a>[3] * dt) / (1&lt;&lt;8);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  sens = ((<a class="code" href="types_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a>)ms-&gt;<a class="code" href="structMs5611Data.html#a9339741b3228b645469da793bd8ed717">c</a>[1] * (1&lt;&lt;15)) + ((<a class="code" href="types_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a>)ms-&gt;<a class="code" href="structMs5611Data.html#a9339741b3228b645469da793bd8ed717">c</a>[3] * <a class="code" href="ins__float__invariant_8c.html#a0ef9f3f97ee5db39da6a134c1f4aab3c">dt</a>) / (1&lt;&lt;8);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="comment">/* second order temperature compensation */</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordflow">if</span> (tempms &lt; 2000) {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    t2 = (dt*dt) / (1&lt;&lt;31);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    t2 = (dt*<a class="code" href="ins__float__invariant_8c.html#a0ef9f3f97ee5db39da6a134c1f4aab3c">dt</a>) / (1&lt;&lt;31);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    off2 = 5 * ((<a class="code" href="types_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a>)(tempms-2000)*(tempms-2000)) / (1&lt;&lt;1);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    sens2 = 5 * ((<a class="code" href="types_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a>)(tempms-2000)*(tempms-2000)) / (1&lt;&lt;2);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">if</span> (tempms &lt; -1500) {</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      off2 = off2 + 7 * (<a class="code" href="types_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a>)(tempms+1500)*(tempms+1500);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      sens2 = sens2 + 11 * ((<a class="code" href="types_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a>)(tempms+1500)*(tempms+1500)) / (1&lt;&lt;1);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    tempms = tempms - <a class="code" href="lisa__test__hmc5843_8c.html#a06af04116b60c6fd3f440a111a006109">t2</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    tempms = tempms - t2;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    off = off - off2;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    sens = sens - sens2;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
@@ -191,7 +191,7 @@ $(document).ready(function(){initNavTree('ms5611_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="ms5611_8c.html">ms5611.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:44 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

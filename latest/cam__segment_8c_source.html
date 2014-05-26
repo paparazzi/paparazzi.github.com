@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1_devel-675-g2b12c99</span>
+   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('cam__segment_8c_source.html','');});
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cam__segment_8h.html">modules/cam_control/cam_segment.h</a>&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cam_8h.html" title="Pan/Tilt camera API.">modules/cam_control/cam.h</a>&quot;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="nav_8h.html" title="Fixedwing Navigation library.">subsystems/nav.h</a>&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="nav_8h.html" title="Fixedwing Navigation library.">firmwares/fixedwing/nav.h</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="cam__segment_8h.html#ab21e194d6024b8829481c7cc3e8905b9">   32</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="cam__segment_8c.html#ab21e194d6024b8829481c7cc3e8905b9">cam_segment_init</a>( <span class="keywordtype">void</span> ) {</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
@@ -143,7 +143,7 @@ $(document).ready(function(){initNavTree('cam__segment_8c_source.html','');});
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="cam_8c.html#a5882a9e0a38d9a046ead57d52a3e1474">cam_mode</a> = <a class="code" href="cam_8h.html#a395b235b33834a4a8eaaf45dcc21c9a6">CAM_MODE_XY_TARGET</a>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="cam_8c.html#ad2170cb84810320485d168a9ab8f7efc" title="Radians, for CAM_MODE_ANGLES mode.">cam_target_x</a> = <a class="code" href="nav_8c.html#a88f523b73a294f7cb312604f212c21ab">desired_x</a>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="cam_8c.html#a271ee35440eae7b3a69afc6ebc167cac">cam_target_y</a> = <a class="code" href="nav_8c.html#ab7d49633159601ed2eaa65f23d612805">desired_y</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="cam_8c.html#af3098e4d774dcc8eb7650d54a737a9bd">cam_target_alt</a> = <a class="code" href="navigation_8c.html#ab21c78d7a323ace0bcca84fc0be63cb2" title="size == nb_waypoint, waypoint 0 is a dummy waypoint">ground_alt</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="cam_8c.html#af3098e4d774dcc8eb7650d54a737a9bd">cam_target_alt</a> = <a class="code" href="navigation_8c.html#ab21c78d7a323ace0bcca84fc0be63cb2" title="ground reference altitude in meters &lt;&lt; INT32_POS_FRAC">ground_alt</a>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('cam__segment_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_900c035387cecacfdb66232491aebefe.html">cam_control</a></li><li class="navelem"><a class="el" href="cam__segment_8c.html">cam_segment.c</a></li>
-    <li class="footer">Generated on Thu Nov 21 2013 12:00:08 for Paparazzi UAS by
+    <li class="footer">Generated on Mon May 26 2014 16:00:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>
