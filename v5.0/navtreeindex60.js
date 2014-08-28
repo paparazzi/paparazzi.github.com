@@ -1,5 +1,7 @@
 var NAVTREEINDEX60 =
 {
+"stm32_2subsystems_2radio__control_2ppm__arch_8c.html#a6b8315208a0f09436556fbce0298ae38":[8,0,0,0,0,3,2,2,0,5],
+"stm32_2subsystems_2radio__control_2ppm__arch_8c.html#a7dd96af6b908956574fb02bb01513079":[8,0,0,0,0,3,2,2,0,3],
 "stm32_2subsystems_2radio__control_2ppm__arch_8c.html#aa933c6924c3511448e65fc31e2d26129":[8,0,0,0,0,3,2,2,0,1],
 "stm32_2subsystems_2radio__control_2ppm__arch_8c.html#af8b27ee063d6f72bd69fabb1a9913820":[8,0,0,0,0,3,2,2,0,2],
 "stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html":[8,0,0,0,0,3,2,2,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX60 =
 "structBaroBoard.html#ae0641a99787ef38d44a1b429e584d6fe":[7,0,32,0],
 "structBoozFmsTestSignal.html":[7,0,34],
 "structBoozFmsTestSignal.html#a0d97de47f997cabc4d36b72266087e0c":[7,0,34,0],
-"structBoozFmsTestSignal.html#a4e7953a270a5c5c7f904140ae07b1b0b":[7,0,34,2],
-"structBoozFmsTestSignal.html#a4fdcd74eb4f555d37356459695f00589":[7,0,34,1],
-"structBoozFmsTestSignal.html#afd5e1105c20108debed35f364310e287":[7,0,34,3]
+"structBoozFmsTestSignal.html#a4e7953a270a5c5c7f904140ae07b1b0b":[7,0,34,2]
 };

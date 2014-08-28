@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -426,11 +426,11 @@ $(document).ready(function(){initNavTree('stabilization__attitude_8c_source.html
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  <span class="keyword">struct </span><a class="code" href="structFloatRates.html" title="angular rates">FloatRates</a>* body_rate = <a class="code" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float).">stateGetBodyRates_f</a>();</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="preprocessor">#ifdef SITL</span></div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="preprocessor"></span>  <span class="keyword">static</span> <span class="keywordtype">float</span> last_err = 0;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  body_rate-&gt;<a class="code" href="structFloatRates.html#a4bc81b8dfc82c389671683596d4ad15e" title="in rad/s^2">p</a> = (err - last_err)/(1/60.);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  body_rate-&gt;<a class="code" href="structFloatRates.html#a4bc81b8dfc82c389671683596d4ad15e" title="in rad/s">p</a> = (err - last_err)/(1/60.);</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  last_err = err;</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="preprocessor"></span>  <span class="keywordtype">float</span> cmd = <a class="code" href="stabilization__adaptive_8c.html#a92f6452c3b367e9ff2bc6180caee2ca3">h_ctl_roll_attitude_gain</a> * err</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    + <a class="code" href="stabilization__adaptive_8c.html#a770980c94665fbd4d6970bff6cb9dff5">h_ctl_roll_rate_gain</a> * body_rate-&gt;<a class="code" href="structFloatRates.html#a4bc81b8dfc82c389671683596d4ad15e" title="in rad/s^2">p</a></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    + <a class="code" href="stabilization__adaptive_8c.html#a770980c94665fbd4d6970bff6cb9dff5">h_ctl_roll_rate_gain</a> * body_rate-&gt;<a class="code" href="structFloatRates.html#a4bc81b8dfc82c389671683596d4ad15e" title="in rad/s">p</a></div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    + <a class="code" href="energy__ctrl_8c.html#a1ee0cbf7d1ed331f44539840507a7436">v_ctl_throttle_setpoint</a> * <a class="code" href="stabilization__adaptive_8c.html#aa3fa9d7cd60cb95044911fe763d3ffde">h_ctl_aileron_of_throttle</a>;</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;  <a class="code" href="stabilization__adaptive_8c.html#a6221c03ea36102def261884c24cacb69">h_ctl_aileron_setpoint</a> = <a class="code" href="paparazzi_8h.html#a6fff2a38e48dea3e7e91896c6ab60cf7">TRIM_PPRZ</a>(cmd);</div>
@@ -462,7 +462,7 @@ $(document).ready(function(){initNavTree('stabilization__attitude_8c_source.html
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="preprocessor">#ifdef H_CTL_RATE_LOOP</span></div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> h_ctl_roll_rate_loop() {</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  <span class="keywordtype">float</span> err = <a class="code" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float).">stateGetBodyRates_f</a>()-&gt;<a class="code" href="structFloatRates.html#a4bc81b8dfc82c389671683596d4ad15e" title="in rad/s^2">p</a> - h_ctl_roll_rate_setpoint;</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  <span class="keywordtype">float</span> err = <a class="code" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float).">stateGetBodyRates_f</a>()-&gt;<a class="code" href="structFloatRates.html#a4bc81b8dfc82c389671683596d4ad15e" title="in rad/s">p</a> - h_ctl_roll_rate_setpoint;</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;  <span class="comment">/* I term calculation */</span></div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">float</span> roll_rate_sum_err = 0.;</div>
@@ -564,7 +564,7 @@ $(document).ready(function(){initNavTree('stabilization__attitude_8c_source.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_cb1b347b64b61ba7f369ccfe68448b26.html">fixedwing</a></li><li class="navelem"><a class="el" href="dir_517430ae22334069e857fa1922a1fddc.html">stabilization</a></li><li class="navelem"><a class="el" href="stabilization__attitude_8c.html">stabilization_attitude.c</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:00:39 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:00:38 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

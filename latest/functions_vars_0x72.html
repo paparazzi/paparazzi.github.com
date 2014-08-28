@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -232,11 +232,11 @@ $(document).ready(function(){initNavTree('functions_vars_0x72.html','');});
 <li>RcAvailable
 : <a class="el" href="structSpektrumStateStruct.html#a99ad58a2649e7b0039ac571b5f4bfa0c">SpektrumStateStruct</a>
 </li>
-<li>re
-: <a class="el" href="structcomplex.html#a77a6e028ddaf37c540fe22dad47f61c1">complex</a>
-</li>
 <li>RE
 : <a class="el" href="structinv__correction__gains.html#ad283889a754dedf779e6ce6159fdc270">inv_correction_gains</a>
+</li>
+<li>re
+: <a class="el" href="structcomplex.html#a77a6e028ddaf37c540fe22dad47f61c1">complex</a>
 </li>
 <li>read_buf
 : <a class="el" href="structMs2100.html#a7ca306c6e7eb338624be4edd50efa062">Ms2100</a>
@@ -371,12 +371,12 @@ $(document).ready(function(){initNavTree('functions_vars_0x72.html','');});
 : <a class="el" href="structHOTT__GAM__MSG.html#a8b60be3f3c06a394281ffd4ae32121a1">HOTT_GAM_MSG</a>
 </li>
 <li>rpm_H
-: <a class="el" href="structHOTT__EAM__MSG.html#aee01e312dc03501a597ac37345f96d31">HOTT_EAM_MSG</a>
-, <a class="el" href="structHOTT__GAM__MSG.html#a628de8202cae5b484af1cbe3f7280a28">HOTT_GAM_MSG</a>
+: <a class="el" href="structHOTT__GAM__MSG.html#a628de8202cae5b484af1cbe3f7280a28">HOTT_GAM_MSG</a>
+, <a class="el" href="structHOTT__EAM__MSG.html#aee01e312dc03501a597ac37345f96d31">HOTT_EAM_MSG</a>
 </li>
 <li>rpm_L
-: <a class="el" href="structHOTT__EAM__MSG.html#a96766f68951033628c06785736c0287f">HOTT_EAM_MSG</a>
-, <a class="el" href="structHOTT__GAM__MSG.html#ad79dbb1ff20b2de1250124ceddee7ff0">HOTT_GAM_MSG</a>
+: <a class="el" href="structHOTT__GAM__MSG.html#ad79dbb1ff20b2de1250124ceddee7ff0">HOTT_GAM_MSG</a>
+, <a class="el" href="structHOTT__EAM__MSG.html#a96766f68951033628c06785736c0287f">HOTT_EAM_MSG</a>
 </li>
 <li>running
 : <a class="el" href="structBaroBoard.html#a65ba95b99990a9081822f106bd5772fa">BaroBoard</a>
@@ -384,17 +384,14 @@ $(document).ready(function(){initNavTree('functions_vars_0x72.html','');});
 <li>rv
 : <a class="el" href="structinv__gains.html#a043700f433201a42b90f2d8b4d8d72eb">inv_gains</a>
 </li>
-<li>rx
-: <a class="el" href="structspistream__buffers__t.html#a68f2b4376c476a0ab4e722a885a25657">spistream_buffers_t</a>
-</li>
 <li>rx_buf
-: <a class="el" href="structMs5611__Spi.html#a5e59eb056cb6beebe8ef0c9c4ef8ff97">Ms5611_Spi</a>
+: <a class="el" href="structMpu60x0__Spi.html#aac2c5a39f64f336ccb130c06b247bebf">Mpu60x0_Spi</a>
+, <a class="el" href="structuart__periph.html#aae582e1021f8139f7461a80477d1dc5b">uart_periph</a>
 , <a class="el" href="structLis302dl__Spi.html#a37b2f094cb8be4a118827ce3fd72a9fc">Lis302dl_Spi</a>
 , <a class="el" href="structw5100__periph.html#af0dc6d17a069ba3ff67be8c179521ad1">w5100_periph</a>
 , <a class="el" href="structAdxl345__Spi.html#a0f237f13adcb7f3fdeef33660371596b">Adxl345_Spi</a>
-, <a class="el" href="structMpu60x0__Spi.html#aac2c5a39f64f336ccb130c06b247bebf">Mpu60x0_Spi</a>
-, <a class="el" href="structuart__periph.html#aae582e1021f8139f7461a80477d1dc5b">uart_periph</a>
 , <a class="el" href="structL3gd20__Spi.html#a85111f62d593f3984bfefc45a612a2ef">L3gd20_Spi</a>
+, <a class="el" href="structMs5611__Spi.html#a5e59eb056cb6beebe8ef0c9c4ef8ff97">Ms5611_Spi</a>
 </li>
 <li>rx_chan
 : <a class="el" href="structspi__periph__dma.html#ac232e23c83482e2e9f661808d4592dd6">spi_periph_dma</a>
@@ -428,14 +425,8 @@ $(document).ready(function(){initNavTree('functions_vars_0x72.html','');});
 <li>rx_len
 : <a class="el" href="structSc18Is600.html#ae619e989eea32e01a2da3a29ef4215c4">Sc18Is600</a>
 </li>
-<li>rx_num_packages
-: <a class="el" href="structspistream__buffers__t.html#acefebcb97025f87f1a89c7a560ba5437">spistream_buffers_t</a>
-</li>
 <li>rx_nvic_irq
 : <a class="el" href="structspi__periph__dma.html#a56e24d00363c933166677bc357230be1">spi_periph_dma</a>
-</li>
-<li>rx_package_cntd
-: <a class="el" href="structspistream__state__t.html#acbfb9d8663c03138985eae1d3c0a46f1">spistream_state_t</a>
 </li>
 <li>rx_packet
 : <a class="el" href="structCyrf6936.html#ad5cbcadc8c78772c205080b2d8ded892">Cyrf6936</a>
@@ -458,7 +449,7 @@ $(document).ready(function(){initNavTree('functions_vars_0x72.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon May 26 2014 16:01:21 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:01:21 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

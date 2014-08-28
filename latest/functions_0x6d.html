@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -252,6 +252,7 @@ $(document).ready(function(){initNavTree('functions_0x6d.html','');});
 , <a class="el" href="structImuDrotek2.html#a258b8f4bb6503baa0f1f9d7b6733501c">ImuDrotek2</a>
 , <a class="el" href="structImuGL1I2c.html#a186af76e9856421e6dd9b792c0b0a20d">ImuGL1I2c</a>
 , <a class="el" href="structImuMpu6000Hmc5883.html#a862c1b3671e68fa23625be385991e66d">ImuMpu6000Hmc5883</a>
+, <a class="el" href="structImuNavstik.html#a08bcb1401ad4ef8312600e1f11f68c1b">ImuNavstik</a>
 , <a class="el" href="structImuPpzuav.html#a9ad21c25bb19e9e094256757e1404fe9">ImuPpzuav</a>
 , <a class="el" href="structImuPx4fmu.html#ae4e2934578961f0edcfa1e4e1b4067dd">ImuPx4fmu</a>
 </li>
@@ -268,8 +269,8 @@ $(document).ready(function(){initNavTree('functions_0x6d.html','');});
 : <a class="el" href="structhigh__speed__logger__spi__link__data.html#a080057cb37ed72696b4ce26738850f47">high_speed_logger_spi_link_data</a>
 </li>
 <li>mag_zeta
-: <a class="el" href="structAhrsFloatCmpl.html#a70b518d75934aa40b51f367a19c0076a">AhrsFloatCmpl</a>
-, <a class="el" href="structAhrsIntCmplQuat.html#a64f44460c324d1f0dfc0d26d85558752">AhrsIntCmplQuat</a>
+: <a class="el" href="structAhrsIntCmplQuat.html#a64f44460c324d1f0dfc0d26d85558752">AhrsIntCmplQuat</a>
+, <a class="el" href="structAhrsFloatCmpl.html#a70b518d75934aa40b51f367a19c0076a">AhrsFloatCmpl</a>
 </li>
 <li>main_voltage
 : <a class="el" href="structHOTT__EAM__MSG.html#af71680cc1995fc0678119b013747b1c0">HOTT_EAM_MSG</a>
@@ -346,12 +347,6 @@ $(document).ready(function(){initNavTree('functions_0x6d.html','');});
 <li>memmap
 : <a class="el" href="structscbRegs__t.html#a10cbe3da1bfffec8627f5a911b9868f3">scbRegs_t</a>
 </li>
-<li>message_rx_handler
-: <a class="el" href="structspistream__config__t.html#a3c0ccedef88b27dc7ebdf4889ae5a179">spistream_config_t</a>
-</li>
-<li>message_tx_handler
-: <a class="el" href="structspistream__config__t.html#abfeded542df9069160c7bac2b789cc71">spistream_config_t</a>
-</li>
 <li>mf
 : <a class="el" href="structMedianFilter3Int.html#a80a82ce3f7f2f5cda12feae1ea17c929">MedianFilter3Int</a>
 </li>
@@ -396,9 +391,9 @@ $(document).ready(function(){initNavTree('functions_0x6d.html','');});
 : <a class="el" href="structwdRegs__t.html#ad369f8ee9f98cca72991c6a99bfb3c0d">wdRegs_t</a>
 </li>
 <li>mode
-: <a class="el" href="structspi__periph.html#ae01a3c5cd0e42a84335722c8d6b3fce2">spi_periph</a>
+: <a class="el" href="structBoozFmsTestSignal.html#a4e7953a270a5c5c7f904140ae07b1b0b">BoozFmsTestSignal</a>
 , <a class="el" href="structscbRegs__t.html#a4fab99489de491fbfe56fd892086ac36">scbRegs_t</a>
-, <a class="el" href="structBoozFmsTestSignal.html#a4e7953a270a5c5c7f904140ae07b1b0b">BoozFmsTestSignal</a>
+, <a class="el" href="structspi__periph.html#ae01a3c5cd0e42a84335722c8d6b3fce2">spi_periph</a>
 , <a class="el" href="structHmc58xxConfig.html#a102f8c50c73b9daf9e0ba09213649a27">Hmc58xxConfig</a>
 , <a class="el" href="structLsm303dlhcMagConfig.html#a98ed32fc10aed95c10f00ea17edb7992">Lsm303dlhcMagConfig</a>
 </li>
@@ -409,17 +404,18 @@ $(document).ready(function(){initNavTree('functions_0x6d.html','');});
 : <a class="el" href="structsirf__msg__2.html#aff4d504f04a5bf8120642bb512cac709">sirf_msg_2</a>
 </li>
 <li>month
-: <a class="el" href="structsirf__msg__41.html#a4044e918bfc49999f0f7964d91c1401a">sirf_msg_41</a>
-, <a class="el" href="structrtcRegs__t.html#a94538e214f8c74b6f65115221340e6e2">rtcRegs_t</a>
+: <a class="el" href="structrtcRegs__t.html#a94538e214f8c74b6f65115221340e6e2">rtcRegs_t</a>
 , <a class="el" href="structXsensTime.html#a929428e8300dc3a1a40679be7e38e6c4">XsensTime</a>
+, <a class="el" href="structsirf__msg__41.html#a4044e918bfc49999f0f7964d91c1401a">sirf_msg_41</a>
 </li>
 <li>mpu
-: <a class="el" href="structImuDrotek2.html#acb1e3fe77292b3a5b75aab732f13c853">ImuDrotek2</a>
+: <a class="el" href="structImuNavstik.html#a9998e6bbc3dbec4bb8dce09c47f99cd1">ImuNavstik</a>
 , <a class="el" href="structImuApogee.html#af336a924ca29eddfb18fd75358fc210f">ImuApogee</a>
-, <a class="el" href="structImuKrooz.html#ae5fb923ac0cfb293ba11f72641b56e76">ImuKrooz</a>
-, <a class="el" href="structImuAspirin2Spi.html#a27be1e08c9cdd2e92a111fd74c48c411">ImuAspirin2Spi</a>
 , <a class="el" href="structImuPx4fmu.html#ae9d72b5d7fae79662629c370a52caa01">ImuPx4fmu</a>
 , <a class="el" href="structImuMpu6000Hmc5883.html#a478e1aee874d3ededf2781c9cbf14ab5">ImuMpu6000Hmc5883</a>
+, <a class="el" href="structImuKrooz.html#ae5fb923ac0cfb293ba11f72641b56e76">ImuKrooz</a>
+, <a class="el" href="structImuDrotek2.html#acb1e3fe77292b3a5b75aab732f13c853">ImuDrotek2</a>
+, <a class="el" href="structImuAspirin2Spi.html#a27be1e08c9cdd2e92a111fd74c48c411">ImuAspirin2Spi</a>
 </li>
 <li>mpu_eoc
 : <a class="el" href="structImuKrooz.html#a1b9d8d34d96dfefb54bec661872ba3d8">ImuKrooz</a>
@@ -446,67 +442,62 @@ $(document).ready(function(){initNavTree('functions_0x6d.html','');});
 : <a class="el" href="structpwmTmrRegs__t.html#aff2013d751349a6399aecdd42933a7e8">pwmTmrRegs_t</a>
 </li>
 <li>msg
-: <a class="el" href="structuart__state.html#a9a7bd765ad13fdab0b8428642919dec5">uart_state</a>
-, <a class="el" href="structtelemetry__msg.html#a78907fb31895222c3f14fa2e0b3a6016">telemetry_msg</a>
+: <a class="el" href="structtelemetry__msg.html#a78907fb31895222c3f14fa2e0b3a6016">telemetry_msg</a>
 , <a class="el" href="structmavlink__msg__req.html#a7d455d095228e29a9ef984493d0e2e58">mavlink_msg_req</a>
-, <a class="el" href="structLisaOveroLink.html#a5632b2e193d2d08e0f809d97c5c68631">LisaOveroLink</a>
 </li>
 <li>msg_available
-: <a class="el" href="structGX3Packet.html#a0e15803aacff56a73f558462c02708c3">GX3Packet</a>
+: <a class="el" href="structInterMcuData.html#a3d3d028e9a2d68b79fa529f598fce9b0">InterMcuData</a>
+, <a class="el" href="structGpsMtk.html#a452bdbf72b89a87ee833c5ce9b575012">GpsMtk</a>
+, <a class="el" href="structGpsSirf.html#a0158f3cda3c219b9c2afb8dea7c8035a">GpsSirf</a>
+, <a class="el" href="structUM6Packet.html#ac361dd0b7ff61d6f2c8eb56f381d4029">UM6Packet</a>
 , <a class="el" href="structGpsSkytraq.html#a72708c835284b823dc8ce41dc905fff8">GpsSkytraq</a>
 , <a class="el" href="structGpsUbx.html#a7be8da098d5686651fd8a0e42a0a45b9">GpsUbx</a>
-, <a class="el" href="structUM6Packet.html#ac361dd0b7ff61d6f2c8eb56f381d4029">UM6Packet</a>
-, <a class="el" href="structInterMcuData.html#a3d3d028e9a2d68b79fa529f598fce9b0">InterMcuData</a>
-, <a class="el" href="structGpsSirf.html#a0158f3cda3c219b9c2afb8dea7c8035a">GpsSirf</a>
-, <a class="el" href="structGpsMtk.html#a452bdbf72b89a87ee833c5ce9b575012">GpsMtk</a>
 , <a class="el" href="structGpsNmea.html#a843d412bb6cb793debcc2b0ded4d048e">GpsNmea</a>
+, <a class="el" href="structGX3Packet.html#a0e15803aacff56a73f558462c02708c3">GX3Packet</a>
 </li>
 <li>msg_buf
-: <a class="el" href="structGpsNmea.html#aecae9343d4c7cd5ab15441a233a075de">GpsNmea</a>
-, <a class="el" href="structGX3Packet.html#a5155ad714278139e440905cde2ecfcdf">GX3Packet</a>
-, <a class="el" href="structGpsSkytraq.html#a6b849456965a398fc1f97e8aa98b6695">GpsSkytraq</a>
-, <a class="el" href="structGpsMtk.html#ac2b19e8d7c8ce778f551fae04e4852e7">GpsMtk</a>
+: <a class="el" href="structInterMcuData.html#a30d7bc91c50adccf2d572c21a43b1556">InterMcuData</a>
+, <a class="el" href="structGpsNmea.html#aecae9343d4c7cd5ab15441a233a075de">GpsNmea</a>
 , <a class="el" href="structGpsSirf.html#a60327af7dcf70c2d9d6ce3122ee6d4ae">GpsSirf</a>
-, <a class="el" href="structUM6Packet.html#ad4681fbf5577ebd5bfc55d3c5a1960f8">UM6Packet</a>
+, <a class="el" href="structGX3Packet.html#a5155ad714278139e440905cde2ecfcdf">GX3Packet</a>
+, <a class="el" href="structGpsMtk.html#ac2b19e8d7c8ce778f551fae04e4852e7">GpsMtk</a>
 , <a class="el" href="structGpsUbx.html#abcf68cd0264e306ef6fa16123286bb8f">GpsUbx</a>
-, <a class="el" href="structInterMcuData.html#a30d7bc91c50adccf2d572c21a43b1556">InterMcuData</a>
+, <a class="el" href="structGpsSkytraq.html#a6b849456965a398fc1f97e8aa98b6695">GpsSkytraq</a>
+, <a class="el" href="structUM6Packet.html#ad4681fbf5577ebd5bfc55d3c5a1960f8">UM6Packet</a>
 </li>
 <li>msg_class
-: <a class="el" href="structGpsMtk.html#a091cf7d70df3af29e8d27e61b67f5865">GpsMtk</a>
-, <a class="el" href="structInterMcuData.html#ae7d234a23a5aa3230f415a01ad2dcbe1">InterMcuData</a>
+: <a class="el" href="structInterMcuData.html#ae7d234a23a5aa3230f415a01ad2dcbe1">InterMcuData</a>
 , <a class="el" href="structGpsUbx.html#a8fa3fb28ad54bc1abc8c4b843450659c">GpsUbx</a>
-</li>
-<li>msg_cnt
-: <a class="el" href="structLisaOveroLink.html#a615558660a9b416f751b883683a45d47">LisaOveroLink</a>
+, <a class="el" href="structGpsMtk.html#a091cf7d70df3af29e8d27e61b67f5865">GpsMtk</a>
 </li>
 <li>msg_id
-: <a class="el" href="structGpsMtk.html#a42472178f04fa801d0778e5381e67478">GpsMtk</a>
-, <a class="el" href="structGpsSkytraq.html#a9cde3b4d641a915eae9d372fe0998778">GpsSkytraq</a>
-, <a class="el" href="structsirf__msg__41.html#a3a7ac1db2ed1bc0d0e75e0aa60255e25">sirf_msg_41</a>
-, <a class="el" href="structsirf__msg__2.html#ab7b9101b08fc819d2e22356647360b32">sirf_msg_2</a>
-, <a class="el" href="structmavlink__message.html#a858220d6436b09e2dac3487d0306dc63">mavlink_message</a>
+: <a class="el" href="structsirf__msg__41.html#a3a7ac1db2ed1bc0d0e75e0aa60255e25">sirf_msg_41</a>
 , <a class="el" href="structGpsUbx.html#ad15e6c63399f49d452488bdccc36c43a">GpsUbx</a>
-, <a class="el" href="structInterMcuData.html#a7f45d24d958b07eee168b950fdce7a4f">InterMcuData</a>
+, <a class="el" href="structGpsMtk.html#a42472178f04fa801d0778e5381e67478">GpsMtk</a>
 , <a class="el" href="structmavlink__msg__req.html#ab0e1592470bf3835f03a0601d5dbd92d">mavlink_msg_req</a>
+, <a class="el" href="structsirf__msg__2.html#ab7b9101b08fc819d2e22356647360b32">sirf_msg_2</a>
+, <a class="el" href="structInterMcuData.html#a7f45d24d958b07eee168b950fdce7a4f">InterMcuData</a>
+, <a class="el" href="structmavlink__message.html#a858220d6436b09e2dac3487d0306dc63">mavlink_message</a>
+, <a class="el" href="structGpsSkytraq.html#a9cde3b4d641a915eae9d372fe0998778">GpsSkytraq</a>
 </li>
 <li>msg_idx
-: <a class="el" href="structUM6Packet.html#a8afe76c9e8e63ba7a83d07f49bb3f2ea">UM6Packet</a>
-, <a class="el" href="structGpsUbx.html#aeb13797cdc4c59bcbe6208d2aa8b53f9">GpsUbx</a>
+: <a class="el" href="structGpsMtk.html#a3aa5c85e028eee66f715449e369da10a">GpsMtk</a>
 , <a class="el" href="structGX3Packet.html#a6a29727e5c00ee839c1320af48b390d5">GX3Packet</a>
-, <a class="el" href="structInterMcuData.html#a79c23a12aa2ccdc85dc06cb43353b572">InterMcuData</a>
 , <a class="el" href="structGpsSkytraq.html#a114aa4d00699577b129a6d9727465201">GpsSkytraq</a>
-, <a class="el" href="structGpsMtk.html#a3aa5c85e028eee66f715449e369da10a">GpsMtk</a>
+, <a class="el" href="structUM6Packet.html#a8afe76c9e8e63ba7a83d07f49bb3f2ea">UM6Packet</a>
+, <a class="el" href="structInterMcuData.html#a79c23a12aa2ccdc85dc06cb43353b572">InterMcuData</a>
+, <a class="el" href="structGpsUbx.html#aeb13797cdc4c59bcbe6208d2aa8b53f9">GpsUbx</a>
 </li>
 <li>msg_len
-: <a class="el" href="structGpsNmea.html#a3e2868479c45938a05a9eb0e9cea04cf">GpsNmea</a>
-, <a class="el" href="structGpsSirf.html#a5908743d6fc0c2beb28d384386d8c094">GpsSirf</a>
+: <a class="el" href="structGpsSirf.html#a5908743d6fc0c2beb28d384386d8c094">GpsSirf</a>
+, <a class="el" href="structGpsNmea.html#a3e2868479c45938a05a9eb0e9cea04cf">GpsNmea</a>
 </li>
 <li>msg_received
 : <a class="el" href="structtransport.html#a24eced8ea9dbd6f4ab359cb1db90cab6">transport</a>
 </li>
 <li>msgs
-: <a class="el" href="structpprz__telemetry.html#a3b134824483295e615719a5e3ac85480">pprz_telemetry</a>
-, <a class="el" href="structi2c__rdwr__ioctl__data.html#a436bb0f35544ff79b2c0ac3570f5b7f0">i2c_rdwr_ioctl_data</a>
+: <a class="el" href="structi2c__rdwr__ioctl__data.html#a436bb0f35544ff79b2c0ac3570f5b7f0">i2c_rdwr_ioctl_data</a>
+, <a class="el" href="structpprz__telemetry.html#a3b134824483295e615719a5e3ac85480">pprz_telemetry</a>
 </li>
 <li>msr
 : <a class="el" href="structuartRegs__t.html#a8ea4b832b162328127f28e538a6b1dd2">uartRegs_t</a>
@@ -532,7 +523,7 @@ $(document).ready(function(){initNavTree('functions_0x6d.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon May 26 2014 16:01:21 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:01:21 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

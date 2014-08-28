@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -111,11 +111,12 @@ $(document).ready(function(){initNavTree('onboard_modules.html','');});
 <li class="level2"><a href="#modules_category_digital_cam">Digital_Cam modules</a></li>
 <li class="level2"><a href="#modules_category_gps">Gps modules</a></li>
 <li class="level2"><a href="#modules_category_ins">Ins modules</a></li>
+<li class="level2"><a href="#modules_category_loggers">Loggers modules</a></li>
 <li class="level2"><a href="#modules_category_meteo">Meteo modules</a></li>
+<li class="level2"><a href="#modules_category_mission">Mission modules</a></li>
 <li class="level2"><a href="#modules_category_multi">Multi modules</a></li>
 <li class="level2"><a href="#modules_category_nav">Nav modules</a></li>
 <li class="level2"><a href="#modules_category_sensors">Sensors modules</a></li>
-<li class="level2"><a href="#modules_category_vehicle_interface">Vehicle_Interface modules</a></li>
 <li class="level2"><a href="#modules_category_misc">Misc modules</a></li>
 </ul>
 </li>
@@ -173,6 +174,7 @@ Digital_Cam modules</h2>
 <li>digital_cam.xml <a class="el" href="module__digital_cam.html">Digital camera control (trigger using GPIO)</a></li>
 <li>digital_cam_i2c.xml <a class="el" href="module__digital_cam_i2c.html">Trigger Digital Camera (I2C)</a></li>
 <li>digital_cam_servo.xml <a class="el" href="module__digital_cam_servo.html">Digital camera control (trigger using servo)</a></li>
+<li>hackhd.xml <a class="el" href="module__hackhd.html">HackHD control</a></li>
 </ul>
 <h2><a class="anchor" id="modules_category_gps"></a>
 Gps modules</h2>
@@ -193,6 +195,12 @@ Ins modules</h2>
 <li>ins_xsens_MTiG_Uart0.xml <a class="el" href="module__ins_xsens_mtig_uart0.html">XSens MTiG</a></li>
 <li>ins_xsens_MTi_Uart0.xml <a class="el" href="module__ins_xsens_mti_uart0.html">XSens MTi</a></li>
 </ul>
+<h2><a class="anchor" id="modules_category_loggers"></a>
+Loggers modules</h2>
+<ul>
+<li>file_logger.xml <a class="el" href="module__file_logger.html">Logs to a csv file (only for linux)</a></li>
+<li>high_speed_logger_spi_link.xml <a class="el" href="module__high_speed_logger_spi_link.html">Connect to external High-Speed SD-logger via SPI</a></li>
+</ul>
 <h2><a class="anchor" id="modules_category_meteo"></a>
 Meteo modules</h2>
 <ul>
@@ -209,12 +217,19 @@ Meteo modules</h2>
 <li>light_solar.xml <a class="el" href="module__light_solar.html">Light Solar</a></li>
 <li>light_temt.xml <a class="el" href="module__light_temt.html">Light Temt</a></li>
 <li>meteo_france_DAQ.xml <a class="el" href="module__meteo_france_daq.html">Data acquisition board used by Meteo France</a></li>
+<li>mf_ptu.xml <a class="el" href="module__mf_ptu.html">PTU board from Meteo France (pressure, temperature, humidity)</a></li>
 <li>temp_lm75.xml <a class="el" href="module__temp_lm75.html">LM75 temparature sensor</a></li>
 <li>temp_tcouple_adc.xml <a class="el" href="module__temp_tcouple_adc.html">Temp Tcouple Adc</a></li>
 <li>temp_temod.xml <a class="el" href="module__temp_temod.html">Hygrosens TEMOD-I2C-Rx temperature sensor</a></li>
 <li>temp_tmp102.xml <a class="el" href="module__temp_tmp102.html">Temp Tmp102</a></li>
 <li>wind_gfi.xml <a class="el" href="module__wind_gfi.html">Wind Gfi</a></li>
 <li>windturbine.xml <a class="el" href="module__windturbine.html">Windturbine</a></li>
+</ul>
+<h2><a class="anchor" id="modules_category_mission"></a>
+Mission modules</h2>
+<ul>
+<li>mission_fw.xml <a class="el" href="module__mission_fw.html">Interface for mission control of fixed wing aircraft</a></li>
+<li>mission_rotorcraft.xml <a class="el" href="module__mission_rotorcraft.html">Interface for mission control of rotorcraft</a></li>
 </ul>
 <h2><a class="anchor" id="modules_category_multi"></a>
 Multi modules</h2>
@@ -274,12 +289,6 @@ Sensors modules</h2>
 <li>pbn.xml <a class="el" href="module__pbn.html">Pressure Board Navarro</a></li>
 <li>trigger_ext.xml <a class="el" href="module__trigger_ext.html">External trigger</a></li>
 </ul>
-<h2><a class="anchor" id="modules_category_vehicle_interface"></a>
-Vehicle_Interface modules</h2>
-<ul>
-<li>vehicle_interface_datalink.xml <a class="el" href="module__vehicle_interface_datalink.html">Vehicule Interface over Datalink</a></li>
-<li>vehicle_interface_overo_link.xml <a class="el" href="module__vehicle_interface_overo_link.html">Vehicule Interface linked to Overo board</a></li>
-</ul>
 <h2><a class="anchor" id="modules_category_misc"></a>
 Misc modules</h2>
 <ul>
@@ -298,27 +307,26 @@ Misc modules</h2>
 <li>gps_i2c.xml <a class="el" href="module__gps_i2c.html">U-blox GPS (I2C)</a></li>
 <li>gsm.xml <a class="el" href="module__gsm.html">GSM module</a></li>
 <li>gumstix_qr_code_spi_link.xml <a class="el" href="module__gumstix_qr_code_spi_link.html">QR code gumstix interface</a></li>
-<li>high_speed_logger_spi_link.xml <a class="el" href="module__high_speed_logger_spi_link.html">Connect to external High-Speed SD-logger via SPI</a></li>
 <li>hott_telemetry.xml <a class="el" href="module__hott_telemetry.html">Graupner HOTT telemetry control module</a></li>
 <li>lcd_dogm.xml <a class="el" href="module__lcd_dogm.html">EA DOG-M163 LCD (SPI)</a></li>
 <li>led_safety_status.xml <a class="el" href="module__led_safety_status.html">LED safety indicator</a></li>
 <li>light.xml <a class="el" href="module__light.html">Navigation leds</a></li>
 <li>max3100.xml <a class="el" href="module__max3100.html">MAX3100 SPI/Uart converter</a></li>
-<li>mission_fw.xml <a class="el" href="module__mission_fw.html">Interface for mission control of fixed wing aircraft</a></li>
 <li>openlog.xml <a class="el" href="module__openlog.html">Openlog on-board data logger</a></li>
 <li>osd_max7456.xml <a class="el" href="module__osd_max7456.html">MAX7456 driver (SPI)</a></li>
 <li>poles.xml <a class="el" href="module__poles.html">Navigate around two poles</a></li>
 <li>px4flow.xml <a class="el" href="module__px4flow.html">PX4FLOW optical flow sensor</a></li>
 <li>send_imu_mag_current.xml <a class="el" href="module__send_imu_mag_current.html">Enables sending of IMU_MAG_CURRENT_CALIBRATION message</a></li>
 <li>servo_switch.xml <a class="el" href="module__servo_switch.html">Servo switch</a></li>
-<li>sonar_adc.xml <a class="el" href="module__sonar_adc.html">Sonar ADC driver</a> </li>
+<li>sonar_adc.xml <a class="el" href="module__sonar_adc.html">Sonar ADC driver</a></li>
+<li>vehicle_interface_datalink.xml <a class="el" href="module__vehicle_interface_datalink.html">Vehicule Interface over Datalink</a> </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon May 26 2014 16:01:10 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:01:10 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

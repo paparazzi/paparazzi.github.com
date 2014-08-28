@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -174,9 +174,9 @@ $(document).ready(function(){initNavTree('pprz__algebra__float_8h_source.html','
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
 <div class="line"><a name="l00087"></a><span class="lineno"><a class="code" href="structFloatRates.html">   87</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structFloatRates.html" title="angular rates">FloatRates</a> {</div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="code" href="structFloatRates.html#a4bc81b8dfc82c389671683596d4ad15e">   88</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="structFloatRates.html#a4bc81b8dfc82c389671683596d4ad15e" title="in rad/s^2">p</a>; </div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="code" href="structFloatRates.html#a128ab43f390d2a0ff80fe4bef003061a">   89</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="structFloatRates.html#a128ab43f390d2a0ff80fe4bef003061a" title="in rad/s^2">q</a>; </div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="code" href="structFloatRates.html#a75e3090314c4ad6edf12f7c08d9c5c0a">   90</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="structFloatRates.html#a75e3090314c4ad6edf12f7c08d9c5c0a" title="in rad/s^2">r</a>; </div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="code" href="structFloatRates.html#a4bc81b8dfc82c389671683596d4ad15e">   88</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="structFloatRates.html#a4bc81b8dfc82c389671683596d4ad15e" title="in rad/s">p</a>; </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="code" href="structFloatRates.html#a128ab43f390d2a0ff80fe4bef003061a">   89</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="structFloatRates.html#a128ab43f390d2a0ff80fe4bef003061a" title="in rad/s">q</a>; </div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="code" href="structFloatRates.html#a75e3090314c4ad6edf12f7c08d9c5c0a">   90</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="structFloatRates.html#a75e3090314c4ad6edf12f7c08d9c5c0a" title="in rad/s">r</a>; </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
 <div class="line"><a name="l00093"></a><span class="lineno"><a class="code" href="pprz__algebra__float_8h.html#a082a3591f2701fdcc77609946f1457ad">   93</a></span>&#160;<span class="preprocessor">#define FLOAT_ANGLE_NORMALIZE(_a) {             \</span></div>
@@ -402,29 +402,29 @@ $(document).ready(function(){initNavTree('pprz__algebra__float_8h_source.html','
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="comment">/* _m_a2c = _m_a2b comp _m_b2c , aka  _m_a2c = _m_b2c * _m_a2b */</span></div>
 <div class="line"><a name="l00315"></a><span class="lineno"><a class="code" href="pprz__algebra__float_8h.html#a52cfb535525f92ea9535275cc3000edf">  315</a></span>&#160;<span class="preprocessor">#define FLOAT_RMAT_COMP(_m_a2c, _m_a2b, _m_b2c) {           \</span></div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="preprocessor">    _m_a2c.m[0] = (_m_b2c.m[0]*_m_a2b.m[0] + _m_b2c.m[1]*_m_a2b.m[3] + _m_b2c.m[2]*_m_a2b.m[6]); \</span></div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="preprocessor">    _m_a2c.m[1] = (_m_b2c.m[0]*_m_a2b.m[1] + _m_b2c.m[1]*_m_a2b.m[4] + _m_b2c.m[2]*_m_a2b.m[7]); \</span></div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="preprocessor">    _m_a2c.m[2] = (_m_b2c.m[0]*_m_a2b.m[2] + _m_b2c.m[1]*_m_a2b.m[5] + _m_b2c.m[2]*_m_a2b.m[8]); \</span></div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="preprocessor">    _m_a2c.m[3] = (_m_b2c.m[3]*_m_a2b.m[0] + _m_b2c.m[4]*_m_a2b.m[3] + _m_b2c.m[5]*_m_a2b.m[6]); \</span></div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="preprocessor">    _m_a2c.m[4] = (_m_b2c.m[3]*_m_a2b.m[1] + _m_b2c.m[4]*_m_a2b.m[4] + _m_b2c.m[5]*_m_a2b.m[7]); \</span></div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="preprocessor">    _m_a2c.m[5] = (_m_b2c.m[3]*_m_a2b.m[2] + _m_b2c.m[4]*_m_a2b.m[5] + _m_b2c.m[5]*_m_a2b.m[8]); \</span></div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="preprocessor">    _m_a2c.m[6] = (_m_b2c.m[6]*_m_a2b.m[0] + _m_b2c.m[7]*_m_a2b.m[3] + _m_b2c.m[8]*_m_a2b.m[6]); \</span></div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="preprocessor">    _m_a2c.m[7] = (_m_b2c.m[6]*_m_a2b.m[1] + _m_b2c.m[7]*_m_a2b.m[4] + _m_b2c.m[8]*_m_a2b.m[7]); \</span></div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="preprocessor">    _m_a2c.m[8] = (_m_b2c.m[6]*_m_a2b.m[2] + _m_b2c.m[7]*_m_a2b.m[5] + _m_b2c.m[8]*_m_a2b.m[8]); \</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="preprocessor">    _m_a2c.m[0] = ((_m_b2c).m[0]*(_m_a2b).m[0] + (_m_b2c).m[1]*(_m_a2b).m[3] + (_m_b2c).m[2]*(_m_a2b).m[6]); \</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="preprocessor">    _m_a2c.m[1] = ((_m_b2c).m[0]*(_m_a2b).m[1] + (_m_b2c).m[1]*(_m_a2b).m[4] + (_m_b2c).m[2]*(_m_a2b).m[7]); \</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="preprocessor">    _m_a2c.m[2] = ((_m_b2c).m[0]*(_m_a2b).m[2] + (_m_b2c).m[1]*(_m_a2b).m[5] + (_m_b2c).m[2]*(_m_a2b).m[8]); \</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="preprocessor">    _m_a2c.m[3] = ((_m_b2c).m[3]*(_m_a2b).m[0] + (_m_b2c).m[4]*(_m_a2b).m[3] + (_m_b2c).m[5]*(_m_a2b).m[6]); \</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="preprocessor">    _m_a2c.m[4] = ((_m_b2c).m[3]*(_m_a2b).m[1] + (_m_b2c).m[4]*(_m_a2b).m[4] + (_m_b2c).m[5]*(_m_a2b).m[7]); \</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="preprocessor">    _m_a2c.m[5] = ((_m_b2c).m[3]*(_m_a2b).m[2] + (_m_b2c).m[4]*(_m_a2b).m[5] + (_m_b2c).m[5]*(_m_a2b).m[8]); \</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="preprocessor">    _m_a2c.m[6] = ((_m_b2c).m[6]*(_m_a2b).m[0] + (_m_b2c).m[7]*(_m_a2b).m[3] + (_m_b2c).m[8]*(_m_a2b).m[6]); \</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="preprocessor">    _m_a2c.m[7] = ((_m_b2c).m[6]*(_m_a2b).m[1] + (_m_b2c).m[7]*(_m_a2b).m[4] + (_m_b2c).m[8]*(_m_a2b).m[7]); \</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="preprocessor">    _m_a2c.m[8] = ((_m_b2c).m[6]*(_m_a2b).m[2] + (_m_b2c).m[7]*(_m_a2b).m[5] + (_m_b2c).m[8]*(_m_a2b).m[8]); \</span></div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="preprocessor">  }</span></div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="comment">/* _m_a2b = _m_a2c comp_inv _m_b2c , aka  _m_a2b = inv(_m_b2c) * _m_a2c */</span></div>
 <div class="line"><a name="l00329"></a><span class="lineno"><a class="code" href="pprz__algebra__float_8h.html#af3b5f72a71e66d9cf789ee68f493039e">  329</a></span>&#160;<span class="preprocessor">#define FLOAT_RMAT_COMP_INV(_m_a2b, _m_a2c, _m_b2c) {           \</span></div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="preprocessor">    _m_a2b.m[0] = (_m_b2c.m[0]*_m_a2c.m[0] + _m_b2c.m[3]*_m_a2c.m[3] + _m_b2c.m[6]*_m_a2c.m[6]); \</span></div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="preprocessor">    _m_a2b.m[1] = (_m_b2c.m[0]*_m_a2c.m[1] + _m_b2c.m[3]*_m_a2c.m[4] + _m_b2c.m[6]*_m_a2c.m[7]); \</span></div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="preprocessor">    _m_a2b.m[2] = (_m_b2c.m[0]*_m_a2c.m[2] + _m_b2c.m[3]*_m_a2c.m[5] + _m_b2c.m[6]*_m_a2c.m[8]); \</span></div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="preprocessor">    _m_a2b.m[3] = (_m_b2c.m[1]*_m_a2c.m[0] + _m_b2c.m[4]*_m_a2c.m[3] + _m_b2c.m[7]*_m_a2c.m[6]); \</span></div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="preprocessor">    _m_a2b.m[4] = (_m_b2c.m[1]*_m_a2c.m[1] + _m_b2c.m[4]*_m_a2c.m[4] + _m_b2c.m[7]*_m_a2c.m[7]); \</span></div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="preprocessor">    _m_a2b.m[5] = (_m_b2c.m[1]*_m_a2c.m[2] + _m_b2c.m[4]*_m_a2c.m[5] + _m_b2c.m[7]*_m_a2c.m[8]); \</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="preprocessor">    _m_a2b.m[6] = (_m_b2c.m[2]*_m_a2c.m[0] + _m_b2c.m[5]*_m_a2c.m[3] + _m_b2c.m[8]*_m_a2c.m[6]); \</span></div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="preprocessor">    _m_a2b.m[7] = (_m_b2c.m[2]*_m_a2c.m[1] + _m_b2c.m[5]*_m_a2c.m[4] + _m_b2c.m[8]*_m_a2c.m[7]); \</span></div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="preprocessor">    _m_a2b.m[8] = (_m_b2c.m[2]*_m_a2c.m[2] + _m_b2c.m[5]*_m_a2c.m[5] + _m_b2c.m[8]*_m_a2c.m[8]); \</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="preprocessor">    _m_a2b.m[0] = ((_m_b2c).m[0]*(_m_a2c).m[0] + (_m_b2c).m[3]*(_m_a2c).m[3] + (_m_b2c).m[6]*(_m_a2c).m[6]); \</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="preprocessor">    _m_a2b.m[1] = ((_m_b2c).m[0]*(_m_a2c).m[1] + (_m_b2c).m[3]*(_m_a2c).m[4] + (_m_b2c).m[6]*(_m_a2c).m[7]); \</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="preprocessor">    _m_a2b.m[2] = ((_m_b2c).m[0]*(_m_a2c).m[2] + (_m_b2c).m[3]*(_m_a2c).m[5] + (_m_b2c).m[6]*(_m_a2c).m[8]); \</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="preprocessor">    _m_a2b.m[3] = ((_m_b2c).m[1]*(_m_a2c).m[0] + (_m_b2c).m[4]*(_m_a2c).m[3] + (_m_b2c).m[7]*(_m_a2c).m[6]); \</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="preprocessor">    _m_a2b.m[4] = ((_m_b2c).m[1]*(_m_a2c).m[1] + (_m_b2c).m[4]*(_m_a2c).m[4] + (_m_b2c).m[7]*(_m_a2c).m[7]); \</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="preprocessor">    _m_a2b.m[5] = ((_m_b2c).m[1]*(_m_a2c).m[2] + (_m_b2c).m[4]*(_m_a2c).m[5] + (_m_b2c).m[7]*(_m_a2c).m[8]); \</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="preprocessor">    _m_a2b.m[6] = ((_m_b2c).m[2]*(_m_a2c).m[0] + (_m_b2c).m[5]*(_m_a2c).m[3] + (_m_b2c).m[8]*(_m_a2c).m[6]); \</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="preprocessor">    _m_a2b.m[7] = ((_m_b2c).m[2]*(_m_a2c).m[1] + (_m_b2c).m[5]*(_m_a2c).m[4] + (_m_b2c).m[8]*(_m_a2c).m[7]); \</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="preprocessor">    _m_a2b.m[8] = ((_m_b2c).m[2]*(_m_a2c).m[2] + (_m_b2c).m[5]*(_m_a2c).m[5] + (_m_b2c).m[8]*(_m_a2c).m[8]); \</span></div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="preprocessor">  }</span></div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
@@ -1136,7 +1136,7 @@ $(document).ready(function(){initNavTree('pprz__algebra__float_8h_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_29343b6f5fcd4b75a5dfbb985ff56864.html">math</a></li><li class="navelem"><a class="el" href="pprz__algebra__float_8h.html">pprz_algebra_float.h</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:00:40 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:00:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -160,11 +160,11 @@ $(document).ready(function(){initNavTree('mpu60x0__spi_8h_source.html','');});
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">union </span>{</div>
 <div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="structMpu60x0__Spi.html#abd4a3eac603bf0f2efce7bc6faaf3dc9">   58</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structInt16Vect3.html">Int16Vect3</a> <a class="code" href="structMpu60x0__Spi.html#abd4a3eac603bf0f2efce7bc6faaf3dc9" title="accel data vector in accel coordinate system">vect</a>;           </div>
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="structMpu60x0__Spi.html#a0be522018c94550f85c99b720615be2e">   59</a></span>&#160;    <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> <a class="code" href="structMpu60x0__Spi.html#a0be522018c94550f85c99b720615be2e" title="accel data values accessible by channel index">value</a>[3];                 </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  } <a class="code" href="structMpu60x0__Spi.html#a31b77070c846b59c8624816c6b445a37">data_accel</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  } <a class="code" href="structMpu60x0__Spi.html#ad7f7283639f9ac7742b6708b3f12c7d1">data_accel</a>;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">union </span>{</div>
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="structMpu60x0__Spi.html#a827c7fc8dd9431e7a1b7c74c3505d3cf">   62</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structInt16Rates.html">Int16Rates</a> <a class="code" href="structMpu60x0__Spi.html#a827c7fc8dd9431e7a1b7c74c3505d3cf" title="rates data as angular rates in gyro coordinate system">rates</a>;          </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> <a class="code" href="structMpu60x0__Spi.html#a0be522018c94550f85c99b720615be2e" title="accel data values accessible by channel index">value</a>[3];                 </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  } <a class="code" href="structMpu60x0__Spi.html#a7f43d15d9943a43bbb837d0117793d3d">data_rates</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  } <a class="code" href="structMpu60x0__Spi.html#a09b4cc22376770689e920d64ab5acc58">data_rates</a>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="structMpu60x0__Spi.html#a20028497bd8f071099b0f020462ac3f6">   65</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="structMpu60x0__Spi.html#a20028497bd8f071099b0f020462ac3f6">data_ext</a>[<a class="code" href="mpu60x0__spi_8h.html#a6b700f6c51b798ceb4ba491922f6531e">MPU60X0_BUFFER_EXT_LEN</a>];</div>
 <div class="line"><a name="l00066"></a><span class="lineno"><a class="code" href="structMpu60x0__Spi.html#a312df0b73091e56a69d246626955974a">   66</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structMpu60x0Config.html">Mpu60x0Config</a> <a class="code" href="structMpu60x0__Spi.html#a312df0b73091e56a69d246626955974a">config</a>;</div>
 <div class="line"><a name="l00067"></a><span class="lineno"><a class="code" href="structMpu60x0__Spi.html#a9beb9ee594db50aaa29bb140cb0ac68c">   67</a></span>&#160;  <span class="keyword">enum</span> <a class="code" href="mpu60x0__spi_8h.html#aa2cbe17783d82d3f1ccf6661da0fd8ed">Mpu60x0SpiSlaveInitStatus</a> <a class="code" href="structMpu60x0__Spi.html#a9beb9ee594db50aaa29bb140cb0ac68c">slave_init_status</a>;</div>
@@ -190,7 +190,7 @@ $(document).ready(function(){initNavTree('mpu60x0__spi_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="mpu60x0__spi_8h.html">mpu60x0_spi.h</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:00:44 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:00:44 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

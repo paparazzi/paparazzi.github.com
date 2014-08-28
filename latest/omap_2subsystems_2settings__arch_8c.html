@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -103,6 +103,8 @@ $(document).ready(function(){initNavTree('omap_2subsystems_2settings__arch_8c.ht
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">settings_arch.c File Reference</div>  </div>
 </div><!--header-->
@@ -110,20 +112,93 @@ $(document).ready(function(){initNavTree('omap_2subsystems_2settings__arch_8c.ht
 
 <p>OMAP arch Persistent settings.  
 <a href="#details">More...</a></p>
-
+<div class="textblock"><code>#include &quot;<a class="el" href="settings_8h_source.html">subsystems/settings.h</a>&quot;</code><br/>
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for settings_arch.c:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="omap_2subsystems_2settings__arch_8c__incl.png" border="0" usemap="#sw_2airborne_2arch_2omap_2subsystems_2settings__arch_8c" alt=""/></div>
+<map name="sw_2airborne_2arch_2omap_2subsystems_2settings__arch_8c" id="sw_2airborne_2arch_2omap_2subsystems_2settings__arch_8c">
+<area shape="rect" id="node3" href="settings_8h.html" title="Persistent settings interface." alt="" coords="13,115,179,143"/></map>
+</div>
+</div>
 <p><a href="omap_2subsystems_2settings__arch_8c_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a1497901ac40153b238ee0524257a5f3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="omap_2subsystems_2settings__arch_8c.html#a1497901ac40153b238ee0524257a5f3b">persistent_write</a> (<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> ptr, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> size)</td></tr>
+<tr class="memitem:a4d0dc6e4cdefbf2eeba08f82b8e15a37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="omap_2subsystems_2settings__arch_8c.html#a4d0dc6e4cdefbf2eeba08f82b8e15a37">persistent_read</a> (<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> ptr, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> size)</td></tr>
+</table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>OMAP arch Persistent settings. </p>
 <p>Unimplemented. </p>
 
 <p>Definition in file <a class="el" href="omap_2subsystems_2settings__arch_8c_source.html">settings_arch.c</a>.</p>
-</div></div><!-- contents -->
+</div><h2>Function Documentation</h2>
+<a class="anchor" id="a4d0dc6e4cdefbf2eeba08f82b8e15a37"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> persistent_read </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> ptr&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> size&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="omap_2subsystems_2settings__arch_8c_source.html#l00037">37</a> of file <a class="el" href="omap_2subsystems_2settings__arch_8c_source.html">settings_arch.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1497901ac40153b238ee0524257a5f3b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> persistent_write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> ptr&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> size&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="omap_2subsystems_2settings__arch_8c_source.html#l00031">31</a> of file <a class="el" href="omap_2subsystems_2settings__arch_8c_source.html">settings_arch.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_05bb9bcacf5fa0e2669053a6f23a5278.html">omap</a></li><li class="navelem"><a class="el" href="dir_eec7a2fb9acd5462201f6c5405c06e22.html">subsystems</a></li><li class="navelem"><a class="el" href="omap_2subsystems_2settings__arch_8c.html">settings_arch.c</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:00:49 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:00:49 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -406,7 +406,7 @@ $(document).ready(function(){initNavTree('gps__ubx__ucenter_8c_source.html','');
 <div class="line"><a name="l00337"></a><span class="lineno"><a class="code" href="gps__ubx__ucenter_8c.html#a12ef579796da8ac1c9cf48eb423f24b8">  337</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="gps__ubx__ucenter_8c.html#a12ef579796da8ac1c9cf48eb423f24b8">gps_ubx_ucenter_config_nav</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;{</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;  <span class="comment">//New ublox firmware v5 or higher uses CFG_NAV5 message, CFG_NAV is no longer available</span></div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="gps__ubx__ucenter_8c.html#a080e2318dbd7b4cb34822c4fbbfc701d">gps_ubx_ucenter</a>.<a class="code" href="structgps__ubx__ucenter__struct.html#aac98c418a05bea072cea0d90b74c0e14">sw_ver_h</a> &lt; 5) {</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="gps__ubx__ucenter_8c.html#a080e2318dbd7b4cb34822c4fbbfc701d">gps_ubx_ucenter</a>.<a class="code" href="structgps__ubx__ucenter__struct.html#aac98c418a05bea072cea0d90b74c0e14">sw_ver_h</a> &lt; 5 &amp;&amp; <a class="code" href="gps__ubx__ucenter_8c.html#a080e2318dbd7b4cb34822c4fbbfc701d">gps_ubx_ucenter</a>.<a class="code" href="structgps__ubx__ucenter__struct.html#a874437be54c3f9c1625d1479133c9bc2">hw_ver_h</a> &lt; 6) {</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    UbxSend_CFG_NAV(<a class="code" href="gps__ubx__ucenter_8c.html#a060413ec48c481b0eb8584d2ae90f0b5">NAV_DYN_AIRBORNE_2G</a>, 3, 16, 24, 20, 5, 0, 0x3C, 0x3C, 0x14, 0x03E8 ,0x0000, 0x0, 0x17, 0x00FA, 0x00FA, 0x0064, 0x012C, 0x000F, 0x00, 0x00);</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;  }</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;  <span class="keywordflow">else</span> {</div>
@@ -619,7 +619,7 @@ $(document).ready(function(){initNavTree('gps__ubx__ucenter_8c_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_5e5c455c6cc9b4955752fc2ddd0b9fff.html">gps</a></li><li class="navelem"><a class="el" href="gps__ubx__ucenter_8c.html">gps_ubx_ucenter.c</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:00:41 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:00:41 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

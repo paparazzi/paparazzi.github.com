@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('struct__mission.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="mission_8h_source.html">mission.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="mission__common_8h_source.html">mission_common.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for _mission:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -119,12 +119,12 @@ $(document).ready(function(){initNavTree('struct__mission.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="struct__mission__coll__graph.png" border="0" usemap="#__mission_coll__map" alt="Collaboration graph"/></div>
 <map name="__mission_coll__map" id="__mission_coll__map">
-<area shape="rect" id="node2" href="struct__mission__element.html" title="_mission_element" alt="" coords="220,209,359,237"/><area shape="rect" id="node4" href="struct__mission__circle.html" title="_mission_circle" alt="" coords="5,115,123,143"/><area shape="rect" id="node6" href="structEnuCoor__f.html" title="vector in East North Up coordinates Units: meters" alt="" coords="247,6,332,34"/><area shape="rect" id="node8" href="struct__mission__segment.html" title="_mission_segment" alt="" coords="147,115,288,143"/><area shape="rect" id="node11" href="struct__mission__wp.html" title="_mission_wp" alt="" coords="312,115,413,143"/><area shape="rect" id="node14" href="struct__mission__path.html" title="_mission_path" alt="" coords="437,115,552,143"/></map>
+<area shape="rect" id="node2" href="struct__mission__element.html" title="_mission_element" alt="" coords="208,209,347,237"/><area shape="rect" id="node4" href="struct__mission__circle.html" title="_mission_circle" alt="" coords="296,115,413,143"/><area shape="rect" id="node6" href="structEnuCoor__f.html" title="vector in East North Up coordinates Units: meters" alt="" coords="101,6,187,34"/><area shape="rect" id="node10" href="struct__mission__segment.html" title="_mission_segment" alt="" coords="131,115,272,143"/><area shape="rect" id="node14" href="struct__mission__wp.html" title="_mission_wp" alt="" coords="5,115,107,143"/><area shape="rect" id="node18" href="struct__mission__path.html" title="_mission_path" alt="" coords="437,115,552,143"/><area shape="rect" id="node8" href="structEnuCoor__i.html" title="vector in East North Up coordinates" alt="" coords="335,6,420,34"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a7529739f5dc027a2ccdbd1542f25b230"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct__mission__element.html">_mission_element</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__mission.html#a7529739f5dc027a2ccdbd1542f25b230">elements</a> [<a class="el" href="mission_8h.html#abbc222d733a10afc3b9ab7537d664a73">MISSION_ELEMENT_NB</a>]</td></tr>
+<tr class="memitem:a7529739f5dc027a2ccdbd1542f25b230"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct__mission__element.html">_mission_element</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__mission.html#a7529739f5dc027a2ccdbd1542f25b230">elements</a> [<a class="el" href="mission__common_8h.html#abbc222d733a10afc3b9ab7537d664a73">MISSION_ELEMENT_NB</a>]</td></tr>
 <tr class="memitem:a7813023e235161bb33a4aac1213f7723"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__mission.html#a7813023e235161bb33a4aac1213f7723">element_time</a></td></tr>
 <tr class="memdesc:a7813023e235161bb33a4aac1213f7723"><td class="mdescLeft">&#160;</td><td class="mdescRight">time in second spend in the current element  <a href="#a7813023e235161bb33a4aac1213f7723"></a><br/></td></tr>
 <tr class="memitem:acb133196b6ba998ee1545cb615b38968"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__mission.html#acb133196b6ba998ee1545cb615b38968">insert_idx</a></td></tr>
@@ -134,7 +134,7 @@ Data Fields</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="mission_8h_source.html#l00092">92</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00112">112</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
 </div><h2>Field Documentation</h2>
 <a class="anchor" id="af6b890b1a39abf10f3cea4f47d7ce4d6"></a>
 <div class="memitem">
@@ -148,9 +148,9 @@ Data Fields</h2></td></tr>
 
 <p>current mission element index </p>
 
-<p>Definition at line <a class="el" href="mission_8h_source.html#l00096">96</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00116">116</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
 
-<p>Referenced by <a class="el" href="mission_8c_source.html#l00080">mission_get()</a>, <a class="el" href="mission_8c_source.html#l00039">mission_init()</a>, <a class="el" href="mission_8c_source.html#l00045">mission_insert()</a>, <a class="el" href="mission_8c_source.html#l00330">mission_parse_END_MISSION()</a>, <a class="el" href="mission_8c_source.html#l00308">mission_parse_GOTO_MISSION()</a>, <a class="el" href="mission_8c_source.html#l00320">mission_parse_NEXT_MISSION()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00105">mission_run()</a>, and <a class="el" href="mission_8c_source.html#l00089">mission_status_report()</a>.</p>
+<p>Referenced by <a class="el" href="mission__common_8c_source.html#l00089">mission_get()</a>, <a class="el" href="mission__common_8c_source.html#l00038">mission_init()</a>, <a class="el" href="mission__common_8c_source.html#l00046">mission_insert()</a>, <a class="el" href="mission__common_8c_source.html#l00322">mission_parse_END_MISSION()</a>, <a class="el" href="mission__common_8c_source.html#l00300">mission_parse_GOTO_MISSION()</a>, <a class="el" href="mission__common_8c_source.html#l00312">mission_parse_NEXT_MISSION()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00132">mission_run()</a>, and <a class="el" href="mission__common_8c_source.html#l00098">mission_status_report()</a>.</p>
 
 </div>
 </div>
@@ -166,9 +166,9 @@ Data Fields</h2></td></tr>
 
 <p>time in second spend in the current element </p>
 
-<p>Definition at line <a class="el" href="mission_8h_source.html#l00094">94</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00114">114</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
 
-<p>Referenced by <a class="el" href="mission_8c_source.html#l00039">mission_init()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00105">mission_run()</a>, and <a class="el" href="mission_8c_source.html#l00089">mission_status_report()</a>.</p>
+<p>Referenced by <a class="el" href="mission__common_8c_source.html#l00038">mission_init()</a>, <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00134">mission_nav_circle()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00132">mission_run()</a>, and <a class="el" href="mission__common_8c_source.html#l00098">mission_status_report()</a>.</p>
 
 </div>
 </div>
@@ -177,14 +177,14 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="struct__mission__element.html">_mission_element</a> _mission::elements[<a class="el" href="mission_8h.html#abbc222d733a10afc3b9ab7537d664a73">MISSION_ELEMENT_NB</a>]</td>
+          <td class="memname">struct <a class="el" href="struct__mission__element.html">_mission_element</a> _mission::elements[<a class="el" href="mission__common_8h.html#abbc222d733a10afc3b9ab7537d664a73">MISSION_ELEMENT_NB</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mission_8h_source.html#l00093">93</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00113">113</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
 
-<p>Referenced by <a class="el" href="mission_8c_source.html#l00080">mission_get()</a>, <a class="el" href="mission_8c_source.html#l00045">mission_insert()</a>, and <a class="el" href="mission_8c_source.html#l00089">mission_status_report()</a>.</p>
+<p>Referenced by <a class="el" href="mission__common_8c_source.html#l00089">mission_get()</a>, <a class="el" href="mission__common_8c_source.html#l00046">mission_insert()</a>, and <a class="el" href="mission__common_8c_source.html#l00098">mission_status_report()</a>.</p>
 
 </div>
 </div>
@@ -200,14 +200,14 @@ Data Fields</h2></td></tr>
 
 <p>inserstion index </p>
 
-<p>Definition at line <a class="el" href="mission_8h_source.html#l00095">95</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00115">115</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
 
-<p>Referenced by <a class="el" href="mission_8c_source.html#l00080">mission_get()</a>, <a class="el" href="mission_8c_source.html#l00039">mission_init()</a>, <a class="el" href="mission_8c_source.html#l00045">mission_insert()</a>, <a class="el" href="mission_8c_source.html#l00330">mission_parse_END_MISSION()</a>, <a class="el" href="mission_8c_source.html#l00320">mission_parse_NEXT_MISSION()</a>, and <a class="el" href="mission_8c_source.html#l00089">mission_status_report()</a>.</p>
+<p>Referenced by <a class="el" href="mission__common_8c_source.html#l00089">mission_get()</a>, <a class="el" href="mission__common_8c_source.html#l00038">mission_init()</a>, <a class="el" href="mission__common_8c_source.html#l00046">mission_insert()</a>, <a class="el" href="mission__common_8c_source.html#l00322">mission_parse_END_MISSION()</a>, <a class="el" href="mission__common_8c_source.html#l00312">mission_parse_NEXT_MISSION()</a>, and <a class="el" href="mission__common_8c_source.html#l00098">mission_status_report()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>sw/airborne/modules/mission/<a class="el" href="mission_8h_source.html">mission.h</a></li>
+<li>sw/airborne/modules/mission/<a class="el" href="mission__common_8h_source.html">mission_common.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -215,7 +215,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct__mission.html">_mission</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:01:12 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:01:13 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

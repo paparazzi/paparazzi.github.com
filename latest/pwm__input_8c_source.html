@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -132,17 +132,17 @@ $(document).ready(function(){initNavTree('pwm__input_8c_source.html','');});
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;std.h&quot;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pwm__input_8h.html" title="arch independent PWM input capture API">mcu_periph/pwm_input.h</a>&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="pwm__input_8c.html#a10f2a2c56c408dac7f753dc40f2986cf">   29</a></span>&#160;<span class="keyword">volatile</span> <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="pwm__input_8c.html#a10f2a2c56c408dac7f753dc40f2986cf">pwm_input_duty_tics</a>[<a class="code" href="pwm__input__arch_8h.html#af40c671b896062004302bea8bcbedeaf">PWM_INPUT_NB</a>];</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="pwm__input_8c.html#a8bba700f504dc9a8af8bfce95e08eb6e">   30</a></span>&#160;<span class="keyword">volatile</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="pwm__input_8c.html#a8bba700f504dc9a8af8bfce95e08eb6e">pwm_input_duty_valid</a>[<a class="code" href="pwm__input__arch_8h.html#af40c671b896062004302bea8bcbedeaf">PWM_INPUT_NB</a>];</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="pwm__input_8c.html#aa342afd936d8faba75ed025c2adb56bf">   31</a></span>&#160;<span class="keyword">volatile</span> <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="pwm__input_8c.html#aa342afd936d8faba75ed025c2adb56bf">pwm_input_period_tics</a>[<a class="code" href="pwm__input__arch_8h.html#af40c671b896062004302bea8bcbedeaf">PWM_INPUT_NB</a>];</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="pwm__input_8c.html#a1c3301e7803a112db96d86605e0d4832">   32</a></span>&#160;<span class="keyword">volatile</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="pwm__input_8c.html#a1c3301e7803a112db96d86605e0d4832">pwm_input_period_valid</a>[<a class="code" href="pwm__input__arch_8h.html#af40c671b896062004302bea8bcbedeaf">PWM_INPUT_NB</a>];</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="pwm__input_8c.html#a10f2a2c56c408dac7f753dc40f2986cf">   29</a></span>&#160;<span class="keyword">volatile</span> <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="pwm__input_8c.html#a10f2a2c56c408dac7f753dc40f2986cf">pwm_input_duty_tics</a>[<a class="code" href="lpc21_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a64615989b58d9c05b43316402ec94502">PWM_INPUT_NB</a>];</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="pwm__input_8c.html#a8bba700f504dc9a8af8bfce95e08eb6e">   30</a></span>&#160;<span class="keyword">volatile</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="pwm__input_8c.html#a8bba700f504dc9a8af8bfce95e08eb6e">pwm_input_duty_valid</a>[<a class="code" href="lpc21_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a64615989b58d9c05b43316402ec94502">PWM_INPUT_NB</a>];</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="pwm__input_8c.html#aa342afd936d8faba75ed025c2adb56bf">   31</a></span>&#160;<span class="keyword">volatile</span> <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="pwm__input_8c.html#aa342afd936d8faba75ed025c2adb56bf">pwm_input_period_tics</a>[<a class="code" href="lpc21_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a64615989b58d9c05b43316402ec94502">PWM_INPUT_NB</a>];</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="pwm__input_8c.html#a1c3301e7803a112db96d86605e0d4832">   32</a></span>&#160;<span class="keyword">volatile</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="pwm__input_8c.html#a1c3301e7803a112db96d86605e0d4832">pwm_input_period_valid</a>[<a class="code" href="lpc21_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a64615989b58d9c05b43316402ec94502">PWM_INPUT_NB</a>];</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_1ca43f6a116d741d80fb1d0555a2b198.html">mcu_periph</a></li><li class="navelem"><a class="el" href="pwm__input_8c.html">pwm_input.c</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:00:40 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:00:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

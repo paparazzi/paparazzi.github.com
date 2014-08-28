@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -123,6 +123,8 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2radio__control_2spe
 <code>#include &quot;subsystems/radio_control/spektrum_arch.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="gpio_8h_source.html">mcu_periph/gpio.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br/>
+<code>#include &quot;mcu_arch.h&quot;</code><br/>
 <code>#include &lt;BOARD_CONFIG&gt;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for spektrum_arch.c:</div>
@@ -131,7 +133,7 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2radio__control_2spe
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2subsystems_2radio__control_2spektrum__arch_8c__incl.png" border="0" usemap="#sw_2airborne_2arch_2stm32_2subsystems_2radio__control_2spektrum__arch_8c" alt=""/></div>
 <map name="sw_2airborne_2arch_2stm32_2subsystems_2radio__control_2spektrum__arch_8c" id="sw_2airborne_2arch_2stm32_2subsystems_2radio__control_2spektrum__arch_8c">
-<area shape="rect" id="node15" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="1125,123,1323,151"/><area shape="rect" id="node31" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="1557,123,1696,151"/><area shape="rect" id="node37" href="gpio_8h.html" title="Some architecture independent helper functions for GPIOs." alt="" coords="1720,123,1859,151"/><area shape="rect" id="node17" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API" alt="" coords="927,209,980,237"/><area shape="rect" id="node23" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1185,209,1281,237"/><area shape="rect" id="node25" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1191,286,1276,314"/></map>
+<area shape="rect" id="node15" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="1125,123,1323,151"/><area shape="rect" id="node31" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="1347,123,1485,151"/><area shape="rect" id="node37" href="gpio_8h.html" title="Some architecture independent helper functions for GPIOs." alt="" coords="1509,123,1648,151"/><area shape="rect" id="node42" href="sys__time_8h.html" title="Architecture independent timing functions." alt="" coords="1677,123,1848,151"/><area shape="rect" id="node17" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API" alt="" coords="704,217,757,245"/><area shape="rect" id="node23" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1168,217,1264,245"/><area shape="rect" id="node25" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1452,302,1537,330"/></map>
 </div>
 </div>
 <p><a href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">Go to the source code of this file.</a></p>
@@ -145,11 +147,9 @@ Macros</h2></td></tr>
 <tr class="memitem:ace6cf51a5f170c61c5c5598f93329478"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#ace6cf51a5f170c61c5c5598f93329478">SPEKTRUM_CHANNELS_PER_FRAME</a>&#160;&#160;&#160;7</td></tr>
 <tr class="memitem:acb180c84399fe9bba1e58aa96a86deb2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#acb180c84399fe9bba1e58aa96a86deb2">MAX_SPEKTRUM_FRAMES</a>&#160;&#160;&#160;2</td></tr>
 <tr class="memitem:a4ae5e88ff6bbc703b52683feea2482ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a4ae5e88ff6bbc703b52683feea2482ff">MAX_SPEKTRUM_CHANNELS</a>&#160;&#160;&#160;16</td></tr>
-<tr class="memitem:a16027d8acc5301e440cefa086eb9db2a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a16027d8acc5301e440cefa086eb9db2a">MAX_DELAY</a>&#160;&#160;&#160;INT16_MAX</td></tr>
-<tr class="memitem:afc6cede7e395db0695616d28f54d7812"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#afc6cede7e395db0695616d28f54d7812">DELAY_TIM_FREQUENCY</a>&#160;&#160;&#160;1000000</td></tr>
+<tr class="memitem:ab2da08c5fafe675983c399f26e6225a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#ab2da08c5fafe675983c399f26e6225a3">ONE_MHZ</a>&#160;&#160;&#160;1000000</td></tr>
 <tr class="memitem:a78460fa558bb9f7b6bf4b6add9c4e35c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a78460fa558bb9f7b6bf4b6add9c4e35c">MASTER_RECEIVER_PULSES</a>&#160;&#160;&#160;5</td></tr>
 <tr class="memitem:a9cec80fcfc062ce6db245d73898c8566"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a9cec80fcfc062ce6db245d73898c8566">SLAVE_RECEIVER_PULSES</a>&#160;&#160;&#160;6</td></tr>
-<tr class="memitem:a0226810de0b855055d200ed2877d308b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a0226810de0b855055d200ed2877d308b">TIM_FREQ_1000000</a>&#160;&#160;&#160;1000000</td></tr>
 <tr class="memitem:a94fea3742c90d2c73341748bf2de72d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a94fea3742c90d2c73341748bf2de72d4">TIM_TICS_FOR_100us</a>&#160;&#160;&#160;100</td></tr>
 <tr class="memitem:a714b4ef35a5a4e267bbb73a7754f1ab5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a714b4ef35a5a4e267bbb73a7754f1ab5">MIN_FRAME_SPACE</a>&#160;&#160;&#160;70</td></tr>
 <tr class="memitem:a7b58ddee63424da5177ac65351561a36"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a7b58ddee63424da5177ac65351561a36">MAX_BYTE_SPACE</a>&#160;&#160;&#160;3</td></tr>
@@ -162,6 +162,12 @@ Macros</h2></td></tr>
 <tr class="memitem:a25565951b5e960eccfa27d12fecdfbca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a25565951b5e960eccfa27d12fecdfbca">__SecondaryUart</a>(dev, _x)&#160;&#160;&#160;dev##_x</td></tr>
 <tr class="memitem:a2afa2bab76efba19977a6a7b839ccc9f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a2afa2bab76efba19977a6a7b839ccc9f">_SecondaryUart</a>(dev, _x)&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a25565951b5e960eccfa27d12fecdfbca">__SecondaryUart</a>(dev, _x)</td></tr>
 <tr class="memitem:a1d7999138cd2dc1ffdf55fc51d2708c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a1d7999138cd2dc1ffdf55fc51d2708c9">SecondaryUart</a>(_x)&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a2afa2bab76efba19977a6a7b839ccc9f">_SecondaryUart</a>(RADIO_CONTROL_SPEKTRUM_SECONDARY_PORT, _x)</td></tr>
+<tr class="memitem:a50ec2ad5fe4db9bf380763480ac16af5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a50ec2ad5fe4db9bf380763480ac16af5">RC_SET_POLARITY</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a5d6d4dc62e9dd73104e95a7945fc029d">gpio_clear</a></td></tr>
+<tr class="memdesc:a50ec2ad5fe4db9bf380763480ac16af5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set polarity using RC_POLARITY_GPIO.  <a href="#a50ec2ad5fe4db9bf380763480ac16af5"></a><br/></td></tr>
+<tr class="memitem:aacd8bd236c914e45e55a7fe73fa569a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#aacd8bd236c914e45e55a7fe73fa569a9">SPEKTRUM_PRIMARY_BIND_CONF_PORT</a>&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#ac3ad4ff72c99e96f3ffe89593a3f5f74">PrimaryUart</a>(_BANK)</td></tr>
+<tr class="memitem:a6c01b610a4ef6d66079fcbdc464e6208"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a6c01b610a4ef6d66079fcbdc464e6208">SPEKTRUM_PRIMARY_BIND_CONF_PIN</a>&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#ac3ad4ff72c99e96f3ffe89593a3f5f74">PrimaryUart</a>(_PIN)</td></tr>
+<tr class="memitem:a9e7b6e02958ffc9f53e21461cdc54f02"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a9e7b6e02958ffc9f53e21461cdc54f02">SPEKTRUM_SECONDARY_BIND_CONF_PORT</a>&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a1d7999138cd2dc1ffdf55fc51d2708c9">SecondaryUart</a>(_BANK)</td></tr>
+<tr class="memitem:a986225c69471a78f73f926dc437e72de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a986225c69471a78f73f926dc437e72de">SPEKTRUM_SECONDARY_BIND_CONF_PIN</a>&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a1d7999138cd2dc1ffdf55fc51d2708c9">SecondaryUart</a>(_PIN)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -172,9 +178,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ac4f1b2d7f0844ae795adfd74bdeb18f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#ac4f1b2d7f0844ae795adfd74bdeb18f0">SpektrumUartInit</a> (void)</td></tr>
 <tr class="memitem:af38434843fde1e03292e09a8658f9fbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#af38434843fde1e03292e09a8658f9fbb">SpektrumTimerInit</a> (void)</td></tr>
 <tr class="memitem:acff838020527cf2a316639492d934cd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#acff838020527cf2a316639492d934cd0">tim6_irq_handler</a> (void)</td></tr>
-<tr class="memitem:ab13bee1b25d7aa1f0cd6a8a58fc9888c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#ab13bee1b25d7aa1f0cd6a8a58fc9888c">DelayUs</a> (<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> uSecs)</td></tr>
-<tr class="memitem:aeeda81e8dcacff3172020a9f2e2a49d9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#aeeda81e8dcacff3172020a9f2e2a49d9">DelayMs</a> (<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> mSecs)</td></tr>
-<tr class="memitem:a974a8d609ba9ad3d9f67fa01c8912374"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a974a8d609ba9ad3d9f67fa01c8912374">SpektrumDelayInit</a> (void)</td></tr>
 <tr class="memitem:a6ba4bebf68f7ff39f4569dfe3b1f2832"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832">radio_control_impl_init</a> (void)</td></tr>
 <tr class="memitem:a91a9fd24df5bc3eb82b8d5baba46959d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a91a9fd24df5bc3eb82b8d5baba46959d">SpektrumParser</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _c, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#ab9f35931d1e124cd3e0ee1f07fac39a6">SpektrumStateType</a> *spektrum_state, bool_t secondary_receiver)</td></tr>
 <tr class="memitem:aafc7faaab3785de71d5f220c1b4caed7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#aafc7faaab3785de71d5f220c1b4caed7">RadioControlEventImp</a> (void(*frame_handler)(void))</td></tr>
@@ -216,7 +219,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00075">75</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00076">76</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
 </div>
 </div>
@@ -244,7 +247,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00079">79</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00080">80</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
 </div>
 </div>
@@ -272,7 +275,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00076">76</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00077">77</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
 </div>
 </div>
@@ -300,23 +303,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00080">80</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="afc6cede7e395db0695616d28f54d7812"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DELAY_TIM_FREQUENCY&#160;&#160;&#160;1000000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00042">42</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
-
-<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00757">DelayMs()</a>, and <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00722">SpektrumDelayInit()</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00081">81</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
 </div>
 </div>
@@ -330,9 +317,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00044">44</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00047">47</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00659">radio_control_spektrum_try_bind()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00687">radio_control_spektrum_try_bind()</a>.</p>
 
 </div>
 </div>
@@ -346,23 +333,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00050">50</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00052">52</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00271">SpektrumParser()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a16027d8acc5301e440cefa086eb9db2a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_DELAY&#160;&#160;&#160;INT16_MAX</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00040">40</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00283">SpektrumParser()</a>.</p>
 
 </div>
 </div>
@@ -376,7 +349,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00038">38</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00042">42</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
 </div>
 </div>
@@ -390,7 +363,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00037">37</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00041">41</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
 </div>
 </div>
@@ -404,9 +377,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00049">49</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00051">51</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00271">SpektrumParser()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00283">SpektrumParser()</a>.</p>
 
 </div>
 </div>
@@ -420,9 +393,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00065">65</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00066">66</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00542">SpektrumUartInit()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00555">SpektrumUartInit()</a>.</p>
 
 </div>
 </div>
@@ -436,9 +409,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00058">58</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00059">59</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00486">SpektrumTimerInit()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00498">SpektrumTimerInit()</a>.</p>
 
 </div>
 </div>
@@ -452,9 +425,25 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00054">54</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00055">55</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00486">SpektrumTimerInit()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00498">SpektrumTimerInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab2da08c5fafe675983c399f26e6225a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ONE_MHZ&#160;&#160;&#160;1000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00044">44</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+
+<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00498">SpektrumTimerInit()</a>.</p>
 
 </div>
 </div>
@@ -472,9 +461,28 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00077">77</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00078">78</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00605">_ISR()</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00659">radio_control_spektrum_try_bind()</a>, and <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00542">SpektrumUartInit()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00618">_ISR()</a>, and <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00555">SpektrumUartInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a50ec2ad5fe4db9bf380763480ac16af5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_SET_POLARITY&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a5d6d4dc62e9dd73104e95a7945fc029d">gpio_clear</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set polarity using RC_POLARITY_GPIO. </p>
+<p>SBUS signal has a reversed polarity compared to normal UART this allows to using hardware UART peripheral by changing the input signal polarity. Setting this gpio ouput high inverts the signal, output low sets it to normal polarity. So for spektrum this is set to normal polarity. </p>
+
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00150">150</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+
+<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00158">radio_control_impl_init()</a>.</p>
 
 </div>
 </div>
@@ -492,9 +500,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00081">81</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00082">82</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00659">radio_control_spektrum_try_bind()</a>, and <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00542">SpektrumUartInit()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00555">SpektrumUartInit()</a>.</p>
 
 </div>
 </div>
@@ -508,9 +516,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00045">45</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00048">48</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00659">radio_control_spektrum_try_bind()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00687">radio_control_spektrum_try_bind()</a>.</p>
 
 </div>
 </div>
@@ -524,25 +532,73 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00036">36</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00040">40</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00388">RadioControlEventImp()</a>, and <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00271">SpektrumParser()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00400">RadioControlEventImp()</a>, and <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00283">SpektrumParser()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0226810de0b855055d200ed2877d308b"></a>
+<a class="anchor" id="a6c01b610a4ef6d66079fcbdc464e6208"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define TIM_FREQ_1000000&#160;&#160;&#160;1000000</td>
+          <td class="memname">#define SPEKTRUM_PRIMARY_BIND_CONF_PIN&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#ac3ad4ff72c99e96f3ffe89593a3f5f74">PrimaryUart</a>(_PIN)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00047">47</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00670">670</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00486">SpektrumTimerInit()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00687">radio_control_spektrum_try_bind()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aacd8bd236c914e45e55a7fe73fa569a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPEKTRUM_PRIMARY_BIND_CONF_PORT&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#ac3ad4ff72c99e96f3ffe89593a3f5f74">PrimaryUart</a>(_BANK)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00667">667</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+
+<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00687">radio_control_spektrum_try_bind()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a986225c69471a78f73f926dc437e72de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPEKTRUM_SECONDARY_BIND_CONF_PIN&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a1d7999138cd2dc1ffdf55fc51d2708c9">SecondaryUart</a>(_PIN)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00676">676</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+
+<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00687">radio_control_spektrum_try_bind()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9e7b6e02958ffc9f53e21461cdc54f02"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPEKTRUM_SECONDARY_BIND_CONF_PORT&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a1d7999138cd2dc1ffdf55fc51d2708c9">SecondaryUart</a>(_BANK)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00673">673</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+
+<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00687">radio_control_spektrum_try_bind()</a>.</p>
 
 </div>
 </div>
@@ -556,9 +612,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00048">48</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00050">50</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00486">SpektrumTimerInit()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00498">SpektrumTimerInit()</a>.</p>
 
 </div>
 </div>
@@ -573,7 +629,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00096">96</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00097">97</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
 </div>
 </div>
@@ -592,9 +648,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00605">605</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00618">618</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
-<p>References <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00077">PrimaryUart</a>, and <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00271">SpektrumParser()</a>.</p>
+<p>References <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00078">PrimaryUart</a>, and <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00283">SpektrumParser()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -604,97 +660,6 @@ Variables</h2></td></tr>
 <div class="center"><img src="stm32_2subsystems_2radio__control_2spektrum__arch_8c_a447e129abefa9eb6efc28829bf6c8364_cgraph.png" border="0" usemap="#stm32_2subsystems_2radio__control_2spektrum__arch_8c_a447e129abefa9eb6efc28829bf6c8364_cgraph" alt=""/></div>
 <map name="stm32_2subsystems_2radio__control_2spektrum__arch_8c_a447e129abefa9eb6efc28829bf6c8364_cgraph" id="stm32_2subsystems_2radio__control_2spektrum__arch_8c_a447e129abefa9eb6efc28829bf6c8364_cgraph">
 <area shape="rect" id="node3" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a91a9fd24df5bc3eb82b8d5baba46959d" title="SpektrumParser" alt="" coords="104,5,229,33"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="aeeda81e8dcacff3172020a9f2e2a49d9"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void DelayMs </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
-          <td class="paramname"><em>mSecs</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00757">757</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
-
-<p>References <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00042">DELAY_TIM_FREQUENCY</a>, and <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00749">DelayUs()</a>.</p>
-
-<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00659">radio_control_spektrum_try_bind()</a>.</p>
-
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="stm32_2subsystems_2radio__control_2spektrum__arch_8c_aeeda81e8dcacff3172020a9f2e2a49d9_cgraph.png" border="0" usemap="#stm32_2subsystems_2radio__control_2spektrum__arch_8c_aeeda81e8dcacff3172020a9f2e2a49d9_cgraph" alt=""/></div>
-<map name="stm32_2subsystems_2radio__control_2spektrum__arch_8c_aeeda81e8dcacff3172020a9f2e2a49d9_cgraph" id="stm32_2subsystems_2radio__control_2spektrum__arch_8c_aeeda81e8dcacff3172020a9f2e2a49d9_cgraph">
-<area shape="rect" id="node3" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#ab13bee1b25d7aa1f0cd6a8a58fc9888c" title="DelayUs" alt="" coords="131,5,205,33"/></map>
-</div>
-</p>
-
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="stm32_2subsystems_2radio__control_2spektrum__arch_8c_aeeda81e8dcacff3172020a9f2e2a49d9_icgraph.png" border="0" usemap="#stm32_2subsystems_2radio__control_2spektrum__arch_8c_aeeda81e8dcacff3172020a9f2e2a49d9_icgraph" alt=""/></div>
-<map name="stm32_2subsystems_2radio__control_2spektrum__arch_8c_aeeda81e8dcacff3172020a9f2e2a49d9_icgraph" id="stm32_2subsystems_2radio__control_2spektrum__arch_8c_aeeda81e8dcacff3172020a9f2e2a49d9_icgraph">
-<area shape="rect" id="node3" href="spektrum_8h.html#ac3242f23ea541664f6fbc29edecbf199" title="radio_control_spektrum\l_try_bind" alt="" coords="131,5,304,49"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="ab13bee1b25d7aa1f0cd6a8a58fc9888c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void DelayUs </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
-          <td class="paramname"><em>uSecs</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00749">749</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
-
-<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00757">DelayMs()</a>, and <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00659">radio_control_spektrum_try_bind()</a>.</p>
-
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="stm32_2subsystems_2radio__control_2spektrum__arch_8c_ab13bee1b25d7aa1f0cd6a8a58fc9888c_icgraph.png" border="0" usemap="#stm32_2subsystems_2radio__control_2spektrum__arch_8c_ab13bee1b25d7aa1f0cd6a8a58fc9888c_icgraph" alt=""/></div>
-<map name="stm32_2subsystems_2radio__control_2spektrum__arch_8c_ab13bee1b25d7aa1f0cd6a8a58fc9888c_icgraph" id="stm32_2subsystems_2radio__control_2spektrum__arch_8c_ab13bee1b25d7aa1f0cd6a8a58fc9888c_icgraph">
-<area shape="rect" id="node3" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#aeeda81e8dcacff3172020a9f2e2a49d9" title="DelayMs" alt="" coords="129,5,204,33"/><area shape="rect" id="node5" href="spektrum_8h.html#ac3242f23ea541664f6fbc29edecbf199" title="radio_control_spektrum\l_try_bind" alt="" coords="253,22,427,66"/></map>
 </div>
 </p>
 
@@ -714,16 +679,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="alt__filter_8c_source.html#l00060">alt_filter_periodic()</a>, <a class="el" href="hf__float_8c_source.html#l00477">b2_hff_update_gps()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00447">h_ctl_pitch_loop()</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00123">humid_sht_event_i2c()</a>, <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l01452">i2c_idle()</a>, <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00662">i2c_irq()</a>, <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l01193">i2c_setbitrate()</a>, <a class="el" href="i2c-dev_8h_source.html#l00314">i2c_smbus_block_process_call()</a>, <a class="el" href="mpu60x0__i2c_8c_source.html#l00124">mpu60x0_configure_i2c_slaves()</a>, <a class="el" href="ms5611__i2c_8c_source.html#l00117">ms5611_i2c_event()</a>, and <a class="el" href="ms5611__spi_8c_source.html#l00131">ms5611_spi_event()</a>.</p>
+<p>Referenced by <a class="el" href="alt__filter_8c_source.html#l00060">alt_filter_periodic()</a>, <a class="el" href="hf__float_8c_source.html#l00512">b2_hff_update_gps()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00447">h_ctl_pitch_loop()</a>, <a class="el" href="humid__sht__i2c_8c_source.html#l00123">humid_sht_event_i2c()</a>, <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l01458">i2c_idle()</a>, <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l00662">i2c_irq()</a>, <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c_source.html#l01193">i2c_setbitrate()</a>, <a class="el" href="i2c-dev_8h_source.html#l00314">i2c_smbus_block_process_call()</a>, <a class="el" href="mpu60x0__i2c_8c_source.html#l00124">mpu60x0_configure_i2c_slaves()</a>, <a class="el" href="ms5611__i2c_8c_source.html#l00117">ms5611_i2c_event()</a>, <a class="el" href="ms5611__spi_8c_source.html#l00131">ms5611_spi_event()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00171">stabilization_rate_read_rc()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00193">stabilization_rate_read_rc_switched_sticks()</a>.</p>
 
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2subsystems_2radio__control_2spektrum__arch_8c_a22787b7744375550b4b631b0fec03bd0_icgraph.png" border="0" usemap="#stm32_2subsystems_2radio__control_2spektrum__arch_8c_a22787b7744375550b4b631b0fec03bd0_icgraph" alt=""/></div>
 <map name="stm32_2subsystems_2radio__control_2spektrum__arch_8c_a22787b7744375550b4b631b0fec03bd0_icgraph" id="stm32_2subsystems_2radio__control_2spektrum__arch_8c_a22787b7744375550b4b631b0fec03bd0_icgraph">
-<area shape="rect" id="node3" href="alt__filter_8h.html#acb1c5bf01229d55cd2a7542a49e37ec8" title="alt_filter_periodic" alt="" coords="136,5,267,33"/><area shape="rect" id="node5" href="hf__float_8h.html#a9b7bbf147e7e8c8978fb72440539d598" title="b2_hff_update_gps" alt="" coords="131,79,272,107"/><area shape="rect" id="node10" href="stabilization__adaptive_8c.html#a10c9851e192217d5a4e7b6dc98e16c2d" title="h_ctl_pitch_loop" alt="" coords="140,130,263,158"/><area shape="rect" id="node23" href="humid__sht__i2c_8h.html#a9250bbec811cdbcc7c024e084dacc33f" title="humid_sht_event_i2c" alt="" coords="123,181,280,209"/><area shape="rect" id="node25" href="group__i2c.html#ga54cb2dd83ed5b0dacc02764aa234f564" title="Check if I2C bus is idle." alt="" coords="167,231,236,259"/><area shape="rect" id="node27" href="stm32_2mcu__periph_2i2c__arch_8c.html#a9cdca4a1beda37ad7a9a7087252b6bbf" title="i2c_irq" alt="" coords="171,282,232,310"/><area shape="rect" id="node29" href="group__i2c.html#ga886c0abe64ca0d366a35abba80cf2eff" title="Set I2C bitrate." alt="" coords="147,333,256,361"/><area shape="rect" id="node31" href="i2c-dev_8h.html#a228bf66622e415ff283814eb2a0c0bd4" title="i2c_smbus_block_process_call" alt="" coords="95,383,308,411"/><area shape="rect" id="node33" href="mpu60x0__i2c_8c.html#adad4e4b57f9dac456dc343b8ebdc2f6c" title="Configure I2C slaves of the MPU." alt="" coords="115,434,288,478"/><area shape="rect" id="node35" href="ms5611__i2c_8h.html#a14e55ee13fb38c32b8c0bb6146695ca9" title="ms5611_i2c_event" alt="" coords="131,501,272,529"/><area shape="rect" id="node41" href="ms5611__spi_8h.html#a7b23274ad291a9e686044d66f378d91d" title="ms5611_spi_event" alt="" coords="131,551,272,579"/><area shape="rect" id="node8" href="ins__int_8c.html#aacc25a507c5c24309fc37b1f806f5d2b" title="Update INS state with GPS measurements." alt="" coords="373,79,496,107"/><area shape="rect" id="node12" href="fixedwing_2stabilization_2stabilization__attitude_8h.html#a86f0d47644538be1345aab19c7dc3de4" title="h_ctl_attitude_loop" alt="" coords="364,130,505,158"/><area shape="rect" id="node14" href="main__ap_8h.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="560,130,667,158"/><area shape="rect" id="node16" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="949,130,1085,158"/><area shape="rect" id="node18" href="main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="715,130,901,158"/><area shape="rect" id="node20" href="main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="751,181,865,209"/><area shape="rect" id="node37" href="px4fmu_2baro__board_8h.html#a35cf6cc4a308999840a583900a3d35ff" title="baro_event" alt="" coords="388,450,481,478"/><area shape="rect" id="node39" href="baro__ms5611__spi_8h.html#afd15b3c514cb6c7763b0db2788665185" title="baro_ms5611_event" alt="" coords="359,501,511,529"/><area shape="rect" id="node43" href="baro__board__ms5611__spi_8c.html#a35cf6cc4a308999840a583900a3d35ff" title="baro_event" alt="" coords="388,551,481,579"/><area shape="rect" id="node45" href="baro__ms5611__spi_8c.html#afd15b3c514cb6c7763b0db2788665185" title="baro_ms5611_event" alt="" coords="359,602,511,630"/></map>
+<area shape="rect" id="node3" href="alt__filter_8h.html#acb1c5bf01229d55cd2a7542a49e37ec8" title="alt_filter_periodic" alt="" coords="136,5,267,33"/><area shape="rect" id="node5" href="hf__float_8h.html#a9b7bbf147e7e8c8978fb72440539d598" title="b2_hff_update_gps" alt="" coords="131,79,272,107"/><area shape="rect" id="node10" href="stabilization__adaptive_8c.html#a10c9851e192217d5a4e7b6dc98e16c2d" title="h_ctl_pitch_loop" alt="" coords="140,130,263,158"/><area shape="rect" id="node23" href="humid__sht__i2c_8h.html#a9250bbec811cdbcc7c024e084dacc33f" title="humid_sht_event_i2c" alt="" coords="123,181,280,209"/><area shape="rect" id="node25" href="group__i2c.html#ga54cb2dd83ed5b0dacc02764aa234f564" title="Check if I2C bus is idle." alt="" coords="167,231,236,259"/><area shape="rect" id="node27" href="stm32_2mcu__periph_2i2c__arch_8c.html#a9cdca4a1beda37ad7a9a7087252b6bbf" title="i2c_irq" alt="" coords="171,282,232,310"/><area shape="rect" id="node29" href="group__i2c.html#ga886c0abe64ca0d366a35abba80cf2eff" title="Set I2C bitrate." alt="" coords="147,333,256,361"/><area shape="rect" id="node31" href="i2c-dev_8h.html#a228bf66622e415ff283814eb2a0c0bd4" title="i2c_smbus_block_process_call" alt="" coords="95,383,308,411"/><area shape="rect" id="node33" href="mpu60x0__i2c_8c.html#adad4e4b57f9dac456dc343b8ebdc2f6c" title="Configure I2C slaves of the MPU." alt="" coords="115,434,288,478"/><area shape="rect" id="node35" href="ms5611__i2c_8h.html#a14e55ee13fb38c32b8c0bb6146695ca9" title="ms5611_i2c_event" alt="" coords="131,501,272,529"/><area shape="rect" id="node41" href="ms5611__spi_8h.html#a7b23274ad291a9e686044d66f378d91d" title="ms5611_spi_event" alt="" coords="131,551,272,579"/><area shape="rect" id="node47" href="stabilization__rate_8h.html#a007715357d8063fa371fb07433a1e3d7" title="stabilization_rate\l_read_rc" alt="" coords="136,602,267,646"/><area shape="rect" id="node55" href="stabilization__rate_8h.html#aa74f5f2b4c549269f6ca18638acd8c5e" title="stabilization_rate\l_read_rc_switched_sticks" alt="" coords="111,669,292,713"/><area shape="rect" id="node8" href="ins__int_8c.html#aacc25a507c5c24309fc37b1f806f5d2b" title="Update INS state with GPS measurements." alt="" coords="373,79,496,107"/><area shape="rect" id="node12" href="fixedwing_2stabilization_2stabilization__attitude_8h.html#a86f0d47644538be1345aab19c7dc3de4" title="h_ctl_attitude_loop" alt="" coords="364,130,505,158"/><area shape="rect" id="node14" href="main__ap_8h.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="589,130,696,158"/><area shape="rect" id="node16" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="1008,130,1144,158"/><area shape="rect" id="node18" href="main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="773,130,960,158"/><area shape="rect" id="node20" href="main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="809,181,924,209"/><area shape="rect" id="node37" href="px4fmu_2baro__board_8h.html#a35cf6cc4a308999840a583900a3d35ff" title="baro_event" alt="" coords="388,450,481,478"/><area shape="rect" id="node39" href="baro__ms5611__spi_8h.html#afd15b3c514cb6c7763b0db2788665185" title="baro_ms5611_event" alt="" coords="359,501,511,529"/><area shape="rect" id="node43" href="baro__board__ms5611__spi_8c.html#a35cf6cc4a308999840a583900a3d35ff" title="baro_event" alt="" coords="388,551,481,579"/><area shape="rect" id="node45" href="baro__ms5611__spi_8c.html#afd15b3c514cb6c7763b0db2788665185" title="baro_ms5611_event" alt="" coords="359,602,511,630"/><area shape="rect" id="node49" href="guidance__h_8h.html#a7db3290fc5f62abc15a1bb1638b4922f" title="guidance_h_read_rc" alt="" coords="360,665,509,693"/><area shape="rect" id="node51" href="rotorcraft_2autopilot_8h.html#a7339f5741706cb9c2e2186b1174cc770" title="autopilot_on_rc_frame" alt="" coords="560,665,725,693"/><area shape="rect" id="node53" href="main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="819,665,915,693"/></map>
 </div>
 </p>
 
@@ -743,18 +708,18 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00152">152</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00158">158</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
-<p>References <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00084">SpektrumStateStruct::ReSync</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00486">SpektrumTimerInit()</a>, and <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00542">SpektrumUartInit()</a>.</p>
+<p>References <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h_source.html#l00076">gpio_setup_output()</a>, <a class="el" href="apogee__1_80_8h_source.html#l00100">RC_POLARITY_GPIO_PIN</a>, <a class="el" href="apogee__1_80_8h_source.html#l00099">RC_POLARITY_GPIO_PORT</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00150">RC_SET_POLARITY</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00085">SpektrumStateStruct::ReSync</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00498">SpektrumTimerInit()</a>, and <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00555">SpektrumUartInit()</a>.</p>
 
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2subsystems_2radio__control_2spektrum__arch_8c_a6ba4bebf68f7ff39f4569dfe3b1f2832_cgraph.png" border="0" usemap="#stm32_2subsystems_2radio__control_2spektrum__arch_8c_a6ba4bebf68f7ff39f4569dfe3b1f2832_cgraph" alt=""/></div>
 <map name="stm32_2subsystems_2radio__control_2spektrum__arch_8c_a6ba4bebf68f7ff39f4569dfe3b1f2832_cgraph" id="stm32_2subsystems_2radio__control_2spektrum__arch_8c_a6ba4bebf68f7ff39f4569dfe3b1f2832_cgraph">
-<area shape="rect" id="node3" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#af38434843fde1e03292e09a8658f9fbb" title="SpektrumTimerInit" alt="" coords="220,5,359,33"/><area shape="rect" id="node7" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#ac4f1b2d7f0844ae795adfd74bdeb18f0" title="SpektrumUartInit" alt="" coords="224,55,355,83"/><area shape="rect" id="node5" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#ad7302d5c131dfe906edb8bba209c2ce3" title="timer_clear_flag" alt="" coords="416,5,539,33"/><area shape="rect" id="node9" href="gpio__arch_8c.html#a457a82963882d55568983cedd74c5ff2" title="Enable the relevant clock." alt="" coords="408,55,547,83"/><area shape="rect" id="node11" href="stm32_2mcu__periph_2gpio__arch_8h.html#a3b5f0a992d58d84615e502585419d0b3" title="Setup a gpio for input or output with alternate function." alt="" coords="409,106,545,134"/></map>
+<area shape="rect" id="node3" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a9623a3774c44d3fc1cca04ccc9bc69f6" title="Setup one or more pins of the given GPIO port as outputs." alt="" coords="219,5,360,33"/><area shape="rect" id="node5" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#af38434843fde1e03292e09a8658f9fbb" title="SpektrumTimerInit" alt="" coords="220,55,359,83"/><area shape="rect" id="node11" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#ac4f1b2d7f0844ae795adfd74bdeb18f0" title="SpektrumUartInit" alt="" coords="224,106,355,134"/><area shape="rect" id="node7" href="stm32_2mcu__arch_8c.html#ad5d712b19fd6e3df08c60d4db733a22c" title="Get Timer clock frequency (before prescaling) Only valid if using the internal clock for the timer..." alt="" coords="408,5,563,33"/><area shape="rect" id="node9" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#ad7302d5c131dfe906edb8bba209c2ce3" title="timer_clear_flag" alt="" coords="424,55,547,83"/><area shape="rect" id="node13" href="gpio__arch_8c.html#a457a82963882d55568983cedd74c5ff2" title="Enable the relevant clock." alt="" coords="416,106,555,134"/><area shape="rect" id="node15" href="stm32_2mcu__periph_2gpio__arch_8h.html#a3b5f0a992d58d84615e502585419d0b3" title="Setup a gpio for input or output with alternate function." alt="" coords="417,157,553,185"/></map>
 </div>
 </p>
 
@@ -774,18 +739,18 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00659">659</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00687">687</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
-<p>References <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00757">DelayMs()</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00749">DelayUs()</a>, <a class="el" href="omap_2mcu__periph_2gpio__arch_8h.html#aa94dfa6db378d98566e22e193c7a8ab7">gpio_clear()</a>, <a class="el" href="gpio__arch_8c_source.html#l00034">gpio_enable_clock()</a>, <a class="el" href="omap_2mcu__periph_2gpio__arch_8h.html#a5fee90e8e5af7de567890ffae5ed50c8">gpio_get()</a>, <a class="el" href="omap_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85">gpio_set()</a>, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h_source.html#l00088">gpio_setup_input()</a>, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h_source.html#l00076">gpio_setup_output()</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00044">MASTER_RECEIVER_PULSES</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00077">PrimaryUart</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00081">SecondaryUart</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00045">SLAVE_RECEIVER_PULSES</a>, <a class="el" href="apogee__0_899_8h_source.html#l00268">SPEKTRUM_BIND_PIN</a>, <a class="el" href="apogee__0_899_8h_source.html#l00269">SPEKTRUM_BIND_PIN_PORT</a>, and <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00722">SpektrumDelayInit()</a>.</p>
+<p>References <a class="el" href="omap_2mcu__periph_2gpio__arch_8h.html#aa94dfa6db378d98566e22e193c7a8ab7">gpio_clear()</a>, <a class="el" href="omap_2mcu__periph_2gpio__arch_8h.html#a5fee90e8e5af7de567890ffae5ed50c8">gpio_get()</a>, <a class="el" href="omap_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85">gpio_set()</a>, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h_source.html#l00088">gpio_setup_input()</a>, <a class="el" href="stm32_2mcu__periph_2gpio__arch_8h.html#a2175656fe685e7547dddaedefbfe133b">gpio_setup_input_pulldown()</a>, <a class="el" href="stm32_2mcu__periph_2gpio__arch_8h.html#a73dbaacd18289a4dbd1afb7e510fc2a1">gpio_setup_input_pullup()</a>, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h_source.html#l00076">gpio_setup_output()</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00047">MASTER_RECEIVER_PULSES</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00048">SLAVE_RECEIVER_PULSES</a>, <a class="el" href="apogee__0_899_8h_source.html#l00262">SPEKTRUM_BIND_PIN</a>, <a class="el" href="apogee__0_899_8h_source.html#l00263">SPEKTRUM_BIND_PIN_PORT</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00670">SPEKTRUM_PRIMARY_BIND_CONF_PIN</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00667">SPEKTRUM_PRIMARY_BIND_CONF_PORT</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00676">SPEKTRUM_SECONDARY_BIND_CONF_PIN</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00673">SPEKTRUM_SECONDARY_BIND_CONF_PORT</a>, and <a class="el" href="lpc21_2mcu__periph_2sys__time__arch_8h_source.html#l00085">sys_time_usleep()</a>.</p>
 
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2subsystems_2radio__control_2spektrum__arch_8c_ac3242f23ea541664f6fbc29edecbf199_cgraph.png" border="0" usemap="#stm32_2subsystems_2radio__control_2spektrum__arch_8c_ac3242f23ea541664f6fbc29edecbf199_cgraph" alt=""/></div>
 <map name="stm32_2subsystems_2radio__control_2spektrum__arch_8c_ac3242f23ea541664f6fbc29edecbf199_cgraph" id="stm32_2subsystems_2radio__control_2spektrum__arch_8c_ac3242f23ea541664f6fbc29edecbf199_cgraph">
-<area shape="rect" id="node3" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#aeeda81e8dcacff3172020a9f2e2a49d9" title="DelayMs" alt="" coords="260,5,335,33"/><area shape="rect" id="node5" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#ab13bee1b25d7aa1f0cd6a8a58fc9888c" title="DelayUs" alt="" coords="416,30,491,58"/><area shape="rect" id="node8" href="omap_2mcu__periph_2gpio__arch_8h.html#aa94dfa6db378d98566e22e193c7a8ab7" title="Clear a gpio output to low level." alt="" coords="255,106,340,134"/><area shape="rect" id="node10" href="gpio__arch_8c.html#a457a82963882d55568983cedd74c5ff2" title="Enable the relevant clock." alt="" coords="228,157,367,185"/><area shape="rect" id="node12" href="omap_2mcu__periph_2gpio__arch_8h.html#a5fee90e8e5af7de567890ffae5ed50c8" title="Read a gpio value." alt="" coords="259,207,336,235"/><area shape="rect" id="node14" href="omap_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85" title="Set a gpio output to high level." alt="" coords="260,258,335,286"/><area shape="rect" id="node16" href="lpc21_2mcu__periph_2gpio__arch_8h.html#ada0fcb2fa4a97c20e81bb1a422446137" title="Setup one or more pins of the given GPIO port as inputs." alt="" coords="232,309,363,337"/><area shape="rect" id="node18" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a9623a3774c44d3fc1cca04ccc9bc69f6" title="Setup one or more pins of the given GPIO port as outputs." alt="" coords="227,359,368,387"/><area shape="rect" id="node20" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a974a8d609ba9ad3d9f67fa01c8912374" title="SpektrumDelayInit" alt="" coords="228,410,367,438"/></map>
+<area shape="rect" id="node3" href="omap_2mcu__periph_2gpio__arch_8h.html#aa94dfa6db378d98566e22e193c7a8ab7" title="Clear a gpio output to low level." alt="" coords="281,5,367,33"/><area shape="rect" id="node5" href="omap_2mcu__periph_2gpio__arch_8h.html#a5fee90e8e5af7de567890ffae5ed50c8" title="Read a gpio value." alt="" coords="285,55,363,83"/><area shape="rect" id="node7" href="omap_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85" title="Set a gpio output to high level." alt="" coords="287,106,361,134"/><area shape="rect" id="node9" href="lpc21_2mcu__periph_2gpio__arch_8h.html#ada0fcb2fa4a97c20e81bb1a422446137" title="Setup one or more pins of the given GPIO port as inputs." alt="" coords="259,157,389,185"/><area shape="rect" id="node11" href="stm32_2mcu__periph_2gpio__arch_8h.html#a2175656fe685e7547dddaedefbfe133b" title="Setup one or more pins of the given GPIO port as inputs with pull down resistors enabled." alt="" coords="228,207,420,235"/><area shape="rect" id="node13" href="stm32_2mcu__periph_2gpio__arch_8h.html#a73dbaacd18289a4dbd1afb7e510fc2a1" title="Setup one or more pins of the given GPIO port as inputs with pull up resistor enabled." alt="" coords="236,258,412,286"/><area shape="rect" id="node15" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a9623a3774c44d3fc1cca04ccc9bc69f6" title="Setup one or more pins of the given GPIO port as outputs." alt="" coords="253,309,395,337"/><area shape="rect" id="node17" href="lpc21_2mcu__periph_2sys__time__arch_8h.html#ac7670fcda069c778861e6d2e36f212aa" title="Busy wait, in microseconds." alt="" coords="260,359,388,387"/><area shape="rect" id="node19" href="sys__time_8h.html#a8ef407ab9dc5065c7e7768da22bd2ab7" title="cpu_ticks_of_usec" alt="" coords="471,359,607,387"/></map>
 </div>
 </p>
 
@@ -805,50 +770,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00388">388</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00400">400</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
-<p>References <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00087">SpektrumStateStruct::ChannelCnt</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00132">ExpectedFrames</a>, <a class="el" href="radio__control_8h_source.html#l00054">RadioControl::frame_cpt</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00091">SpektrumStateStruct::LostFrameCnt</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="radio__control_8c_source.html#l00025">radio_control</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00034">RADIO_CONTROL_NB_CHANNEL</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00038">RADIO_THROTTLE</a>, <a class="el" href="radio__control_8h_source.html#l00045">RC_OK</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00092">SpektrumStateStruct::RcAvailable</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00036">SPEKTRUM_CHANNELS_PER_FRAME</a>, <a class="el" href="radio__control_8h_source.html#l00050">RadioControl::status</a>, <a class="el" href="radio__control_8h_source.html#l00051">RadioControl::time_since_last_frame</a>, <a class="el" href="radio__control_8h_source.html#l00055">RadioControl::values</a>, and <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00093">SpektrumStateStruct::values</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a974a8d609ba9ad3d9f67fa01c8912374"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void SpektrumDelayInit </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00722">722</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
-
-<p>References <a class="el" href="apogee__0_899_8h_source.html#l00008">AHB_CLK</a>, and <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00042">DELAY_TIM_FREQUENCY</a>.</p>
-
-<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00659">radio_control_spektrum_try_bind()</a>.</p>
-
-<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="stm32_2subsystems_2radio__control_2spektrum__arch_8c_a974a8d609ba9ad3d9f67fa01c8912374_icgraph.png" border="0" usemap="#stm32_2subsystems_2radio__control_2spektrum__arch_8c_a974a8d609ba9ad3d9f67fa01c8912374_icgraph" alt=""/></div>
-<map name="stm32_2subsystems_2radio__control_2spektrum__arch_8c_a974a8d609ba9ad3d9f67fa01c8912374_icgraph" id="stm32_2subsystems_2radio__control_2spektrum__arch_8c_a974a8d609ba9ad3d9f67fa01c8912374_icgraph">
-<area shape="rect" id="node3" href="spektrum_8h.html#ac3242f23ea541664f6fbc29edecbf199" title="radio_control_spektrum\l_try_bind" alt="" coords="195,5,368,49"/></map>
-</div>
-</p>
+<p>References <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00088">SpektrumStateStruct::ChannelCnt</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00133">ExpectedFrames</a>, <a class="el" href="radio__control_8h_source.html#l00054">RadioControl::frame_cpt</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00092">SpektrumStateStruct::LostFrameCnt</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="radio__control_8c_source.html#l00025">radio_control</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00034">RADIO_CONTROL_NB_CHANNEL</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00038">RADIO_THROTTLE</a>, <a class="el" href="radio__control_8h_source.html#l00045">RC_OK</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00093">SpektrumStateStruct::RcAvailable</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00040">SPEKTRUM_CHANNELS_PER_FRAME</a>, <a class="el" href="radio__control_8h_source.html#l00050">RadioControl::status</a>, <a class="el" href="radio__control_8h_source.html#l00051">RadioControl::time_since_last_frame</a>, <a class="el" href="radio__control_8h_source.html#l00055">RadioControl::values</a>, and <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00094">SpektrumStateStruct::values</a>.</p>
 
 </div>
 </div>
@@ -889,19 +813,19 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>collect more data. I suspect that there is a low res </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>collect more data. I suspect that there is a low res </dd></dl>
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00271">271</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00283">283</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
-<p>References <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00087">SpektrumStateStruct::ChannelCnt</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00132">ExpectedFrames</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00088">SpektrumStateStruct::FrameCnt</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00089">SpektrumStateStruct::HighByte</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00091">SpektrumStateStruct::LostFrameCnt</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00050">MAX_BYTE_SPACE</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00049">MIN_FRAME_SPACE</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00092">SpektrumStateStruct::RcAvailable</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00084">SpektrumStateStruct::ReSync</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00090">SpektrumStateStruct::SecondFrame</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00036">SPEKTRUM_CHANNELS_PER_FRAME</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00085">SpektrumStateStruct::SpektrumTimer</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00086">SpektrumStateStruct::Sync</a>, and <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00093">SpektrumStateStruct::values</a>.</p>
+<p>References <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00088">SpektrumStateStruct::ChannelCnt</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00133">ExpectedFrames</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00089">SpektrumStateStruct::FrameCnt</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00090">SpektrumStateStruct::HighByte</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00092">SpektrumStateStruct::LostFrameCnt</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00052">MAX_BYTE_SPACE</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00051">MIN_FRAME_SPACE</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00093">SpektrumStateStruct::RcAvailable</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00085">SpektrumStateStruct::ReSync</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00091">SpektrumStateStruct::SecondFrame</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00040">SPEKTRUM_CHANNELS_PER_FRAME</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00086">SpektrumStateStruct::SpektrumTimer</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00087">SpektrumStateStruct::Sync</a>, and <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00094">SpektrumStateStruct::values</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00605">_ISR()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00618">_ISR()</a>.</p>
 
-<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2subsystems_2radio__control_2spektrum__arch_8c_a91a9fd24df5bc3eb82b8d5baba46959d_icgraph.png" border="0" usemap="#stm32_2subsystems_2radio__control_2spektrum__arch_8c_a91a9fd24df5bc3eb82b8d5baba46959d_icgraph" alt=""/></div>
 <map name="stm32_2subsystems_2radio__control_2spektrum__arch_8c_a91a9fd24df5bc3eb82b8d5baba46959d_icgraph" id="stm32_2subsystems_2radio__control_2spektrum__arch_8c_a91a9fd24df5bc3eb82b8d5baba46959d_icgraph">
 <area shape="rect" id="node3" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a447e129abefa9eb6efc28829bf6c8364" title="_ISR" alt="" coords="180,5,228,33"/></map>
@@ -924,28 +848,28 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00486">486</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00498">498</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
-<p>References <a class="el" href="apogee__0_899_8h_source.html#l00008">AHB_CLK</a>, <a class="el" href="stm32f4__chibios__vectors_8h_source.html#l00072">NVIC_TIM6_DAC_IRQ</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00058">NVIC_TIM6_DAC_IRQ_PRIO</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00054">NVIC_TIM6_IRQ_PRIO</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00047">TIM_FREQ_1000000</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00048">TIM_TICS_FOR_100us</a>, and <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#ad7302d5c131dfe906edb8bba209c2ce3">timer_clear_flag()</a>.</p>
+<p>References <a class="el" href="stm32f4__chibios__vectors_8h_source.html#l00072">NVIC_TIM6_DAC_IRQ</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00059">NVIC_TIM6_DAC_IRQ_PRIO</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00055">NVIC_TIM6_IRQ_PRIO</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00044">ONE_MHZ</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00050">TIM_TICS_FOR_100us</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#ad7302d5c131dfe906edb8bba209c2ce3">timer_clear_flag()</a>, and <a class="el" href="stm32_2mcu__arch_8c_source.html#l00139">timer_get_frequency()</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00152">radio_control_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00158">radio_control_impl_init()</a>.</p>
 
-<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2subsystems_2radio__control_2spektrum__arch_8c_af38434843fde1e03292e09a8658f9fbb_cgraph.png" border="0" usemap="#stm32_2subsystems_2radio__control_2spektrum__arch_8c_af38434843fde1e03292e09a8658f9fbb_cgraph" alt=""/></div>
 <map name="stm32_2subsystems_2radio__control_2spektrum__arch_8c_af38434843fde1e03292e09a8658f9fbb_cgraph" id="stm32_2subsystems_2radio__control_2spektrum__arch_8c_af38434843fde1e03292e09a8658f9fbb_cgraph">
-<area shape="rect" id="node3" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#ad7302d5c131dfe906edb8bba209c2ce3" title="timer_clear_flag" alt="" coords="196,5,319,33"/></map>
+<area shape="rect" id="node3" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#ad7302d5c131dfe906edb8bba209c2ce3" title="timer_clear_flag" alt="" coords="211,5,333,33"/><area shape="rect" id="node5" href="stm32_2mcu__arch_8c.html#ad5d712b19fd6e3df08c60d4db733a22c" title="Get Timer clock frequency (before prescaling) Only valid if using the internal clock for the timer..." alt="" coords="195,55,349,83"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2subsystems_2radio__control_2spektrum__arch_8c_af38434843fde1e03292e09a8658f9fbb_icgraph.png" border="0" usemap="#stm32_2subsystems_2radio__control_2spektrum__arch_8c_af38434843fde1e03292e09a8658f9fbb_icgraph" alt=""/></div>
 <map name="stm32_2subsystems_2radio__control_2spektrum__arch_8c_af38434843fde1e03292e09a8658f9fbb_icgraph" id="stm32_2subsystems_2radio__control_2spektrum__arch_8c_af38434843fde1e03292e09a8658f9fbb_icgraph">
 <area shape="rect" id="node3" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832" title="radio_control_impl_init" alt="" coords="195,5,360,33"/></map>
@@ -968,28 +892,28 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00542">542</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00555">555</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
-<p>References <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="gpio__arch_8c_source.html#l00034">gpio_enable_clock()</a>, <a class="el" href="stm32_2mcu__periph_2gpio__arch_8h.html#a3b5f0a992d58d84615e502585419d0b3">gpio_setup_pin_af()</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00065">NVIC_PRIMARY_UART_PRIO</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00077">PrimaryUart</a>, and <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00081">SecondaryUart</a>.</p>
+<p>References <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="gpio__arch_8c_source.html#l00034">gpio_enable_clock()</a>, <a class="el" href="stm32_2mcu__periph_2gpio__arch_8h.html#a3b5f0a992d58d84615e502585419d0b3">gpio_setup_pin_af()</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00066">NVIC_PRIMARY_UART_PRIO</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00078">PrimaryUart</a>, and <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00082">SecondaryUart</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00152">radio_control_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00158">radio_control_impl_init()</a>.</p>
 
-<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2subsystems_2radio__control_2spektrum__arch_8c_ac4f1b2d7f0844ae795adfd74bdeb18f0_cgraph.png" border="0" usemap="#stm32_2subsystems_2radio__control_2spektrum__arch_8c_ac4f1b2d7f0844ae795adfd74bdeb18f0_cgraph" alt=""/></div>
 <map name="stm32_2subsystems_2radio__control_2spektrum__arch_8c_ac4f1b2d7f0844ae795adfd74bdeb18f0_cgraph" id="stm32_2subsystems_2radio__control_2spektrum__arch_8c_ac4f1b2d7f0844ae795adfd74bdeb18f0_cgraph">
 <area shape="rect" id="node3" href="gpio__arch_8c.html#a457a82963882d55568983cedd74c5ff2" title="Enable the relevant clock." alt="" coords="187,5,325,33"/><area shape="rect" id="node5" href="stm32_2mcu__periph_2gpio__arch_8h.html#a3b5f0a992d58d84615e502585419d0b3" title="Setup a gpio for input or output with alternate function." alt="" coords="188,55,324,83"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2subsystems_2radio__control_2spektrum__arch_8c_ac4f1b2d7f0844ae795adfd74bdeb18f0_icgraph.png" border="0" usemap="#stm32_2subsystems_2radio__control_2spektrum__arch_8c_ac4f1b2d7f0844ae795adfd74bdeb18f0_icgraph" alt=""/></div>
 <map name="stm32_2subsystems_2radio__control_2spektrum__arch_8c_ac4f1b2d7f0844ae795adfd74bdeb18f0_icgraph" id="stm32_2subsystems_2radio__control_2spektrum__arch_8c_ac4f1b2d7f0844ae795adfd74bdeb18f0_icgraph">
 <area shape="rect" id="node3" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832" title="radio_control_impl_init" alt="" coords="187,5,352,33"/></map>
@@ -1038,13 +962,13 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="stm32_2subsystems_2actuators_2actuators__dualpwm__arch_8c_source.html#l00119">clear_timer_flag()</a>, and <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00486">SpektrumTimerInit()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2subsystems_2actuators_2actuators__dualpwm__arch_8c_source.html#l00115">clear_timer_flag()</a>, and <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00498">SpektrumTimerInit()</a>.</p>
 
-<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2subsystems_2radio__control_2spektrum__arch_8c_ad7302d5c131dfe906edb8bba209c2ce3_icgraph.png" border="0" usemap="#stm32_2subsystems_2radio__control_2spektrum__arch_8c_ad7302d5c131dfe906edb8bba209c2ce3_icgraph" alt=""/></div>
 <map name="stm32_2subsystems_2radio__control_2spektrum__arch_8c_ad7302d5c131dfe906edb8bba209c2ce3_icgraph" id="stm32_2subsystems_2radio__control_2spektrum__arch_8c_ad7302d5c131dfe906edb8bba209c2ce3_icgraph">
 <area shape="rect" id="node3" href="stm32_2subsystems_2actuators_2actuators__dualpwm__arch_8h.html#acd2f86fcb3553dedcde8e395b93b05e0" title="Interuption called at the end of the timer." alt="" coords="188,5,311,33"/><area shape="rect" id="node7" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#af38434843fde1e03292e09a8658f9fbb" title="SpektrumTimerInit" alt="" coords="180,55,319,83"/><area shape="rect" id="node5" href="stm32_2subsystems_2actuators_2actuators__dualpwm__arch_8h.html#aa4bbd9d7d8bc0e055cdc7d4b1bcb17f0" title="dual_pwm_isr" alt="" coords="397,5,504,33"/><area shape="rect" id="node9" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832" title="radio_control_impl_init" alt="" coords="368,55,533,83"/></map>
@@ -1072,7 +996,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00131">131</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00132">132</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
 </div>
 </div>
@@ -1094,9 +1018,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00132">132</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00133">133</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00388">RadioControlEventImp()</a>, and <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00271">SpektrumParser()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00400">RadioControlEventImp()</a>, and <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00283">SpektrumParser()</a>.</p>
 
 </div>
 </div>
@@ -1110,7 +1034,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00098">98</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00099">99</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
 </div>
 </div>
@@ -1124,7 +1048,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00109">109</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00110">110</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
 </div>
 </div>
@@ -1138,7 +1062,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00128">128</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00129">129</a> of file <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
 </div>
 </div>
@@ -1148,7 +1072,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_71548ae744da26ac2c7ca213b679dc43.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_b14b085d0c57bddb3031abea4661d10b.html">radio_control</a></li><li class="navelem"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html">spektrum_arch.c</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:00:49 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:00:49 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

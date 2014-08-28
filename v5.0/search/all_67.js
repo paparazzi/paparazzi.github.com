@@ -61,6 +61,7 @@ var searchData=
   ['get_5fsys_5ftime_5fusec',['get_sys_time_usec',['../omap_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf',1,'get_sys_time_usec(void):&#160;sys_time_arch.h'],['../stm32_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf',1,'get_sys_time_usec(void):&#160;sys_time_arch.h']]],
   ['get_5ftransaction_5fsignature',['get_transaction_signature',['../stm32_2mcu__periph_2spi__arch_8c.html#a0c1bcbefaf569036eb191e18ea849a7a',1,'spi_arch.c']]],
   ['get_5ftwo_5fintersects',['get_two_intersects',['../poly__survey__adv_8c.html#af66f67850d03f7edf3bc4758b6bbcd11',1,'poly_survey_adv.c']]],
+  ['getaltref',['GetAltRef',['../navigation_8h.html#a24891072dad1936c21f884d623bda8b4',1,'GetAltRef():&#160;navigation.h'],['../nav_8h.html#a24891072dad1936c21f884d623bda8b4',1,'GetAltRef():&#160;nav.h']]],
   ['geteulersfromquat',['GetEulersFromQuat',['../imu__chimu_8c.html#aa0df1ea95e60894cb1747257da38f17f',1,'imu_chimu.c']]],
   ['getmedianfiltereulerint',['GetMedianFilterEulerInt',['../median__filter_8h.html#a5f6b0c0ca141e3af9a93a2942d664424',1,'median_filter.h']]],
   ['getmedianfilterratesint',['GetMedianFilterRatesInt',['../median__filter_8h.html#a46a823b547fbf28d0dcc590bcfb0fdc8',1,'median_filter.h']]],

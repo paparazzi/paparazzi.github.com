@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -166,13 +166,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd>optimize yaw angle calculation </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>optimize yaw angle calculation </dd></dl>
 
 <p>Definition at line <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00060">60</a> of file <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html">stabilization_attitude_quat_transformations.c</a>.</p>
 
 <p>References <a class="el" href="pprz__algebra__float_8h_source.html#l00631">FLOAT_QUAT_COMP</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00507">FLOAT_QUAT_NORMALIZE</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00777">FLOAT_QUAT_OF_ORIENTATION_VECT</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00523">FLOAT_QUAT_WRAP_SHORTEST</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00409">FLOAT_RMAT_OF_QUAT</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00158">FLOAT_VECT3_DIFF</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00174">FLOAT_VECT3_DOT_PRODUCT</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00172">FLOAT_VECT3_NORM</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00166">FLOAT_VECT3_SMUL</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00072">FloatRMat::m</a>, <a class="el" href="pprz__algebra_8h_source.html#l00496">QUAT_ASSIGN</a>, <a class="el" href="pprz__algebra_8h_source.html#l00107">VECT3_ASSIGN</a>, <a class="el" href="pprz__algebra_8h_source.html#l00233">VECT3_CROSS_PRODUCT</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00044">FloatVect2::x</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00045">FloatVect2::y</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00046">quat_from_earth_cmd_i()</a>, and <a class="el" href="stabilization__attitude__quat__float_8c_source.html#l00204">stabilization_attitude_set_earth_cmd_i()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00046">quat_from_earth_cmd_i()</a>, and <a class="el" href="stabilization__attitude__quat__float_8c_source.html#l00206">stabilization_attitude_set_earth_cmd_i()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -219,9 +219,9 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00046">46</a> of file <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html">stabilization_attitude_quat_transformations.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00206">ANGLE_FLOAT_OF_BFP</a>, <a class="el" href="pprz__algebra_8h_source.html#l00665">QUAT_BFP_OF_REAL</a>, <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00060">quat_from_earth_cmd_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00044">FloatVect2::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00080">Int32Vect2::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00045">FloatVect2::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00081">Int32Vect2::y</a>.</p>
+<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00207">ANGLE_FLOAT_OF_BFP</a>, <a class="el" href="pprz__algebra_8h_source.html#l00665">QUAT_BFP_OF_REAL</a>, <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00060">quat_from_earth_cmd_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00044">FloatVect2::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00080">Int32Vect2::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00045">FloatVect2::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00081">Int32Vect2::y</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__attitude__quat__int_8c_source.html#l00166">stabilization_attitude_set_earth_cmd_i()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__attitude__quat__int_8c_source.html#l00168">stabilization_attitude_set_earth_cmd_i()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -275,7 +275,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="pprz__algebra__float_8h_source.html#l00777">FLOAT_QUAT_OF_ORIENTATION_VECT</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00079">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00081">FloatEulers::psi</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00080">FloatEulers::theta</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00028">quat_from_rpy_cmd_i()</a>, and <a class="el" href="stabilization__attitude__quat__float_8c_source.html#l00197">stabilization_attitude_set_rpy_setpoint_i()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00028">quat_from_rpy_cmd_i()</a>, and <a class="el" href="stabilization__attitude__quat__float_8c_source.html#l00199">stabilization_attitude_set_rpy_setpoint_i()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -318,7 +318,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="pprz__algebra_8h_source.html#l00622">EULERS_FLOAT_OF_BFP</a>, <a class="el" href="pprz__algebra_8h_source.html#l00665">QUAT_BFP_OF_REAL</a>, and <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00036">quat_from_rpy_cmd_f()</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__attitude__quat__int_8c_source.html#l00159">stabilization_attitude_set_rpy_setpoint_i()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__attitude__quat__int_8c_source.html#l00161">stabilization_attitude_set_rpy_setpoint_i()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -350,7 +350,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_d1b81cc433edb6118e3c3e3bc7700be0.html">stabilization</a></li><li class="navelem"><a class="el" href="stabilization__attitude__quat__transformations_8c.html">stabilization_attitude_quat_transformations.c</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:00:55 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:00:55 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

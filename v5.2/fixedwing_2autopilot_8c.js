@@ -1,0 +1,26 @@
+var fixedwing_2autopilot_8c =
+[
+    [ "autopilot_init", "fixedwing_2autopilot_8c.html#a9d3557653abfc3d4c428724b249f6d5e", null ],
+    [ "autopilot_send_mode", "fixedwing_2autopilot_8c.html#a4c54f26fedcf128f909c7cc5dc071353", null ],
+    [ "send_airspeed", "fixedwing_2autopilot_8c.html#a9b53b25486462f4c3ea8390143466e7f", null ],
+    [ "send_alive", "fixedwing_2autopilot_8c.html#a233858352edba868bc9150255f9ac921", null ],
+    [ "send_attitude", "fixedwing_2autopilot_8c.html#a45bbf8811649d2c47e5ab7423fbd64b8", null ],
+    [ "send_bat", "fixedwing_2autopilot_8c.html#a9eee12edf51631065c840946d2c1deeb", null ],
+    [ "send_desired", "fixedwing_2autopilot_8c.html#ac25a13817cf58aa0e3239101230177d2", null ],
+    [ "send_dl_value", "fixedwing_2autopilot_8c.html#a039e3b06136d98edb7cfca5bac3f8c12", null ],
+    [ "send_downlink", "fixedwing_2autopilot_8c.html#ab4c9883ace14c22cf7c01f2f7f4d7e1f", null ],
+    [ "send_energy", "fixedwing_2autopilot_8c.html#a3ef33f5397d71797301f6c89357d1c5b", null ],
+    [ "send_estimator", "fixedwing_2autopilot_8c.html#a7213b1400a99e80c25772f99bc3aad29", null ],
+    [ "autopilot_flight_time", "fixedwing_2autopilot_8c.html#a643a1732fc06296050835ab61968d726", null ],
+    [ "current", "fixedwing_2autopilot_8c.html#ae6a404c4d3d4da15402e4a8629e7e272", null ],
+    [ "energy", "fixedwing_2autopilot_8c.html#a2d107b3b2dcebab8a10c9d39894f6b2a", null ],
+    [ "gps_lost", "fixedwing_2autopilot_8c.html#ad5b2dcab0bbd14934aac4f5e0eea8b18", null ],
+    [ "kill_throttle", "fixedwing_2autopilot_8c.html#a3f1a87c0a714ae1fe65f5214086d8c9c", null ],
+    [ "lateral_mode", "fixedwing_2autopilot_8c.html#ab559c6867326333905f9133432ff9315", null ],
+    [ "launch", "fixedwing_2autopilot_8c.html#af32f81f02a3187c12c08e11caf354abd", null ],
+    [ "mcu1_status", "fixedwing_2autopilot_8c.html#a4b46ee9ade673c44f54f4ad3497c16b9", null ],
+    [ "power_switch", "fixedwing_2autopilot_8c.html#adda0cb88d172048dd19b50ad66e7881e", null ],
+    [ "pprz_mode", "fixedwing_2autopilot_8c.html#aebf57c26248ee8c66d3eacdbd6a155cd", null ],
+    [ "rc_settings_mode", "fixedwing_2autopilot_8c.html#a3349e614a926a99c63c8b9f2935a29f3", null ],
+    [ "vsupply", "fixedwing_2autopilot_8c.html#a32da1e6e29634773a0e491df93f92414", null ]
+];

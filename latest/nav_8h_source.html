@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -195,7 +195,7 @@ $(document).ready(function(){initNavTree('nav_8h_source.html','');});
 <div class="line"><a name="l00095"></a><span class="lineno"><a class="code" href="nav_8h.html#a3e1c9983a7508c42235e2fead19db8b1">   95</a></span>&#160;<span class="preprocessor">#define Oval(a, b, c) nav_oval((b), (a), (c))</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="nav_8c.html#a4e73a18879f679277a72ef00250e359e">nav_radius</a>; <span class="comment">/* m */</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="nav_8c.html#af90efaefda837fe910e6c1d55ea0e949" title="with INT32_ANGLE_FRAC">nav_course</a>; <span class="comment">/* degrees, clockwise, 0.0 = N */</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="nav_8c.html#af90efaefda837fe910e6c1d55ea0e949">nav_course</a>; <span class="comment">/* degrees, clockwise, 0.0 = N */</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="nav_8c.html#a45139c6cf4dbda18870cf748337fbea7">nav_climb</a>; <span class="comment">/* m/s */</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="nav_8c.html#aae62d3a760ee0f535ee7bf9131df6d9c">nav_shift</a>; <span class="comment">/* Lateral shift along a route. In meters */</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
@@ -289,27 +289,30 @@ $(document).ready(function(){initNavTree('nav_8h_source.html','');});
 <div class="line"><a name="l00199"></a><span class="lineno"><a class="code" href="nav_8h.html#ac500a50330425cb4a3054774289bb205">  199</a></span>&#160;<span class="preprocessor">#define GetPosX() (stateGetPositionEnu_f()-&gt;x)</span></div>
 <div class="line"><a name="l00200"></a><span class="lineno"><a class="code" href="nav_8h.html#a10961173ac6973d795af2f62eb67edca">  200</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GetPosY() (stateGetPositionEnu_f()-&gt;y)</span></div>
 <div class="line"><a name="l00201"></a><span class="lineno"><a class="code" href="nav_8h.html#a0bb5f5ae29ba1d5968fe7857a304253e">  201</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GetPosAlt() (stateGetPositionUtm_f()-&gt;alt)</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00203"></a><span class="lineno"><a class="code" href="nav_8h.html#a5b7ee5828a4a65359ce9393a365f5d2d">  203</a></span>&#160;<span class="preprocessor">#define SEND_NAVIGATION(_trans, _dev) { \</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="preprocessor">    uint8_t _circle_count = NavCircleCount(); \</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="preprocessor">    struct EnuCoor_f* pos = stateGetPositionEnu_f(); \</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="preprocessor">    DOWNLINK_SEND_NAVIGATION(_trans, _dev, &amp;nav_block, &amp;nav_stage, &amp;(pos-&gt;x), &amp;(pos-&gt;y), &amp;dist2_to_wp, &amp;dist2_to_home, &amp;_circle_count, &amp;nav_oval_count); \</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="preprocessor">}</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00209"></a><span class="lineno"><a class="code" href="nav_8h.html#ab300af3ef7ab11588e87ed42a7096b81">  209</a></span>&#160;<span class="preprocessor">#define DownlinkSendWp(_trans, _dev, i) {    \</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="preprocessor">  float x = nav_utm_east0 +  waypoints[i].x; \</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="preprocessor">  float y = nav_utm_north0 + waypoints[i].y; \</span></div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="preprocessor">  DOWNLINK_SEND_WP_MOVED(_trans, _dev, &amp;i, &amp;x, &amp;y, &amp;(waypoints[i].a),&amp;nav_utm_zone0); \</span></div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="preprocessor">}</span></div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* NAV_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00202"></a><span class="lineno"><a class="code" href="nav_8h.html#a24891072dad1936c21f884d623bda8b4">  202</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GetAltRef() (ground_alt)</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00204"></a><span class="lineno"><a class="code" href="nav_8h.html#a5b7ee5828a4a65359ce9393a365f5d2d">  204</a></span>&#160;<span class="preprocessor">#define SEND_NAVIGATION(_trans, _dev) { \</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="preprocessor">    uint8_t _circle_count = NavCircleCount(); \</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="preprocessor">    struct EnuCoor_f* pos = stateGetPositionEnu_f(); \</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="preprocessor">    float dist_wp = sqrtf(dist2_to_wp); \</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="preprocessor">    float dist_home = sqrtf(dist2_to_home); \</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="preprocessor">    DOWNLINK_SEND_NAVIGATION(_trans, _dev, &amp;nav_block, &amp;nav_stage, &amp;(pos-&gt;x), &amp;(pos-&gt;y), &amp;dist_wp, &amp;dist_home, &amp;_circle_count, &amp;nav_oval_count); \</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="preprocessor">}</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00212"></a><span class="lineno"><a class="code" href="nav_8h.html#ab300af3ef7ab11588e87ed42a7096b81">  212</a></span>&#160;<span class="preprocessor">#define DownlinkSendWp(_trans, _dev, i) {    \</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="preprocessor">  float x = nav_utm_east0 +  waypoints[i].x; \</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="preprocessor">  float y = nav_utm_north0 + waypoints[i].y; \</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="preprocessor">  DOWNLINK_SEND_WP_MOVED(_trans, _dev, &amp;i, &amp;x, &amp;y, &amp;(waypoints[i].a),&amp;nav_utm_zone0); \</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="preprocessor">}</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* NAV_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_cb1b347b64b61ba7f369ccfe68448b26.html">fixedwing</a></li><li class="navelem"><a class="el" href="nav_8h.html">nav.h</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:00:39 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:00:38 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

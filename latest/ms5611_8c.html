@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -130,20 +130,20 @@ $(document).ready(function(){initNavTree('ms5611_8c.html','');});
 Functions</h2></td></tr>
 <tr class="memitem:a1afefece4545988101dac95290cacde6"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ms5611_8c.html#a1afefece4545988101dac95290cacde6">ms5611_prom_crc_ok</a> (<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *prom)</td></tr>
 <tr class="memdesc:a1afefece4545988101dac95290cacde6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if CRC of PROM data is OK.  <a href="#a1afefece4545988101dac95290cacde6"></a><br/></td></tr>
-<tr class="memitem:aaeb2ca7e796a7ed3d7393b34ab166c72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ms5611_8c.html#aaeb2ca7e796a7ed3d7393b34ab166c72">ms5611_calc</a> (struct <a class="el" href="structMs5611Data.html">Ms5611Data</a> *ms)</td></tr>
-<tr class="memdesc:aaeb2ca7e796a7ed3d7393b34ab166c72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate temperature and compensated pressure.  <a href="#aaeb2ca7e796a7ed3d7393b34ab166c72"></a><br/></td></tr>
+<tr class="memitem:a7ea327bfcf88ade86630c4f2fd54329d"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ms5611_8c.html#a7ea327bfcf88ade86630c4f2fd54329d">ms5611_calc</a> (struct <a class="el" href="structMs5611Data.html">Ms5611Data</a> *ms)</td></tr>
+<tr class="memdesc:a7ea327bfcf88ade86630c4f2fd54329d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate temperature and compensated pressure.  <a href="#a7ea327bfcf88ade86630c4f2fd54329d"></a><br/></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>MS5611 barometer driver common functions (I2C and SPI). </p>
 
 <p>Definition in file <a class="el" href="ms5611_8c_source.html">ms5611.c</a>.</p>
 </div><h2>Function Documentation</h2>
-<a class="anchor" id="aaeb2ca7e796a7ed3d7393b34ab166c72"></a>
+<a class="anchor" id="a7ea327bfcf88ade86630c4f2fd54329d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ms5611_calc </td>
+          <td class="memname">bool_t ms5611_calc </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structMs5611Data.html">Ms5611Data</a> *&#160;</td>
           <td class="paramname"><em>ms</em></td><td>)</td>
@@ -153,10 +153,11 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Calculate temperature and compensated pressure. </p>
+<dl class="section return"><dt>Returns</dt><dd>TRUE if measurement was valid, FALSE otherwise </dd></dl>
 
-<p>Definition at line <a class="el" href="ms5611_8c_source.html#l00062">62</a> of file <a class="el" href="ms5611_8c_source.html">ms5611.c</a>.</p>
+<p>Definition at line <a class="el" href="ms5611_8c_source.html#l00063">63</a> of file <a class="el" href="ms5611_8c_source.html">ms5611.c</a>.</p>
 
-<p>References <a class="el" href="ms5611_8h_source.html#l00054">Ms5611Data::c</a>, <a class="el" href="ms5611_8h_source.html#l00055">Ms5611Data::d1</a>, <a class="el" href="ms5611_8h_source.html#l00056">Ms5611Data::d2</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00175">dt</a>, <a class="el" href="ms5611_8h_source.html#l00052">Ms5611Data::pressure</a>, and <a class="el" href="ms5611_8h_source.html#l00053">Ms5611Data::temperature</a>.</p>
+<p>References <a class="el" href="ms5611_8h_source.html#l00054">Ms5611Data::c</a>, <a class="el" href="ms5611_8h_source.html#l00055">Ms5611Data::d1</a>, <a class="el" href="ms5611_8h_source.html#l00056">Ms5611Data::d2</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00177">dt</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="ins__alt__float_8c_source.html#l00208">p</a>, <a class="el" href="ms5611_8h_source.html#l00052">Ms5611Data::pressure</a>, <a class="el" href="ms5611_8h_source.html#l00053">Ms5611Data::temperature</a>, and <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>.</p>
 
 <p>Referenced by <a class="el" href="ms5611__i2c_8c_source.html#l00117">ms5611_i2c_event()</a>, and <a class="el" href="ms5611__spi_8c_source.html#l00131">ms5611_spi_event()</a>.</p>
 
@@ -165,8 +166,8 @@ Functions</h2></td></tr>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ms5611_8c_aaeb2ca7e796a7ed3d7393b34ab166c72_icgraph.png" border="0" usemap="#ms5611_8c_aaeb2ca7e796a7ed3d7393b34ab166c72_icgraph" alt=""/></div>
-<map name="ms5611_8c_aaeb2ca7e796a7ed3d7393b34ab166c72_icgraph" id="ms5611_8c_aaeb2ca7e796a7ed3d7393b34ab166c72_icgraph">
+<div class="center"><img src="ms5611_8c_a7ea327bfcf88ade86630c4f2fd54329d_icgraph.png" border="0" usemap="#ms5611_8c_a7ea327bfcf88ade86630c4f2fd54329d_icgraph" alt=""/></div>
+<map name="ms5611_8c_a7ea327bfcf88ade86630c4f2fd54329d_icgraph" id="ms5611_8c_a7ea327bfcf88ade86630c4f2fd54329d_icgraph">
 <area shape="rect" id="node3" href="ms5611__i2c_8h.html#a14e55ee13fb38c32b8c0bb6146695ca9" title="ms5611_i2c_event" alt="" coords="161,55,303,83"/><area shape="rect" id="node9" href="ms5611__spi_8h.html#a7b23274ad291a9e686044d66f378d91d" title="ms5611_spi_event" alt="" coords="161,106,303,134"/><area shape="rect" id="node5" href="px4fmu_2baro__board_8h.html#a35cf6cc4a308999840a583900a3d35ff" title="baro_event" alt="" coords="383,5,476,33"/><area shape="rect" id="node7" href="baro__ms5611__spi_8h.html#afd15b3c514cb6c7763b0db2788665185" title="baro_ms5611_event" alt="" coords="353,55,505,83"/><area shape="rect" id="node11" href="baro__board__ms5611__spi_8c.html#a35cf6cc4a308999840a583900a3d35ff" title="baro_event" alt="" coords="383,106,476,134"/><area shape="rect" id="node13" href="baro__ms5611__spi_8c.html#afd15b3c514cb6c7763b0db2788665185" title="baro_ms5611_event" alt="" coords="353,157,505,185"/></map>
 </div>
 </p>
@@ -215,7 +216,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="ms5611_8c.html">ms5611.c</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:01:05 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:01:05 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

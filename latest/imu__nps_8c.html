@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('imu__nps_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__nps_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2imu_2imu__nps_8c" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2imu_2imu__nps_8c" id="sw_2airborne_2subsystems_2imu_2imu__nps_8c">
-<area shape="rect" id="node3" href="imu_8h.html" title="Inertial Measurement Unit interface." alt="" coords="375,99,513,127"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="65,177,244,205"/><area shape="rect" id="node22" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="327,177,516,205"/><area shape="rect" id="node9" href="pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="287,254,441,282"/><area shape="rect" id="node16" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="23,254,172,282"/></map>
+<area shape="rect" id="node3" href="imu_8h.html" title="Inertial Measurement Unit interface." alt="" coords="356,99,494,127"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="344,270,522,298"/><area shape="rect" id="node22" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="80,270,269,298"/><area shape="rect" id="node28" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversion." alt="" coords="225,177,388,221"/><area shape="rect" id="node9" href="pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="114,347,269,375"/><area shape="rect" id="node16" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="344,347,493,375"/></map>
 </div>
 </div>
 <p><a href="imu__nps_8c_source.html">Go to the source code of this file.</a></p>
@@ -128,7 +128,9 @@ $(document).ready(function(){initNavTree('imu__nps_8c.html','');});
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ad32faae58e391642ec8048cb11011998"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__nps_8c.html#ad32faae58e391642ec8048cb11011998">imu_impl_init</a> (void)</td></tr>
+<tr class="memdesc:ad32faae58e391642ec8048cb11011998"><td class="mdescLeft">&#160;</td><td class="mdescRight">Navstik IMU initializtion of the MPU-60x0 and HMC58xx.  <a href="#ad32faae58e391642ec8048cb11011998"></a><br/></td></tr>
 <tr class="memitem:a6623d4c90e7b1bfb73abc0da1195f29b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__nps_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b">imu_periodic</a> (void)</td></tr>
+<tr class="memdesc:a6623d4c90e7b1bfb73abc0da1195f29b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle all the periodic tasks of the Navstik IMU components.  <a href="#a6623d4c90e7b1bfb73abc0da1195f29b"></a><br/></td></tr>
 <tr class="memitem:a3eda401c67dfeee490285016ec944e48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__nps_8c.html#a3eda401c67dfeee490285016ec944e48">imu_feed_gyro_accel</a> (void)</td></tr>
 <tr class="memitem:a18428bf984166238838fe9d1a4842b5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__nps_8c.html#a18428bf984166238838fe9d1a4842b5e">imu_feed_mag</a> (void)</td></tr>
 </table><table class="memberdecls">
@@ -153,7 +155,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="imu__nps_8c_source.html#l00042">42</a> of file <a class="el" href="imu__nps_8c_source.html">imu_nps.c</a>.</p>
 
-<p>References <a class="el" href="imu__nps_8h_source.html#l00074">ImuNps::accel_available</a>, <a class="el" href="imu_8h_source.html#l00049">Imu::accel_unscaled</a>, <a class="el" href="imu__nps_8h_source.html#l00075">ImuNps::gyro_available</a>, <a class="el" href="imu_8h_source.html#l00048">Imu::gyro_unscaled</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00047">imu</a>, <a class="el" href="imu__nps_8c_source.html#l00028">imu_nps</a>, <a class="el" href="pprz__algebra_8h_source.html#l00319">RATES_ASSIGN</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="pprz__algebra_8h_source.html#l00107">VECT3_ASSIGN</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00085">Int32Vect3::x</a>.</p>
+<p>References <a class="el" href="imu__nps_8h_source.html#l00074">ImuNps::accel_available</a>, <a class="el" href="imu_8h_source.html#l00050">Imu::accel_unscaled</a>, <a class="el" href="imu__nps_8h_source.html#l00075">ImuNps::gyro_available</a>, <a class="el" href="imu_8h_source.html#l00049">Imu::gyro_unscaled</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00047">imu</a>, <a class="el" href="imu__nps_8c_source.html#l00028">imu_nps</a>, <a class="el" href="pprz__algebra_8h_source.html#l00319">RATES_ASSIGN</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="pprz__algebra_8h_source.html#l00107">VECT3_ASSIGN</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00085">Int32Vect3::x</a>.</p>
 
 </div>
 </div>
@@ -173,7 +175,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="imu__nps_8c_source.html#l00054">54</a> of file <a class="el" href="imu__nps_8c_source.html">imu_nps.c</a>.</p>
 
-<p>References <a class="el" href="imu__aspirin2_8c_source.html#l00047">imu</a>, <a class="el" href="imu__nps_8c_source.html#l00028">imu_nps</a>, <a class="el" href="imu__nps_8h_source.html#l00073">ImuNps::mag_available</a>, <a class="el" href="imu_8h_source.html#l00050">Imu::mag_unscaled</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="pprz__algebra_8h_source.html#l00107">VECT3_ASSIGN</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00085">Int32Vect3::x</a>.</p>
+<p>References <a class="el" href="imu__aspirin2_8c_source.html#l00047">imu</a>, <a class="el" href="imu__nps_8c_source.html#l00028">imu_nps</a>, <a class="el" href="imu__nps_8h_source.html#l00073">ImuNps::mag_available</a>, <a class="el" href="imu_8h_source.html#l00051">Imu::mag_unscaled</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="pprz__algebra_8h_source.html#l00107">VECT3_ASSIGN</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00085">Int32Vect3::x</a>.</p>
 
 </div>
 </div>
@@ -190,11 +192,13 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Navstik IMU initializtion of the MPU-60x0 and HMC58xx. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000027">Todo:</a></b></dt><dd>drdy int handling for adxl345 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000028">Todo:</a></b></dt><dd>eoc interrupt for itg3200, polling for now (including status reg) </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000029">Todo:</a></b></dt><dd>drdy int handling for adxl345 </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000030">Todo:</a></b></dt><dd>eoc interrupt for itg3200, polling for now (including status reg) </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000031">Todo:</a></b></dt><dd>drdy int handling for adxl345 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000032">Todo:</a></b></dt><dd>eoc interrupt for itg3200, polling for now (including status reg) </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000033">Todo:</a></b></dt><dd>drdy int handling for adxl345 </dd></dl>
 
 <p>Definition at line <a class="el" href="imu__nps_8c_source.html#l00030">30</a> of file <a class="el" href="imu__nps_8c_source.html">imu_nps.c</a>.</p>
 
@@ -215,6 +219,9 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Handle all the periodic tasks of the Navstik IMU components. </p>
+<p>Read the MPU60x0 every periodic call and the HMC58XX every 10th call. </p>
 
 <p>Definition at line <a class="el" href="imu__nps_8c_source.html#l00038">38</a> of file <a class="el" href="imu__nps_8c_source.html">imu_nps.c</a>.</p>
 
@@ -243,7 +250,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8b2fa0708e2db44c1b91938af97bac44.html">imu</a></li><li class="navelem"><a class="el" href="imu__nps_8c.html">imu_nps.c</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:01:08 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:01:08 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

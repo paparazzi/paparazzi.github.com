@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -150,20 +150,22 @@ $(document).ready(function(){initNavTree('globals_vars_0x6c.html','');});
 <h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
 <li>lag_counter_err
 : <a class="el" href="hf__float_8c.html#a74ba4fd3f0ea5e4190d080b8f7e11c72">hf_float.c</a>
-, <a class="el" href="hf__float_8h.html#a74ba4fd3f0ea5e4190d080b8f7e11c72">hf_float.h</a>
 </li>
 <li>last_baro_alt
 : <a class="el" href="alt__filter_8c.html#ae05d497e598d27cd712567d1eef7ac77">alt_filter.c</a>
 </li>
 <li>last_block
-: <a class="el" href="common__flight__plan_8c.html#a5d3ddba0962294e6c33573f86c4b1eec">common_flight_plan.c</a>
-, <a class="el" href="common__flight__plan_8h.html#a5d3ddba0962294e6c33573f86c4b1eec">common_flight_plan.h</a>
+: <a class="el" href="common__flight__plan_8h.html#a5d3ddba0962294e6c33573f86c4b1eec">common_flight_plan.h</a>
+, <a class="el" href="common__flight__plan_8c.html#a5d3ddba0962294e6c33573f86c4b1eec">common_flight_plan.c</a>
 </li>
 <li>last_body_rate
 : <a class="el" href="stabilization__attitude__quat__float_8c.html#a1cf88c9b9b4dd55c4bed1ad70f95d024">stabilization_attitude_quat_float.c</a>
 </li>
 <li>last_gps_alt
 : <a class="el" href="alt__filter_8c.html#a29bc3860cd47987f526e6d61e83009f9">alt_filter.c</a>
+</li>
+<li>last_mission_wp
+: <a class="el" href="mission__rotorcraft__nav_8c.html#a97cc4916c9f739a146f63946c5d9593f">mission_rotorcraft_nav.c</a>
 </li>
 <li>last_plume
 : <a class="el" href="anemotaxis_8c.html#a577e562d994b8840057bb682d0cf6b69">anemotaxis.c</a>
@@ -185,9 +187,10 @@ $(document).ready(function(){initNavTree('globals_vars_0x6c.html','');});
 </li>
 <li>last_wp
 : <a class="el" href="nav_8c.html#a280519e0d643e2e7ec41137b887d0b31">nav.c</a>
-, <a class="el" href="navigation_8c.html#a280519e0d643e2e7ec41137b887d0b31">navigation.c</a>
 , <a class="el" href="navigation_8h.html#a280519e0d643e2e7ec41137b887d0b31">navigation.h</a>
-, <a class="el" href="mission__fw__nav_8c.html#a5c355b0a617031a9c949b4fda4727d07">mission_fw_nav.c</a>
+</li>
+<li>last_wp_f
+: <a class="el" href="mission__fw__nav_8c.html#ace2e9ed0bbdd8359ab176ae004a2d957">mission_fw_nav.c</a>
 </li>
 <li>last_x
 : <a class="el" href="nav_8c.html#ab2e97613bcf8e5721e639812c7a3469a">nav.c</a>
@@ -211,8 +214,8 @@ $(document).ready(function(){initNavTree('globals_vars_0x6c.html','');});
 , <a class="el" href="formation_8h.html#a6642110f5acd6b9fca3276cd472677d8">formation.h</a>
 </li>
 <li>led_hw_values
-: <a class="el" href="actuators__ardrone2__raw_8c.html#a7628ab56ea2153f536f4f32074053ae2">actuators_ardrone2_raw.c</a>
-, <a class="el" href="omap_2led__hw_8h.html#a7628ab56ea2153f536f4f32074053ae2">led_hw.h</a>
+: <a class="el" href="omap_2led__hw_8h.html#a7628ab56ea2153f536f4f32074053ae2">led_hw.h</a>
+, <a class="el" href="actuators__ardrone2__raw_8c.html#a7628ab56ea2153f536f4f32074053ae2">actuators_ardrone2_raw.c</a>
 </li>
 <li>leds_closure
 : <a class="el" href="sim_2led__hw_8c.html#ae292f9d2a858553831b8f8934ba4d2fd">led_hw.c</a>
@@ -237,25 +240,25 @@ $(document).ready(function(){initNavTree('globals_vars_0x6c.html','');});
 , <a class="el" href="sim__ap_8c.html#a217e6264f30030ff96c6488719497c3e">sim_ap.c</a>
 </li>
 <li>link_fbw_nb_err
-: <a class="el" href="jsbsim__hw_8c.html#ac3614ddc1d6b6d3c72f8088bcf8aede4">jsbsim_hw.c</a>
-, <a class="el" href="sim__ap_8c.html#ac3614ddc1d6b6d3c72f8088bcf8aede4">sim_ap.c</a>
+: <a class="el" href="sim__ap_8c.html#ac3614ddc1d6b6d3c72f8088bcf8aede4">sim_ap.c</a>
+, <a class="el" href="jsbsim__hw_8c.html#ac3614ddc1d6b6d3c72f8088bcf8aede4">jsbsim_hw.c</a>
 </li>
 <li>link_mcu_from_ap_msg
-: <a class="el" href="link__mcu__spi_8h.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_spi.h</a>
-, <a class="el" href="link__mcu__usart_8c.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_usart.c</a>
+: <a class="el" href="link__mcu__usart_8h.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_usart.h</a>
+, <a class="el" href="link__mcu__spi_8h.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_spi.h</a>
 , <a class="el" href="link__mcu__spi_8c.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_spi.c</a>
-, <a class="el" href="link__mcu__usart_8h.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_usart.h</a>
+, <a class="el" href="link__mcu__usart_8c.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_usart.c</a>
 </li>
 <li>link_mcu_from_fbw_msg
 : <a class="el" href="link__mcu__usart_8c.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_usart.c</a>
+, <a class="el" href="link__mcu__spi_8c.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_spi.c</a>
 , <a class="el" href="link__mcu__spi_8h.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_spi.h</a>
 , <a class="el" href="link__mcu__usart_8h.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_usart.h</a>
-, <a class="el" href="link__mcu__spi_8c.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_spi.c</a>
 </li>
 <li>link_mcu_received
 : <a class="el" href="link__mcu__usart_8h.html#a5fbd44c122e7afa4afdb9368a7a6b2a4">link_mcu_usart.h</a>
-, <a class="el" href="link__mcu__spi_8h.html#a5fbd44c122e7afa4afdb9368a7a6b2a4">link_mcu_spi.h</a>
 , <a class="el" href="link__mcu__spi_8c.html#a5fbd44c122e7afa4afdb9368a7a6b2a4">link_mcu_spi.c</a>
+, <a class="el" href="link__mcu__spi_8h.html#a5fbd44c122e7afa4afdb9368a7a6b2a4">link_mcu_spi.h</a>
 </li>
 <li>link_mcu_trans
 : <a class="el" href="link__mcu__spi_8h.html#aaddeb28c81e4b264b71c0fefb60c17f5">link_mcu_spi.h</a>
@@ -286,7 +289,7 @@ $(document).ready(function(){initNavTree('globals_vars_0x6c.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon May 26 2014 16:01:23 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:01:23 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

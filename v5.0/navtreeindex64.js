@@ -1,5 +1,7 @@
 var NAVTREEINDEX64 =
 {
+"structVi__ahrs__info.html":[7,0,213],
+"structVi__ahrs__info.html#a66c48ea7afc8ba945d04e182efa49641":[7,0,213,1],
 "structVi__ahrs__info.html#abbdf276534da86017f0c40f4572bbed7":[7,0,213,0],
 "structVi__command.html":[7,0,214],
 "structVi__command.html#a11e42a1c40200aa5e40f97d6d1ab98ad":[7,0,214,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX64 =
 "structfifo__t.html#ae93028e986799fceacecbd153729f855":[7,0,63,1],
 "structforce__.html":[7,0,74],
 "structforce__.html#a00bfcc3690af7acf47fb0d73e3293522":[7,0,74,2],
-"structforce__.html#a0fce658c414e2c4ccbc13055e2f57e87":[7,0,74,3],
-"structforce__.html#a34f18f74f894ff50dc0dc262becdfb3e":[7,0,74,1],
-"structforce__.html#a827437d885654cccb823a5195b61c904":[7,0,74,0]
+"structforce__.html#a0fce658c414e2c4ccbc13055e2f57e87":[7,0,74,3]
 };

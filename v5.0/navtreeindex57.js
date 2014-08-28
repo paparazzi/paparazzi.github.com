@@ -1,5 +1,7 @@
 var NAVTREEINDEX57 =
 {
+"stabilization__attitude__passthrough_8c.html":[8,0,0,0,3,1,1,7],
+"stabilization__attitude__passthrough_8c.html#a03d27593d891182c04fc5337766733d1":[8,0,0,0,3,1,1,7,2],
 "stabilization__attitude__passthrough_8c.html#a147b1b8bfdde52f82d0829ce748bf1e9":[8,0,0,0,3,1,1,7,3],
 "stabilization__attitude__passthrough_8c.html#a23f862ca823e6fd23fc9c111178be077":[8,0,0,0,3,1,1,7,1],
 "stabilization__attitude__passthrough_8c.html#a5a2d8d3947ba9cdc571cea5778c93f4a":[8,0,0,0,3,1,1,7,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX57 =
 "stabilization__attitude__ref__quat__int_8c.html#a3f8d6b617f4443c111163584c48c9794":[8,0,0,0,3,1,1,24,1],
 "stabilization__attitude__ref__quat__int_8c.html#a42c84cf656f1b5fb7c1e83a3da90fc89":[8,0,0,0,3,1,1,24,8],
 "stabilization__attitude__ref__quat__int_8c.html#a458e61308e0036b8436dccc57bb46087":[8,0,0,0,3,1,1,24,21],
-"stabilization__attitude__ref__quat__int_8c.html#a51e82f953cec8b116f7f07a25bb6dae2":[8,0,0,0,3,1,1,24,13],
-"stabilization__attitude__ref__quat__int_8c.html#a59ce1a73acc3ff15337be2a1782545f2":[8,0,0,0,3,1,1,24,0],
-"stabilization__attitude__ref__quat__int_8c.html#a5b355848d1ce79a73b3fe67c8e86cd42":[8,0,0,0,3,1,1,24,35]
+"stabilization__attitude__ref__quat__int_8c.html#a51e82f953cec8b116f7f07a25bb6dae2":[8,0,0,0,3,1,1,24,13]
 };

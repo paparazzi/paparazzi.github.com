@@ -1,5 +1,7 @@
 var NAVTREEINDEX56 =
 {
+"spi__slave__hs__arch_8c.html#a6e117d3c5fa3fb0c56dd4ebf950381b2":[8,0,0,0,0,0,1,11,3],
+"spi__slave__hs__arch_8c.html#a7380b29f54b19837cc7265f92e7cea68":[8,0,0,0,0,0,1,11,7],
 "spi__slave__hs__arch_8c.html#a7d405457cbc09ab051b08694e92f44f9":[8,0,0,0,0,0,1,11,26],
 "spi__slave__hs__arch_8c.html#a8484136e7496673fca205e0ef7730109":[8,0,0,0,0,0,1,11,13],
 "spi__slave__hs__arch_8c.html#a9a5ce8a9a794e79f0f1882af3c28a1d2":[8,0,0,0,0,0,1,11,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX56 =
 "stabilization__attitude__euler__int_8c.html#afb59ecc3049842f940a46a81698b79e9":[8,0,0,0,3,1,1,5,8],
 "stabilization__attitude__euler__int_8c_source.html":[8,0,0,0,3,1,1,5],
 "stabilization__attitude__euler__int_8h.html":[8,0,0,0,3,1,1,6],
-"stabilization__attitude__euler__int_8h_source.html":[8,0,0,0,3,1,1,6],
-"stabilization__attitude__passthrough_8c.html":[8,0,0,0,3,1,1,7],
-"stabilization__attitude__passthrough_8c.html#a03d27593d891182c04fc5337766733d1":[8,0,0,0,3,1,1,7,2]
+"stabilization__attitude__euler__int_8h_source.html":[8,0,0,0,3,1,1,6]
 };

@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -163,16 +163,17 @@ $(document).ready(function(){initNavTree('guidance__v__ref_8h_source.html','');}
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="guidance__v__ref_8c.html#a9438c4ab465cec426023d9fc3fb9cb07">gv_set_ref</a>(<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> alt, <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> speed, <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> accel);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="guidance__v__ref_8c.html#ab36885cc677b3d2a0f89c148ffe6e9ba">gv_update_ref_from_z_sp</a>(<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> z_sp);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="guidance__v__ref_8c.html#accf794394cd7bc23f88eb239d6f128c5">gv_update_ref_from_zd_sp</a>(<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> zd_sp);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GUIDANCE_V_REF_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="guidance__v__ref_8c.html#ab8d8d8003fbd1c3d31ee72827ea1e25e" title="update vertical reference from speed setpoint.">gv_update_ref_from_zd_sp</a>(<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> zd_sp, <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> z_pos);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GUIDANCE_V_REF_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_3d64810a495a8e63c02e8d4ee1418813.html">guidance</a></li><li class="navelem"><a class="el" href="guidance__v__ref_8h.html">guidance_v_ref.h</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:00:39 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:00:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

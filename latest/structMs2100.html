@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -133,12 +133,12 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:a7ca306c6e7eb338624be4edd50efa062"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPI buffer for reading a single axis.  <a href="#a7ca306c6e7eb338624be4edd50efa062"></a><br/></td></tr>
 <tr class="memitem:a24720217f6739c591031e5b0837d9c9d"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="ms2100_8h.html#a0c113d47eb67dc9e6881cb9b4c8bca65">Ms2100Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMs2100.html#a24720217f6739c591031e5b0837d9c9d">status</a></td></tr>
 <tr class="memitem:a4d319566f8fbdb099371b09cca78b647"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMs2100.html#a4d319566f8fbdb099371b09cca78b647">cur_axe</a></td></tr>
-<tr class="memitem:a7e27afc5b031ae0b564a115dd83a77bb"><td class="memItemLeft" >union {</td></tr>
-<tr class="memitem:a6572edab1b32a070aa6791aacb719ba6"><td class="memItemLeft" >&#160;&#160;&#160;struct <a class="el" href="structInt16Vect3.html">Int16Vect3</a>&#160;&#160;&#160;<a class="el" href="structMs2100.html#a1371f09ac78aa367576b874478d28d2b">vect</a></td></tr>
-<tr class="memdesc:a6572edab1b32a070aa6791aacb719ba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">data vector in mag coordinate system  <a href="#a6572edab1b32a070aa6791aacb719ba6"></a><br/></td></tr>
-<tr class="memitem:ab7c771f76d81b8bad7d7bfdb6fa633d7"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;&#160;&#160;<a class="el" href="structMs2100.html#a09e274e935b49928acfa10b3b64d3d93">value</a> [3]</td></tr>
-<tr class="memdesc:ab7c771f76d81b8bad7d7bfdb6fa633d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">data values accessible by channel index  <a href="#ab7c771f76d81b8bad7d7bfdb6fa633d7"></a><br/></td></tr>
-<tr class="memitem:a7e27afc5b031ae0b564a115dd83a77bb"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMs2100.html#a7e27afc5b031ae0b564a115dd83a77bb">data</a></td></tr>
+<tr class="memitem:a5160b979af518ff94bce16c89e43b91d"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:ace05aa44e71328603bf7d35af10596ee"><td class="memItemLeft" >&#160;&#160;&#160;struct <a class="el" href="structInt16Vect3.html">Int16Vect3</a>&#160;&#160;&#160;<a class="el" href="structMs2100.html#a1371f09ac78aa367576b874478d28d2b">vect</a></td></tr>
+<tr class="memdesc:ace05aa44e71328603bf7d35af10596ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">data vector in mag coordinate system  <a href="#ace05aa44e71328603bf7d35af10596ee"></a><br/></td></tr>
+<tr class="memitem:abb82a86e02903d285a1324bb45603662"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;&#160;&#160;<a class="el" href="structMs2100.html#a09e274e935b49928acfa10b3b64d3d93">value</a> [3]</td></tr>
+<tr class="memdesc:abb82a86e02903d285a1324bb45603662"><td class="mdescLeft">&#160;</td><td class="mdescRight">data values accessible by channel index  <a href="#abb82a86e02903d285a1324bb45603662"></a><br/></td></tr>
+<tr class="memitem:a5160b979af518ff94bce16c89e43b91d"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMs2100.html#a5160b979af518ff94bce16c89e43b91d">data</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock">
@@ -160,7 +160,7 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7e27afc5b031ae0b564a115dd83a77bb"></a>
+<a class="anchor" id="a5160b979af518ff94bce16c89e43b91d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -319,7 +319,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structMs2100.html">Ms2100</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:01:14 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:01:15 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

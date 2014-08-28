@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -644,7 +644,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">filter</td><td>second order Butterworth low pass filter structure </td></tr>
-    <tr><td class="paramname">tau</td><td>time constant of the second order low pass filter </td></tr>
+    <tr><td class="paramname">cut_off</td><td>Cutoff frequency of the filter with -3dB </td></tr>
     <tr><td class="paramname">sample_time</td><td>sampling period of the signal </td></tr>
     <tr><td class="paramname">value</td><td>initial value of the filter </td></tr>
   </table>
@@ -655,7 +655,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="low__pass__filter_8h_source.html#l00187">init_second_order_low_pass_int()</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00231">b2_hff_init()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00265">b2_hff_init()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -805,7 +805,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">filter</td><td>fourth order Butterworth low pass filter structure </td></tr>
-    <tr><td class="paramname">tau</td><td>time constant of the fourth order low pass filter </td></tr>
+    <tr><td class="paramname">cut_off</td><td>Cutoff frequency of the filter with -3dB </td></tr>
     <tr><td class="paramname">sample_time</td><td>sampling period of the signal </td></tr>
     <tr><td class="paramname">value</td><td>initial value of the filter </td></tr>
   </table>
@@ -1026,7 +1026,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">filter</td><td>second order low pass filter structure </td></tr>
-    <tr><td class="paramname">tau</td><td>time constant of the second order low pass filter , 1/(2*pi*cut_off_3db) </td></tr>
+    <tr><td class="paramname">cut_off</td><td>Cutoff frequency of the filter with -3dB </td></tr>
     <tr><td class="paramname">Q</td><td>Q value of the second order low pass filter </td></tr>
     <tr><td class="paramname">sample_time</td><td>sampling period of the signal </td></tr>
     <tr><td class="paramname">value</td><td>initial value of the filter </td></tr>
@@ -1158,7 +1158,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="low__pass__filter_8h_source.html#l00214">update_second_order_low_pass_int()</a>.</p>
 
-<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00419">b2_hff_propagate()</a>.</p>
+<p>Referenced by <a class="el" href="hf__float_8c_source.html#l00453">b2_hff_propagate()</a>.</p>
 
 <p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1480,7 +1480,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_1444106569909aede49a887d28257b90.html">filters</a></li><li class="navelem"><a class="el" href="low__pass__filter_8h.html">low_pass_filter.h</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:00:52 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:00:52 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

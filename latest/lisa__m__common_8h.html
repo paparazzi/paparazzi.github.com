@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('lisa__m__common_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="lisa__m__common_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2boards_2lisa__m__common_8hdep" alt=""/></div>
 <map name="sw_2airborne_2boards_2lisa__m__common_8hdep" id="sw_2airborne_2boards_2lisa__m__common_8hdep">
-<area shape="rect" id="node3" href="lia__1_81_8h.html" title="sw/airborne/boards\l/lia_1.1.h" alt="" coords="5,99,147,143"/><area shape="rect" id="node5" href="lisa__m__1_80_8h.html" title="sw/airborne/boards\l/lisa_m_1.0.h" alt="" coords="171,99,312,143"/><area shape="rect" id="node7" href="lisa__m__2_80_8h.html" title="sw/airborne/boards\l/lisa_m_2.0.h" alt="" coords="336,99,477,143"/></map>
+<area shape="rect" id="node3" href="lia__1_81_8h.html" title="sw/airborne/boards\l/lia_1.1.h" alt="" coords="5,99,147,143"/><area shape="rect" id="node5" href="lisa__m__1_80_8h.html" title="sw/airborne/boards\l/lisa_m_1.0.h" alt="" coords="171,99,312,143"/><area shape="rect" id="node7" href="lisa__m__2_80_8h.html" title="sw/airborne/boards\l/lisa_m_2.0.h" alt="" coords="336,99,477,143"/><area shape="rect" id="node9" href="lisa__m__2_81_8h.html" title="sw/airborne/boards\l/lisa_m_2.1.h" alt="" coords="501,99,643,143"/></map>
 </div>
 </div>
 <p><a href="lisa__m__common_8h_source.html">Go to the source code of this file.</a></p>
@@ -155,8 +155,6 @@ Macros</h2></td></tr>
 <tr class="memitem:aab670f5e43a2f39e063fe8280dad4c5d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#aab670f5e43a2f39e063fe8280dad4c5d">UART5_GPIO_RX</a>&#160;&#160;&#160;GPIO_UART5_RX</td></tr>
 <tr class="memitem:a8c9287b1806544ba7228844060270007"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a8c9287b1806544ba7228844060270007">UART5_GPIO_PORT_TX</a>&#160;&#160;&#160;GPIO_BANK_UART5_TX</td></tr>
 <tr class="memitem:a89f30c0943f8bf0e6d00899729551f9e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a89f30c0943f8bf0e6d00899729551f9e">UART5_GPIO_TX</a>&#160;&#160;&#160;GPIO_UART5_TX</td></tr>
-<tr class="memitem:a787b5d0dff7658e5e923331317635545"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a787b5d0dff7658e5e923331317635545">SPEKTRUM_BIND_PIN</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#af3cc04d651b622d5323d74dc2f0999a0">GPIO3</a></td></tr>
-<tr class="memitem:a61f9ceb054741c177baac8a8b0282628"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a61f9ceb054741c177baac8a8b0282628">SPEKTRUM_BIND_PIN_PORT</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a2dca03332d620196ba943bc2346eaa08">GPIOC</a></td></tr>
 <tr class="memitem:a7bed267bab62113c6593e804a4d0f2f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a7bed267bab62113c6593e804a4d0f2f0">SPEKTRUM_UART1_RCC</a>&#160;&#160;&#160;RCC_USART1</td></tr>
 <tr class="memitem:adea36357b1c0c2ae4214bd55056e9f9f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#adea36357b1c0c2ae4214bd55056e9f9f">SPEKTRUM_UART1_BANK</a>&#160;&#160;&#160;GPIO_BANK_USART1_RX</td></tr>
 <tr class="memitem:a60d42d5ec3c48cd2aa859a23b31ddd3b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a60d42d5ec3c48cd2aa859a23b31ddd3b">SPEKTRUM_UART1_PIN</a>&#160;&#160;&#160;GPIO_USART1_RX</td></tr>
@@ -212,39 +210,34 @@ Macros</h2></td></tr>
 <tr class="memitem:a68d4247d6cfc6a0dc584ca7a7f41115b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a68d4247d6cfc6a0dc584ca7a7f41115b">ACTUATORS_PWM_NB</a>&#160;&#160;&#160;6</td></tr>
 <tr class="memitem:a27260a99d1076f9d0d1cb786860066fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a27260a99d1076f9d0d1cb786860066fd">PWM_SERVO_1</a>&#160;&#160;&#160;0</td></tr>
 <tr class="memitem:ada5c5036a84c550ab1f82c1af0bcd112"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#ada5c5036a84c550ab1f82c1af0bcd112">PWM_SERVO_1_TIMER</a>&#160;&#160;&#160;TIM3</td></tr>
-<tr class="memitem:a0bbe99e95c2c87a02d50464acaa327a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a0bbe99e95c2c87a02d50464acaa327a1">PWM_SERVO_1_RCC</a>&#160;&#160;&#160;RCC_GPIOC</td></tr>
 <tr class="memitem:a86960c3aad4310e9c2963cd5d63e6392"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a86960c3aad4310e9c2963cd5d63e6392">PWM_SERVO_1_GPIO</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a2dca03332d620196ba943bc2346eaa08">GPIOC</a></td></tr>
 <tr class="memitem:aa7c130ffea683af1bcc3eb9fbc3aa0ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#aa7c130ffea683af1bcc3eb9fbc3aa0ae">PWM_SERVO_1_PIN</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a46027cd97ff756e5ddadcc10811b5699">GPIO6</a></td></tr>
-<tr class="memitem:a5d184c3828cac2e2a9ba377fe1b1eb35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a5d184c3828cac2e2a9ba377fe1b1eb35">PWM_SERVO_1_AF</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a5d184c3828cac2e2a9ba377fe1b1eb35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a5d184c3828cac2e2a9ba377fe1b1eb35">PWM_SERVO_1_AF</a>&#160;&#160;&#160;AFIO_MAPR_TIM3_REMAP_FULL_REMAP</td></tr>
 <tr class="memitem:a8d77db0e10464907b23412abccbf7c63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a8d77db0e10464907b23412abccbf7c63">PWM_SERVO_1_OC</a>&#160;&#160;&#160;TIM_OC1</td></tr>
 <tr class="memitem:ae40a4e27a94283e513359632ceea8de0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#ae40a4e27a94283e513359632ceea8de0">PWM_SERVO_1_OC_BIT</a>&#160;&#160;&#160;(1&lt;&lt;0)</td></tr>
 <tr class="memitem:abdf3f086a6274a36ead16fc540d4a05c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#abdf3f086a6274a36ead16fc540d4a05c">PWM_SERVO_2</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memitem:a50dc24ffa7fff76fe5c0bda8cee432d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a50dc24ffa7fff76fe5c0bda8cee432d6">PWM_SERVO_2_TIMER</a>&#160;&#160;&#160;TIM3</td></tr>
-<tr class="memitem:aea6fe4d2aa928a1f2bcc7b48a9e36269"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#aea6fe4d2aa928a1f2bcc7b48a9e36269">PWM_SERVO_2_RCC</a>&#160;&#160;&#160;RCC_GPIOC</td></tr>
 <tr class="memitem:adca9740b51ca9f7681d3c3f585a57836"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#adca9740b51ca9f7681d3c3f585a57836">PWM_SERVO_2_GPIO</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a2dca03332d620196ba943bc2346eaa08">GPIOC</a></td></tr>
 <tr class="memitem:a93588ba4e78f8b0452867afb990c0264"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a93588ba4e78f8b0452867afb990c0264">PWM_SERVO_2_PIN</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a3820cacb614277004870fc37b33ad084">GPIO7</a></td></tr>
-<tr class="memitem:a0b37c9a3e2fb7498e24a8d9ee681df3b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a0b37c9a3e2fb7498e24a8d9ee681df3b">PWM_SERVO_2_AF</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a0b37c9a3e2fb7498e24a8d9ee681df3b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a0b37c9a3e2fb7498e24a8d9ee681df3b">PWM_SERVO_2_AF</a>&#160;&#160;&#160;AFIO_MAPR_TIM3_REMAP_FULL_REMAP</td></tr>
 <tr class="memitem:a71122954f0f92371cc8f6124e291a016"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a71122954f0f92371cc8f6124e291a016">PWM_SERVO_2_OC</a>&#160;&#160;&#160;TIM_OC2</td></tr>
 <tr class="memitem:a50227ddde1342cae56494d8cedfde915"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a50227ddde1342cae56494d8cedfde915">PWM_SERVO_2_OC_BIT</a>&#160;&#160;&#160;(1&lt;&lt;1)</td></tr>
 <tr class="memitem:a342eee19f66562516414e255f3db4cc4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a342eee19f66562516414e255f3db4cc4">PWM_SERVO_3</a>&#160;&#160;&#160;2</td></tr>
 <tr class="memitem:a267f7d6033304596a25d8436e2af4af6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a267f7d6033304596a25d8436e2af4af6">PWM_SERVO_3_TIMER</a>&#160;&#160;&#160;TIM3</td></tr>
-<tr class="memitem:afac93b40aa95277d0a86f7f77382fecc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#afac93b40aa95277d0a86f7f77382fecc">PWM_SERVO_3_RCC</a>&#160;&#160;&#160;RCC_GPIOC</td></tr>
 <tr class="memitem:a3527010cfbb35e98ab1bba9ded57da14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a3527010cfbb35e98ab1bba9ded57da14">PWM_SERVO_3_GPIO</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a2dca03332d620196ba943bc2346eaa08">GPIOC</a></td></tr>
 <tr class="memitem:a1f43b2c4250213826a1c0cae49004e3c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a1f43b2c4250213826a1c0cae49004e3c">PWM_SERVO_3_PIN</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#aa951be0ce26f788049a86e407a70ae20">GPIO8</a></td></tr>
-<tr class="memitem:a1af3b0681135879303164ffd4953257b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a1af3b0681135879303164ffd4953257b">PWM_SERVO_3_AF</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a1af3b0681135879303164ffd4953257b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a1af3b0681135879303164ffd4953257b">PWM_SERVO_3_AF</a>&#160;&#160;&#160;AFIO_MAPR_TIM3_REMAP_FULL_REMAP</td></tr>
 <tr class="memitem:abbc7c54dc7ef033588e5b1ae4dcaf62d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#abbc7c54dc7ef033588e5b1ae4dcaf62d">PWM_SERVO_3_OC</a>&#160;&#160;&#160;TIM_OC3</td></tr>
 <tr class="memitem:a665cb015c3504e5dcfd386c518de25c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a665cb015c3504e5dcfd386c518de25c0">PWM_SERVO_3_OC_BIT</a>&#160;&#160;&#160;(1&lt;&lt;2)</td></tr>
 <tr class="memitem:a91f6626bfa49db33e3a3ed5d1bad1cc5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a91f6626bfa49db33e3a3ed5d1bad1cc5">PWM_SERVO_4</a>&#160;&#160;&#160;3</td></tr>
 <tr class="memitem:a01f35b990dd64f2a26f879a0757dea09"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a01f35b990dd64f2a26f879a0757dea09">PWM_SERVO_4_TIMER</a>&#160;&#160;&#160;TIM3</td></tr>
-<tr class="memitem:a60dc9c3bd4bfa7cfdfb20739843e0d8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a60dc9c3bd4bfa7cfdfb20739843e0d8b">PWM_SERVO_4_RCC</a>&#160;&#160;&#160;RCC_GPIOC</td></tr>
 <tr class="memitem:a1d3867d6cc6edaf6fa497dc7a4466f21"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a1d3867d6cc6edaf6fa497dc7a4466f21">PWM_SERVO_4_GPIO</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a2dca03332d620196ba943bc2346eaa08">GPIOC</a></td></tr>
 <tr class="memitem:a6404fc57b2246acd54fe7539e29aa9a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a6404fc57b2246acd54fe7539e29aa9a6">PWM_SERVO_4_PIN</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#ae2a4c4d28729daf18e1923a1878e7352">GPIO9</a></td></tr>
-<tr class="memitem:a689995b3ffce4727831c630e0c144b5e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a689995b3ffce4727831c630e0c144b5e">PWM_SERVO_4_AF</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a689995b3ffce4727831c630e0c144b5e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a689995b3ffce4727831c630e0c144b5e">PWM_SERVO_4_AF</a>&#160;&#160;&#160;AFIO_MAPR_TIM3_REMAP_FULL_REMAP</td></tr>
 <tr class="memitem:ac8d434552c8699c63f65cc53d3b5f30d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#ac8d434552c8699c63f65cc53d3b5f30d">PWM_SERVO_4_OC</a>&#160;&#160;&#160;TIM_OC4</td></tr>
 <tr class="memitem:a9e53b17ebc6bac4a7bee8c55ebef692d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a9e53b17ebc6bac4a7bee8c55ebef692d">PWM_SERVO_4_OC_BIT</a>&#160;&#160;&#160;(1&lt;&lt;3)</td></tr>
 <tr class="memitem:ae718fb13d2500192855c74e78e6c9c5e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#ae718fb13d2500192855c74e78e6c9c5e">PWM_SERVO_5</a>&#160;&#160;&#160;4</td></tr>
 <tr class="memitem:a788deb07b7c76a809557fa2ee0c416e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a788deb07b7c76a809557fa2ee0c416e5">PWM_SERVO_5_TIMER</a>&#160;&#160;&#160;TIM5</td></tr>
-<tr class="memitem:a49d787c79eb2b60e87edc22a3c85af1f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a49d787c79eb2b60e87edc22a3c85af1f">PWM_SERVO_5_RCC</a>&#160;&#160;&#160;RCC_GPIOA</td></tr>
 <tr class="memitem:a08192a96a6eebfeb1d83f369a8ecb12a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a08192a96a6eebfeb1d83f369a8ecb12a">PWM_SERVO_5_GPIO</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#ac485358099728ddae050db37924dd6b7">GPIOA</a></td></tr>
 <tr class="memitem:a7ca4d622269db724a3af09d3625280ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a7ca4d622269db724a3af09d3625280ee">PWM_SERVO_5_PIN</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a20f88dbc839eb32b5fec903474befdd7">GPIO0</a></td></tr>
 <tr class="memitem:a28fc7e79d9148492cf26b91a7a5c0d14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a28fc7e79d9148492cf26b91a7a5c0d14">PWM_SERVO_5_AF</a>&#160;&#160;&#160;0</td></tr>
@@ -252,7 +245,6 @@ Macros</h2></td></tr>
 <tr class="memitem:a5d2f3465213306fd37370c884444e5e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a5d2f3465213306fd37370c884444e5e5">PWM_SERVO_5_OC_BIT</a>&#160;&#160;&#160;(1&lt;&lt;0)</td></tr>
 <tr class="memitem:a20e24103fcaa69e246c0d87b3a040050"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a20e24103fcaa69e246c0d87b3a040050">PWM_SERVO_6</a>&#160;&#160;&#160;5</td></tr>
 <tr class="memitem:a91379312db5447f1d9c4343ab6abba3c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a91379312db5447f1d9c4343ab6abba3c">PWM_SERVO_6_TIMER</a>&#160;&#160;&#160;TIM5</td></tr>
-<tr class="memitem:a8b92290b1871edc934c7457964a42d86"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a8b92290b1871edc934c7457964a42d86">PWM_SERVO_6_RCC</a>&#160;&#160;&#160;RCC_GPIOA</td></tr>
 <tr class="memitem:a9c90f2615bc6566f45e326285819f6d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a9c90f2615bc6566f45e326285819f6d4">PWM_SERVO_6_GPIO</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#ac485358099728ddae050db37924dd6b7">GPIOA</a></td></tr>
 <tr class="memitem:ac9b1f25ca62d407c091acfb0334dc377"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#ac9b1f25ca62d407c091acfb0334dc377">PWM_SERVO_6_PIN</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#abe59d3a7ce7a18e9440bd54cae1f3fc8">GPIO1</a></td></tr>
 <tr class="memitem:a4790fb09d46bc4fec1b725d476ae813d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__m__common_8h.html#a4790fb09d46bc4fec1b725d476ae813d">PWM_SERVO_6_AF</a>&#160;&#160;&#160;0</td></tr>
@@ -275,7 +267,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00250">250</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00251">251</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -289,7 +281,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00185">185</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00186">186</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -303,7 +295,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00186">186</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00187">187</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -317,9 +309,9 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00188">188</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00189">189</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2mcu__periph_2adc__arch_8c_source.html#l00220">adc_init()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2mcu__periph_2adc__arch_8c_source.html#l00223">adc_init()</a>.</p>
 
 </div>
 </div>
@@ -333,9 +325,9 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00187">187</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00188">188</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2mcu__periph_2adc__arch_8c_source.html#l00220">adc_init()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2mcu__periph_2adc__arch_8c_source.html#l00223">adc_init()</a>.</p>
 
 </div>
 </div>
@@ -349,7 +341,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00200">200</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00201">201</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -363,7 +355,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00207">207</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00208">208</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -377,7 +369,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00208">208</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00209">209</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -391,7 +383,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00209">209</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00210">210</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -405,7 +397,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00211">211</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00212">212</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -419,7 +411,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00212">212</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00213">213</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -433,7 +425,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00213">213</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00214">214</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -447,7 +439,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00117">117</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00118">118</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -461,7 +453,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00118">118</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00119">119</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -475,7 +467,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00113">113</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00114">114</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -489,7 +481,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00093">93</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00094">94</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -503,7 +495,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00121">121</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00122">122</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -517,7 +509,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00120">120</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00121">121</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -531,7 +523,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00119">119</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00120">120</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -545,7 +537,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00115">115</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00116">116</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -559,7 +551,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00114">114</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00115">115</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -573,7 +565,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00257">257</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00258">258</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -582,7 +574,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PWM_SERVO_1_AF&#160;&#160;&#160;0</td>
+          <td class="memname">#define PWM_SERVO_1_AF&#160;&#160;&#160;AFIO_MAPR_TIM3_REMAP_FULL_REMAP</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -647,20 +639,6 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0bbe99e95c2c87a02d50464acaa327a1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PWM_SERVO_1_RCC&#160;&#160;&#160;RCC_GPIOC</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00259">259</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ada5c5036a84c550ab1f82c1af0bcd112"></a>
 <div class="memitem">
 <div class="memproto">
@@ -671,7 +649,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00258">258</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00259">259</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -694,12 +672,12 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PWM_SERVO_2_AF&#160;&#160;&#160;0</td>
+          <td class="memname">#define PWM_SERVO_2_AF&#160;&#160;&#160;AFIO_MAPR_TIM3_REMAP_FULL_REMAP</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00275">275</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00274">274</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -713,7 +691,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00273">273</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00272">272</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -727,7 +705,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00276">276</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00275">275</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -741,7 +719,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00277">277</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00276">276</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -755,21 +733,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00274">274</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aea6fe4d2aa928a1f2bcc7b48a9e36269"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PWM_SERVO_2_RCC&#160;&#160;&#160;RCC_GPIOC</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00272">272</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00273">273</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -797,7 +761,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00283">283</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00282">282</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -806,12 +770,12 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PWM_SERVO_3_AF&#160;&#160;&#160;0</td>
+          <td class="memname">#define PWM_SERVO_3_AF&#160;&#160;&#160;AFIO_MAPR_TIM3_REMAP_FULL_REMAP</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00288">288</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00286">286</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -825,7 +789,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00286">286</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00284">284</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -839,7 +803,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00289">289</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00287">287</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -853,7 +817,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00290">290</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00288">288</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -863,20 +827,6 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define PWM_SERVO_3_PIN&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#aa951be0ce26f788049a86e407a70ae20">GPIO8</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00287">287</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="afac93b40aa95277d0a86f7f77382fecc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PWM_SERVO_3_RCC&#160;&#160;&#160;RCC_GPIOC</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -895,7 +845,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00284">284</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00283">283</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -909,7 +859,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00296">296</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00294">294</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -918,12 +868,12 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PWM_SERVO_4_AF&#160;&#160;&#160;0</td>
+          <td class="memname">#define PWM_SERVO_4_AF&#160;&#160;&#160;AFIO_MAPR_TIM3_REMAP_FULL_REMAP</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00301">301</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00298">298</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -937,7 +887,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00299">299</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00296">296</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -951,7 +901,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00302">302</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00299">299</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -965,7 +915,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00303">303</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00300">300</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -979,21 +929,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00300">300</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a60dc9c3bd4bfa7cfdfb20739843e0d8b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PWM_SERVO_4_RCC&#160;&#160;&#160;RCC_GPIOC</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00298">298</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00297">297</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1007,7 +943,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00297">297</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00295">295</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1021,7 +957,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00309">309</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00306">306</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1035,7 +971,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00314">314</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00310">310</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1049,7 +985,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00312">312</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00308">308</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1063,7 +999,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00315">315</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00311">311</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1077,7 +1013,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00316">316</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00312">312</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1091,21 +1027,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00313">313</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a49d787c79eb2b60e87edc22a3c85af1f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PWM_SERVO_5_RCC&#160;&#160;&#160;RCC_GPIOA</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00311">311</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00309">309</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1119,7 +1041,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00310">310</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00307">307</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1133,7 +1055,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00334">334</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00330">330</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1147,7 +1069,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00339">339</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00334">334</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1161,7 +1083,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00337">337</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00332">332</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1175,7 +1097,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00340">340</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00335">335</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1189,7 +1111,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00341">341</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00336">336</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1203,21 +1125,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00338">338</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8b92290b1871edc934c7457964a42d86"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PWM_SERVO_6_RCC&#160;&#160;&#160;RCC_GPIOA</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00336">336</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00333">333</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1231,7 +1139,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00335">335</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00331">331</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1245,7 +1153,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00373">373</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00367">367</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1259,7 +1167,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00386">386</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00379">379</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1273,7 +1181,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00390">390</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00383">383</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1287,7 +1195,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00394">394</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00387">387</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1301,7 +1209,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00392">392</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00385">385</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1315,7 +1223,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00220">220</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00221">221</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1329,35 +1237,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00221">221</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a787b5d0dff7658e5e923331317635545"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SPEKTRUM_BIND_PIN&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#af3cc04d651b622d5323d74dc2f0999a0">GPIO3</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00059">59</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a61f9ceb054741c177baac8a8b0282628"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SPEKTRUM_BIND_PIN_PORT&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a2dca03332d620196ba943bc2346eaa08">GPIOC</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00060">60</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00222">222</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1371,7 +1251,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00065">65</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00066">66</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1385,7 +1265,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00063">63</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00064">64</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1399,7 +1279,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00068">68</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00069">69</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1413,7 +1293,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00066">66</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00067">67</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1427,7 +1307,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00067">67</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00068">68</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1441,7 +1321,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00064">64</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00065">65</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1455,7 +1335,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00062">62</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00063">63</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1469,7 +1349,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00073">73</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00074">74</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1483,7 +1363,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00071">71</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00072">72</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1497,7 +1377,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00076">76</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00077">77</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1511,7 +1391,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00074">74</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00075">75</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1525,7 +1405,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00075">75</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00076">76</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1539,7 +1419,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00072">72</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00073">73</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1553,7 +1433,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00070">70</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00071">71</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1567,7 +1447,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00081">81</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00082">82</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1581,7 +1461,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00079">79</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00080">80</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1595,7 +1475,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00084">84</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00085">85</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1609,7 +1489,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00082">82</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00083">83</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1623,7 +1503,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00083">83</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00084">84</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1637,7 +1517,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00080">80</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00081">81</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -1651,7 +1531,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00078">78</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00079">79</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -2117,7 +1997,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00127">127</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00128">128</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -2131,7 +2011,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00182">182</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00183">183</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -2145,7 +2025,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00112">112</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00113">113</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -2159,7 +2039,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00223">223</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00224">224</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -2173,7 +2053,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00224">224</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00225">225</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -2187,7 +2067,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00225">225</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00226">226</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -2201,7 +2081,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00226">226</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00227">227</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -2215,7 +2095,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00234">234</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00235">235</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -2229,7 +2109,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00235">235</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
+<p>Definition at line <a class="el" href="lisa__m__common_8h_source.html#l00236">236</a> of file <a class="el" href="lisa__m__common_8h_source.html">lisa_m_common.h</a>.</p>
 
 </div>
 </div>
@@ -2239,7 +2119,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="lisa__m__common_8h.html">lisa_m_common.h</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:00:52 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:00:52 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

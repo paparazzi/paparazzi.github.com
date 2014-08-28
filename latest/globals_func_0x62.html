@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -169,9 +169,6 @@ $(document).ready(function(){initNavTree('globals_func_0x62.html','');});
 : <a class="el" href="hf__float_8c.html#af628e2bc576792fbc2e8b4d5fab40191">hf_float.c</a>
 , <a class="el" href="hf__float_8h.html#af628e2bc576792fbc2e8b4d5fab40191">hf_float.h</a>
 </li>
-<li>b2_hff_store_accel_body()
-: <a class="el" href="hf__float_8h.html#aef01881eabc18087fc50d2775b47f995">hf_float.h</a>
-</li>
 <li>b2_hff_update_gps()
 : <a class="el" href="hf__float_8c.html#a9b7bbf147e7e8c8978fb72440539d598">hf_float.c</a>
 , <a class="el" href="hf__float_8h.html#a9b7bbf147e7e8c8978fb72440539d598">hf_float.h</a>
@@ -181,8 +178,8 @@ $(document).ready(function(){initNavTree('globals_func_0x62.html','');});
 , <a class="el" href="hf__float_8h.html#a1c37d8eb6e67016fea8398e2f4e05163">hf_float.h</a>
 </li>
 <li>b2_hff_update_vel()
-: <a class="el" href="hf__float_8c.html#a3c837726074cbe49fc93b83c223936de">hf_float.c</a>
-, <a class="el" href="hf__float_8h.html#a3c837726074cbe49fc93b83c223936de">hf_float.h</a>
+: <a class="el" href="hf__float_8h.html#a3c837726074cbe49fc93b83c223936de">hf_float.h</a>
+, <a class="el" href="hf__float_8c.html#a3c837726074cbe49fc93b83c223936de">hf_float.c</a>
 </li>
 <li>b2_hff_update_x()
 : <a class="el" href="hf__float_8c.html#adce5673c1914dcb3fa086601c8b36939">hf_float.c</a>
@@ -219,8 +216,8 @@ $(document).ready(function(){initNavTree('globals_func_0x62.html','');});
 , <a class="el" href="baro__bmp_8h.html#aa5e236975231b4db2818cdc4c997fea0">baro_bmp.h</a>
 </li>
 <li>baro_bmp_init()
-: <a class="el" href="baro__bmp_8c.html#ac61db1c8d70ce52b2e2192350c1a4cba">baro_bmp.c</a>
-, <a class="el" href="baro__bmp_8h.html#ac61db1c8d70ce52b2e2192350c1a4cba">baro_bmp.h</a>
+: <a class="el" href="baro__bmp_8h.html#ac61db1c8d70ce52b2e2192350c1a4cba">baro_bmp.h</a>
+, <a class="el" href="baro__bmp_8c.html#ac61db1c8d70ce52b2e2192350c1a4cba">baro_bmp.c</a>
 </li>
 <li>baro_bmp_periodic()
 : <a class="el" href="baro__bmp_8c.html#a2c8ab237cbb8ec936485236b89562181">baro_bmp.c</a>
@@ -275,11 +272,14 @@ $(document).ready(function(){initNavTree('globals_func_0x62.html','');});
 , <a class="el" href="baro__ets_8h.html#a068f56980bf36411a20c15b9d4b4811f">baro_ets.h</a>
 </li>
 <li>baro_event()
-: <a class="el" href="baro__board__ms5611__i2c_8c.html#a35cf6cc4a308999840a583900a3d35ff">baro_board_ms5611_i2c.c</a>
+: <a class="el" href="px4fmu_2baro__board_8h.html#a35cf6cc4a308999840a583900a3d35ff">baro_board.h</a>
+, <a class="el" href="baro__board__ms5611__i2c_8c.html#a35cf6cc4a308999840a583900a3d35ff">baro_board_ms5611_i2c.c</a>
 , <a class="el" href="baro__board__ms5611__spi_8c.html#a35cf6cc4a308999840a583900a3d35ff">baro_board_ms5611_spi.c</a>
 , <a class="el" href="krooz_2baro__board_8h.html#a35cf6cc4a308999840a583900a3d35ff">baro_board.h</a>
 , <a class="el" href="lisa__m_2baro__board_8c.html#a35cf6cc4a308999840a583900a3d35ff">baro_board.c</a>
 , <a class="el" href="lisa__m_2baro__board_8h.html#a35cf6cc4a308999840a583900a3d35ff">baro_board.h</a>
+, <a class="el" href="navstik_2baro__board_8c.html#a35cf6cc4a308999840a583900a3d35ff">baro_board.c</a>
+, <a class="el" href="navstik_2baro__board_8h.html#a35cf6cc4a308999840a583900a3d35ff">baro_board.h</a>
 </li>
 <li>baro_hca_init()
 : <a class="el" href="baro__hca_8c.html#a03acca48d9dc4f37f0455600328ac30a">baro_hca.c</a>
@@ -328,9 +328,9 @@ $(document).ready(function(){initNavTree('globals_func_0x62.html','');});
 : <a class="el" href="baro__MS5534A_8c.html#a2c7f6fba111434a3d7c371359bc24fc4">baro_MS5534A.c</a>
 </li>
 <li>baro_ms5611_event()
-: <a class="el" href="baro__ms5611__i2c_8c.html#afd15b3c514cb6c7763b0db2788665185">baro_ms5611_i2c.c</a>
+: <a class="el" href="baro__ms5611__spi_8c.html#afd15b3c514cb6c7763b0db2788665185">baro_ms5611_spi.c</a>
+, <a class="el" href="baro__ms5611__i2c_8c.html#afd15b3c514cb6c7763b0db2788665185">baro_ms5611_i2c.c</a>
 , <a class="el" href="baro__ms5611__i2c_8h.html#afd15b3c514cb6c7763b0db2788665185">baro_ms5611_i2c.h</a>
-, <a class="el" href="baro__ms5611__spi_8c.html#afd15b3c514cb6c7763b0db2788665185">baro_ms5611_spi.c</a>
 , <a class="el" href="baro__ms5611__spi_8h.html#afd15b3c514cb6c7763b0db2788665185">baro_ms5611_spi.h</a>
 </li>
 <li>baro_ms5611_init()
@@ -340,47 +340,46 @@ $(document).ready(function(){initNavTree('globals_func_0x62.html','');});
 , <a class="el" href="baro__ms5611__spi_8h.html#a3f95f9dea9a4f9246be1cd133ff424a7">baro_ms5611_spi.h</a>
 </li>
 <li>baro_ms5611_periodic_check()
-: <a class="el" href="baro__ms5611__i2c_8c.html#a2f3b2eefc1da2e3f22e30ee05aa090d2">baro_ms5611_i2c.c</a>
+: <a class="el" href="baro__ms5611__spi_8c.html#a2f3b2eefc1da2e3f22e30ee05aa090d2">baro_ms5611_spi.c</a>
+, <a class="el" href="baro__ms5611__i2c_8c.html#a2f3b2eefc1da2e3f22e30ee05aa090d2">baro_ms5611_i2c.c</a>
 , <a class="el" href="baro__ms5611__i2c_8h.html#a2f3b2eefc1da2e3f22e30ee05aa090d2">baro_ms5611_i2c.h</a>
-, <a class="el" href="baro__ms5611__spi_8c.html#a2f3b2eefc1da2e3f22e30ee05aa090d2">baro_ms5611_spi.c</a>
 , <a class="el" href="baro__ms5611__spi_8h.html#a2f3b2eefc1da2e3f22e30ee05aa090d2">baro_ms5611_spi.h</a>
 </li>
 <li>baro_ms5611_read()
 : <a class="el" href="baro__ms5611__i2c_8c.html#ab15686f869e48b46f232136b24ccf3cd">baro_ms5611_i2c.c</a>
 , <a class="el" href="baro__ms5611__i2c_8h.html#ab15686f869e48b46f232136b24ccf3cd">baro_ms5611_i2c.h</a>
-, <a class="el" href="baro__ms5611__spi_8c.html#ab15686f869e48b46f232136b24ccf3cd">baro_ms5611_spi.c</a>
 , <a class="el" href="baro__ms5611__spi_8h.html#ab15686f869e48b46f232136b24ccf3cd">baro_ms5611_spi.h</a>
+, <a class="el" href="baro__ms5611__spi_8c.html#ab15686f869e48b46f232136b24ccf3cd">baro_ms5611_spi.c</a>
 </li>
 <li>baro_ms5611_send_coeff()
-: <a class="el" href="baro__ms5611__i2c_8h.html#acf4648ad0258e412fdf2241bc4f84a2c">baro_ms5611_i2c.h</a>
-, <a class="el" href="baro__ms5611__spi_8c.html#acf4648ad0258e412fdf2241bc4f84a2c">baro_ms5611_spi.c</a>
+: <a class="el" href="baro__ms5611__i2c_8c.html#acf4648ad0258e412fdf2241bc4f84a2c">baro_ms5611_i2c.c</a>
+, <a class="el" href="baro__ms5611__i2c_8h.html#acf4648ad0258e412fdf2241bc4f84a2c">baro_ms5611_i2c.h</a>
 , <a class="el" href="baro__ms5611__spi_8h.html#acf4648ad0258e412fdf2241bc4f84a2c">baro_ms5611_spi.h</a>
-, <a class="el" href="baro__ms5611__i2c_8c.html#acf4648ad0258e412fdf2241bc4f84a2c">baro_ms5611_i2c.c</a>
+, <a class="el" href="baro__ms5611__spi_8c.html#acf4648ad0258e412fdf2241bc4f84a2c">baro_ms5611_spi.c</a>
 </li>
 <li>baro_periodic()
-: <a class="el" href="umarim_2baro__board_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00">baro_board.c</a>
+: <a class="el" href="baro__board__ms5611__i2c_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00">baro_board_ms5611_i2c.c</a>
+, <a class="el" href="baro_8h.html#a23ed77c56ba44b3ed3cc3b8e378bdb00">baro.h</a>
+, <a class="el" href="umarim_2baro__board_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00">baro_board.c</a>
 , <a class="el" href="baro__board__ms5611__spi_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00">baro_board_ms5611_spi.c</a>
 , <a class="el" href="navgo_2baro__board_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00">baro_board.c</a>
-, <a class="el" href="baro__board__ms5611__i2c_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00">baro_board_ms5611_i2c.c</a>
-, <a class="el" href="apogee_2baro__board_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00">baro_board.c</a>
-, <a class="el" href="baro_8h.html#a23ed77c56ba44b3ed3cc3b8e378bdb00">baro.h</a>
 </li>
 <li>baro_scp_event()
 : <a class="el" href="baro__scp__i2c_8c.html#a6cbae7e48b4b096bafb8717f44bef3f1">baro_scp_i2c.c</a>
-, <a class="el" href="baro__scp_8c.html#a6cbae7e48b4b096bafb8717f44bef3f1">baro_scp.c</a>
-, <a class="el" href="baro__scp_8h.html#a6cbae7e48b4b096bafb8717f44bef3f1">baro_scp.h</a>
 , <a class="el" href="baro__scp__i2c_8h.html#a6cbae7e48b4b096bafb8717f44bef3f1">baro_scp_i2c.h</a>
+, <a class="el" href="baro__scp_8h.html#a6cbae7e48b4b096bafb8717f44bef3f1">baro_scp.h</a>
+, <a class="el" href="baro__scp_8c.html#a6cbae7e48b4b096bafb8717f44bef3f1">baro_scp.c</a>
 </li>
 <li>baro_scp_init()
-: <a class="el" href="baro__scp__i2c_8h.html#a9912bb32894c07a1eca930778b455159">baro_scp_i2c.h</a>
+: <a class="el" href="baro__scp_8c.html#a9912bb32894c07a1eca930778b455159">baro_scp.c</a>
 , <a class="el" href="baro__scp_8h.html#a9912bb32894c07a1eca930778b455159">baro_scp.h</a>
 , <a class="el" href="baro__scp__i2c_8c.html#a9912bb32894c07a1eca930778b455159">baro_scp_i2c.c</a>
-, <a class="el" href="baro__scp_8c.html#a9912bb32894c07a1eca930778b455159">baro_scp.c</a>
+, <a class="el" href="baro__scp__i2c_8h.html#a9912bb32894c07a1eca930778b455159">baro_scp_i2c.h</a>
 </li>
 <li>baro_scp_periodic()
-: <a class="el" href="baro__scp_8c.html#a7995b8df4beede8b8da2998349693108">baro_scp.c</a>
+: <a class="el" href="baro__scp__i2c_8h.html#a7995b8df4beede8b8da2998349693108">baro_scp_i2c.h</a>
+, <a class="el" href="baro__scp_8c.html#a7995b8df4beede8b8da2998349693108">baro_scp.c</a>
 , <a class="el" href="baro__scp_8h.html#a7995b8df4beede8b8da2998349693108">baro_scp.h</a>
-, <a class="el" href="baro__scp__i2c_8h.html#a7995b8df4beede8b8da2998349693108">baro_scp_i2c.h</a>
 , <a class="el" href="baro__scp__i2c_8c.html#a7995b8df4beede8b8da2998349693108">baro_scp_i2c.c</a>
 </li>
 <li>baro_scp_read()
@@ -395,8 +394,8 @@ $(document).ready(function(){initNavTree('globals_func_0x62.html','');});
 , <a class="el" href="baro__sim_8h.html#ad5cb7d6c6d8638f28738876d683a3ea4">baro_sim.h</a>
 </li>
 <li>baro_sim_periodic()
-: <a class="el" href="baro__sim_8c.html#ad43ede516cb291db8ea546cc89c3fdaf">baro_sim.c</a>
-, <a class="el" href="baro__sim_8h.html#ad43ede516cb291db8ea546cc89c3fdaf">baro_sim.h</a>
+: <a class="el" href="baro__sim_8h.html#ad43ede516cb291db8ea546cc89c3fdaf">baro_sim.h</a>
+, <a class="el" href="baro__sim_8c.html#ad43ede516cb291db8ea546cc89c3fdaf">baro_sim.c</a>
 </li>
 <li>baro_update_logic()
 : <a class="el" href="navdata_8c.html#a3bcee9a8b6ed934b40a5f701085e1a2b">navdata.c</a>
@@ -421,20 +420,20 @@ $(document).ready(function(){initNavTree('globals_func_0x62.html','');});
 : <a class="el" href="bmp085_8c.html#ab7dda30fa62c1e697bc782a9c96e4c12">bmp085.c</a>
 </li>
 <li>bmp085_event()
-: <a class="el" href="bmp085_8c.html#a378f5eb4f4ed5e17c6f13e3dc4629842">bmp085.c</a>
-, <a class="el" href="bmp085_8h.html#a378f5eb4f4ed5e17c6f13e3dc4629842">bmp085.h</a>
+: <a class="el" href="bmp085_8h.html#a378f5eb4f4ed5e17c6f13e3dc4629842">bmp085.h</a>
+, <a class="el" href="bmp085_8c.html#a378f5eb4f4ed5e17c6f13e3dc4629842">bmp085.c</a>
 </li>
 <li>bmp085_init()
-: <a class="el" href="bmp085_8h.html#a0408131d52b918456c36b07d13d6a90f">bmp085.h</a>
-, <a class="el" href="bmp085_8c.html#a0408131d52b918456c36b07d13d6a90f">bmp085.c</a>
+: <a class="el" href="bmp085_8c.html#a0408131d52b918456c36b07d13d6a90f">bmp085.c</a>
+, <a class="el" href="bmp085_8h.html#a0408131d52b918456c36b07d13d6a90f">bmp085.h</a>
 </li>
 <li>bmp085_periodic()
-: <a class="el" href="bmp085_8h.html#ad6fe03b188457ab22e7e81f0712c9afb">bmp085.h</a>
-, <a class="el" href="bmp085_8c.html#ad6fe03b188457ab22e7e81f0712c9afb">bmp085.c</a>
+: <a class="el" href="bmp085_8c.html#ad6fe03b188457ab22e7e81f0712c9afb">bmp085.c</a>
+, <a class="el" href="bmp085_8h.html#ad6fe03b188457ab22e7e81f0712c9afb">bmp085.h</a>
 </li>
 <li>bmp085_read_eeprom_calib()
-: <a class="el" href="bmp085_8c.html#a96cbcc561ed98d124a49fcd60b701fb6">bmp085.c</a>
-, <a class="el" href="bmp085_8h.html#a96cbcc561ed98d124a49fcd60b701fb6">bmp085.h</a>
+: <a class="el" href="bmp085_8h.html#a96cbcc561ed98d124a49fcd60b701fb6">bmp085.h</a>
+, <a class="el" href="bmp085_8c.html#a96cbcc561ed98d124a49fcd60b701fb6">bmp085.c</a>
 </li>
 <li>booz_fms_impl_init()
 : <a class="el" href="vi__test__signal_8c.html#a69d42cb57d01ab8ab3e0707f66f14aba">vi_test_signal.c</a>
@@ -470,7 +469,7 @@ $(document).ready(function(){initNavTree('globals_func_0x62.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon May 26 2014 16:01:23 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:01:23 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

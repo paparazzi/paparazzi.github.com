@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -218,30 +218,36 @@ $(document).ready(function(){initNavTree('lisa__m__2_80_8h_source.html','');});
 <div class="line"><a name="l00109"></a><span class="lineno"><a class="code" href="lisa__m__2_80_8h.html#a77f96756967cdac7e3fc59fda8933f36">  109</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LED_12_GPIO_OFF gpio_set</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno"><a class="code" href="lisa__m__2_80_8h.html#aa85d3ec12dfcdd90bc965435b500b642">  110</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LED_12_AFIO_REMAP ((void)0)</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">/* Default actuators driver */</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno"><a class="code" href="lisa__m__2_80_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">  114</a></span>&#160;<span class="preprocessor">#define DEFAULT_ACTUATORS &quot;subsystems/actuators/actuators_pwm.h&quot;</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno"><a class="code" href="lisa__m__2_80_8h.html#a3fc5f96f074d833b909fd75c92b7d2d0">  115</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ActuatorDefaultSet(_x,_y) ActuatorPwmSet(_x,_y)</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="code" href="lisa__m__2_80_8h.html#ab68f28871d18c17e7e70ae63277d37c2">  116</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ActuatorsDefaultInit() ActuatorsPwmInit()</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno"><a class="code" href="lisa__m__2_80_8h.html#a0ceadf6a913477832e04b0cb7cd17210">  117</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ActuatorsDefaultCommit() ActuatorsPwmCommit()</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment"> * Spektrum</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">/* The line that is pulled low at power up to initiate the bind process */</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="code" href="lisa__m__2_80_8h.html#a787b5d0dff7658e5e923331317635545">  116</a></span>&#160;<span class="preprocessor">#define SPEKTRUM_BIND_PIN GPIO3</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="code" href="lisa__m__2_80_8h.html#a61f9ceb054741c177baac8a8b0282628">  117</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SPEKTRUM_BIND_PIN_PORT GPIOC</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno"><a class="code" href="lisa__m__2_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">  120</a></span>&#160;<span class="preprocessor">#define DefaultVoltageOfAdc(adc) (0.0045*adc)</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">/* by default activate onboard baro */</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#ifndef USE_BARO_BOARD</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno"><a class="code" href="lisa__m__2_80_8h.html#a3f7278cf218a92fa0a1514dea823cd9d">  125</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define USE_BARO_BOARD 1</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">/* Default actuators driver */</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="code" href="lisa__m__2_80_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">  120</a></span>&#160;<span class="preprocessor">#define DEFAULT_ACTUATORS &quot;subsystems/actuators/actuators_pwm.h&quot;</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="code" href="lisa__m__2_80_8h.html#a3fc5f96f074d833b909fd75c92b7d2d0">  121</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ActuatorDefaultSet(_x,_y) ActuatorPwmSet(_x,_y)</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="code" href="lisa__m__2_80_8h.html#ab68f28871d18c17e7e70ae63277d37c2">  122</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ActuatorsDefaultInit() ActuatorsPwmInit()</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="code" href="lisa__m__2_80_8h.html#a0ceadf6a913477832e04b0cb7cd17210">  123</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ActuatorsDefaultCommit() ActuatorsPwmCommit()</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="code" href="lisa__m__2_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">  126</a></span>&#160;<span class="preprocessor">#define DefaultVoltageOfAdc(adc) (0.0045*adc)</span></div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CONFIG_LISA_M_2_0_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment">/* by default activate onboard baro */</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#ifndef USE_BARO_BOARD</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="code" href="lisa__m__2_80_8h.html#a3f7278cf218a92fa0a1514dea823cd9d">  131</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define USE_BARO_BOARD 1</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CONFIG_LISA_M_2_0_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="lisa__m__2_80_8h.html">lisa_m_2.0.h</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:00:38 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:00:38 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

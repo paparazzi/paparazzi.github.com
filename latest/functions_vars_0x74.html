@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -246,12 +246,7 @@ $(document).ready(function(){initNavTree('functions_vars_0x74.html','');});
 : <a class="el" href="structmavlink__optical__flow.html#ad690805ca727433bbc0d4678e7decb5c">mavlink_optical_flow</a>
 </li>
 <li>timeout
-: <a class="el" href="structLisaOveroLink.html#afc5a5984d79f3a07d2763089546f0f2d">LisaOveroLink</a>
-, <a class="el" href="structuart__state.html#ad45d7219d55de38ab9cd8a4c7edd6e8a">uart_state</a>
-, <a class="el" href="structHmc5843.html#ada82622fad1a3e2d09d74032fc65a87d">Hmc5843</a>
-</li>
-<li>timeout_cnt
-: <a class="el" href="structLisaOveroLink.html#a3db737af066f1d3400586665fdc6fa4d">LisaOveroLink</a>
+: <a class="el" href="structHmc5843.html#ada82622fad1a3e2d09d74032fc65a87d">Hmc5843</a>
 </li>
 <li>timeout_tlow_cnt
 : <a class="el" href="structi2c__errors.html#a72a1be189ba8375641abaf09c9e51d39">i2c_errors</a>
@@ -264,6 +259,7 @@ $(document).ready(function(){initNavTree('functions_vars_0x74.html','');});
 </li>
 <li>timer
 : <a class="el" href="structsys__time.html#ac9099131f9a2e477427758d79e220544">sys_time</a>
+, <a class="el" href="structHackHD.html#a6018ba71219478bbe72ca662e80c0aee">HackHD</a>
 , <a class="el" href="structSuperbitRF.html#a6f73a08fb0dcddf86f801eca32b4dd11">SuperbitRF</a>
 </li>
 <li>timer_overflow
@@ -276,7 +272,13 @@ $(document).ready(function(){initNavTree('functions_vars_0x74.html','');});
 : <a class="el" href="structSuperbitRF.html#ac274d2efb6e377601fe92f2616b1c42e">SuperbitRF</a>
 </li>
 <li>to
-: <a class="el" href="struct__mission__segment.html#a510760f3d21dc907aadb9ea842773e6a">_mission_segment</a>
+: <a class="el" href="struct__mission__segment.html#aefb1c18e02beae1b6187f32615b81af6">_mission_segment</a>
+</li>
+<li>to_f
+: <a class="el" href="struct__mission__segment.html#ad2145ee325951fd1b4b0a5d8ab6475c9">_mission_segment</a>
+</li>
+<li>to_i
+: <a class="el" href="struct__mission__segment.html#a5e50bdf5fc956893310d5db5862c9c0b">_mission_segment</a>
 </li>
 <li>top
 : <a class="el" href="structInfrared.html#ac68772476ec395a4ee1fa1f916e40a4a">Infrared</a>
@@ -316,8 +318,8 @@ $(document).ready(function(){initNavTree('functions_vars_0x74.html','');});
 : <a class="el" href="structNavSpiral.html#a8e616e02a9c990fde3b10b590e17b4ab">NavSpiral</a>
 </li>
 <li>trans_extract_idx
-: <a class="el" href="structi2c__periph.html#a4e572be9f28f1037d7c749a223329aaf">i2c_periph</a>
-, <a class="el" href="structspi__periph.html#af1cd87f1e6b8cf0bfad3ba646224601f">spi_periph</a>
+: <a class="el" href="structspi__periph.html#af1cd87f1e6b8cf0bfad3ba646224601f">spi_periph</a>
+, <a class="el" href="structi2c__periph.html#a4e572be9f28f1037d7c749a223329aaf">i2c_periph</a>
 </li>
 <li>trans_insert_idx
 : <a class="el" href="structi2c__periph.html#a63002740b27aaaf9d847b17001302d9c">i2c_periph</a>
@@ -350,17 +352,14 @@ $(document).ready(function(){initNavTree('functions_vars_0x74.html','');});
 <li>tv
 : <a class="el" href="structwdRegs__t.html#af8fae3fc2fde2b70f57abd60897e1849">wdRegs_t</a>
 </li>
-<li>tx
-: <a class="el" href="structspistream__buffers__t.html#a369eb744301a0c61b52e7960d8fb80ef">spistream_buffers_t</a>
-</li>
 <li>tx_buf
-: <a class="el" href="structMpu60x0__Spi.html#a4e654f3fde6e96974dba4ad725761cfa">Mpu60x0_Spi</a>
-, <a class="el" href="structAdxl345__Spi.html#a6cfefbc11d04077d2d2f619b7b64cf21">Adxl345_Spi</a>
-, <a class="el" href="structuart__periph.html#a9dc10b9a1a2d379b6b30bec6d26a9c45">uart_periph</a>
-, <a class="el" href="structMs5611__Spi.html#a091824db413eb26c20ea3c7f6aaff694">Ms5611_Spi</a>
+: <a class="el" href="structuart__periph.html#a9dc10b9a1a2d379b6b30bec6d26a9c45">uart_periph</a>
 , <a class="el" href="structLis302dl__Spi.html#a43a8d1b6d32a471e262c44d52c4e121b">Lis302dl_Spi</a>
+, <a class="el" href="structMpu60x0__Spi.html#a4e654f3fde6e96974dba4ad725761cfa">Mpu60x0_Spi</a>
 , <a class="el" href="structw5100__periph.html#a951fd755f073f0b1c110be5612dd85a9">w5100_periph</a>
+, <a class="el" href="structMs5611__Spi.html#a091824db413eb26c20ea3c7f6aaff694">Ms5611_Spi</a>
 , <a class="el" href="structL3gd20__Spi.html#aea21b22218dd09bfcb23a7f18e4a4442">L3gd20_Spi</a>
+, <a class="el" href="structAdxl345__Spi.html#a6cfefbc11d04077d2d2f619b7b64cf21">Adxl345_Spi</a>
 </li>
 <li>tx_buffer
 : <a class="el" href="structSuperbitRF.html#a2496bcdcf082921b69dba1a755f23271">SuperbitRF</a>
@@ -379,14 +378,11 @@ $(document).ready(function(){initNavTree('functions_vars_0x74.html','');});
 </li>
 <li>tx_extract_idx
 : <a class="el" href="structSuperbitRF.html#a62eaf6e8c7db5b72ad5f4f6c43654c8d">SuperbitRF</a>
-, <a class="el" href="structuart__periph.html#a24b5a50167052cd5e744eb381208f658">uart_periph</a>
 , <a class="el" href="structw5100__periph.html#a0faa006a1d7adfbbeccee552f08e5990">w5100_periph</a>
+, <a class="el" href="structuart__periph.html#a24b5a50167052cd5e744eb381208f658">uart_periph</a>
 </li>
 <li>tx_idx_buf
 : <a class="el" href="structspi__periph.html#abc8a928c600b119ddffed3496001a84e">spi_periph</a>
-</li>
-<li>tx_insert
-: <a class="el" href="structspistream__buffers__t.html#af7a77ff132b68700226df296b9e3f134">spistream_buffers_t</a>
 </li>
 <li>tx_insert_idx
 : <a class="el" href="structSuperbitRF.html#aec57fdbc0540a3e667332b12d0688ae9">SuperbitRF</a>
@@ -396,20 +392,11 @@ $(document).ready(function(){initNavTree('functions_vars_0x74.html','');});
 <li>tx_irq_status
 : <a class="el" href="structCyrf6936.html#abb3a939f6be4ee287e4f76ed07c337c1">Cyrf6936</a>
 </li>
-<li>tx_message_cnt
-: <a class="el" href="structspistream__state__t.html#a88acf6088aa2261f68f314e91c7b5fb8">spistream_state_t</a>
-</li>
-<li>tx_num_packages
-: <a class="el" href="structspistream__buffers__t.html#a473a9e2b792e6ee0f6316ece25a9bcf6">spistream_buffers_t</a>
-</li>
 <li>tx_nvic_irq
 : <a class="el" href="structspi__periph__dma.html#a14f668fc1be63f17e24c4c3d16c625da">spi_periph_dma</a>
 </li>
 <li>tx_packet_count
 : <a class="el" href="structSuperbitRF.html#a3555152215e84393787b670fe68d553d">SuperbitRF</a>
-</li>
-<li>tx_read
-: <a class="el" href="structspistream__buffers__t.html#ace1a531a12cd14598b5455f178d97277">spistream_buffers_t</a>
 </li>
 <li>tx_running
 : <a class="el" href="structuart__periph.html#a926e35297d3514a88e10efae438b3d54">uart_periph</a>
@@ -419,9 +406,9 @@ $(document).ready(function(){initNavTree('functions_vars_0x74.html','');});
 : <a class="el" href="structcan__central__Regs__t.html#a737f16159f28e0069e2db13aa181b25e">can_central_Regs_t</a>
 </li>
 <li>type
-: <a class="el" href="structi2c__transaction.html#ab23c7469258089742bb0c2950599b232">i2c_transaction</a>
-, <a class="el" href="struct__mission__element.html#a9865f3bf50ac1182fbe6998e37799cb8">_mission_element</a>
+: <a class="el" href="struct__mission__element.html#a9865f3bf50ac1182fbe6998e37799cb8">_mission_element</a>
 , <a class="el" href="structHmc58xx.html#a43b4d88b5ab4095fd1913f97119823cf">Hmc58xx</a>
+, <a class="el" href="structi2c__transaction.html#ab23c7469258089742bb0c2950599b232">i2c_transaction</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -429,7 +416,7 @@ $(document).ready(function(){initNavTree('functions_vars_0x74.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon May 26 2014 16:01:21 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:01:21 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

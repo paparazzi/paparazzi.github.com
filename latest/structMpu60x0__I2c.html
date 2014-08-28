@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -128,18 +128,18 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a0436de01984b618448ea9313b92e1a1f"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structi2c__transaction.html">i2c_transaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMpu60x0__I2c.html#a0436de01984b618448ea9313b92e1a1f">i2c_trans</a></td></tr>
 <tr class="memitem:a87ac6605726cc59b9faf824037b547b0"><td class="memItemLeft" align="right" valign="top">volatile bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMpu60x0__I2c.html#a87ac6605726cc59b9faf824037b547b0">data_available</a></td></tr>
 <tr class="memdesc:a87ac6605726cc59b9faf824037b547b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">data ready flag  <a href="#a87ac6605726cc59b9faf824037b547b0"></a><br/></td></tr>
-<tr class="memitem:ae3cb77ff26134a29ce6fefe03d92d250"><td class="memItemLeft" >union {</td></tr>
-<tr class="memitem:ab29e19a09df5ea1beec89a36260bebff"><td class="memItemLeft" >&#160;&#160;&#160;struct <a class="el" href="structInt16Vect3.html">Int16Vect3</a>&#160;&#160;&#160;<a class="el" href="structMpu60x0__I2c.html#aca093a39ac7d4b245bdad4b6b4faf5e9">vect</a></td></tr>
-<tr class="memdesc:ab29e19a09df5ea1beec89a36260bebff"><td class="mdescLeft">&#160;</td><td class="mdescRight">accel data vector in accel coordinate system  <a href="#ab29e19a09df5ea1beec89a36260bebff"></a><br/></td></tr>
-<tr class="memitem:a8599976c9c105290109357b71554f68c"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;&#160;&#160;<a class="el" href="structMpu60x0__I2c.html#a3e1ac452ee4ca306eecd675230570c0b">value</a> [3]</td></tr>
-<tr class="memdesc:a8599976c9c105290109357b71554f68c"><td class="mdescLeft">&#160;</td><td class="mdescRight">accel data values accessible by channel index  <a href="#a8599976c9c105290109357b71554f68c"></a><br/></td></tr>
-<tr class="memitem:ae3cb77ff26134a29ce6fefe03d92d250"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMpu60x0__I2c.html#ae3cb77ff26134a29ce6fefe03d92d250">data_accel</a></td></tr>
-<tr class="memitem:a71bcb752df33dae01c47d6fb20879279"><td class="memItemLeft" >union {</td></tr>
-<tr class="memitem:ac922447a3be07f49c314516a8047bbe6"><td class="memItemLeft" >&#160;&#160;&#160;struct <a class="el" href="structInt16Rates.html">Int16Rates</a>&#160;&#160;&#160;<a class="el" href="structMpu60x0__I2c.html#a3f9d938897ec1907e910b17fcdda0b0f">rates</a></td></tr>
-<tr class="memdesc:ac922447a3be07f49c314516a8047bbe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">rates data as angular rates in gyro coordinate system  <a href="#ac922447a3be07f49c314516a8047bbe6"></a><br/></td></tr>
-<tr class="memitem:ae94db51b8d144a91d5f46313574bc1cb"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;&#160;&#160;<a class="el" href="structMpu60x0__I2c.html#a3e1ac452ee4ca306eecd675230570c0b">value</a> [3]</td></tr>
-<tr class="memdesc:ae94db51b8d144a91d5f46313574bc1cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">rates data values accessible by channel index  <a href="#ae94db51b8d144a91d5f46313574bc1cb"></a><br/></td></tr>
-<tr class="memitem:a71bcb752df33dae01c47d6fb20879279"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMpu60x0__I2c.html#a71bcb752df33dae01c47d6fb20879279">data_rates</a></td></tr>
+<tr class="memitem:a5105b29247e8dd2295f2bcda51d4cd91"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:afe737e0a763697489449ba92bdd647bb"><td class="memItemLeft" >&#160;&#160;&#160;struct <a class="el" href="structInt16Vect3.html">Int16Vect3</a>&#160;&#160;&#160;<a class="el" href="structMpu60x0__I2c.html#aca093a39ac7d4b245bdad4b6b4faf5e9">vect</a></td></tr>
+<tr class="memdesc:afe737e0a763697489449ba92bdd647bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">accel data vector in accel coordinate system  <a href="#afe737e0a763697489449ba92bdd647bb"></a><br/></td></tr>
+<tr class="memitem:a391df4f7b4044dbbd5f2a5f5d923b21c"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;&#160;&#160;<a class="el" href="structMpu60x0__I2c.html#a3e1ac452ee4ca306eecd675230570c0b">value</a> [3]</td></tr>
+<tr class="memdesc:a391df4f7b4044dbbd5f2a5f5d923b21c"><td class="mdescLeft">&#160;</td><td class="mdescRight">accel data values accessible by channel index  <a href="#a391df4f7b4044dbbd5f2a5f5d923b21c"></a><br/></td></tr>
+<tr class="memitem:a5105b29247e8dd2295f2bcda51d4cd91"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMpu60x0__I2c.html#a5105b29247e8dd2295f2bcda51d4cd91">data_accel</a></td></tr>
+<tr class="memitem:a115fb78d551253af09a1ad56aab9deed"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a1dd332ab09927249869a8be353a7d0f5"><td class="memItemLeft" >&#160;&#160;&#160;struct <a class="el" href="structInt16Rates.html">Int16Rates</a>&#160;&#160;&#160;<a class="el" href="structMpu60x0__I2c.html#a3f9d938897ec1907e910b17fcdda0b0f">rates</a></td></tr>
+<tr class="memdesc:a1dd332ab09927249869a8be353a7d0f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">rates data as angular rates in gyro coordinate system  <a href="#a1dd332ab09927249869a8be353a7d0f5"></a><br/></td></tr>
+<tr class="memitem:a2f1bb6af3b2725c057b88243afd3ffc0"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;&#160;&#160;<a class="el" href="structMpu60x0__I2c.html#a3e1ac452ee4ca306eecd675230570c0b">value</a> [3]</td></tr>
+<tr class="memdesc:a2f1bb6af3b2725c057b88243afd3ffc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">rates data values accessible by channel index  <a href="#a2f1bb6af3b2725c057b88243afd3ffc0"></a><br/></td></tr>
+<tr class="memitem:a115fb78d551253af09a1ad56aab9deed"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMpu60x0__I2c.html#a115fb78d551253af09a1ad56aab9deed">data_rates</a></td></tr>
 <tr class="memitem:a3a6d42f76a6324241321ebe8619c5ae6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMpu60x0__I2c.html#a3a6d42f76a6324241321ebe8619c5ae6">data_ext</a> [<a class="el" href="mpu60x0__spi_8h.html#a6b700f6c51b798ceb4ba491922f6531e">MPU60X0_BUFFER_EXT_LEN</a>]</td></tr>
 <tr class="memitem:ac45f59044e30e1a4ee17083ba692fba0"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structMpu60x0Config.html">Mpu60x0Config</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMpu60x0__I2c.html#ac45f59044e30e1a4ee17083ba692fba0">config</a></td></tr>
 <tr class="memitem:a7efe7010fe6adf3c974b7f38a8692d90"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="mpu60x0__i2c_8h.html#abed36615673c5b421855c1f103caa2f1">Mpu60x0I2cSlaveInitStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMpu60x0__I2c.html#a7efe7010fe6adf3c974b7f38a8692d90">slave_init_status</a></td></tr>
@@ -164,7 +164,7 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae3cb77ff26134a29ce6fefe03d92d250"></a>
+<a class="anchor" id="a5105b29247e8dd2295f2bcda51d4cd91"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -174,7 +174,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="imu__apogee_8c_source.html#l00102">imu_apogee_event()</a>, <a class="el" href="imu__drotek__10dof__v2_8c_source.html#l00121">imu_drotek2_event()</a>, <a class="el" href="imu__krooz_8c_source.html#l00140">imu_krooz_event()</a>, and <a class="el" href="mpu60x0__i2c_8c_source.html#l00081">mpu60x0_i2c_event()</a>.</p>
+<p>Referenced by <a class="el" href="imu__apogee_8c_source.html#l00102">imu_apogee_event()</a>, <a class="el" href="imu__drotek__10dof__v2_8c_source.html#l00121">imu_drotek2_event()</a>, <a class="el" href="imu__krooz_8c_source.html#l00140">imu_krooz_event()</a>, <a class="el" href="imu__navstik_8c_source.html#l00112">imu_navstik_event()</a>, and <a class="el" href="mpu60x0__i2c_8c_source.html#l00081">mpu60x0_i2c_event()</a>.</p>
 
 </div>
 </div>
@@ -192,7 +192,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="mpu60x0__i2c_8h_source.html#l00057">57</a> of file <a class="el" href="mpu60x0__i2c_8h_source.html">mpu60x0_i2c.h</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__apogee_8c_source.html#l00102">imu_apogee_event()</a>, <a class="el" href="imu__drotek__10dof__v2_8c_source.html#l00121">imu_drotek2_event()</a>, <a class="el" href="imu__krooz_8c_source.html#l00140">imu_krooz_event()</a>, <a class="el" href="mpu60x0__i2c_8c_source.html#l00081">mpu60x0_i2c_event()</a>, and <a class="el" href="mpu60x0__i2c_8c_source.html#l00031">mpu60x0_i2c_init()</a>.</p>
+<p>Referenced by <a class="el" href="imu__apogee_8c_source.html#l00102">imu_apogee_event()</a>, <a class="el" href="imu__drotek__10dof__v2_8c_source.html#l00121">imu_drotek2_event()</a>, <a class="el" href="imu__krooz_8c_source.html#l00140">imu_krooz_event()</a>, <a class="el" href="imu__navstik_8c_source.html#l00112">imu_navstik_event()</a>, <a class="el" href="mpu60x0__i2c_8c_source.html#l00081">mpu60x0_i2c_event()</a>, and <a class="el" href="mpu60x0__i2c_8c_source.html#l00031">mpu60x0_i2c_init()</a>.</p>
 
 </div>
 </div>
@@ -212,7 +212,7 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a71bcb752df33dae01c47d6fb20879279"></a>
+<a class="anchor" id="a115fb78d551253af09a1ad56aab9deed"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -222,7 +222,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="imu__apogee_8c_source.html#l00102">imu_apogee_event()</a>, <a class="el" href="imu__drotek__10dof__v2_8c_source.html#l00121">imu_drotek2_event()</a>, <a class="el" href="imu__krooz_8c_source.html#l00140">imu_krooz_event()</a>, and <a class="el" href="mpu60x0__i2c_8c_source.html#l00081">mpu60x0_i2c_event()</a>.</p>
+<p>Referenced by <a class="el" href="imu__apogee_8c_source.html#l00102">imu_apogee_event()</a>, <a class="el" href="imu__drotek__10dof__v2_8c_source.html#l00121">imu_drotek2_event()</a>, <a class="el" href="imu__krooz_8c_source.html#l00140">imu_krooz_event()</a>, <a class="el" href="imu__navstik_8c_source.html#l00112">imu_navstik_event()</a>, and <a class="el" href="mpu60x0__i2c_8c_source.html#l00081">mpu60x0_i2c_event()</a>.</p>
 
 </div>
 </div>
@@ -272,7 +272,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="mpu60x0__i2c_8h_source.html#l00063">63</a> of file <a class="el" href="mpu60x0__i2c_8h_source.html">mpu60x0_i2c.h</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__apogee_8c_source.html#l00102">imu_apogee_event()</a>, <a class="el" href="imu__drotek__10dof__v2_8c_source.html#l00121">imu_drotek2_event()</a>, <a class="el" href="imu__krooz_8c_source.html#l00140">imu_krooz_event()</a>, and <a class="el" href="mpu60x0__i2c_8c_source.html#l00081">mpu60x0_i2c_event()</a>.</p>
+<p>Referenced by <a class="el" href="imu__apogee_8c_source.html#l00102">imu_apogee_event()</a>, <a class="el" href="imu__drotek__10dof__v2_8c_source.html#l00121">imu_drotek2_event()</a>, <a class="el" href="imu__krooz_8c_source.html#l00140">imu_krooz_event()</a>, <a class="el" href="imu__navstik_8c_source.html#l00112">imu_navstik_event()</a>, and <a class="el" href="mpu60x0__i2c_8c_source.html#l00081">mpu60x0_i2c_event()</a>.</p>
 
 </div>
 </div>
@@ -323,7 +323,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="mpu60x0__i2c_8h_source.html#l00059">59</a> of file <a class="el" href="mpu60x0__i2c_8h_source.html">mpu60x0_i2c.h</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__apogee_8c_source.html#l00102">imu_apogee_event()</a>, <a class="el" href="imu__drotek__10dof__v2_8c_source.html#l00121">imu_drotek2_event()</a>, <a class="el" href="imu__krooz_8c_source.html#l00140">imu_krooz_event()</a>, and <a class="el" href="mpu60x0__i2c_8c_source.html#l00081">mpu60x0_i2c_event()</a>.</p>
+<p>Referenced by <a class="el" href="imu__apogee_8c_source.html#l00102">imu_apogee_event()</a>, <a class="el" href="imu__drotek__10dof__v2_8c_source.html#l00121">imu_drotek2_event()</a>, <a class="el" href="imu__krooz_8c_source.html#l00140">imu_krooz_event()</a>, <a class="el" href="imu__navstik_8c_source.html#l00112">imu_navstik_event()</a>, and <a class="el" href="mpu60x0__i2c_8c_source.html#l00081">mpu60x0_i2c_event()</a>.</p>
 
 </div>
 </div>
@@ -336,7 +336,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structMpu60x0__I2c.html">Mpu60x0_I2c</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:01:14 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:01:14 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

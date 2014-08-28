@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('ahrs__int__utils_8h_source.html','');}
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="comment">//  sphi_ctheta * imu.mag.y +</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="comment">//  cphi_ctheta * imu.mag.z;</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="comment">//  float m_psi = -atan2(me, mn);</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> mag_dec = atan2(-<a class="code" href="ahrs__magnetic__field__model_8h.html#a2ea5deffc7e04c9f558a4d797425b145">AHRS_H_Y</a>, <a class="code" href="ahrs__magnetic__field__model_8h.html#a215f39832bbeb7ae9f2c1761d391ff36">AHRS_H_X</a>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> mag_dec = atan2(-AHRS_H_Y, AHRS_H_X);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> fpsi = atan2f(-me, mn) - mag_dec;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  e-&gt;<a class="code" href="structInt32Eulers.html#a825be67fd89b9a420fda84770e2b11ae" title="in rad with INT32_ANGLE_FRAC">psi</a> = <a class="code" href="pprz__algebra__int_8h.html#a488bd4dc490bfad7ff4aa4eb489c193e">ANGLE_BFP_OF_REAL</a>(fpsi);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <a class="code" href="pprz__algebra__int_8h.html#afafafd344e879ac5e7177086414524f3">INT32_ANGLE_NORMALIZE</a>(e-&gt;<a class="code" href="structInt32Eulers.html#a825be67fd89b9a420fda84770e2b11ae" title="in rad with INT32_ANGLE_FRAC">psi</a>);</div>
@@ -197,7 +197,7 @@ $(document).ready(function(){initNavTree('ahrs__int__utils_8h_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_46fef683200e96ccf1a2f608d90c4a2d.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__int__utils_8h.html">ahrs_int_utils.h</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:00:45 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:00:45 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

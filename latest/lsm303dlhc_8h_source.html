@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -175,16 +175,16 @@ $(document).ready(function(){initNavTree('lsm303dlhc_8h_source.html','');});
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">union </span>{</div>
 <div class="line"><a name="l00075"></a><span class="lineno"><a class="code" href="structLsm303dlhc.html#ac382ae73b99728bbc43e32a1750ddb70">   75</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="lsm303dlhc_8h.html#acfdcef8558d30510f691dc2670655e24" title="config status states">Lsm303dlhcAccConfStatus</a> <a class="code" href="structLsm303dlhc.html#ac382ae73b99728bbc43e32a1750ddb70" title="init status">acc</a>; </div>
 <div class="line"><a name="l00076"></a><span class="lineno"><a class="code" href="structLsm303dlhc.html#a8260cee47734173eae5444c131683f6e">   76</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="lsm303dlhc_8h.html#ab3e05e02f1a8eb7e4d3bfae1c18c9ea3" title="config status states">Lsm303dlhcMagConfStatus</a> <a class="code" href="structLsm303dlhc.html#a8260cee47734173eae5444c131683f6e" title="init status">mag</a>; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  } <a class="code" href="structLsm303dlhc.html#a74429b9f036dcf2286387e396d67f671">init_status</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  } <a class="code" href="structLsm303dlhc.html#a15c3cbf30b5269542ac235f42561d681">init_status</a>;</div>
 <div class="line"><a name="l00078"></a><span class="lineno"><a class="code" href="structLsm303dlhc.html#a1277cd2f1841cddee3587a65a342b85c">   78</a></span>&#160;  <span class="keyword">volatile</span> bool_t <a class="code" href="structLsm303dlhc.html#a1277cd2f1841cddee3587a65a342b85c" title="data ready flag">data_available</a>;     </div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">union </span>{</div>
 <div class="line"><a name="l00080"></a><span class="lineno"><a class="code" href="structLsm303dlhc.html#ab424a0de79ec35bde955d5ef11de3020">   80</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structInt16Vect3.html">Int16Vect3</a> <a class="code" href="structLsm303dlhc.html#ab424a0de79ec35bde955d5ef11de3020" title="data vector in acc coordinate system">vect</a>;           </div>
 <div class="line"><a name="l00081"></a><span class="lineno"><a class="code" href="structLsm303dlhc.html#ae94a4ee6972af599419f10966dabb5d4">   81</a></span>&#160;    <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> <a class="code" href="structLsm303dlhc.html#ae94a4ee6972af599419f10966dabb5d4" title="data values accessible by channel index">value</a>[3];                 </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  } <a class="code" href="structLsm303dlhc.html#a1e9902d52b2ed681d29c76c189f9221d">data</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  } <a class="code" href="structLsm303dlhc.html#a1985a63a443a12a095975b1ebd6d1b75">data</a>;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keyword">union </span>{</div>
 <div class="line"><a name="l00084"></a><span class="lineno"><a class="code" href="structLsm303dlhc.html#a427c03b02e9ef09daf73f275d2765d4a">   84</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structLsm303dlhcAccConfig.html">Lsm303dlhcAccConfig</a> <a class="code" href="structLsm303dlhc.html#ac382ae73b99728bbc43e32a1750ddb70" title="init status">acc</a>;</div>
 <div class="line"><a name="l00085"></a><span class="lineno"><a class="code" href="structLsm303dlhc.html#ac69a145df8fd9ce16dd21286de8f0b3d">   85</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structLsm303dlhcMagConfig.html">Lsm303dlhcMagConfig</a> <a class="code" href="structLsm303dlhc.html#a8260cee47734173eae5444c131683f6e" title="init status">mag</a>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  } <a class="code" href="structLsm303dlhc.html#a6e1e77f2c1fb332ed4a9c22296dbb228">config</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  } <a class="code" href="structLsm303dlhc.html#a7e519d4e97cf75068e4c9a8a8a67a293">config</a>;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
@@ -211,7 +211,7 @@ $(document).ready(function(){initNavTree('lsm303dlhc_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="lsm303dlhc_8h.html">lsm303dlhc.h</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:00:44 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:00:43 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

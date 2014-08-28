@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -135,8 +135,9 @@ $(document).ready(function(){initNavTree('electrical_8c.html','');});
 Macros</h2></td></tr>
 <tr class="memitem:a122d018ddd148a99f19e44723b6c7c49"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="electrical_8c.html#a122d018ddd148a99f19e44723b6c7c49">BAT_CHECKER_DELAY</a>&#160;&#160;&#160;5</td></tr>
 <tr class="memitem:a38f71d2a8af148d19587556e77ce0f58"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="electrical_8c.html#a38f71d2a8af148d19587556e77ce0f58">ELECTRICAL_PERIODIC_FREQ</a>&#160;&#160;&#160;10</td></tr>
+<tr class="memitem:ae718155e6e9f20accaa19604a341f982"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="electrical_8c.html#ae718155e6e9f20accaa19604a341f982">MIN_BAT_LEVEL</a>&#160;&#160;&#160;3</td></tr>
 <tr class="memitem:a3a244669d0d9c86f4339f5d6fe83fdb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="electrical_8c.html#a3a244669d0d9c86f4339f5d6fe83fdb9">VoltageOfAdc</a>(adc)&#160;&#160;&#160;<a class="el" href="yapa__2_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">DefaultVoltageOfAdc</a>(adc)</td></tr>
-<tr class="memitem:a4d130fa14265d4aefded214285df4915"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="electrical_8c.html#a4d130fa14265d4aefded214285df4915">MilliAmpereOfAdc</a>(adc)&#160;&#160;&#160;DefaultMilliAmpereOfAdc(adc)</td></tr>
+<tr class="memitem:a4d130fa14265d4aefded214285df4915"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="electrical_8c.html#a4d130fa14265d4aefded214285df4915">MilliAmpereOfAdc</a>(adc)&#160;&#160;&#160;<a class="el" href="navstik__1_80_8h.html#ae66588cc87259ee96c9b794f74bc6e0d">DefaultMilliAmpereOfAdc</a>(adc)</td></tr>
 <tr class="memitem:ab5b8cca2fda6d0ea38b687fc6737f462"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="electrical_8c.html#ab5b8cca2fda6d0ea38b687fc6737f462">CURRENT_ESTIMATION_NONLINEARITY</a>&#160;&#160;&#160;1.2</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
@@ -165,7 +166,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="electrical_8c_source.html#l00050">50</a> of file <a class="el" href="electrical_8c_source.html">electrical.c</a>.</p>
 
-<p>Referenced by <a class="el" href="electrical_8c_source.html#l00106">electrical_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="electrical_8c_source.html#l00111">electrical_periodic()</a>.</p>
 
 </div>
 </div>
@@ -179,9 +180,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="electrical_8c_source.html#l00082">82</a> of file <a class="el" href="electrical_8c_source.html">electrical.c</a>.</p>
+<p>Definition at line <a class="el" href="electrical_8c_source.html#l00087">87</a> of file <a class="el" href="electrical_8c_source.html">electrical.c</a>.</p>
 
-<p>Referenced by <a class="el" href="electrical_8c_source.html#l00085">electrical_init()</a>.</p>
+<p>Referenced by <a class="el" href="electrical_8c_source.html#l00090">electrical_init()</a>.</p>
 
 </div>
 </div>
@@ -197,7 +198,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="electrical_8c_source.html#l00053">53</a> of file <a class="el" href="electrical_8c_source.html">electrical.c</a>.</p>
 
-<p>Referenced by <a class="el" href="electrical_8c_source.html#l00106">electrical_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="electrical_8c_source.html#l00111">electrical_periodic()</a>.</p>
 
 </div>
 </div>
@@ -210,14 +211,30 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">adc</td><td>)</td>
-          <td>&#160;&#160;&#160;DefaultMilliAmpereOfAdc(adc)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="navstik__1_80_8h.html#ae66588cc87259ee96c9b794f74bc6e0d">DefaultMilliAmpereOfAdc</a>(adc)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="electrical_8c_source.html#l00078">78</a> of file <a class="el" href="electrical_8c_source.html">electrical.c</a>.</p>
+<p>Definition at line <a class="el" href="electrical_8c_source.html#l00083">83</a> of file <a class="el" href="electrical_8c_source.html">electrical.c</a>.</p>
 
-<p>Referenced by <a class="el" href="electrical_8c_source.html#l00106">electrical_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="electrical_8c_source.html#l00111">electrical_periodic()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae718155e6e9f20accaa19604a341f982"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIN_BAT_LEVEL&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="electrical_8c_source.html#l00056">56</a> of file <a class="el" href="electrical_8c_source.html">electrical.c</a>.</p>
+
+<p>Referenced by <a class="el" href="electrical_8c_source.html#l00111">electrical_periodic()</a>.</p>
 
 </div>
 </div>
@@ -235,9 +252,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="electrical_8c_source.html#l00075">75</a> of file <a class="el" href="electrical_8c_source.html">electrical.c</a>.</p>
+<p>Definition at line <a class="el" href="electrical_8c_source.html#l00080">80</a> of file <a class="el" href="electrical_8c_source.html">electrical.c</a>.</p>
 
-<p>Referenced by <a class="el" href="electrical_8c_source.html#l00106">electrical_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="electrical_8c_source.html#l00111">electrical_periodic()</a>.</p>
 
 </div>
 </div>
@@ -256,9 +273,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="electrical_8c_source.html#l00085">85</a> of file <a class="el" href="electrical_8c_source.html">electrical.c</a>.</p>
+<p>Definition at line <a class="el" href="electrical_8c_source.html#l00090">90</a> of file <a class="el" href="electrical_8c_source.html">electrical.c</a>.</p>
 
-<p>References <a class="el" href="lpc21_2mcu__periph_2adc__arch_8c_source.html#l00059">adc_buf_channel()</a>, <a class="el" href="apogee__0_899_8h_source.html#l00115">ADC_CHANNEL_VSUPPLY</a>, <a class="el" href="electrical_8h_source.html#l00053">Electrical::bat_critical</a>, <a class="el" href="electrical_8h_source.html#l00052">Electrical::bat_low</a>, <a class="el" href="electrical_8h_source.html#l00049">Electrical::current</a>, <a class="el" href="electrical_8c_source.html#l00082">CURRENT_ESTIMATION_NONLINEARITY</a>, <a class="el" href="adc_8h_source.html#l00048">DEFAULT_AV_NB_SAMPLE</a>, <a class="el" href="electrical_8h_source.html#l00051">Electrical::energy</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="superbitrf_8c.html#a15df901951d839341d6fd25d3afa6df9">PRINT_CONFIG_VAR()</a>, and <a class="el" href="electrical_8h_source.html#l00048">Electrical::vsupply</a>.</p>
+<p>References <a class="el" href="lpc21_2mcu__periph_2adc__arch_8c_source.html#l00059">adc_buf_channel()</a>, <a class="el" href="navstik__1_80_8h_source.html#l00209">ADC_CHANNEL_CURRENT</a>, <a class="el" href="apogee__0_899_8h_source.html#l00115">ADC_CHANNEL_VSUPPLY</a>, <a class="el" href="electrical_8h_source.html#l00053">Electrical::bat_critical</a>, <a class="el" href="electrical_8h_source.html#l00052">Electrical::bat_low</a>, <a class="el" href="electrical_8h_source.html#l00049">Electrical::current</a>, <a class="el" href="electrical_8c_source.html#l00087">CURRENT_ESTIMATION_NONLINEARITY</a>, <a class="el" href="adc_8h_source.html#l00048">DEFAULT_AV_NB_SAMPLE</a>, <a class="el" href="electrical_8h_source.html#l00051">Electrical::energy</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="subsystems_2datalink_2superbitrf_8c.html#a15df901951d839341d6fd25d3afa6df9">PRINT_CONFIG_VAR()</a>, and <a class="el" href="electrical_8h_source.html#l00048">Electrical::vsupply</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -267,7 +284,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="electrical_8c_ac5e9a56281268bdf6ddec2143b25f16a_cgraph.png" border="0" usemap="#electrical_8c_ac5e9a56281268bdf6ddec2143b25f16a_cgraph" alt=""/></div>
 <map name="electrical_8c_ac5e9a56281268bdf6ddec2143b25f16a_cgraph" id="electrical_8c_ac5e9a56281268bdf6ddec2143b25f16a_cgraph">
-<area shape="rect" id="node3" href="lpc21_2mcu__periph_2adc__arch_8c.html#a289883844d6749adab1cee5aabe41824" title="Registers a buffer to be used to store the specified converted channel Usage:" alt="" coords="169,5,297,33"/><area shape="rect" id="node5" href="superbitrf_8c.html#a15df901951d839341d6fd25d3afa6df9" title="PRINT_CONFIG_VAR" alt="" coords="160,55,307,83"/></map>
+<area shape="rect" id="node3" href="lpc21_2mcu__periph_2adc__arch_8c.html#a289883844d6749adab1cee5aabe41824" title="Registers a buffer to be used to store the specified converted channel Usage:" alt="" coords="169,5,297,33"/><area shape="rect" id="node5" href="subsystems_2datalink_2superbitrf_8c.html#a15df901951d839341d6fd25d3afa6df9" title="PRINT_CONFIG_VAR" alt="" coords="160,55,307,83"/></map>
 </div>
 </p>
 
@@ -287,9 +304,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="electrical_8c_source.html#l00106">106</a> of file <a class="el" href="electrical_8c_source.html">electrical.c</a>.</p>
+<p>Definition at line <a class="el" href="electrical_8c_source.html#l00111">111</a> of file <a class="el" href="electrical_8c_source.html">electrical.c</a>.</p>
 
-<p>References <a class="el" href="electrical_8c_source.html#l00050">BAT_CHECKER_DELAY</a>, <a class="el" href="electrical_8h_source.html#l00053">Electrical::bat_critical</a>, <a class="el" href="electrical_8h_source.html#l00052">Electrical::bat_low</a>, <a class="el" href="commands_8c_source.html#l00030">commands</a>, <a class="el" href="electrical_8h_source.html#l00042">CRITIC_BAT_LEVEL</a>, <a class="el" href="electrical_8h_source.html#l00049">Electrical::current</a>, <a class="el" href="electrical_8c_source.html#l00053">ELECTRICAL_PERIODIC_FREQ</a>, <a class="el" href="electrical_8h_source.html#l00051">Electrical::energy</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="electrical_8h_source.html#l00036">LOW_BAT_LEVEL</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="electrical_8c_source.html#l00078">MilliAmpereOfAdc</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="electrical_8c_source.html#l00075">VoltageOfAdc</a>, and <a class="el" href="electrical_8h_source.html#l00048">Electrical::vsupply</a>.</p>
+<p>References <a class="el" href="electrical_8c_source.html#l00050">BAT_CHECKER_DELAY</a>, <a class="el" href="electrical_8h_source.html#l00053">Electrical::bat_critical</a>, <a class="el" href="electrical_8h_source.html#l00052">Electrical::bat_low</a>, <a class="el" href="commands_8c_source.html#l00030">commands</a>, <a class="el" href="electrical_8h_source.html#l00042">CRITIC_BAT_LEVEL</a>, <a class="el" href="electrical_8h_source.html#l00049">Electrical::current</a>, <a class="el" href="electrical_8c_source.html#l00053">ELECTRICAL_PERIODIC_FREQ</a>, <a class="el" href="electrical_8h_source.html#l00051">Electrical::energy</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="electrical_8h_source.html#l00036">LOW_BAT_LEVEL</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="electrical_8c_source.html#l00083">MilliAmpereOfAdc</a>, <a class="el" href="electrical_8c_source.html#l00056">MIN_BAT_LEVEL</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="electrical_8c_source.html#l00080">VoltageOfAdc</a>, and <a class="el" href="electrical_8h_source.html#l00048">Electrical::vsupply</a>.</p>
 
 </div>
 </div>
@@ -304,7 +321,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="electrical_8c_source.html#l00058">58</a> of file <a class="el" href="electrical_8c_source.html">electrical.c</a>.</p>
+<p>Definition at line <a class="el" href="electrical_8c_source.html#l00063">63</a> of file <a class="el" href="electrical_8c_source.html">electrical.c</a>.</p>
 
 </div>
 </div>
@@ -314,7 +331,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="electrical_8c.html">electrical.c</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:01:07 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:01:07 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

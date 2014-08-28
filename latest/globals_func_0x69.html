@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -364,7 +364,8 @@ $(document).ready(function(){initNavTree('globals_func_0x69.html','');});
 , <a class="el" href="imu__gl1_8h.html#a08db0d7b92f2f359a5a2bc939a197a5f">imu_gl1.h</a>
 </li>
 <li>imu_impl_init()
-: <a class="el" href="imu__ppzuav_8c.html#ad32faae58e391642ec8048cb11011998">imu_ppzuav.c</a>
+: <a class="el" href="imu__nps_8c.html#ad32faae58e391642ec8048cb11011998">imu_nps.c</a>
+, <a class="el" href="imu__ppzuav_8c.html#ad32faae58e391642ec8048cb11011998">imu_ppzuav.c</a>
 , <a class="el" href="imu__px4fmu_8c.html#ad32faae58e391642ec8048cb11011998">imu_px4fmu.c</a>
 , <a class="el" href="imu__um6_8c.html#ad32faae58e391642ec8048cb11011998">imu_um6.c</a>
 , <a class="el" href="imu_8h.html#ad32faae58e391642ec8048cb11011998">imu.h</a>
@@ -388,7 +389,7 @@ $(document).ready(function(){initNavTree('globals_func_0x69.html','');});
 , <a class="el" href="imu__dummy_8c.html#ad32faae58e391642ec8048cb11011998">imu_dummy.c</a>
 , <a class="el" href="imu__gl1_8c.html#ad32faae58e391642ec8048cb11011998">imu_gl1.c</a>
 , <a class="el" href="imu__mpu6000__hmc5883_8c.html#ad32faae58e391642ec8048cb11011998">imu_mpu6000_hmc5883.c</a>
-, <a class="el" href="imu__nps_8c.html#ad32faae58e391642ec8048cb11011998">imu_nps.c</a>
+, <a class="el" href="imu__navstik_8c.html#ad32faae58e391642ec8048cb11011998">imu_navstik.c</a>
 </li>
 <li>imu_init()
 : <a class="el" href="imu_8c.html#a86a06fe7a9831292bd92867da2d12f80">imu.c</a>
@@ -421,6 +422,10 @@ $(document).ready(function(){initNavTree('globals_func_0x69.html','');});
 : <a class="el" href="imu__navgo_8c.html#a090687272e402bae057eb68e39e6218f">imu_navgo.c</a>
 , <a class="el" href="imu__navgo_8h.html#a090687272e402bae057eb68e39e6218f">imu_navgo.h</a>
 </li>
+<li>imu_navstik_event()
+: <a class="el" href="imu__navstik_8c.html#a2ddc38f9314a98d94376d14851bb0bcd">imu_navstik.c</a>
+, <a class="el" href="imu__navstik_8h.html#a2ddc38f9314a98d94376d14851bb0bcd">imu_navstik.h</a>
+</li>
 <li>imu_periodic()
 : <a class="el" href="imu__apogee_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b">imu_apogee.c</a>
 , <a class="el" href="imu__krooz_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b">imu_krooz.c</a>
@@ -441,6 +446,7 @@ $(document).ready(function(){initNavTree('globals_func_0x69.html','');});
 , <a class="el" href="imu__drotek__10dof__v2_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b">imu_drotek_10dof_v2.c</a>
 , <a class="el" href="imu__gl1_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b">imu_gl1.c</a>
 , <a class="el" href="imu__mpu6000__hmc5883_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b">imu_mpu6000_hmc5883.c</a>
+, <a class="el" href="imu__navstik_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b">imu_navstik.c</a>
 , <a class="el" href="imu__nps_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b">imu_nps.c</a>
 , <a class="el" href="imu__ppzuav_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b">imu_ppzuav.c</a>
 , <a class="el" href="imu__px4fmu_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b">imu_px4fmu.c</a>
@@ -463,6 +469,25 @@ $(document).ready(function(){initNavTree('globals_func_0x69.html','');});
 : <a class="el" href="imu__quality__assessment_8c.html#ab28aa669695c89e7f5a92d20dea4a31a">imu_quality_assessment.c</a>
 , <a class="el" href="imu__quality__assessment_8h.html#ab28aa669695c89e7f5a92d20dea4a31a">imu_quality_assessment.h</a>
 </li>
+<li>imu_ResetBodyToImu()
+: <a class="el" href="imu_8h.html#ac9f5713ed33725e176e0501ecbe715a9">imu.h</a>
+</li>
+<li>imu_SetBodyToImuCurrent()
+: <a class="el" href="imu_8h.html#a931916ce562dfa28e02e0a6001dddc43">imu.h</a>
+, <a class="el" href="imu_8c.html#a931916ce562dfa28e02e0a6001dddc43">imu.c</a>
+</li>
+<li>imu_SetBodyToImuPhi()
+: <a class="el" href="imu_8c.html#ac50fba336ca2c337f240bab0db44f64e">imu.c</a>
+, <a class="el" href="imu_8h.html#ac50fba336ca2c337f240bab0db44f64e">imu.h</a>
+</li>
+<li>imu_SetBodyToImuPsi()
+: <a class="el" href="imu_8h.html#a88ec31da12a499ee7b47fe11b4ccfa4e">imu.h</a>
+, <a class="el" href="imu_8c.html#a88ec31da12a499ee7b47fe11b4ccfa4e">imu.c</a>
+</li>
+<li>imu_SetBodyToImuTheta()
+: <a class="el" href="imu_8c.html#a3e25b56c5719a23e494568696083459e">imu.c</a>
+, <a class="el" href="imu_8h.html#a3e25b56c5719a23e494568696083459e">imu.h</a>
+</li>
 <li>imu_umarim_downlink_raw()
 : <a class="el" href="imu__umarim_8c.html#a0b13fa285b5a868bdbbf0a337056381f">imu_umarim.c</a>
 , <a class="el" href="imu__umarim_8h.html#a0b13fa285b5a868bdbbf0a337056381f">imu_umarim.h</a>
@@ -472,42 +497,43 @@ $(document).ready(function(){initNavTree('globals_func_0x69.html','');});
 , <a class="el" href="imu__umarim_8h.html#a01860ce0d2bbd0db6c993e609c0745de">imu_umarim.h</a>
 </li>
 <li>ImuEvent()
-: <a class="el" href="imu__ppzuav_8h.html#a9d95db588addd0a03f6e7e749fbb032a">imu_ppzuav.h</a>
-, <a class="el" href="imu__ardrone2__sdk_8h.html#a9d95db588addd0a03f6e7e749fbb032a">imu_ardrone2_sdk.h</a>
-, <a class="el" href="imu__krooz__memsic_8h.html#a9d95db588addd0a03f6e7e749fbb032a">imu_krooz_memsic.h</a>
-, <a class="el" href="imu__apogee_8h.html#a9d95db588addd0a03f6e7e749fbb032a">imu_apogee.h</a>
+: <a class="el" href="ahrs__gx3_8h.html#a9d95db588addd0a03f6e7e749fbb032a">ahrs_gx3.h</a>
+, <a class="el" href="imu__aspirin__i2c_8h.html#a9d95db588addd0a03f6e7e749fbb032a">imu_aspirin_i2c.h</a>
 , <a class="el" href="imu__krooz_8h.html#a9d95db588addd0a03f6e7e749fbb032a">imu_krooz.h</a>
+, <a class="el" href="imu__apogee_8h.html#a9d95db588addd0a03f6e7e749fbb032a">imu_apogee.h</a>
+, <a class="el" href="imu__krooz__memsic_8h.html#a9d95db588addd0a03f6e7e749fbb032a">imu_krooz_memsic.h</a>
 , <a class="el" href="imu__navgo_8h.html#a9d95db588addd0a03f6e7e749fbb032a">imu_navgo.h</a>
 , <a class="el" href="imu__umarim_8h.html#a9d95db588addd0a03f6e7e749fbb032a">imu_umarim.h</a>
-, <a class="el" href="ahrs__gx3_8h.html#a9d95db588addd0a03f6e7e749fbb032a">ahrs_gx3.h</a>
+, <a class="el" href="imu__ardrone2__sdk_8h.html#a9d95db588addd0a03f6e7e749fbb032a">imu_ardrone2_sdk.h</a>
 , <a class="el" href="imu__aspirin_8h.html#a9d95db588addd0a03f6e7e749fbb032a">imu_aspirin.h</a>
 , <a class="el" href="imu__aspirin__2__spi_8h.html#a9d95db588addd0a03f6e7e749fbb032a">imu_aspirin_2_spi.h</a>
-, <a class="el" href="imu__aspirin__i2c_8h.html#a9d95db588addd0a03f6e7e749fbb032a">imu_aspirin_i2c.h</a>
 , <a class="el" href="imu__b2_8h.html#a9d95db588addd0a03f6e7e749fbb032a">imu_b2.h</a>
 , <a class="el" href="imu__drotek__10dof__v2_8h.html#a9d95db588addd0a03f6e7e749fbb032a">imu_drotek_10dof_v2.h</a>
 , <a class="el" href="imu__gl1_8h.html#a9d95db588addd0a03f6e7e749fbb032a">imu_gl1.h</a>
 , <a class="el" href="imu__mpu6000__hmc5883_8h.html#a9d95db588addd0a03f6e7e749fbb032a">imu_mpu6000_hmc5883.h</a>
+, <a class="el" href="imu__navstik_8h.html#a9d95db588addd0a03f6e7e749fbb032a">imu_navstik.h</a>
+, <a class="el" href="imu__ppzuav_8h.html#a9d95db588addd0a03f6e7e749fbb032a">imu_ppzuav.h</a>
 , <a class="el" href="imu__px4fmu_8h.html#a9d95db588addd0a03f6e7e749fbb032a">imu_px4fmu.h</a>
 </li>
 <li>indexn()
 : <a class="el" href="gsm_8c.html#ae471a4807214d672b57a3fa9773be593">gsm.c</a>
 </li>
 <li>infrared_adc_init()
-: <a class="el" href="subsystems_2sensors_2infrared__adc_8h.html#afd9b914e78df4722702ab0113752a2b0">infrared_adc.h</a>
-, <a class="el" href="infrared__adc_8c.html#afd9b914e78df4722702ab0113752a2b0">infrared_adc.c</a>
+: <a class="el" href="infrared__adc_8c.html#afd9b914e78df4722702ab0113752a2b0">infrared_adc.c</a>
+, <a class="el" href="subsystems_2sensors_2infrared__adc_8h.html#afd9b914e78df4722702ab0113752a2b0">infrared_adc.h</a>
 </li>
 <li>infrared_adc_update()
-: <a class="el" href="infrared__adc_8c.html#a246a1412611e4887b2bd242f67504af2">infrared_adc.c</a>
-, <a class="el" href="subsystems_2sensors_2infrared__adc_8h.html#a246a1412611e4887b2bd242f67504af2">infrared_adc.h</a>
+: <a class="el" href="subsystems_2sensors_2infrared__adc_8h.html#a246a1412611e4887b2bd242f67504af2">infrared_adc.h</a>
+, <a class="el" href="infrared__adc_8c.html#a246a1412611e4887b2bd242f67504af2">infrared_adc.c</a>
 </li>
 <li>infrared_event()
 : <a class="el" href="infrared_8h.html#adb9448639911594432d760f80443b4d7">infrared.h</a>
-, <a class="el" href="infrared__i2c_8c.html#adb9448639911594432d760f80443b4d7">infrared_i2c.c</a>
 , <a class="el" href="infrared__adc_8c.html#adb9448639911594432d760f80443b4d7">infrared_adc.c</a>
+, <a class="el" href="infrared__i2c_8c.html#adb9448639911594432d760f80443b4d7">infrared_i2c.c</a>
 </li>
 <li>infrared_i2c_hor_event()
-: <a class="el" href="infrared__i2c_8c.html#ad7dde081ca03601c0fb01ee054af974b">infrared_i2c.c</a>
-, <a class="el" href="subsystems_2sensors_2infrared__i2c_8h.html#ad7dde081ca03601c0fb01ee054af974b">infrared_i2c.h</a>
+: <a class="el" href="subsystems_2sensors_2infrared__i2c_8h.html#ad7dde081ca03601c0fb01ee054af974b">infrared_i2c.h</a>
+, <a class="el" href="infrared__i2c_8c.html#ad7dde081ca03601c0fb01ee054af974b">infrared_i2c.c</a>
 </li>
 <li>infrared_i2c_init()
 : <a class="el" href="infrared__i2c_8c.html#a5e18041e01cef18e73f61f789f8e97dd">infrared_i2c.c</a>
@@ -518,13 +544,13 @@ $(document).ready(function(){initNavTree('globals_func_0x69.html','');});
 , <a class="el" href="subsystems_2sensors_2infrared__i2c_8h.html#a4fb504c5045b1aad5e46423d467cb5d8">infrared_i2c.h</a>
 </li>
 <li>infrared_i2c_ver_event()
-: <a class="el" href="subsystems_2sensors_2infrared__i2c_8h.html#ab7aba3256c7414ae390fcb4c0b67d700">infrared_i2c.h</a>
-, <a class="el" href="infrared__i2c_8c.html#ab7aba3256c7414ae390fcb4c0b67d700">infrared_i2c.c</a>
+: <a class="el" href="infrared__i2c_8c.html#ab7aba3256c7414ae390fcb4c0b67d700">infrared_i2c.c</a>
+, <a class="el" href="subsystems_2sensors_2infrared__i2c_8h.html#ab7aba3256c7414ae390fcb4c0b67d700">infrared_i2c.h</a>
 </li>
 <li>infrared_init()
-: <a class="el" href="infrared_8h.html#a914de0b4811e25ca619529374d7fe3ba">infrared.h</a>
+: <a class="el" href="infrared__i2c_8c.html#a914de0b4811e25ca619529374d7fe3ba">infrared_i2c.c</a>
 , <a class="el" href="infrared__adc_8c.html#a914de0b4811e25ca619529374d7fe3ba">infrared_adc.c</a>
-, <a class="el" href="infrared__i2c_8c.html#a914de0b4811e25ca619529374d7fe3ba">infrared_i2c.c</a>
+, <a class="el" href="infrared_8h.html#a914de0b4811e25ca619529374d7fe3ba">infrared.h</a>
 </li>
 <li>infrared_struct_init()
 : <a class="el" href="infrared_8c.html#ade4431b989cb32090504093a89a2fdde">infrared.c</a>
@@ -532,16 +558,16 @@ $(document).ready(function(){initNavTree('globals_func_0x69.html','');});
 </li>
 <li>infrared_update()
 : <a class="el" href="infrared__adc_8c.html#a5963ae7bc82246ddba3a441e738db4df">infrared_adc.c</a>
-, <a class="el" href="infrared_8h.html#a5963ae7bc82246ddba3a441e738db4df">infrared.h</a>
 , <a class="el" href="infrared__i2c_8c.html#a5963ae7bc82246ddba3a441e738db4df">infrared_i2c.c</a>
+, <a class="el" href="infrared_8h.html#a5963ae7bc82246ddba3a441e738db4df">infrared.h</a>
 </li>
 <li>init_ap()
-: <a class="el" href="main__ap_8c.html#a0913f0248fbbe56a5ec65e10e36c9f30">main_ap.c</a>
-, <a class="el" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30">main_ap.h</a>
+: <a class="el" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30">main_ap.h</a>
+, <a class="el" href="main__ap_8c.html#a0913f0248fbbe56a5ec65e10e36c9f30">main_ap.c</a>
 </li>
 <li>init_at_com()
-: <a class="el" href="at__com_8c.html#a552cf296aef6d5ec5c940f478cee3549">at_com.c</a>
-, <a class="el" href="at__com_8h.html#a552cf296aef6d5ec5c940f478cee3549">at_com.h</a>
+: <a class="el" href="at__com_8h.html#a552cf296aef6d5ec5c940f478cee3549">at_com.h</a>
+, <a class="el" href="at__com_8c.html#a552cf296aef6d5ec5c940f478cee3549">at_com.c</a>
 </li>
 <li>init_at_config()
 : <a class="el" href="at__com_8c.html#a0737606751acc5dfd094101dac93031a">at_com.c</a>
@@ -567,8 +593,8 @@ $(document).ready(function(){initNavTree('globals_func_0x69.html','');});
 , <a class="el" href="cartography_8c.html#a8a3ba9e357ce33b86c23aa001f430698">cartography.c</a>
 </li>
 <li>init_demo()
-: <a class="el" href="demo__module_8c.html#abd8f6ed0cbc5b988ab7fe8eccd00895e">demo_module.c</a>
-, <a class="el" href="demo__module_8h.html#abd8f6ed0cbc5b988ab7fe8eccd00895e">demo_module.h</a>
+: <a class="el" href="demo__module_8h.html#abd8f6ed0cbc5b988ab7fe8eccd00895e">demo_module.h</a>
+, <a class="el" href="demo__module_8c.html#abd8f6ed0cbc5b988ab7fe8eccd00895e">demo_module.c</a>
 </li>
 <li>init_fbw()
 : <a class="el" href="main__fbw_8c.html#ad86b7fe577a2414df2c7a5a9222aa45a">main_fbw.c</a>
@@ -592,12 +618,12 @@ $(document).ready(function(){initNavTree('globals_func_0x69.html','');});
 : <a class="el" href="median__filter_8h.html#ad880c294f1bee96a283cf9c9511658a3">median_filter.h</a>
 </li>
 <li>init_mf_daq()
-: <a class="el" href="meteo__france__DAQ_8c.html#abf2a8b9cc259a9b8a1d99b673ad183d2">meteo_france_DAQ.c</a>
-, <a class="el" href="meteo__france__DAQ_8h.html#abf2a8b9cc259a9b8a1d99b673ad183d2">meteo_france_DAQ.h</a>
+: <a class="el" href="meteo__france__DAQ_8h.html#abf2a8b9cc259a9b8a1d99b673ad183d2">meteo_france_DAQ.h</a>
+, <a class="el" href="meteo__france__DAQ_8c.html#abf2a8b9cc259a9b8a1d99b673ad183d2">meteo_france_DAQ.c</a>
 </li>
 <li>init_openlog()
-: <a class="el" href="openlog_8c.html#afbf30ba91f5cd840b5d53739ab75fad8">openlog.c</a>
-, <a class="el" href="openlog_8h.html#afbf30ba91f5cd840b5d53739ab75fad8">openlog.h</a>
+: <a class="el" href="openlog_8h.html#afbf30ba91f5cd840b5d53739ab75fad8">openlog.h</a>
+, <a class="el" href="openlog_8c.html#afbf30ba91f5cd840b5d53739ab75fad8">openlog.c</a>
 </li>
 <li>init_photogrammetry_calculator()
 : <a class="el" href="photogrammetry__calculator_8h.html#a57cb602a707e9632e91510b358e2646b">photogrammetry_calculator.h</a>
@@ -610,19 +636,19 @@ $(document).ready(function(){initNavTree('globals_func_0x69.html','');});
 : <a class="el" href="low__pass__filter_8h.html#a71eaaf92d7c19c9c82578ff686af3332">low_pass_filter.h</a>
 </li>
 <li>init_sysmon()
-: <a class="el" href="sys__mon_8c.html#acb5edde6b801b04f23b2c89bd0117cde">sys_mon.c</a>
-, <a class="el" href="sys__mon_8h.html#acb5edde6b801b04f23b2c89bd0117cde">sys_mon.h</a>
+: <a class="el" href="sys__mon_8h.html#acb5edde6b801b04f23b2c89bd0117cde">sys_mon.h</a>
+, <a class="el" href="sys__mon_8c.html#acb5edde6b801b04f23b2c89bd0117cde">sys_mon.c</a>
 </li>
 <li>ins_configure()
 : <a class="el" href="ins__vn100_8c.html#a78e5c992e41a5e0983748ef1970c3420">ins_vn100.c</a>
 </li>
 <li>ins_init()
-: <a class="el" href="ins__gps__passthrough__utm_8c.html#abf3028c2ada542781b8a5e1eb20c17ce">ins_gps_passthrough_utm.c</a>
+: <a class="el" href="ins__float__invariant_8c.html#a60bd57b621acfc0f5da27e17395d8d23">ins_float_invariant.c</a>
 , <a class="el" href="ins_8h.html#abf3028c2ada542781b8a5e1eb20c17ce">ins.h</a>
 , <a class="el" href="ins__int_8c.html#abf3028c2ada542781b8a5e1eb20c17ce">ins_int.c</a>
 , <a class="el" href="ins__ardrone2_8c.html#a60bd57b621acfc0f5da27e17395d8d23">ins_ardrone2.c</a>
+, <a class="el" href="ins__gps__passthrough__utm_8c.html#abf3028c2ada542781b8a5e1eb20c17ce">ins_gps_passthrough_utm.c</a>
 , <a class="el" href="ins__gps__passthrough_8c.html#abf3028c2ada542781b8a5e1eb20c17ce">ins_gps_passthrough.c</a>
-, <a class="el" href="ins__float__invariant_8c.html#a60bd57b621acfc0f5da27e17395d8d23">ins_float_invariant.c</a>
 , <a class="el" href="ins__alt__float_8c.html#abf3028c2ada542781b8a5e1eb20c17ce">ins_alt_float.c</a>
 </li>
 <li>ins_init_origin_from_flightplan()
@@ -632,53 +658,53 @@ $(document).ready(function(){initNavTree('globals_func_0x69.html','');});
 : <a class="el" href="ins__int_8c.html#a906e42c3bdc95d6fa78d129fbf20719e">ins_int.c</a>
 </li>
 <li>ins_periodic()
-: <a class="el" href="ins__ardrone2_8c.html#acb548b510075b086cc7cc5e2d80b3a71">ins_ardrone2.c</a>
+: <a class="el" href="ins__int_8c.html#acb548b510075b086cc7cc5e2d80b3a71">ins_int.c</a>
 , <a class="el" href="ins_8c.html#a493d4f0a956a57455932e5ac2be4070f">ins.c</a>
-, <a class="el" href="ins__gps__passthrough_8c.html#acb548b510075b086cc7cc5e2d80b3a71">ins_gps_passthrough.c</a>
 , <a class="el" href="ins_8h.html#acb548b510075b086cc7cc5e2d80b3a71">ins.h</a>
-, <a class="el" href="ins__int_8c.html#acb548b510075b086cc7cc5e2d80b3a71">ins_int.c</a>
+, <a class="el" href="ins__ardrone2_8c.html#acb548b510075b086cc7cc5e2d80b3a71">ins_ardrone2.c</a>
+, <a class="el" href="ins__gps__passthrough_8c.html#acb548b510075b086cc7cc5e2d80b3a71">ins_gps_passthrough.c</a>
 </li>
 <li>ins_propagate()
-: <a class="el" href="ins_8c.html#a4bc11550f8c2f2630c1e7daeb71c6036">ins.c</a>
-, <a class="el" href="ins__ardrone2_8c.html#a77b5ba9f198b91b698062cc0dc0c953d">ins_ardrone2.c</a>
+: <a class="el" href="ins__ardrone2_8c.html#a77b5ba9f198b91b698062cc0dc0c953d">ins_ardrone2.c</a>
 , <a class="el" href="ins_8h.html#a84f7fd94669bc73e048c3926a27fd3aa">ins.h</a>
+, <a class="el" href="ins_8c.html#a4bc11550f8c2f2630c1e7daeb71c6036">ins.c</a>
 , <a class="el" href="ins__int_8c.html#a84f7fd94669bc73e048c3926a27fd3aa">ins_int.c</a>
 </li>
 <li>ins_reset_altitude_ref()
-: <a class="el" href="ins__gps__passthrough_8c.html#aa389e650ab7aa5a7f4650afde6358d86">ins_gps_passthrough.c</a>
-, <a class="el" href="ins__gps__passthrough__utm_8c.html#aa389e650ab7aa5a7f4650afde6358d86">ins_gps_passthrough_utm.c</a>
-, <a class="el" href="ins__alt__float_8c.html#aa389e650ab7aa5a7f4650afde6358d86">ins_alt_float.c</a>
+: <a class="el" href="ins__float__invariant_8c.html#aa389e650ab7aa5a7f4650afde6358d86">ins_float_invariant.c</a>
 , <a class="el" href="ins__int_8c.html#aa389e650ab7aa5a7f4650afde6358d86">ins_int.c</a>
-, <a class="el" href="ins__float__invariant_8c.html#aa389e650ab7aa5a7f4650afde6358d86">ins_float_invariant.c</a>
+, <a class="el" href="ins__alt__float_8c.html#aa389e650ab7aa5a7f4650afde6358d86">ins_alt_float.c</a>
+, <a class="el" href="ins__gps__passthrough__utm_8c.html#aa389e650ab7aa5a7f4650afde6358d86">ins_gps_passthrough_utm.c</a>
 , <a class="el" href="ins__ardrone2_8c.html#aa389e650ab7aa5a7f4650afde6358d86">ins_ardrone2.c</a>
 , <a class="el" href="ins_8c.html#ae5812d701519ce3ab06eb1a7315cf4c3">ins.c</a>
 , <a class="el" href="ins_8h.html#aa389e650ab7aa5a7f4650afde6358d86">ins.h</a>
+, <a class="el" href="ins__gps__passthrough_8c.html#aa389e650ab7aa5a7f4650afde6358d86">ins_gps_passthrough.c</a>
 </li>
 <li>ins_reset_local_origin()
-: <a class="el" href="ins__float__invariant_8c.html#a14cb66a86c67d8b9216a8c12f58c311b">ins_float_invariant.c</a>
-, <a class="el" href="ins_8h.html#a14cb66a86c67d8b9216a8c12f58c311b">ins.h</a>
-, <a class="el" href="ins_8c.html#a85e5ab8dd68db02c9d4120a1151a0c34">ins.c</a>
-, <a class="el" href="ins__int_8c.html#a14cb66a86c67d8b9216a8c12f58c311b">ins_int.c</a>
-, <a class="el" href="ins__gps__passthrough__utm_8c.html#a14cb66a86c67d8b9216a8c12f58c311b">ins_gps_passthrough_utm.c</a>
-, <a class="el" href="ins__alt__float_8c.html#a14cb66a86c67d8b9216a8c12f58c311b">ins_alt_float.c</a>
+: <a class="el" href="ins__gps__passthrough__utm_8c.html#a14cb66a86c67d8b9216a8c12f58c311b">ins_gps_passthrough_utm.c</a>
+, <a class="el" href="ins__float__invariant_8c.html#a14cb66a86c67d8b9216a8c12f58c311b">ins_float_invariant.c</a>
 , <a class="el" href="ins__gps__passthrough_8c.html#a14cb66a86c67d8b9216a8c12f58c311b">ins_gps_passthrough.c</a>
+, <a class="el" href="ins__int_8c.html#a14cb66a86c67d8b9216a8c12f58c311b">ins_int.c</a>
+, <a class="el" href="ins_8c.html#a85e5ab8dd68db02c9d4120a1151a0c34">ins.c</a>
+, <a class="el" href="ins_8h.html#a14cb66a86c67d8b9216a8c12f58c311b">ins.h</a>
 , <a class="el" href="ins__ardrone2_8c.html#a14cb66a86c67d8b9216a8c12f58c311b">ins_ardrone2.c</a>
+, <a class="el" href="ins__alt__float_8c.html#a14cb66a86c67d8b9216a8c12f58c311b">ins_alt_float.c</a>
 </li>
 <li>ins_reset_utm_zone()
-: <a class="el" href="ins_8c.html#af108226ec7957a145cb2c57ab14e6da7">ins.c</a>
-, <a class="el" href="ins_8h.html#acef690805a610864d3aa76b10d138298">ins.h</a>
+: <a class="el" href="ins_8h.html#acef690805a610864d3aa76b10d138298">ins.h</a>
+, <a class="el" href="ins_8c.html#af108226ec7957a145cb2c57ab14e6da7">ins.c</a>
 </li>
 <li>ins_update_from_vff()
 : <a class="el" href="ins__int_8c.html#a1c58640eca6d3495200de79b4daf134c">ins_int.c</a>
 </li>
 <li>ins_update_gps()
 : <a class="el" href="ins_8c.html#adc5fc48a6db5c02c08225793925c1aca">ins.c</a>
-, <a class="el" href="ins_8h.html#aacc25a507c5c24309fc37b1f806f5d2b">ins.h</a>
-, <a class="el" href="ins__alt__float_8c.html#aacc25a507c5c24309fc37b1f806f5d2b">ins_alt_float.c</a>
+, <a class="el" href="ins__ardrone2_8c.html#aacc25a507c5c24309fc37b1f806f5d2b">ins_ardrone2.c</a>
 , <a class="el" href="ins__int_8c.html#aacc25a507c5c24309fc37b1f806f5d2b">ins_int.c</a>
 , <a class="el" href="ins__gps__passthrough_8c.html#aacc25a507c5c24309fc37b1f806f5d2b">ins_gps_passthrough.c</a>
+, <a class="el" href="ins__alt__float_8c.html#aacc25a507c5c24309fc37b1f806f5d2b">ins_alt_float.c</a>
+, <a class="el" href="ins_8h.html#aacc25a507c5c24309fc37b1f806f5d2b">ins.h</a>
 , <a class="el" href="ins__gps__passthrough__utm_8c.html#aacc25a507c5c24309fc37b1f806f5d2b">ins_gps_passthrough_utm.c</a>
-, <a class="el" href="ins__ardrone2_8c.html#aacc25a507c5c24309fc37b1f806f5d2b">ins_ardrone2.c</a>
 </li>
 <li>intercept_two_lines()
 : <a class="el" href="nav__survey__polygon_8c.html#ab33fa73b96cf4ab7ddcf6c25fc84531d">nav_survey_polygon.c</a>
@@ -700,23 +726,23 @@ $(document).ready(function(){initNavTree('globals_func_0x69.html','');});
 , <a class="el" href="sim__ir_8c.html#a81e0ed18d453a87b0260260516565713">sim_ir.c</a>
 </li>
 <li>ir_mlx_crc()
-: <a class="el" href="ir__mlx_8h.html#abec14daa20f3cc4623a14a5a3d9d67f0">ir_mlx.h</a>
-, <a class="el" href="ir__mlx_8c.html#abec14daa20f3cc4623a14a5a3d9d67f0">ir_mlx.c</a>
+: <a class="el" href="ir__mlx_8c.html#abec14daa20f3cc4623a14a5a3d9d67f0">ir_mlx.c</a>
+, <a class="el" href="ir__mlx_8h.html#abec14daa20f3cc4623a14a5a3d9d67f0">ir_mlx.h</a>
 </li>
 <li>ir_mlx_event()
-: <a class="el" href="ir__mlx_8h.html#a0097058c5ba263b0ba9c61611ab05b65">ir_mlx.h</a>
-, <a class="el" href="ir__mlx_8c.html#a0097058c5ba263b0ba9c61611ab05b65">ir_mlx.c</a>
+: <a class="el" href="ir__mlx_8c.html#a0097058c5ba263b0ba9c61611ab05b65">ir_mlx.c</a>
+, <a class="el" href="ir__mlx_8h.html#a0097058c5ba263b0ba9c61611ab05b65">ir_mlx.h</a>
 </li>
 <li>ir_mlx_init()
 : <a class="el" href="ir__mlx_8c.html#a49e78943609681665f3b25d276746fba">ir_mlx.c</a>
 , <a class="el" href="ir__mlx_8h.html#a49e78943609681665f3b25d276746fba">ir_mlx.h</a>
 </li>
 <li>ir_mlx_periodic()
-: <a class="el" href="ir__mlx_8h.html#a04ee1c3eac1d77cc60f05955f5f4e5f2">ir_mlx.h</a>
-, <a class="el" href="ir__mlx_8c.html#a04ee1c3eac1d77cc60f05955f5f4e5f2">ir_mlx.c</a>
+: <a class="el" href="ir__mlx_8c.html#a04ee1c3eac1d77cc60f05955f5f4e5f2">ir_mlx.c</a>
+, <a class="el" href="ir__mlx_8h.html#a04ee1c3eac1d77cc60f05955f5f4e5f2">ir_mlx.h</a>
 </li>
 <li>isometric_latitude_d()
-: <a class="el" href="pprz__geodetic__double_8c.html#a4e6981a579464b9dcb9a7ea51bd184b0">pprz_geodetic_double.c</a>
+: <a class="el" href="pprz__geodetic__double_8c.html#a452644052cad875a589f76a4d18e6d0f">pprz_geodetic_double.c</a>
 </li>
 <li>isometric_latitude_f()
 : <a class="el" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea">pprz_geodetic_float.c</a>
@@ -749,8 +775,8 @@ $(document).ready(function(){initNavTree('globals_func_0x69.html','');});
 : <a class="el" href="itg3200_8c.html#afe8ddf75a27aa350a6270539e5fabd0c">itg3200.c</a>
 </li>
 <li>itg3200_set_default_config()
-: <a class="el" href="itg3200_8c.html#afb54551377578d676facc80c71379182">itg3200.c</a>
-, <a class="el" href="itg3200_8h.html#aa09b37def29f4a21a1aa1f1ebeec3170">itg3200.h</a>
+: <a class="el" href="itg3200_8h.html#aa09b37def29f4a21a1aa1f1ebeec3170">itg3200.h</a>
+, <a class="el" href="itg3200_8c.html#afb54551377578d676facc80c71379182">itg3200.c</a>
 </li>
 <li>itg3200_start_configure()
 : <a class="el" href="itg3200_8c.html#a37fd9870e73caee0513811101150ae87">itg3200.c</a>
@@ -762,7 +788,7 @@ $(document).ready(function(){initNavTree('globals_func_0x69.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon May 26 2014 16:01:23 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:01:23 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('sim__gps_8c_source.html','');});
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  lla_f.<a class="code" href="structLlaCoor__f.html#a03499a16d55f4a55a7c1d5fe7c86ff7b" title="in meters above WGS84 reference ellipsoid">alt</a> = Double_val(a);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  utm_f.<a class="code" href="structUtmCoor__f.html#a86adc8b9ebb389f4716c6c569a0b5d91" title="UTM zone number.">zone</a> = <a class="code" href="common__nav_8c.html#a66bdefcf7a79ffd01863bc4057e2bf5a">nav_utm_zone0</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd">utm_of_lla_f</a>(&amp;utm_f, &amp;lla_f);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="pprz__geodetic__int_8h.html#a4c14cc47f37a035741cd921791b2a436">LLA_BFP_OF_REAL</a>(<a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#a298552f8926fd925f8c94bbeeca1dc5c" title="position in LLA (lat,lon: rad*1e7; alt: mm over ellipsoid)">lla_pos</a>, lla_f);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="pprz__geodetic__int_8h.html#a4c14cc47f37a035741cd921791b2a436">LLA_BFP_OF_REAL</a>(<a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#a298552f8926fd925f8c94bbeeca1dc5c" title="position in LLA (lat,lon: deg*1e7; alt: mm over ellipsoid)">lla_pos</a>, lla_f);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#a2cf3685a890a6200b334b2c399102ffa" title="position in UTM (north,east: cm; alt: mm over ellipsoid)">utm_pos</a>.<a class="code" href="structUtmCoor__i.html#a93a85f5eec8041c8b6e8bcef4b977de5" title="in centimeters">east</a> = utm_f.<a class="code" href="structUtmCoor__f.html#ac734d9cc1b4426967f32055e68bc475b" title="in meters">east</a>*100;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#a2cf3685a890a6200b334b2c399102ffa" title="position in UTM (north,east: cm; alt: mm over ellipsoid)">utm_pos</a>.<a class="code" href="structUtmCoor__i.html#af50ae798f5164c2e68d0ed0129d5d6dc" title="in centimeters">north</a> = utm_f.<a class="code" href="structUtmCoor__f.html#adb6dc0e434c6c6de1806b6b14de2f2ae" title="in meters">north</a>*100;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#a2cf3685a890a6200b334b2c399102ffa" title="position in UTM (north,east: cm; alt: mm over ellipsoid)">utm_pos</a>.<a class="code" href="structUtmCoor__i.html#a6d4bf413c00434d016a1e35ae4d1cc86" title="UTM zone number.">zone</a> = <a class="code" href="common__nav_8c.html#a66bdefcf7a79ffd01863bc4057e2bf5a">nav_utm_zone0</a>;</div>
@@ -200,7 +200,7 @@ $(document).ready(function(){initNavTree('sim__gps_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_c87a6d12365ead88e0b90ddbc1b3c9bb.html">sim</a></li><li class="navelem"><a class="el" href="sim__gps_8c.html">sim_gps.c</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:00:37 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:00:37 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

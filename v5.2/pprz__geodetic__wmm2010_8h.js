@@ -1,0 +1,26 @@
+var pprz__geodetic__wmm2010_8h =
+[
+    [ "EXT_COEFF1", "pprz__geodetic__wmm2010_8h.html#ac16936073cc48edb3186d149aafd41f8", null ],
+    [ "EXT_COEFF2", "pprz__geodetic__wmm2010_8h.html#a048c90b39198c639be47377aa4ab14d8", null ],
+    [ "EXT_COEFF3", "pprz__geodetic__wmm2010_8h.html#a5aa3b0a443540fe85d7d89509782970b", null ],
+    [ "GEO_EPOCH", "pprz__geodetic__wmm2010_8h.html#a8d79cd0cafb7b536b1a0dc7741958570", null ],
+    [ "GPS_EPOCH_BEGIN", "pprz__geodetic__wmm2010_8h.html#a62100c08a958cf03a315d5b72a4a3c4a", null ],
+    [ "GPS_EPOCH_DAY", "pprz__geodetic__wmm2010_8h.html#af3038f37acae7201044977df82b7a2dc", null ],
+    [ "GPS_EPOCH_MONTH", "pprz__geodetic__wmm2010_8h.html#a34de3ba9150fa0efc7ec7267a9ff0c14", null ],
+    [ "GPS_EPOCH_YEAR", "pprz__geodetic__wmm2010_8h.html#a1e5bd8bd3b1105c4841c135d8e1ed05d", null ],
+    [ "IEXT", "pprz__geodetic__wmm2010_8h.html#a73c5974d5caf8bd336ecb273356e2a09", null ],
+    [ "MAXCOEFF", "pprz__geodetic__wmm2010_8h.html#a79bd2810e131df6189e69ed5662911d1", null ],
+    [ "MAXDEG", "pprz__geodetic__wmm2010_8h.html#a8521f0d9a069c55226a07fc055408eed", null ],
+    [ "N_MAX_OF_GH", "pprz__geodetic__wmm2010_8h.html#a14fae9a0d6423e6436793d10df70feeb", null ],
+    [ "NMAX_1", "pprz__geodetic__wmm2010_8h.html#ac384eb6e7db2995f6746bd4be6a0513a", null ],
+    [ "NMAX_2", "pprz__geodetic__wmm2010_8h.html#a27c719d328a05f8348ccf8d1961565d0", null ],
+    [ "SECS_IN_YEAR", "pprz__geodetic__wmm2010_8h.html#aedaabe5005511ea2e021e6dda4712276", null ],
+    [ "WEEKS_IN_YEAR", "pprz__geodetic__wmm2010_8h.html#ac2bdc89e52c860bf7f849b81fe4e5db2", null ],
+    [ "WMM2010_FRAC", "pprz__geodetic__wmm2010_8h.html#a355ec7441e99aa2036bd3844ce708fdd", null ],
+    [ "YR_MAX", "pprz__geodetic__wmm2010_8h.html#ac1e70266a00e37b2aafa6fcde7de47e3", null ],
+    [ "YR_MIN", "pprz__geodetic__wmm2010_8h.html#a2d093208ab0191f4e8d97959f47868e1", null ],
+    [ "extrapsh", "pprz__geodetic__wmm2010_8h.html#a57f76a5e5afe004c3b985f11b4f1b13e", null ],
+    [ "mag_calc", "pprz__geodetic__wmm2010_8h.html#a1b31a452ada68c619861da2143d4998e", null ],
+    [ "gh1", "pprz__geodetic__wmm2010_8h.html#a62e18ae35976dd22c318d2edb0796606", null ],
+    [ "gh2", "pprz__geodetic__wmm2010_8h.html#a456afafddc80399b883e504aca3f5329", null ]
+];

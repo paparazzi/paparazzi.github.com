@@ -4,6 +4,7 @@ var nav_8h =
     [ "DistanceSquare", "nav_8h.html#ac72e29d6c97b6ae1fcf957fa59c69215", null ],
     [ "Eight", "nav_8h.html#aefc5a52ca873a9bfb3e1d31a261338a4", null ],
     [ "G", "nav_8h.html#aed9ea78689ecce0b7264c02c7f8a9a54", null ],
+    [ "GetAltRef", "nav_8h.html#a24891072dad1936c21f884d623bda8b4", null ],
     [ "GetPosAlt", "nav_8h.html#a0bb5f5ae29ba1d5968fe7857a304253e", null ],
     [ "GetPosX", "nav_8h.html#ac500a50330425cb4a3054774289bb205", null ],
     [ "GetPosY", "nav_8h.html#a10961173ac6973d795af2f62eb67edca", null ],

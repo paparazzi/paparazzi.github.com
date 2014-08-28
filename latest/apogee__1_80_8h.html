@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -168,7 +168,7 @@ Macros</h2></td></tr>
 <tr class="memitem:a76069dd8b39c52bab9027c808ad505a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a76069dd8b39c52bab9027c808ad505a9">POWER_SWITCH_GPIO</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a68b66ac73be4c836db878a42e1fea3cd">GPIOB</a>,<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a1dfa6e5489489f2797d3d80c718716ce">GPIO12</a></td></tr>
 <tr class="memitem:a0391a78ae3f30e6308e3bef30963823b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a0391a78ae3f30e6308e3bef30963823b">RC_POLARITY_GPIO_PORT</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a68b66ac73be4c836db878a42e1fea3cd">GPIOB</a></td></tr>
 <tr class="memitem:a462afa775c7f9b0844c9c1933976efe0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a462afa775c7f9b0844c9c1933976efe0">RC_POLARITY_GPIO_PIN</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a4b7d9a3961712ddd2a58532f4dcedc1d">GPIO13</a></td></tr>
-<tr class="memitem:aa7699f41fbe105c8f5061cc48a5f6307"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">DEFAULT_ACTUATORS</a>&#160;&#160;&#160;&quot;subsystems/<a class="el" href="lisa__stm__passthrough__main_8c.html#a1b5f92ea9dc3ed3f2f69e24b4f186275">actuators</a>/actuators_pwm.h&quot;</td></tr>
+<tr class="memitem:aa7699f41fbe105c8f5061cc48a5f6307"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">DEFAULT_ACTUATORS</a>&#160;&#160;&#160;&quot;subsystems/actuators/actuators_pwm.h&quot;</td></tr>
 <tr class="memitem:a3fc5f96f074d833b909fd75c92b7d2d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a3fc5f96f074d833b909fd75c92b7d2d0">ActuatorDefaultSet</a>(_x, _y)&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a3e02a20951a8d18ade2922fd0c3fac1f">ActuatorPwmSet</a>(_x,_y)</td></tr>
 <tr class="memitem:ab68f28871d18c17e7e70ae63277d37c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#ab68f28871d18c17e7e70ae63277d37c2">ActuatorsDefaultInit</a>()&#160;&#160;&#160;<a class="el" href="actuators__pwm_8h.html#a695dcfe2d3a05ebc5d7a3fe1d3a78241">ActuatorsPwmInit</a>()</td></tr>
 <tr class="memitem:a0ceadf6a913477832e04b0cb7cd17210"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a0ceadf6a913477832e04b0cb7cd17210">ActuatorsDefaultCommit</a>()&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a318935d8d5191df9ebfcae4a9165c3f4">ActuatorsPwmCommit</a>()</td></tr>
@@ -220,7 +220,6 @@ Macros</h2></td></tr>
 <tr class="memitem:a2d88f89a3faca98ba7076e8d2af2bd95"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a2d88f89a3faca98ba7076e8d2af2bd95">USE_PWM0</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memitem:a158db218ea012f792391e673e553c42f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a158db218ea012f792391e673e553c42f">PWM_SERVO_0</a>&#160;&#160;&#160;0</td></tr>
 <tr class="memitem:a108d63fc5f8721b5cd6a69305c5b50c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a108d63fc5f8721b5cd6a69305c5b50c5">PWM_SERVO_0_TIMER</a>&#160;&#160;&#160;TIM3</td></tr>
-<tr class="memitem:a97c4fa47fe6ce7814820f84ce6b89f04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a97c4fa47fe6ce7814820f84ce6b89f04">PWM_SERVO_0_RCC</a>&#160;&#160;&#160;RCC_GPIOB</td></tr>
 <tr class="memitem:ac77aac75ed1b4e6dbe67bf05e5ebf872"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#ac77aac75ed1b4e6dbe67bf05e5ebf872">PWM_SERVO_0_GPIO</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a68b66ac73be4c836db878a42e1fea3cd">GPIOB</a></td></tr>
 <tr class="memitem:a3345ce1ba187b37f40ed26a0800f17e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a3345ce1ba187b37f40ed26a0800f17e6">PWM_SERVO_0_PIN</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a20f88dbc839eb32b5fec903474befdd7">GPIO0</a></td></tr>
 <tr class="memitem:a4e6538aa8603788884e61d19d6e946ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a4e6538aa8603788884e61d19d6e946ab">PWM_SERVO_0_AF</a>&#160;&#160;&#160;GPIO_AF2</td></tr>
@@ -229,7 +228,6 @@ Macros</h2></td></tr>
 <tr class="memitem:a9e51c24a0d742a25ba8d5e92b6d88d65"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a9e51c24a0d742a25ba8d5e92b6d88d65">USE_PWM1</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memitem:a27260a99d1076f9d0d1cb786860066fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a27260a99d1076f9d0d1cb786860066fd">PWM_SERVO_1</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memitem:ada5c5036a84c550ab1f82c1af0bcd112"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#ada5c5036a84c550ab1f82c1af0bcd112">PWM_SERVO_1_TIMER</a>&#160;&#160;&#160;TIM2</td></tr>
-<tr class="memitem:a0bbe99e95c2c87a02d50464acaa327a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a0bbe99e95c2c87a02d50464acaa327a1">PWM_SERVO_1_RCC</a>&#160;&#160;&#160;RCC_GPIOA</td></tr>
 <tr class="memitem:a86960c3aad4310e9c2963cd5d63e6392"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a86960c3aad4310e9c2963cd5d63e6392">PWM_SERVO_1_GPIO</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#ac485358099728ddae050db37924dd6b7">GPIOA</a></td></tr>
 <tr class="memitem:aa7c130ffea683af1bcc3eb9fbc3aa0ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#aa7c130ffea683af1bcc3eb9fbc3aa0ae">PWM_SERVO_1_PIN</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a88a95401ea8409c83cbda42f31450cd0">GPIO2</a></td></tr>
 <tr class="memitem:a5d184c3828cac2e2a9ba377fe1b1eb35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a5d184c3828cac2e2a9ba377fe1b1eb35">PWM_SERVO_1_AF</a>&#160;&#160;&#160;GPIO_AF1</td></tr>
@@ -238,7 +236,6 @@ Macros</h2></td></tr>
 <tr class="memitem:a3b04e14d6ed72ccdfab217fa4ca9a737"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a3b04e14d6ed72ccdfab217fa4ca9a737">USE_PWM2</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memitem:abdf3f086a6274a36ead16fc540d4a05c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#abdf3f086a6274a36ead16fc540d4a05c">PWM_SERVO_2</a>&#160;&#160;&#160;2</td></tr>
 <tr class="memitem:a50dc24ffa7fff76fe5c0bda8cee432d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a50dc24ffa7fff76fe5c0bda8cee432d6">PWM_SERVO_2_TIMER</a>&#160;&#160;&#160;TIM3</td></tr>
-<tr class="memitem:aea6fe4d2aa928a1f2bcc7b48a9e36269"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#aea6fe4d2aa928a1f2bcc7b48a9e36269">PWM_SERVO_2_RCC</a>&#160;&#160;&#160;RCC_GPIOB</td></tr>
 <tr class="memitem:adca9740b51ca9f7681d3c3f585a57836"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#adca9740b51ca9f7681d3c3f585a57836">PWM_SERVO_2_GPIO</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a68b66ac73be4c836db878a42e1fea3cd">GPIOB</a></td></tr>
 <tr class="memitem:a93588ba4e78f8b0452867afb990c0264"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a93588ba4e78f8b0452867afb990c0264">PWM_SERVO_2_PIN</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a1a96368c99d63b0e715b7e0421f4a209">GPIO5</a></td></tr>
 <tr class="memitem:a0b37c9a3e2fb7498e24a8d9ee681df3b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a0b37c9a3e2fb7498e24a8d9ee681df3b">PWM_SERVO_2_AF</a>&#160;&#160;&#160;GPIO_AF2</td></tr>
@@ -247,7 +244,6 @@ Macros</h2></td></tr>
 <tr class="memitem:ae6eef5f45ba39c8c7c0b65487b2bc35a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#ae6eef5f45ba39c8c7c0b65487b2bc35a">USE_PWM3</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memitem:a342eee19f66562516414e255f3db4cc4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a342eee19f66562516414e255f3db4cc4">PWM_SERVO_3</a>&#160;&#160;&#160;3</td></tr>
 <tr class="memitem:a267f7d6033304596a25d8436e2af4af6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a267f7d6033304596a25d8436e2af4af6">PWM_SERVO_3_TIMER</a>&#160;&#160;&#160;TIM3</td></tr>
-<tr class="memitem:afac93b40aa95277d0a86f7f77382fecc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#afac93b40aa95277d0a86f7f77382fecc">PWM_SERVO_3_RCC</a>&#160;&#160;&#160;RCC_GPIOB</td></tr>
 <tr class="memitem:a3527010cfbb35e98ab1bba9ded57da14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a3527010cfbb35e98ab1bba9ded57da14">PWM_SERVO_3_GPIO</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a68b66ac73be4c836db878a42e1fea3cd">GPIOB</a></td></tr>
 <tr class="memitem:a1f43b2c4250213826a1c0cae49004e3c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a1f43b2c4250213826a1c0cae49004e3c">PWM_SERVO_3_PIN</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a98aeff9c8b3bbdfd119e4ec4d3f615c8">GPIO4</a></td></tr>
 <tr class="memitem:a1af3b0681135879303164ffd4953257b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a1af3b0681135879303164ffd4953257b">PWM_SERVO_3_AF</a>&#160;&#160;&#160;GPIO_AF2</td></tr>
@@ -256,7 +252,6 @@ Macros</h2></td></tr>
 <tr class="memitem:a8899afdbd830cb0b81968fc660291934"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a8899afdbd830cb0b81968fc660291934">USE_PWM4</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memitem:a91f6626bfa49db33e3a3ed5d1bad1cc5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a91f6626bfa49db33e3a3ed5d1bad1cc5">PWM_SERVO_4</a>&#160;&#160;&#160;4</td></tr>
 <tr class="memitem:a01f35b990dd64f2a26f879a0757dea09"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a01f35b990dd64f2a26f879a0757dea09">PWM_SERVO_4_TIMER</a>&#160;&#160;&#160;TIM2</td></tr>
-<tr class="memitem:a60dc9c3bd4bfa7cfdfb20739843e0d8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a60dc9c3bd4bfa7cfdfb20739843e0d8b">PWM_SERVO_4_RCC</a>&#160;&#160;&#160;RCC_GPIOB</td></tr>
 <tr class="memitem:a1d3867d6cc6edaf6fa497dc7a4466f21"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a1d3867d6cc6edaf6fa497dc7a4466f21">PWM_SERVO_4_GPIO</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a68b66ac73be4c836db878a42e1fea3cd">GPIOB</a></td></tr>
 <tr class="memitem:a6404fc57b2246acd54fe7539e29aa9a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a6404fc57b2246acd54fe7539e29aa9a6">PWM_SERVO_4_PIN</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#af3cc04d651b622d5323d74dc2f0999a0">GPIO3</a></td></tr>
 <tr class="memitem:a689995b3ffce4727831c630e0c144b5e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a689995b3ffce4727831c630e0c144b5e">PWM_SERVO_4_AF</a>&#160;&#160;&#160;GPIO_AF1</td></tr>
@@ -265,7 +260,6 @@ Macros</h2></td></tr>
 <tr class="memitem:a402c216e512bc4a39616400af32b7c7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a402c216e512bc4a39616400af32b7c7f">USE_PWM5</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memitem:ae718fb13d2500192855c74e78e6c9c5e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#ae718fb13d2500192855c74e78e6c9c5e">PWM_SERVO_5</a>&#160;&#160;&#160;5</td></tr>
 <tr class="memitem:a788deb07b7c76a809557fa2ee0c416e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a788deb07b7c76a809557fa2ee0c416e5">PWM_SERVO_5_TIMER</a>&#160;&#160;&#160;TIM2</td></tr>
-<tr class="memitem:a49d787c79eb2b60e87edc22a3c85af1f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a49d787c79eb2b60e87edc22a3c85af1f">PWM_SERVO_5_RCC</a>&#160;&#160;&#160;RCC_GPIOA</td></tr>
 <tr class="memitem:a08192a96a6eebfeb1d83f369a8ecb12a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a08192a96a6eebfeb1d83f369a8ecb12a">PWM_SERVO_5_GPIO</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#ac485358099728ddae050db37924dd6b7">GPIOA</a></td></tr>
 <tr class="memitem:a7ca4d622269db724a3af09d3625280ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a7ca4d622269db724a3af09d3625280ee">PWM_SERVO_5_PIN</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#aabc2f003b1495cd03eef1fae31e6847a">GPIO15</a></td></tr>
 <tr class="memitem:a28fc7e79d9148492cf26b91a7a5c0d14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a28fc7e79d9148492cf26b91a7a5c0d14">PWM_SERVO_5_AF</a>&#160;&#160;&#160;GPIO_AF1</td></tr>
@@ -284,8 +278,27 @@ Macros</h2></td></tr>
 <tr class="memitem:aa47f9c9324344581ee684b4bf0834693"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#aa47f9c9324344581ee684b4bf0834693">PPM_GPIO_PORT</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#ac485358099728ddae050db37924dd6b7">GPIOA</a></td></tr>
 <tr class="memitem:ad3ff6dacdc7e56a330541bbbb49911ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#ad3ff6dacdc7e56a330541bbbb49911ce">PPM_GPIO_PIN</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#aa951be0ce26f788049a86e407a70ae20">GPIO8</a></td></tr>
 <tr class="memitem:a9bc80e11e3a131466e4a223108b55b6c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a9bc80e11e3a131466e4a223108b55b6c">PPM_GPIO_AF</a>&#160;&#160;&#160;GPIO_AF1</td></tr>
-<tr class="memitem:a787b5d0dff7658e5e923331317635545"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a787b5d0dff7658e5e923331317635545">SPEKTRUM_BIND_PIN</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#aa951be0ce26f788049a86e407a70ae20">GPIO8</a></td></tr>
-<tr class="memitem:a61f9ceb054741c177baac8a8b0282628"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a61f9ceb054741c177baac8a8b0282628">SPEKTRUM_BIND_PIN_PORT</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#ac485358099728ddae050db37924dd6b7">GPIOA</a></td></tr>
+<tr class="memitem:ab0e09cfcd093956163aaccb0819a955a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#ab0e09cfcd093956163aaccb0819a955a">PWM_INPUT1_TIMER</a>&#160;&#160;&#160;TIM1</td></tr>
+<tr class="memitem:a8838c57ad3a67b5371963cb31183f0d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a8838c57ad3a67b5371963cb31183f0d3">PWM_INPUT1_CHANNEL_PERIOD</a>&#160;&#160;&#160;TIM_IC1</td></tr>
+<tr class="memitem:ab532f788b8d3b9945d3c85bda5cd7582"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#ab532f788b8d3b9945d3c85bda5cd7582">PWM_INPUT1_CHANNEL_DUTY</a>&#160;&#160;&#160;TIM_IC2</td></tr>
+<tr class="memitem:a1e4dda23f41648a28d0e628d151fd0be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a1e4dda23f41648a28d0e628d151fd0be">PWM_INPUT1_TIMER_INPUT</a>&#160;&#160;&#160;TIM_IC_IN_TI1</td></tr>
+<tr class="memitem:a7ae25aa665012615939294aa32fb9512"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a7ae25aa665012615939294aa32fb9512">PWM_INPUT1_SLAVE_TRIG</a>&#160;&#160;&#160;TIM_SMCR_TS_IT1FP1</td></tr>
+<tr class="memitem:ab6eab5b8428b7c6b23edb8d599974485"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#ab6eab5b8428b7c6b23edb8d599974485">PWM_INPUT1_IRQ</a>&#160;&#160;&#160;<a class="el" href="stm32f4__chibios__vectors_8h.html#aa1165591628dac653b24190fa4ba33e9">NVIC_TIM1_CC_IRQ</a></td></tr>
+<tr class="memitem:adc531387649423a46452300dd2cb530f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#adc531387649423a46452300dd2cb530f">PWM_INPUT1_IRQ2</a>&#160;&#160;&#160;<a class="el" href="stm32f4__chibios__vectors_8h.html#a12d17864ae5acdf4bc37d41fe4640696">NVIC_TIM1_UP_TIM10_IRQ</a></td></tr>
+<tr class="memitem:acfa7ab553a4e786fe58337136a5e628e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#acfa7ab553a4e786fe58337136a5e628e">PWM_INPUT1_CC_IE</a>&#160;&#160;&#160;(TIM_DIER_CC1IE | TIM_DIER_CC2IE)</td></tr>
+<tr class="memitem:a4c4ac4255adc99302a7ae7ad828a121c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a4c4ac4255adc99302a7ae7ad828a121c">USE_PWM_INPUT_TIM1</a>&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td></tr>
+<tr class="memitem:aa5e0d0fac0491be02ee61a2a43f789bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#aa5e0d0fac0491be02ee61a2a43f789bc">TIM1_PWM_INPUT_IDX</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a5fadaf9b075f99f0b3573cdd9b35ab21"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a5fadaf9b075f99f0b3573cdd9b35ab21">TIM1_CC_IF_PERIOD</a>&#160;&#160;&#160;TIM_SR_CC1IF</td></tr>
+<tr class="memitem:a880bc48c4436c16e8f402ff84b2073e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a880bc48c4436c16e8f402ff84b2073e9">TIM1_CC_IF_DUTY</a>&#160;&#160;&#160;TIM_SR_CC2IF</td></tr>
+<tr class="memitem:a4e4f1c1886d0b984d1e0bb2c9b811a0d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a4e4f1c1886d0b984d1e0bb2c9b811a0d">TIM1_CCR_PERIOD</a>&#160;&#160;&#160;TIM1_CCR1</td></tr>
+<tr class="memitem:ad3715e7563120a9b7c0d19ace8282eae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#ad3715e7563120a9b7c0d19ace8282eae">TIM1_CCR_DUTY</a>&#160;&#160;&#160;TIM1_CCR2</td></tr>
+<tr class="memitem:a57082fbd09cf4ffb36ede12de84055f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a57082fbd09cf4ffb36ede12de84055f5">PWM_INPUT1_GPIO_PORT</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#ac485358099728ddae050db37924dd6b7">GPIOA</a></td></tr>
+<tr class="memitem:abbd91072dca14f3f3733e4dda439b11e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#abbd91072dca14f3f3733e4dda439b11e">PWM_INPUT1_GPIO_PIN</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#aa951be0ce26f788049a86e407a70ae20">GPIO8</a></td></tr>
+<tr class="memitem:a781fe04b3bde53d0b15b6eefbc1a8794"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a781fe04b3bde53d0b15b6eefbc1a8794">PWM_INPUT1_GPIO_AF</a>&#160;&#160;&#160;GPIO_AF1</td></tr>
+<tr class="memitem:a787b5d0dff7658e5e923331317635545"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a787b5d0dff7658e5e923331317635545">SPEKTRUM_BIND_PIN</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#aabc2f003b1495cd03eef1fae31e6847a">GPIO15</a></td></tr>
+<tr class="memitem:a61f9ceb054741c177baac8a8b0282628"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a61f9ceb054741c177baac8a8b0282628">SPEKTRUM_BIND_PIN_PORT</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a68b66ac73be4c836db878a42e1fea3cd">GPIOB</a></td></tr>
+<tr class="memitem:aacd8bd236c914e45e55a7fe73fa569a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#aacd8bd236c914e45e55a7fe73fa569a9">SPEKTRUM_PRIMARY_BIND_CONF_PORT</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#ac485358099728ddae050db37924dd6b7">GPIOA</a></td></tr>
+<tr class="memitem:a6c01b610a4ef6d66079fcbdc464e6208"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a6c01b610a4ef6d66079fcbdc464e6208">SPEKTRUM_PRIMARY_BIND_CONF_PIN</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#aa951be0ce26f788049a86e407a70ae20">GPIO8</a></td></tr>
 <tr class="memitem:a625a3569ff01571416adcd8d9a3e8878"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a625a3569ff01571416adcd8d9a3e8878">SPEKTRUM_UART2_RCC</a>&#160;&#160;&#160;RCC_USART2</td></tr>
 <tr class="memitem:a72445961e484d65706a9b6d897fd510e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a72445961e484d65706a9b6d897fd510e">SPEKTRUM_UART2_BANK</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#ac485358099728ddae050db37924dd6b7">GPIOA</a></td></tr>
 <tr class="memitem:a709a999c99640032c159e61ceab7797a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee__1_80_8h.html#a709a999c99640032c159e61ceab7797a">SPEKTRUM_UART2_PIN</a>&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#af3cc04d651b622d5323d74dc2f0999a0">GPIO3</a></td></tr>
@@ -468,7 +481,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DEFAULT_ACTUATORS&#160;&#160;&#160;&quot;subsystems/<a class="el" href="lisa__stm__passthrough__main_8c.html#a1b5f92ea9dc3ed3f2f69e24b4f186275">actuators</a>/actuators_pwm.h&quot;</td>
+          <td class="memname">#define DEFAULT_ACTUATORS&#160;&#160;&#160;&quot;subsystems/actuators/actuators_pwm.h&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1163,7 +1176,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00374">374</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00402">402</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1177,7 +1190,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00370">370</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00398">398</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1191,7 +1204,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00371">371</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00399">399</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1205,7 +1218,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00375">375</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00403">403</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1219,7 +1232,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00369">369</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00397">397</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1233,7 +1246,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00372">372</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00400">400</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1247,7 +1260,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00373">373</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00401">401</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1277,7 +1290,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00343">343</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00336">336</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1291,7 +1304,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00344">344</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00337">337</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1305,7 +1318,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00338">338</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00331">331</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1319,7 +1332,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00347">347</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00340">340</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1333,7 +1346,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00346">346</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00339">339</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1347,7 +1360,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00345">345</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00338">338</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1361,7 +1374,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00340">340</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00333">333</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1375,7 +1388,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00341">341</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00334">334</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1389,7 +1402,183 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00339">339</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00332">332</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acfa7ab553a4e786fe58337136a5e628e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PWM_INPUT1_CC_IE&#160;&#160;&#160;(TIM_DIER_CC1IE | TIM_DIER_CC2IE)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00352">352</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+
+<p>Referenced by <a class="el" href="stm32_2mcu__periph_2pwm__input__arch_8c_source.html#l00060">pwm_input_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab532f788b8d3b9945d3c85bda5cd7582"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PWM_INPUT1_CHANNEL_DUTY&#160;&#160;&#160;TIM_IC2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00347">347</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+
+<p>Referenced by <a class="el" href="stm32_2mcu__periph_2pwm__input__arch_8c_source.html#l00060">pwm_input_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8838c57ad3a67b5371963cb31183f0d3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PWM_INPUT1_CHANNEL_PERIOD&#160;&#160;&#160;TIM_IC1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00346">346</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+
+<p>Referenced by <a class="el" href="stm32_2mcu__periph_2pwm__input__arch_8c_source.html#l00060">pwm_input_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a781fe04b3bde53d0b15b6eefbc1a8794"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PWM_INPUT1_GPIO_AF&#160;&#160;&#160;GPIO_AF1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00362">362</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+
+<p>Referenced by <a class="el" href="stm32_2mcu__periph_2pwm__input__arch_8c_source.html#l00060">pwm_input_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abbd91072dca14f3f3733e4dda439b11e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PWM_INPUT1_GPIO_PIN&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#aa951be0ce26f788049a86e407a70ae20">GPIO8</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00361">361</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+
+<p>Referenced by <a class="el" href="stm32_2mcu__periph_2pwm__input__arch_8c_source.html#l00060">pwm_input_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a57082fbd09cf4ffb36ede12de84055f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PWM_INPUT1_GPIO_PORT&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#ac485358099728ddae050db37924dd6b7">GPIOA</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00360">360</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+
+<p>Referenced by <a class="el" href="stm32_2mcu__periph_2pwm__input__arch_8c_source.html#l00060">pwm_input_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab6eab5b8428b7c6b23edb8d599974485"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PWM_INPUT1_IRQ&#160;&#160;&#160;<a class="el" href="stm32f4__chibios__vectors_8h.html#aa1165591628dac653b24190fa4ba33e9">NVIC_TIM1_CC_IRQ</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00350">350</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+
+<p>Referenced by <a class="el" href="stm32_2mcu__periph_2pwm__input__arch_8c_source.html#l00060">pwm_input_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adc531387649423a46452300dd2cb530f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PWM_INPUT1_IRQ2&#160;&#160;&#160;<a class="el" href="stm32f4__chibios__vectors_8h.html#a12d17864ae5acdf4bc37d41fe4640696">NVIC_TIM1_UP_TIM10_IRQ</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00351">351</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+
+<p>Referenced by <a class="el" href="stm32_2mcu__periph_2pwm__input__arch_8c_source.html#l00060">pwm_input_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7ae25aa665012615939294aa32fb9512"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PWM_INPUT1_SLAVE_TRIG&#160;&#160;&#160;TIM_SMCR_TS_IT1FP1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00349">349</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+
+<p>Referenced by <a class="el" href="stm32_2mcu__periph_2pwm__input__arch_8c_source.html#l00060">pwm_input_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab0e09cfcd093956163aaccb0819a955a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PWM_INPUT1_TIMER&#160;&#160;&#160;TIM1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00345">345</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+
+<p>Referenced by <a class="el" href="stm32_2mcu__periph_2pwm__input__arch_8c_source.html#l00060">pwm_input_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1e4dda23f41648a28d0e628d151fd0be"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PWM_INPUT1_TIMER_INPUT&#160;&#160;&#160;TIM_IC_IN_TI1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00348">348</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+
+<p>Referenced by <a class="el" href="stm32_2mcu__periph_2pwm__input__arch_8c_source.html#l00060">pwm_input_init()</a>.</p>
 
 </div>
 </div>
@@ -1417,7 +1606,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00228">228</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00227">227</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1431,7 +1620,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00226">226</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00225">225</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1445,7 +1634,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00229">229</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00228">228</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1459,7 +1648,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00230">230</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00229">229</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1473,21 +1662,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00227">227</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a97c4fa47fe6ce7814820f84ce6b89f04"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PWM_SERVO_0_RCC&#160;&#160;&#160;RCC_GPIOB</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00225">225</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00226">226</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1515,7 +1690,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00239">239</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00238">238</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1529,7 +1704,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00244">244</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00242">242</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1543,7 +1718,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00242">242</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00240">240</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1557,7 +1732,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00245">245</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00243">243</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1571,7 +1746,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00246">246</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00244">244</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1581,20 +1756,6 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define PWM_SERVO_1_PIN&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a88a95401ea8409c83cbda42f31450cd0">GPIO2</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00243">243</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0bbe99e95c2c87a02d50464acaa327a1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PWM_SERVO_1_RCC&#160;&#160;&#160;RCC_GPIOA</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1613,7 +1774,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00240">240</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00239">239</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1627,7 +1788,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00255">255</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00253">253</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1641,7 +1802,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00260">260</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00257">257</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1655,7 +1816,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00258">258</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00255">255</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1669,7 +1830,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00261">261</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00258">258</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1683,7 +1844,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00262">262</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00259">259</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1697,21 +1858,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00259">259</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aea6fe4d2aa928a1f2bcc7b48a9e36269"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PWM_SERVO_2_RCC&#160;&#160;&#160;RCC_GPIOB</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00257">257</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00256">256</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1725,7 +1872,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00256">256</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00254">254</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1739,9 +1886,9 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00271">271</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00268">268</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00154">actuators_pwm_commit()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00150">actuators_pwm_commit()</a>.</p>
 
 </div>
 </div>
@@ -1755,7 +1902,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00276">276</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00272">272</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1769,7 +1916,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00274">274</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00270">270</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1783,7 +1930,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00277">277</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00273">273</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1797,7 +1944,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00278">278</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00274">274</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1811,21 +1958,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00275">275</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="afac93b40aa95277d0a86f7f77382fecc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PWM_SERVO_3_RCC&#160;&#160;&#160;RCC_GPIOB</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00273">273</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00271">271</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1839,7 +1972,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00272">272</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00269">269</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1853,7 +1986,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00287">287</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00283">283</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1867,7 +2000,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00292">292</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00287">287</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1881,7 +2014,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00290">290</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00285">285</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1895,7 +2028,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00293">293</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00288">288</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1909,7 +2042,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00294">294</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00289">289</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1923,21 +2056,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00291">291</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a60dc9c3bd4bfa7cfdfb20739843e0d8b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PWM_SERVO_4_RCC&#160;&#160;&#160;RCC_GPIOB</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00289">289</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00286">286</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1951,7 +2070,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00288">288</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00284">284</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1965,7 +2084,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00303">303</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00298">298</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1979,7 +2098,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00308">308</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00302">302</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -1993,7 +2112,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00306">306</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00300">300</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -2007,7 +2126,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00309">309</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00303">303</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -2021,7 +2140,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00310">310</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00304">304</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -2035,21 +2154,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00307">307</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a49d787c79eb2b60e87edc22a3c85af1f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PWM_SERVO_5_RCC&#160;&#160;&#160;RCC_GPIOA</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00305">305</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00301">301</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -2063,7 +2168,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00304">304</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00299">299</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -2077,7 +2182,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00326">326</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00319">319</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -2091,7 +2196,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00330">330</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00323">323</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -2105,7 +2210,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00331">331</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00324">324</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -2149,7 +2254,7 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00100">100</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
-<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00058">sbus_common_init()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00158">radio_control_impl_init()</a>, and <a class="el" href="sbus__common_8c_source.html#l00058">sbus_common_init()</a>.</p>
 
 </div>
 </div>
@@ -2165,7 +2270,7 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00099">99</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
-<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00058">sbus_common_init()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00158">radio_control_impl_init()</a>, and <a class="el" href="sbus__common_8c_source.html#l00058">sbus_common_init()</a>.</p>
 
 </div>
 </div>
@@ -2179,7 +2284,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00368">368</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00396">396</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -2188,12 +2293,12 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SPEKTRUM_BIND_PIN&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#aa951be0ce26f788049a86e407a70ae20">GPIO8</a></td>
+          <td class="memname">#define SPEKTRUM_BIND_PIN&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#aabc2f003b1495cd03eef1fae31e6847a">GPIO15</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00353">353</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00371">371</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -2202,12 +2307,40 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SPEKTRUM_BIND_PIN_PORT&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#ac485358099728ddae050db37924dd6b7">GPIOA</a></td>
+          <td class="memname">#define SPEKTRUM_BIND_PIN_PORT&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a68b66ac73be4c836db878a42e1fea3cd">GPIOB</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00354">354</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00372">372</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6c01b610a4ef6d66079fcbdc464e6208"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPEKTRUM_PRIMARY_BIND_CONF_PIN&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#aa951be0ce26f788049a86e407a70ae20">GPIO8</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00380">380</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aacd8bd236c914e45e55a7fe73fa569a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPEKTRUM_PRIMARY_BIND_CONF_PORT&#160;&#160;&#160;<a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#ac485358099728ddae050db37924dd6b7">GPIOA</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00379">379</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -2221,7 +2354,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00359">359</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00387">387</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -2235,7 +2368,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00357">357</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00385">385</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -2249,7 +2382,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00362">362</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00390">390</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -2263,7 +2396,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00360">360</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00388">388</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -2277,7 +2410,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00361">361</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00389">389</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -2291,7 +2424,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00358">358</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00386">386</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -2305,7 +2438,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00356">356</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00384">384</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -2432,6 +2565,76 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00144">144</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a880bc48c4436c16e8f402ff84b2073e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIM1_CC_IF_DUTY&#160;&#160;&#160;TIM_SR_CC2IF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00356">356</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5fadaf9b075f99f0b3573cdd9b35ab21"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIM1_CC_IF_PERIOD&#160;&#160;&#160;TIM_SR_CC1IF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00355">355</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad3715e7563120a9b7c0d19ace8282eae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIM1_CCR_DUTY&#160;&#160;&#160;TIM1_CCR2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00358">358</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4e4f1c1886d0b984d1e0bb2c9b811a0d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIM1_CCR_PERIOD&#160;&#160;&#160;TIM1_CCR1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00357">357</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa5e0d0fac0491be02ee61a2a43f789bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIM1_PWM_INPUT_IDX&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00354">354</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -2851,7 +3054,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00336">336</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00329">329</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -2879,7 +3082,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00236">236</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00235">235</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -2893,7 +3096,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00252">252</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00250">250</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -2907,7 +3110,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00268">268</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00265">265</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -2921,7 +3124,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00284">284</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00280">280</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -2935,7 +3138,21 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00300">300</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00295">295</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4c4ac4255adc99302a7ae7ad828a121c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USE_PWM_INPUT_TIM1&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="apogee__1_80_8h_source.html#l00353">353</a> of file <a class="el" href="apogee__1_80_8h_source.html">apogee_1.0.h</a>.</p>
 
 </div>
 </div>
@@ -2959,7 +3176,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="apogee__1_80_8h.html">apogee_1.0.h</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:00:51 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:00:51 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

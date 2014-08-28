@@ -12,6 +12,7 @@ var searchData=
   ['generic_5fcom_5fslave_5faddr',['GENERIC_COM_SLAVE_ADDR',['../generic__com_8c.html#abd24cc3366ec5c1b317cba3d31b49784',1,'generic_com.c']]],
   ['geo_5fepoch',['GEO_EPOCH',['../pprz__geodetic__wmm2010_8h.html#a8d79cd0cafb7b536b1a0dc7741958570',1,'pprz_geodetic_wmm2010.h']]],
   ['get_5fline_5fcoding',['GET_LINE_CODING',['../usb__ser__hw_8c.html#a6698d8d2ca56fafdc943aec2cede1daf',1,'usb_ser_hw.c']]],
+  ['getaltref',['GetAltRef',['../navigation_8h.html#a24891072dad1936c21f884d623bda8b4',1,'GetAltRef():&#160;navigation.h'],['../nav_8h.html#a24891072dad1936c21f884d623bda8b4',1,'GetAltRef():&#160;nav.h']]],
   ['getmedianfiltereulerint',['GetMedianFilterEulerInt',['../median__filter_8h.html#a5f6b0c0ca141e3af9a93a2942d664424',1,'median_filter.h']]],
   ['getmedianfilterratesint',['GetMedianFilterRatesInt',['../median__filter_8h.html#a46a823b547fbf28d0dcc590bcfb0fdc8',1,'median_filter.h']]],
   ['getmedianfiltervect3int',['GetMedianFilterVect3Int',['../median__filter_8h.html#ab1386413c10d078a2b7d96dff7a827ef',1,'median_filter.h']]],

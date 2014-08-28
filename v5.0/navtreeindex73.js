@@ -1,5 +1,7 @@
 var NAVTREEINDEX73 =
 {
+"w5100_8h.html#a6b5017fbfbeb634bca0bf86a32c63ad4":[8,0,0,0,10,2,12,25],
+"w5100_8h.html#a6bac978d2a28741610d8b5b5bd88799c":[8,0,0,0,10,2,12,5],
 "w5100_8h.html#a6d9ad6e4a25bbf5ef73a8dcefd5cc687":[8,0,0,0,10,2,12,4],
 "w5100_8h.html#a747be9fd9aaace64247fadd3cd1fd8b2":[8,0,0,0,10,2,12,16],
 "w5100_8h.html#a74b9c2790d0a3e81489a3da279ccc98e":[8,0,0,0,10,2,12,3],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX52 =
 {
+"pressure__board__navarro_8c.html#a4965ee21378062e4ebb0732176ec9629":[8,0,0,0,7,32,47,12],
+"pressure__board__navarro_8c.html#a5523bf6ec8f563e86dbfc0e986948343":[8,0,0,0,7,32,47,13],
 "pressure__board__navarro_8c.html#a61cd37b7705b94968eef0f7a3c7d89df":[8,0,0,0,7,32,47,19],
 "pressure__board__navarro_8c.html#a6f2976579b7761af83296829f78faba0":[8,0,0,0,7,32,47,7],
 "pressure__board__navarro_8c.html#a7a9ccfb43e45d31d21d51eade10571ac":[8,0,0,0,7,32,47,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX52 =
 "rotorcraft_2stabilization_2stabilization__attitude_8h.html#a8150624ba36026bbfc76642de8ea99f3":[8,0,0,0,3,1,1,0,5],
 "rotorcraft_2stabilization_2stabilization__attitude_8h.html#afb59ecc3049842f940a46a81698b79e9":[8,0,0,0,3,1,1,0,3],
 "rotorcraft_2stabilization_2stabilization__attitude_8h_source.html":[8,0,0,0,3,1,1,0],
-"rotorcraft__cam_8c.html":[8,0,0,0,7,4,10],
-"rotorcraft__cam_8c.html#a0806094f8433ed826213cbb728c5a53a":[8,0,0,0,7,4,10,1],
-"rotorcraft__cam_8c.html#a250a9105d1a4f80c98b0d04b4bb4f546":[8,0,0,0,7,4,10,2]
+"rotorcraft__cam_8c.html":[8,0,0,0,7,4,10]
 };

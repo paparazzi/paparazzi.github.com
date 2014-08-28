@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.0.4_stable-4-g32bffa6</span>
+   &#160;<span id="projectnumber">v5.0.4_stable-12-g9e4df39</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -269,7 +269,7 @@ Macros</h2></td></tr>
 <tr class="memitem:ac9b1f25ca62d407c091acfb0334dc377"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__l__1_80_8h.html#ac9b1f25ca62d407c091acfb0334dc377">PWM_SERVO_6_PIN</a>&#160;&#160;&#160;GPIO9</td></tr>
 <tr class="memitem:a4790fb09d46bc4fec1b725d476ae813d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__l__1_80_8h.html#a4790fb09d46bc4fec1b725d476ae813d">PWM_SERVO_6_AF</a>&#160;&#160;&#160;0</td></tr>
 <tr class="memitem:a78b91cae357eed2023271f3a889047dd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__l__1_80_8h.html#a78b91cae357eed2023271f3a889047dd">PWM_SERVO_6_OC</a>&#160;&#160;&#160;TIM_OC4</td></tr>
-<tr class="memitem:af94fd6d4d1273791ff04578e48f27857"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__l__1_80_8h.html#af94fd6d4d1273791ff04578e48f27857">PWM_SERVO_6_OC_BIT</a>&#160;&#160;&#160;(1&lt;&lt;4)</td></tr>
+<tr class="memitem:af94fd6d4d1273791ff04578e48f27857"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__l__1_80_8h.html#af94fd6d4d1273791ff04578e48f27857">PWM_SERVO_6_OC_BIT</a>&#160;&#160;&#160;(1&lt;&lt;3)</td></tr>
 <tr class="memitem:a59305d3ed1cc7b7ab5184b1652b0c7d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__l__1_80_8h.html#a59305d3ed1cc7b7ab5184b1652b0c7d5">PWM_TIM3_CHAN_MASK</a>&#160;&#160;&#160;(<a class="el" href="lisa__m__common_8h.html#ae40a4e27a94283e513359632ceea8de0">PWM_SERVO_1_OC_BIT</a>|<a class="el" href="lisa__m__common_8h.html#a50227ddde1342cae56494d8cedfde915">PWM_SERVO_2_OC_BIT</a>|<a class="el" href="lisa__m__common_8h.html#a665cb015c3504e5dcfd386c518de25c0">PWM_SERVO_3_OC_BIT</a>|<a class="el" href="lisa__m__common_8h.html#a9e53b17ebc6bac4a7bee8c55ebef692d">PWM_SERVO_4_OC_BIT</a>)</td></tr>
 <tr class="memitem:ad1ec00f69a8dbb70ce0d31eef0206d5e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lisa__l__1_80_8h.html#ad1ec00f69a8dbb70ce0d31eef0206d5e">PWM_TIM4_CHAN_MASK</a>&#160;&#160;&#160;(<a class="el" href="lisa__m__common_8h.html#a5d2f3465213306fd37370c884444e5e5">PWM_SERVO_5_OC_BIT</a>|<a class="el" href="lisa__m__common_8h.html#af94fd6d4d1273791ff04578e48f27857">PWM_SERVO_6_OC_BIT</a>)</td></tr>
 </table>
@@ -968,7 +968,7 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lisa__l__1_80_8h_source.html#l00212">212</a> of file <a class="el" href="lisa__l__1_80_8h_source.html">lisa_l_1.0.h</a>.</p>
 
-<p>Referenced by <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00237">actuators_pwm_commit()</a>.</p>
+<p>Referenced by <a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00235">actuators_pwm_commit()</a>.</p>
 
 </div>
 </div>
@@ -1355,7 +1355,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PWM_SERVO_6_OC_BIT&#160;&#160;&#160;(1&lt;&lt;4)</td>
+          <td class="memname">#define PWM_SERVO_6_OC_BIT&#160;&#160;&#160;(1&lt;&lt;3)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2530,7 +2530,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="lisa__l__1_80_8h.html">lisa_l_1.0.h</a></li>
-    <li class="footer">Generated on Wed Apr 9 2014 18:09:02 for Paparazzi UAS by
+    <li class="footer">Generated on Fri Jul 25 2014 16:09:09 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -226,10 +226,10 @@ $(document).ready(function(){initNavTree('globals_enum.html','');});
 : <a class="el" href="downlink__transport_8h.html#a7e34d1ce8122429af2e68f87148b7778">downlink_transport.h</a>
 </li>
 <li>dsm_protocol
-: <a class="el" href="superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3">superbitrf.h</a>
+: <a class="el" href="arch_2sim_2subsystems_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3">superbitrf.h</a>
 </li>
 <li>dsm_resolution
-: <a class="el" href="superbitrf_8h.html#aa74389f2d838aceac27d2f44fe95a76a">superbitrf.h</a>
+: <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#aa74389f2d838aceac27d2f44fe95a76a">superbitrf.h</a>
 </li>
 </ul>
 
@@ -268,6 +268,9 @@ $(document).ready(function(){initNavTree('globals_enum.html','');});
 
 
 <h3><a class="anchor" id="index_h"></a>- h -</h3><ul>
+<li>hackhd_status
+: <a class="el" href="hackhd_8h.html#ae56c491538082ee384af19aa812a2a97">hackhd.h</a>
+</li>
 <li>HardwareFaultType
 : <a class="el" href="stm32f4__chibios__vectors_8c.html#a0ddd78110ca81124c90c640e0eee147d">stm32f4_chibios_vectors.c</a>
 </li>
@@ -346,9 +349,6 @@ $(document).ready(function(){initNavTree('globals_enum.html','');});
 <li>LisaBaroStatus
 : <a class="el" href="lisa__l_2baro__board_8c.html#afa23cfb2e942619d6fa44f549fe5edff">baro_board.c</a>
 </li>
-<li>LisaOveroLinkStatus
-: <a class="el" href="lisa__overo__link_8h.html#ad9636c84365cd0534987d1dc1d6bb602">lisa_overo_link.h</a>
-</li>
 <li>Lsm303dlhcAccConfStatus
 : <a class="el" href="lsm303dlhc_8h.html#acfdcef8558d30510f691dc2670655e24">lsm303dlhc.h</a>
 </li>
@@ -366,10 +366,10 @@ $(document).ready(function(){initNavTree('globals_enum.html','');});
 : <a class="el" href="max7456_8c.html#a9df37033e964a8027eab3e650e7aea6e">max7456.c</a>
 </li>
 <li>MissionInsertMode
-: <a class="el" href="mission_8h.html#add225f937fa97e4f76900b7f5e73872e">mission.h</a>
+: <a class="el" href="mission__common_8h.html#add225f937fa97e4f76900b7f5e73872e">mission_common.h</a>
 </li>
 <li>MissionType
-: <a class="el" href="mission_8h.html#a64f46ea1c53b7a5677d078814b7b4752">mission.h</a>
+: <a class="el" href="mission__common_8h.html#a64f46ea1c53b7a5677d078814b7b4752">mission_common.h</a>
 </li>
 <li>mlx_type
 : <a class="el" href="ir__mlx_8h.html#a76604b115855851177887708e56a17d8">ir_mlx.h</a>
@@ -427,6 +427,9 @@ $(document).ready(function(){initNavTree('globals_enum.html','');});
 <li>pcf_stat
 : <a class="el" href="wind__gfi_8h.html#a28af1f1f55de3fbdf348c7f76dee2ccc">wind_gfi.h</a>
 </li>
+<li>pwm_input_channels
+: <a class="el" href="lpc21_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89">pwm_input_arch.h</a>
+</li>
 </ul>
 
 
@@ -470,9 +473,6 @@ $(document).ready(function(){initNavTree('globals_enum.html','');});
 <li>SPIStatus
 : <a class="el" href="group__spi.html#ga495f0019475966e28264aaf8e37c6529">spi.h</a>
 </li>
-<li>spistream_flag
-: <a class="el" href="lisa__spistream_8h.html#a810a3b5af2fc3dc3a37f4983ad4a614e">lisa_spistream.h</a>
-</li>
 <li>SPITransactionStatus
 : <a class="el" href="group__spi.html#ga52e70c55efc6a9b04903157a0965baac">spi.h</a>
 </li>
@@ -483,7 +483,7 @@ $(document).ready(function(){initNavTree('globals_enum.html','');});
 : <a class="el" href="stm32_2mcu__periph_2i2c__arch_8c.html#a3e5aa70e49e955c0fe96861a45b77fa8">i2c_arch.c</a>
 </li>
 <li>SuperbitRFStatus
-: <a class="el" href="superbitrf_8h.html#aff46e2692b6bb527a21559a9faf61dd3">superbitrf.h</a>
+: <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#aff46e2692b6bb527a21559a9faf61dd3">superbitrf.h</a>
 </li>
 <li>survey_orientation_t
 : <a class="el" href="nav__survey__rectangle_8h.html#aa8ad239dd32b3708375201570614abc5">nav_survey_rectangle.h</a>
@@ -534,7 +534,7 @@ $(document).ready(function(){initNavTree('globals_enum.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon May 26 2014 16:01:23 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:01:23 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

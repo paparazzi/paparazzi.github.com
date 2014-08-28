@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -247,9 +247,9 @@ $(document).ready(function(){initNavTree('lis302dl__spi_8c_source.html','');});
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      <span class="comment">// Successfull reading</span></div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;      <span class="keywordflow">if</span> (bit_is_set(lis-&gt;<a class="code" href="structLis302dl__Spi.html#a37b2f094cb8be4a118827ce3fd72a9fc">rx_buf</a>[1], 3)) {</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="comment">// new xyz data available</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        lis-&gt;<a class="code" href="structLis302dl__Spi.html#a2a33a15ad725a2ce7e473c4584add6a1">data</a>.<a class="code" href="structLis302dl__Spi.html#a7e4b13ff829b35ab8589a9ef5219b1c7" title="data vector in accel coordinate system">vect</a>.<a class="code" href="structInt8Vect3.html#a6d5345d797d837b035328a54bb18e660">x</a> = lis-&gt;<a class="code" href="structLis302dl__Spi.html#a37b2f094cb8be4a118827ce3fd72a9fc">rx_buf</a>[3];</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        lis-&gt;<a class="code" href="structLis302dl__Spi.html#a2a33a15ad725a2ce7e473c4584add6a1">data</a>.<a class="code" href="structLis302dl__Spi.html#a7e4b13ff829b35ab8589a9ef5219b1c7" title="data vector in accel coordinate system">vect</a>.<a class="code" href="structInt8Vect3.html#afc8759194676f25a3897aeff23eb5c36">y</a> = lis-&gt;<a class="code" href="structLis302dl__Spi.html#a37b2f094cb8be4a118827ce3fd72a9fc">rx_buf</a>[5];</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        lis-&gt;<a class="code" href="structLis302dl__Spi.html#a2a33a15ad725a2ce7e473c4584add6a1">data</a>.<a class="code" href="structLis302dl__Spi.html#a7e4b13ff829b35ab8589a9ef5219b1c7" title="data vector in accel coordinate system">vect</a>.<a class="code" href="structInt8Vect3.html#aa512a01b058081d695ba065c6e0aff0f">z</a> = lis-&gt;<a class="code" href="structLis302dl__Spi.html#a37b2f094cb8be4a118827ce3fd72a9fc">rx_buf</a>[7];</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        lis-&gt;<a class="code" href="structLis302dl__Spi.html#a8ab6b562cbe95ae6637bb0e0fa78e42f">data</a>.<a class="code" href="structLis302dl__Spi.html#a7e4b13ff829b35ab8589a9ef5219b1c7" title="data vector in accel coordinate system">vect</a>.<a class="code" href="structInt8Vect3.html#a6d5345d797d837b035328a54bb18e660">x</a> = lis-&gt;<a class="code" href="structLis302dl__Spi.html#a37b2f094cb8be4a118827ce3fd72a9fc">rx_buf</a>[3];</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        lis-&gt;<a class="code" href="structLis302dl__Spi.html#a8ab6b562cbe95ae6637bb0e0fa78e42f">data</a>.<a class="code" href="structLis302dl__Spi.html#a7e4b13ff829b35ab8589a9ef5219b1c7" title="data vector in accel coordinate system">vect</a>.<a class="code" href="structInt8Vect3.html#afc8759194676f25a3897aeff23eb5c36">y</a> = lis-&gt;<a class="code" href="structLis302dl__Spi.html#a37b2f094cb8be4a118827ce3fd72a9fc">rx_buf</a>[5];</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        lis-&gt;<a class="code" href="structLis302dl__Spi.html#a8ab6b562cbe95ae6637bb0e0fa78e42f">data</a>.<a class="code" href="structLis302dl__Spi.html#a7e4b13ff829b35ab8589a9ef5219b1c7" title="data vector in accel coordinate system">vect</a>.<a class="code" href="structInt8Vect3.html#aa512a01b058081d695ba065c6e0aff0f">z</a> = lis-&gt;<a class="code" href="structLis302dl__Spi.html#a37b2f094cb8be4a118827ce3fd72a9fc">rx_buf</a>[7];</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        lis-&gt;<a class="code" href="structLis302dl__Spi.html#a236750da147692ae694965669a4cc240" title="data ready flag">data_available</a> = <a class="code" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      }</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      lis-&gt;<a class="code" href="structLis302dl__Spi.html#a50cbe1b11486662b10286d31c3ad494f">spi_trans</a>.<a class="code" href="structspi__transaction.html#afcc49de6913e59398111a070be5aeda2">status</a> = <a class="code" href="group__spi.html#gga52e70c55efc6a9b04903157a0965baacaf68ce6dfcd0fd5b2210ce03c86bb4580">SPITransDone</a>;</div>
@@ -281,7 +281,7 @@ $(document).ready(function(){initNavTree('lis302dl__spi_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="lis302dl__spi_8c.html">lis302dl_spi.c</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:00:43 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:00:43 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

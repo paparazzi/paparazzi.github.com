@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.0.4_stable-4-g32bffa6</span>
+   &#160;<span id="projectnumber">v5.0.4_stable-12-g9e4df39</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -289,15 +289,16 @@ $(document).ready(function(){initNavTree('nav_8h_source.html','');});
 <div class="line"><a name="l00199"></a><span class="lineno"><a class="code" href="nav_8h.html#ac500a50330425cb4a3054774289bb205">  199</a></span>&#160;<span class="preprocessor">#define GetPosX() (stateGetPositionEnu_f()-&gt;x)</span></div>
 <div class="line"><a name="l00200"></a><span class="lineno"><a class="code" href="nav_8h.html#a10961173ac6973d795af2f62eb67edca">  200</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GetPosY() (stateGetPositionEnu_f()-&gt;y)</span></div>
 <div class="line"><a name="l00201"></a><span class="lineno"><a class="code" href="nav_8h.html#a0bb5f5ae29ba1d5968fe7857a304253e">  201</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GetPosAlt() (stateGetPositionUtm_f()-&gt;alt)</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* NAV_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00202"></a><span class="lineno"><a class="code" href="nav_8h.html#a24891072dad1936c21f884d623bda8b4">  202</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GetAltRef() (ground_alt)</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* NAV_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="nav_8h.html">nav.h</a></li>
-    <li class="footer">Generated on Wed Apr 9 2014 18:08:57 for Paparazzi UAS by
+    <li class="footer">Generated on Fri Jul 25 2014 16:09:04 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

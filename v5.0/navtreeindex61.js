@@ -1,5 +1,7 @@
 var NAVTREEINDEX61 =
 {
+"structBoozFmsTestSignal.html#a4fdcd74eb4f555d37356459695f00589":[7,0,34,1],
+"structBoozFmsTestSignal.html#afd5e1105c20108debed35f364310e287":[7,0,34,3],
 "structCHIMU__Euler.html":[7,0,39],
 "structCHIMU__Euler.html#a011bae956c99e8c3d5ffe6b3054093f4":[7,0,39,0],
 "structCHIMU__Euler.html#a72ae9ef555144b63843e354d2e7a9cda":[7,0,39,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX61 =
 "structHfilterFloat.html#a3161286a7c402bf00b108cf84127542b":[7,0,86,3],
 "structHfilterFloat.html#a6e01846a801cbd7fe3ae1f69df70ce3b":[7,0,86,2],
 "structHfilterFloat.html#a8dfd091ee2cc7c9476c170ea691426ef":[7,0,86,9],
-"structHfilterFloat.html#a97fa8fb03ec9fdf82c73b169c0b1782f":[7,0,86,8],
-"structHfilterFloat.html#a9f2b092d078a04d786dff4f301397411":[7,0,86,5],
-"structHfilterFloat.html#aac3e4a95c04df145852ab40efa241835":[7,0,86,4]
+"structHfilterFloat.html#a97fa8fb03ec9fdf82c73b169c0b1782f":[7,0,86,8]
 };

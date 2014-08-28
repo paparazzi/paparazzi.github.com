@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -139,89 +139,57 @@ $(document).ready(function(){initNavTree('actuators__shared__arch_8h_source.html
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;libopencm3/stm32/rcc.h&gt;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;libopencm3/stm32/timer.h&gt;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;libopencm3/cm3/nvic.h&gt;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;mcu_arch.h&quot;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#if defined(STM32F1)</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"></span><span class="comment">//#define PCLK 72000000</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#define PCLK AHB_CLK</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#elif defined(STM32F4)</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span><span class="comment">//#define PCLK 84000000</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#define PCLK AHB_CLK/2</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="actuators__shared__arch_8h.html#a644a06e4166982dcb58fbd25d65f1f65">   48</a></span>&#160;<span class="preprocessor">#define ONE_MHZ_CLK 1000000</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">/* Default timer base frequency is 1MHz */</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#if ! defined(PWM_BASE_FREQ)</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="actuators__shared__arch_8h.html#a6e3b5de2e1ac13872971fbd62b1abf84">   52</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PWM_BASE_FREQ ONE_MHZ_CLK</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#ifdef STM32F1</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#define TIMER_APB1_CLK AHB_CLK</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TIMER_APB2_CLK AHB_CLK</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#ifdef STM32F4</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"></span><span class="comment">/* Since APB prescaler != 1 :</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"> * Timer clock frequency (before prescaling) is twice the frequency</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"> * of the APB domain to which the timer is connected.</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#define TIMER_APB1_CLK (rcc_ppre1_frequency * 2)</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TIMER_APB2_CLK (rcc_ppre2_frequency * 2)</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#ifndef SERVO_HZ</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="code" href="actuators__shared__arch_8h.html#a53d6198818143ce640add7be0555424f">   76</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SERVO_HZ 40</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">// Update rate can be adapted for each timer</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#ifndef TIM1_SERVO_HZ</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="code" href="actuators__shared__arch_8h.html#a6f40889ba01ae66aee24c171e00d1d81">   81</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TIM1_SERVO_HZ SERVO_HZ</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifndef TIM2_SERVO_HZ</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="code" href="actuators__shared__arch_8h.html#a8abad7360c351e9e146dbc677ec6ddd9">   84</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TIM2_SERVO_HZ SERVO_HZ</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifndef TIM3_SERVO_HZ</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="code" href="actuators__shared__arch_8h.html#a259ce095e835ac75adb9a9981eb1b711">   87</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TIM3_SERVO_HZ SERVO_HZ</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifndef TIM4_SERVO_HZ</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="code" href="actuators__shared__arch_8h.html#a4e9a5ee2811aab2cc7274715310d640d">   90</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TIM4_SERVO_HZ SERVO_HZ</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifndef TIM5_SERVO_HZ</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="code" href="actuators__shared__arch_8h.html#a2f849835e0306ec0290feac475d2cfb0">   93</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TIM5_SERVO_HZ SERVO_HZ</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifndef TIM9_SERVO_HZ</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="code" href="actuators__shared__arch_8h.html#a5cca030e9242d74bda94022625298cec">   96</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TIM9_SERVO_HZ SERVO_HZ</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifndef TIM12_SERVO_HZ</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="code" href="actuators__shared__arch_8h.html#a61301c31538dcbdb2c7018715847b446">   99</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TIM12_SERVO_HZ SERVO_HZ</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno"><a class="code" href="actuators__shared__arch_8h.html#af52b4b4c36110a0addfa98059f54a50e">  104</a></span>&#160;<span class="preprocessor">#define TIM9        TIM9_BASE</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="code" href="actuators__shared__arch_8h.html#a2397f8a0f8e7aa10cf8e8c049e431e53">  105</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TIM12       TIM12_BASE</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#if defined(STM32F4)</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="keywordtype">void</span> set_servo_gpio(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> gpioport, <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pin, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> af_num, <span class="keyword">enum</span> rcc_periph_clken clken);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#elif defined(STM32F1)</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="keywordtype">void</span> set_servo_gpio(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> gpioport, <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pin, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> none __attribute__((unused)), <span class="keyword">enum</span> rcc_periph_clken clken);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="actuators__shared__arch_8c.html#a5845163f5b2bb32af33d32280b7c40be" title="Set GPIO configuration.">actuators_pwm_arch_channel_init</a>(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> timer_peripheral, <span class="keyword">enum</span> tim_oc_id oc_id);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="actuators__shared__arch_8c.html#af427e4bd9cbac365246675a3dab8e548" title="Set Timer configuration.">set_servo_timer</a>(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> timer, <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> period, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> channels_mask);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ACTUATORS_PWM_SHARED_ARCH_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="actuators__shared__arch_8h.html#a644a06e4166982dcb58fbd25d65f1f65">   39</a></span>&#160;<span class="preprocessor">#define ONE_MHZ_CLK 1000000</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">/* Default timer base frequency is 1MHz */</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#if ! defined(PWM_BASE_FREQ)</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="actuators__shared__arch_8h.html#a6e3b5de2e1ac13872971fbd62b1abf84">   43</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PWM_BASE_FREQ ONE_MHZ_CLK</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#ifndef SERVO_HZ</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="actuators__shared__arch_8h.html#a53d6198818143ce640add7be0555424f">   49</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SERVO_HZ 40</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">// Update rate can be adapted for each timer</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#ifndef TIM1_SERVO_HZ</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="actuators__shared__arch_8h.html#a6f40889ba01ae66aee24c171e00d1d81">   54</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TIM1_SERVO_HZ SERVO_HZ</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifndef TIM2_SERVO_HZ</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="actuators__shared__arch_8h.html#a8abad7360c351e9e146dbc677ec6ddd9">   57</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TIM2_SERVO_HZ SERVO_HZ</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifndef TIM3_SERVO_HZ</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="actuators__shared__arch_8h.html#a259ce095e835ac75adb9a9981eb1b711">   60</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TIM3_SERVO_HZ SERVO_HZ</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifndef TIM4_SERVO_HZ</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="code" href="actuators__shared__arch_8h.html#a4e9a5ee2811aab2cc7274715310d640d">   63</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TIM4_SERVO_HZ SERVO_HZ</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifndef TIM5_SERVO_HZ</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="code" href="actuators__shared__arch_8h.html#a2f849835e0306ec0290feac475d2cfb0">   66</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TIM5_SERVO_HZ SERVO_HZ</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifndef TIM8_SERVO_HZ</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="code" href="actuators__shared__arch_8h.html#a5b20ddacea940b057ec223295fe9b552">   69</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TIM8_SERVO_HZ SERVO_HZ</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifndef TIM9_SERVO_HZ</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="code" href="actuators__shared__arch_8h.html#a5cca030e9242d74bda94022625298cec">   72</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TIM9_SERVO_HZ SERVO_HZ</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifndef TIM12_SERVO_HZ</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="code" href="actuators__shared__arch_8h.html#a61301c31538dcbdb2c7018715847b446">   75</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TIM12_SERVO_HZ SERVO_HZ</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="actuators__shared__arch_8c.html#a5845163f5b2bb32af33d32280b7c40be" title="Set PWM channel configuration.">actuators_pwm_arch_channel_init</a>(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> timer_peripheral, <span class="keyword">enum</span> tim_oc_id oc_id);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="actuators__shared__arch_8c.html#af427e4bd9cbac365246675a3dab8e548" title="Set Timer configuration.">set_servo_timer</a>(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> timer, <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> period, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> channels_mask);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ACTUATORS_PWM_SHARED_ARCH_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_71548ae744da26ac2c7ca213b679dc43.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_25ba966e11d2062039182252e5025889.html">actuators</a></li><li class="navelem"><a class="el" href="actuators__shared__arch_8h.html">actuators_shared_arch.h</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:00:37 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:00:37 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

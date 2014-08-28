@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -114,9 +114,11 @@ $(document).ready(function(){initNavTree('mission__fw__nav_8c.html','');});
 <p>mission navigation for fixedwing aircraft  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br/>
-<code>#include &quot;<a class="el" href="mission_8h_source.html">modules/mission/mission.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="mission__common_8h_source.html">modules/mission/mission_common.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="fixedwing_2autopilot_8h_source.html">firmwares/fixedwing/autopilot.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="nav_8h_source.html">firmwares/fixedwing/nav.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="common__nav_8h_source.html">subsystems/navigation/common_nav.h</a>&quot;</code><br/>
+<code>#include &quot;generated/flight_plan.h&quot;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for mission_fw_nav.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -124,13 +126,15 @@ $(document).ready(function(){initNavTree('mission__fw__nav_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mission__fw__nav_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2mission_2mission__fw__nav_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2mission_2mission__fw__nav_8c" id="sw_2airborne_2modules_2mission_2mission__fw__nav_8c">
-<area shape="rect" id="node5" href="mission_8h.html" title="mission planner library" alt="" coords="1133,294,1328,322"/><area shape="rect" id="node26" href="fixedwing_2autopilot_8h.html" title="Fixedwing autopilot modes." alt="" coords="1248,99,1395,143"/><area shape="rect" id="node36" href="nav_8h.html" title="Fixedwing Navigation library." alt="" coords="967,99,1113,143"/><area shape="rect" id="node9" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="729,379,879,423"/><area shape="rect" id="node11" href="pprz__geodetic_8h.html" title="pprz_geodetic.h" alt="" coords="705,473,828,501"/><area shape="rect" id="node13" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="188,473,340,501"/><area shape="rect" id="node15" href="pprz__algebra_8h.html" title="pprz_algebra.h" alt="" coords="181,550,299,578"/><area shape="rect" id="node28" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1352,294,1437,322"/><area shape="rect" id="node31" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1188,201,1284,229"/><area shape="rect" id="node40" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="569,294,636,322"/><area shape="rect" id="node66" href="nav__survey__rectangle_8h.html" title="subsystems/navigation\l/nav_survey_rectangle.h" alt="" coords="640,193,816,237"/><area shape="rect" id="node69" href="common__flight__plan_8h.html" title="subsystems/navigation\l/common_flight_plan.h" alt="" coords="891,286,1059,330"/><area shape="rect" id="node72" href="common__nav_8h.html" title="subsystems/navigation\l/common_nav.h" alt="" coords="840,193,1008,237"/><area shape="rect" id="node42" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="392,473,571,501"/><area shape="rect" id="node53" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="556,379,705,423"/><area shape="rect" id="node59" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversion." alt="" coords="369,379,532,423"/><area shape="rect" id="node46" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="413,550,563,578"/></map>
+<area shape="rect" id="node5" href="mission__common_8h.html" title="mission planner library" alt="" coords="1104,286,1285,330"/><area shape="rect" id="node40" href="fixedwing_2autopilot_8h.html" title="Fixedwing autopilot modes." alt="" coords="175,99,321,143"/><area shape="rect" id="node50" href="nav_8h.html" title="Fixedwing Navigation library." alt="" coords="601,99,748,143"/><area shape="rect" id="node73" href="common__nav_8h.html" title="subsystems/navigation\l/common_nav.h" alt="" coords="395,193,563,237"/><area shape="rect" id="node9" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="1207,379,1356,423"/><area shape="rect" id="node26" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="1033,379,1183,423"/><area shape="rect" id="node11" href="pprz__geodetic_8h.html" title="pprz_geodetic.h" alt="" coords="1121,473,1244,501"/><area shape="rect" id="node13" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="1319,473,1471,501"/><area shape="rect" id="node15" href="pprz__algebra_8h.html" title="pprz_algebra.h" alt="" coords="1220,550,1337,578"/><area shape="rect" id="node30" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="857,473,996,501"/><area shape="rect" id="node34" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="852,550,1001,578"/><area shape="rect" id="node42" href="inttypes_8h.html" title="inttypes.h" alt="" coords="161,294,247,322"/><area shape="rect" id="node45" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="275,201,371,229"/><area shape="rect" id="node54" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="895,294,961,322"/><area shape="rect" id="node67" href="nav__survey__rectangle_8h.html" title="subsystems/navigation\l/nav_survey_rectangle.h" alt="" coords="587,193,763,237"/><area shape="rect" id="node70" href="common__flight__plan_8h.html" title="subsystems/navigation\l/common_flight_plan.h" alt="" coords="516,286,684,330"/><area shape="rect" id="node60" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversion." alt="" coords="847,379,1009,423"/></map>
 </div>
 </div>
 <p><a href="mission__fw__nav_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:aeaeaf8bd5a00fa937a0c0ebfdf982875"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__fw__nav_8c.html#aeaeaf8bd5a00fa937a0c0ebfdf982875">mission_point_of_lla</a> (struct <a class="el" href="structEnuCoor__f.html">EnuCoor_f</a> *<a class="el" href="structpoint.html">point</a>, struct <a class="el" href="structLlaCoor__f.html">LlaCoor_f</a> *lla)</td></tr>
+<tr class="memdesc:aeaeaf8bd5a00fa937a0c0ebfdf982875"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ENU component of LLA mission point This function is firmware specific.  <a href="#aeaeaf8bd5a00fa937a0c0ebfdf982875"></a><br/></td></tr>
 <tr class="memitem:a5c42cd8acf9fd5c504a993ea3cf91a6a"><td class="memItemLeft" align="right" valign="top">static bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__fw__nav_8c.html#a5c42cd8acf9fd5c504a993ea3cf91a6a">mission_nav_wp</a> (struct <a class="el" href="struct__mission__wp.html">_mission_wp</a> *wp)</td></tr>
 <tr class="memdesc:a5c42cd8acf9fd5c504a993ea3cf91a6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Navigation function to a single waypoint.  <a href="#a5c42cd8acf9fd5c504a993ea3cf91a6a"></a><br/></td></tr>
 <tr class="memitem:a14831a73e604ff798ed1f0bc7f871e02"><td class="memItemLeft" align="right" valign="top">static bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__fw__nav_8c.html#a14831a73e604ff798ed1f0bc7f871e02">mission_nav_circle</a> (struct <a class="el" href="struct__mission__circle.html">_mission_circle</a> *circle)</td></tr>
@@ -145,7 +149,7 @@ Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a92032860fee41019bb05444dec447451"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__fw__nav_8c.html#a92032860fee41019bb05444dec447451">dt_navigation</a> = 1.0 / ((float)<a class="el" href="fixedwing_2autopilot_8h.html#aba17f9ac72f7e9dd1dcd95457bf5c87f">NAVIGATION_FREQUENCY</a>)</td></tr>
-<tr class="memitem:a5c355b0a617031a9c949b4fda4727d07"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structEnuCoor__f.html">EnuCoor_f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__fw__nav_8c.html#a5c355b0a617031a9c949b4fda4727d07">last_wp</a> = { 0., 0., 0. }</td></tr>
+<tr class="memitem:ace2e9ed0bbdd8359ab176ae004a2d957"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structEnuCoor__f.html">EnuCoor_f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__fw__nav_8c.html#ace2e9ed0bbdd8359ab176ae004a2d957">last_wp_f</a> = { 0., 0., 0. }</td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>mission navigation for fixedwing aircraft </p>
@@ -177,11 +181,11 @@ Variables</h2></td></tr>
 
 <p>Navigation function on a circle. </p>
 
-<p>Definition at line <a class="el" href="mission__fw__nav_8c_source.html#l00057">57</a> of file <a class="el" href="mission__fw__nav_8c_source.html">mission_fw_nav.c</a>.</p>
+<p>Definition at line <a class="el" href="mission__fw__nav_8c_source.html#l00083">83</a> of file <a class="el" href="mission__fw__nav_8c_source.html">mission_fw_nav.c</a>.</p>
 
-<p>References <a class="el" href="mission_8h_source.html#l00058">_mission_circle::center</a>, <a class="el" href="nav_8c_source.html#l00109">nav_circle_XY()</a>, <a class="el" href="nav_8h_source.html#l00164">NavVerticalAltitudeMode</a>, <a class="el" href="nav_8h_source.html#l00150">NavVerticalAutoThrottleMode</a>, <a class="el" href="mission_8h_source.html#l00059">_mission_circle::radius</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00071">EnuCoor_f::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00072">EnuCoor_f::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::z</a>.</p>
+<p>References <a class="el" href="struct__mission__circle.html#a2ad440c99da08938372b3faa8d1bece5">_mission_circle::center</a>, <a class="el" href="mission__common_8h_source.html#l00063">_mission_circle::center_f</a>, <a class="el" href="nav_8c_source.html#l00109">nav_circle_XY()</a>, <a class="el" href="nav_8h_source.html#l00164">NavVerticalAltitudeMode</a>, <a class="el" href="nav_8h_source.html#l00150">NavVerticalAutoThrottleMode</a>, <a class="el" href="mission__common_8h_source.html#l00067">_mission_circle::radius</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00071">EnuCoor_f::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00072">EnuCoor_f::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::z</a>.</p>
 
-<p>Referenced by <a class="el" href="mission__fw__nav_8c_source.html#l00105">mission_run()</a>.</p>
+<p>Referenced by <a class="el" href="mission__fw__nav_8c_source.html#l00132">mission_run()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -231,11 +235,11 @@ Variables</h2></td></tr>
 
 <p>Navigation function along a path. </p>
 
-<p>Definition at line <a class="el" href="mission__fw__nav_8c_source.html#l00079">79</a> of file <a class="el" href="mission__fw__nav_8c_source.html">mission_fw_nav.c</a>.</p>
+<p>Definition at line <a class="el" href="mission__fw__nav_8c_source.html#l00105">105</a> of file <a class="el" href="mission__fw__nav_8c_source.html">mission_fw_nav.c</a>.</p>
 
-<p>References <a class="el" href="navigation_8h_source.html#l00098">CARROT</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00043">mission_nav_wp()</a>, <a class="el" href="nav_8c_source.html#l00322">nav_approaching_xy()</a>, <a class="el" href="nav_8c_source.html#l00378">nav_route_xy()</a>, <a class="el" href="nav_8h_source.html#l00164">NavVerticalAltitudeMode</a>, <a class="el" href="nav_8h_source.html#l00150">NavVerticalAutoThrottleMode</a>, <a class="el" href="mission_8h_source.html#l00071">_mission_path::nb</a>, <a class="el" href="mission_8h_source.html#l00069">_mission_path::path</a>, <a class="el" href="mission_8h_source.html#l00070">_mission_path::path_idx</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00071">EnuCoor_f::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00072">EnuCoor_f::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::z</a>.</p>
+<p>References <a class="el" href="navigation_8h_source.html#l00100">CARROT</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00069">mission_nav_wp()</a>, <a class="el" href="nav_8c_source.html#l00322">nav_approaching_xy()</a>, <a class="el" href="nav_8c_source.html#l00378">nav_route_xy()</a>, <a class="el" href="nav_8h_source.html#l00164">NavVerticalAltitudeMode</a>, <a class="el" href="nav_8h_source.html#l00150">NavVerticalAutoThrottleMode</a>, <a class="el" href="mission__common_8h_source.html#l00090">_mission_path::nb</a>, <a class="el" href="struct__mission__path.html#a0c057d0b02a8710b515d6dfd5341b28f">_mission_path::path</a>, <a class="el" href="mission__common_8h_source.html#l00085">_mission_path::path_f</a>, <a class="el" href="mission__common_8h_source.html#l00089">_mission_path::path_idx</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="struct__mission__wp.html#ab1baa03904774eae4cf487e72607b1f8">_mission_wp::wp</a>, <a class="el" href="mission__common_8h_source.html#l00056">_mission_wp::wp_f</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00071">EnuCoor_f::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00072">EnuCoor_f::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::z</a>.</p>
 
-<p>Referenced by <a class="el" href="mission__fw__nav_8c_source.html#l00105">mission_run()</a>.</p>
+<p>Referenced by <a class="el" href="mission__fw__nav_8c_source.html#l00132">mission_run()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -285,11 +289,11 @@ Variables</h2></td></tr>
 
 <p>Navigation function along a segment. </p>
 
-<p>Definition at line <a class="el" href="mission__fw__nav_8c_source.html#l00066">66</a> of file <a class="el" href="mission__fw__nav_8c_source.html">mission_fw_nav.c</a>.</p>
+<p>Definition at line <a class="el" href="mission__fw__nav_8c_source.html#l00092">92</a> of file <a class="el" href="mission__fw__nav_8c_source.html">mission_fw_nav.c</a>.</p>
 
-<p>References <a class="el" href="navigation_8h_source.html#l00098">CARROT</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="mission_8h_source.html#l00063">_mission_segment::from</a>, <a class="el" href="nav_8c_source.html#l00322">nav_approaching_xy()</a>, <a class="el" href="nav_8c_source.html#l00378">nav_route_xy()</a>, <a class="el" href="nav_8h_source.html#l00164">NavVerticalAltitudeMode</a>, <a class="el" href="nav_8h_source.html#l00150">NavVerticalAutoThrottleMode</a>, <a class="el" href="mission_8h_source.html#l00064">_mission_segment::to</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00071">EnuCoor_f::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00072">EnuCoor_f::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::z</a>.</p>
+<p>References <a class="el" href="navigation_8h_source.html#l00100">CARROT</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="struct__mission__segment.html#ab59cde0176bab320b559362c92dcf0fa">_mission_segment::from</a>, <a class="el" href="mission__common_8h_source.html#l00072">_mission_segment::from_f</a>, <a class="el" href="nav_8c_source.html#l00322">nav_approaching_xy()</a>, <a class="el" href="nav_8c_source.html#l00378">nav_route_xy()</a>, <a class="el" href="nav_8h_source.html#l00164">NavVerticalAltitudeMode</a>, <a class="el" href="nav_8h_source.html#l00150">NavVerticalAutoThrottleMode</a>, <a class="el" href="struct__mission__segment.html#aefb1c18e02beae1b6187f32615b81af6">_mission_segment::to</a>, <a class="el" href="mission__common_8h_source.html#l00077">_mission_segment::to_f</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00071">EnuCoor_f::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00072">EnuCoor_f::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::z</a>.</p>
 
-<p>Referenced by <a class="el" href="mission__fw__nav_8c_source.html#l00105">mission_run()</a>.</p>
+<p>Referenced by <a class="el" href="mission__fw__nav_8c_source.html#l00132">mission_run()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -339,11 +343,11 @@ Variables</h2></td></tr>
 
 <p>Navigation function to a single waypoint. </p>
 
-<p>Definition at line <a class="el" href="mission__fw__nav_8c_source.html#l00043">43</a> of file <a class="el" href="mission__fw__nav_8c_source.html">mission_fw_nav.c</a>.</p>
+<p>Definition at line <a class="el" href="mission__fw__nav_8c_source.html#l00069">69</a> of file <a class="el" href="mission__fw__nav_8c_source.html">mission_fw_nav.c</a>.</p>
 
-<p>References <a class="el" href="navigation_8h_source.html#l00098">CARROT</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="nav_8c_source.html#l00354">fly_to_xy()</a>, <a class="el" href="nav_8c_source.html#l00322">nav_approaching_xy()</a>, <a class="el" href="nav_8h_source.html#l00164">NavVerticalAltitudeMode</a>, <a class="el" href="nav_8h_source.html#l00150">NavVerticalAutoThrottleMode</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="mission_8h_source.html#l00054">_mission_wp::wp</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00071">EnuCoor_f::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00072">EnuCoor_f::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::z</a>.</p>
+<p>References <a class="el" href="navigation_8h_source.html#l00100">CARROT</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="nav_8c_source.html#l00354">fly_to_xy()</a>, <a class="el" href="nav_8c_source.html#l00322">nav_approaching_xy()</a>, <a class="el" href="nav_8h_source.html#l00164">NavVerticalAltitudeMode</a>, <a class="el" href="nav_8h_source.html#l00150">NavVerticalAutoThrottleMode</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="struct__mission__wp.html#ab1baa03904774eae4cf487e72607b1f8">_mission_wp::wp</a>, <a class="el" href="mission__common_8h_source.html#l00056">_mission_wp::wp_f</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00071">EnuCoor_f::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00072">EnuCoor_f::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::z</a>.</p>
 
-<p>Referenced by <a class="el" href="mission__fw__nav_8c_source.html#l00079">mission_nav_path()</a>, and <a class="el" href="mission__fw__nav_8c_source.html#l00105">mission_run()</a>.</p>
+<p>Referenced by <a class="el" href="mission__fw__nav_8c_source.html#l00105">mission_nav_path()</a>, and <a class="el" href="mission__fw__nav_8c_source.html#l00132">mission_run()</a>.</p>
 
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -369,6 +373,57 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aeaeaf8bd5a00fa937a0c0ebfdf982875"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool_t mission_point_of_lla </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structEnuCoor__f.html">EnuCoor_f</a> *&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structLlaCoor__f.html">LlaCoor_f</a> *&#160;</td>
+          <td class="paramname"><em>lla</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the ENU component of LLA mission point This function is firmware specific. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>pointer to the output ENU point </td></tr>
+    <tr><td class="paramname">lla</td><td>pointer to the input LLA coordinate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>TRUE if conversion is succesful, FALSE otherwise </dd></dl>
+
+<p>Definition at line <a class="el" href="mission__fw__nav_8c_source.html#l00038">38</a> of file <a class="el" href="mission__fw__nav_8c_source.html">mission_fw_nav.c</a>.</p>
+
+<p>References <a class="el" href="pprz__geodetic__float_8h_source.html#l00055">LlaCoor_f::alt</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00081">UtmCoor_f::east</a>, <a class="el" href="navigation_8c_source.html#l00066">max_dist_from_home</a>, <a class="el" href="common__nav_8c_source.html#l00042">nav_utm_east0</a>, <a class="el" href="common__nav_8c_source.html#l00043">nav_utm_north0</a>, <a class="el" href="common__nav_8c_source.html#l00044">nav_utm_zone0</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00080">UtmCoor_f::north</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00257">utm_of_lla_f()</a>, <a class="el" href="navigation_8c_source.html#l00052">waypoints</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00071">EnuCoor_f::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00073">EnuCoor_i::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00072">EnuCoor_f::y</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00074">EnuCoor_i::y</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::z</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00083">UtmCoor_f::zone</a>.</p>
+
+<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="mission__fw__nav_8c_aeaeaf8bd5a00fa937a0c0ebfdf982875_cgraph.png" border="0" usemap="#mission__fw__nav_8c_aeaeaf8bd5a00fa937a0c0ebfdf982875_cgraph" alt=""/></div>
+<map name="mission__fw__nav_8c_aeaeaf8bd5a00fa937a0c0ebfdf982875_cgraph" id="mission__fw__nav_8c_aeaeaf8bd5a00fa937a0c0ebfdf982875_cgraph">
+<area shape="rect" id="node3" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="205,34,304,62"/><area shape="rect" id="node5" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="352,5,499,33"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="357,55,493,99"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a77c170761e804706933b8eccce1e93ea"></a>
 <div class="memitem">
 <div class="memproto">
@@ -388,18 +443,18 @@ Variables</h2></td></tr>
 <p>Currently, this function should be called from the flight plan</p>
 <dl class="section return"><dt>Returns</dt><dd>return TRUE when the mission is running, FALSE when it is finished </dd></dl>
 
-<p>Definition at line <a class="el" href="mission__fw__nav_8c_source.html#l00105">105</a> of file <a class="el" href="mission__fw__nav_8c_source.html">mission_fw_nav.c</a>.</p>
+<p>Definition at line <a class="el" href="mission__fw__nav_8c_source.html#l00132">132</a> of file <a class="el" href="mission__fw__nav_8c_source.html">mission_fw_nav.c</a>.</p>
 
-<p>References <a class="el" href="mission_8h_source.html#l00096">_mission::current_idx</a>, <a class="el" href="energy__ctrl_8c_source.html#l00269">dt_navigation</a>, <a class="el" href="mission_8h_source.html#l00082">_mission_element::duration</a>, <a class="el" href="struct__mission__element.html#a2efe76a501cfa729c68906ff9fe30676">_mission_element::element</a>, <a class="el" href="mission_8h_source.html#l00094">_mission::element_time</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="mission_8c_source.html#l00036">mission</a>, <a class="el" href="mission_8h_source.html#l00078">_mission_element::mission_circle</a>, <a class="el" href="mission_8c_source.html#l00080">mission_get()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00057">mission_nav_circle()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00079">mission_nav_path()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00066">mission_nav_segment()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00043">mission_nav_wp()</a>, <a class="el" href="mission_8h_source.html#l00080">_mission_element::mission_path</a>, <a class="el" href="mission_8h_source.html#l00079">_mission_element::mission_segment</a>, <a class="el" href="mission_8h_source.html#l00077">_mission_element::mission_wp</a>, <a class="el" href="mission_8h_source.html#l00038">MissionCircle</a>, <a class="el" href="mission_8h_source.html#l00040">MissionPath</a>, <a class="el" href="mission_8h_source.html#l00039">MissionSegment</a>, <a class="el" href="mission_8h_source.html#l00037">MissionWP</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, and <a class="el" href="mission_8h_source.html#l00075">_mission_element::type</a>.</p>
+<p>References <a class="el" href="mission__common_8h_source.html#l00116">_mission::current_idx</a>, <a class="el" href="energy__ctrl_8c_source.html#l00269">dt_navigation</a>, <a class="el" href="mission__common_8h_source.html#l00102">_mission_element::duration</a>, <a class="el" href="struct__mission__element.html#a701ab2fef4af4f9bc86e76b5cc17f3a5">_mission_element::element</a>, <a class="el" href="mission__common_8h_source.html#l00114">_mission::element_time</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="mission__common_8c_source.html#l00036">mission</a>, <a class="el" href="mission__common_8h_source.html#l00097">_mission_element::mission_circle</a>, <a class="el" href="mission__common_8h_source.html#l00109">MISSION_ELEMENT_NB</a>, <a class="el" href="mission__common_8c_source.html#l00089">mission_get()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00083">mission_nav_circle()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00105">mission_nav_path()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00092">mission_nav_segment()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00069">mission_nav_wp()</a>, <a class="el" href="mission__common_8h_source.html#l00099">_mission_element::mission_path</a>, <a class="el" href="mission__common_8h_source.html#l00098">_mission_element::mission_segment</a>, <a class="el" href="mission__common_8h_source.html#l00096">_mission_element::mission_wp</a>, <a class="el" href="mission__common_8h_source.html#l00039">MissionCircle</a>, <a class="el" href="mission__common_8h_source.html#l00041">MissionPath</a>, <a class="el" href="mission__common_8h_source.html#l00040">MissionSegment</a>, <a class="el" href="mission__common_8h_source.html#l00038">MissionWP</a>, <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>, and <a class="el" href="mission__common_8h_source.html#l00094">_mission_element::type</a>.</p>
 
-<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mission__fw__nav_8c_a77c170761e804706933b8eccce1e93ea_cgraph.png" border="0" usemap="#mission__fw__nav_8c_a77c170761e804706933b8eccce1e93ea_cgraph" alt=""/></div>
 <map name="mission__fw__nav_8c_a77c170761e804706933b8eccce1e93ea_cgraph" id="mission__fw__nav_8c_a77c170761e804706933b8eccce1e93ea_cgraph">
-<area shape="rect" id="node3" href="mission_8c.html#ad6fd0022684bf2c6fda1f9626c13cfc4" title="Get current mission element." alt="" coords="185,13,284,41"/><area shape="rect" id="node5" href="mission__fw__nav_8c.html#a14831a73e604ff798ed1f0bc7f871e02" title="Navigation function on a circle." alt="" coords="164,215,305,243"/><area shape="rect" id="node46" href="mission__fw__nav_8c.html#a1039c6cd8dd27b784412d6e9cee0d091" title="Navigation function along a path." alt="" coords="167,114,303,142"/><area shape="rect" id="node48" href="mission__fw__nav_8c.html#a5c42cd8acf9fd5c504a993ea3cf91a6a" title="Navigation function to a single waypoint." alt="" coords="365,165,491,193"/><area shape="rect" id="node60" href="mission__fw__nav_8c.html#a152a2539d75d45caa437fce535b9e6ab" title="Navigation function along a segment." alt="" coords="152,63,317,91"/><area shape="rect" id="node7" href="nav_8c.html#ad1b9d2e8da4a32477ca8bedc0bca86fe" title="Navigates around (x, y)." alt="" coords="375,215,481,243"/><area shape="rect" id="node9" href="nav_8c.html#ae9d11d2e378b23ecbee86419cbf341f0" title="Computes desired_x, desired_y and desired_course." alt="" coords="576,165,653,193"/><area shape="rect" id="node15" href="group__state__velocity.html#ga29dc407c432a84bed993054af670cf4a" title="Get norm of horizontal ground speed (float)." alt="" coords="740,165,969,193"/><area shape="rect" id="node19" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float)." alt="" coords="773,114,936,142"/><area shape="rect" id="node11" href="group__state__velocity.html#gaf16409f23300380a2a5a84cb77f5305a" title="Get dir of horizontal ground speed (float)." alt="" coords="748,223,961,251"/><area shape="rect" id="node13" href="group__state__velocity.html#gad9b7b6ea39d5a4ee3e824f97204c4bb5" title="stateCalcHorizontalSpeed\lDir_f" alt="" coords="1020,223,1207,267"/><area shape="rect" id="node17" href="group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title="stateCalcHorizontalSpeed\lNorm_f" alt="" coords="1020,157,1207,201"/><area shape="rect" id="node21" href="group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title="stateCalcPositionEnu_f" alt="" coords="1031,106,1196,134"/><area shape="rect" id="node23" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1443,5,1592,33"/><area shape="rect" id="node25" href="pprz__geodetic__int_8c.html#a710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="1256,106,1395,134"/><area shape="rect" id="node29" href="pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title="enu_of_lla_point_f" alt="" coords="1257,55,1393,83"/><area shape="rect" id="node34" href="pprz__geodetic__int_8c.html#a386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="1276,157,1375,185"/><area shape="rect" id="node38" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="1276,207,1375,235"/><area shape="rect" id="node27" href="pprz__geodetic__int_8c.html#a85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="1444,106,1591,134"/><area shape="rect" id="node31" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1468,55,1567,83"/><area shape="rect" id="node36" href="pprz__geodetic__double_8c.html#a33dae600eb50aea456b6cdbeec53c849" title="ecef_of_lla_d" alt="" coords="1465,157,1569,185"/><area shape="rect" id="node40" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1444,207,1591,235"/><area shape="rect" id="node42" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1449,258,1585,302"/><area shape="rect" id="node51" href="nav_8c.html#a771b907350b836982ba4e31fd4bcbf4b" title="Decide if the UAV is approaching the current waypoint." alt="" coords="539,114,691,142"/><area shape="rect" id="node56" href="nav_8c.html#ab4247c9f3dc0417690e1404add032cbe" title="Computes the carrot position along the desired segment." alt="" coords="375,63,481,91"/></map>
+<area shape="rect" id="node3" href="mission__common_8c.html#ad6fd0022684bf2c6fda1f9626c13cfc4" title="Get current mission element." alt="" coords="185,13,284,41"/><area shape="rect" id="node5" href="mission__fw__nav_8c.html#a14831a73e604ff798ed1f0bc7f871e02" title="Navigation function on a circle." alt="" coords="164,215,305,243"/><area shape="rect" id="node46" href="mission__fw__nav_8c.html#a1039c6cd8dd27b784412d6e9cee0d091" title="Navigation function along a path." alt="" coords="167,114,303,142"/><area shape="rect" id="node48" href="mission__fw__nav_8c.html#a5c42cd8acf9fd5c504a993ea3cf91a6a" title="Navigation function to a single waypoint." alt="" coords="365,165,491,193"/><area shape="rect" id="node60" href="mission__fw__nav_8c.html#a152a2539d75d45caa437fce535b9e6ab" title="Navigation function along a segment." alt="" coords="152,63,317,91"/><area shape="rect" id="node7" href="nav_8c.html#ad1b9d2e8da4a32477ca8bedc0bca86fe" title="Navigates around (x, y)." alt="" coords="375,215,481,243"/><area shape="rect" id="node9" href="nav_8c.html#ae9d11d2e378b23ecbee86419cbf341f0" title="Computes desired_x, desired_y and desired_course." alt="" coords="576,165,653,193"/><area shape="rect" id="node15" href="group__state__velocity.html#ga29dc407c432a84bed993054af670cf4a" title="Get norm of horizontal ground speed (float)." alt="" coords="740,165,969,193"/><area shape="rect" id="node19" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float)." alt="" coords="773,114,936,142"/><area shape="rect" id="node11" href="group__state__velocity.html#gaf16409f23300380a2a5a84cb77f5305a" title="Get dir of horizontal ground speed (float)." alt="" coords="748,223,961,251"/><area shape="rect" id="node13" href="group__state__velocity.html#gad9b7b6ea39d5a4ee3e824f97204c4bb5" title="stateCalcHorizontalSpeed\lDir_f" alt="" coords="1020,223,1207,267"/><area shape="rect" id="node17" href="group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title="stateCalcHorizontalSpeed\lNorm_f" alt="" coords="1020,157,1207,201"/><area shape="rect" id="node21" href="group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title="stateCalcPositionEnu_f" alt="" coords="1031,106,1196,134"/><area shape="rect" id="node23" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1443,5,1592,33"/><area shape="rect" id="node25" href="pprz__geodetic__int_8c.html#a710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU." alt="" coords="1256,106,1395,134"/><area shape="rect" id="node29" href="pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title="enu_of_lla_point_f" alt="" coords="1257,55,1393,83"/><area shape="rect" id="node34" href="pprz__geodetic__int_8c.html#a386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="1276,157,1375,185"/><area shape="rect" id="node38" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="1276,207,1375,235"/><area shape="rect" id="node27" href="pprz__geodetic__int_8c.html#a85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU." alt="" coords="1444,106,1591,134"/><area shape="rect" id="node31" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1468,55,1567,83"/><area shape="rect" id="node36" href="pprz__geodetic__double_8c.html#a33dae600eb50aea456b6cdbeec53c849" title="ecef_of_lla_d" alt="" coords="1465,157,1569,185"/><area shape="rect" id="node40" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1444,207,1591,235"/><area shape="rect" id="node42" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1449,258,1585,302"/><area shape="rect" id="node51" href="nav_8c.html#a771b907350b836982ba4e31fd4bcbf4b" title="Decide if the UAV is approaching the current waypoint." alt="" coords="539,114,691,142"/><area shape="rect" id="node56" href="nav_8c.html#ab4247c9f3dc0417690e1404add032cbe" title="Computes the carrot position along the desired segment." alt="" coords="375,63,481,91"/></map>
 </div>
 </p>
 
@@ -416,21 +471,21 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mission__fw__nav_8c_source.html#l00036">36</a> of file <a class="el" href="mission__fw__nav_8c_source.html">mission_fw_nav.c</a>.</p>
+<p>Definition at line <a class="el" href="mission__fw__nav_8c_source.html#l00062">62</a> of file <a class="el" href="mission__fw__nav_8c_source.html">mission_fw_nav.c</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a5c355b0a617031a9c949b4fda4727d07"></a>
+<a class="anchor" id="ace2e9ed0bbdd8359ab176ae004a2d957"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structEnuCoor__f.html">EnuCoor_f</a> last_wp = { 0., 0., 0. }</td>
+          <td class="memname">struct <a class="el" href="structEnuCoor__f.html">EnuCoor_f</a> last_wp_f = { 0., 0., 0. }</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mission__fw__nav_8c_source.html#l00039">39</a> of file <a class="el" href="mission__fw__nav_8c_source.html">mission_fw_nav.c</a>.</p>
+<p>Definition at line <a class="el" href="mission__fw__nav_8c_source.html#l00065">65</a> of file <a class="el" href="mission__fw__nav_8c_source.html">mission_fw_nav.c</a>.</p>
 
 </div>
 </div>
@@ -440,7 +495,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_6eed4cd5dc7f8396232b71b94973ca94.html">mission</a></li><li class="navelem"><a class="el" href="mission__fw__nav_8c.html">mission_fw_nav.c</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:01:01 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:01:01 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -156,6 +156,9 @@ $(document).ready(function(){initNavTree('functions_0x62.html','');});
 : <a class="el" href="structbmp180__baro__calibration.html#a55bbeffe127b8df20fee3a688d7f695d">bmp180_baro_calibration</a>
 , <a class="el" href="structBmp085Calib.html#a3bc67d7f05a470be926da3b7aa5bf533">Bmp085Calib</a>
 </li>
+<li>b2i_set_current
+: <a class="el" href="structImu.html#a4ccb08fe4c14a871fdde308e98ed6641">Imu</a>
+</li>
 <li>b5
 : <a class="el" href="structbmp180__baro__calibration.html#aed929d432468a0fbb0aad97e9d0e600f">bmp180_baro_calibration</a>
 , <a class="el" href="structBmp085Calib.html#a3b21230fc466db6e93c5f305ea215259">Bmp085Calib</a>
@@ -238,12 +241,12 @@ $(document).ready(function(){initNavTree('functions_0x62.html','');});
 : <a class="el" href="structspi__transaction.html#a34d366d59c97ab1993da279ec6c19658">spi_transaction</a>
 </li>
 <li>bias
-: <a class="el" href="structVff.html#a5795cb080f2f001246bd022934a493b3">Vff</a>
-, <a class="el" href="structinv__state.html#a363c8991de51d0315d2d6e0826da3cad">inv_state</a>
+: <a class="el" href="structinv__state.html#a363c8991de51d0315d2d6e0826da3cad">inv_state</a>
+, <a class="el" href="structVff.html#a5795cb080f2f001246bd022934a493b3">Vff</a>
 , <a class="el" href="structVffExtended.html#a7be08e6e4db5397f008987f282880515">VffExtended</a>
 </li>
 <li>bind_mfg_id
-: <a class="el" href="structSuperbitRF.html#a1c22d1c64e75fc9579b2c644d64f0a15">SuperbitRF</a>
+: <a class="el" href="structSuperbitRF.html#ab3f9d45e18d60723959bf377f6db6975">SuperbitRF</a>
 </li>
 <li>bind_mfg_id32
 : <a class="el" href="structSuperbitRF.html#a0028d05d0053a49089b8380425ce3d2f">SuperbitRF</a>
@@ -263,21 +266,9 @@ $(document).ready(function(){initNavTree('functions_0x62.html','');});
 <li>body_rates_i
 : <a class="el" href="group__state__rate.html#gac383a9698fc97dca5d56ef455babfa71">State</a>
 </li>
-<li>body_to_imu_eulers
-: <a class="el" href="structImuFloat.html#a3249aead96a7995e642cdd6911b7956f">ImuFloat</a>
-</li>
-<li>body_to_imu_quat
-: <a class="el" href="structImuFloat.html#aefb97d688ccc0e607c2ddeee87be135a">ImuFloat</a>
-, <a class="el" href="structAhrsFloatCmpl.html#a98abe3d6120a3d6370a806302f6f32ac">AhrsFloatCmpl</a>
-, <a class="el" href="structAhrsMlkf.html#a7a1b9aa49c0918a947e59cb9c3362aea">AhrsMlkf</a>
-, <a class="el" href="structImu.html#a5dd001e15dc85abf5ae465ed3ce554e5">Imu</a>
-</li>
-<li>body_to_imu_rmat
-: <a class="el" href="structImu.html#a6e7552a275a56f8eebd5a2fc960c9f4b">Imu</a>
-, <a class="el" href="structAhrsFloatCmpl.html#ad60716869b58fc22fba5b2cd9fcae7c3">AhrsFloatCmpl</a>
-, <a class="el" href="structAhrsMlkf.html#a705ab1b4fef290e53615235a98969c81">AhrsMlkf</a>
-, <a class="el" href="structImuFloat.html#a88c18f9466813f6460261f3548e37fbb">ImuFloat</a>
-, <a class="el" href="structAhrsFloatDCM.html#afa688a884bc7215ae721f2c30303b3cf">AhrsFloatDCM</a>
+<li>body_to_imu
+: <a class="el" href="structImu.html#a3ce3df3bf961804f9af1616e53b98b7f">Imu</a>
+, <a class="el" href="structImuFloat.html#ab5b58b38510d7571cc1d9c58a723c14d">ImuFloat</a>
 </li>
 <li>bParityType
 : <a class="el" href="structTLineCoding.html#a7e1e2fedd32383b44d0b03868f6d059e">TLineCoding</a>
@@ -286,17 +277,17 @@ $(document).ready(function(){initNavTree('functions_0x62.html','');});
 : <a class="el" href="structlocm3__spi__comm.html#a55b34bbb72c17eddd97cea1867868d80">locm3_spi_comm</a>
 </li>
 <li>buf
-: <a class="el" href="structHmc5843.html#aa412be64bb1d1bb528accac3f73d1a90">Hmc5843</a>
-, <a class="el" href="structAoa__Adc.html#aafa95cd077dfe80481bc0f89e88687cb">Aoa_Adc</a>
-, <a class="el" href="structi2c__msg.html#a18a0ec0f4f45577ea2b751b984b00762">i2c_msg</a>
-, <a class="el" href="structfifo__t.html#a6179dabda649717df17b5a38dbf0d744">fifo_t</a>
-, <a class="el" href="structBaroBoard.html#ae0641a99787ef38d44a1b429e584d6fe">BaroBoard</a>
+: <a class="el" href="structBaroBoard.html#ae0641a99787ef38d44a1b429e584d6fe">BaroBoard</a>
 , <a class="el" href="structi2c__transaction.html#a295b2671835ae06b28905433cd1096ee">i2c_transaction</a>
+, <a class="el" href="structi2c__msg.html#a18a0ec0f4f45577ea2b751b984b00762">i2c_msg</a>
+, <a class="el" href="structHmc5843.html#aa412be64bb1d1bb528accac3f73d1a90">Hmc5843</a>
+, <a class="el" href="structfifo__t.html#a6179dabda649717df17b5a38dbf0d744">fifo_t</a>
+, <a class="el" href="structAoa__Adc.html#aafa95cd077dfe80481bc0f89e88687cb">Aoa_Adc</a>
 </li>
 <li>buffer
-: <a class="el" href="structCyrf6936.html#a8f8ad7b672b42a6f2c272c8316bd2102">Cyrf6936</a>
-, <a class="el" href="struct__sbus.html#a8c779f162d54b93d941313ffb947341d">_sbus</a>
+: <a class="el" href="struct__sbus.html#a8c779f162d54b93d941313ffb947341d">_sbus</a>
 , <a class="el" href="structnavdata__port.html#afcd50543f67d689f7733a43c44116c06">navdata_port</a>
+, <a class="el" href="structCyrf6936.html#a8f8ad7b672b42a6f2c272c8316bd2102">Cyrf6936</a>
 </li>
 <li>buffer_idx
 : <a class="el" href="structCyrf6936.html#a34f548bf3fa4f65b9de6b2f90101220f">Cyrf6936</a>
@@ -319,7 +310,7 @@ $(document).ready(function(){initNavTree('functions_0x62.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon May 26 2014 16:01:21 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:01:21 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

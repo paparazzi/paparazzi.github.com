@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('ins_8c_source.html','');});
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">struct </span><a class="code" href="structLlaCoor__f.html" title="vector in Latitude, Longitude and Altitude">LlaCoor_f</a> lla0;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455">lla_of_utm_f</a>(&amp;lla0, utm);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#ifdef GPS_USE_LATLONG</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor"></span>  utm-&gt;<a class="code" href="structUtmCoor__f.html#a86adc8b9ebb389f4716c6c569a0b5d91" title="UTM zone number.">zone</a> = (DegOfRad(<a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#a298552f8926fd925f8c94bbeeca1dc5c" title="position in LLA (lat,lon: rad*1e7; alt: mm over ellipsoid)">lla_pos</a>.<a class="code" href="structLlaCoor__i.html#ad6a02c197a16ad76cf794e6e4935f5c9" title="in radians*1e7">lon</a>/1e7)+180) / 6 + 1;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor"></span>  utm-&gt;<a class="code" href="structUtmCoor__f.html#a86adc8b9ebb389f4716c6c569a0b5d91" title="UTM zone number.">zone</a> = (<a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#a298552f8926fd925f8c94bbeeca1dc5c" title="position in LLA (lat,lon: deg*1e7; alt: mm over ellipsoid)">lla_pos</a>.<a class="code" href="structLlaCoor__i.html#ad6a02c197a16ad76cf794e6e4935f5c9" title="in degrees*1e7">lon</a>/1e7 + 180) / 6 + 1;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor"></span>  utm-&gt;<a class="code" href="structUtmCoor__f.html#a86adc8b9ebb389f4716c6c569a0b5d91" title="UTM zone number.">zone</a> = <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state">gps</a>.<a class="code" href="structGpsState.html#a2cf3685a890a6200b334b2c399102ffa" title="position in UTM (north,east: cm; alt: mm over ellipsoid)">utm_pos</a>.<a class="code" href="structUtmCoor__i.html#a6d4bf413c00434d016a1e35ae4d1cc86" title="UTM zone number.">zone</a>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -175,7 +175,7 @@ $(document).ready(function(){initNavTree('ins_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="ins_8c.html">ins.c</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:00:46 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:00:46 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -180,11 +180,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="ahrs__float__cmpl_8c_source.html#l00526">526</a> of file <a class="el" href="ahrs__float__cmpl_8c_source.html">ahrs_float_cmpl.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__float__cmpl_8c_source.html#l00529">529</a> of file <a class="el" href="ahrs__float__cmpl_8c_source.html">ahrs_float_cmpl.c</a>.</p>
 
-<p>References <a class="el" href="ahrs__ardrone2_8c_source.html#l00045">ahrs_impl</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00093">FLOAT_ANGLE_NORMALIZE</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00631">FLOAT_QUAT_COMP</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00624">FLOAT_QUAT_COMP_NORM_SHORTEST</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00656">FLOAT_QUAT_INV_COMP_NORM_SHORTEST</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00507">FLOAT_QUAT_NORMALIZE</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00409">FLOAT_RMAT_OF_QUAT</a>, <a class="el" href="ahrs__ardrone2_8h_source.html#l00046">AhrsARDrone::ltp_to_imu_quat</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00058">FloatQuat::qi</a>, <a class="el" href="pprz__algebra_8h_source.html#l00512">QUAT_COPY</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00059">FloatQuat::qx</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00060">FloatQuat::qy</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00061">FloatQuat::qz</a>, <a class="el" href="state_8h_source.html#l01017">stateGetNedToBodyQuat_f()</a>, <a class="el" href="state_8h_source.html#l00985">stateSetNedToBodyQuat_f()</a>, and <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>.</p>
+<p>References <a class="el" href="ahrs__ardrone2_8c_source.html#l00045">ahrs_impl</a>, <a class="el" href="imu_8h_source.html#l00052">Imu::body_to_imu</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00093">FLOAT_ANGLE_NORMALIZE</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00631">FLOAT_QUAT_COMP</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00624">FLOAT_QUAT_COMP_NORM_SHORTEST</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00656">FLOAT_QUAT_INV_COMP_NORM_SHORTEST</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00507">FLOAT_QUAT_NORMALIZE</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00409">FLOAT_RMAT_OF_QUAT</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00047">imu</a>, <a class="el" href="ahrs__ardrone2_8h_source.html#l00046">AhrsARDrone::ltp_to_imu_quat</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00201">orientationGetQuat_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00058">FloatQuat::qi</a>, <a class="el" href="pprz__algebra_8h_source.html#l00512">QUAT_COPY</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00059">FloatQuat::qx</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00060">FloatQuat::qy</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00061">FloatQuat::qz</a>, <a class="el" href="state_8h_source.html#l01017">stateGetNedToBodyQuat_f()</a>, <a class="el" href="state_8h_source.html#l00985">stateSetNedToBodyQuat_f()</a>, and <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__cmpl_8c_source.html#l00456">ahrs_update_gps()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__cmpl_8c_source.html#l00459">ahrs_update_gps()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -193,7 +193,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__cmpl_8h_a542422de172f1f25b7987850825cb587_cgraph.png" border="0" usemap="#ahrs__float__cmpl_8h_a542422de172f1f25b7987850825cb587_cgraph" alt=""/></div>
 <map name="ahrs__float__cmpl_8h_a542422de172f1f25b7987850825cb587_cgraph" id="ahrs__float__cmpl_8h_a542422de172f1f25b7987850825cb587_cgraph">
-<area shape="rect" id="node3" href="group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float)." alt="" coords="215,5,404,33"/><area shape="rect" id="node9" href="group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float)." alt="" coords="215,55,404,83"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float)." alt="" coords="455,5,609,33"/><area shape="rect" id="node7" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title="orientationCalcQuat_f" alt="" coords="659,5,819,33"/><area shape="rect" id="node11" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="455,55,609,83"/></map>
+<area shape="rect" id="node3" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float)." alt="" coords="455,5,609,33"/><area shape="rect" id="node7" href="group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float)." alt="" coords="215,30,404,58"/><area shape="rect" id="node10" href="group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float)." alt="" coords="215,81,404,109"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title="orientationCalcQuat_f" alt="" coords="659,5,819,33"/><area shape="rect" id="node12" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float)." alt="" coords="455,81,609,109"/></map>
 </div>
 </p>
 
@@ -233,11 +233,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="ahrs__float__cmpl_8c_source.html#l00488">488</a> of file <a class="el" href="ahrs__float__cmpl_8c_source.html">ahrs_float_cmpl.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__float__cmpl_8c_source.html#l00491">491</a> of file <a class="el" href="ahrs__float__cmpl_8c_source.html">ahrs_float_cmpl.c</a>.</p>
 
 <p>References <a class="el" href="ahrs__ardrone2_8c_source.html#l00045">ahrs_impl</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00093">FLOAT_ANGLE_NORMALIZE</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00201">FLOAT_RATES_ADD_SCALED_VECT</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00299">FLOAT_RMAT_VECT3_MUL</a>, <a class="el" href="pprz__algebra_8h_source.html#l00573">RMAT_ELMT</a>, <a class="el" href="state_8h_source.html#l01022">stateGetNedToBodyRMat_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00044">FloatVect2::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00045">FloatVect2::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00051">FloatVect3::z</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__cmpl_8c_source.html#l00456">ahrs_update_gps()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__cmpl_8c_source.html#l00459">ahrs_update_gps()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -284,7 +284,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_46fef683200e96ccf1a2f608d90c4a2d.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__float__cmpl_8h.html">ahrs_float_cmpl.h</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:01:06 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:01:06 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

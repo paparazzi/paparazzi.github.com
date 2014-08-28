@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('cyrf6936_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cyrf6936_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2peripherals_2cyrf6936_8hdep" alt=""/></div>
 <map name="sw_2airborne_2peripherals_2cyrf6936_8hdep" id="sw_2airborne_2peripherals_2cyrf6936_8hdep">
-<area shape="rect" id="node3" href="cyrf6936_8c.html" title="Driver for the cyrf6936 2.4GHz radio chip." alt="" coords="5,99,176,143"/><area shape="rect" id="node5" href="superbitrf_8h.html" title="DSM2 and DSMX datalink implementation for the cyrf6936 2.4GHz radio chip trough SPI." alt="" coords="200,99,376,143"/><area shape="rect" id="node7" href="superbitrf_8c.html" title="DSM2 and DSMX datalink implementation for the cyrf6936 2.4GHz radio chip trough SPI." alt="" coords="92,193,268,237"/><area shape="rect" id="node9" href="superbitrf__rc_8h.html" title="DSM2 and DSMX radio control implementation for the cyrf6936 2.4GHz radio chip trough SPI..." alt="" coords="292,193,497,237"/><area shape="rect" id="node11" href="superbitrf__rc_8c.html" title="DSM2 and DSMX radio control implementation for the cyrf6936 2.4GHz radio chip trough SPI..." alt="" coords="293,286,496,330"/></map>
+<area shape="rect" id="node3" href="cyrf6936_8c.html" title="Driver for the cyrf6936 2.4GHz radio chip." alt="" coords="5,99,176,143"/><area shape="rect" id="node5" href="subsystems_2datalink_2superbitrf_8h.html" title="sw/airborne/subsystems\l/datalink/superbitrf.h" alt="" coords="200,99,376,143"/><area shape="rect" id="node7" href="arch_2sim_2subsystems_2datalink_2superbitrf_8c.html" title="DSM2 and DSMX datalink implementation for the cyrf6936 2.4GHz radio chip trough SPI." alt="" coords="19,193,176,253"/><area shape="rect" id="node9" href="subsystems_2datalink_2superbitrf_8c.html" title="sw/airborne/subsystems\l/datalink/superbitrf.c" alt="" coords="200,201,376,245"/><area shape="rect" id="node11" href="superbitrf__rc_8h.html" title="DSM2 and DSMX radio control implementation for the cyrf6936 2.4GHz radio chip trough SPI..." alt="" coords="400,201,605,245"/><area shape="rect" id="node13" href="superbitrf__rc_8c.html" title="DSM2 and DSMX radio control implementation for the cyrf6936 2.4GHz radio chip trough SPI..." alt="" coords="401,302,604,346"/></map>
 </div>
 </div>
 <p><a href="cyrf6936_8h_source.html">Go to the source code of this file.</a></p>
@@ -325,7 +325,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="spi_8h_source.html#l00152">spi_transaction::bitorder</a>, <a class="el" href="cyrf6936_8h_source.html#l00057">Cyrf6936::buffer_idx</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::cdiv</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::cpha</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::cpol</a>, <a class="el" href="cyrf6936_8h_source.html#l00039">CYRF6936_GET_MFG_ID</a>, <a class="el" href="cyrf6936_8h_source.html#l00037">CYRF6936_UNINIT</a>, <a class="el" href="cyrf6936_8c_source.html#l00257">cyrf6936_write_register()</a>, <a class="el" href="cyrf6936__regs_8h_source.html#l00069">CYRF_MFG_ID</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::dss</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="omap_2mcu__periph_2gpio__arch_8h.html#aa94dfa6db378d98566e22e193c7a8ab7">gpio_clear()</a>, <a class="el" href="omap_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85">gpio_set()</a>, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h_source.html#l00076">gpio_setup_output()</a>, <a class="el" href="cyrf6936_8h_source.html#l00059">Cyrf6936::has_irq</a>, <a class="el" href="cyrf6936_8h_source.html#l00052">Cyrf6936::input_buf</a>, <a class="el" href="spi_8h_source.html#l00143">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="cyrf6936_8h_source.html#l00053">Cyrf6936::output_buf</a>, <a class="el" href="spi_8h_source.html#l00144">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="spi_8h_source.html#l00148">spi_transaction::select</a>, <a class="el" href="spi_8h_source.html#l00147">spi_transaction::slave_idx</a>, <a class="el" href="cyrf6936_8h_source.html#l00049">Cyrf6936::spi_p</a>, <a class="el" href="cyrf6936_8h_source.html#l00050">Cyrf6936::spi_t</a>, <a class="el" href="spi_8h_source.html#l00068">SPICphaEdge1</a>, <a class="el" href="spi_8h_source.html#l00077">SPICpolIdleLow</a>, <a class="el" href="spi_8h_source.html#l00119">SPIDiv64</a>, <a class="el" href="spi_8h_source.html#l00084">SPIDss8bit</a>, <a class="el" href="spi_8h_source.html#l00106">SPIMSBFirst</a>, <a class="el" href="spi_8h_source.html#l00057">SPISelectUnselect</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="cyrf6936_8h_source.html#l00051">Cyrf6936::status</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, and <a class="el" href="lpc21_2mcu__periph_2sys__time__arch_8h_source.html#l00085">sys_time_usleep()</a>.</p>
 
-<p>Referenced by <a class="el" href="superbitrf_8c_source.html#l00202">superbitrf_init()</a>.</p>
+<p>Referenced by <a class="el" href="subsystems_2datalink_2superbitrf_8c_source.html#l00203">superbitrf_init()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -345,7 +345,7 @@ Functions</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cyrf6936_8h_a27414d1e4d63182c97357b576f05b37d_icgraph.png" border="0" usemap="#cyrf6936_8h_a27414d1e4d63182c97357b576f05b37d_icgraph" alt=""/></div>
 <map name="cyrf6936_8h_a27414d1e4d63182c97357b576f05b37d_icgraph" id="cyrf6936_8h_a27414d1e4d63182c97357b576f05b37d_icgraph">
-<area shape="rect" id="node3" href="superbitrf_8h.html#a7b9a2741375ca1dffc4f2e6a6d7a9307" title="Initialize the superbitrf." alt="" coords="157,5,267,33"/><area shape="rect" id="node5" href="superbitrf__rc_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832" title="Initialization." alt="" coords="315,5,480,33"/></map>
+<area shape="rect" id="node3" href="subsystems_2datalink_2superbitrf_8h.html#a7b9a2741375ca1dffc4f2e6a6d7a9307" title="Initialize the superbitrf." alt="" coords="157,5,267,33"/><area shape="rect" id="node5" href="superbitrf__rc_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832" title="Initialization." alt="" coords="315,5,480,33"/></map>
 </div>
 </p>
 
@@ -387,7 +387,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="cyrf6936_8h_source.html#l00055">Cyrf6936::buffer</a>, <a class="el" href="cyrf6936_8h_source.html#l00057">Cyrf6936::buffer_idx</a>, <a class="el" href="cyrf6936_8h_source.html#l00056">Cyrf6936::buffer_length</a>, <a class="el" href="cyrf6936_8h_source.html#l00038">CYRF6936_IDLE</a>, <a class="el" href="cyrf6936_8h_source.html#l00040">CYRF6936_MULTIWRITE</a>, <a class="el" href="cyrf6936_8c_source.html#l00257">cyrf6936_write_register()</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="cyrf6936_8h_source.html#l00051">Cyrf6936::status</a>, and <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>.</p>
 
-<p>Referenced by <a class="el" href="cyrf6936_8c_source.html#l00309">cyrf6936_write()</a>, <a class="el" href="superbitrf_8c_source.html#l00231">superbitrf_event()</a>, and <a class="el" href="superbitrf_8c_source.html#l00668">superbitrf_receive_packet_cb()</a>.</p>
+<p>Referenced by <a class="el" href="cyrf6936_8c_source.html#l00309">cyrf6936_write()</a>, <a class="el" href="subsystems_2datalink_2superbitrf_8c_source.html#l00254">superbitrf_event()</a>, and <a class="el" href="subsystems_2datalink_2superbitrf_8c_source.html#l00696">superbitrf_receive_packet_cb()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -407,7 +407,7 @@ Functions</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cyrf6936_8h_aea93d334c6b5a34fd4fe091651615899_icgraph.png" border="0" usemap="#cyrf6936_8h_aea93d334c6b5a34fd4fe091651615899_icgraph" alt=""/></div>
 <map name="cyrf6936_8h_aea93d334c6b5a34fd4fe091651615899_icgraph" id="cyrf6936_8h_aea93d334c6b5a34fd4fe091651615899_icgraph">
-<area shape="rect" id="node3" href="cyrf6936_8h.html#ad5821facd4c9ce68d5ac64984a054f56" title="Write to one register." alt="" coords="219,5,333,33"/><area shape="rect" id="node5" href="superbitrf_8h.html#a3dba487ecc02fb6e7bdde994032fd795" title="The superbitrf on event call." alt="" coords="393,55,519,83"/><area shape="rect" id="node8" href="superbitrf_8c.html#a10ae8912122fcdfc6328fabc37833835" title="When we receive a packet this callback is called." alt="" coords="208,106,344,150"/></map>
+<area shape="rect" id="node3" href="cyrf6936_8h.html#ad5821facd4c9ce68d5ac64984a054f56" title="Write to one register." alt="" coords="219,5,333,33"/><area shape="rect" id="node5" href="subsystems_2datalink_2superbitrf_8h.html#a3dba487ecc02fb6e7bdde994032fd795" title="The superbitrf on event call." alt="" coords="393,55,519,83"/><area shape="rect" id="node8" href="subsystems_2datalink_2superbitrf_8c.html#a10ae8912122fcdfc6328fabc37833835" title="When we receive a packet this callback is called." alt="" coords="208,106,344,150"/></map>
 </div>
 </p>
 
@@ -433,7 +433,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="cyrf6936_8h_source.html#l00057">Cyrf6936::buffer_idx</a>, <a class="el" href="cyrf6936_8h_source.html#l00038">CYRF6936_IDLE</a>, <a class="el" href="cyrf6936_8c_source.html#l00286">cyrf6936_read_register()</a>, <a class="el" href="cyrf6936_8h_source.html#l00043">CYRF6936_RX_IRQ_STATUS_PACKET</a>, <a class="el" href="cyrf6936__regs_8h_source.html#l00039">CYRF_RX_IRQ_STATUS</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="cyrf6936_8h_source.html#l00051">Cyrf6936::status</a>, and <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>.</p>
 
-<p>Referenced by <a class="el" href="superbitrf_8c_source.html#l00231">superbitrf_event()</a>.</p>
+<p>Referenced by <a class="el" href="subsystems_2datalink_2superbitrf_8c_source.html#l00254">superbitrf_event()</a>.</p>
 
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -453,7 +453,7 @@ Functions</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cyrf6936_8h_ac612fa269771daac99e71f77d36bb182_icgraph.png" border="0" usemap="#cyrf6936_8h_ac612fa269771daac99e71f77d36bb182_icgraph" alt=""/></div>
 <map name="cyrf6936_8h_ac612fa269771daac99e71f77d36bb182_icgraph" id="cyrf6936_8h_ac612fa269771daac99e71f77d36bb182_icgraph">
-<area shape="rect" id="node3" href="superbitrf_8h.html#a3dba487ecc02fb6e7bdde994032fd795" title="The superbitrf on event call." alt="" coords="209,13,335,41"/></map>
+<area shape="rect" id="node3" href="subsystems_2datalink_2superbitrf_8h.html#a3dba487ecc02fb6e7bdde994032fd795" title="The superbitrf on event call." alt="" coords="209,13,335,41"/></map>
 </div>
 </p>
 
@@ -495,7 +495,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="cyrf6936_8h_source.html#l00055">Cyrf6936::buffer</a>, <a class="el" href="cyrf6936_8h_source.html#l00057">Cyrf6936::buffer_idx</a>, <a class="el" href="cyrf6936_8h_source.html#l00038">CYRF6936_IDLE</a>, <a class="el" href="cyrf6936_8h_source.html#l00044">CYRF6936_SEND</a>, <a class="el" href="cyrf6936_8c_source.html#l00257">cyrf6936_write_register()</a>, <a class="el" href="cyrf6936__regs_8h_source.html#l00033">CYRF_TX_LENGTH</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="cyrf6936_8h_source.html#l00051">Cyrf6936::status</a>, and <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>.</p>
 
-<p>Referenced by <a class="el" href="superbitrf_8c_source.html#l00231">superbitrf_event()</a>.</p>
+<p>Referenced by <a class="el" href="subsystems_2datalink_2superbitrf_8c_source.html#l00254">superbitrf_event()</a>.</p>
 
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -515,7 +515,7 @@ Functions</h2></td></tr>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cyrf6936_8h_a0053a9b2d322398bd788e50b4c23a5a7_icgraph.png" border="0" usemap="#cyrf6936_8h_a0053a9b2d322398bd788e50b4c23a5a7_icgraph" alt=""/></div>
 <map name="cyrf6936_8h_a0053a9b2d322398bd788e50b4c23a5a7_icgraph" id="cyrf6936_8h_a0053a9b2d322398bd788e50b4c23a5a7_icgraph">
-<area shape="rect" id="node3" href="superbitrf_8h.html#a3dba487ecc02fb6e7bdde994032fd795" title="The superbitrf on event call." alt="" coords="169,5,295,33"/></map>
+<area shape="rect" id="node3" href="subsystems_2datalink_2superbitrf_8h.html#a3dba487ecc02fb6e7bdde994032fd795" title="The superbitrf on event call." alt="" coords="169,5,295,33"/></map>
 </div>
 </p>
 
@@ -557,7 +557,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="cyrf6936_8c_source.html#l00319">cyrf6936_multi_write()</a>.</p>
 
-<p>Referenced by <a class="el" href="superbitrf_8c_source.html#l00231">superbitrf_event()</a>.</p>
+<p>Referenced by <a class="el" href="subsystems_2datalink_2superbitrf_8c_source.html#l00254">superbitrf_event()</a>.</p>
 
 <p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -577,7 +577,7 @@ Functions</h2></td></tr>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cyrf6936_8h_ad5821facd4c9ce68d5ac64984a054f56_icgraph.png" border="0" usemap="#cyrf6936_8h_ad5821facd4c9ce68d5ac64984a054f56_icgraph" alt=""/></div>
 <map name="cyrf6936_8h_ad5821facd4c9ce68d5ac64984a054f56_icgraph" id="cyrf6936_8h_ad5821facd4c9ce68d5ac64984a054f56_icgraph">
-<area shape="rect" id="node3" href="superbitrf_8h.html#a3dba487ecc02fb6e7bdde994032fd795" title="The superbitrf on event call." alt="" coords="169,5,295,33"/></map>
+<area shape="rect" id="node3" href="subsystems_2datalink_2superbitrf_8h.html#a3dba487ecc02fb6e7bdde994032fd795" title="The superbitrf on event call." alt="" coords="169,5,295,33"/></map>
 </div>
 </p>
 
@@ -631,7 +631,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="cyrf6936_8h_source.html#l00055">Cyrf6936::buffer</a>, <a class="el" href="cyrf6936_8h_source.html#l00057">Cyrf6936::buffer_idx</a>, <a class="el" href="cyrf6936_8h_source.html#l00042">CYRF6936_CHAN_SOP_DATA_CRC</a>, <a class="el" href="cyrf6936_8h_source.html#l00038">CYRF6936_IDLE</a>, <a class="el" href="cyrf6936_8c_source.html#l00257">cyrf6936_write_register()</a>, <a class="el" href="cyrf6936__regs_8h_source.html#l00053">CYRF_CRC_SEED_LSB</a>, <a class="el" href="imu__chimu_8h_source.html#l00141">FALSE</a>, <a class="el" href="cyrf6936_8h_source.html#l00051">Cyrf6936::status</a>, and <a class="el" href="imu__chimu_8h_source.html#l00144">TRUE</a>.</p>
 
-<p>Referenced by <a class="el" href="superbitrf_8c_source.html#l00231">superbitrf_event()</a>.</p>
+<p>Referenced by <a class="el" href="subsystems_2datalink_2superbitrf_8c_source.html#l00254">superbitrf_event()</a>.</p>
 
 <p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -651,7 +651,7 @@ Functions</h2></td></tr>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cyrf6936_8h_ac85bb2b026a6bba48441cf8b1bc0592f_icgraph.png" border="0" usemap="#cyrf6936_8h_ac85bb2b026a6bba48441cf8b1bc0592f_icgraph" alt=""/></div>
 <map name="cyrf6936_8h_ac85bb2b026a6bba48441cf8b1bc0592f_icgraph" id="cyrf6936_8h_ac85bb2b026a6bba48441cf8b1bc0592f_icgraph">
-<area shape="rect" id="node3" href="superbitrf_8h.html#a3dba487ecc02fb6e7bdde994032fd795" title="The superbitrf on event call." alt="" coords="207,13,332,41"/></map>
+<area shape="rect" id="node3" href="subsystems_2datalink_2superbitrf_8h.html#a3dba487ecc02fb6e7bdde994032fd795" title="The superbitrf on event call." alt="" coords="207,13,332,41"/></map>
 </div>
 </p>
 
@@ -663,7 +663,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="cyrf6936_8h.html">cyrf6936.h</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:01:04 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:01:04 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

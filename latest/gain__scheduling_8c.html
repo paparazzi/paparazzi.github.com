@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('gain__scheduling_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gain__scheduling_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2gain__scheduling_2gain__scheduling_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2gain__scheduling_2gain__scheduling_8c" id="sw_2airborne_2modules_2gain__scheduling_2gain__scheduling_8c">
-<area shape="rect" id="node3" href="gain__scheduling_8h.html" title="Module that interpolates between gain sets, depending on the scheduling variable." alt="" coords="156,123,292,151"/><area shape="rect" id="node9" href="guidance__h_8h.html" title="Horizontal guidance for rotorcrafts." alt="" coords="485,115,659,159"/><area shape="rect" id="node11" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="632,326,811,354"/><area shape="rect" id="node37" href="stabilization_8h.html" title="General stabilization interface for rotorcrafts." alt="" coords="853,115,1000,159"/><area shape="rect" id="node28" href="guidance__h__ref_8h.html" title="Reference generation for horizontal guidance." alt="" coords="363,217,557,261"/><area shape="rect" id="node15" href="pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="403,411,557,439"/><area shape="rect" id="node22" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="632,411,781,439"/><area shape="rect" id="node30" href="inttypes_8h.html" title="inttypes.h" alt="" coords="377,326,463,354"/><area shape="rect" id="node41" href="stabilization__none_8h.html" title="Dummy stabilization for rotorcrafts." alt="" coords="733,209,915,269"/><area shape="rect" id="node44" href="stabilization__rate_8h.html" title="Rate stabilization for rotorcrafts." alt="" coords="939,209,1120,269"/><area shape="rect" id="node47" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html" title="General attitude stabilization interface for rotorcrafts." alt="" coords="1195,209,1376,269"/></map>
+<area shape="rect" id="node3" href="gain__scheduling_8h.html" title="Module that interpolates between gain sets, depending on the scheduling variable." alt="" coords="421,123,557,151"/><area shape="rect" id="node9" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="459,326,637,354"/><area shape="rect" id="node27" href="guidance__h_8h.html" title="Horizontal guidance for rotorcrafts." alt="" coords="173,115,347,159"/><area shape="rect" id="node39" href="stabilization_8h.html" title="General stabilization interface for rotorcrafts." alt="" coords="825,115,972,159"/><area shape="rect" id="node7" href="stabilization__attitude__common__int_8h.html" title="Common data structures shared by euler and quaternion int implementations." alt="" coords="399,209,580,269"/><area shape="rect" id="node13" href="pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="209,411,364,439"/><area shape="rect" id="node20" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="529,411,679,439"/><area shape="rect" id="node30" href="guidance__h__ref_8h.html" title="Reference generation for horizontal guidance." alt="" coords="28,217,223,261"/><area shape="rect" id="node32" href="inttypes_8h.html" title="inttypes.h" alt="" coords="163,326,248,354"/><area shape="rect" id="node43" href="stabilization__none_8h.html" title="Dummy stabilization for rotorcrafts." alt="" coords="705,209,887,269"/><area shape="rect" id="node46" href="stabilization__rate_8h.html" title="Rate stabilization for rotorcrafts." alt="" coords="911,209,1092,269"/><area shape="rect" id="node49" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html" title="General attitude stabilization interface for rotorcrafts." alt="" coords="1167,209,1348,269"/></map>
 </div>
 </div>
 <p><a href="gain__scheduling_8c_source.html">Go to the source code of this file.</a></p>
@@ -204,7 +204,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="gain__scheduling_8c_source.html#l00051">51</a> of file <a class="el" href="gain__scheduling_8c_source.html">gain_scheduling.c</a>.</p>
 
-<p>References <a class="el" href="gain__scheduling_8c_source.html#l00046">gainlibrary</a>, <a class="el" href="stabilization__attitude__common__int_8h_source.html#l00039">Int32AttitudeGains::i</a>, and <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00032">stabilization_gains</a>.</p>
+<p>References <a class="el" href="gain__scheduling_8c_source.html#l00046">gainlibrary</a>, <a class="el" href="stabilization__attitude__common__int_8h_source.html#l00039">Int32AttitudeGains::i</a>, and <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00038">stabilization_gains</a>.</p>
 
 </div>
 </div>
@@ -227,7 +227,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="gain__scheduling_8c_source.html#l00081">81</a> of file <a class="el" href="gain__scheduling_8c_source.html">gain_scheduling.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00201">BFP_OF_REAL</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00202">FLOAT_OF_BFP</a>, <a class="el" href="gain__scheduling_8c_source.html#l00046">gainlibrary</a>, <a class="el" href="stabilization__attitude__common__int_8h_source.html#l00039">Int32AttitudeGains::i</a>, <a class="el" href="gain__scheduling_8c_source.html#l00044">INT32_RATIO_FRAC</a>, <a class="el" href="gain__scheduling_8c_source.html#l00048">scheduling_points</a>, <a class="el" href="gain__scheduling_8c_source.html#l00040">SCHEDULING_VARIABLE_FRAC</a>, <a class="el" href="gain__scheduling_8c_source.html#l00128">set_gainset()</a>, and <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00032">stabilization_gains</a>.</p>
+<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00201">BFP_OF_REAL</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00202">FLOAT_OF_BFP</a>, <a class="el" href="gain__scheduling_8c_source.html#l00046">gainlibrary</a>, <a class="el" href="stabilization__attitude__common__int_8h_source.html#l00039">Int32AttitudeGains::i</a>, <a class="el" href="gain__scheduling_8c_source.html#l00044">INT32_RATIO_FRAC</a>, <a class="el" href="gain__scheduling_8c_source.html#l00048">scheduling_points</a>, <a class="el" href="gain__scheduling_8c_source.html#l00040">SCHEDULING_VARIABLE_FRAC</a>, <a class="el" href="gain__scheduling_8c_source.html#l00128">set_gainset()</a>, and <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00038">stabilization_gains</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -258,7 +258,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="gain__scheduling_8c_source.html#l00128">128</a> of file <a class="el" href="gain__scheduling_8c_source.html">gain_scheduling.c</a>.</p>
 
-<p>References <a class="el" href="gain__scheduling_8c_source.html#l00046">gainlibrary</a>, and <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00032">stabilization_gains</a>.</p>
+<p>References <a class="el" href="gain__scheduling_8c_source.html#l00046">gainlibrary</a>, and <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00038">stabilization_gains</a>.</p>
 
 <p>Referenced by <a class="el" href="gain__scheduling_8c_source.html#l00081">gain_scheduling_periodic()</a>.</p>
 
@@ -314,7 +314,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_3240c2d5c4112d4825caf46fc93f74ac.html">gain_scheduling</a></li><li class="navelem"><a class="el" href="gain__scheduling_8c.html">gain_scheduling.c</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:00:59 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:00:59 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

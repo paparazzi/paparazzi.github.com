@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -118,48 +118,56 @@ $(document).ready(function(){initNavTree('pprz__geodetic__wmm2010_8h_source.html
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef WMM2010_H</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WMM2010_H</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#a355ec7441e99aa2036bd3844ce708fdd">   12</a></span>&#160;<span class="preprocessor">#define WMM2010_FRAC 2</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#a14fae9a0d6423e6436793d10df70feeb">   13</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define N_MAX_OF_GH  12</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// Geo mag current observation epoch begin</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#a8d79cd0cafb7b536b1a0dc7741958570">   16</a></span>&#160;<span class="preprocessor">#define GEO_EPOCH 2010.</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#a2d093208ab0191f4e8d97959f47868e1">   17</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define YR_MIN    2010.</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#ac1e70266a00e37b2aafa6fcde7de47e3">   18</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define YR_MAX    2015.</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#ac384eb6e7db2995f6746bd4be6a0513a">   19</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define NMAX_1 12</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#a27c719d328a05f8348ccf8d1961565d0">   20</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define NMAX_2 12</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#a73c5974d5caf8bd336ecb273356e2a09">   22</a></span>&#160;<span class="preprocessor">#define IEXT 0</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#ac16936073cc48edb3186d149aafd41f8">   23</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EXT_COEFF1 (double)0</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#a048c90b39198c639be47377aa4ab14d8">   24</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EXT_COEFF2 (double)0</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#a5aa3b0a443540fe85d7d89509782970b">   25</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EXT_COEFF3 (double)0</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#a62100c08a958cf03a315d5b72a4a3c4a">   28</a></span>&#160;<span class="preprocessor">#define GPS_EPOCH_BEGIN (double)1980.016393442623</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#a1e5bd8bd3b1105c4841c135d8e1ed05d">   29</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GPS_EPOCH_YEAR  1980</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#a34de3ba9150fa0efc7ec7267a9ff0c14">   30</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GPS_EPOCH_MONTH 1</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#af3038f37acae7201044977df82b7a2dc">   31</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GPS_EPOCH_DAY   6</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#ac2bdc89e52c860bf7f849b81fe4e5db2">   33</a></span>&#160;<span class="preprocessor">#define WEEKS_IN_YEAR 52.143</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#aedaabe5005511ea2e021e6dda4712276">   34</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SECS_IN_YEAR 31536000</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#a8521f0d9a069c55226a07fc055408eed">   36</a></span>&#160;<span class="preprocessor">#define MAXDEG 13</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#a79bd2810e131df6189e69ed5662911d1">   37</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAXCOEFF (MAXDEG*(MAXDEG+2)+1)</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="pprz__geodetic__wmm2010_8c.html#a17b7b9be1a705c6f43fb0d418aa53a22">gh1</a>[];</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="pprz__geodetic__wmm2010_8c.html#a86e700a937d0b7add96ffd19e5d62479">gh2</a>[];</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> <a class="code" href="pprz__geodetic__wmm2010_8c.html#a57f76a5e5afe004c3b985f11b4f1b13e">extrapsh</a>(<span class="keywordtype">double</span> date, <span class="keywordtype">double</span> dte1, <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> nmax1, <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> nmax2, <span class="keywordtype">double</span> *gh);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> <a class="code" href="pprz__geodetic__wmm2010_8c.html#a1b31a452ada68c619861da2143d4998e">mag_calc</a>(<a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> igdgc, <span class="keywordtype">double</span> flat, <span class="keywordtype">double</span> flon, <span class="keywordtype">double</span> elev, <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> nmax,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                 <span class="keywordtype">double</span> *gh, <span class="keywordtype">double</span> *geo_mag_x, <span class="keywordtype">double</span> *geo_mag_y, <span class="keywordtype">double</span> *geo_mag_z,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                 <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> iext, <span class="keywordtype">double</span> ext1, <span class="keywordtype">double</span> ext2, <span class="keywordtype">double</span> ext3);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#a355ec7441e99aa2036bd3844ce708fdd">   16</a></span>&#160;<span class="preprocessor">#define WMM2010_FRAC 2</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#a14fae9a0d6423e6436793d10df70feeb">   17</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define N_MAX_OF_GH  12</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// Geo mag current observation epoch begin</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#a8d79cd0cafb7b536b1a0dc7741958570">   20</a></span>&#160;<span class="preprocessor">#define GEO_EPOCH 2010.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#a2d093208ab0191f4e8d97959f47868e1">   21</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define YR_MIN    2010.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#ac1e70266a00e37b2aafa6fcde7de47e3">   22</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define YR_MAX    2015.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#ac384eb6e7db2995f6746bd4be6a0513a">   23</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define NMAX_1 12</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#a27c719d328a05f8348ccf8d1961565d0">   24</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define NMAX_2 12</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#a73c5974d5caf8bd336ecb273356e2a09">   26</a></span>&#160;<span class="preprocessor">#define IEXT 0</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#ac16936073cc48edb3186d149aafd41f8">   27</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EXT_COEFF1 (double)0</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#a048c90b39198c639be47377aa4ab14d8">   28</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EXT_COEFF2 (double)0</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#a5aa3b0a443540fe85d7d89509782970b">   29</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define EXT_COEFF3 (double)0</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#a62100c08a958cf03a315d5b72a4a3c4a">   32</a></span>&#160;<span class="preprocessor">#define GPS_EPOCH_BEGIN (double)1980.016393442623</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#a1e5bd8bd3b1105c4841c135d8e1ed05d">   33</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GPS_EPOCH_YEAR  1980</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#a34de3ba9150fa0efc7ec7267a9ff0c14">   34</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GPS_EPOCH_MONTH 1</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#af3038f37acae7201044977df82b7a2dc">   35</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GPS_EPOCH_DAY   6</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#ac2bdc89e52c860bf7f849b81fe4e5db2">   37</a></span>&#160;<span class="preprocessor">#define WEEKS_IN_YEAR 52.143</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#aedaabe5005511ea2e021e6dda4712276">   38</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SECS_IN_YEAR 31536000</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#a8521f0d9a069c55226a07fc055408eed">   40</a></span>&#160;<span class="preprocessor">#define MAXDEG 13</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="pprz__geodetic__wmm2010_8h.html#a79bd2810e131df6189e69ed5662911d1">   41</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAXCOEFF (MAXDEG*(MAXDEG+2)+1)</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="pprz__geodetic__wmm2010_8c.html#a17b7b9be1a705c6f43fb0d418aa53a22">gh1</a>[];</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="pprz__geodetic__wmm2010_8c.html#a86e700a937d0b7add96ffd19e5d62479">gh2</a>[];</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> <a class="code" href="pprz__geodetic__wmm2010_8c.html#a57f76a5e5afe004c3b985f11b4f1b13e">extrapsh</a>(<span class="keywordtype">double</span> date, <span class="keywordtype">double</span> dte1, <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> nmax1, <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> nmax2, <span class="keywordtype">double</span> *gh);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> <a class="code" href="pprz__geodetic__wmm2010_8c.html#a1b31a452ada68c619861da2143d4998e">mag_calc</a>(<a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> igdgc, <span class="keywordtype">double</span> flat, <span class="keywordtype">double</span> flon, <span class="keywordtype">double</span> elev, <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> nmax,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                 <span class="keywordtype">double</span> *gh, <span class="keywordtype">double</span> *geo_mag_x, <span class="keywordtype">double</span> *geo_mag_y, <span class="keywordtype">double</span> *geo_mag_z,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                 <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> iext, <span class="keywordtype">double</span> ext1, <span class="keywordtype">double</span> ext2, <span class="keywordtype">double</span> ext3);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span>} <span class="comment">/* extern &quot;C&quot; */</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* WMM2010_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_29343b6f5fcd4b75a5dfbb985ff56864.html">math</a></li><li class="navelem"><a class="el" href="pprz__geodetic__wmm2010_8h.html">pprz_geodetic_wmm2010.h</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:00:40 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:00:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

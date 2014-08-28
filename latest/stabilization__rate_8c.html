@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -114,11 +114,12 @@ $(document).ready(function(){initNavTree('stabilization__rate_8c.html','');});
 
 <p>Rate stabilization for rotorcrafts.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="stabilization_8h_source.html">firmwares/rotorcraft/stabilization.h</a>&quot;</code><br/>
+<div class="textblock"><code>#include &quot;generated/airframe.h&quot;</code><br/>
+<code>#include &quot;<a class="el" href="stabilization_8h_source.html">firmwares/rotorcraft/stabilization.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="imu_8h_source.html">subsystems/imu.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="radio__control_8h_source.html">subsystems/radio_control.h</a>&quot;</code><br/>
-<code>#include &quot;generated/airframe.h&quot;</code><br/>
+<code>#include &quot;<a class="el" href="autopilot__rc__helpers_8h_source.html">firmwares/rotorcraft/autopilot_rc_helpers.h</a>&quot;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for stabilization_rate.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -126,7 +127,7 @@ $(document).ready(function(){initNavTree('stabilization__rate_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__rate_8c__incl.png" border="0" usemap="#sw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__rate_8c" alt=""/></div>
 <map name="sw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__rate_8c" id="sw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__rate_8c">
-<area shape="rect" id="node3" href="stabilization_8h.html" title="General stabilization interface for rotorcrafts." alt="" coords="1171,115,1317,159"/><area shape="rect" id="node34" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="447,123,513,151"/><area shape="rect" id="node61" href="imu_8h.html" title="Inertial Measurement Unit interface." alt="" coords="861,123,1000,151"/><area shape="rect" id="node66" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="1617,123,1815,151"/><area shape="rect" id="node9" href="stabilization__none_8h.html" title="Dummy stabilization for rotorcrafts." alt="" coords="820,209,1001,269"/><area shape="rect" id="node27" href="stabilization__rate_8h.html" title="Rate stabilization for rotorcrafts." alt="" coords="1025,209,1207,269"/><area shape="rect" id="node30" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html" title="General attitude stabilization interface for rotorcrafts." alt="" coords="1281,209,1463,269"/><area shape="rect" id="node11" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="708,326,887,354"/><area shape="rect" id="node14" href="pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="180,411,335,439"/><area shape="rect" id="node21" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="849,411,999,439"/><area shape="rect" id="node37" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="33,326,223,354"/><area shape="rect" id="node43" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="495,217,644,261"/><area shape="rect" id="node49" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="135,217,284,261"/><area shape="rect" id="node54" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversion." alt="" coords="308,217,471,261"/><area shape="rect" id="node45" href="pprz__geodetic_8h.html" title="pprz_geodetic.h" alt="" coords="460,326,583,354"/><area shape="rect" id="node68" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API" alt="" coords="1993,225,2047,253"/><area shape="rect" id="node73" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1668,225,1764,253"/><area shape="rect" id="node75" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1673,326,1759,354"/></map>
+<area shape="rect" id="node5" href="stabilization_8h.html" title="General stabilization interface for rotorcrafts." alt="" coords="685,115,832,159"/><area shape="rect" id="node35" href="state_8h.html" title="API to get/set the generic vehicle states." alt="" coords="1737,123,1804,151"/><area shape="rect" id="node62" href="imu_8h.html" title="Inertial Measurement Unit interface." alt="" coords="1265,123,1404,151"/><area shape="rect" id="node68" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="201,225,399,253"/><area shape="rect" id="node81" href="autopilot__rc__helpers_8h.html" title="Some helper functions to check RC sticks." alt="" coords="329,115,495,159"/><area shape="rect" id="node10" href="stabilization__none_8h.html" title="Dummy stabilization for rotorcrafts." alt="" coords="911,209,1092,269"/><area shape="rect" id="node28" href="stabilization__rate_8h.html" title="Rate stabilization for rotorcrafts." alt="" coords="1116,209,1297,269"/><area shape="rect" id="node31" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html" title="General attitude stabilization interface for rotorcrafts." alt="" coords="604,209,785,269"/><area shape="rect" id="node12" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra." alt="" coords="1289,326,1468,354"/><area shape="rect" id="node15" href="pprz__algebra_8h.html" title="math/pprz_algebra.h" alt="" coords="1737,411,1892,439"/><area shape="rect" id="node22" href="pprz__trig__int_8h.html" title="math/pprz_trig_int.h" alt="" coords="1304,411,1453,439"/><area shape="rect" id="node38" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra." alt="" coords="1844,326,2033,354"/><area shape="rect" id="node44" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations." alt="" coords="1609,217,1759,261"/><area shape="rect" id="node50" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations." alt="" coords="1783,217,1932,261"/><area shape="rect" id="node55" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversion." alt="" coords="1423,217,1585,261"/><area shape="rect" id="node46" href="pprz__geodetic_8h.html" title="pprz_geodetic.h" alt="" coords="1629,326,1752,354"/><area shape="rect" id="node70" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API" alt="" coords="17,326,71,354"/><area shape="rect" id="node75" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="97,326,193,354"/><area shape="rect" id="node77" href="inttypes_8h.html" title="inttypes.h" alt="" coords="104,411,189,439"/></map>
 </div>
 </div>
 <p><a href="stabilization__rate_8c_source.html">Go to the source code of this file.</a></p>
@@ -189,9 +190,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00037">37</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00039">39</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00224">stabilization_rate_run()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00219">stabilization_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -205,9 +206,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00041">41</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00043">43</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00224">stabilization_rate_run()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00219">stabilization_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -235,9 +236,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00085">85</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00080">80</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00224">stabilization_rate_run()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00219">stabilization_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -265,9 +266,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00086">86</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00081">81</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00224">stabilization_rate_run()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00219">stabilization_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -286,9 +287,9 @@ Variables</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="radio__control_8c.html#a8fe61a8aa3f1859efec4bb06bc1134dc">radio_control</a>.<a class="code" href="structRadioControl.html#a7a57c95d2958828cb2d13bd360622f6f">values</a>[<a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h.html#a8e61ffe584bf24170117b9fcb2da4023">RADIO_PITCH</a>] &gt;  <a class="code" href="stabilization__rate_8c.html#a254dfda7a19168ecac30c3b96e165a76">STABILIZATION_RATE_DEADBAND_Q</a> || \</div>
 <div class="line">   radio_control.values[<a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h.html#a8e61ffe584bf24170117b9fcb2da4023">RADIO_PITCH</a>] &lt; -<a class="code" href="stabilization__rate_8c.html#a254dfda7a19168ecac30c3b96e165a76">STABILIZATION_RATE_DEADBAND_Q</a>)</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00114">114</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00109">109</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00176">stabilization_rate_read_rc()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00198">stabilization_rate_read_rc_switched_sticks()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00171">stabilization_rate_read_rc()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00193">stabilization_rate_read_rc_switched_sticks()</a>.</p>
 
 </div>
 </div>
@@ -302,9 +303,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00038">38</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00040">40</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00224">stabilization_rate_run()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00219">stabilization_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -318,9 +319,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00039">39</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00041">41</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00176">stabilization_rate_read_rc()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00198">stabilization_rate_read_rc_switched_sticks()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00224">stabilization_rate_run()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00171">stabilization_rate_read_rc()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00193">stabilization_rate_read_rc_switched_sticks()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00219">stabilization_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -339,9 +340,9 @@ Variables</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="radio__control_8c.html#a8fe61a8aa3f1859efec4bb06bc1134dc">radio_control</a>.<a class="code" href="structRadioControl.html#a7a57c95d2958828cb2d13bd360622f6f">values</a>[<a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h.html#ae59b042496b1debe96e1d98fbc3e4b1f">RADIO_ROLL</a>] &gt;  <a class="code" href="stabilization__rate_8c.html#a95b90288cdcf67c427d0cdf4d5bd89da">STABILIZATION_RATE_DEADBAND_P</a> || \</div>
 <div class="line">   radio_control.values[<a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h.html#ae59b042496b1debe96e1d98fbc3e4b1f">RADIO_ROLL</a>] &lt; -<a class="code" href="stabilization__rate_8c.html#a95b90288cdcf67c427d0cdf4d5bd89da">STABILIZATION_RATE_DEADBAND_P</a>)</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00110">110</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00105">105</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00176">stabilization_rate_read_rc()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00198">stabilization_rate_read_rc_switched_sticks()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00171">stabilization_rate_read_rc()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00193">stabilization_rate_read_rc_switched_sticks()</a>.</p>
 
 </div>
 </div>
@@ -355,9 +356,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00050">50</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00046">46</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00149">stabilization_rate_init()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00144">stabilization_rate_init()</a>.</p>
 
 </div>
 </div>
@@ -371,9 +372,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00053">53</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00049">49</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00149">stabilization_rate_init()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00144">stabilization_rate_init()</a>.</p>
 
 </div>
 </div>
@@ -387,9 +388,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00056">56</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00052">52</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00149">stabilization_rate_init()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00144">stabilization_rate_init()</a>.</p>
 
 </div>
 </div>
@@ -403,7 +404,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00101">101</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00096">96</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
 </div>
 </div>
@@ -417,7 +418,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00104">104</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00099">99</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
 </div>
 </div>
@@ -431,7 +432,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00107">107</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00102">102</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
 </div>
 </div>
@@ -445,9 +446,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00060">60</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00056">56</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00149">stabilization_rate_init()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00144">stabilization_rate_init()</a>.</p>
 
 </div>
 </div>
@@ -461,9 +462,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00067">67</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00060">60</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00149">stabilization_rate_init()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00144">stabilization_rate_init()</a>.</p>
 
 </div>
 </div>
@@ -477,9 +478,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00074">74</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00064">64</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00149">stabilization_rate_init()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00144">stabilization_rate_init()</a>.</p>
 
 </div>
 </div>
@@ -493,9 +494,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00082">82</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00077">77</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00224">stabilization_rate_run()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00219">stabilization_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -514,9 +515,9 @@ Variables</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="radio__control_8c.html#a8fe61a8aa3f1859efec4bb06bc1134dc">radio_control</a>.<a class="code" href="structRadioControl.html#a7a57c95d2958828cb2d13bd360622f6f">values</a>[<a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h.html#a0a504ca751f60fabf7900b13916561a6">RADIO_YAW</a>] &gt;  <a class="code" href="stabilization__rate_8c.html#a0f48d413f29c8f15752bee5507307023">STABILIZATION_RATE_DEADBAND_R</a> || \</div>
 <div class="line">   radio_control.values[<a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h.html#a0a504ca751f60fabf7900b13916561a6">RADIO_YAW</a>] &lt; -<a class="code" href="stabilization__rate_8c.html#a0f48d413f29c8f15752bee5507307023">STABILIZATION_RATE_DEADBAND_R</a>)</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00118">118</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00113">113</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00176">stabilization_rate_read_rc()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00198">stabilization_rate_read_rc_switched_sticks()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00171">stabilization_rate_read_rc()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00193">stabilization_rate_read_rc_switched_sticks()</a>.</p>
 
 </div>
 </div>
@@ -535,11 +536,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00219">219</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00214">214</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00859">INT_RATES_ZERO</a>, <a class="el" href="pprz__algebra_8h_source.html#l00326">RATES_COPY</a>, <a class="el" href="stabilization__rate_8c_source.html#l00092">stabilization_rate_ref</a>, <a class="el" href="stabilization__rate_8c_source.html#l00088">stabilization_rate_sp</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00094">stabilization_rate_sum_err</a>.</p>
+<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00860">INT_RATES_ZERO</a>, <a class="el" href="pprz__algebra_8h_source.html#l00326">RATES_COPY</a>, <a class="el" href="stabilization__rate_8c_source.html#l00087">stabilization_rate_ref</a>, <a class="el" href="stabilization__rate_8c_source.html#l00083">stabilization_rate_sp</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00089">stabilization_rate_sum_err</a>.</p>
 
-<p>Referenced by <a class="el" href="guidance__h_8c_source.html#l00197">guidance_h_mode_changed()</a>.</p>
+<p>Referenced by <a class="el" href="guidance__h_8c_source.html#l00199">guidance_h_mode_changed()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -548,7 +549,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__rate_8c_a3c8ef06f1db709ae713371b0a2a5054d_icgraph.png" border="0" usemap="#stabilization__rate_8c_a3c8ef06f1db709ae713371b0a2a5054d_icgraph" alt=""/></div>
 <map name="stabilization__rate_8c_a3c8ef06f1db709ae713371b0a2a5054d_icgraph" id="stabilization__rate_8c_a3c8ef06f1db709ae713371b0a2a5054d_icgraph">
-<area shape="rect" id="node3" href="guidance__h_8h.html#a2903786227eb11507928f99870099225" title="guidance_h_mode_changed" alt="" coords="185,81,385,109"/><area shape="rect" id="node5" href="rotorcraft_2autopilot_8h.html#a3aaa2cf16ee3b25e8fca9bbd1d579d64" title="autopilot_set_mode" alt="" coords="435,81,584,109"/><area shape="rect" id="node7" href="rotorcraft_2autopilot_8c.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization." alt="" coords="663,5,767,33"/><area shape="rect" id="node9" href="rotorcraft_2autopilot_8h.html#a7339f5741706cb9c2e2186b1174cc770" title="autopilot_on_rc_frame" alt="" coords="632,55,797,83"/><area shape="rect" id="node15" href="rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="648,106,781,134"/><area shape="rect" id="node19" href="main_8h.html#a6266a73fe8c0512f1de72cea96e5110b" title="failsafe_check" alt="" coords="660,157,769,185"/><area shape="rect" id="node11" href="main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="879,5,975,33"/><area shape="rect" id="node13" href="lisa__stm__passthrough__main_8c.html#a05af0e883be22f206a58099661bcad06" title="on_rc_message" alt="" coords="865,55,988,83"/><area shape="rect" id="node17" href="main_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="872,106,981,134"/><area shape="rect" id="node21" href="main_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="845,157,1008,185"/><area shape="rect" id="node23" href="fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1069,131,1123,159"/><area shape="rect" id="node25" href="main__chibios__libopencm3_8c.html#ad648a546fe66cd5f9328f33221a40c64" title="pprz_thd" alt="" coords="1057,182,1135,210"/><area shape="rect" id="node27" href="main__chibios__libopencm3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1185,182,1239,210"/></map>
+<area shape="rect" id="node3" href="guidance__h_8h.html#a2903786227eb11507928f99870099225" title="guidance_h_mode_changed" alt="" coords="185,81,385,109"/><area shape="rect" id="node5" href="rotorcraft_2autopilot_8h.html#a3aaa2cf16ee3b25e8fca9bbd1d579d64" title="autopilot_set_mode" alt="" coords="435,81,584,109"/><area shape="rect" id="node7" href="rotorcraft_2autopilot_8c.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization." alt="" coords="663,5,767,33"/><area shape="rect" id="node9" href="rotorcraft_2autopilot_8h.html#a7339f5741706cb9c2e2186b1174cc770" title="autopilot_on_rc_frame" alt="" coords="632,55,797,83"/><area shape="rect" id="node13" href="rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="648,106,781,134"/><area shape="rect" id="node17" href="main_8h.html#a6266a73fe8c0512f1de72cea96e5110b" title="failsafe_check" alt="" coords="660,157,769,185"/><area shape="rect" id="node11" href="main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="879,55,975,83"/><area shape="rect" id="node15" href="main_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="872,106,981,134"/><area shape="rect" id="node19" href="main_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="845,157,1008,185"/><area shape="rect" id="node21" href="fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1069,131,1123,159"/><area shape="rect" id="node23" href="main__chibios__libopencm3_8c.html#ad648a546fe66cd5f9328f33221a40c64" title="pprz_thd" alt="" coords="1057,182,1135,210"/><area shape="rect" id="node25" href="main__chibios__libopencm3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1185,182,1239,210"/></map>
 </div>
 </p>
 
@@ -568,9 +569,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00149">149</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00144">144</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00859">INT_RATES_ZERO</a>, <a class="el" href="pprz__algebra_8h_source.html#l00319">RATES_ASSIGN</a>, <a class="el" href="telemetry_8c_source.html#l00038">register_periodic_telemetry()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00091">stabilization_rate_ddgain</a>, <a class="el" href="stabilization__rate_8c_source.html#l00050">STABILIZATION_RATE_DDGAIN_P</a>, <a class="el" href="stabilization__rate_8c_source.html#l00053">STABILIZATION_RATE_DDGAIN_Q</a>, <a class="el" href="stabilization__rate_8c_source.html#l00056">STABILIZATION_RATE_DDGAIN_R</a>, <a class="el" href="stabilization__rate_8c_source.html#l00089">stabilization_rate_gain</a>, <a class="el" href="stabilization__rate_8c_source.html#l00090">stabilization_rate_igain</a>, <a class="el" href="stabilization__rate_8c_source.html#l00060">STABILIZATION_RATE_IGAIN_P</a>, <a class="el" href="stabilization__rate_8c_source.html#l00067">STABILIZATION_RATE_IGAIN_Q</a>, <a class="el" href="stabilization__rate_8c_source.html#l00074">STABILIZATION_RATE_IGAIN_R</a>, <a class="el" href="stabilization__rate_8c_source.html#l00092">stabilization_rate_ref</a>, <a class="el" href="stabilization__rate_8c_source.html#l00093">stabilization_rate_refdot</a>, <a class="el" href="stabilization__rate_8c_source.html#l00088">stabilization_rate_sp</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00094">stabilization_rate_sum_err</a>.</p>
+<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00860">INT_RATES_ZERO</a>, <a class="el" href="pprz__algebra_8h_source.html#l00319">RATES_ASSIGN</a>, <a class="el" href="telemetry_8c_source.html#l00038">register_periodic_telemetry()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00086">stabilization_rate_ddgain</a>, <a class="el" href="stabilization__rate_8c_source.html#l00046">STABILIZATION_RATE_DDGAIN_P</a>, <a class="el" href="stabilization__rate_8c_source.html#l00049">STABILIZATION_RATE_DDGAIN_Q</a>, <a class="el" href="stabilization__rate_8c_source.html#l00052">STABILIZATION_RATE_DDGAIN_R</a>, <a class="el" href="stabilization__rate_8c_source.html#l00084">stabilization_rate_gain</a>, <a class="el" href="stabilization__rate_8c_source.html#l00085">stabilization_rate_igain</a>, <a class="el" href="stabilization__rate_8c_source.html#l00056">STABILIZATION_RATE_IGAIN_P</a>, <a class="el" href="stabilization__rate_8c_source.html#l00060">STABILIZATION_RATE_IGAIN_Q</a>, <a class="el" href="stabilization__rate_8c_source.html#l00064">STABILIZATION_RATE_IGAIN_R</a>, <a class="el" href="stabilization__rate_8c_source.html#l00087">stabilization_rate_ref</a>, <a class="el" href="stabilization__rate_8c_source.html#l00088">stabilization_rate_refdot</a>, <a class="el" href="stabilization__rate_8c_source.html#l00083">stabilization_rate_sp</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00089">stabilization_rate_sum_err</a>.</p>
 
 <p>Referenced by <a class="el" href="stabilization_8c_source.html#l00030">stabilization_init()</a>.</p>
 
@@ -612,20 +613,31 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00176">176</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00171">171</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00113">INT32_RATE_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00879">INT_RATES_LSHIFT</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00176">Int32Rates::p</a>, <a class="el" href="stabilization__rate_8c_source.html#l00114">PITCH_RATE_DEADBAND_EXCEEDED</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00177">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00178">Int32Rates::r</a>, <a class="el" href="radio__control_8c_source.html#l00025">radio_control</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00040">RADIO_PITCH</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00039">RADIO_ROLL</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00041">RADIO_YAW</a>, <a class="el" href="stabilization__rate_8c_source.html#l00039">REF_FRAC</a>, <a class="el" href="stabilization__rate_8c_source.html#l00110">ROLL_RATE_DEADBAND_EXCEEDED</a>, <a class="el" href="stabilization__rate_8c_source.html#l00088">stabilization_rate_sp</a>, <a class="el" href="radio__control_8h_source.html#l00055">RadioControl::values</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00118">YAW_RATE_DEADBAND_EXCEEDED</a>.</p>
+<p>References <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a22787b7744375550b4b631b0fec03bd0">if()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00113">INT32_RATE_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00880">INT_RATES_LSHIFT</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00176">Int32Rates::p</a>, <a class="el" href="stabilization__rate_8c_source.html#l00109">PITCH_RATE_DEADBAND_EXCEEDED</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00177">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00178">Int32Rates::r</a>, <a class="el" href="radio__control_8c_source.html#l00025">radio_control</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00040">RADIO_PITCH</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00039">RADIO_ROLL</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00041">RADIO_YAW</a>, <a class="el" href="stabilization__rate_8c_source.html#l00041">REF_FRAC</a>, <a class="el" href="stabilization__rate_8c_source.html#l00105">ROLL_RATE_DEADBAND_EXCEEDED</a>, <a class="el" href="stabilization__rate_8c_source.html#l00083">stabilization_rate_sp</a>, <a class="el" href="autopilot__rc__helpers_8h_source.html#l00040">THROTTLE_STICK_DOWN</a>, <a class="el" href="radio__control_8h_source.html#l00055">RadioControl::values</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00113">YAW_RATE_DEADBAND_EXCEEDED</a>.</p>
 
-<p>Referenced by <a class="el" href="guidance__h_8c_source.html#l00259">guidance_h_read_rc()</a>.</p>
+<p>Referenced by <a class="el" href="guidance__h_8c_source.html#l00261">guidance_h_read_rc()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="stabilization__rate_8c_a007715357d8063fa371fb07433a1e3d7_cgraph.png" border="0" usemap="#stabilization__rate_8c_a007715357d8063fa371fb07433a1e3d7_cgraph" alt=""/></div>
+<map name="stabilization__rate_8c_a007715357d8063fa371fb07433a1e3d7_cgraph" id="stabilization__rate_8c_a007715357d8063fa371fb07433a1e3d7_cgraph">
+<area shape="rect" id="node3" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a22787b7744375550b4b631b0fec03bd0" title="if" alt="" coords="185,13,223,41"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__rate_8c_a007715357d8063fa371fb07433a1e3d7_icgraph.png" border="0" usemap="#stabilization__rate_8c_a007715357d8063fa371fb07433a1e3d7_icgraph" alt=""/></div>
 <map name="stabilization__rate_8c_a007715357d8063fa371fb07433a1e3d7_icgraph" id="stabilization__rate_8c_a007715357d8063fa371fb07433a1e3d7_icgraph">
-<area shape="rect" id="node3" href="guidance__h_8h.html#a7db3290fc5f62abc15a1bb1638b4922f" title="guidance_h_read_rc" alt="" coords="185,30,335,58"/><area shape="rect" id="node5" href="rotorcraft_2autopilot_8h.html#a7339f5741706cb9c2e2186b1174cc770" title="autopilot_on_rc_frame" alt="" coords="384,30,549,58"/><area shape="rect" id="node7" href="main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="611,5,707,33"/><area shape="rect" id="node9" href="lisa__stm__passthrough__main_8c.html#a05af0e883be22f206a58099661bcad06" title="on_rc_message" alt="" coords="597,55,720,83"/></map>
+<area shape="rect" id="node3" href="guidance__h_8h.html#a7db3290fc5f62abc15a1bb1638b4922f" title="guidance_h_read_rc" alt="" coords="185,13,335,41"/><area shape="rect" id="node5" href="rotorcraft_2autopilot_8h.html#a7339f5741706cb9c2e2186b1174cc770" title="autopilot_on_rc_frame" alt="" coords="384,13,549,41"/><area shape="rect" id="node7" href="main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="599,13,695,41"/></map>
 </div>
 </p>
 
@@ -645,20 +657,31 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00198">198</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00193">193</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00113">INT32_RATE_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00879">INT_RATES_LSHIFT</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00176">Int32Rates::p</a>, <a class="el" href="stabilization__rate_8c_source.html#l00114">PITCH_RATE_DEADBAND_EXCEEDED</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00177">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00178">Int32Rates::r</a>, <a class="el" href="radio__control_8c_source.html#l00025">radio_control</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00040">RADIO_PITCH</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00039">RADIO_ROLL</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00041">RADIO_YAW</a>, <a class="el" href="stabilization__rate_8c_source.html#l00039">REF_FRAC</a>, <a class="el" href="stabilization__rate_8c_source.html#l00110">ROLL_RATE_DEADBAND_EXCEEDED</a>, <a class="el" href="stabilization__rate_8c_source.html#l00088">stabilization_rate_sp</a>, <a class="el" href="radio__control_8h_source.html#l00055">RadioControl::values</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00118">YAW_RATE_DEADBAND_EXCEEDED</a>.</p>
+<p>References <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a22787b7744375550b4b631b0fec03bd0">if()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00113">INT32_RATE_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00880">INT_RATES_LSHIFT</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00176">Int32Rates::p</a>, <a class="el" href="stabilization__rate_8c_source.html#l00109">PITCH_RATE_DEADBAND_EXCEEDED</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00177">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00178">Int32Rates::r</a>, <a class="el" href="radio__control_8c_source.html#l00025">radio_control</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00040">RADIO_PITCH</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00039">RADIO_ROLL</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00041">RADIO_YAW</a>, <a class="el" href="stabilization__rate_8c_source.html#l00041">REF_FRAC</a>, <a class="el" href="stabilization__rate_8c_source.html#l00105">ROLL_RATE_DEADBAND_EXCEEDED</a>, <a class="el" href="stabilization__rate_8c_source.html#l00083">stabilization_rate_sp</a>, <a class="el" href="autopilot__rc__helpers_8h_source.html#l00040">THROTTLE_STICK_DOWN</a>, <a class="el" href="radio__control_8h_source.html#l00055">RadioControl::values</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00113">YAW_RATE_DEADBAND_EXCEEDED</a>.</p>
 
-<p>Referenced by <a class="el" href="guidance__h_8c_source.html#l00259">guidance_h_read_rc()</a>.</p>
+<p>Referenced by <a class="el" href="guidance__h_8c_source.html#l00261">guidance_h_read_rc()</a>.</p>
 
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="stabilization__rate_8c_aa74f5f2b4c549269f6ca18638acd8c5e_cgraph.png" border="0" usemap="#stabilization__rate_8c_aa74f5f2b4c549269f6ca18638acd8c5e_cgraph" alt=""/></div>
+<map name="stabilization__rate_8c_aa74f5f2b4c549269f6ca18638acd8c5e_cgraph" id="stabilization__rate_8c_aa74f5f2b4c549269f6ca18638acd8c5e_cgraph">
+<area shape="rect" id="node3" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a22787b7744375550b4b631b0fec03bd0" title="if" alt="" coords="239,13,276,41"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__rate_8c_aa74f5f2b4c549269f6ca18638acd8c5e_icgraph.png" border="0" usemap="#stabilization__rate_8c_aa74f5f2b4c549269f6ca18638acd8c5e_icgraph" alt=""/></div>
 <map name="stabilization__rate_8c_aa74f5f2b4c549269f6ca18638acd8c5e_icgraph" id="stabilization__rate_8c_aa74f5f2b4c549269f6ca18638acd8c5e_icgraph">
-<area shape="rect" id="node3" href="guidance__h_8h.html#a7db3290fc5f62abc15a1bb1638b4922f" title="guidance_h_read_rc" alt="" coords="239,30,388,58"/><area shape="rect" id="node5" href="rotorcraft_2autopilot_8h.html#a7339f5741706cb9c2e2186b1174cc770" title="autopilot_on_rc_frame" alt="" coords="437,30,603,58"/><area shape="rect" id="node7" href="main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="664,5,760,33"/><area shape="rect" id="node9" href="lisa__stm__passthrough__main_8c.html#a05af0e883be22f206a58099661bcad06" title="on_rc_message" alt="" coords="651,55,773,83"/></map>
+<area shape="rect" id="node3" href="guidance__h_8h.html#a7db3290fc5f62abc15a1bb1638b4922f" title="guidance_h_read_rc" alt="" coords="239,13,388,41"/><area shape="rect" id="node5" href="rotorcraft_2autopilot_8h.html#a7339f5741706cb9c2e2186b1174cc770" title="autopilot_on_rc_frame" alt="" coords="437,13,603,41"/><area shape="rect" id="node7" href="main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="652,13,748,41"/></map>
 </div>
 </p>
 
@@ -678,28 +701,28 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00224">224</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00219">219</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>References <a class="el" href="stabilization__rate_8c_source.html#l00037">F_UPDATE_RES</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00113">INT32_RATE_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00859">INT_RATES_ZERO</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="stabilization__rate_8c_source.html#l00041">MAX_SUM_ERR</a>, <a class="el" href="stabilization__rate_8c_source.html#l00085">OFFSET_AND_ROUND</a>, <a class="el" href="stabilization__rate_8c_source.html#l00086">OFFSET_AND_ROUND2</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00176">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00177">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00178">Int32Rates::r</a>, <a class="el" href="pprz__algebra_8h_source.html#l00333">RATES_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00390">RATES_BOUND_CUBE</a>, <a class="el" href="pprz__algebra_8h_source.html#l00361">RATES_DIFF</a>, <a class="el" href="pprz__algebra_8h_source.html#l00382">RATES_EWMULT_RSHIFT</a>, <a class="el" href="pprz__algebra_8h_source.html#l00375">RATES_SDIV</a>, <a class="el" href="stabilization__rate_8c_source.html#l00038">REF_DOT_FRAC</a>, <a class="el" href="stabilization__rate_8c_source.html#l00039">REF_FRAC</a>, <a class="el" href="stabilization_8c_source.html#l00028">stabilization_cmd</a>, <a class="el" href="stabilization__rate_8c_source.html#l00091">stabilization_rate_ddgain</a>, <a class="el" href="stabilization__rate_8c_source.html#l00096">stabilization_rate_fb_cmd</a>, <a class="el" href="stabilization__rate_8c_source.html#l00097">stabilization_rate_ff_cmd</a>, <a class="el" href="stabilization__rate_8c_source.html#l00089">stabilization_rate_gain</a>, <a class="el" href="stabilization__rate_8c_source.html#l00090">stabilization_rate_igain</a>, <a class="el" href="stabilization__rate_8c_source.html#l00092">stabilization_rate_ref</a>, <a class="el" href="stabilization__rate_8c_source.html#l00082">STABILIZATION_RATE_REF_TAU</a>, <a class="el" href="stabilization__rate_8c_source.html#l00093">stabilization_rate_refdot</a>, <a class="el" href="stabilization__rate_8c_source.html#l00088">stabilization_rate_sp</a>, <a class="el" href="stabilization__rate_8c_source.html#l00094">stabilization_rate_sum_err</a>, and <a class="el" href="state_8h_source.html#l01071">stateGetBodyRates_i()</a>.</p>
+<p>References <a class="el" href="stabilization__rate_8c_source.html#l00039">F_UPDATE_RES</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00113">INT32_RATE_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00860">INT_RATES_ZERO</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="stabilization__rate_8c_source.html#l00043">MAX_SUM_ERR</a>, <a class="el" href="stabilization__rate_8c_source.html#l00080">OFFSET_AND_ROUND</a>, <a class="el" href="stabilization__rate_8c_source.html#l00081">OFFSET_AND_ROUND2</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00176">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00177">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00178">Int32Rates::r</a>, <a class="el" href="pprz__algebra_8h_source.html#l00333">RATES_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00390">RATES_BOUND_CUBE</a>, <a class="el" href="pprz__algebra_8h_source.html#l00361">RATES_DIFF</a>, <a class="el" href="pprz__algebra_8h_source.html#l00382">RATES_EWMULT_RSHIFT</a>, <a class="el" href="pprz__algebra_8h_source.html#l00375">RATES_SDIV</a>, <a class="el" href="stabilization__rate_8c_source.html#l00040">REF_DOT_FRAC</a>, <a class="el" href="stabilization__rate_8c_source.html#l00041">REF_FRAC</a>, <a class="el" href="stabilization_8c_source.html#l00028">stabilization_cmd</a>, <a class="el" href="stabilization__rate_8c_source.html#l00086">stabilization_rate_ddgain</a>, <a class="el" href="stabilization__rate_8c_source.html#l00091">stabilization_rate_fb_cmd</a>, <a class="el" href="stabilization__rate_8c_source.html#l00092">stabilization_rate_ff_cmd</a>, <a class="el" href="stabilization__rate_8c_source.html#l00084">stabilization_rate_gain</a>, <a class="el" href="stabilization__rate_8c_source.html#l00085">stabilization_rate_igain</a>, <a class="el" href="stabilization__rate_8c_source.html#l00087">stabilization_rate_ref</a>, <a class="el" href="stabilization__rate_8c_source.html#l00077">STABILIZATION_RATE_REF_TAU</a>, <a class="el" href="stabilization__rate_8c_source.html#l00088">stabilization_rate_refdot</a>, <a class="el" href="stabilization__rate_8c_source.html#l00083">stabilization_rate_sp</a>, <a class="el" href="stabilization__rate_8c_source.html#l00089">stabilization_rate_sum_err</a>, and <a class="el" href="state_8h_source.html#l01071">stateGetBodyRates_i()</a>.</p>
 
-<p>Referenced by <a class="el" href="guidance__h_8c_source.html#l00305">guidance_h_run()</a>.</p>
+<p>Referenced by <a class="el" href="guidance__h_8c_source.html#l00307">guidance_h_run()</a>.</p>
 
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__rate_8c_abd94877f79c42a6ee99622c7fc45a623_cgraph.png" border="0" usemap="#stabilization__rate_8c_abd94877f79c42a6ee99622c7fc45a623_cgraph" alt=""/></div>
 <map name="stabilization__rate_8c_abd94877f79c42a6ee99622c7fc45a623_cgraph" id="stabilization__rate_8c_abd94877f79c42a6ee99622c7fc45a623_cgraph">
 <area shape="rect" id="node3" href="group__state__rate.html#ga3fc058302e6f40bf0b8797ca9a7ed60f" title="Get vehicle body angular rate (int)." alt="" coords="215,5,369,33"/><area shape="rect" id="node5" href="group__state__rate.html#gaa244b14b2780206f600f9ded7d7cf180" title="stateCalcBodyRates_i" alt="" coords="419,5,579,33"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__rate_8c_abd94877f79c42a6ee99622c7fc45a623_icgraph.png" border="0" usemap="#stabilization__rate_8c_abd94877f79c42a6ee99622c7fc45a623_icgraph" alt=""/></div>
 <map name="stabilization__rate_8c_abd94877f79c42a6ee99622c7fc45a623_icgraph" id="stabilization__rate_8c_abd94877f79c42a6ee99622c7fc45a623_icgraph">
 <area shape="rect" id="node3" href="guidance__h_8h.html#ac4cf6da90a4278b4d0b2e4f227b33f2c" title="guidance_h_run" alt="" coords="213,5,336,33"/><area shape="rect" id="node5" href="rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="385,5,519,33"/><area shape="rect" id="node7" href="main_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="569,5,679,33"/></map>
@@ -719,9 +742,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00091">91</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00086">86</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00149">stabilization_rate_init()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00224">stabilization_rate_run()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00144">stabilization_rate_init()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00219">stabilization_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -735,9 +758,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00096">96</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00091">91</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00224">stabilization_rate_run()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00219">stabilization_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -751,9 +774,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00097">97</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00092">92</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00224">stabilization_rate_run()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00219">stabilization_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -767,9 +790,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00089">89</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00084">84</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00149">stabilization_rate_init()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00224">stabilization_rate_run()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00144">stabilization_rate_init()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00219">stabilization_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -783,9 +806,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00090">90</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00085">85</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00149">stabilization_rate_init()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00224">stabilization_rate_run()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00144">stabilization_rate_init()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00219">stabilization_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -799,9 +822,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00092">92</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00087">87</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00219">stabilization_rate_enter()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00149">stabilization_rate_init()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00224">stabilization_rate_run()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00214">stabilization_rate_enter()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00144">stabilization_rate_init()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00219">stabilization_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -815,9 +838,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00093">93</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00088">88</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00149">stabilization_rate_init()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00224">stabilization_rate_run()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00144">stabilization_rate_init()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00219">stabilization_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -831,9 +854,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00088">88</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00083">83</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00219">stabilization_rate_enter()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00149">stabilization_rate_init()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00176">stabilization_rate_read_rc()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00198">stabilization_rate_read_rc_switched_sticks()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00224">stabilization_rate_run()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00214">stabilization_rate_enter()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00144">stabilization_rate_init()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00171">stabilization_rate_read_rc()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00193">stabilization_rate_read_rc_switched_sticks()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00219">stabilization_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -847,9 +870,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00094">94</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__rate_8c_source.html#l00089">89</a> of file <a class="el" href="stabilization__rate_8c_source.html">stabilization_rate.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00219">stabilization_rate_enter()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00149">stabilization_rate_init()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00224">stabilization_rate_run()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00214">stabilization_rate_enter()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00144">stabilization_rate_init()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00219">stabilization_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -859,7 +882,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_d1b81cc433edb6118e3c3e3bc7700be0.html">stabilization</a></li><li class="navelem"><a class="el" href="stabilization__rate_8c.html">stabilization_rate.c</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:00:56 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:00:56 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

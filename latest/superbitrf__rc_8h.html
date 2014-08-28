@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('superbitrf__rc_8h.html','');});
 
 <p>DSM2 and DSMX radio control implementation for the cyrf6936 2.4GHz radio chip trough SPI.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="superbitrf_8h_source.html">subsystems/datalink/superbitrf.h</a>&quot;</code><br/>
+<div class="textblock"><code>#include &quot;subsystems/datalink/superbitrf.h&quot;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for superbitrf_rc.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('superbitrf__rc_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="superbitrf__rc_8h__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2radio__control_2superbitrf__rc_8h" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2radio__control_2superbitrf__rc_8h" id="sw_2airborne_2subsystems_2radio__control_2superbitrf__rc_8h">
-<area shape="rect" id="node3" href="superbitrf_8h.html" title="DSM2 and DSMX datalink implementation for the cyrf6936 2.4GHz radio chip trough SPI." alt="" coords="513,99,665,143"/><area shape="rect" id="node5" href="gpio_8h.html" title="Some architecture independent helper functions for GPIOs." alt="" coords="465,201,604,229"/><area shape="rect" id="node11" href="cyrf6936_8h.html" title="Driver for the cyrf6936 2.4GHz radio chip." alt="" coords="157,201,320,229"/><area shape="rect" id="node20" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs." alt="" coords="572,286,724,330"/><area shape="rect" id="node25" href="pprz__transport_8h.html" title="Extra datalink using PPRZ protocol." alt="" coords="685,193,837,237"/><area shape="rect" id="node13" href="cyrf6936__regs_8h.html" title="Register defines for the CYRF6936 2.4GHz radio chip." alt="" coords="177,294,300,322"/><area shape="rect" id="node15" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API." alt="" coords="23,294,153,322"/><area shape="rect" id="node27" href="inttypes_8h.html" title="inttypes.h" alt="" coords="888,379,973,407"/><area shape="rect" id="node31" href="transport_8h.html" title="generic transport header" alt="" coords="799,286,951,330"/></map>
+</map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -459,15 +459,15 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{                \</div>
-<div class="line">  cyrf6936_event(&amp;<a class="code" href="superbitrf_8c.html#a3de4c224554ac6608830085912a98b86">superbitrf</a>.<a class="code" href="structSuperbitRF.html#ae88e211597eecd75e728e6f586c5439a" title="The cyrf chip used.">cyrf6936</a>);                             \</div>
+<div class="line">  cyrf6936_event(&amp;<a class="code" href="arch_2sim_2subsystems_2datalink_2superbitrf_8c.html#a3de4c224554ac6608830085912a98b86">superbitrf</a>.<a class="code" href="structSuperbitRF.html#ae88e211597eecd75e728e6f586c5439a" title="The cyrf chip used.">cyrf6936</a>);                             \</div>
 <div class="line">  superbitrf_event();                                               \</div>
-<div class="line">  if(<a class="code" href="superbitrf_8c.html#a3de4c224554ac6608830085912a98b86">superbitrf</a>.<a class="code" href="structSuperbitRF.html#aab7ecc13c1389b5b6bb867064f52a200" title="When a RC frame is available.">rc_frame_available</a>) {                               \</div>
+<div class="line">  if(<a class="code" href="arch_2sim_2subsystems_2datalink_2superbitrf_8c.html#a3de4c224554ac6608830085912a98b86">superbitrf</a>.<a class="code" href="structSuperbitRF.html#aab7ecc13c1389b5b6bb867064f52a200" title="When a RC frame is available.">rc_frame_available</a>) {                               \</div>
 <div class="line">    radio_control.frame_cpt++;                                    \</div>
 <div class="line">      radio_control.time_since_last_frame = 0;                      \</div>
 <div class="line">      radio_control.radio_ok_cpt = 0;                               \</div>
 <div class="line">      radio_control.status = <a class="code" href="radio__control_8h.html#ac96a9e3f6c17299d532eb572ef0ea415">RC_OK</a>;                                 \</div>
-<div class="line">      NormalizeRcDl(<a class="code" href="superbitrf_8c.html#a3de4c224554ac6608830085912a98b86">superbitrf</a>.<a class="code" href="structSuperbitRF.html#af8aa7f7c28b40a25c912b5a020525957" title="The rc values from the packet.">rc_values</a>,<a class="code" href="radio__control_8c.html#a8fe61a8aa3f1859efec4bb06bc1134dc">radio_control</a>.<a class="code" href="structRadioControl.html#a7a57c95d2958828cb2d13bd360622f6f">values</a>       \</div>
-<div class="line">        ,<a class="code" href="superbitrf_8c.html#a3de4c224554ac6608830085912a98b86">superbitrf</a>.<a class="code" href="structSuperbitRF.html#ac348be41079c0ecc80b77f5a63aad72c" title="The number of channels the transmitter has.">num_channels</a>);                                  \</div>
+<div class="line">      NormalizeRcDl(<a class="code" href="arch_2sim_2subsystems_2datalink_2superbitrf_8c.html#a3de4c224554ac6608830085912a98b86">superbitrf</a>.<a class="code" href="structSuperbitRF.html#af8aa7f7c28b40a25c912b5a020525957" title="The rc values from the packet.">rc_values</a>,<a class="code" href="radio__control_8c.html#a8fe61a8aa3f1859efec4bb06bc1134dc">radio_control</a>.<a class="code" href="structRadioControl.html#a7a57c95d2958828cb2d13bd360622f6f">values</a>       \</div>
+<div class="line">        ,<a class="code" href="arch_2sim_2subsystems_2datalink_2superbitrf_8c.html#a3de4c224554ac6608830085912a98b86">superbitrf</a>.<a class="code" href="structSuperbitRF.html#ac348be41079c0ecc80b77f5a63aad72c" title="The number of channels the transmitter has.">num_channels</a>);                                  \</div>
 <div class="line">      _received_frame_handler();                                    \</div>
 <div class="line">      superbitrf.rc_frame_available = <a class="code" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;                        \</div>
 <div class="line">  }                                                                 \</div>
@@ -483,7 +483,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_a146ed466020daad33793c9994e8ab3e.html">radio_control</a></li><li class="navelem"><a class="el" href="superbitrf__rc_8h.html">superbitrf_rc.h</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:01:10 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:01:10 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

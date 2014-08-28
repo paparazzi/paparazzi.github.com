@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -160,9 +160,12 @@ Raw geo_mag.xml file:</h2>
 <div class="line">  &lt;<a class="code" href="nav__gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;geo_mag_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;periodic fun=<span class="stringliteral">&quot;geo_mag_periodic()&quot;</span> freq=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
 <div class="line">  &lt;event fun=<span class="stringliteral">&quot;geo_mag_event()&quot;</span>/&gt;</div>
-<div class="line">  &lt;makefile&gt;</div>
+<div class="line">  &lt;makefile target=<span class="stringliteral">&quot;ap|nps&quot;</span>&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;geo_mag.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;pprz_geodetic_wmm2010.c&quot;</span> dir=<span class="stringliteral">&quot;math&quot;</span>/&gt;</div>
+<div class="line">  &lt;/makefile&gt;</div>
+<div class="line">  &lt;makefile target=<span class="stringliteral">&quot;nps&quot;</span>&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;NPS_CALC_GEO_MAG&quot;</span>/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">&lt;/module&gt;</div>
 </div><!-- fragment --> </div></div><!-- contents -->
@@ -171,7 +174,7 @@ Raw geo_mag.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:01:11 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:01:11 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

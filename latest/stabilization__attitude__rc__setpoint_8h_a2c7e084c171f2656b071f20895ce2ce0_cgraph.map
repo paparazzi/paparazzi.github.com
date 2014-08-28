@@ -1,13 +1,19 @@
 <map id="stabilization_attitude_read_rc_setpoint_quat_earth_bound_f" name="stabilization_attitude_read_rc_setpoint_quat_earth_bound_f">
-<area shape="rect" id="node3" href="$stabilization__attitude__rc__setpoint_8c.html#a03c4937f25fa5795496024b6ed8eeae7" title="Read roll/pitch command from RC as quaternion." alt="" coords="233,5,415,65"/>
-<area shape="rect" id="node5" href="$stabilization__attitude__rc__setpoint_8c.html#a60929bf25f6bd542fd13629fc452c1b6" title="Read attitude setpoint from RC as euler angles." alt="" coords="233,87,415,131"/>
-<area shape="rect" id="node16" href="$stabilization__attitude__rc__setpoint_8c.html#a795e57d623b6d1b9fe9a630dd90d13d4" title="stabilization_attitude\l_read_rc_setpoint_eulers_f" alt="" coords="228,154,420,198"/>
-<area shape="rect" id="node20" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="673,213,871,241"/>
-<area shape="rect" id="node7" href="$stabilization__attitude__rc__setpoint_8c.html#a1270210b635f040b5bdd7d974f29c71f" title="stabilization_attitude\l_get_heading_i" alt="" coords="469,29,624,73"/>
-<area shape="rect" id="node9" href="$group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int)." alt="" coords="673,66,871,94"/>
-<area shape="rect" id="node11" href="$group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int)." alt="" coords="921,66,1084,94"/>
-<area shape="rect" id="node13" href="$group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title="orientationCalcEulers_i" alt="" coords="1135,66,1300,94"/>
-<area shape="rect" id="node18" href="$stabilization__attitude__rc__setpoint_8c.html#aef31d05722347c8213ef503f5c6f1113" title="stabilization_attitude\l_get_heading_f" alt="" coords="469,146,624,190"/>
-<area shape="rect" id="node22" href="$group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="921,213,1084,241"/>
-<area shape="rect" id="node24" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="1133,213,1301,241"/>
+<area shape="rect" id="node3" href="$stabilization__attitude__rc__setpoint_8c.html#a03c4937f25fa5795496024b6ed8eeae7" title="Read roll/pitch command from RC as quaternion." alt="" coords="233,39,415,99"/>
+<area shape="rect" id="node9" href="$stabilization__attitude__rc__setpoint_8c.html#a60929bf25f6bd542fd13629fc452c1b6" title="Read attitude setpoint from RC as euler angles." alt="" coords="233,405,415,449"/>
+<area shape="rect" id="node26" href="$stabilization__attitude__rc__setpoint_8c.html#a795e57d623b6d1b9fe9a630dd90d13d4" title="stabilization_attitude\l_read_rc_setpoint_eulers_f" alt="" coords="228,135,420,179"/>
+<area shape="rect" id="node34" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float)." alt="" coords="673,215,871,243"/>
+<area shape="rect" id="node5" href="$stabilization__attitude__rc__setpoint_8c.html#aaf72a0691995f62ee5a168379c0fa91f" title="get_rc_pitch_f" alt="" coords="492,55,601,83"/>
+<area shape="rect" id="node7" href="$stabilization__attitude__rc__setpoint_8c.html#a309fd1a55c923cc260a5a5dee9a38dc6" title="get_rc_roll_f" alt="" coords="497,5,596,33"/>
+<area shape="rect" id="node11" href="$stabilization__attitude__rc__setpoint_8c.html#a9d8973438ae0ad5f463d0e40c7c96c00" title="get_rc_pitch" alt="" coords="497,493,596,521"/>
+<area shape="rect" id="node13" href="$stabilization__attitude__rc__setpoint_8c.html#aaacaa0bfae27bca514cd0e19cea0e13e" title="get_rc_roll" alt="" coords="503,543,591,571"/>
+<area shape="rect" id="node15" href="$stabilization__attitude__rc__setpoint_8c.html#ae1bf36a0f51b8303e556d7fa83504dbc" title="get_rc_yaw" alt="" coords="500,325,593,353"/>
+<area shape="rect" id="node17" href="$stabilization__attitude__rc__setpoint_8c.html#a1270210b635f040b5bdd7d974f29c71f" title="stabilization_attitude\l_get_heading_i" alt="" coords="469,375,624,419"/>
+<area shape="rect" id="node19" href="$group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int)." alt="" coords="673,413,871,441"/>
+<area shape="rect" id="node21" href="$group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int)." alt="" coords="921,413,1084,441"/>
+<area shape="rect" id="node23" href="$group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title="orientationCalcEulers_i" alt="" coords="1135,413,1300,441"/>
+<area shape="rect" id="node30" href="$stabilization__attitude__rc__setpoint_8c.html#a8c8d5fae7ce7c73035312dddd8f07688" title="get_rc_yaw_f" alt="" coords="495,157,599,185"/>
+<area shape="rect" id="node32" href="$stabilization__attitude__rc__setpoint_8c.html#aef31d05722347c8213ef503f5c6f1113" title="stabilization_attitude\l_get_heading_f" alt="" coords="469,207,624,251"/>
+<area shape="rect" id="node36" href="$group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float)." alt="" coords="921,215,1084,243"/>
+<area shape="rect" id="node38" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="1133,215,1301,243"/>
 </map>

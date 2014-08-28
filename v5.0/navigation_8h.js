@@ -1,5 +1,6 @@
 var navigation_8h =
 [
+    [ "GetAltRef", "navigation_8h.html#a24891072dad1936c21f884d623bda8b4", null ],
     [ "GetPosAlt", "navigation_8h.html#a0bb5f5ae29ba1d5968fe7857a304253e", null ],
     [ "GetPosX", "navigation_8h.html#ac500a50330425cb4a3054774289bb205", null ],
     [ "GetPosY", "navigation_8h.html#a10961173ac6973d795af2f62eb67edca", null ],

@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -173,6 +173,12 @@ $(document).ready(function(){initNavTree('globals_0x6d.html','');});
 <li>MAG_FLOAT_OF_BFP
 : <a class="el" href="pprz__algebra__int_8h.html#aeee9cfe0a5a7a8bdc1103e32b472e3c8">pprz_algebra_int.h</a>
 </li>
+<li>mag_freeze_check()
+: <a class="el" href="navdata_8c.html#a097d40838c4d36b21635cc59b768568a">navdata.c</a>
+</li>
+<li>MAG_FROZEN_COUNT
+: <a class="el" href="ins__float__invariant_8c.html#ad7ae60851002ff485abaf4835191f9de">ins_float_invariant.c</a>
+</li>
 <li>MAG_Heading_X
 : <a class="el" href="ahrs__float__dcm_8c.html#a651c2290f949993aa2f6b3d6a5d4e937">ahrs_float_dcm.c</a>
 </li>
@@ -233,7 +239,6 @@ $(document).ready(function(){initNavTree('globals_0x6d.html','');});
 , <a class="el" href="usb__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe">usb_tunnel.c</a>
 , <a class="el" href="test__bswap_8c.html#a840291bc02cba5474a4cb46a9b9566fe">test_bswap.c</a>
 , <a class="el" href="stm32_2uart__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe">uart_tunnel.c</a>
-, <a class="el" href="test__baro_8c.html#a840291bc02cba5474a4cb46a9b9566fe">test_baro.c</a>
 , <a class="el" href="fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main.c</a>
 , <a class="el" href="main__chibios__libopencm3_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main_chibios_libopencm3.c</a>
 , <a class="el" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main.c</a>
@@ -244,9 +249,6 @@ $(document).ready(function(){initNavTree('globals_0x6d.html','');});
 , <a class="el" href="main__demo4_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main_demo4.c</a>
 , <a class="el" href="main__demo5_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main_demo5.c</a>
 , <a class="el" href="main__demo6_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main_demo6.c</a>
-, <a class="el" href="lisa__stm__gps__passthrough__main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">lisa_stm_gps_passthrough_main.c</a>
-, <a class="el" href="lisa__stm__passthrough__main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">lisa_stm_passthrough_main.c</a>
-, <a class="el" href="stm__test__spi__link_8c.html#a840291bc02cba5474a4cb46a9b9566fe">stm_test_spi_link.c</a>
 </li>
 <li>main_dl_parse_msg()
 : <a class="el" href="main__demo5_8c.html#a326e107988cb0bccda2b9a844b6a942f">main_demo5.c</a>
@@ -256,50 +258,31 @@ $(document).ready(function(){initNavTree('globals_0x6d.html','');});
 , <a class="el" href="rotorcraft_2main_8c.html#a319a645047f275499aa30b0bc08c6e10">main.c</a>
 , <a class="el" href="main_8h.html#a542234de10fcdadb4184efcd9c7d0d04">main.h</a>
 , <a class="el" href="setup__actuators_8c.html#a319a645047f275499aa30b0bc08c6e10">setup_actuators.c</a>
-, <a class="el" href="lisa__stm__gps__passthrough__main_8c.html#a319a645047f275499aa30b0bc08c6e10">lisa_stm_gps_passthrough_main.c</a>
-, <a class="el" href="lisa__stm__passthrough__main_8c.html#a319a645047f275499aa30b0bc08c6e10">lisa_stm_passthrough_main.c</a>
-, <a class="el" href="stm__test__spi__link_8c.html#a319a645047f275499aa30b0bc08c6e10">stm_test_spi_link.c</a>
 </li>
 <li>main_event_task()
-: <a class="el" href="test__baro_8c.html#a1cd23e45d5c51116ae1e3096912ea1d1">test_baro.c</a>
-, <a class="el" href="main__demo5_8c.html#a1cd23e45d5c51116ae1e3096912ea1d1">main_demo5.c</a>
+: <a class="el" href="main__demo5_8c.html#a1cd23e45d5c51116ae1e3096912ea1d1">main_demo5.c</a>
 </li>
 <li>main_init()
-: <a class="el" href="rotorcraft_2main_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1">main.c</a>
+: <a class="el" href="main__demo6_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1">main_demo6.c</a>
+, <a class="el" href="rotorcraft_2main_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1">main.c</a>
 , <a class="el" href="main_8h.html#a092df25ac46a6a4ca72c023d8821f9b2">main.h</a>
 , <a class="el" href="setup__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1">setup_actuators.c</a>
 , <a class="el" href="main__demo2_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1">main_demo2.c</a>
 , <a class="el" href="main__demo3_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1">main_demo3.c</a>
 , <a class="el" href="main__demo4_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1">main_demo4.c</a>
 , <a class="el" href="main__demo5_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1">main_demo5.c</a>
-, <a class="el" href="main__demo6_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1">main_demo6.c</a>
-, <a class="el" href="lisa__stm__gps__passthrough__main_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1">lisa_stm_gps_passthrough_main.c</a>
-, <a class="el" href="lisa__stm__passthrough__main_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1">lisa_stm_passthrough_main.c</a>
-, <a class="el" href="test__baro_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1">test_baro.c</a>
 </li>
 <li>main_mass_storage()
 : <a class="el" href="usb__msc__hw_8h.html#a5cd758fb54c645f5937880d23af9999d">usb_msc_hw.h</a>
-</li>
-<li>main_on_baro_abs()
-: <a class="el" href="test__baro_8c.html#ae8591e5ea1a9ed9c74487f5201091297">test_baro.c</a>
-, <a class="el" href="lisa__stm__passthrough__main_8c.html#ae8591e5ea1a9ed9c74487f5201091297">lisa_stm_passthrough_main.c</a>
-</li>
-<li>main_on_baro_diff()
-: <a class="el" href="test__baro_8c.html#a50d9037bdee0a809b1cb72a2f927e4a2">test_baro.c</a>
-, <a class="el" href="lisa__stm__passthrough__main_8c.html#a50d9037bdee0a809b1cb72a2f927e4a2">lisa_stm_passthrough_main.c</a>
 </li>
 <li>main_periodic()
 : <a class="el" href="stm32_2uart__tunnel_8c.html#a433218491d8e51ae032540c2c00d263f">uart_tunnel.c</a>
 , <a class="el" href="rotorcraft_2main_8c.html#a433218491d8e51ae032540c2c00d263f">main.c</a>
 , <a class="el" href="main_8h.html#a4fee35a9ab2c517bde9f598c265222b0">main.h</a>
 , <a class="el" href="setup__actuators_8c.html#a433218491d8e51ae032540c2c00d263f">setup_actuators.c</a>
-, <a class="el" href="lisa__stm__gps__passthrough__main_8c.html#a433218491d8e51ae032540c2c00d263f">lisa_stm_gps_passthrough_main.c</a>
-, <a class="el" href="lisa__stm__passthrough__main_8c.html#a433218491d8e51ae032540c2c00d263f">lisa_stm_passthrough_main.c</a>
-, <a class="el" href="stm__test__spi__link_8c.html#a433218491d8e51ae032540c2c00d263f">stm_test_spi_link.c</a>
 </li>
 <li>main_periodic_task()
-: <a class="el" href="test__baro_8c.html#a791eaf74023b4de8d10fbfe0de040ed8">test_baro.c</a>
-, <a class="el" href="main__demo2_8c.html#a791eaf74023b4de8d10fbfe0de040ed8">main_demo2.c</a>
+: <a class="el" href="main__demo2_8c.html#a791eaf74023b4de8d10fbfe0de040ed8">main_demo2.c</a>
 , <a class="el" href="main__demo3_8c.html#a791eaf74023b4de8d10fbfe0de040ed8">main_demo3.c</a>
 , <a class="el" href="main__demo4_8c.html#a791eaf74023b4de8d10fbfe0de040ed8">main_demo4.c</a>
 , <a class="el" href="main__demo5_8c.html#a791eaf74023b4de8d10fbfe0de040ed8">main_demo5.c</a>
@@ -411,8 +394,8 @@ $(document).ready(function(){initNavTree('globals_0x6d.html','');});
 : <a class="el" href="mavlink__decoder_8h.html#a11c509459ed3de2c4812ca163b095cb3">mavlink_decoder.h</a>
 </li>
 <li>mavlink_crc_extra
-: <a class="el" href="mavlink__decoder_8h.html#a98bf73e8faffc56ea5363cb6bed79073">mavlink_decoder.h</a>
-, <a class="el" href="mavlink__decoder_8c.html#a98bf73e8faffc56ea5363cb6bed79073">mavlink_decoder.c</a>
+: <a class="el" href="mavlink__decoder_8c.html#a98bf73e8faffc56ea5363cb6bed79073">mavlink_decoder.c</a>
+, <a class="el" href="mavlink__decoder_8h.html#a98bf73e8faffc56ea5363cb6bed79073">mavlink_decoder.h</a>
 </li>
 <li>mavlink_crc_init()
 : <a class="el" href="mavlink__decoder_8h.html#ad5394c74f2f0bf1f95b4f4fea574210a">mavlink_decoder.h</a>
@@ -475,11 +458,11 @@ $(document).ready(function(){initNavTree('globals_0x6d.html','');});
 <li>MavlinkDatalinkEvent
 : <a class="el" href="mavlink__decoder_8h.html#a5d16c2250168edf0ef572e36a899a464">mavlink_decoder.h</a>
 </li>
-<li>Max
-: <a class="el" href="common__flight__plan_8h.html#a56957c78144b268fbcdbf7d9fb5acafe">common_flight_plan.h</a>
-</li>
 <li>MAX
 : <a class="el" href="chibios__init_8c.html#aacc3ee1a7f283f8ef65cea31f4436a95">chibios_init.c</a>
+</li>
+<li>Max
+: <a class="el" href="common__flight__plan_8h.html#a56957c78144b268fbcdbf7d9fb5acafe">common_flight_plan.h</a>
 </li>
 <li>max11040_buf_in
 : <a class="el" href="max11040_8c.html#a7406f7fffb5ca06e68e13b5ec94e72f8">max11040.c</a>
@@ -701,8 +684,8 @@ $(document).ready(function(){initNavTree('globals_0x6d.html','');});
 : <a class="el" href="max3100__hw_8h.html#ae0f85ced6d88c55643993a277da1d387">max3100_hw.h</a>
 </li>
 <li>max3100_data_available
-: <a class="el" href="max3100__hw_8h.html#a384ca14e74856144a7498bf50bd1139e">max3100_hw.h</a>
-, <a class="el" href="max3100__hw_8c.html#a1ec54788e5dd0c764ff4d4ff7b84df0e">max3100_hw.c</a>
+: <a class="el" href="max3100__hw_8c.html#a1ec54788e5dd0c764ff4d4ff7b84df0e">max3100_hw.c</a>
+, <a class="el" href="max3100__hw_8h.html#a384ca14e74856144a7498bf50bd1139e">max3100_hw.h</a>
 </li>
 <li>max3100_debug()
 : <a class="el" href="max3100__hw_8c.html#a60b75144d77bfcbd80fb0d7a5ecfb40b">max3100_hw.c</a>
@@ -860,9 +843,6 @@ $(document).ready(function(){initNavTree('globals_0x6d.html','');});
 </li>
 <li>MAX_CHEMO
 : <a class="el" href="chemo__detect_8h.html#a7075cf1030abc015b7275646aa58484e">chemo_detect.h</a>
-</li>
-<li>MAX_DELAY
-: <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a16027d8acc5301e440cefa086eb9db2a">spektrum_arch.c</a>
 </li>
 <li>max_dist2_from_home
 : <a class="el" href="navigation_8c.html#ab0ed2ee7b3192c24e5386a15a2b28d86">navigation.c</a>
@@ -1106,6 +1086,14 @@ $(document).ready(function(){initNavTree('globals_0x6d.html','');});
 <li>MF_DAQ_SIZE
 : <a class="el" href="meteo__france__DAQ_8h.html#a5b714423089337cc0badeb175cd27caf">meteo_france_DAQ.h</a>
 </li>
+<li>mf_ptu_init()
+: <a class="el" href="mf__ptu_8c.html#a0f4e02c4cf993d86c38de1bebc67fcd5">mf_ptu.c</a>
+, <a class="el" href="mf__ptu_8h.html#a0f4e02c4cf993d86c38de1bebc67fcd5">mf_ptu.h</a>
+</li>
+<li>mf_ptu_periodic()
+: <a class="el" href="mf__ptu_8c.html#a1f3cab37f4f9e68bffb587d9661e0296">mf_ptu.c</a>
+, <a class="el" href="mf__ptu_8h.html#a1f3cab37f4f9e68bffb587d9661e0296">mf_ptu.h</a>
+</li>
 <li>micromag_cur_axe
 : <a class="el" href="mag__micromag__fw__hw_8c.html#afe3f773b3af5d8e6379f98ddb4714069">mag_micromag_fw_hw.c</a>
 , <a class="el" href="mag__micromag__fw__hw_8h.html#afe3f773b3af5d8e6379f98ddb4714069">mag_micromag_fw_hw.h</a>
@@ -1148,6 +1136,9 @@ $(document).ready(function(){initNavTree('globals_0x6d.html','');});
 <li>Min
 : <a class="el" href="common__flight__plan_8h.html#a202767af7f06cef8e1c69d9771f157c3">common_flight_plan.h</a>
 </li>
+<li>MIN_BAT_LEVEL
+: <a class="el" href="electrical_8c.html#ae718155e6e9f20accaa19604a341f982">electrical.c</a>
+</li>
 <li>MIN_DX
 : <a class="el" href="nav_8c.html#a17976ef29f2f34221836e877f4712d19">nav.c</a>
 </li>
@@ -1173,126 +1164,138 @@ $(document).ready(function(){initNavTree('globals_0x6d.html','');});
 : <a class="el" href="nav__survey__poly__osam_8c.html#a81eb8d41067d9dbbd7d939bbed2befda">nav_survey_poly_osam.c</a>
 </li>
 <li>mission
-: <a class="el" href="mission_8c.html#a06160041db75e80665ebf0f22f13cc98">mission.c</a>
-, <a class="el" href="mission_8h.html#a06160041db75e80665ebf0f22f13cc98">mission.h</a>
+: <a class="el" href="mission__common_8c.html#a06160041db75e80665ebf0f22f13cc98">mission_common.c</a>
+, <a class="el" href="mission__common_8h.html#a06160041db75e80665ebf0f22f13cc98">mission_common.h</a>
+</li>
+<li>mission_element_convert()
+: <a class="el" href="mission__common_8c.html#a3e71a63731fc024c0ccd9f28c9b94baf">mission_common.c</a>
+, <a class="el" href="mission__common_8h.html#a3e71a63731fc024c0ccd9f28c9b94baf">mission_common.h</a>
+, <a class="el" href="mission__rotorcraft__nav_8c.html#a3e71a63731fc024c0ccd9f28c9b94baf">mission_rotorcraft_nav.c</a>
 </li>
 <li>MISSION_ELEMENT_NB
-: <a class="el" href="mission_8h.html#abbc222d733a10afc3b9ab7537d664a73">mission.h</a>
+: <a class="el" href="mission__common_8h.html#abbc222d733a10afc3b9ab7537d664a73">mission_common.h</a>
 </li>
 <li>mission_get()
-: <a class="el" href="mission_8c.html#ad6fd0022684bf2c6fda1f9626c13cfc4">mission.c</a>
-, <a class="el" href="mission_8h.html#ad6fd0022684bf2c6fda1f9626c13cfc4">mission.h</a>
+: <a class="el" href="mission__common_8c.html#ad6fd0022684bf2c6fda1f9626c13cfc4">mission_common.c</a>
+, <a class="el" href="mission__common_8h.html#ad6fd0022684bf2c6fda1f9626c13cfc4">mission_common.h</a>
 </li>
 <li>mission_init()
-: <a class="el" href="mission_8c.html#a19c6efe9565f7d4a03291cb165b931ff">mission.c</a>
-, <a class="el" href="mission_8h.html#a19c6efe9565f7d4a03291cb165b931ff">mission.h</a>
+: <a class="el" href="mission__common_8c.html#a19c6efe9565f7d4a03291cb165b931ff">mission_common.c</a>
+, <a class="el" href="mission__common_8h.html#a19c6efe9565f7d4a03291cb165b931ff">mission_common.h</a>
 </li>
 <li>mission_insert()
-: <a class="el" href="mission_8c.html#a693741dd73c6e0f8b5059efebd6360d8">mission.c</a>
-, <a class="el" href="mission_8h.html#a693741dd73c6e0f8b5059efebd6360d8">mission.h</a>
+: <a class="el" href="mission__common_8c.html#a693741dd73c6e0f8b5059efebd6360d8">mission_common.c</a>
+, <a class="el" href="mission__common_8h.html#a693741dd73c6e0f8b5059efebd6360d8">mission_common.h</a>
 </li>
 <li>mission_nav_circle()
 : <a class="el" href="mission__fw__nav_8c.html#a14831a73e604ff798ed1f0bc7f871e02">mission_fw_nav.c</a>
+, <a class="el" href="mission__rotorcraft__nav_8c.html#a8bc33812b66e36f8e9bdd848e4fbe4b9">mission_rotorcraft_nav.c</a>
 </li>
 <li>mission_nav_path()
 : <a class="el" href="mission__fw__nav_8c.html#a1039c6cd8dd27b784412d6e9cee0d091">mission_fw_nav.c</a>
+, <a class="el" href="mission__rotorcraft__nav_8c.html#ade6feceab11428aef0d4632327edc02c">mission_rotorcraft_nav.c</a>
 </li>
 <li>mission_nav_segment()
 : <a class="el" href="mission__fw__nav_8c.html#a152a2539d75d45caa437fce535b9e6ab">mission_fw_nav.c</a>
+, <a class="el" href="mission__rotorcraft__nav_8c.html#a31f95a5faef17842e56b2adfb4ccc7f1">mission_rotorcraft_nav.c</a>
 </li>
 <li>mission_nav_wp()
 : <a class="el" href="mission__fw__nav_8c.html#a5c42cd8acf9fd5c504a993ea3cf91a6a">mission_fw_nav.c</a>
+, <a class="el" href="mission__rotorcraft__nav_8c.html#a9a9b54af4c13f446987bd40569f52618">mission_rotorcraft_nav.c</a>
 </li>
 <li>mission_parse_CIRCLE()
-: <a class="el" href="mission_8c.html#ab8ca28c703f0fe110306d6d88c8392b5">mission.c</a>
-, <a class="el" href="mission_8h.html#ab8ca28c703f0fe110306d6d88c8392b5">mission.h</a>
+: <a class="el" href="mission__common_8c.html#ab8ca28c703f0fe110306d6d88c8392b5">mission_common.c</a>
+, <a class="el" href="mission__common_8h.html#ab8ca28c703f0fe110306d6d88c8392b5">mission_common.h</a>
 </li>
 <li>mission_parse_CIRCLE_LLA()
-: <a class="el" href="mission_8c.html#a6dba22417b1b7d8c0ad962c3341f92a2">mission.c</a>
-, <a class="el" href="mission_8h.html#a6dba22417b1b7d8c0ad962c3341f92a2">mission.h</a>
+: <a class="el" href="mission__common_8c.html#a6dba22417b1b7d8c0ad962c3341f92a2">mission_common.c</a>
+, <a class="el" href="mission__common_8h.html#a6dba22417b1b7d8c0ad962c3341f92a2">mission_common.h</a>
 </li>
 <li>mission_parse_END_MISSION()
-: <a class="el" href="mission_8c.html#aed1e579e47995e14bb003735220be047">mission.c</a>
-, <a class="el" href="mission_8h.html#aed1e579e47995e14bb003735220be047">mission.h</a>
+: <a class="el" href="mission__common_8c.html#aed1e579e47995e14bb003735220be047">mission_common.c</a>
+, <a class="el" href="mission__common_8h.html#aed1e579e47995e14bb003735220be047">mission_common.h</a>
 </li>
 <li>mission_parse_GOTO_MISSION()
-: <a class="el" href="mission_8c.html#a4c9eaed4052ca09539ce790603d7fd06">mission.c</a>
-, <a class="el" href="mission_8h.html#a4c9eaed4052ca09539ce790603d7fd06">mission.h</a>
+: <a class="el" href="mission__common_8c.html#a4c9eaed4052ca09539ce790603d7fd06">mission_common.c</a>
+, <a class="el" href="mission__common_8h.html#a4c9eaed4052ca09539ce790603d7fd06">mission_common.h</a>
 </li>
 <li>mission_parse_GOTO_WP()
-: <a class="el" href="mission_8c.html#a04b694d47416360116d4966a2462dcf8">mission.c</a>
-, <a class="el" href="mission_8h.html#a04b694d47416360116d4966a2462dcf8">mission.h</a>
+: <a class="el" href="mission__common_8c.html#a04b694d47416360116d4966a2462dcf8">mission_common.c</a>
+, <a class="el" href="mission__common_8h.html#a04b694d47416360116d4966a2462dcf8">mission_common.h</a>
 </li>
 <li>mission_parse_GOTO_WP_LLA()
-: <a class="el" href="mission_8c.html#a255b2e232c56504ea56fe28c807aefab">mission.c</a>
-, <a class="el" href="mission_8h.html#a255b2e232c56504ea56fe28c807aefab">mission.h</a>
+: <a class="el" href="mission__common_8c.html#a255b2e232c56504ea56fe28c807aefab">mission_common.c</a>
+, <a class="el" href="mission__common_8h.html#a255b2e232c56504ea56fe28c807aefab">mission_common.h</a>
 </li>
 <li>mission_parse_NEXT_MISSION()
-: <a class="el" href="mission_8c.html#aac8d2a7b8e27ca7f286507b83d278163">mission.c</a>
-, <a class="el" href="mission_8h.html#aac8d2a7b8e27ca7f286507b83d278163">mission.h</a>
+: <a class="el" href="mission__common_8c.html#aac8d2a7b8e27ca7f286507b83d278163">mission_common.c</a>
+, <a class="el" href="mission__common_8h.html#aac8d2a7b8e27ca7f286507b83d278163">mission_common.h</a>
 </li>
 <li>mission_parse_PATH()
-: <a class="el" href="mission_8c.html#aefd31c46b4c656ca476b5edda5eb3531">mission.c</a>
-, <a class="el" href="mission_8h.html#aefd31c46b4c656ca476b5edda5eb3531">mission.h</a>
+: <a class="el" href="mission__common_8c.html#aefd31c46b4c656ca476b5edda5eb3531">mission_common.c</a>
+, <a class="el" href="mission__common_8h.html#aefd31c46b4c656ca476b5edda5eb3531">mission_common.h</a>
 </li>
 <li>mission_parse_PATH_LLA()
-: <a class="el" href="mission_8c.html#ae2825fd4a06960dae1a0e84a8ef2fdac">mission.c</a>
-, <a class="el" href="mission_8h.html#ae2825fd4a06960dae1a0e84a8ef2fdac">mission.h</a>
+: <a class="el" href="mission__common_8c.html#ae2825fd4a06960dae1a0e84a8ef2fdac">mission_common.c</a>
+, <a class="el" href="mission__common_8h.html#ae2825fd4a06960dae1a0e84a8ef2fdac">mission_common.h</a>
 </li>
 <li>mission_parse_SEGMENT()
-: <a class="el" href="mission_8c.html#a1715975f3eeb0b7ae1f7f0ed3b0c800f">mission.c</a>
-, <a class="el" href="mission_8h.html#a1715975f3eeb0b7ae1f7f0ed3b0c800f">mission.h</a>
+: <a class="el" href="mission__common_8c.html#a1715975f3eeb0b7ae1f7f0ed3b0c800f">mission_common.c</a>
+, <a class="el" href="mission__common_8h.html#a1715975f3eeb0b7ae1f7f0ed3b0c800f">mission_common.h</a>
 </li>
 <li>mission_parse_SEGMENT_LLA()
-: <a class="el" href="mission_8c.html#aa6ff1ff42af5ec7f32536bc2bddd70b0">mission.c</a>
-, <a class="el" href="mission_8h.html#aa6ff1ff42af5ec7f32536bc2bddd70b0">mission.h</a>
+: <a class="el" href="mission__common_8c.html#aa6ff1ff42af5ec7f32536bc2bddd70b0">mission_common.c</a>
+, <a class="el" href="mission__common_8h.html#aa6ff1ff42af5ec7f32536bc2bddd70b0">mission_common.h</a>
 </li>
 <li>mission_parse_SURVEY()
-: <a class="el" href="mission_8h.html#a8ce23e7ba2dff58c1fa305ee22b32c1d">mission.h</a>
+: <a class="el" href="mission__common_8h.html#a8ce23e7ba2dff58c1fa305ee22b32c1d">mission_common.h</a>
 </li>
 <li>mission_parse_SURVEY_LLA()
-: <a class="el" href="mission_8h.html#a2cc891743321ab1e7e0b22f0f2f38c11">mission.h</a>
+: <a class="el" href="mission__common_8h.html#a2cc891743321ab1e7e0b22f0f2f38c11">mission_common.h</a>
 </li>
 <li>MISSION_PATH_NB
-: <a class="el" href="mission_8h.html#aab82cfe6539e97d31e0120e16c188465">mission.h</a>
+: <a class="el" href="mission__common_8h.html#aab82cfe6539e97d31e0120e16c188465">mission_common.h</a>
 </li>
 <li>mission_point_of_lla()
-: <a class="el" href="mission_8c.html#abaac67dbb596db58d75ea2991494daf1">mission.c</a>
+: <a class="el" href="mission__common_8h.html#aeaeaf8bd5a00fa937a0c0ebfdf982875">mission_common.h</a>
+, <a class="el" href="mission__fw__nav_8c.html#aeaeaf8bd5a00fa937a0c0ebfdf982875">mission_fw_nav.c</a>
+, <a class="el" href="mission__rotorcraft__nav_8c.html#aeaeaf8bd5a00fa937a0c0ebfdf982875">mission_rotorcraft_nav.c</a>
 </li>
 <li>mission_run()
-: <a class="el" href="mission_8h.html#a30b803cd44fe2ee518d935dccbcc2de7">mission.h</a>
+: <a class="el" href="mission__common_8h.html#a30b803cd44fe2ee518d935dccbcc2de7">mission_common.h</a>
 , <a class="el" href="mission__fw__nav_8c.html#a77c170761e804706933b8eccce1e93ea">mission_fw_nav.c</a>
+, <a class="el" href="mission__rotorcraft__nav_8c.html#a77c170761e804706933b8eccce1e93ea">mission_rotorcraft_nav.c</a>
 </li>
 <li>mission_status_report()
-: <a class="el" href="mission_8h.html#a3539ca9cd9417f5d2bfda2fdaf6973fa">mission.h</a>
-, <a class="el" href="mission_8c.html#a3539ca9cd9417f5d2bfda2fdaf6973fa">mission.c</a>
+: <a class="el" href="mission__common_8c.html#a3539ca9cd9417f5d2bfda2fdaf6973fa">mission_common.c</a>
+, <a class="el" href="mission__common_8h.html#a3539ca9cd9417f5d2bfda2fdaf6973fa">mission_common.h</a>
 </li>
 <li>MissionCircle
-: <a class="el" href="mission_8h.html#a64f46ea1c53b7a5677d078814b7b4752adcf63d3c05bbffb14423b8ba96a8db9c">mission.h</a>
+: <a class="el" href="mission__common_8h.html#a64f46ea1c53b7a5677d078814b7b4752adcf63d3c05bbffb14423b8ba96a8db9c">mission_common.h</a>
 </li>
 <li>MissionEight
-: <a class="el" href="mission_8h.html#a64f46ea1c53b7a5677d078814b7b4752a13fcd8e4bba9ec39766fb210ea2f7716">mission.h</a>
+: <a class="el" href="mission__common_8h.html#a64f46ea1c53b7a5677d078814b7b4752a13fcd8e4bba9ec39766fb210ea2f7716">mission_common.h</a>
 </li>
 <li>MissionInsertMode
-: <a class="el" href="mission_8h.html#add225f937fa97e4f76900b7f5e73872e">mission.h</a>
+: <a class="el" href="mission__common_8h.html#add225f937fa97e4f76900b7f5e73872e">mission_common.h</a>
 </li>
 <li>MissionOval
-: <a class="el" href="mission_8h.html#a64f46ea1c53b7a5677d078814b7b4752ad66f06fbbfac07f630479106159bd45a">mission.h</a>
+: <a class="el" href="mission__common_8h.html#a64f46ea1c53b7a5677d078814b7b4752ad66f06fbbfac07f630479106159bd45a">mission_common.h</a>
 </li>
 <li>MissionPath
-: <a class="el" href="mission_8h.html#a64f46ea1c53b7a5677d078814b7b4752aeb45aac28e0ac2391c20d5105433edd3">mission.h</a>
+: <a class="el" href="mission__common_8h.html#a64f46ea1c53b7a5677d078814b7b4752aeb45aac28e0ac2391c20d5105433edd3">mission_common.h</a>
 </li>
 <li>MissionSegment
-: <a class="el" href="mission_8h.html#a64f46ea1c53b7a5677d078814b7b4752adf596eb62434f0e84ed2404d474dbe70">mission.h</a>
+: <a class="el" href="mission__common_8h.html#a64f46ea1c53b7a5677d078814b7b4752adf596eb62434f0e84ed2404d474dbe70">mission_common.h</a>
 </li>
 <li>MissionSurvey
-: <a class="el" href="mission_8h.html#a64f46ea1c53b7a5677d078814b7b4752a2d5e64b64cf5defef8c8d7b71aea4788">mission.h</a>
+: <a class="el" href="mission__common_8h.html#a64f46ea1c53b7a5677d078814b7b4752a2d5e64b64cf5defef8c8d7b71aea4788">mission_common.h</a>
 </li>
 <li>MissionType
-: <a class="el" href="mission_8h.html#a64f46ea1c53b7a5677d078814b7b4752">mission.h</a>
+: <a class="el" href="mission__common_8h.html#a64f46ea1c53b7a5677d078814b7b4752">mission_common.h</a>
 </li>
 <li>MissionWP
-: <a class="el" href="mission_8h.html#a64f46ea1c53b7a5677d078814b7b4752adee6921ec8fea41804938fa1e0a7aa3f">mission.h</a>
+: <a class="el" href="mission__common_8h.html#a64f46ea1c53b7a5677d078814b7b4752adee6921ec8fea41804938fa1e0a7aa3f">mission_common.h</a>
 </li>
 <li>MLX90614_ADDR
 : <a class="el" href="ir__mlx_8c.html#af57cd108cf3cd4e21dc471263b2236ec">ir_mlx.c</a>
@@ -1409,20 +1412,20 @@ $(document).ready(function(){initNavTree('globals_0x6d.html','');});
 : <a class="el" href="fixedwing_2autopilot_8h.html#a1bf7cecdbe3f008fdb8dd8404c4e510f">autopilot.h</a>
 </li>
 <li>MODULES_C
-: <a class="el" href="main__ap_8c.html#ac3c586d9cc5d614d34061b3844a1e45b">main_ap.c</a>
+: <a class="el" href="sim__ap_8c.html#ac3c586d9cc5d614d34061b3844a1e45b">sim_ap.c</a>
+, <a class="el" href="main__ap_8c.html#ac3c586d9cc5d614d34061b3844a1e45b">main_ap.c</a>
 , <a class="el" href="rotorcraft_2main_8c.html#ac3c586d9cc5d614d34061b3844a1e45b">main.c</a>
-, <a class="el" href="sim__ap_8c.html#ac3c586d9cc5d614d34061b3844a1e45b">sim_ap.c</a>
 </li>
 <li>MODULES_DATALINK_C
-: <a class="el" href="fixedwing_2datalink_8c.html#abfcb795f0df1bc44a2fc9e4ef8a51c39">datalink.c</a>
+: <a class="el" href="rotorcraft_2datalink_8c.html#abfcb795f0df1bc44a2fc9e4ef8a51c39">datalink.c</a>
 </li>
 <li>modules_tid
 : <a class="el" href="main__ap_8c.html#ad22206414845137916e0ed83054bdfc8">main_ap.c</a>
 , <a class="el" href="rotorcraft_2main_8c.html#ad22206414845137916e0ed83054bdfc8">main.c</a>
 </li>
 <li>MOfCm
-: <a class="el" href="jsbsim__transport_8c.html#a2743dcc4e9c41b9e1d64aab1b991b6fc">jsbsim_transport.c</a>
-, <a class="el" href="fixedwing_2datalink_8c.html#a2743dcc4e9c41b9e1d64aab1b991b6fc">datalink.c</a>
+: <a class="el" href="fixedwing_2datalink_8c.html#a2743dcc4e9c41b9e1d64aab1b991b6fc">datalink.c</a>
+, <a class="el" href="jsbsim__transport_8c.html#a2743dcc4e9c41b9e1d64aab1b991b6fc">jsbsim_transport.c</a>
 </li>
 <li>monitor_task()
 : <a class="el" href="main__ap_8c.html#a7eac6acc6dec1056989fbbc5d65b85b9">main_ap.c</a>
@@ -1454,8 +1457,8 @@ $(document).ready(function(){initNavTree('globals_0x6d.html','');});
 , <a class="el" href="motor__mixing_8h.html#a56f7b209886f3636c9c5f7f0431ce3f0">motor_mixing.h</a>
 </li>
 <li>motor_mixing_init()
-: <a class="el" href="motor__mixing_8h.html#aa6be133f8fea4274105384f0276801a1">motor_mixing.h</a>
-, <a class="el" href="motor__mixing_8c.html#aa6be133f8fea4274105384f0276801a1">motor_mixing.c</a>
+: <a class="el" href="motor__mixing_8c.html#aa6be133f8fea4274105384f0276801a1">motor_mixing.c</a>
+, <a class="el" href="motor__mixing_8h.html#aa6be133f8fea4274105384f0276801a1">motor_mixing.h</a>
 </li>
 <li>MOTOR_MIXING_MAX_MOTOR
 : <a class="el" href="motor__mixing_8c.html#aab8ab943326a4b715a82c0b076a14ca3">motor_mixing.c</a>
@@ -1474,11 +1477,20 @@ $(document).ready(function(){initNavTree('globals_0x6d.html','');});
 , <a class="el" href="motor__mixing_8h.html#ad7abde7201bcb01c91540ada4f707d51">motor_mixing.h</a>
 </li>
 <li>motor_mixing_run_spinup()
-: <a class="el" href="motor__mixing_8h.html#a4d6511bd941233c791d1436bb35ebb10">motor_mixing.h</a>
-, <a class="el" href="motor__mixing_8c.html#a4d6511bd941233c791d1436bb35ebb10">motor_mixing.c</a>
+: <a class="el" href="motor__mixing_8c.html#a4d6511bd941233c791d1436bb35ebb10">motor_mixing.c</a>
+, <a class="el" href="motor__mixing_8h.html#a4d6511bd941233c791d1436bb35ebb10">motor_mixing.h</a>
 </li>
 <li>MOTOR_MIXING_STOP_MOTOR
 : <a class="el" href="motor__mixing_8c.html#ab0ed1c7950ddc85efbfb8b23931ab2c1">motor_mixing.c</a>
+</li>
+<li>MOTOR_MIXING_TRIM_PITCH
+: <a class="el" href="motor__mixing_8c.html#acdbf04cf8612d0f37086975c646405ab">motor_mixing.c</a>
+</li>
+<li>MOTOR_MIXING_TRIM_ROLL
+: <a class="el" href="motor__mixing_8c.html#a3c8bf9fbab481d7a4fb24a23f827d457">motor_mixing.c</a>
+</li>
+<li>MOTOR_MIXING_TRIM_YAW
+: <a class="el" href="motor__mixing_8c.html#a39beb241f4c1584e6a0e73a0a6048cdc">motor_mixing.c</a>
 </li>
 <li>mpl3115_configure()
 : <a class="el" href="mpl3115_8c.html#a9ada79887b547d1129b0f5747cb58b2c">mpl3115.c</a>
@@ -2253,8 +2265,8 @@ $(document).ready(function(){initNavTree('globals_0x6d.html','');});
 : <a class="el" href="ms5611__regs_8h.html#a28748aae8d11dbcb2f65b5eda5eb02c4">ms5611_regs.h</a>
 </li>
 <li>ms5611_calc()
-: <a class="el" href="ms5611_8c.html#aaeb2ca7e796a7ed3d7393b34ab166c72">ms5611.c</a>
-, <a class="el" href="ms5611_8h.html#aaeb2ca7e796a7ed3d7393b34ab166c72">ms5611.h</a>
+: <a class="el" href="ms5611_8c.html#a7ea327bfcf88ade86630c4f2fd54329d">ms5611.c</a>
+, <a class="el" href="ms5611_8h.html#a7ea327bfcf88ade86630c4f2fd54329d">ms5611.h</a>
 </li>
 <li>MS5611_I2C_DEV
 : <a class="el" href="baro__ms5611__i2c_8c.html#a35aa45219b866c3fa80653e777f41d90">baro_ms5611_i2c.c</a>
@@ -2372,8 +2384,8 @@ $(document).ready(function(){initNavTree('globals_0x6d.html','');});
 , <a class="el" href="ms5611__spi_8c.html#a7b23274ad291a9e686044d66f378d91d">ms5611_spi.c</a>
 </li>
 <li>ms5611_spi_init()
-: <a class="el" href="ms5611__spi_8c.html#aa5d5676c8d64da7b9c569bc97ee00c0a">ms5611_spi.c</a>
-, <a class="el" href="ms5611__spi_8h.html#a06f2ae927850271e69d84ab45f5fe9b2">ms5611_spi.h</a>
+: <a class="el" href="ms5611__spi_8h.html#a06f2ae927850271e69d84ab45f5fe9b2">ms5611_spi.h</a>
+, <a class="el" href="ms5611__spi_8c.html#aa5d5676c8d64da7b9c569bc97ee00c0a">ms5611_spi.c</a>
 </li>
 <li>ms5611_spi_periodic()
 : <a class="el" href="ms5611__spi_8h.html#a950b89b21f5e7b97df350ec56ed1bdc9">ms5611_spi.h</a>
@@ -2386,12 +2398,12 @@ $(document).ready(function(){initNavTree('globals_0x6d.html','');});
 : <a class="el" href="ms5611__spi_8h.html#ad675f17b7fb527f6170b5a18bf09b5bd">ms5611_spi.h</a>
 </li>
 <li>ms5611_spi_start_configure()
-: <a class="el" href="ms5611__spi_8c.html#a23682a3c5d36bc1c95f61b80ab101b53">ms5611_spi.c</a>
-, <a class="el" href="ms5611__spi_8h.html#a23682a3c5d36bc1c95f61b80ab101b53">ms5611_spi.h</a>
+: <a class="el" href="ms5611__spi_8h.html#a23682a3c5d36bc1c95f61b80ab101b53">ms5611_spi.h</a>
+, <a class="el" href="ms5611__spi_8c.html#a23682a3c5d36bc1c95f61b80ab101b53">ms5611_spi.c</a>
 </li>
 <li>ms5611_spi_start_conversion()
-: <a class="el" href="ms5611__spi_8c.html#a82e1cf6372b20fbfd4ec58f4cc8e58b9">ms5611_spi.c</a>
-, <a class="el" href="ms5611__spi_8h.html#a82e1cf6372b20fbfd4ec58f4cc8e58b9">ms5611_spi.h</a>
+: <a class="el" href="ms5611__spi_8h.html#a82e1cf6372b20fbfd4ec58f4cc8e58b9">ms5611_spi.h</a>
+, <a class="el" href="ms5611__spi_8c.html#a82e1cf6372b20fbfd4ec58f4cc8e58b9">ms5611_spi.c</a>
 </li>
 <li>MS5611_START_CONV_D1
 : <a class="el" href="ms5611__regs_8h.html#a1d497475691f33aee46953d0fc3003e4">ms5611_regs.h</a>
@@ -2547,8 +2559,8 @@ $(document).ready(function(){initNavTree('globals_0x6d.html','');});
 : <a class="el" href="link__mcu__usart_8c.html#a57e939081e071743a2d3bb0d463e7137">link_mcu_usart.c</a>
 </li>
 <li>MSG_SIZE
-: <a class="el" href="main__demo5_8c.html#ad4d025ecf1bdbf8b244ca688df8e478d">main_demo5.c</a>
-, <a class="el" href="datalink_8h.html#ad4d025ecf1bdbf8b244ca688df8e478d">datalink.h</a>
+: <a class="el" href="datalink_8h.html#ad4d025ecf1bdbf8b244ca688df8e478d">datalink.h</a>
+, <a class="el" href="main__demo5_8c.html#ad4d025ecf1bdbf8b244ca688df8e478d">main_demo5.c</a>
 </li>
 <li>MTK_DIY_FIX_2D
 : <a class="el" href="gps__mtk_8c.html#a29b461c560feb9c32e2bf69bb68bd900">gps_mtk.c</a>
@@ -2584,7 +2596,7 @@ $(document).ready(function(){initNavTree('globals_0x6d.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon May 26 2014 16:01:22 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:01:22 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

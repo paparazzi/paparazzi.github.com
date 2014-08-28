@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('ahrs__float__utils_8h_source.html','')
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> stheta = sinf(theta);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> mn = ctheta * magf.<a class="code" href="structFloatVect3.html#aa44c74404cf8ef0b143066e970352adb">x</a> + sphi*stheta*magf.<a class="code" href="structFloatVect3.html#ac5e44e02fe71768bf56eb39a14f3cc5b">y</a> + cphi*stheta*magf.<a class="code" href="structFloatVect3.html#adeaa53529844ee1fa7df48e61c3994f7">z</a>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> me =     0. * magf.<a class="code" href="structFloatVect3.html#aa44c74404cf8ef0b143066e970352adb">x</a> + cphi       *magf.<a class="code" href="structFloatVect3.html#ac5e44e02fe71768bf56eb39a14f3cc5b">y</a> - sphi       *magf.<a class="code" href="structFloatVect3.html#adeaa53529844ee1fa7df48e61c3994f7">z</a>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">float</span> psi = -atan2f(me, mn) + atan2(<a class="code" href="ahrs__magnetic__field__model_8h.html#a2ea5deffc7e04c9f558a4d797425b145">AHRS_H_Y</a>, <a class="code" href="ahrs__magnetic__field__model_8h.html#a215f39832bbeb7ae9f2c1761d391ff36">AHRS_H_X</a>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">float</span> psi = -atan2f(me, mn) + atan2(AHRS_H_Y, AHRS_H_X);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordflow">if</span> (psi &gt; M_PI) psi -= 2.*M_PI; <span class="keywordflow">if</span> (psi &lt; -M_PI) psi+= 2.*M_PI;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="pprz__algebra_8h.html#ada1c7857d5fc2d8898f8e723f6e43d20">EULERS_ASSIGN</a>(*e, phi, theta, psi);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
@@ -206,11 +206,11 @@ $(document).ready(function(){initNavTree('ahrs__float__utils_8h_source.html','')
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keyword">struct </span><a class="code" href="structFloatQuat.html" title="Roation quaternion.">FloatQuat</a> q_m;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="comment">/* dot([mag_n.x, mag_n.x, 0], [AHRS_H_X, AHRS_H_Y, 0]) */</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">float</span> dot = mag_ltp.<a class="code" href="structFloatVect3.html#aa44c74404cf8ef0b143066e970352adb">x</a> * <a class="code" href="ahrs__magnetic__field__model_8h.html#a215f39832bbeb7ae9f2c1761d391ff36">AHRS_H_X</a> + mag_ltp.<a class="code" href="structFloatVect3.html#ac5e44e02fe71768bf56eb39a14f3cc5b">y</a> * <a class="code" href="ahrs__magnetic__field__model_8h.html#a2ea5deffc7e04c9f558a4d797425b145">AHRS_H_Y</a>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">float</span> dot = mag_ltp.<a class="code" href="structFloatVect3.html#aa44c74404cf8ef0b143066e970352adb">x</a> * AHRS_H_X + mag_ltp.<a class="code" href="structFloatVect3.html#ac5e44e02fe71768bf56eb39a14f3cc5b">y</a> * AHRS_H_Y;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="comment">/* |v1||v2| */</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">float</span> norm2 = sqrtf(<a class="code" href="pprz__algebra_8h.html#a26f8bb75deabaaf4adafe0a093144971">SQUARE</a>(mag_ltp.<a class="code" href="structFloatVect3.html#aa44c74404cf8ef0b143066e970352adb">x</a>) + <a class="code" href="pprz__algebra_8h.html#a26f8bb75deabaaf4adafe0a093144971">SQUARE</a>(mag_ltp.<a class="code" href="structFloatVect3.html#ac5e44e02fe71768bf56eb39a14f3cc5b">y</a>))</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    * sqrtf(<a class="code" href="pprz__algebra_8h.html#a26f8bb75deabaaf4adafe0a093144971">SQUARE</a>(<a class="code" href="ahrs__magnetic__field__model_8h.html#a215f39832bbeb7ae9f2c1761d391ff36">AHRS_H_X</a>) + <a class="code" href="pprz__algebra_8h.html#a26f8bb75deabaaf4adafe0a093144971">SQUARE</a>(<a class="code" href="ahrs__magnetic__field__model_8h.html#a2ea5deffc7e04c9f558a4d797425b145">AHRS_H_Y</a>));</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    * sqrtf(<a class="code" href="pprz__algebra_8h.html#a26f8bb75deabaaf4adafe0a093144971">SQUARE</a>(AHRS_H_X) + <a class="code" href="pprz__algebra_8h.html#a26f8bb75deabaaf4adafe0a093144971">SQUARE</a>(AHRS_H_Y));</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="comment">// catch 180deg case</span></div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordflow">if</span> (ABS(norm2 + dot) &lt; 5*FLT_MIN) {</div>
@@ -219,7 +219,7 @@ $(document).ready(function(){initNavTree('ahrs__float__utils_8h_source.html','')
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="comment">/* q_xyz = cross([mag_n.x, mag_n.y, 0], [AHRS_H_X, AHRS_H_Y, 0]) */</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    q_m.<a class="code" href="structFloatQuat.html#a0687e8bd8978426a17705719298d2bdb">qx</a> = 0.0;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    q_m.<a class="code" href="structFloatQuat.html#a5ceb12dd2afeb86ce8b2065dde0cd61e">qy</a> = 0.0;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    q_m.<a class="code" href="structFloatQuat.html#ada1c73599b4a1dca9752f4106c20d292">qz</a> = mag_ltp.<a class="code" href="structFloatVect3.html#aa44c74404cf8ef0b143066e970352adb">x</a> * <a class="code" href="ahrs__magnetic__field__model_8h.html#a2ea5deffc7e04c9f558a4d797425b145">AHRS_H_Y</a> - mag_ltp.<a class="code" href="structFloatVect3.html#ac5e44e02fe71768bf56eb39a14f3cc5b">y</a> * <a class="code" href="ahrs__magnetic__field__model_8h.html#a215f39832bbeb7ae9f2c1761d391ff36">AHRS_H_X</a>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    q_m.<a class="code" href="structFloatQuat.html#ada1c73599b4a1dca9752f4106c20d292">qz</a> = mag_ltp.<a class="code" href="structFloatVect3.html#aa44c74404cf8ef0b143066e970352adb">x</a> * AHRS_H_Y - mag_ltp.<a class="code" href="structFloatVect3.html#ac5e44e02fe71768bf56eb39a14f3cc5b">y</a> * AHRS_H_X;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    q_m.<a class="code" href="structFloatQuat.html#a4e645cefcbdb25a8cfb0fc0c76d63044">qi</a> = norm2 + dot;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <a class="code" href="pprz__algebra__float_8h.html#a9cd81f9e9b5e04260cb4cc54fec267ce">FLOAT_QUAT_NORMALIZE</a>(q_m);</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  }</div>
@@ -236,7 +236,7 @@ $(document).ready(function(){initNavTree('ahrs__float__utils_8h_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_46fef683200e96ccf1a2f608d90c4a2d.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__float__utils_8h.html">ahrs_float_utils.h</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:00:45 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:00:44 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

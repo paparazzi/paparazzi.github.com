@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -248,10 +248,10 @@ $(document).ready(function(){initNavTree('ms5611__i2c_8c_source.html','');});
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            ms-&gt;<a class="code" href="structMs5611__I2c.html#a0024dab605389b352bace1c1fc05d526">status</a> = <a class="code" href="ms5611_8h.html#aeabcd6fb6c9a54ba10c34130f71f855ba25099d391a3af5192c073b1d89f94538">MS5611_STATUS_IDLE</a>;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;          }</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;          <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="comment">/* calculate temp and pressure from measurements */</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <a class="code" href="ms5611_8c.html#aaeb2ca7e796a7ed3d7393b34ab166c72" title="Calculate temperature and compensated pressure.">ms5611_calc</a>(&amp;(ms-&gt;<a class="code" href="structMs5611__I2c.html#a5349bb570536ee55a7e1a41a5d956907">data</a>));</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            ms-&gt;<a class="code" href="structMs5611__I2c.html#a0024dab605389b352bace1c1fc05d526">status</a> = <a class="code" href="ms5611_8h.html#aeabcd6fb6c9a54ba10c34130f71f855ba25099d391a3af5192c073b1d89f94538">MS5611_STATUS_IDLE</a>;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            ms-&gt;<a class="code" href="structMs5611__I2c.html#a73769aea977f08caa7a9d82522cfa764" title="data ready flag">data_available</a> = <a class="code" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="comment">/* calculate temp and pressure from measurements and set available if valid */</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="ms5611_8c.html#a7ea327bfcf88ade86630c4f2fd54329d" title="Calculate temperature and compensated pressure.">ms5611_calc</a>(&amp;(ms-&gt;<a class="code" href="structMs5611__I2c.html#a5349bb570536ee55a7e1a41a5d956907">data</a>)))</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;              ms-&gt;<a class="code" href="structMs5611__I2c.html#a73769aea977f08caa7a9d82522cfa764" title="data ready flag">data_available</a> = <a class="code" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            ms-&gt;<a class="code" href="structMs5611__I2c.html#a0024dab605389b352bace1c1fc05d526">status</a> = <a class="code" href="ms5611_8h.html#aeabcd6fb6c9a54ba10c34130f71f855ba25099d391a3af5192c073b1d89f94538">MS5611_STATUS_IDLE</a>;</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;          }</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;          <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
@@ -306,7 +306,7 @@ $(document).ready(function(){initNavTree('ms5611__i2c_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="ms5611__i2c_8c.html">ms5611_i2c.c</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:00:44 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:00:44 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

@@ -1,5 +1,7 @@
 var NAVTREEINDEX59 =
 {
+"state_8h.html#gad902223e5a9fd3fcd2154126e11d08ff":[8,0,0,0,30,77],
+"state_8h.html#gad9b7b6ea39d5a4ee3e824f97204c4bb5":[8,0,0,0,30,44],
 "state_8h.html#gadda4d0520e9e62ad57b57482439a7c51":[8,0,0,0,30,4],
 "state_8h.html#gadff5507f25f24d146d0669867f9fb509":[8,0,0,0,30,49],
 "state_8h.html#gae03bd8f94b7150506835b77060b73311":[8,0,0,0,30,82],
@@ -247,7 +249,5 @@ var NAVTREEINDEX59 =
 "stm32_2subsystems_2imu_2imu__crista__arch_8h_source.html":[8,0,0,0,0,3,2,1,3],
 "stm32_2subsystems_2radio__control_2ppm__arch_8c.html":[8,0,0,0,0,3,2,2,0],
 "stm32_2subsystems_2radio__control_2ppm__arch_8c.html#a571f5404ba9f1f7f138fcc3945d9202b":[8,0,0,0,0,3,2,2,0,4],
-"stm32_2subsystems_2radio__control_2ppm__arch_8c.html#a644a06e4166982dcb58fbd25d65f1f65":[8,0,0,0,0,3,2,2,0,0],
-"stm32_2subsystems_2radio__control_2ppm__arch_8c.html#a6b8315208a0f09436556fbce0298ae38":[8,0,0,0,0,3,2,2,0,5],
-"stm32_2subsystems_2radio__control_2ppm__arch_8c.html#a7dd96af6b908956574fb02bb01513079":[8,0,0,0,0,3,2,2,0,3]
+"stm32_2subsystems_2radio__control_2ppm__arch_8c.html#a644a06e4166982dcb58fbd25d65f1f65":[8,0,0,0,0,3,2,2,0,0]
 };

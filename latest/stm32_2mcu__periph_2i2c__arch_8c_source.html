@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -1052,7 +1052,7 @@ $(document).ready(function(){initNavTree('stm32_2mcu__periph_2i2c__arch_8c_sourc
 <div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;<span class="preprocessor">#ifndef I2C1_CLOCK_SPEED</span></div>
 <div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define I2C1_CLOCK_SPEED 200000</span></div>
 <div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;<span class="preprocessor"></span><a class="code" href="superbitrf_8c.html#a15df901951d839341d6fd25d3afa6df9">PRINT_CONFIG_VAR</a>(I2C1_CLOCK_SPEED)</div>
+<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;<span class="preprocessor"></span><a class="code" href="subsystems_2datalink_2superbitrf_8c.html#a15df901951d839341d6fd25d3afa6df9">PRINT_CONFIG_VAR</a>(I2C1_CLOCK_SPEED)</div>
 <div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;</div>
 <div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;struct <a class="code" href="structi2c__errors.html" title="I2C errors counter.">i2c_errors</a> i2c1_errors;</div>
 <div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;</div>
@@ -1072,7 +1072,7 @@ $(document).ready(function(){initNavTree('stm32_2mcu__periph_2i2c__arch_8c_sourc
 <div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;  <span class="comment">/* reset peripheral to default state ( sometimes not achieved on reset :(  ) */</span></div>
-<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;  <span class="comment">//i2c_reset(I2C1);</span></div>
+<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;  <span class="comment">//rcc_periph_reset_pulse(RST_I2C1);</span></div>
 <div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;</div>
 <div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;  <span class="comment">/* Configure and enable I2C1 event interrupt --------------------------------*/</span></div>
 <div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;  nvic_set_priority(<a class="code" href="stm32f4__chibios__vectors_8h.html#ad8f3893d9615ab33525058f971cfc3a8">NVIC_I2C1_EV_IRQ</a>, <a class="code" href="stm32_2mcu__periph_2i2c__arch_8c.html#a51ee0aafd3ec8a5ab3458cfb1e327f42">NVIC_I2C1_IRQ_PRIO</a>);</div>
@@ -1088,7 +1088,7 @@ $(document).ready(function(){initNavTree('stm32_2mcu__periph_2i2c__arch_8c_sourc
 <div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;  <span class="comment">/* setup gpio clock and pins */</span></div>
 <div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;  i2c_setup_gpio(<a class="code" href="LPC21xx_8h.html#ab45d257574da6fe1f091cc45b7eda6cc">I2C1</a>);</div>
 <div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;</div>
-<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;  i2c_reset(<a class="code" href="LPC21xx_8h.html#ab45d257574da6fe1f091cc45b7eda6cc">I2C1</a>);</div>
+<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;  rcc_periph_reset_pulse(RST_I2C1);</div>
 <div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;</div>
 <div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;  <span class="comment">// enable peripheral</span></div>
 <div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;  i2c_peripheral_enable(<a class="code" href="LPC21xx_8h.html#ab45d257574da6fe1f091cc45b7eda6cc">I2C1</a>);</div>
@@ -1130,7 +1130,7 @@ $(document).ready(function(){initNavTree('stm32_2mcu__periph_2i2c__arch_8c_sourc
 <div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;<span class="preprocessor">#ifndef I2C2_CLOCK_SPEED</span></div>
 <div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define I2C2_CLOCK_SPEED 300000</span></div>
 <div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;<span class="preprocessor"></span><a class="code" href="superbitrf_8c.html#a15df901951d839341d6fd25d3afa6df9">PRINT_CONFIG_VAR</a>(I2C2_CLOCK_SPEED)</div>
+<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;<span class="preprocessor"></span><a class="code" href="subsystems_2datalink_2superbitrf_8c.html#a15df901951d839341d6fd25d3afa6df9">PRINT_CONFIG_VAR</a>(I2C2_CLOCK_SPEED)</div>
 <div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;</div>
 <div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;struct <a class="code" href="structi2c__errors.html" title="I2C errors counter.">i2c_errors</a> i2c2_errors;</div>
 <div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;</div>
@@ -1145,7 +1145,7 @@ $(document).ready(function(){initNavTree('stm32_2mcu__periph_2i2c__arch_8c_sourc
 <div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;  <a class="code" href="group__i2c.html#ga0c590ace0cfbd91af9173a07cc211362">ZEROS_ERR_COUNTER</a>(i2c2_errors);</div>
 <div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;</div>
 <div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;  <span class="comment">/* reset peripheral to default state ( sometimes not achieved on reset :(  ) */</span></div>
-<div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;  <span class="comment">//i2c_reset(I2C2);</span></div>
+<div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;  <span class="comment">//rcc_periph_reset_pulse(RST_I2C2);</span></div>
 <div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;</div>
 <div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;  <span class="comment">/* Configure and enable I2C2 event interrupt --------------------------------*/</span></div>
 <div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;  nvic_set_priority(<a class="code" href="stm32f4__chibios__vectors_8h.html#af98e9219274c1bc6db9f35adfc762c4a">NVIC_I2C2_EV_IRQ</a>, <a class="code" href="stm32_2mcu__periph_2i2c__arch_8c.html#a01bedc7e3a9512132b68b6808fbf54bf">NVIC_I2C2_IRQ_PRIO</a>);</div>
@@ -1162,7 +1162,7 @@ $(document).ready(function(){initNavTree('stm32_2mcu__periph_2i2c__arch_8c_sourc
 <div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;  <span class="comment">/* setup gpio clock and pins */</span></div>
 <div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;  i2c_setup_gpio(I2C2);</div>
 <div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;</div>
-<div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;  i2c_reset(I2C2);</div>
+<div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;  rcc_periph_reset_pulse(RST_I2C2);</div>
 <div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;</div>
 <div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;  <span class="comment">// enable peripheral</span></div>
 <div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;  i2c_peripheral_enable(I2C2);</div>
@@ -1204,7 +1204,7 @@ $(document).ready(function(){initNavTree('stm32_2mcu__periph_2i2c__arch_8c_sourc
 <div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;<span class="preprocessor">#ifndef I2C3_CLOCK_SPEED</span></div>
 <div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define I2C3_CLOCK_SPEED 300000</span></div>
 <div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;<span class="preprocessor"></span><a class="code" href="superbitrf_8c.html#a15df901951d839341d6fd25d3afa6df9">PRINT_CONFIG_VAR</a>(I2C3_CLOCK_SPEED)</div>
+<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;<span class="preprocessor"></span><a class="code" href="subsystems_2datalink_2superbitrf_8c.html#a15df901951d839341d6fd25d3afa6df9">PRINT_CONFIG_VAR</a>(I2C3_CLOCK_SPEED)</div>
 <div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;</div>
 <div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;struct <a class="code" href="structi2c__errors.html" title="I2C errors counter.">i2c_errors</a> i2c3_errors;</div>
 <div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;</div>
@@ -1219,7 +1219,7 @@ $(document).ready(function(){initNavTree('stm32_2mcu__periph_2i2c__arch_8c_sourc
 <div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160;  <a class="code" href="group__i2c.html#ga0c590ace0cfbd91af9173a07cc211362">ZEROS_ERR_COUNTER</a>(i2c3_errors);</div>
 <div class="line"><a name="l01132"></a><span class="lineno"> 1132</span>&#160;</div>
 <div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160;  <span class="comment">/* reset peripheral to default state ( sometimes not achieved on reset :(  ) */</span></div>
-<div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;  <span class="comment">//i2c_reset(I2C3);</span></div>
+<div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;  <span class="comment">//rcc_periph_reset_pulse(RST_I2C3);</span></div>
 <div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160;</div>
 <div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;  <span class="comment">/* Configure and enable I2C3 event interrupt --------------------------------*/</span></div>
 <div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;  nvic_set_priority(<a class="code" href="stm32f4__chibios__vectors_8h.html#aba23cd3a7894607ef6596c923c0c2c07">NVIC_I2C3_EV_IRQ</a>, <a class="code" href="stm32_2mcu__periph_2i2c__arch_8c.html#a9f8ae01465e43501aabd230ba1900fa8">NVIC_I2C3_IRQ_PRIO</a>);</div>
@@ -1236,7 +1236,7 @@ $(document).ready(function(){initNavTree('stm32_2mcu__periph_2i2c__arch_8c_sourc
 <div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;  <span class="comment">/* setup gpio clock and pins */</span></div>
 <div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;  i2c_setup_gpio(I2C3);</div>
 <div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;</div>
-<div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;  i2c_reset(I2C3);</div>
+<div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;  rcc_periph_reset_pulse(RST_I2C3);</div>
 <div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;</div>
 <div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160;  <span class="comment">// enable peripheral</span></div>
 <div class="line"><a name="l01154"></a><span class="lineno"> 1154</span>&#160;  i2c_peripheral_enable(I2C3);</div>
@@ -1307,263 +1307,269 @@ $(document).ready(function(){initNavTree('stm32_2mcu__periph_2i2c__arch_8c_sourc
 <div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;    <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a22787b7744375550b4b631b0fec03bd0">if</a> (bitrate &lt; 3000)</div>
 <div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;      bitrate = 3000;</div>
 <div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;</div>
-<div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;    <span class="comment">// 36MHz, fast scl: 2counts low 1 count high -&gt; / 3:</span></div>
-<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;    devider = 18000 / (bitrate/1000);</div>
-<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;</div>
-<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;    <span class="comment">// never allow faster than 600kbps</span></div>
-<div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;    <span class="keywordflow">if</span> (devider &lt; 20)</div>
-<div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;      devider = 20;</div>
-<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;</div>
-<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;    <span class="comment">// no overflow either</span></div>
-<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;    <span class="keywordflow">if</span> (devider &gt;=4095)</div>
-<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;      devider = 4095;</div>
-<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;</div>
-<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;    <span class="comment">// risetime can be up to 1/6th of the period</span></div>
-<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;    risetime = 1000000 / (bitrate/1000) / 6 / 28;</div>
-<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;</div>
-<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;    <span class="keywordflow">if</span> (risetime &lt; 10)</div>
-<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;      risetime = 10;</div>
-<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;</div>
-<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;    <span class="comment">// more will overflow the register: for more you should lower the FREQ</span></div>
-<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;    <span class="keywordflow">if</span> (risetime &gt;=31)</div>
-<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;      risetime = 31;</div>
-<div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;</div>
-<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;    <span class="comment">// we do not expect an interrupt as the interface should have been idle, but just in case...</span></div>
-<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;    <a class="code" href="stm32_2mcu__periph_2i2c__arch_8c.html#a6b9c651bba2afc97b6578902bae95012">__disable_irq</a>(); <span class="comment">// this code is in user space:</span></div>
-<div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;</div>
-<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;    <span class="comment">// CCR can only be written when PE is disabled</span></div>
-<div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;    <span class="comment">// p731 note 5</span></div>
-<div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;    i2c_peripheral_disable(i2c);</div>
-<div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;</div>
-<div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;    <span class="comment">// 1)</span></div>
-<div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;    I2C_CR2(i2c) = 0x0324;</div>
-<div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;    <span class="comment">// 2)</span></div>
-<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;    <span class="comment">//I2C_CCR(i2c) = 0x8000 + devider;</span></div>
-<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;    I2C_CCR(i2c) = 0x0000 + devider;</div>
-<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;    <span class="comment">// 3)</span></div>
-<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;    I2C_TRISE(i2c) = risetime;</div>
-<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;</div>
-<div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;    <span class="comment">// Re-Enable</span></div>
-<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;    i2c_peripheral_enable(i2c);</div>
-<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;</div>
-<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;    <a class="code" href="stm32_2mcu__periph_2i2c__arch_8c.html#a5e587d51e0e0c291bb20ef0f9b5e8e76">__enable_irq</a>();</div>
-<div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;</div>
-<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;<span class="preprocessor">#ifdef I2C_DEBUG_LED</span></div>
-<div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;<span class="preprocessor"></span>    <a class="code" href="stm32_2mcu__periph_2i2c__arch_8c.html#a6b9c651bba2afc97b6578902bae95012">__disable_irq</a>(); <span class="comment">// this code is in user space:</span></div>
-<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;</div>
-<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;    <a class="code" href="debug__led_8h.html#a88928c53ddbb088d14bcf08c51f67856">LED2_ON</a>();</div>
-<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;    <a class="code" href="debug__led_8h.html#adca41342b73071391bc20f0dbb808d53">LED1_ON</a>();</div>
-<div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;    <a class="code" href="debug__led_8h.html#ab72bc6c4cacf74b59b180a845d011e98">LED2_OFF</a>();</div>
-<div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;    <a class="code" href="debug__led_8h.html#a9df4cafa6dff563e72b9a38cfc0af78b">LED1_OFF</a>();</div>
-<div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;    <a class="code" href="debug__led_8h.html#a88928c53ddbb088d14bcf08c51f67856">LED2_ON</a>();</div>
-<div class="line"><a name="l01272"></a><span class="lineno"> 1272</span>&#160;    <a class="code" href="debug__led_8h.html#adca41342b73071391bc20f0dbb808d53">LED1_ON</a>();</div>
-<div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;    <a class="code" href="debug__led_8h.html#ab72bc6c4cacf74b59b180a845d011e98">LED2_OFF</a>();</div>
-<div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;    <a class="code" href="debug__led_8h.html#a9df4cafa6dff563e72b9a38cfc0af78b">LED1_OFF</a>();</div>
-<div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;</div>
-<div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;    <a class="code" href="stm32_2mcu__periph_2i2c__arch_8c.html#a5e587d51e0e0c291bb20ef0f9b5e8e76">__enable_irq</a>();</div>
-<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;  }</div>
-<div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;}</div>
+<div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;    <span class="comment">// rcc_ppre1_frequency is normally configured to max: 36MHz on F1 and 42MHz on F4</span></div>
+<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;    <span class="comment">// in fast mode: 2counts low 1 count high -&gt; / 3:</span></div>
+<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;    <span class="comment">// in standard mode: 1 count low, 1 count high -&gt; /2:</span></div>
+<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;    devider = (rcc_ppre1_frequency/2000) / (bitrate/1000);</div>
+<div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;</div>
+<div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;    <span class="comment">// never allow faster than 600kbps</span></div>
+<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;    <span class="keywordflow">if</span> (devider &lt; 20)</div>
+<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;      devider = 20;</div>
+<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;</div>
+<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;    <span class="comment">// no overflow either</span></div>
+<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;    <span class="keywordflow">if</span> (devider &gt;=4095)</div>
+<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;      devider = 4095;</div>
+<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;</div>
+<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;    <span class="comment">// risetime can be up to 1/6th of the period</span></div>
+<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;    risetime = 1000000 / (bitrate/1000) / 6 / 28;</div>
+<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;</div>
+<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;    <span class="keywordflow">if</span> (risetime &lt; 10)</div>
+<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;      risetime = 10;</div>
+<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;</div>
+<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;    <span class="comment">// more will overflow the register: for more you should lower the FREQ</span></div>
+<div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;    <span class="keywordflow">if</span> (risetime &gt;=31)</div>
+<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;      risetime = 31;</div>
+<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;</div>
+<div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;    <span class="comment">// we do not expect an interrupt as the interface should have been idle, but just in case...</span></div>
+<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;    <a class="code" href="stm32_2mcu__periph_2i2c__arch_8c.html#a6b9c651bba2afc97b6578902bae95012">__disable_irq</a>(); <span class="comment">// this code is in user space:</span></div>
+<div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;</div>
+<div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;    <span class="comment">// CCR can only be written when PE is disabled</span></div>
+<div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;    <span class="comment">// p731 note 5</span></div>
+<div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;    i2c_peripheral_disable(i2c);</div>
+<div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;</div>
+<div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;    <span class="comment">// 1)</span></div>
+<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;<span class="preprocessor">#ifdef STM32F1</span></div>
+<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;<span class="preprocessor"></span>    i2c_set_clock_frequency(i2c, I2C_CR2_FREQ_36MHZ);</div>
+<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;<span class="preprocessor">#else // STM32F4</span></div>
+<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;<span class="preprocessor"></span>    i2c_set_clock_frequency(i2c, I2C_CR2_FREQ_42MHZ);</div>
+<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;<span class="preprocessor"></span>    <span class="comment">// 2)</span></div>
+<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;    <span class="comment">//i2c_set_fast_mode(i2c);</span></div>
+<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;    i2c_set_ccr(i2c, devider);</div>
+<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;    <span class="comment">// 3)</span></div>
+<div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;    i2c_set_trise(i2c, risetime);</div>
+<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;</div>
+<div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;    <span class="comment">// Re-Enable</span></div>
+<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;    i2c_peripheral_enable(i2c);</div>
+<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;</div>
+<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;    <a class="code" href="stm32_2mcu__periph_2i2c__arch_8c.html#a5e587d51e0e0c291bb20ef0f9b5e8e76">__enable_irq</a>();</div>
+<div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;</div>
+<div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;<span class="preprocessor">#ifdef I2C_DEBUG_LED</span></div>
+<div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;<span class="preprocessor"></span>    <a class="code" href="stm32_2mcu__periph_2i2c__arch_8c.html#a6b9c651bba2afc97b6578902bae95012">__disable_irq</a>(); <span class="comment">// this code is in user space:</span></div>
+<div class="line"><a name="l01272"></a><span class="lineno"> 1272</span>&#160;</div>
+<div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;    <a class="code" href="debug__led_8h.html#a88928c53ddbb088d14bcf08c51f67856">LED2_ON</a>();</div>
+<div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;    <a class="code" href="debug__led_8h.html#adca41342b73071391bc20f0dbb808d53">LED1_ON</a>();</div>
+<div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;    <a class="code" href="debug__led_8h.html#ab72bc6c4cacf74b59b180a845d011e98">LED2_OFF</a>();</div>
+<div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;    <a class="code" href="debug__led_8h.html#a9df4cafa6dff563e72b9a38cfc0af78b">LED1_OFF</a>();</div>
+<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;    <a class="code" href="debug__led_8h.html#a88928c53ddbb088d14bcf08c51f67856">LED2_ON</a>();</div>
+<div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;    <a class="code" href="debug__led_8h.html#adca41342b73071391bc20f0dbb808d53">LED1_ON</a>();</div>
+<div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;    <a class="code" href="debug__led_8h.html#ab72bc6c4cacf74b59b180a845d011e98">LED2_OFF</a>();</div>
+<div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;    <a class="code" href="debug__led_8h.html#a9df4cafa6dff563e72b9a38cfc0af78b">LED1_OFF</a>();</div>
 <div class="line"><a name="l01281"></a><span class="lineno"> 1281</span>&#160;</div>
-<div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;<span class="preprocessor">#if USE_I2C1 || USE_I2C2 || USE_I2C3</span></div>
-<div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> i2c_scl_set(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> i2c) {</div>
-<div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;<span class="preprocessor">#if USE_I2C1</span></div>
-<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">if</span> (i2c == <a class="code" href="LPC21xx_8h.html#ab45d257574da6fe1f091cc45b7eda6cc">I2C1</a>)</div>
-<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;    <a class="code" href="omap_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85" title="Set a gpio output to high level.">gpio_set</a>(<a class="code" href="apogee__0_899_8h.html#a4f4a987edf87339f3bca375896f14577">I2C1_GPIO_PORT</a>, <a class="code" href="apogee__0_899_8h.html#a0510f76eb567391e9c3e4185cc695628">I2C1_GPIO_SCL</a>);</div>
-<div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if USE_I2C2</span></div>
-<div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">if</span> (i2c == I2C2)</div>
-<div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160;    <a class="code" href="omap_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85" title="Set a gpio output to high level.">gpio_set</a>(<a class="code" href="apogee__0_899_8h.html#ac0c0f49372826a78db46d0cca8d76d25">I2C2_GPIO_PORT</a>, <a class="code" href="apogee__0_899_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">I2C2_GPIO_SCL</a>);</div>
-<div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if USE_I2C3</span></div>
-<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">if</span> (i2c == I2C3)</div>
-<div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;    <a class="code" href="omap_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85" title="Set a gpio output to high level.">gpio_set</a>(<a class="code" href="krooz__sd_8h.html#a44b65d27b74c44237ceda3a108a438e0">I2C3_GPIO_PORT_SCL</a>, <a class="code" href="krooz__sd_8h.html#abc0d80189e4c453c71cf24cf2ff7d3fc">I2C3_GPIO_SCL</a>);</div>
-<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;</div>
-<div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> i2c_scl_clear(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> i2c) {</div>
-<div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;<span class="preprocessor">#if USE_I2C1</span></div>
-<div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">if</span> (i2c == <a class="code" href="LPC21xx_8h.html#ab45d257574da6fe1f091cc45b7eda6cc">I2C1</a>)</div>
-<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;    <a class="code" href="omap_2mcu__periph_2gpio__arch_8h.html#aa94dfa6db378d98566e22e193c7a8ab7" title="Clear a gpio output to low level.">gpio_clear</a>(<a class="code" href="apogee__0_899_8h.html#a4f4a987edf87339f3bca375896f14577">I2C1_GPIO_PORT</a>, <a class="code" href="apogee__0_899_8h.html#a0510f76eb567391e9c3e4185cc695628">I2C1_GPIO_SCL</a>);</div>
-<div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if USE_I2C2</span></div>
-<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">if</span> (i2c == I2C2)</div>
-<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;    <a class="code" href="omap_2mcu__periph_2gpio__arch_8h.html#aa94dfa6db378d98566e22e193c7a8ab7" title="Clear a gpio output to low level.">gpio_clear</a>(<a class="code" href="apogee__0_899_8h.html#ac0c0f49372826a78db46d0cca8d76d25">I2C2_GPIO_PORT</a>, <a class="code" href="apogee__0_899_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">I2C2_GPIO_SCL</a>);</div>
-<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if USE_I2C3</span></div>
-<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">if</span> (i2c == I2C3)</div>
-<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;    <a class="code" href="omap_2mcu__periph_2gpio__arch_8h.html#aa94dfa6db378d98566e22e193c7a8ab7" title="Clear a gpio output to low level.">gpio_clear</a>(<a class="code" href="krooz__sd_8h.html#a44b65d27b74c44237ceda3a108a438e0">I2C3_GPIO_PORT_SCL</a>, <a class="code" href="krooz__sd_8h.html#abc0d80189e4c453c71cf24cf2ff7d3fc">I2C3_GPIO_SCL</a>);</div>
-<div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;</div>
-<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;<span class="preprocessor">#define WD_DELAY 20           // number of ticks with 2ms - 40ms delay before resetting the bus</span></div>
-<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WD_RECOVERY_TICKS 10  // number of generated SCL clocking pulses</span></div>
-<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> i2c_wd_check(<span class="keyword">struct</span> <a class="code" href="structi2c__periph.html" title="I2C peripheral structure.">i2c_periph</a> *periph) {</div>
-<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> i2c = (<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>) periph-&gt;<a class="code" href="structi2c__periph.html#ab87b1de4062efa2a073a28748b9cec38">reg_addr</a>;</div>
+<div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;    <a class="code" href="stm32_2mcu__periph_2i2c__arch_8c.html#a5e587d51e0e0c291bb20ef0f9b5e8e76">__enable_irq</a>();</div>
+<div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;  }</div>
+<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;}</div>
+<div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;</div>
+<div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;<span class="preprocessor">#if USE_I2C1 || USE_I2C2 || USE_I2C3</span></div>
+<div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> i2c_scl_set(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> i2c) {</div>
+<div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160;<span class="preprocessor">#if USE_I2C1</span></div>
+<div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">if</span> (i2c == <a class="code" href="LPC21xx_8h.html#ab45d257574da6fe1f091cc45b7eda6cc">I2C1</a>)</div>
+<div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;    <a class="code" href="omap_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85" title="Set a gpio output to high level.">gpio_set</a>(<a class="code" href="apogee__0_899_8h.html#a4f4a987edf87339f3bca375896f14577">I2C1_GPIO_PORT</a>, <a class="code" href="apogee__0_899_8h.html#a0510f76eb567391e9c3e4185cc695628">I2C1_GPIO_SCL</a>);</div>
+<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if USE_I2C2</span></div>
+<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">if</span> (i2c == I2C2)</div>
+<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;    <a class="code" href="omap_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85" title="Set a gpio output to high level.">gpio_set</a>(<a class="code" href="apogee__0_899_8h.html#ac0c0f49372826a78db46d0cca8d76d25">I2C2_GPIO_PORT</a>, <a class="code" href="apogee__0_899_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">I2C2_GPIO_SCL</a>);</div>
+<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if USE_I2C3</span></div>
+<div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">if</span> (i2c == I2C3)</div>
+<div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;    <a class="code" href="omap_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85" title="Set a gpio output to high level.">gpio_set</a>(<a class="code" href="krooz__sd_8h.html#a44b65d27b74c44237ceda3a108a438e0">I2C3_GPIO_PORT_SCL</a>, <a class="code" href="krooz__sd_8h.html#abc0d80189e4c453c71cf24cf2ff7d3fc">I2C3_GPIO_SCL</a>);</div>
+<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;</div>
+<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> i2c_scl_clear(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> i2c) {</div>
+<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;<span class="preprocessor">#if USE_I2C1</span></div>
+<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">if</span> (i2c == <a class="code" href="LPC21xx_8h.html#ab45d257574da6fe1f091cc45b7eda6cc">I2C1</a>)</div>
+<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;    <a class="code" href="omap_2mcu__periph_2gpio__arch_8h.html#aa94dfa6db378d98566e22e193c7a8ab7" title="Clear a gpio output to low level.">gpio_clear</a>(<a class="code" href="apogee__0_899_8h.html#a4f4a987edf87339f3bca375896f14577">I2C1_GPIO_PORT</a>, <a class="code" href="apogee__0_899_8h.html#a0510f76eb567391e9c3e4185cc695628">I2C1_GPIO_SCL</a>);</div>
+<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if USE_I2C2</span></div>
+<div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">if</span> (i2c == I2C2)</div>
+<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;    <a class="code" href="omap_2mcu__periph_2gpio__arch_8h.html#aa94dfa6db378d98566e22e193c7a8ab7" title="Clear a gpio output to low level.">gpio_clear</a>(<a class="code" href="apogee__0_899_8h.html#ac0c0f49372826a78db46d0cca8d76d25">I2C2_GPIO_PORT</a>, <a class="code" href="apogee__0_899_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">I2C2_GPIO_SCL</a>);</div>
+<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if USE_I2C3</span></div>
+<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">if</span> (i2c == I2C3)</div>
+<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;    <a class="code" href="omap_2mcu__periph_2gpio__arch_8h.html#aa94dfa6db378d98566e22e193c7a8ab7" title="Clear a gpio output to low level.">gpio_clear</a>(<a class="code" href="krooz__sd_8h.html#a44b65d27b74c44237ceda3a108a438e0">I2C3_GPIO_PORT_SCL</a>, <a class="code" href="krooz__sd_8h.html#abc0d80189e4c453c71cf24cf2ff7d3fc">I2C3_GPIO_SCL</a>);</div>
+<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;</div>
-<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;  <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a22787b7744375550b4b631b0fec03bd0">if</a> (periph-&gt;<a class="code" href="structi2c__periph.html#adb02b71a163584f08afeba429abda130">watchdog</a> &gt; WD_DELAY) {</div>
-<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;    <span class="keywordflow">if</span> (periph-&gt;<a class="code" href="structi2c__periph.html#adb02b71a163584f08afeba429abda130">watchdog</a> == WD_DELAY + 1) {</div>
-<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;</div>
-<div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;      i2c_disable_interrupt(i2c, I2C_CR2_ITEVTEN);</div>
-<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;      i2c_disable_interrupt(i2c, I2C_CR2_ITERREN);</div>
+<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;<span class="preprocessor">#define WD_DELAY 20           // number of ticks with 2ms - 40ms delay before resetting the bus</span></div>
+<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WD_RECOVERY_TICKS 10  // number of generated SCL clocking pulses</span></div>
+<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> i2c_wd_check(<span class="keyword">struct</span> <a class="code" href="structi2c__periph.html" title="I2C peripheral structure.">i2c_periph</a> *periph) {</div>
+<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> i2c = (<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>) periph-&gt;<a class="code" href="structi2c__periph.html#ab87b1de4062efa2a073a28748b9cec38">reg_addr</a>;</div>
 <div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;</div>
-<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;      i2c_peripheral_disable(i2c);</div>
-<div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;</div>
-<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;<span class="preprocessor">#if USE_I2C1</span></div>
-<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;<span class="preprocessor"></span>      <span class="keywordflow">if</span> (i2c == <a class="code" href="LPC21xx_8h.html#ab45d257574da6fe1f091cc45b7eda6cc">I2C1</a>) {</div>
-<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;        <a class="code" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a9623a3774c44d3fc1cca04ccc9bc69f6" title="Setup one or more pins of the given GPIO port as outputs.">gpio_setup_output</a>(<a class="code" href="apogee__0_899_8h.html#a4f4a987edf87339f3bca375896f14577">I2C1_GPIO_PORT</a>, <a class="code" href="apogee__0_899_8h.html#a0510f76eb567391e9c3e4185cc695628">I2C1_GPIO_SCL</a>);</div>
-<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;        <a class="code" href="lpc21_2mcu__periph_2gpio__arch_8h.html#ada0fcb2fa4a97c20e81bb1a422446137" title="Setup one or more pins of the given GPIO port as inputs.">gpio_setup_input</a>(<a class="code" href="apogee__0_899_8h.html#a4f4a987edf87339f3bca375896f14577">I2C1_GPIO_PORT</a>, <a class="code" href="apogee__0_899_8h.html#a8cf8c2a558773727c9673f1cab7ac0a7">I2C1_GPIO_SDA</a>);</div>
-<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;      }</div>
-<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if USE_I2C2</span></div>
-<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;<span class="preprocessor"></span>      <span class="keywordflow">if</span> (i2c == I2C2) {</div>
-<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;        <a class="code" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a9623a3774c44d3fc1cca04ccc9bc69f6" title="Setup one or more pins of the given GPIO port as outputs.">gpio_setup_output</a>(<a class="code" href="apogee__0_899_8h.html#ac0c0f49372826a78db46d0cca8d76d25">I2C2_GPIO_PORT</a>, <a class="code" href="apogee__0_899_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">I2C2_GPIO_SCL</a>);</div>
-<div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;        <a class="code" href="lpc21_2mcu__periph_2gpio__arch_8h.html#ada0fcb2fa4a97c20e81bb1a422446137" title="Setup one or more pins of the given GPIO port as inputs.">gpio_setup_input</a>(<a class="code" href="apogee__0_899_8h.html#ac0c0f49372826a78db46d0cca8d76d25">I2C2_GPIO_PORT</a>, <a class="code" href="apogee__0_899_8h.html#a39794b2e20b2fa0d893184f67a399fe8">I2C2_GPIO_SDA</a>);</div>
+<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;  <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a22787b7744375550b4b631b0fec03bd0">if</a> (periph-&gt;<a class="code" href="structi2c__periph.html#adb02b71a163584f08afeba429abda130">watchdog</a> &gt; WD_DELAY) {</div>
+<div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;    <span class="keywordflow">if</span> (periph-&gt;<a class="code" href="structi2c__periph.html#adb02b71a163584f08afeba429abda130">watchdog</a> == WD_DELAY + 1) {</div>
+<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;</div>
+<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;      i2c_disable_interrupt(i2c, I2C_CR2_ITEVTEN);</div>
+<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;      i2c_disable_interrupt(i2c, I2C_CR2_ITERREN);</div>
+<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;</div>
+<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;      i2c_peripheral_disable(i2c);</div>
+<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;</div>
+<div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;<span class="preprocessor">#if USE_I2C1</span></div>
+<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;<span class="preprocessor"></span>      <span class="keywordflow">if</span> (i2c == <a class="code" href="LPC21xx_8h.html#ab45d257574da6fe1f091cc45b7eda6cc">I2C1</a>) {</div>
+<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;        <a class="code" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a9623a3774c44d3fc1cca04ccc9bc69f6" title="Setup one or more pins of the given GPIO port as outputs.">gpio_setup_output</a>(<a class="code" href="apogee__0_899_8h.html#a4f4a987edf87339f3bca375896f14577">I2C1_GPIO_PORT</a>, <a class="code" href="apogee__0_899_8h.html#a0510f76eb567391e9c3e4185cc695628">I2C1_GPIO_SCL</a>);</div>
+<div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;        <a class="code" href="lpc21_2mcu__periph_2gpio__arch_8h.html#ada0fcb2fa4a97c20e81bb1a422446137" title="Setup one or more pins of the given GPIO port as inputs.">gpio_setup_input</a>(<a class="code" href="apogee__0_899_8h.html#a4f4a987edf87339f3bca375896f14577">I2C1_GPIO_PORT</a>, <a class="code" href="apogee__0_899_8h.html#a8cf8c2a558773727c9673f1cab7ac0a7">I2C1_GPIO_SDA</a>);</div>
 <div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;      }</div>
 <div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if USE_I2C3</span></div>
-<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;<span class="preprocessor"></span>      <span class="keywordflow">if</span> (i2c == I2C3) {</div>
-<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;        <a class="code" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a9623a3774c44d3fc1cca04ccc9bc69f6" title="Setup one or more pins of the given GPIO port as outputs.">gpio_setup_output</a>(<a class="code" href="krooz__sd_8h.html#a44b65d27b74c44237ceda3a108a438e0">I2C3_GPIO_PORT_SCL</a>, <a class="code" href="krooz__sd_8h.html#abc0d80189e4c453c71cf24cf2ff7d3fc">I2C3_GPIO_SCL</a>);</div>
-<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;        <a class="code" href="lpc21_2mcu__periph_2gpio__arch_8h.html#ada0fcb2fa4a97c20e81bb1a422446137" title="Setup one or more pins of the given GPIO port as inputs.">gpio_setup_input</a>(<a class="code" href="krooz__sd_8h.html#a4b152ddc93b7d9e4bc21bdc5cf67da64">I2C3_GPIO_PORT_SDA</a>,<a class="code" href="krooz__sd_8h.html#a8c2f19908ae17a85a5d1e6a6c43c9964">I2C3_GPIO_SDA</a>);</div>
+<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if USE_I2C2</span></div>
+<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;<span class="preprocessor"></span>      <span class="keywordflow">if</span> (i2c == I2C2) {</div>
+<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;        <a class="code" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a9623a3774c44d3fc1cca04ccc9bc69f6" title="Setup one or more pins of the given GPIO port as outputs.">gpio_setup_output</a>(<a class="code" href="apogee__0_899_8h.html#ac0c0f49372826a78db46d0cca8d76d25">I2C2_GPIO_PORT</a>, <a class="code" href="apogee__0_899_8h.html#a96f77aa2b8c86aeb13af5b309714dcd2">I2C2_GPIO_SCL</a>);</div>
+<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;        <a class="code" href="lpc21_2mcu__periph_2gpio__arch_8h.html#ada0fcb2fa4a97c20e81bb1a422446137" title="Setup one or more pins of the given GPIO port as inputs.">gpio_setup_input</a>(<a class="code" href="apogee__0_899_8h.html#ac0c0f49372826a78db46d0cca8d76d25">I2C2_GPIO_PORT</a>, <a class="code" href="apogee__0_899_8h.html#a39794b2e20b2fa0d893184f67a399fe8">I2C2_GPIO_SDA</a>);</div>
 <div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;      }</div>
 <div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;      i2c_scl_clear(i2c);</div>
-<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;    }</div>
-<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (periph-&gt;<a class="code" href="structi2c__periph.html#adb02b71a163584f08afeba429abda130">watchdog</a> &lt; WD_DELAY + WD_RECOVERY_TICKS) {</div>
-<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;      <span class="keywordflow">if</span> ((periph-&gt;<a class="code" href="structi2c__periph.html#adb02b71a163584f08afeba429abda130">watchdog</a> - WD_DELAY) % 2)</div>
-<div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;        i2c_scl_clear(i2c);</div>
-<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;        i2c_scl_set(i2c);</div>
+<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if USE_I2C3</span></div>
+<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;<span class="preprocessor"></span>      <span class="keywordflow">if</span> (i2c == I2C3) {</div>
+<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;        <a class="code" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a9623a3774c44d3fc1cca04ccc9bc69f6" title="Setup one or more pins of the given GPIO port as outputs.">gpio_setup_output</a>(<a class="code" href="krooz__sd_8h.html#a44b65d27b74c44237ceda3a108a438e0">I2C3_GPIO_PORT_SCL</a>, <a class="code" href="krooz__sd_8h.html#abc0d80189e4c453c71cf24cf2ff7d3fc">I2C3_GPIO_SCL</a>);</div>
+<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;        <a class="code" href="lpc21_2mcu__periph_2gpio__arch_8h.html#ada0fcb2fa4a97c20e81bb1a422446137" title="Setup one or more pins of the given GPIO port as inputs.">gpio_setup_input</a>(<a class="code" href="krooz__sd_8h.html#a4b152ddc93b7d9e4bc21bdc5cf67da64">I2C3_GPIO_PORT_SDA</a>,<a class="code" href="krooz__sd_8h.html#a8c2f19908ae17a85a5d1e6a6c43c9964">I2C3_GPIO_SDA</a>);</div>
+<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;      }</div>
+<div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;      i2c_scl_clear(i2c);</div>
 <div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;    }</div>
-<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;    <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;      i2c_scl_set(i2c);</div>
-<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;</div>
-<div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;      <span class="comment">/* setup gpios for normal i2c operation again */</span></div>
-<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;      i2c_setup_gpio(i2c);</div>
-<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;</div>
-<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;      periph-&gt;<a class="code" href="structi2c__periph.html#a63002740b27aaaf9d847b17001302d9c">trans_insert_idx</a> = 0;</div>
-<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;      periph-&gt;<a class="code" href="structi2c__periph.html#a4e572be9f28f1037d7c749a223329aaf">trans_extract_idx</a> = 0;</div>
-<div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;      periph-&gt;<a class="code" href="structi2c__periph.html#af293727ce3c1ee16e7b5f51ac5e8ce85">status</a> = <a class="code" href="group__i2c.html#gga9bec282875cd65e00172e875ef785beca9ab9b8398c146fca315edd21fc934788">I2CIdle</a>;</div>
-<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;</div>
-<div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;      i2c_enable_interrupt(i2c, I2C_CR2_ITEVTEN);</div>
-<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;      i2c_enable_interrupt(i2c, I2C_CR2_ITERREN);</div>
-<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;</div>
-<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;      i2c_peripheral_enable(i2c);</div>
-<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;      periph-&gt;<a class="code" href="structi2c__periph.html#adb02b71a163584f08afeba429abda130">watchdog</a> = 0; <span class="comment">// restart watchdog</span></div>
+<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (periph-&gt;<a class="code" href="structi2c__periph.html#adb02b71a163584f08afeba429abda130">watchdog</a> &lt; WD_DELAY + WD_RECOVERY_TICKS) {</div>
+<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;      <span class="keywordflow">if</span> ((periph-&gt;<a class="code" href="structi2c__periph.html#adb02b71a163584f08afeba429abda130">watchdog</a> - WD_DELAY) % 2)</div>
+<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;        i2c_scl_clear(i2c);</div>
+<div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;        i2c_scl_set(i2c);</div>
+<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;    }</div>
+<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;      i2c_scl_set(i2c);</div>
+<div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;</div>
+<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;      <span class="comment">/* setup gpios for normal i2c operation again */</span></div>
+<div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;      i2c_setup_gpio(i2c);</div>
+<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;</div>
+<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;      periph-&gt;<a class="code" href="structi2c__periph.html#a63002740b27aaaf9d847b17001302d9c">trans_insert_idx</a> = 0;</div>
+<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;      periph-&gt;<a class="code" href="structi2c__periph.html#a4e572be9f28f1037d7c749a223329aaf">trans_extract_idx</a> = 0;</div>
+<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;      periph-&gt;<a class="code" href="structi2c__periph.html#af293727ce3c1ee16e7b5f51ac5e8ce85">status</a> = <a class="code" href="group__i2c.html#gga9bec282875cd65e00172e875ef785beca9ab9b8398c146fca315edd21fc934788">I2CIdle</a>;</div>
 <div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;</div>
-<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;      periph-&gt;<a class="code" href="structi2c__periph.html#a4b1270562d3320ff0151bd7856ec0c6e">errors</a>-&gt;<a class="code" href="structi2c__errors.html#a72a1be189ba8375641abaf09c9e51d39">timeout_tlow_cnt</a>++;</div>
-<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;</div>
-<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;      <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;    }</div>
-<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;  }</div>
-<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;  <span class="keywordflow">if</span> (periph-&gt;<a class="code" href="structi2c__periph.html#adb02b71a163584f08afeba429abda130">watchdog</a> &gt;= 0)</div>
-<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;    periph-&gt;<a class="code" href="structi2c__periph.html#adb02b71a163584f08afeba429abda130">watchdog</a>++;</div>
-<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;}</div>
-<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;<span class="preprocessor">#endif // USE_I2Cx</span></div>
-<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="sys__time_8h.html" title="Architecture independent timing functions.">mcu_periph/sys_time.h</a>&quot;</span></div>
-<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;</div>
-<div class="line"><a name="l01382"></a><span class="lineno"><a class="code" href="group__i2c.html#ga05763355d0e087ba41feab61dd773fe6"> 1382</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__i2c.html#ga05763355d0e087ba41feab61dd773fe6">i2c_event</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;  <span class="keyword">static</span> <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> i2c_wd_timer;</div>
-<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;</div>
-<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="sys__time_8h.html#a2dfaf7d6ae83a19972aca429fc687e87">SysTimeTimer</a>(i2c_wd_timer) &gt; 2000) { <span class="comment">// 2ms (500Hz) periodic watchdog check</span></div>
-<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;    <a class="code" href="sys__time_8h.html#a0583c93a24eed5f81e1f647ca63a652a">SysTimeTimerStart</a>(i2c_wd_timer);</div>
-<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;<span class="preprocessor">#if USE_I2C1</span></div>
-<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;<span class="preprocessor"></span>    i2c_wd_check(&amp;i2c1);</div>
-<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;<span class="preprocessor">#if USE_I2C2</span></div>
-<div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;<span class="preprocessor"></span>    i2c_wd_check(&amp;i2c2);</div>
-<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if USE_I2C3</span></div>
-<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;<span class="preprocessor"></span>    i2c_wd_check(&amp;i2c3);</div>
-<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;<span class="preprocessor"></span>  }</div>
-<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;}</div>
-<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;</div>
-<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;<span class="comment">// Implement Interface Functions</span></div>
-<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;</div>
-<div class="line"><a name="l01403"></a><span class="lineno"><a class="code" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa"> 1403</a></span>&#160;bool_t <a class="code" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction.">i2c_submit</a>(<span class="keyword">struct</span> <a class="code" href="structi2c__periph.html" title="I2C peripheral structure.">i2c_periph</a>* periph, <span class="keyword">struct</span> <a class="code" href="structi2c__transaction.html" title="I2C transaction structure.">i2c_transaction</a>* t) {</div>
-<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;</div>
-<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> temp;</div>
-<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;  temp = periph-&gt;<a class="code" href="structi2c__periph.html#a63002740b27aaaf9d847b17001302d9c">trans_insert_idx</a> + 1;</div>
-<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;  <span class="keywordflow">if</span> (temp &gt;= <a class="code" href="group__i2c.html#ga1e8f7694d49989f4823aa34cffae6319" title="I2C transaction queue length.">I2C_TRANSACTION_QUEUE_LEN</a>) temp = 0;</div>
-<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;  <span class="keywordflow">if</span> (temp == periph-&gt;<a class="code" href="structi2c__periph.html#a4e572be9f28f1037d7c749a223329aaf">trans_extract_idx</a>) {</div>
-<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;    <span class="comment">// queue full</span></div>
-<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;    periph-&gt;<a class="code" href="structi2c__periph.html#a4b1270562d3320ff0151bd7856ec0c6e">errors</a>-&gt;<a class="code" href="structi2c__errors.html#ac53b074124c2d291dc57cecd1166823b">queue_full_cnt</a>++;</div>
-<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;    t-&gt;<a class="code" href="structi2c__transaction.html#ac4f80563bab524eee997c5c27ef570a4" title="Transaction status.">status</a> = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a4a8906d81bf97d49da468e6c6b9f39e9" title="transaction failed">I2CTransFailed</a>;</div>
-<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;  }</div>
-<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;</div>
-<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;  t-&gt;<a class="code" href="structi2c__transaction.html#ac4f80563bab524eee997c5c27ef570a4" title="Transaction status.">status</a> = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442adfa4e1bf79d0b917c2c6c473b0955cd3" title="transaction is pending in queue">I2CTransPending</a>;</div>
-<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;</div>
-<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;  <a class="code" href="stm32_2mcu__periph_2i2c__arch_8c.html#a6b9c651bba2afc97b6578902bae95012">__disable_irq</a>();</div>
-<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;  <span class="comment">/* put transacation in queue */</span></div>
-<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;  periph-&gt;<a class="code" href="structi2c__periph.html#ad3bd507a4aa9e144366dc2c8a6291240">trans</a>[periph-&gt;<a class="code" href="structi2c__periph.html#a63002740b27aaaf9d847b17001302d9c">trans_insert_idx</a>] = t;</div>
-<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;  periph-&gt;<a class="code" href="structi2c__periph.html#a63002740b27aaaf9d847b17001302d9c">trans_insert_idx</a> = temp;</div>
-<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;</div>
-<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;  <span class="comment">/* if peripheral is idle, start the transaction */</span></div>
-<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;  <span class="comment">// if (PPRZ_I2C_IS_IDLE(p))</span></div>
-<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;  <span class="keywordflow">if</span> (periph-&gt;<a class="code" href="structi2c__periph.html#af293727ce3c1ee16e7b5f51ac5e8ce85">status</a> == <a class="code" href="group__i2c.html#gga9bec282875cd65e00172e875ef785beca9ab9b8398c146fca315edd21fc934788">I2CIdle</a>)</div>
-<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;  {</div>
-<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;    <span class="comment">//if (i2c_idle(periph))</span></div>
-<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;    {</div>
-<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;<span class="preprocessor">#ifdef I2C_DEBUG_LED</span></div>
-<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if USE_I2C1</span></div>
-<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;<span class="preprocessor"></span>      <span class="keywordflow">if</span> (periph == &amp;i2c1)</div>
-<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;      {</div>
-<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;</div>
-<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;      }</div>
-<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;<span class="preprocessor"></span>      {</div>
-<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;<span class="preprocessor">#ifdef I2C_DEBUG_LED</span></div>
-<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;<span class="preprocessor"></span>        <a class="code" href="debug__led_8h.html#a88928c53ddbb088d14bcf08c51f67856">LED2_ON</a>();</div>
-<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;        <a class="code" href="debug__led_8h.html#ab72bc6c4cacf74b59b180a845d011e98">LED2_OFF</a>();</div>
+<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;      i2c_enable_interrupt(i2c, I2C_CR2_ITEVTEN);</div>
+<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;      i2c_enable_interrupt(i2c, I2C_CR2_ITERREN);</div>
+<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;</div>
+<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;      i2c_peripheral_enable(i2c);</div>
+<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;      periph-&gt;<a class="code" href="structi2c__periph.html#adb02b71a163584f08afeba429abda130">watchdog</a> = 0; <span class="comment">// restart watchdog</span></div>
+<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;</div>
+<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;      periph-&gt;<a class="code" href="structi2c__periph.html#a4b1270562d3320ff0151bd7856ec0c6e">errors</a>-&gt;<a class="code" href="structi2c__errors.html#a72a1be189ba8375641abaf09c9e51d39">timeout_tlow_cnt</a>++;</div>
+<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;</div>
+<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;      <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;    }</div>
+<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;  }</div>
+<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;  <span class="keywordflow">if</span> (periph-&gt;<a class="code" href="structi2c__periph.html#adb02b71a163584f08afeba429abda130">watchdog</a> &gt;= 0)</div>
+<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;    periph-&gt;<a class="code" href="structi2c__periph.html#adb02b71a163584f08afeba429abda130">watchdog</a>++;</div>
+<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;}</div>
+<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;<span class="preprocessor">#endif // USE_I2Cx</span></div>
+<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="sys__time_8h.html" title="Architecture independent timing functions.">mcu_periph/sys_time.h</a>&quot;</span></div>
+<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;</div>
+<div class="line"><a name="l01388"></a><span class="lineno"><a class="code" href="group__i2c.html#ga05763355d0e087ba41feab61dd773fe6"> 1388</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__i2c.html#ga05763355d0e087ba41feab61dd773fe6">i2c_event</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;  <span class="keyword">static</span> <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> i2c_wd_timer;</div>
+<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;</div>
+<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="sys__time_8h.html#a2dfaf7d6ae83a19972aca429fc687e87">SysTimeTimer</a>(i2c_wd_timer) &gt; 2000) { <span class="comment">// 2ms (500Hz) periodic watchdog check</span></div>
+<div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;    <a class="code" href="sys__time_8h.html#a0583c93a24eed5f81e1f647ca63a652a">SysTimeTimerStart</a>(i2c_wd_timer);</div>
+<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;<span class="preprocessor">#if USE_I2C1</span></div>
+<div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;<span class="preprocessor"></span>    i2c_wd_check(&amp;i2c1);</div>
+<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;<span class="preprocessor">#if USE_I2C2</span></div>
+<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;<span class="preprocessor"></span>    i2c_wd_check(&amp;i2c2);</div>
+<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if USE_I2C3</span></div>
+<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;<span class="preprocessor"></span>    i2c_wd_check(&amp;i2c3);</div>
+<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;<span class="preprocessor"></span>  }</div>
+<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;}</div>
+<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;</div>
+<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;<span class="comment">// Implement Interface Functions</span></div>
+<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;</div>
+<div class="line"><a name="l01409"></a><span class="lineno"><a class="code" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa"> 1409</a></span>&#160;bool_t <a class="code" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction.">i2c_submit</a>(<span class="keyword">struct</span> <a class="code" href="structi2c__periph.html" title="I2C peripheral structure.">i2c_periph</a>* periph, <span class="keyword">struct</span> <a class="code" href="structi2c__transaction.html" title="I2C transaction structure.">i2c_transaction</a>* t) {</div>
+<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;</div>
+<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> temp;</div>
+<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;  temp = periph-&gt;<a class="code" href="structi2c__periph.html#a63002740b27aaaf9d847b17001302d9c">trans_insert_idx</a> + 1;</div>
+<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;  <span class="keywordflow">if</span> (temp &gt;= <a class="code" href="group__i2c.html#ga1e8f7694d49989f4823aa34cffae6319" title="I2C transaction queue length.">I2C_TRANSACTION_QUEUE_LEN</a>) temp = 0;</div>
+<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;  <span class="keywordflow">if</span> (temp == periph-&gt;<a class="code" href="structi2c__periph.html#a4e572be9f28f1037d7c749a223329aaf">trans_extract_idx</a>) {</div>
+<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;    <span class="comment">// queue full</span></div>
+<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;    periph-&gt;<a class="code" href="structi2c__periph.html#a4b1270562d3320ff0151bd7856ec0c6e">errors</a>-&gt;<a class="code" href="structi2c__errors.html#ac53b074124c2d291dc57cecd1166823b">queue_full_cnt</a>++;</div>
+<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;    t-&gt;<a class="code" href="structi2c__transaction.html#ac4f80563bab524eee997c5c27ef570a4" title="Transaction status.">status</a> = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a4a8906d81bf97d49da468e6c6b9f39e9" title="transaction failed">I2CTransFailed</a>;</div>
+<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;  }</div>
+<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;</div>
+<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;  t-&gt;<a class="code" href="structi2c__transaction.html#ac4f80563bab524eee997c5c27ef570a4" title="Transaction status.">status</a> = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442adfa4e1bf79d0b917c2c6c473b0955cd3" title="transaction is pending in queue">I2CTransPending</a>;</div>
+<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;</div>
+<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;  <a class="code" href="stm32_2mcu__periph_2i2c__arch_8c.html#a6b9c651bba2afc97b6578902bae95012">__disable_irq</a>();</div>
+<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;  <span class="comment">/* put transacation in queue */</span></div>
+<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;  periph-&gt;<a class="code" href="structi2c__periph.html#ad3bd507a4aa9e144366dc2c8a6291240">trans</a>[periph-&gt;<a class="code" href="structi2c__periph.html#a63002740b27aaaf9d847b17001302d9c">trans_insert_idx</a>] = t;</div>
+<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;  periph-&gt;<a class="code" href="structi2c__periph.html#a63002740b27aaaf9d847b17001302d9c">trans_insert_idx</a> = temp;</div>
+<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;</div>
+<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;  <span class="comment">/* if peripheral is idle, start the transaction */</span></div>
+<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;  <span class="comment">// if (PPRZ_I2C_IS_IDLE(p))</span></div>
+<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;  <span class="keywordflow">if</span> (periph-&gt;<a class="code" href="structi2c__periph.html#af293727ce3c1ee16e7b5f51ac5e8ce85">status</a> == <a class="code" href="group__i2c.html#gga9bec282875cd65e00172e875ef785beca9ab9b8398c146fca315edd21fc934788">I2CIdle</a>)</div>
+<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;  {</div>
+<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;    <span class="comment">//if (i2c_idle(periph))</span></div>
+<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;    {</div>
+<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;<span class="preprocessor">#ifdef I2C_DEBUG_LED</span></div>
+<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if USE_I2C1</span></div>
+<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;<span class="preprocessor"></span>      <span class="keywordflow">if</span> (periph == &amp;i2c1)</div>
+<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;      {</div>
+<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;</div>
+<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;      }</div>
+<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;      <span class="keywordflow">else</span></div>
 <div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;<span class="preprocessor"></span>        <a class="code" href="stm32_2mcu__periph_2i2c__arch_8c.html#a24b4322c949865119cad583ec9e390af">PPRZ_I2C_SEND_START</a>(periph);</div>
-<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;      }</div>
-<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;    }</div>
-<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;  }</div>
-<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;  <span class="comment">/* else it will be started by the interrupt handler when the previous transactions completes */</span></div>
-<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;  <a class="code" href="stm32_2mcu__periph_2i2c__arch_8c.html#a5e587d51e0e0c291bb20ef0f9b5e8e76">__enable_irq</a>();</div>
-<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;</div>
-<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;}</div>
-<div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;</div>
-<div class="line"><a name="l01452"></a><span class="lineno"><a class="code" href="group__i2c.html#ga54cb2dd83ed5b0dacc02764aa234f564"> 1452</a></span>&#160;bool_t <a class="code" href="group__i2c.html#ga54cb2dd83ed5b0dacc02764aa234f564" title="Check if I2C bus is idle.">i2c_idle</a>(<span class="keyword">struct</span> <a class="code" href="structi2c__periph.html" title="I2C peripheral structure.">i2c_periph</a>* periph)</div>
-<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;{</div>
-<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;  <span class="comment">// This is actually a difficult function:</span></div>
-<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;  <span class="comment">// -simply reading the status flags can clear bits and corrupt the transaction</span></div>
-<div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;</div>
-<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> i2c = (<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>) periph-&gt;<a class="code" href="structi2c__periph.html#ab87b1de4062efa2a073a28748b9cec38">reg_addr</a>;</div>
-<div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;</div>
-<div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;#ifdef I2C_DEBUG_LED</div>
-<div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;#<span class="keywordflow">if</span> USE_I2C1</div>
-<div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;  <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a22787b7744375550b4b631b0fec03bd0">if</a> (periph == &amp;i2c1)</div>
-<div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;  {</div>
-<div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;  }</div>
-<div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;  <span class="comment">// First we check if the software thinks it is ready</span></div>
-<div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;  <span class="keywordflow">if</span> (periph-&gt;<a class="code" href="structi2c__periph.html#af293727ce3c1ee16e7b5f51ac5e8ce85">status</a> == <a class="code" href="group__i2c.html#gga9bec282875cd65e00172e875ef785beca9ab9b8398c146fca315edd21fc934788">I2CIdle</a>)</div>
-<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;    <span class="keywordflow">return</span> ! (<a class="code" href="stm32_2mcu__periph_2i2c__arch_8c.html#a007bb527478e35deb7dd7bac8a81ae96">BIT_X_IS_SET_IN_REG</a>( I2C_SR2_BUSY, I2C_SR2(i2c) ) );</div>
-<div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;}</div>
+<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;<span class="preprocessor"></span>      {</div>
+<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;<span class="preprocessor">#ifdef I2C_DEBUG_LED</span></div>
+<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;<span class="preprocessor"></span>        <a class="code" href="debug__led_8h.html#a88928c53ddbb088d14bcf08c51f67856">LED2_ON</a>();</div>
+<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;        <a class="code" href="debug__led_8h.html#ab72bc6c4cacf74b59b180a845d011e98">LED2_OFF</a>();</div>
+<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;<span class="preprocessor"></span>        <a class="code" href="stm32_2mcu__periph_2i2c__arch_8c.html#a24b4322c949865119cad583ec9e390af">PPRZ_I2C_SEND_START</a>(periph);</div>
+<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;      }</div>
+<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;    }</div>
+<div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;  }</div>
+<div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160;  <span class="comment">/* else it will be started by the interrupt handler when the previous transactions completes */</span></div>
+<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;  <a class="code" href="stm32_2mcu__periph_2i2c__arch_8c.html#a5e587d51e0e0c291bb20ef0f9b5e8e76">__enable_irq</a>();</div>
+<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;</div>
+<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;}</div>
+<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;</div>
+<div class="line"><a name="l01458"></a><span class="lineno"><a class="code" href="group__i2c.html#ga54cb2dd83ed5b0dacc02764aa234f564"> 1458</a></span>&#160;bool_t <a class="code" href="group__i2c.html#ga54cb2dd83ed5b0dacc02764aa234f564" title="Check if I2C bus is idle.">i2c_idle</a>(<span class="keyword">struct</span> <a class="code" href="structi2c__periph.html" title="I2C peripheral structure.">i2c_periph</a>* periph)</div>
+<div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;{</div>
+<div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;  <span class="comment">// This is actually a difficult function:</span></div>
+<div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;  <span class="comment">// -simply reading the status flags can clear bits and corrupt the transaction</span></div>
+<div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;</div>
+<div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> i2c = (<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>) periph-&gt;<a class="code" href="structi2c__periph.html#ab87b1de4062efa2a073a28748b9cec38">reg_addr</a>;</div>
+<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;</div>
+<div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;#ifdef I2C_DEBUG_LED</div>
+<div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;#<span class="keywordflow">if</span> USE_I2C1</div>
+<div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;  <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a22787b7744375550b4b631b0fec03bd0">if</a> (periph == &amp;i2c1)</div>
+<div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;  {</div>
+<div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;  }</div>
+<div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;  <span class="comment">// First we check if the software thinks it is ready</span></div>
+<div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;  <span class="keywordflow">if</span> (periph-&gt;<a class="code" href="structi2c__periph.html#af293727ce3c1ee16e7b5f51ac5e8ce85">status</a> == <a class="code" href="group__i2c.html#gga9bec282875cd65e00172e875ef785beca9ab9b8398c146fca315edd21fc934788">I2CIdle</a>)</div>
+<div class="line"><a name="l01476"></a><span class="lineno"> 1476</span>&#160;    <span class="keywordflow">return</span> ! (<a class="code" href="stm32_2mcu__periph_2i2c__arch_8c.html#a007bb527478e35deb7dd7bac8a81ae96">BIT_X_IS_SET_IN_REG</a>( I2C_SR2_BUSY, I2C_SR2(i2c) ) );</div>
+<div class="line"><a name="l01477"></a><span class="lineno"> 1477</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_0722e4cfffe4ffd4c81bbc7e5d686ba4.html">mcu_periph</a></li><li class="navelem"><a class="el" href="stm32_2mcu__periph_2i2c__arch_8c.html">i2c_arch.c</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:00:36 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:00:35 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('struct__mission__wp.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="mission_8h_source.html">mission.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="mission__common_8h_source.html">mission_common.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for _mission_wp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -119,35 +119,68 @@ $(document).ready(function(){initNavTree('struct__mission__wp.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="struct__mission__wp__coll__graph.png" border="0" usemap="#__mission__wp_coll__map" alt="Collaboration graph"/></div>
 <map name="__mission__wp_coll__map" id="__mission__wp_coll__map">
-<area shape="rect" id="node2" href="structEnuCoor__f.html" title="vector in East North Up coordinates Units: meters" alt="" coords="13,6,99,34"/></map>
+<area shape="rect" id="node2" href="structEnuCoor__f.html" title="vector in East North Up coordinates Units: meters" alt="" coords="5,6,91,34"/><area shape="rect" id="node4" href="structEnuCoor__i.html" title="vector in East North Up coordinates" alt="" coords="115,6,200,34"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a1df0ee5352d97f507537b0340db3a8a5"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structEnuCoor__f.html">EnuCoor_f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__mission__wp.html#a1df0ee5352d97f507537b0340db3a8a5">wp</a></td></tr>
+<tr class="memitem:ab1baa03904774eae4cf487e72607b1f8"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a3905233bc47c81737c117105d3125aec"><td class="memItemLeft" >&#160;&#160;&#160;struct <a class="el" href="structEnuCoor__f.html">EnuCoor_f</a>&#160;&#160;&#160;<a class="el" href="struct__mission__wp.html#ae55881a2970a7ee8d09f1b28af7d13a5">wp_f</a></td></tr>
+<tr class="memitem:a66f6973e81674a95c88c122cc21a5c74"><td class="memItemLeft" >&#160;&#160;&#160;struct <a class="el" href="structEnuCoor__i.html">EnuCoor_i</a>&#160;&#160;&#160;<a class="el" href="struct__mission__wp.html#a61ff5fae3cf9ec63ff0096357b9956b7">wp_i</a></td></tr>
+<tr class="memitem:ab1baa03904774eae4cf487e72607b1f8"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__mission__wp.html#ab1baa03904774eae4cf487e72607b1f8">wp</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="mission_8h_source.html#l00053">53</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00054">54</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
 </div><h2>Field Documentation</h2>
-<a class="anchor" id="a1df0ee5352d97f507537b0340db3a8a5"></a>
+<a class="anchor" id="ab1baa03904774eae4cf487e72607b1f8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structEnuCoor__f.html">EnuCoor_f</a> _mission_wp::wp</td>
+          <td class="memname">union { ... }   _mission_wp::wp</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mission_8h_source.html#l00054">54</a> of file <a class="el" href="mission_8h_source.html">mission.h</a>.</p>
+<p>Referenced by <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00073">mission_element_convert()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00105">mission_nav_path()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00069">mission_nav_wp()</a>, <a class="el" href="mission__common_8c_source.html#l00122">mission_parse_GOTO_WP()</a>, and <a class="el" href="mission__common_8c_source.html#l00137">mission_parse_GOTO_WP_LLA()</a>.</p>
 
-<p>Referenced by <a class="el" href="mission__fw__nav_8c_source.html#l00043">mission_nav_wp()</a>, <a class="el" href="mission_8c_source.html#l00134">mission_parse_GOTO_WP()</a>, and <a class="el" href="mission_8c_source.html#l00149">mission_parse_GOTO_WP_LLA()</a>.</p>
+</div>
+</div>
+<a class="anchor" id="ae55881a2970a7ee8d09f1b28af7d13a5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structEnuCoor__f.html">EnuCoor_f</a> _mission_wp::wp_f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00056">56</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
+
+<p>Referenced by <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00073">mission_element_convert()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00105">mission_nav_path()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00069">mission_nav_wp()</a>, <a class="el" href="mission__common_8c_source.html#l00122">mission_parse_GOTO_WP()</a>, and <a class="el" href="mission__common_8c_source.html#l00137">mission_parse_GOTO_WP_LLA()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a61ff5fae3cf9ec63ff0096357b9956b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structEnuCoor__i.html">EnuCoor_i</a> _mission_wp::wp_i</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00057">57</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
+
+<p>Referenced by <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00073">mission_element_convert()</a>, <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00179">mission_nav_path()</a>, and <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00110">mission_nav_wp()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>sw/airborne/modules/mission/<a class="el" href="mission_8h_source.html">mission.h</a></li>
+<li>sw/airborne/modules/mission/<a class="el" href="mission__common_8h_source.html">mission_common.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -155,7 +188,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct__mission__wp.html">_mission_wp</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:01:12 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:01:13 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

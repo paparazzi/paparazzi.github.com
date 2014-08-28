@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -202,9 +202,9 @@ $(document).ready(function(){initNavTree('hmc5843_8c_source.html','');});
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="hmc5843_8c.html#a0d9d6f319b2ad8e47637ad83bb04dbe2">hmc5843</a>.<a class="code" href="structHmc5843.html#a3d866bd7d1517ca26973373c22a24ef8">sent_tx</a> = 0;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="hmc5843_8c.html#a0d9d6f319b2ad8e47637ad83bb04dbe2">hmc5843</a>.<a class="code" href="structHmc5843.html#ada82622fad1a3e2d09d74032fc65a87d">timeout</a> = 0;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="hmc5843_8c.html#a0d9d6f319b2ad8e47637ad83bb04dbe2">hmc5843</a>.<a class="code" href="structHmc5843.html#aac1003c5a9ee5a5fb898a4b33d1140eb">data_available</a> = <a class="code" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    memcpy(<a class="code" href="hmc5843_8c.html#a0d9d6f319b2ad8e47637ad83bb04dbe2">hmc5843</a>.<a class="code" href="structHmc5843.html#a0a8411fbf65273b86688a3c88cf31b8b">data</a>.<a class="code" href="structHmc5843.html#aa412be64bb1d1bb528accac3f73d1a90">buf</a>, (<span class="keyword">const</span> <span class="keywordtype">void</span>*) <a class="code" href="hmc5843_8c.html#a0d9d6f319b2ad8e47637ad83bb04dbe2">hmc5843</a>.<a class="code" href="structHmc5843.html#ad8b9aedbaea8a1dd228b6e2370f31f76">i2c_trans</a>.<a class="code" href="structi2c__transaction.html#a295b2671835ae06b28905433cd1096ee" title="Transaction buffer With I2C_BUF_LEN number of bytes.">buf</a>, 6);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    memcpy(<a class="code" href="hmc5843_8c.html#a0d9d6f319b2ad8e47637ad83bb04dbe2">hmc5843</a>.<a class="code" href="structHmc5843.html#ad204ff0300917ce93e4d3d3891689542">data</a>.<a class="code" href="structHmc5843.html#aa412be64bb1d1bb528accac3f73d1a90">buf</a>, (<span class="keyword">const</span> <span class="keywordtype">void</span>*) <a class="code" href="hmc5843_8c.html#a0d9d6f319b2ad8e47637ad83bb04dbe2">hmc5843</a>.<a class="code" href="structHmc5843.html#ad8b9aedbaea8a1dd228b6e2370f31f76">i2c_trans</a>.<a class="code" href="structi2c__transaction.html#a295b2671835ae06b28905433cd1096ee" title="Transaction buffer With I2C_BUF_LEN number of bytes.">buf</a>, 6);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; i++) {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <a class="code" href="hmc5843_8c.html#a0d9d6f319b2ad8e47637ad83bb04dbe2">hmc5843</a>.<a class="code" href="structHmc5843.html#a0a8411fbf65273b86688a3c88cf31b8b">data</a>.<a class="code" href="structHmc5843.html#af635d5d1646bd758030dba6a4e13b560">value</a>[i] = <a class="code" href="hmc5843_8c.html#ad409605fabe125b1d222acb94a3f480f">bswap_16</a>(<a class="code" href="hmc5843_8c.html#a0d9d6f319b2ad8e47637ad83bb04dbe2">hmc5843</a>.<a class="code" href="structHmc5843.html#a0a8411fbf65273b86688a3c88cf31b8b">data</a>.<a class="code" href="structHmc5843.html#af635d5d1646bd758030dba6a4e13b560">value</a>[i]);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <a class="code" href="hmc5843_8c.html#a0d9d6f319b2ad8e47637ad83bb04dbe2">hmc5843</a>.<a class="code" href="structHmc5843.html#ad204ff0300917ce93e4d3d3891689542">data</a>.<a class="code" href="structHmc5843.html#af635d5d1646bd758030dba6a4e13b560">value</a>[i] = <a class="code" href="hmc5843_8c.html#ad409605fabe125b1d222acb94a3f480f">bswap_16</a>(<a class="code" href="hmc5843_8c.html#a0d9d6f319b2ad8e47637ad83bb04dbe2">hmc5843</a>.<a class="code" href="structHmc5843.html#ad204ff0300917ce93e4d3d3891689542">data</a>.<a class="code" href="structHmc5843.html#af635d5d1646bd758030dba6a4e13b560">value</a>[i]);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  }</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
@@ -243,7 +243,7 @@ $(document).ready(function(){initNavTree('hmc5843_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="hmc5843_8c.html">hmc5843.c</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:00:43 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:00:43 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

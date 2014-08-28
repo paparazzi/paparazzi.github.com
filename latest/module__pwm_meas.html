@@ -29,7 +29,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.1.1_testing-19-g0f43ff6</span>
+   &#160;<span id="projectnumber">v5.2.0_stable-1-g8fbd83d</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -107,8 +107,20 @@ $(document).ready(function(){initNavTree('module__pwm_meas.html','');});
   - INPUT CAPTURE CAP0.3 on P0.29 (TWOG ADC5, 5V to 3.3V voltage divider)
   - INPUT CAPTURE CAP0.0 on P0.30 (TWOG ADC4, no voltage divider)
 
-  Currently only available on LPC21xx arch
-</pre><h1><a class="anchor" id="functions"></a>
+  For STM32:
+  - each board (or airframe file) has to define the PWM input pin and parameters
+  - example can be found in sw/airborne/boards/apogee_1.0.h board file
+</pre><h1><a class="anchor" id="configuration"></a>
+Module configuration options</h1>
+<h2><a class="anchor" id="define"></a>
+Define Options</h2>
+<ul>
+<li><b>name:</b> <code>USE_PWM_INPUT1</code> <b>value:</b> <em>PWM_PULSE_TYPE_ACTIVE_LOW|PWM_PULSE_TYPE_ACTIVE_HIGH</em> <br/>
+ Description: Activate PWM input 1 and select polarity</li>
+<li><b>name:</b> <code>USE_PWM_INPUT2</code> <b>value:</b> <em>PWM_PULSE_TYPE_ACTIVE_LOW|PWM_PULSE_TYPE_ACTIVE_HIGH</em> <br/>
+ Description: Activate PWM input 2 and select polarity</li>
+</ul>
+<h1><a class="anchor" id="functions"></a>
 Module functions</h1>
 <h2><a class="anchor" id="init_functions"></a>
 Init Functions</h2>
@@ -129,7 +141,7 @@ Source Files</h2>
 <ul>
 <li><a class="el" href="pwm__meas_8c.html">modules/core/pwm_meas.c</a></li>
 <li><a class="el" href="pwm__input_8c.html">mcu_periph/pwm_input.c</a></li>
-<li>arch dependent: <a class="el" href="pwm__input__arch_8c.html" title="handling of arm7 PWM input using a timer with capture.">mcu_periph/pwm_input_arch.c</a></li>
+<li>arch dependent: mcu_periph/pwm_input_arch.c</li>
 </ul>
 <h2><a class="anchor" id="module_xml__pwm_meas"></a>
 Raw pwm_meas.xml file:</h2>
@@ -146,8 +158,12 @@ Raw pwm_meas.xml file:</h2>
 <div class="line">      - INPUT CAPTURE CAP0.3 on P0.29 (TWOG ADC5, 5V to 3.3V voltage divider)</div>
 <div class="line">      - INPUT CAPTURE CAP0.0 on P0.30 (TWOG ADC4, no voltage divider)</div>
 <div class="line"></div>
-<div class="line">      Currently only available on LPC21xx arch</div>
+<div class="line">      For STM32:</div>
+<div class="line">      - each board (or airframe file) has to define the <a class="code" href="LPC21xx_8h.html#a538e3ec60828cfabae7e3011d73d2093">PWM</a> input pin and parameters</div>
+<div class="line">      - example can be found in sw/airborne/boards/apogee_1.0.h board file</div>
 <div class="line">    &lt;/description&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;USE_PWM_INPUT1&quot;</span> value=<span class="stringliteral">&quot;PWM_PULSE_TYPE_ACTIVE_LOW|PWM_PULSE_TYPE_ACTIVE_HIGH&quot;</span> description=<span class="stringliteral">&quot;Activate PWM input 1 and select polarity&quot;</span>/&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;USE_PWM_INPUT2&quot;</span> value=<span class="stringliteral">&quot;PWM_PULSE_TYPE_ACTIVE_LOW|PWM_PULSE_TYPE_ACTIVE_HIGH&quot;</span> description=<span class="stringliteral">&quot;Activate PWM input 2 and select polarity&quot;</span>/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;pwm_meas.h&quot;</span>/&gt;</div>
@@ -166,7 +182,7 @@ Raw pwm_meas.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon May 26 2014 16:01:10 for Paparazzi UAS by
+    <li class="footer">Generated on Thu Aug 28 2014 06:01:10 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>
