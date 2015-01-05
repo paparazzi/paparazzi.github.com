@@ -1,6 +1,9 @@
 var searchData=
 [
   ['active',['ACTIVE',['../formation_8h.html#a4c0e214062079ff665c54dbc682bb832a33cf1d8ef1d06ee698a7fabf40eb3a7f',1,'formation.h']]],
+  ['adc1_5fend',['ADC1_END',['../stm32_2mcu__periph_2adc__arch_8h.html#ac1dbdbf706177270f68597836106d8c9abb6f8d66d7657b693d6337ffbf2d8cfc',1,'adc_arch.h']]],
+  ['adc2_5fend',['ADC2_END',['../stm32_2mcu__periph_2adc__arch_8h.html#a33afbc7bbad301d909dfd2faaeae1b45ac1752acb15a053fdf22b68deb5a1e5d4',1,'adc_arch.h']]],
+  ['adc3_5fend',['ADC3_END',['../stm32_2mcu__periph_2adc__arch_8h.html#ab970f46debc24fe7a8a068048c94085baa5aea661a147e9fe25d5c2a2d48a51e7',1,'adc_arch.h']]],
   ['adxl345_5frange_5f16g',['ADXL345_RANGE_16G',['../adxl345__regs_8h.html#abc3494afc65a86812ed33040266ce16fae5641dd5b58e2fdb7018903fb9c4e21b',1,'adxl345_regs.h']]],
   ['adxl345_5frange_5f2g',['ADXL345_RANGE_2G',['../adxl345__regs_8h.html#abc3494afc65a86812ed33040266ce16fadbe3b6f849ede28b1367a75f650fdc62',1,'adxl345_regs.h']]],
   ['adxl345_5frange_5f4g',['ADXL345_RANGE_4G',['../adxl345__regs_8h.html#abc3494afc65a86812ed33040266ce16faf4839f1f2c196d523d8be06641263548',1,'adxl345_regs.h']]],

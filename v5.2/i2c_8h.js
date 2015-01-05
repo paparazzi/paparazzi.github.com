@@ -1,8 +1,5 @@
 var i2c_8h =
 [
-    [ "i2c_transaction", "structi2c__transaction.html", "structi2c__transaction" ],
-    [ "i2c_periph", "structi2c__periph.html", "structi2c__periph" ],
-    [ "i2c_errors", "structi2c__errors.html", "structi2c__errors" ],
     [ "I2C_BUF_LEN", "i2c_8h.html#ga4757adc18b278c40ced0d79f4e104460", null ],
     [ "I2C_TRANSACTION_QUEUE_LEN", "i2c_8h.html#ga1e8f7694d49989f4823aa34cffae6319", null ],
     [ "I2C_ZERO_EVENTS", "i2c_8h.html#ga77f29c2a4faf3c8917e45d4540c2a430", null ],

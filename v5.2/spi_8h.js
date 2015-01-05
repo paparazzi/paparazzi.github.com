@@ -1,7 +1,5 @@
 var spi_8h =
 [
-    [ "spi_transaction", "structspi__transaction.html", "structspi__transaction" ],
-    [ "spi_periph", "structspi__periph.html", "structspi__periph" ],
     [ "SPI_SLAVE0", "spi_8h.html#ga0fa22f23eb96f7d513dfbe9802596a32", null ],
     [ "SPI_SLAVE1", "spi_8h.html#ga96cc97e73af8ec7cffa9e1d4526692fc", null ],
     [ "SPI_SLAVE2", "spi_8h.html#gaf58a9c9069d93bd0664d2197c87ce9ff", null ],

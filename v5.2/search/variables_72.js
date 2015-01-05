@@ -79,6 +79,7 @@ var searchData=
   ['resync_5fcount',['resync_count',['../structSuperbitRF.html#a6c88b17874a1317b5e85eda96587cbaa',1,'SuperbitRF']]],
   ['ret_5fend',['ret_end',['../structSurveyPolyAdv.html#a4fe064564422de204527a0bee34c3434',1,'SurveyPolyAdv::ret_end()'],['../structZamboniSurvey.html#acc0c006f1d0503cc96755e200c069e7b',1,'ZamboniSurvey::ret_end()']]],
   ['ret_5fstart',['ret_start',['../structSurveyPolyAdv.html#aa81c1d767c2a93400f3df8cf01f26b93',1,'SurveyPolyAdv::ret_start()'],['../structZamboniSurvey.html#a750f3b25518c60fc654372bc2e0ef7ef',1,'ZamboniSurvey::ret_start()']]],
+  ['return',['return',['../stm32_2mcu__periph_2adc__arch_8c.html#a9717e7bbecb906637e86cef6da3d83c2',1,'adc_arch.c']]],
   ['return_5fangle',['return_angle',['../structSurveyPolyAdv.html#a0ac83f7d8227575d91cece0a9b574518',1,'SurveyPolyAdv::return_angle()'],['../structZamboniSurvey.html#a47fcf6767c1c1110d7a7eb5dfc5fa84a',1,'ZamboniSurvey::return_angle()']]],
   ['revision',['revision',['../structconfig__mkk__v2__eeprom__t.html#a588696b2ea1f443f8bdfde51a21ebc90',1,'config_mkk_v2_eeprom_t']]],
   ['rgps_5fpos',['Rgps_pos',['../hf__float_8c.html#af6333ef44fbaf7aaf25c27a56429144f',1,'hf_float.c']]],

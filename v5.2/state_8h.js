@@ -1,6 +1,5 @@
 var state_8h =
 [
-    [ "State", "structState.html", "structState" ],
     [ "ACCEL_ECEF_F", "state_8h.html#ga6facec929f628aeed9c9173f68283f00", null ],
     [ "ACCEL_ECEF_I", "state_8h.html#ga0a85ee9e95009a2b8254012520a9f963", null ],
     [ "ACCEL_NED_F", "state_8h.html#ga2dee1fa8ad515c618138f1646ddc484f", null ],

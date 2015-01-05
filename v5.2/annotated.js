@@ -126,6 +126,7 @@ var annotated =
     [ "ImuDrotek2", "structImuDrotek2.html", "structImuDrotek2" ],
     [ "ImuFloat", "structImuFloat.html", "structImuFloat" ],
     [ "ImuGL1I2c", "structImuGL1I2c.html", "structImuGL1I2c" ],
+    [ "ImuHbmini", "structImuHbmini.html", "structImuHbmini" ],
     [ "ImuKrooz", "structImuKrooz.html", "structImuKrooz" ],
     [ "ImuMpu6000Hmc5883", "structImuMpu6000Hmc5883.html", "structImuMpu6000Hmc5883" ],
     [ "ImuNavgo", "structImuNavgo.html", "structImuNavgo" ],

@@ -239,7 +239,7 @@ var searchData=
   ['ret',['RET',['../nav__survey__polygon_8h.html#aa9c58cb0ccc605869d75547268f59fa6ab2510768eaba5e52ba71678e19a65464',1,'nav_survey_polygon.h']]],
   ['ret_5fend',['ret_end',['../structSurveyPolyAdv.html#a4fe064564422de204527a0bee34c3434',1,'SurveyPolyAdv::ret_end()'],['../structZamboniSurvey.html#acc0c006f1d0503cc96755e200c069e7b',1,'ZamboniSurvey::ret_end()']]],
   ['ret_5fstart',['ret_start',['../structSurveyPolyAdv.html#aa81c1d767c2a93400f3df8cf01f26b93',1,'SurveyPolyAdv::ret_start()'],['../structZamboniSurvey.html#a750f3b25518c60fc654372bc2e0ef7ef',1,'ZamboniSurvey::ret_start()']]],
-  ['return',['Return',['../common__flight__plan_8h.html#a067ebcdcacb7ae66d3a69ef859c5e930',1,'common_flight_plan.h']]],
+  ['return',['Return',['../common__flight__plan_8h.html#a067ebcdcacb7ae66d3a69ef859c5e930',1,'Return():&#160;common_flight_plan.h'],['../stm32_2mcu__periph_2adc__arch_8c.html#a9717e7bbecb906637e86cef6da3d83c2',1,'return():&#160;adc_arch.c']]],
   ['return_5fangle',['return_angle',['../structSurveyPolyAdv.html#a0ac83f7d8227575d91cece0a9b574518',1,'SurveyPolyAdv::return_angle()'],['../structZamboniSurvey.html#a47fcf6767c1c1110d7a7eb5dfc5fa84a',1,'ZamboniSurvey::return_angle()']]],
   ['return_5fif_5fnot_5fkillmode',['RETURN_IF_NOT_KILLMODE',['../config__mkk__v2_8c.html#ac2bdc5bac4be9f31620f06812cf54fd9',1,'config_mkk_v2.c']]],
   ['reverse',['REVERSE',['../actuators__asctec_8h.html#a6ab1b9217ee457a8e4352cf0b28af79da906b7cc20b42994dda4da492767c1de9',1,'REVERSE():&#160;actuators_asctec.h'],['../actuators__asctec__v2_8h.html#a4fc4c81cd178f2e57a6d8ce74785742ea906b7cc20b42994dda4da492767c1de9',1,'REVERSE():&#160;actuators_asctec_v2.h']]],

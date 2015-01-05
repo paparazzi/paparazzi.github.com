@@ -1,6 +1,5 @@
 var pprz__orientation__conversion_8h =
 [
-    [ "OrientationReps", "structOrientationReps.html", "structOrientationReps" ],
     [ "ORREP_EULER_F", "pprz__orientation__conversion_8h.html#ga5ca8cd93a67e7ddcd8534f523961edaf", null ],
     [ "ORREP_EULER_I", "pprz__orientation__conversion_8h.html#ga4bf5cf32d339495bd9ea2d6ba91ad712", null ],
     [ "ORREP_QUAT_F", "pprz__orientation__conversion_8h.html#ga92513ffc4921e8b22fc7a65a583a79c1", null ],

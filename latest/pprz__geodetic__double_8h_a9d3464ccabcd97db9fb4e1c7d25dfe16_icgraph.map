@@ -1,14 +1,38 @@
 <map id="lla_of_ecef_d" name="lla_of_ecef_d">
-<area shape="rect" id="node3" href="$pprz__geodetic__int_8h.html#aea47a32071c2427f895fcb1df32c4e23" title="lla_of_ecef_i" alt="" coords="184,215,283,243"/>
-<area shape="rect" id="node23" href="$pprz__geodetic__double_8h.html#a3b487b485bc51b98307acae35009d1bb" title="ltp_def_from_ecef_d" alt="" coords="159,266,308,294"/>
-<area shape="rect" id="node5" href="$pprz__geodetic__int_8h.html#a5afd098a83e572b854e157486ccb569f" title="ltp_def_from_ecef_i" alt="" coords="364,131,511,159"/>
-<area shape="rect" id="node19" href="$group__state__position.html#gad0fedf046f198eace06305e56fc7a0f8" title="stateCalcPositionLla_i" alt="" coords="357,215,517,243"/>
-<area shape="rect" id="node7" href="$gps__skytraq_8h.html#a82455efa55f2f00f1ab1524b9f82dc1d" title="gps_skytraq_read_message" alt="" coords="567,5,767,33"/>
-<area shape="rect" id="node9" href="$ins__ardrone2_8c.html#a60bd57b621acfc0f5da27e17395d8d23" title="INS initialization." alt="" coords="633,55,700,83"/>
-<area shape="rect" id="node11" href="$ins__ardrone2_8c.html#aacc25a507c5c24309fc37b1f806f5d2b" title="Update INS state with GPS measurements." alt="" coords="605,106,728,134"/>
-<area shape="rect" id="node13" href="$ins__float__invariant_8c.html#a14cb66a86c67d8b9216a8c12f58c311b" title="INS local origin reset." alt="" coords="588,157,745,185"/>
-<area shape="rect" id="node15" href="$ins__int_8c.html#a4a87b109da7096f36e497b491ebfdfd6" title="initialize the local origin (ltp_def) from flight plan position" alt="" coords="595,207,739,251"/>
-<area shape="rect" id="node17" href="$ins__int_8c.html#abf3028c2ada542781b8a5e1eb20c17ce" title="INS initialization." alt="" coords="816,215,883,243"/>
-<area shape="rect" id="node21" href="$group__state__position.html#ga99473409b740a26c0e2b9a5bd8e9defb" title="Get position in LLA coordinates (int)." alt="" coords="589,274,744,302"/>
-<area shape="rect" id="node25" href="$gps__sim__nps_8h.html#a1acb1b66a5b2d172cff383fdb9b6de4d" title="gps_feed_value" alt="" coords="377,266,497,294"/>
+<area shape="rect" id="node3" href="$pprz__geodetic__int_8h.html#aea47a32071c2427f895fcb1df32c4e23" title="lla_of_ecef_i" alt="" coords="184,439,283,467"/>
+<area shape="rect" id="node76" href="$pprz__geodetic__double_8h.html#a3b487b485bc51b98307acae35009d1bb" title="ltp_def_from_ecef_d" alt="" coords="159,490,308,518"/>
+<area shape="rect" id="node5" href="$pprz__geodetic__int_8h.html#a5afd098a83e572b854e157486ccb569f" title="ltp_def_from_ecef_i" alt="" coords="364,439,511,467"/>
+<area shape="rect" id="node25" href="$group__state__position.html#gad0fedf046f198eace06305e56fc7a0f8" title="Calculate LLA (int) from any other available representation. " alt="" coords="357,338,517,366"/>
+<area shape="rect" id="node7" href="$gps__furuno_8c.html#a2a6344ac43992ad22974f50f5f581ab9" title="nmea_parse_perdcrv" alt="" coords="588,338,745,366"/>
+<area shape="rect" id="node13" href="$gps__skytraq_8h.html#a82455efa55f2f00f1ab1524b9f82dc1d" title="gps_skytraq_read_message" alt="" coords="567,389,767,417"/>
+<area shape="rect" id="node15" href="$ins__ardrone2_8c.html#a60bd57b621acfc0f5da27e17395d8d23" title="INS initialization. " alt="" coords="633,439,700,467"/>
+<area shape="rect" id="node17" href="$ins__ardrone2_8c.html#a14cb66a86c67d8b9216a8c12f58c311b" title="INS local origin reset. " alt="" coords="588,490,745,518"/>
+<area shape="rect" id="node19" href="$ins__ardrone2_8c.html#aacc25a507c5c24309fc37b1f806f5d2b" title="Update INS state with GPS measurements. " alt="" coords="605,541,728,569"/>
+<area shape="rect" id="node21" href="$ins__int_8c.html#a4a87b109da7096f36e497b491ebfdfd6" title="initialize the local origin (ltp_def) from flight plan position " alt="" coords="595,591,739,635"/>
+<area shape="rect" id="node9" href="$gps__nmea_8h.html#ae4ee231e9004ab283b1da389fd4492f8" title="nmea_parse_prop_msg" alt="" coords="816,447,989,475"/>
+<area shape="rect" id="node11" href="$gps__nmea_8h.html#a2f49ea43d042f884e3ec12e5e14abc97" title="parse_nmea_char() has a complete line. " alt="" coords="1068,589,1204,617"/>
+<area shape="rect" id="node23" href="$ins__int_8c.html#abf3028c2ada542781b8a5e1eb20c17ce" title="INS initialization. " alt="" coords="869,599,936,627"/>
+<area shape="rect" id="node27" href="$group__state__position.html#ga99473409b740a26c0e2b9a5bd8e9defb" title="Get position in LLA coordinates (int). " alt="" coords="589,237,744,265"/>
+<area shape="rect" id="node29" href="$mavlink_8c.html#a8e376e67cc8a8a15e91a7e9fae593646" title="mavlink_send_global\l_position_int" alt="" coords="825,229,980,273"/>
+<area shape="rect" id="node33" href="$dc_8h.html#aaf0625fed2e489322c40c4b2a1904e9a" title="Send Down the coordinates of where the photo was taken. " alt="" coords="820,317,985,345"/>
+<area shape="rect" id="node60" href="$dc_8h.html#ab4b5d12f3c9829a0f0e538496ad5c547" title="Send an info message. " alt="" coords="869,106,936,134"/>
+<area shape="rect" id="node74" href="$uart__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95" title="Send Command To Camera. " alt="" coords="829,178,976,206"/>
+<area shape="rect" id="node31" href="$mavlink_8h.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls. " alt="" coords="1072,207,1200,235"/>
+<area shape="rect" id="node35" href="$atmega__i2c__cam__ctrl_8h.html#ad7c06f4d1c398ba41252eb2e7ecd1a85" title="atmega_i2c_cam_ctrl_send" alt="" coords="1037,371,1235,399"/>
+<area shape="rect" id="node43" href="$gpio__cam__ctrl_8h.html#a9ea235d04c38558097d37bc2dacdef1e" title="4Hz Periodic " alt="" coords="1727,538,1895,566"/>
+<area shape="rect" id="node45" href="$servo__cam__ctrl_8h.html#ab18e6fdd6b4dbc3e80eab505bb9f73ee" title="servo_cam_ctrl_periodic" alt="" coords="1723,294,1899,322"/>
+<area shape="rect" id="node57" href="$gpio__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95" title="Send Command To Camera. " alt="" coords="1063,317,1209,345"/>
+<area shape="rect" id="node37" href="$dc_8h.html#a833f16388be36136f5d7d173200d5e95" title="Send Command To Camera. " alt="" coords="1299,371,1445,399"/>
+<area shape="rect" id="node41" href="$atmega__i2c__cam__ctrl_8h.html#aeb25c30f109ccd0c3046715e4f3df6b5" title="atmega_i2c_cam_ctrl\l_periodic" alt="" coords="1732,471,1889,515"/>
+<area shape="rect" id="node39" href="$dc_8h.html#ad899af2195fafc817e111af752989b94" title="periodic 4Hz function " alt="" coords="1527,437,1652,465"/>
+<area shape="rect" id="node49" href="$dc__shoot__rc_8h.html#a07c50c1495b2a608715da52b87501ff2" title="periodic 4Hz function " alt="" coords="1512,319,1667,347"/>
+<area shape="rect" id="node51" href="$sim__i2c__cam__ctrl_8c.html#aeb25c30f109ccd0c3046715e4f3df6b5" title="atmega_i2c_cam_ctrl\l_periodic" alt="" coords="1511,370,1668,414"/>
+<area shape="rect" id="node53" href="$nav__spiral_8h.html#aabff5631bd3af116a30f1d907a71407c" title="nav_spiral_run" alt="" coords="1532,269,1647,297"/>
+<area shape="rect" id="node47" href="$uart__cam__ctrl_8h.html#aaf39174521b99262b40497c50520150b" title="4Hz Periodic " alt="" coords="1719,421,1903,449"/>
+<area shape="rect" id="node62" href="$dc_8h.html#a9b9f345170fec78f561c6a7a74d1e6d3" title="Sets the dc control in distance mode. " alt="" coords="1087,5,1185,33"/>
+<area shape="rect" id="node64" href="$dc_8h.html#ac1d419ec639ffd43193ebcbd6e1131c0" title="Sets the dc control in circle mode. " alt="" coords="1097,55,1175,83"/>
+<area shape="rect" id="node66" href="$dc_8h.html#a2b50d2725b576697bde98a8bdb358093" title="Sets the dc control in distance mode. " alt="" coords="1093,106,1179,134"/>
+<area shape="rect" id="node70" href="$dc_8h.html#a47c625a53743f8ad41baaf54a6fcf144" title="Stop dc control. " alt="" coords="1100,157,1172,185"/>
+<area shape="rect" id="node68" href="$nav__survey__polygon_8h.html#ad56bdec94ac98495799a04f0d12b51e2" title="main navigation routine. " alt="" coords="1283,142,1461,170"/>
+<area shape="rect" id="node78" href="$gps__sim__nps_8h.html#a1acb1b66a5b2d172cff383fdb9b6de4d" title="gps_feed_value" alt="" coords="377,490,497,518"/>
 </map>

@@ -1,8 +1,40 @@
 var group__i2c =
 [
-    [ "i2c_transaction", "structi2c__transaction.html", null ],
-    [ "i2c_periph", "structi2c__periph.html", null ],
-    [ "i2c_errors", "structi2c__errors.html", null ],
+    [ "i2c_transaction", "structi2c__transaction.html", [
+      [ "buf", "structi2c__transaction.html#a295b2671835ae06b28905433cd1096ee", null ],
+      [ "len_r", "structi2c__transaction.html#a53b3cfd6febadfef15cdd1136adb20a5", null ],
+      [ "len_w", "structi2c__transaction.html#afe675669c727a98bd998283d940b2636", null ],
+      [ "slave_addr", "structi2c__transaction.html#af0c94c610e2f7b712f06b87440849ab6", null ],
+      [ "status", "structi2c__transaction.html#ac4f80563bab524eee997c5c27ef570a4", null ],
+      [ "type", "structi2c__transaction.html#ab23c7469258089742bb0c2950599b232", null ]
+    ] ],
+    [ "i2c_periph", "structi2c__periph.html", [
+      [ "errors", "structi2c__periph.html#a4b1270562d3320ff0151bd7856ec0c6e", null ],
+      [ "idx_buf", "structi2c__periph.html#adc23e331e23ecbdabc4510adeb43f8c2", null ],
+      [ "init_struct", "structi2c__periph.html#a76d89c1653cd5da167ec5ce1edaf3d7c", null ],
+      [ "reg_addr", "structi2c__periph.html#ab87b1de4062efa2a073a28748b9cec38", null ],
+      [ "status", "structi2c__periph.html#af293727ce3c1ee16e7b5f51ac5e8ce85", null ],
+      [ "trans", "structi2c__periph.html#ad3bd507a4aa9e144366dc2c8a6291240", null ],
+      [ "trans_extract_idx", "structi2c__periph.html#a4e572be9f28f1037d7c749a223329aaf", null ],
+      [ "trans_insert_idx", "structi2c__periph.html#a63002740b27aaaf9d847b17001302d9c", null ],
+      [ "watchdog", "structi2c__periph.html#adb02b71a163584f08afeba429abda130", null ]
+    ] ],
+    [ "i2c_errors", "structi2c__errors.html", [
+      [ "ack_fail_cnt", "structi2c__errors.html#a5e18e74d9bc598907010196a760261fe", null ],
+      [ "arb_lost_cnt", "structi2c__errors.html#af759b5450d828fa43aa04b203bab42cd", null ],
+      [ "er_irq_cnt", "structi2c__errors.html#a8cde2b0ff7f6f4c7672018c51789da1c", null ],
+      [ "event_chain", "structi2c__errors.html#ad2ae3e645e69c1f27b109797accb0c1b", null ],
+      [ "irq_cnt", "structi2c__errors.html#a239c393ed7a0fe4917ce1f07316f10fd", null ],
+      [ "last_unexpected_event", "structi2c__errors.html#a8873e61902c73fefa2919fc1115c2596", null ],
+      [ "miss_start_stop_cnt", "structi2c__errors.html#ad509216d6106e340e07f72e58f3f52e8", null ],
+      [ "over_under_cnt", "structi2c__errors.html#a872cdd33256c33ad0a4ec29b5ff2ac85", null ],
+      [ "pec_recep_cnt", "structi2c__errors.html#a05faedf401286bc8e6a4a25c949af3e3", null ],
+      [ "queue_full_cnt", "structi2c__errors.html#ac53b074124c2d291dc57cecd1166823b", null ],
+      [ "smbus_alert_cnt", "structi2c__errors.html#a2d907f3b03aa19fa2300a5f92ece5317", null ],
+      [ "status_chain", "structi2c__errors.html#a009b2d92364ab426ae783ce769afaf34", null ],
+      [ "timeout_tlow_cnt", "structi2c__errors.html#a72a1be189ba8375641abaf09c9e51d39", null ],
+      [ "unexpected_event_cnt", "structi2c__errors.html#a874ae9784489639f832a7b6d8b9d0993", null ]
+    ] ],
     [ "I2C_BUF_LEN", "group__i2c.html#ga4757adc18b278c40ced0d79f4e104460", null ],
     [ "I2C_TRANSACTION_QUEUE_LEN", "group__i2c.html#ga1e8f7694d49989f4823aa34cffae6319", null ],
     [ "I2C_ZERO_EVENTS", "group__i2c.html#ga77f29c2a4faf3c8917e45d4540c2a430", null ],

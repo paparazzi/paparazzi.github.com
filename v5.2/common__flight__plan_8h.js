@@ -12,6 +12,7 @@ var common__flight__plan_8h =
     [ "MoreThan", "common__flight__plan_8h.html#a9f52cbc05d5f9352c2b5313ceeaa78d6", null ],
     [ "NavBlockTime", "common__flight__plan_8h.html#a5c88d2e597858eb217b5b573a428257c", null ],
     [ "NextBlock", "common__flight__plan_8h.html#abed83dcae2c09eb0d09f0b279bad1d8b", null ],
+    [ "NextStage", "common__flight__plan_8h.html#a5fa65984b8d334be4318091bb98934ef", null ],
     [ "NextStageAndBreak", "common__flight__plan_8h.html#ab6fa2c1db175998ff9eb1eb65b9411c1", null ],
     [ "NextStageAndBreakFrom", "common__flight__plan_8h.html#aa64072da784959799353d18ae618cbc5", null ],
     [ "Or", "common__flight__plan_8h.html#a930c4658c4c62e1d04058018e9732a26", null ],

@@ -1,32 +1,34 @@
 <map id="hmc58xx_i2c_tx_reg" name="hmc58xx_i2c_tx_reg">
-<area shape="rect" id="node3" href="$hmc58xx_8c.html#a2eff0c407b139d17a73bf75a611c32cb" title="Configuration function called once before normal use." alt="" coords="205,246,368,274"/>
+<area shape="rect" id="node3" href="$hmc58xx_8c.html#a2eff0c407b139d17a73bf75a611c32cb" title="Configuration function called once before normal use. " alt="" coords="205,271,368,299"/>
 <area shape="rect" id="node5" href="$hmc58xx_8h.html#a89a7b5456b1a87c83aef85779c4fc5e9" title="hmc58xx_start_configure" alt="" coords="417,93,599,121"/>
-<area shape="rect" id="node19" href="$hmc58xx_8h.html#a6514a605dad1e4bb5664bf885cca676b" title="hmc58xx_event" alt="" coords="447,425,569,453"/>
+<area shape="rect" id="node19" href="$hmc58xx_8h.html#a6514a605dad1e4bb5664bf885cca676b" title="hmc58xx_event" alt="" coords="447,450,569,478"/>
 <area shape="rect" id="node7" href="$imu__krooz_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="imu_periodic" alt="" coords="683,13,784,41"/>
-<area shape="rect" id="node9" href="$hmc58xx_8h.html#a353064a5a9c6b47a14f4b9543545b4ec" title="convenience function: read or start configuration if not already initialized" alt="" coords="665,63,801,91"/>
-<area shape="rect" id="node15" href="$imu__drotek__10dof__v2_8h.html#a4ff8194f50bedf14d3d6bf7a4d9efd9c" title="callback function to configure hmc5883 mag" alt="" coords="649,114,817,158"/>
-<area shape="rect" id="node11" href="$imu__navgo_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="imu_periodic" alt="" coords="901,5,1003,33"/>
+<area shape="rect" id="node9" href="$hmc58xx_8h.html#a353064a5a9c6b47a14f4b9543545b4ec" title="convenience function: read or start configuration if not already initialized " alt="" coords="665,63,801,91"/>
+<area shape="rect" id="node15" href="$imu__drotek__10dof__v2_8h.html#a4ff8194f50bedf14d3d6bf7a4d9efd9c" title="callback function to configure hmc5883 mag " alt="" coords="649,114,817,158"/>
+<area shape="rect" id="node11" href="$imu__hbmini_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="imu_periodic" alt="" coords="901,5,1003,33"/>
 <area shape="rect" id="node13" href="$mag__hmc58xx_8h.html#a2e48d1806ea88022ff1f1c8b01b53f42" title="mag_hmc58xx_module\l_periodic" alt="" coords="867,55,1037,99"/>
 <area shape="rect" id="node17" href="$imu__drotek__10dof__v2_8c.html#ad32faae58e391642ec8048cb11011998" title="imu_impl_init" alt="" coords="899,122,1005,150"/>
-<area shape="rect" id="node21" href="$imu__krooz__memsic_8h.html#ac3e0837f6fda31fca37cf6d6cd1e39dd" title="imu_krooz_event" alt="" coords="668,181,799,209"/>
-<area shape="rect" id="node25" href="$imu__navgo_8h.html#a090687272e402bae057eb68e39e6218f" title="imu_navgo_event" alt="" coords="667,231,800,259"/>
-<area shape="rect" id="node29" href="$mag__hmc58xx_8h.html#a6e8146871b55ac8c4d4353e3aa95e8cb" title="mag_hmc58xx_module\l_event" alt="" coords="648,282,819,326"/>
-<area shape="rect" id="node31" href="$imu__aspirin_8h.html#aa229c37c4339ad08d83c4d72f30a1fd5" title="imu_aspirin_event" alt="" coords="664,349,803,377"/>
-<area shape="rect" id="node35" href="$imu__aspirin__i2c_8h.html#a6369e8522e39224b5076e7837c0032f2" title="imu_aspirin_i2c_event" alt="" coords="652,399,815,427"/>
-<area shape="rect" id="node39" href="$imu__drotek__10dof__v2_8h.html#a740371769417e71440eda6835e29a667" title="imu_drotek2_event" alt="" coords="661,450,805,478"/>
-<area shape="rect" id="node43" href="$imu__gl1_8h.html#a08db0d7b92f2f359a5a2bc939a197a5f" title="imu_gl1_i2c_event" alt="" coords="664,501,803,529"/>
-<area shape="rect" id="node47" href="$imu__mpu6000__hmc5883_8h.html#ae9d618a59cee7e4c02666223bc3bf07e" title="imu_mpu_hmc_event" alt="" coords="653,551,813,579"/>
-<area shape="rect" id="node51" href="$imu__navstik_8h.html#a2ddc38f9314a98d94376d14851bb0bcd" title="Handle all the events of the Navstik IMU components." alt="" coords="663,602,804,630"/>
-<area shape="rect" id="node55" href="$imu__ppzuav_8h.html#a51ff6c245630bbf2701dc550ce24ef23" title="imu_ppzuav_event" alt="" coords="663,653,804,681"/>
-<area shape="rect" id="node59" href="$imu__px4fmu_8h.html#af65bf55913e04b2d90bdffb1c94c169c" title="imu_px4fmu_event" alt="" coords="661,703,805,731"/>
-<area shape="rect" id="node23" href="$imu__krooz_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="911,181,993,209"/>
-<area shape="rect" id="node27" href="$imu__navgo_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="911,231,993,259"/>
-<area shape="rect" id="node33" href="$imu__aspirin_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="911,349,993,377"/>
-<area shape="rect" id="node37" href="$imu__aspirin__i2c_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="911,399,993,427"/>
-<area shape="rect" id="node41" href="$imu__drotek__10dof__v2_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="911,450,993,478"/>
-<area shape="rect" id="node45" href="$imu__gl1_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="911,501,993,529"/>
-<area shape="rect" id="node49" href="$imu__mpu6000__hmc5883_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="911,551,993,579"/>
-<area shape="rect" id="node53" href="$imu__navstik_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="911,602,993,630"/>
-<area shape="rect" id="node57" href="$imu__ppzuav_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="911,653,993,681"/>
-<area shape="rect" id="node61" href="$imu__px4fmu_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="911,703,993,731"/>
+<area shape="rect" id="node21" href="$imu__hbmini_8h.html#a5b9ae3abc04f091d942553dc17b589c8" title="imu_hbmini_event" alt="" coords="664,181,803,209"/>
+<area shape="rect" id="node25" href="$imu__krooz__memsic_8h.html#ac3e0837f6fda31fca37cf6d6cd1e39dd" title="imu_krooz_event" alt="" coords="668,231,799,259"/>
+<area shape="rect" id="node29" href="$imu__navgo_8h.html#a090687272e402bae057eb68e39e6218f" title="imu_navgo_event" alt="" coords="667,282,800,310"/>
+<area shape="rect" id="node33" href="$mag__hmc58xx_8h.html#a6e8146871b55ac8c4d4353e3aa95e8cb" title="mag_hmc58xx_module\l_event" alt="" coords="648,333,819,377"/>
+<area shape="rect" id="node35" href="$imu__aspirin_8h.html#aa229c37c4339ad08d83c4d72f30a1fd5" title="imu_aspirin_event" alt="" coords="664,399,803,427"/>
+<area shape="rect" id="node39" href="$imu__aspirin__i2c_8h.html#a6369e8522e39224b5076e7837c0032f2" title="imu_aspirin_i2c_event" alt="" coords="652,450,815,478"/>
+<area shape="rect" id="node43" href="$imu__drotek__10dof__v2_8h.html#a740371769417e71440eda6835e29a667" title="imu_drotek2_event" alt="" coords="661,501,805,529"/>
+<area shape="rect" id="node47" href="$imu__gl1_8h.html#a08db0d7b92f2f359a5a2bc939a197a5f" title="imu_gl1_i2c_event" alt="" coords="664,551,803,579"/>
+<area shape="rect" id="node51" href="$imu__mpu6000__hmc5883_8h.html#ae9d618a59cee7e4c02666223bc3bf07e" title="imu_mpu_hmc_event" alt="" coords="653,602,813,630"/>
+<area shape="rect" id="node55" href="$imu__navstik_8h.html#a2ddc38f9314a98d94376d14851bb0bcd" title="Handle all the events of the Navstik IMU components. " alt="" coords="663,653,804,681"/>
+<area shape="rect" id="node59" href="$imu__ppzuav_8h.html#a51ff6c245630bbf2701dc550ce24ef23" title="imu_ppzuav_event" alt="" coords="663,703,804,731"/>
+<area shape="rect" id="node63" href="$imu__px4fmu_8h.html#af65bf55913e04b2d90bdffb1c94c169c" title="imu_px4fmu_event" alt="" coords="661,754,805,782"/>
+<area shape="rect" id="node23" href="$imu__hbmini_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="911,181,993,209"/>
+<area shape="rect" id="node27" href="$imu__krooz_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="911,231,993,259"/>
+<area shape="rect" id="node31" href="$imu__navgo_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="911,282,993,310"/>
+<area shape="rect" id="node37" href="$imu__aspirin_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="911,399,993,427"/>
+<area shape="rect" id="node41" href="$imu__aspirin__i2c_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="911,450,993,478"/>
+<area shape="rect" id="node45" href="$imu__drotek__10dof__v2_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="911,501,993,529"/>
+<area shape="rect" id="node49" href="$imu__gl1_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="911,551,993,579"/>
+<area shape="rect" id="node53" href="$imu__mpu6000__hmc5883_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="911,602,993,630"/>
+<area shape="rect" id="node57" href="$imu__navstik_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="911,653,993,681"/>
+<area shape="rect" id="node61" href="$imu__ppzuav_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="911,703,993,731"/>
+<area shape="rect" id="node65" href="$imu__px4fmu_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="911,754,993,782"/>
 </map>

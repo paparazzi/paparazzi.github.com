@@ -8,6 +8,7 @@ var rotorcraft_2autopilot_8c =
     [ "FAILSAFE_MODE_TOO_FAR_FROM_HOME", "rotorcraft_2autopilot_8c.html#a19d94a4015e78df48cbb4e4514bf3012", null ],
     [ "MODE_STARTUP", "rotorcraft_2autopilot_8c.html#a8acaa9de6b3827bbaf3d64c1917d56f6", null ],
     [ "NAV_PRESCALER", "rotorcraft_2autopilot_8c.html#a3ee200b97512f415140021966b421fb3", null ],
+    [ "UNLOCKED_HOME_MODE", "rotorcraft_2autopilot_8c.html#af56a18e0bcb4ee05d560ba1ec6d9a898", null ],
     [ "ahrs_is_aligned", "rotorcraft_2autopilot_8c.html#a99409d6a32e6cce437a1c0354a2515eb", null ],
     [ "autopilot_check_in_flight", "rotorcraft_2autopilot_8c.html#a82c57502deaf7fb0dc0525b298611a87", null ],
     [ "autopilot_init", "rotorcraft_2autopilot_8c.html#a9d3557653abfc3d4c428724b249f6d5e", null ],

@@ -1,0 +1,51 @@
+<map id="ahrs_propagate" name="ahrs_propagate">
+<area shape="rect" id="node3" href="$at__com_8c.html#a176adf12985989f7f797a8bf21cbc321" title="at_com_recieve_navdata" alt="" coords="197,5,379,33"/>
+<area shape="rect" id="node5" href="$ahrs__float__dcm_8c.html#a682bd53351651a47152def7839ecdbd2" title="compute_ahrs_representations" alt="" coords="177,157,399,185"/>
+<area shape="rect" id="node13" href="$group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="721,309,876,337"/>
+<area shape="rect" id="node15" href="$ahrs__float__cmpl_8c.html#a2e90a05e5a4ca369d0308bb72e68171d" title="Compute body orientation and rates from imu orientation and rates. " alt="" coords="453,191,645,235"/>
+<area shape="rect" id="node21" href="$group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float). " alt="" coords="704,359,893,387"/>
+<area shape="rect" id="node26" href="$ins__float__invariant_8c.html#ac0fc54bd359850973c5cd1307df31da0" title="Compute correction vectors E = ( ŷ &#45; y ) LE, ME, NE, OE : ( gain matrix * error ) ..." alt="" coords="237,562,339,590"/>
+<area shape="rect" id="node28" href="$pprz__algebra__float_8h.html#acd71810b99ae462101d967468d0dcb25" title="float_quat_invert" alt="" coords="485,511,613,539"/>
+<area shape="rect" id="node30" href="$pprz__algebra__float_8c.html#a998feaa509fd80038aa552e61c7111e6" title="rotate 3D vector by quaternion. " alt="" coords="485,562,613,590"/>
+<area shape="rect" id="node32" href="$pprz__algebra__float_8c.html#a617f13c7ecb041b375c76d14a2f8221e" title="in place quaternion integration with constant rotational velocity " alt="" coords="475,765,624,793"/>
+<area shape="rect" id="node35" href="$pprz__algebra__float_8h.html#a010393da7c94f197d0161a0071862041" title="float_quat_normalize" alt="" coords="211,815,365,843"/>
+<area shape="rect" id="node39" href="$pprz__algebra__float_8c.html#a29a7db3c967cea290d25b28b4d17f01f" title="Quaternion from rotation matrix. " alt="" coords="217,866,359,894"/>
+<area shape="rect" id="node42" href="$pprz__algebra__float_8c.html#a836d45e7554cef1d99bcac5fb8822951" title="in place first order integration of a rotation matrix " alt="" coords="205,917,371,945"/>
+<area shape="rect" id="node44" href="$pprz__algebra__float_8c.html#a4f32e245bb37ef9fdf43872080f63fbc" title="float_rmat_of_quat" alt="" coords="217,967,359,995"/>
+<area shape="rect" id="node46" href="$pprz__algebra__float_8c.html#a0f5747a234093d4672f0f3bd6198f1eb" title="float_rmat_reorthogonalize" alt="" coords="191,1018,385,1046"/>
+<area shape="rect" id="node50" href="$navdata_8c.html#ae43ceafaca46ba7374afd15ed5b3b15a" title="full_read" alt="" coords="251,1069,325,1097"/>
+<area shape="rect" id="node52" href="$gps__ardrone2_8c.html#a2fcaa354614352f5a8251928bae63abc" title="gps_ardrone2_parse" alt="" coords="212,1119,364,1147"/>
+<area shape="rect" id="node56" href="$ins__float__invariant_8c.html#a5be5e848a4326763bf2bf0ab5ec053b5" title="init_invariant_state" alt="" coords="217,1170,359,1198"/>
+<area shape="rect" id="node60" href="$pprz__algebra__int_8c.html#a8d5b932f03cb090e7a2cee0e977887cf" title="in place quaternion first order integration with constant rotational velocity. " alt="" coords="204,1221,372,1249"/>
+<area shape="rect" id="node62" href="$pprz__algebra__int_8h.html#a00267cacb602945fc6cfb054492460fa" title="normalize a quaternion inplace " alt="" coords="208,1271,368,1299"/>
+<area shape="rect" id="node66" href="$pprz__algebra__int_8c.html#a7d9bca983887baf028c121876125efcf" title="rotate anglular rates by transposed rotation matrix. " alt="" coords="448,1354,651,1382"/>
+<area shape="rect" id="node68" href="$pprz__algebra__int_8c.html#ac992f3c60c036759941405f6e754b55b" title="rotate 3D vector by transposed rotation matrix. " alt="" coords="197,1490,379,1518"/>
+<area shape="rect" id="node70" href="$ins__float__invariant_8c.html#a8f6d3b43296e7262f60dbe9083ff92f1" title="Compute dynamic mode. " alt="" coords="227,663,349,691"/>
+<area shape="rect" id="node80" href="$ahrs__float__dcm_8c.html#a9edefa5b854086647ebcd488b4a3f390" title="Matrix_update" alt="" coords="232,106,344,134"/>
+<area shape="rect" id="node84" href="$ahrs__float__dcm_8c.html#a231f7602591a267c2669a2af9b9c8749" title="Normalize" alt="" coords="245,55,331,83"/>
+<area shape="rect" id="node88" href="$group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int). " alt="" coords="472,1409,627,1437"/>
+<area shape="rect" id="node90" href="$ahrs__float__mlkf_8c.html#af3b6038d634436b46dc83097b3ebf4e9" title="propagate_ref" alt="" coords="232,714,344,742"/>
+<area shape="rect" id="node93" href="$ahrs__float__mlkf_8c.html#a08b5ba2b24ee28f080b00eb5cb08384a" title="Progagate filter&#39;s covariance We don&#39;t propagate state as we assume to have reseted. " alt="" coords="224,1541,352,1569"/>
+<area shape="rect" id="node95" href="$pprz__rk__float_8h.html#aec82ad92b63bfd3f0b29d2c2b9e926a5" title="Fourth&#45;Order Runge&#45;Kutta. " alt="" coords="213,1591,363,1619"/>
+<area shape="rect" id="node97" href="$ahrs__int__cmpl__euler_8c.html#a4f58a57dad0a37eca38d2fcfbb689278" title="set_body_state_from\l_euler" alt="" coords="209,1373,367,1417"/>
+<area shape="rect" id="node101" href="$ahrs__float__mlkf_8c.html#abea8ede7c8ebc5179487d3464ab513bb" title="Compute body orientation and rates from imu orientation and rates. " alt="" coords="453,258,645,286"/>
+<area shape="rect" id="node109" href="$group__state__acceleration.html#ga27b8f24af6ddce14389efaa5ec119967" title="Set acceleration in NED coordinates (float). " alt="" coords="215,1642,361,1670"/>
+<area shape="rect" id="node112" href="$group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float). " alt="" coords="451,410,648,438"/>
+<area shape="rect" id="node115" href="$group__state__position.html#ga9ff9643cd109a27a481d5883652d0f08" title="Set position from local NED coordinates (float). " alt="" coords="207,1693,369,1721"/>
+<area shape="rect" id="node117" href="$group__state__velocity.html#gae6549b15cd961047c89481ab2d87171f" title="Set ground speed in local NED coordinates (float). " alt="" coords="211,1743,365,1771"/>
+<area shape="rect" id="node119" href="$ahrs__sim_8c.html#a631ce4de5e99850af24482335a960acf" title="update_ahrs_from_sim" alt="" coords="204,359,372,387"/>
+<area shape="rect" id="node7" href="$ahrs__float__dcm_8c.html#af37e584c40cc004e4db7af1151ff659e" title="set_body_orientation\l_and_rates" alt="" coords="472,125,627,169"/>
+<area shape="rect" id="node9" href="$group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="720,106,877,134"/>
+<area shape="rect" id="node11" href="$pprz__algebra__float_8c.html#aaf793c59eaba758a63cf467c377ea532" title="rotate anglular rates by transposed rotation matrix. " alt="" coords="700,157,897,185"/>
+<area shape="rect" id="node17" href="$group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float). " alt="" coords="721,207,876,235"/>
+<area shape="rect" id="node19" href="$pprz__algebra__float_8c.html#a30fe06f92cef3aa377a52b95d641ed5a" title="Composition (multiplication) of two quaternions. " alt="" coords="721,258,876,286"/>
+<area shape="rect" id="node37" href="$pprz__algebra__float_8h.html#af58947a2590837aa85077d42d99fb112" title="float_quat_norm" alt="" coords="487,815,612,843"/>
+<area shape="rect" id="node48" href="$pprz__algebra__float_8c.html#a25ae277549c4186c3a29e6414b42f2e3" title="renorm_factor" alt="" coords="493,1018,605,1046"/>
+<area shape="rect" id="node54" href="$pprz__geodetic__double_8c.html#a33dae600eb50aea456b6cdbeec53c849" title="ecef_of_lla_d" alt="" coords="497,1119,601,1147"/>
+<area shape="rect" id="node58" href="$pprz__algebra__float_8h.html#a0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity " alt="" coords="480,1170,619,1198"/>
+<area shape="rect" id="node64" href="$pprz__algebra__int_8h.html#a1dac7ce8c769898ccda119edb55f52ef" title="Norm of a quaternion. " alt="" coords="484,1271,615,1299"/>
+<area shape="rect" id="node72" href="$pprz__algebra__float_8h.html#a132a789820c2d2610906e87120af9d18" title="a = 0 " alt="" coords="491,613,608,641"/>
+<area shape="rect" id="node74" href="$pprz__algebra__float_8c.html#af9863ba4e0718dd826af1bf1bf891aaa" title="Quaternion derivative from rotational velocity. " alt="" coords="472,663,627,691"/>
+<area shape="rect" id="node76" href="$ins__float__invariant_8c.html#a1f54c7682a956a0c095b152276bf60cf" title="Right multiplication by a quaternion. " alt="" coords="469,714,629,742"/>
+<area shape="rect" id="node82" href="$ahrs__float__dcm__algebra_8h.html#a36658a6299aa7c59f8935b3b4c303124" title="Vector_Add" alt="" coords="503,74,596,102"/>
+</map>

@@ -18,6 +18,7 @@ var searchData=
   ['imudrotek2',['ImuDrotek2',['../structImuDrotek2.html',1,'']]],
   ['imufloat',['ImuFloat',['../structImuFloat.html',1,'']]],
   ['imugl1i2c',['ImuGL1I2c',['../structImuGL1I2c.html',1,'']]],
+  ['imuhbmini',['ImuHbmini',['../structImuHbmini.html',1,'']]],
   ['imukrooz',['ImuKrooz',['../structImuKrooz.html',1,'']]],
   ['imumpu6000hmc5883',['ImuMpu6000Hmc5883',['../structImuMpu6000Hmc5883.html',1,'']]],
   ['imunavgo',['ImuNavgo',['../structImuNavgo.html',1,'']]],
