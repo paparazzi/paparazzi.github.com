@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('ins__module_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -176,42 +176,43 @@ $(document).ready(function(){initNavTree('ins__module_8h_source.html','');});
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ahrs__chimu__spi_8c.html#a9ea3d2bf0a03b37852747429c24bee61">parse_ins_msg</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ins__module_8h.html#acb1dc1d537ebd5ad8b28282c1365b884">parse_ins_buffer</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#ifndef SITL</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API ">mcu_periph/uart.h</a>&quot;</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="code" href="ins__module_8h.html#a06985cd7205d2d359dc64331d6b041a3">   77</a></span>&#160;<span class="preprocessor">#define __InsLink(dev, _x) dev##_x</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="code" href="ins__module_8h.html#af225537bb9f171850c015b0b4c9498b5">   78</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _InsLink(dev, _x)  __InsLink(dev, _x)</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="code" href="ins__module_8h.html#ab3afefe3da54fd2e9d9b14c042d4ec96">   79</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define InsLink(_x) _InsLink(INS_LINK, _x)</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="code" href="ins__module_8h.html#a89717e256a6b1749410d36d3e3691acb">   81</a></span>&#160;<span class="preprocessor">#define InsBuffer() InsLink(ChAvailable())</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="code" href="ins__module_8h.html#a24cc16346054100a43d0b5aab4bbd857">   82</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ReadInsBuffer() { while (InsLink(ChAvailable())&amp;&amp;!ins_msg_received) parse_ins_buffer(InsLink(Getch())); }</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="code" href="ins__module_8h.html#abc64615da516da14734f05936dfb3f57">   83</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define InsSend1(c) InsLink(Transmit(c))</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="code" href="ins__module_8h.html#ab54de1be72ee30247aa9295a6ff23b30">   84</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define InsUartSend1(c) InsSend1(c)</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="code" href="ins__module_8h.html#af27360f089335b4c4d7152078108d6f0">   85</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define InsSend(_dat,_len) { for (uint8_t i = 0; i&lt; (_len); i++) InsSend1(_dat[i]); };</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="code" href="ins__module_8h.html#a62fdd3a0d689ac9b41d34e8411ed2426">   86</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define InsUartSetBaudrate(_b) InsLink(SetBaudrate(_b))</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="code" href="ins__module_8h.html#a019f5fb78957def9d1b8ebf24b457d4f">   87</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define InsUartRunning InsLink(TxRunning)</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#endif </span></div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="code" href="ins__module_8h.html#adce0f39efa999513f584120bdfa1526f">   91</a></span>&#160;<span class="preprocessor">#define InsEventCheckAndHandle(handler) {     \</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">    if (InsBuffer()) {            \</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">      ReadInsBuffer();            \</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">    }                           \</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">    if (ins_msg_received) {         \</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">      parse_ins_msg();            \</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">      handler;              \</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">      ins_msg_received = FALSE;         \</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">    }                           \</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">  }</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INS_MODULE_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="link__device_8h.html" title="generic device header ">mcu_periph/link_device.h</a>&quot;</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="code" href="ins__module_8h.html#ad3aa0ef91a8d013aa932e8e1bde3d231">   76</a></span>&#160;<span class="preprocessor">#define InsLinkDevice (&amp;((INS_LINK).device))</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#ifndef SITL</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API ">mcu_periph/uart.h</a>&quot;</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API. ">mcu_periph/spi.h</a>&quot;</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="code" href="ins__module_8h.html#abc64615da516da14734f05936dfb3f57">   82</a></span>&#160;<span class="preprocessor">#define InsSend1(c) InsLinkDevice-&gt;put_byte(InsLinkDevice-&gt;periph, c)</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="code" href="ins__module_8h.html#ab54de1be72ee30247aa9295a6ff23b30">   83</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define InsUartSend1(c) InsSend1(c)</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="code" href="ins__module_8h.html#af27360f089335b4c4d7152078108d6f0">   84</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define InsSend(_dat,_len) { for (uint8_t i = 0; i&lt; (_len); i++) InsSend1(_dat[i]); };</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="code" href="ins__module_8h.html#a62fdd3a0d689ac9b41d34e8411ed2426">   85</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define InsUartSetBaudrate(_b) uart_periph_set_baudrate(INS_LINK, _b)</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif </span></div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="code" href="ins__module_8h.html#ac34266139fe4658afe3bd0992441431a">   89</a></span>&#160;<span class="preprocessor">static inline void ins_event_check_and_handle(void (* handler)(void))</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor"></span>{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keyword">struct </span><a class="code" href="link__device_8h.html#structlink__device" title="Device structure. ">link_device</a> *<a class="code" href="stm32_2usb__ser__hw_8c.html#a405086a1effa6aed12960187518465b5">dev</a> = <a class="code" href="ins__module_8h.html#ad3aa0ef91a8d013aa932e8e1bde3d231">InsLinkDevice</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">if</span> (dev-&gt;<a class="code" href="link__device_8h.html#aaa391b8deeb6ad1d9e41edf6e78e7a43" title="check if a new character is available ">char_available</a>(dev-&gt;<a class="code" href="link__device_8h.html#a2a9836f898c18202cc74ecf41bfacafa" title="pointer to parent implementation ">periph</a>)) {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">while</span> (dev-&gt;<a class="code" href="link__device_8h.html#aaa391b8deeb6ad1d9e41edf6e78e7a43" title="check if a new character is available ">char_available</a>(dev-&gt;<a class="code" href="link__device_8h.html#a2a9836f898c18202cc74ecf41bfacafa" title="pointer to parent implementation ">periph</a>) &amp;&amp; !<a class="code" href="ins__module_8h.html#af3989b340d21f6f17c56833594d188c6">ins_msg_received</a>) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <a class="code" href="ins__module_8h.html#acb1dc1d537ebd5ad8b28282c1365b884">parse_ins_buffer</a>(dev-&gt;<a class="code" href="link__device_8h.html#af221c6d0d543940c12cb304a0e4a78e9" title="get a new char ">get_byte</a>(dev-&gt;<a class="code" href="link__device_8h.html#a2a9836f898c18202cc74ecf41bfacafa" title="pointer to parent implementation ">periph</a>));</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="ins__module_8h.html#af3989b340d21f6f17c56833594d188c6">ins_msg_received</a>) {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="ahrs__chimu__spi_8c.html#a9ea3d2bf0a03b37852747429c24bee61">parse_ins_msg</a>();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    handler();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="ins__module_8h.html#af3989b340d21f6f17c56833594d188c6">ins_msg_received</a> = <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INS_MODULE_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="ins__module_8h.html">ins_module.h</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:04:41 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:02 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

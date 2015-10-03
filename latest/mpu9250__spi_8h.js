@@ -1,6 +1,25 @@
 var mpu9250__spi_8h =
 [
-    [ "Mpu9250_Spi", "structMpu9250__Spi.html", "structMpu9250__Spi" ],
+    [ "Mpu9250_Spi", "mpu9250__spi_8h.html#structMpu9250__Spi", [
+      [ "config", "mpu9250__spi_8h.html#a5dab7d8e6829b61e1b95c86b7085c9a3", null ],
+      [ "data_accel", "mpu9250__spi_8h.html#ada6281eb1b8d5cfb52d9d877894942f7", null ],
+      [ "data_available", "mpu9250__spi_8h.html#a3d14ea69f62d88d62879a9e2f8504a8a", null ],
+      [ "data_ext", "mpu9250__spi_8h.html#a4e1e74d5dd3d7d6166a9e341720d0620", null ],
+      [ "data_rates", "mpu9250__spi_8h.html#a26ce5660f70e27e9cde21cd4db667194", null ],
+      [ "rx_buf", "mpu9250__spi_8h.html#a57ba0ec6721b8de24d5781dbc4b4ba13", null ],
+      [ "slave_init_status", "mpu9250__spi_8h.html#a56e8982fbaed2ae5de3828ed1f17320f", null ],
+      [ "spi_p", "mpu9250__spi_8h.html#aacd69bb71fd7707e60ffb0d4494cdd14", null ],
+      [ "spi_trans", "mpu9250__spi_8h.html#ab18fbb08c6cdf28dc9941409cc1f8ab2", null ],
+      [ "tx_buf", "mpu9250__spi_8h.html#a611d62e1ad529b8deaddc98c788f4263", null ]
+    ] ],
+    [ "Mpu9250_Spi.data_accel", "mpu9250__spi_8h.html#unionMpu9250__Spi_8data__accel", [
+      [ "value", "mpu9250__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383", null ],
+      [ "vect", "mpu9250__spi_8h.html#a4384543978c11a2d3da5c6cfeed94998", null ]
+    ] ],
+    [ "Mpu9250_Spi.data_rates", "mpu9250__spi_8h.html#unionMpu9250__Spi_8data__rates", [
+      [ "rates", "mpu9250__spi_8h.html#a6cd8b57ad8ec40b32215dcb1c8c76af2", null ],
+      [ "value", "mpu9250__spi_8h.html#ab07053fcb6afcb4d09e8f337b615d383", null ]
+    ] ],
     [ "MPU9250_BUFFER_EXT_LEN", "mpu9250__spi_8h.html#a8dc8003465b7482470f4a0cbb09162b5", null ],
     [ "MPU9250_BUFFER_LEN", "mpu9250__spi_8h.html#abd46fc21482208fb51aa03d4ca966ab0", null ],
     [ "Mpu9250SpiSlaveInitStatus", "mpu9250__spi_8h.html#ac7a68e7d517f0e42c1e5ab423549a9ca", [

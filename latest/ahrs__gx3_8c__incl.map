@@ -1,22 +1,21 @@
 <map id="sw/airborne/subsystems/ahrs/ahrs_gx3.c" name="sw/airborne/subsystems/ahrs/ahrs_gx3.c">
-<area shape="rect" id="node3" href="$ahrs__gx3_8h.html" title="Driver for Microstrain GX3 IMU/AHRS subsystem. " alt="" coords="939,99,1101,143"/>
-<area shape="rect" id="node7" href="$imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="109,270,248,298"/>
-<area shape="rect" id="node37" href="$ahrs_8h.html" title="Attitude and Heading Reference System interface. " alt="" coords="841,193,983,221"/>
-<area shape="rect" id="node42" href="$state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="968,270,1035,298"/>
-<area shape="rect" id="node60" href="$ins_8h.html" title="Integrated Navigation System interface. " alt="" coords="1057,193,1191,221"/>
-<area shape="rect" id="node66" href="$gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="1499,270,1637,298"/>
-<area shape="rect" id="node80" href="$uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1917,355,2056,383"/>
-<area shape="rect" id="node88" href="$ahrs__aligner_8h.html" title="Interface to align the AHRS via low&#45;passed measurements at startup. " alt="" coords="661,347,824,391"/>
-<area shape="rect" id="node93" href="$led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1717,193,1771,221"/>
-<area shape="rect" id="node9" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="801,441,980,469"/>
-<area shape="rect" id="node25" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="280,441,469,469"/>
-<area shape="rect" id="node31" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="424,347,587,391"/>
-<area shape="rect" id="node13" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="432,526,587,554"/>
-<area shape="rect" id="node20" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="835,526,984,554"/>
-<area shape="rect" id="node46" href="$pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="1224,347,1373,391"/>
-<area shape="rect" id="node52" href="$pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1000,347,1149,391"/>
-<area shape="rect" id="node48" href="$pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="1200,441,1323,469"/>
-<area shape="rect" id="node70" href="$sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1563,441,1733,469"/>
-<area shape="rect" id="node72" href="$inttypes_8h.html" title="inttypes.h" alt="" coords="1928,526,2013,554"/>
-<area shape="rect" id="node84" href="$link__device_8h.html" title="generic device header " alt="" coords="1832,441,2013,469"/>
+<area shape="rect" id="node3" href="$ahrs__gx3_8h.html" title="Driver for Microstrain GX3 IMU/AHRS subsystem. " alt="" coords="544,99,707,143"/>
+<area shape="rect" id="node87" href="$ahrs_8h.html" title="Dispatcher to register actual AHRS implementations. " alt="" coords="183,107,324,135"/>
+<area shape="rect" id="node7" href="$imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="216,270,355,298"/>
+<area shape="rect" id="node37" href="$ins_8h.html" title="Integrated Navigation System interface. " alt="" coords="507,193,640,221"/>
+<area shape="rect" id="node47" href="$state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="644,270,711,298"/>
+<area shape="rect" id="node60" href="$gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="944,270,1083,298"/>
+<area shape="rect" id="node74" href="$uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1708,355,1847,383"/>
+<area shape="rect" id="node83" href="$led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1163,193,1216,221"/>
+<area shape="rect" id="node9" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="651,441,829,469"/>
+<area shape="rect" id="node25" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="269,441,459,469"/>
+<area shape="rect" id="node31" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="427,347,589,391"/>
+<area shape="rect" id="node13" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="421,526,576,554"/>
+<area shape="rect" id="node20" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="651,526,800,554"/>
+<area shape="rect" id="node40" href="$pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="939,347,1088,391"/>
+<area shape="rect" id="node42" href="$pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="915,441,1037,469"/>
+<area shape="rect" id="node52" href="$pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="765,347,915,391"/>
+<area shape="rect" id="node64" href="$sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1236,441,1407,469"/>
+<area shape="rect" id="node66" href="$inttypes_8h.html" title="inttypes.h" alt="" coords="1592,526,1677,554"/>
+<area shape="rect" id="node78" href="$link__device_8h.html" title="generic device header " alt="" coords="1949,441,2131,469"/>
 </map>

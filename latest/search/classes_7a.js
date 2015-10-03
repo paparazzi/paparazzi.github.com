@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zambonisurvey',['ZamboniSurvey',['../structZamboniSurvey.html',1,'']]]
+  ['zambonisurvey',['ZamboniSurvey',['../nav__survey__zamboni_8h.html#structZamboniSurvey',1,'']]]
 ];

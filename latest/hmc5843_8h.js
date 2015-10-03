@@ -1,6 +1,18 @@
 var hmc5843_8h =
 [
-    [ "Hmc5843", "structHmc5843.html", "structHmc5843" ],
+    [ "Hmc5843", "hmc5843_8h.html#structHmc5843", [
+      [ "data", "hmc5843_8h.html#a2be454b5d0e91f22af83286aa6949776", null ],
+      [ "data_available", "hmc5843_8h.html#aac1003c5a9ee5a5fb898a4b33d1140eb", null ],
+      [ "i2c_trans", "hmc5843_8h.html#ad8b9aedbaea8a1dd228b6e2370f31f76", null ],
+      [ "initialized", "hmc5843_8h.html#a2865aacd8f0c1dd4f38f4c40ea7eeba9", null ],
+      [ "sent_rx", "hmc5843_8h.html#a3229cbd61b9f8302951a6881ae0f09cc", null ],
+      [ "sent_tx", "hmc5843_8h.html#a3d866bd7d1517ca26973373c22a24ef8", null ],
+      [ "timeout", "hmc5843_8h.html#ada82622fad1a3e2d09d74032fc65a87d", null ]
+    ] ],
+    [ "Hmc5843.data", "hmc5843_8h.html#unionHmc5843_8data", [
+      [ "buf", "hmc5843_8h.html#a90c39d4bbc1c6163f59702490100f5d7", null ],
+      [ "value", "hmc5843_8h.html#ab07053fcb6afcb4d09e8f337b615d383", null ]
+    ] ],
     [ "HMC5843_ADDR", "hmc5843_8h.html#af5698fe0de8ea262fc27e0680c3270e2", null ],
     [ "HMC5843_REG_CFGA", "hmc5843_8h.html#aac65cd100da1008bbfe627969a2c5d31", null ],
     [ "HMC5843_REG_CFGB", "hmc5843_8h.html#ab1ebcfb757f531b54ea60d83dacdb461", null ],
@@ -15,7 +27,6 @@ var hmc5843_8h =
     [ "HMC5843_REG_IDC", "hmc5843_8h.html#a4ef101050a421d24106269ba572e8996", null ],
     [ "HMC5843_REG_MODE", "hmc5843_8h.html#a1a69d0e59acc0920717f554399c02815", null ],
     [ "HMC5843_REG_STATUS", "hmc5843_8h.html#a73cf44f9d44464c18048bf742db64859", null ],
-    [ "MagEvent", "hmc5843_8h.html#ae3e9aa2c2547ce80037579b50ed48492", null ],
     [ "hmc5843_arch_init", "hmc5843_8h.html#ac346fa452f9a5c3412581aba7e5af4e7", null ],
     [ "hmc5843_arch_reset", "hmc5843_8h.html#aea219a14b12c8fb0fe874ebde7a9a806", null ],
     [ "hmc5843_idle_task", "hmc5843_8h.html#a46613c2c46ce03746f184a11df775d6a", null ],

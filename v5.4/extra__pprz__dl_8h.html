@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.4.2_stable-3-gc351a71</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -107,6 +107,7 @@ $(document).ready(function(){initNavTree('extra__pprz__dl_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">extra_pprz_dl.h File Reference</div>  </div>
@@ -140,6 +141,12 @@ Macros</h2></td></tr>
 <tr class="memitem:af4820b3e7cf7584c83a5c8ad19f99c47"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="extra__pprz__dl_8h.html#af4820b3e7cf7584c83a5c8ad19f99c47">ExtraDatalinkEvent</a>()</td></tr>
 <tr class="separator:af4820b3e7cf7584c83a5c8ad19f99c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a1ff9047c131c4b42b901dcb71ec1317a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="extra__pprz__dl_8h.html#a1ff9047c131c4b42b901dcb71ec1317a">extra_pprz_dl_init</a> (void)</td></tr>
+<tr class="memdesc:a1ff9047c131c4b42b901dcb71ec1317a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init function.  <a href="#a1ff9047c131c4b42b901dcb71ec1317a">More...</a><br/></td></tr>
+<tr class="separator:a1ff9047c131c4b42b901dcb71ec1317a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a23d92289aeb262d1f2dfa1362e583e90"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structpprz__transport.html">pprz_transport</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="extra__pprz__dl_8h.html#a23d92289aeb262d1f2dfa1362e583e90">extra_pprz_tp</a></td></tr>
@@ -167,6 +174,40 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a1ff9047c131c4b42b901dcb71ec1317a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void extra_pprz_dl_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Init function. </p>
+
+<p>Definition at line <a class="el" href="extra__pprz__dl_8c_source.html#l00028">28</a> of file <a class="el" href="extra__pprz__dl_8c_source.html">extra_pprz_dl.c</a>.</p>
+
+<p>References <a class="el" href="extra__pprz__dl_8c_source.html#l00026">extra_pprz_tp</a>, and <a class="el" href="pprz__transport_8c_source.html#l00117">pprz_transport_init()</a>.</p>
+
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="extra__pprz__dl_8h_a1ff9047c131c4b42b901dcb71ec1317a_cgraph.png" border="0" usemap="#extra__pprz__dl_8h_a1ff9047c131c4b42b901dcb71ec1317a_cgraph" alt=""/></div>
+<map name="extra__pprz__dl_8h_a1ff9047c131c4b42b901dcb71ec1317a_cgraph" id="extra__pprz__dl_8h_a1ff9047c131c4b42b901dcb71ec1317a_cgraph">
+<area shape="rect" id="node3" href="pprz__transport_8c.html#a4a56f4299c84faa347591c6abf4b9c47" title="pprz_transport_init" alt="" coords="191,165,332,193"/><area shape="rect" id="node5" href="pprz__transport_8c.html#ab42737ae7af0f2cc5f7f033dbac8a323" title="size_of" alt="" coords="608,77,675,105"/><area shape="rect" id="node7" href="pprz__transport_8c.html#addbead6be01f32de08481ea02df7621a" title="check_available_space" alt="" coords="383,38,548,66"/><area shape="rect" id="node9" href="pprz__transport_8c.html#a0d9d5f2d0f146e105881ffceb8a10965" title="put_bytes" alt="" coords="423,139,508,167"/><area shape="rect" id="node13" href="pprz__transport_8c.html#a636d57f64090ceae59b16a9dffe1dcd5" title="put_named_byte" alt="" coords="400,190,531,218"/><area shape="rect" id="node16" href="pprz__transport_8c.html#a6d399adfb9536acf8537268815f71693" title="start_message" alt="" coords="407,89,524,117"/><area shape="rect" id="node19" href="pprz__transport_8c.html#a44aa8fcfca2c7b443f55092d78128136" title="end_message" alt="" coords="409,241,521,269"/><area shape="rect" id="node21" href="pprz__transport_8c.html#af95ee46cdf94fc33194c8fe5b708a8cd" title="overrun" alt="" coords="431,291,500,319"/><area shape="rect" id="node23" href="pprz__transport_8c.html#a6b9f21b7e197f8617a1f3e82040b8933" title="count_bytes" alt="" coords="416,342,515,370"/><area shape="rect" id="node11" href="pprz__transport_8c.html#ab4e3dc4fe41bc07e30628900610dd82a" title="put_1byte" alt="" coords="599,153,684,181"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a class="anchor" id="a23d92289aeb262d1f2dfa1362e583e90"></a>
 <div class="memitem">
@@ -178,7 +219,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="extra__pprz__dl_8c_source.html#l00030">30</a> of file <a class="el" href="extra__pprz__dl_8c_source.html">extra_pprz_dl.c</a>.</p>
+<p>Definition at line <a class="el" href="extra__pprz__dl_8c_source.html#l00026">26</a> of file <a class="el" href="extra__pprz__dl_8c_source.html">extra_pprz_dl.c</a>.</p>
+
+<p>Referenced by <a class="el" href="extra__pprz__dl_8c_source.html#l00028">extra_pprz_dl_init()</a>, and <a class="el" href="meteo__france__DAQ_8c_source.html#l00068">mf_daq_send_state()</a>.</p>
 
 </div>
 </div>
@@ -188,7 +231,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_164c7aa663179b26059278e7f36078da.html">datalink</a></li><li class="navelem"><a class="el" href="extra__pprz__dl_8h.html">extra_pprz_dl.h</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:15:33 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Jun 17 2015 02:01:37 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

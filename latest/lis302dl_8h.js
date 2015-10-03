@@ -1,6 +1,12 @@
 var lis302dl_8h =
 [
-    [ "Lis302dlConfig", "structLis302dlConfig.html", "structLis302dlConfig" ],
+    [ "Lis302dlConfig", "lis302dl_8h.html#structLis302dlConfig", [
+      [ "filt_data", "lis302dl_8h.html#a522a6b4bac0e334b30b6c689469d6345", null ],
+      [ "int_invert", "lis302dl_8h.html#a27185361199659d6b1be821120166f25", null ],
+      [ "range", "lis302dl_8h.html#a1ab5aabe3d4b190c295dafe3a71bf512", null ],
+      [ "rate", "lis302dl_8h.html#a93e37ac2c058099170f9fb09ab10388b", null ],
+      [ "spi_3_wire", "lis302dl_8h.html#a7c570f2900dcfe40f00b0e181da5c279", null ]
+    ] ],
     [ "Lis302dlConfStatus", "lis302dl_8h.html#adfa5b8dcd9381da47572aac33f99367a", [
       [ "LIS_CONF_UNINIT", "lis302dl_8h.html#adfa5b8dcd9381da47572aac33f99367aa0859e6c600d482f4e61f9ded87f97c0f", null ],
       [ "LIS_CONF_WHO_AM_I", "lis302dl_8h.html#adfa5b8dcd9381da47572aac33f99367aa5b6b44bc9d5df2a15b787ffc451a29c8", null ],

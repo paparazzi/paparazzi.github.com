@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.4"/>
-<title>Paparazzi UAS: Digital camera control (trigger using servo)</title>
+<title>Paparazzi UAS: Digital Photo Camera Triggering (using a servo)</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('module__digital_cam_servo.html','');})
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -100,12 +100,26 @@ $(document).ready(function(){initNavTree('module__digital_cam_servo.html','');})
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Digital camera control (trigger using servo) </div>  </div>
+<div class="title">Digital Photo Camera Triggering (using a servo) </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Module XML file: <code>digital_cam_servo.xml</code> </p>
-<p>No detailed description...</p>
-<h1><a class="anchor" id="configuration"></a>
+<p>This module controls triggering of an attached external digital camera via a servo channel. It can trigger photos based on GPS distance, time or circle radius in both fixedwings and rotorcraft.</p>
+<h1><a class="anchor" id="module_load_example__digital_cam_servo"></a>
+Example for airframe file</h1>
+<p>This example contains all possible configuration options, not all of them are mandatory! </p>
+<div class="fragment"><div class="line">&lt;modules&gt;</div>
+<div class="line">  &lt;load name=<span class="stringliteral">&quot;digital_cam_servo.xml&quot;</span>&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_SHOOT_ON_BUTTON_RELEASE&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_SHUTTER_SERVO&quot;</span> value=<span class="stringliteral">&quot;servo&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_ZOOM_IN_SERVO&quot;</span> value=<span class="stringliteral">&quot;servo&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_ZOOM_OUT_SERVO&quot;</span> value=<span class="stringliteral">&quot;servo&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_POWER_SERVO&quot;</span> value=<span class="stringliteral">&quot;servo&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_AUTOSHOOT_PERIOD&quot;</span> value=<span class="stringliteral">&quot;0.5&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_AUTOSHOOT_DISTANCE_INTERVAL&quot;</span> value=<span class="stringliteral">&quot;50&quot;</span> /&gt;</div>
+<div class="line">  &lt;/load&gt;</div>
+<div class="line">&lt;/modules&gt;</div>
+</div><!-- fragment --> <h1><a class="anchor" id="configuration"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
 Define Options</h2>
@@ -120,8 +134,8 @@ Define Options</h2>
  Description: optional, Servo to activate zoom out</li>
 <li><b>name:</b> <code>DC_POWER_SERVO</code> <b>value:</b> <em>servo</em> <br/>
  Description: optional, Servo to control power</li>
-<li><b>name:</b> <code>DC_AUTOSHOOT_QUARTERSEC_PERIOD</code> <b>value:</b> <em>6</em> <br/>
- Description: quarter_second</li>
+<li><b>name:</b> <code>DC_AUTOSHOOT_PERIOD</code> <b>value:</b> <em>0.5</em> <br/>
+ Description: time period for DC_AUTOSHOOT_PERIODIC in seconds</li>
 <li><b>name:</b> <code>DC_AUTOSHOOT_DISTANCE_INTERVAL</code> <b>value:</b> <em>50</em> <br/>
  Description: grid in meters</li>
 </ul>
@@ -131,14 +145,14 @@ Module functions</h1>
 Init Functions</h2>
 <p>These initialization functions are called once on startup.</p>
 <ul>
-<li><a class="el" href="servo__cam__ctrl_8h.html#abe164b6b116c57546e833433da1545d3">servo_cam_ctrl_init()</a></li>
+<li><a class="el" href="servo__cam__ctrl_8c.html#aabfb61ec228b22380dfa49f35a689da7">servo_cam_ctrl_init()</a></li>
 </ul>
 <h2><a class="anchor" id="periodic_functions"></a>
 Periodic Functions</h2>
 <p>These functions are called periodically at the specified frequency from the module periodic loop.</p>
 <ul>
-<li><a class="el" href="servo__cam__ctrl_8h.html#ab18e6fdd6b4dbc3e80eab505bb9f73ee">servo_cam_ctrl_periodic()</a><ul>
-<li>Frequency in Hz: <em>4</em> </li>
+<li><a class="el" href="servo__cam__ctrl_8c.html#a8fb28d260287fc333f4d1e110a68db27">servo_cam_ctrl_periodic()</a><ul>
+<li>Frequency in Hz: <em>10</em> </li>
 <li>Autorun: <em>TRUE</em> <br/>
  Periodic function automatically starts after init.</li>
 </ul>
@@ -165,28 +179,33 @@ Raw digital_cam_servo.xml file:</h2>
 <div class="line"></div>
 <div class="line">&lt;module name=<span class="stringliteral">&quot;digital_cam_servo&quot;</span> dir=<span class="stringliteral">&quot;digital_cam&quot;</span>&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
-<div class="line">    &lt;description&gt;Digital camera control (trigger <span class="keyword">using</span> servo)&lt;/description&gt;</div>
+<div class="line">    &lt;description&gt;</div>
+<div class="line">      Digital Photo Camera Triggering (<span class="keyword">using</span> a servo)</div>
+<div class="line"></div>
+<div class="line">      This module controls triggering of an attached external digital camera via a servo <a class="code" href="ADS8344_8c.html#a715f5cb061d11eb75981741eda4dafcd">channel</a>.</div>
+<div class="line">      It can trigger photos based on GPS distance, time or circle radius in both fixedwings and rotorcraft.</div>
+<div class="line">    &lt;/description&gt;</div>
 <div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_SHOOT_ON_BUTTON_RELEASE&quot;</span> description=<span class="stringliteral">&quot;if defined, call dc_send_shot_postion on button release instead of on push&quot;</span>/&gt;</div>
 <div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_SHUTTER_SERVO&quot;</span> value=<span class="stringliteral">&quot;servo&quot;</span> description=<span class="stringliteral">&quot;mandatory, Servo to control shutter&quot;</span>/&gt;</div>
 <div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_ZOOM_IN_SERVO&quot;</span> value=<span class="stringliteral">&quot;servo&quot;</span> description=<span class="stringliteral">&quot;optional, Servo to activate zoom in&quot;</span>/&gt;</div>
 <div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_ZOOM_OUT_SERVO&quot;</span> value=<span class="stringliteral">&quot;servo&quot;</span> description=<span class="stringliteral">&quot;optional, Servo to activate zoom out&quot;</span>/&gt;</div>
 <div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_POWER_SERVO&quot;</span> value=<span class="stringliteral">&quot;servo&quot;</span> description=<span class="stringliteral">&quot;optional, Servo to control power&quot;</span>/&gt;</div>
-<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_AUTOSHOOT_QUARTERSEC_PERIOD&quot;</span> value=<span class="stringliteral">&quot;6&quot;</span> description=<span class="stringliteral">&quot;quarter_second&quot;</span>/&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_AUTOSHOOT_PERIOD&quot;</span> value=<span class="stringliteral">&quot;0.5&quot;</span> description=<span class="stringliteral">&quot;time period for DC_AUTOSHOOT_PERIODIC in seconds&quot;</span>/&gt;</div>
 <div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_AUTOSHOOT_DISTANCE_INTERVAL&quot;</span> value=<span class="stringliteral">&quot;50&quot;</span> description=<span class="stringliteral">&quot;grid in meters&quot;</span>/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line"></div>
-<div class="line">  &lt;conflicts&gt;digital_cam,digital_cam_i2c,digital_cam_uart&lt;/conflicts&gt;</div>
+<div class="line">  &lt;conflicts&gt;digital_cam,digital_cam_i2c,digital_cam_uart,digital_cam_video&lt;/conflicts&gt;</div>
 <div class="line"></div>
-<div class="line">  &lt;<a class="code" href="stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963">header</a>&gt;</div>
+<div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;servo_cam_ctrl.h&quot;</span>/&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;dc.h&quot;</span>/&gt;</div>
-<div class="line">  &lt;/<a class="code" href="stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963">header</a>&gt;</div>
+<div class="line">  &lt;/header&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;<a class="code" href="nav__gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;servo_cam_ctrl_init()&quot;</span>/&gt;</div>
 <div class="line"></div>
-<div class="line">  &lt;periodic fun=<span class="stringliteral">&quot;servo_cam_ctrl_periodic()&quot;</span> freq=<span class="stringliteral">&quot;4&quot;</span> autorun=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
+<div class="line">  &lt;periodic fun=<span class="stringliteral">&quot;servo_cam_ctrl_periodic()&quot;</span> freq=<span class="stringliteral">&quot;10&quot;</span> autorun=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
 <div class="line"></div>
-<div class="line">  &lt;makefile target=<span class="stringliteral">&quot;ap|sim|nps|jsbsim&quot;</span>&gt;</div>
+<div class="line">  &lt;makefile target=<span class="stringliteral">&quot;ap|sim|nps&quot;</span>&gt;</div>
 <div class="line">    &lt;define name=<span class="stringliteral">&quot;DIGITAL_CAM&quot;</span>/&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;servo_cam_ctrl.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;dc.c&quot;</span>/&gt;</div>
@@ -200,7 +219,7 @@ Raw digital_cam_servo.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:18 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

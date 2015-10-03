@@ -153,10 +153,11 @@ var NAVTREEINDEX49 =
 "module__extra_dl.html":[2,21],
 "module__extra_dl.html#configuration":[2,21,0],
 "module__extra_dl.html#configure":[2,21,0,0],
-"module__extra_dl.html#event_functions":[2,21,1,0],
+"module__extra_dl.html#event_functions":[2,21,1,1],
 "module__extra_dl.html#files":[2,21,2],
 "module__extra_dl.html#functions":[2,21,1],
 "module__extra_dl.html#headers":[2,21,2,0],
+"module__extra_dl.html#init_functions":[2,21,1,0],
 "module__extra_dl.html#module_xml__extra_dl":[2,21,2,2],
 "module__extra_dl.html#sources":[2,21,2,1],
 "module__ezcurrent.html":[2,108],
@@ -248,6 +249,5 @@ var NAVTREEINDEX49 =
 "module__geo_mag.html#periodic_functions":[2,132,0,2],
 "module__geo_mag.html#sources":[2,132,1,1],
 "module__gps_i2c.html":[2,133],
-"module__gps_i2c.html#event_functions":[2,133,0,1],
-"module__gps_i2c.html#files":[2,133,1]
+"module__gps_i2c.html#event_functions":[2,133,0,1]
 };

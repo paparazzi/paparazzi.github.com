@@ -1,6 +1,8 @@
 var actuators__skiron_8h =
 [
-    [ "ActuatorsSkiron", "structActuatorsSkiron.html", "structActuatorsSkiron" ],
+    [ "ActuatorsSkiron", "actuators__skiron_8h.html#structActuatorsSkiron", [
+      [ "trans", "actuators__skiron_8h.html#a0e9925535b84d90eb046a481e8a0ece3", null ]
+    ] ],
     [ "ACTUATORS_SKIRON_I2C_ADDR", "actuators__skiron_8h.html#a52f3dcab939a267f2d83e75f7fd8fae6", null ],
     [ "ActuatorSkironSet", "actuators__skiron_8h.html#aa5058c1f195bd6c4094bfa2e68a34a94", null ],
     [ "ActuatorsSkironCommit", "actuators__skiron_8h.html#a39ad757c8335998cc6de139e59b76a8a", null ],

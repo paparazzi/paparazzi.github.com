@@ -1,11 +1,53 @@
 var imu__chimu_8h =
 [
-    [ "CHIMU_Euler", "structCHIMU__Euler.html", "structCHIMU__Euler" ],
-    [ "CHIMU_Vector", "structCHIMU__Vector.html", "structCHIMU__Vector" ],
-    [ "CHIMU_Quaternion", "structCHIMU__Quaternion.html", "structCHIMU__Quaternion" ],
-    [ "CHIMU_attitude_data", "structCHIMU__attitude__data.html", "structCHIMU__attitude__data" ],
-    [ "CHIMU_sensor_data", "structCHIMU__sensor__data.html", "structCHIMU__sensor__data" ],
-    [ "CHIMU_PARSER_DATA", "structCHIMU__PARSER__DATA.html", "structCHIMU__PARSER__DATA" ],
+    [ "CHIMU_Euler", "imu__chimu_8h.html#structCHIMU__Euler", [
+      [ "phi", "imu__chimu_8h.html#a011bae956c99e8c3d5ffe6b3054093f4", null ],
+      [ "psi", "imu__chimu_8h.html#a775da36ecdad57539dc0f3f359ee315d", null ],
+      [ "theta", "imu__chimu_8h.html#a72ae9ef555144b63843e354d2e7a9cda", null ]
+    ] ],
+    [ "CHIMU_Vector", "imu__chimu_8h.html#structCHIMU__Vector", [
+      [ "x", "imu__chimu_8h.html#a52e80849b8ab097fee0f45fe7bafb1a4", null ],
+      [ "y", "imu__chimu_8h.html#a847058eec28683badad6242c32f1e6a7", null ],
+      [ "z", "imu__chimu_8h.html#a07b123ab9c6f47d0268b036e1e800355", null ]
+    ] ],
+    [ "CHIMU_Quaternion", "imu__chimu_8h.html#structCHIMU__Quaternion", [
+      [ "s", "imu__chimu_8h.html#afe98e94e37bd5df5eaf53ee27feab96e", null ],
+      [ "v", "imu__chimu_8h.html#acc3e038070011c4d86e8c51674fdc117", null ]
+    ] ],
+    [ "CHIMU_attitude_data", "imu__chimu_8h.html#structCHIMU__attitude__data", [
+      [ "euler", "imu__chimu_8h.html#ad0641613169f58385b1020cb9a417c78", null ],
+      [ "q", "imu__chimu_8h.html#a33ed9c32c88ed20e755d09a94bda5e08", null ]
+    ] ],
+    [ "CHIMU_sensor_data", "imu__chimu_8h.html#structCHIMU__sensor__data", [
+      [ "acc", "imu__chimu_8h.html#a1acae8bf88c074ec79798e4384ba75e7", null ],
+      [ "cputemp", "imu__chimu_8h.html#a5690daa586c0c9551527d1ae24068a70", null ],
+      [ "mag", "imu__chimu_8h.html#a701c95b3a4b737c5861e86b6300b7cde", null ],
+      [ "rate", "imu__chimu_8h.html#a0a62dec0f8bc2b7633ba0699fac00510", null ],
+      [ "spare1", "imu__chimu_8h.html#a2edb0a07bba97c473e518f19eefb7949", null ]
+    ] ],
+    [ "CHIMU_PARSER_DATA", "imu__chimu_8h.html#structCHIMU__PARSER__DATA", [
+      [ "gCalStatus", "imu__chimu_8h.html#aef84e707b8e8fbf399dbdbc3fdd4e903", null ],
+      [ "gCHIMU_BIT", "imu__chimu_8h.html#ae4341b0de3991b9ed967e637f1ccd2a8", null ],
+      [ "gCHIMU_SW_Exclaim", "imu__chimu_8h.html#af0e910c2b81bc5141dd9a8222ea50b51", null ],
+      [ "gCHIMU_SW_Major", "imu__chimu_8h.html#abfd8cf30a688145d169e30556a5bc5ea", null ],
+      [ "gCHIMU_SW_Minor", "imu__chimu_8h.html#a8395ef76ceb18c21a35be60b0c29a196", null ],
+      [ "gCHIMU_SW_SerialNumber", "imu__chimu_8h.html#af97745483775ecdd33ba5611397840ad", null ],
+      [ "gConfigInfo", "imu__chimu_8h.html#ac254179d39d936403552bbb88625fc03", null ],
+      [ "m_attitude", "imu__chimu_8h.html#a13f981baccf5efff5a84165af3e853da", null ],
+      [ "m_attrates", "imu__chimu_8h.html#a45ea797c080d2caaba920bca40661f3d", null ],
+      [ "m_Checksum", "imu__chimu_8h.html#a16117144980855bff670f5b42958bd1b", null ],
+      [ "m_DeviceID", "imu__chimu_8h.html#a92f3c547f23a8232079a90b179476e06", null ],
+      [ "m_FullMessage", "imu__chimu_8h.html#a378979aaa8b40d23822d346d3d2ba956", null ],
+      [ "m_Index", "imu__chimu_8h.html#ad231d33b8e3ac8f3f33deb853d49a9e8", null ],
+      [ "m_MsgID", "imu__chimu_8h.html#a14982b7c3b220a15d0211b720a22f9e5", null ],
+      [ "m_MsgLen", "imu__chimu_8h.html#a43d43d17193b761d1d28f038a647f0b1", null ],
+      [ "m_Payload", "imu__chimu_8h.html#abd53b5258d053217663c41f08791bc81", null ],
+      [ "m_PayloadIndex", "imu__chimu_8h.html#abec14f4952533c2d84894a6090a9bd20", null ],
+      [ "m_ReceivedChecksum", "imu__chimu_8h.html#a7edc1ad97b86deb4fca098c1379c666f", null ],
+      [ "m_sensor", "imu__chimu_8h.html#a64304b3efe76f0981112416b26c3bff3", null ],
+      [ "m_State", "imu__chimu_8h.html#a92e079e82b11acf6ed572433f7b8ee2e", null ],
+      [ "m_TempDeviceID", "imu__chimu_8h.html#ab223b55dd7827418c857d740df7a4107", null ]
+    ] ],
     [ "CHIMU_BROADCAST", "imu__chimu_8h.html#aa622d4ac568cbc8ddad01a16b7eb1004", null ],
     [ "CHIMU_Msg_0_Ping", "imu__chimu_8h.html#a540bbc5a40973634a607d66075662134", null ],
     [ "CHIMU_Msg_10_Res", "imu__chimu_8h.html#acbcd14134a7f8d69c70047caf2e59a05", null ],

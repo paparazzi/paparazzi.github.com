@@ -1,31 +1,29 @@
 <map id="handle_periodic_tasks_ap" name="handle_periodic_tasks_ap">
-<area shape="rect" id="node3" href="$main__ap_8c.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="264,131,371,159"/>
-<area shape="rect" id="node19" href="$apogee_2baro__board_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00" title="baro_periodic" alt="" coords="264,401,371,429"/>
-<area shape="rect" id="node21" href="$main__ap_8c.html#a7eac6acc6dec1056989fbbc5d65b85b9" title="monitor stuff run at 1Hz " alt="" coords="264,451,371,479"/>
-<area shape="rect" id="node27" href="$main__ap_8c.html#a79f823520ea0823e20084686978281e6" title="Compute desired_course. " alt="" coords="256,502,379,530"/>
-<area shape="rect" id="node45" href="$main__ap_8c.html#a35e24bbf955d315ca24de207ead69ce2" title="Send a series of initialisation messages followed by a stream of periodic ones. " alt="" coords="260,615,375,643"/>
-<area shape="rect" id="node49" href="$main__ap_8c.html#aaae462f08bad040640b5d7d9dac4e5d3" title="Run at PERIODIC_FREQUENCY (60Hz if not defined) " alt="" coords="264,755,371,783"/>
-<area shape="rect" id="node59" href="$sys__time_8h.html#a2fbb0aec3597ef35c23aeb7d376d1666" title="Check if timer has elapsed. " alt="" coords="240,806,395,850"/>
-<area shape="rect" id="node5" href="$ahrs__infrared_8c.html#a8428916e937864198ba37b1ea356aaac" title="ahrs_update_infrared" alt="" coords="480,5,637,33"/>
-<area shape="rect" id="node11" href="$stabilization__adaptive_8c.html#a86f0d47644538be1345aab19c7dc3de4" title="h_ctl_attitude_loop" alt="" coords="488,55,629,83"/>
-<area shape="rect" id="node13" href="$link__mcu__can_8h.html#ad2f41351eb7b54410360a1e9f1f2407a" title="link_mcu_send" alt="" coords="501,106,616,134"/>
-<area shape="rect" id="node15" href="$energy__ctrl_8c.html#a38f0bbceda8812281fc650c2c1aac6c8" title="Auto&#45;throttle inner loop. " alt="" coords="496,157,621,185"/>
-<area shape="rect" id="node17" href="$energy__ctrl_8c.html#a7fefa3c115f6c0f7453db6c2edd2dbbb" title="Computes slewed throttle from throttle setpoint called at 20Hz. " alt="" coords="489,207,628,235"/>
-<area shape="rect" id="node7" href="$group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float). " alt="" coords="724,5,921,33"/>
-<area shape="rect" id="node9" href="$group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float). " alt="" coords="971,5,1133,33"/>
-<area shape="rect" id="node23" href="$group__state__velocity.html#ga29dc407c432a84bed993054af670cf4a" title="Get norm of horizontal ground speed (float). " alt="" coords="444,258,673,286"/>
-<area shape="rect" id="node25" href="$group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title="stateCalcHorizontalSpeed\lNorm_f" alt="" coords="729,246,916,290"/>
-<area shape="rect" id="node29" href="$fixedwing_2autopilot_8c.html#a4c54f26fedcf128f909c7cc5dc071353" title="Send mode over telemetry. " alt="" coords="479,309,639,337"/>
-<area shape="rect" id="node33" href="$common__nav_8c.html#a41fefa6b96afeb9a5d9f8bc41b7b8c2e" title="common_nav_periodic\l_task_4Hz" alt="" coords="476,359,641,403"/>
-<area shape="rect" id="node35" href="$stabilization__adaptive_8c.html#a02ae04f0f1bbe7588572e87e3dadb381" title="h_ctl_course_loop" alt="" coords="491,426,627,454"/>
-<area shape="rect" id="node37" href="$nav_8c.html#a069e6b8f68b2e117cbbe03f29e30a2e3" title="Home mode navigation (circle around HOME) " alt="" coords="515,477,603,505"/>
-<area shape="rect" id="node39" href="$nav_8c.html#ad40d34bcd8520f64bb073fae4a08878e" title="Navigation main: call to the code generated from the XML flight plan. " alt="" coords="491,527,627,555"/>
-<area shape="rect" id="node41" href="$nav_8c.html#ab746572e63956a2ad40674328a85b029" title="Failsafe navigation without position estimation. " alt="" coords="495,578,623,606"/>
-<area shape="rect" id="node43" href="$energy__ctrl_8c.html#ab78a678ff1021823256d747800db3140" title="outer loop " alt="" coords="489,629,628,657"/>
-<area shape="rect" id="node31" href="$fixedwing_2autopilot_8c.html#afa3e0f7f34f17d74b01b42e37aed933d" title="send_mode" alt="" coords="775,313,871,341"/>
-<area shape="rect" id="node47" href="$fixedwing_2autopilot_8c.html#a974326e4c446abb45f2c4ce43666412f" title="send_autopilot_version" alt="" coords="475,679,643,707"/>
-<area shape="rect" id="node51" href="$ahrs__chimu__spi_8c.html#a4e5064cff25b95f0631d5184d779ee43" title="Propagation. " alt="" coords="497,730,620,758"/>
-<area shape="rect" id="node53" href="$gps_8c.html#af6a16adfe8c9a84b13f49b4ceb681b30" title="Periodic GPS check. " alt="" coords="485,781,632,809"/>
-<area shape="rect" id="node55" href="$imu__apogee_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="optional. " alt="" coords="508,831,609,859"/>
-<area shape="rect" id="node57" href="$ins__ardrone2_8c.html#acb548b510075b086cc7cc5e2d80b3a71" title="INS periodic call. " alt="" coords="511,882,607,910"/>
+<area shape="rect" id="node3" href="$main__ap_8c.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="264,106,371,134"/>
+<area shape="rect" id="node13" href="$apogee_2baro__board_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00" title="baro_periodic" alt="" coords="264,350,371,378"/>
+<area shape="rect" id="node15" href="$main__ap_8c.html#a7eac6acc6dec1056989fbbc5d65b85b9" title="monitor stuff run at 1Hz " alt="" coords="264,401,371,429"/>
+<area shape="rect" id="node21" href="$main__ap_8c.html#a79f823520ea0823e20084686978281e6" title="Compute desired_course. " alt="" coords="256,451,379,479"/>
+<area shape="rect" id="node37" href="$main__ap_8c.html#a35e24bbf955d315ca24de207ead69ce2" title="Send a series of initialisation messages followed by a stream of periodic ones. " alt="" coords="260,565,375,593"/>
+<area shape="rect" id="node41" href="$main__ap_8c.html#aaae462f08bad040640b5d7d9dac4e5d3" title="Run at PERIODIC_FREQUENCY (60Hz if not defined) " alt="" coords="264,679,371,707"/>
+<area shape="rect" id="node55" href="$sys__time_8h.html#a2fbb0aec3597ef35c23aeb7d376d1666" title="Check if timer has elapsed. " alt="" coords="240,730,395,774"/>
+<area shape="rect" id="node5" href="$stabilization__adaptive_8c.html#a86f0d47644538be1345aab19c7dc3de4" title="h_ctl_attitude_loop" alt="" coords="488,5,629,33"/>
+<area shape="rect" id="node7" href="$link__mcu__can_8h.html#ad2f41351eb7b54410360a1e9f1f2407a" title="link_mcu_send" alt="" coords="501,55,616,83"/>
+<area shape="rect" id="node9" href="$energy__ctrl_8c.html#a38f0bbceda8812281fc650c2c1aac6c8" title="Auto&#45;throttle inner loop. " alt="" coords="496,106,621,134"/>
+<area shape="rect" id="node11" href="$energy__ctrl_8c.html#a7fefa3c115f6c0f7453db6c2edd2dbbb" title="Computes slewed throttle from throttle setpoint called at 20Hz. " alt="" coords="489,157,628,185"/>
+<area shape="rect" id="node17" href="$group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float). " alt="" coords="444,207,673,235"/>
+<area shape="rect" id="node19" href="$group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title="stateCalcHorizontalSpeed\lNorm_f" alt="" coords="729,199,916,243"/>
+<area shape="rect" id="node23" href="$fixedwing_2autopilot_8c.html#a4c54f26fedcf128f909c7cc5dc071353" title="Send mode over telemetry. " alt="" coords="479,258,639,286"/>
+<area shape="rect" id="node25" href="$common__nav_8c.html#a41fefa6b96afeb9a5d9f8bc41b7b8c2e" title="common_nav_periodic\l_task_4Hz" alt="" coords="476,309,641,353"/>
+<area shape="rect" id="node27" href="$stabilization__adaptive_8c.html#a02ae04f0f1bbe7588572e87e3dadb381" title="h_ctl_course_loop" alt="" coords="491,375,627,403"/>
+<area shape="rect" id="node29" href="$nav_8c.html#a069e6b8f68b2e117cbbe03f29e30a2e3" title="Home mode navigation (circle around HOME) " alt="" coords="515,426,603,454"/>
+<area shape="rect" id="node31" href="$nav_8c.html#ad40d34bcd8520f64bb073fae4a08878e" title="Navigation main: call to the code generated from the XML flight plan. " alt="" coords="491,477,627,505"/>
+<area shape="rect" id="node33" href="$nav_8c.html#ab746572e63956a2ad40674328a85b029" title="Failsafe navigation without position estimation. " alt="" coords="495,527,623,555"/>
+<area shape="rect" id="node35" href="$energy__ctrl_8c.html#ab78a678ff1021823256d747800db3140" title="outer loop " alt="" coords="489,578,628,606"/>
+<area shape="rect" id="node39" href="$rotorcraft_2autopilot_8c.html#a974326e4c446abb45f2c4ce43666412f" title="send_autopilot_version" alt="" coords="475,629,643,657"/>
+<area shape="rect" id="node43" href="$gps_8c.html#af6a16adfe8c9a84b13f49b4ceb681b30" title="Periodic GPS check. " alt="" coords="485,679,632,707"/>
+<area shape="rect" id="node45" href="$imu__apogee_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="optional. " alt="" coords="508,730,609,758"/>
+<area shape="rect" id="node47" href="$ahrs__sim_8c.html#a631ce4de5e99850af24482335a960acf" title="update_ahrs_from_sim" alt="" coords="475,781,643,809"/>
+<area shape="rect" id="node49" href="$group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float). " alt="" coords="724,755,921,783"/>
+<area shape="rect" id="node53" href="$group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="745,806,900,834"/>
+<area shape="rect" id="node51" href="$group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float). " alt="" coords="971,755,1133,783"/>
 </map>

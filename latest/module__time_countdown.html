@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('module__time_countdown.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -105,7 +105,15 @@ $(document).ready(function(){initNavTree('module__time_countdown.html','');});
 <div class="contents">
 <div class="textblock"><p>Module XML file: <code>time_countdown.xml</code> </p>
 <p>Set an initial countdown value in seconds (re-settable via settings/GCS) and countdown <em>time_until_end</em> variable to zero. E.g. allows to check how much time is left before the end of the competition.</p>
-<h1><a class="anchor" id="configuration"></a>
+<h1><a class="anchor" id="module_load_example__time_countdown"></a>
+Example for airframe file</h1>
+<p>This example contains all possible configuration options, not all of them are mandatory! </p>
+<div class="fragment"><div class="line">&lt;modules&gt;</div>
+<div class="line">  &lt;load name=<span class="stringliteral">&quot;time_countdown.xml&quot;</span>&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;TIME_COUNTDOWN_START_VALUE&quot;</span> <a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a>=<span class="stringliteral">&quot;10000&quot;</span> /&gt;</div>
+<div class="line">  &lt;/load&gt;</div>
+<div class="line">&lt;/modules&gt;</div>
+</div><!-- fragment --> <h1><a class="anchor" id="configuration"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
 Define Options</h2>
@@ -155,7 +163,7 @@ Raw time_countdown.xml file:</h2>
 <div class="line">    &lt;description&gt;</div>
 <div class="line">      Count down time.</div>
 <div class="line">      Set an initial countdown <a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a> in seconds (re-settable via settings/GCS) and countdown @a <a class="code" href="time__countdown_8c.html#a9b5d40ba50b85dbd23358ffbe613ce6c">time_until_end</a> variable to zero.</div>
-<div class="line">      <a class="code" href="pprz__geodetic__utm_8h.html#a07484107e6d9fdf38b53edf631d6511d">E</a>.g. allows to check how much time is left before the end of the competition.</div>
+<div class="line">      <a class="code" href="group__math__geodetic__utm.html#ga07484107e6d9fdf38b53edf631d6511d">E</a>.g. allows to check how much time is left before the end of the competition.</div>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line">    &lt;define name=&quot;<a class="code" href="time__countdown_8c.html#a8067dd23dd37d0173e84e8b6474047be" title="initial countdown value in seconds ">TIME_COUNTDOWN_START_VALUE</a>&quot; <a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a>=&quot;10000&quot; description=&quot;initial countdown <a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a> in seconds&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
@@ -166,9 +174,9 @@ Raw time_countdown.xml file:</h2>
 <div class="line">      &lt;/dl_settings&gt;</div>
 <div class="line">    &lt;/dl_settings&gt;</div>
 <div class="line">  &lt;/settings&gt;</div>
-<div class="line">  &lt;<a class="code" href="stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963">header</a>&gt;</div>
+<div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;time_countdown.h&quot;/&gt;</div>
-<div class="line">  &lt;/<a class="code" href="stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963">header</a>&gt;</div>
+<div class="line">  &lt;/header&gt;</div>
 <div class="line">  &lt;<a class="code" href="nav__gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=&quot;<a class="code" href="time__countdown_8c.html#a3445395cd2c45aa2830d1b3c774e6e27">time_countdown_init</a>()&quot;/&gt;</div>
 <div class="line">  &lt;periodic fun=&quot;<a class="code" href="time__countdown_8c.html#a002c209afa416c1cd7aa99ae7c210410">time_countdown_periodic_1hz</a>()&quot; freq=&quot;1&quot;/&gt;</div>
 <div class="line">  &lt;makefile&gt;</div>
@@ -181,7 +189,7 @@ Raw time_countdown.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:17 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:38 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

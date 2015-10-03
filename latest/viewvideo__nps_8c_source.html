@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('viewvideo__nps_8c_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -130,28 +130,29 @@ $(document).ready(function(){initNavTree('viewvideo__nps_8c_source.html','');});
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * Boston, MA 02111-1307, USA.</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">// Own header</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="viewvideo_8h.html" title="Get live images from a RTP/UDP stream and save pictures on internal memory. ">viewvideo.h</a>&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="viewvideo__nps_8c.html#a5c26ce11a8156ba95b645aee85d29cf1">   28</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="viewvideo_8c.html#a5c26ce11a8156ba95b645aee85d29cf1">viewvideo_shot</a> = 0;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">// Own header</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="viewvideo_8h.html" title="Get live images from a RTP/UDP stream and save pictures on internal memory. ">viewvideo.h</a>&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="viewvideo__nps_8c.html#aae04e279a08c49926c803348845bd366">   30</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="viewvideo_8c.html#aae04e279a08c49926c803348845bd366">viewvideo_run</a>(<span class="keywordtype">void</span>) {}</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="viewvideo__nps_8c.html#a2e997d697b4958da4156565605b92575">   31</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="viewvideo_8c.html#a2e997d697b4958da4156565605b92575">viewvideo_start</a>(<span class="keywordtype">void</span>) {}</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="viewvideo__nps_8c.html#ac014d6fd1912b84754b41aaa143d221d">   32</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="viewvideo_8c.html#ac014d6fd1912b84754b41aaa143d221d">viewvideo_stop</a>(<span class="keywordtype">void</span>) {}</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="viewvideo__nps_8c.html#ab063d03a1514cc5571e1183c15e037c0">   34</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="viewvideo_8c.html#ab063d03a1514cc5571e1183c15e037c0">viewvideo_save_shot</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">// Initialize the viewvideo structure with the defaults</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="viewvideo__nps_8c.html#a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74">   31</a></span>&#160;<span class="keyword">struct </span><a class="code" href="viewvideo_8h.html#structviewvideo__t">viewvideo_t</a> <a class="code" href="viewvideo_8c.html#a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74">viewvideo</a> = {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  .<a class="code" href="viewvideo_8h.html#a37e0abb58c310a618cd3a994103797f3" title="When the device is streaming. ">is_streaming</a> = <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  .downsize_factor = 1,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  .quality_factor = 99,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">// All dummy functions</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="viewvideo__nps_8c.html#a8479777ac5ff98cdf58349e741f04005">   38</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="viewvideo_8c.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. ">viewvideo_init</a>(<span class="keywordtype">void</span>) {}</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="viewvideo__nps_8c.html#ada4107fbfd3ea05a890398870e1d3767">   39</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="viewvideo__nps_8c.html#ada4107fbfd3ea05a890398870e1d3767">viewvideo_periodic</a>(<span class="keywordtype">void</span>) {}</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="viewvideo__nps_8c.html#a2e997d697b4958da4156565605b92575">   40</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="viewvideo__nps_8c.html#a2e997d697b4958da4156565605b92575">viewvideo_start</a>(<span class="keywordtype">void</span>) {}</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="viewvideo__nps_8c.html#ac014d6fd1912b84754b41aaa143d221d">   41</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="viewvideo__nps_8c.html#ac014d6fd1912b84754b41aaa143d221d">viewvideo_stop</a>(<span class="keywordtype">void</span>) {}</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="viewvideo__nps_8c.html#a8a1eb6f4b58da09728ba2a0978adcb48">   42</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="viewvideo__nps_8c.html#a8a1eb6f4b58da09728ba2a0978adcb48">viewvideo_take_shot</a>(bool_t take __attribute__((unused))) {}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="viewvideo__nps_8c.html">viewvideo_nps.c</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:04:40 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:01 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

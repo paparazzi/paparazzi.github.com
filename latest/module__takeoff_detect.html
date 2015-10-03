@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('module__takeoff_detect.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -105,7 +105,12 @@ $(document).ready(function(){initNavTree('module__takeoff_detect.html','');});
 <div class="contents">
 <div class="textblock"><p>Module XML file: <code>takeoff_detect.xml</code> </p>
 <p>When loaded, the pitch angle of plane is monitored, and will trigger the launch variable if the angle goes over a specified value (nose up) for 2 seconds. The launch variable can be reset to FALSE by pointing the nose to the ground. The module disables itself within a few seconds (4s) after detecting the launch. It can be re-actiaved by hand from the GCS.</p>
-<h1><a class="anchor" id="configuration"></a>
+<h1><a class="anchor" id="module_load_example__takeoff_detect"></a>
+Example for airframe file</h1>
+<div class="fragment"><div class="line">&lt;modules&gt;</div>
+<div class="line">  &lt;load name=<span class="stringliteral">&quot;takeoff_detect.xml&quot;</span>/&gt;</div>
+<div class="line">&lt;/modules&gt;</div>
+</div><!-- fragment --> <h1><a class="anchor" id="configuration"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="af_section"></a>
 Airframe file section</h2>
@@ -169,7 +174,7 @@ Raw takeoff_detect.xml file:</h2>
 <div class="line">      <span class="keywordflow">if</span> the angle goes over a specified <a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a> (nose <a class="code" href="light__solar_8c.html#a865f598ce218c5496c018323caf1fb4d">up</a>) <span class="keywordflow">for</span> 2 seconds.</div>
 <div class="line">      The <a class="code" href="sim__ap_8c.html#af32f81f02a3187c12c08e11caf354abd">launch</a> variable can be <a class="code" href="lpc21_2mcu__arch_8c.html#a3aea9deb2a0bfea9ff05a898f4822e31">reset</a> to <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a> by pointing the nose to the ground.</div>
 <div class="line">      The module disables itself within a few seconds (4s)  after detecting the <a class="code" href="sim__ap_8c.html#af32f81f02a3187c12c08e11caf354abd">launch</a>.</div>
-<div class="line">      It can be re-actiaved by hand <a class="code" href="at__com_8c.html#ae17b1fbd0d2858329af3554bff58d9be">from</a> the GCS.</div>
+<div class="line">      It can be re-actiaved by hand from the GCS.</div>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line">    &lt;section name=&quot;TO_DETECT&quot;&gt;</div>
 <div class="line">      &lt;define name=&quot;<a class="code" href="takeoff__detect_8c.html#a6be322b70d00096913c40010f67aabdb" title="Default pitch angle to trigger launch. ">TAKEOFF_DETECT_LAUNCH_PITCH</a>&quot; value=&quot;30.&quot; <a class="code" href="nav_8c.html#a04b783250b1673126fa3f4729cb2078e">unit</a>=&quot;deg&quot; description=&quot;Picth angle for takeoff detection (set &#39;<a class="code" href="sim__ap_8c.html#af32f81f02a3187c12c08e11caf354abd">launch</a>&#39; to <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>)&quot;/&gt;</div>
@@ -178,9 +183,9 @@ Raw takeoff_detect.xml file:</h2>
 <div class="line">      &lt;define name=&quot;<a class="code" href="takeoff__detect_8c.html#a8a0f2276696d051aa8726ac85bd476c5" title="Disable timer in seconds. ">TAKEOFF_DETECT_DISABLE_TIMER</a>&quot; value=&quot;4.&quot; description=&quot;Timer for module de-activation (default 4s after the <a class="code" href="sim__ap_8c.html#af32f81f02a3187c12c08e11caf354abd">launch</a> detection)&quot;/&gt;</div>
 <div class="line">    &lt;/section&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
-<div class="line">  &lt;<a class="code" href="stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963">header</a>&gt;</div>
+<div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;<a class="code" href="takeoff__detect_8c.html#ac0c4cb682a809a7d7bb2e1c15e3c79c0">takeoff_detect</a>.h&quot;/&gt;</div>
-<div class="line">  &lt;/<a class="code" href="stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963">header</a>&gt;</div>
+<div class="line">  &lt;/header&gt;</div>
 <div class="line">  &lt;<a class="code" href="nav__gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=&quot;<a class="code" href="takeoff__detect_8c.html#ae4ecd72a6a1aa21c820285960fab79c4" title="Init function. ">takeoff_detect_init</a>()&quot;/&gt;</div>
 <div class="line">  &lt;periodic fun=&quot;<a class="code" href="takeoff__detect_8c.html#a06e2c8e9dfe36613c4773f5c01303b0a" title="Periodic call. ">takeoff_detect_periodic</a>()&quot; freq=&quot;20&quot; autorun=&quot;<a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>&quot; start=&quot;<a class="code" href="takeoff__detect_8c.html#ac84acb06ac4c5fe795c9673523a1efbf" title="Start function called once before periodic. ">takeoff_detect_start</a>()&quot;/&gt;</div>
 <div class="line">  &lt;makefile&gt;</div>
@@ -194,7 +199,7 @@ Raw takeoff_detect.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:18 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

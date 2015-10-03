@@ -1,7 +1,5 @@
 var gps__ubx__ucenter_8c =
 [
-    [ "__UBX_GPS_BAUD", "gps__ubx__ucenter_8c.html#a3ed13ac61b5d7de52e85747628081c35", null ],
-    [ "_UBX_GPS_BAUD", "gps__ubx__ucenter_8c.html#a527549e0a11836468a3abf81c3221fef", null ],
     [ "DEBUG_PRINT", "gps__ubx__ucenter_8c.html#a88edd2aa4feabff4af21a997d5d8aa23", null ],
     [ "GPS_PORT_DDC", "gps__ubx__ucenter_8c.html#a54a4fdda8f83295995219af42ed0b715", null ],
     [ "GPS_PORT_RESERVED", "gps__ubx__ucenter_8c.html#a64e4c9f31016a5dafb0c6dcf66eacc18", null ],

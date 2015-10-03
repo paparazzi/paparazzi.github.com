@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('protocol_8c_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -124,98 +124,73 @@ $(document).ready(function(){initNavTree('protocol_8c_source.html','');});
 <div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="protocol_8c.html#a6d9ad6e4a25bbf5ef73a8dcefd5cc687">   15</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GOT_PAYLOAD 4</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="protocol_8c.html#aab6cb4f3e687be8d98c60f8bb14872b8">   16</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GOT_CRC1    5</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="protocol_8h.html#acaa83ca3fc8a7ba7ce56d83ec5abea59">   18</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structmora__transport.html">mora_transport</a> <a class="code" href="protocol_8c.html#acaa83ca3fc8a7ba7ce56d83ec5abea59">mora_protocol</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="protocol_8h.html#acaa83ca3fc8a7ba7ce56d83ec5abea59">   18</a></span>&#160;<span class="keyword">struct </span><a class="code" href="protocol_8h.html#structmora__transport">mora_transport</a> <a class="code" href="protocol_8c.html#acaa83ca3fc8a7ba7ce56d83ec5abea59">mora_protocol</a>;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="protocol_8h.html#a5f7cfbc8fd7f8f182731620acfa63eee">   20</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="protocol_8c.html#a5f7cfbc8fd7f8f182731620acfa63eee">parse_mora</a>(<span class="keyword">struct</span> <a class="code" href="structmora__transport.html">mora_transport</a> *t, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> c)</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="protocol_8h.html#a5f7cfbc8fd7f8f182731620acfa63eee">   20</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="protocol_8c.html#a5f7cfbc8fd7f8f182731620acfa63eee">parse_mora</a>(<span class="keyword">struct</span> <a class="code" href="protocol_8h.html#structmora__transport">mora_transport</a> *t, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> c)</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//printf(&quot;%02X %d %d\n&quot;,c, t-&gt;status, t-&gt;error);</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordflow">switch</span> (t-&gt;<a class="code" href="structmora__transport.html#afae876a13a6380155c01d2e0877f02c9">status</a>) {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordflow">switch</span> (t-&gt;<a class="code" href="protocol_8h.html#afae876a13a6380155c01d2e0877f02c9">status</a>) {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="protocol_8c.html#a7668dedbc74a47bde384b2b911379073" title="Receiving pprz messages. ">UNINIT</a>:</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <span class="keywordflow">if</span> (c == <a class="code" href="protocol_8h.html#aacd744a917e61146ec8b7175b4761683">STX</a>) {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        t-&gt;<a class="code" href="structmora__transport.html#afae876a13a6380155c01d2e0877f02c9">status</a>++;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        t-&gt;<a class="code" href="protocol_8h.html#afae876a13a6380155c01d2e0877f02c9">status</a>++;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      }</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="protocol_8c.html#a6bac978d2a28741610d8b5b5bd88799c">GOT_STX</a>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <span class="keywordflow">if</span> (t-&gt;<a class="code" href="structmora__transport.html#a682b888a196bd44be3841bcba3b720ff">msg_received</a>) {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        t-&gt;<a class="code" href="structmora__transport.html#a81f123cb705bbacaf68140206da2b5de">error</a>++;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">goto</span> <a class="code" href="structmora__transport.html#a81f123cb705bbacaf68140206da2b5de">error</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <span class="keywordflow">if</span> (t-&gt;<a class="code" href="protocol_8h.html#a682b888a196bd44be3841bcba3b720ff">msg_received</a>) {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        t-&gt;<a class="code" href="protocol_8h.html#a81f123cb705bbacaf68140206da2b5de">error</a>++;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">goto</span> <a class="code" href="protocol_8h.html#a81f123cb705bbacaf68140206da2b5de">error</a>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      t-&gt;<a class="code" href="structmora__transport.html#a063f9c58d0a8a864c8da74fe98b251c8">payload_len</a> = c - 5; <span class="comment">/* Counting STX, LENGTH and CRC1 and CRC2 */</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      t-&gt;<a class="code" href="structmora__transport.html#a86f0d37ee3c2f12754ebffaa84da31fd">ck_a</a> = t-&gt;<a class="code" href="structmora__transport.html#a6165b5dfcbf4fc27cd54a8e28c31c875">ck_b</a> = c;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      t-&gt;<a class="code" href="structmora__transport.html#afae876a13a6380155c01d2e0877f02c9">status</a>++;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      t-&gt;<a class="code" href="structmora__transport.html#ae97b79ca48e80b9206b9188606d89455">payload_idx</a> = 0;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      t-&gt;<a class="code" href="protocol_8h.html#a063f9c58d0a8a864c8da74fe98b251c8">payload_len</a> = c - 5; <span class="comment">/* Counting STX, LENGTH and CRC1 and CRC2 */</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      t-&gt;<a class="code" href="protocol_8h.html#a86f0d37ee3c2f12754ebffaa84da31fd">ck_a</a> = t-&gt;<a class="code" href="protocol_8h.html#a6165b5dfcbf4fc27cd54a8e28c31c875">ck_b</a> = c;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      t-&gt;<a class="code" href="protocol_8h.html#afae876a13a6380155c01d2e0877f02c9">status</a>++;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      t-&gt;<a class="code" href="protocol_8h.html#ae97b79ca48e80b9206b9188606d89455">payload_idx</a> = 0;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="protocol_8c.html#a74b9c2790d0a3e81489a3da279ccc98e">GOT_LENGTH</a>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      t-&gt;<a class="code" href="structmora__transport.html#a750a3276f0cf15f2bf74ef59b8969f94">msg_id</a> = c;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      t-&gt;<a class="code" href="structmora__transport.html#a86f0d37ee3c2f12754ebffaa84da31fd">ck_a</a> += c; t-&gt;<a class="code" href="structmora__transport.html#a6165b5dfcbf4fc27cd54a8e28c31c875">ck_b</a> += t-&gt;<a class="code" href="structmora__transport.html#a86f0d37ee3c2f12754ebffaa84da31fd">ck_a</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      t-&gt;<a class="code" href="structmora__transport.html#afae876a13a6380155c01d2e0877f02c9">status</a>++;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <span class="keywordflow">if</span> (t-&gt;<a class="code" href="structmora__transport.html#a063f9c58d0a8a864c8da74fe98b251c8">payload_len</a> == 0) {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        t-&gt;<a class="code" href="structmora__transport.html#afae876a13a6380155c01d2e0877f02c9">status</a>++;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      t-&gt;<a class="code" href="protocol_8h.html#a750a3276f0cf15f2bf74ef59b8969f94">msg_id</a> = c;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      t-&gt;<a class="code" href="protocol_8h.html#a86f0d37ee3c2f12754ebffaa84da31fd">ck_a</a> += c; t-&gt;<a class="code" href="protocol_8h.html#a6165b5dfcbf4fc27cd54a8e28c31c875">ck_b</a> += t-&gt;<a class="code" href="protocol_8h.html#a86f0d37ee3c2f12754ebffaa84da31fd">ck_a</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      t-&gt;<a class="code" href="protocol_8h.html#afae876a13a6380155c01d2e0877f02c9">status</a>++;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <span class="keywordflow">if</span> (t-&gt;<a class="code" href="protocol_8h.html#a063f9c58d0a8a864c8da74fe98b251c8">payload_len</a> == 0) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        t-&gt;<a class="code" href="protocol_8h.html#afae876a13a6380155c01d2e0877f02c9">status</a>++;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="protocol_8c.html#a51a3c6adeba7f478fad8a77a0e5f63d1">GOT_MSGID</a>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      t-&gt;<a class="code" href="structmora__transport.html#a5669d3aeab1d3b6bd105d4c481e57b06">payload</a>[t-&gt;<a class="code" href="structmora__transport.html#ae97b79ca48e80b9206b9188606d89455">payload_idx</a>] = c;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      t-&gt;<a class="code" href="structmora__transport.html#a86f0d37ee3c2f12754ebffaa84da31fd">ck_a</a> += c; t-&gt;<a class="code" href="structmora__transport.html#a6165b5dfcbf4fc27cd54a8e28c31c875">ck_b</a> += t-&gt;<a class="code" href="structmora__transport.html#a86f0d37ee3c2f12754ebffaa84da31fd">ck_a</a>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      t-&gt;<a class="code" href="structmora__transport.html#ae97b79ca48e80b9206b9188606d89455">payload_idx</a>++;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keywordflow">if</span> (t-&gt;<a class="code" href="structmora__transport.html#ae97b79ca48e80b9206b9188606d89455">payload_idx</a> == t-&gt;<a class="code" href="structmora__transport.html#a063f9c58d0a8a864c8da74fe98b251c8">payload_len</a>) {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        t-&gt;<a class="code" href="structmora__transport.html#afae876a13a6380155c01d2e0877f02c9">status</a>++;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      t-&gt;<a class="code" href="protocol_8h.html#a5669d3aeab1d3b6bd105d4c481e57b06">payload</a>[t-&gt;<a class="code" href="protocol_8h.html#ae97b79ca48e80b9206b9188606d89455">payload_idx</a>] = c;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      t-&gt;<a class="code" href="protocol_8h.html#a86f0d37ee3c2f12754ebffaa84da31fd">ck_a</a> += c; t-&gt;<a class="code" href="protocol_8h.html#a6165b5dfcbf4fc27cd54a8e28c31c875">ck_b</a> += t-&gt;<a class="code" href="protocol_8h.html#a86f0d37ee3c2f12754ebffaa84da31fd">ck_a</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      t-&gt;<a class="code" href="protocol_8h.html#ae97b79ca48e80b9206b9188606d89455">payload_idx</a>++;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keywordflow">if</span> (t-&gt;<a class="code" href="protocol_8h.html#ae97b79ca48e80b9206b9188606d89455">payload_idx</a> == t-&gt;<a class="code" href="protocol_8h.html#a063f9c58d0a8a864c8da74fe98b251c8">payload_len</a>) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        t-&gt;<a class="code" href="protocol_8h.html#afae876a13a6380155c01d2e0877f02c9">status</a>++;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      }</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="protocol_8c.html#a6d9ad6e4a25bbf5ef73a8dcefd5cc687">GOT_PAYLOAD</a>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keywordflow">if</span> (c != t-&gt;<a class="code" href="structmora__transport.html#a86f0d37ee3c2f12754ebffaa84da31fd">ck_a</a>) {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">goto</span> <a class="code" href="structmora__transport.html#a81f123cb705bbacaf68140206da2b5de">error</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keywordflow">if</span> (c != t-&gt;<a class="code" href="protocol_8h.html#a86f0d37ee3c2f12754ebffaa84da31fd">ck_a</a>) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">goto</span> <a class="code" href="protocol_8h.html#a81f123cb705bbacaf68140206da2b5de">error</a>;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      t-&gt;<a class="code" href="structmora__transport.html#afae876a13a6380155c01d2e0877f02c9">status</a>++;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      t-&gt;<a class="code" href="protocol_8h.html#afae876a13a6380155c01d2e0877f02c9">status</a>++;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="protocol_8c.html#aab6cb4f3e687be8d98c60f8bb14872b8">GOT_CRC1</a>:</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keywordflow">if</span> (c != t-&gt;<a class="code" href="structmora__transport.html#a6165b5dfcbf4fc27cd54a8e28c31c875">ck_b</a>) {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">goto</span> <a class="code" href="structmora__transport.html#a81f123cb705bbacaf68140206da2b5de">error</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keywordflow">if</span> (c != t-&gt;<a class="code" href="protocol_8h.html#a6165b5dfcbf4fc27cd54a8e28c31c875">ck_b</a>) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">goto</span> <a class="code" href="protocol_8h.html#a81f123cb705bbacaf68140206da2b5de">error</a>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      t-&gt;<a class="code" href="structmora__transport.html#a682b888a196bd44be3841bcba3b720ff">msg_received</a> = <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      t-&gt;<a class="code" href="protocol_8h.html#a682b888a196bd44be3841bcba3b720ff">msg_received</a> = <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="keywordflow">goto</span> restart;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="keywordflow">goto</span> <a class="code" href="structmora__transport.html#a81f123cb705bbacaf68140206da2b5de">error</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="keywordflow">goto</span> <a class="code" href="protocol_8h.html#a81f123cb705bbacaf68140206da2b5de">error</a>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<a class="code" href="structmora__transport.html#a81f123cb705bbacaf68140206da2b5de">error</a>:</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  t-&gt;<a class="code" href="structmora__transport.html#a81f123cb705bbacaf68140206da2b5de">error</a>++;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<a class="code" href="protocol_8h.html#a81f123cb705bbacaf68140206da2b5de">error</a>:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  t-&gt;<a class="code" href="protocol_8h.html#a81f123cb705bbacaf68140206da2b5de">error</a>++;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;restart:</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  t-&gt;<a class="code" href="structmora__transport.html#afae876a13a6380155c01d2e0877f02c9">status</a> = <a class="code" href="protocol_8c.html#a7668dedbc74a47bde384b2b911379073" title="Receiving pprz messages. ">UNINIT</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  t-&gt;<a class="code" href="protocol_8h.html#afae876a13a6380155c01d2e0877f02c9">status</a> = <a class="code" href="protocol_8c.html#a7668dedbc74a47bde384b2b911379073" title="Receiving pprz messages. ">UNINIT</a>;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">static inline void pprz_parse_payload(struct pprz_transport * t) {</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">  uint8_t i;</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">  for(i = 0; i &lt; t-&gt;trans.payload_len; i++)</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">    dl_buffer[i] = t-&gt;trans.payload[i];</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">  dl_msg_available = TRUE;</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">}</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">#define PprzBuffer(_dev) TransportLink(_dev,ChAvailable())</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">#define ReadPprzBuffer(_dev,_trans) { while (TransportLink(_dev,ChAvailable())&amp;&amp;!(_trans.trans.msg_received)) parse_pprz(&amp;(_trans),TransportLink(_dev,Getch())); }</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">#define PprzCheckAndParse(_dev,_trans) {  \</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">  if (PprzBuffer(_dev)) {                 \</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">    ReadPprzBuffer(_dev,_trans);          \</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">    if (_trans.trans.msg_received) {      \</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">      pprz_parse_payload(&amp;(_trans));      \</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">      _trans.trans.msg_received = FALSE;  \</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">    }                                     \</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">  }                                       \</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">}</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_9cd42eb44f1e76fa7c8c7cd9c9a53863.html">digital_cam</a></li><li class="navelem"><a class="el" href="dir_8d52ef0129d8a0d69e51e902d77cc0c9.html">catia</a></li><li class="navelem"><a class="el" href="protocol_8c.html">protocol.c</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:04:41 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:01 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

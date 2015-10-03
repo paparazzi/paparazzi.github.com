@@ -1,36 +1,39 @@
 <map id="sw/airborne/firmwares/rotorcraft/autopilot.h" name="sw/airborne/firmwares/rotorcraft/autopilot.h">
-<area shape="rect" id="node3" href="$jsbsim__gps_8c.html" title="sw/airborne/arch/sim\l/jsbsim_gps.c" alt="" coords="5,107,160,151"/>
-<area shape="rect" id="node5" href="$sim__ap_8c.html" title="sw/airborne/arch/sim\l/sim_ap.c" alt="" coords="184,107,339,151"/>
-<area shape="rect" id="node7" href="$actuators__ardrone2__raw_8c.html" title="Actuator driver for ardrone2&#45;raw version. " alt="" coords="363,107,608,151"/>
-<area shape="rect" id="node9" href="$boards_2bebop_2actuators_8c.html" title="Actuator driver for the bebop. " alt="" coords="632,107,773,151"/>
-<area shape="rect" id="node11" href="$rotorcraft_2autopilot_8c.html" title="Autopilot. " alt="" coords="797,107,957,151"/>
-<area shape="rect" id="node13" href="$rotorcraft_2main_8c.html" title="Rotorcraft main loop. " alt="" coords="981,107,1141,151"/>
-<area shape="rect" id="node15" href="$navigation_8c.html" title="Rotorcraft navigation functions. " alt="" coords="1165,107,1331,151"/>
-<area shape="rect" id="node17" href="$cam_8c.html" title="Pan/Tilt camera library. " alt="" coords="1355,107,1509,151"/>
-<area shape="rect" id="node19" href="$cam__roll_8c.html" title="sw/airborne/modules\l/cam_control/cam_roll.c" alt="" coords="1533,107,1707,151"/>
-<area shape="rect" id="node21" href="$point_8c.html" title="Determines camera pan and tilt angles. " alt="" coords="1731,107,1885,151"/>
-<area shape="rect" id="node23" href="$geo__mag_8c.html" title="Calculation of the Geomagnetic field vector from current GPS fix. " alt="" coords="1909,107,2069,151"/>
-<area shape="rect" id="node25" href="$gsm_8c.html" title="sw/airborne/modules\l/gsm/gsm.c" alt="" coords="2093,107,2248,151"/>
-<area shape="rect" id="node27" href="$hott__eam_8h.html" title="Graupner HOTT electric air module description. " alt="" coords="2272,107,2427,151"/>
-<area shape="rect" id="node29" href="$hott__gam_8h.html" title="sw/airborne/modules\l/hott/hott_gam.h" alt="" coords="2451,107,2605,151"/>
-<area shape="rect" id="node31" href="$led__safety__status_8c.html" title="sw/airborne/modules\l/led_safety_status/led\l_safety_status.c" alt="" coords="2629,99,2789,159"/>
-<area shape="rect" id="node33" href="$max7456_8c.html" title="Maxim MAX7456 single&#45;channel monochrome on&#45;screen display driver. " alt="" coords="2813,107,2973,151"/>
-<area shape="rect" id="node35" href="$meteo__france__DAQ_8c.html" title="Communication module with the Data Acquisition board from Meteo France. " alt="" coords="2997,107,3205,151"/>
-<area shape="rect" id="node37" href="$mission__rotorcraft__nav_8c.html" title="mission navigation for rotorcrafts " alt="" coords="3229,107,3464,151"/>
-<area shape="rect" id="node39" href="$formation_8c.html" title="library for formation flight " alt="" coords="3488,107,3643,151"/>
-<area shape="rect" id="node41" href="$potential_8c.html" title="sw/airborne/modules\l/multi/potential.c" alt="" coords="3667,107,3821,151"/>
-<area shape="rect" id="node43" href="$nav__bungee__takeoff_8c.html" title="from OSAM advanced navigation routines " alt="" coords="3845,107,4037,151"/>
-<area shape="rect" id="node45" href="$nav__flower_8c.html" title="from OSAM advanced navigation routines " alt="" coords="4061,107,4216,151"/>
-<area shape="rect" id="node47" href="$nav__line__osam_8c.html" title="Flight line from OSAM advanced navigation routines. " alt="" coords="4240,107,4397,151"/>
-<area shape="rect" id="node49" href="$nav__spiral_8c.html" title="Fixedwing navigation in a spiral/helix. " alt="" coords="4421,107,4576,151"/>
-<area shape="rect" id="node51" href="$nav__survey__poly__osam_8c.html" title="sw/airborne/modules\l/nav/nav_survey_poly\l_osam.c" alt="" coords="4600,99,4757,159"/>
-<area shape="rect" id="node53" href="$nav__survey__polygon_8c.html" title="Advanced polygon survey for fixedwings from Uni Stuttgart. " alt="" coords="4781,107,4973,151"/>
-<area shape="rect" id="node55" href="$nav__survey__zamboni_8c.html" title="Zamboni pattern survey for fixedwings. " alt="" coords="4997,107,5195,151"/>
-<area shape="rect" id="node57" href="$nav__vertical__raster_8c.html" title="from OSAM advanced navigation routines " alt="" coords="5219,107,5403,151"/>
-<area shape="rect" id="node59" href="$vi_8h.html" title="sw/airborne/modules\l/vehicle_interface/vi.h" alt="" coords="5427,107,5584,151"/>
-<area shape="rect" id="node67" href="$rc__settings_8c.html" title="sw/airborne/rc_settings.c" alt="" coords="5608,115,5787,143"/>
-<area shape="rect" id="node69" href="$actuators__esc32_8c.html" title="Actuators driver for AutoQuad ESC32 motor controllers. " alt="" coords="5811,107,6019,151"/>
-<area shape="rect" id="node61" href="$vi_8c.html" title="sw/airborne/modules\l/vehicle_interface/vi.c" alt="" coords="5336,217,5493,261"/>
-<area shape="rect" id="node63" href="$vi__datalink_8h.html" title="sw/airborne/modules\l/vehicle_interface/vi\l_datalink.h" alt="" coords="5517,209,5672,269"/>
-<area shape="rect" id="node65" href="$vi__datalink_8c.html" title="sw/airborne/modules\l/vehicle_interface/vi\l_datalink.c" alt="" coords="5517,318,5672,378"/>
+<area shape="rect" id="node3" href="$sim__ap_8c.html" title="sw/airborne/arch/sim\l/sim_ap.c" alt="" coords="5,107,160,151"/>
+<area shape="rect" id="node5" href="$boards_2ardrone_2actuators_8c.html" title="Actuator driver for ardrone2 version. " alt="" coords="184,107,336,151"/>
+<area shape="rect" id="node7" href="$boards_2bebop_2actuators_8c.html" title="Actuator driver for the bebop. " alt="" coords="360,107,501,151"/>
+<area shape="rect" id="node9" href="$rotorcraft_2autopilot_8c.html" title="Autopilot. " alt="" coords="525,107,685,151"/>
+<area shape="rect" id="node11" href="$guidance__flip_8c.html" title="Open Loop guidance for making a flip. " alt="" coords="709,99,869,159"/>
+<area shape="rect" id="node13" href="$guidance__indi_8c.html" title="sw/airborne/firmwares\l/rotorcraft/guidance\l/guidance_indi.c" alt="" coords="893,99,1053,159"/>
+<area shape="rect" id="node15" href="$rotorcraft_2main_8c.html" title="Rotorcraft main loop. " alt="" coords="1077,107,1237,151"/>
+<area shape="rect" id="node17" href="$navigation_8c.html" title="Rotorcraft navigation functions. " alt="" coords="1261,107,1427,151"/>
+<area shape="rect" id="node19" href="$cam_8c.html" title="Pan/Tilt camera library. " alt="" coords="1451,107,1605,151"/>
+<area shape="rect" id="node21" href="$cam__roll_8c.html" title="sw/airborne/modules\l/cam_control/cam_roll.c" alt="" coords="1629,107,1803,151"/>
+<area shape="rect" id="node23" href="$point_8c.html" title="Determines camera pan and tilt angles. " alt="" coords="1827,107,1981,151"/>
+<area shape="rect" id="node25" href="$max7456_8c.html" title="Maxim MAX7456 single&#45;channel monochrome on&#45;screen display driver. " alt="" coords="2005,107,2160,151"/>
+<area shape="rect" id="node27" href="$geo__mag_8c.html" title="Calculation of the Geomagnetic field vector from current location. " alt="" coords="2184,107,2344,151"/>
+<area shape="rect" id="node29" href="$gsm_8c.html" title="sw/airborne/modules\l/gsm/gsm.c" alt="" coords="2368,107,2523,151"/>
+<area shape="rect" id="node31" href="$guidance__opticflow__hover_8c.html" title="Optical&#45;flow based control for Linux based systems. " alt="" coords="2547,99,2744,159"/>
+<area shape="rect" id="node33" href="$hott__eam_8h.html" title="Graupner HOTT electric air module description. " alt="" coords="2768,107,2923,151"/>
+<area shape="rect" id="node35" href="$hott__gam_8h.html" title="sw/airborne/modules\l/hott/hott_gam.h" alt="" coords="2947,107,3101,151"/>
+<area shape="rect" id="node37" href="$led__safety__status_8c.html" title="Simple module to blink LEDs when battery voltage drops below a certain level, radio control is lost o..." alt="" coords="3125,107,3304,151"/>
+<area shape="rect" id="node39" href="$meteo__france__DAQ_8c.html" title="Communication module with the Data Acquisition board from Meteo France. " alt="" coords="3328,107,3536,151"/>
+<area shape="rect" id="node41" href="$mission__rotorcraft__nav_8c.html" title="mission navigation for rotorcrafts " alt="" coords="3560,107,3795,151"/>
+<area shape="rect" id="node43" href="$formation_8c.html" title="library for formation flight " alt="" coords="3819,107,3973,151"/>
+<area shape="rect" id="node45" href="$potential_8c.html" title="sw/airborne/modules\l/multi/potential.c" alt="" coords="3997,107,4152,151"/>
+<area shape="rect" id="node47" href="$nav__flower_8c.html" title="from OSAM advanced navigation routines " alt="" coords="4176,107,4331,151"/>
+<area shape="rect" id="node49" href="$nav__line__osam_8c.html" title="Flight line from OSAM advanced navigation routines. " alt="" coords="4355,107,4512,151"/>
+<area shape="rect" id="node51" href="$nav__spiral_8c.html" title="Fixedwing navigation in a spiral/helix. " alt="" coords="4536,107,4691,151"/>
+<area shape="rect" id="node53" href="$nav__survey__poly__osam_8c.html" title="sw/airborne/modules\l/nav/nav_survey_poly\l_osam.c" alt="" coords="4715,99,4872,159"/>
+<area shape="rect" id="node55" href="$nav__survey__poly__rotorcraft_8c.html" title="sw/airborne/modules\l/nav/nav_survey_poly\l_rotorcraft.c" alt="" coords="4896,99,5053,159"/>
+<area shape="rect" id="node57" href="$nav__survey__polygon_8c.html" title="Advanced polygon survey for fixedwings from Uni Stuttgart. " alt="" coords="5077,107,5269,151"/>
+<area shape="rect" id="node59" href="$nav__survey__zamboni_8c.html" title="Zamboni pattern survey for fixedwings. " alt="" coords="5293,107,5491,151"/>
+<area shape="rect" id="node61" href="$nav__vertical__raster_8c.html" title="from OSAM advanced navigation routines " alt="" coords="5515,107,5699,151"/>
+<area shape="rect" id="node63" href="$vi_8h.html" title="sw/airborne/modules\l/vehicle_interface/vi.h" alt="" coords="5723,107,5880,151"/>
+<area shape="rect" id="node71" href="$rc__settings_8c.html" title="sw/airborne/rc_settings.c" alt="" coords="5904,115,6083,143"/>
+<area shape="rect" id="node73" href="$actuators__esc32_8c.html" title="Actuators driver for AutoQuad ESC32 motor controllers. " alt="" coords="6107,107,6315,151"/>
+<area shape="rect" id="node75" href="$electrical_8c.html" title="Implemnetation for electrical status: supply voltage, current, battery status, etc. " alt="" coords="6339,107,6515,151"/>
+<area shape="rect" id="node65" href="$vi_8c.html" title="sw/airborne/modules\l/vehicle_interface/vi.c" alt="" coords="5632,217,5789,261"/>
+<area shape="rect" id="node67" href="$vi__datalink_8h.html" title="sw/airborne/modules\l/vehicle_interface/vi\l_datalink.h" alt="" coords="5813,209,5968,269"/>
+<area shape="rect" id="node69" href="$vi__datalink_8c.html" title="sw/airborne/modules\l/vehicle_interface/vi\l_datalink.c" alt="" coords="5813,318,5968,378"/>
 </map>

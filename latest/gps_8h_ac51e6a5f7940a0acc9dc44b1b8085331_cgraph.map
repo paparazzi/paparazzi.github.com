@@ -1,13 +1,26 @@
 <map id="gps_impl_init" name="gps_impl_init">
-<area shape="rect" id="node3" href="$gps__furuno_8c.html#ad2d3dbbf0495a9206d80e4a8c15d4fe3" title="nmea_parse_prop_init" alt="" coords="164,5,327,33"/>
-<area shape="rect" id="node5" href="$gps__piksi_8c.html#a35299174913de888ccde7bf8db290969" title="sbp_dops_callback" alt="" coords="175,55,316,83"/>
-<area shape="rect" id="node7" href="$gps__piksi_8c.html#a6299b7bc7b8c1fdbc5ca5c14a930590e" title="sbp_gps_time_callback" alt="" coords="161,106,329,134"/>
-<area shape="rect" id="node9" href="$gps__piksi_8c.html#adc6ac5fcbd5eb39085654a667030c5b7" title="sbp_pos_ecef_callback" alt="" coords="163,157,328,185"/>
-<area shape="rect" id="node11" href="$gps__piksi_8c.html#adb806b033795825c75feb7e7b4f09bdd" title="sbp_pos_llh_callback" alt="" coords="168,207,323,235"/>
-<area shape="rect" id="node19" href="$gps__piksi_8c.html#afa5c5059358b48ae5151d1ec6e8e8d04" title="sbp_vel_ecef_callback" alt="" coords="164,258,327,286"/>
-<area shape="rect" id="node21" href="$gps__piksi_8c.html#a0d069b34ba061322d213039fcd99a669" title="sbp_vel_ned_callback" alt="" coords="167,309,324,337"/>
-<area shape="rect" id="node13" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="379,207,477,235"/>
-<area shape="rect" id="node15" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="525,178,672,206"/>
-<area shape="rect" id="node17" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="531,229,667,273"/>
-<area shape="rect" id="node23" href="$pprz__algebra__int_8c.html#a4f101a6e0a22ac1b90f36fe8bf97d702" title="int32_sqrt" alt="" coords="385,309,471,337"/>
+<area shape="rect" id="node3" href="$gps__piksi_8c.html#a1085ff467a2b3d7ceaac86f713d75520" title="gps_piksi_write" alt="" coords="187,5,304,33"/>
+<area shape="rect" id="node7" href="$group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f" title="ltp_def_from_ecef_i" alt="" coords="172,55,319,83"/>
+<area shape="rect" id="node17" href="$gps__furuno_8c.html#afbe97e63de2729cff1ef3ba45148f48f" title="Configure furuno GPS. " alt="" coords="183,106,308,134"/>
+<area shape="rect" id="node19" href="$gps__furuno_8c.html#ad2d3dbbf0495a9206d80e4a8c15d4fe3" title="nmea_parse_prop_init" alt="" coords="164,157,327,185"/>
+<area shape="rect" id="node21" href="$gps__piksi_8c.html#a35299174913de888ccde7bf8db290969" title="sbp_dops_callback" alt="" coords="175,207,316,235"/>
+<area shape="rect" id="node23" href="$gps__piksi_8c.html#a6299b7bc7b8c1fdbc5ca5c14a930590e" title="sbp_gps_time_callback" alt="" coords="161,258,329,286"/>
+<area shape="rect" id="node25" href="$gps__piksi_8c.html#adc6ac5fcbd5eb39085654a667030c5b7" title="sbp_pos_ecef_callback" alt="" coords="163,359,328,387"/>
+<area shape="rect" id="node33" href="$gps__piksi_8c.html#adb806b033795825c75feb7e7b4f09bdd" title="sbp_pos_llh_callback" alt="" coords="168,309,323,337"/>
+<area shape="rect" id="node41" href="$gps__piksi_8c.html#a1a86da16d9d399272bfaab18b7faeafe" title="sbp_tracking_state\l_callback" alt="" coords="175,410,316,454"/>
+<area shape="rect" id="node43" href="$gps__piksi_8c.html#a2ad2ea41453e3b5bff367fbdeb0bb827" title="sbp_tracking_state\l_dep_a_callback" alt="" coords="175,477,316,521"/>
+<area shape="rect" id="node45" href="$gps__piksi_8c.html#afa5c5059358b48ae5151d1ec6e8e8d04" title="sbp_vel_ecef_callback" alt="" coords="164,543,327,571"/>
+<area shape="rect" id="node48" href="$gps__piksi_8c.html#a0d069b34ba061322d213039fcd99a669" title="sbp_vel_ned_callback" alt="" coords="167,594,324,622"/>
+<area shape="rect" id="node5" href="$linux_2mcu__periph_2uart__arch_8c.html#ac52690ed0854ab6c1b5ef3ba0ccc8040" title="uart_put_byte" alt="" coords="408,5,517,33"/>
+<area shape="rect" id="node9" href="$group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="lla_of_ecef_i" alt="" coords="413,55,512,83"/>
+<area shape="rect" id="node15" href="$group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9" title="ltp_of_ecef_rmat_from\l_lla_i" alt="" coords="380,106,545,150"/>
+<area shape="rect" id="node11" href="$pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="619,81,717,109"/>
+<area shape="rect" id="node13" href="$group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title="lla_of_ecef_d" alt="" coords="616,30,720,58"/>
+<area shape="rect" id="node27" href="$gps__piksi_8c.html#ab873aa70bd8af4c37c8dbc07d13ea1de" title="gps_piksi_publish" alt="" coords="397,481,528,509"/>
+<area shape="rect" id="node29" href="$linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="596,481,740,509"/>
+<area shape="rect" id="node31" href="$sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="791,481,927,509"/>
+<area shape="rect" id="node35" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="413,309,512,337"/>
+<area shape="rect" id="node37" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="595,338,741,366"/>
+<area shape="rect" id="node39" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="600,271,736,315"/>
+<area shape="rect" id="node50" href="$group__math__algebra__int.html#ga4f101a6e0a22ac1b90f36fe8bf97d702" title="int32_sqrt" alt="" coords="420,594,505,622"/>
 </map>

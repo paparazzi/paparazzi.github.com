@@ -1,5 +1,7 @@
 var NAVTREEINDEX81 =
 {
+"structItg3200Config.html#ad6e742aab5b3d2ba2e6cbbaea90e0024":[9,0,181,2],
+"structItg3200Config.html#af4aa72971a22a8e5ec63cb893e617bab":[9,0,181,0],
 "structJPEG__ENCODER__STRUCTURE.html":[9,0,183],
 "structJPEG__ENCODER__STRUCTURE.html#a0489c8551bd1a6e19374a0c66975ba1a":[9,0,183,5],
 "structJPEG__ENCODER__STRUCTURE.html#a07eb6147bddabfe4295077af80d7bcd1":[9,0,183,11],
@@ -247,7 +249,5 @@ var NAVTREEINDEX81 =
 "structMpu9250__Spi.html":[9,0,223],
 "structMpu9250__Spi.html#a3d14ea69f62d88d62879a9e2f8504a8a":[9,0,223,2],
 "structMpu9250__Spi.html#a4c1a6df0acb9350beac81fed63a992f4":[9,0,223,12],
-"structMpu9250__Spi.html#a4e1e74d5dd3d7d6166a9e341720d0620":[9,0,223,3],
-"structMpu9250__Spi.html#a56e8982fbaed2ae5de3828ed1f17320f":[9,0,223,7],
-"structMpu9250__Spi.html#a57ba0ec6721b8de24d5781dbc4b4ba13":[9,0,223,6]
+"structMpu9250__Spi.html#a4e1e74d5dd3d7d6166a9e341720d0620":[9,0,223,3]
 };

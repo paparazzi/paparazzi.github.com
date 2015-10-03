@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('module__meteo_stick.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,9 +110,23 @@ $(document).ready(function(){initNavTree('module__meteo_stick.html','');});
 <li>Temperature in ADC (ADS1220)</li>
 <li>Humidity in ticks (period of the input signal)</li>
 </ul>
-<p>When using SEND_MS flag, scaled pressure, temperature and humidity data are sent over telemetry with the PAYLOAD_FLOAT message (array of float). If scale factors and offset are not specified, raw values are sent (scale=1.0, offset=0).</p>
-<p>When using LOG_MS flag, raw pressure, temperature and humidity data are stored with raw gps data (position, speed, time, status). Field names and units are in the first line of the log file.</p>
-<h1><a class="anchor" id="configuration"></a>
+<p>Calibration data are stored in an EEPROM. When a sensor is calibrated with several reference temperature, a linear interpolation is used.</p>
+<p>When using SEND_MS flag, scaled pressure, temperature and humidity data are sent over telemetry with the PAYLOAD_FLOAT message (array of float).</p>
+<p>When using LOG_MS flag, raw and calibrated pressure, temperature and humidity data are stored with raw gps data (position, speed, time, status). Field names and units are in the first line of the log file.</p>
+<h1><a class="anchor" id="module_load_example__meteo_stick"></a>
+Example for airframe file</h1>
+<p>This example contains all possible configuration options, not all of them are mandatory! </p>
+<div class="fragment"><div class="line">&lt;modules&gt;</div>
+<div class="line">  &lt;load name=<span class="stringliteral">&quot;meteo_stick.xml&quot;</span>&gt;</div>
+<div class="line">    &lt;configure name=<span class="stringliteral">&quot;MS_SPI_DEV&quot;</span> value=<span class="stringliteral">&quot;SPIX&quot;</span> /&gt;</div>
+<div class="line">    &lt;configure name=<span class="stringliteral">&quot;MS_PRESSURE_SLAVE_IDX&quot;</span> value=<span class="stringliteral">&quot;X&quot;</span> /&gt;</div>
+<div class="line">    &lt;configure name=<span class="stringliteral">&quot;MS_DIFF_PRESSURE_SLAVE_IDX&quot;</span> value=<span class="stringliteral">&quot;X&quot;</span> /&gt;</div>
+<div class="line">    &lt;configure name=<span class="stringliteral">&quot;MS_TEMPERATURE_SLAVE_IDX&quot;</span> value=<span class="stringliteral">&quot;X&quot;</span> /&gt;</div>
+<div class="line">    &lt;configure name=<span class="stringliteral">&quot;MS_HUMIDITY_PWM_INPUT&quot;</span> value=<span class="stringliteral">&quot;PWM_INPUTX&quot;</span> /&gt;</div>
+<div class="line">    &lt;configure name=<span class="stringliteral">&quot;MS_EEPROM_SLAVE_IDX&quot;</span> value=<span class="stringliteral">&quot;X&quot;</span> /&gt;</div>
+<div class="line">  &lt;/load&gt;</div>
+<div class="line">&lt;/modules&gt;</div>
+</div><!-- fragment --> <h1><a class="anchor" id="configuration"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="configure"></a>
 Configure Options</h2>
@@ -127,31 +141,35 @@ Configure Options</h2>
  Description: Index of the SPI slave for temperature</li>
 <li><b>name:</b> <code>MS_HUMIDITY_PWM_INPUT</code> <b>value:</b> <em>PWM_INPUTX</em> <br/>
  Description: Select PWM input channel for humidity sensor</li>
+<li><b>name:</b> <code>MS_EEPROM_SLAVE_IDX</code> <b>value:</b> <em>X</em> <br/>
+ Description: Index of the SPI slave for calibration EEPROM</li>
 </ul>
 <h2><a class="anchor" id="af_section"></a>
 Airframe file section</h2>
 <ul>
 <li><b>section</b> name: <code>METEO_STICK</code> <ul>
-<li><b>name</b> <code>MS_PRESSURE_OFFSET</code> <b>value:</b> <em>0</em> <br/>
- Description: Offset in ADC of the absolute pressure sensor</li>
-<li><b>name</b> <code>MS_PRESSURE_SCALE</code> <b>value:</b> <em>1.</em> <br/>
- Description: Scale factor of the absolute pressure sensor</li>
-<li><b>name</b> <code>MS_TEMPERATURE_OFFSET</code> <b>value:</b> <em>0</em> <br/>
- Description: Offset in ADC of the temperature sensor</li>
-<li><b>name</b> <code>MS_TEMPERATURE_SCALE</code> <b>value:</b> <em>1.</em> <br/>
- Description: Scale factor of the temperature sensor</li>
-<li><b>name</b> <code>MS_HUMIDITY_OFFSET</code> <b>value:</b> <em>0</em> <br/>
- Description: Offset in micro seconds of the humidity sensor</li>
-<li><b>name</b> <code>MS_HUMIDITY_SCALE</code> <b>value:</b> <em>1.</em> <br/>
- Description: Scale factor of the pressure sensor</li>
-<li><b>name</b> <code>MS_DIFF_PRESSURE_OFFSET</code> <b>value:</b> <em>0</em> <br/>
- Description: Offset in ADC of the differential pressure sensor</li>
-<li><b>name</b> <code>MS_DIFF_PRESSURE_SCALE</code> <b>value:</b> <em>1.</em> <br/>
- Description: Scale factor of the differential pressure sensor</li>
 <li><b>name</b> <code>LOG_MS</code> <b>value:</b> <em>TRUE|FALSE</em> <br/>
  Description: Log data on SD card (ascii format, raw PTU data + GPS data)</li>
-<li><b>name</b> <code>SEND_MS</code> <b>value:</b> <em>TRU|FALSE</em> <br/>
+<li><b>name</b> <code>SEND_MS</code> <b>value:</b> <em>TRUE|FALSE</em> <br/>
  Description: Send data over telemetry (PAYLOAD_FLOAT message, scaled PTU data)</li>
+<li><b>name</b> <code>USE_MS_EEPROM</code> <b>value:</b> <em>TRUE|FALSE</em> <br/>
+ Description: Enable/disable usage of calibration data from EEPROM (default TRUE, set to FALSE if MS_EEPROM_SLAVE_IDX is not configured</li>
+<li><b>name</b> <code>MS_PRESSURE_OFFSET</code> <b>value:</b> <em>0.</em> <br/>
+ Description: Offset of the absolute pressure sensor (only used if EEPROM is not used)</li>
+<li><b>name</b> <code>MS_PRESSURE_SCALE</code> <b>value:</b> <em>1.</em> <br/>
+ Description: Scale factor of the absolute pressure sensor (only used if EEPROM is not used)</li>
+<li><b>name</b> <code>MS_TEMPERATURE_OFFSET</code> <b>value:</b> <em>0.</em> <br/>
+ Description: Offset of the temperature sensor (only used if EEPROM is not used)</li>
+<li><b>name</b> <code>MS_TEMPERATURE_SCALE</code> <b>value:</b> <em>1.</em> <br/>
+ Description: Scale factor of the temperature sensor (only used if EEPROM is not used)</li>
+<li><b>name</b> <code>MS_HUMIDITY_OFFSET</code> <b>value:</b> <em>0.</em> <br/>
+ Description: Offset of the humidity sensor (only used if EEPROM is not used)</li>
+<li><b>name</b> <code>MS_HUMIDITY_SCALE</code> <b>value:</b> <em>1.</em> <br/>
+ Description: Scale factor of the pressure sensor (only used if EEPROM is not used)</li>
+<li><b>name</b> <code>MS_DIFF_PRESSURE_OFFSET</code> <b>value:</b> <em>0.</em> <br/>
+ Description: Offset of the differential pressure sensor (only used if EEPROM is not used)</li>
+<li><b>name</b> <code>MS_DIFF_PRESSURE_SCALE</code> <b>value:</b> <em>1.</em> <br/>
+ Description: Scale factor of the differential pressure sensor (only used if EEPROM is not used)</li>
 </ul>
 </li>
 </ul>
@@ -161,7 +179,7 @@ Module functions</h1>
 Init Functions</h2>
 <p>These initialization functions are called once on startup.</p>
 <ul>
-<li><a class="el" href="meteo__stick_8c.html#a0d55b5d5c74fa9222a3fc8fc67fddc04" title="Includes to log on SD card. ">meteo_stick_init()</a></li>
+<li><a class="el" href="meteo__stick_8c.html#a0d55b5d5c74fa9222a3fc8fc67fddc04" title="Init function. ">meteo_stick_init()</a></li>
 </ul>
 <h2><a class="anchor" id="event_functions"></a>
 Event Functions</h2>
@@ -192,7 +210,9 @@ Header Files</h2>
 Source Files</h2>
 <ul>
 <li><a class="el" href="meteo__stick_8c.html">modules/meteo/meteo_stick.c</a></li>
+<li><a class="el" href="meteo__stick__calib_8c.html">modules/meteo/meteo_stick_calib.c</a></li>
 <li><a class="el" href="ads1220_8c.html">peripherals/ads1220.c</a></li>
+<li><a class="el" href="eeprom25AA256_8c.html">peripherals/eeprom25AA256.c</a></li>
 </ul>
 <h2><a class="anchor" id="module_xml__meteo_stick"></a>
 Raw meteo_stick.xml file:</h2>
@@ -201,17 +221,18 @@ Raw meteo_stick.xml file:</h2>
 <div class="line">&lt;module name=<span class="stringliteral">&quot;meteo_stick&quot;</span> dir=<span class="stringliteral">&quot;meteo&quot;</span>&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;</div>
-<div class="line">      Meteo sensor board <a class="code" href="at__com_8c.html#ae17b1fbd0d2858329af3554bff58d9be">from</a> Enac (absolute and differential pressure, temperature, humidity) aka Meteo Stick.</div>
+<div class="line">      Meteo sensor board from Enac (absolute and differential pressure, temperature, humidity) aka Meteo Stick.</div>
 <div class="line"></div>
-<div class="line">      Raw meteo <a class="code" href="link__mcu__can_8c.html#afb87d045bbf32b236fc425efe02bdc7b">data</a>:</div>
+<div class="line">      Raw meteo data:</div>
 <div class="line">      - Pressure (absolute and differential) in ADC (ADS1220)</div>
 <div class="line">      - Temperature in ADC (ADS1220)</div>
 <div class="line">      - Humidity in <a class="code" href="gps__sirf_8c.html#a8d0065299615176169ceac2c65f38365">ticks</a> (period of the input signal)</div>
 <div class="line"></div>
-<div class="line">      When using SEND_MS flag, scaled pressure, temperature and humidity <a class="code" href="link__mcu__can_8c.html#afb87d045bbf32b236fc425efe02bdc7b">data</a> are sent over telemetry with the PAYLOAD_FLOAT message (array of <span class="keywordtype">float</span>).</div>
-<div class="line">      If scale factors and offset are not specified, raw values are sent (scale=1.0, offset=0).</div>
+<div class="line">      Calibration data are stored in an EEPROM. When a sensor is calibrated with several reference temperature, a linear interpolation is used.</div>
 <div class="line"></div>
-<div class="line">      When using LOG_MS flag, raw pressure, temperature and humidity <a class="code" href="link__mcu__can_8c.html#afb87d045bbf32b236fc425efe02bdc7b">data</a> are stored with raw <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state ">gps</a> <a class="code" href="link__mcu__can_8c.html#afb87d045bbf32b236fc425efe02bdc7b">data</a> (position, speed, time, <a class="code" href="anemotaxis_8c.html#a015eb90e0de9f16e87bd149d4b9ce959">status</a>).</div>
+<div class="line">      When using <a class="code" href="meteo__stick_8c.html#a1e01d3f2f45e7fd3684aca824f68ad66">SEND_MS</a> flag, scaled pressure, temperature and humidity data are sent over telemetry with the PAYLOAD_FLOAT message (array of <span class="keywordtype">float</span>).</div>
+<div class="line"></div>
+<div class="line">      When using <a class="code" href="meteo__stick_8c.html#af72e234b04531004e3c2c1424443719c" title="Includes to log on SD card. ">LOG_MS</a> flag, raw and calibrated pressure, temperature and humidity data are stored with raw <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state ">gps</a> data (position, speed, time, <a class="code" href="anemotaxis_8c.html#a015eb90e0de9f16e87bd149d4b9ce959">status</a>).</div>
 <div class="line">      Field names and units are in the first line of the log file.</div>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line">    &lt;configure name=&quot;MS_SPI_DEV&quot; value=&quot;SPIX&quot; description=&quot;Select SPI for external ADC&quot;/&gt;</div>
@@ -219,44 +240,57 @@ Raw meteo_stick.xml file:</h2>
 <div class="line">    &lt;configure name=&quot;MS_DIFF_PRESSURE_SLAVE_IDX&quot; value=&quot;X&quot; description=&quot;Index of the SPI slave for differential pressure&quot;/&gt;</div>
 <div class="line">    &lt;configure name=&quot;MS_TEMPERATURE_SLAVE_IDX&quot; value=&quot;X&quot; description=&quot;Index of the SPI slave for temperature&quot;/&gt;</div>
 <div class="line">    &lt;configure name=&quot;MS_HUMIDITY_PWM_INPUT&quot; value=&quot;PWM_INPUTX&quot; description=&quot;Select <a class="code" href="LPC21xx_8h.html#a538e3ec60828cfabae7e3011d73d2093">PWM</a> input <a class="code" href="ADS8344_8c.html#a715f5cb061d11eb75981741eda4dafcd">channel</a> for humidity sensor&quot;/&gt;</div>
+<div class="line">    &lt;configure name=&quot;MS_EEPROM_SLAVE_IDX&quot; value=&quot;X&quot; description=&quot;Index of the SPI slave for <a class="code" href="baro__MS5534A_8c.html#ab30c346cfd9bc2364001128c169e7898">calibration</a> EEPROM&quot;/&gt;</div>
 <div class="line">    &lt;section name=&quot;METEO_STICK&quot;&gt;</div>
-<div class="line">      &lt;define name=&quot;<a class="code" href="meteo__stick_8c.html#a0b6f3090f43f2398a5b894053188e1f1" title="Default scale and offset send raw values if nothing defined in airframe file. ">MS_PRESSURE_OFFSET</a>&quot; value=&quot;0&quot; description=&quot;Offset in ADC of the absolute pressure sensor&quot;/&gt;</div>
-<div class="line">      &lt;define name=&quot;<a class="code" href="meteo__stick_8c.html#ae1a1ed690a050cea41ff3442b8dc61d3">MS_PRESSURE_SCALE</a>&quot; value=&quot;1.&quot; description=&quot;Scale factor of the absolute pressure sensor&quot;/&gt;</div>
-<div class="line">      &lt;define name=&quot;<a class="code" href="meteo__stick_8c.html#a76d4ce6be357880baaa86f92cb97e4b3">MS_TEMPERATURE_OFFSET</a>&quot; value=&quot;0&quot; description=&quot;Offset in ADC of the  temperature sensor&quot;/&gt;</div>
-<div class="line">      &lt;define name=&quot;<a class="code" href="meteo__stick_8c.html#a19022073d490f171b7aea364433962dd">MS_TEMPERATURE_SCALE</a>&quot; value=&quot;1.&quot; description=&quot;Scale factor of the temperature sensor&quot;/&gt;</div>
-<div class="line">      &lt;define name=&quot;MS_HUMIDITY_OFFSET&quot; value=&quot;0&quot; description=&quot;Offset in micro seconds of the humidity sensor&quot;/&gt;</div>
-<div class="line">      &lt;define name=&quot;MS_HUMIDITY_SCALE&quot; value=&quot;1.&quot; description=&quot;Scale factor of the pressure sensor&quot;/&gt;</div>
-<div class="line">      &lt;define name=&quot;<a class="code" href="meteo__stick_8c.html#a45a1630fe3450253efeca588d2a271b3">MS_DIFF_PRESSURE_OFFSET</a>&quot; value=&quot;0&quot; description=&quot;Offset in ADC of the differential pressure sensor&quot;/&gt;</div>
-<div class="line">      &lt;define name=&quot;<a class="code" href="meteo__stick_8c.html#a718f042907e206d918d2f5bf448dc3ff">MS_DIFF_PRESSURE_SCALE</a>&quot; value=&quot;1.&quot; description=&quot;Scale factor of the differential pressure sensor&quot;/&gt;</div>
-<div class="line">      &lt;define name=&quot;LOG_MS&quot; value=&quot;<a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>|<a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>&quot; description=&quot;Log <a class="code" href="link__mcu__can_8c.html#afb87d045bbf32b236fc425efe02bdc7b">data</a> on SD card (ascii format, raw PTU <a class="code" href="link__mcu__can_8c.html#afb87d045bbf32b236fc425efe02bdc7b">data</a> + GPS <a class="code" href="link__mcu__can_8c.html#afb87d045bbf32b236fc425efe02bdc7b">data</a>)&quot;/&gt;</div>
-<div class="line">      &lt;define name=&quot;SEND_MS&quot; value=&quot;TRU|<a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>&quot; description=&quot;<a class="code" href="gsm_8c.html#a7b1f6a663f9fd0a98b42a36f192303d7">Send</a> <a class="code" href="link__mcu__can_8c.html#afb87d045bbf32b236fc425efe02bdc7b">data</a> over telemetry (PAYLOAD_FLOAT message, scaled PTU <a class="code" href="link__mcu__can_8c.html#afb87d045bbf32b236fc425efe02bdc7b">data</a>)&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;<a class="code" href="meteo__stick_8c.html#af72e234b04531004e3c2c1424443719c" title="Includes to log on SD card. ">LOG_MS</a>&quot; value=&quot;<a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>|<a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>&quot; description=&quot;Log data on SD card (ascii format, raw PTU data + GPS data)&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;<a class="code" href="meteo__stick_8c.html#a1e01d3f2f45e7fd3684aca824f68ad66">SEND_MS</a>&quot; value=&quot;<a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>|<a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>&quot; description=&quot;<a class="code" href="gsm_8c.html#a7b1f6a663f9fd0a98b42a36f192303d7">Send</a> data over telemetry (PAYLOAD_FLOAT message, scaled PTU data)&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;<a class="code" href="meteo__stick_8h.html#af3588ff3029243fe2e641f32155309fe">USE_MS_EEPROM</a>&quot; value=&quot;<a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>|<a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>&quot; description=&quot;Enable/disable usage of <a class="code" href="baro__MS5534A_8c.html#ab30c346cfd9bc2364001128c169e7898">calibration</a> data from EEPROM (default <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, set to <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a> <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">if</a> MS_EEPROM_SLAVE_IDX is not configured&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;<a class="code" href="meteo__stick_8c.html#a0b6f3090f43f2398a5b894053188e1f1" title="Default scale and offset Only used if calibration from EEPROM is not used/available. ">MS_PRESSURE_OFFSET</a>&quot; value=&quot;0.&quot; description=&quot;Offset of the absolute pressure sensor (only used <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">if</a> EEPROM is not used)&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;<a class="code" href="meteo__stick_8c.html#ae1a1ed690a050cea41ff3442b8dc61d3">MS_PRESSURE_SCALE</a>&quot; value=&quot;1.&quot; description=&quot;Scale factor of the absolute pressure sensor (only used <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">if</a> EEPROM is not used)&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;<a class="code" href="meteo__stick_8c.html#a76d4ce6be357880baaa86f92cb97e4b3">MS_TEMPERATURE_OFFSET</a>&quot; value=&quot;0.&quot; description=&quot;Offset of the  temperature sensor (only used <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">if</a> EEPROM is not used)&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;<a class="code" href="meteo__stick_8c.html#a19022073d490f171b7aea364433962dd">MS_TEMPERATURE_SCALE</a>&quot; value=&quot;1.&quot; description=&quot;Scale factor of the temperature sensor (only used <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">if</a> EEPROM is not used)&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;MS_HUMIDITY_OFFSET&quot; value=&quot;0.&quot; description=&quot;Offset of the humidity sensor (only used <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">if</a> EEPROM is not used)&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;MS_HUMIDITY_SCALE&quot; value=&quot;1.&quot; description=&quot;Scale factor of the pressure sensor (only used <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">if</a> EEPROM is not used)&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;<a class="code" href="meteo__stick_8c.html#a45a1630fe3450253efeca588d2a271b3">MS_DIFF_PRESSURE_OFFSET</a>&quot; value=&quot;0.&quot; description=&quot;Offset of the differential pressure sensor (only used <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">if</a> EEPROM is not used)&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;<a class="code" href="meteo__stick_8c.html#a718f042907e206d918d2f5bf448dc3ff">MS_DIFF_PRESSURE_SCALE</a>&quot; value=&quot;1.&quot; description=&quot;Scale factor of the differential pressure sensor (only used <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">if</a> EEPROM is not used)&quot;/&gt;</div>
 <div class="line">    &lt;/section&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
+<div class="line">  &lt;settings&gt;</div>
+<div class="line">    &lt;dl_settings&gt;</div>
+<div class="line">      &lt;dl_settings NAME=&quot;<a class="code" href="LPC21xx_8h.html#ab9e061e05d689a5769936b213022102f">MS</a>&quot;&gt;</div>
+<div class="line">        &lt;dl_setting MAX=&quot;1&quot; MIN=&quot;0&quot; STEP=&quot;1&quot; VAR=&quot;<a class="code" href="meteo__stick_8c.html#a1dec660888ebffb6eb9d1c25d7ab44c0" title="General structure. ">meteo_stick</a>.reset_dp_offset&quot; shortname=&quot;Reset offset&quot; module=&quot;modules/meteo/<a class="code" href="meteo__stick_8c.html#a1dec660888ebffb6eb9d1c25d7ab44c0" title="General structure. ">meteo_stick</a>&quot; values=&quot;<a class="code" href="actuators__asctec_8h.html#a6ab1b9217ee457a8e4352cf0b28af79dac157bdf0b85a40d2619cbc8bc1ae5fe2">NONE</a>|<a class="code" href="humid__sht_8c.html#ab702106cf3b3e96750b6845ded4e0299">RESET</a>&quot;/&gt;</div>
+<div class="line">      &lt;/dl_settings&gt;</div>
+<div class="line">    &lt;/dl_settings&gt;</div>
+<div class="line">  &lt;/settings&gt;</div>
 <div class="line">  &lt;depends&gt;pwm_meas&lt;/depends&gt;</div>
-<div class="line">  &lt;<a class="code" href="stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963">header</a>&gt;</div>
+<div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;<a class="code" href="meteo__stick_8c.html#a1dec660888ebffb6eb9d1c25d7ab44c0" title="General structure. ">meteo_stick</a>.h&quot;/&gt;</div>
-<div class="line">  &lt;/<a class="code" href="stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963">header</a>&gt;</div>
-<div class="line">  &lt;<a class="code" href="nav__gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=&quot;<a class="code" href="meteo__stick_8c.html#a0d55b5d5c74fa9222a3fc8fc67fddc04" title="Includes to log on SD card. ">meteo_stick_init</a>()&quot;/&gt;</div>
-<div class="line">  &lt;periodic fun=&quot;<a class="code" href="meteo__stick_8c.html#a44fbda9e381c4ee6cc86d1fb914c7d6b" title="Periodic function. ">meteo_stick_periodic</a>()&quot; freq=&quot;10&quot; autorun=&quot;<a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>&quot;/&gt;</div>
+<div class="line">  &lt;/header&gt;</div>
+<div class="line">  &lt;<a class="code" href="nav__gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=&quot;<a class="code" href="meteo__stick_8c.html#a0d55b5d5c74fa9222a3fc8fc67fddc04" title="Init function. ">meteo_stick_init</a>()&quot;/&gt;</div>
+<div class="line">  &lt;periodic fun=&quot;<a class="code" href="meteo__stick_8c.html#a44fbda9e381c4ee6cc86d1fb914c7d6b" title="Periodic function. ">meteo_stick_periodic</a>()&quot; freq=&quot;10&quot; autorun=&quot;TRUE&quot;/&gt;</div>
 <div class="line">  &lt;event fun=&quot;<a class="code" href="meteo__stick_8c.html#acea026af4d67c5da57663b855fdfcd82" title="Event function. ">meteo_stick_event</a>()&quot;/&gt;</div>
 <div class="line">  &lt;makefile target=&quot;ap&quot;&gt;</div>
 <div class="line">    &lt;raw&gt;</div>
-<div class="line">MS_SPI_DEV_UPPER=$(shell echo $(MS_SPI_DEV) | tr a-z <a class="code" href="pprz__geodetic__utm_8h.html#a955f504eccf76b4eb2489c0adab03121">A</a>-Z)</div>
-<div class="line">MS_SPI_DEV_LOWER=$(shell echo $(MS_SPI_DEV) | tr <a class="code" href="pprz__geodetic__utm_8h.html#a955f504eccf76b4eb2489c0adab03121">A</a>-Z a-z)</div>
+<div class="line">MS_SPI_DEV_UPPER=$(shell echo $(MS_SPI_DEV) | tr a-z <a class="code" href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a>-Z)</div>
+<div class="line">MS_SPI_DEV_LOWER=$(shell echo $(MS_SPI_DEV) | tr <a class="code" href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a>-Z a-z)</div>
 <div class="line">    &lt;/raw&gt;</div>
 <div class="line">    &lt;file name=&quot;<a class="code" href="meteo__stick_8c.html#a1dec660888ebffb6eb9d1c25d7ab44c0" title="General structure. ">meteo_stick</a>.c&quot;/&gt;</div>
+<div class="line">    &lt;file name=&quot;meteo_stick_calib.c&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;ads1220.c&quot; dir=&quot;peripherals&quot;/&gt;</div>
+<div class="line">    &lt;file name=&quot;eeprom25AA256.c&quot; dir=&quot;peripherals&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;USE_$(MS_SPI_DEV_UPPER)&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;MS_PRESSURE_SLAVE_IDX&quot; value=&quot;$(MS_PRESSURE_SLAVE_IDX)&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;MS_DIFF_PRESSURE_SLAVE_IDX&quot; value=&quot;$(MS_DIFF_PRESSURE_SLAVE_IDX)&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;MS_TEMPERATURE_SLAVE_IDX&quot; value=&quot;$(MS_TEMPERATURE_SLAVE_IDX)&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;USE_SPI_SLAVE$(MS_PRESSURE_SLAVE_IDX)&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;USE_SPI_SLAVE$(MS_DIFF_PRESSURE_SLAVE_IDX)&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;USE_SPI_SLAVE$(MS_TEMPERATURE_SLAVE_IDX)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;MS_PRESSURE_SLAVE_IDX&quot; value=&quot;$(MS_PRESSURE_SLAVE_IDX)&quot; cond=&quot;ifdef MS_PRESSURE_SLAVE_IDX&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;MS_DIFF_PRESSURE_SLAVE_IDX&quot; value=&quot;$(MS_DIFF_PRESSURE_SLAVE_IDX)&quot; cond=&quot;ifdef MS_DIFF_PRESSURE_SLAVE_IDX&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;MS_TEMPERATURE_SLAVE_IDX&quot; value=&quot;$(MS_TEMPERATURE_SLAVE_IDX)&quot; cond=&quot;ifdef MS_TEMPERATURE_SLAVE_IDX&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;MS_EEPROM_SLAVE_IDX&quot; value=&quot;$(MS_EEPROM_SLAVE_IDX)&quot; cond=&quot;ifdef MS_EEPROM_SLAVE_IDX&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;USE_SPI_SLAVE$(MS_PRESSURE_SLAVE_IDX)&quot; cond=&quot;ifdef MS_PRESSURE_SLAVE_IDX&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;USE_SPI_SLAVE$(MS_DIFF_PRESSURE_SLAVE_IDX)&quot; cond=&quot;ifdef MS_DIFF_PRESSURE_SLAVE_IDX&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;USE_SPI_SLAVE$(MS_TEMPERATURE_SLAVE_IDX)&quot; cond=&quot;ifdef MS_TEMPERATURE_SLAVE_IDX&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;USE_SPI_SLAVE$(MS_EEPROM_SLAVE_IDX)&quot; cond=&quot;ifdef MS_EEPROM_SLAVE_IDX&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;MS_SPI_DEV&quot; value=&quot;$(MS_SPI_DEV_LOWER)&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;MS_HUMIDITY_PWM_INPUT&quot; value=&quot;$(MS_HUMIDITY_PWM_INPUT)&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;<a class="code" href="stm32_2mcu__periph_2pwm__input__arch_8h.html#a3ae3b1d1e88e20bb623b9bfb375b9e76" title="The default pwm counter is set-up to have 1/6 us resolution. ">PWM_INPUT_TICKS_PER_USEC</a>&quot; value=&quot;42&quot;/&gt; &lt;!-- set timer clock to 42 MHz --&gt;</div>
-<div class="line">    &lt;define name=&quot;USE_$(MS_HUMIDITY_PWM_INPUT)&quot; value=&quot;PWM_PULSE_TYPE_ACTIVE_LOW&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;MS_HUMIDITY_PWM_INPUT&quot; value=&quot;$(MS_HUMIDITY_PWM_INPUT)&quot; cond=&quot;ifdef MS_HUMIDITY_PWM_INPUT&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;<a class="code" href="stm32_2mcu__periph_2pwm__input__arch_8h.html#a3ae3b1d1e88e20bb623b9bfb375b9e76" title="The default pwm counter is set-up to have 1/6 us resolution. ">PWM_INPUT_TICKS_PER_USEC</a>&quot; value=&quot;42&quot; cond=&quot;ifdef MS_HUMIDITY_PWM_INPUT&quot;/&gt; &lt;!-- set timer clock to 42 MHz --&gt;</div>
+<div class="line">    &lt;define name=&quot;USE_$(MS_HUMIDITY_PWM_INPUT)&quot; value=&quot;PWM_PULSE_TYPE_ACTIVE_LOW&quot; cond=&quot;ifdef MS_MS_HUMIDITY_PWM_INPUT&quot;/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">&lt;/module&gt;</div>
 <div class="line"></div>
@@ -266,7 +300,7 @@ Raw meteo_stick.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:18 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

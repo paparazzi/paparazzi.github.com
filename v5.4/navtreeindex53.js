@@ -1,5 +1,6 @@
 var NAVTREEINDEX53 =
 {
+"module__vehicle_interface_datalink.html#init_functions":[2,149,0,0],
 "module__vehicle_interface_datalink.html#module_xml__vehicle_interface_datalink":[2,149,1,2],
 "module__vehicle_interface_datalink.html#periodic_functions":[2,149,0,1],
 "module__vehicle_interface_datalink.html#sources":[2,149,1,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX53 =
 "mpu60x0__regs_8h.html#a3ca608ea59fe8d027e6b2df46546443a":[10,0,0,0,7,53,64],
 "mpu60x0__regs_8h.html#a3ed0c2fccc8788a38170d57becdb4f4f":[10,0,0,0,7,53,47],
 "mpu60x0__regs_8h.html#a4783e4de35dc974b097ae84ee683e5cf":[10,0,0,0,7,53,59],
-"mpu60x0__regs_8h.html#a4d065c3b9aa304aae2ce7d2e9accd245":[10,0,0,0,7,53,33],
-"mpu60x0__regs_8h.html#a4e71e1286472defb52103ce142af35ed":[10,0,0,0,7,53,37]
+"mpu60x0__regs_8h.html#a4d065c3b9aa304aae2ce7d2e9accd245":[10,0,0,0,7,53,33]
 };

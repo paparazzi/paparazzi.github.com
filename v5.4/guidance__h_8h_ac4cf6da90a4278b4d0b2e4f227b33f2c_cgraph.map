@@ -1,51 +1,51 @@
 <map id="guidance_h_run" name="guidance_h_run">
-<area shape="rect" id="node3" href="$guidance__h_8c.html#a2a7de8dee0c85bd58633a392d8e2df91" title="guidance_h_hover_enter" alt="" coords="195,117,373,145"/>
-<area shape="rect" id="node17" href="$group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int). " alt="" coords="441,173,639,201"/>
-<area shape="rect" id="node22" href="$guidance__h_8c.html#acfce6969bcd9f8b676f79baf04ef4c00" title="guidance_h_nav_enter" alt="" coords="201,171,367,199"/>
-<area shape="rect" id="node26" href="$guidance__h_8c.html#a40a1b0fc372c07e0fc9e9a680578fe9b" title="guidance_h_traj_run" alt="" coords="465,5,615,33"/>
-<area shape="rect" id="node30" href="$guidance__h_8c.html#aaef8fae11f920120aee046f87777fe9f" title="guidance_h_update_reference" alt="" coords="177,975,391,1003"/>
-<area shape="rect" id="node48" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#afb59ecc3049842f940a46a81698b79e9" title="stabilization_attitude_run" alt="" coords="193,629,375,657"/>
-<area shape="rect" id="node91" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#ada3ef183c206d08fd0a902adc118f542" title="stabilization_attitude\l_set_earth_cmd_i" alt="" coords="207,273,361,317"/>
-<area shape="rect" id="node101" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#ac064607f64988793cadfe5ed346b269f" title="stabilization_attitude\l_set_rpy_setpoint_i" alt="" coords="207,1026,361,1070"/>
-<area shape="rect" id="node108" href="$stabilization__none_8c.html#ad386c5e1b5d62194fa2eb827d8c6e2b2" title="stabilization_none_run" alt="" coords="201,1093,367,1121"/>
-<area shape="rect" id="node110" href="$stabilization__rate_8c.html#abd94877f79c42a6ee99622c7fc45a623" title="stabilization_rate_run" alt="" coords="205,761,363,789"/>
-<area shape="rect" id="node114" href="$guidance__h_8c.html#afbd0f359f98e052e16b46f230006a6b1" title="transition_run" alt="" coords="229,1143,339,1171"/>
-<area shape="rect" id="node5" href="$guidance__h_8c.html#ad9bd6447dd5cea00192adfbbf5a30cd5" title="reset_guidance_reference\l_from_current_position" alt="" coords="447,106,633,150"/>
-<area shape="rect" id="node9" href="$group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="695,17,857,45"/>
-<area shape="rect" id="node7" href="$guidance__h__ref_8c.html#a6aa584c95b0d6b7f797ae073069a78f0" title="gh_set_ref" alt="" coords="732,118,820,146"/>
-<area shape="rect" id="node13" href="$group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="699,67,853,95"/>
-<area shape="rect" id="node11" href="$group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="920,17,1088,45"/>
-<area shape="rect" id="node15" href="$group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="925,67,1083,95"/>
-<area shape="rect" id="node19" href="$group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int). " alt="" coords="695,173,857,201"/>
-<area shape="rect" id="node32" href="$guidance__h__ref_8c.html#ab81c55cf71ee8fc94433f9584c159710" title="gh_update_ref_from\l_pos_sp" alt="" coords="465,1050,615,1094"/>
-<area shape="rect" id="node40" href="$guidance__h__ref_8c.html#ac8675e1f8ea25de7508d42a955ba8f8c" title="gh_update_ref_from\l_speed_sp" alt="" coords="465,1117,615,1161"/>
-<area shape="rect" id="node34" href="$guidance__h__ref_8c.html#aa11856a73c7810dae75c9637901ffd4a" title="gh_compute_ref_max" alt="" coords="696,986,856,1014"/>
-<area shape="rect" id="node36" href="$guidance__h__ref_8c.html#a65e4335a92b2ecdf2ee5701bad274a88" title="saturate reference accelerations " alt="" coords="695,1037,857,1065"/>
-<area shape="rect" id="node38" href="$guidance__h__ref_8c.html#aa059d50ab0248ebab041e78596c858c9" title="Saturate ref speed and adjust acceleration accordingly. " alt="" coords="692,1087,860,1115"/>
-<area shape="rect" id="node42" href="$guidance__h__ref_8c.html#acf5816ca9ff37cb448ccb83b6c2e26dc" title="gh_compute_ref_max\l_speed" alt="" coords="696,1138,856,1182"/>
-<area shape="rect" id="node44" href="$guidance__h__ref_8c.html#a97ad465cad323d47e8b5b45d0ccc9757" title="gh_compute_ref_max\l_accel" alt="" coords="696,1205,856,1249"/>
-<area shape="rect" id="node50" href="$stabilization__attitude__quat__float_8c.html#abcf3f74ddd37dcf51e0df255d22c4a23" title="attitude_run_fb" alt="" coords="481,847,599,875"/>
-<area shape="rect" id="node52" href="$stabilization__attitude__quat__float_8c.html#a112d2235c054e7eadd1659fa0a78e4f4" title="attitude_run_ff" alt="" coords="483,898,597,926"/>
-<area shape="rect" id="node54" href="$pprz__algebra__float_8h.html#a0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity " alt="" coords="471,949,609,977"/>
-<area shape="rect" id="node56" href="$pprz__algebra__float_8c.html#a2784b8b78ffff045ebb867a4198eb349" title="Composition (multiplication) of two quaternions. " alt="" coords="463,375,617,403"/>
-<area shape="rect" id="node58" href="$pprz__algebra__float_8h.html#a8c87c4af5df3d13c6eb0bd8b8e97721a" title="float_quat_wrap_shortest" alt="" coords="913,350,1095,378"/>
-<area shape="rect" id="node60" href="$pprz__algebra__int_8h.html#a698f3fc474f66517868238f6f6b08fca" title="initialises a quaternion to identity " alt="" coords="468,629,612,657"/>
-<area shape="rect" id="node62" href="$pprz__algebra__int_8h.html#a00267cacb602945fc6cfb054492460fa" title="normalize a quaternion inplace " alt="" coords="460,679,620,707"/>
-<area shape="rect" id="node66" href="$pprz__algebra__int_8h.html#a7af214127cdc156466db26fd3497ce84" title="int32_quat_wrap_shortest" alt="" coords="447,730,633,758"/>
-<area shape="rect" id="node68" href="$stabilization__attitude__ref__euler__float_8c.html#aa81d4bbb6fc4913f6b9165b818a577c5" title="stabilization_attitude\l_ref_update" alt="" coords="463,781,617,825"/>
-<area shape="rect" id="node70" href="$group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float). " alt="" coords="461,477,619,505"/>
-<area shape="rect" id="node74" href="$group__state__rate.html#ga3fc058302e6f40bf0b8797ca9a7ed60f" title="Get vehicle body angular rate (int). " alt="" coords="463,999,617,1027"/>
-<area shape="rect" id="node78" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="441,325,639,353"/>
-<area shape="rect" id="node83" href="$group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float). " alt="" coords="445,527,635,555"/>
-<area shape="rect" id="node87" href="$group__state__attitude.html#ga28e5de0a4822cabcfe8350e2343111ce" title="Get vehicle body attitude quaternion (int). " alt="" coords="445,578,635,606"/>
-<area shape="rect" id="node64" href="$pprz__algebra__int_8h.html#a1dac7ce8c769898ccda119edb55f52ef" title="Norm of a quaternion. " alt="" coords="711,679,841,707"/>
-<area shape="rect" id="node72" href="$group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title="stateCalcBodyRates_f" alt="" coords="696,477,856,505"/>
-<area shape="rect" id="node76" href="$group__state__rate.html#gaa244b14b2780206f600f9ded7d7cf180" title="stateCalcBodyRates_i" alt="" coords="696,935,856,963"/>
-<area shape="rect" id="node80" href="$group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="695,325,857,353"/>
-<area shape="rect" id="node85" href="$group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float). " alt="" coords="699,527,853,555"/>
-<area shape="rect" id="node89" href="$group__math__orientation__representation.html#ga86b153b2106a638cef8e314125c47306" title="Get vehicle body attitude quaternion (int). " alt="" coords="699,578,853,606"/>
-<area shape="rect" id="node93" href="$stabilization__attitude__quat__transformations_8c.html#a875d6ee5cde39474c4ce13dd340cb262" title="quat_from_earth_cmd_f" alt="" coords="689,274,863,302"/>
-<area shape="rect" id="node96" href="$stabilization__attitude__quat__transformations_8c.html#acfb3bfa8af4aebad848717cd26aa78ee" title="quat_from_earth_cmd_i" alt="" coords="453,274,627,302"/>
-<area shape="rect" id="node103" href="$stabilization__attitude__quat__transformations_8c.html#a10ec980ce6bc935ea53ec3bfca04fe3d" title="quat_from_rpy_cmd_f" alt="" coords="696,1271,856,1299"/>
-<area shape="rect" id="node105" href="$stabilization__attitude__quat__transformations_8c.html#a781fdef7edec84ea09c1faf34d1316e8" title="quat_from_rpy_cmd_i" alt="" coords="460,1246,620,1274"/>
+<area shape="rect" id="node3" href="$guidance__h_8c.html#a2a7de8dee0c85bd58633a392d8e2df91" title="guidance_h_hover_enter" alt="" coords="195,57,373,85"/>
+<area shape="rect" id="node17" href="$group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int). " alt="" coords="441,162,639,190"/>
+<area shape="rect" id="node22" href="$guidance__h_8c.html#acfce6969bcd9f8b676f79baf04ef4c00" title="guidance_h_nav_enter" alt="" coords="201,162,367,190"/>
+<area shape="rect" id="node26" href="$guidance__h_8c.html#a40a1b0fc372c07e0fc9e9a680578fe9b" title="guidance_h_traj_run" alt="" coords="465,111,615,139"/>
+<area shape="rect" id="node30" href="$guidance__h_8c.html#aaef8fae11f920120aee046f87777fe9f" title="guidance_h_update_reference" alt="" coords="177,965,391,993"/>
+<area shape="rect" id="node48" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#afb59ecc3049842f940a46a81698b79e9" title="stabilization_attitude_run" alt="" coords="193,618,375,646"/>
+<area shape="rect" id="node91" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#ada3ef183c206d08fd0a902adc118f542" title="stabilization_attitude\l_set_earth_cmd_i" alt="" coords="207,263,361,307"/>
+<area shape="rect" id="node101" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#ac064607f64988793cadfe5ed346b269f" title="stabilization_attitude\l_set_rpy_setpoint_i" alt="" coords="207,1015,361,1059"/>
+<area shape="rect" id="node107" href="$stabilization__none_8c.html#ad386c5e1b5d62194fa2eb827d8c6e2b2" title="stabilization_none_run" alt="" coords="201,1082,367,1110"/>
+<area shape="rect" id="node109" href="$stabilization__rate_8c.html#abd94877f79c42a6ee99622c7fc45a623" title="stabilization_rate_run" alt="" coords="205,750,363,778"/>
+<area shape="rect" id="node113" href="$guidance__h_8c.html#afbd0f359f98e052e16b46f230006a6b1" title="transition_run" alt="" coords="229,1133,339,1161"/>
+<area shape="rect" id="node5" href="$guidance__h_8c.html#ad9bd6447dd5cea00192adfbbf5a30cd5" title="reset_guidance_reference\l_from_current_position" alt="" coords="447,45,633,89"/>
+<area shape="rect" id="node9" href="$group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="695,5,857,33"/>
+<area shape="rect" id="node7" href="$guidance__h__ref_8c.html#a6aa584c95b0d6b7f797ae073069a78f0" title="gh_set_ref" alt="" coords="732,55,820,83"/>
+<area shape="rect" id="node13" href="$group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="699,110,853,138"/>
+<area shape="rect" id="node11" href="$group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="920,5,1088,33"/>
+<area shape="rect" id="node15" href="$group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="925,110,1083,138"/>
+<area shape="rect" id="node19" href="$group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int). " alt="" coords="695,162,857,190"/>
+<area shape="rect" id="node32" href="$guidance__h__ref_8c.html#ab81c55cf71ee8fc94433f9584c159710" title="gh_update_ref_from\l_pos_sp" alt="" coords="465,1039,615,1083"/>
+<area shape="rect" id="node40" href="$guidance__h__ref_8c.html#ac8675e1f8ea25de7508d42a955ba8f8c" title="gh_update_ref_from\l_speed_sp" alt="" coords="465,1106,615,1150"/>
+<area shape="rect" id="node34" href="$guidance__h__ref_8c.html#aa11856a73c7810dae75c9637901ffd4a" title="gh_compute_ref_max" alt="" coords="696,1005,856,1033"/>
+<area shape="rect" id="node36" href="$guidance__h__ref_8c.html#a65e4335a92b2ecdf2ee5701bad274a88" title="saturate reference accelerations " alt="" coords="695,1106,857,1134"/>
+<area shape="rect" id="node38" href="$guidance__h__ref_8c.html#aa059d50ab0248ebab041e78596c858c9" title="Saturate ref speed and adjust acceleration accordingly. " alt="" coords="692,1055,860,1083"/>
+<area shape="rect" id="node42" href="$guidance__h__ref_8c.html#acf5816ca9ff37cb448ccb83b6c2e26dc" title="gh_compute_ref_max\l_speed" alt="" coords="696,1223,856,1267"/>
+<area shape="rect" id="node44" href="$guidance__h__ref_8c.html#a97ad465cad323d47e8b5b45d0ccc9757" title="gh_compute_ref_max\l_accel" alt="" coords="696,1157,856,1201"/>
+<area shape="rect" id="node50" href="$stabilization__attitude__quat__float_8c.html#abcf3f74ddd37dcf51e0df255d22c4a23" title="attitude_run_fb" alt="" coords="481,837,599,865"/>
+<area shape="rect" id="node52" href="$stabilization__attitude__quat__float_8c.html#a112d2235c054e7eadd1659fa0a78e4f4" title="attitude_run_ff" alt="" coords="483,887,597,915"/>
+<area shape="rect" id="node54" href="$pprz__algebra__float_8h.html#a0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity " alt="" coords="471,938,609,966"/>
+<area shape="rect" id="node56" href="$pprz__algebra__float_8c.html#a2784b8b78ffff045ebb867a4198eb349" title="Composition (multiplication) of two quaternions. " alt="" coords="463,415,617,443"/>
+<area shape="rect" id="node58" href="$pprz__algebra__float_8h.html#a8c87c4af5df3d13c6eb0bd8b8e97721a" title="float_quat_wrap_shortest" alt="" coords="913,314,1095,342"/>
+<area shape="rect" id="node60" href="$pprz__algebra__int_8h.html#a698f3fc474f66517868238f6f6b08fca" title="initialises a quaternion to identity " alt="" coords="468,618,612,646"/>
+<area shape="rect" id="node62" href="$pprz__algebra__int_8h.html#a00267cacb602945fc6cfb054492460fa" title="normalize a quaternion inplace " alt="" coords="460,669,620,697"/>
+<area shape="rect" id="node66" href="$pprz__algebra__int_8h.html#a7af214127cdc156466db26fd3497ce84" title="int32_quat_wrap_shortest" alt="" coords="447,719,633,747"/>
+<area shape="rect" id="node68" href="$stabilization__attitude__ref__euler__float_8c.html#aa81d4bbb6fc4913f6b9165b818a577c5" title="stabilization_attitude\l_ref_update" alt="" coords="463,770,617,814"/>
+<area shape="rect" id="node70" href="$group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float). " alt="" coords="461,466,619,494"/>
+<area shape="rect" id="node74" href="$group__state__rate.html#ga3fc058302e6f40bf0b8797ca9a7ed60f" title="Get vehicle body angular rate (int). " alt="" coords="463,989,617,1017"/>
+<area shape="rect" id="node78" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="441,314,639,342"/>
+<area shape="rect" id="node83" href="$group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float). " alt="" coords="445,517,635,545"/>
+<area shape="rect" id="node87" href="$group__state__attitude.html#ga28e5de0a4822cabcfe8350e2343111ce" title="Get vehicle body attitude quaternion (int). " alt="" coords="445,567,635,595"/>
+<area shape="rect" id="node64" href="$pprz__algebra__int_8h.html#a1dac7ce8c769898ccda119edb55f52ef" title="Norm of a quaternion. " alt="" coords="711,669,841,697"/>
+<area shape="rect" id="node72" href="$group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title="stateCalcBodyRates_f" alt="" coords="696,466,856,494"/>
+<area shape="rect" id="node76" href="$group__state__rate.html#gaa244b14b2780206f600f9ded7d7cf180" title="stateCalcBodyRates_i" alt="" coords="696,954,856,982"/>
+<area shape="rect" id="node80" href="$group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="695,314,857,342"/>
+<area shape="rect" id="node85" href="$group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float). " alt="" coords="699,517,853,545"/>
+<area shape="rect" id="node89" href="$group__math__orientation__representation.html#ga86b153b2106a638cef8e314125c47306" title="Get vehicle body attitude quaternion (int). " alt="" coords="699,567,853,595"/>
+<area shape="rect" id="node93" href="$stabilization__attitude__quat__transformations_8c.html#a875d6ee5cde39474c4ce13dd340cb262" title="quat_from_earth_cmd_f" alt="" coords="689,263,863,291"/>
+<area shape="rect" id="node96" href="$stabilization__attitude__quat__transformations_8c.html#acfb3bfa8af4aebad848717cd26aa78ee" title="quat_from_earth_cmd_i" alt="" coords="453,263,627,291"/>
+<area shape="rect" id="node103" href="$pprz__algebra__float_8c.html#a99c8f1ff70a5b638cf87ea816f1756a2" title="Quaternion from Euler angles. " alt="" coords="465,1173,615,1201"/>
+<area shape="rect" id="node105" href="$pprz__algebra__int_8c.html#ab3d8478211bf7da23d2345e8eae43fc8" title="Quaternion from Euler angles. " alt="" coords="463,1223,617,1251"/>
 </map>

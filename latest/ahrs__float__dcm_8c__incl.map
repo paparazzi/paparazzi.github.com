@@ -1,25 +1,20 @@
 <map id="sw/airborne/subsystems/ahrs/ahrs_float_dcm.c" name="sw/airborne/subsystems/ahrs/ahrs_float_dcm.c">
-<area shape="rect" id="node5" href="$ahrs_8h.html" title="Attitude and Heading Reference System interface. " alt="" coords="1197,107,1339,135"/>
-<area shape="rect" id="node23" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1517,379,1707,407"/>
-<area shape="rect" id="node29" href="$state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="1235,201,1301,229"/>
-<area shape="rect" id="node51" href="$ahrs__float__dcm_8h.html" title="Attitude estimation for fixedwings based on the DCM. " alt="" coords="2279,286,2441,330"/>
-<area shape="rect" id="node56" href="$ahrs__float__utils_8h.html" title="Utility functions for floating point AHRS implementations. " alt="" coords="1768,193,1931,237"/>
-<area shape="rect" id="node64" href="$ahrs__aligner_8h.html" title="Interface to align the AHRS via low&#45;passed measurements at startup. " alt="" coords="5,286,168,330"/>
-<area shape="rect" id="node68" href="$imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="1545,201,1684,229"/>
-<area shape="rect" id="node74" href="$fixedwing_2autopilot_8h.html" title="Fixedwing autopilot modes. " alt="" coords="2108,286,2255,330"/>
-<area shape="rect" id="node85" href="$ahrs__float__dcm__algebra_8h.html" title="Algebra helper functions for DCM. " alt="" coords="2516,99,2679,143"/>
-<area shape="rect" id="node89" href="$gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="548,201,687,229"/>
-<area shape="rect" id="node103" href="$led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="2703,107,2756,135"/>
-<area shape="rect" id="node8" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="904,379,1083,407"/>
-<area shape="rect" id="node11" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="1355,465,1509,493"/>
-<area shape="rect" id="node18" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="955,465,1104,493"/>
-<area shape="rect" id="node33" href="$pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="812,286,961,330"/>
-<area shape="rect" id="node39" href="$pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1137,286,1287,330"/>
-<area shape="rect" id="node44" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1361,286,1524,330"/>
-<area shape="rect" id="node35" href="$pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="1107,379,1229,407"/>
-<area shape="rect" id="node53" href="$inttypes_8h.html" title="inttypes.h" alt="" coords="2231,465,2316,493"/>
-<area shape="rect" id="node59" href="$ahrs__magnetic__field__model_8h.html" title="subsystems/ahrs/ahrs\l_magnetic_field_model.h" alt="" coords="1903,286,2084,330"/>
-<area shape="rect" id="node78" href="$paparazzi_8h.html" title="paparazzi.h" alt="" coords="2253,379,2349,407"/>
-<area shape="rect" id="node82" href="$settings_8h.html" title="Persistent settings interface. " alt="" coords="1963,379,2128,407"/>
-<area shape="rect" id="node93" href="$sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="476,379,647,407"/>
+<area shape="rect" id="node5" href="$ahrs__float__dcm_8h.html" title="Attitude estimation for fixedwings based on the DCM. " alt="" coords="1128,99,1291,143"/>
+<area shape="rect" id="node9" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1335,294,1524,322"/>
+<area shape="rect" id="node34" href="$gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="977,201,1116,229"/>
+<area shape="rect" id="node52" href="$ahrs__float__utils_8h.html" title="Utility functions for floating point AHRS implementations. " alt="" coords="327,193,489,237"/>
+<area shape="rect" id="node60" href="$fixedwing_2autopilot_8h.html" title="Fixedwing autopilot modes. " alt="" coords="36,286,183,330"/>
+<area shape="rect" id="node71" href="$ahrs__float__dcm__algebra_8h.html" title="Algebra helper functions for DCM. " alt="" coords="1601,99,1764,143"/>
+<area shape="rect" id="node76" href="$led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1788,107,1841,135"/>
+<area shape="rect" id="node7" href="$inttypes_8h.html" title="inttypes.h" alt="" coords="277,465,363,493"/>
+<area shape="rect" id="node21" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1145,193,1308,237"/>
+<area shape="rect" id="node11" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="1359,465,1476,493"/>
+<area shape="rect" id="node23" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1084,379,1263,407"/>
+<area shape="rect" id="node27" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1084,465,1233,493"/>
+<area shape="rect" id="node37" href="$pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="689,286,839,330"/>
+<area shape="rect" id="node43" href="$sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="767,379,937,407"/>
+<area shape="rect" id="node39" href="$pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="564,379,687,407"/>
+<area shape="rect" id="node55" href="$ahrs__magnetic__field__model_8h.html" title="subsystems/ahrs/ahrs\l_magnetic_field_model.h" alt="" coords="207,286,388,330"/>
+<area shape="rect" id="node64" href="$paparazzi_8h.html" title="paparazzi.h" alt="" coords="60,379,156,407"/>
+<area shape="rect" id="node68" href="$settings_8h.html" title="Persistent settings interface. " alt="" coords="36,465,201,493"/>
 </map>

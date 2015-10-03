@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.4"/>
-<title>Paparazzi UAS: Digital camera control (trigger using GPIO)</title>
+<title>Paparazzi UAS: Digital Photo Camera Triggering (using a GPIO pin)</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('module__digital_cam.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -100,12 +100,33 @@ $(document).ready(function(){initNavTree('module__digital_cam.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Digital camera control (trigger using GPIO) </div>  </div>
+<div class="title">Digital Photo Camera Triggering (using a GPIO pin) </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Module XML file: <code>digital_cam.xml</code> </p>
-<p>No detailed description...</p>
-<h1><a class="anchor" id="configuration"></a>
+<p>This module controls triggering of an attached external digital camera via one or more GPIO pins for on/off/shoot/zoom. It can trigger photos based on GPS distance, time or circle radius in both fixedwings and rotorcraft.</p>
+<h1><a class="anchor" id="module_load_example__digital_cam"></a>
+Example for airframe file</h1>
+<p>This example contains all possible configuration options, not all of them are mandatory! </p>
+<div class="fragment"><div class="line">&lt;modules&gt;</div>
+<div class="line">  &lt;load name=<span class="stringliteral">&quot;digital_cam.xml&quot;</span>&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_SHOOT_ON_BUTTON_RELEASE&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_SHUTTER_GPIO&quot;</span> value=<span class="stringliteral">&quot;GPIOC,GPIO12&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_ZOOM_IN_GPIO&quot;</span> value=<span class="stringliteral">&quot;GPIOC,GPIO2&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_ZOOM_OUT_GPIO&quot;</span> value=<span class="stringliteral">&quot;GPIOC,GPIO5&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_POWER_GPIO&quot;</span> value=<span class="stringliteral">&quot;GPIOB,GPIO1&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_POWER_OFF_GPIO&quot;</span> value=<span class="stringliteral">&quot;GPIOC,GPIO1&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_PUSH&quot;</span> value=<span class="stringliteral">&quot;gpio_set|gpio_clear&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_RELEASE&quot;</span> value=<span class="stringliteral">&quot;gpio_clear|gpio_set&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_SHUTTER_DELAY&quot;</span> value=<span class="stringliteral">&quot;0.5&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_POWER_OFF_DELAY&quot;</span> value=<span class="stringliteral">&quot;0.75&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_AUTOSHOOT_PERIOD&quot;</span> value=<span class="stringliteral">&quot;1.0&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_AUTOSHOOT_DISTANCE_INTERVAL&quot;</span> value=<span class="stringliteral">&quot;50&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_AUTOSHOOT_SURVEY_INTERVAL&quot;</span> value=<span class="stringliteral">&quot;50&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_SHOT_SYNC_SEND&quot;</span> value=<span class="stringliteral">&quot;TRUE|FALSE&quot;</span> /&gt;</div>
+<div class="line">  &lt;/load&gt;</div>
+<div class="line">&lt;/modules&gt;</div>
+</div><!-- fragment --> <h1><a class="anchor" id="configuration"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
 Define Options</h2>
@@ -126,8 +147,12 @@ Define Options</h2>
  Description: specifies whether to set or clear gpio to push the shutter (default: gpio_set)</li>
 <li><b>name:</b> <code>DC_RELEASE</code> <b>value:</b> <em>gpio_clear|gpio_set</em> <br/>
  Description: specifies whether to set or clear gpio to release the shutter (default: gpio_clear)</li>
-<li><b>name:</b> <code>DC_AUTOSHOOT_QUARTERSEC_PERIOD</code> <b>value:</b> <em>6</em> <br/>
- Description: quarter_second</li>
+<li><b>name:</b> <code>DC_SHUTTER_DELAY</code> <b>value:</b> <em>0.5</em> <br/>
+ Description: how long to push shutter in seconds</li>
+<li><b>name:</b> <code>DC_POWER_OFF_DELAY</code> <b>value:</b> <em>0.75</em> <br/>
+ Description: how long to send power off in seconds</li>
+<li><b>name:</b> <code>DC_AUTOSHOOT_PERIOD</code> <b>value:</b> <em>1.0</em> <br/>
+ Description: time period for DC_AUTOSHOOT_PERIODIC in seconds</li>
 <li><b>name:</b> <code>DC_AUTOSHOOT_DISTANCE_INTERVAL</code> <b>value:</b> <em>50</em> <br/>
  Description: distance interval for DC_AUTOSHOOT_DISTANCE in meters</li>
 <li><b>name:</b> <code>DC_AUTOSHOOT_SURVEY_INTERVAL</code> <b>value:</b> <em>50</em> <br/>
@@ -147,8 +172,8 @@ Init Functions</h2>
 Periodic Functions</h2>
 <p>These functions are called periodically at the specified frequency from the module periodic loop.</p>
 <ul>
-<li><a class="el" href="gpio__cam__ctrl_8c.html#a9ea235d04c38558097d37bc2dacdef1e" title="4Hz Periodic ">gpio_cam_ctrl_periodic()</a><ul>
-<li>Frequency in Hz: <em>4</em> </li>
+<li><a class="el" href="gpio__cam__ctrl_8c.html#a9ea235d04c38558097d37bc2dacdef1e" title="Periodic. ">gpio_cam_ctrl_periodic()</a><ul>
+<li>Frequency in Hz: <em>10</em> </li>
 <li>Autorun: <em>TRUE</em> <br/>
  Periodic function automatically starts after init.</li>
 </ul>
@@ -175,7 +200,12 @@ Raw digital_cam.xml file:</h2>
 <div class="line"></div>
 <div class="line">&lt;module name=<span class="stringliteral">&quot;digital_cam&quot;</span>&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
-<div class="line">    &lt;description&gt;Digital camera control (trigger <span class="keyword">using</span> <a class="code" href="LPC21xx_8h.html#a1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>)&lt;/description&gt;</div>
+<div class="line">    &lt;description&gt;</div>
+<div class="line">      Digital Photo Camera Triggering (<span class="keyword">using</span> a <a class="code" href="LPC21xx_8h.html#a1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a> pin)</div>
+<div class="line"></div>
+<div class="line">      This module controls triggering of an attached external digital camera via one or more <a class="code" href="LPC21xx_8h.html#a1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a> pins <span class="keywordflow">for</span> on/off/shoot/zoom.</div>
+<div class="line">      It can trigger photos based on GPS distance, time or circle radius in both fixedwings and rotorcraft.</div>
+<div class="line">    &lt;/description&gt;</div>
 <div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_SHOOT_ON_BUTTON_RELEASE&quot;</span> description=<span class="stringliteral">&quot;if defined, call dc_send_shot_postion on button release instead of on push&quot;</span>/&gt;</div>
 <div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_SHUTTER_GPIO&quot;</span> value=<span class="stringliteral">&quot;GPIOC,GPIO12&quot;</span> description=<span class="stringliteral">&quot;mandatory, gpio to control shutter&quot;</span>/&gt;</div>
 <div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_ZOOM_IN_GPIO&quot;</span> value=<span class="stringliteral">&quot;GPIOC,GPIO2&quot;</span> description=<span class="stringliteral">&quot;optional, gpio to activate zoom in&quot;</span>/&gt;</div>
@@ -184,8 +214,10 @@ Raw digital_cam.xml file:</h2>
 <div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_POWER_OFF_GPIO&quot;</span> value=<span class="stringliteral">&quot;GPIOC,GPIO1&quot;</span> description=<span class="stringliteral">&quot;optional, gpio to turn power off&quot;</span>/&gt;</div>
 <div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_PUSH&quot;</span> value=<span class="stringliteral">&quot;gpio_set|gpio_clear&quot;</span> description=<span class="stringliteral">&quot;specifies whether to set or clear gpio to push the shutter (default: gpio_set)&quot;</span>/&gt;</div>
 <div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_RELEASE&quot;</span> value=<span class="stringliteral">&quot;gpio_clear|gpio_set&quot;</span> description=<span class="stringliteral">&quot;specifies whether to set or clear gpio to release the shutter (default: gpio_clear)&quot;</span>/&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_SHUTTER_DELAY&quot;</span> value=<span class="stringliteral">&quot;0.5&quot;</span> description=<span class="stringliteral">&quot;how long to push shutter in seconds&quot;</span>/&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_POWER_OFF_DELAY&quot;</span> value=<span class="stringliteral">&quot;0.75&quot;</span> description=<span class="stringliteral">&quot;how long to send power off in seconds&quot;</span>/&gt;</div>
 <div class="line"></div>
-<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_AUTOSHOOT_QUARTERSEC_PERIOD&quot;</span> value=<span class="stringliteral">&quot;6&quot;</span> description=<span class="stringliteral">&quot;quarter_second&quot;</span>/&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_AUTOSHOOT_PERIOD&quot;</span> value=<span class="stringliteral">&quot;1.0&quot;</span> description=<span class="stringliteral">&quot;time period for DC_AUTOSHOOT_PERIODIC in seconds&quot;</span>/&gt;</div>
 <div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_AUTOSHOOT_DISTANCE_INTERVAL&quot;</span> value=<span class="stringliteral">&quot;50&quot;</span> description=<span class="stringliteral">&quot;distance interval for DC_AUTOSHOOT_DISTANCE in meters&quot;</span>/&gt;</div>
 <div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_AUTOSHOOT_SURVEY_INTERVAL&quot;</span> value=<span class="stringliteral">&quot;50&quot;</span> description=<span class="stringliteral">&quot;distance interval for DC_AUTOSHOOT_SURVEY in meters&quot;</span>/&gt;</div>
 <div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_SHOT_SYNC_SEND&quot;</span> value=<span class="stringliteral">&quot;TRUE|FALSE&quot;</span> description=<span class="stringliteral">&quot;send DC_SHOT message when photo was taken (default: TRUE)&quot;</span>/&gt;</div>
@@ -202,11 +234,11 @@ Raw digital_cam.xml file:</h2>
 <div class="line">        &lt;/dl_setting&gt;</div>
 <div class="line"></div>
 <div class="line">        &lt;dl_setting max=<span class="stringliteral">&quot;3&quot;</span> min=<span class="stringliteral">&quot;0&quot;</span> <a class="code" href="max7456_8c.html#a4a2eb71e89c989655301c2f2070e29b3">step</a>=<span class="stringliteral">&quot;1&quot;</span> var=<span class="stringliteral">&quot;dc_autoshoot&quot;</span> values=<span class="stringliteral">&quot;STOP|PERIODIC|DISTANCE|EXT_TRIG&quot;</span>&gt;</div>
-<div class="line">          &lt;strip_button name=<span class="stringliteral">&quot;Start Autoshoot&quot;</span> icon=<span class="stringliteral">&quot;on.png&quot;</span> value=<span class="stringliteral">&quot;1&quot;</span> group=<span class="stringliteral">&quot;dcauto&quot;</span>/&gt;</div>
-<div class="line">          &lt;strip_button name=<span class="stringliteral">&quot;Stop Autoshoot&quot;</span> icon=<span class="stringliteral">&quot;off.png&quot;</span> value=<span class="stringliteral">&quot;0&quot;</span> group=<span class="stringliteral">&quot;dcauto&quot;</span>/&gt;</div>
+<div class="line">          &lt;strip_button name=<span class="stringliteral">&quot;Start Autoshoot&quot;</span> icon=<span class="stringliteral">&quot;dcstart.png&quot;</span> value=<span class="stringliteral">&quot;1&quot;</span> group=<span class="stringliteral">&quot;dcauto&quot;</span>/&gt;</div>
+<div class="line">          &lt;strip_button name=<span class="stringliteral">&quot;Stop Autoshoot&quot;</span> icon=<span class="stringliteral">&quot;dcstart.png&quot;</span> value=<span class="stringliteral">&quot;0&quot;</span> group=<span class="stringliteral">&quot;dcauto&quot;</span>/&gt;</div>
 <div class="line">        &lt;/dl_setting&gt;</div>
 <div class="line"></div>
-<div class="line">        &lt;dl_setting max=<span class="stringliteral">&quot;255&quot;</span> min=<span class="stringliteral">&quot;1&quot;</span> <a class="code" href="max7456_8c.html#a4a2eb71e89c989655301c2f2070e29b3">step</a>=<span class="stringliteral">&quot;1&quot;</span> var=<span class="stringliteral">&quot;dc_autoshoot_quartersec_period&quot;</span> shortname=<span class="stringliteral">&quot;Periodic&quot;</span> param=<span class="stringliteral">&quot;DC_AUTOSHOOT_QUARTERSEC_PERIOD&quot;</span> <a class="code" href="nav_8c.html#a04b783250b1673126fa3f4729cb2078e">unit</a>=<span class="stringliteral">&quot;quarter-sec&quot;</span>/&gt;</div>
+<div class="line">        &lt;dl_setting max=<span class="stringliteral">&quot;60&quot;</span> min=<span class="stringliteral">&quot;0.1&quot;</span> <a class="code" href="max7456_8c.html#a4a2eb71e89c989655301c2f2070e29b3">step</a>=<span class="stringliteral">&quot;0.5&quot;</span> var=<span class="stringliteral">&quot;dc_autoshoot_period&quot;</span> shortname=<span class="stringliteral">&quot;Periodic&quot;</span> param=<span class="stringliteral">&quot;DC_AUTOSHOOT_PERIOD&quot;</span> <a class="code" href="nav_8c.html#a04b783250b1673126fa3f4729cb2078e">unit</a>=<span class="stringliteral">&quot;sec&quot;</span>/&gt;</div>
 <div class="line">        &lt;dl_setting max=<span class="stringliteral">&quot;255&quot;</span> min=<span class="stringliteral">&quot;0&quot;</span> <a class="code" href="max7456_8c.html#a4a2eb71e89c989655301c2f2070e29b3">step</a>=<span class="stringliteral">&quot;1&quot;</span> var=<span class="stringliteral">&quot;dc_distance_interval&quot;</span> shortname=<span class="stringliteral">&quot;dist&quot;</span> param=<span class="stringliteral">&quot;DC_AUTOSHOOT_DISTANCE_INTERVAL&quot;</span> <a class="code" href="nav_8c.html#a04b783250b1673126fa3f4729cb2078e">unit</a>=<span class="stringliteral">&quot;meter&quot;</span>/&gt;</div>
 <div class="line"></div>
 <div class="line">        &lt;dl_setting max=<span class="stringliteral">&quot;250&quot;</span> min=<span class="stringliteral">&quot;0&quot;</span> <a class="code" href="max7456_8c.html#a4a2eb71e89c989655301c2f2070e29b3">step</a>=<span class="stringliteral">&quot;5&quot;</span> module=<span class="stringliteral">&quot;digital_cam/dc&quot;</span> var=<span class="stringliteral">&quot;dc_survey_interval&quot;</span> handler=<span class="stringliteral">&quot;Survey&quot;</span> shortname=<span class="stringliteral">&quot;Survey-Interval&quot;</span>/&gt;</div>
@@ -216,18 +248,18 @@ Raw digital_cam.xml file:</h2>
 <div class="line">    &lt;/dl_settings&gt;</div>
 <div class="line">  &lt;/settings&gt;</div>
 <div class="line"></div>
-<div class="line">  &lt;conflicts&gt;digital_cam_i2c,digital_cam_servo,digital_cam_uart&lt;/conflicts&gt;</div>
+<div class="line">  &lt;conflicts&gt;digital_cam_i2c,digital_cam_servo,digital_cam_uart,digital_cam_video&lt;/conflicts&gt;</div>
 <div class="line"></div>
-<div class="line">  &lt;<a class="code" href="stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963">header</a>&gt;</div>
+<div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;gpio_cam_ctrl.h&quot;</span>/&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;dc.h&quot;</span>/&gt;</div>
-<div class="line">  &lt;/<a class="code" href="stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963">header</a>&gt;</div>
+<div class="line">  &lt;/header&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;<a class="code" href="nav__gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;gpio_cam_ctrl_init()&quot;</span>/&gt;</div>
 <div class="line"></div>
-<div class="line">  &lt;periodic fun=<span class="stringliteral">&quot;gpio_cam_ctrl_periodic()&quot;</span> freq=<span class="stringliteral">&quot;4&quot;</span> autorun=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
+<div class="line">  &lt;periodic fun=<span class="stringliteral">&quot;gpio_cam_ctrl_periodic()&quot;</span> freq=<span class="stringliteral">&quot;10&quot;</span> autorun=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
 <div class="line"></div>
-<div class="line">  &lt;makefile target=<span class="stringliteral">&quot;ap|sim|nps|jsbsim&quot;</span>&gt;</div>
+<div class="line">  &lt;makefile target=<span class="stringliteral">&quot;ap|sim|nps&quot;</span>&gt;</div>
 <div class="line">    &lt;define name=<span class="stringliteral">&quot;DIGITAL_CAM&quot;</span> /&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;gpio_cam_ctrl.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;dc.c&quot;</span>/&gt;</div>
@@ -240,7 +272,7 @@ Raw digital_cam.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:18 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

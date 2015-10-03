@@ -1,7 +1,20 @@
 var imu_8h =
 [
-    [ "Imu", "structImu.html", "structImu" ],
-    [ "ImuFloat", "structImuFloat.html", "structImuFloat" ],
+    [ "Imu", "imu_8h.html#structImu", [
+      [ "accel", "imu_8h.html#aecac1be12d8d9c9c31be2ad9d5b90627", null ],
+      [ "accel_neutral", "imu_8h.html#ab126bba936ccd50bad68d42e83b81a28", null ],
+      [ "accel_prev", "imu_8h.html#ab29bc6fde030f41e3e990323a4fa2fd5", null ],
+      [ "accel_unscaled", "imu_8h.html#abf7c6149da2d7b989713f6fc919ccb10", null ],
+      [ "b2i_set_current", "imu_8h.html#a4ccb08fe4c14a871fdde308e98ed6641", null ],
+      [ "body_to_imu", "imu_8h.html#a3ce3df3bf961804f9af1616e53b98b7f", null ],
+      [ "gyro", "imu_8h.html#a556257d57db669a3e42ccc6c77fff286", null ],
+      [ "gyro_neutral", "imu_8h.html#aa15ae274818b1d781a10f3c3de482900", null ],
+      [ "gyro_prev", "imu_8h.html#a7ac65ce9270568f68550482ef718678c", null ],
+      [ "gyro_unscaled", "imu_8h.html#a65a1e2b593c19ba1254060fd9a2f5b75", null ],
+      [ "mag", "imu_8h.html#a6c4356739a6b97db247831e0be58849e", null ],
+      [ "mag_neutral", "imu_8h.html#aba6da90715844d686389574fbef30b4b", null ],
+      [ "mag_unscaled", "imu_8h.html#a01e131dee0a92335d91dabf61c33f627", null ]
+    ] ],
     [ "IMU_ACCEL_X_NEUTRAL", "imu_8h.html#a01dac8935d4166bc144b115219cddbc4", null ],
     [ "IMU_ACCEL_X_SIGN", "imu_8h.html#a4198979ecdab243efc790d5b739a4645", null ],
     [ "IMU_ACCEL_Y_NEUTRAL", "imu_8h.html#a199acc0383b0e1d7e3841bc3297cc0fb", null ],
@@ -31,6 +44,5 @@ var imu_8h =
     [ "imu_SetBodyToImuPhi", "imu_8h.html#ac50fba336ca2c337f240bab0db44f64e", null ],
     [ "imu_SetBodyToImuPsi", "imu_8h.html#a88ec31da12a499ee7b47fe11b4ccfa4e", null ],
     [ "imu_SetBodyToImuTheta", "imu_8h.html#a3e25b56c5719a23e494568696083459e", null ],
-    [ "imu", "imu_8h.html#a77b76ed533bc56f50d714f8958dd26cc", null ],
-    [ "imuf", "imu_8h.html#a0b385ab021e28ab712d6992299d9a6cf", null ]
+    [ "imu", "imu_8h.html#a77b76ed533bc56f50d714f8958dd26cc", null ]
 ];

@@ -1,6 +1,15 @@
 var traffic__info_8h =
 [
-    [ "ac_info_", "structac__info__.html", "structac__info__" ],
+    [ "ac_info_", "traffic__info_8h.html#structac__info__", [
+      [ "ac_id", "traffic__info_8h.html#a13a5d6883f33fededa3bdc3493596944", null ],
+      [ "alt", "traffic__info_8h.html#ad014a5a777970469f2679784a6da4eff", null ],
+      [ "climb", "traffic__info_8h.html#a21b8e3e16bcd96955735be674106529a", null ],
+      [ "course", "traffic__info_8h.html#ab10106df2a7dd5375b23aa94a6ed3a56", null ],
+      [ "east", "traffic__info_8h.html#a51c2e4bc1f3063b2ba749673ac78a8fd", null ],
+      [ "gspeed", "traffic__info_8h.html#a02cb50af678fbf17e6bc9c592cf76f3d", null ],
+      [ "itow", "traffic__info_8h.html#a2ac562d12dc606d1f44681238b106664", null ],
+      [ "north", "traffic__info_8h.html#a9a983598258354bb014b778667d80bc3", null ]
+    ] ],
     [ "NB_ACS", "traffic__info_8h.html#aa9ad271011923751218b103cae2e0bfd", null ],
     [ "NB_ACS_ID", "traffic__info_8h.html#aa556f49efe565705c817f8a7c01f97a9", null ],
     [ "SetAcInfo", "traffic__info_8h.html#a9c6b528a41fdb94abf2163b08523e82c", null ],

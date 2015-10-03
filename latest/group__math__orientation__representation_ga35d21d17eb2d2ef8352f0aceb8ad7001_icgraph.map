@@ -1,12 +1,44 @@
 <map id="orientationSetQuat_f" name="orientationSetQuat_f">
-<area shape="rect" id="node3" href="$group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float). " alt="" coords="209,127,399,155"/>
-<area shape="rect" id="node5" href="$ahrs__float__cmpl_8h.html#a542422de172f1f25b7987850825cb587" title="Hard reset yaw to a heading. " alt="" coords="467,22,624,50"/>
-<area shape="rect" id="node9" href="$ahrs__float__cmpl_8c.html#a2e90a05e5a4ca369d0308bb72e68171d" title="Compute body orientation and rates from imu orientation and rates. " alt="" coords="449,90,641,134"/>
-<area shape="rect" id="node15" href="$ahrs__float__mlkf_8c.html#abea8ede7c8ebc5179487d3464ab513bb" title="Compute body orientation and rates from imu orientation and rates. " alt="" coords="449,157,641,185"/>
-<area shape="rect" id="node21" href="$ins__float__invariant_8c.html#a4e5064cff25b95f0631d5184d779ee43" title="Propagation. " alt="" coords="484,207,607,235"/>
-<area shape="rect" id="node7" href="$ahrs__float__cmpl_8c.html#a0156f6669675c216bbcb413ea1879960" title="Update AHRS state with GPS measurements. " alt="" coords="692,5,823,33"/>
-<area shape="rect" id="node11" href="$ahrs__float__cmpl_8c.html#a81e17b09f47068c02c345da1523f589b" title="Aligns the AHRS. " alt="" coords="715,55,800,83"/>
-<area shape="rect" id="node13" href="$ahrs__float__cmpl_8c.html#a4e5064cff25b95f0631d5184d779ee43" title="Propagation. " alt="" coords="696,106,819,134"/>
-<area shape="rect" id="node17" href="$ahrs__float__mlkf_8c.html#a81e17b09f47068c02c345da1523f589b" title="Aligns the AHRS. " alt="" coords="715,157,800,185"/>
-<area shape="rect" id="node19" href="$ahrs__float__mlkf_8c.html#a4e5064cff25b95f0631d5184d779ee43" title="Propagation. " alt="" coords="696,207,819,235"/>
+<area shape="rect" id="node3" href="$ahrs__float__dcm_8h.html#afe8393fd937ef9065e871dc5623510f2" title="ahrs_dcm_set_body_to\l_imu_quat" alt="" coords="219,47,389,91"/>
+<area shape="rect" id="node11" href="$ahrs__float__cmpl_8h.html#af7031b11bbdd78128a0f654b1e95aeec" title="ahrs_fc_set_body_to\l_imu_quat" alt="" coords="228,567,380,611"/>
+<area shape="rect" id="node19" href="$ahrs__float__invariant_8h.html#a5d42aa512bbdfec115ec173eec6de40d" title="ahrs_float_inv_set\l_body_to_imu_quat" alt="" coords="231,638,377,682"/>
+<area shape="rect" id="node25" href="$ahrs__int__cmpl__euler_8h.html#a0be5cbcb18a39fc84c71135b37c1dab5" title="ahrs_ice_set_body_to\l_imu_quat" alt="" coords="224,714,384,758"/>
+<area shape="rect" id="node33" href="$ahrs__int__cmpl__quat_8h.html#af4f86e2321466fd50aae62120f20eae4" title="ahrs_icq_set_body_to\l_imu_quat" alt="" coords="224,815,384,859"/>
+<area shape="rect" id="node41" href="$ahrs__float__mlkf_8h.html#a7141f7d6d16d040b38e15c0f3f3fbe47" title="ahrs_mlkf_set_body\l_to_imu_quat" alt="" coords="229,215,379,259"/>
+<area shape="rect" id="node49" href="$ins__alt__float_8c.html#ab5f6300c213088a4ea0598baafb5e736" title="body_to_imu_cb" alt="" coords="241,903,367,931"/>
+<area shape="rect" id="node53" href="$ins__float__invariant_8h.html#ad770f4835ea32cfbb8c9ae96100a05e2" title="ins_float_inv_set_body\l_to_imu_quat" alt="" coords="221,131,387,175"/>
+<area shape="rect" id="node59" href="$group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float). " alt="" coords="209,409,399,437"/>
+<area shape="rect" id="node5" href="$ahrs__float__dcm_8h.html#a7f3247a388db0709627a935f09a7b406" title="ahrs_dcm_set_body_to_imu" alt="" coords="449,5,649,33"/>
+<area shape="rect" id="node7" href="$ahrs__float__dcm__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736" title="body_to_imu_cb" alt="" coords="487,55,612,83"/>
+<area shape="rect" id="node9" href="$ahrs__float__dcm__wrapper_8h.html#a18235ffdb70868861d5424fe8c4bafa5" title="ahrs_dcm_register" alt="" coords="701,55,843,83"/>
+<area shape="rect" id="node13" href="$ahrs__float__cmpl_8h.html#abcc12ae7ea66597015282905a669d8e6" title="ahrs_fc_set_body_to_imu" alt="" coords="457,621,641,649"/>
+<area shape="rect" id="node15" href="$ahrs__float__cmpl__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736" title="body_to_imu_cb" alt="" coords="709,663,835,691"/>
+<area shape="rect" id="node17" href="$ahrs__float__cmpl__wrapper_8h.html#aa47cd2e2f95362dd732bac1f275344e0" title="ahrs_fc_register" alt="" coords="903,587,1025,615"/>
+<area shape="rect" id="node21" href="$ahrs__float__invariant__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736" title="body_to_imu_cb" alt="" coords="487,671,612,699"/>
+<area shape="rect" id="node23" href="$ahrs__float__invariant__wrapper_8h.html#af929b6f9cb8695819d29bdacca1f24f0" title="ahrs_float_invariant\l_register" alt="" coords="699,714,845,758"/>
+<area shape="rect" id="node27" href="$ahrs__int__cmpl__euler_8h.html#a40fcc3122d1bac5f0d575ed95c64573a" title="ahrs_ice_set_body_to_imu" alt="" coords="455,722,644,750"/>
+<area shape="rect" id="node29" href="$ahrs__int__cmpl__euler__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736" title="body_to_imu_cb" alt="" coords="487,773,612,801"/>
+<area shape="rect" id="node31" href="$ahrs__int__cmpl__euler__wrapper_8h.html#a9381a05bdc4709a1da0c7eae9b5d9fbc" title="ahrs_ice_register" alt="" coords="707,781,837,809"/>
+<area shape="rect" id="node35" href="$ahrs__int__cmpl__quat_8h.html#a8e3ef1cad28d70b692c4fce45d291ae8" title="ahrs_icq_set_body_to_imu" alt="" coords="455,823,644,851"/>
+<area shape="rect" id="node37" href="$ahrs__int__cmpl__quat__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736" title="body_to_imu_cb" alt="" coords="487,874,612,902"/>
+<area shape="rect" id="node39" href="$ahrs__int__cmpl__quat__wrapper_8h.html#af71a2cd8d6fabc9373e99e2aeddbbb89" title="ahrs_icq_register" alt="" coords="707,874,837,902"/>
+<area shape="rect" id="node43" href="$ahrs__float__mlkf_8h.html#a91ca1fddae202f8c91628a150ec45191" title="ahrs_mlkf_set_body\l_to_imu" alt="" coords="475,157,624,201"/>
+<area shape="rect" id="node45" href="$ahrs__float__mlkf__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736" title="body_to_imu_cb" alt="" coords="709,207,835,235"/>
+<area shape="rect" id="node47" href="$ahrs__float__mlkf__wrapper_8h.html#adf9165ad7440f11e3dae35391f5844d6" title="ahrs_mlkf_register" alt="" coords="895,359,1033,387"/>
+<area shape="rect" id="node51" href="$ins__alt__float_8h.html#af3abcc755f69a23a02e5c1345bbcae90" title="ins_altf_register" alt="" coords="488,925,611,953"/>
+<area shape="rect" id="node55" href="$ins__float__invariant__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736" title="body_to_imu_cb" alt="" coords="487,106,612,134"/>
+<area shape="rect" id="node57" href="$ins__float__invariant__wrapper_8h.html#acbc99bce5ffb373e21280ebaad9faa37" title="ins_float_invariant\l_register" alt="" coords="896,149,1032,193"/>
+<area shape="rect" id="node61" href="$ahrs__float__cmpl__wrapper_8c.html#a2e90a05e5a4ca369d0308bb72e68171d" title="Compute body orientation and rates from imu orientation and rates. " alt="" coords="453,503,645,547"/>
+<area shape="rect" id="node72" href="$ahrs__float__mlkf__wrapper_8c.html#abea8ede7c8ebc5179487d3464ab513bb" title="Compute body orientation and rates from imu orientation and rates. " alt="" coords="453,409,645,437"/>
+<area shape="rect" id="node86" href="$ins__float__invariant_8h.html#ae9a20811bed7797c9f978e144bd61fcc" title="ins_float_invariant\l_align" alt="" coords="481,274,617,318"/>
+<area shape="rect" id="node91" href="$ins__float__invariant_8h.html#a31039d880986ce20c2e10c812684982e" title="ins_float_invariant\l_propagate" alt="" coords="481,341,617,385"/>
+<area shape="rect" id="node63" href="$ahrs__float__cmpl__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="729,562,815,590"/>
+<area shape="rect" id="node66" href="$ahrs__float__cmpl__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="739,613,805,641"/>
+<area shape="rect" id="node69" href="$ahrs__float__cmpl__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="736,511,808,539"/>
+<area shape="rect" id="node74" href="$ahrs__float__mlkf__wrapper_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title="accel_cb" alt="" coords="733,461,811,489"/>
+<area shape="rect" id="node77" href="$ahrs__float__mlkf__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="729,309,815,337"/>
+<area shape="rect" id="node80" href="$ahrs__float__mlkf__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="736,359,808,387"/>
+<area shape="rect" id="node83" href="$ahrs__float__mlkf__wrapper_8c.html#a49cc1e545848b85016af530049991c02" title="mag_cb" alt="" coords="736,410,808,438"/>
+<area shape="rect" id="node88" href="$ins__float__invariant__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="729,157,815,185"/>
+<area shape="rect" id="node93" href="$ins__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ins_float_invariant_propagate on new gyro measurements. " alt="" coords="736,258,808,286"/>
 </map>

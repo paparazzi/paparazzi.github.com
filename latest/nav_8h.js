@@ -2,7 +2,6 @@ var nav_8h =
 [
     [ "CloseDegAngles", "nav_8h.html#ac7337f6adcdaff21acccd2f32070b666", null ],
     [ "DistanceSquare", "nav_8h.html#ac72e29d6c97b6ae1fcf957fa59c69215", null ],
-    [ "DownlinkSendWp", "nav_8h.html#ab300af3ef7ab11588e87ed42a7096b81", null ],
     [ "Eight", "nav_8h.html#aefc5a52ca873a9bfb3e1d31a261338a4", null ],
     [ "GetAltRef", "nav_8h.html#a24891072dad1936c21f884d623bda8b4", null ],
     [ "GetPosAlt", "nav_8h.html#a0bb5f5ae29ba1d5968fe7857a304253e", null ],
@@ -36,7 +35,6 @@ var nav_8h =
     [ "NavVerticalThrottleMode", "nav_8h.html#a6f740d9f9313ba73fa7dcd9dd53c4440", null ],
     [ "NormCourse", "nav_8h.html#a397bca15d146964a80f93abd74763384", null ],
     [ "Oval", "nav_8h.html#a3e1c9983a7508c42235e2fead19db8b1", null ],
-    [ "SEND_NAVIGATION", "nav_8h.html#a5b7ee5828a4a65359ce9393a365f5d2d", null ],
     [ "Square", "nav_8h.html#a5b322de63943d278a002687f820ac41c", null ],
     [ "oval_status", "nav_8h.html#a6b504fc3b9e256669f3d93dff3372bcf", [
       [ "OR12", "nav_8h.html#a6b504fc3b9e256669f3d93dff3372bcfa65e326a040572bfc5a61c079d8bfca25", null ],
@@ -44,7 +42,6 @@ var nav_8h =
       [ "OR21", "nav_8h.html#a6b504fc3b9e256669f3d93dff3372bcfae5d99807c6a564838a7fed8239ef311b", null ],
       [ "OC1", "nav_8h.html#a6b504fc3b9e256669f3d93dff3372bcfa5f636214b976745986c087710a2dde17", null ]
     ] ],
-    [ "DownlinkSendWpNr", "nav_8h.html#ab2da44f71166c7037faefe7c9250324d", null ],
     [ "fly_to_xy", "nav_8h.html#ae9d11d2e378b23ecbee86419cbf341f0", null ],
     [ "nav_approaching_xy", "nav_8h.html#a771b907350b836982ba4e31fd4bcbf4b", null ],
     [ "nav_circle_XY", "nav_8h.html#ad1b9d2e8da4a32477ca8bedc0bca86fe", null ],

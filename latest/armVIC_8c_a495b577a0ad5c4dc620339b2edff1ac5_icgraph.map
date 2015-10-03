@@ -1,14 +1,24 @@
 <map id="disableIRQ" name="disableIRQ">
-<area shape="rect" id="node3" href="$lpc21_2subsystems_2settings__arch_8c.html#ad823eefc2cb06fb3581e165cabbbc053" title="flash_detect" alt="" coords="173,5,272,33"/>
-<area shape="rect" id="node9" href="$group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="177,55,268,83"/>
-<area shape="rect" id="node11" href="$lpc21_2subsystems_2settings__arch_8c.html#a0c1ad7afd13542ed562e34d271f70200" title="pflash_erase_page" alt="" coords="152,106,293,134"/>
-<area shape="rect" id="node16" href="$lpc21_2subsystems_2settings__arch_8c.html#ad8bba057f6e6c970367af049d0fed019" title="pflash_program_array" alt="" coords="141,157,304,185"/>
-<area shape="rect" id="node19" href="$group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="177,207,268,235"/>
-<area shape="rect" id="node21" href="$lpc21_2mcu__periph_2uart__arch_8c.html#a916fbda270604fca87f8bc235ddcbaaa" title="uart_transmit" alt="" coords="168,258,277,286"/>
-<area shape="rect" id="node23" href="$usb__serial_8h.html#a184633f63ad351d8e70857d9e5ba4a3e" title="Reads one character from VCOM port. " alt="" coords="164,309,281,337"/>
-<area shape="rect" id="node5" href="$lpc21_2subsystems_2settings__arch_8c.html#a4d0dc6e4cdefbf2eeba08f82b8e15a37" title="persistent_read" alt="" coords="373,5,496,33"/>
-<area shape="rect" id="node7" href="$lpc21_2subsystems_2settings__arch_8c.html#a1497901ac40153b238ee0524257a5f3b" title="persistent_write" alt="" coords="565,81,688,109"/>
-<area shape="rect" id="node13" href="$lpc21_2subsystems_2settings__arch_8c.html#ad0920fb7b78f3fea6b76c53ea0cd61b0" title="pflash_program_bytes" alt="" coords="353,106,516,134"/>
-<area shape="rect" id="node25" href="$usb__tunnel_8c.html#a716cf006b01443e43d0c22bace6803c6" title="tunnel_event" alt="" coords="383,309,487,337"/>
-<area shape="rect" id="node27" href="$usb__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="600,309,653,337"/>
+<area shape="rect" id="node3" href="$lpc21_2subsystems_2settings__arch_8c.html#ad823eefc2cb06fb3581e165cabbbc053" title="flash_detect" alt="" coords="173,30,272,58"/>
+<area shape="rect" id="node11" href="$group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="177,81,268,109"/>
+<area shape="rect" id="node13" href="$lpc21_2subsystems_2settings__arch_8c.html#a0c1ad7afd13542ed562e34d271f70200" title="pflash_erase_page" alt="" coords="152,131,293,159"/>
+<area shape="rect" id="node19" href="$lpc21_2subsystems_2settings__arch_8c.html#ad8bba057f6e6c970367af049d0fed019" title="pflash_program_array" alt="" coords="141,182,304,210"/>
+<area shape="rect" id="node22" href="$group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="177,233,268,261"/>
+<area shape="rect" id="node24" href="$lpc21_2mcu__periph_2uart__arch_8c.html#a9f05d3eb95c183bef5415a72953be125" title="uart_put_byte" alt="" coords="168,283,277,311"/>
+<area shape="rect" id="node26" href="$usb__serial_8h.html#a184633f63ad351d8e70857d9e5ba4a3e" title="Reads one character from VCOM port. " alt="" coords="164,334,281,362"/>
+<area shape="rect" id="node5" href="$lpc21_2subsystems_2settings__arch_8c.html#a96bbf08af032ab9c1e7c15c66eb2d513" title="persistent_clear" alt="" coords="373,106,496,134"/>
+<area shape="rect" id="node7" href="$lpc21_2subsystems_2settings__arch_8c.html#a6d60026540670a5fc2ac03dee06c791e" title="persistent_read" alt="" coords="373,5,496,33"/>
+<area shape="rect" id="node9" href="$lpc21_2subsystems_2settings__arch_8c.html#a069b2bcf8fcf2d115466efa163c7583e" title="persistent_write" alt="" coords="565,106,688,134"/>
+<area shape="rect" id="node16" href="$lpc21_2subsystems_2settings__arch_8c.html#ad0920fb7b78f3fea6b76c53ea0cd61b0" title="pflash_program_bytes" alt="" coords="353,157,516,185"/>
+<area shape="rect" id="node28" href="$lpc21_2usb__ser__hw_8c.html#ad20f86d5fa3af479482b8a7571d7953b" title="usb_serial_getch" alt="" coords="371,359,499,387"/>
+<area shape="rect" id="node48" href="$usb__tunnel_8c.html#a716cf006b01443e43d0c22bace6803c6" title="tunnel_event" alt="" coords="575,309,679,337"/>
+<area shape="rect" id="node30" href="$usb__serial_8h.html#a96a54f28bfc8bc28963cd2fac74609cd" title="VCOM_init" alt="" coords="584,359,669,387"/>
+<area shape="rect" id="node32" href="$usb__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="765,309,819,337"/>
+<area shape="rect" id="node34" href="$group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="755,359,829,387"/>
+<area shape="rect" id="node46" href="$usb__serial__stm32__example1_8c.html#ac73c5eebbfb361dcbf74a648eda5e007" title="Init module, call VCOM_init() from here. " alt="" coords="736,410,848,438"/>
+<area shape="rect" id="node36" href="$lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="909,309,963,337"/>
+<area shape="rect" id="node38" href="$demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="896,359,976,387"/>
+<area shape="rect" id="node42" href="$main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="901,410,971,438"/>
+<area shape="rect" id="node40" href="$demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1033,359,1087,387"/>
+<area shape="rect" id="node44" href="$sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="1025,410,1095,438"/>
 </map>

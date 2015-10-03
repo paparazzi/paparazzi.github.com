@@ -1,17 +1,18 @@
 <map id="stateGetSpeedNed_f" name="stateGetSpeedNed_f">
-<area shape="rect" id="node3" href="$rotorcraft_2autopilot_8h.html#a82c57502deaf7fb0dc0525b298611a87" title="autopilot_check_in\l_flight" alt="" coords="219,45,357,89"/>
-<area shape="rect" id="node15" href="$ins__alt__float_8c.html#a3c7bfebd16999823476aada2b31b426e" title="baro_cb" alt="" coords="252,111,324,139"/>
-<area shape="rect" id="node27" href="$mavlink_8c.html#a8e376e67cc8a8a15e91a7e9fae593646" title="mavlink_send_global\l_position_int" alt="" coords="211,162,365,206"/>
-<area shape="rect" id="node31" href="$mavlink_8c.html#a025c0ce53320b2bf9418a94bd9e5e726" title="mavlink_send_local\l_position_ned" alt="" coords="216,229,360,273"/>
-<area shape="rect" id="node5" href="$main_8h.html#a6266a73fe8c0512f1de72cea96e5110b" title="failsafe_check" alt="" coords="423,53,532,81"/>
-<area shape="rect" id="node7" href="$main_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="589,53,752,81"/>
-<area shape="rect" id="node9" href="$fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="813,5,867,33"/>
-<area shape="rect" id="node11" href="$main__chibios__libopencm3_8c.html#ad648a546fe66cd5f9328f33221a40c64" title="pprz_thd" alt="" coords="801,55,879,83"/>
-<area shape="rect" id="node13" href="$main__chibios__libopencm3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="929,55,983,83"/>
-<area shape="rect" id="node17" href="$ins_8h.html#abf3028c2ada542781b8a5e1eb20c17ce" title="INS initialization. " alt="" coords="444,111,511,139"/>
-<area shape="rect" id="node19" href="$main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="639,110,703,138"/>
-<area shape="rect" id="node23" href="$main_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="main_init" alt="" coords="631,161,711,189"/>
-<area shape="rect" id="node21" href="$sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="805,110,875,138"/>
-<area shape="rect" id="node25" href="$rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="813,161,867,189"/>
-<area shape="rect" id="node29" href="$mavlink_8h.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls. " alt="" coords="413,203,541,231"/>
+<area shape="rect" id="node3" href="$rotorcraft_2autopilot_8h.html#a82c57502deaf7fb0dc0525b298611a87" title="autopilot_check_in\l_flight" alt="" coords="235,43,373,87"/>
+<area shape="rect" id="node15" href="$guidance__indi_8h.html#a24d1024bbd8da21b6c70317fda39d929" title="guidance_indi_run" alt="" coords="236,110,372,138"/>
+<area shape="rect" id="node23" href="$ins__alt__float_8h.html#afb6a5cd07b6574dfb93f023aecfcec5d" title="ins_alt_float_update_baro" alt="" coords="211,161,397,189"/>
+<area shape="rect" id="node29" href="$mavlink_8c.html#a8e376e67cc8a8a15e91a7e9fae593646" title="mavlink_send_global\l_position_int" alt="" coords="227,211,381,255"/>
+<area shape="rect" id="node33" href="$mavlink_8c.html#a025c0ce53320b2bf9418a94bd9e5e726" title="mavlink_send_local\l_position_ned" alt="" coords="232,278,376,322"/>
+<area shape="rect" id="node5" href="$main_8h.html#a6266a73fe8c0512f1de72cea96e5110b" title="failsafe_check" alt="" coords="455,51,564,79"/>
+<area shape="rect" id="node7" href="$main_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="621,51,784,79"/>
+<area shape="rect" id="node9" href="$fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="861,5,915,33"/>
+<area shape="rect" id="node11" href="$main__chibios__libopencm3_8c.html#ad648a546fe66cd5f9328f33221a40c64" title="pprz_thd" alt="" coords="849,55,927,83"/>
+<area shape="rect" id="node13" href="$main__chibios__libopencm3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="993,55,1047,83"/>
+<area shape="rect" id="node17" href="$guidance__h_8h.html#ac4cf6da90a4278b4d0b2e4f227b33f2c" title="guidance_h_run" alt="" coords="448,110,571,138"/>
+<area shape="rect" id="node19" href="$rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="636,110,769,138"/>
+<area shape="rect" id="node21" href="$main_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="833,110,943,138"/>
+<area shape="rect" id="node25" href="$ins__alt__float_8c.html#a7fdc16072298b2db800864d08d72945a" title="baro_cb" alt="" coords="473,161,545,189"/>
+<area shape="rect" id="node27" href="$ins__alt__float_8h.html#af3abcc755f69a23a02e5c1345bbcae90" title="ins_altf_register" alt="" coords="641,161,764,189"/>
+<area shape="rect" id="node31" href="$mavlink_8h.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls. " alt="" coords="445,253,573,281"/>
 </map>

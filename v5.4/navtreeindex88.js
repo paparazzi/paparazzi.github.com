@@ -1,5 +1,7 @@
 var NAVTREEINDEX88 =
 {
+"subsystems_2sensors_2infrared__i2c_8h.html#ab7aba3256c7414ae390fcb4c0b67d700":[10,0,0,0,8,8,6,6],
+"subsystems_2sensors_2infrared__i2c_8h.html#ad6a28754456593b0e38d39f6f56f13c5":[10,0,0,0,8,8,6,8],
 "subsystems_2sensors_2infrared__i2c_8h.html#ad7dde081ca03601c0fb01ee054af974b":[10,0,0,0,8,8,6,3],
 "subsystems_2sensors_2infrared__i2c_8h_source.html":[10,0,0,0,8,8,6],
 "superbitrf__rc_8c.html":[10,0,0,0,8,7,19],
@@ -247,7 +249,5 @@ var NAVTREEINDEX88 =
 "temp__temod_8c.html#a40dbb5e2d191dcd22c11a598d5169295":[10,0,0,0,6,32,34,3],
 "temp__temod_8c.html#a62a48fa6936acc53e24474f4a00f1bda":[10,0,0,0,6,32,34,1],
 "temp__temod_8c.html#a72d8f8853a63fbe6a7400ebabef0ed55":[10,0,0,0,6,32,34,0],
-"temp__temod_8c.html#aaaf211bc5462b03ca020351920b40586":[10,0,0,0,6,32,34,6],
-"temp__temod_8c.html#acaab54d6e397dba4b085c68b909c6c11":[10,0,0,0,6,32,34,5],
-"temp__temod_8c.html#ad42cc3c798b6aa0588a247d81fffb2e5":[10,0,0,0,6,32,34,2]
+"temp__temod_8c.html#aaaf211bc5462b03ca020351920b40586":[10,0,0,0,6,32,34,6]
 };

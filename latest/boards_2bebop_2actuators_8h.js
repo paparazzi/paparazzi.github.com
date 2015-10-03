@@ -1,6 +1,11 @@
 var boards_2bebop_2actuators_8h =
 [
-    [ "ActuatorsBebop", "structActuatorsBebop.html", "structActuatorsBebop" ],
+    [ "ActuatorsBebop", "boards_2bebop_2actuators_8h.html#structActuatorsBebop", [
+      [ "i2c_trans", "boards_2bebop_2actuators_8h.html#a4b84ef7694773a4749bb3b8aaceea553", null ],
+      [ "led", "boards_2bebop_2actuators_8h.html#a056a4ceea6f849d99692fdc03156cf05", null ],
+      [ "rpm_obs", "boards_2bebop_2actuators_8h.html#a93d0edf433000d67ce5c18937aff9850", null ],
+      [ "rpm_ref", "boards_2bebop_2actuators_8h.html#a5274ad91c1c87c599105c684800acd56", null ]
+    ] ],
     [ "ACTUATORS_BEBOP_ADDR", "boards_2bebop_2actuators_8h.html#a726e8ccf66d570716449aab56d196570", null ],
     [ "ACTUATORS_BEBOP_CLEAR_ERROR", "boards_2bebop_2actuators_8h.html#abe836f2dbeb41f5239443970ecdc3f04", null ],
     [ "ACTUATORS_BEBOP_GET_INFO", "boards_2bebop_2actuators_8h.html#a673048da11ff9eb3b6f4850724b0a3c9", null ],

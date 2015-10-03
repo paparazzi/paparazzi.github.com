@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('module__geo_mag.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -104,8 +104,14 @@ $(document).ready(function(){initNavTree('module__geo_mag.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Module XML file: <code>geo_mag.xml</code> </p>
-<p>Calculation of the normalized geomagnetic field vector (saved to ahrs_impl.mag_h) at startup using GPS fix. Based on the WMM2010 model (<a href="http://www.ngdc.noaa.gov/geomag/models.shtml">http://www.ngdc.noaa.gov/geomag/models.shtml</a>).</p>
-<h1><a class="anchor" id="functions"></a>
+<p>Calculation of the normalized geomagnetic field vector at startup as soon as a valid location is aquired. The result is published via the GEO_MAG ABI message. The AHRS algorithms need to know the magnetic field vector at the current position in order to accurately calculate the heading.</p>
+<p>Method uses is based on the the ngdc noaa DODWMM model and data (<a href="http://www.ngdc.noaa.gov/geomag/WMM/DoDWMM.shtml">http://www.ngdc.noaa.gov/geomag/WMM/DoDWMM.shtml</a>). The WMM is based on earth magnetic field measuring at an high number of sites on the whole globe and on its mathematical representation through a series of characteristic values listed in a file (WMM.COF) which has a five-year validity. The autopilot used data derived from this file to make the complex calculation of declination. Every 5 years (2015, 2020) an updated geomagnetic model is released and datatables in the code must be updated accordingly for more accurate flight.</p>
+<h1><a class="anchor" id="module_load_example__geo_mag"></a>
+Example for airframe file</h1>
+<div class="fragment"><div class="line">&lt;modules&gt;</div>
+<div class="line">  &lt;load name=<span class="stringliteral">&quot;geo_mag.xml&quot;</span>/&gt;</div>
+<div class="line">&lt;/modules&gt;</div>
+</div><!-- fragment --> <h1><a class="anchor" id="functions"></a>
 Module functions</h1>
 <h2><a class="anchor" id="init_functions"></a>
 Init Functions</h2>
@@ -142,7 +148,7 @@ Header Files</h2>
 Source Files</h2>
 <ul>
 <li><a class="el" href="geo__mag_8c.html">modules/geo_mag/geo_mag.c</a></li>
-<li><a class="el" href="pprz__geodetic__wmm2010_8c.html">math/pprz_geodetic_wmm2010.c</a></li>
+<li><a class="el" href="pprz__geodetic__wmm2015_8c.html">math/pprz_geodetic_wmm2015.c</a></li>
 </ul>
 <h2><a class="anchor" id="module_xml__geo_mag"></a>
 Raw geo_mag.xml file:</h2>
@@ -152,19 +158,32 @@ Raw geo_mag.xml file:</h2>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;</div>
 <div class="line">      GeoMagnetic field vector.</div>
-<div class="line">      Calculation of the normalized geomagnetic field vector (saved to <a class="code" href="ins__float__invariant_8h.html#a49dda856fb9f47ef635dca5069bdd730">ahrs_impl</a>.mag_h) at startup <span class="keyword">using</span> GPS fix.</div>
-<div class="line">      Based on the WMM2010 model (http:<span class="comment">//www.ngdc.noaa.gov/geomag/models.shtml).</span></div>
+<div class="line">      Calculation of the normalized geomagnetic field vector at startup as soon as a valid location is aquired.</div>
+<div class="line">      The result is published via the GEO_MAG ABI message.</div>
+<div class="line">      The AHRS algorithms need to know the magnetic field vector at the <a class="code" href="fixedwing_2autopilot_8c.html#ae6a404c4d3d4da15402e4a8629e7e272" title="Supply current in milliAmpere. ">current</a> position in order to accurately calculate the <a class="code" href="ahrs__infrared_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a>.</div>
+<div class="line"></div>
+<div class="line">      Method uses is based on the the ngdc noaa DODWMM model and data (http:<span class="comment">//www.ngdc.noaa.gov/geomag/WMM/DoDWMM.shtml).</span></div>
+<div class="line">      The WMM is based on earth magnetic field measuring at an high number of sites on the whole globe and on its mathematical representation through a series of characteristic values listed in a file (WMM.COF) which has a five-year validity.</div>
+<div class="line">      The autopilot used data derived from <span class="keyword">this</span> file to make the <a class="code" href="pprz__geodetic__float_8c.html#structcomplex">complex</a> calculation of declination.</div>
+<div class="line">      Every 5 years (2015, 2020) an updated geomagnetic model is released and datatables in the code must be updated accordingly <span class="keywordflow">for</span> more accurate flight.</div>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
-<div class="line">  &lt;<a class="code" href="stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963">header</a>&gt;</div>
+<div class="line">  &lt;settings&gt;</div>
+<div class="line">    &lt;dl_settings&gt;</div>
+<div class="line">      &lt;dl_settings name=<span class="stringliteral">&quot;geo_mag&quot;</span>&gt;</div>
+<div class="line">        &lt;dl_setting min=<span class="stringliteral">&quot;0&quot;</span> max=<span class="stringliteral">&quot;1&quot;</span> <a class="code" href="max7456_8c.html#a4a2eb71e89c989655301c2f2070e29b3">step</a>=<span class="stringliteral">&quot;1&quot;</span> values=<span class="stringliteral">&quot;OFF|CALC&quot;</span> var=<span class="stringliteral">&quot;geo_mag.calc_once&quot;</span> module=<span class="stringliteral">&quot;geo_mag/geo_mag&quot;</span> shortname=<span class="stringliteral">&quot;calcNow&quot;</span>/&gt;</div>
+<div class="line">      &lt;/dl_settings&gt;</div>
+<div class="line">    &lt;/dl_settings&gt;</div>
+<div class="line">  &lt;/settings&gt;</div>
+<div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;geo_mag.h&quot;</span>/&gt;</div>
-<div class="line">  &lt;/<a class="code" href="stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963">header</a>&gt;</div>
+<div class="line">  &lt;/header&gt;</div>
 <div class="line">  &lt;<a class="code" href="nav__gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;geo_mag_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;periodic fun=<span class="stringliteral">&quot;geo_mag_periodic()&quot;</span> freq=<span class="stringliteral">&quot;1&quot;</span>/&gt;</div>
 <div class="line">  &lt;event fun=<span class="stringliteral">&quot;geo_mag_event()&quot;</span>/&gt;</div>
 <div class="line">  &lt;makefile target=<span class="stringliteral">&quot;ap|nps&quot;</span>&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;geo_mag.c&quot;</span>/&gt;</div>
-<div class="line">    &lt;file name=<span class="stringliteral">&quot;pprz_geodetic_wmm2010.c&quot;</span> dir=<span class="stringliteral">&quot;math&quot;</span>/&gt;</div>
+<div class="line">    &lt;file name=<span class="stringliteral">&quot;pprz_geodetic_wmm2015.c&quot;</span> dir=<span class="stringliteral">&quot;math&quot;</span>/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">  &lt;makefile target=<span class="stringliteral">&quot;nps&quot;</span>&gt;</div>
 <div class="line">    &lt;define name=<span class="stringliteral">&quot;NPS_CALC_GEO_MAG&quot;</span>/&gt;</div>
@@ -176,7 +195,7 @@ Raw geo_mag.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:18 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('globals_defs_0x63.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -397,12 +397,18 @@ $(document).ready(function(){initNavTree('globals_defs_0x63.html','');});
 <li>CAM_V_GPIO_PIN
 : <a class="el" href="krooz__sd_8h.html#a3eafbe9908e14cd20b689c28cfe51d7e">krooz_sd.h</a>
 </li>
-<li>CameraBuffer
-: <a class="el" href="uart__cam__ctrl_8c.html#a52ae84b710f6e5b16f7493f598c7285f">uart_cam_ctrl.c</a>
+<li>CameraLinkChAvailable
+: <a class="el" href="uart__cam__ctrl_8c.html#aae7795e1e0bb98fc7db527ca3c5b10db">uart_cam_ctrl.c</a>
 </li>
-<li>CameraLink
-: <a class="el" href="std_8h.html#a39f9fd083e1201b24e555ac5a164853a">std.h</a>
-, <a class="el" href="uart__cam__ctrl_8c.html#a39f9fd083e1201b24e555ac5a164853a">uart_cam_ctrl.c</a>
+<li>CameraLinkDev
+: <a class="el" href="uart__cam__ctrl_8c.html#add9e23666ee8e4147fe4659a425444f3">uart_cam_ctrl.c</a>
+</li>
+<li>CameraLinkGetch
+: <a class="el" href="uart__cam__ctrl_8c.html#ae75663ea754199a5cbef7335ec93a87b">uart_cam_ctrl.c</a>
+</li>
+<li>CameraLinkTransmit
+: <a class="el" href="std_8h.html#ab2fe19806b7062e58d31f03baabeb933">std.h</a>
+, <a class="el" href="uart__cam__ctrl_8c.html#a1f56cfc8d05c16a38620999658f1af05">uart_cam_ctrl.c</a>
 </li>
 <li>CAN1
 : <a class="el" href="LPC21xx_8h.html#a4964ecb6a5c689aaf8ee2832b8093aac">LPC21xx.h</a>
@@ -579,9 +585,9 @@ $(document).ready(function(){initNavTree('globals_defs_0x63.html','');});
 : <a class="el" href="imu__chimu_8h.html#a2ec2d11d12f1527bec4150b0411c27a9">imu_chimu.h</a>
 </li>
 <li>ChopServo
-: <a class="el" href="lpc21_2subsystems_2actuators_2servos__4017__hw_8h.html#a4b3ddbb108e57195911bc60ea22ff123">servos_4017_hw.h</a>
-, <a class="el" href="servos__4015__hw_8h.html#a4b3ddbb108e57195911bc60ea22ff123">servos_4015_hw.h</a>
+: <a class="el" href="servos__4015__hw_8h.html#a4b3ddbb108e57195911bc60ea22ff123">servos_4015_hw.h</a>
 , <a class="el" href="lpc21_2subsystems_2actuators_2servos__4015__MAT__hw_8h.html#a4b3ddbb108e57195911bc60ea22ff123">servos_4015_MAT_hw.h</a>
+, <a class="el" href="lpc21_2subsystems_2actuators_2servos__4017__hw_8h.html#a4b3ddbb108e57195911bc60ea22ff123">servos_4017_hw.h</a>
 , <a class="el" href="lpc21_2subsystems_2actuators_2servos__ppm__hw_8h.html#a4b3ddbb108e57195911bc60ea22ff123">servos_ppm_hw.h</a>
 , <a class="el" href="servos__nil_8h.html#a4b3ddbb108e57195911bc60ea22ff123">servos_nil.h</a>
 </li>
@@ -590,7 +596,7 @@ $(document).ready(function(){initNavTree('globals_defs_0x63.html','');});
 , <a class="el" href="pprz__geodetic__float_8c.html#a671737b382191d58f5a35e724a394079">pprz_geodetic_float.c</a>
 </li>
 <li>CLEAR
-: <a class="el" href="video_8c.html#ab0ba4dd6e237b96132c0a66be2fb3bc2">video.c</a>
+: <a class="el" href="v4l2_8c.html#ab0ba4dd6e237b96132c0a66be2fb3bc2">v4l2.c</a>
 </li>
 <li>CLOSE_TO_WAYPOINT
 : <a class="el" href="navigation_8c.html#a886b61a67281687fc4c33ce0fcbe85a7">navigation.c</a>
@@ -602,13 +608,16 @@ $(document).ready(function(){initNavTree('globals_defs_0x63.html','');});
 : <a class="el" href="stm32f4__chibios__vectors_8h.html#a91e1d19986ef9b0683a9f58e428a10cf">stm32f4_chibios_vectors.h</a>
 </li>
 <li>CM_OF_M
-: <a class="el" href="pprz__geodetic__int_8h.html#ac1c9373f4e9310feecc165355eaec87f">pprz_geodetic_int.h</a>
+: <a class="el" href="group__math__geodetic__int.html#gac1c9373f4e9310feecc165355eaec87f">pprz_geodetic_int.h</a>
 </li>
 <li>CMD_INIT
 : <a class="el" href="baro__MS5534A_8c.html#a2677fc43f8393bcf3bafc8bbface003f">baro_MS5534A.c</a>
 </li>
 <li>CMD_MEASUREMENT
 : <a class="el" href="baro__MS5534A_8c.html#a6fda1c30b3e6c3656c58c972df422559">baro_MS5534A.c</a>
+</li>
+<li>CMD_OF_SAT
+: <a class="el" href="guidance__opticflow__hover_8c.html#ac9a8cd4525614f871188949b70d9f9cc">guidance_opticflow_hover.c</a>
 </li>
 <li>CMD_PRESSURE
 : <a class="el" href="baro__MS5534A_8c.html#a15ff6cbc81d61f366c8901b883c38200">baro_MS5534A.c</a>
@@ -704,9 +713,9 @@ $(document).ready(function(){initNavTree('globals_defs_0x63.html','');});
 : <a class="el" href="config__mkk__v2_8h.html#a32f1b62e0c68d17267d7af8f5f7583d3">config_mkk_v2.h</a>
 </li>
 <li>Configure_GPS_RESET_Pin
-: <a class="el" href="sdlog__1_80_8h.html#a0fad87177073eb3f02c6fc96a97328e7">sdlog_1.0.h</a>
+: <a class="el" href="tiny__2_81_8h.html#a0fad87177073eb3f02c6fc96a97328e7">tiny_2.1.h</a>
 , <a class="el" href="logom__2_86_8h.html#a0fad87177073eb3f02c6fc96a97328e7">logom_2.6.h</a>
-, <a class="el" href="tiny__2_81_8h.html#a0fad87177073eb3f02c6fc96a97328e7">tiny_2.1.h</a>
+, <a class="el" href="sdlog__1_80_8h.html#a0fad87177073eb3f02c6fc96a97328e7">sdlog_1.0.h</a>
 </li>
 <li>CONTROL_FREQUENCY
 : <a class="el" href="fixedwing_2autopilot_8h.html#a992e6194ee1d6c879faa66e51b72840a">autopilot.h</a>
@@ -718,13 +727,13 @@ $(document).ready(function(){initNavTree('globals_defs_0x63.html','');});
 : <a class="el" href="LPC21xx_8h.html#a0eb64d85804990e6ee5259451c7f5a0d">LPC21xx.h</a>
 </li>
 <li>CRC_INIT
-: <a class="el" href="lpc21_2link__mcu__hw_8h.html#a67f2b73e9152930dccf1e6d6d48c49f2">link_mcu_hw.h</a>
+: <a class="el" href="stm32_2link__mcu__hw_8h.html#a67f2b73e9152930dccf1e6d6d48c49f2">link_mcu_hw.h</a>
 </li>
 <li>CrcHigh
 : <a class="el" href="lpc21_2link__mcu__hw_8h.html#a653d2ce62628ed8a24b986b1c9107833">link_mcu_hw.h</a>
 </li>
 <li>CrcLow
-: <a class="el" href="stm32_2link__mcu__hw_8h.html#adb19201fe1d4dccfe72271bbdc0626e6">link_mcu_hw.h</a>
+: <a class="el" href="lpc21_2link__mcu__hw_8h.html#adb19201fe1d4dccfe72271bbdc0626e6">link_mcu_hw.h</a>
 </li>
 <li>CRITIC_BAT_LEVEL
 : <a class="el" href="electrical_8h.html#a750ae88746939044885e47e1c11ea136">electrical.h</a>
@@ -749,8 +758,10 @@ $(document).ready(function(){initNavTree('globals_defs_0x63.html','');});
 : <a class="el" href="gsm_8c.html#ad71688b7a4be6d66c30cfde4dfa7a4da">gsm.c</a>
 </li>
 <li>CURRENT_ESTIMATION_NONLINEARITY
-: <a class="el" href="subsystems_2electrical_8c.html#ab5b8cca2fda6d0ea38b687fc6737f462">electrical.c</a>
-, <a class="el" href="electrical__raw_8c.html#ab5b8cca2fda6d0ea38b687fc6737f462">electrical_raw.c</a>
+: <a class="el" href="electrical_8c.html#ab5b8cca2fda6d0ea38b687fc6737f462">electrical.c</a>
+</li>
+<li>cv_blob_locator_GeoReset
+: <a class="el" href="cv__blob__locator_8h.html#acae974e325e0e2e08b37f88ba8a7abd6">cv_blob_locator.h</a>
 </li>
 <li>CYRF6936_MAX_BUFFER
 : <a class="el" href="cyrf6936_8h.html#ab23b3a4c87d4ff6ac1e3d0acf33520e5">cyrf6936.h</a>
@@ -986,7 +997,7 @@ $(document).ready(function(){initNavTree('globals_defs_0x63.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:41 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:48 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

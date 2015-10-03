@@ -1,6 +1,10 @@
 var stm32_2usb__ser__hw_8c =
 [
-    [ "fifo_t", "structfifo__t.html", "structfifo__t" ],
+    [ "fifo_t", "stm32_2usb__ser__hw_8c.html#structfifo__t", [
+      [ "buf", "stm32_2usb__ser__hw_8c.html#af6872113b054f3bed2382adf6919e4f5", null ],
+      [ "head", "stm32_2usb__ser__hw_8c.html#ae93028e986799fceacecbd153729f855", null ],
+      [ "tail", "stm32_2usb__ser__hw_8c.html#abe914ae9dd92644d8a53a4b99d89b487", null ]
+    ] ],
     [ "MAX_PACKET_SIZE", "stm32_2usb__ser__hw_8c.html#a879456c3b8e2853f7044d764e9c180d4", null ],
     [ "VCOM_FIFO_SIZE", "stm32_2usb__ser__hw_8c.html#a8c7c58c5dba905e6348263134f6b4fbd", null ],
     [ "cdcacm_control_request", "stm32_2usb__ser__hw_8c.html#ab57b1e209da0ee69459b28fbd55cda72", null ],
@@ -11,9 +15,10 @@ var stm32_2usb__ser__hw_8c =
     [ "fifo_get", "stm32_2usb__ser__hw_8c.html#a39ed3893e7da35dc2372cafe7fd471dc", null ],
     [ "fifo_init", "stm32_2usb__ser__hw_8c.html#a1330c98d9b3b1ac7e86b04b86ec99548", null ],
     [ "fifo_put", "stm32_2usb__ser__hw_8c.html#a48f3fde520622dced80c7e266dd40f45", null ],
-    [ "get_dev_unique_id", "stm32_2usb__ser__hw_8c.html#aa00d7a39422a1ebadd7faba8196fa05a", null ],
     [ "suspend_cb", "stm32_2usb__ser__hw_8c.html#a249c372d4216cf6de5a346625850ec63", null ],
+    [ "usb_serial_char_available", "stm32_2usb__ser__hw_8c.html#adaa435f6235136b75de97d7efa7387d1", null ],
     [ "usb_serial_check_free_space", "stm32_2usb__ser__hw_8c.html#aef19744b00fea002f00964cdbe5dd2fb", null ],
+    [ "usb_serial_getch", "stm32_2usb__ser__hw_8c.html#ad20f86d5fa3af479482b8a7571d7953b", null ],
     [ "usb_serial_send", "stm32_2usb__ser__hw_8c.html#ad96b0bb142d9df1328a83ea2d16acc3d", null ],
     [ "usb_serial_transmit", "stm32_2usb__ser__hw_8c.html#a577a2c6cc901732b01c63697768ccdb2", null ],
     [ "VCOM_check_available", "stm32_2usb__ser__hw_8c.html#a4cfafe558a6e594ce0638634e7cec7db", null ],
@@ -23,9 +28,6 @@ var stm32_2usb__ser__hw_8c =
     [ "VCOM_init", "stm32_2usb__ser__hw_8c.html#a96a54f28bfc8bc28963cd2fac74609cd", null ],
     [ "VCOM_putchar", "stm32_2usb__ser__hw_8c.html#a19a213d00cf249a4d4d60dbf1a9907d3", null ],
     [ "VCOM_send_message", "stm32_2usb__ser__hw_8c.html#aad17c325b3e7623c13d24b25fc42fe3b", null ],
-    [ "acm", "stm32_2usb__ser__hw_8c.html#af38e183788d197818e73de4efd580656", null ],
-    [ "call_mgmt", "stm32_2usb__ser__hw_8c.html#a604f1bfa900d1c744e21912b8c3147d0", null ],
-    [ "cdc_union", "stm32_2usb__ser__hw_8c.html#a76780fb93660853a9aadfbc349ee61ce", null ],
     [ "cdcacm_functional_descriptors", "stm32_2usb__ser__hw_8c.html#ae91e27ca244d610f585dec37c763228d", null ],
     [ "comm_endp", "stm32_2usb__ser__hw_8c.html#aba0928635d5f4c742dd5d64f9b02d02b", null ],
     [ "comm_iface", "stm32_2usb__ser__hw_8c.html#a967b5cd2038d356bf5cf153327bbe6d3", null ],
@@ -33,7 +35,6 @@ var stm32_2usb__ser__hw_8c =
     [ "data_endp", "stm32_2usb__ser__hw_8c.html#af412a9625d62549f285775a97b8a8841", null ],
     [ "data_iface", "stm32_2usb__ser__hw_8c.html#a1c0e07f6f46ffc1bcd8e57b06737235d", null ],
     [ "dev", "stm32_2usb__ser__hw_8c.html#a405086a1effa6aed12960187518465b5", null ],
-    [ "header", "stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963", null ],
     [ "ifaces", "stm32_2usb__ser__hw_8c.html#ae4f697921332f6e25d41fbc5b4de5c5b", null ],
     [ "my_usbd_dev", "stm32_2usb__ser__hw_8c.html#a2ec22b5ac8d4ccdf43b1939e46b9f28c", null ],
     [ "rxdata", "stm32_2usb__ser__hw_8c.html#a90b28b942423439806a256e9eac0dea3", null ],

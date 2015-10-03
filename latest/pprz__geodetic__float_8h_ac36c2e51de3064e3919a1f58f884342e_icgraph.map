@@ -1,31 +1,35 @@
 <map id="ned_of_ecef_vect_f" name="ned_of_ecef_vect_f">
-<area shape="rect" id="node3" href="$ins__float__invariant_8c.html#a0156f6669675c216bbcb413ea1879960" title="Update AHRS state with GPS measurements. " alt="" coords="227,179,357,207"/>
-<area shape="rect" id="node5" href="$group__state__acceleration.html#gaea5833c5515c007e9ebd4ef106e80071" title="stateCalcAccelNed_f" alt="" coords="216,281,368,309"/>
-<area shape="rect" id="node29" href="$group__state__velocity.html#gaa0a543aa37e93fe32b4d7d4312ef5f2b" title="stateCalcHorizontalSpeed\lNorm_i" alt="" coords="199,365,385,409"/>
-<area shape="rect" id="node39" href="$group__state__velocity.html#ga440e1db9aa0854e8cea50670d7055450" title="stateCalcSpeedNed_f" alt="" coords="212,230,372,258"/>
-<area shape="rect" id="node7" href="$group__state__acceleration.html#ga058e2128ff3a2a3ca5f3c606f4166dfe" title="Get acceleration in NED coordinates (float). " alt="" coords="476,281,625,309"/>
-<area shape="rect" id="node9" href="$rotorcraft_2autopilot_8h.html#a82c57502deaf7fb0dc0525b298611a87" title="autopilot_check_in\l_flight" alt="" coords="731,189,869,233"/>
-<area shape="rect" id="node21" href="$rotorcraft_2autopilot_8h.html#abba296c1e683df96046e568306fcbb69" title="Ground detection based on vertical acceleration. " alt="" coords="727,255,873,283"/>
-<area shape="rect" id="node25" href="$meteo__france__DAQ_8h.html#a428cd9287f9e24f69dd92d696e0a053a" title="mf_daq_send_state" alt="" coords="727,306,873,334"/>
-<area shape="rect" id="node27" href="$meteo__france__DAQ_8h.html#ac95d521856a9424097d05f67c635c10e" title="parse_mf_daq_msg" alt="" coords="727,357,873,385"/>
-<area shape="rect" id="node11" href="$main_8h.html#a6266a73fe8c0512f1de72cea96e5110b" title="failsafe_check" alt="" coords="943,197,1052,225"/>
-<area shape="rect" id="node13" href="$main_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="1109,197,1272,225"/>
-<area shape="rect" id="node15" href="$fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1333,193,1387,221"/>
-<area shape="rect" id="node17" href="$main__chibios__libopencm3_8c.html#ad648a546fe66cd5f9328f33221a40c64" title="pprz_thd" alt="" coords="1321,243,1399,271"/>
-<area shape="rect" id="node19" href="$main__chibios__libopencm3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1449,243,1503,271"/>
-<area shape="rect" id="node23" href="$main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="949,255,1045,283"/>
-<area shape="rect" id="node31" href="$group__state__velocity.html#gaccbfae323e994bdcd8e8b985ea6e3aa5" title="Get norm of horizontal ground speed (int). " alt="" coords="436,407,665,435"/>
-<area shape="rect" id="node33" href="$uart__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95" title="Send Command To Camera. " alt="" coords="727,458,873,486"/>
-<area shape="rect" id="node35" href="$hott__eam_8h.html#a35e5d6a8530dfc81c2402694e03ea334" title="hott_update_eam_msg" alt="" coords="715,407,885,435"/>
-<area shape="rect" id="node37" href="$hott_8h.html#af9ecdbaed8d1ef59e40fba97cbe0b6ac" title="hott_periodic" alt="" coords="945,407,1049,435"/>
-<area shape="rect" id="node41" href="$group__state__velocity.html#ga50a44ddecd4b2517b549549e953ffea2" title="Get ground speed in local NED coordinates (float). " alt="" coords="473,138,628,166"/>
-<area shape="rect" id="node44" href="$mavlink_8c.html#a025c0ce53320b2bf9418a94bd9e5e726" title="mavlink_send_local\l_position_ned" alt="" coords="728,5,872,49"/>
-<area shape="rect" id="node48" href="$mavlink_8c.html#a8e376e67cc8a8a15e91a7e9fae593646" title="mavlink_send_global\l_position_int" alt="" coords="723,71,877,115"/>
-<area shape="rect" id="node51" href="$ins__alt__float_8c.html#a3c7bfebd16999823476aada2b31b426e" title="baro_cb" alt="" coords="764,138,836,166"/>
-<area shape="rect" id="node46" href="$mavlink_8h.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls. " alt="" coords="933,46,1061,74"/>
-<area shape="rect" id="node53" href="$ins_8h.html#abf3028c2ada542781b8a5e1eb20c17ce" title="INS initialization. " alt="" coords="964,138,1031,166"/>
-<area shape="rect" id="node55" href="$main_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="main_init" alt="" coords="1151,141,1231,169"/>
-<area shape="rect" id="node59" href="$main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="1159,90,1223,118"/>
-<area shape="rect" id="node57" href="$rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1333,141,1387,169"/>
-<area shape="rect" id="node61" href="$sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="1325,90,1395,118"/>
+<area shape="rect" id="node3" href="$ins__float__invariant_8h.html#a61e3f6c5195a9e0e99428c7cb5981382" title="ins_float_invariant\l_update_gps" alt="" coords="224,133,360,177"/>
+<area shape="rect" id="node9" href="$group__state__acceleration.html#gaea5833c5515c007e9ebd4ef106e80071" title="stateCalcAccelNed_f" alt="" coords="216,331,368,359"/>
+<area shape="rect" id="node43" href="$group__state__velocity.html#gaa0a543aa37e93fe32b4d7d4312ef5f2b" title="stateCalcHorizontalSpeed\lNorm_i" alt="" coords="199,482,385,526"/>
+<area shape="rect" id="node53" href="$group__state__velocity.html#ga440e1db9aa0854e8cea50670d7055450" title="stateCalcSpeedNed_f" alt="" coords="212,255,372,283"/>
+<area shape="rect" id="node5" href="$ins__float__invariant__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="517,83,584,111"/>
+<area shape="rect" id="node7" href="$ins__float__invariant__wrapper_8h.html#acbc99bce5ffb373e21280ebaad9faa37" title="ins_float_invariant\l_register" alt="" coords="740,5,876,49"/>
+<area shape="rect" id="node11" href="$group__state__acceleration.html#ga058e2128ff3a2a3ca5f3c606f4166dfe" title="Get acceleration in NED coordinates (float). " alt="" coords="476,410,625,438"/>
+<area shape="rect" id="node13" href="$rotorcraft_2autopilot_8h.html#a82c57502deaf7fb0dc0525b298611a87" title="autopilot_check_in\l_flight" alt="" coords="739,306,877,350"/>
+<area shape="rect" id="node25" href="$rotorcraft_2autopilot_8h.html#abba296c1e683df96046e568306fcbb69" title="Ground detection based on vertical acceleration. " alt="" coords="735,490,881,518"/>
+<area shape="rect" id="node29" href="$guidance__indi_8h.html#a2615938cf5f86d9b2f1a0de21ac8d983" title="guidance_indi_filter\l_accel" alt="" coords="736,373,880,417"/>
+<area shape="rect" id="node39" href="$meteo__france__DAQ_8h.html#a428cd9287f9e24f69dd92d696e0a053a" title="mf_daq_send_state" alt="" coords="735,541,881,569"/>
+<area shape="rect" id="node41" href="$meteo__france__DAQ_8h.html#ac95d521856a9424097d05f67c635c10e" title="parse_mf_daq_msg" alt="" coords="735,439,881,467"/>
+<area shape="rect" id="node15" href="$main_8h.html#a6266a73fe8c0512f1de72cea96e5110b" title="failsafe_check" alt="" coords="964,314,1073,342"/>
+<area shape="rect" id="node17" href="$main_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="1136,314,1299,342"/>
+<area shape="rect" id="node19" href="$fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1388,311,1441,339"/>
+<area shape="rect" id="node21" href="$main__chibios__libopencm3_8c.html#ad648a546fe66cd5f9328f33221a40c64" title="pprz_thd" alt="" coords="1376,362,1453,390"/>
+<area shape="rect" id="node23" href="$main__chibios__libopencm3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1560,362,1613,390"/>
+<area shape="rect" id="node27" href="$main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="971,490,1067,518"/>
+<area shape="rect" id="node31" href="$guidance__indi_8h.html#a24d1024bbd8da21b6c70317fda39d929" title="guidance_indi_run" alt="" coords="951,259,1087,287"/>
+<area shape="rect" id="node33" href="$guidance__h_8h.html#ac4cf6da90a4278b4d0b2e4f227b33f2c" title="guidance_h_run" alt="" coords="1156,259,1279,287"/>
+<area shape="rect" id="node35" href="$rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="1348,259,1481,287"/>
+<area shape="rect" id="node37" href="$main_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="1532,259,1641,287"/>
+<area shape="rect" id="node45" href="$group__state__velocity.html#gafb59e9bd904a64a08bf4413a84fb6859" title="Get norm of horizontal ground speed (int). " alt="" coords="436,591,665,619"/>
+<area shape="rect" id="node47" href="$uart__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95" title="Send Command To Camera. " alt="" coords="735,591,881,619"/>
+<area shape="rect" id="node49" href="$hott__eam_8h.html#a35e5d6a8530dfc81c2402694e03ea334" title="hott_update_eam_msg" alt="" coords="723,642,893,670"/>
+<area shape="rect" id="node51" href="$hott_8h.html#af9ecdbaed8d1ef59e40fba97cbe0b6ac" title="hott_periodic" alt="" coords="967,642,1071,670"/>
+<area shape="rect" id="node55" href="$group__state__velocity.html#ga50a44ddecd4b2517b549549e953ffea2" title="Get ground speed in local NED coordinates (float). " alt="" coords="473,230,628,258"/>
+<area shape="rect" id="node59" href="$mavlink_8c.html#a025c0ce53320b2bf9418a94bd9e5e726" title="mavlink_send_local\l_position_ned" alt="" coords="736,71,880,115"/>
+<area shape="rect" id="node63" href="$mavlink_8c.html#a8e376e67cc8a8a15e91a7e9fae593646" title="mavlink_send_global\l_position_int" alt="" coords="731,138,885,182"/>
+<area shape="rect" id="node66" href="$ins__alt__float_8h.html#afb6a5cd07b6574dfb93f023aecfcec5d" title="ins_alt_float_update_baro" alt="" coords="715,205,901,233"/>
+<area shape="rect" id="node61" href="$mavlink_8h.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls. " alt="" coords="955,113,1083,141"/>
+<area shape="rect" id="node68" href="$ins__alt__float_8c.html#a7fdc16072298b2db800864d08d72945a" title="baro_cb" alt="" coords="983,205,1055,233"/>
+<area shape="rect" id="node70" href="$ins__alt__float_8h.html#af3abcc755f69a23a02e5c1345bbcae90" title="ins_altf_register" alt="" coords="1156,205,1279,233"/>
 </map>

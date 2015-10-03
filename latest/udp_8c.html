@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('udp_8c.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -129,57 +129,21 @@ $(document).ready(function(){initNavTree('udp_8c.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4ace77e7dc5a031ba9f5b1298860487a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a4ace77e7dc5a031ba9f5b1298860487a">udp_periph_init</a> (struct <a class="el" href="structudp__periph.html">udp_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, char *host, int port_out, int port_in, bool_t broadcast)</td></tr>
+<tr class="memitem:a4ace77e7dc5a031ba9f5b1298860487a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a4ace77e7dc5a031ba9f5b1298860487a">udp_periph_init</a> (struct <a class="el" href="udp_8h.html#structudp__periph">udp_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, char *host, int port_out, int port_in, bool_t broadcast)</td></tr>
+<tr class="memdesc:a4ace77e7dc5a031ba9f5b1298860487a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the UDP peripheral.  <a href="#a4ace77e7dc5a031ba9f5b1298860487a">More...</a><br/></td></tr>
 <tr class="separator:a4ace77e7dc5a031ba9f5b1298860487a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abba520ac60a3585ebc0b465060656afb"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#abba520ac60a3585ebc0b465060656afb">udp_check_free_space</a> (struct <a class="el" href="structudp__periph.html">udp_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> len)</td></tr>
+<tr class="memitem:abba520ac60a3585ebc0b465060656afb"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#abba520ac60a3585ebc0b465060656afb">udp_check_free_space</a> (struct <a class="el" href="udp_8h.html#structudp__periph">udp_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> len)</td></tr>
+<tr class="memdesc:abba520ac60a3585ebc0b465060656afb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if there is enough free space in the transmit buffer.  <a href="#abba520ac60a3585ebc0b465060656afb">More...</a><br/></td></tr>
 <tr class="separator:abba520ac60a3585ebc0b465060656afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe5155fb629ea903eb657b0f56391588"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#afe5155fb629ea903eb657b0f56391588">udp_transmit</a> (struct <a class="el" href="structudp__periph.html">udp_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="link__mcu__can_8c.html#afb87d045bbf32b236fc425efe02bdc7b">data</a>)</td></tr>
-<tr class="separator:afe5155fb629ea903eb657b0f56391588"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36a5847da7a6cd7e824bbf1366505aa1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a36a5847da7a6cd7e824bbf1366505aa1">udp_char_available</a> (struct <a class="el" href="structudp__periph.html">udp_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
-<tr class="separator:a36a5847da7a6cd7e824bbf1366505aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a902d6b73c1356c1650ddc474cb33433d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a902d6b73c1356c1650ddc474cb33433d">udp_getch</a> (struct <a class="el" href="structudp__periph.html">udp_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
-<tr class="separator:a902d6b73c1356c1650ddc474cb33433d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58f80df3462e22925ba9294b288666e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a58f80df3462e22925ba9294b288666e5">udp_event</a> (void)</td></tr>
-<tr class="separator:a58f80df3462e22925ba9294b288666e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae06a8631c27b8a05221e414f943ac02b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#ae06a8631c27b8a05221e414f943ac02b">udp_put_byte</a> (struct <a class="el" href="udp_8h.html#structudp__periph">udp_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data)</td></tr>
+<tr class="memdesc:ae06a8631c27b8a05221e414f943ac02b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add one data byte to the tx buffer.  <a href="#ae06a8631c27b8a05221e414f943ac02b">More...</a><br/></td></tr>
+<tr class="separator:ae06a8631c27b8a05221e414f943ac02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>arch independent UDP API </p>
 
 <p>Definition in file <a class="el" href="udp_8c_source.html">udp.c</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a36a5847da7a6cd7e824bbf1366505aa1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> udp_char_available </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structudp__periph.html">udp_periph</a> *&#160;</td>
-          <td class="paramname"><em>p</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="udp_8c_source.html#l00059">59</a> of file <a class="el" href="udp_8c_source.html">udp.c</a>.</p>
-
-<p>References <a class="el" href="udp_8h_source.html#l00042">udp_periph::rx_extract_idx</a>, <a class="el" href="udp_8h_source.html#l00041">udp_periph::rx_insert_idx</a>, and <a class="el" href="udp_8h_source.html#l00035">UDP_RX_BUFFER_SIZE</a>.</p>
-
-<p>Referenced by <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00070">udp_receive()</a>.</p>
-
-<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="udp_8c_a36a5847da7a6cd7e824bbf1366505aa1_icgraph.png" border="0" usemap="#udp_8c_a36a5847da7a6cd7e824bbf1366505aa1_icgraph" alt=""/></div>
-<map name="udp_8c_a36a5847da7a6cd7e824bbf1366505aa1_icgraph" id="udp_8c_a36a5847da7a6cd7e824bbf1366505aa1_icgraph">
-<area shape="rect" id="node3" href="udp_8h.html#a23264d73f7cf6197c139bf6841da1ee2" title="Read bytes from UDP. " alt="" coords="197,5,296,33"/><area shape="rect" id="node5" href="udp_8h.html#a58f80df3462e22925ba9294b288666e5" title="udp_event" alt="" coords="345,5,433,33"/><area shape="rect" id="node7" href="main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="484,5,580,33"/></map>
-</div>
-</p>
-
-</div>
-</div>
 <a class="anchor" id="abba520ac60a3585ebc0b465060656afb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -187,7 +151,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool_t udp_check_free_space </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structudp__periph.html">udp_periph</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="udp_8h.html#structudp__periph">udp_periph</a> *&#160;</td>
           <td class="paramname"><em>p</em>, </td>
         </tr>
         <tr>
@@ -204,86 +168,32 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="udp_8c_source.html#l00044">44</a> of file <a class="el" href="udp_8c_source.html">udp.c</a>.</p>
+<p>Check if there is enough free space in the transmit buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>pointer to UDP peripheral </td></tr>
+    <tr><td class="paramname">len</td><td>how many bytes of free space to check for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>TRUE if enough space for #len bytes </dd></dl>
+
+<p>Definition at line <a class="el" href="udp_8c_source.html#l00080">80</a> of file <a class="el" href="udp_8c_source.html">udp.c</a>.</p>
 
 <p>References <a class="el" href="udp_8h_source.html#l00045">udp_periph::tx_insert_idx</a>, and <a class="el" href="udp_8h_source.html#l00036">UDP_TX_BUFFER_SIZE</a>.</p>
 
-<p>Referenced by <a class="el" href="udp_8c_source.html#l00030">udp_periph_init()</a>.</p>
+<p>Referenced by <a class="el" href="udp_8c_source.html#l00058">udp_periph_init()</a>.</p>
 
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="udp_8c_abba520ac60a3585ebc0b465060656afb_icgraph.png" border="0" usemap="#udp_8c_abba520ac60a3585ebc0b465060656afb_icgraph" alt=""/></div>
 <map name="udp_8c_abba520ac60a3585ebc0b465060656afb_icgraph" id="udp_8c_abba520ac60a3585ebc0b465060656afb_icgraph">
-<area shape="rect" id="node3" href="udp_8h.html#a4ace77e7dc5a031ba9f5b1298860487a" title="udp_periph_init" alt="" coords="223,5,340,33"/></map>
+<area shape="rect" id="node3" href="udp_8h.html#a4ace77e7dc5a031ba9f5b1298860487a" title="Initialize the UDP peripheral. " alt="" coords="223,5,340,33"/></map>
 </div>
 </p>
-
-</div>
-</div>
-<a class="anchor" id="a58f80df3462e22925ba9294b288666e5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void udp_event </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname">)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="udp_8c_source.html#l00075">75</a> of file <a class="el" href="udp_8c_source.html">udp.c</a>.</p>
-
-<p>References <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00070">udp_receive()</a>.</p>
-
-<p>Referenced by <a class="el" href="rotorcraft_2main_8c_source.html#l00305">main_event()</a>.</p>
-
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="udp_8c_a58f80df3462e22925ba9294b288666e5_cgraph.png" border="0" usemap="#udp_8c_a58f80df3462e22925ba9294b288666e5_cgraph" alt=""/></div>
-<map name="udp_8c_a58f80df3462e22925ba9294b288666e5_cgraph" id="udp_8c_a58f80df3462e22925ba9294b288666e5_cgraph">
-<area shape="rect" id="node3" href="linux_2mcu__periph_2udp__arch_8c.html#a23264d73f7cf6197c139bf6841da1ee2" title="Read bytes from UDP. " alt="" coords="144,5,243,33"/></map>
-</div>
-</p>
-
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="udp_8c_a58f80df3462e22925ba9294b288666e5_icgraph.png" border="0" usemap="#udp_8c_a58f80df3462e22925ba9294b288666e5_icgraph" alt=""/></div>
-<map name="udp_8c_a58f80df3462e22925ba9294b288666e5_icgraph" id="udp_8c_a58f80df3462e22925ba9294b288666e5_icgraph">
-<area shape="rect" id="node3" href="main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="145,5,241,33"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a902d6b73c1356c1650ddc474cb33433d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> udp_getch </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structudp__periph.html">udp_periph</a> *&#160;</td>
-          <td class="paramname"><em>p</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="udp_8c_source.html#l00068">68</a> of file <a class="el" href="udp_8c_source.html">udp.c</a>.</p>
-
-<p>References <a class="el" href="udp_8h_source.html#l00040">udp_periph::rx_buf</a>, <a class="el" href="udp_8h_source.html#l00042">udp_periph::rx_extract_idx</a>, and <a class="el" href="udp_8h_source.html#l00035">UDP_RX_BUFFER_SIZE</a>.</p>
 
 </div>
 </div>
@@ -294,7 +204,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void udp_periph_init </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structudp__periph.html">udp_periph</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="udp_8h.html#structudp__periph">udp_periph</a> *&#160;</td>
           <td class="paramname"><em>p</em>, </td>
         </tr>
         <tr>
@@ -329,31 +239,33 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="udp_8c_source.html#l00030">30</a> of file <a class="el" href="udp_8c_source.html">udp.c</a>.</p>
+<p>Initialize the UDP peripheral. </p>
 
-<p>References <a class="el" href="link__device_8h_source.html#l00043">link_device::check_free_space</a>, <a class="el" href="udp_8h_source.html#l00049">udp_periph::device</a>, <a class="el" href="link__device_8h_source.html#l00046">link_device::periph</a>, <a class="el" href="udp_8h_source.html#l00042">udp_periph::rx_extract_idx</a>, <a class="el" href="udp_8h_source.html#l00041">udp_periph::rx_insert_idx</a>, <a class="el" href="link__device_8h_source.html#l00045">link_device::send_message</a>, <a class="el" href="link__device_8h_source.html#l00044">link_device::transmit</a>, <a class="el" href="udp_8h_source.html#l00045">udp_periph::tx_insert_idx</a>, <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00038">udp_arch_periph_init()</a>, <a class="el" href="udp_8c_source.html#l00044">udp_check_free_space()</a>, <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00096">udp_send_message()</a>, and <a class="el" href="udp_8c_source.html#l00049">udp_transmit()</a>.</p>
+<p>Definition at line <a class="el" href="udp_8c_source.html#l00058">58</a> of file <a class="el" href="udp_8c_source.html">udp.c</a>.</p>
 
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p>References <a class="el" href="link__device_8h_source.html#l00048">link_device::char_available</a>, <a class="el" href="link__device_8h_source.html#l00045">link_device::check_free_space</a>, <a class="el" href="udp_8h_source.html#l00049">udp_periph::device</a>, <a class="el" href="link__device_8h_source.html#l00049">link_device::get_byte</a>, <a class="el" href="link__device_8h_source.html#l00050">link_device::periph</a>, <a class="el" href="link__device_8h_source.html#l00046">link_device::put_byte</a>, <a class="el" href="udp_8h_source.html#l00042">udp_periph::rx_extract_idx</a>, <a class="el" href="udp_8h_source.html#l00041">udp_periph::rx_insert_idx</a>, <a class="el" href="link__device_8h_source.html#l00047">link_device::send_message</a>, <a class="el" href="udp_8h_source.html#l00045">udp_periph::tx_insert_idx</a>, <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00069">udp_arch_periph_init()</a>, <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00081">udp_char_available()</a>, <a class="el" href="udp_8c_source.html#l00080">udp_check_free_space()</a>, <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00097">udp_getch()</a>, <a class="el" href="udp_8c_source.html#l00090">udp_put_byte()</a>, and <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00142">udp_send_message()</a>.</p>
+
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="udp_8c_a4ace77e7dc5a031ba9f5b1298860487a_cgraph.png" border="0" usemap="#udp_8c_a4ace77e7dc5a031ba9f5b1298860487a_cgraph" alt=""/></div>
 <map name="udp_8c_a4ace77e7dc5a031ba9f5b1298860487a_cgraph" id="udp_8c_a4ace77e7dc5a031ba9f5b1298860487a_cgraph">
-<area shape="rect" id="node3" href="linux_2mcu__periph_2udp__arch_8c.html#a1941c4227cc54d1cb993bf7cced357e4" title="Initialize the UDP stream. " alt="" coords="180,5,335,33"/><area shape="rect" id="node5" href="udp_8c.html#abba520ac60a3585ebc0b465060656afb" title="udp_check_free_space" alt="" coords="175,55,340,83"/><area shape="rect" id="node7" href="linux_2mcu__periph_2udp__arch_8c.html#ace1d30c9a0d06bc3bfc7a0e79c4c3536" title="Send a message. " alt="" coords="183,106,332,134"/><area shape="rect" id="node9" href="udp_8c.html#afe5155fb629ea903eb657b0f56391588" title="udp_transmit" alt="" coords="204,157,311,185"/></map>
+<area shape="rect" id="node3" href="linux_2mcu__periph_2udp__arch_8c.html#a1941c4227cc54d1cb993bf7cced357e4" title="Initialize the UDP peripheral. " alt="" coords="180,5,335,33"/><area shape="rect" id="node5" href="linux_2mcu__periph_2udp__arch_8c.html#a36a5847da7a6cd7e824bbf1366505aa1" title="Get number of bytes available in receive buffer. " alt="" coords="185,55,329,83"/><area shape="rect" id="node7" href="udp_8c.html#abba520ac60a3585ebc0b465060656afb" title="Check if there is enough free space in the transmit buffer. " alt="" coords="175,106,340,134"/><area shape="rect" id="node9" href="linux_2mcu__periph_2udp__arch_8c.html#a902d6b73c1356c1650ddc474cb33433d" title="Get the last character from the receive buffer. " alt="" coords="213,157,301,185"/><area shape="rect" id="node11" href="udp_8c.html#ae06a8631c27b8a05221e414f943ac02b" title="Add one data byte to the tx buffer. " alt="" coords="203,207,312,235"/><area shape="rect" id="node13" href="linux_2mcu__periph_2udp__arch_8c.html#ace1d30c9a0d06bc3bfc7a0e79c4c3536" title="Send a message. " alt="" coords="183,258,332,286"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="afe5155fb629ea903eb657b0f56391588"></a>
+<a class="anchor" id="ae06a8631c27b8a05221e414f943ac02b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void udp_transmit </td>
+          <td class="memname">void udp_put_byte </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structudp__periph.html">udp_periph</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="udp_8h.html#structudp__periph">udp_periph</a> *&#160;</td>
           <td class="paramname"><em>p</em>, </td>
         </tr>
         <tr>
@@ -370,20 +282,29 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="udp_8c_source.html#l00049">49</a> of file <a class="el" href="udp_8c_source.html">udp.c</a>.</p>
+<p>Add one data byte to the tx buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>pointer to UDP peripheral </td></tr>
+    <tr><td class="paramname">data</td><td>byte to add to tx buffer </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>References <a class="el" href="link__mcu__can_8c_source.html#l00046">data</a>, <a class="el" href="udp_8h_source.html#l00044">udp_periph::tx_buf</a>, <a class="el" href="udp_8h_source.html#l00045">udp_periph::tx_insert_idx</a>, and <a class="el" href="udp_8h_source.html#l00036">UDP_TX_BUFFER_SIZE</a>.</p>
+<p>Definition at line <a class="el" href="udp_8c_source.html#l00090">90</a> of file <a class="el" href="udp_8c_source.html">udp.c</a>.</p>
 
-<p>Referenced by <a class="el" href="udp_8c_source.html#l00030">udp_periph_init()</a>.</p>
+<p>References <a class="el" href="udp_8h_source.html#l00044">udp_periph::tx_buf</a>, <a class="el" href="udp_8h_source.html#l00045">udp_periph::tx_insert_idx</a>, and <a class="el" href="udp_8h_source.html#l00036">UDP_TX_BUFFER_SIZE</a>.</p>
 
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p>Referenced by <a class="el" href="udp_8c_source.html#l00058">udp_periph_init()</a>.</p>
+
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="udp_8c_afe5155fb629ea903eb657b0f56391588_icgraph.png" border="0" usemap="#udp_8c_afe5155fb629ea903eb657b0f56391588_icgraph" alt=""/></div>
-<map name="udp_8c_afe5155fb629ea903eb657b0f56391588_icgraph" id="udp_8c_afe5155fb629ea903eb657b0f56391588_icgraph">
-<area shape="rect" id="node3" href="udp_8h.html#a4ace77e7dc5a031ba9f5b1298860487a" title="udp_periph_init" alt="" coords="161,5,279,33"/></map>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="udp_8c_ae06a8631c27b8a05221e414f943ac02b_icgraph.png" border="0" usemap="#udp_8c_ae06a8631c27b8a05221e414f943ac02b_icgraph" alt=""/></div>
+<map name="udp_8c_ae06a8631c27b8a05221e414f943ac02b_icgraph" id="udp_8c_ae06a8631c27b8a05221e414f943ac02b_icgraph">
+<area shape="rect" id="node3" href="udp_8h.html#a4ace77e7dc5a031ba9f5b1298860487a" title="Initialize the UDP peripheral. " alt="" coords="164,5,281,33"/></map>
 </div>
 </p>
 
@@ -395,7 +316,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_1ca43f6a116d741d80fb1d0555a2b198.html">mcu_periph</a></li><li class="navelem"><a class="el" href="udp_8c.html">udp.c</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:01 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:21 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

@@ -1,7 +1,25 @@
 var itg3200_8h =
 [
-    [ "Itg3200Config", "structItg3200Config.html", "structItg3200Config" ],
-    [ "Itg3200", "structItg3200.html", "structItg3200" ],
+    [ "Itg3200Config", "itg3200_8h.html#structItg3200Config", [
+      [ "clk_sel", "itg3200_8h.html#af4aa72971a22a8e5ec63cb893e617bab", null ],
+      [ "dlpf_cfg", "itg3200_8h.html#a108ad7e024cfc8d9a1dd58ede8f4134d", null ],
+      [ "fs_sel", "itg3200_8h.html#ad6e742aab5b3d2ba2e6cbbaea90e0024", null ],
+      [ "int_cfg", "itg3200_8h.html#ab3e98abd1c72df77979d30d61a72a2bf", null ],
+      [ "smplrt_div", "itg3200_8h.html#a5c4088e31c66b2d0911b803c8b118f73", null ]
+    ] ],
+    [ "Itg3200", "itg3200_8h.html#structItg3200", [
+      [ "config", "itg3200_8h.html#afa4cc1e1d75f91db123a836b1cd86534", null ],
+      [ "data", "itg3200_8h.html#ab241857d997467fec7d249e963fb518b", null ],
+      [ "data_available", "itg3200_8h.html#a7cc833d93f91f6a8512a91fdc60d6e28", null ],
+      [ "i2c_p", "itg3200_8h.html#af77c755f3f0273ae4eb4ea0e52944e9b", null ],
+      [ "i2c_trans", "itg3200_8h.html#a23f84eb807f7665897fd37afa39276a2", null ],
+      [ "init_status", "itg3200_8h.html#a0e2392ce98a0d9d44263696b7b79541f", null ],
+      [ "initialized", "itg3200_8h.html#aa86e167142770cf2a9eec90184ac04ad", null ]
+    ] ],
+    [ "Itg3200.data", "itg3200_8h.html#unionItg3200_8data", [
+      [ "rates", "itg3200_8h.html#a6cd8b57ad8ec40b32215dcb1c8c76af2", null ],
+      [ "value", "itg3200_8h.html#ab07053fcb6afcb4d09e8f337b615d383", null ]
+    ] ],
     [ "ITG3200_DEFAULT_CLK_SEL", "itg3200_8h.html#a935a8d453e44cb04f13a99ee05773c6f", null ],
     [ "ITG3200_DEFAULT_DLPF_CFG", "itg3200_8h.html#ab90d55d83d032be42c15bd967a82dbe9", null ],
     [ "ITG3200_DEFAULT_FS_SEL", "itg3200_8h.html#a3453f190818c5265b91d834d6a6489e8", null ],

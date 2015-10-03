@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('ahrs__chimu__spi_8c.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -121,7 +121,9 @@ $(document).ready(function(){initNavTree('ahrs__chimu__spi_8c.html','');});
 <code>#include &quot;generated/airframe.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="ins__module_8h_source.html">ins_module.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="imu__chimu_8h_source.html">imu_chimu.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="ahrs__chimu_8h_source.html">ahrs_chimu.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="led_8h_source.html">led.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for ahrs_chimu_spi.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -129,81 +131,87 @@ $(document).ready(function(){initNavTree('ahrs__chimu__spi_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__chimu__spi_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2ins_2ahrs__chimu__spi_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2ins_2ahrs__chimu__spi_8c" id="sw_2airborne_2modules_2ins_2ahrs__chimu__spi_8c">
-<area shape="rect" id="node5" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API. " alt="" coords="1309,99,1440,127"/><area shape="rect" id="node11" href="spi__slave__hs__arch_8h.html" title="Highspeed SPI Slave Interface. " alt="" coords="2011,254,2168,298"/><area shape="rect" id="node14" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="517,262,584,290"/><area shape="rect" id="node55" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="1241,262,1380,290"/><area shape="rect" id="node69" href="ahrs_8h.html" title="Attitude and Heading Reference System interface. " alt="" coords="719,177,860,205"/><area shape="rect" id="node77" href="ins__module_8h.html" title="Device independent INS code. " alt="" coords="1515,99,1621,127"/><area shape="rect" id="node94" href="imu__chimu_8h.html" title="imu_chimu.h" alt="" coords="1788,177,1892,205"/><area shape="rect" id="node99" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1972,99,2025,127"/><area shape="rect" id="node16" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="456,449,635,477"/><area shape="rect" id="node31" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="49,449,239,477"/><area shape="rect" id="node37" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="721,347,871,391"/><area shape="rect" id="node43" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="384,347,533,391"/><area shape="rect" id="node48" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="197,347,360,391"/><area shape="rect" id="node19" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="176,534,331,562"/><area shape="rect" id="node26" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="507,534,656,562"/><area shape="rect" id="node39" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="709,449,832,477"/><area shape="rect" id="node59" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1192,355,1363,383"/><area shape="rect" id="node61" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1885,449,1971,477"/><area shape="rect" id="node80" href="ins_8h.html" title="Integrated Navigation System interface. " alt="" coords="1239,177,1372,205"/><area shape="rect" id="node86" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1623,262,1761,290"/><area shape="rect" id="node90" href="link__device_8h.html" title="generic device header " alt="" coords="1837,355,2019,383"/><area shape="rect" id="node96" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1857,262,1953,290"/></map>
+<area shape="rect" id="node5" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API. " alt="" coords="1788,254,1919,282"/><area shape="rect" id="node11" href="spi__slave__hs__arch_8h.html" title="Highspeed SPI Slave Interface. " alt="" coords="944,331,1101,375"/><area shape="rect" id="node18" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="592,339,659,367"/><area shape="rect" id="node59" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="1176,339,1315,367"/><area shape="rect" id="node72" href="ahrs_8h.html" title="Dispatcher to register actual AHRS implementations. " alt="" coords="1756,177,1897,205"/><area shape="rect" id="node77" href="ins__module_8h.html" title="Device independent INS code. " alt="" coords="1575,177,1681,205"/><area shape="rect" id="node94" href="imu__chimu_8h.html" title="imu_chimu.h" alt="" coords="1316,177,1420,205"/><area shape="rect" id="node99" href="ahrs__chimu_8h.html" title="ahrs_chimu.h" alt="" coords="1575,99,1681,127"/><area shape="rect" id="node103" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1884,99,1937,127"/><area shape="rect" id="node107" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="1964,99,2097,127"/><area shape="rect" id="node14" href="link__device_8h.html" title="generic device header " alt="" coords="1440,433,1621,461"/><area shape="rect" id="node16" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1488,526,1573,554"/><area shape="rect" id="node20" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="507,526,685,554"/><area shape="rect" id="node35" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="141,526,331,554"/><area shape="rect" id="node41" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="865,425,1015,469"/><area shape="rect" id="node47" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="663,425,812,469"/><area shape="rect" id="node52" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="375,425,537,469"/><area shape="rect" id="node23" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="176,611,331,639"/><area shape="rect" id="node30" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="557,611,707,639"/><area shape="rect" id="node43" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="760,526,883,554"/><area shape="rect" id="node63" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1093,433,1264,461"/><area shape="rect" id="node80" href="ins_8h.html" title="Integrated Navigation System interface. " alt="" coords="1073,254,1207,282"/><area shape="rect" id="node87" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1565,339,1704,367"/><area shape="rect" id="node96" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1340,254,1436,282"/></map>
 </div>
 </div>
 <p><a href="ahrs__chimu__spi_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa3721663c9df7c7af5613486a3566afb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__chimu__spi_8c.html#aa3721663c9df7c7af5613486a3566afb">ahrs_init</a> (void)</td></tr>
-<tr class="memdesc:aa3721663c9df7c7af5613486a3566afb"><td class="mdescLeft">&#160;</td><td class="mdescRight">AHRS initialization.  <a href="#aa3721663c9df7c7af5613486a3566afb">More...</a><br/></td></tr>
-<tr class="separator:aa3721663c9df7c7af5613486a3566afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81e17b09f47068c02c345da1523f589b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__chimu__spi_8c.html#a81e17b09f47068c02c345da1523f589b">ahrs_align</a> (void)</td></tr>
-<tr class="memdesc:a81e17b09f47068c02c345da1523f589b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aligns the AHRS.  <a href="#a81e17b09f47068c02c345da1523f589b">More...</a><br/></td></tr>
-<tr class="separator:a81e17b09f47068c02c345da1523f589b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36fc629a6da1649b4590af49dbb38330"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__chimu__spi_8c.html#a36fc629a6da1649b4590af49dbb38330">ahrs_chimu_update_gps</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> gps_fix, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> gps_speed_3d)</td></tr>
+<tr class="separator:a36fc629a6da1649b4590af49dbb38330"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c1656ce80fe1f1ad49fea691164dbf8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__chimu__spi_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8">gps_cb</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> stamp, struct <a class="el" href="gps_8h.html#structGpsState">GpsState</a> *gps_s)</td></tr>
+<tr class="separator:a1c1656ce80fe1f1ad49fea691164dbf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eecebdc3c71cc1d1bdab3f2da2359d0"><td class="memItemLeft" align="right" valign="top">static bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__chimu__spi_8c.html#a6eecebdc3c71cc1d1bdab3f2da2359d0">ahrs_chimu_enable_output</a> (bool_t enable)</td></tr>
+<tr class="separator:a6eecebdc3c71cc1d1bdab3f2da2359d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a276d0fbae93455ee8df03b838757a6e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__chimu__spi_8c.html#a276d0fbae93455ee8df03b838757a6e7">ahrs_chimu_register</a> (void)</td></tr>
+<tr class="separator:a276d0fbae93455ee8df03b838757a6e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a8e7287a633ce9302ef4bcf322f7ed6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__chimu__spi_8c.html#a3a8e7287a633ce9302ef4bcf322f7ed6">ahrs_chimu_init</a> (void)</td></tr>
+<tr class="separator:a3a8e7287a633ce9302ef4bcf322f7ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ea3d2bf0a03b37852747429c24bee61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__chimu__spi_8c.html#a9ea3d2bf0a03b37852747429c24bee61">parse_ins_msg</a> (void)</td></tr>
 <tr class="separator:a9ea3d2bf0a03b37852747429c24bee61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0156f6669675c216bbcb413ea1879960"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__chimu__spi_8c.html#a0156f6669675c216bbcb413ea1879960">ahrs_update_gps</a> (void)</td></tr>
-<tr class="memdesc:a0156f6669675c216bbcb413ea1879960"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update AHRS state with GPS measurements.  <a href="#a0156f6669675c216bbcb413ea1879960">More...</a><br/></td></tr>
-<tr class="separator:a0156f6669675c216bbcb413ea1879960"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e5064cff25b95f0631d5184d779ee43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__chimu__spi_8c.html#a4e5064cff25b95f0631d5184d779ee43">ahrs_propagate</a> (float dt)</td></tr>
-<tr class="memdesc:a4e5064cff25b95f0631d5184d779ee43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Propagation.  <a href="#a4e5064cff25b95f0631d5184d779ee43">More...</a><br/></td></tr>
-<tr class="separator:a4e5064cff25b95f0631d5184d779ee43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a020997c7e92d014a6bacd92b5255b904"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__chimu__spi_8c.html#a020997c7e92d014a6bacd92b5255b904">ahrs_update_accel</a> (float dt)</td></tr>
-<tr class="memdesc:a020997c7e92d014a6bacd92b5255b904"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update AHRS state with accerleration measurements.  <a href="#a020997c7e92d014a6bacd92b5255b904">More...</a><br/></td></tr>
-<tr class="separator:a020997c7e92d014a6bacd92b5255b904"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ad082bbcaad24f3e263c43c6f2328c00b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCHIMU__PARSER__DATA.html">CHIMU_PARSER_DATA</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__chimu__spi_8c.html#ad082bbcaad24f3e263c43c6f2328c00b">CHIMU_DATA</a></td></tr>
+<tr class="memitem:ad082bbcaad24f3e263c43c6f2328c00b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="imu__chimu_8h.html#structCHIMU__PARSER__DATA">CHIMU_PARSER_DATA</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__chimu__spi_8c.html#ad082bbcaad24f3e263c43c6f2328c00b">CHIMU_DATA</a></td></tr>
 <tr class="separator:ad082bbcaad24f3e263c43c6f2328c00b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a310a9ccf07491295e9ee009addba0711"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ins__module_8h.html#af7a0eee39bb6bb96792762bbbb34cb4a">INS_FORMAT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__chimu__spi_8c.html#a310a9ccf07491295e9ee009addba0711">ins_roll_neutral</a></td></tr>
 <tr class="separator:a310a9ccf07491295e9ee009addba0711"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a6b5bd327adc55cf76fd648f9e81727"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ins__module_8h.html#af7a0eee39bb6bb96792762bbbb34cb4a">INS_FORMAT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__chimu__spi_8c.html#a1a6b5bd327adc55cf76fd648f9e81727">ins_pitch_neutral</a></td></tr>
 <tr class="separator:a1a6b5bd327adc55cf76fd648f9e81727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa64cfaacc39f574ee4e663d31cba87da"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="ahrs__chimu_8h.html#structAhrsChimu">AhrsChimu</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__chimu__spi_8c.html#aa64cfaacc39f574ee4e663d31cba87da">ahrs_chimu</a></td></tr>
+<tr class="separator:aa64cfaacc39f574ee4e663d31cba87da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8c616627ecbb4860e359944c97dc718"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__chimu__spi_8c.html#af8c616627ecbb4860e359944c97dc718">gps_ev</a></td></tr>
+<tr class="separator:af8c616627ecbb4860e359944c97dc718"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a81e17b09f47068c02c345da1523f589b"></a>
+<a class="anchor" id="a6eecebdc3c71cc1d1bdab3f2da2359d0"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void ahrs_align </td>
+          <td class="memname">static bool_t ahrs_chimu_enable_output </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname">)</td><td></td>
+          <td class="paramtype">bool_t&#160;</td>
+          <td class="paramname"><em>enable</em>)</td><td></td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Aligns the AHRS. </p>
-<p>Called after ahrs_aligner has run to set initial attitude and biases. Must set the ahrs status to AHRS_RUNNING. Needs to be implemented by each AHRS algorithm. </p>
+<p>Definition at line <a class="el" href="ahrs__chimu__spi_8c_source.html#l00051">51</a> of file <a class="el" href="ahrs__chimu__spi_8c_source.html">ahrs_chimu_spi.c</a>.</p>
 
-<p>Definition at line <a class="el" href="ahrs__chimu__spi_8c_source.html#l00071">71</a> of file <a class="el" href="ahrs__chimu__spi_8c_source.html">ahrs_chimu_spi.c</a>.</p>
+<p>References <a class="el" href="ahrs__chimu__spi_8c_source.html#l00038">ahrs_chimu</a>, and <a class="el" href="ahrs__chimu_8h_source.html#l00033">AhrsChimu::is_enabled</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__gx3_8c_source.html#l00099">imu_impl_init()</a>, and <a class="el" href="rotorcraft_2main_8c_source.html#l00370">on_gyro_event()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__chimu__spi_8c_source.html#l00057">ahrs_chimu_register()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__chimu__spi_8c_a81e17b09f47068c02c345da1523f589b_icgraph.png" border="0" usemap="#ahrs__chimu__spi_8c_a81e17b09f47068c02c345da1523f589b_icgraph" alt=""/></div>
-<map name="ahrs__chimu__spi_8c_a81e17b09f47068c02c345da1523f589b_icgraph" id="ahrs__chimu__spi_8c_a81e17b09f47068c02c345da1523f589b_icgraph">
-<area shape="rect" id="node3" href="ahrs__gx3_8c.html#ad32faae58e391642ec8048cb11011998" title="must be defined by underlying hardware " alt="" coords="147,5,253,33"/><area shape="rect" id="node5" href="rotorcraft_2main_8c.html#a9ad44dfc9d1342835451bd87613fb610" title="on_gyro_event" alt="" coords="143,55,257,83"/><area shape="rect" id="node7" href="main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="308,55,404,83"/></map>
+<div class="center"><img src="ahrs__chimu__spi_8c_a6eecebdc3c71cc1d1bdab3f2da2359d0_icgraph.png" border="0" usemap="#ahrs__chimu__spi_8c_a6eecebdc3c71cc1d1bdab3f2da2359d0_icgraph" alt=""/></div>
+<map name="ahrs__chimu__spi_8c_a6eecebdc3c71cc1d1bdab3f2da2359d0_icgraph" id="ahrs__chimu__spi_8c_a6eecebdc3c71cc1d1bdab3f2da2359d0_icgraph">
+<area shape="rect" id="node3" href="ahrs__chimu__spi_8c.html#a276d0fbae93455ee8df03b838757a6e7" title="ahrs_chimu_register" alt="" coords="248,5,400,33"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="aa3721663c9df7c7af5613486a3566afb"></a>
+<a class="anchor" id="a3a8e7287a633ce9302ef4bcf322f7ed6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ahrs_init </td>
+          <td class="memname">void ahrs_chimu_init </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname">)</td><td></td>
@@ -212,112 +220,29 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>AHRS initialization. </p>
-<p>Called at startup. Needs to be implemented by each AHRS algorithm. </p>
+<p>Definition at line <a class="el" href="ahrs__chimu__spi_8c_source.html#l00064">64</a> of file <a class="el" href="ahrs__chimu__spi_8c_source.html">ahrs_chimu_spi.c</a>.</p>
 
-<p>Definition at line <a class="el" href="ahrs__chimu__spi_8c_source.html#l00037">37</a> of file <a class="el" href="ahrs__chimu__spi_8c_source.html">ahrs_chimu_spi.c</a>.</p>
-
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00174">init_ap()</a>, and <a class="el" href="rotorcraft_2main_8c_source.html#l00144">main_init()</a>.</p>
+<p>References <a class="el" href="ahrs__chimu__spi_8c_source.html#l00038">ahrs_chimu</a>, <a class="el" href="imu__chimu_8h_source.html#l00048">CHIMU_BROADCAST</a>, <a class="el" href="imu__chimu_8c_source.html#l00082">CHIMU_Checksum()</a>, <a class="el" href="imu__chimu_8c_source.html#l00108">CHIMU_Init()</a>, <a class="el" href="imu__chimu_8h_source.html#l00047">CHIMU_STX</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="arch_2sim_2modules_2ins_2ins__arduimu_8c_source.html#l00015">ins_pitch_neutral</a>, <a class="el" href="ahrs__sim_8c_source.html#l00046">INS_PITCH_NEUTRAL_DEFAULT</a>, <a class="el" href="arch_2sim_2modules_2ins_2ins__arduimu_8c_source.html#l00014">ins_roll_neutral</a>, <a class="el" href="ahrs__sim_8c_source.html#l00043">INS_ROLL_NEUTRAL_DEFAULT</a>, <a class="el" href="ins__module_8h_source.html#l00084">InsSend</a>, <a class="el" href="ins__module_8h_source.html#l00082">InsSend1</a>, <a class="el" href="ahrs__chimu_8h_source.html#l00034">AhrsChimu::is_aligned</a>, <a class="el" href="ahrs__chimu_8h_source.html#l00033">AhrsChimu::is_enabled</a>, <a class="el" href="imu__chimu_8h_source.html#l00060">MSG09_ESTIMATOR</a>, <a class="el" href="imu__chimu_8h_source.html#l00067">MSG10_UARTSETTINGS</a>, <a class="el" href="ins__module_8h.html#a664a8d539ee7893c78e101c06152fc18">new_ins_attitude</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__chimu__spi_8c_aa3721663c9df7c7af5613486a3566afb_icgraph.png" border="0" usemap="#ahrs__chimu__spi_8c_aa3721663c9df7c7af5613486a3566afb_icgraph" alt=""/></div>
-<map name="ahrs__chimu__spi_8c_aa3721663c9df7c7af5613486a3566afb_icgraph" id="ahrs__chimu__spi_8c_aa3721663c9df7c7af5613486a3566afb_icgraph">
-<area shape="rect" id="node3" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="139,5,203,33"/><area shape="rect" id="node7" href="main_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="main_init" alt="" coords="131,55,211,83"/><area shape="rect" id="node5" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="260,5,329,33"/><area shape="rect" id="node9" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="268,55,321,83"/></map>
+<div class="center"><img src="ahrs__chimu__spi_8c_a3a8e7287a633ce9302ef4bcf322f7ed6_cgraph.png" border="0" usemap="#ahrs__chimu__spi_8c_a3a8e7287a633ce9302ef4bcf322f7ed6_cgraph" alt=""/></div>
+<map name="ahrs__chimu__spi_8c_a3a8e7287a633ce9302ef4bcf322f7ed6_cgraph" id="ahrs__chimu__spi_8c_a3a8e7287a633ce9302ef4bcf322f7ed6_cgraph">
+<area shape="rect" id="node3" href="imu__chimu_8c.html#a70dfa9eb8b0dff840f01869418c7de61" title="CHIMU_Checksum" alt="" coords="176,5,315,33"/><area shape="rect" id="node7" href="imu__chimu_8c.html#a8f9d1eeb69a4253543b66c06e258086e" title="CHIMU_Init" alt="" coords="200,55,291,83"/><area shape="rect" id="node5" href="imu__chimu_8c.html#a2c788af1398c314b3985546d7177df54" title="UpdateCRC" alt="" coords="364,5,457,33"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a4e5064cff25b95f0631d5184d779ee43"></a>
+<a class="anchor" id="a276d0fbae93455ee8df03b838757a6e7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ahrs_propagate </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>dt</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Propagation. </p>
-<p>Usually integrates the gyro rates to angles. Reads the global <a class="el" href="imu_8h.html#a77b76ed533bc56f50d714f8958dd26cc" title="global IMU state ">imu</a> data struct. Does nothing if not implemented by specific AHRS algorithm. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dt</td><td>time difference since last propagation in seconds </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="ahrs__chimu__spi_8c_source.html#l00134">134</a> of file <a class="el" href="ahrs__chimu__spi_8c_source.html">ahrs_chimu_spi.c</a>.</p>
-
-<p>Referenced by <a class="el" href="rotorcraft_2main_8c_source.html#l00370">on_gyro_event()</a>, and <a class="el" href="main__ap_8c_source.html#l00602">sensors_task()</a>.</p>
-
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__chimu__spi_8c_a4e5064cff25b95f0631d5184d779ee43_icgraph.png" border="0" usemap="#ahrs__chimu__spi_8c_a4e5064cff25b95f0631d5184d779ee43_icgraph" alt=""/></div>
-<map name="ahrs__chimu__spi_8c_a4e5064cff25b95f0631d5184d779ee43_icgraph" id="ahrs__chimu__spi_8c_a4e5064cff25b95f0631d5184d779ee43_icgraph">
-<area shape="rect" id="node3" href="rotorcraft_2main_8c.html#a9ad44dfc9d1342835451bd87613fb610" title="on_gyro_event" alt="" coords="177,5,292,33"/><area shape="rect" id="node7" href="main__ap_8h.html#aaae462f08bad040640b5d7d9dac4e5d3" title="Run at PERIODIC_FREQUENCY (60Hz if not defined) " alt="" coords="181,55,288,83"/><area shape="rect" id="node5" href="main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="387,5,483,33"/><area shape="rect" id="node9" href="main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="341,55,528,83"/><area shape="rect" id="node11" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="367,106,503,134"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a020997c7e92d014a6bacd92b5255b904"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ahrs_update_accel </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>dt</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Update AHRS state with accerleration measurements. </p>
-<p>Reads the global <a class="el" href="imu_8h.html#a77b76ed533bc56f50d714f8958dd26cc" title="global IMU state ">imu</a> data struct. Does nothing if not implemented by specific AHRS algorithm. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dt</td><td>time difference since last update in seconds </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="ahrs__chimu__spi_8c_source.html#l00138">138</a> of file <a class="el" href="ahrs__chimu__spi_8c_source.html">ahrs_chimu_spi.c</a>.</p>
-
-<p>Referenced by <a class="el" href="rotorcraft_2main_8c_source.html#l00346">on_accel_event()</a>.</p>
-
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__chimu__spi_8c_a020997c7e92d014a6bacd92b5255b904_icgraph.png" border="0" usemap="#ahrs__chimu__spi_8c_a020997c7e92d014a6bacd92b5255b904_icgraph" alt=""/></div>
-<map name="ahrs__chimu__spi_8c_a020997c7e92d014a6bacd92b5255b904_icgraph" id="ahrs__chimu__spi_8c_a020997c7e92d014a6bacd92b5255b904_icgraph">
-<area shape="rect" id="node3" href="rotorcraft_2main_8c.html#aff00de1e5817007c0daf0de123dfa1f6" title="on_accel_event" alt="" coords="199,5,319,33"/><area shape="rect" id="node5" href="main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="369,5,465,33"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a0156f6669675c216bbcb413ea1879960"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ahrs_update_gps </td>
+          <td class="memname">void ahrs_chimu_register </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname">)</td><td></td>
@@ -326,21 +251,140 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Update AHRS state with GPS measurements. </p>
-<p>Reads the global <a class="el" href="gps_8h.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state ">gps</a> data struct. Does nothing if not implemented by specific AHRS algorithm. </p>
+<p>Definition at line <a class="el" href="ahrs__chimu__spi_8c_source.html#l00057">57</a> of file <a class="el" href="ahrs__chimu__spi_8c_source.html">ahrs_chimu_spi.c</a>.</p>
 
-<p>Definition at line <a class="el" href="ahrs__chimu__spi_8c_source.html#l00112">112</a> of file <a class="el" href="ahrs__chimu__spi_8c_source.html">ahrs_chimu_spi.c</a>.</p>
+<p>References <a class="el" href="abi__common_8h_source.html#l00056">ABI_BROADCAST</a>, <a class="el" href="ahrs__chimu__spi_8c_source.html#l00051">ahrs_chimu_enable_output()</a>, <a class="el" href="ahrs__chimu__spi_8c_source.html#l00064">ahrs_chimu_init()</a>, <a class="el" href="ahrs_8c_source.html#l00057">ahrs_register_impl()</a>, and <a class="el" href="ahrs__chimu__spi_8c_source.html#l00044">gps_cb()</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2main_8c_source.html#l00406">on_gps_event()</a>, and <a class="el" href="main__ap_8c_source.html#l00734">on_gps_solution()</a>.</p>
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ahrs__chimu__spi_8c_a276d0fbae93455ee8df03b838757a6e7_cgraph.png" border="0" usemap="#ahrs__chimu__spi_8c_a276d0fbae93455ee8df03b838757a6e7_cgraph" alt=""/></div>
+<map name="ahrs__chimu__spi_8c_a276d0fbae93455ee8df03b838757a6e7_cgraph" id="ahrs__chimu__spi_8c_a276d0fbae93455ee8df03b838757a6e7_cgraph">
+<area shape="rect" id="node3" href="ahrs__chimu__spi_8c.html#a6eecebdc3c71cc1d1bdab3f2da2359d0" title="ahrs_chimu_enable_output" alt="" coords="205,5,400,33"/><area shape="rect" id="node5" href="ahrs__chimu_8h.html#a3a8e7287a633ce9302ef4bcf322f7ed6" title="ahrs_chimu_init" alt="" coords="241,55,364,83"/><area shape="rect" id="node13" href="ahrs_8c.html#a3d1e9af59a49b4a13e84adbb37d0efec" title="Register an AHRS implementation. " alt="" coords="233,106,372,134"/><area shape="rect" id="node15" href="ahrs__chimu__spi_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="269,157,336,185"/><area shape="rect" id="node7" href="imu__chimu_8c.html#a70dfa9eb8b0dff840f01869418c7de61" title="CHIMU_Checksum" alt="" coords="675,106,813,134"/><area shape="rect" id="node11" href="imu__chimu_8c.html#a8f9d1eeb69a4253543b66c06e258086e" title="CHIMU_Init" alt="" coords="492,106,583,134"/><area shape="rect" id="node9" href="imu__chimu_8c.html#a2c788af1398c314b3985546d7177df54" title="UpdateCRC" alt="" coords="863,106,956,134"/><area shape="rect" id="node17" href="ahrs__chimu__spi_8c.html#a36fc629a6da1649b4590af49dbb38330" title="ahrs_chimu_update_gps" alt="" coords="448,157,627,185"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a36fc629a6da1649b4590af49dbb38330"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ahrs_chimu_update_gps </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>gps_fix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>gps_speed_3d</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ahrs__chimu__spi_8c_source.html#l00143">143</a> of file <a class="el" href="ahrs__chimu__spi_8c_source.html">ahrs_chimu_spi.c</a>.</p>
+
+<p>References <a class="el" href="imu__chimu_8c_source.html#l00082">CHIMU_Checksum()</a>, <a class="el" href="imu__chimu_8h_source.html#l00112">FloatSwap</a>, <a class="el" href="gps_8h_source.html#l00047">GpsFixValid</a>, and <a class="el" href="ins__module_8h_source.html#l00084">InsSend</a>.</p>
+
+<p>Referenced by <a class="el" href="ahrs__chimu__spi_8c_source.html#l00044">gps_cb()</a>.</p>
+
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ahrs__chimu__spi_8c_a36fc629a6da1649b4590af49dbb38330_cgraph.png" border="0" usemap="#ahrs__chimu__spi_8c_a36fc629a6da1649b4590af49dbb38330_cgraph" alt=""/></div>
+<map name="ahrs__chimu__spi_8c_a36fc629a6da1649b4590af49dbb38330_cgraph" id="ahrs__chimu__spi_8c_a36fc629a6da1649b4590af49dbb38330_cgraph">
+<area shape="rect" id="node3" href="imu__chimu_8c.html#a70dfa9eb8b0dff840f01869418c7de61" title="CHIMU_Checksum" alt="" coords="232,5,371,33"/><area shape="rect" id="node5" href="imu__chimu_8c.html#a2c788af1398c314b3985546d7177df54" title="UpdateCRC" alt="" coords="420,5,513,33"/></map>
+</div>
+</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__chimu__spi_8c_a0156f6669675c216bbcb413ea1879960_icgraph.png" border="0" usemap="#ahrs__chimu__spi_8c_a0156f6669675c216bbcb413ea1879960_icgraph" alt=""/></div>
-<map name="ahrs__chimu__spi_8c_a0156f6669675c216bbcb413ea1879960_icgraph" id="ahrs__chimu__spi_8c_a0156f6669675c216bbcb413ea1879960_icgraph">
-<area shape="rect" id="node3" href="rotorcraft_2main_8c.html#ac79b4626d107d8469eef90c7de13c42f" title="on_gps_event" alt="" coords="195,5,304,33"/><area shape="rect" id="node7" href="main__ap_8c.html#a758f2c78e167cc469945af2ad3b94152" title="on_gps_solution" alt="" coords="187,55,312,83"/><area shape="rect" id="node5" href="main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="369,5,465,33"/><area shape="rect" id="node9" href="main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="360,55,475,83"/><area shape="rect" id="node11" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="523,55,659,83"/></map>
+<div class="center"><img src="ahrs__chimu__spi_8c_a36fc629a6da1649b4590af49dbb38330_icgraph.png" border="0" usemap="#ahrs__chimu__spi_8c_a36fc629a6da1649b4590af49dbb38330_icgraph" alt=""/></div>
+<map name="ahrs__chimu__spi_8c_a36fc629a6da1649b4590af49dbb38330_icgraph" id="ahrs__chimu__spi_8c_a36fc629a6da1649b4590af49dbb38330_icgraph">
+<area shape="rect" id="node3" href="ahrs__chimu__spi_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="232,5,299,33"/><area shape="rect" id="node5" href="ahrs__chimu__spi_8c.html#a276d0fbae93455ee8df03b838757a6e7" title="ahrs_chimu_register" alt="" coords="347,5,499,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1c1656ce80fe1f1ad49fea691164dbf8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void gps_cb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>sender_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>stamp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="gps_8h.html#structGpsState">GpsState</a> *&#160;</td>
+          <td class="paramname"><em>gps_s</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ahrs__chimu__spi_8c_source.html#l00044">44</a> of file <a class="el" href="ahrs__chimu__spi_8c_source.html">ahrs_chimu_spi.c</a>.</p>
+
+<p>References <a class="el" href="ahrs__chimu__spi_8c_source.html#l00143">ahrs_chimu_update_gps()</a>, <a class="el" href="gps_8h_source.html#l00081">GpsState::fix</a>, and <a class="el" href="gps_8h_source.html#l00074">GpsState::speed_3d</a>.</p>
+
+<p>Referenced by <a class="el" href="ahrs__chimu__spi_8c_source.html#l00057">ahrs_chimu_register()</a>.</p>
+
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ahrs__chimu__spi_8c_a1c1656ce80fe1f1ad49fea691164dbf8_cgraph.png" border="0" usemap="#ahrs__chimu__spi_8c_a1c1656ce80fe1f1ad49fea691164dbf8_cgraph" alt=""/></div>
+<map name="ahrs__chimu__spi_8c_a1c1656ce80fe1f1ad49fea691164dbf8_cgraph" id="ahrs__chimu__spi_8c_a1c1656ce80fe1f1ad49fea691164dbf8_cgraph">
+<area shape="rect" id="node3" href="ahrs__chimu__spi_8c.html#a36fc629a6da1649b4590af49dbb38330" title="ahrs_chimu_update_gps" alt="" coords="120,5,299,33"/><area shape="rect" id="node5" href="imu__chimu_8c.html#a70dfa9eb8b0dff840f01869418c7de61" title="CHIMU_Checksum" alt="" coords="347,5,485,33"/><area shape="rect" id="node7" href="imu__chimu_8c.html#a2c788af1398c314b3985546d7177df54" title="UpdateCRC" alt="" coords="535,5,628,33"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ahrs__chimu__spi_8c_a1c1656ce80fe1f1ad49fea691164dbf8_icgraph.png" border="0" usemap="#ahrs__chimu__spi_8c_a1c1656ce80fe1f1ad49fea691164dbf8_icgraph" alt=""/></div>
+<map name="ahrs__chimu__spi_8c_a1c1656ce80fe1f1ad49fea691164dbf8_icgraph" id="ahrs__chimu__spi_8c_a1c1656ce80fe1f1ad49fea691164dbf8_icgraph">
+<area shape="rect" id="node3" href="ahrs__chimu__spi_8c.html#a276d0fbae93455ee8df03b838757a6e7" title="ahrs_chimu_register" alt="" coords="120,5,272,33"/></map>
 </div>
 </p>
 
@@ -368,35 +412,71 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs__chimu__spi_8c_source.html#l00076">76</a> of file <a class="el" href="ahrs__chimu__spi_8c_source.html">ahrs_chimu_spi.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__chimu__spi_8c_source.html#l00100">100</a> of file <a class="el" href="ahrs__chimu__spi_8c_source.html">ahrs_chimu_spi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__vn100_8c_source.html#l00160">vn100_event_task()</a>.</p>
+<p>Referenced by <a class="el" href="ins__module_8h_source.html#l00089">ins_event_check_and_handle()</a>, and <a class="el" href="ins__vn100_8c_source.html#l00160">vn100_event_task()</a>.</p>
 
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__chimu__spi_8c_a9ea3d2bf0a03b37852747429c24bee61_icgraph.png" border="0" usemap="#ahrs__chimu__spi_8c_a9ea3d2bf0a03b37852747429c24bee61_icgraph" alt=""/></div>
 <map name="ahrs__chimu__spi_8c_a9ea3d2bf0a03b37852747429c24bee61_icgraph" id="ahrs__chimu__spi_8c_a9ea3d2bf0a03b37852747429c24bee61_icgraph">
-<area shape="rect" id="node3" href="ins__vn100_8h.html#a579de7597d4a8e23e8577ca9745c385d" title="vn100_event_task" alt="" coords="173,5,312,33"/></map>
+<area shape="rect" id="node3" href="ins__module_8h.html#ac34266139fe4658afe3bd0992441431a" title="!SITL " alt="" coords="175,5,332,49"/><area shape="rect" id="node5" href="ins__vn100_8h.html#a579de7597d4a8e23e8577ca9745c385d" title="vn100_event_task" alt="" coords="184,71,323,99"/></map>
 </div>
 </p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="aa64cfaacc39f574ee4e663d31cba87da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="ahrs__chimu_8h.html#structAhrsChimu">AhrsChimu</a> ahrs_chimu</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ahrs__chimu__spi_8c_source.html#l00038">38</a> of file <a class="el" href="ahrs__chimu__spi_8c_source.html">ahrs_chimu_spi.c</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ad082bbcaad24f3e263c43c6f2328c00b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structCHIMU__PARSER__DATA.html">CHIMU_PARSER_DATA</a> CHIMU_DATA</td>
+          <td class="memname"><a class="el" href="imu__chimu_8h.html#structCHIMU__PARSER__DATA">CHIMU_PARSER_DATA</a> CHIMU_DATA</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs__chimu__spi_8c_source.html#l00032">32</a> of file <a class="el" href="ahrs__chimu__spi_8c_source.html">ahrs_chimu_spi.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__chimu__spi_8c_source.html#l00033">33</a> of file <a class="el" href="ahrs__chimu__spi_8c_source.html">ahrs_chimu_spi.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af8c616627ecbb4860e359944c97dc718"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a> gps_ev</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ahrs__chimu__spi_8c_source.html#l00043">43</a> of file <a class="el" href="ahrs__chimu__spi_8c_source.html">ahrs_chimu_spi.c</a>.</p>
 
 </div>
 </div>
@@ -410,7 +490,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs__chimu__spi_8c_source.html#l00035">35</a> of file <a class="el" href="ahrs__chimu__spi_8c_source.html">ahrs_chimu_spi.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__chimu__spi_8c_source.html#l00036">36</a> of file <a class="el" href="ahrs__chimu__spi_8c_source.html">ahrs_chimu_spi.c</a>.</p>
 
 </div>
 </div>
@@ -424,7 +504,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs__chimu__spi_8c_source.html#l00034">34</a> of file <a class="el" href="ahrs__chimu__spi_8c_source.html">ahrs_chimu_spi.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__chimu__spi_8c_source.html#l00035">35</a> of file <a class="el" href="ahrs__chimu__spi_8c_source.html">ahrs_chimu_spi.c</a>.</p>
 
 </div>
 </div>
@@ -434,7 +514,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="ahrs__chimu__spi_8c.html">ahrs_chimu_spi.c</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:04 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:25 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

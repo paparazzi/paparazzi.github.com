@@ -1,5 +1,7 @@
 var NAVTREEINDEX79 =
 {
+"structGpsSkytraq.html":[9,0,106],
+"structGpsSkytraq.html#a0555e2341b230fb5eb5df2a5bd1a6783":[9,0,106,1],
 "structGpsSkytraq.html#a114aa4d00699577b129a6d9727465201":[9,0,106,7],
 "structGpsSkytraq.html#a181df9fc506fdced0e24e7ee301e93e1":[9,0,106,9],
 "structGpsSkytraq.html#a382b7f0395dbdab54ef5545952035291":[9,0,106,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX79 =
 "structImuAspirinI2c.html":[9,0,133],
 "structImuAspirinI2c.html#a0cb54f9f49c5af3ee8e5657b8af54137":[9,0,133,0],
 "structImuAspirinI2c.html#a240a4dd9316059a095d4849c71c3f057":[9,0,133,3],
-"structImuAspirinI2c.html#a450b49a4cfca7cbe6008834bce5b7b4a":[9,0,133,2],
-"structImuAspirinI2c.html#abe39be03a15d0d150067f8422c26b112":[9,0,133,1],
-"structImuAspirinI2c.html#ac0122c41e8b0ac4f6e772c0e85749e03":[9,0,133,4]
+"structImuAspirinI2c.html#a450b49a4cfca7cbe6008834bce5b7b4a":[9,0,133,2]
 };

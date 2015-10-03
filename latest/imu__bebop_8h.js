@@ -1,6 +1,9 @@
 var imu__bebop_8h =
 [
-    [ "ImuBebop", "structImuBebop.html", "structImuBebop" ],
+    [ "ImuBebop", "imu__bebop_8h.html#structImuBebop", [
+      [ "ak", "imu__bebop_8h.html#ae2c1b9ecb71e9207e031dcf67278278e", null ],
+      [ "mpu", "imu__bebop_8h.html#af6183a8c87b33c445406c3d18f6e30ed", null ]
+    ] ],
     [ "IMU_ACCEL_X_SENS", "imu__bebop_8h.html#a8ac88fc00cde506229b92c6a1e2c3122", null ],
     [ "IMU_ACCEL_X_SENS_DEN", "imu__bebop_8h.html#a8acf299c1bfb2daa92b1894556ca50ad", null ],
     [ "IMU_ACCEL_X_SENS_NUM", "imu__bebop_8h.html#ada91099469f16df2d8aeafa82d365c4b", null ],
@@ -19,7 +22,7 @@ var imu__bebop_8h =
     [ "IMU_GYRO_R_SENS", "imu__bebop_8h.html#af57decce9e96b0726832a410273223f3", null ],
     [ "IMU_GYRO_R_SENS_DEN", "imu__bebop_8h.html#aecb2f43265d239ba7661dfcc8523123e", null ],
     [ "IMU_GYRO_R_SENS_NUM", "imu__bebop_8h.html#a6f808c71190e714287442af3bb7008b3", null ],
+    [ "ImuEvent", "imu__bebop_8h.html#a38f1122c1ee0701562b490c6e1b60609", null ],
     [ "imu_bebop_event", "imu__bebop_8h.html#abf59a3c40b631f23435da34574ce0197", null ],
-    [ "ImuEvent", "imu__bebop_8h.html#a9d95db588addd0a03f6e7e749fbb032a", null ],
     [ "imu_bebop", "imu__bebop_8h.html#ac0f795229e38fdc451ef93a40921e93b", null ]
 ];

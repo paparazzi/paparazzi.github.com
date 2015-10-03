@@ -1,5 +1,7 @@
 var NAVTREEINDEX87 =
 {
+"structuart__periph.html#aed710779dfbc59752a37be7ffbaa15a2":[9,0,280,11],
+"structuart__periph.html#af4dc75629753b4166767a7a0b44e8828":[9,0,280,5],
 "structuart__periph.html#af4fa7964e51b251d0fe1b020b3f9c853":[9,0,280,4],
 "structudp__periph.html":[9,0,282],
 "structudp__periph.html#a034d941f9c0c618c4c36a5263d104c76":[9,0,282,6],
@@ -169,10 +171,10 @@ var NAVTREEINDEX87 =
 "subsystems_2datalink_2superbitrf_8h.html":[10,0,0,0,8,2,12],
 "subsystems_2datalink_2superbitrf_8h.html#a027195244402bd1ad1b293407e6d9544":[10,0,0,0,8,2,12,10],
 "subsystems_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3":[10,0,0,0,8,2,12,15],
-"subsystems_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3a3b0611e833c531c97d5c0e3f48ebe1ed":[10,0,0,0,8,2,12,15,9],
 "subsystems_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3a3b0611e833c531c97d5c0e3f48ebe1ed":[10,0,0,0,8,2,12,15,3],
-"subsystems_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3a5cd0551830ddc354286ad97f736b144a":[10,0,0,0,8,2,12,15,11],
+"subsystems_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3a3b0611e833c531c97d5c0e3f48ebe1ed":[10,0,0,0,8,2,12,15,9],
 "subsystems_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3a5cd0551830ddc354286ad97f736b144a":[10,0,0,0,8,2,12,15,5],
+"subsystems_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3a5cd0551830ddc354286ad97f736b144a":[10,0,0,0,8,2,12,15,11],
 "subsystems_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3a9b1ed02c342b713e72b3c987646e5dfb":[10,0,0,0,8,2,12,15,7],
 "subsystems_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3a9b1ed02c342b713e72b3c987646e5dfb":[10,0,0,0,8,2,12,15,1],
 "subsystems_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3abe130355db41b6aa76a4e96a471a4635":[10,0,0,0,8,2,12,15,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX87 =
 "subsystems_2sensors_2infrared__i2c_8h.html#a5e315296fa2757af44acd85f5e2d96ef":[10,0,0,0,8,8,6,10],
 "subsystems_2sensors_2infrared__i2c_8h.html#a68f2671d05d23ff572342e3d8b89cf20":[10,0,0,0,8,8,6,1],
 "subsystems_2sensors_2infrared__i2c_8h.html#a758f2761012838a4393d7d0bf3f512f6":[10,0,0,0,8,8,6,9],
-"subsystems_2sensors_2infrared__i2c_8h.html#ab1594a5f078cf8e09b8fb89fc4104c42":[10,0,0,0,8,8,6,11],
-"subsystems_2sensors_2infrared__i2c_8h.html#ab7aba3256c7414ae390fcb4c0b67d700":[10,0,0,0,8,8,6,6],
-"subsystems_2sensors_2infrared__i2c_8h.html#ad6a28754456593b0e38d39f6f56f13c5":[10,0,0,0,8,8,6,8]
+"subsystems_2sensors_2infrared__i2c_8h.html#ab1594a5f078cf8e09b8fb89fc4104c42":[10,0,0,0,8,8,6,11]
 };

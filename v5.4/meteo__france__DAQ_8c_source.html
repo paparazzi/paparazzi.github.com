@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.4.2_stable-3-gc351a71</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('meteo__france__DAQ_8c_source.html','')
 <div class="line"><a name="l00068"></a><span class="lineno"><a class="code" href="meteo__france__DAQ_8h.html#a428cd9287f9e24f69dd92d696e0a053a">   68</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="meteo__france__DAQ_8c.html#a428cd9287f9e24f69dd92d696e0a053a">mf_daq_send_state</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="comment">// Send aircraft state to DAQ board</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  DOWNLINK_SEND_MF_DAQ_STATE(<a class="code" href="pprz__transport_8c.html#ac7d185dc6518d6eabe7cab132f9b8cda">pprz_tp</a>, EXTRA_DOWNLINK_DEVICE,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  DOWNLINK_SEND_MF_DAQ_STATE(<a class="code" href="extra__pprz__dl_8c.html#a23d92289aeb262d1f2dfa1362e583e90">extra_pprz_tp</a>, EXTRA_DOWNLINK_DEVICE,</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                             &amp;<a class="code" href="fixedwing_2autopilot_8c.html#a643a1732fc06296050835ab61968d726" title="flight time in seconds. ">autopilot_flight_time</a>,</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                             &amp;<a class="code" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float). ">stateGetBodyRates_f</a>()-&gt;<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>,</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                             &amp;<a class="code" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float). ">stateGetBodyRates_f</a>()-&gt;q,</div>
@@ -253,7 +253,7 @@ $(document).ready(function(){initNavTree('meteo__france__DAQ_8c_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_dcc9af59dc35b42e32db80b18066e136.html">meteo</a></li><li class="navelem"><a class="el" href="meteo__france__DAQ_8c.html">meteo_france_DAQ.c</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:15:13 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Jun 17 2015 02:01:16 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

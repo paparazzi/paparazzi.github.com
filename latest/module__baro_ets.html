@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('module__baro_ets.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -113,7 +113,20 @@ $(document).ready(function(){initNavTree('module__baro_ets.html','');});
 <li>Yellow wire: SDA</li>
 <li>Brown wire: SCL</li>
 </ul>
-<h1><a class="anchor" id="configuration"></a>
+<h1><a class="anchor" id="module_load_example__baro_ets"></a>
+Example for airframe file</h1>
+<p>This example contains all possible configuration options, not all of them are mandatory! </p>
+<div class="fragment"><div class="line">&lt;modules&gt;</div>
+<div class="line">  &lt;load name=<span class="stringliteral">&quot;baro_ets.xml&quot;</span>&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;BARO_ETS_I2C_DEV&quot;</span> value=<span class="stringliteral">&quot;i2cX&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;BARO_ETS_SCALE&quot;</span> value=<span class="stringliteral">&quot;scale&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;BARO_ETS_ALT_SCALE&quot;</span> value=<span class="stringliteral">&quot;scale&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;BARO_ETS_ALT_SCALE&quot;</span> value=<span class="stringliteral">&quot;scale&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;BARO_ETS_START_DELAY&quot;</span> value=<span class="stringliteral">&quot;delay&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;BARO_ETS_SYNC_SEND&quot;</span> /&gt;</div>
+<div class="line">  &lt;/load&gt;</div>
+<div class="line">&lt;/modules&gt;</div>
+</div><!-- fragment --> <h1><a class="anchor" id="configuration"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
 Define Options</h2>
@@ -181,7 +194,7 @@ Raw baro_ets.xml file:</h2>
 <div class="line">      Has only been tested with V3 of the sensor hardware.</div>
 <div class="line"></div>
 <div class="line">      Notes:</div>
-<div class="line">      Connect directly to TWOG/Tiny I2C <a class="code" href="navdata_8h.html#abd160e9c56e6ebc3ef6a4d8990d4fc92">port</a>. Multiple sensors can be chained together.</div>
+<div class="line">      Connect directly to TWOG/Tiny I2C port. Multiple sensors can be chained together.</div>
 <div class="line">      Sensor should be in the proprietary mode (<span class="keywordflow">default</span>) and not in 3rd party mode.</div>
 <div class="line"></div>
 <div class="line">      Sensor module wire assignments:</div>
@@ -196,12 +209,12 @@ Raw baro_ets.xml file:</h2>
 <div class="line">    &lt;define name=&quot;<a class="code" href="baro__ets_8c.html#a23a339769f9531df25769ec01e232127" title="scale factor to convert raw ADC measurement to altitude change in meters ">BARO_ETS_ALT_SCALE</a>&quot; value=&quot;scale&quot; description=&quot;scale factor to convert raw ADC measurement to altitude change in meters (default: 0.32)&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;<a class="code" href="baro__ets_8c.html#a23a339769f9531df25769ec01e232127" title="scale factor to convert raw ADC measurement to altitude change in meters ">BARO_ETS_ALT_SCALE</a>&quot; value=&quot;scale&quot; description=&quot;pressure offset in Pascal when converting raw adc to real pressure (default: 101325.0=&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;<a class="code" href="baro__ets_8c.html#a62e46943e132b60c3120e3ab57e76981" title="delay in seconds until sensor is read after startup ">BARO_ETS_START_DELAY</a>&quot; value=&quot;delay&quot; description=&quot;set initial start delay in seconds&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;BARO_ETS_SYNC_SEND&quot; description=&quot;flag to <a class="code" href="ivy__transport_8c.html#a32c2039bab802c9e0ca46fb3ab3dfd37">transmit</a> the <a class="code" href="link__mcu__can_8c.html#afb87d045bbf32b236fc425efe02bdc7b">data</a> as it is acquired&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;BARO_ETS_SYNC_SEND&quot; description=&quot;flag to <a class="code" href="ivy__transport_8c.html#a32c2039bab802c9e0ca46fb3ab3dfd37">transmit</a> the data as it is acquired&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line"></div>
-<div class="line">  &lt;<a class="code" href="stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963">header</a>&gt;</div>
+<div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;baro_ets.h&quot;/&gt;</div>
-<div class="line">  &lt;/<a class="code" href="stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963">header</a>&gt;</div>
+<div class="line">  &lt;/header&gt;</div>
 <div class="line">  &lt;<a class="code" href="nav__gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=&quot;<a class="code" href="baro__ets_8c.html#a6c106599c657e4412fa12e7e4c7e1b39">baro_ets_init</a>()&quot;/&gt;</div>
 <div class="line">  &lt;periodic fun=&quot;<a class="code" href="baro__ets_8c.html#a068f56980bf36411a20c15b9d4b4811f">baro_ets_read_periodic</a>()&quot; freq=&quot;10.&quot;/&gt;</div>
 <div class="line">  &lt;event fun=&quot;<a class="code" href="baro__ets_8h.html#a8593684bb1be9bea4a2541091926e973">BaroEtsEvent</a>()&quot;/&gt;</div>
@@ -217,7 +230,7 @@ Raw baro_ets.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:18 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

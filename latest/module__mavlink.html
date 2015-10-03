@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('module__mavlink.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -105,7 +105,16 @@ $(document).ready(function(){initNavTree('module__mavlink.html','');});
 <div class="contents">
 <div class="textblock"><p>Module XML file: <code>mavlink.xml</code> </p>
 <p>No detailed description...</p>
-<h1><a class="anchor" id="configuration"></a>
+<h1><a class="anchor" id="module_load_example__mavlink"></a>
+Example for airframe file</h1>
+<p>This example contains all possible configuration options, not all of them are mandatory! </p>
+<div class="fragment"><div class="line">&lt;modules&gt;</div>
+<div class="line">  &lt;load name=<span class="stringliteral">&quot;mavlink.xml&quot;</span>&gt;</div>
+<div class="line">    &lt;configure name=<span class="stringliteral">&quot;MAVLINK_PORT&quot;</span> <a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a>=<span class="stringliteral">&quot;UARTx|UDPx|UsbS&quot;</span> /&gt;</div>
+<div class="line">    &lt;configure name=<span class="stringliteral">&quot;MAVLINK_BAUD&quot;</span> <a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a>=<span class="stringliteral">&quot;B57600&quot;</span> /&gt;</div>
+<div class="line">  &lt;/load&gt;</div>
+<div class="line">&lt;/modules&gt;</div>
+</div><!-- fragment --> <h1><a class="anchor" id="configuration"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="configure"></a>
 Configure Options</h2>
@@ -159,13 +168,13 @@ Raw mavlink.xml file:</h2>
 <div class="line"></div>
 <div class="line">&lt;module name=<span class="stringliteral">&quot;datalink&quot;</span>&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
-<div class="line">    &lt;description&gt;Basic <a class="code" href="mavlink_8h.html#afa6d5c5399e58adaff4eba0257569def">MAVLink</a> implementation&lt;/description&gt;</div>
+<div class="line">    &lt;description&gt;Basic MAVLink implementation&lt;/description&gt;</div>
 <div class="line">    &lt;configure name=<span class="stringliteral">&quot;MAVLINK_PORT&quot;</span> <a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a>=<span class="stringliteral">&quot;UARTx|UDPx|UsbS&quot;</span> description=<span class="stringliteral">&quot;The port device to use for mavlink (default: UART1)&quot;</span>/&gt;</div>
 <div class="line">    &lt;configure name=<span class="stringliteral">&quot;MAVLINK_BAUD&quot;</span> <a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a>=<span class="stringliteral">&quot;B57600&quot;</span> description=<span class="stringliteral">&quot;Baud rate if MAVLINK_PORT is a UART&quot;</span>/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
-<div class="line">  &lt;<a class="code" href="stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963">header</a>&gt;</div>
+<div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;mavlink.h&quot;</span>/&gt;</div>
-<div class="line">  &lt;/<a class="code" href="stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963">header</a>&gt;</div>
+<div class="line">  &lt;/header&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;<a class="code" href="nav__gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;mavlink_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;periodic fun=<span class="stringliteral">&quot;mavlink_periodic()&quot;</span> freq=<span class="stringliteral">&quot;10&quot;</span> autorun=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
@@ -175,19 +184,20 @@ Raw mavlink.xml file:</h2>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;mavlink.c&quot;</span>/&gt;</div>
 <div class="line">    &lt;raw&gt;</div>
 <div class="line">      MAVLINK_PORT ?= UART1</div>
-<div class="line">      MAVLINK_PORT_UPPER=$(shell echo $(MAVLINK_PORT) | tr a-z <a class="code" href="pprz__geodetic__utm_8h.html#a955f504eccf76b4eb2489c0adab03121">A</a>-Z)</div>
-<div class="line">      ifeq ($(MAVLINK_PORT), UsbS)</div>
+<div class="line">      MAVLINK_PORT_UPPER=$(shell echo $(MAVLINK_PORT) | tr a-z <a class="code" href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a>-Z)</div>
+<div class="line">      MAVLINK_PORT_LOWER=$(shell echo $(MAVLINK_PORT) | tr <a class="code" href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a>-Z a-z)</div>
+<div class="line">      ifneq (,$(findstring usb,$(MAVLINK_PORT_LOWER)))</div>
 <div class="line">      ap.CFLAGS += -DUSE_USB_SERIAL</div>
 <div class="line">      ap.srcs += $(SRC_ARCH)/usb_ser_hw.c</div>
-<div class="line">      ap.CFLAGS += -DMAVLINK_DEV=UsbS</div>
+<div class="line">      ap.CFLAGS += -DMAVLINK_DEV=<a class="code" href="lpc21_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a></div>
 <div class="line">      else</div>
-<div class="line">      ifeq ($(findstring UDP,$(MAVLINK_PORT)), UDP)</div>
+<div class="line">      ifneq (,$(findstring udp,$(MAVLINK_PORT_LOWER)))</div>
 <div class="line">      include $(CFG_SHARED)/udp.makefile</div>
-<div class="line">      $(TARGET).CFLAGS += -DMAVLINK_DEV=$(MAVLINK_PORT_UPPER)</div>
+<div class="line">      $(TARGET).CFLAGS += -DMAVLINK_DEV=$(MAVLINK_PORT_LOWER)</div>
 <div class="line">      $(TARGET).CFLAGS += -DUSE_$(MAVLINK_PORT_UPPER)</div>
 <div class="line">      else</div>
 <div class="line">      MAVLINK_BAUD ?= <a class="code" href="lpc21_2mcu__periph_2uart__arch_8h.html#a4bde6a10c31adfe1959fb9724e13029a">B57600</a></div>
-<div class="line">      ap.CFLAGS += -DMAVLINK_DEV=$(MAVLINK_PORT_UPPER)</div>
+<div class="line">      ap.CFLAGS += -DMAVLINK_DEV=$(MAVLINK_PORT_LOWER)</div>
 <div class="line">      ap.CFLAGS += -DUSE_$(MAVLINK_PORT_UPPER)</div>
 <div class="line">      ap.CFLAGS += -D$(MAVLINK_PORT_UPPER)_BAUD=$(MAVLINK_BAUD)</div>
 <div class="line">      endif</div>
@@ -201,7 +211,7 @@ Raw mavlink.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:17 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

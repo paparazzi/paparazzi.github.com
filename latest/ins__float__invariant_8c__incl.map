@@ -1,36 +1,22 @@
 <map id="sw/airborne/subsystems/ins/ins_float_invariant.c" name="sw/airborne/subsystems/ins/ins_float_invariant.c">
-<area shape="rect" id="node3" href="$ins__float__invariant_8h.html" title="subsystems/ins/ins\l_float_invariant.h" alt="" coords="879,99,1020,143"/>
-<area shape="rect" id="node5" href="$ahrs_8h.html" title="Attitude and Heading Reference System interface. " alt="" coords="879,201,1020,229"/>
-<area shape="rect" id="node9" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1229,481,1408,509"/>
-<area shape="rect" id="node24" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="336,481,525,509"/>
-<area shape="rect" id="node30" href="$state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="767,294,833,322"/>
-<area shape="rect" id="node52" href="$ins_8h.html" title="Integrated Navigation System interface. " alt="" coords="389,201,523,229"/>
-<area shape="rect" id="node58" href="$ahrs__int__utils_8h.html" title="Utility functions for fixed point AHRS implementations. " alt="" coords="1669,193,1832,237"/>
-<area shape="rect" id="node70" href="$ahrs__aligner_8h.html" title="Interface to align the AHRS via low&#45;passed measurements at startup. " alt="" coords="1477,379,1640,423"/>
-<area shape="rect" id="node76" href="$gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="1535,294,1673,322"/>
-<area shape="rect" id="node90" href="$imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="1213,294,1352,322"/>
-<area shape="rect" id="node101" href="$pprz__rk__float_8h.html" title="Runge&#45;Kutta library (float version) " alt="" coords="5,107,160,135"/>
-<area shape="rect" id="node104" href="$pprz__isa_8h.html" title="Paparazzi atmospheric pressure conversion utilities. " alt="" coords="987,481,1112,509"/>
-<area shape="rect" id="node108" href="$abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="2761,107,2895,135"/>
-<area shape="rect" id="node113" href="$led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="2920,107,2973,135"/>
-<area shape="rect" id="node117" href="$uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="2933,387,3072,415"/>
-<area shape="rect" id="node127" href="$downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="2292,286,2444,330"/>
-<area shape="rect" id="node12" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="459,574,613,602"/>
-<area shape="rect" id="node19" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1219,574,1368,602"/>
-<area shape="rect" id="node34" href="$pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="712,379,861,423"/>
-<area shape="rect" id="node40" href="$pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="539,379,688,423"/>
-<area shape="rect" id="node45" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1037,379,1200,423"/>
-<area shape="rect" id="node36" href="$pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="688,481,811,509"/>
-<area shape="rect" id="node61" href="$ahrs__magnetic__field__model_8h.html" title="subsystems/ahrs/ahrs\l_magnetic_field_model.h" alt="" coords="1867,379,2048,423"/>
-<area shape="rect" id="node65" href="$ahrs__float__utils_8h.html" title="Utility functions for floating point AHRS implementations. " alt="" coords="1697,286,1860,330"/>
-<area shape="rect" id="node80" href="$sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1863,481,2033,509"/>
-<area shape="rect" id="node82" href="$inttypes_8h.html" title="inttypes.h" alt="" coords="2505,737,2591,765"/>
-<area shape="rect" id="node121" href="$link__device_8h.html" title="generic device header " alt="" coords="2604,659,2785,687"/>
-<area shape="rect" id="node134" href="$pprz__transport_8h.html" title="Extra datalink using PPRZ protocol. " alt="" coords="2276,473,2428,517"/>
-<area shape="rect" id="node148" href="$pprzlog__transport_8h.html" title="Protocol for on&#45;board data logger with timestamp. " alt="" coords="2405,379,2557,423"/>
-<area shape="rect" id="node152" href="$xbee_8h.html" title="Maxstream XBee serial input and output. " alt="" coords="2757,379,2909,423"/>
-<area shape="rect" id="node159" href="$w5100_8h.html" title="W5100 ethernet chip I/O. " alt="" coords="2581,379,2733,423"/>
-<area shape="rect" id="node138" href="$datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="2296,566,2448,610"/>
-<area shape="rect" id="node143" href="$transport_8h.html" title="generic transport header " alt="" coords="2472,566,2624,610"/>
-<area shape="rect" id="node157" href="$xbee24_8h.html" title="Configuration for 2.4GHz &quot;series 1&quot; and 900MHz modules. " alt="" coords="2604,473,2756,517"/>
+<area shape="rect" id="node3" href="$ins__float__invariant_8h.html" title="INS using invariant filter. " alt="" coords="867,99,1008,143"/>
+<area shape="rect" id="node5" href="$ins_8h.html" title="Integrated Navigation System interface. " alt="" coords="763,193,896,221"/>
+<area shape="rect" id="node14" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1013,465,1152,493"/>
+<area shape="rect" id="node29" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="240,465,429,493"/>
+<area shape="rect" id="node35" href="$state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="571,278,637,306"/>
+<area shape="rect" id="node52" href="$gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="1325,278,1464,306"/>
+<area shape="rect" id="node68" href="$ahrs__int__utils_8h.html" title="Utility functions for fixed point AHRS implementations. " alt="" coords="1628,270,1791,314"/>
+<area shape="rect" id="node80" href="$ahrs__aligner_8h.html" title="Interface to align the AHRS via low&#45;passed measurements at startup. " alt="" coords="1275,363,1437,407"/>
+<area shape="rect" id="node91" href="$pprz__rk__float_8h.html" title="Runge&#45;Kutta library (float version) " alt="" coords="5,193,160,221"/>
+<area shape="rect" id="node94" href="$pprz__isa_8h.html" title="Paparazzi atmospheric pressure conversion utilities. " alt="" coords="563,465,688,493"/>
+<area shape="rect" id="node45" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="763,363,925,407"/>
+<area shape="rect" id="node9" href="$pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="949,363,1099,407"/>
+<area shape="rect" id="node11" href="$pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="763,465,885,493"/>
+<area shape="rect" id="node17" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="381,558,536,586"/>
+<area shape="rect" id="node24" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="869,558,1019,586"/>
+<area shape="rect" id="node40" href="$pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="488,363,637,407"/>
+<area shape="rect" id="node56" href="$sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1384,465,1555,493"/>
+<area shape="rect" id="node58" href="$inttypes_8h.html" title="inttypes.h" alt="" coords="1416,558,1501,586"/>
+<area shape="rect" id="node71" href="$ahrs__magnetic__field__model_8h.html" title="subsystems/ahrs/ahrs\l_magnetic_field_model.h" alt="" coords="1824,457,2005,501"/>
+<area shape="rect" id="node75" href="$ahrs__float__utils_8h.html" title="Utility functions for floating point AHRS implementations. " alt="" coords="1715,363,1877,407"/>
 </map>

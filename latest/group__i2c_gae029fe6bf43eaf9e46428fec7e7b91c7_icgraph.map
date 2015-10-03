@@ -2,9 +2,9 @@
 <area shape="rect" id="node3" href="$boards_2bebop_2actuators_8h.html#ad8f645b7663a54e01ba60403a1e45645" title="actuators_bebop_commit" alt="" coords="173,30,360,58"/>
 <area shape="rect" id="node5" href="$ads1114_8h.html#a4ba628257d14fc3773ddfc484a18e199" title="ads1114_read" alt="" coords="211,81,323,109"/>
 <area shape="rect" id="node11" href="$ak8963_8h.html#a0316e3a43049d9356e6581384be3e0ae" title="ak8963_event" alt="" coords="211,157,323,185"/>
-<area shape="rect" id="node21" href="$ak8963_8h.html#adfac2f0ad8cc1dd43748e5a850139c0c" title="ak8963_read" alt="" coords="215,207,319,235"/>
-<area shape="rect" id="node27" href="$mpu9250__i2c_8h.html#a64969bf12980c6f6a338452f2552fc91" title="mpu9250_i2c_read" alt="" coords="425,258,569,286"/>
-<area shape="rect" id="node31" href="$atmega__i2c__cam__ctrl_8h.html#ad7c06f4d1c398ba41252eb2e7ecd1a85" title="atmega_i2c_cam_ctrl_send" alt="" coords="168,309,365,337"/>
+<area shape="rect" id="node19" href="$ak8963_8h.html#adfac2f0ad8cc1dd43748e5a850139c0c" title="ak8963_read" alt="" coords="215,207,319,235"/>
+<area shape="rect" id="node25" href="$mpu9250__i2c_8h.html#a64969bf12980c6f6a338452f2552fc91" title="mpu9250_i2c_read" alt="" coords="425,258,569,286"/>
+<area shape="rect" id="node29" href="$atmega__i2c__cam__ctrl_8h.html#ad7c06f4d1c398ba41252eb2e7ecd1a85" title="atmega_i2c_cam_ctrl_send" alt="" coords="168,309,365,337"/>
 <area shape="rect" id="node37" href="$baro__scp__i2c_8c.html#a6cbae7e48b4b096bafb8717f44bef3f1" title="baro_scp_event" alt="" coords="205,359,328,387"/>
 <area shape="rect" id="node39" href="$baro__scp__i2c_8c.html#a7995b8df4beede8b8da2998349693108" title="baro_scp_periodic" alt="" coords="199,410,335,438"/>
 <area shape="rect" id="node41" href="$bmp085_8h.html#ad6fe03b188457ab22e7e81f0712c9afb" title="Start new measurement if idle or read temp/pressure. " alt="" coords="201,461,332,489"/>
@@ -28,14 +28,14 @@
 <area shape="rect" id="node7" href="$airspeed__ads1114_8h.html#abc1ef85820f6067126dc796a05dac64b" title="airspeed_periodic" alt="" coords="431,5,564,33"/>
 <area shape="rect" id="node9" href="$umarim_2baro__board_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00" title="baro_periodic" alt="" coords="444,55,551,83"/>
 <area shape="rect" id="node13" href="$imu__bebop_8h.html#abf59a3c40b631f23435da34574ce0197" title="Handle all the events of the Navstik IMU components. " alt="" coords="429,106,565,134"/>
-<area shape="rect" id="node17" href="$mpu9250__i2c_8h.html#a0dae39bc87a61581cbe1e8a8a3138c0f" title="mpu9250_i2c_event" alt="" coords="423,157,572,185"/>
-<area shape="rect" id="node15" href="$imu__bebop_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="671,106,753,134"/>
-<area shape="rect" id="node19" href="$imu__mpu9250__i2c_8h.html#af140d4e8a775be026073e67fd3080aa2" title="imu_mpu9250_event" alt="" coords="633,157,791,185"/>
-<area shape="rect" id="node23" href="$ak8963_8h.html#ade0f3265df5fdf2c6bcd81c1f44ab48c" title="convenience function: read or start configuration if not already initialized " alt="" coords="435,207,560,235"/>
-<area shape="rect" id="node25" href="$imu__bebop_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="Handle all the periodic tasks of the Navstik IMU components. " alt="" coords="661,207,763,235"/>
-<area shape="rect" id="node29" href="$mpu9250__i2c_8h.html#a9186a17bab6df9561bd3f4bb088fa99e" title="convenience function: read or start configuration if not already initialized " alt="" coords="629,258,795,286"/>
-<area shape="rect" id="node33" href="$atmega__i2c__cam__ctrl_8h.html#aeb25c30f109ccd0c3046715e4f3df6b5" title="atmega_i2c_cam_ctrl\l_periodic" alt="" coords="419,309,576,353"/>
-<area shape="rect" id="node35" href="$dc_8h.html#a833f16388be36136f5d7d173200d5e95" title="Send Command To Camera. " alt="" coords="424,375,571,403"/>
+<area shape="rect" id="node15" href="$mpu9250__i2c_8h.html#a0dae39bc87a61581cbe1e8a8a3138c0f" title="mpu9250_i2c_event" alt="" coords="423,157,572,185"/>
+<area shape="rect" id="node17" href="$imu__mpu9250__spi_8h.html#af140d4e8a775be026073e67fd3080aa2" title="imu_mpu9250_event" alt="" coords="633,157,791,185"/>
+<area shape="rect" id="node21" href="$ak8963_8h.html#ade0f3265df5fdf2c6bcd81c1f44ab48c" title="convenience function: read or start configuration if not already initialized " alt="" coords="435,207,560,235"/>
+<area shape="rect" id="node23" href="$imu__bebop_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="Handle all the periodic tasks of the Navstik IMU components. " alt="" coords="661,207,763,235"/>
+<area shape="rect" id="node27" href="$mpu9250__i2c_8h.html#a9186a17bab6df9561bd3f4bb088fa99e" title="convenience function: read or start configuration if not already initialized " alt="" coords="629,258,795,286"/>
+<area shape="rect" id="node31" href="$atmega__i2c__cam__ctrl_8h.html#aeb25c30f109ccd0c3046715e4f3df6b5" title="atmega_i2c_cam_ctrl\l_periodic" alt="" coords="419,309,576,353"/>
+<area shape="rect" id="node33" href="$dc_8h.html#a833f16388be36136f5d7d173200d5e95" title="Send Command To Camera. " alt="" coords="424,375,571,403"/>
+<area shape="rect" id="node35" href="$sim__i2c__cam__ctrl_8c.html#aeb25c30f109ccd0c3046715e4f3df6b5" title="atmega_i2c_cam_ctrl\l_periodic" alt="" coords="633,367,791,411"/>
 <area shape="rect" id="node43" href="$baro__bmp_8h.html#a2c8ab237cbb8ec936485236b89562181" title="baro_bmp_periodic" alt="" coords="425,465,569,493"/>
 <area shape="rect" id="node45" href="$hbmini_2baro__board_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00" title="baro_periodic" alt="" coords="444,518,551,546"/>
 <area shape="rect" id="node63" href="$l3g4200_8h.html#a0bc770c43c3438d6ddf25a05aa2cc572" title="convenience function: read or start configuration if not already initialized " alt="" coords="432,806,563,834"/>

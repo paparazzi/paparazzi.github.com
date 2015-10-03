@@ -1,23 +1,31 @@
 <map id="orientationGetRMat_f" name="orientationGetRMat_f">
-<area shape="rect" id="node3" href="$ahrs__float__cmpl_8c.html#aa3721663c9df7c7af5613486a3566afb" title="AHRS initialization. " alt="" coords="272,5,347,33"/>
-<area shape="rect" id="node5" href="$ahrs__float__cmpl_8c.html#a020997c7e92d014a6bacd92b5255b904" title="Update AHRS state with accerleration measurements. " alt="" coords="239,55,380,83"/>
-<area shape="rect" id="node7" href="$ahrs__float__cmpl_8c.html#a2e90a05e5a4ca369d0308bb72e68171d" title="Compute body orientation and rates from imu orientation and rates. " alt="" coords="213,106,405,150"/>
-<area shape="rect" id="node13" href="$ahrs__gx3_8h.html#acb7a83c7954119b08e90b88661889883" title="gx3_packet_read_message" alt="" coords="211,173,408,201"/>
-<area shape="rect" id="node17" href="$ahrs__float__dcm_8c.html#a231f7602591a267c2669a2af9b9c8749" title="Normalize" alt="" coords="267,223,352,251"/>
-<area shape="rect" id="node21" href="$ahrs__float__dcm_8c.html#af37e584c40cc004e4db7af1151ff659e" title="set_body_orientation\l_and_rates" alt="" coords="232,274,387,318"/>
-<area shape="rect" id="node28" href="$ahrs__float__mlkf_8c.html#abea8ede7c8ebc5179487d3464ab513bb" title="Compute body orientation and rates from imu orientation and rates. " alt="" coords="213,373,405,401"/>
-<area shape="rect" id="node34" href="$group__state__attitude.html#ga6eb4f715759518e5703890eca116ce8d" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="213,474,405,502"/>
-<area shape="rect" id="node9" href="$ahrs__float__cmpl_8c.html#a81e17b09f47068c02c345da1523f589b" title="Aligns the AHRS. " alt="" coords="525,65,611,93"/>
-<area shape="rect" id="node11" href="$ahrs__float__cmpl_8c.html#a4e5064cff25b95f0631d5184d779ee43" title="Propagation. " alt="" coords="507,115,629,143"/>
-<area shape="rect" id="node15" href="$ahrs__gx3_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="527,170,609,198"/>
-<area shape="rect" id="node19" href="$ahrs__float__dcm_8c.html#a4e5064cff25b95f0631d5184d779ee43" title="Propagation. " alt="" coords="733,271,856,299"/>
-<area shape="rect" id="node23" href="$ahrs__float__dcm_8c.html#a81e17b09f47068c02c345da1523f589b" title="Aligns the AHRS. " alt="" coords="525,271,611,299"/>
-<area shape="rect" id="node25" href="$ahrs__float__dcm_8c.html#a682bd53351651a47152def7839ecdbd2" title="compute_ahrs_representations" alt="" coords="457,322,679,350"/>
-<area shape="rect" id="node30" href="$ahrs__float__mlkf_8c.html#a81e17b09f47068c02c345da1523f589b" title="Aligns the AHRS. " alt="" coords="525,373,611,401"/>
-<area shape="rect" id="node32" href="$ahrs__float__mlkf_8c.html#a4e5064cff25b95f0631d5184d779ee43" title="Propagation. " alt="" coords="507,423,629,451"/>
-<area shape="rect" id="node36" href="$ahrs__float__cmpl_8h.html#a2e1662dfa78e68c773e6d60e0a46cea2" title="Update yaw based on a heading measurement. " alt="" coords="488,474,648,502"/>
-<area shape="rect" id="node40" href="$ins_8h.html#a88630566224d0c5de2b591ff48fa5561" title="Propagation. " alt="" coords="512,525,624,553"/>
-<area shape="rect" id="node38" href="$ahrs__float__cmpl_8c.html#a0156f6669675c216bbcb413ea1879960" title="Update AHRS state with GPS measurements. " alt="" coords="729,474,860,502"/>
-<area shape="rect" id="node42" href="$rotorcraft_2main_8c.html#a9ad44dfc9d1342835451bd87613fb610" title="on_gyro_event" alt="" coords="737,525,852,553"/>
-<area shape="rect" id="node44" href="$main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="911,525,1007,553"/>
+<area shape="rect" id="node3" href="$ahrs__float__dcm_8h.html#a72e0ab470bdd713dbf05bbb7d2aaac0c" title="ahrs_dcm_init" alt="" coords="711,80,820,108"/>
+<area shape="rect" id="node7" href="$ahrs__float__cmpl_8h.html#af7031b11bbdd78128a0f654b1e95aeec" title="ahrs_fc_set_body_to\l_imu_quat" alt="" coords="233,97,385,141"/>
+<area shape="rect" id="node15" href="$ahrs__float__cmpl_8h.html#a2ee1cd671b0b937506f63042dc43e5ab" title="ahrs_fc_update_accel" alt="" coords="229,193,389,221"/>
+<area shape="rect" id="node20" href="$ahrs__float__cmpl__wrapper_8c.html#a2e90a05e5a4ca369d0308bb72e68171d" title="Compute body orientation and rates from imu orientation and rates. " alt="" coords="213,272,405,316"/>
+<area shape="rect" id="node31" href="$ahrs__gx3_8h.html#acb7a83c7954119b08e90b88661889883" title="gx3_packet_read_message" alt="" coords="211,361,408,389"/>
+<area shape="rect" id="node35" href="$ins__vectornav_8h.html#a5e1e0a3cd2eead4dc89bec75e33e5618" title="Propagate the received states into the vehicle state machine. " alt="" coords="219,416,400,444"/>
+<area shape="rect" id="node41" href="$ahrs__float__dcm_8c.html#a231f7602591a267c2669a2af9b9c8749" title="Normalize" alt="" coords="267,470,352,498"/>
+<area shape="rect" id="node48" href="$ahrs__float__dcm__wrapper_8c.html#af37e584c40cc004e4db7af1151ff659e" title="Compute body orientation and rates from imu orientation and rates. " alt="" coords="471,526,625,570"/>
+<area shape="rect" id="node54" href="$ahrs__float__mlkf__wrapper_8c.html#abea8ede7c8ebc5179487d3464ab513bb" title="Compute body orientation and rates from imu orientation and rates. " alt="" coords="213,618,405,646"/>
+<area shape="rect" id="node69" href="$group__state__attitude.html#ga6eb4f715759518e5703890eca116ce8d" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="213,669,405,697"/>
+<area shape="rect" id="node5" href="$ahrs__float__dcm__wrapper_8h.html#a18235ffdb70868861d5424fe8c4bafa5" title="ahrs_dcm_register" alt="" coords="891,478,1032,506"/>
+<area shape="rect" id="node9" href="$ahrs__float__cmpl_8h.html#abcc12ae7ea66597015282905a669d8e6" title="ahrs_fc_set_body_to_imu" alt="" coords="456,54,640,82"/>
+<area shape="rect" id="node11" href="$ahrs__float__cmpl__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736" title="body_to_imu_cb" alt="" coords="485,105,611,133"/>
+<area shape="rect" id="node13" href="$ahrs__float__cmpl__wrapper_8h.html#aa47cd2e2f95362dd732bac1f275344e0" title="ahrs_fc_register" alt="" coords="704,206,827,234"/>
+<area shape="rect" id="node17" href="$ahrs__float__cmpl__wrapper_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title="accel_cb" alt="" coords="509,156,587,184"/>
+<area shape="rect" id="node22" href="$ahrs__float__cmpl__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="505,206,591,234"/>
+<area shape="rect" id="node25" href="$ahrs__float__cmpl__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="515,257,581,285"/>
+<area shape="rect" id="node28" href="$ahrs__float__cmpl__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="512,308,584,336"/>
+<area shape="rect" id="node33" href="$ahrs__gx3_8h.html#a1caa6f284af9f14d111ea11166236bf4" title="ImuEvent" alt="" coords="507,358,589,386"/>
+<area shape="rect" id="node37" href="$ins__vectornav_8h.html#a5ba37a2e4e80d50b1ce1ada6e0f294fe" title="Read received data. " alt="" coords="475,409,621,453"/>
+<area shape="rect" id="node39" href="$ins__vectornav_8h.html#abcd265b9bfefa88327260439223dba81" title="Event handling for Vectornav. " alt="" coords="689,417,841,445"/>
+<area shape="rect" id="node43" href="$ahrs__float__dcm_8h.html#a72137053416048ff3752cdaf3183609b" title="ahrs_dcm_propagate" alt="" coords="469,476,627,504"/>
+<area shape="rect" id="node45" href="$ahrs__float__dcm__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="729,478,801,506"/>
+<area shape="rect" id="node50" href="$ahrs__float__dcm__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="723,533,808,561"/>
+<area shape="rect" id="node56" href="$ahrs__float__mlkf__wrapper_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title="accel_cb" alt="" coords="509,593,587,621"/>
+<area shape="rect" id="node60" href="$ahrs__float__mlkf__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="505,644,591,672"/>
+<area shape="rect" id="node63" href="$ahrs__float__mlkf__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="512,694,584,722"/>
+<area shape="rect" id="node66" href="$ahrs__float__mlkf__wrapper_8c.html#a49cc1e545848b85016af530049991c02" title="mag_cb" alt="" coords="512,745,584,773"/>
+<area shape="rect" id="node58" href="$ahrs__float__mlkf__wrapper_8h.html#adf9165ad7440f11e3dae35391f5844d6" title="ahrs_mlkf_register" alt="" coords="696,669,835,697"/>
 </map>

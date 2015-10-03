@@ -39,6 +39,8 @@ var w5100_8c =
     [ "W5100_SLAVE_IDX", "w5100_8c.html#a7972983695fe0e1fc867196359ce0a86", null ],
     [ "W5100_SPI_DEV", "w5100_8c.html#aa3af4f16178f96f9162b967d4efc9f8e", null ],
     [ "configure_socket", "w5100_8c.html#ad88334d2cf04bfaad89b0f8a4c5239a4", null ],
+    [ "dev_char_available", "w5100_8c.html#ac607c7e302a7a46608bf2c3897940f09", null ],
+    [ "dev_getch", "w5100_8c.html#ab67a98be34d00c997637455e114f8ce3", null ],
     [ "dev_send", "w5100_8c.html#ab246def1a5f9072ffa52a27784a69b24", null ],
     [ "dev_transmit", "w5100_8c.html#a49c8b1e77d30791c40147e49a3c214af", null ],
     [ "true_function", "w5100_8c.html#a926390fb3c3ddc49abe3b2ed713b763f", null ],

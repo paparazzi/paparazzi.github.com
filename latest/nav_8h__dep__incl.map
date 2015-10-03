@@ -1,51 +1,47 @@
 <map id="sw/airborne/firmwares/fixedwing/nav.h" name="sw/airborne/firmwares/fixedwing/nav.h">
-<area shape="rect" id="node3" href="$jsbsim__hw_8h.html" title="sw/airborne/arch/sim\l/jsbsim_hw.h" alt="" coords="184,107,339,151"/>
-<area shape="rect" id="node11" href="$sim__ap_8c.html" title="sw/airborne/arch/sim\l/sim_ap.c" alt="" coords="363,107,517,151"/>
-<area shape="rect" id="node13" href="$fixedwing_2autopilot_8c.html" title="Fixedwing autopilot inititalization. " alt="" coords="541,107,701,151"/>
-<area shape="rect" id="node15" href="$energy__ctrl_8c.html" title="Total Energy (speed + height) control for fixed wing vehicles. " alt="" coords="725,99,920,159"/>
-<area shape="rect" id="node17" href="$fixedwing_2guidance_2guidance__v_8c.html" title="Vertical control for fixed wing vehicles. " alt="" coords="944,107,1176,151"/>
-<area shape="rect" id="node19" href="$guidance__v__n_8c.html" title="&quot;New&quot; vertical control for fixed wing vehicles. " alt="" coords="1200,107,1448,151"/>
-<area shape="rect" id="node21" href="$main__ap_8c.html" title="AP ( AutoPilot ) tasks. " alt="" coords="1472,107,1632,151"/>
-<area shape="rect" id="node23" href="$nav_8c.html" title="Fixedwing functions to compute navigation. " alt="" coords="1656,107,1816,151"/>
-<area shape="rect" id="node25" href="$stabilization__adaptive_8c.html" title="Fixed wing horizontal adaptive control. " alt="" coords="1840,99,2013,159"/>
-<area shape="rect" id="node27" href="$stabilization__attitude_8c.html" title="Fixed wing horizontal control. " alt="" coords="2037,99,2208,159"/>
-<area shape="rect" id="node29" href="$flight__benchmark_8c.html" title="sw/airborne/modules\l/benchmark/flight_benchmark.c" alt="" coords="2232,107,2453,151"/>
-<area shape="rect" id="node31" href="$cam__roll_8c.html" title="sw/airborne/modules\l/cam_control/cam_roll.c" alt="" coords="2477,107,2651,151"/>
-<area shape="rect" id="node33" href="$cam__segment_8c.html" title="camera control to track a segment using the general cam driver (target mode) " alt="" coords="2675,107,2885,151"/>
-<area shape="rect" id="node35" href="$cartography_8c.html" title="Navigation functions for cartography of the ground. " alt="" coords="2909,107,3101,151"/>
-<area shape="rect" id="node37" href="$anemotaxis_8c.html" title="sw/airborne/modules\l/enose/anemotaxis.c" alt="" coords="3125,107,3280,151"/>
-<area shape="rect" id="node39" href="$chemotaxis_8c.html" title="sw/airborne/modules\l/enose/chemotaxis.c" alt="" coords="3304,107,3459,151"/>
-<area shape="rect" id="node41" href="$max7456_8c.html" title="Maxim MAX7456 single&#45;channel monochrome on&#45;screen display driver. " alt="" coords="3483,107,3643,151"/>
-<area shape="rect" id="node43" href="$mission__fw__nav_8c.html" title="mission navigation for fixedwing aircraft " alt="" coords="3667,107,3853,151"/>
-<area shape="rect" id="node45" href="$formation_8h.html" title="Formation flight library. " alt="" coords="3877,107,4032,151"/>
-<area shape="rect" id="node49" href="$potential_8h.html" title="flying with potential field to avoid collision " alt="" coords="4056,107,4211,151"/>
-<area shape="rect" id="node53" href="$tcas_8c.html" title="Collision avoidance library. " alt="" coords="4235,107,4389,151"/>
-<area shape="rect" id="node55" href="$nav__bungee__takeoff_8c.html" title="from OSAM advanced navigation routines " alt="" coords="4413,107,4605,151"/>
-<area shape="rect" id="node57" href="$nav__catapult_8c.html" title="sw/airborne/modules\l/nav/nav_catapult.c" alt="" coords="4629,107,4784,151"/>
-<area shape="rect" id="node59" href="$nav__cube_8c.html" title="Fixedwing Navigation in a cube towards a center. " alt="" coords="4808,107,4963,151"/>
-<area shape="rect" id="node61" href="$nav__drop_8h.html" title="Navigation module to drop a ball at a given point taking into account the wind and ground speed..." alt="" coords="4987,107,5141,151"/>
-<area shape="rect" id="node65" href="$nav__flower_8c.html" title="from OSAM advanced navigation routines " alt="" coords="5165,107,5320,151"/>
-<area shape="rect" id="node67" href="$nav__gls_8c.html" title="gps landing system " alt="" coords="5344,107,5499,151"/>
-<area shape="rect" id="node69" href="$nav__line_8c.html" title="Fixedwing navigation along a line with nice U&#45;turns. " alt="" coords="5523,107,5677,151"/>
-<area shape="rect" id="node71" href="$nav__line__border_8c.html" title="navigate along a border line (line 1&#45;2) with turns in the same direction " alt="" coords="5701,107,5864,151"/>
-<area shape="rect" id="node73" href="$nav__line__osam_8c.html" title="Flight line from OSAM advanced navigation routines. " alt="" coords="5888,107,6045,151"/>
-<area shape="rect" id="node75" href="$nav__smooth_8c.html" title="Smooth navigation to wp_a along an arc (around wp_cd), a segment (from wp_rd to wp_ta) and a second a..." alt="" coords="6069,107,6224,151"/>
-<area shape="rect" id="node77" href="$nav__spiral_8c.html" title="Fixedwing navigation in a spiral/helix. " alt="" coords="6248,107,6403,151"/>
-<area shape="rect" id="node79" href="$nav__survey__disc_8c.html" title="sw/airborne/modules\l/nav/nav_survey_disc.c" alt="" coords="6427,107,6595,151"/>
-<area shape="rect" id="node81" href="$nav__survey__poly__osam_8c.html" title="sw/airborne/modules\l/nav/nav_survey_poly\l_osam.c" alt="" coords="6619,99,6776,159"/>
-<area shape="rect" id="node83" href="$nav__survey__polygon_8c.html" title="Advanced polygon survey for fixedwings from Uni Stuttgart. " alt="" coords="6800,107,6992,151"/>
-<area shape="rect" id="node85" href="$nav__survey__zamboni_8c.html" title="Zamboni pattern survey for fixedwings. " alt="" coords="7016,107,7213,151"/>
-<area shape="rect" id="node87" href="$nav__vertical__raster_8c.html" title="from OSAM advanced navigation routines " alt="" coords="7237,107,7421,151"/>
-<area shape="rect" id="node89" href="$baro__ets_8c.html" title="Driver for the EagleTree Systems Altitude Sensor. " alt="" coords="7445,107,7600,151"/>
-<area shape="rect" id="node91" href="$baro__MS5534A_8c.html" title="Handling of the MS5534a pressure sensor. " alt="" coords="7624,107,7811,151"/>
-<area shape="rect" id="node93" href="$rc__settings_8c.html" title="sw/airborne/rc_settings.c" alt="" coords="7835,115,8013,143"/>
-<area shape="rect" id="node95" href="$ins__alt__float_8c.html" title="Filters altitude and climb rate for fixedwings. " alt="" coords="8037,107,8213,151"/>
-<area shape="rect" id="node97" href="$ins__gps__passthrough__utm_8c.html" title="Simply passes GPS UTM position and velocity through to the state interface. " alt="" coords="8237,107,8464,151"/>
-<area shape="rect" id="node99" href="$nav__survey__rectangle_8h.html" title="sw/airborne/subsystems\l/navigation/nav_survey\l_rectangle.h" alt="" coords="8488,99,8664,159"/>
-<area shape="rect" id="node5" href="$jsbsim__hw_8c.html" title="sw/airborne/arch/sim\l/jsbsim_hw.c" alt="" coords="5,209,160,253"/>
-<area shape="rect" id="node7" href="$jsbsim__ir_8c.html" title="sw/airborne/arch/sim\l/jsbsim_ir.c" alt="" coords="184,209,339,253"/>
-<area shape="rect" id="node9" href="$jsbsim__transport_8c.html" title="sw/airborne/arch/sim\l/jsbsim_transport.c" alt="" coords="363,209,517,253"/>
-<area shape="rect" id="node47" href="$formation_8c.html" title="library for formation flight " alt="" coords="3877,209,4032,253"/>
-<area shape="rect" id="node51" href="$potential_8c.html" title="sw/airborne/modules\l/multi/potential.c" alt="" coords="4056,209,4211,253"/>
-<area shape="rect" id="node63" href="$nav__drop_8c.html" title="Navigation module to drop a ball at a given point taking into account the wind and ground speed..." alt="" coords="4987,209,5141,253"/>
+<area shape="rect" id="node3" href="$sim__ap_8c.html" title="sw/airborne/arch/sim\l/sim_ap.c" alt="" coords="5,107,160,151"/>
+<area shape="rect" id="node5" href="$fixedwing_2autopilot_8c.html" title="Fixedwing autopilot inititalization. " alt="" coords="184,107,344,151"/>
+<area shape="rect" id="node7" href="$energy__ctrl_8c.html" title="Total Energy (speed + height) control for fixed wing vehicles. " alt="" coords="368,99,563,159"/>
+<area shape="rect" id="node9" href="$fixedwing_2guidance_2guidance__v_8c.html" title="Vertical control for fixed wing vehicles. " alt="" coords="587,107,819,151"/>
+<area shape="rect" id="node11" href="$guidance__v__n_8c.html" title="&quot;New&quot; vertical control for fixed wing vehicles. " alt="" coords="843,107,1091,151"/>
+<area shape="rect" id="node13" href="$main__ap_8c.html" title="AP ( AutoPilot ) tasks. " alt="" coords="1115,107,1275,151"/>
+<area shape="rect" id="node15" href="$nav_8c.html" title="Fixedwing functions to compute navigation. " alt="" coords="1299,107,1459,151"/>
+<area shape="rect" id="node17" href="$stabilization__adaptive_8c.html" title="Fixed wing adaptive control. " alt="" coords="1483,99,1656,159"/>
+<area shape="rect" id="node19" href="$stabilization__attitude_8c.html" title="Fixed wing horizontal control. " alt="" coords="1680,99,1851,159"/>
+<area shape="rect" id="node21" href="$flight__benchmark_8c.html" title="sw/airborne/modules\l/benchmark/flight_benchmark.c" alt="" coords="1875,107,2096,151"/>
+<area shape="rect" id="node23" href="$cam__roll_8c.html" title="sw/airborne/modules\l/cam_control/cam_roll.c" alt="" coords="2120,107,2293,151"/>
+<area shape="rect" id="node25" href="$cam__segment_8c.html" title="camera control to track a segment using the general cam driver (target mode) " alt="" coords="2317,107,2528,151"/>
+<area shape="rect" id="node27" href="$cartography_8c.html" title="Navigation functions for cartography of the ground. " alt="" coords="2552,107,2744,151"/>
+<area shape="rect" id="node29" href="$anemotaxis_8c.html" title="sw/airborne/modules\l/enose/anemotaxis.c" alt="" coords="2768,107,2923,151"/>
+<area shape="rect" id="node31" href="$chemotaxis_8c.html" title="sw/airborne/modules\l/enose/chemotaxis.c" alt="" coords="2947,107,3101,151"/>
+<area shape="rect" id="node33" href="$mission__fw__nav_8c.html" title="mission navigation for fixedwing aircraft " alt="" coords="3125,107,3312,151"/>
+<area shape="rect" id="node35" href="$formation_8h.html" title="Formation flight library. " alt="" coords="3336,107,3491,151"/>
+<area shape="rect" id="node39" href="$potential_8h.html" title="flying with potential field to avoid collision " alt="" coords="3515,107,3669,151"/>
+<area shape="rect" id="node43" href="$tcas_8c.html" title="Collision avoidance library. " alt="" coords="3693,107,3848,151"/>
+<area shape="rect" id="node45" href="$nav__bungee__takeoff_8c.html" title="Takeoff functions for bungee takeoff. " alt="" coords="3872,107,4064,151"/>
+<area shape="rect" id="node47" href="$nav__catapult_8c.html" title="sw/airborne/modules\l/nav/nav_catapult.c" alt="" coords="4088,107,4243,151"/>
+<area shape="rect" id="node49" href="$nav__cube_8c.html" title="Fixedwing Navigation in a cube towards a center. " alt="" coords="4267,107,4421,151"/>
+<area shape="rect" id="node51" href="$nav__drop_8h.html" title="Navigation module to drop a ball at a given point taking into account the wind and ground speed..." alt="" coords="4445,107,4600,151"/>
+<area shape="rect" id="node55" href="$nav__flower_8c.html" title="from OSAM advanced navigation routines " alt="" coords="4624,107,4779,151"/>
+<area shape="rect" id="node57" href="$nav__gls_8c.html" title="gps landing system " alt="" coords="4803,107,4957,151"/>
+<area shape="rect" id="node59" href="$nav__line_8c.html" title="Fixedwing navigation along a line with nice U&#45;turns. " alt="" coords="4981,107,5136,151"/>
+<area shape="rect" id="node61" href="$nav__line__border_8c.html" title="navigate along a border line (line 1&#45;2) with turns in the same direction " alt="" coords="5160,107,5323,151"/>
+<area shape="rect" id="node63" href="$nav__line__osam_8c.html" title="Flight line from OSAM advanced navigation routines. " alt="" coords="5347,107,5504,151"/>
+<area shape="rect" id="node65" href="$nav__smooth_8c.html" title="Smooth navigation to wp_a along an arc (around wp_cd), a segment (from wp_rd to wp_ta) and a second a..." alt="" coords="5528,107,5683,151"/>
+<area shape="rect" id="node67" href="$nav__spiral_8c.html" title="Fixedwing navigation in a spiral/helix. " alt="" coords="5707,107,5861,151"/>
+<area shape="rect" id="node69" href="$nav__survey__disc_8c.html" title="sw/airborne/modules\l/nav/nav_survey_disc.c" alt="" coords="5885,107,6053,151"/>
+<area shape="rect" id="node71" href="$nav__survey__poly__osam_8c.html" title="sw/airborne/modules\l/nav/nav_survey_poly\l_osam.c" alt="" coords="6077,99,6235,159"/>
+<area shape="rect" id="node73" href="$nav__survey__polygon_8c.html" title="Advanced polygon survey for fixedwings from Uni Stuttgart. " alt="" coords="6259,107,6451,151"/>
+<area shape="rect" id="node75" href="$nav__survey__zamboni_8c.html" title="Zamboni pattern survey for fixedwings. " alt="" coords="6475,107,6672,151"/>
+<area shape="rect" id="node77" href="$nav__vertical__raster_8c.html" title="from OSAM advanced navigation routines " alt="" coords="6696,107,6880,151"/>
+<area shape="rect" id="node79" href="$baro__ets_8c.html" title="Driver for the EagleTree Systems Altitude Sensor. " alt="" coords="6904,107,7059,151"/>
+<area shape="rect" id="node81" href="$baro__MS5534A_8c.html" title="Handling of the MS5534a pressure sensor. " alt="" coords="7083,107,7269,151"/>
+<area shape="rect" id="node83" href="$rc__settings_8c.html" title="sw/airborne/rc_settings.c" alt="" coords="7293,115,7472,143"/>
+<area shape="rect" id="node85" href="$ins__alt__float_8c.html" title="Filters altitude and climb rate for fixedwings. " alt="" coords="7496,107,7672,151"/>
+<area shape="rect" id="node87" href="$ins__gps__passthrough__utm_8c.html" title="Simply passes GPS UTM position and velocity through to the state interface. " alt="" coords="7696,107,7923,151"/>
+<area shape="rect" id="node89" href="$nav__survey__rectangle_8h.html" title="sw/airborne/subsystems\l/navigation/nav_survey\l_rectangle.h" alt="" coords="7947,99,8123,159"/>
+<area shape="rect" id="node37" href="$formation_8c.html" title="library for formation flight " alt="" coords="3336,217,3491,261"/>
+<area shape="rect" id="node41" href="$potential_8c.html" title="sw/airborne/modules\l/multi/potential.c" alt="" coords="3515,217,3669,261"/>
+<area shape="rect" id="node53" href="$nav__drop_8c.html" title="Navigation module to drop a ball at a given point taking into account the wind and ground speed..." alt="" coords="4445,217,4600,261"/>
+<area shape="rect" id="node92" href="$nav__survey__rectangle_8c.html" title="Automatic survey of a rectangle for fixedwings. " alt="" coords="7947,209,8123,269"/>
 </map>

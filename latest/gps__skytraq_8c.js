@@ -40,6 +40,7 @@ var gps__skytraq_8c =
     [ "bswap16", "gps__skytraq_8c.html#a4e53651134885da8ecc0858a04249828", null ],
     [ "distance_too_great", "gps__skytraq_8c.html#adf131e077c10d69ef3d5bed870040fc0", null ],
     [ "gps_impl_init", "gps__skytraq_8c.html#ac51e6a5f7940a0acc9dc44b1b8085331", null ],
+    [ "gps_skytraq_msg", "gps__skytraq_8c.html#a9480384f1c4dd5c8ff24fb7989dbe194", null ],
     [ "gps_skytraq_parse", "gps__skytraq_8c.html#a999669a94a88d88ca091e18b133cfc4b", null ],
     [ "gps_skytraq_read_message", "gps__skytraq_8c.html#a82455efa55f2f00f1ab1524b9f82dc1d", null ],
     [ "gps_skytraq", "gps__skytraq_8c.html#ada32e6bdf968ea13294278923764ed3b", null ]

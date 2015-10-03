@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.4.2_stable-3-gc351a71</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -310,7 +310,7 @@ $(document).ready(function(){initNavTree('stabilization__attitude__quat__float_8
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="comment">// copy euler setpoint for debugging</span></div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <a class="code" href="pprz__algebra_8h.html#ad37dfe2de0e7149f25219cbfbb24c1ae">EULERS_FLOAT_OF_BFP</a>(<a class="code" href="stabilization__attitude__passthrough_8c.html#a5b355848d1ce79a73b3fe67c8e86cd42" title="with INT32_ANGLE_FRAC ">stab_att_sp_euler</a>, *rpy);</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <a class="code" href="stabilization__attitude__quat__transformations_8c.html#a10ec980ce6bc935ea53ec3bfca04fe3d">quat_from_rpy_cmd_f</a>(&amp;<a class="code" href="stabilization__attitude__ref__float_8h.html#a8a7faa82a4a14113987c600d7e38d836">stab_att_sp_quat</a>, &amp;<a class="code" href="stabilization__attitude__passthrough_8c.html#a5b355848d1ce79a73b3fe67c8e86cd42" title="with INT32_ANGLE_FRAC ">stab_att_sp_euler</a>);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <a class="code" href="pprz__algebra__float_8c.html#a99c8f1ff70a5b638cf87ea816f1756a2" title="Quaternion from Euler angles. ">float_quat_of_eulers</a>(&amp;<a class="code" href="stabilization__attitude__ref__float_8h.html#a8a7faa82a4a14113987c600d7e38d836">stab_att_sp_quat</a>, &amp;<a class="code" href="stabilization__attitude__passthrough_8c.html#a5b355848d1ce79a73b3fe67c8e86cd42" title="with INT32_ANGLE_FRAC ">stab_att_sp_euler</a>);</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;}</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
 <div class="line"><a name="l00209"></a><span class="lineno"><a class="code" href="stabilization__attitude__quat__float_8c.html#ada3ef183c206d08fd0a902adc118f542">  209</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#ada3ef183c206d08fd0a902adc118f542">stabilization_attitude_set_earth_cmd_i</a>(<span class="keyword">struct</span> <a class="code" href="structInt32Vect2.html">Int32Vect2</a> *<a class="code" href="link__mcu__can_8c.html#a2a42169109d4cbc00a3df05b98f0ed2b">cmd</a>, <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="ahrs__infrared_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a>)</div>
@@ -467,7 +467,7 @@ $(document).ready(function(){initNavTree('stabilization__attitude__quat__float_8
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_d1b81cc433edb6118e3c3e3bc7700be0.html">stabilization</a></li><li class="navelem"><a class="el" href="stabilization__attitude__quat__float_8c.html">stabilization_attitude_quat_float.c</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:15:09 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Jun 17 2015 02:01:12 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

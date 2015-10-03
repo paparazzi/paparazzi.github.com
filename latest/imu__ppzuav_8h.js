@@ -1,6 +1,10 @@
 var imu__ppzuav_8h =
 [
-    [ "ImuPpzuav", "structImuPpzuav.html", "structImuPpzuav" ],
+    [ "ImuPpzuav", "imu__ppzuav_8h.html#structImuPpzuav", [
+      [ "acc_adxl", "imu__ppzuav_8h.html#a89ccf9c574072b40f64812e2f5f88365", null ],
+      [ "gyro_itg", "imu__ppzuav_8h.html#a1bf36a90af8ea5c24cf7a400970f7d3b", null ],
+      [ "mag_hmc", "imu__ppzuav_8h.html#a1637fcdc61619ac875a1174f48a67c72", null ]
+    ] ],
     [ "IMU_ACCEL_X_SENS", "imu__ppzuav_8h.html#a8ac88fc00cde506229b92c6a1e2c3122", null ],
     [ "IMU_ACCEL_X_SENS_DEN", "imu__ppzuav_8h.html#a8acf299c1bfb2daa92b1894556ca50ad", null ],
     [ "IMU_ACCEL_X_SENS_NUM", "imu__ppzuav_8h.html#ada91099469f16df2d8aeafa82d365c4b", null ],
@@ -19,7 +23,7 @@ var imu__ppzuav_8h =
     [ "IMU_GYRO_R_SENS", "imu__ppzuav_8h.html#af57decce9e96b0726832a410273223f3", null ],
     [ "IMU_GYRO_R_SENS_DEN", "imu__ppzuav_8h.html#aecb2f43265d239ba7661dfcc8523123e", null ],
     [ "IMU_GYRO_R_SENS_NUM", "imu__ppzuav_8h.html#a6f808c71190e714287442af3bb7008b3", null ],
+    [ "ImuEvent", "imu__ppzuav_8h.html#a38f1122c1ee0701562b490c6e1b60609", null ],
     [ "imu_ppzuav_event", "imu__ppzuav_8h.html#a51ff6c245630bbf2701dc550ce24ef23", null ],
-    [ "ImuEvent", "imu__ppzuav_8h.html#a9d95db588addd0a03f6e7e749fbb032a", null ],
     [ "imu_ppzuav", "imu__ppzuav_8h.html#af1c3503ad92f5c5878d0fc80cf43779f", null ]
 ];

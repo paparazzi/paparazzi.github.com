@@ -1,5 +1,6 @@
 var NAVTREEINDEX52 =
 {
+"module__nav_survey_poly_osam.html#configuration":[2,83,0],
 "module__nav_survey_poly_osam.html#define":[2,83,0,0],
 "module__nav_survey_poly_osam.html#files":[2,83,1],
 "module__nav_survey_poly_osam.html#headers":[2,83,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX52 =
 "module__vehicle_interface_datalink.html":[2,149],
 "module__vehicle_interface_datalink.html#files":[2,149,1],
 "module__vehicle_interface_datalink.html#functions":[2,149,0],
-"module__vehicle_interface_datalink.html#headers":[2,149,1,0],
-"module__vehicle_interface_datalink.html#init_functions":[2,149,0,0]
+"module__vehicle_interface_datalink.html#headers":[2,149,1,0]
 };

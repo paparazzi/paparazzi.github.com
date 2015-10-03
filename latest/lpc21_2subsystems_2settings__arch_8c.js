@@ -1,6 +1,11 @@
 var lpc21_2subsystems_2settings__arch_8c =
 [
-    [ "FlashInfo", "structFlashInfo.html", "structFlashInfo" ],
+    [ "FlashInfo", "stm32_2subsystems_2settings__arch_8c.html#structFlashInfo", [
+      [ "addr", "stm32_2subsystems_2settings__arch_8c.html#a1aa5b8f990702e097bda602bc2464014", null ],
+      [ "page_nr", "stm32_2subsystems_2settings__arch_8c.html#af33c1f2139e72266f8cf1e4ebca3925f", null ],
+      [ "page_size", "stm32_2subsystems_2settings__arch_8c.html#aed1e92d83a4afdda1a3e9cc7a7a779f0", null ],
+      [ "total_size", "stm32_2subsystems_2settings__arch_8c.html#a7543f406b9b1ae37e5aa7f55e980f252", null ]
+    ] ],
     [ "BOUND", "lpc21_2subsystems_2settings__arch_8c.html#aa3d3687532e25854c63dca906abf1032", null ],
     [ "FCHK", "lpc21_2subsystems_2settings__arch_8c.html#a486ad2adc27b733aa4476b6ddcfa2edb", null ],
     [ "FSIZ", "lpc21_2subsystems_2settings__arch_8c.html#aad7842fbef06c8ec39045d2bf58455b9", null ],
@@ -13,8 +18,9 @@ var lpc21_2subsystems_2settings__arch_8c =
     [ "IAP_READ_PART_ID", "lpc21_2subsystems_2settings__arch_8c.html#ae0de95fba58709e90c346bef0b09b3c5", null ],
     [ "IAP", "lpc21_2subsystems_2settings__arch_8c.html#ac3cb158936c6e7ede2e0f007db03f273", null ],
     [ "flash_detect", "lpc21_2subsystems_2settings__arch_8c.html#ad823eefc2cb06fb3581e165cabbbc053", null ],
-    [ "persistent_read", "lpc21_2subsystems_2settings__arch_8c.html#a4d0dc6e4cdefbf2eeba08f82b8e15a37", null ],
-    [ "persistent_write", "lpc21_2subsystems_2settings__arch_8c.html#a1497901ac40153b238ee0524257a5f3b", null ],
+    [ "persistent_clear", "lpc21_2subsystems_2settings__arch_8c.html#a96bbf08af032ab9c1e7c15c66eb2d513", null ],
+    [ "persistent_read", "lpc21_2subsystems_2settings__arch_8c.html#a6d60026540670a5fc2ac03dee06c791e", null ],
+    [ "persistent_write", "lpc21_2subsystems_2settings__arch_8c.html#a069b2bcf8fcf2d115466efa163c7583e", null ],
     [ "pflash_checksum", "lpc21_2subsystems_2settings__arch_8c.html#a22c9ce72b72cd4dfe56c4008626cff19", null ],
     [ "pflash_erase_page", "lpc21_2subsystems_2settings__arch_8c.html#a0c1ad7afd13542ed562e34d271f70200", null ],
     [ "pflash_program_array", "lpc21_2subsystems_2settings__arch_8c.html#ad8bba057f6e6c970367af049d0fed019", null ],

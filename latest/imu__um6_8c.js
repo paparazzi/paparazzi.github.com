@@ -5,6 +5,7 @@ var imu__um6_8c =
     [ "imu_scale_accel", "imu__um6_8c.html#a34a2e1e2b450191b8ab1e849239810b2", null ],
     [ "imu_scale_gyro", "imu__um6_8c.html#a8d63b0a61c8ffe88dd15b40843b1ae1d", null ],
     [ "imu_scale_mag", "imu__um6_8c.html#a6ca6c7f78fab9df37eb980d2b4d1b3a9", null ],
+    [ "imu_um6_publish", "imu__um6_8c.html#a799b9b7f8329b78cf9ca132a79abee52", null ],
     [ "UM6_calculate_checksum", "imu__um6_8c.html#a46ab6529f0069a0ca28b7a7f05d367a0", null ],
     [ "UM6_imu_align", "imu__um6_8c.html#a9afb7dbd1cfa371326da8b7406b7ad82", null ],
     [ "UM6_packet_parse", "imu__um6_8c.html#acd92ecca731224b09199a8545c3cfefc", null ],

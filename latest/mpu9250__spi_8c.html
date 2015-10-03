@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('mpu9250__spi_8c.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -135,15 +135,15 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a25639b20570605066b6657b09fde96bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250__spi_8c.html#a25639b20570605066b6657b09fde96bc">mpu9250_spi_init</a> (struct <a class="el" href="structMpu9250__Spi.html">Mpu9250_Spi</a> *mpu, struct <a class="el" href="structspi__periph.html">spi_periph</a> *spi_p, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> slave_idx)</td></tr>
+<tr class="memitem:a25639b20570605066b6657b09fde96bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250__spi_8c.html#a25639b20570605066b6657b09fde96bc">mpu9250_spi_init</a> (struct <a class="el" href="mpu9250__spi_8h.html#structMpu9250__Spi">Mpu9250_Spi</a> *mpu, struct <a class="el" href="group__spi.html#structspi__periph">spi_periph</a> *spi_p, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> slave_idx)</td></tr>
 <tr class="separator:a25639b20570605066b6657b09fde96bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa25ada77f4bd9839a1ca3badaf825b32"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250__spi_8c.html#aa25ada77f4bd9839a1ca3badaf825b32">mpu9250_spi_write_to_reg</a> (void *mpu, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _reg, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _val)</td></tr>
 <tr class="separator:aa25ada77f4bd9839a1ca3badaf825b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4ebbe613cb0fbf0766180f78db0e175"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250__spi_8c.html#ac4ebbe613cb0fbf0766180f78db0e175">mpu9250_spi_start_configure</a> (struct <a class="el" href="structMpu9250__Spi.html">Mpu9250_Spi</a> *mpu)</td></tr>
+<tr class="memitem:ac4ebbe613cb0fbf0766180f78db0e175"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250__spi_8c.html#ac4ebbe613cb0fbf0766180f78db0e175">mpu9250_spi_start_configure</a> (struct <a class="el" href="mpu9250__spi_8h.html#structMpu9250__Spi">Mpu9250_Spi</a> *mpu)</td></tr>
 <tr class="separator:ac4ebbe613cb0fbf0766180f78db0e175"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65d28377a3dc0a210a139957e5f0baa4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250__spi_8c.html#a65d28377a3dc0a210a139957e5f0baa4">mpu9250_spi_read</a> (struct <a class="el" href="structMpu9250__Spi.html">Mpu9250_Spi</a> *mpu)</td></tr>
+<tr class="memitem:a65d28377a3dc0a210a139957e5f0baa4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250__spi_8c.html#a65d28377a3dc0a210a139957e5f0baa4">mpu9250_spi_read</a> (struct <a class="el" href="mpu9250__spi_8h.html#structMpu9250__Spi">Mpu9250_Spi</a> *mpu)</td></tr>
 <tr class="separator:a65d28377a3dc0a210a139957e5f0baa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af55574284fdd7772b638aa9c58093050"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250__spi_8c.html#af55574284fdd7772b638aa9c58093050">mpu9250_spi_event</a> (struct <a class="el" href="structMpu9250__Spi.html">Mpu9250_Spi</a> *mpu)</td></tr>
+<tr class="memitem:af55574284fdd7772b638aa9c58093050"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250__spi_8c.html#af55574284fdd7772b638aa9c58093050">mpu9250_spi_event</a> (struct <a class="el" href="mpu9250__spi_8h.html#structMpu9250__Spi">Mpu9250_Spi</a> *mpu)</td></tr>
 <tr class="separator:af55574284fdd7772b638aa9c58093050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeec91d1c3e5784a3ff93971ff11309ab"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250__spi_8c.html#aeec91d1c3e5784a3ff93971ff11309ab">mpu9250_configure_i2c_slaves</a> (<a class="el" href="mpu9250_8h.html#a62c163eaf8e2918e26d119173cb0f7ee">Mpu9250ConfigSet</a> mpu_set, void *mpu)</td></tr>
 <tr class="memdesc:aeec91d1c3e5784a3ff93971ff11309ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure I2C slaves of the MPU.  <a href="#aeec91d1c3e5784a3ff93971ff11309ab">More...</a><br/></td></tr>
@@ -210,7 +210,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Configure I2C slaves of the MPU. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000023">Todo:</a></b></dt><dd>: only one slave so far. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000025">Todo:</a></b></dt><dd>: only one slave so far. </dd></dl>
 
 <p>Definition at line <a class="el" href="mpu9250__spi_8c_source.html#l00149">149</a> of file <a class="el" href="mpu9250__spi_8c_source.html">mpu9250_spi.c</a>.</p>
 
@@ -225,7 +225,7 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mpu9250__spi_8c_aeec91d1c3e5784a3ff93971ff11309ab_icgraph.png" border="0" usemap="#mpu9250__spi_8c_aeec91d1c3e5784a3ff93971ff11309ab_icgraph" alt=""/></div>
 <map name="mpu9250__spi_8c_aeec91d1c3e5784a3ff93971ff11309ab_icgraph" id="mpu9250__spi_8c_aeec91d1c3e5784a3ff93971ff11309ab_icgraph">
-<area shape="rect" id="node3" href="mpu9250_8h.html#a5a845891a5217c8082995fbbf9c94653" title="Configuration sequence called once before normal use. " alt="" coords="231,81,396,109"/><area shape="rect" id="node5" href="mpu9250__i2c_8h.html#a0dae39bc87a61581cbe1e8a8a3138c0f" title="mpu9250_i2c_event" alt="" coords="476,5,625,33"/><area shape="rect" id="node11" href="mpu9250__i2c_8h.html#aa6574d578c0a32f04893e3119a102ee6" title="mpu9250_i2c_start_configure" alt="" coords="445,55,656,83"/><area shape="rect" id="node19" href="mpu9250__spi_8h.html#af55574284fdd7772b638aa9c58093050" title="mpu9250_spi_event" alt="" coords="476,106,625,134"/><area shape="rect" id="node21" href="mpu9250__spi_8h.html#ac4ebbe613cb0fbf0766180f78db0e175" title="mpu9250_spi_start_configure" alt="" coords="445,157,656,185"/><area shape="rect" id="node7" href="imu__mpu9250__i2c_8h.html#af140d4e8a775be026073e67fd3080aa2" title="imu_mpu9250_event" alt="" coords="708,5,865,33"/><area shape="rect" id="node9" href="imu__mpu9250__i2c_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="961,5,1044,33"/><area shape="rect" id="node13" href="mpu9250__i2c_8h.html#a9186a17bab6df9561bd3f4bb088fa99e" title="convenience function: read or start configuration if not already initialized " alt="" coords="704,55,869,83"/><area shape="rect" id="node15" href="imu__mpu9250_8h.html#a38ba54b488a6adbea2dfb5a060d5d8b5" title="imu_mpu9250_periodic" alt="" coords="917,55,1088,83"/><area shape="rect" id="node17" href="imu__mpu9250__i2c_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="optional. " alt="" coords="952,106,1053,134"/><area shape="rect" id="node23" href="mpu9250__spi_8h.html#a7084b87018d7fa1b0693a41d01bc3f7f" title="convenience function: read or start configuration if not already initialized " alt="" coords="704,157,869,185"/></map>
+<area shape="rect" id="node3" href="mpu9250_8h.html#a5a845891a5217c8082995fbbf9c94653" title="Configuration sequence called once before normal use. " alt="" coords="231,81,396,109"/><area shape="rect" id="node5" href="mpu9250__i2c_8h.html#a0dae39bc87a61581cbe1e8a8a3138c0f" title="mpu9250_i2c_event" alt="" coords="476,5,625,33"/><area shape="rect" id="node9" href="mpu9250__i2c_8h.html#aa6574d578c0a32f04893e3119a102ee6" title="mpu9250_i2c_start_configure" alt="" coords="445,55,656,83"/><area shape="rect" id="node17" href="mpu9250__spi_8h.html#af55574284fdd7772b638aa9c58093050" title="mpu9250_spi_event" alt="" coords="476,106,625,134"/><area shape="rect" id="node21" href="mpu9250__spi_8h.html#ac4ebbe613cb0fbf0766180f78db0e175" title="mpu9250_spi_start_configure" alt="" coords="445,157,656,185"/><area shape="rect" id="node7" href="imu__mpu9250__spi_8h.html#af140d4e8a775be026073e67fd3080aa2" title="imu_mpu9250_event" alt="" coords="708,5,865,33"/><area shape="rect" id="node11" href="mpu9250__i2c_8h.html#a9186a17bab6df9561bd3f4bb088fa99e" title="convenience function: read or start configuration if not already initialized " alt="" coords="704,55,869,83"/><area shape="rect" id="node13" href="imu__mpu9250_8h.html#a38ba54b488a6adbea2dfb5a060d5d8b5" title="imu_mpu9250_periodic" alt="" coords="917,30,1088,58"/><area shape="rect" id="node15" href="imu__mpu9250__i2c_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="optional. " alt="" coords="952,81,1053,109"/><area shape="rect" id="node19" href="imu__mpu9250__spi_8c.html#af140d4e8a775be026073e67fd3080aa2" title="imu_mpu9250_event" alt="" coords="708,106,865,134"/><area shape="rect" id="node23" href="mpu9250__spi_8h.html#a7084b87018d7fa1b0693a41d01bc3f7f" title="convenience function: read or start configuration if not already initialized " alt="" coords="704,157,869,185"/><area shape="rect" id="node25" href="imu__mpu9250__spi_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="optional. " alt="" coords="952,157,1053,185"/></map>
 </div>
 </p>
 
@@ -238,7 +238,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void mpu9250_spi_event </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structMpu9250__Spi.html">Mpu9250_Spi</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="mpu9250__spi_8h.html#structMpu9250__Spi">Mpu9250_Spi</a> *&#160;</td>
           <td class="paramname"><em>mpu</em>)</td><td></td>
           <td></td>
         </tr>
@@ -247,7 +247,9 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="mpu9250__spi_8c_source.html#l00100">100</a> of file <a class="el" href="mpu9250__spi_8c_source.html">mpu9250_spi.c</a>.</p>
 
-<p>References <a class="el" href="mpu9250__spi_8h_source.html#l00066">Mpu9250_Spi::config</a>, <a class="el" href="structMpu9250__Spi.html#adc4f86074354bfb1ec2de6b68504fc60">Mpu9250_Spi::data_accel</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00056">Mpu9250_Spi::data_available</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00065">Mpu9250_Spi::data_ext</a>, <a class="el" href="structMpu9250__Spi.html#ada7f7813e004bc6311c1039c14dddd74">Mpu9250_Spi::data_rates</a>, <a class="el" href="mpu9250_8h_source.html#l00084">Mpu9250Config::init_status</a>, <a class="el" href="mpu9250_8h_source.html#l00085">Mpu9250Config::initialized</a>, <a class="el" href="mpu9250__spi_8c_source.html#l00098">Int16FromBuf</a>, <a class="el" href="mpu9250_8h_source.html#l00051">MPU9250_CONF_UNINIT</a>, <a class="el" href="mpu9250_8c_source.html#l00052">mpu9250_send_config()</a>, <a class="el" href="mpu9250__spi_8c_source.html#l00066">mpu9250_spi_write_to_reg()</a>, <a class="el" href="mpu9250_8h_source.html#l00083">Mpu9250Config::nb_bytes</a>, <a class="el" href="mpu9250_8h_source.html#l00092">Mpu9250Config::nb_slaves</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00166">Int16Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00167">Int16Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00168">Int16Rates::r</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00062">Mpu9250_Spi::rates</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00055">Mpu9250_Spi::rx_buf</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00053">Mpu9250_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00094">SPITransFailed</a>, <a class="el" href="spi_8h_source.html#l00093">SPITransSuccess</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00058">Mpu9250_Spi::vect</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00059">Int16Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00060">Int16Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00061">Int16Vect3::z</a>.</p>
+<p>References <a class="el" href="mpu9250__spi_8h_source.html#l00066">Mpu9250_Spi::config</a>, <a class="el" href="mpu9250__spi_8h.html#ada6281eb1b8d5cfb52d9d877894942f7">Mpu9250_Spi::data_accel</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00056">Mpu9250_Spi::data_available</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00065">Mpu9250_Spi::data_ext</a>, <a class="el" href="mpu9250__spi_8h.html#a26ce5660f70e27e9cde21cd4db667194">Mpu9250_Spi::data_rates</a>, <a class="el" href="mpu9250_8h_source.html#l00084">Mpu9250Config::init_status</a>, <a class="el" href="mpu9250_8h_source.html#l00085">Mpu9250Config::initialized</a>, <a class="el" href="mpu9250__spi_8c_source.html#l00098">Int16FromBuf</a>, <a class="el" href="mpu9250_8h_source.html#l00051">MPU9250_CONF_UNINIT</a>, <a class="el" href="mpu9250_8c_source.html#l00052">mpu9250_send_config()</a>, <a class="el" href="mpu9250__spi_8c_source.html#l00066">mpu9250_spi_write_to_reg()</a>, <a class="el" href="mpu9250_8h_source.html#l00083">Mpu9250Config::nb_bytes</a>, <a class="el" href="mpu9250_8h_source.html#l00092">Mpu9250Config::nb_slaves</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00055">Mpu9250_Spi::rx_buf</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00053">Mpu9250_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00094">SPITransFailed</a>, <a class="el" href="spi_8h_source.html#l00093">SPITransSuccess</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+
+<p>Referenced by <a class="el" href="imu__mpu9250__spi_8c_source.html#l00174">imu_mpu9250_event()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -260,6 +262,17 @@ Functions</h2></td></tr>
 </div>
 </p>
 
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="mpu9250__spi_8c_af55574284fdd7772b638aa9c58093050_icgraph.png" border="0" usemap="#mpu9250__spi_8c_af55574284fdd7772b638aa9c58093050_icgraph" alt=""/></div>
+<map name="mpu9250__spi_8c_af55574284fdd7772b638aa9c58093050_icgraph" id="mpu9250__spi_8c_af55574284fdd7772b638aa9c58093050_icgraph">
+<area shape="rect" id="node3" href="imu__mpu9250__spi_8c.html#af140d4e8a775be026073e67fd3080aa2" title="imu_mpu9250_event" alt="" coords="205,5,363,33"/></map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a25639b20570605066b6657b09fde96bc"></a>
@@ -269,13 +282,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void mpu9250_spi_init </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structMpu9250__Spi.html">Mpu9250_Spi</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="mpu9250__spi_8h.html#structMpu9250__Spi">Mpu9250_Spi</a> *&#160;</td>
           <td class="paramname"><em>mpu</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structspi__periph.html">spi_periph</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="group__spi.html#structspi__periph">spi_periph</a> *&#160;</td>
           <td class="paramname"><em>spi_p</em>, </td>
         </tr>
         <tr>
@@ -296,14 +309,27 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="spi_8h_source.html#l00155">spi_transaction::after_cb</a>, <a class="el" href="spi_8h_source.html#l00154">spi_transaction::before_cb</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::bitorder</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::cdiv</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00066">Mpu9250_Spi::config</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::cpha</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::cpol</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00056">Mpu9250_Spi::data_available</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::dss</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="mpu9250_8h_source.html#l00084">Mpu9250Config::init_status</a>, <a class="el" href="mpu9250_8h_source.html#l00085">Mpu9250Config::initialized</a>, <a class="el" href="spi_8h_source.html#l00143">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00039">MPU9250_BUFFER_LEN</a>, <a class="el" href="mpu9250_8h_source.html#l00051">MPU9250_CONF_UNINIT</a>, <a class="el" href="mpu9250_8c_source.html#l00032">mpu9250_set_default_config()</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00043">MPU9250_SPI_CONF_UNINIT</a>, <a class="el" href="spi_8h_source.html#l00144">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00055">Mpu9250_Spi::rx_buf</a>, <a class="el" href="spi_8h_source.html#l00148">spi_transaction::select</a>, <a class="el" href="spi_8h_source.html#l00147">spi_transaction::slave_idx</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00067">Mpu9250_Spi::slave_init_status</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00052">Mpu9250_Spi::spi_p</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00053">Mpu9250_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00069">SPICphaEdge2</a>, <a class="el" href="spi_8h_source.html#l00078">SPICpolIdleHigh</a>, <a class="el" href="spi_8h_source.html#l00119">SPIDiv64</a>, <a class="el" href="spi_8h_source.html#l00084">SPIDss8bit</a>, <a class="el" href="spi_8h_source.html#l00106">SPIMSBFirst</a>, <a class="el" href="spi_8h_source.html#l00057">SPISelectUnselect</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, and <a class="el" href="mpu9250__spi_8h_source.html#l00054">Mpu9250_Spi::tx_buf</a>.</p>
 
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p>Referenced by <a class="el" href="imu__mpu9250__spi_8c_source.html#l00121">imu_impl_init()</a>.</p>
+
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mpu9250__spi_8c_a25639b20570605066b6657b09fde96bc_cgraph.png" border="0" usemap="#mpu9250__spi_8c_a25639b20570605066b6657b09fde96bc_cgraph" alt=""/></div>
 <map name="mpu9250__spi_8c_a25639b20570605066b6657b09fde96bc_cgraph" id="mpu9250__spi_8c_a25639b20570605066b6657b09fde96bc_cgraph">
 <area shape="rect" id="node3" href="mpu9250_8c.html#aae5fa60698653c8ac15e41796c53c66e" title="mpu9250_set_default\l_config" alt="" coords="191,5,351,49"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="mpu9250__spi_8c_a25639b20570605066b6657b09fde96bc_icgraph.png" border="0" usemap="#mpu9250__spi_8c_a25639b20570605066b6657b09fde96bc_icgraph" alt=""/></div>
+<map name="mpu9250__spi_8c_a25639b20570605066b6657b09fde96bc_icgraph" id="mpu9250__spi_8c_a25639b20570605066b6657b09fde96bc_icgraph">
+<area shape="rect" id="node3" href="imu__mpu9250__spi_8c.html#ad32faae58e391642ec8048cb11011998" title="must be defined by underlying hardware " alt="" coords="189,5,296,33"/></map>
 </div>
 </p>
 
@@ -316,7 +342,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void mpu9250_spi_read </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structMpu9250__Spi.html">Mpu9250_Spi</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="mpu9250__spi_8h.html#structMpu9250__Spi">Mpu9250_Spi</a> *&#160;</td>
           <td class="paramname"><em>mpu</em>)</td><td></td>
           <td></td>
         </tr>
@@ -325,29 +351,29 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="mpu9250__spi_8c_source.html#l00087">87</a> of file <a class="el" href="mpu9250__spi_8c_source.html">mpu9250_spi.c</a>.</p>
 
-<p>References <a class="el" href="mpu9250__spi_8h_source.html#l00066">Mpu9250_Spi::config</a>, <a class="el" href="mpu9250_8h_source.html#l00085">Mpu9250Config::initialized</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00093">MPU9250_REG_INT_STATUS</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00037">MPU9250_SPI_READ</a>, <a class="el" href="mpu9250_8h_source.html#l00083">Mpu9250Config::nb_bytes</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00052">Mpu9250_Spi::spi_p</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00045">spi_submit()</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00053">Mpu9250_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, and <a class="el" href="mpu9250__spi_8h_source.html#l00054">Mpu9250_Spi::tx_buf</a>.</p>
+<p>References <a class="el" href="mpu9250__spi_8h_source.html#l00066">Mpu9250_Spi::config</a>, <a class="el" href="mpu9250_8h_source.html#l00085">Mpu9250Config::initialized</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00093">MPU9250_REG_INT_STATUS</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00037">MPU9250_SPI_READ</a>, <a class="el" href="mpu9250_8h_source.html#l00083">Mpu9250Config::nb_bytes</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00052">Mpu9250_Spi::spi_p</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00048">spi_submit()</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00053">Mpu9250_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, and <a class="el" href="mpu9250__spi_8h_source.html#l00054">Mpu9250_Spi::tx_buf</a>.</p>
 
 <p>Referenced by <a class="el" href="mpu9250__spi_8h_source.html#l00077">mpu9250_spi_periodic()</a>.</p>
 
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mpu9250__spi_8c_a65d28377a3dc0a210a139957e5f0baa4_cgraph.png" border="0" usemap="#mpu9250__spi_8c_a65d28377a3dc0a210a139957e5f0baa4_cgraph" alt=""/></div>
 <map name="mpu9250__spi_8c_a65d28377a3dc0a210a139957e5f0baa4_cgraph" id="mpu9250__spi_8c_a65d28377a3dc0a210a139957e5f0baa4_cgraph">
 <area shape="rect" id="node3" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="197,5,288,33"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mpu9250__spi_8c_a65d28377a3dc0a210a139957e5f0baa4_icgraph.png" border="0" usemap="#mpu9250__spi_8c_a65d28377a3dc0a210a139957e5f0baa4_icgraph" alt=""/></div>
 <map name="mpu9250__spi_8c_a65d28377a3dc0a210a139957e5f0baa4_icgraph" id="mpu9250__spi_8c_a65d28377a3dc0a210a139957e5f0baa4_icgraph">
-<area shape="rect" id="node3" href="mpu9250__spi_8h.html#a7084b87018d7fa1b0693a41d01bc3f7f" title="convenience function: read or start configuration if not already initialized " alt="" coords="197,5,363,33"/></map>
+<area shape="rect" id="node3" href="mpu9250__spi_8h.html#a7084b87018d7fa1b0693a41d01bc3f7f" title="convenience function: read or start configuration if not already initialized " alt="" coords="197,5,363,33"/><area shape="rect" id="node5" href="imu__mpu9250__spi_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="optional. " alt="" coords="412,5,513,33"/></map>
 </div>
 </p>
 
@@ -360,7 +386,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void mpu9250_spi_start_configure </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structMpu9250__Spi.html">Mpu9250_Spi</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="mpu9250__spi_8h.html#structMpu9250__Spi">Mpu9250_Spi</a> *&#160;</td>
           <td class="paramname"><em>mpu</em>)</td><td></td>
           <td></td>
         </tr>
@@ -373,25 +399,25 @@ Functions</h2></td></tr>
 
 <p>Referenced by <a class="el" href="mpu9250__spi_8h_source.html#l00077">mpu9250_spi_periodic()</a>.</p>
 
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mpu9250__spi_8c_ac4ebbe613cb0fbf0766180f78db0e175_cgraph.png" border="0" usemap="#mpu9250__spi_8c_ac4ebbe613cb0fbf0766180f78db0e175_cgraph" alt=""/></div>
 <map name="mpu9250__spi_8c_ac4ebbe613cb0fbf0766180f78db0e175_cgraph" id="mpu9250__spi_8c_ac4ebbe613cb0fbf0766180f78db0e175_cgraph">
 <area shape="rect" id="node3" href="mpu9250_8c.html#a5a845891a5217c8082995fbbf9c94653" title="Configuration sequence called once before normal use. " alt="" coords="279,15,444,43"/><area shape="rect" id="node7" href="mpu9250__spi_8c.html#aa25ada77f4bd9839a1ca3badaf825b32" title="mpu9250_spi_write_to_reg" alt="" coords="265,67,457,95"/><area shape="rect" id="node5" href="mpu9250_8h.html#aeec91d1c3e5784a3ff93971ff11309ab" title="Configure I2C slaves of the MPU. " alt="" coords="508,5,681,49"/><area shape="rect" id="node9" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="549,71,640,99"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mpu9250__spi_8c_ac4ebbe613cb0fbf0766180f78db0e175_icgraph.png" border="0" usemap="#mpu9250__spi_8c_ac4ebbe613cb0fbf0766180f78db0e175_icgraph" alt=""/></div>
 <map name="mpu9250__spi_8c_ac4ebbe613cb0fbf0766180f78db0e175_icgraph" id="mpu9250__spi_8c_ac4ebbe613cb0fbf0766180f78db0e175_icgraph">
-<area shape="rect" id="node3" href="mpu9250__spi_8h.html#a7084b87018d7fa1b0693a41d01bc3f7f" title="convenience function: read or start configuration if not already initialized " alt="" coords="264,5,429,33"/></map>
+<area shape="rect" id="node3" href="mpu9250__spi_8h.html#a7084b87018d7fa1b0693a41d01bc3f7f" title="convenience function: read or start configuration if not already initialized " alt="" coords="264,5,429,33"/><area shape="rect" id="node5" href="imu__mpu9250__spi_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="optional. " alt="" coords="479,5,580,33"/></map>
 </div>
 </p>
 
@@ -437,29 +463,29 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="mpu9250__spi_8c_source.html#l00066">66</a> of file <a class="el" href="mpu9250__spi_8c_source.html">mpu9250_spi.c</a>.</p>
 
-<p>References <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00052">Mpu9250_Spi::spi_p</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00045">spi_submit()</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00053">Mpu9250_Spi::spi_trans</a>, and <a class="el" href="mpu9250__spi_8h_source.html#l00054">Mpu9250_Spi::tx_buf</a>.</p>
+<p>References <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00052">Mpu9250_Spi::spi_p</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00048">spi_submit()</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00053">Mpu9250_Spi::spi_trans</a>, and <a class="el" href="mpu9250__spi_8h_source.html#l00054">Mpu9250_Spi::tx_buf</a>.</p>
 
 <p>Referenced by <a class="el" href="mpu9250__spi_8c_source.html#l00100">mpu9250_spi_event()</a>, and <a class="el" href="mpu9250__spi_8c_source.html#l00077">mpu9250_spi_start_configure()</a>.</p>
 
-<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mpu9250__spi_8c_aa25ada77f4bd9839a1ca3badaf825b32_cgraph.png" border="0" usemap="#mpu9250__spi_8c_aa25ada77f4bd9839a1ca3badaf825b32_cgraph" alt=""/></div>
 <map name="mpu9250__spi_8c_aa25ada77f4bd9839a1ca3badaf825b32_cgraph" id="mpu9250__spi_8c_aa25ada77f4bd9839a1ca3badaf825b32_cgraph">
 <area shape="rect" id="node3" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="248,5,339,33"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mpu9250__spi_8c_aa25ada77f4bd9839a1ca3badaf825b32_icgraph.png" border="0" usemap="#mpu9250__spi_8c_aa25ada77f4bd9839a1ca3badaf825b32_icgraph" alt=""/></div>
 <map name="mpu9250__spi_8c_aa25ada77f4bd9839a1ca3badaf825b32_icgraph" id="mpu9250__spi_8c_aa25ada77f4bd9839a1ca3badaf825b32_icgraph">
-<area shape="rect" id="node3" href="mpu9250__spi_8h.html#af55574284fdd7772b638aa9c58093050" title="mpu9250_spi_event" alt="" coords="279,5,428,33"/><area shape="rect" id="node5" href="mpu9250__spi_8h.html#ac4ebbe613cb0fbf0766180f78db0e175" title="mpu9250_spi_start_configure" alt="" coords="248,55,459,83"/><area shape="rect" id="node7" href="mpu9250__spi_8h.html#a7084b87018d7fa1b0693a41d01bc3f7f" title="convenience function: read or start configuration if not already initialized " alt="" coords="507,55,672,83"/></map>
+<area shape="rect" id="node3" href="mpu9250__spi_8h.html#af55574284fdd7772b638aa9c58093050" title="mpu9250_spi_event" alt="" coords="279,5,428,33"/><area shape="rect" id="node7" href="mpu9250__spi_8h.html#ac4ebbe613cb0fbf0766180f78db0e175" title="mpu9250_spi_start_configure" alt="" coords="248,55,459,83"/><area shape="rect" id="node5" href="imu__mpu9250__spi_8c.html#af140d4e8a775be026073e67fd3080aa2" title="imu_mpu9250_event" alt="" coords="511,5,668,33"/><area shape="rect" id="node9" href="mpu9250__spi_8h.html#a7084b87018d7fa1b0693a41d01bc3f7f" title="convenience function: read or start configuration if not already initialized " alt="" coords="507,55,672,83"/><area shape="rect" id="node11" href="imu__mpu9250__spi_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="optional. " alt="" coords="721,55,823,83"/></map>
 </div>
 </p>
 
@@ -471,7 +497,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="mpu9250__spi_8c.html">mpu9250_spi.c</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:11 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:31 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

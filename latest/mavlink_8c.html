@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('mavlink_8c.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -123,13 +123,13 @@ $(document).ready(function(){initNavTree('mavlink_8c.html','');});
 <code>#include &quot;generated/settings.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="electrical_8h_source.html">subsystems/electrical.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="ahrs_8h_source.html">subsystems/ahrs.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br/>
 <code>#include &quot;pprz_version.h&quot;</code><br/>
+<code>#include &quot;<a class="el" href="radio__control_8h_source.html">subsystems/radio_control.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="navigation_8h_source.html">firmwares/rotorcraft/navigation.h</a>&quot;</code><br/>
 <code>#include &quot;generated/flight_plan.h&quot;</code><br/>
+<code>#include &lt;stdint.h&gt;</code><br/>
 <code>#include &quot;<a class="el" href="gps_8h_source.html">subsystems/gps.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="radio__control_8h_source.html">subsystems/radio_control.h</a>&quot;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for mavlink.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('mavlink_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mavlink_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2datalink_2mavlink_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2datalink_2mavlink_8c" id="sw_2airborne_2modules_2datalink_2mavlink_8c">
-<area shape="rect" id="node3" href="mavlink_8h.html" title="Basic MAVLink datalink implementation. " alt="" coords="5,99,200,127"/><area shape="rect" id="node25" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1205,278,1376,306"/><area shape="rect" id="node35" href="electrical_8h.html" title="Interface for electrical status: supply voltage, current, battery status, etc. " alt="" coords="1083,99,1253,127"/><area shape="rect" id="node39" href="ahrs_8h.html" title="Attitude and Heading Reference System interface. " alt="" coords="1948,99,2089,127"/><area shape="rect" id="node62" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="2093,185,2160,213"/><area shape="rect" id="node87" href="navigation_8h.html" title="Rotorcraft navigation functions. " alt="" coords="1491,177,1637,221"/><area shape="rect" id="node97" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="1328,185,1467,213"/><area shape="rect" id="node102" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="861,99,1059,127"/><area shape="rect" id="node7" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="284,185,423,213"/><area shape="rect" id="node11" href="link__device_8h.html" title="generic device header " alt="" coords="452,278,633,306"/><area shape="rect" id="node13" href="inttypes_8h.html" title="inttypes.h" alt="" coords="829,371,915,399"/><area shape="rect" id="node42" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1976,371,2155,399"/><area shape="rect" id="node56" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="2281,371,2471,399"/><area shape="rect" id="node45" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="2280,465,2435,493"/><area shape="rect" id="node52" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1955,465,2104,493"/><area shape="rect" id="node66" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="1677,270,1827,314"/><area shape="rect" id="node72" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1851,270,2000,314"/><area shape="rect" id="node77" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="2125,270,2288,314"/><area shape="rect" id="node68" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="1779,371,1901,399"/><area shape="rect" id="node92" href="common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="1435,457,1603,501"/><area shape="rect" id="node104" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="600,185,653,213"/><area shape="rect" id="node109" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="824,278,920,306"/></map>
+<area shape="rect" id="node3" href="mavlink_8h.html" title="Basic MAVLink datalink implementation. " alt="" coords="304,107,499,135"/><area shape="rect" id="node25" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="548,294,719,322"/><area shape="rect" id="node35" href="electrical_8h.html" title="Interface for electrical status: supply voltage, current, battery status, etc. " alt="" coords="1615,107,1786,135"/><area shape="rect" id="node39" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="1264,201,1331,229"/><area shape="rect" id="node81" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="1343,107,1540,135"/><area shape="rect" id="node93" href="navigation_8h.html" title="Rotorcraft navigation functions. " alt="" coords="955,99,1102,143"/><area shape="rect" id="node109" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="680,201,819,229"/><area shape="rect" id="node7" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="122,201,260,229"/><area shape="rect" id="node11" href="link__device_8h.html" title="generic device header " alt="" coords="223,294,404,322"/><area shape="rect" id="node13" href="inttypes_8h.html" title="inttypes.h" alt="" coords="263,387,348,415"/><area shape="rect" id="node41" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1294,387,1472,415"/><area shape="rect" id="node55" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1598,387,1787,415"/><area shape="rect" id="node61" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="1012,286,1162,330"/><area shape="rect" id="node67" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1186,286,1335,330"/><area shape="rect" id="node72" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1480,286,1643,330"/><area shape="rect" id="node44" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="1598,481,1752,509"/><area shape="rect" id="node51" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1323,481,1472,509"/><area shape="rect" id="node63" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="1096,387,1219,415"/><area shape="rect" id="node83" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1560,201,1614,229"/><area shape="rect" id="node88" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="428,294,524,322"/><area shape="rect" id="node97" href="waypoints_8h.html" title="subsystems/navigation\l/waypoints.h" alt="" coords="944,193,1112,237"/><area shape="rect" id="node102" href="common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="838,473,1006,517"/></map>
 </div>
 </div>
 <p><a href="mavlink_8c_source.html">Go to the source code of this file.</a></p>
@@ -229,7 +229,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00479">479</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
+<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00526">526</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
 
 </div>
 </div>
@@ -247,9 +247,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00480">480</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
+<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00527">527</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
 
-<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00484">mavlink_send_rc_channels()</a>.</p>
+<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00531">mavlink_send_rc_channels()</a>.</p>
 
 </div>
 </div>
@@ -263,9 +263,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00478">478</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
+<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00525">525</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
 
-<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00484">mavlink_send_rc_channels()</a>.</p>
+<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00531">mavlink_send_rc_channels()</a>.</p>
 
 </div>
 </div>
@@ -281,9 +281,9 @@ Variables</h2></td></tr>
 
 <p>TODO: FIXME. </p>
 
-<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00078">78</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
+<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00083">83</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
 
-<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00320">mavlink_send_sys_status()</a>.</p>
+<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00367">mavlink_send_sys_status()</a>.</p>
 
 </div>
 </div>
@@ -304,9 +304,9 @@ Variables</h2></td></tr>
 
 <p>Event MAVLink calls. </p>
 
-<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00140">140</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
+<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00145">145</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
 
-<p>References <a class="el" href="link__mcu__can_8c_source.html#l00047">cmd</a>, <a class="el" href="mavlink_8h_source.html#l00057">MAVLink</a>, <a class="el" href="mavlink_8c_source.html#l00060">mavlink_param_names</a>, <a class="el" href="mavlink_8c_source.html#l00056">mavlink_params_idx</a>, <a class="el" href="mavlink_8c_source.html#l00054">mavlink_system</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00056">parse_rc_4ch_datalink()</a>, <a class="el" href="px4flow_8c_source.html#l00042">req</a>, <a class="el" href="mavlink_8c_source.html#l00112">settings_idx_from_param_id()</a>, <a class="el" href="navigation_8h_source.html#l00115">WaypointAlt</a>, <a class="el" href="navigation_8h_source.html#l00113">WaypointX</a>, and <a class="el" href="navigation_8h_source.html#l00114">WaypointY</a>.</p>
+<p>References <a class="el" href="mavlink_8c_source.html#l00065">mavlink_param_names</a>, <a class="el" href="mavlink_8c_source.html#l00061">mavlink_params_idx</a>, <a class="el" href="mavlink_8c_source.html#l00059">mavlink_system</a>, <a class="el" href="mavlink_8h_source.html#l00057">MAVLinkChAvailable</a>, <a class="el" href="mavlink_8h_source.html#l00058">MAVLinkGetch</a>, <a class="el" href="mavlink_8h_source.html#l00059">MAVLinkSendMessage</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00056">parse_rc_4ch_datalink()</a>, <a class="el" href="px4flow_8c_source.html#l00042">req</a>, <a class="el" href="mavlink_8c_source.html#l00117">settings_idx_from_param_id()</a>, <a class="el" href="common__nav_8h_source.html#l00047">WaypointAlt</a>, <a class="el" href="common__nav_8h_source.html#l00045">WaypointX</a>, and <a class="el" href="common__nav_8h_source.html#l00046">WaypointY</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -338,9 +338,9 @@ Variables</h2></td></tr>
 <p>MAVLink initialization. </p>
 <p>Module functions. </p>
 
-<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00083">83</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
+<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00088">88</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
 
-<p>References <a class="el" href="mavlink_8c_source.html#l00061">custom_version</a>, and <a class="el" href="mavlink_8c_source.html#l00054">mavlink_system</a>.</p>
+<p>References <a class="el" href="mavlink_8c_source.html#l00066">custom_version</a>, and <a class="el" href="mavlink_8c_source.html#l00059">mavlink_system</a>.</p>
 
 </div>
 </div>
@@ -361,9 +361,9 @@ Variables</h2></td></tr>
 <p>Periodic MAVLink calls. </p>
 <p>Called at MAVLINK_PERIODIC_FREQUENCY (set in module xml to 10Hz) </p>
 
-<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00095">95</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
+<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00100">100</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
 
-<p>References <a class="el" href="mavlink_8c_source.html#l00342">mavlink_send_attitude()</a>, <a class="el" href="mavlink_8c_source.html#l00431">mavlink_send_attitude_quaternion()</a>, <a class="el" href="mavlink_8c_source.html#l00421">mavlink_send_autopilot_version()</a>, <a class="el" href="mavlink_8c_source.html#l00510">mavlink_send_battery_status()</a>, <a class="el" href="mavlink_8c_source.html#l00368">mavlink_send_global_position_int()</a>, <a class="el" href="mavlink_8c_source.html#l00390">mavlink_send_gps_global_origin()</a>, <a class="el" href="mavlink_8c_source.html#l00448">mavlink_send_gps_raw_int()</a>, <a class="el" href="mavlink_8c_source.html#l00290">mavlink_send_heartbeat()</a>, <a class="el" href="mavlink_8c_source.html#l00355">mavlink_send_local_position_ned()</a>, <a class="el" href="mavlink_8c_source.html#l00404">mavlink_send_params()</a>, <a class="el" href="mavlink_8c_source.html#l00484">mavlink_send_rc_channels()</a>, and <a class="el" href="mavlink_8c_source.html#l00320">mavlink_send_sys_status()</a>.</p>
+<p>References <a class="el" href="mavlink_8c_source.html#l00389">mavlink_send_attitude()</a>, <a class="el" href="mavlink_8c_source.html#l00478">mavlink_send_attitude_quaternion()</a>, <a class="el" href="mavlink_8c_source.html#l00468">mavlink_send_autopilot_version()</a>, <a class="el" href="mavlink_8c_source.html#l00557">mavlink_send_battery_status()</a>, <a class="el" href="mavlink_8c_source.html#l00415">mavlink_send_global_position_int()</a>, <a class="el" href="mavlink_8c_source.html#l00437">mavlink_send_gps_global_origin()</a>, <a class="el" href="mavlink_8c_source.html#l00495">mavlink_send_gps_raw_int()</a>, <a class="el" href="mavlink_8c_source.html#l00295">mavlink_send_heartbeat()</a>, <a class="el" href="mavlink_8c_source.html#l00402">mavlink_send_local_position_ned()</a>, <a class="el" href="mavlink_8c_source.html#l00451">mavlink_send_params()</a>, <a class="el" href="mavlink_8c_source.html#l00531">mavlink_send_rc_channels()</a>, and <a class="el" href="mavlink_8c_source.html#l00367">mavlink_send_sys_status()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -372,7 +372,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mavlink_8c_a45dcaed78c022158e7dcfb92813f191c_cgraph.png" border="0" usemap="#mavlink_8c_a45dcaed78c022158e7dcfb92813f191c_cgraph" alt=""/></div>
 <map name="mavlink_8c_a45dcaed78c022158e7dcfb92813f191c_cgraph" id="mavlink_8c_a45dcaed78c022158e7dcfb92813f191c_cgraph">
-<area shape="rect" id="node3" href="mavlink_8c.html#ab4facf70544272f5a7ce83e50b319cc3" title="Send the attitude. " alt="" coords="195,235,360,263"/><area shape="rect" id="node23" href="mavlink_8c.html#a076640b1bead9f0bb86f91b0893bc651" title="mavlink_send_attitude\l_quaternion" alt="" coords="195,118,360,162"/><area shape="rect" id="node37" href="mavlink_8c.html#af96a42e6789f059a5fd0020e1c1e6cfd" title="mavlink_send_autopilot\l_version" alt="" coords="192,419,363,463"/><area shape="rect" id="node39" href="mavlink_8c.html#a9c0d1806168c69cb318f1770e0a273df" title="mavlink_send_battery\l_status" alt="" coords="196,486,359,530"/><area shape="rect" id="node41" href="mavlink_8c.html#a8e376e67cc8a8a15e91a7e9fae593646" title="mavlink_send_global\l_position_int" alt="" coords="200,286,355,330"/><area shape="rect" id="node74" href="mavlink_8c.html#a2bd41f1b5c150de697a0acb750ee5ef0" title="mavlink_send_gps_global\l_origin" alt="" coords="185,553,369,597"/><area shape="rect" id="node76" href="mavlink_8c.html#a12acc6500a7954c3bdaefdcc0d3255a6" title="mavlink_send_gps_raw_int" alt="" coords="183,619,372,647"/><area shape="rect" id="node82" href="mavlink_8c.html#af29c3514ff33b1bdb88f635b9bb213b3" title="Send a heartbeat. " alt="" coords="188,670,367,698"/><area shape="rect" id="node84" href="mavlink_8c.html#a025c0ce53320b2bf9418a94bd9e5e726" title="mavlink_send_local\l_position_ned" alt="" coords="205,353,349,397"/><area shape="rect" id="node104" href="mavlink_8c.html#af5a06ee32e15a8beb7d1d8fabba91ad7" title="Send the parameters. " alt="" coords="195,721,360,749"/><area shape="rect" id="node106" href="mavlink_8c.html#abdc89d384119e0a10a2f5a0a13e6b5c3" title="mavlink_send_rc_channels" alt="" coords="181,185,373,213"/><area shape="rect" id="node109" href="mavlink_8c.html#a4ace4190769b0230b2aa4113191e5a3e" title="Send the system status. " alt="" coords="185,771,369,799"/><area shape="rect" id="node5" href="linux_2mcu__periph_2sys__time__arch_8h.html#a5f8c93bbb4f24eee68b36977371aa262" title="Get the time in milliseconds since startup. " alt="" coords="447,189,596,217"/><area shape="rect" id="node9" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="423,239,620,267"/><area shape="rect" id="node19" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float). " alt="" coords="443,133,600,161"/><area shape="rect" id="node7" href="sys__time_8h.html#a0f2d5e1c11d8950e639deada1d33b802" title="msec_of_cpu_ticks" alt="" coords="684,189,825,217"/><area shape="rect" id="node11" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="673,239,836,267"/><area shape="rect" id="node13" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="888,151,1056,179"/><area shape="rect" id="node15" href="pprz__algebra__float_8c.html#ac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="1128,106,1280,134"/><area shape="rect" id="node17" href="pprz__algebra__float_8c.html#acd48accfe6eaac320b0d651d894e1db8" title="float_eulers_of_quat" alt="" coords="1129,157,1279,185"/><area shape="rect" id="node21" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title="stateCalcBodyRates_f" alt="" coords="675,133,835,161"/><area shape="rect" id="node26" href="group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float). " alt="" coords="427,59,616,87"/><area shape="rect" id="node28" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float). " alt="" coords="677,59,832,87"/><area shape="rect" id="node30" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title="orientationCalcQuat_f" alt="" coords="892,55,1052,83"/><area shape="rect" id="node32" href="pprz__algebra__float_8c.html#a29a7db3c967cea290d25b28b4d17f01f" title="Quaternion from rotation matrix. " alt="" coords="1133,5,1275,33"/><area shape="rect" id="node34" href="pprz__algebra__float_8c.html#a99c8f1ff70a5b638cf87ea816f1756a2" title="Quaternion from Euler angles. " alt="" coords="1129,55,1279,83"/><area shape="rect" id="node44" href="group__state__position.html#ga99473409b740a26c0e2b9a5bd8e9defb" title="Get position in LLA coordinates (int). " alt="" coords="444,294,599,322"/><area shape="rect" id="node66" href="group__state__velocity.html#ga50a44ddecd4b2517b549549e953ffea2" title="Get ground speed in local NED coordinates (float). " alt="" coords="444,361,599,389"/><area shape="rect" id="node46" href="group__state__position.html#gad0fedf046f198eace06305e56fc7a0f8" title="Calculate LLA (int) from any other available representation. " alt="" coords="675,294,835,322"/><area shape="rect" id="node48" href="pprz__geodetic__int_8c.html#aea47a32071c2427f895fcb1df32c4e23" title="lla_of_ecef_i" alt="" coords="923,202,1021,230"/><area shape="rect" id="node52" href="pprz__geodetic__int_8c.html#af92579b72a2adb1aaac73fae89553fca" title="Convert a local NED position to ECEF. " alt="" coords="903,303,1041,331"/><area shape="rect" id="node54" href="pprz__geodetic__int_8c.html#aaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF. " alt="" coords="1135,281,1273,309"/><area shape="rect" id="node59" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title="lla_of_utm_f" alt="" coords="923,354,1021,382"/><area shape="rect" id="node50" href="pprz__geodetic__double_8c.html#a03262ba97728d6e61bc645e69bd7c332" title="lla_of_ecef_d" alt="" coords="1152,207,1256,235"/><area shape="rect" id="node56" href="pprz__geodetic__int_8c.html#aabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF. " alt="" coords="1353,281,1495,309"/><area shape="rect" id="node61" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title="inverse_isometric_latitude_f" alt="" coords="1104,343,1304,371"/><area shape="rect" id="node63" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1136,394,1272,438"/><area shape="rect" id="node68" href="group__state__velocity.html#ga440e1db9aa0854e8cea50670d7055450" title="stateCalcSpeedNed_f" alt="" coords="675,383,835,411"/><area shape="rect" id="node70" href="pprz__geodetic__float_8c.html#ac36c2e51de3064e3919a1f58f884342e" title="ned_of_ecef_vect_f" alt="" coords="900,405,1044,433"/><area shape="rect" id="node72" href="pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title="enu_of_ecef_vect_f" alt="" coords="1132,461,1276,489"/><area shape="rect" id="node78" href="linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="449,619,593,647"/><area shape="rect" id="node80" href="sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="687,619,823,647"/><area shape="rect" id="node87" href="group__state__position.html#gac1b41866b307723e3ad8ddd566d4f627" title="Get position in local NED coordinates (float). " alt="" coords="439,479,604,507"/><area shape="rect" id="node89" href="group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title="stateCalcPositionNed_f" alt="" coords="671,531,839,559"/><area shape="rect" id="node91" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="1129,607,1279,635"/><area shape="rect" id="node93" href="pprz__geodetic__int_8c.html#a55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="903,607,1041,635"/><area shape="rect" id="node95" href="pprz__geodetic__float_8c.html#aba90b4f88dce2d3eadce9c28fcde2d54" title="ned_of_lla_point_f" alt="" coords="904,557,1040,585"/><area shape="rect" id="node98" href="pprz__geodetic__int_8c.html#a386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="923,506,1021,534"/><area shape="rect" id="node100" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="923,455,1021,483"/></map>
+<area shape="rect" id="node3" href="mavlink_8c.html#ab4facf70544272f5a7ce83e50b319cc3" title="Send the attitude. " alt="" coords="195,233,360,261"/><area shape="rect" id="node23" href="mavlink_8c.html#a076640b1bead9f0bb86f91b0893bc651" title="mavlink_send_attitude\l_quaternion" alt="" coords="195,115,360,159"/><area shape="rect" id="node37" href="mavlink_8c.html#af96a42e6789f059a5fd0020e1c1e6cfd" title="mavlink_send_autopilot\l_version" alt="" coords="192,417,363,461"/><area shape="rect" id="node39" href="mavlink_8c.html#a9c0d1806168c69cb318f1770e0a273df" title="mavlink_send_battery\l_status" alt="" coords="196,483,359,527"/><area shape="rect" id="node41" href="mavlink_8c.html#a8e376e67cc8a8a15e91a7e9fae593646" title="mavlink_send_global\l_position_int" alt="" coords="200,283,355,327"/><area shape="rect" id="node70" href="mavlink_8c.html#a2bd41f1b5c150de697a0acb750ee5ef0" title="mavlink_send_gps_global\l_origin" alt="" coords="185,550,369,594"/><area shape="rect" id="node72" href="mavlink_8c.html#a12acc6500a7954c3bdaefdcc0d3255a6" title="mavlink_send_gps_raw_int" alt="" coords="183,617,372,645"/><area shape="rect" id="node78" href="mavlink_8c.html#af29c3514ff33b1bdb88f635b9bb213b3" title="Send a heartbeat. " alt="" coords="188,667,367,695"/><area shape="rect" id="node84" href="mavlink_8c.html#a025c0ce53320b2bf9418a94bd9e5e726" title="mavlink_send_local\l_position_ned" alt="" coords="205,350,349,394"/><area shape="rect" id="node103" href="mavlink_8c.html#af5a06ee32e15a8beb7d1d8fabba91ad7" title="Send the parameters. " alt="" coords="195,718,360,746"/><area shape="rect" id="node105" href="mavlink_8c.html#abdc89d384119e0a10a2f5a0a13e6b5c3" title="mavlink_send_rc_channels" alt="" coords="181,182,373,210"/><area shape="rect" id="node108" href="mavlink_8c.html#a4ace4190769b0230b2aa4113191e5a3e" title="Send the system status. " alt="" coords="185,769,369,797"/><area shape="rect" id="node5" href="linux_2mcu__periph_2sys__time__arch_8h.html#a5f8c93bbb4f24eee68b36977371aa262" title="Get the time in milliseconds since startup. " alt="" coords="447,186,596,214"/><area shape="rect" id="node9" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="423,237,620,265"/><area shape="rect" id="node19" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float). " alt="" coords="443,130,600,158"/><area shape="rect" id="node7" href="sys__time_8h.html#a0f2d5e1c11d8950e639deada1d33b802" title="msec_of_cpu_ticks" alt="" coords="684,186,825,214"/><area shape="rect" id="node11" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="673,237,836,265"/><area shape="rect" id="node13" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="888,157,1056,185"/><area shape="rect" id="node15" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="1105,106,1257,134"/><area shape="rect" id="node17" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="float_eulers_of_quat" alt="" coords="1107,157,1256,185"/><area shape="rect" id="node21" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title="stateCalcBodyRates_f" alt="" coords="675,130,835,158"/><area shape="rect" id="node26" href="group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float). " alt="" coords="427,71,616,99"/><area shape="rect" id="node28" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float). " alt="" coords="677,59,832,87"/><area shape="rect" id="node30" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title="orientationCalcQuat_f" alt="" coords="892,55,1052,83"/><area shape="rect" id="node32" href="group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f" title="Quaternion from rotation matrix. " alt="" coords="1111,5,1252,33"/><area shape="rect" id="node34" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="Quaternion from Euler angles. " alt="" coords="1107,55,1256,83"/><area shape="rect" id="node44" href="group__state__position.html#ga99473409b740a26c0e2b9a5bd8e9defb" title="Get position in LLA coordinates (int). " alt="" coords="444,291,599,319"/><area shape="rect" id="node64" href="group__state__velocity.html#ga50a44ddecd4b2517b549549e953ffea2" title="Get ground speed in local NED coordinates (float). " alt="" coords="444,358,599,386"/><area shape="rect" id="node46" href="group__state__position.html#gad0fedf046f198eace06305e56fc7a0f8" title="Calculate LLA (int) from any other available representation. " alt="" coords="675,291,835,319"/><area shape="rect" id="node48" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="lla_of_ecef_i" alt="" coords="923,207,1021,235"/><area shape="rect" id="node54" href="group__math__geodetic__int.html#gaf92579b72a2adb1aaac73fae89553fca" title="Convert a local NED position to ECEF. " alt="" coords="903,309,1041,337"/><area shape="rect" id="node56" href="group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF. " alt="" coords="1112,309,1251,337"/><area shape="rect" id="node61" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title="lla_of_utm_f" alt="" coords="923,359,1021,387"/><area shape="rect" id="node50" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="1132,207,1231,235"/><area shape="rect" id="node52" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title="lla_of_ecef_d" alt="" coords="1129,258,1233,286"/><area shape="rect" id="node58" href="group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF. " alt="" coords="1308,309,1449,337"/><area shape="rect" id="node66" href="group__state__velocity.html#ga440e1db9aa0854e8cea50670d7055450" title="stateCalcSpeedNed_f" alt="" coords="675,385,835,413"/><area shape="rect" id="node68" href="pprz__geodetic__float_8c.html#ac36c2e51de3064e3919a1f58f884342e" title="ned_of_ecef_vect_f" alt="" coords="900,410,1044,438"/><area shape="rect" id="node74" href="linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="449,617,593,645"/><area shape="rect" id="node76" href="sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="687,617,823,645"/><area shape="rect" id="node80" href="group__state__attitude.html#ga7a5b4f36c52389fed6e5ec2714dbf15a" title="Test if attitudes are valid. " alt="" coords="448,667,595,695"/><area shape="rect" id="node82" href="group__math__orientation__representation.html#ga6b55b77641f1a911a919a4d579932514" title="Test if orientations are valid. " alt="" coords="677,667,832,695"/><area shape="rect" id="node87" href="group__state__position.html#gac1b41866b307723e3ad8ddd566d4f627" title="Get position in local NED coordinates (float). " alt="" coords="439,487,604,515"/><area shape="rect" id="node89" href="group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title="stateCalcPositionNed_f" alt="" coords="671,555,839,583"/><area shape="rect" id="node91" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="1107,537,1256,565"/><area shape="rect" id="node93" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="903,613,1041,641"/><area shape="rect" id="node95" href="pprz__geodetic__float_8c.html#aba90b4f88dce2d3eadce9c28fcde2d54" title="ned_of_lla_point_f" alt="" coords="904,562,1040,590"/><area shape="rect" id="node98" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="923,663,1021,691"/><area shape="rect" id="node100" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="923,461,1021,489"/></map>
 </div>
 </p>
 
@@ -402,11 +402,11 @@ Variables</h2></td></tr>
 
 <p>Send the attitude. </p>
 
-<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00342">342</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
+<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00389">389</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
 
-<p>References <a class="el" href="linux_2mcu__periph_2sys__time__arch_8h_source.html#l00051">get_sys_time_msec()</a>, <a class="el" href="mavlink_8h_source.html#l00057">MAVLink</a>, <a class="el" href="ins__alt__float_8c_source.html#l00236">p</a>, <a class="el" href="state_8h_source.html#l01171">stateGetBodyRates_f()</a>, and <a class="el" href="state_8h_source.html#l01114">stateGetNedToBodyEulers_f()</a>.</p>
+<p>References <a class="el" href="linux_2mcu__periph_2sys__time__arch_8h_source.html#l00049">get_sys_time_msec()</a>, <a class="el" href="mavlink_8h_source.html#l00059">MAVLinkSendMessage</a>, <a class="el" href="ins__alt__float_8c_source.html#l00249">p</a>, <a class="el" href="state_8h_source.html#l01171">stateGetBodyRates_f()</a>, and <a class="el" href="state_8h_source.html#l01114">stateGetNedToBodyEulers_f()</a>.</p>
 
-<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00095">mavlink_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00100">mavlink_periodic()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -415,7 +415,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mavlink_8c_ab4facf70544272f5a7ce83e50b319cc3_cgraph.png" border="0" usemap="#mavlink_8c_ab4facf70544272f5a7ce83e50b319cc3_cgraph" alt=""/></div>
 <map name="mavlink_8c_ab4facf70544272f5a7ce83e50b319cc3_cgraph" id="mavlink_8c_ab4facf70544272f5a7ce83e50b319cc3_cgraph">
-<area shape="rect" id="node3" href="linux_2mcu__periph_2sys__time__arch_8h.html#a5f8c93bbb4f24eee68b36977371aa262" title="Get the time in milliseconds since startup. " alt="" coords="247,5,396,33"/><area shape="rect" id="node7" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float). " alt="" coords="243,55,400,83"/><area shape="rect" id="node11" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="223,106,420,134"/><area shape="rect" id="node5" href="sys__time_8h.html#a0f2d5e1c11d8950e639deada1d33b802" title="msec_of_cpu_ticks" alt="" coords="481,5,623,33"/><area shape="rect" id="node9" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title="stateCalcBodyRates_f" alt="" coords="472,55,632,83"/><area shape="rect" id="node13" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="471,106,633,134"/><area shape="rect" id="node15" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="683,106,851,134"/><area shape="rect" id="node17" href="pprz__algebra__float_8c.html#ac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="900,81,1052,109"/><area shape="rect" id="node19" href="pprz__algebra__float_8c.html#acd48accfe6eaac320b0d651d894e1db8" title="float_eulers_of_quat" alt="" coords="901,131,1051,159"/></map>
+<area shape="rect" id="node3" href="linux_2mcu__periph_2sys__time__arch_8h.html#a5f8c93bbb4f24eee68b36977371aa262" title="Get the time in milliseconds since startup. " alt="" coords="247,5,396,33"/><area shape="rect" id="node7" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float). " alt="" coords="243,55,400,83"/><area shape="rect" id="node11" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="223,106,420,134"/><area shape="rect" id="node5" href="sys__time_8h.html#a0f2d5e1c11d8950e639deada1d33b802" title="msec_of_cpu_ticks" alt="" coords="481,5,623,33"/><area shape="rect" id="node9" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title="stateCalcBodyRates_f" alt="" coords="472,55,632,83"/><area shape="rect" id="node13" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="471,106,633,134"/><area shape="rect" id="node15" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="683,106,851,134"/><area shape="rect" id="node17" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="900,81,1052,109"/><area shape="rect" id="node19" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="float_eulers_of_quat" alt="" coords="901,131,1051,159"/></map>
 </div>
 </p>
 
@@ -454,11 +454,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00431">431</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
+<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00478">478</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
 
-<p>References <a class="el" href="linux_2mcu__periph_2sys__time__arch_8h_source.html#l00051">get_sys_time_msec()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00236">p</a>, <a class="el" href="state_8h_source.html#l01171">stateGetBodyRates_f()</a>, and <a class="el" href="state_8h_source.html#l01102">stateGetNedToBodyQuat_f()</a>.</p>
+<p>References <a class="el" href="linux_2mcu__periph_2sys__time__arch_8h_source.html#l00049">get_sys_time_msec()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00249">p</a>, <a class="el" href="state_8h_source.html#l01171">stateGetBodyRates_f()</a>, and <a class="el" href="state_8h_source.html#l01102">stateGetNedToBodyQuat_f()</a>.</p>
 
-<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00095">mavlink_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00100">mavlink_periodic()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -467,7 +467,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mavlink_8c_a076640b1bead9f0bb86f91b0893bc651_cgraph.png" border="0" usemap="#mavlink_8c_a076640b1bead9f0bb86f91b0893bc651_cgraph" alt=""/></div>
 <map name="mavlink_8c_a076640b1bead9f0bb86f91b0893bc651_cgraph" id="mavlink_8c_a076640b1bead9f0bb86f91b0893bc651_cgraph">
-<area shape="rect" id="node3" href="linux_2mcu__periph_2sys__time__arch_8h.html#a5f8c93bbb4f24eee68b36977371aa262" title="Get the time in milliseconds since startup. " alt="" coords="243,5,392,33"/><area shape="rect" id="node7" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float). " alt="" coords="239,55,396,83"/><area shape="rect" id="node11" href="group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float). " alt="" coords="223,106,412,134"/><area shape="rect" id="node5" href="sys__time_8h.html#a0f2d5e1c11d8950e639deada1d33b802" title="msec_of_cpu_ticks" alt="" coords="472,5,613,33"/><area shape="rect" id="node9" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title="stateCalcBodyRates_f" alt="" coords="463,55,623,83"/><area shape="rect" id="node13" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float). " alt="" coords="465,106,620,134"/><area shape="rect" id="node15" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title="orientationCalcQuat_f" alt="" coords="672,106,832,134"/><area shape="rect" id="node17" href="pprz__algebra__float_8c.html#a29a7db3c967cea290d25b28b4d17f01f" title="Quaternion from rotation matrix. " alt="" coords="885,81,1027,109"/><area shape="rect" id="node19" href="pprz__algebra__float_8c.html#a99c8f1ff70a5b638cf87ea816f1756a2" title="Quaternion from Euler angles. " alt="" coords="881,131,1031,159"/></map>
+<area shape="rect" id="node3" href="linux_2mcu__periph_2sys__time__arch_8h.html#a5f8c93bbb4f24eee68b36977371aa262" title="Get the time in milliseconds since startup. " alt="" coords="243,5,392,33"/><area shape="rect" id="node7" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float). " alt="" coords="239,55,396,83"/><area shape="rect" id="node11" href="group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float). " alt="" coords="223,106,412,134"/><area shape="rect" id="node5" href="sys__time_8h.html#a0f2d5e1c11d8950e639deada1d33b802" title="msec_of_cpu_ticks" alt="" coords="472,5,613,33"/><area shape="rect" id="node9" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title="stateCalcBodyRates_f" alt="" coords="463,55,623,83"/><area shape="rect" id="node13" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float). " alt="" coords="465,106,620,134"/><area shape="rect" id="node15" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title="orientationCalcQuat_f" alt="" coords="672,106,832,134"/><area shape="rect" id="node17" href="group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f" title="Quaternion from rotation matrix. " alt="" coords="885,81,1027,109"/><area shape="rect" id="node19" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="Quaternion from Euler angles. " alt="" coords="881,131,1031,159"/></map>
 </div>
 </p>
 
@@ -507,11 +507,11 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>TODO: fill in versions correctly, how should they be encoded? </p>
 
-<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00421">421</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
+<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00468">468</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
 
-<p>References <a class="el" href="mavlink_8c_source.html#l00061">custom_version</a>.</p>
+<p>References <a class="el" href="mavlink_8c_source.html#l00066">custom_version</a>.</p>
 
-<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00095">mavlink_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00100">mavlink_periodic()</a>.</p>
 
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -549,11 +549,11 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>TODO: check what all these fields are supposed to represent </p>
 
-<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00510">510</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
+<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00557">557</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
 
-<p>References <a class="el" href="electrical_8h_source.html#l00050">Electrical::consumed</a>, <a class="el" href="electrical_8h_source.html#l00049">Electrical::current</a>, <a class="el" href="electrical__dummy_8c_source.html#l00033">electrical</a>, <a class="el" href="electrical_8h_source.html#l00051">Electrical::energy</a>, and <a class="el" href="electrical_8h_source.html#l00048">Electrical::vsupply</a>.</p>
+<p>References <a class="el" href="electrical_8h_source.html#l00050">Electrical::consumed</a>, <a class="el" href="electrical_8h_source.html#l00049">Electrical::current</a>, <a class="el" href="electrical_8c_source.html#l00065">electrical</a>, <a class="el" href="electrical_8h_source.html#l00051">Electrical::energy</a>, and <a class="el" href="electrical_8h_source.html#l00048">Electrical::vsupply</a>.</p>
 
-<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00095">mavlink_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00100">mavlink_periodic()</a>.</p>
 
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -591,11 +591,11 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>TODO: check/ask what coordinate system vel is supposed to be in, not clear from docs </p>
 
-<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00368">368</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
+<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00415">415</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00059">LlaCoor_i::alt</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8h_source.html#l00051">get_sys_time_msec()</a>, <a class="el" href="ahrs__infrared_8c_source.html#l00040">heading</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00097">LtpDef_f::hmsl</a>, <a class="el" href="mavlink_8h_source.html#l00057">MAVLink</a>, <a class="el" href="state_8h_source.html#l00216">State::ned_origin_f</a>, <a class="el" href="state_8c_source.html#l00036">state</a>, <a class="el" href="state_8h_source.html#l01114">stateGetNedToBodyEulers_f()</a>, <a class="el" href="state_8h_source.html#l00666">stateGetPositionLla_i()</a>, and <a class="el" href="state_8h_source.html#l00885">stateGetSpeedNed_f()</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8h_source.html#l00049">get_sys_time_msec()</a>, <a class="el" href="ahrs__infrared_8c_source.html#l00045">heading</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00097">LtpDef_f::hmsl</a>, <a class="el" href="mavlink_8h_source.html#l00059">MAVLinkSendMessage</a>, <a class="el" href="state_8h_source.html#l00216">State::ned_origin_f</a>, <a class="el" href="state_8c_source.html#l00036">state</a>, <a class="el" href="state_8h_source.html#l01114">stateGetNedToBodyEulers_f()</a>, <a class="el" href="state_8h_source.html#l00666">stateGetPositionLla_i()</a>, and <a class="el" href="state_8h_source.html#l00885">stateGetSpeedNed_f()</a>.</p>
 
-<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00095">mavlink_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00100">mavlink_periodic()</a>.</p>
 
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -604,7 +604,7 @@ Variables</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mavlink_8c_a8e376e67cc8a8a15e91a7e9fae593646_cgraph.png" border="0" usemap="#mavlink_8c_a8e376e67cc8a8a15e91a7e9fae593646_cgraph" alt=""/></div>
 <map name="mavlink_8c_a8e376e67cc8a8a15e91a7e9fae593646_cgraph" id="mavlink_8c_a8e376e67cc8a8a15e91a7e9fae593646_cgraph">
-<area shape="rect" id="node3" href="linux_2mcu__periph_2sys__time__arch_8h.html#a5f8c93bbb4f24eee68b36977371aa262" title="Get the time in milliseconds since startup. " alt="" coords="233,81,383,109"/><area shape="rect" id="node7" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="209,131,407,159"/><area shape="rect" id="node17" href="group__state__position.html#ga99473409b740a26c0e2b9a5bd8e9defb" title="Get position in LLA coordinates (int). " alt="" coords="231,182,385,210"/><area shape="rect" id="node38" href="group__state__velocity.html#ga50a44ddecd4b2517b549549e953ffea2" title="Get ground speed in local NED coordinates (float). " alt="" coords="231,273,385,301"/><area shape="rect" id="node5" href="sys__time_8h.html#a0f2d5e1c11d8950e639deada1d33b802" title="msec_of_cpu_ticks" alt="" coords="468,81,609,109"/><area shape="rect" id="node9" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="457,131,620,159"/><area shape="rect" id="node11" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="669,55,837,83"/><area shape="rect" id="node13" href="pprz__algebra__float_8c.html#ac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="909,5,1061,33"/><area shape="rect" id="node15" href="pprz__algebra__float_8c.html#acd48accfe6eaac320b0d651d894e1db8" title="float_eulers_of_quat" alt="" coords="911,55,1060,83"/><area shape="rect" id="node19" href="group__state__position.html#gad0fedf046f198eace06305e56fc7a0f8" title="Calculate LLA (int) from any other available representation. " alt="" coords="459,182,619,210"/><area shape="rect" id="node21" href="pprz__geodetic__int_8c.html#aea47a32071c2427f895fcb1df32c4e23" title="lla_of_ecef_i" alt="" coords="704,106,803,134"/><area shape="rect" id="node25" href="pprz__geodetic__int_8c.html#af92579b72a2adb1aaac73fae89553fca" title="Convert a local NED position to ECEF. " alt="" coords="684,157,823,185"/><area shape="rect" id="node27" href="pprz__geodetic__int_8c.html#aaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF. " alt="" coords="916,157,1055,185"/><area shape="rect" id="node32" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title="lla_of_utm_f" alt="" coords="704,258,803,286"/><area shape="rect" id="node23" href="pprz__geodetic__double_8c.html#a03262ba97728d6e61bc645e69bd7c332" title="lla_of_ecef_d" alt="" coords="933,106,1037,134"/><area shape="rect" id="node29" href="pprz__geodetic__int_8c.html#aabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF. " alt="" coords="1135,157,1276,185"/><area shape="rect" id="node34" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title="inverse_isometric_latitude_f" alt="" coords="885,207,1085,235"/><area shape="rect" id="node36" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="917,258,1053,302"/><area shape="rect" id="node40" href="group__state__velocity.html#ga440e1db9aa0854e8cea50670d7055450" title="stateCalcSpeedNed_f" alt="" coords="459,302,619,330"/><area shape="rect" id="node42" href="pprz__geodetic__float_8c.html#ac36c2e51de3064e3919a1f58f884342e" title="ned_of_ecef_vect_f" alt="" coords="681,317,825,345"/><area shape="rect" id="node44" href="pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title="enu_of_ecef_vect_f" alt="" coords="913,325,1057,353"/></map>
+<area shape="rect" id="node3" href="linux_2mcu__periph_2sys__time__arch_8h.html#a5f8c93bbb4f24eee68b36977371aa262" title="Get the time in milliseconds since startup. " alt="" coords="233,106,383,134"/><area shape="rect" id="node7" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="209,157,407,185"/><area shape="rect" id="node17" href="group__state__position.html#ga99473409b740a26c0e2b9a5bd8e9defb" title="Get position in LLA coordinates (int). " alt="" coords="231,207,385,235"/><area shape="rect" id="node40" href="group__state__velocity.html#ga50a44ddecd4b2517b549549e953ffea2" title="Get ground speed in local NED coordinates (float). " alt="" coords="231,302,385,330"/><area shape="rect" id="node5" href="sys__time_8h.html#a0f2d5e1c11d8950e639deada1d33b802" title="msec_of_cpu_ticks" alt="" coords="468,106,609,134"/><area shape="rect" id="node9" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="457,157,620,185"/><area shape="rect" id="node11" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="669,55,837,83"/><area shape="rect" id="node13" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="909,5,1061,33"/><area shape="rect" id="node15" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="float_eulers_of_quat" alt="" coords="911,55,1060,83"/><area shape="rect" id="node19" href="group__state__position.html#gad0fedf046f198eace06305e56fc7a0f8" title="Calculate LLA (int) from any other available representation. " alt="" coords="459,207,619,235"/><area shape="rect" id="node21" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="lla_of_ecef_i" alt="" coords="704,131,803,159"/><area shape="rect" id="node27" href="group__math__geodetic__int.html#gaf92579b72a2adb1aaac73fae89553fca" title="Convert a local NED position to ECEF. " alt="" coords="684,182,823,210"/><area shape="rect" id="node29" href="group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF. " alt="" coords="916,207,1055,235"/><area shape="rect" id="node34" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title="lla_of_utm_f" alt="" coords="704,283,803,311"/><area shape="rect" id="node23" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="936,106,1035,134"/><area shape="rect" id="node25" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title="lla_of_ecef_d" alt="" coords="933,157,1037,185"/><area shape="rect" id="node31" href="group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF. " alt="" coords="1135,207,1276,235"/><area shape="rect" id="node36" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title="inverse_isometric_latitude_f" alt="" coords="885,258,1085,286"/><area shape="rect" id="node38" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="917,309,1053,353"/><area shape="rect" id="node42" href="group__state__velocity.html#ga440e1db9aa0854e8cea50670d7055450" title="stateCalcSpeedNed_f" alt="" coords="459,337,619,365"/><area shape="rect" id="node44" href="pprz__geodetic__float_8c.html#ac36c2e51de3064e3919a1f58f884342e" title="ned_of_ecef_vect_f" alt="" coords="681,354,825,382"/><area shape="rect" id="node46" href="pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title="enu_of_ecef_vect_f" alt="" coords="913,375,1057,403"/></map>
 </div>
 </p>
 
@@ -643,11 +643,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00390">390</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
+<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00437">437</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00099">LtpDef_i::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00057">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00097">LtpDef_i::lla</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00058">LlaCoor_i::lon</a>, <a class="el" href="mavlink_8h_source.html#l00057">MAVLink</a>, <a class="el" href="state_8h_source.html#l00167">State::ned_initialized_i</a>, <a class="el" href="state_8h_source.html#l00162">State::ned_origin_i</a>, and <a class="el" href="state_8c_source.html#l00036">state</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00100">LtpDef_i::lla</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="mavlink_8h_source.html#l00059">MAVLinkSendMessage</a>, <a class="el" href="state_8h_source.html#l00167">State::ned_initialized_i</a>, <a class="el" href="state_8h_source.html#l00162">State::ned_origin_i</a>, and <a class="el" href="state_8c_source.html#l00036">state</a>.</p>
 
-<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00095">mavlink_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00100">mavlink_periodic()</a>.</p>
 
 <p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -684,11 +684,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00448">448</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
+<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00495">495</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00059">LlaCoor_i::alt</a>, <a class="el" href="gps_8h_source.html#l00072">GpsState::course</a>, <a class="el" href="gps_8h_source.html#l00078">GpsState::fix</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8h_source.html#l00041">get_sys_time_usec()</a>, <a class="el" href="gps_8c_source.html#l00041">gps</a>, <a class="el" href="gps_8h_source.html#l00070">GpsState::gspeed</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00057">LlaCoor_i::lat</a>, <a class="el" href="gps_8h_source.html#l00065">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00058">LlaCoor_i::lon</a>, <a class="el" href="gps_8h_source.html#l00077">GpsState::num_sv</a>, and <a class="el" href="gps_8h_source.html#l00076">GpsState::pdop</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="gps_8h_source.html#l00075">GpsState::course</a>, <a class="el" href="gps_8h_source.html#l00081">GpsState::fix</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8h_source.html#l00039">get_sys_time_usec()</a>, <a class="el" href="gps_8c_source.html#l00041">gps</a>, <a class="el" href="gps_8h_source.html#l00073">GpsState::gspeed</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="gps_8h_source.html#l00068">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="gps_8h_source.html#l00080">GpsState::num_sv</a>, and <a class="el" href="gps_8h_source.html#l00079">GpsState::pdop</a>.</p>
 
-<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00095">mavlink_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00100">mavlink_periodic()</a>.</p>
 
 <p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -738,17 +738,28 @@ Variables</h2></td></tr>
 
 <p>Send a heartbeat. </p>
 
-<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00290">290</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
+<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00295">295</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
 
-<p>References <a class="el" href="ahrs_8c_source.html#l00030">ahrs</a>, <a class="el" href="ahrs_8h_source.html#l00036">AHRS_RUNNING</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00043">kill_throttle</a>, <a class="el" href="mavlink_8h_source.html#l00057">MAVLink</a>, and <a class="el" href="ahrs_8h_source.html#l00045">Ahrs::status</a>.</p>
+<p>References <a class="el" href="rotorcraft_2autopilot_8h_source.html#l00043">AP_MODE_ATTITUDE_CLIMB</a>, <a class="el" href="rotorcraft_2autopilot_8h_source.html#l00040">AP_MODE_ATTITUDE_DIRECT</a>, <a class="el" href="rotorcraft_2autopilot_8h_source.html#l00042">AP_MODE_ATTITUDE_RC_CLIMB</a>, <a class="el" href="rotorcraft_2autopilot_8h_source.html#l00045">AP_MODE_ATTITUDE_Z_HOLD</a>, <a class="el" href="rotorcraft_2autopilot_8h_source.html#l00051">AP_MODE_CARE_FREE_DIRECT</a>, <a class="el" href="rotorcraft_2autopilot_8h_source.html#l00038">AP_MODE_HOME</a>, <a class="el" href="rotorcraft_2autopilot_8h_source.html#l00047">AP_MODE_HOVER_CLIMB</a>, <a class="el" href="rotorcraft_2autopilot_8h_source.html#l00046">AP_MODE_HOVER_DIRECT</a>, <a class="el" href="rotorcraft_2autopilot_8h_source.html#l00048">AP_MODE_HOVER_Z_HOLD</a>, <a class="el" href="rotorcraft_2autopilot_8h_source.html#l00049">AP_MODE_NAV</a>, <a class="el" href="rotorcraft_2autopilot_8h_source.html#l00039">AP_MODE_RATE_DIRECT</a>, <a class="el" href="rotorcraft_2autopilot_8h_source.html#l00041">AP_MODE_RATE_RC_CLIMB</a>, <a class="el" href="rotorcraft_2autopilot_8h_source.html#l00044">AP_MODE_RATE_Z_HOLD</a>, <a class="el" href="rotorcraft_2autopilot_8h_source.html#l00050">AP_MODE_RC_DIRECT</a>, <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00061">autopilot_mode</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00042">kill_throttle</a>, <a class="el" href="mavlink_8h_source.html#l00059">MAVLinkSendMessage</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00041">pprz_mode</a>, <a class="el" href="fixedwing_2autopilot_8h_source.html#l00051">PPRZ_MODE_AUTO1</a>, <a class="el" href="fixedwing_2autopilot_8h_source.html#l00052">PPRZ_MODE_AUTO2</a>, <a class="el" href="fixedwing_2autopilot_8h_source.html#l00053">PPRZ_MODE_HOME</a>, <a class="el" href="fixedwing_2autopilot_8h_source.html#l00050">PPRZ_MODE_MANUAL</a>, and <a class="el" href="state_8h_source.html#l01038">stateIsAttitudeValid()</a>.</p>
 
-<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00095">mavlink_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00100">mavlink_periodic()</a>.</p>
 
 <p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="mavlink_8c_af29c3514ff33b1bdb88f635b9bb213b3_cgraph.png" border="0" usemap="#mavlink_8c_af29c3514ff33b1bdb88f635b9bb213b3_cgraph" alt=""/></div>
+<map name="mavlink_8c_af29c3514ff33b1bdb88f635b9bb213b3_cgraph" id="mavlink_8c_af29c3514ff33b1bdb88f635b9bb213b3_cgraph">
+<area shape="rect" id="node3" href="group__state__attitude.html#ga7a5b4f36c52389fed6e5ec2714dbf15a" title="Test if attitudes are valid. " alt="" coords="232,5,379,33"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#ga6b55b77641f1a911a919a4d579932514" title="Test if orientations are valid. " alt="" coords="427,5,581,33"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mavlink_8c_af29c3514ff33b1bdb88f635b9bb213b3_icgraph.png" border="0" usemap="#mavlink_8c_af29c3514ff33b1bdb88f635b9bb213b3_icgraph" alt=""/></div>
 <map name="mavlink_8c_af29c3514ff33b1bdb88f635b9bb213b3_icgraph" id="mavlink_8c_af29c3514ff33b1bdb88f635b9bb213b3_icgraph">
 <area shape="rect" id="node3" href="mavlink_8h.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls. " alt="" coords="232,5,360,33"/></map>
@@ -779,28 +790,28 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00355">355</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
+<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00402">402</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
 
-<p>References <a class="el" href="linux_2mcu__periph_2sys__time__arch_8h_source.html#l00051">get_sys_time_msec()</a>, <a class="el" href="mavlink_8h_source.html#l00057">MAVLink</a>, <a class="el" href="state_8h_source.html#l00693">stateGetPositionNed_f()</a>, and <a class="el" href="state_8h_source.html#l00885">stateGetSpeedNed_f()</a>.</p>
+<p>References <a class="el" href="linux_2mcu__periph_2sys__time__arch_8h_source.html#l00049">get_sys_time_msec()</a>, <a class="el" href="mavlink_8h_source.html#l00059">MAVLinkSendMessage</a>, <a class="el" href="state_8h_source.html#l00693">stateGetPositionNed_f()</a>, and <a class="el" href="state_8h_source.html#l00885">stateGetSpeedNed_f()</a>.</p>
 
-<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00095">mavlink_periodic()</a>.</p>
-
-<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="mavlink_8c_a025c0ce53320b2bf9418a94bd9e5e726_cgraph.png" border="0" usemap="#mavlink_8c_a025c0ce53320b2bf9418a94bd9e5e726_cgraph" alt=""/></div>
-<map name="mavlink_8c_a025c0ce53320b2bf9418a94bd9e5e726_cgraph" id="mavlink_8c_a025c0ce53320b2bf9418a94bd9e5e726_cgraph">
-<area shape="rect" id="node3" href="linux_2mcu__periph_2sys__time__arch_8h.html#a5f8c93bbb4f24eee68b36977371aa262" title="Get the time in milliseconds since startup. " alt="" coords="208,147,357,175"/><area shape="rect" id="node7" href="group__state__position.html#gac1b41866b307723e3ad8ddd566d4f627" title="Get position in local NED coordinates (float). " alt="" coords="200,198,365,226"/><area shape="rect" id="node36" href="group__state__velocity.html#ga50a44ddecd4b2517b549549e953ffea2" title="Get ground speed in local NED coordinates (float). " alt="" coords="205,274,360,302"/><area shape="rect" id="node5" href="sys__time_8h.html#a0f2d5e1c11d8950e639deada1d33b802" title="msec_of_cpu_ticks" alt="" coords="428,147,569,175"/><area shape="rect" id="node9" href="group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title="stateCalcPositionNed_f" alt="" coords="415,198,583,226"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="824,173,973,201"/><area shape="rect" id="node15" href="pprz__geodetic__int_8c.html#a55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="635,122,773,150"/><area shape="rect" id="node21" href="pprz__geodetic__float_8c.html#aba90b4f88dce2d3eadce9c28fcde2d54" title="ned_of_lla_point_f" alt="" coords="636,223,772,251"/><area shape="rect" id="node26" href="pprz__geodetic__int_8c.html#a386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="655,274,753,302"/><area shape="rect" id="node30" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="655,71,753,99"/><area shape="rect" id="node13" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1021,173,1171,201"/><area shape="rect" id="node17" href="pprz__geodetic__int_8c.html#a710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="829,122,968,150"/><area shape="rect" id="node19" href="pprz__geodetic__int_8c.html#a85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1023,122,1169,150"/><area shape="rect" id="node23" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="849,223,948,251"/><area shape="rect" id="node28" href="pprz__geodetic__double_8c.html#a33dae600eb50aea456b6cdbeec53c849" title="ecef_of_lla_d" alt="" coords="847,274,951,302"/><area shape="rect" id="node32" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="825,71,972,99"/><area shape="rect" id="node34" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="831,5,967,49"/><area shape="rect" id="node38" href="group__state__velocity.html#ga440e1db9aa0854e8cea50670d7055450" title="stateCalcSpeedNed_f" alt="" coords="419,313,579,341"/><area shape="rect" id="node40" href="pprz__geodetic__float_8c.html#ac36c2e51de3064e3919a1f58f884342e" title="ned_of_ecef_vect_f" alt="" coords="632,325,776,353"/><area shape="rect" id="node42" href="pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title="enu_of_ecef_vect_f" alt="" coords="827,325,971,353"/></map>
-</div>
-</p>
+<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00100">mavlink_periodic()</a>.</p>
 
 <p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="mavlink_8c_a025c0ce53320b2bf9418a94bd9e5e726_cgraph.png" border="0" usemap="#mavlink_8c_a025c0ce53320b2bf9418a94bd9e5e726_cgraph" alt=""/></div>
+<map name="mavlink_8c_a025c0ce53320b2bf9418a94bd9e5e726_cgraph" id="mavlink_8c_a025c0ce53320b2bf9418a94bd9e5e726_cgraph">
+<area shape="rect" id="node3" href="linux_2mcu__periph_2sys__time__arch_8h.html#a5f8c93bbb4f24eee68b36977371aa262" title="Get the time in milliseconds since startup. " alt="" coords="208,147,357,175"/><area shape="rect" id="node7" href="group__state__position.html#gac1b41866b307723e3ad8ddd566d4f627" title="Get position in local NED coordinates (float). " alt="" coords="200,198,365,226"/><area shape="rect" id="node37" href="group__state__velocity.html#ga50a44ddecd4b2517b549549e953ffea2" title="Get ground speed in local NED coordinates (float). " alt="" coords="205,274,360,302"/><area shape="rect" id="node5" href="sys__time_8h.html#a0f2d5e1c11d8950e639deada1d33b802" title="msec_of_cpu_ticks" alt="" coords="428,147,569,175"/><area shape="rect" id="node9" href="group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title="stateCalcPositionNed_f" alt="" coords="415,198,583,226"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="824,173,973,201"/><area shape="rect" id="node15" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="635,122,773,150"/><area shape="rect" id="node21" href="pprz__geodetic__float_8c.html#aba90b4f88dce2d3eadce9c28fcde2d54" title="ned_of_lla_point_f" alt="" coords="636,223,772,251"/><area shape="rect" id="node26" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="655,274,753,302"/><area shape="rect" id="node31" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="655,71,753,99"/><area shape="rect" id="node13" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1021,173,1171,201"/><area shape="rect" id="node17" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="829,122,968,150"/><area shape="rect" id="node19" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1023,122,1169,150"/><area shape="rect" id="node23" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="849,223,948,251"/><area shape="rect" id="node29" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="847,274,951,302"/><area shape="rect" id="node33" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="825,71,972,99"/><area shape="rect" id="node35" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="831,5,967,49"/><area shape="rect" id="node39" href="group__state__velocity.html#ga440e1db9aa0854e8cea50670d7055450" title="stateCalcSpeedNed_f" alt="" coords="419,313,579,341"/><area shape="rect" id="node41" href="pprz__geodetic__float_8c.html#ac36c2e51de3064e3919a1f58f884342e" title="ned_of_ecef_vect_f" alt="" coords="632,325,776,353"/><area shape="rect" id="node43" href="pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title="enu_of_ecef_vect_f" alt="" coords="827,325,971,353"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mavlink_8c_a025c0ce53320b2bf9418a94bd9e5e726_icgraph.png" border="0" usemap="#mavlink_8c_a025c0ce53320b2bf9418a94bd9e5e726_icgraph" alt=""/></div>
 <map name="mavlink_8c_a025c0ce53320b2bf9418a94bd9e5e726_icgraph" id="mavlink_8c_a025c0ce53320b2bf9418a94bd9e5e726_icgraph">
 <area shape="rect" id="node3" href="mavlink_8h.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls. " alt="" coords="200,13,328,41"/></map>
@@ -833,17 +844,17 @@ Variables</h2></td></tr>
 
 <p>Send the parameters. </p>
 
-<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00404">404</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
+<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00451">451</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
 
-<p>References <a class="el" href="mavlink_8h_source.html#l00057">MAVLink</a>, <a class="el" href="mavlink_8c_source.html#l00060">mavlink_param_names</a>, and <a class="el" href="mavlink_8c_source.html#l00056">mavlink_params_idx</a>.</p>
+<p>References <a class="el" href="mavlink_8c_source.html#l00065">mavlink_param_names</a>, <a class="el" href="mavlink_8c_source.html#l00061">mavlink_params_idx</a>, and <a class="el" href="mavlink_8h_source.html#l00059">MAVLinkSendMessage</a>.</p>
 
-<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00095">mavlink_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00100">mavlink_periodic()</a>.</p>
 
-<p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mavlink_8c_af5a06ee32e15a8beb7d1d8fabba91ad7_icgraph.png" border="0" usemap="#mavlink_8c_af5a06ee32e15a8beb7d1d8fabba91ad7_icgraph" alt=""/></div>
 <map name="mavlink_8c_af5a06ee32e15a8beb7d1d8fabba91ad7_icgraph" id="mavlink_8c_af5a06ee32e15a8beb7d1d8fabba91ad7_icgraph">
 <area shape="rect" id="node3" href="mavlink_8h.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls. " alt="" coords="219,5,347,33"/></map>
@@ -874,28 +885,28 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00484">484</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
+<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00531">531</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
 
-<p>References <a class="el" href="linux_2mcu__periph_2sys__time__arch_8h_source.html#l00051">get_sys_time_msec()</a>, <a class="el" href="mavlink_8c_source.html#l00480">PPM_PULSES</a>, and <a class="el" href="mavlink_8c_source.html#l00478">RC_CHANNELS</a>.</p>
+<p>References <a class="el" href="linux_2mcu__periph_2sys__time__arch_8h_source.html#l00049">get_sys_time_msec()</a>, <a class="el" href="mavlink_8c_source.html#l00527">PPM_PULSES</a>, and <a class="el" href="mavlink_8c_source.html#l00525">RC_CHANNELS</a>.</p>
 
-<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00095">mavlink_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00100">mavlink_periodic()</a>.</p>
 
-<p><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mavlink_8c_abdc89d384119e0a10a2f5a0a13e6b5c3_cgraph.png" border="0" usemap="#mavlink_8c_abdc89d384119e0a10a2f5a0a13e6b5c3_cgraph" alt=""/></div>
 <map name="mavlink_8c_abdc89d384119e0a10a2f5a0a13e6b5c3_cgraph" id="mavlink_8c_abdc89d384119e0a10a2f5a0a13e6b5c3_cgraph">
 <area shape="rect" id="node3" href="linux_2mcu__periph_2sys__time__arch_8h.html#a5f8c93bbb4f24eee68b36977371aa262" title="Get the time in milliseconds since startup. " alt="" coords="245,5,395,33"/><area shape="rect" id="node5" href="sys__time_8h.html#a0f2d5e1c11d8950e639deada1d33b802" title="msec_of_cpu_ticks" alt="" coords="444,5,585,33"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mavlink_8c_abdc89d384119e0a10a2f5a0a13e6b5c3_icgraph.png" border="0" usemap="#mavlink_8c_abdc89d384119e0a10a2f5a0a13e6b5c3_icgraph" alt=""/></div>
 <map name="mavlink_8c_abdc89d384119e0a10a2f5a0a13e6b5c3_icgraph" id="mavlink_8c_abdc89d384119e0a10a2f5a0a13e6b5c3_icgraph">
 <area shape="rect" id="node3" href="mavlink_8h.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls. " alt="" coords="245,5,373,33"/></map>
@@ -928,17 +939,17 @@ Variables</h2></td></tr>
 
 <p>Send the system status. </p>
 
-<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00320">320</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
+<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00367">367</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
 
-<p>References <a class="el" href="electrical_8h_source.html#l00049">Electrical::current</a>, <a class="el" href="electrical__dummy_8c_source.html#l00033">electrical</a>, <a class="el" href="mavlink_8h_source.html#l00057">MAVLink</a>, <a class="el" href="mavlink_8c_source.html#l00078">UAV_SENSORS</a>, and <a class="el" href="electrical_8h_source.html#l00048">Electrical::vsupply</a>.</p>
+<p>References <a class="el" href="electrical_8h_source.html#l00049">Electrical::current</a>, <a class="el" href="electrical_8c_source.html#l00065">electrical</a>, <a class="el" href="mavlink_8h_source.html#l00059">MAVLinkSendMessage</a>, <a class="el" href="mavlink_8c_source.html#l00083">UAV_SENSORS</a>, and <a class="el" href="electrical_8h_source.html#l00048">Electrical::vsupply</a>.</p>
 
-<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00095">mavlink_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00100">mavlink_periodic()</a>.</p>
 
-<p><div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mavlink_8c_a4ace4190769b0230b2aa4113191e5a3e_icgraph.png" border="0" usemap="#mavlink_8c_a4ace4190769b0230b2aa4113191e5a3e_icgraph" alt=""/></div>
 <map name="mavlink_8c_a4ace4190769b0230b2aa4113191e5a3e_icgraph" id="mavlink_8c_a4ace4190769b0230b2aa4113191e5a3e_icgraph">
 <area shape="rect" id="node3" href="mavlink_8h.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls. " alt="" coords="237,5,365,33"/></map>
@@ -969,17 +980,17 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00112">112</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
+<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00117">117</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
 
-<p>References <a class="el" href="mavlink_8c_source.html#l00060">mavlink_param_names</a>.</p>
+<p>References <a class="el" href="mavlink_8c_source.html#l00065">mavlink_param_names</a>.</p>
 
-<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00140">mavlink_event()</a>.</p>
+<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00145">mavlink_event()</a>.</p>
 
-<p><div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mavlink_8c_a02a4175b51d1be746de549ae377d08f1_icgraph.png" border="0" usemap="#mavlink_8c_a02a4175b51d1be746de549ae377d08f1_icgraph" alt=""/></div>
 <map name="mavlink_8c_a02a4175b51d1be746de549ae377d08f1_icgraph" id="mavlink_8c_a02a4175b51d1be746de549ae377d08f1_icgraph">
 <area shape="rect" id="node3" href="mavlink_8h.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls. " alt="" coords="256,5,371,33"/></map>
@@ -1009,9 +1020,9 @@ Variables</h2></td></tr>
 
 <p>first 8 bytes (16 chars) of GIT SHA1 </p>
 
-<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00061">61</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
+<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00066">66</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
 
-<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00083">mavlink_init()</a>, and <a class="el" href="mavlink_8c_source.html#l00421">mavlink_send_autopilot_version()</a>.</p>
+<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00088">mavlink_init()</a>, and <a class="el" href="mavlink_8c_source.html#l00468">mavlink_send_autopilot_version()</a>.</p>
 
 </div>
 </div>
@@ -1036,9 +1047,9 @@ Variables</h2></td></tr>
 <p>mavlink parameter names. </p>
 <p>16 chars + 1 NULL termination. </p>
 
-<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00060">60</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
+<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00065">65</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
 
-<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00140">mavlink_event()</a>, <a class="el" href="mavlink_8c_source.html#l00404">mavlink_send_params()</a>, and <a class="el" href="mavlink_8c_source.html#l00112">settings_idx_from_param_id()</a>.</p>
+<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00145">mavlink_event()</a>, <a class="el" href="mavlink_8c_source.html#l00451">mavlink_send_params()</a>, and <a class="el" href="mavlink_8c_source.html#l00117">settings_idx_from_param_id()</a>.</p>
 
 </div>
 </div>
@@ -1062,9 +1073,9 @@ Variables</h2></td></tr>
 
 <p>Transmitting parameters index. </p>
 
-<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00056">56</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
+<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00061">61</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
 
-<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00140">mavlink_event()</a>, and <a class="el" href="mavlink_8c_source.html#l00404">mavlink_send_params()</a>.</p>
+<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00145">mavlink_event()</a>, and <a class="el" href="mavlink_8c_source.html#l00451">mavlink_send_params()</a>.</p>
 
 </div>
 </div>
@@ -1078,9 +1089,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00054">54</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
+<p>Definition at line <a class="el" href="mavlink_8c_source.html#l00059">59</a> of file <a class="el" href="mavlink_8c_source.html">mavlink.c</a>.</p>
 
-<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00140">mavlink_event()</a>, and <a class="el" href="mavlink_8c_source.html#l00083">mavlink_init()</a>.</p>
+<p>Referenced by <a class="el" href="mavlink_8c_source.html#l00145">mavlink_event()</a>, and <a class="el" href="mavlink_8c_source.html#l00088">mavlink_init()</a>.</p>
 
 </div>
 </div>
@@ -1090,7 +1101,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_164c7aa663179b26059278e7f36078da.html">datalink</a></li><li class="navelem"><a class="el" href="mavlink_8c.html">mavlink.c</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:03 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:23 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

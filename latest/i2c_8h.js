@@ -2,7 +2,6 @@ var i2c_8h =
 [
     [ "I2C_BUF_LEN", "i2c_8h.html#ga4757adc18b278c40ced0d79f4e104460", null ],
     [ "I2C_TRANSACTION_QUEUE_LEN", "i2c_8h.html#ga1e8f7694d49989f4823aa34cffae6319", null ],
-    [ "I2C_ZERO_EVENTS", "i2c_8h.html#ga77f29c2a4faf3c8917e45d4540c2a430", null ],
     [ "ZEROS_ERR_COUNTER", "i2c_8h.html#ga0c590ace0cfbd91af9173a07cc211362", null ],
     [ "I2CStatus", "i2c_8h.html#ga9bec282875cd65e00172e875ef785bec", [
       [ "I2CIdle", "i2c_8h.html#gga9bec282875cd65e00172e875ef785beca9ab9b8398c146fca315edd21fc934788", null ],

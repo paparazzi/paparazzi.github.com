@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('README_8md.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('README_8md.html','');});
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;Up to date information is available in the wiki http:<span class="comment">//wiki.paparazziuav.org</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;and <a class="code" href="at__com_8c.html#ae17b1fbd0d2858329af3554bff58d9be">from</a> the mailing list [paparazzi-devel@nongnu.org] (http:<span class="comment">//savannah.nongnu.org/mail/?group=paparazzi)</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;and from the mailing list [paparazzi-devel@nongnu.org] (http:<span class="comment">//savannah.nongnu.org/mail/?group=paparazzi)</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;and the IRC <a class="code" href="ADS8344_8c.html#a715f5cb061d11eb75981741eda4dafcd">channel</a> (freenode, <span class="preprocessor">#paparazzi).</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('README_8md.html','');});
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;_conf_: the configuration directory (airframe, radio, ... descriptions).</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;_data_: where to put read-only <a class="code" href="link__mcu__can_8c.html#afb87d045bbf32b236fc425efe02bdc7b">data</a> (e.g. maps, terrain elevation files, icons)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;_data_: where to put read-only data (e.g. maps, terrain elevation files, icons)</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;_doc_: documentation (diagrams, manual source files, ...)</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
@@ -161,9 +161,9 @@ $(document).ready(function(){initNavTree('README_8md.html','');});
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;2. <span class="stringliteral">&quot;./paparazzi&quot;</span> to <a class="code" href="usb__serial__stm32__example2_8c.html#aa90bc2b9950a6a9a3144876047f8bee2">run</a> the Paparazzi <a class="code" href="nav__flower_8c.html#a688461f77762ad7bc85685537182f73c">Center</a></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;3. Select the <span class="stringliteral">&quot;Microjet&quot;</span> aircraft in the upper-left <a class="code" href="pprz__geodetic__utm_8h.html#a955f504eccf76b4eb2489c0adab03121">A</a>/C combo box.</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  Select <span class="stringliteral">&quot;sim&quot;</span> <a class="code" href="at__com_8c.html#ae17b1fbd0d2858329af3554bff58d9be">from</a> upper-middle <span class="stringliteral">&quot;target&quot;</span> combo box. Click <span class="stringliteral">&quot;Build&quot;</span>.</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  When the compilation is finished, select <span class="stringliteral">&quot;Simulation&quot;</span> <a class="code" href="at__com_8c.html#ae17b1fbd0d2858329af3554bff58d9be">from</a></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;3. Select the <span class="stringliteral">&quot;Microjet&quot;</span> aircraft in the upper-left <a class="code" href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a>/C combo box.</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  Select <span class="stringliteral">&quot;sim&quot;</span> from upper-middle <span class="stringliteral">&quot;target&quot;</span> combo box. Click <span class="stringliteral">&quot;Build&quot;</span>.</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  When the compilation is finished, select <span class="stringliteral">&quot;Simulation&quot;</span> from</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  the upper-right session combo box and click <span class="stringliteral">&quot;Execute&quot;</span>.</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;4. In the GCS, wait about 10s <span class="keywordflow">for</span> the aircraft to be in the <span class="stringliteral">&quot;Holding point&quot;</span> navigation block.</div>
@@ -188,7 +188,7 @@ $(document).ready(function(){initNavTree('README_8md.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="README_8md.html">README.md</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:04:34 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:00:54 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

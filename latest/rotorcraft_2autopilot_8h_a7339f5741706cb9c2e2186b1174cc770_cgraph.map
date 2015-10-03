@@ -1,51 +1,51 @@
 <map id="autopilot_on_rc_frame" name="autopilot_on_rc_frame">
-<area shape="rect" id="node3" href="$rotorcraft_2autopilot_8c.html#a99409d6a32e6cce437a1c0354a2515eb" title="ahrs_is_aligned" alt="" coords="963,72,1083,100"/>
-<area shape="rect" id="node5" href="$autopilot__arming__switch_8h.html#abbbe9ccad851ff6d7ef88e298059b6ce" title="State machine to check if motors should be turned ON or OFF using the kill switch. " alt="" coords="220,1119,393,1163"/>
-<area shape="rect" id="node7" href="$autopilot__rc__helpers_8h.html#a4e9918f217a6eaf344d248a9d34e674d" title="kill_switch_is_on" alt="" coords="473,1173,596,1201"/>
-<area shape="rect" id="node11" href="$rotorcraft_2autopilot_8c.html#a3aaa2cf16ee3b25e8fca9bbd1d579d64" title="autopilot_set_mode" alt="" coords="460,203,609,231"/>
-<area shape="rect" id="node79" href="$gps_8h.html#a7c420cb47f7f109c651c574e288e97d9" title="GpsIsLost" alt="" coords="265,1185,348,1213"/>
-<area shape="rect" id="node81" href="$guidance__h_8c.html#a7db3290fc5f62abc15a1bb1638b4922f" title="guidance_h_read_rc" alt="" coords="232,971,381,999"/>
-<area shape="rect" id="node125" href="$rotorcraft_2guidance_2guidance__v_8c.html#a067f5a51ae66cddf397b8b312ae4c383" title="guidance_v_read_rc" alt="" coords="232,1236,381,1264"/>
-<area shape="rect" id="node9" href="$autopilot__rc__helpers_8h.html#ac346fd81983479ea51d3439a7dfca6c6" title="rc_attitude_sticks\l_centered" alt="" coords="468,1224,601,1268"/>
-<area shape="rect" id="node14" href="$rotorcraft_2autopilot_8c.html#a4a3dedaf4d4da879348f946a9f3f4611" title="autopilot_set_motors_on" alt="" coords="685,123,867,151"/>
-<area shape="rect" id="node19" href="$guidance__h_8c.html#a2903786227eb11507928f99870099225" title="guidance_h_mode_changed" alt="" coords="676,283,876,311"/>
-<area shape="rect" id="node69" href="$rotorcraft_2guidance_2guidance__v_8c.html#ac24445848e497e9b0da2913cecb0db73" title="guidance_v_mode_changed" alt="" coords="1168,5,1368,33"/>
-<area shape="rect" id="node73" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#a5a2d8d3947ba9cdc571cea5778c93f4a" title="stabilization_attitude\l_set_failsafe_setpoint" alt="" coords="943,645,1103,689"/>
-<area shape="rect" id="node17" href="$autopilot__arming__switch_8h.html#a720eaefed19d55f94f6f866d8aba2702" title="autopilot_arming_set" alt="" coords="944,123,1101,151"/>
-<area shape="rect" id="node21" href="$stabilization__none_8c.html#a49478c0307e64c56d48cf0feaa0d8876" title="stabilization_none\l_enter" alt="" coords="955,275,1091,319"/>
-<area shape="rect" id="node23" href="$stabilization__rate_8c.html#a3c8ef06f1db709ae713371b0a2a5054d" title="stabilization_rate\l_enter" alt="" coords="957,341,1088,385"/>
-<area shape="rect" id="node25" href="$stabilization__attitude__rc__setpoint_8c.html#abdf70201d8682a7d5b567fc6f3790063" title="reset the heading for care&#45;free mode to current heading " alt="" coords="929,512,1116,556"/>
-<area shape="rect" id="node31" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#a23f862ca823e6fd23fc9c111178be077" title="stabilization_attitude\l_enter" alt="" coords="945,421,1100,465"/>
-<area shape="rect" id="node51" href="$guidance__h_8c.html#a2a7de8dee0c85bd58633a392d8e2df91" title="guidance_h_hover_enter" alt="" coords="933,173,1112,201"/>
-<area shape="rect" id="node65" href="$guidance__h_8c.html#acfce6969bcd9f8b676f79baf04ef4c00" title="guidance_h_nav_enter" alt="" coords="940,224,1105,252"/>
-<area shape="rect" id="node27" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="1417,855,1615,883"/>
-<area shape="rect" id="node29" href="$group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="1667,855,1829,883"/>
-<area shape="rect" id="node33" href="$stabilization__attitude__rc__setpoint_8c.html#aef31d05722347c8213ef503f5c6f1113" title="stabilization_attitude\l_get_heading_f" alt="" coords="1191,645,1345,689"/>
-<area shape="rect" id="node36" href="$stabilization__attitude__ref__euler__float_8c.html#a4653dafe8c5e5680c05207027db750f0" title="stabilization_attitude\l_ref_enter" alt="" coords="1191,376,1345,420"/>
-<area shape="rect" id="node38" href="$group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int). " alt="" coords="1417,595,1615,623"/>
-<area shape="rect" id="node42" href="$stabilization__attitude__euler__int_8c.html#a60f842edfa8dd98a227f18def04a0b55" title="reset_psi_ref_from_body" alt="" coords="1179,443,1357,471"/>
-<area shape="rect" id="node44" href="$pprz__algebra__float_8h.html#a0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity " alt="" coords="1199,493,1337,521"/>
-<area shape="rect" id="node46" href="$stabilization__attitude__rc__setpoint_8c.html#a1270210b635f040b5bdd7d974f29c71f" title="stabilization_attitude\l_get_heading_i" alt="" coords="1191,712,1345,756"/>
-<area shape="rect" id="node49" href="$pprz__algebra__int_8h.html#a698f3fc474f66517868238f6f6b08fca" title="initialises a quaternion to identity " alt="" coords="1196,325,1340,353"/>
-<area shape="rect" id="node40" href="$group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int). " alt="" coords="1667,595,1829,623"/>
-<area shape="rect" id="node53" href="$group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="1435,56,1597,84"/>
-<area shape="rect" id="node57" href="$guidance__h_8c.html#ad9bd6447dd5cea00192adfbbf5a30cd5" title="reset_guidance_reference\l_from_current_position" alt="" coords="1175,107,1361,151"/>
-<area shape="rect" id="node55" href="$group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="1664,56,1832,84"/>
-<area shape="rect" id="node60" href="$group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="1439,111,1593,139"/>
-<area shape="rect" id="node62" href="$group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="1669,111,1827,139"/>
-<area shape="rect" id="node83" href="$stabilization__none_8c.html#a39657270c342b5a7f44894f10b5ad946" title="stabilization_none\l_read_rc" alt="" coords="467,829,603,873"/>
-<area shape="rect" id="node85" href="$stabilization__rate_8c.html#aa74f5f2b4c549269f6ca18638acd8c5e" title="stabilization_rate\l_read_rc_switched_sticks" alt="" coords="444,896,625,940"/>
-<area shape="rect" id="node87" href="$stabilization__rate_8c.html#a007715357d8063fa371fb07433a1e3d7" title="stabilization_rate\l_read_rc" alt="" coords="469,963,600,1007"/>
-<area shape="rect" id="node89" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#add34cd878dfdd9fd4d0912a06fbc58bc" title="stabilization_attitude\l_read_rc" alt="" coords="457,1029,612,1073"/>
-<area shape="rect" id="node101" href="$stabilization__attitude__rc__setpoint_8c.html#a60929bf25f6bd542fd13629fc452c1b6" title="Read attitude setpoint from RC as euler angles. " alt="" coords="932,1125,1113,1169"/>
-<area shape="rect" id="node122" href="$guidance__h_8c.html#af1bd541621a914d4516c3297c2415349" title="read speed setpoint from RC " alt="" coords="684,779,868,807"/>
-<area shape="rect" id="node91" href="$stabilization__attitude__rc__setpoint_8c.html#a795e57d623b6d1b9fe9a630dd90d13d4" title="stabilization_attitude\l_read_rc_setpoint_eulers_f" alt="" coords="927,973,1119,1017"/>
-<area shape="rect" id="node111" href="$stabilization__attitude__rc__setpoint_8c.html#a9d0b7ad4c9f5c936c3f06910ac5d0185" title="Read attitude setpoint from RC as quaternion Interprets the stick positions as axes. " alt="" coords="685,1083,867,1127"/>
-<area shape="rect" id="node116" href="$stabilization__attitude__rc__setpoint_8c.html#a2c7e084c171f2656b071f20895ce2ce0" title="stabilization_attitude\l_read_rc_setpoint_quat\l_earth_bound_f" alt="" coords="691,899,861,959"/>
-<area shape="rect" id="node93" href="$stabilization__attitude__rc__setpoint_8c.html#a309fd1a55c923cc260a5a5dee9a38dc6" title="get_rc_roll_f" alt="" coords="1219,1083,1317,1111"/>
-<area shape="rect" id="node95" href="$stabilization__attitude__rc__setpoint_8c.html#aaf72a0691995f62ee5a168379c0fa91f" title="get_rc_pitch_f" alt="" coords="1213,981,1323,1009"/>
-<area shape="rect" id="node97" href="$stabilization__attitude__rc__setpoint_8c.html#a8c8d5fae7ce7c73035312dddd8f07688" title="get_rc_yaw_f" alt="" coords="1216,1032,1320,1060"/>
-<area shape="rect" id="node103" href="$stabilization__attitude__rc__setpoint_8c.html#aaacaa0bfae27bca514cd0e19cea0e13e" title="get_rc_roll" alt="" coords="1224,1184,1312,1212"/>
-<area shape="rect" id="node105" href="$stabilization__attitude__rc__setpoint_8c.html#a9d8973438ae0ad5f463d0e40c7c96c00" title="get_rc_pitch" alt="" coords="1219,1235,1317,1263"/>
-<area shape="rect" id="node107" href="$stabilization__attitude__rc__setpoint_8c.html#ae1bf36a0f51b8303e556d7fa83504dbc" title="get_rc_yaw" alt="" coords="1221,1285,1315,1313"/>
+<area shape="rect" id="node3" href="$rotorcraft_2autopilot_8c.html#a99409d6a32e6cce437a1c0354a2515eb" title="ahrs_is_aligned" alt="" coords="984,46,1104,74"/>
+<area shape="rect" id="node9" href="$autopilot__arming__switch_8h.html#abbbe9ccad851ff6d7ef88e298059b6ce" title="State machine to check if motors should be turned ON or OFF using the kill switch. " alt="" coords="220,245,393,289"/>
+<area shape="rect" id="node11" href="$autopilot__rc__helpers_8h.html#a4e9918f217a6eaf344d248a9d34e674d" title="kill_switch_is_on" alt="" coords="484,194,607,222"/>
+<area shape="rect" id="node15" href="$rotorcraft_2autopilot_8c.html#a3aaa2cf16ee3b25e8fca9bbd1d579d64" title="autopilot_set_mode" alt="" coords="471,311,620,339"/>
+<area shape="rect" id="node84" href="$guidance__h_8c.html#a7db3290fc5f62abc15a1bb1638b4922f" title="guidance_h_read_rc" alt="" coords="232,1155,381,1183"/>
+<area shape="rect" id="node127" href="$rotorcraft_2guidance_2guidance__v_8c.html#a067f5a51ae66cddf397b8b312ae4c383" title="guidance_v_read_rc" alt="" coords="232,1206,381,1234"/>
+<area shape="rect" id="node5" href="$group__state__attitude.html#ga7a5b4f36c52389fed6e5ec2714dbf15a" title="Test if attitudes are valid. " alt="" coords="1216,5,1363,33"/>
+<area shape="rect" id="node7" href="$group__math__orientation__representation.html#ga6b55b77641f1a911a919a4d579932514" title="Test if orientations are valid. " alt="" coords="1460,5,1615,33"/>
+<area shape="rect" id="node13" href="$autopilot__rc__helpers_8h.html#ac346fd81983479ea51d3439a7dfca6c6" title="rc_attitude_sticks\l_centered" alt="" coords="479,245,612,289"/>
+<area shape="rect" id="node18" href="$rotorcraft_2autopilot_8c.html#a4a3dedaf4d4da879348f946a9f3f4611" title="autopilot_set_motors_on" alt="" coords="707,122,888,150"/>
+<area shape="rect" id="node23" href="$guidance__h_8c.html#a2903786227eb11507928f99870099225" title="guidance_h_mode_changed" alt="" coords="697,459,897,487"/>
+<area shape="rect" id="node72" href="$rotorcraft_2guidance_2guidance__v_8c.html#ac24445848e497e9b0da2913cecb0db73" title="guidance_v_mode_changed" alt="" coords="1189,55,1389,83"/>
+<area shape="rect" id="node78" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#a5a2d8d3947ba9cdc571cea5778c93f4a" title="stabilization_attitude\l_set_failsafe_setpoint" alt="" coords="964,770,1124,814"/>
+<area shape="rect" id="node21" href="$autopilot__arming__switch_8h.html#a720eaefed19d55f94f6f866d8aba2702" title="autopilot_arming_set" alt="" coords="965,122,1123,150"/>
+<area shape="rect" id="node25" href="$stabilization__none_8c.html#a49478c0307e64c56d48cf0feaa0d8876" title="stabilization_none\l_enter" alt="" coords="976,586,1112,630"/>
+<area shape="rect" id="node27" href="$stabilization__rate_8c.html#a3c8ef06f1db709ae713371b0a2a5054d" title="stabilization_rate\l_enter" alt="" coords="979,653,1109,697"/>
+<area shape="rect" id="node29" href="$stabilization__attitude__rc__setpoint_8c.html#abdf70201d8682a7d5b567fc6f3790063" title="reset the heading for care&#45;free mode to current heading " alt="" coords="1196,661,1383,705"/>
+<area shape="rect" id="node33" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#a23f862ca823e6fd23fc9c111178be077" title="stabilization_attitude\l_enter" alt="" coords="967,367,1121,411"/>
+<area shape="rect" id="node51" href="$guidance__indi_8c.html#a638dd6a545987ce3e0a8c8cef1e3481c" title="guidance_indi_enter" alt="" coords="969,434,1119,462"/>
+<area shape="rect" id="node53" href="$guidance__h_8c.html#a2a7de8dee0c85bd58633a392d8e2df91" title="guidance_h_hover_enter" alt="" coords="955,223,1133,251"/>
+<area shape="rect" id="node63" href="$ctrl__module__demo_8c.html#af0a3b4e238d064326406719e8244e92d" title="guidance_h_module_enter" alt="" coords="949,485,1139,513"/>
+<area shape="rect" id="node65" href="$guidance__h_8c.html#acfce6969bcd9f8b676f79baf04ef4c00" title="guidance_h_nav_enter" alt="" coords="961,274,1127,302"/>
+<area shape="rect" id="node69" href="$guidance__flip_8c.html#a896a483b1034357b2911e72d625ff8fd" title="guidance_flip_enter" alt="" coords="971,535,1117,563"/>
+<area shape="rect" id="node31" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="1439,917,1636,945"/>
+<area shape="rect" id="node35" href="$stabilization__attitude__rc__setpoint_8c.html#aef31d05722347c8213ef503f5c6f1113" title="stabilization_attitude\l_get_heading_f" alt="" coords="1212,829,1367,873"/>
+<area shape="rect" id="node38" href="$stabilization__attitude__ref__euler__float_8c.html#a4653dafe8c5e5680c05207027db750f0" title="stabilization_attitude\l_ref_enter" alt="" coords="1212,527,1367,571"/>
+<area shape="rect" id="node40" href="$group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int). " alt="" coords="1439,602,1636,630"/>
+<area shape="rect" id="node42" href="$stabilization__attitude__euler__int_8c.html#a60f842edfa8dd98a227f18def04a0b55" title="reset_psi_ref_from_body" alt="" coords="1200,375,1379,403"/>
+<area shape="rect" id="node44" href="$group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity " alt="" coords="1220,426,1359,454"/>
+<area shape="rect" id="node46" href="$stabilization__attitude__rc__setpoint_8c.html#a1270210b635f040b5bdd7d974f29c71f" title="stabilization_attitude\l_get_heading_i" alt="" coords="1212,594,1367,638"/>
+<area shape="rect" id="node49" href="$group__math__algebra__int.html#ga698f3fc474f66517868238f6f6b08fca" title="initialises a quaternion to identity " alt="" coords="1217,477,1361,505"/>
+<area shape="rect" id="node55" href="$group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="1456,106,1619,134"/>
+<area shape="rect" id="node57" href="$guidance__h_8c.html#ad9bd6447dd5cea00192adfbbf5a30cd5" title="reset_guidance_reference\l_from_current_position" alt="" coords="1196,157,1383,201"/>
+<area shape="rect" id="node60" href="$group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="1460,161,1615,189"/>
+<area shape="rect" id="node76" href="$ctrl__module__demo_8c.html#a1288433c507106e865034b02ae79b2d6" title="guidance_v_module_enter" alt="" coords="1443,55,1632,83"/>
+<area shape="rect" id="node86" href="$stabilization__none_8c.html#a39657270c342b5a7f44894f10b5ad946" title="stabilization_none\l_read_rc" alt="" coords="477,1257,613,1301"/>
+<area shape="rect" id="node88" href="$stabilization__rate_8c.html#aa74f5f2b4c549269f6ca18638acd8c5e" title="stabilization_rate\l_read_rc_switched_sticks" alt="" coords="455,1323,636,1367"/>
+<area shape="rect" id="node90" href="$stabilization__rate_8c.html#a007715357d8063fa371fb07433a1e3d7" title="stabilization_rate\l_read_rc" alt="" coords="480,1390,611,1434"/>
+<area shape="rect" id="node92" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#add34cd878dfdd9fd4d0912a06fbc58bc" title="stabilization_attitude\l_read_rc" alt="" coords="468,1051,623,1095"/>
+<area shape="rect" id="node100" href="$stabilization__attitude__rc__setpoint_8c.html#a60929bf25f6bd542fd13629fc452c1b6" title="Read attitude setpoint from RC as euler angles. " alt="" coords="953,1114,1135,1158"/>
+<area shape="rect" id="node122" href="$guidance__h_8c.html#af1bd541621a914d4516c3297c2415349" title="read speed setpoint from RC " alt="" coords="705,891,889,919"/>
+<area shape="rect" id="node125" href="$ctrl__module__demo_8c.html#a4c33bfc7d07ffb6d33a1af63799da082" title="guidance_h_module_read_rc" alt="" coords="443,1206,648,1234"/>
+<area shape="rect" id="node94" href="$stabilization__attitude__rc__setpoint_8c.html#a795e57d623b6d1b9fe9a630dd90d13d4" title="stabilization_attitude\l_read_rc_setpoint_eulers_f" alt="" coords="948,1047,1140,1091"/>
+<area shape="rect" id="node111" href="$stabilization__attitude__rc__setpoint_8c.html#a9d0b7ad4c9f5c936c3f06910ac5d0185" title="Read attitude setpoint from RC as quaternion Interprets the stick positions as axes. " alt="" coords="707,993,888,1037"/>
+<area shape="rect" id="node116" href="$stabilization__attitude__rc__setpoint_8c.html#a2c7e084c171f2656b071f20895ce2ce0" title="stabilization_attitude\l_read_rc_setpoint_quat\l_earth_bound_f" alt="" coords="712,1110,883,1170"/>
+<area shape="rect" id="node96" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="1219,1098,1360,1126"/>
+<area shape="rect" id="node102" href="$stabilization__attitude__rc__setpoint_8c.html#aaacaa0bfae27bca514cd0e19cea0e13e" title="get_rc_roll" alt="" coords="1245,1149,1333,1177"/>
+<area shape="rect" id="node104" href="$stabilization__attitude__rc__setpoint_8c.html#a9d8973438ae0ad5f463d0e40c7c96c00" title="get_rc_pitch" alt="" coords="1240,1199,1339,1227"/>
+<area shape="rect" id="node107" href="$stabilization__attitude__rc__setpoint_8c.html#ae1bf36a0f51b8303e556d7fa83504dbc" title="get_rc_yaw" alt="" coords="1243,1250,1336,1278"/>
 </map>

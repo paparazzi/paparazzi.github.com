@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['toggle_20two_20gpio_20pins_20_28lisa_29',['Toggle two gpio pins (Lisa)',['../module__deploy_sonar_buoy.html',1,'onboard_modules']]],
-  ['trigger_20digital_20camera_20_28i2c_29',['Trigger Digital Camera (I2C)',['../module__digital_cam_i2c.html',1,'onboard_modules']]],
   ['tronsens_20htm_2db71_20humidity_20sensor_20_28i2c_29',['TronSens HTM-B71 humidity sensor (I2C)',['../module__humid_htm_b71.html',1,'onboard_modules']]],
   ['test_20module_20for_20the_20mpu9250_20with_20i2c',['Test module for the mpu9250 with I2C',['../module__imu_mpu9250.html',1,'onboard_modules']]],
   ['takeoff_20functions_20for_20bungee_20takeoff',['Takeoff functions for bungee takeoff',['../module__nav_bungee_takeoff.html',1,'onboard_modules']]],

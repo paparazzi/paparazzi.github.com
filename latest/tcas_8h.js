@@ -1,6 +1,9 @@
 var tcas_8h =
 [
-    [ "tcas_ac_status", "structtcas__ac__status.html", "structtcas__ac__status" ],
+    [ "tcas_ac_status", "tcas_8h.html#structtcas__ac__status", [
+      [ "resolve", "tcas_8h.html#a415f4bed7ba6cfa8c1ee181ba8054a4e", null ],
+      [ "status", "tcas_8h.html#a84263e97504633f539e41aad6d183d1a", null ]
+    ] ],
     [ "CallTCAS", "tcas_8h.html#ac6cf4a93985d655ea6d4b96cbe2b6ed0", null ],
     [ "ParseTcasResolve", "tcas_8h.html#a77e46c8dbf3fb7857caa026c12f8577e", null ],
     [ "TCAS_NO_ALARM", "tcas_8h.html#ab9a79a26862be7bb5125172fb9ee3558", null ],

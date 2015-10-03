@@ -1,5 +1,6 @@
 var serial__port_8c =
 [
+    [ "IUCLC", "serial__port_8c.html#a60397fb1a881cadaa5e210dd5d347989", null ],
     [ "TRACE", "serial__port_8c.html#a114bd0b279c986fe4425fbcce8206709", null ],
     [ "TRACE_ERROR", "serial__port_8c.html#a7c12181b2e8dc912219651ff42d22e42", null ],
     [ "serial_port_close", "serial__port_8c.html#a436c287d25989f374ec728048a371b93", null ],

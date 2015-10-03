@@ -1,6 +1,9 @@
 var nav__line__osam_8c =
 [
-    [ "Point2D", "structPoint2D.html", "structPoint2D" ],
+    [ "Point2D", "nav__survey__poly__rotorcraft_8c.html#structPoint2D", [
+      [ "x", "nav__survey__poly__rotorcraft_8c.html#a2a5ef0ad00bc9e912a9aefcedf004cc4", null ],
+      [ "y", "nav__survey__poly__rotorcraft_8c.html#a989485fd2d8026ceec5d57e8c7e629ab", null ]
+    ] ],
     [ "LINE_START_FUNCTION", "nav__line__osam_8c.html#a86a682e52e440368e6ca96062ef7563f", null ],
     [ "LINE_STOP_FUNCTION", "nav__line__osam_8c.html#a2788d8683c98c074cb18680dc2eea0af", null ],
     [ "FLStatus", "nav__line__osam_8c.html#a9dbd76495d70a6f62b70274c35348271", [

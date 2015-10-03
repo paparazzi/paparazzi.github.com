@@ -1,11 +1,17 @@
 var video_8c =
 [
-    [ "CLEAR", "video_8c.html#ab0ba4dd6e237b96132c0a66be2fb3bc2", null ],
-    [ "video_close", "video_8c.html#a36898564207d241966a4ace93316e229", null ],
-    [ "video_create_image", "video_8c.html#a063ec8d646ba7552a92522f6a07b2358", null ],
-    [ "video_grab_image", "video_8c.html#a28f42ce798bb06218cc45856d254678f", null ],
-    [ "video_init", "video_8c.html#a827c88554a249c61e8318ea9438408b1", null ],
-    [ "video_thread_main", "video_8c.html#a9f0409d800be63e5f146eeea2be462b7", null ],
-    [ "video_grab_mutex", "video_8c.html#a24800960ee35afc79606ad761944d0ec", null ],
-    [ "video_thread", "video_8c.html#a118d58814da538eae8c02aeffb3ffccd", null ]
+    [ "_write", "video_8c.html#ab9f98c777d2b7d8cd7a6d092892533dd", null ],
+    [ "mt9f002_close", "video_8c.html#a2f85bfb7c0c3747ad8ff46a1b137b981", null ],
+    [ "mt9f002_init", "video_8c.html#a2b2852de9db53f2382110e8746cf5ec0", null ],
+    [ "mt9f002_open", "video_8c.html#a961753dbe047313818450e03865d5274", null ],
+    [ "mt9f002_read_reg16", "video_8c.html#a42e5fd72f06aa2cafde635a5b6afbc13", null ],
+    [ "mt9f002_read_reg8", "video_8c.html#a5b42cf23a10a8d01cb0a5d8326d006a5", null ],
+    [ "mt9f002_set_address", "video_8c.html#ab00db4cb268dbce2ee300d38fd9ea88e", null ],
+    [ "mt9f002_write_reg16", "video_8c.html#a38b15ee143138c81081910bac1d532bc", null ],
+    [ "mt9f002_write_reg8", "video_8c.html#a8741f72217883cfe42560270024319aa", null ],
+    [ "mt9v117_init", "video_8c.html#a8b248ece384a6f8687a68155f790771c", null ],
+    [ "write_reg", "video_8c.html#a50a08b7f57d5012c8faba80d9b809043", null ],
+    [ "bottom_camera", "video_8c.html#aebe228d13ad2e4e0c8528d945ad76a82", null ],
+    [ "front_camera", "video_8c.html#abe211b229633c3f39cbfb50c5765b4b4", null ],
+    [ "mt9f002_i2c_port", "video_8c.html#ad268dc06678dc4e0f6e9e8667598520c", null ]
 ];

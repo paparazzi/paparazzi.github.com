@@ -1,6 +1,10 @@
 var meteo__france__DAQ_8h =
 [
-    [ "MF_DAQ", "structMF__DAQ.html", "structMF__DAQ" ],
+    [ "MF_DAQ", "meteo__france__DAQ_8h.html#structMF__DAQ", [
+      [ "nb", "meteo__france__DAQ_8h.html#ad9623c20c191a8917e4652db69a764ca", null ],
+      [ "power", "meteo__france__DAQ_8h.html#a24d73873e9a46e4d42776e1623b72c31", null ],
+      [ "values", "meteo__france__DAQ_8h.html#a625cdc6629844670f65771a33f49fb43", null ]
+    ] ],
     [ "meteo_france_DAQ_SetPower", "meteo__france__DAQ_8h.html#ab48ec8b93a0e3942488cf9e1ebd8f812", null ],
     [ "MF_DAQ_SIZE", "meteo__france__DAQ_8h.html#a5b714423089337cc0badeb175cd27caf", null ],
     [ "init_mf_daq", "meteo__france__DAQ_8h.html#abf2a8b9cc259a9b8a1d99b673ad183d2", null ],

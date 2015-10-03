@@ -1,7 +1,26 @@
 var ads1220_8h =
 [
-    [ "Ads1220Config", "structAds1220Config.html", "structAds1220Config" ],
-    [ "Ads1220", "structAds1220.html", "structAds1220" ],
+    [ "Ads1220Config", "ads1220_8h.html#structAds1220Config", [
+      [ "conv", "ads1220_8h.html#ae51999c833281c049bab9806cd3b0edd", null ],
+      [ "gain", "ads1220_8h.html#a8dd28597a736ef35478e8c4bfe7b6d34", null ],
+      [ "i1mux", "ads1220_8h.html#a6d576e92fe61e84c226f0ad236dcc659", null ],
+      [ "i2mux", "ads1220_8h.html#a7f9000fa865317c8ed755eaf76389e82", null ],
+      [ "idac", "ads1220_8h.html#a70ac969349208cbc802e3c1acc1c9f78", null ],
+      [ "mux", "ads1220_8h.html#afa91f7752a75e0a6dc853ea41cf9e5ae", null ],
+      [ "pga_bypass", "ads1220_8h.html#ac4955f18899938bc45a355b3c795a40a", null ],
+      [ "rate", "ads1220_8h.html#aa83f442c99323ee0a26404fce288a80d", null ],
+      [ "status", "ads1220_8h.html#aafb284aedee26e1bb7a0a0847bb41571", null ],
+      [ "vref", "ads1220_8h.html#a1b98dc0c6d81167adcd125e3790d2758", null ]
+    ] ],
+    [ "Ads1220", "ads1220_8h.html#structAds1220", [
+      [ "config", "ads1220_8h.html#ab35d1229e441d0a29c4bb23cb00a2b27", null ],
+      [ "data", "ads1220_8h.html#adfef9ebbfea128c55c6bd5ad3d611ce8", null ],
+      [ "data_available", "ads1220_8h.html#a40f017e1295dad773f3d27b047793533", null ],
+      [ "rx_buf", "ads1220_8h.html#aec65ad785678ca4d8ca36b98769ca7ab", null ],
+      [ "spi_p", "ads1220_8h.html#adf16be65c8df39137f687897abadc43e", null ],
+      [ "spi_trans", "ads1220_8h.html#a441eeecc9804cafd644af1a8cb0a1b9d", null ],
+      [ "tx_buf", "ads1220_8h.html#a5ab7c2a0164e5574eaedd17a5faecc4e", null ]
+    ] ],
     [ "ADS1220_BUFFER_LEN", "ads1220_8h.html#aff6c038e6e1ec5550f5fa1c92822cd2a", null ],
     [ "Ads1220ConfStatus", "ads1220_8h.html#a9875910a2ac8720b44bb6841303ef50d", [
       [ "ADS1220_UNINIT", "ads1220_8h.html#a9875910a2ac8720b44bb6841303ef50dab5330f5aa264ea792638b080f7545bcd", null ],

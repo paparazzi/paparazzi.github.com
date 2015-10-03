@@ -1,11 +1,24 @@
 var transport_8h =
 [
-    [ "transport_rx", "structtransport__rx.html", "structtransport__rx" ],
-    [ "transport_tx", "structtransport__tx.html", "structtransport__tx" ],
-    [ "__TransportLink", "transport_8h.html#a1ce2e884751dd3958f07565c32f3a647", null ],
-    [ "_TransportLink", "transport_8h.html#acf8c4da45d6de791f1cf9d2630d60121", null ],
+    [ "transport_rx", "transport_8h.html#structtransport__rx", [
+      [ "error", "transport_8h.html#a19ee887556687be9c86f041a4ee39768", null ],
+      [ "msg_received", "transport_8h.html#afd1482607d43a29ab36b97514484a6b4", null ],
+      [ "ovrn", "transport_8h.html#ae9670251bd16b88304b63fd137699b9d", null ],
+      [ "payload", "transport_8h.html#aeb8e21f368c3f38638fba5728ae2c7b3", null ],
+      [ "payload_len", "transport_8h.html#a0745f89f8d1f7d484346428cce180adf", null ]
+    ] ],
+    [ "transport_tx", "transport_8h.html#structtransport__tx", [
+      [ "check_available_space", "transport_8h.html#abd4c71018e9c1078fe03f6b5e3d8f78d", null ],
+      [ "count_bytes", "transport_8h.html#a1e97f36a30d1fee74019c978159fc94c", null ],
+      [ "end_message", "transport_8h.html#a154e2430032ad8a2d2a2386502f4e848", null ],
+      [ "impl", "transport_8h.html#a0134eb24cb1d132311b1e858739e63d2", null ],
+      [ "overrun", "transport_8h.html#ab5e8f7b9b0b6aa0d92f1fa03918ff257", null ],
+      [ "put_bytes", "transport_8h.html#a0e6d376eedb1514bc2d913db3403ceb0", null ],
+      [ "put_named_byte", "transport_8h.html#afc0f68d2c9de3b764738649511d8ef20", null ],
+      [ "size_of", "transport_8h.html#a5baa8284fcb544cbcfca43f0ae873ebc", null ],
+      [ "start_message", "transport_8h.html#ac84fa260d495a8f7305e001d5283b3a0", null ]
+    ] ],
     [ "TRANSPORT_PAYLOAD_LEN", "transport_8h.html#a90f854efbacd1ba7e52f9922f17f7223", null ],
-    [ "TransportLink", "transport_8h.html#a3a9cdad7b415645264a8266165b16dfb", null ],
     [ "check_available_space_t", "transport_8h.html#a52036c05ee1635ebdbcaf9dfeb5e22f1", null ],
     [ "count_bytes_t", "transport_8h.html#af6f38cc7f6864e9eb0f04b13a4a15284", null ],
     [ "end_message_t", "transport_8h.html#a82099a151c72ca3a4590305f4671f743", null ],

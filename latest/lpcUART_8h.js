@@ -1,6 +1,33 @@
 var lpcUART_8h =
 [
-    [ "uartRegs_t", "structuartRegs__t.html", "structuartRegs__t" ],
+    [ "uartRegs_t", "lpcUART_8h.html#structuartRegs__t", [
+      [ "_pad3", "lpcUART_8h.html#abc6ef7b4b85751401c1b38cc3770bb8f", null ],
+      [ "_pad4", "lpcUART_8h.html#a0f39c86b62a007b887a8ce42d1d2e83b", null ],
+      [ "_pad5", "lpcUART_8h.html#a7c98af3547b6f24146c5157b6524cb12", null ],
+      [ "_pad6", "lpcUART_8h.html#a99280a27cf5da39ac759d867e9350dcf", null ],
+      [ "_pad7", "lpcUART_8h.html#a7fa276198f5dd7d2d0aa59d8491a90c8", null ],
+      [ "lcr", "lpcUART_8h.html#a36ade6e05d5dd5ad6e1ffa9edcb74430", null ],
+      [ "lsr", "lpcUART_8h.html#a33abc44096cfac874382f0f21bfff182", null ],
+      [ "mcr", "lpcUART_8h.html#ae1db69fae89a3abcbf07a2ce85201c18", null ],
+      [ "msr", "lpcUART_8h.html#a8ea4b832b162328127f28e538a6b1dd2", null ],
+      [ "scr", "lpcUART_8h.html#a9c02d5624f7c934b27177ec14700e901", null ]
+    ] ],
+    [ "uartRegs_t.__unnamed__", "lpcUART_8h.html#unionuartRegs__t_8____unnamed____", [
+      [ "_pad0", "lpcUART_8h.html#adf09dda1df1cbc135b42f5411634e41c", null ],
+      [ "dll", "lpcUART_8h.html#a06416233fe5ec4c5933122e4ab248af1", null ],
+      [ "rbr", "lpcUART_8h.html#ac25b2f79797c0db6d0f79524b6636d95", null ],
+      [ "thr", "lpcUART_8h.html#abb629dea7af8bce50ce94bffdc515405", null ]
+    ] ],
+    [ "uartRegs_t.__unnamed__", "lpcUART_8h.html#unionuartRegs__t_8____unnamed____", [
+      [ "_pad1", "lpcUART_8h.html#ab126ad5a489afa020d2de17aba9bfac5", null ],
+      [ "dlm", "lpcUART_8h.html#a5e9ea02b8c8f2a518cc3baf511c6a83b", null ],
+      [ "ier", "lpcUART_8h.html#aa078fb91566687fc624c0b92485f923a", null ]
+    ] ],
+    [ "uartRegs_t.__unnamed__", "lpcUART_8h.html#unionuartRegs__t_8____unnamed____", [
+      [ "_pad2", "lpcUART_8h.html#a774e85530677378a83f227f9f62e4583", null ],
+      [ "fcr", "lpcUART_8h.html#a02de45aaa805622b2f8ef9b317826b53", null ],
+      [ "iir", "lpcUART_8h.html#a0bad7c2fd94d05c5536bc4f60af52440", null ]
+    ] ],
     [ "UFCR_FIFO_ENABLE", "lpcUART_8h.html#afb78513339161a1be97c900f3bacd025", null ],
     [ "UFCR_FIFO_TRIG1", "lpcUART_8h.html#a4e5a644a8f0c48bee043adf174157906", null ],
     [ "UFCR_FIFO_TRIG14", "lpcUART_8h.html#a42a07241cb417751203f7189b1cfd961", null ],

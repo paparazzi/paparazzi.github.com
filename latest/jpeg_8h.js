@@ -5,8 +5,6 @@ var jpeg_8h =
     [ "FOUR_TWO_ZERO", "jpeg_8h.html#a524d2b3ff98b3561580a28252ea71bfa", null ],
     [ "FOUR_ZERO_ZERO", "jpeg_8h.html#aab11f0556a42e2f3b5a31b1e18b6904c", null ],
     [ "RGB", "jpeg_8h.html#af66629d6b00cab37ec92e3933efa4bcc", null ],
-    [ "create_svs_jpeg_header", "jpeg_8h.html#a09135197c947dcf03d1ccbf10ebf01bd", null ],
-    [ "encode_image", "jpeg_8h.html#a61d22b80daac17f19740e3939fc05fcd", null ],
-    [ "encode_image_rtp", "jpeg_8h.html#a61a76589b89e9f90f8fb17abafbfac76", null ],
-    [ "encode_image_std_qt", "jpeg_8h.html#a0c4eaa997cd196315673b0ed625e9c56", null ]
+    [ "jpeg_create_svs_header", "jpeg_8h.html#a64f2550b4c98bfb1f9b4b28bff5b9285", null ],
+    [ "jpeg_encode_image", "jpeg_8h.html#a80691d29cd889f8b549ac6850c95e1b6", null ]
 ];

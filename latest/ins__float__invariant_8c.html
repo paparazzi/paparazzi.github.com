@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('ins__float__invariant_8c.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -116,22 +116,15 @@ $(document).ready(function(){initNavTree('ins__float__invariant_8c.html','');});
 <div class="textblock"><code>#include &quot;<a class="el" href="ins__float__invariant_8h_source.html">subsystems/ins/ins_float_invariant.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="ahrs__int__utils_8h_source.html">subsystems/ahrs/ahrs_int_utils.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="ahrs__aligner_8h_source.html">subsystems/ahrs/ahrs_aligner.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="ahrs_8h_source.html">subsystems/ahrs.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="ins_8h_source.html">subsystems/ins.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="gps_8h_source.html">subsystems/gps.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="imu_8h_source.html">subsystems/imu.h</a>&quot;</code><br/>
 <code>#include &quot;generated/airframe.h&quot;</code><br/>
 <code>#include &quot;generated/flight_plan.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="pprz__algebra__float_8h_source.html">math/pprz_algebra_float.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="pprz__algebra__int_8h_source.html">math/pprz_algebra_int.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="pprz__rk__float_8h_source.html">math/pprz_rk_float.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="pprz__isa_8h_source.html">math/pprz_isa.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="led_8h_source.html">led.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br/>
-<code>#include &quot;messages.h&quot;</code><br/>
-<code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for ins_float_invariant.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -139,7 +132,7 @@ $(document).ready(function(){initNavTree('ins__float__invariant_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__float__invariant_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2ins_2ins__float__invariant_8c" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2ins_2ins__float__invariant_8c" id="sw_2airborne_2subsystems_2ins_2ins__float__invariant_8c">
-<area shape="rect" id="node3" href="ins__float__invariant_8h.html" title="subsystems/ins/ins\l_float_invariant.h" alt="" coords="879,99,1020,143"/><area shape="rect" id="node5" href="ahrs_8h.html" title="Attitude and Heading Reference System interface. " alt="" coords="879,201,1020,229"/><area shape="rect" id="node9" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1229,481,1408,509"/><area shape="rect" id="node24" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="336,481,525,509"/><area shape="rect" id="node30" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="767,294,833,322"/><area shape="rect" id="node52" href="ins_8h.html" title="Integrated Navigation System interface. " alt="" coords="389,201,523,229"/><area shape="rect" id="node58" href="ahrs__int__utils_8h.html" title="Utility functions for fixed point AHRS implementations. " alt="" coords="1669,193,1832,237"/><area shape="rect" id="node70" href="ahrs__aligner_8h.html" title="Interface to align the AHRS via low&#45;passed measurements at startup. " alt="" coords="1477,379,1640,423"/><area shape="rect" id="node76" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="1535,294,1673,322"/><area shape="rect" id="node90" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="1213,294,1352,322"/><area shape="rect" id="node101" href="pprz__rk__float_8h.html" title="Runge&#45;Kutta library (float version) " alt="" coords="5,107,160,135"/><area shape="rect" id="node104" href="pprz__isa_8h.html" title="Paparazzi atmospheric pressure conversion utilities. " alt="" coords="987,481,1112,509"/><area shape="rect" id="node108" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="2761,107,2895,135"/><area shape="rect" id="node113" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="2920,107,2973,135"/><area shape="rect" id="node117" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="2933,387,3072,415"/><area shape="rect" id="node127" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="2292,286,2444,330"/><area shape="rect" id="node12" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="459,574,613,602"/><area shape="rect" id="node19" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1219,574,1368,602"/><area shape="rect" id="node34" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="712,379,861,423"/><area shape="rect" id="node40" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="539,379,688,423"/><area shape="rect" id="node45" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1037,379,1200,423"/><area shape="rect" id="node36" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="688,481,811,509"/><area shape="rect" id="node61" href="ahrs__magnetic__field__model_8h.html" title="subsystems/ahrs/ahrs\l_magnetic_field_model.h" alt="" coords="1867,379,2048,423"/><area shape="rect" id="node65" href="ahrs__float__utils_8h.html" title="Utility functions for floating point AHRS implementations. " alt="" coords="1697,286,1860,330"/><area shape="rect" id="node80" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1863,481,2033,509"/><area shape="rect" id="node82" href="inttypes_8h.html" title="inttypes.h" alt="" coords="2505,737,2591,765"/><area shape="rect" id="node121" href="link__device_8h.html" title="generic device header " alt="" coords="2604,659,2785,687"/><area shape="rect" id="node134" href="pprz__transport_8h.html" title="Extra datalink using PPRZ protocol. " alt="" coords="2276,473,2428,517"/><area shape="rect" id="node148" href="pprzlog__transport_8h.html" title="Protocol for on&#45;board data logger with timestamp. " alt="" coords="2405,379,2557,423"/><area shape="rect" id="node152" href="xbee_8h.html" title="Maxstream XBee serial input and output. " alt="" coords="2757,379,2909,423"/><area shape="rect" id="node159" href="w5100_8h.html" title="W5100 ethernet chip I/O. " alt="" coords="2581,379,2733,423"/><area shape="rect" id="node138" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="2296,566,2448,610"/><area shape="rect" id="node143" href="transport_8h.html" title="generic transport header " alt="" coords="2472,566,2624,610"/><area shape="rect" id="node157" href="xbee24_8h.html" title="Configuration for 2.4GHz &quot;series 1&quot; and 900MHz modules. " alt="" coords="2604,473,2756,517"/></map>
+<area shape="rect" id="node3" href="ins__float__invariant_8h.html" title="INS using invariant filter. " alt="" coords="867,99,1008,143"/><area shape="rect" id="node5" href="ins_8h.html" title="Integrated Navigation System interface. " alt="" coords="763,193,896,221"/><area shape="rect" id="node14" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1013,465,1152,493"/><area shape="rect" id="node29" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="240,465,429,493"/><area shape="rect" id="node35" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="571,278,637,306"/><area shape="rect" id="node52" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="1325,278,1464,306"/><area shape="rect" id="node68" href="ahrs__int__utils_8h.html" title="Utility functions for fixed point AHRS implementations. " alt="" coords="1628,270,1791,314"/><area shape="rect" id="node80" href="ahrs__aligner_8h.html" title="Interface to align the AHRS via low&#45;passed measurements at startup. " alt="" coords="1275,363,1437,407"/><area shape="rect" id="node91" href="pprz__rk__float_8h.html" title="Runge&#45;Kutta library (float version) " alt="" coords="5,193,160,221"/><area shape="rect" id="node94" href="pprz__isa_8h.html" title="Paparazzi atmospheric pressure conversion utilities. " alt="" coords="563,465,688,493"/><area shape="rect" id="node45" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="763,363,925,407"/><area shape="rect" id="node9" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="949,363,1099,407"/><area shape="rect" id="node11" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="763,465,885,493"/><area shape="rect" id="node17" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="381,558,536,586"/><area shape="rect" id="node24" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="869,558,1019,586"/><area shape="rect" id="node40" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="488,363,637,407"/><area shape="rect" id="node56" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1384,465,1555,493"/><area shape="rect" id="node58" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1416,558,1501,586"/><area shape="rect" id="node71" href="ahrs__magnetic__field__model_8h.html" title="subsystems/ahrs/ahrs\l_magnetic_field_model.h" alt="" coords="1824,457,2005,501"/><area shape="rect" id="node75" href="ahrs__float__utils_8h.html" title="Utility functions for floating point AHRS implementations. " alt="" coords="1715,363,1877,407"/></map>
 </div>
 </div>
 <p><a href="ins__float__invariant_8c_source.html">Go to the source code of this file.</a></p>
@@ -172,74 +165,59 @@ Macros</h2></td></tr>
 <tr class="separator:af9c75e0faec81d721ce6b0e72a78e74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bc818c738107d8e0ebe4ddf55e220d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#a8bc818c738107d8e0ebe4ddf55e220d5">INS_INV_SH</a>&#160;&#160;&#160;0.01</td></tr>
 <tr class="separator:a8bc818c738107d8e0ebe4ddf55e220d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a111da81ae5883147168bbb8366377b10"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a>&#160;&#160;&#160;ins_impl.mag_h</td></tr>
+<tr class="memitem:a111da81ae5883147168bbb8366377b10"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a>&#160;&#160;&#160;ins_float_inv.mag_h</td></tr>
 <tr class="separator:a111da81ae5883147168bbb8366377b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5064603923a47bce74a607ae1f7f8a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#af5064603923a47bce74a607ae1f7f8a9">INS_BARO_ID</a>&#160;&#160;&#160;<a class="el" href="abi__common_8h.html#a89a673124c7bb521be4e42d4bc0d29cb">ABI_BROADCAST</a></td></tr>
-<tr class="separator:af5064603923a47bce74a607ae1f7f8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7ae60851002ff485abaf4835191f9de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#ad7ae60851002ff485abaf4835191f9de">MAG_FROZEN_COUNT</a>&#160;&#160;&#160;30</td></tr>
 <tr class="separator:ad7ae60851002ff485abaf4835191f9de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3c7bfebd16999823476aada2b31b426e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#a3c7bfebd16999823476aada2b31b426e">baro_cb</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, const float *pressure)</td></tr>
-<tr class="separator:a3c7bfebd16999823476aada2b31b426e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0fc54bd359850973c5cd1307df31da0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#ac0fc54bd359850973c5cd1307df31da0">error_output</a> (struct <a class="el" href="structInsFloatInv.html">InsFloatInv</a> *_ins)</td></tr>
+<tr class="memitem:ac0fc54bd359850973c5cd1307df31da0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#ac0fc54bd359850973c5cd1307df31da0">error_output</a> (struct <a class="el" href="ins__float__invariant_8h.html#structInsFloatInv">InsFloatInv</a> *_ins)</td></tr>
 <tr class="memdesc:ac0fc54bd359850973c5cd1307df31da0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute correction vectors E = ( ŷ - y ) LE, ME, NE, OE : ( gain matrix * error )  <a href="#ac0fc54bd359850973c5cd1307df31da0">More...</a><br/></td></tr>
 <tr class="separator:ac0fc54bd359850973c5cd1307df31da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f6d3b43296e7262f60dbe9083ff92f1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#a8f6d3b43296e7262f60dbe9083ff92f1">invariant_model</a> (float *o, const float *x, const int n, const float *u, const int m)</td></tr>
 <tr class="memdesc:a8f6d3b43296e7262f60dbe9083ff92f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute dynamic mode.  <a href="#a8f6d3b43296e7262f60dbe9083ff92f1">More...</a><br/></td></tr>
 <tr class="separator:a8f6d3b43296e7262f60dbe9083ff92f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f54c7682a956a0c095b152276bf60cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#a1f54c7682a956a0c095b152276bf60cf">float_quat_vmul_right</a> (struct <a class="el" href="structFloatQuat.html">FloatQuat</a> *mright, const struct <a class="el" href="structFloatQuat.html">FloatQuat</a> *q, struct <a class="el" href="structFloatVect3.html">FloatVect3</a> *<a class="el" href="vi_8h.html#aabb8e0aff2e1b128575804c32ea1f4d0">vi</a>)</td></tr>
+<tr class="memitem:a1f54c7682a956a0c095b152276bf60cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#a1f54c7682a956a0c095b152276bf60cf">float_quat_vmul_right</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *mright, const struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *q, struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a> *<a class="el" href="vi_8h.html#aabb8e0aff2e1b128575804c32ea1f4d0">vi</a>)</td></tr>
 <tr class="memdesc:a1f54c7682a956a0c095b152276bf60cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Right multiplication by a quaternion.  <a href="#a1f54c7682a956a0c095b152276bf60cf">More...</a><br/></td></tr>
 <tr class="separator:a1f54c7682a956a0c095b152276bf60cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5be5e848a4326763bf2bf0ab5ec053b5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#a5be5e848a4326763bf2bf0ab5ec053b5">init_invariant_state</a> (void)</td></tr>
 <tr class="separator:a5be5e848a4326763bf2bf0ab5ec053b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60bd57b621acfc0f5da27e17395d8d23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#a60bd57b621acfc0f5da27e17395d8d23">ins_init</a> ()</td></tr>
-<tr class="memdesc:a60bd57b621acfc0f5da27e17395d8d23"><td class="mdescLeft">&#160;</td><td class="mdescRight">INS initialization.  <a href="#a60bd57b621acfc0f5da27e17395d8d23">More...</a><br/></td></tr>
-<tr class="separator:a60bd57b621acfc0f5da27e17395d8d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a337aa9b464c923af97d19ec0bfdb6f02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#a337aa9b464c923af97d19ec0bfdb6f02">ins_float_invariant_init</a> (void)</td></tr>
+<tr class="separator:a337aa9b464c923af97d19ec0bfdb6f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14cb66a86c67d8b9216a8c12f58c311b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#a14cb66a86c67d8b9216a8c12f58c311b">ins_reset_local_origin</a> (void)</td></tr>
 <tr class="memdesc:a14cb66a86c67d8b9216a8c12f58c311b"><td class="mdescLeft">&#160;</td><td class="mdescRight">INS local origin reset.  <a href="#a14cb66a86c67d8b9216a8c12f58c311b">More...</a><br/></td></tr>
 <tr class="separator:a14cb66a86c67d8b9216a8c12f58c311b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa389e650ab7aa5a7f4650afde6358d86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#aa389e650ab7aa5a7f4650afde6358d86">ins_reset_altitude_ref</a> (void)</td></tr>
 <tr class="memdesc:aa389e650ab7aa5a7f4650afde6358d86"><td class="mdescLeft">&#160;</td><td class="mdescRight">INS altitude reference reset.  <a href="#aa389e650ab7aa5a7f4650afde6358d86">More...</a><br/></td></tr>
 <tr class="separator:aa389e650ab7aa5a7f4650afde6358d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3721663c9df7c7af5613486a3566afb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#aa3721663c9df7c7af5613486a3566afb">ahrs_init</a> (void)</td></tr>
-<tr class="memdesc:aa3721663c9df7c7af5613486a3566afb"><td class="mdescLeft">&#160;</td><td class="mdescRight">AHRS initialization.  <a href="#aa3721663c9df7c7af5613486a3566afb">More...</a><br/></td></tr>
-<tr class="separator:aa3721663c9df7c7af5613486a3566afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81e17b09f47068c02c345da1523f589b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#a81e17b09f47068c02c345da1523f589b">ahrs_align</a> (void)</td></tr>
-<tr class="memdesc:a81e17b09f47068c02c345da1523f589b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aligns the AHRS.  <a href="#a81e17b09f47068c02c345da1523f589b">More...</a><br/></td></tr>
-<tr class="separator:a81e17b09f47068c02c345da1523f589b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e5064cff25b95f0631d5184d779ee43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#a4e5064cff25b95f0631d5184d779ee43">ahrs_propagate</a> (float dt)</td></tr>
-<tr class="memdesc:a4e5064cff25b95f0631d5184d779ee43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Propagation.  <a href="#a4e5064cff25b95f0631d5184d779ee43">More...</a><br/></td></tr>
-<tr class="separator:a4e5064cff25b95f0631d5184d779ee43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0156f6669675c216bbcb413ea1879960"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#a0156f6669675c216bbcb413ea1879960">ahrs_update_gps</a> (void)</td></tr>
-<tr class="memdesc:a0156f6669675c216bbcb413ea1879960"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update AHRS state with GPS measurements.  <a href="#a0156f6669675c216bbcb413ea1879960">More...</a><br/></td></tr>
-<tr class="separator:a0156f6669675c216bbcb413ea1879960"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a020997c7e92d014a6bacd92b5255b904"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#a020997c7e92d014a6bacd92b5255b904">ahrs_update_accel</a> (float dt)</td></tr>
-<tr class="memdesc:a020997c7e92d014a6bacd92b5255b904"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update AHRS state with accerleration measurements.  <a href="#a020997c7e92d014a6bacd92b5255b904">More...</a><br/></td></tr>
-<tr class="separator:a020997c7e92d014a6bacd92b5255b904"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0003a29e3c7626f93a370cff7536f202"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#a0003a29e3c7626f93a370cff7536f202">ahrs_update_mag</a> (float dt)</td></tr>
-<tr class="memdesc:a0003a29e3c7626f93a370cff7536f202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update AHRS state with magnetometer measurements.  <a href="#a0003a29e3c7626f93a370cff7536f202">More...</a><br/></td></tr>
-<tr class="separator:a0003a29e3c7626f93a370cff7536f202"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9a20811bed7797c9f978e144bd61fcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#ae9a20811bed7797c9f978e144bd61fcc">ins_float_invariant_align</a> (struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a> *lp_gyro, struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> *lp_accel, struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> *lp_mag)</td></tr>
+<tr class="separator:ae9a20811bed7797c9f978e144bd61fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31039d880986ce20c2e10c812684982e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#a31039d880986ce20c2e10c812684982e">ins_float_invariant_propagate</a> (struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a> *gyro, struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> *accel, float dt)</td></tr>
+<tr class="separator:a31039d880986ce20c2e10c812684982e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61e3f6c5195a9e0e99428c7cb5981382"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#a61e3f6c5195a9e0e99428c7cb5981382">ins_float_invariant_update_gps</a> (struct <a class="el" href="gps_8h.html#structGpsState">GpsState</a> *gps_s)</td></tr>
+<tr class="separator:a61e3f6c5195a9e0e99428c7cb5981382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab10a69f505b95e3513f45a05abf08edb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#ab10a69f505b95e3513f45a05abf08edb">ins_float_invariant_update_baro</a> (float pressure)</td></tr>
+<tr class="separator:ab10a69f505b95e3513f45a05abf08edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11c7cabfa754e3ac16259ef6603e646f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#a11c7cabfa754e3ac16259ef6603e646f">ins_float_invariant_update_mag</a> (struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> *mag)</td></tr>
+<tr class="separator:a11c7cabfa754e3ac16259ef6603e646f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad770f4835ea32cfbb8c9ae96100a05e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#ad770f4835ea32cfbb8c9ae96100a05e2">ins_float_inv_set_body_to_imu_quat</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *q_b2i)</td></tr>
+<tr class="separator:ad770f4835ea32cfbb8c9ae96100a05e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aaeb55ab1e09161c0cd317ae9fa26a7f0"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structInsFloatInv.html">InsFloatInv</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#aaeb55ab1e09161c0cd317ae9fa26a7f0">ins_impl</a></td></tr>
-<tr class="memdesc:aaeb55ab1e09161c0cd317ae9fa26a7f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">global INS state  <a href="#aaeb55ab1e09161c0cd317ae9fa26a7f0">More...</a><br/></td></tr>
-<tr class="separator:aaeb55ab1e09161c0cd317ae9fa26a7f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77f40b118a2e44fe45a8dd8250f72310"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structFloatVect3.html">FloatVect3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#a77f40b118a2e44fe45a8dd8250f72310">A</a> = { 0.f, 0.f, 9.81f }</td></tr>
+<tr class="memitem:aa1f2eff40eddfce7040b6bf5cb3f215c"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="ins__float__invariant_8h.html#structInsFloatInv">InsFloatInv</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#aa1f2eff40eddfce7040b6bf5cb3f215c">ins_float_inv</a></td></tr>
+<tr class="separator:aa1f2eff40eddfce7040b6bf5cb3f215c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77f40b118a2e44fe45a8dd8250f72310"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#a77f40b118a2e44fe45a8dd8250f72310">A</a> = { 0.f, 0.f, 9.81f }</td></tr>
 <tr class="separator:a77f40b118a2e44fe45a8dd8250f72310"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a553dc8d7c1cce9ee04904fe2104a4e4b"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#a553dc8d7c1cce9ee04904fe2104a4e4b">ins_baro_initialized</a></td></tr>
 <tr class="separator:a553dc8d7c1cce9ee04904fe2104a4e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e2e4e9787ce7895e880fe4eb5dc0702"><td class="memItemLeft" align="right" valign="top"><a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#a7e2e4e9787ce7895e880fe4eb5dc0702">baro_ev</a></td></tr>
-<tr class="separator:a7e2e4e9787ce7895e880fe4eb5dc0702"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9573ec91a6671a92072b719b5e780dec"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__float__invariant_8c.html#a9573ec91a6671a92072b719b5e780dec">ins_gps_fix_once</a></td></tr>
 <tr class="separator:a9573ec91a6671a92072b719b5e780dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Jean-Philippe Condomines <a href="#" onclick="location.href='mai'+'lto:'+'jp.'+'co'+'ndo'+'mi'+'nes'+'@g'+'mai'+'l.'+'com'; return false;">jp.co<span style="display: none;">.nosp@m.</span>ndom<span style="display: none;">.nosp@m.</span>ines@<span style="display: none;">.nosp@m.</span>gmai<span style="display: none;">.nosp@m.</span>l.com</a></dd></dl>
-<p>INS using invariant filter.</p>
-<p>Only for fixedwing currenctly </p>
+<p>INS using invariant filter. </p>
 
 <p>Definition in file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
@@ -248,30 +226,14 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define B&#160;&#160;&#160;ins_impl.mag_h</td>
+          <td class="memname">#define B&#160;&#160;&#160;ins_float_inv.mag_h</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00169">169</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00146">146</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00637">error_output()</a>, <a class="el" href="imu__quality__assessment_8c_source.html#l00046">imu_quality_assessment_periodic()</a>, and <a class="el" href="ins__float__invariant_8c_source.html#l00223">ins_init()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af5064603923a47bce74a607ae1f7f8a9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define INS_BARO_ID&#160;&#160;&#160;<a class="el" href="abi__common_8h.html#a89a673124c7bb521be4e42d4bc0d29cb">ABI_BROADCAST</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00178">178</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
-
-<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00223">ins_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00600">error_output()</a>, and <a class="el" href="ins__float__invariant_8c_source.html#l00216">ins_float_invariant_init()</a>.</p>
 
 </div>
 </div>
@@ -285,9 +247,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00114">114</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00091">91</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00223">ins_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00216">ins_float_invariant_init()</a>.</p>
 
 </div>
 </div>
@@ -301,9 +263,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00110">110</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00087">87</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00223">ins_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00216">ins_float_invariant_init()</a>.</p>
 
 </div>
 </div>
@@ -317,9 +279,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00126">126</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00103">103</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00223">ins_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00216">ins_float_invariant_init()</a>.</p>
 
 </div>
 </div>
@@ -333,9 +295,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00118">118</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00095">95</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00223">ins_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00216">ins_float_invariant_init()</a>.</p>
 
 </div>
 </div>
@@ -349,9 +311,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00122">122</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00099">99</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00223">ins_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00216">ins_float_invariant_init()</a>.</p>
 
 </div>
 </div>
@@ -365,9 +327,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00138">138</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00115">115</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00223">ins_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00216">ins_float_invariant_init()</a>.</p>
 
 </div>
 </div>
@@ -381,9 +343,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00130">130</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00107">107</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00223">ins_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00216">ins_float_invariant_init()</a>.</p>
 
 </div>
 </div>
@@ -397,9 +359,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00134">134</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00111">111</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00223">ins_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00216">ins_float_invariant_init()</a>.</p>
 
 </div>
 </div>
@@ -413,9 +375,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00146">146</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00123">123</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00223">ins_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00216">ins_float_invariant_init()</a>.</p>
 
 </div>
 </div>
@@ -429,9 +391,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00142">142</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00119">119</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00223">ins_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00216">ins_float_invariant_init()</a>.</p>
 
 </div>
 </div>
@@ -445,9 +407,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00154">154</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00131">131</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00223">ins_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00216">ins_float_invariant_init()</a>.</p>
 
 </div>
 </div>
@@ -461,9 +423,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00150">150</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00127">127</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00223">ins_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00216">ins_float_invariant_init()</a>.</p>
 
 </div>
 </div>
@@ -477,9 +439,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00158">158</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00135">135</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00223">ins_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00216">ins_float_invariant_init()</a>.</p>
 
 </div>
 </div>
@@ -493,284 +455,13 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00542">542</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00505">505</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00544">ahrs_update_mag()</a>.</p>
+<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00507">ins_float_invariant_update_mag()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a81e17b09f47068c02c345da1523f589b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ahrs_align </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname">)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Aligns the AHRS. </p>
-<p>Called after ahrs_aligner has run to set initial attitude and biases. Must set the ahrs status to AHRS_RUNNING. Needs to be implemented by each AHRS algorithm. </p>
-
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00334">334</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
-
-<p>References <a class="el" href="ahrs_8c_source.html#l00030">ahrs</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00035">ahrs_aligner</a>, <a class="el" href="ahrs__float__utils_8h_source.html#l00087">ahrs_float_get_quat_from_accel_mag()</a>, <a class="el" href="ahrs_8h_source.html#l00036">AHRS_RUNNING</a>, <a class="el" href="ins_8c_source.html#l00036">ins</a>, <a class="el" href="ins__alt__float_8c_source.html#l00052">ins_impl</a>, <a class="el" href="ins_8h_source.html#l00037">INS_RUNNING</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00041">AhrsAligner::lp_accel</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00040">AhrsAligner::lp_gyro</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00042">AhrsAligner::lp_mag</a>, <a class="el" href="pprz__algebra_8h_source.html#l00328">RATES_COPY</a>, <a class="el" href="pprz__algebra_8h_source.html#l00678">RATES_FLOAT_OF_BFP</a>, <a class="el" href="ahrs_8h_source.html#l00045">Ahrs::status</a>, and <a class="el" href="ins_8h_source.html#l00047">Ins::status</a>.</p>
-
-<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__float__invariant_8c_a81e17b09f47068c02c345da1523f589b_cgraph.png" border="0" usemap="#ins__float__invariant_8c_a81e17b09f47068c02c345da1523f589b_cgraph" alt=""/></div>
-<map name="ins__float__invariant_8c_a81e17b09f47068c02c345da1523f589b_cgraph" id="ins__float__invariant_8c_a81e17b09f47068c02c345da1523f589b_cgraph">
-<area shape="rect" id="node3" href="ahrs__float__utils_8h.html#a05d9b87a75bb619379bd53348023ef05" title="ahrs_float_get_quat\l_from_accel_mag" alt="" coords="141,122,291,166"/><area shape="rect" id="node5" href="ahrs__float__utils_8h.html#a3c9fb6ec7c288401635933cb22321e70" title="Compute a quaternion representing roll and pitch from an accelerometer measurement. " alt="" coords="353,5,503,49"/><area shape="rect" id="node7" href="pprz__algebra__float_8h.html#a010393da7c94f197d0161a0071862041" title="float_quat_normalize" alt="" coords="580,71,735,99"/><area shape="rect" id="node11" href="pprz__algebra__float_8c.html#a1046209eec005141af05e1098b559487" title="Composition (multiplication) of two quaternions with normalization. " alt="" coords="343,122,513,166"/><area shape="rect" id="node19" href="pprz__algebra__float_8c.html#a4f32e245bb37ef9fdf43872080f63fbc" title="float_rmat_of_quat" alt="" coords="357,189,499,217"/><area shape="rect" id="node21" href="pprz__algebra__float_8c.html#ac852ba0c3ec48acfd8abaefbf933d4b6" title="rotate 3D vector by transposed rotation matrix. " alt="" coords="339,239,517,267"/><area shape="rect" id="node9" href="pprz__algebra__float_8h.html#af58947a2590837aa85077d42d99fb112" title="float_quat_norm" alt="" coords="799,71,924,99"/><area shape="rect" id="node13" href="pprz__algebra__float_8c.html#af182e4cea0a80278a3b2856331095ff6" title="Composition (multiplication) of two quaternions. " alt="" coords="593,126,721,154"/><area shape="rect" id="node16" href="pprz__algebra__float_8h.html#a8c87c4af5df3d13c6eb0bd8b8e97721a" title="float_quat_wrap_shortest" alt="" coords="567,177,748,205"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="aa3721663c9df7c7af5613486a3566afb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ahrs_init </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname">)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>AHRS initialization. </p>
-<p>Called at startup. Needs to be implemented by each AHRS algorithm. </p>
-
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00329">329</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
-
-<p>References <a class="el" href="ahrs_8c_source.html#l00030">ahrs</a>, <a class="el" href="ahrs_8h_source.html#l00035">AHRS_UNINIT</a>, <a class="el" href="imu__chimu_8h_source.html#l00048">CHIMU_BROADCAST</a>, <a class="el" href="imu__chimu_8c_source.html#l00082">CHIMU_Checksum()</a>, <a class="el" href="imu__chimu_8c_source.html#l00108">CHIMU_Init()</a>, <a class="el" href="imu__chimu_8h_source.html#l00047">CHIMU_STX</a>, <a class="el" href="arch_2sim_2modules_2ins_2ins__arduimu_8c_source.html#l00015">ins_pitch_neutral</a>, <a class="el" href="ahrs__sim_8c_source.html#l00047">INS_PITCH_NEUTRAL_DEFAULT</a>, <a class="el" href="arch_2sim_2modules_2ins_2ins__arduimu_8c_source.html#l00014">ins_roll_neutral</a>, <a class="el" href="ahrs__sim_8c_source.html#l00044">INS_ROLL_NEUTRAL_DEFAULT</a>, <a class="el" href="ins__module_8h_source.html#l00085">InsSend</a>, <a class="el" href="ins__module_8h_source.html#l00083">InsSend1</a>, <a class="el" href="imu__chimu_8h_source.html#l00060">MSG09_ESTIMATOR</a>, <a class="el" href="imu__chimu_8h_source.html#l00067">MSG10_UARTSETTINGS</a>, <a class="el" href="ins__module_8h.html#a664a8d539ee7893c78e101c06152fc18">new_ins_attitude</a>, and <a class="el" href="ahrs_8h_source.html#l00045">Ahrs::status</a>.</p>
-
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__float__invariant_8c_aa3721663c9df7c7af5613486a3566afb_cgraph.png" border="0" usemap="#ins__float__invariant_8c_aa3721663c9df7c7af5613486a3566afb_cgraph" alt=""/></div>
-<map name="ins__float__invariant_8c_aa3721663c9df7c7af5613486a3566afb_cgraph" id="ins__float__invariant_8c_aa3721663c9df7c7af5613486a3566afb_cgraph">
-<area shape="rect" id="node3" href="imu__chimu_8c.html#a70dfa9eb8b0dff840f01869418c7de61" title="CHIMU_Checksum" alt="" coords="131,5,269,33"/><area shape="rect" id="node7" href="imu__chimu_8c.html#a8f9d1eeb69a4253543b66c06e258086e" title="CHIMU_Init" alt="" coords="155,55,245,83"/><area shape="rect" id="node5" href="imu__chimu_8c.html#a2c788af1398c314b3985546d7177df54" title="UpdateCRC" alt="" coords="319,5,412,33"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a4e5064cff25b95f0631d5184d779ee43"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ahrs_propagate </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>dt</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Propagation. </p>
-<p>Usually integrates the gyro rates to angles. Reads the global <a class="el" href="imu_8h.html#a77b76ed533bc56f50d714f8958dd26cc" title="global IMU state ">imu</a> data struct. Does nothing if not implemented by specific AHRS algorithm. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dt</td><td>time difference since last propagation in seconds </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00349">349</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
-
-<p>References <a class="el" href="imu_8h_source.html#l00043">Imu::accel</a>, <a class="el" href="pprz__algebra_8h_source.html#l00714">ACCELS_FLOAT_OF_BFP</a>, <a class="el" href="ahrs_8c_source.html#l00030">ahrs</a>, <a class="el" href="ahrs_8h_source.html#l00035">AHRS_UNINIT</a>, <a class="el" href="ins__alt__float_8h_source.html#l00045">InsAltFloat::baro_alt</a>, <a class="el" href="imu_8h_source.html#l00053">Imu::body_to_imu</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00637">error_output()</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00491">FLOAT_EULERS_OF_QUAT</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00360">float_quat_invert()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00454">FLOAT_QUAT_NORMALIZE</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00401">float_quat_vmult()</a>, <a class="el" href="imu_8h_source.html#l00042">Imu::gyro</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00047">imu</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00203">init_invariant_state()</a>, <a class="el" href="ins_8c_source.html#l00036">ins</a>, <a class="el" href="ins__alt__float_8c_source.html#l00052">ins_impl</a>, <a class="el" href="ins_8h_source.html#l00036">INS_UNINIT</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00121">int32_rmat_transp_ratemult()</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00101">int32_rmat_transp_vmult()</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00064">INV_COMMAND_DIM</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00035">INV_STATE_DIM</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00574">invariant_model()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00199">orientationGetRMat_i()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00080">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00082">FloatEulers::psi</a>, <a class="el" href="pprz__algebra_8h_source.html#l00363">RATES_DIFF</a>, <a class="el" href="pprz__algebra_8h_source.html#l00678">RATES_FLOAT_OF_BFP</a>, <a class="el" href="pprz__rk__float_8h_source.html#l00132">runge_kutta_4_float()</a>, <a class="el" href="state_8h_source.html#l00973">stateSetAccelNed_f()</a>, <a class="el" href="state_8h_source.html#l01152">stateSetBodyRates_f()</a>, <a class="el" href="state_8h_source.html#l01064">stateSetNedToBodyQuat_f()</a>, <a class="el" href="state_8h_source.html#l00581">stateSetPositionNed_f()</a>, <a class="el" href="state_8h_source.html#l00792">stateSetSpeedNed_f()</a>, <a class="el" href="ahrs_8h_source.html#l00045">Ahrs::status</a>, <a class="el" href="ins_8h_source.html#l00047">Ins::status</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00081">FloatEulers::theta</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="pprz__algebra_8h_source.html#l00138">VECT3_ADD</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00180">VECT3_SMUL</a>.</p>
-
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__float__invariant_8c_a4e5064cff25b95f0631d5184d779ee43_cgraph.png" border="0" usemap="#ins__float__invariant_8c_a4e5064cff25b95f0631d5184d779ee43_cgraph" alt=""/></div>
-<map name="ins__float__invariant_8c_a4e5064cff25b95f0631d5184d779ee43_cgraph" id="ins__float__invariant_8c_a4e5064cff25b95f0631d5184d779ee43_cgraph">
-<area shape="rect" id="node3" href="ins__float__invariant_8c.html#ac0fc54bd359850973c5cd1307df31da0" title="Compute correction vectors E = ( ŷ &#45; y ) LE, ME, NE, OE : ( gain matrix * error ) ..." alt="" coords="227,54,328,82"/><area shape="rect" id="node5" href="pprz__algebra__float_8h.html#acd71810b99ae462101d967468d0dcb25" title="float_quat_invert" alt="" coords="443,29,571,57"/><area shape="rect" id="node7" href="pprz__algebra__float_8c.html#a998feaa509fd80038aa552e61c7111e6" title="rotate 3D vector by quaternion. " alt="" coords="443,80,571,108"/><area shape="rect" id="node11" href="ins__float__invariant_8c.html#a5be5e848a4326763bf2bf0ab5ec053b5" title="init_invariant_state" alt="" coords="207,206,348,234"/><area shape="rect" id="node15" href="pprz__algebra__int_8c.html#a7d9bca983887baf028c121876125efcf" title="rotate anglular rates by transposed rotation matrix. " alt="" coords="176,257,379,285"/><area shape="rect" id="node17" href="pprz__algebra__int_8c.html#ac992f3c60c036759941405f6e754b55b" title="rotate 3D vector by transposed rotation matrix. " alt="" coords="187,308,368,336"/><area shape="rect" id="node19" href="ins__float__invariant_8c.html#a8f6d3b43296e7262f60dbe9083ff92f1" title="Compute dynamic mode. " alt="" coords="216,156,339,184"/><area shape="rect" id="node29" href="group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int). " alt="" coords="200,358,355,386"/><area shape="rect" id="node35" href="pprz__rk__float_8h.html#aec82ad92b63bfd3f0b29d2c2b9e926a5" title="Fourth&#45;Order Runge&#45;Kutta. " alt="" coords="203,409,352,437"/><area shape="rect" id="node43" href="group__state__acceleration.html#ga27b8f24af6ddce14389efaa5ec119967" title="Set acceleration in NED coordinates (float). " alt="" coords="204,460,351,488"/><area shape="rect" id="node45" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="200,510,355,538"/><area shape="rect" id="node47" href="group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float). " alt="" coords="183,561,372,589"/><area shape="rect" id="node51" href="group__state__position.html#ga9ff9643cd109a27a481d5883652d0f08" title="Set position from local NED coordinates (float). " alt="" coords="196,612,359,640"/><area shape="rect" id="node53" href="group__state__velocity.html#gae6549b15cd961047c89481ab2d87171f" title="Set ground speed in local NED coordinates (float). " alt="" coords="200,662,355,690"/><area shape="rect" id="node13" href="pprz__algebra__float_8h.html#a0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity " alt="" coords="437,282,576,310"/><area shape="rect" id="node21" href="pprz__algebra__float_8h.html#a132a789820c2d2610906e87120af9d18" title="a = 0 " alt="" coords="448,130,565,158"/><area shape="rect" id="node23" href="pprz__algebra__float_8c.html#af9863ba4e0718dd826af1bf1bf891aaa" title="Quaternion derivative from rotational velocity. " alt="" coords="429,181,584,209"/><area shape="rect" id="node25" href="ins__float__invariant_8c.html#a1f54c7682a956a0c095b152276bf60cf" title="Right multiplication by a quaternion. " alt="" coords="427,232,587,260"/><area shape="rect" id="node31" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title="orientationCalcRMat_i" alt="" coords="427,346,587,374"/><area shape="rect" id="node33" href="pprz__algebra__int_8c.html#a3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix. " alt="" coords="635,346,781,374"/><area shape="rect" id="node37" href="pprz__algebra__float_8h.html#a054c0afdf1c4c9316dffe8763363a1b8" title="a += b " alt="" coords="449,397,564,425"/><area shape="rect" id="node39" href="pprz__algebra__float_8h.html#a2a16655dc0d98a40ff17c6728fa1e4fb" title="o = a * s " alt="" coords="445,448,568,476"/><area shape="rect" id="node41" href="pprz__algebra__float_8h.html#a0c9a0d18305c582cf58a79771919c1e9" title="o = a + b " alt="" coords="448,498,565,526"/><area shape="rect" id="node49" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float). " alt="" coords="429,561,584,589"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a020997c7e92d014a6bacd92b5255b904"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ahrs_update_accel </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>dt</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Update AHRS state with accerleration measurements. </p>
-<p>Reads the global <a class="el" href="imu_8h.html#a77b76ed533bc56f50d714f8958dd26cc" title="global IMU state ">imu</a> data struct. Does nothing if not implemented by specific AHRS algorithm. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dt</td><td>time difference since last update in seconds </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00537">537</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0156f6669675c216bbcb413ea1879960"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ahrs_update_gps </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname">)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Update AHRS state with GPS measurements. </p>
-<p>Reads the global <a class="el" href="gps_8h.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state ">gps</a> data struct. Does nothing if not implemented by specific AHRS algorithm. </p>
-
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00473">473</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
-
-<p>References <a class="el" href="pprz__geodetic__float_8h_source.html#l00084">UtmCoor_f::alt</a>, <a class="el" href="imu__chimu_8c_source.html#l00082">CHIMU_Checksum()</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00083">UtmCoor_f::east</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00085">UtmCoor_i::east</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00151">ECEF_FLOAT_OF_BFP</a>, <a class="el" href="gps_8h_source.html#l00064">GpsState::ecef_pos</a>, <a class="el" href="gps_8h_source.html#l00068">GpsState::ecef_vel</a>, <a class="el" href="gps_8h_source.html#l00078">GpsState::fix</a>, <a class="el" href="imu__chimu_8h_source.html#l00112">FloatSwap</a>, <a class="el" href="gps_8c_source.html#l00041">gps</a>, <a class="el" href="gps_8h_source.html#l00043">GPS_FIX_3D</a>, <a class="el" href="gps_8h_source.html#l00067">GpsState::hmsl</a>, <a class="el" href="ins_8c_source.html#l00036">ins</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00186">ins_gps_fix_once</a>, <a class="el" href="ins__alt__float_8c_source.html#l00052">ins_impl</a>, <a class="el" href="ins_8h_source.html#l00037">INS_RUNNING</a>, <a class="el" href="ins__module_8h_source.html#l00085">InsSend</a>, <a class="el" href="state_8h_source.html#l00219">State::ned_initialized_f</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00093">ned_of_ecef_point_f()</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00106">ned_of_ecef_vect_f()</a>, <a class="el" href="state_8h_source.html#l00216">State::ned_origin_f</a>, <a class="el" href="gps_8h_source.html#l00069">GpsState::ned_vel</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00082">UtmCoor_f::north</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00084">UtmCoor_i::north</a>, <a class="el" href="gps_8h_source.html#l00071">GpsState::speed_3d</a>, <a class="el" href="state_8c_source.html#l00036">state</a>, <a class="el" href="ins_8h_source.html#l00047">Ins::status</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="state_8h_source.html#l00231">State::utm_initialized_f</a>, <a class="el" href="state_8h_source.html#l00228">State::utm_origin_f</a>, <a class="el" href="gps_8h_source.html#l00066">GpsState::utm_pos</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00066">NedCoor_i::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00067">NedCoor_i::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00068">NedCoor_i::z</a>.</p>
-
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__float__invariant_8c_a0156f6669675c216bbcb413ea1879960_cgraph.png" border="0" usemap="#ins__float__invariant_8c_a0156f6669675c216bbcb413ea1879960_cgraph" alt=""/></div>
-<map name="ins__float__invariant_8c_a0156f6669675c216bbcb413ea1879960_cgraph" id="ins__float__invariant_8c_a0156f6669675c216bbcb413ea1879960_cgraph">
-<area shape="rect" id="node3" href="imu__chimu_8c.html#a70dfa9eb8b0dff840f01869418c7de61" title="CHIMU_Checksum" alt="" coords="192,5,331,33"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="187,55,336,83"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#ac36c2e51de3064e3919a1f58f884342e" title="ned_of_ecef_vect_f" alt="" coords="189,106,333,134"/><area shape="rect" id="node5" href="imu__chimu_8c.html#a2c788af1398c314b3985546d7177df54" title="UpdateCRC" alt="" coords="412,5,505,33"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="384,55,533,83"/><area shape="rect" id="node13" href="pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title="enu_of_ecef_vect_f" alt="" coords="387,106,531,134"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a0003a29e3c7626f93a370cff7536f202"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ahrs_update_mag </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>dt</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Update AHRS state with magnetometer measurements. </p>
-<p>Reads the global <a class="el" href="imu_8h.html#a77b76ed533bc56f50d714f8958dd26cc" title="global IMU state ">imu</a> data struct. Does nothing if not implemented by specific AHRS algorithm. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dt</td><td>time difference since last update in seconds </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00544">544</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
-
-<p>References <a class="el" href="ins__float__invariant_8h_source.html#l00118">ahrs_impl</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00377">ahrs_update_mag_2d()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00346">ahrs_update_mag_full()</a>, <a class="el" href="imu_8h_source.html#l00053">Imu::body_to_imu</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00142">FLOAT_VECT3_ZERO</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00047">imu</a>, <a class="el" href="ins__alt__float_8c_source.html#l00052">ins_impl</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00101">int32_rmat_transp_vmult()</a>, <a class="el" href="imu_8h_source.html#l00044">Imu::mag</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00542">MAG_FROZEN_COUNT</a>, <a class="el" href="pprz__algebra_8h_source.html#l00726">MAGS_FLOAT_OF_BFP</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00199">orientationGetRMat_i()</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00085">Int32Vect3::x</a>.</p>
-
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__float__invariant_8c_a0003a29e3c7626f93a370cff7536f202_cgraph.png" border="0" usemap="#ins__float__invariant_8c_a0003a29e3c7626f93a370cff7536f202_cgraph" alt=""/></div>
-<map name="ins__float__invariant_8c_a0003a29e3c7626f93a370cff7536f202_cgraph" id="ins__float__invariant_8c_a0003a29e3c7626f93a370cff7536f202_cgraph">
-<area shape="rect" id="node3" href="ahrs__float__cmpl_8c.html#a6481bcb4ae8340e6341aed833c0579b4" title="ahrs_update_mag_2d" alt="" coords="204,55,364,83"/><area shape="rect" id="node15" href="ahrs__float__cmpl_8c.html#a166bdb655a0419b90bb66e4426bbbe1b" title="ahrs_update_mag_full" alt="" coords="203,106,365,134"/><area shape="rect" id="node18" href="pprz__algebra__int_8c.html#ac992f3c60c036759941405f6e754b55b" title="rotate 3D vector by transposed rotation matrix. " alt="" coords="193,157,375,185"/><area shape="rect" id="node20" href="group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int). " alt="" coords="207,207,361,235"/><area shape="rect" id="node5" href="pprz__algebra__float_8c.html#ac852ba0c3ec48acfd8abaefbf933d4b6" title="rotate 3D vector by transposed rotation matrix. " alt="" coords="424,5,603,33"/><area shape="rect" id="node7" href="pprz__algebra__float_8c.html#af2a4d7a67cf8cb6a8e382eef4a6f750e" title="rotate 3D vector by rotation matrix. " alt="" coords="448,106,579,134"/><area shape="rect" id="node9" href="pprz__algebra__float_8h.html#ab539484619b696418cab24d9a1f0eb2e" title="normalize 2D vector in place " alt="" coords="432,55,595,83"/><area shape="rect" id="node11" href="pprz__algebra__float_8h.html#aa582daa9c1806cc8bfe7638a54a198da" title="float_vect2_norm" alt="" coords="657,55,791,83"/><area shape="rect" id="node13" href="pprz__algebra__float_8h.html#a1625b9e38f01ac161fa80555647c77d8" title="float_vect2_norm2" alt="" coords="845,55,987,83"/><area shape="rect" id="node22" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title="orientationCalcRMat_i" alt="" coords="433,207,593,235"/><area shape="rect" id="node24" href="pprz__algebra__int_8c.html#a3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix. " alt="" coords="651,207,797,235"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a3c7bfebd16999823476aada2b31b426e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void baro_cb </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
-          <td class="paramname"><em>sender_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const float *&#160;</td>
-          <td class="paramname"><em>pressure</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00504">504</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
-
-<p>References <a class="el" href="ins__alt__float_8h_source.html#l00045">InsAltFloat::baro_alt</a>, <a class="el" href="ins__alt__float_8c_source.html#l00052">ins_impl</a>, <a class="el" href="pprz__isa_8h_source.html#l00091">pprz_isa_height_of_pressure()</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
-
-<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00223">ins_init()</a>.</p>
-
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__float__invariant_8c_a3c7bfebd16999823476aada2b31b426e_cgraph.png" border="0" usemap="#ins__float__invariant_8c_a3c7bfebd16999823476aada2b31b426e_cgraph" alt=""/></div>
-<map name="ins__float__invariant_8c_a3c7bfebd16999823476aada2b31b426e_cgraph" id="ins__float__invariant_8c_a3c7bfebd16999823476aada2b31b426e_cgraph">
-<area shape="rect" id="node3" href="pprz__isa_8h.html#a133268df708f6ee3b953bb291e8db342" title="Get relative altitude from pressure (using simplified equation). " alt="" coords="128,5,269,49"/></map>
-</div>
-</p>
-
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__float__invariant_8c_a3c7bfebd16999823476aada2b31b426e_icgraph.png" border="0" usemap="#ins__float__invariant_8c_a3c7bfebd16999823476aada2b31b426e_icgraph" alt=""/></div>
-<map name="ins__float__invariant_8c_a3c7bfebd16999823476aada2b31b426e_icgraph" id="ins__float__invariant_8c_a3c7bfebd16999823476aada2b31b426e_icgraph">
-<area shape="rect" id="node3" href="ins__float__invariant_8c.html#a60bd57b621acfc0f5da27e17395d8d23" title="INS initialization. " alt="" coords="128,5,195,33"/></map>
-</div>
-</p>
-
-</div>
-</div>
 <a class="anchor" id="ac0fc54bd359850973c5cd1307df31da0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -781,7 +472,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static void error_output </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structInsFloatInv.html">InsFloatInv</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="ins__float__invariant_8h.html#structInsFloatInv">InsFloatInv</a> *&#160;</td>
           <td class="paramname"><em>_ins</em>)</td><td></td>
           <td></td>
         </tr>
@@ -795,31 +486,31 @@ Variables</h2></td></tr>
 
 <p>Compute correction vectors E = ( ŷ - y ) LE, ME, NE, OE : ( gain matrix * error ) </p>
 
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00637">637</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00600">600</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
 
-<p>References <a class="el" href="ins__float__invariant_8h_source.html#l00070">inv_command::accel</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00045">inv_state::as</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00169">B</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00059">inv_measures::baro_alt</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00107">InsFloatInv::cmd</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00108">InsFloatInv::corr</a>, <a class="el" href="gps_8h_source.html#l00078">GpsState::fix</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00360">float_quat_invert()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00401">float_quat_vmult()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00142">FLOAT_VECT3_ZERO</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00109">InsFloatInv::gains</a>, <a class="el" href="gps_8c_source.html#l00041">gps</a>, <a class="el" href="gps_8h_source.html#l00043">GPS_FIX_3D</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00044">inv_state::hb</a>, <a class="el" href="ins_8c_source.html#l00036">ins</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00186">ins_gps_fix_once</a>, <a class="el" href="ins_8h_source.html#l00037">INS_RUNNING</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00088">inv_gains::lb</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00076">inv_correction_gains::LE</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00087">inv_gains::lv</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00058">inv_measures::mag</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00077">inv_correction_gains::ME</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00106">InsFloatInv::meas</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00091">inv_gains::mh</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00089">inv_gains::mv</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00090">inv_gains::mvz</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00078">inv_correction_gains::NE</a>, <a class="el" href="state_8h_source.html#l00219">State::ned_initialized_f</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00094">inv_gains::nh</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00092">inv_gains::nx</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00093">inv_gains::nxz</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00096">inv_gains::ob</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00079">inv_correction_gains::OE</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00095">inv_gains::ov</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00043">inv_state::pos</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00056">inv_measures::pos_gps</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00040">inv_state::quat</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00080">inv_correction_gains::RE</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00098">inv_gains::rh</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00097">inv_gains::rv</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00081">inv_correction_gains::SE</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00099">inv_gains::sh</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00042">inv_state::speed</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00057">inv_measures::speed_gps</a>, <a class="el" href="state_8c_source.html#l00036">state</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00105">InsFloatInv::state</a>, <a class="el" href="ins_8h_source.html#l00047">Ins::status</a>, <a class="el" href="state_8h_source.html#l00231">State::utm_initialized_f</a>, <a class="el" href="pprz__algebra_8h_source.html#l00138">VECT3_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00131">VECT3_COPY</a>, <a class="el" href="pprz__algebra_8h_source.html#l00235">VECT3_CROSS_PRODUCT</a>, <a class="el" href="pprz__algebra_8h_source.html#l00173">VECT3_DIFF</a>, <a class="el" href="pprz__algebra_8h_source.html#l00241">VECT3_DOT_PRODUCT</a>, <a class="el" href="pprz__algebra_8h_source.html#l00180">VECT3_SMUL</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00050">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00051">FloatVect3::y</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00052">FloatVect3::z</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
+<p>References <a class="el" href="ins__float__invariant_8h_source.html#l00072">inv_command::accel</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00044">inv_state::as</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00146">B</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00061">inv_measures::baro_alt</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00109">InsFloatInv::cmd</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00110">InsFloatInv::corr</a>, <a class="el" href="gps_8h_source.html#l00081">GpsState::fix</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00364">float_quat_invert()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00401">float_quat_vmult()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00146">FLOAT_VECT3_ZERO</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00111">InsFloatInv::gains</a>, <a class="el" href="gps_8c_source.html#l00041">gps</a>, <a class="el" href="gps_8h_source.html#l00043">GPS_FIX_3D</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00046">inv_state::hb</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00139">ins_float_inv</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00152">ins_gps_fix_once</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00119">InsFloatInv::is_aligned</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00090">inv_gains::lb</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00071">inv_correction_gains::LE</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00089">inv_gains::lv</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00055">inv_measures::mag</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00072">inv_correction_gains::ME</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00108">InsFloatInv::meas</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00093">inv_gains::mh</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00091">inv_gains::mv</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00092">inv_gains::mvz</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00073">inv_correction_gains::NE</a>, <a class="el" href="state_8h_source.html#l00219">State::ned_initialized_f</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00096">inv_gains::nh</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00094">inv_gains::nx</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00095">inv_gains::nxz</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00098">inv_gains::ob</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00074">inv_correction_gains::OE</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00097">inv_gains::ov</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00045">inv_state::pos</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00058">inv_measures::pos_gps</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00041">inv_state::quat</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00082">inv_correction_gains::RE</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00100">inv_gains::rh</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00099">inv_gains::rv</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00083">inv_correction_gains::SE</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00101">inv_gains::sh</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00044">inv_state::speed</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00059">inv_measures::speed_gps</a>, <a class="el" href="state_8c_source.html#l00036">state</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00107">InsFloatInv::state</a>, <a class="el" href="state_8h_source.html#l00231">State::utm_initialized_f</a>, <a class="el" href="pprz__algebra_8h_source.html#l00146">VECT3_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00139">VECT3_COPY</a>, <a class="el" href="pprz__algebra_8h_source.html#l00243">VECT3_CROSS_PRODUCT</a>, <a class="el" href="pprz__algebra_8h_source.html#l00181">VECT3_DIFF</a>, <a class="el" href="pprz__algebra_8h_source.html#l00249">VECT3_DOT_PRODUCT</a>, <a class="el" href="pprz__algebra_8h_source.html#l00188">VECT3_SMUL</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00054">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::y</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::z</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00349">ahrs_propagate()</a>.</p>
+<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00338">ins_float_invariant_propagate()</a>.</p>
 
-<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__float__invariant_8c_ac0fc54bd359850973c5cd1307df31da0_cgraph.png" border="0" usemap="#ins__float__invariant_8c_ac0fc54bd359850973c5cd1307df31da0_cgraph" alt=""/></div>
 <map name="ins__float__invariant_8c_ac0fc54bd359850973c5cd1307df31da0_cgraph" id="ins__float__invariant_8c_ac0fc54bd359850973c5cd1307df31da0_cgraph">
-<area shape="rect" id="node3" href="pprz__algebra__float_8h.html#acd71810b99ae462101d967468d0dcb25" title="float_quat_invert" alt="" coords="159,5,287,33"/><area shape="rect" id="node5" href="pprz__algebra__float_8c.html#a998feaa509fd80038aa552e61c7111e6" title="rotate 3D vector by quaternion. " alt="" coords="159,55,287,83"/></map>
+<area shape="rect" id="node3" href="group__math__algebra__float.html#gacd71810b99ae462101d967468d0dcb25" title="float_quat_invert" alt="" coords="159,5,287,33"/><area shape="rect" id="node5" href="group__math__algebra__float.html#gaba11f83e0b801a4b10a5f4b417eca171" title="rotate 3D vector by quaternion. " alt="" coords="159,55,287,83"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__float__invariant_8c_ac0fc54bd359850973c5cd1307df31da0_icgraph.png" border="0" usemap="#ins__float__invariant_8c_ac0fc54bd359850973c5cd1307df31da0_icgraph" alt=""/></div>
 <map name="ins__float__invariant_8c_ac0fc54bd359850973c5cd1307df31da0_icgraph" id="ins__float__invariant_8c_ac0fc54bd359850973c5cd1307df31da0_icgraph">
-<area shape="rect" id="node3" href="ins__float__invariant_8c.html#a4e5064cff25b95f0631d5184d779ee43" title="Propagation. " alt="" coords="157,5,280,33"/></map>
+<area shape="rect" id="node3" href="ins__float__invariant_8h.html#a31039d880986ce20c2e10c812684982e" title="ins_float_invariant\l_propagate" alt="" coords="159,5,295,49"/><area shape="rect" id="node5" href="ins__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ins_float_invariant_propagate on new gyro measurements. " alt="" coords="344,13,416,41"/><area shape="rect" id="node7" href="ins__float__invariant__wrapper_8h.html#acbc99bce5ffb373e21280ebaad9faa37" title="ins_float_invariant\l_register" alt="" coords="465,5,601,49"/></map>
 </div>
 </p>
 
@@ -832,19 +523,19 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void float_quat_vmul_right </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structFloatQuat.html">FloatQuat</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *&#160;</td>
           <td class="paramname"><em>mright</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const struct <a class="el" href="structFloatQuat.html">FloatQuat</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *&#160;</td>
           <td class="paramname"><em>q</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structFloatVect3.html">FloatVect3</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a> *&#160;</td>
           <td class="paramname"><em>vi</em>&#160;</td>
         </tr>
         <tr>
@@ -857,23 +548,6 @@ Variables</h2></td></tr>
 
 <p>Right multiplication by a quaternion. </p>
 <p>vi * q </p>
-
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00728">728</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
-
-<p>References <a class="el" href="pprz__algebra__float_8h_source.html#l00372">FLOAT_QUAT_EXTRACT</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00059">FloatQuat::qi</a>, <a class="el" href="pprz__algebra_8h_source.html#l00502">QUAT_ASSIGN</a>, <a class="el" href="pprz__algebra_8h_source.html#l00138">VECT3_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00235">VECT3_CROSS_PRODUCT</a>, <a class="el" href="pprz__algebra_8h_source.html#l00241">VECT3_DOT_PRODUCT</a>, <a class="el" href="pprz__algebra_8h_source.html#l00180">VECT3_SMUL</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00050">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00051">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00052">FloatVect3::z</a>.</p>
-
-<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00574">invariant_model()</a>.</p>
-
-<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__float__invariant_8c_a1f54c7682a956a0c095b152276bf60cf_icgraph.png" border="0" usemap="#ins__float__invariant_8c_a1f54c7682a956a0c095b152276bf60cf_icgraph" alt=""/></div>
-<map name="ins__float__invariant_8c_a1f54c7682a956a0c095b152276bf60cf_icgraph" id="ins__float__invariant_8c_a1f54c7682a956a0c095b152276bf60cf_icgraph">
-<area shape="rect" id="node3" href="ins__float__invariant_8c.html#a8f6d3b43296e7262f60dbe9083ff92f1" title="Compute dynamic mode. " alt="" coords="215,5,337,33"/><area shape="rect" id="node5" href="ins__float__invariant_8c.html#a4e5064cff25b95f0631d5184d779ee43" title="Propagation. " alt="" coords="387,5,509,33"/></map>
-</div>
-</p>
 
 </div>
 </div>
@@ -899,42 +573,146 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00203">203</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00169">169</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
 
-<p>References <a class="el" href="ins__alt__float_8h_source.html#l00045">InsAltFloat::baro_alt</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00334">float_quat_identity()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00172">FLOAT_RATES_ZERO</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00142">FLOAT_VECT3_ZERO</a>, and <a class="el" href="ins__alt__float_8c_source.html#l00052">ins_impl</a>.</p>
+<p>References <a class="el" href="ahrs__float__invariant_8h_source.html#l00044">inv_state::as</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00061">inv_measures::baro_alt</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00042">inv_state::bias</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00338">float_quat_identity()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00176">FLOAT_RATES_ZERO</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00146">FLOAT_VECT3_ZERO</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00046">inv_state::hb</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00149">ins_baro_initialized</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00139">ins_float_inv</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00152">ins_gps_fix_once</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00108">InsFloatInv::meas</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00045">inv_state::pos</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00058">inv_measures::pos_gps</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00041">inv_state::quat</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00044">inv_state::speed</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00059">inv_measures::speed_gps</a>, and <a class="el" href="ins__float__invariant_8h_source.html#l00107">InsFloatInv::state</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00349">ahrs_propagate()</a>, and <a class="el" href="ins__float__invariant_8c_source.html#l00223">ins_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00216">ins_float_invariant_init()</a>, and <a class="el" href="ins__float__invariant_8c_source.html#l00338">ins_float_invariant_propagate()</a>.</p>
 
-<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__float__invariant_8c_a5be5e848a4326763bf2bf0ab5ec053b5_cgraph.png" border="0" usemap="#ins__float__invariant_8c_a5be5e848a4326763bf2bf0ab5ec053b5_cgraph" alt=""/></div>
 <map name="ins__float__invariant_8c_a5be5e848a4326763bf2bf0ab5ec053b5_cgraph" id="ins__float__invariant_8c_a5be5e848a4326763bf2bf0ab5ec053b5_cgraph">
-<area shape="rect" id="node3" href="pprz__algebra__float_8h.html#a0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity " alt="" coords="199,5,337,33"/></map>
+<area shape="rect" id="node3" href="group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity " alt="" coords="199,5,337,33"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__float__invariant_8c_a5be5e848a4326763bf2bf0ab5ec053b5_icgraph.png" border="0" usemap="#ins__float__invariant_8c_a5be5e848a4326763bf2bf0ab5ec053b5_icgraph" alt=""/></div>
 <map name="ins__float__invariant_8c_a5be5e848a4326763bf2bf0ab5ec053b5_icgraph" id="ins__float__invariant_8c_a5be5e848a4326763bf2bf0ab5ec053b5_icgraph">
-<area shape="rect" id="node3" href="ins__float__invariant_8c.html#a4e5064cff25b95f0631d5184d779ee43" title="Propagation. " alt="" coords="197,5,320,33"/><area shape="rect" id="node5" href="ins__float__invariant_8c.html#a60bd57b621acfc0f5da27e17395d8d23" title="INS initialization. " alt="" coords="225,55,292,83"/></map>
+<area shape="rect" id="node3" href="ins__float__invariant_8h.html#a337aa9b464c923af97d19ec0bfdb6f02" title="ins_float_invariant_init" alt="" coords="384,5,547,33"/><area shape="rect" id="node7" href="ins__float__invariant_8h.html#a31039d880986ce20c2e10c812684982e" title="ins_float_invariant\l_propagate" alt="" coords="199,53,335,97"/><area shape="rect" id="node5" href="ins__float__invariant__wrapper_8h.html#acbc99bce5ffb373e21280ebaad9faa37" title="ins_float_invariant\l_register" alt="" coords="596,23,732,67"/><area shape="rect" id="node9" href="ins__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ins_float_invariant_propagate on new gyro measurements. " alt="" coords="429,57,501,85"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a60bd57b621acfc0f5da27e17395d8d23"></a>
+<a class="anchor" id="ad770f4835ea32cfbb8c9ae96100a05e2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ins_init </td>
+          <td class="memname">void ins_float_inv_set_body_to_imu_quat </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *&#160;</td>
+          <td class="paramname"><em>q_b2i</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00705">705</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+
+<p>References <a class="el" href="ins__float__invariant_8h_source.html#l00116">InsFloatInv::body_to_imu</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00139">ins_float_inv</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00119">InsFloatInv::is_aligned</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00165">orientationSetQuat_f()</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00041">inv_state::quat</a>, and <a class="el" href="ins__float__invariant_8h_source.html#l00107">InsFloatInv::state</a>.</p>
+
+<p>Referenced by <a class="el" href="ins__float__invariant__wrapper_8c_source.html#l00165">body_to_imu_cb()</a>.</p>
+
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ins__float__invariant_8c_ad770f4835ea32cfbb8c9ae96100a05e2_cgraph.png" border="0" usemap="#ins__float__invariant_8c_ad770f4835ea32cfbb8c9ae96100a05e2_cgraph" alt=""/></div>
+<map name="ins__float__invariant_8c_ad770f4835ea32cfbb8c9ae96100a05e2_cgraph" id="ins__float__invariant_8c_ad770f4835ea32cfbb8c9ae96100a05e2_cgraph">
+<area shape="rect" id="node3" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float). " alt="" coords="219,13,373,41"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ins__float__invariant_8c_ad770f4835ea32cfbb8c9ae96100a05e2_icgraph.png" border="0" usemap="#ins__float__invariant_8c_ad770f4835ea32cfbb8c9ae96100a05e2_icgraph" alt=""/></div>
+<map name="ins__float__invariant_8c_ad770f4835ea32cfbb8c9ae96100a05e2_icgraph" id="ins__float__invariant_8c_ad770f4835ea32cfbb8c9ae96100a05e2_icgraph">
+<area shape="rect" id="node3" href="ins__float__invariant__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736" title="body_to_imu_cb" alt="" coords="220,13,345,41"/><area shape="rect" id="node5" href="ins__float__invariant__wrapper_8h.html#acbc99bce5ffb373e21280ebaad9faa37" title="ins_float_invariant\l_register" alt="" coords="396,5,532,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae9a20811bed7797c9f978e144bd61fcc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ins_float_invariant_align </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a> *&#160;</td>
+          <td class="paramname"><em>lp_gyro</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> *&#160;</td>
+          <td class="paramname"><em>lp_accel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> *&#160;</td>
+          <td class="paramname"><em>lp_mag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00319">319</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+
+<p>References <a class="el" href="ahrs__float__utils_8h_source.html#l00089">ahrs_float_get_quat_from_accel_mag()</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00042">inv_state::bias</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00139">ins_float_inv</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00119">InsFloatInv::is_aligned</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00041">inv_state::quat</a>, <a class="el" href="pprz__algebra_8h_source.html#l00336">RATES_COPY</a>, <a class="el" href="pprz__algebra_8h_source.html#l00686">RATES_FLOAT_OF_BFP</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00107">InsFloatInv::state</a>, <a class="el" href="state_8h_source.html#l01064">stateSetNedToBodyQuat_f()</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+
+<p>Referenced by <a class="el" href="ins__float__invariant__wrapper_8c_source.html#l00155">aligner_cb()</a>.</p>
+
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ins__float__invariant_8c_ae9a20811bed7797c9f978e144bd61fcc_cgraph.png" border="0" usemap="#ins__float__invariant_8c_ae9a20811bed7797c9f978e144bd61fcc_cgraph" alt=""/></div>
+<map name="ins__float__invariant_8c_ae9a20811bed7797c9f978e144bd61fcc_cgraph" id="ins__float__invariant_8c_ae9a20811bed7797c9f978e144bd61fcc_cgraph">
+<area shape="rect" id="node3" href="ahrs__float__utils_8h.html#a05d9b87a75bb619379bd53348023ef05" title="ahrs_float_get_quat\l_from_accel_mag" alt="" coords="213,151,363,195"/><area shape="rect" id="node23" href="group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float). " alt="" coords="193,239,383,267"/><area shape="rect" id="node5" href="ahrs__float__utils_8h.html#a3c9fb6ec7c288401635933cb22321e70" title="Compute a quaternion representing roll and pitch from an accelerometer measurement. " alt="" coords="447,5,596,49"/><area shape="rect" id="node7" href="group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title="float_quat_normalize" alt="" coords="673,71,828,99"/><area shape="rect" id="node11" href="group__math__algebra__float.html#ga1046209eec005141af05e1098b559487" title="Composition (multiplication) of two quaternions with normalization. " alt="" coords="436,122,607,166"/><area shape="rect" id="node19" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title="float_rmat_of_quat" alt="" coords="451,189,592,217"/><area shape="rect" id="node21" href="group__math__algebra__float.html#gac852ba0c3ec48acfd8abaefbf933d4b6" title="rotate 3D vector by transposed rotation matrix. " alt="" coords="432,239,611,267"/><area shape="rect" id="node9" href="group__math__algebra__float.html#gaf58947a2590837aa85077d42d99fb112" title="float_quat_norm" alt="" coords="892,71,1017,99"/><area shape="rect" id="node13" href="group__math__algebra__float.html#gaf182e4cea0a80278a3b2856331095ff6" title="Composition (multiplication) of two quaternions. " alt="" coords="687,126,815,154"/><area shape="rect" id="node15" href="group__math__algebra__float.html#ga8c87c4af5df3d13c6eb0bd8b8e97721a" title="float_quat_wrap_shortest" alt="" coords="660,177,841,205"/><area shape="rect" id="node25" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float). " alt="" coords="444,290,599,318"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ins__float__invariant_8c_ae9a20811bed7797c9f978e144bd61fcc_icgraph.png" border="0" usemap="#ins__float__invariant_8c_ae9a20811bed7797c9f978e144bd61fcc_icgraph" alt=""/></div>
+<map name="ins__float__invariant_8c_ae9a20811bed7797c9f978e144bd61fcc_icgraph" id="ins__float__invariant_8c_ae9a20811bed7797c9f978e144bd61fcc_icgraph">
+<area shape="rect" id="node3" href="ins__float__invariant__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="193,13,279,41"/><area shape="rect" id="node5" href="ins__float__invariant__wrapper_8h.html#acbc99bce5ffb373e21280ebaad9faa37" title="ins_float_invariant\l_register" alt="" coords="329,5,465,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a337aa9b464c923af97d19ec0bfdb6f02"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ins_float_invariant_init </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname">)</td><td></td>
@@ -943,21 +721,223 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>INS initialization. </p>
-<p>Called at startup. Needs to be implemented by each INS algorithm. </p>
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00216">216</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
 
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00223">223</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00084">UtmCoor_f::alt</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00146">B</a>, <a class="el" href="telemetry_8h_source.html#l00067">DefaultPeriodic</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00083">UtmCoor_f::east</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00368">ecef_of_lla_i()</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00111">InsFloatInv::gains</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00169">init_invariant_state()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00139">ins_float_inv</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00091">INS_INV_LB</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00087">INS_INV_LV</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00103">INS_INV_MH</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00095">INS_INV_MV</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00099">INS_INV_MVZ</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00115">INS_INV_NH</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00107">INS_INV_NX</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00111">INS_INV_NXZ</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00123">INS_INV_OB</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00119">INS_INV_OV</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00131">INS_INV_RH</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00127">INS_INV_RV</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00135">INS_INV_SH</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00119">InsFloatInv::is_aligned</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00090">inv_gains::lb</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00060">ltp_def_from_ecef_i()</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00089">inv_gains::lv</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00093">inv_gains::mh</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00091">inv_gains::mv</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00092">inv_gains::mvz</a>, <a class="el" href="common__nav_8c_source.html#l00042">nav_utm_east0</a>, <a class="el" href="common__nav_8c_source.html#l00043">nav_utm_north0</a>, <a class="el" href="common__nav_8c_source.html#l00044">nav_utm_zone0</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00096">inv_gains::nh</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00082">UtmCoor_f::north</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00094">inv_gains::nx</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00095">inv_gains::nxz</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00098">inv_gains::ob</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00097">inv_gains::ov</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00113">InsFloatInv::reset</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00100">inv_gains::rh</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00099">inv_gains::rv</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00101">inv_gains::sh</a>, <a class="el" href="state_8h_source.html#l00440">stateSetLocalOrigin_i()</a>, <a class="el" href="state_8h_source.html#l00460">stateSetLocalUtmOrigin_f()</a>, <a class="el" href="state_8h_source.html#l00565">stateSetPositionUtm_f()</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00085">UtmCoor_f::zone</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00059">LlaCoor_i::alt</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00084">UtmCoor_f::alt</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00169">B</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00504">baro_cb()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00069">baro_ev</a>, <a class="el" href="telemetry__common_8h_source.html#l00040">DefaultPeriodic</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00083">UtmCoor_f::east</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00344">ecef_of_lla_i()</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00099">LtpDef_i::hmsl</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00203">init_invariant_state()</a>, <a class="el" href="ins_8c_source.html#l00036">ins</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00178">INS_BARO_ID</a>, <a class="el" href="ins__alt__float_8c_source.html#l00052">ins_impl</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00114">INS_INV_LB</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00110">INS_INV_LV</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00126">INS_INV_MH</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00118">INS_INV_MV</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00122">INS_INV_MVZ</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00138">INS_INV_NH</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00130">INS_INV_NX</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00134">INS_INV_NXZ</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00146">INS_INV_OB</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00142">INS_INV_OV</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00154">INS_INV_RH</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00150">INS_INV_RV</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00158">INS_INV_SH</a>, <a class="el" href="ins_8h_source.html#l00036">INS_UNINIT</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00057">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00058">LlaCoor_i::lon</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00060">ltp_def_from_ecef_i()</a>, <a class="el" href="common__nav_8c_source.html#l00042">nav_utm_east0</a>, <a class="el" href="common__nav_8c_source.html#l00043">nav_utm_north0</a>, <a class="el" href="common__nav_8c_source.html#l00044">nav_utm_zone0</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00082">UtmCoor_f::north</a>, <a class="el" href="telemetry_8c_source.html#l00038">register_periodic_telemetry()</a>, <a class="el" href="state_8h_source.html#l00440">stateSetLocalOrigin_i()</a>, <a class="el" href="state_8h_source.html#l00460">stateSetLocalUtmOrigin_f()</a>, <a class="el" href="state_8h_source.html#l00565">stateSetPositionUtm_f()</a>, <a class="el" href="ins_8h_source.html#l00047">Ins::status</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00085">UtmCoor_f::zone</a>.</p>
+<p>Referenced by <a class="el" href="ins__float__invariant__wrapper_8c_source.html#l00184">ins_float_invariant_register()</a>.</p>
+
+<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ins__float__invariant_8c_a337aa9b464c923af97d19ec0bfdb6f02_cgraph.png" border="0" usemap="#ins__float__invariant_8c_a337aa9b464c923af97d19ec0bfdb6f02_cgraph" alt=""/></div>
+<map name="ins__float__invariant_8c_a337aa9b464c923af97d19ec0bfdb6f02_cgraph" id="ins__float__invariant_8c_a337aa9b464c923af97d19ec0bfdb6f02_cgraph">
+<area shape="rect" id="node3" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="265,55,364,83"/><area shape="rect" id="node9" href="ins__float__invariant_8c.html#a5be5e848a4326763bf2bf0ab5ec053b5" title="init_invariant_state" alt="" coords="244,106,385,134"/><area shape="rect" id="node13" href="group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f" title="ltp_def_from_ecef_i" alt="" coords="241,157,388,185"/><area shape="rect" id="node23" href="telemetry_8c.html#a4c92e515e0ce29dc4294304cb2749e76" title="Register a telemetry callback function. " alt="" coords="216,207,413,235"/><area shape="rect" id="node25" href="group__state__position.html#gacc086fcd500269371c8c6eabbf3d557e" title="Set the local (flat earth) coordinate frame origin (int). " alt="" coords="236,258,393,286"/><area shape="rect" id="node27" href="group__state__position.html#gae180e6252c12221500767c9a4a34b20d" title="Set the local (flat earth) coordinate frame origin from UTM (float). " alt="" coords="221,309,408,337"/><area shape="rect" id="node29" href="group__state__position.html#gac6c73e42fc6b5891cb23454ad9c68c92" title="Set position from UTM coordinates (float). " alt="" coords="232,359,397,387"/><area shape="rect" id="node5" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="496,5,595,33"/><area shape="rect" id="node7" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="493,55,597,83"/><area shape="rect" id="node11" href="group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity " alt="" coords="476,106,615,134"/><area shape="rect" id="node15" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="lla_of_ecef_i" alt="" coords="496,157,595,185"/><area shape="rect" id="node21" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9" title="ltp_of_ecef_rmat_from\l_lla_i" alt="" coords="463,207,628,251"/><area shape="rect" id="node17" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="680,131,779,159"/><area shape="rect" id="node19" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title="lla_of_ecef_d" alt="" coords="677,182,781,210"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ins__float__invariant_8c_a337aa9b464c923af97d19ec0bfdb6f02_icgraph.png" border="0" usemap="#ins__float__invariant_8c_a337aa9b464c923af97d19ec0bfdb6f02_icgraph" alt=""/></div>
+<map name="ins__float__invariant_8c_a337aa9b464c923af97d19ec0bfdb6f02_icgraph" id="ins__float__invariant_8c_a337aa9b464c923af97d19ec0bfdb6f02_icgraph">
+<area shape="rect" id="node3" href="ins__float__invariant__wrapper_8h.html#acbc99bce5ffb373e21280ebaad9faa37" title="ins_float_invariant\l_register" alt="" coords="217,5,353,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a31039d880986ce20c2e10c812684982e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ins_float_invariant_propagate </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a> *&#160;</td>
+          <td class="paramname"><em>gyro</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> *&#160;</td>
+          <td class="paramname"><em>accel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>dt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00338">338</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+
+<p>References <a class="el" href="ins__float__invariant_8h_source.html#l00072">inv_command::accel</a>, <a class="el" href="pprz__algebra_8h_source.html#l00722">ACCELS_FLOAT_OF_BFP</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00044">inv_state::as</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00061">inv_measures::baro_alt</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00042">inv_state::bias</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00116">InsFloatInv::body_to_imu</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00109">InsFloatInv::cmd</a>, <a class="el" href="downlink_8h_source.html#l00079">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00083">DefaultDevice</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00600">error_output()</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00364">float_quat_invert()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00458">FLOAT_QUAT_NORMALIZE</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00401">float_quat_vmult()</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00046">inv_state::hb</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00169">init_invariant_state()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00139">ins_float_inv</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00121">int32_rmat_transp_ratemult()</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00101">int32_rmat_transp_vmult()</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00060">INV_COMMAND_DIM</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00036">INV_STATE_DIM</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00537">invariant_model()</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00119">InsFloatInv::is_aligned</a>, <a class="el" href="meteo__france__DAQ_8c_source.html#l00047">log_started</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00055">inv_measures::mag</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00108">InsFloatInv::meas</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00199">orientationGetRMat_i()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00093">FloatRates::p</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00045">inv_state::pos</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00058">inv_measures::pos_gps</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00063">FloatQuat::qi</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00041">inv_state::quat</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00064">FloatQuat::qx</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00065">FloatQuat::qy</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00066">FloatQuat::qz</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::r</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00065">inv_command::rates</a>, <a class="el" href="pprz__algebra_8h_source.html#l00371">RATES_DIFF</a>, <a class="el" href="pprz__algebra_8h_source.html#l00686">RATES_FLOAT_OF_BFP</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00113">InsFloatInv::reset</a>, <a class="el" href="pprz__rk__float_8h_source.html#l00132">runge_kutta_4_float()</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00044">inv_state::speed</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00059">inv_measures::speed_gps</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00107">InsFloatInv::state</a>, <a class="el" href="state_8h_source.html#l00973">stateSetAccelNed_f()</a>, <a class="el" href="state_8h_source.html#l01152">stateSetBodyRates_f()</a>, <a class="el" href="state_8h_source.html#l01064">stateSetNedToBodyQuat_f()</a>, <a class="el" href="state_8h_source.html#l00581">stateSetPositionNed_f()</a>, <a class="el" href="state_8h_source.html#l00792">stateSetSpeedNed_f()</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="pprz__algebra_8h_source.html#l00146">VECT3_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00188">VECT3_SMUL</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00054">FloatVect3::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::y</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::z</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
+
+<p>Referenced by <a class="el" href="ins__float__invariant__wrapper_8c_source.html#l00116">gyro_cb()</a>.</p>
+
+<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ins__float__invariant_8c_a31039d880986ce20c2e10c812684982e_cgraph.png" border="0" usemap="#ins__float__invariant_8c_a31039d880986ce20c2e10c812684982e_cgraph" alt=""/></div>
+<map name="ins__float__invariant_8c_a31039d880986ce20c2e10c812684982e_cgraph" id="ins__float__invariant_8c_a31039d880986ce20c2e10c812684982e_cgraph">
+<area shape="rect" id="node3" href="ins__float__invariant_8c.html#ac0fc54bd359850973c5cd1307df31da0" title="Compute correction vectors E = ( ŷ &#45; y ) LE, ME, NE, OE : ( gain matrix * error ) ..." alt="" coords="243,54,344,82"/><area shape="rect" id="node5" href="group__math__algebra__float.html#gacd71810b99ae462101d967468d0dcb25" title="float_quat_invert" alt="" coords="459,28,587,56"/><area shape="rect" id="node7" href="group__math__algebra__float.html#gaba11f83e0b801a4b10a5f4b417eca171" title="rotate 3D vector by quaternion. " alt="" coords="459,79,587,107"/><area shape="rect" id="node11" href="ins__float__invariant_8c.html#a5be5e848a4326763bf2bf0ab5ec053b5" title="init_invariant_state" alt="" coords="223,206,364,234"/><area shape="rect" id="node15" href="group__math__algebra__int.html#ga7d9bca983887baf028c121876125efcf" title="rotate anglular rates by transposed rotation matrix. " alt="" coords="192,256,395,284"/><area shape="rect" id="node17" href="group__math__algebra__int.html#gac992f3c60c036759941405f6e754b55b" title="rotate 3D vector by transposed rotation matrix. " alt="" coords="203,307,384,335"/><area shape="rect" id="node19" href="ins__float__invariant_8c.html#a8f6d3b43296e7262f60dbe9083ff92f1" title="Compute dynamic mode. " alt="" coords="232,155,355,183"/><area shape="rect" id="node29" href="group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int). " alt="" coords="216,358,371,386"/><area shape="rect" id="node35" href="pprz__rk__float_8h.html#aec82ad92b63bfd3f0b29d2c2b9e926a5" title="Fourth&#45;Order Runge&#45;Kutta. " alt="" coords="219,408,368,436"/><area shape="rect" id="node43" href="group__state__acceleration.html#ga27b8f24af6ddce14389efaa5ec119967" title="Set acceleration in NED coordinates (float). " alt="" coords="220,459,367,487"/><area shape="rect" id="node45" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="216,510,371,538"/><area shape="rect" id="node47" href="group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float). " alt="" coords="199,560,388,588"/><area shape="rect" id="node51" href="group__state__position.html#ga9ff9643cd109a27a481d5883652d0f08" title="Set position from local NED coordinates (float). " alt="" coords="212,611,375,639"/><area shape="rect" id="node53" href="group__state__velocity.html#gae6549b15cd961047c89481ab2d87171f" title="Set ground speed in local NED coordinates (float). " alt="" coords="216,662,371,690"/><area shape="rect" id="node13" href="group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity " alt="" coords="453,282,592,310"/><area shape="rect" id="node21" href="group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0 " alt="" coords="464,130,581,158"/><area shape="rect" id="node23" href="group__math__algebra__float.html#gaf9863ba4e0718dd826af1bf1bf891aaa" title="Quaternion derivative from rotational velocity. " alt="" coords="445,180,600,208"/><area shape="rect" id="node25" href="ahrs__float__invariant_8c.html#a1f54c7682a956a0c095b152276bf60cf" title="Right multiplication by a quaternion. " alt="" coords="443,231,603,259"/><area shape="rect" id="node31" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title="orientationCalcRMat_i" alt="" coords="443,346,603,374"/><area shape="rect" id="node33" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix. " alt="" coords="651,346,797,374"/><area shape="rect" id="node37" href="group__math__algebra__float.html#ga054c0afdf1c4c9316dffe8763363a1b8" title="a += b " alt="" coords="465,396,580,424"/><area shape="rect" id="node39" href="group__math__algebra__float.html#ga2a16655dc0d98a40ff17c6728fa1e4fb" title="o = a * s " alt="" coords="461,447,584,475"/><area shape="rect" id="node41" href="group__math__algebra__float.html#ga0c9a0d18305c582cf58a79771919c1e9" title="o = a + b " alt="" coords="464,498,581,526"/><area shape="rect" id="node49" href="group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float). " alt="" coords="445,560,600,588"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ins__float__invariant_8c_a31039d880986ce20c2e10c812684982e_icgraph.png" border="0" usemap="#ins__float__invariant_8c_a31039d880986ce20c2e10c812684982e_icgraph" alt=""/></div>
+<map name="ins__float__invariant_8c_a31039d880986ce20c2e10c812684982e_icgraph" id="ins__float__invariant_8c_a31039d880986ce20c2e10c812684982e_icgraph">
+<area shape="rect" id="node3" href="ins__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ins_float_invariant_propagate on new gyro measurements. " alt="" coords="192,13,264,41"/><area shape="rect" id="node5" href="ins__float__invariant__wrapper_8h.html#acbc99bce5ffb373e21280ebaad9faa37" title="ins_float_invariant\l_register" alt="" coords="313,5,449,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab10a69f505b95e3513f45a05abf08edb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ins_float_invariant_update_baro </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>pressure</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00471">471</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+
+<p>References <a class="el" href="ins__float__invariant_8h_source.html#l00061">inv_measures::baro_alt</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00149">ins_baro_initialized</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00139">ins_float_inv</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00108">InsFloatInv::meas</a>, <a class="el" href="pprz__isa_8h_source.html#l00095">pprz_isa_height_of_pressure()</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+
+<p>Referenced by <a class="el" href="ins__float__invariant__wrapper_8c_source.html#l00106">baro_cb()</a>.</p>
 
 <p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__float__invariant_8c_a60bd57b621acfc0f5da27e17395d8d23_cgraph.png" border="0" usemap="#ins__float__invariant_8c_a60bd57b621acfc0f5da27e17395d8d23_cgraph" alt=""/></div>
-<map name="ins__float__invariant_8c_a60bd57b621acfc0f5da27e17395d8d23_cgraph" id="ins__float__invariant_8c_a60bd57b621acfc0f5da27e17395d8d23_cgraph">
-<area shape="rect" id="node3" href="ins__float__invariant_8c.html#a3c7bfebd16999823476aada2b31b426e" title="baro_cb" alt="" coords="183,17,255,45"/><area shape="rect" id="node7" href="pprz__geodetic__int_8c.html#a386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="169,71,268,99"/><area shape="rect" id="node11" href="ins__float__invariant_8c.html#a5be5e848a4326763bf2bf0ab5ec053b5" title="init_invariant_state" alt="" coords="148,122,289,150"/><area shape="rect" id="node15" href="pprz__geodetic__int_8c.html#a5afd098a83e572b854e157486ccb569f" title="ltp_def_from_ecef_i" alt="" coords="145,173,292,201"/><area shape="rect" id="node23" href="telemetry_8c.html#abb4aa9b3c0c8d93e1372de5da86de828" title="Register a telemetry callback function. " alt="" coords="120,223,317,251"/><area shape="rect" id="node25" href="group__state__position.html#gacc086fcd500269371c8c6eabbf3d557e" title="Set the local (flat earth) coordinate frame origin (int). " alt="" coords="140,274,297,302"/><area shape="rect" id="node27" href="group__state__position.html#gae180e6252c12221500767c9a4a34b20d" title="Set the local (flat earth) coordinate frame origin from UTM (float). " alt="" coords="125,325,312,353"/><area shape="rect" id="node29" href="group__state__position.html#gac6c73e42fc6b5891cb23454ad9c68c92" title="Set position from UTM coordinates (float). " alt="" coords="136,375,301,403"/><area shape="rect" id="node5" href="pprz__isa_8h.html#a133268df708f6ee3b953bb291e8db342" title="Get relative altitude from pressure (using simplified equation). " alt="" coords="379,5,520,49"/><area shape="rect" id="node9" href="pprz__geodetic__double_8c.html#a33dae600eb50aea456b6cdbeec53c849" title="ecef_of_lla_d" alt="" coords="397,71,501,99"/><area shape="rect" id="node13" href="pprz__algebra__float_8h.html#a0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity " alt="" coords="380,122,519,150"/><area shape="rect" id="node17" href="pprz__geodetic__int_8c.html#aea47a32071c2427f895fcb1df32c4e23" title="lla_of_ecef_i" alt="" coords="400,173,499,201"/><area shape="rect" id="node21" href="pprz__geodetic__int_8c.html#a6b7ff6661d7385053cc297340d6a5cc9" title="ltp_of_ecef_rmat_from\l_lla_i" alt="" coords="367,223,532,267"/><area shape="rect" id="node19" href="pprz__geodetic__double_8c.html#a03262ba97728d6e61bc645e69bd7c332" title="lla_of_ecef_d" alt="" coords="581,173,685,201"/></map>
+<div class="center"><img src="ins__float__invariant_8c_ab10a69f505b95e3513f45a05abf08edb_cgraph.png" border="0" usemap="#ins__float__invariant_8c_ab10a69f505b95e3513f45a05abf08edb_cgraph" alt=""/></div>
+<map name="ins__float__invariant_8c_ab10a69f505b95e3513f45a05abf08edb_cgraph" id="ins__float__invariant_8c_ab10a69f505b95e3513f45a05abf08edb_cgraph">
+<area shape="rect" id="node3" href="group__math__isa.html#ga133268df708f6ee3b953bb291e8db342" title="Get relative altitude from pressure (using simplified equation). " alt="" coords="192,5,333,49"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ins__float__invariant_8c_ab10a69f505b95e3513f45a05abf08edb_icgraph.png" border="0" usemap="#ins__float__invariant_8c_ab10a69f505b95e3513f45a05abf08edb_icgraph" alt=""/></div>
+<map name="ins__float__invariant_8c_ab10a69f505b95e3513f45a05abf08edb_icgraph" id="ins__float__invariant_8c_ab10a69f505b95e3513f45a05abf08edb_icgraph">
+<area shape="rect" id="node3" href="ins__float__invariant__wrapper_8c.html#a7fdc16072298b2db800864d08d72945a" title="baro_cb" alt="" coords="193,13,265,41"/><area shape="rect" id="node5" href="ins__float__invariant__wrapper_8h.html#acbc99bce5ffb373e21280ebaad9faa37" title="ins_float_invariant\l_register" alt="" coords="316,5,452,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a61e3f6c5195a9e0e99428c7cb5981382"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ins_float_invariant_update_gps </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="gps_8h.html#structGpsState">GpsState</a> *&#160;</td>
+          <td class="paramname"><em>gps_s</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00440">440</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+
+<p>References <a class="el" href="pprz__geodetic__float_8h_source.html#l00084">UtmCoor_f::alt</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00083">UtmCoor_f::east</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00088">UtmCoor_i::east</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00156">ECEF_FLOAT_OF_BFP</a>, <a class="el" href="gps_8h_source.html#l00067">GpsState::ecef_pos</a>, <a class="el" href="gps_8h_source.html#l00071">GpsState::ecef_vel</a>, <a class="el" href="gps_8h_source.html#l00081">GpsState::fix</a>, <a class="el" href="gps_8h_source.html#l00043">GPS_FIX_3D</a>, <a class="el" href="gps_8h_source.html#l00070">GpsState::hmsl</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00139">ins_float_inv</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00152">ins_gps_fix_once</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00119">InsFloatInv::is_aligned</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00108">InsFloatInv::meas</a>, <a class="el" href="state_8h_source.html#l00219">State::ned_initialized_f</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00093">ned_of_ecef_point_f()</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00106">ned_of_ecef_vect_f()</a>, <a class="el" href="state_8h_source.html#l00216">State::ned_origin_f</a>, <a class="el" href="gps_8h_source.html#l00072">GpsState::ned_vel</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00082">UtmCoor_f::north</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00087">UtmCoor_i::north</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00058">inv_measures::pos_gps</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00059">inv_measures::speed_gps</a>, <a class="el" href="state_8c_source.html#l00036">state</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="state_8h_source.html#l00231">State::utm_initialized_f</a>, <a class="el" href="state_8h_source.html#l00228">State::utm_origin_f</a>, <a class="el" href="gps_8h_source.html#l00069">GpsState::utm_pos</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00069">NedCoor_i::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00070">NedCoor_i::y</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
+
+<p>Referenced by <a class="el" href="ins__float__invariant__wrapper_8c_source.html#l00176">gps_cb()</a>.</p>
+
+<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ins__float__invariant_8c_a61e3f6c5195a9e0e99428c7cb5981382_cgraph.png" border="0" usemap="#ins__float__invariant_8c_a61e3f6c5195a9e0e99428c7cb5981382_cgraph" alt=""/></div>
+<map name="ins__float__invariant_8c_a61e3f6c5195a9e0e99428c7cb5981382_cgraph" id="ins__float__invariant_8c_a61e3f6c5195a9e0e99428c7cb5981382_cgraph">
+<area shape="rect" id="node3" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="192,5,341,33"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#ac36c2e51de3064e3919a1f58f884342e" title="ned_of_ecef_vect_f" alt="" coords="195,55,339,83"/><area shape="rect" id="node5" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="389,5,539,33"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title="enu_of_ecef_vect_f" alt="" coords="392,55,536,83"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ins__float__invariant_8c_a61e3f6c5195a9e0e99428c7cb5981382_icgraph.png" border="0" usemap="#ins__float__invariant_8c_a61e3f6c5195a9e0e99428c7cb5981382_icgraph" alt=""/></div>
+<map name="ins__float__invariant_8c_a61e3f6c5195a9e0e99428c7cb5981382_icgraph" id="ins__float__invariant_8c_a61e3f6c5195a9e0e99428c7cb5981382_icgraph">
+<area shape="rect" id="node3" href="ins__float__invariant__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="192,13,259,41"/><area shape="rect" id="node5" href="ins__float__invariant__wrapper_8h.html#acbc99bce5ffb373e21280ebaad9faa37" title="ins_float_invariant\l_register" alt="" coords="308,5,444,49"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a11c7cabfa754e3ac16259ef6603e646f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ins_float_invariant_update_mag </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> *&#160;</td>
+          <td class="paramname"><em>mag</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00507">507</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+
+<p>References <a class="el" href="ins__float__invariant_8h_source.html#l00116">InsFloatInv::body_to_imu</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00146">FLOAT_VECT3_ZERO</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00139">ins_float_inv</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00101">int32_rmat_transp_vmult()</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00055">inv_measures::mag</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00505">MAG_FROZEN_COUNT</a>, <a class="el" href="pprz__algebra_8h_source.html#l00734">MAGS_FLOAT_OF_BFP</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00108">InsFloatInv::meas</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00199">orientationGetRMat_i()</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>.</p>
+
+<p>Referenced by <a class="el" href="ins__float__invariant__wrapper_8c_source.html#l00146">mag_cb()</a>.</p>
+
+<p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ins__float__invariant_8c_a11c7cabfa754e3ac16259ef6603e646f_cgraph.png" border="0" usemap="#ins__float__invariant_8c_a11c7cabfa754e3ac16259ef6603e646f_cgraph" alt=""/></div>
+<map name="ins__float__invariant_8c_a11c7cabfa754e3ac16259ef6603e646f_cgraph" id="ins__float__invariant_8c_a11c7cabfa754e3ac16259ef6603e646f_cgraph">
+<area shape="rect" id="node3" href="group__math__algebra__int.html#gac992f3c60c036759941405f6e754b55b" title="rotate 3D vector by transposed rotation matrix. " alt="" coords="193,5,375,33"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int). " alt="" coords="207,55,361,83"/><area shape="rect" id="node7" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title="orientationCalcRMat_i" alt="" coords="424,55,584,83"/><area shape="rect" id="node9" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix. " alt="" coords="632,55,779,83"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ins__float__invariant_8c_a11c7cabfa754e3ac16259ef6603e646f_icgraph.png" border="0" usemap="#ins__float__invariant_8c_a11c7cabfa754e3ac16259ef6603e646f_icgraph" alt=""/></div>
+<map name="ins__float__invariant_8c_a11c7cabfa754e3ac16259ef6603e646f_icgraph" id="ins__float__invariant_8c_a11c7cabfa754e3ac16259ef6603e646f_icgraph">
+<area shape="rect" id="node3" href="ins__float__invariant__wrapper_8c.html#a49cc1e545848b85016af530049991c02" title="mag_cb" alt="" coords="193,13,265,41"/><area shape="rect" id="node5" href="ins__float__invariant__wrapper_8h.html#acbc99bce5ffb373e21280ebaad9faa37" title="ins_float_invariant\l_register" alt="" coords="316,5,452,49"/></map>
 </div>
 </p>
 
@@ -980,18 +960,18 @@ Variables</h2></td></tr>
 <p>INS altitude reference reset. </p>
 <p>Reset only vertical reference to the current altitude. Does nothing if not implemented by specific INS algorithm. </p>
 
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00310">310</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00300">300</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00059">LlaCoor_i::alt</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00084">UtmCoor_f::alt</a>, <a class="el" href="gps_8c_source.html#l00041">gps</a>, <a class="el" href="gps_8h_source.html#l00067">GpsState::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00099">LtpDef_i::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00057">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00097">LtpDef_i::lla</a>, <a class="el" href="gps_8h_source.html#l00065">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00058">LlaCoor_i::lon</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00072">ltp_def_from_lla_i()</a>, <a class="el" href="state_8h_source.html#l00162">State::ned_origin_i</a>, <a class="el" href="state_8c_source.html#l00036">state</a>, <a class="el" href="state_8h_source.html#l00440">stateSetLocalOrigin_i()</a>, <a class="el" href="state_8h_source.html#l00460">stateSetLocalUtmOrigin_f()</a>, and <a class="el" href="state_8h_source.html#l00228">State::utm_origin_f</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00084">UtmCoor_f::alt</a>, <a class="el" href="gps_8c_source.html#l00041">gps</a>, <a class="el" href="gps_8h_source.html#l00070">GpsState::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00100">LtpDef_i::lla</a>, <a class="el" href="gps_8h_source.html#l00068">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00072">ltp_def_from_lla_i()</a>, <a class="el" href="state_8h_source.html#l00162">State::ned_origin_i</a>, <a class="el" href="state_8c_source.html#l00036">state</a>, <a class="el" href="state_8h_source.html#l00440">stateSetLocalOrigin_i()</a>, <a class="el" href="state_8h_source.html#l00460">stateSetLocalUtmOrigin_f()</a>, and <a class="el" href="state_8h_source.html#l00228">State::utm_origin_f</a>.</p>
 
-<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__float__invariant_8c_aa389e650ab7aa5a7f4650afde6358d86_cgraph.png" border="0" usemap="#ins__float__invariant_8c_aa389e650ab7aa5a7f4650afde6358d86_cgraph" alt=""/></div>
 <map name="ins__float__invariant_8c_aa389e650ab7aa5a7f4650afde6358d86_cgraph" id="ins__float__invariant_8c_aa389e650ab7aa5a7f4650afde6358d86_cgraph">
-<area shape="rect" id="node3" href="pprz__geodetic__int_8c.html#af0b761a4e44c92481ac96b623c34ef70" title="ltp_def_from_lla_i" alt="" coords="240,34,373,62"/><area shape="rect" id="node11" href="group__state__position.html#gacc086fcd500269371c8c6eabbf3d557e" title="Set the local (flat earth) coordinate frame origin (int). " alt="" coords="228,85,385,113"/><area shape="rect" id="node13" href="group__state__position.html#gae180e6252c12221500767c9a4a34b20d" title="Set the local (flat earth) coordinate frame origin from UTM (float). " alt="" coords="213,135,400,163"/><area shape="rect" id="node5" href="pprz__geodetic__int_8c.html#a386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="483,5,581,33"/><area shape="rect" id="node9" href="pprz__geodetic__int_8c.html#a6b7ff6661d7385053cc297340d6a5cc9" title="ltp_of_ecef_rmat_from\l_lla_i" alt="" coords="449,55,615,99"/><area shape="rect" id="node7" href="pprz__geodetic__double_8c.html#a33dae600eb50aea456b6cdbeec53c849" title="ecef_of_lla_d" alt="" coords="664,5,768,33"/></map>
+<area shape="rect" id="node3" href="group__math__geodetic__int.html#gaf0b761a4e44c92481ac96b623c34ef70" title="ltp_def_from_lla_i" alt="" coords="240,59,373,87"/><area shape="rect" id="node13" href="group__state__position.html#gacc086fcd500269371c8c6eabbf3d557e" title="Set the local (flat earth) coordinate frame origin (int). " alt="" coords="228,110,385,138"/><area shape="rect" id="node15" href="group__state__position.html#gae180e6252c12221500767c9a4a34b20d" title="Set the local (flat earth) coordinate frame origin from UTM (float). " alt="" coords="213,161,400,189"/><area shape="rect" id="node5" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="483,30,581,58"/><area shape="rect" id="node11" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9" title="ltp_of_ecef_rmat_from\l_lla_i" alt="" coords="449,81,615,125"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="667,5,765,33"/><area shape="rect" id="node9" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="664,55,768,83"/></map>
 </div>
 </p>
 
@@ -1014,18 +994,18 @@ Variables</h2></td></tr>
 <p>INS local origin reset. </p>
 <p>Reset horizontal and vertical reference to the current position. Does nothing if not implemented by specific INS algorithm. </p>
 
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00283">283</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00273">273</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__float_8h_source.html#l00084">UtmCoor_f::alt</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00083">UtmCoor_f::east</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00085">UtmCoor_i::east</a>, <a class="el" href="gps_8h_source.html#l00064">GpsState::ecef_pos</a>, <a class="el" href="gps_8c_source.html#l00041">gps</a>, <a class="el" href="gps_8h_source.html#l00067">GpsState::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00099">LtpDef_i::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00168">LLA_FLOAT_OF_BFP</a>, <a class="el" href="gps_8h_source.html#l00065">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00058">LlaCoor_i::lon</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00060">ltp_def_from_ecef_i()</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00082">UtmCoor_f::north</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00084">UtmCoor_i::north</a>, <a class="el" href="state_8h_source.html#l00440">stateSetLocalOrigin_i()</a>, <a class="el" href="state_8h_source.html#l00460">stateSetLocalUtmOrigin_f()</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00304">utm_of_lla_f()</a>, <a class="el" href="gps_8h_source.html#l00066">GpsState::utm_pos</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00085">UtmCoor_f::zone</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00087">UtmCoor_i::zone</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__float_8h_source.html#l00084">UtmCoor_f::alt</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00083">UtmCoor_f::east</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00088">UtmCoor_i::east</a>, <a class="el" href="gps_8h_source.html#l00067">GpsState::ecef_pos</a>, <a class="el" href="gps_8c_source.html#l00041">gps</a>, <a class="el" href="gps_8h_source.html#l00070">GpsState::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00173">LLA_FLOAT_OF_BFP</a>, <a class="el" href="gps_8h_source.html#l00068">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00060">ltp_def_from_ecef_i()</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00082">UtmCoor_f::north</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00087">UtmCoor_i::north</a>, <a class="el" href="state_8h_source.html#l00440">stateSetLocalOrigin_i()</a>, <a class="el" href="state_8h_source.html#l00460">stateSetLocalUtmOrigin_f()</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00304">utm_of_lla_f()</a>, <a class="el" href="gps_8h_source.html#l00069">GpsState::utm_pos</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00085">UtmCoor_f::zone</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00090">UtmCoor_i::zone</a>.</p>
 
-<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__float__invariant_8c_a14cb66a86c67d8b9216a8c12f58c311b_cgraph.png" border="0" usemap="#ins__float__invariant_8c_a14cb66a86c67d8b9216a8c12f58c311b_cgraph" alt=""/></div>
 <map name="ins__float__invariant_8c_a14cb66a86c67d8b9216a8c12f58c311b_cgraph" id="ins__float__invariant_8c_a14cb66a86c67d8b9216a8c12f58c311b_cgraph">
-<area shape="rect" id="node3" href="pprz__geodetic__int_8c.html#a5afd098a83e572b854e157486ccb569f" title="ltp_def_from_ecef_i" alt="" coords="233,39,380,67"/><area shape="rect" id="node11" href="group__state__position.html#gacc086fcd500269371c8c6eabbf3d557e" title="Set the local (flat earth) coordinate frame origin (int). " alt="" coords="228,90,385,118"/><area shape="rect" id="node13" href="group__state__position.html#gae180e6252c12221500767c9a4a34b20d" title="Set the local (flat earth) coordinate frame origin from UTM (float). " alt="" coords="213,141,400,169"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="257,191,356,219"/><area shape="rect" id="node5" href="pprz__geodetic__int_8c.html#aea47a32071c2427f895fcb1df32c4e23" title="lla_of_ecef_i" alt="" coords="483,5,581,33"/><area shape="rect" id="node9" href="pprz__geodetic__int_8c.html#a6b7ff6661d7385053cc297340d6a5cc9" title="ltp_of_ecef_rmat_from\l_lla_i" alt="" coords="449,55,615,99"/><area shape="rect" id="node7" href="pprz__geodetic__double_8c.html#a03262ba97728d6e61bc645e69bd7c332" title="lla_of_ecef_d" alt="" coords="664,5,768,33"/><area shape="rect" id="node17" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="459,145,605,173"/><area shape="rect" id="node19" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="464,195,600,239"/></map>
+<area shape="rect" id="node3" href="group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f" title="ltp_def_from_ecef_i" alt="" coords="233,65,380,93"/><area shape="rect" id="node13" href="group__state__position.html#gacc086fcd500269371c8c6eabbf3d557e" title="Set the local (flat earth) coordinate frame origin (int). " alt="" coords="228,115,385,143"/><area shape="rect" id="node15" href="group__state__position.html#gae180e6252c12221500767c9a4a34b20d" title="Set the local (flat earth) coordinate frame origin from UTM (float). " alt="" coords="213,166,400,194"/><area shape="rect" id="node17" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="257,217,356,245"/><area shape="rect" id="node5" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="lla_of_ecef_i" alt="" coords="483,30,581,58"/><area shape="rect" id="node11" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9" title="ltp_of_ecef_rmat_from\l_lla_i" alt="" coords="449,81,615,125"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="667,5,765,33"/><area shape="rect" id="node9" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title="lla_of_ecef_d" alt="" coords="664,55,768,83"/><area shape="rect" id="node19" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="459,170,605,198"/><area shape="rect" id="node21" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="464,221,600,265"/></map>
 </div>
 </p>
 
@@ -1084,31 +1064,31 @@ Variables</h2></td></tr>
 <p>Compute dynamic mode. </p>
 <p>x_dot = evolution_model + (gain_matrix * error) </p>
 
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00574">574</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00537">537</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
 
-<p>References <a class="el" href="ins__float__invariant_8h_source.html#l00070">inv_command::accel</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00045">inv_state::as</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00041">inv_state::bias</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00430">float_quat_derivative()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00360">float_quat_invert()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00342">FLOAT_QUAT_NORM2</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00728">float_quat_vmul_right()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00401">float_quat_vmult()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00501">float_vect_zero()</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00044">inv_state::hb</a>, <a class="el" href="ins__alt__float_8c_source.html#l00052">ins_impl</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00043">inv_state::pos</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00040">inv_state::quat</a>, <a class="el" href="pprz__algebra_8h_source.html#l00541">QUAT_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00533">QUAT_SMUL</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00069">inv_command::rates</a>, <a class="el" href="pprz__algebra_8h_source.html#l00321">RATES_ASSIGN</a>, <a class="el" href="pprz__algebra_8h_source.html#l00363">RATES_DIFF</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00042">inv_state::speed</a>, <a class="el" href="pprz__algebra_8h_source.html#l00138">VECT3_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00180">VECT3_SMUL</a>, <a class="el" href="pprz__algebra_8h_source.html#l00152">VECT3_SUM</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00050">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00051">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00052">FloatVect3::z</a>.</p>
+<p>References <a class="el" href="ins__float__invariant_8h_source.html#l00072">inv_command::accel</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00044">inv_state::as</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00042">inv_state::bias</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00110">InsFloatInv::corr</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00430">float_quat_derivative()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00364">float_quat_invert()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00346">FLOAT_QUAT_NORM2</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00375">float_quat_vmul_right()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00401">float_quat_vmult()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00505">float_vect_zero()</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00046">inv_state::hb</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00139">ins_float_inv</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00071">inv_correction_gains::LE</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00072">inv_correction_gains::ME</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00073">inv_correction_gains::NE</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00074">inv_correction_gains::OE</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00045">inv_state::pos</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00041">inv_state::quat</a>, <a class="el" href="pprz__algebra_8h_source.html#l00549">QUAT_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00541">QUAT_SMUL</a>, <a class="el" href="ahrs__float__invariant_8h_source.html#l00065">inv_command::rates</a>, <a class="el" href="pprz__algebra_8h_source.html#l00329">RATES_ASSIGN</a>, <a class="el" href="pprz__algebra_8h_source.html#l00371">RATES_DIFF</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00082">inv_correction_gains::RE</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00083">inv_correction_gains::SE</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00044">inv_state::speed</a>, <a class="el" href="pprz__algebra_8h_source.html#l00146">VECT3_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00188">VECT3_SMUL</a>, <a class="el" href="pprz__algebra_8h_source.html#l00160">VECT3_SUM</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00054">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::z</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00349">ahrs_propagate()</a>.</p>
+<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00338">ins_float_invariant_propagate()</a>.</p>
 
-<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__float__invariant_8c_a8f6d3b43296e7262f60dbe9083ff92f1_cgraph.png" border="0" usemap="#ins__float__invariant_8c_a8f6d3b43296e7262f60dbe9083ff92f1_cgraph" alt=""/></div>
 <map name="ins__float__invariant_8c_a8f6d3b43296e7262f60dbe9083ff92f1_cgraph" id="ins__float__invariant_8c_a8f6d3b43296e7262f60dbe9083ff92f1_cgraph">
-<area shape="rect" id="node3" href="pprz__algebra__float_8c.html#af9863ba4e0718dd826af1bf1bf891aaa" title="Quaternion derivative from rotational velocity. " alt="" coords="181,5,336,33"/><area shape="rect" id="node5" href="pprz__algebra__float_8h.html#acd71810b99ae462101d967468d0dcb25" title="float_quat_invert" alt="" coords="195,55,323,83"/><area shape="rect" id="node7" href="ins__float__invariant_8c.html#a1f54c7682a956a0c095b152276bf60cf" title="Right multiplication by a quaternion. " alt="" coords="179,106,339,134"/><area shape="rect" id="node9" href="pprz__algebra__float_8c.html#a998feaa509fd80038aa552e61c7111e6" title="rotate 3D vector by quaternion. " alt="" coords="195,157,323,185"/><area shape="rect" id="node11" href="pprz__algebra__float_8h.html#a132a789820c2d2610906e87120af9d18" title="a = 0 " alt="" coords="200,207,317,235"/></map>
+<area shape="rect" id="node3" href="group__math__algebra__float.html#gaf9863ba4e0718dd826af1bf1bf891aaa" title="Quaternion derivative from rotational velocity. " alt="" coords="181,5,336,33"/><area shape="rect" id="node5" href="group__math__algebra__float.html#gacd71810b99ae462101d967468d0dcb25" title="float_quat_invert" alt="" coords="195,55,323,83"/><area shape="rect" id="node7" href="ahrs__float__invariant_8c.html#a1f54c7682a956a0c095b152276bf60cf" title="Right multiplication by a quaternion. " alt="" coords="179,106,339,134"/><area shape="rect" id="node9" href="group__math__algebra__float.html#gaba11f83e0b801a4b10a5f4b417eca171" title="rotate 3D vector by quaternion. " alt="" coords="195,157,323,185"/><area shape="rect" id="node11" href="group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0 " alt="" coords="200,207,317,235"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__float__invariant_8c_a8f6d3b43296e7262f60dbe9083ff92f1_icgraph.png" border="0" usemap="#ins__float__invariant_8c_a8f6d3b43296e7262f60dbe9083ff92f1_icgraph" alt=""/></div>
 <map name="ins__float__invariant_8c_a8f6d3b43296e7262f60dbe9083ff92f1_icgraph" id="ins__float__invariant_8c_a8f6d3b43296e7262f60dbe9083ff92f1_icgraph">
-<area shape="rect" id="node3" href="ins__float__invariant_8c.html#a4e5064cff25b95f0631d5184d779ee43" title="Propagation. " alt="" coords="179,5,301,33"/></map>
+<area shape="rect" id="node3" href="ins__float__invariant_8h.html#a31039d880986ce20c2e10c812684982e" title="ins_float_invariant\l_propagate" alt="" coords="180,5,316,49"/><area shape="rect" id="node5" href="ins__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ins_float_invariant_propagate on new gyro measurements. " alt="" coords="365,13,437,41"/><area shape="rect" id="node7" href="ins__float__invariant__wrapper_8h.html#acbc99bce5ffb373e21280ebaad9faa37" title="ins_float_invariant\l_register" alt="" coords="487,5,623,49"/></map>
 </div>
 </p>
 
@@ -1123,7 +1103,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structFloatVect3.html">FloatVect3</a> A = { 0.f, 0.f, 9.81f }</td>
+          <td class="memname">struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a> A = { 0.f, 0.f, 9.81f }</td>
         </tr>
       </table>
   </td>
@@ -1133,21 +1113,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00165">165</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7e2e4e9787ce7895e880fe4eb5dc0702"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a> baro_ev</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00182">182</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00142">142</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
 
 </div>
 </div>
@@ -1161,7 +1127,25 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00172">172</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00149">149</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+
+<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00169">init_invariant_state()</a>, and <a class="el" href="ins__float__invariant_8c_source.html#l00471">ins_float_invariant_update_baro()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa1f2eff40eddfce7040b6bf5cb3f215c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="ins__float__invariant_8h.html#structInsFloatInv">InsFloatInv</a> ins_float_inv</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00139">139</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+
+<p>Referenced by <a class="el" href="ins__float__invariant__wrapper_8c_source.html#l00155">aligner_cb()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00600">error_output()</a>, <a class="el" href="ins__float__invariant__wrapper_8c_source.html#l00171">geo_mag_cb()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00169">init_invariant_state()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00705">ins_float_inv_set_body_to_imu_quat()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00319">ins_float_invariant_align()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00216">ins_float_invariant_init()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00338">ins_float_invariant_propagate()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00471">ins_float_invariant_update_baro()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00440">ins_float_invariant_update_gps()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00507">ins_float_invariant_update_mag()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00537">invariant_model()</a>, and <a class="el" href="ins__float__invariant__wrapper_8c_source.html#l00146">mag_cb()</a>.</p>
 
 </div>
 </div>
@@ -1175,25 +1159,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00186">186</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00152">152</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00473">ahrs_update_gps()</a>, and <a class="el" href="ins__float__invariant_8c_source.html#l00637">error_output()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aaeb55ab1e09161c0cd317ae9fa26a7f0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structInsFloatInv.html">InsFloatInv</a> ins_impl</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>global INS state </p>
-
-<p>Definition at line <a class="el" href="ins__float__invariant_8c_source.html#l00162">162</a> of file <a class="el" href="ins__float__invariant_8c_source.html">ins_float_invariant.c</a>.</p>
+<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00600">error_output()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00169">init_invariant_state()</a>, and <a class="el" href="ins__float__invariant_8c_source.html#l00440">ins_float_invariant_update_gps()</a>.</p>
 
 </div>
 </div>
@@ -1203,7 +1171,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_800f0b451dc44a2b86d16d857cea778d.html">ins</a></li><li class="navelem"><a class="el" href="ins__float__invariant_8c.html">ins_float_invariant.c</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:15 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:36 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

@@ -1,7 +1,26 @@
 var hmc58xx_8h =
 [
-    [ "Hmc58xxConfig", "structHmc58xxConfig.html", "structHmc58xxConfig" ],
-    [ "Hmc58xx", "structHmc58xx.html", "structHmc58xx" ],
+    [ "Hmc58xxConfig", "hmc58xx_8h.html#structHmc58xxConfig", [
+      [ "gain", "hmc58xx_8h.html#a86907824abf6570ce4572e912d21cfe0", null ],
+      [ "meas", "hmc58xx_8h.html#a73ff5bfabdded1c15414c022555e0626", null ],
+      [ "mode", "hmc58xx_8h.html#a102f8c50c73b9daf9e0ba09213649a27", null ],
+      [ "rate", "hmc58xx_8h.html#ac94b92110a59b8e349bc0e6fdee2e6c9", null ]
+    ] ],
+    [ "Hmc58xx", "hmc58xx_8h.html#structHmc58xx", [
+      [ "adc_overflow_cnt", "hmc58xx_8h.html#ac995915bad6ff478145eaef5526351df", null ],
+      [ "config", "hmc58xx_8h.html#abfe2a2d471e118c32fc8d8e864b5d8df", null ],
+      [ "data", "hmc58xx_8h.html#aae57a469881f8b3b2b49a9dcc91d0c7f", null ],
+      [ "data_available", "hmc58xx_8h.html#a1f2d641549435f8db9d116fad9fc9414", null ],
+      [ "i2c_p", "hmc58xx_8h.html#a47da4ccd0683047bec2ee560a5101aef", null ],
+      [ "i2c_trans", "hmc58xx_8h.html#a4f74b18f71f610915a041aaec85ca2bf", null ],
+      [ "init_status", "hmc58xx_8h.html#ac24ac2a2080263f606216b05894f8cbf", null ],
+      [ "initialized", "hmc58xx_8h.html#a35ff46eb1a2411e93299fae4d93885bf", null ],
+      [ "type", "hmc58xx_8h.html#a43b4d88b5ab4095fd1913f97119823cf", null ]
+    ] ],
+    [ "Hmc58xx.data", "hmc58xx_8h.html#unionHmc58xx_8data", [
+      [ "value", "hmc58xx_8h.html#ab07053fcb6afcb4d09e8f337b615d383", null ],
+      [ "vect", "hmc58xx_8h.html#a4384543978c11a2d3da5c6cfeed94998", null ]
+    ] ],
     [ "Hmc58xxConfStatus", "hmc58xx_8h.html#a6f4110809807ba8611af6f7c61c9c21e", [
       [ "HMC_CONF_UNINIT", "hmc58xx_8h.html#a6f4110809807ba8611af6f7c61c9c21ea7b9eb0c1770a3c1f1285e2858cbc2d92", null ],
       [ "HMC_CONF_CRA", "hmc58xx_8h.html#a6f4110809807ba8611af6f7c61c9c21eae639bf4cc49833a271c8fbda7229991b", null ],

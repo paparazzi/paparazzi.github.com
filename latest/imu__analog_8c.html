@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('imu__analog_8c.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -114,6 +114,7 @@ $(document).ready(function(){initNavTree('imu__analog_8c.html','');});
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="imu__analog_8h_source.html">imu_analog.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="adc_8h_source.html">mcu_periph/adc.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for imu_analog.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -121,7 +122,7 @@ $(document).ready(function(){initNavTree('imu__analog_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__analog_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2imu_2imu__analog_8c" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2imu_2imu__analog_8c" id="sw_2airborne_2subsystems_2imu_2imu__analog_8c">
-<area shape="rect" id="node3" href="imu__analog_8h.html" title="Inertial Measurement Unit using onboard ADCs. " alt="" coords="355,99,461,127"/><area shape="rect" id="node36" href="adc_8h.html" title="arch independent ADC (Analog to Digital Converter) API " alt="" coords="503,99,639,127"/><area shape="rect" id="node5" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="323,177,461,205"/><area shape="rect" id="node7" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="117,347,296,375"/><area shape="rect" id="node23" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="371,347,560,375"/><area shape="rect" id="node29" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="252,254,415,298"/><area shape="rect" id="node11" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="371,425,525,453"/><area shape="rect" id="node18" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="5,425,155,453"/><area shape="rect" id="node38" href="inttypes_8h.html" title="inttypes.h" alt="" coords="680,177,765,205"/></map>
+<area shape="rect" id="node3" href="imu__analog_8h.html" title="Inertial Measurement Unit using onboard ADCs. " alt="" coords="359,99,465,127"/><area shape="rect" id="node36" href="adc_8h.html" title="arch independent ADC (Analog to Digital Converter) API " alt="" coords="528,99,664,127"/><area shape="rect" id="node42" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="765,99,899,127"/><area shape="rect" id="node5" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="323,177,461,205"/><area shape="rect" id="node7" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="117,347,296,375"/><area shape="rect" id="node23" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="371,347,560,375"/><area shape="rect" id="node29" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="252,254,415,298"/><area shape="rect" id="node11" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="371,425,525,453"/><area shape="rect" id="node18" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="5,425,155,453"/><area shape="rect" id="node38" href="inttypes_8h.html" title="inttypes.h" alt="" coords="485,177,571,205"/></map>
 </div>
 </div>
 <p><a href="imu__analog_8c_source.html">Go to the source code of this file.</a></p>
@@ -134,16 +135,14 @@ Functions</h2></td></tr>
 <tr class="memitem:a6623d4c90e7b1bfb73abc0da1195f29b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__analog_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b">imu_periodic</a> (void)</td></tr>
 <tr class="memdesc:a6623d4c90e7b1bfb73abc0da1195f29b"><td class="mdescLeft">&#160;</td><td class="mdescRight">optional.  <a href="#a6623d4c90e7b1bfb73abc0da1195f29b">More...</a><br/></td></tr>
 <tr class="separator:a6623d4c90e7b1bfb73abc0da1195f29b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34a2e1e2b450191b8ab1e849239810b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__analog_8c.html#a34a2e1e2b450191b8ab1e849239810b2">imu_scale_accel</a> (struct <a class="el" href="structImu.html">Imu</a> *_imu)</td></tr>
+<tr class="memitem:a34a2e1e2b450191b8ab1e849239810b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__analog_8c.html#a34a2e1e2b450191b8ab1e849239810b2">imu_scale_accel</a> (struct <a class="el" href="imu_8h.html#structImu">Imu</a> *_imu)</td></tr>
 <tr class="separator:a34a2e1e2b450191b8ab1e849239810b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a7013c319e78dcd6f470fb3d85fa3ba6b"><td class="memItemLeft" align="right" valign="top">volatile bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__analog_8c.html#a7013c319e78dcd6f470fb3d85fa3ba6b">analog_imu_available</a></td></tr>
-<tr class="separator:a7013c319e78dcd6f470fb3d85fa3ba6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89ed74a28874817abaa2548011a70594"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__analog_8c.html#a89ed74a28874817abaa2548011a70594">imu_overrun</a></td></tr>
 <tr class="separator:a89ed74a28874817abaa2548011a70594"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed29acc5c9ee58b0f6b4c9046e18a7c0"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structadc__buf.html">adc_buf</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__analog_8c.html#aed29acc5c9ee58b0f6b4c9046e18a7c0">analog_imu_adc_buf</a> [<a class="el" href="imu__analog_8h.html#aa951d9420e2582f372f30512a5c47940">NB_ANALOG_IMU_ADC</a>]</td></tr>
+<tr class="memitem:aed29acc5c9ee58b0f6b4c9046e18a7c0"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="adc_8h.html#structadc__buf">adc_buf</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__analog_8c.html#aed29acc5c9ee58b0f6b4c9046e18a7c0">analog_imu_adc_buf</a> [<a class="el" href="imu__analog_8h.html#aa951d9420e2582f372f30512a5c47940">NB_ANALOG_IMU_ADC</a>]</td></tr>
 <tr class="separator:aed29acc5c9ee58b0f6b4c9046e18a7c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -165,7 +164,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="imu__analog_8c_source.html#l00030">30</a> of file <a class="el" href="imu__analog_8c_source.html">imu_analog.c</a>.</p>
 
-<p>References <a class="el" href="lpc21_2mcu__periph_2adc__arch_8c_source.html#l00059">adc_buf_channel()</a>, <a class="el" href="imu__analog_8c_source.html#l00028">analog_imu_adc_buf</a>, <a class="el" href="imu__analog_8c_source.html#l00025">analog_imu_available</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, and <a class="el" href="imu__analog_8c_source.html#l00026">imu_overrun</a>.</p>
+<p>References <a class="el" href="linux_2mcu__periph_2adc__arch_8c_source.html#l00091">adc_buf_channel()</a>, <a class="el" href="imu__analog_8c_source.html#l00028">analog_imu_adc_buf</a>, and <a class="el" href="imu__analog_8c_source.html#l00026">imu_overrun</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -174,7 +173,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__analog_8c_ad32faae58e391642ec8048cb11011998_cgraph.png" border="0" usemap="#imu__analog_8c_ad32faae58e391642ec8048cb11011998_cgraph" alt=""/></div>
 <map name="imu__analog_8c_ad32faae58e391642ec8048cb11011998_cgraph" id="imu__analog_8c_ad32faae58e391642ec8048cb11011998_cgraph">
-<area shape="rect" id="node3" href="lpc21_2mcu__periph_2adc__arch_8c.html#a289883844d6749adab1cee5aabe41824" title="Registers a buffer to be used to store the specified converted channel Usage: " alt="" coords="161,5,289,33"/></map>
+<area shape="rect" id="node3" href="linux_2mcu__periph_2adc__arch_8c.html#a289883844d6749adab1cee5aabe41824" title="Registers a buffer to be used to store the specified converted channel Usage: " alt="" coords="161,5,289,33"/></map>
 </div>
 </p>
 
@@ -197,9 +196,20 @@ Variables</h2></td></tr>
 <p>optional. </p>
 <p>If not provided by implementation, empty function is used </p>
 
-<p>Definition at line <a class="el" href="imu__analog_8c_source.html#l00057">57</a> of file <a class="el" href="imu__analog_8c_source.html">imu_analog.c</a>.</p>
+<p>Definition at line <a class="el" href="imu__analog_8c_source.html#l00056">56</a> of file <a class="el" href="imu__analog_8c_source.html">imu_analog.c</a>.</p>
 
-<p>References <a class="el" href="imu_8h_source.html#l00051">Imu::accel_unscaled</a>, <a class="el" href="imu__analog_8c_source.html#l00028">analog_imu_adc_buf</a>, <a class="el" href="imu__analog_8c_source.html#l00025">analog_imu_available</a>, <a class="el" href="imu_8h_source.html#l00050">Imu::gyro_unscaled</a>, <a class="el" href="adc_8h_source.html#l00056">adc_buf::head</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00047">imu</a>, <a class="el" href="imu__analog_8c_source.html#l00026">imu_overrun</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00176">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00177">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00178">Int32Rates::r</a>, <a class="el" href="adc_8h_source.html#l00054">adc_buf::sum</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00085">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00086">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00087">Int32Vect3::z</a>.</p>
+<p>References <a class="el" href="imu_8h_source.html#l00043">Imu::accel</a>, <a class="el" href="imu_8h_source.html#l00051">Imu::accel_unscaled</a>, <a class="el" href="imu__analog_8c_source.html#l00028">analog_imu_adc_buf</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8h_source.html#l00039">get_sys_time_usec()</a>, <a class="el" href="imu_8h_source.html#l00042">Imu::gyro</a>, <a class="el" href="imu_8h_source.html#l00050">Imu::gyro_unscaled</a>, <a class="el" href="adc_8h_source.html#l00056">adc_buf::head</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00043">imu</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00170">IMU_ANALOG_ID</a>, <a class="el" href="imu__analog_8c_source.html#l00026">imu_overrun</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00350">imu_scale_accel()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00349">imu_scale_gyro()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00180">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00181">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00182">Int32Rates::r</a>, <a class="el" href="adc_8h_source.html#l00054">adc_buf::sum</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
+
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="imu__analog_8c_a6623d4c90e7b1bfb73abc0da1195f29b_cgraph.png" border="0" usemap="#imu__analog_8c_a6623d4c90e7b1bfb73abc0da1195f29b_cgraph" alt=""/></div>
+<map name="imu__analog_8c_a6623d4c90e7b1bfb73abc0da1195f29b_cgraph" id="imu__analog_8c_a6623d4c90e7b1bfb73abc0da1195f29b_cgraph">
+<area shape="rect" id="node3" href="linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="157,5,301,33"/><area shape="rect" id="node7" href="ahrs__gx3_8c.html#a34a2e1e2b450191b8ab1e849239810b2" title="imu_scale_accel" alt="" coords="167,55,292,83"/><area shape="rect" id="node9" href="ahrs__gx3_8c.html#a8d63b0a61c8ffe88dd15b40843b1ae1d" title="imu_scale_gyro" alt="" coords="169,106,289,134"/><area shape="rect" id="node5" href="sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="351,5,487,33"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -210,14 +220,14 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void imu_scale_accel </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structImu.html">Imu</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="imu_8h.html#structImu">Imu</a> *&#160;</td>
           <td class="paramname"><em>_imu</em>)</td><td></td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="imu__analog_8c_source.html#l00114">114</a> of file <a class="el" href="imu__analog_8c_source.html">imu_analog.c</a>.</p>
+<p>Definition at line <a class="el" href="imu__analog_8c_source.html#l00118">118</a> of file <a class="el" href="imu__analog_8c_source.html">imu_analog.c</a>.</p>
 
 </div>
 </div>
@@ -230,7 +240,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structadc__buf.html">adc_buf</a> analog_imu_adc_buf[<a class="el" href="imu__analog_8h.html#aa951d9420e2582f372f30512a5c47940">NB_ANALOG_IMU_ADC</a>]</td>
+          <td class="memname">struct <a class="el" href="adc_8h.html#structadc__buf">adc_buf</a> analog_imu_adc_buf[<a class="el" href="imu__analog_8h.html#aa951d9420e2582f372f30512a5c47940">NB_ANALOG_IMU_ADC</a>]</td>
         </tr>
       </table>
   </td>
@@ -242,23 +252,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="imu__analog_8c_source.html#l00028">28</a> of file <a class="el" href="imu__analog_8c_source.html">imu_analog.c</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__analog_8c_source.html#l00030">imu_impl_init()</a>, and <a class="el" href="imu__analog_8c_source.html#l00057">imu_periodic()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7013c319e78dcd6f470fb3d85fa3ba6b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile bool_t analog_imu_available</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="imu__analog_8c_source.html#l00025">25</a> of file <a class="el" href="imu__analog_8c_source.html">imu_analog.c</a>.</p>
-
-<p>Referenced by <a class="el" href="imu__analog_8c_source.html#l00030">imu_impl_init()</a>, <a class="el" href="imu__analog_8c_source.html#l00057">imu_periodic()</a>, and <a class="el" href="imu__analog_8h_source.html#l00075">ImuEvent()</a>.</p>
+<p>Referenced by <a class="el" href="imu__analog_8c_source.html#l00030">imu_impl_init()</a>, and <a class="el" href="imu__analog_8c_source.html#l00056">imu_periodic()</a>.</p>
 
 </div>
 </div>
@@ -274,7 +268,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="imu__analog_8c_source.html#l00026">26</a> of file <a class="el" href="imu__analog_8c_source.html">imu_analog.c</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__analog_8c_source.html#l00030">imu_impl_init()</a>, and <a class="el" href="imu__analog_8c_source.html#l00057">imu_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="imu__analog_8c_source.html#l00030">imu_impl_init()</a>, and <a class="el" href="imu__analog_8c_source.html#l00056">imu_periodic()</a>.</p>
 
 </div>
 </div>
@@ -284,7 +278,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8b2fa0708e2db44c1b91938af97bac44.html">imu</a></li><li class="navelem"><a class="el" href="imu__analog_8c.html">imu_analog.c</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:14 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:35 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

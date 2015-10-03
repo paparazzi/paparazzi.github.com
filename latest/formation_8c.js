@@ -21,7 +21,7 @@ var formation_8c =
     [ "form_a", "formation_8c.html#afc629dd59f363557c0c07350822f9e11", null ],
     [ "form_carrot", "formation_8c.html#ae5e808d1ef611d64f787c99dc226f89a", null ],
     [ "form_e", "formation_8c.html#a05bf835a5f8bf8a92febf3e315c6e3f6", null ],
-    [ "form_mode", "formation_8c.html#a5e08859d5f7c09e8d087590c1cc5d591", null ],
+    [ "form_mode", "formation_8c.html#a8e178fe2764678e0d6ec092050a8f561", null ],
     [ "form_n", "formation_8c.html#a4141d483e08034d7dded913d3860a67e", null ],
     [ "form_prox", "formation_8c.html#ac0c595691716cf211d3ce0d7a7f60f8a", null ],
     [ "form_speed", "formation_8c.html#a6402fc21e97e1b740b6973dc6a3e7000", null ],

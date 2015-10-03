@@ -1,7 +1,5 @@
 var dir_8c4cbb881db224ddaf0756e79ed706ce =
 [
-    [ "gps_ardrone2.c", "gps__ardrone2_8c.html", "gps__ardrone2_8c" ],
-    [ "gps_ardrone2.h", "gps__ardrone2_8h.html", "gps__ardrone2_8h" ],
     [ "gps_datalink.c", "gps__datalink_8c.html", "gps__datalink_8c" ],
     [ "gps_datalink.h", "gps__datalink_8h.html", "gps__datalink_8h" ],
     [ "gps_furuno.c", "gps__furuno_8c.html", "gps__furuno_8c" ],

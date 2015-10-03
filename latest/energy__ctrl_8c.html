@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('energy__ctrl_8c.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -121,8 +121,7 @@ $(document).ready(function(){initNavTree('energy__ctrl_8c.html','');});
 <code>#include &quot;<a class="el" href="nav_8h_source.html">firmwares/fixedwing/nav.h</a>&quot;</code><br/>
 <code>#include &quot;generated/airframe.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="fixedwing_2autopilot_8h_source.html">firmwares/fixedwing/autopilot.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="ahrs_8h_source.html">subsystems/ahrs.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="imu_8h_source.html">subsystems/imu.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for energy_ctrl.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -130,7 +129,7 @@ $(document).ready(function(){initNavTree('energy__ctrl_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="energy__ctrl_8c__incl.png" border="0" usemap="#sw_2airborne_2firmwares_2fixedwing_2guidance_2energy__ctrl_8c" alt=""/></div>
 <map name="sw_2airborne_2firmwares_2fixedwing_2guidance_2energy__ctrl_8c" id="sw_2airborne_2firmwares_2fixedwing_2guidance_2energy__ctrl_8c">
-<area shape="rect" id="node3" href="energy__ctrl_8h.html" title="Vertical control using total energy control for fixed wing vehicles. " alt="" coords="100,115,271,159"/><area shape="rect" id="node12" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="1117,310,1184,338"/><area shape="rect" id="node54" href="nav_8h.html" title="Fixedwing Navigation library. " alt="" coords="709,115,856,159"/><area shape="rect" id="node72" href="fixedwing_2autopilot_8h.html" title="Fixedwing autopilot modes. " alt="" coords="301,209,448,253"/><area shape="rect" id="node81" href="ahrs_8h.html" title="Attitude and Heading Reference System interface. " alt="" coords="1424,217,1565,245"/><area shape="rect" id="node87" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="1188,217,1327,245"/><area shape="rect" id="node5" href="guidance__common_8h.html" title="Vertical control for fixed wing vehicles. " alt="" coords="5,209,227,253"/><area shape="rect" id="node7" href="inttypes_8h.html" title="inttypes.h" alt="" coords="145,403,231,431"/><area shape="rect" id="node9" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="140,310,236,338"/><area shape="rect" id="node14" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1055,489,1233,517"/><area shape="rect" id="node30" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1457,489,1647,517"/><area shape="rect" id="node36" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="796,395,945,439"/><area shape="rect" id="node42" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="969,395,1119,439"/><area shape="rect" id="node47" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1295,395,1457,439"/><area shape="rect" id="node18" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="1359,566,1513,594"/><area shape="rect" id="node25" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="993,566,1143,594"/><area shape="rect" id="node38" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="847,489,969,517"/><area shape="rect" id="node59" href="nav__survey__rectangle_8h.html" title="subsystems/navigation\l/nav_survey_rectangle.h" alt="" coords="695,209,871,253"/><area shape="rect" id="node62" href="common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="644,302,812,346"/><area shape="rect" id="node65" href="common__nav_8h.html" title="subsystems/navigation\l/common_nav.h" alt="" coords="895,209,1063,253"/><area shape="rect" id="node78" href="settings_8h.html" title="Persistent settings interface. " alt="" coords="172,489,337,517"/></map>
+<area shape="rect" id="node3" href="energy__ctrl_8h.html" title="Vertical control using total energy control for fixed wing vehicles. " alt="" coords="380,115,551,159"/><area shape="rect" id="node12" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="1087,310,1153,338"/><area shape="rect" id="node54" href="nav_8h.html" title="Fixedwing Navigation library. " alt="" coords="641,115,788,159"/><area shape="rect" id="node72" href="fixedwing_2autopilot_8h.html" title="Fixedwing autopilot modes. " alt="" coords="33,209,180,253"/><area shape="rect" id="node81" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="1145,123,1279,151"/><area shape="rect" id="node5" href="guidance__common_8h.html" title="Vertical control for fixed wing vehicles. " alt="" coords="255,209,476,253"/><area shape="rect" id="node7" href="inttypes_8h.html" title="inttypes.h" alt="" coords="331,403,416,431"/><area shape="rect" id="node9" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="325,310,421,338"/><area shape="rect" id="node14" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1211,489,1389,517"/><area shape="rect" id="node30" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1413,489,1603,517"/><area shape="rect" id="node36" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="883,395,1032,439"/><area shape="rect" id="node42" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1056,395,1205,439"/><area shape="rect" id="node47" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1229,395,1392,439"/><area shape="rect" id="node18" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="1431,566,1585,594"/><area shape="rect" id="node25" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1207,566,1356,594"/><area shape="rect" id="node38" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="933,489,1056,517"/><area shape="rect" id="node59" href="nav__survey__rectangle_8h.html" title="subsystems/navigation\l/nav_survey_rectangle.h" alt="" coords="551,209,727,253"/><area shape="rect" id="node62" href="common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="731,302,899,346"/><area shape="rect" id="node65" href="common__nav_8h.html" title="subsystems/navigation\l/common_nav.h" alt="" coords="852,209,1020,253"/><area shape="rect" id="node78" href="settings_8h.html" title="Persistent settings interface. " alt="" coords="267,489,432,517"/></map>
 </div>
 </div>
 <p><a href="energy__ctrl_8c_source.html">Go to the source code of this file.</a></p>
@@ -149,6 +148,8 @@ Macros</h2></td></tr>
 <tr class="separator:ab4065ae5c48f475e71a58912ef369529"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa31cbefcbabdab982eeb6466837f6e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="energy__ctrl_8c.html#afa31cbefcbabdab982eeb6466837f6e1">V_CTL_MAX_ACCELERATION</a>&#160;&#160;&#160;0.5</td></tr>
 <tr class="separator:afa31cbefcbabdab982eeb6466837f6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa62b067d4b698006394798b93454c8bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="energy__ctrl_8c.html#aa62b067d4b698006394798b93454c8bf">V_CTL_ENERGY_IMU_ID</a>&#160;&#160;&#160;<a class="el" href="abi__common_8h.html#a89a673124c7bb521be4e42d4bc0d29cb">ABI_BROADCAST</a></td></tr>
+<tr class="separator:aa62b067d4b698006394798b93454c8bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abce76ecdbe377a7dee4611131b720a66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="energy__ctrl_8c.html#abce76ecdbe377a7dee4611131b720a66">V_CTL_THROTTLE_SLEW</a>&#160;&#160;&#160;1.</td></tr>
 <tr class="separator:abce76ecdbe377a7dee4611131b720a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -158,6 +159,10 @@ Functions</h2></td></tr>
 <tr class="separator:a9972e848457f4634dbdd1e363fef9315"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fca0891379c02432d10e73daef730d3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="energy__ctrl_8c.html#a1fca0891379c02432d10e73daef730d3">ac_char_update</a> (float throttle, float pitch, float climb, float accelerate)</td></tr>
 <tr class="separator:a1fca0891379c02432d10e73daef730d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacd6b1869f263f90a6f1fbe777a87793"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="energy__ctrl_8c.html#aacd6b1869f263f90a6f1fbe777a87793">accel_cb</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> stamp, struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> *accel)</td></tr>
+<tr class="separator:aacd6b1869f263f90a6f1fbe777a87793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5f6300c213088a4ea0598baafb5e736"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="energy__ctrl_8c.html#ab5f6300c213088a4ea0598baafb5e736">body_to_imu_cb</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *q_b2i_f)</td></tr>
+<tr class="separator:ab5f6300c213088a4ea0598baafb5e736"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac48c5fff2d5aca1dd1fc58622709d7eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="energy__ctrl_8c.html#ac48c5fff2d5aca1dd1fc58622709d7eb">v_ctl_init</a> (void)</td></tr>
 <tr class="separator:ac48c5fff2d5aca1dd1fc58622709d7eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab78a678ff1021823256d747800db3140"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="energy__ctrl_8c.html#ab78a678ff1021823256d747800db3140">v_ctl_altitude_loop</a> (void)</td></tr>
@@ -253,6 +258,14 @@ Variables</h2></td></tr>
 <tr class="separator:a91af08f8c8981542a5e44b874c7c39ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c417874ed0ec332df4832ed1e1d957d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="energy__ctrl_8c.html#a7c417874ed0ec332df4832ed1e1d957d">v_ctl_pitch_setpoint</a></td></tr>
 <tr class="separator:a7c417874ed0ec332df4832ed1e1d957d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f34c3da34f3dcbe2b732bd0d1c7b7dd"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="energy__ctrl_8c.html#a8f34c3da34f3dcbe2b732bd0d1c7b7dd">imu_to_body_quat</a></td></tr>
+<tr class="separator:a8f34c3da34f3dcbe2b732bd0d1c7b7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59e1c303ad13ea7c5783bb11b5eae96c"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="energy__ctrl_8c.html#a59e1c303ad13ea7c5783bb11b5eae96c">accel_imu_meas</a></td></tr>
+<tr class="separator:a59e1c303ad13ea7c5783bb11b5eae96c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a469c2ebc0df160a3ae46ebbbb2aff826"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="energy__ctrl_8c.html#a469c2ebc0df160a3ae46ebbbb2aff826">accel_ev</a></td></tr>
+<tr class="separator:a469c2ebc0df160a3ae46ebbbb2aff826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f7208107f1a5edfea2b32e570ad602d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="energy__ctrl_8c.html#a1f7208107f1a5edfea2b32e570ad602d">body_to_imu_ev</a></td></tr>
+<tr class="separator:a1f7208107f1a5edfea2b32e570ad602d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3deaed0ef0a3aba5e8b1150498d81f82"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="energy__ctrl_8c.html#a3deaed0ef0a3aba5e8b1150498d81f82">ac_char_climb_pitch</a> = 0.0f</td></tr>
 <tr class="separator:a3deaed0ef0a3aba5e8b1150498d81f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a081acd8e49b957c270368dee018ae415"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="energy__ctrl_8c.html#a081acd8e49b957c270368dee018ae415">ac_char_climb_max</a> = 0.0f</td></tr>
@@ -321,9 +334,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00151">151</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00157">157</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>.</p>
 
 </div>
 </div>
@@ -337,9 +350,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00144">144</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00150">150</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00269">v_ctl_altitude_loop()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00296">v_ctl_altitude_loop()</a>.</p>
 
 </div>
 </div>
@@ -353,9 +366,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00139">139</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00145">145</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="potential_8c_source.html#l00056">potential_task()</a>, <a class="el" href="guidance__v__n_8c_source.html#l00192">v_ctl_altitude_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="potential_8c_source.html#l00056">potential_task()</a>, <a class="el" href="guidance__v__n_8c_source.html#l00192">v_ctl_altitude_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -369,9 +382,25 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00130">130</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00129">129</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa62b067d4b698006394798b93454c8bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define V_CTL_ENERGY_IMU_ID&#160;&#160;&#160;<a class="el" href="abi__common_8h.html#a89a673124c7bb521be4e42d4bc0d29cb">ABI_BROADCAST</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00164">164</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -385,9 +414,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00147">147</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00153">153</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>.</p>
 
 </div>
 </div>
@@ -401,9 +430,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00154">154</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00160">160</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -417,9 +446,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00415">415</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00445">445</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="modules_2ins_2ins__arduimu_8c_source.html#l00053">ArduIMU_init()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00420">v_ctl_throttle_slew()</a>.</p>
+<p>Referenced by <a class="el" href="modules_2ins_2ins__arduimu_8c_source.html#l00053">ArduIMU_init()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00450">v_ctl_throttle_slew()</a>.</p>
 
 </div>
 </div>
@@ -462,9 +491,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00169">169</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00179">179</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00174">ac_char_update()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00184">ac_char_update()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -523,11 +552,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00174">174</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00184">184</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>References <a class="el" href="energy__ctrl_8c_source.html#l00169">ac_char_average()</a>, and <a class="el" href="state_8h_source.html#l00894">stateGetSpeedEnu_f()</a>.</p>
+<p>References <a class="el" href="energy__ctrl_8c_source.html#l00179">ac_char_average()</a>, <a class="el" href="state_8h_source.html#l00894">stateGetSpeedEnu_f()</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -548,6 +577,125 @@ Variables</h2></td></tr>
 <div class="center"><img src="energy__ctrl_8c_a1fca0891379c02432d10e73daef730d3_icgraph.png" border="0" usemap="#energy__ctrl_8c_a1fca0891379c02432d10e73daef730d3_icgraph" alt=""/></div>
 <map name="energy__ctrl_8c_a1fca0891379c02432d10e73daef730d3_icgraph" id="energy__ctrl_8c_a1fca0891379c02432d10e73daef730d3_icgraph">
 <area shape="rect" id="node3" href="guidance__common_8h.html#a38f0bbceda8812281fc650c2c1aac6c8" title="Auto&#45;throttle inner loop. " alt="" coords="180,24,305,52"/><area shape="rect" id="node5" href="main__ap_8h.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="355,24,461,52"/><area shape="rect" id="node7" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="744,24,880,52"/><area shape="rect" id="node9" href="main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="509,24,696,52"/><area shape="rect" id="node11" href="main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="545,75,660,103"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aacd6b1869f263f90a6f1fbe777a87793"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void accel_cb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>sender_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>stamp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> *&#160;</td>
+          <td class="paramname"><em>accel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00203">203</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+
+<p>References <a class="el" href="energy__ctrl_8c_source.html#l00137">accel_imu_meas</a>.</p>
+
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
+
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="energy__ctrl_8c_aacd6b1869f263f90a6f1fbe777a87793_icgraph.png" border="0" usemap="#energy__ctrl_8c_aacd6b1869f263f90a6f1fbe777a87793_icgraph" alt=""/></div>
+<map name="energy__ctrl_8c_aacd6b1869f263f90a6f1fbe777a87793_icgraph" id="energy__ctrl_8c_aacd6b1869f263f90a6f1fbe777a87793_icgraph">
+<area shape="rect" id="node3" href="guidance__common_8h.html#ac48c5fff2d5aca1dd1fc58622709d7eb" title="v_ctl_init" alt="" coords="131,5,208,33"/><area shape="rect" id="node5" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="256,5,320,33"/><area shape="rect" id="node7" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="369,5,439,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab5f6300c213088a4ea0598baafb5e736"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void body_to_imu_cb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>sender_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *&#160;</td>
+          <td class="paramname"><em>q_b2i_f</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00210">210</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+
+<p>References <a class="el" href="pprz__algebra__float_8h_source.html#l00364">float_quat_invert()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00136">imu_to_body_quat</a>.</p>
+
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
+
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="energy__ctrl_8c_ab5f6300c213088a4ea0598baafb5e736_cgraph.png" border="0" usemap="#energy__ctrl_8c_ab5f6300c213088a4ea0598baafb5e736_cgraph" alt=""/></div>
+<map name="energy__ctrl_8c_ab5f6300c213088a4ea0598baafb5e736_cgraph" id="energy__ctrl_8c_ab5f6300c213088a4ea0598baafb5e736_cgraph">
+<area shape="rect" id="node3" href="group__math__algebra__float.html#gacd71810b99ae462101d967468d0dcb25" title="float_quat_invert" alt="" coords="183,5,311,33"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="energy__ctrl_8c_ab5f6300c213088a4ea0598baafb5e736_icgraph.png" border="0" usemap="#energy__ctrl_8c_ab5f6300c213088a4ea0598baafb5e736_icgraph" alt=""/></div>
+<map name="energy__ctrl_8c_ab5f6300c213088a4ea0598baafb5e736_icgraph" id="energy__ctrl_8c_ab5f6300c213088a4ea0598baafb5e736_icgraph">
+<area shape="rect" id="node3" href="guidance__common_8h.html#ac48c5fff2d5aca1dd1fc58622709d7eb" title="v_ctl_init" alt="" coords="181,5,259,33"/><area shape="rect" id="node5" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="307,5,371,33"/><area shape="rect" id="node7" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="420,5,489,33"/></map>
 </div>
 </p>
 
@@ -575,15 +723,15 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00292">292</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00319">319</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>.</p>
 
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="energy__ctrl_8c_ad583c655b2e3c499eb34f7e93e4cb1b1_icgraph.png" border="0" usemap="#energy__ctrl_8c_ad583c655b2e3c499eb34f7e93e4cb1b1_icgraph" alt=""/></div>
 <map name="energy__ctrl_8c_ad583c655b2e3c499eb34f7e93e4cb1b1_icgraph" id="energy__ctrl_8c_ad583c655b2e3c499eb34f7e93e4cb1b1_icgraph">
 <area shape="rect" id="node3" href="guidance__common_8h.html#a38f0bbceda8812281fc650c2c1aac6c8" title="Auto&#45;throttle inner loop. " alt="" coords="169,24,295,52"/><area shape="rect" id="node5" href="main__ap_8h.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="344,24,451,52"/><area shape="rect" id="node7" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="733,24,869,52"/><area shape="rect" id="node9" href="main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="499,24,685,52"/><area shape="rect" id="node11" href="main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="535,75,649,103"/></map>
@@ -609,15 +757,15 @@ Variables</h2></td></tr>
 <p>outer loop </p>
 <p>Computes v_ctl_climb_setpoint and sets v_ctl_auto_throttle_submode </p>
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00269">269</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00296">296</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00483">navigation_task()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00496">navigation_task()</a>.</p>
 
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="energy__ctrl_8c_ab78a678ff1021823256d747800db3140_icgraph.png" border="0" usemap="#energy__ctrl_8c_ab78a678ff1021823256d747800db3140_icgraph" alt=""/></div>
 <map name="energy__ctrl_8c_ab78a678ff1021823256d747800db3140_icgraph" id="energy__ctrl_8c_ab78a678ff1021823256d747800db3140_icgraph">
 <area shape="rect" id="node3" href="main__ap_8h.html#a79f823520ea0823e20084686978281e6" title="Compute desired_course. " alt="" coords="195,30,317,58"/><area shape="rect" id="node5" href="sim__ap_8c.html#a8c0970e9878d0e3e3e6c5d6ff0741d4f" title="sim_nav_task" alt="" coords="404,5,513,33"/><area shape="rect" id="node7" href="main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="365,55,552,83"/></map>
@@ -642,15 +790,15 @@ Variables</h2></td></tr>
 
 <p>Auto-throttle inner loop. </p>
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00307">307</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00334">334</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00551">attitude_loop()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00560">attitude_loop()</a>.</p>
 
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="energy__ctrl_8c_a38f0bbceda8812281fc650c2c1aac6c8_icgraph.png" border="0" usemap="#energy__ctrl_8c_a38f0bbceda8812281fc650c2c1aac6c8_icgraph" alt=""/></div>
 <map name="energy__ctrl_8c_a38f0bbceda8812281fc650c2c1aac6c8_icgraph" id="energy__ctrl_8c_a38f0bbceda8812281fc650c2c1aac6c8_icgraph">
 <area shape="rect" id="node3" href="main__ap_8h.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="181,24,288,52"/><area shape="rect" id="node5" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="571,24,707,52"/><area shape="rect" id="node7" href="main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="336,24,523,52"/><area shape="rect" id="node9" href="main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="372,75,487,103"/></map>
@@ -673,15 +821,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00194">194</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00216">216</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00174">init_ap()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00175">init_ap()</a>.</p>
 
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="energy__ctrl_8c_ac48c5fff2d5aca1dd1fc58622709d7eb_icgraph.png" border="0" usemap="#energy__ctrl_8c_ac48c5fff2d5aca1dd1fc58622709d7eb_icgraph" alt=""/></div>
 <map name="energy__ctrl_8c_ac48c5fff2d5aca1dd1fc58622709d7eb_icgraph" id="energy__ctrl_8c_ac48c5fff2d5aca1dd1fc58622709d7eb_icgraph">
 <area shape="rect" id="node3" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="131,5,195,33"/><area shape="rect" id="node5" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="244,5,313,33"/></map>
@@ -707,15 +855,15 @@ Variables</h2></td></tr>
 <p>Computes slewed throttle from throttle setpoint called at 20Hz. </p>
 <p>Computes throttle_slewed from throttle_setpoint. </p>
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00420">420</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00450">450</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00551">attitude_loop()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00560">attitude_loop()</a>.</p>
 
-<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="energy__ctrl_8c_a7fefa3c115f6c0f7453db6c2edd2dbbb_icgraph.png" border="0" usemap="#energy__ctrl_8c_a7fefa3c115f6c0f7453db6c2edd2dbbb_icgraph" alt=""/></div>
 <map name="energy__ctrl_8c_a7fefa3c115f6c0f7453db6c2edd2dbbb_icgraph" id="energy__ctrl_8c_a7fefa3c115f6c0f7453db6c2edd2dbbb_icgraph">
 <area shape="rect" id="node3" href="main__ap_8h.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="192,24,299,52"/><area shape="rect" id="node5" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="581,24,717,52"/><area shape="rect" id="node7" href="main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="347,24,533,52"/><area shape="rect" id="node9" href="main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="383,75,497,103"/></map>
@@ -735,7 +883,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00161">161</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00171">171</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
 </div>
 </div>
@@ -749,7 +897,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00160">160</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00170">170</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
 </div>
 </div>
@@ -763,7 +911,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00159">159</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00169">169</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
 </div>
 </div>
@@ -777,7 +925,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00167">167</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00177">177</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
 </div>
 </div>
@@ -791,7 +939,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00166">166</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00176">176</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
 </div>
 </div>
@@ -805,7 +953,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00165">165</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00175">175</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
 </div>
 </div>
@@ -819,7 +967,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00164">164</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00174">174</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
 </div>
 </div>
@@ -833,7 +981,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00163">163</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00173">173</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
 </div>
 </div>
@@ -847,7 +995,75 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00162">162</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00172">172</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a469c2ebc0df160a3ae46ebbbb2aff826"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a> accel_ev</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00139">139</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a59e1c303ad13ea7c5783bb11b5eae96c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> accel_imu_meas</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00137">137</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00203">accel_cb()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1f7208107f1a5edfea2b32e570ad602d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a> body_to_imu_ev</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00140">140</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
 </div>
 </div>
@@ -861,9 +1077,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00261">261</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00288">288</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>.</p>
 
 </div>
 </div>
@@ -877,9 +1093,33 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00262">262</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00289">289</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
 <p>Referenced by <a class="el" href="mission__fw__nav_8c_source.html#l00142">mission_run()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8f34c3da34f3dcbe2b732bd0d1c7b7dd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> imu_to_body_quat</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00136">136</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00210">body_to_imu_cb()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -893,7 +1133,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00289">289</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00316">316</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
 </div>
 </div>
@@ -907,9 +1147,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00092">92</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00091">91</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -925,9 +1165,9 @@ Variables</h2></td></tr>
 
 <p>in meters, (setpoint - alt) -&gt; positive = too low </p>
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00093">93</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00092">92</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__attitude_8c_source.html#l00190">h_ctl_course_loop()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00269">v_ctl_altitude_loop()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00261">v_ctl_climb_auto_throttle_loop()</a>, and <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00122">v_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__attitude_8c_source.html#l00201">h_ctl_course_loop()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00296">v_ctl_altitude_loop()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00261">v_ctl_climb_auto_throttle_loop()</a>, and <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00122">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -941,9 +1181,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00091">91</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00090">90</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00269">v_ctl_altitude_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00296">v_ctl_altitude_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -959,9 +1199,9 @@ Variables</h2></td></tr>
 
 <p>Path Angle. </p>
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00090">90</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00089">89</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00269">v_ctl_altitude_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00296">v_ctl_altitude_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -977,9 +1217,9 @@ Variables</h2></td></tr>
 
 <p>in meters above MSL </p>
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00089">89</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00088">88</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="flight__benchmark_8c_source.html#l00049">flight_benchmark_periodic()</a>, <a class="el" href="nav_8c_source.html#l00421">nav_set_altitude()</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00139">send_desired()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00269">v_ctl_altitude_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="flight__benchmark_8c_source.html#l00049">flight_benchmark_periodic()</a>, <a class="el" href="nav_8c_source.html#l00421">nav_set_altitude()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00296">v_ctl_altitude_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -993,9 +1233,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00124">124</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00123">123</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2autopilot_8c_source.html#l00150">send_airspeed()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>, and <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00122">v_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>, and <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00122">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -1011,9 +1251,9 @@ Variables</h2></td></tr>
 
 <p>in meters per second </p>
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00122">122</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00121">121</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="flight__benchmark_8c_source.html#l00049">flight_benchmark_periodic()</a>, <a class="el" href="nav__gls_8c_source.html#l00159">gls_run()</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00150">send_airspeed()</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00139">send_desired()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00269">v_ctl_altitude_loop()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="flight__benchmark_8c_source.html#l00049">flight_benchmark_periodic()</a>, <a class="el" href="nav__gls_8c_source.html#l00159">gls_run()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00296">v_ctl_altitude_loop()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -1027,9 +1267,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00123">123</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00122">122</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -1043,9 +1283,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00128">128</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00127">127</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -1059,9 +1299,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00127">127</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00126">126</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -1077,9 +1317,9 @@ Variables</h2></td></tr>
 
 <p>in meters per second </p>
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00126">126</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00125">125</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2autopilot_8c_source.html#l00150">send_airspeed()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -1093,9 +1333,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00129">129</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00128">128</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -1109,9 +1349,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00114">114</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00113">113</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -1125,9 +1365,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00113">113</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00112">112</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -1141,9 +1381,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00112">112</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00111">111</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -1157,9 +1397,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00107">107</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00106">106</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00261">v_ctl_climb_auto_throttle_loop()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>, and <a class="el" href="guidance__v__n_8c_source.html#l00243">v_ctl_set_throttle()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00261">v_ctl_climb_auto_throttle_loop()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>, and <a class="el" href="guidance__v__n_8c_source.html#l00243">v_ctl_set_throttle()</a>.</p>
 
 </div>
 </div>
@@ -1173,7 +1413,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00104">104</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00103">103</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
 <p>Referenced by <a class="el" href="formation_8c_source.html#l00128">formation_flight()</a>, <a class="el" href="potential_8c_source.html#l00056">potential_task()</a>, <a class="el" href="formation_8c_source.html#l00095">start_formation()</a>, <a class="el" href="formation_8c_source.html#l00110">stop_formation()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00261">v_ctl_climb_auto_throttle_loop()</a>, <a class="el" href="guidance__v__n_8c_source.html#l00352">v_ctl_climb_loop()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00122">v_ctl_init()</a>, and <a class="el" href="guidance__v__n_8c_source.html#l00243">v_ctl_set_throttle()</a>.</p>
 
@@ -1189,9 +1429,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00106">106</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00105">105</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -1205,9 +1445,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00105">105</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00104">104</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -1221,9 +1461,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00111">111</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00110">110</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -1237,9 +1477,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00110">110</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00109">109</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -1253,9 +1493,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00108">108</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00107">107</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00261">v_ctl_climb_auto_throttle_loop()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>, and <a class="el" href="guidance__v__n_8c_source.html#l00215">v_ctl_set_pitch()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00261">v_ctl_climb_auto_throttle_loop()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>, and <a class="el" href="guidance__v__n_8c_source.html#l00215">v_ctl_set_pitch()</a>.</p>
 
 </div>
 </div>
@@ -1269,9 +1509,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00077">77</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00076">76</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__attitude_8c_source.html#l00190">h_ctl_course_loop()</a>, <a class="el" href="nav_8c_source.html#l00448">nav_periodic_task()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00205">v_ctl_altitude_loop()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00261">v_ctl_climb_auto_throttle_loop()</a>, and <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00122">v_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__attitude_8c_source.html#l00201">h_ctl_course_loop()</a>, <a class="el" href="nav_8c_source.html#l00448">nav_periodic_task()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00205">v_ctl_altitude_loop()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00261">v_ctl_climb_auto_throttle_loop()</a>, and <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00122">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -1285,7 +1525,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00078">78</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00077">77</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
 <p>Referenced by <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00261">v_ctl_climb_auto_throttle_loop()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00122">v_ctl_init()</a>, and <a class="el" href="guidance__v__n_8c_source.html#l00243">v_ctl_set_throttle()</a>.</p>
 
@@ -1301,7 +1541,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00076">76</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00075">75</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
 <p>Referenced by <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00205">v_ctl_altitude_loop()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00238">v_ctl_climb_loop()</a>, and <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00122">v_ctl_init()</a>.</p>
 
@@ -1317,9 +1557,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00099">99</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00098">98</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2autopilot_8c_source.html#l00139">send_desired()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00269">v_ctl_altitude_loop()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00261">v_ctl_climb_auto_throttle_loop()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>, <a class="el" href="guidance__v__n_8c_source.html#l00215">v_ctl_set_pitch()</a>, and <a class="el" href="guidance__v__n_8c_source.html#l00243">v_ctl_set_throttle()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00296">v_ctl_altitude_loop()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00261">v_ctl_climb_auto_throttle_loop()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>, <a class="el" href="guidance__v__n_8c_source.html#l00215">v_ctl_set_pitch()</a>, and <a class="el" href="guidance__v__n_8c_source.html#l00243">v_ctl_set_throttle()</a>.</p>
 
 </div>
 </div>
@@ -1333,9 +1573,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00102">102</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00101">101</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>.</p>
 
 </div>
 </div>
@@ -1349,9 +1589,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00120">120</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00119">119</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -1365,9 +1605,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00119">119</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00118">118</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -1381,9 +1621,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00117">117</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00116">116</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -1397,9 +1637,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00116">116</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00115">115</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -1413,9 +1653,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00096">96</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00095">95</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -1429,9 +1669,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00095">95</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00094">94</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00269">v_ctl_altitude_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="energy__ctrl_8c_source.html#l00296">v_ctl_altitude_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -1445,9 +1685,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00075">75</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00074">74</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00551">attitude_loop()</a>, <a class="el" href="nav_8c_source.html#l00432">nav_home()</a>, <a class="el" href="nav_8c_source.html#l00448">nav_periodic_task()</a>, <a class="el" href="nav_8c_source.html#l00559">nav_without_gps()</a>, <a class="el" href="main__ap_8c_source.html#l00483">navigation_task()</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00085">send_mode()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00560">attitude_loop()</a>, <a class="el" href="nav_8c_source.html#l00432">nav_home()</a>, <a class="el" href="nav_8c_source.html#l00448">nav_periodic_task()</a>, <a class="el" href="nav_8c_source.html#l00559">nav_without_gps()</a>, <a class="el" href="main__ap_8c_source.html#l00496">navigation_task()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>.</p>
 
 </div>
 </div>
@@ -1461,9 +1701,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00134">134</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00133">133</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00551">attitude_loop()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00261">v_ctl_climb_auto_throttle_loop()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00122">v_ctl_init()</a>, and <a class="el" href="guidance__v__n_8c_source.html#l00215">v_ctl_set_pitch()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00560">attitude_loop()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00261">v_ctl_climb_auto_throttle_loop()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00122">v_ctl_init()</a>, and <a class="el" href="guidance__v__n_8c_source.html#l00215">v_ctl_set_pitch()</a>.</p>
 
 </div>
 </div>
@@ -1477,9 +1717,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00132">132</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00131">131</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00551">attitude_loop()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00354">h_ctl_roll_loop()</a>, <a class="el" href="main__ap_8c_source.html#l00380">telecommand_task()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00261">v_ctl_climb_auto_throttle_loop()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00307">v_ctl_climb_loop()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00194">v_ctl_init()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00420">v_ctl_throttle_slew()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00560">attitude_loop()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00448">h_ctl_roll_loop()</a>, <a class="el" href="main__ap_8c_source.html#l00387">telecommand_task()</a>, <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00261">v_ctl_climb_auto_throttle_loop()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00216">v_ctl_init()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00450">v_ctl_throttle_slew()</a>.</p>
 
 </div>
 </div>
@@ -1493,9 +1733,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00133">133</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
+<p>Definition at line <a class="el" href="energy__ctrl_8c_source.html#l00132">132</a> of file <a class="el" href="energy__ctrl_8c_source.html">energy_ctrl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00551">attitude_loop()</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00112">send_bat()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00420">v_ctl_throttle_slew()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00560">attitude_loop()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00450">v_ctl_throttle_slew()</a>.</p>
 
 </div>
 </div>
@@ -1505,7 +1745,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_cb1b347b64b61ba7f369ccfe68448b26.html">fixedwing</a></li><li class="navelem"><a class="el" href="dir_ed1aed0b4c5a033d4a5b36c06a1a768a.html">guidance</a></li><li class="navelem"><a class="el" href="energy__ctrl_8c.html">energy_ctrl.c</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:04:55 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:15 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

@@ -309,6 +309,7 @@ var searchData=
   ['extra3',['extra3',['../structhigh__speed__logger__spi__link__data.html#ae9976c332f606390637001b55916ae25',1,'high_speed_logger_spi_link_data']]],
   ['extra_5fpprz_5fdl_2ec',['extra_pprz_dl.c',['../extra__pprz__dl_8c.html',1,'']]],
   ['extra_5fpprz_5fdl_2eh',['extra_pprz_dl.h',['../extra__pprz__dl_8h.html',1,'']]],
+  ['extra_5fpprz_5fdl_5finit',['extra_pprz_dl_init',['../extra__pprz__dl_8c.html#a1ff9047c131c4b42b901dcb71ec1317a',1,'extra_pprz_dl_init(void):&#160;extra_pprz_dl.c'],['../extra__pprz__dl_8h.html#a1ff9047c131c4b42b901dcb71ec1317a',1,'extra_pprz_dl_init(void):&#160;extra_pprz_dl.c']]],
   ['extra_5fpprz_5ftp',['extra_pprz_tp',['../extra__pprz__dl_8c.html#a23d92289aeb262d1f2dfa1362e583e90',1,'extra_pprz_tp():&#160;extra_pprz_dl.c'],['../extra__pprz__dl_8h.html#a23d92289aeb262d1f2dfa1362e583e90',1,'extra_pprz_tp():&#160;extra_pprz_dl.c']]],
   ['extradatalinkevent',['ExtraDatalinkEvent',['../extra__pprz__dl_8h.html#af4820b3e7cf7584c83a5c8ad19f99c47',1,'extra_pprz_dl.h']]],
   ['extrapsh',['extrapsh',['../pprz__geodetic__wmm2010_8c.html#a57f76a5e5afe004c3b985f11b4f1b13e',1,'extrapsh(double date, double dte1, int16_t nmax1, int16_t nmax2, double *gh):&#160;pprz_geodetic_wmm2010.c'],['../pprz__geodetic__wmm2010_8h.html#a57f76a5e5afe004c3b985f11b4f1b13e',1,'extrapsh(double date, double dte1, int16_t nmax1, int16_t nmax2, double *gh):&#160;pprz_geodetic_wmm2010.c']]],

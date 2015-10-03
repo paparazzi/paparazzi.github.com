@@ -1,6 +1,9 @@
 var takeoff__detect_8c =
 [
-    [ "takeoff_detect_struct", "structtakeoff__detect__struct.html", "structtakeoff__detect__struct" ],
+    [ "takeoff_detect_struct", "takeoff__detect_8c.html#structtakeoff__detect__struct", [
+      [ "state", "takeoff__detect_8c.html#a219cf5c2864bb180fff667068c237fbf", null ],
+      [ "timer", "takeoff__detect_8c.html#a8d3bde9a56cf0e549b47e7362c7a17f1", null ]
+    ] ],
     [ "TAKEOFF_DETECT_ABORT_PITCH", "takeoff__detect_8c.html#ad5f29c2e99884a567d5b7242ca9e1848", null ],
     [ "TAKEOFF_DETECT_DISABLE_TIMER", "takeoff__detect_8c.html#a8a0f2276696d051aa8726ac85bd476c5", null ],
     [ "TAKEOFF_DETECT_LAUNCH_PITCH", "takeoff__detect_8c.html#a6be322b70d00096913c40010f67aabdb", null ],

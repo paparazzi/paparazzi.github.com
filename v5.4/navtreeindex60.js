@@ -1,5 +1,6 @@
 var NAVTREEINDEX60 =
 {
+"olimex__lpc__h2148_8h.html#addec7d88e04ddfe6ac90caf602636c51":[10,0,0,0,1,39,0],
 "olimex__lpc__h2148_8h.html#ae7a2417096c8215257d073da4d6d4c5f":[10,0,0,0,1,39,10],
 "olimex__lpc__h2148_8h_source.html":[10,0,0,0,1,39],
 "olimex__stm32-h103_8h.html":[10,0,0,0,1,40],
@@ -248,6 +249,5 @@ var NAVTREEINDEX60 =
 "pprz__algebra_8h.html#ae7dc355f24f14a07a1b7c162b572370d":[10,0,0,0,4,0,55],
 "pprz__algebra_8h.html#ae896ed3d388c2294bb21f6dac6d922c7":[10,0,0,0,4,0,90],
 "pprz__algebra_8h.html#af318473ba274802b8169bdcf09afd9f9":[10,0,0,0,4,0,80],
-"pprz__algebra_8h.html#af63031c45580fdb7b0b63e5b2f8b3be1":[10,0,0,0,4,0,43],
-"pprz__algebra_8h.html#af6f5918ce1dc9b05f0d7262a48cfa90c":[10,0,0,0,4,0,15]
+"pprz__algebra_8h.html#af63031c45580fdb7b0b63e5b2f8b3be1":[10,0,0,0,4,0,43]
 };

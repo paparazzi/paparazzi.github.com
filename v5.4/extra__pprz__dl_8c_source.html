@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.4.2_stable-3-gc351a71</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -132,21 +132,22 @@ $(document).ready(function(){initNavTree('extra__pprz__dl_8c_source.html','');})
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="extra__pprz__dl_8h.html">extra_pprz_dl.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="extra__pprz__dl_8h.html">modules/datalink/extra_pprz_dl.h</a>&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#if DATALINK != PPRZ</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="extra__pprz__dl_8c.html#aaef6f57fdac39726811fd081a16fa711">   27</a></span>&#160;<span class="preprocessor"></span><a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="audio__telemetry__hw_8c.html#a51ab444129c13f6f6f44765945b7c1f7">ck_a</a>, <a class="code" href="audio__telemetry__hw_8c.html#aaef6f57fdac39726811fd081a16fa711">ck_b</a>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="extra__pprz__dl_8h.html#a23d92289aeb262d1f2dfa1362e583e90">   30</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structpprz__transport.html">pprz_transport</a> <a class="code" href="extra__pprz__dl_8c.html#a23d92289aeb262d1f2dfa1362e583e90">extra_pprz_tp</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="extra__pprz__dl_8h.html#a23d92289aeb262d1f2dfa1362e583e90">   26</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structpprz__transport.html">pprz_transport</a> <a class="code" href="extra__pprz__dl_8c.html#a23d92289aeb262d1f2dfa1362e583e90">extra_pprz_tp</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="extra__pprz__dl_8h.html#a1ff9047c131c4b42b901dcb71ec1317a">   28</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="extra__pprz__dl_8c.html#a1ff9047c131c4b42b901dcb71ec1317a" title="Init function. ">extra_pprz_dl_init</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="pprz__transport_8c.html#a4a56f4299c84faa347591c6abf4b9c47">pprz_transport_init</a>(&amp;<a class="code" href="extra__pprz__dl_8c.html#a23d92289aeb262d1f2dfa1362e583e90">extra_pprz_tp</a>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_164c7aa663179b26059278e7f36078da.html">datalink</a></li><li class="navelem"><a class="el" href="extra__pprz__dl_8c.html">extra_pprz_dl.c</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:15:11 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Jun 17 2015 02:01:14 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

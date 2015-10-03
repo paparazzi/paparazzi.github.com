@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('gps__furuno_8c_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -137,89 +137,103 @@ $(document).ready(function(){initNavTree('gps__furuno_8c_source.html','');});
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="gps__furuno_8c.html#a9e9d88900b97e17753377966c5744ad9">   34</a></span>&#160;<span class="preprocessor">#define GPS_FURUNO_SETTINGS_NB    10</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="gps__furuno_8c.html#a9e9d88900b97e17753377966c5744ad9">   34</a></span>&#160;<span class="preprocessor">#define GPS_FURUNO_SETTINGS_NB    18</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="gps__furuno_8c.html#af71da9bbd92f795edfe5e96a1972f244">   35</a></span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="gps__furuno_8c.html#af71da9bbd92f795edfe5e96a1972f244">gps_furuno_settings</a>[<a class="code" href="gps__furuno_8c.html#a9e9d88900b97e17753377966c5744ad9">GPS_FURUNO_SETTINGS_NB</a>] = {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="stringliteral">&quot;PERDAPI,FIXPERSEC,5&quot;</span>,        <span class="comment">// Receive position every 5 Hz</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="stringliteral">&quot;PERDAPI,CROUT,ALLOFF&quot;</span>,       <span class="comment">// Disable all propriarty output</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="stringliteral">&quot;PERDCFG,NMEAOUT,GGA,1&quot;</span>,      <span class="comment">// Enable GGA every fix</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="stringliteral">&quot;PERDCFG,NMEAOUT,RMC,1&quot;</span>,      <span class="comment">// Enable RMC every fix</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="stringliteral">&quot;PERDCFG,NMEAOUT,GSA,1&quot;</span>,      <span class="comment">// Enable GSA every fix</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="stringliteral">&quot;PERDCFG,NMEAOUT,GNS,0&quot;</span>,      <span class="comment">// Disable GSA</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="stringliteral">&quot;PERDCFG,NMEAOUT,ZDA,0&quot;</span>,      <span class="comment">// Disable ZDA</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="stringliteral">&quot;PERDCFG,NMEAOUT,GSV,0&quot;</span>,      <span class="comment">// Disable GSV</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="stringliteral">&quot;PERDCFG,NMEAOUT,GST,0&quot;</span>,      <span class="comment">// Disable ZDA</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="stringliteral">&quot;PERDAPI,CROUT,V&quot;</span>             <span class="comment">// Enable raw velocity</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="gps__furuno_8c.html#a2a6344ac43992ad22974f50f5f581ab9">nmea_parse_perdcrv</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="gps__nmea_8h.html#ad2d3dbbf0495a9206d80e4a8c15d4fe3">   50</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="gps__furuno_8c.html#ad2d3dbbf0495a9206d80e4a8c15d4fe3">nmea_parse_prop_init</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">static</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = 0;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> j, len, <a class="code" href="link__mcu__spi_8c.html#aa60093a9a5d5d17864cfda66c47733e3">crc</a>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">char</span> <a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a48b4f0842338aeafa79aeab314f33696">buf</a>[128];</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="stringliteral">&quot;PERDAPI,FIRSTFIXFILTER,STRONG&quot;</span>,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="stringliteral">&quot;PERDAPI,FIXPERSEC,5&quot;</span>,        <span class="comment">// Receive position every 5 Hz</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="stringliteral">&quot;PERDAPI,FIXMASK,SENSITIVITY&quot;</span>,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="stringliteral">&quot;PERDAPI,STATIC,0,0&quot;</span>,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="stringliteral">&quot;PERDAPI,LATPROP,-1&quot;</span>,         <span class="comment">// Disable latency position propagation</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="stringliteral">&quot;PERDAPI,OUTPROP,0&quot;</span>,          <span class="comment">// Disable position output propagation</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="stringliteral">&quot;PERDAPI,PIN,OFF&quot;</span>,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="stringliteral">&quot;PERDAPI,GNSS,AUTO,2,2,0,-1,-1&quot;</span>,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="stringliteral">&quot;PERDSYS,ANTSEL,FORCE1L&quot;</span>,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="stringliteral">&quot;PERDAPI,CROUT,ALLOFF&quot;</span>,       <span class="comment">// Disable all propriarty output</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="stringliteral">&quot;PERDAPI,CROUT,V&quot;</span>,            <span class="comment">// Enable proprietary PERDCRV raw velocity message</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="stringliteral">&quot;PERDCFG,NMEAOUT,GGA,1&quot;</span>,      <span class="comment">// Enable GGA every fix</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="stringliteral">&quot;PERDCFG,NMEAOUT,RMC,1&quot;</span>,      <span class="comment">// Enable RMC every fix</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="stringliteral">&quot;PERDCFG,NMEAOUT,GSA,1&quot;</span>,      <span class="comment">// Enable GSA every fix</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="stringliteral">&quot;PERDCFG,NMEAOUT,GNS,0&quot;</span>,      <span class="comment">// Disable GNS</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="stringliteral">&quot;PERDCFG,NMEAOUT,ZDA,0&quot;</span>,      <span class="comment">// Disable ZDA</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="stringliteral">&quot;PERDCFG,NMEAOUT,GSV,1&quot;</span>,      <span class="comment">// Enable GSV</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="stringliteral">&quot;PERDCFG,NMEAOUT,GST,0&quot;</span>       <span class="comment">// Disable GST</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="comment">// Return when doen</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordflow">if</span> (i == <a class="code" href="gps__furuno_8c.html#a9e9d88900b97e17753377966c5744ad9">GPS_FURUNO_SETTINGS_NB</a>) {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">for</span> (; i &lt; <a class="code" href="gps__furuno_8c.html#a9e9d88900b97e17753377966c5744ad9">GPS_FURUNO_SETTINGS_NB</a>; i++) {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    len = strlen(<a class="code" href="gps__furuno_8c.html#af71da9bbd92f795edfe5e96a1972f244">gps_furuno_settings</a>[i]);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    crc = <a class="code" href="gps__nmea_8c.html#a7d5a551d259e5f21f46eee9db6f3590a" title="Calculate control sum of binary buffer. ">nmea_calc_crc</a>(<a class="code" href="gps__furuno_8c.html#af71da9bbd92f795edfe5e96a1972f244">gps_furuno_settings</a>[i], len);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    sprintf(buf, <span class="stringliteral">&quot;$%s*%02X\r\n&quot;</span>, <a class="code" href="gps__furuno_8c.html#af71da9bbd92f795edfe5e96a1972f244">gps_furuno_settings</a>[i], crc);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// Check if there is enough space to send the config msg</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="gps__mtk_8h.html#a47874681328e0707ec52d1ab3da2e9f6">GpsLink</a>(CheckFreeSpace(len + 6))) {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keywordflow">for</span> (j = 0; j &lt; len + 6; j++) {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="gps__mtk_8h.html#a47874681328e0707ec52d1ab3da2e9f6">GpsLink</a>(<a class="code" href="std_8h.html#a8b9fe7fab7e269ab017fd200ae7e4e5d">Transmit</a>(buf[j]));</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="code" href="gps__nmea_8h.html#ae4ee231e9004ab283b1da389fd4492f8">   77</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="gps__furuno_8c.html#ae4ee231e9004ab283b1da389fd4492f8">nmea_parse_prop_msg</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="gps__nmea_8c.html#a1c5d1eddb60d3aa0ef96bed0e0bdc169">gps_nmea</a>.<a class="code" href="structGpsNmea.html#a3e2868479c45938a05a9eb0e9cea04cf">msg_len</a> &gt; 5 &amp;&amp; !strncmp(<a class="code" href="gps__nmea_8c.html#a1c5d1eddb60d3aa0ef96bed0e0bdc169">gps_nmea</a>.<a class="code" href="structGpsNmea.html#aecae9343d4c7cd5ab15441a233a075de" title="buffer for storing one nmea-line ">msg_buf</a> , <span class="stringliteral">&quot;PERDCRV&quot;</span>, 7)) {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="gps__furuno_8c.html#a2a6344ac43992ad22974f50f5f581ab9">nmea_parse_perdcrv</a>();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="code" href="gps__furuno_8c.html#a2a6344ac43992ad22974f50f5f581ab9">   84</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="gps__furuno_8c.html#a2a6344ac43992ad22974f50f5f581ab9">nmea_parse_perdcrv</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">int</span> i = 8;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="comment">// Ignore reserved</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="gps__nmea_8h.html#a456be6466eb8510b09df4d6996519647" title="Read until a certain character, placed here for proprietary includes. ">nmea_read_until</a>(&amp;i);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="comment">// Ignore reserved</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <a class="code" href="gps__nmea_8h.html#a456be6466eb8510b09df4d6996519647" title="Read until a certain character, placed here for proprietary includes. ">nmea_read_until</a>(&amp;i);</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="code" href="gps__furuno_8c.html#a472cd42e5e349a6d6f76dc3524d3ebd1">   56</a></span>&#160;<span class="keyword">static</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="gps__furuno_8c.html#a472cd42e5e349a6d6f76dc3524d3ebd1">furuno_cfg_cnt</a> = 0;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="gps__furuno_8c.html#a2a6344ac43992ad22974f50f5f581ab9">nmea_parse_perdcrv</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="gps__furuno_8c.html#af1acf1db93b8ed0add6615e60d210c20">   60</a></span>&#160;<span class="preprocessor">#define GpsLinkDevice (&amp;(GPS_LINK).device)</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="code" href="gps__nmea_8h.html#afbe97e63de2729cff1ef3ba45148f48f">   66</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="gps__furuno_8c.html#afbe97e63de2729cff1ef3ba45148f48f" title="Configure furuno GPS. ">nmea_configure</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i, j, len, <a class="code" href="link__mcu__spi_8c.html#aa60093a9a5d5d17864cfda66c47733e3">crc</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">char</span> <a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a48b4f0842338aeafa79aeab314f33696">buf</a>[128];</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordflow">for</span> (i = <a class="code" href="gps__furuno_8c.html#a472cd42e5e349a6d6f76dc3524d3ebd1">furuno_cfg_cnt</a>; i &lt; <a class="code" href="gps__furuno_8c.html#a9e9d88900b97e17753377966c5744ad9">GPS_FURUNO_SETTINGS_NB</a>; i++) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    len = strlen(<a class="code" href="gps__furuno_8c.html#af71da9bbd92f795edfe5e96a1972f244">gps_furuno_settings</a>[i]);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// Check if there is enough space to send the config msg</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="gps__furuno_8c.html#af1acf1db93b8ed0add6615e60d210c20">GpsLinkDevice</a>-&gt;check_free_space(<a class="code" href="gps__furuno_8c.html#af1acf1db93b8ed0add6615e60d210c20">GpsLinkDevice</a>-&gt;periph, len + 6)) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      crc = <a class="code" href="gps__nmea_8c.html#a7d5a551d259e5f21f46eee9db6f3590a" title="Calculate control sum of binary buffer. ">nmea_calc_crc</a>(<a class="code" href="gps__furuno_8c.html#af71da9bbd92f795edfe5e96a1972f244">gps_furuno_settings</a>[i], len);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      sprintf(buf, <span class="stringliteral">&quot;$%s*%02X\r\n&quot;</span>, <a class="code" href="gps__furuno_8c.html#af71da9bbd92f795edfe5e96a1972f244">gps_furuno_settings</a>[i], crc);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keywordflow">for</span> (j = 0; j &lt; len + 6; j++) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="gps__furuno_8c.html#af1acf1db93b8ed0add6615e60d210c20">GpsLinkDevice</a>-&gt;put_byte(<a class="code" href="gps__furuno_8c.html#af1acf1db93b8ed0add6615e60d210c20">GpsLinkDevice</a>-&gt;periph, buf[j]);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <a class="code" href="gps__furuno_8c.html#a472cd42e5e349a6d6f76dc3524d3ebd1">furuno_cfg_cnt</a>++;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="comment">// Not done yet...</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="gps__nmea_8c.html#a1c5d1eddb60d3aa0ef96bed0e0bdc169">gps_nmea</a>.<a class="code" href="gps__nmea_8h.html#a68178d3c43c6bb8fafe9e2ed3cf4cfc8" title="flag set to TRUE if configuration is finished ">is_configured</a> = <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="code" href="gps__nmea_8h.html#ad2d3dbbf0495a9206d80e4a8c15d4fe3">   89</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="gps__furuno_8c.html#ad2d3dbbf0495a9206d80e4a8c15d4fe3">nmea_parse_prop_init</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <a class="code" href="gps__furuno_8c.html#a472cd42e5e349a6d6f76dc3524d3ebd1">furuno_cfg_cnt</a> = 0;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="comment">//EAST VEL</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">double</span> east_vel = strtod(&amp;<a class="code" href="gps__nmea_8c.html#a1c5d1eddb60d3aa0ef96bed0e0bdc169">gps_nmea</a>.<a class="code" href="structGpsNmea.html#aecae9343d4c7cd5ab15441a233a075de" title="buffer for storing one nmea-line ">msg_buf</a>[i], NULL);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state ">gps</a>.<a class="code" href="structGpsState.html#a8c0416718a59e50261890cd870f716ea" title="speed NED in cm/s ">ned_vel</a>.<a class="code" href="structNedCoor__i.html#a77400e63c3818f1e638d15355675e356" title="East. ">y</a> = east_vel * 100; <span class="comment">// in cm/s</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="comment">// Ignore reserved</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <a class="code" href="gps__nmea_8h.html#a456be6466eb8510b09df4d6996519647" title="Read until a certain character, placed here for proprietary includes. ">nmea_read_until</a>(&amp;i);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="comment">// NORTH VEL</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">double</span> north_vel = strtod(&amp;<a class="code" href="gps__nmea_8c.html#a1c5d1eddb60d3aa0ef96bed0e0bdc169">gps_nmea</a>.<a class="code" href="structGpsNmea.html#aecae9343d4c7cd5ab15441a233a075de" title="buffer for storing one nmea-line ">msg_buf</a>[i], NULL);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state ">gps</a>.<a class="code" href="structGpsState.html#a8c0416718a59e50261890cd870f716ea" title="speed NED in cm/s ">ned_vel</a>.<a class="code" href="structNedCoor__i.html#adafb8b35c7dbb285cfc4e60ff0a789aa" title="North. ">x</a> = north_vel * 100; <span class="comment">// in cm/s</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="comment">//Convert velocity to ecef</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keyword">struct </span><a class="code" href="structLtpDef__i.html" title="definition of the local (flat earth) coordinate system ">LtpDef_i</a> ltp;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <a class="code" href="pprz__geodetic__int_8c.html#a5afd098a83e572b854e157486ccb569f">ltp_def_from_ecef_i</a>(&amp;ltp, &amp;<a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state ">gps</a>.<a class="code" href="structGpsState.html#a4b4e800eef9609fd474c0c92fd4836ff" title="position in ECEF in cm ">ecef_pos</a>);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <a class="code" href="pprz__geodetic__int_8c.html#ab146002b10face50bd92576ce4882f1d" title="Rotate a vector from NED to ECEF. ">ecef_of_ned_vect_i</a>(&amp;<a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state ">gps</a>.<a class="code" href="structGpsState.html#a61d8a6f16de4a00066cb7026aff117da" title="speed ECEF in cm/s ">ecef_vel</a>, &amp;ltp, &amp;<a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state ">gps</a>.<a class="code" href="structGpsState.html#a8c0416718a59e50261890cd870f716ea" title="speed NED in cm/s ">ned_vel</a>);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="code" href="gps__nmea_8h.html#ae4ee231e9004ab283b1da389fd4492f8">   95</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="gps__furuno_8c.html#ae4ee231e9004ab283b1da389fd4492f8">nmea_parse_prop_msg</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="gps__nmea_8c.html#a1c5d1eddb60d3aa0ef96bed0e0bdc169">gps_nmea</a>.<a class="code" href="gps__nmea_8h.html#a3e2868479c45938a05a9eb0e9cea04cf">msg_len</a> &gt; 5 &amp;&amp; !strncmp(<a class="code" href="gps__nmea_8c.html#a1c5d1eddb60d3aa0ef96bed0e0bdc169">gps_nmea</a>.<a class="code" href="gps__nmea_8h.html#aecae9343d4c7cd5ab15441a233a075de" title="buffer for storing one nmea-line ">msg_buf</a> , <span class="stringliteral">&quot;PERDCRV&quot;</span>, 7)) {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="gps__furuno_8c.html#a2a6344ac43992ad22974f50f5f581ab9">nmea_parse_perdcrv</a>();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="code" href="gps__furuno_8c.html#a2a6344ac43992ad22974f50f5f581ab9">  102</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="gps__furuno_8c.html#a2a6344ac43992ad22974f50f5f581ab9">nmea_parse_perdcrv</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;{</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">int</span> i = 8;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="comment">// Ignore reserved</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <a class="code" href="gps__nmea_8h.html#a456be6466eb8510b09df4d6996519647" title="Read until a certain character, placed here for proprietary includes. ">nmea_read_until</a>(&amp;i);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="comment">// Ignore reserved</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <a class="code" href="gps__nmea_8h.html#a456be6466eb8510b09df4d6996519647" title="Read until a certain character, placed here for proprietary includes. ">nmea_read_until</a>(&amp;i);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="comment">//EAST VEL</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordtype">double</span> east_vel = strtod(&amp;<a class="code" href="gps__nmea_8c.html#a1c5d1eddb60d3aa0ef96bed0e0bdc169">gps_nmea</a>.<a class="code" href="gps__nmea_8h.html#aecae9343d4c7cd5ab15441a233a075de" title="buffer for storing one nmea-line ">msg_buf</a>[i], NULL);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state ">gps</a>.<a class="code" href="gps_8h.html#a8c0416718a59e50261890cd870f716ea" title="speed NED in cm/s ">ned_vel</a>.<a class="code" href="group__math__geodetic__int.html#a77400e63c3818f1e638d15355675e356" title="East. ">y</a> = east_vel * 100; <span class="comment">// in cm/s</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="comment">// Ignore reserved</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <a class="code" href="gps__nmea_8h.html#a456be6466eb8510b09df4d6996519647" title="Read until a certain character, placed here for proprietary includes. ">nmea_read_until</a>(&amp;i);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="comment">// NORTH VEL</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordtype">double</span> north_vel = strtod(&amp;<a class="code" href="gps__nmea_8c.html#a1c5d1eddb60d3aa0ef96bed0e0bdc169">gps_nmea</a>.<a class="code" href="gps__nmea_8h.html#aecae9343d4c7cd5ab15441a233a075de" title="buffer for storing one nmea-line ">msg_buf</a>[i], NULL);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state ">gps</a>.<a class="code" href="gps_8h.html#a8c0416718a59e50261890cd870f716ea" title="speed NED in cm/s ">ned_vel</a>.<a class="code" href="group__math__geodetic__int.html#adafb8b35c7dbb285cfc4e60ff0a789aa" title="North. ">x</a> = north_vel * 100; <span class="comment">// in cm/s</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="comment">//Convert velocity to ecef</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keyword">struct </span><a class="code" href="group__math__geodetic__int.html#structLtpDef__i" title="definition of the local (flat earth) coordinate system ">LtpDef_i</a> ltp;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <a class="code" href="group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f">ltp_def_from_ecef_i</a>(&amp;ltp, &amp;<a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state ">gps</a>.<a class="code" href="gps_8h.html#a4b4e800eef9609fd474c0c92fd4836ff" title="position in ECEF in cm ">ecef_pos</a>);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <a class="code" href="group__math__geodetic__int.html#gab146002b10face50bd92576ce4882f1d" title="Rotate a vector from NED to ECEF. ">ecef_of_ned_vect_i</a>(&amp;<a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state ">gps</a>.<a class="code" href="gps_8h.html#a61d8a6f16de4a00066cb7026aff117da" title="speed ECEF in cm/s ">ecef_vel</a>, &amp;ltp, &amp;<a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state ">gps</a>.<a class="code" href="gps_8h.html#a8c0416718a59e50261890cd870f716ea" title="speed NED in cm/s ">ned_vel</a>);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8c4cbb881db224ddaf0756e79ed706ce.html">gps</a></li><li class="navelem"><a class="el" href="gps__furuno_8c.html">gps_furuno.c</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:04:46 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:06 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

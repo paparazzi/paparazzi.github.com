@@ -1,6 +1,11 @@
 var formation_8h =
 [
-    [ "slot_", "structslot__.html", "structslot__" ],
+    [ "slot_", "formation_8h.html#structslot__", [
+      [ "alt", "formation_8h.html#a55ec137714f3d0c741faee75d6869f0a", null ],
+      [ "east", "formation_8h.html#a654c80b1b407b655ae863b5e771158d8", null ],
+      [ "north", "formation_8h.html#a900562e37aa0b7cee40829bd840292fb", null ],
+      [ "status", "formation_8h.html#a0bd264ee0d099ab2c11ac8a3dd2e1436", null ]
+    ] ],
     [ "FORM_MODE_COURSE", "formation_8h.html#ab669f7ba64f662a9811c2a7b6c3521e5", null ],
     [ "FORM_MODE_GLOBAL", "formation_8h.html#a8e68e787f735c2d99eb86aadd4ce9e53", null ],
     [ "ParseFormationSlot", "formation_8h.html#a5914fdaab6f4aef908e9efaf00f66f80", null ],
@@ -23,7 +28,7 @@ var formation_8h =
     [ "coef_form_course", "formation_8h.html#a63a598c84874fb07f88560d27a7899c9", null ],
     [ "coef_form_pos", "formation_8h.html#a605a95325bff4b9315ca3a0375e3aaf1", null ],
     [ "coef_form_speed", "formation_8h.html#ab7cf3591117130c28c84ad178ba86be1", null ],
-    [ "form_mode", "formation_8h.html#a5e08859d5f7c09e8d087590c1cc5d591", null ],
+    [ "form_mode", "formation_8h.html#a8e178fe2764678e0d6ec092050a8f561", null ],
     [ "form_prox", "formation_8h.html#ac0c595691716cf211d3ce0d7a7f60f8a", null ],
     [ "formation", "formation_8h.html#a86703694a52eca211bffb90b5163c75a", null ],
     [ "leader_id", "formation_8h.html#a6642110f5acd6b9fca3276cd472677d8", null ]

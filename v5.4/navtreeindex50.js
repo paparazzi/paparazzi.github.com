@@ -1,5 +1,6 @@
 var NAVTREEINDEX50 =
 {
+"module__gps_i2c.html#files":[2,133,1],
 "module__gps_i2c.html#functions":[2,133,0],
 "module__gps_i2c.html#headers":[2,133,1,0],
 "module__gps_i2c.html#init_functions":[2,133,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX50 =
 "module__ins_xsens_mtig_uart0.html#init_functions":[2,38,0,0],
 "module__ins_xsens_mtig_uart0.html#module_xml__ins_xsens_mtig_uart0":[2,38,1,2],
 "module__ins_xsens_mtig_uart0.html#periodic_functions":[2,38,0,1],
-"module__ins_xsens_mtig_uart0.html#sources":[2,38,1,1],
-"module__ir_mlx.html":[2,53]
+"module__ins_xsens_mtig_uart0.html#sources":[2,38,1,1]
 };

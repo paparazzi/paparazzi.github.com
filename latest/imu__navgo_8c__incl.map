@@ -1,30 +1,31 @@
 <map id="sw/airborne/boards/navgo/imu_navgo.c" name="sw/airborne/boards/navgo/imu_navgo.c">
-<area shape="rect" id="node5" href="$imu__navgo_8h.html" title="Interface for the IMU on the NavGo board. " alt="" coords="1111,107,1215,135"/>
-<area shape="rect" id="node43" href="$i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="1029,387,1160,415"/>
-<area shape="rect" id="node69" href="$led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1519,107,1572,135"/>
-<area shape="rect" id="node73" href="$uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1607,201,1745,229"/>
-<area shape="rect" id="node84" href="$downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1993,99,2145,143"/>
-<area shape="rect" id="node11" href="$imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="532,201,671,229"/>
-<area shape="rect" id="node39" href="$itg3200_8h.html" title="Driver for the gyro ITG3200 from InvenSense. " alt="" coords="639,294,796,322"/>
-<area shape="rect" id="node51" href="$adxl345__i2c_8h.html" title="Driver for the accelerometer ADXL345 from Analog Devices using I2C. " alt="" coords="853,286,1000,330"/>
-<area shape="rect" id="node61" href="$hmc58xx_8h.html" title="peripherals/hmc58xx.h" alt="" coords="1080,294,1245,322"/>
-<area shape="rect" id="node13" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="595,387,773,415"/>
-<area shape="rect" id="node28" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="112,387,301,415"/>
-<area shape="rect" id="node33" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="329,286,492,330"/>
+<area shape="rect" id="node5" href="$imu__navgo_8h.html" title="Interface for the IMU on the NavGo board. " alt="" coords="1005,107,1109,135"/>
+<area shape="rect" id="node43" href="$i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="993,387,1124,415"/>
+<area shape="rect" id="node68" href="$led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1276,107,1329,135"/>
+<area shape="rect" id="node72" href="$abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="1356,107,1489,135"/>
+<area shape="rect" id="node76" href="$uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1512,201,1651,229"/>
+<area shape="rect" id="node87" href="$downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1904,99,2056,143"/>
+<area shape="rect" id="node11" href="$imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="516,201,655,229"/>
+<area shape="rect" id="node39" href="$itg3200_8h.html" title="Driver for the gyro ITG3200 from InvenSense. " alt="" coords="623,294,780,322"/>
+<area shape="rect" id="node50" href="$adxl345__i2c_8h.html" title="Driver for the accelerometer ADXL345 from Analog Devices using I2C. " alt="" coords="804,286,951,330"/>
+<area shape="rect" id="node60" href="$hmc58xx_8h.html" title="peripherals/hmc58xx.h" alt="" coords="975,294,1140,322"/>
+<area shape="rect" id="node13" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="508,387,687,415"/>
+<area shape="rect" id="node28" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="76,387,265,415"/>
+<area shape="rect" id="node33" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="303,286,465,330"/>
 <area shape="rect" id="node16" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="147,481,301,509"/>
-<area shape="rect" id="node23" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="553,481,703,509"/>
-<area shape="rect" id="node49" href="$itg3200__regs_8h.html" title="Register defs for ITG3200 and IMU3000 gyros. " alt="" coords="427,379,571,423"/>
-<area shape="rect" id="node56" href="$adxl345_8h.html" title="Analog Devices ADXL345 accelerometer driver common interface (I2C and SPI). " alt="" coords="848,387,1005,415"/>
-<area shape="rect" id="node59" href="$adxl345__regs_8h.html" title="Register and address definitions for ADXL345 accelerometer. " alt="" coords="777,473,924,517"/>
-<area shape="rect" id="node66" href="$hmc58xx__regs_8h.html" title="Register defs for Honeywell HMC5843 and HMC5883 magnetometers. " alt="" coords="1235,379,1389,423"/>
-<area shape="rect" id="node77" href="$link__device_8h.html" title="generic device header " alt="" coords="2299,481,2480,509"/>
-<area shape="rect" id="node79" href="$inttypes_8h.html" title="inttypes.h" alt="" coords="2219,566,2304,594"/>
-<area shape="rect" id="node91" href="$pprz__transport_8h.html" title="Extra datalink using PPRZ protocol. " alt="" coords="2492,286,2644,330"/>
-<area shape="rect" id="node105" href="$pprzlog__transport_8h.html" title="Protocol for on&#45;board data logger with timestamp. " alt="" coords="1705,286,1857,330"/>
-<area shape="rect" id="node117" href="$xbee_8h.html" title="Maxstream XBee serial input and output. " alt="" coords="2051,193,2203,237"/>
-<area shape="rect" id="node124" href="$w5100_8h.html" title="W5100 ethernet chip I/O. " alt="" coords="2328,193,2480,237"/>
-<area shape="rect" id="node95" href="$datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1988,379,2140,423"/>
-<area shape="rect" id="node100" href="$transport_8h.html" title="generic transport header " alt="" coords="2215,379,2367,423"/>
-<area shape="rect" id="node107" href="$sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1627,387,1797,415"/>
-<area shape="rect" id="node122" href="$xbee24_8h.html" title="Configuration for 2.4GHz &quot;series 1&quot; and 900MHz modules. " alt="" coords="2164,286,2316,330"/>
+<area shape="rect" id="node23" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="529,481,679,509"/>
+<area shape="rect" id="node48" href="$itg3200__regs_8h.html" title="Register defs for ITG3200 and IMU3000 gyros. " alt="" coords="340,379,484,423"/>
+<area shape="rect" id="node55" href="$adxl345_8h.html" title="Analog Devices ADXL345 accelerometer driver common interface (I2C and SPI). " alt="" coords="761,387,919,415"/>
+<area shape="rect" id="node58" href="$adxl345__regs_8h.html" title="Register and address definitions for ADXL345 accelerometer. " alt="" coords="804,473,951,517"/>
+<area shape="rect" id="node65" href="$hmc58xx__regs_8h.html" title="Register defs for Honeywell HMC5843 and HMC5883 magnetometers. " alt="" coords="1199,379,1353,423"/>
+<area shape="rect" id="node80" href="$link__device_8h.html" title="generic device header " alt="" coords="1989,481,2171,509"/>
+<area shape="rect" id="node82" href="$inttypes_8h.html" title="inttypes.h" alt="" coords="2307,566,2392,594"/>
+<area shape="rect" id="node94" href="$pprz__transport_8h.html" title="Building and parsing Paparazzi frames. " alt="" coords="1908,286,2060,330"/>
+<area shape="rect" id="node108" href="$pprzlog__transport_8h.html" title="Protocol for on&#45;board data logger with timestamp. " alt="" coords="2463,286,2615,330"/>
+<area shape="rect" id="node120" href="$xbee_8h.html" title="Maxstream XBee serial input and output. " alt="" coords="2075,193,2227,237"/>
+<area shape="rect" id="node127" href="$w5100_8h.html" title="W5100 ethernet chip I/O. " alt="" coords="1848,193,2000,237"/>
+<area shape="rect" id="node98" href="$datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1736,379,1888,423"/>
+<area shape="rect" id="node103" href="$transport_8h.html" title="generic transport header " alt="" coords="2135,379,2287,423"/>
+<area shape="rect" id="node110" href="$sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="2463,387,2633,415"/>
+<area shape="rect" id="node125" href="$xbee24_8h.html" title="Configuration for 2.4GHz &quot;series 1&quot; and 900MHz modules. " alt="" coords="2236,286,2388,330"/>
 </map>

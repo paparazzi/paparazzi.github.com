@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('geo__mag_8c.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -106,6 +106,7 @@ $(document).ready(function(){initNavTree('geo__mag_8c.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -113,14 +114,14 @@ $(document).ready(function(){initNavTree('geo__mag_8c.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Calculation of the Geomagnetic field vector from current GPS fix.  
+<p>Calculation of the Geomagnetic field vector from current location.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="geo__mag_8h_source.html">modules/geo_mag/geo_mag.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="pprz__geodetic__wmm2010_8h_source.html">math/pprz_geodetic_wmm2010.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="pprz__geodetic__wmm2015_8h_source.html">math/pprz_geodetic_wmm2015.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="pprz__algebra__double_8h_source.html">math/pprz_algebra_double.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="gps_8h_source.html">subsystems/gps.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br/>
 <code>#include &quot;autopilot.h&quot;</code><br/>
-<code>#include &quot;<a class="el" href="ahrs_8h_source.html">subsystems/ahrs.h</a>&quot;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for geo_mag.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -128,11 +129,16 @@ $(document).ready(function(){initNavTree('geo__mag_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="geo__mag_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2geo__mag_2geo__mag_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2geo__mag_2geo__mag_8c" id="sw_2airborne_2modules_2geo__mag_2geo__mag_8c">
-<area shape="rect" id="node3" href="geo__mag_8h.html" title="Calculation of the Geomagnetic field vector from current GPS fix. " alt="" coords="93,193,261,237"/><area shape="rect" id="node7" href="pprz__algebra__double_8h.html" title="Paparazzi double precision floating point algebra. " alt="" coords="5,294,211,322"/><area shape="rect" id="node22" href="pprz__geodetic__wmm2010_8h.html" title="WMM2010 Geomagnetic field model. " alt="" coords="215,99,364,143"/><area shape="rect" id="node25" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="1084,201,1223,229"/><area shape="rect" id="node54" href="ahrs_8h.html" title="Attitude and Heading Reference System interface. " alt="" coords="388,107,529,135"/><area shape="rect" id="node9" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="157,465,275,493"/><area shape="rect" id="node16" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="387,379,539,407"/><area shape="rect" id="node28" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="1007,286,1156,330"/><area shape="rect" id="node42" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1167,379,1337,407"/><area shape="rect" id="node30" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="715,379,837,407"/><area shape="rect" id="node33" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="861,379,1000,407"/><area shape="rect" id="node37" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="765,465,915,493"/><area shape="rect" id="node44" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1408,465,1493,493"/><area shape="rect" id="node59" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="531,201,597,229"/><area shape="rect" id="node64" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="545,286,695,330"/><area shape="rect" id="node69" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="719,286,881,330"/></map>
+<area shape="rect" id="node3" href="geo__mag_8h.html" title="Calculation of the Geomagnetic field vector from current location. " alt="" coords="201,99,369,143"/><area shape="rect" id="node7" href="pprz__algebra__double_8h.html" title="Paparazzi double precision floating point algebra. " alt="" coords="59,201,264,229"/><area shape="rect" id="node22" href="pprz__geodetic__wmm2015_8h.html" title="WMM2015 Geomagnetic field model. " alt="" coords="556,99,705,143"/><area shape="rect" id="node25" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="393,107,532,135"/><area shape="rect" id="node52" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="729,107,863,135"/><area shape="rect" id="node9" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="147,371,264,399"/><area shape="rect" id="node16" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="25,286,177,314"/><area shape="rect" id="node28" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="420,193,569,237"/><area shape="rect" id="node42" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="759,286,929,314"/><area shape="rect" id="node30" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="557,286,680,314"/><area shape="rect" id="node33" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="395,286,533,314"/><area shape="rect" id="node37" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="440,371,589,399"/><area shape="rect" id="node44" href="inttypes_8h.html" title="inttypes.h" alt="" coords="805,371,891,399"/></map>
 </div>
 </div>
 <p><a href="geo__mag_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ac7fc5bc9131cd7ac30891e44ddddb6f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="geo__mag_8c.html#ac7fc5bc9131cd7ac30891e44ddddb6f2">GEO_MAG_SENDER_ID</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:ac7fc5bc9131cd7ac30891e44ddddb6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aa76cdec76594fd3a30af04b60a52af2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="geo__mag_8c.html#aa76cdec76594fd3a30af04b60a52af2d">geo_mag_init</a> (void)</td></tr>
@@ -144,17 +150,32 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a860fcef9bf99d58d3f1386ae176c0e90"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="geo__mag_8c.html#a860fcef9bf99d58d3f1386ae176c0e90">geo_mag_calc_flag</a></td></tr>
-<tr class="separator:a860fcef9bf99d58d3f1386ae176c0e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf6e468d33d4976598df3dbe1c67b189"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structGeoMag.html">GeoMag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="geo__mag_8c.html#abf6e468d33d4976598df3dbe1c67b189">geo_mag</a></td></tr>
+<tr class="memitem:abf6e468d33d4976598df3dbe1c67b189"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="geo__mag_8h.html#structGeoMag">GeoMag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="geo__mag_8c.html#abf6e468d33d4976598df3dbe1c67b189">geo_mag</a></td></tr>
 <tr class="separator:abf6e468d33d4976598df3dbe1c67b189"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Calculation of the Geomagnetic field vector from current GPS fix. </p>
-<p>This module is based on the WMM2010 model (<a href="http://www.ngdc.noaa.gov/geomag/models.shtml">http://www.ngdc.noaa.gov/geomag/models.shtml</a>). </p>
+<div class="textblock"><p>Calculation of the Geomagnetic field vector from current location. </p>
+<p>This module is based on the WMM2015 model (<a href="http://www.ngdc.noaa.gov/geomag/WMM/DoDWMM.shtml">http://www.ngdc.noaa.gov/geomag/WMM/DoDWMM.shtml</a>). </p>
 
 <p>Definition in file <a class="el" href="geo__mag_8c_source.html">geo_mag.c</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="ac7fc5bc9131cd7ac30891e44ddddb6f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GEO_MAG_SENDER_ID&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="geo__mag_8c_source.html#l00040">40</a> of file <a class="el" href="geo__mag_8c_source.html">geo_mag.c</a>.</p>
+
+<p>Referenced by <a class="el" href="geo__mag_8c_source.html#l00059">geo_mag_event()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="acbcdb044d58bcc512ab1e87e31020d81"></a>
 <div class="memitem">
 <div class="memproto">
@@ -169,9 +190,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="geo__mag_8c_source.html#l00052">52</a> of file <a class="el" href="geo__mag_8c_source.html">geo_mag.c</a>.</p>
+<p>Definition at line <a class="el" href="geo__mag_8c_source.html#l00059">59</a> of file <a class="el" href="geo__mag_8c_source.html">geo_mag.c</a>.</p>
 
-<p>References <a class="el" href="ins__float__invariant_8h_source.html#l00118">ahrs_impl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00059">LlaCoor_i::alt</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00102">double_vect3_normalize()</a>, <a class="el" href="pprz__geodetic__wmm2010_8h_source.html#l00046">EXT_COEFF1</a>, <a class="el" href="pprz__geodetic__wmm2010_8h_source.html#l00047">EXT_COEFF2</a>, <a class="el" href="pprz__geodetic__wmm2010_8h_source.html#l00048">EXT_COEFF3</a>, <a class="el" href="pprz__geodetic__wmm2010_8c_source.html#l00061">extrapsh()</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="pprz__geodetic__wmm2010_8h_source.html#l00039">GEO_EPOCH</a>, <a class="el" href="geo__mag_8c_source.html#l00037">geo_mag</a>, <a class="el" href="geo__mag_8c_source.html#l00036">geo_mag_calc_flag</a>, <a class="el" href="gps_8c_source.html#l00041">gps</a>, <a class="el" href="pprz__geodetic__wmm2010_8h_source.html#l00051">GPS_EPOCH_BEGIN</a>, <a class="el" href="pprz__geodetic__wmm2010_8h_source.html#l00045">IEXT</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00057">LlaCoor_i::lat</a>, <a class="el" href="gps_8h_source.html#l00065">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00058">LlaCoor_i::lon</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00218">MAG_BFP_OF_REAL</a>, <a class="el" href="pprz__geodetic__wmm2010_8c_source.html#l00102">mag_calc()</a>, <a class="el" href="pprz__geodetic__wmm2010_8h_source.html#l00060">MAXCOEFF</a>, <a class="el" href="pprz__geodetic__wmm2010_8h_source.html#l00042">NMAX_1</a>, <a class="el" href="pprz__geodetic__wmm2010_8h_source.html#l00043">NMAX_2</a>, <a class="el" href="geo__mag_8h_source.html#l00036">GeoMag::ready</a>, <a class="el" href="pprz__geodetic__wmm2010_8h_source.html#l00057">SECS_IN_YEAR</a>, <a class="el" href="gps_8h_source.html#l00080">GpsState::tow</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="geo__mag_8h_source.html#l00035">GeoMag::vect</a>, <a class="el" href="pprz__algebra_8h_source.html#l00116">VECT3_ASSIGN</a>, <a class="el" href="pprz__algebra_8h_source.html#l00131">VECT3_COPY</a>, <a class="el" href="gps_8h_source.html#l00079">GpsState::week</a>, <a class="el" href="pprz__geodetic__wmm2010_8h_source.html#l00056">WEEKS_IN_YEAR</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00043">DoubleVect3::x</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00044">DoubleVect3::y</a>, and <a class="el" href="pprz__algebra__double_8h_source.html#l00045">DoubleVect3::z</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="geo__mag_8h_source.html#l00037">GeoMag::calc_once</a>, <a class="el" href="pprz__geodetic__wmm2015_8h_source.html#l00052">EXT_COEFF1</a>, <a class="el" href="pprz__geodetic__wmm2015_8h_source.html#l00053">EXT_COEFF2</a>, <a class="el" href="pprz__geodetic__wmm2015_8h_source.html#l00054">EXT_COEFF3</a>, <a class="el" href="pprz__geodetic__wmm2015_8c_source.html#l00064">extrapsh()</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00162">float_vect3_normalize()</a>, <a class="el" href="pprz__geodetic__wmm2015_8h_source.html#l00045">GEO_EPOCH</a>, <a class="el" href="geo__mag_8c_source.html#l00043">geo_mag</a>, <a class="el" href="geo__mag_8c_source.html#l00040">GEO_MAG_SENDER_ID</a>, <a class="el" href="gps_8c_source.html#l00041">gps</a>, <a class="el" href="pprz__geodetic__wmm2015_8h_source.html#l00057">GPS_EPOCH_BEGIN</a>, <a class="el" href="pprz__geodetic__wmm2015_8h_source.html#l00051">IEXT</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="gps_8h_source.html#l00068">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="pprz__geodetic__wmm2015_8c_source.html#l00105">mag_calc()</a>, <a class="el" href="pprz__geodetic__wmm2015_8h_source.html#l00067">MAXCOEFF</a>, <a class="el" href="pprz__geodetic__wmm2015_8h_source.html#l00048">NMAX_1</a>, <a class="el" href="pprz__geodetic__wmm2015_8h_source.html#l00049">NMAX_2</a>, <a class="el" href="geo__mag_8h_source.html#l00038">GeoMag::ready</a>, <a class="el" href="pprz__geodetic__wmm2015_8h_source.html#l00064">SECS_IN_YEAR</a>, <a class="el" href="gps_8h_source.html#l00083">GpsState::tow</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="geo__mag_8h_source.html#l00036">GeoMag::vect</a>, <a class="el" href="gps_8h_source.html#l00082">GpsState::week</a>, <a class="el" href="pprz__geodetic__wmm2015_8h_source.html#l00063">WEEKS_IN_YEAR</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00047">DoubleVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00054">FloatVect3::x</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00048">DoubleVect3::y</a>, and <a class="el" href="pprz__algebra__double_8h_source.html#l00049">DoubleVect3::z</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -180,7 +201,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="geo__mag_8c_acbcdb044d58bcc512ab1e87e31020d81_cgraph.png" border="0" usemap="#geo__mag_8c_acbcdb044d58bcc512ab1e87e31020d81_cgraph" alt=""/></div>
 <map name="geo__mag_8c_acbcdb044d58bcc512ab1e87e31020d81_cgraph" id="geo__mag_8c_acbcdb044d58bcc512ab1e87e31020d81_cgraph">
-<area shape="rect" id="node3" href="pprz__algebra__double_8h.html#a534b127a8508dc0c012db8db9378af0d" title="normalize 3D vector in place " alt="" coords="180,5,356,33"/><area shape="rect" id="node7" href="pprz__geodetic__wmm2010_8c.html#a57f76a5e5afe004c3b985f11b4f1b13e" title="extrapsh" alt="" coords="229,55,307,83"/><area shape="rect" id="node9" href="pprz__geodetic__wmm2010_8c.html#a1b31a452ada68c619861da2143d4998e" title="mag_calc" alt="" coords="227,106,309,134"/><area shape="rect" id="node5" href="pprz__algebra__double_8h.html#ae5087aa382f54a889f1786194651a2b6" title="double_vect3_norm" alt="" coords="407,5,553,33"/></map>
+<area shape="rect" id="node3" href="group__math__geodetic__wmm.html#ga57f76a5e5afe004c3b985f11b4f1b13e" title="extrapsh" alt="" coords="221,5,299,33"/><area shape="rect" id="node5" href="group__math__algebra__float.html#gaf08320455a290ed351f2a516473a89db" title="normalize 3D vector in place " alt="" coords="179,55,341,83"/><area shape="rect" id="node11" href="group__math__geodetic__wmm.html#ga1b31a452ada68c619861da2143d4998e" title="mag_calc" alt="" coords="219,106,301,134"/><area shape="rect" id="node7" href="group__math__algebra__float.html#gad33d6e2c6bf00d660031e57fb3675666" title="float_vect3_norm" alt="" coords="389,55,523,83"/><area shape="rect" id="node9" href="group__math__algebra__float.html#gaf0812637c58834d3baff5cd82fa220d2" title="float_vect3_norm2" alt="" coords="571,55,712,83"/></map>
 </div>
 </p>
 
@@ -200,9 +221,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="geo__mag_8c_source.html#l00039">39</a> of file <a class="el" href="geo__mag_8c_source.html">geo_mag.c</a>.</p>
+<p>Definition at line <a class="el" href="geo__mag_8c_source.html#l00045">45</a> of file <a class="el" href="geo__mag_8c_source.html">geo_mag.c</a>.</p>
 
-<p>References <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="geo__mag_8c_source.html#l00037">geo_mag</a>, <a class="el" href="geo__mag_8c_source.html#l00036">geo_mag_calc_flag</a>, and <a class="el" href="geo__mag_8h_source.html#l00036">GeoMag::ready</a>.</p>
+<p>References <a class="el" href="geo__mag_8h_source.html#l00037">GeoMag::calc_once</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="geo__mag_8c_source.html#l00043">geo_mag</a>, and <a class="el" href="geo__mag_8h_source.html#l00038">GeoMag::ready</a>.</p>
 
 </div>
 </div>
@@ -220,9 +241,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="geo__mag_8c_source.html#l00045">45</a> of file <a class="el" href="geo__mag_8c_source.html">geo_mag.c</a>.</p>
+<p>Definition at line <a class="el" href="geo__mag_8c_source.html#l00051">51</a> of file <a class="el" href="geo__mag_8c_source.html">geo_mag.c</a>.</p>
 
-<p>References <a class="el" href="gps_8h_source.html#l00078">GpsState::fix</a>, <a class="el" href="geo__mag_8c_source.html#l00037">geo_mag</a>, <a class="el" href="geo__mag_8c_source.html#l00036">geo_mag_calc_flag</a>, <a class="el" href="gps_8c_source.html#l00041">gps</a>, <a class="el" href="gps_8h_source.html#l00043">GPS_FIX_3D</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00043">kill_throttle</a>, <a class="el" href="geo__mag_8h_source.html#l00036">GeoMag::ready</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p>References <a class="el" href="geo__mag_8h_source.html#l00037">GeoMag::calc_once</a>, <a class="el" href="geo__mag_8c_source.html#l00043">geo_mag</a>, <a class="el" href="gps_8h_source.html#l00047">GpsFixValid</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00042">kill_throttle</a>, <a class="el" href="geo__mag_8h_source.html#l00038">GeoMag::ready</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
 
 </div>
 </div>
@@ -232,30 +253,14 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structGeoMag.html">GeoMag</a> geo_mag</td>
+          <td class="memname">struct <a class="el" href="geo__mag_8h.html#structGeoMag">GeoMag</a> geo_mag</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="geo__mag_8c_source.html#l00037">37</a> of file <a class="el" href="geo__mag_8c_source.html">geo_mag.c</a>.</p>
+<p>Definition at line <a class="el" href="geo__mag_8c_source.html#l00043">43</a> of file <a class="el" href="geo__mag_8c_source.html">geo_mag.c</a>.</p>
 
-<p>Referenced by <a class="el" href="geo__mag_8c_source.html#l00052">geo_mag_event()</a>, <a class="el" href="geo__mag_8c_source.html#l00039">geo_mag_init()</a>, and <a class="el" href="geo__mag_8c_source.html#l00045">geo_mag_periodic()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a860fcef9bf99d58d3f1386ae176c0e90"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool_t geo_mag_calc_flag</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="geo__mag_8c_source.html#l00036">36</a> of file <a class="el" href="geo__mag_8c_source.html">geo_mag.c</a>.</p>
-
-<p>Referenced by <a class="el" href="geo__mag_8c_source.html#l00052">geo_mag_event()</a>, <a class="el" href="geo__mag_8c_source.html#l00039">geo_mag_init()</a>, and <a class="el" href="geo__mag_8c_source.html#l00045">geo_mag_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="geo__mag_8c_source.html#l00059">geo_mag_event()</a>, <a class="el" href="geo__mag_8c_source.html#l00045">geo_mag_init()</a>, and <a class="el" href="geo__mag_8c_source.html#l00051">geo_mag_periodic()</a>.</p>
 
 </div>
 </div>
@@ -265,7 +270,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_45631f37b0deddad5fac6a40f1cf48fa.html">geo_mag</a></li><li class="navelem"><a class="el" href="geo__mag_8c.html">geo_mag.c</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:04 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:24 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

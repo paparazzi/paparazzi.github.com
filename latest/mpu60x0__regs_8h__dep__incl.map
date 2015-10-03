@@ -1,22 +1,24 @@
 <map id="sw/airborne/peripherals/mpu60x0_regs.h" name="sw/airborne/peripherals/mpu60x0_regs.h">
-<area shape="rect" id="node3" href="$mpu60x0_8h.html" title="MPU&#45;60X0 driver common interface (I2C and SPI). " alt="" coords="775,99,945,143"/>
-<area shape="rect" id="node5" href="$imu__aspirin2_8c.html" title="sw/airborne/modules\l/sensors/imu_aspirin2.c" alt="" coords="483,193,653,237"/>
-<area shape="rect" id="node7" href="$mpu60x0_8c.html" title="MPU&#45;60X0 driver common functions (I2C and SPI). " alt="" coords="677,193,848,237"/>
-<area shape="rect" id="node9" href="$mpu60x0__i2c_8h.html" title="Driver for the MPU&#45;60X0 using I2C. " alt="" coords="872,193,1043,237"/>
-<area shape="rect" id="node33" href="$mpu60x0__spi_8h.html" title="Driver for the MPU&#45;60X0 using SPI. " alt="" coords="1793,193,1964,237"/>
+<area shape="rect" id="node3" href="$mpu60x0_8h.html" title="MPU&#45;60X0 driver common interface (I2C and SPI). " alt="" coords="873,99,1044,143"/>
+<area shape="rect" id="node5" href="$imu__aspirin2_8c.html" title="sw/airborne/modules\l/sensors/imu_aspirin2.c" alt="" coords="581,193,752,237"/>
+<area shape="rect" id="node7" href="$mpu60x0_8c.html" title="MPU&#45;60X0 driver common functions (I2C and SPI). " alt="" coords="776,193,947,237"/>
+<area shape="rect" id="node9" href="$mpu60x0__i2c_8h.html" title="Driver for the MPU&#45;60X0 using I2C. " alt="" coords="971,193,1141,237"/>
+<area shape="rect" id="node35" href="$mpu60x0__spi_8h.html" title="Driver for the MPU&#45;60X0 using SPI. " alt="" coords="2099,193,2269,237"/>
 <area shape="rect" id="node11" href="$imu__apogee_8h.html" title="Driver for the IMU on the Apogee board. " alt="" coords="192,286,360,330"/>
 <area shape="rect" id="node17" href="$imu__krooz_8h.html" title="Driver for the IMU on the KroozSD board. " alt="" coords="384,286,525,330"/>
 <area shape="rect" id="node21" href="$imu__krooz__memsic_8h.html" title="Driver for the IMU on the KroozSD Big Rotorcraft Edition board. " alt="" coords="549,286,749,330"/>
 <area shape="rect" id="node25" href="$mpu60x0__i2c_8c.html" title="Driver for the MPU&#45;60X0 using I2C. " alt="" coords="773,286,944,330"/>
 <area shape="rect" id="node27" href="$imu__bebop_8h.html" title="Interface for the Bebop magnetometer, accelerometer and gyroscope. " alt="" coords="968,286,1144,330"/>
 <area shape="rect" id="node29" href="$imu__drotek__10dof__v2_8h.html" title="Driver for the Drotek 10DOF V2 IMU. " alt="" coords="1168,286,1371,330"/>
-<area shape="rect" id="node31" href="$imu__navstik_8h.html" title="Interface for the Navstik magnetometer, accelerometer and gyroscope. " alt="" coords="1395,286,1571,330"/>
+<area shape="rect" id="node31" href="$imu__mpu60x0__i2c_8h.html" title="Driver for IMU with only MPU60x0 via I2C. " alt="" coords="1395,286,1576,330"/>
+<area shape="rect" id="node33" href="$imu__navstik_8h.html" title="Interface for the Navstik magnetometer, accelerometer and gyroscope. " alt="" coords="1600,286,1776,330"/>
 <area shape="rect" id="node13" href="$apogee_2baro__board_8c.html" title="integrated barometer for Apogee boards (mpl3115) " alt="" coords="5,379,168,423"/>
 <area shape="rect" id="node15" href="$imu__apogee_8c.html" title="Driver for the IMU on the Apogee board. " alt="" coords="192,379,360,423"/>
 <area shape="rect" id="node19" href="$imu__krooz_8c.html" title="Driver for the IMU on the KroozSD board. " alt="" coords="384,379,525,423"/>
 <area shape="rect" id="node23" href="$imu__krooz__memsic_8c.html" title="Driver for the IMU on the KroozSD Big Rotorcraft Edition board. " alt="" coords="549,379,749,423"/>
-<area shape="rect" id="node35" href="$mpu60x0__spi_8c.html" title="Driver for the MPU&#45;60X0 using SPI. " alt="" coords="1595,286,1765,330"/>
-<area shape="rect" id="node37" href="$imu__aspirin__2__spi_8h.html" title="Driver for the Aspirin v2.x IMU using SPI for the MPU6000. " alt="" coords="1789,286,1968,330"/>
-<area shape="rect" id="node39" href="$imu__mpu6000__hmc5883_8h.html" title="Driver for IMU with MPU6000 via SPI and HMC5883 via I2c. " alt="" coords="1992,286,2216,330"/>
-<area shape="rect" id="node41" href="$imu__px4fmu_8h.html" title="Driver for the PX4FMU SPI1 for the MPU6000 and I2C2 for the HMC5883. " alt="" coords="2240,286,2416,330"/>
+<area shape="rect" id="node37" href="$mpu60x0__spi_8c.html" title="Driver for the MPU&#45;60X0 using SPI. " alt="" coords="1800,286,1971,330"/>
+<area shape="rect" id="node39" href="$imu__aspirin__2__spi_8h.html" title="Driver for the Aspirin v2.x IMU using SPI for the MPU6000. " alt="" coords="1995,286,2173,330"/>
+<area shape="rect" id="node41" href="$imu__mpu6000_8h.html" title="Driver for IMU with only MPU6000 via SPI. " alt="" coords="2197,286,2373,330"/>
+<area shape="rect" id="node43" href="$imu__mpu6000__hmc5883_8h.html" title="Driver for IMU with MPU6000 via SPI and HMC5883 via I2c. " alt="" coords="2397,286,2621,330"/>
+<area shape="rect" id="node45" href="$imu__px4fmu_8h.html" title="Driver for the PX4FMU SPI1 for the MPU6000 and I2C2 for the HMC5883. " alt="" coords="2645,286,2821,330"/>
 </map>

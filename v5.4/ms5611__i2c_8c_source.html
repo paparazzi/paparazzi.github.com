@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.4.2_stable-3-gc351a71</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -292,22 +292,24 @@ $(document).ready(function(){initNavTree('ms5611__i2c_8c_source.html','');});
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;              ms-&gt;<a class="code" href="structMs5611__I2c.html#a0024dab605389b352bace1c1fc05d526">status</a> = <a class="code" href="ms5611_8h.html#aeabcd6fb6c9a54ba10c34130f71f855bad80b7547e536d830370c7cf96a6cb84d">MS5611_STATUS_UNINIT</a>;</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            }</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;          }</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        }</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;      <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        ms-&gt;<a class="code" href="structMs5611__I2c.html#a4d158b2e88d395a24a4d533d301ff522">i2c_trans</a>.<a class="code" href="structi2c__transaction.html#ac4f80563bab524eee997c5c27ef570a4" title="Transaction status. ">status</a> = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace" title="transaction set to done by user level ">I2CTransDone</a>;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    }</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  }</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;}</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;          ms-&gt;<a class="code" href="structMs5611__I2c.html#a4d158b2e88d395a24a4d533d301ff522">i2c_trans</a>.<a class="code" href="structi2c__transaction.html#ac4f80563bab524eee997c5c27ef570a4" title="Transaction status. ">status</a> = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace" title="transaction set to done by user level ">I2CTransDone</a>;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        }</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;      <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        ms-&gt;<a class="code" href="structMs5611__I2c.html#a4d158b2e88d395a24a4d533d301ff522">i2c_trans</a>.<a class="code" href="structi2c__transaction.html#ac4f80563bab524eee997c5c27ef570a4" title="Transaction status. ">status</a> = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace" title="transaction set to done by user level ">I2CTransDone</a>;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    }</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  }</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="ms5611__i2c_8c.html">ms5611_i2c.c</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:15:15 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Jun 17 2015 02:01:18 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

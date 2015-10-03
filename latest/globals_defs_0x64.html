@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('globals_defs_0x64.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -166,7 +166,9 @@ $(document).ready(function(){initNavTree('globals_defs_0x64.html','');});
 : <a class="el" href="humid__sht_8c.html#aef3aa4f1e874ae5df12e180d51dfc73b">humid_sht.c</a>
 </li>
 <li>DATALINK_C
-: <a class="el" href="setup__actuators_8c.html#ace2f20f3712314ddd9e83035468ab745">setup_actuators.c</a>
+: <a class="el" href="rotorcraft_2datalink_8c.html#ace2f20f3712314ddd9e83035468ab745">datalink.c</a>
+, <a class="el" href="setup__actuators_8c.html#ace2f20f3712314ddd9e83035468ab745">setup_actuators.c</a>
+, <a class="el" href="demo__ahrs__actuators_8c.html#ace2f20f3712314ddd9e83035468ab745">demo_ahrs_actuators.c</a>
 , <a class="el" href="fixedwing_2datalink_8c.html#ace2f20f3712314ddd9e83035468ab745">datalink.c</a>
 </li>
 <li>DatalinkEvent
@@ -175,8 +177,8 @@ $(document).ready(function(){initNavTree('globals_defs_0x64.html','');});
 <li>DC_AUTOSHOOT_DISTANCE_INTERVAL
 : <a class="el" href="dc_8c.html#a78746230363cff3adcbb71d93d39dd43">dc.c</a>
 </li>
-<li>DC_AUTOSHOOT_QUARTERSEC_PERIOD
-: <a class="el" href="dc_8c.html#adb1cf0e6430b222c56b989b0dc1e20db">dc.c</a>
+<li>DC_AUTOSHOOT_PERIOD
+: <a class="el" href="dc_8c.html#a0780b2bb0201d5099b0193f10f9a824f">dc.c</a>
 </li>
 <li>DC_AUTOSHOOT_SURVEY_INTERVAL
 : <a class="el" href="dc_8c.html#a108034f703ceb1c02cb219253f0de965">dc.c</a>
@@ -195,18 +197,21 @@ $(document).ready(function(){initNavTree('globals_defs_0x64.html','');});
 </li>
 <li>DC_PUSH
 : <a class="el" href="gpio__cam__ctrl_8c.html#a083ec1623bd3e3eb99edae0c55fd4b23">gpio_cam_ctrl.c</a>
+, <a class="el" href="servo__cam__ctrl_8c.html#a087c9c37b004f50871e9421268573eb4">servo_cam_ctrl.c</a>
 </li>
 <li>DC_RADIO_SHOOT_THRESHOLD
 : <a class="el" href="dc__shoot__rc_8c.html#a18f246d4a4f22ae6b3ab020ee9312b42">dc_shoot_rc.c</a>
 </li>
 <li>DC_RELEASE
 : <a class="el" href="gpio__cam__ctrl_8c.html#afef5e8365b0cfeb65b5ed1ee05a9c7d1">gpio_cam_ctrl.c</a>
+, <a class="el" href="servo__cam__ctrl_8c.html#a39e1df6290c51c3baa0bcb21e482d8e2">servo_cam_ctrl.c</a>
 </li>
 <li>DC_SHOT_SYNC_SEND
 : <a class="el" href="dc_8c.html#ab6895f24c7fbbecdf643ba240e287fb5">dc.c</a>
 </li>
 <li>DC_SHUTTER_DELAY
 : <a class="el" href="gpio__cam__ctrl_8c.html#a9642f48627a6517582c38e3593939e28">gpio_cam_ctrl.c</a>
+, <a class="el" href="servo__cam__ctrl_8c.html#a9642f48627a6517582c38e3593939e28">servo_cam_ctrl.c</a>
 </li>
 <li>dc_Stop
 : <a class="el" href="dc_8h.html#a9fa3be838c4c15559b76805ff40adae8">dc.h</a>
@@ -281,14 +286,20 @@ $(document).ready(function(){initNavTree('globals_defs_0x64.html','');});
 : <a class="el" href="vf__extended__float_8c.html#ab64c7f71460096eb6bed6963d617ea49">vf_extended_float.c</a>
 </li>
 <li>DEFAULT_ACTUATORS
-: <a class="el" href="tiny__2_80_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">tiny_2.0.h</a>
+: <a class="el" href="pc__sim_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">pc_sim.h</a>
+, <a class="el" href="px4fmu__1_87_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">px4fmu_1.7.h</a>
+, <a class="el" href="stm32f4__discovery_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">stm32f4_discovery.h</a>
+, <a class="el" href="tiny__0_899_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">tiny_0.99.h</a>
+, <a class="el" href="tiny__1_81_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">tiny_1.1.h</a>
+, <a class="el" href="tiny__2_80_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">tiny_2.0.h</a>
 , <a class="el" href="tiny__2_81_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">tiny_2.1.h</a>
 , <a class="el" href="umarim__1_80_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">umarim_1.0.h</a>
 , <a class="el" href="umarim__lite__2_80_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">umarim_lite_2.0.h</a>
 , <a class="el" href="apogee__1_80_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">apogee_1.0.h</a>
-, <a class="el" href="ardrone2__raw_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">ardrone2_raw.h</a>
-, <a class="el" href="ardrone2__sdk_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">ardrone2_sdk.h</a>
+, <a class="el" href="ardrone2_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">ardrone2.h</a>
 , <a class="el" href="bebop_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">bebop.h</a>
+, <a class="el" href="cc3d_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">cc3d.h</a>
+, <a class="el" href="elle0__1_80_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">elle0_1.0.h</a>
 , <a class="el" href="krooz__sd_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">krooz_sd.h</a>
 , <a class="el" href="lia__1_81_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">lia_1.1.h</a>
 , <a class="el" href="lisa__l__1_80_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">lisa_l_1.0.h</a>
@@ -298,11 +309,6 @@ $(document).ready(function(){initNavTree('globals_defs_0x64.html','');});
 , <a class="el" href="lisa__mx__common_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">lisa_mx_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">lisa_s_1.0.h</a>
 , <a class="el" href="navstik__1_80_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">navstik_1.0.h</a>
-, <a class="el" href="pc__sim_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">pc_sim.h</a>
-, <a class="el" href="px4fmu__1_87_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">px4fmu_1.7.h</a>
-, <a class="el" href="stm32f4__discovery_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">stm32f4_discovery.h</a>
-, <a class="el" href="tiny__0_899_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">tiny_0.99.h</a>
-, <a class="el" href="tiny__1_81_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">tiny_1.1.h</a>
 </li>
 <li>DEFAULT_AV_NB_SAMPLE
 : <a class="el" href="adc_8h.html#a926cfe25c54a1c6ac36923aeac21223a">adc.h</a>
@@ -316,23 +322,37 @@ $(document).ready(function(){initNavTree('globals_defs_0x64.html','');});
 <li>DefaultDevice
 : <a class="el" href="downlink_8h.html#a028b405f95cecb4af565b17c8ee71d80">downlink.h</a>
 </li>
+<li>DefaultInsImpl
+: <a class="el" href="ins__alt__float_8h.html#a39f06427af6d447d7d79ce6c24990207">ins_alt_float.h</a>
+, <a class="el" href="ins__float__invariant__wrapper_8h.html#a39f06427af6d447d7d79ce6c24990207">ins_float_invariant_wrapper.h</a>
+, <a class="el" href="ins__gps__passthrough_8h.html#a39f06427af6d447d7d79ce6c24990207">ins_gps_passthrough.h</a>
+, <a class="el" href="ins__gps__passthrough__utm_8h.html#a39f06427af6d447d7d79ce6c24990207">ins_gps_passthrough_utm.h</a>
+, <a class="el" href="ins__int_8h.html#a39f06427af6d447d7d79ce6c24990207">ins_int.h</a>
+, <a class="el" href="ins__vectornav__wrapper_8h.html#a39f06427af6d447d7d79ce6c24990207">ins_vectornav_wrapper.h</a>
+</li>
+<li>DefaultInsRegister
+: <a class="el" href="ins_8c.html#a8357050b75306e554eb343a7b170773a">ins.c</a>
+</li>
 <li>DefaultMilliAmpereOfAdc
 : <a class="el" href="navstik__1_80_8h.html#ae66588cc87259ee96c9b794f74bc6e0d">navstik_1.0.h</a>
 </li>
 <li>DefaultPeriodic
-: <a class="el" href="telemetry__common_8h.html#a1912e51b2e63ae9b0d41d91e073cfefd">telemetry_common.h</a>
+: <a class="el" href="telemetry_8h.html#a1912e51b2e63ae9b0d41d91e073cfefd">telemetry.h</a>
 </li>
 <li>DefaultVoltageOfAdc
-: <a class="el" href="apogee__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">apogee_1.0.h</a>
+: <a class="el" href="tiny__2_811_8h.html#a94fa241ceca04635f282e09bdd829f5f">tiny_2.11.h</a>
+, <a class="el" href="pc__sim_8h.html#a94fa241ceca04635f282e09bdd829f5f">pc_sim.h</a>
+, <a class="el" href="tiny__0_899_8h.html#a94fa241ceca04635f282e09bdd829f5f">tiny_0.99.h</a>
+, <a class="el" href="apogee__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">apogee_1.0.h</a>
 , <a class="el" href="booz__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">booz_1.0.h</a>
+, <a class="el" href="cc3d_8h.html#a94fa241ceca04635f282e09bdd829f5f">cc3d.h</a>
+, <a class="el" href="lisa__m__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">lisa_m_1.0.h</a>
+, <a class="el" href="elle0__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">elle0_1.0.h</a>
 , <a class="el" href="hb__1_81_8h.html#a94fa241ceca04635f282e09bdd829f5f">hb_1.1.h</a>
-, <a class="el" href="tiny__2_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">tiny_2.0.h</a>
 , <a class="el" href="hbmini__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">hbmini_1.0.h</a>
 , <a class="el" href="krooz__sd_8h.html#a94fa241ceca04635f282e09bdd829f5f">krooz_sd.h</a>
 , <a class="el" href="lia__1_81_8h.html#a94fa241ceca04635f282e09bdd829f5f">lia_1.1.h</a>
-, <a class="el" href="sdlog__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">sdlog_1.0.h</a>
 , <a class="el" href="lisa__l__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">lisa_l_1.0.h</a>
-, <a class="el" href="lisa__m__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">lisa_m_1.0.h</a>
 , <a class="el" href="lisa__m__2_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">lisa_m_2.0.h</a>
 , <a class="el" href="lisa__m__2_81_8h.html#a94fa241ceca04635f282e09bdd829f5f">lisa_m_2.1.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a94fa241ceca04635f282e09bdd829f5f">lisa_mx_common.h</a>
@@ -340,23 +360,31 @@ $(document).ready(function(){initNavTree('globals_defs_0x64.html','');});
 , <a class="el" href="logom__2_86_8h.html#a94fa241ceca04635f282e09bdd829f5f">logom_2.6.h</a>
 , <a class="el" href="navgo__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">navgo_1.0.h</a>
 , <a class="el" href="navstik__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">navstik_1.0.h</a>
-, <a class="el" href="pc__sim_8h.html#a94fa241ceca04635f282e09bdd829f5f">pc_sim.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#a94fa241ceca04635f282e09bdd829f5f">px4fmu_1.7.h</a>
+, <a class="el" href="sdlog__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">sdlog_1.0.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#a94fa241ceca04635f282e09bdd829f5f">stm32f4_discovery.h</a>
-, <a class="el" href="tiny__0_899_8h.html#a94fa241ceca04635f282e09bdd829f5f">tiny_0.99.h</a>
 , <a class="el" href="tiny__1_81_8h.html#a94fa241ceca04635f282e09bdd829f5f">tiny_1.1.h</a>
+, <a class="el" href="tiny__2_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">tiny_2.0.h</a>
 , <a class="el" href="tiny__2_81_8h.html#a94fa241ceca04635f282e09bdd829f5f">tiny_2.1.h</a>
-, <a class="el" href="tiny__2_811_8h.html#a94fa241ceca04635f282e09bdd829f5f">tiny_2.11.h</a>
 , <a class="el" href="twog__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">twog_1.0.h</a>
 , <a class="el" href="umarim__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">umarim_1.0.h</a>
 , <a class="el" href="umarim__lite__2_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">umarim_lite_2.0.h</a>
 , <a class="el" href="yapa__2_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">yapa_2.0.h</a>
 </li>
+<li>DEG_OF_EM7DEG
+: <a class="el" href="group__math__geodetic__int.html#gaac4c67337721ee42a199ad45da6108bf">pprz_geodetic_int.h</a>
+</li>
 <li>DELTA_EAST
-: <a class="el" href="pprz__geodetic__utm_8h.html#a84f493cc544c5ccd1fd9be8653e4f974">pprz_geodetic_utm.h</a>
+: <a class="el" href="group__math__geodetic__utm.html#ga84f493cc544c5ccd1fd9be8653e4f974">pprz_geodetic_utm.h</a>
 </li>
 <li>DELTA_NORTH
-: <a class="el" href="pprz__geodetic__utm_8h.html#a9712f5643bfd305111af1446550d42e1">pprz_geodetic_utm.h</a>
+: <a class="el" href="group__math__geodetic__utm.html#ga9712f5643bfd305111af1446550d42e1">pprz_geodetic_utm.h</a>
+</li>
+<li>DEMO_MAX_PITCH
+: <a class="el" href="demo__ahrs__actuators_8c.html#a8270bc7e7a68744f6f033b7c7e307e2c">demo_ahrs_actuators.c</a>
+</li>
+<li>DEMO_MAX_ROLL
+: <a class="el" href="demo__ahrs__actuators_8c.html#a2838dd2a442d1da19920d6c0f2fd016a">demo_ahrs_actuators.c</a>
 </li>
 <li>DEMO_MODULE_LED
 : <a class="el" href="demo__module_8h.html#a29b8ddb83c51c9695797c12726de19f9">demo_module.h</a>
@@ -372,9 +400,6 @@ $(document).ready(function(){initNavTree('globals_defs_0x64.html','');});
 </li>
 <li>DISTXY
 : <a class="el" href="cartography_8c.html#a3d1b86b3ab86d70dd7a130b7528a4ad2">cartography.c</a>
-</li>
-<li>DlCheckAndParse
-: <a class="el" href="datalink_8h.html#a38586f4e19c5d942d67b34fcfcd83a61">datalink.h</a>
 </li>
 <li>DM_ADDRH_READ
 : <a class="el" href="max7456__regs_8h.html#a40f4e37c9800e912b2a2f7b75e943c70">max7456_regs.h</a>
@@ -406,9 +431,6 @@ $(document).ready(function(){initNavTree('globals_defs_0x64.html','');});
 <li>DML_BUF_SIZE
 : <a class="el" href="direct__memory__logger_8h.html#a1f89c68657c02dd081932b1b8cccb137">direct_memory_logger.h</a>
 </li>
-<li>DMLoggerLink
-: <a class="el" href="direct__memory__logger_8c.html#ad9484836e3679ac23bb3efb64592e931">direct_memory_logger.c</a>
-</li>
 <li>DOGM_BIAS_SET
 : <a class="el" href="lcd__dogm_8h.html#a37f4608debfecf0ea5bc8aaae255b33d">lcd_dogm.h</a>
 </li>
@@ -437,34 +459,31 @@ $(document).ready(function(){initNavTree('globals_defs_0x64.html','');});
 : <a class="el" href="lcd__dogm_8h.html#ad0a9b48e181011d165680d665893f813">lcd_dogm.h</a>
 </li>
 <li>DOUBLE_EULERS_OF_QUAT
-: <a class="el" href="pprz__algebra__double_8h.html#af56db5ad752a153d0b6960808754e84c">pprz_algebra_double.h</a>
+: <a class="el" href="group__math__algebra__double.html#gaf56db5ad752a153d0b6960808754e84c">pprz_algebra_double.h</a>
 </li>
 <li>DOUBLE_OF_BFP
-: <a class="el" href="pprz__algebra__int_8h.html#af56c05ba9678f73f6a139ca9e5264898">pprz_algebra_int.h</a>
+: <a class="el" href="group__math__algebra__int.html#gaf56c05ba9678f73f6a139ca9e5264898">pprz_algebra_int.h</a>
 </li>
 <li>DOUBLE_QUAT_OF_EULERS
-: <a class="el" href="pprz__algebra__double_8h.html#a476c46d0dfb7cf3c974112af18f1b17c">pprz_algebra_double.h</a>
+: <a class="el" href="group__math__algebra__double.html#ga476c46d0dfb7cf3c974112af18f1b17c">pprz_algebra_double.h</a>
 </li>
 <li>DOUBLE_QUAT_VMULT
-: <a class="el" href="pprz__algebra__double_8h.html#a8b4de978d8b67e4042773562f008e057">pprz_algebra_double.h</a>
+: <a class="el" href="group__math__algebra__double.html#ga8b4de978d8b67e4042773562f008e057">pprz_algebra_double.h</a>
 </li>
 <li>DOUBLE_RMAT_OF_EULERS
-: <a class="el" href="pprz__algebra__double_8h.html#aaccff5473d8c658af79ac6ea8d89869b">pprz_algebra_double.h</a>
+: <a class="el" href="group__math__algebra__double.html#gaaccff5473d8c658af79ac6ea8d89869b">pprz_algebra_double.h</a>
 </li>
 <li>DOUBLE_RMAT_OF_EULERS_321
-: <a class="el" href="pprz__algebra__double_8h.html#ab0e689a63d1ee1c625211dab0d678e13">pprz_algebra_double.h</a>
+: <a class="el" href="group__math__algebra__double.html#gab0e689a63d1ee1c625211dab0d678e13">pprz_algebra_double.h</a>
 </li>
 <li>DOUBLE_VECT3_RINT
-: <a class="el" href="pprz__algebra__double_8h.html#aea462d460840d11dc543283860d883c3">pprz_algebra_double.h</a>
+: <a class="el" href="group__math__algebra__double.html#gaea462d460840d11dc543283860d883c3">pprz_algebra_double.h</a>
 </li>
 <li>DOUBLE_VECT3_ROUND
-: <a class="el" href="pprz__algebra__double_8h.html#a57f944678cda3405c13b3c2623e8cffe">pprz_algebra_double.h</a>
+: <a class="el" href="group__math__algebra__double.html#ga57f944678cda3405c13b3c2623e8cffe">pprz_algebra_double.h</a>
 </li>
 <li>DOWNLINK_DEVICE
-: <a class="el" href="downlink_8h.html#a2978a46b47cbc9d17a0924014ff9658b">downlink.h</a>
-</li>
-<li>DownlinkSendWp
-: <a class="el" href="nav_8h.html#ab300af3ef7ab11588e87ed42a7096b81">nav.h</a>
+: <a class="el" href="avoid__navigation_8c.html#a2978a46b47cbc9d17a0924014ff9658b">avoid_navigation.c</a>
 </li>
 <li>DPICCO_HUMID_MAX
 : <a class="el" href="humid__dpicco_8h.html#aa8d4232fcc87144e37387ddb97133f38">humid_dpicco.h</a>
@@ -486,6 +505,9 @@ $(document).ready(function(){initNavTree('globals_defs_0x64.html','');});
 </li>
 <li>DPICCO_TEMP_RANGE
 : <a class="el" href="humid__dpicco_8h.html#a7e609a8e4f83def7142215e2804c0ac8">humid_dpicco.h</a>
+</li>
+<li>DROP_STRINGLEN
+: <a class="el" href="uart__drop_8c.html#af9f61a48346362fb9d62bfc724b03133">uart_drop.c</a>
 </li>
 <li>DROTEK_2_ACCEL_RANGE
 : <a class="el" href="imu__drotek__10dof__v2_8c.html#a1c3ca37cded23ef693d12ba3d75bae82">imu_drotek_10dof_v2.c</a>
@@ -561,7 +583,7 @@ $(document).ready(function(){initNavTree('globals_defs_0x64.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:41 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:48 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

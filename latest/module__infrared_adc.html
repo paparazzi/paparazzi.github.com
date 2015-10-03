@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('module__infrared_adc.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -100,12 +100,23 @@ $(document).ready(function(){initNavTree('module__infrared_adc.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title"><a class="el" href="structInfrared.html" title="Infrared structure. ">Infrared</a> sensor using ADC </div>  </div>
+<div class="title"><a class="el" href="infrared_8h.html#structInfrared" title="Infrared structure. ">Infrared</a> sensor using ADC </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Module XML file: <code>infrared_adc.xml</code> </p>
 <p>No detailed description...</p>
-<h1><a class="anchor" id="configuration"></a>
+<h1><a class="anchor" id="module_load_example__infrared_adc"></a>
+Example for airframe file</h1>
+<p>This example contains all possible configuration options, not all of them are mandatory! </p>
+<div class="fragment"><div class="line">&lt;modules&gt;</div>
+<div class="line">  &lt;load name=<span class="stringliteral">&quot;infrared_adc.xml&quot;</span>&gt;</div>
+<div class="line">    &lt;configure name=<span class="stringliteral">&quot;ADC_IR1&quot;</span> <a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a>=<span class="stringliteral">&quot;ADC_1&quot;</span> /&gt;</div>
+<div class="line">    &lt;configure name=<span class="stringliteral">&quot;ADC_IR2&quot;</span> <a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a>=<span class="stringliteral">&quot;ADC_2&quot;</span> /&gt;</div>
+<div class="line">    &lt;configure name=<span class="stringliteral">&quot;ADC_IR_TOP&quot;</span> <a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a>=<span class="stringliteral">&quot;ADC_0&quot;</span> /&gt;</div>
+<div class="line">    &lt;configure name=<span class="stringliteral">&quot;ADC_IR_NB_SAMPLES&quot;</span> <a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a>=<span class="stringliteral">&quot;16&quot;</span> /&gt;</div>
+<div class="line">  &lt;/load&gt;</div>
+<div class="line">&lt;/modules&gt;</div>
+</div><!-- fragment --> <h1><a class="anchor" id="configuration"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="configure"></a>
 Configure Options</h2>
@@ -158,7 +169,7 @@ Raw infrared_adc.xml file:</h2>
 <div class="line"></div>
 <div class="line">&lt;module name=<span class="stringliteral">&quot;infrared_adc&quot;</span> dir=<span class="stringliteral">&quot;sensors&quot;</span>&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
-<div class="line">    &lt;description&gt;<a class="code" href="structInfrared.html" title="Infrared structure. ">Infrared</a> sensor <span class="keyword">using</span> ADC&lt;/description&gt;</div>
+<div class="line">    &lt;description&gt;<a class="code" href="infrared_8h.html#structInfrared" title="Infrared structure. ">Infrared</a> sensor <span class="keyword">using</span> ADC&lt;/description&gt;</div>
 <div class="line">    &lt;configure name=<span class="stringliteral">&quot;ADC_IR1&quot;</span> <a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a>=<span class="stringliteral">&quot;ADC_1&quot;</span> description=<span class="stringliteral">&quot;ADC for IR horizontal channel 1&quot;</span>/&gt;</div>
 <div class="line">    &lt;configure name=<span class="stringliteral">&quot;ADC_IR2&quot;</span> <a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a>=<span class="stringliteral">&quot;ADC_2&quot;</span> description=<span class="stringliteral">&quot;ADC for IR horizontal channel 2&quot;</span>/&gt;</div>
 <div class="line">    &lt;configure name=<span class="stringliteral">&quot;ADC_IR_TOP&quot;</span> <a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a>=<span class="stringliteral">&quot;ADC_0&quot;</span> description=<span class="stringliteral">&quot;ADC for IR vertical channel&quot;</span>/&gt;</div>
@@ -167,28 +178,28 @@ Raw infrared_adc.xml file:</h2>
 <div class="line">  &lt;settings&gt;</div>
 <div class="line">    &lt;dl_settings&gt;</div>
 <div class="line">      &lt;dl_settings NAME=<span class="stringliteral">&quot;ir&quot;</span>&gt;</div>
-<div class="line">        &lt;dl_setting MAX=<span class="stringliteral">&quot;15&quot;</span> <a class="code" href="computer__vision_2lib_2udp_2socket_8c.html#a526c8d25063e59c39cb18b3893b265c5">MIN</a>=<span class="stringliteral">&quot;-15&quot;</span> STEP=<span class="stringliteral">&quot;0.5&quot;</span> VAR=<span class="stringliteral">&quot;infrared.roll_neutral&quot;</span> shortname=<span class="stringliteral">&quot;roll_neutral&quot;</span> param=<span class="stringliteral">&quot;IR_ROLL_NEUTRAL_DEFAULT&quot;</span> alt_unit=<span class="stringliteral">&quot;deg&quot;</span>/&gt;</div>
-<div class="line">        &lt;dl_setting MAX=<span class="stringliteral">&quot;15&quot;</span> <a class="code" href="computer__vision_2lib_2udp_2socket_8c.html#a526c8d25063e59c39cb18b3893b265c5">MIN</a>=<span class="stringliteral">&quot;-15&quot;</span> STEP=<span class="stringliteral">&quot;0.5&quot;</span> VAR=<span class="stringliteral">&quot;infrared.pitch_neutral&quot;</span> shortname=<span class="stringliteral">&quot;pitch_neutral&quot;</span> param=<span class="stringliteral">&quot;IR_PITCH_NEUTRAL_DEFAULT&quot;</span> alt_unit=<span class="stringliteral">&quot;deg&quot;</span>/&gt;</div>
+<div class="line">        &lt;dl_setting MAX=<span class="stringliteral">&quot;15&quot;</span> MIN=<span class="stringliteral">&quot;-15&quot;</span> STEP=<span class="stringliteral">&quot;0.5&quot;</span> VAR=<span class="stringliteral">&quot;infrared.roll_neutral&quot;</span> shortname=<span class="stringliteral">&quot;roll_neutral&quot;</span> param=<span class="stringliteral">&quot;IR_ROLL_NEUTRAL_DEFAULT&quot;</span> alt_unit=<span class="stringliteral">&quot;deg&quot;</span>/&gt;</div>
+<div class="line">        &lt;dl_setting MAX=<span class="stringliteral">&quot;15&quot;</span> MIN=<span class="stringliteral">&quot;-15&quot;</span> STEP=<span class="stringliteral">&quot;0.5&quot;</span> VAR=<span class="stringliteral">&quot;infrared.pitch_neutral&quot;</span> shortname=<span class="stringliteral">&quot;pitch_neutral&quot;</span> param=<span class="stringliteral">&quot;IR_PITCH_NEUTRAL_DEFAULT&quot;</span> alt_unit=<span class="stringliteral">&quot;deg&quot;</span>/&gt;</div>
 <div class="line"></div>
-<div class="line">        &lt;dl_setting MAX=<span class="stringliteral">&quot;1.5&quot;</span> <a class="code" href="computer__vision_2lib_2udp_2socket_8c.html#a526c8d25063e59c39cb18b3893b265c5">MIN</a>=<span class="stringliteral">&quot;0.&quot;</span> STEP=<span class="stringliteral">&quot;0.1&quot;</span> VAR=<span class="stringliteral">&quot;infrared.lateral_correction&quot;</span> shortname=<span class="stringliteral">&quot;360_lat_corr&quot;</span> module=<span class="stringliteral">&quot;subsystems/sensors/infrared&quot;</span> param=<span class="stringliteral">&quot;IR_LATERAL_CORRECTION&quot;</span>/&gt;</div>
-<div class="line">        &lt;dl_setting MAX=<span class="stringliteral">&quot;1.5&quot;</span> <a class="code" href="computer__vision_2lib_2udp_2socket_8c.html#a526c8d25063e59c39cb18b3893b265c5">MIN</a>=<span class="stringliteral">&quot;0.&quot;</span> STEP=<span class="stringliteral">&quot;0.1&quot;</span> VAR=<span class="stringliteral">&quot;infrared.longitudinal_correction&quot;</span> shortname=<span class="stringliteral">&quot;360_log_corr&quot;</span> param=<span class="stringliteral">&quot;IR_LONGITUDINAL_CORRECTION&quot;</span>/&gt;</div>
-<div class="line">        &lt;dl_setting MAX=<span class="stringliteral">&quot;1.5&quot;</span> <a class="code" href="computer__vision_2lib_2udp_2socket_8c.html#a526c8d25063e59c39cb18b3893b265c5">MIN</a>=<span class="stringliteral">&quot;0.5&quot;</span> STEP=<span class="stringliteral">&quot;0.1&quot;</span> VAR=<span class="stringliteral">&quot;infrared.vertical_correction&quot;</span> shortname=<span class="stringliteral">&quot;360_vert_corr&quot;</span> param=<span class="stringliteral">&quot;IR_VERTICAL_CORRECTION&quot;</span>/&gt;</div>
+<div class="line">        &lt;dl_setting MAX=<span class="stringliteral">&quot;1.5&quot;</span> MIN=<span class="stringliteral">&quot;0.&quot;</span> STEP=<span class="stringliteral">&quot;0.1&quot;</span> VAR=<span class="stringliteral">&quot;infrared.lateral_correction&quot;</span> shortname=<span class="stringliteral">&quot;360_lat_corr&quot;</span> module=<span class="stringliteral">&quot;subsystems/sensors/infrared&quot;</span> param=<span class="stringliteral">&quot;IR_LATERAL_CORRECTION&quot;</span>/&gt;</div>
+<div class="line">        &lt;dl_setting MAX=<span class="stringliteral">&quot;1.5&quot;</span> MIN=<span class="stringliteral">&quot;0.&quot;</span> STEP=<span class="stringliteral">&quot;0.1&quot;</span> VAR=<span class="stringliteral">&quot;infrared.longitudinal_correction&quot;</span> shortname=<span class="stringliteral">&quot;360_log_corr&quot;</span> param=<span class="stringliteral">&quot;IR_LONGITUDINAL_CORRECTION&quot;</span>/&gt;</div>
+<div class="line">        &lt;dl_setting MAX=<span class="stringliteral">&quot;1.5&quot;</span> MIN=<span class="stringliteral">&quot;0.5&quot;</span> STEP=<span class="stringliteral">&quot;0.1&quot;</span> VAR=<span class="stringliteral">&quot;infrared.vertical_correction&quot;</span> shortname=<span class="stringliteral">&quot;360_vert_corr&quot;</span> param=<span class="stringliteral">&quot;IR_VERTICAL_CORRECTION&quot;</span>/&gt;</div>
 <div class="line"></div>
-<div class="line">        &lt;dl_setting MAX=<span class="stringliteral">&quot;1.5&quot;</span> <a class="code" href="computer__vision_2lib_2udp_2socket_8c.html#a526c8d25063e59c39cb18b3893b265c5">MIN</a>=<span class="stringliteral">&quot;0.5&quot;</span> STEP=<span class="stringliteral">&quot;0.1&quot;</span> VAR=<span class="stringliteral">&quot;infrared.correction_left&quot;</span> shortname=<span class="stringliteral">&quot;corr_left&quot;</span> param=<span class="stringliteral">&quot;IR_CORRECTION_LEFT&quot;</span>/&gt;</div>
-<div class="line">        &lt;dl_setting MAX=<span class="stringliteral">&quot;1.5&quot;</span> <a class="code" href="computer__vision_2lib_2udp_2socket_8c.html#a526c8d25063e59c39cb18b3893b265c5">MIN</a>=<span class="stringliteral">&quot;0.5&quot;</span> STEP=<span class="stringliteral">&quot;0.1&quot;</span> VAR=<span class="stringliteral">&quot;infrared.correction_right&quot;</span> shortname=<span class="stringliteral">&quot;corr_right&quot;</span> param=<span class="stringliteral">&quot;IR_CORRECTION_RIGHT&quot;</span>/&gt;</div>
-<div class="line">        &lt;dl_setting MAX=<span class="stringliteral">&quot;1.5&quot;</span> <a class="code" href="computer__vision_2lib_2udp_2socket_8c.html#a526c8d25063e59c39cb18b3893b265c5">MIN</a>=<span class="stringliteral">&quot;0.5&quot;</span> STEP=<span class="stringliteral">&quot;0.1&quot;</span> VAR=<span class="stringliteral">&quot;infrared.correction_up&quot;</span> shortname=<span class="stringliteral">&quot;corr_up&quot;</span> param=<span class="stringliteral">&quot;IR_CORRECTION_UP&quot;</span>/&gt;</div>
-<div class="line">        &lt;dl_setting MAX=<span class="stringliteral">&quot;1.5&quot;</span> <a class="code" href="computer__vision_2lib_2udp_2socket_8c.html#a526c8d25063e59c39cb18b3893b265c5">MIN</a>=<span class="stringliteral">&quot;0.5&quot;</span> STEP=<span class="stringliteral">&quot;0.1&quot;</span> VAR=<span class="stringliteral">&quot;infrared.correction_down&quot;</span> shortname=<span class="stringliteral">&quot;corr_down&quot;</span> param=<span class="stringliteral">&quot;IR_CORRECTION_DOWN&quot;</span>/&gt;</div>
+<div class="line">        &lt;dl_setting MAX=<span class="stringliteral">&quot;1.5&quot;</span> MIN=<span class="stringliteral">&quot;0.5&quot;</span> STEP=<span class="stringliteral">&quot;0.1&quot;</span> VAR=<span class="stringliteral">&quot;infrared.correction_left&quot;</span> shortname=<span class="stringliteral">&quot;corr_left&quot;</span> param=<span class="stringliteral">&quot;IR_CORRECTION_LEFT&quot;</span>/&gt;</div>
+<div class="line">        &lt;dl_setting MAX=<span class="stringliteral">&quot;1.5&quot;</span> MIN=<span class="stringliteral">&quot;0.5&quot;</span> STEP=<span class="stringliteral">&quot;0.1&quot;</span> VAR=<span class="stringliteral">&quot;infrared.correction_right&quot;</span> shortname=<span class="stringliteral">&quot;corr_right&quot;</span> param=<span class="stringliteral">&quot;IR_CORRECTION_RIGHT&quot;</span>/&gt;</div>
+<div class="line">        &lt;dl_setting MAX=<span class="stringliteral">&quot;1.5&quot;</span> MIN=<span class="stringliteral">&quot;0.5&quot;</span> STEP=<span class="stringliteral">&quot;0.1&quot;</span> VAR=<span class="stringliteral">&quot;infrared.correction_up&quot;</span> shortname=<span class="stringliteral">&quot;corr_up&quot;</span> param=<span class="stringliteral">&quot;IR_CORRECTION_UP&quot;</span>/&gt;</div>
+<div class="line">        &lt;dl_setting MAX=<span class="stringliteral">&quot;1.5&quot;</span> MIN=<span class="stringliteral">&quot;0.5&quot;</span> STEP=<span class="stringliteral">&quot;0.1&quot;</span> VAR=<span class="stringliteral">&quot;infrared.correction_down&quot;</span> shortname=<span class="stringliteral">&quot;corr_down&quot;</span> param=<span class="stringliteral">&quot;IR_CORRECTION_DOWN&quot;</span>/&gt;</div>
 <div class="line"></div>
 <div class="line">      &lt;/dl_settings&gt;</div>
 <div class="line">    &lt;/dl_settings&gt;</div>
 <div class="line">  &lt;/settings&gt;</div>
-<div class="line">  &lt;<a class="code" href="stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963">header</a>&gt;</div>
+<div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;infrared_adc.h&quot;</span>/&gt;</div>
-<div class="line">  &lt;/<a class="code" href="stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963">header</a>&gt;</div>
+<div class="line">  &lt;/header&gt;</div>
 <div class="line">  &lt;<a class="code" href="nav__gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;infrared_adc_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;periodic fun=<span class="stringliteral">&quot;infrared_adc_update()&quot;</span> freq=<span class="stringliteral">&quot;60.&quot;</span>/&gt;</div>
-<div class="line">  &lt;makefile target=<span class="stringliteral">&quot;ap|sim|jsbsim&quot;</span>&gt;</div>
-<div class="line">    &lt;define name=<span class="stringliteral">&quot;USE_INFRARED_TELEMETRY&quot;</span>/&gt;</div>
+<div class="line">  &lt;makefile target=<span class="stringliteral">&quot;ap|sim&quot;</span>&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;USE_INFRARED&quot;</span>/&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;infrared.c&quot;</span> dir=<span class="stringliteral">&quot;subsystems/sensors&quot;</span>/&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;infrared_adc.c&quot;</span> dir=<span class="stringliteral">&quot;subsystems/sensors&quot;</span>/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
@@ -215,7 +226,7 @@ Raw infrared_adc.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:17 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

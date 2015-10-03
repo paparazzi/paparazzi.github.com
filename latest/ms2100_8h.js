@@ -1,6 +1,19 @@
 var ms2100_8h =
 [
-    [ "Ms2100", "structMs2100.html", "structMs2100" ],
+    [ "Ms2100", "ms2100_8h.html#structMs2100", [
+      [ "cur_axe", "ms2100_8h.html#a4d319566f8fbdb099371b09cca78b647", null ],
+      [ "data", "ms2100_8h.html#a9535b500dbd36a60f177ed78bf2f6dd6", null ],
+      [ "read_buf", "ms2100_8h.html#a7ca306c6e7eb338624be4edd50efa062", null ],
+      [ "read_trans", "ms2100_8h.html#a449ba9e4203acdf5a75fc85c8b26e671", null ],
+      [ "req_buf", "ms2100_8h.html#a2f1e564599230a1e55da245eb1d5a25e", null ],
+      [ "req_trans", "ms2100_8h.html#a94d0d01e5c3a9d851c8cbec1ded9b296", null ],
+      [ "spi_p", "ms2100_8h.html#aad3c1b02e0a8621f7df2338e14b46e36", null ],
+      [ "status", "ms2100_8h.html#a24720217f6739c591031e5b0837d9c9d", null ]
+    ] ],
+    [ "Ms2100.data", "ms2100_8h.html#unionMs2100_8data", [
+      [ "value", "ms2100_8h.html#ab07053fcb6afcb4d09e8f337b615d383", null ],
+      [ "vect", "ms2100_8h.html#a4384543978c11a2d3da5c6cfeed94998", null ]
+    ] ],
     [ "Ms2100Status", "ms2100_8h.html#a0c113d47eb67dc9e6881cb9b4c8bca65", [
       [ "MS2100_IDLE", "ms2100_8h.html#a0c113d47eb67dc9e6881cb9b4c8bca65a355c2f9f789b75ae75a06f8ea97f1a06", null ],
       [ "MS2100_SENDING_REQ", "ms2100_8h.html#a0c113d47eb67dc9e6881cb9b4c8bca65a4ad5362b0c20e07806d91555bc9a0218", null ],

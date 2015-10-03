@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('gps__sim_8h.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -107,8 +107,7 @@ $(document).ready(function(){initNavTree('gps__sim_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">gps_sim.h File Reference</div>  </div>
 </div><!--header-->
@@ -130,20 +129,16 @@ $(document).ready(function(){initNavTree('gps__sim_8h.html','');});
 Macros</h2></td></tr>
 <tr class="memitem:a63f1b81cf4a1e8e0fe80f065224826fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__sim_8h.html#a63f1b81cf4a1e8e0fe80f065224826fe">GPS_NB_CHANNELS</a>&#160;&#160;&#160;16</td></tr>
 <tr class="separator:a63f1b81cf4a1e8e0fe80f065224826fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dcf939e5c207e7263b3cd68842df3f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__sim_8h.html#a2dcf939e5c207e7263b3cd68842df3f3">GpsEvent</a>(_sol_available_callback)</td></tr>
-<tr class="separator:a2dcf939e5c207e7263b3cd68842df3f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8996cb5c3ad80eee27207281a2e3332f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__sim_8h.html#a8996cb5c3ad80eee27207281a2e3332f">GpsEvent</a>()&#160;&#160;&#160;{}</td></tr>
+<tr class="separator:a8996cb5c3ad80eee27207281a2e3332f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ac51e6a5f7940a0acc9dc44b1b8085331"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__sim_8h.html#ac51e6a5f7940a0acc9dc44b1b8085331">gps_impl_init</a> (void)</td></tr>
 <tr class="memdesc:ac51e6a5f7940a0acc9dc44b1b8085331"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPS initialization.  <a href="#ac51e6a5f7940a0acc9dc44b1b8085331">More...</a><br/></td></tr>
 <tr class="separator:ac51e6a5f7940a0acc9dc44b1b8085331"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a62a4a0f2fc32a105289eb2cf890a1e5d"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__sim_8h.html#a62a4a0f2fc32a105289eb2cf890a1e5d">gps_available</a></td></tr>
-<tr class="memdesc:a62a4a0f2fc32a105289eb2cf890a1e5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is set to TRUE when a new REMOTE_GPS packet is received and parsed.  <a href="#a62a4a0f2fc32a105289eb2cf890a1e5d">More...</a><br/></td></tr>
-<tr class="separator:a62a4a0f2fc32a105289eb2cf890a1e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b24214fcb576b1bd7832dccaaa3f430"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__sim_8h.html#a9b24214fcb576b1bd7832dccaaa3f430">gps_sim_publish</a> (void)</td></tr>
+<tr class="separator:a9b24214fcb576b1bd7832dccaaa3f430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a63f1b81cf4a1e8e0fe80f065224826fe"></a>
@@ -160,7 +155,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2dcf939e5c207e7263b3cd68842df3f3"></a>
+<a class="anchor" id="a8996cb5c3ad80eee27207281a2e3332f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -168,25 +163,13 @@ Variables</h2></td></tr>
           <td class="memname">#define GpsEvent</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">_sol_available_callback)</td><td></td>
-          <td></td>
+          <td class="paramname">void)</td><td></td>
+          <td>&#160;&#160;&#160;{}</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{         \</div>
-<div class="line">    if (<a class="code" href="gps__datalink_8c.html#a62a4a0f2fc32a105289eb2cf890a1e5d" title="Is set to TRUE when a new REMOTE_GPS packet is received and parsed. ">gps_available</a>) {                            \</div>
-<div class="line">      gps.last_msg_ticks = <a class="code" href="structsys__time.html">sys_time</a>.<a class="code" href="structsys__time.html#a8654f589772b3eef22ab59594c97e513" title="remainder of seconds since startup in CPU_TICKS ">nb_sec_rem</a>;     \</div>
-<div class="line">      gps.last_msg_time = <a class="code" href="structsys__time.html">sys_time</a>.<a class="code" href="structsys__time.html#a2e86fdabba99a0ac8f6409e0d1e694a3" title="full seconds since startup ">nb_sec</a>;          \</div>
-<div class="line">      if (<a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d" title="global GPS state ">gps</a>.<a class="code" href="structGpsState.html#afeffb02bdd18d27a87e96bb77175168f" title="status of fix ">fix</a> == <a class="code" href="gps_8h.html#ac5e980c8325a29dd79a45ed26af404be">GPS_FIX_3D</a>) {                  \</div>
-<div class="line">        gps.last_3dfix_ticks = <a class="code" href="structsys__time.html">sys_time</a>.<a class="code" href="structsys__time.html#a8654f589772b3eef22ab59594c97e513" title="remainder of seconds since startup in CPU_TICKS ">nb_sec_rem</a>; \</div>
-<div class="line">        gps.last_3dfix_time = <a class="code" href="structsys__time.html">sys_time</a>.<a class="code" href="structsys__time.html#a2e86fdabba99a0ac8f6409e0d1e694a3" title="full seconds since startup ">nb_sec</a>;      \</div>
-<div class="line">      }                                             \</div>
-<div class="line">      _sol_available_callback();                    \</div>
-<div class="line">      gps_available = <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;                        \</div>
-<div class="line">    }                                               \</div>
-<div class="line">  }</div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="gps__sim_8h_source.html#l00014">14</a> of file <a class="el" href="gps__sim_8h_source.html">gps_sim.h</a>.</p>
+
+<p>Definition at line <a class="el" href="gps__sim_8h_source.html#l00012">12</a> of file <a class="el" href="gps__sim_8h_source.html">gps_sim.h</a>.</p>
 
 </div>
 </div>
@@ -207,24 +190,51 @@ Variables</h2></td></tr>
 
 <p>GPS initialization. </p>
 
-<p>Definition at line <a class="el" href="gps__ardrone2_8c_source.html#l00038">38</a> of file <a class="el" href="gps__ardrone2_8c_source.html">gps_ardrone2.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__datalink_8c_source.html#l00062">62</a> of file <a class="el" href="gps__datalink_8c_source.html">gps_datalink.c</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a62a4a0f2fc32a105289eb2cf890a1e5d"></a>
+<a class="anchor" id="a9b24214fcb576b1bd7832dccaaa3f430"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool_t gps_available</td>
+          <td class="memname">void gps_sim_publish </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Is set to TRUE when a new REMOTE_GPS packet is received and parsed. </p>
+<p>Definition at line <a class="el" href="gps__sim_8c_source.html#l00030">30</a> of file <a class="el" href="gps__sim_8c_source.html">gps_sim.c</a>.</p>
 
-<p>Definition at line <a class="el" href="gps__datalink_8c_source.html#l00032">32</a> of file <a class="el" href="gps__datalink_8c_source.html">gps_datalink.c</a>.</p>
+<p>References <a class="el" href="gps_8h_source.html#l00081">GpsState::fix</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8h_source.html#l00039">get_sys_time_usec()</a>, <a class="el" href="gps_8c_source.html#l00041">gps</a>, <a class="el" href="gps_8h_source.html#l00043">GPS_FIX_3D</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00158">GPS_SIM_ID</a>, <a class="el" href="gps_8h_source.html#l00088">GpsState::last_3dfix_ticks</a>, <a class="el" href="gps_8h_source.html#l00089">GpsState::last_3dfix_time</a>, <a class="el" href="gps_8h_source.html#l00090">GpsState::last_msg_ticks</a>, <a class="el" href="gps_8h_source.html#l00091">GpsState::last_msg_time</a>, <a class="el" href="sys__time_8h_source.html#l00069">sys_time::nb_sec</a>, and <a class="el" href="sys__time_8h_source.html#l00070">sys_time::nb_sec_rem</a>.</p>
+
+<p>Referenced by <a class="el" href="sim__gps_8c_source.html#l00020">sim_use_gps_pos()</a>.</p>
+
+<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="gps__sim_8h_a9b24214fcb576b1bd7832dccaaa3f430_cgraph.png" border="0" usemap="#gps__sim_8h_a9b24214fcb576b1bd7832dccaaa3f430_cgraph" alt=""/></div>
+<map name="gps__sim_8h_a9b24214fcb576b1bd7832dccaaa3f430_cgraph" id="gps__sim_8h_a9b24214fcb576b1bd7832dccaaa3f430_cgraph">
+<area shape="rect" id="node3" href="linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="181,5,325,33"/><area shape="rect" id="node5" href="sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="375,5,511,33"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="gps__sim_8h_a9b24214fcb576b1bd7832dccaaa3f430_icgraph.png" border="0" usemap="#gps__sim_8h_a9b24214fcb576b1bd7832dccaaa3f430_icgraph" alt=""/></div>
+<map name="gps__sim_8h_a9b24214fcb576b1bd7832dccaaa3f430_icgraph" id="gps__sim_8h_a9b24214fcb576b1bd7832dccaaa3f430_icgraph">
+<area shape="rect" id="node3" href="sim__gps_8c.html#a07f63734731109c0ed43e4f4dbcb98f2" title="From airborne/autopilot/. " alt="" coords="183,5,316,33"/><area shape="rect" id="node5" href="sim__gps_8c.html#a7e916af45c0d2dea26e3e5faff0bd3e5" title="sim_use_gps_pos_bytecode" alt="" coords="367,5,567,33"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -234,7 +244,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8c4cbb881db224ddaf0756e79ed706ce.html">gps</a></li><li class="navelem"><a class="el" href="gps__sim_8h.html">gps_sim.h</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:14 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:35 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

@@ -1,17 +1,19 @@
 <map id="stateCalcBodyRates_f" name="stateCalcBodyRates_f">
-<area shape="rect" id="node3" href="$group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float). " alt="" coords="216,211,373,239"/>
+<area shape="rect" id="node3" href="$group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float). " alt="" coords="216,233,373,261"/>
 <area shape="rect" id="node5" href="$stabilization__adaptive_8c.html#a56e08c7c847634b91bec39dc929ade80" title="h_ctl_roll_loop" alt="" coords="457,30,569,58"/>
 <area shape="rect" id="node18" href="$stabilization__adaptive_8c.html#a10c9851e192217d5a4e7b6dc98e16c2d" title="h_ctl_pitch_loop" alt="" coords="452,81,575,109"/>
 <area shape="rect" id="node21" href="$stabilization__attitude__euler__float_8c.html#afb59ecc3049842f940a46a81698b79e9" title="stabilization_attitude_run" alt="" coords="423,131,604,159"/>
-<area shape="rect" id="node23" href="$mavlink_8c.html#ab4facf70544272f5a7ce83e50b319cc3" title="Send the attitude. " alt="" coords="431,182,596,210"/>
-<area shape="rect" id="node27" href="$mavlink_8c.html#a076640b1bead9f0bb86f91b0893bc651" title="mavlink_send_attitude\l_quaternion" alt="" coords="431,233,596,277"/>
-<area shape="rect" id="node30" href="$meteo__france__DAQ_8h.html#a428cd9287f9e24f69dd92d696e0a053a" title="mf_daq_send_state" alt="" coords="440,299,587,327"/>
-<area shape="rect" id="node32" href="$meteo__france__DAQ_8h.html#ac95d521856a9424097d05f67c635c10e" title="parse_mf_daq_msg" alt="" coords="440,350,587,378"/>
-<area shape="rect" id="node34" href="$ahrs__float__cmpl_8c.html#a020997c7e92d014a6bacd92b5255b904" title="Update AHRS state with accerleration measurements. " alt="" coords="443,401,584,429"/>
+<area shape="rect" id="node23" href="$stabilization__attitude__quat__indi_8c.html#a9dd6dd49ddff3c113ba2606fd45eb21b" title="attitude_run_indi" alt="" coords="661,218,789,246"/>
+<area shape="rect" id="node27" href="$stabilization__attitude__quat__indi_8h.html#ad4a81c601235942469d940e7ac5f400e" title="lms_estimation" alt="" coords="453,233,573,261"/>
+<area shape="rect" id="node30" href="$mavlink_8c.html#ab4facf70544272f5a7ce83e50b319cc3" title="Send the attitude. " alt="" coords="431,283,596,311"/>
+<area shape="rect" id="node34" href="$mavlink_8c.html#a076640b1bead9f0bb86f91b0893bc651" title="mavlink_send_attitude\l_quaternion" alt="" coords="431,334,596,378"/>
+<area shape="rect" id="node37" href="$meteo__france__DAQ_8h.html#a428cd9287f9e24f69dd92d696e0a053a" title="mf_daq_send_state" alt="" coords="440,401,587,429"/>
+<area shape="rect" id="node39" href="$meteo__france__DAQ_8h.html#ac95d521856a9424097d05f67c635c10e" title="parse_mf_daq_msg" alt="" coords="440,451,587,479"/>
 <area shape="rect" id="node7" href="$fixedwing_2stabilization_2stabilization__attitude_8h.html#a86f0d47644538be1345aab19c7dc3de4" title="h_ctl_attitude_loop" alt="" coords="655,55,796,83"/>
-<area shape="rect" id="node9" href="$main__ap_8h.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="845,55,952,83"/>
-<area shape="rect" id="node11" href="$main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="1036,5,1151,33"/>
-<area shape="rect" id="node13" href="$sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="1235,30,1371,58"/>
-<area shape="rect" id="node15" href="$main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="1000,106,1187,134"/>
-<area shape="rect" id="node25" href="$mavlink_8h.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls. " alt="" coords="661,211,789,239"/>
+<area shape="rect" id="node9" href="$main__ap_8h.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="884,55,991,83"/>
+<area shape="rect" id="node11" href="$main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="1113,5,1228,33"/>
+<area shape="rect" id="node13" href="$sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="1312,30,1448,58"/>
+<area shape="rect" id="node15" href="$main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="1077,106,1264,134"/>
+<area shape="rect" id="node25" href="$stabilization__attitude__quat__indi_8c.html#aae5fe27afd6cf48e9beeb6aa4c6cfc6e" title="stabilization_attitude_run" alt="" coords="847,218,1028,246"/>
+<area shape="rect" id="node32" href="$mavlink_8h.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls. " alt="" coords="661,298,789,326"/>
 </map>

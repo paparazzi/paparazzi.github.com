@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.4.2_stable-3-gc351a71</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('downlink_8c_source.html','');});
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#if defined DATALINK</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if DATALINK == PPRZ || DATALINK == SUPERBITRF || DATALINK == W5100</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor"></span>  <a class="code" href="pprz__transport_8c.html#a49a53dd884edf42d672dda0c2ffc221f">pprz_transport_init</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor"></span>  <a class="code" href="pprz__transport_8c.html#a4a56f4299c84faa347591c6abf4b9c47">pprz_transport_init</a>(&amp;<a class="code" href="pprz__transport_8c.html#ac7d185dc6518d6eabe7cab132f9b8cda">pprz_tp</a>);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if DATALINK == XBEE</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor"></span>  <a class="code" href="xbee_8c.html#a964a1e8461e9c1187e5d69f521e5e107" title="Initialisation in API mode and setting of the local address FIXME: busy wait. ">xbee_init</a>();</div>
@@ -180,22 +180,26 @@ $(document).ready(function(){initNavTree('downlink_8c_source.html','');});
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#if SITL</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor"></span>  <a class="code" href="ivy__transport_8c.html#a5103b0ca25b6bd5abb6f92abae752927">ivy_transport_init</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#if USE_PPRZLOG</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor"></span>  <a class="code" href="pprzlog__transport_8c.html#a301368ea60ea8e1d7e50c0cf02a0a965">pprzlog_transport_init</a>();</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#if PERIODIC_TELEMETRY</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span>  <a class="code" href="telemetry_8c.html#abb4aa9b3c0c8d93e1372de5da86de828" title="Register a telemetry callback function. ">register_periodic_telemetry</a>(<a class="code" href="telemetry__common_8h.html#a1912e51b2e63ae9b0d41d91e073cfefd" title="Set default periodic telemetry to NULL. ">DefaultPeriodic</a>, <span class="stringliteral">&quot;DATALINK_REPORT&quot;</span>, send_downlink);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#if SITL</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span>  <a class="code" href="ivy__transport_8c.html#a5103b0ca25b6bd5abb6f92abae752927">ivy_transport_init</a>();</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#if PERIODIC_TELEMETRY</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor"></span>  <a class="code" href="telemetry_8c.html#abb4aa9b3c0c8d93e1372de5da86de828" title="Register a telemetry callback function. ">register_periodic_telemetry</a>(<a class="code" href="telemetry__common_8h.html#a1912e51b2e63ae9b0d41d91e073cfefd" title="Set default periodic telemetry to NULL. ">DefaultPeriodic</a>, <span class="stringliteral">&quot;DATALINK_REPORT&quot;</span>, send_downlink);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_6567a5a7be991f15b7628b3b0eb084bd.html">datalink</a></li><li class="navelem"><a class="el" href="downlink_8c.html">downlink.c</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:15:17 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Jun 17 2015 02:01:20 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

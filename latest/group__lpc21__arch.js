@@ -1,6 +1,5 @@
 var group__lpc21__arch =
 [
-    [ "interrupt_hw.h", "lpc21_2interrupt__hw_8h.html", null ],
     [ "mcu_arch.c", "lpc21_2mcu__arch_8c.html", null ],
     [ "adc_arch.c", "lpc21_2mcu__periph_2adc__arch_8c.html", null ],
     [ "adc_arch.h", "lpc21_2mcu__periph_2adc__arch_8h.html", null ],

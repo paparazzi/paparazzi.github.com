@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.4"/>
-<title>Paparazzi UAS: sw/airborne/modules/poles/nav_poles.c Source File</title>
+<title>Paparazzi UAS: sw/airborne/modules/nav/nav_poles.c Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('nav__poles_8c_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,42 +109,63 @@ $(document).ready(function(){initNavTree('nav__poles_8c_source.html','');});
 <div class="title">nav_poles.c</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="nav__poles_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="nav__poles_8h.html">modules/poles/nav_poles.h</a>&quot;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="common__nav_8h.html">subsystems/navigation/common_nav.h</a>&quot;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="code" href="nav__poles_8h.html#a103739a39ce1e6679cf62244a2123326">    4</a></span>&#160;<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="nav__poles_8c.html#a103739a39ce1e6679cf62244a2123326">nav_poles_count</a> = 0;</div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="code" href="nav__poles_8h.html#ac0c31b976dc6eb42d7b2780f1893fae8">    5</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="nav__poles_8c.html#ac0c31b976dc6eb42d7b2780f1893fae8">nav_poles_time</a> = 0.;</div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="code" href="nav__poles_8h.html#a76cdae76184bbc2f74791b7f5827d892">    6</a></span>&#160;<a class="code" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> <a class="code" href="nav__poles_8c.html#a76cdae76184bbc2f74791b7f5827d892">nav_poles_land</a> = 1;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="code" href="nav__poles_8c.html#af12741cc685a5533fe2ed100d91649c4">    8</a></span>&#160;<span class="preprocessor">#define SAFETY_MARGIN 0.7</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="nav__poles_8h.html#ae1ebfcfefd600a2c2c3252f10122371d">   12</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="nav__poles_8c.html#ae1ebfcfefd600a2c2c3252f10122371d" title="computes position of wp1c and wp2c, reference points for an oval around waypoints wp1 and wp2 ...">nav_poles_init</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp1, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp2,</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                    <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp1c, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp2c,</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                    <span class="keywordtype">float</span> <a class="code" href="chemotaxis_8c.html#a5050a760c11da521cd4aee6336f6529f">radius</a>)</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keywordtype">float</span> x = <a class="code" href="navigation_8h.html#a2d51bcd8e90e2dea91009f895a452a22">WaypointX</a>(wp2) - <a class="code" href="navigation_8h.html#a2d51bcd8e90e2dea91009f895a452a22">WaypointX</a>(wp1);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordtype">float</span> y = <a class="code" href="navigation_8h.html#a983349c9ccc3f390fafe929d3c9fdd16">WaypointY</a>(wp2) - <a class="code" href="navigation_8h.html#a983349c9ccc3f390fafe929d3c9fdd16">WaypointY</a>(wp1);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordtype">float</span> d = sqrt(x * x + y * y);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="comment">/* Unit vector from wp1 to wp2 */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  x /= d;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  y /= d;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="navigation_8h.html#a2d51bcd8e90e2dea91009f895a452a22">WaypointX</a>(wp2c) = <a class="code" href="navigation_8h.html#a2d51bcd8e90e2dea91009f895a452a22">WaypointX</a>(wp2) - (x * <a class="code" href="nav__poles_8c.html#af12741cc685a5533fe2ed100d91649c4">SAFETY_MARGIN</a> + y) * radius;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="navigation_8h.html#a983349c9ccc3f390fafe929d3c9fdd16">WaypointY</a>(wp2c) = <a class="code" href="navigation_8h.html#a983349c9ccc3f390fafe929d3c9fdd16">WaypointY</a>(wp2) - (y * <a class="code" href="nav__poles_8c.html#af12741cc685a5533fe2ed100d91649c4">SAFETY_MARGIN</a> - x) * radius;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="navigation_8h.html#a2d51bcd8e90e2dea91009f895a452a22">WaypointX</a>(wp1c) = <a class="code" href="navigation_8h.html#a2d51bcd8e90e2dea91009f895a452a22">WaypointX</a>(wp1) + (x * <a class="code" href="nav__poles_8c.html#af12741cc685a5533fe2ed100d91649c4">SAFETY_MARGIN</a> - y) * radius;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="navigation_8h.html#a983349c9ccc3f390fafe929d3c9fdd16">WaypointY</a>(wp1c) = <a class="code" href="navigation_8h.html#a983349c9ccc3f390fafe929d3c9fdd16">WaypointY</a>(wp1) + (y * <a class="code" href="nav__poles_8c.html#af12741cc685a5533fe2ed100d91649c4">SAFETY_MARGIN</a> + x) * radius;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<a href="nav__poles_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (C) 2009-2015 ENAC</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This file is part of paparazzi.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * paparazzi is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * the Free Software Foundation; either version 2, or (at your option)</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * any later version.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * paparazzi is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * along with paparazzi; see the file COPYING.  If not, see</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * &lt;http://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="nav__poles_8h.html">modules/nav/nav_poles.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="common__nav_8h.html">subsystems/navigation/common_nav.h</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="nav__poles_8h.html#a103739a39ce1e6679cf62244a2123326">   29</a></span>&#160;<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="nav__poles_8c.html#a103739a39ce1e6679cf62244a2123326">nav_poles_count</a> = 0;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="nav__poles_8h.html#ac0c31b976dc6eb42d7b2780f1893fae8">   30</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="nav__poles_8c.html#ac0c31b976dc6eb42d7b2780f1893fae8">nav_poles_time</a> = 0.;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="nav__poles_8h.html#a76cdae76184bbc2f74791b7f5827d892">   31</a></span>&#160;<a class="code" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> <a class="code" href="nav__poles_8c.html#a76cdae76184bbc2f74791b7f5827d892">nav_poles_land</a> = 1;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="nav__poles_8c.html#af12741cc685a5533fe2ed100d91649c4">   33</a></span>&#160;<span class="preprocessor">#define SAFETY_MARGIN 0.7</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="nav__poles_8h.html#ae1ebfcfefd600a2c2c3252f10122371d">   37</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="nav__poles_8c.html#ae1ebfcfefd600a2c2c3252f10122371d" title="computes position of wp1c and wp2c, reference points for an oval around waypoints wp1 and wp2 ...">nav_poles_init</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp1, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp2,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                    <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp1c, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp2c,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                    <span class="keywordtype">float</span> <a class="code" href="chemotaxis_8c.html#a5050a760c11da521cd4aee6336f6529f">radius</a>)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="nav__survey__poly__rotorcraft_8c.html#a2a5ef0ad00bc9e912a9aefcedf004cc4">x</a> = <a class="code" href="common__nav_8h.html#a2d51bcd8e90e2dea91009f895a452a22">WaypointX</a>(wp2) - <a class="code" href="common__nav_8h.html#a2d51bcd8e90e2dea91009f895a452a22">WaypointX</a>(wp1);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="nav__survey__poly__rotorcraft_8c.html#a989485fd2d8026ceec5d57e8c7e629ab">y</a> = <a class="code" href="common__nav_8h.html#a983349c9ccc3f390fafe929d3c9fdd16">WaypointY</a>(wp2) - <a class="code" href="common__nav_8h.html#a983349c9ccc3f390fafe929d3c9fdd16">WaypointY</a>(wp1);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">float</span> d = sqrt(x * x + y * y);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="comment">/* Unit vector from wp1 to wp2 */</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  x /= d;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  y /= d;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="common__nav_8h.html#a2d51bcd8e90e2dea91009f895a452a22">WaypointX</a>(wp2c) = <a class="code" href="common__nav_8h.html#a2d51bcd8e90e2dea91009f895a452a22">WaypointX</a>(wp2) - (x * <a class="code" href="nav__poles_8c.html#af12741cc685a5533fe2ed100d91649c4">SAFETY_MARGIN</a> + <a class="code" href="nav__survey__poly__rotorcraft_8c.html#a989485fd2d8026ceec5d57e8c7e629ab">y</a>) * radius;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="common__nav_8h.html#a983349c9ccc3f390fafe929d3c9fdd16">WaypointY</a>(wp2c) = <a class="code" href="common__nav_8h.html#a983349c9ccc3f390fafe929d3c9fdd16">WaypointY</a>(wp2) - (y * <a class="code" href="nav__poles_8c.html#af12741cc685a5533fe2ed100d91649c4">SAFETY_MARGIN</a> - <a class="code" href="nav__survey__poly__rotorcraft_8c.html#a2a5ef0ad00bc9e912a9aefcedf004cc4">x</a>) * radius;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="common__nav_8h.html#a2d51bcd8e90e2dea91009f895a452a22">WaypointX</a>(wp1c) = <a class="code" href="common__nav_8h.html#a2d51bcd8e90e2dea91009f895a452a22">WaypointX</a>(wp1) + (x * <a class="code" href="nav__poles_8c.html#af12741cc685a5533fe2ed100d91649c4">SAFETY_MARGIN</a> - <a class="code" href="nav__survey__poly__rotorcraft_8c.html#a989485fd2d8026ceec5d57e8c7e629ab">y</a>) * radius;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="common__nav_8h.html#a983349c9ccc3f390fafe929d3c9fdd16">WaypointY</a>(wp1c) = <a class="code" href="common__nav_8h.html#a983349c9ccc3f390fafe929d3c9fdd16">WaypointY</a>(wp1) + (y * <a class="code" href="nav__poles_8c.html#af12741cc685a5533fe2ed100d91649c4">SAFETY_MARGIN</a> + <a class="code" href="nav__survey__poly__rotorcraft_8c.html#a2a5ef0ad00bc9e912a9aefcedf004cc4">x</a>) * radius;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2bec074279a6a1807e29c7098439d771.html">poles</a></li><li class="navelem"><a class="el" href="nav__poles_8c.html">nav_poles.c</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:04:43 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_984e899df90dd104b2eabcdbb76ec71f.html">nav</a></li><li class="navelem"><a class="el" href="nav__poles_8c.html">nav_poles.c</a></li>
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:03 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

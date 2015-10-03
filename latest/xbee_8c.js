@@ -11,7 +11,6 @@ var xbee_8c =
     [ "XBEE_ATBD_CODE", "xbee_8c.html#a4d0fca6b17f56864d572a7eeff675489", null ],
     [ "XBEE_BAUD_ALTERNATE", "xbee_8c.html#a4a17154a88e2451b969d8f4ce8ce4320", null ],
     [ "XBEE_MY_ADDR", "xbee_8c.html#acc24881d303e94fc1c1fa24395a6c637", null ],
-    [ "XBeeUartSetBaudrate", "xbee_8c.html#a8d72ebf38d2442b307b00cc74361fd3f", null ],
     [ "check_available_space", "xbee_8c.html#a252f26d4f1a16270f73d79fd6e6e8323", null ],
     [ "count_bytes", "xbee_8c.html#a435856fd593452d9648f45094d70553f", null ],
     [ "end_message", "xbee_8c.html#a4d35f69d2dd9beb2d23363aac22407fa", null ],
@@ -22,7 +21,7 @@ var xbee_8c =
     [ "size_of", "xbee_8c.html#ae59ad3fbb2c036099d330801dd08a1ac", null ],
     [ "start_message", "xbee_8c.html#a76e3cc5fb9e03f248426776081f115e0", null ],
     [ "xbee_init", "xbee_8c.html#a964a1e8461e9c1187e5d69f521e5e107", null ],
-    [ "xbee_text_reply_is_ok", "xbee_8c.html#a5c4a396e2158905e1c456ea5ef974285", null ],
-    [ "xbee_try_to_enter_api", "xbee_8c.html#a34220e5c404d3d811ed2739ff2f0a84e", null ],
+    [ "xbee_text_reply_is_ok", "xbee_8c.html#a15d1a97320a834bb2d2b3d8d897588f1", null ],
+    [ "xbee_try_to_enter_api", "xbee_8c.html#a4e4f261d50533ecba1a7fa4246ecf295", null ],
     [ "xbee_tp", "xbee_8c.html#a6f625714a8612ddfbc3ba6cf112b7ed6", null ]
 ];

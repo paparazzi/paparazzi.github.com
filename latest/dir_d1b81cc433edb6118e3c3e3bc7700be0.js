@@ -11,6 +11,8 @@ var dir_d1b81cc433edb6118e3c3e3bc7700be0 =
     [ "stabilization_attitude_passthrough.h", "stabilization__attitude__passthrough_8h.html", "stabilization__attitude__passthrough_8h" ],
     [ "stabilization_attitude_quat_float.c", "stabilization__attitude__quat__float_8c.html", "stabilization__attitude__quat__float_8c" ],
     [ "stabilization_attitude_quat_float.h", "stabilization__attitude__quat__float_8h.html", "stabilization__attitude__quat__float_8h" ],
+    [ "stabilization_attitude_quat_indi.c", "stabilization__attitude__quat__indi_8c.html", "stabilization__attitude__quat__indi_8c" ],
+    [ "stabilization_attitude_quat_indi.h", "stabilization__attitude__quat__indi_8h.html", "stabilization__attitude__quat__indi_8h" ],
     [ "stabilization_attitude_quat_int.c", "stabilization__attitude__quat__int_8c.html", "stabilization__attitude__quat__int_8c" ],
     [ "stabilization_attitude_quat_int.h", "stabilization__attitude__quat__int_8h.html", null ],
     [ "stabilization_attitude_quat_transformations.c", "stabilization__attitude__quat__transformations_8c.html", "stabilization__attitude__quat__transformations_8c" ],

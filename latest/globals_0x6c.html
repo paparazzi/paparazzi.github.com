@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -523,7 +523,7 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 : <a class="el" href="hf__float_8c.html#a74ba4fd3f0ea5e4190d080b8f7e11c72">hf_float.c</a>
 </li>
 <li>LambdaOfUtmZone
-: <a class="el" href="pprz__geodetic__utm_8h.html#a9f746e2071fa15c7848f25af2aadb7ff">pprz_geodetic_utm.h</a>
+: <a class="el" href="group__math__geodetic__utm.html#ga9f746e2071fa15c7848f25af2aadb7ff">pprz_geodetic_utm.h</a>
 </li>
 <li>LANDING_AIRSPEED
 : <a class="el" href="nav__airspeed_8c.html#a69ed2f2f14d1a6f0ea054473a88c884d">nav_airspeed.c</a>
@@ -582,6 +582,9 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 <li>last_y
 : <a class="el" href="nav_8c.html#a38c13a13ef3e5a3b6480f71bf244e668">nav.c</a>
 , <a class="el" href="nav_8h.html#a38c13a13ef3e5a3b6480f71bf244e668">nav.h</a>
+</li>
+<li>lat_em7deg
+: <a class="el" href="exif__module_8c.html#a1012cf7205fc758a7c1d0e34641411cc">exif_module.c</a>
 </li>
 <li>lateral_mode
 : <a class="el" href="fixedwing_2autopilot_8c.html#ab559c6867326333905f9133432ff9315">autopilot.c</a>
@@ -751,44 +754,47 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 : <a class="el" href="debug__led_8h.html#a88928c53ddbb088d14bcf08c51f67856">debug_led.h</a>
 </li>
 <li>LED_12_AFIO_REMAP
-: <a class="el" href="lia__1_81_8h.html#aa85d3ec12dfcdd90bc965435b500b642">lia_1.1.h</a>
+: <a class="el" href="elle0__1_80_8h.html#aa85d3ec12dfcdd90bc965435b500b642">elle0_1.0.h</a>
+, <a class="el" href="lia__1_81_8h.html#aa85d3ec12dfcdd90bc965435b500b642">lia_1.1.h</a>
 , <a class="el" href="lisa__m__2_80_8h.html#aa85d3ec12dfcdd90bc965435b500b642">lisa_m_2.0.h</a>
 , <a class="el" href="lisa__m__2_81_8h.html#aa85d3ec12dfcdd90bc965435b500b642">lisa_m_2.1.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#aa85d3ec12dfcdd90bc965435b500b642">lisa_mx_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#aa85d3ec12dfcdd90bc965435b500b642">lisa_s_1.0.h</a>
 </li>
 <li>LED_12_GPIO
-: <a class="el" href="lia__1_81_8h.html#aace0ba50c1dbdfb2a37319b01b304fbb">lia_1.1.h</a>
+: <a class="el" href="elle0__1_80_8h.html#aace0ba50c1dbdfb2a37319b01b304fbb">elle0_1.0.h</a>
+, <a class="el" href="lia__1_81_8h.html#aace0ba50c1dbdfb2a37319b01b304fbb">lia_1.1.h</a>
 , <a class="el" href="lisa__m__2_80_8h.html#aace0ba50c1dbdfb2a37319b01b304fbb">lisa_m_2.0.h</a>
 , <a class="el" href="lisa__m__2_81_8h.html#aace0ba50c1dbdfb2a37319b01b304fbb">lisa_m_2.1.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#aace0ba50c1dbdfb2a37319b01b304fbb">lisa_mx_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#aace0ba50c1dbdfb2a37319b01b304fbb">lisa_s_1.0.h</a>
 </li>
 <li>LED_12_GPIO_OFF
-: <a class="el" href="lia__1_81_8h.html#a77f96756967cdac7e3fc59fda8933f36">lia_1.1.h</a>
+: <a class="el" href="elle0__1_80_8h.html#a77f96756967cdac7e3fc59fda8933f36">elle0_1.0.h</a>
+, <a class="el" href="lia__1_81_8h.html#a77f96756967cdac7e3fc59fda8933f36">lia_1.1.h</a>
 , <a class="el" href="lisa__m__2_80_8h.html#a77f96756967cdac7e3fc59fda8933f36">lisa_m_2.0.h</a>
 , <a class="el" href="lisa__m__2_81_8h.html#a77f96756967cdac7e3fc59fda8933f36">lisa_m_2.1.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a77f96756967cdac7e3fc59fda8933f36">lisa_mx_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#a77f96756967cdac7e3fc59fda8933f36">lisa_s_1.0.h</a>
 </li>
 <li>LED_12_GPIO_ON
-: <a class="el" href="lia__1_81_8h.html#acac29b2d7f7b1c3eebd0481c225bd691">lia_1.1.h</a>
+: <a class="el" href="elle0__1_80_8h.html#acac29b2d7f7b1c3eebd0481c225bd691">elle0_1.0.h</a>
+, <a class="el" href="lia__1_81_8h.html#acac29b2d7f7b1c3eebd0481c225bd691">lia_1.1.h</a>
 , <a class="el" href="lisa__m__2_80_8h.html#acac29b2d7f7b1c3eebd0481c225bd691">lisa_m_2.0.h</a>
 , <a class="el" href="lisa__m__2_81_8h.html#acac29b2d7f7b1c3eebd0481c225bd691">lisa_m_2.1.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#acac29b2d7f7b1c3eebd0481c225bd691">lisa_mx_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#acac29b2d7f7b1c3eebd0481c225bd691">lisa_s_1.0.h</a>
 </li>
 <li>LED_12_GPIO_PIN
-: <a class="el" href="lia__1_81_8h.html#a15566b5a7369bf1efa111d9a1d3d0b2a">lia_1.1.h</a>
+: <a class="el" href="elle0__1_80_8h.html#a15566b5a7369bf1efa111d9a1d3d0b2a">elle0_1.0.h</a>
+, <a class="el" href="lia__1_81_8h.html#a15566b5a7369bf1efa111d9a1d3d0b2a">lia_1.1.h</a>
 , <a class="el" href="lisa__m__2_80_8h.html#a15566b5a7369bf1efa111d9a1d3d0b2a">lisa_m_2.0.h</a>
 , <a class="el" href="lisa__m__2_81_8h.html#a15566b5a7369bf1efa111d9a1d3d0b2a">lisa_m_2.1.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a15566b5a7369bf1efa111d9a1d3d0b2a">lisa_mx_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#a15566b5a7369bf1efa111d9a1d3d0b2a">lisa_s_1.0.h</a>
 </li>
 <li>LED_1_AFIO_REMAP
-: <a class="el" href="apogee__1_80_8h.html#ad2aa2755e250074295573801fe54cf9a">apogee_1.0.h</a>
-, <a class="el" href="krooz__sd_8h.html#ad2aa2755e250074295573801fe54cf9a">krooz_sd.h</a>
-, <a class="el" href="lia__1_81_8h.html#ad2aa2755e250074295573801fe54cf9a">lia_1.1.h</a>
+: <a class="el" href="lia__1_81_8h.html#ad2aa2755e250074295573801fe54cf9a">lia_1.1.h</a>
 , <a class="el" href="lisa__m__1_80_8h.html#ad2aa2755e250074295573801fe54cf9a">lisa_m_1.0.h</a>
 , <a class="el" href="lisa__m__2_80_8h.html#ad2aa2755e250074295573801fe54cf9a">lisa_m_2.0.h</a>
 , <a class="el" href="lisa__m__2_81_8h.html#ad2aa2755e250074295573801fe54cf9a">lisa_m_2.1.h</a>
@@ -796,6 +802,10 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 , <a class="el" href="lisa__s__1_80_8h.html#ad2aa2755e250074295573801fe54cf9a">lisa_s_1.0.h</a>
 , <a class="el" href="navstik__1_80_8h.html#ad2aa2755e250074295573801fe54cf9a">navstik_1.0.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#ad2aa2755e250074295573801fe54cf9a">px4fmu_1.7.h</a>
+, <a class="el" href="apogee__1_80_8h.html#ad2aa2755e250074295573801fe54cf9a">apogee_1.0.h</a>
+, <a class="el" href="cc3d_8h.html#ad2aa2755e250074295573801fe54cf9a">cc3d.h</a>
+, <a class="el" href="elle0__1_80_8h.html#ad2aa2755e250074295573801fe54cf9a">elle0_1.0.h</a>
+, <a class="el" href="krooz__sd_8h.html#ad2aa2755e250074295573801fe54cf9a">krooz_sd.h</a>
 </li>
 <li>LED_1_BANK
 : <a class="el" href="booz__1_80_8h.html#a27043d2a36fed64b2808c882c24a1465">booz_1.0.h</a>
@@ -813,7 +823,8 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 </li>
 <li>LED_1_GPIO
 : <a class="el" href="apogee__1_80_8h.html#a37154c806d85fb9f9158f86bb55e9ee0">apogee_1.0.h</a>
-, <a class="el" href="beth_8h.html#a37154c806d85fb9f9158f86bb55e9ee0">beth.h</a>
+, <a class="el" href="cc3d_8h.html#a37154c806d85fb9f9158f86bb55e9ee0">cc3d.h</a>
+, <a class="el" href="elle0__1_80_8h.html#a37154c806d85fb9f9158f86bb55e9ee0">elle0_1.0.h</a>
 , <a class="el" href="krooz__sd_8h.html#a37154c806d85fb9f9158f86bb55e9ee0">krooz_sd.h</a>
 , <a class="el" href="lia__1_81_8h.html#a37154c806d85fb9f9158f86bb55e9ee0">lia_1.1.h</a>
 , <a class="el" href="lisa__m__1_80_8h.html#a37154c806d85fb9f9158f86bb55e9ee0">lisa_m_1.0.h</a>
@@ -827,6 +838,8 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 </li>
 <li>LED_1_GPIO_OFF
 : <a class="el" href="apogee__1_80_8h.html#a5270a709b71bd96c56b4cd4e7476e8c1">apogee_1.0.h</a>
+, <a class="el" href="cc3d_8h.html#a5270a709b71bd96c56b4cd4e7476e8c1">cc3d.h</a>
+, <a class="el" href="elle0__1_80_8h.html#a5270a709b71bd96c56b4cd4e7476e8c1">elle0_1.0.h</a>
 , <a class="el" href="krooz__sd_8h.html#a5270a709b71bd96c56b4cd4e7476e8c1">krooz_sd.h</a>
 , <a class="el" href="lia__1_81_8h.html#a5270a709b71bd96c56b4cd4e7476e8c1">lia_1.1.h</a>
 , <a class="el" href="lisa__m__1_80_8h.html#a5270a709b71bd96c56b4cd4e7476e8c1">lisa_m_1.0.h</a>
@@ -839,6 +852,8 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 </li>
 <li>LED_1_GPIO_ON
 : <a class="el" href="apogee__1_80_8h.html#a765749726b83cb80b82cdbe535e71de0">apogee_1.0.h</a>
+, <a class="el" href="cc3d_8h.html#a765749726b83cb80b82cdbe535e71de0">cc3d.h</a>
+, <a class="el" href="elle0__1_80_8h.html#a765749726b83cb80b82cdbe535e71de0">elle0_1.0.h</a>
 , <a class="el" href="krooz__sd_8h.html#a765749726b83cb80b82cdbe535e71de0">krooz_sd.h</a>
 , <a class="el" href="lia__1_81_8h.html#a765749726b83cb80b82cdbe535e71de0">lia_1.1.h</a>
 , <a class="el" href="lisa__m__1_80_8h.html#a765749726b83cb80b82cdbe535e71de0">lisa_m_1.0.h</a>
@@ -851,7 +866,8 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 </li>
 <li>LED_1_GPIO_PIN
 : <a class="el" href="apogee__1_80_8h.html#af31fda99a2cc43d62229ac1c47bbe56d">apogee_1.0.h</a>
-, <a class="el" href="beth_8h.html#af31fda99a2cc43d62229ac1c47bbe56d">beth.h</a>
+, <a class="el" href="cc3d_8h.html#af31fda99a2cc43d62229ac1c47bbe56d">cc3d.h</a>
+, <a class="el" href="elle0__1_80_8h.html#af31fda99a2cc43d62229ac1c47bbe56d">elle0_1.0.h</a>
 , <a class="el" href="krooz__sd_8h.html#af31fda99a2cc43d62229ac1c47bbe56d">krooz_sd.h</a>
 , <a class="el" href="lia__1_81_8h.html#af31fda99a2cc43d62229ac1c47bbe56d">lia_1.1.h</a>
 , <a class="el" href="lisa__m__1_80_8h.html#af31fda99a2cc43d62229ac1c47bbe56d">lisa_m_1.0.h</a>
@@ -879,6 +895,7 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 </li>
 <li>LED_2_AFIO_REMAP
 : <a class="el" href="apogee__1_80_8h.html#abb1d7a26f33f3c611234e22199d24209">apogee_1.0.h</a>
+, <a class="el" href="elle0__1_80_8h.html#abb1d7a26f33f3c611234e22199d24209">elle0_1.0.h</a>
 , <a class="el" href="krooz__sd_8h.html#abb1d7a26f33f3c611234e22199d24209">krooz_sd.h</a>
 , <a class="el" href="lia__1_81_8h.html#abb1d7a26f33f3c611234e22199d24209">lia_1.1.h</a>
 , <a class="el" href="lisa__m__1_80_8h.html#abb1d7a26f33f3c611234e22199d24209">lisa_m_1.0.h</a>
@@ -905,6 +922,7 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 </li>
 <li>LED_2_GPIO
 : <a class="el" href="apogee__1_80_8h.html#a4285bdd58098064c3bab3976a78b26fa">apogee_1.0.h</a>
+, <a class="el" href="elle0__1_80_8h.html#a4285bdd58098064c3bab3976a78b26fa">elle0_1.0.h</a>
 , <a class="el" href="krooz__sd_8h.html#a4285bdd58098064c3bab3976a78b26fa">krooz_sd.h</a>
 , <a class="el" href="lia__1_81_8h.html#a4285bdd58098064c3bab3976a78b26fa">lia_1.1.h</a>
 , <a class="el" href="lisa__m__1_80_8h.html#a4285bdd58098064c3bab3976a78b26fa">lisa_m_1.0.h</a>
@@ -917,6 +935,7 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 </li>
 <li>LED_2_GPIO_OFF
 : <a class="el" href="apogee__1_80_8h.html#aeffb1efc9c3b1504553532d99093578a">apogee_1.0.h</a>
+, <a class="el" href="elle0__1_80_8h.html#aeffb1efc9c3b1504553532d99093578a">elle0_1.0.h</a>
 , <a class="el" href="krooz__sd_8h.html#aeffb1efc9c3b1504553532d99093578a">krooz_sd.h</a>
 , <a class="el" href="lia__1_81_8h.html#aeffb1efc9c3b1504553532d99093578a">lia_1.1.h</a>
 , <a class="el" href="lisa__m__1_80_8h.html#aeffb1efc9c3b1504553532d99093578a">lisa_m_1.0.h</a>
@@ -929,6 +948,7 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 </li>
 <li>LED_2_GPIO_ON
 : <a class="el" href="apogee__1_80_8h.html#aaf986945a2a0714bfcf464fd344d8708">apogee_1.0.h</a>
+, <a class="el" href="elle0__1_80_8h.html#aaf986945a2a0714bfcf464fd344d8708">elle0_1.0.h</a>
 , <a class="el" href="krooz__sd_8h.html#aaf986945a2a0714bfcf464fd344d8708">krooz_sd.h</a>
 , <a class="el" href="lia__1_81_8h.html#aaf986945a2a0714bfcf464fd344d8708">lia_1.1.h</a>
 , <a class="el" href="lisa__m__1_80_8h.html#aaf986945a2a0714bfcf464fd344d8708">lisa_m_1.0.h</a>
@@ -941,6 +961,7 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 </li>
 <li>LED_2_GPIO_PIN
 : <a class="el" href="apogee__1_80_8h.html#ac5fb054be5f8f0ce3e4ac33ad98bb07a">apogee_1.0.h</a>
+, <a class="el" href="elle0__1_80_8h.html#ac5fb054be5f8f0ce3e4ac33ad98bb07a">elle0_1.0.h</a>
 , <a class="el" href="krooz__sd_8h.html#ac5fb054be5f8f0ce3e4ac33ad98bb07a">krooz_sd.h</a>
 , <a class="el" href="lia__1_81_8h.html#ac5fb054be5f8f0ce3e4ac33ad98bb07a">lia_1.1.h</a>
 , <a class="el" href="lisa__m__1_80_8h.html#ac5fb054be5f8f0ce3e4ac33ad98bb07a">lisa_m_1.0.h</a>
@@ -967,6 +988,7 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 </li>
 <li>LED_3_AFIO_REMAP
 : <a class="el" href="apogee__1_80_8h.html#a7ae5162492c27a9f944435eb96e1cdec">apogee_1.0.h</a>
+, <a class="el" href="elle0__1_80_8h.html#a7ae5162492c27a9f944435eb96e1cdec">elle0_1.0.h</a>
 , <a class="el" href="krooz__sd_8h.html#a7ae5162492c27a9f944435eb96e1cdec">krooz_sd.h</a>
 , <a class="el" href="lia__1_81_8h.html#a7ae5162492c27a9f944435eb96e1cdec">lia_1.1.h</a>
 , <a class="el" href="lisa__m__1_80_8h.html#a7ae5162492c27a9f944435eb96e1cdec">lisa_m_1.0.h</a>
@@ -987,6 +1009,7 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 </li>
 <li>LED_3_GPIO
 : <a class="el" href="apogee__1_80_8h.html#add2d323f8eb544f1ab84762f94e44bd4">apogee_1.0.h</a>
+, <a class="el" href="elle0__1_80_8h.html#add2d323f8eb544f1ab84762f94e44bd4">elle0_1.0.h</a>
 , <a class="el" href="krooz__sd_8h.html#add2d323f8eb544f1ab84762f94e44bd4">krooz_sd.h</a>
 , <a class="el" href="lia__1_81_8h.html#add2d323f8eb544f1ab84762f94e44bd4">lia_1.1.h</a>
 , <a class="el" href="lisa__m__1_80_8h.html#add2d323f8eb544f1ab84762f94e44bd4">lisa_m_1.0.h</a>
@@ -998,6 +1021,7 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 </li>
 <li>LED_3_GPIO_OFF
 : <a class="el" href="apogee__1_80_8h.html#a74a73d71b5a66c3cfea6788e42674c94">apogee_1.0.h</a>
+, <a class="el" href="elle0__1_80_8h.html#a74a73d71b5a66c3cfea6788e42674c94">elle0_1.0.h</a>
 , <a class="el" href="krooz__sd_8h.html#a74a73d71b5a66c3cfea6788e42674c94">krooz_sd.h</a>
 , <a class="el" href="lia__1_81_8h.html#a74a73d71b5a66c3cfea6788e42674c94">lia_1.1.h</a>
 , <a class="el" href="lisa__m__1_80_8h.html#a74a73d71b5a66c3cfea6788e42674c94">lisa_m_1.0.h</a>
@@ -1009,6 +1033,7 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 </li>
 <li>LED_3_GPIO_ON
 : <a class="el" href="apogee__1_80_8h.html#af754c909b4a07f3a9bfd585238432b00">apogee_1.0.h</a>
+, <a class="el" href="elle0__1_80_8h.html#af754c909b4a07f3a9bfd585238432b00">elle0_1.0.h</a>
 , <a class="el" href="krooz__sd_8h.html#af754c909b4a07f3a9bfd585238432b00">krooz_sd.h</a>
 , <a class="el" href="lia__1_81_8h.html#af754c909b4a07f3a9bfd585238432b00">lia_1.1.h</a>
 , <a class="el" href="lisa__m__1_80_8h.html#af754c909b4a07f3a9bfd585238432b00">lisa_m_1.0.h</a>
@@ -1020,6 +1045,7 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 </li>
 <li>LED_3_GPIO_PIN
 : <a class="el" href="apogee__1_80_8h.html#aa6840f28e52717a5ded7e68a11e9aa9c">apogee_1.0.h</a>
+, <a class="el" href="elle0__1_80_8h.html#aa6840f28e52717a5ded7e68a11e9aa9c">elle0_1.0.h</a>
 , <a class="el" href="krooz__sd_8h.html#aa6840f28e52717a5ded7e68a11e9aa9c">krooz_sd.h</a>
 , <a class="el" href="lia__1_81_8h.html#aa6840f28e52717a5ded7e68a11e9aa9c">lia_1.1.h</a>
 , <a class="el" href="lisa__m__1_80_8h.html#aa6840f28e52717a5ded7e68a11e9aa9c">lisa_m_1.0.h</a>
@@ -1054,7 +1080,6 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 </li>
 <li>LED_4_GPIO
 : <a class="el" href="apogee__1_80_8h.html#ab366dbaac15f5af2ac23bef4836c23c9">apogee_1.0.h</a>
-, <a class="el" href="beth_8h.html#ab366dbaac15f5af2ac23bef4836c23c9">beth.h</a>
 , <a class="el" href="lia__1_81_8h.html#ab366dbaac15f5af2ac23bef4836c23c9">lia_1.1.h</a>
 , <a class="el" href="lisa__m__1_80_8h.html#ab366dbaac15f5af2ac23bef4836c23c9">lisa_m_1.0.h</a>
 , <a class="el" href="lisa__m__2_80_8h.html#ab366dbaac15f5af2ac23bef4836c23c9">lisa_m_2.0.h</a>
@@ -1082,7 +1107,6 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 </li>
 <li>LED_4_GPIO_PIN
 : <a class="el" href="apogee__1_80_8h.html#a082f6a92009c531f29c919d1a9c4342b">apogee_1.0.h</a>
-, <a class="el" href="beth_8h.html#a082f6a92009c531f29c919d1a9c4342b">beth.h</a>
 , <a class="el" href="lia__1_81_8h.html#a082f6a92009c531f29c919d1a9c4342b">lia_1.1.h</a>
 , <a class="el" href="lisa__m__1_80_8h.html#a082f6a92009c531f29c919d1a9c4342b">lisa_m_1.0.h</a>
 , <a class="el" href="lisa__m__2_80_8h.html#a082f6a92009c531f29c919d1a9c4342b">lisa_m_2.0.h</a>
@@ -1096,50 +1120,48 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 , <a class="el" href="navgo__1_80_8h.html#a85f36fccd0bafe6be62608812b56e2ca">navgo_1.0.h</a>
 </li>
 <li>LED_5_AFIO_REMAP
-: <a class="el" href="lisa__m__2_80_8h.html#a41dee8ddb2c5c3fb5a8e38460d4a5f19">lisa_m_2.0.h</a>
-, <a class="el" href="apogee__1_80_8h.html#a41dee8ddb2c5c3fb5a8e38460d4a5f19">apogee_1.0.h</a>
-, <a class="el" href="lia__1_81_8h.html#a41dee8ddb2c5c3fb5a8e38460d4a5f19">lia_1.1.h</a>
+: <a class="el" href="apogee__1_80_8h.html#a41dee8ddb2c5c3fb5a8e38460d4a5f19">apogee_1.0.h</a>
 , <a class="el" href="lisa__m__1_80_8h.html#a41dee8ddb2c5c3fb5a8e38460d4a5f19">lisa_m_1.0.h</a>
+, <a class="el" href="lisa__m__2_80_8h.html#a41dee8ddb2c5c3fb5a8e38460d4a5f19">lisa_m_2.0.h</a>
 , <a class="el" href="lisa__m__2_81_8h.html#a41dee8ddb2c5c3fb5a8e38460d4a5f19">lisa_m_2.1.h</a>
-, <a class="el" href="lisa__mx__common_8h.html#a41dee8ddb2c5c3fb5a8e38460d4a5f19">lisa_mx_common.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#a41dee8ddb2c5c3fb5a8e38460d4a5f19">stm32f4_discovery.h</a>
+, <a class="el" href="lisa__mx__common_8h.html#a41dee8ddb2c5c3fb5a8e38460d4a5f19">lisa_mx_common.h</a>
+, <a class="el" href="lia__1_81_8h.html#a41dee8ddb2c5c3fb5a8e38460d4a5f19">lia_1.1.h</a>
 </li>
 <li>LED_5_GPIO
-: <a class="el" href="lisa__m__2_81_8h.html#a145ce7967376b20807d2bc459225f19d">lisa_m_2.1.h</a>
-, <a class="el" href="lisa__mx__common_8h.html#a145ce7967376b20807d2bc459225f19d">lisa_mx_common.h</a>
-, <a class="el" href="stm32f4__discovery_8h.html#a145ce7967376b20807d2bc459225f19d">stm32f4_discovery.h</a>
-, <a class="el" href="lisa__m__2_80_8h.html#a145ce7967376b20807d2bc459225f19d">lisa_m_2.0.h</a>
-, <a class="el" href="apogee__1_80_8h.html#a145ce7967376b20807d2bc459225f19d">apogee_1.0.h</a>
-, <a class="el" href="beth_8h.html#a145ce7967376b20807d2bc459225f19d">beth.h</a>
+: <a class="el" href="apogee__1_80_8h.html#a145ce7967376b20807d2bc459225f19d">apogee_1.0.h</a>
 , <a class="el" href="lia__1_81_8h.html#a145ce7967376b20807d2bc459225f19d">lia_1.1.h</a>
 , <a class="el" href="lisa__m__1_80_8h.html#a145ce7967376b20807d2bc459225f19d">lisa_m_1.0.h</a>
+, <a class="el" href="lisa__m__2_80_8h.html#a145ce7967376b20807d2bc459225f19d">lisa_m_2.0.h</a>
+, <a class="el" href="lisa__m__2_81_8h.html#a145ce7967376b20807d2bc459225f19d">lisa_m_2.1.h</a>
+, <a class="el" href="lisa__mx__common_8h.html#a145ce7967376b20807d2bc459225f19d">lisa_mx_common.h</a>
+, <a class="el" href="stm32f4__discovery_8h.html#a145ce7967376b20807d2bc459225f19d">stm32f4_discovery.h</a>
 </li>
 <li>LED_5_GPIO_OFF
 : <a class="el" href="apogee__1_80_8h.html#a3363d6a26078e8da07f98b521ce50d76">apogee_1.0.h</a>
 , <a class="el" href="lia__1_81_8h.html#a3363d6a26078e8da07f98b521ce50d76">lia_1.1.h</a>
 , <a class="el" href="lisa__m__1_80_8h.html#a3363d6a26078e8da07f98b521ce50d76">lisa_m_1.0.h</a>
-, <a class="el" href="lisa__m__2_80_8h.html#a3363d6a26078e8da07f98b521ce50d76">lisa_m_2.0.h</a>
 , <a class="el" href="lisa__m__2_81_8h.html#a3363d6a26078e8da07f98b521ce50d76">lisa_m_2.1.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a3363d6a26078e8da07f98b521ce50d76">lisa_mx_common.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#a3363d6a26078e8da07f98b521ce50d76">stm32f4_discovery.h</a>
+, <a class="el" href="lisa__m__2_80_8h.html#a3363d6a26078e8da07f98b521ce50d76">lisa_m_2.0.h</a>
 </li>
 <li>LED_5_GPIO_ON
-: <a class="el" href="apogee__1_80_8h.html#ac3a5ec8060a1026630d56d0ad28e70be">apogee_1.0.h</a>
+: <a class="el" href="lia__1_81_8h.html#ac3a5ec8060a1026630d56d0ad28e70be">lia_1.1.h</a>
 , <a class="el" href="lisa__m__1_80_8h.html#ac3a5ec8060a1026630d56d0ad28e70be">lisa_m_1.0.h</a>
 , <a class="el" href="lisa__m__2_80_8h.html#ac3a5ec8060a1026630d56d0ad28e70be">lisa_m_2.0.h</a>
 , <a class="el" href="lisa__m__2_81_8h.html#ac3a5ec8060a1026630d56d0ad28e70be">lisa_m_2.1.h</a>
-, <a class="el" href="stm32f4__discovery_8h.html#ac3a5ec8060a1026630d56d0ad28e70be">stm32f4_discovery.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#ac3a5ec8060a1026630d56d0ad28e70be">lisa_mx_common.h</a>
-, <a class="el" href="lia__1_81_8h.html#ac3a5ec8060a1026630d56d0ad28e70be">lia_1.1.h</a>
+, <a class="el" href="stm32f4__discovery_8h.html#ac3a5ec8060a1026630d56d0ad28e70be">stm32f4_discovery.h</a>
+, <a class="el" href="apogee__1_80_8h.html#ac3a5ec8060a1026630d56d0ad28e70be">apogee_1.0.h</a>
 </li>
 <li>LED_5_GPIO_PIN
 : <a class="el" href="apogee__1_80_8h.html#aace877e382bb988e286679d3283814ff">apogee_1.0.h</a>
-, <a class="el" href="beth_8h.html#aace877e382bb988e286679d3283814ff">beth.h</a>
-, <a class="el" href="lia__1_81_8h.html#aace877e382bb988e286679d3283814ff">lia_1.1.h</a>
 , <a class="el" href="lisa__m__1_80_8h.html#aace877e382bb988e286679d3283814ff">lisa_m_1.0.h</a>
 , <a class="el" href="lisa__m__2_80_8h.html#aace877e382bb988e286679d3283814ff">lisa_m_2.0.h</a>
 , <a class="el" href="lisa__m__2_81_8h.html#aace877e382bb988e286679d3283814ff">lisa_m_2.1.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#aace877e382bb988e286679d3283814ff">stm32f4_discovery.h</a>
+, <a class="el" href="lia__1_81_8h.html#aace877e382bb988e286679d3283814ff">lia_1.1.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#aace877e382bb988e286679d3283814ff">lisa_mx_common.h</a>
 </li>
 <li>LED_6_AFIO_REMAP
@@ -1151,45 +1173,43 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 , <a class="el" href="lisa__m__2_80_8h.html#ae7940e40ba006e85377292fc82afdb9e">lisa_m_2.0.h</a>
 </li>
 <li>LED_6_GPIO
-: <a class="el" href="beth_8h.html#aaefc82c01863a3e59aa03acaa3aaca7c">beth.h</a>
+: <a class="el" href="apogee__1_80_8h.html#aaefc82c01863a3e59aa03acaa3aaca7c">apogee_1.0.h</a>
 , <a class="el" href="lia__1_81_8h.html#aaefc82c01863a3e59aa03acaa3aaca7c">lia_1.1.h</a>
 , <a class="el" href="lisa__m__2_80_8h.html#aaefc82c01863a3e59aa03acaa3aaca7c">lisa_m_2.0.h</a>
 , <a class="el" href="lisa__m__2_81_8h.html#aaefc82c01863a3e59aa03acaa3aaca7c">lisa_m_2.1.h</a>
-, <a class="el" href="lisa__mx__common_8h.html#aaefc82c01863a3e59aa03acaa3aaca7c">lisa_mx_common.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#aaefc82c01863a3e59aa03acaa3aaca7c">stm32f4_discovery.h</a>
-, <a class="el" href="apogee__1_80_8h.html#aaefc82c01863a3e59aa03acaa3aaca7c">apogee_1.0.h</a>
+, <a class="el" href="lisa__mx__common_8h.html#aaefc82c01863a3e59aa03acaa3aaca7c">lisa_mx_common.h</a>
 </li>
 <li>LED_6_GPIO_OFF
 : <a class="el" href="apogee__1_80_8h.html#aae60455584fa5c7b0eba1d8533084cb3">apogee_1.0.h</a>
-, <a class="el" href="lisa__m__2_80_8h.html#aae60455584fa5c7b0eba1d8533084cb3">lisa_m_2.0.h</a>
+, <a class="el" href="lia__1_81_8h.html#aae60455584fa5c7b0eba1d8533084cb3">lia_1.1.h</a>
 , <a class="el" href="lisa__m__2_81_8h.html#aae60455584fa5c7b0eba1d8533084cb3">lisa_m_2.1.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#aae60455584fa5c7b0eba1d8533084cb3">lisa_mx_common.h</a>
-, <a class="el" href="lia__1_81_8h.html#aae60455584fa5c7b0eba1d8533084cb3">lia_1.1.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#aae60455584fa5c7b0eba1d8533084cb3">stm32f4_discovery.h</a>
+, <a class="el" href="lisa__m__2_80_8h.html#aae60455584fa5c7b0eba1d8533084cb3">lisa_m_2.0.h</a>
 </li>
 <li>LED_6_GPIO_ON
-: <a class="el" href="apogee__1_80_8h.html#add1f6ca876a51868dcf1294e4d4d213b">apogee_1.0.h</a>
-, <a class="el" href="lia__1_81_8h.html#add1f6ca876a51868dcf1294e4d4d213b">lia_1.1.h</a>
+: <a class="el" href="lia__1_81_8h.html#add1f6ca876a51868dcf1294e4d4d213b">lia_1.1.h</a>
 , <a class="el" href="lisa__m__2_80_8h.html#add1f6ca876a51868dcf1294e4d4d213b">lisa_m_2.0.h</a>
+, <a class="el" href="lisa__m__2_81_8h.html#add1f6ca876a51868dcf1294e4d4d213b">lisa_m_2.1.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#add1f6ca876a51868dcf1294e4d4d213b">lisa_mx_common.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#add1f6ca876a51868dcf1294e4d4d213b">stm32f4_discovery.h</a>
-, <a class="el" href="lisa__m__2_81_8h.html#add1f6ca876a51868dcf1294e4d4d213b">lisa_m_2.1.h</a>
+, <a class="el" href="apogee__1_80_8h.html#add1f6ca876a51868dcf1294e4d4d213b">apogee_1.0.h</a>
 </li>
 <li>LED_6_GPIO_PIN
 : <a class="el" href="apogee__1_80_8h.html#adc37a510e8ff73ecd49328bfc8cd41c1">apogee_1.0.h</a>
-, <a class="el" href="beth_8h.html#adc37a510e8ff73ecd49328bfc8cd41c1">beth.h</a>
 , <a class="el" href="lia__1_81_8h.html#adc37a510e8ff73ecd49328bfc8cd41c1">lia_1.1.h</a>
-, <a class="el" href="lisa__m__2_80_8h.html#adc37a510e8ff73ecd49328bfc8cd41c1">lisa_m_2.0.h</a>
 , <a class="el" href="lisa__m__2_81_8h.html#adc37a510e8ff73ecd49328bfc8cd41c1">lisa_m_2.1.h</a>
-, <a class="el" href="stm32f4__discovery_8h.html#adc37a510e8ff73ecd49328bfc8cd41c1">stm32f4_discovery.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#adc37a510e8ff73ecd49328bfc8cd41c1">lisa_mx_common.h</a>
+, <a class="el" href="stm32f4__discovery_8h.html#adc37a510e8ff73ecd49328bfc8cd41c1">stm32f4_discovery.h</a>
+, <a class="el" href="lisa__m__2_80_8h.html#adc37a510e8ff73ecd49328bfc8cd41c1">lisa_m_2.0.h</a>
 </li>
 <li>LED_7_AFIO_REMAP
-: <a class="el" href="apogee__1_80_8h.html#a7626515800835f0b73980c296b26bf90">apogee_1.0.h</a>
-, <a class="el" href="lia__1_81_8h.html#a7626515800835f0b73980c296b26bf90">lia_1.1.h</a>
+: <a class="el" href="lia__1_81_8h.html#a7626515800835f0b73980c296b26bf90">lia_1.1.h</a>
+, <a class="el" href="lisa__m__2_80_8h.html#a7626515800835f0b73980c296b26bf90">lisa_m_2.0.h</a>
 , <a class="el" href="lisa__m__2_81_8h.html#a7626515800835f0b73980c296b26bf90">lisa_m_2.1.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a7626515800835f0b73980c296b26bf90">lisa_mx_common.h</a>
-, <a class="el" href="lisa__m__2_80_8h.html#a7626515800835f0b73980c296b26bf90">lisa_m_2.0.h</a>
+, <a class="el" href="apogee__1_80_8h.html#a7626515800835f0b73980c296b26bf90">apogee_1.0.h</a>
 </li>
 <li>LED_7_GPIO
 : <a class="el" href="apogee__1_80_8h.html#affd1eec19194fa5f68e10a79d48c35d5">apogee_1.0.h</a>
@@ -1197,29 +1217,27 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 , <a class="el" href="lisa__m__2_80_8h.html#affd1eec19194fa5f68e10a79d48c35d5">lisa_m_2.0.h</a>
 , <a class="el" href="lisa__m__2_81_8h.html#affd1eec19194fa5f68e10a79d48c35d5">lisa_m_2.1.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#affd1eec19194fa5f68e10a79d48c35d5">lisa_mx_common.h</a>
-, <a class="el" href="beth_8h.html#affd1eec19194fa5f68e10a79d48c35d5">beth.h</a>
 </li>
 <li>LED_7_GPIO_OFF
 : <a class="el" href="apogee__1_80_8h.html#ac2d232942c883917b79fd1229e788f2d">apogee_1.0.h</a>
 , <a class="el" href="lia__1_81_8h.html#ac2d232942c883917b79fd1229e788f2d">lia_1.1.h</a>
-, <a class="el" href="lisa__m__2_80_8h.html#ac2d232942c883917b79fd1229e788f2d">lisa_m_2.0.h</a>
-, <a class="el" href="lisa__mx__common_8h.html#ac2d232942c883917b79fd1229e788f2d">lisa_mx_common.h</a>
 , <a class="el" href="lisa__m__2_81_8h.html#ac2d232942c883917b79fd1229e788f2d">lisa_m_2.1.h</a>
+, <a class="el" href="lisa__mx__common_8h.html#ac2d232942c883917b79fd1229e788f2d">lisa_mx_common.h</a>
+, <a class="el" href="lisa__m__2_80_8h.html#ac2d232942c883917b79fd1229e788f2d">lisa_m_2.0.h</a>
 </li>
 <li>LED_7_GPIO_ON
 : <a class="el" href="apogee__1_80_8h.html#a8475ccb2e744f79592d55d43fa073641">apogee_1.0.h</a>
-, <a class="el" href="lia__1_81_8h.html#a8475ccb2e744f79592d55d43fa073641">lia_1.1.h</a>
+, <a class="el" href="lisa__m__2_80_8h.html#a8475ccb2e744f79592d55d43fa073641">lisa_m_2.0.h</a>
 , <a class="el" href="lisa__m__2_81_8h.html#a8475ccb2e744f79592d55d43fa073641">lisa_m_2.1.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a8475ccb2e744f79592d55d43fa073641">lisa_mx_common.h</a>
-, <a class="el" href="lisa__m__2_80_8h.html#a8475ccb2e744f79592d55d43fa073641">lisa_m_2.0.h</a>
+, <a class="el" href="lia__1_81_8h.html#a8475ccb2e744f79592d55d43fa073641">lia_1.1.h</a>
 </li>
 <li>LED_7_GPIO_PIN
-: <a class="el" href="apogee__1_80_8h.html#a5daa3f2d218cecbea875535fc41a6779">apogee_1.0.h</a>
-, <a class="el" href="lia__1_81_8h.html#a5daa3f2d218cecbea875535fc41a6779">lia_1.1.h</a>
+: <a class="el" href="lia__1_81_8h.html#a5daa3f2d218cecbea875535fc41a6779">lia_1.1.h</a>
 , <a class="el" href="lisa__m__2_80_8h.html#a5daa3f2d218cecbea875535fc41a6779">lisa_m_2.0.h</a>
 , <a class="el" href="lisa__m__2_81_8h.html#a5daa3f2d218cecbea875535fc41a6779">lisa_m_2.1.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a5daa3f2d218cecbea875535fc41a6779">lisa_mx_common.h</a>
-, <a class="el" href="beth_8h.html#a5daa3f2d218cecbea875535fc41a6779">beth.h</a>
+, <a class="el" href="apogee__1_80_8h.html#a5daa3f2d218cecbea875535fc41a6779">apogee_1.0.h</a>
 </li>
 <li>LED_8_AFIO_REMAP
 : <a class="el" href="apogee__1_80_8h.html#af3de5b6ed5b8e31a0be42afece9cb4ee">apogee_1.0.h</a>
@@ -1263,44 +1281,49 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 : <a class="el" href="led_8h.html#a104bbef9e8decc22a2626270747c278b">led.h</a>
 </li>
 <li>LED_BODY_AFIO_REMAP
-: <a class="el" href="lisa__m__1_80_8h.html#a2bfe3742638f101571e96416b9e73123">lisa_m_1.0.h</a>
+: <a class="el" href="lia__1_81_8h.html#a2bfe3742638f101571e96416b9e73123">lia_1.1.h</a>
+, <a class="el" href="lisa__m__1_80_8h.html#a2bfe3742638f101571e96416b9e73123">lisa_m_1.0.h</a>
 , <a class="el" href="lisa__m__2_80_8h.html#a2bfe3742638f101571e96416b9e73123">lisa_m_2.0.h</a>
 , <a class="el" href="lisa__m__2_81_8h.html#a2bfe3742638f101571e96416b9e73123">lisa_m_2.1.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a2bfe3742638f101571e96416b9e73123">lisa_mx_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#a2bfe3742638f101571e96416b9e73123">lisa_s_1.0.h</a>
-, <a class="el" href="lia__1_81_8h.html#a2bfe3742638f101571e96416b9e73123">lia_1.1.h</a>
+, <a class="el" href="elle0__1_80_8h.html#a2bfe3742638f101571e96416b9e73123">elle0_1.0.h</a>
 </li>
 <li>LED_BODY_GPIO
-: <a class="el" href="lia__1_81_8h.html#a844db1e680f18109b59149b9e33dbb51">lia_1.1.h</a>
+: <a class="el" href="elle0__1_80_8h.html#a844db1e680f18109b59149b9e33dbb51">elle0_1.0.h</a>
 , <a class="el" href="lisa__m__1_80_8h.html#a844db1e680f18109b59149b9e33dbb51">lisa_m_1.0.h</a>
-, <a class="el" href="lisa__m__2_81_8h.html#a844db1e680f18109b59149b9e33dbb51">lisa_m_2.1.h</a>
-, <a class="el" href="lisa__mx__common_8h.html#a844db1e680f18109b59149b9e33dbb51">lisa_mx_common.h</a>
-, <a class="el" href="lisa__s__1_80_8h.html#a844db1e680f18109b59149b9e33dbb51">lisa_s_1.0.h</a>
 , <a class="el" href="lisa__m__2_80_8h.html#a844db1e680f18109b59149b9e33dbb51">lisa_m_2.0.h</a>
+, <a class="el" href="lisa__m__2_81_8h.html#a844db1e680f18109b59149b9e33dbb51">lisa_m_2.1.h</a>
+, <a class="el" href="lisa__s__1_80_8h.html#a844db1e680f18109b59149b9e33dbb51">lisa_s_1.0.h</a>
+, <a class="el" href="lia__1_81_8h.html#a844db1e680f18109b59149b9e33dbb51">lia_1.1.h</a>
+, <a class="el" href="lisa__mx__common_8h.html#a844db1e680f18109b59149b9e33dbb51">lisa_mx_common.h</a>
 </li>
 <li>LED_BODY_GPIO_OFF
-: <a class="el" href="lisa__m__1_80_8h.html#a6ff62fdd5bea0f6e3833178ec2782d85">lisa_m_1.0.h</a>
+: <a class="el" href="elle0__1_80_8h.html#a6ff62fdd5bea0f6e3833178ec2782d85">elle0_1.0.h</a>
+, <a class="el" href="lia__1_81_8h.html#a6ff62fdd5bea0f6e3833178ec2782d85">lia_1.1.h</a>
 , <a class="el" href="lisa__m__2_80_8h.html#a6ff62fdd5bea0f6e3833178ec2782d85">lisa_m_2.0.h</a>
 , <a class="el" href="lisa__m__2_81_8h.html#a6ff62fdd5bea0f6e3833178ec2782d85">lisa_m_2.1.h</a>
-, <a class="el" href="lisa__s__1_80_8h.html#a6ff62fdd5bea0f6e3833178ec2782d85">lisa_s_1.0.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a6ff62fdd5bea0f6e3833178ec2782d85">lisa_mx_common.h</a>
-, <a class="el" href="lia__1_81_8h.html#a6ff62fdd5bea0f6e3833178ec2782d85">lia_1.1.h</a>
+, <a class="el" href="lisa__s__1_80_8h.html#a6ff62fdd5bea0f6e3833178ec2782d85">lisa_s_1.0.h</a>
+, <a class="el" href="lisa__m__1_80_8h.html#a6ff62fdd5bea0f6e3833178ec2782d85">lisa_m_1.0.h</a>
 </li>
 <li>LED_BODY_GPIO_ON
-: <a class="el" href="lia__1_81_8h.html#ab37486d076e92bdba138972435110093">lia_1.1.h</a>
+: <a class="el" href="elle0__1_80_8h.html#ab37486d076e92bdba138972435110093">elle0_1.0.h</a>
+, <a class="el" href="lia__1_81_8h.html#ab37486d076e92bdba138972435110093">lia_1.1.h</a>
 , <a class="el" href="lisa__m__1_80_8h.html#ab37486d076e92bdba138972435110093">lisa_m_1.0.h</a>
-, <a class="el" href="lisa__m__2_80_8h.html#ab37486d076e92bdba138972435110093">lisa_m_2.0.h</a>
 , <a class="el" href="lisa__m__2_81_8h.html#ab37486d076e92bdba138972435110093">lisa_m_2.1.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#ab37486d076e92bdba138972435110093">lisa_mx_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#ab37486d076e92bdba138972435110093">lisa_s_1.0.h</a>
+, <a class="el" href="lisa__m__2_80_8h.html#ab37486d076e92bdba138972435110093">lisa_m_2.0.h</a>
 </li>
 <li>LED_BODY_GPIO_PIN
-: <a class="el" href="lisa__m__1_80_8h.html#ae0fcefc092f6db285b86360feeddda29">lisa_m_1.0.h</a>
+: <a class="el" href="lia__1_81_8h.html#ae0fcefc092f6db285b86360feeddda29">lia_1.1.h</a>
+, <a class="el" href="lisa__m__1_80_8h.html#ae0fcefc092f6db285b86360feeddda29">lisa_m_1.0.h</a>
 , <a class="el" href="lisa__m__2_80_8h.html#ae0fcefc092f6db285b86360feeddda29">lisa_m_2.0.h</a>
-, <a class="el" href="lisa__m__2_81_8h.html#ae0fcefc092f6db285b86360feeddda29">lisa_m_2.1.h</a>
-, <a class="el" href="lisa__s__1_80_8h.html#ae0fcefc092f6db285b86360feeddda29">lisa_s_1.0.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#ae0fcefc092f6db285b86360feeddda29">lisa_mx_common.h</a>
-, <a class="el" href="lia__1_81_8h.html#ae0fcefc092f6db285b86360feeddda29">lia_1.1.h</a>
+, <a class="el" href="lisa__s__1_80_8h.html#ae0fcefc092f6db285b86360feeddda29">lisa_s_1.0.h</a>
+, <a class="el" href="lisa__m__2_81_8h.html#ae0fcefc092f6db285b86360feeddda29">lisa_m_2.1.h</a>
+, <a class="el" href="elle0__1_80_8h.html#ae0fcefc092f6db285b86360feeddda29">elle0_1.0.h</a>
 </li>
 <li>LED_CLR
 : <a class="el" href="lpc21_2led__hw_8h.html#aa4b4a07d9abfdd4048f55d054738d5e0">led_hw.h</a>
@@ -1327,25 +1350,26 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 : <a class="el" href="sdlog__1_80_8h.html#aca338dbd19d7940923334629f6e5f3b7">sdlog_1.0.h</a>
 </li>
 <li>led_hw_values
-: <a class="el" href="linux_2led__hw_8h.html#a7628ab56ea2153f536f4f32074053ae2">led_hw.h</a>
-, <a class="el" href="actuators__ardrone2__raw_8c.html#a7628ab56ea2153f536f4f32074053ae2">actuators_ardrone2_raw.c</a>
-, <a class="el" href="boards_2bebop_2actuators_8c.html#a7628ab56ea2153f536f4f32074053ae2">actuators.c</a>
+: <a class="el" href="boards_2ardrone_2actuators_8c.html#a7628ab56ea2153f536f4f32074053ae2">actuators.c</a>
+</li>
+<li>LED_INIT
+: <a class="el" href="linux_2led__hw_8h.html#a49b662104f8fa2b8fa86ea80e94c3d6b">led_hw.h</a>
+, <a class="el" href="debug__led_8h.html#a9b6469497fa6627a29285492e557d8f8">debug_led.h</a>
 </li>
 <li>led_init()
 : <a class="el" href="led_8h.html#a9d9d9b1f30592189c3aa7358c626218f">led.h</a>
 </li>
 <li>LED_INIT
 : <a class="el" href="stm32_2led__hw_8h.html#a49b662104f8fa2b8fa86ea80e94c3d6b">led_hw.h</a>
-, <a class="el" href="debug__led_8h.html#a9b6469497fa6627a29285492e557d8f8">debug_led.h</a>
 </li>
 <li>LED_OFF
-: <a class="el" href="linux_2led__hw_8h.html#a76c86a9c700e32e68f48f85271970b7f">led_hw.h</a>
+: <a class="el" href="sim_2led__hw_8h.html#a76c86a9c700e32e68f48f85271970b7f">led_hw.h</a>
 </li>
 <li>LED_ON
-: <a class="el" href="lpc21_2led__hw_8h.html#a3ab823c4004d96d154dfb8f69d18c47a">led_hw.h</a>
+: <a class="el" href="linux_2led__hw_8h.html#a3ab823c4004d96d154dfb8f69d18c47a">led_hw.h</a>
 </li>
 <li>LED_PERIODIC
-: <a class="el" href="lpc21_2led__hw_8h.html#aec278ae20b30da80a2fcdcee9d51571b">led_hw.h</a>
+: <a class="el" href="stm32_2led__hw_8h.html#aec278ae20b30da80a2fcdcee9d51571b">led_hw.h</a>
 </li>
 <li>LED_PIN
 : <a class="el" href="lpc21_2led__hw_8h.html#a1cc2d7446312d64be0ef2b6fcf2b2d86">led_hw.h</a>
@@ -1378,22 +1402,19 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 : <a class="el" href="sdlog__1_80_8h.html#ae3c73853c6d0a1eca2c7d9797f6494ea">sdlog_1.0.h</a>
 </li>
 <li>leds_closure
-: <a class="el" href="sim_2led__hw_8c.html#ae292f9d2a858553831b8f8934ba4d2fd">led_hw.c</a>
-, <a class="el" href="sim_2led__hw_8h.html#ae292f9d2a858553831b8f8934ba4d2fd">led_hw.h</a>
+: <a class="el" href="sim_2led__hw_8h.html#ae292f9d2a858553831b8f8934ba4d2fd">led_hw.h</a>
+, <a class="el" href="sim_2led__hw_8c.html#ae292f9d2a858553831b8f8934ba4d2fd">led_hw.c</a>
 </li>
 <li>LEFT
-: <a class="el" href="actuators__asctec_8h.html#ad2db450a6c9862a4f81ba35a4d5f4f20adb45120aafd37a973140edee24708065">actuators_asctec.h</a>
-, <a class="el" href="actuators__asctec__v2_8h.html#a6a84074f57bc5110d7e301d4662c4899adb45120aafd37a973140edee24708065">actuators_asctec_v2.h</a>
+: <a class="el" href="actuators__asctec__v2_8h.html#a6a84074f57bc5110d7e301d4662c4899adb45120aafd37a973140edee24708065">actuators_asctec_v2.h</a>
+, <a class="el" href="actuators__asctec_8h.html#ad2db450a6c9862a4f81ba35a4d5f4f20adb45120aafd37a973140edee24708065">actuators_asctec.h</a>
 </li>
 <li>LessThan
 : <a class="el" href="common__flight__plan_8h.html#aabaca523977f789b8a3af9a2f43fc5f6">common_flight_plan.h</a>
 </li>
-<li>levelshift()
-: <a class="el" href="jpeg_8c.html#ac2bff16cf493eb232635dda82bc1c990">jpeg.c</a>
-</li>
 <li>light_cnt
-: <a class="el" href="light__solar_8h.html#a831ddfb4155fdd57df9ff70f0df6033b">light_solar.h</a>
-, <a class="el" href="light__solar_8c.html#a831ddfb4155fdd57df9ff70f0df6033b">light_solar.c</a>
+: <a class="el" href="light__solar_8c.html#a831ddfb4155fdd57df9ff70f0df6033b">light_solar.c</a>
+, <a class="el" href="light__solar_8h.html#a831ddfb4155fdd57df9ff70f0df6033b">light_solar.h</a>
 </li>
 <li>LIGHT_LED_STROBE
 : <a class="el" href="light_8c.html#a4b7458780574fd74d37dbe62a9bc35b1">light.c</a>
@@ -1402,8 +1423,8 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 : <a class="el" href="light__solar_8h.html#a625b0cd4756749febeb68c16df8085f9">light_solar.h</a>
 </li>
 <li>light_solar_init()
-: <a class="el" href="light__solar_8c.html#ac0e039b9f8ad2272b10b4129733d1114">light_solar.c</a>
-, <a class="el" href="light__solar_8h.html#ac0e039b9f8ad2272b10b4129733d1114">light_solar.h</a>
+: <a class="el" href="light__solar_8h.html#ac0e039b9f8ad2272b10b4129733d1114">light_solar.h</a>
+, <a class="el" href="light__solar_8c.html#ac0e039b9f8ad2272b10b4129733d1114">light_solar.c</a>
 </li>
 <li>light_solar_periodic()
 : <a class="el" href="light__solar_8c.html#a3d6da179efb385d03ff265c3ad4f74f6">light_solar.c</a>
@@ -1418,62 +1439,66 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 , <a class="el" href="light__temt_8h.html#ad79f291e455827d94f9b08e7a23716f3">light_temt.h</a>
 </li>
 <li>line_border_status
-: <a class="el" href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5">nav_line_border.c</a>
+: <a class="el" href="nav__line__border_8c.html#ad61069f7efa416f20286bd177373cd17">nav_line_border.c</a>
 </li>
 <li>LINE_START_FUNCTION
-: <a class="el" href="nav__survey__rectangle_8c.html#a86a682e52e440368e6ca96062ef7563f">nav_survey_rectangle.c</a>
-, <a class="el" href="nav_8c.html#a86a682e52e440368e6ca96062ef7563f">nav.c</a>
+: <a class="el" href="nav_8c.html#a86a682e52e440368e6ca96062ef7563f">nav.c</a>
+, <a class="el" href="nav__survey__rectangle__rotorcraft_8c.html#a86a682e52e440368e6ca96062ef7563f">nav_survey_rectangle_rotorcraft.c</a>
+, <a class="el" href="nav__survey__poly__osam_8c.html#a86a682e52e440368e6ca96062ef7563f">nav_survey_poly_osam.c</a>
+, <a class="el" href="nav__survey__poly__rotorcraft_8c.html#a86a682e52e440368e6ca96062ef7563f">nav_survey_poly_rotorcraft.c</a>
+, <a class="el" href="nav__survey__rectangle_8c.html#a86a682e52e440368e6ca96062ef7563f">nav_survey_rectangle.c</a>
 , <a class="el" href="nav__line__osam_8c.html#a86a682e52e440368e6ca96062ef7563f">nav_line_osam.c</a>
 , <a class="el" href="nav__survey__zamboni_8c.html#a86a682e52e440368e6ca96062ef7563f">nav_survey_zamboni.c</a>
-, <a class="el" href="nav__survey__poly__osam_8c.html#a86a682e52e440368e6ca96062ef7563f">nav_survey_poly_osam.c</a>
 </li>
 <li>line_status
-: <a class="el" href="nav__vertical__raster_8c.html#a1e4b07456818b9e3350d99d1931205fd">nav_vertical_raster.c</a>
-, <a class="el" href="nav__line_8c.html#a1e4b07456818b9e3350d99d1931205fd">nav_line.c</a>
+: <a class="el" href="nav__line_8c.html#a1e4b07456818b9e3350d99d1931205fd">nav_line.c</a>
 , <a class="el" href="nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4">nav_vertical_raster.c</a>
 </li>
 <li>LINE_STOP_FUNCTION
 : <a class="el" href="nav__survey__zamboni_8c.html#a2788d8683c98c074cb18680dc2eea0af">nav_survey_zamboni.c</a>
-, <a class="el" href="nav_8c.html#a2788d8683c98c074cb18680dc2eea0af">nav.c</a>
-, <a class="el" href="nav__survey__rectangle_8c.html#a2788d8683c98c074cb18680dc2eea0af">nav_survey_rectangle.c</a>
-, <a class="el" href="nav__survey__poly__osam_8c.html#a2788d8683c98c074cb18680dc2eea0af">nav_survey_poly_osam.c</a>
+, <a class="el" href="nav__survey__rectangle__rotorcraft_8c.html#a2788d8683c98c074cb18680dc2eea0af">nav_survey_rectangle_rotorcraft.c</a>
 , <a class="el" href="nav__line__osam_8c.html#a2788d8683c98c074cb18680dc2eea0af">nav_line_osam.c</a>
+, <a class="el" href="nav__survey__poly__rotorcraft_8c.html#a2788d8683c98c074cb18680dc2eea0af">nav_survey_poly_rotorcraft.c</a>
+, <a class="el" href="nav__survey__poly__osam_8c.html#a2788d8683c98c074cb18680dc2eea0af">nav_survey_poly_osam.c</a>
+, <a class="el" href="nav__survey__rectangle_8c.html#a2788d8683c98c074cb18680dc2eea0af">nav_survey_rectangle.c</a>
+, <a class="el" href="nav_8c.html#a2788d8683c98c074cb18680dc2eea0af">nav.c</a>
+</li>
+<li>LINEAR_FIT
+: <a class="el" href="opticflow__calculator_8c.html#a6cb6f7a102895b91c73f8de7481627ec">opticflow_calculator.c</a>
 </li>
 <li>LineCoding
 : <a class="el" href="lpc21_2usb__ser__hw_8c.html#abb605b7ad246791a20832a6cfd2beef1">usb_ser_hw.c</a>
 </li>
 <li>link_fbw_fbw_nb_err
 : <a class="el" href="sim__ap_8c.html#a217e6264f30030ff96c6488719497c3e">sim_ap.c</a>
-, <a class="el" href="jsbsim__hw_8c.html#a217e6264f30030ff96c6488719497c3e">jsbsim_hw.c</a>
 </li>
 <li>link_fbw_nb_err
-: <a class="el" href="jsbsim__hw_8c.html#ac3614ddc1d6b6d3c72f8088bcf8aede4">jsbsim_hw.c</a>
-, <a class="el" href="sim__ap_8c.html#ac3614ddc1d6b6d3c72f8088bcf8aede4">sim_ap.c</a>
+: <a class="el" href="sim__ap_8c.html#ac3614ddc1d6b6d3c72f8088bcf8aede4">sim_ap.c</a>
 </li>
 <li>link_mcu_event_task()
-: <a class="el" href="link__mcu__can_8h.html#ac8ca91741aea5e6803a8db35d4c8188e">link_mcu_can.h</a>
-, <a class="el" href="link__mcu__spi_8h.html#ac8ca91741aea5e6803a8db35d4c8188e">link_mcu_spi.h</a>
-, <a class="el" href="link__mcu__usart_8c.html#ac8ca91741aea5e6803a8db35d4c8188e">link_mcu_usart.c</a>
-, <a class="el" href="link__mcu__usart_8h.html#ac8ca91741aea5e6803a8db35d4c8188e">link_mcu_usart.h</a>
+: <a class="el" href="link__mcu__spi_8h.html#ac8ca91741aea5e6803a8db35d4c8188e">link_mcu_spi.h</a>
+, <a class="el" href="link__mcu__can_8h.html#ac8ca91741aea5e6803a8db35d4c8188e">link_mcu_can.h</a>
 , <a class="el" href="link__mcu__can_8c.html#ac8ca91741aea5e6803a8db35d4c8188e">link_mcu_can.c</a>
+, <a class="el" href="link__mcu__usart_8h.html#ac8ca91741aea5e6803a8db35d4c8188e">link_mcu_usart.h</a>
+, <a class="el" href="link__mcu__usart_8c.html#ac8ca91741aea5e6803a8db35d4c8188e">link_mcu_usart.c</a>
 </li>
 <li>LINK_MCU_FRAME_LENGTH
 : <a class="el" href="link__mcu__spi_8c.html#ab5a3b495e748d4c9087a6caf97b64846">link_mcu_spi.c</a>
 </li>
 <li>link_mcu_from_ap_msg
-: <a class="el" href="link__mcu__spi_8c.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_spi.c</a>
-, <a class="el" href="link__mcu__can_8c.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_can.c</a>
-, <a class="el" href="link__mcu__usart_8c.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_usart.c</a>
+: <a class="el" href="link__mcu__can_8c.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_can.c</a>
+, <a class="el" href="link__mcu__spi_8c.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_spi.c</a>
 , <a class="el" href="link__mcu__spi_8h.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_spi.h</a>
-, <a class="el" href="link__mcu__can_8h.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_can.h</a>
+, <a class="el" href="link__mcu__usart_8c.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_usart.c</a>
 , <a class="el" href="link__mcu__usart_8h.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_usart.h</a>
+, <a class="el" href="link__mcu__can_8h.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_can.h</a>
 </li>
 <li>link_mcu_from_fbw_msg
-: <a class="el" href="link__mcu__can_8c.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_can.c</a>
-, <a class="el" href="link__mcu__spi_8c.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_spi.c</a>
+: <a class="el" href="link__mcu__usart_8h.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_usart.h</a>
+, <a class="el" href="link__mcu__can_8c.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_can.c</a>
 , <a class="el" href="link__mcu__can_8h.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_can.h</a>
+, <a class="el" href="link__mcu__spi_8c.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_spi.c</a>
 , <a class="el" href="link__mcu__usart_8c.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_usart.c</a>
-, <a class="el" href="link__mcu__usart_8h.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_usart.h</a>
 , <a class="el" href="link__mcu__spi_8h.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_spi.h</a>
 </li>
 <li>LINK_MCU_GOT_CHECKSUM1
@@ -1501,11 +1526,11 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 : <a class="el" href="link__mcu__usart_8c.html#a3a16b87a5ddd91dc8705b691cbb1cc17">link_mcu_usart.c</a>
 </li>
 <li>link_mcu_init()
-: <a class="el" href="link__mcu__can_8c.html#a4811adaa420099181f04d75d5ba24c25">link_mcu_can.c</a>
-, <a class="el" href="link__mcu__spi_8h.html#a4811adaa420099181f04d75d5ba24c25">link_mcu_spi.h</a>
-, <a class="el" href="link__mcu__usart_8h.html#a4811adaa420099181f04d75d5ba24c25">link_mcu_usart.h</a>
-, <a class="el" href="link__mcu__can_8h.html#a4811adaa420099181f04d75d5ba24c25">link_mcu_can.h</a>
+: <a class="el" href="link__mcu__spi_8h.html#a4811adaa420099181f04d75d5ba24c25">link_mcu_spi.h</a>
 , <a class="el" href="link__mcu__usart_8c.html#a4811adaa420099181f04d75d5ba24c25">link_mcu_usart.c</a>
+, <a class="el" href="link__mcu__usart_8h.html#a4811adaa420099181f04d75d5ba24c25">link_mcu_usart.h</a>
+, <a class="el" href="link__mcu__can_8c.html#a4811adaa420099181f04d75d5ba24c25">link_mcu_can.c</a>
+, <a class="el" href="link__mcu__can_8h.html#a4811adaa420099181f04d75d5ba24c25">link_mcu_can.h</a>
 </li>
 <li>link_mcu_on_can_msg()
 : <a class="el" href="link__mcu__can_8c.html#a9b98f23c7b3a434d4a626acf53a48172">link_mcu_can.c</a>
@@ -1515,10 +1540,10 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 , <a class="el" href="link__mcu__usart_8h.html#a822c4985aa0c0410ceb98e31dc539aa9">link_mcu_usart.h</a>
 </li>
 <li>link_mcu_received
-: <a class="el" href="link__mcu__can_8h.html#a5fbd44c122e7afa4afdb9368a7a6b2a4">link_mcu_can.h</a>
+: <a class="el" href="link__mcu__spi_8h.html#a5fbd44c122e7afa4afdb9368a7a6b2a4">link_mcu_spi.h</a>
 , <a class="el" href="link__mcu__spi_8c.html#a5fbd44c122e7afa4afdb9368a7a6b2a4">link_mcu_spi.c</a>
-, <a class="el" href="link__mcu__spi_8h.html#a5fbd44c122e7afa4afdb9368a7a6b2a4">link_mcu_spi.h</a>
 , <a class="el" href="link__mcu__usart_8h.html#a5fbd44c122e7afa4afdb9368a7a6b2a4">link_mcu_usart.h</a>
+, <a class="el" href="link__mcu__can_8h.html#a5fbd44c122e7afa4afdb9368a7a6b2a4">link_mcu_can.h</a>
 </li>
 <li>link_mcu_send()
 : <a class="el" href="link__mcu__can_8h.html#ad2f41351eb7b54410360a1e9f1f2407a">link_mcu_can.h</a>
@@ -1574,8 +1599,8 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 : <a class="el" href="lis302dl_8h.html#a13ce2c47bf9a6b9dd5c20fdbfbd0cbd1">lis302dl.h</a>
 </li>
 <li>lis302dl_spi_event()
-: <a class="el" href="lis302dl__spi_8h.html#a2c38f1d2a84f448dd9f0c7cae80f0a70">lis302dl_spi.h</a>
-, <a class="el" href="lis302dl__spi_8c.html#a2c38f1d2a84f448dd9f0c7cae80f0a70">lis302dl_spi.c</a>
+: <a class="el" href="lis302dl__spi_8c.html#a2c38f1d2a84f448dd9f0c7cae80f0a70">lis302dl_spi.c</a>
+, <a class="el" href="lis302dl__spi_8h.html#a2c38f1d2a84f448dd9f0c7cae80f0a70">lis302dl_spi.h</a>
 </li>
 <li>lis302dl_spi_init()
 : <a class="el" href="lis302dl__spi_8h.html#a498e7b861c3c70b1fbdd099d6e9c0452">lis302dl_spi.h</a>
@@ -1592,8 +1617,8 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 : <a class="el" href="lis302dl__spi_8c.html#aece7185572dd59d44e42796665e9bebc">lis302dl_spi.c</a>
 </li>
 <li>lis302dl_spi_start_configure()
-: <a class="el" href="lis302dl__spi_8h.html#abda53cd19076e92c1fedf273a070906e">lis302dl_spi.h</a>
-, <a class="el" href="lis302dl__spi_8c.html#abda53cd19076e92c1fedf273a070906e">lis302dl_spi.c</a>
+: <a class="el" href="lis302dl__spi_8c.html#abda53cd19076e92c1fedf273a070906e">lis302dl_spi.c</a>
+, <a class="el" href="lis302dl__spi_8h.html#abda53cd19076e92c1fedf273a070906e">lis302dl_spi.h</a>
 </li>
 <li>lis302dl_spi_write_to_reg()
 : <a class="el" href="lis302dl__spi_8c.html#add754cb4b52da4c26b6fe3dca4320f27">lis302dl_spi.c</a>
@@ -1645,42 +1670,42 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 : <a class="el" href="lisa__l_2baro__board_8c.html#afa23cfb2e942619d6fa44f549fe5edff">baro_board.c</a>
 </li>
 <li>LLA_ASSIGN
-: <a class="el" href="pprz__geodetic_8h.html#a9de2c525213c48959909d9ea8c618266">pprz_geodetic.h</a>
+: <a class="el" href="group__math__geodetic__generic.html#ga9de2c525213c48959909d9ea8c618266">pprz_geodetic.h</a>
 </li>
 <li>LLA_BFP_OF_REAL
-: <a class="el" href="pprz__geodetic__int_8h.html#a4c14cc47f37a035741cd921791b2a436">pprz_geodetic_int.h</a>
+: <a class="el" href="group__math__geodetic__int.html#ga4c14cc47f37a035741cd921791b2a436">pprz_geodetic_int.h</a>
 </li>
 <li>LLA_COPY
-: <a class="el" href="pprz__geodetic_8h.html#a2d3fd05b5a2cec4efa0a0f78c281a37a">pprz_geodetic.h</a>
+: <a class="el" href="group__math__geodetic__generic.html#ga2d3fd05b5a2cec4efa0a0f78c281a37a">pprz_geodetic.h</a>
 </li>
 <li>LLA_DOUBLE_OF_BFP
-: <a class="el" href="pprz__geodetic__int_8h.html#a49640bcb3256c69da489963d2e1770fa">pprz_geodetic_int.h</a>
+: <a class="el" href="group__math__geodetic__int.html#ga49640bcb3256c69da489963d2e1770fa">pprz_geodetic_int.h</a>
 </li>
 <li>lla_f
 : <a class="el" href="ins__xsens700_8c.html#a9512ea78e648730dab715ac00881d90d">ins_xsens700.c</a>
 </li>
 <li>LLA_FLOAT_OF_BFP
-: <a class="el" href="pprz__geodetic__int_8h.html#acbd14b56947236f0fb5a061650b1f307">pprz_geodetic_int.h</a>
+: <a class="el" href="group__math__geodetic__int.html#gacbd14b56947236f0fb5a061650b1f307">pprz_geodetic_int.h</a>
 </li>
 <li>lla_of_ecef_d()
-: <a class="el" href="pprz__geodetic__double_8h.html#a9d3464ccabcd97db9fb4e1c7d25dfe16">pprz_geodetic_double.h</a>
-, <a class="el" href="pprz__geodetic__double_8c.html#a03262ba97728d6e61bc645e69bd7c332">pprz_geodetic_double.c</a>
+: <a class="el" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16">pprz_geodetic_double.h</a>
+, <a class="el" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16">pprz_geodetic_double.c</a>
 </li>
 <li>lla_of_ecef_f()
 : <a class="el" href="pprz__geodetic__float_8h.html#adecd186d51b41b09f0cad928c0d2f68e">pprz_geodetic_float.h</a>
 , <a class="el" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e">pprz_geodetic_float.c</a>
 </li>
 <li>lla_of_ecef_i()
-: <a class="el" href="pprz__geodetic__int_8c.html#aea47a32071c2427f895fcb1df32c4e23">pprz_geodetic_int.c</a>
-, <a class="el" href="pprz__geodetic__int_8h.html#aea47a32071c2427f895fcb1df32c4e23">pprz_geodetic_int.h</a>
+: <a class="el" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23">pprz_geodetic_int.c</a>
+, <a class="el" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23">pprz_geodetic_int.h</a>
 </li>
 <li>lla_of_utm_d()
-: <a class="el" href="pprz__geodetic__double_8h.html#acc8bd646ec5ac148424251d65d2dd033">pprz_geodetic_double.h</a>
-, <a class="el" href="pprz__geodetic__double_8c.html#a0f160507506fc364a8b2c35327d252fa">pprz_geodetic_double.c</a>
+: <a class="el" href="group__math__geodetic__double.html#gacc8bd646ec5ac148424251d65d2dd033">pprz_geodetic_double.c</a>
+, <a class="el" href="group__math__geodetic__double.html#gacc8bd646ec5ac148424251d65d2dd033">pprz_geodetic_double.h</a>
 </li>
 <li>lla_of_utm_f()
-: <a class="el" href="pprz__geodetic__float_8h.html#a30c2e47ec9a898079c04e8b08496b455">pprz_geodetic_float.h</a>
-, <a class="el" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455">pprz_geodetic_float.c</a>
+: <a class="el" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455">pprz_geodetic_float.c</a>
+, <a class="el" href="pprz__geodetic__float_8h.html#a30c2e47ec9a898079c04e8b08496b455">pprz_geodetic_float.h</a>
 </li>
 <li>LM35
 : <a class="el" href="temp__adc_8c.html#ae41099cd5a34c7388782bf98a4cebb73">temp_adc.c</a>
@@ -1689,15 +1714,15 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 : <a class="el" href="temp__lm75_8h.html#a8452405215ac1131919870d1c6c3d466">temp_lm75.h</a>
 </li>
 <li>lm75_event()
-: <a class="el" href="temp__lm75_8h.html#a2f873f2dbc060a9f55de3e124a753bba">temp_lm75.h</a>
-, <a class="el" href="temp__lm75_8c.html#a2f873f2dbc060a9f55de3e124a753bba">temp_lm75.c</a>
+: <a class="el" href="temp__lm75_8c.html#a2f873f2dbc060a9f55de3e124a753bba">temp_lm75.c</a>
+, <a class="el" href="temp__lm75_8h.html#a2f873f2dbc060a9f55de3e124a753bba">temp_lm75.h</a>
 </li>
 <li>LM75_I2C_DEV
 : <a class="el" href="temp__lm75_8c.html#ab663881f5c5e388a8e102d2dcbbc29eb">temp_lm75.c</a>
 </li>
 <li>lm75_init()
-: <a class="el" href="temp__lm75_8c.html#a80b92e2bcbb69fd08e45e8f6ca51051a">temp_lm75.c</a>
-, <a class="el" href="temp__lm75_8h.html#a80b92e2bcbb69fd08e45e8f6ca51051a">temp_lm75.h</a>
+: <a class="el" href="temp__lm75_8h.html#a80b92e2bcbb69fd08e45e8f6ca51051a">temp_lm75.h</a>
+, <a class="el" href="temp__lm75_8c.html#a80b92e2bcbb69fd08e45e8f6ca51051a">temp_lm75.c</a>
 </li>
 <li>lm75_meas_started
 : <a class="el" href="temp__lm75_8c.html#a4327916d5a9c8446727f20306e83d4b7">temp_lm75.c</a>
@@ -1724,6 +1749,16 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 <li>lm75_trans
 : <a class="el" href="temp__lm75_8c.html#af289820de9c9290cb24d527fe95876da">temp_lm75.c</a>
 </li>
+<li>lms_estimation()
+: <a class="el" href="stabilization__attitude__quat__indi_8h.html#ad4a81c601235942469d940e7ac5f400e">stabilization_attitude_quat_indi.h</a>
+, <a class="el" href="stabilization__attitude__quat__indi_8c.html#ad4a81c601235942469d940e7ac5f400e">stabilization_attitude_quat_indi.c</a>
+</li>
+<li>LOG_AOA
+: <a class="el" href="aoa__pwm_8c.html#a528e84bf4328ca4e6d7b4bfd63216103">aoa_pwm.c</a>
+</li>
+<li>LOG_MS
+: <a class="el" href="meteo__stick_8c.html#af72e234b04531004e3c2c1424443719c">meteo_stick.c</a>
+</li>
 <li>log_started
 : <a class="el" href="meteo__france__DAQ_8c.html#a42f0520c4f5dcb80ebd4c3722c289318">meteo_france_DAQ.c</a>
 </li>
@@ -1734,9 +1769,23 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 <li>log_struct
 : <a class="el" href="direct__memory__logger_8c.html#a0f4312db7c19a1886d539bb7971ca65f">direct_memory_logger.c</a>
 </li>
+<li>logger_uart_data
+: <a class="el" href="logger__uart_8c.html#a1d83233d47ab843537c2e6d493f89699">logger_uart.c</a>
+</li>
+<li>logger_uart_init()
+: <a class="el" href="logger__uart_8c.html#a661560da8c6a6c5b8e64061843bc1250">logger_uart.c</a>
+, <a class="el" href="logger__uart_8h.html#a661560da8c6a6c5b8e64061843bc1250">logger_uart.h</a>
+</li>
+<li>logger_uart_periodic()
+: <a class="el" href="logger__uart_8c.html#ab6b5fd6329c4581731f6ff29fdac97e2">logger_uart.c</a>
+, <a class="el" href="logger__uart_8h.html#ab6b5fd6329c4581731f6ff29fdac97e2">logger_uart.h</a>
+</li>
 <li>logging_status_gui
 : <a class="el" href="high__speed__logger__direct__memory_8c.html#ad2e40d843f348cd05fb1293d42217039">high_speed_logger_direct_memory.c</a>
 , <a class="el" href="high__speed__logger__direct__memory_8h.html#ad2e40d843f348cd05fb1293d42217039">high_speed_logger_direct_memory.h</a>
+</li>
+<li>lon_em7deg
+: <a class="el" href="exif__module_8c.html#af8ccfcf7928a14729ff61b5a2fae4b36">exif_module.c</a>
 </li>
 <li>LOST
 : <a class="el" href="formation_8h.html#a4c0e214062079ff665c54dbc682bb832a339435bd0d4a842c6107333c908a5317">formation.h</a>
@@ -1762,22 +1811,22 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 , <a class="el" href="nav__line_8c.html#ab8af100196e813e8f45013a015da1dc4a7f637cfcb9990910ded6a6f84bafed9b">nav_line.c</a>
 </li>
 <li>LQC12
-: <a class="el" href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5aca3f9b2462e0f5298f41a92f75fa11cd">nav_line_border.c</a>
+: <a class="el" href="nav__line_8c.html#ab8af100196e813e8f45013a015da1dc4aca3f9b2462e0f5298f41a92f75fa11cd">nav_line.c</a>
+, <a class="el" href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5aca3f9b2462e0f5298f41a92f75fa11cd">nav_line_border.c</a>
 , <a class="el" href="nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4aca3f9b2462e0f5298f41a92f75fa11cd">nav_vertical_raster.c</a>
-, <a class="el" href="nav__line_8c.html#ab8af100196e813e8f45013a015da1dc4aca3f9b2462e0f5298f41a92f75fa11cd">nav_line.c</a>
 </li>
 <li>LQC21
-: <a class="el" href="nav__line_8c.html#ab8af100196e813e8f45013a015da1dc4a04ad51045635dee83d454860ae6b135c">nav_line.c</a>
-, <a class="el" href="nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4a04ad51045635dee83d454860ae6b135c">nav_vertical_raster.c</a>
+: <a class="el" href="nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4a04ad51045635dee83d454860ae6b135c">nav_vertical_raster.c</a>
 , <a class="el" href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5a04ad51045635dee83d454860ae6b135c">nav_line_border.c</a>
+, <a class="el" href="nav__line_8c.html#ab8af100196e813e8f45013a015da1dc4a04ad51045635dee83d454860ae6b135c">nav_line.c</a>
 </li>
 <li>LQC22
-: <a class="el" href="nav__line_8c.html#ab8af100196e813e8f45013a015da1dc4a31099427ddf1cb13114e28c9472b3c68">nav_line.c</a>
-, <a class="el" href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5a31099427ddf1cb13114e28c9472b3c68">nav_line_border.c</a>
+: <a class="el" href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5a31099427ddf1cb13114e28c9472b3c68">nav_line_border.c</a>
+, <a class="el" href="nav__line_8c.html#ab8af100196e813e8f45013a015da1dc4a31099427ddf1cb13114e28c9472b3c68">nav_line.c</a>
 , <a class="el" href="nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4a31099427ddf1cb13114e28c9472b3c68">nav_vertical_raster.c</a>
 </li>
 <li>Lqt
-: <a class="el" href="jpeg_8c.html#a78c56c5f0961e05b457f2474b73dccf9">jpeg.c</a>
+: <a class="el" href="jpeg_8c.html#a16fc40420de3ac7e072f80d47733f746">jpeg.c</a>
 </li>
 <li>LR12
 : <a class="el" href="nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4acfcd68d903867d509a779613b2ccfba5">nav_vertical_raster.c</a>
@@ -1785,9 +1834,9 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 , <a class="el" href="nav__line_8c.html#ab8af100196e813e8f45013a015da1dc4acfcd68d903867d509a779613b2ccfba5">nav_line.c</a>
 </li>
 <li>LR21
-: <a class="el" href="nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4a383219705a1e85c6f680e43d1f304f5b">nav_vertical_raster.c</a>
+: <a class="el" href="nav__line_8c.html#ab8af100196e813e8f45013a015da1dc4a383219705a1e85c6f680e43d1f304f5b">nav_line.c</a>
+, <a class="el" href="nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4a383219705a1e85c6f680e43d1f304f5b">nav_vertical_raster.c</a>
 , <a class="el" href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5a383219705a1e85c6f680e43d1f304f5b">nav_line_border.c</a>
-, <a class="el" href="nav__line_8c.html#ab8af100196e813e8f45013a015da1dc4a383219705a1e85c6f680e43d1f304f5b">nav_line.c</a>
 </li>
 <li>LSM303DLHC_ACC_ADDR
 : <a class="el" href="lsm303dlhc__regs_8h.html#a3eda622271a7e2074f0639ab48e9bbb7">lsm303dlhc_regs.h</a>
@@ -1823,8 +1872,8 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 : <a class="el" href="lsm303dlhc__regs_8h.html#aae5f0418c108cc5218844f66c9fd923d">lsm303dlhc_regs.h</a>
 </li>
 <li>lsm303dlhc_event()
-: <a class="el" href="lsm303dlhc_8h.html#a39197f68eef8e69e704960ffc6c2e68c">lsm303dlhc.h</a>
-, <a class="el" href="lsm303dlhc_8c.html#a39197f68eef8e69e704960ffc6c2e68c">lsm303dlhc.c</a>
+: <a class="el" href="lsm303dlhc_8c.html#a39197f68eef8e69e704960ffc6c2e68c">lsm303dlhc.c</a>
+, <a class="el" href="lsm303dlhc_8h.html#a39197f68eef8e69e704960ffc6c2e68c">lsm303dlhc.h</a>
 </li>
 <li>LSM303DLHC_FS_MASK
 : <a class="el" href="lsm303dlhc__regs_8h.html#a74fdb11e8bda4756eb324742f6d1752e">lsm303dlhc_regs.h</a>
@@ -1864,8 +1913,8 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 : <a class="el" href="lsm303dlhc_8h.html#a5d3ba8e56a241a79753f1a24b87cf4bc">lsm303dlhc.h</a>
 </li>
 <li>lsm303dlhc_read()
-: <a class="el" href="lsm303dlhc_8h.html#a61023404c121ad141fab2d1aefbe1fb1">lsm303dlhc.h</a>
-, <a class="el" href="lsm303dlhc_8c.html#a61023404c121ad141fab2d1aefbe1fb1">lsm303dlhc.c</a>
+: <a class="el" href="lsm303dlhc_8c.html#a61023404c121ad141fab2d1aefbe1fb1">lsm303dlhc.c</a>
+, <a class="el" href="lsm303dlhc_8h.html#a61023404c121ad141fab2d1aefbe1fb1">lsm303dlhc.h</a>
 </li>
 <li>LSM303DLHC_REG_CLICK_CFG_A
 : <a class="el" href="lsm303dlhc__regs_8h.html#ac8ae199695acb72521606309baad2df4">lsm303dlhc_regs.h</a>
@@ -2060,36 +2109,36 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 , <a class="el" href="nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4ad74fa6a689e1a6c8373a3359bba8d124">nav_vertical_raster.c</a>
 </li>
 <li>LTC2
-: <a class="el" href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5a8b5deafb5a78d799c0691bef43de80ce">nav_line_border.c</a>
+: <a class="el" href="nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4a8b5deafb5a78d799c0691bef43de80ce">nav_vertical_raster.c</a>
 , <a class="el" href="nav__line_8c.html#ab8af100196e813e8f45013a015da1dc4a8b5deafb5a78d799c0691bef43de80ce">nav_line.c</a>
-, <a class="el" href="nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4a8b5deafb5a78d799c0691bef43de80ce">nav_vertical_raster.c</a>
+, <a class="el" href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5a8b5deafb5a78d799c0691bef43de80ce">nav_line_border.c</a>
 </li>
 <li>LTP_DEF_COPY
-: <a class="el" href="pprz__geodetic_8h.html#a71e95420d72c91c82477e4fe434d389d">pprz_geodetic.h</a>
+: <a class="el" href="group__math__geodetic__generic.html#ga71e95420d72c91c82477e4fe434d389d">pprz_geodetic.h</a>
 </li>
 <li>ltp_def_from_ecef_d()
-: <a class="el" href="pprz__geodetic__double_8c.html#a3b487b485bc51b98307acae35009d1bb">pprz_geodetic_double.c</a>
-, <a class="el" href="pprz__geodetic__double_8h.html#a3b487b485bc51b98307acae35009d1bb">pprz_geodetic_double.h</a>
+: <a class="el" href="group__math__geodetic__double.html#ga3b487b485bc51b98307acae35009d1bb">pprz_geodetic_double.c</a>
+, <a class="el" href="group__math__geodetic__double.html#ga3b487b485bc51b98307acae35009d1bb">pprz_geodetic_double.h</a>
 </li>
 <li>ltp_def_from_ecef_f()
-: <a class="el" href="pprz__geodetic__float_8c.html#ae33e6c6696e73d42c2ae081e86fff00c">pprz_geodetic_float.c</a>
-, <a class="el" href="pprz__geodetic__float_8h.html#ae33e6c6696e73d42c2ae081e86fff00c">pprz_geodetic_float.h</a>
+: <a class="el" href="pprz__geodetic__float_8h.html#ae33e6c6696e73d42c2ae081e86fff00c">pprz_geodetic_float.h</a>
+, <a class="el" href="pprz__geodetic__float_8c.html#ae33e6c6696e73d42c2ae081e86fff00c">pprz_geodetic_float.c</a>
 </li>
 <li>ltp_def_from_ecef_i()
-: <a class="el" href="pprz__geodetic__int_8h.html#a5afd098a83e572b854e157486ccb569f">pprz_geodetic_int.h</a>
-, <a class="el" href="pprz__geodetic__int_8c.html#a5afd098a83e572b854e157486ccb569f">pprz_geodetic_int.c</a>
+: <a class="el" href="group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f">pprz_geodetic_int.h</a>
+, <a class="el" href="group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f">pprz_geodetic_int.c</a>
 </li>
 <li>ltp_def_from_lla_f()
 : <a class="el" href="pprz__geodetic__float_8c.html#a624697fcf875d02030d046161c4609b7">pprz_geodetic_float.c</a>
 , <a class="el" href="pprz__geodetic__float_8h.html#a624697fcf875d02030d046161c4609b7">pprz_geodetic_float.h</a>
 </li>
 <li>ltp_def_from_lla_i()
-: <a class="el" href="pprz__geodetic__int_8h.html#af0b761a4e44c92481ac96b623c34ef70">pprz_geodetic_int.h</a>
-, <a class="el" href="pprz__geodetic__int_8c.html#af0b761a4e44c92481ac96b623c34ef70">pprz_geodetic_int.c</a>
+: <a class="el" href="group__math__geodetic__int.html#gaf0b761a4e44c92481ac96b623c34ef70">pprz_geodetic_int.c</a>
+, <a class="el" href="group__math__geodetic__int.html#gaf0b761a4e44c92481ac96b623c34ef70">pprz_geodetic_int.h</a>
 </li>
 <li>ltp_of_ecef_rmat_from_lla_i()
-: <a class="el" href="pprz__geodetic__int_8c.html#a6b7ff6661d7385053cc297340d6a5cc9">pprz_geodetic_int.c</a>
-, <a class="el" href="pprz__geodetic__int_8h.html#a6b7ff6661d7385053cc297340d6a5cc9">pprz_geodetic_int.h</a>
+: <a class="el" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9">pprz_geodetic_int.h</a>
+, <a class="el" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9">pprz_geodetic_int.c</a>
 </li>
 <li>luminance_ac_code_table
 : <a class="el" href="jpeg_8c.html#ac75b710d5f54b9833f2184954d7de19c">jpeg.c</a>
@@ -2103,16 +2152,13 @@ $(document).ready(function(){initNavTree('globals_0x6c.html','');});
 <li>luminance_dc_size_table
 : <a class="el" href="jpeg_8c.html#aa7e433256dbc3b7e147839a33c24a46d">jpeg.c</a>
 </li>
-<li>luminance_quant_table
-: <a class="el" href="jpeg_8c.html#ada85081a495ab488446b2d0130e94592">jpeg.c</a>
-</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:40 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:47 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

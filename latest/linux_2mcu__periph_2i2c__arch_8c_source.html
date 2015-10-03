@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('linux_2mcu__periph_2i2c__arch_8c_sourc
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -144,105 +144,110 @@ $(document).ready(function(){initNavTree('linux_2mcu__periph_2i2c__arch_8c_sourc
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="group__i2c.html#ga886c0abe64ca0d366a35abba80cf2eff">   40</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__i2c.html#ga886c0abe64ca0d366a35abba80cf2eff" title="Set I2C bitrate. ">i2c_setbitrate</a>(<span class="keyword">struct</span> <a class="code" href="structi2c__periph.html" title="I2C peripheral structure. ">i2c_periph</a> *<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>  __attribute__((unused)), <span class="keywordtype">int</span> bitrate __attribute__((unused)))</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="group__i2c.html#ga886c0abe64ca0d366a35abba80cf2eff">   40</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__i2c.html#ga886c0abe64ca0d366a35abba80cf2eff" title="Set I2C bitrate. ">i2c_setbitrate</a>(<span class="keyword">struct</span> <a class="code" href="group__i2c.html#structi2c__periph" title="I2C peripheral structure. ">i2c_periph</a> *<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>  __attribute__((unused)), <span class="keywordtype">int</span> bitrate __attribute__((unused)))</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="group__i2c.html#ga54cb2dd83ed5b0dacc02764aa234f564">   44</a></span>&#160;bool_t <a class="code" href="group__i2c.html#ga54cb2dd83ed5b0dacc02764aa234f564" title="Check if I2C bus is idle. ">i2c_idle</a>(<span class="keyword">struct</span> <a class="code" href="structi2c__periph.html" title="I2C peripheral structure. ">i2c_periph</a> *<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a> __attribute__((unused)))</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="group__i2c.html#ga54cb2dd83ed5b0dacc02764aa234f564">   44</a></span>&#160;bool_t <a class="code" href="group__i2c.html#ga54cb2dd83ed5b0dacc02764aa234f564" title="Check if I2C bus is idle. ">i2c_idle</a>(<span class="keyword">struct</span> <a class="code" href="group__i2c.html#structi2c__periph" title="I2C peripheral structure. ">i2c_periph</a> *<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a> __attribute__((unused)))</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa">   49</a></span>&#160;bool_t <a class="code" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. ">i2c_submit</a>(<span class="keyword">struct</span> <a class="code" href="structi2c__periph.html" title="I2C peripheral structure. ">i2c_periph</a> *<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, <span class="keyword">struct</span> <a class="code" href="structi2c__transaction.html" title="I2C transaction structure. ">i2c_transaction</a> *t)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">int</span> file = (int)p-&gt;<a class="code" href="structi2c__periph.html#ab87b1de4062efa2a073a28748b9cec38">reg_addr</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="comment">// Set the slave address</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  ioctl(file, <a class="code" href="i2c__smbus_8h.html#ab15137f7c592d05573de99f078516157">I2C_SLAVE</a>, t-&gt;<a class="code" href="structi2c__transaction.html#af0c94c610e2f7b712f06b87440849ab6" title="Slave address. ">slave_addr</a>);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#pragma GCC diagnostic push</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#pragma GCC diagnostic ignored &quot;-Wcast-qual&quot;</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="comment">// Switch the different transaction types</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordflow">switch</span> (t-&gt;<a class="code" href="structi2c__transaction.html#ab23c7469258089742bb0c2950599b232" title="Transaction type. ">type</a>) {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="comment">// Just transmitting</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group__i2c.html#ggae433e858ea905e29d6ac9a70bc79352ea7bf029a65bd3dbb742ad3e2bb7e10c6d" title="transmit only transaction ">I2CTransTx</a>:</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keywordflow">if</span> (write(file, (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)t-&gt;<a class="code" href="structi2c__transaction.html#a295b2671835ae06b28905433cd1096ee" title="Transaction buffer With I2C_BUF_LEN number of bytes. ">buf</a>, t-&gt;<a class="code" href="structi2c__transaction.html#afe675669c727a98bd998283d940b2636" title="Number of bytes to write/transmit. ">len_w</a>) &lt; 0) {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        t-&gt;<a class="code" href="structi2c__transaction.html#ac4f80563bab524eee997c5c27ef570a4" title="Transaction status. ">status</a> = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a4a8906d81bf97d49da468e6c6b9f39e9" title="transaction failed ">I2CTransFailed</a>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="comment">// Just reading</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group__i2c.html#ggae433e858ea905e29d6ac9a70bc79352ea0a6a2eb5c566606a3ea9acc6734b4f91" title="receive only transaction ">I2CTransRx</a>:</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordflow">if</span> (read(file, (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)t-&gt;<a class="code" href="structi2c__transaction.html#a295b2671835ae06b28905433cd1096ee" title="Transaction buffer With I2C_BUF_LEN number of bytes. ">buf</a>, t-&gt;<a class="code" href="structi2c__transaction.html#a53b3cfd6febadfef15cdd1136adb20a5" title="Number of bytes to read/receive. ">len_r</a>) &lt; 0) {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        t-&gt;<a class="code" href="structi2c__transaction.html#ac4f80563bab524eee997c5c27ef570a4" title="Transaction status. ">status</a> = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a4a8906d81bf97d49da468e6c6b9f39e9" title="transaction failed ">I2CTransFailed</a>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="comment">// First Transmit and then read</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group__i2c.html#ggae433e858ea905e29d6ac9a70bc79352ea8fa3bedf5ded2c2a0a7d3d07dc776d7b" title="transmit and receive transaction ">I2CTransTxRx</a>:</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keywordflow">if</span> (write(file, (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)t-&gt;<a class="code" href="structi2c__transaction.html#a295b2671835ae06b28905433cd1096ee" title="Transaction buffer With I2C_BUF_LEN number of bytes. ">buf</a>, t-&gt;<a class="code" href="structi2c__transaction.html#afe675669c727a98bd998283d940b2636" title="Number of bytes to write/transmit. ">len_w</a>) &lt; 0 ||</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;          read(file, (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)t-&gt;<a class="code" href="structi2c__transaction.html#a295b2671835ae06b28905433cd1096ee" title="Transaction buffer With I2C_BUF_LEN number of bytes. ">buf</a>, t-&gt;<a class="code" href="structi2c__transaction.html#a53b3cfd6febadfef15cdd1136adb20a5" title="Number of bytes to read/receive. ">len_r</a>) &lt; 0) {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        t-&gt;<a class="code" href="structi2c__transaction.html#ac4f80563bab524eee997c5c27ef570a4" title="Transaction status. ">status</a> = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a4a8906d81bf97d49da468e6c6b9f39e9" title="transaction failed ">I2CTransFailed</a>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#pragma GCC diagnostic pop</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="comment">// Successfull transfer</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  t-&gt;<a class="code" href="structi2c__transaction.html#ac4f80563bab524eee997c5c27ef570a4" title="Transaction status. ">status</a> = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b" title="transaction successfully finished by I2C driver ">I2CTransSuccess</a>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#if USE_I2C0</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor"></span><span class="keyword">struct </span><a class="code" href="structi2c__errors.html" title="I2C errors counter. ">i2c_errors</a> i2c0_errors;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keywordtype">void</span> i2c0_hw_init(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  i2c1.reg_addr = (<span class="keywordtype">void</span> *)open(<span class="stringliteral">&quot;/dev/i2c-0&quot;</span>, O_RDWR);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  i2c0.errors = &amp;i2c0_errors;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#pragma GCC diagnostic push</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#pragma GCC diagnostic ignored &quot;-Wcast-qual&quot;</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa">   51</a></span>&#160;<span class="preprocessor"></span>bool_t <a class="code" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. ">i2c_submit</a>(<span class="keyword">struct</span> <a class="code" href="group__i2c.html#structi2c__periph" title="I2C peripheral structure. ">i2c_periph</a> *<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, <span class="keyword">struct</span> <a class="code" href="group__i2c.html#structi2c__transaction" title="I2C transaction structure. ">i2c_transaction</a> *t)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">int</span> file = (int)p-&gt;<a class="code" href="group__i2c.html#ab87b1de4062efa2a073a28748b9cec38">reg_addr</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="comment">// Set the slave address, converted to 7 bit</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  ioctl(file, <a class="code" href="i2c__smbus_8h.html#ab15137f7c592d05573de99f078516157">I2C_SLAVE</a>, t-&gt;<a class="code" href="group__i2c.html#af0c94c610e2f7b712f06b87440849ab6" title="Slave address. ">slave_addr</a> &gt;&gt; 1);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="comment">// Switch the different transaction types</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordflow">switch</span> (t-&gt;<a class="code" href="group__i2c.html#ab23c7469258089742bb0c2950599b232" title="Transaction type. ">type</a>) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="comment">// Just transmitting</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group__i2c.html#ggae433e858ea905e29d6ac9a70bc79352ea7bf029a65bd3dbb742ad3e2bb7e10c6d" title="transmit only transaction ">I2CTransTx</a>:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keywordflow">if</span> (write(file, (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)t-&gt;<a class="code" href="group__i2c.html#a295b2671835ae06b28905433cd1096ee" title="Transaction buffer With I2C_BUF_LEN number of bytes. ">buf</a>, t-&gt;<a class="code" href="group__i2c.html#afe675669c727a98bd998283d940b2636" title="Number of bytes to write/transmit. ">len_w</a>) &lt; 0) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="comment">/* if write failed, increment error counter queue_full_cnt */</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        p-&gt;<a class="code" href="group__i2c.html#a4b1270562d3320ff0151bd7856ec0c6e">errors</a>-&gt;<a class="code" href="group__i2c.html#ac53b074124c2d291dc57cecd1166823b">queue_full_cnt</a>++;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        t-&gt;<a class="code" href="group__i2c.html#ac4f80563bab524eee997c5c27ef570a4" title="Transaction status. ">status</a> = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a4a8906d81bf97d49da468e6c6b9f39e9" title="transaction failed ">I2CTransFailed</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="comment">// Just reading</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group__i2c.html#ggae433e858ea905e29d6ac9a70bc79352ea0a6a2eb5c566606a3ea9acc6734b4f91" title="receive only transaction ">I2CTransRx</a>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keywordflow">if</span> (read(file, (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)t-&gt;<a class="code" href="group__i2c.html#a295b2671835ae06b28905433cd1096ee" title="Transaction buffer With I2C_BUF_LEN number of bytes. ">buf</a>, t-&gt;<a class="code" href="group__i2c.html#a53b3cfd6febadfef15cdd1136adb20a5" title="Number of bytes to read/receive. ">len_r</a>) &lt; 0) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="comment">/* if read failed, increment error counter ack_fail_cnt */</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        p-&gt;<a class="code" href="group__i2c.html#a4b1270562d3320ff0151bd7856ec0c6e">errors</a>-&gt;<a class="code" href="group__i2c.html#a5e18e74d9bc598907010196a760261fe">ack_fail_cnt</a>++;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        t-&gt;<a class="code" href="group__i2c.html#ac4f80563bab524eee997c5c27ef570a4" title="Transaction status. ">status</a> = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a4a8906d81bf97d49da468e6c6b9f39e9" title="transaction failed ">I2CTransFailed</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="comment">// First Transmit and then read</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="group__i2c.html#ggae433e858ea905e29d6ac9a70bc79352ea8fa3bedf5ded2c2a0a7d3d07dc776d7b" title="transmit and receive transaction ">I2CTransTxRx</a>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keywordflow">if</span> (write(file, (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)t-&gt;<a class="code" href="group__i2c.html#a295b2671835ae06b28905433cd1096ee" title="Transaction buffer With I2C_BUF_LEN number of bytes. ">buf</a>, t-&gt;<a class="code" href="group__i2c.html#afe675669c727a98bd998283d940b2636" title="Number of bytes to write/transmit. ">len_w</a>) &lt; 0 ||</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;          read(file, (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)t-&gt;<a class="code" href="group__i2c.html#a295b2671835ae06b28905433cd1096ee" title="Transaction buffer With I2C_BUF_LEN number of bytes. ">buf</a>, t-&gt;<a class="code" href="group__i2c.html#a53b3cfd6febadfef15cdd1136adb20a5" title="Number of bytes to read/receive. ">len_r</a>) &lt; 0) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="comment">/* if write/read failed, increment error counter miss_start_stop_cnt */</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        p-&gt;<a class="code" href="group__i2c.html#a4b1270562d3320ff0151bd7856ec0c6e">errors</a>-&gt;<a class="code" href="group__i2c.html#ad509216d6106e340e07f72e58f3f52e8">miss_start_stop_cnt</a>++;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        t-&gt;<a class="code" href="group__i2c.html#ac4f80563bab524eee997c5c27ef570a4" title="Transaction status. ">status</a> = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a4a8906d81bf97d49da468e6c6b9f39e9" title="transaction failed ">I2CTransFailed</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="comment">// Successfull transfer</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  t-&gt;<a class="code" href="group__i2c.html#ac4f80563bab524eee997c5c27ef570a4" title="Transaction status. ">status</a> = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b" title="transaction successfully finished by I2C driver ">I2CTransSuccess</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#pragma GCC diagnostic pop</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#if USE_I2C0</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor"></span><span class="keyword">struct </span><a class="code" href="group__i2c.html#structi2c__errors" title="I2C errors counter. ">i2c_errors</a> i2c0_errors;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="comment">/* zeros error counter */</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <a class="code" href="group__i2c.html#ga0c590ace0cfbd91af9173a07cc211362">ZEROS_ERR_COUNTER</a>(i2c0_errors);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#if USE_I2C1</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor"></span><span class="keyword">struct </span><a class="code" href="structi2c__errors.html" title="I2C errors counter. ">i2c_errors</a> i2c1_errors;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keywordtype">void</span> i2c1_hw_init(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;{</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  i2c1.reg_addr = (<span class="keywordtype">void</span> *)open(<span class="stringliteral">&quot;/dev/i2c-1&quot;</span>, O_RDWR);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  i2c1.errors = &amp;i2c1_errors;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keywordtype">void</span> i2c0_hw_init(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;{</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  i2c1.reg_addr = (<span class="keywordtype">void</span> *)open(<span class="stringliteral">&quot;/dev/i2c-0&quot;</span>, O_RDWR);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  i2c0.errors = &amp;i2c0_errors;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="comment">/* zeros error counter */</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <a class="code" href="group__i2c.html#ga0c590ace0cfbd91af9173a07cc211362">ZEROS_ERR_COUNTER</a>(i2c0_errors);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#if USE_I2C1</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor"></span><span class="keyword">struct </span><a class="code" href="group__i2c.html#structi2c__errors" title="I2C errors counter. ">i2c_errors</a> i2c1_errors;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="comment">/* zeros error counter */</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <a class="code" href="group__i2c.html#ga0c590ace0cfbd91af9173a07cc211362">ZEROS_ERR_COUNTER</a>(i2c1_errors);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#if USE_I2C2</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor"></span><span class="keyword">struct </span><a class="code" href="structi2c__errors.html" title="I2C errors counter. ">i2c_errors</a> i2c2_errors;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keywordtype">void</span> i2c2_hw_init(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;{</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  i2c2.reg_addr = (<span class="keywordtype">void</span> *)open(<span class="stringliteral">&quot;/dev/i2c-2&quot;</span>, O_RDWR);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  i2c2.errors = &amp;i2c2_errors;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keywordtype">void</span> i2c1_hw_init(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;{</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  i2c1.reg_addr = (<span class="keywordtype">void</span> *)open(<span class="stringliteral">&quot;/dev/i2c-1&quot;</span>, O_RDWR);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  i2c1.errors = &amp;i2c1_errors;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="comment">/* zeros error counter */</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <a class="code" href="group__i2c.html#ga0c590ace0cfbd91af9173a07cc211362">ZEROS_ERR_COUNTER</a>(i2c1_errors);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#if USE_I2C2</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor"></span><span class="keyword">struct </span><a class="code" href="group__i2c.html#structi2c__errors" title="I2C errors counter. ">i2c_errors</a> i2c2_errors;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="comment">/* zeros error counter */</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <a class="code" href="group__i2c.html#ga0c590ace0cfbd91af9173a07cc211362">ZEROS_ERR_COUNTER</a>(i2c2_errors);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keywordtype">void</span> i2c2_hw_init(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  i2c2.reg_addr = (<span class="keywordtype">void</span> *)open(<span class="stringliteral">&quot;/dev/i2c-2&quot;</span>, O_RDWR);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  i2c2.errors = &amp;i2c2_errors;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="comment">/* zeros error counter */</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <a class="code" href="group__i2c.html#ga0c590ace0cfbd91af9173a07cc211362">ZEROS_ERR_COUNTER</a>(i2c2_errors);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;}</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_92fbf38b8c893a0928a3445a75d0ac01.html">linux</a></li><li class="navelem"><a class="el" href="dir_7cedabfb4d36d0fdf06823c7fd9084fc.html">mcu_periph</a></li><li class="navelem"><a class="el" href="linux_2mcu__periph_2i2c__arch_8c.html">i2c_arch.c</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:04:34 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:00:54 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

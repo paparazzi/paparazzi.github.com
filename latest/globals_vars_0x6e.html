@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('globals_vars_0x6e.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -258,6 +258,10 @@ $(document).ready(function(){initNavTree('globals_vars_0x6e.html','');});
 , <a class="el" href="navigation_8c.html#a5fd9ad0ac5c9b2ce0a91182a65628912">navigation.c</a>
 , <a class="el" href="navigation_8h.html#a5fd9ad0ac5c9b2ce0a91182a65628912">navigation.h</a>
 </li>
+<li>nav_climb_vspeed
+: <a class="el" href="navigation_8c.html#a6db28bf1ebfafcab68255b0fa8134347">navigation.c</a>
+, <a class="el" href="navigation_8h.html#a6db28bf1ebfafcab68255b0fa8134347">navigation.h</a>
+</li>
 <li>nav_course
 : <a class="el" href="nav_8c.html#af90efaefda837fe910e6c1d55ea0e949">nav.c</a>
 , <a class="el" href="nav_8h.html#af90efaefda837fe910e6c1d55ea0e949">nav.h</a>
@@ -266,14 +270,15 @@ $(document).ready(function(){initNavTree('globals_vars_0x6e.html','');});
 : <a class="el" href="nav__cube_8c.html#a1053eb993f28faa6154ed98338d86ae0">nav_cube.c</a>
 , <a class="el" href="nav__cube_8h.html#a1053eb993f28faa6154ed98338d86ae0">nav_cube.h</a>
 </li>
+<li>nav_descend_vspeed
+: <a class="el" href="navigation_8c.html#a1e339baa7fc3031fb329dee0ea95e0c0">navigation.c</a>
+, <a class="el" href="navigation_8h.html#a1e339baa7fc3031fb329dee0ea95e0c0">navigation.h</a>
+</li>
 <li>nav_drop_start_qdr
 : <a class="el" href="nav__drop_8h.html#a833c2bc4de81c7daf803571457ac1d30">nav_drop.h</a>
 </li>
 <li>nav_drop_trigger_delay
 : <a class="el" href="nav__drop_8h.html#a30c0e5e0fbaf12b1315a61a2ac7583e8">nav_drop.h</a>
-</li>
-<li>nav_fd
-: <a class="el" href="navdata_8c.html#a83bb25d8735652a2abacf01a4c6c91de">navdata.c</a>
 </li>
 <li>nav_flight_altitude
 : <a class="el" href="navigation_8c.html#a67ec89768eb885ae27ba8002e2fa386a">navigation.c</a>
@@ -298,10 +303,12 @@ $(document).ready(function(){initNavTree('globals_vars_0x6e.html','');});
 <li>nav_in_circle
 : <a class="el" href="nav_8c.html#a3d597a1b316fdba0db5701a03ad56c7b">nav.c</a>
 , <a class="el" href="nav_8h.html#a3d597a1b316fdba0db5701a03ad56c7b">nav.h</a>
+, <a class="el" href="nav__survey__rectangle__rotorcraft_8c.html#a3d597a1b316fdba0db5701a03ad56c7b">nav_survey_rectangle_rotorcraft.c</a>
 </li>
 <li>nav_in_segment
 : <a class="el" href="nav_8c.html#a70c77743e83862b67b86056fcc80a8ec">nav.c</a>
 , <a class="el" href="nav_8h.html#a70c77743e83862b67b86056fcc80a8ec">nav.h</a>
+, <a class="el" href="nav__survey__rectangle__rotorcraft_8c.html#a70c77743e83862b67b86056fcc80a8ec">nav_survey_rectangle_rotorcraft.c</a>
 </li>
 <li>nav_last_point
 : <a class="el" href="navigation_8c.html#a0243c612aa8a71a8fbe453c05f536aaa">navigation.c</a>
@@ -329,9 +336,9 @@ $(document).ready(function(){initNavTree('globals_vars_0x6e.html','');});
 , <a class="el" href="nav_8h.html#a3f8eab6736191ca3d1cb16738cbcf97f">nav.h</a>
 </li>
 <li>nav_pitch
-: <a class="el" href="navigation_8c.html#acfa0f83e076f79c30ed7042e429b7ae0">navigation.c</a>
-, <a class="el" href="nav_8c.html#ac1ac32b055c0a7879329346b1662f313">nav.c</a>
+: <a class="el" href="nav_8c.html#ac1ac32b055c0a7879329346b1662f313">nav.c</a>
 , <a class="el" href="nav_8h.html#ac1ac32b055c0a7879329346b1662f313">nav.h</a>
+, <a class="el" href="navigation_8c.html#acfa0f83e076f79c30ed7042e429b7ae0">navigation.c</a>
 , <a class="el" href="navigation_8h.html#acfa0f83e076f79c30ed7042e429b7ae0">navigation.h</a>
 </li>
 <li>nav_poles_count
@@ -343,26 +350,22 @@ $(document).ready(function(){initNavTree('globals_vars_0x6e.html','');});
 , <a class="el" href="nav__poles_8h.html#a76cdae76184bbc2f74791b7f5827d892">nav_poles.h</a>
 </li>
 <li>nav_poles_time
-: <a class="el" href="nav__poles_8c.html#ac0c31b976dc6eb42d7b2780f1893fae8">nav_poles.c</a>
-, <a class="el" href="nav__poles_8h.html#ac0c31b976dc6eb42d7b2780f1893fae8">nav_poles.h</a>
-</li>
-<li>nav_port
-: <a class="el" href="navdata_8c.html#af6bf228bf4066e18d01a190c6928a141">navdata.c</a>
-, <a class="el" href="navdata_8h.html#af6bf228bf4066e18d01a190c6928a141">navdata.h</a>
+: <a class="el" href="nav__poles_8h.html#ac0c31b976dc6eb42d7b2780f1893fae8">nav_poles.h</a>
+, <a class="el" href="nav__poles_8c.html#ac0c31b976dc6eb42d7b2780f1893fae8">nav_poles.c</a>
 </li>
 <li>nav_radius
-: <a class="el" href="navigation_8c.html#a4e73a18879f679277a72ef00250e359e">navigation.c</a>
+: <a class="el" href="navigation_8h.html#a4e73a18879f679277a72ef00250e359e">navigation.h</a>
 , <a class="el" href="nav_8c.html#a4e73a18879f679277a72ef00250e359e">nav.c</a>
 , <a class="el" href="nav_8h.html#a4e73a18879f679277a72ef00250e359e">nav.h</a>
-, <a class="el" href="navigation_8h.html#a4e73a18879f679277a72ef00250e359e">navigation.h</a>
+, <a class="el" href="navigation_8c.html#a4e73a18879f679277a72ef00250e359e">navigation.c</a>
 </li>
 <li>nav_roll
 : <a class="el" href="navigation_8c.html#a57fe6af445faaa41f82137a4cc772fa1">navigation.c</a>
 , <a class="el" href="navigation_8h.html#a57fe6af445faaa41f82137a4cc772fa1">navigation.h</a>
 </li>
 <li>nav_segment_end
-: <a class="el" href="navigation_8c.html#a5cc957da9246e4f8b8fca25a5c73090c">navigation.c</a>
-, <a class="el" href="navigation_8h.html#a5cc957da9246e4f8b8fca25a5c73090c">navigation.h</a>
+: <a class="el" href="navigation_8h.html#a5cc957da9246e4f8b8fca25a5c73090c">navigation.h</a>
+, <a class="el" href="navigation_8c.html#a5cc957da9246e4f8b8fca25a5c73090c">navigation.c</a>
 </li>
 <li>nav_segment_x_1
 : <a class="el" href="nav_8c.html#a8b5c072e3f61f9025578e3e6283ffcb1">nav.c</a>
@@ -377,52 +380,62 @@ $(document).ready(function(){initNavTree('globals_vars_0x6e.html','');});
 , <a class="el" href="nav_8h.html#aa04e457095198f649868d28f72969029">nav.h</a>
 </li>
 <li>nav_segment_y_2
-: <a class="el" href="nav_8c.html#a2992c5b1e4da4284068a225e451877a4">nav.c</a>
-, <a class="el" href="nav_8h.html#a2992c5b1e4da4284068a225e451877a4">nav.h</a>
+: <a class="el" href="nav_8h.html#a2992c5b1e4da4284068a225e451877a4">nav.h</a>
+, <a class="el" href="nav_8c.html#a2992c5b1e4da4284068a225e451877a4">nav.c</a>
 </li>
 <li>nav_shift
 : <a class="el" href="nav_8c.html#aae62d3a760ee0f535ee7bf9131df6d9c">nav.c</a>
 , <a class="el" href="nav_8h.html#aae62d3a760ee0f535ee7bf9131df6d9c">nav.h</a>
 </li>
 <li>nav_spiral
-: <a class="el" href="nav__spiral_8c.html#a488b81bc621440538359e40440e2e211">nav_spiral.c</a>
-, <a class="el" href="nav__spiral_8h.html#a488b81bc621440538359e40440e2e211">nav_spiral.h</a>
+: <a class="el" href="nav__spiral_8h.html#a488b81bc621440538359e40440e2e211">nav_spiral.h</a>
+, <a class="el" href="nav__spiral_8c.html#a488b81bc621440538359e40440e2e211">nav_spiral.c</a>
 </li>
 <li>nav_stage
-: <a class="el" href="common__flight__plan_8h.html#a0a51b60cbd4b84900c8898cfb1f25d49">common_flight_plan.h</a>
-, <a class="el" href="common__flight__plan_8c.html#a0a51b60cbd4b84900c8898cfb1f25d49">common_flight_plan.c</a>
+: <a class="el" href="common__flight__plan_8c.html#a0a51b60cbd4b84900c8898cfb1f25d49">common_flight_plan.c</a>
+, <a class="el" href="common__flight__plan_8h.html#a0a51b60cbd4b84900c8898cfb1f25d49">common_flight_plan.h</a>
 </li>
 <li>nav_survey_active
-: <a class="el" href="nav_8c.html#a68393cb43ffff9bfff53cce34d108e38">nav.c</a>
+: <a class="el" href="navigation_8c.html#a68393cb43ffff9bfff53cce34d108e38">navigation.c</a>
+, <a class="el" href="navigation_8h.html#a68393cb43ffff9bfff53cce34d108e38">navigation.h</a>
 , <a class="el" href="nav_8h.html#a68393cb43ffff9bfff53cce34d108e38">nav.h</a>
+, <a class="el" href="nav_8c.html#a68393cb43ffff9bfff53cce34d108e38">nav.c</a>
 </li>
 <li>nav_survey_east
 : <a class="el" href="nav_8c.html#a1709471dbc0af61015c59e136100e118">nav.c</a>
+, <a class="el" href="nav__survey__rectangle__rotorcraft_8c.html#a1709471dbc0af61015c59e136100e118">nav_survey_rectangle_rotorcraft.c</a>
 , <a class="el" href="nav_8h.html#a1709471dbc0af61015c59e136100e118">nav.h</a>
 </li>
 <li>nav_survey_north
-: <a class="el" href="nav_8h.html#a4bd5ccc05012fbe9ba362b941aea7294">nav.h</a>
-, <a class="el" href="nav_8c.html#a4bd5ccc05012fbe9ba362b941aea7294">nav.c</a>
+: <a class="el" href="nav_8c.html#a4bd5ccc05012fbe9ba362b941aea7294">nav.c</a>
+, <a class="el" href="nav__survey__rectangle__rotorcraft_8c.html#a4bd5ccc05012fbe9ba362b941aea7294">nav_survey_rectangle_rotorcraft.c</a>
+, <a class="el" href="nav_8h.html#a4bd5ccc05012fbe9ba362b941aea7294">nav.h</a>
+</li>
+<li>nav_survey_rectangle_active
+: <a class="el" href="nav__survey__rectangle__rotorcraft_8c.html#aaf807b2a04cf8261d1ae587f6e4e5c0e">nav_survey_rectangle_rotorcraft.c</a>
 </li>
 <li>nav_survey_shift
-: <a class="el" href="nav_8c.html#ad07af37c66417d0eac97740c696ace0d">nav.c</a>
-, <a class="el" href="nav_8h.html#ad07af37c66417d0eac97740c696ace0d">nav.h</a>
+: <a class="el" href="nav_8h.html#ad07af37c66417d0eac97740c696ace0d">nav.h</a>
+, <a class="el" href="nav_8c.html#ad07af37c66417d0eac97740c696ace0d">nav.c</a>
+, <a class="el" href="nav__survey__rectangle__rotorcraft_8c.html#ad07af37c66417d0eac97740c696ace0d">nav_survey_rectangle_rotorcraft.c</a>
 </li>
 <li>nav_survey_south
-: <a class="el" href="nav_8h.html#a5bd732618e35c5a855ef4e0549f733f0">nav.h</a>
-, <a class="el" href="nav_8c.html#a5bd732618e35c5a855ef4e0549f733f0">nav.c</a>
+: <a class="el" href="nav_8c.html#a5bd732618e35c5a855ef4e0549f733f0">nav.c</a>
+, <a class="el" href="nav_8h.html#a5bd732618e35c5a855ef4e0549f733f0">nav.h</a>
+, <a class="el" href="nav__survey__rectangle__rotorcraft_8c.html#a5bd732618e35c5a855ef4e0549f733f0">nav_survey_rectangle_rotorcraft.c</a>
 </li>
 <li>nav_survey_west
-: <a class="el" href="nav_8c.html#aeb19008e34a80086cfcb00ae5ae32fdd">nav.c</a>
-, <a class="el" href="nav_8h.html#aeb19008e34a80086cfcb00ae5ae32fdd">nav.h</a>
+: <a class="el" href="nav_8h.html#aeb19008e34a80086cfcb00ae5ae32fdd">nav.h</a>
+, <a class="el" href="nav_8c.html#aeb19008e34a80086cfcb00ae5ae32fdd">nav.c</a>
+, <a class="el" href="nav__survey__rectangle__rotorcraft_8c.html#aeb19008e34a80086cfcb00ae5ae32fdd">nav_survey_rectangle_rotorcraft.c</a>
 </li>
 <li>nav_takeoff_pitch_setting
 : <a class="el" href="nav__airspeed_8h.html#af35adcce03a3b0f365eca74fea894219">nav_airspeed.h</a>
 , <a class="el" href="nav__airspeed_8c.html#af35adcce03a3b0f365eca74fea894219">nav_airspeed.c</a>
 </li>
 <li>nav_throttle
-: <a class="el" href="navigation_8h.html#a6f265609aee15b9f0c1861cba83f6ef7">navigation.h</a>
-, <a class="el" href="navigation_8c.html#a6f265609aee15b9f0c1861cba83f6ef7">navigation.c</a>
+: <a class="el" href="navigation_8c.html#a6f265609aee15b9f0c1861cba83f6ef7">navigation.c</a>
+, <a class="el" href="navigation_8h.html#a6f265609aee15b9f0c1861cba83f6ef7">navigation.h</a>
 </li>
 <li>nav_throttle_setpoint
 : <a class="el" href="nav_8h.html#a5eb16c9d058ba78537ddf42c2ace1075">nav.h</a>
@@ -441,20 +454,20 @@ $(document).ready(function(){initNavTree('globals_vars_0x6e.html','');});
 , <a class="el" href="common__nav_8h.html#a66bdefcf7a79ffd01863bc4057e2bf5a">common_nav.h</a>
 </li>
 <li>navdata
-: <a class="el" href="navdata_8h.html#a77f3d3c1ea11785bf500ba7333b1ceb9">navdata.h</a>
-, <a class="el" href="navdata_8c.html#a77f3d3c1ea11785bf500ba7333b1ceb9">navdata.c</a>
+: <a class="el" href="navdata_8c.html#a6fdcf19526b8d0e0fb74565a9de96fc3">navdata.c</a>
+, <a class="el" href="navdata_8h.html#a6fdcf19526b8d0e0fb74565a9de96fc3">navdata.h</a>
 </li>
-<li>navdata_baro_available
-: <a class="el" href="navdata_8h.html#acad88813ce9e00a4fbae26c536952198">navdata.h</a>
+<li>navdata_available
+: <a class="el" href="navdata_8c.html#a75cf6b224091eece2889446adfd1bc6d">navdata.c</a>
 </li>
-<li>navdata_cks
-: <a class="el" href="navdata_8h.html#a59fe84e3c575434b8b40b8b327915f87">navdata.h</a>
+<li>navdata_buffer
+: <a class="el" href="navdata_8c.html#a5d4e297c93affa8effe15e25d56f7f5e">navdata.c</a>
 </li>
-<li>navdata_imu_available
-: <a class="el" href="navdata_8h.html#a58a4fa21abe7181fdeda88112441b448">navdata.h</a>
+<li>navdata_cond
+: <a class="el" href="navdata_8c.html#ae6e37d3be0bca3097eceb9b7cd2349ec">navdata.c</a>
 </li>
-<li>navdata_socket
-: <a class="el" href="at__com_8c.html#add11095ad4a3e4fb06fe12bcab2e5153">at_com.c</a>
+<li>navdata_mutex
+: <a class="el" href="navdata_8c.html#a70182785d6dd54c10e94f52a55e2755f">navdata.c</a>
 </li>
 <li>navigation_carrot
 : <a class="el" href="navigation_8h.html#a38461a74b0c87b0940a728140e2be361">navigation.h</a>
@@ -477,9 +490,9 @@ $(document).ready(function(){initNavTree('globals_vars_0x6e.html','');});
 : <a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a0a5a43d5ad57bb96dd80927c6bef75fd">adc_arch.c</a>
 </li>
 <li>nb_waypoint
-: <a class="el" href="navigation_8h.html#abee3b60dcf3a8c1cad3036c63f8c3689">navigation.h</a>
+: <a class="el" href="waypoints_8h.html#abee3b60dcf3a8c1cad3036c63f8c3689">waypoints.h</a>
+, <a class="el" href="waypoints_8c.html#abee3b60dcf3a8c1cad3036c63f8c3689">waypoints.c</a>
 , <a class="el" href="common__nav_8c.html#abee3b60dcf3a8c1cad3036c63f8c3689">common_nav.c</a>
-, <a class="el" href="navigation_8c.html#abee3b60dcf3a8c1cad3036c63f8c3689">navigation.c</a>
 , <a class="el" href="common__nav_8h.html#abee3b60dcf3a8c1cad3036c63f8c3689">common_nav.h</a>
 </li>
 <li>nbr_lost_values
@@ -521,7 +534,7 @@ $(document).ready(function(){initNavTree('globals_vars_0x6e.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:40 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:48 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

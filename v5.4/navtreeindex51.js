@@ -1,5 +1,6 @@
 var NAVTREEINDEX51 =
 {
+"module__ir_mlx.html":[2,53],
 "module__ir_mlx.html#event_functions":[2,53,0,1],
 "module__ir_mlx.html#files":[2,53,1],
 "module__ir_mlx.html#functions":[2,53,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX51 =
 "module__nav_survey_disc.html#headers":[2,82,0,0],
 "module__nav_survey_disc.html#module_xml__nav_survey_disc":[2,82,0,2],
 "module__nav_survey_disc.html#sources":[2,82,0,1],
-"module__nav_survey_poly_osam.html":[2,83],
-"module__nav_survey_poly_osam.html#configuration":[2,83,0]
+"module__nav_survey_poly_osam.html":[2,83]
 };

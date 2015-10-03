@@ -1,5 +1,7 @@
 var NAVTREEINDEX72 =
 {
+"state_8h.html#ga1f9f923c83a0b3167c715553df291cf4":[10,0,0,0,27,78],
+"state_8h.html#ga219356735d8bd212c93b293c56a4bc59":[10,0,0,0,27,110],
 "state_8h.html#ga22089bd5ea9ef422b16c31634286f54a":[10,0,0,0,27,107],
 "state_8h.html#ga268be189a31dfb92c9f6bc46be55c270":[10,0,0,0,27,9],
 "state_8h.html#ga27b8f24af6ddce14389efaa5ec119967":[10,0,0,0,27,113],
@@ -247,7 +249,5 @@ var NAVTREEINDEX72 =
 "stm32_2mcu__periph_2pwm__input__arch_8c.html#a45920a6a88c45cb2cb798b01306707a2":[10,0,0,0,0,3,0,9,2],
 "stm32_2mcu__periph_2pwm__input__arch_8c.html#a644a06e4166982dcb58fbd25d65f1f65":[10,0,0,0,0,3,0,9,0],
 "stm32_2mcu__periph_2pwm__input__arch_8c_source.html":[10,0,0,0,0,3,0,9],
-"stm32_2mcu__periph_2pwm__input__arch_8h.html":[10,0,0,0,0,3,0,10],
-"stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89":[10,0,0,0,0,3,0,10,4],
-"stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a32b12a036871c7af7e058b004d913c4e":[10,0,0,0,0,3,0,10,4,3]
+"stm32_2mcu__periph_2pwm__input__arch_8h.html":[10,0,0,0,0,3,0,10]
 };

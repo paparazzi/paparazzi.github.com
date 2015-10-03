@@ -1,6 +1,11 @@
 var direct__memory__logger_8h =
 [
-    [ "DirectMemoryLogger", "structDirectMemoryLogger.html", "structDirectMemoryLogger" ],
+    [ "DirectMemoryLogger", "direct__memory__logger_8h.html#structDirectMemoryLogger", [
+      [ "buffer", "direct__memory__logger_8h.html#a81d0b466f395d48f2608821b9a648667", null ],
+      [ "sst", "direct__memory__logger_8h.html#afa53d452d5c1d9838643a62f697979ef", null ],
+      [ "status", "direct__memory__logger_8h.html#a3cdd0af0832de4e34e48da56ce97a61b", null ],
+      [ "write_addr", "direct__memory__logger_8h.html#a3dd91ed9d78ffbe365c25a38298b5199", null ]
+    ] ],
     [ "DML_BUF_SIZE", "direct__memory__logger_8h.html#a1f89c68657c02dd081932b1b8cccb137", null ],
     [ "DMLStatus", "direct__memory__logger_8h.html#ad47fdcc7f765442a2c2bedb73373d2dd", [
       [ "DML_INIT", "direct__memory__logger_8h.html#ad47fdcc7f765442a2c2bedb73373d2dda843d23e362da3d98099e5afa19b5e162", null ],

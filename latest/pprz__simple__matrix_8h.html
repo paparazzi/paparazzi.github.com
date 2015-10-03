@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('pprz__simple__matrix_8h.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('pprz__simple__matrix_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pprz__simple__matrix_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2math_2pprz__simple__matrix_8hdep" alt=""/></div>
 <map name="sw_2airborne_2math_2pprz__simple__matrix_8hdep" id="sw_2airborne_2math_2pprz__simple__matrix_8hdep">
-<area shape="rect" id="node3" href="ahrs__float__cmpl_8c.html" title="Complementary filter in float to estimate the attitude, heading and gyro bias. " alt="" coords="5,99,181,143"/><area shape="rect" id="node5" href="ahrs__float__mlkf_8c.html" title="Multiplicative linearized Kalman Filter in quaternion formulation. " alt="" coords="205,99,381,143"/></map>
+<area shape="rect" id="node3" href="linear__flow__fit_8c.html" title="sw/airborne/modules\l/computer_vision/opticflow\l/linear_flow_fit.c" alt="" coords="5,99,195,159"/><area shape="rect" id="node5" href="ahrs__float__cmpl_8c.html" title="Complementary filter in float to estimate the attitude, heading and gyro bias. " alt="" coords="219,107,395,151"/><area shape="rect" id="node7" href="ahrs__float__mlkf_8c.html" title="Multiplicative linearized Kalman Filter in quaternion formulation. " alt="" coords="419,107,595,151"/></map>
 </div>
 </div>
 <p><a href="pprz__simple__matrix_8h_source.html">Go to the source code of this file.</a></p>
@@ -207,7 +207,7 @@ Macros</h2></td></tr>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="pprz__simple__matrix_8h_source.html#l00086">86</a> of file <a class="el" href="pprz__simple__matrix_8h_source.html">pprz_simple_matrix.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00203">update_state()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00231">update_state()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00299">update_state_heading()</a>.</p>
 
 </div>
 </div>
@@ -264,13 +264,13 @@ Macros</h2></td></tr>
 <div class="line">      <span class="keywordflow">for</span> (c=0; c&lt;_j; c++) {                    \</div>
 <div class="line">        C[l][c] = 0.;                           \</div>
 <div class="line">        for (m=0; m&lt;_k; m++)                    \</div>
-<div class="line">          C[l][c] += <a class="code" href="pprz__geodetic__utm_8h.html#a955f504eccf76b4eb2489c0adab03121">A</a>[l][m]*<a class="code" href="ins__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a>[m][c];           \</div>
+<div class="line">          C[l][c] += <a class="code" href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a>[l][m]*<a class="code" href="ahrs__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a>[m][c];           \</div>
 <div class="line">      }                                         \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="pprz__simple__matrix_8h_source.html#l00046">46</a> of file <a class="el" href="pprz__simple__matrix_8h_source.html">pprz_simple_matrix.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00175">propagate_state()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00203">update_state()</a>.</p>
+<p>Referenced by <a class="el" href="linear__flow__fit_8c_source.html#l00105">fit_linear_flow_field()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00197">propagate_state()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00231">update_state()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00299">update_state_heading()</a>.</p>
 
 </div>
 </div>
@@ -327,13 +327,13 @@ Macros</h2></td></tr>
 <div class="line">      <span class="keywordflow">for</span> (c=0; c&lt;_j; c++) {                    \</div>
 <div class="line">        C[l][c] = 0.;                           \</div>
 <div class="line">        for (m=0; m&lt;_k; m++)                    \</div>
-<div class="line">          C[l][c] += <a class="code" href="pprz__geodetic__utm_8h.html#a955f504eccf76b4eb2489c0adab03121">A</a>[l][m]*<a class="code" href="ins__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a>[c][m];           \</div>
+<div class="line">          C[l][c] += <a class="code" href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a>[l][m]*<a class="code" href="ahrs__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a>[c][m];           \</div>
 <div class="line">      }                                         \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="pprz__simple__matrix_8h_source.html#l00059">59</a> of file <a class="el" href="pprz__simple__matrix_8h_source.html">pprz_simple_matrix.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00175">propagate_state()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00203">update_state()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00197">propagate_state()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00231">update_state()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00299">update_state_heading()</a>.</p>
 
 </div>
 </div>
@@ -382,12 +382,12 @@ Macros</h2></td></tr>
 <div class="line">    int l,c;                                    \</div>
 <div class="line">    for (l=0; l&lt;_i; l++)                        \</div>
 <div class="line">      <span class="keywordflow">for</span> (c=0; c&lt;_j; c++)                      \</div>
-<div class="line">        C[l][c] = <a class="code" href="pprz__geodetic__utm_8h.html#a955f504eccf76b4eb2489c0adab03121">A</a>[l][c] - <a class="code" href="ins__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a>[l][c];            \</div>
+<div class="line">        C[l][c] = <a class="code" href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a>[l][c] - <a class="code" href="ahrs__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a>[l][c];            \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="pprz__simple__matrix_8h_source.html#l00073">73</a> of file <a class="el" href="pprz__simple__matrix_8h_source.html">pprz_simple_matrix.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00203">update_state()</a>.</p>
+<p>Referenced by <a class="el" href="linear__flow__fit_8c_source.html#l00105">fit_linear_flow_field()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00231">update_state()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00299">update_state_heading()</a>.</p>
 
 </div>
 </div>
@@ -415,7 +415,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_29343b6f5fcd4b75a5dfbb985ff56864.html">math</a></li><li class="navelem"><a class="el" href="pprz__simple__matrix_8h.html">pprz_simple_matrix.h</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:01 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:20 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

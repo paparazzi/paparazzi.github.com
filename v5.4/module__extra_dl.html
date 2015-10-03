@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.4.2_stable-3-gc351a71</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -117,6 +117,12 @@ Configure Options</h2>
 </ul>
 <h1><a class="anchor" id="functions"></a>
 Module functions</h1>
+<h2><a class="anchor" id="init_functions"></a>
+Init Functions</h2>
+<p>These initialization functions are called once on startup.</p>
+<ul>
+<li><a class="el" href="extra__pprz__dl_8c.html#a1ff9047c131c4b42b901dcb71ec1317a" title="Init function. ">extra_pprz_dl_init()</a></li>
+</ul>
 <h2><a class="anchor" id="event_functions"></a>
 Event Functions</h2>
 <p>These event functions are called in each cycle of the module event loop.</p>
@@ -150,6 +156,7 @@ Raw extra_dl.xml file:</h2>
 <div class="line">  &lt;<a class="code" href="stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963">header</a>&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;extra_pprz_dl.h&quot;</span>/&gt;</div>
 <div class="line">  &lt;/<a class="code" href="stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963">header</a>&gt;</div>
+<div class="line">  &lt;<a class="code" href="nav__gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;extra_pprz_dl_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keyword">event</span> fun=<span class="stringliteral">&quot;ExtraDatalinkEvent()&quot;</span>/&gt;</div>
 <div class="line">  &lt;makefile target=<span class="stringliteral">&quot;ap&quot;</span>&gt;</div>
 <div class="line">    &lt;raw&gt;</div>
@@ -170,7 +177,7 @@ Raw extra_dl.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:15:47 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Jun 17 2015 02:01:50 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

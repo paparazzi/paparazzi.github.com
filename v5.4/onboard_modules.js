@@ -267,6 +267,7 @@ var onboard_modules =
         [ "Configure Options", "module__extra_dl.html#configure", null ]
       ] ],
       [ "Module functions", "module__extra_dl.html#functions", [
+        [ "Init Functions", "module__extra_dl.html#init_functions", null ],
         [ "Event Functions", "module__extra_dl.html#event_functions", null ]
       ] ],
       [ "Files", "module__extra_dl.html#files", [

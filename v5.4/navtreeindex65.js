@@ -1,5 +1,7 @@
 var NAVTREEINDEX65 =
 {
+"rc__datalink_8h.html#a760dbd4fa3f62cc43524fc420c2a9e5f":[10,0,0,0,8,7,8,10],
+"rc__datalink_8h.html#a8ad016a0fe68026f295a8ffaacdd2c5f":[10,0,0,0,8,7,8,12],
 "rc__datalink_8h.html#a8e61ffe584bf24170117b9fcb2da4023":[10,0,0,0,8,7,8,2],
 "rc__datalink_8h.html#aa3d40235f29aab16121c0073217835a2":[10,0,0,0,8,7,8,9],
 "rc__datalink_8h.html#ae59b042496b1debe96e1d98fbc3e4b1f":[10,0,0,0,8,7,8,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX65 =
 "rotorcraft__cam_8h.html#adda457c04709dca302b7342870c93dc8":[10,0,0,0,6,6,9,17],
 "rotorcraft__cam_8h.html#af82e655d778f54d1e153522a38244b08":[10,0,0,0,6,6,9,3],
 "rotorcraft__cam_8h_source.html":[10,0,0,0,6,6,9],
-"rotorcraft__telemetry_8c.html":[10,0,0,0,3,1,14],
-"rotorcraft__telemetry_8c.html#a528ae321c363421027b0480ac206a32a":[10,0,0,0,3,1,14,0],
-"rotorcraft__telemetry_8c_source.html":[10,0,0,0,3,1,14]
+"rotorcraft__telemetry_8c.html":[10,0,0,0,3,1,14]
 };

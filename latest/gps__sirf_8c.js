@@ -1,6 +1,7 @@
 var gps__sirf_8c =
 [
     [ "gps_impl_init", "gps__sirf_8c.html#ac51e6a5f7940a0acc9dc44b1b8085331", null ],
+    [ "gps_sirf_msg", "gps__sirf_8c.html#ae52d53007754c0328f91ffd33ee9c814", null ],
     [ "sirf_parse_2", "gps__sirf_8c.html#ab8f82af196f0d9516b8f914f1e02df87", null ],
     [ "sirf_parse_41", "gps__sirf_8c.html#a99e4106b362adc09bc68f3037a3db9ec", null ],
     [ "sirf_parse_char", "gps__sirf_8c.html#a60b776e45dfc8a807cec9dcf5571844d", null ],

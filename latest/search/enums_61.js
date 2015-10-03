@@ -19,10 +19,13 @@ var searchData=
   ['adxl345confstatus',['Adxl345ConfStatus',['../adxl345_8h.html#aa006d32535082f7872bc58cd529c9177',1,'adxl345.h']]],
   ['adxl345ranges',['Adxl345Ranges',['../adxl345__regs_8h.html#abc3494afc65a86812ed33040266ce16f',1,'adxl345_regs.h']]],
   ['adxl345rates',['Adxl345Rates',['../adxl345__regs_8h.html#a746dd7df1b3e0f992547870f19047133',1,'adxl345_regs.h']]],
+  ['ahrsdcmstatus',['AhrsDCMStatus',['../ahrs__float__dcm_8h.html#add6357441f20327a6508da7f6036d2fa',1,'ahrs_float_dcm.h']]],
+  ['ahrsfcstatus',['AhrsFCStatus',['../ahrs__float__cmpl_8h.html#a23cfa506c66a70b802181d64e175937d',1,'ahrs_float_cmpl.h']]],
+  ['ahrsicestatus',['AhrsICEStatus',['../ahrs__int__cmpl__euler_8h.html#a0344e9e10b7b91b87aa7ac14d04c41f7',1,'ahrs_int_cmpl_euler.h']]],
+  ['ahrsicqstatus',['AhrsICQStatus',['../ahrs__int__cmpl__quat_8h.html#a1a85a4fab3af926588660327b3e8d6f8',1,'ahrs_int_cmpl_quat.h']]],
+  ['ahrsmlkfstatus',['AhrsMlkfStatus',['../ahrs__float__mlkf_8h.html#ac37e0c0ac7b84e55eb5fac8b19d31192',1,'ahrs_float_mlkf.h']]],
   ['ak8963confstatus',['Ak8963ConfStatus',['../ak8963_8h.html#ade3f567d3fec4c2efb104badb509a01e',1,'ak8963.h']]],
   ['ak8963status',['Ak8963Status',['../ak8963_8h.html#a17716d364ee924bf509a99715208137a',1,'ak8963.h']]],
-  ['ardrone_5fstates',['ARDRONE_STATES',['../at__com_8h.html#a085ecbab5cd867407912fa0892583856',1,'at_com.h']]],
   ['arming_5fstate',['arming_state',['../autopilot__arming__switch_8h.html#abd7b974a7084669ffc2893dd65db427e',1,'arming_state():&#160;autopilot_arming_switch.h'],['../autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427e',1,'arming_state():&#160;autopilot_arming_yaw.h']]],
-  ['arming_5fthrottle_5fstate',['arming_throttle_state',['../autopilot__arming__throttle_8h.html#a67f42ccf33e2918fef63b1a6c729e759',1,'autopilot_arming_throttle.h']]],
-  ['at_5frefs',['AT_REFS',['../at__com_8h.html#a5a6fdcbdb3a1a1b8f5f213e956cfd6e3',1,'at_com.h']]]
+  ['arming_5fthrottle_5fstate',['arming_throttle_state',['../autopilot__arming__throttle_8h.html#a67f42ccf33e2918fef63b1a6c729e759',1,'autopilot_arming_throttle.h']]]
 ];

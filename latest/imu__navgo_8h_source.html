@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('imu__navgo_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -160,47 +160,28 @@ $(document).ready(function(){initNavTree('imu__navgo_8h_source.html','');});
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="structImuNavgo.html">   62</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structImuNavgo.html">ImuNavgo</a> {</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="code" href="structImuNavgo.html#abe5dfe17c50e12430f6ffa6c14bb51ff">   63</a></span>&#160;  <span class="keyword">volatile</span> bool_t <a class="code" href="structImuNavgo.html#abe5dfe17c50e12430f6ffa6c14bb51ff">gyr_valid</a>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="structImuNavgo.html#a003590f52ce87b03400f98d81829544c">   64</a></span>&#160;  <span class="keyword">volatile</span> bool_t <a class="code" href="structImuNavgo.html#a003590f52ce87b03400f98d81829544c">acc_valid</a>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="structImuNavgo.html#adb1f234610a5877511f9aca243c5c589">   65</a></span>&#160;  <span class="keyword">volatile</span> bool_t <a class="code" href="structImuNavgo.html#adb1f234610a5877511f9aca243c5c589">mag_valid</a>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="code" href="structImuNavgo.html#a757339b64878f92dc34360937bc12e08">   66</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structItg3200.html">Itg3200</a> <a class="code" href="structImuNavgo.html#a757339b64878f92dc34360937bc12e08">itg</a>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="code" href="structImuNavgo.html#a5a28d3ca17282628544ddec886b50c8c">   67</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structAdxl345__I2c.html">Adxl345_I2c</a> <a class="code" href="structImuNavgo.html#a5a28d3ca17282628544ddec886b50c8c">adxl</a>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="code" href="structImuNavgo.html#af8d77dcbb8339e8bcd43661b8032b0ab">   68</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structHmc58xx.html">Hmc58xx</a> <a class="code" href="structImuNavgo.html#af8d77dcbb8339e8bcd43661b8032b0ab">hmc</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="structImuNavgo.html">ImuNavgo</a> <a class="code" href="imu__navgo_8c.html#a97fa4a18bac4d98bb58486a17a028548">imu_navgo</a>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">/* Own Extra Functions */</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__navgo_8c.html#a090687272e402bae057eb68e39e6218f">imu_navgo_event</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__navgo_8c.html#a3d112410a2bef99c6c7cd1dd6a79e77e">imu_navgo_downlink_raw</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="code" href="imu__navgo_8h.html#a9d95db588addd0a03f6e7e749fbb032a">   78</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="imu__navgo_8h.html#a9d95db588addd0a03f6e7e749fbb032a">ImuEvent</a>(<span class="keywordtype">void</span> (* _gyro_handler)(<span class="keywordtype">void</span>), <span class="keywordtype">void</span> (* _accel_handler)(<span class="keywordtype">void</span>), <span class="keywordtype">void</span> (* _mag_handler)(<span class="keywordtype">void</span>))</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="imu__navgo_8c.html#a090687272e402bae057eb68e39e6218f">imu_navgo_event</a>();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="imu__navgo_8c.html#a97fa4a18bac4d98bb58486a17a028548">imu_navgo</a>.<a class="code" href="structImuNavgo.html#abe5dfe17c50e12430f6ffa6c14bb51ff">gyr_valid</a>) {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="imu__navgo_8c.html#a97fa4a18bac4d98bb58486a17a028548">imu_navgo</a>.<a class="code" href="structImuNavgo.html#abe5dfe17c50e12430f6ffa6c14bb51ff">gyr_valid</a> = <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    _gyro_handler();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="imu__navgo_8c.html#a97fa4a18bac4d98bb58486a17a028548">imu_navgo</a>.<a class="code" href="structImuNavgo.html#a003590f52ce87b03400f98d81829544c">acc_valid</a>) {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="imu__navgo_8c.html#a97fa4a18bac4d98bb58486a17a028548">imu_navgo</a>.<a class="code" href="structImuNavgo.html#a003590f52ce87b03400f98d81829544c">acc_valid</a> = <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    _accel_handler();</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="imu__navgo_8c.html#a97fa4a18bac4d98bb58486a17a028548">imu_navgo</a>.<a class="code" href="structImuNavgo.html#adb1f234610a5877511f9aca243c5c589">mag_valid</a>) {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="imu__navgo_8c.html#a97fa4a18bac4d98bb58486a17a028548">imu_navgo</a>.<a class="code" href="structImuNavgo.html#adb1f234610a5877511f9aca243c5c589">mag_valid</a> = <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    _mag_handler();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#endif // PPZUAVIMU_H</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="imu__navgo_8h.html">   62</a></span>&#160;<span class="keyword">struct </span><a class="code" href="imu__navgo_8h.html#structImuNavgo">ImuNavgo</a> {</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="code" href="imu__navgo_8h.html#a757339b64878f92dc34360937bc12e08">   63</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="itg3200_8h.html#structItg3200">Itg3200</a> <a class="code" href="imu__navgo_8h.html#a757339b64878f92dc34360937bc12e08">itg</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="imu__navgo_8h.html#a5a28d3ca17282628544ddec886b50c8c">   64</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="adxl345__i2c_8h.html#structAdxl345__I2c">Adxl345_I2c</a> <a class="code" href="imu__navgo_8h.html#a5a28d3ca17282628544ddec886b50c8c">adxl</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="imu__navgo_8h.html#af8d77dcbb8339e8bcd43661b8032b0ab">   65</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="hmc58xx_8h.html#structHmc58xx">Hmc58xx</a> <a class="code" href="imu__navgo_8h.html#af8d77dcbb8339e8bcd43661b8032b0ab">hmc</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="imu__navgo_8h.html#structImuNavgo">ImuNavgo</a> <a class="code" href="imu__navgo_8c.html#a97fa4a18bac4d98bb58486a17a028548">imu_navgo</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">/* Own Extra Functions */</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__navgo_8c.html#a090687272e402bae057eb68e39e6218f">imu_navgo_event</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__navgo_8c.html#a3d112410a2bef99c6c7cd1dd6a79e77e">imu_navgo_downlink_raw</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="code" href="imu__navgo_8h.html#a38f1122c1ee0701562b490c6e1b60609">   74</a></span>&#160;<span class="preprocessor">#define ImuEvent imu_navgo_event</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif // IMU_NAVGO_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_4b28a472501cd3c8e4b2c011bdbc883b.html">navgo</a></li><li class="navelem"><a class="el" href="imu__navgo_8h.html">imu_navgo.h</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:04:37 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:00:57 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

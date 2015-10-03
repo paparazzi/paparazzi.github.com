@@ -5,6 +5,7 @@ var ivy__transport_8c =
     [ "count_bytes", "ivy__transport_8c.html#a4ad680aab1ad02bac063dda7d2035bdc", null ],
     [ "end_message", "ivy__transport_8c.html#ab14b6a6c86a238a246f843c56d3b1306", null ],
     [ "ivy_transport_init", "ivy__transport_8c.html#a5103b0ca25b6bd5abb6f92abae752927", null ],
+    [ "null_function", "ivy__transport_8c.html#acfac1dc2046b9abf28cea0492edef7b2", null ],
     [ "overrun", "ivy__transport_8c.html#a2ffcb154e6d05cbe8f719e88a4d2c7b7", null ],
     [ "put_bytes", "ivy__transport_8c.html#aeed5633dc9b597a074d71abe0bdaabcc", null ],
     [ "put_named_byte", "ivy__transport_8c.html#a095428a2c459a0e4daee36bf79cf952d", null ],

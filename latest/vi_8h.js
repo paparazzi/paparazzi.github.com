@@ -1,11 +1,51 @@
 var vi_8h =
 [
-    [ "Vi_imu_info", "structVi__imu__info.html", "structVi__imu__info" ],
-    [ "Vi_gps_info", "structVi__gps__info.html", "structVi__gps__info" ],
-    [ "Vi_ahrs_info", "structVi__ahrs__info.html", "structVi__ahrs__info" ],
-    [ "Vi_info", "structVi__info.html", "structVi__info" ],
-    [ "Vi_command", "structVi__command.html", "structVi__command" ],
-    [ "VehicleInterface", "structVehicleInterface.html", "structVehicleInterface" ],
+    [ "Vi_imu_info", "vi_8h.html#structVi__imu__info", [
+      [ "accel", "vi_8h.html#ae820aa2c5fb42815b8e60029c0ace3fa", null ],
+      [ "gyro", "vi_8h.html#aa6d86a777c2f00a72daa264ddf72b225", null ],
+      [ "mag", "vi_8h.html#a6e59e458bc626853e5895e628d259a7e", null ]
+    ] ],
+    [ "Vi_gps_info", "vi_8h.html#structVi__gps__info", [
+      [ "fix", "vi_8h.html#a26e03024ed8fa0fb35399e3f8ad85def", null ],
+      [ "num_sv", "vi_8h.html#a7d613e407626232ab0a3a8f1052e9eec", null ],
+      [ "pacc", "vi_8h.html#a69fde2065c05cc8523ed0c68a5787d83", null ],
+      [ "pos", "vi_8h.html#ab702300a590e9e8e881ab73eafa6e1f8", null ],
+      [ "speed", "vi_8h.html#a2174470bb84a5171bd9c0373bb1f06cf", null ]
+    ] ],
+    [ "Vi_ahrs_info", "vi_8h.html#structVi__ahrs__info", [
+      [ "euler", "vi_8h.html#abbdf276534da86017f0c40f4572bbed7", null ],
+      [ "rate", "vi_8h.html#a66c48ea7afc8ba945d04e182efa49641", null ]
+    ] ],
+    [ "Vi_info", "vi_8h.html#structVi__info", [
+      [ "ahrs", "vi_8h.html#a8506365ba62fbde59e0d8c97a2bf7523", null ],
+      [ "gps", "vi_8h.html#a6e54aacf5d0a9bc34d76eff887258546", null ],
+      [ "imu", "vi_8h.html#a7f72ee067479504eedf58fbc154e7f96", null ]
+    ] ],
+    [ "Vi_command", "vi_8h.html#structVi__command", [
+      [ "h_mode", "vi_8h.html#a162939a96b3aa3f484ac56972b3ed848", null ],
+      [ "h_sp", "vi_8h.html#a25b2be5154ca2f6c5da362bcd41ec724", null ],
+      [ "v_mode", "vi_8h.html#a674114cf71c612f56690f88da76d7e21", null ],
+      [ "v_sp", "vi_8h.html#a7c5e3f9cfbf5c09cdb07ca9d9b00c03e", null ]
+    ] ],
+    [ "VehicleInterface", "vi_8h.html#structVehicleInterface", [
+      [ "available_sensors", "vi_8h.html#aadd55a31046784d08346ca94a76ce893", null ],
+      [ "enabled", "vi_8h.html#a110d0b9ef3c54f7c7f30e622844680f3", null ],
+      [ "info", "vi_8h.html#ad561aa0f6e51fcc56e7379bd73806823", null ],
+      [ "input", "vi_8h.html#a63dca4642131593d26db22a363a88693", null ],
+      [ "last_msg", "vi_8h.html#a1bfd15310f8c8127120cad9efcdb05ed", null ],
+      [ "timeouted", "vi_8h.html#a57880e1cae1569eec6aa5bb86a4caa98", null ]
+    ] ],
+    [ "Vi_command.h_sp", "vi_8h.html#unionVi__command_8h__sp", [
+      [ "attitude", "vi_8h.html#ab43b3777e949a30229c2121fb22a8285", null ],
+      [ "pos", "vi_8h.html#a5e0bdcbddccca4d66d74ba8c1cee1a68", null ],
+      [ "rate", "vi_8h.html#a67942503875c1ae74e4b5b80a0dade01", null ],
+      [ "speed", "vi_8h.html#ace4ef3ec98443ed10da505114b58f153", null ]
+    ] ],
+    [ "Vi_command.v_sp", "vi_8h.html#unionVi__command_8v__sp", [
+      [ "climb", "vi_8h.html#a28b3da6a4cad283dd294dd51d476084c", null ],
+      [ "direct", "vi_8h.html#a7caa701b2bd5a182b80c72b9bdf88e2d", null ],
+      [ "height", "vi_8h.html#ab435e227d5dd201e1768b2bcb2e0aa81", null ]
+    ] ],
     [ "vi_SetEnabled", "vi_8h.html#a5a412b08b29448c00fe5cbd83d7d101d", null ],
     [ "vi_impl_init", "vi_8h.html#a2a3484b09409fdedb7b5c7d12faac617", null ],
     [ "vi_impl_periodic", "vi_8h.html#a4dff3e5cadc38f5e2b40b4684dd3c6d0", null ],

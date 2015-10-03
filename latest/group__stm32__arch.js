@@ -1,6 +1,5 @@
 var group__stm32__arch =
 [
-    [ "interrupt_hw.h", "stm32_2interrupt__hw_8h.html", null ],
     [ "mcu_arch.c", "stm32_2mcu__arch_8c.html", null ],
     [ "adc_arch.c", "stm32_2mcu__periph_2adc__arch_8c.html", null ],
     [ "adc_arch.h", "stm32_2mcu__periph_2adc__arch_8h.html", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('linux_2mcu__periph_2uart__arch_8c.html
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -107,7 +107,8 @@ $(document).ready(function(){initNavTree('linux_2mcu__periph_2uart__arch_8c.html
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">uart_arch.c File Reference</div>  </div>
 </div><!--header-->
@@ -115,14 +116,18 @@ $(document).ready(function(){initNavTree('linux_2mcu__periph_2uart__arch_8c.html
 
 <p>linux uart handling  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br/>
+<div class="textblock"><code>#include &lt;BOARD_CONFIG&gt;</code><br/>
+<code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br/>
 <code>#include &lt;stdint.h&gt;</code><br/>
 <code>#include &lt;unistd.h&gt;</code><br/>
 <code>#include &lt;stdio.h&gt;</code><br/>
 <code>#include &lt;stdlib.h&gt;</code><br/>
 <code>#include &lt;string.h&gt;</code><br/>
-<code>#include &quot;<a class="el" href="serial__port_8h_source.html">serial_port.h</a>&quot;</code><br/>
 <code>#include &lt;errno.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="serial__port_8h_source.html">serial_port.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="rt__priority_8h_source.html">rt_priority.h</a>&quot;</code><br/>
+<code>#include &lt;pthread.h&gt;</code><br/>
+<code>#include &lt;sys/select.h&gt;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for uart_arch.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -130,26 +135,40 @@ $(document).ready(function(){initNavTree('linux_2mcu__periph_2uart__arch_8c.html
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="linux_2mcu__periph_2uart__arch_8c__incl.png" border="0" usemap="#sw_2airborne_2arch_2linux_2mcu__periph_2uart__arch_8c" alt=""/></div>
 <map name="sw_2airborne_2arch_2linux_2mcu__periph_2uart__arch_8c" id="sw_2airborne_2arch_2linux_2mcu__periph_2uart__arch_8c">
-<area shape="rect" id="node3" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="224,99,363,127"/><area shape="rect" id="node23" href="serial__port_8h.html" title="serial_port.h" alt="" coords="848,99,949,127"/><area shape="rect" id="node7" href="link__device_8h.html" title="generic device header " alt="" coords="203,177,384,205"/><area shape="rect" id="node9" href="inttypes_8h.html" title="inttypes.h" alt="" coords="251,254,336,282"/></map>
+<area shape="rect" id="node5" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="293,99,432,127"/><area shape="rect" id="node27" href="serial__port_8h.html" title="serial_port.h" alt="" coords="1093,99,1195,127"/><area shape="rect" id="node31" href="rt__priority_8h.html" title="Functions to obtain rt priority or set the nice level. " alt="" coords="651,99,744,127"/><area shape="rect" id="node9" href="link__device_8h.html" title="generic device header " alt="" coords="203,177,384,205"/><area shape="rect" id="node11" href="inttypes_8h.html" title="inttypes.h" alt="" coords="251,254,336,282"/></map>
 </div>
 </div>
 <p><a href="linux_2mcu__periph_2uart__arch_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a36997272afece0e4880fbd326b35144c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2uart__arch_8c.html#a36997272afece0e4880fbd326b35144c">TRACE</a>(fmt, args...)</td></tr>
+<tr class="memitem:af4447deb79d63086867d3d7286da403d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2uart__arch_8c.html#af4447deb79d63086867d3d7286da403d">UART_THREAD_PRIO</a>&#160;&#160;&#160;11</td></tr>
+<tr class="separator:af4447deb79d63086867d3d7286da403d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36997272afece0e4880fbd326b35144c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2uart__arch_8c.html#a36997272afece0e4880fbd326b35144c">TRACE</a>(fmt, args...)&#160;&#160;&#160;fprintf(stderr, fmt, args)</td></tr>
 <tr class="separator:a36997272afece0e4880fbd326b35144c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af1a8e69ac854e1358f0df7e6d8724512"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2uart__arch_8c.html#af1a8e69ac854e1358f0df7e6d8724512">uart_periph_set_baudrate</a> (struct <a class="el" href="structuart__periph.html">uart_periph</a> *periph, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> baud)</td></tr>
+<tr class="memitem:a5c919b4154628e257db4a28bbe0c5847"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2uart__arch_8c.html#a5c919b4154628e257db4a28bbe0c5847">uart_receive_handler</a> (struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *periph)</td></tr>
+<tr class="separator:a5c919b4154628e257db4a28bbe0c5847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b084c97b4239a33b72ed3c2f5b26da5"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2uart__arch_8c.html#a6b084c97b4239a33b72ed3c2f5b26da5">uart_thread</a> (void *data)</td></tr>
+<tr class="separator:a6b084c97b4239a33b72ed3c2f5b26da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e440684a8b6a4088b2f1d5b4dc47587"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2uart__arch_8c.html#a7e440684a8b6a4088b2f1d5b4dc47587">uart_arch_init</a> (void)</td></tr>
+<tr class="separator:a7e440684a8b6a4088b2f1d5b4dc47587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1a8e69ac854e1358f0df7e6d8724512"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2uart__arch_8c.html#af1a8e69ac854e1358f0df7e6d8724512">uart_periph_set_baudrate</a> (struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *periph, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> baud)</td></tr>
 <tr class="separator:af1a8e69ac854e1358f0df7e6d8724512"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a152abf2943c9140c3830b5a0f792aaf5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2uart__arch_8c.html#a152abf2943c9140c3830b5a0f792aaf5">uart_transmit</a> (struct <a class="el" href="structuart__periph.html">uart_periph</a> *periph, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="link__mcu__can_8c.html#afb87d045bbf32b236fc425efe02bdc7b">data</a>)</td></tr>
-<tr class="separator:a152abf2943c9140c3830b5a0f792aaf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad97276dc2dbc5cb3506c7ce98e845595"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2uart__arch_8c.html#ad97276dc2dbc5cb3506c7ce98e845595">uart_handler</a> (struct <a class="el" href="structuart__periph.html">uart_periph</a> *periph)</td></tr>
-<tr class="separator:ad97276dc2dbc5cb3506c7ce98e845595"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68258657e2241e19b0400abe79c184f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2uart__arch_8c.html#a68258657e2241e19b0400abe79c184f0">uart_event</a> (void)</td></tr>
-<tr class="separator:a68258657e2241e19b0400abe79c184f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac52690ed0854ab6c1b5ef3ba0ccc8040"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2uart__arch_8c.html#ac52690ed0854ab6c1b5ef3ba0ccc8040">uart_put_byte</a> (struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *periph, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data)</td></tr>
+<tr class="separator:ac52690ed0854ab6c1b5ef3ba0ccc8040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb9a60ec94a31a08e6454ccf64f24039"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039">uart_getch</a> (struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
+<tr class="separator:adb9a60ec94a31a08e6454ccf64f24039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd0dcae4715bc91bdf3369785a9b6c87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2uart__arch_8c.html#abd0dcae4715bc91bdf3369785a9b6c87">uart_char_available</a> (struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
+<tr class="memdesc:abd0dcae4715bc91bdf3369785a9b6c87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check UART for available chars in receive buffer.  <a href="#abd0dcae4715bc91bdf3369785a9b6c87">More...</a><br/></td></tr>
+<tr class="separator:abd0dcae4715bc91bdf3369785a9b6c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ad95c5a3d78475744ae1e8792b8d73e43"><td class="memItemLeft" align="right" valign="top">static pthread_mutex_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2uart__arch_8c.html#ad95c5a3d78475744ae1e8792b8d73e43">uart_mutex</a> = PTHREAD_MUTEX_INITIALIZER</td></tr>
+<tr class="separator:ad95c5a3d78475744ae1e8792b8d73e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>linux uart handling </p>
@@ -175,24 +194,40 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td>&#160;&#160;&#160;fprintf(stderr, fmt, args)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00037">37</a> of file <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00051">51</a> of file <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00108">uart_handler()</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00061">uart_periph_set_baudrate()</a>, and <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00084">uart_transmit()</a>.</p>
+<p>Referenced by <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00216">uart_periph_set_baudrate()</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00243">uart_put_byte()</a>, and <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00261">uart_receive_handler()</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a68258657e2241e19b0400abe79c184f0"></a>
+<a class="anchor" id="af4447deb79d63086867d3d7286da403d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void uart_event </td>
+          <td class="memname">#define UART_THREAD_PRIO&#160;&#160;&#160;11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00044">44</a> of file <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
+
+<p>Referenced by <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00065">uart_thread()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a7e440684a8b6a4088b2f1d5b4dc47587"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void uart_arch_init </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname">)</td><td></td>
@@ -201,48 +236,85 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00141">141</a> of file <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00054">54</a> of file <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00676">event_task_ap()</a>, <a class="el" href="main__fbw_8c_source.html#l00190">event_task_fbw()</a>, and <a class="el" href="rotorcraft_2main_8c_source.html#l00305">main_event()</a>.</p>
+<p>Referenced by <a class="el" href="mcu_8c_source.html#l00071">mcu_init()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="linux_2mcu__periph_2uart__arch_8c_a68258657e2241e19b0400abe79c184f0_icgraph.png" border="0" usemap="#linux_2mcu__periph_2uart__arch_8c_a68258657e2241e19b0400abe79c184f0_icgraph" alt=""/></div>
-<map name="linux_2mcu__periph_2uart__arch_8c_a68258657e2241e19b0400abe79c184f0_icgraph" id="linux_2mcu__periph_2uart__arch_8c_a68258657e2241e19b0400abe79c184f0_icgraph">
-<area shape="rect" id="node3" href="main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="147,5,261,33"/><area shape="rect" id="node7" href="main__fbw_8h.html#ae1f060d6fcf56653e3db62e402c8701a" title="event_task_fbw" alt="" coords="144,55,264,83"/><area shape="rect" id="node10" href="main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="156,106,252,134"/><area shape="rect" id="node5" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="312,30,448,58"/></map>
+<div class="center"><img src="linux_2mcu__periph_2uart__arch_8c_a7e440684a8b6a4088b2f1d5b4dc47587_icgraph.png" border="0" usemap="#linux_2mcu__periph_2uart__arch_8c_a7e440684a8b6a4088b2f1d5b4dc47587_icgraph" alt=""/></div>
+<map name="linux_2mcu__periph_2uart__arch_8c_a7e440684a8b6a4088b2f1d5b4dc47587_icgraph" id="linux_2mcu__periph_2uart__arch_8c_a7e440684a8b6a4088b2f1d5b4dc47587_icgraph">
+<area shape="rect" id="node3" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="164,55,239,83"/><area shape="rect" id="node5" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="301,5,355,33"/><area shape="rect" id="node7" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="288,55,368,83"/><area shape="rect" id="node11" href="main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="293,106,363,134"/><area shape="rect" id="node9" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="425,55,479,83"/><area shape="rect" id="node13" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="417,106,487,134"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="ad97276dc2dbc5cb3506c7ce98e845595"></a>
+<a class="anchor" id="abd0dcae4715bc91bdf3369785a9b6c87"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void uart_handler </td>
+          <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> uart_char_available </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structuart__periph.html">uart_periph</a> *&#160;</td>
-          <td class="paramname"><em>periph</em>)</td><td></td>
+          <td class="paramtype">struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *&#160;</td>
+          <td class="paramname"><em>p</em>)</td><td></td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00108">108</a> of file <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
+<p>Check UART for available chars in receive buffer. </p>
+<dl class="section return"><dt>Returns</dt><dd>number of chars in the buffer </dd></dl>
 
-<p>References <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="serial__port_8h_source.html#l00029">SerialPort::fd</a>, <a class="el" href="electrical__raw_8c_source.html#l00068">fd</a>, <a class="el" href="navdata_8h_source.html#l00111">port</a>, <a class="el" href="uart_8h_source.html#l00067">uart_periph::reg_addr</a>, <a class="el" href="uart_8h_source.html#l00058">uart_periph::rx_buf</a>, <a class="el" href="uart_8h_source.html#l00060">uart_periph::rx_extract_idx</a>, <a class="el" href="uart_8h_source.html#l00059">uart_periph::rx_insert_idx</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00037">TRACE</a>, <a class="el" href="uart_8h_source.html#l00062">uart_periph::tx_buf</a>, <a class="el" href="uart_8h_source.html#l00064">uart_periph::tx_extract_idx</a>, <a class="el" href="uart_8h_source.html#l00063">uart_periph::tx_insert_idx</a>, <a class="el" href="uart_8h_source.html#l00065">uart_periph::tx_running</a>, <a class="el" href="uart_8h_source.html#l00035">UART_RX_BUFFER_SIZE</a>, and <a class="el" href="uart_8h_source.html#l00036">UART_TX_BUFFER_SIZE</a>.</p>
+<p>Definition at line <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00296">296</a> of file <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
+
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00296">gps_piksi_event()</a>, <a class="el" href="gps__piksi_8c_source.html#l00324">gps_piksi_read()</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l01140">high_speed_logger_direct_memory_periodic()</a>, <a class="el" href="hott_8c_source.html#l00197">hott_check_serial_data()</a>, <a class="el" href="hott_8c_source.html#l00169">hott_send_telemetry_data()</a>, <a class="el" href="imu__um6_8h_source.html#l00102">imu_um6_event()</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00103">ImuEvent()</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00096">ReadGX3Buffer()</a>, <a class="el" href="sbus__common_8c_source.html#l00115">sbus_common_decode_event()</a>, <a class="el" href="usb__tunnel_8c_source.html#l00052">tunnel_event()</a>, <a class="el" href="uart_8c_source.html#l00193">uart_periph_init()</a>, <a class="el" href="vn200__serial_8c_source.html#l00077">vn200_event()</a>, and <a class="el" href="vn200__serial_8c_source.html#l00069">vn200_read_buffer()</a>.</p>
+
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="linux_2mcu__periph_2uart__arch_8c_abd0dcae4715bc91bdf3369785a9b6c87_icgraph.png" border="0" usemap="#linux_2mcu__periph_2uart__arch_8c_abd0dcae4715bc91bdf3369785a9b6c87_icgraph" alt=""/></div>
+<map name="linux_2mcu__periph_2uart__arch_8c_abd0dcae4715bc91bdf3369785a9b6c87_icgraph" id="linux_2mcu__periph_2uart__arch_8c_abd0dcae4715bc91bdf3369785a9b6c87_icgraph">
+<area shape="rect" id="node3" href="gps__piksi_8h.html#a2a11e7df7bcc31ab10141f020bd6f729" title="gps_piksi_event" alt="" coords="472,28,595,56"/><area shape="rect" id="node5" href="gps__piksi_8c.html#a75f6c31f12465cc8684300711474574e" title="gps_piksi_read" alt="" coords="239,54,353,82"/><area shape="rect" id="node8" href="high__speed__logger__direct__memory_8h.html#a9464826fae91544e9fc803865f5e3107" title="Main function of the module. " alt="" coords="204,104,388,148"/><area shape="rect" id="node10" href="hott_8c.html#ad9ba717e808b0a9d9eabf747ba7abddb" title="hott_check_serial_data" alt="" coords="212,171,380,199"/><area shape="rect" id="node16" href="hott_8c.html#a2dab589532cc67049d57fa67684616c8" title="hott_send_telemetry_data" alt="" coords="201,222,391,250"/><area shape="rect" id="node19" href="imu__um6_8h.html#a93e31e95183b0cd08de6d5447f1a1c09" title="imu_um6_event" alt="" coords="233,272,359,300"/><area shape="rect" id="node21" href="ahrs__gx3_8h.html#a1caa6f284af9f14d111ea11166236bf4" title="ImuEvent" alt="" coords="492,324,575,352"/><area shape="rect" id="node23" href="ahrs__gx3_8h.html#a7d7b981270fa60a248894025e1791de6" title="ReadGX3Buffer" alt="" coords="237,374,355,402"/><area shape="rect" id="node26" href="sbus__common_8h.html#ae8a17057cacb6e3b645d16793db3e21f" title="Decoding event function. " alt="" coords="211,424,381,468"/><area shape="rect" id="node36" href="usb__tunnel_8c.html#a716cf006b01443e43d0c22bace6803c6" title="tunnel_event" alt="" coords="244,491,348,519"/><area shape="rect" id="node40" href="uart_8h.html#a43baf084a9bcc968ef00790e25becbb7" title="uart_periph_init" alt="" coords="236,542,356,570"/><area shape="rect" id="node44" href="vn200__serial_8h.html#a3d81e2dac2ecada08b2be854a776b118" title="vn200_event" alt="" coords="481,624,585,652"/><area shape="rect" id="node48" href="vn200__serial_8c.html#ab4e1d57f1c673bb4b96a74cdb9b63480" title="vn200_read_buffer" alt="" coords="225,643,367,671"/><area shape="rect" id="node12" href="hott_8c.html#a64d986dbd4a6b7fa67a60cf0f237d31c" title="hott_periodic_event" alt="" coords="460,196,607,224"/><area shape="rect" id="node14" href="hott_8h.html#afd6976c45645e710a8036805a913fc4c" title="hott_event" alt="" coords="707,196,797,224"/><area shape="rect" id="node28" href="sbus_8c.html#ab9abde1e7eda9299d04ff75e87910114" title="sbus_decode_event" alt="" coords="459,379,608,407"/><area shape="rect" id="node32" href="sbus__dual_8c.html#a7200c46b9e757d8be2409902d3c292cb" title="sbus_dual_decode_event" alt="" coords="443,434,624,462"/><area shape="rect" id="node30" href="sbus_8c.html#a760dbd4fa3f62cc43524fc420c2a9e5f" title="RC event function with handler callback. " alt="" coords="683,364,821,408"/><area shape="rect" id="node34" href="sbus__dual_8c.html#a760dbd4fa3f62cc43524fc420c2a9e5f" title="RC event function with handler callback. " alt="" coords="683,431,821,475"/><area shape="rect" id="node38" href="usb__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="507,488,560,516"/><area shape="rect" id="node42" href="high__speed__logger__direct__memory_8h.html#a12bdb7bbc1db80d13434e986b45f0128" title="Function initialisating the module. " alt="" coords="441,539,625,583"/><area shape="rect" id="node46" href="ins__vectornav_8h.html#abcd265b9bfefa88327260439223dba81" title="Event handling for Vectornav. " alt="" coords="676,624,828,652"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="adb9a60ec94a31a08e6454ccf64f24039"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> uart_getch </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *&#160;</td>
+          <td class="paramname"><em>p</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00287">287</a> of file <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
+
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00324">gps_piksi_read()</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l01140">high_speed_logger_direct_memory_periodic()</a>, <a class="el" href="hott_8c_source.html#l00197">hott_check_serial_data()</a>, <a class="el" href="hott_8c_source.html#l00169">hott_send_telemetry_data()</a>, <a class="el" href="imu__um6_8h_source.html#l00102">imu_um6_event()</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00096">ReadGX3Buffer()</a>, <a class="el" href="sbus__common_8c_source.html#l00115">sbus_common_decode_event()</a>, <a class="el" href="usb__tunnel_8c_source.html#l00052">tunnel_event()</a>, <a class="el" href="uart_8c_source.html#l00193">uart_periph_init()</a>, and <a class="el" href="vn200__serial_8c_source.html#l00069">vn200_read_buffer()</a>.</p>
+
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="linux_2mcu__periph_2uart__arch_8c_adb9a60ec94a31a08e6454ccf64f24039_icgraph.png" border="0" usemap="#linux_2mcu__periph_2uart__arch_8c_adb9a60ec94a31a08e6454ccf64f24039_icgraph" alt=""/></div>
+<map name="linux_2mcu__periph_2uart__arch_8c_adb9a60ec94a31a08e6454ccf64f24039_icgraph" id="linux_2mcu__periph_2uart__arch_8c_adb9a60ec94a31a08e6454ccf64f24039_icgraph">
+<area shape="rect" id="node3" href="gps__piksi_8c.html#a75f6c31f12465cc8684300711474574e" title="gps_piksi_read" alt="" coords="183,5,297,33"/><area shape="rect" id="node7" href="high__speed__logger__direct__memory_8h.html#a9464826fae91544e9fc803865f5e3107" title="Main function of the module. " alt="" coords="148,55,332,99"/><area shape="rect" id="node9" href="hott_8c.html#ad9ba717e808b0a9d9eabf747ba7abddb" title="hott_check_serial_data" alt="" coords="156,122,324,150"/><area shape="rect" id="node15" href="hott_8c.html#a2dab589532cc67049d57fa67684616c8" title="hott_send_telemetry_data" alt="" coords="145,173,335,201"/><area shape="rect" id="node18" href="imu__um6_8h.html#a93e31e95183b0cd08de6d5447f1a1c09" title="imu_um6_event" alt="" coords="177,223,303,251"/><area shape="rect" id="node20" href="ahrs__gx3_8h.html#a7d7b981270fa60a248894025e1791de6" title="ReadGX3Buffer" alt="" coords="181,274,299,302"/><area shape="rect" id="node24" href="sbus__common_8h.html#ae8a17057cacb6e3b645d16793db3e21f" title="Decoding event function. " alt="" coords="155,325,325,369"/><area shape="rect" id="node34" href="usb__tunnel_8c.html#a716cf006b01443e43d0c22bace6803c6" title="tunnel_event" alt="" coords="188,391,292,419"/><area shape="rect" id="node38" href="uart_8h.html#a43baf084a9bcc968ef00790e25becbb7" title="uart_periph_init" alt="" coords="180,446,300,474"/><area shape="rect" id="node42" href="vn200__serial_8c.html#ab4e1d57f1c673bb4b96a74cdb9b63480" title="vn200_read_buffer" alt="" coords="169,502,311,530"/><area shape="rect" id="node5" href="gps__piksi_8h.html#a2a11e7df7bcc31ab10141f020bd6f729" title="gps_piksi_event" alt="" coords="416,5,539,33"/><area shape="rect" id="node11" href="hott_8c.html#a64d986dbd4a6b7fa67a60cf0f237d31c" title="hott_periodic_event" alt="" coords="404,147,551,175"/><area shape="rect" id="node13" href="hott_8h.html#afd6976c45645e710a8036805a913fc4c" title="hott_event" alt="" coords="651,147,741,175"/><area shape="rect" id="node22" href="ahrs__gx3_8h.html#a1caa6f284af9f14d111ea11166236bf4" title="ImuEvent" alt="" coords="436,237,519,265"/><area shape="rect" id="node26" href="sbus_8c.html#ab9abde1e7eda9299d04ff75e87910114" title="sbus_decode_event" alt="" coords="403,287,552,315"/><area shape="rect" id="node30" href="sbus__dual_8c.html#a7200c46b9e757d8be2409902d3c292cb" title="sbus_dual_decode_event" alt="" coords="387,338,568,366"/><area shape="rect" id="node28" href="sbus_8c.html#a760dbd4fa3f62cc43524fc420c2a9e5f" title="RC event function with handler callback. " alt="" coords="627,271,765,315"/><area shape="rect" id="node32" href="sbus__dual_8c.html#a760dbd4fa3f62cc43524fc420c2a9e5f" title="RC event function with handler callback. " alt="" coords="627,338,765,382"/><area shape="rect" id="node36" href="usb__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="451,389,504,417"/><area shape="rect" id="node40" href="high__speed__logger__direct__memory_8h.html#a12bdb7bbc1db80d13434e986b45f0128" title="Function initialisating the module. " alt="" coords="385,439,569,483"/><area shape="rect" id="node44" href="vn200__serial_8h.html#a3d81e2dac2ecada08b2be854a776b118" title="vn200_event" alt="" coords="425,506,529,534"/><area shape="rect" id="node46" href="ins__vectornav_8h.html#abcd265b9bfefa88327260439223dba81" title="Event handling for Vectornav. " alt="" coords="620,506,772,534"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -253,7 +325,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void uart_periph_set_baudrate </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structuart__periph.html">uart_periph</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *&#160;</td>
           <td class="paramname"><em>periph</em>, </td>
         </tr>
         <tr>
@@ -270,31 +342,31 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00061">61</a> of file <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00216">216</a> of file <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00057">sbus_common_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00225">gps_ubx_ucenter_autobaud()</a>, <a class="el" href="gps__ubx__ucenter_8c_source.html#l00432">gps_ubx_ucenter_configure()</a>, <a class="el" href="sbus__common_8c_source.html#l00057">sbus_common_init()</a>, and <a class="el" href="xbee_8c_source.html#l00165">xbee_init()</a>.</p>
 
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="linux_2mcu__periph_2uart__arch_8c_af1a8e69ac854e1358f0df7e6d8724512_icgraph.png" border="0" usemap="#linux_2mcu__periph_2uart__arch_8c_af1a8e69ac854e1358f0df7e6d8724512_icgraph" alt=""/></div>
 <map name="linux_2mcu__periph_2uart__arch_8c_af1a8e69ac854e1358f0df7e6d8724512_icgraph" id="linux_2mcu__periph_2uart__arch_8c_af1a8e69ac854e1358f0df7e6d8724512_icgraph">
-<area shape="rect" id="node3" href="sbus__common_8h.html#a570ae07fc737620d66fcd4ef3bbf22fd" title="Init function. " alt="" coords="241,5,383,33"/><area shape="rect" id="node5" href="sbus_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832" title="radio_control_impl_init" alt="" coords="432,5,597,33"/></map>
+<area shape="rect" id="node3" href="gps__ubx__ucenter_8c.html#a3adbb7ebc13de8a91ecb98ae0abc7ab7" title="Automatically determine the baudrate of the u&#45;blox module. " alt="" coords="241,5,439,33"/><area shape="rect" id="node7" href="gps__ubx__ucenter_8c.html#aa9c94d7524259686da8ef21a2affd85c" title="gps_ubx_ucenter_configure" alt="" coords="241,55,439,83"/><area shape="rect" id="node10" href="sbus__common_8h.html#a570ae07fc737620d66fcd4ef3bbf22fd" title="Init function. " alt="" coords="269,106,411,134"/><area shape="rect" id="node14" href="xbee_8h.html#a964a1e8461e9c1187e5d69f521e5e107" title="Initialisation in API mode and setting of the local address FIXME: busy wait. " alt="" coords="301,157,379,185"/><area shape="rect" id="node5" href="gps__ubx__ucenter_8h.html#a483da5be54cf6eca071cd6c1ee0e3675" title="gps_ubx_ucenter_periodic" alt="" coords="489,30,676,58"/><area shape="rect" id="node12" href="sbus_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832" title="radio_control_impl_init" alt="" coords="500,106,665,134"/><area shape="rect" id="node16" href="downlink_8h.html#afd49e1738cc6ad57218b944dcb94f73b" title="downlink_init" alt="" coords="532,157,633,185"/><area shape="rect" id="node18" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="725,131,805,159"/><area shape="rect" id="node22" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="733,182,797,210"/><area shape="rect" id="node20" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="863,131,916,159"/><area shape="rect" id="node24" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="855,182,924,210"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a152abf2943c9140c3830b5a0f792aaf5"></a>
+<a class="anchor" id="ac52690ed0854ab6c1b5ef3ba0ccc8040"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void uart_transmit </td>
+          <td class="memname">void uart_put_byte </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structuart__periph.html">uart_periph</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *&#160;</td>
           <td class="paramname"><em>periph</em>, </td>
         </tr>
         <tr>
@@ -311,20 +383,136 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00084">84</a> of file <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00243">243</a> of file <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__gx3_8c_source.html#l00070">ahrs_align()</a>, <a class="el" href="hott_8c_source.html#l00169">hott_send_telemetry_data()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00099">imu_impl_init()</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00738">send_buffer_to_uart()</a>, <a class="el" href="usb__tunnel_8c_source.html#l00052">tunnel_event()</a>, and <a class="el" href="uart_8c_source.html#l00192">uart_periph_init()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__gx3_8c_source.html#l00075">ahrs_gx3_align()</a>, <a class="el" href="direct__memory__logger_8c_source.html#l00099">direct_memory_logger_periodic()</a>, <a class="el" href="uart__drop_8c_source.html#l00032">drop_ball()</a>, <a class="el" href="gps__piksi_8c_source.html#l00340">gps_piksi_write()</a>, <a class="el" href="hott_8c_source.html#l00169">hott_send_telemetry_data()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00106">imu_impl_init()</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00738">send_buffer_to_uart()</a>, <a class="el" href="usb__tunnel_8c_source.html#l00052">tunnel_event()</a>, <a class="el" href="uart_8c_source.html#l00193">uart_periph_init()</a>, and <a class="el" href="imu__um6_8c_source.html#l00077">UM6_send_packet()</a>.</p>
 
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="linux_2mcu__periph_2uart__arch_8c_a152abf2943c9140c3830b5a0f792aaf5_icgraph.png" border="0" usemap="#linux_2mcu__periph_2uart__arch_8c_a152abf2943c9140c3830b5a0f792aaf5_icgraph" alt=""/></div>
-<map name="linux_2mcu__periph_2uart__arch_8c_a152abf2943c9140c3830b5a0f792aaf5_icgraph" id="linux_2mcu__periph_2uart__arch_8c_a152abf2943c9140c3830b5a0f792aaf5_icgraph">
-<area shape="rect" id="node3" href="ahrs__gx3_8c.html#a81e17b09f47068c02c345da1523f589b" title="Aligns the AHRS. " alt="" coords="216,5,301,33"/><area shape="rect" id="node5" href="hott_8c.html#a2dab589532cc67049d57fa67684616c8" title="hott_send_telemetry_data" alt="" coords="164,55,353,83"/><area shape="rect" id="node11" href="ahrs__gx3_8c.html#ad32faae58e391642ec8048cb11011998" title="must be defined by underlying hardware " alt="" coords="205,106,312,134"/><area shape="rect" id="node13" href="high__speed__logger__direct__memory_8h.html#a9bddde970a97af490613f8c8c3afbd02" title="Function sending the read values from the memory to te UART. " alt="" coords="184,157,333,185"/><area shape="rect" id="node25" href="usb__tunnel_8c.html#a716cf006b01443e43d0c22bace6803c6" title="tunnel_event" alt="" coords="207,233,311,261"/><area shape="rect" id="node29" href="uart_8h.html#a43baf084a9bcc968ef00790e25becbb7" title="uart_periph_init" alt="" coords="199,287,319,315"/><area shape="rect" id="node7" href="hott_8c.html#a64d986dbd4a6b7fa67a60cf0f237d31c" title="hott_periodic_event" alt="" coords="423,42,569,70"/><area shape="rect" id="node9" href="hott_8h.html#afd6976c45645e710a8036805a913fc4c" title="hott_event" alt="" coords="672,42,763,70"/><area shape="rect" id="node15" href="high__speed__logger__direct__memory_8c.html#a03c89d538e0d2f5fd4ffd2dcc2dbcdf4" title="Callback function decrypting the read values from the memory. " alt="" coords="405,93,587,121"/><area shape="rect" id="node22" href="high__speed__logger__direct__memory_8h.html#a9464826fae91544e9fc803865f5e3107" title="Main function of the module. " alt="" coords="1073,161,1257,205"/><area shape="rect" id="node17" href="high__speed__logger__direct__memory_8h.html#a1fb39680405c75bd37906ab8291785a3" title="Function sending a request to read some values in memory. " alt="" coords="637,93,797,121"/><area shape="rect" id="node19" href="high__speed__logger__direct__memory_8h.html#a07a82e5e15d83faae43c17f52a999754" title="Function continuing the reading of the current log in memory. " alt="" coords="845,143,1024,171"/><area shape="rect" id="node27" href="usb__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="469,245,523,273"/><area shape="rect" id="node31" href="high__speed__logger__direct__memory_8h.html#a12bdb7bbc1db80d13434e986b45f0128" title="Function initialisating the module. " alt="" coords="404,295,588,339"/></map>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="linux_2mcu__periph_2uart__arch_8c_ac52690ed0854ab6c1b5ef3ba0ccc8040_icgraph.png" border="0" usemap="#linux_2mcu__periph_2uart__arch_8c_ac52690ed0854ab6c1b5ef3ba0ccc8040_icgraph" alt=""/></div>
+<map name="linux_2mcu__periph_2uart__arch_8c_ac52690ed0854ab6c1b5ef3ba0ccc8040_icgraph" id="linux_2mcu__periph_2uart__arch_8c_ac52690ed0854ab6c1b5ef3ba0ccc8040_icgraph">
+<area shape="rect" id="node3" href="ahrs__gx3_8h.html#a0d9f6d29a049f23bc6b8a02d056a30ed" title="ahrs_gx3_align" alt="" coords="203,5,320,33"/><area shape="rect" id="node5" href="ahrs__gx3_8c.html#ad32faae58e391642ec8048cb11011998" title="must be defined by underlying hardware " alt="" coords="445,30,552,58"/><area shape="rect" id="node7" href="direct__memory__logger_8h.html#a0e2f1c2c6383161a1a5a6dd8d3f7c74f" title="direct_memory_logger\l_periodic" alt="" coords="179,106,344,150"/><area shape="rect" id="node9" href="uart__drop_8h.html#a401eedc08b81ee7fb028235a4042fb43" title="drop_ball" alt="" coords="221,173,301,201"/><area shape="rect" id="node11" href="gps__piksi_8c.html#a1085ff467a2b3d7ceaac86f713d75520" title="gps_piksi_write" alt="" coords="203,223,320,251"/><area shape="rect" id="node19" href="hott_8c.html#a2dab589532cc67049d57fa67684616c8" title="hott_send_telemetry_data" alt="" coords="167,274,356,302"/><area shape="rect" id="node26" href="high__speed__logger__direct__memory_8h.html#a9bddde970a97af490613f8c8c3afbd02" title="Function sending the read values from the memory to te UART. " alt="" coords="187,325,336,353"/><area shape="rect" id="node38" href="usb__tunnel_8c.html#a716cf006b01443e43d0c22bace6803c6" title="tunnel_event" alt="" coords="209,401,313,429"/><area shape="rect" id="node42" href="uart_8h.html#a43baf084a9bcc968ef00790e25becbb7" title="uart_periph_init" alt="" coords="201,469,321,497"/><area shape="rect" id="node46" href="imu__um6_8c.html#abd766713dd3a7b205c16c8e2bfc539eb" title="UM6_send_packet" alt="" coords="192,543,331,571"/><area shape="rect" id="node13" href="gps__piksi_8c.html#ac51e6a5f7940a0acc9dc44b1b8085331" title="GPS initialization. " alt="" coords="447,173,551,201"/><area shape="rect" id="node15" href="gps_8h.html#a92de5b7fc6f0e0c9c2a3f6aa1b175c6f" title="GPS packet injection (default empty) " alt="" coords="437,122,560,150"/><area shape="rect" id="node17" href="rotorcraft_2datalink_8c.html#a87ff8c0ffff657dbde8566f062779428" title="Should be called when chars are available in dl_buffer. " alt="" coords="665,122,775,150"/><area shape="rect" id="node21" href="hott_8c.html#a64d986dbd4a6b7fa67a60cf0f237d31c" title="hott_periodic_event" alt="" coords="425,223,572,251"/><area shape="rect" id="node23" href="hott_8h.html#afd6976c45645e710a8036805a913fc4c" title="hott_event" alt="" coords="675,223,765,251"/><area shape="rect" id="node28" href="high__speed__logger__direct__memory_8c.html#a03c89d538e0d2f5fd4ffd2dcc2dbcdf4" title="Callback function decrypting the read values from the memory. " alt="" coords="408,375,589,403"/><area shape="rect" id="node35" href="high__speed__logger__direct__memory_8h.html#a9464826fae91544e9fc803865f5e3107" title="Main function of the module. " alt="" coords="1076,291,1260,335"/><area shape="rect" id="node30" href="high__speed__logger__direct__memory_8h.html#a1fb39680405c75bd37906ab8291785a3" title="Function sending a request to read some values in memory. " alt="" coords="640,375,800,403"/><area shape="rect" id="node32" href="high__speed__logger__direct__memory_8h.html#a07a82e5e15d83faae43c17f52a999754" title="Function continuing the reading of the current log in memory. " alt="" coords="848,325,1027,353"/><area shape="rect" id="node40" href="usb__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="472,426,525,454"/><area shape="rect" id="node44" href="high__speed__logger__direct__memory_8h.html#a12bdb7bbc1db80d13434e986b45f0128" title="Function initialisating the module. " alt="" coords="407,477,591,521"/><area shape="rect" id="node48" href="imu__um6_8c.html#a9afb7dbd1cfa371326da8b7406b7ad82" title="UM6_imu_align" alt="" coords="440,594,557,622"/><area shape="rect" id="node50" href="imu__um6_8c.html#ad32faae58e391642ec8048cb11011998" title="must be defined by underlying hardware " alt="" coords="667,569,773,597"/></map>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="a5c919b4154628e257db4a28bbe0c5847"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void uart_receive_handler </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *&#160;</td>
+          <td class="paramname"><em>periph</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00261">261</a> of file <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
+
+<p>References <a class="el" href="serial_8c_source.html#l00026">fd</a>, <a class="el" href="serial__port_8h_source.html#l00029">SerialPort::fd</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00051">TRACE</a>, and <a class="el" href="linux_2mcu__periph_2uart__arch_8h_source.html#l00031">UART_RX_BUFFER_SIZE</a>.</p>
+
+<p>Referenced by <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00065">uart_thread()</a>.</p>
+
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="linux_2mcu__periph_2uart__arch_8c_a5c919b4154628e257db4a28bbe0c5847_icgraph.png" border="0" usemap="#linux_2mcu__periph_2uart__arch_8c_a5c919b4154628e257db4a28bbe0c5847_icgraph" alt=""/></div>
+<map name="linux_2mcu__periph_2uart__arch_8c_a5c919b4154628e257db4a28bbe0c5847_icgraph" id="linux_2mcu__periph_2uart__arch_8c_a5c919b4154628e257db4a28bbe0c5847_icgraph">
+<area shape="rect" id="node3" href="linux_2mcu__periph_2uart__arch_8c.html#a6b084c97b4239a33b72ed3c2f5b26da5" title="uart_thread" alt="" coords="212,55,308,83"/><area shape="rect" id="node5" href="uart_8h.html#a7e440684a8b6a4088b2f1d5b4dc47587" title="uart_arch_init" alt="" coords="357,55,467,83"/><area shape="rect" id="node7" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="516,55,591,83"/><area shape="rect" id="node9" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="653,5,707,33"/><area shape="rect" id="node11" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="640,55,720,83"/><area shape="rect" id="node15" href="main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="645,106,715,134"/><area shape="rect" id="node13" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="777,55,831,83"/><area shape="rect" id="node17" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="769,106,839,134"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6b084c97b4239a33b72ed3c2f5b26da5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void * uart_thread </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00065">65</a> of file <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
+
+<p>References <a class="el" href="serial_8c_source.html#l00026">fd</a>, <a class="el" href="rt__priority_8h_source.html#l00032">get_rt_prio()</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00261">uart_receive_handler()</a>, and <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00044">UART_THREAD_PRIO</a>.</p>
+
+<p>Referenced by <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00054">uart_arch_init()</a>.</p>
+
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="linux_2mcu__periph_2uart__arch_8c_a6b084c97b4239a33b72ed3c2f5b26da5_cgraph.png" border="0" usemap="#linux_2mcu__periph_2uart__arch_8c_a6b084c97b4239a33b72ed3c2f5b26da5_cgraph" alt=""/></div>
+<map name="linux_2mcu__periph_2uart__arch_8c_a6b084c97b4239a33b72ed3c2f5b26da5_cgraph" id="linux_2mcu__periph_2uart__arch_8c_a6b084c97b4239a33b72ed3c2f5b26da5_cgraph">
+<area shape="rect" id="node3" href="rt__priority_8h.html#a714c7483d11b82772f9184258793e5a1" title="get_rt_prio" alt="" coords="185,5,276,33"/><area shape="rect" id="node5" href="linux_2mcu__periph_2uart__arch_8c.html#a5c919b4154628e257db4a28bbe0c5847" title="uart_receive_handler" alt="" coords="153,55,308,83"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="linux_2mcu__periph_2uart__arch_8c_a6b084c97b4239a33b72ed3c2f5b26da5_icgraph.png" border="0" usemap="#linux_2mcu__periph_2uart__arch_8c_a6b084c97b4239a33b72ed3c2f5b26da5_icgraph" alt=""/></div>
+<map name="linux_2mcu__periph_2uart__arch_8c_a6b084c97b4239a33b72ed3c2f5b26da5_icgraph" id="linux_2mcu__periph_2uart__arch_8c_a6b084c97b4239a33b72ed3c2f5b26da5_icgraph">
+<area shape="rect" id="node3" href="uart_8h.html#a7e440684a8b6a4088b2f1d5b4dc47587" title="uart_arch_init" alt="" coords="152,55,261,83"/><area shape="rect" id="node5" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="311,55,385,83"/><area shape="rect" id="node7" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="448,5,501,33"/><area shape="rect" id="node9" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="435,55,515,83"/><area shape="rect" id="node13" href="main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="440,106,509,134"/><area shape="rect" id="node11" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="572,55,625,83"/><area shape="rect" id="node15" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="564,106,633,134"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="ad95c5a3d78475744ae1e8792b8d73e43"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pthread_mutex_t uart_mutex = PTHREAD_MUTEX_INITIALIZER</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00049">49</a> of file <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
 
 </div>
 </div>
@@ -334,7 +522,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_92fbf38b8c893a0928a3445a75d0ac01.html">linux</a></li><li class="navelem"><a class="el" href="dir_7cedabfb4d36d0fdf06823c7fd9084fc.html">mcu_periph</a></li><li class="navelem"><a class="el" href="linux_2mcu__periph_2uart__arch_8c.html">uart_arch.c</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:04:49 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:09 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

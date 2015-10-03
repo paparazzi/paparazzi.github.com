@@ -7,9 +7,6 @@ var imu__aspirin2_8c =
     [ "aspirin2_subsystem_event", "imu__aspirin2_8c.html#adf18f3696c2481d509396f40839bcf6b", null ],
     [ "imu_impl_init", "imu__aspirin2_8c.html#ad32faae58e391642ec8048cb11011998", null ],
     [ "imu_periodic", "imu__aspirin2_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b", null ],
-    [ "acc_valid", "imu__aspirin2_8c.html#a8ed404ef3ddf50958703e92a017973ef", null ],
     [ "aspirin2_mpu60x0", "imu__aspirin2_8c.html#a7d6a84769a45f4df472eedbe69512b69", null ],
-    [ "gyr_valid", "imu__aspirin2_8c.html#afbbfe5fb78cd2de203ea88848ed1524d", null ],
-    [ "imu", "imu__aspirin2_8c.html#a77b76ed533bc56f50d714f8958dd26cc", null ],
-    [ "mag_valid", "imu__aspirin2_8c.html#a8271a0a8d22406f5117416a7fe284a7b", null ]
+    [ "imu", "imu__aspirin2_8c.html#a77b76ed533bc56f50d714f8958dd26cc", null ]
 ];

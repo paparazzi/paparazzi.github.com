@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('imu__mpu6000__hmc5883_8h_source.html',
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -142,44 +142,25 @@ $(document).ready(function(){initNavTree('imu__mpu6000__hmc5883_8h_source.html',
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="hmc58xx_8h.html">peripherals/hmc58xx.h</a>&quot;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="structImuMpu6000Hmc5883.html">   40</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structImuMpu6000Hmc5883.html">ImuMpu6000Hmc5883</a> {</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="structImuMpu6000Hmc5883.html#a4c8291113a84b2a98ffbf98d710c8eff">   41</a></span>&#160;  <span class="keyword">volatile</span> bool_t <a class="code" href="structImuMpu6000Hmc5883.html#a4c8291113a84b2a98ffbf98d710c8eff">gyro_valid</a>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="structImuMpu6000Hmc5883.html#abe58aae42d627cc19644b32e0a339b24">   42</a></span>&#160;  <span class="keyword">volatile</span> bool_t <a class="code" href="structImuMpu6000Hmc5883.html#abe58aae42d627cc19644b32e0a339b24">accel_valid</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="structImuMpu6000Hmc5883.html#a862c1b3671e68fa23625be385991e66d">   43</a></span>&#160;  <span class="keyword">volatile</span> bool_t <a class="code" href="structImuMpu6000Hmc5883.html#a862c1b3671e68fa23625be385991e66d">mag_valid</a>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="structImuMpu6000Hmc5883.html#a478e1aee874d3ededf2781c9cbf14ab5">   44</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structMpu60x0__Spi.html">Mpu60x0_Spi</a> <a class="code" href="structImuMpu6000Hmc5883.html#a478e1aee874d3ededf2781c9cbf14ab5">mpu</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="structImuMpu6000Hmc5883.html#a26ef5044ab94e204555c20b9b32f750f">   45</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structHmc58xx.html">Hmc58xx</a> <a class="code" href="structImuMpu6000Hmc5883.html#a26ef5044ab94e204555c20b9b32f750f">hmc</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="structImuMpu6000Hmc5883.html">ImuMpu6000Hmc5883</a> <a class="code" href="imu__mpu6000__hmc5883_8c.html#aaaed0fbf95b6e8df852802a84fd4c7d9">imu_mpu_hmc</a>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__mpu6000__hmc5883_8c.html#ae9d618a59cee7e4c02666223bc3bf07e">imu_mpu_hmc_event</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="imu__mpu6000__hmc5883_8h.html#a9d95db588addd0a03f6e7e749fbb032a">   53</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="imu__mpu6000__hmc5883_8h.html#a9d95db588addd0a03f6e7e749fbb032a">ImuEvent</a>(<span class="keywordtype">void</span> (* _gyro_handler)(<span class="keywordtype">void</span>), <span class="keywordtype">void</span> (* _accel_handler)(<span class="keywordtype">void</span>), <span class="keywordtype">void</span> (* _mag_handler)(<span class="keywordtype">void</span>))</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="imu__mpu6000__hmc5883_8c.html#ae9d618a59cee7e4c02666223bc3bf07e">imu_mpu_hmc_event</a>();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="imu__mpu6000__hmc5883_8c.html#aaaed0fbf95b6e8df852802a84fd4c7d9">imu_mpu_hmc</a>.<a class="code" href="structImuMpu6000Hmc5883.html#a4c8291113a84b2a98ffbf98d710c8eff">gyro_valid</a>) {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="imu__mpu6000__hmc5883_8c.html#aaaed0fbf95b6e8df852802a84fd4c7d9">imu_mpu_hmc</a>.<a class="code" href="structImuMpu6000Hmc5883.html#a4c8291113a84b2a98ffbf98d710c8eff">gyro_valid</a> = <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    _gyro_handler();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="imu__mpu6000__hmc5883_8c.html#aaaed0fbf95b6e8df852802a84fd4c7d9">imu_mpu_hmc</a>.<a class="code" href="structImuMpu6000Hmc5883.html#abe58aae42d627cc19644b32e0a339b24">accel_valid</a>) {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="imu__mpu6000__hmc5883_8c.html#aaaed0fbf95b6e8df852802a84fd4c7d9">imu_mpu_hmc</a>.<a class="code" href="structImuMpu6000Hmc5883.html#abe58aae42d627cc19644b32e0a339b24">accel_valid</a> = <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    _accel_handler();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="imu__mpu6000__hmc5883_8c.html#aaaed0fbf95b6e8df852802a84fd4c7d9">imu_mpu_hmc</a>.<a class="code" href="structImuMpu6000Hmc5883.html#a862c1b3671e68fa23625be385991e66d">mag_valid</a>) {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="imu__mpu6000__hmc5883_8c.html#aaaed0fbf95b6e8df852802a84fd4c7d9">imu_mpu_hmc</a>.<a class="code" href="structImuMpu6000Hmc5883.html#a862c1b3671e68fa23625be385991e66d">mag_valid</a> = <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    _mag_handler();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* IMU_MPU6000_HMC5883_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="imu__mpu6000__hmc5883_8h.html">   40</a></span>&#160;<span class="keyword">struct </span><a class="code" href="imu__mpu6000__hmc5883_8h.html#structImuMpu6000Hmc5883">ImuMpu6000Hmc5883</a> {</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="imu__mpu6000__hmc5883_8h.html#a478e1aee874d3ededf2781c9cbf14ab5">   41</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="mpu60x0__spi_8h.html#structMpu60x0__Spi">Mpu60x0_Spi</a> <a class="code" href="imu__mpu6000__hmc5883_8h.html#a478e1aee874d3ededf2781c9cbf14ab5">mpu</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="imu__mpu6000__hmc5883_8h.html#a26ef5044ab94e204555c20b9b32f750f">   42</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="hmc58xx_8h.html#structHmc58xx">Hmc58xx</a> <a class="code" href="imu__mpu6000__hmc5883_8h.html#a26ef5044ab94e204555c20b9b32f750f">hmc</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="imu__mpu6000__hmc5883_8h.html#structImuMpu6000Hmc5883">ImuMpu6000Hmc5883</a> <a class="code" href="imu__mpu6000__hmc5883_8c.html#aaaed0fbf95b6e8df852802a84fd4c7d9">imu_mpu_hmc</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__mpu6000__hmc5883_8c.html#ae9d618a59cee7e4c02666223bc3bf07e">imu_mpu_hmc_event</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="imu__mpu6000__hmc5883_8h.html#a38f1122c1ee0701562b490c6e1b60609">   49</a></span>&#160;<span class="preprocessor">#define ImuEvent imu_mpu_hmc_event</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* IMU_MPU6000_HMC5883_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8b2fa0708e2db44c1b91938af97bac44.html">imu</a></li><li class="navelem"><a class="el" href="imu__mpu6000__hmc5883_8h.html">imu_mpu6000_hmc5883.h</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:04:47 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:07 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

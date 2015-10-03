@@ -1,7 +1,16 @@
 var i2c__smbus_8h =
 [
-    [ "i2c_msg", "structi2c__msg.html", "structi2c__msg" ],
-    [ "i2c_smbus_data", "unioni2c__smbus__data.html", "unioni2c__smbus__data" ],
+    [ "i2c_msg", "i2c__smbus_8h.html#structi2c__msg", [
+      [ "addr", "i2c__smbus_8h.html#a9be257e05859e69552791192b68a8654", null ],
+      [ "buf", "i2c__smbus_8h.html#a18a0ec0f4f45577ea2b751b984b00762", null ],
+      [ "flags", "i2c__smbus_8h.html#a4b3bc1a36147fedfbdf9a15cc6ae88d9", null ],
+      [ "len", "i2c__smbus_8h.html#a10d1943df9a527109bf60733baf7b0a4", null ]
+    ] ],
+    [ "i2c_smbus_data", "i2c__smbus_8h.html#unioni2c__smbus__data", [
+      [ "block", "i2c__smbus_8h.html#af0c92c143c24c0c49902f705a1ebe65c", null ],
+      [ "byte", "i2c__smbus_8h.html#aa0e2604ac3df1abcfe68c95c8d1d8f5b", null ],
+      [ "word", "i2c__smbus_8h.html#adcbf2a0d0c112b6a77b35b3125f15e77", null ]
+    ] ],
     [ "I2C_FUNC_10BIT_ADDR", "i2c__smbus_8h.html#a41ba50f5508feed338fe3181540e1894", null ],
     [ "I2C_FUNC_I2C", "i2c__smbus_8h.html#a57a8a5a73f12268825d31bec6184b915", null ],
     [ "I2C_FUNC_PROTOCOL_MANGLING", "i2c__smbus_8h.html#af023c6b90cc950f3673e98462ff52a59", null ],

@@ -1,12 +1,16 @@
 <map id="imu_periodic" name="imu_periodic">
-<area shape="rect" id="node3" href="$hmc58xx_8c.html#a89a7b5456b1a87c83aef85779c4fc5e9" title="hmc58xx_start_configure" alt="" coords="172,55,353,83"/>
-<area shape="rect" id="node13" href="$mpu60x0__i2c_8c.html#a1b62653862375e462d147451eb41df6e" title="mpu60x0_i2c_start_configure" alt="" coords="157,110,368,138"/>
-<area shape="rect" id="node5" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="441,5,583,33"/>
-<area shape="rect" id="node7" href="$hmc58xx_8c.html#a2eff0c407b139d17a73bf75a611c32cb" title="Configuration function called once before normal use. " alt="" coords="431,55,593,83"/>
-<area shape="rect" id="node9" href="$hmc58xx_8c.html#afadf91048494baf761fa6cf8fda062d9" title="hmc58xx_i2c_tx_reg" alt="" coords="667,51,819,79"/>
-<area shape="rect" id="node11" href="$group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="877,110,968,138"/>
-<area shape="rect" id="node15" href="$mpu60x0_8c.html#a564470aa2f16b3f6665b99d9141f9ae7" title="Configuration sequence called once before normal use. " alt="" coords="429,110,595,138"/>
-<area shape="rect" id="node19" href="$mpu60x0__i2c_8c.html#a1f2cb2db1a703a3ef043e0412f84278b" title="mpu60x0_i2c_write_to_reg" alt="" coords="416,165,608,193"/>
-<area shape="rect" id="node17" href="$mpu60x0_8h.html#adad4e4b57f9dac456dc343b8ebdc2f6c" title="Configure I2C slaves of the MPU. " alt="" coords="656,102,829,146"/>
-<area shape="rect" id="node21" href="$group__i2c.html#ga68659e03504627925829f2f12c2ec6d2" title="Submit a write only transaction. " alt="" coords="692,169,793,197"/>
+<area shape="rect" id="node3" href="$linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="191,5,335,33"/>
+<area shape="rect" id="node7" href="$hmc58xx_8c.html#a89a7b5456b1a87c83aef85779c4fc5e9" title="hmc58xx_start_configure" alt="" coords="172,55,353,83"/>
+<area shape="rect" id="node17" href="$ahrs__gx3_8c.html#a34a2e1e2b450191b8ab1e849239810b2" title="imu_scale_accel" alt="" coords="200,106,325,134"/>
+<area shape="rect" id="node19" href="$ahrs__gx3_8c.html#a8d63b0a61c8ffe88dd15b40843b1ae1d" title="imu_scale_gyro" alt="" coords="203,157,323,185"/>
+<area shape="rect" id="node21" href="$mpu60x0__i2c_8c.html#a1b62653862375e462d147451eb41df6e" title="mpu60x0_i2c_start_configure" alt="" coords="157,207,368,235"/>
+<area shape="rect" id="node5" href="$sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="444,5,580,33"/>
+<area shape="rect" id="node9" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="441,55,583,83"/>
+<area shape="rect" id="node11" href="$hmc58xx_8c.html#a2eff0c407b139d17a73bf75a611c32cb" title="Configuration function called once before normal use. " alt="" coords="431,106,593,134"/>
+<area shape="rect" id="node13" href="$hmc58xx_8c.html#afadf91048494baf761fa6cf8fda062d9" title="hmc58xx_i2c_tx_reg" alt="" coords="667,106,819,134"/>
+<area shape="rect" id="node15" href="$group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="877,165,968,193"/>
+<area shape="rect" id="node23" href="$mpu60x0_8c.html#a564470aa2f16b3f6665b99d9141f9ae7" title="Configuration sequence called once before normal use. " alt="" coords="429,169,595,197"/>
+<area shape="rect" id="node27" href="$mpu60x0__i2c_8c.html#a1f2cb2db1a703a3ef043e0412f84278b" title="mpu60x0_i2c_write_to_reg" alt="" coords="416,222,608,250"/>
+<area shape="rect" id="node25" href="$mpu60x0_8h.html#adad4e4b57f9dac456dc343b8ebdc2f6c" title="Configure I2C slaves of the MPU. " alt="" coords="656,157,829,201"/>
+<area shape="rect" id="node29" href="$group__i2c.html#ga68659e03504627925829f2f12c2ec6d2" title="Submit a write only transaction. " alt="" coords="692,223,793,251"/>
 </map>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -98,6 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals_func_0x67.html#index_g"><span>g</span></a></li>
       <li><a href="globals_func_0x68.html#index_h"><span>h</span></a></li>
       <li><a href="globals_func_0x69.html#index_i"><span>i</span></a></li>
+      <li><a href="globals_func_0x6a.html#index_j"><span>j</span></a></li>
       <li><a href="globals_func_0x6b.html#index_k"><span>k</span></a></li>
       <li class="current"><a href="globals_func_0x6c.html#index_l"><span>l</span></a></li>
       <li><a href="globals_func_0x6d.html#index_m"><span>m</span></a></li>
@@ -134,7 +135,7 @@ $(document).ready(function(){initNavTree('globals_func_0x6c.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -261,9 +262,6 @@ $(document).ready(function(){initNavTree('globals_func_0x6c.html','');});
 <li>LED_SHOW_ACTIVE_BITS()
 : <a class="el" href="debug__led_8h.html#aee1107ad547f53d5d1a705d04d62458b">debug_led.h</a>
 </li>
-<li>levelshift()
-: <a class="el" href="jpeg_8c.html#ac2bff16cf493eb232635dda82bc1c990">jpeg.c</a>
-</li>
 <li>light_solar_init()
 : <a class="el" href="light__solar_8c.html#ac0e039b9f8ad2272b10b4129733d1114">light_solar.c</a>
 , <a class="el" href="light__solar_8h.html#ac0e039b9f8ad2272b10b4129733d1114">light_solar.h</a>
@@ -288,11 +286,11 @@ $(document).ready(function(){initNavTree('globals_func_0x6c.html','');});
 , <a class="el" href="link__mcu__usart_8h.html#ac8ca91741aea5e6803a8db35d4c8188e">link_mcu_usart.h</a>
 </li>
 <li>link_mcu_init()
-: <a class="el" href="link__mcu__can_8h.html#a4811adaa420099181f04d75d5ba24c25">link_mcu_can.h</a>
-, <a class="el" href="link__mcu__spi_8h.html#a4811adaa420099181f04d75d5ba24c25">link_mcu_spi.h</a>
+: <a class="el" href="link__mcu__spi_8h.html#a4811adaa420099181f04d75d5ba24c25">link_mcu_spi.h</a>
 , <a class="el" href="link__mcu__usart_8c.html#a4811adaa420099181f04d75d5ba24c25">link_mcu_usart.c</a>
 , <a class="el" href="link__mcu__usart_8h.html#a4811adaa420099181f04d75d5ba24c25">link_mcu_usart.h</a>
 , <a class="el" href="link__mcu__can_8c.html#a4811adaa420099181f04d75d5ba24c25">link_mcu_can.c</a>
+, <a class="el" href="link__mcu__can_8h.html#a4811adaa420099181f04d75d5ba24c25">link_mcu_can.h</a>
 </li>
 <li>link_mcu_on_can_msg()
 : <a class="el" href="link__mcu__can_8c.html#a9b98f23c7b3a434d4a626acf53a48172">link_mcu_can.c</a>
@@ -313,15 +311,15 @@ $(document).ready(function(){initNavTree('globals_func_0x6c.html','');});
 , <a class="el" href="lis302dl__spi_8h.html#a2c38f1d2a84f448dd9f0c7cae80f0a70">lis302dl_spi.h</a>
 </li>
 <li>lis302dl_spi_init()
-: <a class="el" href="lis302dl__spi_8c.html#aa50f2084b9945c0c51d4c12be83e2b50">lis302dl_spi.c</a>
-, <a class="el" href="lis302dl__spi_8h.html#a498e7b861c3c70b1fbdd099d6e9c0452">lis302dl_spi.h</a>
+: <a class="el" href="lis302dl__spi_8h.html#a498e7b861c3c70b1fbdd099d6e9c0452">lis302dl_spi.h</a>
+, <a class="el" href="lis302dl__spi_8c.html#aa50f2084b9945c0c51d4c12be83e2b50">lis302dl_spi.c</a>
 </li>
 <li>lis302dl_spi_periodic()
 : <a class="el" href="lis302dl__spi_8h.html#af10186c998376374915e06131a4b18b5">lis302dl_spi.h</a>
 </li>
 <li>lis302dl_spi_read()
-: <a class="el" href="lis302dl__spi_8h.html#a77b7a80348f2cfa82cdee3fec764a2df">lis302dl_spi.h</a>
-, <a class="el" href="lis302dl__spi_8c.html#a77b7a80348f2cfa82cdee3fec764a2df">lis302dl_spi.c</a>
+: <a class="el" href="lis302dl__spi_8c.html#a77b7a80348f2cfa82cdee3fec764a2df">lis302dl_spi.c</a>
+, <a class="el" href="lis302dl__spi_8h.html#a77b7a80348f2cfa82cdee3fec764a2df">lis302dl_spi.h</a>
 </li>
 <li>lis302dl_spi_send_config()
 : <a class="el" href="lis302dl__spi_8c.html#aece7185572dd59d44e42796665e9bebc">lis302dl_spi.c</a>
@@ -338,36 +336,48 @@ $(document).ready(function(){initNavTree('globals_func_0x6c.html','');});
 , <a class="el" href="lisa__l_2baro__board_8h.html#a76dea5cf1783c2447b9545e9b99fd861">baro_board.h</a>
 </li>
 <li>lla_of_ecef_d()
-: <a class="el" href="pprz__geodetic__double_8h.html#a9d3464ccabcd97db9fb4e1c7d25dfe16">pprz_geodetic_double.h</a>
-, <a class="el" href="pprz__geodetic__double_8c.html#a03262ba97728d6e61bc645e69bd7c332">pprz_geodetic_double.c</a>
+: <a class="el" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16">pprz_geodetic_double.c</a>
+, <a class="el" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16">pprz_geodetic_double.h</a>
 </li>
 <li>lla_of_ecef_f()
 : <a class="el" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e">pprz_geodetic_float.c</a>
 , <a class="el" href="pprz__geodetic__float_8h.html#adecd186d51b41b09f0cad928c0d2f68e">pprz_geodetic_float.h</a>
 </li>
 <li>lla_of_ecef_i()
-: <a class="el" href="pprz__geodetic__int_8h.html#aea47a32071c2427f895fcb1df32c4e23">pprz_geodetic_int.h</a>
-, <a class="el" href="pprz__geodetic__int_8c.html#aea47a32071c2427f895fcb1df32c4e23">pprz_geodetic_int.c</a>
+: <a class="el" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23">pprz_geodetic_int.c</a>
+, <a class="el" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23">pprz_geodetic_int.h</a>
 </li>
 <li>lla_of_utm_d()
-: <a class="el" href="pprz__geodetic__double_8c.html#a0f160507506fc364a8b2c35327d252fa">pprz_geodetic_double.c</a>
-, <a class="el" href="pprz__geodetic__double_8h.html#acc8bd646ec5ac148424251d65d2dd033">pprz_geodetic_double.h</a>
+: <a class="el" href="group__math__geodetic__double.html#gacc8bd646ec5ac148424251d65d2dd033">pprz_geodetic_double.h</a>
+, <a class="el" href="group__math__geodetic__double.html#gacc8bd646ec5ac148424251d65d2dd033">pprz_geodetic_double.c</a>
 </li>
 <li>lla_of_utm_f()
-: <a class="el" href="pprz__geodetic__float_8h.html#a30c2e47ec9a898079c04e8b08496b455">pprz_geodetic_float.h</a>
-, <a class="el" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455">pprz_geodetic_float.c</a>
+: <a class="el" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455">pprz_geodetic_float.c</a>
+, <a class="el" href="pprz__geodetic__float_8h.html#a30c2e47ec9a898079c04e8b08496b455">pprz_geodetic_float.h</a>
 </li>
 <li>lm75_event()
 : <a class="el" href="temp__lm75_8c.html#a2f873f2dbc060a9f55de3e124a753bba">temp_lm75.c</a>
 , <a class="el" href="temp__lm75_8h.html#a2f873f2dbc060a9f55de3e124a753bba">temp_lm75.h</a>
 </li>
 <li>lm75_init()
-: <a class="el" href="temp__lm75_8h.html#a80b92e2bcbb69fd08e45e8f6ca51051a">temp_lm75.h</a>
-, <a class="el" href="temp__lm75_8c.html#a80b92e2bcbb69fd08e45e8f6ca51051a">temp_lm75.c</a>
+: <a class="el" href="temp__lm75_8c.html#a80b92e2bcbb69fd08e45e8f6ca51051a">temp_lm75.c</a>
+, <a class="el" href="temp__lm75_8h.html#a80b92e2bcbb69fd08e45e8f6ca51051a">temp_lm75.h</a>
 </li>
 <li>lm75_periodic()
 : <a class="el" href="temp__lm75_8h.html#adee2106e71d8f308b57f87cc3a2dbe84">temp_lm75.h</a>
 , <a class="el" href="temp__lm75_8c.html#adee2106e71d8f308b57f87cc3a2dbe84">temp_lm75.c</a>
+</li>
+<li>lms_estimation()
+: <a class="el" href="stabilization__attitude__quat__indi_8c.html#ad4a81c601235942469d940e7ac5f400e">stabilization_attitude_quat_indi.c</a>
+, <a class="el" href="stabilization__attitude__quat__indi_8h.html#ad4a81c601235942469d940e7ac5f400e">stabilization_attitude_quat_indi.h</a>
+</li>
+<li>logger_uart_init()
+: <a class="el" href="logger__uart_8c.html#a661560da8c6a6c5b8e64061843bc1250">logger_uart.c</a>
+, <a class="el" href="logger__uart_8h.html#a661560da8c6a6c5b8e64061843bc1250">logger_uart.h</a>
+</li>
+<li>logger_uart_periodic()
+: <a class="el" href="logger__uart_8c.html#ab6b5fd6329c4581731f6ff29fdac97e2">logger_uart.c</a>
+, <a class="el" href="logger__uart_8h.html#ab6b5fd6329c4581731f6ff29fdac97e2">logger_uart.h</a>
 </li>
 <li>low_pass_vdot()
 : <a class="el" href="energy__ctrl_8c.html#ad583c655b2e3c499eb34f7e93e4cb1b1">energy_ctrl.c</a>
@@ -376,15 +386,15 @@ $(document).ready(function(){initNavTree('globals_func_0x6c.html','');});
 : <a class="el" href="lsm303dlhc_8c.html#ae8ceff9bc03fc374ba40da1e878432a4">lsm303dlhc.c</a>
 </li>
 <li>lsm303dlhc_event()
-: <a class="el" href="lsm303dlhc_8c.html#a39197f68eef8e69e704960ffc6c2e68c">lsm303dlhc.c</a>
-, <a class="el" href="lsm303dlhc_8h.html#a39197f68eef8e69e704960ffc6c2e68c">lsm303dlhc.h</a>
+: <a class="el" href="lsm303dlhc_8h.html#a39197f68eef8e69e704960ffc6c2e68c">lsm303dlhc.h</a>
+, <a class="el" href="lsm303dlhc_8c.html#a39197f68eef8e69e704960ffc6c2e68c">lsm303dlhc.c</a>
 </li>
 <li>lsm303dlhc_i2c_tx_reg()
 : <a class="el" href="lsm303dlhc_8c.html#a111ef18370e5a6b276e765795ac4c3a2">lsm303dlhc.c</a>
 </li>
 <li>lsm303dlhc_init()
-: <a class="el" href="lsm303dlhc_8c.html#a43bda86b1066b83f04638f1c8918eaf0">lsm303dlhc.c</a>
-, <a class="el" href="lsm303dlhc_8h.html#a43bda86b1066b83f04638f1c8918eaf0">lsm303dlhc.h</a>
+: <a class="el" href="lsm303dlhc_8h.html#a43bda86b1066b83f04638f1c8918eaf0">lsm303dlhc.h</a>
+, <a class="el" href="lsm303dlhc_8c.html#a43bda86b1066b83f04638f1c8918eaf0">lsm303dlhc.c</a>
 </li>
 <li>lsm303dlhc_mag_set_default_config()
 : <a class="el" href="lsm303dlhc_8c.html#a8d231a0e60d1fd7c43f0618e82c369e4">lsm303dlhc.c</a>
@@ -404,28 +414,28 @@ $(document).ready(function(){initNavTree('globals_func_0x6c.html','');});
 , <a class="el" href="lsm303dlhc_8h.html#a8a925e85d441156e8201534827bdbf77">lsm303dlhc.h</a>
 </li>
 <li>ltp_def_from_ecef_d()
-: <a class="el" href="pprz__geodetic__double_8h.html#a3b487b485bc51b98307acae35009d1bb">pprz_geodetic_double.h</a>
-, <a class="el" href="pprz__geodetic__double_8c.html#a3b487b485bc51b98307acae35009d1bb">pprz_geodetic_double.c</a>
+: <a class="el" href="group__math__geodetic__double.html#ga3b487b485bc51b98307acae35009d1bb">pprz_geodetic_double.h</a>
+, <a class="el" href="group__math__geodetic__double.html#ga3b487b485bc51b98307acae35009d1bb">pprz_geodetic_double.c</a>
 </li>
 <li>ltp_def_from_ecef_f()
-: <a class="el" href="pprz__geodetic__float_8h.html#ae33e6c6696e73d42c2ae081e86fff00c">pprz_geodetic_float.h</a>
-, <a class="el" href="pprz__geodetic__float_8c.html#ae33e6c6696e73d42c2ae081e86fff00c">pprz_geodetic_float.c</a>
+: <a class="el" href="pprz__geodetic__float_8c.html#ae33e6c6696e73d42c2ae081e86fff00c">pprz_geodetic_float.c</a>
+, <a class="el" href="pprz__geodetic__float_8h.html#ae33e6c6696e73d42c2ae081e86fff00c">pprz_geodetic_float.h</a>
 </li>
 <li>ltp_def_from_ecef_i()
-: <a class="el" href="pprz__geodetic__int_8h.html#a5afd098a83e572b854e157486ccb569f">pprz_geodetic_int.h</a>
-, <a class="el" href="pprz__geodetic__int_8c.html#a5afd098a83e572b854e157486ccb569f">pprz_geodetic_int.c</a>
+: <a class="el" href="group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f">pprz_geodetic_int.c</a>
+, <a class="el" href="group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f">pprz_geodetic_int.h</a>
 </li>
 <li>ltp_def_from_lla_f()
 : <a class="el" href="pprz__geodetic__float_8c.html#a624697fcf875d02030d046161c4609b7">pprz_geodetic_float.c</a>
 , <a class="el" href="pprz__geodetic__float_8h.html#a624697fcf875d02030d046161c4609b7">pprz_geodetic_float.h</a>
 </li>
 <li>ltp_def_from_lla_i()
-: <a class="el" href="pprz__geodetic__int_8h.html#af0b761a4e44c92481ac96b623c34ef70">pprz_geodetic_int.h</a>
-, <a class="el" href="pprz__geodetic__int_8c.html#af0b761a4e44c92481ac96b623c34ef70">pprz_geodetic_int.c</a>
+: <a class="el" href="group__math__geodetic__int.html#gaf0b761a4e44c92481ac96b623c34ef70">pprz_geodetic_int.c</a>
+, <a class="el" href="group__math__geodetic__int.html#gaf0b761a4e44c92481ac96b623c34ef70">pprz_geodetic_int.h</a>
 </li>
 <li>ltp_of_ecef_rmat_from_lla_i()
-: <a class="el" href="pprz__geodetic__int_8c.html#a6b7ff6661d7385053cc297340d6a5cc9">pprz_geodetic_int.c</a>
-, <a class="el" href="pprz__geodetic__int_8h.html#a6b7ff6661d7385053cc297340d6a5cc9">pprz_geodetic_int.h</a>
+: <a class="el" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9">pprz_geodetic_int.h</a>
+, <a class="el" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9">pprz_geodetic_int.c</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -433,7 +443,7 @@ $(document).ready(function(){initNavTree('globals_func_0x6c.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:40 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:48 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

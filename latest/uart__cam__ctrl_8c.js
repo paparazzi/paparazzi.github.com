@@ -1,9 +1,9 @@
 var uart__cam__ctrl_8c =
 [
-    [ "__CameraLink", "uart__cam__ctrl_8c.html#a56e84ad7bf4c9284461fd5d03ea9bfb1", null ],
-    [ "_CameraLink", "uart__cam__ctrl_8c.html#a00cab3a0e1a1274a50413c479d35fde6", null ],
-    [ "CameraBuffer", "uart__cam__ctrl_8c.html#a52ae84b710f6e5b16f7493f598c7285f", null ],
-    [ "CameraLink", "uart__cam__ctrl_8c.html#a39f9fd083e1201b24e555ac5a164853a", null ],
+    [ "CameraLinkChAvailable", "uart__cam__ctrl_8c.html#aae7795e1e0bb98fc7db527ca3c5b10db", null ],
+    [ "CameraLinkDev", "uart__cam__ctrl_8c.html#add9e23666ee8e4147fe4659a425444f3", null ],
+    [ "CameraLinkGetch", "uart__cam__ctrl_8c.html#ae75663ea754199a5cbef7335ec93a87b", null ],
+    [ "CameraLinkTransmit", "uart__cam__ctrl_8c.html#a1f56cfc8d05c16a38620999658f1af05", null ],
     [ "ReadCameraBuffer", "uart__cam__ctrl_8c.html#aeedbd29e71705d24a07e513176c6735d", null ],
     [ "THUMB_COUNT", "uart__cam__ctrl_8c.html#af41b17f13c9d9075d58ca8dd946bee82", null ],
     [ "THUMB_MSG_SIZE", "uart__cam__ctrl_8c.html#a4c1c1854001ea830ddbf3ab253fe6756", null ],

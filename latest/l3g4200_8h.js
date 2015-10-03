@@ -1,7 +1,23 @@
 var l3g4200_8h =
 [
-    [ "L3g4200Config", "structL3g4200Config.html", "structL3g4200Config" ],
-    [ "L3g4200", "structL3g4200.html", "structL3g4200" ],
+    [ "L3g4200Config", "l3g4200_8h.html#structL3g4200Config", [
+      [ "ctrl_reg1", "l3g4200_8h.html#a5aee177e3ea1d8450f8a6b6c6e685be8", null ],
+      [ "ctrl_reg4", "l3g4200_8h.html#a29ff7a309d816aaf75f16b7171f49b15", null ],
+      [ "ctrl_reg5", "l3g4200_8h.html#a115cb61565fcb0bf3ab196297af37b59", null ]
+    ] ],
+    [ "L3g4200", "l3g4200_8h.html#structL3g4200", [
+      [ "config", "l3g4200_8h.html#a5e676045bac453aa30e0c2072bc252a9", null ],
+      [ "data", "l3g4200_8h.html#afc033c7def9c70cee233fa1d6a694d76", null ],
+      [ "data_available", "l3g4200_8h.html#a068259cc8e2a1decd7a2fdd598c09be5", null ],
+      [ "i2c_p", "l3g4200_8h.html#a39391231a96bd1b4a5417b419a4fbaf3", null ],
+      [ "i2c_trans", "l3g4200_8h.html#a51e7c4bd7c79806d7e498fa59ee2983c", null ],
+      [ "init_status", "l3g4200_8h.html#a7e995b22d36842f87bb9f027df8d09b4", null ],
+      [ "initialized", "l3g4200_8h.html#a5127a75a3fd6d0586a6558fe211ad6d0", null ]
+    ] ],
+    [ "L3g4200.data", "l3g4200_8h.html#unionL3g4200_8data", [
+      [ "rates", "l3g4200_8h.html#a6cd8b57ad8ec40b32215dcb1c8c76af2", null ],
+      [ "value", "l3g4200_8h.html#ab07053fcb6afcb4d09e8f337b615d383", null ]
+    ] ],
     [ "L3G4200_DEFAULT_CTRL_REG1", "l3g4200_8h.html#afd88e11802e033a953ddf464d775161d", null ],
     [ "L3G4200_DEFAULT_CTRL_REG4", "l3g4200_8h.html#a04a525a63675fe3546eee43532e1c885", null ],
     [ "L3G4200_DEFAULT_CTRL_REG5", "l3g4200_8h.html#a5eebd8cb5460bbe048632bdc3ce86878", null ],

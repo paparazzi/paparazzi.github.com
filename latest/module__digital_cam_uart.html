@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.4"/>
-<title>Paparazzi UAS: Digital Camera Triggering over UART link</title>
+<title>Paparazzi UAS: Digital Photo Camera Triggering (using a UART link)</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('module__digital_cam_uart.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -100,18 +100,30 @@ $(document).ready(function(){initNavTree('module__digital_cam_uart.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Digital Camera Triggering over UART link </div>  </div>
+<div class="title">Digital Photo Camera Triggering (using a UART link) </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Module XML file: <code>digital_cam_uart.xml</code> </p>
-<p>Send attitude and other relevant data to a computer based photocamera after a shootphoto command is given. And in return get certain value back from the computerbased photocamera to be able to intercat with the flightplan.</p>
-<h1><a class="anchor" id="configuration"></a>
+<p>This module controls triggering of an attached external digital camera via UART commands. It can trigger photos based on GPS distance, time or circle radius in both fixedwings and rotorcraft.</p>
+<p>This module fullfilss 4 functions: 1) send shoot commands over UART 2) Besides triggering the shooting of images, the module also sends attitude and other relevant data. Typically an external linux camera or linux computer will receive the attitude and position data and add it to the photos. 3) The module will also parse the replies received over the UART. This contains status but can also contain computer vision results to able to interact with the flightplan. 4) Finally, the module will also relay over telemetry all data it receives from the attached computer or camera using the PAYLOAD message. This can for instance be used to downlink thumbnails.</p>
+<p>The linux program used to parse the UART command is given in the subdirectory.</p>
+<h1><a class="anchor" id="module_load_example__digital_cam_uart"></a>
+Example for airframe file</h1>
+<p>This example contains all possible configuration options, not all of them are mandatory! </p>
+<div class="fragment"><div class="line">&lt;modules&gt;</div>
+<div class="line">  &lt;load name=<span class="stringliteral">&quot;digital_cam_uart.xml&quot;</span>&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_AUTOSHOOT_PERIOD&quot;</span> value=<span class="stringliteral">&quot;0.5&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_AUTOSHOOT_DISTANCE_INTERVAL&quot;</span> value=<span class="stringliteral">&quot;50&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_SHOT_SYNC_SEND&quot;</span> value=<span class="stringliteral">&quot;TRUE|FALSE&quot;</span> /&gt;</div>
+<div class="line">  &lt;/load&gt;</div>
+<div class="line">&lt;/modules&gt;</div>
+</div><!-- fragment --> <h1><a class="anchor" id="configuration"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
 Define Options</h2>
 <ul>
-<li><b>name:</b> <code>DC_AUTOSHOOT_QUARTERSEC_PERIOD</code> <b>value:</b> <em>6</em> <br/>
- Description: quarter_second</li>
+<li><b>name:</b> <code>DC_AUTOSHOOT_PERIOD</code> <b>value:</b> <em>0.5</em> <br/>
+ Description: time period for DC_AUTOSHOOT_PERIODIC in seconds</li>
 <li><b>name:</b> <code>DC_AUTOSHOOT_DISTANCE_INTERVAL</code> <b>value:</b> <em>50</em> <br/>
  Description: grid in meters</li>
 <li><b>name:</b> <code>DC_SHOT_SYNC_SEND</code> <b>value:</b> <em>TRUE|FALSE</em> <br/>
@@ -135,8 +147,8 @@ Event Functions</h2>
 Periodic Functions</h2>
 <p>These functions are called periodically at the specified frequency from the module periodic loop.</p>
 <ul>
-<li><a class="el" href="uart__cam__ctrl_8c.html#aaf39174521b99262b40497c50520150b" title="4Hz Periodic ">digital_cam_uart_periodic()</a><ul>
-<li>Frequency in Hz: <em>4</em> </li>
+<li><a class="el" href="uart__cam__ctrl_8c.html#aaf39174521b99262b40497c50520150b">digital_cam_uart_periodic()</a><ul>
+<li>Frequency in Hz: <em>10</em> </li>
 <li>Autorun: <em>TRUE</em> <br/>
  Periodic function automatically starts after init.</li>
 </ul>
@@ -165,9 +177,24 @@ Raw digital_cam_uart.xml file:</h2>
 <div class="line">&lt;module name=<span class="stringliteral">&quot;uart_cam_ctrl&quot;</span> dir=<span class="stringliteral">&quot;digital_cam&quot;</span>&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;</div>
-<div class="line">      Digital Camera Triggering over UART link.</div>
-<div class="line">      <a class="code" href="gsm_8c.html#a7b1f6a663f9fd0a98b42a36f192303d7">Send</a> attitude and other relevant <a class="code" href="link__mcu__can_8c.html#afb87d045bbf32b236fc425efe02bdc7b">data</a> to a computer based photocamera after a shootphoto command is given. <a class="code" href="common__flight__plan_8h.html#af7d017fbba81f09f955d27d59df57acc">And</a> in <span class="keywordflow">return</span> <span class="keyword">get</span> certain value back <a class="code" href="at__com_8c.html#ae17b1fbd0d2858329af3554bff58d9be">from</a> the computerbased photocamera to be able to intercat with the flightplan.&lt;/description&gt;</div>
-<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_AUTOSHOOT_QUARTERSEC_PERIOD&quot;</span> value=<span class="stringliteral">&quot;6&quot;</span> description=<span class="stringliteral">&quot;quarter_second&quot;</span>/&gt;</div>
+<div class="line">      Digital Photo Camera Triggering (<span class="keyword">using</span> a UART link)</div>
+<div class="line"></div>
+<div class="line">      This module controls triggering of an attached external digital camera via UART <a class="code" href="commands_8c.html#a929b1098e1af3f34ee056eeed9227136" title="Storage of intermediate command values. ">commands</a>.</div>
+<div class="line">      It can trigger photos based on GPS distance, time or circle radius in both fixedwings and rotorcraft.</div>
+<div class="line"></div>
+<div class="line">      This module fullfilss 4 functions:</div>
+<div class="line">      1) send shoot <a class="code" href="commands_8c.html#a929b1098e1af3f34ee056eeed9227136" title="Storage of intermediate command values. ">commands</a> over UART</div>
+<div class="line">      2) Besides triggering the shooting of images, the module also sends attitude and other relevant data.</div>
+<div class="line">      Typically an external linux camera or linux computer will receive the attitude and position data and <a class="code" href="stereocam_8c.html#a0ffb074cb5068e70dc847ceed36a92e5" title="Increment circular buffer counter by i. ">add</a></div>
+<div class="line">      it to the photos.</div>
+<div class="line">      3) The module will also parse the replies received over the UART. This contains <a class="code" href="anemotaxis_8c.html#a015eb90e0de9f16e87bd149d4b9ce959">status</a> but can also</div>
+<div class="line">      contain computer vision results to able to interact with the flightplan.</div>
+<div class="line">      4) Finally, the module will also relay over telemetry all data it receives from the attached computer</div>
+<div class="line">      or camera <span class="keyword">using</span> the PAYLOAD message. This can <span class="keywordflow">for</span> instance be used to <a class="code" href="downlink_8h.html#structdownlink" title="Downlink structure. ">downlink</a> thumbnails.</div>
+<div class="line"></div>
+<div class="line">      The linux program used to parse the UART command is given in the subdirectory.</div>
+<div class="line">    &lt;/description&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_AUTOSHOOT_PERIOD&quot;</span> value=<span class="stringliteral">&quot;0.5&quot;</span> description=<span class="stringliteral">&quot;time period for DC_AUTOSHOOT_PERIODIC in seconds&quot;</span>/&gt;</div>
 <div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_AUTOSHOOT_DISTANCE_INTERVAL&quot;</span> value=<span class="stringliteral">&quot;50&quot;</span> description=<span class="stringliteral">&quot;grid in meters&quot;</span>/&gt;</div>
 <div class="line">    &lt;define name=<span class="stringliteral">&quot;DC_SHOT_SYNC_SEND&quot;</span> value=<span class="stringliteral">&quot;TRUE|FALSE&quot;</span> description=<span class="stringliteral">&quot;send DC_SHOT message when photo was taken (default: TRUE)&quot;</span>/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
@@ -180,11 +207,11 @@ Raw digital_cam_uart.xml file:</h2>
 <div class="line">        &lt;/dl_setting&gt;</div>
 <div class="line"></div>
 <div class="line">        &lt;dl_setting max=<span class="stringliteral">&quot;3&quot;</span> min=<span class="stringliteral">&quot;0&quot;</span> <a class="code" href="max7456_8c.html#a4a2eb71e89c989655301c2f2070e29b3">step</a>=<span class="stringliteral">&quot;1&quot;</span> var=<span class="stringliteral">&quot;dc_autoshoot&quot;</span> values=<span class="stringliteral">&quot;STOP|PERIODIC|DISTANCE|EXT_TRIG&quot;</span>&gt;</div>
-<div class="line">          &lt;strip_button name=<span class="stringliteral">&quot;Start Autoshoot&quot;</span> icon=<span class="stringliteral">&quot;on.png&quot;</span> value=<span class="stringliteral">&quot;1&quot;</span> group=<span class="stringliteral">&quot;dcauto&quot;</span>/&gt;</div>
-<div class="line">          &lt;strip_button name=<span class="stringliteral">&quot;Stop Autoshoot&quot;</span> icon=<span class="stringliteral">&quot;off.png&quot;</span> value=<span class="stringliteral">&quot;0&quot;</span> group=<span class="stringliteral">&quot;dcauto&quot;</span>/&gt;</div>
+<div class="line">          &lt;strip_button name=<span class="stringliteral">&quot;Start Autoshoot&quot;</span> icon=<span class="stringliteral">&quot;dcstart.png&quot;</span> value=<span class="stringliteral">&quot;1&quot;</span> group=<span class="stringliteral">&quot;dcauto&quot;</span>/&gt;</div>
+<div class="line">          &lt;strip_button name=<span class="stringliteral">&quot;Stop Autoshoot&quot;</span> icon=<span class="stringliteral">&quot;dcstop.png&quot;</span> value=<span class="stringliteral">&quot;0&quot;</span> group=<span class="stringliteral">&quot;dcauto&quot;</span>/&gt;</div>
 <div class="line">        &lt;/dl_setting&gt;</div>
 <div class="line"></div>
-<div class="line">        &lt;dl_setting max=<span class="stringliteral">&quot;255&quot;</span> min=<span class="stringliteral">&quot;1&quot;</span> <a class="code" href="max7456_8c.html#a4a2eb71e89c989655301c2f2070e29b3">step</a>=<span class="stringliteral">&quot;1&quot;</span> var=<span class="stringliteral">&quot;dc_autoshoot_quartersec_period&quot;</span> shortname=<span class="stringliteral">&quot;Periodic&quot;</span> param=<span class="stringliteral">&quot;DC_AUTOSHOOT_QUARTERSEC_PERIOD&quot;</span> <a class="code" href="nav_8c.html#a04b783250b1673126fa3f4729cb2078e">unit</a>=<span class="stringliteral">&quot;quarter-sec&quot;</span>/&gt;</div>
+<div class="line">        &lt;dl_setting max=<span class="stringliteral">&quot;60&quot;</span> min=<span class="stringliteral">&quot;0.1&quot;</span> <a class="code" href="max7456_8c.html#a4a2eb71e89c989655301c2f2070e29b3">step</a>=<span class="stringliteral">&quot;0.5&quot;</span> var=<span class="stringliteral">&quot;dc_autoshoot_period&quot;</span> shortname=<span class="stringliteral">&quot;Periodic&quot;</span> param=<span class="stringliteral">&quot;DC_AUTOSHOOT_PERIOD&quot;</span> <a class="code" href="nav_8c.html#a04b783250b1673126fa3f4729cb2078e">unit</a>=<span class="stringliteral">&quot;sec&quot;</span>/&gt;</div>
 <div class="line">        &lt;dl_setting max=<span class="stringliteral">&quot;255&quot;</span> min=<span class="stringliteral">&quot;0&quot;</span> <a class="code" href="max7456_8c.html#a4a2eb71e89c989655301c2f2070e29b3">step</a>=<span class="stringliteral">&quot;1&quot;</span> var=<span class="stringliteral">&quot;dc_distance_interval&quot;</span> shortname=<span class="stringliteral">&quot;dist&quot;</span> param=<span class="stringliteral">&quot;DC_AUTOSHOOT_DISTANCE_INTERVAL&quot;</span> <a class="code" href="nav_8c.html#a04b783250b1673126fa3f4729cb2078e">unit</a>=<span class="stringliteral">&quot;meter&quot;</span>/&gt;</div>
 <div class="line"></div>
 <div class="line">        &lt;dl_setting max=<span class="stringliteral">&quot;250&quot;</span> min=<span class="stringliteral">&quot;0&quot;</span> <a class="code" href="max7456_8c.html#a4a2eb71e89c989655301c2f2070e29b3">step</a>=<span class="stringliteral">&quot;5&quot;</span> module=<span class="stringliteral">&quot;digital_cam/dc&quot;</span> var=<span class="stringliteral">&quot;dc_survey_interval&quot;</span> handler=<span class="stringliteral">&quot;Survey&quot;</span> shortname=<span class="stringliteral">&quot;Survey-Interval&quot;</span>/&gt;</div>
@@ -202,12 +229,12 @@ Raw digital_cam_uart.xml file:</h2>
 <div class="line">    &lt;/dl_settings&gt;</div>
 <div class="line">  &lt;/settings&gt;</div>
 <div class="line">  &lt;conflicts&gt;digital_cam,digital_cam_servo,digital_cam_i2c&lt;/conflicts&gt;</div>
-<div class="line">  &lt;<a class="code" href="stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963">header</a>&gt;</div>
+<div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;uart_cam_ctrl.h&quot;</span>/&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;dc.h&quot;</span>/&gt;</div>
-<div class="line">  &lt;/<a class="code" href="stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963">header</a>&gt;</div>
+<div class="line">  &lt;/header&gt;</div>
 <div class="line">  &lt;<a class="code" href="nav__gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;digital_cam_uart_init()&quot;</span>/&gt;</div>
-<div class="line">  &lt;periodic fun=<span class="stringliteral">&quot;digital_cam_uart_periodic()&quot;</span> freq=<span class="stringliteral">&quot;4&quot;</span> autorun=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
+<div class="line">  &lt;periodic fun=<span class="stringliteral">&quot;digital_cam_uart_periodic()&quot;</span> freq=<span class="stringliteral">&quot;10&quot;</span> autorun=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
 <div class="line">  &lt;<span class="keyword">event</span> fun=<span class="stringliteral">&quot;digital_cam_uart_event()&quot;</span>/&gt;</div>
 <div class="line">  &lt;makefile target=<span class="stringliteral">&quot;sim&quot;</span>&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;catia/serial.c&quot;</span>/&gt;</div>
@@ -231,7 +258,7 @@ Raw digital_cam_uart.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:18 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

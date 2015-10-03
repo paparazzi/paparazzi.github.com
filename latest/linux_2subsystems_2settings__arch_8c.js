@@ -1,5 +1,7 @@
 var linux_2subsystems_2settings__arch_8c =
 [
-    [ "persistent_read", "linux_2subsystems_2settings__arch_8c.html#a4d0dc6e4cdefbf2eeba08f82b8e15a37", null ],
-    [ "persistent_write", "linux_2subsystems_2settings__arch_8c.html#a1497901ac40153b238ee0524257a5f3b", null ]
+    [ "PERSISTENT_SETTINGS_FILE", "linux_2subsystems_2settings__arch_8c.html#aa464715701670e7dd8ad2bb4d2b11f46", null ],
+    [ "persistent_clear", "linux_2subsystems_2settings__arch_8c.html#a96bbf08af032ab9c1e7c15c66eb2d513", null ],
+    [ "persistent_read", "linux_2subsystems_2settings__arch_8c.html#a6d60026540670a5fc2ac03dee06c791e", null ],
+    [ "persistent_write", "linux_2subsystems_2settings__arch_8c.html#a069b2bcf8fcf2d115466efa163c7583e", null ]
 ];

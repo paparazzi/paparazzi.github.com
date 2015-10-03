@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('sw_2airborne_2subsystems_2datalink_2RE
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('sw_2airborne_2subsystems_2datalink_2RE
 <div class="contents">
 <a href="sw_2airborne_2subsystems_2datalink_2README_8md.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor"># Datalink library</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;Datalink (uplink and <a class="code" href="structdownlink.html" title="Downlink structure. ">downlink</a>) lib <span class="keyword">using</span> <a class="code" href="datalink_8h.html#ad52033a112b1b7cac721f1f2313ac4d9" title="Datalink kinds. ">PPRZ</a> protocol</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;Datalink (uplink and <a class="code" href="downlink_8h.html#structdownlink" title="Downlink structure. ">downlink</a>) lib <span class="keyword">using</span> <a class="code" href="datalink_8h.html#ad52033a112b1b7cac721f1f2313ac4d9" title="Datalink kinds. ">PPRZ</a> protocol</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;======================================================</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;HOWTO export</div>
@@ -139,13 +139,13 @@ $(document).ready(function(){initNavTree('sw_2airborne_2subsystems_2datalink_2RE
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  * define the variable `PPRZ_DATALINK_PORT` to your device (ex: `PPRZ_DATALINK_PORT=XXX`)</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  * define the variable `PPRZ_DATALINK_DIR` to your extract folder</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  * include the library makefile `include ${PPRZ_DATALINK_DIR}/datalink/pprz_datalink.mk`</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  * add `PPRZ_DATALINK_CFLAGS` to your cflags</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  * add `PPRZ_DATALINK_SRCS` to your sources (<span class="keywordflow">if</span> your project requires a list of <span class="keywordtype">object</span> files, you can use `PPRZ_DATALINK_OBJS` instead)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  * <a class="code" href="stereocam_8c.html#a0ffb074cb5068e70dc847ceed36a92e5" title="Increment circular buffer counter by i. ">add</a> `PPRZ_DATALINK_CFLAGS` to your cflags</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  * <a class="code" href="stereocam_8c.html#a0ffb074cb5068e70dc847ceed36a92e5" title="Increment circular buffer counter by i. ">add</a> `PPRZ_DATALINK_SRCS` to your sources (<span class="keywordflow">if</span> your project requires a list of <span class="keywordtype">object</span> files, you can use `PPRZ_DATALINK_OBJS` instead)</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;3. Device interface</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  You need to provide an <span class="keyword">interface </span>to send the <a class="code" href="link__mcu__can_8c.html#afb87d045bbf32b236fc425efe02bdc7b">data</a>. If your device is named `XXX`, you need to provide the following functions or macros</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  You need to provide an <span class="keyword">interface </span>to send the data. If your device is named `XXX`, you need to provide the following functions or macros</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  * `XXXCheckFreeSpace(len)` that <span class="keywordflow">return</span> <span class="keyword">true</span> <span class="keywordflow">if</span> your device has enough space <span class="keywordflow">for</span> `len` bytes</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  * `XXXTransmit(c)` that send a single byte `c` <span class="keyword">using</span> the device `XXX` (or store them in a <a class="code" href="ahrs__ardrone2_8c.html#afcd770f92b25f2767b0dd71ffbdf7439">buffer</a>)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  * `XXXTransmit(c)` that send a single byte `c` <span class="keyword">using</span> the device `XXX` (or store them in a buffer)</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  * `XXXSendMessage()` that flushs the bytes to send (<span class="keywordflow">if</span> needed)</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  * `XXXChAvailable()` that returns <span class="keyword">true</span> <span class="keyword">new</span> characters are available <span class="keywordflow">for</span> reading</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  * `XXXGetch()` taht returns the next character to parse</div>
@@ -153,19 +153,19 @@ $(document).ready(function(){initNavTree('sw_2airborne_2subsystems_2datalink_2RE
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  Usually, an UART <span class="keyword">interface </span>is used for datalink.</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;4. Message parsing and includes:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  in a C file of you project (for example a file named `datalink.c`), add the following lines:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  in a C file of you project (for example a file named `datalink.c`), <a class="code" href="stereocam_8c.html#a0ffb074cb5068e70dc847ceed36a92e5" title="Increment circular buffer counter by i. ">add</a> the following lines:</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  ~~~{.c}</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">  #define DATALINK_C 1 // this should be placed before the includes</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">  #inlcude &quot;uart.h&quot; // or change this include to the header of your actual device interface</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  #include &quot;<a class="code" href="downlink_8h.html" title="Common code for AP and FBW telemetry. ">downlink.h</a>&quot;</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="fixedwing_2datalink_8c.html#a87ff8c0ffff657dbde8566f062779428">dl_parse_msg</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    &lt;add your code to parse messages here&gt;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="demo__ahrs__actuators_8c.html#a87ff8c0ffff657dbde8566f062779428" title="Should be called when chars are available in dl_buffer. ">dl_parse_msg</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    &lt;<a class="code" href="stereocam_8c.html#a0ffb074cb5068e70dc847ceed36a92e5" title="Increment circular buffer counter by i. ">add</a> your code to parse messages here&gt;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  }</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  ~~~</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  You also need to poll <span class="keywordflow">for</span> <span class="keyword">new</span> characters, which means that you have to call the `<a class="code" href="datalink_8h.html#a1e122bd87bd1f699141735e71a32d002">DatalinkEvent</a>()` <span class="keyword">function</span> in your <a class="code" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> loop.</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  This <span class="keyword">function</span> is non-blocking and calls the decoder on each received byte. Finally the `<a class="code" href="fixedwing_2datalink_8c.html#a87ff8c0ffff657dbde8566f062779428">dl_parse_msg</a>` <span class="keyword">function</span> is called when a complete message is received (checksum is valid).</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  This <span class="keyword">function</span> is non-blocking and calls the decoder on each received byte. Finally the `<a class="code" href="demo__ahrs__actuators_8c.html#a87ff8c0ffff657dbde8566f062779428" title="Should be called when chars are available in dl_buffer. ">dl_parse_msg</a>` <span class="keyword">function</span> is called when a complete message is received (checksum is valid).</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;Example project <span class="keywordflow">for</span> Mbeb <a class="code" href="stm32_2usb__ser__hw_8c.html#a405086a1effa6aed12960187518465b5">dev</a> board</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;==================================</div>
@@ -189,7 +189,7 @@ $(document).ready(function(){initNavTree('sw_2airborne_2subsystems_2datalink_2RE
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="downlink_8h.html" title="Common code for AP and FBW telemetry. ">downlink.h</a>&quot;</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keywordtype">void</span> <a class="code" href="fixedwing_2datalink_8c.html#a87ff8c0ffff657dbde8566f062779428">dl_parse_msg</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keywordtype">void</span> <a class="code" href="demo__ahrs__actuators_8c.html#a87ff8c0ffff657dbde8566f062779428" title="Should be called when chars are available in dl_buffer. ">dl_parse_msg</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">int</span> msg_id = <a class="code" href="main__demo5_8c.html#a41ca1f0c42c768e235066d83071b1ed9">dl_buffer</a>[1];</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordflow">switch</span> (msg_id) {</div>
@@ -296,7 +296,7 @@ $(document).ready(function(){initNavTree('sw_2airborne_2subsystems_2datalink_2RE
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="sw_2airborne_2subsystems_2datalink_2README_8md.html">README.md</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:04:34 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:00:54 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

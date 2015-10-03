@@ -1,35 +1,37 @@
 <map id="gpio_set" name="gpio_set">
-<area shape="rect" id="node3" href="$actuators__ardrone2__raw_8h.html#a66817eeee5ae2f12c1a42abd2ff443ea" title="actuators_ardrone_init" alt="" coords="381,35,547,63"/>
-<area shape="rect" id="node5" href="$actuators__ardrone2__raw_8c.html#ad8d796514edd55dd0f4a2134fd83f691" title="actuators_ardrone_motor\l_status" alt="" coords="131,123,317,167"/>
-<area shape="rect" id="node9" href="$actuators__ardrone2__raw_8c.html#a8643b68e3bff54891b4180367aaf4316" title="actuators_ardrone_reset\l_flipflop" alt="" coords="135,57,313,101"/>
-<area shape="rect" id="node12" href="$can__arch_8h.html#aea9abdf3d92f6edf1fbfeebec07eb2a2" title="can_hw_init" alt="" coords="177,190,271,218"/>
-<area shape="rect" id="node27" href="$cyrf6936_8h.html#a27414d1e4d63182c97357b576f05b37d" title="Initializing the cyrf chip. " alt="" coords="173,241,275,269"/>
-<area shape="rect" id="node33" href="$imu__aspirin__i2c_8c.html#ad32faae58e391642ec8048cb11011998" title="must be defined by underlying hardware " alt="" coords="171,291,277,319"/>
-<area shape="rect" id="node35" href="$navdata_8c.html#a097d40838c4d36b21635cc59b768568a" title="mag_freeze_check" alt="" coords="153,443,295,471"/>
-<area shape="rect" id="node41" href="$stm32_2uart__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="437,367,491,395"/>
-<area shape="rect" id="node43" href="$stm32_2uart__tunnel_8c.html#a319a645047f275499aa30b0bc08c6e10" title="main_event" alt="" coords="176,393,272,421"/>
-<area shape="rect" id="node46" href="$mf__ptu_8h.html#a0f4e02c4cf993d86c38de1bebc67fcd5" title="Data acquisition module for Meteo France PTU board. " alt="" coords="177,494,271,522"/>
-<area shape="rect" id="node48" href="$stm32_2peripherals_2ms2100__arch_8c.html#a6c42c614481a60c538d48f9ceef25132" title="ms2100_arch_init" alt="" coords="157,545,291,573"/>
-<area shape="rect" id="node50" href="$navdata_8h.html#a2dbd35c51b5b13c4e3e5d9a1d86a02f8" title="navdata_init" alt="" coords="175,595,273,623"/>
-<area shape="rect" id="node55" href="$stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#ac3242f23ea541664f6fbc29edecbf199" title="radio_control_spektrum\l_try_bind" alt="" coords="137,646,311,690"/>
-<area shape="rect" id="node57" href="$stm32_2mcu__periph_2spi__arch_8c.html#af3a0a783f898c0211f2c0e5498c746a0" title="SpiSlaveUnselect" alt="" coords="157,713,291,741"/>
-<area shape="rect" id="node65" href="$w5100_8h.html#a3a4ec6731e43710788d3e51f7749259c" title="w5100_init" alt="" coords="180,781,268,809"/>
-<area shape="rect" id="node7" href="$actuators__ardrone2__raw_8h.html#a1e5faec000e4e1602bba080db2aec27c" title="actuators_ardrone_commit" alt="" coords="367,131,561,159"/>
-<area shape="rect" id="node14" href="$can_8h.html#ac7e36a7bd650eb577df12f0437f270bc" title="ppz_can_init" alt="" coords="413,190,515,218"/>
-<area shape="rect" id="node16" href="$link__mcu__usart_8h.html#a4811adaa420099181f04d75d5ba24c25" title="link_mcu_init" alt="" coords="641,178,745,206"/>
-<area shape="rect" id="node25" href="$actuators__esc32_8h.html#add58c115774df9caa262424894e2cf56" title="Initializes the ESCs. " alt="" coords="616,229,771,257"/>
-<area shape="rect" id="node18" href="$main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="827,229,891,257"/>
-<area shape="rect" id="node22" href="$main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="824,178,893,206"/>
-<area shape="rect" id="node20" href="$sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="943,203,1012,231"/>
-<area shape="rect" id="node29" href="$subsystems_2datalink_2superbitrf_8h.html#a7b9a2741375ca1dffc4f2e6a6d7a9307" title="Initialize the superbitrf. " alt="" coords="409,266,519,294"/>
-<area shape="rect" id="node31" href="$superbitrf__rc_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832" title="Initialization. " alt="" coords="611,279,776,307"/>
-<area shape="rect" id="node37" href="$navdata_8h.html#aded131295af4c39b10199bae2e560438" title="navdata_update" alt="" coords="401,489,527,517"/>
-<area shape="rect" id="node39" href="$imu__ardrone2__raw_8h.html#a367c91d0eb2173ca410cdc956cff3cd0" title="imu_ardrone2_event" alt="" coords="616,489,771,517"/>
-<area shape="rect" id="node53" href="$imu__ardrone2__raw_8c.html#ad32faae58e391642ec8048cb11011998" title="must be defined by underlying hardware " alt="" coords="411,586,517,614"/>
-<area shape="rect" id="node59" href="$group__spi.html#ga99507da72932c02e5d8daf9a7170ed69" title="Unselect a slave. " alt="" coords="393,738,535,766"/>
-<area shape="rect" id="node61" href="$group__spi.html#gafc9125c5764a6749703ae4f1303a16f3" title="Initialize all used slaves and uselect them. " alt="" coords="408,637,520,665"/>
-<area shape="rect" id="node63" href="$stm32_2mcu__periph_2spi__arch_8c.html#ad55db59fe845c613959d0fe874905e5d" title="Processing done after rx completes. " alt="" coords="369,687,559,715"/>
-<area shape="rect" id="node67" href="$downlink_8h.html#afd49e1738cc6ad57218b944dcb94f73b" title="downlink_init" alt="" coords="413,789,515,817"/>
-<area shape="rect" id="node69" href="$main_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="main_init" alt="" coords="653,789,733,817"/>
-<area shape="rect" id="node71" href="$rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="832,789,885,817"/>
+<area shape="rect" id="node3" href="$boards_2ardrone_2actuators_8h.html#a66817eeee5ae2f12c1a42abd2ff443ea" title="actuators_ardrone_init" alt="" coords="381,36,547,64"/>
+<area shape="rect" id="node5" href="$boards_2ardrone_2actuators_8c.html#ad8d796514edd55dd0f4a2134fd83f691" title="actuators_ardrone_motor\l_status" alt="" coords="131,124,317,168"/>
+<area shape="rect" id="node9" href="$boards_2ardrone_2actuators_8c.html#a8643b68e3bff54891b4180367aaf4316" title="actuators_ardrone_reset\l_flipflop" alt="" coords="135,57,313,101"/>
+<area shape="rect" id="node12" href="$bluegiga_8h.html#ac8a60ccee96fbe718a27b6194f3f14e0" title="bluegiga_init" alt="" coords="643,342,744,370"/>
+<area shape="rect" id="node24" href="$bluegiga_8c.html#a50a0f979fdb5e8cb70090c6de5f203ac" title="bluegiga_receive" alt="" coords="160,832,288,860"/>
+<area shape="rect" id="node29" href="$can__arch_8h.html#aea9abdf3d92f6edf1fbfeebec07eb2a2" title="can_hw_init" alt="" coords="417,190,511,218"/>
+<area shape="rect" id="node41" href="$cyrf6936_8h.html#a27414d1e4d63182c97357b576f05b37d" title="Initializing the cyrf chip. " alt="" coords="173,292,275,320"/>
+<area shape="rect" id="node47" href="$imu__aspirin__i2c_8c.html#ad32faae58e391642ec8048cb11011998" title="must be defined by underlying hardware " alt="" coords="171,393,277,421"/>
+<area shape="rect" id="node49" href="$navdata_8c.html#a097d40838c4d36b21635cc59b768568a" title="Check if the magneto is frozen Unknown why this bug happens. " alt="" coords="153,494,295,522"/>
+<area shape="rect" id="node53" href="$stm32_2uart__tunnel_8c.html#a319a645047f275499aa30b0bc08c6e10" title="main_event" alt="" coords="176,444,272,472"/>
+<area shape="rect" id="node57" href="$mf__ptu_8h.html#a0f4e02c4cf993d86c38de1bebc67fcd5" title="Data acquisition module for Meteo France PTU board. " alt="" coords="177,545,271,573"/>
+<area shape="rect" id="node59" href="$stm32_2peripherals_2ms2100__arch_8c.html#a6c42c614481a60c538d48f9ceef25132" title="ms2100_arch_init" alt="" coords="157,596,291,624"/>
+<area shape="rect" id="node61" href="$navdata_8h.html#a2dbd35c51b5b13c4e3e5d9a1d86a02f8" title="Initialize the navdata board. " alt="" coords="175,646,273,674"/>
+<area shape="rect" id="node66" href="$stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#ac3242f23ea541664f6fbc29edecbf199" title="radio_control_spektrum\l_try_bind" alt="" coords="137,697,311,741"/>
+<area shape="rect" id="node68" href="$stm32_2mcu__periph_2spi__arch_8c.html#af3a0a783f898c0211f2c0e5498c746a0" title="SpiSlaveUnselect" alt="" coords="157,764,291,792"/>
+<area shape="rect" id="node76" href="$w5100_8h.html#a3a4ec6731e43710788d3e51f7749259c" title="w5100_init" alt="" coords="649,241,737,269"/>
+<area shape="rect" id="node7" href="$boards_2ardrone_2actuators_8h.html#a1e5faec000e4e1602bba080db2aec27c" title="actuators_ardrone_commit" alt="" coords="367,132,561,160"/>
+<area shape="rect" id="node14" href="$downlink_8h.html#afd49e1738cc6ad57218b944dcb94f73b" title="downlink_init" alt="" coords="851,266,952,294"/>
+<area shape="rect" id="node16" href="$demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="1027,292,1107,320"/>
+<area shape="rect" id="node20" href="$main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="1035,241,1099,269"/>
+<area shape="rect" id="node18" href="$demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1164,292,1217,320"/>
+<area shape="rect" id="node22" href="$sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="1156,216,1225,244"/>
+<area shape="rect" id="node26" href="$bluegiga_8c.html#a81dec5456e47bf1870486a85600c7e1c" title="trans_cb" alt="" coords="425,840,503,868"/>
+<area shape="rect" id="node31" href="$can_8h.html#ac7e36a7bd650eb577df12f0437f270bc" title="ppz_can_init" alt="" coords="643,190,744,218"/>
+<area shape="rect" id="node33" href="$link__mcu__usart_8h.html#a4811adaa420099181f04d75d5ba24c25" title="link_mcu_init" alt="" coords="849,216,953,244"/>
+<area shape="rect" id="node39" href="$actuators__esc32_8h.html#add58c115774df9caa262424894e2cf56" title="Initializes the ESCs. " alt="" coords="824,165,979,193"/>
+<area shape="rect" id="node36" href="$main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="1032,190,1101,218"/>
+<area shape="rect" id="node43" href="$subsystems_2datalink_2superbitrf_8h.html#a7b9a2741375ca1dffc4f2e6a6d7a9307" title="Initialize the superbitrf. " alt="" coords="409,292,519,320"/>
+<area shape="rect" id="node45" href="$superbitrf__rc_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832" title="Initialization. " alt="" coords="611,292,776,320"/>
+<area shape="rect" id="node51" href="$navdata_8h.html#aded131295af4c39b10199bae2e560438" title="Update the navdata (event loop) " alt="" coords="401,540,527,568"/>
+<area shape="rect" id="node55" href="$stm32_2uart__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="437,444,491,472"/>
+<area shape="rect" id="node64" href="$imu__ardrone2_8c.html#ad32faae58e391642ec8048cb11011998" title="must be defined by underlying hardware " alt="" coords="411,637,517,665"/>
+<area shape="rect" id="node70" href="$group__spi.html#ga99507da72932c02e5d8daf9a7170ed69" title="Unselect a slave. " alt="" coords="393,738,535,766"/>
+<area shape="rect" id="node72" href="$group__spi.html#gafc9125c5764a6749703ae4f1303a16f3" title="Initialize all used slaves and uselect them. " alt="" coords="408,789,520,817"/>
+<area shape="rect" id="node74" href="$stm32_2mcu__periph_2spi__arch_8c.html#ad55db59fe845c613959d0fe874905e5d" title="Processing done after rx completes. " alt="" coords="369,688,559,716"/>
 </map>

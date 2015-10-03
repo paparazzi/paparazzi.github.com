@@ -1,23 +1,29 @@
 <map id="stateGetPositionLla_i" name="stateGetPositionLla_i">
 <area shape="rect" id="node3" href="$dc_8h.html#ab4b5d12f3c9829a0f0e538496ad5c547" title="Send an info message. " alt="" coords="261,106,328,134"/>
-<area shape="rect" id="node18" href="$uart__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95" title="Send Command To Camera. " alt="" coords="221,374,368,402"/>
-<area shape="rect" id="node20" href="$dc_8h.html#aaf0625fed2e489322c40c4b2a1904e9a" title="Send Down the coordinates of where the photo was taken. " alt="" coords="212,323,377,351"/>
-<area shape="rect" id="node46" href="$mavlink_8c.html#a8e376e67cc8a8a15e91a7e9fae593646" title="mavlink_send_global\l_position_int" alt="" coords="217,487,372,531"/>
+<area shape="rect" id="node18" href="$uart__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95" title="Send Command To Camera. " alt="" coords="221,485,368,513"/>
+<area shape="rect" id="node20" href="$dc_8h.html#aaf0625fed2e489322c40c4b2a1904e9a" title="Send Down the coordinates of where the photo was taken. " alt="" coords="212,434,377,462"/>
+<area shape="rect" id="node52" href="$mavlink_8c.html#a8e376e67cc8a8a15e91a7e9fae593646" title="mavlink_send_global\l_position_int" alt="" coords="217,535,372,579"/>
+<area shape="rect" id="node56" href="$exif__module_8h.html#a91b0ae74e7e4da70fb5021ff6aacd6f0" title="push_gps_to_vision" alt="" coords="221,602,368,630"/>
+<area shape="rect" id="node58" href="$waypoints_8h.html#a6c641b78233fd2eaf42e8e9044e789e5" title="set waypoint to current location and altitude " alt="" coords="224,653,365,681"/>
+<area shape="rect" id="node60" href="$waypoints_8h.html#a28dd523c6d75fb36ce3ffec86a6e096c" title="set waypoint to current horizontal location without modifying altitude " alt="" coords="213,703,376,731"/>
 <area shape="rect" id="node5" href="$dc_8h.html#ac1d419ec639ffd43193ebcbd6e1131c0" title="Sets the dc control in circle mode. " alt="" coords="487,106,564,134"/>
 <area shape="rect" id="node7" href="$dc_8h.html#a9b9f345170fec78f561c6a7a74d1e6d3" title="Sets the dc control in distance mode. " alt="" coords="476,5,575,33"/>
 <area shape="rect" id="node9" href="$dc_8h.html#a47c625a53743f8ad41baaf54a6fcf144" title="Stop dc control. " alt="" coords="489,157,561,185"/>
 <area shape="rect" id="node15" href="$dc_8h.html#a2b50d2725b576697bde98a8bdb358093" title="Sets the dc control in distance mode. " alt="" coords="483,55,568,83"/>
-<area shape="rect" id="node11" href="$nav__spiral_8h.html#aabff5631bd3af116a30f1d907a71407c" title="nav_spiral_run" alt="" coords="921,157,1036,185"/>
+<area shape="rect" id="node11" href="$nav__spiral_8h.html#aabff5631bd3af116a30f1d907a71407c" title="nav_spiral_run" alt="" coords="923,157,1037,185"/>
 <area shape="rect" id="node13" href="$nav__survey__polygon_8h.html#ad56bdec94ac98495799a04f0d12b51e2" title="main navigation routine. " alt="" coords="672,81,851,109"/>
-<area shape="rect" id="node22" href="$atmega__i2c__cam__ctrl_8h.html#ad7c06f4d1c398ba41252eb2e7ecd1a85" title="atmega_i2c_cam_ctrl_send" alt="" coords="427,349,624,377"/>
-<area shape="rect" id="node35" href="$gpio__cam__ctrl_8h.html#a9ea235d04c38558097d37bc2dacdef1e" title="4Hz Periodic " alt="" coords="1116,451,1284,479"/>
-<area shape="rect" id="node37" href="$servo__cam__ctrl_8h.html#ab18e6fdd6b4dbc3e80eab505bb9f73ee" title="servo_cam_ctrl_periodic" alt="" coords="1112,207,1288,235"/>
-<area shape="rect" id="node42" href="$gpio__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95" title="Send Command To Camera. " alt="" coords="452,298,599,326"/>
-<area shape="rect" id="node24" href="$atmega__i2c__cam__ctrl_8h.html#aeb25c30f109ccd0c3046715e4f3df6b5" title="atmega_i2c_cam_ctrl\l_periodic" alt="" coords="1121,334,1279,378"/>
-<area shape="rect" id="node26" href="$dc_8h.html#a833f16388be36136f5d7d173200d5e95" title="Send Command To Camera. " alt="" coords="688,317,835,345"/>
-<area shape="rect" id="node28" href="$sim__i2c__cam__ctrl_8c.html#aeb25c30f109ccd0c3046715e4f3df6b5" title="atmega_i2c_cam_ctrl\l_periodic" alt="" coords="900,309,1057,353"/>
-<area shape="rect" id="node30" href="$dc_8h.html#ad899af2195fafc817e111af752989b94" title="periodic 4Hz function " alt="" coords="916,258,1041,286"/>
-<area shape="rect" id="node39" href="$dc__shoot__rc_8h.html#a07c50c1495b2a608715da52b87501ff2" title="periodic 4Hz function " alt="" coords="901,375,1056,403"/>
-<area shape="rect" id="node33" href="$uart__cam__ctrl_8h.html#aaf39174521b99262b40497c50520150b" title="4Hz Periodic " alt="" coords="1108,258,1292,286"/>
-<area shape="rect" id="node48" href="$mavlink_8h.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls. " alt="" coords="461,527,589,555"/>
+<area shape="rect" id="node22" href="$atmega__i2c__cam__ctrl_8h.html#ad7c06f4d1c398ba41252eb2e7ecd1a85" title="atmega_i2c_cam_ctrl_send" alt="" coords="427,459,624,487"/>
+<area shape="rect" id="node37" href="$gpio__cam__ctrl_8h.html#a9ea235d04c38558097d37bc2dacdef1e" title="Periodic. " alt="" coords="1123,553,1291,581"/>
+<area shape="rect" id="node39" href="$servo__cam__ctrl_8h.html#a8fb28d260287fc333f4d1e110a68db27" title="servo_cam_ctrl_periodic" alt="" coords="1119,225,1295,253"/>
+<area shape="rect" id="node48" href="$gpio__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95" title="Send Command To Camera. " alt="" coords="452,409,599,437"/>
+<area shape="rect" id="node24" href="$atmega__i2c__cam__ctrl_8h.html#aeb25c30f109ccd0c3046715e4f3df6b5" title="atmega_i2c_cam_ctrl\l_periodic" alt="" coords="1128,435,1285,479"/>
+<area shape="rect" id="node26" href="$dc_8h.html#a833f16388be36136f5d7d173200d5e95" title="Send Command To Camera. " alt="" coords="688,375,835,403"/>
+<area shape="rect" id="node28" href="$sim__i2c__cam__ctrl_8c.html#aeb25c30f109ccd0c3046715e4f3df6b5" title="atmega_i2c_cam_ctrl\l_periodic" alt="" coords="901,258,1059,302"/>
+<area shape="rect" id="node30" href="$dc_8h.html#a2a976ddc273dfdd99eb8638c364e9305" title="periodic function " alt="" coords="933,325,1027,353"/>
+<area shape="rect" id="node41" href="$dc__shoot__rc_8h.html#a07c50c1495b2a608715da52b87501ff2" title="periodic 4Hz function " alt="" coords="903,375,1057,403"/>
+<area shape="rect" id="node44" href="$nav__survey__poly__rotorcraft_8h.html#ad9b723ed70d3bfe40978fda3a18ead66" title="Run polygon survey. " alt="" coords="903,426,1057,454"/>
+<area shape="rect" id="node46" href="$nav__survey__rectangle__rotorcraft_8h.html#a6a7fbd99d521ca0070fb2033b414f5fc" title="nav_survey_rectangle\l_rotorcraft_run" alt="" coords="900,477,1060,521"/>
+<area shape="rect" id="node33" href="$uart__cam__ctrl_8h.html#aaf39174521b99262b40497c50520150b" title="digital_cam_uart_periodic" alt="" coords="1115,309,1299,337"/>
+<area shape="rect" id="node35" href="$video__cam__ctrl_8h.html#a310b6b4208930b49883ed0abccce0e87" title="digital_cam_video_periodic" alt="" coords="1111,359,1303,387"/>
+<area shape="rect" id="node54" href="$mavlink_8h.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls. " alt="" coords="461,645,589,673"/>
 </map>

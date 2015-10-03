@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('imu__nps_8c.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -113,6 +113,7 @@ $(document).ready(function(){initNavTree('imu__nps_8c.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="imu_8h_source.html">subsystems/imu.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br/>
 <code>#include &quot;generated/airframe.h&quot;</code><br/>
 <code>#include &quot;nps_sensors.h&quot;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -122,7 +123,7 @@ $(document).ready(function(){initNavTree('imu__nps_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__nps_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2imu_2imu__nps_8c" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2imu_2imu__nps_8c" id="sw_2airborne_2subsystems_2imu_2imu__nps_8c">
-<area shape="rect" id="node3" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="356,99,494,127"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="344,270,522,298"/><area shape="rect" id="node21" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="80,270,269,298"/><area shape="rect" id="node27" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="225,177,388,221"/><area shape="rect" id="node9" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="114,347,269,375"/><area shape="rect" id="node16" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="344,347,493,375"/></map>
+<area shape="rect" id="node3" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="388,99,527,127"/><area shape="rect" id="node34" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="611,99,744,127"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="376,270,555,298"/><area shape="rect" id="node21" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="112,270,301,298"/><area shape="rect" id="node27" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="257,177,420,221"/><area shape="rect" id="node9" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="147,347,301,375"/><area shape="rect" id="node16" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="376,347,525,375"/></map>
 </div>
 </div>
 <p><a href="imu__nps_8c_source.html">Go to the source code of this file.</a></p>
@@ -139,10 +140,12 @@ Functions</h2></td></tr>
 <tr class="separator:a3eda401c67dfeee490285016ec944e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18428bf984166238838fe9d1a4842b5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__nps_8c.html#a18428bf984166238838fe9d1a4842b5e">imu_feed_mag</a> (void)</td></tr>
 <tr class="separator:a18428bf984166238838fe9d1a4842b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab288e8eb3d91d5c0e27e6f34cbe5e5ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__nps_8c.html#ab288e8eb3d91d5c0e27e6f34cbe5e5ac">imu_nps_event</a> (void)</td></tr>
+<tr class="separator:ab288e8eb3d91d5c0e27e6f34cbe5e5ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ad6e7c496430e1f1a0f673f23b5bcdb7d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structImuNps.html">ImuNps</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__nps_8c.html#ad6e7c496430e1f1a0f673f23b5bcdb7d">imu_nps</a></td></tr>
+<tr class="memitem:ad6e7c496430e1f1a0f673f23b5bcdb7d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="imu__nps_8h.html#structImuNps">ImuNps</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__nps_8c.html#ad6e7c496430e1f1a0f673f23b5bcdb7d">imu_nps</a></td></tr>
 <tr class="separator:ad6e7c496430e1f1a0f673f23b5bcdb7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -162,7 +165,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="imu__nps_8c_source.html#l00044">44</a> of file <a class="el" href="imu__nps_8c_source.html">imu_nps.c</a>.</p>
 
-<p>References <a class="el" href="imu__nps_8h_source.html#l00074">ImuNps::accel_available</a>, <a class="el" href="imu_8h_source.html#l00051">Imu::accel_unscaled</a>, <a class="el" href="imu__nps_8h_source.html#l00075">ImuNps::gyro_available</a>, <a class="el" href="imu_8h_source.html#l00050">Imu::gyro_unscaled</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00047">imu</a>, <a class="el" href="imu__nps_8c_source.html#l00028">imu_nps</a>, <a class="el" href="pprz__algebra_8h_source.html#l00321">RATES_ASSIGN</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="pprz__algebra_8h_source.html#l00116">VECT3_ASSIGN</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00085">Int32Vect3::x</a>.</p>
+<p>References <a class="el" href="imu__nps_8h_source.html#l00074">ImuNps::accel_available</a>, <a class="el" href="imu_8h_source.html#l00051">Imu::accel_unscaled</a>, <a class="el" href="imu__nps_8h_source.html#l00075">ImuNps::gyro_available</a>, <a class="el" href="imu_8h_source.html#l00050">Imu::gyro_unscaled</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00043">imu</a>, <a class="el" href="imu__nps_8c_source.html#l00028">imu_nps</a>, <a class="el" href="pprz__algebra_8h_source.html#l00329">RATES_ASSIGN</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="pprz__algebra_8h_source.html#l00124">VECT3_ASSIGN</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>.</p>
 
 </div>
 </div>
@@ -182,7 +185,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="imu__nps_8c_source.html#l00057">57</a> of file <a class="el" href="imu__nps_8c_source.html">imu_nps.c</a>.</p>
 
-<p>References <a class="el" href="imu__aspirin2_8c_source.html#l00047">imu</a>, <a class="el" href="imu__nps_8c_source.html#l00028">imu_nps</a>, <a class="el" href="imu__nps_8h_source.html#l00073">ImuNps::mag_available</a>, <a class="el" href="imu_8h_source.html#l00052">Imu::mag_unscaled</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="pprz__algebra_8h_source.html#l00116">VECT3_ASSIGN</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00085">Int32Vect3::x</a>.</p>
+<p>References <a class="el" href="imu__aspirin2_8c_source.html#l00043">imu</a>, <a class="el" href="imu__nps_8c_source.html#l00028">imu_nps</a>, <a class="el" href="imu__nps_8h_source.html#l00073">ImuNps::mag_available</a>, <a class="el" href="imu_8h_source.html#l00052">Imu::mag_unscaled</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="pprz__algebra_8h_source.html#l00124">VECT3_ASSIGN</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>.</p>
 
 </div>
 </div>
@@ -201,15 +204,46 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>must be defined by underlying hardware </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000031">Todo:</a></b></dt><dd>drdy int handling for adxl345 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000032">Todo:</a></b></dt><dd>eoc interrupt for itg3200, polling for now (including status reg) </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000033">Todo:</a></b></dt><dd>drdy int handling for adxl345 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000034">Todo:</a></b></dt><dd>eoc interrupt for itg3200, polling for now (including status reg) </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000035">Todo:</a></b></dt><dd>drdy int handling for adxl345 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000036">Todo:</a></b></dt><dd>drdy int handling for adxl345 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000037">Todo:</a></b></dt><dd>eoc interrupt for itg3200, polling for now (including status reg) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000038">Todo:</a></b></dt><dd>drdy int handling for adxl345 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000039">Todo:</a></b></dt><dd>eoc interrupt for itg3200, polling for now (including status reg) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000040">Todo:</a></b></dt><dd>drdy int handling for adxl345 </dd></dl>
 
 <p>Definition at line <a class="el" href="imu__nps_8c_source.html#l00030">30</a> of file <a class="el" href="imu__nps_8c_source.html">imu_nps.c</a>.</p>
 
 <p>References <a class="el" href="imu__nps_8h_source.html#l00074">ImuNps::accel_available</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="imu__nps_8h_source.html#l00075">ImuNps::gyro_available</a>, <a class="el" href="imu__nps_8c_source.html#l00028">imu_nps</a>, and <a class="el" href="imu__nps_8h_source.html#l00073">ImuNps::mag_available</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab288e8eb3d91d5c0e27e6f34cbe5e5ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void imu_nps_event </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="imu__nps_8c_source.html#l00065">65</a> of file <a class="el" href="imu__nps_8c_source.html">imu_nps.c</a>.</p>
+
+<p>References <a class="el" href="imu_8h_source.html#l00043">Imu::accel</a>, <a class="el" href="imu__nps_8h_source.html#l00074">ImuNps::accel_available</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8h_source.html#l00039">get_sys_time_usec()</a>, <a class="el" href="imu_8h_source.html#l00042">Imu::gyro</a>, <a class="el" href="imu__nps_8h_source.html#l00075">ImuNps::gyro_available</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00043">imu</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00166">IMU_BOARD_ID</a>, <a class="el" href="imu__nps_8c_source.html#l00028">imu_nps</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00350">imu_scale_accel()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00349">imu_scale_gyro()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00351">imu_scale_mag()</a>, <a class="el" href="imu_8h_source.html#l00044">Imu::mag</a>, and <a class="el" href="imu__nps_8h_source.html#l00073">ImuNps::mag_available</a>.</p>
+
+<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="imu__nps_8c_ab288e8eb3d91d5c0e27e6f34cbe5e5ac_cgraph.png" border="0" usemap="#imu__nps_8c_ab288e8eb3d91d5c0e27e6f34cbe5e5ac_cgraph" alt=""/></div>
+<map name="imu__nps_8c_ab288e8eb3d91d5c0e27e6f34cbe5e5ac_cgraph" id="imu__nps_8c_ab288e8eb3d91d5c0e27e6f34cbe5e5ac_cgraph">
+<area shape="rect" id="node3" href="linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="173,5,317,33"/><area shape="rect" id="node7" href="ahrs__gx3_8c.html#a34a2e1e2b450191b8ab1e849239810b2" title="imu_scale_accel" alt="" coords="183,55,308,83"/><area shape="rect" id="node9" href="ahrs__gx3_8c.html#a8d63b0a61c8ffe88dd15b40843b1ae1d" title="imu_scale_gyro" alt="" coords="185,106,305,134"/><area shape="rect" id="node11" href="ahrs__gx3_8c.html#a6ca6c7f78fab9df37eb980d2b4d1b3a9" title="imu_scale_mag" alt="" coords="184,157,307,185"/><area shape="rect" id="node5" href="sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="367,5,503,33"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -242,14 +276,14 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structImuNps.html">ImuNps</a> imu_nps</td>
+          <td class="memname">struct <a class="el" href="imu__nps_8h.html#structImuNps">ImuNps</a> imu_nps</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="imu__nps_8c_source.html#l00028">28</a> of file <a class="el" href="imu__nps_8c_source.html">imu_nps.c</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__nps_8c_source.html#l00044">imu_feed_gyro_accel()</a>, <a class="el" href="imu__nps_8c_source.html#l00057">imu_feed_mag()</a>, <a class="el" href="imu__nps_8c_source.html#l00030">imu_impl_init()</a>, <a class="el" href="imu__nps_8h_source.html#l00091">ImuEvent()</a>, and <a class="el" href="imu__nps_8h_source.html#l00083">ImuMagEvent()</a>.</p>
+<p>Referenced by <a class="el" href="imu__nps_8c_source.html#l00044">imu_feed_gyro_accel()</a>, <a class="el" href="imu__nps_8c_source.html#l00057">imu_feed_mag()</a>, <a class="el" href="imu__nps_8c_source.html#l00030">imu_impl_init()</a>, and <a class="el" href="imu__nps_8c_source.html#l00065">imu_nps_event()</a>.</p>
 
 </div>
 </div>
@@ -259,7 +293,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8b2fa0708e2db44c1b91938af97bac44.html">imu</a></li><li class="navelem"><a class="el" href="imu__nps_8c.html">imu_nps.c</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:15 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:36 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

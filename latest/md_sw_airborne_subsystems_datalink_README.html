@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('md_sw_airborne_subsystems_datalink_REA
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -138,8 +138,8 @@ $(document).ready(function(){initNavTree('md_sw_airborne_subsystems_datalink_REA
 <div class="line"><span class="preprocessor">#inlcude &quot;uart.h&quot; // or change this include to the header of your actual device interface</span></div>
 <div class="line"><span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="downlink_8h.html" title="Common code for AP and FBW telemetry. ">downlink.h</a>&quot;</span></div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">void</span> <a class="code" href="fixedwing_2datalink_8c.html#a87ff8c0ffff657dbde8566f062779428">dl_parse_msg</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line">  &lt;add your code to parse messages here&gt;</div>
+<div class="line"><span class="keywordtype">void</span> <a class="code" href="demo__ahrs__actuators_8c.html#a87ff8c0ffff657dbde8566f062779428" title="Should be called when chars are available in dl_buffer. ">dl_parse_msg</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line">  &lt;<a class="code" href="stereocam_8c.html#a0ffb074cb5068e70dc847ceed36a92e5" title="Increment circular buffer counter by i. ">add</a> your code to parse messages here&gt;</div>
 <div class="line">}</div>
 </div><!-- fragment --> You also need to poll for new characters, which means that you have to call the <code><a class="el" href="datalink_8h.html#a1e122bd87bd1f699141735e71a32d002">DatalinkEvent()</a></code> function in your main loop. This function is non-blocking and calls the decoder on each received byte. Finally the <code>dl_parse_msg</code> function is called when a complete message is received (checksum is valid).</li>
 </ol>
@@ -162,7 +162,7 @@ $(document).ready(function(){initNavTree('md_sw_airborne_subsystems_datalink_REA
 <div class="line"><span class="preprocessor"></span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="downlink_8h.html" title="Common code for AP and FBW telemetry. ">downlink.h</a>&quot;</span></div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">void</span> <a class="code" href="fixedwing_2datalink_8c.html#a87ff8c0ffff657dbde8566f062779428">dl_parse_msg</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><span class="keywordtype">void</span> <a class="code" href="demo__ahrs__actuators_8c.html#a87ff8c0ffff657dbde8566f062779428" title="Should be called when chars are available in dl_buffer. ">dl_parse_msg</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line">  <span class="keywordtype">int</span> msg_id = <a class="code" href="main__demo5_8c.html#a41ca1f0c42c768e235066d83071b1ed9">dl_buffer</a>[1];</div>
 <div class="line"></div>
 <div class="line">  <span class="keywordflow">switch</span> (msg_id) {</div>
@@ -264,7 +264,7 @@ $(document).ready(function(){initNavTree('md_sw_airborne_subsystems_datalink_REA
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:19 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

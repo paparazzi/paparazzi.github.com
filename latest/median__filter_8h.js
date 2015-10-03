@@ -1,7 +1,13 @@
 var median__filter_8h =
 [
-    [ "MedianFilterInt", "structMedianFilterInt.html", "structMedianFilterInt" ],
-    [ "MedianFilter3Int", "structMedianFilter3Int.html", "structMedianFilter3Int" ],
+    [ "MedianFilterInt", "median__filter_8h.html#structMedianFilterInt", [
+      [ "data", "median__filter_8h.html#ae6f5b78df8926b1eb941a66bd0114434", null ],
+      [ "dataIndex", "median__filter_8h.html#a9152e8bbaec647baf11357ba1ccc006e", null ],
+      [ "sortData", "median__filter_8h.html#a2c396e971d0801f3fcdbb3f0766034be", null ]
+    ] ],
+    [ "MedianFilter3Int", "median__filter_8h.html#structMedianFilter3Int", [
+      [ "mf", "median__filter_8h.html#a80a82ce3f7f2f5cda12feae1ea17c929", null ]
+    ] ],
     [ "GetMedianFilterEulerInt", "median__filter_8h.html#a5f6b0c0ca141e3af9a93a2942d664424", null ],
     [ "GetMedianFilterRatesInt", "median__filter_8h.html#a46a823b547fbf28d0dcc590bcfb0fdc8", null ],
     [ "GetMedianFilterVect3Int", "median__filter_8h.html#ab1386413c10d078a2b7d96dff7a827ef", null ],

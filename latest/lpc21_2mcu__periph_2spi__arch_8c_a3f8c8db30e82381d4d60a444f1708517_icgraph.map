@@ -1,15 +1,23 @@
 <map id="SpiSetCPHA" name="SpiSetCPHA">
-<area shape="rect" id="node3" href="$baro__MS5534A_8c.html#a2c7f6fba111434a3d7c371359bc24fc4" title="baro_MS5534A_send" alt="" coords="352,106,509,134"/>
-<area shape="rect" id="node9" href="$group__spi.html#ga02a7edceaff0d9adc8e9b236b9915415" title="Register a spi transaction in slave mode (only one transaction can be registered). " alt="" coords="155,55,291,83"/>
-<area shape="rect" id="node15" href="$lpc21_2mcu__periph_2spi__arch_8c.html#abcda020ad14ec4732c4ffff453060fff" title="SpiStart" alt="" coords="185,157,260,185"/>
-<area shape="rect" id="node5" href="$baro__MS5534A_8c.html#a09c949d7892f5002fbd9624a616de846" title="baro_MS5534A_event_task" alt="" coords="572,106,767,134"/>
-<area shape="rect" id="node7" href="$baro__MS5534A_8c.html#a11f2670f1389172417fc69aa0f924027" title="baro_MS5534A_event" alt="" coords="816,106,979,134"/>
-<area shape="rect" id="node11" href="$qr__code__spi__link_8h.html#afe718e5de23ff690fa62b35bb69553f0" title="qr_code_spi_link_init" alt="" coords="355,5,507,33"/>
-<area shape="rect" id="node13" href="$qr__code__spi__link_8h.html#ae9d12bd06ade748707f69958324c82f3" title="qr_code_spi_link_periodic" alt="" coords="340,55,521,83"/>
-<area shape="rect" id="node17" href="$lpc21_2mcu__periph_2spi__arch_8c.html#aa77dd16c5b07dd46e54d274ad55016ea" title="SpiEndOfTransaction" alt="" coords="355,157,507,185"/>
-<area shape="rect" id="node25" href="$group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="385,207,476,235"/>
-<area shape="rect" id="node27" href="$group__spi.html#ga5e9947e5b87e3a86a773b4a174ec6f08" title="Resume the SPI fifo. " alt="" coords="383,258,479,286"/>
-<area shape="rect" id="node19" href="$lpc21_2mcu__periph_2spi__arch_8c.html#a0c3a952b26b4118dcd848cb234062997" title="SpiAutomaton" alt="" coords="612,157,727,185"/>
-<area shape="rect" id="node21" href="$lpc21_2mcu__periph_2spi__arch_8c.html#a757fa003ca462da8fabcb89abf3943d3" title="spi1_ISR" alt="" coords="860,157,935,185"/>
-<area shape="rect" id="node23" href="$group__spi.html#gaaba00866ddaf960c0c761e61f81e5216" title="Architecture dependant SPI1 initialization. " alt="" coords="1027,157,1136,185"/>
+<area shape="rect" id="node3" href="$baro__MS5534A_8c.html#a2c7f6fba111434a3d7c371359bc24fc4" title="baro_MS5534A_send" alt="" coords="352,207,509,235"/>
+<area shape="rect" id="node9" href="$group__spi.html#ga02a7edceaff0d9adc8e9b236b9915415" title="Register a spi transaction in slave mode (only one transaction can be registered). " alt="" coords="155,106,291,134"/>
+<area shape="rect" id="node32" href="$lpc21_2mcu__periph_2spi__arch_8c.html#abcda020ad14ec4732c4ffff453060fff" title="SpiStart" alt="" coords="185,258,260,286"/>
+<area shape="rect" id="node5" href="$baro__MS5534A_8c.html#a09c949d7892f5002fbd9624a616de846" title="baro_MS5534A_event_task" alt="" coords="572,207,767,235"/>
+<area shape="rect" id="node7" href="$baro__MS5534A_8c.html#a11f2670f1389172417fc69aa0f924027" title="baro_MS5534A_event" alt="" coords="816,207,979,235"/>
+<area shape="rect" id="node11" href="$qr__code__spi__link_8h.html#afe718e5de23ff690fa62b35bb69553f0" title="qr_code_spi_link_init" alt="" coords="355,157,507,185"/>
+<area shape="rect" id="node13" href="$qr__code__spi__link_8h.html#ae9d12bd06ade748707f69958324c82f3" title="qr_code_spi_link_periodic" alt="" coords="340,5,521,33"/>
+<area shape="rect" id="node15" href="$bluegiga_8h.html#ac8a60ccee96fbe718a27b6194f3f14e0" title="bluegiga_init" alt="" coords="847,81,948,109"/>
+<area shape="rect" id="node27" href="$bluegiga_8c.html#a50a0f979fdb5e8cb70090c6de5f203ac" title="bluegiga_receive" alt="" coords="367,106,495,134"/>
+<area shape="rect" id="node17" href="$downlink_8h.html#afd49e1738cc6ad57218b944dcb94f73b" title="downlink_init" alt="" coords="1031,81,1132,109"/>
+<area shape="rect" id="node19" href="$demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="1184,55,1264,83"/>
+<area shape="rect" id="node23" href="$main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="1192,106,1256,134"/>
+<area shape="rect" id="node21" href="$demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1321,55,1375,83"/>
+<area shape="rect" id="node25" href="$sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="1313,106,1383,134"/>
+<area shape="rect" id="node29" href="$bluegiga_8c.html#a81dec5456e47bf1870486a85600c7e1c" title="trans_cb" alt="" coords="631,106,708,134"/>
+<area shape="rect" id="node34" href="$lpc21_2mcu__periph_2spi__arch_8c.html#aa77dd16c5b07dd46e54d274ad55016ea" title="SpiEndOfTransaction" alt="" coords="355,359,507,387"/>
+<area shape="rect" id="node42" href="$group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="385,258,476,286"/>
+<area shape="rect" id="node44" href="$group__spi.html#ga5e9947e5b87e3a86a773b4a174ec6f08" title="Resume the SPI fifo. " alt="" coords="383,309,479,337"/>
+<area shape="rect" id="node36" href="$lpc21_2mcu__periph_2spi__arch_8c.html#a0c3a952b26b4118dcd848cb234062997" title="SpiAutomaton" alt="" coords="612,359,727,387"/>
+<area shape="rect" id="node38" href="$lpc21_2mcu__periph_2spi__arch_8c.html#a757fa003ca462da8fabcb89abf3943d3" title="spi1_ISR" alt="" coords="860,359,935,387"/>
+<area shape="rect" id="node40" href="$group__spi.html#gaaba00866ddaf960c0c761e61f81e5216" title="Architecture dependant SPI1 initialization. " alt="" coords="1027,359,1136,387"/>
 </map>

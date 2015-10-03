@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('ahrs__gx3_8c.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -117,6 +117,7 @@ $(document).ready(function(){initNavTree('ahrs__gx3_8c.html','');});
 <p>Driver for Microstrain GX3 IMU/AHRS subsystem.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="ahrs__gx3_8h_source.html">subsystems/ahrs/ahrs_gx3.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="ahrs_8h_source.html">subsystems/ahrs.h</a>&quot;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for ahrs_gx3.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -124,7 +125,7 @@ $(document).ready(function(){initNavTree('ahrs__gx3_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2ahrs_2ahrs__gx3_8c" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2ahrs_2ahrs__gx3_8c" id="sw_2airborne_2subsystems_2ahrs_2ahrs__gx3_8c">
-<area shape="rect" id="node3" href="ahrs__gx3_8h.html" title="Driver for Microstrain GX3 IMU/AHRS subsystem. " alt="" coords="939,99,1101,143"/><area shape="rect" id="node7" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="109,270,248,298"/><area shape="rect" id="node37" href="ahrs_8h.html" title="Attitude and Heading Reference System interface. " alt="" coords="841,193,983,221"/><area shape="rect" id="node42" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="968,270,1035,298"/><area shape="rect" id="node60" href="ins_8h.html" title="Integrated Navigation System interface. " alt="" coords="1057,193,1191,221"/><area shape="rect" id="node66" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="1499,270,1637,298"/><area shape="rect" id="node80" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1917,355,2056,383"/><area shape="rect" id="node88" href="ahrs__aligner_8h.html" title="Interface to align the AHRS via low&#45;passed measurements at startup. " alt="" coords="661,347,824,391"/><area shape="rect" id="node93" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1717,193,1771,221"/><area shape="rect" id="node9" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="801,441,980,469"/><area shape="rect" id="node25" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="280,441,469,469"/><area shape="rect" id="node31" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="424,347,587,391"/><area shape="rect" id="node13" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="432,526,587,554"/><area shape="rect" id="node20" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="835,526,984,554"/><area shape="rect" id="node46" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="1224,347,1373,391"/><area shape="rect" id="node52" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1000,347,1149,391"/><area shape="rect" id="node48" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="1200,441,1323,469"/><area shape="rect" id="node70" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1563,441,1733,469"/><area shape="rect" id="node72" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1928,526,2013,554"/><area shape="rect" id="node84" href="link__device_8h.html" title="generic device header " alt="" coords="1832,441,2013,469"/></map>
+<area shape="rect" id="node3" href="ahrs__gx3_8h.html" title="Driver for Microstrain GX3 IMU/AHRS subsystem. " alt="" coords="544,99,707,143"/><area shape="rect" id="node87" href="ahrs_8h.html" title="Dispatcher to register actual AHRS implementations. " alt="" coords="183,107,324,135"/><area shape="rect" id="node7" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="216,270,355,298"/><area shape="rect" id="node37" href="ins_8h.html" title="Integrated Navigation System interface. " alt="" coords="507,193,640,221"/><area shape="rect" id="node47" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="644,270,711,298"/><area shape="rect" id="node60" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="944,270,1083,298"/><area shape="rect" id="node74" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1708,355,1847,383"/><area shape="rect" id="node83" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1163,193,1216,221"/><area shape="rect" id="node9" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="651,441,829,469"/><area shape="rect" id="node25" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="269,441,459,469"/><area shape="rect" id="node31" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="427,347,589,391"/><area shape="rect" id="node13" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="421,526,576,554"/><area shape="rect" id="node20" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="651,526,800,554"/><area shape="rect" id="node40" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="939,347,1088,391"/><area shape="rect" id="node42" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="915,441,1037,469"/><area shape="rect" id="node52" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="765,347,915,391"/><area shape="rect" id="node64" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1236,441,1407,469"/><area shape="rect" id="node66" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1592,526,1677,554"/><area shape="rect" id="node78" href="link__device_8h.html" title="generic device header " alt="" coords="1949,441,2131,469"/></map>
 </div>
 </div>
 <p><a href="ahrs__gx3_8c_source.html">Go to the source code of this file.</a></p>
@@ -140,9 +141,8 @@ Functions</h2></td></tr>
 <tr class="separator:a54120b092dbcc5ec4495b0e9f02caa31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80747e2f120f8cd39504d040eb31b545"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#a80747e2f120f8cd39504d040eb31b545">bef</a> (volatile <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *c)</td></tr>
 <tr class="separator:a80747e2f120f8cd39504d040eb31b545"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81e17b09f47068c02c345da1523f589b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#a81e17b09f47068c02c345da1523f589b">ahrs_align</a> (void)</td></tr>
-<tr class="memdesc:a81e17b09f47068c02c345da1523f589b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aligns the AHRS.  <a href="#a81e17b09f47068c02c345da1523f589b">More...</a><br/></td></tr>
-<tr class="separator:a81e17b09f47068c02c345da1523f589b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d9f6d29a049f23bc6b8a02d056a30ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#a0d9f6d29a049f23bc6b8a02d056a30ed">ahrs_gx3_align</a> (void)</td></tr>
+<tr class="separator:a0d9f6d29a049f23bc6b8a02d056a30ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad32faae58e391642ec8048cb11011998"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#ad32faae58e391642ec8048cb11011998">imu_impl_init</a> (void)</td></tr>
 <tr class="memdesc:ad32faae58e391642ec8048cb11011998"><td class="mdescLeft">&#160;</td><td class="mdescRight">must be defined by underlying hardware  <a href="#ad32faae58e391642ec8048cb11011998">More...</a><br/></td></tr>
 <tr class="separator:ad32faae58e391642ec8048cb11011998"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,26 +153,24 @@ Functions</h2></td></tr>
 <tr class="separator:acb7a83c7954119b08e90b88661889883"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57d29ec8ef9a33804865bedd9c578555"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#a57d29ec8ef9a33804865bedd9c578555">gx3_packet_parse</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> c)</td></tr>
 <tr class="separator:a57d29ec8ef9a33804865bedd9c578555"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3721663c9df7c7af5613486a3566afb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#aa3721663c9df7c7af5613486a3566afb">ahrs_init</a> (void)</td></tr>
-<tr class="memdesc:aa3721663c9df7c7af5613486a3566afb"><td class="mdescLeft">&#160;</td><td class="mdescRight">AHRS initialization.  <a href="#aa3721663c9df7c7af5613486a3566afb">More...</a><br/></td></tr>
-<tr class="separator:aa3721663c9df7c7af5613486a3566afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8c5b5a4ce38e0dd4e1234bad8adf92d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#aa8c5b5a4ce38e0dd4e1234bad8adf92d">ahrs_aligner_run</a> (void)</td></tr>
-<tr class="separator:aa8c5b5a4ce38e0dd4e1234bad8adf92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a321c9a82fcb75074c3041cbf6906e5ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#a321c9a82fcb75074c3041cbf6906e5ea">ahrs_aligner_init</a> (void)</td></tr>
-<tr class="separator:a321c9a82fcb75074c3041cbf6906e5ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d63b0a61c8ffe88dd15b40843b1ae1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#a8d63b0a61c8ffe88dd15b40843b1ae1d">imu_scale_gyro</a> (struct <a class="el" href="structImu.html">Imu</a> *_imu)</td></tr>
+<tr class="memitem:a1bfc031861e1be9e66e7551d2e3eef11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#a1bfc031861e1be9e66e7551d2e3eef11">ahrs_gx3_init</a> (void)</td></tr>
+<tr class="separator:a1bfc031861e1be9e66e7551d2e3eef11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab455d990b4555c8eadb7413685cc96e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#ab455d990b4555c8eadb7413685cc96e5">ahrs_gx3_register</a> (void)</td></tr>
+<tr class="separator:ab455d990b4555c8eadb7413685cc96e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d63b0a61c8ffe88dd15b40843b1ae1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#a8d63b0a61c8ffe88dd15b40843b1ae1d">imu_scale_gyro</a> (struct <a class="el" href="imu_8h.html#structImu">Imu</a> *_imu)</td></tr>
 <tr class="separator:a8d63b0a61c8ffe88dd15b40843b1ae1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34a2e1e2b450191b8ab1e849239810b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#a34a2e1e2b450191b8ab1e849239810b2">imu_scale_accel</a> (struct <a class="el" href="structImu.html">Imu</a> *_imu)</td></tr>
+<tr class="memitem:a34a2e1e2b450191b8ab1e849239810b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#a34a2e1e2b450191b8ab1e849239810b2">imu_scale_accel</a> (struct <a class="el" href="imu_8h.html#structImu">Imu</a> *_imu)</td></tr>
 <tr class="separator:a34a2e1e2b450191b8ab1e849239810b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ca6c7f78fab9df37eb980d2b4d1b3a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#a6ca6c7f78fab9df37eb980d2b4d1b3a9">imu_scale_mag</a> (struct <a class="el" href="structImu.html">Imu</a> *_imu)</td></tr>
+<tr class="memitem:a6ca6c7f78fab9df37eb980d2b4d1b3a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#a6ca6c7f78fab9df37eb980d2b4d1b3a9">imu_scale_mag</a> (struct <a class="el" href="imu_8h.html#structImu">Imu</a> *_imu)</td></tr>
 <tr class="separator:a6ca6c7f78fab9df37eb980d2b4d1b3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbfe8456fbba20baed2c37ceff265aae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#afbfe8456fbba20baed2c37ceff265aae">ahrs_gx3_publish_imu</a> (void)</td></tr>
+<tr class="separator:afbfe8456fbba20baed2c37ceff265aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a47b4c75c2ba6292ca65388b915787019"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structAhrsFloatQuat.html">AhrsFloatQuat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#a47b4c75c2ba6292ca65388b915787019">ahrs_impl</a></td></tr>
-<tr class="separator:a47b4c75c2ba6292ca65388b915787019"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66a55f68c9554dcf5ae9dd4dbd4479e3"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structAhrsAligner.html">AhrsAligner</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#a66a55f68c9554dcf5ae9dd4dbd4479e3">ahrs_aligner</a></td></tr>
-<tr class="separator:a66a55f68c9554dcf5ae9dd4dbd4479e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41cc0340636dff9433b6ac87c20d9d62"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="ahrs__gx3_8h.html#structAhrsGX3">AhrsGX3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__gx3_8c.html#a41cc0340636dff9433b6ac87c20d9d62">ahrs_gx3</a></td></tr>
+<tr class="memdesc:a41cc0340636dff9433b6ac87c20d9d62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Axis definition: X axis pointing forward, Y axis pointing to the right and Z axis pointing down.  <a href="#a41cc0340636dff9433b6ac87c20d9d62">More...</a><br/></td></tr>
+<tr class="separator:a41cc0340636dff9433b6ac87c20d9d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Driver for Microstrain GX3 IMU/AHRS subsystem. </p>
@@ -195,19 +193,19 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00035">35</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00039">39</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__gx3_8c_source.html#l00218">gx3_packet_read_message()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__gx3_8c_source.html#l00226">gx3_packet_read_message()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a81e17b09f47068c02c345da1523f589b"></a>
+<a class="anchor" id="a0d9f6d29a049f23bc6b8a02d056a30ed"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ahrs_align </td>
+          <td class="memname">void ahrs_gx3_align </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname">)</td><td></td>
@@ -216,63 +214,42 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Aligns the AHRS. </p>
-<p>Called after ahrs_aligner has run to set initial attitude and biases. Must set the ahrs status to AHRS_RUNNING. Needs to be implemented by each AHRS algorithm. </p>
+<p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00075">75</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
 
-<p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00070">70</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
+<p>References <a class="el" href="ahrs__gx3_8c_source.html#l00047">ahrs_gx3</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00082">AhrsGX3::is_aligned</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, and <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00243">uart_put_byte()</a>.</p>
 
-<p>References <a class="el" href="ins__float__invariant_8h_source.html#l00118">ahrs_impl</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00072">GX3Running</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00071">GX3Uninit</a>, and <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00084">uart_transmit()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__gx3_8c_source.html#l00106">imu_impl_init()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__gx3_8c_a81e17b09f47068c02c345da1523f589b_cgraph.png" border="0" usemap="#ahrs__gx3_8c_a81e17b09f47068c02c345da1523f589b_cgraph" alt=""/></div>
-<map name="ahrs__gx3_8c_a81e17b09f47068c02c345da1523f589b_cgraph" id="ahrs__gx3_8c_a81e17b09f47068c02c345da1523f589b_cgraph">
-<area shape="rect" id="node3" href="linux_2mcu__periph_2uart__arch_8c.html#a152abf2943c9140c3830b5a0f792aaf5" title="uart_transmit" alt="" coords="141,5,251,33"/></map>
+<div class="center"><img src="ahrs__gx3_8c_a0d9f6d29a049f23bc6b8a02d056a30ed_cgraph.png" border="0" usemap="#ahrs__gx3_8c_a0d9f6d29a049f23bc6b8a02d056a30ed_cgraph" alt=""/></div>
+<map name="ahrs__gx3_8c_a0d9f6d29a049f23bc6b8a02d056a30ed_cgraph" id="ahrs__gx3_8c_a0d9f6d29a049f23bc6b8a02d056a30ed_cgraph">
+<area shape="rect" id="node3" href="linux_2mcu__periph_2uart__arch_8c.html#ac52690ed0854ab6c1b5ef3ba0ccc8040" title="uart_put_byte" alt="" coords="172,5,281,33"/></map>
 </div>
 </p>
 
-</div>
-</div>
-<a class="anchor" id="a321c9a82fcb75074c3041cbf6906e5ea"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ahrs_aligner_init </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname">)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00335">335</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
-
-<p>References <a class="el" href="ahrs__aligner_8c_source.html#l00040">accel_sum</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00035">ahrs_aligner</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00036">AHRS_ALIGNER_RUNNING</a>, <a class="el" href="telemetry__common_8h_source.html#l00040">DefaultPeriodic</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00039">gyro_sum</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00565">INT_RATES_ZERO</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00282">INT_VECT3_ZERO</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00044">AhrsAligner::low_noise_cnt</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00041">mag_sum</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00043">AhrsAligner::noise</a>, <a class="el" href="telemetry_8c_source.html#l00038">register_periodic_telemetry()</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00043">samples_idx</a>, and <a class="el" href="ahrs__aligner_8h_source.html#l00045">AhrsAligner::status</a>.</p>
-
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__gx3_8c_a321c9a82fcb75074c3041cbf6906e5ea_cgraph.png" border="0" usemap="#ahrs__gx3_8c_a321c9a82fcb75074c3041cbf6906e5ea_cgraph" alt=""/></div>
-<map name="ahrs__gx3_8c_a321c9a82fcb75074c3041cbf6906e5ea_cgraph" id="ahrs__gx3_8c_a321c9a82fcb75074c3041cbf6906e5ea_cgraph">
-<area shape="rect" id="node3" href="telemetry_8c.html#abb4aa9b3c0c8d93e1372de5da86de828" title="Register a telemetry callback function. " alt="" coords="181,5,379,33"/></map>
+<div class="center"><img src="ahrs__gx3_8c_a0d9f6d29a049f23bc6b8a02d056a30ed_icgraph.png" border="0" usemap="#ahrs__gx3_8c_a0d9f6d29a049f23bc6b8a02d056a30ed_icgraph" alt=""/></div>
+<map name="ahrs__gx3_8c_a0d9f6d29a049f23bc6b8a02d056a30ed_icgraph" id="ahrs__gx3_8c_a0d9f6d29a049f23bc6b8a02d056a30ed_icgraph">
+<area shape="rect" id="node3" href="ahrs__gx3_8c.html#ad32faae58e391642ec8048cb11011998" title="must be defined by underlying hardware " alt="" coords="171,5,277,33"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="aa8c5b5a4ce38e0dd4e1234bad8adf92d"></a>
+<a class="anchor" id="a1bfc031861e1be9e66e7551d2e3eef11"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ahrs_aligner_run </td>
+          <td class="memname">void ahrs_gx3_init </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname">)</td><td></td>
@@ -283,16 +260,40 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00327">327</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
 
-<p>References <a class="el" href="imu_8h_source.html#l00043">Imu::accel</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00040">accel_sum</a>, <a class="el" href="ahrs_8c_source.html#l00030">ahrs</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00035">ahrs_aligner</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00037">AHRS_ALIGNER_LOCKED</a>, <a class="el" href="ahrs_8h_source.html#l00036">AHRS_RUNNING</a>, <a class="el" href="imu_8h_source.html#l00042">Imu::gyro</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00039">gyro_sum</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00047">imu</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00565">INT_RATES_ZERO</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00282">INT_VECT3_ZERO</a>, <a class="el" href="linux_2led__hw_8h_source.html#l00036">LED_ON</a>, <a class="el" href="linux_2led__hw_8h_source.html#l00038">LED_TOGGLE</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00044">AhrsAligner::low_noise_cnt</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00078">LOW_NOISE_THRESHOLD</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00081">LOW_NOISE_TIME</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00041">AhrsAligner::lp_accel</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00040">AhrsAligner::lp_gyro</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00042">AhrsAligner::lp_mag</a>, <a class="el" href="imu_8h_source.html#l00044">Imu::mag</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00041">mag_sum</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00043">AhrsAligner::noise</a>, <a class="el" href="pprz__algebra_8h_source.html#l00335">RATES_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00377">RATES_SDIV</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00042">ref_sensor_samples</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00043">samples_idx</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00037">SAMPLES_NB</a>, <a class="el" href="ahrs_8h_source.html#l00045">Ahrs::status</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00045">AhrsAligner::status</a>, <a class="el" href="pprz__algebra_8h_source.html#l00138">VECT3_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00187">VECT3_SDIV</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00087">Int32Vect3::z</a>.</p>
+<p>References <a class="el" href="ahrs__gx3_8c_source.html#l00047">ahrs_gx3</a>, <a class="el" href="imu_8h_source.html#l00053">Imu::body_to_imu</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00043">imu</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00082">AhrsGX3::is_aligned</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00071">AhrsGX3::ltp_to_imu_quat</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00072">AhrsGX3::mag_offset</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00217">orientationGetQuat_f()</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00526">QUAT_COPY</a>.</p>
+
+<p>Referenced by <a class="el" href="ahrs__gx3_8c_source.html#l00340">ahrs_gx3_register()</a>.</p>
+
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ahrs__gx3_8c_a1bfc031861e1be9e66e7551d2e3eef11_cgraph.png" border="0" usemap="#ahrs__gx3_8c_a1bfc031861e1be9e66e7551d2e3eef11_cgraph" alt=""/></div>
+<map name="ahrs__gx3_8c_a1bfc031861e1be9e66e7551d2e3eef11_cgraph" id="ahrs__gx3_8c_a1bfc031861e1be9e66e7551d2e3eef11_cgraph">
+<area shape="rect" id="node3" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float). " alt="" coords="161,30,316,58"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title="orientationCalcQuat_f" alt="" coords="365,30,525,58"/><area shape="rect" id="node7" href="group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f" title="Quaternion from rotation matrix. " alt="" coords="579,5,720,33"/><area shape="rect" id="node9" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="Quaternion from Euler angles. " alt="" coords="575,55,724,83"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ahrs__gx3_8c_a1bfc031861e1be9e66e7551d2e3eef11_icgraph.png" border="0" usemap="#ahrs__gx3_8c_a1bfc031861e1be9e66e7551d2e3eef11_icgraph" alt=""/></div>
+<map name="ahrs__gx3_8c_a1bfc031861e1be9e66e7551d2e3eef11_icgraph" id="ahrs__gx3_8c_a1bfc031861e1be9e66e7551d2e3eef11_icgraph">
+<area shape="rect" id="node3" href="ahrs__gx3_8h.html#ab455d990b4555c8eadb7413685cc96e5" title="ahrs_gx3_register" alt="" coords="160,5,296,33"/></map>
+</div>
+</p>
 
 </div>
 </div>
-<a class="anchor" id="aa3721663c9df7c7af5613486a3566afb"></a>
+<a class="anchor" id="afbfe8456fbba20baed2c37ceff265aae"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ahrs_init </td>
+          <td class="memname">void ahrs_gx3_publish_imu </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname">)</td><td></td>
@@ -301,21 +302,63 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>AHRS initialization. </p>
-<p>Called at startup. Needs to be implemented by each AHRS algorithm. </p>
+<p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00353">353</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
 
-<p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00314">314</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
+<p>References <a class="el" href="imu_8h_source.html#l00043">Imu::accel</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8h_source.html#l00039">get_sys_time_usec()</a>, <a class="el" href="imu_8h_source.html#l00042">Imu::gyro</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00043">imu</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00218">IMU_GX3_ID</a>, and <a class="el" href="imu_8h_source.html#l00044">Imu::mag</a>.</p>
 
-<p>References <a class="el" href="ahrs_8c_source.html#l00030">ahrs</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00035">ahrs_aligner</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00037">AHRS_ALIGNER_LOCKED</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00118">ahrs_impl</a>, <a class="el" href="ahrs_8h_source.html#l00035">AHRS_UNINIT</a>, <a class="el" href="imu_8h_source.html#l00067">ImuFloat::body_to_imu</a>, <a class="el" href="imu_8c_source.html#l00125">imuf</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00217">orientationGetQuat_f()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00518">QUAT_COPY</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00045">AhrsAligner::status</a>, and <a class="el" href="ahrs_8h_source.html#l00045">Ahrs::status</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__gx3_8h_source.html#l00103">ImuEvent()</a>.</p>
 
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__gx3_8c_aa3721663c9df7c7af5613486a3566afb_cgraph.png" border="0" usemap="#ahrs__gx3_8c_aa3721663c9df7c7af5613486a3566afb_cgraph" alt=""/></div>
-<map name="ahrs__gx3_8c_aa3721663c9df7c7af5613486a3566afb_cgraph" id="ahrs__gx3_8c_aa3721663c9df7c7af5613486a3566afb_cgraph">
-<area shape="rect" id="node3" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float). " alt="" coords="132,30,287,58"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title="orientationCalcQuat_f" alt="" coords="336,30,496,58"/><area shape="rect" id="node7" href="pprz__algebra__float_8c.html#a29a7db3c967cea290d25b28b4d17f01f" title="Quaternion from rotation matrix. " alt="" coords="549,5,691,33"/><area shape="rect" id="node9" href="pprz__algebra__float_8c.html#a99c8f1ff70a5b638cf87ea816f1756a2" title="Quaternion from Euler angles. " alt="" coords="545,55,695,83"/></map>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ahrs__gx3_8c_afbfe8456fbba20baed2c37ceff265aae_cgraph.png" border="0" usemap="#ahrs__gx3_8c_afbfe8456fbba20baed2c37ceff265aae_cgraph" alt=""/></div>
+<map name="ahrs__gx3_8c_afbfe8456fbba20baed2c37ceff265aae_cgraph" id="ahrs__gx3_8c_afbfe8456fbba20baed2c37ceff265aae_cgraph">
+<area shape="rect" id="node3" href="linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="216,5,360,33"/><area shape="rect" id="node5" href="sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="409,5,545,33"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ahrs__gx3_8c_afbfe8456fbba20baed2c37ceff265aae_icgraph.png" border="0" usemap="#ahrs__gx3_8c_afbfe8456fbba20baed2c37ceff265aae_icgraph" alt=""/></div>
+<map name="ahrs__gx3_8c_afbfe8456fbba20baed2c37ceff265aae_icgraph" id="ahrs__gx3_8c_afbfe8456fbba20baed2c37ceff265aae_icgraph">
+<area shape="rect" id="node3" href="ahrs__gx3_8h.html#a1caa6f284af9f14d111ea11166236bf4" title="ImuEvent" alt="" coords="216,5,299,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab455d990b4555c8eadb7413685cc96e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ahrs_gx3_register </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000034">Todo:</a></b></dt><dd>: provide enable function </dd></dl>
+
+<p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00340">340</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
+
+<p>References <a class="el" href="ahrs__gx3_8c_source.html#l00327">ahrs_gx3_init()</a>, and <a class="el" href="ahrs_8c_source.html#l00057">ahrs_register_impl()</a>.</p>
+
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ahrs__gx3_8c_ab455d990b4555c8eadb7413685cc96e5_cgraph.png" border="0" usemap="#ahrs__gx3_8c_ab455d990b4555c8eadb7413685cc96e5_cgraph" alt=""/></div>
+<map name="ahrs__gx3_8c_ab455d990b4555c8eadb7413685cc96e5_cgraph" id="ahrs__gx3_8c_ab455d990b4555c8eadb7413685cc96e5_cgraph">
+<area shape="rect" id="node3" href="ahrs__gx3_8c.html#a1bfc031861e1be9e66e7551d2e3eef11" title="ahrs_gx3_init" alt="" coords="207,30,313,58"/><area shape="rect" id="node13" href="ahrs_8c.html#a3d1e9af59a49b4a13e84adbb37d0efec" title="Register an AHRS implementation. " alt="" coords="191,81,329,109"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float). " alt="" coords="380,30,535,58"/><area shape="rect" id="node7" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title="orientationCalcQuat_f" alt="" coords="584,30,744,58"/><area shape="rect" id="node9" href="group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f" title="Quaternion from rotation matrix. " alt="" coords="797,5,939,33"/><area shape="rect" id="node11" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="Quaternion from Euler angles. " alt="" coords="793,55,943,83"/></map>
 </div>
 </p>
 
@@ -343,20 +386,20 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00050">50</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00053">53</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
 
-<p>References <a class="el" href="ins__alt__float_8c_source.html#l00236">p</a>.</p>
+<p>References <a class="el" href="ins__alt__float_8c_source.html#l00249">p</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__gx3_8c_source.html#l00218">gx3_packet_read_message()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__gx3_8c_source.html#l00226">gx3_packet_read_message()</a>.</p>
 
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c_a80747e2f120f8cd39504d040eb31b545_icgraph.png" border="0" usemap="#ahrs__gx3_8c_a80747e2f120f8cd39504d040eb31b545_icgraph" alt=""/></div>
 <map name="ahrs__gx3_8c_a80747e2f120f8cd39504d040eb31b545_icgraph" id="ahrs__gx3_8c_a80747e2f120f8cd39504d040eb31b545_icgraph">
-<area shape="rect" id="node3" href="ahrs__gx3_8h.html#acb7a83c7954119b08e90b88661889883" title="gx3_packet_read_message" alt="" coords="96,5,293,33"/><area shape="rect" id="node5" href="ahrs__gx3_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="341,5,424,33"/></map>
+<area shape="rect" id="node3" href="ahrs__gx3_8h.html#acb7a83c7954119b08e90b88661889883" title="gx3_packet_read_message" alt="" coords="96,5,293,33"/><area shape="rect" id="node5" href="ahrs__gx3_8h.html#a1caa6f284af9f14d111ea11166236bf4" title="ImuEvent" alt="" coords="341,5,424,33"/></map>
 </div>
 </p>
 
@@ -376,31 +419,31 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00282">282</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00294">294</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
 
-<p>References <a class="el" href="ins__float__invariant_8h_source.html#l00118">ahrs_impl</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00048">GX3_HEADER</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00047">GX3_MSG_LEN</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00061">gx3_verify_chk()</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00067">GX3PacketReading</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00066">GX3PacketWaiting</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p>References <a class="el" href="ahrs__gx3_8c_source.html#l00047">ahrs_gx3</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00056">GX3Packet::chksm_error</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00046">GX3_HEADER</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00045">GX3_MSG_LEN</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00065">gx3_verify_chk()</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00065">GX3PacketReading</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00064">GX3PacketWaiting</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00057">GX3Packet::hdr_error</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00055">GX3Packet::msg_available</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00058">GX3Packet::msg_buf</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00060">GX3Packet::msg_idx</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00074">AhrsGX3::packet</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00059">GX3Packet::status</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__gx3_8h_source.html#l00093">ReadGX3Buffer()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__gx3_8h_source.html#l00096">ReadGX3Buffer()</a>.</p>
 
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c_a57d29ec8ef9a33804865bedd9c578555_cgraph.png" border="0" usemap="#ahrs__gx3_8c_a57d29ec8ef9a33804865bedd9c578555_cgraph" alt=""/></div>
 <map name="ahrs__gx3_8c_a57d29ec8ef9a33804865bedd9c578555_cgraph" id="ahrs__gx3_8c_a57d29ec8ef9a33804865bedd9c578555_cgraph">
 <area shape="rect" id="node3" href="ahrs__gx3_8c.html#a54120b092dbcc5ec4495b0e9f02caa31" title="gx3_verify_chk" alt="" coords="192,5,307,33"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c_a57d29ec8ef9a33804865bedd9c578555_icgraph.png" border="0" usemap="#ahrs__gx3_8c_a57d29ec8ef9a33804865bedd9c578555_icgraph" alt=""/></div>
 <map name="ahrs__gx3_8c_a57d29ec8ef9a33804865bedd9c578555_icgraph" id="ahrs__gx3_8c_a57d29ec8ef9a33804865bedd9c578555_icgraph">
-<area shape="rect" id="node3" href="ahrs__gx3_8h.html#a7d7b981270fa60a248894025e1791de6" title="ReadGX3Buffer" alt="" coords="192,5,309,33"/><area shape="rect" id="node5" href="ahrs__gx3_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="357,5,440,33"/></map>
+<area shape="rect" id="node3" href="ahrs__gx3_8h.html#a7d7b981270fa60a248894025e1791de6" title="ReadGX3Buffer" alt="" coords="192,5,309,33"/><area shape="rect" id="node5" href="ahrs__gx3_8h.html#a1caa6f284af9f14d111ea11166236bf4" title="ImuEvent" alt="" coords="357,5,440,33"/></map>
 </div>
 </p>
 
@@ -420,31 +463,31 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00218">218</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00226">226</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
 
-<p>References <a class="el" href="imu_8h_source.html#l00064">ImuFloat::accel</a>, <a class="el" href="imu_8h_source.html#l00043">Imu::accel</a>, <a class="el" href="pprz__algebra_8h_source.html#l00720">ACCELS_BFP_OF_REAL</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00118">ahrs_impl</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00050">bef()</a>, <a class="el" href="imu_8h_source.html#l00067">ImuFloat::body_to_imu</a>, <a class="el" href="gps_8h_source.html#l00072">GpsState::course</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00548">float_eulers_of_rmat()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00312">FLOAT_RMAT_COMP</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00317">FLOAT_RMAT_TRANSP_RATEMULT</a>, <a class="el" href="gps_8c_source.html#l00041">gps</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00035">GX3_CHKSM</a>, <a class="el" href="imu_8h_source.html#l00063">ImuFloat::gyro</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00047">imu</a>, <a class="el" href="imu_8c_source.html#l00125">imuf</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00226">orientationGetRMat_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00082">FloatEulers::psi</a>, <a class="el" href="state_8h_source.html#l01152">stateSetBodyRates_f()</a>, <a class="el" href="state_8h_source.html#l01076">stateSetNedToBodyEulers_f()</a>, <a class="el" href="state_8h_source.html#l01070">stateSetNedToBodyRMat_f()</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00180">VECT3_SMUL</a>.</p>
+<p>References <a class="el" href="ahrs__gx3_8h_source.html#l00079">AhrsGX3::accel</a>, <a class="el" href="imu_8h_source.html#l00043">Imu::accel</a>, <a class="el" href="pprz__algebra_8h_source.html#l00728">ACCELS_BFP_OF_REAL</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00047">ahrs_gx3</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00053">bef()</a>, <a class="el" href="imu_8h_source.html#l00053">Imu::body_to_imu</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00076">AhrsGX3::chksm</a>, <a class="el" href="gps_8h_source.html#l00075">GpsState::course</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00548">float_eulers_of_rmat()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00316">FLOAT_RMAT_COMP</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00321">FLOAT_RMAT_TRANSP_RATEMULT</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00075">AhrsGX3::freq</a>, <a class="el" href="gps_8c_source.html#l00041">gps</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00039">GX3_CHKSM</a>, <a class="el" href="imu_8h_source.html#l00042">Imu::gyro</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00043">imu</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00078">AhrsGX3::ltime</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00077">FloatRMat::m</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00072">AhrsGX3::mag_offset</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00058">GX3Packet::msg_buf</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00226">orientationGetRMat_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00093">FloatRates::p</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00074">AhrsGX3::packet</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::psi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::r</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00080">AhrsGX3::rate</a>, <a class="el" href="pprz__algebra_8h_source.html#l00692">RATES_BFP_OF_REAL</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00081">AhrsGX3::rmat</a>, <a class="el" href="state_8h_source.html#l01152">stateSetBodyRates_f()</a>, <a class="el" href="state_8h_source.html#l01076">stateSetNedToBodyEulers_f()</a>, <a class="el" href="state_8h_source.html#l01070">stateSetNedToBodyRMat_f()</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00077">AhrsGX3::time</a>, <a class="el" href="pprz__algebra_8h_source.html#l00188">VECT3_SMUL</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00054">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::z</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__gx3_8h_source.html#l00098">ImuEvent()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__gx3_8h_source.html#l00103">ImuEvent()</a>.</p>
 
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c_acb7a83c7954119b08e90b88661889883_cgraph.png" border="0" usemap="#ahrs__gx3_8c_acb7a83c7954119b08e90b88661889883_cgraph" alt=""/></div>
 <map name="ahrs__gx3_8c_acb7a83c7954119b08e90b88661889883_cgraph" id="ahrs__gx3_8c_acb7a83c7954119b08e90b88661889883_cgraph">
-<area shape="rect" id="node3" href="ahrs__gx3_8c.html#a80747e2f120f8cd39504d040eb31b545" title="bef" alt="" coords="329,5,372,33"/><area shape="rect" id="node5" href="pprz__algebra__float_8c.html#ac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="275,55,427,83"/><area shape="rect" id="node7" href="group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="272,106,429,134"/><area shape="rect" id="node13" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="273,157,428,185"/><area shape="rect" id="node15" href="group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float). " alt="" coords="252,207,449,235"/><area shape="rect" id="node19" href="group__state__attitude.html#ga4d07df56be94afd0512e08fac961dbd3" title="Set vehicle body attitude from rotation matrix (float). " alt="" coords="256,258,445,286"/><area shape="rect" id="node9" href="group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title="orientationCalcRMat_f" alt="" coords="500,106,660,134"/><area shape="rect" id="node11" href="pprz__algebra__float_8c.html#a4f32e245bb37ef9fdf43872080f63fbc" title="float_rmat_of_quat" alt="" coords="711,106,852,134"/><area shape="rect" id="node17" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float). " alt="" coords="499,207,661,235"/><area shape="rect" id="node21" href="group__math__orientation__representation.html#ga2c06304a23d68ae280c1cc5f4f01386a" title="Set vehicle body attitude from rotation matrix (float). " alt="" coords="503,258,657,286"/></map>
+<area shape="rect" id="node3" href="ahrs__gx3_8c.html#a80747e2f120f8cd39504d040eb31b545" title="bef" alt="" coords="329,5,372,33"/><area shape="rect" id="node5" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="275,55,427,83"/><area shape="rect" id="node7" href="group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="272,106,429,134"/><area shape="rect" id="node13" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="273,157,428,185"/><area shape="rect" id="node15" href="group__state__attitude.html#ga738be1775d06ee00dbbf17124c230e04" title="Set vehicle body attitude from euler angles (float). " alt="" coords="252,207,449,235"/><area shape="rect" id="node19" href="group__state__attitude.html#ga4d07df56be94afd0512e08fac961dbd3" title="Set vehicle body attitude from rotation matrix (float). " alt="" coords="256,258,445,286"/><area shape="rect" id="node9" href="group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title="orientationCalcRMat_f" alt="" coords="500,106,660,134"/><area shape="rect" id="node11" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title="float_rmat_of_quat" alt="" coords="711,106,852,134"/><area shape="rect" id="node17" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float). " alt="" coords="499,207,661,235"/><area shape="rect" id="node21" href="group__math__orientation__representation.html#ga2c06304a23d68ae280c1cc5f4f01386a" title="Set vehicle body attitude from rotation matrix (float). " alt="" coords="503,258,657,286"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c_acb7a83c7954119b08e90b88661889883_icgraph.png" border="0" usemap="#ahrs__gx3_8c_acb7a83c7954119b08e90b88661889883_icgraph" alt=""/></div>
 <map name="ahrs__gx3_8c_acb7a83c7954119b08e90b88661889883_icgraph" id="ahrs__gx3_8c_acb7a83c7954119b08e90b88661889883_icgraph">
-<area shape="rect" id="node3" href="ahrs__gx3_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="251,5,333,33"/></map>
+<area shape="rect" id="node3" href="ahrs__gx3_8h.html#a1caa6f284af9f14d111ea11166236bf4" title="ImuEvent" alt="" coords="251,5,333,33"/></map>
 </div>
 </p>
 
@@ -472,20 +515,20 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00061">61</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00065">65</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
 
-<p>References <a class="el" href="imu__um6_8c_source.html#l00046">chk_calc</a>, and <a class="el" href="ahrs__gx3_8h_source.html#l00047">GX3_MSG_LEN</a>.</p>
+<p>References <a class="el" href="imu__um6_8c_source.html#l00047">chk_calc</a>, and <a class="el" href="ahrs__gx3_8h_source.html#l00045">GX3_MSG_LEN</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__gx3_8c_source.html#l00282">gx3_packet_parse()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__gx3_8c_source.html#l00294">gx3_packet_parse()</a>.</p>
 
-<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c_a54120b092dbcc5ec4495b0e9f02caa31_icgraph.png" border="0" usemap="#ahrs__gx3_8c_a54120b092dbcc5ec4495b0e9f02caa31_icgraph" alt=""/></div>
 <map name="ahrs__gx3_8c_a54120b092dbcc5ec4495b0e9f02caa31_icgraph" id="ahrs__gx3_8c_a54120b092dbcc5ec4495b0e9f02caa31_icgraph">
-<area shape="rect" id="node3" href="ahrs__gx3_8h.html#a57d29ec8ef9a33804865bedd9c578555" title="gx3_packet_parse" alt="" coords="168,5,307,33"/><area shape="rect" id="node5" href="ahrs__gx3_8h.html#a7d7b981270fa60a248894025e1791de6" title="ReadGX3Buffer" alt="" coords="355,5,472,33"/><area shape="rect" id="node7" href="ahrs__gx3_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="520,5,603,33"/></map>
+<area shape="rect" id="node3" href="ahrs__gx3_8h.html#a57d29ec8ef9a33804865bedd9c578555" title="gx3_packet_parse" alt="" coords="168,5,307,33"/><area shape="rect" id="node5" href="ahrs__gx3_8h.html#a7d7b981270fa60a248894025e1791de6" title="ReadGX3Buffer" alt="" coords="355,5,472,33"/><area shape="rect" id="node7" href="ahrs__gx3_8h.html#a1caa6f284af9f14d111ea11166236bf4" title="ImuEvent" alt="" coords="520,5,603,33"/></map>
 </div>
 </p>
 
@@ -507,18 +550,18 @@ Variables</h2></td></tr>
 
 <p>must be defined by underlying hardware </p>
 
-<p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00099">99</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00106">106</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
 
-<p>References <a class="el" href="ahrs_8c_source.html#l00030">ahrs</a>, <a class="el" href="ahrs__chimu__spi_8c_source.html#l00071">ahrs_align()</a>, <a class="el" href="ins__float__invariant_8h_source.html#l00118">ahrs_impl</a>, <a class="el" href="ahrs_8h_source.html#l00036">AHRS_RUNNING</a>, <a class="el" href="telemetry__common_8h_source.html#l00040">DefaultPeriodic</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00066">GX3PacketWaiting</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00071">GX3Uninit</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00051">IMU_GX3_LONG_DELAY</a>, <a class="el" href="telemetry_8c_source.html#l00038">register_periodic_telemetry()</a>, <a class="el" href="ahrs_8h_source.html#l00045">Ahrs::status</a>, and <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00084">uart_transmit()</a>.</p>
+<p>References <a class="el" href="ahrs__gx3_8c_source.html#l00047">ahrs_gx3</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00075">ahrs_gx3_align()</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00056">GX3Packet::chksm_error</a>, <a class="el" href="telemetry_8h_source.html#l00067">DefaultPeriodic</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00064">GX3PacketWaiting</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00057">GX3Packet::hdr_error</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00049">IMU_GX3_LONG_DELAY</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00082">AhrsGX3::is_aligned</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00055">GX3Packet::msg_available</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00060">GX3Packet::msg_idx</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00074">AhrsGX3::packet</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00059">GX3Packet::status</a>, and <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00243">uart_put_byte()</a>.</p>
 
-<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c_ad32faae58e391642ec8048cb11011998_cgraph.png" border="0" usemap="#ahrs__gx3_8c_ad32faae58e391642ec8048cb11011998_cgraph" alt=""/></div>
 <map name="ahrs__gx3_8c_ad32faae58e391642ec8048cb11011998_cgraph" id="ahrs__gx3_8c_ad32faae58e391642ec8048cb11011998_cgraph">
-<area shape="rect" id="node3" href="ahrs__chimu__spi_8c.html#a81e17b09f47068c02c345da1523f589b" title="Aligns the AHRS. " alt="" coords="216,5,301,33"/><area shape="rect" id="node5" href="telemetry_8c.html#abb4aa9b3c0c8d93e1372de5da86de828" title="Register a telemetry callback function. " alt="" coords="160,55,357,83"/><area shape="rect" id="node7" href="linux_2mcu__periph_2uart__arch_8c.html#a152abf2943c9140c3830b5a0f792aaf5" title="uart_transmit" alt="" coords="204,106,313,134"/></map>
+<area shape="rect" id="node3" href="ahrs__gx3_8c.html#a0d9f6d29a049f23bc6b8a02d056a30ed" title="ahrs_gx3_align" alt="" coords="200,5,317,33"/><area shape="rect" id="node5" href="linux_2mcu__periph_2uart__arch_8c.html#ac52690ed0854ab6c1b5ef3ba0ccc8040" title="uart_put_byte" alt="" coords="407,30,516,58"/><area shape="rect" id="node7" href="telemetry_8c.html#a4c92e515e0ce29dc4294304cb2749e76" title="Register a telemetry callback function. " alt="" coords="160,106,357,134"/></map>
 </div>
 </p>
 
@@ -541,7 +584,7 @@ Variables</h2></td></tr>
 <p>optional. </p>
 <p>If not provided by implementation, empty function is used </p>
 
-<p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00211">211</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00218">218</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
 
 </div>
 </div>
@@ -552,25 +595,25 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void imu_scale_accel </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structImu.html">Imu</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="imu_8h.html#structImu">Imu</a> *&#160;</td>
           <td class="paramname"><em>_imu</em>)</td><td></td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00340">340</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00350">350</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2main_8c_source.html#l00346">on_accel_event()</a>.</p>
+<p>Referenced by <a class="el" href="imu__aspirin2_8c_source.html#l00185">aspirin2_subsystem_event()</a>, <a class="el" href="ins__xsens_8c_source.html#l00410">handle_ins_msg()</a>, <a class="el" href="imu__apogee_8c_source.html#l00103">imu_apogee_event()</a>, <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00161">imu_aspirin2_event()</a>, <a class="el" href="imu__aspirin_8c_source.html#l00118">imu_aspirin_event()</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00129">imu_aspirin_i2c_event()</a>, <a class="el" href="imu__b2_8c_source.html#l00152">imu_b2_event()</a>, <a class="el" href="imu__bebop_8c_source.html#l00109">imu_bebop_event()</a>, <a class="el" href="imu__crista_8c_source.html#l00091">imu_christa_event()</a>, <a class="el" href="imu__drotek__10dof__v2_8c_source.html#l00117">imu_drotek2_event()</a>, <a class="el" href="imu__gl1_8c_source.html#l00118">imu_gl1_i2c_event()</a>, <a class="el" href="imu__hbmini_8c_source.html#l00093">imu_hbmini_event()</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00113">imu_mpu9250_event()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00099">imu_mpu_hmc_event()</a>, <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00087">imu_mpu_i2c_event()</a>, <a class="el" href="imu__mpu6000_8c_source.html#l00088">imu_mpu_spi_event()</a>, <a class="el" href="imu__navgo_8c_source.html#l00120">imu_navgo_event()</a>, <a class="el" href="imu__navstik_8c_source.html#l00109">imu_navstik_event()</a>, <a class="el" href="imu__nps_8c_source.html#l00065">imu_nps_event()</a>, <a class="el" href="imu__krooz_8c_source.html#l00098">imu_periodic()</a>, <a class="el" href="imu__ppzuav_8c_source.html#l00112">imu_ppzuav_event()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00091">imu_px4fmu_event()</a>, <a class="el" href="imu__umarim_8c_source.html#l00103">imu_umarim_event()</a>, and <a class="el" href="navdata_8c_source.html#l00323">navdata_publish_imu()</a>.</p>
 
-<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c_a34a2e1e2b450191b8ab1e849239810b2_icgraph.png" border="0" usemap="#ahrs__gx3_8c_a34a2e1e2b450191b8ab1e849239810b2_icgraph" alt=""/></div>
 <map name="ahrs__gx3_8c_a34a2e1e2b450191b8ab1e849239810b2_icgraph" id="ahrs__gx3_8c_a34a2e1e2b450191b8ab1e849239810b2_icgraph">
-<area shape="rect" id="node3" href="rotorcraft_2main_8c.html#aff00de1e5817007c0daf0de123dfa1f6" title="on_accel_event" alt="" coords="183,5,303,33"/><area shape="rect" id="node5" href="main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="353,5,449,33"/></map>
+<area shape="rect" id="node3" href="imu__aspirin2_8h.html#adf18f3696c2481d509396f40839bcf6b" title="aspirin2_subsystem\l_event" alt="" coords="188,5,337,49"/><area shape="rect" id="node5" href="ins__xsens_8c.html#ac5da428408b44b6b22e510c36f7f2bc7" title="handle_ins_msg" alt="" coords="200,71,325,99"/><area shape="rect" id="node7" href="imu__apogee_8h.html#a60395d55d1c3bbb3773a3bc79f210884" title="imu_apogee_event" alt="" coords="191,122,335,150"/><area shape="rect" id="node9" href="imu__aspirin__2__spi_8h.html#a1d1263b727aeee52bd78b9d3ec3b40bd" title="imu_aspirin2_event" alt="" coords="189,173,336,201"/><area shape="rect" id="node11" href="imu__aspirin_8h.html#aa229c37c4339ad08d83c4d72f30a1fd5" title="imu_aspirin_event" alt="" coords="193,223,332,251"/><area shape="rect" id="node13" href="imu__aspirin__i2c_8h.html#a6369e8522e39224b5076e7837c0032f2" title="imu_aspirin_i2c_event" alt="" coords="181,274,344,302"/><area shape="rect" id="node15" href="imu__b2_8h.html#ade46fe011019a8bae5cb916f34c03f9b" title="imu_b2_event" alt="" coords="207,325,319,353"/><area shape="rect" id="node17" href="imu__bebop_8h.html#abf59a3c40b631f23435da34574ce0197" title="Handle all the events of the Navstik IMU components. " alt="" coords="195,375,331,403"/><area shape="rect" id="node19" href="imu__crista_8h.html#aed788f7a0027c3f66c63e8ae393d833d" title="imu_christa_event" alt="" coords="193,426,332,454"/><area shape="rect" id="node21" href="imu__drotek__10dof__v2_8h.html#a740371769417e71440eda6835e29a667" title="imu_drotek2_event" alt="" coords="191,477,335,505"/><area shape="rect" id="node23" href="imu__gl1_8h.html#a08db0d7b92f2f359a5a2bc939a197a5f" title="imu_gl1_i2c_event" alt="" coords="193,527,332,555"/><area shape="rect" id="node25" href="imu__hbmini_8h.html#a5b9ae3abc04f091d942553dc17b589c8" title="imu_hbmini_event" alt="" coords="193,578,332,606"/><area shape="rect" id="node27" href="imu__mpu9250__i2c_8c.html#af140d4e8a775be026073e67fd3080aa2" title="imu_mpu9250_event" alt="" coords="184,629,341,657"/><area shape="rect" id="node29" href="imu__mpu6000__hmc5883_8h.html#ae9d618a59cee7e4c02666223bc3bf07e" title="imu_mpu_hmc_event" alt="" coords="183,679,343,707"/><area shape="rect" id="node31" href="imu__mpu60x0__i2c_8h.html#ad17d2b5d68bee1716b36c12a01cb1b31" title="imu_mpu_i2c_event" alt="" coords="188,730,337,758"/><area shape="rect" id="node33" href="imu__mpu6000_8h.html#adeded9c36c67ea0bb8d9711c9992dea0" title="imu_mpu_spi_event" alt="" coords="188,781,337,809"/><area shape="rect" id="node35" href="imu__navgo_8h.html#a090687272e402bae057eb68e39e6218f" title="imu_navgo_event" alt="" coords="196,831,329,859"/><area shape="rect" id="node37" href="imu__navstik_8h.html#a2ddc38f9314a98d94376d14851bb0bcd" title="Handle all the events of the Navstik IMU components. " alt="" coords="192,882,333,910"/><area shape="rect" id="node39" href="imu__nps_8h.html#ab288e8eb3d91d5c0e27e6f34cbe5e5ac" title="imu_nps_event" alt="" coords="204,933,321,961"/><area shape="rect" id="node41" href="imu__krooz_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="optional. " alt="" coords="212,983,313,1011"/><area shape="rect" id="node43" href="imu__ppzuav_8h.html#a51ff6c245630bbf2701dc550ce24ef23" title="imu_ppzuav_event" alt="" coords="192,1034,333,1062"/><area shape="rect" id="node45" href="imu__px4fmu_8h.html#af65bf55913e04b2d90bdffb1c94c169c" title="imu_px4fmu_event" alt="" coords="191,1085,335,1113"/><area shape="rect" id="node47" href="imu__umarim_8h.html#a01860ce0d2bbd0db6c993e609c0745de" title="imu_umarim_event" alt="" coords="189,1135,336,1163"/><area shape="rect" id="node49" href="navdata_8c.html#ad05e4e99b6d26c643c0841c315d292a4" title="navdata_publish_imu" alt="" coords="184,1186,341,1214"/><area shape="rect" id="node51" href="navdata_8h.html#aded131295af4c39b10199bae2e560438" title="Update the navdata (event loop) " alt="" coords="393,1186,519,1214"/></map>
 </div>
 </p>
 
@@ -583,25 +626,25 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void imu_scale_gyro </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structImu.html">Imu</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="imu_8h.html#structImu">Imu</a> *&#160;</td>
           <td class="paramname"><em>_imu</em>)</td><td></td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00339">339</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00349">349</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2main_8c_source.html#l00370">on_gyro_event()</a>.</p>
+<p>Referenced by <a class="el" href="imu__aspirin2_8c_source.html#l00185">aspirin2_subsystem_event()</a>, <a class="el" href="ins__xsens_8c_source.html#l00410">handle_ins_msg()</a>, <a class="el" href="imu__apogee_8c_source.html#l00103">imu_apogee_event()</a>, <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00161">imu_aspirin2_event()</a>, <a class="el" href="imu__aspirin_8c_source.html#l00118">imu_aspirin_event()</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00129">imu_aspirin_i2c_event()</a>, <a class="el" href="imu__b2_8c_source.html#l00152">imu_b2_event()</a>, <a class="el" href="imu__bebop_8c_source.html#l00109">imu_bebop_event()</a>, <a class="el" href="imu__crista_8c_source.html#l00091">imu_christa_event()</a>, <a class="el" href="imu__drotek__10dof__v2_8c_source.html#l00117">imu_drotek2_event()</a>, <a class="el" href="imu__gl1_8c_source.html#l00118">imu_gl1_i2c_event()</a>, <a class="el" href="imu__hbmini_8c_source.html#l00093">imu_hbmini_event()</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00113">imu_mpu9250_event()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00099">imu_mpu_hmc_event()</a>, <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00087">imu_mpu_i2c_event()</a>, <a class="el" href="imu__mpu6000_8c_source.html#l00088">imu_mpu_spi_event()</a>, <a class="el" href="imu__navgo_8c_source.html#l00120">imu_navgo_event()</a>, <a class="el" href="imu__navstik_8c_source.html#l00109">imu_navstik_event()</a>, <a class="el" href="imu__nps_8c_source.html#l00065">imu_nps_event()</a>, <a class="el" href="imu__krooz_8c_source.html#l00098">imu_periodic()</a>, <a class="el" href="imu__ppzuav_8c_source.html#l00112">imu_ppzuav_event()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00091">imu_px4fmu_event()</a>, <a class="el" href="imu__umarim_8c_source.html#l00103">imu_umarim_event()</a>, and <a class="el" href="navdata_8c_source.html#l00323">navdata_publish_imu()</a>.</p>
 
-<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c_a8d63b0a61c8ffe88dd15b40843b1ae1d_icgraph.png" border="0" usemap="#ahrs__gx3_8c_a8d63b0a61c8ffe88dd15b40843b1ae1d_icgraph" alt=""/></div>
 <map name="ahrs__gx3_8c_a8d63b0a61c8ffe88dd15b40843b1ae1d_icgraph" id="ahrs__gx3_8c_a8d63b0a61c8ffe88dd15b40843b1ae1d_icgraph">
-<area shape="rect" id="node3" href="rotorcraft_2main_8c.html#a9ad44dfc9d1342835451bd87613fb610" title="on_gyro_event" alt="" coords="177,5,292,33"/><area shape="rect" id="node5" href="main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="343,5,439,33"/></map>
+<area shape="rect" id="node3" href="imu__aspirin2_8h.html#adf18f3696c2481d509396f40839bcf6b" title="aspirin2_subsystem\l_event" alt="" coords="183,5,332,49"/><area shape="rect" id="node5" href="ins__xsens_8c.html#ac5da428408b44b6b22e510c36f7f2bc7" title="handle_ins_msg" alt="" coords="195,71,320,99"/><area shape="rect" id="node7" href="imu__apogee_8h.html#a60395d55d1c3bbb3773a3bc79f210884" title="imu_apogee_event" alt="" coords="185,122,329,150"/><area shape="rect" id="node9" href="imu__aspirin__2__spi_8h.html#a1d1263b727aeee52bd78b9d3ec3b40bd" title="imu_aspirin2_event" alt="" coords="184,173,331,201"/><area shape="rect" id="node11" href="imu__aspirin_8h.html#aa229c37c4339ad08d83c4d72f30a1fd5" title="imu_aspirin_event" alt="" coords="188,223,327,251"/><area shape="rect" id="node13" href="imu__aspirin__i2c_8h.html#a6369e8522e39224b5076e7837c0032f2" title="imu_aspirin_i2c_event" alt="" coords="176,274,339,302"/><area shape="rect" id="node15" href="imu__b2_8h.html#ade46fe011019a8bae5cb916f34c03f9b" title="imu_b2_event" alt="" coords="201,325,313,353"/><area shape="rect" id="node17" href="imu__bebop_8h.html#abf59a3c40b631f23435da34574ce0197" title="Handle all the events of the Navstik IMU components. " alt="" coords="189,375,325,403"/><area shape="rect" id="node19" href="imu__crista_8h.html#aed788f7a0027c3f66c63e8ae393d833d" title="imu_christa_event" alt="" coords="188,426,327,454"/><area shape="rect" id="node21" href="imu__drotek__10dof__v2_8h.html#a740371769417e71440eda6835e29a667" title="imu_drotek2_event" alt="" coords="185,477,329,505"/><area shape="rect" id="node23" href="imu__gl1_8h.html#a08db0d7b92f2f359a5a2bc939a197a5f" title="imu_gl1_i2c_event" alt="" coords="188,527,327,555"/><area shape="rect" id="node25" href="imu__hbmini_8h.html#a5b9ae3abc04f091d942553dc17b589c8" title="imu_hbmini_event" alt="" coords="188,578,327,606"/><area shape="rect" id="node27" href="imu__mpu9250__i2c_8c.html#af140d4e8a775be026073e67fd3080aa2" title="imu_mpu9250_event" alt="" coords="179,629,336,657"/><area shape="rect" id="node29" href="imu__mpu6000__hmc5883_8h.html#ae9d618a59cee7e4c02666223bc3bf07e" title="imu_mpu_hmc_event" alt="" coords="177,679,337,707"/><area shape="rect" id="node31" href="imu__mpu60x0__i2c_8h.html#ad17d2b5d68bee1716b36c12a01cb1b31" title="imu_mpu_i2c_event" alt="" coords="183,730,332,758"/><area shape="rect" id="node33" href="imu__mpu6000_8h.html#adeded9c36c67ea0bb8d9711c9992dea0" title="imu_mpu_spi_event" alt="" coords="183,781,332,809"/><area shape="rect" id="node35" href="imu__navgo_8h.html#a090687272e402bae057eb68e39e6218f" title="imu_navgo_event" alt="" coords="191,831,324,859"/><area shape="rect" id="node37" href="imu__navstik_8h.html#a2ddc38f9314a98d94376d14851bb0bcd" title="Handle all the events of the Navstik IMU components. " alt="" coords="187,882,328,910"/><area shape="rect" id="node39" href="imu__nps_8h.html#ab288e8eb3d91d5c0e27e6f34cbe5e5ac" title="imu_nps_event" alt="" coords="199,933,316,961"/><area shape="rect" id="node41" href="imu__krooz_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="optional. " alt="" coords="207,983,308,1011"/><area shape="rect" id="node43" href="imu__ppzuav_8h.html#a51ff6c245630bbf2701dc550ce24ef23" title="imu_ppzuav_event" alt="" coords="187,1034,328,1062"/><area shape="rect" id="node45" href="imu__px4fmu_8h.html#af65bf55913e04b2d90bdffb1c94c169c" title="imu_px4fmu_event" alt="" coords="185,1085,329,1113"/><area shape="rect" id="node47" href="imu__umarim_8h.html#a01860ce0d2bbd0db6c993e609c0745de" title="imu_umarim_event" alt="" coords="184,1135,331,1163"/><area shape="rect" id="node49" href="navdata_8c.html#ad05e4e99b6d26c643c0841c315d292a4" title="navdata_publish_imu" alt="" coords="179,1186,336,1214"/><area shape="rect" id="node51" href="navdata_8h.html#aded131295af4c39b10199bae2e560438" title="Update the navdata (event loop) " alt="" coords="388,1186,513,1214"/></map>
 </div>
 </p>
 
@@ -614,56 +657,47 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void imu_scale_mag </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structImu.html">Imu</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="imu_8h.html#structImu">Imu</a> *&#160;</td>
           <td class="paramname"><em>_imu</em>)</td><td></td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00341">341</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00351">351</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
 
-<p>Referenced by <a class="el" href="mag__hmc58xx_8c_source.html#l00061">mag_hmc58xx_module_event()</a>, and <a class="el" href="rotorcraft_2main_8c_source.html#l00417">on_mag_event()</a>.</p>
+<p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00410">handle_ins_msg()</a>, <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00161">imu_aspirin2_event()</a>, <a class="el" href="imu__aspirin_8c_source.html#l00118">imu_aspirin_event()</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00129">imu_aspirin_i2c_event()</a>, <a class="el" href="imu__bebop_8c_source.html#l00109">imu_bebop_event()</a>, <a class="el" href="imu__drotek__10dof__v2_8c_source.html#l00117">imu_drotek2_event()</a>, <a class="el" href="imu__gl1_8c_source.html#l00118">imu_gl1_i2c_event()</a>, <a class="el" href="imu__hbmini_8c_source.html#l00093">imu_hbmini_event()</a>, <a class="el" href="imu__krooz_8c_source.html#l00146">imu_krooz_event()</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00113">imu_mpu9250_event()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00099">imu_mpu_hmc_event()</a>, <a class="el" href="imu__navgo_8c_source.html#l00120">imu_navgo_event()</a>, <a class="el" href="imu__navstik_8c_source.html#l00109">imu_navstik_event()</a>, <a class="el" href="imu__nps_8c_source.html#l00065">imu_nps_event()</a>, <a class="el" href="imu__ppzuav_8c_source.html#l00112">imu_ppzuav_event()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00091">imu_px4fmu_event()</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00061">mag_hmc58xx_module_event()</a>, and <a class="el" href="navdata_8c_source.html#l00323">navdata_publish_imu()</a>.</p>
 
-<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__gx3_8c_a6ca6c7f78fab9df37eb980d2b4d1b3a9_icgraph.png" border="0" usemap="#ahrs__gx3_8c_a6ca6c7f78fab9df37eb980d2b4d1b3a9_icgraph" alt=""/></div>
 <map name="ahrs__gx3_8c_a6ca6c7f78fab9df37eb980d2b4d1b3a9_icgraph" id="ahrs__gx3_8c_a6ca6c7f78fab9df37eb980d2b4d1b3a9_icgraph">
-<area shape="rect" id="node3" href="mag__hmc58xx_8h.html#a6e8146871b55ac8c4d4353e3aa95e8cb" title="mag_hmc58xx_module\l_event" alt="" coords="176,5,347,49"/><area shape="rect" id="node5" href="rotorcraft_2main_8c.html#a00877cb9155773120515df456aa457a2" title="on_mag_event" alt="" coords="203,71,320,99"/><area shape="rect" id="node7" href="main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="396,71,492,99"/></map>
+<area shape="rect" id="node3" href="ins__xsens_8c.html#ac5da428408b44b6b22e510c36f7f2bc7" title="handle_ins_msg" alt="" coords="199,5,324,33"/><area shape="rect" id="node5" href="imu__aspirin__2__spi_8h.html#a1d1263b727aeee52bd78b9d3ec3b40bd" title="imu_aspirin2_event" alt="" coords="188,55,335,83"/><area shape="rect" id="node7" href="imu__aspirin_8h.html#aa229c37c4339ad08d83c4d72f30a1fd5" title="imu_aspirin_event" alt="" coords="192,106,331,134"/><area shape="rect" id="node9" href="imu__aspirin__i2c_8h.html#a6369e8522e39224b5076e7837c0032f2" title="imu_aspirin_i2c_event" alt="" coords="180,157,343,185"/><area shape="rect" id="node11" href="imu__bebop_8h.html#abf59a3c40b631f23435da34574ce0197" title="Handle all the events of the Navstik IMU components. " alt="" coords="193,207,329,235"/><area shape="rect" id="node13" href="imu__drotek__10dof__v2_8h.html#a740371769417e71440eda6835e29a667" title="imu_drotek2_event" alt="" coords="189,258,333,286"/><area shape="rect" id="node15" href="imu__gl1_8h.html#a08db0d7b92f2f359a5a2bc939a197a5f" title="imu_gl1_i2c_event" alt="" coords="192,309,331,337"/><area shape="rect" id="node17" href="imu__hbmini_8h.html#a5b9ae3abc04f091d942553dc17b589c8" title="imu_hbmini_event" alt="" coords="192,359,331,387"/><area shape="rect" id="node19" href="imu__krooz__memsic_8h.html#ac3e0837f6fda31fca37cf6d6cd1e39dd" title="imu_krooz_event" alt="" coords="196,410,327,438"/><area shape="rect" id="node21" href="imu__mpu9250__i2c_8c.html#af140d4e8a775be026073e67fd3080aa2" title="imu_mpu9250_event" alt="" coords="183,461,340,489"/><area shape="rect" id="node23" href="imu__mpu6000__hmc5883_8h.html#ae9d618a59cee7e4c02666223bc3bf07e" title="imu_mpu_hmc_event" alt="" coords="181,511,341,539"/><area shape="rect" id="node25" href="imu__navgo_8h.html#a090687272e402bae057eb68e39e6218f" title="imu_navgo_event" alt="" coords="195,562,328,590"/><area shape="rect" id="node27" href="imu__navstik_8h.html#a2ddc38f9314a98d94376d14851bb0bcd" title="Handle all the events of the Navstik IMU components. " alt="" coords="191,613,332,641"/><area shape="rect" id="node29" href="imu__nps_8h.html#ab288e8eb3d91d5c0e27e6f34cbe5e5ac" title="imu_nps_event" alt="" coords="203,663,320,691"/><area shape="rect" id="node31" href="imu__ppzuav_8h.html#a51ff6c245630bbf2701dc550ce24ef23" title="imu_ppzuav_event" alt="" coords="191,714,332,742"/><area shape="rect" id="node33" href="imu__px4fmu_8h.html#af65bf55913e04b2d90bdffb1c94c169c" title="imu_px4fmu_event" alt="" coords="189,765,333,793"/><area shape="rect" id="node35" href="mag__hmc58xx_8h.html#a6e8146871b55ac8c4d4353e3aa95e8cb" title="mag_hmc58xx_module\l_event" alt="" coords="176,815,347,859"/><area shape="rect" id="node37" href="navdata_8c.html#ad05e4e99b6d26c643c0841c315d292a4" title="navdata_publish_imu" alt="" coords="183,882,340,910"/><area shape="rect" id="node39" href="navdata_8h.html#aded131295af4c39b10199bae2e560438" title="Update the navdata (event loop) " alt="" coords="396,882,521,910"/></map>
 </div>
 </p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a66a55f68c9554dcf5ae9dd4dbd4479e3"></a>
+<a class="anchor" id="a41cc0340636dff9433b6ac87c20d9d62"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structAhrsAligner.html">AhrsAligner</a> ahrs_aligner</td>
+          <td class="memname">struct <a class="el" href="ahrs__gx3_8h.html#structAhrsGX3">AhrsGX3</a> ahrs_gx3</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00044">44</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
+<p>Axis definition: X axis pointing forward, Y axis pointing to the right and Z axis pointing down. </p>
+<p>Positive pitch : nose up Positive roll : right wing down Positive yaw : clockwise </p>
 
-</div>
-</div>
-<a class="anchor" id="a47b4c75c2ba6292ca65388b915787019"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structAhrsFloatQuat.html">AhrsFloatQuat</a> ahrs_impl</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00047">47</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
 
-<p>Definition at line <a class="el" href="ahrs__gx3_8c_source.html#l00043">43</a> of file <a class="el" href="ahrs__gx3_8c_source.html">ahrs_gx3.c</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__gx3_8c_source.html#l00075">ahrs_gx3_align()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00327">ahrs_gx3_init()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00294">gx3_packet_parse()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00226">gx3_packet_read_message()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00106">imu_impl_init()</a>, <a class="el" href="ahrs__gx3_8h_source.html#l00103">ImuEvent()</a>, and <a class="el" href="ahrs__gx3_8h_source.html#l00096">ReadGX3Buffer()</a>.</p>
 
 </div>
 </div>
@@ -673,7 +707,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_46fef683200e96ccf1a2f608d90c4a2d.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__gx3_8c.html">ahrs_gx3.c</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:12 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:33 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

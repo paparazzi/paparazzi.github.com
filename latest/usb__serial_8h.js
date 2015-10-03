@@ -1,12 +1,8 @@
 var usb__serial_8h =
 [
-    [ "usb_serial_periph", "structusb__serial__periph.html", "structusb__serial__periph" ],
-    [ "UsbSChAvailable", "usb__serial_8h.html#ac35d9463a5a038cb76cbbab16293509a", null ],
-    [ "UsbSCheckFreeSpace", "usb__serial_8h.html#a307e2e8623a44862ee705bb62e0d2e98", null ],
-    [ "UsbSGetch", "usb__serial_8h.html#a1a2c3b8bab59655e69775eaf5562901e", null ],
-    [ "UsbSInit", "usb__serial_8h.html#a1084ec1786de3eaaa9c1d5b5dcf396fc", null ],
-    [ "UsbSSendMessage", "usb__serial_8h.html#adce019c454511eccf3b4aa65e3076956", null ],
-    [ "UsbSTransmit", "usb__serial_8h.html#a8b402d121ed27690100bef028d5048df", null ],
+    [ "usb_serial_periph", "usb__serial_8h.html#structusb__serial__periph", [
+      [ "device", "usb__serial_8h.html#a8b2420e6db09b65f1114f8d2260f52d3", null ]
+    ] ],
     [ "VCOM_allow_linecoding", "usb__serial_8h.html#abaca416be34281b2bfb22ac501e673d9", null ],
     [ "VCOM_check_available", "usb__serial_8h.html#a4cfafe558a6e594ce0638634e7cec7db", null ],
     [ "VCOM_check_free_space", "usb__serial_8h.html#a497f2c3bbcb2e24f2040db6881de17da", null ],

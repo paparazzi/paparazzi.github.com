@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('imu__navstik_8c.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -117,6 +117,7 @@ $(document).ready(function(){initNavTree('imu__navstik_8c.html','');});
 <p>Driver for the Navstik magnetometer, accelerometer and gyroscope.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="imu_8h_source.html">subsystems/imu.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="i2c_8h_source.html">mcu_periph/i2c.h</a>&quot;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for imu_navstik.c:</div>
@@ -125,7 +126,7 @@ $(document).ready(function(){initNavTree('imu__navstik_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__navstik_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2imu_2imu__navstik_8c" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2imu_2imu__navstik_8c" id="sw_2airborne_2subsystems_2imu_2imu__navstik_8c">
-<area shape="rect" id="node3" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="249,99,388,127"/><area shape="rect" id="node34" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="668,347,799,375"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="353,270,532,298"/><area shape="rect" id="node21" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="89,270,279,298"/><area shape="rect" id="node27" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="237,177,400,221"/><area shape="rect" id="node9" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="124,347,279,375"/><area shape="rect" id="node16" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="353,347,503,375"/></map>
+<area shape="rect" id="node3" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="383,99,521,127"/><area shape="rect" id="node34" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="633,99,767,127"/><area shape="rect" id="node38" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="41,99,172,127"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="304,270,483,298"/><area shape="rect" id="node21" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="557,270,747,298"/><area shape="rect" id="node27" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="445,177,608,221"/><area shape="rect" id="node9" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="557,347,712,375"/><area shape="rect" id="node16" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="283,347,432,375"/></map>
 </div>
 </div>
 <p><a href="imu__navstik_8c_source.html">Go to the source code of this file.</a></p>
@@ -155,7 +156,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aa258cf16277362a84912f7ee02b1f4fe"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structImuNavstik.html">ImuNavstik</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__navstik_8c.html#aa258cf16277362a84912f7ee02b1f4fe">imu_navstik</a></td></tr>
+<tr class="memitem:aa258cf16277362a84912f7ee02b1f4fe"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="imu__navstik_8h.html#structImuNavstik">ImuNavstik</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__navstik_8c.html#aa258cf16277362a84912f7ee02b1f4fe">imu_navstik</a></td></tr>
 <tr class="memdesc:aa258cf16277362a84912f7ee02b1f4fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic Navstik IMU data.  <a href="#aa258cf16277362a84912f7ee02b1f4fe">More...</a><br/></td></tr>
 <tr class="separator:aa258cf16277362a84912f7ee02b1f4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -174,9 +175,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="imu__navstik_8c_source.html#l00068">68</a> of file <a class="el" href="imu__navstik_8c_source.html">imu_navstik.c</a>.</p>
+<p>Definition at line <a class="el" href="imu__navstik_8c_source.html#l00069">69</a> of file <a class="el" href="imu__navstik_8c_source.html">imu_navstik.c</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__navstik_8c_source.html#l00078">imu_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="imu__navstik_8c_source.html#l00079">imu_impl_init()</a>.</p>
 
 </div>
 </div>
@@ -190,9 +191,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="imu__navstik_8c_source.html#l00063">63</a> of file <a class="el" href="imu__navstik_8c_source.html">imu_navstik.c</a>.</p>
+<p>Definition at line <a class="el" href="imu__navstik_8c_source.html#l00064">64</a> of file <a class="el" href="imu__navstik_8c_source.html">imu_navstik.c</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__navstik_8c_source.html#l00078">imu_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="imu__navstik_8c_source.html#l00079">imu_impl_init()</a>.</p>
 
 </div>
 </div>
@@ -206,9 +207,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="imu__navstik_8c_source.html#l00033">33</a> of file <a class="el" href="imu__navstik_8c_source.html">imu_navstik.c</a>.</p>
+<p>Definition at line <a class="el" href="imu__navstik_8c_source.html#l00034">34</a> of file <a class="el" href="imu__navstik_8c_source.html">imu_navstik.c</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__navstik_8c_source.html#l00078">imu_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="imu__navstik_8c_source.html#l00079">imu_impl_init()</a>.</p>
 
 </div>
 </div>
@@ -222,9 +223,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="imu__navstik_8c_source.html#l00038">38</a> of file <a class="el" href="imu__navstik_8c_source.html">imu_navstik.c</a>.</p>
+<p>Definition at line <a class="el" href="imu__navstik_8c_source.html#l00039">39</a> of file <a class="el" href="imu__navstik_8c_source.html">imu_navstik.c</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__navstik_8c_source.html#l00078">imu_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="imu__navstik_8c_source.html#l00079">imu_impl_init()</a>.</p>
 
 </div>
 </div>
@@ -245,15 +246,15 @@ Variables</h2></td></tr>
 
 <p>Navstik IMU initializtion of the MPU-60x0 and HMC58xx. </p>
 <p>must be defined by underlying hardware </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000031">Todo:</a></b></dt><dd>drdy int handling for adxl345 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000032">Todo:</a></b></dt><dd>eoc interrupt for itg3200, polling for now (including status reg) </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000033">Todo:</a></b></dt><dd>drdy int handling for adxl345 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000034">Todo:</a></b></dt><dd>eoc interrupt for itg3200, polling for now (including status reg) </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000035">Todo:</a></b></dt><dd>drdy int handling for adxl345 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000036">Todo:</a></b></dt><dd>drdy int handling for adxl345 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000037">Todo:</a></b></dt><dd>eoc interrupt for itg3200, polling for now (including status reg) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000038">Todo:</a></b></dt><dd>drdy int handling for adxl345 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000039">Todo:</a></b></dt><dd>eoc interrupt for itg3200, polling for now (including status reg) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000040">Todo:</a></b></dt><dd>drdy int handling for adxl345 </dd></dl>
 
-<p>Definition at line <a class="el" href="imu__navstik_8c_source.html#l00078">78</a> of file <a class="el" href="imu__navstik_8c_source.html">imu_navstik.c</a>.</p>
+<p>Definition at line <a class="el" href="imu__navstik_8c_source.html#l00079">79</a> of file <a class="el" href="imu__navstik_8c_source.html">imu_navstik.c</a>.</p>
 
-<p>References <a class="el" href="mpu60x0_8h_source.html#l00077">Mpu60x0Config::accel_range</a>, <a class="el" href="imu__navstik_8h_source.html#l00074">ImuNavstik::accel_valid</a>, <a class="el" href="mpu60x0__i2c_8h_source.html#l00067">Mpu60x0_I2c::config</a>, <a class="el" href="mpu60x0_8h_source.html#l00075">Mpu60x0Config::dlpf_cfg</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="mpu60x0_8h_source.html#l00076">Mpu60x0Config::gyro_range</a>, <a class="el" href="imu__navstik_8h_source.html#l00075">ImuNavstik::gyro_valid</a>, <a class="el" href="imu__navstik_8h_source.html#l00078">ImuNavstik::hmc</a>, <a class="el" href="hmc58xx__regs_8h_source.html#l00031">HMC58XX_ADDR</a>, <a class="el" href="hmc58xx_8c_source.html#l00075">hmc58xx_init()</a>, <a class="el" href="imu__navstik_8h_source.html#l00076">ImuNavstik::mag_valid</a>, <a class="el" href="imu__navstik_8h_source.html#l00077">ImuNavstik::mpu</a>, <a class="el" href="mpu60x0__regs_8h_source.html#l00033">MPU60X0_ADDR_ALT</a>, <a class="el" href="mpu60x0__i2c_8c_source.html#l00031">mpu60x0_i2c_init()</a>, <a class="el" href="imu__navstik_8c_source.html#l00068">NAVSTIK_ACCEL_RANGE</a>, <a class="el" href="imu__navstik_8c_source.html#l00063">NAVSTIK_GYRO_RANGE</a>, <a class="el" href="imu__navstik_8c_source.html#l00033">NAVSTIK_MAG_I2C_DEV</a>, <a class="el" href="imu__navstik_8c_source.html#l00038">NAVSTIK_MPU_I2C_DEV</a>, and <a class="el" href="mpu60x0_8h_source.html#l00074">Mpu60x0Config::smplrt_div</a>.</p>
+<p>References <a class="el" href="mpu60x0_8h_source.html#l00077">Mpu60x0Config::accel_range</a>, <a class="el" href="mpu60x0__i2c_8h_source.html#l00068">Mpu60x0_I2c::config</a>, <a class="el" href="mpu60x0_8h_source.html#l00075">Mpu60x0Config::dlpf_cfg</a>, <a class="el" href="mpu60x0_8h_source.html#l00076">Mpu60x0Config::gyro_range</a>, <a class="el" href="imu__navstik_8h_source.html#l00075">ImuNavstik::hmc</a>, <a class="el" href="hmc58xx__regs_8h_source.html#l00031">HMC58XX_ADDR</a>, <a class="el" href="hmc58xx_8c_source.html#l00075">hmc58xx_init()</a>, <a class="el" href="imu__navstik_8h_source.html#l00074">ImuNavstik::mpu</a>, <a class="el" href="mpu60x0__regs_8h_source.html#l00033">MPU60X0_ADDR_ALT</a>, <a class="el" href="mpu60x0__i2c_8c_source.html#l00031">mpu60x0_i2c_init()</a>, <a class="el" href="imu__navstik_8c_source.html#l00069">NAVSTIK_ACCEL_RANGE</a>, <a class="el" href="imu__navstik_8c_source.html#l00064">NAVSTIK_GYRO_RANGE</a>, <a class="el" href="imu__navstik_8c_source.html#l00034">NAVSTIK_MAG_I2C_DEV</a>, <a class="el" href="imu__navstik_8c_source.html#l00039">NAVSTIK_MPU_I2C_DEV</a>, and <a class="el" href="mpu60x0_8h_source.html#l00074">Mpu60x0Config::smplrt_div</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -285,11 +286,9 @@ Variables</h2></td></tr>
 <p>Handle all the events of the Navstik IMU components. </p>
 <p>When there is data available convert it to the correct axis and save it in the imu structure. </p>
 
-<p>Definition at line <a class="el" href="imu__navstik_8c_source.html#l00112">112</a> of file <a class="el" href="imu__navstik_8c_source.html">imu_navstik.c</a>.</p>
+<p>Definition at line <a class="el" href="imu__navstik_8c_source.html#l00109">109</a> of file <a class="el" href="imu__navstik_8c_source.html">imu_navstik.c</a>.</p>
 
-<p>References <a class="el" href="imu_8h_source.html#l00051">Imu::accel_unscaled</a>, <a class="el" href="imu__navstik_8h_source.html#l00074">ImuNavstik::accel_valid</a>, <a class="el" href="structHmc58xx.html#a366d71fd81e9949621d8f51f872b4544">Hmc58xx::data</a>, <a class="el" href="structMpu60x0__I2c.html#a1115909d0397ba315d385901c8ae2dca">Mpu60x0_I2c::data_accel</a>, <a class="el" href="mpu60x0__i2c_8h_source.html#l00057">Mpu60x0_I2c::data_available</a>, <a class="el" href="hmc58xx_8h_source.html#l00065">Hmc58xx::data_available</a>, <a class="el" href="structMpu60x0__I2c.html#a87f294819f20f935bf1a8c103ff5b24a">Mpu60x0_I2c::data_rates</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="imu_8h_source.html#l00050">Imu::gyro_unscaled</a>, <a class="el" href="imu__navstik_8h_source.html#l00075">ImuNavstik::gyro_valid</a>, <a class="el" href="imu__navstik_8h_source.html#l00078">ImuNavstik::hmc</a>, <a class="el" href="hmc58xx_8c_source.html#l00151">hmc58xx_event()</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00047">imu</a>, <a class="el" href="imu__navstik_8c_source.html#l00073">imu_navstik</a>, <a class="el" href="imu_8h_source.html#l00052">Imu::mag_unscaled</a>, <a class="el" href="imu__navstik_8h_source.html#l00076">ImuNavstik::mag_valid</a>, <a class="el" href="imu__navstik_8h_source.html#l00077">ImuNavstik::mpu</a>, <a class="el" href="mpu60x0__i2c_8c_source.html#l00082">mpu60x0_i2c_event()</a>, <a class="el" href="mpu60x0__i2c_8h_source.html#l00063">Mpu60x0_I2c::rates</a>, <a class="el" href="pprz__algebra_8h_source.html#l00328">RATES_COPY</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="hmc58xx_8h_source.html#l00067">Hmc58xx::vect</a>, <a class="el" href="mpu60x0__i2c_8h_source.html#l00059">Mpu60x0_I2c::vect</a>, <a class="el" href="pprz__algebra_8h_source.html#l00131">VECT3_COPY</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00059">Int16Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00085">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00060">Int16Vect3::y</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00086">Int32Vect3::y</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00061">Int16Vect3::z</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00087">Int32Vect3::z</a>.</p>
-
-<p>Referenced by <a class="el" href="imu__navstik_8h_source.html#l00085">ImuEvent()</a>.</p>
+<p>References <a class="el" href="imu_8h_source.html#l00043">Imu::accel</a>, <a class="el" href="imu_8h_source.html#l00051">Imu::accel_unscaled</a>, <a class="el" href="hmc58xx_8h.html#aae57a469881f8b3b2b49a9dcc91d0c7f">Hmc58xx::data</a>, <a class="el" href="mpu60x0__i2c_8h.html#a99733a2aa22315d86b46f47776670f4a">Mpu60x0_I2c::data_accel</a>, <a class="el" href="mpu60x0__i2c_8h_source.html#l00057">Mpu60x0_I2c::data_available</a>, <a class="el" href="hmc58xx_8h_source.html#l00065">Hmc58xx::data_available</a>, <a class="el" href="mpu60x0__i2c_8h.html#a151015ed66dd541510d58963ccffa978">Mpu60x0_I2c::data_rates</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8h_source.html#l00039">get_sys_time_usec()</a>, <a class="el" href="imu_8h_source.html#l00042">Imu::gyro</a>, <a class="el" href="imu_8h_source.html#l00050">Imu::gyro_unscaled</a>, <a class="el" href="imu__navstik_8h_source.html#l00075">ImuNavstik::hmc</a>, <a class="el" href="hmc58xx_8c_source.html#l00152">hmc58xx_event()</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00043">imu</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00166">IMU_BOARD_ID</a>, <a class="el" href="imu__navstik_8c_source.html#l00074">imu_navstik</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00350">imu_scale_accel()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00349">imu_scale_gyro()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00351">imu_scale_mag()</a>, <a class="el" href="imu_8h_source.html#l00044">Imu::mag</a>, <a class="el" href="imu_8h_source.html#l00052">Imu::mag_unscaled</a>, <a class="el" href="imu__navstik_8h_source.html#l00074">ImuNavstik::mpu</a>, <a class="el" href="mpu60x0__i2c_8c_source.html#l00082">mpu60x0_i2c_event()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00336">RATES_COPY</a>, <a class="el" href="pprz__algebra_8h_source.html#l00139">VECT3_COPY</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -298,18 +297,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__navstik_8c_a2ddc38f9314a98d94376d14851bb0bcd_cgraph.png" border="0" usemap="#imu__navstik_8c_a2ddc38f9314a98d94376d14851bb0bcd_cgraph" alt=""/></div>
 <map name="imu__navstik_8c_a2ddc38f9314a98d94376d14851bb0bcd_cgraph" id="imu__navstik_8c_a2ddc38f9314a98d94376d14851bb0bcd_cgraph">
-<area shape="rect" id="node3" href="hmc58xx_8c.html#a6514a605dad1e4bb5664bf885cca676b" title="hmc58xx_event" alt="" coords="209,5,332,33"/><area shape="rect" id="node11" href="mpu60x0__i2c_8c.html#a4929a8161b6ff6301f48f6dbcc0b449c" title="mpu60x0_i2c_event" alt="" coords="196,55,345,83"/><area shape="rect" id="node5" href="hmc58xx_8c.html#a2eff0c407b139d17a73bf75a611c32cb" title="Configuration function called once before normal use. " alt="" coords="409,5,572,33"/><area shape="rect" id="node7" href="hmc58xx_8c.html#afadf91048494baf761fa6cf8fda062d9" title="hmc58xx_i2c_tx_reg" alt="" coords="645,5,797,33"/><area shape="rect" id="node9" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="856,30,947,58"/><area shape="rect" id="node13" href="mpu60x0__i2c_8c.html#a1f2cb2db1a703a3ef043e0412f84278b" title="mpu60x0_i2c_write_to_reg" alt="" coords="395,55,587,83"/><area shape="rect" id="node18" href="mpu60x0_8c.html#a564470aa2f16b3f6665b99d9141f9ae7" title="Configuration sequence called once before normal use. " alt="" coords="408,110,573,138"/><area shape="rect" id="node15" href="group__i2c.html#ga68659e03504627925829f2f12c2ec6d2" title="Submit a write only transaction. " alt="" coords="671,55,772,83"/><area shape="rect" id="node20" href="mpu60x0_8h.html#adad4e4b57f9dac456dc343b8ebdc2f6c" title="Configure I2C slaves of the MPU. " alt="" coords="635,106,808,150"/></map>
-</div>
-</p>
-
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="imu__navstik_8c_a2ddc38f9314a98d94376d14851bb0bcd_icgraph.png" border="0" usemap="#imu__navstik_8c_a2ddc38f9314a98d94376d14851bb0bcd_icgraph" alt=""/></div>
-<map name="imu__navstik_8c_a2ddc38f9314a98d94376d14851bb0bcd_icgraph" id="imu__navstik_8c_a2ddc38f9314a98d94376d14851bb0bcd_icgraph">
-<area shape="rect" id="node3" href="imu__navstik_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="195,5,277,33"/></map>
+<area shape="rect" id="node3" href="linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="199,5,343,33"/><area shape="rect" id="node7" href="hmc58xx_8c.html#a6514a605dad1e4bb5664bf885cca676b" title="hmc58xx_event" alt="" coords="209,55,332,83"/><area shape="rect" id="node15" href="ahrs__gx3_8c.html#a34a2e1e2b450191b8ab1e849239810b2" title="imu_scale_accel" alt="" coords="208,106,333,134"/><area shape="rect" id="node17" href="ahrs__gx3_8c.html#a8d63b0a61c8ffe88dd15b40843b1ae1d" title="imu_scale_gyro" alt="" coords="211,157,331,185"/><area shape="rect" id="node19" href="ahrs__gx3_8c.html#a6ca6c7f78fab9df37eb980d2b4d1b3a9" title="imu_scale_mag" alt="" coords="209,207,332,235"/><area shape="rect" id="node21" href="mpu60x0__i2c_8c.html#a4929a8161b6ff6301f48f6dbcc0b449c" title="mpu60x0_i2c_event" alt="" coords="196,258,345,286"/><area shape="rect" id="node5" href="sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="423,5,559,33"/><area shape="rect" id="node9" href="hmc58xx_8c.html#a2eff0c407b139d17a73bf75a611c32cb" title="Configuration function called once before normal use. " alt="" coords="409,101,572,129"/><area shape="rect" id="node11" href="hmc58xx_8c.html#afadf91048494baf761fa6cf8fda062d9" title="hmc58xx_i2c_tx_reg" alt="" coords="645,102,797,130"/><area shape="rect" id="node13" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="856,129,947,157"/><area shape="rect" id="node23" href="mpu60x0__i2c_8c.html#a1f2cb2db1a703a3ef043e0412f84278b" title="mpu60x0_i2c_write_to_reg" alt="" coords="395,155,587,183"/><area shape="rect" id="node28" href="mpu60x0_8c.html#a564470aa2f16b3f6665b99d9141f9ae7" title="Configuration sequence called once before normal use. " alt="" coords="408,258,573,286"/><area shape="rect" id="node25" href="group__i2c.html#ga68659e03504627925829f2f12c2ec6d2" title="Submit a write only transaction. " alt="" coords="671,154,772,182"/><area shape="rect" id="node30" href="mpu60x0_8h.html#adad4e4b57f9dac456dc343b8ebdc2f6c" title="Configure I2C slaves of the MPU. " alt="" coords="635,250,808,294"/></map>
 </div>
 </p>
 
@@ -333,15 +321,15 @@ Variables</h2></td></tr>
 <p>optional.</p>
 <p>Read the MPU60x0 every periodic call and the HMC58XX every 10th call. </p>
 
-<p>Definition at line <a class="el" href="imu__navstik_8c_source.html#l00099">99</a> of file <a class="el" href="imu__navstik_8c_source.html">imu_navstik.c</a>.</p>
+<p>Definition at line <a class="el" href="imu__navstik_8c_source.html#l00096">96</a> of file <a class="el" href="imu__navstik_8c_source.html">imu_navstik.c</a>.</p>
 
-<p>References <a class="el" href="imu__navstik_8h_source.html#l00078">ImuNavstik::hmc</a>, <a class="el" href="hmc58xx_8h_source.html#l00084">hmc58xx_periodic()</a>, <a class="el" href="imu__navstik_8c_source.html#l00073">imu_navstik</a>, <a class="el" href="imu__navstik_8h_source.html#l00077">ImuNavstik::mpu</a>, and <a class="el" href="mpu60x0__i2c_8h_source.html#l00078">mpu60x0_i2c_periodic()</a>.</p>
+<p>References <a class="el" href="imu__navstik_8h_source.html#l00075">ImuNavstik::hmc</a>, <a class="el" href="hmc58xx_8h_source.html#l00085">hmc58xx_periodic()</a>, <a class="el" href="imu__navstik_8c_source.html#l00074">imu_navstik</a>, <a class="el" href="imu__navstik_8h_source.html#l00074">ImuNavstik::mpu</a>, and <a class="el" href="mpu60x0__i2c_8h_source.html#l00079">mpu60x0_i2c_periodic()</a>.</p>
 
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__navstik_8c_a6623d4c90e7b1bfb73abc0da1195f29b_cgraph.png" border="0" usemap="#imu__navstik_8c_a6623d4c90e7b1bfb73abc0da1195f29b_cgraph" alt=""/></div>
 <map name="imu__navstik_8c_a6623d4c90e7b1bfb73abc0da1195f29b_cgraph" id="imu__navstik_8c_a6623d4c90e7b1bfb73abc0da1195f29b_cgraph">
 <area shape="rect" id="node3" href="hmc58xx_8h.html#a353064a5a9c6b47a14f4b9543545b4ec" title="convenience function: read or start configuration if not already initialized " alt="" coords="172,55,308,83"/><area shape="rect" id="node18" href="mpu60x0__i2c_8h.html#a4e7da06e98b7caad1f8b41e7c91ff5ea" title="convenience function: read or start configuration if not already initialized " alt="" coords="159,131,321,159"/><area shape="rect" id="node5" href="hmc58xx_8c.html#a883e49acd3049ead17c6c29a3b020c72" title="hmc58xx_read" alt="" coords="899,5,1013,33"/><area shape="rect" id="node9" href="hmc58xx_8c.html#a89a7b5456b1a87c83aef85779c4fc5e9" title="hmc58xx_start_configure" alt="" coords="385,55,567,83"/><area shape="rect" id="node7" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="1091,106,1181,134"/><area shape="rect" id="node11" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="655,30,796,58"/><area shape="rect" id="node13" href="hmc58xx_8c.html#a2eff0c407b139d17a73bf75a611c32cb" title="Configuration function called once before normal use. " alt="" coords="644,81,807,109"/><area shape="rect" id="node15" href="hmc58xx_8c.html#afadf91048494baf761fa6cf8fda062d9" title="hmc58xx_i2c_tx_reg" alt="" coords="880,81,1032,109"/><area shape="rect" id="node20" href="mpu60x0__i2c_8c.html#af4a339056cedb3db951f3d042a509866" title="mpu60x0_i2c_read" alt="" coords="405,131,547,159"/><area shape="rect" id="node25" href="mpu60x0__i2c_8c.html#a1b62653862375e462d147451eb41df6e" title="mpu60x0_i2c_start_configure" alt="" coords="371,182,581,210"/><area shape="rect" id="node22" href="group__i2c.html#gae029fe6bf43eaf9e46428fec7e7b91c7" title="Submit a write/read transaction. " alt="" coords="900,131,1012,159"/><area shape="rect" id="node27" href="mpu60x0__i2c_8c.html#a1f2cb2db1a703a3ef043e0412f84278b" title="mpu60x0_i2c_write_to_reg" alt="" coords="629,182,821,210"/><area shape="rect" id="node32" href="mpu60x0_8c.html#a564470aa2f16b3f6665b99d9141f9ae7" title="Configuration sequence called once before normal use. " alt="" coords="643,237,808,265"/><area shape="rect" id="node29" href="group__i2c.html#ga68659e03504627925829f2f12c2ec6d2" title="Submit a write only transaction. " alt="" coords="905,182,1007,210"/><area shape="rect" id="node34" href="mpu60x0_8h.html#adad4e4b57f9dac456dc343b8ebdc2f6c" title="Configure I2C slaves of the MPU. " alt="" coords="869,233,1043,277"/></map>
@@ -356,16 +344,16 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structImuNavstik.html">ImuNavstik</a> imu_navstik</td>
+          <td class="memname">struct <a class="el" href="imu__navstik_8h.html#structImuNavstik">ImuNavstik</a> imu_navstik</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Basic Navstik IMU data. </p>
 
-<p>Definition at line <a class="el" href="imu__navstik_8c_source.html#l00073">73</a> of file <a class="el" href="imu__navstik_8c_source.html">imu_navstik.c</a>.</p>
+<p>Definition at line <a class="el" href="imu__navstik_8c_source.html#l00074">74</a> of file <a class="el" href="imu__navstik_8c_source.html">imu_navstik.c</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__navstik_8c_source.html#l00112">imu_navstik_event()</a>, <a class="el" href="imu__navstik_8c_source.html#l00099">imu_periodic()</a>, and <a class="el" href="imu__navstik_8h_source.html#l00085">ImuEvent()</a>.</p>
+<p>Referenced by <a class="el" href="imu__navstik_8c_source.html#l00109">imu_navstik_event()</a>, and <a class="el" href="imu__navstik_8c_source.html#l00096">imu_periodic()</a>.</p>
 
 </div>
 </div>
@@ -375,7 +363,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8b2fa0708e2db44c1b91938af97bac44.html">imu</a></li><li class="navelem"><a class="el" href="imu__navstik_8c.html">imu_navstik.c</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:15 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:36 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

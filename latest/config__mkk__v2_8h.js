@@ -1,7 +1,21 @@
 var config__mkk__v2_8h =
 [
-    [ "config_mkk_v2_struct", "structconfig__mkk__v2__struct.html", "structconfig__mkk__v2__struct" ],
-    [ "config_mkk_v2_eeprom_t", "structconfig__mkk__v2__eeprom__t.html", "structconfig__mkk__v2__eeprom__t" ],
+    [ "config_mkk_v2_struct", "config__mkk__v2_8h.html#structconfig__mkk__v2__struct", [
+      [ "addr", "config__mkk__v2_8h.html#a287e3762a80a171b0d1fbc036f1515b4", null ],
+      [ "nb_err", "config__mkk__v2_8h.html#abc9b3b438fe1ae49ecf71a86ead81871", null ],
+      [ "read_config", "config__mkk__v2_8h.html#a0e9c87aad2260ff20c388933c8ba62e0", null ],
+      [ "trans", "config__mkk__v2_8h.html#a7dd99d995e0f786c354cfa7eb6580d8e", null ]
+    ] ],
+    [ "config_mkk_v2_eeprom_t", "config__mkk__v2_8h.html#structconfig__mkk__v2__eeprom__t", [
+      [ "BitConfig", "config__mkk__v2_8h.html#aef8e0755855eea19f213b876ebcec849", null ],
+      [ "crc", "config__mkk__v2_8h.html#a58f65c4f677b562279901ec5869bc6b1", null ],
+      [ "CurrentLimit", "config__mkk__v2_8h.html#a472e5a7c6cccf9815d5bd94695cabb49", null ],
+      [ "CurrentScaling", "config__mkk__v2_8h.html#aed5c4a58d28bd122d6de61548dc26e09", null ],
+      [ "PwmScaling", "config__mkk__v2_8h.html#a8bbb09e5dbe96b2bf0cf88a406cc4f1e", null ],
+      [ "revision", "config__mkk__v2_8h.html#a588696b2ea1f443f8bdfde51a21ebc90", null ],
+      [ "SetMask", "config__mkk__v2_8h.html#a7802f52fbf698d965ac45e9f83986c20", null ],
+      [ "TempLimit", "config__mkk__v2_8h.html#a448d2a9b5c6e7c1895dce1e4a1e09281", null ]
+    ] ],
     [ "BITCONF_REVERSE_ROTATION", "config__mkk__v2_8h.html#a230599862486926a541bc4f6dcbdd3ba", null ],
     [ "config_mkk_v2_GetConfig", "config__mkk__v2_8h.html#a6254c04f93f3ad6f119ab86c395e0adc", null ],
     [ "CONFIG_MKK_V2_MASK_RESET_CAPCOUNTER", "config__mkk__v2_8h.html#a402a5deadf6599ab0b898ce1e18c5e49", null ],

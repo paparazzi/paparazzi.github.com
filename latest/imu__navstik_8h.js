@@ -1,6 +1,9 @@
 var imu__navstik_8h =
 [
-    [ "ImuNavstik", "structImuNavstik.html", "structImuNavstik" ],
+    [ "ImuNavstik", "imu__navstik_8h.html#structImuNavstik", [
+      [ "hmc", "imu__navstik_8h.html#a9c9a8e2faa2cb65325c12909cf0b28ad", null ],
+      [ "mpu", "imu__navstik_8h.html#a9998e6bbc3dbec4bb8dce09c47f99cd1", null ]
+    ] ],
     [ "IMU_ACCEL_X_SENS", "imu__navstik_8h.html#a8ac88fc00cde506229b92c6a1e2c3122", null ],
     [ "IMU_ACCEL_X_SENS_DEN", "imu__navstik_8h.html#a8acf299c1bfb2daa92b1894556ca50ad", null ],
     [ "IMU_ACCEL_X_SENS_NUM", "imu__navstik_8h.html#ada91099469f16df2d8aeafa82d365c4b", null ],
@@ -19,7 +22,7 @@ var imu__navstik_8h =
     [ "IMU_GYRO_R_SENS", "imu__navstik_8h.html#af57decce9e96b0726832a410273223f3", null ],
     [ "IMU_GYRO_R_SENS_DEN", "imu__navstik_8h.html#aecb2f43265d239ba7661dfcc8523123e", null ],
     [ "IMU_GYRO_R_SENS_NUM", "imu__navstik_8h.html#a6f808c71190e714287442af3bb7008b3", null ],
+    [ "ImuEvent", "imu__navstik_8h.html#a38f1122c1ee0701562b490c6e1b60609", null ],
     [ "imu_navstik_event", "imu__navstik_8h.html#a2ddc38f9314a98d94376d14851bb0bcd", null ],
-    [ "ImuEvent", "imu__navstik_8h.html#a9d95db588addd0a03f6e7e749fbb032a", null ],
     [ "imu_navstik", "imu__navstik_8h.html#aa258cf16277362a84912f7ee02b1f4fe", null ]
 ];

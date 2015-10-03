@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.4"/>
-<title>Paparazzi UAS: sw/airborne/modules/computer_vision/cv/encoding/jpeg.c File Reference</title>
+<title>Paparazzi UAS: sw/airborne/modules/computer_vision/lib/encoding/jpeg.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('jpeg_8c.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -115,147 +115,255 @@ $(document).ready(function(){initNavTree('jpeg_8c.html','');});
 <div class="title">jpeg.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Encode images with the use of the JPEG encoding.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="jpeg_8h_source.html">jpeg.h</a>&quot;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for jpeg.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="jpeg_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2computer__vision_2cv_2encoding_2jpeg_8c" alt=""/></div>
-<map name="sw_2airborne_2modules_2computer__vision_2cv_2encoding_2jpeg_8c" id="sw_2airborne_2modules_2computer__vision_2cv_2encoding_2jpeg_8c">
-<area shape="rect" id="node3" href="jpeg_8h.html" title="jpeg.h" alt="" coords="52,115,113,143"/></map>
+<div class="center"><img src="jpeg_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2computer__vision_2lib_2encoding_2jpeg_8c" alt=""/></div>
+<map name="sw_2airborne_2modules_2computer__vision_2lib_2encoding_2jpeg_8c" id="sw_2airborne_2modules_2computer__vision_2lib_2encoding_2jpeg_8c">
+<area shape="rect" id="node3" href="jpeg_8h.html" title="Encode images with the use of the JPEG encoding. " alt="" coords="52,115,113,143"/><area shape="rect" id="node7" href="image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="69,193,200,221"/></map>
 </div>
 </div>
 <p><a href="jpeg_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJPEG__ENCODER__STRUCTURE.html">JPEG_ENCODER_STRUCTURE</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structJPEG__ENCODER__STRUCTURE"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#structJPEG__ENCODER__STRUCTURE">JPEG_ENCODER_STRUCTURE</a></td></tr>
+<tr class="separator:structJPEG__ENCODER__STRUCTURE"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ad51ded0bbd705f02f73fc60c0b721ced"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#ad51ded0bbd705f02f73fc60c0b721ced">BLOCK_SIZE</a>&#160;&#160;&#160;64</td></tr>
-<tr class="separator:ad51ded0bbd705f02f73fc60c0b721ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1ca01476dc2f36c8fb4aaba503d736b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#ac1ca01476dc2f36c8fb4aaba503d736b">JPEG_BLOCK_SIZE</a>&#160;&#160;&#160;64</td></tr>
+<tr class="separator:ac1ca01476dc2f36c8fb4aaba503d736b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80f8869084c74ed2427485e95911941f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a80f8869084c74ed2427485e95911941f">PUTBITS</a></td></tr>
 <tr class="separator:a80f8869084c74ed2427485e95911941f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a54d1e03e9eb6692634ff804fbf781643"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
-<a class="el" href="structJPEG__ENCODER__STRUCTURE.html">JPEG_ENCODER_STRUCTURE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a54d1e03e9eb6692634ff804fbf781643">JPEG_ENCODER_STRUCTURE</a></td></tr>
+<a class="el" href="jpeg_8c.html#structJPEG__ENCODER__STRUCTURE">JPEG_ENCODER_STRUCTURE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a54d1e03e9eb6692634ff804fbf781643">JPEG_ENCODER_STRUCTURE</a></td></tr>
 <tr class="separator:a54d1e03e9eb6692634ff804fbf781643"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aeeebdcbde98e380664acf5bb80364783"><td class="memItemLeft" align="right" valign="top">static unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#aeeebdcbde98e380664acf5bb80364783">svs_size_code</a> (int w)</td></tr>
 <tr class="separator:aeeebdcbde98e380664acf5bb80364783"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26a584de7bb48949527f6171c5e42333"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a26a584de7bb48949527f6171c5e42333">create_svs_jpeg_header</a> (unsigned char *jpegbuf, <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> size, int w)</td></tr>
-<tr class="separator:a26a584de7bb48949527f6171c5e42333"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fadd5eac230239bc7b9ef2785fd552d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a7fadd5eac230239bc7b9ef2785fd552d">initialization</a> (<a class="el" href="structJPEG__ENCODER__STRUCTURE.html">JPEG_ENCODER_STRUCTURE</a> *, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)</td></tr>
-<tr class="separator:a7fadd5eac230239bc7b9ef2785fd552d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb997865125e92f84d2a22d6cbee2b3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#abb997865125e92f84d2a22d6cbee2b3e">initialize_quantization_tables</a> (<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)</td></tr>
-<tr class="separator:abb997865125e92f84d2a22d6cbee2b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a385b27d29e29115ec6dc7bffd1896b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a6a385b27d29e29115ec6dc7bffd1896b">write_markers</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)</td></tr>
-<tr class="separator:a6a385b27d29e29115ec6dc7bffd1896b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a092d54c257eb11877f1bab2848ffbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a9a092d54c257eb11877f1bab2848ffbc">read_400_format</a> (<a class="el" href="structJPEG__ENCODER__STRUCTURE.html">JPEG_ENCODER_STRUCTURE</a> *, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)</td></tr>
-<tr class="separator:a9a092d54c257eb11877f1bab2848ffbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07e67cb34e3a98121c2c4227b6e9d7d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a07e67cb34e3a98121c2c4227b6e9d7d2">read_422_format</a> (<a class="el" href="structJPEG__ENCODER__STRUCTURE.html">JPEG_ENCODER_STRUCTURE</a> *, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)</td></tr>
-<tr class="separator:a07e67cb34e3a98121c2c4227b6e9d7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4943a048305ecb3f53df39deaf971ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#ae4943a048305ecb3f53df39deaf971ca">encodeMCU</a> (<a class="el" href="structJPEG__ENCODER__STRUCTURE.html">JPEG_ENCODER_STRUCTURE</a> *, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)</td></tr>
-<tr class="separator:ae4943a048305ecb3f53df39deaf971ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2bff16cf493eb232635dda82bc1c990"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#ac2bff16cf493eb232635dda82bc1c990">levelshift</a> (<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> *)</td></tr>
-<tr class="separator:ac2bff16cf493eb232635dda82bc1c990"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a826f74bd9984db7fb7b1c02b77860fad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a826f74bd9984db7fb7b1c02b77860fad">DCT</a> (<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> *)</td></tr>
-<tr class="separator:a826f74bd9984db7fb7b1c02b77860fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af41ebd28de3d5bf2b686a78758d90c16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#af41ebd28de3d5bf2b686a78758d90c16">quantization</a> (<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> *, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *)</td></tr>
-<tr class="separator:af41ebd28de3d5bf2b686a78758d90c16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec677f7f1d2a631636875431ce33a945"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#aec677f7f1d2a631636875431ce33a945">huffman</a> (<a class="el" href="structJPEG__ENCODER__STRUCTURE.html">JPEG_ENCODER_STRUCTURE</a> *, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)</td></tr>
-<tr class="separator:aec677f7f1d2a631636875431ce33a945"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4b9b752756cf54a995a3baa1c00f3a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#ad4b9b752756cf54a995a3baa1c00f3a0">close_bitstream</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)</td></tr>
-<tr class="separator:ad4b9b752756cf54a995a3baa1c00f3a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af000b1ba8ec15e4044a5f68aafd42906"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#af000b1ba8ec15e4044a5f68aafd42906">jpeg_create_svs_header</a> (unsigned char *jpegbuf, <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> size, int w)</td></tr>
+<tr class="separator:af000b1ba8ec15e4044a5f68aafd42906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a688433e5f55000ae893f2d5c29097691"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a688433e5f55000ae893f2d5c29097691">jpeg_initialization</a> (<a class="el" href="jpeg_8c.html#structJPEG__ENCODER__STRUCTURE">JPEG_ENCODER_STRUCTURE</a> *, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)</td></tr>
+<tr class="separator:a688433e5f55000ae893f2d5c29097691"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26b97262e8620df4fd0ece95195a2d8e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a26b97262e8620df4fd0ece95195a2d8e">jpeg_write_markers</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)</td></tr>
+<tr class="separator:a26b97262e8620df4fd0ece95195a2d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a496e270428d382bcbda831334590eaf6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a496e270428d382bcbda831334590eaf6">jpeg_read_400_format</a> (<a class="el" href="jpeg_8c.html#structJPEG__ENCODER__STRUCTURE">JPEG_ENCODER_STRUCTURE</a> *, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)</td></tr>
+<tr class="separator:a496e270428d382bcbda831334590eaf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a206021dc908d46e0a1d72ed9c40b10e9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a206021dc908d46e0a1d72ed9c40b10e9">jpeg_read_422_format</a> (<a class="el" href="jpeg_8c.html#structJPEG__ENCODER__STRUCTURE">JPEG_ENCODER_STRUCTURE</a> *, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)</td></tr>
+<tr class="separator:a206021dc908d46e0a1d72ed9c40b10e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa65677a00f264d53b744f64b386139e1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#aa65677a00f264d53b744f64b386139e1">jpeg_encodeMCU</a> (<a class="el" href="jpeg_8c.html#structJPEG__ENCODER__STRUCTURE">JPEG_ENCODER_STRUCTURE</a> *, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)</td></tr>
+<tr class="separator:aa65677a00f264d53b744f64b386139e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b9aa7581d09ec6412a14ec76334667c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a1b9aa7581d09ec6412a14ec76334667c">jpeg_levelshift</a> (<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> *)</td></tr>
+<tr class="separator:a1b9aa7581d09ec6412a14ec76334667c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b96ae28e2300858e6af3061ac8f96b9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a5b96ae28e2300858e6af3061ac8f96b9">jpeg_DCT</a> (<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> *)</td></tr>
+<tr class="separator:a5b96ae28e2300858e6af3061ac8f96b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac00d030f6b21b9e0973fe18a7a7f7e51"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#ac00d030f6b21b9e0973fe18a7a7f7e51">jpeg_quantization</a> (<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> *, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *)</td></tr>
+<tr class="separator:ac00d030f6b21b9e0973fe18a7a7f7e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20c1f652043de7bc8171be6591bd3480"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a20c1f652043de7bc8171be6591bd3480">jpeg_huffman</a> (<a class="el" href="jpeg_8c.html#structJPEG__ENCODER__STRUCTURE">JPEG_ENCODER_STRUCTURE</a> *, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)</td></tr>
+<tr class="separator:a20c1f652043de7bc8171be6591bd3480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2a62dbe59d962b7cd5158e744b941df"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#af2a62dbe59d962b7cd5158e744b941df">jpeg_close_bitstream</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)</td></tr>
+<tr class="separator:af2a62dbe59d962b7cd5158e744b941df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69ed605945a7ea46dbfaa9b3f29b5ed8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a69ed605945a7ea46dbfaa9b3f29b5ed8">MakeTables</a> (int q)</td></tr>
 <tr class="separator:a69ed605945a7ea46dbfaa9b3f29b5ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac136ff442ca9956a80813e6f2eb0c1b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#ac136ff442ca9956a80813e6f2eb0c1b1">encode_image</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *input_ptr, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *output_ptr, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> quality_factor, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> image_format, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> image_width, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> image_height, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> add_dri_header)</td></tr>
-<tr class="separator:ac136ff442ca9956a80813e6f2eb0c1b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80691d29cd889f8b549ac6850c95e1b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a80691d29cd889f8b549ac6850c95e1b6">jpeg_encode_image</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *in, struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *out, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> quality_factor, bool_t add_dri_header)</td></tr>
+<tr class="memdesc:a80691d29cd889f8b549ac6850c95e1b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode an YUV422 image.  <a href="#a80691d29cd889f8b549ac6850c95e1b6">More...</a><br/></td></tr>
+<tr class="separator:a80691d29cd889f8b549ac6850c95e1b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a78c56c5f0961e05b457f2474b73dccf9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a78c56c5f0961e05b457f2474b73dccf9">Lqt</a> [<a class="el" href="jpeg_8c.html#ad51ded0bbd705f02f73fc60c0b721ced">BLOCK_SIZE</a>]</td></tr>
-<tr class="separator:a78c56c5f0961e05b457f2474b73dccf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18941e57df33d2187cba5ad8c7418397"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a18941e57df33d2187cba5ad8c7418397">Cqt</a> [<a class="el" href="jpeg_8c.html#ad51ded0bbd705f02f73fc60c0b721ced">BLOCK_SIZE</a>]</td></tr>
-<tr class="separator:a18941e57df33d2187cba5ad8c7418397"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d55b4368df7ca8365c48e667cee58b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a9d55b4368df7ca8365c48e667cee58b8">ILqt</a> [<a class="el" href="jpeg_8c.html#ad51ded0bbd705f02f73fc60c0b721ced">BLOCK_SIZE</a>]</td></tr>
-<tr class="separator:a9d55b4368df7ca8365c48e667cee58b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f4093cdde95d4a6b02e8cae669f5050"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a9f4093cdde95d4a6b02e8cae669f5050">ICqt</a> [<a class="el" href="jpeg_8c.html#ad51ded0bbd705f02f73fc60c0b721ced">BLOCK_SIZE</a>]</td></tr>
-<tr class="separator:a9f4093cdde95d4a6b02e8cae669f5050"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4372e14b7777811cf3416d69a4ee1db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#af4372e14b7777811cf3416d69a4ee1db">Y1</a> [<a class="el" href="jpeg_8c.html#ad51ded0bbd705f02f73fc60c0b721ced">BLOCK_SIZE</a>]</td></tr>
-<tr class="separator:af4372e14b7777811cf3416d69a4ee1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f8569fa27ebc72c9fba0b4cd0d40db7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a0f8569fa27ebc72c9fba0b4cd0d40db7">Y2</a> [<a class="el" href="jpeg_8c.html#ad51ded0bbd705f02f73fc60c0b721ced">BLOCK_SIZE</a>]</td></tr>
-<tr class="separator:a0f8569fa27ebc72c9fba0b4cd0d40db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a897bb011d23f827c0171ef569f3c690c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a897bb011d23f827c0171ef569f3c690c">CB</a> [<a class="el" href="jpeg_8c.html#ad51ded0bbd705f02f73fc60c0b721ced">BLOCK_SIZE</a>]</td></tr>
-<tr class="separator:a897bb011d23f827c0171ef569f3c690c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e21cc14e4b431dc31bb3c0668d723f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a3e21cc14e4b431dc31bb3c0668d723f6">CR</a> [<a class="el" href="jpeg_8c.html#ad51ded0bbd705f02f73fc60c0b721ced">BLOCK_SIZE</a>]</td></tr>
-<tr class="separator:a3e21cc14e4b431dc31bb3c0668d723f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4145e0d36c67d8f0b204df0cc8a46e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#ad4145e0d36c67d8f0b204df0cc8a46e5">Temp</a> [<a class="el" href="jpeg_8c.html#ad51ded0bbd705f02f73fc60c0b721ced">BLOCK_SIZE</a>]</td></tr>
-<tr class="separator:ad4145e0d36c67d8f0b204df0cc8a46e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb8bf9cc6992a4062726602d79bd6ac0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#afb8bf9cc6992a4062726602d79bd6ac0">lcode</a> = 0</td></tr>
-<tr class="separator:afb8bf9cc6992a4062726602d79bd6ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a39e883ccd82dbf1bcd6605f9d9e1cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a0a39e883ccd82dbf1bcd6605f9d9e1cd">bitindex</a> = 0</td></tr>
-<tr class="separator:a0a39e883ccd82dbf1bcd6605f9d9e1cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37d0890d31f8f5a289a9cca23fffc0fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a37d0890d31f8f5a289a9cca23fffc0fa">fdct_coeff</a> [8] = {0x5a82, 0x5a82, 0x30fb, 0x7641, 0x18f8, 0x7d8a, 0x471c, 0x6a6d}</td></tr>
-<tr class="separator:a37d0890d31f8f5a289a9cca23fffc0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac928bf63d845025f274eb5fbd4024748"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#ac928bf63d845025f274eb5fbd4024748">fdct_temp</a> [64]</td></tr>
-<tr class="separator:ac928bf63d845025f274eb5fbd4024748"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18392592ac9cafb0eedcc962b8c16f08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a18392592ac9cafb0eedcc962b8c16f08">luminance_dc_code_table</a> []</td></tr>
+<tr class="memitem:a18392592ac9cafb0eedcc962b8c16f08"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a18392592ac9cafb0eedcc962b8c16f08">luminance_dc_code_table</a> []</td></tr>
 <tr class="separator:a18392592ac9cafb0eedcc962b8c16f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7e433256dbc3b7e147839a33c24a46d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#aa7e433256dbc3b7e147839a33c24a46d">luminance_dc_size_table</a> []</td></tr>
+<tr class="memitem:aa7e433256dbc3b7e147839a33c24a46d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#aa7e433256dbc3b7e147839a33c24a46d">luminance_dc_size_table</a> []</td></tr>
 <tr class="separator:aa7e433256dbc3b7e147839a33c24a46d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a586776104b0856bd4e77093471e268c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a586776104b0856bd4e77093471e268c8">chrominance_dc_code_table</a> []</td></tr>
+<tr class="memitem:a586776104b0856bd4e77093471e268c8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a586776104b0856bd4e77093471e268c8">chrominance_dc_code_table</a> []</td></tr>
 <tr class="separator:a586776104b0856bd4e77093471e268c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5230ada4b4b660984f5a14a4cf61a9ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a5230ada4b4b660984f5a14a4cf61a9ee">chrominance_dc_size_table</a> []</td></tr>
+<tr class="memitem:a5230ada4b4b660984f5a14a4cf61a9ee"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a5230ada4b4b660984f5a14a4cf61a9ee">chrominance_dc_size_table</a> []</td></tr>
 <tr class="separator:a5230ada4b4b660984f5a14a4cf61a9ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac75b710d5f54b9833f2184954d7de19c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#ac75b710d5f54b9833f2184954d7de19c">luminance_ac_code_table</a> []</td></tr>
+<tr class="memitem:ac75b710d5f54b9833f2184954d7de19c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#ac75b710d5f54b9833f2184954d7de19c">luminance_ac_code_table</a> []</td></tr>
 <tr class="separator:ac75b710d5f54b9833f2184954d7de19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ce20a5289424c5ebd198741a86527f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a1ce20a5289424c5ebd198741a86527f8">luminance_ac_size_table</a> []</td></tr>
+<tr class="memitem:a1ce20a5289424c5ebd198741a86527f8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a1ce20a5289424c5ebd198741a86527f8">luminance_ac_size_table</a> []</td></tr>
 <tr class="separator:a1ce20a5289424c5ebd198741a86527f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae117df1c4f2886f045d50be38d20f371"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#ae117df1c4f2886f045d50be38d20f371">chrominance_ac_code_table</a> []</td></tr>
+<tr class="memitem:ae117df1c4f2886f045d50be38d20f371"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#ae117df1c4f2886f045d50be38d20f371">chrominance_ac_code_table</a> []</td></tr>
 <tr class="separator:ae117df1c4f2886f045d50be38d20f371"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfec6656ccf094ae416ea110b8413cdc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#abfec6656ccf094ae416ea110b8413cdc">chrominance_ac_size_table</a> []</td></tr>
+<tr class="memitem:abfec6656ccf094ae416ea110b8413cdc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#abfec6656ccf094ae416ea110b8413cdc">chrominance_ac_size_table</a> []</td></tr>
 <tr class="separator:abfec6656ccf094ae416ea110b8413cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5299963acfe8bd5f361a487ea04dffd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#af5299963acfe8bd5f361a487ea04dffd">bitsize</a> []</td></tr>
+<tr class="memitem:af5299963acfe8bd5f361a487ea04dffd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#af5299963acfe8bd5f361a487ea04dffd">bitsize</a> []</td></tr>
 <tr class="separator:af5299963acfe8bd5f361a487ea04dffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05346db37b73ffae8a09f969e66c1c4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a05346db37b73ffae8a09f969e66c1c4c">markerdata</a> []</td></tr>
+<tr class="memitem:a05346db37b73ffae8a09f969e66c1c4c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a05346db37b73ffae8a09f969e66c1c4c">markerdata</a> []</td></tr>
 <tr class="separator:a05346db37b73ffae8a09f969e66c1c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07143b3bf3e0c33a84aba192e86adf4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a07143b3bf3e0c33a84aba192e86adf4a">zigzag_table</a> []</td></tr>
+<tr class="memitem:a07143b3bf3e0c33a84aba192e86adf4a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a07143b3bf3e0c33a84aba192e86adf4a">zigzag_table</a> []</td></tr>
 <tr class="separator:a07143b3bf3e0c33a84aba192e86adf4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada85081a495ab488446b2d0130e94592"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#ada85081a495ab488446b2d0130e94592">luminance_quant_table</a> []</td></tr>
-<tr class="separator:ada85081a495ab488446b2d0130e94592"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d0011d782cc6fb744d06dc506e59f33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a6d0011d782cc6fb744d06dc506e59f33">chrominance_quant_table</a> []</td></tr>
-<tr class="separator:a6d0011d782cc6fb744d06dc506e59f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af82f20fef8040547d9266e199f2a4f0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#af82f20fef8040547d9266e199f2a4f0d">Y3</a> [<a class="el" href="jpeg_8c.html#ad51ded0bbd705f02f73fc60c0b721ced">BLOCK_SIZE</a>]</td></tr>
-<tr class="separator:af82f20fef8040547d9266e199f2a4f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a937e9dcaf11fad2a7f0abf6074877c33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a937e9dcaf11fad2a7f0abf6074877c33">Y4</a> [<a class="el" href="jpeg_8c.html#ad51ded0bbd705f02f73fc60c0b721ced">BLOCK_SIZE</a>]</td></tr>
-<tr class="separator:a937e9dcaf11fad2a7f0abf6074877c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a202e842bdaddeb7fa6672ada511a148c"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a202e842bdaddeb7fa6672ada511a148c">read_format</a> )(<a class="el" href="structJPEG__ENCODER__STRUCTURE.html">JPEG_ENCODER_STRUCTURE</a> *jpeg_encoder_structure, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *input_ptr)</td></tr>
+<tr class="memitem:a16fc40420de3ac7e072f80d47733f746"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a16fc40420de3ac7e072f80d47733f746">Lqt</a> [<a class="el" href="jpeg_8c.html#ac1ca01476dc2f36c8fb4aaba503d736b">JPEG_BLOCK_SIZE</a>]</td></tr>
+<tr class="separator:a16fc40420de3ac7e072f80d47733f746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6af5849549e3c0c0a215b904a183f3f6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a6af5849549e3c0c0a215b904a183f3f6">Cqt</a> [<a class="el" href="jpeg_8c.html#ac1ca01476dc2f36c8fb4aaba503d736b">JPEG_BLOCK_SIZE</a>]</td></tr>
+<tr class="separator:a6af5849549e3c0c0a215b904a183f3f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32616c9fb198d19981e5e0986f1edcdb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a32616c9fb198d19981e5e0986f1edcdb">ILqt</a> [<a class="el" href="jpeg_8c.html#ac1ca01476dc2f36c8fb4aaba503d736b">JPEG_BLOCK_SIZE</a>]</td></tr>
+<tr class="separator:a32616c9fb198d19981e5e0986f1edcdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff6bdc1d434730275d95f729115a2537"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#aff6bdc1d434730275d95f729115a2537">ICqt</a> [<a class="el" href="jpeg_8c.html#ac1ca01476dc2f36c8fb4aaba503d736b">JPEG_BLOCK_SIZE</a>]</td></tr>
+<tr class="separator:aff6bdc1d434730275d95f729115a2537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e5d8c92f472b9fc19753d5ca526d9bb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a1e5d8c92f472b9fc19753d5ca526d9bb">Y1</a> [<a class="el" href="jpeg_8c.html#ac1ca01476dc2f36c8fb4aaba503d736b">JPEG_BLOCK_SIZE</a>]</td></tr>
+<tr class="separator:a1e5d8c92f472b9fc19753d5ca526d9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a08edaec3e45b15ab563d8a7b6b53d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#af9a08edaec3e45b15ab563d8a7b6b53d">Y2</a> [<a class="el" href="jpeg_8c.html#ac1ca01476dc2f36c8fb4aaba503d736b">JPEG_BLOCK_SIZE</a>]</td></tr>
+<tr class="separator:af9a08edaec3e45b15ab563d8a7b6b53d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bf766bc88278a546429f0967151bb4e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a9bf766bc88278a546429f0967151bb4e">CB</a> [<a class="el" href="jpeg_8c.html#ac1ca01476dc2f36c8fb4aaba503d736b">JPEG_BLOCK_SIZE</a>]</td></tr>
+<tr class="separator:a9bf766bc88278a546429f0967151bb4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afae31774766da9c1604d6052e61a207f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#afae31774766da9c1604d6052e61a207f">CR</a> [<a class="el" href="jpeg_8c.html#ac1ca01476dc2f36c8fb4aaba503d736b">JPEG_BLOCK_SIZE</a>]</td></tr>
+<tr class="separator:afae31774766da9c1604d6052e61a207f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5078d22a1e535110c2d08e8b34768f6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#ae5078d22a1e535110c2d08e8b34768f6">Temp</a> [<a class="el" href="jpeg_8c.html#ac1ca01476dc2f36c8fb4aaba503d736b">JPEG_BLOCK_SIZE</a>]</td></tr>
+<tr class="separator:ae5078d22a1e535110c2d08e8b34768f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb8bf9cc6992a4062726602d79bd6ac0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#afb8bf9cc6992a4062726602d79bd6ac0">lcode</a> = 0</td></tr>
+<tr class="separator:afb8bf9cc6992a4062726602d79bd6ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a39e883ccd82dbf1bcd6605f9d9e1cd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a0a39e883ccd82dbf1bcd6605f9d9e1cd">bitindex</a> = 0</td></tr>
+<tr class="separator:a0a39e883ccd82dbf1bcd6605f9d9e1cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a202e842bdaddeb7fa6672ada511a148c"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a202e842bdaddeb7fa6672ada511a148c">read_format</a> )(<a class="el" href="jpeg_8c.html#structJPEG__ENCODER__STRUCTURE">JPEG_ENCODER_STRUCTURE</a> *jpeg_encoder_structure, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *input_ptr)</td></tr>
 <tr class="separator:a202e842bdaddeb7fa6672ada511a148c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66aa70d246f7f2f3b3b74d133b505b84"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#a66aa70d246f7f2f3b3b74d133b505b84">jpeg_luma_quantizer</a> [64]</td></tr>
 <tr class="separator:a66aa70d246f7f2f3b3b74d133b505b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acff8e4aed7722b780bbb9c6a682a2d0d"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jpeg_8c.html#acff8e4aed7722b780bbb9c6a682a2d0d">jpeg_chroma_quantizer</a> [64]</td></tr>
 <tr class="separator:acff8e4aed7722b780bbb9c6a682a2d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="ad51ded0bbd705f02f73fc60c0b721ced"></a>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Encode images with the use of the JPEG encoding. </p>
+
+<p>Definition in file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+</div><hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="structJPEG__ENCODER__STRUCTURE" id="structJPEG__ENCODER__STRUCTURE"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define BLOCK_SIZE&#160;&#160;&#160;64</td>
+          <td class="memname">struct JPEG_ENCODER_STRUCTURE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00063">63</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a6b49aa1c0932d4b7c23c9aa4468e2688"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<td class="fieldname">
+cols</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a3c740b24df7fc6a74b0dcb3aa35bbbaa"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<td class="fieldname">
+cols_in_right_mcus</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aa6655031dfc7372aedbb586486412759"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<td class="fieldname">
+horizontal_mcus</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a6c1fbbc83313128bc544c223885e5c71"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<td class="fieldname">
+incr</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ae081347d2270cbbd15ee14ef53ac210e"></a><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a></td>
+<td class="fieldname">
+ldc1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a0489c8551bd1a6e19374a0c66975ba1a"></a><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a></td>
+<td class="fieldname">
+ldc2</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a5f0f2d1b956b433186b81b5f64d92670"></a><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a></td>
+<td class="fieldname">
+ldc3</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aa0889db1aafe16387835bf3eb27c3d6b"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<td class="fieldname">
+length_minus_mcu_width</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ae03847cac820d62f8d229360d109b8a1"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<td class="fieldname">
+length_minus_width</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ab1b1ba75dd7b4aa62451fdc5621bb339"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<td class="fieldname">
+mcu_height</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a8775f5b6ec3cdd19cb1b010014744e71"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<td class="fieldname">
+mcu_width</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a07eb6147bddabfe4295077af80d7bcd1"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<td class="fieldname">
+mcu_width_size</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="afc7271476f6fe399362809d8a1a4191e"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<td class="fieldname">
+offset</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a80cc473e25a06e2049d49728448e1584"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<td class="fieldname">
+rows</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a5fc32d4db7d3a4eab595483fb91dbe16"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<td class="fieldname">
+rows_in_bottom_mcus</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ac2c81a9e7cbaa30d24490b5107f87b41"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<td class="fieldname">
+vertical_mcus</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="ac1ca01476dc2f36c8fb4aaba503d736b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JPEG_BLOCK_SIZE&#160;&#160;&#160;64</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00082">82</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00290">290</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
 </div>
 </div>
@@ -272,12 +380,12 @@ Variables</h2></td></tr>
 <div class="line">    bits_in_next_word = (<a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>) (<a class="code" href="jpeg_8c.html#a0a39e883ccd82dbf1bcd6605f9d9e1cd">bitindex</a> + numbits - 32);    \</div>
 <div class="line">    if (bits_in_next_word &lt; 0)    \</div>
 <div class="line">    {    \</div>
-<div class="line">      lcode = (<a class="code" href="jpeg_8c.html#afb8bf9cc6992a4062726602d79bd6ac0">lcode</a> &lt;&lt; numbits) | <a class="code" href="link__mcu__can_8c.html#afb87d045bbf32b236fc425efe02bdc7b">data</a>;    \</div>
+<div class="line">      lcode = (<a class="code" href="jpeg_8c.html#afb8bf9cc6992a4062726602d79bd6ac0">lcode</a> &lt;&lt; numbits) | data;    \</div>
 <div class="line">      bitindex += numbits;    \</div>
 <div class="line">    }    \</div>
 <div class="line">    else    \</div>
 <div class="line">    {    \</div>
-<div class="line">      lcode = (<a class="code" href="jpeg_8c.html#afb8bf9cc6992a4062726602d79bd6ac0">lcode</a> &lt;&lt; (32 - <a class="code" href="jpeg_8c.html#a0a39e883ccd82dbf1bcd6605f9d9e1cd">bitindex</a>)) | (<a class="code" href="link__mcu__can_8c.html#afb87d045bbf32b236fc425efe02bdc7b">data</a> &gt;&gt; bits_in_next_word);    \</div>
+<div class="line">      lcode = (<a class="code" href="jpeg_8c.html#afb8bf9cc6992a4062726602d79bd6ac0">lcode</a> &lt;&lt; (32 - <a class="code" href="jpeg_8c.html#a0a39e883ccd82dbf1bcd6605f9d9e1cd">bitindex</a>)) | (data &gt;&gt; bits_in_next_word);    \</div>
 <div class="line">      if ((*output_ptr++ = (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>)(<a class="code" href="jpeg_8c.html#afb8bf9cc6992a4062726602d79bd6ac0">lcode</a> &gt;&gt; 24)) == 0xff)    \</div>
 <div class="line">        *output_ptr++ = 0;    \</div>
 <div class="line">      if ((*output_ptr++ = (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>)(<a class="code" href="jpeg_8c.html#afb8bf9cc6992a4062726602d79bd6ac0">lcode</a> &gt;&gt; 16)) == 0xff)    \</div>
@@ -286,14 +394,14 @@ Variables</h2></td></tr>
 <div class="line">        *output_ptr++ = 0;    \</div>
 <div class="line">      if ((*output_ptr++ = (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>) <a class="code" href="jpeg_8c.html#afb8bf9cc6992a4062726602d79bd6ac0">lcode</a>) == 0xff)    \</div>
 <div class="line">        *output_ptr++ = 0;    \</div>
-<div class="line">      lcode = <a class="code" href="link__mcu__can_8c.html#afb87d045bbf32b236fc425efe02bdc7b">data</a>;    \</div>
+<div class="line">      lcode = data;    \</div>
 <div class="line">      bitindex = bits_in_next_word;    \</div>
 <div class="line">    }    \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="jpeg_8c_source.html#l00614">614</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00638">huffman()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00638">jpeg_huffman()</a>.</p>
 
 </div>
 </div>
@@ -303,7 +411,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="structJPEG__ENCODER__STRUCTURE.html">JPEG_ENCODER_STRUCTURE</a>  <a class="el" href="structJPEG__ENCODER__STRUCTURE.html">JPEG_ENCODER_STRUCTURE</a></td>
+          <td class="memname">typedef struct <a class="el" href="jpeg_8c.html#structJPEG__ENCODER__STRUCTURE">JPEG_ENCODER_STRUCTURE</a>  <a class="el" href="jpeg_8c.html#structJPEG__ENCODER__STRUCTURE">JPEG_ENCODER_STRUCTURE</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -311,45 +419,53 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ad4b9b752756cf54a995a3baa1c00f3a0"></a>
+<a class="anchor" id="af2a62dbe59d962b7cd5158e744b941df"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> * close_bitstream </td>
+          <td class="memname">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> * jpeg_close_bitstream </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>output_ptr</em>)</td><td></td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="jpeg_8c_source.html#l00735">735</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>References <a class="el" href="jpeg_8c_source.html#l00318">bitindex</a>, and <a class="el" href="jpeg_8c_source.html#l00317">lcode</a>.</p>
+<p>References <a class="el" href="jpeg_8c_source.html#l00304">bitindex</a>, and <a class="el" href="jpeg_8c_source.html#l00303">lcode</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00436">encode_image()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00425">jpeg_encode_image()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="jpeg_8c_ad4b9b752756cf54a995a3baa1c00f3a0_icgraph.png" border="0" usemap="#jpeg_8c_ad4b9b752756cf54a995a3baa1c00f3a0_icgraph" alt=""/></div>
-<map name="jpeg_8c_ad4b9b752756cf54a995a3baa1c00f3a0_icgraph" id="jpeg_8c_ad4b9b752756cf54a995a3baa1c00f3a0_icgraph">
-<area shape="rect" id="node3" href="jpeg_8h.html#a61d22b80daac17f19740e3939fc05fcd" title="encode_image" alt="" coords="180,30,295,58"/><area shape="rect" id="node5" href="image__nc__send_8c.html#ab44d405e0d6e4e81ad90c9cc48fb5175" title="computervision_thread_main" alt="" coords="344,30,552,58"/><area shape="rect" id="node7" href="image__nc__send_8h.html#a8655f7b548a7365eaad26d96775d09c1" title="image_nc_send_start" alt="" coords="601,5,759,33"/><area shape="rect" id="node9" href="viewvideo_8h.html#a2e997d697b4958da4156565605b92575" title="viewvideo_start" alt="" coords="620,55,740,83"/></map>
+<div class="center"><img src="jpeg_8c_af2a62dbe59d962b7cd5158e744b941df_icgraph.png" border="0" usemap="#jpeg_8c_af2a62dbe59d962b7cd5158e744b941df_icgraph" alt=""/></div>
+<map name="jpeg_8c_af2a62dbe59d962b7cd5158e744b941df_icgraph" id="jpeg_8c_af2a62dbe59d962b7cd5158e744b941df_icgraph">
+<area shape="rect" id="node3" href="jpeg_8h.html#a80691d29cd889f8b549ac6850c95e1b6" title="Encode an YUV422 image. " alt="" coords="215,102,364,130"/><area shape="rect" id="node5" href="bebop__front__camera_8c.html#a63cb60d57fb10579691954003dc4491e" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="648,6,803,50"/><area shape="rect" id="node9" href="bebop__front__camera_8c.html#aae423a991ed799c617921a4da12fb892" title="bebop_front_camera\l_save_shot" alt="" coords="425,35,580,79"/><area shape="rect" id="node12" href="opticflow__module_8c.html#a55f848033134662d4f93cd9cbef5acac" title="The main optical flow calculation thread. " alt="" coords="421,102,584,130"/><area shape="rect" id="node16" href="video__thread_8c.html#aaa7b1f2f5b3646dfeb40b7cacd005efb" title="video_thread_save_shot" alt="" coords="415,153,591,181"/><area shape="rect" id="node22" href="viewvideo_8c.html#a6a9f8aa0c7db5b292f18c8266808fe62" title="viewvideo_function" alt="" coords="432,203,573,231"/><area shape="rect" id="node7" href="bebop__front__camera_8h.html#a179ce25d44bf966f12b86e3a96654161" title="Start with streaming. " alt="" coords="859,6,1013,50"/><area shape="rect" id="node14" href="opticflow__module_8h.html#a74f8b561efed21509627b8ebacc72eea" title="Start the optical flow calculation. " alt="" coords="641,102,809,130"/><area shape="rect" id="node18" href="video__thread_8c.html#a99fd8c1413b858abf320b9adb453ed75" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="644,153,807,181"/><area shape="rect" id="node20" href="video__thread_8h.html#ae99893bfbc5f28c15432c06aee1e736f" title="Start with streaming. " alt="" coords="865,153,1007,181"/><area shape="rect" id="node24" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. " alt="" coords="671,203,780,231"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a26a584de7bb48949527f6171c5e42333"></a>
+<a class="anchor" id="af000b1ba8ec15e4044a5f68aafd42906"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int create_svs_jpeg_header </td>
+          <td class="memname">int jpeg_create_svs_header </td>
           <td>(</td>
           <td class="paramtype">unsigned char *&#160;</td>
           <td class="paramname"><em>jpegbuf</em>, </td>
@@ -374,71 +490,79 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00040">40</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00044">44</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>References <a class="el" href="ins__alt__float_8c_source.html#l00236">p</a>, and <a class="el" href="jpeg_8c_source.html#l00019">svs_size_code()</a>.</p>
+<p>References <a class="el" href="ins__alt__float_8c_source.html#l00249">p</a>, and <a class="el" href="jpeg_8c_source.html#l00023">svs_size_code()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="jpeg_8c_a26a584de7bb48949527f6171c5e42333_cgraph.png" border="0" usemap="#jpeg_8c_a26a584de7bb48949527f6171c5e42333_cgraph" alt=""/></div>
-<map name="jpeg_8c_a26a584de7bb48949527f6171c5e42333_cgraph" id="jpeg_8c_a26a584de7bb48949527f6171c5e42333_cgraph">
+<div class="center"><img src="jpeg_8c_af000b1ba8ec15e4044a5f68aafd42906_cgraph.png" border="0" usemap="#jpeg_8c_af000b1ba8ec15e4044a5f68aafd42906_cgraph" alt=""/></div>
+<map name="jpeg_8c_af000b1ba8ec15e4044a5f68aafd42906_cgraph" id="jpeg_8c_af000b1ba8ec15e4044a5f68aafd42906_cgraph">
 <area shape="rect" id="node3" href="jpeg_8c.html#aeeebdcbde98e380664acf5bb80364783" title="svs_size_code" alt="" coords="233,5,345,33"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a826f74bd9984db7fb7b1c02b77860fad"></a>
+<a class="anchor" id="a5b96ae28e2300858e6af3061ac8f96b9"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void DCT </td>
+          <td class="memname">static void jpeg_DCT </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> *&#160;</td>
           <td class="paramname"><em>data</em>)</td><td></td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="jpeg_8c_source.html#l00526">526</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
 <p>References <a class="el" href="baro__MS5534A_8c_source.html#l00203">c1</a>, <a class="el" href="baro__MS5534A_8c_source.html#l00203">c2</a>, <a class="el" href="baro__MS5534A_8c_source.html#l00203">c3</a>, and <a class="el" href="baro__MS5534A_8c_source.html#l00203">c6</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00489">encodeMCU()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00489">jpeg_encodeMCU()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="jpeg_8c_a826f74bd9984db7fb7b1c02b77860fad_icgraph.png" border="0" usemap="#jpeg_8c_a826f74bd9984db7fb7b1c02b77860fad_icgraph" alt=""/></div>
-<map name="jpeg_8c_a826f74bd9984db7fb7b1c02b77860fad_icgraph" id="jpeg_8c_a826f74bd9984db7fb7b1c02b77860fad_icgraph">
-<area shape="rect" id="node3" href="jpeg_8c.html#ae4943a048305ecb3f53df39deaf971ca" title="encodeMCU" alt="" coords="101,30,200,58"/><area shape="rect" id="node5" href="jpeg_8h.html#a61d22b80daac17f19740e3939fc05fcd" title="encode_image" alt="" coords="249,30,364,58"/><area shape="rect" id="node7" href="image__nc__send_8c.html#ab44d405e0d6e4e81ad90c9cc48fb5175" title="computervision_thread_main" alt="" coords="413,30,621,58"/><area shape="rect" id="node9" href="image__nc__send_8h.html#a8655f7b548a7365eaad26d96775d09c1" title="image_nc_send_start" alt="" coords="671,5,828,33"/><area shape="rect" id="node11" href="viewvideo_8h.html#a2e997d697b4958da4156565605b92575" title="viewvideo_start" alt="" coords="689,55,809,83"/></map>
+<div class="center"><img src="jpeg_8c_a5b96ae28e2300858e6af3061ac8f96b9_icgraph.png" border="0" usemap="#jpeg_8c_a5b96ae28e2300858e6af3061ac8f96b9_icgraph" alt=""/></div>
+<map name="jpeg_8c_a5b96ae28e2300858e6af3061ac8f96b9_icgraph" id="jpeg_8c_a5b96ae28e2300858e6af3061ac8f96b9_icgraph">
+<area shape="rect" id="node3" href="jpeg_8c.html#aa65677a00f264d53b744f64b386139e1" title="jpeg_encodeMCU" alt="" coords="136,102,269,130"/><area shape="rect" id="node5" href="jpeg_8h.html#a80691d29cd889f8b549ac6850c95e1b6" title="Encode an YUV422 image. " alt="" coords="319,102,468,130"/><area shape="rect" id="node7" href="bebop__front__camera_8c.html#a63cb60d57fb10579691954003dc4491e" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="752,6,907,50"/><area shape="rect" id="node11" href="bebop__front__camera_8c.html#aae423a991ed799c617921a4da12fb892" title="bebop_front_camera\l_save_shot" alt="" coords="529,35,684,79"/><area shape="rect" id="node14" href="opticflow__module_8c.html#a55f848033134662d4f93cd9cbef5acac" title="The main optical flow calculation thread. " alt="" coords="525,102,688,130"/><area shape="rect" id="node18" href="video__thread_8c.html#aaa7b1f2f5b3646dfeb40b7cacd005efb" title="video_thread_save_shot" alt="" coords="519,153,695,181"/><area shape="rect" id="node24" href="viewvideo_8c.html#a6a9f8aa0c7db5b292f18c8266808fe62" title="viewvideo_function" alt="" coords="536,203,677,231"/><area shape="rect" id="node9" href="bebop__front__camera_8h.html#a179ce25d44bf966f12b86e3a96654161" title="Start with streaming. " alt="" coords="963,6,1117,50"/><area shape="rect" id="node16" href="opticflow__module_8h.html#a74f8b561efed21509627b8ebacc72eea" title="Start the optical flow calculation. " alt="" coords="745,102,913,130"/><area shape="rect" id="node20" href="video__thread_8c.html#a99fd8c1413b858abf320b9adb453ed75" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="748,153,911,181"/><area shape="rect" id="node22" href="video__thread_8h.html#ae99893bfbc5f28c15432c06aee1e736f" title="Start with streaming. " alt="" coords="969,153,1111,181"/><area shape="rect" id="node26" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. " alt="" coords="775,203,884,231"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="ac136ff442ca9956a80813e6f2eb0c1b1"></a>
+<a class="anchor" id="a80691d29cd889f8b549ac6850c95e1b6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>* encode_image </td>
+          <td class="memname">void jpeg_encode_image </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>input_ptr</em>, </td>
+          <td class="paramtype">struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>output_ptr</em>, </td>
+          <td class="paramtype">struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -449,25 +573,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
-          <td class="paramname"><em>image_format</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
-          <td class="paramname"><em>image_width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
-          <td class="paramname"><em>image_height</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype">bool_t&#160;</td>
           <td class="paramname"><em>add_dri_header</em>&#160;</td>
         </tr>
         <tr>
@@ -478,20 +584,31 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00436">436</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+<p>Encode an YUV422 image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">*in</td><td>The input image </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*out</td><td>The output JPEG image </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">quality_factor</td><td>Quality factor of the encoding (0-99) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">add_dri_header</td><td>Add the DRI header (needed for full JPEG) </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>References <a class="el" href="jpeg_8c_source.html#l00735">close_bitstream()</a>, <a class="el" href="jpeg_8c_source.html#l00068">JPEG_ENCODER_STRUCTURE::cols</a>, <a class="el" href="jpeg_8c_source.html#l00064">JPEG_ENCODER_STRUCTURE::cols_in_right_mcus</a>, <a class="el" href="jpeg_8c_source.html#l00489">encodeMCU()</a>, <a class="el" href="jpeg_8c_source.html#l00062">JPEG_ENCODER_STRUCTURE::horizontal_mcus</a>, <a class="el" href="jpeg_8c_source.html#l00072">JPEG_ENCODER_STRUCTURE::incr</a>, <a class="el" href="jpeg_8c_source.html#l00323">initialization()</a>, <a class="el" href="jpeg_8c_source.html#l00070">JPEG_ENCODER_STRUCTURE::length_minus_mcu_width</a>, <a class="el" href="jpeg_8c_source.html#l00071">JPEG_ENCODER_STRUCTURE::length_minus_width</a>, <a class="el" href="jpeg_8c_source.html#l00400">MakeTables()</a>, <a class="el" href="jpeg_8c_source.html#l00061">JPEG_ENCODER_STRUCTURE::mcu_height</a>, <a class="el" href="jpeg_8c_source.html#l00060">JPEG_ENCODER_STRUCTURE::mcu_width</a>, <a class="el" href="jpeg_8c_source.html#l00073">JPEG_ENCODER_STRUCTURE::mcu_width_size</a>, <a class="el" href="jpeg_8c_source.html#l00074">JPEG_ENCODER_STRUCTURE::offset</a>, <a class="el" href="jpeg_8c_source.html#l00321">read_format</a>, <a class="el" href="jpeg_8c_source.html#l00067">JPEG_ENCODER_STRUCTURE::rows</a>, <a class="el" href="jpeg_8c_source.html#l00065">JPEG_ENCODER_STRUCTURE::rows_in_bottom_mcus</a>, <a class="el" href="jpeg_8c_source.html#l00063">JPEG_ENCODER_STRUCTURE::vertical_mcus</a>, and <a class="el" href="jpeg_8c_source.html#l00761">write_markers()</a>.</p>
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00425">425</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>Referenced by <a class="el" href="image__nc__send_8c_source.html#l00085">computervision_thread_main()</a>.</p>
+<p>References <a class="el" href="image_8h_source.html#l00050">image_t::buf</a>, <a class="el" href="image_8h_source.html#l00049">image_t::buf_size</a>, <a class="el" href="jpeg_8c_source.html#l00072">JPEG_ENCODER_STRUCTURE::cols</a>, <a class="el" href="jpeg_8c_source.html#l00068">JPEG_ENCODER_STRUCTURE::cols_in_right_mcus</a>, <a class="el" href="jpeg_8h_source.html#l00030">FOUR_TWO_TWO</a>, <a class="el" href="jpeg_8h_source.html#l00028">FOUR_ZERO_ZERO</a>, <a class="el" href="image_8h_source.html#l00045">image_t::h</a>, <a class="el" href="jpeg_8c_source.html#l00066">JPEG_ENCODER_STRUCTURE::horizontal_mcus</a>, <a class="el" href="image_8h_source.html#l00036">IMAGE_GRAYSCALE</a>, <a class="el" href="image_8h_source.html#l00035">IMAGE_YUV422</a>, <a class="el" href="jpeg_8c_source.html#l00076">JPEG_ENCODER_STRUCTURE::incr</a>, <a class="el" href="jpeg_8c_source.html#l00735">jpeg_close_bitstream()</a>, <a class="el" href="jpeg_8c_source.html#l00489">jpeg_encodeMCU()</a>, <a class="el" href="jpeg_8c_source.html#l00309">jpeg_initialization()</a>, <a class="el" href="jpeg_8c_source.html#l00761">jpeg_write_markers()</a>, <a class="el" href="jpeg_8c_source.html#l00074">JPEG_ENCODER_STRUCTURE::length_minus_mcu_width</a>, <a class="el" href="jpeg_8c_source.html#l00075">JPEG_ENCODER_STRUCTURE::length_minus_width</a>, <a class="el" href="jpeg_8c_source.html#l00386">MakeTables()</a>, <a class="el" href="jpeg_8c_source.html#l00065">JPEG_ENCODER_STRUCTURE::mcu_height</a>, <a class="el" href="jpeg_8c_source.html#l00064">JPEG_ENCODER_STRUCTURE::mcu_width</a>, <a class="el" href="jpeg_8c_source.html#l00077">JPEG_ENCODER_STRUCTURE::mcu_width_size</a>, <a class="el" href="jpeg_8c_source.html#l00078">JPEG_ENCODER_STRUCTURE::offset</a>, <a class="el" href="jpeg_8c_source.html#l00307">read_format</a>, <a class="el" href="jpeg_8c_source.html#l00071">JPEG_ENCODER_STRUCTURE::rows</a>, <a class="el" href="jpeg_8c_source.html#l00069">JPEG_ENCODER_STRUCTURE::rows_in_bottom_mcus</a>, <a class="el" href="image_8h_source.html#l00043">image_t::type</a>, <a class="el" href="jpeg_8c_source.html#l00067">JPEG_ENCODER_STRUCTURE::vertical_mcus</a>, and <a class="el" href="image_8h_source.html#l00044">image_t::w</a>.</p>
+
+<p>Referenced by <a class="el" href="bebop__front__camera_8c_source.html#l00204">bebop_front_camera_save_shot()</a>, <a class="el" href="bebop__front__camera_8c_source.html#l00081">bebop_front_camera_thread()</a>, <a class="el" href="opticflow__module_8c_source.html#l00212">opticflow_module_calc()</a>, <a class="el" href="video__thread_8c_source.html#l00108">video_thread_save_shot()</a>, and <a class="el" href="viewvideo_8c_source.html#l00103">viewvideo_function()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="jpeg_8c_ac136ff442ca9956a80813e6f2eb0c1b1_cgraph.png" border="0" usemap="#jpeg_8c_ac136ff442ca9956a80813e6f2eb0c1b1_cgraph" alt=""/></div>
-<map name="jpeg_8c_ac136ff442ca9956a80813e6f2eb0c1b1_cgraph" id="jpeg_8c_ac136ff442ca9956a80813e6f2eb0c1b1_cgraph">
-<area shape="rect" id="node3" href="jpeg_8c.html#ad4b9b752756cf54a995a3baa1c00f3a0" title="close_bitstream" alt="" coords="172,81,295,109"/><area shape="rect" id="node5" href="jpeg_8c.html#ae4943a048305ecb3f53df39deaf971ca" title="encodeMCU" alt="" coords="184,131,283,159"/><area shape="rect" id="node15" href="jpeg_8c.html#a7fadd5eac230239bc7b9ef2785fd552d" title="initialization" alt="" coords="185,194,281,222"/><area shape="rect" id="node21" href="jpeg_8c.html#a69ed605945a7ea46dbfaa9b3f29b5ed8" title="MakeTables" alt="" coords="187,245,280,273"/><area shape="rect" id="node23" href="jpeg_8c.html#a6a385b27d29e29115ec6dc7bffd1896b" title="write_markers" alt="" coords="177,295,289,323"/><area shape="rect" id="node7" href="jpeg_8c.html#ac2bff16cf493eb232635dda82bc1c990" title="levelshift" alt="" coords="372,5,449,33"/><area shape="rect" id="node9" href="jpeg_8c.html#a826f74bd9984db7fb7b1c02b77860fad" title="DCT" alt="" coords="387,55,435,83"/><area shape="rect" id="node11" href="jpeg_8c.html#af41ebd28de3d5bf2b686a78758d90c16" title="quantization" alt="" coords="360,106,461,134"/><area shape="rect" id="node13" href="jpeg_8c.html#aec677f7f1d2a631636875431ce33a945" title="huffman" alt="" coords="373,157,448,185"/><area shape="rect" id="node17" href="jpeg_8c.html#a9a092d54c257eb11877f1bab2848ffbc" title="read_400_format" alt="" coords="345,207,476,235"/><area shape="rect" id="node19" href="jpeg_8c.html#a07e67cb34e3a98121c2c4227b6e9d7d2" title="read_422_format" alt="" coords="345,258,476,286"/></map>
+<div class="center"><img src="jpeg_8c_a80691d29cd889f8b549ac6850c95e1b6_cgraph.png" border="0" usemap="#jpeg_8c_a80691d29cd889f8b549ac6850c95e1b6_cgraph" alt=""/></div>
+<map name="jpeg_8c_a80691d29cd889f8b549ac6850c95e1b6_cgraph" id="jpeg_8c_a80691d29cd889f8b549ac6850c95e1b6_cgraph">
+<area shape="rect" id="node3" href="jpeg_8c.html#af2a62dbe59d962b7cd5158e744b941df" title="jpeg_close_bitstream" alt="" coords="207,81,364,109"/><area shape="rect" id="node5" href="jpeg_8c.html#aa65677a00f264d53b744f64b386139e1" title="jpeg_encodeMCU" alt="" coords="219,131,352,159"/><area shape="rect" id="node15" href="jpeg_8c.html#a688433e5f55000ae893f2d5c29097691" title="jpeg_initialization" alt="" coords="220,194,351,222"/><area shape="rect" id="node21" href="jpeg_8c.html#a26b97262e8620df4fd0ece95195a2d8e" title="jpeg_write_markers" alt="" coords="212,245,359,273"/><area shape="rect" id="node23" href="jpeg_8c.html#a69ed605945a7ea46dbfaa9b3f29b5ed8" title="MakeTables" alt="" coords="239,295,332,323"/><area shape="rect" id="node7" href="jpeg_8c.html#a1b9aa7581d09ec6412a14ec76334667c" title="jpeg_levelshift" alt="" coords="441,5,553,33"/><area shape="rect" id="node9" href="jpeg_8c.html#a5b96ae28e2300858e6af3061ac8f96b9" title="jpeg_DCT" alt="" coords="456,55,539,83"/><area shape="rect" id="node11" href="jpeg_8c.html#ac00d030f6b21b9e0973fe18a7a7f7e51" title="jpeg_quantization" alt="" coords="431,106,564,134"/><area shape="rect" id="node13" href="jpeg_8c.html#a20c1f652043de7bc8171be6591bd3480" title="jpeg_huffman" alt="" coords="443,157,552,185"/><area shape="rect" id="node17" href="jpeg_8c.html#a496e270428d382bcbda831334590eaf6" title="jpeg_read_400_format" alt="" coords="415,207,580,235"/><area shape="rect" id="node19" href="jpeg_8c.html#a206021dc908d46e0a1d72ed9c40b10e9" title="jpeg_read_422_format" alt="" coords="415,258,580,286"/></map>
 </div>
 </p>
 
@@ -500,22 +617,25 @@ Variables</h2></td></tr>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="jpeg_8c_ac136ff442ca9956a80813e6f2eb0c1b1_icgraph.png" border="0" usemap="#jpeg_8c_ac136ff442ca9956a80813e6f2eb0c1b1_icgraph" alt=""/></div>
-<map name="jpeg_8c_ac136ff442ca9956a80813e6f2eb0c1b1_icgraph" id="jpeg_8c_ac136ff442ca9956a80813e6f2eb0c1b1_icgraph">
-<area shape="rect" id="node3" href="image__nc__send_8c.html#ab44d405e0d6e4e81ad90c9cc48fb5175" title="computervision_thread_main" alt="" coords="171,30,379,58"/><area shape="rect" id="node5" href="image__nc__send_8h.html#a8655f7b548a7365eaad26d96775d09c1" title="image_nc_send_start" alt="" coords="428,5,585,33"/><area shape="rect" id="node7" href="viewvideo_8h.html#a2e997d697b4958da4156565605b92575" title="viewvideo_start" alt="" coords="447,55,567,83"/></map>
+<div class="center"><img src="jpeg_8c_a80691d29cd889f8b549ac6850c95e1b6_icgraph.png" border="0" usemap="#jpeg_8c_a80691d29cd889f8b549ac6850c95e1b6_icgraph" alt=""/></div>
+<map name="jpeg_8c_a80691d29cd889f8b549ac6850c95e1b6_icgraph" id="jpeg_8c_a80691d29cd889f8b549ac6850c95e1b6_icgraph">
+<area shape="rect" id="node3" href="bebop__front__camera_8c.html#aae423a991ed799c617921a4da12fb892" title="bebop_front_camera\l_save_shot" alt="" coords="217,5,372,49"/><area shape="rect" id="node5" href="bebop__front__camera_8c.html#a63cb60d57fb10579691954003dc4491e" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="440,30,595,74"/><area shape="rect" id="node10" href="opticflow__module_8c.html#a55f848033134662d4f93cd9cbef5acac" title="The main optical flow calculation thread. " alt="" coords="213,122,376,150"/><area shape="rect" id="node14" href="video__thread_8c.html#aaa7b1f2f5b3646dfeb40b7cacd005efb" title="video_thread_save_shot" alt="" coords="207,173,383,201"/><area shape="rect" id="node20" href="viewvideo_8c.html#a6a9f8aa0c7db5b292f18c8266808fe62" title="viewvideo_function" alt="" coords="224,223,365,251"/><area shape="rect" id="node7" href="bebop__front__camera_8h.html#a179ce25d44bf966f12b86e3a96654161" title="Start with streaming. " alt="" coords="651,30,805,74"/><area shape="rect" id="node12" href="opticflow__module_8h.html#a74f8b561efed21509627b8ebacc72eea" title="Start the optical flow calculation. " alt="" coords="433,122,601,150"/><area shape="rect" id="node16" href="video__thread_8c.html#a99fd8c1413b858abf320b9adb453ed75" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="436,173,599,201"/><area shape="rect" id="node18" href="video__thread_8h.html#ae99893bfbc5f28c15432c06aee1e736f" title="Start with streaming. " alt="" coords="657,173,799,201"/><area shape="rect" id="node22" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. " alt="" coords="463,223,572,251"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="ae4943a048305ecb3f53df39deaf971ca"></a>
+<a class="anchor" id="aa65677a00f264d53b744f64b386139e1"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> * encodeMCU </td>
+          <td class="memname">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> * jpeg_encodeMCU </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structJPEG__ENCODER__STRUCTURE.html">JPEG_ENCODER_STRUCTURE</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="jpeg_8c.html#structJPEG__ENCODER__STRUCTURE">JPEG_ENCODER_STRUCTURE</a> *&#160;</td>
           <td class="paramname"><em>jpeg_encoder_structure</em>, </td>
         </tr>
         <tr>
@@ -536,22 +656,27 @@ Variables</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="jpeg_8c_source.html#l00489">489</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>References <a class="el" href="jpeg_8c_source.html#l00314">CB</a>, <a class="el" href="jpeg_8c_source.html#l00315">CR</a>, <a class="el" href="jpeg_8c_source.html#l00526">DCT()</a>, <a class="el" href="jpeg_8h_source.html#l00009">FOUR_TWO_TWO</a>, <a class="el" href="jpeg_8c_source.html#l00638">huffman()</a>, <a class="el" href="jpeg_8c_source.html#l00308">ICqt</a>, <a class="el" href="jpeg_8c_source.html#l00307">ILqt</a>, <a class="el" href="jpeg_8c_source.html#l00516">levelshift()</a>, <a class="el" href="jpeg_8c_source.html#l00949">quantization()</a>, <a class="el" href="jpeg_8c_source.html#l00310">Y1</a>, and <a class="el" href="jpeg_8c_source.html#l00311">Y2</a>.</p>
+<p>References <a class="el" href="jpeg_8c_source.html#l00300">CB</a>, <a class="el" href="jpeg_8c_source.html#l00301">CR</a>, <a class="el" href="jpeg_8h_source.html#l00030">FOUR_TWO_TWO</a>, <a class="el" href="jpeg_8c_source.html#l00294">ICqt</a>, <a class="el" href="jpeg_8c_source.html#l00293">ILqt</a>, <a class="el" href="jpeg_8c_source.html#l00526">jpeg_DCT()</a>, <a class="el" href="jpeg_8c_source.html#l00638">jpeg_huffman()</a>, <a class="el" href="jpeg_8c_source.html#l00516">jpeg_levelshift()</a>, <a class="el" href="jpeg_8c_source.html#l00949">jpeg_quantization()</a>, <a class="el" href="jpeg_8c_source.html#l00296">Y1</a>, and <a class="el" href="jpeg_8c_source.html#l00297">Y2</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00436">encode_image()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00425">jpeg_encode_image()</a>.</p>
 
 <p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="jpeg_8c_ae4943a048305ecb3f53df39deaf971ca_cgraph.png" border="0" usemap="#jpeg_8c_ae4943a048305ecb3f53df39deaf971ca_cgraph" alt=""/></div>
-<map name="jpeg_8c_ae4943a048305ecb3f53df39deaf971ca_cgraph" id="jpeg_8c_ae4943a048305ecb3f53df39deaf971ca_cgraph">
-<area shape="rect" id="node3" href="jpeg_8c.html#a826f74bd9984db7fb7b1c02b77860fad" title="DCT" alt="" coords="179,5,227,33"/><area shape="rect" id="node5" href="jpeg_8c.html#aec677f7f1d2a631636875431ce33a945" title="huffman" alt="" coords="165,55,240,83"/><area shape="rect" id="node7" href="jpeg_8c.html#ac2bff16cf493eb232635dda82bc1c990" title="levelshift" alt="" coords="164,106,241,134"/><area shape="rect" id="node9" href="jpeg_8c.html#af41ebd28de3d5bf2b686a78758d90c16" title="quantization" alt="" coords="152,157,253,185"/></map>
+<div class="center"><img src="jpeg_8c_aa65677a00f264d53b744f64b386139e1_cgraph.png" border="0" usemap="#jpeg_8c_aa65677a00f264d53b744f64b386139e1_cgraph" alt=""/></div>
+<map name="jpeg_8c_aa65677a00f264d53b744f64b386139e1_cgraph" id="jpeg_8c_aa65677a00f264d53b744f64b386139e1_cgraph">
+<area shape="rect" id="node3" href="jpeg_8c.html#a5b96ae28e2300858e6af3061ac8f96b9" title="jpeg_DCT" alt="" coords="213,5,296,33"/><area shape="rect" id="node5" href="jpeg_8c.html#a20c1f652043de7bc8171be6591bd3480" title="jpeg_huffman" alt="" coords="200,55,309,83"/><area shape="rect" id="node7" href="jpeg_8c.html#a1b9aa7581d09ec6412a14ec76334667c" title="jpeg_levelshift" alt="" coords="199,106,311,134"/><area shape="rect" id="node9" href="jpeg_8c.html#ac00d030f6b21b9e0973fe18a7a7f7e51" title="jpeg_quantization" alt="" coords="188,157,321,185"/></map>
 </div>
 </p>
 
@@ -560,22 +685,25 @@ Variables</h2></td></tr>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="jpeg_8c_ae4943a048305ecb3f53df39deaf971ca_icgraph.png" border="0" usemap="#jpeg_8c_ae4943a048305ecb3f53df39deaf971ca_icgraph" alt=""/></div>
-<map name="jpeg_8c_ae4943a048305ecb3f53df39deaf971ca_icgraph" id="jpeg_8c_ae4943a048305ecb3f53df39deaf971ca_icgraph">
-<area shape="rect" id="node3" href="jpeg_8h.html#a61d22b80daac17f19740e3939fc05fcd" title="encode_image" alt="" coords="153,30,268,58"/><area shape="rect" id="node5" href="image__nc__send_8c.html#ab44d405e0d6e4e81ad90c9cc48fb5175" title="computervision_thread_main" alt="" coords="317,30,525,58"/><area shape="rect" id="node7" href="image__nc__send_8h.html#a8655f7b548a7365eaad26d96775d09c1" title="image_nc_send_start" alt="" coords="575,5,732,33"/><area shape="rect" id="node9" href="viewvideo_8h.html#a2e997d697b4958da4156565605b92575" title="viewvideo_start" alt="" coords="593,55,713,83"/></map>
+<div class="center"><img src="jpeg_8c_aa65677a00f264d53b744f64b386139e1_icgraph.png" border="0" usemap="#jpeg_8c_aa65677a00f264d53b744f64b386139e1_icgraph" alt=""/></div>
+<map name="jpeg_8c_aa65677a00f264d53b744f64b386139e1_icgraph" id="jpeg_8c_aa65677a00f264d53b744f64b386139e1_icgraph">
+<area shape="rect" id="node3" href="jpeg_8h.html#a80691d29cd889f8b549ac6850c95e1b6" title="Encode an YUV422 image. " alt="" coords="188,102,337,130"/><area shape="rect" id="node5" href="bebop__front__camera_8c.html#a63cb60d57fb10579691954003dc4491e" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="621,6,776,50"/><area shape="rect" id="node9" href="bebop__front__camera_8c.html#aae423a991ed799c617921a4da12fb892" title="bebop_front_camera\l_save_shot" alt="" coords="399,35,553,79"/><area shape="rect" id="node12" href="opticflow__module_8c.html#a55f848033134662d4f93cd9cbef5acac" title="The main optical flow calculation thread. " alt="" coords="395,102,557,130"/><area shape="rect" id="node16" href="video__thread_8c.html#aaa7b1f2f5b3646dfeb40b7cacd005efb" title="video_thread_save_shot" alt="" coords="388,153,564,181"/><area shape="rect" id="node22" href="viewvideo_8c.html#a6a9f8aa0c7db5b292f18c8266808fe62" title="viewvideo_function" alt="" coords="405,203,547,231"/><area shape="rect" id="node7" href="bebop__front__camera_8h.html#a179ce25d44bf966f12b86e3a96654161" title="Start with streaming. " alt="" coords="832,6,987,50"/><area shape="rect" id="node14" href="opticflow__module_8h.html#a74f8b561efed21509627b8ebacc72eea" title="Start the optical flow calculation. " alt="" coords="615,102,783,130"/><area shape="rect" id="node18" href="video__thread_8c.html#a99fd8c1413b858abf320b9adb453ed75" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="617,153,780,181"/><area shape="rect" id="node20" href="video__thread_8h.html#ae99893bfbc5f28c15432c06aee1e736f" title="Start with streaming. " alt="" coords="839,153,980,181"/><area shape="rect" id="node24" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. " alt="" coords="644,203,753,231"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="aec677f7f1d2a631636875431ce33a945"></a>
+<a class="anchor" id="a20c1f652043de7bc8171be6591bd3480"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> * huffman </td>
+          <td class="memname">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> * jpeg_huffman </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structJPEG__ENCODER__STRUCTURE.html">JPEG_ENCODER_STRUCTURE</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="jpeg_8c.html#structJPEG__ENCODER__STRUCTURE">JPEG_ENCODER_STRUCTURE</a> *&#160;</td>
           <td class="paramname"><em>jpeg_encoder_structure</em>, </td>
         </tr>
         <tr>
@@ -596,35 +724,43 @@ Variables</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="jpeg_8c_source.html#l00638">638</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>References <a class="el" href="jpeg_8c_source.html#l00227">bitsize</a>, <a class="el" href="jpeg_8c_source.html#l00185">chrominance_ac_code_table</a>, <a class="el" href="jpeg_8c_source.html#l00206">chrominance_ac_size_table</a>, <a class="el" href="jpeg_8c_source.html#l00133">chrominance_dc_code_table</a>, <a class="el" href="jpeg_8c_source.html#l00138">chrominance_dc_size_table</a>, <a class="el" href="link__mcu__can_8c_source.html#l00046">data</a>, <a class="el" href="jpeg_8c_source.html#l00076">JPEG_ENCODER_STRUCTURE::ldc1</a>, <a class="el" href="jpeg_8c_source.html#l00077">JPEG_ENCODER_STRUCTURE::ldc2</a>, <a class="el" href="jpeg_8c_source.html#l00078">JPEG_ENCODER_STRUCTURE::ldc3</a>, <a class="el" href="jpeg_8c_source.html#l00143">luminance_ac_code_table</a>, <a class="el" href="jpeg_8c_source.html#l00164">luminance_ac_size_table</a>, <a class="el" href="jpeg_8c_source.html#l00123">luminance_dc_code_table</a>, <a class="el" href="jpeg_8c_source.html#l00128">luminance_dc_size_table</a>, <a class="el" href="jpeg_8c_source.html#l00614">PUTBITS</a>, and <a class="el" href="jpeg_8c_source.html#l00316">Temp</a>.</p>
+<p>References <a class="el" href="jpeg_8c_source.html#l00212">bitsize</a>, <a class="el" href="jpeg_8c_source.html#l00170">chrominance_ac_code_table</a>, <a class="el" href="jpeg_8c_source.html#l00191">chrominance_ac_size_table</a>, <a class="el" href="jpeg_8c_source.html#l00118">chrominance_dc_code_table</a>, <a class="el" href="jpeg_8c_source.html#l00123">chrominance_dc_size_table</a>, <a class="el" href="jpeg_8c_source.html#l00080">JPEG_ENCODER_STRUCTURE::ldc1</a>, <a class="el" href="jpeg_8c_source.html#l00081">JPEG_ENCODER_STRUCTURE::ldc2</a>, <a class="el" href="jpeg_8c_source.html#l00082">JPEG_ENCODER_STRUCTURE::ldc3</a>, <a class="el" href="jpeg_8c_source.html#l00128">luminance_ac_code_table</a>, <a class="el" href="jpeg_8c_source.html#l00149">luminance_ac_size_table</a>, <a class="el" href="jpeg_8c_source.html#l00108">luminance_dc_code_table</a>, <a class="el" href="jpeg_8c_source.html#l00113">luminance_dc_size_table</a>, <a class="el" href="jpeg_8c_source.html#l00614">PUTBITS</a>, and <a class="el" href="jpeg_8c_source.html#l00302">Temp</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00489">encodeMCU()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00489">jpeg_encodeMCU()</a>.</p>
 
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="jpeg_8c_aec677f7f1d2a631636875431ce33a945_icgraph.png" border="0" usemap="#jpeg_8c_aec677f7f1d2a631636875431ce33a945_icgraph" alt=""/></div>
-<map name="jpeg_8c_aec677f7f1d2a631636875431ce33a945_icgraph" id="jpeg_8c_aec677f7f1d2a631636875431ce33a945_icgraph">
-<area shape="rect" id="node3" href="jpeg_8c.html#ae4943a048305ecb3f53df39deaf971ca" title="encodeMCU" alt="" coords="128,30,227,58"/><area shape="rect" id="node5" href="jpeg_8h.html#a61d22b80daac17f19740e3939fc05fcd" title="encode_image" alt="" coords="276,30,391,58"/><area shape="rect" id="node7" href="image__nc__send_8c.html#ab44d405e0d6e4e81ad90c9cc48fb5175" title="computervision_thread_main" alt="" coords="440,30,648,58"/><area shape="rect" id="node9" href="image__nc__send_8h.html#a8655f7b548a7365eaad26d96775d09c1" title="image_nc_send_start" alt="" coords="697,5,855,33"/><area shape="rect" id="node11" href="viewvideo_8h.html#a2e997d697b4958da4156565605b92575" title="viewvideo_start" alt="" coords="716,55,836,83"/></map>
+<div class="center"><img src="jpeg_8c_a20c1f652043de7bc8171be6591bd3480_icgraph.png" border="0" usemap="#jpeg_8c_a20c1f652043de7bc8171be6591bd3480_icgraph" alt=""/></div>
+<map name="jpeg_8c_a20c1f652043de7bc8171be6591bd3480_icgraph" id="jpeg_8c_a20c1f652043de7bc8171be6591bd3480_icgraph">
+<area shape="rect" id="node3" href="jpeg_8c.html#aa65677a00f264d53b744f64b386139e1" title="jpeg_encodeMCU" alt="" coords="163,102,296,130"/><area shape="rect" id="node5" href="jpeg_8h.html#a80691d29cd889f8b549ac6850c95e1b6" title="Encode an YUV422 image. " alt="" coords="345,102,495,130"/><area shape="rect" id="node7" href="bebop__front__camera_8c.html#a63cb60d57fb10579691954003dc4491e" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="779,6,933,50"/><area shape="rect" id="node11" href="bebop__front__camera_8c.html#aae423a991ed799c617921a4da12fb892" title="bebop_front_camera\l_save_shot" alt="" coords="556,35,711,79"/><area shape="rect" id="node14" href="opticflow__module_8c.html#a55f848033134662d4f93cd9cbef5acac" title="The main optical flow calculation thread. " alt="" coords="552,102,715,130"/><area shape="rect" id="node18" href="video__thread_8c.html#aaa7b1f2f5b3646dfeb40b7cacd005efb" title="video_thread_save_shot" alt="" coords="545,153,721,181"/><area shape="rect" id="node24" href="viewvideo_8c.html#a6a9f8aa0c7db5b292f18c8266808fe62" title="viewvideo_function" alt="" coords="563,203,704,231"/><area shape="rect" id="node9" href="bebop__front__camera_8h.html#a179ce25d44bf966f12b86e3a96654161" title="Start with streaming. " alt="" coords="989,6,1144,50"/><area shape="rect" id="node16" href="opticflow__module_8h.html#a74f8b561efed21509627b8ebacc72eea" title="Start the optical flow calculation. " alt="" coords="772,102,940,130"/><area shape="rect" id="node20" href="video__thread_8c.html#a99fd8c1413b858abf320b9adb453ed75" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="775,153,937,181"/><area shape="rect" id="node22" href="video__thread_8h.html#ae99893bfbc5f28c15432c06aee1e736f" title="Start with streaming. " alt="" coords="996,153,1137,181"/><area shape="rect" id="node26" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. " alt="" coords="801,203,911,231"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a7fadd5eac230239bc7b9ef2785fd552d"></a>
+<a class="anchor" id="a688433e5f55000ae893f2d5c29097691"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void initialization </td>
+          <td class="memname">static void jpeg_initialization </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structJPEG__ENCODER__STRUCTURE.html">JPEG_ENCODER_STRUCTURE</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="jpeg_8c.html#structJPEG__ENCODER__STRUCTURE">JPEG_ENCODER_STRUCTURE</a> *&#160;</td>
           <td class="paramname"><em>jpeg</em>, </td>
         </tr>
         <tr>
@@ -651,22 +787,27 @@ Variables</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00323">323</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00309">309</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>References <a class="el" href="jpeg_8c_source.html#l00318">bitindex</a>, <a class="el" href="jpeg_8c_source.html#l00064">JPEG_ENCODER_STRUCTURE::cols_in_right_mcus</a>, <a class="el" href="jpeg_8h_source.html#l00007">FOUR_ZERO_ZERO</a>, <a class="el" href="jpeg_8c_source.html#l00062">JPEG_ENCODER_STRUCTURE::horizontal_mcus</a>, <a class="el" href="jpeg_8c_source.html#l00317">lcode</a>, <a class="el" href="jpeg_8c_source.html#l00076">JPEG_ENCODER_STRUCTURE::ldc1</a>, <a class="el" href="jpeg_8c_source.html#l00077">JPEG_ENCODER_STRUCTURE::ldc2</a>, <a class="el" href="jpeg_8c_source.html#l00078">JPEG_ENCODER_STRUCTURE::ldc3</a>, <a class="el" href="jpeg_8c_source.html#l00070">JPEG_ENCODER_STRUCTURE::length_minus_mcu_width</a>, <a class="el" href="jpeg_8c_source.html#l00071">JPEG_ENCODER_STRUCTURE::length_minus_width</a>, <a class="el" href="jpeg_8c_source.html#l00061">JPEG_ENCODER_STRUCTURE::mcu_height</a>, <a class="el" href="jpeg_8c_source.html#l00060">JPEG_ENCODER_STRUCTURE::mcu_width</a>, <a class="el" href="jpeg_8c_source.html#l00073">JPEG_ENCODER_STRUCTURE::mcu_width_size</a>, <a class="el" href="jpeg_8c_source.html#l00074">JPEG_ENCODER_STRUCTURE::offset</a>, <a class="el" href="jpeg_8c_source.html#l00962">read_400_format()</a>, <a class="el" href="jpeg_8c_source.html#l00992">read_422_format()</a>, <a class="el" href="jpeg_8c_source.html#l00321">read_format</a>, <a class="el" href="jpeg_8c_source.html#l00065">JPEG_ENCODER_STRUCTURE::rows_in_bottom_mcus</a>, and <a class="el" href="jpeg_8c_source.html#l00063">JPEG_ENCODER_STRUCTURE::vertical_mcus</a>.</p>
+<p>References <a class="el" href="jpeg_8c_source.html#l00304">bitindex</a>, <a class="el" href="jpeg_8c_source.html#l00068">JPEG_ENCODER_STRUCTURE::cols_in_right_mcus</a>, <a class="el" href="jpeg_8h_source.html#l00028">FOUR_ZERO_ZERO</a>, <a class="el" href="jpeg_8c_source.html#l00066">JPEG_ENCODER_STRUCTURE::horizontal_mcus</a>, <a class="el" href="jpeg_8c_source.html#l00962">jpeg_read_400_format()</a>, <a class="el" href="jpeg_8c_source.html#l00992">jpeg_read_422_format()</a>, <a class="el" href="jpeg_8c_source.html#l00303">lcode</a>, <a class="el" href="jpeg_8c_source.html#l00080">JPEG_ENCODER_STRUCTURE::ldc1</a>, <a class="el" href="jpeg_8c_source.html#l00081">JPEG_ENCODER_STRUCTURE::ldc2</a>, <a class="el" href="jpeg_8c_source.html#l00082">JPEG_ENCODER_STRUCTURE::ldc3</a>, <a class="el" href="jpeg_8c_source.html#l00074">JPEG_ENCODER_STRUCTURE::length_minus_mcu_width</a>, <a class="el" href="jpeg_8c_source.html#l00075">JPEG_ENCODER_STRUCTURE::length_minus_width</a>, <a class="el" href="jpeg_8c_source.html#l00065">JPEG_ENCODER_STRUCTURE::mcu_height</a>, <a class="el" href="jpeg_8c_source.html#l00064">JPEG_ENCODER_STRUCTURE::mcu_width</a>, <a class="el" href="jpeg_8c_source.html#l00077">JPEG_ENCODER_STRUCTURE::mcu_width_size</a>, <a class="el" href="jpeg_8c_source.html#l00078">JPEG_ENCODER_STRUCTURE::offset</a>, <a class="el" href="jpeg_8c_source.html#l00307">read_format</a>, <a class="el" href="jpeg_8c_source.html#l00069">JPEG_ENCODER_STRUCTURE::rows_in_bottom_mcus</a>, and <a class="el" href="jpeg_8c_source.html#l00067">JPEG_ENCODER_STRUCTURE::vertical_mcus</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00436">encode_image()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00425">jpeg_encode_image()</a>.</p>
 
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="jpeg_8c_a7fadd5eac230239bc7b9ef2785fd552d_cgraph.png" border="0" usemap="#jpeg_8c_a7fadd5eac230239bc7b9ef2785fd552d_cgraph" alt=""/></div>
-<map name="jpeg_8c_a7fadd5eac230239bc7b9ef2785fd552d_cgraph" id="jpeg_8c_a7fadd5eac230239bc7b9ef2785fd552d_cgraph">
-<area shape="rect" id="node3" href="jpeg_8c.html#a9a092d54c257eb11877f1bab2848ffbc" title="read_400_format" alt="" coords="153,5,284,33"/><area shape="rect" id="node5" href="jpeg_8c.html#a07e67cb34e3a98121c2c4227b6e9d7d2" title="read_422_format" alt="" coords="153,55,284,83"/></map>
+<div class="center"><img src="jpeg_8c_a688433e5f55000ae893f2d5c29097691_cgraph.png" border="0" usemap="#jpeg_8c_a688433e5f55000ae893f2d5c29097691_cgraph" alt=""/></div>
+<map name="jpeg_8c_a688433e5f55000ae893f2d5c29097691_cgraph" id="jpeg_8c_a688433e5f55000ae893f2d5c29097691_cgraph">
+<area shape="rect" id="node3" href="jpeg_8c.html#a496e270428d382bcbda831334590eaf6" title="jpeg_read_400_format" alt="" coords="185,5,351,33"/><area shape="rect" id="node5" href="jpeg_8c.html#a206021dc908d46e0a1d72ed9c40b10e9" title="jpeg_read_422_format" alt="" coords="185,55,351,83"/></map>
 </div>
 </p>
 
@@ -675,60 +816,264 @@ Variables</h2></td></tr>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="jpeg_8c_a7fadd5eac230239bc7b9ef2785fd552d_icgraph.png" border="0" usemap="#jpeg_8c_a7fadd5eac230239bc7b9ef2785fd552d_icgraph" alt=""/></div>
-<map name="jpeg_8c_a7fadd5eac230239bc7b9ef2785fd552d_icgraph" id="jpeg_8c_a7fadd5eac230239bc7b9ef2785fd552d_icgraph">
-<area shape="rect" id="node3" href="jpeg_8h.html#a61d22b80daac17f19740e3939fc05fcd" title="encode_image" alt="" coords="153,30,268,58"/><area shape="rect" id="node5" href="image__nc__send_8c.html#ab44d405e0d6e4e81ad90c9cc48fb5175" title="computervision_thread_main" alt="" coords="317,30,525,58"/><area shape="rect" id="node7" href="image__nc__send_8h.html#a8655f7b548a7365eaad26d96775d09c1" title="image_nc_send_start" alt="" coords="575,5,732,33"/><area shape="rect" id="node9" href="viewvideo_8h.html#a2e997d697b4958da4156565605b92575" title="viewvideo_start" alt="" coords="593,55,713,83"/></map>
+<div class="center"><img src="jpeg_8c_a688433e5f55000ae893f2d5c29097691_icgraph.png" border="0" usemap="#jpeg_8c_a688433e5f55000ae893f2d5c29097691_icgraph" alt=""/></div>
+<map name="jpeg_8c_a688433e5f55000ae893f2d5c29097691_icgraph" id="jpeg_8c_a688433e5f55000ae893f2d5c29097691_icgraph">
+<area shape="rect" id="node3" href="jpeg_8h.html#a80691d29cd889f8b549ac6850c95e1b6" title="Encode an YUV422 image. " alt="" coords="185,102,335,130"/><area shape="rect" id="node5" href="bebop__front__camera_8c.html#a63cb60d57fb10579691954003dc4491e" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="619,6,773,50"/><area shape="rect" id="node9" href="bebop__front__camera_8c.html#aae423a991ed799c617921a4da12fb892" title="bebop_front_camera\l_save_shot" alt="" coords="396,35,551,79"/><area shape="rect" id="node12" href="opticflow__module_8c.html#a55f848033134662d4f93cd9cbef5acac" title="The main optical flow calculation thread. " alt="" coords="392,102,555,130"/><area shape="rect" id="node16" href="video__thread_8c.html#aaa7b1f2f5b3646dfeb40b7cacd005efb" title="video_thread_save_shot" alt="" coords="385,153,561,181"/><area shape="rect" id="node22" href="viewvideo_8c.html#a6a9f8aa0c7db5b292f18c8266808fe62" title="viewvideo_function" alt="" coords="403,203,544,231"/><area shape="rect" id="node7" href="bebop__front__camera_8h.html#a179ce25d44bf966f12b86e3a96654161" title="Start with streaming. " alt="" coords="829,6,984,50"/><area shape="rect" id="node14" href="opticflow__module_8h.html#a74f8b561efed21509627b8ebacc72eea" title="Start the optical flow calculation. " alt="" coords="612,102,780,130"/><area shape="rect" id="node18" href="video__thread_8c.html#a99fd8c1413b858abf320b9adb453ed75" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="615,153,777,181"/><area shape="rect" id="node20" href="video__thread_8h.html#ae99893bfbc5f28c15432c06aee1e736f" title="Start with streaming. " alt="" coords="836,153,977,181"/><area shape="rect" id="node24" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. " alt="" coords="641,203,751,231"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="abb997865125e92f84d2a22d6cbee2b3e"></a>
+<a class="anchor" id="a1b9aa7581d09ec6412a14ec76334667c"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void initialize_quantization_tables </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
-          <td class="paramname"><em>quality_factor</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00902">902</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
-
-<p>References <a class="el" href="jpeg_8c_source.html#l00294">chrominance_quant_table</a>, <a class="el" href="jpeg_8c_source.html#l00306">Cqt</a>, <a class="el" href="jpeg_8c_source.html#l00308">ICqt</a>, <a class="el" href="jpeg_8c_source.html#l00307">ILqt</a>, <a class="el" href="jpeg_8c_source.html#l00305">Lqt</a>, <a class="el" href="jpeg_8c_source.html#l00283">luminance_quant_table</a>, <a class="el" href="stm32_2mcu__periph_2adc__arch_8c_source.html#l00586">value</a>, and <a class="el" href="jpeg_8c_source.html#l00273">zigzag_table</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac2bff16cf493eb232635dda82bc1c990"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void levelshift </td>
+          <td class="memname">static void jpeg_levelshift </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> *&#160;</td>
           <td class="paramname"><em>data</em>)</td><td></td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="jpeg_8c_source.html#l00516">516</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00489">encodeMCU()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00489">jpeg_encodeMCU()</a>.</p>
 
 <p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="jpeg_8c_ac2bff16cf493eb232635dda82bc1c990_icgraph.png" border="0" usemap="#jpeg_8c_ac2bff16cf493eb232635dda82bc1c990_icgraph" alt=""/></div>
-<map name="jpeg_8c_ac2bff16cf493eb232635dda82bc1c990_icgraph" id="jpeg_8c_ac2bff16cf493eb232635dda82bc1c990_icgraph">
-<area shape="rect" id="node3" href="jpeg_8c.html#ae4943a048305ecb3f53df39deaf971ca" title="encodeMCU" alt="" coords="133,30,232,58"/><area shape="rect" id="node5" href="jpeg_8h.html#a61d22b80daac17f19740e3939fc05fcd" title="encode_image" alt="" coords="281,30,396,58"/><area shape="rect" id="node7" href="image__nc__send_8c.html#ab44d405e0d6e4e81ad90c9cc48fb5175" title="computervision_thread_main" alt="" coords="445,30,653,58"/><area shape="rect" id="node9" href="image__nc__send_8h.html#a8655f7b548a7365eaad26d96775d09c1" title="image_nc_send_start" alt="" coords="703,5,860,33"/><area shape="rect" id="node11" href="viewvideo_8h.html#a2e997d697b4958da4156565605b92575" title="viewvideo_start" alt="" coords="721,55,841,83"/></map>
+<div class="center"><img src="jpeg_8c_a1b9aa7581d09ec6412a14ec76334667c_icgraph.png" border="0" usemap="#jpeg_8c_a1b9aa7581d09ec6412a14ec76334667c_icgraph" alt=""/></div>
+<map name="jpeg_8c_a1b9aa7581d09ec6412a14ec76334667c_icgraph" id="jpeg_8c_a1b9aa7581d09ec6412a14ec76334667c_icgraph">
+<area shape="rect" id="node3" href="jpeg_8c.html#aa65677a00f264d53b744f64b386139e1" title="jpeg_encodeMCU" alt="" coords="165,102,299,130"/><area shape="rect" id="node5" href="jpeg_8h.html#a80691d29cd889f8b549ac6850c95e1b6" title="Encode an YUV422 image. " alt="" coords="348,102,497,130"/><area shape="rect" id="node7" href="bebop__front__camera_8c.html#a63cb60d57fb10579691954003dc4491e" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="781,6,936,50"/><area shape="rect" id="node11" href="bebop__front__camera_8c.html#aae423a991ed799c617921a4da12fb892" title="bebop_front_camera\l_save_shot" alt="" coords="559,35,713,79"/><area shape="rect" id="node14" href="opticflow__module_8c.html#a55f848033134662d4f93cd9cbef5acac" title="The main optical flow calculation thread. " alt="" coords="555,102,717,130"/><area shape="rect" id="node18" href="video__thread_8c.html#aaa7b1f2f5b3646dfeb40b7cacd005efb" title="video_thread_save_shot" alt="" coords="548,153,724,181"/><area shape="rect" id="node24" href="viewvideo_8c.html#a6a9f8aa0c7db5b292f18c8266808fe62" title="viewvideo_function" alt="" coords="565,203,707,231"/><area shape="rect" id="node9" href="bebop__front__camera_8h.html#a179ce25d44bf966f12b86e3a96654161" title="Start with streaming. " alt="" coords="992,6,1147,50"/><area shape="rect" id="node16" href="opticflow__module_8h.html#a74f8b561efed21509627b8ebacc72eea" title="Start the optical flow calculation. " alt="" coords="775,102,943,130"/><area shape="rect" id="node20" href="video__thread_8c.html#a99fd8c1413b858abf320b9adb453ed75" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="777,153,940,181"/><area shape="rect" id="node22" href="video__thread_8h.html#ae99893bfbc5f28c15432c06aee1e736f" title="Start with streaming. " alt="" coords="999,153,1140,181"/><area shape="rect" id="node26" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. " alt="" coords="804,203,913,231"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac00d030f6b21b9e0973fe18a7a7f7e51"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void jpeg_quantization </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
+          <td class="paramname"><em>quant_table_ptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00949">949</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+
+<p>References <a class="el" href="jpeg_8c_source.html#l00302">Temp</a>, <a class="el" href="stm32_2mcu__periph_2adc__arch_8c_source.html#l00586">value</a>, and <a class="el" href="jpeg_8c_source.html#l00258">zigzag_table</a>.</p>
+
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00489">jpeg_encodeMCU()</a>.</p>
+
+<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="jpeg_8c_ac00d030f6b21b9e0973fe18a7a7f7e51_icgraph.png" border="0" usemap="#jpeg_8c_ac00d030f6b21b9e0973fe18a7a7f7e51_icgraph" alt=""/></div>
+<map name="jpeg_8c_ac00d030f6b21b9e0973fe18a7a7f7e51_icgraph" id="jpeg_8c_ac00d030f6b21b9e0973fe18a7a7f7e51_icgraph">
+<area shape="rect" id="node3" href="jpeg_8c.html#aa65677a00f264d53b744f64b386139e1" title="jpeg_encodeMCU" alt="" coords="189,102,323,130"/><area shape="rect" id="node5" href="jpeg_8h.html#a80691d29cd889f8b549ac6850c95e1b6" title="Encode an YUV422 image. " alt="" coords="372,102,521,130"/><area shape="rect" id="node7" href="bebop__front__camera_8c.html#a63cb60d57fb10579691954003dc4491e" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="805,6,960,50"/><area shape="rect" id="node11" href="bebop__front__camera_8c.html#aae423a991ed799c617921a4da12fb892" title="bebop_front_camera\l_save_shot" alt="" coords="583,35,737,79"/><area shape="rect" id="node14" href="opticflow__module_8c.html#a55f848033134662d4f93cd9cbef5acac" title="The main optical flow calculation thread. " alt="" coords="579,102,741,130"/><area shape="rect" id="node18" href="video__thread_8c.html#aaa7b1f2f5b3646dfeb40b7cacd005efb" title="video_thread_save_shot" alt="" coords="572,153,748,181"/><area shape="rect" id="node24" href="viewvideo_8c.html#a6a9f8aa0c7db5b292f18c8266808fe62" title="viewvideo_function" alt="" coords="589,203,731,231"/><area shape="rect" id="node9" href="bebop__front__camera_8h.html#a179ce25d44bf966f12b86e3a96654161" title="Start with streaming. " alt="" coords="1016,6,1171,50"/><area shape="rect" id="node16" href="opticflow__module_8h.html#a74f8b561efed21509627b8ebacc72eea" title="Start the optical flow calculation. " alt="" coords="799,102,967,130"/><area shape="rect" id="node20" href="video__thread_8c.html#a99fd8c1413b858abf320b9adb453ed75" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="801,153,964,181"/><area shape="rect" id="node22" href="video__thread_8h.html#ae99893bfbc5f28c15432c06aee1e736f" title="Start with streaming. " alt="" coords="1023,153,1164,181"/><area shape="rect" id="node26" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. " alt="" coords="828,203,937,231"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a496e270428d382bcbda831334590eaf6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void jpeg_read_400_format </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="jpeg_8c.html#structJPEG__ENCODER__STRUCTURE">JPEG_ENCODER_STRUCTURE</a> *&#160;</td>
+          <td class="paramname"><em>jpeg_encoder_structure</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>input_ptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00962">962</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+
+<p>References <a class="el" href="jpeg_8c_source.html#l00072">JPEG_ENCODER_STRUCTURE::cols</a>, <a class="el" href="jpeg_8c_source.html#l00076">JPEG_ENCODER_STRUCTURE::incr</a>, <a class="el" href="jpeg_8c_source.html#l00071">JPEG_ENCODER_STRUCTURE::rows</a>, and <a class="el" href="jpeg_8c_source.html#l00296">Y1</a>.</p>
+
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00309">jpeg_initialization()</a>.</p>
+
+<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="jpeg_8c_a496e270428d382bcbda831334590eaf6_icgraph.png" border="0" usemap="#jpeg_8c_a496e270428d382bcbda831334590eaf6_icgraph" alt=""/></div>
+<map name="jpeg_8c_a496e270428d382bcbda831334590eaf6_icgraph" id="jpeg_8c_a496e270428d382bcbda831334590eaf6_icgraph">
+<area shape="rect" id="node3" href="jpeg_8c.html#a688433e5f55000ae893f2d5c29097691" title="jpeg_initialization" alt="" coords="221,102,352,130"/><area shape="rect" id="node5" href="jpeg_8h.html#a80691d29cd889f8b549ac6850c95e1b6" title="Encode an YUV422 image. " alt="" coords="401,102,551,130"/><area shape="rect" id="node7" href="bebop__front__camera_8c.html#a63cb60d57fb10579691954003dc4491e" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="835,6,989,50"/><area shape="rect" id="node11" href="bebop__front__camera_8c.html#aae423a991ed799c617921a4da12fb892" title="bebop_front_camera\l_save_shot" alt="" coords="612,35,767,79"/><area shape="rect" id="node14" href="opticflow__module_8c.html#a55f848033134662d4f93cd9cbef5acac" title="The main optical flow calculation thread. " alt="" coords="608,102,771,130"/><area shape="rect" id="node18" href="video__thread_8c.html#aaa7b1f2f5b3646dfeb40b7cacd005efb" title="video_thread_save_shot" alt="" coords="601,153,777,181"/><area shape="rect" id="node24" href="viewvideo_8c.html#a6a9f8aa0c7db5b292f18c8266808fe62" title="viewvideo_function" alt="" coords="619,203,760,231"/><area shape="rect" id="node9" href="bebop__front__camera_8h.html#a179ce25d44bf966f12b86e3a96654161" title="Start with streaming. " alt="" coords="1045,6,1200,50"/><area shape="rect" id="node16" href="opticflow__module_8h.html#a74f8b561efed21509627b8ebacc72eea" title="Start the optical flow calculation. " alt="" coords="828,102,996,130"/><area shape="rect" id="node20" href="video__thread_8c.html#a99fd8c1413b858abf320b9adb453ed75" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="831,153,993,181"/><area shape="rect" id="node22" href="video__thread_8h.html#ae99893bfbc5f28c15432c06aee1e736f" title="Start with streaming. " alt="" coords="1052,153,1193,181"/><area shape="rect" id="node26" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. " alt="" coords="857,203,967,231"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a206021dc908d46e0a1d72ed9c40b10e9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void jpeg_read_422_format </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="jpeg_8c.html#structJPEG__ENCODER__STRUCTURE">JPEG_ENCODER_STRUCTURE</a> *&#160;</td>
+          <td class="paramname"><em>jpeg_encoder_structure</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>input_ptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00992">992</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+
+<p>References <a class="el" href="jpeg_8c_source.html#l00300">CB</a>, <a class="el" href="jpeg_8c_source.html#l00072">JPEG_ENCODER_STRUCTURE::cols</a>, <a class="el" href="jpeg_8c_source.html#l00301">CR</a>, <a class="el" href="jpeg_8c_source.html#l00076">JPEG_ENCODER_STRUCTURE::incr</a>, <a class="el" href="jpeg_8c_source.html#l00071">JPEG_ENCODER_STRUCTURE::rows</a>, <a class="el" href="jpeg_8c_source.html#l00296">Y1</a>, and <a class="el" href="jpeg_8c_source.html#l00297">Y2</a>.</p>
+
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00309">jpeg_initialization()</a>.</p>
+
+<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="jpeg_8c_a206021dc908d46e0a1d72ed9c40b10e9_icgraph.png" border="0" usemap="#jpeg_8c_a206021dc908d46e0a1d72ed9c40b10e9_icgraph" alt=""/></div>
+<map name="jpeg_8c_a206021dc908d46e0a1d72ed9c40b10e9_icgraph" id="jpeg_8c_a206021dc908d46e0a1d72ed9c40b10e9_icgraph">
+<area shape="rect" id="node3" href="jpeg_8c.html#a688433e5f55000ae893f2d5c29097691" title="jpeg_initialization" alt="" coords="221,102,352,130"/><area shape="rect" id="node5" href="jpeg_8h.html#a80691d29cd889f8b549ac6850c95e1b6" title="Encode an YUV422 image. " alt="" coords="401,102,551,130"/><area shape="rect" id="node7" href="bebop__front__camera_8c.html#a63cb60d57fb10579691954003dc4491e" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="835,6,989,50"/><area shape="rect" id="node11" href="bebop__front__camera_8c.html#aae423a991ed799c617921a4da12fb892" title="bebop_front_camera\l_save_shot" alt="" coords="612,35,767,79"/><area shape="rect" id="node14" href="opticflow__module_8c.html#a55f848033134662d4f93cd9cbef5acac" title="The main optical flow calculation thread. " alt="" coords="608,102,771,130"/><area shape="rect" id="node18" href="video__thread_8c.html#aaa7b1f2f5b3646dfeb40b7cacd005efb" title="video_thread_save_shot" alt="" coords="601,153,777,181"/><area shape="rect" id="node24" href="viewvideo_8c.html#a6a9f8aa0c7db5b292f18c8266808fe62" title="viewvideo_function" alt="" coords="619,203,760,231"/><area shape="rect" id="node9" href="bebop__front__camera_8h.html#a179ce25d44bf966f12b86e3a96654161" title="Start with streaming. " alt="" coords="1045,6,1200,50"/><area shape="rect" id="node16" href="opticflow__module_8h.html#a74f8b561efed21509627b8ebacc72eea" title="Start the optical flow calculation. " alt="" coords="828,102,996,130"/><area shape="rect" id="node20" href="video__thread_8c.html#a99fd8c1413b858abf320b9adb453ed75" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="831,153,993,181"/><area shape="rect" id="node22" href="video__thread_8h.html#ae99893bfbc5f28c15432c06aee1e736f" title="Start with streaming. " alt="" coords="1052,153,1193,181"/><area shape="rect" id="node26" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. " alt="" coords="857,203,967,231"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a26b97262e8620df4fd0ece95195a2d8e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> * jpeg_write_markers </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>output_ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>image_format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>image_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>image_height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00761">761</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+
+<p>References <a class="el" href="jpeg_8c_source.html#l00292">Cqt</a>, <a class="el" href="jpeg_8h_source.html#l00030">FOUR_TWO_TWO</a>, <a class="el" href="jpeg_8h_source.html#l00028">FOUR_ZERO_ZERO</a>, <a class="el" href="jpeg_8c_source.html#l00291">Lqt</a>, and <a class="el" href="jpeg_8c_source.html#l00247">markerdata</a>.</p>
+
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00425">jpeg_encode_image()</a>.</p>
+
+<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="jpeg_8c_a26b97262e8620df4fd0ece95195a2d8e_icgraph.png" border="0" usemap="#jpeg_8c_a26b97262e8620df4fd0ece95195a2d8e_icgraph" alt=""/></div>
+<map name="jpeg_8c_a26b97262e8620df4fd0ece95195a2d8e_icgraph" id="jpeg_8c_a26b97262e8620df4fd0ece95195a2d8e_icgraph">
+<area shape="rect" id="node3" href="jpeg_8h.html#a80691d29cd889f8b549ac6850c95e1b6" title="Encode an YUV422 image. " alt="" coords="201,102,351,130"/><area shape="rect" id="node5" href="bebop__front__camera_8c.html#a63cb60d57fb10579691954003dc4491e" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="635,6,789,50"/><area shape="rect" id="node9" href="bebop__front__camera_8c.html#aae423a991ed799c617921a4da12fb892" title="bebop_front_camera\l_save_shot" alt="" coords="412,35,567,79"/><area shape="rect" id="node12" href="opticflow__module_8c.html#a55f848033134662d4f93cd9cbef5acac" title="The main optical flow calculation thread. " alt="" coords="408,102,571,130"/><area shape="rect" id="node16" href="video__thread_8c.html#aaa7b1f2f5b3646dfeb40b7cacd005efb" title="video_thread_save_shot" alt="" coords="401,153,577,181"/><area shape="rect" id="node22" href="viewvideo_8c.html#a6a9f8aa0c7db5b292f18c8266808fe62" title="viewvideo_function" alt="" coords="419,203,560,231"/><area shape="rect" id="node7" href="bebop__front__camera_8h.html#a179ce25d44bf966f12b86e3a96654161" title="Start with streaming. " alt="" coords="845,6,1000,50"/><area shape="rect" id="node14" href="opticflow__module_8h.html#a74f8b561efed21509627b8ebacc72eea" title="Start the optical flow calculation. " alt="" coords="628,102,796,130"/><area shape="rect" id="node18" href="video__thread_8c.html#a99fd8c1413b858abf320b9adb453ed75" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="631,153,793,181"/><area shape="rect" id="node20" href="video__thread_8h.html#ae99893bfbc5f28c15432c06aee1e736f" title="Start with streaming. " alt="" coords="852,153,993,181"/><area shape="rect" id="node24" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. " alt="" coords="657,203,767,231"/></map>
 </div>
 </p>
 
@@ -748,149 +1093,20 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00400">400</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00386">386</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>References <a class="el" href="jpeg_8c_source.html#l00306">Cqt</a>, <a class="el" href="jpeg_8c_source.html#l00308">ICqt</a>, <a class="el" href="jpeg_8c_source.html#l00307">ILqt</a>, <a class="el" href="jpeg_8c_source.html#l00385">jpeg_chroma_quantizer</a>, <a class="el" href="jpeg_8c_source.html#l00371">jpeg_luma_quantizer</a>, and <a class="el" href="jpeg_8c_source.html#l00305">Lqt</a>.</p>
+<p>References <a class="el" href="jpeg_8c_source.html#l00292">Cqt</a>, <a class="el" href="jpeg_8c_source.html#l00294">ICqt</a>, <a class="el" href="jpeg_8c_source.html#l00293">ILqt</a>, <a class="el" href="jpeg_8c_source.html#l00371">jpeg_chroma_quantizer</a>, <a class="el" href="jpeg_8c_source.html#l00357">jpeg_luma_quantizer</a>, and <a class="el" href="jpeg_8c_source.html#l00291">Lqt</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00436">encode_image()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00425">jpeg_encode_image()</a>.</p>
 
-<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="jpeg_8c_a69ed605945a7ea46dbfaa9b3f29b5ed8_icgraph.png" border="0" usemap="#jpeg_8c_a69ed605945a7ea46dbfaa9b3f29b5ed8_icgraph" alt=""/></div>
 <map name="jpeg_8c_a69ed605945a7ea46dbfaa9b3f29b5ed8_icgraph" id="jpeg_8c_a69ed605945a7ea46dbfaa9b3f29b5ed8_icgraph">
-<area shape="rect" id="node3" href="jpeg_8h.html#a61d22b80daac17f19740e3939fc05fcd" title="encode_image" alt="" coords="151,30,265,58"/><area shape="rect" id="node5" href="image__nc__send_8c.html#ab44d405e0d6e4e81ad90c9cc48fb5175" title="computervision_thread_main" alt="" coords="315,30,523,58"/><area shape="rect" id="node7" href="image__nc__send_8h.html#a8655f7b548a7365eaad26d96775d09c1" title="image_nc_send_start" alt="" coords="572,5,729,33"/><area shape="rect" id="node9" href="viewvideo_8h.html#a2e997d697b4958da4156565605b92575" title="viewvideo_start" alt="" coords="591,55,711,83"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="af41ebd28de3d5bf2b686a78758d90c16"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void quantization </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
-          <td class="paramname"><em>quant_table_ptr</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00949">949</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
-
-<p>References <a class="el" href="jpeg_8c_source.html#l00316">Temp</a>, <a class="el" href="stm32_2mcu__periph_2adc__arch_8c_source.html#l00586">value</a>, and <a class="el" href="jpeg_8c_source.html#l00273">zigzag_table</a>.</p>
-
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00489">encodeMCU()</a>.</p>
-
-<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="jpeg_8c_af41ebd28de3d5bf2b686a78758d90c16_icgraph.png" border="0" usemap="#jpeg_8c_af41ebd28de3d5bf2b686a78758d90c16_icgraph" alt=""/></div>
-<map name="jpeg_8c_af41ebd28de3d5bf2b686a78758d90c16_icgraph" id="jpeg_8c_af41ebd28de3d5bf2b686a78758d90c16_icgraph">
-<area shape="rect" id="node3" href="jpeg_8c.html#ae4943a048305ecb3f53df39deaf971ca" title="encodeMCU" alt="" coords="155,30,253,58"/><area shape="rect" id="node5" href="jpeg_8h.html#a61d22b80daac17f19740e3939fc05fcd" title="encode_image" alt="" coords="303,30,417,58"/><area shape="rect" id="node7" href="image__nc__send_8c.html#ab44d405e0d6e4e81ad90c9cc48fb5175" title="computervision_thread_main" alt="" coords="467,30,675,58"/><area shape="rect" id="node9" href="image__nc__send_8h.html#a8655f7b548a7365eaad26d96775d09c1" title="image_nc_send_start" alt="" coords="724,5,881,33"/><area shape="rect" id="node11" href="viewvideo_8h.html#a2e997d697b4958da4156565605b92575" title="viewvideo_start" alt="" coords="743,55,863,83"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a9a092d54c257eb11877f1bab2848ffbc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void read_400_format </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structJPEG__ENCODER__STRUCTURE.html">JPEG_ENCODER_STRUCTURE</a> *&#160;</td>
-          <td class="paramname"><em>jpeg_encoder_structure</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>input_ptr</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00962">962</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
-
-<p>References <a class="el" href="jpeg_8c_source.html#l00068">JPEG_ENCODER_STRUCTURE::cols</a>, <a class="el" href="jpeg_8c_source.html#l00072">JPEG_ENCODER_STRUCTURE::incr</a>, <a class="el" href="jpeg_8c_source.html#l00067">JPEG_ENCODER_STRUCTURE::rows</a>, and <a class="el" href="jpeg_8c_source.html#l00310">Y1</a>.</p>
-
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00323">initialization()</a>.</p>
-
-<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="jpeg_8c_a9a092d54c257eb11877f1bab2848ffbc_icgraph.png" border="0" usemap="#jpeg_8c_a9a092d54c257eb11877f1bab2848ffbc_icgraph" alt=""/></div>
-<map name="jpeg_8c_a9a092d54c257eb11877f1bab2848ffbc_icgraph" id="jpeg_8c_a9a092d54c257eb11877f1bab2848ffbc_icgraph">
-<area shape="rect" id="node3" href="jpeg_8c.html#a7fadd5eac230239bc7b9ef2785fd552d" title="initialization" alt="" coords="188,30,284,58"/><area shape="rect" id="node5" href="jpeg_8h.html#a61d22b80daac17f19740e3939fc05fcd" title="encode_image" alt="" coords="335,30,449,58"/><area shape="rect" id="node7" href="image__nc__send_8c.html#ab44d405e0d6e4e81ad90c9cc48fb5175" title="computervision_thread_main" alt="" coords="499,30,707,58"/><area shape="rect" id="node9" href="image__nc__send_8h.html#a8655f7b548a7365eaad26d96775d09c1" title="image_nc_send_start" alt="" coords="756,5,913,33"/><area shape="rect" id="node11" href="viewvideo_8h.html#a2e997d697b4958da4156565605b92575" title="viewvideo_start" alt="" coords="775,55,895,83"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a07e67cb34e3a98121c2c4227b6e9d7d2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void read_422_format </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structJPEG__ENCODER__STRUCTURE.html">JPEG_ENCODER_STRUCTURE</a> *&#160;</td>
-          <td class="paramname"><em>jpeg_encoder_structure</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>input_ptr</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00992">992</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
-
-<p>References <a class="el" href="jpeg_8c_source.html#l00314">CB</a>, <a class="el" href="jpeg_8c_source.html#l00068">JPEG_ENCODER_STRUCTURE::cols</a>, <a class="el" href="jpeg_8c_source.html#l00315">CR</a>, <a class="el" href="jpeg_8c_source.html#l00072">JPEG_ENCODER_STRUCTURE::incr</a>, <a class="el" href="jpeg_8c_source.html#l00067">JPEG_ENCODER_STRUCTURE::rows</a>, <a class="el" href="jpeg_8c_source.html#l00310">Y1</a>, and <a class="el" href="jpeg_8c_source.html#l00311">Y2</a>.</p>
-
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00323">initialization()</a>.</p>
-
-<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="jpeg_8c_a07e67cb34e3a98121c2c4227b6e9d7d2_icgraph.png" border="0" usemap="#jpeg_8c_a07e67cb34e3a98121c2c4227b6e9d7d2_icgraph" alt=""/></div>
-<map name="jpeg_8c_a07e67cb34e3a98121c2c4227b6e9d7d2_icgraph" id="jpeg_8c_a07e67cb34e3a98121c2c4227b6e9d7d2_icgraph">
-<area shape="rect" id="node3" href="jpeg_8c.html#a7fadd5eac230239bc7b9ef2785fd552d" title="initialization" alt="" coords="188,30,284,58"/><area shape="rect" id="node5" href="jpeg_8h.html#a61d22b80daac17f19740e3939fc05fcd" title="encode_image" alt="" coords="335,30,449,58"/><area shape="rect" id="node7" href="image__nc__send_8c.html#ab44d405e0d6e4e81ad90c9cc48fb5175" title="computervision_thread_main" alt="" coords="499,30,707,58"/><area shape="rect" id="node9" href="image__nc__send_8h.html#a8655f7b548a7365eaad26d96775d09c1" title="image_nc_send_start" alt="" coords="756,5,913,33"/><area shape="rect" id="node11" href="viewvideo_8h.html#a2e997d697b4958da4156565605b92575" title="viewvideo_start" alt="" coords="775,55,895,83"/></map>
+<area shape="rect" id="node3" href="jpeg_8h.html#a80691d29cd889f8b549ac6850c95e1b6" title="Encode an YUV422 image. " alt="" coords="151,102,300,130"/><area shape="rect" id="node5" href="bebop__front__camera_8c.html#a63cb60d57fb10579691954003dc4491e" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="584,6,739,50"/><area shape="rect" id="node9" href="bebop__front__camera_8c.html#aae423a991ed799c617921a4da12fb892" title="bebop_front_camera\l_save_shot" alt="" coords="361,35,516,79"/><area shape="rect" id="node12" href="opticflow__module_8c.html#a55f848033134662d4f93cd9cbef5acac" title="The main optical flow calculation thread. " alt="" coords="357,102,520,130"/><area shape="rect" id="node16" href="video__thread_8c.html#aaa7b1f2f5b3646dfeb40b7cacd005efb" title="video_thread_save_shot" alt="" coords="351,153,527,181"/><area shape="rect" id="node22" href="viewvideo_8c.html#a6a9f8aa0c7db5b292f18c8266808fe62" title="viewvideo_function" alt="" coords="368,203,509,231"/><area shape="rect" id="node7" href="bebop__front__camera_8h.html#a179ce25d44bf966f12b86e3a96654161" title="Start with streaming. " alt="" coords="795,6,949,50"/><area shape="rect" id="node14" href="opticflow__module_8h.html#a74f8b561efed21509627b8ebacc72eea" title="Start the optical flow calculation. " alt="" coords="577,102,745,130"/><area shape="rect" id="node18" href="video__thread_8c.html#a99fd8c1413b858abf320b9adb453ed75" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="580,153,743,181"/><area shape="rect" id="node20" href="video__thread_8h.html#ae99893bfbc5f28c15432c06aee1e736f" title="Start with streaming. " alt="" coords="801,153,943,181"/><area shape="rect" id="node24" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. " alt="" coords="607,203,716,231"/></map>
 </div>
 </p>
 
@@ -918,73 +1134,18 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00019">19</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00023">23</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00040">create_svs_jpeg_header()</a>.</p>
-
-<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="jpeg_8c_aeeebdcbde98e380664acf5bb80364783_icgraph.png" border="0" usemap="#jpeg_8c_aeeebdcbde98e380664acf5bb80364783_icgraph" alt=""/></div>
-<map name="jpeg_8c_aeeebdcbde98e380664acf5bb80364783_icgraph" id="jpeg_8c_aeeebdcbde98e380664acf5bb80364783_icgraph">
-<area shape="rect" id="node3" href="jpeg_8h.html#a09135197c947dcf03d1ccbf10ebf01bd" title="create_svs_jpeg_header" alt="" coords="169,5,345,33"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a6a385b27d29e29115ec6dc7bffd1896b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> * write_markers </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>output_ptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
-          <td class="paramname"><em>image_format</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
-          <td class="paramname"><em>image_width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
-          <td class="paramname"><em>image_height</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00761">761</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
-
-<p>References <a class="el" href="jpeg_8c_source.html#l00306">Cqt</a>, <a class="el" href="jpeg_8h_source.html#l00009">FOUR_TWO_TWO</a>, <a class="el" href="jpeg_8h_source.html#l00007">FOUR_ZERO_ZERO</a>, <a class="el" href="jpeg_8c_source.html#l00305">Lqt</a>, and <a class="el" href="jpeg_8c_source.html#l00262">markerdata</a>.</p>
-
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00436">encode_image()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00044">jpeg_create_svs_header()</a>.</p>
 
 <p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-17-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="jpeg_8c_a6a385b27d29e29115ec6dc7bffd1896b_icgraph.png" border="0" usemap="#jpeg_8c_a6a385b27d29e29115ec6dc7bffd1896b_icgraph" alt=""/></div>
-<map name="jpeg_8c_a6a385b27d29e29115ec6dc7bffd1896b_icgraph" id="jpeg_8c_a6a385b27d29e29115ec6dc7bffd1896b_icgraph">
-<area shape="rect" id="node3" href="jpeg_8h.html#a61d22b80daac17f19740e3939fc05fcd" title="encode_image" alt="" coords="167,30,281,58"/><area shape="rect" id="node5" href="image__nc__send_8c.html#ab44d405e0d6e4e81ad90c9cc48fb5175" title="computervision_thread_main" alt="" coords="331,30,539,58"/><area shape="rect" id="node7" href="image__nc__send_8h.html#a8655f7b548a7365eaad26d96775d09c1" title="image_nc_send_start" alt="" coords="588,5,745,33"/><area shape="rect" id="node9" href="viewvideo_8h.html#a2e997d697b4958da4156565605b92575" title="viewvideo_start" alt="" coords="607,55,727,83"/></map>
+<div class="center"><img src="jpeg_8c_aeeebdcbde98e380664acf5bb80364783_icgraph.png" border="0" usemap="#jpeg_8c_aeeebdcbde98e380664acf5bb80364783_icgraph" alt=""/></div>
+<map name="jpeg_8c_aeeebdcbde98e380664acf5bb80364783_icgraph" id="jpeg_8c_aeeebdcbde98e380664acf5bb80364783_icgraph">
+<area shape="rect" id="node3" href="jpeg_8h.html#a64f2550b4c98bfb1f9b4b28bff5b9285" title="jpeg_create_svs_header" alt="" coords="169,5,345,33"/></map>
 </div>
 </p>
 
@@ -994,59 +1155,91 @@ Variables</h2></td></tr>
 <a class="anchor" id="a0a39e883ccd82dbf1bcd6605f9d9e1cd"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> bitindex = 0</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00318">318</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00304">304</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00735">close_bitstream()</a>, and <a class="el" href="jpeg_8c_source.html#l00323">initialization()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00735">jpeg_close_bitstream()</a>, and <a class="el" href="jpeg_8c_source.html#l00309">jpeg_initialization()</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="af5299963acfe8bd5f361a487ea04dffd"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> bitsize[]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00227">227</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00212">212</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00638">huffman()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00638">jpeg_huffman()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a897bb011d23f827c0171ef569f3c690c"></a>
+<a class="anchor" id="a9bf766bc88278a546429f0967151bb4e"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> CB</td>
+          <td class="memname"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> CB[<a class="el" href="jpeg_8c.html#ac1ca01476dc2f36c8fb4aaba503d736b">JPEG_BLOCK_SIZE</a>]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00314">314</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00300">300</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00489">encodeMCU()</a>, and <a class="el" href="jpeg_8c_source.html#l00992">read_422_format()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00489">jpeg_encodeMCU()</a>, and <a class="el" href="jpeg_8c_source.html#l00992">jpeg_read_422_format()</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="ae117df1c4f2886f045d50be38d20f371"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> chrominance_ac_code_table[]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
 <div class="line">  0x0000,</div>
@@ -1069,20 +1262,28 @@ Variables</h2></td></tr>
 <div class="line">  0x03FA</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00185">185</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00170">170</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00638">huffman()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00638">jpeg_huffman()</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="abfec6656ccf094ae416ea110b8413cdc"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> chrominance_ac_size_table[]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
 <div class="line">  0x0002,</div>
@@ -1105,167 +1306,161 @@ Variables</h2></td></tr>
 <div class="line">  0x000A</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00206">206</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00191">191</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00638">huffman()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00638">jpeg_huffman()</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="a586776104b0856bd4e77093471e268c8"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> chrominance_dc_code_table[]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
 <div class="line">  0x0000, 0x0001, 0x0002, 0x0006, 0x000E, 0x001E,</div>
 <div class="line">  0x003E, 0x007E, 0x00FE, 0x01FE, 0x03FE, 0x07FE</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00133">133</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00118">118</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00638">huffman()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00638">jpeg_huffman()</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="a5230ada4b4b660984f5a14a4cf61a9ee"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> chrominance_dc_size_table[]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
 <div class="line">  0x0002, 0x0002, 0x0002, 0x0003, 0x0004, 0x0005,</div>
 <div class="line">  0x0006, 0x0007, 0x0008, 0x0009, 0x000A, 0x000B</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00138">138</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00123">123</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00638">huffman()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00638">jpeg_huffman()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a6d0011d782cc6fb744d06dc506e59f33"></a>
+<a class="anchor" id="a6af5849549e3c0c0a215b904a183f3f6"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> chrominance_quant_table[]</td>
+          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> Cqt[<a class="el" href="jpeg_8c.html#ac1ca01476dc2f36c8fb4aaba503d736b">JPEG_BLOCK_SIZE</a>]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">  17, 18, 24, 47, 99, 99, 99, 99,</div>
-<div class="line">  18, 21, 26, 66, 99, 99, 99, 99,</div>
-<div class="line">  24, 26, 56, 99, 99, 99, 99, 99,</div>
-<div class="line">  47, 66, 99, 99, 99, 99, 99, 99,</div>
-<div class="line">  99, 99, 99, 99, 99, 99, 99, 99,</div>
-<div class="line">  99, 99, 99, 99, 99, 99, 99, 99,</div>
-<div class="line">  99, 99, 99, 99, 99, 99, 99, 99,</div>
-<div class="line">  99, 99, 99, 99, 99, 99, 99, 99</div>
-<div class="line">}</div>
-</div><!-- fragment -->
+
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00292">292</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00761">jpeg_write_markers()</a>, and <a class="el" href="jpeg_8c_source.html#l00386">MakeTables()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afae31774766da9c1604d6052e61a207f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> CR[<a class="el" href="jpeg_8c.html#ac1ca01476dc2f36c8fb4aaba503d736b">JPEG_BLOCK_SIZE</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00301">301</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00489">jpeg_encodeMCU()</a>, and <a class="el" href="jpeg_8c_source.html#l00992">jpeg_read_422_format()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aff6bdc1d434730275d95f729115a2537"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> ICqt[<a class="el" href="jpeg_8c.html#ac1ca01476dc2f36c8fb4aaba503d736b">JPEG_BLOCK_SIZE</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 <p>Definition at line <a class="el" href="jpeg_8c_source.html#l00294">294</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00902">initialize_quantization_tables()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00489">jpeg_encodeMCU()</a>, and <a class="el" href="jpeg_8c_source.html#l00386">MakeTables()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a18941e57df33d2187cba5ad8c7418397"></a>
+<a class="anchor" id="a32616c9fb198d19981e5e0986f1edcdb"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> Cqt</td>
+          <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> ILqt[<a class="el" href="jpeg_8c.html#ac1ca01476dc2f36c8fb4aaba503d736b">JPEG_BLOCK_SIZE</a>]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00306">306</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00293">293</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00902">initialize_quantization_tables()</a>, <a class="el" href="jpeg_8c_source.html#l00400">MakeTables()</a>, and <a class="el" href="jpeg_8c_source.html#l00761">write_markers()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a3e21cc14e4b431dc31bb3c0668d723f6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> CR</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00315">315</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
-
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00489">encodeMCU()</a>, and <a class="el" href="jpeg_8c_source.html#l00992">read_422_format()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a37d0890d31f8f5a289a9cca23fffc0fa"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> fdct_coeff[8] = {0x5a82, 0x5a82, 0x30fb, 0x7641, 0x18f8, 0x7d8a, 0x471c, 0x6a6d}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00120">120</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac928bf63d845025f274eb5fbd4024748"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> fdct_temp[64]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00121">121</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9f4093cdde95d4a6b02e8cae669f5050"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> ICqt</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00308">308</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
-
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00489">encodeMCU()</a>, <a class="el" href="jpeg_8c_source.html#l00902">initialize_quantization_tables()</a>, and <a class="el" href="jpeg_8c_source.html#l00400">MakeTables()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9d55b4368df7ca8365c48e667cee58b8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> ILqt</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00307">307</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
-
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00489">encodeMCU()</a>, <a class="el" href="jpeg_8c_source.html#l00902">initialize_quantization_tables()</a>, and <a class="el" href="jpeg_8c_source.html#l00400">MakeTables()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00489">jpeg_encodeMCU()</a>, and <a class="el" href="jpeg_8c_source.html#l00386">MakeTables()</a>.</p>
 
 </div>
 </div>
@@ -1297,9 +1492,9 @@ Variables</h2></td></tr>
 <div class="line">  99, 99, 99, 99, 99, 99, 99, 99</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00385">385</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00371">371</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00400">MakeTables()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00386">MakeTables()</a>.</p>
 
 </div>
 </div>
@@ -1331,52 +1526,76 @@ Variables</h2></td></tr>
 <div class="line">  72, 92, 95, 98, 112, 100, 103, 99</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00371">371</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00357">357</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00400">MakeTables()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00386">MakeTables()</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="afb8bf9cc6992a4062726602d79bd6ac0"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> lcode = 0</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00317">317</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00303">303</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00735">close_bitstream()</a>, and <a class="el" href="jpeg_8c_source.html#l00323">initialization()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00735">jpeg_close_bitstream()</a>, and <a class="el" href="jpeg_8c_source.html#l00309">jpeg_initialization()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a78c56c5f0961e05b457f2474b73dccf9"></a>
+<a class="anchor" id="a16fc40420de3ac7e072f80d47733f746"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> Lqt</td>
+          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> Lqt[<a class="el" href="jpeg_8c.html#ac1ca01476dc2f36c8fb4aaba503d736b">JPEG_BLOCK_SIZE</a>]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00305">305</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00291">291</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00902">initialize_quantization_tables()</a>, <a class="el" href="jpeg_8c_source.html#l00400">MakeTables()</a>, and <a class="el" href="jpeg_8c_source.html#l00761">write_markers()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00761">jpeg_write_markers()</a>, and <a class="el" href="jpeg_8c_source.html#l00386">MakeTables()</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="ac75b710d5f54b9833f2184954d7de19c"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> luminance_ac_code_table[]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
 <div class="line">  0x000A,</div>
@@ -1399,20 +1618,28 @@ Variables</h2></td></tr>
 <div class="line">  0x07F9</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00143">143</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00128">128</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00638">huffman()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00638">jpeg_huffman()</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="a1ce20a5289424c5ebd198741a86527f8"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> luminance_ac_size_table[]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
 <div class="line">  0x0004,</div>
@@ -1435,86 +1662,84 @@ Variables</h2></td></tr>
 <div class="line">  0x000B</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00164">164</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00149">149</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00638">huffman()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00638">jpeg_huffman()</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="a18392592ac9cafb0eedcc962b8c16f08"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> luminance_dc_code_table[]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
 <div class="line">  0x0000, 0x0002, 0x0003, 0x0004, 0x0005, 0x0006,</div>
 <div class="line">  0x000E, 0x001E, 0x003E, 0x007E, 0x00FE, 0x01FE</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00123">123</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00108">108</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00638">huffman()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00638">jpeg_huffman()</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="aa7e433256dbc3b7e147839a33c24a46d"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> luminance_dc_size_table[]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
 <div class="line">  0x0002, 0x0003, 0x0003, 0x0003, 0x0003, 0x0003,</div>
 <div class="line">  0x0004, 0x0005, 0x0006, 0x0007, 0x0008, 0x0009</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00128">128</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00113">113</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00638">huffman()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ada85081a495ab488446b2d0130e94592"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> luminance_quant_table[]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">  16, 11, 10, 16,  24,  40,  51,  61,</div>
-<div class="line">  12, 12, 14, 19,  26,  58,  60,  55,</div>
-<div class="line">  14, 13, 16, 24,  40,  57,  69,  56,</div>
-<div class="line">  14, 17, 22, 29,  51,  87,  80,  62,</div>
-<div class="line">  18, 22, 37, 56,  68, 109, 103,  77,</div>
-<div class="line">  24, 35, 55, 64,  81, 104, 113,  92,</div>
-<div class="line">  49, 64, 78, 87, 103, 121, 120, 101,</div>
-<div class="line">  72, 92, 95, 98, 112, 100, 103,  99</div>
-<div class="line">}</div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00283">283</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
-
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00902">initialize_quantization_tables()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00638">jpeg_huffman()</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="a05346db37b73ffae8a09f969e66c1c4c"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> markerdata[]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
 <div class="line">  0xFF, 0xC4, 0x00, 0x1F, 0x00, 0x00, 0x01, 0x05, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B,</div>
@@ -1526,9 +1751,9 @@ Variables</h2></td></tr>
 <div class="line">  0xFF, 0xC4, 0x00, 0xB5, 0x11, 0x00, 0x02, 0x01, 0x02, 0x04, 0x04, 0x03, 0x04, 0x07, 0x05, 0x04, 0x04, 0x00, 0x01, 0x02, 0x77, 0x00, 0x01, 0x02, 0x03, 0x11, 0x04, 0x05, 0x21, 0x31, 0x06, 0x12, 0x41, 0x51, 0x07, 0x61, 0x71, 0x13, 0x22, 0x32, 0x81, 0x08, 0x14, 0x42, 0x91, 0xA1, 0xB1, 0xC1, 0x09, 0x23, 0x33, 0x52, 0xF0, 0x15, 0x62, 0x72, 0xD1, 0x0A, 0x16, 0x24, 0x34, 0xE1, 0x25, 0xF1, 0x17, 0x18, 0x19, 0x1A, 0x26, 0x27, 0x28, 0x29, 0x2A, 0x35, 0x36, 0x37, 0x38, 0x39, 0x3A, 0x43, 0x44, 0x45, 0x46, 0x47, 0x48, 0x49, 0x4A, 0x53, 0x54, 0x55, 0x56, 0x57, 0x58, 0x59, 0x5A, 0x63, 0x64, 0x65, 0x66, 0x67, 0x68, 0x69, 0x6A, 0x73, 0x74, 0x75, 0x76, 0x77, 0x78, 0x79, 0x7A, 0x82, 0x83, 0x84, 0x85, 0x86, 0x87, 0x88, 0x89, 0x8A, 0x92, 0x93, 0x94, 0x95, 0x96, 0x97, 0x98, 0x99, 0x9A, 0xA2, 0xA3, 0xA4, 0xA5, 0xA6, 0xA7, 0xA8, 0xA9, 0xAA, 0xB2, 0xB3, 0xB4, 0xB5, 0xB6, 0xB7, 0xB8, 0xB9, 0xBA, 0xC2, 0xC3, 0xC4, 0xC5, 0xC6, 0xC7, 0xC8, 0xC9, 0xCA, 0xD2, 0xD3, 0xD4, 0xD5, 0xD6, 0xD7, 0xD8, 0xD9, 0xDA, 0xE2, 0xE3, 0xE4, 0xE5, 0xE6, 0xE7, 0xE8, 0xE9, 0xEA, 0xF2, 0xF3, 0xF4, 0xF5, 0xF6, 0xF7, 0xF8, 0xF9, 0xFA,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00262">262</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00247">247</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00761">write_markers()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00761">jpeg_write_markers()</a>.</p>
 
 </div>
 </div>
@@ -1537,101 +1762,105 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* read_format)(<a class="el" href="structJPEG__ENCODER__STRUCTURE.html">JPEG_ENCODER_STRUCTURE</a> *jpeg_encoder_structure, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *input_ptr)</td>
+          <td class="memname">void(* read_format)(<a class="el" href="jpeg_8c.html#structJPEG__ENCODER__STRUCTURE">JPEG_ENCODER_STRUCTURE</a> *jpeg_encoder_structure, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *input_ptr)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00321">321</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00307">307</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00436">encode_image()</a>, and <a class="el" href="jpeg_8c_source.html#l00323">initialization()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00425">jpeg_encode_image()</a>, and <a class="el" href="jpeg_8c_source.html#l00309">jpeg_initialization()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ad4145e0d36c67d8f0b204df0cc8a46e5"></a>
+<a class="anchor" id="ae5078d22a1e535110c2d08e8b34768f6"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> Temp</td>
+          <td class="memname"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> Temp[<a class="el" href="jpeg_8c.html#ac1ca01476dc2f36c8fb4aaba503d736b">JPEG_BLOCK_SIZE</a>]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00316">316</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00302">302</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00638">huffman()</a>, and <a class="el" href="jpeg_8c_source.html#l00949">quantization()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00638">jpeg_huffman()</a>, and <a class="el" href="jpeg_8c_source.html#l00949">jpeg_quantization()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af4372e14b7777811cf3416d69a4ee1db"></a>
+<a class="anchor" id="a1e5d8c92f472b9fc19753d5ca526d9bb"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> Y1</td>
+          <td class="memname"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> Y1[<a class="el" href="jpeg_8c.html#ac1ca01476dc2f36c8fb4aaba503d736b">JPEG_BLOCK_SIZE</a>]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00310">310</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00296">296</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00489">encodeMCU()</a>, <a class="el" href="jpeg_8c_source.html#l00962">read_400_format()</a>, and <a class="el" href="jpeg_8c_source.html#l00992">read_422_format()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00489">jpeg_encodeMCU()</a>, <a class="el" href="jpeg_8c_source.html#l00962">jpeg_read_400_format()</a>, and <a class="el" href="jpeg_8c_source.html#l00992">jpeg_read_422_format()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0f8569fa27ebc72c9fba0b4cd0d40db7"></a>
+<a class="anchor" id="af9a08edaec3e45b15ab563d8a7b6b53d"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> Y2</td>
+          <td class="memname"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> Y2[<a class="el" href="jpeg_8c.html#ac1ca01476dc2f36c8fb4aaba503d736b">JPEG_BLOCK_SIZE</a>]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00311">311</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00297">297</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00489">encodeMCU()</a>, and <a class="el" href="jpeg_8c_source.html#l00992">read_422_format()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af82f20fef8040547d9266e199f2a4f0d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> Y3[<a class="el" href="jpeg_8c.html#ad51ded0bbd705f02f73fc60c0b721ced">BLOCK_SIZE</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00312">312</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a937e9dcaf11fad2a7f0abf6074877c33"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> Y4[<a class="el" href="jpeg_8c.html#ad51ded0bbd705f02f73fc60c0b721ced">BLOCK_SIZE</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00313">313</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00489">jpeg_encodeMCU()</a>, and <a class="el" href="jpeg_8c_source.html#l00992">jpeg_read_422_format()</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="a07143b3bf3e0c33a84aba192e86adf4a"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> zigzag_table[]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
 <div class="line">  0,  1,   5,  6, 14, 15, 27, 28,</div>
@@ -1644,9 +1873,9 @@ Variables</h2></td></tr>
 <div class="line">  35, 36, 48, 49, 57, 58, 62, 63</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00273">273</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
+<p>Definition at line <a class="el" href="jpeg_8c_source.html#l00258">258</a> of file <a class="el" href="jpeg_8c_source.html">jpeg.c</a>.</p>
 
-<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00902">initialize_quantization_tables()</a>, and <a class="el" href="jpeg_8c_source.html#l00949">quantization()</a>.</p>
+<p>Referenced by <a class="el" href="jpeg_8c_source.html#l00949">jpeg_quantization()</a>.</p>
 
 </div>
 </div>
@@ -1655,8 +1884,8 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="dir_1194254f8733f0da37eff023628827ec.html">cv</a></li><li class="navelem"><a class="el" href="dir_6dac77fb969372e15ccbedd0b322370e.html">encoding</a></li><li class="navelem"><a class="el" href="jpeg_8c.html">jpeg.c</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:02 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="dir_9adc125244b74c64b95124778e5b932a.html">lib</a></li><li class="navelem"><a class="el" href="dir_7aa332c18e5fa1eaa6661da2f3ea70ae.html">encoding</a></li><li class="navelem"><a class="el" href="jpeg_8c.html">jpeg.c</a></li>
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:22 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

@@ -26,6 +26,7 @@ var gps__mtk_8c =
     [ "SECS_WEEK", "gps__mtk_8c.html#a26904ebbbbc348abd3316e91e46a4161", null ],
     [ "UNINIT", "gps__mtk_8c.html#a7668dedbc74a47bde384b2b911379073", null ],
     [ "gps_impl_init", "gps__mtk_8c.html#ac51e6a5f7940a0acc9dc44b1b8085331", null ],
+    [ "gps_mtk_msg", "gps__mtk_8c.html#a0323467da4b8603fecd6110b401c5a7d", null ],
     [ "gps_mtk_parse", "gps__mtk_8c.html#aaa2efef01a920190bff9eaa93bdececa", null ],
     [ "gps_mtk_read_message", "gps__mtk_8c.html#a0f4aaa905b232ae9d9b714e161498e9e", null ],
     [ "gps_mtk_time2itow", "gps__mtk_8c.html#a37fc4944304a2efddd0287185cae44f3", null ],

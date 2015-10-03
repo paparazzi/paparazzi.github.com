@@ -7,13 +7,14 @@ var ahrs__int__cmpl__euler_8c =
     [ "NOISE_FILTER_GAIN", "ahrs__int__cmpl__euler_8c.html#af92e9c251ae0de76dc97d0d2ef3d5fe6", null ],
     [ "PI_INTEG_EULER", "ahrs__int__cmpl__euler_8c.html#ade21f9eb72c0578ceaf8be14186c000f", null ],
     [ "TWO_PI_INTEG_EULER", "ahrs__int__cmpl__euler_8c.html#a02f00c6c5b6cc09a006df904693a14a2", null ],
-    [ "ahrs_align", "ahrs__int__cmpl__euler_8c.html#a81e17b09f47068c02c345da1523f589b", null ],
-    [ "ahrs_init", "ahrs__int__cmpl__euler_8c.html#aa3721663c9df7c7af5613486a3566afb", null ],
-    [ "ahrs_propagate", "ahrs__int__cmpl__euler_8c.html#a4e5064cff25b95f0631d5184d779ee43", null ],
-    [ "ahrs_update_accel", "ahrs__int__cmpl__euler_8c.html#a020997c7e92d014a6bacd92b5255b904", null ],
-    [ "ahrs_update_mag", "ahrs__int__cmpl__euler_8c.html#a0003a29e3c7626f93a370cff7536f202", null ],
-    [ "get_phi_theta_measurement_fom_accel", "ahrs__int__cmpl__euler_8c.html#a6132add3aefdc9f80d14f1c2f3d8333d", null ],
-    [ "get_psi_measurement_from_mag", "ahrs__int__cmpl__euler_8c.html#a5d95a785fc9325167394296734a26fb1", null ],
-    [ "set_body_state_from_euler", "ahrs__int__cmpl__euler_8c.html#a4f58a57dad0a37eca38d2fcfbb689278", null ],
-    [ "ahrs_impl", "ahrs__int__cmpl__euler_8c.html#aadf401f0458c28faf0ee6d838c88612f", null ]
+    [ "ahrs_ice_align", "ahrs__int__cmpl__euler_8c.html#a7f0e3a63744e609f81631d33da7e15e2", null ],
+    [ "ahrs_ice_init", "ahrs__int__cmpl__euler_8c.html#aabe53d414f6e28c5b44a1e1acad6abcd", null ],
+    [ "ahrs_ice_propagate", "ahrs__int__cmpl__euler_8c.html#a09c1d52ac9a43398b4818733eba1122a", null ],
+    [ "ahrs_ice_set_body_to_imu", "ahrs__int__cmpl__euler_8c.html#a40fcc3122d1bac5f0d575ed95c64573a", null ],
+    [ "ahrs_ice_set_body_to_imu_quat", "ahrs__int__cmpl__euler_8c.html#a0be5cbcb18a39fc84c71135b37c1dab5", null ],
+    [ "ahrs_ice_update_accel", "ahrs__int__cmpl__euler_8c.html#af745c667b581df4ebb05736724bc139f", null ],
+    [ "ahrs_ice_update_mag", "ahrs__int__cmpl__euler_8c.html#a4997b33aba1c13e60c16cc1e53caa17b", null ],
+    [ "get_phi_theta_measurement_fom_accel", "ahrs__int__cmpl__euler_8c.html#a4097208c85111251e79e54ba051303cc", null ],
+    [ "get_psi_measurement_from_mag", "ahrs__int__cmpl__euler_8c.html#a17333faa19665aa925cd4d2384f68bdf", null ],
+    [ "ahrs_ice", "ahrs__int__cmpl__euler_8c.html#a32f4c01b090a3cbab8dbfde5d6fb88a3", null ]
 ];

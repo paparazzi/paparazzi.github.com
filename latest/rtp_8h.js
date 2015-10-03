@@ -1,5 +1,5 @@
 var rtp_8h =
 [
-    [ "send_rtp_frame", "rtp_8h.html#a34942a3fe624639f5fc337eb5639b815", null ],
-    [ "test_rtp_frame", "rtp_8h.html#ac9fc674fb9d8aa57bf4a97370c9705a0", null ]
+    [ "rtp_frame_send", "rtp_8h.html#ab810dc7d46e209624e4edd330edb7bf7", null ],
+    [ "rtp_frame_test", "rtp_8h.html#a6c9aa998b02c9ff5099bb3fc6bbc2b5e", null ]
 ];

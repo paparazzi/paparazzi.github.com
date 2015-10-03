@@ -5,12 +5,6 @@ var dir_c87a6d12365ead88e0b90ddbc1b3c9bb =
     [ "peripherals", "dir_bab61e7a5c4a4a7c77284a97c16fde9a.html", "dir_bab61e7a5c4a4a7c77284a97c16fde9a" ],
     [ "subsystems", "dir_666d3c43b9df888d27617864b1f0db99.html", "dir_666d3c43b9df888d27617864b1f0db99" ],
     [ "baro_MS5534A.h", "arch_2sim_2baro__MS5534A_8h.html", null ],
-    [ "jsbsim_ahrs.c", "jsbsim__ahrs_8c.html", "jsbsim__ahrs_8c" ],
-    [ "jsbsim_gps.c", "jsbsim__gps_8c.html", "jsbsim__gps_8c" ],
-    [ "jsbsim_hw.c", "jsbsim__hw_8c.html", "jsbsim__hw_8c" ],
-    [ "jsbsim_hw.h", "jsbsim__hw_8h.html", "jsbsim__hw_8h" ],
-    [ "jsbsim_ir.c", "jsbsim__ir_8c.html", "jsbsim__ir_8c" ],
-    [ "jsbsim_transport.c", "jsbsim__transport_8c.html", "jsbsim__transport_8c" ],
     [ "led_hw.c", "sim_2led__hw_8c.html", "sim_2led__hw_8c" ],
     [ "led_hw.h", "sim_2led__hw_8h.html", "sim_2led__hw_8h" ],
     [ "max1167_hw.c", "max1167__hw_8c.html", "max1167__hw_8c" ],
@@ -23,7 +17,5 @@ var dir_c87a6d12365ead88e0b90ddbc1b3c9bb =
     [ "sim_ap.c", "sim__ap_8c.html", "sim__ap_8c" ],
     [ "sim_gps.c", "sim__gps_8c.html", "sim__gps_8c" ],
     [ "sim_ir.c", "sim__ir_8c.html", "sim__ir_8c" ],
-    [ "sim_uart.c", "sim__uart_8c.html", "sim__uart_8c" ],
-    [ "sim_uart.h", "sim__uart_8h.html", "sim__uart_8h" ],
     [ "sim_uart_hw.c", "sim__uart__hw_8c.html", "sim__uart__hw_8c" ]
 ];

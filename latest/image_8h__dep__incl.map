@@ -1,8 +1,42 @@
-<map id="sw/airborne/modules/computer_vision/cv/image.h" name="sw/airborne/modules/computer_vision/cv/image.h">
-<area shape="rect" id="node3" href="$color_8h.html" title="sw/airborne/modules\l/computer_vision/cv\l/color.h" alt="" coords="5,115,160,175"/>
-<area shape="rect" id="node5" href="$resize_8h.html" title="sw/airborne/modules\l/computer_vision/cv\l/resize.h" alt="" coords="184,115,339,175"/>
-<area shape="rect" id="node11" href="$video_8h.html" title="sw/airborne/modules\l/computer_vision/lib\l/v4l/video.h" alt="" coords="363,115,517,175"/>
-<area shape="rect" id="node7" href="$image__nc__send_8c.html" title="Capture an image on an ARDrone2 and send it to the ground with netcat (nc) " alt="" coords="353,225,527,285"/>
-<area shape="rect" id="node9" href="$viewvideo_8c.html" title="Get live images from a RTP/UDP stream and save pictures on internal memory. " alt="" coords="124,233,329,277"/>
-<area shape="rect" id="node14" href="$video_8c.html" title="sw/airborne/modules\l/computer_vision/lib\l/v4l/video.c" alt="" coords="551,225,705,285"/>
+<map id="sw/airborne/modules/computer_vision/lib/vision/image.h" name="sw/airborne/modules/computer_vision/lib/vision/image.h">
+<area shape="rect" id="node3" href="$v4l2_8h.html" title="Capture images from a V4L2 device (Video for Linux 2) " alt="" coords="364,115,519,175"/>
+<area shape="rect" id="node5" href="$bebop__front__camera_8c.html" title="sw/airborne/modules\l/computer_vision/bebop\l_front_camera.c" alt="" coords="793,225,967,285"/>
+<area shape="rect" id="node9" href="$opticflow__calculator_8h.html" title="Calculate velocity from optic flow. " alt="" coords="479,225,668,285"/>
+<area shape="rect" id="node11" href="$opticflow__calculator_8c.html" title="Estimate velocity from optic flow. " alt="" coords="3712,334,3901,394"/>
+<area shape="rect" id="node18" href="$video__thread_8c.html" title="sw/airborne/modules\l/computer_vision/video\l_thread.c" alt="" coords="764,334,932,394"/>
+<area shape="rect" id="node32" href="$bayer_8h.html" title="sw/airborne/modules\l/computer_vision/lib\l/vision/bayer.h" alt="" coords="803,115,957,175"/>
+<area shape="rect" id="node36" href="$jpeg_8h.html" title="Encode images with the use of the JPEG encoding. " alt="" coords="1131,115,1285,175"/>
+<area shape="rect" id="node43" href="$viewvideo_8c.html" title="Get live images from a RTP/UDP stream and save pictures on internal memory. " alt="" coords="1271,233,1476,277"/>
+<area shape="rect" id="node45" href="$rtp_8h.html" title="Encodes a vide stream with RTP (JPEG) " alt="" coords="1436,115,1591,175"/>
+<area shape="rect" id="node52" href="$blob__finder_8h.html" title="Parse UYVY images and make a list of blobs of connected pixels. " alt="" coords="1819,115,1981,175"/>
+<area shape="rect" id="node58" href="$imavmarker_8h.html" title="Find a IMAV pattern. " alt="" coords="2005,115,2168,175"/>
+<area shape="rect" id="node63" href="$cv_8h.html" title="Computer vision framework for onboard processing. " alt="" coords="2485,123,2645,167"/>
+<area shape="rect" id="node78" href="$fast__rosten_8h.html" title="sw/airborne/modules\l/computer_vision/lib\l/vision/fast_rosten.h" alt="" coords="3836,115,3991,175"/>
+<area shape="rect" id="node83" href="$image_8c.html" title="Image helper functions, like resizing, color filter, converters... " alt="" coords="3187,115,3341,175"/>
+<area shape="rect" id="node85" href="$lucas__kanade_8h.html" title="efficient fixed&#45;point optical&#45;flow calculation " alt="" coords="2997,115,3163,175"/>
+<area shape="rect" id="node90" href="$linear__flow__fit_8h.html" title="sw/airborne/modules\l/computer_vision/opticflow\l/linear_flow_fit.h" alt="" coords="3491,115,3680,175"/>
+<area shape="rect" id="node97" href="$size__divergence_8h.html" title="Calculate divergence from flow vectors by looking at line sizes beteween the points. " alt="" coords="4116,115,4305,175"/>
+<area shape="rect" id="node102" href="$qr__code_8h.html" title="Parse video stream to detect and decode QR&#45;codes using the ZBAR library. " alt="" coords="2732,115,2911,175"/>
+<area shape="rect" id="node7" href="$v4l2_8c.html" title="Capture images from a V4L2 device (Video for Linux 2) " alt="" coords="55,225,209,285"/>
+<area shape="rect" id="node15" href="$opticflow__module_8c.html" title="optical&#45;flow based hovering for Parrot AR.Drone 2.0 " alt="" coords="844,443,1033,503"/>
+<area shape="rect" id="node20" href="$video__device_8h.html" title="v4l2 video device settings interface Works on Linux platforms " alt="" coords="233,233,404,277"/>
+<area shape="rect" id="node13" href="$opticflow__module_8h.html" title="optical&#45;flow calculation for Parrot Drones " alt="" coords="551,334,740,394"/>
+<area shape="rect" id="node22" href="$ardrone_2board_8c.html" title="sw/airborne/boards\l/ardrone/board.c" alt="" coords="55,342,196,386"/>
+<area shape="rect" id="node24" href="$ardrone2_8h.html" title="sw/airborne/boards\l/ardrone2.h" alt="" coords="220,342,361,386"/>
+<area shape="rect" id="node26" href="$bebop_8h.html" title="sw/airborne/boards\l/bebop.h" alt="" coords="385,342,527,386"/>
+<area shape="rect" id="node28" href="$video_8c.html" title="Initialization of the video specific parts of the Bebop. " alt="" coords="385,451,527,495"/>
+<area shape="rect" id="node39" href="$jpeg_8c.html" title="Encode images with the use of the JPEG encoding. " alt="" coords="991,225,1145,285"/>
+<area shape="rect" id="node48" href="$rtp_8c.html" title="Encodes a vide stream with RTP (JPEG) " alt="" coords="1551,225,1705,285"/>
+<area shape="rect" id="node54" href="$blob__finder_8c.html" title="Parse UYVY images and make a list of blobs of connected pixels. " alt="" coords="1729,225,1892,285"/>
+<area shape="rect" id="node56" href="$cv__blob__locator_8c.html" title="sw/airborne/modules\l/computer_vision/cv\l_blob_locator.c" alt="" coords="1916,225,2071,285"/>
+<area shape="rect" id="node60" href="$imavmarker_8c.html" title="Find a IMAV pattern. " alt="" coords="2095,225,2257,285"/>
+<area shape="rect" id="node65" href="$colorfilter_8c.html" title="sw/airborne/modules\l/computer_vision/colorfilter.c" alt="" coords="2673,233,2876,277"/>
+<area shape="rect" id="node67" href="$cv_8c.html" title="Computer vision framework for onboard processing. " alt="" coords="2951,233,3108,277"/>
+<area shape="rect" id="node70" href="$detect__window_8c.html" title="sw/airborne/modules\l/computer_vision/detect\l_window.c" alt="" coords="2281,225,2457,285"/>
+<area shape="rect" id="node72" href="$qr__code_8c.html" title="sw/airborne/modules\l/computer_vision/qrcode\l/qr_code.c" alt="" coords="3132,225,3311,285"/>
+<area shape="rect" id="node75" href="$video__thread__nps_8c.html" title="sw/airborne/modules\l/computer_vision/video\l_thread_nps.c" alt="" coords="2481,225,2649,285"/>
+<area shape="rect" id="node80" href="$fast__rosten_8c.html" title="sw/airborne/modules\l/computer_vision/lib\l/vision/fast_rosten.c" alt="" coords="3836,225,3991,285"/>
+<area shape="rect" id="node87" href="$lucas__kanade_8c.html" title="efficient fixed&#45;point optical&#45;flow calculation " alt="" coords="3385,225,3548,285"/>
+<area shape="rect" id="node92" href="$linear__flow__fit_8c.html" title="sw/airborne/modules\l/computer_vision/opticflow\l/linear_flow_fit.c" alt="" coords="3623,225,3812,285"/>
+<area shape="rect" id="node100" href="$size__divergence_8c.html" title="Calculate divergence from flow vectors by looking at line sizes beteween the points. " alt="" coords="4167,225,4356,285"/>
 </map>

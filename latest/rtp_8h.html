@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.4"/>
-<title>Paparazzi UAS: sw/airborne/modules/computer_vision/cv/encoding/rtp.h File Reference</title>
+<title>Paparazzi UAS: sw/airborne/modules/computer_vision/lib/encoding/rtp.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('rtp_8h.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -111,70 +111,62 @@ $(document).ready(function(){initNavTree('rtp_8h.html','');});
 <div class="title">rtp.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br/>
-<code>#include &quot;<a class="el" href="computer__vision_2lib_2udp_2socket_8h_source.html">udp/socket.h</a>&quot;</code><br/>
+
+<p>Encodes a vide stream with RTP (JPEG)  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &quot;std.h&quot;</code><br/>
+<code>#include &quot;<a class="el" href="image_8h_source.html">lib/vision/image.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="udp__socket_8h_source.html">udp_socket.h</a>&quot;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for rtp.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rtp_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2computer__vision_2cv_2encoding_2rtp_8h" alt=""/></div>
-<map name="sw_2airborne_2modules_2computer__vision_2cv_2encoding_2rtp_8h" id="sw_2airborne_2modules_2computer__vision_2cv_2encoding_2rtp_8h">
-<area shape="rect" id="node5" href="computer__vision_2lib_2udp_2socket_8h.html" title="udp/socket.h" alt="" coords="99,115,203,143"/></map>
+<div class="center"><img src="rtp_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2computer__vision_2lib_2encoding_2rtp_8h" alt=""/></div>
+<map name="sw_2airborne_2modules_2computer__vision_2lib_2encoding_2rtp_8h" id="sw_2airborne_2modules_2computer__vision_2lib_2encoding_2rtp_8h">
+<area shape="rect" id="node5" href="image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="5,115,136,143"/><area shape="rect" id="node10" href="udp__socket_8h.html" title="Easily create and use UDP sockets. " alt="" coords="211,115,317,143"/></map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rtp_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2computer__vision_2cv_2encoding_2rtp_8hdep" alt=""/></div>
-<map name="sw_2airborne_2modules_2computer__vision_2cv_2encoding_2rtp_8hdep" id="sw_2airborne_2modules_2computer__vision_2cv_2encoding_2rtp_8hdep">
-<area shape="rect" id="node3" href="rtp_8c.html" title="sw/airborne/modules\l/computer_vision/cv\l/encoding/rtp.c" alt="" coords="5,115,160,175"/><area shape="rect" id="node5" href="viewvideo_8c.html" title="Get live images from a RTP/UDP stream and save pictures on internal memory. " alt="" coords="184,123,389,167"/></map>
+<div class="center"><img src="rtp_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2computer__vision_2lib_2encoding_2rtp_8hdep" alt=""/></div>
+<map name="sw_2airborne_2modules_2computer__vision_2lib_2encoding_2rtp_8hdep" id="sw_2airborne_2modules_2computer__vision_2lib_2encoding_2rtp_8hdep">
+<area shape="rect" id="node3" href="bebop__front__camera_8c.html" title="sw/airborne/modules\l/computer_vision/bebop\l_front_camera.c" alt="" coords="5,115,179,175"/><area shape="rect" id="node5" href="rtp_8c.html" title="Encodes a vide stream with RTP (JPEG) " alt="" coords="203,115,357,175"/><area shape="rect" id="node7" href="opticflow__module_8c.html" title="optical&#45;flow based hovering for Parrot AR.Drone 2.0 " alt="" coords="381,115,571,175"/><area shape="rect" id="node9" href="viewvideo_8c.html" title="Get live images from a RTP/UDP stream and save pictures on internal memory. " alt="" coords="595,123,800,167"/></map>
 </div>
 </div>
 <p><a href="rtp_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a34942a3fe624639f5fc337eb5639b815"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtp_8h.html#a34942a3fe624639f5fc337eb5639b815">send_rtp_frame</a> (struct <a class="el" href="structUdpSocket.html">UdpSocket</a> *sock, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *Jpeg, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> JpegLen, int w, int h, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> format_code, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> quality_code, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> has_dri_header, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> delta_t)</td></tr>
-<tr class="separator:a34942a3fe624639f5fc337eb5639b815"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9fc674fb9d8aa57bf4a97370c9705a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtp_8h.html#ac9fc674fb9d8aa57bf4a97370c9705a0">test_rtp_frame</a> (struct <a class="el" href="structUdpSocket.html">UdpSocket</a> *sock)</td></tr>
-<tr class="separator:ac9fc674fb9d8aa57bf4a97370c9705a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab810dc7d46e209624e4edd330edb7bf7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtp_8h.html#ab810dc7d46e209624e4edd330edb7bf7">rtp_frame_send</a> (struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *udp, struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> format_code, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> quality_code, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> has_dri_header, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> delta_t)</td></tr>
+<tr class="memdesc:ab810dc7d46e209624e4edd330edb7bf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RTP frame.  <a href="#ab810dc7d46e209624e4edd330edb7bf7">More...</a><br/></td></tr>
+<tr class="separator:ab810dc7d46e209624e4edd330edb7bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c9aa998b02c9ff5099bb3fc6bbc2b5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtp_8h.html#a6c9aa998b02c9ff5099bb3fc6bbc2b5e">rtp_frame_test</a> (struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *udp)</td></tr>
+<tr class="memdesc:a6c9aa998b02c9ff5099bb3fc6bbc2b5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a test RTP frame.  <a href="#a6c9aa998b02c9ff5099bb3fc6bbc2b5e">More...</a><br/></td></tr>
+<tr class="separator:a6c9aa998b02c9ff5099bb3fc6bbc2b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a34942a3fe624639f5fc337eb5639b815"></a>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Encodes a vide stream with RTP (JPEG) </p>
+
+<p>Definition in file <a class="el" href="rtp_8h_source.html">rtp.h</a>.</p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ab810dc7d46e209624e4edd330edb7bf7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void send_rtp_frame </td>
+          <td class="memname">void rtp_frame_send </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structUdpSocket.html">UdpSocket</a> *&#160;</td>
-          <td class="paramname"><em>sock</em>, </td>
+          <td class="paramtype">struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *&#160;</td>
+          <td class="paramname"><em>udp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>Jpeg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
-          <td class="paramname"><em>JpegLen</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>w</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>h</em>, </td>
+          <td class="paramtype">struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -208,49 +200,83 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rtp_8c_source.html#l00065">65</a> of file <a class="el" href="rtp_8c_source.html">rtp.c</a>.</p>
+<p>Send an RTP frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">*udp</td><td>The UDP connection to send the frame over </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*img</td><td>The image to send over the RTP connection </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">format_code</td><td>0 for YUV422 and 1 for YUV421 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">quality_code</td><td>The JPEG encoding quality </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">has_dri_header</td><td>Whether we have an DRI header or not </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">delta_t</td><td>Time between images (if set to 0 or less it is calculated) </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>References <a class="el" href="usb__msc__hw_8c_source.html#l00078">MAX_PACKET_SIZE</a>, and <a class="el" href="rtp_8c_source.html#l00114">send_rtp_packet()</a>.</p>
+<p>Definition at line <a class="el" href="rtp_8c_source.html#l00097">97</a> of file <a class="el" href="rtp_8c_source.html">rtp.c</a>.</p>
+
+<p>References <a class="el" href="image_8h_source.html#l00050">image_t::buf</a>, <a class="el" href="image_8h_source.html#l00049">image_t::buf_size</a>, <a class="el" href="image_8h_source.html#l00045">image_t::h</a>, <a class="el" href="usb__msc__hw_8c_source.html#l00078">MAX_PACKET_SIZE</a>, <a class="el" href="rtp_8c_source.html#l00158">rtp_packet_send()</a>, and <a class="el" href="image_8h_source.html#l00044">image_t::w</a>.</p>
+
+<p>Referenced by <a class="el" href="bebop__front__camera_8c_source.html#l00081">bebop_front_camera_thread()</a>, <a class="el" href="opticflow__module_8c_source.html#l00212">opticflow_module_calc()</a>, and <a class="el" href="viewvideo_8c_source.html#l00103">viewvideo_function()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rtp_8h_a34942a3fe624639f5fc337eb5639b815_cgraph.png" border="0" usemap="#rtp_8h_a34942a3fe624639f5fc337eb5639b815_cgraph" alt=""/></div>
-<map name="rtp_8h_a34942a3fe624639f5fc337eb5639b815_cgraph" id="rtp_8h_a34942a3fe624639f5fc337eb5639b815_cgraph">
-<area shape="rect" id="node3" href="rtp_8c.html#a43d9b3899b61169822b7ae2238aad481" title="send_rtp_packet" alt="" coords="176,5,304,33"/><area shape="rect" id="node5" href="computer__vision_2lib_2udp_2socket_8c.html#a8af1bc0c52076d2fd6f63b578d392933" title="udp_write" alt="" coords="352,5,435,33"/></map>
+<div class="center"><img src="rtp_8h_ab810dc7d46e209624e4edd330edb7bf7_cgraph.png" border="0" usemap="#rtp_8h_ab810dc7d46e209624e4edd330edb7bf7_cgraph" alt=""/></div>
+<map name="rtp_8h_ab810dc7d46e209624e4edd330edb7bf7_cgraph" id="rtp_8h_ab810dc7d46e209624e4edd330edb7bf7_cgraph">
+<area shape="rect" id="node3" href="rtp_8c.html#a7b661ee336df15cbee60fda1d7263247" title="rtp_packet_send" alt="" coords="176,5,304,33"/><area shape="rect" id="node5" href="udp__socket_8c.html#a2c3da4bd5d683ae6c844649fac79f13d" title="Send a packet from buffer, non&#45;blocking. " alt="" coords="352,5,547,33"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="rtp_8h_ab810dc7d46e209624e4edd330edb7bf7_icgraph.png" border="0" usemap="#rtp_8h_ab810dc7d46e209624e4edd330edb7bf7_icgraph" alt=""/></div>
+<map name="rtp_8h_ab810dc7d46e209624e4edd330edb7bf7_icgraph" id="rtp_8h_ab810dc7d46e209624e4edd330edb7bf7_icgraph">
+<area shape="rect" id="node3" href="bebop__front__camera_8c.html#a63cb60d57fb10579691954003dc4491e" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="181,5,336,49"/><area shape="rect" id="node7" href="opticflow__module_8c.html#a55f848033134662d4f93cd9cbef5acac" title="The main optical flow calculation thread. " alt="" coords="177,71,340,99"/><area shape="rect" id="node11" href="viewvideo_8c.html#a6a9f8aa0c7db5b292f18c8266808fe62" title="viewvideo_function" alt="" coords="188,122,329,150"/><area shape="rect" id="node5" href="bebop__front__camera_8h.html#a179ce25d44bf966f12b86e3a96654161" title="Start with streaming. " alt="" coords="397,5,552,49"/><area shape="rect" id="node9" href="opticflow__module_8h.html#a74f8b561efed21509627b8ebacc72eea" title="Start the optical flow calculation. " alt="" coords="391,71,559,99"/><area shape="rect" id="node13" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. " alt="" coords="420,122,529,150"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="ac9fc674fb9d8aa57bf4a97370c9705a0"></a>
+<a class="anchor" id="a6c9aa998b02c9ff5099bb3fc6bbc2b5e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void test_rtp_frame </td>
+          <td class="memname">void rtp_frame_test </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structUdpSocket.html">UdpSocket</a> *&#160;</td>
-          <td class="paramname"><em>sock</em>)</td><td></td>
+          <td class="paramtype">struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *&#160;</td>
+          <td class="paramname"><em>udp</em>)</td><td></td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rtp_8c_source.html#l00043">43</a> of file <a class="el" href="rtp_8c_source.html">rtp.c</a>.</p>
+<p>Send a test RTP frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">*udp</td><td>The udp connection to send the test frame over </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>References <a class="el" href="rtp_8c_source.html#l00020">JpegScanDataCh2A</a>, <a class="el" href="rtp_8c_source.html#l00029">JpegScanDataCh2B</a>, <a class="el" href="rtp_8c_source.html#l00017">KJpegCh2ScanDataLen</a>, and <a class="el" href="rtp_8c_source.html#l00114">send_rtp_packet()</a>.</p>
+<p>Definition at line <a class="el" href="rtp_8c_source.html#l00067">67</a> of file <a class="el" href="rtp_8c_source.html">rtp.c</a>.</p>
 
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p>References <a class="el" href="rtp_8c_source.html#l00044">JpegScanDataCh2A</a>, <a class="el" href="rtp_8c_source.html#l00053">JpegScanDataCh2B</a>, <a class="el" href="rtp_8c_source.html#l00041">KJpegCh2ScanDataLen</a>, and <a class="el" href="rtp_8c_source.html#l00158">rtp_packet_send()</a>.</p>
+
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rtp_8h_ac9fc674fb9d8aa57bf4a97370c9705a0_cgraph.png" border="0" usemap="#rtp_8h_ac9fc674fb9d8aa57bf4a97370c9705a0_cgraph" alt=""/></div>
-<map name="rtp_8h_ac9fc674fb9d8aa57bf4a97370c9705a0_cgraph" id="rtp_8h_ac9fc674fb9d8aa57bf4a97370c9705a0_cgraph">
-<area shape="rect" id="node3" href="rtp_8c.html#a43d9b3899b61169822b7ae2238aad481" title="send_rtp_packet" alt="" coords="171,5,299,33"/><area shape="rect" id="node5" href="computer__vision_2lib_2udp_2socket_8c.html#a8af1bc0c52076d2fd6f63b578d392933" title="udp_write" alt="" coords="347,5,429,33"/></map>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="rtp_8h_a6c9aa998b02c9ff5099bb3fc6bbc2b5e_cgraph.png" border="0" usemap="#rtp_8h_a6c9aa998b02c9ff5099bb3fc6bbc2b5e_cgraph" alt=""/></div>
+<map name="rtp_8h_a6c9aa998b02c9ff5099bb3fc6bbc2b5e_cgraph" id="rtp_8h_a6c9aa998b02c9ff5099bb3fc6bbc2b5e_cgraph">
+<area shape="rect" id="node3" href="rtp_8c.html#a7b661ee336df15cbee60fda1d7263247" title="rtp_packet_send" alt="" coords="171,5,299,33"/><area shape="rect" id="node5" href="udp__socket_8c.html#a2c3da4bd5d683ae6c844649fac79f13d" title="Send a packet from buffer, non&#45;blocking. " alt="" coords="347,5,541,33"/></map>
 </div>
 </p>
 
@@ -261,8 +287,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="dir_1194254f8733f0da37eff023628827ec.html">cv</a></li><li class="navelem"><a class="el" href="dir_6dac77fb969372e15ccbedd0b322370e.html">encoding</a></li><li class="navelem"><a class="el" href="rtp_8h.html">rtp.h</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:02 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="dir_9adc125244b74c64b95124778e5b932a.html">lib</a></li><li class="navelem"><a class="el" href="dir_7aa332c18e5fa1eaa6661da2f3ea70ae.html">encoding</a></li><li class="navelem"><a class="el" href="rtp_8h.html">rtp.h</a></li>
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:22 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

@@ -15,5 +15,7 @@ var dir_9cd42eb44f1e76fa7c8c7cd9c9a53863 =
     [ "servo_cam_ctrl.h", "servo__cam__ctrl_8h.html", "servo__cam__ctrl_8h" ],
     [ "sim_i2c_cam_ctrl.c", "sim__i2c__cam__ctrl_8c.html", "sim__i2c__cam__ctrl_8c" ],
     [ "uart_cam_ctrl.c", "uart__cam__ctrl_8c.html", "uart__cam__ctrl_8c" ],
-    [ "uart_cam_ctrl.h", "uart__cam__ctrl_8h.html", "uart__cam__ctrl_8h" ]
+    [ "uart_cam_ctrl.h", "uart__cam__ctrl_8h.html", "uart__cam__ctrl_8h" ],
+    [ "video_cam_ctrl.c", "video__cam__ctrl_8c.html", "video__cam__ctrl_8c" ],
+    [ "video_cam_ctrl.h", "video__cam__ctrl_8h.html", "video__cam__ctrl_8h" ]
 ];

@@ -1,27 +1,51 @@
 <map id="get_sys_time_usec" name="get_sys_time_usec">
-<area shape="rect" id="node3" href="$ins__alt__float_8c.html#a3c7bfebd16999823476aada2b31b426e" title="baro_cb" alt="" coords="257,30,329,58"/>
-<area shape="rect" id="node15" href="$hott_8c.html#a64d986dbd4a6b7fa67a60cf0f237d31c" title="hott_periodic_event" alt="" coords="220,81,367,109"/>
-<area shape="rect" id="node19" href="$ins_8h.html#aacc25a507c5c24309fc37b1f806f5d2b" title="Update INS state with GPS measurements. " alt="" coords="232,131,355,159"/>
-<area shape="rect" id="node31" href="$mag__hmc58xx_8h.html#a6e8146871b55ac8c4d4353e3aa95e8cb" title="mag_hmc58xx_module\l_event" alt="" coords="208,182,379,226"/>
-<area shape="rect" id="node33" href="$mavlink_8c.html#a12acc6500a7954c3bdaefdcc0d3255a6" title="mavlink_send_gps_raw_int" alt="" coords="199,249,388,277"/>
-<area shape="rect" id="node37" href="$rotorcraft_2main_8c.html#aff00de1e5817007c0daf0de123dfa1f6" title="on_accel_event" alt="" coords="459,299,579,327"/>
-<area shape="rect" id="node40" href="$rotorcraft_2main_8c.html#a9ad44dfc9d1342835451bd87613fb610" title="on_gyro_event" alt="" coords="461,350,576,378"/>
-<area shape="rect" id="node43" href="$rotorcraft_2main_8c.html#a00877cb9155773120515df456aa457a2" title="on_mag_event" alt="" coords="235,401,352,429"/>
-<area shape="rect" id="node46" href="$pprzlog__transport_8c.html#aa6bed9ed2896a8ee7240e0f61390b71b" title="start_message" alt="" coords="235,451,352,479"/>
-<area shape="rect" id="node50" href="$subsystems_2datalink_2superbitrf_8h.html#a3dba487ecc02fb6e7bdde994032fd795" title="The superbitrf on event call. " alt="" coords="456,531,581,559"/>
-<area shape="rect" id="node54" href="$subsystems_2datalink_2superbitrf_8c.html#a10ae8912122fcdfc6328fabc37833835" title="When we receive a packet this callback is called. " alt="" coords="225,553,361,597"/>
-<area shape="rect" id="node5" href="$ins_8h.html#abf3028c2ada542781b8a5e1eb20c17ce" title="INS initialization. " alt="" coords="485,30,552,58"/>
-<area shape="rect" id="node7" href="$main_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="main_init" alt="" coords="677,5,757,33"/>
-<area shape="rect" id="node11" href="$main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="685,55,749,83"/>
-<area shape="rect" id="node9" href="$rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="876,5,929,33"/>
-<area shape="rect" id="node13" href="$sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="868,55,937,83"/>
-<area shape="rect" id="node17" href="$hott_8h.html#afd6976c45645e710a8036805a913fc4c" title="hott_event" alt="" coords="473,81,564,109"/>
-<area shape="rect" id="node21" href="$rotorcraft_2main_8c.html#ac79b4626d107d8469eef90c7de13c42f" title="on_gps_event" alt="" coords="464,190,573,218"/>
-<area shape="rect" id="node25" href="$main__ap_8c.html#a758f2c78e167cc469945af2ad3b94152" title="on_gps_solution" alt="" coords="456,131,581,159"/>
-<area shape="rect" id="node23" href="$main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="669,325,765,353"/>
-<area shape="rect" id="node27" href="$main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="660,131,775,159"/>
-<area shape="rect" id="node29" href="$sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="835,131,971,159"/>
-<area shape="rect" id="node35" href="$mavlink_8h.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls. " alt="" coords="455,249,583,277"/>
-<area shape="rect" id="node48" href="$pprzlog__transport_8c.html#a301368ea60ea8e1d7e50c0cf02a0a965" title="pprzlog_transport_init" alt="" coords="439,451,599,479"/>
-<area shape="rect" id="node52" href="$superbitrf__rc_8c.html#a760dbd4fa3f62cc43524fc420c2a9e5f" title="RC event function with handler callback. " alt="" coords="648,523,787,567"/>
+<area shape="rect" id="node3" href="$ahrs__aligner_8h.html#aa8c5b5a4ce38e0dd4e1234bad8adf92d" title="ahrs_aligner_run" alt="" coords="229,5,357,33"/>
+<area shape="rect" id="node5" href="$ahrs__gx3_8h.html#afbfe8456fbba20baed2c37ceff265aae" title="ahrs_gx3_publish_imu" alt="" coords="212,55,375,83"/>
+<area shape="rect" id="node7" href="$imu__aspirin2_8h.html#adf18f3696c2481d509396f40839bcf6b" title="aspirin2_subsystem\l_event" alt="" coords="219,106,368,150"/>
+<area shape="rect" id="node9" href="$gps__sim__nps_8h.html#a1acb1b66a5b2d172cff383fdb9b6de4d" title="gps_feed_value" alt="" coords="233,173,353,201"/>
+<area shape="rect" id="node11" href="$gps__mtk_8c.html#a0323467da4b8603fecd6110b401c5a7d" title="gps_mtk_msg" alt="" coords="237,223,349,251"/>
+<area shape="rect" id="node13" href="$gps__nmea_8h.html#abbfb5c004aa2bfaaafc87015e6557514" title="gps_nmea_msg" alt="" coords="232,274,355,302"/>
+<area shape="rect" id="node15" href="$gps__udp_8h.html#afd0dde7def0fab152cf70af56a052e29" title="gps_parse" alt="" coords="249,325,337,353"/>
+<area shape="rect" id="node17" href="$gps__piksi_8c.html#ab873aa70bd8af4c37c8dbc07d13ea1de" title="gps_piksi_publish" alt="" coords="228,375,359,403"/>
+<area shape="rect" id="node19" href="$gps__sim__hitl_8h.html#a550f99981aff6aed9736f6e16f6d9f02" title="gps_sim_hitl_event" alt="" coords="221,426,365,454"/>
+<area shape="rect" id="node21" href="$gps__sim_8h.html#a9b24214fcb576b1bd7832dccaaa3f430" title="gps_sim_publish" alt="" coords="231,477,356,505"/>
+<area shape="rect" id="node23" href="$gps__sirf_8h.html#ae52d53007754c0328f91ffd33ee9c814" title="gps_sirf_msg" alt="" coords="240,527,347,555"/>
+<area shape="rect" id="node25" href="$gps__skytraq_8h.html#a9480384f1c4dd5c8ff24fb7989dbe194" title="gps_skytraq_msg" alt="" coords="227,578,360,606"/>
+<area shape="rect" id="node27" href="$gps__ubx_8h.html#ab3be7fdb9eae93ba80f43b848cdb7416" title="gps_ubx_msg" alt="" coords="239,629,348,657"/>
+<area shape="rect" id="node29" href="$ins__xsens_8c.html#ac5da428408b44b6b22e510c36f7f2bc7" title="handle_ins_msg" alt="" coords="231,679,356,707"/>
+<area shape="rect" id="node31" href="$hott_8c.html#a64d986dbd4a6b7fa67a60cf0f237d31c" title="hott_periodic_event" alt="" coords="220,730,367,758"/>
+<area shape="rect" id="node33" href="$imu__apogee_8h.html#a60395d55d1c3bbb3773a3bc79f210884" title="imu_apogee_event" alt="" coords="221,781,365,809"/>
+<area shape="rect" id="node35" href="$imu__aspirin__2__spi_8h.html#a1d1263b727aeee52bd78b9d3ec3b40bd" title="imu_aspirin2_event" alt="" coords="220,831,367,859"/>
+<area shape="rect" id="node37" href="$imu__aspirin_8h.html#aa229c37c4339ad08d83c4d72f30a1fd5" title="imu_aspirin_event" alt="" coords="224,882,363,910"/>
+<area shape="rect" id="node39" href="$imu__aspirin__i2c_8h.html#a6369e8522e39224b5076e7837c0032f2" title="imu_aspirin_i2c_event" alt="" coords="212,933,375,961"/>
+<area shape="rect" id="node41" href="$imu__b2_8h.html#ade46fe011019a8bae5cb916f34c03f9b" title="imu_b2_event" alt="" coords="237,983,349,1011"/>
+<area shape="rect" id="node43" href="$imu__bebop_8h.html#abf59a3c40b631f23435da34574ce0197" title="Handle all the events of the Navstik IMU components. " alt="" coords="225,1034,361,1062"/>
+<area shape="rect" id="node45" href="$imu__drotek__10dof__v2_8h.html#a740371769417e71440eda6835e29a667" title="imu_drotek2_event" alt="" coords="221,1085,365,1113"/>
+<area shape="rect" id="node47" href="$imu__gl1_8h.html#a08db0d7b92f2f359a5a2bc939a197a5f" title="imu_gl1_i2c_event" alt="" coords="224,1135,363,1163"/>
+<area shape="rect" id="node49" href="$imu__hbmini_8h.html#a5b9ae3abc04f091d942553dc17b589c8" title="imu_hbmini_event" alt="" coords="224,1186,363,1214"/>
+<area shape="rect" id="node51" href="$imu__krooz__memsic_8h.html#ac3e0837f6fda31fca37cf6d6cd1e39dd" title="imu_krooz_event" alt="" coords="228,1237,359,1265"/>
+<area shape="rect" id="node53" href="$imu__mpu9250__i2c_8c.html#af140d4e8a775be026073e67fd3080aa2" title="imu_mpu9250_event" alt="" coords="215,1287,372,1315"/>
+<area shape="rect" id="node55" href="$imu__mpu6000__hmc5883_8h.html#ae9d618a59cee7e4c02666223bc3bf07e" title="imu_mpu_hmc_event" alt="" coords="213,1338,373,1366"/>
+<area shape="rect" id="node57" href="$imu__mpu60x0__i2c_8h.html#ad17d2b5d68bee1716b36c12a01cb1b31" title="imu_mpu_i2c_event" alt="" coords="219,1389,368,1417"/>
+<area shape="rect" id="node59" href="$imu__mpu6000_8h.html#adeded9c36c67ea0bb8d9711c9992dea0" title="imu_mpu_spi_event" alt="" coords="219,1439,368,1467"/>
+<area shape="rect" id="node61" href="$imu__navgo_8h.html#a090687272e402bae057eb68e39e6218f" title="imu_navgo_event" alt="" coords="227,1490,360,1518"/>
+<area shape="rect" id="node63" href="$imu__navstik_8h.html#a2ddc38f9314a98d94376d14851bb0bcd" title="Handle all the events of the Navstik IMU components. " alt="" coords="223,1541,364,1569"/>
+<area shape="rect" id="node65" href="$imu__nps_8h.html#ab288e8eb3d91d5c0e27e6f34cbe5e5ac" title="imu_nps_event" alt="" coords="235,1591,352,1619"/>
+<area shape="rect" id="node67" href="$imu__krooz_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="optional. " alt="" coords="243,1642,344,1670"/>
+<area shape="rect" id="node69" href="$imu__ppzuav_8h.html#a51ff6c245630bbf2701dc550ce24ef23" title="imu_ppzuav_event" alt="" coords="223,1693,364,1721"/>
+<area shape="rect" id="node71" href="$imu__px4fmu_8h.html#af65bf55913e04b2d90bdffb1c94c169c" title="imu_px4fmu_event" alt="" coords="221,1743,365,1771"/>
+<area shape="rect" id="node73" href="$imu__um6_8h.html#a799b9b7f8329b78cf9ca132a79abee52" title="imu_um6_publish" alt="" coords="227,1794,360,1822"/>
+<area shape="rect" id="node75" href="$imu__umarim_8h.html#a01860ce0d2bbd0db6c993e609c0745de" title="imu_umarim_event" alt="" coords="220,1845,367,1873"/>
+<area shape="rect" id="node77" href="$ins__alt__float_8h.html#afb6a5cd07b6574dfb93f023aecfcec5d" title="ins_alt_float_update_baro" alt="" coords="200,1895,387,1923"/>
+<area shape="rect" id="node79" href="$ins__alt__float_8c.html#ac5b472605ca2035825b6ccca1c4d8c5e" title="ins_alt_float_update_gps" alt="" coords="204,1946,383,1974"/>
+<area shape="rect" id="node81" href="$ins__vectornav_8h.html#a5e1e0a3cd2eead4dc89bec75e33e5618" title="Propagate the received states into the vehicle state machine. " alt="" coords="203,1997,384,2025"/>
+<area shape="rect" id="node83" href="$mag__hmc58xx_8h.html#a6e8146871b55ac8c4d4353e3aa95e8cb" title="mag_hmc58xx_module\l_event" alt="" coords="208,2047,379,2091"/>
+<area shape="rect" id="node85" href="$rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="267,2114,320,2142"/>
+<area shape="rect" id="node87" href="$mavlink_8c.html#a12acc6500a7954c3bdaefdcc0d3255a6" title="mavlink_send_gps_raw_int" alt="" coords="199,2165,388,2193"/>
+<area shape="rect" id="node89" href="$navdata_8c.html#ad05e4e99b6d26c643c0841c315d292a4" title="navdata_publish_imu" alt="" coords="215,2215,372,2243"/>
+<area shape="rect" id="node91" href="$opticflow__module_8h.html#abf53d072984591ae6710a65682d6bedb" title="Update the optical flow state for the calculation thread and update the stabilization loops with the ..." alt="" coords="213,2266,373,2294"/>
+<area shape="rect" id="node93" href="$gps__datalink_8h.html#a52917dbc30edfd56ab9b248b35ea79d2" title="Parse the REMOTE_GPS datalink packet. " alt="" coords="221,2317,365,2345"/>
+<area shape="rect" id="node95" href="$pprzlog__transport_8c.html#aa6bed9ed2896a8ee7240e0f61390b71b" title="start_message" alt="" coords="235,2367,352,2395"/>
+<area shape="rect" id="node97" href="$subsystems_2datalink_2superbitrf_8h.html#a3dba487ecc02fb6e7bdde994032fd795" title="The superbitrf on event call. " alt="" coords="439,2447,564,2475"/>
+<area shape="rect" id="node99" href="$subsystems_2datalink_2superbitrf_8c.html#a10ae8912122fcdfc6328fabc37833835" title="When we receive a packet this callback is called. " alt="" coords="225,2469,361,2513"/>
 </map>

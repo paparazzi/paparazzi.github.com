@@ -1,6 +1,9 @@
 var stabilization__attitude__ref__quat__int_8h =
 [
-    [ "FloatRefModel", "structFloatRefModel.html", "structFloatRefModel" ],
+    [ "FloatRefModel", "stabilization__attitude__ref__quat__int_8h.html#structFloatRefModel", [
+      [ "omega", "stabilization__attitude__ref__quat__int_8h.html#a1b8c9c1d343788025150fb25ab3caa65", null ],
+      [ "zeta", "stabilization__attitude__ref__quat__int_8h.html#a0c13bd2a725529bbe9f0d1f0b3f318ce", null ]
+    ] ],
     [ "stabilization_attitude_ref_quat_int_SetOmegaP", "stabilization__attitude__ref__quat__int_8h.html#af70b0939f7dc925926d105f6814c8950", null ],
     [ "stabilization_attitude_ref_quat_int_SetOmegaQ", "stabilization__attitude__ref__quat__int_8h.html#a44357f4361f48b4d421e75ce6b7fe7f8", null ],
     [ "stabilization_attitude_ref_quat_int_SetOmegaR", "stabilization__attitude__ref__quat__int_8h.html#a60ee24663c9a37266d667035242eb81b", null ],

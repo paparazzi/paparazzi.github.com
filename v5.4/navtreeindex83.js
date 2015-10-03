@@ -1,5 +1,7 @@
 var NAVTREEINDEX83 =
 {
+"structTLineCoding.html#ae8071baa61a3b991b509b52cfd2dc64f":[9,0,276,1],
+"structTypeKalman.html":[9,0,279],
 "structTypeKalman.html#a2ef29d05e829ab561c0bb8210c466d12":[9,0,279,3],
 "structTypeKalman.html#a728bbd37e0548fa5c5be0d02150bd0ff":[9,0,279,0],
 "structTypeKalman.html#a7f39810eac8af4f293c8936da4737d81":[9,0,279,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX83 =
 "struct__navdata__option__t.html#a10207c8f5ea2f6a6039badd40d2e41b9":[9,0,9,1],
 "struct__navdata__option__t.html#aa6aea9292dd80360cb09ba9c74fcfb20":[9,0,9,0],
 "struct__navdata__option__t.html#af6f4b8bc8159810c9228512f062f37d2":[9,0,9,2],
-"struct__navdata__phys__measures__t.html":[9,0,10],
-"struct__navdata__phys__measures__t.html#a0270ae96ff26a6cd1feee93abf60360a":[9,0,10,7],
-"struct__navdata__phys__measures__t.html#a177dac731b83756caf0e62c594002494":[9,0,10,8]
+"struct__navdata__phys__measures__t.html":[9,0,10]
 };

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('functions_0x66.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -145,151 +145,199 @@ $(document).ready(function(){initNavTree('functions_0x66.html','');});
 <div class="textblock">Here is a list of all struct and union fields with links to the structures/unions they belong to:</div>
 
 <h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
-<li>fcr
-: <a class="el" href="structuartRegs__t.html#a11a9ed56095f7bc1d83169b9c66ce63a">uartRegs_t</a>
+<li>f
+: <a class="el" href="cv__georeference_8h.html#abcc54571110a00f2b11ec468660e3d3f">camera_frame_t</a>
+</li>
+<li>fast9_adaptive
+: <a class="el" href="opticflow__calculator_8h.html#aa9ff189c069d7a192a8a31d3ca0d95e6">opticflow_t</a>
+</li>
+<li>fast9_min_distance
+: <a class="el" href="opticflow__calculator_8h.html#a1967c8fbb6d7220052ba19a3859e5d9f">opticflow_t</a>
+</li>
+<li>fast9_threshold
+: <a class="el" href="opticflow__calculator_8h.html#ab85fa885515cb68118e90cc57d846708">opticflow_t</a>
 </li>
 <li>fd
-: <a class="el" href="structSerialPort.html#ac4b61bc4a5f65550b9f94c2efdd07048">SerialPort</a>
-, <a class="el" href="structvid__struct.html#ad4462a97d93e7a0052a8db01985dd275">vid_struct</a>
+: <a class="el" href="serial__port_8h.html#ac4b61bc4a5f65550b9f94c2efdd07048">SerialPort</a>
+, <a class="el" href="navdata_8h.html#a96d2b033c25b7cbf3c88e1e9046063ed">navdata_t</a>
+, <a class="el" href="v4l2_8h.html#a28c87539b5eb24b4e9c162ac5703bf49">v4l2_device</a>
 </li>
 <li>fe_err
-: <a class="el" href="structuart__periph.html#ab5a088408a0e4d3af31921e2eb1a7811">uart_periph</a>
+: <a class="el" href="uart_8h.html#ab5a088408a0e4d3af31921e2eb1a7811">uart_periph</a>
 </li>
 <li>feed
-: <a class="el" href="structscbRegs__t.html#ad094dd6d535108807dcecb4758f74d5e">scbRegs_t</a>
-, <a class="el" href="structwdRegs__t.html#ae8830a4a24b1b9ff9ff7ef084f2d24e4">wdRegs_t</a>
+: <a class="el" href="lpcWD_8h.html#ae8830a4a24b1b9ff9ff7ef084f2d24e4">wdRegs_t</a>
 </li>
 <li>fid
-: <a class="el" href="structESC32__response.html#af7cd979db30d85297d2db75de890013f">ESC32_response</a>
+: <a class="el" href="actuators__esc32_8h.html#af7cd979db30d85297d2db75de890013f">ESC32_response</a>
 </li>
 <li>filt_data
-: <a class="el" href="structLis302dlConfig.html#a522a6b4bac0e334b30b6c689469d6345">Lis302dlConfig</a>
+: <a class="el" href="lis302dl_8h.html#a522a6b4bac0e334b30b6c689469d6345">Lis302dlConfig</a>
 </li>
 <li>filter
-: <a class="el" href="structAoa__Adc.html#a87aa44ee846084fa0343fc9069f35222">Aoa_Adc</a>
+: <a class="el" href="blob__finder_8h.html#a1a873f29b5c7257ae170a774c57927f6">image_label_t</a>
+, <a class="el" href="cv__georeference_8c.html#a52f3d97872fdaf7a8a8c521ddefd7c9c">georeference_t</a>
+, <a class="el" href="aoa__adc_8h.html#a87aa44ee846084fa0343fc9069f35222">Aoa_Adc</a>
+, <a class="el" href="aoa__pwm_8h.html#afbad26a2eba59ddacf1969475a035cee">Aoa_Pwm</a>
+</li>
+<li>filtered_rate
+: <a class="el" href="stabilization__attitude__quat__indi_8h.html#afa537405d188900152cb66a5582ac9be">IndiVariables</a>
+</li>
+<li>filtered_rate_2deriv
+: <a class="el" href="stabilization__attitude__quat__indi_8h.html#a84a83ee68a85a5ef7b3ad4da2a9dce43">IndiVariables</a>
+</li>
+<li>filtered_rate_deriv
+: <a class="el" href="stabilization__attitude__quat__indi_8h.html#aa6f6f90638659aeef68ee2d1be0c32f7">IndiVariables</a>
+</li>
+<li>filters
+: <a class="el" href="video__device_8h.html#a44bf9ccc04ee62fd4808222ee1f467c0">video_config_t</a>
 </li>
 <li>fiqStatus
-: <a class="el" href="structvicRegs__t.html#a00be4749c983910ad16ab78f8f9283b8">vicRegs_t</a>
+: <a class="el" href="lpcVIC_8h.html#a00be4749c983910ad16ab78f8f9283b8">vicRegs_t</a>
+</li>
+<li>fit_error
+: <a class="el" href="linear__flow__fit_8h.html#ad12e4852190617513c8e859456f45494">linear_flow_fit_info</a>
 </li>
 <li>fix
-: <a class="el" href="structVi__gps__info.html#a26e03024ed8fa0fb35399e3f8ad85def">Vi_gps_info</a>
-, <a class="el" href="structGpsState.html#afeffb02bdd18d27a87e96bb77175168f">GpsState</a>
+: <a class="el" href="vi_8h.html#a26e03024ed8fa0fb35399e3f8ad85def">Vi_gps_info</a>
+, <a class="el" href="gps_8h.html#afeffb02bdd18d27a87e96bb77175168f">GpsState</a>
 </li>
 <li>flag
-: <a class="el" href="structscbRegs__t.html#a170421c99421ce0a8b575606e72c19c4">scbRegs_t</a>
-, <a class="el" href="structspiRegs__t.html#a2d96b95a25648c3816afcd8d36bd9935">spiRegs_t</a>
+: <a class="el" href="lpcSPI_8h.html#a2d96b95a25648c3816afcd8d36bd9935">spiRegs_t</a>
 </li>
 <li>flag_echo_ini
-: <a class="el" href="structmeasures__t.html#ae9bcd5f58536745ff86446ab174769c7">measures_t</a>
+: <a class="el" href="navdata_8h.html#a43c09c487dbdaaa339d01083dfc13e3d">navdata_measure_t</a>
 </li>
 <li>flags
-: <a class="el" href="structi2c__msg.html#a4b3bc1a36147fedfbdf9a15cc6ae88d9">i2c_msg</a>
-, <a class="el" href="structSVinfo.html#ae6f83b7c4582aa1b72911052783e7338">SVinfo</a>
+: <a class="el" href="i2c__smbus_8h.html#a4b3bc1a36147fedfbdf9a15cc6ae88d9">i2c_msg</a>
+, <a class="el" href="gps_8h.html#ae6f83b7c4582aa1b72911052783e7338">SVinfo</a>
+, <a class="el" href="waypoints_8h.html#a8614ebf6aa2b158731ca9ec8b9ebaa79">Waypoint</a>
 </li>
 <li>flash_addr
-: <a class="el" href="structSST25VFxxxx.html#a33a81c0a5e3f5f30f49777009c364a54">SST25VFxxxx</a>
+: <a class="el" href="sst25vfxxxx_8h.html#a33a81c0a5e3f5f30f49777009c364a54">SST25VFxxxx</a>
 </li>
 <li>flight_angle
-: <a class="el" href="structZamboniSurvey.html#a66af55545f5153248f1df199e88b3af2">ZamboniSurvey</a>
+: <a class="el" href="nav__survey__zamboni_8h.html#a66af55545f5153248f1df199e88b3af2">ZamboniSurvey</a>
 </li>
 <li>Float
-: <a class="el" href="unionVN100__Param.html#a5e6cc11d8fc6e005816b5e0851a32231">VN100_Param</a>
+: <a class="el" href="VN100_8h.html#a5e6cc11d8fc6e005816b5e0851a32231">VN100_Param</a>
 </li>
 <li>flow_comp_m_x
-: <a class="el" href="structmavlink__optical__flow.html#a852d6712215d6177fd30a9d36057491a">mavlink_optical_flow</a>
+: <a class="el" href="px4flow_8h.html#a852d6712215d6177fd30a9d36057491a">mavlink_optical_flow</a>
 </li>
 <li>flow_comp_m_y
-: <a class="el" href="structmavlink__optical__flow.html#a96c43be0f2fb564c0a3e31dba33073ef">mavlink_optical_flow</a>
+: <a class="el" href="px4flow_8h.html#a96c43be0f2fb564c0a3e31dba33073ef">mavlink_optical_flow</a>
+</li>
+<li>flow_der_x
+: <a class="el" href="inter__thread__data_8h.html#a09d18abe45973e3e7628565a3f45ec5a">opticflow_result_t</a>
+</li>
+<li>flow_der_y
+: <a class="el" href="inter__thread__data_8h.html#ae83bb13aee0115441e2d80356f9eb376">opticflow_result_t</a>
 </li>
 <li>flow_x
-: <a class="el" href="structmavlink__optical__flow.html#a6f04b772401e740033eaefda14e3a16a">mavlink_optical_flow</a>
+: <a class="el" href="image_8h.html#aab8ebddbe3203e4c019f47339e5e305c">flow_t</a>
+, <a class="el" href="inter__thread__data_8h.html#a91ddbc79d7e21f92d873485f8aa01f01">opticflow_result_t</a>
+, <a class="el" href="px4flow_8h.html#a6f04b772401e740033eaefda14e3a16a">mavlink_optical_flow</a>
 </li>
 <li>flow_y
-: <a class="el" href="structmavlink__optical__flow.html#a46cf0da0342aa761af38a4c05ab141d2">mavlink_optical_flow</a>
+: <a class="el" href="image_8h.html#a6c6d82d5c21a9ae8260e721aa00064d6">flow_t</a>
+, <a class="el" href="inter__thread__data_8h.html#ad6c8918293af2439402cd642dfb616fd">opticflow_result_t</a>
+, <a class="el" href="px4flow_8h.html#a46cf0da0342aa761af38a4c05ab141d2">mavlink_optical_flow</a>
 </li>
 <li>fly_from
-: <a class="el" href="structNavSpiral.html#ae7f897b4d4c09884e0719bb8c1490e65">NavSpiral</a>
+: <a class="el" href="nav__spiral_8h.html#ae7f897b4d4c09884e0719bb8c1490e65">NavSpiral</a>
+</li>
+<li>focus_of_expansion_x
+: <a class="el" href="linear__flow__fit_8h.html#a400a698c378e817a82ec4f9ea781aa79">linear_flow_fit_info</a>
+</li>
+<li>focus_of_expansion_y
+: <a class="el" href="linear__flow__fit_8h.html#ac6c693cb960e25ed823b5fba184d6537">linear_flow_fit_info</a>
+</li>
+<li>format
+: <a class="el" href="video__device_8h.html#a4aec9ee3d72122a284df613b9f2bf33d">video_config_t</a>
+</li>
+<li>fps
+: <a class="el" href="bebop__front__camera_8h.html#a20b2c30839e6e5394be3e64de0919603">bebopfrontcamera_t</a>
+, <a class="el" href="video__thread_8h.html#a29b5eb30ab7ab4614498e82bdfc88fad">video_thread_t</a>
+, <a class="el" href="inter__thread__data_8h.html#a7ec8537092c7faeaee475bc0203e032b">opticflow_result_t</a>
 </li>
 <li>frame_available
-: <a class="el" href="structSbus.html#a63fbcad6af5802cba6dbe3977cb6a4d0">Sbus</a>
+: <a class="el" href="sbus__common_8h.html#a63fbcad6af5802cba6dbe3977cb6a4d0">Sbus</a>
 </li>
 <li>frame_cpt
-: <a class="el" href="structRadioControl.html#ab19a0ca633267915e1e0ca584d31ef88">RadioControl</a>
+: <a class="el" href="radio__control_8h.html#ab19a0ca633267915e1e0ca584d31ef88">RadioControl</a>
 </li>
 <li>frame_rate
-: <a class="el" href="structRadioControl.html#aa6eb017ab6023648e26cedd9de0c6c8c">RadioControl</a>
+: <a class="el" href="radio__control_8h.html#aa6eb017ab6023648e26cedd9de0c6c8c">RadioControl</a>
 </li>
 <li>FrameCnt
-: <a class="el" href="structSpektrumStateStruct.html#a0f1bca7c6c4c57019ffea65b382a25de">SpektrumStateStruct</a>
+: <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a0f1bca7c6c4c57019ffea65b382a25de">SpektrumStateStruct</a>
+</li>
+<li>framing_error
+: <a class="el" href="vn200__serial_8h.html#a0a1a7bf6fd61d1537542203fdcea75fd">VNPacket</a>
+</li>
+<li>freq
+: <a class="el" href="ahrs__gx3_8h.html#ae2dfc295accb8a37c2cd90551d3cadf6">AhrsGX3</a>
+</li>
+<li>fresh
+: <a class="el" href="stereocam_8h.html#a61a6180449d113c562038fbc76258867">uint8array</a>
 </li>
 <li>from
-: <a class="el" href="struct__mission__segment.html#abe7a382f68f62d5e93110e7273408e1b">_mission_segment</a>
-</li>
-<li>from_ap
-: <a class="el" href="structlink__mcu__msg.html#a25fa2f904ea4f65116b263dca709a1d8">link_mcu_msg</a>
-</li>
-<li>from_f
-: <a class="el" href="struct__mission__segment.html#a0f390a69bfaa04b9590ce0cea9fbf58c">_mission_segment</a>
-</li>
-<li>from_fbw
-: <a class="el" href="structlink__mcu__msg.html#ae9e530355d58a057acaccb22f6c3ee1e">link_mcu_msg</a>
-</li>
-<li>from_i
-: <a class="el" href="struct__mission__segment.html#a5e64c4703b9983f03b4a3e10e8eb90d5">_mission_segment</a>
+: <a class="el" href="mission__common_8h.html#a663514d5dd081904e1c72aa71247c3f2">_mission_segment</a>
 </li>
 <li>fs_sel
-: <a class="el" href="structItg3200Config.html#ad6e742aab5b3d2ba2e6cbbaea90e0024">Itg3200Config</a>
+: <a class="el" href="itg3200_8h.html#ad6e742aab5b3d2ba2e6cbbaea90e0024">Itg3200Config</a>
 </li>
 <li>fuel_ml_H
-: <a class="el" href="structHOTT__GAM__MSG.html#a8c1b379a0e17913a1f7711d9166535ee">HOTT_GAM_MSG</a>
+: <a class="el" href="hott__gam_8h.html#a8c1b379a0e17913a1f7711d9166535ee">HOTT_GAM_MSG</a>
 </li>
 <li>fuel_ml_L
-: <a class="el" href="structHOTT__GAM__MSG.html#a0f4b8ba0490107c7a4151b5fd54bc153">HOTT_GAM_MSG</a>
+: <a class="el" href="hott__gam_8h.html#a0f4b8ba0490107c7a4151b5fd54bc153">HOTT_GAM_MSG</a>
 </li>
 <li>fuel_procent
-: <a class="el" href="structHOTT__GAM__MSG.html#a959d20f8eeacd06929093f508df8839b">HOTT_GAM_MSG</a>
+: <a class="el" href="hott__gam_8h.html#a959d20f8eeacd06929093f508df8839b">HOTT_GAM_MSG</a>
 </li>
 <li>full_res
-: <a class="el" href="structAdxl345Config.html#aae40365094e01152c5638a51caa2c52e">Adxl345Config</a>
+: <a class="el" href="adxl345_8h.html#aae40365094e01152c5638a51caa2c52e">Adxl345Config</a>
 </li>
 <li>full_scale
-: <a class="el" href="structL3gd20Config.html#ac7313d1c10e17e2f2bf6e6fc36bb562d">L3gd20Config</a>
+: <a class="el" href="l3gd20_8h.html#ac7313d1c10e17e2f2bf6e6fc36bb562d">L3gd20Config</a>
 </li>
 <li>fx
-: <a class="el" href="structVECTOR.html#a8e735ff9578a0cfb24ce83935e0128cb">VECTOR</a>
+: <a class="el" href="point_8c.html#a8e735ff9578a0cfb24ce83935e0128cb">VECTOR</a>
 </li>
 <li>fx1
-: <a class="el" href="structMATRIX.html#a248961470ca16203383c44096a3d9ea4">MATRIX</a>
+: <a class="el" href="point_8c.html#a248961470ca16203383c44096a3d9ea4">MATRIX</a>
 </li>
 <li>fx2
-: <a class="el" href="structMATRIX.html#ada5936d0bdc850493f79abb3fd2ea360">MATRIX</a>
+: <a class="el" href="point_8c.html#ada5936d0bdc850493f79abb3fd2ea360">MATRIX</a>
 </li>
 <li>fx3
-: <a class="el" href="structMATRIX.html#a224a62a77023da329f51213bf6acfc31">MATRIX</a>
+: <a class="el" href="point_8c.html#a224a62a77023da329f51213bf6acfc31">MATRIX</a>
 </li>
 <li>fy
-: <a class="el" href="structVECTOR.html#abf0b5d78cfcb2b66cb05cfc74f18e7ac">VECTOR</a>
+: <a class="el" href="point_8c.html#abf0b5d78cfcb2b66cb05cfc74f18e7ac">VECTOR</a>
 </li>
 <li>fy1
-: <a class="el" href="structMATRIX.html#a654c9b1a254603fd1219b71de281d17f">MATRIX</a>
+: <a class="el" href="point_8c.html#a654c9b1a254603fd1219b71de281d17f">MATRIX</a>
 </li>
 <li>fy2
-: <a class="el" href="structMATRIX.html#a4806c71a150f9288af0fef5978bd3f87">MATRIX</a>
+: <a class="el" href="point_8c.html#a4806c71a150f9288af0fef5978bd3f87">MATRIX</a>
 </li>
 <li>fy3
-: <a class="el" href="structMATRIX.html#a78d01f95dd801e0e6844b1c75da953d3">MATRIX</a>
+: <a class="el" href="point_8c.html#a78d01f95dd801e0e6844b1c75da953d3">MATRIX</a>
 </li>
 <li>fz
-: <a class="el" href="structVECTOR.html#af2cd1aafbb7c19268a9715b5aa72dddb">VECTOR</a>
+: <a class="el" href="point_8c.html#af2cd1aafbb7c19268a9715b5aa72dddb">VECTOR</a>
 </li>
 <li>fz1
-: <a class="el" href="structMATRIX.html#a0c718c9636453759c23cff7592af712b">MATRIX</a>
+: <a class="el" href="point_8c.html#a0c718c9636453759c23cff7592af712b">MATRIX</a>
 </li>
 <li>fz2
-: <a class="el" href="structMATRIX.html#a48b502d58a61ced8e9a7c150da79d788">MATRIX</a>
+: <a class="el" href="point_8c.html#a48b502d58a61ced8e9a7c150da79d788">MATRIX</a>
 </li>
 <li>fz3
-: <a class="el" href="structMATRIX.html#a99e2572b9e06d8a2877e921c15ecdae5">MATRIX</a>
+: <a class="el" href="point_8c.html#a99e2572b9e06d8a2877e921c15ecdae5">MATRIX</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -297,7 +345,7 @@ $(document).ready(function(){initNavTree('functions_0x66.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:38 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:46 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

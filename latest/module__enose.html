@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('module__enose.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -105,7 +105,12 @@ $(document).ready(function(){initNavTree('module__enose.html','');});
 <div class="contents">
 <div class="textblock"><p>Module XML file: <code>enose.xml</code> </p>
 <p>No detailed description...</p>
-<h1><a class="anchor" id="functions"></a>
+<h1><a class="anchor" id="module_load_example__enose"></a>
+Example for airframe file</h1>
+<div class="fragment"><div class="line">&lt;modules&gt;</div>
+<div class="line">  &lt;load name=<span class="stringliteral">&quot;enose.xml&quot;</span>/&gt;</div>
+<div class="line">&lt;/modules&gt;</div>
+</div><!-- fragment --> <h1><a class="anchor" id="functions"></a>
 Module functions</h1>
 <h2><a class="anchor" id="init_functions"></a>
 Init Functions</h2>
@@ -160,16 +165,16 @@ Raw enose.xml file:</h2>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;Chemical Enose sensor&lt;/description&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
-<div class="line">  &lt;<a class="code" href="stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963">header</a>&gt;</div>
+<div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;enose.h&quot;</span>/&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;chemo_detect.h&quot;</span>/&gt;</div>
-<div class="line">  &lt;/<a class="code" href="stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963">header</a>&gt;</div>
+<div class="line">  &lt;/header&gt;</div>
 <div class="line">  &lt;settings&gt;</div>
 <div class="line">    &lt;dl_settings NAME=<span class="stringliteral">&quot;control&quot;</span>&gt;</div>
 <div class="line">      &lt;dl_settings name=<span class="stringliteral">&quot;enose&quot;</span>&gt;</div>
-<div class="line">        &lt;dl_setting MAX=<span class="stringliteral">&quot;5000&quot;</span> <a class="code" href="computer__vision_2lib_2udp_2socket_8c.html#a526c8d25063e59c39cb18b3893b265c5">MIN</a>=<span class="stringliteral">&quot;0&quot;</span> STEP=<span class="stringliteral">&quot;1&quot;</span> VAR=<span class="stringliteral">&quot;enose_val[0]&quot;</span> module=<span class="stringliteral">&quot;enose/enose&quot;</span> shortname=<span class="stringliteral">&quot;val0&quot;</span> handler=<span class="stringliteral">&quot;DecreaseVal0&quot;</span>/&gt;</div>
-<div class="line">        &lt;dl_setting MAX=<span class="stringliteral">&quot;5000&quot;</span> <a class="code" href="computer__vision_2lib_2udp_2socket_8c.html#a526c8d25063e59c39cb18b3893b265c5">MIN</a>=<span class="stringliteral">&quot;0&quot;</span> STEP=<span class="stringliteral">&quot;1&quot;</span> VAR=<span class="stringliteral">&quot;enose_val[1]&quot;</span> module=<span class="stringliteral">&quot;enose/enose&quot;</span> shortname=<span class="stringliteral">&quot;val1&quot;</span> handler=<span class="stringliteral">&quot;DecreaseVal1&quot;</span>/&gt;</div>
-<div class="line">        &lt;dl_setting MAX=<span class="stringliteral">&quot;5000&quot;</span> <a class="code" href="computer__vision_2lib_2udp_2socket_8c.html#a526c8d25063e59c39cb18b3893b265c5">MIN</a>=<span class="stringliteral">&quot;0&quot;</span> STEP=<span class="stringliteral">&quot;1&quot;</span> VAR=<span class="stringliteral">&quot;enose_val[2]&quot;</span> module=<span class="stringliteral">&quot;enose/enose&quot;</span> shortname=<span class="stringliteral">&quot;val2&quot;</span> handler=<span class="stringliteral">&quot;DecreaseVal2&quot;</span>/&gt;</div>
+<div class="line">        &lt;dl_setting MAX=<span class="stringliteral">&quot;5000&quot;</span> MIN=<span class="stringliteral">&quot;0&quot;</span> STEP=<span class="stringliteral">&quot;1&quot;</span> VAR=<span class="stringliteral">&quot;enose_val[0]&quot;</span> module=<span class="stringliteral">&quot;enose/enose&quot;</span> shortname=<span class="stringliteral">&quot;val0&quot;</span> handler=<span class="stringliteral">&quot;DecreaseVal0&quot;</span>/&gt;</div>
+<div class="line">        &lt;dl_setting MAX=<span class="stringliteral">&quot;5000&quot;</span> MIN=<span class="stringliteral">&quot;0&quot;</span> STEP=<span class="stringliteral">&quot;1&quot;</span> VAR=<span class="stringliteral">&quot;enose_val[1]&quot;</span> module=<span class="stringliteral">&quot;enose/enose&quot;</span> shortname=<span class="stringliteral">&quot;val1&quot;</span> handler=<span class="stringliteral">&quot;DecreaseVal1&quot;</span>/&gt;</div>
+<div class="line">        &lt;dl_setting MAX=<span class="stringliteral">&quot;5000&quot;</span> MIN=<span class="stringliteral">&quot;0&quot;</span> STEP=<span class="stringliteral">&quot;1&quot;</span> VAR=<span class="stringliteral">&quot;enose_val[2]&quot;</span> module=<span class="stringliteral">&quot;enose/enose&quot;</span> shortname=<span class="stringliteral">&quot;val2&quot;</span> handler=<span class="stringliteral">&quot;DecreaseVal2&quot;</span>/&gt;</div>
 <div class="line">      &lt;/dl_settings&gt;</div>
 <div class="line">    &lt;/dl_settings&gt;</div>
 <div class="line">  &lt;/settings&gt;</div>
@@ -194,7 +199,7 @@ Raw enose.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:17 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:38 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

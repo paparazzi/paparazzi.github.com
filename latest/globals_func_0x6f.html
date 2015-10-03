@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -98,6 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals_func_0x67.html#index_g"><span>g</span></a></li>
       <li><a href="globals_func_0x68.html#index_h"><span>h</span></a></li>
       <li><a href="globals_func_0x69.html#index_i"><span>i</span></a></li>
+      <li><a href="globals_func_0x6a.html#index_j"><span>j</span></a></li>
       <li><a href="globals_func_0x6b.html#index_k"><span>k</span></a></li>
       <li><a href="globals_func_0x6c.html#index_l"><span>l</span></a></li>
       <li><a href="globals_func_0x6d.html#index_m"><span>m</span></a></li>
@@ -134,7 +135,7 @@ $(document).ready(function(){initNavTree('globals_func_0x6f.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -150,23 +151,39 @@ $(document).ready(function(){initNavTree('globals_func_0x6f.html','');});
 <li>offset_commands()
 : <a class="el" href="motor__mixing_8c.html#a04fd0bea41cfac070770a7725f19154a">motor_mixing.c</a>
 </li>
-<li>on_accel_event()
-: <a class="el" href="main__ap_8c.html#aff00de1e5817007c0daf0de123dfa1f6">main_ap.c</a>
-, <a class="el" href="rotorcraft_2main_8c.html#aff00de1e5817007c0daf0de123dfa1f6">main.c</a>
+<li>opticflow_agl_cb()
+: <a class="el" href="opticflow__module_8c.html#a4ff563eb2ad3a731774426ee87cd9b79">opticflow_module.c</a>
 </li>
-<li>on_gps_event()
-: <a class="el" href="rotorcraft_2main_8c.html#ac79b4626d107d8469eef90c7de13c42f">main.c</a>
+<li>opticflow_calc_frame()
+: <a class="el" href="opticflow__calculator_8h.html#aee6bfa400248db0fad131de276c15783">opticflow_calculator.h</a>
+, <a class="el" href="opticflow__calculator_8c.html#aee6bfa400248db0fad131de276c15783">opticflow_calculator.c</a>
 </li>
-<li>on_gps_solution()
-: <a class="el" href="main__ap_8c.html#a758f2c78e167cc469945af2ad3b94152">main_ap.c</a>
+<li>opticflow_calc_init()
+: <a class="el" href="opticflow__calculator_8c.html#ad1cbe6ffd4e1b030423015bd38bb3200">opticflow_calculator.c</a>
+, <a class="el" href="opticflow__calculator_8h.html#ad1cbe6ffd4e1b030423015bd38bb3200">opticflow_calculator.h</a>
 </li>
-<li>on_gyro_event()
-: <a class="el" href="main__ap_8c.html#a9ad44dfc9d1342835451bd87613fb610">main_ap.c</a>
-, <a class="el" href="rotorcraft_2main_8c.html#a9ad44dfc9d1342835451bd87613fb610">main.c</a>
+<li>opticflow_module_calc()
+: <a class="el" href="opticflow__module_8c.html#a55f848033134662d4f93cd9cbef5acac">opticflow_module.c</a>
 </li>
-<li>on_mag_event()
-: <a class="el" href="main__ap_8c.html#a00877cb9155773120515df456aa457a2">main_ap.c</a>
-, <a class="el" href="rotorcraft_2main_8c.html#a00877cb9155773120515df456aa457a2">main.c</a>
+<li>opticflow_module_init()
+: <a class="el" href="opticflow__module_8c.html#a6026660ee86fbb1f72bada581386e6d9">opticflow_module.c</a>
+, <a class="el" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9">opticflow_module.h</a>
+</li>
+<li>opticflow_module_run()
+: <a class="el" href="opticflow__module_8c.html#abf53d072984591ae6710a65682d6bedb">opticflow_module.c</a>
+, <a class="el" href="opticflow__module_8h.html#abf53d072984591ae6710a65682d6bedb">opticflow_module.h</a>
+</li>
+<li>opticflow_module_start()
+: <a class="el" href="opticflow__module_8c.html#a74f8b561efed21509627b8ebacc72eea">opticflow_module.c</a>
+, <a class="el" href="opticflow__module_8h.html#a74f8b561efed21509627b8ebacc72eea">opticflow_module.h</a>
+</li>
+<li>opticflow_module_stop()
+: <a class="el" href="opticflow__module_8c.html#a1670bbe4cd0b2ab998879be875925cef">opticflow_module.c</a>
+, <a class="el" href="opticflow__module_8h.html#a1670bbe4cd0b2ab998879be875925cef">opticflow_module.h</a>
+</li>
+<li>opticFlowLK()
+: <a class="el" href="lucas__kanade_8c.html#a89256cda548e859a51749e957954967c">lucas_kanade.c</a>
+, <a class="el" href="lucas__kanade_8h.html#a89256cda548e859a51749e957954967c">lucas_kanade.h</a>
 </li>
 <li>orienationCheckValid()
 : <a class="el" href="group__math__orientation__representation.html#ga6b55b77641f1a911a919a4d579932514">pprz_orientation_conversion.h</a>
@@ -244,9 +261,9 @@ $(document).ready(function(){initNavTree('globals_func_0x6f.html','');});
 : <a class="el" href="stm32f4__chibios__vectors_8h.html#a9d5f23dfb54e9edd271aed9d4b310a4b">stm32f4_chibios_vectors.h</a>
 </li>
 <li>overrun()
-: <a class="el" href="pprz__transport_8c.html#af95ee46cdf94fc33194c8fe5b708a8cd">pprz_transport.c</a>
+: <a class="el" href="ivy__transport_8c.html#a2ffcb154e6d05cbe8f719e88a4d2c7b7">ivy_transport.c</a>
 , <a class="el" href="xbee_8c.html#a04cefb5c5d4753ebc0cc93c16a41593e">xbee.c</a>
-, <a class="el" href="ivy__transport_8c.html#a2ffcb154e6d05cbe8f719e88a4d2c7b7">ivy_transport.c</a>
+, <a class="el" href="pprz__transport_8c.html#af95ee46cdf94fc33194c8fe5b708a8cd">pprz_transport.c</a>
 , <a class="el" href="pprzlog__transport_8c.html#aaa3648479b6a1ab99ad0c92fc486ca8a">pprzlog_transport.c</a>
 </li>
 </ul>
@@ -255,7 +272,7 @@ $(document).ready(function(){initNavTree('globals_func_0x6f.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:40 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:48 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

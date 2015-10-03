@@ -4,7 +4,7 @@ var pprz__transport_8c =
     [ "count_bytes", "pprz__transport_8c.html#a6b9f21b7e197f8617a1f3e82040b8933", null ],
     [ "end_message", "pprz__transport_8c.html#a44aa8fcfca2c7b443f55092d78128136", null ],
     [ "overrun", "pprz__transport_8c.html#af95ee46cdf94fc33194c8fe5b708a8cd", null ],
-    [ "pprz_transport_init", "pprz__transport_8c.html#a49a53dd884edf42d672dda0c2ffc221f", null ],
+    [ "pprz_transport_init", "pprz__transport_8c.html#a4a56f4299c84faa347591c6abf4b9c47", null ],
     [ "put_1byte", "pprz__transport_8c.html#ab4e3dc4fe41bc07e30628900610dd82a", null ],
     [ "put_bytes", "pprz__transport_8c.html#a0d9d5f2d0f146e105881ffceb8a10965", null ],
     [ "put_named_byte", "pprz__transport_8c.html#a636d57f64090ceae59b16a9dffe1dcd5", null ],

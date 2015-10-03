@@ -1,23 +1,26 @@
 <map id="stabilization_attitude_get_heading_i" name="stabilization_attitude_get_heading_i">
-<area shape="rect" id="node3" href="$stabilization__attitude__quat__int_8c.html#a23f862ca823e6fd23fc9c111178be077" title="stabilization_attitude\l_enter" alt="" coords="223,7,377,51"/>
-<area shape="rect" id="node29" href="$stabilization__attitude__rc__setpoint_8h.html#a60929bf25f6bd542fd13629fc452c1b6" title="Read attitude setpoint from RC as euler angles. " alt="" coords="209,191,391,235"/>
-<area shape="rect" id="node45" href="$stabilization__attitude__quat__int_8c.html#a5a2d8d3947ba9cdc571cea5778c93f4a" title="stabilization_attitude\l_set_failsafe_setpoint" alt="" coords="220,74,380,118"/>
-<area shape="rect" id="node5" href="$guidance__h_8h.html#a2903786227eb11507928f99870099225" title="guidance_h_mode_changed" alt="" coords="441,15,641,43"/>
-<area shape="rect" id="node7" href="$rotorcraft_2autopilot_8h.html#a3aaa2cf16ee3b25e8fca9bbd1d579d64" title="autopilot_set_mode" alt="" coords="693,59,843,87"/>
-<area shape="rect" id="node9" href="$rotorcraft_2autopilot_8c.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization. " alt="" coords="917,157,1021,185"/>
-<area shape="rect" id="node11" href="$rotorcraft_2autopilot_8h.html#a7339f5741706cb9c2e2186b1174cc770" title="autopilot_on_rc_frame" alt="" coords="1093,131,1259,159"/>
-<area shape="rect" id="node15" href="$rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="903,5,1036,33"/>
-<area shape="rect" id="node19" href="$main_8h.html#a6266a73fe8c0512f1de72cea96e5110b" title="failsafe_check" alt="" coords="915,55,1024,83"/>
-<area shape="rect" id="node13" href="$main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="1308,131,1404,159"/>
-<area shape="rect" id="node17" href="$main_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="1121,5,1231,33"/>
-<area shape="rect" id="node21" href="$main_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="1095,55,1257,83"/>
-<area shape="rect" id="node23" href="$fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1329,18,1383,46"/>
-<area shape="rect" id="node25" href="$main__chibios__libopencm3_8c.html#ad648a546fe66cd5f9328f33221a40c64" title="pprz_thd" alt="" coords="1317,69,1395,97"/>
-<area shape="rect" id="node27" href="$main__chibios__libopencm3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1455,69,1508,97"/>
-<area shape="rect" id="node31" href="$guidance__h_8h.html#a7db3290fc5f62abc15a1bb1638b4922f" title="guidance_h_read_rc" alt="" coords="895,207,1044,235"/>
-<area shape="rect" id="node34" href="$stabilization__attitude__euler__int_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc" title="stabilization_attitude\l_read_rc" alt="" coords="464,117,619,161"/>
-<area shape="rect" id="node36" href="$stabilization__attitude__rc__setpoint_8h.html#a9d0b7ad4c9f5c936c3f06910ac5d0185" title="Read attitude setpoint from RC as quaternion Interprets the stick positions as axes. " alt="" coords="451,266,632,310"/>
-<area shape="rect" id="node40" href="$stabilization__attitude__rc__setpoint_8h.html#a2c7e084c171f2656b071f20895ce2ce0" title="stabilization_attitude\l_read_rc_setpoint_quat\l_earth_bound_f" alt="" coords="456,183,627,243"/>
-<area shape="rect" id="node38" href="$stabilization__attitude__quat__float_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc" title="stabilization_attitude\l_read_rc" alt="" coords="691,266,845,310"/>
-<area shape="rect" id="node42" href="$stabilization__attitude__quat__int_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc" title="stabilization_attitude\l_read_rc" alt="" coords="691,195,845,239"/>
+<area shape="rect" id="node3" href="$guidance__flip_8h.html#a896a483b1034357b2911e72d625ff8fd" title="guidance_flip_enter" alt="" coords="227,111,373,139"/>
+<area shape="rect" id="node34" href="$stabilization__attitude__quat__indi_8c.html#a23f862ca823e6fd23fc9c111178be077" title="stabilization_attitude\l_enter" alt="" coords="223,166,377,210"/>
+<area shape="rect" id="node36" href="$stabilization__attitude__rc__setpoint_8h.html#a60929bf25f6bd542fd13629fc452c1b6" title="Read attitude setpoint from RC as euler angles. " alt="" coords="209,233,391,277"/>
+<area shape="rect" id="node51" href="$stabilization__attitude__quat__indi_8c.html#a5a2d8d3947ba9cdc571cea5778c93f4a" title="stabilization_attitude\l_set_failsafe_setpoint" alt="" coords="220,299,380,343"/>
+<area shape="rect" id="node5" href="$guidance__h_8h.html#a2903786227eb11507928f99870099225" title="guidance_h_mode_changed" alt="" coords="441,107,641,135"/>
+<area shape="rect" id="node7" href="$rotorcraft_2autopilot_8h.html#a3aaa2cf16ee3b25e8fca9bbd1d579d64" title="autopilot_set_mode" alt="" coords="693,111,843,139"/>
+<area shape="rect" id="node9" href="$rotorcraft_2autopilot_8c.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization. " alt="" coords="924,67,1028,95"/>
+<area shape="rect" id="node11" href="$rotorcraft_2autopilot_8h.html#a7339f5741706cb9c2e2186b1174cc770" title="autopilot_on_rc_frame" alt="" coords="893,231,1059,259"/>
+<area shape="rect" id="node15" href="$rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="1319,131,1452,159"/>
+<area shape="rect" id="node19" href="$main_8h.html#a6266a73fe8c0512f1de72cea96e5110b" title="failsafe_check" alt="" coords="921,17,1031,45"/>
+<area shape="rect" id="node29" href="$guidance__flip_8h.html#a341f66aaa1a6e736e980ae5cccb3c0f5" title="guidance_flip_run" alt="" coords="909,169,1043,197"/>
+<area shape="rect" id="node13" href="$main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="1140,231,1236,259"/>
+<area shape="rect" id="node17" href="$main_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="1503,131,1612,159"/>
+<area shape="rect" id="node21" href="$main_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="1107,17,1269,45"/>
+<area shape="rect" id="node23" href="$fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1359,55,1412,83"/>
+<area shape="rect" id="node25" href="$main__chibios__libopencm3_8c.html#ad648a546fe66cd5f9328f33221a40c64" title="pprz_thd" alt="" coords="1347,5,1424,33"/>
+<area shape="rect" id="node27" href="$main__chibios__libopencm3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1531,5,1584,33"/>
+<area shape="rect" id="node31" href="$guidance__h_8h.html#ac4cf6da90a4278b4d0b2e4f227b33f2c" title="guidance_h_run" alt="" coords="1127,169,1249,197"/>
+<area shape="rect" id="node38" href="$guidance__h_8h.html#a7db3290fc5f62abc15a1bb1638b4922f" title="guidance_h_read_rc" alt="" coords="693,237,843,265"/>
+<area shape="rect" id="node41" href="$stabilization__attitude__euler__int_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc" title="stabilization_attitude\l_read_rc" alt="" coords="464,291,619,335"/>
+<area shape="rect" id="node43" href="$stabilization__attitude__rc__setpoint_8h.html#a9d0b7ad4c9f5c936c3f06910ac5d0185" title="Read attitude setpoint from RC as quaternion Interprets the stick positions as axes. " alt="" coords="451,358,632,402"/>
+<area shape="rect" id="node47" href="$stabilization__attitude__rc__setpoint_8h.html#a2c7e084c171f2656b071f20895ce2ce0" title="stabilization_attitude\l_read_rc_setpoint_quat\l_earth_bound_f" alt="" coords="456,158,627,218"/>
+<area shape="rect" id="node45" href="$stabilization__attitude__quat__float_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc" title="stabilization_attitude\l_read_rc" alt="" coords="691,358,845,402"/>
+<area shape="rect" id="node49" href="$stabilization__attitude__quat__indi_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc" title="stabilization_attitude\l_read_rc" alt="" coords="691,166,845,210"/>
 </map>

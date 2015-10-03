@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('globals_defs_0x66.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -203,14 +203,14 @@ $(document).ready(function(){initNavTree('globals_defs_0x66.html','');});
 <li>FCHK
 : <a class="el" href="lpc21_2subsystems_2settings__arch_8c.html#a486ad2adc27b733aa4476b6ddcfa2edb">settings_arch.c</a>
 </li>
-<li>FD_STDIN
-: <a class="el" href="sim_2mcu__periph_2uart__arch_8h.html#afb041cc5e9927594fdc0a9962f1e58cd">uart_arch.h</a>
-</li>
 <li>FF_CMD_FRAC
 : <a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a7b742dbc14825348962b81a827011fdc">guidance_v.c</a>
 </li>
-<li>FIFO_LEN
-: <a class="el" href="gps__piksi_8c.html#aecc447ddba4f99c826f9979fbd3d1e1d">gps_piksi.c</a>
+<li>FILE_BYTE_ORDER
+: <a class="el" href="exif__module_8c.html#a804073837d0dcb6fa1c56df3e1a9551a">exif_module.c</a>
+</li>
+<li>FILE_COMMENT
+: <a class="el" href="exif__module_8c.html#a65fea5975efb7b74395fe9ba64d4e99f">exif_module.c</a>
 </li>
 <li>FILE_LOGGER_PATH
 : <a class="el" href="file__logger_8c.html#a091cc35c832b27dc7ce67bc84df7d04c">file_logger.c</a>
@@ -225,6 +225,9 @@ $(document).ready(function(){initNavTree('globals_defs_0x66.html','');});
 <li>FilterIR
 : <a class="el" href="infrared__i2c_8c.html#a24f4ed3c3ad59ddf986d01cd9ded85bf">infrared_i2c.c</a>
 </li>
+<li>FINAL_THRUST_LEVEL
+: <a class="el" href="guidance__flip_8c.html#a012f2c818bb82906f987e9ce59de3353">guidance_flip.c</a>
+</li>
 <li>FIQ_MASK
 : <a class="el" href="armVIC_8c.html#abde0646650c692b54babc5c7a3b11bc4">armVIC.c</a>
 </li>
@@ -232,185 +235,191 @@ $(document).ready(function(){initNavTree('globals_defs_0x66.html','');});
 : <a class="el" href="ahrs__float__cmpl_8c.html#ab2760fb4c51ee3b054a3462efd915e7c">ahrs_float_cmpl.c</a>
 , <a class="el" href="ahrs__int__cmpl__quat_8c.html#ab2760fb4c51ee3b054a3462efd915e7c">ahrs_int_cmpl_quat.c</a>
 </li>
+<li>FIRST_THRUST_DURATION
+: <a class="el" href="guidance__flip_8c.html#a9c67687b3ac14e6b397bca18e4f2b4ef">guidance_flip.c</a>
+</li>
+<li>FIT
+: <a class="el" href="linear__flow__fit_8c.html#aa92d54da8e58b004f0a7a7567a57949b">linear_flow_fit.c</a>
+</li>
 <li>FLASH_BEGIN
 : <a class="el" href="stm32_2subsystems_2settings__arch_8c.html#a6c625081eebc2da015cedc450022605b">settings_arch.c</a>
 </li>
 <li>FLOAT_ANGLE_NORMALIZE
-: <a class="el" href="pprz__algebra__float_8h.html#a082a3591f2701fdcc77609946f1457ad">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga082a3591f2701fdcc77609946f1457ad">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_EULERS_NORM
-: <a class="el" href="pprz__algebra__float_8h.html#abe8ac26f75cf7ed1d1abaac2057904c7">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#gabe8ac26f75cf7ed1d1abaac2057904c7">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_EULERS_OF_QUAT
-: <a class="el" href="pprz__algebra__float_8h.html#abb9c6838cd4e08e827697d46129aa65d">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#gabb9c6838cd4e08e827697d46129aa65d">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_EULERS_OF_RMAT
-: <a class="el" href="pprz__algebra__float_8h.html#aea9b0b59e52744d3a7cb09729332c559">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#gaea9b0b59e52744d3a7cb09729332c559">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_EULERS_ZERO
-: <a class="el" href="pprz__algebra__float_8h.html#a354c541625b0e7c12342e72589f67a80">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga354c541625b0e7c12342e72589f67a80">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_MAT33_DIAG
-: <a class="el" href="pprz__algebra__float_8h.html#aba2b8407506025f0fa8257d7fa2a6e0c">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#gaba2b8407506025f0fa8257d7fa2a6e0c">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_MAT33_ZERO
-: <a class="el" href="pprz__algebra__float_8h.html#af7d71c6424c5d2fa1e77992fc214d7c0">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#gaf7d71c6424c5d2fa1e77992fc214d7c0">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_OF_BFP
-: <a class="el" href="pprz__algebra__int_8h.html#a98e4a29359dcdfddea12ad51f67af720">pprz_algebra_int.h</a>
+: <a class="el" href="group__math__algebra__int.html#ga98e4a29359dcdfddea12ad51f67af720">pprz_algebra_int.h</a>
 </li>
 <li>FLOAT_OF_PPRZ
 : <a class="el" href="fixedwing_2autopilot_8h.html#aa08d012f2139a6ef9e5b92e5efcf555b">autopilot.h</a>
 </li>
 <li>FLOAT_QUAT_COMP
-: <a class="el" href="pprz__algebra__float_8h.html#a0a76eb680a60ea46d382cee034fbfeb8">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga0a76eb680a60ea46d382cee034fbfeb8">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_QUAT_COMP_INV
-: <a class="el" href="pprz__algebra__float_8h.html#a2002d50ff30d8c76d3525ceb83f59fc6">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga2002d50ff30d8c76d3525ceb83f59fc6">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_QUAT_COMP_INV_NORM_SHORTEST
-: <a class="el" href="pprz__algebra__float_8h.html#aeaedda13a80ba0bda4fc891b10645b7e">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#gaeaedda13a80ba0bda4fc891b10645b7e">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_QUAT_COMP_NORM_SHORTEST
-: <a class="el" href="pprz__algebra__float_8h.html#a94b4840be39239a9e900434466dc8c73">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga94b4840be39239a9e900434466dc8c73">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_QUAT_DERIVATIVE
-: <a class="el" href="pprz__algebra__float_8h.html#a88be8cb8a694207b87aac851cb6f0323">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga88be8cb8a694207b87aac851cb6f0323">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_QUAT_DERIVATIVE_LAGRANGE
-: <a class="el" href="pprz__algebra__float_8h.html#a821317963ac9ab74e59fd554ddaacf3e">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga821317963ac9ab74e59fd554ddaacf3e">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_QUAT_DIFFERENTIAL
-: <a class="el" href="pprz__algebra__float_8h.html#a66cfaf1e0dc85b6893c1c2760cdcf177">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga66cfaf1e0dc85b6893c1c2760cdcf177">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_QUAT_EXTRACT
-: <a class="el" href="pprz__algebra__float_8h.html#a3d2fbccf8229c3bb390f1ff342defde7">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga3d2fbccf8229c3bb390f1ff342defde7">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_QUAT_INTEGRATE
-: <a class="el" href="pprz__algebra__float_8h.html#ae26d803eb5efcd02ea84d3c8b2d5904e">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#gae26d803eb5efcd02ea84d3c8b2d5904e">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_QUAT_INV_COMP
-: <a class="el" href="pprz__algebra__float_8h.html#a45c10889966e867daaf4373aa1a62dc1">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga45c10889966e867daaf4373aa1a62dc1">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_QUAT_INV_COMP_NORM_SHORTEST
-: <a class="el" href="pprz__algebra__float_8h.html#aecc209464c099da419e54dceb6bedbbc">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#gaecc209464c099da419e54dceb6bedbbc">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_QUAT_INVERT
-: <a class="el" href="pprz__algebra__float_8h.html#a18846a42efecdeae5dab64fbd8645eb9">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga18846a42efecdeae5dab64fbd8645eb9">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_QUAT_MULT
-: <a class="el" href="pprz__algebra__float_8h.html#a793a9d1a80fb5ddcf2cc51510a1e7954">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga793a9d1a80fb5ddcf2cc51510a1e7954">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_QUAT_NORM
-: <a class="el" href="pprz__algebra__float_8h.html#ac1a892148a1ebb32fafde838319f6346">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#gac1a892148a1ebb32fafde838319f6346">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_QUAT_NORM2
-: <a class="el" href="pprz__algebra__float_8h.html#ac7c8b1e7bed927ab6257ff84d195ce33">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#gac7c8b1e7bed927ab6257ff84d195ce33">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_QUAT_NORMALIZE
-: <a class="el" href="pprz__algebra__float_8h.html#a9cd81f9e9b5e04260cb4cc54fec267ce">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga9cd81f9e9b5e04260cb4cc54fec267ce">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_QUAT_OF_AXIS_ANGLE
-: <a class="el" href="pprz__algebra__float_8h.html#a37771817d997b294fb506a9e0892c915">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga37771817d997b294fb506a9e0892c915">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_QUAT_OF_EULERS
-: <a class="el" href="pprz__algebra__float_8h.html#ab37594049bf029dfa949454c3cb0e30a">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#gab37594049bf029dfa949454c3cb0e30a">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_QUAT_OF_ORIENTATION_VECT
-: <a class="el" href="pprz__algebra__float_8h.html#a51b4ff5b5105dd4259178c9183a06a4c">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga51b4ff5b5105dd4259178c9183a06a4c">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_QUAT_OF_RMAT
-: <a class="el" href="pprz__algebra__float_8h.html#a0ea8bd3c4096f5a5544672e3f043abf6">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga0ea8bd3c4096f5a5544672e3f043abf6">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_QUAT_VMULT
-: <a class="el" href="pprz__algebra__float_8h.html#a06cf4d5cd7ee5b43988d30d99ed7467b">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga06cf4d5cd7ee5b43988d30d99ed7467b">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_QUAT_WRAP_SHORTEST
-: <a class="el" href="pprz__algebra__float_8h.html#ade0e2688302198f542167d2f3c77c44d">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#gade0e2688302198f542167d2f3c77c44d">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_QUAT_ZERO
-: <a class="el" href="pprz__algebra__float_8h.html#af0d8da2ae5acffd92d4d7f37d6e30957">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#gaf0d8da2ae5acffd92d4d7f37d6e30957">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_RATES_INTEGRATE_FI
-: <a class="el" href="pprz__algebra__float_8h.html#aa3cb0f64f36c654c8379784770b59643">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#gaa3cb0f64f36c654c8379784770b59643">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_RATES_LIN_CMB
-: <a class="el" href="pprz__algebra__float_8h.html#a7d1c0f550712d4f4a4e56d7f3935302b">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga7d1c0f550712d4f4a4e56d7f3935302b">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_RATES_NORM
-: <a class="el" href="pprz__algebra__float_8h.html#a35a457f5e4c2e6e4f3fc2f0b82c3409f">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga35a457f5e4c2e6e4f3fc2f0b82c3409f">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_RATES_OF_EULER_DOT
-: <a class="el" href="pprz__algebra__float_8h.html#a246dd673d453b2571ec3e3325850e71e">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga246dd673d453b2571ec3e3325850e71e">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_RATES_ZERO
-: <a class="el" href="pprz__algebra__float_8h.html#ada94cef1274ff8daf6c8e91fae707b66">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#gada94cef1274ff8daf6c8e91fae707b66">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_RMAT_COMP
-: <a class="el" href="pprz__algebra__float_8h.html#a52cfb535525f92ea9535275cc3000edf">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga52cfb535525f92ea9535275cc3000edf">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_RMAT_COMP_INV
-: <a class="el" href="pprz__algebra__float_8h.html#af3b5f72a71e66d9cf789ee68f493039e">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#gaf3b5f72a71e66d9cf789ee68f493039e">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_RMAT_INTEGRATE_FI
-: <a class="el" href="pprz__algebra__float_8h.html#af4895fc63cc9e0a51f5a9cbe6bc27233">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#gaf4895fc63cc9e0a51f5a9cbe6bc27233">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_RMAT_INV
-: <a class="el" href="pprz__algebra__float_8h.html#a6c560f142efcae02a87327372e550707">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga6c560f142efcae02a87327372e550707">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_RMAT_NORM
-: <a class="el" href="pprz__algebra__float_8h.html#abe4ca1b17eb92e9f8c665f9e537f8bc0">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#gabe4ca1b17eb92e9f8c665f9e537f8bc0">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_RMAT_OF_AXIS_ANGLE
-: <a class="el" href="pprz__algebra__float_8h.html#a9b0967c9cfd182eb125551c7d8906dbb">pprz_algebra_float.h</a>
-</li>
-<li>FLOAT_RMAT_OF_EULERS
-: <a class="el" href="pprz__algebra__float_8h.html#a0107b3f3597abb290d29fb836e33260f">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga9b0967c9cfd182eb125551c7d8906dbb">pprz_algebra_float.h</a>
 </li>
 <li>float_rmat_of_eulers
-: <a class="el" href="pprz__algebra__float_8h.html#a44e060d34ee847c6180ce2fc6e6a0229">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga44e060d34ee847c6180ce2fc6e6a0229">pprz_algebra_float.h</a>
+</li>
+<li>FLOAT_RMAT_OF_EULERS
+: <a class="el" href="group__math__algebra__float.html#ga0107b3f3597abb290d29fb836e33260f">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_RMAT_OF_EULERS_312
-: <a class="el" href="pprz__algebra__float_8h.html#a0d231b31a776d56e612d48a34359b646">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga0d231b31a776d56e612d48a34359b646">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_RMAT_OF_EULERS_321
-: <a class="el" href="pprz__algebra__float_8h.html#a12bbfe128ff80296a2c660d6535ab4a0">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga12bbfe128ff80296a2c660d6535ab4a0">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_RMAT_OF_QUAT
-: <a class="el" href="pprz__algebra__float_8h.html#a2c4c4123145328dee01faa7b5488355c">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga2c4c4123145328dee01faa7b5488355c">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_RMAT_RATEMULT
-: <a class="el" href="pprz__algebra__float_8h.html#ac03548c07ba623863921c48c663d3b5f">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#gac03548c07ba623863921c48c663d3b5f">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_RMAT_TRANSP_RATEMULT
-: <a class="el" href="pprz__algebra__float_8h.html#ad402c53ee08adc086a64d93328993260">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#gad402c53ee08adc086a64d93328993260">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_RMAT_TRANSP_VMULT
-: <a class="el" href="pprz__algebra__float_8h.html#a2adc9aabf135e97239c4168f9a745fbf">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga2adc9aabf135e97239c4168f9a745fbf">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_RMAT_VMULT
-: <a class="el" href="pprz__algebra__float_8h.html#ad49c4557747be651fe828aa747c25d58">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#gad49c4557747be651fe828aa747c25d58">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_VECT2_NORM
-: <a class="el" href="pprz__algebra__float_8h.html#ae9cbbc42e76809d4cff619db90f8a56c">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#gae9cbbc42e76809d4cff619db90f8a56c">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_VECT2_NORMALIZE
-: <a class="el" href="pprz__algebra__float_8h.html#a07988300b23cc21ea197dd72f8de9046">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga07988300b23cc21ea197dd72f8de9046">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_VECT2_ZERO
-: <a class="el" href="pprz__algebra__float_8h.html#accedb5bf722a0466b35ade54c3f81b19">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#gaccedb5bf722a0466b35ade54c3f81b19">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_VECT3_INTEGRATE_FI
-: <a class="el" href="pprz__algebra__float_8h.html#a6f3c0c35ebda0016f6647ea4d5554eaf">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga6f3c0c35ebda0016f6647ea4d5554eaf">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_VECT3_NORM
-: <a class="el" href="pprz__algebra__float_8h.html#a94d348775d7a0beafa3f15967ea4a9e2">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga94d348775d7a0beafa3f15967ea4a9e2">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_VECT3_NORMALIZE
-: <a class="el" href="pprz__algebra__float_8h.html#aac913329f9a0d5e1db77c6fc2480fff7">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#gaac913329f9a0d5e1db77c6fc2480fff7">pprz_algebra_float.h</a>
 </li>
 <li>FLOAT_VECT3_ZERO
-: <a class="el" href="pprz__algebra__float_8h.html#a41de102be6b28101c9568380f729a88d">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga41de102be6b28101c9568380f729a88d">pprz_algebra_float.h</a>
 </li>
 <li>FloatSwap
 : <a class="el" href="imu__chimu_8h.html#a5bff2dac690c44d95339377f2074cf31">imu_chimu.h</a>
@@ -442,9 +451,6 @@ $(document).ready(function(){initNavTree('globals_defs_0x66.html','');});
 <li>FM_MODE_WRITE
 : <a class="el" href="max7456__regs_8h.html#a323d2c13863f10bb3eab275796e73858">max7456_regs.h</a>
 </li>
-<li>FMS_BROADCAST
-: <a class="el" href="computer__vision_2lib_2udp_2socket_8h.html#a0b905e584a808dce131b06e97abe40f4">socket.h</a>
-</li>
 <li>FMS_TEST_SIGNAL_DEFAULT_AMPLITUDE
 : <a class="el" href="vi__test__signal_8c.html#a2bb1c70e411d7afa301700d69b3bfadc">vi_test_signal.c</a>
 </li>
@@ -453,9 +459,6 @@ $(document).ready(function(){initNavTree('globals_defs_0x66.html','');});
 </li>
 <li>FMS_TEST_SIGNAL_DEFAULT_PERIOD
 : <a class="el" href="vi__test__signal_8c.html#a030f7a4fca39e7719e7586ee545fa445">vi_test_signal.c</a>
-</li>
-<li>FMS_UNICAST
-: <a class="el" href="computer__vision_2lib_2udp_2socket_8h.html#a6f7fefed9c3dbad51940015643b79084">socket.h</a>
 </li>
 <li>FOLLOW_OFFSET_X
 : <a class="el" href="follow_8c.html#ae326226c92c0cf8c0d8252c7bdb51f72">follow.c</a>
@@ -510,18 +513,18 @@ $(document).ready(function(){initNavTree('globals_defs_0x66.html','');});
 </li>
 <li>FOSC
 : <a class="el" href="classix__1_80_8h.html#a802b2b582b121e4632aa9a491d503720">classix_1.0.h</a>
-, <a class="el" href="logom__2_86_8h.html#a802b2b582b121e4632aa9a491d503720">logom_2.6.h</a>
-, <a class="el" href="tiny__2_80_8h.html#a802b2b582b121e4632aa9a491d503720">tiny_2.0.h</a>
-, <a class="el" href="olimex__lpc__h2148_8h.html#a802b2b582b121e4632aa9a491d503720">olimex_lpc_h2148.h</a>
-, <a class="el" href="booz__1_80_8h.html#a802b2b582b121e4632aa9a491d503720">booz_1.0.h</a>
-, <a class="el" href="hbmini__1_80_8h.html#a802b2b582b121e4632aa9a491d503720">hbmini_1.0.h</a>
-, <a class="el" href="tiny__2_81_8h.html#a802b2b582b121e4632aa9a491d503720">tiny_2.1.h</a>
-, <a class="el" href="hb__1_81_8h.html#a802b2b582b121e4632aa9a491d503720">hb_1.1.h</a>
 , <a class="el" href="tiny__0_899_8h.html#a802b2b582b121e4632aa9a491d503720">tiny_0.99.h</a>
-, <a class="el" href="sdlog__1_80_8h.html#a802b2b582b121e4632aa9a491d503720">sdlog_1.0.h</a>
-, <a class="el" href="umarim__lite__2_80_8h.html#a802b2b582b121e4632aa9a491d503720">umarim_lite_2.0.h</a>
-, <a class="el" href="umarim__1_80_8h.html#a802b2b582b121e4632aa9a491d503720">umarim_1.0.h</a>
 , <a class="el" href="tiny__1_81_8h.html#a802b2b582b121e4632aa9a491d503720">tiny_1.1.h</a>
+, <a class="el" href="umarim__1_80_8h.html#a802b2b582b121e4632aa9a491d503720">umarim_1.0.h</a>
+, <a class="el" href="logom__2_86_8h.html#a802b2b582b121e4632aa9a491d503720">logom_2.6.h</a>
+, <a class="el" href="tiny__2_81_8h.html#a802b2b582b121e4632aa9a491d503720">tiny_2.1.h</a>
+, <a class="el" href="olimex__lpc__h2148_8h.html#a802b2b582b121e4632aa9a491d503720">olimex_lpc_h2148.h</a>
+, <a class="el" href="sdlog__1_80_8h.html#a802b2b582b121e4632aa9a491d503720">sdlog_1.0.h</a>
+, <a class="el" href="booz__1_80_8h.html#a802b2b582b121e4632aa9a491d503720">booz_1.0.h</a>
+, <a class="el" href="tiny__2_80_8h.html#a802b2b582b121e4632aa9a491d503720">tiny_2.0.h</a>
+, <a class="el" href="hb__1_81_8h.html#a802b2b582b121e4632aa9a491d503720">hb_1.1.h</a>
+, <a class="el" href="hbmini__1_80_8h.html#a802b2b582b121e4632aa9a491d503720">hbmini_1.0.h</a>
+, <a class="el" href="umarim__lite__2_80_8h.html#a802b2b582b121e4632aa9a491d503720">umarim_lite_2.0.h</a>
 , <a class="el" href="navgo__1_80_8h.html#a802b2b582b121e4632aa9a491d503720">navgo_1.0.h</a>
 </li>
 <li>FOUR_FOUR_FOUR
@@ -540,7 +543,7 @@ $(document).ready(function(){initNavTree('globals_defs_0x66.html','');});
 : <a class="el" href="LPC21xx_8h.html#a16bb5201c0534fcdf25f6a313efc67e5">LPC21xx.h</a>
 </li>
 <li>FSIZ
-: <a class="el" href="lpc21_2subsystems_2settings__arch_8c.html#aad7842fbef06c8ec39045d2bf58455b9">settings_arch.c</a>
+: <a class="el" href="stm32_2subsystems_2settings__arch_8c.html#aad7842fbef06c8ec39045d2bf58455b9">settings_arch.c</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -548,7 +551,7 @@ $(document).ready(function(){initNavTree('globals_defs_0x66.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:41 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:48 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

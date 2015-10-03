@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.4"/>
-<title>Paparazzi UAS: Video stream of ARDone 2 front camera</title>
+<title>Paparazzi UAS: Video streaming for Linux devices</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('module__video_rtp_stream.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -100,46 +100,48 @@ $(document).ready(function(){initNavTree('module__video_rtp_stream.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Video stream of ARDone 2 front camera </div>  </div>
+<div class="title">Video streaming for Linux devices </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Module XML file: <code>video_rtp_stream.xml</code> </p>
 <ul>
-<li>sends a RTP/UDP stream of the from camera<ul>
-<li>possibility to save an image on the internal memory (JPEG, full size, best quality, 100 pictures max if nothing else)</li>
+<li>Sends a RTP/UDP stream of the camera<ul>
+<li>Possibility to save an image(shot) on the internal memory (JPEG, full size, best quality)</li>
 </ul>
 </li>
 </ul>
-<h1><a class="anchor" id="configuration"></a>
+<h1><a class="anchor" id="module_load_example__video_rtp_stream"></a>
+Example for airframe file</h1>
+<p>This example contains all possible configuration options, not all of them are mandatory! </p>
+<div class="fragment"><div class="line">&lt;modules&gt;</div>
+<div class="line">  &lt;load name=<span class="stringliteral">&quot;video_rtp_stream.xml&quot;</span>&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;VIEWVIDEO_DOWNSIZE_FACTOR&quot;</span> value=<span class="stringliteral">&quot;4&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;VIEWVIDEO_QUALITY_FACTOR&quot;</span> value=<span class="stringliteral">&quot;50&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;VIEWVIDEO_USE_NETCAT&quot;</span> value=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;VIEWVIDEO_USE_RTP&quot;</span> value=<span class="stringliteral">&quot;TRUE|FALSE&quot;</span> /&gt;</div>
+<div class="line">  &lt;/load&gt;</div>
+<div class="line">&lt;/modules&gt;</div>
+</div><!-- fragment --> <h1><a class="anchor" id="configuration"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
 Define Options</h2>
 <ul>
-<li><b>name:</b> <code>VIDEO_SOCK_IP</code> <b>value:</b> <em>192.168.1.255</em> <br/>
- Description: IP broadcast address</li>
-<li><b>name:</b> <code>VIDEO_DOWNSIZE_FACTOR</code> <b>value:</b> <em>4</em> <br/>
+<li><b>name:</b> <code>VIEWVIDEO_DOWNSIZE_FACTOR</code> <b>value:</b> <em>4</em> <br/>
  Description: Reduction factor of the video stream</li>
-<li><b>name:</b> <code>VIDEO_QUALITY_FACTOR</code> <b>value:</b> <em>50</em> <br/>
+<li><b>name:</b> <code>VIEWVIDEO_QUALITY_FACTOR</code> <b>value:</b> <em>50</em> <br/>
  Description: JPEG encoding compression factor [0-99]</li>
-<li><b>name:</b> <code>VIDEO_FPS</code> <b>value:</b> <em>4.</em> <br/>
- Description: Video stream frame rate</li>
+<li><b>name:</b> <code>VIEWVIDEO_USE_NETCAT</code> <b>value:</b> <em>FALSE|TRUE</em> <br/>
+ Description: Use netcat for transfering images (default: FALSE)</li>
+<li><b>name:</b> <code>VIEWVIDEO_USE_RTP</code> <b>value:</b> <em>TRUE|FALSE</em> <br/>
+ Description: Use RTP for transfering images (default: TRUE)</li>
 </ul>
 <h1><a class="anchor" id="functions"></a>
 Module functions</h1>
-<h2><a class="anchor" id="periodic_functions"></a>
-Periodic Functions</h2>
-<p>These functions are called periodically at the specified frequency from the module periodic loop.</p>
+<h2><a class="anchor" id="init_functions"></a>
+Init Functions</h2>
+<p>These initialization functions are called once on startup.</p>
 <ul>
-<li><a class="el" href="viewvideo_8c.html#aae04e279a08c49926c803348845bd366">viewvideo_run()</a><ul>
-<li>Frequency in Hz: <em>1</em> </li>
-<li>Autorun: <em>TRUE</em> <br/>
- Periodic function automatically starts after init.</li>
-<li>Start function: <a class="el" href="viewvideo_8c.html#a2e997d697b4958da4156565605b92575">viewvideo_start()</a><br/>
- Executed before the periodic function starts.</li>
-<li>Stop function: <a class="el" href="viewvideo_8c.html#ac014d6fd1912b84754b41aaa143d221d">viewvideo_stop()</a><br/>
- Executed after the periodic function stops.</li>
-</ul>
-</li>
+<li><a class="el" href="viewvideo_8c.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. ">viewvideo_init()</a></li>
 </ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
@@ -153,11 +155,7 @@ Header Files</h2>
 Source Files</h2>
 <ul>
 <li><a class="el" href="viewvideo_8c.html">modules/computer_vision/viewvideo.c</a></li>
-<li><a class="el" href="jpeg_8c.html">modules/computer_vision/cv/encoding/jpeg.c</a></li>
-<li><a class="el" href="rtp_8c.html">modules/computer_vision/cv/encoding/rtp.c</a></li>
-<li><a class="el" href="computer__vision_2lib_2udp_2socket_8c.html">modules/computer_vision/lib/udp/socket.c</a></li>
-<li><a class="el" href="video_8c.html">modules/computer_vision/lib/v4l/video.c</a></li>
-<li><a class="el" href="viewvideo__nps_8c.html">modules/computer_vision/viewvideo_nps.c</a></li>
+<li><a class="el" href="rtp_8c.html">modules/computer_vision/lib/encoding/rtp.c</a></li>
 </ul>
 <h2><a class="anchor" id="module_xml__video_rtp_stream"></a>
 Raw video_rtp_stream.xml file:</h2>
@@ -166,55 +164,62 @@ Raw video_rtp_stream.xml file:</h2>
 <div class="line">&lt;module name=<span class="stringliteral">&quot;video_rtp_stream&quot;</span> dir=<span class="stringliteral">&quot;computer_vision&quot;</span>&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;</div>
-<div class="line">      Video stream of ARDone 2 front camera.</div>
+<div class="line">      Video streaming <span class="keywordflow">for</span> Linux devices</div>
 <div class="line"></div>
-<div class="line">      - sends a RTP/UDP stream of the <a class="code" href="at__com_8c.html#ae17b1fbd0d2858329af3554bff58d9be">from</a> camera</div>
-<div class="line">      - possibility to save an image on the <span class="keyword">internal</span> memory (JPEG, full size, best quality, 100 pictures max <span class="keywordflow">if</span> nothing <span class="keywordflow">else</span>)</div>
+<div class="line">      - Sends a RTP/UDP stream of the camera</div>
+<div class="line">      - Possibility to save an image(shot) on the internal memory (JPEG, full size, best quality)</div>
 <div class="line">    &lt;/description&gt;</div>
-<div class="line">    &lt;define name=<span class="stringliteral">&quot;VIDEO_SOCK_IP&quot;</span> value=<span class="stringliteral">&quot;192.168.1.255&quot;</span> description=<span class="stringliteral">&quot;IP broadcast address&quot;</span>/&gt;</div>
-<div class="line">    &lt;define name=<span class="stringliteral">&quot;VIDEO_DOWNSIZE_FACTOR&quot;</span> value=<span class="stringliteral">&quot;4&quot;</span> description=<span class="stringliteral">&quot;Reduction factor of the video stream&quot;</span>/&gt;</div>
-<div class="line">    &lt;define name=<span class="stringliteral">&quot;VIDEO_QUALITY_FACTOR&quot;</span> value=<span class="stringliteral">&quot;50&quot;</span> description=<span class="stringliteral">&quot;JPEG encoding compression factor [0-99]&quot;</span>/&gt;</div>
-<div class="line">    &lt;define name=<span class="stringliteral">&quot;VIDEO_FPS&quot;</span> value=<span class="stringliteral">&quot;4.&quot;</span> description=<span class="stringliteral">&quot;Video stream frame rate&quot;</span>/&gt;</div>
+<div class="line">    &lt;define name=&quot;<a class="code" href="viewvideo_8c.html#a7be96404c0964c92f49f092c0d13634e">VIEWVIDEO_DOWNSIZE_FACTOR</a>&quot; value=&quot;4&quot; description=&quot;Reduction factor of the video stream&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;<a class="code" href="viewvideo_8c.html#a8e90f0654fb109ed5126ce59fbdb5de3">VIEWVIDEO_QUALITY_FACTOR</a>&quot; value=&quot;50&quot; description=&quot;JPEG encoding compression factor [0-99]&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;<a class="code" href="viewvideo_8c.html#a145420c058c30ea1271e8a07f94b8a27">VIEWVIDEO_USE_NETCAT</a>&quot; value=&quot;<a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>|<a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>&quot; description=&quot;Use netcat for transfering images (default: <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;<a class="code" href="viewvideo_8c.html#a620cd99a6d07e8129ed89b517aaca1f0">VIEWVIDEO_USE_RTP</a>&quot; value=&quot;<a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>|<a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>&quot; description=&quot;Use RTP for transfering images (default: <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>)&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line">  &lt;settings&gt;</div>
 <div class="line">    &lt;dl_settings&gt;</div>
-<div class="line">      &lt;dl_settings name=<span class="stringliteral">&quot;video&quot;</span>&gt;</div>
-<div class="line">        &lt;dl_setting var=<span class="stringliteral">&quot;viewvideo_shot&quot;</span> min=<span class="stringliteral">&quot;0&quot;</span> <a class="code" href="max7456_8c.html#a4a2eb71e89c989655301c2f2070e29b3">step</a>=<span class="stringliteral">&quot;1&quot;</span> max=<span class="stringliteral">&quot;1&quot;</span> shortname=<span class="stringliteral">&quot;save_shot&quot;</span> module=<span class="stringliteral">&quot;computer_vision/viewvideo&quot;</span> handler=<span class="stringliteral">&quot;SaveShot&quot;</span>/&gt;</div>
+<div class="line">      &lt;dl_settings name=&quot;video&quot;&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;<a class="code" href="viewvideo_8c.html#a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74">viewvideo</a>.use_rtp&quot; min=&quot;0&quot; <a class="code" href="max7456_8c.html#a4a2eb71e89c989655301c2f2070e29b3">step</a>=&quot;1&quot; max=&quot;1&quot; values=&quot;<a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>|<a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>&quot; shortname=&quot;rtp&quot; module=&quot;computer_vision/<a class="code" href="viewvideo_8c.html#a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74">viewvideo</a>&quot; param=&quot;<a class="code" href="viewvideo_8c.html#a620cd99a6d07e8129ed89b517aaca1f0">VIEWVIDEO_USE_RTP</a>&quot;/&gt;</div>
 <div class="line">      &lt;/dl_settings&gt;</div>
 <div class="line">    &lt;/dl_settings&gt;</div>
 <div class="line">  &lt;/settings&gt;</div>
 <div class="line"></div>
-<div class="line">  &lt;<a class="code" href="stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963">header</a>&gt;</div>
-<div class="line">    &lt;file name=<span class="stringliteral">&quot;viewvideo.h&quot;</span>/&gt;</div>
-<div class="line">  &lt;/<a class="code" href="stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963">header</a>&gt;</div>
+<div class="line">  &lt;depends&gt;<a class="code" href="video__thread_8c.html#ab0e1e5111e74f73f46bb25599736bb88">video_thread</a>&lt;/depends&gt;</div>
+<div class="line">  &lt;header&gt;</div>
+<div class="line">    &lt;file name=&quot;<a class="code" href="viewvideo_8c.html#a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74">viewvideo</a>.h&quot;/&gt;</div>
+<div class="line">  &lt;/header&gt;</div>
 <div class="line"></div>
-<div class="line">  &lt;periodic fun=<span class="stringliteral">&quot;viewvideo_run()&quot;</span> freq=<span class="stringliteral">&quot;1&quot;</span> start=<span class="stringliteral">&quot;viewvideo_start()&quot;</span> stop=<span class="stringliteral">&quot;viewvideo_stop()&quot;</span> autorun=<span class="stringliteral">&quot;TRUE&quot;</span>/&gt;</div>
-<div class="line">  &lt;makefile target=<span class="stringliteral">&quot;ap&quot;</span>&gt;</div>
-<div class="line">    &lt;file name=<span class="stringliteral">&quot;viewvideo.c&quot;</span>/&gt;</div>
-<div class="line">    &lt;file name=<span class="stringliteral">&quot;jpeg.c&quot;</span> dir=<span class="stringliteral">&quot;modules/computer_vision/cv/encoding&quot;</span>/&gt;</div>
-<div class="line">    &lt;file name=<span class="stringliteral">&quot;rtp.c&quot;</span> dir=<span class="stringliteral">&quot;modules/computer_vision/cv/encoding&quot;</span>/&gt;</div>
-<div class="line">    &lt;file name=<span class="stringliteral">&quot;socket.c&quot;</span> dir=<span class="stringliteral">&quot;modules/computer_vision/lib/udp&quot;</span>/&gt;</div>
-<div class="line">    &lt;file name=<span class="stringliteral">&quot;video.c&quot;</span> dir=<span class="stringliteral">&quot;modules/computer_vision/lib/v4l&quot;</span>/&gt;</div>
-<div class="line">    &lt;define name=<span class="stringliteral">&quot;modules/computer_vision/cv&quot;</span> type=<span class="stringliteral">&quot;include&quot;</span>/&gt;</div>
-<div class="line">    &lt;define name=<span class="stringliteral">&quot;modules/computer_vision/lib&quot;</span> type=<span class="stringliteral">&quot;include&quot;</span>/&gt;</div>
-<div class="line">    &lt;define name=<span class="stringliteral">&quot;pthread&quot;</span> type=<span class="stringliteral">&quot;raw&quot;</span>/&gt;</div>
-<div class="line">    &lt;define name=<span class="stringliteral">&quot;__USE_GNU&quot;</span>/&gt;</div>
-<div class="line">    &lt;flag name=<span class="stringliteral">&quot;LDFLAGS&quot;</span> value=<span class="stringliteral">&quot;pthread&quot;</span>/&gt;</div>
-<div class="line">    &lt;flag name=<span class="stringliteral">&quot;LDFLAGS&quot;</span> value=<span class="stringliteral">&quot;lrt&quot;</span>/&gt;</div>
-<div class="line">    &lt;flag name=<span class="stringliteral">&quot;LDFLAGS&quot;</span> value=<span class="stringliteral">&quot;static&quot;</span>/&gt;</div>
-<div class="line">  &lt;/makefile&gt;</div>
-<div class="line">  &lt;makefile target=<span class="stringliteral">&quot;nps&quot;</span>&gt;</div>
-<div class="line">    &lt;file name=<span class="stringliteral">&quot;viewvideo_nps.c&quot;</span>/&gt;</div>
+<div class="line">  &lt;<a class="code" href="nav__gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=&quot;<a class="code" href="viewvideo_8c.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. ">viewvideo_init</a>()&quot;/&gt;</div>
+<div class="line">  &lt;makefile target=&quot;ap|nps&quot;&gt;</div>
+<div class="line"></div>
+<div class="line">    &lt;file name=&quot;<a class="code" href="viewvideo_8c.html#a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74">viewvideo</a>.c&quot;/&gt;</div>
+<div class="line"></div>
+<div class="line">    &lt;!-- Include the needed Computer Vision files --&gt;</div>
+<div class="line">    &lt;define name=&quot;modules/computer_vision&quot; type=&quot;include&quot;/&gt;</div>
+<div class="line">    &lt;file name=&quot;rtp.c&quot; dir=&quot;modules/computer_vision/lib/encoding&quot;/&gt;</div>
+<div class="line"></div>
+<div class="line">    &lt;!-- Define the network connection to send images over --&gt;</div>
+<div class="line">    &lt;raw&gt;</div>
+<div class="line">      VIEWVIDEO_HOST        ?= $(MODEM_HOST)</div>
+<div class="line">      VIEWVIDEO_PORT_OUT    ?= 5000</div>
+<div class="line">      VIEWVIDEO_BROADCAST   ?= $(MODEM_BROADCAST)</div>
+<div class="line"></div>
+<div class="line">      VIEWVID_CFLAGS  = -DVIEWVIDEO_HOST=$(VIEWVIDEO_HOST) -DVIEWVIDEO_PORT_OUT=$(VIEWVIDEO_PORT_OUT)</div>
+<div class="line">      ifeq ($(VIEWVIDEO_USE_NC),)</div>
+<div class="line">        ap.CFLAGS += $(VIEWVID_CFLAGS) -DVIEWVIDEO_BROADCAST=$(VIEWVIDEO_BROADCAST)</div>
+<div class="line">        nps.CFLAGS += $(VIEWVID_CFLAGS) -DVIEWVIDEO_BROADCAST=<a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div>
+<div class="line">      else</div>
+<div class="line">        $(TARGET).CFLAGS += $(VIEWVID_CFLAGS) -DVIEWVIDEO_USE_NC</div>
+<div class="line">      endif</div>
+<div class="line">    &lt;/raw&gt;</div>
+<div class="line"></div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">&lt;/module&gt;</div>
-<div class="line"></div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:18 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

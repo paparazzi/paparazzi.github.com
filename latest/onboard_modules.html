@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('onboard_modules.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -111,9 +111,14 @@ $(document).ready(function(){initNavTree('onboard_modules.html','');});
 <li class="level2"><a href="#modules_category_com">Com modules</a></li>
 <li class="level2"><a href="#modules_category_computer_vision">Computer_Vision modules</a></li>
 <li class="level2"><a href="#modules_category_core">Core modules</a></li>
+<li class="level2"><a href="#modules_category_ctrl">Ctrl modules</a></li>
 <li class="level2"><a href="#modules_category_datalink">Datalink modules</a></li>
 <li class="level2"><a href="#modules_category_digital_cam">Digital_Cam modules</a></li>
+<li class="level2"><a href="#modules_category_display">Display modules</a></li>
+<li class="level2"><a href="#modules_category_energy">Energy modules</a></li>
+<li class="level2"><a href="#modules_category_gps">Gps modules</a></li>
 <li class="level2"><a href="#modules_category_ins">Ins modules</a></li>
+<li class="level2"><a href="#modules_category_light">Light modules</a></li>
 <li class="level2"><a href="#modules_category_loggers">Loggers modules</a></li>
 <li class="level2"><a href="#modules_category_meteo">Meteo modules</a></li>
 <li class="level2"><a href="#modules_category_mission">Mission modules</a></li>
@@ -163,14 +168,22 @@ Cartography modules</h2>
 Com modules</h2>
 <ul>
 <li>generic_com.xml <a class="el" href="module__generic_com.html">Generic com</a></li>
+<li>uart_drop.xml <a class="el" href="module__uart_drop.html">Module for dropping balls using UART</a></li>
 <li>usb_serial_stm32_example1.xml <a class="el" href="module__usb_serial_stm32_example1.html">Serial-over-USB console on STM32</a></li>
 <li>usb_serial_stm32_example2.xml <a class="el" href="module__usb_serial_stm32_example2.html">STM32 USB-serial example</a></li>
 </ul>
 <h2><a class="anchor" id="modules_category_computer_vision"></a>
 Computer_Vision modules</h2>
 <ul>
-<li>image_nc_send.xml <a class="el" href="module__image_nc_send.html">Download Images from ARDone 2 with netcat</a></li>
-<li>video_rtp_stream.xml <a class="el" href="module__video_rtp_stream.html">Video stream of ARDone 2 front camera</a></li>
+<li>bebop_front_camera.xml <a class="el" href="module__bebop_front_camera.html">Video streaming for the Bebop front camera</a></li>
+<li>cv_colorfilter.xml <a class="el" href="module__cv_colorfilter.html">ColorFilter</a></li>
+<li>cv_detect_window.xml <a class="el" href="module__cv_detect_window.html">Detect window</a></li>
+<li>cv_georeference.xml <a class="el" href="module__cv_georeference.html">Geo-reference computer vision detections</a></li>
+<li>cv_opticflow.xml <a class="el" href="module__cv_opticflow.html">Compute optical flow</a></li>
+<li>video_exif.xml <a class="el" href="module__video_exif.html">Add EXIF data to any JPEG</a></li>
+<li>video_rtp_stream.xml <a class="el" href="module__video_rtp_stream.html">Video streaming for Linux devices</a></li>
+<li>video_thread.xml <a class="el" href="module__video_thread.html">Read video in a thread</a></li>
+<li>video_usb_logger.xml <a class="el" href="module__video_usb_logger.html">Log video and pose to USB-stick</a></li>
 </ul>
 <h2><a class="anchor" id="modules_category_core"></a>
 Core modules</h2>
@@ -178,6 +191,13 @@ Core modules</h2>
 <li>pwm_meas.xml <a class="el" href="module__pwm_meas.html">PWM measurement</a></li>
 <li>sys_mon.xml <a class="el" href="module__sys_mon.html">System monitor</a></li>
 <li>trig_test.xml <a class="el" href="module__trig_test.html">Trigger Ext</a></li>
+</ul>
+<h2><a class="anchor" id="modules_category_ctrl"></a>
+Ctrl modules</h2>
+<ul>
+<li>ctrl_module_demo.xml <a class="el" href="module__ctrl_module_demo.html">Demo Control Module</a></li>
+<li>gain_scheduling.xml <a class="el" href="module__gain_scheduling.html">Gain set interpolation</a></li>
+<li>vertical_ctrl_module_demo.xml <a class="el" href="module__vertical_ctrl_module_demo.html">Demo Vertical Control Module</a></li>
 </ul>
 <h2><a class="anchor" id="modules_category_datalink"></a>
 Datalink modules</h2>
@@ -190,12 +210,31 @@ Datalink modules</h2>
 <h2><a class="anchor" id="modules_category_digital_cam"></a>
 Digital_Cam modules</h2>
 <ul>
-<li>digital_cam.xml <a class="el" href="module__digital_cam.html">Digital camera control (trigger using GPIO)</a></li>
-<li>digital_cam_i2c.xml <a class="el" href="module__digital_cam_i2c.html">Trigger Digital Camera (I2C)</a></li>
-<li>digital_cam_servo.xml <a class="el" href="module__digital_cam_servo.html">Digital camera control (trigger using servo)</a></li>
+<li>digital_cam.xml <a class="el" href="module__digital_cam.html">Digital Photo Camera Triggering (using a GPIO pin)</a></li>
+<li>digital_cam_i2c.xml <a class="el" href="module__digital_cam_i2c.html">Digital Photo Camera Triggering (using a I2C channel)</a></li>
+<li>digital_cam_servo.xml <a class="el" href="module__digital_cam_servo.html">Digital Photo Camera Triggering (using a servo)</a></li>
 <li>digital_cam_shoot_rc.xml <a class="el" href="module__digital_cam_shoot_rc.html">Digital camera control using radio channel</a></li>
-<li>digital_cam_uart.xml <a class="el" href="module__digital_cam_uart.html">Digital Camera Triggering over UART link</a></li>
+<li>digital_cam_uart.xml <a class="el" href="module__digital_cam_uart.html">Digital Photo Camera Triggering (using a UART link)</a></li>
+<li>digital_cam_video.xml <a class="el" href="module__digital_cam_video.html">Digital Photo Camera Triggering (using embedded video)</a></li>
 <li>hackhd.xml <a class="el" href="module__hackhd.html">HackHD control</a></li>
+</ul>
+<h2><a class="anchor" id="modules_category_display"></a>
+Display modules</h2>
+<ul>
+<li>lcd_dogm.xml <a class="el" href="module__lcd_dogm.html">EA DOG-M163 LCD (SPI)</a></li>
+<li>osd_max7456.xml <a class="el" href="module__osd_max7456.html">MAX7456 driver (SPI)</a></li>
+</ul>
+<h2><a class="anchor" id="modules_category_energy"></a>
+Energy modules</h2>
+<ul>
+<li>MPPT.xml <a class="el" href="module__mppt.html">Maximum Power Point Tracker</a></li>
+<li>bat_checker.xml <a class="el" href="module__bat_checker.html">Battery checker module</a></li>
+</ul>
+<h2><a class="anchor" id="modules_category_gps"></a>
+Gps modules</h2>
+<ul>
+<li>gps_i2c.xml <a class="el" href="module__gps_i2c.html">U-blox GPS (I2C)</a></li>
+<li>gps_ubx_ucenter.xml <a class="el" href="module__gps_ubx_ucenter.html">Ublox GPS autoconfiguration</a></li>
 </ul>
 <h2><a class="anchor" id="modules_category_ins"></a>
 Ins modules</h2>
@@ -210,13 +249,22 @@ Ins modules</h2>
 <li>ins_xsens_MTiG_Uart0.xml <a class="el" href="module__ins_xsens_mtig_uart0.html">XSens MTiG</a></li>
 <li>ins_xsens_MTi_Uart0.xml <a class="el" href="module__ins_xsens_mti_uart0.html">XSens MTi</a></li>
 </ul>
+<h2><a class="anchor" id="modules_category_light"></a>
+Light modules</h2>
+<ul>
+<li>led_safety_status.xml <a class="el" href="module__led_safety_status.html">LED safety indicator</a></li>
+<li>light.xml <a class="el" href="module__light.html">Navigation leds</a></li>
+</ul>
 <h2><a class="anchor" id="modules_category_loggers"></a>
 Loggers modules</h2>
 <ul>
 <li>direct_memory_logger.xml <a class="el" href="module__direct_memory_logger.html">Directly log values to memory for flash chips</a></li>
-<li>file_logger.xml <a class="el" href="module__file_logger.html">Logs to a csv file (only for linux)</a></li>
-<li>high_speed_logger_direct_memory.xml <a class="el" href="module__high_speed_logger_direct_memory.html">SPI logger</a></li>
-<li>high_speed_logger_spi_link.xml <a class="el" href="module__high_speed_logger_spi_link.html">Connect to external High-Speed SD-logger via SPI</a></li>
+<li>flight_recorder.xml <a class="el" href="module__flight_recorder.html">Record flight data according to your telemetry file</a></li>
+<li>logger_dataflash.xml <a class="el" href="module__logger_dataflash.html">SPI logger</a></li>
+<li>logger_file.xml <a class="el" href="module__logger_file.html">Logs to a csv file</a></li>
+<li>logger_spi_link.xml <a class="el" href="module__logger_spi_link.html">Stream all IMU data to external High-Speed SD-logger via SPI</a></li>
+<li>logger_uart.xml <a class="el" href="module__logger_uart.html">Stream IMU raw data over UART for off-board logging</a></li>
+<li>openlog.xml <a class="el" href="module__openlog.html">OpenLog telemetry timestamp</a></li>
 </ul>
 <h2><a class="anchor" id="modules_category_meteo"></a>
 Meteo modules</h2>
@@ -252,6 +300,7 @@ Mission modules</h2>
 <h2><a class="anchor" id="modules_category_multi"></a>
 Multi modules</h2>
 <ul>
+<li>drop_zone.xml <a class="el" href="module__drop_zone.html">Only for selecting a drop zone</a></li>
 <li>follow.xml <a class="el" href="module__follow.html">Follow a certain AC_ID trough remote GPS</a></li>
 <li>formation_flight.xml <a class="el" href="module__formation_flight.html">Formation flight control</a></li>
 <li>potential.xml <a class="el" href="module__potential.html">Potential fields collision avoidance</a></li>
@@ -269,11 +318,14 @@ Nav modules</h2>
 <li>nav_line.xml <a class="el" href="module__nav_line.html">Fixedwing navigation along a line with nice U-turns</a></li>
 <li>nav_line_border.xml <a class="el" href="module__nav_line_border.html">navigate along a border line (line 1-2) with turns in the same direction</a></li>
 <li>nav_line_osam.xml <a class="el" href="module__nav_line_osam.html">Fly along a line</a></li>
+<li>nav_poles.xml <a class="el" href="module__nav_poles.html">Navigate around two poles</a></li>
 <li>nav_smooth.xml <a class="el" href="module__nav_smooth.html">Smooth navigation to wp_a along an arc (around wp_cd), a segment (from wp_rd to wp_ta) and a second arc (around wp_ca)</a></li>
 <li>nav_spiral.xml <a class="el" href="module__nav_spiral.html">Fixedwing navigation in a spiral/helix</a></li>
 <li>nav_survey_disc.xml <a class="el" href="module__nav_survey_disc.html">Disc Survey</a></li>
 <li>nav_survey_poly_osam.xml <a class="el" href="module__nav_survey_poly_osam.html">Polygon survey from OSAM</a></li>
+<li>nav_survey_poly_rotorcraft.xml <a class="el" href="module__nav_survey_poly_rotorcraft.html">Polygon survey from OSAM</a></li>
 <li>nav_survey_polygon.xml <a class="el" href="module__nav_survey_polygon.html">Survey a polygon with a fixedwing</a></li>
+<li>nav_survey_rectangle_rotorcraft.xml <a class="el" href="module__nav_survey_rectangle_rotorcraft.html">Survey a rectangle with a rotorcraft</a></li>
 <li>nav_survey_zamboni.xml <a class="el" href="module__nav_survey_zamboni.html">Zamboni pattern survey for fixedwings</a></li>
 <li>nav_vertical_raster.xml <a class="el" href="module__nav_vertical_raster.html">Copy of nav line with altitude changes at every sweep</a></li>
 <li>takeoff_detect.xml <a class="el" href="module__takeoff_detect.html">Fixed-wing automatic launch detection</a></li>
@@ -283,6 +335,7 @@ Nav modules</h2>
 Sensors modules</h2>
 <ul>
 <li>AOA_adc.xml <a class="el" href="module__aoa_adc.html">Angle of Attack using internal ADC</a></li>
+<li>AOA_pwm.xml <a class="el" href="module__aoa_pwm.html">Angle of Attack sensor using PWM input</a></li>
 <li>airspeed_adc.xml <a class="el" href="module__airspeed_adc.html">Airspeed sensor (ADC)</a></li>
 <li>airspeed_ads1114.xml <a class="el" href="module__airspeed_ads1114.html">ADS1114 airspeed sensor</a></li>
 <li>airspeed_amsys.xml <a class="el" href="module__airspeed_amsys.html">Airspeed AMSYS (I2C)</a></li>
@@ -301,6 +354,7 @@ Sensors modules</h2>
 <li>baro_scp.xml <a class="el" href="module__baro_scp.html">VTI SCP1000 pressure sensor (SPI)</a></li>
 <li>baro_scp_i2c.xml <a class="el" href="module__baro_scp_i2c.html">VTI SCP1000 pressure sensor (I2C)</a></li>
 <li>baro_sim.xml <a class="el" href="module__baro_sim.html">Simulated barometer</a></li>
+<li>bat_voltage_ardrone2.xml <a class="el" href="module__bat_voltage_ardrone2.html">Battery voltage reading for ARDrone2</a></li>
 <li>ezcurrent.xml <a class="el" href="module__ezcurrent.html">EzOSD Current sensor (I2C)</a></li>
 <li>imu_mpu9250.xml <a class="el" href="module__imu_mpu9250.html">Test module for the mpu9250 with I2C</a></li>
 <li>infrared_adc.xml <a class="el" href="module__infrared_adc.html">Infrared sensor using ADC</a></li>
@@ -309,6 +363,7 @@ Sensors modules</h2>
 <li>mag_hmc58xx.xml <a class="el" href="module__mag_hmc58xx.html">HMC58xx magnetometer</a></li>
 <li>mag_micromag_fw.xml <a class="el" href="module__mag_micromag_fw.html">Micromag magnetometer</a></li>
 <li>pbn.xml <a class="el" href="module__pbn.html">Pressure Board Navarro</a></li>
+<li>stereocam.xml <a class="el" href="module__stereocam.html">StereoCamera read and decode</a></li>
 <li>temp_adc.xml <a class="el" href="module__temp_adc.html">Temperature ADC</a></li>
 <li>trigger_ext.xml <a class="el" href="module__trigger_ext.html">External trigger</a></li>
 </ul>
@@ -323,36 +378,29 @@ Sonar modules</h2>
 <ul>
 <li>agl_dist.xml <a class="el" href="module__agl_dist.html">Get sonar values from ABI and store last and filtered values</a></li>
 <li>sonar_adc.xml <a class="el" href="module__sonar_adc.html">Sonar ADC driver</a></li>
+<li>sonar_bebop.xml <a class="el" href="module__sonar_bebop.html">Bebop Sonar driver</a></li>
 </ul>
 <h2><a class="anchor" id="modules_category_misc"></a>
 Misc modules</h2>
 <ul>
-<li>MPPT.xml <a class="el" href="module__mppt.html">Maximum Power Point Tracker</a></li>
+<li>ahrs_infrared.xml <a class="el" href="module__ahrs_infrared.html">AHRS infrared</a></li>
 <li>air_data.xml <a class="el" href="module__air_data.html">AirData interface</a></li>
 <li>airborne_ant_track.xml <a class="el" href="module__airborne_ant_track.html">Airborne Antenna tracker</a></li>
-<li>bat_checker.xml <a class="el" href="module__bat_checker.html">Battery checker module</a></li>
 <li>configure_actuators_mkk_v2.xml <a class="el" href="module__configure_actuators_mkk_v2.html">Configure Mikrokopter MKK v2</a></li>
+<li>cv_qrcode.xml <a class="el" href="module__cv_qrcode.html">QR code reader using ZBAR library</a></li>
 <li>demo_module.xml <a class="el" href="module__demo_module.html">Demo module</a></li>
-<li>deploy_sonar_buoy.xml <a class="el" href="module__deploy_sonar_buoy.html">Toggle two gpio pins (Lisa)</a></li>
 <li>enose.xml <a class="el" href="module__enose.html">Chemical Enose sensor</a></li>
-<li>gain_scheduling.xml <a class="el" href="module__gain_scheduling.html">Gain set interpolation</a></li>
 <li>gas_engine_idle.xml <a class="el" href="module__gas_engine_idle.html">Gas Engine Idle</a></li>
 <li>geo_mag.xml <a class="el" href="module__geo_mag.html">GeoMagnetic field vector</a></li>
-<li>gps_i2c.xml <a class="el" href="module__gps_i2c.html">U-blox GPS (I2C)</a></li>
 <li>gps_ublox.xml <a class="el" href="module__gps_ublox.html">U-blox GPS (UART)</a></li>
-<li>gps_ubx_ucenter.xml <a class="el" href="module__gps_ubx_ucenter.html">Ublox GPS autoconfiguration</a></li>
 <li>gsm.xml <a class="el" href="module__gsm.html">GSM module</a></li>
 <li>gumstix_qr_code_spi_link.xml <a class="el" href="module__gumstix_qr_code_spi_link.html">QR code gumstix interface</a></li>
 <li>hott_telemetry.xml <a class="el" href="module__hott_telemetry.html">Graupner HOTT telemetry control module</a></li>
-<li>lcd_dogm.xml <a class="el" href="module__lcd_dogm.html">EA DOG-M163 LCD (SPI)</a></li>
-<li>led_safety_status.xml <a class="el" href="module__led_safety_status.html">LED safety indicator</a></li>
-<li>light.xml <a class="el" href="module__light.html">Navigation leds</a></li>
 <li>max3100.xml <a class="el" href="module__max3100.html">MAX3100 SPI/Uart converter</a></li>
-<li>openlog.xml <a class="el" href="module__openlog.html">Openlog on-board data logger</a></li>
-<li>osd_max7456.xml <a class="el" href="module__osd_max7456.html">MAX7456 driver (SPI)</a></li>
-<li>poles.xml <a class="el" href="module__poles.html">Navigate around two poles</a></li>
+<li>opticflow_hover.xml <a class="el" href="module__opticflow_hover.html">Hovers the drone based on optical flow made for Linux video Devices</a></li>
 <li>px4flow.xml <a class="el" href="module__px4flow.html">PX4FLOW optical flow sensor</a></li>
 <li>send_imu_mag_current.xml <a class="el" href="module__send_imu_mag_current.html">Enables sending of IMU_MAG_CURRENT_CALIBRATION message</a></li>
+<li>stereoavoid.xml <a class="el" href="module__stereoavoid.html">Read Stereoboard Obstacle Protocol</a></li>
 <li>time_countdown.xml <a class="el" href="module__time_countdown.html">Count down time</a></li>
 <li>vehicle_interface_datalink.xml <a class="el" href="module__vehicle_interface_datalink.html">Vehicule Interface over Datalink</a> </li>
 </ul>
@@ -361,7 +409,7 @@ Misc modules</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:16 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:38 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

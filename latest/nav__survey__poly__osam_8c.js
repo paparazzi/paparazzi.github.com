@@ -1,7 +1,14 @@
 var nav__survey__poly__osam_8c =
 [
-    [ "Point2D", "structPoint2D.html", "structPoint2D" ],
-    [ "Line", "structLine.html", "structLine" ],
+    [ "Point2D", "nav__survey__poly__rotorcraft_8c.html#structPoint2D", [
+      [ "x", "nav__survey__poly__rotorcraft_8c.html#a2a5ef0ad00bc9e912a9aefcedf004cc4", null ],
+      [ "y", "nav__survey__poly__rotorcraft_8c.html#a989485fd2d8026ceec5d57e8c7e629ab", null ]
+    ] ],
+    [ "Line", "nav__survey__poly__rotorcraft_8c.html#structLine", [
+      [ "b", "nav__survey__poly__rotorcraft_8c.html#a7fccb394f787fbd80f70cbec0e867afc", null ],
+      [ "m", "nav__survey__poly__rotorcraft_8c.html#aac60a3e9158de0a939538303cb109f4a", null ],
+      [ "x", "nav__survey__poly__rotorcraft_8c.html#abdce432b7f0d8cf162f3b132b07dd223", null ]
+    ] ],
     [ "LINE_START_FUNCTION", "nav__survey__poly__osam_8c.html#a86a682e52e440368e6ca96062ef7563f", null ],
     [ "LINE_STOP_FUNCTION", "nav__survey__poly__osam_8c.html#a2788d8683c98c074cb18680dc2eea0af", null ],
     [ "MaxFloat", "nav__survey__poly__osam_8c.html#a75197b2a5458093f02e396c7429f64ad", null ],
@@ -18,7 +25,11 @@ var nav__survey__poly__osam_8c =
       [ "Init", "nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5a1ff76aa808bb8209a13fcdbaf330587e", null ],
       [ "Entry", "nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5a6429a96682b7c66ac1c02883210c1d87", null ],
       [ "Sweep", "nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5a6e181b59624c49600dfdb1df3b47272f", null ],
-      [ "SweepCircle", "nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5ac555870e8a5a6176a7a76bd11a66065c", null ]
+      [ "SweepCircle", "nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5ac555870e8a5a6176a7a76bd11a66065c", null ],
+      [ "Init", "nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5a1ff76aa808bb8209a13fcdbaf330587e", null ],
+      [ "Entry", "nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5a6429a96682b7c66ac1c02883210c1d87", null ],
+      [ "Sweep", "nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5a6e181b59624c49600dfdb1df3b47272f", null ],
+      [ "Turn", "nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5a0c1b9bb2e704447170944d00fcca57a3", null ]
     ] ],
     [ "EvaluateLineForX", "nav__survey__poly__osam_8c.html#a369fb753abd22e08ec5990479b0dcbcf", null ],
     [ "FindInterceptOfTwoLines", "nav__survey__poly__osam_8c.html#a7d7df26d6723c61622ad77133554b6f1", null ],

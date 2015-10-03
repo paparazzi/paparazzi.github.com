@@ -1,5 +1,7 @@
 var NAVTREEINDEX78 =
 {
+"structBmp085Calib.html#aaa0836154f063ceb898f536e933aeec7":[9,0,45,0],
+"structBmp085Calib.html#adff670f9aa97dfec1ccd2aa7511f51f6":[9,0,45,4],
 "structBoozFmsTestSignal.html":[9,0,47],
 "structBoozFmsTestSignal.html#a0d97de47f997cabc4d36b72266087e0c":[9,0,47,0],
 "structBoozFmsTestSignal.html#a4e7953a270a5c5c7f904140ae07b1b0b":[9,0,47,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX78 =
 "structGpsSirf.html#a212d0d48af03650bdfc9f37c756e3a57":[9,0,105,4],
 "structGpsSirf.html#a56cef446eae82de87ebaec239e5b7abc":[9,0,105,3],
 "structGpsSirf.html#a5908743d6fc0c2beb28d384386d8c094":[9,0,105,2],
-"structGpsSirf.html#a60327af7dcf70c2d9d6ce3122ee6d4ae":[9,0,105,1],
-"structGpsSkytraq.html":[9,0,106],
-"structGpsSkytraq.html#a0555e2341b230fb5eb5df2a5bd1a6783":[9,0,106,1]
+"structGpsSirf.html#a60327af7dcf70c2d9d6ce3122ee6d4ae":[9,0,105,1]
 };

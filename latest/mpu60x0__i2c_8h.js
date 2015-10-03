@@ -1,6 +1,24 @@
 var mpu60x0__i2c_8h =
 [
-    [ "Mpu60x0_I2c", "structMpu60x0__I2c.html", "structMpu60x0__I2c" ],
+    [ "Mpu60x0_I2c", "mpu60x0__i2c_8h.html#structMpu60x0__I2c", [
+      [ "config", "mpu60x0__i2c_8h.html#ac45f59044e30e1a4ee17083ba692fba0", null ],
+      [ "data_accel", "mpu60x0__i2c_8h.html#a99733a2aa22315d86b46f47776670f4a", null ],
+      [ "data_available", "mpu60x0__i2c_8h.html#a87ac6605726cc59b9faf824037b547b0", null ],
+      [ "data_ext", "mpu60x0__i2c_8h.html#a3a6d42f76a6324241321ebe8619c5ae6", null ],
+      [ "data_rates", "mpu60x0__i2c_8h.html#a151015ed66dd541510d58963ccffa978", null ],
+      [ "i2c_p", "mpu60x0__i2c_8h.html#ab63fc0849edf6216a851937298063d43", null ],
+      [ "i2c_trans", "mpu60x0__i2c_8h.html#a0436de01984b618448ea9313b92e1a1f", null ],
+      [ "slave_init_status", "mpu60x0__i2c_8h.html#a7efe7010fe6adf3c974b7f38a8692d90", null ],
+      [ "temp", "mpu60x0__i2c_8h.html#ac0e18c343d06b35e70eedcf0ec178303", null ]
+    ] ],
+    [ "Mpu60x0_I2c.data_accel", "mpu60x0__i2c_8h.html#unionMpu60x0__I2c_8data__accel", [
+      [ "value", "mpu60x0__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383", null ],
+      [ "vect", "mpu60x0__i2c_8h.html#a4384543978c11a2d3da5c6cfeed94998", null ]
+    ] ],
+    [ "Mpu60x0_I2c.data_rates", "mpu60x0__i2c_8h.html#unionMpu60x0__I2c_8data__rates", [
+      [ "rates", "mpu60x0__i2c_8h.html#a6cd8b57ad8ec40b32215dcb1c8c76af2", null ],
+      [ "value", "mpu60x0__i2c_8h.html#ab07053fcb6afcb4d09e8f337b615d383", null ]
+    ] ],
     [ "MPU60X0_BUFFER_EXT_LEN", "mpu60x0__i2c_8h.html#a6b700f6c51b798ceb4ba491922f6531e", null ],
     [ "Mpu60x0I2cSlaveInitStatus", "mpu60x0__i2c_8h.html#abed36615673c5b421855c1f103caa2f1", [
       [ "MPU60X0_I2C_CONF_UNINIT", "mpu60x0__i2c_8h.html#abed36615673c5b421855c1f103caa2f1a53bd61ab0ec7230225bd2950e352bbee", null ],

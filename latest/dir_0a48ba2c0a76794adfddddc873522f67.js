@@ -21,6 +21,8 @@ var dir_0a48ba2c0a76794adfddddc873522f67 =
     [ "cyrf6936.c", "cyrf6936_8c.html", "cyrf6936_8c" ],
     [ "cyrf6936.h", "cyrf6936_8h.html", "cyrf6936_8h" ],
     [ "cyrf6936_regs.h", "cyrf6936__regs_8h.html", "cyrf6936__regs_8h" ],
+    [ "eeprom25AA256.c", "eeprom25AA256_8c.html", "eeprom25AA256_8c" ],
+    [ "eeprom25AA256.h", "eeprom25AA256_8h.html", "eeprom25AA256_8h" ],
     [ "hmc5843.c", "hmc5843_8c.html", "hmc5843_8c" ],
     [ "hmc5843.h", "hmc5843_8h.html", "hmc5843_8h" ],
     [ "hmc58xx.c", "hmc58xx_8c.html", "hmc58xx_8c" ],
@@ -74,6 +76,11 @@ var dir_0a48ba2c0a76794adfddddc873522f67 =
     [ "ms5611_spi.h", "ms5611__spi_8h.html", "ms5611__spi_8h" ],
     [ "sc18i600.c", "sc18i600_8c.html", "sc18i600_8c" ],
     [ "sc18i600.h", "sc18i600_8h.html", "sc18i600_8h" ],
+    [ "sdcard_spi.c", "sdcard__spi_8c.html", "sdcard__spi_8c" ],
+    [ "sdcard_spi.h", "sdcard__spi_8h.html", "sdcard__spi_8h" ],
     [ "sst25vfxxxx.c", "sst25vfxxxx_8c.html", "sst25vfxxxx_8c" ],
-    [ "sst25vfxxxx.h", "sst25vfxxxx_8h.html", "sst25vfxxxx_8h" ]
+    [ "sst25vfxxxx.h", "sst25vfxxxx_8h.html", "sst25vfxxxx_8h" ],
+    [ "video_device.h", "video__device_8h.html", "video__device_8h" ],
+    [ "vn200_serial.c", "vn200__serial_8c.html", "vn200__serial_8c" ],
+    [ "vn200_serial.h", "vn200__serial_8h.html", "vn200__serial_8h" ]
 ];

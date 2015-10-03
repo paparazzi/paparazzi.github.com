@@ -1,7 +1,25 @@
 var mpu9250_8h =
 [
-    [ "Mpu9250I2cSlave", "structMpu9250I2cSlave.html", "structMpu9250I2cSlave" ],
-    [ "Mpu9250Config", "structMpu9250Config.html", "structMpu9250Config" ],
+    [ "Mpu9250I2cSlave", "mpu9250_8h.html#structMpu9250I2cSlave", [
+      [ "configure", "mpu9250_8h.html#a1c222e77b3835921701803bffc4d61d9", null ]
+    ] ],
+    [ "Mpu9250Config", "mpu9250_8h.html#structMpu9250Config", [
+      [ "accel_range", "mpu9250_8h.html#acc1cbb496e5ea43bf9a0794045c7573e", null ],
+      [ "clk_sel", "mpu9250_8h.html#a0f73249f413cf67b324e878300e640a7", null ],
+      [ "dlpf_accel_cfg", "mpu9250_8h.html#aa70b0cd2b4d4ac64956c369549b905ef", null ],
+      [ "dlpf_gyro_cfg", "mpu9250_8h.html#a0ce190425b2c115218430aa7c247b320", null ],
+      [ "drdy_int_enable", "mpu9250_8h.html#ac2b96fb59e85eea86a7d5c790ba385d6", null ],
+      [ "gyro_range", "mpu9250_8h.html#a6d5fe6ab403c651cef753c1409fc016d", null ],
+      [ "i2c_bypass", "mpu9250_8h.html#a40d9d57be11b86414eebf35e03e1baa8", null ],
+      [ "i2c_mst_clk", "mpu9250_8h.html#a66a23a2b2af6f5a6be820ec2f3cc99ba", null ],
+      [ "i2c_mst_delay", "mpu9250_8h.html#a5dbcd328c27bdfb517b28695416dab5c", null ],
+      [ "init_status", "mpu9250_8h.html#ab6e4b811de53bd7e90b4ca9aff594d5e", null ],
+      [ "initialized", "mpu9250_8h.html#afa18245a65b81dfe386fd8bdb7aa9413", null ],
+      [ "nb_bytes", "mpu9250_8h.html#a80ee0c5434de57f6f25ba3bc09d50b78", null ],
+      [ "nb_slaves", "mpu9250_8h.html#a69947f1fe40926633938b1f52ccb1d45", null ],
+      [ "slaves", "mpu9250_8h.html#ad7ee6aa9b9c31536927b958b713a0452", null ],
+      [ "smplrt_div", "mpu9250_8h.html#ab1ab338ddc1260c0a36bebbea83e5d63", null ]
+    ] ],
     [ "MPU9250_DEFAULT_AFS_SEL", "mpu9250_8h.html#a3222bed0929b90cf347dd57ed249f345", null ],
     [ "MPU9250_DEFAULT_CLK_SEL", "mpu9250_8h.html#a6ff69bee72b3c2a1df4c6f131acd21aa", null ],
     [ "MPU9250_DEFAULT_DLPF_ACCEL_CFG", "mpu9250_8h.html#a8f66a2ca6c67979f76e55e3861e6aaa3", null ],

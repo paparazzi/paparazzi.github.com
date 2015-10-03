@@ -1,6 +1,9 @@
 var actuators__mkk_8h =
 [
-    [ "ActuatorsMkk", "structActuatorsMkk.html", "structActuatorsMkk" ],
+    [ "ActuatorsMkk", "actuators__mkk_8h.html#structActuatorsMkk", [
+      [ "submit_err_cnt", "actuators__mkk_8h.html#ace349686b8fa35bbeccbfdc9b9fcd47a", null ],
+      [ "trans", "actuators__mkk_8h.html#aa0d77df760e4f8a4ad2d9bcc869f920c", null ]
+    ] ],
     [ "ActuatorMkkSet", "actuators__mkk_8h.html#a1f4f53e79b3ade1d69596e4afc00b807", null ],
     [ "ActuatorsMkkCommit", "actuators__mkk_8h.html#af7645a244667b86fa096fc1623f6d505", null ],
     [ "ActuatorsMkkInit", "actuators__mkk_8h.html#a3ed1caf21a23b69d1b76a09aae8eb84f", null ],

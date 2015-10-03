@@ -1,6 +1,13 @@
 var sc18i600_8h =
 [
-    [ "Sc18Is600", "structSc18Is600.html", "structSc18Is600" ],
+    [ "Sc18Is600", "sc18i600_8h.html#structSc18Is600", [
+      [ "i2c_status", "sc18i600_8h.html#a585fc94273f6258ad9e642fb6102b712", null ],
+      [ "priv_rx_buf", "sc18i600_8h.html#a722c9537f72c79e04de8ac34775a669b", null ],
+      [ "priv_tx_buf", "sc18i600_8h.html#a410a918ed5fd1639f8600211480c5be8", null ],
+      [ "rx_len", "sc18i600_8h.html#ae619e989eea32e01a2da3a29ef4215c4", null ],
+      [ "status", "sc18i600_8h.html#a30a1d34f516fa34a88b682784eaf8d64", null ],
+      [ "transaction", "sc18i600_8h.html#a04a46144a26532e0cef5d1658b8e0418", null ]
+    ] ],
     [ "SC18IS600_BUF_LEN", "sc18i600_8h.html#a3b9fd83a2eebe1db2c2ec031b71fa42f", null ],
     [ "Sc18Is600_I2CAdr", "sc18i600_8h.html#ae7b01ef0e67a76c8f1818747562fdb21", null ],
     [ "Sc18Is600_I2CClock", "sc18i600_8h.html#a5496f45b69442c13fb96ec826fb5c8b1", null ],

@@ -3,6 +3,7 @@ var searchData=
   ['paparazzi_20developer_27s_20guide',['Paparazzi Developer&apos;s Guide',['../index.html',1,'']]],
   ['ptu_20board_20from_20meteo_20france_20_28pressure_2c_20temperature_2c_20humidity_29',['PTU board from Meteo France (pressure, temperature, humidity)',['../module__mf_ptu.html',1,'onboard_modules']]],
   ['polygon_20survey_20from_20osam',['Polygon survey from OSAM',['../module__nav_survey_poly_osam.html',1,'onboard_modules']]],
+  ['polygon_20survey_20from_20osam',['Polygon survey from OSAM',['../module__nav_survey_poly_rotorcraft.html',1,'onboard_modules']]],
   ['pressure_20board_20navarro',['Pressure Board Navarro',['../module__pbn.html',1,'onboard_modules']]],
   ['photogrammetry_20navigation_20functions',['Photogrammetry navigation functions',['../module__photogrammetry_calculator.html',1,'onboard_modules']]],
   ['potential_20fields_20collision_20avoidance',['Potential fields collision avoidance',['../module__potential.html',1,'onboard_modules']]],

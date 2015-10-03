@@ -1,6 +1,10 @@
 var imu__nps_8h =
 [
-    [ "ImuNps", "structImuNps.html", "structImuNps" ],
+    [ "ImuNps", "imu__nps_8h.html#structImuNps", [
+      [ "accel_available", "imu__nps_8h.html#affdfaed8b6dbb49c41b8615817a80cbb", null ],
+      [ "gyro_available", "imu__nps_8h.html#acdb60db0f4e817b6bd5b2a0b1d96615b", null ],
+      [ "mag_available", "imu__nps_8h.html#ae9310ba211a69592dade8f317e221784", null ]
+    ] ],
     [ "IMU_ACCEL_X_SENS", "imu__nps_8h.html#a8ac88fc00cde506229b92c6a1e2c3122", null ],
     [ "IMU_ACCEL_X_SENS_DEN", "imu__nps_8h.html#a8acf299c1bfb2daa92b1894556ca50ad", null ],
     [ "IMU_ACCEL_X_SENS_NUM", "imu__nps_8h.html#ada91099469f16df2d8aeafa82d365c4b", null ],
@@ -28,9 +32,9 @@ var imu__nps_8h =
     [ "IMU_MAG_Z_SENS", "imu__nps_8h.html#a4adf0ec19c7be873b877295e46eac2f7", null ],
     [ "IMU_MAG_Z_SENS_DEN", "imu__nps_8h.html#aed0226a9d2f4d9d8dc774efcdf5a1051", null ],
     [ "IMU_MAG_Z_SENS_NUM", "imu__nps_8h.html#af3e261fd1968aa63c116a5cbdbc322b5", null ],
+    [ "ImuEvent", "imu__nps_8h.html#a38f1122c1ee0701562b490c6e1b60609", null ],
     [ "imu_feed_gyro_accel", "imu__nps_8h.html#a3eda401c67dfeee490285016ec944e48", null ],
     [ "imu_feed_mag", "imu__nps_8h.html#a18428bf984166238838fe9d1a4842b5e", null ],
-    [ "ImuEvent", "imu__nps_8h.html#a9d95db588addd0a03f6e7e749fbb032a", null ],
-    [ "ImuMagEvent", "imu__nps_8h.html#a0e0c4e851b209de874d5b72572ea7c4d", null ],
+    [ "imu_nps_event", "imu__nps_8h.html#ab288e8eb3d91d5c0e27e6f34cbe5e5ac", null ],
     [ "imu_nps", "imu__nps_8h.html#ad6e7c496430e1f1a0f673f23b5bcdb7d", null ]
 ];

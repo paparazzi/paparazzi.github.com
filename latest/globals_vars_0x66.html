@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('globals_vars_0x66.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -178,15 +178,9 @@ $(document).ready(function(){initNavTree('globals_vars_0x66.html','');});
 : <a class="el" href="inter__mcu_8c.html#a1a4da5ac6e76b01f83b00facee8f3dbf">inter_mcu.c</a>
 </li>
 <li>fd
-: <a class="el" href="electrical__raw_8c.html#a6f8059414f0228f0256115e024eeed4b">electrical_raw.c</a>
-, <a class="el" href="serial_8c.html#a6f8059414f0228f0256115e024eeed4b">serial.c</a>
+: <a class="el" href="serial_8c.html#a6f8059414f0228f0256115e024eeed4b">serial.c</a>
 , <a class="el" href="serial_8h.html#a6f8059414f0228f0256115e024eeed4b">serial.h</a>
-</li>
-<li>fdct_coeff
-: <a class="el" href="jpeg_8c.html#a37d0890d31f8f5a289a9cca23fffc0fa">jpeg.c</a>
-</li>
-<li>fdct_temp
-: <a class="el" href="jpeg_8c.html#ac928bf63d845025f274eb5fbd4024748">jpeg.c</a>
+, <a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">bat_voltage_ardrone2.c</a>
 </li>
 <li>fhih_humid
 : <a class="el" href="humid__hih_8c.html#a97fa87a42640823c2a0146be4ef0a8a7">humid_hih.c</a>
@@ -208,6 +202,27 @@ $(document).ready(function(){initNavTree('globals_vars_0x66.html','');});
 <li>file_logger
 : <a class="el" href="file__logger_8c.html#aedf964b4eac186cec0fa29db265ad5d1">file_logger.c</a>
 </li>
+<li>filt_accel_ned
+: <a class="el" href="guidance__indi_8c.html#a929f52fa57bbf50e6722ada153bface8">guidance_indi.c</a>
+</li>
+<li>filt_accel_ned_d
+: <a class="el" href="guidance__indi_8c.html#a3833cc616e99c8bda12799af4b5c62cc">guidance_indi.c</a>
+</li>
+<li>filt_accel_ned_dd
+: <a class="el" href="guidance__indi_8c.html#ad878b95c60901fc8c72103f6f4d22397">guidance_indi.c</a>
+</li>
+<li>filt_accelzbody
+: <a class="el" href="guidance__indi_8c.html#ad0ce8f3621b2e1577bb96a2432d2d77a">guidance_indi.c</a>
+</li>
+<li>filt_accelzbodyd
+: <a class="el" href="guidance__indi_8c.html#af7138efc50c13cf1bdfa6fe67f640084">guidance_indi.c</a>
+</li>
+<li>filt_accelzbodydd
+: <a class="el" href="guidance__indi_8c.html#a0b927bf98064e27ab8df558aa4c99962">guidance_indi.c</a>
+</li>
+<li>filter_omega
+: <a class="el" href="guidance__indi_8c.html#a8b8473714e286adf941d67404157aabb">guidance_indi.c</a>
+</li>
 <li>filter_x
 : <a class="el" href="hf__float_8c.html#afdb654ec9b7836802d036412dfd8ba09">hf_float.c</a>
 </li>
@@ -216,6 +231,18 @@ $(document).ready(function(){initNavTree('globals_vars_0x66.html','');});
 </li>
 <li>filter_z
 : <a class="el" href="hf__float_8c.html#a1c5039e7e44e6773680ce40c1c5df75b">hf_float.c</a>
+</li>
+<li>filter_zeta
+: <a class="el" href="guidance__indi_8c.html#a92b3073d15f395730aec8b553a7fc49c">guidance_indi.c</a>
+</li>
+<li>filtered_rate_2deriv_estimation
+: <a class="el" href="stabilization__attitude__quat__indi_8c.html#a9c628285d994ac93e25faaa1fe0649f2">stabilization_attitude_quat_indi.c</a>
+</li>
+<li>filtered_rate_deriv_estimation
+: <a class="el" href="stabilization__attitude__quat__indi_8c.html#a717d02be5e00375156fd1915cecb49df">stabilization_attitude_quat_indi.c</a>
+</li>
+<li>filtered_rate_estimation
+: <a class="el" href="stabilization__attitude__quat__indi_8c.html#a9bb62bfd254e545033c80c19d1b1b239">stabilization_attitude_quat_indi.c</a>
 </li>
 <li>FLBlockCount
 : <a class="el" href="nav__line__osam_8c.html#a6153b4202ff509ca28071434233c4ccb">nav_line_osam.c</a>
@@ -227,10 +254,22 @@ $(document).ready(function(){initNavTree('globals_vars_0x66.html','');});
 : <a class="el" href="nav__line__osam_8c.html#a0a9406a808d2eda7550be2796b37f3cc">nav_line_osam.c</a>
 </li>
 <li>flight_altitude
-: <a class="el" href="nav_8h.html#a1612ea0e1474e49b800cb3f497096523">nav.h</a>
+: <a class="el" href="nav_8c.html#a1612ea0e1474e49b800cb3f497096523">nav.c</a>
+, <a class="el" href="nav_8h.html#a1612ea0e1474e49b800cb3f497096523">nav.h</a>
 , <a class="el" href="navigation_8c.html#a1612ea0e1474e49b800cb3f497096523">navigation.c</a>
 , <a class="el" href="navigation_8h.html#a1612ea0e1474e49b800cb3f497096523">navigation.h</a>
-, <a class="el" href="nav_8c.html#a1612ea0e1474e49b800cb3f497096523">nav.c</a>
+</li>
+<li>flip_cmd_earth
+: <a class="el" href="guidance__flip_8c.html#aab57dd563b3850f0cb64d747125ba4d0">guidance_flip.c</a>
+</li>
+<li>flip_counter
+: <a class="el" href="guidance__flip_8c.html#a45268ad88fac212b77584a0b926ef3ff">guidance_flip.c</a>
+</li>
+<li>flip_rollout
+: <a class="el" href="guidance__flip_8c.html#a7a0e598e61d1486779fac7df256e332f">guidance_flip.c</a>
+</li>
+<li>flip_state
+: <a class="el" href="guidance__flip_8c.html#a1d86e4bf9b9a3fa58f3ed055a0acc6f9">guidance_flip.c</a>
 </li>
 <li>Flowerradius
 : <a class="el" href="nav__flower_8c.html#a749c10912d2da64cb074dc73352bfcc3">nav_flower.c</a>
@@ -266,16 +305,20 @@ $(document).ready(function(){initNavTree('globals_vars_0x66.html','');});
 <li>fo
 : <a class="el" href="chdk__pipe_8c.html#a67a6bf1b649a09da4a2df5ed5b83b67f">chdk_pipe.c</a>
 </li>
+<li>focus_length
+: <a class="el" href="cv__georeference_8c.html#aac02c1eaa59c4cc452ba76c1a2261b00">cv_georeference.c</a>
+, <a class="el" href="cv__georeference_8h.html#aac02c1eaa59c4cc452ba76c1a2261b00">cv_georeference.h</a>
+</li>
 <li>foo
 : <a class="el" href="main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4">main_demo5.c</a>
 </li>
 <li>force_climb_gain
-: <a class="el" href="potential_8c.html#a733641d1fb4e79d1e4e80daf4c5e09d0">potential.c</a>
-, <a class="el" href="potential_8h.html#a733641d1fb4e79d1e4e80daf4c5e09d0">potential.h</a>
+: <a class="el" href="potential_8h.html#a733641d1fb4e79d1e4e80daf4c5e09d0">potential.h</a>
+, <a class="el" href="potential_8c.html#a733641d1fb4e79d1e4e80daf4c5e09d0">potential.c</a>
 </li>
 <li>force_pos_gain
-: <a class="el" href="potential_8h.html#ab854e51b04432e809f3d60e85d19ded3">potential.h</a>
-, <a class="el" href="potential_8c.html#ab854e51b04432e809f3d60e85d19ded3">potential.c</a>
+: <a class="el" href="potential_8c.html#ab854e51b04432e809f3d60e85d19ded3">potential.c</a>
+, <a class="el" href="potential_8h.html#ab854e51b04432e809f3d60e85d19ded3">potential.h</a>
 </li>
 <li>force_speed_gain
 : <a class="el" href="potential_8c.html#adda93a003e9b84061c28b3b2ef8bea4b">potential.c</a>
@@ -291,8 +334,8 @@ $(document).ready(function(){initNavTree('globals_vars_0x66.html','');});
 : <a class="el" href="formation_8c.html#a05bf835a5f8bf8a92febf3e315c6e3f6">formation.c</a>
 </li>
 <li>form_mode
-: <a class="el" href="formation_8h.html#a5e08859d5f7c09e8d087590c1cc5d591">formation.h</a>
-, <a class="el" href="formation_8c.html#a5e08859d5f7c09e8d087590c1cc5d591">formation.c</a>
+: <a class="el" href="formation_8c.html#a8e178fe2764678e0d6ec092050a8f561">formation.c</a>
+, <a class="el" href="formation_8h.html#a8e178fe2764678e0d6ec092050a8f561">formation.h</a>
 </li>
 <li>form_n
 : <a class="el" href="formation_8c.html#a4141d483e08034d7dded913d3860a67e">formation.c</a>
@@ -315,14 +358,23 @@ $(document).ready(function(){initNavTree('globals_vars_0x66.html','');});
 , <a class="el" href="formation_8h.html#a86703694a52eca211bffb90b5163c75a">formation.h</a>
 </li>
 <li>fp_pitch
-: <a class="el" href="nav_8h.html#a737a463b508f62286a0e62c5ed5648b4">nav.h</a>
-, <a class="el" href="nav_8c.html#a737a463b508f62286a0e62c5ed5648b4">nav.c</a>
+: <a class="el" href="nav_8c.html#a737a463b508f62286a0e62c5ed5648b4">nav.c</a>
+, <a class="el" href="nav_8h.html#a737a463b508f62286a0e62c5ed5648b4">nav.h</a>
 </li>
 <li>fref
 : <a class="el" href="temp__tcouple__adc_8c.html#aa67736b889b8eff5752f3d0b6367906c">temp_tcouple_adc.c</a>
 </li>
-<li>from
-: <a class="el" href="at__com_8c.html#ae17b1fbd0d2858329af3554bff58d9be">at_com.c</a>
+<li>freq_counter
+: <a class="el" href="stereocam_8c.html#a20b6f8441642f3a18f6f6b6c47a71006">stereocam.c</a>
+</li>
+<li>frequency
+: <a class="el" href="stereocam_8c.html#a3687a13ca455728ecb41e28f9ce39d87">stereocam.c</a>
+</li>
+<li>front_camera
+: <a class="el" href="ardrone_2board_8c.html#abe211b229633c3f39cbfb50c5765b4b4">board.c</a>
+, <a class="el" href="ardrone2_8h.html#abe211b229633c3f39cbfb50c5765b4b4">ardrone2.h</a>
+, <a class="el" href="bebop_8h.html#abe211b229633c3f39cbfb50c5765b4b4">bebop.h</a>
+, <a class="el" href="video_8c.html#abe211b229633c3f39cbfb50c5765b4b4">video.c</a>
 </li>
 <li>ftemphtm
 : <a class="el" href="humid__htm__b71_8c.html#adfb08fb58d62ab3300c38d22cc1f9c22">humid_htm_b71.c</a>
@@ -332,12 +384,12 @@ $(document).ready(function(){initNavTree('globals_vars_0x66.html','');});
 , <a class="el" href="baro__ms5611__i2c_8c.html#a326d1071e8bed8a67a068d954eae5398">baro_ms5611_i2c.c</a>
 </li>
 <li>ftempsht
-: <a class="el" href="humid__sht_8c.html#ab5111f7c86720c03eca02d5362d3373f">humid_sht.c</a>
-, <a class="el" href="humid__sht_8h.html#ab5111f7c86720c03eca02d5362d3373f">humid_sht.h</a>
+: <a class="el" href="humid__sht_8h.html#ab5111f7c86720c03eca02d5362d3373f">humid_sht.h</a>
+, <a class="el" href="humid__sht_8c.html#ab5111f7c86720c03eca02d5362d3373f">humid_sht.c</a>
 </li>
 <li>ftempsht_i2c
-: <a class="el" href="humid__sht__i2c_8h.html#ad52c52ca36e2d9bad2918adee20b2a54">humid_sht_i2c.h</a>
-, <a class="el" href="humid__sht__i2c_8c.html#ad52c52ca36e2d9bad2918adee20b2a54">humid_sht_i2c.c</a>
+: <a class="el" href="humid__sht__i2c_8c.html#ad52c52ca36e2d9bad2918adee20b2a54">humid_sht_i2c.c</a>
+, <a class="el" href="humid__sht__i2c_8h.html#ad52c52ca36e2d9bad2918adee20b2a54">humid_sht_i2c.h</a>
 </li>
 <li>ftmd_temperature
 : <a class="el" href="temp__temod_8h.html#aaaf211bc5462b03ca020351920b40586">temp_temod.h</a>
@@ -346,6 +398,9 @@ $(document).ready(function(){initNavTree('globals_vars_0x66.html','');});
 <li>ftmp_temperature
 : <a class="el" href="temp__tmp102_8h.html#a8912f650188fc5048acd54fb13fdb70a">temp_tmp102.h</a>
 , <a class="el" href="temp__tmp102_8c.html#a8912f650188fc5048acd54fb13fdb70a">temp_tmp102.c</a>
+</li>
+<li>furuno_cfg_cnt
+: <a class="el" href="gps__furuno_8c.html#a472cd42e5e349a6d6f76dc3524d3ebd1">gps_furuno.c</a>
 </li>
 <li>fval
 : <a class="el" href="temp__tcouple__adc_8c.html#a03463534edf054f5e6bbdcdfd33685b2">temp_tcouple_adc.c</a>
@@ -356,7 +411,7 @@ $(document).ready(function(){initNavTree('globals_vars_0x66.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:40 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:48 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

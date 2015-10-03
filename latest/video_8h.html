@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.4"/>
-<title>Paparazzi UAS: sw/airborne/modules/computer_vision/lib/v4l/video.h File Reference</title>
+<title>Paparazzi UAS: sw/airborne/boards/bebop/video.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('video_8h.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -106,201 +106,127 @@ $(document).ready(function(){initNavTree('video_8h.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">video.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="image_8h_source.html">../../cv/image.h</a>&quot;</code><br/>
-</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for video.h:</div>
+
+<p>Initialization of the video specific parts of the Bebop.  
+<a href="#details">More...</a></p>
+<div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="video_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2computer__vision_2lib_2v4l_2video_8h" alt=""/></div>
-<map name="sw_2airborne_2modules_2computer__vision_2lib_2v4l_2video_8h" id="sw_2airborne_2modules_2computer__vision_2lib_2v4l_2video_8h">
-<area shape="rect" id="node3" href="image_8h.html" title="../../cv/image.h" alt="" coords="25,115,140,143"/></map>
-</div>
-</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="video_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2computer__vision_2lib_2v4l_2video_8hdep" alt=""/></div>
-<map name="sw_2airborne_2modules_2computer__vision_2lib_2v4l_2video_8hdep" id="sw_2airborne_2modules_2computer__vision_2lib_2v4l_2video_8hdep">
-<area shape="rect" id="node3" href="image__nc__send_8c.html" title="Capture an image on an ARDrone2 and send it to the ground with netcat (nc) " alt="" coords="5,115,179,175"/><area shape="rect" id="node5" href="video_8c.html" title="sw/airborne/modules\l/computer_vision/lib\l/v4l/video.c" alt="" coords="203,115,357,175"/><area shape="rect" id="node7" href="viewvideo_8c.html" title="Get live images from a RTP/UDP stream and save pictures on internal memory. " alt="" coords="381,123,587,167"/></map>
+<div class="center"><img src="video_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2boards_2bebop_2video_8hdep" alt=""/></div>
+<map name="sw_2airborne_2boards_2bebop_2video_8hdep" id="sw_2airborne_2boards_2bebop_2video_8hdep">
+<area shape="rect" id="node3" href="bebop_2board_8c.html" title="Bebop specific board initialization function. " alt="" coords="5,99,147,143"/><area shape="rect" id="node5" href="video_8c.html" title="Initialization of the video specific parts of the Bebop. " alt="" coords="171,99,312,143"/></map>
 </div>
 </div>
 <p><a href="video_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbuffer__struct.html">buffer_struct</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvid__struct.html">vid_struct</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a827c88554a249c61e8318ea9438408b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video_8h.html#a827c88554a249c61e8318ea9438408b1">video_init</a> (struct <a class="el" href="structvid__struct.html">vid_struct</a> *vid)</td></tr>
-<tr class="separator:a827c88554a249c61e8318ea9438408b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a063ec8d646ba7552a92522f6a07b2358"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structimg__struct.html">img_struct</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video_8h.html#a063ec8d646ba7552a92522f6a07b2358">video_create_image</a> (struct <a class="el" href="structvid__struct.html">vid_struct</a> *vid)</td></tr>
-<tr class="separator:a063ec8d646ba7552a92522f6a07b2358"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28f42ce798bb06218cc45856d254678f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video_8h.html#a28f42ce798bb06218cc45856d254678f">video_grab_image</a> (struct <a class="el" href="structvid__struct.html">vid_struct</a> *vid, struct <a class="el" href="structimg__struct.html">img_struct</a> *img)</td></tr>
-<tr class="separator:a28f42ce798bb06218cc45856d254678f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36898564207d241966a4ace93316e229"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video_8h.html#a36898564207d241966a4ace93316e229">video_close</a> (struct <a class="el" href="structvid__struct.html">vid_struct</a> *vid)</td></tr>
-<tr class="separator:a36898564207d241966a4ace93316e229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b248ece384a6f8687a68155f790771c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video_8h.html#a8b248ece384a6f8687a68155f790771c">mt9v117_init</a> (void)</td></tr>
+<tr class="memdesc:a8b248ece384a6f8687a68155f790771c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialisation of the Aptina MT9V117 CMOS sensor.  <a href="#a8b248ece384a6f8687a68155f790771c">More...</a><br/></td></tr>
+<tr class="separator:a8b248ece384a6f8687a68155f790771c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b2852de9db53f2382110e8746cf5ec0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video_8h.html#a2b2852de9db53f2382110e8746cf5ec0">mt9f002_init</a> (void)</td></tr>
+<tr class="memdesc:a2b2852de9db53f2382110e8746cf5ec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialisation of the Aptina MT9F002 CMOS sensor.  <a href="#a2b2852de9db53f2382110e8746cf5ec0">More...</a><br/></td></tr>
+<tr class="separator:a2b2852de9db53f2382110e8746cf5ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a36898564207d241966a4ace93316e229"></a>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Initialization of the video specific parts of the Bebop. </p>
+
+<p>Definition in file <a class="el" href="video_8h_source.html">video.h</a>.</p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a2b2852de9db53f2382110e8746cf5ec0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void video_close </td>
+          <td class="memname">void mt9f002_init </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structvid__struct.html">vid_struct</a> *&#160;</td>
-          <td class="paramname"><em>vid</em>)</td><td></td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="video_8c_source.html#l00206">206</a> of file <a class="el" href="video_8c_source.html">video.c</a>.</p>
+<p>Initialisation of the Aptina MT9F002 CMOS sensor. </p>
 
-<p>References <a class="el" href="video_8h_source.html#l00028">buffer_struct::buf</a>, <a class="el" href="video_8h_source.html#l00042">vid_struct::buffers</a>, <a class="el" href="video_8h_source.html#l00043">vid_struct::fd</a>, <a class="el" href="video_8h_source.html#l00029">buffer_struct::length</a>, and <a class="el" href="video_8h_source.html#l00037">vid_struct::n_buffers</a>.</p>
+<p>Definition at line <a class="el" href="video_8c_source.html#l00382">382</a> of file <a class="el" href="video_8c_source.html">video.c</a>.</p>
 
-<p>Referenced by <a class="el" href="image__nc__send_8c_source.html#l00085">computervision_thread_main()</a>.</p>
+<p>References <a class="el" href="mt9f002_8h_source.html#l00062">MT9F002_ANALOG_GAIN_CODE_BLUE</a>, <a class="el" href="mt9f002_8h_source.html#l00059">MT9F002_ANALOG_GAIN_CODE_GLOBAL</a>, <a class="el" href="mt9f002_8h_source.html#l00063">MT9F002_ANALOG_GAIN_CODE_GREENB</a>, <a class="el" href="mt9f002_8h_source.html#l00060">MT9F002_ANALOG_GAIN_CODE_GREENR</a>, <a class="el" href="mt9f002_8h_source.html#l00061">MT9F002_ANALOG_GAIN_CODE_RED</a>, <a class="el" href="mt9f002_8h_source.html#l00201">MT9F002_BLUE_GAIN</a>, <a class="el" href="mt9f002_8h_source.html#l00224">MT9F002_CALIB_BLUE</a>, <a class="el" href="mt9f002_8h_source.html#l00218">MT9F002_CALIB_BLUE_ASC1</a>, <a class="el" href="mt9f002_8h_source.html#l00223">MT9F002_CALIB_GREEN1</a>, <a class="el" href="mt9f002_8h_source.html#l00217">MT9F002_CALIB_GREEN1_ASC1</a>, <a class="el" href="mt9f002_8h_source.html#l00226">MT9F002_CALIB_GREEN2</a>, <a class="el" href="mt9f002_8h_source.html#l00220">MT9F002_CALIB_GREEN2_ASC1</a>, <a class="el" href="mt9f002_8h_source.html#l00225">MT9F002_CALIB_RED</a>, <a class="el" href="mt9f002_8h_source.html#l00219">MT9F002_CALIB_RED_ASC1</a>, <a class="el" href="mt9f002_8h_source.html#l00372">MT9F002_DAC_ID_FBIAS</a>, <a class="el" href="mt9f002_8h_source.html#l00074">MT9F002_FRAME_LENGTH_LINES</a>, <a class="el" href="mt9f002_8h_source.html#l00204">MT9F002_GLOBAL_GAIN</a>, <a class="el" href="mt9f002_8h_source.html#l00200">MT9F002_GREEN1_GAIN</a>, <a class="el" href="mt9f002_8h_source.html#l00203">MT9F002_GREEN2_GAIN</a>, <a class="el" href="mt9f002_8h_source.html#l00257">MT9F002_HISPI_TIMING</a>, <a class="el" href="mt9f002_8h_source.html#l00075">MT9F002_LINE_LENGTH_PCK</a>, <a class="el" href="mt9f002_8h_source.html#l00254">MT9F002_MIPI_TIMING_2</a>, <a class="el" href="mt9f002_8h_source.html#l00048">MT9F002_MODE_SELECT</a>, <a class="el" href="mt9f002_8h_source.html#l00072">MT9F002_OP_PIX_CLK_DIV</a>, <a class="el" href="mt9f002_8h_source.html#l00275">MT9F002_P_BL_P0Q0</a>, <a class="el" href="mt9f002_8h_source.html#l00276">MT9F002_P_BL_P0Q1</a>, <a class="el" href="mt9f002_8h_source.html#l00277">MT9F002_P_BL_P0Q2</a>, <a class="el" href="mt9f002_8h_source.html#l00278">MT9F002_P_BL_P0Q3</a>, <a class="el" href="mt9f002_8h_source.html#l00279">MT9F002_P_BL_P0Q4</a>, <a class="el" href="mt9f002_8h_source.html#l00295">MT9F002_P_BL_P1Q0</a>, <a class="el" href="mt9f002_8h_source.html#l00296">MT9F002_P_BL_P1Q1</a>, <a class="el" href="mt9f002_8h_source.html#l00297">MT9F002_P_BL_P1Q2</a>, <a class="el" href="mt9f002_8h_source.html#l00298">MT9F002_P_BL_P1Q3</a>, <a class="el" href="mt9f002_8h_source.html#l00299">MT9F002_P_BL_P1Q4</a>, <a class="el" href="mt9f002_8h_source.html#l00315">MT9F002_P_BL_P2Q0</a>, <a class="el" href="mt9f002_8h_source.html#l00316">MT9F002_P_BL_P2Q1</a>, <a class="el" href="mt9f002_8h_source.html#l00317">MT9F002_P_BL_P2Q2</a>, <a class="el" href="mt9f002_8h_source.html#l00318">MT9F002_P_BL_P2Q3</a>, <a class="el" href="mt9f002_8h_source.html#l00319">MT9F002_P_BL_P2Q4</a>, <a class="el" href="mt9f002_8h_source.html#l00335">MT9F002_P_BL_P3Q0</a>, <a class="el" href="mt9f002_8h_source.html#l00336">MT9F002_P_BL_P3Q1</a>, <a class="el" href="mt9f002_8h_source.html#l00337">MT9F002_P_BL_P3Q2</a>, <a class="el" href="mt9f002_8h_source.html#l00338">MT9F002_P_BL_P3Q3</a>, <a class="el" href="mt9f002_8h_source.html#l00339">MT9F002_P_BL_P3Q4</a>, <a class="el" href="mt9f002_8h_source.html#l00355">MT9F002_P_BL_P4Q0</a>, <a class="el" href="mt9f002_8h_source.html#l00356">MT9F002_P_BL_P4Q1</a>, <a class="el" href="mt9f002_8h_source.html#l00357">MT9F002_P_BL_P4Q2</a>, <a class="el" href="mt9f002_8h_source.html#l00358">MT9F002_P_BL_P4Q3</a>, <a class="el" href="mt9f002_8h_source.html#l00359">MT9F002_P_BL_P4Q4</a>, <a class="el" href="mt9f002_8h_source.html#l00370">MT9F002_P_BL_Q5</a>, <a class="el" href="mt9f002_8h_source.html#l00280">MT9F002_P_GB_P0Q0</a>, <a class="el" href="mt9f002_8h_source.html#l00281">MT9F002_P_GB_P0Q1</a>, <a class="el" href="mt9f002_8h_source.html#l00282">MT9F002_P_GB_P0Q2</a>, <a class="el" href="mt9f002_8h_source.html#l00283">MT9F002_P_GB_P0Q3</a>, <a class="el" href="mt9f002_8h_source.html#l00284">MT9F002_P_GB_P0Q4</a>, <a class="el" href="mt9f002_8h_source.html#l00300">MT9F002_P_GB_P1Q0</a>, <a class="el" href="mt9f002_8h_source.html#l00301">MT9F002_P_GB_P1Q1</a>, <a class="el" href="mt9f002_8h_source.html#l00302">MT9F002_P_GB_P1Q2</a>, <a class="el" href="mt9f002_8h_source.html#l00303">MT9F002_P_GB_P1Q3</a>, <a class="el" href="mt9f002_8h_source.html#l00304">MT9F002_P_GB_P1Q4</a>, <a class="el" href="mt9f002_8h_source.html#l00320">MT9F002_P_GB_P2Q0</a>, <a class="el" href="mt9f002_8h_source.html#l00321">MT9F002_P_GB_P2Q1</a>, <a class="el" href="mt9f002_8h_source.html#l00322">MT9F002_P_GB_P2Q2</a>, <a class="el" href="mt9f002_8h_source.html#l00323">MT9F002_P_GB_P2Q3</a>, <a class="el" href="mt9f002_8h_source.html#l00324">MT9F002_P_GB_P2Q4</a>, <a class="el" href="mt9f002_8h_source.html#l00340">MT9F002_P_GB_P3Q0</a>, <a class="el" href="mt9f002_8h_source.html#l00341">MT9F002_P_GB_P3Q1</a>, <a class="el" href="mt9f002_8h_source.html#l00342">MT9F002_P_GB_P3Q2</a>, <a class="el" href="mt9f002_8h_source.html#l00343">MT9F002_P_GB_P3Q3</a>, <a class="el" href="mt9f002_8h_source.html#l00344">MT9F002_P_GB_P3Q4</a>, <a class="el" href="mt9f002_8h_source.html#l00360">MT9F002_P_GB_P4Q0</a>, <a class="el" href="mt9f002_8h_source.html#l00361">MT9F002_P_GB_P4Q1</a>, <a class="el" href="mt9f002_8h_source.html#l00362">MT9F002_P_GB_P4Q2</a>, <a class="el" href="mt9f002_8h_source.html#l00363">MT9F002_P_GB_P4Q3</a>, <a class="el" href="mt9f002_8h_source.html#l00364">MT9F002_P_GB_P4Q4</a>, <a class="el" href="mt9f002_8h_source.html#l00371">MT9F002_P_GB_Q5</a>, <a class="el" href="mt9f002_8h_source.html#l00265">MT9F002_P_GR_P0Q0</a>, <a class="el" href="mt9f002_8h_source.html#l00267">MT9F002_P_GR_P0Q2</a>, <a class="el" href="mt9f002_8h_source.html#l00268">MT9F002_P_GR_P0Q3</a>, <a class="el" href="mt9f002_8h_source.html#l00269">MT9F002_P_GR_P0Q4</a>, <a class="el" href="mt9f002_8h_source.html#l00285">MT9F002_P_GR_P1Q0</a>, <a class="el" href="mt9f002_8h_source.html#l00286">MT9F002_P_GR_P1Q1</a>, <a class="el" href="mt9f002_8h_source.html#l00287">MT9F002_P_GR_P1Q2</a>, <a class="el" href="mt9f002_8h_source.html#l00288">MT9F002_P_GR_P1Q3</a>, <a class="el" href="mt9f002_8h_source.html#l00289">MT9F002_P_GR_P1Q4</a>, <a class="el" href="mt9f002_8h_source.html#l00305">MT9F002_P_GR_P2Q0</a>, <a class="el" href="mt9f002_8h_source.html#l00306">MT9F002_P_GR_P2Q1</a>, <a class="el" href="mt9f002_8h_source.html#l00307">MT9F002_P_GR_P2Q2</a>, <a class="el" href="mt9f002_8h_source.html#l00308">MT9F002_P_GR_P2Q3</a>, <a class="el" href="mt9f002_8h_source.html#l00309">MT9F002_P_GR_P2Q4</a>, <a class="el" href="mt9f002_8h_source.html#l00325">MT9F002_P_GR_P3Q0</a>, <a class="el" href="mt9f002_8h_source.html#l00326">MT9F002_P_GR_P3Q1</a>, <a class="el" href="mt9f002_8h_source.html#l00327">MT9F002_P_GR_P3Q2</a>, <a class="el" href="mt9f002_8h_source.html#l00328">MT9F002_P_GR_P3Q3</a>, <a class="el" href="mt9f002_8h_source.html#l00329">MT9F002_P_GR_P3Q4</a>, <a class="el" href="mt9f002_8h_source.html#l00345">MT9F002_P_GR_P4Q0</a>, <a class="el" href="mt9f002_8h_source.html#l00346">MT9F002_P_GR_P4Q1</a>, <a class="el" href="mt9f002_8h_source.html#l00347">MT9F002_P_GR_P4Q2</a>, <a class="el" href="mt9f002_8h_source.html#l00348">MT9F002_P_GR_P4Q3</a>, <a class="el" href="mt9f002_8h_source.html#l00349">MT9F002_P_GR_P4Q4</a>, <a class="el" href="mt9f002_8h_source.html#l00368">MT9F002_P_GR_Q5</a>, <a class="el" href="mt9f002_8h_source.html#l00270">MT9F002_P_RD_P0Q0</a>, <a class="el" href="mt9f002_8h_source.html#l00271">MT9F002_P_RD_P0Q1</a>, <a class="el" href="mt9f002_8h_source.html#l00272">MT9F002_P_RD_P0Q2</a>, <a class="el" href="mt9f002_8h_source.html#l00273">MT9F002_P_RD_P0Q3</a>, <a class="el" href="mt9f002_8h_source.html#l00274">MT9F002_P_RD_P0Q4</a>, <a class="el" href="mt9f002_8h_source.html#l00290">MT9F002_P_RD_P1Q0</a>, <a class="el" href="mt9f002_8h_source.html#l00291">MT9F002_P_RD_P1Q1</a>, <a class="el" href="mt9f002_8h_source.html#l00292">MT9F002_P_RD_P1Q2</a>, <a class="el" href="mt9f002_8h_source.html#l00293">MT9F002_P_RD_P1Q3</a>, <a class="el" href="mt9f002_8h_source.html#l00294">MT9F002_P_RD_P1Q4</a>, <a class="el" href="mt9f002_8h_source.html#l00310">MT9F002_P_RD_P2Q0</a>, <a class="el" href="mt9f002_8h_source.html#l00311">MT9F002_P_RD_P2Q1</a>, <a class="el" href="mt9f002_8h_source.html#l00312">MT9F002_P_RD_P2Q2</a>, <a class="el" href="mt9f002_8h_source.html#l00313">MT9F002_P_RD_P2Q3</a>, <a class="el" href="mt9f002_8h_source.html#l00314">MT9F002_P_RD_P2Q4</a>, <a class="el" href="mt9f002_8h_source.html#l00330">MT9F002_P_RD_P3Q0</a>, <a class="el" href="mt9f002_8h_source.html#l00331">MT9F002_P_RD_P3Q1</a>, <a class="el" href="mt9f002_8h_source.html#l00332">MT9F002_P_RD_P3Q2</a>, <a class="el" href="mt9f002_8h_source.html#l00333">MT9F002_P_RD_P3Q3</a>, <a class="el" href="mt9f002_8h_source.html#l00334">MT9F002_P_RD_P3Q4</a>, <a class="el" href="mt9f002_8h_source.html#l00350">MT9F002_P_RD_P4Q0</a>, <a class="el" href="mt9f002_8h_source.html#l00351">MT9F002_P_RD_P4Q1</a>, <a class="el" href="mt9f002_8h_source.html#l00352">MT9F002_P_RD_P4Q2</a>, <a class="el" href="mt9f002_8h_source.html#l00353">MT9F002_P_RD_P4Q3</a>, <a class="el" href="mt9f002_8h_source.html#l00354">MT9F002_P_RD_P4Q4</a>, <a class="el" href="mt9f002_8h_source.html#l00369">MT9F002_P_RD_Q5</a>, <a class="el" href="mt9f002_8h_source.html#l00071">MT9F002_PLL_MULTIPLIER</a>, <a class="el" href="mt9f002_8h_source.html#l00366">MT9F002_POLY_ORIGIN_C</a>, <a class="el" href="mt9f002_8h_source.html#l00367">MT9F002_POLY_ORIGIN_R</a>, <a class="el" href="mt9f002_8h_source.html#l00070">MT9F002_PRE_PLL_CLK_DIV</a>, <a class="el" href="mt9f002_8h_source.html#l00197">MT9F002_READ_MODE</a>, <a class="el" href="mt9f002_8h_source.html#l00202">MT9F002_RED_GAIN</a>, <a class="el" href="mt9f002_8h_source.html#l00174">MT9F002_ROW_SPEED</a>, <a class="el" href="mt9f002_8h_source.html#l00088">MT9F002_SCALE_M</a>, <a class="el" href="mt9f002_8h_source.html#l00086">MT9F002_SCALING_MODE</a>, <a class="el" href="mt9f002_8h_source.html#l00068">MT9F002_VT_PIX_CLK_DIV</a>, <a class="el" href="video_8c_source.html#l00324">mt9f002_write_reg16()</a>, <a class="el" href="video_8c_source.html#l00304">mt9f002_write_reg8()</a>, <a class="el" href="mt9f002_8h_source.html#l00168">MT9F002_X_ADDR_END_</a>, <a class="el" href="mt9f002_8h_source.html#l00166">MT9F002_X_ADDR_START_</a>, <a class="el" href="mt9f002_8h_source.html#l00083">MT9F002_X_ODD_INC</a>, <a class="el" href="mt9f002_8h_source.html#l00167">MT9F002_Y_ADDR_END_</a>, <a class="el" href="mt9f002_8h_source.html#l00165">MT9F002_Y_ADDR_START_</a>, and <a class="el" href="mt9f002_8h_source.html#l00085">MT9F002_Y_ODD_INC</a>.</p>
+
+<p>Referenced by <a class="el" href="bebop_2board_8c_source.html#l00032">board_init()</a>.</p>
+
+<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="video_8h_a2b2852de9db53f2382110e8746cf5ec0_cgraph.png" border="0" usemap="#video_8h_a2b2852de9db53f2382110e8746cf5ec0_cgraph" alt=""/></div>
+<map name="video_8h_a2b2852de9db53f2382110e8746cf5ec0_cgraph" id="video_8h_a2b2852de9db53f2382110e8746cf5ec0_cgraph">
+<area shape="rect" id="node3" href="video_8c.html#a38b15ee143138c81081910bac1d532bc" title="mt9f002_write_reg16" alt="" coords="157,30,315,58"/><area shape="rect" id="node11" href="video_8c.html#a8741f72217883cfe42560270024319aa" title="mt9f002_write_reg8" alt="" coords="161,81,311,109"/><area shape="rect" id="node5" href="video_8c.html#a2f85bfb7c0c3747ad8ff46a1b137b981" title="mt9f002_close" alt="" coords="387,5,501,33"/><area shape="rect" id="node7" href="video_8c.html#a961753dbe047313818450e03865d5274" title="mt9f002_open" alt="" coords="387,55,501,83"/><area shape="rect" id="node9" href="video_8c.html#ab00db4cb268dbce2ee300d38fd9ea88e" title="mt9f002_set_address" alt="" coords="364,106,524,134"/></map>
+</div>
+</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="video_8h_a36898564207d241966a4ace93316e229_icgraph.png" border="0" usemap="#video_8h_a36898564207d241966a4ace93316e229_icgraph" alt=""/></div>
-<map name="video_8h_a36898564207d241966a4ace93316e229_icgraph" id="video_8h_a36898564207d241966a4ace93316e229_icgraph">
-<area shape="rect" id="node3" href="image__nc__send_8c.html#ab44d405e0d6e4e81ad90c9cc48fb5175" title="computervision_thread_main" alt="" coords="149,30,357,58"/><area shape="rect" id="node5" href="image__nc__send_8h.html#a8655f7b548a7365eaad26d96775d09c1" title="image_nc_send_start" alt="" coords="407,5,564,33"/><area shape="rect" id="node7" href="viewvideo_8h.html#a2e997d697b4958da4156565605b92575" title="viewvideo_start" alt="" coords="425,55,545,83"/></map>
+<div class="center"><img src="video_8h_a2b2852de9db53f2382110e8746cf5ec0_icgraph.png" border="0" usemap="#video_8h_a2b2852de9db53f2382110e8746cf5ec0_icgraph" alt=""/></div>
+<map name="video_8h_a2b2852de9db53f2382110e8746cf5ec0_icgraph" id="video_8h_a2b2852de9db53f2382110e8746cf5ec0_icgraph">
+<area shape="rect" id="node3" href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc" title="Optional board init function called at the end of mcu_init(). " alt="" coords="157,5,243,33"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a063ec8d646ba7552a92522f6a07b2358"></a>
+<a class="anchor" id="a8b248ece384a6f8687a68155f790771c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structimg__struct.html">img_struct</a>* video_create_image </td>
+          <td class="memname">void mt9v117_init </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structvid__struct.html">vid_struct</a> *&#160;</td>
-          <td class="paramname"><em>vid</em>)</td><td></td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="video_8c_source.html#l00215">215</a> of file <a class="el" href="video_8c_source.html">video.c</a>.</p>
+<p>Initialisation of the Aptina MT9V117 CMOS sensor. </p>
 
-<p>References <a class="el" href="image_8h_source.html#l00030">img_struct::buf</a>, <a class="el" href="image_8h_source.html#l00032">img_struct::h</a>, <a class="el" href="video_8h_source.html#l00035">vid_struct::h</a>, <a class="el" href="image_8h_source.html#l00031">img_struct::w</a>, and <a class="el" href="video_8h_source.html#l00034">vid_struct::w</a>.</p>
+<p>Definition at line <a class="el" href="video_8c_source.html#l00099">99</a> of file <a class="el" href="video_8c_source.html">video.c</a>.</p>
 
-<p>Referenced by <a class="el" href="image__nc__send_8c_source.html#l00085">computervision_thread_main()</a>.</p>
+<p>References <a class="el" href="video_8c_source.html#l00085">_write()</a>, and <a class="el" href="video_8c_source.html#l00062">write_reg()</a>.</p>
+
+<p>Referenced by <a class="el" href="bebop_2board_8c_source.html#l00032">board_init()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="video_8h_a063ec8d646ba7552a92522f6a07b2358_icgraph.png" border="0" usemap="#video_8h_a063ec8d646ba7552a92522f6a07b2358_icgraph" alt=""/></div>
-<map name="video_8h_a063ec8d646ba7552a92522f6a07b2358_icgraph" id="video_8h_a063ec8d646ba7552a92522f6a07b2358_icgraph">
-<area shape="rect" id="node3" href="image__nc__send_8c.html#ab44d405e0d6e4e81ad90c9cc48fb5175" title="computervision_thread_main" alt="" coords="205,30,413,58"/><area shape="rect" id="node5" href="image__nc__send_8h.html#a8655f7b548a7365eaad26d96775d09c1" title="image_nc_send_start" alt="" coords="463,5,620,33"/><area shape="rect" id="node7" href="viewvideo_8h.html#a2e997d697b4958da4156565605b92575" title="viewvideo_start" alt="" coords="481,55,601,83"/></map>
+<div class="center"><img src="video_8h_a8b248ece384a6f8687a68155f790771c_cgraph.png" border="0" usemap="#video_8h_a8b248ece384a6f8687a68155f790771c_cgraph" alt=""/></div>
+<map name="video_8h_a8b248ece384a6f8687a68155f790771c_cgraph" id="video_8h_a8b248ece384a6f8687a68155f790771c_cgraph">
+<area shape="rect" id="node3" href="video_8c.html#ab9f98c777d2b7d8cd7a6d092892533dd" title="_write" alt="" coords="171,5,229,33"/><area shape="rect" id="node5" href="video_8c.html#a50a08b7f57d5012c8faba80d9b809043" title="write_reg" alt="" coords="160,55,240,83"/></map>
 </div>
 </p>
-
-</div>
-</div>
-<a class="anchor" id="a28f42ce798bb06218cc45856d254678f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void video_grab_image </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structvid__struct.html">vid_struct</a> *&#160;</td>
-          <td class="paramname"><em>vid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structimg__struct.html">img_struct</a> *&#160;</td>
-          <td class="paramname"><em>img</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="video_8c_source.html#l00226">226</a> of file <a class="el" href="video_8c_source.html">video.c</a>.</p>
-
-<p>References <a class="el" href="video_8h_source.html#l00041">vid_struct::img</a>, <a class="el" href="video_8h_source.html#l00040">vid_struct::trigger</a>, and <a class="el" href="video_8c_source.html#l00224">video_grab_mutex</a>.</p>
-
-<p>Referenced by <a class="el" href="image__nc__send_8c_source.html#l00085">computervision_thread_main()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="video_8h_a28f42ce798bb06218cc45856d254678f_icgraph.png" border="0" usemap="#video_8h_a28f42ce798bb06218cc45856d254678f_icgraph" alt=""/></div>
-<map name="video_8h_a28f42ce798bb06218cc45856d254678f_icgraph" id="video_8h_a28f42ce798bb06218cc45856d254678f_icgraph">
-<area shape="rect" id="node3" href="image__nc__send_8c.html#ab44d405e0d6e4e81ad90c9cc48fb5175" title="computervision_thread_main" alt="" coords="192,30,400,58"/><area shape="rect" id="node5" href="image__nc__send_8h.html#a8655f7b548a7365eaad26d96775d09c1" title="image_nc_send_start" alt="" coords="449,5,607,33"/><area shape="rect" id="node7" href="viewvideo_8h.html#a2e997d697b4958da4156565605b92575" title="viewvideo_start" alt="" coords="468,55,588,83"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a827c88554a249c61e8318ea9438408b1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int video_init </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structvid__struct.html">vid_struct</a> *&#160;</td>
-          <td class="paramname"><em>vid</em>)</td><td></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="video_8c_source.html#l00104">104</a> of file <a class="el" href="video_8c_source.html">video.c</a>.</p>
-
-<p>References <a class="el" href="video_8h_source.html#l00028">buffer_struct::buf</a>, <a class="el" href="video_8h_source.html#l00042">vid_struct::buffers</a>, <a class="el" href="video_8c_source.html#l00042">CLEAR</a>, <a class="el" href="video_8h_source.html#l00033">vid_struct::device</a>, <a class="el" href="video_8h_source.html#l00043">vid_struct::fd</a>, <a class="el" href="video_8h_source.html#l00035">vid_struct::h</a>, <a class="el" href="video_8h_source.html#l00029">buffer_struct::length</a>, <a class="el" href="video_8h_source.html#l00037">vid_struct::n_buffers</a>, <a class="el" href="video_8h_source.html#l00036">vid_struct::seq</a>, <a class="el" href="video_8h_source.html#l00040">vid_struct::trigger</a>, <a class="el" href="video_8c_source.html#l00045">video_thread</a>, <a class="el" href="video_8c_source.html#l00047">video_thread_main()</a>, and <a class="el" href="video_8h_source.html#l00034">vid_struct::w</a>.</p>
-
-<p>Referenced by <a class="el" href="image__nc__send_8c_source.html#l00085">computervision_thread_main()</a>.</p>
-
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="video_8h_a827c88554a249c61e8318ea9438408b1_cgraph.png" border="0" usemap="#video_8h_a827c88554a249c61e8318ea9438408b1_cgraph" alt=""/></div>
-<map name="video_8h_a827c88554a249c61e8318ea9438408b1_cgraph" id="video_8h_a827c88554a249c61e8318ea9438408b1_cgraph">
-<area shape="rect" id="node3" href="video_8c.html#a9f0409d800be63e5f146eeea2be462b7" title="video_thread_main" alt="" coords="136,5,280,33"/></map>
-</div>
-</p>
-
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="video_8h_a827c88554a249c61e8318ea9438408b1_icgraph.png" border="0" usemap="#video_8h_a827c88554a249c61e8318ea9438408b1_icgraph" alt=""/></div>
-<map name="video_8h_a827c88554a249c61e8318ea9438408b1_icgraph" id="video_8h_a827c88554a249c61e8318ea9438408b1_icgraph">
-<area shape="rect" id="node3" href="image__nc__send_8c.html#ab44d405e0d6e4e81ad90c9cc48fb5175" title="computervision_thread_main" alt="" coords="136,30,344,58"/><area shape="rect" id="node5" href="image__nc__send_8h.html#a8655f7b548a7365eaad26d96775d09c1" title="image_nc_send_start" alt="" coords="393,5,551,33"/><area shape="rect" id="node7" href="viewvideo_8h.html#a2e997d697b4958da4156565605b92575" title="viewvideo_start" alt="" coords="412,55,532,83"/></map>
+<div class="center"><img src="video_8h_a8b248ece384a6f8687a68155f790771c_icgraph.png" border="0" usemap="#video_8h_a8b248ece384a6f8687a68155f790771c_icgraph" alt=""/></div>
+<map name="video_8h_a8b248ece384a6f8687a68155f790771c_icgraph" id="video_8h_a8b248ece384a6f8687a68155f790771c_icgraph">
+<area shape="rect" id="node3" href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc" title="Optional board init function called at the end of mcu_init(). " alt="" coords="160,5,245,33"/></map>
 </div>
 </p>
 
@@ -311,8 +237,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="dir_9adc125244b74c64b95124778e5b932a.html">lib</a></li><li class="navelem"><a class="el" href="dir_1f81fcd9478973fae943fef638641226.html">v4l</a></li><li class="navelem"><a class="el" href="video_8h.html">video.h</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:03 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_1e1e24cfb731b3b06114ecddfd068653.html">bebop</a></li><li class="navelem"><a class="el" href="video_8h.html">video.h</a></li>
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:13 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

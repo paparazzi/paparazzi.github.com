@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('usb__serial_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -138,11 +138,11 @@ $(document).ready(function(){initNavTree('usb__serial_8h_source.html','');});
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="std_8h.html">std.h</a>&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="link__device_8h.html" title="generic device header ">mcu_periph/link_device.h</a>&quot;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="structusb__serial__periph.html">   35</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structusb__serial__periph.html">usb_serial_periph</a> {</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="structusb__serial__periph.html#a8b2420e6db09b65f1114f8d2260f52d3">   37</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structlink__device.html" title="Device structure. ">link_device</a> <a class="code" href="structusb__serial__periph.html#a8b2420e6db09b65f1114f8d2260f52d3" title="Generic device interface. ">device</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="usb__serial_8h.html">   35</a></span>&#160;<span class="keyword">struct </span><a class="code" href="usb__serial_8h.html#structusb__serial__periph">usb_serial_periph</a> {</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="usb__serial_8h.html#a8b2420e6db09b65f1114f8d2260f52d3">   37</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="link__device_8h.html#structlink__device" title="Device structure. ">link_device</a> <a class="code" href="usb__serial_8h.html#a8b2420e6db09b65f1114f8d2260f52d3" title="Generic device interface. ">device</a>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="structusb__serial__periph.html">usb_serial_periph</a> <a class="code" href="lpc21_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="usb__serial_8h.html#structusb__serial__periph">usb_serial_periph</a> <a class="code" href="lpc21_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial</a>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">void</span> <a class="code" href="lpc21_2usb__ser__hw_8c.html#a96a54f28bfc8bc28963cd2fac74609cd">VCOM_init</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">int</span>  <a class="code" href="lpc21_2usb__ser__hw_8c.html#a19a213d00cf249a4d4d60dbf1a9907d3" title="Writes one character to VCOM port. ">VCOM_putchar</a>(<span class="keywordtype">int</span> c);</div>
@@ -154,25 +154,14 @@ $(document).ready(function(){initNavTree('usb__serial_8h_source.html','');});
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span> <a class="code" href="lpc21_2usb__ser__hw_8c.html#aad17c325b3e7623c13d24b25fc42fe3b">VCOM_send_message</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">void</span> <a class="code" href="lpc21_2usb__ser__hw_8c.html#a15c895e4456578b3ca2818c1e17c832a">VCOM_event</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> * Macros can be used in subsystems that normally work with serial ports</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"> * e.g. use UsbS instead of UART1</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="code" href="usb__serial_8h.html#a1084ec1786de3eaaa9c1d5b5dcf396fc">   56</a></span>&#160;<span class="preprocessor">#define UsbSInit() VCOM_init()</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="usb__serial_8h.html#a307e2e8623a44862ee705bb62e0d2e98">   57</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UsbSCheckFreeSpace(_x) VCOM_check_free_space(_x)</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="usb__serial_8h.html#a8b402d121ed27690100bef028d5048df">   58</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UsbSTransmit(_x) VCOM_putchar(_x)</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="usb__serial_8h.html#adce019c454511eccf3b4aa65e3076956">   59</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UsbSSendMessage() VCOM_send_message()</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="usb__serial_8h.html#a1a2c3b8bab59655e69775eaf5562901e">   60</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UsbSGetch() VCOM_getchar()</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="code" href="usb__serial_8h.html#ac35d9463a5a038cb76cbbab16293509a">   61</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UsbSChAvailable() VCOM_check_available()</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* USB_S_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* USB_S_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_1ca43f6a116d741d80fb1d0555a2b198.html">mcu_periph</a></li><li class="navelem"><a class="el" href="usb__serial_8h.html">usb_serial.h</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:04:40 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:00:59 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

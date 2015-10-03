@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('globals_vars_0x75.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -156,8 +156,20 @@ $(document).ready(function(){initNavTree('globals_vars_0x75.html','');});
 <li>u_a_ca_y
 : <a class="el" href="nav__smooth_8c.html#af5b82b9a455a98a12cafa72e73dce010">nav_smooth.c</a>
 </li>
+<li>uart_mutex
+: <a class="el" href="sim_2mcu__periph_2uart__arch_8c.html#ad95c5a3d78475744ae1e8792b8d73e43">uart_arch.c</a>
+</li>
 <li>uart_read_buff
 : <a class="el" href="high__speed__logger__direct__memory_8c.html#a2034ae0d8b7e2561e4d3298485dbd663">high_speed_logger_direct_memory.c</a>
+</li>
+<li>udot_estimation
+: <a class="el" href="stabilization__attitude__quat__indi_8c.html#aac72d794b4193a2f74b01c5f84994c54">stabilization_attitude_quat_indi.c</a>
+</li>
+<li>udotdot_estimation
+: <a class="el" href="stabilization__attitude__quat__indi_8c.html#abce01ee2db72f5801ced1973bae55614">stabilization_attitude_quat_indi.c</a>
+</li>
+<li>udp_mutex
+: <a class="el" href="linux_2mcu__periph_2udp__arch_8c.html#a805ef343c22b45e133fcedac1c2866ea">udp_arch.c</a>
 </li>
 <li>UM6_accel
 : <a class="el" href="imu__um6_8c.html#a48e83ea7a3e1bca4803d9bb1533f284f">imu_um6.c</a>
@@ -173,8 +185,8 @@ $(document).ready(function(){initNavTree('globals_vars_0x75.html','');});
 : <a class="el" href="imu__um6_8c.html#a1eb5b73c9cb8d8572f52875186abd4ef">imu_um6.c</a>
 </li>
 <li>UM6_packet
-: <a class="el" href="imu__um6_8c.html#a36fb1254228e4dc1d4c65cfc99fe3253">imu_um6.c</a>
-, <a class="el" href="imu__um6_8h.html#a36fb1254228e4dc1d4c65cfc99fe3253">imu_um6.h</a>
+: <a class="el" href="imu__um6_8h.html#a36fb1254228e4dc1d4c65cfc99fe3253">imu_um6.h</a>
+, <a class="el" href="imu__um6_8c.html#a36fb1254228e4dc1d4c65cfc99fe3253">imu_um6.c</a>
 </li>
 <li>UM6_quat
 : <a class="el" href="imu__um6_8c.html#aefc92a58e72401bc524b91997f70fb3f">imu_um6.c</a>
@@ -204,8 +216,8 @@ $(document).ready(function(){initNavTree('globals_vars_0x75.html','');});
 : <a class="el" href="stm32_2usb__ser__hw_8c.html#a08da6b1923b8590c2258c1a7a9c3c027">usb_ser_hw.c</a>
 </li>
 <li>usb_serial
-: <a class="el" href="lpc21_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_ser_hw.c</a>
-, <a class="el" href="usb__serial_8h.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial.h</a>
+: <a class="el" href="usb__serial_8h.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial.h</a>
+, <a class="el" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_ser_hw.c</a>
 </li>
 <li>usb_strings
 : <a class="el" href="stm32_2usb__ser__hw_8c.html#af34cf0c102eb4cf7bc0df82cd25bf8ad">usb_ser_hw.c</a>
@@ -213,9 +225,13 @@ $(document).ready(function(){initNavTree('globals_vars_0x75.html','');});
 <li>usbd_control_buffer
 : <a class="el" href="stm32_2usb__ser__hw_8c.html#a3f5c5e68ae07d989114524003357a6f7">usb_ser_hw.c</a>
 </li>
+<li>use_adaptive_indi
+: <a class="el" href="stabilization__attitude__quat__indi_8h.html#a8c696ef38ac7273d571a4e259518a0ab">stabilization_attitude_quat_indi.h</a>
+, <a class="el" href="stabilization__attitude__quat__indi_8c.html#a8c696ef38ac7273d571a4e259518a0ab">stabilization_attitude_quat_indi.c</a>
+</li>
 <li>use_airspeed_ratio
-: <a class="el" href="stabilization__adaptive_8c.html#aa3cf0ada6c21e17a8269616f13439532">stabilization_adaptive.c</a>
-, <a class="el" href="stabilization__adaptive_8h.html#aa3cf0ada6c21e17a8269616f13439532">stabilization_adaptive.h</a>
+: <a class="el" href="stabilization__adaptive_8h.html#aa3cf0ada6c21e17a8269616f13439532">stabilization_adaptive.h</a>
+, <a class="el" href="stabilization__adaptive_8c.html#aa3cf0ada6c21e17a8269616f13439532">stabilization_adaptive.c</a>
 </li>
 <li>use_full_circle
 : <a class="el" href="nav__survey__poly__osam_8c.html#a4b3d2e91a9f24afde48c88c72b13e122">nav_survey_poly_osam.c</a>
@@ -232,7 +248,7 @@ $(document).ready(function(){initNavTree('globals_vars_0x75.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:41 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:48 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

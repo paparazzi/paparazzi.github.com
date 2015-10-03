@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('lisa__s__1_80_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -480,67 +480,63 @@ $(document).ready(function(){initNavTree('lisa__s__1_80_8h_source.html','');});
 <div class="line"><a name="l00369"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#ac1a3a477a0001b92c5ec56eb2d8327bf">  369</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PWM_SERVO_5_OC TIM_OC1</span></div>
 <div class="line"><a name="l00370"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#a5d2f3465213306fd37370c884444e5e5">  370</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PWM_SERVO_5_OC_BIT (1&lt;&lt;0)</span></div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#elif USE_DUAL_PWM5</span></div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DUAL_PWM_SERVO_5 2</span></div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="preprocessor">#define FIRST_DUAL_PWM_SERVO DUAL_PWM_SERVO_5</span></div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="preprocessor">#define DUAL_PWM_SERVO_5_TIMER TIM5</span></div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DUAL_PWM_SERVO_5_RCC RCC_GPIOA</span></div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DUAL_PWM_SERVO_5_GPIO GPIOA</span></div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DUAL_PWM_SERVO_5_PIN GPIO0</span></div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DUAL_PWM_SERVO_5_AF 0</span></div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DUAL_PWM_SERVO_5_OC TIM_OC1</span></div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PWM_SERVO_5_OC_BIT (1&lt;&lt;0)</span></div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PWM_SERVO_5_OC_BIT 0</span></div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="preprocessor">#if USE_PWM6</span></div>
-<div class="line"><a name="l00388"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#a20e24103fcaa69e246c0d87b3a040050">  388</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PWM_SERVO_6 3</span></div>
-<div class="line"><a name="l00389"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#a91379312db5447f1d9c4343ab6abba3c">  389</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PWM_SERVO_6_TIMER TIM5</span></div>
-<div class="line"><a name="l00390"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#a9c90f2615bc6566f45e326285819f6d4">  390</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PWM_SERVO_6_GPIO GPIOA</span></div>
-<div class="line"><a name="l00391"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#ac9b1f25ca62d407c091acfb0334dc377">  391</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PWM_SERVO_6_PIN GPIO1</span></div>
-<div class="line"><a name="l00392"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#a4790fb09d46bc4fec1b725d476ae813d">  392</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PWM_SERVO_6_AF 0</span></div>
-<div class="line"><a name="l00393"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#a78b91cae357eed2023271f3a889047dd">  393</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PWM_SERVO_6_OC TIM_OC2</span></div>
-<div class="line"><a name="l00394"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#af94fd6d4d1273791ff04578e48f27857">  394</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PWM_SERVO_6_OC_BIT (1&lt;&lt;1)</span></div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#elif USE_DUAL_PWM6</span></div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DUAL_PWM_SERVO_6 3</span></div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="preprocessor">#define SECOND_DUAL_PWM_SERVO DUAL_PWM_SERVO_6</span></div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="preprocessor">#define DUAL_PWM_SERVO_6_TIMER TIM5</span></div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DUAL_PWM_SERVO_6_RCC RCC_GPIOA</span></div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DUAL_PWM_SERVO_6_GPIO GPIOA</span></div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DUAL_PWM_SERVO_6_PIN GPIO1</span></div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DUAL_PWM_SERVO_6_AF 0</span></div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DUAL_PWM_SERVO_6_OC TIM_OC2</span></div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PWM_SERVO_6_OC_BIT (1&lt;&lt;1)</span></div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PWM_SERVO_6_OC_BIT 0</span></div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="comment">/* servos 1-4 or 3-4 on TIM4 depending on USE_SERVOS_1AND2 */</span></div>
-<div class="line"><a name="l00413"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#ad1ec00f69a8dbb70ce0d31eef0206d5e">  413</a></span>&#160;<span class="preprocessor">#define PWM_TIM4_CHAN_MASK (PWM_SERVO_1_OC_BIT|PWM_SERVO_2_OC_BIT|PWM_SERVO_3_OC_BIT|PWM_SERVO_4_OC_BIT)</span></div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="preprocessor"></span><span class="comment">/* servos 5-6 on TIM5 */</span></div>
-<div class="line"><a name="l00415"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#a7abc8f9863cc1fd96ecaf1b1cfeaaa55">  415</a></span>&#160;<span class="preprocessor">#define PWM_TIM5_CHAN_MASK (PWM_SERVO_5_OC_BIT|PWM_SERVO_6_OC_BIT)</span></div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="comment">/* SuperbitRF mounted */</span></div>
-<div class="line"><a name="l00418"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#a7a9e3d569526ef39c81a34a4d6f54b82">  418</a></span>&#160;<span class="preprocessor">#define SUPERBITRF_SPI_DEV spi2</span></div>
-<div class="line"><a name="l00419"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#ad74826717a490f03c9e5a1fa9a221755">  419</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SUPERBITRF_RST_PORT GPIOC</span></div>
-<div class="line"><a name="l00420"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#a9a69ba9efc00c1aff78c3e51f3898ba7">  420</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SUPERBITRF_RST_PIN GPIO9</span></div>
-<div class="line"><a name="l00421"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#a099e591914a4f6d65cdaa9b55fea1193">  421</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SUPERBITRF_DRDY_PORT GPIOC</span></div>
-<div class="line"><a name="l00422"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#aea7ea8b9ec1ac799365284824757d827">  422</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SUPERBITRF_DRDY_PIN GPIO6</span></div>
-<div class="line"><a name="l00423"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#a3a9e5f574332d7a10a4fa95fde4467c9">  423</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SUPERBITRF_FORCE_DSM2 FALSE</span></div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CONFIG_LISA_S_1_0_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DUAL_PWM_SERVO_5_P1 0</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DUAL_PWM_SERVO_5_P2 1</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="preprocessor">#define DUAL_PWM_SERVO_5_TIMER TIM5</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DUAL_PWM_SERVO_5_GPIO GPIOA</span></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DUAL_PWM_SERVO_5_PIN GPIO0</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DUAL_PWM_SERVO_5_AF 0</span></div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DUAL_PWM_SERVO_5_OC TIM_OC1</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PWM_SERVO_5_OC_BIT (1&lt;&lt;0)</span></div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PWM_SERVO_5_OC_BIT 0</span></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="preprocessor">#if USE_PWM6</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#a20e24103fcaa69e246c0d87b3a040050">  386</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PWM_SERVO_6 3</span></div>
+<div class="line"><a name="l00387"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#a91379312db5447f1d9c4343ab6abba3c">  387</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PWM_SERVO_6_TIMER TIM5</span></div>
+<div class="line"><a name="l00388"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#a9c90f2615bc6566f45e326285819f6d4">  388</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PWM_SERVO_6_GPIO GPIOA</span></div>
+<div class="line"><a name="l00389"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#ac9b1f25ca62d407c091acfb0334dc377">  389</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PWM_SERVO_6_PIN GPIO1</span></div>
+<div class="line"><a name="l00390"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#a4790fb09d46bc4fec1b725d476ae813d">  390</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PWM_SERVO_6_AF 0</span></div>
+<div class="line"><a name="l00391"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#a78b91cae357eed2023271f3a889047dd">  391</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PWM_SERVO_6_OC TIM_OC2</span></div>
+<div class="line"><a name="l00392"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#af94fd6d4d1273791ff04578e48f27857">  392</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PWM_SERVO_6_OC_BIT (1&lt;&lt;1)</span></div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#elif USE_DUAL_PWM6</span></div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DUAL_PWM_SERVO_6_P1 2</span></div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DUAL_PWM_SERVO_6_P2 3</span></div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="preprocessor">#define DUAL_PWM_SERVO_6_TIMER TIM5</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DUAL_PWM_SERVO_6_GPIO GPIOA</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DUAL_PWM_SERVO_6_PIN GPIO1</span></div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DUAL_PWM_SERVO_6_AF 0</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DUAL_PWM_SERVO_6_OC TIM_OC2</span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PWM_SERVO_6_OC_BIT (1&lt;&lt;1)</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PWM_SERVO_6_OC_BIT 0</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="comment">/* servos 1-4 or 3-4 on TIM4 depending on USE_SERVOS_1AND2 */</span></div>
+<div class="line"><a name="l00409"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#ad1ec00f69a8dbb70ce0d31eef0206d5e">  409</a></span>&#160;<span class="preprocessor">#define PWM_TIM4_CHAN_MASK (PWM_SERVO_1_OC_BIT|PWM_SERVO_2_OC_BIT|PWM_SERVO_3_OC_BIT|PWM_SERVO_4_OC_BIT)</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="preprocessor"></span><span class="comment">/* servos 5-6 on TIM5 */</span></div>
+<div class="line"><a name="l00411"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#a7abc8f9863cc1fd96ecaf1b1cfeaaa55">  411</a></span>&#160;<span class="preprocessor">#define PWM_TIM5_CHAN_MASK (PWM_SERVO_5_OC_BIT|PWM_SERVO_6_OC_BIT)</span></div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="comment">/* SuperbitRF mounted */</span></div>
+<div class="line"><a name="l00414"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#a7a9e3d569526ef39c81a34a4d6f54b82">  414</a></span>&#160;<span class="preprocessor">#define SUPERBITRF_SPI_DEV spi2</span></div>
+<div class="line"><a name="l00415"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#ad74826717a490f03c9e5a1fa9a221755">  415</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SUPERBITRF_RST_PORT GPIOC</span></div>
+<div class="line"><a name="l00416"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#a9a69ba9efc00c1aff78c3e51f3898ba7">  416</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SUPERBITRF_RST_PIN GPIO9</span></div>
+<div class="line"><a name="l00417"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#a099e591914a4f6d65cdaa9b55fea1193">  417</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SUPERBITRF_DRDY_PORT GPIOC</span></div>
+<div class="line"><a name="l00418"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#aea7ea8b9ec1ac799365284824757d827">  418</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SUPERBITRF_DRDY_PIN GPIO6</span></div>
+<div class="line"><a name="l00419"></a><span class="lineno"><a class="code" href="lisa__s__1_80_8h.html#a3a9e5f574332d7a10a4fa95fde4467c9">  419</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SUPERBITRF_FORCE_DSM2 FALSE</span></div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CONFIG_LISA_S_1_0_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="lisa__s__1_80_8h.html">lisa_s_1.0.h</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:04:37 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:00:57 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

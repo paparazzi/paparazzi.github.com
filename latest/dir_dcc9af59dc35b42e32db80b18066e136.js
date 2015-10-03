@@ -28,6 +28,8 @@ var dir_dcc9af59dc35b42e32db80b18066e136 =
     [ "meteo_france_DAQ.h", "meteo__france__DAQ_8h.html", "meteo__france__DAQ_8h" ],
     [ "meteo_stick.c", "meteo__stick_8c.html", "meteo__stick_8c" ],
     [ "meteo_stick.h", "meteo__stick_8h.html", "meteo__stick_8h" ],
+    [ "meteo_stick_calib.c", "meteo__stick__calib_8c.html", "meteo__stick__calib_8c" ],
+    [ "meteo_stick_calib.h", "meteo__stick__calib_8h.html", "meteo__stick__calib_8h" ],
     [ "mf_ptu.c", "mf__ptu_8c.html", "mf__ptu_8c" ],
     [ "mf_ptu.h", "mf__ptu_8h.html", "mf__ptu_8h" ],
     [ "temp_lm75.c", "temp__lm75_8c.html", "temp__lm75_8c" ],

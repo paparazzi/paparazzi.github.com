@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('module__air_data.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -100,13 +100,27 @@ $(document).ready(function(){initNavTree('module__air_data.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title"><a class="el" href="structAirData.html" title="Air Data strucute. ">AirData</a> interface </div>  </div>
+<div class="title"><a class="el" href="air__data_8h.html#structAirData" title="Air Data strucute. ">AirData</a> interface </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Module XML file: <code>air_data.xml</code> </p>
 <p>Provides an interface for baro absolute and differential pressure as well as airspeed. Subscribes to BARO_ABS, BARO_DIFF and TEMPERATURE ABI messages and calculates QNH and true airspeed from it. Also enables you to fly on "flight levels" using AMSL (AltitudeAboveSeaLevel) calculated from current pressure and QNH.</p>
 <p>When using this module to provide airspeed you need a differential pressure sensor module publishing the BARO_DIFF ABI message. Make sure to disable other modules which otherwise directly set the airspeed in the state interface. E.g. when using the airspeed_ms45xx.xml module, define USE_AIRSPEED_MS45XX to FALSE.</p>
-<h1><a class="anchor" id="configuration"></a>
+<h1><a class="anchor" id="module_load_example__air_data"></a>
+Example for airframe file</h1>
+<p>This example contains all possible configuration options, not all of them are mandatory! </p>
+<div class="fragment"><div class="line">&lt;modules&gt;</div>
+<div class="line">  &lt;load name=<span class="stringliteral">&quot;air_data.xml&quot;</span>&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;AIR_DATA_BARO_ABS_ID&quot;</span> value=<span class="stringliteral">&quot;ABI_SENDER_ID&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;AIR_DATA_BARO_DIFF_ID&quot;</span> value=<span class="stringliteral">&quot;ABI_SENDER_ID&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;AIR_DATA_TEMPERATURE_ID&quot;</span> value=<span class="stringliteral">&quot;ABI_SENDER_ID&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;AIR_DATA_CALC_AIRSPEED&quot;</span> value=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;AIR_DATA_CALC_TAS_FACTOR&quot;</span> value=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;AIR_DATA_CALC_AMSL_BARO&quot;</span> value=<span class="stringliteral">&quot;FALSE|TRUE&quot;</span> /&gt;</div>
+<div class="line">    &lt;define name=<span class="stringliteral">&quot;USE_AIRSPEED_AIR_DATA&quot;</span> value=<span class="stringliteral">&quot;TRUE|FALSE&quot;</span> /&gt;</div>
+<div class="line">  &lt;/load&gt;</div>
+<div class="line">&lt;/modules&gt;</div>
+</div><!-- fragment --> <h1><a class="anchor" id="configuration"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
 Define Options</h2>
@@ -165,12 +179,12 @@ Raw air_data.xml file:</h2>
 <div class="line">&lt;module name=<span class="stringliteral">&quot;air_data&quot;</span>&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;</div>
-<div class="line">    <a class="code" href="structAirData.html" title="Air Data strucute. ">AirData</a> interface.</div>
+<div class="line">    <a class="code" href="air__data_8h.html#structAirData" title="Air Data strucute. ">AirData</a> interface.</div>
 <div class="line">    Provides an <span class="keyword">interface </span>for baro absolute and differential pressure as well as airspeed.</div>
-<div class="line">    Subscribes to BARO_ABS, BARO_DIFF and TEMPERATURE ABI messages and calculates QNH and true airspeed <a class="code" href="at__com_8c.html#ae17b1fbd0d2858329af3554bff58d9be">from</a> it.</div>
-<div class="line">    Also enables you to fly on &quot;flight levels&quot; using AMSL (AltitudeAboveSeaLevel) calculated <a class="code" href="at__com_8c.html#ae17b1fbd0d2858329af3554bff58d9be">from</a> <a class="code" href="fixedwing_2autopilot_8c.html#ae6a404c4d3d4da15402e4a8629e7e272" title="Supply current in milliAmpere. ">current</a> pressure and QNH.</div>
+<div class="line">    Subscribes to BARO_ABS, BARO_DIFF and TEMPERATURE ABI messages and calculates QNH and true airspeed from it.</div>
+<div class="line">    Also enables you to fly on &quot;flight levels&quot; using AMSL (AltitudeAboveSeaLevel) calculated from <a class="code" href="fixedwing_2autopilot_8c.html#ae6a404c4d3d4da15402e4a8629e7e272" title="Supply current in milliAmpere. ">current</a> pressure and QNH.</div>
 <div class="line"></div>
-<div class="line">    When using this module to provide airspeed you need a differential pressure sensor module publishing the BARO_DIFF ABI message. Make sure to disable other modules which otherwise directly set the airspeed in the <a class="code" href="group__state__interface.html#gad04519a48b59cfe96f361afe9eb151ba">state</a> interface. <a class="code" href="pprz__geodetic__utm_8h.html#a07484107e6d9fdf38b53edf631d6511d">E</a>.g. when using the airspeed_ms45xx.xml module, define USE_AIRSPEED_MS45XX to <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>.</div>
+<div class="line">    When using this module to provide airspeed you need a differential pressure sensor module publishing the BARO_DIFF ABI message. Make sure to disable other modules which otherwise directly set the airspeed in the <a class="code" href="group__state__interface.html#gad04519a48b59cfe96f361afe9eb151ba">state</a> interface. <a class="code" href="group__math__geodetic__utm.html#ga07484107e6d9fdf38b53edf631d6511d">E</a>.g. when using the airspeed_ms45xx.xml module, define USE_AIRSPEED_MS45XX to <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>.</div>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line">    &lt;define name=<span class="stringliteral">&quot;AIR_DATA_BARO_ABS_ID&quot;</span> value=<span class="stringliteral">&quot;ABI_SENDER_ID&quot;</span> description=<span class="stringliteral">&quot;ABI sender id for absolute baro measurement (default: ABI_BROADCAST)&quot;</span>/&gt;</div>
 <div class="line">    &lt;define name=<span class="stringliteral">&quot;AIR_DATA_BARO_DIFF_ID&quot;</span> value=<span class="stringliteral">&quot;ABI_SENDER_ID&quot;</span> description=<span class="stringliteral">&quot;ABI sender id for differential baro measurement (default: ABI_BROADCAST)&quot;</span>/&gt;</div>
@@ -184,17 +198,17 @@ Raw air_data.xml file:</h2>
 <div class="line">    &lt;dl_settings&gt;</div>
 <div class="line">      &lt;dl_settings name=<span class="stringliteral">&quot;air_data&quot;</span>&gt;</div>
 <div class="line">        &lt;dl_setting min=<span class="stringliteral">&quot;800&quot;</span> max=<span class="stringliteral">&quot;1200&quot;</span> <a class="code" href="max7456_8c.html#a4a2eb71e89c989655301c2f2070e29b3">step</a>=<span class="stringliteral">&quot;1&quot;</span> module=<span class="stringliteral">&quot;air_data/air_data&quot;</span> var=<span class="stringliteral">&quot;air_data.qnh&quot;</span> shortname=<span class="stringliteral">&quot;QNH&quot;</span>/&gt;</div>
-<div class="line">        &lt;dl_setting min=<span class="stringliteral">&quot;0.8&quot;</span> max=<span class="stringliteral">&quot;1.3&quot;</span> <a class="code" href="max7456_8c.html#a4a2eb71e89c989655301c2f2070e29b3">step</a>=<span class="stringliteral">&quot;0.01&quot;</span> module=<span class="stringliteral">&quot;air_data/air_data&quot;</span> var=<span class="stringliteral">&quot;air_data.tas_factor&quot;</span> shortname=<span class="stringliteral">&quot;TASfactor&quot;</span> param=<span class="stringliteral">&quot;AIR_DATA_TAS_FACTOR&quot;</span>/&gt;</div>
+<div class="line">        &lt;dl_setting min=<span class="stringliteral">&quot;0.8&quot;</span> max=<span class="stringliteral">&quot;1.3&quot;</span> <a class="code" href="max7456_8c.html#a4a2eb71e89c989655301c2f2070e29b3">step</a>=<span class="stringliteral">&quot;0.01&quot;</span> module=<span class="stringliteral">&quot;air_data/air_data&quot;</span> var=<span class="stringliteral">&quot;air_data.tas_factor&quot;</span> shortname=<span class="stringliteral">&quot;TASfactor&quot;</span> param=<span class="stringliteral">&quot;AIR_DATA_TAS_FACTOR&quot;</span> type=<span class="stringliteral">&quot;float&quot;</span> persistent=<span class="stringliteral">&quot;true&quot;</span>/&gt;</div>
 <div class="line">        &lt;dl_setting min=<span class="stringliteral">&quot;0&quot;</span> max=<span class="stringliteral">&quot;1&quot;</span> <a class="code" href="max7456_8c.html#a4a2eb71e89c989655301c2f2070e29b3">step</a>=<span class="stringliteral">&quot;1&quot;</span> var=<span class="stringliteral">&quot;air_data.calc_qnh_once&quot;</span> module=<span class="stringliteral">&quot;air_data/air_data&quot;</span> shortname=<span class="stringliteral">&quot;calcQNH&quot;</span>/&gt;</div>
-<div class="line">        &lt;dl_setting min=<span class="stringliteral">&quot;0&quot;</span> max=<span class="stringliteral">&quot;1&quot;</span> <a class="code" href="max7456_8c.html#a4a2eb71e89c989655301c2f2070e29b3">step</a>=<span class="stringliteral">&quot;1&quot;</span> var=<span class="stringliteral">&quot;air_data.calc_airspeed&quot;</span> module=<span class="stringliteral">&quot;air_data/air_data&quot;</span> shortname=<span class="stringliteral">&quot;calcAirspeed&quot;</span> param=<span class="stringliteral">&quot;AIR_DATA_CALC_AIRSPEED&quot;</span>/&gt;</div>
-<div class="line">        &lt;dl_setting min=<span class="stringliteral">&quot;0&quot;</span> max=<span class="stringliteral">&quot;1&quot;</span> <a class="code" href="max7456_8c.html#a4a2eb71e89c989655301c2f2070e29b3">step</a>=<span class="stringliteral">&quot;1&quot;</span> var=<span class="stringliteral">&quot;air_data.calc_tas_factor&quot;</span> module=<span class="stringliteral">&quot;air_data/air_data&quot;</span> shortname=<span class="stringliteral">&quot;calcTASfactor&quot;</span> param=<span class="stringliteral">&quot;AIR_DATA_CALC_TAS_FACTOR&quot;</span>/&gt;</div>
-<div class="line">        &lt;dl_setting min=<span class="stringliteral">&quot;0&quot;</span> max=<span class="stringliteral">&quot;1&quot;</span> <a class="code" href="max7456_8c.html#a4a2eb71e89c989655301c2f2070e29b3">step</a>=<span class="stringliteral">&quot;1&quot;</span> var=<span class="stringliteral">&quot;air_data.calc_amsl_baro&quot;</span> module=<span class="stringliteral">&quot;air_data/air_data&quot;</span> shortname=<span class="stringliteral">&quot;calcAMSL&quot;</span> param=<span class="stringliteral">&quot;AIR_DATA_CALC_AMSL_BARO&quot;</span>/&gt;</div>
+<div class="line">        &lt;dl_setting min=<span class="stringliteral">&quot;0&quot;</span> max=<span class="stringliteral">&quot;1&quot;</span> <a class="code" href="max7456_8c.html#a4a2eb71e89c989655301c2f2070e29b3">step</a>=<span class="stringliteral">&quot;1&quot;</span> var=<span class="stringliteral">&quot;air_data.calc_airspeed&quot;</span> module=<span class="stringliteral">&quot;air_data/air_data&quot;</span> shortname=<span class="stringliteral">&quot;calcAirspeed&quot;</span> param=<span class="stringliteral">&quot;AIR_DATA_CALC_AIRSPEED&quot;</span> type=<span class="stringliteral">&quot;uint8&quot;</span> persistent=<span class="stringliteral">&quot;true&quot;</span>/&gt;</div>
+<div class="line">        &lt;dl_setting min=<span class="stringliteral">&quot;0&quot;</span> max=<span class="stringliteral">&quot;1&quot;</span> <a class="code" href="max7456_8c.html#a4a2eb71e89c989655301c2f2070e29b3">step</a>=<span class="stringliteral">&quot;1&quot;</span> var=<span class="stringliteral">&quot;air_data.calc_tas_factor&quot;</span> module=<span class="stringliteral">&quot;air_data/air_data&quot;</span> shortname=<span class="stringliteral">&quot;calcTASfactor&quot;</span> param=<span class="stringliteral">&quot;AIR_DATA_CALC_TAS_FACTOR&quot;</span> type=<span class="stringliteral">&quot;uint8&quot;</span> persistent=<span class="stringliteral">&quot;true&quot;</span>/&gt;</div>
+<div class="line">        &lt;dl_setting min=<span class="stringliteral">&quot;0&quot;</span> max=<span class="stringliteral">&quot;1&quot;</span> <a class="code" href="max7456_8c.html#a4a2eb71e89c989655301c2f2070e29b3">step</a>=<span class="stringliteral">&quot;1&quot;</span> var=<span class="stringliteral">&quot;air_data.calc_amsl_baro&quot;</span> module=<span class="stringliteral">&quot;air_data/air_data&quot;</span> shortname=<span class="stringliteral">&quot;calcAMSL&quot;</span> param=<span class="stringliteral">&quot;AIR_DATA_CALC_AMSL_BARO&quot;</span> type=<span class="stringliteral">&quot;uint8&quot;</span> persistent=<span class="stringliteral">&quot;true&quot;</span>/&gt;</div>
 <div class="line">      &lt;/dl_settings&gt;</div>
 <div class="line">    &lt;/dl_settings&gt;</div>
 <div class="line">  &lt;/settings&gt;</div>
-<div class="line">  &lt;<a class="code" href="stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963">header</a>&gt;</div>
+<div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=<span class="stringliteral">&quot;air_data.h&quot;</span>/&gt;</div>
-<div class="line">  &lt;/<a class="code" href="stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963">header</a>&gt;</div>
+<div class="line">  &lt;/header&gt;</div>
 <div class="line">  &lt;<a class="code" href="nav__gls_8c.html#ada161ed38a9174ff5b3a4f10b10fd238">init</a> fun=<span class="stringliteral">&quot;air_data_init()&quot;</span>/&gt;</div>
 <div class="line">  &lt;periodic fun=<span class="stringliteral">&quot;air_data_periodic()&quot;</span> freq=<span class="stringliteral">&quot;10&quot;</span>/&gt;</div>
 <div class="line">  &lt;makefile&gt;</div>
@@ -207,7 +221,7 @@ Raw air_data.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:18 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

@@ -1,5 +1,7 @@
 var NAVTREEINDEX75 =
 {
+"stm32f4__chibios__vectors_8h.html#a35bdbe02f7e7c17183fddd11b9c75948":[10,0,0,0,0,3,11,34],
+"stm32f4__chibios__vectors_8h.html#a35fe38f639d8505dba4f2d79a7ad3d84":[10,0,0,0,0,3,11,300],
 "stm32f4__chibios__vectors_8h.html#a366f2ff8cc43273b539d4d33b8a3fcf8":[10,0,0,0,0,3,11,83],
 "stm32f4__chibios__vectors_8h.html#a36c6beb08dff500ed0313c8f4bd8d0fc":[10,0,0,0,0,3,11,309],
 "stm32f4__chibios__vectors_8h.html#a36de89aec4f8e82516b6547ef84114f5":[10,0,0,0,0,3,11,103],
@@ -247,7 +249,5 @@ var NAVTREEINDEX75 =
 "stm32f4__chibios__vectors_8h.html#afc09a32d80d854cc5c641c48cdb50ba1":[10,0,0,0,0,3,11,59],
 "stm32f4__chibios__vectors_8h.html#afce451f5f9d90f888d4f7dbc7d9d1b3d":[10,0,0,0,0,3,11,94],
 "stm32f4__chibios__vectors_8h.html#afce8033b24be849091036e9ac2c67240":[10,0,0,0,0,3,11,86],
-"stm32f4__chibios__vectors_8h.html#afd610d8eee10ed7a855c55de1b088960":[10,0,0,0,0,3,11,257],
-"stm32f4__chibios__vectors_8h.html#afdaa3b897350efde236cdf6f3f8f4644":[10,0,0,0,0,3,11,237],
-"stm32f4__chibios__vectors_8h.html#afe2a0f596fa76d07d8ff8acf4423b7ce":[10,0,0,0,0,3,11,90]
+"stm32f4__chibios__vectors_8h.html#afd610d8eee10ed7a855c55de1b088960":[10,0,0,0,0,3,11,257]
 };

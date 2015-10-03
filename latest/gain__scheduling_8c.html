@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.4"/>
-<title>Paparazzi UAS: sw/airborne/modules/gain_scheduling/gain_scheduling.c File Reference</title>
+<title>Paparazzi UAS: sw/airborne/modules/ctrl/gain_scheduling.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('gain__scheduling_8c.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('gain__scheduling_8c.html','');});
 
 <p>Module that interpolates gainsets in flight based on a scheduling variable.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="gain__scheduling_8h_source.html">gain_scheduling.h</a>&quot;</code><br/>
+<div class="textblock"><code>#include &quot;<a class="el" href="gain__scheduling_8h_source.html">modules/ctrl/gain_scheduling.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="guidance__h_8h_source.html">firmwares/rotorcraft/guidance/guidance_h.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="stabilization_8h_source.html">firmwares/rotorcraft/stabilization.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="pprz__algebra__int_8h_source.html">math/pprz_algebra_int.h</a>&quot;</code><br/>
@@ -125,9 +125,9 @@ $(document).ready(function(){initNavTree('gain__scheduling_8c.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="gain__scheduling_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2gain__scheduling_2gain__scheduling_8c" alt=""/></div>
-<map name="sw_2airborne_2modules_2gain__scheduling_2gain__scheduling_8c" id="sw_2airborne_2modules_2gain__scheduling_2gain__scheduling_8c">
-<area shape="rect" id="node3" href="gain__scheduling_8h.html" title="Module that interpolates between gain sets, depending on the scheduling variable. ..." alt="" coords="249,123,385,151"/><area shape="rect" id="node9" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="533,318,712,346"/><area shape="rect" id="node26" href="guidance__h_8h.html" title="Horizontal guidance for rotorcrafts. " alt="" coords="409,115,583,159"/><area shape="rect" id="node38" href="stabilization_8h.html" title="General stabilization interface for rotorcrafts. " alt="" coords="5,217,152,261"/><area shape="rect" id="node7" href="stabilization__attitude__common__int_8h.html" title="Common data structures shared by euler and quaternion int implementations. " alt="" coords="227,209,408,269"/><area shape="rect" id="node13" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="848,395,1003,423"/><area shape="rect" id="node20" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="675,395,824,423"/><area shape="rect" id="node29" href="guidance__h__ref_8h.html" title="Reference generation for horizontal guidance. " alt="" coords="584,217,779,261"/><area shape="rect" id="node31" href="inttypes_8h.html" title="inttypes.h" alt="" coords="736,318,821,346"/></map>
+<div class="center"><img src="gain__scheduling_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2ctrl_2gain__scheduling_8c" alt=""/></div>
+<map name="sw_2airborne_2modules_2ctrl_2gain__scheduling_8c" id="sw_2airborne_2modules_2ctrl_2gain__scheduling_8c">
+<area shape="rect" id="node3" href="gain__scheduling_8h.html" title="Module that interpolates between gain sets, depending on the scheduling variable. ..." alt="" coords="187,107,405,135"/><area shape="rect" id="node9" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="533,302,712,330"/><area shape="rect" id="node26" href="guidance__h_8h.html" title="Horizontal guidance for rotorcrafts. " alt="" coords="429,99,603,143"/><area shape="rect" id="node38" href="stabilization_8h.html" title="General stabilization interface for rotorcrafts. " alt="" coords="5,201,152,245"/><area shape="rect" id="node7" href="stabilization__attitude__common__int_8h.html" title="Common data structures shared by euler and quaternion int implementations. " alt="" coords="227,193,408,253"/><area shape="rect" id="node13" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="848,379,1003,407"/><area shape="rect" id="node20" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="675,379,824,407"/><area shape="rect" id="node29" href="guidance__h__ref_8h.html" title="Reference generation for horizontal guidance. " alt="" coords="584,201,779,245"/><area shape="rect" id="node31" href="inttypes_8h.html" title="inttypes.h" alt="" coords="736,302,821,330"/></map>
 </div>
 </div>
 <p><a href="gain__scheduling_8c_source.html">Go to the source code of this file.</a></p>
@@ -152,7 +152,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a5b3f2ec9266c8b0bd6d859d5c9790492"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structInt32AttitudeGains.html">Int32AttitudeGains</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gain__scheduling_8c.html#a5b3f2ec9266c8b0bd6d859d5c9790492">gainlibrary</a> [NUMBER_OF_GAINSETS]</td></tr>
+<tr class="memitem:a5b3f2ec9266c8b0bd6d859d5c9790492"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="stabilization__attitude__common__int_8h.html#structInt32AttitudeGains">Int32AttitudeGains</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gain__scheduling_8c.html#a5b3f2ec9266c8b0bd6d859d5c9790492">gainlibrary</a> [NUMBER_OF_GAINSETS]</td></tr>
 <tr class="separator:a5b3f2ec9266c8b0bd6d859d5c9790492"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f55d71dfb3b7469a5986e5e8487b7af"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gain__scheduling_8c.html#a3f55d71dfb3b7469a5986e5e8487b7af">scheduling_points</a> [NUMBER_OF_GAINSETS] = SCHEDULING_POINTS</td></tr>
 <tr class="separator:a3f55d71dfb3b7469a5986e5e8487b7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -236,7 +236,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="gain__scheduling_8c_source.html#l00082">82</a> of file <a class="el" href="gain__scheduling_8c_source.html">gain_scheduling.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00201">BFP_OF_REAL</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00202">FLOAT_OF_BFP</a>, <a class="el" href="gain__scheduling_8c_source.html#l00046">gainlibrary</a>, <a class="el" href="stabilization__attitude__common__int_8h_source.html#l00039">Int32AttitudeGains::i</a>, <a class="el" href="gain__scheduling_8c_source.html#l00044">INT32_RATIO_FRAC</a>, <a class="el" href="gain__scheduling_8c_source.html#l00048">scheduling_points</a>, <a class="el" href="gain__scheduling_8c_source.html#l00040">SCHEDULING_VARIABLE_FRAC</a>, <a class="el" href="gain__scheduling_8c_source.html#l00131">set_gainset()</a>, and <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00038">stabilization_gains</a>.</p>
+<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00205">BFP_OF_REAL</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00206">FLOAT_OF_BFP</a>, <a class="el" href="stabilization__attitude__quat__indi_8c_source.html#l00046">g1</a>, <a class="el" href="stabilization__attitude__quat__indi_8c_source.html#l00047">g2</a>, <a class="el" href="gain__scheduling_8c_source.html#l00046">gainlibrary</a>, <a class="el" href="stabilization__attitude__common__int_8h_source.html#l00039">Int32AttitudeGains::i</a>, <a class="el" href="gain__scheduling_8c_source.html#l00044">INT32_RATIO_FRAC</a>, <a class="el" href="gain__scheduling_8c_source.html#l00048">scheduling_points</a>, <a class="el" href="gain__scheduling_8c_source.html#l00040">SCHEDULING_VARIABLE_FRAC</a>, <a class="el" href="gain__scheduling_8c_source.html#l00131">set_gainset()</a>, and <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00038">stabilization_gains</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -290,7 +290,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structInt32AttitudeGains.html">Int32AttitudeGains</a> gainlibrary[NUMBER_OF_GAINSETS]</td>
+          <td class="memname">struct <a class="el" href="stabilization__attitude__common__int_8h.html#structInt32AttitudeGains">Int32AttitudeGains</a> gainlibrary[NUMBER_OF_GAINSETS]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -322,8 +322,8 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_3240c2d5c4112d4825caf46fc93f74ac.html">gain_scheduling</a></li><li class="navelem"><a class="el" href="gain__scheduling_8c.html">gain_scheduling.c</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:04 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_94757629c544be2d6d24b01569be56e6.html">ctrl</a></li><li class="navelem"><a class="el" href="gain__scheduling_8c.html">gain_scheduling.c</a></li>
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:23 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('imu__mpu9250__i2c_8c.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -118,6 +118,8 @@ $(document).ready(function(){initNavTree('imu__mpu9250__i2c_8c.html','');});
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="imu_8h_source.html">subsystems/imu.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="i2c_8h_source.html">mcu_periph/i2c.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for imu_mpu9250_i2c.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -125,7 +127,7 @@ $(document).ready(function(){initNavTree('imu__mpu9250__i2c_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__mpu9250__i2c_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2imu_2imu__mpu9250__i2c_8c" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2imu_2imu__mpu9250__i2c_8c" id="sw_2airborne_2subsystems_2imu_2imu__mpu9250__i2c_8c">
-<area shape="rect" id="node3" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="249,99,388,127"/><area shape="rect" id="node34" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="668,347,799,375"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="353,270,532,298"/><area shape="rect" id="node21" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="89,270,279,298"/><area shape="rect" id="node27" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="237,177,400,221"/><area shape="rect" id="node9" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="124,347,279,375"/><area shape="rect" id="node16" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="353,347,503,375"/></map>
+<area shape="rect" id="node3" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="320,99,459,127"/><area shape="rect" id="node34" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="679,99,809,127"/><area shape="rect" id="node39" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="769,270,940,298"/><area shape="rect" id="node49" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="901,99,1035,127"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="397,270,576,298"/><area shape="rect" id="node21" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="5,270,195,298"/><area shape="rect" id="node27" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="308,177,471,221"/><area shape="rect" id="node9" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="157,355,312,383"/><area shape="rect" id="node16" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="387,355,536,383"/><area shape="rect" id="node41" href="inttypes_8h.html" title="inttypes.h" alt="" coords="803,355,888,383"/></map>
 </div>
 </div>
 <p><a href="imu__mpu9250__i2c_8c_source.html">Go to the source code of this file.</a></p>
@@ -164,7 +166,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:adad553c3f90fb29838650e9d3306b1c4"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structImuMpu9250.html">ImuMpu9250</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8c.html#adad553c3f90fb29838650e9d3306b1c4">imu_mpu9250</a></td></tr>
+<tr class="memitem:adad553c3f90fb29838650e9d3306b1c4"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="imu__mpu9250__spi_8h.html#structImuMpu9250">ImuMpu9250</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8c.html#adad553c3f90fb29838650e9d3306b1c4">imu_mpu9250</a></td></tr>
 <tr class="separator:adad553c3f90fb29838650e9d3306b1c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -182,9 +184,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00055">55</a> of file <a class="el" href="imu__mpu9250__i2c_8c_source.html">imu_mpu9250_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00056">56</a> of file <a class="el" href="imu__mpu9250__i2c_8c_source.html">imu_mpu9250_i2c.c</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00095">imu_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00096">imu_impl_init()</a>.</p>
 
 </div>
 </div>
@@ -198,9 +200,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00069">69</a> of file <a class="el" href="imu__mpu9250__i2c_8c_source.html">imu_mpu9250_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00070">70</a> of file <a class="el" href="imu__mpu9250__i2c_8c_source.html">imu_mpu9250_i2c.c</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00095">imu_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00096">imu_impl_init()</a>.</p>
 
 </div>
 </div>
@@ -214,9 +216,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00080">80</a> of file <a class="el" href="imu__mpu9250__i2c_8c_source.html">imu_mpu9250_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00081">81</a> of file <a class="el" href="imu__mpu9250__i2c_8c_source.html">imu_mpu9250_i2c.c</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00116">imu_mpu9250_event()</a>.</p>
+<p>Referenced by <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00113">imu_mpu9250_event()</a>.</p>
 
 </div>
 </div>
@@ -230,9 +232,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00084">84</a> of file <a class="el" href="imu__mpu9250__i2c_8c_source.html">imu_mpu9250_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00085">85</a> of file <a class="el" href="imu__mpu9250__i2c_8c_source.html">imu_mpu9250_i2c.c</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00116">imu_mpu9250_event()</a>.</p>
+<p>Referenced by <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00113">imu_mpu9250_event()</a>.</p>
 
 </div>
 </div>
@@ -246,9 +248,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00088">88</a> of file <a class="el" href="imu__mpu9250__i2c_8c_source.html">imu_mpu9250_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00089">89</a> of file <a class="el" href="imu__mpu9250__i2c_8c_source.html">imu_mpu9250_i2c.c</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00116">imu_mpu9250_event()</a>.</p>
+<p>Referenced by <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00113">imu_mpu9250_event()</a>.</p>
 
 </div>
 </div>
@@ -262,9 +264,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00054">54</a> of file <a class="el" href="imu__mpu9250__i2c_8c_source.html">imu_mpu9250_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00055">55</a> of file <a class="el" href="imu__mpu9250__i2c_8c_source.html">imu_mpu9250_i2c.c</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00095">imu_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00096">imu_impl_init()</a>.</p>
 
 </div>
 </div>
@@ -278,9 +280,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00064">64</a> of file <a class="el" href="imu__mpu9250__i2c_8c_source.html">imu_mpu9250_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00065">65</a> of file <a class="el" href="imu__mpu9250__i2c_8c_source.html">imu_mpu9250_i2c.c</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00095">imu_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00096">imu_impl_init()</a>.</p>
 
 </div>
 </div>
@@ -294,9 +296,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00074">74</a> of file <a class="el" href="imu__mpu9250__i2c_8c_source.html">imu_mpu9250_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00075">75</a> of file <a class="el" href="imu__mpu9250__i2c_8c_source.html">imu_mpu9250_i2c.c</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00095">imu_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00096">imu_impl_init()</a>.</p>
 
 </div>
 </div>
@@ -310,9 +312,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00053">53</a> of file <a class="el" href="imu__mpu9250__i2c_8c_source.html">imu_mpu9250_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00054">54</a> of file <a class="el" href="imu__mpu9250__i2c_8c_source.html">imu_mpu9250_i2c.c</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00095">imu_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00096">imu_impl_init()</a>.</p>
 
 </div>
 </div>
@@ -332,15 +334,15 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>must be defined by underlying hardware </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000031">Todo:</a></b></dt><dd>drdy int handling for adxl345 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000032">Todo:</a></b></dt><dd>eoc interrupt for itg3200, polling for now (including status reg) </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000033">Todo:</a></b></dt><dd>drdy int handling for adxl345 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000034">Todo:</a></b></dt><dd>eoc interrupt for itg3200, polling for now (including status reg) </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000035">Todo:</a></b></dt><dd>drdy int handling for adxl345 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000036">Todo:</a></b></dt><dd>drdy int handling for adxl345 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000037">Todo:</a></b></dt><dd>eoc interrupt for itg3200, polling for now (including status reg) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000038">Todo:</a></b></dt><dd>drdy int handling for adxl345 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000039">Todo:</a></b></dt><dd>eoc interrupt for itg3200, polling for now (including status reg) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000040">Todo:</a></b></dt><dd>drdy int handling for adxl345 </dd></dl>
 
-<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00095">95</a> of file <a class="el" href="imu__mpu9250__i2c_8c_source.html">imu_mpu9250_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00096">96</a> of file <a class="el" href="imu__mpu9250__i2c_8c_source.html">imu_mpu9250_i2c.c</a>.</p>
 
-<p>References <a class="el" href="mpu9250_8h_source.html#l00080">Mpu9250Config::accel_range</a>, <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00076">ImuMpu9250::accel_valid</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00068">Mpu9250_I2c::config</a>, <a class="el" href="mpu9250_8h_source.html#l00077">Mpu9250Config::dlpf_accel_cfg</a>, <a class="el" href="mpu9250_8h_source.html#l00078">Mpu9250Config::dlpf_gyro_cfg</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="mpu9250_8h_source.html#l00079">Mpu9250Config::gyro_range</a>, <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00075">ImuMpu9250::gyro_valid</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00055">IMU_MPU9250_ACCEL_LOWPASS_FILTER</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00069">IMU_MPU9250_ACCEL_RANGE</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00054">IMU_MPU9250_GYRO_LOWPASS_FILTER</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00064">IMU_MPU9250_GYRO_RANGE</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00074">IMU_MPU9250_I2C_ADDR</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00053">IMU_MPU9250_SMPLRT_DIV</a>, <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00077">ImuMpu9250::mag_valid</a>, <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00078">ImuMpu9250::mpu</a>, <a class="el" href="mpu9250__i2c_8c_source.html#l00033">mpu9250_i2c_init()</a>, and <a class="el" href="mpu9250_8h_source.html#l00076">Mpu9250Config::smplrt_div</a>.</p>
+<p>References <a class="el" href="mpu9250_8h_source.html#l00080">Mpu9250Config::accel_range</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00068">Mpu9250_I2c::config</a>, <a class="el" href="mpu9250_8h_source.html#l00077">Mpu9250Config::dlpf_accel_cfg</a>, <a class="el" href="mpu9250_8h_source.html#l00078">Mpu9250Config::dlpf_gyro_cfg</a>, <a class="el" href="mpu9250_8h_source.html#l00079">Mpu9250Config::gyro_range</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00056">IMU_MPU9250_ACCEL_LOWPASS_FILTER</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00070">IMU_MPU9250_ACCEL_RANGE</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00055">IMU_MPU9250_GYRO_LOWPASS_FILTER</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00065">IMU_MPU9250_GYRO_RANGE</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00075">IMU_MPU9250_I2C_ADDR</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00054">IMU_MPU9250_SMPLRT_DIV</a>, <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00075">ImuMpu9250::mpu</a>, <a class="el" href="mpu9250__i2c_8c_source.html#l00033">mpu9250_i2c_init()</a>, and <a class="el" href="mpu9250_8h_source.html#l00076">Mpu9250Config::smplrt_div</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -369,9 +371,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00116">116</a> of file <a class="el" href="imu__mpu9250__i2c_8c_source.html">imu_mpu9250_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00113">113</a> of file <a class="el" href="imu__mpu9250__i2c_8c_source.html">imu_mpu9250_i2c.c</a>.</p>
 
-<p>References <a class="el" href="imu_8h_source.html#l00051">Imu::accel_unscaled</a>, <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00076">ImuMpu9250::accel_valid</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00070">Mpu9250_I2c::akm</a>, <a class="el" href="structAk8963.html#a27a85095dec9f7684fe692c18e65ce8b">Ak8963::data</a>, <a class="el" href="structMpu9250__I2c.html#a2e405b085714ae9c6abe8c914790f6fa">Mpu9250_I2c::data_accel</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00058">Mpu9250_I2c::data_available</a>, <a class="el" href="ak8963_8h_source.html#l00061">Ak8963::data_available</a>, <a class="el" href="structMpu9250__I2c.html#a33c8c403b48c8823f1a3f34779f7d70f">Mpu9250_I2c::data_rates</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="imu_8h_source.html#l00050">Imu::gyro_unscaled</a>, <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00075">ImuMpu9250::gyro_valid</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00047">imu</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00093">imu_mpu9250</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00080">IMU_MPU9250_CHAN_X</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00084">IMU_MPU9250_CHAN_Y</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00088">IMU_MPU9250_CHAN_Z</a>, <a class="el" href="imu_8h_source.html#l00052">Imu::mag_unscaled</a>, <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00077">ImuMpu9250::mag_valid</a>, <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00078">ImuMpu9250::mpu</a>, <a class="el" href="imu__mpu9250_8c_source.html#l00035">mpu9250</a>, <a class="el" href="mpu9250__i2c_8c_source.html#l00101">mpu9250_i2c_event()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00328">RATES_COPY</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00061">Mpu9250_I2c::value</a>, <a class="el" href="ak8963_8h_source.html#l00064">Ak8963::value</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00131">VECT3_COPY</a>.</p>
+<p>References <a class="el" href="imu_8h_source.html#l00043">Imu::accel</a>, <a class="el" href="imu_8h_source.html#l00051">Imu::accel_unscaled</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00070">Mpu9250_I2c::akm</a>, <a class="el" href="ak8963_8h.html#a8d9d212b60fc405e6c28059bb129d6b5">Ak8963::data</a>, <a class="el" href="mpu9250__i2c_8h.html#afc360d7d0be3374e43c874ced08e9c31">Mpu9250_I2c::data_accel</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00058">Mpu9250_I2c::data_available</a>, <a class="el" href="ak8963_8h_source.html#l00061">Ak8963::data_available</a>, <a class="el" href="mpu9250__i2c_8h.html#abf36d7b95de386383e0814ebfa5d315c">Mpu9250_I2c::data_rates</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8h_source.html#l00039">get_sys_time_usec()</a>, <a class="el" href="imu_8h_source.html#l00042">Imu::gyro</a>, <a class="el" href="imu_8h_source.html#l00050">Imu::gyro_unscaled</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00043">imu</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00094">imu_mpu9250</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00081">IMU_MPU9250_CHAN_X</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00085">IMU_MPU9250_CHAN_Y</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00089">IMU_MPU9250_CHAN_Z</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00206">IMU_MPU9250_ID</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00350">imu_scale_accel()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00349">imu_scale_gyro()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00351">imu_scale_mag()</a>, <a class="el" href="imu_8h_source.html#l00044">Imu::mag</a>, <a class="el" href="imu_8h_source.html#l00052">Imu::mag_unscaled</a>, <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00075">ImuMpu9250::mpu</a>, <a class="el" href="mpu9250__i2c_8c_source.html#l00101">mpu9250_i2c_event()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00336">RATES_COPY</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00139">VECT3_COPY</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -380,7 +382,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__mpu9250__i2c_8c_af140d4e8a775be026073e67fd3080aa2_cgraph.png" border="0" usemap="#imu__mpu9250__i2c_8c_af140d4e8a775be026073e67fd3080aa2_cgraph" alt=""/></div>
 <map name="imu__mpu9250__i2c_8c_af140d4e8a775be026073e67fd3080aa2_cgraph" id="imu__mpu9250__i2c_8c_af140d4e8a775be026073e67fd3080aa2_cgraph">
-<area shape="rect" id="node3" href="mpu9250__i2c_8c.html#a0dae39bc87a61581cbe1e8a8a3138c0f" title="mpu9250_i2c_event" alt="" coords="212,55,361,83"/><area shape="rect" id="node5" href="ak8963_8c.html#a0316e3a43049d9356e6581384be3e0ae" title="ak8963_event" alt="" coords="452,5,564,33"/><area shape="rect" id="node11" href="mpu9250__i2c_8c.html#a34dd744ef31f8ad77b63bb75d3e64c1f" title="mpu9250_i2c_write_to_reg" alt="" coords="412,55,604,83"/><area shape="rect" id="node16" href="mpu9250_8c.html#a5a845891a5217c8082995fbbf9c94653" title="Configuration sequence called once before normal use. " alt="" coords="425,110,591,138"/><area shape="rect" id="node7" href="group__i2c.html#gae029fe6bf43eaf9e46428fec7e7b91c7" title="Submit a write/read transaction. " alt="" coords="685,5,797,33"/><area shape="rect" id="node9" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="877,30,968,58"/><area shape="rect" id="node13" href="group__i2c.html#ga68659e03504627925829f2f12c2ec6d2" title="Submit a write only transaction. " alt="" coords="691,55,792,83"/><area shape="rect" id="node18" href="mpu9250_8h.html#aeec91d1c3e5784a3ff93971ff11309ab" title="Configure I2C slaves of the MPU. " alt="" coords="655,106,828,150"/></map>
+<area shape="rect" id="node3" href="linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="215,5,359,33"/><area shape="rect" id="node7" href="ahrs__gx3_8c.html#a34a2e1e2b450191b8ab1e849239810b2" title="imu_scale_accel" alt="" coords="224,55,349,83"/><area shape="rect" id="node9" href="ahrs__gx3_8c.html#a8d63b0a61c8ffe88dd15b40843b1ae1d" title="imu_scale_gyro" alt="" coords="227,106,347,134"/><area shape="rect" id="node11" href="ahrs__gx3_8c.html#a6ca6c7f78fab9df37eb980d2b4d1b3a9" title="imu_scale_mag" alt="" coords="225,157,348,185"/><area shape="rect" id="node13" href="mpu9250__i2c_8c.html#a0dae39bc87a61581cbe1e8a8a3138c0f" title="mpu9250_i2c_event" alt="" coords="212,207,361,235"/><area shape="rect" id="node5" href="sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="440,5,576,33"/><area shape="rect" id="node15" href="ak8963_8c.html#a0316e3a43049d9356e6581384be3e0ae" title="ak8963_event" alt="" coords="452,157,564,185"/><area shape="rect" id="node21" href="mpu9250__i2c_8c.html#a34dd744ef31f8ad77b63bb75d3e64c1f" title="mpu9250_i2c_write_to_reg" alt="" coords="412,207,604,235"/><area shape="rect" id="node26" href="mpu9250_8c.html#a5a845891a5217c8082995fbbf9c94653" title="Configuration sequence called once before normal use. " alt="" coords="425,262,591,290"/><area shape="rect" id="node17" href="group__i2c.html#gae029fe6bf43eaf9e46428fec7e7b91c7" title="Submit a write/read transaction. " alt="" coords="685,157,797,185"/><area shape="rect" id="node19" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="877,182,968,210"/><area shape="rect" id="node23" href="group__i2c.html#ga68659e03504627925829f2f12c2ec6d2" title="Submit a write only transaction. " alt="" coords="691,207,792,235"/><area shape="rect" id="node28" href="mpu9250_8h.html#aeec91d1c3e5784a3ff93971ff11309ab" title="Configure I2C slaves of the MPU. " alt="" coords="655,258,828,302"/></map>
 </div>
 </p>
 
@@ -405,9 +407,9 @@ Variables</h2></td></tr>
 <p>optional.</p>
 <p>Read the MPU60x0 every periodic call and the HMC58XX every 10th call. </p>
 
-<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00111">111</a> of file <a class="el" href="imu__mpu9250__i2c_8c_source.html">imu_mpu9250_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00108">108</a> of file <a class="el" href="imu__mpu9250__i2c_8c_source.html">imu_mpu9250_i2c.c</a>.</p>
 
-<p>References <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00093">imu_mpu9250</a>, <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00078">ImuMpu9250::mpu</a>, and <a class="el" href="mpu9250__i2c_8h_source.html#l00080">mpu9250_i2c_periodic()</a>.</p>
+<p>References <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00094">imu_mpu9250</a>, <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00075">ImuMpu9250::mpu</a>, and <a class="el" href="mpu9250__i2c_8h_source.html#l00080">mpu9250_i2c_periodic()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -428,14 +430,14 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structImuMpu9250.html">ImuMpu9250</a> imu_mpu9250</td>
+          <td class="memname">struct <a class="el" href="imu__mpu9250__spi_8h.html#structImuMpu9250">ImuMpu9250</a> imu_mpu9250</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00093">93</a> of file <a class="el" href="imu__mpu9250__i2c_8c_source.html">imu_mpu9250_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00094">94</a> of file <a class="el" href="imu__mpu9250__i2c_8c_source.html">imu_mpu9250_i2c.c</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00116">imu_mpu9250_event()</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00111">imu_periodic()</a>, and <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00085">ImuEvent()</a>.</p>
+<p>Referenced by <a class="el" href="imu__mpu9250__spi_8c_source.html#l00121">imu_impl_init()</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00113">imu_mpu9250_event()</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00108">imu_periodic()</a>, and <a class="el" href="imu__mpu9250__spi_8c_source.html#l00221">mpu_set_and_wait()</a>.</p>
 
 </div>
 </div>
@@ -445,7 +447,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8b2fa0708e2db44c1b91938af97bac44.html">imu</a></li><li class="navelem"><a class="el" href="imu__mpu9250__i2c_8c.html">imu_mpu9250_i2c.c</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:15 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:36 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

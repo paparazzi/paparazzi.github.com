@@ -1,7 +1,22 @@
 var sys__time_8h =
 [
-    [ "sys_time_timer", "structsys__time__timer.html", "structsys__time__timer" ],
-    [ "sys_time", "structsys__time.html", "structsys__time" ],
+    [ "sys_time_timer", "sys__time_8h.html#structsys__time__timer", [
+      [ "cb", "sys__time_8h.html#aaa0e8ec5a4704566e6877120e3c4e972", null ],
+      [ "duration", "sys__time_8h.html#a3fe39118ebee61c56c1e065f5426b14d", null ],
+      [ "elapsed", "sys__time_8h.html#af705c881b01c20d92164b4c111f57acb", null ],
+      [ "end_time", "sys__time_8h.html#abbf23b4993e74efe48aef5d7c8bfe0dd", null ],
+      [ "in_use", "sys__time_8h.html#aec2dfa371d0ca5faadc5fdc35108fdfe", null ]
+    ] ],
+    [ "sys_time", "sys__time_8h.html#structsys__time", [
+      [ "cpu_ticks_per_sec", "sys__time_8h.html#a3c72a20e3a9db56e14d54c8c7cbac0f3", null ],
+      [ "nb_sec", "sys__time_8h.html#a2e86fdabba99a0ac8f6409e0d1e694a3", null ],
+      [ "nb_sec_rem", "sys__time_8h.html#a8654f589772b3eef22ab59594c97e513", null ],
+      [ "nb_tick", "sys__time_8h.html#a08a221fc6226e9b3dce3bdd8ef08803c", null ],
+      [ "resolution", "sys__time_8h.html#a8a4f7ef3bbea802072d4f4b618aae996", null ],
+      [ "resolution_cpu_ticks", "sys__time_8h.html#a6afb6a9b84be1fe714c946b509585de9", null ],
+      [ "ticks_per_sec", "sys__time_8h.html#a10cff0d019d62eafe6033e71f8bbf62f", null ],
+      [ "timer", "sys__time_8h.html#ac9099131f9a2e477427758d79e220544", null ]
+    ] ],
     [ "SYS_TIME_FREQUENCY", "sys__time_8h.html#a1af9cc60972c40f4b83306d8ee75560e", null ],
     [ "SYS_TIME_NB_TIMER", "sys__time_8h.html#ab5a17fcb1104999c805fb6f555b15b19", null ],
     [ "SysTimeTimer", "sys__time_8h.html#a2dfaf7d6ae83a19972aca429fc687e87", null ],

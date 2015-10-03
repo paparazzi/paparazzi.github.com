@@ -1,6 +1,8 @@
 var imu__hbmini_8h =
 [
-    [ "ImuHbmini", "structImuHbmini.html", "structImuHbmini" ],
+    [ "ImuHbmini", "imu__hbmini_8h.html#structImuHbmini", [
+      [ "hmc", "imu__hbmini_8h.html#ac75d9ed562c6e4eed337a4f3e32b60eb", null ]
+    ] ],
     [ "IMU_ACCEL_X_SIGN", "imu__hbmini_8h.html#a4198979ecdab243efc790d5b739a4645", null ],
     [ "IMU_ACCEL_Y_SIGN", "imu__hbmini_8h.html#a20144cb4fd6b12baf8d74063f8dc87e3", null ],
     [ "IMU_ACCEL_Z_SIGN", "imu__hbmini_8h.html#ad8bdd9e68ab45b4ec5950f2e718d8f6c", null ],
@@ -10,8 +12,8 @@ var imu__hbmini_8h =
     [ "IMU_MAG_X_SIGN", "imu__hbmini_8h.html#a34ef05992d74a9dc07c6a20feffd6eef", null ],
     [ "IMU_MAG_Y_SIGN", "imu__hbmini_8h.html#a127929c4b5a458043f7ef2e0fa2a4e54", null ],
     [ "IMU_MAG_Z_SIGN", "imu__hbmini_8h.html#a8612bd2fe2f927e8f283a9a8e60010f5", null ],
+    [ "ImuEvent", "imu__hbmini_8h.html#a38f1122c1ee0701562b490c6e1b60609", null ],
     [ "imu_hbmini_downlink_raw", "imu__hbmini_8h.html#a8ae69ebf8b1f4554164d83e027853f00", null ],
     [ "imu_hbmini_event", "imu__hbmini_8h.html#a5b9ae3abc04f091d942553dc17b589c8", null ],
-    [ "ImuEvent", "imu__hbmini_8h.html#a9d95db588addd0a03f6e7e749fbb032a", null ],
     [ "imu_hbmini", "imu__hbmini_8h.html#a6e590ea990a714a620248f0bcc6064bb", null ]
 ];

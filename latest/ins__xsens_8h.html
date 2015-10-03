@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('ins__xsens_8h.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -108,6 +108,7 @@ $(document).ready(function(){initNavTree('ins__xsens_8h.html','');});
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">ins_xsens.h File Reference</div>  </div>
@@ -116,6 +117,7 @@ $(document).ready(function(){initNavTree('ins__xsens_8h.html','');});
 <div class="textblock"><code>#include &quot;std.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="ins__module_8h_source.html">ins_module.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="imu_8h_source.html">subsystems/imu.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for ins_xsens.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -123,7 +125,7 @@ $(document).ready(function(){initNavTree('ins__xsens_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__xsens_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2ins_2ins__xsens_8h" alt=""/></div>
 <map name="sw_2airborne_2modules_2ins_2ins__xsens_8h" id="sw_2airborne_2modules_2ins_2ins__xsens_8h">
-<area shape="rect" id="node5" href="ins__module_8h.html" title="Device independent INS code. " alt="" coords="1095,99,1202,127"/><area shape="rect" id="node63" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="284,254,423,282"/><area shape="rect" id="node8" href="ins_8h.html" title="Integrated Navigation System interface. " alt="" coords="702,177,835,205"/><area shape="rect" id="node54" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1079,177,1218,205"/><area shape="rect" id="node11" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="784,331,934,375"/><area shape="rect" id="node31" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="124,425,314,453"/><area shape="rect" id="node37" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="556,254,623,282"/><area shape="rect" id="node13" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="760,425,883,453"/><area shape="rect" id="node16" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="542,425,680,453"/><area shape="rect" id="node19" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="262,502,416,530"/><area shape="rect" id="node26" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="683,502,832,530"/><area shape="rect" id="node42" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="611,331,760,375"/><area shape="rect" id="node47" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="272,331,435,375"/><area shape="rect" id="node58" href="link__device_8h.html" title="generic device header " alt="" coords="856,254,1038,282"/><area shape="rect" id="node60" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1059,339,1144,367"/></map>
+<area shape="rect" id="node5" href="ins__module_8h.html" title="Device independent INS code. " alt="" coords="636,99,743,127"/><area shape="rect" id="node69" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="1596,254,1735,282"/><area shape="rect" id="node76" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="1009,99,1143,127"/><area shape="rect" id="node8" href="ins_8h.html" title="Integrated Navigation System interface. " alt="" coords="801,177,935,205"/><area shape="rect" id="node54" href="link__device_8h.html" title="generic device header " alt="" coords="291,254,472,282"/><area shape="rect" id="node58" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="212,177,351,205"/><area shape="rect" id="node64" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API. " alt="" coords="564,177,695,205"/><area shape="rect" id="node11" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="837,331,987,375"/><area shape="rect" id="node31" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1447,425,1636,453"/><area shape="rect" id="node37" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="1108,254,1175,282"/><area shape="rect" id="node13" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="869,425,992,453"/><area shape="rect" id="node16" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1072,425,1211,453"/><area shape="rect" id="node19" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="1336,502,1491,530"/><area shape="rect" id="node26" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="920,502,1069,530"/><area shape="rect" id="node42" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1011,331,1160,375"/><area shape="rect" id="node47" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1336,331,1499,375"/><area shape="rect" id="node56" href="inttypes_8h.html" title="inttypes.h" alt="" coords="339,339,424,367"/></map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -139,30 +141,131 @@ $(document).ready(function(){initNavTree('ins__xsens_8h.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structXsensTime.html">XsensTime</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Library for the XSENS AHRS.  <a href="structXsensTime.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structImuXsens.html">ImuXsens</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structXsensTime"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens_8h.html#structXsensTime">XsensTime</a></td></tr>
+<tr class="memdesc:structXsensTime"><td class="mdescLeft">&#160;</td><td class="mdescRight">Library for the XSENS AHRS.  <a href="ins__xsens_8h.html#structXsensTime">More...</a><br/></td></tr>
+<tr class="separator:structXsensTime"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structImuXsens"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens_8h.html#structImuXsens">ImuXsens</a></td></tr>
+<tr class="separator:structImuXsens"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a5b61834fdd9dc32e2f93b974354c7402"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens_8h.html#a5b61834fdd9dc32e2f93b974354c7402">ImuEvent</a>(_gyro_handler, _accel_handler, _mag_handler)</td></tr>
-<tr class="separator:a5b61834fdd9dc32e2f93b974354c7402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac283565c6dd4a209dac392371e296149"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens_8h.html#ac283565c6dd4a209dac392371e296149">ImuEvent</a>()&#160;&#160;&#160;{}</td></tr>
+<tr class="separator:ac283565c6dd4a209dac392371e296149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a6345aa5f7a6fc2de9539539d91bf0cba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens_8h.html#a6345aa5f7a6fc2de9539539d91bf0cba">xsens_periodic</a> (void)</td></tr>
+<tr class="separator:a6345aa5f7a6fc2de9539539d91bf0cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a42ca5c3bdbce220f8861d3675b74609d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structXsensTime.html">XsensTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens_8h.html#a42ca5c3bdbce220f8861d3675b74609d">xsens_time</a></td></tr>
+<tr class="memitem:a42ca5c3bdbce220f8861d3675b74609d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="ins__xsens_8h.html#structXsensTime">XsensTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens_8h.html#a42ca5c3bdbce220f8861d3675b74609d">xsens_time</a></td></tr>
 <tr class="separator:a42ca5c3bdbce220f8861d3675b74609d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05acf815522ac351803010e46bdd0630"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens_8h.html#a05acf815522ac351803010e46bdd0630">xsens_msg_status</a></td></tr>
 <tr class="separator:a05acf815522ac351803010e46bdd0630"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b6eb281542b6309396be4ebf947d593"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens_8h.html#a6b6eb281542b6309396be4ebf947d593">xsens_time_stamp</a></td></tr>
 <tr class="separator:a6b6eb281542b6309396be4ebf947d593"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a324f6180f03e88fef60ce50a04a7c165"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structImuXsens.html">ImuXsens</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens_8h.html#a324f6180f03e88fef60ce50a04a7c165">imu_xsens</a></td></tr>
+<tr class="memitem:a324f6180f03e88fef60ce50a04a7c165"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="ins__xsens_8h.html#structImuXsens">ImuXsens</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__xsens_8h.html#a324f6180f03e88fef60ce50a04a7c165">imu_xsens</a></td></tr>
 <tr class="separator:a324f6180f03e88fef60ce50a04a7c165"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="structXsensTime" id="structXsensTime"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct XsensTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Library for the XSENS AHRS. </p>
+
+<p>Definition at line <a class="el" href="ins__xsens_8h_source.html#l00034">34</a> of file <a class="el" href="ins__xsens_8h_source.html">ins_xsens.h</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a690dead879396ed80968b062ea6b8688"></a><a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a></td>
+<td class="fieldname">
+day</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a875a41fc7f76ec63724b7efd54264029"></a><a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a></td>
+<td class="fieldname">
+hour</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="addbb9c9b5d6f1dee717340060ac7a8fc"></a><a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a></td>
+<td class="fieldname">
+min</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a929428e8300dc3a1a40679be7e38e6c4"></a><a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a></td>
+<td class="fieldname">
+month</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ab0ef7bd317cfe0588f716907d4e844d3"></a><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></td>
+<td class="fieldname">
+nanosec</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a3de7dc7e346cfb28ff99b61124476fbf"></a><a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a></td>
+<td class="fieldname">
+sec</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a71b9696fddded5a970de10eeba78deda"></a><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a></td>
+<td class="fieldname">
+year</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structImuXsens" id="structImuXsens"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct ImuXsens</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p>Definition at line <a class="el" href="ins__xsens_8h_source.html#l00058">58</a> of file <a class="el" href="ins__xsens_8h_source.html">ins_xsens.h</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aa9f2309190313541f0ce433026fe2051"></a>bool_t</td>
+<td class="fieldname">
+accel_available</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a94db1d3d9439421cb8406277ae38d472"></a>bool_t</td>
+<td class="fieldname">
+gyro_available</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a8d47dc750ad752c043a5758531af8269"></a>bool_t</td>
+<td class="fieldname">
+mag_available</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a5b61834fdd9dc32e2f93b974354c7402"></a>
+<a class="anchor" id="ac283565c6dd4a209dac392371e296149"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -170,45 +273,58 @@ Variables</h2></td></tr>
           <td class="memname">#define ImuEvent</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">_gyro_handler, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_accel_handler, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">_mag_handler&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramname">void)</td><td></td>
+          <td>&#160;&#160;&#160;{}</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{ \</div>
-<div class="line">    if (<a class="code" href="ins__xsens_8c.html#a324f6180f03e88fef60ce50a04a7c165">imu_xsens</a>.<a class="code" href="structImuXsens.html#aa9f2309190313541f0ce433026fe2051">accel_available</a>) {                            \</div>
-<div class="line">      imu_xsens.accel_available = <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;                        \</div>
-<div class="line">      _accel_handler();                                         \</div>
-<div class="line">    }                                                           \</div>
-<div class="line">    if (<a class="code" href="ins__xsens_8c.html#a324f6180f03e88fef60ce50a04a7c165">imu_xsens</a>.<a class="code" href="structImuXsens.html#a94db1d3d9439421cb8406277ae38d472">gyro_available</a>) {                             \</div>
-<div class="line">      imu_xsens.gyro_available = <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;                         \</div>
-<div class="line">      _gyro_handler();                                          \</div>
-<div class="line">    }                                                           \</div>
-<div class="line">    if (<a class="code" href="ins__xsens_8c.html#a324f6180f03e88fef60ce50a04a7c165">imu_xsens</a>.<a class="code" href="structImuXsens.html#a8d47dc750ad752c043a5758531af8269">mag_available</a>) {                              \</div>
-<div class="line">      imu_xsens.mag_available = <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;                          \</div>
-<div class="line">      _mag_handler();                                           \</div>
-<div class="line">    }                                                           \</div>
-<div class="line">  }</div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="ins__xsens_8h_source.html#l00063">63</a> of file <a class="el" href="ins__xsens_8h_source.html">ins_xsens.h</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00676">event_task_ap()</a>, and <a class="el" href="rotorcraft_2main_8c_source.html#l00305">main_event()</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens_8h_source.html#l00065">65</a> of file <a class="el" href="ins__xsens_8h_source.html">ins_xsens.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a6345aa5f7a6fc2de9539539d91bf0cba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xsens_periodic </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ins__xsens_8c_source.html#l00317">317</a> of file <a class="el" href="ins__xsens_8c_source.html">ins_xsens.c</a>.</p>
+
+<p>References <a class="el" href="ins__xsens700_8c_source.html#l00248">xsens_ask_message_rate()</a>, <a class="el" href="ins__xsens_8c_source.html#l00211">xsens_configured</a>, <a class="el" href="ins__xsens_8c_source.html#l00192">xsens_declination</a>, <a class="el" href="ins__xsens_8c_source.html#l00188">xsens_output_mode</a>, <a class="el" href="ins__xsens_8c_source.html#l00189">xsens_output_settings</a>, <a class="el" href="ins__xsens700_8c_source.html#l00102">XsensHeader</a>, and <a class="el" href="ins__xsens700_8c_source.html#l00109">XsensTrailer</a>.</p>
+
+<p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00243">imu_periodic()</a>.</p>
+
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ins__xsens_8h_a6345aa5f7a6fc2de9539539d91bf0cba_cgraph.png" border="0" usemap="#ins__xsens_8h_a6345aa5f7a6fc2de9539539d91bf0cba_cgraph" alt=""/></div>
+<map name="ins__xsens_8h_a6345aa5f7a6fc2de9539539d91bf0cba_cgraph" id="ins__xsens_8h_a6345aa5f7a6fc2de9539539d91bf0cba_cgraph">
+<area shape="rect" id="node3" href="ins__xsens700_8c.html#ac3c716f124f5e6ec6161955d18aa8cde" title="xsens_ask_message_rate" alt="" coords="171,5,357,33"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ins__xsens_8h_a6345aa5f7a6fc2de9539539d91bf0cba_icgraph.png" border="0" usemap="#ins__xsens_8h_a6345aa5f7a6fc2de9539539d91bf0cba_icgraph" alt=""/></div>
+<map name="ins__xsens_8h_a6345aa5f7a6fc2de9539539d91bf0cba_icgraph" id="ins__xsens_8h_a6345aa5f7a6fc2de9539539d91bf0cba_icgraph">
+<area shape="rect" id="node3" href="ins__xsens_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="optional. " alt="" coords="172,5,273,33"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -218,14 +334,14 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structImuXsens.html">ImuXsens</a> imu_xsens</td>
+          <td class="memname">struct <a class="el" href="ins__xsens_8h.html#structImuXsens">ImuXsens</a> imu_xsens</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="ins__xsens_8c_source.html#l00233">233</a> of file <a class="el" href="ins__xsens_8c_source.html">ins_xsens.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00386">handle_ins_msg()</a>, <a class="el" href="ins__xsens_8c_source.html#l00235">imu_impl_init()</a>, and <a class="el" href="ins__xsens_8c_source.html#l00432">parse_ins_msg()</a>.</p>
+<p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00410">handle_ins_msg()</a>, <a class="el" href="ins__xsens_8c_source.html#l00235">imu_impl_init()</a>, and <a class="el" href="ins__xsens_8c_source.html#l00475">parse_ins_msg()</a>.</p>
 
 </div>
 </div>
@@ -239,9 +355,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens_8c_source.html#l00185">185</a> of file <a class="el" href="ins__xsens_8c_source.html">ins_xsens.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens_8c_source.html#l00186">186</a> of file <a class="el" href="ins__xsens_8c_source.html">ins_xsens.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00432">parse_ins_msg()</a>, and <a class="el" href="ins__xsens_8c_source.html#l00215">xsens_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00475">parse_ins_msg()</a>, and <a class="el" href="ins__xsens_8c_source.html#l00215">xsens_init()</a>.</p>
 
 </div>
 </div>
@@ -250,14 +366,14 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structXsensTime.html">XsensTime</a> xsens_time</td>
+          <td class="memname">struct <a class="el" href="ins__xsens_8h.html#structXsensTime">XsensTime</a> xsens_time</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens_8c_source.html#l00201">201</a> of file <a class="el" href="ins__xsens_8c_source.html">ins_xsens.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens_8c_source.html#l00202">202</a> of file <a class="el" href="ins__xsens_8c_source.html">ins_xsens.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00432">parse_ins_msg()</a>.</p>
+<p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00475">parse_ins_msg()</a>.</p>
 
 </div>
 </div>
@@ -271,9 +387,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__xsens_8c_source.html#l00186">186</a> of file <a class="el" href="ins__xsens_8c_source.html">ins_xsens.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__xsens_8c_source.html#l00187">187</a> of file <a class="el" href="ins__xsens_8c_source.html">ins_xsens.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00432">parse_ins_msg()</a>, and <a class="el" href="ins__xsens_8c_source.html#l00215">xsens_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00475">parse_ins_msg()</a>, and <a class="el" href="ins__xsens_8c_source.html#l00215">xsens_init()</a>.</p>
 
 </div>
 </div>
@@ -283,7 +399,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="ins__xsens_8h.html">ins_xsens.h</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:05 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:25 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

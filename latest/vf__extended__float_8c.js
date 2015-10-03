@@ -1,13 +1,13 @@
 var vf__extended__float_8c =
 [
-    [ "ACCEL_NOISE", "vf__extended__float_8c.html#ab9860884bcc40dbf52ddde46120acc65", null ],
     [ "DEBUG_VFF_EXTENDED", "vf__extended__float_8c.html#ab64c7f71460096eb6bed6963d617ea49", null ],
-    [ "INIT_PXX", "vf__extended__float_8c.html#a9de0af96144a82e765244bb6df486243", null ],
     [ "Qbiasbias", "vf__extended__float_8c.html#a70f5ca9eb3931cae7b39b297ec278141", null ],
     [ "Qoffoff", "vf__extended__float_8c.html#a4a8d9b629f50078fdc06fbc3b5a535f8", null ],
     [ "R_ALT", "vf__extended__float_8c.html#a42afc75d03c75255f5d5b8d5f7bdcec9", null ],
     [ "R_BARO", "vf__extended__float_8c.html#a662a7e9b1ca3cb69b0bc04067a9779d6", null ],
     [ "R_OFFSET", "vf__extended__float_8c.html#a3960e784c7c8e6c83ba671b3702fb67f", null ],
+    [ "VFF_EXTENDED_ACCEL_NOISE", "vf__extended__float_8c.html#a2ac22598cea13446c80cc3d340c145f9", null ],
+    [ "VFF_EXTENDED_INIT_PXX", "vf__extended__float_8c.html#ac3f01ac592833c7d394b8480242c6a35", null ],
     [ "update_alt_conf", "vf__extended__float_8c.html#a8cf6550aed7ee0fab93545ce283d183c", null ],
     [ "update_baro_conf", "vf__extended__float_8c.html#a7cc8f440a2dfd6769810468a88ccec67", null ],
     [ "update_offset_conf", "vf__extended__float_8c.html#a3b99dfff6cd512233a5bf7b9bdd49208", null ],

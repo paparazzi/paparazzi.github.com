@@ -23,6 +23,7 @@ var fixedwing_2autopilot_8h =
     [ "THRESHOLD2", "fixedwing_2autopilot_8h.html#a12ff5dfa8cfe1cbe08d1289b3e8da55c", null ],
     [ "THRESHOLD_MANUAL_PPRZ", "fixedwing_2autopilot_8h.html#ac68ed9030b448307d20a265af6f102cf", null ],
     [ "THROTTLE_THRESHOLD_TAKEOFF", "fixedwing_2autopilot_8h.html#a1c2e8ec07daf2aa0b8e54a832ea70139", null ],
+    [ "autopilot_ClearSettings", "fixedwing_2autopilot_8h.html#a6655f240991483cd4d94c95ee7c9a9fb", null ],
     [ "autopilot_init", "fixedwing_2autopilot_8h.html#a9d3557653abfc3d4c428724b249f6d5e", null ],
     [ "autopilot_send_mode", "fixedwing_2autopilot_8h.html#a4c54f26fedcf128f909c7cc5dc071353", null ],
     [ "autopilot_StoreSettings", "fixedwing_2autopilot_8h.html#a86324d506d7950106df80f2d633f9de3", null ],

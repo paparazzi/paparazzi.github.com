@@ -2,6 +2,9 @@ var searchData=
 [
   ['sc18is600status',['Sc18Is600Status',['../sc18i600_8h.html#ac78382be26749fa7dac3f7c2b479ea9c',1,'sc18i600.h']]],
   ['sc18is600transaction',['Sc18Is600Transaction',['../sc18i600_8h.html#a3957e1fb4a73fc23b0ed60c91f613faf',1,'sc18i600.h']]],
+  ['sdcardstatus',['SDCardStatus',['../sdcard__spi_8h.html#a158c27589e5da52795c513a8b711cbf7',1,'sdcard_spi.h']]],
+  ['sdcardtype',['SDCardType',['../sdcard__spi_8h.html#aee0484fa6f4e4ca7f7caf414bbee4341',1,'sdcard_spi.h']]],
+  ['sdresponsetype',['SdResponseType',['../sdcard__spi_8h.html#ad59ef72ebf07c669fbbf94233a82086e',1,'sdcard_spi.h']]],
   ['sht_5fstat_5fi2c',['sht_stat_i2c',['../humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67a',1,'humid_sht_i2c.h']]],
   ['slot_5fstatus',['slot_status',['../formation_8h.html#a4c0e214062079ff665c54dbc682bb832',1,'formation.h']]],
   ['spibitorder',['SPIBitOrder',['../group__spi.html#gaa97b351a297dda534c3f9cee0d5b4647',1,'spi.h']]],
@@ -18,7 +21,7 @@ var searchData=
   ['status',['status',['../anemotaxis_8c.html#a015eb90e0de9f16e87bd149d4b9ce959',1,'anemotaxis.c']]],
   ['stmi2csubtransactionstatus',['STMI2CSubTransactionStatus',['../stm32_2mcu__periph_2i2c__arch_8c.html#a3e5aa70e49e955c0fe96861a45b77fa8',1,'i2c_arch.c']]],
   ['superbitrfstatus',['SuperbitRFStatus',['../subsystems_2datalink_2superbitrf_8h.html#aff46e2692b6bb527a21559a9faf61dd3',1,'superbitrf.h']]],
-  ['survey_5forientation_5ft',['survey_orientation_t',['../nav__survey__rectangle_8h.html#aa8ad239dd32b3708375201570614abc5',1,'nav_survey_rectangle.h']]],
+  ['survey_5forientation_5ft',['survey_orientation_t',['../nav__survey__rectangle__rotorcraft_8h.html#aa8ad239dd32b3708375201570614abc5',1,'survey_orientation_t():&#160;nav_survey_rectangle_rotorcraft.h'],['../nav__survey__rectangle_8h.html#aa8ad239dd32b3708375201570614abc5',1,'survey_orientation_t():&#160;nav_survey_rectangle.h']]],
   ['surveystage',['SurveyStage',['../nav__survey__polygon_8h.html#aa9c58cb0ccc605869d75547268f59fa6',1,'nav_survey_polygon.h']]],
-  ['surveystatus',['SurveyStatus',['../nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5',1,'nav_survey_poly_osam.c']]]
+  ['surveystatus',['SurveyStatus',['../nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5',1,'SurveyStatus():&#160;nav_survey_poly_osam.c'],['../nav__survey__poly__rotorcraft_8c.html#a8c59693bfb0c154698979de6e77bb0c5',1,'SurveyStatus():&#160;nav_survey_poly_rotorcraft.c']]]
 ];

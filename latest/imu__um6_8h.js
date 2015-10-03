@@ -1,14 +1,18 @@
 var imu__um6_8h =
 [
-    [ "UM6Packet", "structUM6Packet.html", "structUM6Packet" ],
-    [ "__UM6Link", "imu__um6_8h.html#aa68458995f03c465f8fc1305ded3195e", null ],
-    [ "_UM6Link", "imu__um6_8h.html#a9a3c0f451f9dc6b6b3ec8141fd65ae5d", null ],
+    [ "UM6Packet", "imu__um6_8h.html#structUM6Packet", [
+      [ "chksm_error", "imu__um6_8h.html#af250c63a5059e425ba325ae21aadf3c7", null ],
+      [ "hdr_error", "imu__um6_8h.html#a98fbb2f9be0e5eb73ac56ba598827461", null ],
+      [ "msg_available", "imu__um6_8h.html#ac361dd0b7ff61d6f2c8eb56f381d4029", null ],
+      [ "msg_buf", "imu__um6_8h.html#ad4681fbf5577ebd5bfc55d3c5a1960f8", null ],
+      [ "msg_idx", "imu__um6_8h.html#a8afe76c9e8e63ba7a83d07f49bb3f2ea", null ],
+      [ "status", "imu__um6_8h.html#ae360541ed34c3919702b3b468626eb3b", null ]
+    ] ],
     [ "IMU_UM6_ACCEL_PROC", "imu__um6_8h.html#a948493bc00afabb682c188325845d403", null ],
     [ "IMU_UM6_BUFFER_LENGTH", "imu__um6_8h.html#a8db9e68696724cfebc3bb7ea585b2604", null ],
     [ "IMU_UM6_COMMUNICATION_REG", "imu__um6_8h.html#aaf03b0de9fffeceeebcd06c9403c014c", null ],
     [ "IMU_UM6_DATA_OFFSET", "imu__um6_8h.html#a6e71a4593e4f3b7d026971aaa05e1ca8", null ],
     [ "IMU_UM6_EULER", "imu__um6_8h.html#adb42d196b9fcf38631e2a138477e8380", null ],
-    [ "imu_um6_event", "imu__um6_8h.html#a58e9422f7730b8b1c02a5fd73c070ad4", null ],
     [ "IMU_UM6_GET_DATA", "imu__um6_8h.html#a0f62067253e58038da19e284d77a37fa", null ],
     [ "IMU_UM6_GET_FIRMWARE_CMD", "imu__um6_8h.html#ae4032e15548b00f907038a775bd9120c", null ],
     [ "IMU_UM6_GYRO_PROC", "imu__um6_8h.html#aa1569fe61aed8254d2799410fa8e5bd0", null ],
@@ -20,10 +24,7 @@ var imu__um6_8h =
     [ "IMU_UM6_SET_ACCEL_REF", "imu__um6_8h.html#af201aa718e09ae304fed95cf2f8fb04c", null ],
     [ "IMU_UM6_SET_MAG_REF", "imu__um6_8h.html#aca3cf23aeda0f9f86bd6f70bf7427b67", null ],
     [ "IMU_UM6_ZERO_GYROS_CMD", "imu__um6_8h.html#aa3681324f7b5d0bf22e99c610a3c990f", null ],
-    [ "ImuEvent", "imu__um6_8h.html#a5b61834fdd9dc32e2f93b974354c7402", null ],
-    [ "ReadUM6Buffer", "imu__um6_8h.html#aae5f28de4db07e7a7759767810aec01f", null ],
-    [ "UM6Buffer", "imu__um6_8h.html#a44daab3905408184fd45ef7c3c5208fb", null ],
-    [ "UM6Link", "imu__um6_8h.html#a721f838910a218ad70736dfe3cf572e3", null ],
+    [ "ImuEvent", "imu__um6_8h.html#a38f1122c1ee0701562b490c6e1b60609", null ],
     [ "UM6PacketStatus", "imu__um6_8h.html#a00d20b85c3a66188ef4e04a29754fddd", [
       [ "UM6PacketWaiting", "imu__um6_8h.html#a00d20b85c3a66188ef4e04a29754fddda6121224b393325ae16bd535a9ce5073f", null ],
       [ "UM6PacketReadingS", "imu__um6_8h.html#a00d20b85c3a66188ef4e04a29754fddda6e8f0fee4797b158eca3983e9cc9cbde", null ],
@@ -36,6 +37,8 @@ var imu__um6_8h =
       [ "UM6Uninit", "imu__um6_8h.html#a26ca138779c71e0bc7de2b8b338d91fca0a15c4dce3599a0cf01ce7e5d0f4a5b4", null ],
       [ "UM6Running", "imu__um6_8h.html#a26ca138779c71e0bc7de2b8b338d91fcab23796ae28cba8f6396aa0c1005cad5c", null ]
     ] ],
+    [ "imu_um6_event", "imu__um6_8h.html#a93e31e95183b0cd08de6d5447f1a1c09", null ],
+    [ "imu_um6_publish", "imu__um6_8h.html#a799b9b7f8329b78cf9ca132a79abee52", null ],
     [ "UM6_packet_parse", "imu__um6_8h.html#acd92ecca731224b09199a8545c3cfefc", null ],
     [ "UM6_packet_read_message", "imu__um6_8h.html#afbf732f1dc02714055f61f645a8d2d13", null ],
     [ "chk_calc", "imu__um6_8h.html#a32af0283e1c6dda79f569e35a93d0d14", null ],

@@ -1,6 +1,8 @@
 var imu__apogee_8h =
 [
-    [ "ImuApogee", "structImuApogee.html", "structImuApogee" ],
+    [ "ImuApogee", "imu__apogee_8h.html#structImuApogee", [
+      [ "mpu", "imu__apogee_8h.html#af336a924ca29eddfb18fd75358fc210f", null ]
+    ] ],
     [ "IMU_ACCEL_X_NEUTRAL", "imu__apogee_8h.html#a01dac8935d4166bc144b115219cddbc4", null ],
     [ "IMU_ACCEL_X_SENS", "imu__apogee_8h.html#a8ac88fc00cde506229b92c6a1e2c3122", null ],
     [ "IMU_ACCEL_X_SENS_DEN", "imu__apogee_8h.html#a8acf299c1bfb2daa92b1894556ca50ad", null ],
@@ -31,8 +33,8 @@ var imu__apogee_8h =
     [ "IMU_GYRO_R_SENS_DEN", "imu__apogee_8h.html#aecb2f43265d239ba7661dfcc8523123e", null ],
     [ "IMU_GYRO_R_SENS_NUM", "imu__apogee_8h.html#a6f808c71190e714287442af3bb7008b3", null ],
     [ "IMU_GYRO_R_SIGN", "imu__apogee_8h.html#a91fa3d93fbfb5edbdf7f3b34436b53da", null ],
+    [ "ImuEvent", "imu__apogee_8h.html#a38f1122c1ee0701562b490c6e1b60609", null ],
     [ "imu_apogee_downlink_raw", "imu__apogee_8h.html#a1262a50ea34da37d89d68b295310a0fd", null ],
     [ "imu_apogee_event", "imu__apogee_8h.html#a60395d55d1c3bbb3773a3bc79f210884", null ],
-    [ "ImuEvent", "imu__apogee_8h.html#a9d95db588addd0a03f6e7e749fbb032a", null ],
     [ "imu_apogee", "imu__apogee_8h.html#a195fd58b3335b4b91593e2c7d1bdb6fb", null ]
 ];

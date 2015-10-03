@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('globals_vars_0x6d.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -153,6 +153,18 @@ $(document).ready(function(){initNavTree('globals_vars_0x6d.html','');});
 <li>mac
 : <a class="el" href="w5100_8c.html#ae4ea3e666683fd4d8b0a822031e742ff">w5100.c</a>
 </li>
+<li>mag_ev
+: <a class="el" href="ahrs__float__cmpl__wrapper_8c.html#a44d506760598e8c18e5da6e52dfc6b0d">ahrs_float_cmpl_wrapper.c</a>
+, <a class="el" href="ahrs__float__invariant__wrapper_8c.html#a44d506760598e8c18e5da6e52dfc6b0d">ahrs_float_invariant_wrapper.c</a>
+, <a class="el" href="ins__float__invariant__wrapper_8c.html#a44d506760598e8c18e5da6e52dfc6b0d">ins_float_invariant_wrapper.c</a>
+, <a class="el" href="ahrs__float__mlkf__wrapper_8c.html#a44d506760598e8c18e5da6e52dfc6b0d">ahrs_float_mlkf_wrapper.c</a>
+, <a class="el" href="ahrs__float__dcm__wrapper_8c.html#a44d506760598e8c18e5da6e52dfc6b0d">ahrs_float_dcm_wrapper.c</a>
+, <a class="el" href="ahrs__int__cmpl__euler__wrapper_8c.html#a44d506760598e8c18e5da6e52dfc6b0d">ahrs_int_cmpl_euler_wrapper.c</a>
+, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c.html#a44d506760598e8c18e5da6e52dfc6b0d">ahrs_int_cmpl_quat_wrapper.c</a>
+</li>
+<li>mag_float
+: <a class="el" href="ahrs__float__dcm_8c.html#ae1ef97ccb2a15051ff9f4b0eaf75e89f">ahrs_float_dcm.c</a>
+</li>
 <li>MAG_Heading_X
 : <a class="el" href="ahrs__float__dcm_8c.html#a651c2290f949993aa2f6b3d6a5d4e937">ahrs_float_dcm.c</a>
 </li>
@@ -167,9 +179,7 @@ $(document).ready(function(){initNavTree('globals_vars_0x6d.html','');});
 : <a class="el" href="ahrs__aligner_8c.html#a2eb9f638b1725fb8ec7be2103e25f4b0">ahrs_aligner.c</a>
 </li>
 <li>mag_valid
-: <a class="el" href="imu__aspirin2_8h.html#a8271a0a8d22406f5117416a7fe284a7b">imu_aspirin2.h</a>
-, <a class="el" href="mag__hmc5843_8c.html#a2c1d73981d83f4dd50e46434a25b5a50">mag_hmc5843.c</a>
-, <a class="el" href="imu__aspirin2_8c.html#a8271a0a8d22406f5117416a7fe284a7b">imu_aspirin2.c</a>
+: <a class="el" href="mag__hmc5843_8c.html#a2c1d73981d83f4dd50e46434a25b5a50">mag_hmc5843.c</a>
 </li>
 <li>mag_x
 : <a class="el" href="mag__hmc5843_8c.html#ab4a98865f9a38e801fad6328688f3879">mag_hmc5843.c</a>
@@ -191,6 +201,13 @@ $(document).ready(function(){initNavTree('globals_vars_0x6d.html','');});
 </li>
 <li>MarcheAleaBiaisAltimetre
 : <a class="el" href="alt__filter_8c.html#a276a4fc3a21783d1c7ccbc3e21f1a485">alt_filter.c</a>
+</li>
+<li>marker_enabled
+: <a class="el" href="cv__blob__locator_8c.html#a81cc6032a18d6cacb594d0740cb6fd10">cv_blob_locator.c</a>
+</li>
+<li>marker_size
+: <a class="el" href="cv__blob__locator_8c.html#a097367403a1933e2662a880988d3d21e">cv_blob_locator.c</a>
+, <a class="el" href="cv__blob__locator_8h.html#a097367403a1933e2662a880988d3d21e">cv_blob_locator.h</a>
 </li>
 <li>markerdata
 : <a class="el" href="jpeg_8c.html#a05346db37b73ffae8a09f969e66c1c4c">jpeg.c</a>
@@ -258,42 +275,6 @@ $(document).ready(function(){initNavTree('globals_vars_0x6d.html','');});
 : <a class="el" href="max1168_8c.html#aff870d25144f1b71cb4d7f558c21bd9d">max1168.c</a>
 , <a class="el" href="max1168_8h.html#aff870d25144f1b71cb4d7f558c21bd9d">max1168.h</a>
 </li>
-<li>max3100_data_available
-: <a class="el" href="max3100__hw_8c.html#a1ec54788e5dd0c764ff4d4ff7b84df0e">max3100_hw.c</a>
-, <a class="el" href="max3100__hw_8h.html#a384ca14e74856144a7498bf50bd1139e">max3100_hw.h</a>
-</li>
-<li>max3100_rx_buf
-: <a class="el" href="max3100__hw_8c.html#a84d6e1503d04379acd66f99f581e47e4">max3100_hw.c</a>
-, <a class="el" href="max3100__hw_8h.html#a230e2fa40492c89565d9127e2a85dc93">max3100_hw.h</a>
-</li>
-<li>max3100_rx_extract_idx
-: <a class="el" href="max3100__hw_8c.html#a9352403dc1ba8d2d9cb2d78ff761c2e5">max3100_hw.c</a>
-, <a class="el" href="max3100__hw_8h.html#a412cf2bbf73000f0cdda754da1466b70">max3100_hw.h</a>
-</li>
-<li>max3100_rx_insert_idx
-: <a class="el" href="max3100__hw_8c.html#a1698f3b89fb458122d1bf5cd3bf02552">max3100_hw.c</a>
-, <a class="el" href="max3100__hw_8h.html#afb6fb838ddb66c76559199be202cc3cd">max3100_hw.h</a>
-</li>
-<li>max3100_status
-: <a class="el" href="max3100__hw_8c.html#aa99ee6ef01353de0fd12021e40127896">max3100_hw.c</a>
-, <a class="el" href="max3100__hw_8h.html#ab12658d575a702a952477c0e7fb07a2c">max3100_hw.h</a>
-</li>
-<li>max3100_transmit_buffer_empty
-: <a class="el" href="max3100__hw_8c.html#a43c6356a84f38d13033763d51ae3e312">max3100_hw.c</a>
-, <a class="el" href="max3100__hw_8h.html#aa3e2be6c8ace28b932f850c6e1b555a3">max3100_hw.h</a>
-</li>
-<li>max3100_tx_buf
-: <a class="el" href="max3100__hw_8c.html#a5232e03d93cfd784ac19ccdb4fec01a4">max3100_hw.c</a>
-, <a class="el" href="max3100__hw_8h.html#a3c250acce7b74783ba23a9e0f3da5f9b">max3100_hw.h</a>
-</li>
-<li>max3100_tx_extract_idx
-: <a class="el" href="max3100__hw_8h.html#a4c4c0afd23c71e7ee02ef593e068023c">max3100_hw.h</a>
-, <a class="el" href="max3100__hw_8c.html#a5ac06ec72a80731511c49635c3f06f7e">max3100_hw.c</a>
-</li>
-<li>max3100_tx_insert_idx
-: <a class="el" href="max3100__hw_8c.html#afb18449e29d5cbe18d059b0738257107">max3100_hw.c</a>
-, <a class="el" href="max3100__hw_8h.html#acbbafbffce361cc8c43f79c6563b5723">max3100_hw.h</a>
-</li>
 <li>max7456_osd_status
 : <a class="el" href="max7456_8c.html#a1a2e7353726577174986f047eb2da00a">max7456.c</a>
 </li>
@@ -308,8 +289,12 @@ $(document).ready(function(){initNavTree('globals_vars_0x6d.html','');});
 , <a class="el" href="common__nav_8c.html#a1e29c2884fac341d819ffcc6699bd214">common_nav.c</a>
 , <a class="el" href="common__nav_8h.html#a1e29c2884fac341d819ffcc6699bd214">common_nav.h</a>
 </li>
+<li>maxAdc
+: <a class="el" href="meteo__stick_8c.html#ab0dd6c862ccf862c5a0c77ad6e488737">meteo_stick.c</a>
+</li>
 <li>MaxY
 : <a class="el" href="nav__survey__poly__osam_8c.html#a171ef0945a082a702a8395f5a1b90769">nav_survey_poly_osam.c</a>
+, <a class="el" href="nav__survey__poly__rotorcraft_8c.html#a171ef0945a082a702a8395f5a1b90769">nav_survey_poly_rotorcraft.c</a>
 </li>
 <li>mcp355x_data
 : <a class="el" href="mcp355x_8c.html#a329ea6825fdd8dfeab29d6766309a493">mcp355x.c</a>
@@ -365,8 +350,8 @@ $(document).ready(function(){initNavTree('globals_vars_0x6d.html','');});
 , <a class="el" href="meteo__stick_8h.html#a1dec660888ebffb6eb9d1c25d7ab44c0">meteo_stick.h</a>
 </li>
 <li>mf_daq
-: <a class="el" href="meteo__france__DAQ_8h.html#ac6480b94865f30f33996f7cb72a45554">meteo_france_DAQ.h</a>
-, <a class="el" href="meteo__france__DAQ_8c.html#ac6480b94865f30f33996f7cb72a45554">meteo_france_DAQ.c</a>
+: <a class="el" href="meteo__france__DAQ_8c.html#ac6480b94865f30f33996f7cb72a45554">meteo_france_DAQ.c</a>
+, <a class="el" href="meteo__france__DAQ_8h.html#ac6480b94865f30f33996f7cb72a45554">meteo_france_DAQ.h</a>
 </li>
 <li>micromag_cur_axe
 : <a class="el" href="mag__micromag__fw__hw_8c.html#afe3f773b3af5d8e6379f98ddb4714069">mag_micromag_fw_hw.c</a>
@@ -377,8 +362,8 @@ $(document).ready(function(){initNavTree('globals_vars_0x6d.html','');});
 , <a class="el" href="mag__micromag__fw_8c.html#a4203779ce87bbb6b4fbbd6af0b1b08bb">mag_micromag_fw.c</a>
 </li>
 <li>micromag_values
-: <a class="el" href="mag__micromag__fw_8c.html#af3ea69b4bae4abbe9f43354a99f3651b">mag_micromag_fw.c</a>
-, <a class="el" href="mag__micromag__fw_8h.html#af3ea69b4bae4abbe9f43354a99f3651b">mag_micromag_fw.h</a>
+: <a class="el" href="mag__micromag__fw_8h.html#af3ea69b4bae4abbe9f43354a99f3651b">mag_micromag_fw.h</a>
+, <a class="el" href="mag__micromag__fw_8c.html#af3ea69b4bae4abbe9f43354a99f3651b">mag_micromag_fw.c</a>
 </li>
 <li>min_time_event
 : <a class="el" href="sys__mon_8c.html#aafefcdcd9d13d49795c6403bc19b19f9">sys_mon.c</a>
@@ -387,15 +372,15 @@ $(document).ready(function(){initNavTree('globals_vars_0x6d.html','');});
 : <a class="el" href="sim__enose_8c.html#a850d3d8e49ef65297455e5319983aa9e">sim_enose.c</a>
 </li>
 <li>mission
-: <a class="el" href="mission__common_8c.html#a06160041db75e80665ebf0f22f13cc98">mission_common.c</a>
-, <a class="el" href="mission__common_8h.html#a06160041db75e80665ebf0f22f13cc98">mission_common.h</a>
+: <a class="el" href="mission__common_8h.html#a06160041db75e80665ebf0f22f13cc98">mission_common.h</a>
+, <a class="el" href="mission__common_8c.html#a06160041db75e80665ebf0f22f13cc98">mission_common.c</a>
 </li>
 <li>mlx_trans
 : <a class="el" href="ir__mlx_8c.html#a5ea19bba8273250593e96b1d366b0d8e">ir_mlx.c</a>
 </li>
 <li>modules_tid
-: <a class="el" href="main__ap_8c.html#ad22206414845137916e0ed83054bdfc8">main_ap.c</a>
-, <a class="el" href="rotorcraft_2main_8c.html#ad22206414845137916e0ed83054bdfc8">main.c</a>
+: <a class="el" href="rotorcraft_2main_8c.html#ad22206414845137916e0ed83054bdfc8">main.c</a>
+, <a class="el" href="main__ap_8c.html#ad22206414845137916e0ed83054bdfc8">main_ap.c</a>
 </li>
 <li>monitor_tid
 : <a class="el" href="main__ap_8c.html#a1cefad60c98eeae5ce7826c1efd8f700">main_ap.c</a>
@@ -405,8 +390,8 @@ $(document).ready(function(){initNavTree('globals_vars_0x6d.html','');});
 , <a class="el" href="protocol_8c.html#a3fbc907850570278741b05bf678b41cf">protocol.c</a>
 </li>
 <li>mora_ck_b
-: <a class="el" href="protocol_8h.html#a6fd8c7c2c92e8dd110bf60fed5305eaf">protocol.h</a>
-, <a class="el" href="protocol_8c.html#a6fd8c7c2c92e8dd110bf60fed5305eaf">protocol.c</a>
+: <a class="el" href="protocol_8c.html#a6fd8c7c2c92e8dd110bf60fed5305eaf">protocol.c</a>
+, <a class="el" href="protocol_8h.html#a6fd8c7c2c92e8dd110bf60fed5305eaf">protocol.h</a>
 </li>
 <li>mora_protocol
 : <a class="el" href="protocol_8c.html#acaa83ca3fc8a7ba7ce56d83ec5abea59">protocol.c</a>
@@ -416,17 +401,17 @@ $(document).ready(function(){initNavTree('globals_vars_0x6d.html','');});
 : <a class="el" href="uart__cam__ctrl_8c.html#afc483110f6d5502029ec7aeabfeb10ed">uart_cam_ctrl.c</a>
 </li>
 <li>motor_mixing
-: <a class="el" href="motor__mixing_8h.html#a56f7b209886f3636c9c5f7f0431ce3f0">motor_mixing.h</a>
-, <a class="el" href="motor__mixing_8c.html#a56f7b209886f3636c9c5f7f0431ce3f0">motor_mixing.c</a>
+: <a class="el" href="motor__mixing_8c.html#a56f7b209886f3636c9c5f7f0431ce3f0">motor_mixing.c</a>
+, <a class="el" href="motor__mixing_8h.html#a56f7b209886f3636c9c5f7f0431ce3f0">motor_mixing.h</a>
 </li>
 <li>MPPT_data
 : <a class="el" href="sim__MPPT_8c.html#a13227707deb233f37302dde38f46a1db">sim_MPPT.c</a>
 , <a class="el" href="MPPT_8c.html#a13227707deb233f37302dde38f46a1db">MPPT.c</a>
 </li>
 <li>MPPT_mode
-: <a class="el" href="MPPT_8h.html#a204d628ca12dfdc88844dcdd0380d93a">MPPT.h</a>
+: <a class="el" href="MPPT_8c.html#a204d628ca12dfdc88844dcdd0380d93a">MPPT.c</a>
 , <a class="el" href="sim__MPPT_8c.html#a204d628ca12dfdc88844dcdd0380d93a">sim_MPPT.c</a>
-, <a class="el" href="MPPT_8c.html#a204d628ca12dfdc88844dcdd0380d93a">MPPT.c</a>
+, <a class="el" href="MPPT_8h.html#a204d628ca12dfdc88844dcdd0380d93a">MPPT.h</a>
 </li>
 <li>MPPT_status
 : <a class="el" href="MPPT_8c.html#a5409ee7a2fa184373fe705ed81dc8e5a">MPPT.c</a>
@@ -439,12 +424,12 @@ $(document).ready(function(){initNavTree('globals_vars_0x6d.html','');});
 , <a class="el" href="imu__mpu9250_8h.html#aaeae082ea0b6f4a737c932aa350d3b69">imu_mpu9250.h</a>
 </li>
 <li>ms2100
-: <a class="el" href="ms2100_8c.html#a030d0b0b09d4acb5b2bc5d4d53c9d546">ms2100.c</a>
-, <a class="el" href="ms2100_8h.html#a030d0b0b09d4acb5b2bc5d4d53c9d546">ms2100.h</a>
+: <a class="el" href="ms2100_8h.html#a030d0b0b09d4acb5b2bc5d4d53c9d546">ms2100.h</a>
+, <a class="el" href="ms2100_8c.html#a030d0b0b09d4acb5b2bc5d4d53c9d546">ms2100.c</a>
 </li>
 <li>ms45xx
-: <a class="el" href="airspeed__ms45xx__i2c_8h.html#a64f22e7d2547b5a318869173bd85fffb">airspeed_ms45xx_i2c.h</a>
-, <a class="el" href="airspeed__ms45xx__i2c_8c.html#a64f22e7d2547b5a318869173bd85fffb">airspeed_ms45xx_i2c.c</a>
+: <a class="el" href="airspeed__ms45xx__i2c_8c.html#a64f22e7d2547b5a318869173bd85fffb">airspeed_ms45xx_i2c.c</a>
+, <a class="el" href="airspeed__ms45xx__i2c_8h.html#a64f22e7d2547b5a318869173bd85fffb">airspeed_ms45xx_i2c.h</a>
 </li>
 <li>ms45xx_filter
 : <a class="el" href="airspeed__ms45xx__i2c_8c.html#aa6346e53de9c9c2738ae161ea704c5dc">airspeed_ms45xx_i2c.c</a>
@@ -454,6 +439,21 @@ $(document).ready(function(){initNavTree('globals_vars_0x6d.html','');});
 </li>
 <li>msg
 : <a class="el" href="high__speed__logger__direct__memory_8c.html#a32b52374003c5d7911e540c6a1c53488">high_speed_logger_direct_memory.c</a>
+</li>
+<li>msg_buf
+: <a class="el" href="stereocam_8c.html#a593255ed06a6e2008a9847b6bff5766f">stereocam.c</a>
+</li>
+<li>msg_start
+: <a class="el" href="stereocam_8c.html#a7f0e6aa046f6a321e6d63481fa929409">stereocam.c</a>
+</li>
+<li>msgProperties
+: <a class="el" href="stereocam_8c.html#a99034f4da78d076818e55297065e02dc">stereocam.c</a>
+</li>
+<li>mt9f002_i2c_port
+: <a class="el" href="video_8c.html#ad268dc06678dc4e0f6e9e8667598520c">video.c</a>
+</li>
+<li>mu
+: <a class="el" href="stabilization__attitude__quat__indi_8c.html#a4df8d1d064e0269c44c34fd4a7a3b705">stabilization_attitude_quat_indi.c</a>
 </li>
 <li>mut
 : <a class="el" href="catia_8c.html#a61d8a205b71d88c28835fa36cfb254ac">catia.c</a>
@@ -467,7 +467,7 @@ $(document).ready(function(){initNavTree('globals_vars_0x6d.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:40 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:48 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

@@ -10,7 +10,6 @@ var dir_3f7617cb4a5e4fe5cc816b7b3bbdea3a =
     [ "armVIC.c", "armVIC_8c.html", "armVIC_8c" ],
     [ "armVIC.h", "armVIC_8h.html", "armVIC_8h" ],
     [ "icp_scale.h", "icp__scale_8h.html", "icp__scale_8h" ],
-    [ "interrupt_hw.h", "lpc21_2interrupt__hw_8h.html", "lpc21_2interrupt__hw_8h" ],
     [ "inttypes.h", "inttypes_8h.html", "inttypes_8h" ],
     [ "led_hw.h", "lpc21_2led__hw_8h.html", "lpc21_2led__hw_8h" ],
     [ "link_mcu_hw.h", "lpc21_2link__mcu__hw_8h.html", "lpc21_2link__mcu__hw_8h" ],

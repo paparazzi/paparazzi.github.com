@@ -1,5 +1,6 @@
 var NAVTREEINDEX61 =
 {
+"pprz__algebra_8h.html#af6f5918ce1dc9b05f0d7262a48cfa90c":[10,0,0,0,4,0,15],
 "pprz__algebra_8h.html#af7417ee7fc6af4281fe013a3f6267ad7":[10,0,0,0,4,0,48],
 "pprz__algebra_8h.html#af9eb2d25685d01da0856faf230a6e5d5":[10,0,0,0,4,0,1],
 "pprz__algebra_8h.html#afc71ef2a22bf8bbb07f806b7d642225d":[10,0,0,0,4,0,72],
@@ -248,6 +249,5 @@ var NAVTREEINDEX61 =
 "pprz__algebra__int_8h.html#a359628ce78b4c873eb6e648fd82a4acd":[10,0,0,0,4,6,33],
 "pprz__algebra__int_8h.html#a36070981f7d1e9345103e5e738a67e65":[10,0,0,0,4,6,82],
 "pprz__algebra__int_8h.html#a375ede60f5f4419d92fa4cb901c6691a":[10,0,0,0,4,6,120],
-"pprz__algebra__int_8h.html#a37c640a556fc72d7e2d150ec59e7986d":[10,0,0,0,4,6,74],
-"pprz__algebra__int_8h.html#a38062962864e893729c686b8e9caf311":[10,0,0,0,4,6,32]
+"pprz__algebra__int_8h.html#a37c640a556fc72d7e2d150ec59e7986d":[10,0,0,0,4,6,74]
 };

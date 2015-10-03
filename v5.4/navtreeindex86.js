@@ -1,5 +1,7 @@
 var NAVTREEINDEX86 =
 {
+"structrtcRegs__t.html#ae740d2ef943531e484818136e56e528f":[9,0,248,29],
+"structrtcRegs__t.html#aedc31b93ef12939214ff2924768ff6ab":[9,0,248,31],
 "structrtcRegs__t.html#aef2d978c88bc5fac4ea5ee27ef54406b":[9,0,248,33],
 "structrtcRegs__t.html#af35c3648e0dc2e44138675309b814ff0":[9,0,248,1],
 "structrtcRegs__t.html#af6db3379f1c06024dd3e19e9dcb1ed87":[9,0,248,26],
@@ -247,7 +249,5 @@ var NAVTREEINDEX86 =
 "structuart__periph.html#a9dc10b9a1a2d379b6b30bec6d26a9c45":[9,0,280,9],
 "structuart__periph.html#aa99651ddd6c70ca5aa2d5c6ec0b05cfd":[9,0,280,3],
 "structuart__periph.html#aae582e1021f8139f7461a80477d1dc5b":[9,0,280,6],
-"structuart__periph.html#ab5a088408a0e4d3af31921e2eb1a7811":[9,0,280,2],
-"structuart__periph.html#aed710779dfbc59752a37be7ffbaa15a2":[9,0,280,11],
-"structuart__periph.html#af4dc75629753b4166767a7a0b44e8828":[9,0,280,5]
+"structuart__periph.html#ab5a088408a0e4d3af31921e2eb1a7811":[9,0,280,2]
 };

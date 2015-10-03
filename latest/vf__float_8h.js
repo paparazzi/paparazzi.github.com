@@ -1,6 +1,13 @@
 var vf__float_8h =
 [
-    [ "Vff", "structVff.html", "structVff" ],
+    [ "Vff", "vf__float_8h.html#structVff", [
+      [ "bias", "vf__float_8h.html#a5795cb080f2f001246bd022934a493b3", null ],
+      [ "P", "vf__float_8h.html#a062013f95870fd81e88895598e9e49ea", null ],
+      [ "z", "vf__float_8h.html#a2fe9570b05ee7793e0a17c2838c90249", null ],
+      [ "z_meas", "vf__float_8h.html#af2bf20b4a858c5aeef6cb71385834daa", null ],
+      [ "zdot", "vf__float_8h.html#a985d750a72be66416d761c5863aab331", null ],
+      [ "zdotdot", "vf__float_8h.html#a1dbc6c9d7873360feb9534f583c60755", null ]
+    ] ],
     [ "VFF_STATE_SIZE", "vf__float_8h.html#a18723b10d465c48b447ad96b46f8a25b", null ],
     [ "vff_init", "vf__float_8h.html#a6b79409337c63cb82e160e713b9b5455", null ],
     [ "vff_init_zero", "vf__float_8h.html#a2358072559748851df8c44c975c43ebb", null ],

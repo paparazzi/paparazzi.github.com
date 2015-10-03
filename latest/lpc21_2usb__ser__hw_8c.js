@@ -1,7 +1,16 @@
 var lpc21_2usb__ser__hw_8c =
 [
-    [ "fifo_t", "structfifo__t.html", "structfifo__t" ],
-    [ "TLineCoding", "structTLineCoding.html", "structTLineCoding" ],
+    [ "fifo_t", "stm32_2usb__ser__hw_8c.html#structfifo__t", [
+      [ "buf", "stm32_2usb__ser__hw_8c.html#af6872113b054f3bed2382adf6919e4f5", null ],
+      [ "head", "stm32_2usb__ser__hw_8c.html#ae93028e986799fceacecbd153729f855", null ],
+      [ "tail", "stm32_2usb__ser__hw_8c.html#abe914ae9dd92644d8a53a4b99d89b487", null ]
+    ] ],
+    [ "TLineCoding", "lpc21_2usb__ser__hw_8c.html#structTLineCoding", [
+      [ "bCharFormat", "lpc21_2usb__ser__hw_8c.html#aa0fcfb0c5f6c24305311a9750eaa53aa", null ],
+      [ "bDataBits", "lpc21_2usb__ser__hw_8c.html#ae8071baa61a3b991b509b52cfd2dc64f", null ],
+      [ "bParityType", "lpc21_2usb__ser__hw_8c.html#a7e1e2fedd32383b44d0b03868f6d059e", null ],
+      [ "dwDTERate", "lpc21_2usb__ser__hw_8c.html#a39c368c55b6d8e698a53b67323252701", null ]
+    ] ],
     [ "ASSERT", "lpc21_2usb__ser__hw_8c.html#aca68c0d4ac8df0838e209fb5300f7be3", null ],
     [ "BULK_IN_EP", "lpc21_2usb__ser__hw_8c.html#a2b14747c794ad7a348cd918e9df57d36", null ],
     [ "BULK_OUT_EP", "lpc21_2usb__ser__hw_8c.html#adc59cdd5baf21c8e5065bdfe7a5a928b", null ],
@@ -24,7 +33,9 @@ var lpc21_2usb__ser__hw_8c =
     [ "fifo_init", "lpc21_2usb__ser__hw_8c.html#a62c1c3a993bb7e76089279dd5bf6e206", null ],
     [ "fifo_put", "lpc21_2usb__ser__hw_8c.html#a60cebaa767a05f06a7b66c751c12318a", null ],
     [ "HandleClassRequest", "lpc21_2usb__ser__hw_8c.html#a6c77a3470d979711809645830c55ea3a", null ],
+    [ "usb_serial_char_available", "lpc21_2usb__ser__hw_8c.html#adaa435f6235136b75de97d7efa7387d1", null ],
     [ "usb_serial_check_free_space", "lpc21_2usb__ser__hw_8c.html#aef19744b00fea002f00964cdbe5dd2fb", null ],
+    [ "usb_serial_getch", "lpc21_2usb__ser__hw_8c.html#ad20f86d5fa3af479482b8a7571d7953b", null ],
     [ "usb_serial_send", "lpc21_2usb__ser__hw_8c.html#ad96b0bb142d9df1328a83ea2d16acc3d", null ],
     [ "usb_serial_transmit", "lpc21_2usb__ser__hw_8c.html#a577a2c6cc901732b01c63697768ccdb2", null ],
     [ "USBFrameHandler", "lpc21_2usb__ser__hw_8c.html#a91556b7ca9fb44db13f40512a45c655d", null ],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX84 =
 {
+"struct__navdata__phys__measures__t.html#a0270ae96ff26a6cd1feee93abf60360a":[9,0,10,7],
+"struct__navdata__phys__measures__t.html#a177dac731b83756caf0e62c594002494":[9,0,10,8],
 "struct__navdata__phys__measures__t.html#a30965c2dad4f099de2a3a302ae981cca":[9,0,10,3],
 "struct__navdata__phys__measures__t.html#a36bd1ce7dde8e511cfd25f28dc633125":[9,0,10,4],
 "struct__navdata__phys__measures__t.html#a5aa2345e55ed2abae19e85774fd4150b":[9,0,10,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX84 =
 "structi2c__transaction.html#ab23c7469258089742bb0c2950599b232":[8,3,0,0,5],
 "structi2c__transaction.html#ac4f80563bab524eee997c5c27ef570a4":[8,3,0,0,4],
 "structi2c__transaction.html#af0c94c610e2f7b712f06b87440849ab6":[8,3,0,0,3],
-"structi2c__transaction.html#afe675669c727a98bd998283d940b2636":[8,3,0,0,2],
-"structimg__struct.html":[9,0,127],
-"structimg__struct.html#a2830ae0ad950ef93a06958ab1c99af0e":[9,0,127,3]
+"structi2c__transaction.html#afe675669c727a98bd998283d940b2636":[8,3,0,0,2]
 };

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('downlink_8c_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -133,14 +133,14 @@ $(document).ready(function(){initNavTree('downlink_8c_source.html','');});
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="downlink_8h.html" title="Common code for AP and FBW telemetry. ">subsystems/datalink/downlink.h</a>&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="downlink_8h.html#ab062427845211efac5d96e7230ae68df">   31</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structdownlink.html" title="Downlink structure. ">downlink</a> <a class="code" href="structdownlink.html" title="Downlink structure. ">downlink</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="downlink_8h.html#ab062427845211efac5d96e7230ae68df">   31</a></span>&#160;<span class="keyword">struct </span><a class="code" href="downlink_8h.html#structdownlink" title="Downlink structure. ">downlink</a> <a class="code" href="downlink_8h.html#structdownlink" title="Downlink structure. ">downlink</a>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#if PERIODIC_TELEMETRY</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). ">subsystems/datalink/telemetry.h</a>&quot;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. ">subsystems/datalink/datalink.h</a>&quot;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="sys__time_8h.html" title="Architecture independent timing functions. ">mcu_periph/sys_time.h</a>&quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> send_downlink(<span class="keyword">struct</span> <a class="code" href="structtransport__tx.html" title="Generic transmission transport header. ">transport_tx</a> *trans, <span class="keyword">struct</span> <a class="code" href="structlink__device.html" title="Device structure. ">link_device</a> *<a class="code" href="stm32_2usb__ser__hw_8c.html#a405086a1effa6aed12960187518465b5">dev</a>)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> send_downlink(<span class="keyword">struct</span> <a class="code" href="transport_8h.html#structtransport__tx" title="Generic transmission transport header. ">transport_tx</a> *trans, <span class="keyword">struct</span> <a class="code" href="link__device_8h.html#structlink__device" title="Device structure. ">link_device</a> *<a class="code" href="stm32_2usb__ser__hw_8c.html#a405086a1effa6aed12960187518465b5">dev</a>)</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">static</span> <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> last_nb_bytes = 0;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="comment">// timestamp in usec when last message was send</span></div>
@@ -149,53 +149,68 @@ $(document).ready(function(){initNavTree('downlink_8c_source.html','');});
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> now_ts = <a class="code" href="linux_2mcu__periph_2sys__time__arch_8h.html#a5f8c93bbb4f24eee68b36977371aa262" title="Get the time in milliseconds since startup. ">get_sys_time_msec</a>();</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="comment">// compute downlink byte rate</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordflow">if</span> (now_ts &gt; last_ts) {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> rate = (1000 * ((<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)<a class="code" href="structdownlink.html" title="Downlink structure. ">downlink</a>.<a class="code" href="structdownlink.html#ae93822f17903ec870362e035d50040de" title="Number of bytes send over telemetry. ">nb_bytes</a> - last_nb_bytes)) / (now_ts - last_ts);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> rate = (1000 * ((<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)<a class="code" href="downlink_8h.html#structdownlink" title="Downlink structure. ">downlink</a>.<a class="code" href="downlink_8h.html#ae93822f17903ec870362e035d50040de" title="Number of bytes send over telemetry. ">nb_bytes</a> - last_nb_bytes)) / (now_ts - last_ts);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    last_ts = now_ts;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    last_nb_bytes = <a class="code" href="structdownlink.html" title="Downlink structure. ">downlink</a>.<a class="code" href="structdownlink.html#ae93822f17903ec870362e035d50040de" title="Number of bytes send over telemetry. ">nb_bytes</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    last_nb_bytes = <a class="code" href="downlink_8h.html#structdownlink" title="Downlink structure. ">downlink</a>.<a class="code" href="downlink_8h.html#ae93822f17903ec870362e035d50040de" title="Number of bytes send over telemetry. ">nb_bytes</a>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// TODO uplink nb received msg</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> uplink_nb_msgs = 0;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    pprz_msg_send_DATALINK_REPORT(trans, dev, AC_ID,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                  &amp;<a class="code" href="sim__ap_8c.html#a554cac6546bc91d21ff99268001d4010">datalink_time</a>, &amp;uplink_nb_msgs,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                  &amp;<a class="code" href="structdownlink.html" title="Downlink structure. ">downlink</a>.<a class="code" href="structdownlink.html#a4b889107443001512fde8d4b4501e228" title="Number of messages send over telemetry. ">nb_msgs</a>, &amp;rate, &amp;<a class="code" href="structdownlink.html" title="Downlink structure. ">downlink</a>.<a class="code" href="structdownlink.html#a008c742590dc5d5cddc3c5d9a461d8d8" title="Counter of messages not sent because of unavailibity of the output buffer. ">nb_ovrn</a>);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="downlink_8h.html#afd49e1738cc6ad57218b944dcb94f73b">   60</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="downlink_8c.html#afd49e1738cc6ad57218b944dcb94f73b">downlink_init</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="structdownlink.html" title="Downlink structure. ">downlink</a>.<a class="code" href="structdownlink.html#a008c742590dc5d5cddc3c5d9a461d8d8" title="Counter of messages not sent because of unavailibity of the output buffer. ">nb_ovrn</a> = 0;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="structdownlink.html" title="Downlink structure. ">downlink</a>.<a class="code" href="structdownlink.html#ae93822f17903ec870362e035d50040de" title="Number of bytes send over telemetry. ">nb_bytes</a> = 0;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="structdownlink.html" title="Downlink structure. ">downlink</a>.<a class="code" href="structdownlink.html#a4b889107443001512fde8d4b4501e228" title="Number of messages send over telemetry. ">nb_msgs</a> = 0;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#if defined DATALINK</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if DATALINK == PPRZ || DATALINK == SUPERBITRF || DATALINK == W5100</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor"></span>  <a class="code" href="pprz__transport_8c.html#a49a53dd884edf42d672dda0c2ffc221f">pprz_transport_init</a>();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if DATALINK == XBEE</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor"></span>  <a class="code" href="xbee_8c.html#a964a1e8461e9c1187e5d69f521e5e107" title="Initialisation in API mode and setting of the local address FIXME: busy wait. ">xbee_init</a>();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if DATALINK == W5100</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor"></span>  <a class="code" href="w5100_8c.html#a3a4ec6731e43710788d3e51f7749259c">w5100_init</a>();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#if SITL</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor"></span>  <a class="code" href="ivy__transport_8c.html#a5103b0ca25b6bd5abb6f92abae752927">ivy_transport_init</a>();</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#if PERIODIC_TELEMETRY</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span>  <a class="code" href="telemetry_8c.html#abb4aa9b3c0c8d93e1372de5da86de828" title="Register a telemetry callback function. ">register_periodic_telemetry</a>(<a class="code" href="telemetry__common_8h.html#a1912e51b2e63ae9b0d41d91e073cfefd" title="Set default periodic telemetry to NULL. ">DefaultPeriodic</a>, <span class="stringliteral">&quot;DATALINK_REPORT&quot;</span>, send_downlink);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#if defined DATALINK</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span>    <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> uplink_nb_msgs = <a class="code" href="datalink_8h.html#aa9d0435a0389db2f5361379cf59a8086" title="number of datalink/uplink messages received ">datalink_nb_msgs</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor"></span>    <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> uplink_nb_msgs = 0;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    pprz_msg_send_DATALINK_REPORT(trans, dev, AC_ID,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                  &amp;<a class="code" href="sim__ap_8c.html#a554cac6546bc91d21ff99268001d4010">datalink_time</a>, &amp;uplink_nb_msgs,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                  &amp;<a class="code" href="downlink_8h.html#structdownlink" title="Downlink structure. ">downlink</a>.<a class="code" href="downlink_8h.html#a4b889107443001512fde8d4b4501e228" title="Number of messages send over telemetry. ">nb_msgs</a>, &amp;rate, &amp;<a class="code" href="downlink_8h.html#structdownlink" title="Downlink structure. ">downlink</a>.<a class="code" href="downlink_8h.html#a008c742590dc5d5cddc3c5d9a461d8d8" title="Counter of messages not sent because of unavailability of the output buffer. ">nb_ovrn</a>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="downlink_8h.html#afd49e1738cc6ad57218b944dcb94f73b">   64</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="downlink_8c.html#afd49e1738cc6ad57218b944dcb94f73b">downlink_init</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="downlink_8h.html#structdownlink" title="Downlink structure. ">downlink</a>.<a class="code" href="downlink_8h.html#a008c742590dc5d5cddc3c5d9a461d8d8" title="Counter of messages not sent because of unavailability of the output buffer. ">nb_ovrn</a> = 0;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="downlink_8h.html#structdownlink" title="Downlink structure. ">downlink</a>.<a class="code" href="downlink_8h.html#ae93822f17903ec870362e035d50040de" title="Number of bytes send over telemetry. ">nb_bytes</a> = 0;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="downlink_8h.html#structdownlink" title="Downlink structure. ">downlink</a>.<a class="code" href="downlink_8h.html#a4b889107443001512fde8d4b4501e228" title="Number of messages send over telemetry. ">nb_msgs</a> = 0;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#if defined DATALINK</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="datalink_8h.html#aa9d0435a0389db2f5361379cf59a8086" title="number of datalink/uplink messages received ">datalink_nb_msgs</a> = 0;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#if DATALINK == PPRZ || DATALINK == SUPERBITRF || DATALINK == W5100 || DATALINK == BLUEGIGA</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor"></span>  <a class="code" href="pprz__transport_8c.html#a4a56f4299c84faa347591c6abf4b9c47">pprz_transport_init</a>(&amp;<a class="code" href="pprz__transport_8c.html#ac7d185dc6518d6eabe7cab132f9b8cda">pprz_tp</a>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if DATALINK == XBEE</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor"></span>  <a class="code" href="xbee_8c.html#a964a1e8461e9c1187e5d69f521e5e107" title="Initialisation in API mode and setting of the local address FIXME: busy wait. ">xbee_init</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if DATALINK == W5100</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor"></span>  <a class="code" href="w5100_8c.html#a3a4ec6731e43710788d3e51f7749259c">w5100_init</a>();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if DATALINK == BLUEGIGA</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor"></span>  <a class="code" href="bluegiga_8c.html#ac8a60ccee96fbe718a27b6194f3f14e0">bluegiga_init</a>(&amp;<a class="code" href="bluegiga_8c.html#ac12d1ee016c26361e1e48e9ee7b5dc27">bluegiga_p</a>);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#if USE_PPRZLOG</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor"></span>  <a class="code" href="pprzlog__transport_8c.html#a301368ea60ea8e1d7e50c0cf02a0a965">pprzlog_transport_init</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#if SITL</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor"></span>  <a class="code" href="ivy__transport_8c.html#a5103b0ca25b6bd5abb6f92abae752927">ivy_transport_init</a>();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#if PERIODIC_TELEMETRY</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor"></span>  <a class="code" href="telemetry_8c.html#a4c92e515e0ce29dc4294304cb2749e76" title="Register a telemetry callback function. ">register_periodic_telemetry</a>(<a class="code" href="telemetry_8h.html#a1912e51b2e63ae9b0d41d91e073cfefd" title="Set default periodic telemetry. ">DefaultPeriodic</a>, <span class="stringliteral">&quot;DATALINK_REPORT&quot;</span>, send_downlink);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_6567a5a7be991f15b7628b3b0eb084bd.html">datalink</a></li><li class="navelem"><a class="el" href="downlink_8c.html">downlink.c</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:04:46 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:06 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

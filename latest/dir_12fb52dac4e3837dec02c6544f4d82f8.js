@@ -1,5 +1,6 @@
 var dir_12fb52dac4e3837dec02c6544f4d82f8 =
 [
+    [ "ahrs_chimu.h", "ahrs__chimu_8h.html", "ahrs__chimu_8h" ],
     [ "ahrs_chimu_spi.c", "ahrs__chimu__spi_8c.html", "ahrs__chimu__spi_8c" ],
     [ "ahrs_chimu_uart.c", "ahrs__chimu__uart_8c.html", "ahrs__chimu__uart_8c" ],
     [ "alt_filter.c", "alt__filter_8c.html", "alt__filter_8c" ],

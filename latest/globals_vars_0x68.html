@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('globals_vars_0x68.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -271,9 +271,9 @@ $(document).ready(function(){initNavTree('globals_vars_0x68.html','');});
 , <a class="el" href="fixedwing_2stabilization_2stabilization__attitude_8h.html#a36b4caa0eb30ecfb44d54f83ad1ada2a">stabilization_attitude.h</a>
 </li>
 <li>h_ctl_roll_pgain
-: <a class="el" href="stabilization__adaptive_8c.html#a32ff0f8ef82c3d882051a3b504cb2f51">stabilization_adaptive.c</a>
+: <a class="el" href="fixedwing_2stabilization_2stabilization__attitude_8h.html#a32ff0f8ef82c3d882051a3b504cb2f51">stabilization_attitude.h</a>
+, <a class="el" href="stabilization__adaptive_8c.html#a32ff0f8ef82c3d882051a3b504cb2f51">stabilization_adaptive.c</a>
 , <a class="el" href="stabilization__attitude_8c.html#a32ff0f8ef82c3d882051a3b504cb2f51">stabilization_attitude.c</a>
-, <a class="el" href="fixedwing_2stabilization_2stabilization__attitude_8h.html#a32ff0f8ef82c3d882051a3b504cb2f51">stabilization_attitude.h</a>
 </li>
 <li>h_ctl_roll_rate_gain
 : <a class="el" href="stabilization__adaptive_8c.html#a770980c94665fbd4d6970bff6cb9dff5">stabilization_adaptive.c</a>
@@ -295,23 +295,20 @@ $(document).ready(function(){initNavTree('globals_vars_0x68.html','');});
 , <a class="el" href="stabilization__adaptive_8c.html#a27446f9f99d35f2d1e8e180ffd9f1f16">stabilization_adaptive.c</a>
 </li>
 <li>hackhd
-: <a class="el" href="hackhd_8h.html#a8e7fc00c07a56d7d59bc85281d9e01bc">hackhd.h</a>
-, <a class="el" href="hackhd_8c.html#a8e7fc00c07a56d7d59bc85281d9e01bc">hackhd.c</a>
+: <a class="el" href="hackhd_8c.html#a8e7fc00c07a56d7d59bc85281d9e01bc">hackhd.c</a>
+, <a class="el" href="hackhd_8h.html#a8e7fc00c07a56d7d59bc85281d9e01bc">hackhd.h</a>
 </li>
 <li>hardwareFaultType
 : <a class="el" href="stm32f4__chibios__vectors_8c.html#a945ff1b1ff704ba5d1f10ac91d367db2">stm32f4_chibios_vectors.c</a>
-</li>
-<li>head
-: <a class="el" href="gps__piksi_8c.html#ae0411d119b6e19281b04bbe57cc854bc">gps_piksi.c</a>
-</li>
-<li>header
-: <a class="el" href="stm32_2usb__ser__hw_8c.html#a9a8392067ad0235c042c6ae9db0cf963">usb_ser_hw.c</a>
 </li>
 <li>heading
 : <a class="el" href="ahrs__infrared_8c.html#ac5682e48513a771560df50e3b213e61a">ahrs_infrared.c</a>
 </li>
 <li>heading_positive
 : <a class="el" href="point_8c.html#ae57daa641ffe2a2ce5ea87d870a2573f">point.c</a>
+</li>
+<li>heading_save
+: <a class="el" href="guidance__flip_8c.html#a4e8380e4b77ede8f3173cc428df378c8">guidance_flip.c</a>
 </li>
 <li>high_accel_done
 : <a class="el" href="modules_2ins_2ins__arduimu__basic_8c.html#aaf97e062b11db6a64b8fb0df024c84f5">ins_arduimu_basic.c</a>
@@ -333,10 +330,10 @@ $(document).ready(function(){initNavTree('globals_vars_0x68.html','');});
 , <a class="el" href="hmc5843_8c.html#a0d9d6f319b2ad8e47637ad83bb04dbe2">hmc5843.c</a>
 </li>
 <li>horizontal_mode
-: <a class="el" href="nav_8c.html#ad2a5195a657a7961bfb54e3c2da48a21">nav.c</a>
-, <a class="el" href="nav_8h.html#ad2a5195a657a7961bfb54e3c2da48a21">nav.h</a>
+: <a class="el" href="navigation_8c.html#ad2a5195a657a7961bfb54e3c2da48a21">navigation.c</a>
 , <a class="el" href="navigation_8h.html#ad2a5195a657a7961bfb54e3c2da48a21">navigation.h</a>
-, <a class="el" href="navigation_8c.html#ad2a5195a657a7961bfb54e3c2da48a21">navigation.c</a>
+, <a class="el" href="nav_8c.html#ad2a5195a657a7961bfb54e3c2da48a21">nav.c</a>
+, <a class="el" href="nav_8h.html#ad2a5195a657a7961bfb54e3c2da48a21">nav.h</a>
 </li>
 <li>hott_event_timer
 : <a class="el" href="hott_8c.html#a06a5a3d870dc5636e39a99cd337e256c">hott.c</a>
@@ -363,12 +360,12 @@ $(document).ready(function(){initNavTree('globals_vars_0x68.html','');});
 : <a class="el" href="mf__ptu_8c.html#a0ca8f7b87de9bf822fecd5f571b4f294">mf_ptu.c</a>
 </li>
 <li>humid_sht_available
-: <a class="el" href="humid__sht_8h.html#a721bfa074f0f40ff23abdf39982303cd">humid_sht.h</a>
-, <a class="el" href="humid__sht_8c.html#a721bfa074f0f40ff23abdf39982303cd">humid_sht.c</a>
+: <a class="el" href="humid__sht_8c.html#a721bfa074f0f40ff23abdf39982303cd">humid_sht.c</a>
+, <a class="el" href="humid__sht_8h.html#a721bfa074f0f40ff23abdf39982303cd">humid_sht.h</a>
 </li>
 <li>humid_sht_status
-: <a class="el" href="humid__sht_8c.html#a04351042aaba6e2b67dc2aaab9ded946">humid_sht.c</a>
-, <a class="el" href="humid__sht_8h.html#a04351042aaba6e2b67dc2aaab9ded946">humid_sht.h</a>
+: <a class="el" href="humid__sht_8h.html#a04351042aaba6e2b67dc2aaab9ded946">humid_sht.h</a>
+, <a class="el" href="humid__sht_8c.html#a04351042aaba6e2b67dc2aaab9ded946">humid_sht.c</a>
 </li>
 <li>humidhtm
 : <a class="el" href="humid__htm__b71_8c.html#ac59566e59062a875450e1230e7b03826">humid_htm_b71.c</a>
@@ -387,7 +384,7 @@ $(document).ready(function(){initNavTree('globals_vars_0x68.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:40 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:48 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

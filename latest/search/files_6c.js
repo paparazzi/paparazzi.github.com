@@ -15,8 +15,8 @@ var searchData=
   ['led_5fhw_2ec',['led_hw.c',['../sim_2led__hw_8c.html',1,'']]],
   ['led_5fhw_2ec',['led_hw.c',['../stm32_2led__hw_8c.html',1,'']]],
   ['led_5fhw_2eh',['led_hw.h',['../stm32_2led__hw_8h.html',1,'']]],
-  ['led_5fhw_2eh',['led_hw.h',['../lpc21_2led__hw_8h.html',1,'']]],
   ['led_5fhw_2eh',['led_hw.h',['../linux_2led__hw_8h.html',1,'']]],
+  ['led_5fhw_2eh',['led_hw.h',['../lpc21_2led__hw_8h.html',1,'']]],
   ['led_5fhw_2eh',['led_hw.h',['../sim_2led__hw_8h.html',1,'']]],
   ['led_5fsafety_5fstatus_2ec',['led_safety_status.c',['../led__safety__status_8c.html',1,'']]],
   ['led_5fsafety_5fstatus_2eh',['led_safety_status.h',['../led__safety__status_8h.html',1,'']]],
@@ -27,6 +27,8 @@ var searchData=
   ['light_5fsolar_2eh',['light_solar.h',['../light__solar_8h.html',1,'']]],
   ['light_5ftemt_2ec',['light_temt.c',['../light__temt_8c.html',1,'']]],
   ['light_5ftemt_2eh',['light_temt.h',['../light__temt_8h.html',1,'']]],
+  ['linear_5fflow_5ffit_2ec',['linear_flow_fit.c',['../linear__flow__fit_8c.html',1,'']]],
+  ['linear_5fflow_5ffit_2eh',['linear_flow_fit.h',['../linear__flow__fit_8h.html',1,'']]],
   ['link_5fdevice_2eh',['link_device.h',['../link__device_8h.html',1,'']]],
   ['link_5fmcu_2eh',['link_mcu.h',['../link__mcu_8h.html',1,'']]],
   ['link_5fmcu_5fcan_2ec',['link_mcu_can.c',['../link__mcu__can_8c.html',1,'']]],
@@ -50,6 +52,9 @@ var searchData=
   ['lisa_5fmx_5f2_2e1_2eh',['lisa_mx_2.1.h',['../lisa__mx__2_81_8h.html',1,'']]],
   ['lisa_5fmx_5fcommon_2eh',['lisa_mx_common.h',['../lisa__mx__common_8h.html',1,'']]],
   ['lisa_5fs_5f1_2e0_2eh',['lisa_s_1.0.h',['../lisa__s__1_80_8h.html',1,'']]],
+  ['logger_5fuart_2ec',['logger_uart.c',['../logger__uart_8c.html',1,'']]],
+  ['logger_5fuart_2eh',['logger_uart.h',['../logger__uart_8h.html',1,'']]],
+  ['logger_5fuart_5fparse_2epy',['logger_uart_parse.py',['../logger__uart__parse_8py.html',1,'']]],
   ['logom_5f2_2e6_2eh',['logom_2.6.h',['../logom__2_86_8h.html',1,'']]],
   ['low_5fpass_5ffilter_2eh',['low_pass_filter.h',['../low__pass__filter_8h.html',1,'']]],
   ['lpc21xx_2eh',['LPC21xx.h',['../LPC21xx_8h.html',1,'']]],
@@ -68,5 +73,7 @@ var searchData=
   ['lpcwd_2eh',['lpcWD.h',['../lpcWD_8h.html',1,'']]],
   ['lsm303dlhc_2ec',['lsm303dlhc.c',['../lsm303dlhc_8c.html',1,'']]],
   ['lsm303dlhc_2eh',['lsm303dlhc.h',['../lsm303dlhc_8h.html',1,'']]],
-  ['lsm303dlhc_5fregs_2eh',['lsm303dlhc_regs.h',['../lsm303dlhc__regs_8h.html',1,'']]]
+  ['lsm303dlhc_5fregs_2eh',['lsm303dlhc_regs.h',['../lsm303dlhc__regs_8h.html',1,'']]],
+  ['lucas_5fkanade_2ec',['lucas_kanade.c',['../lucas__kanade_8c.html',1,'']]],
+  ['lucas_5fkanade_2eh',['lucas_kanade.h',['../lucas__kanade_8h.html',1,'']]]
 ];

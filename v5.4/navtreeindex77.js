@@ -1,5 +1,7 @@
 var NAVTREEINDEX77 =
 {
+"structActuatorsAsctec.html#a724e5e8e0b7149598edacd98e9388f38":[9,0,16,5],
+"structActuatorsAsctec.html#a7ba9e8aab93eb33e50b9098b1e7218a1":[9,0,16,2],
 "structActuatorsAsctecV2.html":[9,0,17],
 "structActuatorsAsctecV2.html#a3aa94b675088c4b1898926d605b2e231":[9,0,17,2],
 "structActuatorsAsctecV2.html#a6df55f318bb205b13300e3e3f82c265f":[9,0,17,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX77 =
 "structBmp085Calib.html#a4ead7919f8de81cedea15976661359a0":[9,0,45,2],
 "structBmp085Calib.html#a4eb0af436701112ca6f8909f91bfb329":[9,0,45,5],
 "structBmp085Calib.html#a8621d2730f238fb0c75732619ff38ae4":[9,0,45,3],
-"structBmp085Calib.html#aa0dabca72be046db44d132009de1a700":[9,0,45,10],
-"structBmp085Calib.html#aaa0836154f063ceb898f536e933aeec7":[9,0,45,0],
-"structBmp085Calib.html#adff670f9aa97dfec1ccd2aa7511f51f6":[9,0,45,4]
+"structBmp085Calib.html#aa0dabca72be046db44d132009de1a700":[9,0,45,10]
 };

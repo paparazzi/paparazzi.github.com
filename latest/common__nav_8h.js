@@ -1,6 +1,10 @@
 var common__nav_8h =
 [
-    [ "point", "structpoint.html", "structpoint" ],
+    [ "point", "common__nav_8h.html#structpoint", [
+      [ "a", "common__nav_8h.html#a7bb43530a17e55615fa418ff9f914991", null ],
+      [ "x", "common__nav_8h.html#a8293fd2de3ce739deb6d53691fd21fcf", null ],
+      [ "y", "common__nav_8h.html#a616ad85a2096d1566f5971666bbc3b3f", null ]
+    ] ],
     [ "Height", "common__nav_8h.html#af637c15f691fc23f50337eb194758ec7", null ],
     [ "NavSetAltitudeReferenceHere", "common__nav_8h.html#a82da50e89ef6cb752d1554e61531333d", null ],
     [ "NavSetGroundReferenceHere", "common__nav_8h.html#ac51da095b4a1038ac7be8d3be9b9573e", null ],

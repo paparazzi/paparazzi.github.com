@@ -12,6 +12,6 @@ var pprz__transport_8h =
     [ "UNINIT", "pprz__transport_8h.html#a7668dedbc74a47bde384b2b911379073", null ],
     [ "parse_pprz", "pprz__transport_8h.html#a6c8fe6e7a32b63290110826df67279ff", null ],
     [ "pprz_parse_payload", "pprz__transport_8h.html#a8b5b1ef0271ffa7e1d50ed36a626f90b", null ],
-    [ "pprz_transport_init", "pprz__transport_8h.html#a49a53dd884edf42d672dda0c2ffc221f", null ],
+    [ "pprz_transport_init", "pprz__transport_8h.html#a4a56f4299c84faa347591c6abf4b9c47", null ],
     [ "pprz_tp", "pprz__transport_8h.html#ac7d185dc6518d6eabe7cab132f9b8cda", null ]
 ];

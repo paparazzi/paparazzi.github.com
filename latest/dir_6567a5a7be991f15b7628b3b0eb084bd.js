@@ -1,6 +1,8 @@
 var dir_6567a5a7be991f15b7628b3b0eb084bd =
 [
     [ "audio_telemetry.h", "audio__telemetry_8h.html", "audio__telemetry_8h" ],
+    [ "bluegiga.c", "bluegiga_8c.html", "bluegiga_8c" ],
+    [ "bluegiga.h", "bluegiga_8h.html", "bluegiga_8h" ],
     [ "datalink.h", "datalink_8h.html", "datalink_8h" ],
     [ "downlink.c", "downlink_8c.html", "downlink_8c" ],
     [ "downlink.h", "downlink_8h.html", "downlink_8h" ],
@@ -14,7 +16,7 @@ var dir_6567a5a7be991f15b7628b3b0eb084bd =
     [ "superbitrf.c", "subsystems_2datalink_2superbitrf_8c.html", "subsystems_2datalink_2superbitrf_8c" ],
     [ "superbitrf.h", "subsystems_2datalink_2superbitrf_8h.html", "subsystems_2datalink_2superbitrf_8h" ],
     [ "telemetry.c", "telemetry_8c.html", "telemetry_8c" ],
-    [ "telemetry.h", "telemetry_8h.html", null ],
+    [ "telemetry.h", "telemetry_8h.html", "telemetry_8h" ],
     [ "telemetry_common.h", "telemetry__common_8h.html", "telemetry__common_8h" ],
     [ "transport.h", "transport_8h.html", "transport_8h" ],
     [ "uart_print.h", "uart__print_8h.html", "uart__print_8h" ],

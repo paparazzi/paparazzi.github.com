@@ -156,5 +156,10 @@ var searchData=
   ['ms5611_5fstatus_5fprom',['MS5611_STATUS_PROM',['../ms5611_8h.html#aeabcd6fb6c9a54ba10c34130f71f855ba56b1052b74f23522bb515d2deed45ca2',1,'ms5611.h']]],
   ['ms5611_5fstatus_5freset',['MS5611_STATUS_RESET',['../ms5611_8h.html#aeabcd6fb6c9a54ba10c34130f71f855ba9c8fb120253bf76a1ead2e6c6c10835e',1,'ms5611.h']]],
   ['ms5611_5fstatus_5freset_5fok',['MS5611_STATUS_RESET_OK',['../ms5611_8h.html#aeabcd6fb6c9a54ba10c34130f71f855bacbd33eb00f82a8caaa76a6e77390325d',1,'ms5611.h']]],
-  ['ms5611_5fstatus_5funinit',['MS5611_STATUS_UNINIT',['../ms5611_8h.html#aeabcd6fb6c9a54ba10c34130f71f855bad80b7547e536d830370c7cf96a6cb84d',1,'ms5611.h']]]
+  ['ms5611_5fstatus_5funinit',['MS5611_STATUS_UNINIT',['../ms5611_8h.html#aeabcd6fb6c9a54ba10c34130f71f855bad80b7547e536d830370c7cf96a6cb84d',1,'ms5611.h']]],
+  ['mtostk_5fabs_5fpress',['MTOSTK_ABS_PRESS',['../meteo__stick__calib_8h.html#a000cea9729040e12b6a515c57b08d1e2ad4f370fddef9a06ddc204208c8b3a9cd',1,'meteo_stick_calib.h']]],
+  ['mtostk_5fdif_5fpress',['MTOSTK_DIF_PRESS',['../meteo__stick__calib_8h.html#a000cea9729040e12b6a515c57b08d1e2a235989ec0173b8b5afacba1ec55dbdd5',1,'meteo_stick_calib.h']]],
+  ['mtostk_5fhumidity',['MTOSTK_HUMIDITY',['../meteo__stick__calib_8h.html#a000cea9729040e12b6a515c57b08d1e2ac14ccc9fb90d4c5dfd218421b48d1438',1,'meteo_stick_calib.h']]],
+  ['mtostk_5fnum_5fsensors',['MTOSTK_NUM_SENSORS',['../meteo__stick__calib_8h.html#a000cea9729040e12b6a515c57b08d1e2aff1895e7a3c023717cf8bed205f28c9b',1,'meteo_stick_calib.h']]],
+  ['mtostk_5ftemp',['MTOSTK_TEMP',['../meteo__stick__calib_8h.html#a000cea9729040e12b6a515c57b08d1e2a63eedfe1d471708f0873f15f357c1f2f',1,'meteo_stick_calib.h']]]
 ];

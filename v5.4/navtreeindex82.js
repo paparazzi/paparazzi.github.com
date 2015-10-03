@@ -1,5 +1,7 @@
 var NAVTREEINDEX82 =
 {
+"structMpu9250__Spi.html#a56e8982fbaed2ae5de3828ed1f17320f":[9,0,223,7],
+"structMpu9250__Spi.html#a57ba0ec6721b8de24d5781dbc4b4ba13":[9,0,223,6],
 "structMpu9250__Spi.html#a5dab7d8e6829b61e1b95c86b7085c9a3":[9,0,223,0],
 "structMpu9250__Spi.html#a611d62e1ad529b8deaddc98c788f4263":[9,0,223,10],
 "structMpu9250__Spi.html#a68863f48590c96f37b70370965c887f6":[9,0,223,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX82 =
 "structTLineCoding.html":[9,0,276],
 "structTLineCoding.html#a39c368c55b6d8e698a53b67323252701":[9,0,276,3],
 "structTLineCoding.html#a7e1e2fedd32383b44d0b03868f6d059e":[9,0,276,2],
-"structTLineCoding.html#aa0fcfb0c5f6c24305311a9750eaa53aa":[9,0,276,0],
-"structTLineCoding.html#ae8071baa61a3b991b509b52cfd2dc64f":[9,0,276,1],
-"structTypeKalman.html":[9,0,279]
+"structTLineCoding.html#aa0fcfb0c5f6c24305311a9750eaa53aa":[9,0,276,0]
 };

@@ -1,6 +1,11 @@
 var vi__test__signal_8h =
 [
-    [ "BoozFmsTestSignal", "structBoozFmsTestSignal.html", "structBoozFmsTestSignal" ],
+    [ "BoozFmsTestSignal", "vi__test__signal_8h.html#structBoozFmsTestSignal", [
+      [ "amplitude", "vi__test__signal_8h.html#a0d97de47f997cabc4d36b72266087e0c", null ],
+      [ "counter", "vi__test__signal_8h.html#a4fdcd74eb4f555d37356459695f00589", null ],
+      [ "mode", "vi__test__signal_8h.html#a4e7953a270a5c5c7f904140ae07b1b0b", null ],
+      [ "period", "vi__test__signal_8h.html#afd5e1105c20108debed35f364310e287", null ]
+    ] ],
     [ "booz_fms_test_signal_SetMode", "vi__test__signal_8h.html#a8679ab7e51aefc67f1fb69da905524ad", null ],
     [ "booz_fms_test_signal_SetPeriod", "vi__test__signal_8h.html#a3af29b090ead3b8dcf06bb01d5fc695a", null ],
     [ "fms_ts_mode", "vi__test__signal_8h.html#a348d7aa59a4cc06408815b6e39513b0c", [

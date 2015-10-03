@@ -1,21 +1,23 @@
 <map id="sw/airborne/mcu_periph/adc.h" name="sw/airborne/mcu_periph/adc.h">
-<area shape="rect" id="node3" href="$lpc21_2mcu__periph_2adc__arch_8c.html" title="Handling of ADC hardware for lpc21xx. " alt="" coords="5,99,179,143"/>
-<area shape="rect" id="node5" href="$sim_2mcu__periph_2adc__arch_8c.html" title="Dummy functions for handling of ADC hardware in sim. " alt="" coords="203,99,376,143"/>
-<area shape="rect" id="node7" href="$stm32_2mcu__periph_2adc__arch_8c.html" title="Driver for the analog to digital converters on STM32. " alt="" coords="400,99,573,143"/>
-<area shape="rect" id="node9" href="$booz_2baro__board_8h.html" title="sw/airborne/boards\l/booz/baro_board.h" alt="" coords="597,99,744,143"/>
-<area shape="rect" id="node11" href="$adc__generic_8c.html" title="sw/airborne/modules\l/adcs/adc_generic.c" alt="" coords="768,99,923,143"/>
-<area shape="rect" id="node13" href="$enose_8c.html" title="sw/airborne/modules\l/enose/enose.c" alt="" coords="947,99,1101,143"/>
-<area shape="rect" id="node15" href="$humid__hih_8c.html" title="Honeywell HIH&#45;4030 sensor interface. " alt="" coords="1125,99,1280,143"/>
-<area shape="rect" id="node17" href="$light__solar_8c.html" title="University of Reading solar radiation sensor interface. " alt="" coords="1304,99,1459,143"/>
-<area shape="rect" id="node19" href="$light__temt_8c.html" title="Vishay TEMT6000 ambient light sensor interface. " alt="" coords="1483,99,1637,143"/>
-<area shape="rect" id="node21" href="$mf__ptu_8c.html" title="sw/airborne/modules\l/meteo/mf_ptu.c" alt="" coords="1661,99,1816,143"/>
-<area shape="rect" id="node23" href="$temp__tcouple__adc_8c.html" title="Universitaet Tuebingen thermocouple interface. " alt="" coords="1840,99,2040,143"/>
-<area shape="rect" id="node25" href="$airspeed__adc_8c.html" title="Read an airspeed or differential pressure sensor via onboard ADC. " alt="" coords="2064,99,2240,143"/>
-<area shape="rect" id="node27" href="$aoa__adc_8h.html" title="sw/airborne/modules\l/sensors/aoa_adc.h" alt="" coords="2264,99,2419,143"/>
-<area shape="rect" id="node31" href="$temp__adc_8c.html" title="Temperature sensor module for LM35 or NTC (10k / 100k) sensor via analog input. " alt="" coords="2443,99,2597,143"/>
-<area shape="rect" id="node33" href="$sonar__adc_8c.html" title="sw/airborne/modules\l/sonar/sonar_adc.c" alt="" coords="2621,99,2776,143"/>
-<area shape="rect" id="node35" href="$subsystems_2electrical_8c.html" title="Implemnetation for electrical status: supply voltage, current, battery status, etc. " alt="" coords="2800,99,2976,143"/>
-<area shape="rect" id="node37" href="$imu__analog_8c.html" title="sw/airborne/subsystems\l/imu/imu_analog.c" alt="" coords="3000,99,3176,143"/>
-<area shape="rect" id="node39" href="$infrared__adc_8c.html" title="Regroup all functions link to ADC ir. " alt="" coords="3200,99,3376,143"/>
-<area shape="rect" id="node29" href="$aoa__adc_8c.html" title="Angle of Attack sensor on ADC Autor: Bruzzlee. " alt="" coords="2264,193,2419,237"/>
+<area shape="rect" id="node3" href="$linux_2mcu__periph_2adc__arch_8c.html" title="Driver for the analog to digital converters in Linux based systems. " alt="" coords="5,99,179,143"/>
+<area shape="rect" id="node5" href="$lpc21_2mcu__periph_2adc__arch_8c.html" title="Handling of ADC hardware for lpc21xx. " alt="" coords="203,99,376,143"/>
+<area shape="rect" id="node7" href="$sim_2mcu__periph_2adc__arch_8c.html" title="Dummy functions for handling of ADC hardware in sim. " alt="" coords="400,99,573,143"/>
+<area shape="rect" id="node9" href="$stm32_2mcu__periph_2adc__arch_8c.html" title="Driver for the analog to digital converters on STM32. " alt="" coords="597,99,771,143"/>
+<area shape="rect" id="node11" href="$booz_2baro__board_8h.html" title="sw/airborne/boards\l/booz/baro_board.h" alt="" coords="795,99,941,143"/>
+<area shape="rect" id="node13" href="$adc__generic_8c.html" title="sw/airborne/modules\l/adcs/adc_generic.c" alt="" coords="965,99,1120,143"/>
+<area shape="rect" id="node15" href="$enose_8c.html" title="sw/airborne/modules\l/enose/enose.c" alt="" coords="1144,99,1299,143"/>
+<area shape="rect" id="node17" href="$humid__hih_8c.html" title="Honeywell HIH&#45;4030 sensor interface. " alt="" coords="1323,99,1477,143"/>
+<area shape="rect" id="node19" href="$light__solar_8c.html" title="University of Reading solar radiation sensor interface. " alt="" coords="1501,99,1656,143"/>
+<area shape="rect" id="node21" href="$light__temt_8c.html" title="Vishay TEMT6000 ambient light sensor interface. " alt="" coords="1680,99,1835,143"/>
+<area shape="rect" id="node23" href="$mf__ptu_8c.html" title="sw/airborne/modules\l/meteo/mf_ptu.c" alt="" coords="1859,99,2013,143"/>
+<area shape="rect" id="node25" href="$temp__tcouple__adc_8c.html" title="Universitaet Tuebingen thermocouple interface. " alt="" coords="2037,99,2237,143"/>
+<area shape="rect" id="node27" href="$airspeed__adc_8c.html" title="Read an airspeed or differential pressure sensor via onboard ADC. " alt="" coords="2261,99,2437,143"/>
+<area shape="rect" id="node29" href="$aoa__adc_8h.html" title="sw/airborne/modules\l/sensors/aoa_adc.h" alt="" coords="2461,99,2616,143"/>
+<area shape="rect" id="node33" href="$temp__adc_8c.html" title="Temperature sensor module for LM35 or NTC (10k / 100k) sensor via analog input. " alt="" coords="2640,99,2795,143"/>
+<area shape="rect" id="node35" href="$sonar__adc_8c.html" title="sw/airborne/modules\l/sonar/sonar_adc.c" alt="" coords="2819,99,2973,143"/>
+<area shape="rect" id="node37" href="$sonar__bebop_8c.html" title="Parrot Bebop Sonar driver. " alt="" coords="2997,99,3157,143"/>
+<area shape="rect" id="node39" href="$electrical_8c.html" title="Implemnetation for electrical status: supply voltage, current, battery status, etc. " alt="" coords="3181,99,3357,143"/>
+<area shape="rect" id="node41" href="$imu__analog_8c.html" title="sw/airborne/subsystems\l/imu/imu_analog.c" alt="" coords="3381,99,3557,143"/>
+<area shape="rect" id="node43" href="$infrared__adc_8c.html" title="Regroup all functions link to ADC ir. " alt="" coords="3581,99,3757,143"/>
+<area shape="rect" id="node31" href="$aoa__adc_8c.html" title="Angle of Attack sensor on ADC Autor: Bruzzlee. " alt="" coords="2461,193,2616,237"/>
 </map>

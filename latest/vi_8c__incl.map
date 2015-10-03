@@ -1,28 +1,29 @@
 <map id="sw/airborne/modules/vehicle_interface/vi.c" name="sw/airborne/modules/vehicle_interface/vi.c">
-<area shape="rect" id="node3" href="$vi_8h.html" title="vehicle_interface/vi.h" alt="" coords="1191,99,1345,127"/>
-<area shape="rect" id="node95" href="$imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="1309,278,1448,306"/>
-<area shape="rect" id="node101" href="$ahrs_8h.html" title="Attitude and Heading Reference System interface. " alt="" coords="1641,185,1783,213"/>
-<area shape="rect" id="node107" href="$gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="2459,278,2597,306"/>
-<area shape="rect" id="node7" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1235,465,1413,493"/>
-<area shape="rect" id="node22" href="$rotorcraft_2autopilot_8h.html" title="Autopilot modes. " alt="" coords="407,177,553,221"/>
-<area shape="rect" id="node57" href="$stabilization_8h.html" title="General stabilization interface for rotorcrafts. " alt="" coords="245,363,392,407"/>
-<area shape="rect" id="node61" href="$guidance_8h.html" title="firmwares/rotorcraft\l/guidance.h" alt="" coords="725,177,872,221"/>
-<area shape="rect" id="node87" href="$navigation_8h.html" title="Rotorcraft navigation functions. " alt="" coords="1975,270,2121,314"/>
-<area shape="rect" id="node10" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="1132,566,1287,594"/>
-<area shape="rect" id="node17" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1361,566,1511,594"/>
-<area shape="rect" id="node27" href="$state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="1749,278,1816,306"/>
-<area shape="rect" id="node54" href="$settings_8h.html" title="Persistent settings interface. " alt="" coords="5,566,171,594"/>
-<area shape="rect" id="node30" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1580,465,1769,493"/>
-<area shape="rect" id="node36" href="$pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="1973,363,2123,407"/>
-<area shape="rect" id="node42" href="$pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1800,363,1949,407"/>
-<area shape="rect" id="node47" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1461,363,1624,407"/>
-<area shape="rect" id="node38" href="$pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="1844,465,1967,493"/>
-<area shape="rect" id="node63" href="$guidance__h_8h.html" title="Horizontal guidance for rotorcrafts. " alt="" coords="712,270,885,314"/>
-<area shape="rect" id="node75" href="$rotorcraft_2guidance_2guidance__v_8h.html" title="Vertical guidance for rotorcrafts. " alt="" coords="517,270,688,314"/>
-<area shape="rect" id="node66" href="$guidance__h__ref_8h.html" title="Reference generation for horizontal guidance. " alt="" coords="989,363,1184,407"/>
-<area shape="rect" id="node68" href="$inttypes_8h.html" title="inttypes.h" alt="" coords="1044,465,1129,493"/>
-<area shape="rect" id="node78" href="$guidance__v__ref_8h.html" title="Reference generation for vertical guidance. " alt="" coords="771,363,965,407"/>
-<area shape="rect" id="node84" href="$guidance__v__adapt_8h.html" title="Adaptation block of the vertical guidance. " alt="" coords="333,550,493,610"/>
-<area shape="rect" id="node92" href="$common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="2157,558,2325,602"/>
-<area shape="rect" id="node111" href="$sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="2451,371,2621,399"/>
+<area shape="rect" id="node3" href="$vi_8h.html" title="vehicle_interface/vi.h" alt="" coords="1237,99,1392,127"/>
+<area shape="rect" id="node99" href="$imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="896,278,1035,306"/>
+<area shape="rect" id="node105" href="$ahrs_8h.html" title="Dispatcher to register actual AHRS implementations. " alt="" coords="2533,99,2675,127"/>
+<area shape="rect" id="node108" href="$gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="2329,278,2468,306"/>
+<area shape="rect" id="node7" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="840,465,1019,493"/>
+<area shape="rect" id="node22" href="$rotorcraft_2autopilot_8h.html" title="Autopilot modes. " alt="" coords="1399,177,1545,221"/>
+<area shape="rect" id="node57" href="$stabilization_8h.html" title="General stabilization interface for rotorcrafts. " alt="" coords="5,363,152,407"/>
+<area shape="rect" id="node61" href="$guidance_8h.html" title="firmwares/rotorcraft\l/guidance.h" alt="" coords="973,177,1120,221"/>
+<area shape="rect" id="node87" href="$navigation_8h.html" title="Rotorcraft navigation functions. " alt="" coords="1785,177,1932,221"/>
+<area shape="rect" id="node10" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="564,566,719,594"/>
+<area shape="rect" id="node17" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="844,566,993,594"/>
+<area shape="rect" id="node27" href="$state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="1439,278,1505,306"/>
+<area shape="rect" id="node54" href="$settings_8h.html" title="Persistent settings interface. " alt="" coords="1980,566,2145,594"/>
+<area shape="rect" id="node30" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1043,465,1232,493"/>
+<area shape="rect" id="node36" href="$pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="1784,363,1933,407"/>
+<area shape="rect" id="node42" href="$pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1611,363,1760,407"/>
+<area shape="rect" id="node47" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1120,363,1283,407"/>
+<area shape="rect" id="node38" href="$pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="1689,465,1812,493"/>
+<area shape="rect" id="node63" href="$guidance__h_8h.html" title="Horizontal guidance for rotorcrafts. " alt="" coords="699,270,872,314"/>
+<area shape="rect" id="node75" href="$rotorcraft_2guidance_2guidance__v_8h.html" title="Vertical guidance for rotorcrafts. " alt="" coords="1173,270,1344,314"/>
+<area shape="rect" id="node66" href="$guidance__h__ref_8h.html" title="Reference generation for horizontal guidance. " alt="" coords="379,363,573,407"/>
+<area shape="rect" id="node68" href="$inttypes_8h.html" title="inttypes.h" alt="" coords="572,465,657,493"/>
+<area shape="rect" id="node78" href="$guidance__v__ref_8h.html" title="Reference generation for vertical guidance. " alt="" coords="597,363,792,407"/>
+<area shape="rect" id="node84" href="$guidance__v__adapt_8h.html" title="Adaptation block of the vertical guidance. " alt="" coords="1311,550,1471,610"/>
+<area shape="rect" id="node91" href="$waypoints_8h.html" title="subsystems/navigation\l/waypoints.h" alt="" coords="1775,270,1943,314"/>
+<area shape="rect" id="node96" href="$common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="1636,558,1804,602"/>
+<area shape="rect" id="node112" href="$sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="2321,371,2492,399"/>
 </map>

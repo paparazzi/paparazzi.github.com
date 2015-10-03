@@ -1,6 +1,13 @@
 var imu__mpu9250__i2c_8h =
 [
-    [ "ImuMpu9250", "structImuMpu9250.html", "structImuMpu9250" ],
+    [ "ImuMpu9250", "imu__mpu9250__spi_8h.html#structImuMpu9250", [
+      [ "mpu", "imu__mpu9250__spi_8h.html#a5239f1ebbc37e50b3c06de3e3cb530f5", null ],
+      [ "mpu", "imu__mpu9250__spi_8h.html#a78a7077378ca47f519e1637089f69ae0", null ],
+      [ "slave4_ready", "imu__mpu9250__spi_8h.html#ac28042832e82a49b98e24ffd49f438e4", null ],
+      [ "wait_slave4_rx_buf", "imu__mpu9250__spi_8h.html#a3be0ff8e6de8bd381ea72c06472d3005", null ],
+      [ "wait_slave4_trans", "imu__mpu9250__spi_8h.html#a0f051bef0ac297a2c71ef42cf1169380", null ],
+      [ "wait_slave4_tx_buf", "imu__mpu9250__spi_8h.html#a5d07c40834c4121ab971853406af1274", null ]
+    ] ],
     [ "IMU_ACCEL_X_SENS", "imu__mpu9250__i2c_8h.html#a8ac88fc00cde506229b92c6a1e2c3122", null ],
     [ "IMU_ACCEL_X_SENS_DEN", "imu__mpu9250__i2c_8h.html#a8acf299c1bfb2daa92b1894556ca50ad", null ],
     [ "IMU_ACCEL_X_SENS_NUM", "imu__mpu9250__i2c_8h.html#ada91099469f16df2d8aeafa82d365c4b", null ],
@@ -19,7 +26,7 @@ var imu__mpu9250__i2c_8h =
     [ "IMU_GYRO_R_SENS", "imu__mpu9250__i2c_8h.html#af57decce9e96b0726832a410273223f3", null ],
     [ "IMU_GYRO_R_SENS_DEN", "imu__mpu9250__i2c_8h.html#aecb2f43265d239ba7661dfcc8523123e", null ],
     [ "IMU_GYRO_R_SENS_NUM", "imu__mpu9250__i2c_8h.html#a6f808c71190e714287442af3bb7008b3", null ],
+    [ "ImuEvent", "imu__mpu9250__i2c_8h.html#a38f1122c1ee0701562b490c6e1b60609", null ],
     [ "imu_mpu9250_event", "imu__mpu9250__i2c_8h.html#af140d4e8a775be026073e67fd3080aa2", null ],
-    [ "ImuEvent", "imu__mpu9250__i2c_8h.html#a9d95db588addd0a03f6e7e749fbb032a", null ],
     [ "imu_mpu9250", "imu__mpu9250__i2c_8h.html#adad553c3f90fb29838650e9d3306b1c4", null ]
 ];

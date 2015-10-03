@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('spi__slave__hs__arch_8c.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -119,7 +119,6 @@ $(document).ready(function(){initNavTree('spi__slave__hs__arch_8c.html','');});
 <div class="textblock"><code>#include &quot;<a class="el" href="spi__slave__hs__arch_8h_source.html">spi_slave_hs_arch.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="spi_8h_source.html">mcu_periph/spi.h</a>&quot;</code><br/>
 <code>#include &lt;BOARD_CONFIG&gt;</code><br/>
-<code>#include &quot;interrupt_hw.h&quot;</code><br/>
 <code>#include &quot;std.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="mcu_8h_source.html">mcu.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="led_8h_source.html">led.h</a>&quot;</code><br/>
@@ -134,7 +133,7 @@ $(document).ready(function(){initNavTree('spi__slave__hs__arch_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="spi__slave__hs__arch_8c__incl.png" border="0" usemap="#sw_2airborne_2arch_2lpc21_2mcu__periph_2spi__slave__hs__arch_8c" alt=""/></div>
 <map name="sw_2airborne_2arch_2lpc21_2mcu__periph_2spi__slave__hs__arch_8c" id="sw_2airborne_2arch_2lpc21_2mcu__periph_2spi__slave__hs__arch_8c">
-<area shape="rect" id="node3" href="spi__slave__hs__arch_8h.html" title="Highspeed SPI Slave Interface. " alt="" coords="5,115,155,143"/><area shape="rect" id="node7" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API. " alt="" coords="229,115,360,143"/><area shape="rect" id="node17" href="mcu_8h.html" title="Arch independent mcu ( Micro Controller Unit ) utilities. " alt="" coords="667,115,728,143"/><area shape="rect" id="node21" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="752,115,805,143"/><area shape="rect" id="node25" href="LPC21xx_8h.html" title="LPC21xx.h" alt="" coords="865,193,953,221"/><area shape="rect" id="node51" href="ssp__hw_8h.html" title="ssp_hw.h" alt="" coords="880,115,957,143"/><area shape="rect" id="node54" href="pprz__debug_8h.html" title="pprz_debug.h" alt="" coords="981,115,1091,143"/><area shape="rect" id="node56" href="armVIC_8h.html" title="armVIC.h" alt="" coords="1115,115,1195,143"/><area shape="rect" id="node27" href="lpcWD_8h.html" title="lpcWD.h" alt="" coords="325,270,397,298"/><area shape="rect" id="node29" href="lpcTMR_8h.html" title="lpcTMR.h" alt="" coords="421,270,499,298"/><area shape="rect" id="node31" href="lpcUART_8h.html" title="lpcUART.h" alt="" coords="523,270,605,298"/><area shape="rect" id="node33" href="lpcI2C_8h.html" title="lpcI2C.h" alt="" coords="629,270,701,298"/><area shape="rect" id="node35" href="lpcSPI_8h.html" title="lpcSPI.h" alt="" coords="725,270,797,298"/><area shape="rect" id="node37" href="lpcRTC_8h.html" title="lpcRTC.h" alt="" coords="821,270,896,298"/><area shape="rect" id="node39" href="lpcGPIO_8h.html" title="lpcGPIO.h" alt="" coords="920,270,1003,298"/><area shape="rect" id="node41" href="lpcPIN_8h.html" title="lpcPIN.h" alt="" coords="1027,270,1099,298"/><area shape="rect" id="node43" href="lpcADC_8h.html" title="lpcADC.h" alt="" coords="1123,270,1203,298"/><area shape="rect" id="node45" href="lpcSCB_8h.html" title="lpcSCB.h" alt="" coords="1227,270,1304,298"/><area shape="rect" id="node47" href="lpcVIC_8h.html" title="lpcVIC.h" alt="" coords="1328,270,1400,298"/><area shape="rect" id="node49" href="lpcCAN_8h.html" title="lpcCAN.h" alt="" coords="1424,270,1504,298"/></map>
+<area shape="rect" id="node3" href="spi__slave__hs__arch_8h.html" title="Highspeed SPI Slave Interface. " alt="" coords="51,115,200,143"/><area shape="rect" id="node11" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API. " alt="" coords="275,115,405,143"/><area shape="rect" id="node19" href="mcu_8h.html" title="Arch independent mcu ( Micro Controller Unit ) utilities. " alt="" coords="576,115,637,143"/><area shape="rect" id="node23" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="661,115,715,143"/><area shape="rect" id="node27" href="LPC21xx_8h.html" title="LPC21xx.h" alt="" coords="768,193,856,221"/><area shape="rect" id="node53" href="ssp__hw_8h.html" title="ssp_hw.h" alt="" coords="789,115,867,143"/><area shape="rect" id="node56" href="pprz__debug_8h.html" title="pprz_debug.h" alt="" coords="891,115,1000,143"/><area shape="rect" id="node58" href="armVIC_8h.html" title="armVIC.h" alt="" coords="1024,115,1104,143"/><area shape="rect" id="node7" href="link__device_8h.html" title="generic device header " alt="" coords="5,193,187,221"/><area shape="rect" id="node9" href="inttypes_8h.html" title="inttypes.h" alt="" coords="53,270,139,298"/><area shape="rect" id="node29" href="lpcWD_8h.html" title="lpcWD.h" alt="" coords="1317,270,1389,298"/><area shape="rect" id="node31" href="lpcTMR_8h.html" title="lpcTMR.h" alt="" coords="211,270,288,298"/><area shape="rect" id="node33" href="lpcUART_8h.html" title="lpcUART.h" alt="" coords="312,270,395,298"/><area shape="rect" id="node35" href="lpcI2C_8h.html" title="lpcI2C.h" alt="" coords="419,270,491,298"/><area shape="rect" id="node37" href="lpcSPI_8h.html" title="lpcSPI.h" alt="" coords="515,270,587,298"/><area shape="rect" id="node39" href="lpcRTC_8h.html" title="lpcRTC.h" alt="" coords="611,270,685,298"/><area shape="rect" id="node41" href="lpcGPIO_8h.html" title="lpcGPIO.h" alt="" coords="709,270,792,298"/><area shape="rect" id="node43" href="lpcPIN_8h.html" title="lpcPIN.h" alt="" coords="816,270,888,298"/><area shape="rect" id="node45" href="lpcADC_8h.html" title="lpcADC.h" alt="" coords="912,270,992,298"/><area shape="rect" id="node47" href="lpcSCB_8h.html" title="lpcSCB.h" alt="" coords="1016,270,1093,298"/><area shape="rect" id="node49" href="lpcVIC_8h.html" title="lpcVIC.h" alt="" coords="1117,270,1189,298"/><area shape="rect" id="node51" href="lpcCAN_8h.html" title="lpcCAN.h" alt="" coords="1213,270,1293,298"/></map>
 </div>
 </div>
 <p><a href="spi__slave__hs__arch_8c_source.html">Go to the source code of this file.</a></p>
@@ -185,11 +184,23 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:aa105625a4ec7ecf95c0802c3edfade05"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spi__slave__hs__arch_8c.html#aa105625a4ec7ecf95c0802c3edfade05">SSP_ISR</a> (void)</td></tr>
 <tr class="separator:aa105625a4ec7ecf95c0802c3edfade05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf4a72db6d67c40a88f4a518cf29e646"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spi__slave__hs__arch_8c.html#adf4a72db6d67c40a88f4a518cf29e646">spi_slave_hs_check_free_space</a> (struct <a class="el" href="spi__slave__hs__arch_8h.html#structspi__slave__hs">spi_slave_hs</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> len)</td></tr>
+<tr class="separator:adf4a72db6d67c40a88f4a518cf29e646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64121f3c186b7b388934de2b78fb3768"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spi__slave__hs__arch_8c.html#a64121f3c186b7b388934de2b78fb3768">spi_slave_hs_transmit</a> (struct <a class="el" href="spi__slave__hs__arch_8h.html#structspi__slave__hs">spi_slave_hs</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> byte)</td></tr>
+<tr class="separator:a64121f3c186b7b388934de2b78fb3768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdc765d74014fbeb12017025f36d218d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spi__slave__hs__arch_8c.html#afdc765d74014fbeb12017025f36d218d">spi_slave_hs_send</a> (struct <a class="el" href="spi__slave__hs__arch_8h.html#structspi__slave__hs">spi_slave_hs</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
+<tr class="separator:afdc765d74014fbeb12017025f36d218d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eb5625306bbd0528404bdbec1fe2cd2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spi__slave__hs__arch_8c.html#a3eb5625306bbd0528404bdbec1fe2cd2">spi_slave_hs_char_available</a> (struct <a class="el" href="spi__slave__hs__arch_8h.html#structspi__slave__hs">spi_slave_hs</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
+<tr class="separator:a3eb5625306bbd0528404bdbec1fe2cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26f8e1cbe59fb380e629b47643ed5a1e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spi__slave__hs__arch_8c.html#a26f8e1cbe59fb380e629b47643ed5a1e">spi_slave_hs_getch</a> (struct <a class="el" href="spi__slave__hs__arch_8h.html#structspi__slave__hs">spi_slave_hs</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
+<tr class="separator:a26f8e1cbe59fb380e629b47643ed5a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7c7233ab7697ee83d0228fe95b0c048"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spi__slave__hs__arch_8c.html#ad7c7233ab7697ee83d0228fe95b0c048">spi_slave_hs_init</a> (void)</td></tr>
 <tr class="separator:ad7c7233ab7697ee83d0228fe95b0c048"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:a64590809afb3e219039ec626ec8a827c"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="spi__slave__hs__arch_8h.html#structspi__slave__hs">spi_slave_hs</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spi__slave__hs__arch_8c.html#a64590809afb3e219039ec626ec8a827c">spi_slave_hs</a></td></tr>
+<tr class="separator:a64590809afb3e219039ec626ec8a827c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2230cbf710046411b2cede184992e389"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spi__slave__hs__arch_8c.html#a2230cbf710046411b2cede184992e389">spi_slave_hs_rx_insert_idx</a></td></tr>
 <tr class="separator:a2230cbf710046411b2cede184992e389"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1724ed4a834423f441125b47df39e78"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spi__slave__hs__arch_8c.html#ac1724ed4a834423f441125b47df39e78">spi_slave_hs_rx_extract_idx</a></td></tr>
@@ -222,7 +233,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="spi__slave__hs__arch_8c_source.html#l00103">103</a> of file <a class="el" href="spi__slave__hs__arch_8c_source.html">spi_slave_hs_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00107">spi_slave_hs_init()</a>.</p>
+<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00137">spi_slave_hs_init()</a>.</p>
 
 </div>
 </div>
@@ -322,7 +333,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="spi__slave__hs__arch_8c_source.html#l00092">92</a> of file <a class="el" href="spi__slave__hs__arch_8c_source.html">spi_slave_hs_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00107">spi_slave_hs_init()</a>.</p>
+<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00137">spi_slave_hs_init()</a>.</p>
 
 </div>
 </div>
@@ -338,7 +349,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="spi__slave__hs__arch_8c_source.html#l00093">93</a> of file <a class="el" href="spi__slave__hs__arch_8c_source.html">spi_slave_hs_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00107">spi_slave_hs_init()</a>.</p>
+<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00137">spi_slave_hs_init()</a>.</p>
 
 </div>
 </div>
@@ -354,7 +365,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="spi__slave__hs__arch_8c_source.html#l00091">91</a> of file <a class="el" href="spi__slave__hs__arch_8c_source.html">spi_slave_hs_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00107">spi_slave_hs_init()</a>.</p>
+<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00137">spi_slave_hs_init()</a>.</p>
 
 </div>
 </div>
@@ -370,7 +381,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="spi__slave__hs__arch_8c_source.html#l00094">94</a> of file <a class="el" href="spi__slave__hs__arch_8c_source.html">spi_slave_hs_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00107">spi_slave_hs_init()</a>.</p>
+<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00137">spi_slave_hs_init()</a>.</p>
 
 </div>
 </div>
@@ -389,7 +400,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="spi__slave__hs__arch_8c_source.html#l00098">98</a> of file <a class="el" href="spi__slave__hs__arch_8c_source.html">spi_slave_hs_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00146">SSP_ISR()</a>.</p>
+<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00184">SSP_ISR()</a>.</p>
 
 </div>
 </div>
@@ -468,7 +479,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="spi__slave__hs__arch_8c_source.html#l00097">97</a> of file <a class="el" href="spi__slave__hs__arch_8c_source.html">spi_slave_hs_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00146">SSP_ISR()</a>.</p>
+<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00184">SSP_ISR()</a>.</p>
 
 </div>
 </div>
@@ -484,7 +495,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="spi__slave__hs__arch_8c_source.html#l00060">60</a> of file <a class="el" href="spi__slave__hs__arch_8c_source.html">spi_slave_hs_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="max11040__hw_8c_source.html#l00271">max11040_hw_init()</a>, <a class="el" href="mag__micromag__fw__hw_8c_source.html#l00048">micromag_hw_init()</a>, and <a class="el" href="spi__slave__hs__arch_8c_source.html#l00107">spi_slave_hs_init()</a>.</p>
+<p>Referenced by <a class="el" href="max11040__hw_8c_source.html#l00271">max11040_hw_init()</a>, <a class="el" href="mag__micromag__fw__hw_8c_source.html#l00048">micromag_hw_init()</a>, and <a class="el" href="spi__slave__hs__arch_8c_source.html#l00137">spi_slave_hs_init()</a>.</p>
 
 </div>
 </div>
@@ -500,11 +511,144 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="spi__slave__hs__arch_8c_source.html#l00068">68</a> of file <a class="el" href="spi__slave__hs__arch_8c_source.html">spi_slave_hs_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="max11040__hw_8c_source.html#l00271">max11040_hw_init()</a>, <a class="el" href="mag__micromag__fw__hw_8c_source.html#l00048">micromag_hw_init()</a>, and <a class="el" href="spi__slave__hs__arch_8c_source.html#l00107">spi_slave_hs_init()</a>.</p>
+<p>Referenced by <a class="el" href="max11040__hw_8c_source.html#l00271">max11040_hw_init()</a>, <a class="el" href="mag__micromag__fw__hw_8c_source.html#l00048">micromag_hw_init()</a>, and <a class="el" href="spi__slave__hs__arch_8c_source.html#l00137">spi_slave_hs_init()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a3eb5625306bbd0528404bdbec1fe2cd2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int spi_slave_hs_char_available </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="spi__slave__hs__arch_8h.html#structspi__slave__hs">spi_slave_hs</a> *&#160;</td>
+          <td class="paramname"><em>p</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="spi__slave__hs__arch_8c_source.html#l00125">125</a> of file <a class="el" href="spi__slave__hs__arch_8c_source.html">spi_slave_hs_arch.c</a>.</p>
+
+<p>References <a class="el" href="spi__slave__hs__arch_8c_source.html#l00044">spi_slave_hs_rx_extract_idx</a>, and <a class="el" href="spi__slave__hs__arch_8c_source.html#l00044">spi_slave_hs_rx_insert_idx</a>.</p>
+
+<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00137">spi_slave_hs_init()</a>.</p>
+
+<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="spi__slave__hs__arch_8c_a3eb5625306bbd0528404bdbec1fe2cd2_icgraph.png" border="0" usemap="#spi__slave__hs__arch_8c_a3eb5625306bbd0528404bdbec1fe2cd2_icgraph" alt=""/></div>
+<map name="spi__slave__hs__arch_8c_a3eb5625306bbd0528404bdbec1fe2cd2_icgraph" id="spi__slave__hs__arch_8c_a3eb5625306bbd0528404bdbec1fe2cd2_icgraph">
+<area shape="rect" id="node3" href="spi__slave__hs__arch_8c.html#ad7c7233ab7697ee83d0228fe95b0c048" title="spi_slave_hs_init" alt="" coords="253,55,381,83"/><area shape="rect" id="node5" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="431,55,505,83"/><area shape="rect" id="node7" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="568,5,621,33"/><area shape="rect" id="node9" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="555,55,635,83"/><area shape="rect" id="node13" href="main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="560,106,629,134"/><area shape="rect" id="node11" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="692,55,745,83"/><area shape="rect" id="node15" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="684,106,753,134"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="adf4a72db6d67c40a88f4a518cf29e646"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int spi_slave_hs_check_free_space </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="spi__slave__hs__arch_8h.html#structspi__slave__hs">spi_slave_hs</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="spi__slave__hs__arch_8c_source.html#l00108">108</a> of file <a class="el" href="spi__slave__hs__arch_8c_source.html">spi_slave_hs_arch.c</a>.</p>
+
+<p>References <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+
+<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00137">spi_slave_hs_init()</a>.</p>
+
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="spi__slave__hs__arch_8c_adf4a72db6d67c40a88f4a518cf29e646_icgraph.png" border="0" usemap="#spi__slave__hs__arch_8c_adf4a72db6d67c40a88f4a518cf29e646_icgraph" alt=""/></div>
+<map name="spi__slave__hs__arch_8c_adf4a72db6d67c40a88f4a518cf29e646_icgraph" id="spi__slave__hs__arch_8c_adf4a72db6d67c40a88f4a518cf29e646_icgraph">
+<area shape="rect" id="node3" href="spi__slave__hs__arch_8c.html#ad7c7233ab7697ee83d0228fe95b0c048" title="spi_slave_hs_init" alt="" coords="200,55,328,83"/><area shape="rect" id="node5" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="377,55,452,83"/><area shape="rect" id="node7" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="515,5,568,33"/><area shape="rect" id="node9" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="501,55,581,83"/><area shape="rect" id="node13" href="main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="507,106,576,134"/><area shape="rect" id="node11" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="639,55,692,83"/><area shape="rect" id="node15" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="631,106,700,134"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a26f8e1cbe59fb380e629b47643ed5a1e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> spi_slave_hs_getch </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="spi__slave__hs__arch_8h.html#structspi__slave__hs">spi_slave_hs</a> *&#160;</td>
+          <td class="paramname"><em>p</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="spi__slave__hs__arch_8c_source.html#l00130">130</a> of file <a class="el" href="spi__slave__hs__arch_8c_source.html">spi_slave_hs_arch.c</a>.</p>
+
+<p>References <a class="el" href="spi__slave__hs__arch_8c_source.html#l00045">spi_slave_hs_rx_buffer</a>, <a class="el" href="spi__slave__hs__arch_8h_source.html#l00053">SPI_SLAVE_HS_RX_BUFFER_SIZE</a>, and <a class="el" href="spi__slave__hs__arch_8c_source.html#l00044">spi_slave_hs_rx_extract_idx</a>.</p>
+
+<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00137">spi_slave_hs_init()</a>.</p>
+
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="spi__slave__hs__arch_8c_a26f8e1cbe59fb380e629b47643ed5a1e_icgraph.png" border="0" usemap="#spi__slave__hs__arch_8c_a26f8e1cbe59fb380e629b47643ed5a1e_icgraph" alt=""/></div>
+<map name="spi__slave__hs__arch_8c_a26f8e1cbe59fb380e629b47643ed5a1e_icgraph" id="spi__slave__hs__arch_8c_a26f8e1cbe59fb380e629b47643ed5a1e_icgraph">
+<area shape="rect" id="node3" href="spi__slave__hs__arch_8c.html#ad7c7233ab7697ee83d0228fe95b0c048" title="spi_slave_hs_init" alt="" coords="200,55,328,83"/><area shape="rect" id="node5" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="377,55,452,83"/><area shape="rect" id="node7" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="515,5,568,33"/><area shape="rect" id="node9" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="501,55,581,83"/><area shape="rect" id="node13" href="main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="507,106,576,134"/><area shape="rect" id="node11" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="639,55,692,83"/><area shape="rect" id="node15" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="631,106,700,134"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="ad7c7233ab7697ee83d0228fe95b0c048"></a>
 <div class="memitem">
 <div class="memproto">
@@ -519,31 +663,121 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="spi__slave__hs__arch_8c_source.html#l00107">107</a> of file <a class="el" href="spi__slave__hs__arch_8c_source.html">spi_slave_hs_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="spi__slave__hs__arch_8c_source.html#l00137">137</a> of file <a class="el" href="spi__slave__hs__arch_8c_source.html">spi_slave_hs_arch.c</a>.</p>
 
-<p>References <a class="el" href="armVIC_8h_source.html#l00020">_VIC_ADDR</a>, <a class="el" href="armVIC_8h_source.html#l00019">_VIC_CNTL</a>, <a class="el" href="LPC21xx_8h_source.html#l00348">PINSEL1</a>, <a class="el" href="LPC21xx_8h_source.html#l00273">RXIM</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00103">SPI1_VIC_SLOT</a>, <a class="el" href="LPC21xx_8h_source.html#l00266">SSE</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00146">SSP_ISR()</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00092">SSP_PINSEL1_MISO</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00093">SSP_PINSEL1_MOSI</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00091">SSP_PINSEL1_SCK</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00094">SSP_PINSEL1_SSEL</a>, <a class="el" href="LPC21xx_8h_source.html#l00226">SSPCPSR</a>, <a class="el" href="LPC21xx_8h_source.html#l00222">SSPCR0</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00060">SSPCR0_VAL</a>, <a class="el" href="LPC21xx_8h_source.html#l00223">SSPCR1</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00068">SSPCR1_VAL</a>, <a class="el" href="LPC21xx_8h_source.html#l00227">SSPIMSC</a>, <a class="el" href="lpcVIC_8h_source.html#l00105">VIC_BIT</a>, <a class="el" href="lpcVIC_8h_source.html#l00102">VIC_ENABLE</a>, <a class="el" href="lpcVIC_8h_source.html#l00081">VIC_SPI1</a>, <a class="el" href="LPC21xx_8h_source.html#l00431">VICIntEnable</a>, and <a class="el" href="LPC21xx_8h_source.html#l00430">VICIntSelect</a>.</p>
+<p>References <a class="el" href="armVIC_8h_source.html#l00020">_VIC_ADDR</a>, <a class="el" href="armVIC_8h_source.html#l00019">_VIC_CNTL</a>, <a class="el" href="link__device_8h_source.html#l00048">link_device::char_available</a>, <a class="el" href="link__device_8h_source.html#l00045">link_device::check_free_space</a>, <a class="el" href="spi__slave__hs__arch_8h_source.html#l00039">spi_slave_hs::device</a>, <a class="el" href="link__device_8h_source.html#l00049">link_device::get_byte</a>, <a class="el" href="link__device_8h_source.html#l00050">link_device::periph</a>, <a class="el" href="LPC21xx_8h_source.html#l00348">PINSEL1</a>, <a class="el" href="link__device_8h_source.html#l00046">link_device::put_byte</a>, <a class="el" href="LPC21xx_8h_source.html#l00273">RXIM</a>, <a class="el" href="link__device_8h_source.html#l00047">link_device::send_message</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00103">SPI1_VIC_SLOT</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00125">spi_slave_hs_char_available()</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00108">spi_slave_hs_check_free_space()</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00130">spi_slave_hs_getch()</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00123">spi_slave_hs_send()</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00113">spi_slave_hs_transmit()</a>, <a class="el" href="LPC21xx_8h_source.html#l00266">SSE</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00184">SSP_ISR()</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00092">SSP_PINSEL1_MISO</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00093">SSP_PINSEL1_MOSI</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00091">SSP_PINSEL1_SCK</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00094">SSP_PINSEL1_SSEL</a>, <a class="el" href="LPC21xx_8h_source.html#l00226">SSPCPSR</a>, <a class="el" href="LPC21xx_8h_source.html#l00222">SSPCR0</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00060">SSPCR0_VAL</a>, <a class="el" href="LPC21xx_8h_source.html#l00223">SSPCR1</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00068">SSPCR1_VAL</a>, <a class="el" href="LPC21xx_8h_source.html#l00227">SSPIMSC</a>, <a class="el" href="lpcVIC_8h_source.html#l00105">VIC_BIT</a>, <a class="el" href="lpcVIC_8h_source.html#l00102">VIC_ENABLE</a>, <a class="el" href="lpcVIC_8h_source.html#l00081">VIC_SPI1</a>, <a class="el" href="LPC21xx_8h_source.html#l00431">VICIntEnable</a>, and <a class="el" href="LPC21xx_8h_source.html#l00430">VICIntSelect</a>.</p>
 
-<p>Referenced by <a class="el" href="mcu_8c_source.html#l00064">mcu_init()</a>.</p>
+<p>Referenced by <a class="el" href="mcu_8c_source.html#l00071">mcu_init()</a>.</p>
 
-<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="spi__slave__hs__arch_8c_ad7c7233ab7697ee83d0228fe95b0c048_cgraph.png" border="0" usemap="#spi__slave__hs__arch_8c_ad7c7233ab7697ee83d0228fe95b0c048_cgraph" alt=""/></div>
 <map name="spi__slave__hs__arch_8c_ad7c7233ab7697ee83d0228fe95b0c048_cgraph" id="spi__slave__hs__arch_8c_ad7c7233ab7697ee83d0228fe95b0c048_cgraph">
-<area shape="rect" id="node3" href="spi__slave__hs__arch_8c.html#aa105625a4ec7ecf95c0802c3edfade05" title="SSP_ISR" alt="" coords="181,5,256,33"/></map>
+<area shape="rect" id="node3" href="spi__slave__hs__arch_8c.html#a3eb5625306bbd0528404bdbec1fe2cd2" title="spi_slave_hs_char_available" alt="" coords="181,5,381,33"/><area shape="rect" id="node5" href="spi__slave__hs__arch_8c.html#adf4a72db6d67c40a88f4a518cf29e646" title="spi_slave_hs_check\l_free_space" alt="" coords="208,55,355,99"/><area shape="rect" id="node7" href="spi__slave__hs__arch_8c.html#a26f8e1cbe59fb380e629b47643ed5a1e" title="spi_slave_hs_getch" alt="" coords="209,122,353,150"/><area shape="rect" id="node9" href="spi__slave__hs__arch_8c.html#afdc765d74014fbeb12017025f36d218d" title="spi_slave_hs_send" alt="" coords="212,173,351,201"/><area shape="rect" id="node11" href="spi__slave__hs__arch_8c.html#a64121f3c186b7b388934de2b78fb3768" title="spi_slave_hs_transmit" alt="" coords="200,223,363,251"/><area shape="rect" id="node13" href="spi__slave__hs__arch_8c.html#aa105625a4ec7ecf95c0802c3edfade05" title="SSP_ISR" alt="" coords="244,274,319,302"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="spi__slave__hs__arch_8c_ad7c7233ab7697ee83d0228fe95b0c048_icgraph.png" border="0" usemap="#spi__slave__hs__arch_8c_ad7c7233ab7697ee83d0228fe95b0c048_icgraph" alt=""/></div>
 <map name="spi__slave__hs__arch_8c_ad7c7233ab7697ee83d0228fe95b0c048_icgraph" id="spi__slave__hs__arch_8c_ad7c7233ab7697ee83d0228fe95b0c048_icgraph">
-<area shape="rect" id="node3" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="183,55,257,83"/><area shape="rect" id="node5" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="320,5,373,33"/><area shape="rect" id="node7" href="main_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="main_init" alt="" coords="307,55,387,83"/><area shape="rect" id="node11" href="main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="312,106,381,134"/><area shape="rect" id="node9" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="444,55,497,83"/><area shape="rect" id="node13" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="436,106,505,134"/></map>
+<area shape="rect" id="node3" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="183,55,257,83"/><area shape="rect" id="node5" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="320,5,373,33"/><area shape="rect" id="node7" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="307,55,387,83"/><area shape="rect" id="node11" href="main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="312,106,381,134"/><area shape="rect" id="node9" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="444,55,497,83"/><area shape="rect" id="node13" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="436,106,505,134"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="afdc765d74014fbeb12017025f36d218d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void spi_slave_hs_send </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="spi__slave__hs__arch_8h.html#structspi__slave__hs">spi_slave_hs</a> *&#160;</td>
+          <td class="paramname"><em>p</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="spi__slave__hs__arch_8c_source.html#l00123">123</a> of file <a class="el" href="spi__slave__hs__arch_8c_source.html">spi_slave_hs_arch.c</a>.</p>
+
+<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00137">spi_slave_hs_init()</a>.</p>
+
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="spi__slave__hs__arch_8c_afdc765d74014fbeb12017025f36d218d_icgraph.png" border="0" usemap="#spi__slave__hs__arch_8c_afdc765d74014fbeb12017025f36d218d_icgraph" alt=""/></div>
+<map name="spi__slave__hs__arch_8c_afdc765d74014fbeb12017025f36d218d_icgraph" id="spi__slave__hs__arch_8c_afdc765d74014fbeb12017025f36d218d_icgraph">
+<area shape="rect" id="node3" href="spi__slave__hs__arch_8c.html#ad7c7233ab7697ee83d0228fe95b0c048" title="spi_slave_hs_init" alt="" coords="195,55,323,83"/><area shape="rect" id="node5" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="372,55,447,83"/><area shape="rect" id="node7" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="509,5,563,33"/><area shape="rect" id="node9" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="496,55,576,83"/><area shape="rect" id="node13" href="main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="501,106,571,134"/><area shape="rect" id="node11" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="633,55,687,83"/><area shape="rect" id="node15" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="625,106,695,134"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a64121f3c186b7b388934de2b78fb3768"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void spi_slave_hs_transmit </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="spi__slave__hs__arch_8h.html#structspi__slave__hs">spi_slave_hs</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>byte</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="spi__slave__hs__arch_8c_source.html#l00113">113</a> of file <a class="el" href="spi__slave__hs__arch_8c_source.html">spi_slave_hs_arch.c</a>.</p>
+
+<p>References <a class="el" href="spi__slave__hs__arch_8c_source.html#l00047">spi_slave_hs_tx_buffer</a>, <a class="el" href="spi__slave__hs__arch_8h_source.html#l00059">SPI_SLAVE_HS_TX_BUFFER_SIZE</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00046">spi_slave_hs_tx_extract_idx</a>, and <a class="el" href="spi__slave__hs__arch_8c_source.html#l00046">spi_slave_hs_tx_insert_idx</a>.</p>
+
+<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00137">spi_slave_hs_init()</a>.</p>
+
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="spi__slave__hs__arch_8c_a64121f3c186b7b388934de2b78fb3768_icgraph.png" border="0" usemap="#spi__slave__hs__arch_8c_a64121f3c186b7b388934de2b78fb3768_icgraph" alt=""/></div>
+<map name="spi__slave__hs__arch_8c_a64121f3c186b7b388934de2b78fb3768_icgraph" id="spi__slave__hs__arch_8c_a64121f3c186b7b388934de2b78fb3768_icgraph">
+<area shape="rect" id="node3" href="spi__slave__hs__arch_8c.html#ad7c7233ab7697ee83d0228fe95b0c048" title="spi_slave_hs_init" alt="" coords="216,55,344,83"/><area shape="rect" id="node5" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="393,55,468,83"/><area shape="rect" id="node7" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="531,5,584,33"/><area shape="rect" id="node9" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="517,55,597,83"/><area shape="rect" id="node13" href="main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="523,106,592,134"/><area shape="rect" id="node11" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="655,55,708,83"/><area shape="rect" id="node15" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="647,106,716,134"/></map>
 </div>
 </p>
 
@@ -571,26 +805,40 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="spi__slave__hs__arch_8c_source.html#l00146">146</a> of file <a class="el" href="spi__slave__hs__arch_8c_source.html">spi_slave_hs_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="spi__slave__hs__arch_8c_source.html#l00184">184</a> of file <a class="el" href="spi__slave__hs__arch_8c_source.html">spi_slave_hs_arch.c</a>.</p>
 
-<p>References <a class="el" href="armVIC_8h_source.html#l00040">ISR_ENTRY</a>, <a class="el" href="armVIC_8h_source.html#l00061">ISR_EXIT</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00045">spi_slave_hs_rx_buffer</a>, <a class="el" href="spi__slave__hs__arch_8h_source.html#l00046">SPI_SLAVE_HS_RX_BUFFER_SIZE</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00044">spi_slave_hs_rx_extract_idx</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00044">spi_slave_hs_rx_insert_idx</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00047">spi_slave_hs_tx_buffer</a>, <a class="el" href="spi__slave__hs__arch_8h_source.html#l00059">SPI_SLAVE_HS_TX_BUFFER_SIZE</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00046">spi_slave_hs_tx_extract_idx</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00046">spi_slave_hs_tx_insert_idx</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00098">SSP_Read</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00097">SSP_Write</a>, and <a class="el" href="LPC21xx_8h_source.html#l00436">VICVectAddr</a>.</p>
+<p>References <a class="el" href="armVIC_8h_source.html#l00040">ISR_ENTRY</a>, <a class="el" href="armVIC_8h_source.html#l00061">ISR_EXIT</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00045">spi_slave_hs_rx_buffer</a>, <a class="el" href="spi__slave__hs__arch_8h_source.html#l00053">SPI_SLAVE_HS_RX_BUFFER_SIZE</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00044">spi_slave_hs_rx_extract_idx</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00044">spi_slave_hs_rx_insert_idx</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00047">spi_slave_hs_tx_buffer</a>, <a class="el" href="spi__slave__hs__arch_8h_source.html#l00059">SPI_SLAVE_HS_TX_BUFFER_SIZE</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00046">spi_slave_hs_tx_extract_idx</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00046">spi_slave_hs_tx_insert_idx</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00098">SSP_Read</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00097">SSP_Write</a>, and <a class="el" href="LPC21xx_8h_source.html#l00436">VICVectAddr</a>.</p>
 
-<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00107">spi_slave_hs_init()</a>.</p>
+<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00137">spi_slave_hs_init()</a>.</p>
 
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="spi__slave__hs__arch_8c_aa105625a4ec7ecf95c0802c3edfade05_icgraph.png" border="0" usemap="#spi__slave__hs__arch_8c_aa105625a4ec7ecf95c0802c3edfade05_icgraph" alt=""/></div>
 <map name="spi__slave__hs__arch_8c_aa105625a4ec7ecf95c0802c3edfade05_icgraph" id="spi__slave__hs__arch_8c_aa105625a4ec7ecf95c0802c3edfade05_icgraph">
-<area shape="rect" id="node3" href="spi__slave__hs__arch_8c.html#ad7c7233ab7697ee83d0228fe95b0c048" title="spi_slave_hs_init" alt="" coords="128,55,256,83"/><area shape="rect" id="node5" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="305,55,380,83"/><area shape="rect" id="node7" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="443,5,496,33"/><area shape="rect" id="node9" href="main_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="main_init" alt="" coords="429,55,509,83"/><area shape="rect" id="node13" href="main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="435,106,504,134"/><area shape="rect" id="node11" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="567,55,620,83"/><area shape="rect" id="node15" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="559,106,628,134"/></map>
+<area shape="rect" id="node3" href="spi__slave__hs__arch_8c.html#ad7c7233ab7697ee83d0228fe95b0c048" title="spi_slave_hs_init" alt="" coords="128,55,256,83"/><area shape="rect" id="node5" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="305,55,380,83"/><area shape="rect" id="node7" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="443,5,496,33"/><area shape="rect" id="node9" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="429,55,509,83"/><area shape="rect" id="node13" href="main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="435,106,504,134"/><area shape="rect" id="node11" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="567,55,620,83"/><area shape="rect" id="node15" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="559,106,628,134"/></map>
 </div>
 </p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a64590809afb3e219039ec626ec8a827c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="spi__slave__hs__arch_8h.html#structspi__slave__hs">spi_slave_hs</a> <a class="el" href="spi__slave__hs__arch_8h.html#structspi__slave__hs">spi_slave_hs</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="spi__slave__hs__arch_8c_source.html#l00041">41</a> of file <a class="el" href="spi__slave__hs__arch_8c_source.html">spi_slave_hs_arch.c</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a037a5e7e1028d558b8a450c25ebed7ea"></a>
 <div class="memitem">
 <div class="memproto">
@@ -603,7 +851,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="spi__slave__hs__arch_8c_source.html#l00045">45</a> of file <a class="el" href="spi__slave__hs__arch_8c_source.html">spi_slave_hs_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00146">SSP_ISR()</a>.</p>
+<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00130">spi_slave_hs_getch()</a>, and <a class="el" href="spi__slave__hs__arch_8c_source.html#l00184">SSP_ISR()</a>.</p>
 
 </div>
 </div>
@@ -619,7 +867,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="spi__slave__hs__arch_8c_source.html#l00044">44</a> of file <a class="el" href="spi__slave__hs__arch_8c_source.html">spi_slave_hs_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00146">SSP_ISR()</a>.</p>
+<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00125">spi_slave_hs_char_available()</a>, <a class="el" href="spi__slave__hs__arch_8c_source.html#l00130">spi_slave_hs_getch()</a>, and <a class="el" href="spi__slave__hs__arch_8c_source.html#l00184">SSP_ISR()</a>.</p>
 
 </div>
 </div>
@@ -635,7 +883,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="spi__slave__hs__arch_8c_source.html#l00044">44</a> of file <a class="el" href="spi__slave__hs__arch_8c_source.html">spi_slave_hs_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00146">SSP_ISR()</a>.</p>
+<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00125">spi_slave_hs_char_available()</a>, and <a class="el" href="spi__slave__hs__arch_8c_source.html#l00184">SSP_ISR()</a>.</p>
 
 </div>
 </div>
@@ -651,7 +899,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="spi__slave__hs__arch_8c_source.html#l00047">47</a> of file <a class="el" href="spi__slave__hs__arch_8c_source.html">spi_slave_hs_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00146">SSP_ISR()</a>.</p>
+<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00113">spi_slave_hs_transmit()</a>, and <a class="el" href="spi__slave__hs__arch_8c_source.html#l00184">SSP_ISR()</a>.</p>
 
 </div>
 </div>
@@ -667,7 +915,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="spi__slave__hs__arch_8c_source.html#l00046">46</a> of file <a class="el" href="spi__slave__hs__arch_8c_source.html">spi_slave_hs_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00146">SSP_ISR()</a>.</p>
+<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00113">spi_slave_hs_transmit()</a>, and <a class="el" href="spi__slave__hs__arch_8c_source.html#l00184">SSP_ISR()</a>.</p>
 
 </div>
 </div>
@@ -683,7 +931,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="spi__slave__hs__arch_8c_source.html#l00046">46</a> of file <a class="el" href="spi__slave__hs__arch_8c_source.html">spi_slave_hs_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00146">SSP_ISR()</a>.</p>
+<p>Referenced by <a class="el" href="spi__slave__hs__arch_8c_source.html#l00113">spi_slave_hs_transmit()</a>, and <a class="el" href="spi__slave__hs__arch_8c_source.html#l00184">SSP_ISR()</a>.</p>
 
 </div>
 </div>
@@ -693,7 +941,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_3f7617cb4a5e4fe5cc816b7b3bbdea3a.html">lpc21</a></li><li class="navelem"><a class="el" href="dir_52b0b5e73fdd6096ec81364edad665ef.html">mcu_periph</a></li><li class="navelem"><a class="el" href="spi__slave__hs__arch_8c.html">spi_slave_hs_arch.c</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:04:50 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:10 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

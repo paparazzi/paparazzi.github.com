@@ -6,8 +6,7 @@ var imu__analog_8h =
     [ "IMU_ACCEL_Y_SENS_NUM", "imu__analog_8h.html#a4afc2b22683312436f746d69fc451bb1", null ],
     [ "IMU_ACCEL_Z_SENS_DEN", "imu__analog_8h.html#ae62fbd99f815974f80f911bfa1b1d514", null ],
     [ "IMU_ACCEL_Z_SENS_NUM", "imu__analog_8h.html#afd17b3bbedb8e03a9a4f27d21b8d507e", null ],
+    [ "ImuEvent", "imu__analog_8h.html#ac283565c6dd4a209dac392371e296149", null ],
     [ "NB_ANALOG_IMU_ADC", "imu__analog_8h.html#aa951d9420e2582f372f30512a5c47940", null ],
-    [ "ImuEvent", "imu__analog_8h.html#a9d95db588addd0a03f6e7e749fbb032a", null ],
-    [ "analog_imu_available", "imu__analog_8h.html#a7013c319e78dcd6f470fb3d85fa3ba6b", null ],
     [ "imu_overrun", "imu__analog_8h.html#a89ed74a28874817abaa2548011a70594", null ]
 ];

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.4.0_stable-0-g24683db</span>
+   &#160;<span id="projectnumber">v5.7_devel-348-gf277479-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('uart__print_8h.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -106,13 +106,15 @@ $(document).ready(function(){initNavTree('uart__print_8h.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">uart_print.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="usb__serial_8h_source.html">mcu_periph/usb_serial.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="link__device_8h_source.html">mcu_periph/link_device.h</a>&quot;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for uart_print.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -120,7 +122,7 @@ $(document).ready(function(){initNavTree('uart__print_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="uart__print_8h__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2datalink_2uart__print_8h" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2datalink_2uart__print_8h" id="sw_2airborne_2subsystems_2datalink_2uart__print_8h">
-<area shape="rect" id="node3" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="204,99,343,127"/><area shape="rect" id="node13" href="usb__serial_8h.html" title="arch independent USB API " alt="" coords="367,99,543,127"/><area shape="rect" id="node7" href="link__device_8h.html" title="generic device header " alt="" coords="203,177,384,205"/><area shape="rect" id="node9" href="inttypes_8h.html" title="inttypes.h" alt="" coords="353,254,439,282"/></map>
+<area shape="rect" id="node3" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="45,99,184,127"/><area shape="rect" id="node7" href="link__device_8h.html" title="generic device header " alt="" coords="331,177,512,205"/><area shape="rect" id="node13" href="usb__serial_8h.html" title="arch independent USB API " alt="" coords="208,99,384,127"/><area shape="rect" id="node9" href="inttypes_8h.html" title="inttypes.h" alt="" coords="315,254,400,282"/></map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -150,6 +152,17 @@ Macros</h2></td></tr>
 <tr class="separator:a377e6addcadb04d6b444b87b4f0a46a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51d92bac330e91e4fb2273c92c345b5a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uart__print_8h.html#a51d92bac330e91e4fb2273c92c345b5a">UsbSPrintString</a>(s)&#160;&#160;&#160;<a class="el" href="uart__print_8h.html#af958f96d5fb8818724ccb9454d973113">_PrintString</a>(<a class="el" href="usb__serial_8h.html#a19a213d00cf249a4d4d60dbf1a9907d3">VCOM_putchar</a>, s)</td></tr>
 <tr class="separator:a51d92bac330e91e4fb2273c92c345b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a62d9500eeb38ea57c6beab7e759e1f9d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uart__print_8h.html#a62d9500eeb38ea57c6beab7e759e1f9d">print_string</a> (struct <a class="el" href="link__device_8h.html#structlink__device">link_device</a> *<a class="el" href="stereo__avoid_8c.html#a9f087ebe99b13f4c1e6696f2b3c20dea">dev</a>, char *s)</td></tr>
+<tr class="separator:a62d9500eeb38ea57c6beab7e759e1f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a998b602b98b830cacf55324653d0f6a2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uart__print_8h.html#a998b602b98b830cacf55324653d0f6a2">print_hex</a> (struct <a class="el" href="link__device_8h.html#structlink__device">link_device</a> *<a class="el" href="stereo__avoid_8c.html#a9f087ebe99b13f4c1e6696f2b3c20dea">dev</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> c)</td></tr>
+<tr class="separator:a998b602b98b830cacf55324653d0f6a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f025990adb319673a9ead808c8ff478"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uart__print_8h.html#a2f025990adb319673a9ead808c8ff478">print_hex16</a> (struct <a class="el" href="link__device_8h.html#structlink__device">link_device</a> *<a class="el" href="stereo__avoid_8c.html#a9f087ebe99b13f4c1e6696f2b3c20dea">dev</a>, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> c)</td></tr>
+<tr class="separator:a2f025990adb319673a9ead808c8ff478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ed064767a1d6d97a2f159cc86fcb4d8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uart__print_8h.html#a2ed064767a1d6d97a2f159cc86fcb4d8">print_hex32</a> (struct <a class="el" href="link__device_8h.html#structlink__device">link_device</a> *<a class="el" href="stereo__avoid_8c.html#a9f087ebe99b13f4c1e6696f2b3c20dea">dev</a>, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> c)</td></tr>
+<tr class="separator:a2ed064767a1d6d97a2f159cc86fcb4d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="aff81ddae4ecb821b8988bc67f85c9bfb"></a>
@@ -175,16 +188,16 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{           \</div>
+<b>Value:</b><div class="fragment"><div class="line">{     \</div>
 <div class="line">    const <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> hex[16] = { <span class="charliteral">&#39;0&#39;</span>, <span class="charliteral">&#39;1&#39;</span>, <span class="charliteral">&#39;2&#39;</span>, <span class="charliteral">&#39;3&#39;</span>, <span class="charliteral">&#39;4&#39;</span>, <span class="charliteral">&#39;5&#39;</span>, <span class="charliteral">&#39;6&#39;</span>, <span class="charliteral">&#39;7&#39;</span>,   \</div>
 <div class="line">                              <span class="charliteral">&#39;8&#39;</span>, <span class="charliteral">&#39;9&#39;</span>, <span class="charliteral">&#39;A&#39;</span>, <span class="charliteral">&#39;B&#39;</span>, <span class="charliteral">&#39;C&#39;</span>, <span class="charliteral">&#39;D&#39;</span>, <span class="charliteral">&#39;E&#39;</span>, <span class="charliteral">&#39;F&#39;</span> }; <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">\</a></div>
-<div class="line"><a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">    uint8_t</a> high = (c &amp; 0xF0)&gt;&gt;4;         <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">\</a></div>
-<div class="line"><a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">    uint8_t</a> low  = c &amp; 0x0F;            \</div>
+<div class="line"><a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">    uint8_t</a> high = (c &amp; 0xF0)&gt;&gt;4;   <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">\</a></div>
+<div class="line"><a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">    uint8_t</a> low  = c &amp; 0x0F;        \</div>
 <div class="line">    out_fun(hex[high]);             \</div>
 <div class="line">    out_fun(hex[low]);              \</div>
-<div class="line">  }                 \</div>
+<div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="uart__print_8h_source.html#l00036">36</a> of file <a class="el" href="uart__print_8h_source.html">uart_print.h</a>.</p>
+<p>Definition at line <a class="el" href="uart__print_8h_source.html#l00047">47</a> of file <a class="el" href="uart__print_8h_source.html">uart_print.h</a>.</p>
 
 </div>
 </div>
@@ -211,14 +224,14 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{      <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">\</a></div>
-<div class="line"><a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">    uint8_t</a> high16 = (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>)(c&gt;&gt;8);     <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">\</a></div>
-<div class="line"><a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">    uint8_t</a> low16  = (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>)(c);      \</div>
+<b>Value:</b><div class="fragment"><div class="line">{    <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">\</a></div>
+<div class="line"><a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">    uint8_t</a> high16 = (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>)(c&gt;&gt;8); <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">\</a></div>
+<div class="line"><a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">    uint8_t</a> low16  = (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>)(c);    \</div>
 <div class="line">    _PrintHex(out_fun, high16);       \</div>
 <div class="line">    _PrintHex(out_fun, low16);        \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="uart__print_8h_source.html#l00045">45</a> of file <a class="el" href="uart__print_8h_source.html">uart_print.h</a>.</p>
+<p>Definition at line <a class="el" href="uart__print_8h_source.html#l00067">67</a> of file <a class="el" href="uart__print_8h_source.html">uart_print.h</a>.</p>
 
 </div>
 </div>
@@ -245,14 +258,14 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{      <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">\</a></div>
-<div class="line"><a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">    uint16_t</a> high32 = (<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(c&gt;&gt;16);      <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">\</a></div>
+<b>Value:</b><div class="fragment"><div class="line">{        <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">\</a></div>
+<div class="line"><a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">    uint16_t</a> high32 = (<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(c&gt;&gt;16);  <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">\</a></div>
 <div class="line"><a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">    uint16_t</a> low32  = (<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>)(c);      \</div>
-<div class="line">    _PrintHex16(out_fun, high32);       \</div>
-<div class="line">    _PrintHex16(out_fun, low32);        \</div>
+<div class="line">    _PrintHex16(out_fun, high32);         \</div>
+<div class="line">    _PrintHex16(out_fun, low32);          \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="uart__print_8h_source.html#l00052">52</a> of file <a class="el" href="uart__print_8h_source.html">uart_print.h</a>.</p>
+<p>Definition at line <a class="el" href="uart__print_8h_source.html#l00082">82</a> of file <a class="el" href="uart__print_8h_source.html">uart_print.h</a>.</p>
 
 </div>
 </div>
@@ -279,15 +292,15 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{ <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">\</a></div>
+<b>Value:</b><div class="fragment"><div class="line">{  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">\</a></div>
 <div class="line"><a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">    uint8_t</a> i = 0;                  \</div>
 <div class="line">    while (s[i]) {                  \</div>
-<div class="line">      out_fun(s[i]);      \</div>
+<div class="line">      out_fun(s[i]);                \</div>
 <div class="line">      i++;                          \</div>
 <div class="line">    }                               \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="uart__print_8h_source.html#l00028">28</a> of file <a class="el" href="uart__print_8h_source.html">uart_print.h</a>.</p>
+<p>Definition at line <a class="el" href="uart__print_8h_source.html#l00030">30</a> of file <a class="el" href="uart__print_8h_source.html">uart_print.h</a>.</p>
 
 </div>
 </div>
@@ -305,7 +318,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uart__print_8h_source.html#l00122">122</a> of file <a class="el" href="uart__print_8h_source.html">uart_print.h</a>.</p>
+<p>Definition at line <a class="el" href="uart__print_8h_source.html#l00160">160</a> of file <a class="el" href="uart__print_8h_source.html">uart_print.h</a>.</p>
 
 </div>
 </div>
@@ -323,7 +336,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uart__print_8h_source.html#l00123">123</a> of file <a class="el" href="uart__print_8h_source.html">uart_print.h</a>.</p>
+<p>Definition at line <a class="el" href="uart__print_8h_source.html#l00161">161</a> of file <a class="el" href="uart__print_8h_source.html">uart_print.h</a>.</p>
 
 </div>
 </div>
@@ -341,7 +354,221 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="uart__print_8h_source.html#l00124">124</a> of file <a class="el" href="uart__print_8h_source.html">uart_print.h</a>.</p>
+<p>Definition at line <a class="el" href="uart__print_8h_source.html#l00162">162</a> of file <a class="el" href="uart__print_8h_source.html">uart_print.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a998b602b98b830cacf55324653d0f6a2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void print_hex </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__device_8h.html#structlink__device">link_device</a> *&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="uart__print_8h_source.html#l00056">56</a> of file <a class="el" href="uart__print_8h_source.html">uart_print.h</a>.</p>
+
+<p>References <a class="el" href="link__device_8h_source.html#l00050">link_device::periph</a>, and <a class="el" href="link__device_8h_source.html#l00046">link_device::put_byte</a>.</p>
+
+<p>Referenced by <a class="el" href="uart__print_8h_source.html#l00074">print_hex16()</a>.</p>
+
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="uart__print_8h_a998b602b98b830cacf55324653d0f6a2_icgraph.png" border="0" usemap="#uart__print_8h_a998b602b98b830cacf55324653d0f6a2_icgraph" alt=""/></div>
+<map name="uart__print_8h_a998b602b98b830cacf55324653d0f6a2_icgraph" id="uart__print_8h_a998b602b98b830cacf55324653d0f6a2_icgraph">
+<area shape="rect" id="node3" href="uart__print_8h.html#a2f025990adb319673a9ead808c8ff478" title="print_hex16" alt="" coords="137,30,233,58"/><area shape="rect" id="node5" href="uart__print_8h.html#a2ed064767a1d6d97a2f159cc86fcb4d8" title="print_hex32" alt="" coords="284,5,380,33"/><area shape="rect" id="node7" href="xbee_8h.html#a964a1e8461e9c1187e5d69f521e5e107" title="Initialisation in API mode and setting of the local address FIXME: busy wait. " alt="" coords="293,55,371,83"/><area shape="rect" id="node9" href="downlink_8h.html#afd49e1738cc6ad57218b944dcb94f73b" title="downlink_init" alt="" coords="431,55,532,83"/><area shape="rect" id="node11" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="589,30,653,58"/><area shape="rect" id="node15" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="581,81,661,109"/><area shape="rect" id="node13" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="711,30,780,58"/><area shape="rect" id="node17" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="719,81,772,109"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f025990adb319673a9ead808c8ff478"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void print_hex16 </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__device_8h.html#structlink__device">link_device</a> *&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="uart__print_8h_source.html#l00074">74</a> of file <a class="el" href="uart__print_8h_source.html">uart_print.h</a>.</p>
+
+<p>References <a class="el" href="uart__print_8h_source.html#l00056">print_hex()</a>.</p>
+
+<p>Referenced by <a class="el" href="uart__print_8h_source.html#l00089">print_hex32()</a>, and <a class="el" href="xbee_8c_source.html#l00165">xbee_init()</a>.</p>
+
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="uart__print_8h_a2f025990adb319673a9ead808c8ff478_cgraph.png" border="0" usemap="#uart__print_8h_a2f025990adb319673a9ead808c8ff478_cgraph" alt=""/></div>
+<map name="uart__print_8h_a2f025990adb319673a9ead808c8ff478_cgraph" id="uart__print_8h_a2f025990adb319673a9ead808c8ff478_cgraph">
+<area shape="rect" id="node3" href="uart__print_8h.html#a998b602b98b830cacf55324653d0f6a2" title="print_hex" alt="" coords="153,5,233,33"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="uart__print_8h_a2f025990adb319673a9ead808c8ff478_icgraph.png" border="0" usemap="#uart__print_8h_a2f025990adb319673a9ead808c8ff478_icgraph" alt=""/></div>
+<map name="uart__print_8h_a2f025990adb319673a9ead808c8ff478_icgraph" id="uart__print_8h_a2f025990adb319673a9ead808c8ff478_icgraph">
+<area shape="rect" id="node3" href="uart__print_8h.html#a2ed064767a1d6d97a2f159cc86fcb4d8" title="print_hex32" alt="" coords="153,5,249,33"/><area shape="rect" id="node5" href="xbee_8h.html#a964a1e8461e9c1187e5d69f521e5e107" title="Initialisation in API mode and setting of the local address FIXME: busy wait. " alt="" coords="163,55,240,83"/><area shape="rect" id="node7" href="downlink_8h.html#afd49e1738cc6ad57218b944dcb94f73b" title="downlink_init" alt="" coords="300,55,401,83"/><area shape="rect" id="node9" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="459,30,523,58"/><area shape="rect" id="node13" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="451,81,531,109"/><area shape="rect" id="node11" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="580,30,649,58"/><area shape="rect" id="node15" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="588,81,641,109"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2ed064767a1d6d97a2f159cc86fcb4d8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void print_hex32 </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__device_8h.html#structlink__device">link_device</a> *&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="uart__print_8h_source.html#l00089">89</a> of file <a class="el" href="uart__print_8h_source.html">uart_print.h</a>.</p>
+
+<p>References <a class="el" href="uart__print_8h_source.html#l00074">print_hex16()</a>.</p>
+
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="uart__print_8h_a2ed064767a1d6d97a2f159cc86fcb4d8_cgraph.png" border="0" usemap="#uart__print_8h_a2ed064767a1d6d97a2f159cc86fcb4d8_cgraph" alt=""/></div>
+<map name="uart__print_8h_a2ed064767a1d6d97a2f159cc86fcb4d8_cgraph" id="uart__print_8h_a2ed064767a1d6d97a2f159cc86fcb4d8_cgraph">
+<area shape="rect" id="node3" href="uart__print_8h.html#a2f025990adb319673a9ead808c8ff478" title="print_hex16" alt="" coords="153,5,249,33"/><area shape="rect" id="node5" href="uart__print_8h.html#a998b602b98b830cacf55324653d0f6a2" title="print_hex" alt="" coords="300,5,380,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a62d9500eeb38ea57c6beab7e759e1f9d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void print_string </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__device_8h.html#structlink__device">link_device</a> *&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>s</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="uart__print_8h_source.html#l00038">38</a> of file <a class="el" href="uart__print_8h_source.html">uart_print.h</a>.</p>
+
+<p>References <a class="el" href="link__device_8h_source.html#l00050">link_device::periph</a>, and <a class="el" href="link__device_8h_source.html#l00046">link_device::put_byte</a>.</p>
+
+<p>Referenced by <a class="el" href="xbee_8c_source.html#l00165">xbee_init()</a>, and <a class="el" href="xbee_8c_source.html#l00139">xbee_try_to_enter_api()</a>.</p>
+
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="uart__print_8h_a62d9500eeb38ea57c6beab7e759e1f9d_icgraph.png" border="0" usemap="#uart__print_8h_a62d9500eeb38ea57c6beab7e759e1f9d_icgraph" alt=""/></div>
+<map name="uart__print_8h_a62d9500eeb38ea57c6beab7e759e1f9d_icgraph" id="uart__print_8h_a62d9500eeb38ea57c6beab7e759e1f9d_icgraph">
+<area shape="rect" id="node3" href="xbee_8h.html#a964a1e8461e9c1187e5d69f521e5e107" title="Initialisation in API mode and setting of the local address FIXME: busy wait. " alt="" coords="364,30,441,58"/><area shape="rect" id="node15" href="xbee_8c.html#a4e4f261d50533ecba1a7fa4246ecf295" title="xbee_try_to_enter_api" alt="" coords="151,55,313,83"/><area shape="rect" id="node5" href="downlink_8h.html#afd49e1738cc6ad57218b944dcb94f73b" title="downlink_init" alt="" coords="492,30,593,58"/><area shape="rect" id="node7" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="651,5,715,33"/><area shape="rect" id="node11" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="643,55,723,83"/><area shape="rect" id="node9" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="772,5,841,33"/><area shape="rect" id="node13" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="780,55,833,83"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -351,7 +578,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_6567a5a7be991f15b7628b3b0eb084bd.html">datalink</a></li><li class="navelem"><a class="el" href="uart__print_8h.html">uart_print.h</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 08:05:13 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 3 2015 06:01:34 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

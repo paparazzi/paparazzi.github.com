@@ -2,6 +2,7 @@ var searchData=
 [
   ['generic_20adc',['Generic ADC',['../module__adc_generic.html',1,'onboard_modules']]],
   ['get_20sonar_20values_20from_20abi_20and_20store_20last_20and_20filtered_20values',['Get sonar values from ABI and store last and filtered values',['../module__agl_dist.html',1,'onboard_modules']]],
+  ['geo_2dreference_20computer_20vision_20detections',['Geo-reference computer vision detections',['../module__cv_georeference.html',1,'onboard_modules']]],
   ['gain_20set_20interpolation',['Gain set interpolation',['../module__gain_scheduling.html',1,'onboard_modules']]],
   ['gas_20engine_20idle',['Gas Engine Idle',['../module__gas_engine_idle.html',1,'onboard_modules']]],
   ['geiger_20counter_20sensor',['Geiger counter sensor',['../module__geiger_counter.html',1,'onboard_modules']]],

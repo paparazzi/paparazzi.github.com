@@ -1,6 +1,9 @@
 var pprz__geodetic__float_8c =
 [
-    [ "complex", "structcomplex.html", "structcomplex" ],
+    [ "complex", "pprz__geodetic__float_8c.html#structcomplex", [
+      [ "im", "pprz__geodetic__float_8c.html#a7444343ae7b282212ee23c1640c77001", null ],
+      [ "re", "pprz__geodetic__float_8c.html#a77a6e028ddaf37c540fe22dad47f61c1", null ]
+    ] ],
     [ "CAdd", "pprz__geodetic__float_8c.html#a2046a6c42d3a5eace70002925d6d4b91", null ],
     [ "CExp", "pprz__geodetic__float_8c.html#a1ad45087cd1b933789c50dc376ac2f1b", null ],
     [ "CI", "pprz__geodetic__float_8c.html#a671737b382191d58f5a35e724a394079", null ],

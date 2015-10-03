@@ -18,7 +18,7 @@ var dir_12d6ec7aac5a4a9b8cee17e35022d7c7 =
     [ "ahrs.h", "ahrs_8h.html", "ahrs_8h" ],
     [ "commands.c", "commands_8c.html", "commands_8c" ],
     [ "commands.h", "commands_8h.html", "commands_8h" ],
-    [ "electrical.c", "subsystems_2electrical_8c.html", "subsystems_2electrical_8c" ],
+    [ "electrical.c", "electrical_8c.html", "electrical_8c" ],
     [ "electrical.h", "electrical_8h.html", "electrical_8h" ],
     [ "gps.c", "gps_8c.html", "gps_8c" ],
     [ "gps.h", "gps_8h.html", "gps_8h" ],

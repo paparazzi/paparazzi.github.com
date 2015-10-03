@@ -9,6 +9,5 @@ var imu_8c =
     [ "imu_SetBodyToImuPhi", "imu_8c.html#ac50fba336ca2c337f240bab0db44f64e", null ],
     [ "imu_SetBodyToImuPsi", "imu_8c.html#a88ec31da12a499ee7b47fe11b4ccfa4e", null ],
     [ "imu_SetBodyToImuTheta", "imu_8c.html#a3e25b56c5719a23e494568696083459e", null ],
-    [ "imu", "imu_8c.html#a77b76ed533bc56f50d714f8958dd26cc", null ],
-    [ "imuf", "imu_8c.html#a0b385ab021e28ab712d6992299d9a6cf", null ]
+    [ "imu", "imu_8c.html#a77b76ed533bc56f50d714f8958dd26cc", null ]
 ];

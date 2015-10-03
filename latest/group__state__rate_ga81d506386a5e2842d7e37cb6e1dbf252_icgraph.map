@@ -1,22 +1,34 @@
 <map id="stateSetBodyRates_f" name="stateSetBodyRates_f">
-<area shape="rect" id="node3" href="$ahrs__infrared_8c.html#a4e5064cff25b95f0631d5184d779ee43" title="Propagation. " alt="" coords="248,5,371,33"/>
-<area shape="rect" id="node5" href="$modules_2ins_2ins__arduimu__basic_8c.html#a6f80e69d733254b945f208647409073f" title="ArduIMU_event" alt="" coords="251,55,368,83"/>
-<area shape="rect" id="node7" href="$arch_2sim_2modules_2ins_2ins__arduimu__basic_8c.html#a9084095772fef629b46485b78cb1fd7a" title="ArduIMU_periodic" alt="" coords="243,106,376,134"/>
-<area shape="rect" id="node9" href="$ahrs__float__cmpl_8c.html#a2e90a05e5a4ca369d0308bb72e68171d" title="Compute body orientation and rates from imu orientation and rates. " alt="" coords="213,157,405,201"/>
-<area shape="rect" id="node15" href="$ahrs__gx3_8h.html#acb7a83c7954119b08e90b88661889883" title="gx3_packet_read_message" alt="" coords="211,223,408,251"/>
-<area shape="rect" id="node19" href="$ins__module_8h.html#a8cb976f9e02352af6815c51a4b18faec" title="parse_ins_msg" alt="" coords="251,274,368,302"/>
-<area shape="rect" id="node21" href="$ins__vn100_8h.html#a579de7597d4a8e23e8577ca9745c385d" title="vn100_event_task" alt="" coords="499,278,637,306"/>
-<area shape="rect" id="node23" href="$ahrs__float__dcm_8c.html#af37e584c40cc004e4db7af1151ff659e" title="set_body_orientation\l_and_rates" alt="" coords="232,375,387,419"/>
-<area shape="rect" id="node31" href="$ahrs__float__mlkf_8c.html#abea8ede7c8ebc5179487d3464ab513bb" title="Compute body orientation and rates from imu orientation and rates. " alt="" coords="213,442,405,470"/>
-<area shape="rect" id="node37" href="$ahrs__sim_8h.html#a631ce4de5e99850af24482335a960acf" title="update_ahrs_from_sim" alt="" coords="225,535,393,563"/>
-<area shape="rect" id="node11" href="$ahrs__float__cmpl_8c.html#a81e17b09f47068c02c345da1523f589b" title="Aligns the AHRS. " alt="" coords="525,118,611,146"/>
-<area shape="rect" id="node13" href="$ahrs__float__cmpl_8c.html#a4e5064cff25b95f0631d5184d779ee43" title="Propagation. " alt="" coords="507,169,629,197"/>
-<area shape="rect" id="node17" href="$ahrs__gx3_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="527,223,609,251"/>
-<area shape="rect" id="node25" href="$ahrs__float__dcm_8c.html#a81e17b09f47068c02c345da1523f589b" title="Aligns the AHRS. " alt="" coords="525,333,611,361"/>
-<area shape="rect" id="node27" href="$ahrs__float__dcm_8c.html#a682bd53351651a47152def7839ecdbd2" title="compute_ahrs_representations" alt="" coords="457,383,679,411"/>
-<area shape="rect" id="node29" href="$ahrs__float__dcm_8c.html#a4e5064cff25b95f0631d5184d779ee43" title="Propagation. " alt="" coords="728,383,851,411"/>
-<area shape="rect" id="node33" href="$ahrs__float__mlkf_8c.html#a81e17b09f47068c02c345da1523f589b" title="Aligns the AHRS. " alt="" coords="525,434,611,462"/>
-<area shape="rect" id="node35" href="$ahrs__float__mlkf_8c.html#a4e5064cff25b95f0631d5184d779ee43" title="Propagation. " alt="" coords="507,485,629,513"/>
-<area shape="rect" id="node39" href="$ahrs__sim_8c.html#a81e17b09f47068c02c345da1523f589b" title="Aligns the AHRS. " alt="" coords="525,535,611,563"/>
-<area shape="rect" id="node41" href="$ahrs__sim_8c.html#a4e5064cff25b95f0631d5184d779ee43" title="Propagation. " alt="" coords="507,586,629,614"/>
+<area shape="rect" id="node3" href="$modules_2ins_2ins__arduimu__basic_8c.html#a6f80e69d733254b945f208647409073f" title="ArduIMU_event" alt="" coords="251,5,368,33"/>
+<area shape="rect" id="node5" href="$arch_2sim_2modules_2ins_2ins__arduimu__basic_8c.html#a9084095772fef629b46485b78cb1fd7a" title="ArduIMU_periodic" alt="" coords="243,55,376,83"/>
+<area shape="rect" id="node7" href="$ahrs__float__cmpl__wrapper_8c.html#a2e90a05e5a4ca369d0308bb72e68171d" title="Compute body orientation and rates from imu orientation and rates. " alt="" coords="213,106,405,150"/>
+<area shape="rect" id="node19" href="$ahrs__gx3_8h.html#acb7a83c7954119b08e90b88661889883" title="gx3_packet_read_message" alt="" coords="211,173,408,201"/>
+<area shape="rect" id="node23" href="$ins__float__invariant_8h.html#a31039d880986ce20c2e10c812684982e" title="ins_float_invariant\l_propagate" alt="" coords="241,223,377,267"/>
+<area shape="rect" id="node29" href="$ins__vectornav_8h.html#a5e1e0a3cd2eead4dc89bec75e33e5618" title="Propagate the received states into the vehicle state machine. " alt="" coords="219,290,400,318"/>
+<area shape="rect" id="node35" href="$ins__module_8h.html#a8cb976f9e02352af6815c51a4b18faec" title="parse_ins_msg" alt="" coords="251,341,368,369"/>
+<area shape="rect" id="node39" href="$ins__vn100_8h.html#a579de7597d4a8e23e8577ca9745c385d" title="vn100_event_task" alt="" coords="467,399,605,427"/>
+<area shape="rect" id="node41" href="$ahrs__float__dcm__wrapper_8c.html#af37e584c40cc004e4db7af1151ff659e" title="Compute body orientation and rates from imu orientation and rates. " alt="" coords="232,442,387,486"/>
+<area shape="rect" id="node50" href="$ahrs__float__mlkf__wrapper_8c.html#abea8ede7c8ebc5179487d3464ab513bb" title="Compute body orientation and rates from imu orientation and rates. " alt="" coords="213,602,405,630"/>
+<area shape="rect" id="node65" href="$ahrs__sim_8h.html#a631ce4de5e99850af24482335a960acf" title="update_ahrs_from_sim" alt="" coords="225,703,393,731"/>
+<area shape="rect" id="node9" href="$ahrs__float__cmpl__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="493,13,579,41"/>
+<area shape="rect" id="node13" href="$ahrs__float__cmpl__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="503,63,569,91"/>
+<area shape="rect" id="node16" href="$ahrs__float__cmpl__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="500,114,572,142"/>
+<area shape="rect" id="node11" href="$ahrs__float__cmpl__wrapper_8h.html#aa47cd2e2f95362dd732bac1f275344e0" title="ahrs_fc_register" alt="" coords="696,63,819,91"/>
+<area shape="rect" id="node21" href="$ahrs__gx3_8h.html#a1caa6f284af9f14d111ea11166236bf4" title="ImuEvent" alt="" coords="495,165,577,193"/>
+<area shape="rect" id="node25" href="$ins__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ins_float_invariant_propagate on new gyro measurements. " alt="" coords="500,215,572,243"/>
+<area shape="rect" id="node27" href="$ins__float__invariant__wrapper_8h.html#acbc99bce5ffb373e21280ebaad9faa37" title="ins_float_invariant\l_register" alt="" coords="689,207,825,251"/>
+<area shape="rect" id="node31" href="$ins__vectornav_8h.html#a5ba37a2e4e80d50b1ce1ada6e0f294fe" title="Read received data. " alt="" coords="463,266,609,310"/>
+<area shape="rect" id="node33" href="$ins__vectornav_8h.html#abcd265b9bfefa88327260439223dba81" title="Event handling for Vectornav. " alt="" coords="681,274,833,302"/>
+<area shape="rect" id="node37" href="$ins__module_8h.html#ac34266139fe4658afe3bd0992441431a" title="!SITL " alt="" coords="457,333,615,377"/>
+<area shape="rect" id="node43" href="$ahrs__float__dcm__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="493,450,579,478"/>
+<area shape="rect" id="node47" href="$ahrs__float__dcm__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="500,501,572,529"/>
+<area shape="rect" id="node45" href="$ahrs__float__dcm__wrapper_8h.html#a18235ffdb70868861d5424fe8c4bafa5" title="ahrs_dcm_register" alt="" coords="687,475,828,503"/>
+<area shape="rect" id="node52" href="$ahrs__float__mlkf__wrapper_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title="accel_cb" alt="" coords="497,551,575,579"/>
+<area shape="rect" id="node56" href="$ahrs__float__mlkf__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="493,602,579,630"/>
+<area shape="rect" id="node59" href="$ahrs__float__mlkf__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="500,653,572,681"/>
+<area shape="rect" id="node62" href="$ahrs__float__mlkf__wrapper_8c.html#a49cc1e545848b85016af530049991c02" title="mag_cb" alt="" coords="500,703,572,731"/>
+<area shape="rect" id="node54" href="$ahrs__float__mlkf__wrapper_8h.html#adf9165ad7440f11e3dae35391f5844d6" title="ahrs_mlkf_register" alt="" coords="688,627,827,655"/>
+<area shape="rect" id="node67" href="$main__ap_8h.html#aaae462f08bad040640b5d7d9dac4e5d3" title="Run at PERIODIC_FREQUENCY (60Hz if not defined) " alt="" coords="483,754,589,782"/>
+<area shape="rect" id="node69" href="$main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="664,729,851,757"/>
+<area shape="rect" id="node71" href="$sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="689,779,825,807"/>
 </map>
