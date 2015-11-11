@@ -53,73 +53,70 @@ var NAVTREEINDEX =
 "geiger__counter_8c_source.html",
 "gps__i2c_8c.html#a6dfae6ffe7e61a7c88f4b5bd5b469a96",
 "gps__ubx_8c.html#a81b821d6b2b90cd4dd34b36833f667a7",
-"group__spi.html#gga52e70c55efc6a9b04903157a0965baacadf5763363daaa43ebba32c0f56b85db9",
-"group__state__wind__airspeed.html#gac1623c626a0ec253e769c1af9d205a8c",
-"guidance__v__adapt_8c.html#a108e823687eddd24bff053ea9a03943f",
-"hbmini__1_80_8h.html#a95e1345d4cad8a75168286fda32885f1",
-"humid__htm__b71_8c.html",
-"i2c-dev_8h.html#abd0ad56a944b1a95435d51cc54db36c4",
-"imu__aspirin2_8c.html#a3f944845df880412588796aeca80105e",
-"imu__drotek__10dof__v2_8h.html#aacdafe50c6db4a6990596931baa40d3f",
-"imu__mpu60x0__defaults_8h.html#afd17b3bbedb8e03a9a4f27d21b8d507e",
-"imu__um6_8h.html#ad8254289bae0a88d6c41c55eaab038ca",
-"ins__float__invariant_8c.html#af9c75e0faec81d721ce6b0e72a78e74b",
-"ins__xsens_8c.html#a934ca0061f712fc5b516fb27f5ee24a1",
-"joystick_8h_source.html",
-"krooz__sd_8h.html#aecb49453f7f4084db5099a7a07003f03",
-"lia__1_81_8h.html#aa7699f41fbe105c8f5061cc48a5f6307",
-"lisa__l__1_80_8h.html#a021cf1022c7127f1217c25728375467b",
-"lisa__m__2_80_8h.html#acac29b2d7f7b1c3eebd0481c225bd691",
-"lisa__mx__common_8h.html#a1f43b2c4250213826a1c0cae49004e3c",
-"lisa__s__1_80_8h.html#a689995b3ffce4727831c630e0c144b5e",
-"lpc21_2mcu__periph_2gpio__arch_8h.html#a546be0d3be4335be87bd46b9d6442edd",
-"lpc21_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a8f67fe525140a6f4b07b3416bc70f606",
-"lpcTMR_8h.html#a19a5a5e9ace632485acc8843e707e77a",
-"lsm303dlhc__regs_8h.html#a6922eecd67c3db6106f16d30d0b40480",
-"main__fbw_8c.html#a9aa55e047af522d7df3a329d39a08ac4",
-"max3100__hw_8h.html#ae9da393dec0684176439f1fe5ecf5d7b",
-"mission__common_8h.html#abbc222d733a10afc3b9ab7537d664a73",
-"module__baro_scp_i2c.html#module_xml__baro_scp_i2c",
-"module__gps_ubx_uart.html#headers",
-"module__light_solar.html#sources",
-"module__pwm_meas.html",
-"mpl3115_8h.html",
-"ms5611_8h.html#aeabcd6fb6c9a54ba10c34130f71f855ba23c27d3433584c763939fbe3ff3923a0",
-"nav_8h.html#aa602ef7f7d2e485655a7cc97a35b80c3",
-"nav__line__osam_8h.html#a52b50be4546af7cd9fa898f73caf62f0",
-"navgo_2baro__board_8c_source.html",
-"navstik__1_80_8h.html#a342eee19f66562516414e255f3db4cc4",
-"paparazzi_8h.html#a3e070a9f163110692ed4b0f6a95b41c6",
-"pprz__algebra__float_8h.html#a2c4c4123145328dee01faa7b5488355c",
-"pprz__geodetic__double_8h.html#a9a6c153bbedbbcc05dedcc6f5bc3266a",
-"pprz__transport_8c.html",
-"px4fmu__1_87_8h.html#a5839c6584034c6fe16e4267590a994b5",
-"rotorcraft_2guidance_2guidance__v_8c.html#a53779fb4d8ef92130859d3680c988156",
-"sdlog__1_80_8h.html#a4e4204874a63b2a01811ee2819285f58",
-"sim_2mcu__periph_2gpio__arch_8h.html#a62fa810782439ccd99ea38f7ed500a94",
-"spektrum__dx7se_8h.html",
-"stabilization__attitude_8c.html#a134ad933d69b7de8c8142a698d231864",
-"stabilization__attitude__ref__euler__int_8c.html#a5b355848d1ce79a73b3fe67c8e86cd42",
-"state_8c.html#gaea5833c5515c007e9ebd4ef106e80071",
-"stm32_2mcu__periph_2i2c__arch_8c.html#a9f8ae01465e43501aabd230ba1900fa8",
-"stm32_2subsystems_2radio__control_2spektrum__arch_8h.html#a7cc3813c8b10a6392586d6de2212ba06",
-"stm32f4__chibios__vectors_8h.html#a42cecf06611bbc4172665b1c96635be0",
-"stm32f4__discovery_8h.html#a0ea4845cec9e43fa49b1169d0c2c32d5",
-"structAdxl345Config.html#aae40365094e01152c5638a51caa2c52e",
-"structDoubleMat33.html#a6d37a71e96d0d1cdf595002d6aacd715",
-"structHOTT__EAM__MSG.html#af628c68b58abb3c7607db66fc4ff33d2",
-"structInsArdrone2.html#a4c9b6113b6957ffcedf162ee91e716bc",
-"structMpl3115.html#a1e79618f2ed084cbdd3f4cc4c1823d54",
-"structSurveyPolyAdv.html#ae256f36c36e871cc4773c9ac8845e90b",
-"struct__navdata__option__t.html",
-"structi2c__rdwr__ioctl__data.html#a436bb0f35544ff79b2c0ac3570f5b7f0",
-"structscbRegs__t.html#af105dd0a1347edb16b8015bbbe1239b3",
-"structvicRegs__t.html#a608983006fcfacdfc7936b39a9a7315a",
-"sys__time_8h.html#abb950f6634af7da754fa0c6d99d689cb",
-"tiny__1_81_8h.html#a6835875df62c2d69fbf86cdd5cefbe52",
-"uart__print_8h.html#af958f96d5fb8818724ccb9454d973113",
-"vf__extended__float_8h.html#aa8558bc47d778efba706bc1fc7f08d36",
-"w5100_8h_source.html"
+"group__math__orientation__representation.html#ga5ca8cd93a67e7ddcd8534f523961edaf",
+"group__state__acceleration.html#gad202fd9719da10eb69fe7b37a77523ff",
+"group__state__velocity.html#gaa0a543aa37e93fe32b4d7d4312ef5f2b",
+"guidance__h_8c.html#a48ab657ff45f2b091847a48360a96b52",
+"guidance__v__ref_8h.html#ab8d8d8003fbd1c3d31ee72827ea1e25e",
+"hmc58xx_8c.html#a4b941e1292efc13b3f7b660ea636c1d0",
+"humid__sht_8c.html#ab702106cf3b3e96750b6845ded4e0299",
+"imu__apogee_8h.html#a8acf299c1bfb2daa92b1894556ca50ad",
+"imu__chimu_8h.html#a70dfa9eb8b0dff840f01869418c7de61",
+"imu__krooz__memsic_8h.html#a4d1dffda46521abab982d7a875301548",
+"imu__px4fmu_8h.html#adaaa39d066b1968f299152e2ee1d0651",
+"ins__alt__float_8c.html#adc2d9583c7b10b920500e2eb179ac924",
+"ins__xsens700_8c.html#a6d32f38b168332331f5b42ca5f2911fe",
+"ivy__transport_8h.html#a45ab74e06bb62c9ad6a719ab94e4cee4",
+"krooz__sd_8h.html#a8c2f19908ae17a85a5d1e6a6c43c9964",
+"lcd__dogm_8h.html#ad0729d2cba627825a089ca1fff12ba29",
+"link__mcu__usart_8h_source.html",
+"lisa__m__1_80_8h.html#a7eeaab0a07ca1795ca1835de3438d88c",
+"lisa__m__common_8h.html#a9937fa84b1fa330638ac7ce9dd00bf32",
+"lisa__mx__common_8h.html#ae718fb13d2500192855c74e78e6c9c5e",
+"low__pass__filter_8h.html#a96c76dd5aaa4bc076a2ffc6fc7f1ae37",
+"lpc21_2mcu__periph_2uart__arch_8h.html#ab30064c2e8bf2501cf5e309a5af3c1f8",
+"lpc21_2subsystems_2settings__arch_8c.html#a381a9caf5bf2ed4a883cddaf17eef87d",
+"lpcWD_8h.html",
+"main__ap_8c.html#add4d9babf9be4522b8a4a97e1f1e7b84",
+"max3100__hw_8c.html#a513b10d80f7214b6556a2b0a2ab01a60",
+"mf__ptu_8c.html#a0857026f9aee90905625dd42d2f0ad01",
+"module__ins_xsens_mtig_uart0.html",
+"mpu60x0_8h.html#a28cf7622a5ae3f6f389efd4ee1f6d6b6",
+"ms5611__regs_8h.html#a2958867eaaa31cebfb99988de1faf04a",
+"nav__bungee__takeoff_8c.html#a1443c39c57b7a5a54782b4fdff5a0f8e",
+"nav__smooth_8c.html#ae786a20d0336486a81e9f23100179645",
+"navgo__1_80_8h.html#a9554c21ac4db9f0b888079de6c70521a",
+"navstik__1_80_8h.html#a61f9ceb054741c177baac8a8b0282628",
+"photogrammetry__calculator_8h.html",
+"pprz__algebra__float_8h.html#a92657ab48af3a29f43ab3a9da976bc66",
+"pprz__geodetic__float_8h.html#a4340e37afc6f80c38d66c36c8840bfb9",
+"pprz__trig__int_8h.html#a5292d1716a00153e3ed02fa7e671eb2c",
+"px4fmu__1_87_8h.html#ad2aa2755e250074295573801fe54cf9a",
+"rotorcraft_2main_8c.html#ac79b4626d107d8469eef90c7de13c42f",
+"serial__port_8h.html#aee75c3cee5e5beaef3f9b1a692d3633c",
+"sim_2peripherals_2max1168__arch_8c.html#adad993f2bbd2ca52aea0b0f97931863a",
+"ssp__hw_8h.html#afd28b97fc5d47a7ae9da92c91da8c0b8",
+"stabilization__attitude__quat__int_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc",
+"stabilization__attitude__ref__quat__int_8h_source.html",
+"stm32_2peripherals_2hmc5843__arch_8c_source.html",
+"stm32f4__chibios__vectors_8c.html#a8b72b4c5f8c2d337fe5838961e82e2fb",
+"stm32f4__chibios__vectors_8h.html#a92aea45a3627411a87ddca785a277d95",
+"stm32f4__discovery_8h.html#a788deb07b7c76a809557fa2ee0c416e5",
+"structAhrsIntCmplQuat.html#a6b56b3367ffc8c90db914dbb0f8714c2",
+"structFloatVect2.html#a965d6b4f04fcc6d2aa179c4016d7ee44",
+"structImu.html#ab126bba936ccd50bad68d42e83b81a28",
+"structInterMcuData.html#ad7bc11e41c64ce2709a2c4cfd5c69335",
+"structNavSpiral.html#a030e3c27585cb4c5214255ca4959bfa7",
+"structVi__command.html#a55d531307956ae71a86d7ce08145f968",
+"structcan__Regs__t.html#a74968bcdbf86d2074c7f58107a6ad937",
+"structmeasures__t.html#a5a28f37173ab7a2a12726094effe640a",
+"structspi__periph.html#afcfe0aec04a43703058ea02491970336",
+"subsystems_2datalink_2superbitrf_8c_source.html",
+"temp__tcouple__adc_8c.html#a241f0aa542718c2480a4fa6ce56070f7",
+"tiny__2_81_8h.html#a1347ad37483e68bb377d42aa75d93cd4",
+"umarim__lite__2_80_8h.html#a1dca9637251da27024bb43042d685080",
+"w5100_8c.html#a0b61d617d075e2e171480bd2839bf93f",
+"xbee_8h.html#a98260bab75a59dd115ed31cdae85e01e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
@@ -146,6 +143,21 @@ function stripPath2(uri)
   return m ? uri.substring(i-6) : s;
 }
 
+function hashValue()
+{
+  return $(location).attr('hash').substring(1).replace(/[^\w\-]/g,'');
+}
+
+function hashUrl()
+{
+  return '#'+hashValue();
+}
+
+function pathName()
+{
+  return $(location).attr('pathname').replace(/[^-A-Za-z0-9+&@#/%?=~_|!:,.;\(\)]/g, '');
+}
+
 function localStorageSupported()
 {
   try {
@@ -168,7 +180,7 @@ function deleteLink()
 {
   if (localStorageSupported()) {
     window.localStorage.setItem('navpath','');
-  } 
+  }
 }
 
 function cachedLink()
@@ -204,12 +216,12 @@ function createIndent(o,domNode,node,level)
   var level=-1;
   var n = node;
   while (n.parentNode) { level++; n=n.parentNode; }
-  var imgNode = document.createElement("img");
-  imgNode.style.paddingLeft=(16*level).toString()+'px';
-  imgNode.width  = 16;
-  imgNode.height = 22;
-  imgNode.border = 0;
   if (node.childrenData) {
+    var imgNode = document.createElement("img");
+    imgNode.style.paddingLeft=(16*level).toString()+'px';
+    imgNode.width  = 16;
+    imgNode.height = 22;
+    imgNode.border = 0;
     node.plus_img = imgNode;
     node.expandToggle = document.createElement("a");
     node.expandToggle.href = "javascript:void(0)";
@@ -226,8 +238,12 @@ function createIndent(o,domNode,node,level)
     domNode.appendChild(node.expandToggle);
     imgNode.src = node.relpath+"ftv2pnode.png";
   } else {
-    imgNode.src = node.relpath+"ftv2node.png";
-    domNode.appendChild(imgNode);
+    var span = document.createElement("span");
+    span.style.display = 'inline-block';
+    span.style.width   = 16*(level+1)+'px';
+    span.style.height  = '22px';
+    span.innerHTML = '&#160;';
+    domNode.appendChild(span);
   } 
 }
 
@@ -236,11 +252,13 @@ var animationInProgress = false;
 function gotoAnchor(anchor,aname,updateLocation)
 {
   var pos, docContent = $('#doc-content');
-  if (anchor.parent().attr('class')=='memItemLeft' ||
-      anchor.parent().attr('class')=='fieldtype' ||
-      anchor.parent().is(':header')) 
+  var ancParent = $(anchor.parent());
+  if (ancParent.hasClass('memItemLeft') ||
+      ancParent.hasClass('fieldname') ||
+      ancParent.hasClass('fieldtype') ||
+      ancParent.is(':header'))
   {
-    pos = anchor.parent().position().top;
+    pos = ancParent.position().top;
   } else if (anchor.position()) {
     pos = anchor.position().top;
   }
@@ -298,7 +316,7 @@ function newNode(o, po, text, link, childrenData, lastNode)
     a.className = stripPath(link.replace('#',':'));
     if (link.indexOf('#')!=-1) {
       var aname = '#'+link.split('#')[1];
-      var srcPage = stripPath($(location).attr('pathname'));
+      var srcPage = stripPath(pathName());
       var targetPage = stripPath(link.split('#')[0]);
       a.href = srcPage!=targetPage ? url : "javascript:void(0)"; 
       a.onclick = function(){
@@ -392,14 +410,13 @@ function glowEffect(n,duration)
 
 function highlightAnchor()
 {
-  var aname = $(location).attr('hash');
+  var aname = hashUrl();
   var anchor = $(aname);
   if (anchor.parent().attr('class')=='memItemLeft'){
-    var rows = $('.memberdecls tr[class$="'+
-               window.location.hash.substring(1)+'"]');
+    var rows = $('.memberdecls tr[class$="'+hashValue()+'"]');
     glowEffect(rows.children(),300); // member without details
-  } else if (anchor.parents().slice(2).prop('tagName')=='TR') {
-    glowEffect(anchor.parents('div.memitem'),1000); // enum value
+  } else if (anchor.parent().attr('class')=='fieldname'){
+    glowEffect(anchor.parent().parent(),1000); // enum value
   } else if (anchor.parent().attr('class')=='fieldtype'){
     glowEffect(anchor.parent().parent(),1000); // struct field
   } else if (anchor.parent().is(":header")) {
@@ -414,7 +431,7 @@ function selectAndHighlight(hash,n)
 {
   var a;
   if (hash) {
-    var link=stripPath($(location).attr('pathname'))+':'+hash.substring(1);
+    var link=stripPath(pathName())+':'+hash.substring(1);
     a=$('.item a[class$="'+link+'"]');
   }
   if (a && a.length) {
@@ -446,7 +463,7 @@ function showNode(o, node, index, hash)
       if (!node.childrenVisited) {
         getNode(o, node);
       }
-      $(node.getChildrenUL()).show();
+      $(node.getChildrenUL()).css({'display':'block'});
       if (node.isLast) {
         node.plus_img.src = node.relpath+"ftv2mlastnode.png";
       } else {
@@ -478,8 +495,22 @@ function showNode(o, node, index, hash)
   }
 }
 
+function removeToInsertLater(element) {
+  var parentNode = element.parentNode;
+  var nextSibling = element.nextSibling;
+  parentNode.removeChild(element);
+  return function() {
+    if (nextSibling) {
+      parentNode.insertBefore(element, nextSibling);
+    } else {
+      parentNode.appendChild(element);
+    }
+  };
+}
+
 function getNode(o, po)
 {
+  var insertFunction = removeToInsertLater(po.li);
   po.childrenVisited = true;
   var l = po.childrenData.length-1;
   for (var i in po.childrenData) {
@@ -487,6 +518,7 @@ function getNode(o, po)
     po.children[i] = newNode(o, po, nodeData[0], nodeData[1], nodeData[2],
       i==l);
   }
+  insertFunction();
 }
 
 function gotoNode(o,subIndex,root,hash,relpath)
@@ -510,14 +542,13 @@ function navTo(o,root,hash,relpath)
   if (link) {
     var parts = link.split('#');
     root = parts[0];
-    if (parts.length>1) hash = '#'+parts[1];
+    if (parts.length>1) hash = '#'+parts[1].replace(/[^\w\-]/g,'');
     else hash='';
   }
   if (hash.match(/^#l\d+$/)) {
     var anchor=$('a[name='+hash.substring(1)+']');
     glowEffect(anchor.parent(),1000); // line number
     hash=''; // strip line number anchors
-    //root=root.replace(/_source\./,'.'); // source link to doc link
   }
   var url=root+hash;
   var i=-1;
@@ -551,7 +582,7 @@ function toggleSyncButton(relpath)
   if (navSync.hasClass('sync')) {
     navSync.removeClass('sync');
     showSyncOff(navSync,relpath);
-    storeLink(stripPath2($(location).attr('pathname'))+$(location).attr('hash'));
+    storeLink(stripPath2(pathName())+hashUrl());
   } else {
     navSync.addClass('sync');
     showSyncOn(navSync,relpath);
@@ -590,30 +621,30 @@ function initNavTree(toroot,relpath)
     navSync.click(function(){ toggleSyncButton(relpath); });
   }
 
-  navTo(o,toroot,window.location.hash,relpath);
+  $(window).load(function(){
+    navTo(o,toroot,hashUrl(),relpath);
+    showRoot();
+  });
 
   $(window).bind('hashchange', function(){
      if (window.location.hash && window.location.hash.length>1){
        var a;
        if ($(location).attr('hash')){
-         var clslink=stripPath($(location).attr('pathname'))+':'+
-                               $(location).attr('hash').substring(1);
-         a=$('.item a[class$="'+clslink+'"]');
+         var clslink=stripPath(pathName())+':'+hashValue();
+         a=$('.item a[class$="'+clslink.replace(/</g,'\\3c ')+'"]');
        }
        if (a==null || !$(a).parent().parent().hasClass('selected')){
          $('.item').removeClass('selected');
          $('.item').removeAttr('id');
        }
-       var link=stripPath2($(location).attr('pathname'));
-       navTo(o,link,$(location).attr('hash'),relpath);
+       var link=stripPath2(pathName());
+       navTo(o,link,hashUrl(),relpath);
      } else if (!animationInProgress) {
        $('#doc-content').scrollTop(0);
        $('.item').removeClass('selected');
        $('.item').removeAttr('id');
-       navTo(o,toroot,window.location.hash,relpath);
+       navTo(o,toroot,hashUrl(),relpath);
      }
   })
-
-  $(window).load(showRoot);
 }
 

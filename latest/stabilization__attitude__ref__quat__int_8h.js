@@ -1,25 +1,34 @@
 var stabilization__attitude__ref__quat__int_8h =
 [
-    [ "FloatRefModel", "stabilization__attitude__ref__quat__int_8h.html#structFloatRefModel", [
-      [ "omega", "stabilization__attitude__ref__quat__int_8h.html#a1b8c9c1d343788025150fb25ab3caa65", null ],
-      [ "zeta", "stabilization__attitude__ref__quat__int_8h.html#a0c13bd2a725529bbe9f0d1f0b3f318ce", null ]
+    [ "IntRefModel", "stabilization__attitude__ref__quat__int_8h.html#structIntRefModel", [
+      [ "omega", "stabilization__attitude__ref__quat__int_8h.html#a4eeccd9c23f08694a91184c9d962a980", null ],
+      [ "two_omega2", "stabilization__attitude__ref__quat__int_8h.html#ae838f67919481057639468fbdb2de7ac", null ],
+      [ "two_zeta_omega", "stabilization__attitude__ref__quat__int_8h.html#af77b2263f4953395612d32f06cc8bfed", null ],
+      [ "zeta", "stabilization__attitude__ref__quat__int_8h.html#a66a3a4927a2c3438d3cfdeafb5fa8c9b", null ]
     ] ],
-    [ "stabilization_attitude_ref_quat_int_SetOmegaP", "stabilization__attitude__ref__quat__int_8h.html#af70b0939f7dc925926d105f6814c8950", null ],
-    [ "stabilization_attitude_ref_quat_int_SetOmegaQ", "stabilization__attitude__ref__quat__int_8h.html#a44357f4361f48b4d421e75ce6b7fe7f8", null ],
-    [ "stabilization_attitude_ref_quat_int_SetOmegaR", "stabilization__attitude__ref__quat__int_8h.html#a60ee24663c9a37266d667035242eb81b", null ],
-    [ "stabilization_attitude_ref_quat_int_SetZetaP", "stabilization__attitude__ref__quat__int_8h.html#abda87d5c39837e2f36303455921e21a8", null ],
-    [ "stabilization_attitude_ref_quat_int_SetZetaQ", "stabilization__attitude__ref__quat__int_8h.html#ac5199f51a5a15c148c63364246d895c3", null ],
-    [ "stabilization_attitude_ref_quat_int_SetZetaR", "stabilization__attitude__ref__quat__int_8h.html#a655f92c58aa9e15018e8cd46ddf76c73", null ],
-    [ "stabilization_attitude_ref_enter", "stabilization__attitude__ref__quat__int_8h.html#abe198511f5918b60eb4956c1d68c9373", null ],
-    [ "stabilization_attitude_ref_set_omega", "stabilization__attitude__ref__quat__int_8h.html#a251d9dbf700b22279831180ea4e4d262", null ],
-    [ "stabilization_attitude_ref_set_omega_p", "stabilization__attitude__ref__quat__int_8h.html#a0ef51cfe1030a7b666eaf9e70b4485c5", null ],
-    [ "stabilization_attitude_ref_set_omega_q", "stabilization__attitude__ref__quat__int_8h.html#a069b9c4a0ab4af2d7f3e977ad40126e5", null ],
-    [ "stabilization_attitude_ref_set_omega_r", "stabilization__attitude__ref__quat__int_8h.html#adc2d039fc93c2a20a85ecf9a3fc91983", null ],
-    [ "stabilization_attitude_ref_set_zeta", "stabilization__attitude__ref__quat__int_8h.html#aadaf0f4a9eb7c774c077ac289ed05fe5", null ],
-    [ "stabilization_attitude_ref_set_zeta_p", "stabilization__attitude__ref__quat__int_8h.html#a0f892493d739ef13ab1bf4d49be8ccc6", null ],
-    [ "stabilization_attitude_ref_set_zeta_q", "stabilization__attitude__ref__quat__int_8h.html#ae706894e334f08392e15c6bf1b1eabab", null ],
-    [ "stabilization_attitude_ref_set_zeta_r", "stabilization__attitude__ref__quat__int_8h.html#aafb5a386d109aa239dd339401709f01f", null ],
-    [ "stab_att_ref_model", "stabilization__attitude__ref__quat__int_8h.html#a03bc1b4cc6c8d417e0be9d62eabe9363", null ],
-    [ "stab_att_ref_quat", "stabilization__attitude__ref__quat__int_8h.html#ab566c35520b645136f18ddb008fc41a4", null ],
-    [ "stab_att_sp_quat", "stabilization__attitude__ref__quat__int_8h.html#acec5709f25760d7094e4f0c9bb5be2ec", null ]
+    [ "AttRefQuatInt", "stabilization__attitude__ref__quat__int_8h.html#structAttRefQuatInt", [
+      [ "accel", "stabilization__attitude__ref__quat__int_8h.html#ab0ff5e1705df902003ddb2f11a028845", null ],
+      [ "euler", "stabilization__attitude__ref__quat__int_8h.html#a8e2a54bcb781d46655a565de8604d387", null ],
+      [ "model", "stabilization__attitude__ref__quat__int_8h.html#a0b5f449e2660b4bf5253f1502c181dac", null ],
+      [ "quat", "stabilization__attitude__ref__quat__int_8h.html#a1f459e662d6dd92ce3f600c8333e7379", null ],
+      [ "rate", "stabilization__attitude__ref__quat__int_8h.html#a8a353ef8749316bf4378fc977eaec663", null ],
+      [ "saturation", "stabilization__attitude__ref__quat__int_8h.html#a02273e0f3571facf59a24d27dcb7f606", null ]
+    ] ],
+    [ "attitude_ref_quat_int_enter", "stabilization__attitude__ref__quat__int_8h.html#a43134b9502b1b59a68e214221e011fb8", null ],
+    [ "attitude_ref_quat_int_init", "stabilization__attitude__ref__quat__int_8h.html#a7944325a332759a00c54a72a263d9a92", null ],
+    [ "attitude_ref_quat_int_set_max_p", "stabilization__attitude__ref__quat__int_8h.html#af9101a0dcd8fd3223114ad1734939c29", null ],
+    [ "attitude_ref_quat_int_set_max_pdot", "stabilization__attitude__ref__quat__int_8h.html#ac63087e767f20e8f8e12bbb43a5dcd63", null ],
+    [ "attitude_ref_quat_int_set_max_q", "stabilization__attitude__ref__quat__int_8h.html#ae9d70636dd5c6db89383089a6bfbc62f", null ],
+    [ "attitude_ref_quat_int_set_max_qdot", "stabilization__attitude__ref__quat__int_8h.html#aa526e82e1dd12e25592d4a1dabf3df0e", null ],
+    [ "attitude_ref_quat_int_set_max_r", "stabilization__attitude__ref__quat__int_8h.html#a795660682006f1de4578ab9f1ecd2c98", null ],
+    [ "attitude_ref_quat_int_set_max_rdot", "stabilization__attitude__ref__quat__int_8h.html#a677908c0facae1f128acfa7debc28a92", null ],
+    [ "attitude_ref_quat_int_set_omega", "stabilization__attitude__ref__quat__int_8h.html#a9ffbc82d672291b5778307b01010d1f0", null ],
+    [ "attitude_ref_quat_int_set_omega_p", "stabilization__attitude__ref__quat__int_8h.html#aad3ceb824cfaf2e86ca52268af9d4774", null ],
+    [ "attitude_ref_quat_int_set_omega_q", "stabilization__attitude__ref__quat__int_8h.html#aa8aeb3d2f2dc12fd1297dda5b7ca83d9", null ],
+    [ "attitude_ref_quat_int_set_omega_r", "stabilization__attitude__ref__quat__int_8h.html#a8df584dca8e9daf9eabf8d462105e064", null ],
+    [ "attitude_ref_quat_int_set_zeta", "stabilization__attitude__ref__quat__int_8h.html#a956440bfffc58d489aee036160a1d40e", null ],
+    [ "attitude_ref_quat_int_set_zeta_p", "stabilization__attitude__ref__quat__int_8h.html#ac83375d5a340cc057ac1676ab343072f", null ],
+    [ "attitude_ref_quat_int_set_zeta_q", "stabilization__attitude__ref__quat__int_8h.html#a9b60788f9066e912599fb2459289dfe4", null ],
+    [ "attitude_ref_quat_int_set_zeta_r", "stabilization__attitude__ref__quat__int_8h.html#a6e006eef843ed6542b195d97de9aefaf", null ],
+    [ "attitude_ref_quat_int_update", "stabilization__attitude__ref__quat__int_8h.html#a20f0b5f27a66365eac7b4ed8af49960c", null ]
 ];

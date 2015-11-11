@@ -1,51 +1,51 @@
 <map id="sw/airborne/arch/stm32/mcu_periph/uart_arch.h" name="sw/airborne/arch/stm32/mcu_periph/uart_arch.h">
-<area shape="rect" id="node3" href="$uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="4581,99,4755,143"/>
-<area shape="rect" id="node5" href="$linux_2mcu__periph_2uart__arch_8c.html" title="linux uart handling " alt="" coords="5,201,181,245"/>
-<area shape="rect" id="node7" href="$linux_2mcu__periph_2uart__arch_8h.html" title="linux uart handling " alt="" coords="205,201,384,245"/>
-<area shape="rect" id="node9" href="$lpc21_2mcu__periph_2uart__arch_8c.html" title="Handling of UART hardware for lpc21xx. " alt="" coords="408,201,584,245"/>
-<area shape="rect" id="node11" href="$lpc21_2subsystems_2radio__control_2spektrum__arch_8h.html" title="sw/airborne/arch/lpc21\l/subsystems/radio_control\l/spektrum_arch.h" alt="" coords="608,193,797,253"/>
-<area shape="rect" id="node13" href="$sim_2mcu__periph_2uart__arch_8c.html" title="sw/airborne/arch/sim\l/mcu_periph/uart_arch.c" alt="" coords="821,201,997,245"/>
-<area shape="rect" id="node15" href="$sim_2mcu__periph_2uart__arch_8h.html" title="sw/airborne/arch/sim\l/mcu_periph/uart_arch.h" alt="" coords="1021,201,1200,245"/>
-<area shape="rect" id="node17" href="$stm32_2mcu__periph_2uart__arch_8c.html" title="Handling of UART hardware for STM32. " alt="" coords="1224,201,1400,245"/>
-<area shape="rect" id="node19" href="$stm32_2subsystems_2radio__control_2spektrum__arch_8c.html" title="sw/airborne/arch/stm32\l/subsystems/radio_control\l/spektrum_arch.c" alt="" coords="1424,193,1613,253"/>
-<area shape="rect" id="node21" href="$imu__apogee_8c.html" title="Driver for the IMU on the Apogee board. " alt="" coords="1637,201,1805,245"/>
-<area shape="rect" id="node23" href="$baro__board__ms5611__i2c_8c.html" title="Driver for onboard MS5611 baro via I2C. " alt="" coords="1829,201,2024,245"/>
-<area shape="rect" id="node25" href="$baro__board__ms5611__spi_8c.html" title="Driver for onboard MS5611 baro via SPI. " alt="" coords="2048,201,2243,245"/>
-<area shape="rect" id="node27" href="$imu__hbmini_8c.html" title="Driver for the IMU on the Hbmini board. " alt="" coords="2267,201,2424,245"/>
-<area shape="rect" id="node29" href="$imu__krooz_8c.html" title="Driver for the IMU on the KroozSD board. " alt="" coords="2448,201,2589,245"/>
-<area shape="rect" id="node31" href="$imu__navgo_8c.html" title="Driver for the IMU on the NavGo board. " alt="" coords="2613,201,2763,245"/>
-<area shape="rect" id="node33" href="$imu__umarim_8c.html" title="Driver for the IMU on the Umarim board. " alt="" coords="2787,201,2957,245"/>
-<area shape="rect" id="node35" href="$fixedwing_2datalink_8c.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="2981,201,3141,245"/>
-<area shape="rect" id="node37" href="$fbw__datalink_8c.html" title="Datalink through FBW (FlyByWire) process/mcu. " alt="" coords="3165,201,3341,245"/>
-<area shape="rect" id="node39" href="$main__fbw_8c.html" title="FBW ( FlyByWire ) process. " alt="" coords="3365,201,3525,245"/>
-<area shape="rect" id="node41" href="$rotorcraft_2autopilot_8c.html" title="Autopilot. " alt="" coords="3549,201,3709,245"/>
-<area shape="rect" id="node43" href="$rotorcraft_2datalink_8c.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="3733,201,3893,245"/>
-<area shape="rect" id="node45" href="$navigation_8c.html" title="Rotorcraft navigation functions. " alt="" coords="3917,201,4083,245"/>
-<area shape="rect" id="node47" href="$usb__tunnel_8c.html" title="USB tunnel application. " alt="" coords="4107,201,4267,245"/>
-<area shape="rect" id="node49" href="$main__demo3_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo3.c" alt="" coords="4291,201,4461,245"/>
-<area shape="rect" id="node51" href="$main__demo4_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo4.c" alt="" coords="4485,201,4656,245"/>
-<area shape="rect" id="node53" href="$main__demo5_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo5.c" alt="" coords="4680,201,4851,245"/>
-<area shape="rect" id="node55" href="$link__mcu__usart_8c.html" title="sw/airborne/link_mcu\l_usart.c" alt="" coords="4875,201,5029,245"/>
-<area shape="rect" id="node57" href="$uart_8c.html" title="sw/airborne/mcu_periph\l/uart.c" alt="" coords="5053,201,5227,245"/>
-<area shape="rect" id="node59" href="$adc__generic_8c.html" title="sw/airborne/modules\l/adcs/adc_generic.c" alt="" coords="5251,201,5405,245"/>
-<area shape="rect" id="node61" href="$max11040_8c.html" title="Maxim MAX11040 ADC hw interface. " alt="" coords="5429,201,5584,245"/>
-<area shape="rect" id="node63" href="$flight__benchmark_8c.html" title="sw/airborne/modules\l/benchmark/flight_benchmark.c" alt="" coords="5608,201,5829,245"/>
-<area shape="rect" id="node65" href="$send__imu__mag__current_8c.html" title="Enables sending of IMU_MAG_CURRENT_CALIBRATION message. " alt="" coords="5853,193,6011,253"/>
-<area shape="rect" id="node67" href="$cartography_8c.html" title="Navigation functions for cartography of the ground. " alt="" coords="6035,201,6227,245"/>
-<area shape="rect" id="node69" href="$uart__drop_8c.html" title="sw/airborne/modules\l/com/uart_drop.c" alt="" coords="6251,201,6405,245"/>
-<area shape="rect" id="node71" href="$config__mkk__v2_8c.html" title="sw/airborne/modules\l/config/config_mkk_v2.c" alt="" coords="6429,201,6603,245"/>
-<area shape="rect" id="node73" href="$sys__mon_8c.html" title="sw/airborne/modules\l/core/sys_mon.c" alt="" coords="6627,201,6781,245"/>
-<area shape="rect" id="node75" href="$mavlink_8h.html" title="Basic MAVLink datalink implementation. " alt="" coords="6805,201,6960,245"/>
-<area shape="rect" id="node77" href="$mavlink__decoder_8h.html" title="simple decoder of mavlink message " alt="" coords="6984,201,7181,245"/>
-<area shape="rect" id="node79" href="$xtend__rssi_8c.html" title="This measures the rssi pwm signal from a Digi XTend radio modem and sends a message with the info..." alt="" coords="7205,201,7360,245"/>
-<area shape="rect" id="node81" href="$atmega__i2c__cam__ctrl_8c.html" title="Interface with digital camera though AVR AtMega chip. " alt="" coords="7384,193,7539,253"/>
-<area shape="rect" id="node83" href="$dc_8c.html" title="Standard Digital Camera Control Interface. " alt="" coords="7563,201,7717,245"/>
-<area shape="rect" id="node85" href="$sim__i2c__cam__ctrl_8c.html" title="Simulated Interface with digital camera. " alt="" coords="7741,193,7896,253"/>
-<area shape="rect" id="node87" href="$MPPT_8c.html" title="Solar cells MPTT monitoring. " alt="" coords="7920,201,8075,245"/>
-<area shape="rect" id="node89" href="$enose_8c.html" title="sw/airborne/modules\l/enose/enose.c" alt="" coords="8099,201,8253,245"/>
-<area shape="rect" id="node91" href="$gsm_8c.html" title="sw/airborne/modules\l/gsm/gsm.c" alt="" coords="8277,201,8432,245"/>
-<area shape="rect" id="node93" href="$qr__code__spi__link_8c.html" title="sw/airborne/modules\l/gumstix_interface/qr\l_code_spi_link.c" alt="" coords="8456,193,8613,253"/>
-<area shape="rect" id="node95" href="$hott_8c.html" title="Graupner HOTT telemetry control module. " alt="" coords="8637,201,8792,245"/>
-<area shape="rect" id="node97" href="$ins__module_8h.html" title="Device independent INS code. " alt="" coords="8816,201,8971,245"/>
-<area shape="rect" id="node99" href="$alt__filter_8c.html" title="sw/airborne/modules\l/ins/alt_filter.c" alt="" coords="8995,201,9149,245"/>
+<area shape="rect" id="node2" href="$uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="4608,95,4783,136"/>
+<area shape="rect" id="node3" href="$linux_2mcu__periph_2uart__arch_8c.html" title="linux uart handling " alt="" coords="5,191,183,233"/>
+<area shape="rect" id="node4" href="$linux_2mcu__periph_2uart__arch_8h.html" title="linux uart handling " alt="" coords="207,191,386,233"/>
+<area shape="rect" id="node5" href="$lpc21_2mcu__periph_2uart__arch_8c.html" title="Handling of UART hardware for lpc21xx. " alt="" coords="411,191,588,233"/>
+<area shape="rect" id="node6" href="$lpc21_2subsystems_2radio__control_2spektrum__arch_8h.html" title="sw/airborne/arch/lpc21\l/subsystems/radio_control\l/spektrum_arch.h" alt="" coords="612,184,803,240"/>
+<area shape="rect" id="node7" href="$sim_2mcu__periph_2uart__arch_8c.html" title="sw/airborne/arch/sim\l/mcu_periph/uart_arch.c" alt="" coords="827,191,1004,233"/>
+<area shape="rect" id="node8" href="$sim_2mcu__periph_2uart__arch_8h.html" title="sw/airborne/arch/sim\l/mcu_periph/uart_arch.h" alt="" coords="1029,191,1207,233"/>
+<area shape="rect" id="node9" href="$stm32_2mcu__periph_2uart__arch_8c.html" title="Handling of UART hardware for STM32. " alt="" coords="1232,191,1409,233"/>
+<area shape="rect" id="node10" href="$stm32_2subsystems_2radio__control_2spektrum__arch_8c.html" title="sw/airborne/arch/stm32\l/subsystems/radio_control\l/spektrum_arch.c" alt="" coords="1433,184,1624,240"/>
+<area shape="rect" id="node11" href="$imu__apogee_8c.html" title="Driver for the IMU on the Apogee board. " alt="" coords="1649,191,1817,233"/>
+<area shape="rect" id="node12" href="$baro__board__ms5611__i2c_8c.html" title="Driver for onboard MS5611 baro via I2C. " alt="" coords="1841,191,2035,233"/>
+<area shape="rect" id="node13" href="$baro__board__ms5611__spi_8c.html" title="Driver for onboard MS5611 baro via SPI. " alt="" coords="2059,191,2254,233"/>
+<area shape="rect" id="node14" href="$imu__hbmini_8c.html" title="Driver for the IMU on the Hbmini board. " alt="" coords="2279,191,2437,233"/>
+<area shape="rect" id="node15" href="$imu__krooz_8c.html" title="Driver for the IMU on the KroozSD board. " alt="" coords="2461,191,2604,233"/>
+<area shape="rect" id="node16" href="$imu__navgo_8c.html" title="Driver for the IMU on the NavGo board. " alt="" coords="2628,191,2779,233"/>
+<area shape="rect" id="node17" href="$imu__umarim_8c.html" title="Driver for the IMU on the Umarim board. " alt="" coords="2803,191,2975,233"/>
+<area shape="rect" id="node18" href="$fixedwing_2datalink_8c.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="2999,191,3160,233"/>
+<area shape="rect" id="node19" href="$fbw__datalink_8c.html" title="Datalink through FBW (FlyByWire) process/mcu. " alt="" coords="3184,191,3361,233"/>
+<area shape="rect" id="node20" href="$main__fbw_8c.html" title="FBW ( FlyByWire ) process. " alt="" coords="3385,191,3547,233"/>
+<area shape="rect" id="node21" href="$rotorcraft_2autopilot_8c.html" title="Autopilot. " alt="" coords="3571,191,3732,233"/>
+<area shape="rect" id="node22" href="$rotorcraft_2datalink_8c.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="3756,191,3917,233"/>
+<area shape="rect" id="node23" href="$navigation_8c.html" title="Rotorcraft navigation functions. " alt="" coords="3941,191,4108,233"/>
+<area shape="rect" id="node24" href="$usb__tunnel_8c.html" title="USB tunnel application. " alt="" coords="4132,191,4293,233"/>
+<area shape="rect" id="node25" href="$main__demo3_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo3.c" alt="" coords="4318,191,4489,233"/>
+<area shape="rect" id="node26" href="$main__demo4_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo4.c" alt="" coords="4513,191,4683,233"/>
+<area shape="rect" id="node27" href="$main__demo5_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo5.c" alt="" coords="4707,191,4878,233"/>
+<area shape="rect" id="node28" href="$link__mcu__usart_8c.html" title="sw/airborne/link_mcu\l_usart.c" alt="" coords="4902,191,5057,233"/>
+<area shape="rect" id="node29" href="$uart_8c.html" title="sw/airborne/mcu_periph\l/uart.c" alt="" coords="5081,191,5256,233"/>
+<area shape="rect" id="node30" href="$adc__generic_8c.html" title="sw/airborne/modules\l/adcs/adc_generic.c" alt="" coords="5281,191,5435,233"/>
+<area shape="rect" id="node31" href="$max11040_8c.html" title="Maxim MAX11040 ADC hw interface. " alt="" coords="5459,191,5614,233"/>
+<area shape="rect" id="node32" href="$flight__benchmark_8c.html" title="sw/airborne/modules\l/benchmark/flight_benchmark.c" alt="" coords="5637,191,5860,233"/>
+<area shape="rect" id="node33" href="$send__imu__mag__current_8c.html" title="Enables sending of IMU_MAG_CURRENT_CALIBRATION message. " alt="" coords="5884,184,6043,240"/>
+<area shape="rect" id="node34" href="$cartography_8c.html" title="Navigation functions for cartography of the ground. " alt="" coords="6067,191,6260,233"/>
+<area shape="rect" id="node35" href="$uart__drop_8c.html" title="sw/airborne/modules\l/com/uart_drop.c" alt="" coords="6285,191,6439,233"/>
+<area shape="rect" id="node36" href="$config__mkk__v2_8c.html" title="sw/airborne/modules\l/config/config_mkk_v2.c" alt="" coords="6463,191,6637,233"/>
+<area shape="rect" id="node37" href="$sys__mon_8c.html" title="sw/airborne/modules\l/core/sys_mon.c" alt="" coords="6661,191,6815,233"/>
+<area shape="rect" id="node38" href="$mavlink_8h.html" title="Basic MAVLink datalink implementation. " alt="" coords="6839,191,6994,233"/>
+<area shape="rect" id="node39" href="$mavlink__decoder_8h.html" title="simple decoder of mavlink message " alt="" coords="7017,191,7216,233"/>
+<area shape="rect" id="node40" href="$xtend__rssi_8c.html" title="This measures the rssi pwm signal from a Digi XTend radio modem and sends a message with the info..." alt="" coords="7240,191,7396,233"/>
+<area shape="rect" id="node41" href="$atmega__i2c__cam__ctrl_8c.html" title="Interface with digital camera though AVR AtMega chip. " alt="" coords="7421,184,7575,240"/>
+<area shape="rect" id="node42" href="$dc_8c.html" title="Standard Digital Camera Control Interface. " alt="" coords="7599,191,7754,233"/>
+<area shape="rect" id="node43" href="$sim__i2c__cam__ctrl_8c.html" title="Simulated Interface with digital camera. " alt="" coords="7778,184,7933,240"/>
+<area shape="rect" id="node44" href="$MPPT_8c.html" title="Solar cells MPTT monitoring. " alt="" coords="7957,191,8111,233"/>
+<area shape="rect" id="node45" href="$enose_8c.html" title="sw/airborne/modules\l/enose/enose.c" alt="" coords="8135,191,8290,233"/>
+<area shape="rect" id="node46" href="$gsm_8c.html" title="sw/airborne/modules\l/gsm/gsm.c" alt="" coords="8314,191,8469,233"/>
+<area shape="rect" id="node47" href="$qr__code__spi__link_8c.html" title="sw/airborne/modules\l/gumstix_interface/qr\l_code_spi_link.c" alt="" coords="8493,184,8650,240"/>
+<area shape="rect" id="node48" href="$hott_8c.html" title="Graupner HOTT telemetry control module. " alt="" coords="8674,191,8829,233"/>
+<area shape="rect" id="node49" href="$ins__module_8h.html" title="Device independent INS code. " alt="" coords="8853,191,9007,233"/>
+<area shape="rect" id="node50" href="$alt__filter_8c.html" title="sw/airborne/modules\l/ins/alt_filter.c" alt="" coords="9031,191,9186,233"/>
 </map>

@@ -26,5 +26,7 @@ var stabilization__attitude__quat__indi_8h =
     [ "g2", "stabilization__attitude__quat__indi_8h.html#aee9971139118d56815564304450c4775", null ],
     [ "g_est", "stabilization__attitude__quat__indi_8h.html#ae8b35259d90fde48938fc8b82be75fc6", null ],
     [ "reference_acceleration", "stabilization__attitude__quat__indi_8h.html#a6be6232124313cc99a13ce5c9f453b6a", null ],
+    [ "stab_att_sp_euler", "stabilization__attitude__quat__indi_8h.html#a5b355848d1ce79a73b3fe67c8e86cd42", null ],
+    [ "stab_att_sp_quat", "stabilization__attitude__quat__indi_8h.html#acec5709f25760d7094e4f0c9bb5be2ec", null ],
     [ "use_adaptive_indi", "stabilization__attitude__quat__indi_8h.html#a8c696ef38ac7273d571a4e259518a0ab", null ]
 ];

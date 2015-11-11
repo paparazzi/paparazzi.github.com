@@ -3,9 +3,9 @@ var anemotaxis_8c =
     [ "status", "anemotaxis_8c.html#a015eb90e0de9f16e87bd149d4b9ce959", [
       [ "UTURN", "anemotaxis_8c.html#a015eb90e0de9f16e87bd149d4b9ce959aba124336c528f7b9755eb778bdc45f5a", null ],
       [ "CROSSWIND", "anemotaxis_8c.html#a015eb90e0de9f16e87bd149d4b9ce959af98b9f650bf7c440948278b6049bb3cf", null ],
-      [ "UTURN", "anemotaxis_8c.html#a015eb90e0de9f16e87bd149d4b9ce959aba124336c528f7b9755eb778bdc45f5a", null ],
-      [ "SEGMENT", "anemotaxis_8c.html#a015eb90e0de9f16e87bd149d4b9ce959a27b259b0b507f42df31ed13cc0a5d569", null ],
-      [ "DOWNWIND", "anemotaxis_8c.html#a015eb90e0de9f16e87bd149d4b9ce959a35abed5af66323d351a30da96835fea5", null ]
+      [ "UTURN", "discsurvey_8c.html#a015eb90e0de9f16e87bd149d4b9ce959aba124336c528f7b9755eb778bdc45f5a", null ],
+      [ "SEGMENT", "discsurvey_8c.html#a015eb90e0de9f16e87bd149d4b9ce959a27b259b0b507f42df31ed13cc0a5d569", null ],
+      [ "DOWNWIND", "discsurvey_8c.html#a015eb90e0de9f16e87bd149d4b9ce959a35abed5af66323d351a30da96835fea5", null ]
     ] ],
     [ "last_plume_was_here", "anemotaxis_8c.html#a3fa47975128a835ea2b558c2d0249823", null ],
     [ "nav_anemotaxis", "anemotaxis_8c.html#a9a1fd3d6af839a60270308669139d1c4", null ],

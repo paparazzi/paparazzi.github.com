@@ -1,51 +1,51 @@
 <map id="sw/airborne/arch/stm32/mcu_periph/spi_arch.h" name="sw/airborne/arch/stm32/mcu_periph/spi_arch.h">
-<area shape="rect" id="node3" href="$spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API. " alt="" coords="3924,99,4097,143"/>
-<area shape="rect" id="node101" href="$max3100__hw_8h.html" title="sw/airborne/modules\l/max3100/max3100_hw.h" alt="" coords="6031,99,6215,143"/>
-<area shape="rect" id="node5" href="$linux_2mcu__periph_2spi__arch_8c.html" title="Handling of SPI hardware for Linux. " alt="" coords="7749,201,7917,245"/>
-<area shape="rect" id="node7" href="$ADS8344_8c.html" title="sw/airborne/arch/lpc21\l/ADS8344.c" alt="" coords="5,201,171,245"/>
-<area shape="rect" id="node9" href="$lpc21_2mcu__periph_2spi__arch_8c.html" title="Handling of SPI hardware for lpc21xx. " alt="" coords="195,201,363,245"/>
-<area shape="rect" id="node11" href="$spi__slave__hs__arch_8c.html" title="Highspeed SPI Slave Interface. " alt="" coords="387,193,552,253"/>
-<area shape="rect" id="node13" href="$lcd__dogm__hw_8h.html" title="sw/airborne/arch/lpc21\l/modules/display/lcd_dogm_hw.h" alt="" coords="840,201,1069,245"/>
-<area shape="rect" id="node19" href="$mag__micromag__fw__hw_8h.html" title="sw/airborne/arch/lpc21\l/modules/sensors/mag_micromag\l_fw_hw.h" alt="" coords="576,193,816,253"/>
-<area shape="rect" id="node25" href="$lpc21_2peripherals_2ms2100__arch_8h.html" title="LPC21xx specific functions for the ms2100 magnetic sensor from PNI. " alt="" coords="1093,201,1293,245"/>
-<area shape="rect" id="node27" href="$sim_2mcu__periph_2spi__arch_8c.html" title="Dummy functions for handling of SPI hardware in sim. " alt="" coords="1317,201,1485,245"/>
-<area shape="rect" id="node29" href="$stm32_2mcu__periph_2spi__arch_8c.html" title="Handling of SPI hardware for STM32. " alt="" coords="1509,201,1680,245"/>
-<area shape="rect" id="node31" href="$stm32_2peripherals_2ms2100__arch_8h.html" title="STM32 specific functions for the ms2100 magnetic sensor from PNI. " alt="" coords="2584,201,2784,245"/>
-<area shape="rect" id="node33" href="$ms2100_8h.html" title="Driver for the ms2100 magnetic sensor from PNI. " alt="" coords="1933,310,2104,354"/>
-<area shape="rect" id="node35" href="$ms2100_8c.html" title="Driver for the ms2100 magnetic sensor from PNI. " alt="" coords="1872,411,2043,455"/>
-<area shape="rect" id="node37" href="$imu__krooz__memsic_8h.html" title="Driver for the IMU on the KroozSD Big Rotorcraft Edition board. " alt="" coords="1984,201,2184,245"/>
-<area shape="rect" id="node39" href="$link__mcu__spi_8h.html" title="Transport for the communication between FBW and AP via SPI. " alt="" coords="2208,201,2363,245"/>
-<area shape="rect" id="node41" href="$spi_8c.html" title="Architecture independent SPI (Serial Peripheral Interface) API. " alt="" coords="2387,201,2560,245"/>
-<area shape="rect" id="node43" href="$lcd__dogm_8h.html" title="sw/airborne/modules\l/display/lcd_dogm.h" alt="" coords="1704,201,1859,245"/>
-<area shape="rect" id="node46" href="$qr__code__spi__link_8c.html" title="sw/airborne/modules\l/gumstix_interface/qr\l_code_spi_link.c" alt="" coords="2808,193,2965,253"/>
-<area shape="rect" id="node48" href="$ahrs__chimu__spi_8c.html" title="sw/airborne/modules\l/ins/ahrs_chimu_spi.c" alt="" coords="2989,201,3147,245"/>
-<area shape="rect" id="node50" href="$ins__vn100_8c.html" title="sw/airborne/modules\l/ins/ins_vn100.c" alt="" coords="3171,201,3325,245"/>
-<area shape="rect" id="node52" href="$high__speed__logger__direct__memory_8c.html" title="sw/airborne/modules\l/loggers/high_speed\l_logger_direct_memory.c" alt="" coords="3349,193,3531,253"/>
-<area shape="rect" id="node54" href="$high__speed__logger__spi__link_8c.html" title="sw/airborne/modules\l/loggers/high_speed\l_logger_spi_link.c" alt="" coords="3555,193,3709,253"/>
-<area shape="rect" id="node56" href="$max7456_8c.html" title="Maxim MAX7456 single&#45;channel monochrome on&#45;screen display driver. " alt="" coords="3733,201,3893,245"/>
-<area shape="rect" id="node58" href="$baro__MS5534A_8c.html" title="Handling of the MS5534a pressure sensor. " alt="" coords="3917,201,4104,245"/>
-<area shape="rect" id="node60" href="$baro__scp_8c.html" title="sw/airborne/modules\l/sensors/baro_scp.c" alt="" coords="4128,201,4283,245"/>
-<area shape="rect" id="node62" href="$ads1220_8h.html" title="Driver for the ADS1220 24&#45;bits ADC from TI SPI communication. " alt="" coords="4307,201,4477,245"/>
-<area shape="rect" id="node64" href="$adxl345__spi_8h.html" title="Driver for the accelerometer ADXL345 from Analog Devices using SPI. " alt="" coords="4501,201,4672,245"/>
-<area shape="rect" id="node66" href="$cyrf6936_8h.html" title="Driver for the cyrf6936 2.4GHz radio chip. " alt="" coords="4747,201,4917,245"/>
-<area shape="rect" id="node68" href="$cyrf6936_8c.html" title="Driver for the cyrf6936 2.4GHz radio chip. " alt="" coords="4685,310,4856,354"/>
-<area shape="rect" id="node71" href="$l3gd20__spi_8h.html" title="Driver for L3GD20 3&#45;axis gyroscope from ST using SPI. " alt="" coords="4941,201,5112,245"/>
-<area shape="rect" id="node73" href="$lis302dl__spi_8h.html" title="Driver for LIS302DL 3&#45;axis accelerometer from ST using SPI. " alt="" coords="5136,201,5307,245"/>
-<area shape="rect" id="node75" href="$max1168_8c.html" title="sw/airborne/peripherals\l/max1168.c" alt="" coords="5331,201,5501,245"/>
-<area shape="rect" id="node77" href="$mcp355x_8c.html" title="Driver for MCP3550/1/3. " alt="" coords="5525,201,5696,245"/>
-<area shape="rect" id="node79" href="$mpu60x0__spi_8h.html" title="Driver for the MPU&#45;60X0 using SPI. " alt="" coords="5720,201,5891,245"/>
-<area shape="rect" id="node81" href="$mpu9250__spi_8h.html" title="Driver for the MPU&#45;9250 using SPI. " alt="" coords="5915,201,6085,245"/>
-<area shape="rect" id="node85" href="$ms5611__spi_8h.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA pressure/temperature sensor interface for SPI..." alt="" coords="6109,201,6280,245"/>
-<area shape="rect" id="node87" href="$sst25vfxxxx_8h.html" title="Driver for the SST25Vxxxx flash chips. " alt="" coords="6304,201,6475,245"/>
-<area shape="rect" id="node89" href="$subsystems_2datalink_2superbitrf_8c.html" title="sw/airborne/subsystems\l/datalink/superbitrf.c" alt="" coords="6499,201,6675,245"/>
-<area shape="rect" id="node91" href="$w5100_8c.html" title="W5100 ethernet chip I/O. " alt="" coords="6699,201,6875,245"/>
-<area shape="rect" id="node93" href="$imu__aspirin_8c.html" title="Driver for the Aspirin v1.x IMU using SPI for the accelerometer. " alt="" coords="6899,201,7075,245"/>
-<area shape="rect" id="node95" href="$imu__aspirin__2__spi_8c.html" title="Driver for the Aspirin v2.x IMU using SPI for the MPU6000. " alt="" coords="7099,201,7277,245"/>
-<area shape="rect" id="node97" href="$imu__mpu6000__hmc5883_8c.html" title="Driver for IMU with MPU6000 via SPI and HMC5883 via I2c. " alt="" coords="7301,201,7525,245"/>
-<area shape="rect" id="node99" href="$imu__px4fmu_8c.html" title="Driver for the PX4FMU SPI1 for the MPU6000 and I2C2 for the HMC5883. " alt="" coords="7549,201,7725,245"/>
-<area shape="rect" id="node15" href="$lcd__dogm__hw_8c.html" title="sw/airborne/arch/lpc21\l/modules/display/lcd_dogm_hw.c" alt="" coords="840,310,1069,354"/>
-<area shape="rect" id="node17" href="$lcd__dogm_8c.html" title="sw/airborne/modules\l/display/lcd_dogm.c" alt="" coords="1399,310,1553,354"/>
-<area shape="rect" id="node21" href="$mag__micromag__fw__hw_8c.html" title="sw/airborne/arch/lpc21\l/modules/sensors/mag_micromag\l_fw_hw.c" alt="" coords="333,302,573,362"/>
-<area shape="rect" id="node23" href="$mag__micromag__fw_8c.html" title="sw/airborne/modules\l/sensors/mag_micromag_fw.c" alt="" coords="597,310,808,354"/>
-<area shape="rect" id="node103" href="$max3100__hw_8c.html" title="sw/airborne/modules\l/max3100/max3100_hw.c" alt="" coords="7941,201,8125,245"/>
+<area shape="rect" id="node2" href="$spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API. " alt="" coords="3946,95,4121,136"/>
+<area shape="rect" id="node49" href="$max3100__hw_8h.html" title="sw/airborne/modules\l/max3100/max3100_hw.h" alt="" coords="6055,95,6241,136"/>
+<area shape="rect" id="node3" href="$linux_2mcu__periph_2spi__arch_8c.html" title="Handling of SPI hardware for Linux. " alt="" coords="7774,191,7943,233"/>
+<area shape="rect" id="node4" href="$ADS8344_8c.html" title="sw/airborne/arch/lpc21\l/ADS8344.c" alt="" coords="5,191,171,233"/>
+<area shape="rect" id="node5" href="$lpc21_2mcu__periph_2spi__arch_8c.html" title="Handling of SPI hardware for lpc21xx. " alt="" coords="195,191,365,233"/>
+<area shape="rect" id="node6" href="$spi__slave__hs__arch_8c.html" title="Highspeed SPI Slave Interface. " alt="" coords="389,184,555,240"/>
+<area shape="rect" id="node7" href="$lcd__dogm__hw_8h.html" title="sw/airborne/arch/lpc21\l/modules/display/lcd_dogm_hw.h" alt="" coords="843,191,1074,233"/>
+<area shape="rect" id="node10" href="$mag__micromag__fw__hw_8h.html" title="sw/airborne/arch/lpc21\l/modules/sensors/mag_micromag\l_fw_hw.h" alt="" coords="579,184,819,240"/>
+<area shape="rect" id="node13" href="$lpc21_2peripherals_2ms2100__arch_8h.html" title="LPC21xx specific functions for the ms2100 magnetic sensor from PNI. " alt="" coords="1099,191,1299,233"/>
+<area shape="rect" id="node14" href="$sim_2mcu__periph_2spi__arch_8c.html" title="Dummy functions for handling of SPI hardware in sim. " alt="" coords="1323,191,1493,233"/>
+<area shape="rect" id="node15" href="$stm32_2mcu__periph_2spi__arch_8c.html" title="Handling of SPI hardware for STM32. " alt="" coords="1517,191,1689,233"/>
+<area shape="rect" id="node16" href="$stm32_2peripherals_2ms2100__arch_8h.html" title="STM32 specific functions for the ms2100 magnetic sensor from PNI. " alt="" coords="2599,191,2799,233"/>
+<area shape="rect" id="node17" href="$ms2100_8h.html" title="Driver for the ms2100 magnetic sensor from PNI. " alt="" coords="1943,295,2113,337"/>
+<area shape="rect" id="node18" href="$ms2100_8c.html" title="Driver for the ms2100 magnetic sensor from PNI. " alt="" coords="1881,392,2052,433"/>
+<area shape="rect" id="node19" href="$imu__krooz__memsic_8h.html" title="Driver for the IMU on the KroozSD Big Rotorcraft Edition board. " alt="" coords="1994,191,2195,233"/>
+<area shape="rect" id="node20" href="$link__mcu__spi_8h.html" title="Transport for the communication between FBW and AP via SPI. " alt="" coords="2220,191,2375,233"/>
+<area shape="rect" id="node21" href="$spi_8c.html" title="Architecture independent SPI (Serial Peripheral Interface) API. " alt="" coords="2399,191,2574,233"/>
+<area shape="rect" id="node22" href="$lcd__dogm_8h.html" title="sw/airborne/modules\l/display/lcd_dogm.h" alt="" coords="1713,191,1868,233"/>
+<area shape="rect" id="node23" href="$qr__code__spi__link_8c.html" title="sw/airborne/modules\l/gumstix_interface/qr\l_code_spi_link.c" alt="" coords="2823,184,2980,240"/>
+<area shape="rect" id="node24" href="$ahrs__chimu__spi_8c.html" title="sw/airborne/modules\l/ins/ahrs_chimu_spi.c" alt="" coords="3005,191,3163,233"/>
+<area shape="rect" id="node25" href="$ins__vn100_8c.html" title="sw/airborne/modules\l/ins/ins_vn100.c" alt="" coords="3188,191,3343,233"/>
+<area shape="rect" id="node26" href="$high__speed__logger__direct__memory_8c.html" title="sw/airborne/modules\l/loggers/high_speed\l_logger_direct_memory.c" alt="" coords="3367,184,3550,240"/>
+<area shape="rect" id="node27" href="$high__speed__logger__spi__link_8c.html" title="sw/airborne/modules\l/loggers/high_speed\l_logger_spi_link.c" alt="" coords="3575,184,3729,240"/>
+<area shape="rect" id="node28" href="$max7456_8c.html" title="Maxim MAX7456 single&#45;channel monochrome on&#45;screen display driver. " alt="" coords="3754,191,3915,233"/>
+<area shape="rect" id="node29" href="$baro__MS5534A_8c.html" title="Handling of the MS5534a pressure sensor. " alt="" coords="3939,191,4127,233"/>
+<area shape="rect" id="node30" href="$baro__scp_8c.html" title="sw/airborne/modules\l/sensors/baro_scp.c" alt="" coords="4152,191,4307,233"/>
+<area shape="rect" id="node31" href="$ads1220_8h.html" title="Driver for the ADS1220 24&#45;bits ADC from TI SPI communication. " alt="" coords="4331,191,4501,233"/>
+<area shape="rect" id="node32" href="$adxl345__spi_8h.html" title="Driver for the accelerometer ADXL345 from Analog Devices using SPI. " alt="" coords="4525,191,4696,233"/>
+<area shape="rect" id="node33" href="$cyrf6936_8h.html" title="Driver for the cyrf6936 2.4GHz radio chip. " alt="" coords="4771,191,4941,233"/>
+<area shape="rect" id="node34" href="$cyrf6936_8c.html" title="Driver for the cyrf6936 2.4GHz radio chip. " alt="" coords="4709,295,4880,337"/>
+<area shape="rect" id="node35" href="$l3gd20__spi_8h.html" title="Driver for L3GD20 3&#45;axis gyroscope from ST using SPI. " alt="" coords="4965,191,5136,233"/>
+<area shape="rect" id="node36" href="$lis302dl__spi_8h.html" title="Driver for LIS302DL 3&#45;axis accelerometer from ST using SPI. " alt="" coords="5160,191,5331,233"/>
+<area shape="rect" id="node37" href="$max1168_8c.html" title="sw/airborne/peripherals\l/max1168.c" alt="" coords="5355,191,5525,233"/>
+<area shape="rect" id="node38" href="$mcp355x_8c.html" title="Driver for MCP3550/1/3. " alt="" coords="5549,191,5720,233"/>
+<area shape="rect" id="node39" href="$mpu60x0__spi_8h.html" title="Driver for the MPU&#45;60X0 using SPI. " alt="" coords="5744,191,5915,233"/>
+<area shape="rect" id="node40" href="$mpu9250__spi_8h.html" title="Driver for the MPU&#45;9250 using SPI. " alt="" coords="5939,191,6109,233"/>
+<area shape="rect" id="node41" href="$ms5611__spi_8h.html" title="Measurement Specialties (Intersema) MS5611&#45;01BA pressure/temperature sensor interface for SPI..." alt="" coords="6133,191,6304,233"/>
+<area shape="rect" id="node42" href="$sst25vfxxxx_8h.html" title="Driver for the SST25Vxxxx flash chips. " alt="" coords="6328,191,6499,233"/>
+<area shape="rect" id="node43" href="$subsystems_2datalink_2superbitrf_8c.html" title="sw/airborne/subsystems\l/datalink/superbitrf.c" alt="" coords="6523,191,6699,233"/>
+<area shape="rect" id="node44" href="$w5100_8c.html" title="W5100 ethernet chip I/O. " alt="" coords="6723,191,6899,233"/>
+<area shape="rect" id="node45" href="$imu__aspirin_8c.html" title="Driver for the Aspirin v1.x IMU using SPI for the accelerometer. " alt="" coords="6923,191,7099,233"/>
+<area shape="rect" id="node46" href="$imu__aspirin__2__spi_8c.html" title="Driver for the Aspirin v2.x IMU using SPI for the MPU6000. " alt="" coords="7123,191,7301,233"/>
+<area shape="rect" id="node47" href="$imu__mpu6000__hmc5883_8c.html" title="Driver for IMU with MPU6000 via SPI and HMC5883 via I2c. " alt="" coords="7325,191,7549,233"/>
+<area shape="rect" id="node48" href="$imu__px4fmu_8c.html" title="Driver for the PX4FMU SPI1 for the MPU6000 and I2C2 for the HMC5883. " alt="" coords="7573,191,7749,233"/>
+<area shape="rect" id="node8" href="$lcd__dogm__hw_8c.html" title="sw/airborne/arch/lpc21\l/modules/display/lcd_dogm_hw.c" alt="" coords="844,295,1073,337"/>
+<area shape="rect" id="node9" href="$lcd__dogm_8c.html" title="sw/airborne/modules\l/display/lcd_dogm.c" alt="" coords="1405,295,1560,337"/>
+<area shape="rect" id="node11" href="$mag__micromag__fw__hw_8c.html" title="sw/airborne/arch/lpc21\l/modules/sensors/mag_micromag\l_fw_hw.c" alt="" coords="337,288,577,344"/>
+<area shape="rect" id="node12" href="$mag__micromag__fw_8c.html" title="sw/airborne/modules\l/sensors/mag_micromag_fw.c" alt="" coords="601,295,812,337"/>
+<area shape="rect" id="node50" href="$max3100__hw_8c.html" title="sw/airborne/modules\l/max3100/max3100_hw.c" alt="" coords="7968,191,8152,233"/>
 </map>

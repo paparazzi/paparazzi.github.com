@@ -9,8 +9,8 @@ var inttypes_8h =
     [ "uint64_t", "inttypes_8h.html#aaa5d1cd013383c889537491c3cfd9aad", null ],
     [ "uint8_t", "inttypes_8h.html#aba7bc1797add20fe3efdf37ced1182c5", null ],
     [ "boolean", "inttypes_8h.html#a7c6368b321bd9acd0149b030bb8275ed", [
-      [ "False", "inttypes_8h.html#a7c6368b321bd9acd0149b030bb8275edaf9d46b7804d93a4fcde88489a1b68c24", null ],
-      [ "True", "inttypes_8h.html#a7c6368b321bd9acd0149b030bb8275eda6d32c34708a0a3507c4bdb89219d650b", null ],
+      [ "False", "types_8h.html#a7c6368b321bd9acd0149b030bb8275edaf9d46b7804d93a4fcde88489a1b68c24", null ],
+      [ "True", "types_8h.html#a7c6368b321bd9acd0149b030bb8275eda6d32c34708a0a3507c4bdb89219d650b", null ],
       [ "False", "inttypes_8h.html#a7c6368b321bd9acd0149b030bb8275edaf9d46b7804d93a4fcde88489a1b68c24", null ],
       [ "True", "inttypes_8h.html#a7c6368b321bd9acd0149b030bb8275eda6d32c34708a0a3507c4bdb89219d650b", null ]
     ] ]

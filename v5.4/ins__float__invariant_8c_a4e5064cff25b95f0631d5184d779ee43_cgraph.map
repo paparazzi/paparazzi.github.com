@@ -1,26 +1,26 @@
 <map id="ahrs_propagate" name="ahrs_propagate">
-<area shape="rect" id="node3" href="$ins__float__invariant_8c.html#ac0fc54bd359850973c5cd1307df31da0" title="Compute correction vectors E = ( ŷ &#45; y ) LE, ME, NE, OE : ( gain matrix * error ) ..." alt="" coords="227,54,328,82"/>
-<area shape="rect" id="node5" href="$pprz__algebra__float_8h.html#acd71810b99ae462101d967468d0dcb25" title="float_quat_invert" alt="" coords="443,29,571,57"/>
-<area shape="rect" id="node7" href="$pprz__algebra__float_8c.html#a998feaa509fd80038aa552e61c7111e6" title="rotate 3D vector by quaternion. " alt="" coords="443,80,571,108"/>
-<area shape="rect" id="node11" href="$ins__float__invariant_8c.html#a5be5e848a4326763bf2bf0ab5ec053b5" title="init_invariant_state" alt="" coords="207,206,348,234"/>
-<area shape="rect" id="node15" href="$pprz__algebra__int_8c.html#a7d9bca983887baf028c121876125efcf" title="rotate anglular rates by transposed rotation matrix. " alt="" coords="176,257,379,285"/>
-<area shape="rect" id="node17" href="$pprz__algebra__int_8c.html#ac992f3c60c036759941405f6e754b55b" title="rotate 3D vector by transposed rotation matrix. " alt="" coords="187,308,368,336"/>
-<area shape="rect" id="node19" href="$ins__float__invariant_8c.html#a8f6d3b43296e7262f60dbe9083ff92f1" title="Compute dynamic mode. " alt="" coords="216,156,339,184"/>
-<area shape="rect" id="node29" href="$group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int). " alt="" coords="200,358,355,386"/>
-<area shape="rect" id="node35" href="$pprz__rk__float_8h.html#aec82ad92b63bfd3f0b29d2c2b9e926a5" title="Fourth&#45;Order Runge&#45;Kutta. " alt="" coords="203,409,352,437"/>
-<area shape="rect" id="node43" href="$group__state__acceleration.html#ga27b8f24af6ddce14389efaa5ec119967" title="Set acceleration in NED coordinates (float). " alt="" coords="204,460,351,488"/>
-<area shape="rect" id="node45" href="$group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="200,510,355,538"/>
-<area shape="rect" id="node47" href="$group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float). " alt="" coords="183,561,372,589"/>
-<area shape="rect" id="node51" href="$group__state__position.html#ga9ff9643cd109a27a481d5883652d0f08" title="Set position from local NED coordinates (float). " alt="" coords="196,612,359,640"/>
-<area shape="rect" id="node53" href="$group__state__velocity.html#gae6549b15cd961047c89481ab2d87171f" title="Set ground speed in local NED coordinates (float). " alt="" coords="200,662,355,690"/>
-<area shape="rect" id="node13" href="$pprz__algebra__float_8h.html#a0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity " alt="" coords="437,282,576,310"/>
-<area shape="rect" id="node21" href="$pprz__algebra__float_8h.html#a132a789820c2d2610906e87120af9d18" title="a = 0 " alt="" coords="448,130,565,158"/>
-<area shape="rect" id="node23" href="$pprz__algebra__float_8c.html#af9863ba4e0718dd826af1bf1bf891aaa" title="Quaternion derivative from rotational velocity. " alt="" coords="429,181,584,209"/>
-<area shape="rect" id="node25" href="$ins__float__invariant_8c.html#a1f54c7682a956a0c095b152276bf60cf" title="Right multiplication by a quaternion. " alt="" coords="427,232,587,260"/>
-<area shape="rect" id="node31" href="$group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title="orientationCalcRMat_i" alt="" coords="427,346,587,374"/>
-<area shape="rect" id="node33" href="$pprz__algebra__int_8c.html#a3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix. " alt="" coords="635,346,781,374"/>
-<area shape="rect" id="node37" href="$pprz__algebra__float_8h.html#a054c0afdf1c4c9316dffe8763363a1b8" title="a += b " alt="" coords="449,397,564,425"/>
-<area shape="rect" id="node39" href="$pprz__algebra__float_8h.html#a2a16655dc0d98a40ff17c6728fa1e4fb" title="o = a * s " alt="" coords="445,448,568,476"/>
-<area shape="rect" id="node41" href="$pprz__algebra__float_8h.html#a0c9a0d18305c582cf58a79771919c1e9" title="o = a + b " alt="" coords="448,498,565,526"/>
-<area shape="rect" id="node49" href="$group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float). " alt="" coords="429,561,584,589"/>
+<area shape="rect" id="node2" href="$ins__float__invariant_8c.html#ac0fc54bd359850973c5cd1307df31da0" title="Compute correction vectors E = ( ŷ &#45; y ) LE, ME, NE, OE : ( gain matrix * error ) ..." alt="" coords="226,55,329,82"/>
+<area shape="rect" id="node3" href="$pprz__algebra__float_8h.html#acd71810b99ae462101d967468d0dcb25" title="float_quat_invert" alt="" coords="442,30,571,56"/>
+<area shape="rect" id="node4" href="$pprz__algebra__float_8c.html#a998feaa509fd80038aa552e61c7111e6" title="rotate 3D vector by quaternion. " alt="" coords="442,80,571,107"/>
+<area shape="rect" id="node5" href="$ins__float__invariant_8c.html#a5be5e848a4326763bf2bf0ab5ec053b5" title="init_invariant_state" alt="" coords="206,207,349,234"/>
+<area shape="rect" id="node7" href="$pprz__algebra__int_8c.html#a7d9bca983887baf028c121876125efcf" title="rotate anglular rates by transposed rotation matrix. " alt="" coords="176,258,379,284"/>
+<area shape="rect" id="node8" href="$pprz__algebra__int_8c.html#ac992f3c60c036759941405f6e754b55b" title="rotate 3D vector by transposed rotation matrix. " alt="" coords="186,308,369,335"/>
+<area shape="rect" id="node9" href="$ins__float__invariant_8c.html#a8f6d3b43296e7262f60dbe9083ff92f1" title="Compute dynamic mode. " alt="" coords="215,156,339,183"/>
+<area shape="rect" id="node13" href="$group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int). " alt="" coords="199,359,355,386"/>
+<area shape="rect" id="node16" href="$pprz__rk__float_8h.html#aec82ad92b63bfd3f0b29d2c2b9e926a5" title="Fourth&#45;Order Runge&#45;Kutta. " alt="" coords="203,410,352,436"/>
+<area shape="rect" id="node20" href="$group__state__acceleration.html#ga27b8f24af6ddce14389efaa5ec119967" title="Set acceleration in NED coordinates (float). " alt="" coords="203,460,351,487"/>
+<area shape="rect" id="node21" href="$group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="199,511,355,538"/>
+<area shape="rect" id="node22" href="$group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float). " alt="" coords="182,562,373,588"/>
+<area shape="rect" id="node24" href="$group__state__position.html#ga9ff9643cd109a27a481d5883652d0f08" title="Set position from local NED coordinates (float). " alt="" coords="195,612,359,639"/>
+<area shape="rect" id="node25" href="$group__state__velocity.html#gae6549b15cd961047c89481ab2d87171f" title="Set ground speed in local NED coordinates (float). " alt="" coords="200,663,355,690"/>
+<area shape="rect" id="node6" href="$pprz__algebra__float_8h.html#a0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity " alt="" coords="437,283,577,310"/>
+<area shape="rect" id="node10" href="$pprz__algebra__float_8h.html#a132a789820c2d2610906e87120af9d18" title="a = 0 " alt="" coords="447,131,566,158"/>
+<area shape="rect" id="node11" href="$pprz__algebra__float_8c.html#af9863ba4e0718dd826af1bf1bf891aaa" title="Quaternion derivative from rotational velocity. " alt="" coords="429,182,584,208"/>
+<area shape="rect" id="node12" href="$ins__float__invariant_8c.html#a1f54c7682a956a0c095b152276bf60cf" title="Right multiplication by a quaternion. " alt="" coords="427,232,587,259"/>
+<area shape="rect" id="node14" href="$group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title="orientationCalcRMat_i" alt="" coords="427,347,587,374"/>
+<area shape="rect" id="node15" href="$pprz__algebra__int_8c.html#a3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix. " alt="" coords="635,347,781,374"/>
+<area shape="rect" id="node17" href="$pprz__algebra__float_8h.html#a054c0afdf1c4c9316dffe8763363a1b8" title="a += b " alt="" coords="449,398,564,424"/>
+<area shape="rect" id="node18" href="$pprz__algebra__float_8h.html#a2a16655dc0d98a40ff17c6728fa1e4fb" title="o = a * s " alt="" coords="445,448,568,475"/>
+<area shape="rect" id="node19" href="$pprz__algebra__float_8h.html#a0c9a0d18305c582cf58a79771919c1e9" title="o = a + b " alt="" coords="447,499,566,526"/>
+<area shape="rect" id="node23" href="$group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float). " alt="" coords="429,562,584,588"/>
 </map>

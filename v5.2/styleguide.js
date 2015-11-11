@@ -15,7 +15,6 @@ var styleguide =
       [ "Doxygen Text Inputs", "styledoxygen.html#styledoxytext", null ]
     ] ],
     [ "Python Style Guide", "stylepython.html", [
-      [ "Formatting Guide", "stylepython.html#styleformat", null ],
       [ "Python 2 and 3 compatibility", "stylepython.html#stylecompat", null ]
     ] ]
 ];

@@ -1,51 +1,51 @@
 <map id="main" name="main">
-<area shape="rect" id="node3" href="$linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="119,81,263,109"/>
-<area shape="rect" id="node7" href="$rotorcraft_2main_8c.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="109,237,272,265"/>
-<area shape="rect" id="node31" href="$stm32_2uart__tunnel_8c.html#a319a645047f275499aa30b0bc08c6e10" title="main_event" alt="" coords="616,426,712,454"/>
-<area shape="rect" id="node39" href="$demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="151,933,231,961"/>
-<area shape="rect" id="node57" href="$linux_2mcu__periph_2sys__time__arch_8h.html#ac7670fcda069c778861e6d2e36f212aa" title="sys_time_usleep" alt="" coords="817,553,945,581"/>
-<area shape="rect" id="node5" href="$sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="351,5,487,33"/>
-<area shape="rect" id="node9" href="$apogee_2baro__board_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00" title="baro_periodic" alt="" coords="365,375,472,403"/>
-<area shape="rect" id="node11" href="$electrical_8c.html#aeef6ce2fb40e76ed52df5a1d45646ba1" title="electrical_periodic" alt="" coords="351,55,487,83"/>
-<area shape="rect" id="node13" href="$rotorcraft_2main_8c.html#a6266a73fe8c0512f1de72cea96e5110b" title="failsafe_check" alt="" coords="364,106,473,134"/>
-<area shape="rect" id="node21" href="$stm32_2uart__tunnel_8c.html#a433218491d8e51ae032540c2c00d263f" title="main_periodic" alt="" coords="364,157,473,185"/>
-<area shape="rect" id="node23" href="$radio__control_8c.html#a3673b154cadd0d85e61e2fe36fdda1bd" title="radio_control_periodic_task" alt="" coords="321,207,516,235"/>
-<area shape="rect" id="node25" href="$sys__time_8h.html#a2fbb0aec3597ef35c23aeb7d376d1666" title="Check if timer has elapsed. " alt="" coords="341,258,496,302"/>
-<area shape="rect" id="node27" href="$rotorcraft_2main_8c.html#a7b3411ed88af39bbe3adea1e9d3aa1a8" title="telemetry_periodic" alt="" coords="348,325,489,353"/>
-<area shape="rect" id="node15" href="$rotorcraft_2autopilot_8c.html#a82c57502deaf7fb0dc0525b298611a87" title="autopilot_check_in\l_flight" alt="" coords="595,98,733,142"/>
-<area shape="rect" id="node17" href="$rotorcraft_2autopilot_8c.html#a3aaa2cf16ee3b25e8fca9bbd1d579d64" title="autopilot_set_mode" alt="" coords="589,165,739,193"/>
-<area shape="rect" id="node19" href="$gps_8c.html#af6a16adfe8c9a84b13f49b4ceb681b30" title="Periodic GPS check. " alt="" coords="591,47,737,75"/>
-<area shape="rect" id="node29" href="$rotorcraft_2autopilot_8c.html#a974326e4c446abb45f2c4ce43666412f" title="send_autopilot_version" alt="" coords="580,325,748,353"/>
-<area shape="rect" id="node33" href="$linux_2mcu__periph_2gpio__arch_8h.html#aa94dfa6db378d98566e22e193c7a8ab7" title="Clear a gpio output to low level. " alt="" coords="839,451,924,479"/>
-<area shape="rect" id="node35" href="$linux_2mcu__periph_2gpio__arch_8h.html#a5fee90e8e5af7de567890ffae5ed50c8" title="Read a gpio value. " alt="" coords="843,401,920,429"/>
-<area shape="rect" id="node37" href="$linux_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85" title="Set a gpio output to high level. " alt="" coords="844,502,919,530"/>
-<area shape="rect" id="node41" href="$ahrs__aligner_8c.html#a321c9a82fcb75074c3041cbf6906e5ea" title="ahrs_aligner_init" alt="" coords="356,983,481,1011"/>
-<area shape="rect" id="node45" href="$telemetry_8c.html#a4c92e515e0ce29dc4294304cb2749e76" title="Register a telemetry callback function. " alt="" coords="565,831,763,859"/>
-<area shape="rect" id="node47" href="$ahrs_8c.html#aa3721663c9df7c7af5613486a3566afb" title="AHRS initialization. " alt="" coords="381,1085,456,1113"/>
-<area shape="rect" id="node51" href="$downlink_8c.html#afd49e1738cc6ad57218b944dcb94f73b" title="downlink_init" alt="" coords="368,629,469,657"/>
-<area shape="rect" id="node75" href="$imu_8c.html#a86a06fe7a9831292bd92867da2d12f80" title="imu_init" alt="" coords="383,1034,455,1062"/>
-<area shape="rect" id="node83" href="$group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="381,1135,456,1163"/>
-<area shape="rect" id="node93" href="$group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float). " alt="" coords="341,1237,496,1265"/>
-<area shape="rect" id="node96" href="$demo__ahrs__actuators_8c.html#acd7f051f394d395b1b28750b8e853e9c" title="send_actuators" alt="" coords="359,1287,479,1315"/>
-<area shape="rect" id="node98" href="$demo__ahrs__actuators_8c.html#a65644c7fe2e327f01296b259bc106f85" title="send_alive" alt="" coords="375,679,463,707"/>
-<area shape="rect" id="node100" href="$demo__ahrs__actuators_8c.html#a974326e4c446abb45f2c4ce43666412f" title="send_autopilot_version" alt="" coords="335,730,503,758"/>
-<area shape="rect" id="node102" href="$demo__ahrs__actuators_8c.html#a4d3ebf2393fe597ab7a9a9e615ed2efe" title="send_commands" alt="" coords="353,781,484,809"/>
-<area shape="rect" id="node104" href="$settings_8c.html#a5f9a5a2e826aec11c77548f2a541fb9e" title="settings_init" alt="" coords="369,831,468,859"/>
-<area shape="rect" id="node106" href="$group__state__interface.html#gae841c56c9a83bf54bcdd8d7f166f2e2a" title="stateInit" alt="" coords="381,882,456,910"/>
-<area shape="rect" id="node108" href="$sys__time_8c.html#a60ef6df0154a4b93f4424fd809c466a3" title="Register a new system timer. " alt="" coords="331,1186,507,1214"/>
-<area shape="rect" id="node43" href="$ahrs__aligner_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="628,882,700,910"/>
-<area shape="rect" id="node49" href="$ahrs_8c.html#ad933997851f19f057be2d3c1d4b5b5d0" title="Switch to the output of another AHRS impl. " alt="" coords="616,1085,712,1113"/>
-<area shape="rect" id="node53" href="$pprz__transport_8c.html#a4a56f4299c84faa347591c6abf4b9c47" title="pprz_transport_init" alt="" coords="593,781,735,809"/>
-<area shape="rect" id="node55" href="$xbee_8c.html#a964a1e8461e9c1187e5d69f521e5e107" title="Initialisation in API mode and setting of the local address FIXME: busy wait. " alt="" coords="625,730,703,758"/>
-<area shape="rect" id="node59" href="$w5100_8c.html#a3a4ec6731e43710788d3e51f7749259c" title="w5100_init" alt="" coords="620,527,708,555"/>
-<area shape="rect" id="node66" href="$bluegiga_8c.html#ac8a60ccee96fbe718a27b6194f3f14e0" title="bluegiga_init" alt="" coords="613,578,715,606"/>
-<area shape="rect" id="node70" href="$pprzlog__transport_8c.html#a301368ea60ea8e1d7e50c0cf02a0a965" title="pprzlog_transport_init" alt="" coords="584,629,744,657"/>
-<area shape="rect" id="node72" href="$ivy__transport_8c.html#a5103b0ca25b6bd5abb6f92abae752927" title="ivy_transport_init" alt="" coords="599,679,729,707"/>
-<area shape="rect" id="node62" href="$linux_2mcu__periph_2gpio__arch_8h.html#a5b778ed65199db17a02961791e4ee8b8" title="Setup one or more pins of the given GPIO port as outputs. " alt="" coords="811,603,952,631"/>
-<area shape="rect" id="node78" href="$group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float). " alt="" coords="583,933,745,961"/>
-<area shape="rect" id="node81" href="$imu__apogee_8c.html#ad32faae58e391642ec8048cb11011998" title="must be defined by underlying hardware " alt="" coords="611,1034,717,1062"/>
-<area shape="rect" id="node85" href="$linux_2mcu__arch_8c.html#a87671303c7d4a9264b1ffbb07e87f454" title="mcu_arch_init" alt="" coords="609,1135,719,1163"/>
-<area shape="rect" id="node87" href="$group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc" title="Optional board init function called at the end of mcu_init(). " alt="" coords="621,1186,707,1214"/>
-<area shape="rect" id="node89" href="$sys__time_8c.html#a1e6b75f4db9128a3326d8a6283b0af43" title="sys_time_init" alt="" coords="612,1237,716,1265"/>
-<area shape="rect" id="node91" href="$led_8h.html#a9d9d9b1f30592189c3aa7358c626218f" title="led_init" alt="" coords="631,1287,697,1315"/>
+<area shape="rect" id="node2" href="$linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="117,236,261,263"/>
+<area shape="rect" id="node4" href="$rotorcraft_2main_8c.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="108,457,271,484"/>
+<area shape="rect" id="node20" href="$rotorcraft_2main_8c.html#a319a645047f275499aa30b0bc08c6e10" title="main_event" alt="" coords="368,247,465,273"/>
+<area shape="rect" id="node31" href="$rotorcraft_2main_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="149,972,229,999"/>
+<area shape="rect" id="node50" href="$linux_2mcu__periph_2sys__time__arch_8h.html#ac7670fcda069c778861e6d2e36f212aa" title="sys_time_usleep" alt="" coords="125,1023,253,1049"/>
+<area shape="rect" id="node3" href="$sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="348,196,485,223"/>
+<area shape="rect" id="node5" href="$apogee_2baro__board_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00" title="baro_periodic" alt="" coords="363,567,471,593"/>
+<area shape="rect" id="node6" href="$electrical_8c.html#aeef6ce2fb40e76ed52df5a1d45646ba1" title="electrical_periodic" alt="" coords="349,297,485,324"/>
+<area shape="rect" id="node7" href="$rotorcraft_2main_8c.html#a6266a73fe8c0512f1de72cea96e5110b" title="failsafe_check" alt="" coords="361,617,472,644"/>
+<area shape="rect" id="node13" href="$rotorcraft_2main_8c.html#a433218491d8e51ae032540c2c00d263f" title="main_periodic" alt="" coords="361,348,472,375"/>
+<area shape="rect" id="node16" href="$radio__control_8c.html#a3673b154cadd0d85e61e2fe36fdda1bd" title="radio_control_periodic_task" alt="" coords="319,399,515,425"/>
+<area shape="rect" id="node17" href="$sys__time_8h.html#a2fbb0aec3597ef35c23aeb7d376d1666" title="Check if timer has elapsed. " alt="" coords="339,450,494,491"/>
+<area shape="rect" id="node18" href="$rotorcraft_2main_8c.html#a7b3411ed88af39bbe3adea1e9d3aa1a8" title="telemetry_periodic" alt="" coords="346,516,487,543"/>
+<area shape="rect" id="node8" href="$rotorcraft_2autopilot_8c.html#a82c57502deaf7fb0dc0525b298611a87" title="autopilot_check_in\l_flight" alt="" coords="577,639,717,681"/>
+<area shape="rect" id="node10" href="$rotorcraft_2autopilot_8c.html#a3aaa2cf16ee3b25e8fca9bbd1d579d64" title="autopilot_set_mode" alt="" coords="799,427,948,453"/>
+<area shape="rect" id="node12" href="$gps_8c.html#af6a16adfe8c9a84b13f49b4ceb681b30" title="Periodic GPS check. " alt="" coords="574,588,721,615"/>
+<area shape="rect" id="node9" href="$group__state__acceleration.html#ga058e2128ff3a2a3ca5f3c606f4166dfe" title="Get acceleration in NED coordinates (float). " alt="" coords="799,536,948,563"/>
+<area shape="rect" id="node11" href="$rotorcraft_2autopilot_8c.html#a99409d6a32e6cce437a1c0354a2515eb" title="ahrs_is_aligned" alt="" coords="1017,401,1137,428"/>
+<area shape="rect" id="node14" href="$imu__apogee_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="optional. " alt="" coords="596,348,699,375"/>
+<area shape="rect" id="node15" href="$rotorcraft_2autopilot_8c.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="580,403,715,429"/>
+<area shape="rect" id="node19" href="$rotorcraft_2autopilot_8c.html#a974326e4c446abb45f2c4ce43666412f" title="send_autopilot_version" alt="" coords="563,487,732,513"/>
+<area shape="rect" id="node21" href="$group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07" title="MCU event functions. " alt="" coords="601,56,694,83"/>
+<area shape="rect" id="node24" href="$rotorcraft_2autopilot_8c.html#a7339f5741706cb9c2e2186b1174cc770" title="Get autopilot mode from two 2way switches. " alt="" coords="565,247,730,273"/>
+<area shape="rect" id="node30" href="$rotorcraft_2autopilot_8h.html#abba296c1e683df96046e568306fcbb69" title="Ground detection based on vertical acceleration. " alt="" coords="573,297,721,324"/>
+<area shape="rect" id="node22" href="$group__i2c.html#ga05763355d0e087ba41feab61dd773fe6" title="i2c_event" alt="" coords="832,5,915,32"/>
+<area shape="rect" id="node23" href="$lpc21_2usb__ser__hw_8c.html#a15c895e4456578b3ca2818c1e17c832a" title="VCOM_event" alt="" coords="821,56,925,83"/>
+<area shape="rect" id="node25" href="$rotorcraft_2autopilot_8c.html#a6a1293f2343cc554f22a398d3c567e87" title="get autopilot mode as set by RADIO_MODE 3&#45;way switch " alt="" coords="780,325,967,352"/>
+<area shape="rect" id="node26" href="$autopilot__arming__switch_8h.html#abbbe9ccad851ff6d7ef88e298059b6ce" title="State machine to check if motors should be turned ON or OFF using the kill switch. " alt="" coords="786,158,961,199"/>
+<area shape="rect" id="node27" href="$autopilot__rc__helpers_8h.html#a4e9918f217a6eaf344d248a9d34e674d" title="kill_switch_is_on" alt="" coords="1015,136,1139,163"/>
+<area shape="rect" id="node28" href="$guidance__h_8c.html#a7db3290fc5f62abc15a1bb1638b4922f" title="guidance_h_read_rc" alt="" coords="798,224,949,251"/>
+<area shape="rect" id="node29" href="$rotorcraft_2guidance_2guidance__v_8c.html#a067f5a51ae66cddf397b8b312ae4c383" title="guidance_v_read_rc" alt="" coords="799,275,948,301"/>
+<area shape="rect" id="node32" href="$group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="379,1276,455,1303"/>
+<area shape="rect" id="node35" href="$electrical_8c.html#ac5e9a56281268bdf6ddec2143b25f16a" title="electrical_init" alt="" coords="364,1377,469,1404"/>
+<area shape="rect" id="node36" href="$group__state__interface.html#gae841c56c9a83bf54bcdd8d7f166f2e2a" title="stateInit" alt="" coords="379,1428,454,1455"/>
+<area shape="rect" id="node37" href="$motor__mixing_8c.html#aa6be133f8fea4274105384f0276801a1" title="motor_mixing_init" alt="" coords="349,668,485,695"/>
+<area shape="rect" id="node38" href="$radio__control_8c.html#afb55b39c9ce65c9074c0472838fe551d" title="radio_control_init" alt="" coords="351,719,482,745"/>
+<area shape="rect" id="node39" href="$apogee_2baro__board_8c.html#a9b25546908842f1d38fc56e438d46e21" title="baro_init" alt="" coords="378,769,455,796"/>
+<area shape="rect" id="node40" href="$imu_8c.html#a86a06fe7a9831292bd92867da2d12f80" title="imu_init" alt="" coords="381,820,453,847"/>
+<area shape="rect" id="node41" href="$ahrs__aligner_8c.html#a321c9a82fcb75074c3041cbf6906e5ea" title="ahrs_aligner_init" alt="" coords="353,871,480,897"/>
+<area shape="rect" id="node42" href="$ahrs_8c.html#aa3721663c9df7c7af5613486a3566afb" title="AHRS initialization. " alt="" coords="379,921,455,948"/>
+<area shape="rect" id="node43" href="$ins_8c.html#abf3028c2ada542781b8a5e1eb20c17ce" title="INS initialization. " alt="" coords="383,972,450,999"/>
+<area shape="rect" id="node44" href="$gps_8c.html#ab37f7040b9efd19fdd3f92b1df77e771" title="initialize the global GPS state " alt="" coords="381,1023,452,1049"/>
+<area shape="rect" id="node45" href="$fixedwing_2autopilot_8c.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization. " alt="" coords="365,1073,469,1100"/>
+<area shape="rect" id="node46" href="$settings_8c.html#a5f9a5a2e826aec11c77548f2a541fb9e" title="settings_init" alt="" coords="367,1124,466,1151"/>
+<area shape="rect" id="node47" href="$downlink_8c.html#afd49e1738cc6ad57218b944dcb94f73b" title="downlink_init" alt="" coords="365,1175,468,1201"/>
+<area shape="rect" id="node48" href="$sys__time_8c.html#a60ef6df0154a4b93f4424fd809c466a3" title="Register a new system timer. " alt="" coords="329,1225,505,1252"/>
+<area shape="rect" id="node49" href="$group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float). " alt="" coords="339,1327,495,1353"/>
+<area shape="rect" id="node33" href="$linux_2mcu__arch_8c.html#a87671303c7d4a9264b1ffbb07e87f454" title="mcu_arch_init" alt="" coords="592,1251,703,1277"/>
+<area shape="rect" id="node34" href="$group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc" title="Optional board init function called at the end of mcu_init(). " alt="" coords="605,1301,690,1328"/>
 </map>

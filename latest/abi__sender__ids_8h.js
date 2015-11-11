@@ -43,5 +43,6 @@ var abi__sender__ids_8h =
     [ "IMU_XSENS_ID", "abi__sender__ids_8h.html#a2b1288ad6009f02dd3f7aaa9a00c95b0", null ],
     [ "MAG_HMC58XX_SENDER_ID", "abi__sender__ids_8h.html#a74c06df7637c15f4e997f94e38270b97", null ],
     [ "METEO_STICK_SENDER_ID", "abi__sender__ids_8h.html#aa4dba7f7561204c868fa642bd338600b", null ],
-    [ "MS45XX_SENDER_ID", "abi__sender__ids_8h.html#af6d5ac9fb43eb00d4e1c11c4d9a50bfb", null ]
+    [ "MS45XX_SENDER_ID", "abi__sender__ids_8h.html#af6d5ac9fb43eb00d4e1c11c4d9a50bfb", null ],
+    [ "PIX4FLOW_VELOCITY_ID", "abi__sender__ids_8h.html#a604e822de1c13f0283d4f8240786608f", null ]
 ];

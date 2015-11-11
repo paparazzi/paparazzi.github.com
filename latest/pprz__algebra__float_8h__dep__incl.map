@@ -1,51 +1,51 @@
 <map id="sw/airborne/math/pprz_algebra_float.h" name="sw/airborne/math/pprz_algebra_float.h">
-<area shape="rect" id="node3" href="$guidance__indi_8h.html" title="sw/airborne/firmwares\l/rotorcraft/guidance\l/guidance_indi.h" alt="" coords="966,233,1126,293"/>
-<area shape="rect" id="node9" href="$stabilization__attitude__common__float_8h.html" title="Common data structures shared by euler and quaternion float implementations. " alt="" coords="222,99,387,175"/>
-<area shape="rect" id="node11" href="$stabilization__attitude__euler__float_8h.html" title="Rotorcraft attitude stabilization in euler float version. " alt="" coords="33,225,198,301"/>
-<area shape="rect" id="node15" href="$stabilization__attitude__euler__float_8c.html" title="Rotorcraft attitude stabilization in euler float version. " alt="" coords="203,350,369,426"/>
-<area shape="rect" id="node18" href="$stabilization__attitude__quat__float_8c.html" title="Quaternion attitude stabilization (floating point). " alt="" coords="393,350,558,426"/>
-<area shape="rect" id="node20" href="$stabilization__attitude__quat__int_8c.html" title="Rotorcraft quaternion attitude stabilization. " alt="" coords="771,350,937,426"/>
-<area shape="rect" id="node22" href="$stabilization__attitude__quat__transformations_8h.html" title="Quaternion transformation functions. " alt="" coords="702,225,881,301"/>
-<area shape="rect" id="node28" href="$stabilization__attitude__rc__setpoint_8h.html" title="Read an attitude setpoint from the RC. " alt="" coords="513,225,678,301"/>
-<area shape="rect" id="node35" href="$stabilization__attitude__ref__float_8h.html" title="Rotorcraft attitude reference generation API. " alt="" coords="843,99,1009,175"/>
-<area shape="rect" id="node37" href="$stabilization__attitude__ref__quat__int_8h.html" title="Rotorcraft attitude reference generation. " alt="" coords="342,475,507,551"/>
-<area shape="rect" id="node40" href="$pprz__algebra__double_8h.html" title="Paparazzi double precision floating point algebra. " alt="" coords="1083,115,1249,159"/>
-<area shape="rect" id="node42" href="$pprz__algebra__float_8c.html" title="Paparazzi floating point algebra. " alt="" coords="1273,115,1438,159"/>
-<area shape="rect" id="node44" href="$pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1513,115,1678,159"/>
-<area shape="rect" id="node46" href="$pprz__geodetic__float_8c.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1538,241,1703,285"/>
-<area shape="rect" id="node48" href="$state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="1254,249,1398,277"/>
-<area shape="rect" id="node56" href="$nav__bungee__takeoff_8c.html" title="Takeoff functions for bungee takeoff. " alt="" coords="1297,366,1489,410"/>
-<area shape="rect" id="node58" href="$nav__survey__disc_8c.html" title="sw/airborne/modules\l/nav/nav_survey_disc.c" alt="" coords="1513,366,1681,410"/>
-<area shape="rect" id="node60" href="$ahrs__sim_8c.html" title="Dummy plug to set the AHRS from the simple OCaml simulator. " alt="" coords="1705,366,1881,410"/>
-<area shape="rect" id="node62" href="$ins__float__invariant_8c.html" title="sw/airborne/subsystems\l/ins/ins_float_invariant.c" alt="" coords="2131,609,2307,653"/>
-<area shape="rect" id="node64" href="$ins_8h.html" title="Integrated Navigation System interface. " alt="" coords="1955,366,2131,410"/>
-<area shape="rect" id="node67" href="$ins__float__invariant_8h.html" title="INS using invariant filter. " alt="" coords="2307,491,2483,535"/>
-<area shape="rect" id="node70" href="$ins__int_8h.html" title="INS for rotorcrafts combining vertical and horizontal filters. " alt="" coords="1755,491,1931,535"/>
-<area shape="rect" id="node73" href="$ins__vectornav_8h.html" title="Vectornav VN&#45;200 INS subsystem. " alt="" coords="2006,491,2182,535"/>
-<area shape="rect" id="node76" href="$pprz__matrix__decomp__float_8c.html" title="Matrix decompositions in floating point. " alt="" coords="2158,115,2331,159"/>
-<area shape="rect" id="node78" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="2507,115,2694,159"/>
-<area shape="rect" id="node81" href="$ahrs__float__cmpl_8h.html" title="Complementary filter in float to estimate the attitude, heading and gyro bias. " alt="" coords="2409,241,2585,285"/>
-<area shape="rect" id="node83" href="$ahrs__float__cmpl_8c.html" title="Complementary filter in float to estimate the attitude, heading and gyro bias. " alt="" coords="2409,366,2585,410"/>
-<area shape="rect" id="node85" href="$ahrs__float__dcm_8h.html" title="Attitude estimation for fixedwings based on the DCM. " alt="" coords="3067,241,3243,285"/>
-<area shape="rect" id="node87" href="$ahrs__float__dcm_8c.html" title="Attitude estimation for fixedwings based on the DCM. " alt="" coords="3318,366,3494,410"/>
-<area shape="rect" id="node89" href="$ahrs__float__invariant_8h.html" title="AHRS using invariant filter. " alt="" coords="2659,241,2854,285"/>
-<area shape="rect" id="node91" href="$ahrs__float__invariant_8c.html" title="sw/airborne/subsystems\l/ahrs/ahrs_float_invariant.c" alt="" coords="2863,366,3058,410"/>
-<area shape="rect" id="node93" href="$ahrs__float__mlkf_8h.html" title="Multiplicative linearized Kalman Filter in quaternion formulation. " alt="" coords="3569,241,3745,285"/>
-<area shape="rect" id="node95" href="$ahrs__float__mlkf_8c.html" title="Multiplicative linearized Kalman Filter in quaternion formulation. " alt="" coords="3569,366,3745,410"/>
-<area shape="rect" id="node97" href="$imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="2107,241,2283,285"/>
-<area shape="rect" id="node101" href="$pprz__polyfit__float_8c.html" title="Polynomial regression. " alt="" coords="3022,115,3187,159"/>
-<area shape="rect" id="node103" href="$pprz__rk__float_8h.html" title="Runge&#45;Kutta library (float version) " alt="" coords="2878,241,3043,285"/>
-<area shape="rect" id="node107" href="$linear__flow__fit_8c.html" title="sw/airborne/modules\l/computer_vision/opticflow\l/linear_flow_fit.c" alt="" coords="3262,107,3451,167"/>
-<area shape="rect" id="node109" href="$ins__arduimu__basic_8h.html" title="sw/airborne/modules\l/ins/ins_arduimu_basic.h" alt="" coords="3475,115,3654,159"/>
-<area shape="rect" id="node111" href="$ins__vn100_8h.html" title="Interface for the VectorNav VN100 AHRS use the binary protocal on the SPI link. " alt="" coords="3678,115,3833,159"/>
-<area shape="rect" id="node114" href="$nav__spiral_8h.html" title="Fixedwing navigation in a spiral/helix. " alt="" coords="3857,115,4011,159"/>
-<area shape="rect" id="node117" href="$nav__survey__polygon_8h.html" title="Advanced polygon survey for fixedwings from Uni Stuttgart. " alt="" coords="4035,115,4230,159"/>
-<area shape="rect" id="node119" href="$nav__survey__zamboni_8h.html" title="Zamboni pattern survey for fixedwings. " alt="" coords="4254,115,4451,159"/>
-<area shape="rect" id="node122" href="$abi__common_8h.html" title="Common tools for ABI middelware. " alt="" coords="4475,115,4651,159"/>
-<area shape="rect" id="node132" href="$ahrs__float__utils_8h.html" title="Utility functions for floating point AHRS implementations. " alt="" coords="3318,241,3494,285"/>
-<area shape="rect" id="node139" href="$hf__float_8h.html" title="Horizontal filter (x,y) to estimate position and velocity. " alt="" coords="4726,115,4902,159"/>
-<area shape="rect" id="node5" href="$guidance__h_8c.html" title="Horizontal guidance for rotorcrafts. " alt="" coords="1011,358,1171,418"/>
-<area shape="rect" id="node7" href="$guidance__indi_8c.html" title="sw/airborne/firmwares\l/rotorcraft/guidance\l/guidance_indi.c" alt="" coords="1129,601,1289,661"/>
-<area shape="rect" id="node13" href="$stabilization__attitude__quat__float_8h.html" title="Rotorcraft attitude stabilization in quaternion float version. " alt="" coords="222,225,387,301"/>
-<area shape="rect" id="node25" href="$stabilization__attitude__quat__indi_8c.html" title="MAVLab Delft University of Technology This control algorithm is Incremental Nonlinear Dynamic Inversi..." alt="" coords="582,350,747,426"/>
+<area shape="rect" id="node2" href="$guidance__indi_8h.html" title="sw/airborne/firmwares\l/rotorcraft/guidance\l/guidance_indi.h" alt="" coords="1389,206,1551,262"/>
+<area shape="rect" id="node5" href="$attitude__ref__saturate__naive_8h.html" title="Naive attitude reference saturation. " alt="" coords="501,95,716,151"/>
+<area shape="rect" id="node6" href="$stabilization__attitude__ref__euler__float_8h.html" title="sw/airborne/firmwares\l/rotorcraft/stabilization\l/stabilization_attitude\l_ref_euler_float.h" alt="" coords="409,199,576,269"/>
+<area shape="rect" id="node7" href="$stabilization__attitude__euler__float_8h.html" title="Rotorcraft attitude stabilization in euler float version. " alt="" coords="28,317,195,388"/>
+<area shape="rect" id="node8" href="$stabilization__attitude__ref__quat__float_8h.html" title="Rotorcraft attitude reference generation. " alt="" coords="219,199,385,269"/>
+<area shape="rect" id="node9" href="$stabilization__attitude__ref__quat__int_8h.html" title="Rotorcraft attitude reference generation. " alt="" coords="600,199,767,269"/>
+<area shape="rect" id="node10" href="$stabilization__attitude__common__float_8h.html" title="Common data structures shared by euler and quaternion float implementations. " alt="" coords="28,199,195,269"/>
+<area shape="rect" id="node11" href="$stabilization__attitude__euler__float_8c.html" title="Rotorcraft attitude stabilization in euler float version. " alt="" coords="756,317,923,388"/>
+<area shape="rect" id="node12" href="$stabilization__attitude__quat__float_8c.html" title="Quaternion attitude stabilization (floating point). " alt="" coords="947,317,1113,388"/>
+<area shape="rect" id="node13" href="$stabilization__attitude__quat__int_8c.html" title="Rotorcraft quaternion attitude stabilization. " alt="" coords="1137,317,1304,388"/>
+<area shape="rect" id="node14" href="$stabilization__attitude__quat__transformations_8h.html" title="Quaternion transformation functions. " alt="" coords="1135,199,1314,269"/>
+<area shape="rect" id="node15" href="$stabilization__attitude__rc__setpoint_8h.html" title="Read an attitude setpoint from the RC. " alt="" coords="944,199,1111,269"/>
+<area shape="rect" id="node16" href="$pprz__algebra__double_8h.html" title="Paparazzi double precision floating point algebra. " alt="" coords="1366,102,1531,143"/>
+<area shape="rect" id="node17" href="$pprz__algebra__float_8c.html" title="Paparazzi floating point algebra. " alt="" coords="1555,102,1721,143"/>
+<area shape="rect" id="node18" href="$pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1846,102,2011,143"/>
+<area shape="rect" id="node19" href="$pprz__geodetic__float_8c.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1667,213,1833,255"/>
+<area shape="rect" id="node20" href="$state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="1857,221,2001,247"/>
+<area shape="rect" id="node21" href="$nav__bungee__takeoff_8c.html" title="Takeoff functions for bungee takeoff. " alt="" coords="1668,332,1861,373"/>
+<area shape="rect" id="node22" href="$nav__survey__disc_8c.html" title="sw/airborne/modules\l/nav/nav_survey_disc.c" alt="" coords="1886,332,2054,373"/>
+<area shape="rect" id="node23" href="$ahrs__sim_8c.html" title="Dummy plug to set the AHRS from the simple OCaml simulator. " alt="" coords="2078,332,2254,373"/>
+<area shape="rect" id="node24" href="$ins__float__invariant_8c.html" title="sw/airborne/subsystems\l/ins/ins_float_invariant.c" alt="" coords="2454,533,2630,574"/>
+<area shape="rect" id="node25" href="$ins_8h.html" title="Integrated Navigation System interface. " alt="" coords="2278,332,2454,373"/>
+<area shape="rect" id="node26" href="$ins__float__invariant_8h.html" title="INS using invariant filter. " alt="" coords="2579,436,2755,477"/>
+<area shape="rect" id="node27" href="$ins__int_8h.html" title="INS for rotorcrafts combining vertical and horizontal filters. " alt="" coords="1366,436,1542,477"/>
+<area shape="rect" id="node28" href="$ins__vectornav_8h.html" title="Vectornav VN&#45;200 INS subsystem. " alt="" coords="2278,436,2454,477"/>
+<area shape="rect" id="node29" href="$pprz__matrix__decomp__float_8c.html" title="Matrix decompositions in floating point. " alt="" coords="2460,102,2635,143"/>
+<area shape="rect" id="node30" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="2761,102,2947,143"/>
+<area shape="rect" id="node31" href="$ahrs__float__cmpl_8h.html" title="Complementary filter in float to estimate the attitude, heading and gyro bias. " alt="" coords="3099,213,3275,255"/>
+<area shape="rect" id="node32" href="$ahrs__float__cmpl_8c.html" title="Complementary filter in float to estimate the attitude, heading and gyro bias. " alt="" coords="3389,332,3565,373"/>
+<area shape="rect" id="node33" href="$ahrs__float__dcm_8h.html" title="Attitude estimation for fixedwings based on the DCM. " alt="" coords="3350,213,3526,255"/>
+<area shape="rect" id="node34" href="$ahrs__float__dcm_8c.html" title="Attitude estimation for fixedwings based on the DCM. " alt="" coords="3589,332,3765,373"/>
+<area shape="rect" id="node35" href="$ahrs__float__invariant_8h.html" title="AHRS using invariant filter. " alt="" coords="2881,213,3075,255"/>
+<area shape="rect" id="node36" href="$ahrs__float__invariant_8c.html" title="sw/airborne/subsystems\l/ahrs/ahrs_float_invariant.c" alt="" coords="2881,332,3075,373"/>
+<area shape="rect" id="node37" href="$ahrs__float__mlkf_8h.html" title="Multiplicative linearized Kalman Filter in quaternion formulation. " alt="" coords="3851,213,4027,255"/>
+<area shape="rect" id="node38" href="$ahrs__float__mlkf_8c.html" title="Multiplicative linearized Kalman Filter in quaternion formulation. " alt="" coords="3851,332,4027,373"/>
+<area shape="rect" id="node39" href="$imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="2289,213,2465,255"/>
+<area shape="rect" id="node40" href="$pprz__polyfit__float_8c.html" title="Polynomial regression. " alt="" coords="3553,102,3718,143"/>
+<area shape="rect" id="node41" href="$pprz__rk__float_8h.html" title="Runge&#45;Kutta library (float version) " alt="" coords="2641,213,2806,255"/>
+<area shape="rect" id="node42" href="$linear__flow__fit_8c.html" title="sw/airborne/modules\l/computer_vision/opticflow\l/linear_flow_fit.c" alt="" coords="3793,95,3984,151"/>
+<area shape="rect" id="node43" href="$ins__arduimu__basic_8h.html" title="sw/airborne/modules\l/ins/ins_arduimu_basic.h" alt="" coords="4009,102,4187,143"/>
+<area shape="rect" id="node44" href="$ins__vn100_8h.html" title="Interface for the VectorNav VN100 AHRS use the binary protocal on the SPI link. " alt="" coords="4211,102,4366,143"/>
+<area shape="rect" id="node45" href="$nav__spiral_8h.html" title="Fixedwing navigation in a spiral/helix. " alt="" coords="4390,102,4545,143"/>
+<area shape="rect" id="node46" href="$nav__survey__polygon_8h.html" title="Advanced polygon survey for fixedwings from Uni Stuttgart. " alt="" coords="4569,102,4763,143"/>
+<area shape="rect" id="node47" href="$nav__survey__zamboni_8h.html" title="Zamboni pattern survey for fixedwings. " alt="" coords="4788,102,4987,143"/>
+<area shape="rect" id="node48" href="$abi__common_8h.html" title="Common tools for ABI middelware. " alt="" coords="5011,102,5187,143"/>
+<area shape="rect" id="node49" href="$ahrs__float__utils_8h.html" title="Utility functions for floating point AHRS implementations. " alt="" coords="3651,213,3827,255"/>
+<area shape="rect" id="node50" href="$hf__float_8h.html" title="Horizontal filter (x,y) to estimate position and velocity. " alt="" coords="5262,102,5438,143"/>
+<area shape="rect" id="node3" href="$guidance__h_8c.html" title="Horizontal guidance for rotorcrafts. " alt="" coords="1380,325,1541,381"/>
+<area shape="rect" id="node4" href="$guidance__indi_8c.html" title="sw/airborne/firmwares\l/rotorcraft/guidance\l/guidance_indi.c" alt="" coords="1373,525,1535,581"/>
 </map>

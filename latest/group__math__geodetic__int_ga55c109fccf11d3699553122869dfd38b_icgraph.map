@@ -1,37 +1,39 @@
 <map id="ned_of_ecef_pos_i" name="ned_of_ecef_pos_i">
-<area shape="rect" id="node3" href="$group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title="stateCalcPositionNed_f" alt="" coords="193,101,361,129"/>
-<area shape="rect" id="node19" href="$group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="193,265,361,293"/>
-<area shape="rect" id="node5" href="$group__state__position.html#gac1b41866b307723e3ad8ddd566d4f627" title="Get position in local NED coordinates (float). " alt="" coords="411,71,576,99"/>
-<area shape="rect" id="node7" href="$guidance__indi_8h.html#a24d1024bbd8da21b6c70317fda39d929" title="guidance_indi_run" alt="" coords="1348,95,1484,123"/>
-<area shape="rect" id="node15" href="$mavlink_8c.html#a025c0ce53320b2bf9418a94bd9e5e726" title="mavlink_send_local\l_position_ned" alt="" coords="648,5,792,49"/>
-<area shape="rect" id="node9" href="$guidance__h_8h.html#ac4cf6da90a4278b4d0b2e4f227b33f2c" title="guidance_h_run" alt="" coords="1772,315,1895,343"/>
-<area shape="rect" id="node11" href="$rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="1964,493,2097,521"/>
-<area shape="rect" id="node13" href="$main_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="2148,493,2257,521"/>
-<area shape="rect" id="node17" href="$mavlink_8h.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls. " alt="" coords="889,13,1017,41"/>
-<area shape="rect" id="node21" href="$group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="412,321,575,349"/>
-<area shape="rect" id="node23" href="$cv__georeference_8h.html#a230ffda49b65d6b6963063af8ab73e00" title="georeference_project" alt="" coords="641,239,799,267"/>
-<area shape="rect" id="node29" href="$guidance__h_8c.html#a2a7de8dee0c85bd58633a392d8e2df91" title="guidance_h_hover_enter" alt="" coords="864,341,1043,369"/>
-<area shape="rect" id="node56" href="$guidance__h_8c.html#a40a1b0fc372c07e0fc9e9a680578fe9b" title="guidance_h_traj_run" alt="" coords="1117,202,1267,230"/>
-<area shape="rect" id="node59" href="$rotorcraft_2guidance_2guidance__v_8h.html#ac24445848e497e9b0da2913cecb0db73" title="guidance_v_mode_changed" alt="" coords="1092,458,1292,486"/>
-<area shape="rect" id="node62" href="$rotorcraft_2guidance_2guidance__v_8h.html#aa3265bfb8a8925942f818424f97f9725" title="guidance_v_run" alt="" coords="892,559,1015,587"/>
-<area shape="rect" id="node65" href="$ins__vectornav_8h.html#a5e1e0a3cd2eead4dc89bec75e33e5618" title="Propagate the received states into the vehicle state machine. " alt="" coords="629,134,811,162"/>
-<area shape="rect" id="node71" href="$guidance__h_8c.html#ad9bd6447dd5cea00192adfbbf5a30cd5" title="reset_guidance_reference\l_from_current_position" alt="" coords="627,341,813,385"/>
-<area shape="rect" id="node78" href="$rotorcraft_2guidance_2guidance__v_8c.html#aef574ad479e888ed806893456e9a0359" title="run_hover_loop" alt="" coords="660,509,780,537"/>
-<area shape="rect" id="node81" href="$video__usb__logger_8h.html#a3655b8f9585b793a86ea2b4e86f83b82" title="Log the values to a csv file. " alt="" coords="625,407,815,435"/>
-<area shape="rect" id="node25" href="$cv__blob__locator_8h.html#a391703403d5b9f54b9aeb1ef368be61b" title="cv_blob_locator_event" alt="" coords="872,239,1035,267"/>
-<area shape="rect" id="node27" href="$cv__georeference_8h.html#a913d1504b4e33a803c6f5ab06721fd6b" title="georeference_run" alt="" coords="887,290,1020,318"/>
-<area shape="rect" id="node31" href="$guidance__h_8h.html#a2903786227eb11507928f99870099225" title="guidance_h_mode_changed" alt="" coords="1092,341,1292,369"/>
-<area shape="rect" id="node33" href="$rotorcraft_2autopilot_8h.html#a3aaa2cf16ee3b25e8fca9bbd1d579d64" title="autopilot_set_mode" alt="" coords="1341,458,1491,486"/>
-<area shape="rect" id="node35" href="$rotorcraft_2autopilot_8c.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization. " alt="" coords="1569,442,1673,470"/>
-<area shape="rect" id="node37" href="$rotorcraft_2autopilot_8h.html#a7339f5741706cb9c2e2186b1174cc770" title="autopilot_on_rc_frame" alt="" coords="1539,543,1704,571"/>
-<area shape="rect" id="node42" href="$main_8h.html#a6266a73fe8c0512f1de72cea96e5110b" title="failsafe_check" alt="" coords="1567,594,1676,622"/>
-<area shape="rect" id="node52" href="$guidance__flip_8h.html#a341f66aaa1a6e736e980ae5cccb3c0f5" title="guidance_flip_run" alt="" coords="1555,391,1688,419"/>
-<area shape="rect" id="node39" href="$main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="1785,543,1881,571"/>
-<area shape="rect" id="node44" href="$main_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="1752,695,1915,723"/>
-<area shape="rect" id="node46" href="$fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="2004,721,2057,749"/>
-<area shape="rect" id="node48" href="$main__chibios__libopencm3_8c.html#ad648a546fe66cd5f9328f33221a40c64" title="pprz_thd" alt="" coords="1992,670,2069,698"/>
-<area shape="rect" id="node50" href="$main__chibios__libopencm3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="2176,670,2229,698"/>
-<area shape="rect" id="node67" href="$ins__vectornav_8h.html#a5ba37a2e4e80d50b1ce1ada6e0f294fe" title="Read received data. " alt="" coords="880,122,1027,166"/>
-<area shape="rect" id="node69" href="$ins__vectornav_8h.html#abcd265b9bfefa88327260439223dba81" title="Event handling for Vectornav. " alt="" coords="1116,130,1268,158"/>
-<area shape="rect" id="node74" href="$guidance__h_8c.html#acfce6969bcd9f8b676f79baf04ef4c00" title="guidance_h_nav_enter" alt="" coords="871,391,1036,419"/>
+<area shape="rect" id="node2" href="$group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title="stateCalcPositionNed_f" alt="" coords="192,97,361,123"/>
+<area shape="rect" id="node14" href="$group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="193,249,361,275"/>
+<area shape="rect" id="node3" href="$group__state__position.html#gac1b41866b307723e3ad8ddd566d4f627" title="Get position in local NED coordinates (float). " alt="" coords="409,71,575,98"/>
+<area shape="rect" id="node4" href="$guidance__indi_8h.html#a24d1024bbd8da21b6c70317fda39d929" title="guidance_indi_run" alt="" coords="1343,118,1481,145"/>
+<area shape="rect" id="node12" href="$mavlink_8c.html#a025c0ce53320b2bf9418a94bd9e5e726" title="mavlink_send_local\l_position_ned" alt="" coords="645,5,791,47"/>
+<area shape="rect" id="node5" href="$guidance__h_8h.html#ac4cf6da90a4278b4d0b2e4f227b33f2c" title="guidance_h_run" alt="" coords="1748,417,1871,443"/>
+<area shape="rect" id="node6" href="$rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="1919,493,2053,519"/>
+<area shape="rect" id="node7" href="$main_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="2101,569,2212,595"/>
+<area shape="rect" id="node8" href="$main_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="2260,633,2423,659"/>
+<area shape="rect" id="node9" href="$fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="2483,607,2537,634"/>
+<area shape="rect" id="node10" href="$main__chibios__libopencm3_8c.html#ad648a546fe66cd5f9328f33221a40c64" title="pprz_thd" alt="" coords="2471,658,2549,685"/>
+<area shape="rect" id="node11" href="$main__chibios__libopencm3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="2597,658,2652,685"/>
+<area shape="rect" id="node13" href="$mavlink_8h.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls. " alt="" coords="887,13,1015,39"/>
+<area shape="rect" id="node15" href="$group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="410,299,574,326"/>
+<area shape="rect" id="node16" href="$cv__georeference_8h.html#a230ffda49b65d6b6963063af8ab73e00" title="georeference_project" alt="" coords="639,274,797,301"/>
+<area shape="rect" id="node19" href="$guidance__h_8c.html#a2a7de8dee0c85bd58633a392d8e2df91" title="guidance_h_hover_enter" alt="" coords="861,493,1040,519"/>
+<area shape="rect" id="node29" href="$guidance__h_8c.html#a40a1b0fc372c07e0fc9e9a680578fe9b" title="guidance_h_traj_run" alt="" coords="1113,290,1264,317"/>
+<area shape="rect" id="node30" href="$rotorcraft_2guidance_2guidance__v_8h.html#ac24445848e497e9b0da2913cecb0db73" title="guidance_v_mode_changed" alt="" coords="1089,543,1289,570"/>
+<area shape="rect" id="node31" href="$rotorcraft_2guidance_2guidance__v_8h.html#aa3265bfb8a8925942f818424f97f9725" title="guidance_v_run" alt="" coords="889,173,1012,199"/>
+<area shape="rect" id="node32" href="$ins__vectornav_8h.html#a5e1e0a3cd2eead4dc89bec75e33e5618" title="Propagate the received states into the vehicle state machine. " alt="" coords="627,375,809,402"/>
+<area shape="rect" id="node35" href="$guidance__h_8c.html#ad9bd6447dd5cea00192adfbbf5a30cd5" title="reset_guidance_reference\l_from_current_position" alt="" coords="624,427,812,468"/>
+<area shape="rect" id="node37" href="$rotorcraft_2guidance_2guidance__v_8c.html#aef574ad479e888ed806893456e9a0359" title="run_hover_loop" alt="" coords="658,173,778,199"/>
+<area shape="rect" id="node38" href="$video__usb__logger_8h.html#a3655b8f9585b793a86ea2b4e86f83b82" title="Log the values to a csv file. " alt="" coords="623,223,813,250"/>
+<area shape="rect" id="node17" href="$cv__blob__locator_8h.html#a391703403d5b9f54b9aeb1ef368be61b" title="cv_blob_locator_event" alt="" coords="869,223,1033,250"/>
+<area shape="rect" id="node18" href="$cv__georeference_8h.html#a913d1504b4e33a803c6f5ab06721fd6b" title="georeference_run" alt="" coords="883,274,1018,301"/>
+<area shape="rect" id="node20" href="$guidance__h_8h.html#a2903786227eb11507928f99870099225" title="guidance_h_mode_changed" alt="" coords="1088,493,1289,519"/>
+<area shape="rect" id="node21" href="$rotorcraft_2autopilot_8h.html#a3aaa2cf16ee3b25e8fca9bbd1d579d64" title="autopilot_set_mode" alt="" coords="1337,543,1487,570"/>
+<area shape="rect" id="node22" href="$rotorcraft_2autopilot_8c.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization. " alt="" coords="1565,645,1669,671"/>
+<area shape="rect" id="node23" href="$rotorcraft_2autopilot_8h.html#a7339f5741706cb9c2e2186b1174cc770" title="Get autopilot mode from two 2way switches. " alt="" coords="1535,594,1700,621"/>
+<area shape="rect" id="node26" href="$main_8h.html#a6266a73fe8c0512f1de72cea96e5110b" title="failsafe_check" alt="" coords="1562,695,1673,722"/>
+<area shape="rect" id="node28" href="$guidance__flip_8h.html#a341f66aaa1a6e736e980ae5cccb3c0f5" title="guidance_flip_run" alt="" coords="1551,493,1684,519"/>
+<area shape="rect" id="node24" href="$main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="1761,594,1858,621"/>
+<area shape="rect" id="node25" href="$rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1959,619,2013,646"/>
+<area shape="rect" id="node27" href="$main_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="main_init" alt="" coords="1769,645,1849,671"/>
+<area shape="rect" id="node33" href="$ins__vectornav_8h.html#a5ba37a2e4e80d50b1ce1ada6e0f294fe" title="Read received data. " alt="" coords="877,376,1024,417"/>
+<area shape="rect" id="node34" href="$ins__vectornav_8h.html#abcd265b9bfefa88327260439223dba81" title="Event handling for Vectornav. " alt="" coords="1112,341,1265,367"/>
+<area shape="rect" id="node36" href="$guidance__h_8c.html#acfce6969bcd9f8b676f79baf04ef4c00" title="guidance_h_nav_enter" alt="" coords="867,442,1034,469"/>
 </map>

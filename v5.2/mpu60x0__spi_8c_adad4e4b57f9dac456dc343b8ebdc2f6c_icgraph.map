@@ -1,30 +1,34 @@
 <map id="mpu60x0_configure_i2c_slaves" name="mpu60x0_configure_i2c_slaves">
-<area shape="rect" id="node3" href="$mpu60x0_8h.html#a564470aa2f16b3f6665b99d9141f9ae7" title="Configuration sequence called once before normal use. " alt="" coords="227,283,392,311"/>
-<area shape="rect" id="node5" href="$mpu60x0__i2c_8h.html#a4929a8161b6ff6301f48f6dbcc0b449c" title="mpu60x0_i2c_event" alt="" coords="471,106,620,134"/>
-<area shape="rect" id="node23" href="$mpu60x0__i2c_8h.html#a1b62653862375e462d147451eb41df6e" title="mpu60x0_i2c_start_configure" alt="" coords="440,258,651,286"/>
-<area shape="rect" id="node39" href="$mpu60x0__spi_8h.html#a352dbef3019f057741cf1494e4b6f36d" title="mpu60x0_spi_event" alt="" coords="471,334,620,362"/>
-<area shape="rect" id="node53" href="$mpu60x0__spi_8h.html#a8982a3f8243691d3980c136cfa9fcb5c" title="mpu60x0_spi_start_configure" alt="" coords="440,410,651,438"/>
-<area shape="rect" id="node7" href="$imu__apogee_8h.html#a60395d55d1c3bbb3773a3bc79f210884" title="imu_apogee_event" alt="" coords="709,5,853,33"/>
-<area shape="rect" id="node11" href="$imu__drotek__10dof__v2_8h.html#a740371769417e71440eda6835e29a667" title="imu_drotek2_event" alt="" coords="709,55,853,83"/>
-<area shape="rect" id="node15" href="$imu__krooz__memsic_8h.html#ac3e0837f6fda31fca37cf6d6cd1e39dd" title="imu_krooz_event" alt="" coords="716,106,847,134"/>
-<area shape="rect" id="node19" href="$imu__navstik_8h.html#a2ddc38f9314a98d94376d14851bb0bcd" title="Handle all the events of the Navstik IMU components. " alt="" coords="711,157,852,185"/>
-<area shape="rect" id="node9" href="$imu__apogee_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="923,5,1005,33"/>
-<area shape="rect" id="node13" href="$imu__drotek__10dof__v2_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="923,55,1005,83"/>
-<area shape="rect" id="node17" href="$imu__krooz_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="923,106,1005,134"/>
-<area shape="rect" id="node21" href="$imu__navstik_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="923,157,1005,185"/>
-<area shape="rect" id="node25" href="$imu__krooz_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="imu_periodic" alt="" coords="731,207,832,235"/>
-<area shape="rect" id="node27" href="$mpu60x0__i2c_8h.html#a4e7da06e98b7caad1f8b41e7c91ff5ea" title="convenience function: read or start configuration if not already initialized " alt="" coords="700,258,863,286"/>
-<area shape="rect" id="node29" href="$imu_8h.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="Handle all the periodic tasks of the Navstik IMU components. " alt="" coords="913,258,1015,286"/>
-<area shape="rect" id="node31" href="$main_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="1065,233,1175,261"/>
-<area shape="rect" id="node33" href="$main__ap_8h.html#aaae462f08bad040640b5d7d9dac4e5d3" title="Run at PERIODIC_FREQUENCY (60Hz if not defined) " alt="" coords="1067,283,1173,311"/>
-<area shape="rect" id="node35" href="$main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="1224,258,1411,286"/>
-<area shape="rect" id="node37" href="$sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="1249,309,1385,337"/>
-<area shape="rect" id="node41" href="$imu__aspirin__2__spi_8h.html#a1d1263b727aeee52bd78b9d3ec3b40bd" title="imu_aspirin2_event" alt="" coords="708,309,855,337"/>
-<area shape="rect" id="node45" href="$imu__mpu6000__hmc5883_8h.html#ae9d618a59cee7e4c02666223bc3bf07e" title="imu_mpu_hmc_event" alt="" coords="701,359,861,387"/>
-<area shape="rect" id="node49" href="$imu__px4fmu_8h.html#af65bf55913e04b2d90bdffb1c94c169c" title="imu_px4fmu_event" alt="" coords="709,410,853,438"/>
-<area shape="rect" id="node43" href="$imu__aspirin__2__spi_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="923,309,1005,337"/>
-<area shape="rect" id="node47" href="$imu__mpu6000__hmc5883_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="923,359,1005,387"/>
-<area shape="rect" id="node51" href="$imu__px4fmu_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="923,410,1005,438"/>
-<area shape="rect" id="node55" href="$mpu60x0__spi_8h.html#ab3afb083a7e2aebe259e155720138e4f" title="convenience function: read or start configuration if not already initialized " alt="" coords="700,461,863,489"/>
-<area shape="rect" id="node57" href="$imu__aspirin__2__spi_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="imu_periodic" alt="" coords="913,461,1015,489"/>
+<area shape="rect" id="node2" href="$mpu60x0_8h.html#a564470aa2f16b3f6665b99d9141f9ae7" title="Configuration sequence called once before normal use. " alt="" coords="227,284,392,311"/>
+<area shape="rect" id="node3" href="$mpu60x0__i2c_8h.html#a4929a8161b6ff6301f48f6dbcc0b449c" title="mpu60x0_i2c_event" alt="" coords="470,107,621,133"/>
+<area shape="rect" id="node12" href="$mpu60x0__i2c_8h.html#a1b62653862375e462d147451eb41df6e" title="mpu60x0_i2c_start_configure" alt="" coords="440,259,651,285"/>
+<area shape="rect" id="node24" href="$mpu60x0__spi_8h.html#a352dbef3019f057741cf1494e4b6f36d" title="mpu60x0_spi_event" alt="" coords="470,335,621,361"/>
+<area shape="rect" id="node31" href="$mpu60x0__spi_8h.html#a8982a3f8243691d3980c136cfa9fcb5c" title="mpu60x0_spi_start_configure" alt="" coords="440,411,651,437"/>
+<area shape="rect" id="node4" href="$imu__apogee_8h.html#a60395d55d1c3bbb3773a3bc79f210884" title="imu_apogee_event" alt="" coords="709,5,853,32"/>
+<area shape="rect" id="node6" href="$imu__drotek__10dof__v2_8h.html#a740371769417e71440eda6835e29a667" title="imu_drotek2_event" alt="" coords="708,56,853,83"/>
+<area shape="rect" id="node8" href="$imu__krooz__memsic_8h.html#ac3e0837f6fda31fca37cf6d6cd1e39dd" title="imu_krooz_event" alt="" coords="715,107,846,133"/>
+<area shape="rect" id="node10" href="$imu__navstik_8h.html#a2ddc38f9314a98d94376d14851bb0bcd" title="Handle all the events of the Navstik IMU components. " alt="" coords="710,157,851,184"/>
+<area shape="rect" id="node5" href="$imu__apogee_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="921,5,1003,32"/>
+<area shape="rect" id="node7" href="$imu__drotek__10dof__v2_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="921,56,1003,83"/>
+<area shape="rect" id="node9" href="$imu__krooz__memsic_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="921,107,1003,133"/>
+<area shape="rect" id="node11" href="$imu__navstik_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="921,157,1003,184"/>
+<area shape="rect" id="node13" href="$imu__krooz_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="imu_periodic" alt="" coords="729,208,832,235"/>
+<area shape="rect" id="node14" href="$mpu60x0__i2c_8h.html#a4e7da06e98b7caad1f8b41e7c91ff5ea" title="convenience function: read or start configuration if not already initialized " alt="" coords="699,259,863,285"/>
+<area shape="rect" id="node15" href="$imu_8h.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="Handle all the periodic tasks of the Navstik IMU components. " alt="" coords="911,259,1013,285"/>
+<area shape="rect" id="node16" href="$main_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="1061,233,1172,260"/>
+<area shape="rect" id="node21" href="$main__ap_8h.html#aaae462f08bad040640b5d7d9dac4e5d3" title="Run at PERIODIC_FREQUENCY (60Hz if not defined) " alt="" coords="1063,284,1170,311"/>
+<area shape="rect" id="node17" href="$main_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="1232,233,1395,260"/>
+<area shape="rect" id="node18" href="$fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1467,208,1521,235"/>
+<area shape="rect" id="node19" href="$main__chibios__libopencm3_8c.html#ad648a546fe66cd5f9328f33221a40c64" title="pprz_thd" alt="" coords="1455,259,1533,285"/>
+<area shape="rect" id="node20" href="$main__chibios__libopencm3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1581,259,1636,285"/>
+<area shape="rect" id="node22" href="$main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="1220,284,1407,311"/>
+<area shape="rect" id="node23" href="$sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="1245,335,1381,361"/>
+<area shape="rect" id="node25" href="$imu__aspirin__2__spi_8h.html#a1d1263b727aeee52bd78b9d3ec3b40bd" title="imu_aspirin2_event" alt="" coords="707,309,854,336"/>
+<area shape="rect" id="node27" href="$imu__mpu6000__hmc5883_8h.html#ae9d618a59cee7e4c02666223bc3bf07e" title="imu_mpu_hmc_event" alt="" coords="701,360,861,387"/>
+<area shape="rect" id="node29" href="$imu__px4fmu_8h.html#af65bf55913e04b2d90bdffb1c94c169c" title="imu_px4fmu_event" alt="" coords="709,411,853,437"/>
+<area shape="rect" id="node26" href="$imu__aspirin__2__spi_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="921,309,1003,336"/>
+<area shape="rect" id="node28" href="$imu__mpu6000__hmc5883_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="921,360,1003,387"/>
+<area shape="rect" id="node30" href="$imu__px4fmu_8h.html#a9d95db588addd0a03f6e7e749fbb032a" title="ImuEvent" alt="" coords="921,411,1003,437"/>
+<area shape="rect" id="node32" href="$mpu60x0__spi_8h.html#ab3afb083a7e2aebe259e155720138e4f" title="convenience function: read or start configuration if not already initialized " alt="" coords="699,461,863,488"/>
+<area shape="rect" id="node33" href="$imu__aspirin__2__spi_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="imu_periodic" alt="" coords="911,461,1013,488"/>
 </map>

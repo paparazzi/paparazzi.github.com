@@ -37,6 +37,7 @@ var dir_c2abcdd6ccb39c3582929c0e3f5651c2 =
     [ "sensors", "dir_2f48bbb566df394f79dcf8fe0631584a.html", "dir_2f48bbb566df394f79dcf8fe0631584a" ],
     [ "servo_switch", "dir_55eebefe33cb2d47e888e33b78ad8bcf.html", "dir_55eebefe33cb2d47e888e33b78ad8bcf" ],
     [ "sonar", "dir_f794e7c055cca00c0de6f5564d477f09.html", "dir_f794e7c055cca00c0de6f5564d477f09" ],
+    [ "stereo_cam", "dir_53035c648a11711b8be97fca3f069783.html", "dir_53035c648a11711b8be97fca3f069783" ],
     [ "stereoavoid", "dir_5a99911992cea867f7ca54bab9df6942.html", "dir_5a99911992cea867f7ca54bab9df6942" ],
     [ "time", "dir_63011ef7b1135673f06d06b59c577dfa.html", "dir_63011ef7b1135673f06d06b59c577dfa" ],
     [ "vehicle_interface", "dir_372c0c9a1fec4794716fe8f0e2a7607d.html", "dir_372c0c9a1fec4794716fe8f0e2a7607d" ]

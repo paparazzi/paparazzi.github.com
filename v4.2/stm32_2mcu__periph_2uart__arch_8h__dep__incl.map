@@ -1,51 +1,51 @@
 <map id="sw/airborne/arch/stm32/mcu_periph/uart_arch.h" name="sw/airborne/arch/stm32/mcu_periph/uart_arch.h">
-<area shape="rect" id="node3" href="$uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API" alt="" coords="4520,99,4693,143"/>
-<area shape="rect" id="node5" href="$lpc21_2mcu__periph_2uart__arch_8c.html" title="sw/airborne/arch/lpc21\l/mcu_periph/uart_arch.c" alt="" coords="5,201,181,245"/>
-<area shape="rect" id="node7" href="$lpc21_2subsystems_2radio__control_2spektrum__arch_8h.html" title="sw/airborne/arch/lpc21\l/subsystems/radio_control\l/spektrum_arch.h" alt="" coords="205,193,395,253"/>
-<area shape="rect" id="node9" href="$usb__tunnel_8c.html" title="USB tunnel application." alt="" coords="419,201,584,245"/>
-<area shape="rect" id="node11" href="$omap_2mcu__periph_2uart__arch_8c.html" title="sw/airborne/arch/omap\l/mcu_periph/uart_arch.c" alt="" coords="608,201,784,245"/>
-<area shape="rect" id="node13" href="$stm32_2mcu__periph_2uart__arch_8c.html" title="sw/airborne/arch/stm32\l/mcu_periph/uart_arch.c" alt="" coords="808,201,984,245"/>
-<area shape="rect" id="node15" href="$stm32_2subsystems_2radio__control_2spektrum__arch_8c.html" title="sw/airborne/arch/stm32\l/subsystems/radio_control\l/spektrum_arch.c" alt="" coords="1008,193,1197,253"/>
-<area shape="rect" id="node17" href="$lisa__l_2test__baro_8c.html" title="sw/airborne/boards\l/lisa_l/test_baro.c" alt="" coords="1221,201,1363,245"/>
-<area shape="rect" id="node19" href="$lisa__m_2test__baro_8c.html" title="sw/airborne/boards\l/lisa_m/test_baro.c" alt="" coords="1387,201,1528,245"/>
-<area shape="rect" id="node21" href="$imu__navgo_8c.html" title="sw/airborne/boards\l/navgo/imu_navgo.c" alt="" coords="1552,201,1701,245"/>
-<area shape="rect" id="node23" href="$imu__umarim_8c.html" title="sw/airborne/boards\l/umarim/imu_umarim.c" alt="" coords="1725,201,1896,245"/>
-<area shape="rect" id="node25" href="$estimator_8c.html" title="State estimate, fusioning sensors." alt="" coords="1920,209,2091,237"/>
-<area shape="rect" id="node27" href="$fixedwing_2datalink_8c.html" title="sw/airborne/firmwares\l/fixedwing/datalink.c" alt="" coords="2115,201,2275,245"/>
-<area shape="rect" id="node29" href="$fbw__downlink_8h.html" title="Set of macros defining the periodic telemetry messages of FBW process." alt="" coords="2299,201,2480,245"/>
-<area shape="rect" id="node31" href="$rotorcraft_2datalink_8c.html" title="sw/airborne/firmwares\l/rotorcraft/datalink.c" alt="" coords="2504,201,2664,245"/>
-<area shape="rect" id="node33" href="$navigation_8c.html" title="sw/airborne/firmwares\l/rotorcraft/navigation.c" alt="" coords="2688,201,2853,245"/>
-<area shape="rect" id="node35" href="$quat__setpoint__int_8c.html" title="Quaternion setpoint generation." alt="" coords="2877,193,3043,253"/>
-<area shape="rect" id="node37" href="$telemetry_8h.html" title="sw/airborne/firmwares\l/rotorcraft/telemetry.h" alt="" coords="3067,201,3229,245"/>
-<area shape="rect" id="node39" href="$setup__actuators_8c.html" title="sw/airborne/firmwares\l/setup/setup_actuators.c" alt="" coords="3253,201,3435,245"/>
-<area shape="rect" id="node41" href="$main__demo3_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo3.c" alt="" coords="3459,201,3629,245"/>
-<area shape="rect" id="node43" href="$main__demo4_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo4.c" alt="" coords="3653,201,3824,245"/>
-<area shape="rect" id="node45" href="$main__demo5_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo5.c" alt="" coords="3848,201,4019,245"/>
-<area shape="rect" id="node47" href="$link__mcu__usart_8c.html" title="sw/airborne/link_mcu\l_usart.c" alt="" coords="4043,201,4197,245"/>
-<area shape="rect" id="node49" href="$lisa__stm__gps__passthrough__main_8c.html" title="sw/airborne/lisa/lisa\l_stm_gps_passthrough\l_main.c" alt="" coords="4221,193,4392,253"/>
-<area shape="rect" id="node51" href="$lisa__stm__passthrough__main_8c.html" title="sw/airborne/lisa/lisa\l_stm_passthrough_main.c" alt="" coords="4416,201,4605,245"/>
-<area shape="rect" id="node53" href="$hs__gyro_8c.html" title="sw/airborne/lisa/test\l/hs_gyro.c" alt="" coords="4629,201,4779,245"/>
-<area shape="rect" id="node55" href="$lisa__test__adxl345__dma_8c.html" title="sw/airborne/lisa/test\l/lisa_test_adxl345_dma.c" alt="" coords="4803,201,4984,245"/>
-<area shape="rect" id="node57" href="$lisa__test__hmc5843_8c.html" title="sw/airborne/lisa/test\l/lisa_test_hmc5843.c" alt="" coords="5008,201,5165,245"/>
-<area shape="rect" id="node59" href="$lisa__test__itg3200_8c.html" title="sw/airborne/lisa/test\l/lisa_test_itg3200.c" alt="" coords="5189,201,5339,245"/>
-<area shape="rect" id="node61" href="$lisa__tunnel_8c.html" title="sw/airborne/lisa/test\l/lisa_tunnel.c" alt="" coords="5363,201,5512,245"/>
-<area shape="rect" id="node63" href="$test__board_8c.html" title="sw/airborne/lisa/test\l/test_board.c" alt="" coords="5536,201,5685,245"/>
-<area shape="rect" id="node65" href="$test__adc_8c.html" title="sw/airborne/lisa/test\l_adc.c" alt="" coords="5709,201,5859,245"/>
-<area shape="rect" id="node67" href="$test__uart__lisal_8c.html" title="sw/airborne/lisa/test\l_uart_lisal.c" alt="" coords="5883,201,6032,245"/>
-<area shape="rect" id="node69" href="$test__uart__lisam_8c.html" title="sw/airborne/lisa/test\l_uart_lisam.c" alt="" coords="6056,201,6205,245"/>
-<area shape="rect" id="node71" href="$uart_8c.html" title="sw/airborne/mcu_periph\l/uart.c" alt="" coords="6229,201,6403,245"/>
-<area shape="rect" id="node73" href="$adc__generic_8c.html" title="sw/airborne/modules\l/adcs/adc_generic.c" alt="" coords="6427,201,6581,245"/>
-<area shape="rect" id="node75" href="$max11040_8c.html" title="Maxim MAX11040 ADC hw interface." alt="" coords="6605,201,6760,245"/>
-<area shape="rect" id="node77" href="$flight__benchmark_8c.html" title="sw/airborne/modules\l/benchmark/flight_benchmark.c" alt="" coords="6784,201,7005,245"/>
-<area shape="rect" id="node79" href="$cam__track_8h.html" title="blob tracking with cmucam" alt="" coords="7029,201,7216,245"/>
-<area shape="rect" id="node81" href="$cartography_8c.html" title="Navigation functions for cartography of the ground." alt="" coords="7240,201,7432,245"/>
-<area shape="rect" id="node83" href="$sys__mon_8c.html" title="sw/airborne/modules\l/core/sys_mon.c" alt="" coords="7456,201,7611,245"/>
-<area shape="rect" id="node85" href="$xtend__rssi_8c.html" title="This measures the rssi pwm signal from a Digi XTend radio modem and sends a message with the info..." alt="" coords="7635,201,7789,245"/>
-<area shape="rect" id="node87" href="$atmega__i2c__cam__ctrl_8c.html" title="Interface with digital camera though AVR AtMega chip." alt="" coords="7813,193,7968,253"/>
-<area shape="rect" id="node89" href="$sim__i2c__cam__ctrl_8c.html" title="Simulated Interface with digital camera." alt="" coords="7992,193,8147,253"/>
-<area shape="rect" id="node91" href="$enose_8c.html" title="sw/airborne/modules\l/enose/enose.c" alt="" coords="8171,201,8325,245"/>
-<area shape="rect" id="node93" href="$gsm_8c.html" title="sw/airborne/modules\l/gsm/gsm.c" alt="" coords="8349,201,8504,245"/>
-<area shape="rect" id="node95" href="$alt__filter_8c.html" title="sw/airborne/modules\l/ins/alt_filter.c" alt="" coords="8528,201,8683,245"/>
-<area shape="rect" id="node97" href="$fw__ins__vn100_8c.html" title="sw/airborne/modules\l/ins/fw_ins_vn100.c" alt="" coords="8707,201,8861,245"/>
-<area shape="rect" id="node99" href="$modules_2ins_2ins__arduimu_8c.html" title="sw/airborne/modules\l/ins/ins_arduimu.c" alt="" coords="8885,201,9040,245"/>
+<area shape="rect" id="node2" href="$uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="4544,95,4719,136"/>
+<area shape="rect" id="node3" href="$lpc21_2mcu__periph_2uart__arch_8c.html" title="sw/airborne/arch/lpc21\l/mcu_periph/uart_arch.c" alt="" coords="5,191,183,233"/>
+<area shape="rect" id="node4" href="$lpc21_2subsystems_2radio__control_2spektrum__arch_8h.html" title="sw/airborne/arch/lpc21\l/subsystems/radio_control\l/spektrum_arch.h" alt="" coords="207,184,397,240"/>
+<area shape="rect" id="node5" href="$usb__tunnel_8c.html" title="USB tunnel application. " alt="" coords="422,191,587,233"/>
+<area shape="rect" id="node6" href="$omap_2mcu__periph_2uart__arch_8c.html" title="sw/airborne/arch/omap\l/mcu_periph/uart_arch.c" alt="" coords="612,191,789,233"/>
+<area shape="rect" id="node7" href="$stm32_2mcu__periph_2uart__arch_8c.html" title="sw/airborne/arch/stm32\l/mcu_periph/uart_arch.c" alt="" coords="813,191,991,233"/>
+<area shape="rect" id="node8" href="$stm32_2subsystems_2radio__control_2spektrum__arch_8c.html" title="sw/airborne/arch/stm32\l/subsystems/radio_control\l/spektrum_arch.c" alt="" coords="1015,184,1205,240"/>
+<area shape="rect" id="node9" href="$lisa__l_2test__baro_8c.html" title="sw/airborne/boards\l/lisa_l/test_baro.c" alt="" coords="1229,191,1372,233"/>
+<area shape="rect" id="node10" href="$lisa__m_2test__baro_8c.html" title="sw/airborne/boards\l/lisa_m/test_baro.c" alt="" coords="1396,191,1539,233"/>
+<area shape="rect" id="node11" href="$imu__navgo_8c.html" title="sw/airborne/boards\l/navgo/imu_navgo.c" alt="" coords="1563,191,1713,233"/>
+<area shape="rect" id="node12" href="$imu__umarim_8c.html" title="sw/airborne/boards\l/umarim/imu_umarim.c" alt="" coords="1737,191,1909,233"/>
+<area shape="rect" id="node13" href="$estimator_8c.html" title="State estimate, fusioning sensors. " alt="" coords="1934,199,2105,225"/>
+<area shape="rect" id="node14" href="$fixedwing_2datalink_8c.html" title="sw/airborne/firmwares\l/fixedwing/datalink.c" alt="" coords="2129,191,2291,233"/>
+<area shape="rect" id="node15" href="$fbw__downlink_8h.html" title="Set of macros defining the periodic telemetry messages of FBW process. " alt="" coords="2315,191,2497,233"/>
+<area shape="rect" id="node16" href="$rotorcraft_2datalink_8c.html" title="sw/airborne/firmwares\l/rotorcraft/datalink.c" alt="" coords="2521,191,2683,233"/>
+<area shape="rect" id="node17" href="$navigation_8c.html" title="sw/airborne/firmwares\l/rotorcraft/navigation.c" alt="" coords="2707,191,2873,233"/>
+<area shape="rect" id="node18" href="$quat__setpoint__int_8c.html" title="Quaternion setpoint generation. " alt="" coords="2897,184,3064,240"/>
+<area shape="rect" id="node19" href="$telemetry_8h.html" title="sw/airborne/firmwares\l/rotorcraft/telemetry.h" alt="" coords="3089,191,3251,233"/>
+<area shape="rect" id="node20" href="$setup__actuators_8c.html" title="sw/airborne/firmwares\l/setup/setup_actuators.c" alt="" coords="3275,191,3457,233"/>
+<area shape="rect" id="node21" href="$main__demo3_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo3.c" alt="" coords="3481,191,3651,233"/>
+<area shape="rect" id="node22" href="$main__demo4_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo4.c" alt="" coords="3675,191,3846,233"/>
+<area shape="rect" id="node23" href="$main__demo5_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo5.c" alt="" coords="3870,191,4041,233"/>
+<area shape="rect" id="node24" href="$link__mcu__usart_8c.html" title="sw/airborne/link_mcu\l_usart.c" alt="" coords="4065,191,4219,233"/>
+<area shape="rect" id="node25" href="$lisa__stm__gps__passthrough__main_8c.html" title="sw/airborne/lisa/lisa\l_stm_gps_passthrough\l_main.c" alt="" coords="4243,184,4414,240"/>
+<area shape="rect" id="node26" href="$lisa__stm__passthrough__main_8c.html" title="sw/airborne/lisa/lisa\l_stm_passthrough_main.c" alt="" coords="4439,191,4629,233"/>
+<area shape="rect" id="node27" href="$hs__gyro_8c.html" title="sw/airborne/lisa/test\l/hs_gyro.c" alt="" coords="4654,191,4803,233"/>
+<area shape="rect" id="node28" href="$lisa__test__adxl345__dma_8c.html" title="sw/airborne/lisa/test\l/lisa_test_adxl345_dma.c" alt="" coords="4828,191,5011,233"/>
+<area shape="rect" id="node29" href="$lisa__test__hmc5843_8c.html" title="sw/airborne/lisa/test\l/lisa_test_hmc5843.c" alt="" coords="5035,191,5193,233"/>
+<area shape="rect" id="node30" href="$lisa__test__itg3200_8c.html" title="sw/airborne/lisa/test\l/lisa_test_itg3200.c" alt="" coords="5217,191,5366,233"/>
+<area shape="rect" id="node31" href="$lisa__tunnel_8c.html" title="sw/airborne/lisa/test\l/lisa_tunnel.c" alt="" coords="5390,191,5539,233"/>
+<area shape="rect" id="node32" href="$test__board_8c.html" title="sw/airborne/lisa/test\l/test_board.c" alt="" coords="5563,191,5713,233"/>
+<area shape="rect" id="node33" href="$test__adc_8c.html" title="sw/airborne/lisa/test\l_adc.c" alt="" coords="5737,191,5886,233"/>
+<area shape="rect" id="node34" href="$test__uart__lisal_8c.html" title="sw/airborne/lisa/test\l_uart_lisal.c" alt="" coords="5910,191,6059,233"/>
+<area shape="rect" id="node35" href="$test__uart__lisam_8c.html" title="sw/airborne/lisa/test\l_uart_lisam.c" alt="" coords="6083,191,6233,233"/>
+<area shape="rect" id="node36" href="$uart_8c.html" title="sw/airborne/mcu_periph\l/uart.c" alt="" coords="6257,191,6432,233"/>
+<area shape="rect" id="node37" href="$adc__generic_8c.html" title="sw/airborne/modules\l/adcs/adc_generic.c" alt="" coords="6457,191,6611,233"/>
+<area shape="rect" id="node38" href="$max11040_8c.html" title="Maxim MAX11040 ADC hw interface. " alt="" coords="6635,191,6790,233"/>
+<area shape="rect" id="node39" href="$flight__benchmark_8c.html" title="sw/airborne/modules\l/benchmark/flight_benchmark.c" alt="" coords="6813,191,7036,233"/>
+<area shape="rect" id="node40" href="$cam__track_8h.html" title="blob tracking with cmucam " alt="" coords="7060,191,7248,233"/>
+<area shape="rect" id="node41" href="$cartography_8c.html" title="Navigation functions for cartography of the ground. " alt="" coords="7272,191,7465,233"/>
+<area shape="rect" id="node42" href="$sys__mon_8c.html" title="sw/airborne/modules\l/core/sys_mon.c" alt="" coords="7490,191,7645,233"/>
+<area shape="rect" id="node43" href="$xtend__rssi_8c.html" title="This measures the rssi pwm signal from a Digi XTend radio modem and sends a message with the info..." alt="" coords="7669,191,7825,233"/>
+<area shape="rect" id="node44" href="$atmega__i2c__cam__ctrl_8c.html" title="Interface with digital camera though AVR AtMega chip. " alt="" coords="7850,184,8005,240"/>
+<area shape="rect" id="node45" href="$sim__i2c__cam__ctrl_8c.html" title="Simulated Interface with digital camera. " alt="" coords="8029,184,8183,240"/>
+<area shape="rect" id="node46" href="$enose_8c.html" title="sw/airborne/modules\l/enose/enose.c" alt="" coords="8207,191,8362,233"/>
+<area shape="rect" id="node47" href="$gsm_8c.html" title="sw/airborne/modules\l/gsm/gsm.c" alt="" coords="8386,191,8541,233"/>
+<area shape="rect" id="node48" href="$alt__filter_8c.html" title="sw/airborne/modules\l/ins/alt_filter.c" alt="" coords="8565,191,8719,233"/>
+<area shape="rect" id="node49" href="$fw__ins__vn100_8c.html" title="sw/airborne/modules\l/ins/fw_ins_vn100.c" alt="" coords="8743,191,8898,233"/>
+<area shape="rect" id="node50" href="$modules_2ins_2ins__arduimu_8c.html" title="sw/airborne/modules\l/ins/ins_arduimu.c" alt="" coords="8922,191,9077,233"/>
 </map>

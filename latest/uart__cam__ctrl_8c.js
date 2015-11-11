@@ -4,7 +4,6 @@ var uart__cam__ctrl_8c =
     [ "CameraLinkDev", "uart__cam__ctrl_8c.html#add9e23666ee8e4147fe4659a425444f3", null ],
     [ "CameraLinkGetch", "uart__cam__ctrl_8c.html#ae75663ea754199a5cbef7335ec93a87b", null ],
     [ "CameraLinkTransmit", "uart__cam__ctrl_8c.html#a1f56cfc8d05c16a38620999658f1af05", null ],
-    [ "ReadCameraBuffer", "uart__cam__ctrl_8c.html#aeedbd29e71705d24a07e513176c6735d", null ],
     [ "THUMB_COUNT", "uart__cam__ctrl_8c.html#af41b17f13c9d9075d58ca8dd946bee82", null ],
     [ "THUMB_MSG_SIZE", "uart__cam__ctrl_8c.html#a4c1c1854001ea830ddbf3ab253fe6756", null ],
     [ "dc_send_command", "uart__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95", null ],

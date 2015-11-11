@@ -11,7 +11,7 @@ var types_8h =
     [ "boolean", "types_8h.html#a7c6368b321bd9acd0149b030bb8275ed", [
       [ "False", "types_8h.html#a7c6368b321bd9acd0149b030bb8275edaf9d46b7804d93a4fcde88489a1b68c24", null ],
       [ "True", "types_8h.html#a7c6368b321bd9acd0149b030bb8275eda6d32c34708a0a3507c4bdb89219d650b", null ],
-      [ "False", "types_8h.html#a7c6368b321bd9acd0149b030bb8275edaf9d46b7804d93a4fcde88489a1b68c24", null ],
-      [ "True", "types_8h.html#a7c6368b321bd9acd0149b030bb8275eda6d32c34708a0a3507c4bdb89219d650b", null ]
+      [ "False", "inttypes_8h.html#a7c6368b321bd9acd0149b030bb8275edaf9d46b7804d93a4fcde88489a1b68c24", null ],
+      [ "True", "inttypes_8h.html#a7c6368b321bd9acd0149b030bb8275eda6d32c34708a0a3507c4bdb89219d650b", null ]
     ] ]
 ];

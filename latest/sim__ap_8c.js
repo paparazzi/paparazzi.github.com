@@ -14,6 +14,7 @@ var sim__ap_8c =
     [ "update_dl_status", "sim__ap_8c.html#a3512db2bc2e62c68c6160428b6b044b3", null ],
     [ "ac_id", "sim__ap_8c.html#ae48dcb18ba9b663b88a344e66536aa14", null ],
     [ "alt_roll_pgain", "sim__ap_8c.html#a5a444f709389bc7083861d0e5161153d", null ],
+    [ "datalink_nb_msgs", "sim__ap_8c.html#a61a78640fdc8d9db8e70b9b36d216df9", null ],
     [ "datalink_time", "sim__ap_8c.html#a554cac6546bc91d21ff99268001d4010", null ],
     [ "gps_nb_ovrn", "sim__ap_8c.html#af998d186c77bb7530e38d3fd4e7eee2a", null ],
     [ "inflight_calib_mode", "sim__ap_8c.html#a95020ddbde5c388f5bee16293e28dbf3", null ],

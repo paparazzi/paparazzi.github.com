@@ -38,6 +38,7 @@ var group__math__algebra__generic =
     [ "RATES_ASSIGN", "group__math__algebra__generic.html#ga4edec404f97e53a3bfac68662016a2d3", null ],
     [ "RATES_BFP_OF_REAL", "group__math__algebra__generic.html#gaae2e66fa0d27cf6f7d80ab5d4f1c24b9", null ],
     [ "RATES_BOUND_BOX", "group__math__algebra__generic.html#ga14ff3da3534bfec85abea4896e7b2106", null ],
+    [ "RATES_BOUND_BOX_ABS", "group__math__algebra__generic.html#gac9a963b9f59d77239c17be434bc0e334", null ],
     [ "RATES_BOUND_CUBE", "group__math__algebra__generic.html#gad29dcaa44d7039f4b08eb7de6a109002", null ],
     [ "RATES_COPY", "group__math__algebra__generic.html#ga387c18418c58cec896203d82d019e05f", null ],
     [ "RATES_DIFF", "group__math__algebra__generic.html#gac6c3c11439ce587fe4542f2d70fb585a", null ],

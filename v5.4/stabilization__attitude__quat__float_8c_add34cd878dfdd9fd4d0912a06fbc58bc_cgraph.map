@@ -1,32 +1,32 @@
 <map id="stabilization_attitude_read_rc" name="stabilization_attitude_read_rc">
-<area shape="rect" id="node3" href="$stabilization__attitude__rc__setpoint_8c.html#a9d0b7ad4c9f5c936c3f06910ac5d0185" title="Read attitude setpoint from RC as quaternion Interprets the stick positions as axes. " alt="" coords="209,645,391,689"/>
-<area shape="rect" id="node5" href="$stabilization__attitude__rc__setpoint_8c.html#a60929bf25f6bd542fd13629fc452c1b6" title="Read attitude setpoint from RC as euler angles. " alt="" coords="447,127,628,171"/>
-<area shape="rect" id="node26" href="$stabilization__attitude__rc__setpoint_8c.html#a795e57d623b6d1b9fe9a630dd90d13d4" title="stabilization_attitude\l_read_rc_setpoint_eulers_f" alt="" coords="441,443,633,487"/>
-<area shape="rect" id="node36" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="948,535,1145,563"/>
-<area shape="rect" id="node47" href="$stabilization__attitude__rc__setpoint_8c.html#a1700308a4ecb46cc5ca8691e78ce69a3" title="Read roll/pitch command from RC as quaternion. " alt="" coords="444,342,631,386"/>
-<area shape="rect" id="node53" href="$pprz__algebra__float_8c.html#a0ad75a3c32ba844b0aae704455dc2257" title="Quaternion from unit vector and angle. " alt="" coords="469,645,605,689"/>
-<area shape="rect" id="node56" href="$pprz__algebra__float_8c.html#af182e4cea0a80278a3b2856331095ff6" title="Composition (multiplication) of two quaternions. " alt="" coords="727,715,855,743"/>
-<area shape="rect" id="node58" href="$pprz__algebra__float_8h.html#a010393da7c94f197d0161a0071862041" title="float_quat_normalize" alt="" coords="713,825,868,853"/>
-<area shape="rect" id="node62" href="$pprz__algebra__float_8c.html#a30fe06f92cef3aa377a52b95d641ed5a" title="Composition (multiplication) of two quaternions. " alt="" coords="460,879,615,907"/>
-<area shape="rect" id="node64" href="$pprz__algebra__float_8c.html#a1046209eec005141af05e1098b559487" title="Composition (multiplication) of two quaternions with normalization. " alt="" coords="452,762,623,806"/>
-<area shape="rect" id="node7" href="$stabilization__attitude__rc__setpoint_8c.html#aaacaa0bfae27bca514cd0e19cea0e13e" title="get_rc_roll" alt="" coords="747,5,835,33"/>
-<area shape="rect" id="node9" href="$stabilization__attitude__rc__setpoint_8c.html#a9d8973438ae0ad5f463d0e40c7c96c00" title="get_rc_pitch" alt="" coords="741,55,840,83"/>
-<area shape="rect" id="node11" href="$stabilization__attitude__rc__setpoint_8c.html#ae1bf36a0f51b8303e556d7fa83504dbc" title="get_rc_yaw" alt="" coords="744,106,837,134"/>
-<area shape="rect" id="node13" href="$stabilization__attitude__rc__setpoint_8c.html#a1270210b635f040b5bdd7d974f29c71f" title="stabilization_attitude\l_get_heading_i" alt="" coords="713,157,868,201"/>
-<area shape="rect" id="node15" href="$group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int). " alt="" coords="948,194,1145,222"/>
-<area shape="rect" id="node17" href="$group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int). " alt="" coords="1196,194,1359,222"/>
-<area shape="rect" id="node19" href="$group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title="orientationCalcEulers_i" alt="" coords="1409,194,1575,222"/>
-<area shape="rect" id="node21" href="$pprz__algebra__int_8c.html#af2f61a27841c68cefbd27a8614fcd90e" title="int32_eulers_of_rmat" alt="" coords="1624,169,1781,197"/>
-<area shape="rect" id="node23" href="$pprz__algebra__int_8c.html#a02ccc32cb7b533e0c7cf18140fb7104e" title="int32_eulers_of_quat" alt="" coords="1625,219,1780,247"/>
-<area shape="rect" id="node28" href="$stabilization__attitude__rc__setpoint_8c.html#a309fd1a55c923cc260a5a5dee9a38dc6" title="get_rc_roll_f" alt="" coords="741,375,840,403"/>
-<area shape="rect" id="node30" href="$stabilization__attitude__rc__setpoint_8c.html#aaf72a0691995f62ee5a168379c0fa91f" title="get_rc_pitch_f" alt="" coords="736,325,845,353"/>
-<area shape="rect" id="node32" href="$stabilization__attitude__rc__setpoint_8c.html#a8c8d5fae7ce7c73035312dddd8f07688" title="get_rc_yaw_f" alt="" coords="739,426,843,454"/>
-<area shape="rect" id="node34" href="$stabilization__attitude__rc__setpoint_8c.html#aef31d05722347c8213ef503f5c6f1113" title="stabilization_attitude\l_get_heading_f" alt="" coords="713,527,868,571"/>
-<area shape="rect" id="node38" href="$group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="1196,535,1359,563"/>
-<area shape="rect" id="node40" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="1408,535,1576,563"/>
-<area shape="rect" id="node42" href="$pprz__algebra__float_8c.html#ac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="1627,510,1779,538"/>
-<area shape="rect" id="node44" href="$pprz__algebra__float_8c.html#acd48accfe6eaac320b0d651d894e1db8" title="float_eulers_of_quat" alt="" coords="1628,561,1777,589"/>
-<area shape="rect" id="node51" href="$pprz__algebra__float_8c.html#a9698d02fc9515e6638181602aa04536a" title="Quaternion from orientation vector. " alt="" coords="684,274,897,302"/>
-<area shape="rect" id="node60" href="$pprz__algebra__float_8h.html#af58947a2590837aa85077d42d99fb112" title="float_quat_norm" alt="" coords="984,825,1109,853"/>
-<area shape="rect" id="node67" href="$pprz__algebra__float_8h.html#a8c87c4af5df3d13c6eb0bd8b8e97721a" title="float_quat_wrap_shortest" alt="" coords="700,770,881,798"/>
+<area shape="rect" id="node2" href="$stabilization__attitude__rc__setpoint_8c.html#a9d0b7ad4c9f5c936c3f06910ac5d0185" title="Read attitude setpoint from RC as quaternion Interprets the stick positions as axes. " alt="" coords="208,646,391,687"/>
+<area shape="rect" id="node3" href="$stabilization__attitude__rc__setpoint_8c.html#a60929bf25f6bd542fd13629fc452c1b6" title="Read attitude setpoint from RC as euler angles. " alt="" coords="444,129,627,170"/>
+<area shape="rect" id="node13" href="$stabilization__attitude__rc__setpoint_8c.html#a795e57d623b6d1b9fe9a630dd90d13d4" title="stabilization_attitude\l_read_rc_setpoint_eulers_f" alt="" coords="439,435,632,477"/>
+<area shape="rect" id="node18" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="943,536,1141,563"/>
+<area shape="rect" id="node23" href="$stabilization__attitude__rc__setpoint_8c.html#a1700308a4ecb46cc5ca8691e78ce69a3" title="Read roll/pitch command from RC as quaternion. " alt="" coords="441,353,629,394"/>
+<area shape="rect" id="node25" href="$pprz__algebra__float_8c.html#a0ad75a3c32ba844b0aae704455dc2257" title="Quaternion from unit vector and angle. " alt="" coords="467,646,604,687"/>
+<area shape="rect" id="node26" href="$pprz__algebra__float_8c.html#af182e4cea0a80278a3b2856331095ff6" title="Composition (multiplication) of two quaternions. " alt="" coords="723,716,852,743"/>
+<area shape="rect" id="node27" href="$pprz__algebra__float_8h.html#a010393da7c94f197d0161a0071862041" title="float_quat_normalize" alt="" coords="709,825,865,852"/>
+<area shape="rect" id="node29" href="$pprz__algebra__float_8c.html#a30fe06f92cef3aa377a52b95d641ed5a" title="Composition (multiplication) of two quaternions. " alt="" coords="458,880,613,907"/>
+<area shape="rect" id="node30" href="$pprz__algebra__float_8c.html#a1046209eec005141af05e1098b559487" title="Composition (multiplication) of two quaternions with normalization. " alt="" coords="450,763,621,805"/>
+<area shape="rect" id="node4" href="$stabilization__attitude__rc__setpoint_8c.html#aaacaa0bfae27bca514cd0e19cea0e13e" title="get_rc_roll" alt="" coords="743,5,831,32"/>
+<area shape="rect" id="node5" href="$stabilization__attitude__rc__setpoint_8c.html#a9d8973438ae0ad5f463d0e40c7c96c00" title="get_rc_pitch" alt="" coords="737,56,837,83"/>
+<area shape="rect" id="node6" href="$stabilization__attitude__rc__setpoint_8c.html#ae1bf36a0f51b8303e556d7fa83504dbc" title="get_rc_yaw" alt="" coords="741,107,834,133"/>
+<area shape="rect" id="node7" href="$stabilization__attitude__rc__setpoint_8c.html#a1270210b635f040b5bdd7d974f29c71f" title="stabilization_attitude\l_get_heading_i" alt="" coords="710,158,865,199"/>
+<area shape="rect" id="node8" href="$group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int). " alt="" coords="943,195,1141,221"/>
+<area shape="rect" id="node9" href="$group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int). " alt="" coords="1190,195,1353,221"/>
+<area shape="rect" id="node10" href="$group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title="orientationCalcEulers_i" alt="" coords="1402,195,1569,221"/>
+<area shape="rect" id="node11" href="$pprz__algebra__int_8c.html#af2f61a27841c68cefbd27a8614fcd90e" title="int32_eulers_of_rmat" alt="" coords="1617,169,1775,196"/>
+<area shape="rect" id="node12" href="$pprz__algebra__int_8c.html#a02ccc32cb7b533e0c7cf18140fb7104e" title="int32_eulers_of_quat" alt="" coords="1619,220,1773,247"/>
+<area shape="rect" id="node14" href="$stabilization__attitude__rc__setpoint_8c.html#a309fd1a55c923cc260a5a5dee9a38dc6" title="get_rc_roll_f" alt="" coords="738,376,837,403"/>
+<area shape="rect" id="node15" href="$stabilization__attitude__rc__setpoint_8c.html#aaf72a0691995f62ee5a168379c0fa91f" title="get_rc_pitch_f" alt="" coords="732,325,843,352"/>
+<area shape="rect" id="node16" href="$stabilization__attitude__rc__setpoint_8c.html#a8c8d5fae7ce7c73035312dddd8f07688" title="get_rc_yaw_f" alt="" coords="735,427,839,453"/>
+<area shape="rect" id="node17" href="$stabilization__attitude__rc__setpoint_8c.html#aef31d05722347c8213ef503f5c6f1113" title="stabilization_attitude\l_get_heading_f" alt="" coords="710,529,865,570"/>
+<area shape="rect" id="node19" href="$group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="1189,536,1353,563"/>
+<area shape="rect" id="node20" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="1401,536,1569,563"/>
+<area shape="rect" id="node21" href="$pprz__algebra__float_8c.html#ac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="1619,511,1773,537"/>
+<area shape="rect" id="node22" href="$pprz__algebra__float_8c.html#acd48accfe6eaac320b0d651d894e1db8" title="float_eulers_of_quat" alt="" coords="1621,561,1771,588"/>
+<area shape="rect" id="node24" href="$pprz__algebra__float_8c.html#a9698d02fc9515e6638181602aa04536a" title="Quaternion from orientation vector. " alt="" coords="680,275,895,301"/>
+<area shape="rect" id="node28" href="$pprz__algebra__float_8h.html#af58947a2590837aa85077d42d99fb112" title="float_quat_norm" alt="" coords="979,825,1105,852"/>
+<area shape="rect" id="node31" href="$pprz__algebra__float_8h.html#a8c87c4af5df3d13c6eb0bd8b8e97721a" title="float_quat_wrap_shortest" alt="" coords="696,771,879,797"/>
 </map>

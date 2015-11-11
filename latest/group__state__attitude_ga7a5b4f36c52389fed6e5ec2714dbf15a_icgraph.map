@@ -1,23 +1,25 @@
 <map id="stateIsAttitudeValid" name="stateIsAttitudeValid">
-<area shape="rect" id="node3" href="$rotorcraft_2autopilot_8c.html#a99409d6a32e6cce437a1c0354a2515eb" title="ahrs_is_aligned" alt="" coords="236,106,356,134"/>
-<area shape="rect" id="node42" href="$imu_8h.html#a931916ce562dfa28e02e0a6001dddc43" title="imu_SetBodyToImuCurrent" alt="" coords="200,157,392,185"/>
-<area shape="rect" id="node44" href="$mavlink_8c.html#af29c3514ff33b1bdb88f635b9bb213b3" title="Send a heartbeat. " alt="" coords="207,207,385,235"/>
-<area shape="rect" id="node5" href="$rotorcraft_2autopilot_8h.html#a7339f5741706cb9c2e2186b1174cc770" title="autopilot_on_rc_frame" alt="" coords="920,5,1085,33"/>
-<area shape="rect" id="node9" href="$rotorcraft_2autopilot_8h.html#a3aaa2cf16ee3b25e8fca9bbd1d579d64" title="autopilot_set_mode" alt="" coords="688,106,837,134"/>
-<area shape="rect" id="node33" href="$rotorcraft_2autopilot_8h.html#a4a3dedaf4d4da879348f946a9f3f4611" title="autopilot_set_motors_on" alt="" coords="440,157,621,185"/>
-<area shape="rect" id="node7" href="$main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="1183,5,1279,33"/>
-<area shape="rect" id="node11" href="$rotorcraft_2autopilot_8c.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization. " alt="" coords="951,55,1055,83"/>
-<area shape="rect" id="node14" href="$rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="1361,119,1495,147"/>
-<area shape="rect" id="node18" href="$main_8h.html#a6266a73fe8c0512f1de72cea96e5110b" title="failsafe_check" alt="" coords="948,207,1057,235"/>
-<area shape="rect" id="node28" href="$guidance__flip_8h.html#a341f66aaa1a6e736e980ae5cccb3c0f5" title="guidance_flip_run" alt="" coords="936,157,1069,185"/>
-<area shape="rect" id="node16" href="$main_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="1545,119,1655,147"/>
-<area shape="rect" id="node20" href="$main_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="1149,207,1312,235"/>
-<area shape="rect" id="node22" href="$fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1401,182,1455,210"/>
-<area shape="rect" id="node24" href="$main__chibios__libopencm3_8c.html#ad648a546fe66cd5f9328f33221a40c64" title="pprz_thd" alt="" coords="1389,233,1467,261"/>
-<area shape="rect" id="node26" href="$main__chibios__libopencm3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1573,233,1627,261"/>
-<area shape="rect" id="node30" href="$guidance__h_8h.html#ac4cf6da90a4278b4d0b2e4f227b33f2c" title="guidance_h_run" alt="" coords="1169,157,1292,185"/>
-<area shape="rect" id="node35" href="$boards_2ardrone_2actuators_8c.html#ad8d796514edd55dd0f4a2134fd83f691" title="actuators_ardrone_motor\l_status" alt="" coords="669,157,856,201"/>
-<area shape="rect" id="node39" href="$boards_2bebop_2actuators_8h.html#ad8f645b7663a54e01ba60403a1e45645" title="actuators_bebop_commit" alt="" coords="669,223,856,251"/>
-<area shape="rect" id="node37" href="$boards_2ardrone_2actuators_8h.html#a1e5faec000e4e1602bba080db2aec27c" title="actuators_ardrone_commit" alt="" coords="905,258,1100,286"/>
-<area shape="rect" id="node46" href="$mavlink_8h.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls. " alt="" coords="467,207,595,235"/>
+<area shape="rect" id="node2" href="$rotorcraft_2autopilot_8c.html#a99409d6a32e6cce437a1c0354a2515eb" title="ahrs_is_aligned" alt="" coords="236,195,356,221"/>
+<area shape="rect" id="node22" href="$imu_8h.html#a931916ce562dfa28e02e0a6001dddc43" title="imu_SetBodyToImuCurrent" alt="" coords="200,247,392,273"/>
+<area shape="rect" id="node23" href="$mavlink_8c.html#af29c3514ff33b1bdb88f635b9bb213b3" title="Send a heartbeat. " alt="" coords="207,301,385,328"/>
+<area shape="rect" id="node3" href="$rotorcraft_2autopilot_8h.html#a7339f5741706cb9c2e2186b1174cc770" title="Get autopilot mode from two 2way switches. " alt="" coords="919,259,1085,285"/>
+<area shape="rect" id="node6" href="$rotorcraft_2autopilot_8h.html#a3aaa2cf16ee3b25e8fca9bbd1d579d64" title="autopilot_set_mode" alt="" coords="688,99,837,125"/>
+<area shape="rect" id="node18" href="$rotorcraft_2autopilot_8h.html#a4a3dedaf4d4da879348f946a9f3f4611" title="autopilot_set_motors_on" alt="" coords="440,193,621,220"/>
+<area shape="rect" id="node4" href="$main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="1161,259,1258,285"/>
+<area shape="rect" id="node5" href="$rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1359,233,1413,260"/>
+<area shape="rect" id="node7" href="$rotorcraft_2autopilot_8c.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization. " alt="" coords="950,56,1054,83"/>
+<area shape="rect" id="node8" href="$rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="1319,107,1453,133"/>
+<area shape="rect" id="node14" href="$main_8h.html#a6266a73fe8c0512f1de72cea96e5110b" title="failsafe_check" alt="" coords="947,157,1057,184"/>
+<area shape="rect" id="node16" href="$guidance__flip_8h.html#a341f66aaa1a6e736e980ae5cccb3c0f5" title="guidance_flip_run" alt="" coords="935,5,1069,32"/>
+<area shape="rect" id="node9" href="$main_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="1501,107,1612,133"/>
+<area shape="rect" id="node10" href="$main_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="1660,132,1823,159"/>
+<area shape="rect" id="node11" href="$fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1883,107,1937,133"/>
+<area shape="rect" id="node12" href="$main__chibios__libopencm3_8c.html#ad648a546fe66cd5f9328f33221a40c64" title="pprz_thd" alt="" coords="1871,157,1949,184"/>
+<area shape="rect" id="node13" href="$main__chibios__libopencm3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1997,157,2052,184"/>
+<area shape="rect" id="node15" href="$main_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="main_init" alt="" coords="1169,208,1249,235"/>
+<area shape="rect" id="node17" href="$guidance__h_8h.html#ac4cf6da90a4278b4d0b2e4f227b33f2c" title="guidance_h_run" alt="" coords="1148,31,1271,57"/>
+<area shape="rect" id="node19" href="$boards_2ardrone_2actuators_8c.html#ad8d796514edd55dd0f4a2134fd83f691" title="actuators_ardrone_motor\l_status" alt="" coords="669,201,856,242"/>
+<area shape="rect" id="node21" href="$boards_2bebop_2actuators_8h.html#ad8f645b7663a54e01ba60403a1e45645" title="actuators_bebop_commit" alt="" coords="669,149,856,176"/>
+<area shape="rect" id="node20" href="$boards_2ardrone_2actuators_8h.html#a1e5faec000e4e1602bba080db2aec27c" title="actuators_ardrone_commit" alt="" coords="904,208,1100,235"/>
+<area shape="rect" id="node24" href="$mavlink_8h.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls. " alt="" coords="467,317,595,344"/>
 </map>

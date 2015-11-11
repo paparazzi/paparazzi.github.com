@@ -45,6 +45,7 @@ var dir_e030268cd18297cf6282390f76bfcf7f =
     [ "olimex_stm32-h103.h", "olimex__stm32-h103_8h.html", "olimex__stm32-h103_8h" ],
     [ "pc_sim.h", "pc__sim_8h.html", "pc__sim_8h" ],
     [ "px4fmu_1.7.h", "px4fmu__1_87_8h.html", "px4fmu__1_87_8h" ],
+    [ "px4fmu_2.4.h", "px4fmu__2_84_8h.html", "px4fmu__2_84_8h" ],
     [ "sdlog_1.0.h", "sdlog__1_80_8h.html", "sdlog__1_80_8h" ],
     [ "stm32f4_discovery.h", "stm32f4__discovery_8h.html", "stm32f4__discovery_8h" ],
     [ "tiny_0.99.h", "tiny__0_899_8h.html", "tiny__0_899_8h" ],

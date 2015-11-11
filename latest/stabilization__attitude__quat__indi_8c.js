@@ -28,6 +28,8 @@ var stabilization__attitude__quat__indi_8c =
     [ "indi_u_estimation", "stabilization__attitude__quat__indi_8c.html#a47788c07056b24c40f663dbe551253d1", null ],
     [ "mu", "stabilization__attitude__quat__indi_8c.html#a4df8d1d064e0269c44c34fd4a7a3b705", null ],
     [ "reference_acceleration", "stabilization__attitude__quat__indi_8c.html#a6be6232124313cc99a13ce5c9f453b6a", null ],
+    [ "stab_att_sp_euler", "stabilization__attitude__quat__indi_8c.html#a5b355848d1ce79a73b3fe67c8e86cd42", null ],
+    [ "stab_att_sp_quat", "stabilization__attitude__quat__indi_8c.html#acec5709f25760d7094e4f0c9bb5be2ec", null ],
     [ "stabilization_att_indi_cmd", "stabilization__attitude__quat__indi_8c.html#a1ab1b3a18a465440c67159c392970573", null ],
     [ "udot_estimation", "stabilization__attitude__quat__indi_8c.html#aac72d794b4193a2f74b01c5f84994c54", null ],
     [ "udotdot_estimation", "stabilization__attitude__quat__indi_8c.html#abce01ee2db72f5801ced1973bae55614", null ],

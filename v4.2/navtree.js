@@ -1,8 +1,7 @@
 var NAVTREE =
 [
   [ "Paparazzi UAS", "index.html", [
-    [ "Paparazzi Developer's Guide", "index.html", null ],
-    [ "Style Guides", "styleguide.html", "styleguide" ],
+    [ "Paparazzi Developer's Guide", "index.html", "index" ],
     [ "Paparazzi Technical Primers", "primer.html", null ],
     [ "Data Structures", null, [
       [ "Data Structures", "annotated.html", "annotated" ],
@@ -37,58 +36,60 @@ var NAVTREEINDEX =
 "ahrs__float__cmpl_8c.html#a2e1662dfa78e68c773e6d60e0a46cea2",
 "ahrs__int__cmpl__quat_8c_source.html",
 "alt__vfilter_8h.html#a2358ed24775d9319dc3f67db16f561c5",
-"autopilot_8c.html#a8f3fc6ad7d342f95e555efa1a4a27685",
-"baro__bmp_8h.html#ad6333f6759ee600d611b18cdcad04541",
-"booz_2baro__board_8c.html#acd0de6dfb119f91de310ea848fd7434d",
-"cam__track_8c.html#ae7eff66f25d4d0cae8db6f3ea188c98b",
-"common__nav_8h.html#a442b6321ba6cb77bcae6a05b14bb132b",
-"dir_ef32663d52802cbde3bbae6e038bbcc8.html",
+"autopilot_8c.html#a99409d6a32e6cce437a1c0354a2515eb",
+"baro__bmp_8h.html#ada506f04ea72e25110fd49bf52e0e5aa",
+"booz_2baro__board_8c.html#ad895d113447d7bd36be8c9f675349a0f",
+"cam__track_8c.html#aec7844a7514970056d85f59ef5c97d6a",
+"common__nav_8h.html#a4603515f41786b54ea9383a65a9f249e",
+"dir_ef7dc87845398f8f2b77517043dc711e.html",
 "enose_8h.html#ad073e16d88fcb41de0a997519ccc217a",
 "fixedwing_2guidance_2guidance__v_8h.html#ad6a5f5647843145a1a15e6825a1a147d",
-"globals_0x64.html",
+"globals_d.html",
 "gps__mtk_8h.html#ab289c425d7a9205c6967a627e7bf250b",
 "gsm_8c.html#a54c5782411a92706df3df13dfb28ddd4",
 "guidance__v__n_8h.html#a4c5b45de7a5a7c93fc0b3f95b5b8fca5",
-"hmc58xx_8h.html#afa213aad9b52961c76f35a6767a54e72",
-"humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67aa62fa20c42bcf6b83bb6e451fb4266034",
-"i2c__attempt3__subtra_8c.html#ab1cd7e7bfa4ce1cd708ffe66e803d588",
-"imu__chimu_8h.html#ac7b7195a4c1d3980faa69ccf7aa4aa78",
-"ins_8c.html#ac2c79f54d3e1a3abf0d6f04accbad320",
-"ins__xsens_8c.html#a1686a38ed54472e4c6c7a73307c30bc1",
-"joby_8h.html#a89da41b25db2c79b8deeb26fbb5de53a",
-"link__mcu__usart_8c.html#a814315474b34e696f8ce16c5ca0e1d1d",
-"lisa__m__2_80_8h.html#aa8f2cb80a6b289c9ca114be0cbae45cc",
-"logom__2_86_8h.html#a01d0c0f27c401bfd2e594261669a4b50",
-"lpc21_2mcu__periph_2uart__arch_8h.html#af5bd4045b436cba08feb96e15994c04b",
-"lpc21_2subsystems_2radio__control_2spektrum__arch_8c_source.html",
-"lpcVIC_8h.html#a71c74fd076a074295aa77406cc9d1904",
-"max11040_8h.html#a093f8235f7b87115e61766891fd78e2c",
-"modules_2ins_2ins__arduimu__basic_8c.html#ac5803b6353ae28ae52ab9284d222d8d5",
-"nav_8h.html#a32b0c914606a5e49eb66833967deb640",
-"navgo__1_80_8h.html#a43abb7ff318cb315c8b5134ee8d96fd2",
-"photogrammetry__calculator_8c.html#a45930e976ca587d4b9d1d0e225f23410",
-"pprz__algebra__float_8h.html#a25ae277549c4186c3a29e6414b42f2e3",
-"pprz__geodetic__float_8c_source.html",
-"pwm__meas_8c.html",
-"sd__card_8c.html#a74dc76bed4f70ef0304ce7f261518dc3",
-"settings_8h.html#a13f5ba1374d451bc61a957f86034111f",
-"sim__uart_8h.html#a25a3137f252caa764e9752e5c0b53d13",
-"stabilization__adaptive_8c.html#adca87cd9c217e6a154e37785dd9c73e0",
-"stabilization__attitude__ref__float_8h.html#a40375b94775800b50d2f5f4121a394d7",
-"stm32_2mcu__periph_2i2c__arch_8c.html#a08967c9db96aa56272046212a73938f3",
-"stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a4ae5e88ff6bbc703b52683feea2482ff",
-"structCHIMU__PARSER__DATA.html#ae4341b0de3991b9ed967e637f1ccd2a8",
-"structImuAspirin.html#ae12dea21d7b8529620b1927313e97497",
-"structUint16Vect3.html#ab4c9a9c037ace1d9d6e00cc8f8d1deb0",
-"structlink__mcu__msg.html#ae9e530355d58a057acaccb22f6c3ee1e",
-"structvicRegs__t.html#a8ffdc6fd1cde0b26e3c69c1d66e675d8",
-"tcas_8h.html#a636b102d0ab938f9f56571e356093324",
-"test__led_8c_source.html",
-"tiny__2_81_8h.html#aa8ade7e32d46ae622ee886a90b1ea9c8",
-"umarim__lite__2_80_8h.html#ad5a6636ee170fccf62a748fc72374d3b",
-"xbee24_8h.html#ab369b90611c0ddde2ba6461e15fc36a1"
+"hmc58xx_8h.html#aedbd33536aa225bbbac08d08eef6a366",
+"humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67aa4c07684db117aa2f686089a490a822b4",
+"i2c__attempt3__subtra_8c.html#ab3653329f17d64d9c3c43db7c2fbd709",
+"imu__chimu_8h.html#ac1cd4d5c4dfa9b02ebd0bdc6d81c930a",
+"ins_8c.html#abfca570ad537cb55bbe0eb572b6e1685",
+"ins__xsens_8c.html#a1685356ace76940e06c455f2dcb00f75",
+"joby_8h.html#a71a5878f7441ec7f868facb2baf5cf7aad2e220d77adb5c8650909ddedd9837ef",
+"link__mcu__usart_8c.html#a7a53eb7b7d725c83beee8dd21cb9f74f",
+"lisa__m__2_80_8h.html#aa8b07cb021b87d0c5868a3cb2851510e",
+"logom__2_86_8h.html#a01ac9d2f00660408bcc8c809020904f9",
+"lpc21_2mcu__periph_2uart__arch_8h.html#aef3a1340ea0fba1573691a9e74a43d11",
+"lpc21_2subsystems_2radio__control_2spektrum__arch_8c.html#af871da7c10e72980ef21424337791c76",
+"lpcVIC_8h.html#a6eb2cb655311a0360a42870cc5677488",
+"max11040_8h.html#a0288e7c5f6701799e508cb4cbf12e848",
+"modules_2ins_2ins__arduimu__basic_8c.html#aaf97e062b11db6a64b8fb0df024c84f5",
+"nav_8h.html#a303d1b36f192af5f774d7a660ea83fff",
+"navgo__1_80_8h.html#a35cd37afe0ee451ff6f282cb3569ee3b",
+"photogrammetry__calculator_8c.html#a4417b4836a8a82e7a8f11b640602e648",
+"pprz__algebra__float_8h.html#a25ada89ae0032821401cba16e7f71065",
+"pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd",
+"pwm__input__arch_8h_source.html",
+"sd__card_8c.html#a6fda1c30b3e6c3656c58c972df422559",
+"settings_8h.html",
+"sim__uart_8h.html#a0166e0c72da7d90dc7f5ae72b08c78f1",
+"stabilization__adaptive_8c.html#adc46a5095f728cd7248e2a771f8e4080",
+"stabilization__attitude__ref__float_8h.html#a2707cad913cea4d24a03372f14002341",
+"stm32_2mcu__periph_2i2c__arch_8c.html#a05763355d0e087ba41feab61dd773fe6",
+"stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a3cbf49f914dbdf858b587b7d669aef8c",
+"structCHIMU__PARSER__DATA.html#ad231d33b8e3ac8f3f33deb853d49a9e8",
+"structImuAspirin.html#acf3231ec6e6b6e136d2f3db538d7b605",
+"structUint16Vect3.html#a4bd157d39e9f48e613c59c45094165c7",
+"structlink__mcu__msg.html#ac29e07d4b2e09f7f173037a1cb0c8002",
+"structvicRegs__t.html#a8e8a5234511eef8daa959a5f140222e6",
+"tcas_8h.html#a625ef1c941fe293b480bf7032a212a38",
+"test__led_8c.html#a840291bc02cba5474a4cb46a9b9566fe",
+"tiny__2_81_8h.html#a9b6dd90e1f8fb64d936679da4a87e7df",
+"umarim__lite__2_80_8h.html#ad25058c1245a5a986632aae0f3f91ebc",
+"xbee24_8h.html#a8ec128ddd2af18d6e68050f3167bd63e"
 ];
 
+var SYNCONMSG = 'click to disable panel synchronisation';
+var SYNCOFFMSG = 'click to enable panel synchronisation';
 var navTreeSubIndices = new Array();
 
 function getData(varName)
@@ -111,10 +112,31 @@ function stripPath2(uri)
   return m ? uri.substring(i-6) : s;
 }
 
+function hashValue()
+{
+  return $(location).attr('hash').substring(1).replace(/[^\w\-]/g,'');
+}
+
+function hashUrl()
+{
+  return '#'+hashValue();
+}
+
+function pathName()
+{
+  return $(location).attr('pathname').replace(/[^-A-Za-z0-9+&@#/%?=~_|!:,.;\(\)]/g, '');
+}
+
 function localStorageSupported()
 {
-  return 'localStorage' in window && window['localStorage'] !== null;
+  try {
+    return 'localStorage' in window && window['localStorage'] !== null && window.localStorage.getItem;
+  }
+  catch(e) {
+    return false;
+  }
 }
+
 
 function storeLink(link)
 {
@@ -127,7 +149,7 @@ function deleteLink()
 {
   if (localStorageSupported()) {
     window.localStorage.setItem('navpath','');
-  } 
+  }
 }
 
 function cachedLink()
@@ -148,7 +170,7 @@ function getScript(scriptName,func,show)
   script.onload = func; 
   script.src = scriptName+'.js'; 
   if ($.browser.msie && $.browser.version<=8) { 
-    // script.onload does work with older versions of IE
+    // script.onload does not work with older versions of IE
     script.onreadystatechange = function() {
       if (script.readyState=='complete' || script.readyState=='loaded') { 
         func(); if (show) showRoot(); 
@@ -160,24 +182,22 @@ function getScript(scriptName,func,show)
 
 function createIndent(o,domNode,node,level)
 {
-  if (node.parentNode && node.parentNode.parentNode) {
-    createIndent(o,domNode,node.parentNode,level+1);
-  }
-  var imgNode = document.createElement("img");
-  imgNode.width = 16;
-  imgNode.height = 22;
-  if (level==0 && node.childrenData) {
+  var level=-1;
+  var n = node;
+  while (n.parentNode) { level++; n=n.parentNode; }
+  if (node.childrenData) {
+    var imgNode = document.createElement("img");
+    imgNode.style.paddingLeft=(16*level).toString()+'px';
+    imgNode.width  = 16;
+    imgNode.height = 22;
+    imgNode.border = 0;
     node.plus_img = imgNode;
     node.expandToggle = document.createElement("a");
     node.expandToggle.href = "javascript:void(0)";
     node.expandToggle.onclick = function() {
       if (node.expanded) {
         $(node.getChildrenUL()).slideUp("fast");
-        if (node.isLast) {
-          node.plus_img.src = node.relpath+"ftv2plastnode.png";
-        } else {
-          node.plus_img.src = node.relpath+"ftv2pnode.png";
-        }
+        node.plus_img.src = node.relpath+"ftv2pnode.png";
         node.expanded = false;
       } else {
         expandNode(o, node, false, false);
@@ -185,33 +205,45 @@ function createIndent(o,domNode,node,level)
     }
     node.expandToggle.appendChild(imgNode);
     domNode.appendChild(node.expandToggle);
+    imgNode.src = node.relpath+"ftv2pnode.png";
   } else {
-    domNode.appendChild(imgNode);
+    var span = document.createElement("span");
+    span.style.display = 'inline-block';
+    span.style.width   = 16*(level+1)+'px';
+    span.style.height  = '22px';
+    span.innerHTML = '&#160;';
+    domNode.appendChild(span);
+  } 
+}
+
+var animationInProgress = false;
+
+function gotoAnchor(anchor,aname,updateLocation)
+{
+  var pos, docContent = $('#doc-content');
+  var ancParent = $(anchor.parent());
+  if (ancParent.hasClass('memItemLeft') ||
+      ancParent.hasClass('fieldname') ||
+      ancParent.hasClass('fieldtype') ||
+      ancParent.is(':header'))
+  {
+    pos = ancParent.position().top;
+  } else if (anchor.position()) {
+    pos = anchor.position().top;
   }
-  if (level==0) {
-    if (node.isLast) {
-      if (node.childrenData) {
-        imgNode.src = node.relpath+"ftv2plastnode.png";
-      } else {
-        imgNode.src = node.relpath+"ftv2lastnode.png";
-        domNode.appendChild(imgNode);
-      }
-    } else {
-      if (node.childrenData) {
-        imgNode.src = node.relpath+"ftv2pnode.png";
-      } else {
-        imgNode.src = node.relpath+"ftv2node.png";
-        domNode.appendChild(imgNode);
-      }
-    }
-  } else {
-    if (node.isLast) {
-      imgNode.src = node.relpath+"ftv2blank.png";
-    } else {
-      imgNode.src = node.relpath+"ftv2vertline.png";
-    }
+  if (pos) {
+    var dist = Math.abs(Math.min(
+               pos-docContent.offset().top,
+               docContent[0].scrollHeight-
+               docContent.height()-docContent.scrollTop()));
+    animationInProgress=true;
+    docContent.animate({
+      scrollTop: pos + docContent.scrollTop() - docContent.offset().top
+    },Math.max(50,Math.min(500,dist)),function(){
+      if (updateLocation) window.location.href=aname;
+      animationInProgress=false;
+    });
   }
-  imgNode.border = "0";
 }
 
 function newNode(o, po, text, link, childrenData, lastNode)
@@ -253,9 +285,9 @@ function newNode(o, po, text, link, childrenData, lastNode)
     a.className = stripPath(link.replace('#',':'));
     if (link.indexOf('#')!=-1) {
       var aname = '#'+link.split('#')[1];
-      var srcPage = stripPath($(location).attr('pathname'));
+      var srcPage = stripPath(pathName());
       var targetPage = stripPath(link.split('#')[0]);
-      a.href = srcPage!=targetPage ? url : '#';
+      a.href = srcPage!=targetPage ? url : "javascript:void(0)"; 
       a.onclick = function(){
         storeLink(link);
         if (!$(a).parent().parent().hasClass('selected'))
@@ -265,23 +297,8 @@ function newNode(o, po, text, link, childrenData, lastNode)
           $(a).parent().parent().addClass('selected');
           $(a).parent().parent().attr('id','selected');
         }
-        var pos, anchor = $(aname), docContent = $('#doc-content');
-        if (anchor.parent().attr('class')=='memItemLeft') {
-          pos = anchor.parent().position().top;
-        } else if (anchor.position()) {
-          pos = anchor.position().top;
-        }
-        if (pos) {
-          var dist = Math.abs(Math.min(
-                     pos-docContent.offset().top,
-                     docContent[0].scrollHeight-
-                     docContent.height()-docContent.scrollTop()));
-          docContent.animate({
-            scrollTop: pos + docContent.scrollTop() - docContent.offset().top
-          },Math.max(50,Math.min(500,dist)),function(){
-            window.location.replace(aname);
-          });
-        }
+        var anchor = $(aname);
+        gotoAnchor(anchor,aname,true);
       };
     } else {
       a.href = url;
@@ -362,13 +379,13 @@ function glowEffect(n,duration)
 
 function highlightAnchor()
 {
-  var anchor = $($(location).attr('hash'));
+  var aname = hashUrl();
+  var anchor = $(aname);
   if (anchor.parent().attr('class')=='memItemLeft'){
-    var rows = $('.memberdecls tr[class$="'+
-               window.location.hash.substring(1)+'"]');
+    var rows = $('.memberdecls tr[class$="'+hashValue()+'"]');
     glowEffect(rows.children(),300); // member without details
-  } else if (anchor.parents().slice(2).prop('tagName')=='TR') {
-    glowEffect(anchor.parents('div.memitem'),1000); // enum value
+  } else if (anchor.parent().attr('class')=='fieldname'){
+    glowEffect(anchor.parent().parent(),1000); // enum value
   } else if (anchor.parent().attr('class')=='fieldtype'){
     glowEffect(anchor.parent().parent(),1000); // struct field
   } else if (anchor.parent().is(":header")) {
@@ -376,13 +393,14 @@ function highlightAnchor()
   } else {
     glowEffect(anchor.next(),1000); // normal member
   }
+  gotoAnchor(anchor,aname,false);
 }
 
 function selectAndHighlight(hash,n)
 {
   var a;
   if (hash) {
-    var link=stripPath($(location).attr('pathname'))+':'+hash.substring(1);
+    var link=stripPath(pathName())+':'+hash.substring(1);
     a=$('.item a[class$="'+link+'"]');
   }
   if (a && a.length) {
@@ -392,6 +410,11 @@ function selectAndHighlight(hash,n)
   } else if (n) {
     $(n.itemDiv).addClass('selected');
     $(n.itemDiv).attr('id','selected');
+  }
+  if ($('#nav-tree-contents .item:first').hasClass('selected')) {
+    $('#nav-sync').css('top','30px');
+  } else {
+    $('#nav-sync').css('top','5px');
   }
   showRoot();
 }
@@ -409,7 +432,7 @@ function showNode(o, node, index, hash)
       if (!node.childrenVisited) {
         getNode(o, node);
       }
-      $(node.getChildrenUL()).show();
+      $(node.getChildrenUL()).css({'display':'block'});
       if (node.isLast) {
         node.plus_img.src = node.relpath+"ftv2mlastnode.png";
       } else {
@@ -429,7 +452,7 @@ function showNode(o, node, index, hash)
           },true);
         } else {
           var rootBase = stripPath(o.toroot.replace(/\..+$/, ''));
-          if (rootBase=="index" || rootBase=="pages") {
+          if (rootBase=="index" || rootBase=="pages" || rootBase=="search") {
             expandNode(o, n, true, true);
           }
           selectAndHighlight(hash,n);
@@ -441,8 +464,22 @@ function showNode(o, node, index, hash)
   }
 }
 
+function removeToInsertLater(element) {
+  var parentNode = element.parentNode;
+  var nextSibling = element.nextSibling;
+  parentNode.removeChild(element);
+  return function() {
+    if (nextSibling) {
+      parentNode.insertBefore(element, nextSibling);
+    } else {
+      parentNode.appendChild(element);
+    }
+  };
+}
+
 function getNode(o, po)
 {
+  var insertFunction = removeToInsertLater(po.li);
   po.childrenVisited = true;
   var l = po.childrenData.length-1;
   for (var i in po.childrenData) {
@@ -450,6 +487,7 @@ function getNode(o, po)
     po.children[i] = newNode(o, po, nodeData[0], nodeData[1], nodeData[2],
       i==l);
   }
+  insertFunction();
 }
 
 function gotoNode(o,subIndex,root,hash,relpath)
@@ -473,23 +511,18 @@ function navTo(o,root,hash,relpath)
   if (link) {
     var parts = link.split('#');
     root = parts[0];
-    if (parts.length>1) hash = '#'+parts[1];
+    if (parts.length>1) hash = '#'+parts[1].replace(/[^\w\-]/g,'');
     else hash='';
-  }
-  if (root==NAVTREE[0][1]) {
-    $('#nav-sync').css('top','30px');
-  } else {
-    $('#nav-sync').css('top','5px');
   }
   if (hash.match(/^#l\d+$/)) {
     var anchor=$('a[name='+hash.substring(1)+']');
     glowEffect(anchor.parent(),1000); // line number
     hash=''; // strip line number anchors
-    //root=root.replace(/_source\./,'.'); // source link to doc link
   }
   var url=root+hash;
   var i=-1;
   while (NAVTREEINDEX[i+1]<=url) i++;
+  if (i==-1) { i=0; root=NAVTREE[0][1]; } // fallback: show index
   if (navTreeSubIndices[i]) {
     gotoNode(o,i,root,hash,relpath)
   } else {
@@ -502,16 +535,26 @@ function navTo(o,root,hash,relpath)
   }
 }
 
+function showSyncOff(n,relpath)
+{
+    n.html('<img src="'+relpath+'sync_off.png" title="'+SYNCOFFMSG+'"/>');
+}
+
+function showSyncOn(n,relpath)
+{
+    n.html('<img src="'+relpath+'sync_on.png" title="'+SYNCONMSG+'"/>');
+}
+
 function toggleSyncButton(relpath)
 {
   var navSync = $('#nav-sync');
   if (navSync.hasClass('sync')) {
     navSync.removeClass('sync');
-    navSync.html('<img src="'+relpath+'sync_off.png"/>');
-    storeLink(stripPath2($(location).attr('pathname'))+$(location).attr('hash'));
+    showSyncOff(navSync,relpath);
+    storeLink(stripPath2(pathName())+hashUrl());
   } else {
     navSync.addClass('sync');
-    navSync.html('<img src="'+relpath+'sync_on.png"/>');
+    showSyncOn(navSync,relpath);
     deleteLink();
   }
 }
@@ -539,33 +582,38 @@ function initNavTree(toroot,relpath)
   if (localStorageSupported()) {
     var navSync = $('#nav-sync');
     if (cachedLink()) {
-      navSync.html('<img src="'+relpath+'sync_off.png"/>');
+      showSyncOff(navSync,relpath);
       navSync.removeClass('sync');
     } else {
-      navSync.html('<img src="'+relpath+'sync_on.png"/>');
+      showSyncOn(navSync,relpath);
     }
     navSync.click(function(){ toggleSyncButton(relpath); });
   }
 
-  navTo(o,toroot,window.location.hash,relpath);
+  $(window).load(function(){
+    navTo(o,toroot,hashUrl(),relpath);
+    showRoot();
+  });
 
   $(window).bind('hashchange', function(){
      if (window.location.hash && window.location.hash.length>1){
        var a;
        if ($(location).attr('hash')){
-         var clslink=stripPath($(location).attr('pathname'))+':'+
-                               $(location).attr('hash').substring(1);
-         a=$('.item a[class$="'+clslink+'"]');
+         var clslink=stripPath(pathName())+':'+hashValue();
+         a=$('.item a[class$="'+clslink.replace(/</g,'\\3c ')+'"]');
        }
        if (a==null || !$(a).parent().parent().hasClass('selected')){
          $('.item').removeClass('selected');
          $('.item').removeAttr('id');
        }
-       var link=stripPath2($(location).attr('pathname'));
-       navTo(o,link,$(location).attr('hash'),relpath);
+       var link=stripPath2(pathName());
+       navTo(o,link,hashUrl(),relpath);
+     } else if (!animationInProgress) {
+       $('#doc-content').scrollTop(0);
+       $('.item').removeClass('selected');
+       $('.item').removeAttr('id');
+       navTo(o,toroot,hashUrl(),relpath);
      }
   })
-
-  $(window).load(showRoot);
 }
 

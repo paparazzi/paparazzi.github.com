@@ -1,32 +1,35 @@
 <map id="get_sys_time_float" name="get_sys_time_float">
-<area shape="rect" id="node3" href="$dc_8h.html#a2a976ddc273dfdd99eb8638c364e9305" title="periodic function " alt="" coords="248,135,341,163"/>
-<area shape="rect" id="node15" href="$hmc58xx_8h.html#a89a7b5456b1a87c83aef85779c4fc5e9" title="hmc58xx_start_configure" alt="" coords="204,350,385,378"/>
-<area shape="rect" id="node29" href="$imu__aspirin__2__spi_8c.html#aaacbfcebdd1958bee817daf3e47d6274" title="function to configure hmc5883 mag " alt="" coords="211,426,379,470"/>
-<area shape="rect" id="node33" href="$ins__vectornav_8h.html#abccde82fac73ee723125e1173db630c0" title="Initialize Vectornav struct. " alt="" coords="227,493,363,521"/>
-<area shape="rect" id="node37" href="$ins__vectornav_8h.html#a5ba37a2e4e80d50b1ce1ada6e0f294fe" title="Read received data. " alt="" coords="221,543,368,587"/>
-<area shape="rect" id="node41" href="$stabilization__attitude__rc__setpoint_8h.html#a60929bf25f6bd542fd13629fc452c1b6" title="Read attitude setpoint from RC as euler angles. " alt="" coords="204,645,385,689"/>
-<area shape="rect" id="node59" href="$stabilization__attitude__rc__setpoint_8h.html#a795e57d623b6d1b9fe9a630dd90d13d4" title="stabilization_attitude\l_read_rc_setpoint_eulers_f" alt="" coords="199,757,391,801"/>
-<area shape="rect" id="node5" href="$atmega__i2c__cam__ctrl_8h.html#aeb25c30f109ccd0c3046715e4f3df6b5" title="atmega_i2c_cam_ctrl\l_periodic" alt="" coords="459,157,616,201"/>
-<area shape="rect" id="node7" href="$gpio__cam__ctrl_8h.html#a9ea235d04c38558097d37bc2dacdef1e" title="Periodic. " alt="" coords="453,223,621,251"/>
-<area shape="rect" id="node9" href="$servo__cam__ctrl_8h.html#a8fb28d260287fc333f4d1e110a68db27" title="servo_cam_ctrl_periodic" alt="" coords="449,5,625,33"/>
-<area shape="rect" id="node11" href="$uart__cam__ctrl_8h.html#aaf39174521b99262b40497c50520150b" title="digital_cam_uart_periodic" alt="" coords="445,55,629,83"/>
-<area shape="rect" id="node13" href="$video__cam__ctrl_8h.html#a310b6b4208930b49883ed0abccce0e87" title="digital_cam_video_periodic" alt="" coords="441,106,633,134"/>
-<area shape="rect" id="node17" href="$imu__krooz_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="optional. " alt="" coords="487,274,588,302"/>
-<area shape="rect" id="node19" href="$hmc58xx_8h.html#a353064a5a9c6b47a14f4b9543545b4ec" title="convenience function: read or start configuration if not already initialized " alt="" coords="469,325,605,353"/>
-<area shape="rect" id="node25" href="$imu__drotek__10dof__v2_8h.html#a4ff8194f50bedf14d3d6bf7a4d9efd9c" title="callback function to configure hmc5883 mag " alt="" coords="453,375,621,419"/>
-<area shape="rect" id="node21" href="$imu__hbmini_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="optional. " alt="" coords="717,329,819,357"/>
-<area shape="rect" id="node23" href="$mag__hmc58xx_8h.html#a2e48d1806ea88022ff1f1c8b01b53f42" title="mag_hmc58xx_module\l_periodic" alt="" coords="683,262,853,306"/>
-<area shape="rect" id="node27" href="$imu__drotek__10dof__v2_8c.html#ad32faae58e391642ec8048cb11011998" title="must be defined by underlying hardware " alt="" coords="715,383,821,411"/>
-<area shape="rect" id="node31" href="$imu__aspirin__2__spi_8c.html#ad32faae58e391642ec8048cb11011998" title="must be defined by underlying hardware " alt="" coords="484,442,591,470"/>
-<area shape="rect" id="node35" href="$ins__vectornav__wrapper_8h.html#a465857e7a84da756dbee9d867dcdb140" title="ins_vectornav_register" alt="" coords="455,493,620,521"/>
-<area shape="rect" id="node39" href="$ins__vectornav_8h.html#abcd265b9bfefa88327260439223dba81" title="Event handling for Vectornav. " alt="" coords="461,543,613,571"/>
-<area shape="rect" id="node43" href="$guidance__h_8h.html#a7db3290fc5f62abc15a1bb1638b4922f" title="guidance_h_read_rc" alt="" coords="463,594,612,622"/>
-<area shape="rect" id="node49" href="$stabilization__attitude__euler__int_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc" title="stabilization_attitude\l_read_rc" alt="" coords="460,645,615,689"/>
-<area shape="rect" id="node51" href="$stabilization__attitude__rc__setpoint_8h.html#a2c7e084c171f2656b071f20895ce2ce0" title="stabilization_attitude\l_read_rc_setpoint_quat\l_earth_bound_f" alt="" coords="452,711,623,771"/>
-<area shape="rect" id="node55" href="$stabilization__attitude__rc__setpoint_8h.html#a9d0b7ad4c9f5c936c3f06910ac5d0185" title="Read attitude setpoint from RC as quaternion Interprets the stick positions as axes. " alt="" coords="447,794,628,838"/>
-<area shape="rect" id="node45" href="$rotorcraft_2autopilot_8h.html#a7339f5741706cb9c2e2186b1174cc770" title="autopilot_on_rc_frame" alt="" coords="685,594,851,622"/>
-<area shape="rect" id="node47" href="$main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="903,594,999,622"/>
-<area shape="rect" id="node53" href="$stabilization__attitude__quat__indi_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc" title="stabilization_attitude\l_read_rc" alt="" coords="691,719,845,763"/>
-<area shape="rect" id="node57" href="$stabilization__attitude__quat__float_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc" title="stabilization_attitude\l_read_rc" alt="" coords="691,794,845,838"/>
-<area shape="rect" id="node61" href="$stabilization__attitude__euler__float_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc" title="stabilization_attitude\l_read_rc" alt="" coords="460,861,615,905"/>
+<area shape="rect" id="node2" href="$dc_8h.html#a2a976ddc273dfdd99eb8638c364e9305" title="periodic function " alt="" coords="245,148,340,175"/>
+<area shape="rect" id="node8" href="$hmc58xx_8h.html#a89a7b5456b1a87c83aef85779c4fc5e9" title="hmc58xx_start_configure" alt="" coords="201,347,384,373"/>
+<area shape="rect" id="node15" href="$imu__aspirin__2__spi_8c.html#aaacbfcebdd1958bee817daf3e47d6274" title="function to configure hmc5883 mag " alt="" coords="208,419,377,461"/>
+<area shape="rect" id="node17" href="$imu__mpu9250__spi_8c.html#a01b20949a852fbce070582aeb1b0def4" title="function to configure akm8963 mag " alt="" coords="203,485,383,526"/>
+<area shape="rect" id="node19" href="$ins__vectornav_8h.html#abccde82fac73ee723125e1173db630c0" title="Initialize Vectornav struct. " alt="" coords="225,551,361,577"/>
+<area shape="rect" id="node21" href="$ins__vectornav_8h.html#a5ba37a2e4e80d50b1ce1ada6e0f294fe" title="Read received data. " alt="" coords="219,602,366,643"/>
+<area shape="rect" id="node23" href="$stabilization__attitude__rc__setpoint_8h.html#a60929bf25f6bd542fd13629fc452c1b6" title="Read attitude setpoint from RC as euler angles. " alt="" coords="201,709,384,750"/>
+<area shape="rect" id="node33" href="$stabilization__attitude__rc__setpoint_8h.html#a795e57d623b6d1b9fe9a630dd90d13d4" title="stabilization_attitude\l_read_rc_setpoint_eulers_f" alt="" coords="196,806,389,847"/>
+<area shape="rect" id="node3" href="$atmega__i2c__cam__ctrl_8h.html#aeb25c30f109ccd0c3046715e4f3df6b5" title="atmega_i2c_cam_ctrl\l_periodic" alt="" coords="455,57,613,98"/>
+<area shape="rect" id="node4" href="$gpio__cam__ctrl_8h.html#a9ea235d04c38558097d37bc2dacdef1e" title="Periodic. " alt="" coords="450,123,618,149"/>
+<area shape="rect" id="node5" href="$servo__cam__ctrl_8h.html#a8fb28d260287fc333f4d1e110a68db27" title="servo_cam_ctrl_periodic" alt="" coords="446,173,622,200"/>
+<area shape="rect" id="node6" href="$uart__cam__ctrl_8h.html#aaf39174521b99262b40497c50520150b" title="digital_cam_uart_periodic" alt="" coords="441,224,627,251"/>
+<area shape="rect" id="node7" href="$video__cam__ctrl_8h.html#a310b6b4208930b49883ed0abccce0e87" title="digital_cam_video_periodic" alt="" coords="437,5,631,32"/>
+<area shape="rect" id="node9" href="$imu__krooz_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="optional. " alt="" coords="483,275,585,301"/>
+<area shape="rect" id="node10" href="$hmc58xx_8h.html#a353064a5a9c6b47a14f4b9543545b4ec" title="convenience function: read or start configuration if not already initialized " alt="" coords="465,325,603,352"/>
+<area shape="rect" id="node13" href="$imu__drotek__10dof__v2_8h.html#a4ff8194f50bedf14d3d6bf7a4d9efd9c" title="callback function to configure hmc5883 mag " alt="" coords="450,377,618,418"/>
+<area shape="rect" id="node11" href="$imu__hbmini_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="optional. " alt="" coords="713,329,815,356"/>
+<area shape="rect" id="node12" href="$mag__hmc58xx_8h.html#a2e48d1806ea88022ff1f1c8b01b53f42" title="mag_hmc58xx_module\l_periodic" alt="" coords="679,263,849,305"/>
+<area shape="rect" id="node14" href="$imu__drotek__10dof__v2_8c.html#ad32faae58e391642ec8048cb11011998" title="must be defined by underlying hardware " alt="" coords="711,384,817,411"/>
+<area shape="rect" id="node16" href="$imu__aspirin__2__spi_8c.html#ad32faae58e391642ec8048cb11011998" title="must be defined by underlying hardware " alt="" coords="481,443,587,469"/>
+<area shape="rect" id="node18" href="$imu__mpu9250__spi_8c.html#ad32faae58e391642ec8048cb11011998" title="must be defined by underlying hardware " alt="" coords="481,493,587,520"/>
+<area shape="rect" id="node20" href="$ins__vectornav__wrapper_8h.html#a465857e7a84da756dbee9d867dcdb140" title="ins_vectornav_register" alt="" coords="451,548,617,575"/>
+<area shape="rect" id="node22" href="$ins__vectornav_8h.html#abcd265b9bfefa88327260439223dba81" title="Event handling for Vectornav. " alt="" coords="457,599,611,625"/>
+<area shape="rect" id="node24" href="$guidance__h_8h.html#a7db3290fc5f62abc15a1bb1638b4922f" title="guidance_h_read_rc" alt="" coords="459,716,609,743"/>
+<area shape="rect" id="node28" href="$stabilization__attitude__euler__int_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc" title="stabilization_attitude\l_read_rc" alt="" coords="457,650,611,691"/>
+<area shape="rect" id="node29" href="$stabilization__attitude__rc__setpoint_8h.html#a2c7e084c171f2656b071f20895ce2ce0" title="stabilization_attitude\l_read_rc_setpoint_quat\l_earth_bound_f" alt="" coords="448,832,620,888"/>
+<area shape="rect" id="node31" href="$stabilization__attitude__rc__setpoint_8h.html#a9d0b7ad4c9f5c936c3f06910ac5d0185" title="Read attitude setpoint from RC as quaternion Interprets the stick positions as axes. " alt="" coords="443,767,625,809"/>
+<area shape="rect" id="node25" href="$rotorcraft_2autopilot_8h.html#a7339f5741706cb9c2e2186b1174cc770" title="Get autopilot mode from two 2way switches. " alt="" coords="681,716,847,743"/>
+<area shape="rect" id="node26" href="$main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="897,716,995,743"/>
+<area shape="rect" id="node27" href="$rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1043,716,1097,743"/>
+<area shape="rect" id="node30" href="$stabilization__attitude__quat__indi_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc" title="stabilization_attitude\l_read_rc" alt="" coords="687,839,841,881"/>
+<area shape="rect" id="node32" href="$stabilization__attitude__quat__float_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc" title="stabilization_attitude\l_read_rc" alt="" coords="687,767,841,809"/>
+<area shape="rect" id="node34" href="$stabilization__attitude__euler__float_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc" title="stabilization_attitude\l_read_rc" alt="" coords="457,911,611,953"/>
 </map>

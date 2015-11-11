@@ -1,49 +1,49 @@
 <map id="opticflow_module_start" name="opticflow_module_start">
-<area shape="rect" id="node3" href="$opticflow__module_8c.html#a55f848033134662d4f93cd9cbef5acac" title="The main optical flow calculation thread. " alt="" coords="225,983,388,1011"/>
-<area shape="rect" id="node5" href="$image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="891,5,1000,33"/>
-<area shape="rect" id="node7" href="$image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="899,55,992,83"/>
-<area shape="rect" id="node9" href="$jpeg_8c.html#a80691d29cd889f8b549ac6850c95e1b6" title="Encode an YUV422 image. " alt="" coords="440,958,589,986"/>
-<area shape="rect" id="node33" href="$opticflow__calculator_8c.html#aee6bfa400248db0fad131de276c15783" title="Run the optical flow on a new image frame. " alt="" coords="437,603,592,631"/>
-<area shape="rect" id="node85" href="$rtp_8c.html#ab810dc7d46e209624e4edd330edb7bf7" title="Send an RTP frame. " alt="" coords="453,1009,576,1037"/>
-<area shape="rect" id="node91" href="$v4l2_8c.html#a865e07dd33caf3bb71a3b90834b308c3" title="Free the image and enqueue the buffer (Thread safe) This must be done after processing the image..." alt="" coords="452,1059,577,1087"/>
-<area shape="rect" id="node93" href="$v4l2_8c.html#a5f8eea1ef0eb13865ad6753e02f4a283" title="Get the latest image buffer and lock it (Thread safe, BLOCKING) This functions blocks until image acc..." alt="" coords="453,1110,576,1138"/>
-<area shape="rect" id="node95" href="$v4l2_8c.html#adb5a15f8b748f8ed515bb2920e423ea5" title="Start capturing images in streaming mode (Thread safe) " alt="" coords="444,1173,585,1201"/>
-<area shape="rect" id="node11" href="$jpeg_8c.html#af2a62dbe59d962b7cd5158e744b941df" title="jpeg_close_bitstream" alt="" coords="641,882,799,910"/>
-<area shape="rect" id="node13" href="$jpeg_8c.html#aa65677a00f264d53b744f64b386139e1" title="jpeg_encodeMCU" alt="" coords="653,933,787,961"/>
-<area shape="rect" id="node23" href="$jpeg_8c.html#a688433e5f55000ae893f2d5c29097691" title="jpeg_initialization" alt="" coords="655,983,785,1011"/>
-<area shape="rect" id="node29" href="$jpeg_8c.html#a26b97262e8620df4fd0ece95195a2d8e" title="jpeg_write_markers" alt="" coords="647,1034,793,1062"/>
-<area shape="rect" id="node31" href="$jpeg_8c.html#a69ed605945a7ea46dbfaa9b3f29b5ed8" title="MakeTables" alt="" coords="673,1085,767,1113"/>
-<area shape="rect" id="node15" href="$jpeg_8c.html#a5b96ae28e2300858e6af3061ac8f96b9" title="jpeg_DCT" alt="" coords="904,806,987,834"/>
-<area shape="rect" id="node17" href="$jpeg_8c.html#a20c1f652043de7bc8171be6591bd3480" title="jpeg_huffman" alt="" coords="891,857,1000,885"/>
-<area shape="rect" id="node19" href="$jpeg_8c.html#a1b9aa7581d09ec6412a14ec76334667c" title="jpeg_levelshift" alt="" coords="889,907,1001,935"/>
-<area shape="rect" id="node21" href="$jpeg_8c.html#ac00d030f6b21b9e0973fe18a7a7f7e51" title="jpeg_quantization" alt="" coords="879,958,1012,986"/>
-<area shape="rect" id="node25" href="$jpeg_8c.html#a496e270428d382bcbda831334590eaf6" title="jpeg_read_400_format" alt="" coords="863,1009,1028,1037"/>
-<area shape="rect" id="node27" href="$jpeg_8c.html#a206021dc908d46e0a1d72ed9c40b10e9" title="jpeg_read_422_format" alt="" coords="863,1059,1028,1087"/>
-<area shape="rect" id="node35" href="$linear__flow__fit_8c.html#aa4c5db404c7e5f3a1e89ce298b6c7b4b" title="Analyze a linear flow field, retrieving information such as divergence, surface roughness, focus of expansion, etc. " alt="" coords="648,359,792,403"/>
-<area shape="rect" id="node47" href="$opticflow__calculator_8c.html#a70ba354beb51e86724b52a657ca34c25" title="Compare two flow vectors based on flow distance Used for sorting. " alt="" coords="680,426,760,454"/>
-<area shape="rect" id="node49" href="$fast__rosten_8c.html#a5cadceb6c28a429a8c323ca0d1d738ee" title="Do a FAST9 corner detection. " alt="" coords="669,477,771,505"/>
-<area shape="rect" id="node53" href="$size__divergence_8c.html#a5bd0d30766d4538c9b64fccc7826b12a" title="Get divergence from optical flow vectors based on line sizes between corners. " alt="" coords="644,527,796,555"/>
-<area shape="rect" id="node57" href="$image_8c.html#a02932625f9aeb66da70c89a2f2d3a052" title="Copy an image from inut to output This will only work if the formats are the same. " alt="" coords="671,578,769,606"/>
-<area shape="rect" id="node59" href="$image_8c.html#a94dcb784f31e65bdc562452321371a5f" title="Shows the flow from a specific point to a new point This works on YUV422 and Grayscale images..." alt="" coords="655,629,785,657"/>
-<area shape="rect" id="node63" href="$image_8c.html#a6b1f1f53bd730945826724d139048831" title="Show points in an image by coloring them through giving the pixels the maximum value. " alt="" coords="647,679,793,707"/>
-<area shape="rect" id="node65" href="$image_8c.html#a170da2d6e19d1b99084a4fb18bc1a2ee" title="This will switch image *a and *b This is faster as image_copy because it doesn&#39;t copy the whole image..." alt="" coords="667,730,773,758"/>
-<area shape="rect" id="node67" href="$image_8c.html#a74a32006a620503a7ca62e5b2a86abd1" title="Convert an image to grayscale. " alt="" coords="645,781,795,809"/>
-<area shape="rect" id="node69" href="$lucas__kanade_8c.html#a89256cda548e859a51749e957954967c" title="Compute the optical flow of several points using the Lucas&#45;Kanade algorithm by Yves Bouguet The initi..." alt="" coords="673,182,767,210"/>
-<area shape="rect" id="node83" href="$opticflow__calculator_8c.html#a37709847b0065c4f371663e9ad30459d" title="Calculate the difference from start till finish. " alt="" coords="673,831,767,859"/>
-<area shape="rect" id="node37" href="$linear__flow__fit_8c.html#ad96c136057bf95b8ca88d210c453dae3" title="Extract information from the parameters that were fit to the optical flow field. " alt="" coords="872,359,1019,403"/>
-<area shape="rect" id="node39" href="$linear__flow__fit_8c.html#a4a796ceb3a2c8c6ee52e0f80d7306ced" title="Analyze a linear flow field, retrieving information such as divergence, surface roughness, focus of expansion, etc. " alt="" coords="876,426,1015,454"/>
-<area shape="rect" id="node41" href="$pprz__matrix__decomp__float_8c.html#a9ef015d22c1f50265978a23b21d13e8a" title="SVD decomposition. " alt="" coords="1111,401,1225,429"/>
-<area shape="rect" id="node45" href="$pprz__matrix__decomp__float_8c.html#a232890252a145ccc1a0dd849bf13cb67" title="SVD based linear solver. " alt="" coords="1091,451,1245,479"/>
-<area shape="rect" id="node43" href="$pprz__matrix__decomp__float_8c.html#ac174129986fce93a3240504458351308" title="Some SVD decomposition utility macros and functions. " alt="" coords="1293,401,1360,429"/>
-<area shape="rect" id="node51" href="$fast__rosten_8c.html#a58984f615be2e8c52b3d0b1fc595a250" title="Make offsets for FAST9 calculation. " alt="" coords="876,477,1015,505"/>
-<area shape="rect" id="node55" href="$size__divergence_8c.html#ae48ba4f34bd6f955e2c21ffbe7baea08" title="Get the sample mean of a vector of floats. " alt="" coords="903,527,988,555"/>
-<area shape="rect" id="node61" href="$image_8c.html#a40fe37e1ba3df58796c2aa29e04e8567" title="Draw a line on the image. " alt="" coords="881,629,1009,657"/>
-<area shape="rect" id="node71" href="$image_8c.html#ae0f7d6068a0813bd149153b409474672" title="Calculate the G vector of an image gradient This is used for optical flow calculation. " alt="" coords="875,106,1016,134"/>
-<area shape="rect" id="node74" href="$image_8c.html#a946e57aea5ff8c79adee46cb2c72dd80" title="Calculate the difference between two images and return the error This will only work with grayscale i..." alt="" coords="880,157,1011,185"/>
-<area shape="rect" id="node77" href="$image_8c.html#a5b47fdb25a4d3b575a1a1e1960d5f5e3" title="Calculate the gradients using the following matrix: [0 &#45;1 0; &#45;1 0 1; 0 1 0]. " alt="" coords="881,207,1009,235"/>
-<area shape="rect" id="node79" href="$image_8c.html#afc5615de31e098e68a4d2e3b4b686a1b" title="Calculate the multiplication between two images and return the error This will only work with image g..." alt="" coords="887,258,1004,286"/>
-<area shape="rect" id="node81" href="$image_8c.html#aec9ece25d4c2a0f3d70578f9417a9a34" title="This outputs a subpixel window image in grayscale Currently only works with Grayscale images as input..." alt="" coords="859,309,1032,337"/>
-<area shape="rect" id="node87" href="$rtp_8c.html#a7b661ee336df15cbee60fda1d7263247" title="rtp_packet_send" alt="" coords="656,1135,784,1163"/>
-<area shape="rect" id="node89" href="$udp__socket_8c.html#a2c3da4bd5d683ae6c844649fac79f13d" title="Send a packet from buffer, non&#45;blocking. " alt="" coords="848,1135,1043,1163"/>
-<area shape="rect" id="node97" href="$v4l2_8c.html#a3016fdd985a61647b2fc6a653ebfcfaa" title="The main capturing thread This thread handles the queue and dequeue of buffers, to make sure only the..." alt="" coords="644,1186,796,1214"/>
+<area shape="rect" id="node2" href="$opticflow__module_8c.html#a55f848033134662d4f93cd9cbef5acac" title="The main optical flow calculation thread. " alt="" coords="223,984,387,1011"/>
+<area shape="rect" id="node3" href="$image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="886,5,997,32"/>
+<area shape="rect" id="node4" href="$image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="894,56,989,83"/>
+<area shape="rect" id="node5" href="$jpeg_8c.html#a80691d29cd889f8b549ac6850c95e1b6" title="Encode an YUV422 image. " alt="" coords="437,959,587,985"/>
+<area shape="rect" id="node17" href="$opticflow__calculator_8c.html#aee6bfa400248db0fad131de276c15783" title="Run the optical flow on a new image frame. " alt="" coords="435,604,589,631"/>
+<area shape="rect" id="node42" href="$rtp_8c.html#ab810dc7d46e209624e4edd330edb7bf7" title="Send an RTP frame. " alt="" coords="451,1009,573,1036"/>
+<area shape="rect" id="node45" href="$v4l2_8c.html#a865e07dd33caf3bb71a3b90834b308c3" title="Free the image and enqueue the buffer (Thread safe) This must be done after processing the image..." alt="" coords="449,1060,575,1087"/>
+<area shape="rect" id="node46" href="$v4l2_8c.html#a5f8eea1ef0eb13865ad6753e02f4a283" title="Get the latest image buffer and lock it (Thread safe, BLOCKING) This functions blocks until image acc..." alt="" coords="451,1111,573,1137"/>
+<area shape="rect" id="node47" href="$v4l2_8c.html#adb5a15f8b748f8ed515bb2920e423ea5" title="Start capturing images in streaming mode (Thread safe) " alt="" coords="441,1173,583,1200"/>
+<area shape="rect" id="node6" href="$jpeg_8c.html#af2a62dbe59d962b7cd5158e744b941df" title="jpeg_close_bitstream" alt="" coords="637,883,796,909"/>
+<area shape="rect" id="node7" href="$jpeg_8c.html#aa65677a00f264d53b744f64b386139e1" title="jpeg_encodeMCU" alt="" coords="650,933,783,960"/>
+<area shape="rect" id="node12" href="$jpeg_8c.html#a688433e5f55000ae893f2d5c29097691" title="jpeg_initialization" alt="" coords="651,984,782,1011"/>
+<area shape="rect" id="node15" href="$jpeg_8c.html#a26b97262e8620df4fd0ece95195a2d8e" title="jpeg_write_markers" alt="" coords="643,1035,790,1061"/>
+<area shape="rect" id="node16" href="$jpeg_8c.html#a69ed605945a7ea46dbfaa9b3f29b5ed8" title="MakeTables" alt="" coords="669,1085,764,1112"/>
+<area shape="rect" id="node8" href="$jpeg_8c.html#a5b96ae28e2300858e6af3061ac8f96b9" title="jpeg_DCT" alt="" coords="900,807,983,833"/>
+<area shape="rect" id="node9" href="$jpeg_8c.html#a20c1f652043de7bc8171be6591bd3480" title="jpeg_huffman" alt="" coords="887,857,996,884"/>
+<area shape="rect" id="node10" href="$jpeg_8c.html#a1b9aa7581d09ec6412a14ec76334667c" title="jpeg_levelshift" alt="" coords="885,908,997,935"/>
+<area shape="rect" id="node11" href="$jpeg_8c.html#ac00d030f6b21b9e0973fe18a7a7f7e51" title="jpeg_quantization" alt="" coords="874,959,1009,985"/>
+<area shape="rect" id="node13" href="$jpeg_8c.html#a496e270428d382bcbda831334590eaf6" title="jpeg_read_400_format" alt="" coords="858,1009,1025,1036"/>
+<area shape="rect" id="node14" href="$jpeg_8c.html#a206021dc908d46e0a1d72ed9c40b10e9" title="jpeg_read_422_format" alt="" coords="858,1060,1025,1087"/>
+<area shape="rect" id="node18" href="$linear__flow__fit_8c.html#aa4c5db404c7e5f3a1e89ce298b6c7b4b" title="Analyze a linear flow field, retrieving information such as divergence, surface roughness, focus of expansion, etc. " alt="" coords="645,361,789,402"/>
+<area shape="rect" id="node24" href="$opticflow__calculator_8c.html#a70ba354beb51e86724b52a657ca34c25" title="Compare two flow vectors based on flow distance Used for sorting. " alt="" coords="676,427,757,453"/>
+<area shape="rect" id="node25" href="$fast__rosten_8c.html#a5cadceb6c28a429a8c323ca0d1d738ee" title="Do a FAST9 corner detection. " alt="" coords="665,477,768,504"/>
+<area shape="rect" id="node27" href="$size__divergence_8c.html#a5bd0d30766d4538c9b64fccc7826b12a" title="Get divergence from optical flow vectors based on line sizes between corners. " alt="" coords="641,528,793,555"/>
+<area shape="rect" id="node29" href="$image_8c.html#a02932625f9aeb66da70c89a2f2d3a052" title="Copy an image from inut to output This will only work if the formats are the same. " alt="" coords="667,579,766,605"/>
+<area shape="rect" id="node30" href="$image_8c.html#a94dcb784f31e65bdc562452321371a5f" title="Shows the flow from a specific point to a new point This works on YUV422 and Grayscale images..." alt="" coords="651,629,783,656"/>
+<area shape="rect" id="node32" href="$image_8c.html#a6b1f1f53bd730945826724d139048831" title="Show points in an image by coloring them through giving the pixels the maximum value. " alt="" coords="643,680,790,707"/>
+<area shape="rect" id="node33" href="$image_8c.html#a170da2d6e19d1b99084a4fb18bc1a2ee" title="This will switch image *a and *b This is faster as image_copy because it doesn&#39;t copy the whole image..." alt="" coords="663,731,771,757"/>
+<area shape="rect" id="node34" href="$image_8c.html#a74a32006a620503a7ca62e5b2a86abd1" title="Convert an image to grayscale. " alt="" coords="641,781,792,808"/>
+<area shape="rect" id="node35" href="$lucas__kanade_8c.html#a89256cda548e859a51749e957954967c" title="Compute the optical flow of several points using the Lucas&#45;Kanade algorithm by Yves Bouguet The initi..." alt="" coords="669,183,764,209"/>
+<area shape="rect" id="node41" href="$opticflow__calculator_8c.html#a37709847b0065c4f371663e9ad30459d" title="Calculate the difference from start till finish. " alt="" coords="669,832,764,859"/>
+<area shape="rect" id="node19" href="$linear__flow__fit_8c.html#ad96c136057bf95b8ca88d210c453dae3" title="Extract information from the parameters that were fit to the optical flow field. " alt="" coords="868,361,1015,402"/>
+<area shape="rect" id="node20" href="$linear__flow__fit_8c.html#a4a796ceb3a2c8c6ee52e0f80d7306ced" title="Analyze a linear flow field, retrieving information such as divergence, surface roughness, focus of expansion, etc. " alt="" coords="871,427,1011,453"/>
+<area shape="rect" id="node21" href="$pprz__matrix__decomp__float_8c.html#a9ef015d22c1f50265978a23b21d13e8a" title="SVD decomposition. " alt="" coords="1107,401,1221,428"/>
+<area shape="rect" id="node23" href="$pprz__matrix__decomp__float_8c.html#a232890252a145ccc1a0dd849bf13cb67" title="SVD based linear solver. " alt="" coords="1087,452,1241,479"/>
+<area shape="rect" id="node22" href="$pprz__matrix__decomp__float_8c.html#ac174129986fce93a3240504458351308" title="Some SVD decomposition utility macros and functions. " alt="" coords="1289,401,1356,428"/>
+<area shape="rect" id="node26" href="$fast__rosten_8c.html#a58984f615be2e8c52b3d0b1fc595a250" title="Make offsets for FAST9 calculation. " alt="" coords="872,477,1011,504"/>
+<area shape="rect" id="node28" href="$size__divergence_8c.html#ae48ba4f34bd6f955e2c21ffbe7baea08" title="Get the sample mean of a vector of floats. " alt="" coords="898,528,985,555"/>
+<area shape="rect" id="node31" href="$image_8c.html#a40fe37e1ba3df58796c2aa29e04e8567" title="Draw a line on the image. " alt="" coords="877,629,1005,656"/>
+<area shape="rect" id="node36" href="$image_8c.html#ae0f7d6068a0813bd149153b409474672" title="Calculate the G vector of an image gradient This is used for optical flow calculation. " alt="" coords="871,107,1012,133"/>
+<area shape="rect" id="node37" href="$image_8c.html#a946e57aea5ff8c79adee46cb2c72dd80" title="Calculate the difference between two images and return the error This will only work with grayscale i..." alt="" coords="875,157,1007,184"/>
+<area shape="rect" id="node38" href="$image_8c.html#a5b47fdb25a4d3b575a1a1e1960d5f5e3" title="Calculate the gradients using the following matrix: [0 &#45;1 0; &#45;1 0 1; 0 1 0]. " alt="" coords="877,208,1006,235"/>
+<area shape="rect" id="node39" href="$image_8c.html#afc5615de31e098e68a4d2e3b4b686a1b" title="Calculate the multiplication between two images and return the error This will only work with image g..." alt="" coords="882,259,1001,285"/>
+<area shape="rect" id="node40" href="$image_8c.html#aec9ece25d4c2a0f3d70578f9417a9a34" title="This outputs a subpixel window image in grayscale Currently only works with Grayscale images as input..." alt="" coords="855,309,1028,336"/>
+<area shape="rect" id="node43" href="$rtp_8c.html#a7b661ee336df15cbee60fda1d7263247" title="rtp_packet_send" alt="" coords="653,1136,781,1163"/>
+<area shape="rect" id="node44" href="$udp__socket_8c.html#a2c3da4bd5d683ae6c844649fac79f13d" title="Send a packet from buffer, non&#45;blocking. " alt="" coords="844,1136,1039,1163"/>
+<area shape="rect" id="node48" href="$v4l2_8c.html#a3016fdd985a61647b2fc6a653ebfcfaa" title="The main capturing thread This thread handles the queue and dequeue of buffers, to make sure only the..." alt="" coords="640,1187,793,1213"/>
 </map>

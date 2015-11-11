@@ -30,7 +30,7 @@ var ins__float__invariant_8c =
     [ "ins_reset_altitude_ref", "ins__float__invariant_8c.html#aa389e650ab7aa5a7f4650afde6358d86", null ],
     [ "ins_reset_local_origin", "ins__float__invariant_8c.html#a14cb66a86c67d8b9216a8c12f58c311b", null ],
     [ "invariant_model", "ins__float__invariant_8c.html#a8f6d3b43296e7262f60dbe9083ff92f1", null ],
-    [ "A", "ins__float__invariant_8c.html#a77f40b118a2e44fe45a8dd8250f72310", null ],
+    [ "A", "ins__float__invariant_8c.html#a66c12beb10a03abecd6d5893b821e166", null ],
     [ "baro_ev", "ins__float__invariant_8c.html#a7e2e4e9787ce7895e880fe4eb5dc0702", null ],
     [ "ins_baro_initialized", "ins__float__invariant_8c.html#a553dc8d7c1cce9ee04904fe2104a4e4b", null ],
     [ "ins_gps_fix_once", "ins__float__invariant_8c.html#a9573ec91a6671a92072b719b5e780dec", null ],

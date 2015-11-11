@@ -1,32 +1,37 @@
 <map id="float_quat_normalize" name="float_quat_normalize">
-<area shape="rect" id="node3" href="$ahrs__float__utils_8h.html#a3c9fb6ec7c288401635933cb22321e70" title="Compute a quaternion representing roll and pitch from an accelerometer measurement. " alt="" coords="224,61,373,105"/>
-<area shape="rect" id="node7" href="$ahrs__float__utils_8h.html#a05d9b87a75bb619379bd53348023ef05" title="ahrs_float_get_quat\l_from_accel_mag" alt="" coords="452,119,601,163"/>
-<area shape="rect" id="node18" href="$ahrs__float__cmpl_8c.html#a4e5064cff25b95f0631d5184d779ee43" title="Propagation. " alt="" coords="237,413,360,441"/>
-<area shape="rect" id="node20" href="$ahrs__float__cmpl_8h.html#a542422de172f1f25b7987850825cb587" title="Hard reset yaw to a heading. " alt="" coords="448,237,605,265"/>
-<area shape="rect" id="node24" href="$pprz__algebra__float_8h.html#a702e4347a599d0f6c4003e347bde3825" title="Composition (multiplication) of two quaternions with normalization. " alt="" coords="221,463,376,507"/>
-<area shape="rect" id="node26" href="$pprz__algebra__float_8h.html#a1046209eec005141af05e1098b559487" title="Composition (multiplication) of two quaternions with normalization. " alt="" coords="213,295,384,339"/>
-<area shape="rect" id="node30" href="$stabilization__attitude__rc__setpoint_8h.html#a9d0b7ad4c9f5c936c3f06910ac5d0185" title="Read attitude setpoint from RC as quaternion Interprets the stick positions as axes. " alt="" coords="436,325,617,369"/>
-<area shape="rect" id="node34" href="$pprz__algebra__float_8h.html#a154c3d68389b47e11fcdace73b1d75a7" title="Composition (multiplication) of two quaternions with normalization. " alt="" coords="221,229,376,273"/>
-<area shape="rect" id="node37" href="$stabilization__attitude__quat__transformations_8h.html#a875d6ee5cde39474c4ce13dd340cb262" title="quat_from_earth_cmd_f" alt="" coords="212,530,385,558"/>
-<area shape="rect" id="node51" href="$ahrs__float__mlkf_8c.html#a9fbef29f6a0a976770a3055c37a35d95" title="Incorporate errors to reference and zeros state. " alt="" coords="252,581,345,609"/>
-<area shape="rect" id="node57" href="$stabilization__attitude__rc__setpoint_8h.html#a2c7e084c171f2656b071f20895ce2ce0" title="stabilization_attitude\l_read_rc_setpoint_quat\l_earth_bound_f" alt="" coords="213,631,384,691"/>
-<area shape="rect" id="node68" href="$stabilization__attitude__ref__quat__float_8c.html#af61a6690d534aff69bd6e90206a3a41b" title="stabilization_attitude\l_ref_update" alt="" coords="221,714,376,758"/>
-<area shape="rect" id="node5" href="$ahrs__float__cmpl_8c.html#a81e17b09f47068c02c345da1523f589b" title="Aligns the AHRS. " alt="" coords="712,71,797,99"/>
-<area shape="rect" id="node14" href="$ahrs__int__utils_8h.html#a01b7d1167e626e382675619369a1fc49" title="ahrs_int_get_quat_from\l_accel" alt="" coords="668,5,841,49"/>
-<area shape="rect" id="node10" href="$ahrs__int__utils_8h.html#a8ea9794c15ad84b2a289385d4a431f60" title="ahrs_int_get_quat_from\l_accel_mag" alt="" coords="668,122,841,166"/>
-<area shape="rect" id="node12" href="$ahrs__int__cmpl__quat_8c.html#a81e17b09f47068c02c345da1523f589b" title="Aligns the AHRS. " alt="" coords="931,71,1016,99"/>
-<area shape="rect" id="node22" href="$ahrs__float__cmpl_8c.html#a0156f6669675c216bbcb413ea1879960" title="Update AHRS state with GPS measurements. " alt="" coords="689,237,820,265"/>
-<area shape="rect" id="node32" href="$stabilization__attitude__quat__float_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc" title="stabilization_attitude\l_read_rc" alt="" coords="677,325,832,369"/>
-<area shape="rect" id="node39" href="$stabilization__attitude__quat__transformations_8h.html#acfb3bfa8af4aebad848717cd26aa78ee" title="quat_from_earth_cmd_i" alt="" coords="440,463,613,491"/>
-<area shape="rect" id="node49" href="$stabilization__attitude__quat__float_8c.html#ada3ef183c206d08fd0a902adc118f542" title="stabilization_attitude\l_set_earth_cmd_i" alt="" coords="449,514,604,558"/>
-<area shape="rect" id="node41" href="$stabilization__attitude__quat__int_8c.html#ada3ef183c206d08fd0a902adc118f542" title="stabilization_attitude\l_set_earth_cmd_i" alt="" coords="677,455,832,499"/>
-<area shape="rect" id="node43" href="$guidance__h_8h.html#ac4cf6da90a4278b4d0b2e4f227b33f2c" title="guidance_h_run" alt="" coords="912,463,1035,491"/>
-<area shape="rect" id="node45" href="$rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="1105,463,1239,491"/>
-<area shape="rect" id="node47" href="$main_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="1289,463,1399,491"/>
-<area shape="rect" id="node53" href="$ahrs__float__mlkf_8c.html#a020997c7e92d014a6bacd92b5255b904" title="Update AHRS state with accerleration measurements. " alt="" coords="456,581,597,609"/>
-<area shape="rect" id="node55" href="$ahrs__float__mlkf_8c.html#a0003a29e3c7626f93a370cff7536f202" title="Update AHRS state with magnetometer measurements. " alt="" coords="457,631,596,659"/>
-<area shape="rect" id="node59" href="$stabilization__attitude__quat__int_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc" title="stabilization_attitude\l_read_rc" alt="" coords="449,682,604,726"/>
-<area shape="rect" id="node61" href="$guidance__h_8h.html#a7db3290fc5f62abc15a1bb1638b4922f" title="guidance_h_read_rc" alt="" coords="680,690,829,718"/>
-<area shape="rect" id="node63" href="$rotorcraft_2autopilot_8h.html#a7339f5741706cb9c2e2186b1174cc770" title="autopilot_on_rc_frame" alt="" coords="891,690,1056,718"/>
-<area shape="rect" id="node65" href="$main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="1124,690,1220,718"/>
+<area shape="rect" id="node2" href="$ahrs__float__utils_8h.html#a3c9fb6ec7c288401635933cb22321e70" title="Compute a quaternion representing roll and pitch from an accelerometer measurement. " alt="" coords="222,61,371,103"/>
+<area shape="rect" id="node4" href="$ahrs__float__utils_8h.html#a05d9b87a75bb619379bd53348023ef05" title="ahrs_float_get_quat\l_from_accel_mag" alt="" coords="449,120,598,161"/>
+<area shape="rect" id="node8" href="$ahrs__float__cmpl_8c.html#a4e5064cff25b95f0631d5184d779ee43" title="Propagation. " alt="" coords="235,411,358,438"/>
+<area shape="rect" id="node9" href="$ahrs__float__cmpl_8h.html#a542422de172f1f25b7987850825cb587" title="Hard reset yaw to a heading. " alt="" coords="444,237,603,263"/>
+<area shape="rect" id="node11" href="$pprz__algebra__float_8h.html#a702e4347a599d0f6c4003e347bde3825" title="Composition (multiplication) of two quaternions with normalization. " alt="" coords="219,463,374,504"/>
+<area shape="rect" id="node12" href="$pprz__algebra__float_8h.html#a1046209eec005141af05e1098b559487" title="Composition (multiplication) of two quaternions with normalization. " alt="" coords="211,295,382,336"/>
+<area shape="rect" id="node13" href="$stabilization__attitude__rc__setpoint_8h.html#a9d0b7ad4c9f5c936c3f06910ac5d0185" title="Read attitude setpoint from RC as quaternion Interprets the stick positions as axes. " alt="" coords="432,324,615,365"/>
+<area shape="rect" id="node15" href="$pprz__algebra__float_8h.html#a154c3d68389b47e11fcdace73b1d75a7" title="Composition (multiplication) of two quaternions with normalization. " alt="" coords="219,229,374,271"/>
+<area shape="rect" id="node16" href="$stabilization__attitude__quat__transformations_8h.html#a875d6ee5cde39474c4ce13dd340cb262" title="quat_from_earth_cmd_f" alt="" coords="209,529,384,555"/>
+<area shape="rect" id="node27" href="$ahrs__float__mlkf_8c.html#a9fbef29f6a0a976770a3055c37a35d95" title="Incorporate errors to reference and zeros state. " alt="" coords="249,579,344,606"/>
+<area shape="rect" id="node30" href="$stabilization__attitude__rc__setpoint_8h.html#a2c7e084c171f2656b071f20895ce2ce0" title="stabilization_attitude\l_read_rc_setpoint_quat\l_earth_bound_f" alt="" coords="211,630,383,686"/>
+<area shape="rect" id="node36" href="$stabilization__attitude__ref__quat__float_8c.html#af61a6690d534aff69bd6e90206a3a41b" title="stabilization_attitude\l_ref_update" alt="" coords="219,709,374,751"/>
+<area shape="rect" id="node3" href="$ahrs__float__cmpl_8c.html#a81e17b09f47068c02c345da1523f589b" title="Aligns the AHRS. " alt="" coords="707,71,793,98"/>
+<area shape="rect" id="node7" href="$ahrs__int__utils_8h.html#a01b7d1167e626e382675619369a1fc49" title="ahrs_int_get_quat_from\l_accel" alt="" coords="663,5,837,47"/>
+<area shape="rect" id="node5" href="$ahrs__int__utils_8h.html#a8ea9794c15ad84b2a289385d4a431f60" title="ahrs_int_get_quat_from\l_accel_mag" alt="" coords="663,123,837,164"/>
+<area shape="rect" id="node6" href="$ahrs__int__cmpl__quat_8c.html#a81e17b09f47068c02c345da1523f589b" title="Aligns the AHRS. " alt="" coords="925,71,1011,98"/>
+<area shape="rect" id="node10" href="$ahrs__float__cmpl_8c.html#a0156f6669675c216bbcb413ea1879960" title="Update AHRS state with GPS measurements. " alt="" coords="684,237,816,263"/>
+<area shape="rect" id="node14" href="$stabilization__attitude__quat__float_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc" title="stabilization_attitude\l_read_rc" alt="" coords="673,324,827,365"/>
+<area shape="rect" id="node17" href="$stabilization__attitude__quat__transformations_8h.html#acfb3bfa8af4aebad848717cd26aa78ee" title="quat_from_earth_cmd_i" alt="" coords="436,462,611,489"/>
+<area shape="rect" id="node26" href="$stabilization__attitude__quat__float_8c.html#ada3ef183c206d08fd0a902adc118f542" title="stabilization_attitude\l_set_earth_cmd_i" alt="" coords="446,513,601,555"/>
+<area shape="rect" id="node18" href="$stabilization__attitude__quat__int_8c.html#ada3ef183c206d08fd0a902adc118f542" title="stabilization_attitude\l_set_earth_cmd_i" alt="" coords="673,455,827,496"/>
+<area shape="rect" id="node19" href="$guidance__h_8h.html#ac4cf6da90a4278b4d0b2e4f227b33f2c" title="guidance_h_run" alt="" coords="907,462,1029,489"/>
+<area shape="rect" id="node20" href="$rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="1099,462,1233,489"/>
+<area shape="rect" id="node21" href="$main_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="1281,462,1392,489"/>
+<area shape="rect" id="node22" href="$main_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="1440,462,1603,489"/>
+<area shape="rect" id="node23" href="$fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1663,437,1717,463"/>
+<area shape="rect" id="node24" href="$main__chibios__libopencm3_8c.html#ad648a546fe66cd5f9328f33221a40c64" title="pprz_thd" alt="" coords="1651,487,1729,514"/>
+<area shape="rect" id="node25" href="$main__chibios__libopencm3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1777,487,1832,514"/>
+<area shape="rect" id="node28" href="$ahrs__float__mlkf_8c.html#a020997c7e92d014a6bacd92b5255b904" title="Update AHRS state with accerleration measurements. " alt="" coords="452,579,595,606"/>
+<area shape="rect" id="node29" href="$ahrs__float__mlkf_8c.html#a0003a29e3c7626f93a370cff7536f202" title="Update AHRS state with magnetometer measurements. " alt="" coords="454,630,593,657"/>
+<area shape="rect" id="node31" href="$stabilization__attitude__quat__int_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc" title="stabilization_attitude\l_read_rc" alt="" coords="446,681,601,723"/>
+<area shape="rect" id="node32" href="$guidance__h_8h.html#a7db3290fc5f62abc15a1bb1638b4922f" title="guidance_h_read_rc" alt="" coords="675,689,825,715"/>
+<area shape="rect" id="node33" href="$rotorcraft_2autopilot_8h.html#a7339f5741706cb9c2e2186b1174cc770" title="autopilot_on_rc_frame" alt="" coords="885,689,1051,715"/>
+<area shape="rect" id="node34" href="$main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="1117,689,1215,715"/>
+<area shape="rect" id="node35" href="$rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1309,689,1364,715"/>
 </map>

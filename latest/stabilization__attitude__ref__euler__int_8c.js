@@ -20,7 +20,6 @@ var stabilization__attitude__ref__euler__int_8c =
     [ "REF_RATE_MAX_P", "stabilization__attitude__ref__euler__int_8c.html#a3648a2db6089a671cea8cd02db4b48c1", null ],
     [ "REF_RATE_MAX_Q", "stabilization__attitude__ref__euler__int_8c.html#a01282d6152bdea90e6faaad6d11196ca", null ],
     [ "REF_RATE_MAX_R", "stabilization__attitude__ref__euler__int_8c.html#a215bd0f15e33a9d2e43a791a9235a50d", null ],
-    [ "USE_ATTITUDE_REF", "stabilization__attitude__ref__euler__int_8c.html#a0a9d2b9bafb223dc523c3a8299033b27", null ],
     [ "ZETA_OMEGA_P", "stabilization__attitude__ref__euler__int_8c.html#a0d93c149b0777920a61387dbb073fe4c", null ],
     [ "ZETA_OMEGA_P_RES", "stabilization__attitude__ref__euler__int_8c.html#a33aba348bdb40cec6290d75d0d177ae5", null ],
     [ "ZETA_OMEGA_Q", "stabilization__attitude__ref__euler__int_8c.html#ad997fd15a0c0e3656449580fe279a7ff", null ],
@@ -30,10 +29,6 @@ var stabilization__attitude__ref__euler__int_8c =
     [ "ZETA_P", "stabilization__attitude__ref__euler__int_8c.html#a09d0136bb7fcef1b5563cfce0110bce2", null ],
     [ "ZETA_Q", "stabilization__attitude__ref__euler__int_8c.html#a608ba2cf6b2f506c7a5a19cfe514f278", null ],
     [ "ZETA_R", "stabilization__attitude__ref__euler__int_8c.html#ac45f26bd8ff0228f320ed655d17777d5", null ],
-    [ "stabilization_attitude_ref_init", "stabilization__attitude__ref__euler__int_8c.html#a7682c717beab8da148168162d84cb33e", null ],
-    [ "stabilization_attitude_ref_update", "stabilization__attitude__ref__euler__int_8c.html#aa81d4bbb6fc4913f6b9165b818a577c5", null ],
-    [ "stab_att_ref_accel", "stabilization__attitude__ref__euler__int_8c.html#a8c021676f88d01483c0c1aba3a1ace4f", null ],
-    [ "stab_att_ref_euler", "stabilization__attitude__ref__euler__int_8c.html#a231402ac57a681e4714bd44789e009e9", null ],
-    [ "stab_att_ref_rate", "stabilization__attitude__ref__euler__int_8c.html#affeb5583e4199cd130f1280c5bbd4f49", null ],
-    [ "stab_att_sp_euler", "stabilization__attitude__ref__euler__int_8c.html#a5b355848d1ce79a73b3fe67c8e86cd42", null ]
+    [ "attitude_ref_euler_int_init", "stabilization__attitude__ref__euler__int_8c.html#aae3bc71c17408186daa1e4675c574edf", null ],
+    [ "attitude_ref_euler_int_update", "stabilization__attitude__ref__euler__int_8c.html#a041606d24b535f7020178ae487e069d5", null ]
 ];

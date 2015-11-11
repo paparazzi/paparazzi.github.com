@@ -1,51 +1,51 @@
 <map id="float_eulers_of_rmat" name="float_eulers_of_rmat">
-<area shape="rect" id="node3" href="$ahrs__float__cmpl_8c.html#af01beea615f1d7a032f10db6f58acabc" title="ahrs_fc_update_mag\l_2d_dumb" alt="" coords="229,1554,384,1598"/>
-<area shape="rect" id="node5" href="$ahrs__gx3_8h.html#acb7a83c7954119b08e90b88661889883" title="gx3_packet_read_message" alt="" coords="208,1621,405,1649"/>
-<area shape="rect" id="node9" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="223,1671,391,1699"/>
-<area shape="rect" id="node7" href="$ahrs__gx3_8h.html#a1caa6f284af9f14d111ea11166236bf4" title="ImuEvent" alt="" coords="495,1621,577,1649"/>
-<area shape="rect" id="node11" href="$group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="455,1671,617,1699"/>
-<area shape="rect" id="node13" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="668,861,865,889"/>
-<area shape="rect" id="node95" href="$imu_8h.html#a931916ce562dfa28e02e0a6001dddc43" title="imu_SetBodyToImuCurrent" alt="" coords="920,1586,1112,1614"/>
-<area shape="rect" id="node97" href="$ahrs__float__dcm_8h.html#afe8393fd937ef9065e871dc5623510f2" title="ahrs_dcm_set_body_to\l_imu_quat" alt="" coords="681,1634,852,1678"/>
-<area shape="rect" id="node103" href="$imu_8h.html#ac50fba336ca2c337f240bab0db44f64e" title="imu_SetBodyToImuPhi" alt="" coords="685,1701,848,1729"/>
-<area shape="rect" id="node105" href="$imu_8h.html#a3e25b56c5719a23e494568696083459e" title="imu_SetBodyToImuTheta" alt="" coords="677,1751,856,1779"/>
-<area shape="rect" id="node107" href="$imu_8h.html#a88ec31da12a499ee7b47fe11b4ccfa4e" title="imu_SetBodyToImuPsi" alt="" coords="685,1802,848,1830"/>
-<area shape="rect" id="node15" href="$demo__ahrs__actuators_8c.html#a791eaf74023b4de8d10fbfe0de040ed8" title="main_periodic_task" alt="" coords="944,5,1088,33"/>
-<area shape="rect" id="node19" href="$guidance__common_8h.html#a38f0bbceda8812281fc650c2c1aac6c8" title="Auto&#45;throttle inner loop. " alt="" coords="1204,55,1329,83"/>
-<area shape="rect" id="node23" href="$stabilization__adaptive_8c.html#a56e08c7c847634b91bec39dc929ade80" title="h_ctl_roll_loop" alt="" coords="960,106,1072,134"/>
-<area shape="rect" id="node28" href="$stabilization__adaptive_8c.html#a10c9851e192217d5a4e7b6dc98e16c2d" title="h_ctl_pitch_loop" alt="" coords="955,157,1077,185"/>
-<area shape="rect" id="node31" href="$stabilization__attitude_8c.html#a02ae04f0f1bbe7588572e87e3dadb381" title="h_ctl_course_loop" alt="" coords="948,207,1084,235"/>
-<area shape="rect" id="node33" href="$guidance__indi_8h.html#ae40b411f26831e1ed76b9ea272b683f7" title="guidance_indi_filter\l_attitude" alt="" coords="944,258,1088,302"/>
-<area shape="rect" id="node37" href="$guidance__indi_8h.html#a633cc2afe4f313c10adb80bef877c410" title="guidance_indi_calcG" alt="" coords="941,325,1091,353"/>
-<area shape="rect" id="node40" href="$guidance__indi_8h.html#ac2747905b79ab39b935a6f140fd21695" title="stabilization_attitude\l_set_setpoint_rp_quat_f" alt="" coords="929,375,1103,419"/>
-<area shape="rect" id="node43" href="$stabilization__attitude__euler__float_8c.html#a5a2d8d3947ba9cdc571cea5778c93f4a" title="stabilization_attitude\l_set_failsafe_setpoint" alt="" coords="936,442,1096,486"/>
-<area shape="rect" id="node45" href="$stabilization__attitude__euler__float_8c.html#ada3ef183c206d08fd0a902adc118f542" title="stabilization_attitude\l_set_earth_cmd_i" alt="" coords="939,509,1093,553"/>
-<area shape="rect" id="node47" href="$stabilization__attitude__euler__float_8c.html#afb59ecc3049842f940a46a81698b79e9" title="stabilization_attitude_run" alt="" coords="925,575,1107,603"/>
-<area shape="rect" id="node49" href="$stabilization__attitude__rc__setpoint_8h.html#abdf70201d8682a7d5b567fc6f3790063" title="reset the heading for care&#45;free mode to current heading " alt="" coords="923,626,1109,670"/>
-<area shape="rect" id="node53" href="$stabilization__attitude__rc__setpoint_8h.html#aef31d05722347c8213ef503f5c6f1113" title="stabilization_attitude\l_get_heading_f" alt="" coords="939,743,1093,787"/>
-<area shape="rect" id="node57" href="$stabilization__attitude__rc__setpoint_8h.html#a795e57d623b6d1b9fe9a630dd90d13d4" title="stabilization_attitude\l_read_rc_setpoint_eulers_f" alt="" coords="1171,810,1363,854"/>
-<area shape="rect" id="node59" href="$stabilization__attitude__rc__setpoint_8h.html#a2c7e084c171f2656b071f20895ce2ce0" title="stabilization_attitude\l_read_rc_setpoint_quat\l_earth_bound_f" alt="" coords="1423,669,1593,729"/>
-<area shape="rect" id="node61" href="$stabilization__attitude__rc__setpoint_8h.html#a9d0b7ad4c9f5c936c3f06910ac5d0185" title="Read attitude setpoint from RC as quaternion Interprets the stick positions as axes. " alt="" coords="1417,839,1599,883"/>
-<area shape="rect" id="node68" href="$cam_8c.html#aab3da8ed719ee01699f50450b3df3b13" title="Computes the right angles from target_x, target_y, target_alt. " alt="" coords="968,911,1064,939"/>
-<area shape="rect" id="node70" href="$opticflow__module_8h.html#abf53d072984591ae6710a65682d6bedb" title="Update the optical flow state for the calculation thread and update the stabilization loops with the ..." alt="" coords="936,962,1096,990"/>
-<area shape="rect" id="node72" href="$mavlink_8c.html#ab4facf70544272f5a7ce83e50b319cc3" title="Send the attitude. " alt="" coords="933,1013,1099,1041"/>
-<area shape="rect" id="node74" href="$mavlink_8c.html#a8e376e67cc8a8a15e91a7e9fae593646" title="mavlink_send_global\l_position_int" alt="" coords="939,1063,1093,1107"/>
-<area shape="rect" id="node76" href="$dc_8h.html#aaf0625fed2e489322c40c4b2a1904e9a" title="Send Down the coordinates of where the photo was taken. " alt="" coords="933,1130,1099,1158"/>
-<area shape="rect" id="node78" href="$dc_8h.html#ab4b5d12f3c9829a0f0e538496ad5c547" title="Send an info message. " alt="" coords="983,1231,1049,1259"/>
-<area shape="rect" id="node80" href="$dc_8h.html#ac1d419ec639ffd43193ebcbd6e1131c0" title="Sets the dc control in circle mode. " alt="" coords="1228,1206,1305,1234"/>
-<area shape="rect" id="node83" href="$dc_8h.html#a2a976ddc273dfdd99eb8638c364e9305" title="periodic function " alt="" coords="969,1282,1063,1310"/>
-<area shape="rect" id="node85" href="$logger__uart_8h.html#ab6b5fd6329c4581731f6ff29fdac97e2" title="logger_uart_periodic" alt="" coords="940,1333,1092,1361"/>
-<area shape="rect" id="node87" href="$meteo__france__DAQ_8h.html#a428cd9287f9e24f69dd92d696e0a053a" title="mf_daq_send_state" alt="" coords="943,1383,1089,1411"/>
-<area shape="rect" id="node89" href="$meteo__france__DAQ_8h.html#ac95d521856a9424097d05f67c635c10e" title="parse_mf_daq_msg" alt="" coords="943,1434,1089,1462"/>
-<area shape="rect" id="node91" href="$takeoff__detect_8h.html#a06e2c8e9dfe36613c4773f5c01303b0a" title="Periodic call. " alt="" coords="931,1485,1101,1513"/>
-<area shape="rect" id="node93" href="$stereo__avoid__sim_8c.html#ace7b98c58ff30c23353ae3d546f69475" title="stereo_avoid_run" alt="" coords="951,1535,1081,1563"/>
-<area shape="rect" id="node17" href="$demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1240,5,1293,33"/>
-<area shape="rect" id="node21" href="$main__ap_8h.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="1455,81,1561,109"/>
-<area shape="rect" id="node25" href="$fixedwing_2stabilization_2stabilization__attitude_8h.html#a86f0d47644538be1345aab19c7dc3de4" title="h_ctl_attitude_loop" alt="" coords="1196,106,1337,134"/>
-<area shape="rect" id="node35" href="$guidance__indi_8h.html#a24d1024bbd8da21b6c70317fda39d929" title="guidance_indi_run" alt="" coords="1199,325,1335,353"/>
-<area shape="rect" id="node51" href="$guidance__h_8h.html#a2903786227eb11507928f99870099225" title="guidance_h_mode_changed" alt="" coords="1167,575,1367,603"/>
-<area shape="rect" id="node55" href="$stabilization__attitude__euler__float_8c.html#a23f862ca823e6fd23fc9c111178be077" title="stabilization_attitude\l_enter" alt="" coords="1189,677,1344,721"/>
-<area shape="rect" id="node63" href="$stabilization__attitude__quat__float_8c.html#a5a2d8d3947ba9cdc571cea5778c93f4a" title="stabilization_attitude\l_set_failsafe_setpoint" alt="" coords="1187,743,1347,787"/>
-<area shape="rect" id="node99" href="$ahrs__float__dcm_8h.html#a7f3247a388db0709627a935f09a7b406" title="ahrs_dcm_set_body_to_imu" alt="" coords="916,1641,1116,1669"/>
-<area shape="rect" id="node101" href="$ahrs__float__dcm__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736" title="body_to_imu_cb" alt="" coords="953,1691,1079,1719"/>
+<area shape="rect" id="node2" href="$ahrs__float__cmpl_8c.html#af01beea615f1d7a032f10db6f58acabc" title="ahrs_fc_update_mag\l_2d_dumb" alt="" coords="227,1603,383,1645"/>
+<area shape="rect" id="node3" href="$ahrs__gx3_8h.html#acb7a83c7954119b08e90b88661889883" title="gx3_packet_read_message" alt="" coords="207,1669,404,1696"/>
+<area shape="rect" id="node5" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="221,1720,389,1747"/>
+<area shape="rect" id="node4" href="$ahrs__gx3_8h.html#a1caa6f284af9f14d111ea11166236bf4" title="ImuEvent" alt="" coords="493,1669,575,1696"/>
+<area shape="rect" id="node6" href="$group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="452,1720,616,1747"/>
+<area shape="rect" id="node7" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="664,864,863,891"/>
+<area shape="rect" id="node44" href="$imu_8h.html#a931916ce562dfa28e02e0a6001dddc43" title="imu_SetBodyToImuCurrent" alt="" coords="915,1635,1107,1661"/>
+<area shape="rect" id="node45" href="$ahrs__float__dcm_8h.html#afe8393fd937ef9065e871dc5623510f2" title="ahrs_dcm_set_body_to\l_imu_quat" alt="" coords="678,1683,849,1725"/>
+<area shape="rect" id="node48" href="$imu_8h.html#ac50fba336ca2c337f240bab0db44f64e" title="imu_SetBodyToImuPhi" alt="" coords="682,1749,845,1776"/>
+<area shape="rect" id="node49" href="$imu_8h.html#a3e25b56c5719a23e494568696083459e" title="imu_SetBodyToImuTheta" alt="" coords="673,1800,853,1827"/>
+<area shape="rect" id="node50" href="$imu_8h.html#a88ec31da12a499ee7b47fe11b4ccfa4e" title="imu_SetBodyToImuPsi" alt="" coords="682,1851,845,1877"/>
+<area shape="rect" id="node8" href="$demo__ahrs__actuators_8c.html#a791eaf74023b4de8d10fbfe0de040ed8" title="main_periodic_task" alt="" coords="939,157,1084,184"/>
+<area shape="rect" id="node10" href="$rotorcraft_2autopilot_8c.html#a468116423cf6003ebcd0c632cd976c02" title="send_attitude" alt="" coords="956,208,1067,235"/>
+<area shape="rect" id="node12" href="$guidance__common_8h.html#a38f0bbceda8812281fc650c2c1aac6c8" title="Auto&#45;throttle inner loop. " alt="" coords="1197,259,1324,285"/>
+<area shape="rect" id="node14" href="$stabilization__adaptive_8c.html#a56e08c7c847634b91bec39dc929ade80" title="h_ctl_roll_loop" alt="" coords="955,360,1067,387"/>
+<area shape="rect" id="node16" href="$stabilization__adaptive_8c.html#a10c9851e192217d5a4e7b6dc98e16c2d" title="h_ctl_pitch_loop" alt="" coords="949,309,1073,336"/>
+<area shape="rect" id="node17" href="$stabilization__attitude_8c.html#a02ae04f0f1bbe7588572e87e3dadb381" title="h_ctl_course_loop" alt="" coords="943,411,1079,437"/>
+<area shape="rect" id="node18" href="$guidance__indi_8h.html#ae40b411f26831e1ed76b9ea272b683f7" title="guidance_indi_filter\l_attitude" alt="" coords="939,462,1083,503"/>
+<area shape="rect" id="node20" href="$guidance__indi_8h.html#a633cc2afe4f313c10adb80bef877c410" title="guidance_indi_calcG" alt="" coords="936,528,1087,555"/>
+<area shape="rect" id="node21" href="$guidance__indi_8h.html#ac2747905b79ab39b935a6f140fd21695" title="stabilization_attitude\l_set_setpoint_rp_quat_f" alt="" coords="924,579,1099,621"/>
+<area shape="rect" id="node22" href="$stabilization__attitude__euler__float_8c.html#a5a2d8d3947ba9cdc571cea5778c93f4a" title="stabilization_attitude\l_set_failsafe_setpoint" alt="" coords="931,645,1091,686"/>
+<area shape="rect" id="node23" href="$stabilization__attitude__euler__float_8c.html#ada3ef183c206d08fd0a902adc118f542" title="stabilization_attitude\l_set_earth_cmd_i" alt="" coords="934,710,1089,751"/>
+<area shape="rect" id="node24" href="$stabilization__attitude__euler__float_8c.html#afb59ecc3049842f940a46a81698b79e9" title="stabilization_attitude_run" alt="" coords="920,776,1103,803"/>
+<area shape="rect" id="node25" href="$stabilization__attitude__rc__setpoint_8h.html#abdf70201d8682a7d5b567fc6f3790063" title="reset the heading for care&#45;free mode to current heading " alt="" coords="918,827,1105,869"/>
+<area shape="rect" id="node27" href="$stabilization__attitude__rc__setpoint_8h.html#aef31d05722347c8213ef503f5c6f1113" title="stabilization_attitude\l_get_heading_f" alt="" coords="934,945,1089,986"/>
+<area shape="rect" id="node28" href="$stabilization__attitude__rc__setpoint_8h.html#a795e57d623b6d1b9fe9a630dd90d13d4" title="stabilization_attitude\l_read_rc_setpoint_eulers_f" alt="" coords="1164,966,1357,1007"/>
+<area shape="rect" id="node29" href="$stabilization__attitude__rc__setpoint_8h.html#a2c7e084c171f2656b071f20895ce2ce0" title="stabilization_attitude\l_read_rc_setpoint_quat\l_earth_bound_f" alt="" coords="1415,908,1587,964"/>
+<area shape="rect" id="node30" href="$stabilization__attitude__rc__setpoint_8h.html#a9d0b7ad4c9f5c936c3f06910ac5d0185" title="Read attitude setpoint from RC as quaternion Interprets the stick positions as axes. " alt="" coords="1409,1021,1592,1062"/>
+<area shape="rect" id="node31" href="$cam_8c.html#aab3da8ed719ee01699f50450b3df3b13" title="Computes the right angles from target_x, target_y, target_alt. " alt="" coords="963,1112,1059,1139"/>
+<area shape="rect" id="node32" href="$opticflow__module_8h.html#abf53d072984591ae6710a65682d6bedb" title="Update the optical flow state for the calculation thread and update the stabilization loops with the ..." alt="" coords="931,1163,1091,1189"/>
+<area shape="rect" id="node33" href="$mavlink_8c.html#ab4facf70544272f5a7ce83e50b319cc3" title="Send the attitude. " alt="" coords="928,1213,1095,1240"/>
+<area shape="rect" id="node34" href="$mavlink_8c.html#a8e376e67cc8a8a15e91a7e9fae593646" title="mavlink_send_global\l_position_int" alt="" coords="934,1265,1089,1306"/>
+<area shape="rect" id="node35" href="$dc_8h.html#aaf0625fed2e489322c40c4b2a1904e9a" title="Send Down the coordinates of where the photo was taken. " alt="" coords="928,1331,1095,1357"/>
+<area shape="rect" id="node36" href="$dc_8h.html#ab4b5d12f3c9829a0f0e538496ad5c547" title="Send an info message. " alt="" coords="978,1432,1045,1459"/>
+<area shape="rect" id="node37" href="$dc_8h.html#ac1d419ec639ffd43193ebcbd6e1131c0" title="Sets the dc control in circle mode. " alt="" coords="1222,1407,1299,1433"/>
+<area shape="rect" id="node38" href="$dc_8h.html#a2a976ddc273dfdd99eb8638c364e9305" title="periodic function " alt="" coords="964,1483,1059,1509"/>
+<area shape="rect" id="node39" href="$logger__uart_8h.html#ab6b5fd6329c4581731f6ff29fdac97e2" title="logger_uart_periodic" alt="" coords="935,1533,1087,1560"/>
+<area shape="rect" id="node40" href="$meteo__france__DAQ_8h.html#a428cd9287f9e24f69dd92d696e0a053a" title="mf_daq_send_state" alt="" coords="937,1584,1085,1611"/>
+<area shape="rect" id="node41" href="$meteo__france__DAQ_8h.html#ac95d521856a9424097d05f67c635c10e" title="parse_mf_daq_msg" alt="" coords="937,5,1085,32"/>
+<area shape="rect" id="node42" href="$takeoff__detect_8h.html#a06e2c8e9dfe36613c4773f5c01303b0a" title="Periodic call. " alt="" coords="926,56,1097,83"/>
+<area shape="rect" id="node43" href="$stereo__avoid__sim_8c.html#ace7b98c58ff30c23353ae3d546f69475" title="stereo_avoid_run" alt="" coords="945,107,1077,133"/>
+<area shape="rect" id="node9" href="$demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1233,157,1288,184"/>
+<area shape="rect" id="node11" href="$rotorcraft_2autopilot_8h.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization. " alt="" coords="1209,208,1313,235"/>
+<area shape="rect" id="node13" href="$main__ap_8h.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="1447,284,1554,311"/>
+<area shape="rect" id="node15" href="$fixedwing_2stabilization_2stabilization__attitude_8h.html#a86f0d47644538be1345aab19c7dc3de4" title="h_ctl_attitude_loop" alt="" coords="1189,309,1332,336"/>
+<area shape="rect" id="node19" href="$guidance__indi_8h.html#a24d1024bbd8da21b6c70317fda39d929" title="guidance_indi_run" alt="" coords="1192,528,1329,555"/>
+<area shape="rect" id="node26" href="$guidance__h_8h.html#a2903786227eb11507928f99870099225" title="guidance_h_mode_changed" alt="" coords="1160,835,1361,861"/>
+<area shape="rect" id="node46" href="$ahrs__float__dcm_8h.html#a7f3247a388db0709627a935f09a7b406" title="ahrs_dcm_set_body_to_imu" alt="" coords="911,1737,1112,1764"/>
+<area shape="rect" id="node47" href="$ahrs__float__dcm__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736" title="body_to_imu_cb" alt="" coords="948,1687,1075,1713"/>
 </map>

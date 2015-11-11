@@ -1,51 +1,51 @@
 <map id="main_event" name="main_event">
-<area shape="rect" id="node3" href="$rotorcraft_2autopilot_8c.html#a7339f5741706cb9c2e2186b1174cc770" title="autopilot_on_rc_frame" alt="" coords="152,279,317,307"/>
-<area shape="rect" id="node61" href="$rotorcraft_2autopilot_8h.html#abba296c1e683df96046e568306fcbb69" title="Ground detection based on vertical acceleration." alt="" coords="161,643,308,671"/>
-<area shape="rect" id="node67" href="$group__i2c.html#ga05763355d0e087ba41feab61dd773fe6" title="i2c_event" alt="" coords="193,694,276,722"/>
-<area shape="rect" id="node69" href="$firmwares_2rotorcraft_2main_8c.html#aff00de1e5817007c0daf0de123dfa1f6" title="on_accel_event" alt="" coords="175,744,295,772"/>
-<area shape="rect" id="node73" href="$firmwares_2rotorcraft_2main_8c.html#ae1cc67881c8e253ddfc658a0365daa6d" title="on_baro_abs_event" alt="" coords="161,795,308,823"/>
-<area shape="rect" id="node79" href="$firmwares_2rotorcraft_2main_8c.html#a6aa1a0974c0101d52baf983e0856cada" title="on_baro_dif_event" alt="" coords="165,846,304,874"/>
-<area shape="rect" id="node81" href="$firmwares_2rotorcraft_2main_8c.html#ac79b4626d107d8469eef90c7de13c42f" title="on_gps_event" alt="" coords="180,896,289,924"/>
-<area shape="rect" id="node87" href="$firmwares_2rotorcraft_2main_8c.html#a9ad44dfc9d1342835451bd87613fb610" title="on_gyro_event" alt="" coords="177,1039,292,1067"/>
-<area shape="rect" id="node99" href="$firmwares_2rotorcraft_2main_8c.html#a00877cb9155773120515df456aa457a2" title="on_mag_event" alt="" coords="176,1216,293,1244"/>
-<area shape="rect" id="node5" href="$autopilot__arming__switch_8h.html#abbbe9ccad851ff6d7ef88e298059b6ce" title="State machine to check if motors should be turned ON or OFF using the kill switch." alt="" coords="367,60,540,104"/>
-<area shape="rect" id="node7" href="$autopilot__rc__helpers_8h.html#a4e9918f217a6eaf344d248a9d34e674d" title="kill_switch_is_on" alt="" coords="629,10,752,38"/>
-<area shape="rect" id="node11" href="$rotorcraft_2autopilot_8c.html#a6df3c2f896a0876e023206069155a0dc" title="autopilot_check_in\l_flight" alt="" coords="384,187,523,231"/>
-<area shape="rect" id="node13" href="$rotorcraft_2autopilot_8c.html#a3aaa2cf16ee3b25e8fca9bbd1d579d64" title="autopilot_set_mode" alt="" coords="379,254,528,282"/>
-<area shape="rect" id="node43" href="$gps_8h.html#a3c9ec0734c3ac235abd40c500746de5a" title="GpsIsLost" alt="" coords="412,304,495,332"/>
-<area shape="rect" id="node45" href="$guidance__h_8c.html#a7db3290fc5f62abc15a1bb1638b4922f" title="guidance_h_read_rc" alt="" coords="379,471,528,499"/>
-<area shape="rect" id="node58" href="$rotorcraft_2guidance_2guidance__v_8c.html#a067f5a51ae66cddf397b8b312ae4c383" title="guidance_v_read_rc" alt="" coords="379,522,528,550"/>
-<area shape="rect" id="node9" href="$autopilot__rc__helpers_8h.html#ac346fd81983479ea51d3439a7dfca6c6" title="rc_attitude_sticks\l_centered" alt="" coords="624,60,757,104"/>
-<area shape="rect" id="node15" href="$rotorcraft_2autopilot_8c.html#a99409d6a32e6cce437a1c0354a2515eb" title="ahrs_is_aligned" alt="" coords="880,19,1000,47"/>
-<area shape="rect" id="node17" href="$rotorcraft_2autopilot_8c.html#a4a3dedaf4d4da879348f946a9f3f4611" title="autopilot_set_motors_on" alt="" coords="600,178,781,206"/>
-<area shape="rect" id="node22" href="$guidance__h_8c.html#a2903786227eb11507928f99870099225" title="guidance_h_mode_changed" alt="" coords="591,228,791,256"/>
-<area shape="rect" id="node38" href="$rotorcraft_2guidance_2guidance__v_8c.html#ac24445848e497e9b0da2913cecb0db73" title="guidance_v_mode_changed" alt="" coords="840,488,1040,516"/>
-<area shape="rect" id="node41" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#a5a2d8d3947ba9cdc571cea5778c93f4a" title="stabilization_attitude\l_set_failsafe_setpoint" alt="" coords="611,330,771,374"/>
-<area shape="rect" id="node20" href="$autopilot__arming__switch_8h.html#a720eaefed19d55f94f6f866d8aba2702" title="autopilot_arming_set" alt="" coords="861,70,1019,98"/>
-<area shape="rect" id="node24" href="$stabilization__none_8c.html#a49478c0307e64c56d48cf0feaa0d8876" title="stabilization_none\l_enter" alt="" coords="872,120,1008,164"/>
-<area shape="rect" id="node26" href="$stabilization__rate_8c.html#a3c8ef06f1db709ae713371b0a2a5054d" title="stabilization_rate\l_enter" alt="" coords="875,187,1005,231"/>
-<area shape="rect" id="node28" href="$stabilization__attitude__rc__setpoint_8c.html#abdf70201d8682a7d5b567fc6f3790063" title="reset the heading for care&#45;free mode to current heading" alt="" coords="847,254,1033,298"/>
-<area shape="rect" id="node30" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#a23f862ca823e6fd23fc9c111178be077" title="stabilization_attitude\l_enter" alt="" coords="863,320,1017,364"/>
-<area shape="rect" id="node32" href="$guidance__h_8c.html#a2a7de8dee0c85bd58633a392d8e2df91" title="guidance_h_hover_enter" alt="" coords="851,387,1029,415"/>
-<area shape="rect" id="node36" href="$guidance__h_8c.html#acfce6969bcd9f8b676f79baf04ef4c00" title="guidance_h_nav_enter" alt="" coords="857,438,1023,466"/>
-<area shape="rect" id="node34" href="$group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int)." alt="" coords="1089,438,1252,466"/>
-<area shape="rect" id="node47" href="$stabilization__none_8c.html#a39657270c342b5a7f44894f10b5ad946" title="stabilization_none\l_read_rc" alt="" coords="623,396,759,440"/>
-<area shape="rect" id="node49" href="$stabilization__rate_8c.html#aa74f5f2b4c549269f6ca18638acd8c5e" title="stabilization_rate\l_read_rc_switched_sticks" alt="" coords="600,463,781,507"/>
-<area shape="rect" id="node51" href="$stabilization__rate_8c.html#a007715357d8063fa371fb07433a1e3d7" title="stabilization_rate\l_read_rc" alt="" coords="625,530,756,574"/>
-<area shape="rect" id="node53" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#a147b1b8bfdde52f82d0829ce748bf1e9" title="stabilization_attitude\l_read_rc" alt="" coords="613,596,768,640"/>
-<area shape="rect" id="node55" href="$stabilization__attitude__rc__setpoint_8c.html#a0722fad1f388d7a2f210cbf08a4d2913" title="Read attitude setpoint from RC as euler angles." alt="" coords="849,626,1031,670"/>
-<area shape="rect" id="node63" href="$group__state__acceleration.html#ga058e2128ff3a2a3ca5f3c606f4166dfe" title="Get acceleration in NED coordinates (float)." alt="" coords="379,643,528,671"/>
-<area shape="rect" id="node65" href="$group__state__acceleration.html#gaea5833c5515c007e9ebd4ef106e80071" title="stateCalcAccelNed_f" alt="" coords="615,714,767,742"/>
-<area shape="rect" id="node71" href="$ahrs__chimu__spi_8c.html#a8bf83860498b05e7e94484cdcbcb1b7a" title="Update AHRS state with accerleration measurements." alt="" coords="383,694,524,722"/>
-<area shape="rect" id="node75" href="$ins__alt__float_8c.html#a6e1a3600e1905c414ff96c92775237d3" title="Update INS state with barometer measurements." alt="" coords="389,744,517,772"/>
-<area shape="rect" id="node77" href="$vi_8h.html#a9029d0375622149abe074871ba771ed9" title="vi_notify_baro_abs\l_available" alt="" coords="384,795,523,839"/>
-<area shape="rect" id="node83" href="$ins__alt__float_8c.html#aacc25a507c5c24309fc37b1f806f5d2b" title="Update INS state with GPS measurements." alt="" coords="392,862,515,890"/>
-<area shape="rect" id="node85" href="$vi_8h.html#ad039a7a58d57d531b8993fd821475a94" title="vi_notify_gps_available" alt="" coords="371,912,536,940"/>
-<area shape="rect" id="node89" href="$ahrs__aligner_8c.html#aa8c5b5a4ce38e0dd4e1234bad8adf92d" title="ahrs_aligner_run" alt="" coords="389,963,517,991"/>
-<area shape="rect" id="node91" href="$ahrs__chimu__spi_8c.html#a81e17b09f47068c02c345da1523f589b" title="Aligns the AHRS." alt="" coords="411,1014,496,1042"/>
-<area shape="rect" id="node93" href="$ahrs__chimu__spi_8c.html#af8f4df7ae38ca5b239eac30e7d259e46" title="Propagation." alt="" coords="392,1064,515,1092"/>
-<area shape="rect" id="node95" href="$ins__alt__float_8c.html#a77b5ba9f198b91b698062cc0dc0c953d" title="Propagation." alt="" coords="397,1115,509,1143"/>
-<area shape="rect" id="node97" href="$vi_8h.html#ae5e1984ed0188c09d9bd0d0a39f281c3" title="vi_notify_imu_available" alt="" coords="369,1166,537,1194"/>
-<area shape="rect" id="node101" href="$ahrs__ardrone2_8c.html#a781832a9119845d31bda0fc8a8bb8bf3" title="Update AHRS state with magnetometer measurements." alt="" coords="384,1216,523,1244"/>
-<area shape="rect" id="node103" href="$vi_8h.html#a0e05949840bd7c88ec8d003230527932" title="vi_notify_mag_available" alt="" coords="367,1267,540,1295"/>
+<area shape="rect" id="node2" href="$rotorcraft_2autopilot_8c.html#a7339f5741706cb9c2e2186b1174cc770" title="autopilot_on_rc_frame" alt="" coords="151,279,316,305"/>
+<area shape="rect" id="node29" href="$rotorcraft_2autopilot_8h.html#abba296c1e683df96046e568306fcbb69" title="Ground detection based on vertical acceleration. " alt="" coords="159,639,307,665"/>
+<area shape="rect" id="node32" href="$group__i2c.html#ga05763355d0e087ba41feab61dd773fe6" title="i2c_event" alt="" coords="192,689,275,716"/>
+<area shape="rect" id="node33" href="$firmwares_2rotorcraft_2main_8c.html#aff00de1e5817007c0daf0de123dfa1f6" title="on_accel_event" alt="" coords="173,740,294,767"/>
+<area shape="rect" id="node35" href="$firmwares_2rotorcraft_2main_8c.html#ae1cc67881c8e253ddfc658a0365daa6d" title="on_baro_abs_event" alt="" coords="160,791,307,817"/>
+<area shape="rect" id="node38" href="$firmwares_2rotorcraft_2main_8c.html#a6aa1a0974c0101d52baf983e0856cada" title="on_baro_dif_event" alt="" coords="164,841,303,868"/>
+<area shape="rect" id="node39" href="$firmwares_2rotorcraft_2main_8c.html#ac79b4626d107d8469eef90c7de13c42f" title="on_gps_event" alt="" coords="178,892,289,919"/>
+<area shape="rect" id="node42" href="$firmwares_2rotorcraft_2main_8c.html#a9ad44dfc9d1342835451bd87613fb610" title="on_gyro_event" alt="" coords="175,1035,291,1061"/>
+<area shape="rect" id="node48" href="$firmwares_2rotorcraft_2main_8c.html#a00877cb9155773120515df456aa457a2" title="on_mag_event" alt="" coords="175,1212,292,1239"/>
+<area shape="rect" id="node3" href="$autopilot__arming__switch_8h.html#abbbe9ccad851ff6d7ef88e298059b6ce" title="State machine to check if motors should be turned ON or OFF using the kill switch. " alt="" coords="364,61,539,102"/>
+<area shape="rect" id="node4" href="$autopilot__rc__helpers_8h.html#a4e9918f217a6eaf344d248a9d34e674d" title="kill_switch_is_on" alt="" coords="625,9,749,36"/>
+<area shape="rect" id="node6" href="$rotorcraft_2autopilot_8c.html#a6df3c2f896a0876e023206069155a0dc" title="autopilot_check_in\l_flight" alt="" coords="381,187,521,229"/>
+<area shape="rect" id="node7" href="$rotorcraft_2autopilot_8c.html#a3aaa2cf16ee3b25e8fca9bbd1d579d64" title="autopilot_set_mode" alt="" coords="377,253,526,280"/>
+<area shape="rect" id="node21" href="$gps_8h.html#a3c9ec0734c3ac235abd40c500746de5a" title="GpsIsLost" alt="" coords="409,304,493,331"/>
+<area shape="rect" id="node22" href="$guidance__h_8c.html#a7db3290fc5f62abc15a1bb1638b4922f" title="guidance_h_read_rc" alt="" coords="376,468,527,495"/>
+<area shape="rect" id="node28" href="$rotorcraft_2guidance_2guidance__v_8c.html#a067f5a51ae66cddf397b8b312ae4c383" title="guidance_v_read_rc" alt="" coords="377,519,526,545"/>
+<area shape="rect" id="node5" href="$autopilot__rc__helpers_8h.html#ac346fd81983479ea51d3439a7dfca6c6" title="rc_attitude_sticks\l_centered" alt="" coords="620,61,755,102"/>
+<area shape="rect" id="node8" href="$rotorcraft_2autopilot_8c.html#a99409d6a32e6cce437a1c0354a2515eb" title="ahrs_is_aligned" alt="" coords="876,21,996,48"/>
+<area shape="rect" id="node9" href="$rotorcraft_2autopilot_8c.html#a4a3dedaf4d4da879348f946a9f3f4611" title="autopilot_set_motors_on" alt="" coords="597,177,778,204"/>
+<area shape="rect" id="node11" href="$guidance__h_8c.html#a2903786227eb11507928f99870099225" title="guidance_h_mode_changed" alt="" coords="587,228,788,255"/>
+<area shape="rect" id="node19" href="$rotorcraft_2guidance_2guidance__v_8c.html#ac24445848e497e9b0da2913cecb0db73" title="guidance_v_mode_changed" alt="" coords="836,487,1036,513"/>
+<area shape="rect" id="node20" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#a5a2d8d3947ba9cdc571cea5778c93f4a" title="stabilization_attitude\l_set_failsafe_setpoint" alt="" coords="607,330,767,371"/>
+<area shape="rect" id="node10" href="$autopilot__arming__switch_8h.html#a720eaefed19d55f94f6f866d8aba2702" title="autopilot_arming_set" alt="" coords="857,72,1015,99"/>
+<area shape="rect" id="node12" href="$stabilization__none_8c.html#a49478c0307e64c56d48cf0feaa0d8876" title="stabilization_none\l_enter" alt="" coords="867,123,1005,165"/>
+<area shape="rect" id="node13" href="$stabilization__rate_8c.html#a3c8ef06f1db709ae713371b0a2a5054d" title="stabilization_rate\l_enter" alt="" coords="871,189,1001,230"/>
+<area shape="rect" id="node14" href="$stabilization__attitude__rc__setpoint_8c.html#abdf70201d8682a7d5b567fc6f3790063" title="reset the heading for care&#45;free mode to current heading " alt="" coords="843,254,1029,295"/>
+<area shape="rect" id="node15" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#a23f862ca823e6fd23fc9c111178be077" title="stabilization_attitude\l_enter" alt="" coords="859,319,1013,361"/>
+<area shape="rect" id="node16" href="$guidance__h_8c.html#a2a7de8dee0c85bd58633a392d8e2df91" title="guidance_h_hover_enter" alt="" coords="847,385,1025,412"/>
+<area shape="rect" id="node18" href="$guidance__h_8c.html#acfce6969bcd9f8b676f79baf04ef4c00" title="guidance_h_nav_enter" alt="" coords="853,436,1019,463"/>
+<area shape="rect" id="node17" href="$group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="1084,436,1248,463"/>
+<area shape="rect" id="node23" href="$stabilization__none_8c.html#a39657270c342b5a7f44894f10b5ad946" title="stabilization_none\l_read_rc" alt="" coords="619,395,756,437"/>
+<area shape="rect" id="node24" href="$stabilization__rate_8c.html#aa74f5f2b4c549269f6ca18638acd8c5e" title="stabilization_rate\l_read_rc_switched_sticks" alt="" coords="596,461,779,502"/>
+<area shape="rect" id="node25" href="$stabilization__rate_8c.html#a007715357d8063fa371fb07433a1e3d7" title="stabilization_rate\l_read_rc" alt="" coords="622,526,753,567"/>
+<area shape="rect" id="node26" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#a147b1b8bfdde52f82d0829ce748bf1e9" title="stabilization_attitude\l_read_rc" alt="" coords="610,591,765,633"/>
+<area shape="rect" id="node27" href="$stabilization__attitude__rc__setpoint_8c.html#a0722fad1f388d7a2f210cbf08a4d2913" title="Read attitude setpoint from RC as euler angles. " alt="" coords="845,621,1027,662"/>
+<area shape="rect" id="node30" href="$group__state__acceleration.html#ga058e2128ff3a2a3ca5f3c606f4166dfe" title="Get acceleration in NED coordinates (float). " alt="" coords="377,639,526,665"/>
+<area shape="rect" id="node31" href="$group__state__acceleration.html#gaea5833c5515c007e9ebd4ef106e80071" title="stateCalcAccelNed_f" alt="" coords="611,708,764,735"/>
+<area shape="rect" id="node34" href="$ahrs__chimu__spi_8c.html#a8bf83860498b05e7e94484cdcbcb1b7a" title="Update AHRS state with accerleration measurements. " alt="" coords="380,689,523,716"/>
+<area shape="rect" id="node36" href="$ins__alt__float_8c.html#a6e1a3600e1905c414ff96c92775237d3" title="Update INS state with barometer measurements. " alt="" coords="387,740,515,767"/>
+<area shape="rect" id="node37" href="$vi_8h.html#a9029d0375622149abe074871ba771ed9" title="vi_notify_baro_abs\l_available" alt="" coords="381,791,521,833"/>
+<area shape="rect" id="node40" href="$ins__alt__float_8c.html#aacc25a507c5c24309fc37b1f806f5d2b" title="Update INS state with GPS measurements. " alt="" coords="390,857,513,884"/>
+<area shape="rect" id="node41" href="$vi_8h.html#ad039a7a58d57d531b8993fd821475a94" title="vi_notify_gps_available" alt="" coords="368,908,535,935"/>
+<area shape="rect" id="node43" href="$ahrs__aligner_8c.html#aa8c5b5a4ce38e0dd4e1234bad8adf92d" title="ahrs_aligner_run" alt="" coords="387,959,515,985"/>
+<area shape="rect" id="node44" href="$ahrs__chimu__spi_8c.html#a81e17b09f47068c02c345da1523f589b" title="Aligns the AHRS. " alt="" coords="408,1009,495,1036"/>
+<area shape="rect" id="node45" href="$ahrs__chimu__spi_8c.html#af8f4df7ae38ca5b239eac30e7d259e46" title="Propagation. " alt="" coords="390,1060,513,1087"/>
+<area shape="rect" id="node46" href="$ins__alt__float_8c.html#a77b5ba9f198b91b698062cc0dc0c953d" title="Propagation. " alt="" coords="395,1111,508,1137"/>
+<area shape="rect" id="node47" href="$vi_8h.html#ae5e1984ed0188c09d9bd0d0a39f281c3" title="vi_notify_imu_available" alt="" coords="367,1161,535,1188"/>
+<area shape="rect" id="node49" href="$ahrs__ardrone2_8c.html#a781832a9119845d31bda0fc8a8bb8bf3" title="Update AHRS state with magnetometer measurements. " alt="" coords="382,1212,521,1239"/>
+<area shape="rect" id="node50" href="$vi_8h.html#a0e05949840bd7c88ec8d003230527932" title="vi_notify_mag_available" alt="" coords="365,1263,538,1289"/>
 </map>

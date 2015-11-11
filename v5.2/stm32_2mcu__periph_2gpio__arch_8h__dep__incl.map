@@ -1,51 +1,51 @@
 <map id="sw/airborne/arch/stm32/mcu_periph/gpio_arch.h" name="sw/airborne/arch/stm32/mcu_periph/gpio_arch.h">
-<area shape="rect" id="node3" href="$stm32_2subsystems_2actuators_2actuators__dualpwm__arch_8c.html" title="STM32 dual PWM servos handling. " alt="" coords="4656,99,4853,159"/>
-<area shape="rect" id="node5" href="$stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html" title="STM32 PWM servos handling. " alt="" coords="4877,99,5048,159"/>
-<area shape="rect" id="node7" href="$gpio_8h.html" title="Some architecture independent helper functions for GPIOs. " alt="" coords="5072,107,5245,151"/>
-<area shape="rect" id="node9" href="$stm32_2led__hw_8h.html" title="sw/airborne/arch/stm32\l/led_hw.h" alt="" coords="1940,217,2111,261"/>
-<area shape="rect" id="node11" href="$actuators__ardrone2__raw_8c.html" title="Actuator driver for ardrone2&#45;raw version. " alt="" coords="1691,326,1936,370"/>
-<area shape="rect" id="node49" href="$max7456_8c.html" title="Maxim MAX7456 single&#45;channel monochrome on&#45;screen display driver. " alt="" coords="3403,435,3563,479"/>
-<area shape="rect" id="node51" href="$subsystems_2datalink_2superbitrf_8c.html" title="sw/airborne/subsystems\l/datalink/superbitrf.c" alt="" coords="3587,435,3763,479"/>
-<area shape="rect" id="node53" href="$stm32_2mcu__periph_2adc__arch_8c.html" title="Driver for the analog to digital converters on STM32. " alt="" coords="3771,217,3944,261"/>
-<area shape="rect" id="node55" href="$gpio__arch_8c.html" title="GPIO helper functions for STM32F1 and STM32F4. " alt="" coords="3968,217,4147,261"/>
-<area shape="rect" id="node57" href="$stm32_2mcu__periph_2i2c__arch_8c.html" title="Handling of I2C hardware for STM32. " alt="" coords="4171,217,4341,261"/>
-<area shape="rect" id="node59" href="$stm32_2mcu__periph_2pwm__input__arch_8c.html" title="handling of smt32 PWM input using a timer with capture. " alt="" coords="4365,209,4539,269"/>
-<area shape="rect" id="node61" href="$stm32_2mcu__periph_2spi__arch_8c.html" title="Handling of SPI hardware for STM32. " alt="" coords="4563,217,4733,261"/>
-<area shape="rect" id="node63" href="$stm32_2mcu__periph_2uart__arch_8c.html" title="Handling of UART hardware for STM32. " alt="" coords="4757,217,4933,261"/>
-<area shape="rect" id="node65" href="$stm32_2subsystems_2radio__control_2ppm__arch_8c.html" title="STM32 ppm decoder. " alt="" coords="4957,209,5147,269"/>
-<area shape="rect" id="node67" href="$stm32_2subsystems_2radio__control_2spektrum__arch_8c.html" title="sw/airborne/arch/stm32\l/subsystems/radio_control\l/spektrum_arch.c" alt="" coords="5171,209,5360,269"/>
-<area shape="rect" id="node70" href="$navdata_8c.html" title="ardrone2 navdata aquisition driver. " alt="" coords="5384,217,5525,261"/>
-<area shape="rect" id="node72" href="$rotorcraft__cam_8h.html" title="Camera control module for rotorcraft. " alt="" coords="5549,217,5765,261"/>
-<area shape="rect" id="node76" href="$gpio__cam__ctrl_8c.html" title="Control the camera via GPIO pins. " alt="" coords="5789,209,5955,269"/>
-<area shape="rect" id="node78" href="$hackhd_8c.html" title="Digital video/photo recorder HackHD control. " alt="" coords="5979,217,6139,261"/>
-<area shape="rect" id="node81" href="$humid__sht_8c.html" title="SHTxx sensor interface. " alt="" coords="6163,217,6317,261"/>
-<area shape="rect" id="node83" href="$meteo__france__DAQ_8h.html" title="Communication module with the Data Acquisition board from Meteo France. " alt="" coords="6341,217,6549,261"/>
-<area shape="rect" id="node87" href="$mf__ptu_8c.html" title="sw/airborne/modules\l/meteo/mf_ptu.c" alt="" coords="6573,217,6728,261"/>
-<area shape="rect" id="node89" href="$cyrf6936_8c.html" title="Driver for the cyrf6936 2.4GHz radio chip. " alt="" coords="6752,217,6923,261"/>
-<area shape="rect" id="node92" href="$subsystems_2datalink_2superbitrf_8h.html" title="sw/airborne/subsystems\l/datalink/superbitrf.h" alt="" coords="3571,217,3747,261"/>
-<area shape="rect" id="node99" href="$imu__aspirin__i2c_8c.html" title="sw/airborne/subsystems\l/imu/imu_aspirin_i2c.c" alt="" coords="6947,217,7123,261"/>
-<area shape="rect" id="node101" href="$sbus__common_8c.html" title="Futaba SBUS decoder. " alt="" coords="7147,217,7365,261"/>
-<area shape="rect" id="node103" href="$sbus__dual_8c.html" title="Dual SBUS radio_control. " alt="" coords="7389,217,7576,261"/>
-<area shape="rect" id="node13" href="$led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1960,334,2091,362"/>
-<area shape="rect" id="node15" href="$ADS8344_8c.html" title="sw/airborne/arch/lpc21\l/ADS8344.c" alt="" coords="2128,435,2293,479"/>
-<area shape="rect" id="node17" href="$icp__scale_8h.html" title="sw/airborne/arch/lpc21\l/icp_scale.h" alt="" coords="2317,435,2483,479"/>
-<area shape="rect" id="node19" href="$spi__slave__hs__arch_8c.html" title="Highspeed SPI Slave Interface. " alt="" coords="2507,427,2672,487"/>
-<area shape="rect" id="node21" href="$lcd__dogm__hw_8h.html" title="sw/airborne/arch/lpc21\l/modules/display/lcd_dogm_hw.h" alt="" coords="2696,435,2925,479"/>
-<area shape="rect" id="node23" href="$mag__micromag__fw__hw_8c.html" title="sw/airborne/arch/lpc21\l/modules/sensors/mag_micromag\l_fw_hw.c" alt="" coords="2949,427,3189,487"/>
-<area shape="rect" id="node25" href="$lpc21_2uart__tunnel_8c.html" title="sw/airborne/arch/lpc21\l/uart_tunnel.c" alt="" coords="3213,435,3379,479"/>
-<area shape="rect" id="node27" href="$usb__tunnel_8c.html" title="USB tunnel application. " alt="" coords="5,435,171,479"/>
-<area shape="rect" id="node29" href="$stm32_2led__hw_8c.html" title="sw/airborne/arch/stm32\l/led_hw.c" alt="" coords="195,435,365,479"/>
-<area shape="rect" id="node31" href="$can__arch_8c.html" title="Handling of CAN hardware for STM32. " alt="" coords="389,435,563,479"/>
-<area shape="rect" id="node33" href="$stm32_2uart__tunnel_8c.html" title="sw/airborne/arch/stm32\l/uart_tunnel.c" alt="" coords="587,435,757,479"/>
-<area shape="rect" id="node35" href="$apogee_2baro__board_8c.html" title="integrated barometer for Apogee boards (mpl3115) " alt="" coords="781,435,944,479"/>
-<area shape="rect" id="node37" href="$imu__apogee_8c.html" title="Driver for the IMU on the Apogee board. " alt="" coords="968,435,1136,479"/>
-<area shape="rect" id="node39" href="$baro__board__ms5611__i2c_8c.html" title="Driver for onboard MS5611 baro via I2C. " alt="" coords="1160,435,1355,479"/>
-<area shape="rect" id="node41" href="$baro__board__ms5611__spi_8c.html" title="Driver for onboard MS5611 baro via SPI. " alt="" coords="1379,435,1573,479"/>
-<area shape="rect" id="node43" href="$booz_2baro__board_8c.html" title="sw/airborne/boards\l/booz/baro_board.c" alt="" coords="1597,435,1741,479"/>
-<area shape="rect" id="node45" href="$hbmini_2baro__board_8c.html" title="Baro board interface for Bosch BMP085 on HBmini I2C1 with EOC check. " alt="" coords="1765,435,1923,479"/>
-<area shape="rect" id="node47" href="$imu__hbmini_8c.html" title="Driver for the IMU on the Hbmini board. " alt="" coords="1947,435,2104,479"/>
-<area shape="rect" id="node74" href="$rotorcraft__cam_8c.html" title="Camera control module for rotorcraft. " alt="" coords="5551,326,5764,370"/>
-<area shape="rect" id="node85" href="$meteo__france__DAQ_8c.html" title="Communication module with the Data Acquisition board from Meteo France. " alt="" coords="6341,326,6549,370"/>
-<area shape="rect" id="node94" href="$arch_2sim_2subsystems_2datalink_2superbitrf_8c.html" title="DSM2 and DSMX datalink implementation for the cyrf6936 2.4GHz radio chip trough SPI. " alt="" coords="3659,318,3816,378"/>
-<area shape="rect" id="node97" href="$superbitrf__rc_8h.html" title="DSM2 and DSMX radio control implementation for the cyrf6936 2.4GHz radio chip trough SPI..." alt="" coords="3840,326,4045,370"/>
+<area shape="rect" id="node2" href="$stm32_2subsystems_2actuators_2actuators__dualpwm__arch_8c.html" title="STM32 dual PWM servos handling. " alt="" coords="4679,95,4876,151"/>
+<area shape="rect" id="node3" href="$stm32_2subsystems_2actuators_2actuators__pwm__arch_8c.html" title="STM32 PWM servos handling. " alt="" coords="4901,95,5073,151"/>
+<area shape="rect" id="node4" href="$gpio_8h.html" title="Some architecture independent helper functions for GPIOs. " alt="" coords="5097,102,5271,143"/>
+<area shape="rect" id="node5" href="$stm32_2led__hw_8h.html" title="sw/airborne/arch/stm32\l/led_hw.h" alt="" coords="1949,206,2121,247"/>
+<area shape="rect" id="node6" href="$actuators__ardrone2__raw_8c.html" title="Actuator driver for ardrone2&#45;raw version. " alt="" coords="1700,310,1945,351"/>
+<area shape="rect" id="node25" href="$max7456_8c.html" title="Maxim MAX7456 single&#45;channel monochrome on&#45;screen display driver. " alt="" coords="3417,414,3578,455"/>
+<area shape="rect" id="node26" href="$subsystems_2datalink_2superbitrf_8c.html" title="sw/airborne/subsystems\l/datalink/superbitrf.c" alt="" coords="3603,414,3779,455"/>
+<area shape="rect" id="node27" href="$stm32_2mcu__periph_2adc__arch_8c.html" title="Driver for the analog to digital converters on STM32. " alt="" coords="3786,206,3961,247"/>
+<area shape="rect" id="node28" href="$gpio__arch_8c.html" title="GPIO helper functions for STM32F1 and STM32F4. " alt="" coords="3985,206,4164,247"/>
+<area shape="rect" id="node29" href="$stm32_2mcu__periph_2i2c__arch_8c.html" title="Handling of I2C hardware for STM32. " alt="" coords="4189,206,4361,247"/>
+<area shape="rect" id="node30" href="$stm32_2mcu__periph_2pwm__input__arch_8c.html" title="handling of smt32 PWM input using a timer with capture. " alt="" coords="4385,199,4559,255"/>
+<area shape="rect" id="node31" href="$stm32_2mcu__periph_2spi__arch_8c.html" title="Handling of SPI hardware for STM32. " alt="" coords="4583,206,4755,247"/>
+<area shape="rect" id="node32" href="$stm32_2mcu__periph_2uart__arch_8c.html" title="Handling of UART hardware for STM32. " alt="" coords="4779,206,4957,247"/>
+<area shape="rect" id="node33" href="$stm32_2subsystems_2radio__control_2ppm__arch_8c.html" title="STM32 ppm decoder. " alt="" coords="4981,199,5171,255"/>
+<area shape="rect" id="node34" href="$stm32_2subsystems_2radio__control_2spektrum__arch_8c.html" title="sw/airborne/arch/stm32\l/subsystems/radio_control\l/spektrum_arch.c" alt="" coords="5195,199,5386,255"/>
+<area shape="rect" id="node35" href="$navdata_8c.html" title="ardrone2 navdata aquisition driver. " alt="" coords="5410,206,5553,247"/>
+<area shape="rect" id="node36" href="$rotorcraft__cam_8h.html" title="Camera control module for rotorcraft. " alt="" coords="5577,206,5793,247"/>
+<area shape="rect" id="node38" href="$gpio__cam__ctrl_8c.html" title="Control the camera via GPIO pins. " alt="" coords="5817,199,5983,255"/>
+<area shape="rect" id="node39" href="$hackhd_8c.html" title="Digital video/photo recorder HackHD control. " alt="" coords="6007,206,6167,247"/>
+<area shape="rect" id="node40" href="$humid__sht_8c.html" title="SHTxx sensor interface. " alt="" coords="6191,206,6345,247"/>
+<area shape="rect" id="node41" href="$meteo__france__DAQ_8h.html" title="Communication module with the Data Acquisition board from Meteo France. " alt="" coords="6370,206,6579,247"/>
+<area shape="rect" id="node43" href="$mf__ptu_8c.html" title="sw/airborne/modules\l/meteo/mf_ptu.c" alt="" coords="6604,206,6759,247"/>
+<area shape="rect" id="node44" href="$cyrf6936_8c.html" title="Driver for the cyrf6936 2.4GHz radio chip. " alt="" coords="6783,206,6953,247"/>
+<area shape="rect" id="node45" href="$subsystems_2datalink_2superbitrf_8h.html" title="sw/airborne/subsystems\l/datalink/superbitrf.h" alt="" coords="3585,206,3761,247"/>
+<area shape="rect" id="node48" href="$imu__aspirin__i2c_8c.html" title="sw/airborne/subsystems\l/imu/imu_aspirin_i2c.c" alt="" coords="6977,206,7153,247"/>
+<area shape="rect" id="node49" href="$sbus__common_8c.html" title="Futaba SBUS decoder. " alt="" coords="7177,206,7396,247"/>
+<area shape="rect" id="node50" href="$sbus__dual_8c.html" title="Dual SBUS radio_control. " alt="" coords="7421,206,7609,247"/>
+<area shape="rect" id="node7" href="$led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1969,317,2100,344"/>
+<area shape="rect" id="node8" href="$ADS8344_8c.html" title="sw/airborne/arch/lpc21\l/ADS8344.c" alt="" coords="2139,414,2304,455"/>
+<area shape="rect" id="node9" href="$icp__scale_8h.html" title="sw/airborne/arch/lpc21\l/icp_scale.h" alt="" coords="2328,414,2493,455"/>
+<area shape="rect" id="node10" href="$spi__slave__hs__arch_8c.html" title="Highspeed SPI Slave Interface. " alt="" coords="2517,407,2683,463"/>
+<area shape="rect" id="node11" href="$lcd__dogm__hw_8h.html" title="sw/airborne/arch/lpc21\l/modules/display/lcd_dogm_hw.h" alt="" coords="2707,414,2938,455"/>
+<area shape="rect" id="node12" href="$mag__micromag__fw__hw_8c.html" title="sw/airborne/arch/lpc21\l/modules/sensors/mag_micromag\l_fw_hw.c" alt="" coords="2963,407,3203,463"/>
+<area shape="rect" id="node13" href="$lpc21_2uart__tunnel_8c.html" title="sw/airborne/arch/lpc21\l/uart_tunnel.c" alt="" coords="3227,414,3392,455"/>
+<area shape="rect" id="node14" href="$usb__tunnel_8c.html" title="USB tunnel application. " alt="" coords="5,414,171,455"/>
+<area shape="rect" id="node15" href="$stm32_2led__hw_8c.html" title="sw/airborne/arch/stm32\l/led_hw.c" alt="" coords="195,414,367,455"/>
+<area shape="rect" id="node16" href="$can__arch_8c.html" title="Handling of CAN hardware for STM32. " alt="" coords="391,414,566,455"/>
+<area shape="rect" id="node17" href="$stm32_2uart__tunnel_8c.html" title="sw/airborne/arch/stm32\l/uart_tunnel.c" alt="" coords="590,414,762,455"/>
+<area shape="rect" id="node18" href="$apogee_2baro__board_8c.html" title="integrated barometer for Apogee boards (mpl3115) " alt="" coords="787,414,949,455"/>
+<area shape="rect" id="node19" href="$imu__apogee_8c.html" title="Driver for the IMU on the Apogee board. " alt="" coords="973,414,1141,455"/>
+<area shape="rect" id="node20" href="$baro__board__ms5611__i2c_8c.html" title="Driver for onboard MS5611 baro via I2C. " alt="" coords="1165,414,1360,455"/>
+<area shape="rect" id="node21" href="$baro__board__ms5611__spi_8c.html" title="Driver for onboard MS5611 baro via SPI. " alt="" coords="1384,414,1579,455"/>
+<area shape="rect" id="node22" href="$booz_2baro__board_8c.html" title="sw/airborne/boards\l/booz/baro_board.c" alt="" coords="1603,414,1749,455"/>
+<area shape="rect" id="node23" href="$hbmini_2baro__board_8c.html" title="Baro board interface for Bosch BMP085 on HBmini I2C1 with EOC check. " alt="" coords="1773,414,1931,455"/>
+<area shape="rect" id="node24" href="$imu__hbmini_8c.html" title="Driver for the IMU on the Hbmini board. " alt="" coords="1955,414,2114,455"/>
+<area shape="rect" id="node37" href="$rotorcraft__cam_8c.html" title="Camera control module for rotorcraft. " alt="" coords="5578,310,5793,351"/>
+<area shape="rect" id="node42" href="$meteo__france__DAQ_8c.html" title="Communication module with the Data Acquisition board from Meteo France. " alt="" coords="6371,310,6579,351"/>
+<area shape="rect" id="node46" href="$arch_2sim_2subsystems_2datalink_2superbitrf_8c.html" title="DSM2 and DSMX datalink implementation for the cyrf6936 2.4GHz radio chip trough SPI. " alt="" coords="3673,303,3831,359"/>
+<area shape="rect" id="node47" href="$superbitrf__rc_8h.html" title="DSM2 and DSMX radio control implementation for the cyrf6936 2.4GHz radio chip trough SPI..." alt="" coords="3855,310,4060,351"/>
 </map>

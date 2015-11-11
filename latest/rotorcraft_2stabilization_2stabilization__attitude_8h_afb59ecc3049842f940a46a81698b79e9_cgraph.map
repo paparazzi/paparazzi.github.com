@@ -1,42 +1,51 @@
 <map id="stabilization_attitude_run" name="stabilization_attitude_run">
-<area shape="rect" id="node3" href="$stabilization__attitude__quat__float_8c.html#abcf3f74ddd37dcf51e0df255d22c4a23" title="attitude_run_fb" alt="" coords="279,5,396,33"/>
-<area shape="rect" id="node5" href="$stabilization__attitude__quat__float_8c.html#a112d2235c054e7eadd1659fa0a78e4f4" title="attitude_run_ff" alt="" coords="280,55,395,83"/>
-<area shape="rect" id="node7" href="$stabilization__attitude__quat__indi_8c.html#a9dd6dd49ddff3c113ba2606fd45eb21b" title="attitude_run_indi" alt="" coords="273,233,401,261"/>
-<area shape="rect" id="node9" href="$group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float). " alt="" coords="704,258,861,286"/>
-<area shape="rect" id="node13" href="$stabilization__attitude__quat__indi_8c.html#aa4b4e93913fecb8601dd3abc341959eb" title="stabilization_indi\l_second_order_filter" alt="" coords="708,149,857,193"/>
-<area shape="rect" id="node21" href="$group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity " alt="" coords="268,346,407,374"/>
-<area shape="rect" id="node23" href="$group__math__algebra__float.html#ga2784b8b78ffff045ebb867a4198eb349" title="Composition (multiplication) of two quaternions. " alt="" coords="260,397,415,425"/>
-<area shape="rect" id="node25" href="$group__math__algebra__float.html#ga8c87c4af5df3d13c6eb0bd8b8e97721a" title="float_quat_wrap_shortest" alt="" coords="247,447,428,475"/>
-<area shape="rect" id="node27" href="$group__math__algebra__int.html#ga698f3fc474f66517868238f6f6b08fca" title="initialises a quaternion to identity " alt="" coords="265,498,409,526"/>
-<area shape="rect" id="node29" href="$group__math__algebra__int.html#gae4cd7dd8ca63cfe3aed0eb7c3857ac9a" title="Composition (multiplication) of two quaternions. " alt="" coords="259,549,416,577"/>
-<area shape="rect" id="node31" href="$group__math__algebra__int.html#ga00267cacb602945fc6cfb054492460fa" title="normalize a quaternion inplace " alt="" coords="257,977,417,1005"/>
-<area shape="rect" id="node37" href="$group__math__algebra__int.html#ga7af214127cdc156466db26fd3497ce84" title="int32_quat_wrap_shortest" alt="" coords="244,650,431,678"/>
-<area shape="rect" id="node39" href="$stabilization__attitude__ref__euler__float_8c.html#aa81d4bbb6fc4913f6b9165b818a577c5" title="stabilization_attitude\l_ref_update" alt="" coords="260,701,415,745"/>
-<area shape="rect" id="node43" href="$group__state__rate.html#ga3fc058302e6f40bf0b8797ca9a7ed60f" title="Get vehicle body angular rate (int). " alt="" coords="260,767,415,795"/>
-<area shape="rect" id="node47" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="239,599,436,627"/>
-<area shape="rect" id="node57" href="$group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int). " alt="" coords="239,869,436,897"/>
-<area shape="rect" id="node67" href="$group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float). " alt="" coords="243,919,432,947"/>
-<area shape="rect" id="node77" href="$group__state__attitude.html#ga28e5de0a4822cabcfe8350e2343111ce" title="Get vehicle body attitude quaternion (int). " alt="" coords="243,818,432,846"/>
-<area shape="rect" id="node17" href="$stabilization__attitude__quat__indi_8c.html#ad4a81c601235942469d940e7ac5f400e" title="lms_estimation" alt="" coords="508,207,628,235"/>
-<area shape="rect" id="node11" href="$group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title="stateCalcBodyRates_f" alt="" coords="920,258,1080,286"/>
-<area shape="rect" id="node15" href="$group__math__algebra__float.html#gaa756a8ac8762d40f02b0e31539340c22" title="in place first order integration of angular rates " alt="" coords="916,157,1084,185"/>
-<area shape="rect" id="node33" href="$group__math__algebra__int.html#ga1dac7ce8c769898ccda119edb55f52ef" title="Norm of a quaternion. " alt="" coords="717,1014,848,1042"/>
-<area shape="rect" id="node35" href="$group__math__algebra__int.html#ga4f101a6e0a22ac1b90f36fe8bf97d702" title="int32_sqrt" alt="" coords="1135,869,1220,897"/>
-<area shape="rect" id="node45" href="$group__state__rate.html#gaa244b14b2780206f600f9ded7d7cf180" title="stateCalcBodyRates_i" alt="" coords="488,767,648,795"/>
-<area shape="rect" id="node49" href="$group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="487,599,649,627"/>
-<area shape="rect" id="node51" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="699,599,867,627"/>
-<area shape="rect" id="node53" href="$group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="924,625,1076,653"/>
-<area shape="rect" id="node55" href="$group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="float_eulers_of_quat" alt="" coords="925,574,1075,602"/>
-<area shape="rect" id="node59" href="$group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int). " alt="" coords="487,869,649,897"/>
-<area shape="rect" id="node61" href="$group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title="orientationCalcEulers_i" alt="" coords="700,869,865,897"/>
-<area shape="rect" id="node63" href="$group__math__algebra__int.html#gaf2f61a27841c68cefbd27a8614fcd90e" title="int32_eulers_of_rmat" alt="" coords="921,869,1079,897"/>
-<area shape="rect" id="node65" href="$group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e" title="int32_eulers_of_quat" alt="" coords="923,818,1077,846"/>
-<area shape="rect" id="node69" href="$group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float). " alt="" coords="491,919,645,947"/>
-<area shape="rect" id="node71" href="$group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title="orientationCalcQuat_f" alt="" coords="703,919,863,947"/>
-<area shape="rect" id="node73" href="$group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f" title="Quaternion from rotation matrix. " alt="" coords="929,970,1071,998"/>
-<area shape="rect" id="node75" href="$group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="Quaternion from Euler angles. " alt="" coords="925,919,1075,947"/>
-<area shape="rect" id="node79" href="$group__math__orientation__representation.html#ga86b153b2106a638cef8e314125c47306" title="Get vehicle body attitude quaternion (int). " alt="" coords="491,818,645,846"/>
-<area shape="rect" id="node81" href="$group__math__orientation__representation.html#gaa411e2093feec3fef9e18c4a52b74c38" title="orientationCalcQuat_i" alt="" coords="704,767,861,795"/>
-<area shape="rect" id="node83" href="$group__math__algebra__int.html#ga492c7dfcb9089c8bdb0d20d89089b542" title="Quaternion from rotation matrix. " alt="" coords="927,717,1073,745"/>
-<area shape="rect" id="node86" href="$group__math__algebra__int.html#gab3d8478211bf7da23d2345e8eae43fc8" title="Quaternion from Euler angles. " alt="" coords="923,767,1077,795"/>
+<area shape="rect" id="node2" href="$stabilization__attitude__ref__euler__float_8c.html#aa06a66885cd25a47ac9efc8664f29f0a" title="attitude_ref_euler\l_float_update" alt="" coords="268,79,403,120"/>
+<area shape="rect" id="node4" href="$stabilization__attitude__ref__euler__int_8c.html#a041606d24b535f7020178ae487e069d5" title="Propagate reference model. " alt="" coords="268,477,403,519"/>
+<area shape="rect" id="node5" href="$stabilization__attitude__ref__quat__float_8c.html#a6246617981d4269af34291dafdd9f1e3" title="attitude_ref_quat_float\l_update" alt="" coords="252,216,419,257"/>
+<area shape="rect" id="node11" href="$group__math__algebra__float.html#ga2784b8b78ffff045ebb867a4198eb349" title="Composition (multiplication) of two quaternions. " alt="" coords="499,325,653,351"/>
+<area shape="rect" id="node12" href="$group__math__algebra__float.html#ga8c87c4af5df3d13c6eb0bd8b8e97721a" title="float_quat_wrap_shortest" alt="" coords="485,375,667,402"/>
+<area shape="rect" id="node14" href="$stabilization__attitude__ref__quat__int_8c.html#a20f0b5f27a66365eac7b4ed8af49960c" title="Propagate reference. " alt="" coords="258,595,413,636"/>
+<area shape="rect" id="node16" href="$group__math__algebra__int.html#ga00267cacb602945fc6cfb054492460fa" title="normalize a quaternion inplace " alt="" coords="496,477,656,503"/>
+<area shape="rect" id="node19" href="$group__math__algebra__int.html#gae4cd7dd8ca63cfe3aed0eb7c3857ac9a" title="Composition (multiplication) of two quaternions. " alt="" coords="497,695,655,722"/>
+<area shape="rect" id="node20" href="$group__math__algebra__int.html#ga7af214127cdc156466db26fd3497ce84" title="int32_quat_wrap_shortest" alt="" coords="483,746,669,773"/>
+<area shape="rect" id="node23" href="$stabilization__attitude__quat__float_8c.html#abcf3f74ddd37dcf51e0df255d22c4a23" title="attitude_run_fb" alt="" coords="276,813,395,839"/>
+<area shape="rect" id="node24" href="$stabilization__attitude__quat__float_8c.html#a112d2235c054e7eadd1659fa0a78e4f4" title="attitude_run_ff" alt="" coords="278,863,393,890"/>
+<area shape="rect" id="node25" href="$stabilization__attitude__quat__indi_8c.html#a9dd6dd49ddff3c113ba2606fd45eb21b" title="attitude_run_indi" alt="" coords="271,965,400,991"/>
+<area shape="rect" id="node26" href="$group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float). " alt="" coords="723,914,880,941"/>
+<area shape="rect" id="node28" href="$stabilization__attitude__quat__indi_8c.html#aa4b4e93913fecb8601dd3abc341959eb" title="stabilization_indi\l_second_order_filter" alt="" coords="726,1008,877,1049"/>
+<area shape="rect" id="node31" href="$group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity " alt="" coords="265,1066,405,1093"/>
+<area shape="rect" id="node32" href="$group__math__algebra__int.html#ga698f3fc474f66517868238f6f6b08fca" title="initialises a quaternion to identity " alt="" coords="263,1117,407,1143"/>
+<area shape="rect" id="node33" href="$group__state__rate.html#ga3fc058302e6f40bf0b8797ca9a7ed60f" title="Get vehicle body angular rate (int). " alt="" coords="257,1167,413,1194"/>
+<area shape="rect" id="node35" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="236,426,435,453"/>
+<area shape="rect" id="node39" href="$group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int). " alt="" coords="236,762,435,789"/>
+<area shape="rect" id="node43" href="$group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float). " alt="" coords="240,1218,431,1245"/>
+<area shape="rect" id="node48" href="$group__state__attitude.html#ga28e5de0a4822cabcfe8350e2343111ce" title="Get vehicle body attitude quaternion (int). " alt="" coords="240,1269,431,1295"/>
+<area shape="rect" id="node3" href="$attitude__ref__saturate__naive_8h.html#aa0f93b3e44169518f24759b497a97275" title="attitude_ref_float\l_saturate_naive" alt="" coords="511,5,641,47"/>
+<area shape="rect" id="node6" href="$group__math__algebra__float.html#gaf9863ba4e0718dd826af1bf1bf891aaa" title="Quaternion derivative from rotational velocity. " alt="" coords="499,173,653,199"/>
+<area shape="rect" id="node7" href="$group__math__algebra__float.html#gaf1db25a69e0a8c04c7a9987a4455d164" title="Delta rotation quaternion with constant angular rates. " alt="" coords="496,223,656,250"/>
+<area shape="rect" id="node8" href="$group__math__algebra__float.html#gaf182e4cea0a80278a3b2856331095ff6" title="Composition (multiplication) of two quaternions. " alt="" coords="511,274,641,301"/>
+<area shape="rect" id="node9" href="$group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title="float_quat_normalize" alt="" coords="498,71,654,98"/>
+<area shape="rect" id="node13" href="$group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="float_eulers_of_quat" alt="" coords="943,186,1093,213"/>
+<area shape="rect" id="node10" href="$group__math__algebra__float.html#gaf58947a2590837aa85077d42d99fb112" title="float_quat_norm" alt="" coords="738,71,865,98"/>
+<area shape="rect" id="node15" href="$group__math__algebra__int.html#ga90e7e0443a18285afae399ee6fdfe29e" title="Quaternion derivative from rotational velocity. " alt="" coords="497,527,655,554"/>
+<area shape="rect" id="node21" href="$attitude__ref__saturate__naive_8h.html#aa1855c3eb78fd1895bb5306acd70ba17" title="attitude_ref_int_saturate\l_naive" alt="" coords="486,579,666,620"/>
+<area shape="rect" id="node22" href="$group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e" title="int32_eulers_of_quat" alt="" coords="941,670,1095,697"/>
+<area shape="rect" id="node17" href="$group__math__algebra__int.html#ga1dac7ce8c769898ccda119edb55f52ef" title="Norm of a quaternion. " alt="" coords="736,477,867,503"/>
+<area shape="rect" id="node18" href="$group__math__algebra__int.html#ga4f101a6e0a22ac1b90f36fe8bf97d702" title="int32_sqrt" alt="" coords="975,477,1061,503"/>
+<area shape="rect" id="node30" href="$stabilization__attitude__quat__indi_8c.html#ad4a81c601235942469d940e7ac5f400e" title="lms_estimation" alt="" coords="516,965,636,991"/>
+<area shape="rect" id="node27" href="$group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title="stateCalcBodyRates_f" alt="" coords="937,914,1099,941"/>
+<area shape="rect" id="node29" href="$group__math__algebra__float.html#gaa756a8ac8762d40f02b0e31539340c22" title="in place first order integration of angular rates " alt="" coords="933,1015,1103,1042"/>
+<area shape="rect" id="node34" href="$group__state__rate.html#gaa244b14b2780206f600f9ded7d7cf180" title="stateCalcBodyRates_i" alt="" coords="496,1167,656,1194"/>
+<area shape="rect" id="node36" href="$group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="494,426,658,453"/>
+<area shape="rect" id="node37" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="717,299,885,326"/>
+<area shape="rect" id="node38" href="$group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="941,299,1095,326"/>
+<area shape="rect" id="node40" href="$group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int). " alt="" coords="495,797,657,823"/>
+<area shape="rect" id="node41" href="$group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title="orientationCalcEulers_i" alt="" coords="718,746,885,773"/>
+<area shape="rect" id="node42" href="$group__math__algebra__int.html#gaf2f61a27841c68cefbd27a8614fcd90e" title="int32_eulers_of_rmat" alt="" coords="939,746,1097,773"/>
+<area shape="rect" id="node44" href="$group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float). " alt="" coords="498,1218,654,1245"/>
+<area shape="rect" id="node45" href="$group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title="orientationCalcQuat_f" alt="" coords="721,1218,881,1245"/>
+<area shape="rect" id="node46" href="$group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f" title="Quaternion from rotation matrix. " alt="" coords="947,1243,1089,1270"/>
+<area shape="rect" id="node47" href="$group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="Quaternion from Euler angles. " alt="" coords="943,1193,1093,1219"/>
+<area shape="rect" id="node49" href="$group__math__orientation__representation.html#ga86b153b2106a638cef8e314125c47306" title="Get vehicle body attitude quaternion (int). " alt="" coords="499,1269,653,1295"/>
+<area shape="rect" id="node50" href="$group__math__orientation__representation.html#gaa411e2093feec3fef9e18c4a52b74c38" title="orientationCalcQuat_i" alt="" coords="722,1269,881,1295"/>
 </map>

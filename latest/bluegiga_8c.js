@@ -5,9 +5,10 @@ var bluegiga_8c =
     [ "bluegiga_ch_available", "bluegiga_8c.html#a746c54bc6bba1fd3d133fe6d35c444c2", null ],
     [ "bluegiga_increment_buf", "bluegiga_8c.html#ad59d5db2be5ea429bc32bddfab4f39f3", null ],
     [ "bluegiga_init", "bluegiga_8c.html#ac8a60ccee96fbe718a27b6194f3f14e0", null ],
+    [ "bluegiga_load_tx", "bluegiga_8c.html#a95be3ef04141e5037bfd21e88d87d3ef", null ],
     [ "bluegiga_receive", "bluegiga_8c.html#a50a0f979fdb5e8cb70090c6de5f203ac", null ],
-    [ "bluegiga_scan", "bluegiga_8c.html#a089222c828d6ac564df74e5d89285a4b", null ],
-    [ "bluegiga_send", "bluegiga_8c.html#a5096d53877e013a7aa94013e59dc45d3", null ],
+    [ "bluegiga_request_all_rssi", "bluegiga_8c.html#a3b85e292d142346f4120761f59cf2b7c", null ],
+    [ "bluegiga_scan", "bluegiga_8c.html#a59308e111064cd1a2771e8696198a16e", null ],
     [ "bluegiga_transmit", "bluegiga_8c.html#abe358f767725314dab7b28a59e51989c", null ],
     [ "dev_char_available", "bluegiga_8c.html#a9b6278c5129408fea7fcd6ef782bb566", null ],
     [ "dev_check_free_space", "bluegiga_8c.html#a0d78dd9a3c384d5c4297995e67672a0f", null ],
@@ -18,5 +19,6 @@ var bluegiga_8c =
     [ "bluegiga_p", "bluegiga_8c.html#ac12d1ee016c26361e1e48e9ee7b5dc27", null ],
     [ "bluegiga_rssi", "bluegiga_8c.html#a9adb81268f523a2a05d476d5f64676ed", null ],
     [ "bluegiga_spi", "bluegiga_8c.html#a8198c460a2a8487b2c7f123794fcf1e9", null ],
-    [ "coms_status", "bluegiga_8c.html#a63fb36ed0551dd092ac6f34c76bb6168", null ]
+    [ "coms_status", "bluegiga_8c.html#a63fb36ed0551dd092ac6f34c76bb6168", null ],
+    [ "telemetry_copy", "bluegiga_8c.html#a3945da57e9f43939a5fdb9fecb610366", null ]
 ];

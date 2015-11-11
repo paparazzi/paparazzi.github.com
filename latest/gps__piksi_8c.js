@@ -1,5 +1,10 @@
 var gps__piksi_8c =
 [
+    [ "POS_ECEF_TIMEOUT", "gps__piksi_8c.html#a78a2cdd864df76a0cd8f9b871df6bbae", null ],
+    [ "SBP_FIX_MODE_FLOAT", "gps__piksi_8c.html#ade56dfd2b4dd4466cae3714f1400ce72", null ],
+    [ "SBP_FIX_MODE_SPP", "gps__piksi_8c.html#ad6513570d5a9b2bf78789ef2d663d5fd", null ],
+    [ "SPB_FIX_MODE_FIXED", "gps__piksi_8c.html#a3eae2ac77a5a6fd15447e3dec0bc37e4", null ],
+    [ "get_fix_mode", "gps__piksi_8c.html#ade701b633876b51633dad336d4031b95", null ],
     [ "gps_impl_init", "gps__piksi_8c.html#ac51e6a5f7940a0acc9dc44b1b8085331", null ],
     [ "gps_inject_data", "gps__piksi_8c.html#a92de5b7fc6f0e0c9c2a3f6aa1b175c6f", null ],
     [ "gps_piksi_event", "gps__piksi_8c.html#a2a11e7df7bcc31ab10141f020bd6f729", null ],
@@ -23,6 +28,7 @@ var gps__piksi_8c =
     [ "SBP_UART_SET1", "gps__piksi_8c.html#a2eebca531cc7abce49c774d48079fba7", null ],
     [ "SBP_UART_SET2", "gps__piksi_8c.html#ad06527724eedc825d8f25fdf6e594e5c", null ],
     [ "SBP_UART_SET3", "gps__piksi_8c.html#ab312263570eccd2a09f42157652e305e", null ],
+    [ "time_since_last_pos_update", "gps__piksi_8c.html#a8215e8ab0018133ba5105d73aaacae35", null ],
     [ "tracking_state_dep_a_node", "gps__piksi_8c.html#ae61c4136d917c3d543a42ddf4abb8cd2", null ],
     [ "tracking_state_node", "gps__piksi_8c.html#ab07c3ded128de63b9a2314880d3abcae", null ],
     [ "vel_ecef_node", "gps__piksi_8c.html#ab49301f62ac878a5ffde24bf9760b8b9", null ],

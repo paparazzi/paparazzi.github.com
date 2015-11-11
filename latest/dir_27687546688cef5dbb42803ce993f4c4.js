@@ -19,6 +19,8 @@ var dir_27687546688cef5dbb42803ce993f4c4 =
     [ "actuators_pwm.h", "actuators__pwm_8h.html", "actuators__pwm_8h" ],
     [ "actuators_skiron.c", "actuators__skiron_8c.html", "actuators__skiron_8c" ],
     [ "actuators_skiron.h", "actuators__skiron_8h.html", "actuators__skiron_8h" ],
+    [ "actuators_spektrum.c", "actuators__spektrum_8c.html", null ],
+    [ "actuators_spektrum.h", "actuators__spektrum_8h.html", "actuators__spektrum_8h" ],
     [ "motor_mixing.c", "motor__mixing_8c.html", "motor__mixing_8c" ],
     [ "motor_mixing.h", "motor__mixing_8h.html", "motor__mixing_8h" ],
     [ "motor_mixing_types.h", "motor__mixing__types_8h.html", "motor__mixing__types_8h" ]

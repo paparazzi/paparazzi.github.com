@@ -1,51 +1,51 @@
 <map id="I2cSendStart" name="I2cSendStart">
-<area shape="rect" id="node3" href="$group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="191,717,281,745"/>
-<area shape="rect" id="node103" href="$lpc21_2mcu__periph_2i2c__arch_8c.html#a512c156108b054d32fb4e221d2e057f7" title="I2cAutomaton" alt="" coords="659,1487,771,1515"/>
-<area shape="rect" id="node105" href="$lpc21_2mcu__periph_2i2c__arch_8c.html#a01409add519ec96f88feb3cd5f00740b" title="I2cEndOfTransaction" alt="" coords="161,1487,311,1515"/>
-<area shape="rect" id="node5" href="$lisa__l_2baro__board_8c.html#a0142e6ef7cb26ef8fc63b27b0a3f055f" title="baro_board_send_reset" alt="" coords="628,173,801,201"/>
-<area shape="rect" id="node9" href="$lisa__l_2baro__board_8c.html#a6c5d28296d0273908662b993468d73cb" title="baro_board_write_to\l_register" alt="" coords="385,562,537,606"/>
-<area shape="rect" id="node17" href="$lisa__l_2baro__board_8c.html#a0c000c34c542d400cd2a45608f714d12" title="baro_board_read_from\l_register" alt="" coords="377,679,545,723"/>
-<area shape="rect" id="node19" href="$lisa__l_2baro__board_8c.html#ae280d0cac96760be078c903045aee6c6" title="baro_board_set_current\l_register" alt="" coords="628,325,801,369"/>
-<area shape="rect" id="node22" href="$lisa__l_2baro__board_8c.html#a91e7585497fa861959910aa79a06c95a" title="baro_board_read_from\l_current_register" alt="" coords="631,106,799,150"/>
-<area shape="rect" id="node25" href="$group__i2c.html#ga68659e03504627925829f2f12c2ec6d2" title="Submit a write only transaction. " alt="" coords="411,746,512,774"/>
-<area shape="rect" id="node55" href="$group__i2c.html#ga9bdc2f5162d3e77dd58b7541ddcbe5d1" title="Submit a read only transaction. " alt="" coords="415,847,508,875"/>
-<area shape="rect" id="node58" href="$group__i2c.html#gae029fe6bf43eaf9e46428fec7e7b91c7" title="Submit a write/read transaction. " alt="" coords="405,797,517,825"/>
-<area shape="rect" id="node63" href="$i2c__abuse__test_8c.html#a730009caebd8f50471432adbc55d7732" title="i2c_abuse_send_transaction" alt="" coords="360,949,563,977"/>
-<area shape="rect" id="node65" href="$i2c__abuse__test_8h.html#a70dbb3f79a41f5e301aee164bfeaf7de" title="event_i2c_abuse_test" alt="" coords="635,1101,795,1129"/>
-<area shape="rect" id="node68" href="$config__mkk__v2_8h.html#ac185d9a5e71b91184afbb07eac530ab0" title="config_mkk_v2_read\l_eeprom" alt="" coords="385,999,537,1043"/>
-<area shape="rect" id="node70" href="$config__mkk__v2_8h.html#a944c5b23198b8a50eb595a483c9b4408" title="config_mkk_v2_send\l_eeprom" alt="" coords="384,1066,539,1110"/>
-<area shape="rect" id="node72" href="$adxl345__i2c_8c.html#a3a2e564f46dd67289f4098089a6de76b" title="adxl345_i2c_tx_reg" alt="" coords="389,1133,533,1161"/>
-<area shape="rect" id="node74" href="$adxl345__i2c_8h.html#a090f88095fe86b3d1f3f0b82cddff295" title="adxl345_i2c_read" alt="" coords="395,1183,528,1211"/>
-<area shape="rect" id="node76" href="$ami601_8h.html#a71d937e3a4fb4dd1db1861fa6711b417" title="ami601_read" alt="" coords="408,1234,515,1262"/>
-<area shape="rect" id="node78" href="$hmc5843_8c.html#a179b6346fe1a63338f44c42fcda2fcf8" title="send_config" alt="" coords="412,1335,511,1363"/>
-<area shape="rect" id="node80" href="$hmc5843_8h.html#ab17f5e43fbd1dcadea20ede30e06568b" title="hmc5843_periodic" alt="" coords="645,1310,784,1338"/>
-<area shape="rect" id="node82" href="$hmc5843_8h.html#a46613c2c46ce03746f184a11df775d6a" title="hmc5843_idle_task" alt="" coords="389,1386,533,1414"/>
-<area shape="rect" id="node85" href="$hmc58xx_8c.html#afadf91048494baf761fa6cf8fda062d9" title="hmc58xx_i2c_tx_reg" alt="" coords="385,5,537,33"/>
-<area shape="rect" id="node87" href="$hmc58xx_8h.html#a883e49acd3049ead17c6c29a3b020c72" title="hmc58xx_read" alt="" coords="404,55,519,83"/>
-<area shape="rect" id="node89" href="$itg3200_8c.html#a7b349504704c56277b218842850b117c" title="itg3200_i2c_tx_reg" alt="" coords="391,106,532,134"/>
-<area shape="rect" id="node91" href="$itg3200_8h.html#afc931399829e2d90c671d326e016329a" title="itg3200_read" alt="" coords="408,157,515,185"/>
-<area shape="rect" id="node93" href="$lsm303dlhc_8c.html#a111ef18370e5a6b276e765795ac4c3a2" title="lsm303dlhc_i2c_tx_reg" alt="" coords="379,207,544,235"/>
-<area shape="rect" id="node95" href="$lsm303dlhc_8h.html#a61023404c121ad141fab2d1aefbe1fb1" title="lsm303dlhc_read" alt="" coords="396,258,527,286"/>
-<area shape="rect" id="node97" href="$actuators__asctec__v2_8h.html#a18a8926daf19ec365257e7ad661540a0" title="actuators_asctec_v2_set" alt="" coords="371,309,552,337"/>
-<area shape="rect" id="node99" href="$actuators__mkk__v2_8h.html#a802c42c367c345d44b0fb05171816141" title="actuators_mkk_v2_set" alt="" coords="379,359,544,387"/>
-<area shape="rect" id="node101" href="$actuators__skiron_8h.html#a3a40f71f6dba7faf29f5c8b336a12c4a" title="actuators_skiron_set" alt="" coords="384,410,539,438"/>
-<area shape="rect" id="node7" href="$lisa__l_2baro__board_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00" title="baro_periodic" alt="" coords="868,223,975,251"/>
-<area shape="rect" id="node11" href="$lisa__l_2baro__board_8c.html#a50dada9f7353526950b740090bbf6728" title="baro_board_send_config_abs" alt="" coords="611,223,819,251"/>
-<area shape="rect" id="node14" href="$lisa__l_2baro__board_8c.html#a2fa4b2580e3835ed8ab3e5ad82051f2e" title="baro_board_send_config_diff" alt="" coords="613,274,816,302"/>
-<area shape="rect" id="node27" href="$modules_2ins_2ins__arduimu_8c.html#a71ab195043b0eef3d99d90fe9d227f1c" title="ArduIMU_periodicGPS" alt="" coords="635,695,795,723"/>
-<area shape="rect" id="node29" href="$generic__com_8h.html#aa0f6db51f359937bdb56324a3b647175" title="generic_com_periodic" alt="" coords="635,746,795,774"/>
-<area shape="rect" id="node31" href="$generic__com_8h.html#af7b48d899c3f35e8c2ba310486c083a2" title="stop_com" alt="" coords="672,797,757,825"/>
-<area shape="rect" id="node33" href="$humid__htm__b71_8h.html#aef985345300849c33368b867ae5691ba" title="humid_htm_start" alt="" coords="649,847,780,875"/>
-<area shape="rect" id="node35" href="$humid__pcap01_8h.html#ab2cb1ad8c696c29efe17a06b6c53d01f" title="writePCAP01_SRAM" alt="" coords="643,391,787,419"/>
-<area shape="rect" id="node37" href="$humid__pcap01_8h.html#a41ac74dd5df0cd0a1c7f44b9f1172653" title="PCAP01_Control. " alt="" coords="652,442,777,470"/>
-<area shape="rect" id="node39" href="$humid__pcap01_8h.html#a80a01a1c49c72c0fc97cf7f43a7ad726" title="pcap01writeRegister" alt="" coords="640,493,789,521"/>
-<area shape="rect" id="node41" href="$humid__sht__i2c_8h.html#a1ee81659bc27e2a5d7e769639a5503f7" title="humid_sht_periodic_i2c" alt="" coords="629,898,800,926"/>
-<area shape="rect" id="node43" href="$humid__sht__i2c_8h.html#a9250bbec811cdbcc7c024e084dacc33f" title="humid_sht_event_i2c" alt="" coords="636,949,793,977"/>
-<area shape="rect" id="node45" href="$ir__mlx_8h.html#a04ee1c3eac1d77cc60f05955f5f4e5f2" title="ir_mlx_periodic" alt="" coords="656,999,773,1027"/>
-<area shape="rect" id="node47" href="$temp__tmp102_8h.html#ac75f01dc11a58b9e4d93939bcc68f112" title="tmp102_init" alt="" coords="665,543,764,571"/>
-<area shape="rect" id="node49" href="$wind__gfi_8h.html#a01df5bb8d91c672814726797d2ac05e5" title="wind_gfi_periodic" alt="" coords="651,594,779,622"/>
-<area shape="rect" id="node51" href="$wind__gfi_8h.html#a14f55e8dba7acc117480142381ac2b14" title="wind_gfi_event" alt="" coords="657,1050,772,1078"/>
-<area shape="rect" id="node53" href="$MPPT_8c.html#a1a77f26b064f914c26b738def5b6d5fb" title="MPPT_ask" alt="" coords="672,645,757,673"/>
-<area shape="rect" id="node107" href="$lpc21_2mcu__periph_2i2c__arch_8c.html#a900cc057905958b330a39d51c86203a0" title="I2cFail" alt="" coords="432,1487,491,1515"/>
-<area shape="rect" id="node110" href="$lpc21_2mcu__periph_2i2c__arch_8c.html#a9d8406f02daf5d8461ce53d7d97c3cfa" title="I2cSendStop" alt="" coords="411,1538,512,1566"/>
+<area shape="rect" id="node2" href="$group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="189,717,279,744"/>
+<area shape="rect" id="node47" href="$lpc21_2mcu__periph_2i2c__arch_8c.html#a512c156108b054d32fb4e221d2e057f7" title="I2cAutomaton" alt="" coords="656,1487,768,1513"/>
+<area shape="rect" id="node48" href="$lpc21_2mcu__periph_2i2c__arch_8c.html#a01409add519ec96f88feb3cd5f00740b" title="I2cEndOfTransaction" alt="" coords="159,1487,309,1513"/>
+<area shape="rect" id="node3" href="$lisa__l_2baro__board_8c.html#a0142e6ef7cb26ef8fc63b27b0a3f055f" title="baro_board_send_reset" alt="" coords="625,173,799,200"/>
+<area shape="rect" id="node5" href="$lisa__l_2baro__board_8c.html#a6c5d28296d0273908662b993468d73cb" title="baro_board_write_to\l_register" alt="" coords="383,563,535,605"/>
+<area shape="rect" id="node8" href="$lisa__l_2baro__board_8c.html#a0c000c34c542d400cd2a45608f714d12" title="baro_board_read_from\l_register" alt="" coords="375,681,543,722"/>
+<area shape="rect" id="node9" href="$lisa__l_2baro__board_8c.html#ae280d0cac96760be078c903045aee6c6" title="baro_board_set_current\l_register" alt="" coords="625,326,799,367"/>
+<area shape="rect" id="node10" href="$lisa__l_2baro__board_8c.html#a91e7585497fa861959910aa79a06c95a" title="baro_board_read_from\l_current_register" alt="" coords="628,107,796,149"/>
+<area shape="rect" id="node11" href="$group__i2c.html#ga68659e03504627925829f2f12c2ec6d2" title="Submit a write only transaction. " alt="" coords="408,747,509,773"/>
+<area shape="rect" id="node26" href="$group__i2c.html#ga9bdc2f5162d3e77dd58b7541ddcbe5d1" title="Submit a read only transaction. " alt="" coords="412,848,505,875"/>
+<area shape="rect" id="node27" href="$group__i2c.html#gae029fe6bf43eaf9e46428fec7e7b91c7" title="Submit a write/read transaction. " alt="" coords="402,797,515,824"/>
+<area shape="rect" id="node28" href="$i2c__abuse__test_8c.html#a730009caebd8f50471432adbc55d7732" title="i2c_abuse_send_transaction" alt="" coords="357,949,560,976"/>
+<area shape="rect" id="node29" href="$i2c__abuse__test_8h.html#a70dbb3f79a41f5e301aee164bfeaf7de" title="event_i2c_abuse_test" alt="" coords="631,1101,793,1128"/>
+<area shape="rect" id="node30" href="$config__mkk__v2_8h.html#ac185d9a5e71b91184afbb07eac530ab0" title="config_mkk_v2_read\l_eeprom" alt="" coords="383,1001,535,1042"/>
+<area shape="rect" id="node31" href="$config__mkk__v2_8h.html#a944c5b23198b8a50eb595a483c9b4408" title="config_mkk_v2_send\l_eeprom" alt="" coords="381,1066,536,1107"/>
+<area shape="rect" id="node32" href="$adxl345__i2c_8c.html#a3a2e564f46dd67289f4098089a6de76b" title="adxl345_i2c_tx_reg" alt="" coords="387,1132,531,1159"/>
+<area shape="rect" id="node33" href="$adxl345__i2c_8h.html#a090f88095fe86b3d1f3f0b82cddff295" title="adxl345_i2c_read" alt="" coords="392,1183,525,1209"/>
+<area shape="rect" id="node34" href="$ami601_8h.html#a71d937e3a4fb4dd1db1861fa6711b417" title="ami601_read" alt="" coords="405,1233,512,1260"/>
+<area shape="rect" id="node35" href="$hmc5843_8c.html#a179b6346fe1a63338f44c42fcda2fcf8" title="send_config" alt="" coords="409,1335,508,1361"/>
+<area shape="rect" id="node36" href="$hmc5843_8h.html#ab17f5e43fbd1dcadea20ede30e06568b" title="hmc5843_periodic" alt="" coords="643,1309,781,1336"/>
+<area shape="rect" id="node37" href="$hmc5843_8h.html#a46613c2c46ce03746f184a11df775d6a" title="hmc5843_idle_task" alt="" coords="386,1385,531,1412"/>
+<area shape="rect" id="node38" href="$hmc58xx_8c.html#afadf91048494baf761fa6cf8fda062d9" title="hmc58xx_i2c_tx_reg" alt="" coords="383,5,535,32"/>
+<area shape="rect" id="node39" href="$hmc58xx_8h.html#a883e49acd3049ead17c6c29a3b020c72" title="hmc58xx_read" alt="" coords="401,56,517,83"/>
+<area shape="rect" id="node40" href="$itg3200_8c.html#a7b349504704c56277b218842850b117c" title="itg3200_i2c_tx_reg" alt="" coords="387,107,530,133"/>
+<area shape="rect" id="node41" href="$itg3200_8h.html#afc931399829e2d90c671d326e016329a" title="itg3200_read" alt="" coords="405,157,512,184"/>
+<area shape="rect" id="node42" href="$lsm303dlhc_8c.html#a111ef18370e5a6b276e765795ac4c3a2" title="lsm303dlhc_i2c_tx_reg" alt="" coords="375,208,542,235"/>
+<area shape="rect" id="node43" href="$lsm303dlhc_8h.html#a61023404c121ad141fab2d1aefbe1fb1" title="lsm303dlhc_read" alt="" coords="393,259,524,285"/>
+<area shape="rect" id="node44" href="$actuators__asctec__v2_8h.html#a18a8926daf19ec365257e7ad661540a0" title="actuators_asctec_v2_set" alt="" coords="368,309,549,336"/>
+<area shape="rect" id="node45" href="$actuators__mkk__v2_8h.html#a802c42c367c345d44b0fb05171816141" title="actuators_mkk_v2_set" alt="" coords="375,360,542,387"/>
+<area shape="rect" id="node46" href="$actuators__skiron_8h.html#a3a40f71f6dba7faf29f5c8b336a12c4a" title="actuators_skiron_set" alt="" coords="381,411,536,437"/>
+<area shape="rect" id="node4" href="$lisa__l_2baro__board_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00" title="baro_periodic" alt="" coords="864,224,972,251"/>
+<area shape="rect" id="node6" href="$lisa__l_2baro__board_8c.html#a50dada9f7353526950b740090bbf6728" title="baro_board_send_config_abs" alt="" coords="608,224,816,251"/>
+<area shape="rect" id="node7" href="$lisa__l_2baro__board_8c.html#a2fa4b2580e3835ed8ab3e5ad82051f2e" title="baro_board_send_config_diff" alt="" coords="610,275,814,301"/>
+<area shape="rect" id="node12" href="$modules_2ins_2ins__arduimu_8c.html#a71ab195043b0eef3d99d90fe9d227f1c" title="ArduIMU_periodicGPS" alt="" coords="632,696,792,723"/>
+<area shape="rect" id="node13" href="$generic__com_8h.html#aa0f6db51f359937bdb56324a3b647175" title="generic_com_periodic" alt="" coords="631,747,793,773"/>
+<area shape="rect" id="node14" href="$generic__com_8h.html#af7b48d899c3f35e8c2ba310486c083a2" title="stop_com" alt="" coords="669,797,755,824"/>
+<area shape="rect" id="node15" href="$humid__htm__b71_8h.html#aef985345300849c33368b867ae5691ba" title="humid_htm_start" alt="" coords="646,848,778,875"/>
+<area shape="rect" id="node16" href="$humid__pcap01_8h.html#ab2cb1ad8c696c29efe17a06b6c53d01f" title="writePCAP01_SRAM" alt="" coords="639,392,785,419"/>
+<area shape="rect" id="node17" href="$humid__pcap01_8h.html#a41ac74dd5df0cd0a1c7f44b9f1172653" title="PCAP01_Control. " alt="" coords="649,443,775,469"/>
+<area shape="rect" id="node18" href="$humid__pcap01_8h.html#a80a01a1c49c72c0fc97cf7f43a7ad726" title="pcap01writeRegister" alt="" coords="637,493,787,520"/>
+<area shape="rect" id="node19" href="$humid__sht__i2c_8h.html#a1ee81659bc27e2a5d7e769639a5503f7" title="humid_sht_periodic_i2c" alt="" coords="627,899,797,925"/>
+<area shape="rect" id="node20" href="$humid__sht__i2c_8h.html#a9250bbec811cdbcc7c024e084dacc33f" title="humid_sht_event_i2c" alt="" coords="633,949,791,976"/>
+<area shape="rect" id="node21" href="$ir__mlx_8h.html#a04ee1c3eac1d77cc60f05955f5f4e5f2" title="ir_mlx_periodic" alt="" coords="653,1000,771,1027"/>
+<area shape="rect" id="node22" href="$temp__tmp102_8h.html#ac75f01dc11a58b9e4d93939bcc68f112" title="tmp102_init" alt="" coords="663,544,761,571"/>
+<area shape="rect" id="node23" href="$wind__gfi_8h.html#a01df5bb8d91c672814726797d2ac05e5" title="wind_gfi_periodic" alt="" coords="647,595,777,621"/>
+<area shape="rect" id="node24" href="$wind__gfi_8h.html#a14f55e8dba7acc117480142381ac2b14" title="wind_gfi_event" alt="" coords="655,1051,769,1077"/>
+<area shape="rect" id="node25" href="$MPPT_8c.html#a1a77f26b064f914c26b738def5b6d5fb" title="MPPT_ask" alt="" coords="669,645,755,672"/>
+<area shape="rect" id="node49" href="$lpc21_2mcu__periph_2i2c__arch_8c.html#a900cc057905958b330a39d51c86203a0" title="I2cFail" alt="" coords="429,1487,489,1513"/>
+<area shape="rect" id="node50" href="$lpc21_2mcu__periph_2i2c__arch_8c.html#a9d8406f02daf5d8461ce53d7d97c3cfa" title="I2cSendStop" alt="" coords="407,1537,510,1564"/>
 </map>

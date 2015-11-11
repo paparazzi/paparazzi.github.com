@@ -1,51 +1,51 @@
 <map id="sw/airborne/arch/stm32/mcu_periph/sys_time_arch.h" name="sw/airborne/arch/stm32/mcu_periph/sys_time_arch.h">
-<area shape="rect" id="node3" href="$sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="4828,99,5001,143"/>
-<area shape="rect" id="node5" href="$linux_2mcu__periph_2sys__time__arch_8c.html" title="sw/airborne/arch/linux\l/mcu_periph/sys_time_arch.c" alt="" coords="5,209,213,253"/>
-<area shape="rect" id="node7" href="$lpc21_2mcu__periph_2sys__time__arch_8c.html" title="LPC21xx timing functions. " alt="" coords="237,209,445,253"/>
-<area shape="rect" id="node9" href="$lpc21_2mcu__periph_2sys__time__arch_8h.html" title="LPC21xx timing functions. " alt="" coords="469,209,677,253"/>
-<area shape="rect" id="node11" href="$lpc21_2modules_2core_2trigger__ext__hw_8c.html" title="sw/airborne/arch/lpc21\l/modules/core/trigger\l_ext_hw.c" alt="" coords="701,201,867,261"/>
-<area shape="rect" id="node13" href="$trig__ext__hw_8c.html" title="sw/airborne/arch/lpc21\l/modules/sensors/trig\l_ext_hw.c" alt="" coords="891,201,1056,261"/>
-<area shape="rect" id="node15" href="$lpc21_2peripherals_2ms2100__arch_8c.html" title="LPC21xx specific functions for the ms2100 magnetic sensor from PNI. " alt="" coords="1080,209,1277,253"/>
-<area shape="rect" id="node17" href="$lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h.html" title="sw/airborne/arch/lpc21\l/subsystems/actuators\l/actuators_pwm_arch.h" alt="" coords="1301,201,1472,261"/>
-<area shape="rect" id="node19" href="$servos__4015__hw_8c.html" title="sw/airborne/arch/lpc21\l/subsystems/actuators\l/servos_4015_hw.c" alt="" coords="1496,201,1664,261"/>
-<area shape="rect" id="node21" href="$servos__4015__hw_8h.html" title="sw/airborne/arch/lpc21\l/subsystems/actuators\l/servos_4015_hw.h" alt="" coords="1688,201,1856,261"/>
-<area shape="rect" id="node23" href="$servos__4015__hw__new_8c.html" title="sw/airborne/arch/lpc21\l/subsystems/actuators\l/servos_4015_hw_new.c" alt="" coords="1880,201,2053,261"/>
-<area shape="rect" id="node25" href="$lpc21_2subsystems_2actuators_2servos__4015__MAT__hw_8h.html" title="sw/airborne/arch/lpc21\l/subsystems/actuators\l/servos_4015_MAT_hw.h" alt="" coords="2077,201,2251,261"/>
-<area shape="rect" id="node27" href="$lpc21_2subsystems_2actuators_2servos__4017__hw_8h.html" title="sw/airborne/arch/lpc21\l/subsystems/actuators\l/servos_4017_hw.h" alt="" coords="2275,201,2443,261"/>
-<area shape="rect" id="node29" href="$lpc21_2subsystems_2actuators_2servos__ppm__hw_8h.html" title="Efficient driving of MAT0.1 (SERVO_CLOCK_PIN) using TIMER0 to produce PPM for a R/C receiver which ha..." alt="" coords="2467,201,2635,261"/>
-<area shape="rect" id="node31" href="$lpc21_2subsystems_2radio__control_2ppm__arch_8h.html" title="LPC21xx ppm decoder. " alt="" coords="2659,201,2848,261"/>
-<area shape="rect" id="node33" href="$sim_2mcu__periph_2sys__time__arch_8c.html" title="Handling of sys_time in sim. " alt="" coords="2872,201,3035,261"/>
-<area shape="rect" id="node35" href="$stm32_2mcu__periph_2i2c__arch_8c.html" title="Handling of I2C hardware for STM32. " alt="" coords="3059,209,3229,253"/>
-<area shape="rect" id="node37" href="$stm32_2mcu__periph_2pwm__input__arch_8c.html" title="handling of smt32 PWM input using a timer with capture. " alt="" coords="3253,201,3427,261"/>
-<area shape="rect" id="node39" href="$stm32_2mcu__periph_2sys__time__arch_8c.html" title="STM32 timing functions. " alt="" coords="3451,209,3659,253"/>
-<area shape="rect" id="node42" href="$stm32_2peripherals_2ms2100__arch_8c.html" title="STM32 specific functions for the ms2100 magnetic sensor from PNI. " alt="" coords="3683,209,3880,253"/>
-<area shape="rect" id="node44" href="$stm32_2subsystems_2radio__control_2spektrum__arch_8c.html" title="sw/airborne/arch/stm32\l/subsystems/radio_control\l/spektrum_arch.c" alt="" coords="3904,201,4093,261"/>
-<area shape="rect" id="node46" href="$stm32_2uart__tunnel_8c.html" title="sw/airborne/arch/stm32\l/uart_tunnel.c" alt="" coords="4117,209,4288,253"/>
-<area shape="rect" id="node48" href="$boards_2ardrone_2actuators_8c.html" title="Actuator driver for ardrone2 version. " alt="" coords="4312,209,4464,253"/>
-<area shape="rect" id="node50" href="$baro__board__ms5611__i2c_8c.html" title="Driver for onboard MS5611 baro via I2C. " alt="" coords="4488,209,4683,253"/>
-<area shape="rect" id="node52" href="$baro__board__ms5611__spi_8c.html" title="Driver for onboard MS5611 baro via SPI. " alt="" coords="4707,209,4901,253"/>
-<area shape="rect" id="node54" href="$imu__krooz__memsic_8c.html" title="Driver for the IMU on the KroozSD Big Rotorcraft Edition board. " alt="" coords="4925,209,5125,253"/>
-<area shape="rect" id="node56" href="$demo__ahrs__actuators_8c.html" title="Demo prog with ahrs and simple roll/pitch commands to actuators. " alt="" coords="5149,209,5368,253"/>
-<area shape="rect" id="node58" href="$main__ap_8c.html" title="AP ( AutoPilot ) tasks. " alt="" coords="5392,209,5552,253"/>
-<area shape="rect" id="node60" href="$main__chibios__libopencm3_8c.html" title="sw/airborne/firmwares\l/fixedwing/main_chibios\l_libopencm3.c" alt="" coords="5576,201,5747,261"/>
-<area shape="rect" id="node62" href="$main__fbw_8c.html" title="FBW ( FlyByWire ) process. " alt="" coords="5771,209,5931,253"/>
-<area shape="rect" id="node64" href="$guidance__indi_8c.html" title="sw/airborne/firmwares\l/rotorcraft/guidance\l/guidance_indi.c" alt="" coords="5955,201,6115,261"/>
-<area shape="rect" id="node66" href="$rotorcraft_2main_8c.html" title="Rotorcraft main loop. " alt="" coords="6139,209,6299,253"/>
-<area shape="rect" id="node68" href="$stabilization__attitude__rc__setpoint_8c.html" title="Read an attitude setpoint from the RC. " alt="" coords="6323,193,6488,269"/>
-<area shape="rect" id="node70" href="$setup__actuators_8c.html" title="sw/airborne/firmwares\l/setup/setup_actuators.c" alt="" coords="6512,209,6693,253"/>
-<area shape="rect" id="node72" href="$usb__tunnel_8c.html" title="USB tunnel application. " alt="" coords="6717,209,6877,253"/>
-<area shape="rect" id="node74" href="$main__demo2_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo2.c" alt="" coords="6901,209,7072,253"/>
-<area shape="rect" id="node76" href="$main__demo3_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo3.c" alt="" coords="7096,209,7267,253"/>
-<area shape="rect" id="node78" href="$main__demo4_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo4.c" alt="" coords="7291,209,7461,253"/>
-<area shape="rect" id="node80" href="$main__demo5_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo5.c" alt="" coords="7485,209,7656,253"/>
-<area shape="rect" id="node82" href="$main__demo6_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo6.c" alt="" coords="7680,209,7851,253"/>
-<area shape="rect" id="node84" href="$sys__time_8c.html" title="Architecture independent timing functions. " alt="" coords="7875,209,8048,253"/>
-<area shape="rect" id="node86" href="$video__thread_8c.html" title="sw/airborne/modules\l/computer_vision/video\l_thread.c" alt="" coords="8072,201,8240,261"/>
-<area shape="rect" id="node88" href="$pwm__meas_8c.html" title="Wrapper to access pwm_input mcu peripheral from other modules. " alt="" coords="8264,209,8419,253"/>
-<area shape="rect" id="node90" href="$sys__mon_8c.html" title="sw/airborne/modules\l/core/sys_mon.c" alt="" coords="8443,209,8597,253"/>
-<area shape="rect" id="node92" href="$mavlink_8c.html" title="Basic MAVLink datalink implementation. " alt="" coords="8621,209,8776,253"/>
-<area shape="rect" id="node94" href="$xtend__rssi_8c.html" title="This measures the rssi pwm signal from a Digi XTend radio modem and sends a message with the info..." alt="" coords="8800,209,8955,253"/>
-<area shape="rect" id="node96" href="$dc_8c.html" title="Standard Digital Camera Control Interface. " alt="" coords="8979,209,9133,253"/>
-<area shape="rect" id="node98" href="$hackhd_8c.html" title="Digital video/photo recorder HackHD control. " alt="" coords="9157,209,9317,253"/>
-<area shape="rect" id="node100" href="$max7456_8c.html" title="Maxim MAX7456 single&#45;channel monochrome on&#45;screen display driver. " alt="" coords="9341,209,9496,253"/>
+<area shape="rect" id="node2" href="$sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="4846,95,5021,136"/>
+<area shape="rect" id="node3" href="$linux_2mcu__periph_2sys__time__arch_8c.html" title="sw/airborne/arch/linux\l/mcu_periph/sys_time_arch.c" alt="" coords="5,199,213,240"/>
+<area shape="rect" id="node4" href="$lpc21_2mcu__periph_2sys__time__arch_8c.html" title="LPC21xx timing functions. " alt="" coords="237,199,445,240"/>
+<area shape="rect" id="node5" href="$lpc21_2mcu__periph_2sys__time__arch_8h.html" title="LPC21xx timing functions. " alt="" coords="470,199,679,240"/>
+<area shape="rect" id="node6" href="$lpc21_2modules_2core_2trigger__ext__hw_8c.html" title="sw/airborne/arch/lpc21\l/modules/core/trigger\l_ext_hw.c" alt="" coords="704,191,869,247"/>
+<area shape="rect" id="node7" href="$trig__ext__hw_8c.html" title="sw/airborne/arch/lpc21\l/modules/sensors/trig\l_ext_hw.c" alt="" coords="893,191,1059,247"/>
+<area shape="rect" id="node8" href="$lpc21_2peripherals_2ms2100__arch_8c.html" title="LPC21xx specific functions for the ms2100 magnetic sensor from PNI. " alt="" coords="1082,199,1281,240"/>
+<area shape="rect" id="node9" href="$lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h.html" title="sw/airborne/arch/lpc21\l/subsystems/actuators\l/actuators_pwm_arch.h" alt="" coords="1305,191,1476,247"/>
+<area shape="rect" id="node10" href="$servos__4015__hw_8c.html" title="sw/airborne/arch/lpc21\l/subsystems/actuators\l/servos_4015_hw.c" alt="" coords="1500,191,1668,247"/>
+<area shape="rect" id="node11" href="$servos__4015__hw_8h.html" title="sw/airborne/arch/lpc21\l/subsystems/actuators\l/servos_4015_hw.h" alt="" coords="1692,191,1860,247"/>
+<area shape="rect" id="node12" href="$servos__4015__hw__new_8c.html" title="sw/airborne/arch/lpc21\l/subsystems/actuators\l/servos_4015_hw_new.c" alt="" coords="1884,191,2057,247"/>
+<area shape="rect" id="node13" href="$lpc21_2subsystems_2actuators_2servos__4015__MAT__hw_8h.html" title="sw/airborne/arch/lpc21\l/subsystems/actuators\l/servos_4015_MAT_hw.h" alt="" coords="2082,191,2257,247"/>
+<area shape="rect" id="node14" href="$lpc21_2subsystems_2actuators_2servos__4017__hw_8h.html" title="sw/airborne/arch/lpc21\l/subsystems/actuators\l/servos_4017_hw.h" alt="" coords="2281,191,2449,247"/>
+<area shape="rect" id="node15" href="$lpc21_2subsystems_2actuators_2servos__ppm__hw_8h.html" title="Efficient driving of MAT0.1 (SERVO_CLOCK_PIN) using TIMER0 to produce PPM for a R/C receiver which ha..." alt="" coords="2473,191,2641,247"/>
+<area shape="rect" id="node16" href="$lpc21_2subsystems_2radio__control_2ppm__arch_8h.html" title="LPC21xx ppm decoder. " alt="" coords="2666,191,2857,247"/>
+<area shape="rect" id="node17" href="$sim_2mcu__periph_2sys__time__arch_8c.html" title="Handling of sys_time in sim. " alt="" coords="2881,191,3044,247"/>
+<area shape="rect" id="node18" href="$stm32_2mcu__periph_2i2c__arch_8c.html" title="Handling of I2C hardware for STM32. " alt="" coords="3069,199,3241,240"/>
+<area shape="rect" id="node19" href="$stm32_2mcu__periph_2pwm__input__arch_8c.html" title="handling of smt32 PWM input using a timer with capture. " alt="" coords="3265,191,3439,247"/>
+<area shape="rect" id="node20" href="$stm32_2mcu__periph_2sys__time__arch_8c.html" title="STM32 timing functions. " alt="" coords="3464,199,3672,240"/>
+<area shape="rect" id="node21" href="$stm32_2peripherals_2ms2100__arch_8c.html" title="STM32 specific functions for the ms2100 magnetic sensor from PNI. " alt="" coords="3697,199,3895,240"/>
+<area shape="rect" id="node22" href="$stm32_2subsystems_2radio__control_2spektrum__arch_8c.html" title="sw/airborne/arch/stm32\l/subsystems/radio_control\l/spektrum_arch.c" alt="" coords="3919,191,4110,247"/>
+<area shape="rect" id="node23" href="$stm32_2uart__tunnel_8c.html" title="sw/airborne/arch/stm32\l/uart_tunnel.c" alt="" coords="4134,199,4306,240"/>
+<area shape="rect" id="node24" href="$boards_2ardrone_2actuators_8c.html" title="Actuator driver for ardrone2 version. " alt="" coords="4331,199,4483,240"/>
+<area shape="rect" id="node25" href="$baro__board__ms5611__i2c_8c.html" title="Driver for onboard MS5611 baro via I2C. " alt="" coords="4507,199,4701,240"/>
+<area shape="rect" id="node26" href="$baro__board__ms5611__spi_8c.html" title="Driver for onboard MS5611 baro via SPI. " alt="" coords="4725,199,4920,240"/>
+<area shape="rect" id="node27" href="$imu__krooz__memsic_8c.html" title="Driver for the IMU on the KroozSD Big Rotorcraft Edition board. " alt="" coords="4944,199,5144,240"/>
+<area shape="rect" id="node28" href="$demo__ahrs__actuators_8c.html" title="Demo prog with ahrs and simple roll/pitch commands to actuators. " alt="" coords="5168,199,5387,240"/>
+<area shape="rect" id="node29" href="$main__ap_8c.html" title="AP ( AutoPilot ) tasks. " alt="" coords="5411,199,5573,240"/>
+<area shape="rect" id="node30" href="$main__chibios__libopencm3_8c.html" title="sw/airborne/firmwares\l/fixedwing/main_chibios\l_libopencm3.c" alt="" coords="5597,191,5768,247"/>
+<area shape="rect" id="node31" href="$main__fbw_8c.html" title="FBW ( FlyByWire ) process. " alt="" coords="5793,199,5954,240"/>
+<area shape="rect" id="node32" href="$guidance__indi_8c.html" title="sw/airborne/firmwares\l/rotorcraft/guidance\l/guidance_indi.c" alt="" coords="5978,191,6139,247"/>
+<area shape="rect" id="node33" href="$rotorcraft_2main_8c.html" title="Rotorcraft main loop. " alt="" coords="6163,199,6325,240"/>
+<area shape="rect" id="node34" href="$stabilization__attitude__rc__setpoint_8c.html" title="Read an attitude setpoint from the RC. " alt="" coords="6349,184,6515,255"/>
+<area shape="rect" id="node35" href="$setup__actuators_8c.html" title="sw/airborne/firmwares\l/setup/setup_actuators.c" alt="" coords="6540,199,6721,240"/>
+<area shape="rect" id="node36" href="$usb__tunnel_8c.html" title="USB tunnel application. " alt="" coords="6746,199,6907,240"/>
+<area shape="rect" id="node37" href="$main__demo2_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo2.c" alt="" coords="6932,199,7103,240"/>
+<area shape="rect" id="node38" href="$main__demo3_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo3.c" alt="" coords="7127,199,7297,240"/>
+<area shape="rect" id="node39" href="$main__demo4_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo4.c" alt="" coords="7321,199,7492,240"/>
+<area shape="rect" id="node40" href="$main__demo5_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo5.c" alt="" coords="7516,199,7687,240"/>
+<area shape="rect" id="node41" href="$main__demo6_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo6.c" alt="" coords="7711,199,7881,240"/>
+<area shape="rect" id="node42" href="$sys__time_8c.html" title="Architecture independent timing functions. " alt="" coords="7906,199,8081,240"/>
+<area shape="rect" id="node43" href="$video__thread_8c.html" title="sw/airborne/modules\l/computer_vision/video\l_thread.c" alt="" coords="8105,191,8274,247"/>
+<area shape="rect" id="node44" href="$pwm__meas_8c.html" title="Wrapper to access pwm_input mcu peripheral from other modules. " alt="" coords="8299,199,8453,240"/>
+<area shape="rect" id="node45" href="$sys__mon_8c.html" title="sw/airborne/modules\l/core/sys_mon.c" alt="" coords="8477,199,8632,240"/>
+<area shape="rect" id="node46" href="$mavlink_8c.html" title="Basic MAVLink datalink implementation. " alt="" coords="8656,199,8811,240"/>
+<area shape="rect" id="node47" href="$xtend__rssi_8c.html" title="This measures the rssi pwm signal from a Digi XTend radio modem and sends a message with the info..." alt="" coords="8835,199,8991,240"/>
+<area shape="rect" id="node48" href="$dc_8c.html" title="Standard Digital Camera Control Interface. " alt="" coords="9016,199,9171,240"/>
+<area shape="rect" id="node49" href="$hackhd_8c.html" title="Digital video/photo recorder HackHD control. " alt="" coords="9195,199,9355,240"/>
+<area shape="rect" id="node50" href="$max7456_8c.html" title="Maxim MAX7456 single&#45;channel monochrome on&#45;screen display driver. " alt="" coords="9379,199,9533,240"/>
 </map>

@@ -26,6 +26,7 @@ var guidance__v__ref_8h =
     [ "gv_set_ref", "guidance__v__ref_8h.html#a3a0f74494b5860403484eca3b6e63de1", null ],
     [ "gv_update_ref_from_z_sp", "guidance__v__ref_8h.html#aa913f06f6ed21d9c65b587c9791ecd08", null ],
     [ "gv_update_ref_from_zd_sp", "guidance__v__ref_8h.html#ac3e33519086aecdad63f5113569fa36f", null ],
+    [ "accel", "guidance__v__ref_8h.html#a2b4015b0c64ec741a14e949231b52c0f", null ],
     [ "gv_z_ref", "guidance__v__ref_8h.html#a61ea35c28ade47f77f09a012aa0f4fe4", null ],
     [ "gv_zd_ref", "guidance__v__ref_8h.html#af5b4bf2932d63454e537de13ae5f58f3", null ],
     [ "gv_zdd_ref", "guidance__v__ref_8h.html#a191284ac9220e67a39aff1ddf6c818eb", null ],

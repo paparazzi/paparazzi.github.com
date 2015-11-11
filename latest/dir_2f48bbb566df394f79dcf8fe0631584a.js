@@ -59,8 +59,6 @@ var dir_2f48bbb566df394f79dcf8fe0631584a =
     [ "met_module.h", "met__module_8h.html", "met__module_8h" ],
     [ "pressure_board_navarro.c", "pressure__board__navarro_8c.html", "pressure__board__navarro_8c" ],
     [ "pressure_board_navarro.h", "pressure__board__navarro_8h.html", "pressure__board__navarro_8h" ],
-    [ "stereocam.c", "stereocam_8c.html", "stereocam_8c" ],
-    [ "stereocam.h", "stereocam_8h.html", "stereocam_8h" ],
     [ "temp_adc.c", "temp__adc_8c.html", "temp__adc_8c" ],
     [ "temp_adc.h", "temp__adc_8h.html", "temp__adc_8h" ],
     [ "trigger_ext.c", "sensors_2trigger__ext_8c.html", "sensors_2trigger__ext_8c" ],
