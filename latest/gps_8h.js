@@ -32,6 +32,7 @@ var gps_8h =
       [ "svinfos", "gps_8h.html#adfb660c78ce0e28566c6f3dc6ad6202e", null ],
       [ "tow", "gps_8h.html#a0568d6804839a44b26cd61ffd86046ad", null ],
       [ "utm_pos", "gps_8h.html#a2cf3685a890a6200b334b2c399102ffa", null ],
+      [ "valid_fields", "gps_8h.html#aa49d58cc2ab1865f2a3c938a405a392a", null ],
       [ "week", "gps_8h.html#af6e062931b5db52e395d9f8e9b5d798c", null ]
     ] ],
     [ "GpsTimeSync", "gps_8h.html#structGpsTimeSync", [
@@ -47,6 +48,13 @@ var gps_8h =
     [ "GPS_NB_CHANNELS", "gps_8h.html#a63f1b81cf4a1e8e0fe80f065224826fe", null ],
     [ "gps_Reset", "gps_8h.html#abf1292ea8345480e9eb1408a7dbc08de", null ],
     [ "GPS_TIMEOUT", "gps_8h.html#a75e36ec8607f707f480ac824c7f793ef", null ],
+    [ "GPS_VALID_COURSE_BIT", "gps_8h.html#ae8fb92d17057871cd091ad4bc190c56f", null ],
+    [ "GPS_VALID_HMSL_BIT", "gps_8h.html#a8b875bead4dd17451916e12dd62e80bc", null ],
+    [ "GPS_VALID_POS_ECEF_BIT", "gps_8h.html#a855a661c77297e3df1645ea19abd9115", null ],
+    [ "GPS_VALID_POS_LLA_BIT", "gps_8h.html#a5acfeb40af4c70d72b8ddb222066fd37", null ],
+    [ "GPS_VALID_POS_UTM_BIT", "gps_8h.html#af31d3878b9af5c7c81cc659483a0ade2", null ],
+    [ "GPS_VALID_VEL_ECEF_BIT", "gps_8h.html#a44ba829d5293a0bdac16d9a92a93c47f", null ],
+    [ "GPS_VALID_VEL_NED_BIT", "gps_8h.html#a4531ee774c9d527018070ea34331b6ca", null ],
     [ "GpsFixValid", "gps_8h.html#aae01b53fbd555bc8954b7ba297cb2cae", null ],
     [ "GpsIsLost", "gps_8h.html#a3081afe8b82d023c748c40dfc49ff2f7", null ],
     [ "gps_has_been_good", "gps_8h.html#a8e225cfe10f0400b9af80d7aff55568d", null ],
@@ -55,6 +63,8 @@ var gps_8h =
     [ "gps_inject_data", "gps_8h.html#a92de5b7fc6f0e0c9c2a3f6aa1b175c6f", null ],
     [ "gps_periodic_check", "gps_8h.html#af6a16adfe8c9a84b13f49b4ceb681b30", null ],
     [ "gps_tow_from_sys_ticks", "gps_8h.html#ad68ada7274989a4c9f08bc06d74ee5bd", null ],
+    [ "utm_float_from_gps", "gps_8h.html#a28b79022b7830b709a35a6343895daa1", null ],
+    [ "utm_int_from_gps", "gps_8h.html#a4fff1fd94429e7d036ba27af86a8c5ed", null ],
     [ "gps", "gps_8h.html#a5cf954024f8e0433b21db7439c5bee9d", null ],
     [ "gps_time_sync", "gps_8h.html#a4cd3856a89c7a6a56135788fa9f33922", null ]
 ];

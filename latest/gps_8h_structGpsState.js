@@ -23,5 +23,6 @@ var gps_8h_structGpsState =
     [ "svinfos", "gps_8h.html#adfb660c78ce0e28566c6f3dc6ad6202e", null ],
     [ "tow", "gps_8h.html#a0568d6804839a44b26cd61ffd86046ad", null ],
     [ "utm_pos", "gps_8h.html#a2cf3685a890a6200b334b2c399102ffa", null ],
+    [ "valid_fields", "gps_8h.html#aa49d58cc2ab1865f2a3c938a405a392a", null ],
     [ "week", "gps_8h.html#af6e062931b5db52e395d9f8e9b5d798c", null ]
 ];

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('todo.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt><a class="anchor" id="_todo000032"></a>File <a class="el" href="abi_8h.html">abi.h</a>  </dt>
+<dt><a class="anchor" id="_todo000028"></a>File <a class="el" href="abi_8h.html">abi.h</a>  </dt>
 <dd>explain how to use ABI  </dd>
 <dt><a class="anchor" id="_todo000001"></a>Global <a class="el" href="adc_8h.html#a289883844d6749adab1cee5aabe41824">adc_buf_channel</a>  (uint8_t adc_channel, struct <a class="el" href="adc_8h.html#structadc__buf" title="Generic interface for all ADC hardware drivers, independent from microcontroller architecture. ">adc_buf</a> *s, uint8_t av_nb_sample)</dt>
 <dd>: fx a more general ADC  </dd>
@@ -114,9 +114,9 @@ $(document).ready(function(){initNavTree('todo.html','');});
 <dd>IRQ handling  </dd>
 <dt><a class="anchor" id="_todo000019"></a>File <a class="el" href="adxl345__spi_8c.html">adxl345_spi.c</a>  </dt>
 <dd>Use SPICallback to copy data from rx_buf when transaction is successful, instead of checking transaction status for SPITransSuccess in event loop. Problem is that in the callback we don't have a reference to the <a class="el" href="adxl345__spi_8h.html#structAdxl345__Spi">Adxl345_Spi</a> struct.  </dd>
-<dt><a class="anchor" id="_todo000033"></a>File <a class="el" href="ahrs__float__dcm__algebra_8h.html">ahrs_float_dcm_algebra.h</a>  </dt>
+<dt><a class="anchor" id="_todo000029"></a>File <a class="el" href="ahrs__float__dcm__algebra_8h.html">ahrs_float_dcm_algebra.h</a>  </dt>
 <dd>get rid of this and use pprz math lib.  </dd>
-<dt><a class="anchor" id="_todo000034"></a>Global <a class="el" href="ahrs__gx3_8h.html#ab455d990b4555c8eadb7413685cc96e5">ahrs_gx3_register</a>  (void)</dt>
+<dt><a class="anchor" id="_todo000030"></a>Global <a class="el" href="ahrs__gx3_8h.html#ab455d990b4555c8eadb7413685cc96e5">ahrs_gx3_register</a>  (void)</dt>
 <dd>: provide enable function  </dd>
 <dt><a class="anchor" id="_todo000017"></a>Global <a class="el" href="baro__ets_8c.html#a9e1cf0fde1a806764399e3902cb70c88">BARO_ETS_PRESSURE_OFFSET</a>  </dt>
 <dd>find real value)  </dd>
@@ -124,13 +124,13 @@ $(document).ready(function(){initNavTree('todo.html','');});
 <dd>check value At low altitudes pressure change is ~1.2 kPa for every 100 meters. So with a scale ADC-&gt;meters of 0.32 we get: 12 Pascal = 0.32 * ADC -&gt; SCALE = ~ 12 / 0.32 = 37.5  </dd>
 <dt><a class="anchor" id="_todo000002"></a>File <a class="el" href="linux_2mcu__periph_2gpio__arch_8h.html">gpio_arch.h</a>  </dt>
 <dd>implement gpio_set|clear  </dd>
-<dt><a class="anchor" id="_todo000035"></a>Global <a class="el" href="gps_8h.html#abf1292ea8345480e9eb1408a7dbc08de">gps_Reset</a>  (_val)</dt>
+<dt><a class="anchor" id="_todo000031"></a>Global <a class="el" href="gps_8h.html#abf1292ea8345480e9eb1408a7dbc08de">gps_Reset</a>  (_val)</dt>
 <dd>this still needs to call gps specific stuff  </dd>
 <dt><a class="anchor" id="_todo000007"></a>Global <a class="el" href="guidance__h_8c.html#a9e2d061988976558a79ea383a8f267c5">guidance_h_cmd_earth</a>  </dt>
 <dd>convert to real force command  </dd>
 <dt><a class="anchor" id="_todo000020"></a>File <a class="el" href="hmc58xx_8c.html">hmc58xx.c</a>  </dt>
 <dd>DRDY/IRQ handling  </dd>
-<dt><a class="anchor" id="_todo000036"></a>Global <a class="el" href="imu__um6_8c.html#ad32faae58e391642ec8048cb11011998">imu_impl_init</a>  (void)</dt>
+<dt><a class="anchor" id="_todo000032"></a>Global <a class="el" href="imu__um6_8c.html#ad32faae58e391642ec8048cb11011998">imu_impl_init</a>  (void)</dt>
 <dd><p class="startdd">drdy int handling for adxl345 </p>
 <p>eoc interrupt for itg3200, polling for now (including status reg) </p>
 <p>drdy int handling for adxl345 </p>
@@ -141,20 +141,12 @@ $(document).ready(function(){initNavTree('todo.html','');});
 <dd><p class="startdd">, properly implement or remove </p>
 <p class="enddd">: properly implement/fix a triggered attitude loop  </p>
 </dd>
-<dt><a class="anchor" id="_todo000041"></a>Global <a class="el" href="ins__int_8h.html#a54df8c17ccf7a20d6ca09ad0b8f45db3">ins_int_update_gps</a>  (struct <a class="el" href="gps_8h.html#structGpsState" title="data structure for GPS information ">GpsState</a> *gps_s)</dt>
+<dt><a class="anchor" id="_todo000037"></a>Global <a class="el" href="ins__int_8h.html#a54df8c17ccf7a20d6ca09ad0b8f45db3">ins_int_update_gps</a>  (struct <a class="el" href="gps_8h.html#structGpsState" title="data structure for GPS information ">GpsState</a> *gps_s)</dt>
 <dd>maybe use gps_s-&gt;ned_vel directly??  </dd>
 <dt><a class="anchor" id="_todo000021"></a>File <a class="el" href="itg3200_8c.html">itg3200.c</a>  </dt>
 <dd>DRDY/IRQ handling  </dd>
 <dt><a class="anchor" id="_todo000011"></a>Global <a class="el" href="high__speed__logger__direct__memory_8h.html#a6f5174eb7613f1835ca2b4075030cf7e">memory_read_id</a>  (void)</dt>
 <dd>change the cb function to actualy read the value returned  </dd>
-<dt><a class="anchor" id="_todo000022"></a>Global <a class="el" href="mpu60x0__i2c_8c.html#adad4e4b57f9dac456dc343b8ebdc2f6c">mpu60x0_configure_i2c_slaves</a>  (Mpu60x0ConfigSet mpu_set, void *mpu)</dt>
-<dd><p class="startdd">: only one slave so far. </p>
-<p class="enddd">: only one slave so far.  </p>
-</dd>
-<dt><a class="anchor" id="_todo000024"></a>Global <a class="el" href="mpu9250__i2c_8c.html#aeec91d1c3e5784a3ff93971ff11309ab">mpu9250_configure_i2c_slaves</a>  (Mpu9250ConfigSet mpu_set, void *mpu)</dt>
-<dd><p class="startdd">: only one slave so far. </p>
-<p class="enddd">: only one slave so far.  </p>
-</dd>
 <dt><a class="anchor" id="_todo000015"></a>File <a class="el" href="nav__line__osam_8c.html">nav_line_osam.c</a>  </dt>
 <dd>compare with normal flight line  </dd>
 <dt><a class="anchor" id="_todo000009"></a>Global <a class="el" href="stabilization__attitude__quat__transformations_8h.html#a875d6ee5cde39474c4ce13dd340cb262">quat_from_earth_cmd_f</a>  (struct <a class="el" href="group__math__algebra__float.html#structFloatQuat" title="Roation quaternion. ">FloatQuat</a> *quat, struct <a class="el" href="group__math__algebra__float.html#structFloatVect2">FloatVect2</a> *cmd, float heading)</dt>
@@ -163,9 +155,9 @@ $(document).ready(function(){initNavTree('todo.html','');});
 <dd>calc proper scale while making sure a division by zero can't occur  </dd>
 <dt><a class="anchor" id="_todo000013"></a>Global <a class="el" href="high__speed__logger__direct__memory_8h.html#a08b60bc2790ff19cbabae3f390132ad7">run_memory_management</a>  (void)</dt>
 <dd>We don't need two buffers as far as they are imadiatly copied when sended to the memory  </dd>
-<dt><a class="anchor" id="_todo000027"></a>Global <a class="el" href="sdcard__spi_8h.html#ad74eeebda29a6102d9efda412bdba151">sdcard1</a>  </dt>
+<dt><a class="anchor" id="_todo000023"></a>Global <a class="el" href="sdcard__spi_8h.html#ad74eeebda29a6102d9efda412bdba151">sdcard1</a>  </dt>
 <dd>Add support for multiple SD cards.  </dd>
-<dt><a class="anchor" id="_todo000026"></a>File <a class="el" href="sdcard__spi_8c.html">sdcard_spi.c</a>  </dt>
+<dt><a class="anchor" id="_todo000022"></a>File <a class="el" href="sdcard__spi_8c.html">sdcard_spi.c</a>  </dt>
 <dd>CRC checksums are not implemented. Fake values of 0xFF are used and they are ignored by the card.  </dd>
 <dt><a class="anchor" id="_todo000004"></a>Global <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a91a9fd24df5bc3eb82b8d5baba46959d">SpektrumParser</a>  (uint8_t _c, SpektrumStateType *spektrum_state, bool_t secondary_receiver)</dt>
 <dd>collect more data. I suspect that there is a low res  </dd>
@@ -177,15 +169,15 @@ $(document).ready(function(){initNavTree('todo.html','');});
 <dd><p class="startdd">Add the size of the values sended (in Bytes : SIZE_OF_LOGGED_VALUES). </p>
 <p class="enddd">Add a space to writte the total size of that log (for the progress bar in the downloading application)  </p>
 </dd>
-<dt><a class="anchor" id="_todo000030"></a>Global <a class="el" href="group__state__wind__airspeed.html#gabe8ffad9238290321c5b3495d3ea61c4">stateGetAngleOfAttack_f</a>  (void)</dt>
+<dt><a class="anchor" id="_todo000026"></a>Global <a class="el" href="group__state__wind__airspeed.html#gabe8ffad9238290321c5b3495d3ea61c4">stateGetAngleOfAttack_f</a>  (void)</dt>
 <dd>only float for now  </dd>
-<dt><a class="anchor" id="_todo000031"></a>Global <a class="el" href="group__state__wind__airspeed.html#ga3be81964f65845de8d77d206df0fcf0a">stateGetSideslip_f</a>  (void)</dt>
+<dt><a class="anchor" id="_todo000027"></a>Global <a class="el" href="group__state__wind__airspeed.html#ga3be81964f65845de8d77d206df0fcf0a">stateGetSideslip_f</a>  (void)</dt>
 <dd>only float for now  </dd>
-<dt><a class="anchor" id="_todo000028"></a>Global <a class="el" href="group__state__wind__airspeed.html#ga1a540eaf41fceb101d2c7403f1e9ba06">stateSetAngleOfAttack_f</a>  (float aoa)</dt>
+<dt><a class="anchor" id="_todo000024"></a>Global <a class="el" href="group__state__wind__airspeed.html#ga1a540eaf41fceb101d2c7403f1e9ba06">stateSetAngleOfAttack_f</a>  (float aoa)</dt>
 <dd>no integer yet  </dd>
-<dt><a class="anchor" id="_todo000029"></a>Global <a class="el" href="group__state__wind__airspeed.html#ga6198f76153003e86df9bbac3ed892ed1">stateSetSideslip_f</a>  (float sideslip)</dt>
+<dt><a class="anchor" id="_todo000025"></a>Global <a class="el" href="group__state__wind__airspeed.html#ga6198f76153003e86df9bbac3ed892ed1">stateSetSideslip_f</a>  (float sideslip)</dt>
 <dd>no integer yet  </dd>
-<dt><a class="anchor" id="_todo000042"></a>Global <a class="el" href="waypoints_8h.html#a6458406c3ff4259882fa0b93991f3c1e">waypoint_set_xy_i</a>  (uint8_t wp_id, int32_t x, int32_t y)</dt>
+<dt><a class="anchor" id="_todo000038"></a>Global <a class="el" href="subsystems_2navigation_2waypoints_8h.html#a6458406c3ff4259882fa0b93991f3c1e">waypoint_set_xy_i</a>  (uint8_t wp_id, int32_t x, int32_t y)</dt>
 <dd>: how to handle global waypoints? </dd>
 </dl>
 </div></div><!-- contents -->
@@ -193,7 +185,7 @@ $(document).ready(function(){initNavTree('todo.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 11 2015 02:01:53 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:02:09 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

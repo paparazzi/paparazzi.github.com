@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -245,10 +245,10 @@ $(document).ready(function(){initNavTree('functions_vars_t.html','');});
 , <a class="el" href="inter__thread__data_8h.html#a35403d4a49b60f6ef69c89b9b563a0a4">opticflow_state_t</a>
 </li>
 <li>theta_igain
-: <a class="el" href="guidance__opticflow__hover_8h.html#a46bca3121fb86079e9e85d2ff6b0a969">opticflow_stab_t</a>
+: <a class="el" href="guidance__OA_8h.html#a46bca3121fb86079e9e85d2ff6b0a969">opticflow_stab_t</a>
 </li>
 <li>theta_pgain
-: <a class="el" href="guidance__opticflow__hover_8h.html#a421d5b050ec13d680f7382021b21fdbc">opticflow_stab_t</a>
+: <a class="el" href="guidance__OA_8h.html#a421d5b050ec13d680f7382021b21fdbc">opticflow_stab_t</a>
 </li>
 <li>thread
 : <a class="el" href="v4l2_8h.html#ab9873a68a4febaccab16ccc693538e8f">v4l2_device</a>
@@ -258,6 +258,10 @@ $(document).ready(function(){initNavTree('functions_vars_t.html','');});
 </li>
 <li>threshold_vec
 : <a class="el" href="opticflow__calculator_8h.html#acca7d40c29039569cd1945dd77b8287a">opticflow_t</a>
+</li>
+<li>throttle
+: <a class="el" href="throttle__curve_8h.html#a368315ff03aed8ea68faa87320f87ccf">curve_t</a>
+, <a class="el" href="throttle__curve_8h.html#a872e44c3e0589415992c9a067184e1de">throttle_curve_t</a>
 </li>
 <li>thrust
 : <a class="el" href="direct__memory__logger_8c.html#a7c2512e416ccbb707faa706532f205d2">LogStruct</a>
@@ -272,7 +276,8 @@ $(document).ready(function(){initNavTree('functions_vars_t.html','');});
 : <a class="el" href="low__pass__filter_8h.html#a69f9575601766afc151fa3bf79ec4a02">FirstOrderLowPass</a>
 </li>
 <li>time_since_last_frame
-: <a class="el" href="radio__control_8h.html#a009f85397fd864a703ce54da8f02daa8">RadioControl</a>
+: <a class="el" href="intermcu_8h.html#a80012e1080c3c9dca6e3226229ce7dec">intermcu_t</a>
+, <a class="el" href="radio__control_8h.html#a009f85397fd864a703ce54da8f02daa8">RadioControl</a>
 </li>
 <li>time_to_contact
 : <a class="el" href="linear__flow__fit_8h.html#a78c5914f37993c965a4756e2ebb27aae">linear_flow_fit_info</a>
@@ -281,7 +286,8 @@ $(document).ready(function(){initNavTree('functions_vars_t.html','');});
 : <a class="el" href="px4flow_8h.html#ad690805ca727433bbc0d4678e7decb5c">mavlink_optical_flow</a>
 </li>
 <li>timeout
-: <a class="el" href="hmc5843_8h.html#ada82622fad1a3e2d09d74032fc65a87d">Hmc5843</a>
+: <a class="el" href="avoid__navigation_8h.html#a9a55882261a988cd9b7b9b97a35e449f">AvoidNavigationStruct</a>
+, <a class="el" href="hmc5843_8h.html#ada82622fad1a3e2d09d74032fc65a87d">Hmc5843</a>
 </li>
 <li>timeout_counter
 : <a class="el" href="sdcard__spi_8h.html#ace9fa672e599a4db32c45a21278f3c60">SDCard</a>
@@ -300,6 +306,9 @@ $(document).ready(function(){initNavTree('functions_vars_t.html','');});
 , <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#a6f73a08fb0dcddf86f801eca32b4dd11">SuperbitRF</a>
 , <a class="el" href="sys__time_8h.html#ac9099131f9a2e477427758d79e220544">sys_time</a>
 , <a class="el" href="takeoff__detect_8c.html#a8d3bde9a56cf0e549b47e7362c7a17f1">takeoff_detect_struct</a>
+</li>
+<li>timer_id
+: <a class="el" href="mission__manager_8h.html#ac4ab352758ae2bd7db4ae9067ac8f28a">mavlink_mission_mgr</a>
 </li>
 <li>timer_overflow
 : <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#ac87bdffc0f18bf6a8c6b1bedd3956afc">SuperbitRF</a>
@@ -390,6 +399,7 @@ $(document).ready(function(){initNavTree('functions_vars_t.html','');});
 </li>
 <li>trim
 : <a class="el" href="motor__mixing_8h.html#a88e84e5c89e51085c6428b677d0afab6">MotorMixing</a>
+, <a class="el" href="swashplate__mixing_8h.html#ad7175326e6f7d5009563768413d5919f">swashplate_mixing_t</a>
 </li>
 <li>ts
 : <a class="el" href="image_8h.html#a066ca30b1a6a8b33a24e79ed3d95d292">image_t</a>
@@ -493,7 +503,7 @@ $(document).ready(function(){initNavTree('functions_vars_t.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 11 2015 02:02:12 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:02:28 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

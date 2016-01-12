@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -330,19 +330,26 @@ $(document).ready(function(){initNavTree('abi__sender__ids_8h_source.html','');}
 <div class="line"><a name="l00226"></a><span class="lineno"><a class="line" href="abi__sender__ids_8h.html#ab295b8c7f57ad6615389c92e8efa694b">  226</a></span>&#160;<span class="preprocessor">#define IMU_MPU60X0_ID 16</span></div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="preprocessor">#ifndef PIX4FLOW_VELOCITY_ID </span></div>
-<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="abi__sender__ids_8h.html#a604e822de1c13f0283d4f8240786608f">  230</a></span>&#160;<span class="preprocessor">#define PIX4FLOW_VELOCITY_ID 17</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="preprocessor">#ifndef PX4FLOW_VELOCITY_ID</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="abi__sender__ids_8h.html#ae36e33780c327d268f4e1da02cfa3e98">  230</a></span>&#160;<span class="preprocessor">#define PX4FLOW_VELOCITY_ID 17</span></div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ABI_SENDER_IDS_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="comment"> * IDs of RSSI measurements (message 13)</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="preprocessor">#ifndef RSSI_BLUEGIGA_ID</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="abi__sender__ids_8h.html#af646ed1faa469ec469c3fd37b354b7db">  237</a></span>&#160;<span class="preprocessor">#define RSSI_BLUEGIGA_ID 1</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ABI_SENDER_IDS_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="abi__sender__ids_8h.html">abi_sender_ids.h</a></li>
-    <li class="footer">Generated on Wed Nov 11 2015 02:01:15 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:01:29 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

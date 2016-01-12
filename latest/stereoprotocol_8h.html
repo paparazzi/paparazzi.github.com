@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/modules/stereo_cam/stereoprotocol.h File Reference</title>
+<title>Paparazzi UAS: sw/airborne/modules/stereocam/stereoprotocol.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -113,6 +113,9 @@ $(document).ready(function(){initNavTree('stereoprotocol_8h.html','');});
 <div class="title">stereoprotocol.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>standard protocol for TUDelft stereocamera data transfer  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="inttypes_8h_source.html">inttypes.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="link__device_8h_source.html">mcu_periph/link_device.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -120,18 +123,18 @@ $(document).ready(function(){initNavTree('stereoprotocol_8h.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="stereoprotocol_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2stereo__cam_2stereoprotocol_8h" alt=""/></div>
-<map name="sw_2airborne_2modules_2stereo__cam_2stereoprotocol_8h" id="sw_2airborne_2modules_2stereo__cam_2stereoprotocol_8h">
-<area shape="rect" id="node2" href="inttypes_8h.html" title="inttypes.h" alt="" coords="68,169,153,196"/><area shape="rect" id="node3" href="link__device_8h.html" title="generic device header " alt="" coords="85,95,267,121"/></map>
+<div class="center"><img src="stereoprotocol_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2stereocam_2stereoprotocol_8h" alt=""/></div>
+<map name="sw_2airborne_2modules_2stereocam_2stereoprotocol_8h" id="sw_2airborne_2modules_2stereocam_2stereoprotocol_8h">
+<area shape="rect" id="node2" href="inttypes_8h.html" title="inttypes.h" alt="" coords="65,169,150,196"/><area shape="rect" id="node3" href="link__device_8h.html" title="generic device header " alt="" coords="81,95,264,121"/></map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="stereoprotocol_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2stereo__cam_2stereoprotocol_8hdep" alt=""/></div>
-<map name="sw_2airborne_2modules_2stereo__cam_2stereoprotocol_8hdep" id="sw_2airborne_2modules_2stereo__cam_2stereoprotocol_8hdep">
-<area shape="rect" id="node2" href="stereocam_8c.html" title="sw/airborne/modules\l/stereo_cam/stereocam.c" alt="" coords="5,95,192,136"/><area shape="rect" id="node3" href="stereoprotocol_8c.html" title="sw/airborne/modules\l/stereo_cam/stereoprotocol.c" alt="" coords="216,95,427,136"/><area shape="rect" id="node4" href="uartrotation_8c.html" title="sw/airborne/modules\l/stereo_cam/uartrotation.c" alt="" coords="451,95,645,136"/></map>
+<div class="center"><img src="stereoprotocol_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2stereocam_2stereoprotocol_8hdep" alt=""/></div>
+<map name="sw_2airborne_2modules_2stereocam_2stereoprotocol_8hdep" id="sw_2airborne_2modules_2stereocam_2stereoprotocol_8hdep">
+<area shape="rect" id="node2" href="state2camera_8c.html" title="sw/airborne/modules\l/stereocam/state2camera\l/state2camera.c" alt="" coords="5,95,195,151"/><area shape="rect" id="node3" href="stereocam_8c.html" title="interface to TU Delft serial stereocam Include stereocam.xml to your airframe file. " alt="" coords="219,102,397,143"/><area shape="rect" id="node4" href="stereoprotocol_8c.html" title="standard protocol for TUDelft stereocamera data transfer " alt="" coords="421,102,624,143"/></map>
 </div>
 </div>
 <p><a href="stereoprotocol_8h_source.html">Go to the source code of this file.</a></p>
@@ -164,14 +167,18 @@ Functions</h2></td></tr>
 <tr class="separator:a2bb7a633b8aba4d2f7e540f77c49dc93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70ea4531ac7e9bdc06f2956bf05902fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stereoprotocol_8h.html#a70ea4531ac7e9bdc06f2956bf05902fb">stereoprot_sendArray</a> (struct <a class="el" href="link__device_8h.html#structlink__device">link_device</a> *<a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *b, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> array_width, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> array_height)</td></tr>
 <tr class="separator:a70ea4531ac7e9bdc06f2956bf05902fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac95bf19751d36803456d0413920fb2da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stereoprotocol_8h.html#ac95bf19751d36803456d0413920fb2da">handleStereoPackage</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> newByte, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> buffer_size, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *<a class="el" href="stereocam_8c.html#a3520efa9c14152c5c14ed032d7ae51ac">insert_loc</a>, <a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> *<a class="el" href="stereocam_8c.html#a3d242a2f13b84a0ae231012658fdc995">extract_loc</a>, <a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> *<a class="el" href="stereocam_8c.html#a7f0e6aa046f6a321e6d63481fa929409">msg_start</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *<a class="el" href="stereocam_8c.html#a44ae0c3f99d596f974f2069ddb4624da">msg_buf</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *<a class="el" href="stereocam_8c.html#ab2e94fecd28ee716e4751545d5d2fb6f">ser_read_buf</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *stereocam_datadata_new, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *stereocam_datalen)</td></tr>
-<tr class="memdesc:ac95bf19751d36803456d0413920fb2da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all available data from stereo com link and decode any complete messages.  <a href="#ac95bf19751d36803456d0413920fb2da">More...</a><br /></td></tr>
-<tr class="separator:ac95bf19751d36803456d0413920fb2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f7271c1697c77dd446472879dd5aab3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stereoprotocol_8h.html#a2f7271c1697c77dd446472879dd5aab3">handleStereoPackage</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> newByte, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> buffer_size, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *<a class="el" href="stereocam_8c.html#a3520efa9c14152c5c14ed032d7ae51ac">insert_loc</a>, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *<a class="el" href="stereocam_8c.html#a3d242a2f13b84a0ae231012658fdc995">extract_loc</a>, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *<a class="el" href="stereocam_8c.html#a7f0e6aa046f6a321e6d63481fa929409">msg_start</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *<a class="el" href="stereocam_8c.html#a44ae0c3f99d596f974f2069ddb4624da">msg_buf</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *<a class="el" href="stereocam_8c.html#ab2e94fecd28ee716e4751545d5d2fb6f">ser_read_buf</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *stereocam_datadata_new, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *stereocam_datalen, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *stereocam_data_matrix_width, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *stereocam_data_matrix_height)</td></tr>
+<tr class="memdesc:a2f7271c1697c77dd446472879dd5aab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all available data from stereo com link and decode any complete messages.  <a href="#a2f7271c1697c77dd446472879dd5aab3">More...</a><br /></td></tr>
+<tr class="separator:a2f7271c1697c77dd446472879dd5aab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7838dfe70b00226310271960958dc4ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stereoprotocol_8h.html#a7838dfe70b00226310271960958dc4ce">stereoprot_get_msg_properties</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *raw, <a class="el" href="stereoprotocol_8h.html#structMsgProperties">MsgProperties</a> *properties, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> start, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> buffer_size)</td></tr>
 <tr class="memdesc:a7838dfe70b00226310271960958dc4ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve size of image from message.  <a href="#a7838dfe70b00226310271960958dc4ce">More...</a><br /></td></tr>
 <tr class="separator:a7838dfe70b00226310271960958dc4ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>standard protocol for TUDelft stereocamera data transfer </p>
+
+<p>Definition in file <a class="el" href="stereoprotocol_8h_source.html">stereoprotocol.h</a>.</p>
+</div><hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structMsgProperties" id="structMsgProperties"></a>
 <div class="memitem">
 <div class="memproto">
@@ -182,7 +189,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="stereoprotocol_8h_source.html#l00013">13</a> of file <a class="el" href="stereoprotocol_8h_source.html">stereoprotocol.h</a>.</p>
+<p>Definition at line <a class="el" href="stereoprotocol_8h_source.html#l00033">33</a> of file <a class="el" href="stereoprotocol_8h_source.html">stereoprotocol.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -218,12 +225,12 @@ width</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stereoprotocol_8h_source.html#l00018">18</a> of file <a class="el" href="stereoprotocol_8h_source.html">stereoprotocol.h</a>.</p>
+<p>Definition at line <a class="el" href="stereoprotocol_8h_source.html#l00038">38</a> of file <a class="el" href="stereoprotocol_8h_source.html">stereoprotocol.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ac95bf19751d36803456d0413920fb2da"></a>
+<a class="anchor" id="a2f7271c1697c77dd446472879dd5aab3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -248,13 +255,13 @@ width</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
           <td class="paramname"><em>extract_loc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
           <td class="paramname"><em>msg_start</em>, </td>
         </tr>
         <tr>
@@ -279,7 +286,19 @@ width</td>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>stereocam_datalen</em>&#160;</td>
+          <td class="paramname"><em>stereocam_datalen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>stereocam_data_matrix_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>stereocam_data_matrix_height</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -292,19 +311,19 @@ width</td>
 <p>Get all available data from stereo com link and decode any complete messages. </p>
 <p>Returns as soon as a complete message is found. Messages placed in msg_buf </p>
 
-<p>Definition at line <a class="el" href="stereoprotocol_8c_source.html#l00097">97</a> of file <a class="el" href="stereoprotocol_8c_source.html">stereoprotocol.c</a>.</p>
+<p>Definition at line <a class="el" href="stereoprotocol_8c_source.html#l00114">114</a> of file <a class="el" href="stereoprotocol_8c_source.html">stereoprotocol.c</a>.</p>
 
-<p>References <a class="el" href="stereocam_8c_source.html#l00060">extract_loc</a>, <a class="el" href="stereoprotocol_8h_source.html#l00016">MsgProperties::height</a>, <a class="el" href="stereocam_8c_source.html#l00060">insert_loc</a>, <a class="el" href="stereocam_8c_source.html#l00049">msgProperties</a>, <a class="el" href="stereoprotocol_8c_source.html#l00013">stereoprot_add()</a>, <a class="el" href="stereoprotocol_8c_source.html#l00022">stereoprot_diff()</a>, <a class="el" href="stereoprotocol_8c_source.html#l00150">stereoprot_get_msg_properties()</a>, <a class="el" href="stereoprotocol_8c_source.html#l00031">stereoprot_isEndOfMsg()</a>, <a class="el" href="stereoprotocol_8c_source.html#l00047">stereoprot_isStartOfMsg()</a>, and <a class="el" href="stereoprotocol_8h_source.html#l00015">MsgProperties::width</a>.</p>
+<p>References <a class="el" href="stereocam_8c_source.html#l00054">extract_loc</a>, <a class="el" href="stereoprotocol_8h_source.html#l00036">MsgProperties::height</a>, <a class="el" href="stereocam_8c_source.html#l00054">insert_loc</a>, <a class="el" href="stereocam_8c_source.html#l00043">msgProperties</a>, <a class="el" href="stereoprotocol_8c_source.html#l00032">stereoprot_add()</a>, <a class="el" href="stereoprotocol_8c_source.html#l00041">stereoprot_diff()</a>, <a class="el" href="stereoprotocol_8c_source.html#l00169">stereoprot_get_msg_properties()</a>, <a class="el" href="stereoprotocol_8c_source.html#l00050">stereoprot_isEndOfMsg()</a>, <a class="el" href="stereoprotocol_8c_source.html#l00064">stereoprot_isStartOfMsg()</a>, and <a class="el" href="stereoprotocol_8h_source.html#l00035">MsgProperties::width</a>.</p>
 
-<p>Referenced by <a class="el" href="stereocam_8c_source.html#l00086">stereocam_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="stereocam_8c_source.html#l00097">stereocam_periodic()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="stereoprotocol_8h_ac95bf19751d36803456d0413920fb2da_cgraph.png" border="0" usemap="#stereoprotocol_8h_ac95bf19751d36803456d0413920fb2da_cgraph" alt=""/></div>
-<map name="stereoprotocol_8h_ac95bf19751d36803456d0413920fb2da_cgraph" id="stereoprotocol_8h_ac95bf19751d36803456d0413920fb2da_cgraph">
+<div class="center"><img src="stereoprotocol_8h_a2f7271c1697c77dd446472879dd5aab3_cgraph.png" border="0" usemap="#stereoprotocol_8h_a2f7271c1697c77dd446472879dd5aab3_cgraph" alt=""/></div>
+<map name="stereoprotocol_8h_a2f7271c1697c77dd446472879dd5aab3_cgraph" id="stereoprotocol_8h_a2f7271c1697c77dd446472879dd5aab3_cgraph">
 <area shape="rect" id="node2" href="stereoprotocol_8c.html#a328a1faf5873904387c5752e51ce8945" title="Increment circular buffer counter by i. " alt="" coords="441,57,561,84"/><area shape="rect" id="node3" href="stereoprotocol_8c.html#a6b7cab5dfe254c880c3a4add98f1547d" title="Decrement circular buffer counter by i. " alt="" coords="444,171,559,197"/><area shape="rect" id="node4" href="stereoprotocol_8c.html#a7838dfe70b00226310271960958dc4ce" title="Retrieve size of image from message. " alt="" coords="228,134,380,175"/><area shape="rect" id="node5" href="stereoprotocol_8c.html#a8bd145f93da6d2a97eb9f6d432c2e437" title="Checks if the sequence in the array is equal to 255&#45;0&#45;0&#45;171, as this means that this is the end of an..." alt="" coords="219,32,389,59"/><area shape="rect" id="node6" href="stereoprotocol_8c.html#a161fe82f1737826010a31ada3e6ac766" title="Checks if the sequence in the array is equal to 255&#45;0&#45;0&#45;171, as this means a new image is starting fr..." alt="" coords="215,83,393,109"/></map>
 </div>
 </p>
@@ -314,8 +333,8 @@ width</td>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="stereoprotocol_8h_ac95bf19751d36803456d0413920fb2da_icgraph.png" border="0" usemap="#stereoprotocol_8h_ac95bf19751d36803456d0413920fb2da_icgraph" alt=""/></div>
-<map name="stereoprotocol_8h_ac95bf19751d36803456d0413920fb2da_icgraph" id="stereoprotocol_8h_ac95bf19751d36803456d0413920fb2da_icgraph">
+<div class="center"><img src="stereoprotocol_8h_a2f7271c1697c77dd446472879dd5aab3_icgraph.png" border="0" usemap="#stereoprotocol_8h_a2f7271c1697c77dd446472879dd5aab3_icgraph" alt=""/></div>
+<map name="stereoprotocol_8h_a2f7271c1697c77dd446472879dd5aab3_icgraph" id="stereoprotocol_8h_a2f7271c1697c77dd446472879dd5aab3_icgraph">
 <area shape="rect" id="node2" href="stereocam_8h.html#af9fdd9db13734d364f446939addc77d9" title="stereocam_periodic" alt="" coords="215,5,363,32"/></map>
 </div>
 </p>
@@ -354,9 +373,9 @@ width</td>
 
 <p>Increment circular buffer counter by i. </p>
 
-<p>Definition at line <a class="el" href="stereoprotocol_8c_source.html#l00013">13</a> of file <a class="el" href="stereoprotocol_8c_source.html">stereoprotocol.c</a>.</p>
+<p>Definition at line <a class="el" href="stereoprotocol_8c_source.html#l00032">32</a> of file <a class="el" href="stereoprotocol_8c_source.html">stereoprotocol.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stereoprotocol_8c_source.html#l00097">handleStereoPackage()</a>, <a class="el" href="stereocam_8c_source.html#l00086">stereocam_periodic()</a>, <a class="el" href="stereoprotocol_8c_source.html#l00150">stereoprot_get_msg_properties()</a>, <a class="el" href="stereoprotocol_8c_source.html#l00031">stereoprot_isEndOfMsg()</a>, and <a class="el" href="stereoprotocol_8c_source.html#l00047">stereoprot_isStartOfMsg()</a>.</p>
+<p>Referenced by <a class="el" href="stereoprotocol_8c_source.html#l00114">handleStereoPackage()</a>, <a class="el" href="stereocam_8c_source.html#l00097">stereocam_periodic()</a>, <a class="el" href="stereoprotocol_8c_source.html#l00169">stereoprot_get_msg_properties()</a>, <a class="el" href="stereoprotocol_8c_source.html#l00050">stereoprot_isEndOfMsg()</a>, and <a class="el" href="stereoprotocol_8c_source.html#l00064">stereoprot_isStartOfMsg()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -365,7 +384,7 @@ width</td>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stereoprotocol_8h_a328a1faf5873904387c5752e51ce8945_icgraph.png" border="0" usemap="#stereoprotocol_8h_a328a1faf5873904387c5752e51ce8945_icgraph" alt=""/></div>
 <map name="stereoprotocol_8h_a328a1faf5873904387c5752e51ce8945_icgraph" id="stereoprotocol_8h_a328a1faf5873904387c5752e51ce8945_icgraph">
-<area shape="rect" id="node2" href="stereoprotocol_8h.html#ac95bf19751d36803456d0413920fb2da" title="Get all available data from stereo com link and decode any complete messages. " alt="" coords="400,102,561,129"/><area shape="rect" id="node3" href="stereocam_8h.html#af9fdd9db13734d364f446939addc77d9" title="stereocam_periodic" alt="" coords="609,153,757,180"/><area shape="rect" id="node4" href="stereoprotocol_8h.html#a7838dfe70b00226310271960958dc4ce" title="Retrieve size of image from message. " alt="" coords="187,36,339,78"/><area shape="rect" id="node5" href="stereoprotocol_8h.html#a8bd145f93da6d2a97eb9f6d432c2e437" title="Checks if the sequence in the array is equal to 255&#45;0&#45;0&#45;171, as this means that this is the end of an..." alt="" coords="177,102,348,129"/><area shape="rect" id="node6" href="stereoprotocol_8h.html#a161fe82f1737826010a31ada3e6ac766" title="Checks if the sequence in the array is equal to 255&#45;0&#45;0&#45;171, as this means a new image is starting fr..." alt="" coords="173,153,352,180"/></map>
+<area shape="rect" id="node2" href="stereoprotocol_8h.html#a2f7271c1697c77dd446472879dd5aab3" title="Get all available data from stereo com link and decode any complete messages. " alt="" coords="400,102,561,129"/><area shape="rect" id="node3" href="stereocam_8h.html#af9fdd9db13734d364f446939addc77d9" title="stereocam_periodic" alt="" coords="609,153,757,180"/><area shape="rect" id="node4" href="stereoprotocol_8h.html#a7838dfe70b00226310271960958dc4ce" title="Retrieve size of image from message. " alt="" coords="187,36,339,78"/><area shape="rect" id="node5" href="stereoprotocol_8h.html#a8bd145f93da6d2a97eb9f6d432c2e437" title="Checks if the sequence in the array is equal to 255&#45;0&#45;0&#45;171, as this means that this is the end of an..." alt="" coords="177,102,348,129"/><area shape="rect" id="node6" href="stereoprotocol_8h.html#a161fe82f1737826010a31ada3e6ac766" title="Checks if the sequence in the array is equal to 255&#45;0&#45;0&#45;171, as this means a new image is starting fr..." alt="" coords="173,153,352,180"/></map>
 </div>
 </p>
 
@@ -403,9 +422,9 @@ width</td>
 
 <p>Decrement circular buffer counter by i. </p>
 
-<p>Definition at line <a class="el" href="stereoprotocol_8c_source.html#l00022">22</a> of file <a class="el" href="stereoprotocol_8c_source.html">stereoprotocol.c</a>.</p>
+<p>Definition at line <a class="el" href="stereoprotocol_8c_source.html#l00041">41</a> of file <a class="el" href="stereoprotocol_8c_source.html">stereoprotocol.c</a>.</p>
 
-<p>Referenced by <a class="el" href="stereoprotocol_8c_source.html#l00097">handleStereoPackage()</a>, and <a class="el" href="stereoprotocol_8c_source.html#l00150">stereoprot_get_msg_properties()</a>.</p>
+<p>Referenced by <a class="el" href="stereoprotocol_8c_source.html#l00114">handleStereoPackage()</a>, and <a class="el" href="stereoprotocol_8c_source.html#l00169">stereoprot_get_msg_properties()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -414,7 +433,7 @@ width</td>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stereoprotocol_8h_a6b7cab5dfe254c880c3a4add98f1547d_icgraph.png" border="0" usemap="#stereoprotocol_8h_a6b7cab5dfe254c880c3a4add98f1547d_icgraph" alt=""/></div>
 <map name="stereoprotocol_8h_a6b7cab5dfe254c880c3a4add98f1547d_icgraph" id="stereoprotocol_8h_a6b7cab5dfe254c880c3a4add98f1547d_icgraph">
-<area shape="rect" id="node2" href="stereoprotocol_8h.html#ac95bf19751d36803456d0413920fb2da" title="Get all available data from stereo com link and decode any complete messages. " alt="" coords="368,5,529,32"/><area shape="rect" id="node4" href="stereoprotocol_8h.html#a7838dfe70b00226310271960958dc4ce" title="Retrieve size of image from message. " alt="" coords="168,27,320,69"/><area shape="rect" id="node3" href="stereocam_8h.html#af9fdd9db13734d364f446939addc77d9" title="stereocam_periodic" alt="" coords="577,5,725,32"/></map>
+<area shape="rect" id="node2" href="stereoprotocol_8h.html#a2f7271c1697c77dd446472879dd5aab3" title="Get all available data from stereo com link and decode any complete messages. " alt="" coords="368,5,529,32"/><area shape="rect" id="node4" href="stereoprotocol_8h.html#a7838dfe70b00226310271960958dc4ce" title="Retrieve size of image from message. " alt="" coords="168,27,320,69"/><area shape="rect" id="node3" href="stereocam_8h.html#af9fdd9db13734d364f446939addc77d9" title="stereocam_periodic" alt="" coords="577,5,725,32"/></map>
 </div>
 </p>
 
@@ -458,11 +477,11 @@ width</td>
 
 <p>Retrieve size of image from message. </p>
 
-<p>Definition at line <a class="el" href="stereoprotocol_8c_source.html#l00150">150</a> of file <a class="el" href="stereoprotocol_8c_source.html">stereoprotocol.c</a>.</p>
+<p>Definition at line <a class="el" href="stereoprotocol_8c_source.html#l00169">169</a> of file <a class="el" href="stereoprotocol_8c_source.html">stereoprotocol.c</a>.</p>
 
-<p>References <a class="el" href="stereoprotocol_8h_source.html#l00016">MsgProperties::height</a>, <a class="el" href="stereoprotocol_8c_source.html#l00013">stereoprot_add()</a>, <a class="el" href="stereoprotocol_8c_source.html#l00022">stereoprot_diff()</a>, and <a class="el" href="stereoprotocol_8h_source.html#l00015">MsgProperties::width</a>.</p>
+<p>References <a class="el" href="stereoprotocol_8h_source.html#l00036">MsgProperties::height</a>, <a class="el" href="stereoprotocol_8c_source.html#l00032">stereoprot_add()</a>, <a class="el" href="stereoprotocol_8c_source.html#l00041">stereoprot_diff()</a>, and <a class="el" href="stereoprotocol_8h_source.html#l00035">MsgProperties::width</a>.</p>
 
-<p>Referenced by <a class="el" href="stereoprotocol_8c_source.html#l00097">handleStereoPackage()</a>.</p>
+<p>Referenced by <a class="el" href="stereoprotocol_8c_source.html#l00114">handleStereoPackage()</a>.</p>
 
 <p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -482,7 +501,7 @@ width</td>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stereoprotocol_8h_a7838dfe70b00226310271960958dc4ce_icgraph.png" border="0" usemap="#stereoprotocol_8h_a7838dfe70b00226310271960958dc4ce_icgraph" alt=""/></div>
 <map name="stereoprotocol_8h_a7838dfe70b00226310271960958dc4ce_icgraph" id="stereoprotocol_8h_a7838dfe70b00226310271960958dc4ce_icgraph">
-<area shape="rect" id="node2" href="stereoprotocol_8h.html#ac95bf19751d36803456d0413920fb2da" title="Get all available data from stereo com link and decode any complete messages. " alt="" coords="205,13,367,39"/><area shape="rect" id="node3" href="stereocam_8h.html#af9fdd9db13734d364f446939addc77d9" title="stereocam_periodic" alt="" coords="415,13,563,39"/></map>
+<area shape="rect" id="node2" href="stereoprotocol_8h.html#a2f7271c1697c77dd446472879dd5aab3" title="Get all available data from stereo com link and decode any complete messages. " alt="" coords="205,13,367,39"/><area shape="rect" id="node3" href="stereocam_8h.html#af9fdd9db13734d364f446939addc77d9" title="stereocam_periodic" alt="" coords="415,13,563,39"/></map>
 </div>
 </p>
 
@@ -520,11 +539,11 @@ width</td>
 
 <p>Checks if the sequence in the array is equal to 255-0-0-171, as this means that this is the end of an image. </p>
 
-<p>Definition at line <a class="el" href="stereoprotocol_8c_source.html#l00031">31</a> of file <a class="el" href="stereoprotocol_8c_source.html">stereoprotocol.c</a>.</p>
+<p>Definition at line <a class="el" href="stereoprotocol_8c_source.html#l00050">50</a> of file <a class="el" href="stereoprotocol_8c_source.html">stereoprotocol.c</a>.</p>
 
-<p>References <a class="el" href="stereoprotocol_8c_source.html#l00013">stereoprot_add()</a>.</p>
+<p>References <a class="el" href="stereoprotocol_8c_source.html#l00032">stereoprot_add()</a>.</p>
 
-<p>Referenced by <a class="el" href="stereoprotocol_8c_source.html#l00097">handleStereoPackage()</a>.</p>
+<p>Referenced by <a class="el" href="stereoprotocol_8c_source.html#l00114">handleStereoPackage()</a>.</p>
 
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -544,7 +563,7 @@ width</td>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stereoprotocol_8h_a8bd145f93da6d2a97eb9f6d432c2e437_icgraph.png" border="0" usemap="#stereoprotocol_8h_a8bd145f93da6d2a97eb9f6d432c2e437_icgraph" alt=""/></div>
 <map name="stereoprotocol_8h_a8bd145f93da6d2a97eb9f6d432c2e437_icgraph" id="stereoprotocol_8h_a8bd145f93da6d2a97eb9f6d432c2e437_icgraph">
-<area shape="rect" id="node2" href="stereoprotocol_8h.html#ac95bf19751d36803456d0413920fb2da" title="Get all available data from stereo com link and decode any complete messages. " alt="" coords="224,5,385,32"/><area shape="rect" id="node3" href="stereocam_8h.html#af9fdd9db13734d364f446939addc77d9" title="stereocam_periodic" alt="" coords="433,5,581,32"/></map>
+<area shape="rect" id="node2" href="stereoprotocol_8h.html#a2f7271c1697c77dd446472879dd5aab3" title="Get all available data from stereo com link and decode any complete messages. " alt="" coords="224,5,385,32"/><area shape="rect" id="node3" href="stereocam_8h.html#af9fdd9db13734d364f446939addc77d9" title="stereocam_periodic" alt="" coords="433,5,581,32"/></map>
 </div>
 </p>
 
@@ -582,11 +601,11 @@ width</td>
 
 <p>Checks if the sequence in the array is equal to 255-0-0-171, as this means a new image is starting from here. </p>
 
-<p>Definition at line <a class="el" href="stereoprotocol_8c_source.html#l00047">47</a> of file <a class="el" href="stereoprotocol_8c_source.html">stereoprotocol.c</a>.</p>
+<p>Definition at line <a class="el" href="stereoprotocol_8c_source.html#l00064">64</a> of file <a class="el" href="stereoprotocol_8c_source.html">stereoprotocol.c</a>.</p>
 
-<p>References <a class="el" href="stereoprotocol_8c_source.html#l00013">stereoprot_add()</a>.</p>
+<p>References <a class="el" href="stereoprotocol_8c_source.html#l00032">stereoprot_add()</a>.</p>
 
-<p>Referenced by <a class="el" href="stereoprotocol_8c_source.html#l00097">handleStereoPackage()</a>.</p>
+<p>Referenced by <a class="el" href="stereoprotocol_8c_source.html#l00114">handleStereoPackage()</a>.</p>
 
 <p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -606,7 +625,7 @@ width</td>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stereoprotocol_8h_a161fe82f1737826010a31ada3e6ac766_icgraph.png" border="0" usemap="#stereoprotocol_8h_a161fe82f1737826010a31ada3e6ac766_icgraph" alt=""/></div>
 <map name="stereoprotocol_8h_a161fe82f1737826010a31ada3e6ac766_icgraph" id="stereoprotocol_8h_a161fe82f1737826010a31ada3e6ac766_icgraph">
-<area shape="rect" id="node2" href="stereoprotocol_8h.html#ac95bf19751d36803456d0413920fb2da" title="Get all available data from stereo com link and decode any complete messages. " alt="" coords="232,5,393,32"/><area shape="rect" id="node3" href="stereocam_8h.html#af9fdd9db13734d364f446939addc77d9" title="stereocam_periodic" alt="" coords="441,5,589,32"/></map>
+<area shape="rect" id="node2" href="stereoprotocol_8h.html#a2f7271c1697c77dd446472879dd5aab3" title="Get all available data from stereo com link and decode any complete messages. " alt="" coords="232,5,393,32"/><area shape="rect" id="node3" href="stereocam_8h.html#af9fdd9db13734d364f446939addc77d9" title="stereocam_periodic" alt="" coords="441,5,589,32"/></map>
 </div>
 </p>
 
@@ -648,11 +667,11 @@ width</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stereoprotocol_8c_source.html#l00068">68</a> of file <a class="el" href="stereoprotocol_8c_source.html">stereoprotocol.c</a>.</p>
+<p>Definition at line <a class="el" href="stereoprotocol_8c_source.html#l00085">85</a> of file <a class="el" href="stereoprotocol_8c_source.html">stereoprotocol.c</a>.</p>
 
-<p>References <a class="el" href="stereoprotocol_8c_source.html#l00060">WritePart()</a>.</p>
+<p>References <a class="el" href="stereoprotocol_8c_source.html#l00077">WritePart()</a>.</p>
 
-<p>Referenced by <a class="el" href="uartrotation_8c_source.html#l00035">write_serial_rot()</a>.</p>
+<p>Referenced by <a class="el" href="state2camera_8c_source.html#l00035">write_serial_rot()</a>.</p>
 
 <p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -672,7 +691,7 @@ width</td>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stereoprotocol_8h_a70ea4531ac7e9bdc06f2956bf05902fb_icgraph.png" border="0" usemap="#stereoprotocol_8h_a70ea4531ac7e9bdc06f2956bf05902fb_icgraph" alt=""/></div>
 <map name="stereoprotocol_8h_a70ea4531ac7e9bdc06f2956bf05902fb_icgraph" id="stereoprotocol_8h_a70ea4531ac7e9bdc06f2956bf05902fb_icgraph">
-<area shape="rect" id="node2" href="uartrotation_8h.html#a6962b193c7b3c3a2c020d777cbc49aff" title="write_serial_rot" alt="" coords="215,5,333,32"/></map>
+<area shape="rect" id="node2" href="state2camera_8h.html#a6962b193c7b3c3a2c020d777cbc49aff" title="write_serial_rot" alt="" coords="215,5,333,32"/></map>
 </div>
 </p>
 
@@ -708,11 +727,11 @@ width</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stereoprotocol_8c_source.html#l00060">60</a> of file <a class="el" href="stereoprotocol_8c_source.html">stereoprotocol.c</a>.</p>
+<p>Definition at line <a class="el" href="stereoprotocol_8c_source.html#l00077">77</a> of file <a class="el" href="stereoprotocol_8c_source.html">stereoprotocol.c</a>.</p>
 
 <p>References <a class="el" href="link__device_8h_source.html#l00045">link_device::check_free_space</a>, <a class="el" href="link__device_8h_source.html#l00050">link_device::periph</a>, and <a class="el" href="link__device_8h_source.html#l00046">link_device::put_byte</a>.</p>
 
-<p>Referenced by <a class="el" href="stereoprotocol_8c_source.html#l00068">stereoprot_sendArray()</a>.</p>
+<p>Referenced by <a class="el" href="stereoprotocol_8c_source.html#l00085">stereoprot_sendArray()</a>.</p>
 
 <p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -721,7 +740,7 @@ width</td>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stereoprotocol_8h_a2bb7a633b8aba4d2f7e540f77c49dc93_icgraph.png" border="0" usemap="#stereoprotocol_8h_a2bb7a633b8aba4d2f7e540f77c49dc93_icgraph" alt=""/></div>
 <map name="stereoprotocol_8h_a2bb7a633b8aba4d2f7e540f77c49dc93_icgraph" id="stereoprotocol_8h_a2bb7a633b8aba4d2f7e540f77c49dc93_icgraph">
-<area shape="rect" id="node2" href="stereoprotocol_8h.html#a70ea4531ac7e9bdc06f2956bf05902fb" title="stereoprot_sendArray" alt="" coords="132,5,293,32"/><area shape="rect" id="node3" href="uartrotation_8h.html#a6962b193c7b3c3a2c020d777cbc49aff" title="write_serial_rot" alt="" coords="341,5,460,32"/></map>
+<area shape="rect" id="node2" href="stereoprotocol_8h.html#a70ea4531ac7e9bdc06f2956bf05902fb" title="stereoprot_sendArray" alt="" coords="132,5,293,32"/><area shape="rect" id="node3" href="state2camera_8h.html#a6962b193c7b3c3a2c020d777cbc49aff" title="write_serial_rot" alt="" coords="341,5,460,32"/></map>
 </div>
 </p>
 
@@ -732,8 +751,8 @@ width</td>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_53035c648a11711b8be97fca3f069783.html">stereo_cam</a></li><li class="navelem"><a class="el" href="stereoprotocol_8h.html">stereoprotocol.h</a></li>
-    <li class="footer">Generated on Wed Nov 11 2015 02:01:42 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_3df9ff4d3eb13d31d58a513ba3c4e4bb.html">stereocam</a></li><li class="navelem"><a class="el" href="stereoprotocol_8h.html">stereoprotocol.h</a></li>
+    <li class="footer">Generated on Mon Jan 11 2016 14:01:57 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

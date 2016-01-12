@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -117,6 +117,7 @@ $(document).ready(function(){initNavTree('onboard_modules.html','');});
 <li class="level2"><a href="#modules_category_display">Display modules</a></li>
 <li class="level2"><a href="#modules_category_energy">Energy modules</a></li>
 <li class="level2"><a href="#modules_category_gps">Gps modules</a></li>
+<li class="level2"><a href="#modules_category_helicopter">Helicopter modules</a></li>
 <li class="level2"><a href="#modules_category_ins">Ins modules</a></li>
 <li class="level2"><a href="#modules_category_light">Light modules</a></li>
 <li class="level2"><a href="#modules_category_loggers">Loggers modules</a></li>
@@ -127,6 +128,7 @@ $(document).ready(function(){initNavTree('onboard_modules.html','');});
 <li class="level2"><a href="#modules_category_sensors">Sensors modules</a></li>
 <li class="level2"><a href="#modules_category_servo_switch">Servo_Switch modules</a></li>
 <li class="level2"><a href="#modules_category_sonar">Sonar modules</a></li>
+<li class="level2"><a href="#modules_category_stereocam">Stereocam modules</a></li>
 <li class="level2"><a href="#modules_category_misc">Misc modules</a></li>
 </ul>
 </li>
@@ -237,6 +239,12 @@ Gps modules</h2>
 <li>gps_i2c.xml <a class="el" href="module__gps_i2c.html">U-blox GPS (I2C)</a></li>
 <li>gps_ubx_ucenter.xml <a class="el" href="module__gps_ubx_ucenter.html">Ublox GPS autoconfiguration</a></li>
 </ul>
+<h2><a class="anchor" id="modules_category_helicopter"></a>
+Helicopter modules</h2>
+<ul>
+<li>heli_swashplate_mixing.xml <a class="el" href="module__heli_swashplate_mixing.html">Helicopter Swashplate Mixing</a></li>
+<li>heli_throttle_curve.xml <a class="el" href="module__heli_throttle_curve.html">Throttle Curve Mixers</a></li>
+</ul>
 <h2><a class="anchor" id="modules_category_ins"></a>
 Ins modules</h2>
 <ul>
@@ -263,6 +271,7 @@ Loggers modules</h2>
 <li>flight_recorder.xml <a class="el" href="module__flight_recorder.html">Record flight data according to your telemetry file</a></li>
 <li>logger_dataflash.xml <a class="el" href="module__logger_dataflash.html">SPI logger</a></li>
 <li>logger_file.xml <a class="el" href="module__logger_file.html">Logs to a csv file</a></li>
+<li>logger_sd_spi_direct.xml <a class="el" href="module__logger_sd_spi_direct.html">Direct SPI SD Logger that saves pprzlog messages to SD Card</a></li>
 <li>logger_spi_link.xml <a class="el" href="module__logger_spi_link.html">Stream all IMU data to external High-Speed SD-logger via SPI</a></li>
 <li>logger_uart.xml <a class="el" href="module__logger_uart.html">Stream IMU raw data over UART for off-board logging</a></li>
 <li>openlog.xml <a class="el" href="module__openlog.html">OpenLog telemetry timestamp</a></li>
@@ -364,7 +373,6 @@ Sensors modules</h2>
 <li>mag_hmc58xx.xml <a class="el" href="module__mag_hmc58xx.html">HMC58xx magnetometer</a></li>
 <li>mag_micromag_fw.xml <a class="el" href="module__mag_micromag_fw.html">Micromag magnetometer</a></li>
 <li>pbn.xml <a class="el" href="module__pbn.html">Pressure Board Navarro</a></li>
-<li>stereocam.xml <a class="el" href="module__stereocam.html">StereoCamera read and decode</a></li>
 <li>temp_adc.xml <a class="el" href="module__temp_adc.html">Temperature ADC</a></li>
 <li>trigger_ext.xml <a class="el" href="module__trigger_ext.html">External trigger</a></li>
 </ul>
@@ -380,6 +388,15 @@ Sonar modules</h2>
 <li>agl_dist.xml <a class="el" href="module__agl_dist.html">Get sonar values from ABI and store last and filtered values</a></li>
 <li>sonar_adc.xml <a class="el" href="module__sonar_adc.html">Sonar ADC driver</a></li>
 <li>sonar_bebop.xml <a class="el" href="module__sonar_bebop.html">Bebop Sonar driver</a></li>
+</ul>
+<h2><a class="anchor" id="modules_category_stereocam"></a>
+Stereocam modules</h2>
+<ul>
+<li>stereocam.xml <a class="el" href="module__stereocam.html">StereoCamera read and decode</a></li>
+<li>stereocam_droplet.xml <a class="el" href="module__stereocam_droplet.html">Stereocam Droplet</a></li>
+<li>stereocam_follow_me.xml <a class="el" href="module__stereocam_follow_me.html">Follows a person using the reference given by the stereocam</a></li>
+<li>stereocam_nav_line_avoid.xml <a class="el" href="module__stereocam_nav_line_avoid.html">Read Stereoboard Obstacle Protocol and plan around obstacles during nav-line navigation</a></li>
+<li>stereocam_state2camera.xml <a class="el" href="module__stereocam_state2camera.html">Writes rotation to the uart bus</a></li>
 </ul>
 <h2><a class="anchor" id="modules_category_misc"></a>
 Misc modules</h2>
@@ -398,12 +415,12 @@ Misc modules</h2>
 <li>gumstix_qr_code_spi_link.xml <a class="el" href="module__gumstix_qr_code_spi_link.html">QR code gumstix interface</a></li>
 <li>hott_telemetry.xml <a class="el" href="module__hott_telemetry.html">Graupner HOTT telemetry control module</a></li>
 <li>max3100.xml <a class="el" href="module__max3100.html">MAX3100 SPI/Uart converter</a></li>
+<li>obstacle_avoidance.xml <a class="el" href="module__obstacle_avoidance.html">Obstacle avoidance module</a></li>
 <li>opticflow_hover.xml <a class="el" href="module__opticflow_hover.html">Hovers the drone based on optical flow made for Linux video Devices</a></li>
 <li>px4flow.xml <a class="el" href="module__px4flow.html">PX4FLOW optical flow sensor</a></li>
 <li>send_imu_mag_current.xml <a class="el" href="module__send_imu_mag_current.html">Enables sending of IMU_MAG_CURRENT_CALIBRATION message</a></li>
-<li>stereoavoid.xml <a class="el" href="module__stereoavoid.html">Read Stereoboard Obstacle Protocol</a></li>
+<li>stereocam_stereocam2state.xml <a class="el" href="module__stereocam_stereocam2state.html">StereoCamera 2 VELOCITY_ESTIMATE</a></li>
 <li>time_countdown.xml <a class="el" href="module__time_countdown.html">Count down time</a></li>
-<li>uartrotation.xml <a class="el" href="module__uartrotation.html">Writes rotation to the uart bus</a></li>
 <li>vehicle_interface_datalink.xml <a class="el" href="module__vehicle_interface_datalink.html">Vehicule Interface over Datalink</a> </li>
 </ul>
 </div></div><!-- contents -->
@@ -411,7 +428,7 @@ Misc modules</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 11 2015 02:01:51 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:02:07 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

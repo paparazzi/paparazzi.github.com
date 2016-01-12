@@ -68,11 +68,11 @@ var ins__float__invariant_8h =
     [ "INV_MEASURE_DIM", "ins__float__invariant_8h.html#a31154c830fe4c8729366f9c9606fe775", null ],
     [ "INV_STATE_DIM", "ins__float__invariant_8h.html#a1381bfad9d32941968667b05c9f0e620", null ],
     [ "ins_float_inv_set_body_to_imu_quat", "ins__float__invariant_8h.html#ad770f4835ea32cfbb8c9ae96100a05e2", null ],
-    [ "ins_float_invariant_align", "ins__float__invariant_8h.html#ae9a20811bed7797c9f978e144bd61fcc", null ],
+    [ "ins_float_invariant_align", "ins__float__invariant_8h.html#a20f38b74cafe0e2f82412fe7a66dc806", null ],
     [ "ins_float_invariant_init", "ins__float__invariant_8h.html#a337aa9b464c923af97d19ec0bfdb6f02", null ],
-    [ "ins_float_invariant_propagate", "ins__float__invariant_8h.html#a31039d880986ce20c2e10c812684982e", null ],
+    [ "ins_float_invariant_propagate", "ins__float__invariant_8h.html#a3295f5f304de90dd15c0465967c3b89f", null ],
     [ "ins_float_invariant_update_baro", "ins__float__invariant_8h.html#ab10a69f505b95e3513f45a05abf08edb", null ],
     [ "ins_float_invariant_update_gps", "ins__float__invariant_8h.html#a61e3f6c5195a9e0e99428c7cb5981382", null ],
-    [ "ins_float_invariant_update_mag", "ins__float__invariant_8h.html#a11c7cabfa754e3ac16259ef6603e646f", null ],
+    [ "ins_float_invariant_update_mag", "ins__float__invariant_8h.html#a8b37e7cd344aafd9ed124a7775a9a92e", null ],
     [ "ins_float_inv", "ins__float__invariant_8h.html#aa1f2eff40eddfce7040b6bf5cb3f215c", null ]
 ];

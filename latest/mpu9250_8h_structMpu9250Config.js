@@ -12,7 +12,8 @@ var mpu9250_8h_structMpu9250Config =
     [ "init_status", "mpu9250_8h.html#ab6e4b811de53bd7e90b4ca9aff594d5e", null ],
     [ "initialized", "mpu9250_8h.html#afa18245a65b81dfe386fd8bdb7aa9413", null ],
     [ "nb_bytes", "mpu9250_8h.html#a80ee0c5434de57f6f25ba3bc09d50b78", null ],
+    [ "nb_slave_init", "mpu9250_8h.html#a5a3ef6764170e2bc2e25ac5f74d50735", null ],
     [ "nb_slaves", "mpu9250_8h.html#a69947f1fe40926633938b1f52ccb1d45", null ],
-    [ "slaves", "mpu9250_8h.html#ad7ee6aa9b9c31536927b958b713a0452", null ],
+    [ "slaves", "mpu9250_8h.html#ae99a93d740ab9942aae0a3d942050bad", null ],
     [ "smplrt_div", "mpu9250_8h.html#ab1ab338ddc1260c0a36bebbea83e5d63", null ]
 ];

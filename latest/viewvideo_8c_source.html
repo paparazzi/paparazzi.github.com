@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -166,158 +166,174 @@ $(document).ready(function(){initNavTree('viewvideo_8c_source.html','');});
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="viewvideo_8c.html#a769ad673bc2a1bc72bdf96081f4196b9">VIEWVIDEO_RTP_TIME_INC</a>)</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">// Check if we are using netcat instead of RTP/UDP</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#ifndef VIEWVIDEO_USE_NETCAT</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="viewvideo_8c.html#a145420c058c30ea1271e8a07f94b8a27">   69</a></span>&#160;<span class="preprocessor">#define VIEWVIDEO_USE_NETCAT FALSE</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#ifndef VIEWVIDEO_USE_RTP</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="viewvideo_8c.html#a620cd99a6d07e8129ed89b517aaca1f0">   72</a></span>&#160;<span class="preprocessor">#define VIEWVIDEO_USE_RTP TRUE</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">// Default image folder</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#ifndef VIEWVIDEO_SHOT_PATH</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#ifdef VIDEO_THREAD_SHOT_PATH</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#define VIEWVIDEO_SHOT_PATH VIDEO_THREAD_SHOT_PATH</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="viewvideo_8c.html#a2fca398e492adfafd1cd75def2ea9155">   72</a></span>&#160;<span class="preprocessor">#define VIEWVIDEO_SHOT_PATH /data/video/images</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#if VIEWVIDEO_USE_NETCAT &amp;&amp; VIEWVIDEO_USE_RTP</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#error &quot;Can&#39;t set VIEWVIDEO_USE_NETCAT and VIEWVIDEO_USE_RTP to true at the same time.&quot;</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#if VIEWVIDEO_USE_NETCAT</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<a class="code" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG</a>(<span class="stringliteral">&quot;[viewvideo] Using netcat.&quot;</span>)</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#elif VIEWVIDEO_USE_RTP</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<a class="code" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG</a>(<span class="stringliteral">&quot;[viewvideo] Using RTP/UDP stream.&quot;</span>)</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">/* These are defined with configure */</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;PRINT_CONFIG_VAR(VIEWVIDEO_HOST)</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;PRINT_CONFIG_VAR(VIEWVIDEO_PORT_OUT)</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">// Initialize the viewvideo structure with the defaults</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="viewvideo_8h.html#a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74">   90</a></span>&#160;struct <a class="code" href="viewvideo_8h.html#structviewvideo__t">viewvideo_t</a> <a class="code" href="viewvideo_8c.html#a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74">viewvideo</a> = {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  .<a class="code" href="viewvideo_8h.html#a37e0abb58c310a618cd3a994103797f3">is_streaming</a> = <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>,</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  .downsize_factor = <a class="code" href="viewvideo_8c.html#a7be96404c0964c92f49f092c0d13634e">VIEWVIDEO_DOWNSIZE_FACTOR</a>,</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  .quality_factor = <a class="code" href="viewvideo_8c.html#a8e90f0654fb109ed5126ce59fbdb5de3">VIEWVIDEO_QUALITY_FACTOR</a>,</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  .use_rtp = <a class="code" href="viewvideo_8c.html#a620cd99a6d07e8129ed89b517aaca1f0">VIEWVIDEO_USE_RTP</a>,</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="viewvideo_8c.html#a192493a4796af4cc04319b183eaed146">  101</a></span>&#160;<span class="keyword">struct </span><a class="code" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> <a class="code" href="viewvideo_8c.html#a192493a4796af4cc04319b183eaed146">video_sock</a>;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;bool_t <a class="code" href="viewvideo_8c.html#a6a9f8aa0c7db5b292f18c8266808fe62">viewvideo_function</a>(<span class="keyword">struct</span> <a class="code" href="image_8h.html#structimage__t">image_t</a> *img);</div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="viewvideo_8c.html#a6a9f8aa0c7db5b292f18c8266808fe62">  103</a></span>&#160;bool_t <a class="code" href="viewvideo_8c.html#a6a9f8aa0c7db5b292f18c8266808fe62">viewvideo_function</a>(<span class="keyword">struct</span> <a class="code" href="image_8h.html#structimage__t">image_t</a> *img)</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;{</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="comment">// Resize image if needed</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keyword">struct </span><a class="code" href="image_8h.html#structimage__t">image_t</a> img_small;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <a class="code" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53">image_create</a>(&amp;img_small,</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;               img-&gt;<a class="code" href="image_8h.html#aa3c13c99294ff126c4c019d5e799253e">w</a> / <a class="code" href="viewvideo_8c.html#a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74">viewvideo</a>.<a class="code" href="viewvideo_8h.html#a69fc57936da448ab66dd1e13fec4d66e">downsize_factor</a>,</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;               img-&gt;<a class="code" href="image_8h.html#a8bcdc857e2b3c08194113808ca2af345">h</a> / <a class="code" href="viewvideo_8c.html#a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74">viewvideo</a>.<a class="code" href="viewvideo_8h.html#a69fc57936da448ab66dd1e13fec4d66e">downsize_factor</a>,</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;               <a class="code" href="image_8h.html#af039c7afe08a5eb2cff06e357227cdb8a704e82d01278e82c17283882911f9dfc">IMAGE_YUV422</a>);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="comment">// Create the JPEG encoded image</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keyword">struct </span><a class="code" href="image_8h.html#structimage__t">image_t</a> img_jpeg;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <a class="code" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53">image_create</a>(&amp;img_jpeg, img_small.<a class="code" href="image_8h.html#aa3c13c99294ff126c4c019d5e799253e">w</a>, img_small.<a class="code" href="image_8h.html#a8bcdc857e2b3c08194113808ca2af345">h</a>, <a class="code" href="image_8h.html#af039c7afe08a5eb2cff06e357227cdb8ae57daacf0b164b5e0c959eb664e3421b">IMAGE_JPEG</a>);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#if VIEWVIDEO_USE_NETCAT</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordtype">char</span> nc_cmd[64];</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  sprintf(nc_cmd, <span class="stringliteral">&quot;nc %s %d 2&gt;/dev/null&quot;</span>, STRINGIFY(VIEWVIDEO_HOST), VIEWVIDEO_PORT_OUT);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="viewvideo_8c.html#a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74">viewvideo</a>.<a class="code" href="viewvideo_8h.html#a37e0abb58c310a618cd3a994103797f3">is_streaming</a>) {</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="comment">// Only resize when needed</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="viewvideo_8c.html#a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74">viewvideo</a>.<a class="code" href="viewvideo_8h.html#a69fc57936da448ab66dd1e13fec4d66e">downsize_factor</a> != 1) {</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      <a class="code" href="image_8c.html#a1504ec67c03ccbac95d53463d1000311">image_yuv422_downsample</a>(img, &amp;img_small, <a class="code" href="viewvideo_8c.html#a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74">viewvideo</a>.<a class="code" href="viewvideo_8h.html#a69fc57936da448ab66dd1e13fec4d66e">downsize_factor</a>);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      <a class="code" href="jpeg_8c.html#a80691d29cd889f8b549ac6850c95e1b6">jpeg_encode_image</a>(&amp;img_small, &amp;img_jpeg, <a class="code" href="viewvideo_8c.html#a8e90f0654fb109ed5126ce59fbdb5de3">VIEWVIDEO_QUALITY_FACTOR</a>, <a class="code" href="viewvideo_8c.html#a145420c058c30ea1271e8a07f94b8a27">VIEWVIDEO_USE_NETCAT</a>);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      <a class="code" href="jpeg_8c.html#a80691d29cd889f8b549ac6850c95e1b6">jpeg_encode_image</a>(img, &amp;img_jpeg, <a class="code" href="viewvideo_8c.html#a8e90f0654fb109ed5126ce59fbdb5de3">VIEWVIDEO_QUALITY_FACTOR</a>, <a class="code" href="viewvideo_8c.html#a145420c058c30ea1271e8a07f94b8a27">VIEWVIDEO_USE_NETCAT</a>);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="viewvideo_8c.html#a2fca398e492adfafd1cd75def2ea9155">VIEWVIDEO_SHOT_PATH</a>)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">// Check if we are using netcat instead of RTP/UDP</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#ifndef VIEWVIDEO_USE_NETCAT</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="viewvideo_8c.html#a145420c058c30ea1271e8a07f94b8a27">   79</a></span>&#160;<span class="preprocessor">#define VIEWVIDEO_USE_NETCAT FALSE</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#if !VIEWVIDEO_USE_NETCAT &amp;&amp; !(defined VIEWVIDEO_USE_RTP)</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="viewvideo_8c.html#a620cd99a6d07e8129ed89b517aaca1f0">   83</a></span>&#160;<span class="preprocessor">#define VIEWVIDEO_USE_RTP TRUE</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#if VIEWVIDEO_USE_NETCAT</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#include &lt;sys/wait.h&gt;</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<a class="code" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG</a>(<span class="stringliteral">&quot;[viewvideo] Using netcat.&quot;</span>)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="viewvideo_8c.html#a192493a4796af4cc04319b183eaed146">   90</a></span>&#160;<span class="keyword">struct </span><a class="code" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> <a class="code" href="viewvideo_8c.html#a192493a4796af4cc04319b183eaed146">video_sock</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<a class="code" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG</a>(<span class="stringliteral">&quot;[viewvideo] Using RTP/UDP stream.&quot;</span>)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="viewvideo_8c.html#a620cd99a6d07e8129ed89b517aaca1f0">VIEWVIDEO_USE_RTP</a>)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">/* These are defined with configure */</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;PRINT_CONFIG_VAR(VIEWVIDEO_HOST)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;PRINT_CONFIG_VAR(VIEWVIDEO_PORT_OUT)</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">// Initialize the viewvideo structure with the defaults</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="viewvideo_8h.html#a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74">  100</a></span>&#160;struct <a class="code" href="viewvideo_8h.html#structviewvideo__t">viewvideo_t</a> <a class="code" href="viewvideo_8c.html#a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74">viewvideo</a> = {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  .<a class="code" href="viewvideo_8h.html#a37e0abb58c310a618cd3a994103797f3">is_streaming</a> = <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>,</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  .downsize_factor = <a class="code" href="viewvideo_8c.html#a7be96404c0964c92f49f092c0d13634e">VIEWVIDEO_DOWNSIZE_FACTOR</a>,</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  .quality_factor = <a class="code" href="viewvideo_8c.html#a8e90f0654fb109ed5126ce59fbdb5de3">VIEWVIDEO_QUALITY_FACTOR</a>,</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#if !VIEWVIDEO_USE_NETCAT</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  .use_rtp = <a class="code" href="viewvideo_8c.html#a620cd99a6d07e8129ed89b517aaca1f0">VIEWVIDEO_USE_RTP</a>,</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;};</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;bool_t <a class="code" href="viewvideo_8c.html#a6a9f8aa0c7db5b292f18c8266808fe62">viewvideo_function</a>(<span class="keyword">struct</span> <a class="code" href="image_8h.html#structimage__t">image_t</a> *img);</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="viewvideo_8c.html#a6a9f8aa0c7db5b292f18c8266808fe62">  114</a></span>&#160;bool_t <a class="code" href="viewvideo_8c.html#a6a9f8aa0c7db5b292f18c8266808fe62">viewvideo_function</a>(<span class="keyword">struct</span> <a class="code" href="image_8h.html#structimage__t">image_t</a> *img)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;{</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="comment">// Resize image if needed</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keyword">struct </span><a class="code" href="image_8h.html#structimage__t">image_t</a> img_small;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <a class="code" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53">image_create</a>(&amp;img_small,</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;               img-&gt;<a class="code" href="image_8h.html#aa3c13c99294ff126c4c019d5e799253e">w</a> / <a class="code" href="viewvideo_8c.html#a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74">viewvideo</a>.<a class="code" href="viewvideo_8h.html#a69fc57936da448ab66dd1e13fec4d66e">downsize_factor</a>,</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;               img-&gt;<a class="code" href="image_8h.html#a8bcdc857e2b3c08194113808ca2af345">h</a> / <a class="code" href="viewvideo_8c.html#a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74">viewvideo</a>.<a class="code" href="viewvideo_8h.html#a69fc57936da448ab66dd1e13fec4d66e">downsize_factor</a>,</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;               <a class="code" href="image_8h.html#af039c7afe08a5eb2cff06e357227cdb8a704e82d01278e82c17283882911f9dfc">IMAGE_YUV422</a>);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="comment">// Create the JPEG encoded image</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keyword">struct </span><a class="code" href="image_8h.html#structimage__t">image_t</a> img_jpeg;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <a class="code" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53">image_create</a>(&amp;img_jpeg, img_small.<a class="code" href="image_8h.html#aa3c13c99294ff126c4c019d5e799253e">w</a>, img_small.<a class="code" href="image_8h.html#a8bcdc857e2b3c08194113808ca2af345">h</a>, <a class="code" href="image_8h.html#af039c7afe08a5eb2cff06e357227cdb8ae57daacf0b164b5e0c959eb664e3421b">IMAGE_JPEG</a>);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#if VIEWVIDEO_USE_NETCAT</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordtype">char</span> nc_cmd[64];</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  sprintf(nc_cmd, <span class="stringliteral">&quot;nc %s %d 2&gt;/dev/null&quot;</span>, STRINGIFY(VIEWVIDEO_HOST), VIEWVIDEO_PORT_OUT);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#if VIEWVIDEO_USE_NETCAT</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">// Open process to send using netcat (in a fork because sometimes kills itself???)</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    pid_t pid = fork();</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordflow">if</span> (pid &lt; 0) {</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      printf(<span class="stringliteral">&quot;[viewvideo] Could not create netcat fork.\n&quot;</span>);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pid == 0) {</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      <span class="comment">// We are the child and want to send the image</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;      FILE *netcat = popen(nc_cmd, <span class="stringliteral">&quot;w&quot;</span>);</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;      <span class="keywordflow">if</span> (netcat != NULL) {</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        fwrite(jpegbuf, <span class="keyword">sizeof</span>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>), size, netcat);</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        pclose(netcat); <span class="comment">// Ignore output, because it is too much when not connected</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        printf(<span class="stringliteral">&quot;[viewvideo] Failed to open netcat process.\n&quot;</span>);</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;      }</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      <span class="comment">// Exit the program since we don&#39;t want to continue after transmitting</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      exit(0);</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      <span class="comment">// We want to wait until the child is finished</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      wait(NULL);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    }</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="viewvideo_8c.html#a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74">viewvideo</a>.<a class="code" href="viewvideo_8h.html#a7877793a945e5c63a7067c18afa3ac4c">use_rtp</a>) {</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;      <span class="comment">// Send image with RTP</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      <a class="code" href="rtp_8c.html#ab810dc7d46e209624e4edd330edb7bf7">rtp_frame_send</a>(</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        &amp;<a class="code" href="viewvideo_8c.html#a192493a4796af4cc04319b183eaed146">video_sock</a>,              <span class="comment">// UDP socket</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        &amp;img_jpeg,</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        0,                        <span class="comment">// Format 422</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <a class="code" href="viewvideo_8c.html#a8e90f0654fb109ed5126ce59fbdb5de3">VIEWVIDEO_QUALITY_FACTOR</a>, <span class="comment">// Jpeg-Quality</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        0,                        <span class="comment">// DRI Header</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <a class="code" href="viewvideo_8c.html#a769ad673bc2a1bc72bdf96081f4196b9">VIEWVIDEO_RTP_TIME_INC</a>    <span class="comment">// 90kHz time increment</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;      );</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;      <span class="comment">// Extra note: when the time increment is set to 0,</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      <span class="comment">// it is automaticaly calculated by the send_rtp_frame function</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;      <span class="comment">// based on gettimeofday value. This seems to introduce some lag or jitter.</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      <span class="comment">// An other way is to compute the time increment and set the correct value.</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      <span class="comment">// It seems that a lower value is also working (when the frame is received</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;      <span class="comment">// the timestamp is always &quot;late&quot; so the frame is displayed immediately).</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      <span class="comment">// Here, we set the time increment to the lowest possible value</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      <span class="comment">// (1 = 1/90000 s) which is probably stupid but is actually working.</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    }</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  }</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="comment">// Free all buffers</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <a class="code" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba">image_free</a>(&amp;img_jpeg);</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <a class="code" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba">image_free</a>(&amp;img_small);</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;}</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
-<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005">  188</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="viewvideo_8c.html#a8479777ac5ff98cdf58349e741f04005">viewvideo_init</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;{</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordtype">char</span> save_name[512];</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment">//  struct UdpSocket video_sock;</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <a class="code" href="udp__socket_8c.html#add3ac7d3bb65bcff12ae832ec1a2e715">udp_socket_create</a>(&amp;<a class="code" href="viewvideo_8c.html#a192493a4796af4cc04319b183eaed146">video_sock</a>, STRINGIFY(VIEWVIDEO_HOST), VIEWVIDEO_PORT_OUT, -1, VIEWVIDEO_BROADCAST);</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <a class="code" href="cv_8c.html#a2566b3260caf3b9b77136dd574086b99">cv_add</a>(<a class="code" href="viewvideo_8c.html#a6a9f8aa0c7db5b292f18c8266808fe62">viewvideo_function</a>);</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <a class="code" href="viewvideo_8c.html#a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74">viewvideo</a>.<a class="code" href="viewvideo_8h.html#a37e0abb58c310a618cd3a994103797f3">is_streaming</a> = <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="preprocessor">#if VIEWVIDEO_USE_NETCAT</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="comment">// Create an Netcat receiver file for the streaming</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  sprintf(save_name, <span class="stringliteral">&quot;%s/netcat-recv.sh&quot;</span>, STRINGIFY(VIEWVIDEO_SHOT_PATH));</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  FILE *fp = fopen(save_name, <span class="stringliteral">&quot;w&quot;</span>);</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keywordflow">if</span> (fp != NULL) {</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    fprintf(fp, <span class="stringliteral">&quot;i=0\n&quot;</span>);</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    fprintf(fp, <span class="stringliteral">&quot;while true\n&quot;</span>);</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    fprintf(fp, <span class="stringliteral">&quot;do\n&quot;</span>);</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    fprintf(fp, <span class="stringliteral">&quot;\tn=$(printf \&quot;%%04d\&quot; $i)\n&quot;</span>);</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    fprintf(fp, <span class="stringliteral">&quot;\tnc -l 0.0.0.0 %d &gt; img_${n}.jpg\n&quot;</span>, (<span class="keywordtype">int</span>)(VIEWVIDEO_PORT_OUT));</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    fprintf(fp, <span class="stringliteral">&quot;\ti=$((i+1))\n&quot;</span>);</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    fprintf(fp, <span class="stringliteral">&quot;done\n&quot;</span>);</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    fclose(fp);</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  }</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  <span class="comment">// Create an SDP file for the streaming</span></div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  sprintf(save_name, <span class="stringliteral">&quot;%s/stream.sdp&quot;</span>, STRINGIFY(VIEWVIDEO_SHOT_PATH));</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  FILE *fp = fopen(save_name, <span class="stringliteral">&quot;w&quot;</span>);</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="keywordflow">if</span> (fp != NULL) {</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    fprintf(fp, <span class="stringliteral">&quot;v=0\n&quot;</span>);</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    fprintf(fp, <span class="stringliteral">&quot;m=video %d RTP/AVP 26\n&quot;</span>, (<span class="keywordtype">int</span>)(VIEWVIDEO_PORT_OUT));</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    fprintf(fp, <span class="stringliteral">&quot;c=IN IP4 0.0.0.0\n&quot;</span>);</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    fclose(fp);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="viewvideo_8c.html#a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74">viewvideo</a>.<a class="code" href="viewvideo_8h.html#a37e0abb58c310a618cd3a994103797f3">is_streaming</a>) {</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="comment">// Only resize when needed</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="viewvideo_8c.html#a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74">viewvideo</a>.<a class="code" href="viewvideo_8h.html#a69fc57936da448ab66dd1e13fec4d66e">downsize_factor</a> != 1) {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;      <a class="code" href="image_8c.html#a1504ec67c03ccbac95d53463d1000311">image_yuv422_downsample</a>(img, &amp;img_small, <a class="code" href="viewvideo_8c.html#a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74">viewvideo</a>.<a class="code" href="viewvideo_8h.html#a69fc57936da448ab66dd1e13fec4d66e">downsize_factor</a>);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      <a class="code" href="jpeg_8c.html#a80691d29cd889f8b549ac6850c95e1b6">jpeg_encode_image</a>(&amp;img_small, &amp;img_jpeg, <a class="code" href="viewvideo_8c.html#a8e90f0654fb109ed5126ce59fbdb5de3">VIEWVIDEO_QUALITY_FACTOR</a>, <a class="code" href="viewvideo_8c.html#a145420c058c30ea1271e8a07f94b8a27">VIEWVIDEO_USE_NETCAT</a>);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      <a class="code" href="jpeg_8c.html#a80691d29cd889f8b549ac6850c95e1b6">jpeg_encode_image</a>(img, &amp;img_jpeg, <a class="code" href="viewvideo_8c.html#a8e90f0654fb109ed5126ce59fbdb5de3">VIEWVIDEO_QUALITY_FACTOR</a>, <a class="code" href="viewvideo_8c.html#a145420c058c30ea1271e8a07f94b8a27">VIEWVIDEO_USE_NETCAT</a>);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor">#if VIEWVIDEO_USE_NETCAT</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="comment">// Open process to send using netcat (in a fork because sometimes kills itself???)</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    pid_t pid = fork();</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordflow">if</span> (pid &lt; 0) {</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;      printf(<span class="stringliteral">&quot;[viewvideo] Could not create netcat fork.\n&quot;</span>);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pid == 0) {</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      <span class="comment">// We are the child and want to send the image</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      FILE *netcat = popen(nc_cmd, <span class="stringliteral">&quot;w&quot;</span>);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      <span class="keywordflow">if</span> (netcat != NULL) {</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        fwrite(img_jpeg.<a class="code" href="image_8h.html#a4af7d619f8367a3e68fbfad265546011">buf</a>, <span class="keyword">sizeof</span>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>), img_jpeg.<a class="code" href="image_8h.html#a42e8d87861c2a899bd4090bacf58c9dd">buf_size</a>, netcat);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        pclose(netcat); <span class="comment">// Ignore output, because it is too much when not connected</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        printf(<span class="stringliteral">&quot;[viewvideo] Failed to open netcat process.\n&quot;</span>);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;      }</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      <span class="comment">// Exit the program since we don&#39;t want to continue after transmitting</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      exit(0);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      <span class="comment">// We want to wait until the child is finished</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;      wait(NULL);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="viewvideo_8c.html#a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74">viewvideo</a>.<a class="code" href="viewvideo_8h.html#a7877793a945e5c63a7067c18afa3ac4c">use_rtp</a>) {</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      <span class="comment">// Send image with RTP</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;      <a class="code" href="rtp_8c.html#ab810dc7d46e209624e4edd330edb7bf7">rtp_frame_send</a>(</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        &amp;<a class="code" href="viewvideo_8c.html#a192493a4796af4cc04319b183eaed146">video_sock</a>,              <span class="comment">// UDP socket</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        &amp;img_jpeg,</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        0,                        <span class="comment">// Format 422</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <a class="code" href="viewvideo_8c.html#a8e90f0654fb109ed5126ce59fbdb5de3">VIEWVIDEO_QUALITY_FACTOR</a>, <span class="comment">// Jpeg-Quality</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        0,                        <span class="comment">// DRI Header</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <a class="code" href="viewvideo_8c.html#a769ad673bc2a1bc72bdf96081f4196b9">VIEWVIDEO_RTP_TIME_INC</a>    <span class="comment">// 90kHz time increment</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      );</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      <span class="comment">// Extra note: when the time increment is set to 0,</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      <span class="comment">// it is automaticaly calculated by the send_rtp_frame function</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;      <span class="comment">// based on gettimeofday value. This seems to introduce some lag or jitter.</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      <span class="comment">// An other way is to compute the time increment and set the correct value.</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      <span class="comment">// It seems that a lower value is also working (when the frame is received</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      <span class="comment">// the timestamp is always &quot;late&quot; so the frame is displayed immediately).</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;      <span class="comment">// Here, we set the time increment to the lowest possible value</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;      <span class="comment">// (1 = 1/90000 s) which is probably stupid but is actually working.</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    }</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  }</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="comment">// Free all buffers</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <a class="code" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba">image_free</a>(&amp;img_jpeg);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <a class="code" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba">image_free</a>(&amp;img_small);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;}</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005">  198</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="viewvideo_8c.html#a8479777ac5ff98cdf58349e741f04005">viewvideo_init</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;{</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordtype">char</span> save_name[512];</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <a class="code" href="cv_8c.html#a2566b3260caf3b9b77136dd574086b99">cv_add</a>(<a class="code" href="viewvideo_8c.html#a6a9f8aa0c7db5b292f18c8266808fe62">viewvideo_function</a>);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <a class="code" href="viewvideo_8c.html#a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74">viewvideo</a>.<a class="code" href="viewvideo_8h.html#a37e0abb58c310a618cd3a994103797f3">is_streaming</a> = <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="preprocessor">#if VIEWVIDEO_USE_NETCAT</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  <span class="comment">// Create an Netcat receiver file for the streaming</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  sprintf(save_name, <span class="stringliteral">&quot;%s/netcat-recv.sh&quot;</span>, STRINGIFY(<a class="code" href="viewvideo_8c.html#a2fca398e492adfafd1cd75def2ea9155">VIEWVIDEO_SHOT_PATH</a>));</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  FILE *fp = fopen(save_name, <span class="stringliteral">&quot;w&quot;</span>);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="keywordflow">if</span> (fp != NULL) {</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    fprintf(fp, <span class="stringliteral">&quot;i=0\n&quot;</span>);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    fprintf(fp, <span class="stringliteral">&quot;while true\n&quot;</span>);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    fprintf(fp, <span class="stringliteral">&quot;do\n&quot;</span>);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    fprintf(fp, <span class="stringliteral">&quot;\tn=$(printf \&quot;%%04d\&quot; $i)\n&quot;</span>);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    fprintf(fp, <span class="stringliteral">&quot;\tnc -l 0.0.0.0 %d &gt; img_${n}.jpg\n&quot;</span>, (<span class="keywordtype">int</span>)(VIEWVIDEO_PORT_OUT));</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    fprintf(fp, <span class="stringliteral">&quot;\ti=$((i+1))\n&quot;</span>);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    fprintf(fp, <span class="stringliteral">&quot;done\n&quot;</span>);</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    fclose(fp);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    printf(<span class="stringliteral">&quot;[viewvideo] Failed to create netcat receiver file.\n&quot;</span>);</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  }</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;}</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
-<div class="ttc" id="viewvideo_8c_html_a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74"><div class="ttname"><a href="viewvideo_8c.html#a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74">viewvideo</a></div><div class="ttdeci">struct viewvideo_t viewvideo</div><div class="ttdef"><b>Definition:</b> <a href="viewvideo_8c_source.html#l00090">viewvideo.c:90</a></div></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <span class="comment">// Open udp socket</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <a class="code" href="udp__socket_8c.html#add3ac7d3bb65bcff12ae832ec1a2e715">udp_socket_create</a>(&amp;<a class="code" href="viewvideo_8c.html#a192493a4796af4cc04319b183eaed146">video_sock</a>, STRINGIFY(VIEWVIDEO_HOST), VIEWVIDEO_PORT_OUT, -1, VIEWVIDEO_BROADCAST);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="comment">// Create an SDP file for the streaming</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  sprintf(save_name, <span class="stringliteral">&quot;%s/stream.sdp&quot;</span>, STRINGIFY(<a class="code" href="viewvideo_8c.html#a2fca398e492adfafd1cd75def2ea9155">VIEWVIDEO_SHOT_PATH</a>));</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  FILE *fp = fopen(save_name, <span class="stringliteral">&quot;w&quot;</span>);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <span class="keywordflow">if</span> (fp != NULL) {</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    fprintf(fp, <span class="stringliteral">&quot;v=0\n&quot;</span>);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    fprintf(fp, <span class="stringliteral">&quot;m=video %d RTP/AVP 26\n&quot;</span>, (<span class="keywordtype">int</span>)(VIEWVIDEO_PORT_OUT));</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    fprintf(fp, <span class="stringliteral">&quot;c=IN IP4 0.0.0.0\n&quot;</span>);</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    fclose(fp);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    printf(<span class="stringliteral">&quot;[viewvideo] Failed to create SDP file.\n&quot;</span>);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  }</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;}</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="ttc" id="image_8h_html_a42e8d87861c2a899bd4090bacf58c9dd"><div class="ttname"><a href="image_8h.html#a42e8d87861c2a899bd4090bacf58c9dd">image_t::buf_size</a></div><div class="ttdeci">uint32_t buf_size</div><div class="ttdoc">The buffer size. </div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00049">image.h:49</a></div></div>
+<div class="ttc" id="viewvideo_8c_html_a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74"><div class="ttname"><a href="viewvideo_8c.html#a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74">viewvideo</a></div><div class="ttdeci">struct viewvideo_t viewvideo</div><div class="ttdef"><b>Definition:</b> <a href="viewvideo_8c_source.html#l00100">viewvideo.c:100</a></div></div>
 <div class="ttc" id="image_8c_html_a1504ec67c03ccbac95d53463d1000311"><div class="ttname"><a href="image_8c.html#a1504ec67c03ccbac95d53463d1000311">image_yuv422_downsample</a></div><div class="ttdeci">void image_yuv422_downsample(struct image_t *input, struct image_t *output, uint16_t downsample)</div><div class="ttdoc">Simplified high-speed low CPU downsample function without averaging downsample factor must be 1...</div><div class="ttdef"><b>Definition:</b> <a href="image_8c_source.html#l00213">image.c:213</a></div></div>
 <div class="ttc" id="udp__socket_8h_html_structUdpSocket"><div class="ttname"><a href="udp__socket_8h.html#structUdpSocket">UdpSocket</a></div><div class="ttdef"><b>Definition:</b> <a href="udp__socket_8h_source.html#l00034">udp_socket.h:34</a></div></div>
 <div class="ttc" id="viewvideo_8c_html_a769ad673bc2a1bc72bdf96081f4196b9"><div class="ttname"><a href="viewvideo_8c.html#a769ad673bc2a1bc72bdf96081f4196b9">VIEWVIDEO_RTP_TIME_INC</a></div><div class="ttdeci">#define VIEWVIDEO_RTP_TIME_INC</div><div class="ttdef"><b>Definition:</b> <a href="viewvideo_8c_source.html#l00063">viewvideo.c:63</a></div></div>
@@ -327,8 +343,9 @@ $(document).ready(function(){initNavTree('viewvideo_8c_source.html','');});
 <div class="ttc" id="image_8c_html_ab5cc0250c461b9d2f043e4884f6b9a53"><div class="ttname"><a href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53">image_create</a></div><div class="ttdeci">void image_create(struct image_t *img, uint16_t width, uint16_t height, enum image_type type)</div><div class="ttdoc">Create a new image. </div><div class="ttdef"><b>Definition:</b> <a href="image_8c_source.html#l00038">image.c:38</a></div></div>
 <div class="ttc" id="udp__socket_8h_html"><div class="ttname"><a href="udp__socket_8h.html">udp_socket.h</a></div><div class="ttdoc">Easily create and use UDP sockets. </div></div>
 <div class="ttc" id="image_8h_html_structimage__t"><div class="ttname"><a href="image_8h.html#structimage__t">image_t</a></div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00042">image.h:42</a></div></div>
+<div class="ttc" id="viewvideo_8c_html_a2fca398e492adfafd1cd75def2ea9155"><div class="ttname"><a href="viewvideo_8c.html#a2fca398e492adfafd1cd75def2ea9155">VIEWVIDEO_SHOT_PATH</a></div><div class="ttdeci">#define VIEWVIDEO_SHOT_PATH</div><div class="ttdef"><b>Definition:</b> <a href="viewvideo_8c_source.html#l00072">viewvideo.c:72</a></div></div>
 <div class="ttc" id="viewvideo_8h_html_a37e0abb58c310a618cd3a994103797f3"><div class="ttname"><a href="viewvideo_8h.html#a37e0abb58c310a618cd3a994103797f3">viewvideo_t::is_streaming</a></div><div class="ttdeci">volatile bool_t is_streaming</div><div class="ttdoc">When the device is streaming. </div><div class="ttdef"><b>Definition:</b> <a href="viewvideo_8h_source.html#l00039">viewvideo.h:39</a></div></div>
-<div class="ttc" id="viewvideo_8c_html_a145420c058c30ea1271e8a07f94b8a27"><div class="ttname"><a href="viewvideo_8c.html#a145420c058c30ea1271e8a07f94b8a27">VIEWVIDEO_USE_NETCAT</a></div><div class="ttdeci">#define VIEWVIDEO_USE_NETCAT</div><div class="ttdef"><b>Definition:</b> <a href="viewvideo_8c_source.html#l00069">viewvideo.c:69</a></div></div>
+<div class="ttc" id="viewvideo_8c_html_a145420c058c30ea1271e8a07f94b8a27"><div class="ttname"><a href="viewvideo_8c.html#a145420c058c30ea1271e8a07f94b8a27">VIEWVIDEO_USE_NETCAT</a></div><div class="ttdeci">#define VIEWVIDEO_USE_NETCAT</div><div class="ttdef"><b>Definition:</b> <a href="viewvideo_8c_source.html#l00079">viewvideo.c:79</a></div></div>
 <div class="ttc" id="rtp_8c_html_ab810dc7d46e209624e4edd330edb7bf7"><div class="ttname"><a href="rtp_8c.html#ab810dc7d46e209624e4edd330edb7bf7">rtp_frame_send</a></div><div class="ttdeci">void rtp_frame_send(struct UdpSocket *udp, struct image_t *img, uint8_t format_code, uint8_t quality_code, uint8_t has_dri_header, uint32_t delta_t)</div><div class="ttdoc">Send an RTP frame. </div><div class="ttdef"><b>Definition:</b> <a href="rtp_8c_source.html#l00097">rtp.c:97</a></div></div>
 <div class="ttc" id="std_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> <a href="std_8h_source.html#l00005">std.h:5</a></div></div>
 <div class="ttc" id="viewvideo_8h_html_structviewvideo__t"><div class="ttname"><a href="viewvideo_8h.html#structviewvideo__t">viewvideo_t</a></div><div class="ttdef"><b>Definition:</b> <a href="viewvideo_8h_source.html#l00038">viewvideo.h:38</a></div></div>
@@ -338,13 +355,14 @@ $(document).ready(function(){initNavTree('viewvideo_8c_source.html','');});
 <div class="ttc" id="image_8h_html_aa3c13c99294ff126c4c019d5e799253e"><div class="ttname"><a href="image_8h.html#aa3c13c99294ff126c4c019d5e799253e">image_t::w</a></div><div class="ttdeci">uint16_t w</div><div class="ttdoc">Image width. </div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00044">image.h:44</a></div></div>
 <div class="ttc" id="cv_8h_html"><div class="ttname"><a href="cv_8h.html">cv.h</a></div><div class="ttdoc">Computer vision framework for onboard processing. </div></div>
 <div class="ttc" id="image_8h_html_a8bcdc857e2b3c08194113808ca2af345"><div class="ttname"><a href="image_8h.html#a8bcdc857e2b3c08194113808ca2af345">image_t::h</a></div><div class="ttdeci">uint16_t h</div><div class="ttdoc">Image height. </div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00045">image.h:45</a></div></div>
-<div class="ttc" id="viewvideo_8c_html_a192493a4796af4cc04319b183eaed146"><div class="ttname"><a href="viewvideo_8c.html#a192493a4796af4cc04319b183eaed146">video_sock</a></div><div class="ttdeci">struct UdpSocket video_sock</div><div class="ttdoc">Handles all the video streaming and saving of the image shots This is a sepereate thread...</div><div class="ttdef"><b>Definition:</b> <a href="viewvideo_8c_source.html#l00101">viewvideo.c:101</a></div></div>
+<div class="ttc" id="viewvideo_8c_html_a192493a4796af4cc04319b183eaed146"><div class="ttname"><a href="viewvideo_8c.html#a192493a4796af4cc04319b183eaed146">video_sock</a></div><div class="ttdeci">struct UdpSocket video_sock</div><div class="ttdef"><b>Definition:</b> <a href="viewvideo_8c_source.html#l00090">viewvideo.c:90</a></div></div>
 <div class="ttc" id="ins__vectornav_8c_html_aa01d3425df2eb0f33ced38c9d8fa8f05"><div class="ttname"><a href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG</a></div><div class="ttdeci">PRINT_CONFIG_MSG(&quot;USE_INS_NAV_INIT defaulting to TRUE&quot;)</div></div>
-<div class="ttc" id="viewvideo_8c_html_a620cd99a6d07e8129ed89b517aaca1f0"><div class="ttname"><a href="viewvideo_8c.html#a620cd99a6d07e8129ed89b517aaca1f0">VIEWVIDEO_USE_RTP</a></div><div class="ttdeci">#define VIEWVIDEO_USE_RTP</div><div class="ttdef"><b>Definition:</b> <a href="viewvideo_8c_source.html#l00072">viewvideo.c:72</a></div></div>
-<div class="ttc" id="viewvideo_8c_html_a6a9f8aa0c7db5b292f18c8266808fe62"><div class="ttname"><a href="viewvideo_8c.html#a6a9f8aa0c7db5b292f18c8266808fe62">viewvideo_function</a></div><div class="ttdeci">bool_t viewvideo_function(struct image_t *img)</div><div class="ttdef"><b>Definition:</b> <a href="viewvideo_8c_source.html#l00103">viewvideo.c:103</a></div></div>
+<div class="ttc" id="image_8h_html_a4af7d619f8367a3e68fbfad265546011"><div class="ttname"><a href="image_8h.html#a4af7d619f8367a3e68fbfad265546011">image_t::buf</a></div><div class="ttdeci">void * buf</div><div class="ttdoc">Image buffer (depending on the image_type) </div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00050">image.h:50</a></div></div>
+<div class="ttc" id="viewvideo_8c_html_a620cd99a6d07e8129ed89b517aaca1f0"><div class="ttname"><a href="viewvideo_8c.html#a620cd99a6d07e8129ed89b517aaca1f0">VIEWVIDEO_USE_RTP</a></div><div class="ttdeci">#define VIEWVIDEO_USE_RTP</div><div class="ttdef"><b>Definition:</b> <a href="viewvideo_8c_source.html#l00083">viewvideo.c:83</a></div></div>
+<div class="ttc" id="viewvideo_8c_html_a6a9f8aa0c7db5b292f18c8266808fe62"><div class="ttname"><a href="viewvideo_8c.html#a6a9f8aa0c7db5b292f18c8266808fe62">viewvideo_function</a></div><div class="ttdeci">bool_t viewvideo_function(struct image_t *img)</div><div class="ttdoc">Handles all the video streaming and saving of the image shots This is a sepereate thread...</div><div class="ttdef"><b>Definition:</b> <a href="viewvideo_8c_source.html#l00114">viewvideo.c:114</a></div></div>
 <div class="ttc" id="cv_8c_html_a2566b3260caf3b9b77136dd574086b99"><div class="ttname"><a href="cv_8c.html#a2566b3260caf3b9b77136dd574086b99">cv_add</a></div><div class="ttdeci">void cv_add(cvFunction func)</div><div class="ttdef"><b>Definition:</b> <a href="cv_8c_source.html#l00035">cv.c:35</a></div></div>
 <div class="ttc" id="jpeg_8h_html"><div class="ttname"><a href="jpeg_8h.html">jpeg.h</a></div><div class="ttdoc">Encode images with the use of the JPEG encoding. </div></div>
-<div class="ttc" id="viewvideo_8c_html_a8479777ac5ff98cdf58349e741f04005"><div class="ttname"><a href="viewvideo_8c.html#a8479777ac5ff98cdf58349e741f04005">viewvideo_init</a></div><div class="ttdeci">void viewvideo_init(void)</div><div class="ttdoc">Initialize the view video. </div><div class="ttdef"><b>Definition:</b> <a href="viewvideo_8c_source.html#l00188">viewvideo.c:188</a></div></div>
+<div class="ttc" id="viewvideo_8c_html_a8479777ac5ff98cdf58349e741f04005"><div class="ttname"><a href="viewvideo_8c.html#a8479777ac5ff98cdf58349e741f04005">viewvideo_init</a></div><div class="ttdeci">void viewvideo_init(void)</div><div class="ttdoc">Initialize the view video. </div><div class="ttdef"><b>Definition:</b> <a href="viewvideo_8c_source.html#l00198">viewvideo.c:198</a></div></div>
 <div class="ttc" id="viewvideo_8h_html"><div class="ttname"><a href="viewvideo_8h.html">viewvideo.h</a></div><div class="ttdoc">Get live images from a RTP/UDP stream and save pictures on internal memory. </div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="udp__socket_8c_html_add3ac7d3bb65bcff12ae832ec1a2e715"><div class="ttname"><a href="udp__socket_8c.html#add3ac7d3bb65bcff12ae832ec1a2e715">udp_socket_create</a></div><div class="ttdeci">int udp_socket_create(struct UdpSocket *sock, char *host, int port_out, int port_in, bool_t broadcast)</div><div class="ttdoc">Create UDP socket and bind it. </div><div class="ttdef"><b>Definition:</b> <a href="udp__socket_8c_source.html#l00049">udp_socket.c:49</a></div></div>
@@ -359,7 +377,7 @@ $(document).ready(function(){initNavTree('viewvideo_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="viewvideo_8c.html">viewvideo.c</a></li>
-    <li class="footer">Generated on Wed Nov 11 2015 02:01:09 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:01:22 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

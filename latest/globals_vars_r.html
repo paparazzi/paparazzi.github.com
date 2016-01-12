@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -150,12 +150,20 @@ $(document).ready(function(){initNavTree('globals_vars_r.html','');});
 &#160;
 
 <h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
+<li>r_dot_new
+: <a class="el" href="guidance__OA_8c.html#a264f6ffe326bde98f4a7ae552179f758">guidance_OA.c</a>
+, <a class="el" href="guidance__OA_8h.html#a264f6ffe326bde98f4a7ae552179f758">guidance_OA.h</a>
+</li>
+<li>R_kal
+: <a class="el" href="obstacle__avoidance_8c.html#afe030233882d14003e15fba4b0d13719">obstacle_avoidance.c</a>
+</li>
 <li>radio_control
 : <a class="el" href="radio__control_8c.html#a8fe61a8aa3f1859efec4bb06bc1134dc">radio_control.c</a>
 , <a class="el" href="radio__control_8h.html#a8fe61a8aa3f1859efec4bb06bc1134dc">radio_control.h</a>
 </li>
 <li>radio_control_tid
 : <a class="el" href="rotorcraft_2main_8c.html#a642adb8e14e348b49a460cadebe6608b">main.c</a>
+, <a class="el" href="rotorcraft_2main__fbw_8c.html#a642adb8e14e348b49a460cadebe6608b">main_fbw.c</a>
 </li>
 <li>radius
 : <a class="el" href="chemotaxis_8c.html#a5050a760c11da521cd4aee6336f6529f">chemotaxis.c</a>
@@ -215,6 +223,9 @@ $(document).ready(function(){initNavTree('globals_vars_r.html','');});
 <li>read_format
 : <a class="el" href="jpeg_8c.html#a202e842bdaddeb7fa6672ada511a148c">jpeg.c</a>
 </li>
+<li>READimageBuffer_old
+: <a class="el" href="obstacle__avoidance_8c.html#adabdd79b875004ed20061c168bc97500">obstacle_avoidance.c</a>
+</li>
 <li>recievedData
 : <a class="el" href="modules_2ins_2ins__arduimu_8c.html#a7ad0b6baa7c668497b49a342fbddc246">ins_arduimu.c</a>
 , <a class="el" href="modules_2ins_2ins__arduimu__basic_8c.html#a7ad0b6baa7c668497b49a342fbddc246">ins_arduimu_basic.c</a>
@@ -233,12 +244,33 @@ $(document).ready(function(){initNavTree('globals_vars_r.html','');});
 <li>ref_alt_init
 : <a class="el" href="baro__amsys_8c.html#a00e20ebd6b78b77ed709bffa5219c051">baro_amsys.c</a>
 </li>
+<li>ref_pitch
+: <a class="el" href="guidance__OA_8c.html#a87bacea2b0bab9265ed2f255198d38c0">guidance_OA.c</a>
+, <a class="el" href="guidance__OA_8h.html#a87bacea2b0bab9265ed2f255198d38c0">guidance_OA.h</a>
+, <a class="el" href="follow__me_8c.html#a87bacea2b0bab9265ed2f255198d38c0">follow_me.c</a>
+, <a class="el" href="follow__me_8h.html#a87bacea2b0bab9265ed2f255198d38c0">follow_me.h</a>
+</li>
+<li>ref_roll
+: <a class="el" href="guidance__OA_8c.html#afd52552e7dc0c1f6f124bdd4343f978c">guidance_OA.c</a>
+, <a class="el" href="guidance__OA_8h.html#afd52552e7dc0c1f6f124bdd4343f978c">guidance_OA.h</a>
+, <a class="el" href="follow__me_8c.html#afd52552e7dc0c1f6f124bdd4343f978c">follow_me.c</a>
+, <a class="el" href="follow__me_8h.html#afd52552e7dc0c1f6f124bdd4343f978c">follow_me.h</a>
+</li>
 <li>ref_sensor_samples
 : <a class="el" href="ahrs__aligner_8c.html#add17db62c42b1076a998bac38c552708">ahrs_aligner.c</a>
+</li>
+<li>ref_yaw
+: <a class="el" href="obstacle__avoidance_8c.html#a0862abd562be2475e7e0e31766c18528">obstacle_avoidance.c</a>
 </li>
 <li>reference_acceleration
 : <a class="el" href="stabilization__attitude__quat__indi_8c.html#a6be6232124313cc99a13ce5c9f453b6a">stabilization_attitude_quat_indi.c</a>
 , <a class="el" href="stabilization__attitude__quat__indi_8h.html#a6be6232124313cc99a13ce5c9f453b6a">stabilization_attitude_quat_indi.h</a>
+</li>
+<li>reference_pitch
+: <a class="el" href="obstacle__avoidance_8c.html#ae078454b01eeea1d1a0e431c5f04fd33">obstacle_avoidance.c</a>
+</li>
+<li>reference_roll
+: <a class="el" href="obstacle__avoidance_8c.html#a6aabf9220117593bd01478bb71ac6fff">obstacle_avoidance.c</a>
 </li>
 <li>relaunch_reading_memory
 : <a class="el" href="high__speed__logger__direct__memory_8c.html#ab998d0a08b382adc864f654d3f576195">high_speed_logger_direct_memory.c</a>
@@ -248,6 +280,22 @@ $(document).ready(function(){initNavTree('globals_vars_r.html','');});
 </li>
 <li>renorm_sqrt_count
 : <a class="el" href="ahrs__float__dcm_8h.html#a1814455019292840abf28c91a27f2080">ahrs_float_dcm.h</a>
+</li>
+<li>repulsionforce_filter_flag
+: <a class="el" href="guidance__OA_8h.html#a8fd84e5f3905fb563d8e23bc56fc68e0">guidance_OA.h</a>
+, <a class="el" href="guidance__OA_8c.html#a8fd84e5f3905fb563d8e23bc56fc68e0">guidance_OA.c</a>
+</li>
+<li>Repulsionforce_Kan
+: <a class="el" href="obstacle__avoidance_8c.html#a4f3a8d7368e59228403cdb7991e3cf74">obstacle_avoidance.c</a>
+</li>
+<li>Repulsionforce_Kan_old
+: <a class="el" href="obstacle__avoidance_8c.html#a60ce39e5208762d65f67eaf2d4b90b98">obstacle_avoidance.c</a>
+</li>
+<li>Repulsionforce_Kan_send
+: <a class="el" href="obstacle__avoidance_8c.html#a847959ad86a23a15e74c5377d154b649">obstacle_avoidance.c</a>
+</li>
+<li>Repulsionforce_Used
+: <a class="el" href="obstacle__avoidance_8c.html#ab879e80e449f7ae2c9077c72c7343636">obstacle_avoidance.c</a>
 </li>
 <li>req
 : <a class="el" href="px4flow_8c.html#a11dd1089b4ce30528383cfa24a3c6c23">px4flow.c</a>
@@ -265,7 +313,8 @@ $(document).ready(function(){initNavTree('globals_vars_r.html','');});
 : <a class="el" href="hf__float_8c.html#afec83e3697675c3915f9d3b46f040fe1">hf_float.c</a>
 </li>
 <li>roll_coef
-: <a class="el" href="motor__mixing_8c.html#ac24face7eff523838a17e0706583464a">motor_mixing.c</a>
+: <a class="el" href="swashplate__mixing_8c.html#ae9314a09d7bb1225dea109c1c7985e1c">swashplate_mixing.c</a>
+, <a class="el" href="motor__mixing_8c.html#ac24face7eff523838a17e0706583464a">motor_mixing.c</a>
 </li>
 <li>roll_filt
 : <a class="el" href="guidance__indi_8c.html#af6bc8b537f62cc88d73bec91634aa0ad">guidance_indi.c</a>
@@ -280,16 +329,16 @@ $(document).ready(function(){initNavTree('globals_vars_r.html','');});
 : <a class="el" href="sim__ap_8c.html#a95c46e0fbd85e6d4bc68cf7dff52395b">sim_ap.c</a>
 </li>
 <li>rotorcraft_cam_mode
-: <a class="el" href="rotorcraft__cam_8h.html#a4f854e9e805596e5127d9045839b5fdc">rotorcraft_cam.h</a>
-, <a class="el" href="rotorcraft__cam_8c.html#a4f854e9e805596e5127d9045839b5fdc">rotorcraft_cam.c</a>
+: <a class="el" href="rotorcraft__cam_8c.html#a4f854e9e805596e5127d9045839b5fdc">rotorcraft_cam.c</a>
+, <a class="el" href="rotorcraft__cam_8h.html#a4f854e9e805596e5127d9045839b5fdc">rotorcraft_cam.h</a>
 </li>
 <li>rotorcraft_cam_pan
 : <a class="el" href="rotorcraft__cam_8h.html#a51ace79b92e7c5ab69438597883a4c8c">rotorcraft_cam.h</a>
 , <a class="el" href="rotorcraft__cam_8c.html#a51ace79b92e7c5ab69438597883a4c8c">rotorcraft_cam.c</a>
 </li>
 <li>rotorcraft_cam_tilt
-: <a class="el" href="rotorcraft__cam_8h.html#a6565dd8f5371a7c2509896667262fbea">rotorcraft_cam.h</a>
-, <a class="el" href="rotorcraft__cam_8c.html#a6565dd8f5371a7c2509896667262fbea">rotorcraft_cam.c</a>
+: <a class="el" href="rotorcraft__cam_8c.html#a6565dd8f5371a7c2509896667262fbea">rotorcraft_cam.c</a>
+, <a class="el" href="rotorcraft__cam_8h.html#a6565dd8f5371a7c2509896667262fbea">rotorcraft_cam.h</a>
 </li>
 <li>rotorcraft_cam_tilt_pwm
 : <a class="el" href="rotorcraft__cam_8h.html#adda457c04709dca302b7342870c93dc8">rotorcraft_cam.h</a>
@@ -308,7 +357,7 @@ $(document).ready(function(){initNavTree('globals_vars_r.html','');});
 : <a class="el" href="stm32_2usb__ser__hw_8c.html#a90b28b942423439806a256e9eac0dea3">usb_ser_hw.c</a>
 </li>
 <li>rxfifo
-: <a class="el" href="stm32_2usb__ser__hw_8c.html#a5de2491cb8694adb40dfe18df1da27d8">usb_ser_hw.c</a>
+: <a class="el" href="lpc21_2usb__ser__hw_8c.html#a5de2491cb8694adb40dfe18df1da27d8">usb_ser_hw.c</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -316,7 +365,7 @@ $(document).ready(function(){initNavTree('globals_vars_r.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 11 2015 02:02:14 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:02:31 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

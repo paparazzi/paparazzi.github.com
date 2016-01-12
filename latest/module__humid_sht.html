@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -111,8 +111,9 @@ Example for airframe file</h1>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;load name=&quot;humid_sht.xml&quot;&gt;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    &lt;define name=&quot;SHT_DAT_GPIO&quot; value=&quot;port,pin&quot; /&gt;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    &lt;define name=&quot;SHT_SCK_GPIO&quot; value=&quot;port,pin&quot; /&gt;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;/load&gt;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;&lt;/modules&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    &lt;define name=&quot;SHT_SDLOG&quot; value=&quot;TRUE|FALSE&quot; /&gt;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  &lt;/load&gt;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;&lt;/modules&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__humid_sht"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
@@ -122,6 +123,8 @@ Define Options</h2>
  Description: data GPIO (e.g.: GPIOA,GPIO8)</li>
 <li><b>name:</b> <code>SHT_SCK_GPIO</code> <b>value:</b> <em>port,pin</em> <br />
  Description: clock GPIO (e.g.: GPIOA,GPIO9)</li>
+<li><b>name:</b> <code>SHT_SDLOG</code> <b>value:</b> <em>TRUE|FALSE</em> <br />
+ Description: start logging to SD card</li>
 </ul>
 <h1><a class="anchor" id="functions__humid_sht"></a>
 Module functions</h1>
@@ -167,6 +170,7 @@ Raw humid_sht.xml file:</h2>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line">    &lt;define name=&quot;SHT_DAT_GPIO&quot; value=&quot;port,pin&quot; description=&quot;data GPIO (e.g.: GPIOA,GPIO8)&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;SHT_SCK_GPIO&quot; value=&quot;port,pin&quot; description=&quot;clock GPIO (e.g.: GPIOA,GPIO9)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;SHT_SDLOG&quot; value=&quot;TRUE|FALSE&quot; description=&quot;start logging to SD card&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;humid_sht.h&quot;/&gt;</div>
@@ -184,7 +188,7 @@ Raw humid_sht.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Nov 11 2015 02:01:52 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:02:08 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

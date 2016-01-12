@@ -2,13 +2,16 @@ var bluegiga_8c =
 [
     [ "BLUEGIGA_DRDY_GPIO", "bluegiga_8c.html#a65367c2226921460d9a5cde98a5e2e7e", null ],
     [ "BLUEGIGA_DRDY_GPIO_PIN", "bluegiga_8c.html#a05e14557a4967f8d6440ff2219d90ed3", null ],
+    [ "Pprz_StxOfMsg", "bluegiga_8c.html#a625d01750db381e8276adeb1c03b560e", null ],
+    [ "RssiOfSender", "bluegiga_8c.html#acbfc9b1d908a27ff68790bdc6f271742", null ],
+    [ "SenderIdOfMsg", "bluegiga_8c.html#a64676521497bca7981efa997be80e678", null ],
+    [ "TxStrengthOfSender", "bluegiga_8c.html#a0f76537c7c5b424e21d78a12041e9db2", null ],
+    [ "bluegiga_broadcast_msg", "bluegiga_8c.html#a319f8e3ab43913066407c2d009e8e366", null ],
     [ "bluegiga_ch_available", "bluegiga_8c.html#a746c54bc6bba1fd3d133fe6d35c444c2", null ],
     [ "bluegiga_increment_buf", "bluegiga_8c.html#ad59d5db2be5ea429bc32bddfab4f39f3", null ],
     [ "bluegiga_init", "bluegiga_8c.html#ac8a60ccee96fbe718a27b6194f3f14e0", null ],
-    [ "bluegiga_load_tx", "bluegiga_8c.html#a95be3ef04141e5037bfd21e88d87d3ef", null ],
+    [ "bluegiga_load_tx", "bluegiga_8c.html#a916d36665c2e3144ac83612875e5af59", null ],
     [ "bluegiga_receive", "bluegiga_8c.html#a50a0f979fdb5e8cb70090c6de5f203ac", null ],
-    [ "bluegiga_request_all_rssi", "bluegiga_8c.html#a3b85e292d142346f4120761f59cf2b7c", null ],
-    [ "bluegiga_scan", "bluegiga_8c.html#a59308e111064cd1a2771e8696198a16e", null ],
     [ "bluegiga_transmit", "bluegiga_8c.html#abe358f767725314dab7b28a59e51989c", null ],
     [ "dev_char_available", "bluegiga_8c.html#a9b6278c5129408fea7fcd6ef782bb566", null ],
     [ "dev_check_free_space", "bluegiga_8c.html#a0d78dd9a3c384d5c4297995e67672a0f", null ],
@@ -17,8 +20,7 @@ var bluegiga_8c =
     [ "dev_send_message", "bluegiga_8c.html#a744a798d7f20038899dd99d52e656676", null ],
     [ "trans_cb", "bluegiga_8c.html#a81dec5456e47bf1870486a85600c7e1c", null ],
     [ "bluegiga_p", "bluegiga_8c.html#ac12d1ee016c26361e1e48e9ee7b5dc27", null ],
-    [ "bluegiga_rssi", "bluegiga_8c.html#a9adb81268f523a2a05d476d5f64676ed", null ],
     [ "bluegiga_spi", "bluegiga_8c.html#a8198c460a2a8487b2c7f123794fcf1e9", null ],
-    [ "coms_status", "bluegiga_8c.html#a63fb36ed0551dd092ac6f34c76bb6168", null ],
-    [ "telemetry_copy", "bluegiga_8c.html#a3945da57e9f43939a5fdb9fecb610366", null ]
+    [ "broadcast_msg", "bluegiga_8c.html#a876337cc7116d327068525c915f302e1", null ],
+    [ "coms_status", "bluegiga_8c.html#a63fb36ed0551dd092ac6f34c76bb6168", null ]
 ];

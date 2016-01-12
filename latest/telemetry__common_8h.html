@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -107,6 +107,7 @@ $(document).ready(function(){initNavTree('telemetry__common_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -120,6 +121,7 @@ $(document).ready(function(){initNavTree('telemetry__common_8h.html','');});
 <code>#include &quot;std.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="link__device_8h_source.html">mcu_periph/link_device.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="transport_8h_source.html">subsystems/datalink/transport.h</a>&quot;</code><br />
+<code>#include &quot;messages.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for telemetry_common.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -143,13 +145,21 @@ $(document).ready(function(){initNavTree('telemetry__common_8h.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:structtelemetry__cb__slots"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="telemetry__common_8h.html#structtelemetry__cb__slots">telemetry_cb_slots</a></td></tr>
+<tr class="separator:structtelemetry__cb__slots"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structperiodic__telemetry"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="telemetry__common_8h.html#structperiodic__telemetry">periodic_telemetry</a></td></tr>
 <tr class="memdesc:structperiodic__telemetry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Periodic telemetry structure.  <a href="telemetry__common_8h.html#structperiodic__telemetry">More...</a><br /></td></tr>
 <tr class="separator:structperiodic__telemetry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a32d9883689091cb5c2b2748e5e2806aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="telemetry__common_8h.html#a32d9883689091cb5c2b2748e5e2806aa">TELEMETRY_NB_CBS</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memdesc:a32d9883689091cb5c2b2748e5e2806aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of callbacks that can be registered per msg  <a href="#a32d9883689091cb5c2b2748e5e2806aa">More...</a><br /></td></tr>
+<tr class="separator:a32d9883689091cb5c2b2748e5e2806aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a5ce68bb3b13fda90c00109c1defe5d40"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="telemetry__common_8h.html#a5ce68bb3b13fda90c00109c1defe5d40">telemetry_cb</a> )(struct <a class="el" href="transport_8h.html#structtransport__tx">transport_tx</a> *trans, struct <a class="el" href="link__device_8h.html#structlink__device">link_device</a> *<a class="el" href="stereo__avoid_8c.html#a9f087ebe99b13f4c1e6696f2b3c20dea">dev</a>)</td></tr>
+<tr class="memitem:a5ce68bb3b13fda90c00109c1defe5d40"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="telemetry__common_8h.html#a5ce68bb3b13fda90c00109c1defe5d40">telemetry_cb</a> )(struct <a class="el" href="transport_8h.html#structtransport__tx">transport_tx</a> *trans, struct <a class="el" href="link__device_8h.html#structlink__device">link_device</a> *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
 <tr class="memdesc:a5ce68bb3b13fda90c00109c1defe5d40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Telemetry callback definition.  <a href="#a5ce68bb3b13fda90c00109c1defe5d40">More...</a><br /></td></tr>
 <tr class="separator:a5ce68bb3b13fda90c00109c1defe5d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32d09d3f902d4049b297558a9849e0f4"><td class="memItemLeft" align="right" valign="top">typedef const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="telemetry__common_8h.html#a32d09d3f902d4049b297558a9849e0f4">telemetry_msg</a> [64]</td></tr>
@@ -158,9 +168,9 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae28877437a5f5dd72809fb77c50fc0df"><td class="memItemLeft" align="right" valign="top">static bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="telemetry__common_8h.html#ae28877437a5f5dd72809fb77c50fc0df">register_periodic_telemetry</a> (struct <a class="el" href="telemetry__common_8h.html#structperiodic__telemetry">periodic_telemetry</a> *_pt, const char *_msg, <a class="el" href="telemetry__common_8h.html#a5ce68bb3b13fda90c00109c1defe5d40">telemetry_cb</a> _cb)</td></tr>
-<tr class="memdesc:ae28877437a5f5dd72809fb77c50fc0df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a telemetry callback function.  <a href="#ae28877437a5f5dd72809fb77c50fc0df">More...</a><br /></td></tr>
-<tr class="separator:ae28877437a5f5dd72809fb77c50fc0df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b3d79cf4bb115055da55757f87e0846"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="telemetry__common_8h.html#a9b3d79cf4bb115055da55757f87e0846">register_periodic_telemetry</a> (struct <a class="el" href="telemetry__common_8h.html#structperiodic__telemetry">periodic_telemetry</a> *_pt, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _id, <a class="el" href="telemetry__common_8h.html#a5ce68bb3b13fda90c00109c1defe5d40">telemetry_cb</a> _cb)</td></tr>
+<tr class="memdesc:a9b3d79cf4bb115055da55757f87e0846"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a telemetry callback function.  <a href="#a9b3d79cf4bb115055da55757f87e0846">More...</a><br /></td></tr>
+<tr class="separator:a9b3d79cf4bb115055da55757f87e0846"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7b402e73b2c27992c64528b9d064a8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="telemetry__common_8h.html#ae7b402e73b2c27992c64528b9d064a8c">periodic_telemetry_err_report</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _process, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _mode, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _id)</td></tr>
 <tr class="memdesc:ae7b402e73b2c27992c64528b9d064a8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an error report when trying to send message that as not been register.  <a href="#ae7b402e73b2c27992c64528b9d064a8c">More...</a><br /></td></tr>
 <tr class="separator:ae7b402e73b2c27992c64528b9d064a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,6 +180,44 @@ Functions</h2></td></tr>
 
 <p>Definition in file <a class="el" href="telemetry__common_8h_source.html">telemetry_common.h</a>.</p>
 </div><hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="structtelemetry__cb__slots" id="structtelemetry__cb__slots"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct telemetry_cb_slots</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p>Definition at line <a class="el" href="telemetry__common_8h_source.html#l00049">49</a> of file <a class="el" href="telemetry__common_8h_source.html">telemetry_common.h</a>.</p>
+</div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for telemetry_cb_slots:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="structtelemetry__cb__slots__coll__graph.png" border="0" usemap="#telemetry__cb__slots_coll__map" alt="Collaboration graph"/></div>
+<map name="telemetry__cb__slots_coll__map" id="telemetry__cb__slots_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aa777fe9ae55c6448e53c35cde3f21847"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<td class="fieldname">
+id</td>
+<td class="fielddoc">
+id of telemetry message </td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a0c4b91509d63b97615d641bead57636f"></a><a class="el" href="telemetry__common_8h.html#a5ce68bb3b13fda90c00109c1defe5d40">telemetry_cb</a></td>
+<td class="fieldname">
+slots[<a class="el" href="telemetry__common_8h.html#a32d9883689091cb5c2b2748e5e2806aa">TELEMETRY_NB_CBS</a>]</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
 <a name="structperiodic__telemetry" id="structperiodic__telemetry"></a>
 <div class="memitem">
 <div class="memproto">
@@ -182,21 +230,24 @@ Functions</h2></td></tr>
 <div class="textblock"><p>Periodic telemetry structure. </p>
 <p>Contains the total number of messages (from generated telemetry file) and the list of registered callbacks </p>
 
-<p>Definition at line <a class="el" href="telemetry__common_8h_source.html#l00050">50</a> of file <a class="el" href="telemetry__common_8h_source.html">telemetry_common.h</a>.</p>
-</div><table class="fieldtable">
+<p>Definition at line <a class="el" href="telemetry__common_8h_source.html#l00058">58</a> of file <a class="el" href="telemetry__common_8h_source.html">telemetry_common.h</a>.</p>
+</div><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Collaboration diagram for periodic_telemetry:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="structperiodic__telemetry__coll__graph.png" border="0" usemap="#periodic__telemetry_coll__map" alt="Collaboration graph"/></div>
+<map name="periodic__telemetry_coll__map" id="periodic__telemetry_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a1804389a1120d1dc1183509f7f638ad9"></a><a class="el" href="telemetry__common_8h.html#a5ce68bb3b13fda90c00109c1defe5d40">telemetry_cb</a> *</td>
+<a class="anchor" id="abb87697b5ea2cc38c2c764b0ff77fd31"></a>struct <a class="el" href="telemetry__common_8h.html#structtelemetry__cb__slots">telemetry_cb_slots</a> *</td>
 <td class="fieldname">
 cbs</td>
 <td class="fielddoc">
-array of associated callbacks </td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a6dac778e14b0b600feacf6582402e8fa"></a><a class="el" href="telemetry__common_8h.html#a32d09d3f902d4049b297558a9849e0f4">telemetry_msg</a> *</td>
-<td class="fieldname">
-msgs</td>
-<td class="fielddoc">
-the array of msg names </td></tr>
+array of callbacks defined through TELEMETRY_MSG </td></tr>
 <tr><td class="fieldtype">
 <a class="anchor" id="af81ca7b306310e0b6a20e475e41643f8"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
@@ -207,20 +258,39 @@ number of messages </td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a32d9883689091cb5c2b2748e5e2806aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TELEMETRY_NB_CBS&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>number of callbacks that can be registered per msg </p>
+
+<p>Definition at line <a class="el" href="telemetry__common_8h_source.html#l00047">47</a> of file <a class="el" href="telemetry__common_8h_source.html">telemetry_common.h</a>.</p>
+
+<p>Referenced by <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="a5ce68bb3b13fda90c00109c1defe5d40"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* telemetry_cb)(struct <a class="el" href="transport_8h.html#structtransport__tx">transport_tx</a> *trans, struct <a class="el" href="link__device_8h.html#structlink__device">link_device</a> *<a class="el" href="stereo__avoid_8c.html#a9f087ebe99b13f4c1e6696f2b3c20dea">dev</a>)</td>
+          <td class="memname">typedef void(* telemetry_cb)(struct <a class="el" href="transport_8h.html#structtransport__tx">transport_tx</a> *trans, struct <a class="el" href="link__device_8h.html#structlink__device">link_device</a> *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Telemetry callback definition. </p>
 
-<p>Definition at line <a class="el" href="telemetry__common_8h_source.html#l00039">39</a> of file <a class="el" href="telemetry__common_8h_source.html">telemetry_common.h</a>.</p>
+<p>Definition at line <a class="el" href="telemetry__common_8h_source.html#l00040">40</a> of file <a class="el" href="telemetry__common_8h_source.html">telemetry_common.h</a>.</p>
 
 </div>
 </div>
@@ -236,7 +306,7 @@ number of messages </td></tr>
 
 <p>periodic telemetry msg name definition </p>
 
-<p>Definition at line <a class="el" href="telemetry__common_8h_source.html#l00043">43</a> of file <a class="el" href="telemetry__common_8h_source.html">telemetry_common.h</a>.</p>
+<p>Definition at line <a class="el" href="telemetry__common_8h_source.html#l00044">44</a> of file <a class="el" href="telemetry__common_8h_source.html">telemetry_common.h</a>.</p>
 
 </div>
 </div>
@@ -276,18 +346,21 @@ number of messages </td></tr>
   <table class="params">
     <tr><td class="paramname">_process</td><td>telemetry process id </td></tr>
     <tr><td class="paramname">_mode</td><td>telemetry mode </td></tr>
+    <tr><td class="paramname">_id</td><td>id of the message</td></tr>
+    <tr><td class="paramname">_process</td><td>telemetry process id </td></tr>
+    <tr><td class="paramname">_mode</td><td>telemetry mode </td></tr>
     <tr><td class="paramname">_id</td><td>id of the message in telemetry system (see var/&lt;AC&gt;/generated/periodic_telemetry.h) </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00074">74</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry_8c_source.html#l00078">78</a> of file <a class="el" href="telemetry_8c_source.html">telemetry.c</a>.</p>
 
 <p>References <a class="el" href="downlink_8h_source.html#l00079">DefaultChannel</a>, and <a class="el" href="downlink_8h_source.html#l00083">DefaultDevice</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae28877437a5f5dd72809fb77c50fc0df"></a>
+<a class="anchor" id="a9b3d79cf4bb115055da55757f87e0846"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -295,7 +368,7 @@ number of messages </td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static bool_t register_periodic_telemetry </td>
+          <td class="memname">static <a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> register_periodic_telemetry </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="telemetry__common_8h.html#structperiodic__telemetry">periodic_telemetry</a> *&#160;</td>
           <td class="paramname"><em>_pt</em>, </td>
@@ -303,8 +376,8 @@ number of messages </td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>_msg</em>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>_id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -329,16 +402,14 @@ number of messages </td></tr>
 <p>empty implementation is provided if PERIODIC_TELEMETRY is not set or set to FALSE </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">_pt</td><td>periodic telemetry structure to register </td></tr>
-    <tr><td class="paramname">_msg</td><td>message name (string) as defined in telemetry xml file </td></tr>
+    <tr><td class="paramname">&lt;em&gt;id</td><td>message ID (use PPRZ_MSG_ID&lt;message_name&gt; define) </td></tr>
     <tr><td class="paramname">_cb</td><td>callback function, called according to telemetry mode and specified period </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>TRUE if message registered with success, FALSE otherwise </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>-1 on failure to register, index of callback otherwise </dd></dl>
 
-<p>Definition at line <a class="el" href="telemetry__common_8h_source.html#l00066">66</a> of file <a class="el" href="telemetry__common_8h_source.html">telemetry_common.h</a>.</p>
-
-<p>References <a class="el" href="std_8h_source.html#l00005">FALSE</a>.</p>
+<p>Definition at line <a class="el" href="telemetry__common_8h_source.html#l00073">73</a> of file <a class="el" href="telemetry__common_8h_source.html">telemetry_common.h</a>.</p>
 
 </div>
 </div>
@@ -348,7 +419,7 @@ number of messages </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_6567a5a7be991f15b7628b3b0eb084bd.html">datalink</a></li><li class="navelem"><a class="el" href="telemetry__common_8h.html">telemetry_common.h</a></li>
-    <li class="footer">Generated on Wed Nov 11 2015 02:01:47 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:02:03 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

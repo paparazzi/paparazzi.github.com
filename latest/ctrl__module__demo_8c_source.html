@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -181,17 +181,17 @@ $(document).ready(function(){initNavTree('ctrl__module__demo_8c_source.html','')
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">// Call our controller</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">// Implement own Horizontal loops</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="guidance__opticflow__hover_8h.html#ab39ce31e4173de7b9aefa839324ec9a2">   80</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ctrl__module__demo_8c.html#ab39ce31e4173de7b9aefa839324ec9a2">guidance_h_module_init</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="guidance__OA_8h.html#ab39ce31e4173de7b9aefa839324ec9a2">   80</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ctrl__module__demo_8c.html#ab39ce31e4173de7b9aefa839324ec9a2">guidance_h_module_init</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <a class="code" href="ctrl__module__demo_8c.html#a2a7323cb20a25d04675e7029725d0f06">ctrl_module_init</a>();</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="guidance__opticflow__hover_8h.html#af0a3b4e238d064326406719e8244e92d">   85</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ctrl__module__demo_8c.html#af0a3b4e238d064326406719e8244e92d">guidance_h_module_enter</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="guidance__OA_8h.html#af0a3b4e238d064326406719e8244e92d">   85</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ctrl__module__demo_8c.html#af0a3b4e238d064326406719e8244e92d">guidance_h_module_enter</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="ctrl__module__demo_8c.html#a2a7323cb20a25d04675e7029725d0f06">ctrl_module_init</a>();</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="guidance__opticflow__hover_8h.html#a4c33bfc7d07ffb6d33a1af63799da082">   90</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ctrl__module__demo_8c.html#a4c33bfc7d07ffb6d33a1af63799da082">guidance_h_module_read_rc</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="guidance__OA_8h.html#a4c33bfc7d07ffb6d33a1af63799da082">   90</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ctrl__module__demo_8c.html#a4c33bfc7d07ffb6d33a1af63799da082">guidance_h_module_read_rc</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="comment">// -MAX_PPRZ to MAX_PPRZ</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <a class="code" href="ctrl__module__demo_8c.html#a2c7b8243840c6a49bbf66b4400720f39">ctrl_module_demo</a>.<a class="code" href="ctrl__module__demo_8c.html#a456c94c12816e888ec7c301022ef3a17">rc_t</a> = <a class="code" href="radio__control_8c.html#a8fe61a8aa3f1859efec4bb06bc1134dc">radio_control</a>.<a class="code" href="radio__control_8h.html#a7a57c95d2958828cb2d13bd360622f6f">values</a>[<a class="code" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#a393c67e7c336f4e58413e3cb07378511">RADIO_THROTTLE</a>];</div>
@@ -200,7 +200,7 @@ $(document).ready(function(){initNavTree('ctrl__module__demo_8c_source.html','')
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="ctrl__module__demo_8c.html#a2c7b8243840c6a49bbf66b4400720f39">ctrl_module_demo</a>.<a class="code" href="ctrl__module__demo_8c.html#a86f8d5ff39d4d80c8ed85eff8cd9a502">rc_z</a> = <a class="code" href="radio__control_8c.html#a8fe61a8aa3f1859efec4bb06bc1134dc">radio_control</a>.<a class="code" href="radio__control_8h.html#a7a57c95d2958828cb2d13bd360622f6f">values</a>[<a class="code" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#a0a504ca751f60fabf7900b13916561a6">RADIO_YAW</a>];</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="guidance__opticflow__hover_8h.html#abd0fff1bd18e355435e77a841b0a5ea0">   99</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ctrl__module__demo_8c.html#abd0fff1bd18e355435e77a841b0a5ea0">guidance_h_module_run</a>(bool_t in_flight)</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="guidance__OA_8h.html#abd0fff1bd18e355435e77a841b0a5ea0">   99</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ctrl__module__demo_8c.html#abd0fff1bd18e355435e77a841b0a5ea0">guidance_h_module_run</a>(bool_t in_flight)</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;{</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="comment">// Call full inner-/outerloop / horizontal-/vertical controller:</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <a class="code" href="ctrl__module__demo_8c.html#a06f17c99a79d7f2f2e5670510edecb09">ctrl_module_run</a>(in_flight);</div>
@@ -262,7 +262,7 @@ $(document).ready(function(){initNavTree('ctrl__module__demo_8c_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_94757629c544be2d6d24b01569be56e6.html">ctrl</a></li><li class="navelem"><a class="el" href="ctrl__module__demo_8c.html">ctrl_module_demo.c</a></li>
-    <li class="footer">Generated on Wed Nov 11 2015 02:01:09 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:01:22 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

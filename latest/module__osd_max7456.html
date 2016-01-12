@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -107,10 +107,23 @@ $(document).ready(function(){initNavTree('module__osd_max7456.html','');});
 <p>No detailed description...</p>
 <h1><a class="anchor" id="module_load_example__osd_max7456"></a>
 Example for airframe file</h1>
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;modules&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;load name=&quot;osd_max7456.xml&quot;/&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;&lt;/modules&gt;</div>
-</div><!-- fragment --> <h1><a class="anchor" id="functions__osd_max7456"></a>
+<p>This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;modules&gt;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;load name=&quot;osd_max7456.xml&quot;&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    &lt;configure name=&quot;MAX7456_SPI_DEV&quot; value=&quot;spiX&quot; /&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    &lt;configure name=&quot;MAX7456_SLAVE_IDX&quot; value=&quot;SPI_SLAVE0&quot; /&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;/load&gt;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;&lt;/modules&gt;</div>
+</div><!-- fragment --> <h1><a class="anchor" id="configuration__osd_max7456"></a>
+Module configuration options</h1>
+<h2><a class="anchor" id="configure"></a>
+Configure Options</h2>
+<ul>
+<li><b>name:</b> <code>MAX7456_SPI_DEV</code> <b>value:</b> <em>spiX</em> <br />
+ Description: select spi peripheral to use (default spi2)</li>
+<li><b>name:</b> <code>MAX7456_SLAVE_IDX</code> <b>value:</b> <em>SPI_SLAVE0</em> <br />
+ Description: SPI slave select index</li>
+</ul>
+<h1><a class="anchor" id="functions__osd_max7456"></a>
 Module functions</h1>
 <h2><a class="anchor" id="init_functions"></a>
 Init Functions</h2>
@@ -155,6 +168,8 @@ Raw osd_max7456.xml file:</h2>
 <div class="line">&lt;module name=&quot;max7456&quot; dir=&quot;display&quot;&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;MAX7456 driver (SPI)&lt;/description&gt;</div>
+<div class="line">    &lt;configure name=&quot;MAX7456_SPI_DEV&quot; value=&quot;spiX&quot; description=&quot;select spi peripheral to use (default spi2)&quot;/&gt;</div>
+<div class="line">    &lt;configure name=&quot;MAX7456_SLAVE_IDX&quot; value=&quot;SPI_SLAVE0&quot; description=&quot;SPI slave select index&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;max7456.h&quot;/&gt;</div>
@@ -164,14 +179,21 @@ Raw osd_max7456.xml file:</h2>
 <div class="line">  &lt;event fun=&quot;max7456_event()&quot;/&gt;</div>
 <div class="line">  &lt;makefile target=&quot;ap&quot;&gt;</div>
 <div class="line">    &lt;raw&gt;</div>
-<div class="line">    include $(CFG_SHARED)/spi_master.makefile</div>
+<div class="line">      MAX7456_SPI_DEV ?= spi2</div>
+<div class="line">      MAX7456_SPI_DEV_LOWER=$(shell echo $(MAX7456_SPI_DEV) | tr A-Z a-z)</div>
+<div class="line">      MAX7456_SPI_DEV_UPPER=$(shell echo $(MAX7456_SPI_DEV) | tr a-z A-Z)</div>
+<div class="line"></div>
+<div class="line">      MAX7456_SLAVE_IDX ?= spi_slave2</div>
+<div class="line">      MAX7456_SLAVE_IDX_LOWER=$(shell echo $(MAX7456_SLAVE_IDX) | tr A-Z a-z)</div>
+<div class="line">      MAX7456_SLAVE_IDX_UPPER=$(shell echo $(MAX7456_SLAVE_IDX) | tr a-z A-Z)</div>
+<div class="line"></div>
+<div class="line">      include $(CFG_SHARED)/spi_master.makefile</div>
 <div class="line">    &lt;/raw&gt;</div>
+<div class="line">    &lt;define name=&quot;USE_$(MAX7456_SPI_DEV_UPPER)&quot; /&gt;</div>
+<div class="line">    &lt;define name=&quot;USE_$(MAX7456_SLAVE_IDX_UPPER)&quot; /&gt;</div>
+<div class="line">    &lt;define name=&quot;MAX7456_SPI_DEV&quot; value=&quot;$(MAX7456_SPI_DEV_LOWER)&quot; /&gt;</div>
+<div class="line">    &lt;define name=&quot;MAX7456_SLAVE_IDX&quot; value=&quot;$(MAX7456_SLAVE_IDX_UPPER)&quot; /&gt;</div>
 <div class="line">    &lt;file name=&quot;max7456.c&quot; /&gt;</div>
-<div class="line">    &lt;define name=&quot;USE_SPI&quot; value=&quot;1&quot; /&gt;</div>
-<div class="line">    &lt;define name=&quot;USE_SPI2&quot; value=&quot;1&quot; /&gt;</div>
-<div class="line">    &lt;define name=&quot;MAX7456_SPI_DEV&quot; value=&quot;spi2&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;USE_SPI_SLAVE2&quot; value=&quot;1&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;MAX7456_SLAVE_IDX&quot; value=&quot;2&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;USE_PAL_FOR_OSD_VIDEO&quot; value=&quot;1&quot; /&gt;</div>
 <div class="line">    &lt;define name=&quot;OSD_USE_EXTERNAL_SPRINTF&quot; value=&quot;0&quot; /&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
@@ -184,7 +206,7 @@ Raw osd_max7456.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Nov 11 2015 02:01:52 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:02:08 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

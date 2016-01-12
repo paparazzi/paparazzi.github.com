@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -120,6 +120,9 @@ $(document).ready(function(){initNavTree('bluegiga_8c.html','');});
 <code>#include &quot;<a class="el" href="bluegiga_8h_source.html">subsystems/datalink/bluegiga.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="gpio_8h_source.html">mcu_periph/gpio.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="spi_8h_source.html">mcu_periph/spi.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;generated/periodic_telemetry.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for bluegiga.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -127,7 +130,7 @@ $(document).ready(function(){initNavTree('bluegiga_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="bluegiga_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2datalink_2bluegiga_8c" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2datalink_2bluegiga_8c" id="sw_2airborne_2subsystems_2datalink_2bluegiga_8c">
-<area shape="rect" id="node2" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="990,281,1161,307"/><area shape="rect" id="node8" href="bluegiga_8h.html" title="Bluegiga Bluetooth chip I/O. " alt="" coords="125,95,279,136"/><area shape="rect" id="node16" href="gpio_8h.html" title="Some architecture independent helper functions for GPIOs. " alt="" coords="793,102,933,129"/><area shape="rect" id="node18" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API. " alt="" coords="603,102,734,129"/><area shape="rect" id="node3" href="inttypes_8h.html" title="inttypes.h" alt="" coords="321,452,406,479"/><area shape="rect" id="node9" href="link__device_8h.html" title="generic device header " alt="" coords="208,370,391,397"/><area shape="rect" id="node10" href="pprz__transport_8h.html" title="Building and parsing Paparazzi frames. " alt="" coords="208,184,361,225"/><area shape="rect" id="node14" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="23,191,77,218"/><area shape="rect" id="node11" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="385,273,539,315"/><area shape="rect" id="node13" href="transport_8h.html" title="generic transport header " alt="" coords="208,273,361,315"/></map>
+<area shape="rect" id="node2" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="471,102,642,129"/><area shape="rect" id="node8" href="bluegiga_8h.html" title="Bluegiga Bluetooth chip I/O. " alt="" coords="157,95,311,136"/><area shape="rect" id="node10" href="gpio_8h.html" title="Some architecture independent helper functions for GPIOs. " alt="" coords="667,102,807,129"/><area shape="rect" id="node12" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API. " alt="" coords="831,102,962,129"/><area shape="rect" id="node14" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="987,102,1121,129"/><area shape="rect" id="node3" href="inttypes_8h.html" title="inttypes.h" alt="" coords="283,273,369,300"/><area shape="rect" id="node9" href="link__device_8h.html" title="generic device header " alt="" coords="5,191,188,218"/></map>
 </div>
 </div>
 <p><a href="bluegiga_8c_source.html">Go to the source code of this file.</a></p>
@@ -138,11 +141,19 @@ Macros</h2></td></tr>
 <tr class="separator:a65367c2226921460d9a5cde98a5e2e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05e14557a4967f8d6440ff2219d90ed3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bluegiga_8c.html#a05e14557a4967f8d6440ff2219d90ed3">BLUEGIGA_DRDY_GPIO_PIN</a>&#160;&#160;&#160;<a class="el" href="subsystems_2datalink_2superbitrf_8c.html#aea7ea8b9ec1ac799365284824757d827">SUPERBITRF_DRDY_PIN</a></td></tr>
 <tr class="separator:a05e14557a4967f8d6440ff2219d90ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f76537c7c5b424e21d78a12041e9db2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bluegiga_8c.html#a0f76537c7c5b424e21d78a12041e9db2">TxStrengthOfSender</a>(x)&#160;&#160;&#160;(x[1])</td></tr>
+<tr class="separator:a0f76537c7c5b424e21d78a12041e9db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbfc9b1d908a27ff68790bdc6f271742"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bluegiga_8c.html#acbfc9b1d908a27ff68790bdc6f271742">RssiOfSender</a>(x)&#160;&#160;&#160;(x[2])</td></tr>
+<tr class="separator:acbfc9b1d908a27ff68790bdc6f271742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a625d01750db381e8276adeb1c03b560e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bluegiga_8c.html#a625d01750db381e8276adeb1c03b560e">Pprz_StxOfMsg</a>(x)&#160;&#160;&#160;(x[3])</td></tr>
+<tr class="separator:a625d01750db381e8276adeb1c03b560e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64676521497bca7981efa997be80e678"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bluegiga_8c.html#a64676521497bca7981efa997be80e678">SenderIdOfMsg</a>(x)&#160;&#160;&#160;(x[5])</td></tr>
+<tr class="separator:a64676521497bca7981efa997be80e678"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a95be3ef04141e5037bfd21e88d87d3ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bluegiga_8c.html#a95be3ef04141e5037bfd21e88d87d3ef">bluegiga_load_tx</a> (struct <a class="el" href="bluegiga_8h.html#structbluegiga__periph">bluegiga_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
-<tr class="separator:a95be3ef04141e5037bfd21e88d87d3ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a916d36665c2e3144ac83612875e5af59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bluegiga_8c.html#a916d36665c2e3144ac83612875e5af59">bluegiga_load_tx</a> (struct <a class="el" href="bluegiga_8h.html#structbluegiga__periph">bluegiga_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, struct <a class="el" href="group__spi.html#structspi__transaction">spi_transaction</a> *trans)</td></tr>
+<tr class="separator:a916d36665c2e3144ac83612875e5af59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe358f767725314dab7b28a59e51989c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bluegiga_8c.html#abe358f767725314dab7b28a59e51989c">bluegiga_transmit</a> (struct <a class="el" href="bluegiga_8h.html#structbluegiga__periph">bluegiga_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data)</td></tr>
 <tr class="separator:abe358f767725314dab7b28a59e51989c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50a0f979fdb5e8cb70090c6de5f203ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bluegiga_8c.html#a50a0f979fdb5e8cb70090c6de5f203ac">bluegiga_receive</a> (struct <a class="el" href="group__spi.html#structspi__transaction">spi_transaction</a> *trans)</td></tr>
@@ -165,10 +176,8 @@ Functions</h2></td></tr>
 <tr class="separator:ad59d5db2be5ea429bc32bddfab4f39f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8a60ccee96fbe718a27b6194f3f14e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bluegiga_8c.html#ac8a60ccee96fbe718a27b6194f3f14e0">bluegiga_init</a> (struct <a class="el" href="bluegiga_8h.html#structbluegiga__periph">bluegiga_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
 <tr class="separator:ac8a60ccee96fbe718a27b6194f3f14e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59308e111064cd1a2771e8696198a16e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bluegiga_8c.html#a59308e111064cd1a2771e8696198a16e">bluegiga_scan</a> (struct <a class="el" href="bluegiga_8h.html#structbluegiga__periph">bluegiga_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
-<tr class="separator:a59308e111064cd1a2771e8696198a16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b85e292d142346f4120761f59cf2b7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bluegiga_8c.html#a3b85e292d142346f4120761f59cf2b7c">bluegiga_request_all_rssi</a> (struct <a class="el" href="bluegiga_8h.html#structbluegiga__periph">bluegiga_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
-<tr class="separator:a3b85e292d142346f4120761f59cf2b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a319f8e3ab43913066407c2d009e8e366"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bluegiga_8c.html#a319f8e3ab43913066407c2d009e8e366">bluegiga_broadcast_msg</a> (struct <a class="el" href="bluegiga_8h.html#structbluegiga__periph">bluegiga_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, char *<a class="el" href="high__speed__logger__direct__memory_8c.html#a32b52374003c5d7911e540c6a1c53488">msg</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> msg_len)</td></tr>
+<tr class="separator:a319f8e3ab43913066407c2d009e8e366"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -178,10 +187,8 @@ Variables</h2></td></tr>
 <tr class="separator:ac12d1ee016c26361e1e48e9ee7b5dc27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8198c460a2a8487b2c7f123794fcf1e9"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__spi.html#structspi__transaction">spi_transaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bluegiga_8c.html#a8198c460a2a8487b2c7f123794fcf1e9">bluegiga_spi</a></td></tr>
 <tr class="separator:a8198c460a2a8487b2c7f123794fcf1e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9adb81268f523a2a05d476d5f64676ed"><td class="memItemLeft" align="right" valign="top">signed char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bluegiga_8c.html#a9adb81268f523a2a05d476d5f64676ed">bluegiga_rssi</a> [256]</td></tr>
-<tr class="separator:a9adb81268f523a2a05d476d5f64676ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3945da57e9f43939a5fdb9fecb610366"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bluegiga_8c.html#a3945da57e9f43939a5fdb9fecb610366">telemetry_copy</a> [20]</td></tr>
-<tr class="separator:a3945da57e9f43939a5fdb9fecb610366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a876337cc7116d327068525c915f302e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bluegiga_8c.html#a876337cc7116d327068525c915f302e1">broadcast_msg</a> [20]</td></tr>
+<tr class="separator:a876337cc7116d327068525c915f302e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Datalink implementation for the BlueGiga Bluetooth radio chip trough SPI. </p>
@@ -198,9 +205,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00039">39</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
+<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00052">52</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
 
-<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00123">bluegiga_init()</a>, <a class="el" href="bluegiga_8c_source.html#l00226">bluegiga_receive()</a>, <a class="el" href="bluegiga_8c_source.html#l00319">bluegiga_request_all_rssi()</a>, and <a class="el" href="bluegiga_8c_source.html#l00306">bluegiga_scan()</a>.</p>
+<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00327">bluegiga_broadcast_msg()</a>, <a class="el" href="bluegiga_8c_source.html#l00142">bluegiga_init()</a>, and <a class="el" href="bluegiga_8c_source.html#l00242">bluegiga_receive()</a>.</p>
 
 </div>
 </div>
@@ -214,13 +221,140 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00043">43</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
+<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00056">56</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
 
-<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00123">bluegiga_init()</a>, <a class="el" href="bluegiga_8c_source.html#l00226">bluegiga_receive()</a>, <a class="el" href="bluegiga_8c_source.html#l00319">bluegiga_request_all_rssi()</a>, and <a class="el" href="bluegiga_8c_source.html#l00306">bluegiga_scan()</a>.</p>
+<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00327">bluegiga_broadcast_msg()</a>, <a class="el" href="bluegiga_8c_source.html#l00142">bluegiga_init()</a>, and <a class="el" href="bluegiga_8c_source.html#l00242">bluegiga_receive()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a625d01750db381e8276adeb1c03b560e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Pprz_StxOfMsg</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;(x[3])</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00061">61</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
+
+<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00242">bluegiga_receive()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acbfc9b1d908a27ff68790bdc6f271742"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RssiOfSender</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;(x[2])</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00060">60</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
+
+<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00242">bluegiga_receive()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a64676521497bca7981efa997be80e678"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SenderIdOfMsg</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;(x[5])</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00062">62</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
+
+<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00242">bluegiga_receive()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0f76537c7c5b424e21d78a12041e9db2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TxStrengthOfSender</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;(x[1])</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00059">59</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
+
+<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00242">bluegiga_receive()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a319f8e3ab43913066407c2d009e8e366"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bluegiga_broadcast_msg </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="bluegiga_8h.html#structbluegiga__periph">bluegiga_periph</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>msg_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00327">327</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
+
+<p>References <a class="el" href="bluegiga_8c_source.html#l00052">BLUEGIGA_DRDY_GPIO</a>, <a class="el" href="bluegiga_8c_source.html#l00056">BLUEGIGA_DRDY_GPIO_PIN</a>, <a class="el" href="bluegiga_8h_source.html#l00036">BLUEGIGA_SENDING</a>, <a class="el" href="bluegiga_8h_source.html#l00037">BLUEGIGA_SENDING_BROADCAST</a>, <a class="el" href="bluegiga_8c_source.html#l00068">broadcast_msg</a>, <a class="el" href="bluegiga_8c_source.html#l00064">coms_status</a>, <a class="el" href="gpio__ardrone_8c_source.html#l00070">gpio_clear()</a>, and <a class="el" href="bluegiga_8h_source.html#l00058">bluegiga_periph::work_tx</a>.</p>
+
+<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="bluegiga_8c_a319f8e3ab43913066407c2d009e8e366_cgraph.png" border="0" usemap="#bluegiga_8c_a319f8e3ab43913066407c2d009e8e366_cgraph" alt=""/></div>
+<map name="bluegiga_8c_a319f8e3ab43913066407c2d009e8e366_cgraph" id="bluegiga_8c_a319f8e3ab43913066407c2d009e8e366_cgraph">
+<area shape="rect" id="node2" href="linux_2mcu__periph_2gpio__arch_8h.html#aa94dfa6db378d98566e22e193c7a8ab7" title="Clear a gpio output to low level. " alt="" coords="236,5,323,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a746c54bc6bba1fd3d133fe6d35c444c2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -235,20 +369,20 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00094">94</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
+<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00113">113</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
 
 <p>References <a class="el" href="bluegiga_8h_source.html#l00052">bluegiga_periph::rx_extract_idx</a>, and <a class="el" href="bluegiga_8h_source.html#l00051">bluegiga_periph::rx_insert_idx</a>.</p>
 
-<p>Referenced by <a class="el" href="bluegiga_8h_source.html#l00085">bluegiga_read_buffer()</a>, and <a class="el" href="bluegiga_8c_source.html#l00076">dev_char_available()</a>.</p>
+<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00093">dev_char_available()</a>.</p>
 
-<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="bluegiga_8c_a746c54bc6bba1fd3d133fe6d35c444c2_icgraph.png" border="0" usemap="#bluegiga_8c_a746c54bc6bba1fd3d133fe6d35c444c2_icgraph" alt=""/></div>
 <map name="bluegiga_8c_a746c54bc6bba1fd3d133fe6d35c444c2_icgraph" id="bluegiga_8c_a746c54bc6bba1fd3d133fe6d35c444c2_icgraph">
-<area shape="rect" id="node2" href="bluegiga_8h.html#af90464b15e141670383761a6187e24a5" title="bluegiga_read_buffer" alt="" coords="215,5,371,32"/><area shape="rect" id="node3" href="bluegiga_8c.html#a9b6278c5129408fea7fcd6ef782bb566" title="dev_char_available" alt="" coords="221,56,364,83"/><area shape="rect" id="node4" href="bluegiga_8h.html#ac8a60ccee96fbe718a27b6194f3f14e0" title="bluegiga_init" alt="" coords="419,56,521,83"/><area shape="rect" id="node5" href="downlink_8h.html#afd49e1738cc6ad57218b944dcb94f73b" title="downlink_init" alt="" coords="569,56,672,83"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="720,31,800,57"/><area shape="rect" id="node8" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="728,81,792,108"/><area shape="rect" id="node7" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="856,31,911,57"/><area shape="rect" id="node9" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="848,81,919,108"/></map>
+<area shape="rect" id="node2" href="bluegiga_8c.html#a9b6278c5129408fea7fcd6ef782bb566" title="dev_char_available" alt="" coords="215,31,357,57"/><area shape="rect" id="node3" href="bluegiga_8h.html#ac8a60ccee96fbe718a27b6194f3f14e0" title="bluegiga_init" alt="" coords="405,31,508,57"/><area shape="rect" id="node4" href="downlink_8h.html#afd49e1738cc6ad57218b944dcb94f73b" title="downlink_init" alt="" coords="556,31,659,57"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="707,5,787,32"/><area shape="rect" id="node7" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="715,56,779,83"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="843,5,897,32"/><area shape="rect" id="node8" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="835,56,905,83"/></map>
 </div>
 </p>
 
@@ -278,20 +412,20 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00100">100</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
+<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00119">119</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
 
 <p>References <a class="el" href="bluegiga_8h_source.html#l00041">BLUEGIGA_BUFFER_SIZE</a>.</p>
 
-<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00194">bluegiga_load_tx()</a>, <a class="el" href="bluegiga_8h_source.html#l00085">bluegiga_read_buffer()</a>, <a class="el" href="bluegiga_8c_source.html#l00226">bluegiga_receive()</a>, <a class="el" href="bluegiga_8c_source.html#l00185">bluegiga_transmit()</a>, and <a class="el" href="bluegiga_8c_source.html#l00080">dev_get_byte()</a>.</p>
+<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00209">bluegiga_load_tx()</a>, <a class="el" href="bluegiga_8c_source.html#l00242">bluegiga_receive()</a>, <a class="el" href="bluegiga_8c_source.html#l00200">bluegiga_transmit()</a>, and <a class="el" href="bluegiga_8c_source.html#l00099">dev_get_byte()</a>.</p>
 
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="bluegiga_8c_ad59d5db2be5ea429bc32bddfab4f39f3_icgraph.png" border="0" usemap="#bluegiga_8c_ad59d5db2be5ea429bc32bddfab4f39f3_icgraph" alt=""/></div>
 <map name="bluegiga_8c_ad59d5db2be5ea429bc32bddfab4f39f3_icgraph" id="bluegiga_8c_ad59d5db2be5ea429bc32bddfab4f39f3_icgraph">
-<area shape="rect" id="node2" href="bluegiga_8c.html#a95be3ef04141e5037bfd21e88d87d3ef" title="bluegiga_load_tx" alt="" coords="241,5,371,32"/><area shape="rect" id="node3" href="bluegiga_8c.html#a50a0f979fdb5e8cb70090c6de5f203ac" title="bluegiga_receive" alt="" coords="436,56,565,83"/><area shape="rect" id="node11" href="bluegiga_8h.html#af90464b15e141670383761a6187e24a5" title="bluegiga_read_buffer" alt="" coords="228,107,384,133"/><area shape="rect" id="node12" href="bluegiga_8c.html#abe358f767725314dab7b28a59e51989c" title="bluegiga_transmit" alt="" coords="432,157,569,184"/><area shape="rect" id="node14" href="bluegiga_8c.html#a243da754633510e42d0762bd0eb2eca9" title="dev_get_byte" alt="" coords="447,208,555,235"/><area shape="rect" id="node4" href="bluegiga_8c.html#a81dec5456e47bf1870486a85600c7e1c" title="trans_cb" alt="" coords="633,81,710,108"/><area shape="rect" id="node5" href="bluegiga_8h.html#ac8a60ccee96fbe718a27b6194f3f14e0" title="bluegiga_init" alt="" coords="773,157,876,184"/><area shape="rect" id="node6" href="downlink_8h.html#afd49e1738cc6ad57218b944dcb94f73b" title="downlink_init" alt="" coords="924,157,1027,184"/><area shape="rect" id="node7" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="1075,132,1155,159"/><area shape="rect" id="node9" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="1083,183,1147,209"/><area shape="rect" id="node8" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1211,132,1265,159"/><area shape="rect" id="node10" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="1203,183,1273,209"/><area shape="rect" id="node13" href="bluegiga_8c.html#a5018c170f3f3088edcda331b8ef5e47e" title="dev_put_byte" alt="" coords="617,157,725,184"/></map>
+<area shape="rect" id="node2" href="bluegiga_8c.html#a916d36665c2e3144ac83612875e5af59" title="bluegiga_load_tx" alt="" coords="228,5,357,32"/><area shape="rect" id="node3" href="bluegiga_8c.html#a50a0f979fdb5e8cb70090c6de5f203ac" title="bluegiga_receive" alt="" coords="409,56,539,83"/><area shape="rect" id="node11" href="bluegiga_8c.html#abe358f767725314dab7b28a59e51989c" title="bluegiga_transmit" alt="" coords="405,107,543,133"/><area shape="rect" id="node13" href="bluegiga_8c.html#a243da754633510e42d0762bd0eb2eca9" title="dev_get_byte" alt="" coords="239,157,347,184"/><area shape="rect" id="node4" href="bluegiga_8c.html#a81dec5456e47bf1870486a85600c7e1c" title="trans_cb" alt="" coords="606,56,683,83"/><area shape="rect" id="node5" href="bluegiga_8h.html#ac8a60ccee96fbe718a27b6194f3f14e0" title="bluegiga_init" alt="" coords="747,107,849,133"/><area shape="rect" id="node6" href="downlink_8h.html#afd49e1738cc6ad57218b944dcb94f73b" title="downlink_init" alt="" coords="897,107,1000,133"/><area shape="rect" id="node7" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="1048,81,1128,108"/><area shape="rect" id="node9" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="1056,132,1120,159"/><area shape="rect" id="node8" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1184,81,1239,108"/><area shape="rect" id="node10" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="1176,132,1247,159"/><area shape="rect" id="node12" href="bluegiga_8c.html#a5018c170f3f3088edcda331b8ef5e47e" title="dev_put_byte" alt="" coords="591,107,699,133"/></map>
 </div>
 </p>
 
@@ -311,28 +445,28 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00123">123</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
+<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00142">142</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
 
-<p>References <a class="el" href="spi_8h_source.html#l00155">spi_transaction::after_cb</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::bitorder</a>, <a class="el" href="bluegiga_8c_source.html#l00039">BLUEGIGA_DRDY_GPIO</a>, <a class="el" href="bluegiga_8c_source.html#l00043">BLUEGIGA_DRDY_GPIO_PIN</a>, <a class="el" href="bluegiga_8c_source.html#l00050">bluegiga_rssi</a>, <a class="el" href="bluegiga_8c_source.html#l00048">bluegiga_spi</a>, <a class="el" href="bluegiga_8h_source.html#l00034">BLUEGIGA_UNINIT</a>, <a class="el" href="bluegiga_8h_source.html#l00064">bluegiga_periph::bytes_recvd_since_last</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::cdiv</a>, <a class="el" href="link__device_8h_source.html#l00048">link_device::char_available</a>, <a class="el" href="link__device_8h_source.html#l00045">link_device::check_free_space</a>, <a class="el" href="bluegiga_8c_source.html#l00046">coms_status</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::cpha</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::cpol</a>, <a class="el" href="telemetry_8h_source.html#l00067">DefaultPeriodic</a>, <a class="el" href="bluegiga_8c_source.html#l00076">dev_char_available()</a>, <a class="el" href="bluegiga_8c_source.html#l00058">dev_check_free_space()</a>, <a class="el" href="bluegiga_8c_source.html#l00080">dev_get_byte()</a>, <a class="el" href="bluegiga_8c_source.html#l00068">dev_put_byte()</a>, <a class="el" href="bluegiga_8c_source.html#l00072">dev_send_message()</a>, <a class="el" href="bluegiga_8h_source.html#l00061">bluegiga_periph::device</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::dss</a>, <a class="el" href="bluegiga_8h_source.html#l00065">bluegiga_periph::end_of_msg</a>, <a class="el" href="link__device_8h_source.html#l00049">link_device::get_byte</a>, <a class="el" href="gpio__ardrone_8c_source.html#l00054">gpio_set()</a>, <a class="el" href="gpio__ardrone_8c_source.html#l00102">gpio_setup_output()</a>, <a class="el" href="spi_8h_source.html#l00143">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="linux_2led__hw_8h_source.html#l00041">LED_INIT</a>, <a class="el" href="spi_8h_source.html#l00144">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="link__device_8h_source.html#l00050">link_device::periph</a>, <a class="el" href="link__device_8h_source.html#l00046">link_device::put_byte</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, <a class="el" href="bluegiga_8h_source.html#l00052">bluegiga_periph::rx_extract_idx</a>, <a class="el" href="bluegiga_8h_source.html#l00051">bluegiga_periph::rx_insert_idx</a>, <a class="el" href="spi_8h_source.html#l00148">spi_transaction::select</a>, <a class="el" href="link__device_8h_source.html#l00047">link_device::send_message</a>, <a class="el" href="spi_8h_source.html#l00147">spi_transaction::slave_idx</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00679">spi_slave_register()</a>, <a class="el" href="spi_8h_source.html#l00069">SPICphaEdge2</a>, <a class="el" href="spi_8h_source.html#l00078">SPICpolIdleHigh</a>, <a class="el" href="spi_8h_source.html#l00119">SPIDiv64</a>, <a class="el" href="spi_8h_source.html#l00084">SPIDss8bit</a>, <a class="el" href="spi_8h_source.html#l00106">SPIMSBFirst</a>, <a class="el" href="spi_8h_source.html#l00057">SPISelectUnselect</a>, <a class="el" href="bluegiga_8c_source.html#l00088">trans_cb()</a>, <a class="el" href="bluegiga_8h_source.html#l00056">bluegiga_periph::tx_extract_idx</a>, <a class="el" href="bluegiga_8h_source.html#l00055">bluegiga_periph::tx_insert_idx</a>, <a class="el" href="bluegiga_8h_source.html#l00059">bluegiga_periph::work_rx</a>, and <a class="el" href="bluegiga_8h_source.html#l00058">bluegiga_periph::work_tx</a>.</p>
+<p>References <a class="el" href="spi_8h_source.html#l00155">spi_transaction::after_cb</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::bitorder</a>, <a class="el" href="bluegiga_8c_source.html#l00052">BLUEGIGA_DRDY_GPIO</a>, <a class="el" href="bluegiga_8c_source.html#l00056">BLUEGIGA_DRDY_GPIO_PIN</a>, <a class="el" href="bluegiga_8c_source.html#l00066">bluegiga_spi</a>, <a class="el" href="bluegiga_8h_source.html#l00034">BLUEGIGA_UNINIT</a>, <a class="el" href="bluegiga_8c_source.html#l00068">broadcast_msg</a>, <a class="el" href="bluegiga_8h_source.html#l00064">bluegiga_periph::bytes_recvd_since_last</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::cdiv</a>, <a class="el" href="link__device_8h_source.html#l00048">link_device::char_available</a>, <a class="el" href="link__device_8h_source.html#l00045">link_device::check_free_space</a>, <a class="el" href="bluegiga_8c_source.html#l00064">coms_status</a>, <a class="el" href="bluegiga_8h_source.html#l00066">bluegiga_periph::connected</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::cpha</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::cpol</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="bluegiga_8c_source.html#l00093">dev_char_available()</a>, <a class="el" href="bluegiga_8c_source.html#l00075">dev_check_free_space()</a>, <a class="el" href="bluegiga_8c_source.html#l00099">dev_get_byte()</a>, <a class="el" href="bluegiga_8c_source.html#l00085">dev_put_byte()</a>, <a class="el" href="bluegiga_8c_source.html#l00089">dev_send_message()</a>, <a class="el" href="bluegiga_8h_source.html#l00061">bluegiga_periph::device</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::dss</a>, <a class="el" href="bluegiga_8h_source.html#l00065">bluegiga_periph::end_of_msg</a>, <a class="el" href="link__device_8h_source.html#l00049">link_device::get_byte</a>, <a class="el" href="gpio__ardrone_8c_source.html#l00054">gpio_set()</a>, <a class="el" href="gpio__ardrone_8c_source.html#l00102">gpio_setup_output()</a>, <a class="el" href="spi_8h_source.html#l00143">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="linux_2led__hw_8h_source.html#l00041">LED_INIT</a>, <a class="el" href="spi_8h_source.html#l00144">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="link__device_8h_source.html#l00050">link_device::periph</a>, <a class="el" href="link__device_8h_source.html#l00046">link_device::put_byte</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, <a class="el" href="bluegiga_8h_source.html#l00052">bluegiga_periph::rx_extract_idx</a>, <a class="el" href="bluegiga_8h_source.html#l00051">bluegiga_periph::rx_insert_idx</a>, <a class="el" href="spi_8h_source.html#l00148">spi_transaction::select</a>, <a class="el" href="link__device_8h_source.html#l00047">link_device::send_message</a>, <a class="el" href="spi_8h_source.html#l00147">spi_transaction::slave_idx</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00679">spi_slave_register()</a>, <a class="el" href="spi_8h_source.html#l00069">SPICphaEdge2</a>, <a class="el" href="spi_8h_source.html#l00078">SPICpolIdleHigh</a>, <a class="el" href="spi_8h_source.html#l00121">SPIDiv256</a>, <a class="el" href="spi_8h_source.html#l00084">SPIDss8bit</a>, <a class="el" href="spi_8h_source.html#l00106">SPIMSBFirst</a>, <a class="el" href="spi_8h_source.html#l00057">SPISelectUnselect</a>, <a class="el" href="bluegiga_8c_source.html#l00107">trans_cb()</a>, <a class="el" href="bluegiga_8h_source.html#l00056">bluegiga_periph::tx_extract_idx</a>, <a class="el" href="bluegiga_8h_source.html#l00055">bluegiga_periph::tx_insert_idx</a>, <a class="el" href="bluegiga_8h_source.html#l00059">bluegiga_periph::work_rx</a>, and <a class="el" href="bluegiga_8h_source.html#l00058">bluegiga_periph::work_tx</a>.</p>
 
-<p>Referenced by <a class="el" href="downlink_8c_source.html#l00066">downlink_init()</a>.</p>
-
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="bluegiga_8c_ac8a60ccee96fbe718a27b6194f3f14e0_cgraph.png" border="0" usemap="#bluegiga_8c_ac8a60ccee96fbe718a27b6194f3f14e0_cgraph" alt=""/></div>
-<map name="bluegiga_8c_ac8a60ccee96fbe718a27b6194f3f14e0_cgraph" id="bluegiga_8c_ac8a60ccee96fbe718a27b6194f3f14e0_cgraph">
-<area shape="rect" id="node2" href="bluegiga_8c.html#a9b6278c5129408fea7fcd6ef782bb566" title="dev_char_available" alt="" coords="183,5,326,32"/><area shape="rect" id="node4" href="bluegiga_8c.html#a0d78dd9a3c384d5c4297995e67672a0f" title="dev_check_free_space" alt="" coords="611,107,777,133"/><area shape="rect" id="node5" href="bluegiga_8c.html#a243da754633510e42d0762bd0eb2eca9" title="dev_get_byte" alt="" coords="428,461,536,488"/><area shape="rect" id="node7" href="bluegiga_8c.html#a5018c170f3f3088edcda331b8ef5e47e" title="dev_put_byte" alt="" coords="201,56,309,83"/><area shape="rect" id="node9" href="bluegiga_8c.html#a744a798d7f20038899dd99d52e656676" title="dev_send_message" alt="" coords="180,208,329,235"/><area shape="rect" id="node10" href="linux_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85" title="Set a gpio output to high level. " alt="" coords="656,157,732,184"/><area shape="rect" id="node11" href="linux_2mcu__periph_2gpio__arch_8h.html#a5b778ed65199db17a02961791e4ee8b8" title="Setup one or more pins of the given GPIO port as outputs. " alt="" coords="184,309,325,336"/><area shape="rect" id="node12" href="telemetry_8c.html#a4c92e515e0ce29dc4294304cb2749e76" title="Register a telemetry callback function. " alt="" coords="156,360,353,387"/><area shape="rect" id="node13" href="group__spi.html#ga02a7edceaff0d9adc8e9b236b9915415" title="Register one (and only one) transaction to use spi as slave. " alt="" coords="626,353,762,380"/><area shape="rect" id="node14" href="bluegiga_8c.html#a81dec5456e47bf1870486a85600c7e1c" title="trans_cb" alt="" coords="216,259,293,285"/><area shape="rect" id="node3" href="bluegiga_8c.html#a746c54bc6bba1fd3d133fe6d35c444c2" title="bluegiga_ch_available" alt="" coords="401,5,563,32"/><area shape="rect" id="node6" href="bluegiga_8c.html#ad59d5db2be5ea429bc32bddfab4f39f3" title="bluegiga_increment_buf" alt="" coords="825,259,1000,285"/><area shape="rect" id="node8" href="bluegiga_8c.html#abe358f767725314dab7b28a59e51989c" title="bluegiga_transmit" alt="" coords="413,56,551,83"/><area shape="rect" id="node15" href="bluegiga_8c.html#a50a0f979fdb5e8cb70090c6de5f203ac" title="bluegiga_receive" alt="" coords="417,259,547,285"/><area shape="rect" id="node16" href="bluegiga_8c.html#a95be3ef04141e5037bfd21e88d87d3ef" title="bluegiga_load_tx" alt="" coords="629,233,759,260"/></map>
-</div>
-</p>
+<p>Referenced by <a class="el" href="downlink_8c_source.html#l00064">downlink_init()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="bluegiga_8c_ac8a60ccee96fbe718a27b6194f3f14e0_cgraph.png" border="0" usemap="#bluegiga_8c_ac8a60ccee96fbe718a27b6194f3f14e0_cgraph" alt=""/></div>
+<map name="bluegiga_8c_ac8a60ccee96fbe718a27b6194f3f14e0_cgraph" id="bluegiga_8c_ac8a60ccee96fbe718a27b6194f3f14e0_cgraph">
+<area shape="rect" id="node2" href="bluegiga_8c.html#a9b6278c5129408fea7fcd6ef782bb566" title="dev_char_available" alt="" coords="183,5,326,32"/><area shape="rect" id="node4" href="bluegiga_8c.html#a0d78dd9a3c384d5c4297995e67672a0f" title="dev_check_free_space" alt="" coords="611,107,777,133"/><area shape="rect" id="node5" href="bluegiga_8c.html#a243da754633510e42d0762bd0eb2eca9" title="dev_get_byte" alt="" coords="428,461,536,488"/><area shape="rect" id="node7" href="bluegiga_8c.html#a5018c170f3f3088edcda331b8ef5e47e" title="dev_put_byte" alt="" coords="201,56,309,83"/><area shape="rect" id="node9" href="bluegiga_8c.html#a744a798d7f20038899dd99d52e656676" title="dev_send_message" alt="" coords="180,208,329,235"/><area shape="rect" id="node10" href="linux_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85" title="Set a gpio output to high level. " alt="" coords="656,157,732,184"/><area shape="rect" id="node11" href="linux_2mcu__periph_2gpio__arch_8h.html#a5b778ed65199db17a02961791e4ee8b8" title="Setup one or more pins of the given GPIO port as outputs. " alt="" coords="184,309,325,336"/><area shape="rect" id="node12" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="156,360,353,387"/><area shape="rect" id="node13" href="group__spi.html#ga02a7edceaff0d9adc8e9b236b9915415" title="Register one (and only one) transaction to use spi as slave. " alt="" coords="626,353,762,380"/><area shape="rect" id="node14" href="bluegiga_8c.html#a81dec5456e47bf1870486a85600c7e1c" title="trans_cb" alt="" coords="216,259,293,285"/><area shape="rect" id="node3" href="bluegiga_8c.html#a746c54bc6bba1fd3d133fe6d35c444c2" title="bluegiga_ch_available" alt="" coords="401,5,563,32"/><area shape="rect" id="node6" href="bluegiga_8c.html#ad59d5db2be5ea429bc32bddfab4f39f3" title="bluegiga_increment_buf" alt="" coords="825,259,1000,285"/><area shape="rect" id="node8" href="bluegiga_8c.html#abe358f767725314dab7b28a59e51989c" title="bluegiga_transmit" alt="" coords="413,56,551,83"/><area shape="rect" id="node15" href="bluegiga_8c.html#a50a0f979fdb5e8cb70090c6de5f203ac" title="bluegiga_receive" alt="" coords="417,259,547,285"/><area shape="rect" id="node16" href="bluegiga_8c.html#a916d36665c2e3144ac83612875e5af59" title="bluegiga_load_tx" alt="" coords="629,233,759,260"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="bluegiga_8c_ac8a60ccee96fbe718a27b6194f3f14e0_icgraph.png" border="0" usemap="#bluegiga_8c_ac8a60ccee96fbe718a27b6194f3f14e0_icgraph" alt=""/></div>
 <map name="bluegiga_8c_ac8a60ccee96fbe718a27b6194f3f14e0_icgraph" id="bluegiga_8c_ac8a60ccee96fbe718a27b6194f3f14e0_icgraph">
 <area shape="rect" id="node2" href="downlink_8h.html#afd49e1738cc6ad57218b944dcb94f73b" title="downlink_init" alt="" coords="156,31,259,57"/><area shape="rect" id="node3" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="307,5,387,32"/><area shape="rect" id="node5" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="315,56,379,83"/><area shape="rect" id="node4" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="443,5,497,32"/><area shape="rect" id="node6" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="435,56,505,83"/></map>
@@ -341,7 +475,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a95be3ef04141e5037bfd21e88d87d3ef"></a>
+<a class="anchor" id="a916d36665c2e3144ac83612875e5af59"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -349,36 +483,46 @@ Variables</h2></td></tr>
           <td class="memname">void bluegiga_load_tx </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="bluegiga_8h.html#structbluegiga__periph">bluegiga_periph</a> *&#160;</td>
-          <td class="paramname"><em>p</em></td><td>)</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">struct <a class="el" href="group__spi.html#structspi__transaction">spi_transaction</a> *&#160;</td>
+          <td class="paramname"><em>trans</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00194">194</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
+<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00209">209</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
 
-<p>References <a class="el" href="bluegiga_8h_source.html#l00041">BLUEGIGA_BUFFER_SIZE</a>, <a class="el" href="bluegiga_8h_source.html#l00035">BLUEGIGA_IDLE</a>, <a class="el" href="bluegiga_8c_source.html#l00100">bluegiga_increment_buf()</a>, <a class="el" href="bluegiga_8h_source.html#l00036">BLUEGIGA_SENDING</a>, <a class="el" href="bluegiga_8c_source.html#l00048">bluegiga_spi</a>, <a class="el" href="bluegiga_8c_source.html#l00046">coms_status</a>, <a class="el" href="bluegiga_8h_source.html#l00065">bluegiga_periph::end_of_msg</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="bluegiga_8h_source.html#l00054">bluegiga_periph::tx_buf</a>, <a class="el" href="bluegiga_8h_source.html#l00056">bluegiga_periph::tx_extract_idx</a>, and <a class="el" href="bluegiga_8h_source.html#l00058">bluegiga_periph::work_tx</a>.</p>
+<p>References <a class="el" href="bluegiga_8h_source.html#l00041">BLUEGIGA_BUFFER_SIZE</a>, <a class="el" href="bluegiga_8h_source.html#l00035">BLUEGIGA_IDLE</a>, <a class="el" href="bluegiga_8c_source.html#l00119">bluegiga_increment_buf()</a>, <a class="el" href="bluegiga_8h_source.html#l00036">BLUEGIGA_SENDING</a>, <a class="el" href="bluegiga_8c_source.html#l00064">coms_status</a>, <a class="el" href="bluegiga_8h_source.html#l00065">bluegiga_periph::end_of_msg</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="bluegiga_8h_source.html#l00054">bluegiga_periph::tx_buf</a>, <a class="el" href="bluegiga_8h_source.html#l00056">bluegiga_periph::tx_extract_idx</a>, and <a class="el" href="bluegiga_8h_source.html#l00058">bluegiga_periph::work_tx</a>.</p>
 
-<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00226">bluegiga_receive()</a>.</p>
+<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00242">bluegiga_receive()</a>.</p>
 
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="bluegiga_8c_a95be3ef04141e5037bfd21e88d87d3ef_cgraph.png" border="0" usemap="#bluegiga_8c_a95be3ef04141e5037bfd21e88d87d3ef_cgraph" alt=""/></div>
-<map name="bluegiga_8c_a95be3ef04141e5037bfd21e88d87d3ef_cgraph" id="bluegiga_8c_a95be3ef04141e5037bfd21e88d87d3ef_cgraph">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="bluegiga_8c_a916d36665c2e3144ac83612875e5af59_cgraph.png" border="0" usemap="#bluegiga_8c_a916d36665c2e3144ac83612875e5af59_cgraph" alt=""/></div>
+<map name="bluegiga_8c_a916d36665c2e3144ac83612875e5af59_cgraph" id="bluegiga_8c_a916d36665c2e3144ac83612875e5af59_cgraph">
 <area shape="rect" id="node2" href="bluegiga_8c.html#ad59d5db2be5ea429bc32bddfab4f39f3" title="bluegiga_increment_buf" alt="" coords="183,5,357,32"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="bluegiga_8c_a95be3ef04141e5037bfd21e88d87d3ef_icgraph.png" border="0" usemap="#bluegiga_8c_a95be3ef04141e5037bfd21e88d87d3ef_icgraph" alt=""/></div>
-<map name="bluegiga_8c_a95be3ef04141e5037bfd21e88d87d3ef_icgraph" id="bluegiga_8c_a95be3ef04141e5037bfd21e88d87d3ef_icgraph">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="bluegiga_8c_a916d36665c2e3144ac83612875e5af59_icgraph.png" border="0" usemap="#bluegiga_8c_a916d36665c2e3144ac83612875e5af59_icgraph" alt=""/></div>
+<map name="bluegiga_8c_a916d36665c2e3144ac83612875e5af59_icgraph" id="bluegiga_8c_a916d36665c2e3144ac83612875e5af59_icgraph">
 <area shape="rect" id="node2" href="bluegiga_8c.html#a50a0f979fdb5e8cb70090c6de5f203ac" title="bluegiga_receive" alt="" coords="183,31,312,57"/><area shape="rect" id="node3" href="bluegiga_8c.html#a81dec5456e47bf1870486a85600c7e1c" title="trans_cb" alt="" coords="360,31,437,57"/><area shape="rect" id="node4" href="bluegiga_8h.html#ac8a60ccee96fbe718a27b6194f3f14e0" title="bluegiga_init" alt="" coords="485,31,588,57"/><area shape="rect" id="node5" href="downlink_8h.html#afd49e1738cc6ad57218b944dcb94f73b" title="downlink_init" alt="" coords="636,31,739,57"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="787,5,867,32"/><area shape="rect" id="node8" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="795,56,859,83"/><area shape="rect" id="node7" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="923,5,977,32"/><area shape="rect" id="node9" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="915,56,985,83"/></map>
 </div>
 </p>
@@ -399,93 +543,31 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00226">226</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
+<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00242">242</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
 
-<p>References <a class="el" href="bluegiga_8h_source.html#l00037">BLUEGIGA_BROADCASTING</a>, <a class="el" href="bluegiga_8h_source.html#l00041">BLUEGIGA_BUFFER_SIZE</a>, <a class="el" href="bluegiga_8c_source.html#l00039">BLUEGIGA_DRDY_GPIO</a>, <a class="el" href="bluegiga_8c_source.html#l00043">BLUEGIGA_DRDY_GPIO_PIN</a>, <a class="el" href="bluegiga_8h_source.html#l00035">BLUEGIGA_IDLE</a>, <a class="el" href="bluegiga_8c_source.html#l00100">bluegiga_increment_buf()</a>, <a class="el" href="bluegiga_8c_source.html#l00194">bluegiga_load_tx()</a>, <a class="el" href="bluegiga_8c_source.html#l00047">bluegiga_p</a>, <a class="el" href="bluegiga_8c_source.html#l00050">bluegiga_rssi</a>, <a class="el" href="bluegiga_8h_source.html#l00036">BLUEGIGA_SENDING</a>, <a class="el" href="bluegiga_8c_source.html#l00048">bluegiga_spi</a>, <a class="el" href="bluegiga_8h_source.html#l00034">BLUEGIGA_UNINIT</a>, <a class="el" href="bluegiga_8h_source.html#l00064">bluegiga_periph::bytes_recvd_since_last</a>, <a class="el" href="bluegiga_8c_source.html#l00046">coms_status</a>, <a class="el" href="gpio__ardrone_8c_source.html#l00054">gpio_set()</a>, <a class="el" href="spi_8h_source.html#l00143">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="linux_2led__hw_8h_source.html#l00043">LED_OFF</a>, <a class="el" href="spi_8h_source.html#l00144">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="bluegiga_8h_source.html#l00050">bluegiga_periph::rx_buf</a>, <a class="el" href="bluegiga_8h_source.html#l00051">bluegiga_periph::rx_insert_idx</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00679">spi_slave_register()</a>, <a class="el" href="spi_8h_source.html#l00093">SPITransSuccess</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, and <a class="el" href="bluegiga_8c_source.html#l00051">telemetry_copy</a>.</p>
+<p>References <a class="el" href="sim__ap_8c_source.html#l00047">ac_id</a>, <a class="el" href="bluegiga_8h_source.html#l00041">BLUEGIGA_BUFFER_SIZE</a>, <a class="el" href="bluegiga_8c_source.html#l00052">BLUEGIGA_DRDY_GPIO</a>, <a class="el" href="bluegiga_8c_source.html#l00056">BLUEGIGA_DRDY_GPIO_PIN</a>, <a class="el" href="bluegiga_8h_source.html#l00035">BLUEGIGA_IDLE</a>, <a class="el" href="bluegiga_8c_source.html#l00119">bluegiga_increment_buf()</a>, <a class="el" href="bluegiga_8c_source.html#l00209">bluegiga_load_tx()</a>, <a class="el" href="bluegiga_8c_source.html#l00065">bluegiga_p</a>, <a class="el" href="bluegiga_8h_source.html#l00036">BLUEGIGA_SENDING</a>, <a class="el" href="bluegiga_8h_source.html#l00037">BLUEGIGA_SENDING_BROADCAST</a>, <a class="el" href="bluegiga_8c_source.html#l00068">broadcast_msg</a>, <a class="el" href="bluegiga_8h_source.html#l00064">bluegiga_periph::bytes_recvd_since_last</a>, <a class="el" href="bluegiga_8c_source.html#l00064">coms_status</a>, <a class="el" href="bluegiga_8h_source.html#l00066">bluegiga_periph::connected</a>, <a class="el" href="gpio__ardrone_8c_source.html#l00054">gpio_set()</a>, <a class="el" href="spi_8h_source.html#l00143">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="linux_2led__hw_8h_source.html#l00044">LED_TOGGLE</a>, <a class="el" href="spi_8h_source.html#l00144">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="bluegiga_8c_source.html#l00061">Pprz_StxOfMsg</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00237">RSSI_BLUEGIGA_ID</a>, <a class="el" href="bluegiga_8c_source.html#l00060">RssiOfSender</a>, <a class="el" href="bluegiga_8h_source.html#l00050">bluegiga_periph::rx_buf</a>, <a class="el" href="bluegiga_8h_source.html#l00051">bluegiga_periph::rx_insert_idx</a>, <a class="el" href="bluegiga_8c_source.html#l00062">SenderIdOfMsg</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00679">spi_slave_register()</a>, <a class="el" href="spi_8h_source.html#l00093">SPITransSuccess</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, <a class="el" href="protocol_8h_source.html#l00098">STX</a>, and <a class="el" href="bluegiga_8c_source.html#l00059">TxStrengthOfSender</a>.</p>
 
-<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00088">trans_cb()</a>.</p>
-
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="bluegiga_8c_a50a0f979fdb5e8cb70090c6de5f203ac_cgraph.png" border="0" usemap="#bluegiga_8c_a50a0f979fdb5e8cb70090c6de5f203ac_cgraph" alt=""/></div>
-<map name="bluegiga_8c_a50a0f979fdb5e8cb70090c6de5f203ac_cgraph" id="bluegiga_8c_a50a0f979fdb5e8cb70090c6de5f203ac_cgraph">
-<area shape="rect" id="node2" href="bluegiga_8c.html#ad59d5db2be5ea429bc32bddfab4f39f3" title="bluegiga_increment_buf" alt="" coords="367,5,541,32"/><area shape="rect" id="node3" href="bluegiga_8c.html#a95be3ef04141e5037bfd21e88d87d3ef" title="bluegiga_load_tx" alt="" coords="186,31,315,57"/><area shape="rect" id="node4" href="linux_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85" title="Set a gpio output to high level. " alt="" coords="213,81,289,108"/><area shape="rect" id="node5" href="group__spi.html#ga02a7edceaff0d9adc8e9b236b9915415" title="Register one (and only one) transaction to use spi as slave. " alt="" coords="183,132,319,159"/></map>
-</div>
-</p>
+<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00107">trans_cb()</a>.</p>
 
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="bluegiga_8c_a50a0f979fdb5e8cb70090c6de5f203ac_icgraph.png" border="0" usemap="#bluegiga_8c_a50a0f979fdb5e8cb70090c6de5f203ac_icgraph" alt=""/></div>
-<map name="bluegiga_8c_a50a0f979fdb5e8cb70090c6de5f203ac_icgraph" id="bluegiga_8c_a50a0f979fdb5e8cb70090c6de5f203ac_icgraph">
-<area shape="rect" id="node2" href="bluegiga_8c.html#a81dec5456e47bf1870486a85600c7e1c" title="trans_cb" alt="" coords="183,31,260,57"/><area shape="rect" id="node3" href="bluegiga_8h.html#ac8a60ccee96fbe718a27b6194f3f14e0" title="bluegiga_init" alt="" coords="308,31,411,57"/><area shape="rect" id="node4" href="downlink_8h.html#afd49e1738cc6ad57218b944dcb94f73b" title="downlink_init" alt="" coords="459,31,561,57"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="609,5,689,32"/><area shape="rect" id="node7" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="617,56,681,83"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="745,5,800,32"/><area shape="rect" id="node8" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="737,56,808,83"/></map>
+<div class="center"><img src="bluegiga_8c_a50a0f979fdb5e8cb70090c6de5f203ac_cgraph.png" border="0" usemap="#bluegiga_8c_a50a0f979fdb5e8cb70090c6de5f203ac_cgraph" alt=""/></div>
+<map name="bluegiga_8c_a50a0f979fdb5e8cb70090c6de5f203ac_cgraph" id="bluegiga_8c_a50a0f979fdb5e8cb70090c6de5f203ac_cgraph">
+<area shape="rect" id="node2" href="bluegiga_8c.html#ad59d5db2be5ea429bc32bddfab4f39f3" title="bluegiga_increment_buf" alt="" coords="367,5,541,32"/><area shape="rect" id="node3" href="bluegiga_8c.html#a916d36665c2e3144ac83612875e5af59" title="bluegiga_load_tx" alt="" coords="186,31,315,57"/><area shape="rect" id="node4" href="linux_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85" title="Set a gpio output to high level. " alt="" coords="213,81,289,108"/><area shape="rect" id="node5" href="group__spi.html#ga02a7edceaff0d9adc8e9b236b9915415" title="Register one (and only one) transaction to use spi as slave. " alt="" coords="183,132,319,159"/></map>
 </div>
 </p>
 
-</div>
-</div>
-<a class="anchor" id="a3b85e292d142346f4120761f59cf2b7c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bluegiga_request_all_rssi </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="bluegiga_8h.html#structbluegiga__periph">bluegiga_periph</a> *&#160;</td>
-          <td class="paramname"><em>p</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00319">319</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
-
-<p>References <a class="el" href="bluegiga_8c_source.html#l00039">BLUEGIGA_DRDY_GPIO</a>, <a class="el" href="bluegiga_8c_source.html#l00043">BLUEGIGA_DRDY_GPIO_PIN</a>, <a class="el" href="bluegiga_8h_source.html#l00036">BLUEGIGA_SENDING</a>, <a class="el" href="bluegiga_8c_source.html#l00046">coms_status</a>, <a class="el" href="gpio__ardrone_8c_source.html#l00070">gpio_clear()</a>, and <a class="el" href="bluegiga_8h_source.html#l00058">bluegiga_periph::work_tx</a>.</p>
-
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="bluegiga_8c_a3b85e292d142346f4120761f59cf2b7c_cgraph.png" border="0" usemap="#bluegiga_8c_a3b85e292d142346f4120761f59cf2b7c_cgraph" alt=""/></div>
-<map name="bluegiga_8c_a3b85e292d142346f4120761f59cf2b7c_cgraph" id="bluegiga_8c_a3b85e292d142346f4120761f59cf2b7c_cgraph">
-<area shape="rect" id="node2" href="linux_2mcu__periph_2gpio__arch_8h.html#aa94dfa6db378d98566e22e193c7a8ab7" title="Clear a gpio output to low level. " alt="" coords="236,5,323,32"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a59308e111064cd1a2771e8696198a16e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void bluegiga_scan </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="bluegiga_8h.html#structbluegiga__periph">bluegiga_periph</a> *&#160;</td>
-          <td class="paramname"><em>p</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00306">306</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
-
-<p>References <a class="el" href="bluegiga_8c_source.html#l00039">BLUEGIGA_DRDY_GPIO</a>, <a class="el" href="bluegiga_8c_source.html#l00043">BLUEGIGA_DRDY_GPIO_PIN</a>, <a class="el" href="bluegiga_8h_source.html#l00036">BLUEGIGA_SENDING</a>, <a class="el" href="bluegiga_8c_source.html#l00046">coms_status</a>, <a class="el" href="gpio__ardrone_8c_source.html#l00070">gpio_clear()</a>, and <a class="el" href="bluegiga_8h_source.html#l00058">bluegiga_periph::work_tx</a>.</p>
-
-<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="bluegiga_8c_a59308e111064cd1a2771e8696198a16e_cgraph.png" border="0" usemap="#bluegiga_8c_a59308e111064cd1a2771e8696198a16e_cgraph" alt=""/></div>
-<map name="bluegiga_8c_a59308e111064cd1a2771e8696198a16e_cgraph" id="bluegiga_8c_a59308e111064cd1a2771e8696198a16e_cgraph">
-<area shape="rect" id="node2" href="linux_2mcu__periph_2gpio__arch_8h.html#aa94dfa6db378d98566e22e193c7a8ab7" title="Clear a gpio output to low level. " alt="" coords="167,5,253,32"/></map>
+<div class="center"><img src="bluegiga_8c_a50a0f979fdb5e8cb70090c6de5f203ac_icgraph.png" border="0" usemap="#bluegiga_8c_a50a0f979fdb5e8cb70090c6de5f203ac_icgraph" alt=""/></div>
+<map name="bluegiga_8c_a50a0f979fdb5e8cb70090c6de5f203ac_icgraph" id="bluegiga_8c_a50a0f979fdb5e8cb70090c6de5f203ac_icgraph">
+<area shape="rect" id="node2" href="bluegiga_8c.html#a81dec5456e47bf1870486a85600c7e1c" title="trans_cb" alt="" coords="183,31,260,57"/><area shape="rect" id="node3" href="bluegiga_8h.html#ac8a60ccee96fbe718a27b6194f3f14e0" title="bluegiga_init" alt="" coords="308,31,411,57"/><area shape="rect" id="node4" href="downlink_8h.html#afd49e1738cc6ad57218b944dcb94f73b" title="downlink_init" alt="" coords="459,31,561,57"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="609,5,689,32"/><area shape="rect" id="node7" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="617,56,681,83"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="745,5,800,32"/><area shape="rect" id="node8" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="737,56,808,83"/></map>
 </div>
 </p>
 
@@ -515,28 +597,28 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00185">185</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
+<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00200">200</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
 
-<p>References <a class="el" href="bluegiga_8c_source.html#l00100">bluegiga_increment_buf()</a>, <a class="el" href="bluegiga_8h_source.html#l00034">BLUEGIGA_UNINIT</a>, <a class="el" href="bluegiga_8c_source.html#l00046">coms_status</a>, <a class="el" href="bluegiga_8c_source.html#l00058">dev_check_free_space()</a>, <a class="el" href="bluegiga_8h_source.html#l00054">bluegiga_periph::tx_buf</a>, and <a class="el" href="bluegiga_8h_source.html#l00055">bluegiga_periph::tx_insert_idx</a>.</p>
+<p>References <a class="el" href="bluegiga_8c_source.html#l00119">bluegiga_increment_buf()</a>, <a class="el" href="bluegiga_8h_source.html#l00034">BLUEGIGA_UNINIT</a>, <a class="el" href="bluegiga_8c_source.html#l00064">coms_status</a>, <a class="el" href="bluegiga_8c_source.html#l00075">dev_check_free_space()</a>, <a class="el" href="bluegiga_8h_source.html#l00054">bluegiga_periph::tx_buf</a>, and <a class="el" href="bluegiga_8h_source.html#l00055">bluegiga_periph::tx_insert_idx</a>.</p>
 
-<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00068">dev_put_byte()</a>.</p>
+<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00085">dev_put_byte()</a>.</p>
 
-<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="bluegiga_8c_abe358f767725314dab7b28a59e51989c_cgraph.png" border="0" usemap="#bluegiga_8c_abe358f767725314dab7b28a59e51989c_cgraph" alt=""/></div>
 <map name="bluegiga_8c_abe358f767725314dab7b28a59e51989c_cgraph" id="bluegiga_8c_abe358f767725314dab7b28a59e51989c_cgraph">
 <area shape="rect" id="node2" href="bluegiga_8c.html#ad59d5db2be5ea429bc32bddfab4f39f3" title="bluegiga_increment_buf" alt="" coords="191,5,365,32"/><area shape="rect" id="node3" href="bluegiga_8c.html#a0d78dd9a3c384d5c4297995e67672a0f" title="dev_check_free_space" alt="" coords="195,56,361,83"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="bluegiga_8c_abe358f767725314dab7b28a59e51989c_icgraph.png" border="0" usemap="#bluegiga_8c_abe358f767725314dab7b28a59e51989c_icgraph" alt=""/></div>
 <map name="bluegiga_8c_abe358f767725314dab7b28a59e51989c_icgraph" id="bluegiga_8c_abe358f767725314dab7b28a59e51989c_icgraph">
 <area shape="rect" id="node2" href="bluegiga_8c.html#a5018c170f3f3088edcda331b8ef5e47e" title="dev_put_byte" alt="" coords="191,31,299,57"/><area shape="rect" id="node3" href="bluegiga_8h.html#ac8a60ccee96fbe718a27b6194f3f14e0" title="bluegiga_init" alt="" coords="347,31,449,57"/><area shape="rect" id="node4" href="downlink_8h.html#afd49e1738cc6ad57218b944dcb94f73b" title="downlink_init" alt="" coords="497,31,600,57"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="648,5,728,32"/><area shape="rect" id="node7" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="656,56,720,83"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="784,5,839,32"/><area shape="rect" id="node8" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="776,56,847,83"/></map>
@@ -567,28 +649,28 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00076">76</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
+<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00093">93</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
 
-<p>References <a class="el" href="bluegiga_8c_source.html#l00094">bluegiga_ch_available()</a>.</p>
+<p>References <a class="el" href="bluegiga_8c_source.html#l00113">bluegiga_ch_available()</a>.</p>
 
-<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00123">bluegiga_init()</a>.</p>
+<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00142">bluegiga_init()</a>.</p>
 
-<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="bluegiga_8c_a9b6278c5129408fea7fcd6ef782bb566_cgraph.png" border="0" usemap="#bluegiga_8c_a9b6278c5129408fea7fcd6ef782bb566_cgraph" alt=""/></div>
 <map name="bluegiga_8c_a9b6278c5129408fea7fcd6ef782bb566_cgraph" id="bluegiga_8c_a9b6278c5129408fea7fcd6ef782bb566_cgraph">
 <area shape="rect" id="node2" href="bluegiga_8c.html#a746c54bc6bba1fd3d133fe6d35c444c2" title="bluegiga_ch_available" alt="" coords="196,5,357,32"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="bluegiga_8c_a9b6278c5129408fea7fcd6ef782bb566_icgraph.png" border="0" usemap="#bluegiga_8c_a9b6278c5129408fea7fcd6ef782bb566_icgraph" alt=""/></div>
 <map name="bluegiga_8c_a9b6278c5129408fea7fcd6ef782bb566_icgraph" id="bluegiga_8c_a9b6278c5129408fea7fcd6ef782bb566_icgraph">
 <area shape="rect" id="node2" href="bluegiga_8h.html#ac8a60ccee96fbe718a27b6194f3f14e0" title="bluegiga_init" alt="" coords="196,31,299,57"/><area shape="rect" id="node3" href="downlink_8h.html#afd49e1738cc6ad57218b944dcb94f73b" title="downlink_init" alt="" coords="347,31,449,57"/><area shape="rect" id="node4" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="497,5,577,32"/><area shape="rect" id="node6" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="505,56,569,83"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="633,5,688,32"/><area shape="rect" id="node7" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="625,56,696,83"/></map>
@@ -629,17 +711,17 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00058">58</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
+<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00075">75</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
 
 <p>References <a class="el" href="bluegiga_8h_source.html#l00041">BLUEGIGA_BUFFER_SIZE</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="bluegiga_8h_source.html#l00056">bluegiga_periph::tx_extract_idx</a>, and <a class="el" href="bluegiga_8h_source.html#l00055">bluegiga_periph::tx_insert_idx</a>.</p>
 
-<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00123">bluegiga_init()</a>, and <a class="el" href="bluegiga_8c_source.html#l00185">bluegiga_transmit()</a>.</p>
+<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00142">bluegiga_init()</a>, and <a class="el" href="bluegiga_8c_source.html#l00200">bluegiga_transmit()</a>.</p>
 
-<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="bluegiga_8c_a0d78dd9a3c384d5c4297995e67672a0f_icgraph.png" border="0" usemap="#bluegiga_8c_a0d78dd9a3c384d5c4297995e67672a0f_icgraph" alt=""/></div>
 <map name="bluegiga_8c_a0d78dd9a3c384d5c4297995e67672a0f_icgraph" id="bluegiga_8c_a0d78dd9a3c384d5c4297995e67672a0f_icgraph">
 <area shape="rect" id="node2" href="bluegiga_8h.html#ac8a60ccee96fbe718a27b6194f3f14e0" title="bluegiga_init" alt="" coords="561,31,664,57"/><area shape="rect" id="node8" href="bluegiga_8c.html#abe358f767725314dab7b28a59e51989c" title="bluegiga_transmit" alt="" coords="220,56,357,83"/><area shape="rect" id="node3" href="downlink_8h.html#afd49e1738cc6ad57218b944dcb94f73b" title="downlink_init" alt="" coords="712,31,815,57"/><area shape="rect" id="node4" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="863,5,943,32"/><area shape="rect" id="node6" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="871,56,935,83"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="999,5,1053,32"/><area shape="rect" id="node7" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="991,56,1061,83"/><area shape="rect" id="node9" href="bluegiga_8c.html#a5018c170f3f3088edcda331b8ef5e47e" title="dev_put_byte" alt="" coords="405,56,513,83"/></map>
@@ -670,28 +752,28 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00080">80</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
+<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00099">99</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
 
-<p>References <a class="el" href="bluegiga_8c_source.html#l00100">bluegiga_increment_buf()</a>, <a class="el" href="bluegiga_8h_source.html#l00050">bluegiga_periph::rx_buf</a>, and <a class="el" href="bluegiga_8h_source.html#l00052">bluegiga_periph::rx_extract_idx</a>.</p>
+<p>References <a class="el" href="bluegiga_8c_source.html#l00119">bluegiga_increment_buf()</a>, <a class="el" href="bluegiga_8h_source.html#l00050">bluegiga_periph::rx_buf</a>, and <a class="el" href="bluegiga_8h_source.html#l00052">bluegiga_periph::rx_extract_idx</a>.</p>
 
-<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00123">bluegiga_init()</a>.</p>
+<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00142">bluegiga_init()</a>.</p>
 
-<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="bluegiga_8c_a243da754633510e42d0762bd0eb2eca9_cgraph.png" border="0" usemap="#bluegiga_8c_a243da754633510e42d0762bd0eb2eca9_cgraph" alt=""/></div>
 <map name="bluegiga_8c_a243da754633510e42d0762bd0eb2eca9_cgraph" id="bluegiga_8c_a243da754633510e42d0762bd0eb2eca9_cgraph">
 <area shape="rect" id="node2" href="bluegiga_8c.html#ad59d5db2be5ea429bc32bddfab4f39f3" title="bluegiga_increment_buf" alt="" coords="161,5,336,32"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="bluegiga_8c_a243da754633510e42d0762bd0eb2eca9_icgraph.png" border="0" usemap="#bluegiga_8c_a243da754633510e42d0762bd0eb2eca9_icgraph" alt=""/></div>
 <map name="bluegiga_8c_a243da754633510e42d0762bd0eb2eca9_icgraph" id="bluegiga_8c_a243da754633510e42d0762bd0eb2eca9_icgraph">
 <area shape="rect" id="node2" href="bluegiga_8h.html#ac8a60ccee96fbe718a27b6194f3f14e0" title="bluegiga_init" alt="" coords="161,31,264,57"/><area shape="rect" id="node3" href="downlink_8h.html#afd49e1738cc6ad57218b944dcb94f73b" title="downlink_init" alt="" coords="312,31,415,57"/><area shape="rect" id="node4" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="463,5,543,32"/><area shape="rect" id="node6" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="471,56,535,83"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="599,5,653,32"/><area shape="rect" id="node7" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="591,56,661,83"/></map>
@@ -732,28 +814,28 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00068">68</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
+<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00085">85</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
 
-<p>References <a class="el" href="bluegiga_8c_source.html#l00185">bluegiga_transmit()</a>.</p>
+<p>References <a class="el" href="bluegiga_8c_source.html#l00200">bluegiga_transmit()</a>.</p>
 
-<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00123">bluegiga_init()</a>.</p>
+<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00142">bluegiga_init()</a>.</p>
 
-<p><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="bluegiga_8c_a5018c170f3f3088edcda331b8ef5e47e_cgraph.png" border="0" usemap="#bluegiga_8c_a5018c170f3f3088edcda331b8ef5e47e_cgraph" alt=""/></div>
 <map name="bluegiga_8c_a5018c170f3f3088edcda331b8ef5e47e_cgraph" id="bluegiga_8c_a5018c170f3f3088edcda331b8ef5e47e_cgraph">
 <area shape="rect" id="node2" href="bluegiga_8c.html#abe358f767725314dab7b28a59e51989c" title="bluegiga_transmit" alt="" coords="161,31,299,57"/><area shape="rect" id="node3" href="bluegiga_8c.html#ad59d5db2be5ea429bc32bddfab4f39f3" title="bluegiga_increment_buf" alt="" coords="347,5,521,32"/><area shape="rect" id="node4" href="bluegiga_8c.html#a0d78dd9a3c384d5c4297995e67672a0f" title="dev_check_free_space" alt="" coords="351,56,517,83"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="bluegiga_8c_a5018c170f3f3088edcda331b8ef5e47e_icgraph.png" border="0" usemap="#bluegiga_8c_a5018c170f3f3088edcda331b8ef5e47e_icgraph" alt=""/></div>
 <map name="bluegiga_8c_a5018c170f3f3088edcda331b8ef5e47e_icgraph" id="bluegiga_8c_a5018c170f3f3088edcda331b8ef5e47e_icgraph">
 <area shape="rect" id="node2" href="bluegiga_8h.html#ac8a60ccee96fbe718a27b6194f3f14e0" title="bluegiga_init" alt="" coords="161,31,264,57"/><area shape="rect" id="node3" href="downlink_8h.html#afd49e1738cc6ad57218b944dcb94f73b" title="downlink_init" alt="" coords="312,31,415,57"/><area shape="rect" id="node4" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="463,5,543,32"/><area shape="rect" id="node6" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="471,56,535,83"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="599,5,653,32"/><area shape="rect" id="node7" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="591,56,661,83"/></map>
@@ -784,17 +866,17 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00072">72</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
+<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00089">89</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
 
 <p>References <a class="el" href="bluegiga_8h_source.html#l00065">bluegiga_periph::end_of_msg</a>, and <a class="el" href="bluegiga_8h_source.html#l00055">bluegiga_periph::tx_insert_idx</a>.</p>
 
-<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00123">bluegiga_init()</a>.</p>
+<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00142">bluegiga_init()</a>.</p>
 
-<p><div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="bluegiga_8c_a744a798d7f20038899dd99d52e656676_icgraph.png" border="0" usemap="#bluegiga_8c_a744a798d7f20038899dd99d52e656676_icgraph" alt=""/></div>
 <map name="bluegiga_8c_a744a798d7f20038899dd99d52e656676_icgraph" id="bluegiga_8c_a744a798d7f20038899dd99d52e656676_icgraph">
 <area shape="rect" id="node2" href="bluegiga_8h.html#ac8a60ccee96fbe718a27b6194f3f14e0" title="bluegiga_init" alt="" coords="203,31,305,57"/><area shape="rect" id="node3" href="downlink_8h.html#afd49e1738cc6ad57218b944dcb94f73b" title="downlink_init" alt="" coords="353,31,456,57"/><area shape="rect" id="node4" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="504,5,584,32"/><area shape="rect" id="node6" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="512,56,576,83"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="640,5,695,32"/><area shape="rect" id="node7" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="632,56,703,83"/></map>
@@ -825,28 +907,28 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00088">88</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
+<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00107">107</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
 
-<p>References <a class="el" href="bluegiga_8c_source.html#l00226">bluegiga_receive()</a>.</p>
+<p>References <a class="el" href="bluegiga_8c_source.html#l00242">bluegiga_receive()</a>.</p>
 
-<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00123">bluegiga_init()</a>.</p>
+<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00142">bluegiga_init()</a>.</p>
 
-<p><div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="bluegiga_8c_a81dec5456e47bf1870486a85600c7e1c_cgraph.png" border="0" usemap="#bluegiga_8c_a81dec5456e47bf1870486a85600c7e1c_cgraph" alt=""/></div>
 <map name="bluegiga_8c_a81dec5456e47bf1870486a85600c7e1c_cgraph" id="bluegiga_8c_a81dec5456e47bf1870486a85600c7e1c_cgraph">
-<area shape="rect" id="node2" href="bluegiga_8c.html#a50a0f979fdb5e8cb70090c6de5f203ac" title="bluegiga_receive" alt="" coords="131,56,260,83"/><area shape="rect" id="node3" href="bluegiga_8c.html#ad59d5db2be5ea429bc32bddfab4f39f3" title="bluegiga_increment_buf" alt="" coords="492,5,667,32"/><area shape="rect" id="node4" href="bluegiga_8c.html#a95be3ef04141e5037bfd21e88d87d3ef" title="bluegiga_load_tx" alt="" coords="311,31,441,57"/><area shape="rect" id="node5" href="linux_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85" title="Set a gpio output to high level. " alt="" coords="338,81,414,108"/><area shape="rect" id="node6" href="group__spi.html#ga02a7edceaff0d9adc8e9b236b9915415" title="Register one (and only one) transaction to use spi as slave. " alt="" coords="308,132,444,159"/></map>
+<area shape="rect" id="node2" href="bluegiga_8c.html#a50a0f979fdb5e8cb70090c6de5f203ac" title="bluegiga_receive" alt="" coords="131,56,260,83"/><area shape="rect" id="node3" href="bluegiga_8c.html#ad59d5db2be5ea429bc32bddfab4f39f3" title="bluegiga_increment_buf" alt="" coords="492,5,667,32"/><area shape="rect" id="node4" href="bluegiga_8c.html#a916d36665c2e3144ac83612875e5af59" title="bluegiga_load_tx" alt="" coords="311,31,441,57"/><area shape="rect" id="node5" href="linux_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85" title="Set a gpio output to high level. " alt="" coords="338,81,414,108"/><area shape="rect" id="node6" href="group__spi.html#ga02a7edceaff0d9adc8e9b236b9915415" title="Register one (and only one) transaction to use spi as slave. " alt="" coords="308,132,444,159"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="bluegiga_8c_a81dec5456e47bf1870486a85600c7e1c_icgraph.png" border="0" usemap="#bluegiga_8c_a81dec5456e47bf1870486a85600c7e1c_icgraph" alt=""/></div>
 <map name="bluegiga_8c_a81dec5456e47bf1870486a85600c7e1c_icgraph" id="bluegiga_8c_a81dec5456e47bf1870486a85600c7e1c_icgraph">
 <area shape="rect" id="node2" href="bluegiga_8h.html#ac8a60ccee96fbe718a27b6194f3f14e0" title="bluegiga_init" alt="" coords="131,31,233,57"/><area shape="rect" id="node3" href="downlink_8h.html#afd49e1738cc6ad57218b944dcb94f73b" title="downlink_init" alt="" coords="281,31,384,57"/><area shape="rect" id="node4" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="432,5,512,32"/><area shape="rect" id="node6" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="440,56,504,83"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="568,5,623,32"/><area shape="rect" id="node7" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="560,56,631,83"/></map>
@@ -866,25 +948,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00047">47</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
+<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00065">65</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
 
-<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00226">bluegiga_receive()</a>, and <a class="el" href="downlink_8c_source.html#l00066">downlink_init()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9adb81268f523a2a05d476d5f64676ed"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">signed char bluegiga_rssi[256]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00050">50</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
-
-<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00123">bluegiga_init()</a>, and <a class="el" href="bluegiga_8c_source.html#l00226">bluegiga_receive()</a>.</p>
+<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00242">bluegiga_receive()</a>, and <a class="el" href="downlink_8c_source.html#l00064">downlink_init()</a>.</p>
 
 </div>
 </div>
@@ -898,9 +964,25 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00048">48</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
+<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00066">66</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
 
-<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00123">bluegiga_init()</a>, <a class="el" href="bluegiga_8c_source.html#l00194">bluegiga_load_tx()</a>, and <a class="el" href="bluegiga_8c_source.html#l00226">bluegiga_receive()</a>.</p>
+<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00142">bluegiga_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a876337cc7116d327068525c915f302e1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> broadcast_msg[20]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00068">68</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
+
+<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00327">bluegiga_broadcast_msg()</a>, <a class="el" href="bluegiga_8c_source.html#l00142">bluegiga_init()</a>, and <a class="el" href="bluegiga_8c_source.html#l00242">bluegiga_receive()</a>.</p>
 
 </div>
 </div>
@@ -914,25 +996,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00046">46</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
+<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00064">64</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
 
-<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00123">bluegiga_init()</a>, <a class="el" href="bluegiga_8c_source.html#l00194">bluegiga_load_tx()</a>, <a class="el" href="bluegiga_8c_source.html#l00226">bluegiga_receive()</a>, <a class="el" href="bluegiga_8c_source.html#l00319">bluegiga_request_all_rssi()</a>, <a class="el" href="bluegiga_8c_source.html#l00306">bluegiga_scan()</a>, and <a class="el" href="bluegiga_8c_source.html#l00185">bluegiga_transmit()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a3945da57e9f43939a5fdb9fecb610366"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned char telemetry_copy[20]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="bluegiga_8c_source.html#l00051">51</a> of file <a class="el" href="bluegiga_8c_source.html">bluegiga.c</a>.</p>
-
-<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00226">bluegiga_receive()</a>.</p>
+<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00327">bluegiga_broadcast_msg()</a>, <a class="el" href="bluegiga_8c_source.html#l00142">bluegiga_init()</a>, <a class="el" href="bluegiga_8c_source.html#l00209">bluegiga_load_tx()</a>, <a class="el" href="bluegiga_8c_source.html#l00242">bluegiga_receive()</a>, and <a class="el" href="bluegiga_8c_source.html#l00200">bluegiga_transmit()</a>.</p>
 
 </div>
 </div>
@@ -942,7 +1008,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_6567a5a7be991f15b7628b3b0eb084bd.html">datalink</a></li><li class="navelem"><a class="el" href="bluegiga_8c.html">bluegiga.c</a></li>
-    <li class="footer">Generated on Wed Nov 11 2015 02:01:46 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:02:02 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

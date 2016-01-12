@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -208,6 +208,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#ADC">ADC (ID 104)</a></li>
 <li class="level2"><a href="#ACTUATORS">ACTUATORS (ID 105)</a></li>
 <li class="level2"><a href="#BLUEGIGA">BLUEGIGA (ID 106)</a></li>
+<li class="level2"><a href="#MULTIGAZE_METERS">MULTIGAZE_METERS (ID 109)</a></li>
 <li class="level2"><a href="#DC_SHOT">DC_SHOT (ID 110)</a></li>
 <li class="level2"><a href="#TEST_BOARD_RESULTS">TEST_BOARD_RESULTS (ID 111)</a></li>
 <li class="level2"><a href="#MLX_SERIAL">MLX_SERIAL (ID 113)</a></li>
@@ -376,6 +377,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#GOTO_MISSION">GOTO_MISSION (ID 30)</a></li>
 <li class="level2"><a href="#NEXT_MISSION">NEXT_MISSION (ID 31)</a></li>
 <li class="level2"><a href="#END_MISSION">END_MISSION (ID 32)</a></li>
+<li class="level2"><a href="#GUIDED_SETPOINT_NED">GUIDED_SETPOINT_NED (ID 40)</a></li>
 <li class="level2"><a href="#WINDTURBINE_STATUS">WINDTURBINE_STATUS (ID 50)</a></li>
 <li class="level2"><a href="#RC_3CH">RC_3CH (ID 51)</a></li>
 <li class="level2"><a href="#RC_4CH">RC_4CH (ID 52)</a></li>
@@ -436,6 +438,10 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 </ul>
 </li>
 <li class="level1"><a href="#DIA_CLASS">Dia Messages</a><ul><li class="level2"><a href="#NAV_INFO">NAV_INFO (ID 1)</a></li>
+</ul>
+</li>
+<li class="level1"><a href="#INTERMCU_CLASS">Intermcu Messages</a><ul><li class="level2"><a href="#IMCU_COMMANDS">IMCU_COMMANDS (ID 1)</a></li>
+<li class="level2"><a href="#IMCU_RADIO_COMMANDS">IMCU_RADIO_COMMANDS (ID 2)</a></li>
 </ul>
 </li>
 </ul>
@@ -967,7 +973,7 @@ MOTOR (ID 34)</h2>
 </table>
 <h2><a class="anchor" id="WP_MOVED"></a>
 WP_MOVED (ID 35)</h2>
-<p><a class="el" href="waypoints_8h.html#structWaypoint">Waypoint</a> with id wp_id has been updated/moved to the specified UTM coordinates.</p>
+<p><a class="el" href="subsystems_2navigation_2waypoints_8h.html#structWaypoint">Waypoint</a> with id wp_id has been updated/moved to the specified UTM coordinates.</p>
 <table class="doxtable">
 <tr>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
@@ -2111,8 +2117,14 @@ BLUEGIGA (ID 106)</h2>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
 <tr>
 <td>data_rate </td><td>uint32 </td><td>bytes/s </td><td></td></tr>
+</table>
+<h2><a class="anchor" id="MULTIGAZE_METERS"></a>
+MULTIGAZE_METERS (ID 109)</h2>
+<table class="doxtable">
 <tr>
-<td>last_msg </td><td>uint8[] </td><td></td><td></td></tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>multigaze_meters </td><td>float[] </td><td></td><td></td></tr>
 </table>
 <h2><a class="anchor" id="DC_SHOT"></a>
 DC_SHOT (ID 110)</h2>
@@ -2559,6 +2571,8 @@ FILTER (ID 134)</h2>
 <td>bq </td><td>int32 </td><td></td><td></td></tr>
 <tr>
 <td>br </td><td>int32 </td><td></td><td></td></tr>
+<tr>
+<td>comp_id </td><td>uint8 </td><td>NONE, GENERIC, IR, ICQ, ICE, FC, DCM, FINV, MLKF, GX3 </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="FILTER2"></a>
 FILTER2 (ID 135)</h2>
@@ -2590,29 +2604,11 @@ RATE_LOOP (ID 136)</h2>
 <tr>
 <td>sp_r </td><td>int32 </td><td></td><td></td></tr>
 <tr>
-<td>ref_p </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>ref_q </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>ref_r </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>refdot_p </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>refdot_q </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>refdot_r </td><td>int32 </td><td></td><td></td></tr>
-<tr>
 <td>sumerr_p </td><td>int32 </td><td></td><td></td></tr>
 <tr>
 <td>sumerr_q </td><td>int32 </td><td></td><td></td></tr>
 <tr>
 <td>sumerr_r </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>ff_p </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>ff_q </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>ff_r </td><td>int32 </td><td></td><td></td></tr>
 <tr>
 <td>fb_p </td><td>int32 </td><td></td><td></td></tr>
 <tr>
@@ -3111,6 +3107,8 @@ AHRS_EULER_INT (ID 156)</h2>
 <td>body_theta </td><td>int32 </td><td></td><td></td></tr>
 <tr>
 <td>body_psi </td><td>int32 </td><td></td><td></td></tr>
+<tr>
+<td>comp_id </td><td>uint8 </td><td>NONE, GENERIC, IR, ICQ, ICE, FC, DCM, FINV, MLKF, GX3 </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="AHRS_QUAT_INT"></a>
 AHRS_QUAT_INT (ID 157)</h2>
@@ -3135,6 +3133,8 @@ AHRS_QUAT_INT (ID 157)</h2>
 <td>body_qy </td><td>int32 </td><td></td><td></td></tr>
 <tr>
 <td>body_qz </td><td>int32 </td><td></td><td></td></tr>
+<tr>
+<td>comp_id </td><td>uint8 </td><td>NONE, GENERIC, IR, ICQ, ICE, FC, DCM, FINV, MLKF, GX3 </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="AHRS_RMAT_INT"></a>
 AHRS_RMAT_INT (ID 158)</h2>
@@ -3177,6 +3177,8 @@ AHRS_RMAT_INT (ID 158)</h2>
 <td>body_m21 </td><td>int32 </td><td></td><td></td></tr>
 <tr>
 <td>body_m22 </td><td>int32 </td><td></td><td></td></tr>
+<tr>
+<td>comp_id </td><td>uint8 </td><td>NONE, GENERIC, IR, ICQ, ICE, FC, DCM, FINV, MLKF, GX3 </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="ROTORCRAFT_NAV_STATUS"></a>
 ROTORCRAFT_NAV_STATUS (ID 159)</h2>
@@ -3269,6 +3271,8 @@ GEO_MAG (ID 163)</h2>
 <td>Hy </td><td>float </td><td></td><td></td></tr>
 <tr>
 <td>Hz </td><td>float </td><td></td><td></td></tr>
+<tr>
+<td>comp_id </td><td>uint8 </td><td>NONE, GENERIC, GEOM, ICQ, ICE, FC, DCM, FINV, MLKF, GX3 </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="HFF"></a>
 HFF (ID 164)</h2>
@@ -3453,6 +3457,8 @@ AHRS_EULER (ID 173)</h2>
 <td>theta </td><td>float </td><td>rad </td><td></td></tr>
 <tr>
 <td>psi </td><td>float </td><td>rad </td><td></td></tr>
+<tr>
+<td>comp_id </td><td>uint8 </td><td>NONE, GENERIC, IR, ICQ, ICE, FC, DCM, FINV, MLKF, GX3 </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="AHRS_MEASUREMENT_EULER"></a>
 AHRS_MEASUREMENT_EULER (ID 174)</h2>
@@ -3509,6 +3515,8 @@ AHRS_GYRO_BIAS_INT (ID 178)</h2>
 <td>bq </td><td>int32 </td><td></td><td></td></tr>
 <tr>
 <td>br </td><td>int32 </td><td></td><td></td></tr>
+<tr>
+<td>comp_id </td><td>uint8 </td><td>NONE, GENERIC, IR, ICQ, ICE, FC, DCM, FINV, MLKF, GX3 </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="FLOW_AP_OTF"></a>
 FLOW_AP_OTF (ID 179)</h2>
@@ -4316,9 +4324,9 @@ OPTIC_FLOW_EST (ID 228)</h2>
 <tr>
 <td>flow_der_y </td><td>int16 </td><td>subpixels </td><td></td></tr>
 <tr>
-<td>vel_x </td><td>float </td><td>cm/s </td><td></td></tr>
+<td>vel_x </td><td>float </td><td>m/s </td><td></td></tr>
 <tr>
-<td>vel_y </td><td>float </td><td>cm/s </td><td></td></tr>
+<td>vel_y </td><td>float </td><td>m/s </td><td></td></tr>
 <tr>
 <td>div_size </td><td>float </td><td>1/s </td><td></td></tr>
 <tr>
@@ -4354,15 +4362,15 @@ ROTORCRAFT_STATUS (ID 231)</h2>
 <tr>
 <td>gps_status </td><td>uint8 </td><td>NO_FIX, NA, 2D, 3D, DGPS, RTK </td><td></td></tr>
 <tr>
-<td>ap_mode </td><td>uint8 </td><td>KILL, FAILSAFE, HOME, RATE_DIRECT, ATTITUDE_DIRECT, RATE_RC_CLIMB, ATTITUDE_RC_CLIMB, ATTITUDE_CLIMB, RATE_Z_HOLD, ATTITUDE_Z_HOLD, HOVER_DIRECT, HOVER_CLIMB, HOVER_Z_HOLD, NAV, RC_DIRECT, CARE_FREE, FORWARD, MODULE, FLIP </td><td></td></tr>
+<td>ap_mode </td><td>uint8 </td><td>KILL, FAILSAFE, HOME, RATE_DIRECT, ATTITUDE_DIRECT, RATE_RC_CLIMB, ATTITUDE_RC_CLIMB, ATTITUDE_CLIMB, RATE_Z_HOLD, ATTITUDE_Z_HOLD, HOVER_DIRECT, HOVER_CLIMB, HOVER_Z_HOLD, NAV, RC_DIRECT, CARE_FREE, FORWARD, MODULE, FLIP, GUIDED </td><td></td></tr>
 <tr>
 <td>ap_in_flight </td><td>uint8 </td><td>ON_GROUND, IN_FLIGHT </td><td></td></tr>
 <tr>
 <td>ap_motors_on </td><td>uint8 </td><td>MOTORS_OFF, MOTORS_ON </td><td></td></tr>
 <tr>
-<td>ap_h_mode </td><td>uint8 </td><td>KILL, RATE, ATTITUDE, HOVER, NAV, CF </td><td></td></tr>
+<td>ap_h_mode </td><td>uint8 </td><td>KILL, RATE, ATTITUDE, HOVER, NAV, RC_DIRECT, CF, FORWARD, MODULE, FLIP, GUIDED </td><td></td></tr>
 <tr>
-<td>ap_v_mode </td><td>uint8 </td><td>KILL, RC_DIRECT, RC_CLIMB, CLIMB, HOVER, NAV </td><td></td></tr>
+<td>ap_v_mode </td><td>uint8 </td><td>KILL, RC_DIRECT, RC_CLIMB, CLIMB, HOVER, NAV, MODULE, FLIP, GUIDED </td><td></td></tr>
 <tr>
 <td>vsupply </td><td>uint16 </td><td>decivolt </td><td></td></tr>
 <tr>
@@ -5189,6 +5197,25 @@ END_MISSION (ID 32)</h2>
 <tr>
 <td>ac_id </td><td>uint8 </td><td></td><td></td></tr>
 </table>
+<h2><a class="anchor" id="GUIDED_SETPOINT_NED"></a>
+GUIDED_SETPOINT_NED (ID 40)</h2>
+<p>Set vehicle position or velocity in NED. Frame can be specified with the bits 0-3 in the flags field: 0x0: LOCAL_NED 0x1: LOCAL_OFFSET_NED 0x2: BODY_NED 0x3: BODY_OFFSET_NED</p>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>ac_id </td><td>uint8 </td><td></td><td></td></tr>
+<tr>
+<td>flags </td><td>uint8 </td><td></td><td>bits 0-3: frame, bits 4-7: use as velocity? </td></tr>
+<tr>
+<td>x </td><td>float </td><td>m </td><td>X position/velocity in NED </td></tr>
+<tr>
+<td>y </td><td>float </td><td>m </td><td>Y position/velocity in NED </td></tr>
+<tr>
+<td>z </td><td>float </td><td>m </td><td>Z position/velocity in NED (negative altitude) </td></tr>
+<tr>
+<td>yaw </td><td>float </td><td>rad </td><td>yaw/rate setpoint </td></tr>
+</table>
 <h2><a class="anchor" id="WINDTURBINE_STATUS"></a>
 WINDTURBINE_STATUS (ID 50)</h2>
 <table class="doxtable">
@@ -5243,9 +5270,11 @@ REMOTE_GPS_SMALL (ID 54)</h2>
 <tr>
 <td>numsv </td><td>uint8 </td><td></td><td></td></tr>
 <tr>
-<td>pos_xyz </td><td>uint32 </td><td>cm </td><td>bits 31-22 x position in cm : bits 21-12 y position in cm : bits 11-2 z position in cm : bits 1 and 0 are free </td></tr>
+<td>pos_xyz </td><td>uint32 </td><td>cm </td><td>bits 31-21 x position in cm : bits 20-10 y position in cm : bits 9-0 z position in cm </td></tr>
 <tr>
-<td>speed_xy </td><td>uint32 </td><td>cm/s </td><td>bits 31-22 speed x in cm/s : bits 21-12 speed y in cm/s : bits 11-2 heading in rad*1e2 : bits 1 and 0 are free </td></tr>
+<td>speed_xyz </td><td>uint32 </td><td>cm/s </td><td>bits 31-21 speed x in cm/s : bits 20-10 speed y in cm/s : bits 9-0 speed z in cm/s </td></tr>
+<tr>
+<td>heading </td><td>int16 </td><td>rad*1e4 </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="REMOTE_GPS"></a>
 REMOTE_GPS (ID 55)</h2>
@@ -6024,12 +6053,34 @@ NAV_INFO (ID 1)</h2>
 <tr>
 <td>cam_pitch </td><td>int16 </td><td>deg </td><td></td></tr>
 </table>
+<h1><a class="anchor" id="INTERMCU_CLASS"></a>
+Intermcu Messages</h1>
+<h2><a class="anchor" id="IMCU_COMMANDS"></a>
+IMCU_COMMANDS (ID 1)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>status </td><td>uint8 </td><td></td><td></td></tr>
+<tr>
+<td>values </td><td>int16[] </td><td></td><td></td></tr>
+</table>
+<h2><a class="anchor" id="IMCU_RADIO_COMMANDS"></a>
+IMCU_RADIO_COMMANDS (ID 2)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>status </td><td>uint8 </td><td></td><td></td></tr>
+<tr>
+<td>values </td><td>int16[] </td><td></td><td></td></tr>
+</table>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 11 2015 02:01:53 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:02:09 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

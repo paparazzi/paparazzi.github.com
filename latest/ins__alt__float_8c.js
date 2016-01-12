@@ -4,6 +4,7 @@ var ins__alt__float_8c =
     [ "GPS_SIGMA2", "ins__alt__float_8c.html#a17c1061a286341e39e171901d384e445", null ],
     [ "INS_ALT_IMU_ID", "ins__alt__float_8c.html#a2d91b612659f72c749ff1bbf3e937a60", null ],
     [ "INS_BARO_ID", "ins__alt__float_8c.html#af5064603923a47bce74a607ae1f7f8a9", null ],
+    [ "USE_INS_NAV_INIT", "ins__alt__float_8c.html#a54f7a3292fefa355dd014ce5bc2df65a", null ],
     [ "accel_cb", "ins__alt__float_8c.html#aacd6b1869f263f90a6f1fbe777a87793", null ],
     [ "alt_kalman", "ins__alt__float_8c.html#a8a4893f91c1e9a09038c5d69541a6d75", null ],
     [ "alt_kalman_init", "ins__alt__float_8c.html#a4ae7c5f09f78408cfce9731778a82494", null ],

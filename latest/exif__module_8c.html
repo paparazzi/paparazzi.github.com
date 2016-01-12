@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -115,6 +115,7 @@ $(document).ready(function(){initNavTree('exif__module_8c.html','');});
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="exif__module_8h_source.html">exif_module.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gps_8h_source.html">subsystems/gps.h</a>&quot;</code><br />
 <code>#include &lt;libexif/exif-data.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
@@ -126,7 +127,7 @@ $(document).ready(function(){initNavTree('exif__module_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="exif__module_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2computer__vision_2lib_2exif_2exif__module_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2computer__vision_2lib_2exif_2exif__module_8c" id="sw_2airborne_2modules_2computer__vision_2lib_2exif_2exif__module_8c">
-<area shape="rect" id="node2" href="exif__module_8h.html" title="Write JPEG images containing EXIF headers with GPS coordinates. " alt="" coords="5,109,116,136"/><area shape="rect" id="node3" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="646,109,713,136"/><area shape="rect" id="node4" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="709,273,887,300"/><area shape="rect" id="node11" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="243,273,433,300"/><area shape="rect" id="node13" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="548,184,699,225"/><area shape="rect" id="node15" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="373,184,524,225"/><area shape="rect" id="node16" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="775,184,939,225"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="385,348,539,375"/><area shape="rect" id="node9" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="687,348,837,375"/><area shape="rect" id="node14" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="509,273,633,300"/></map>
+<area shape="rect" id="node2" href="exif__module_8h.html" title="Write JPEG images containing EXIF headers with GPS coordinates. " alt="" coords="5,109,116,136"/><area shape="rect" id="node3" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="685,109,751,136"/><area shape="rect" id="node17" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="990,109,1129,136"/><area shape="rect" id="node4" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="614,273,793,300"/><area shape="rect" id="node11" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="348,273,539,300"/><area shape="rect" id="node13" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="956,184,1107,225"/><area shape="rect" id="node15" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="781,184,932,225"/><area shape="rect" id="node16" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="491,184,655,225"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="385,355,539,382"/><area shape="rect" id="node9" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="615,355,765,382"/><area shape="rect" id="node14" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="921,273,1045,300"/><area shape="rect" id="node18" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1257,273,1427,300"/><area shape="rect" id="node19" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1315,355,1401,382"/></map>
 </div>
 </div>
 <p><a href="exif__module_8c_source.html">Go to the source code of this file.</a></p>
@@ -155,12 +156,12 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a1012cf7205fc758a7c1d0e34641411cc"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exif__module_8c.html#a1012cf7205fc758a7c1d0e34641411cc">lat_em7deg</a> = 0</td></tr>
-<tr class="separator:a1012cf7205fc758a7c1d0e34641411cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8ccfcf7928a14729ff61b5a2fae4b36"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exif__module_8c.html#af8ccfcf7928a14729ff61b5a2fae4b36">lon_em7deg</a> = 0</td></tr>
-<tr class="separator:af8ccfcf7928a14729ff61b5a2fae4b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a391f7dc1e247e963c2f521ba85e3351d"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exif__module_8c.html#a391f7dc1e247e963c2f521ba85e3351d">alt_mm</a> = 0</td></tr>
-<tr class="separator:a391f7dc1e247e963c2f521ba85e3351d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7aba60a4704a0699c27e2c1d7d67224"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exif__module_8c.html#aa7aba60a4704a0699c27e2c1d7d67224">lat_em7deg</a> = 0</td></tr>
+<tr class="separator:aa7aba60a4704a0699c27e2c1d7d67224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4838ac451685954e71e9f88af2e3dc7"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exif__module_8c.html#ae4838ac451685954e71e9f88af2e3dc7">lon_em7deg</a> = 0</td></tr>
+<tr class="separator:ae4838ac451685954e71e9f88af2e3dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33f666eb1ed715055dc63e475f2e754e"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exif__module_8c.html#a33f666eb1ed715055dc63e475f2e754e">alt_mm</a> = 0</td></tr>
+<tr class="separator:a33f666eb1ed715055dc63e475f2e754e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae31abd5084047b3458b422001765ec59"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exif__module_8c.html#ae31abd5084047b3458b422001765ec59">image_data_offset</a> = 2</td></tr>
 <tr class="separator:ae31abd5084047b3458b422001765ec59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fbdfea3f922090fe67019a63d2bdcb9"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exif__module_8c.html#a5fbdfea3f922090fe67019a63d2bdcb9">exif_header</a> []</td></tr>
@@ -179,9 +180,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="exif__module_8c_source.html#l00139">139</a> of file <a class="el" href="exif__module_8c_source.html">exif_module.c</a>.</p>
+<p>Definition at line <a class="el" href="exif__module_8c_source.html#l00141">141</a> of file <a class="el" href="exif__module_8c_source.html">exif_module.c</a>.</p>
 
-<p>Referenced by <a class="el" href="exif__module_8c_source.html#l00144">write_exif_jpeg()</a>.</p>
+<p>Referenced by <a class="el" href="exif__module_8c_source.html#l00146">write_exif_jpeg()</a>.</p>
 
 </div>
 </div>
@@ -195,9 +196,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="exif__module_8c_source.html#l00133">133</a> of file <a class="el" href="exif__module_8c_source.html">exif_module.c</a>.</p>
+<p>Definition at line <a class="el" href="exif__module_8c_source.html#l00135">135</a> of file <a class="el" href="exif__module_8c_source.html">exif_module.c</a>.</p>
 
-<p>Referenced by <a class="el" href="exif__module_8c_source.html#l00144">write_exif_jpeg()</a>.</p>
+<p>Referenced by <a class="el" href="exif__module_8c_source.html#l00146">write_exif_jpeg()</a>.</p>
 
 </div>
 </div>
@@ -211,9 +212,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="exif__module_8c_source.html#l00136">136</a> of file <a class="el" href="exif__module_8c_source.html">exif_module.c</a>.</p>
+<p>Definition at line <a class="el" href="exif__module_8c_source.html#l00138">138</a> of file <a class="el" href="exif__module_8c_source.html">exif_module.c</a>.</p>
 
-<p>Referenced by <a class="el" href="exif__module_8c_source.html#l00144">write_exif_jpeg()</a>.</p>
+<p>Referenced by <a class="el" href="exif__module_8c_source.html#l00146">write_exif_jpeg()</a>.</p>
 
 </div>
 </div>
@@ -227,9 +228,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="exif__module_8c_source.html#l00123">123</a> of file <a class="el" href="exif__module_8c_source.html">exif_module.c</a>.</p>
+<p>Definition at line <a class="el" href="exif__module_8c_source.html#l00125">125</a> of file <a class="el" href="exif__module_8c_source.html">exif_module.c</a>.</p>
 
-<p>Referenced by <a class="el" href="exif__module_8c_source.html#l00144">write_exif_jpeg()</a>.</p>
+<p>Referenced by <a class="el" href="exif__module_8c_source.html#l00146">write_exif_jpeg()</a>.</p>
 
 </div>
 </div>
@@ -278,11 +279,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="exif__module_8c_source.html#l00087">87</a> of file <a class="el" href="exif__module_8c_source.html">exif_module.c</a>.</p>
+<p>Definition at line <a class="el" href="exif__module_8c_source.html#l00089">89</a> of file <a class="el" href="exif__module_8c_source.html">exif_module.c</a>.</p>
 
 <p>References <a class="el" href="stm32_2mcu__periph_2adc__arch_8c_source.html#l00587">buf</a>.</p>
 
-<p>Referenced by <a class="el" href="exif__module_8c_source.html#l00144">write_exif_jpeg()</a>.</p>
+<p>Referenced by <a class="el" href="exif__module_8c_source.html#l00146">write_exif_jpeg()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -335,9 +336,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="exif__module_8c_source.html#l00054">54</a> of file <a class="el" href="exif__module_8c_source.html">exif_module.c</a>.</p>
+<p>Definition at line <a class="el" href="exif__module_8c_source.html#l00056">56</a> of file <a class="el" href="exif__module_8c_source.html">exif_module.c</a>.</p>
 
-<p>Referenced by <a class="el" href="exif__module_8c_source.html#l00144">write_exif_jpeg()</a>.</p>
+<p>Referenced by <a class="el" href="exif__module_8c_source.html#l00146">write_exif_jpeg()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -366,9 +367,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="exif__module_8c_source.html#l00037">37</a> of file <a class="el" href="exif__module_8c_source.html">exif_module.c</a>.</p>
+<p>Definition at line <a class="el" href="exif__module_8c_source.html#l00038">38</a> of file <a class="el" href="exif__module_8c_source.html">exif_module.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="exif__module_8c_source.html#l00032">alt_mm</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="exif__module_8c_source.html#l00030">lat_em7deg</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="exif__module_8c_source.html#l00031">lon_em7deg</a>, and <a class="el" href="state_8h_source.html#l00666">stateGetPositionLla_i()</a>.</p>
+<p>References <a class="el" href="exif__module_8c_source.html#l00033">alt_mm</a>, <a class="el" href="gps_8c_source.html#l00040">gps</a>, <a class="el" href="gps_8h_source.html#l00082">GpsState::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="exif__module_8c_source.html#l00031">lat_em7deg</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="exif__module_8c_source.html#l00032">lon_em7deg</a>, and <a class="el" href="state_8h_source.html#l00666">stateGetPositionLla_i()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -425,9 +426,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="exif__module_8c_source.html#l00144">144</a> of file <a class="el" href="exif__module_8c_source.html">exif_module.c</a>.</p>
+<p>Definition at line <a class="el" href="exif__module_8c_source.html#l00146">146</a> of file <a class="el" href="exif__module_8c_source.html">exif_module.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="exif__module_8c_source.html#l00032">alt_mm</a>, <a class="el" href="exif__module_8c_source.html#l00139">ASCII_COMMENT</a>, <a class="el" href="exif__module_8c_source.html#l00087">create_tag()</a>, <a class="el" href="exif__module_8c_source.html#l00126">exif_header</a>, <a class="el" href="exif__module_8c_source.html#l00130">exif_header_len</a>, <a class="el" href="exif__module_8c_source.html#l00133">FILE_BYTE_ORDER</a>, <a class="el" href="exif__module_8c_source.html#l00136">FILE_COMMENT</a>, <a class="el" href="exif__module_8c_source.html#l00123">image_data_len</a>, <a class="el" href="exif__module_8c_source.html#l00122">image_data_offset</a>, <a class="el" href="exif__module_8c_source.html#l00054">init_tag()</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="exif__module_8c_source.html#l00030">lat_em7deg</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, and <a class="el" href="exif__module_8c_source.html#l00031">lon_em7deg</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="exif__module_8c_source.html#l00033">alt_mm</a>, <a class="el" href="exif__module_8c_source.html#l00141">ASCII_COMMENT</a>, <a class="el" href="exif__module_8c_source.html#l00089">create_tag()</a>, <a class="el" href="exif__module_8c_source.html#l00128">exif_header</a>, <a class="el" href="exif__module_8c_source.html#l00132">exif_header_len</a>, <a class="el" href="exif__module_8c_source.html#l00135">FILE_BYTE_ORDER</a>, <a class="el" href="exif__module_8c_source.html#l00138">FILE_COMMENT</a>, <a class="el" href="exif__module_8c_source.html#l00125">image_data_len</a>, <a class="el" href="exif__module_8c_source.html#l00124">image_data_offset</a>, <a class="el" href="exif__module_8c_source.html#l00056">init_tag()</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="exif__module_8c_source.html#l00031">lat_em7deg</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, and <a class="el" href="exif__module_8c_source.html#l00032">lon_em7deg</a>.</p>
 
 <p>Referenced by <a class="el" href="video__thread_8c_source.html#l00108">video_thread_save_shot()</a>.</p>
 
@@ -456,19 +457,19 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a391f7dc1e247e963c2f521ba85e3351d"></a>
+<a class="anchor" id="a33f666eb1ed715055dc63e475f2e754e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">volatile <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> alt_mm = 0</td>
+          <td class="memname">volatile <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> alt_mm = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="exif__module_8c_source.html#l00032">32</a> of file <a class="el" href="exif__module_8c_source.html">exif_module.c</a>.</p>
+<p>Definition at line <a class="el" href="exif__module_8c_source.html#l00033">33</a> of file <a class="el" href="exif__module_8c_source.html">exif_module.c</a>.</p>
 
-<p>Referenced by <a class="el" href="exif__module_8c_source.html#l00037">push_gps_to_vision()</a>, and <a class="el" href="exif__module_8c_source.html#l00144">write_exif_jpeg()</a>.</p>
+<p>Referenced by <a class="el" href="exif__module_8c_source.html#l00038">push_gps_to_vision()</a>, and <a class="el" href="exif__module_8c_source.html#l00146">write_exif_jpeg()</a>.</p>
 
 </div>
 </div>
@@ -493,9 +494,9 @@ Variables</h2></td></tr>
 <div class="line">  0xff, 0xd8, 0xff, 0xe1</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="exif__module_8c_source.html#l00126">126</a> of file <a class="el" href="exif__module_8c_source.html">exif_module.c</a>.</p>
+<p>Definition at line <a class="el" href="exif__module_8c_source.html#l00128">128</a> of file <a class="el" href="exif__module_8c_source.html">exif_module.c</a>.</p>
 
-<p>Referenced by <a class="el" href="exif__module_8c_source.html#l00144">write_exif_jpeg()</a>.</p>
+<p>Referenced by <a class="el" href="exif__module_8c_source.html#l00146">write_exif_jpeg()</a>.</p>
 
 </div>
 </div>
@@ -517,9 +518,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="exif__module_8c_source.html#l00130">130</a> of file <a class="el" href="exif__module_8c_source.html">exif_module.c</a>.</p>
+<p>Definition at line <a class="el" href="exif__module_8c_source.html#l00132">132</a> of file <a class="el" href="exif__module_8c_source.html">exif_module.c</a>.</p>
 
-<p>Referenced by <a class="el" href="exif__module_8c_source.html#l00144">write_exif_jpeg()</a>.</p>
+<p>Referenced by <a class="el" href="exif__module_8c_source.html#l00146">write_exif_jpeg()</a>.</p>
 
 </div>
 </div>
@@ -541,41 +542,41 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="exif__module_8c_source.html#l00122">122</a> of file <a class="el" href="exif__module_8c_source.html">exif_module.c</a>.</p>
+<p>Definition at line <a class="el" href="exif__module_8c_source.html#l00124">124</a> of file <a class="el" href="exif__module_8c_source.html">exif_module.c</a>.</p>
 
-<p>Referenced by <a class="el" href="exif__module_8c_source.html#l00144">write_exif_jpeg()</a>.</p>
+<p>Referenced by <a class="el" href="exif__module_8c_source.html#l00146">write_exif_jpeg()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a1012cf7205fc758a7c1d0e34641411cc"></a>
+<a class="anchor" id="aa7aba60a4704a0699c27e2c1d7d67224"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">volatile <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> lat_em7deg = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="exif__module_8c_source.html#l00030">30</a> of file <a class="el" href="exif__module_8c_source.html">exif_module.c</a>.</p>
-
-<p>Referenced by <a class="el" href="exif__module_8c_source.html#l00037">push_gps_to_vision()</a>, and <a class="el" href="exif__module_8c_source.html#l00144">write_exif_jpeg()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af8ccfcf7928a14729ff61b5a2fae4b36"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> lon_em7deg = 0</td>
+          <td class="memname">volatile <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> lat_em7deg = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="exif__module_8c_source.html#l00031">31</a> of file <a class="el" href="exif__module_8c_source.html">exif_module.c</a>.</p>
 
-<p>Referenced by <a class="el" href="exif__module_8c_source.html#l00037">push_gps_to_vision()</a>, and <a class="el" href="exif__module_8c_source.html#l00144">write_exif_jpeg()</a>.</p>
+<p>Referenced by <a class="el" href="exif__module_8c_source.html#l00038">push_gps_to_vision()</a>, and <a class="el" href="exif__module_8c_source.html#l00146">write_exif_jpeg()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae4838ac451685954e71e9f88af2e3dc7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> lon_em7deg = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="exif__module_8c_source.html#l00032">32</a> of file <a class="el" href="exif__module_8c_source.html">exif_module.c</a>.</p>
+
+<p>Referenced by <a class="el" href="exif__module_8c_source.html#l00038">push_gps_to_vision()</a>, and <a class="el" href="exif__module_8c_source.html#l00146">write_exif_jpeg()</a>.</p>
 
 </div>
 </div>
@@ -585,7 +586,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="dir_9adc125244b74c64b95124778e5b932a.html">lib</a></li><li class="navelem"><a class="el" href="dir_7cd4eedfd8330380119ebc1708ec2b0a.html">exif</a></li><li class="navelem"><a class="el" href="exif__module_8c.html">exif_module.c</a></li>
-    <li class="footer">Generated on Wed Nov 11 2015 02:01:34 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:01:48 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

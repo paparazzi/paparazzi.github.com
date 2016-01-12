@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -160,6 +160,9 @@ $(document).ready(function(){initNavTree('globals_vars_t.html','');});
 <li>takeoff_dir
 : <a class="el" href="nav__bungee__takeoff_8c.html#aae6fceafa835980331582dce2475afcb">nav_bungee_takeoff.c</a>
 </li>
+<li>target
+: <a class="el" href="obstacle__avoidance_8c.html#a2dbeef7061c210e0ec808ff4a59042bf">obstacle_avoidance.c</a>
+</li>
 <li>target_alt
 : <a class="el" href="cam__roll_8c.html#afbd0810e58d8bc90bbeeb06513d37eee">cam_roll.c</a>
 </li>
@@ -184,8 +187,8 @@ $(document).ready(function(){initNavTree('globals_vars_t.html','');});
 , <a class="el" href="tcas_8h.html#a636b102d0ab938f9f56571e356093324">tcas.h</a>
 </li>
 <li>tcas_alim
-: <a class="el" href="tcas_8c.html#a396262a03772db7853eee2291f8e0c04">tcas.c</a>
-, <a class="el" href="tcas_8h.html#a396262a03772db7853eee2291f8e0c04">tcas.h</a>
+: <a class="el" href="tcas_8h.html#a396262a03772db7853eee2291f8e0c04">tcas.h</a>
+, <a class="el" href="tcas_8c.html#a396262a03772db7853eee2291f8e0c04">tcas.c</a>
 </li>
 <li>tcas_alt_setpoint
 : <a class="el" href="tcas_8c.html#a7e660e258c0e3ba4f90b3d7534073aa6">tcas.c</a>
@@ -215,17 +218,12 @@ $(document).ready(function(){initNavTree('globals_vars_t.html','');});
 : <a class="el" href="temp__tcouple__adc_8h.html#ab48e345c294cc468d46bd57a1c3fc99a">temp_tcouple_adc.h</a>
 </li>
 <li>telemetry_cbs
-: <a class="el" href="telemetry_8c.html#a71f6240dca621cb90b4a6d5bbc1f9bba">telemetry.c</a>
-</li>
-<li>telemetry_copy
-: <a class="el" href="bluegiga_8c.html#a3945da57e9f43939a5fdb9fecb610366">bluegiga.c</a>
-</li>
-<li>telemetry_msgs
-: <a class="el" href="telemetry_8c.html#ac42b409bda57255070283d49a4bc324c">telemetry.c</a>
+: <a class="el" href="telemetry_8c.html#a10ecc0b67f9604b5fd0fcf63f8ee368c">telemetry.c</a>
 </li>
 <li>telemetry_tid
-: <a class="el" href="main__ap_8c.html#aaaaf875f33da06aeb2b503fde86862c1">main_ap.c</a>
-, <a class="el" href="rotorcraft_2main_8c.html#aaaaf875f33da06aeb2b503fde86862c1">main.c</a>
+: <a class="el" href="rotorcraft_2main_8c.html#aaaaf875f33da06aeb2b503fde86862c1">main.c</a>
+, <a class="el" href="rotorcraft_2main__fbw_8c.html#aaaaf875f33da06aeb2b503fde86862c1">main_fbw.c</a>
+, <a class="el" href="main__ap_8c.html#aaaaf875f33da06aeb2b503fde86862c1">main_ap.c</a>
 </li>
 <li>Temp
 : <a class="el" href="jpeg_8c.html#ae5078d22a1e535110c2d08e8b34768f6">jpeg.c</a>
@@ -312,6 +310,10 @@ $(document).ready(function(){initNavTree('globals_vars_t.html','');});
 <li>theta_pgain
 : <a class="el" href="stabilization__attitude__quat__float_8c.html#a4df7530458812524cede9c89946af978">stabilization_attitude_quat_float.c</a>
 </li>
+<li>throttle_curve
+: <a class="el" href="throttle__curve_8c.html#a221e1cf040a3e43d119178667fd76aad">throttle_curve.c</a>
+, <a class="el" href="throttle__curve_8h.html#a221e1cf040a3e43d119178667fd76aad">throttle_curve.h</a>
+</li>
 <li>throttle_point
 : <a class="el" href="nav__bungee__takeoff_8c.html#a0d83650a12f67a2a3b9be1e65dcb21d4">nav_bungee_takeoff.c</a>
 </li>
@@ -338,8 +340,8 @@ $(document).ready(function(){initNavTree('globals_vars_t.html','');});
 : <a class="el" href="gps__piksi_8c.html#a8215e8ab0018133ba5105d73aaacae35">gps_piksi.c</a>
 </li>
 <li>time_until_end
-: <a class="el" href="time__countdown_8h.html#a9b5d40ba50b85dbd23358ffbe613ce6c">time_countdown.h</a>
-, <a class="el" href="time__countdown_8c.html#a9b5d40ba50b85dbd23358ffbe613ce6c">time_countdown.c</a>
+: <a class="el" href="time__countdown_8c.html#a9b5d40ba50b85dbd23358ffbe613ce6c">time_countdown.c</a>
+, <a class="el" href="time__countdown_8h.html#a9b5d40ba50b85dbd23358ffbe613ce6c">time_countdown.h</a>
 </li>
 <li>timer_rollover_cnt
 : <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c.html#a6b8315208a0f09436556fbce0298ae38">ppm_arch.c</a>
@@ -362,14 +364,23 @@ $(document).ready(function(){initNavTree('globals_vars_t.html','');});
 , <a class="el" href="flight__benchmark_8h.html#a9c89ccb67edcffa690db968ae55d0e38">flight_benchmark.h</a>
 </li>
 <li>TolerancePosition
-: <a class="el" href="flight__benchmark_8h.html#a32990d5437f07167a684a9dc97602022">flight_benchmark.h</a>
-, <a class="el" href="flight__benchmark_8c.html#a32990d5437f07167a684a9dc97602022">flight_benchmark.c</a>
+: <a class="el" href="flight__benchmark_8c.html#a32990d5437f07167a684a9dc97602022">flight_benchmark.c</a>
+, <a class="el" href="flight__benchmark_8h.html#a32990d5437f07167a684a9dc97602022">flight_benchmark.h</a>
 </li>
 <li>too_far_from_home
-: <a class="el" href="navigation_8c.html#ac566112f2489f0c9efcd3bf8b32f1b9d">navigation.c</a>
-, <a class="el" href="common__nav_8h.html#ac566112f2489f0c9efcd3bf8b32f1b9d">common_nav.h</a>
-, <a class="el" href="common__nav_8c.html#ac566112f2489f0c9efcd3bf8b32f1b9d">common_nav.c</a>
+: <a class="el" href="common__nav_8c.html#ac566112f2489f0c9efcd3bf8b32f1b9d">common_nav.c</a>
 , <a class="el" href="navigation_8h.html#ac566112f2489f0c9efcd3bf8b32f1b9d">navigation.h</a>
+, <a class="el" href="common__nav_8h.html#ac566112f2489f0c9efcd3bf8b32f1b9d">common_nav.h</a>
+, <a class="el" href="navigation_8c.html#ac566112f2489f0c9efcd3bf8b32f1b9d">navigation.c</a>
+</li>
+<li>Total_force
+: <a class="el" href="guidance__OA_8c.html#a42d032cf4169c15404dbb05713996703">guidance_OA.c</a>
+</li>
+<li>Total_Kan_x
+: <a class="el" href="guidance__OA_8c.html#a74e5a54c80fe5f41bb6fa1da55046191">guidance_OA.c</a>
+</li>
+<li>Total_Kan_y
+: <a class="el" href="guidance__OA_8c.html#a7e54665cc18516562158203d3bec0186">guidance_OA.c</a>
 </li>
 <li>tracking_state_dep_a_node
 : <a class="el" href="gps__piksi_8c.html#ae61c4136d917c3d543a42ddf4abb8cd2">gps_piksi.c</a>
@@ -384,16 +395,16 @@ $(document).ready(function(){initNavTree('globals_vars_t.html','');});
 : <a class="el" href="nav__flower_8c.html#a116d829509d0cd638a8e1fe85fe7858a">nav_flower.c</a>
 </li>
 <li>transition_percentage
-: <a class="el" href="guidance__h_8h.html#a03b606d1a31f9d006700fcbbc60d7293">guidance_h.h</a>
-, <a class="el" href="guidance__h_8c.html#a03b606d1a31f9d006700fcbbc60d7293">guidance_h.c</a>
+: <a class="el" href="guidance__h_8c.html#a03b606d1a31f9d006700fcbbc60d7293">guidance_h.c</a>
+, <a class="el" href="guidance__h_8h.html#a03b606d1a31f9d006700fcbbc60d7293">guidance_h.h</a>
 </li>
 <li>transition_theta_offset
 : <a class="el" href="guidance__h_8h.html#ac5766b598ff030ccbe7b127c796bc307">guidance_h.h</a>
 , <a class="el" href="guidance__h_8c.html#ac5766b598ff030ccbe7b127c796bc307">guidance_h.c</a>
 </li>
 <li>trig_ext_valid
-: <a class="el" href="trig__ext__hw_8h.html#a7b886bd7a08aff09f519e9eee931c171">trig_ext_hw.h</a>
-, <a class="el" href="trig__ext__hw_8c.html#a7b886bd7a08aff09f519e9eee931c171">trig_ext_hw.c</a>
+: <a class="el" href="trig__ext__hw_8c.html#a7b886bd7a08aff09f519e9eee931c171">trig_ext_hw.c</a>
+, <a class="el" href="trig__ext__hw_8h.html#a7b886bd7a08aff09f519e9eee931c171">trig_ext_hw.h</a>
 </li>
 <li>trigger_delta_t0
 : <a class="el" href="core_2trigger__ext_8h.html#ac7a4064196d14ce7f94d69bd6fce5a8c">trigger_ext.h</a>
@@ -404,17 +415,17 @@ $(document).ready(function(){initNavTree('globals_vars_t.html','');});
 , <a class="el" href="core_2trigger__ext_8h.html#a532012d240d0deb9b8ebd250bb8e58da">trigger_ext.h</a>
 </li>
 <li>trigger_t0
-: <a class="el" href="core_2trigger__ext_8h.html#a1bff3aeb61914b47d6d91311bccb1578">trigger_ext.h</a>
+: <a class="el" href="trig__ext__hw_8h.html#a1bff3aeb61914b47d6d91311bccb1578">trig_ext_hw.h</a>
+, <a class="el" href="core_2trigger__ext_8h.html#a1bff3aeb61914b47d6d91311bccb1578">trigger_ext.h</a>
 , <a class="el" href="trig__ext__hw_8c.html#a1bff3aeb61914b47d6d91311bccb1578">trig_ext_hw.c</a>
 , <a class="el" href="core_2trigger__ext_8c.html#a1bff3aeb61914b47d6d91311bccb1578">trigger_ext.c</a>
-, <a class="el" href="trig__ext__hw_8h.html#a1bff3aeb61914b47d6d91311bccb1578">trig_ext_hw.h</a>
 </li>
 <li>tx_bit_idx
 : <a class="el" href="audio__telemetry__hw_8c.html#a7f05f6e86899b81778dcc05202e1b184">audio_telemetry_hw.c</a>
 </li>
 <li>tx_buf
-: <a class="el" href="audio__telemetry_8h.html#a7c44c515cb5dc7e0d2ac0cb8bf311577">audio_telemetry.h</a>
-, <a class="el" href="audio__telemetry__hw_8c.html#a7c44c515cb5dc7e0d2ac0cb8bf311577">audio_telemetry_hw.c</a>
+: <a class="el" href="audio__telemetry__hw_8c.html#a7c44c515cb5dc7e0d2ac0cb8bf311577">audio_telemetry_hw.c</a>
+, <a class="el" href="audio__telemetry_8h.html#a7c44c515cb5dc7e0d2ac0cb8bf311577">audio_telemetry.h</a>
 </li>
 <li>tx_byte
 : <a class="el" href="audio__telemetry_8h.html#a5bbfbf8e12378506d05a484a7bda187e">audio_telemetry.h</a>
@@ -424,15 +435,15 @@ $(document).ready(function(){initNavTree('globals_vars_t.html','');});
 : <a class="el" href="audio__telemetry_8h.html#a0b504cdee1abb3ed00518fb9d53d40e9">audio_telemetry.h</a>
 </li>
 <li>tx_head
-: <a class="el" href="audio__telemetry__hw_8c.html#a44b0e5832359fc4bae0c4ae44ff1b65c">audio_telemetry_hw.c</a>
-, <a class="el" href="audio__telemetry_8h.html#a44b0e5832359fc4bae0c4ae44ff1b65c">audio_telemetry.h</a>
+: <a class="el" href="audio__telemetry_8h.html#a44b0e5832359fc4bae0c4ae44ff1b65c">audio_telemetry.h</a>
+, <a class="el" href="audio__telemetry__hw_8c.html#a44b0e5832359fc4bae0c4ae44ff1b65c">audio_telemetry_hw.c</a>
 </li>
 <li>tx_tail
-: <a class="el" href="audio__telemetry_8h.html#aacdeab28a6150e19a446172b41da6b90">audio_telemetry.h</a>
-, <a class="el" href="audio__telemetry__hw_8c.html#aacdeab28a6150e19a446172b41da6b90">audio_telemetry_hw.c</a>
+: <a class="el" href="audio__telemetry__hw_8c.html#aacdeab28a6150e19a446172b41da6b90">audio_telemetry_hw.c</a>
+, <a class="el" href="audio__telemetry_8h.html#aacdeab28a6150e19a446172b41da6b90">audio_telemetry.h</a>
 </li>
 <li>txdata
-: <a class="el" href="stm32_2usb__ser__hw_8c.html#a49eede323a902bbaf9ad4b4d02ecb009">usb_ser_hw.c</a>
+: <a class="el" href="lpc21_2usb__ser__hw_8c.html#a49eede323a902bbaf9ad4b4d02ecb009">usb_ser_hw.c</a>
 </li>
 <li>txfifo
 : <a class="el" href="lpc21_2usb__ser__hw_8c.html#a12493139993bcd851cdfb44eb0abae57">usb_ser_hw.c</a>
@@ -443,7 +454,7 @@ $(document).ready(function(){initNavTree('globals_vars_t.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 11 2015 02:02:14 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:02:31 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

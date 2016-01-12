@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -150,9 +150,16 @@ $(document).ready(function(){initNavTree('globals_vars_o.html','');});
 &#160;
 
 <h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
+<li>OA_method_flag
+: <a class="el" href="guidance__OA_8c.html#a7d1d6db717ff7b9a6930693f66f630d6">guidance_OA.c</a>
+, <a class="el" href="guidance__OA_8h.html#a7d1d6db717ff7b9a6930693f66f630d6">guidance_OA.h</a>
+</li>
 <li>obstacle_detected
-: <a class="el" href="avoid__navigation_8c.html#a9f41e726be05c95e73e4d2583773b2f7">avoid_navigation.c</a>
-, <a class="el" href="avoid__navigation_8h.html#a9f41e726be05c95e73e4d2583773b2f7">avoid_navigation.h</a>
+: <a class="el" href="avoid__navigation_8h.html#a9f41e726be05c95e73e4d2583773b2f7">avoid_navigation.h</a>
+, <a class="el" href="avoid__navigation_8c.html#a9f41e726be05c95e73e4d2583773b2f7">avoid_navigation.c</a>
+</li>
+<li>obstacle_flag
+: <a class="el" href="obstacle__avoidance_8c.html#ab1eeda0c19608ea45fbaac12da783375">obstacle_avoidance.c</a>
 </li>
 <li>offset_cnt
 : <a class="el" href="pressure__board__navarro_8c.html#a138240dcc504031ccc83a6e2c044d95d">pressure_board_navarro.c</a>
@@ -184,13 +191,20 @@ $(document).ready(function(){initNavTree('globals_vars_o.html','');});
 <li>Omega_Vector
 : <a class="el" href="ahrs__float__dcm_8c.html#a10d46c1ca1a95938f94c6be161c259bb">ahrs_float_dcm.c</a>
 </li>
+<li>opti_speed_flag
+: <a class="el" href="guidance__OA_8c.html#a9786659531a5d633c613102d189a1f60">guidance_OA.c</a>
+, <a class="el" href="guidance__OA_8h.html#a9786659531a5d633c613102d189a1f60">guidance_OA.h</a>
+</li>
+<li>opti_speed_read
+: <a class="el" href="guidance__OA_8c.html#a18f56e913649bc868a2343b867739d16">guidance_OA.c</a>
+</li>
 <li>optical_flow
 : <a class="el" href="px4flow_8c.html#a7f647c5002ceac1107af4247a2567f16">px4flow.c</a>
 , <a class="el" href="px4flow_8h.html#a7f647c5002ceac1107af4247a2567f16">px4flow.h</a>
 </li>
 <li>optical_flow_available
-: <a class="el" href="px4flow_8h.html#ab6dde07b731a2cfdf669184817943837">px4flow.h</a>
-, <a class="el" href="px4flow_8c.html#ab6dde07b731a2cfdf669184817943837">px4flow.c</a>
+: <a class="el" href="px4flow_8c.html#ab6dde07b731a2cfdf669184817943837">px4flow.c</a>
+, <a class="el" href="px4flow_8h.html#ab6dde07b731a2cfdf669184817943837">px4flow.h</a>
 </li>
 <li>opticflow
 : <a class="el" href="opticflow__module_8c.html#a4ed7d8828611f3355617fb6745ade2a0">opticflow_module.c</a>
@@ -215,8 +229,10 @@ $(document).ready(function(){initNavTree('globals_vars_o.html','');});
 : <a class="el" href="opticflow__module_8c.html#a331dc0e40d027156d699ff51bd7dd605">opticflow_module.c</a>
 </li>
 <li>opticflow_stab
-: <a class="el" href="guidance__opticflow__hover_8c.html#a20c98e89ac4c2f80fdd841992ec3053c">guidance_opticflow_hover.c</a>
-, <a class="el" href="guidance__opticflow__hover_8h.html#a20c98e89ac4c2f80fdd841992ec3053c">guidance_opticflow_hover.h</a>
+: <a class="el" href="guidance__opticflow__hover_8h.html#a20c98e89ac4c2f80fdd841992ec3053c">guidance_opticflow_hover.h</a>
+, <a class="el" href="guidance__OA_8c.html#a20c98e89ac4c2f80fdd841992ec3053c">guidance_OA.c</a>
+, <a class="el" href="guidance__OA_8h.html#a20c98e89ac4c2f80fdd841992ec3053c">guidance_OA.h</a>
+, <a class="el" href="guidance__opticflow__hover_8c.html#a20c98e89ac4c2f80fdd841992ec3053c">guidance_opticflow_hover.c</a>
 </li>
 <li>opticflow_state
 : <a class="el" href="opticflow__module_8c.html#a3cfe58d9ef48519711d6954e697bd8c5">opticflow_module.c</a>
@@ -267,7 +283,7 @@ $(document).ready(function(){initNavTree('globals_vars_o.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 11 2015 02:02:14 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:02:31 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

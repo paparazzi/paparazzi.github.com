@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -195,6 +195,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>SAFETY_MARGIN
 : <a class="el" href="nav__poles_8c.html#af12741cc685a5533fe2ed100d91649c4">nav_poles.c</a>
 </li>
+<li>SAFETYZONE
+: <a class="el" href="guidance__OA_8h.html#a4dac0a956aca3da3fa670abc875414d2a14d823d6fb434922e5bfa2399e5ed1e7">guidance_OA.h</a>
+</li>
 <li>SAMPLE_PERIOD
 : <a class="el" href="audio__telemetry__hw_8h.html#ac32e7bee9d8c1ee37bfae3e48852535d">audio_telemetry_hw.h</a>
 </li>
@@ -327,8 +330,8 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="sc18i600_8h.html#ac9869125d40e6f7e0c17c02b20c21fe6">sc18i600.h</a>
 </li>
 <li>sc18is600_arch_init()
-: <a class="el" href="sc18i600_8h.html#a0e39d8303331a272f98d723934b9dd8e">sc18i600.h</a>
-, <a class="el" href="sc18is600__arch_8c.html#a0e39d8303331a272f98d723934b9dd8e">sc18is600_arch.c</a>
+: <a class="el" href="sc18is600__arch_8c.html#a0e39d8303331a272f98d723934b9dd8e">sc18is600_arch.c</a>
+, <a class="el" href="sc18i600_8h.html#a0e39d8303331a272f98d723934b9dd8e">sc18i600.h</a>
 </li>
 <li>SC18IS600_BUF_LEN
 : <a class="el" href="sc18i600_8h.html#a3b9fd83a2eebe1db2c2ec031b71fa42f">sc18i600.h</a>
@@ -621,8 +624,8 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="sdcard__spi_8h.html#adbdeea6ec6829f8e1fd6afbf5a31af38">sdcard_spi.h</a>
 </li>
 <li>sdcard_spi_multiwrite_next()
-: <a class="el" href="sdcard__spi_8c.html#a7889277bddc7e07caaa2e8a7bd639bdc">sdcard_spi.c</a>
-, <a class="el" href="sdcard__spi_8h.html#a7889277bddc7e07caaa2e8a7bd639bdc">sdcard_spi.h</a>
+: <a class="el" href="sdcard__spi_8c.html#a2993e6870ac7c137e6cbbef1949aaef1">sdcard_spi.c</a>
+, <a class="el" href="sdcard__spi_8h.html#a2993e6870ac7c137e6cbbef1949aaef1">sdcard_spi.h</a>
 </li>
 <li>sdcard_spi_multiwrite_start()
 : <a class="el" href="sdcard__spi_8c.html#a665b869e2b80339fa01af811af47247e">sdcard_spi.c</a>
@@ -665,6 +668,57 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>SDCardCallback
 : <a class="el" href="sdcard__spi_8h.html#a58e5b897a3881502acaf7427482789cb">sdcard_spi.h</a>
 </li>
+<li>SDCardError_ACMD41NoResponse
+: <a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebba0a342483250135e38c32a0446cc9c460">sdcard_spi.h</a>
+</li>
+<li>SDCardError_ACMD41Timeout
+: <a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebba85f08e2b90a3896094fac4f11665313e">sdcard_spi.h</a>
+</li>
+<li>SDCardError_BlockWriteError
+: <a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebba66460b8dad8f39c37856b927507187e6">sdcard_spi.h</a>
+</li>
+<li>SDCardError_CardInfoNoResponse
+: <a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebba7d90dd1b89ea52c17e267516bc8c709f">sdcard_spi.h</a>
+</li>
+<li>SDCardError_CCSBitInvalid
+: <a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebbad28401d3257102fb667300ae3991f3fb">sdcard_spi.h</a>
+</li>
+<li>SDCardError_CMD58NoResponse
+: <a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebba8ba30fefc5200f2bfebc2badd932d81c">sdcard_spi.h</a>
+</li>
+<li>SDCardError_InitializationNoResponse
+: <a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebba0ff153af54f22a94827e75d6aba5958e">sdcard_spi.h</a>
+</li>
+<li>SDCardError_InvalidCardInfo
+: <a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebbab4ecb494dde59e24537475f7e5520da1">sdcard_spi.h</a>
+</li>
+<li>SDCardError_MultiWriteError
+: <a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebbafdd282038afaad74b752c3872e136579">sdcard_spi.h</a>
+</li>
+<li>SDCardError_MultiWriteNoResponse
+: <a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebba7b33c1a95ddf30bb1ee5e71d67c86e5c">sdcard_spi.h</a>
+</li>
+<li>SDCardError_None
+: <a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebbad7f5111f29d23db603dbf300761d10b9">sdcard_spi.h</a>
+</li>
+<li>SDCardError_ReadBlockNoResponse
+: <a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebbade5cc7a85121192693fe9ca10b429964">sdcard_spi.h</a>
+</li>
+<li>SDCardError_ReadBlockTimeout
+: <a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebba153a87d8b11a29c40eb4c62d93deb1e2">sdcard_spi.h</a>
+</li>
+<li>SDCardError_SetBlockSizeNoResponse
+: <a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebba4e2cc9f0deaf85e7c8616b5343265615">sdcard_spi.h</a>
+</li>
+<li>SDCardError_SpiDriverError
+: <a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebba62ab22a3560545a8c7720801795dd0c0">sdcard_spi.h</a>
+</li>
+<li>SDCardError_WriteBlockNoResponse
+: <a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebba0e9a9c1ddc14a0661aceb0423bcc7adb">sdcard_spi.h</a>
+</li>
+<li>SDCardErrorStatus
+: <a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebb">sdcard_spi.h</a>
+</li>
 <li>SDCardStatus
 : <a class="el" href="sdcard__spi_8h.html#a158c27589e5da52795c513a8b711cbf7">sdcard_spi.h</a>
 </li>
@@ -691,6 +745,100 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>SDLOG_START_DELAY
 : <a class="el" href="chibios__init_8c.html#abb202e6b58d213508879a54bf05251bb">chibios_init.c</a>
+</li>
+<li>SDLOGGER_BUFFER_SIZE
+: <a class="el" href="sdlogger__spi__direct_8h.html#a8c6f86e005e7052bdd22b62166cc3582">sdlogger_spi_direct.h</a>
+</li>
+<li>SDLogger_Downloading
+: <a class="el" href="sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206eada0e86f7cac1607283af6f5929c0eff3">sdlogger_spi_direct.h</a>
+</li>
+<li>SDLogger_Error
+: <a class="el" href="sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea750dee6209001691e689f7ae44f90e5c">sdlogger_spi_direct.h</a>
+</li>
+<li>SDLogger_GettingIndexForDownload
+: <a class="el" href="sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea44aa44a41e9c4e5fa55fdd13f3cb7414">sdlogger_spi_direct.h</a>
+</li>
+<li>SDLogger_GettingIndexForUpdate
+: <a class="el" href="sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea8a6f12c5f06b8f10e6407766c972e7c5">sdlogger_spi_direct.h</a>
+</li>
+<li>SDLogger_Initializing
+: <a class="el" href="sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea01d0758908fdadf2715ae9812d79f05a">sdlogger_spi_direct.h</a>
+</li>
+<li>SDLogger_Logging
+: <a class="el" href="sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206eaa5f30fe93b6c182c6f297c748e0790dd">sdlogger_spi_direct.h</a>
+</li>
+<li>SDLogger_LoggingFinalBlock
+: <a class="el" href="sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ead22befe2f6efdc7eaa56d241a6de3abc">sdlogger_spi_direct.h</a>
+</li>
+<li>SDLogger_Ready
+: <a class="el" href="sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea51f3f5fe0ad980c1f16bf8e1e9cd8833">sdlogger_spi_direct.h</a>
+</li>
+<li>SDLogger_RetreivingIndex
+: <a class="el" href="sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea3de1dcb36ca036f0e578dce287a9348b">sdlogger_spi_direct.h</a>
+</li>
+<li>sdlogger_spi
+: <a class="el" href="sdlogger__spi__direct_8c.html#a480941021a777a6ff59962058b88a00b">sdlogger_spi_direct.c</a>
+, <a class="el" href="sdlogger__spi__direct_8h.html#a480941021a777a6ff59962058b88a00b">sdlogger_spi_direct.h</a>
+</li>
+<li>sdlogger_spi_direct_char_available()
+: <a class="el" href="sdlogger__spi__direct_8c.html#abc6d2500b749f6ff8456837da4160f75">sdlogger_spi_direct.c</a>
+, <a class="el" href="sdlogger__spi__direct_8h.html#abc6d2500b749f6ff8456837da4160f75">sdlogger_spi_direct.h</a>
+</li>
+<li>sdlogger_spi_direct_check_free_space()
+: <a class="el" href="sdlogger__spi__direct_8c.html#ab6a0846663b4f34822376f9c7f501b9d">sdlogger_spi_direct.c</a>
+, <a class="el" href="sdlogger__spi__direct_8h.html#ab6a0846663b4f34822376f9c7f501b9d">sdlogger_spi_direct.h</a>
+</li>
+<li>sdlogger_spi_direct_command()
+: <a class="el" href="sdlogger__spi__direct_8c.html#a2e3b354ac6d0e173e051be713c63c161">sdlogger_spi_direct.c</a>
+, <a class="el" href="sdlogger__spi__direct_8h.html#a2e3b354ac6d0e173e051be713c63c161">sdlogger_spi_direct.h</a>
+</li>
+<li>sdlogger_spi_direct_get_byte()
+: <a class="el" href="sdlogger__spi__direct_8c.html#a27cacdeeddf341b8dc27c52c942f53fb">sdlogger_spi_direct.c</a>
+, <a class="el" href="sdlogger__spi__direct_8h.html#a27cacdeeddf341b8dc27c52c942f53fb">sdlogger_spi_direct.h</a>
+</li>
+<li>sdlogger_spi_direct_index_received()
+: <a class="el" href="sdlogger__spi__direct_8c.html#a229b523a75d655fdb55fac8e715a13c5">sdlogger_spi_direct.c</a>
+, <a class="el" href="sdlogger__spi__direct_8h.html#a229b523a75d655fdb55fac8e715a13c5">sdlogger_spi_direct.h</a>
+</li>
+<li>sdlogger_spi_direct_init()
+: <a class="el" href="sdlogger__spi__direct_8c.html#a583b0f3d27ef3f54ca4d1263ebc0a884">sdlogger_spi_direct.c</a>
+, <a class="el" href="sdlogger__spi__direct_8h.html#a583b0f3d27ef3f54ca4d1263ebc0a884">sdlogger_spi_direct.h</a>
+</li>
+<li>sdlogger_spi_direct_multiwrite_written()
+: <a class="el" href="sdlogger__spi__direct_8c.html#a8ba172956b3686b7a8ccb47bb9215bf8">sdlogger_spi_direct.c</a>
+, <a class="el" href="sdlogger__spi__direct_8h.html#a8ba172956b3686b7a8ccb47bb9215bf8">sdlogger_spi_direct.h</a>
+</li>
+<li>sdlogger_spi_direct_periodic()
+: <a class="el" href="sdlogger__spi__direct_8c.html#ab4a462e9899f9283db5be8ab3a3da922">sdlogger_spi_direct.c</a>
+, <a class="el" href="sdlogger__spi__direct_8h.html#ab4a462e9899f9283db5be8ab3a3da922">sdlogger_spi_direct.h</a>
+</li>
+<li>sdlogger_spi_direct_put_byte()
+: <a class="el" href="sdlogger__spi__direct_8c.html#aff470fbbc1a5569c0823724d97dbcec7">sdlogger_spi_direct.c</a>
+, <a class="el" href="sdlogger__spi__direct_8h.html#aff470fbbc1a5569c0823724d97dbcec7">sdlogger_spi_direct.h</a>
+</li>
+<li>sdlogger_spi_direct_send_message()
+: <a class="el" href="sdlogger__spi__direct_8c.html#a89eb1a3059b9cb5ac09713ec5b663df3">sdlogger_spi_direct.c</a>
+, <a class="el" href="sdlogger__spi__direct_8h.html#a89eb1a3059b9cb5ac09713ec5b663df3">sdlogger_spi_direct.h</a>
+</li>
+<li>sdlogger_spi_direct_start()
+: <a class="el" href="sdlogger__spi__direct_8c.html#af24019c9a3de0374a1f3d5ea33bc5bf9">sdlogger_spi_direct.c</a>
+, <a class="el" href="sdlogger__spi__direct_8h.html#af24019c9a3de0374a1f3d5ea33bc5bf9">sdlogger_spi_direct.h</a>
+</li>
+<li>sdlogger_spi_direct_stop()
+: <a class="el" href="sdlogger__spi__direct_8c.html#a80b30cf3301be1f5ad63d0343df44266">sdlogger_spi_direct.c</a>
+, <a class="el" href="sdlogger__spi__direct_8h.html#a80b30cf3301be1f5ad63d0343df44266">sdlogger_spi_direct.h</a>
+</li>
+<li>SDLogger_StoppedLogging
+: <a class="el" href="sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea10771513c3baf20eadd77f0bac8b138a">sdlogger_spi_direct.h</a>
+</li>
+<li>SDLogger_UnInit
+: <a class="el" href="sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea74bb0669dc4e3796e798b4a2e9101abd">sdlogger_spi_direct.h</a>
+</li>
+<li>SDLogger_UpdatingIndex
+: <a class="el" href="sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea4eb028a007f2f0f71384cf3962aa2325">sdlogger_spi_direct.h</a>
+</li>
+<li>SDLoggerStatus
+: <a class="el" href="sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206e">sdlogger_spi_direct.h</a>
 </li>
 <li>sdlogOk
 : <a class="el" href="main__chibios__libopencm3_8c.html#a3ddd7ec70ba1b2a537557fe1c165933b">main_chibios_libopencm3.c</a>
@@ -742,6 +890,10 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>SelectCapReg
 : <a class="el" href="lpc21_2modules_2core_2trigger__ext__hw_8h.html#ad9334386ea943c2441d51e59a0add6c4">trigger_ext_hw.h</a>
+</li>
+<li>selfie_alt
+: <a class="el" href="follow__me_8c.html#a9a9a128aa9067d7277b9e2a5341e41a8">follow_me.c</a>
+, <a class="el" href="follow__me_8h.html#a9a9a128aa9067d7277b9e2a5341e41a8">follow_me.h</a>
 </li>
 <li>Send()
 : <a class="el" href="gsm_8c.html#a7b1f6a663f9fd0a98b42a36f192303d7">gsm.c</a>
@@ -859,8 +1011,12 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>SEND_SYNC_AOA
 : <a class="el" href="aoa__pwm_8c.html#abbda4509f49a865c1d464cc6fd445bbd">aoa_pwm.c</a>
 </li>
+<li>SENDER_ID
+: <a class="el" href="stereocam2state_8c.html#aebdec6c21f31d26b81f241899f10354e">stereocam2state.c</a>
+</li>
 <li>SenderIdOfMsg
 : <a class="el" href="fixedwing_2datalink_8c.html#a64676521497bca7981efa997be80e678">datalink.c</a>
+, <a class="el" href="bluegiga_8c.html#a64676521497bca7981efa997be80e678">bluegiga.c</a>
 </li>
 <li>sending_buffer_to_uart
 : <a class="el" href="high__speed__logger__direct__memory_8c.html#a1deed263bc981c9b543bd1e10f2e6ceb">high_speed_logger_direct_memory.c</a>
@@ -881,6 +1037,8 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>serial_init()
 : <a class="el" href="serial_8c.html#a8721c1e544f70f5bf4b1a1410d973241">serial.c</a>
 , <a class="el" href="serial_8h.html#a8721c1e544f70f5bf4b1a1410d973241">serial.h</a>
+, <a class="el" href="obstacle__avoidance_8c.html#ad2b461e9e9044364a28a61cfadcacdd8">obstacle_avoidance.c</a>
+, <a class="el" href="obstacle__avoidance_8h.html#ad2b461e9e9044364a28a61cfadcacdd8">obstacle_avoidance.h</a>
 </li>
 <li>serial_no
 : <a class="el" href="stm32_2usb__ser__hw_8c.html#a44f951c4a142701ffbb62709603a592b">usb_ser_hw.c</a>
@@ -912,6 +1070,14 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>serial_port_open_raw()
 : <a class="el" href="serial__port_8c.html#a69092c80559cd279bfd046d53b25fefd">serial_port.c</a>
 , <a class="el" href="serial__port_8h.html#a69092c80559cd279bfd046d53b25fefd">serial_port.h</a>
+</li>
+<li>serial_start()
+: <a class="el" href="obstacle__avoidance_8c.html#adb03a88d0d45166c5c9c43c02db733bc">obstacle_avoidance.c</a>
+, <a class="el" href="obstacle__avoidance_8h.html#adb03a88d0d45166c5c9c43c02db733bc">obstacle_avoidance.h</a>
+</li>
+<li>serial_update()
+: <a class="el" href="obstacle__avoidance_8c.html#a510b29d4d94a1e5cbe6aa87b57386f93">obstacle_avoidance.c</a>
+, <a class="el" href="obstacle__avoidance_8h.html#a510b29d4d94a1e5cbe6aa87b57386f93">obstacle_avoidance.h</a>
 </li>
 <li>serie_coeff_proj_mercator
 : <a class="el" href="group__math__geodetic__utm.html#ga3a2a981fbf6e71561e56716c8ea956a0">pprz_geodetic_utm.h</a>
@@ -1115,6 +1281,10 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>SET_ADDR
 : <a class="el" href="actuators__asctec_8h.html#a6ab1b9217ee457a8e4352cf0b28af79da94edc8e83fd7d0718449d0caeb168ad9">actuators_asctec.h</a>
 , <a class="el" href="actuators__asctec__v2_8h.html#a4fc4c81cd178f2e57a6d8ce74785742ea94edc8e83fd7d0718449d0caeb168ad9">actuators_asctec_v2.h</a>
+, <a class="el" href="actuators__asctec__v2__new_8h.html#a4fc4c81cd178f2e57a6d8ce74785742ea94edc8e83fd7d0718449d0caeb168ad9">actuators_asctec_v2_new.h</a>
+</li>
+<li>set_bias
+: <a class="el" href="obstacle__avoidance_8c.html#aac6b9d90100705fc2fc95cff9121dd65">obstacle_avoidance.c</a>
 </li>
 <li>set_body_orientation_and_rates()
 : <a class="el" href="ahrs__float__dcm__wrapper_8c.html#af37e584c40cc004e4db7af1151ff659e">ahrs_float_dcm_wrapper.c</a>
@@ -1152,9 +1322,6 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>set_exception_flag()
 : <a class="el" href="navigation_8h.html#afda5d6ecdad02e85658a6f1c94194141">navigation.h</a>
 </li>
-<li>set_failsafe_mode()
-: <a class="el" href="main__fbw_8c.html#aefb594779e1a779cea2a57feec4ac7de">main_fbw.c</a>
-</li>
 <li>set_gainset()
 : <a class="el" href="gain__scheduling_8c.html#a7b045557d7f51816377cc0d20d99f344">gain_scheduling.c</a>
 , <a class="el" href="gain__scheduling_8h.html#a7b045557d7f51816377cc0d20d99f344">gain_scheduling.h</a>
@@ -1179,6 +1346,10 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>SetAcInfo
 : <a class="el" href="traffic__info_8h.html#a9c6b528a41fdb94abf2163b08523e82c">traffic_info.h</a>
+</li>
+<li>setAnglesMeasurements()
+: <a class="el" href="obstacle__avoidance_8c.html#a6a00e51657aca7b745bdebaa2df636f1">obstacle_avoidance.c</a>
+, <a class="el" href="obstacle__avoidance_8h.html#a6a00e51657aca7b745bdebaa2df636f1">obstacle_avoidance.h</a>
 </li>
 <li>SetCommands
 : <a class="el" href="commands_8h.html#a75054f73ea928d6ec314b745bf672106">commands.h</a>
@@ -1208,8 +1379,8 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="settings_8h.html#a5f9a5a2e826aec11c77548f2a541fb9e">settings.h</a>
 </li>
 <li>settings_store()
-: <a class="el" href="settings_8c.html#ada97d7166aa02d3c945ef0333770f640">settings.c</a>
-, <a class="el" href="settings_8h.html#ada97d7166aa02d3c945ef0333770f640">settings.h</a>
+: <a class="el" href="settings_8h.html#ada97d7166aa02d3c945ef0333770f640">settings.h</a>
+, <a class="el" href="settings_8c.html#ada97d7166aa02d3c945ef0333770f640">settings.c</a>
 </li>
 <li>settings_store_flag
 : <a class="el" href="settings_8c.html#a8d24b2096b106f4d58da4afda7e43439">settings.c</a>
@@ -1391,9 +1562,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="ahrs__sim_8c.html#a1d08d1f86a284110ac777ccb661113af">ahrs_sim.c</a>
 </li>
 <li>sim_r
-: <a class="el" href="ahrs__sim_8c.html#ab131e85b2a1263c9cd16e429d1fa9eee">ahrs_sim.c</a>
-, <a class="el" href="arch_2sim_2modules_2ins_2ins__arduimu__basic_8c.html#ab131e85b2a1263c9cd16e429d1fa9eee">ins_arduimu_basic.c</a>
+: <a class="el" href="arch_2sim_2modules_2ins_2ins__arduimu__basic_8c.html#ab131e85b2a1263c9cd16e429d1fa9eee">ins_arduimu_basic.c</a>
 , <a class="el" href="sim__ahrs_8c.html#ab131e85b2a1263c9cd16e429d1fa9eee">sim_ahrs.c</a>
+, <a class="el" href="ahrs__sim_8c.html#ab131e85b2a1263c9cd16e429d1fa9eee">ahrs_sim.c</a>
 </li>
 <li>sim_sys_time_task()
 : <a class="el" href="sim__ap_8c.html#ad4b81a07a0e1d3b8cad9a7a2af3d7d1b">sim_ap.c</a>
@@ -1429,6 +1600,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>SIZE_DIV
 : <a class="el" href="opticflow__calculator_8c.html#ad43a76942aff6ced340834e78625e50a">opticflow_calculator.c</a>
+</li>
+<li>size_matrix
+: <a class="el" href="obstacle__avoidance_8c.html#ace5a80bc67333fd49bd33c64bf724e39">obstacle_avoidance.c</a>
 </li>
 <li>size_of()
 : <a class="el" href="ivy__transport_8c.html#a48329b0e6a950da10bf5344ab774313c">ivy_transport.c</a>
@@ -1753,6 +1927,10 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>SPEED_NED_I
 : <a class="el" href="group__state__velocity.html#gad2f40b29920e3d9e602cdb3012db6210">state.h</a>
 </li>
+<li>speed_pot
+: <a class="el" href="guidance__OA_8c.html#a6230ec3505cf1b00cf02c3172936db67">guidance_OA.c</a>
+, <a class="el" href="guidance__OA_8h.html#a6230ec3505cf1b00cf02c3172936db67">guidance_OA.h</a>
+</li>
 <li>SPEEDS_BFP_OF_REAL
 : <a class="el" href="group__math__algebra__generic.html#gab2e4a9721f74470ea3cbd5078067dc2b">pprz_algebra.h</a>
 </li>
@@ -1765,7 +1943,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>SPEKTRUM_BIND_PIN
 : <a class="el" href="apogee__1_80_8h.html#a787b5d0dff7658e5e923331317635545">apogee_1.0.h</a>
 , <a class="el" href="cc3d_8h.html#a787b5d0dff7658e5e923331317635545">cc3d.h</a>
-, <a class="el" href="elle0__1_80_8h.html#a787b5d0dff7658e5e923331317635545">elle0_1.0.h</a>
+, <a class="el" href="elle0__common_8h.html#a787b5d0dff7658e5e923331317635545">elle0_common.h</a>
 , <a class="el" href="krooz__sd_8h.html#a787b5d0dff7658e5e923331317635545">krooz_sd.h</a>
 , <a class="el" href="lisa__l__1_80_8h.html#a787b5d0dff7658e5e923331317635545">lisa_l_1.0.h</a>
 , <a class="el" href="lisa__m__1_80_8h.html#a787b5d0dff7658e5e923331317635545">lisa_m_1.0.h</a>
@@ -1775,6 +1953,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="lisa__mx__2_81_8h.html#a787b5d0dff7658e5e923331317635545">lisa_mx_2.1.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#a787b5d0dff7658e5e923331317635545">lisa_s_1.0.h</a>
 , <a class="el" href="navstik__1_80_8h.html#a787b5d0dff7658e5e923331317635545">navstik_1.0.h</a>
+, <a class="el" href="naze32__common_8h.html#a787b5d0dff7658e5e923331317635545">naze32_common.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#a787b5d0dff7658e5e923331317635545">px4fmu_1.7.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#a787b5d0dff7658e5e923331317635545">stm32f4_discovery.h</a>
 </li>
@@ -1784,7 +1963,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>SPEKTRUM_BIND_PIN_PORT
 : <a class="el" href="apogee__1_80_8h.html#a61f9ceb054741c177baac8a8b0282628">apogee_1.0.h</a>
 , <a class="el" href="cc3d_8h.html#a61f9ceb054741c177baac8a8b0282628">cc3d.h</a>
-, <a class="el" href="elle0__1_80_8h.html#a61f9ceb054741c177baac8a8b0282628">elle0_1.0.h</a>
+, <a class="el" href="elle0__common_8h.html#a61f9ceb054741c177baac8a8b0282628">elle0_common.h</a>
 , <a class="el" href="krooz__sd_8h.html#a61f9ceb054741c177baac8a8b0282628">krooz_sd.h</a>
 , <a class="el" href="lisa__l__1_80_8h.html#a61f9ceb054741c177baac8a8b0282628">lisa_l_1.0.h</a>
 , <a class="el" href="lisa__m__1_80_8h.html#a61f9ceb054741c177baac8a8b0282628">lisa_m_1.0.h</a>
@@ -1794,6 +1973,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="lisa__mx__2_81_8h.html#a61f9ceb054741c177baac8a8b0282628">lisa_mx_2.1.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#a61f9ceb054741c177baac8a8b0282628">lisa_s_1.0.h</a>
 , <a class="el" href="navstik__1_80_8h.html#a61f9ceb054741c177baac8a8b0282628">navstik_1.0.h</a>
+, <a class="el" href="naze32__common_8h.html#a61f9ceb054741c177baac8a8b0282628">naze32_common.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#a61f9ceb054741c177baac8a8b0282628">px4fmu_1.7.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#a61f9ceb054741c177baac8a8b0282628">stm32f4_discovery.h</a>
 </li>
@@ -1819,100 +1999,121 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>SPEKTRUM_UART1_AF
 : <a class="el" href="cc3d_8h.html#a5a46615f5192bb2619f0515ac0a230e9">cc3d.h</a>
-, <a class="el" href="elle0__1_80_8h.html#a5a46615f5192bb2619f0515ac0a230e9">elle0_1.0.h</a>
+, <a class="el" href="elle0__common_8h.html#a5a46615f5192bb2619f0515ac0a230e9">elle0_common.h</a>
 , <a class="el" href="lisa__l__1_80_8h.html#a5a46615f5192bb2619f0515ac0a230e9">lisa_l_1.0.h</a>
 , <a class="el" href="lisa__m__common_8h.html#a5a46615f5192bb2619f0515ac0a230e9">lisa_m_common.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a5a46615f5192bb2619f0515ac0a230e9">lisa_mx_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#a5a46615f5192bb2619f0515ac0a230e9">lisa_s_1.0.h</a>
+, <a class="el" href="naze32__common_8h.html#a5a46615f5192bb2619f0515ac0a230e9">naze32_common.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#a5a46615f5192bb2619f0515ac0a230e9">stm32f4_discovery.h</a>
 </li>
 <li>SPEKTRUM_UART1_BANK
 : <a class="el" href="cc3d_8h.html#adea36357b1c0c2ae4214bd55056e9f9f">cc3d.h</a>
-, <a class="el" href="elle0__1_80_8h.html#adea36357b1c0c2ae4214bd55056e9f9f">elle0_1.0.h</a>
+, <a class="el" href="elle0__common_8h.html#adea36357b1c0c2ae4214bd55056e9f9f">elle0_common.h</a>
 , <a class="el" href="lisa__l__1_80_8h.html#adea36357b1c0c2ae4214bd55056e9f9f">lisa_l_1.0.h</a>
 , <a class="el" href="lisa__m__common_8h.html#adea36357b1c0c2ae4214bd55056e9f9f">lisa_m_common.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#adea36357b1c0c2ae4214bd55056e9f9f">lisa_mx_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#adea36357b1c0c2ae4214bd55056e9f9f">lisa_s_1.0.h</a>
+, <a class="el" href="naze32__common_8h.html#adea36357b1c0c2ae4214bd55056e9f9f">naze32_common.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#adea36357b1c0c2ae4214bd55056e9f9f">stm32f4_discovery.h</a>
 </li>
 <li>SPEKTRUM_UART1_DEV
 : <a class="el" href="cc3d_8h.html#acdfc946654870dc7013b6f8b9d9e5a24">cc3d.h</a>
-, <a class="el" href="elle0__1_80_8h.html#acdfc946654870dc7013b6f8b9d9e5a24">elle0_1.0.h</a>
+, <a class="el" href="elle0__common_8h.html#acdfc946654870dc7013b6f8b9d9e5a24">elle0_common.h</a>
 , <a class="el" href="lisa__l__1_80_8h.html#acdfc946654870dc7013b6f8b9d9e5a24">lisa_l_1.0.h</a>
 , <a class="el" href="lisa__m__common_8h.html#acdfc946654870dc7013b6f8b9d9e5a24">lisa_m_common.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#acdfc946654870dc7013b6f8b9d9e5a24">lisa_mx_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#acdfc946654870dc7013b6f8b9d9e5a24">lisa_s_1.0.h</a>
+, <a class="el" href="naze32__common_8h.html#acdfc946654870dc7013b6f8b9d9e5a24">naze32_common.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#acdfc946654870dc7013b6f8b9d9e5a24">stm32f4_discovery.h</a>
 </li>
 <li>SPEKTRUM_UART1_IRQ
 : <a class="el" href="cc3d_8h.html#af107a457e0d8e5e7c9910ef5e6f45317">cc3d.h</a>
-, <a class="el" href="elle0__1_80_8h.html#af107a457e0d8e5e7c9910ef5e6f45317">elle0_1.0.h</a>
+, <a class="el" href="elle0__common_8h.html#af107a457e0d8e5e7c9910ef5e6f45317">elle0_common.h</a>
 , <a class="el" href="lisa__l__1_80_8h.html#af107a457e0d8e5e7c9910ef5e6f45317">lisa_l_1.0.h</a>
 , <a class="el" href="lisa__m__common_8h.html#af107a457e0d8e5e7c9910ef5e6f45317">lisa_m_common.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#af107a457e0d8e5e7c9910ef5e6f45317">lisa_mx_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#af107a457e0d8e5e7c9910ef5e6f45317">lisa_s_1.0.h</a>
+, <a class="el" href="naze32__common_8h.html#af107a457e0d8e5e7c9910ef5e6f45317">naze32_common.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#af107a457e0d8e5e7c9910ef5e6f45317">stm32f4_discovery.h</a>
 </li>
 <li>SPEKTRUM_UART1_ISR
 : <a class="el" href="cc3d_8h.html#a51f04ab18534cef6be2f18858ccb5164">cc3d.h</a>
-, <a class="el" href="elle0__1_80_8h.html#a51f04ab18534cef6be2f18858ccb5164">elle0_1.0.h</a>
+, <a class="el" href="elle0__common_8h.html#a51f04ab18534cef6be2f18858ccb5164">elle0_common.h</a>
 , <a class="el" href="lisa__l__1_80_8h.html#a51f04ab18534cef6be2f18858ccb5164">lisa_l_1.0.h</a>
 , <a class="el" href="lisa__m__common_8h.html#a51f04ab18534cef6be2f18858ccb5164">lisa_m_common.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a51f04ab18534cef6be2f18858ccb5164">lisa_mx_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#a51f04ab18534cef6be2f18858ccb5164">lisa_s_1.0.h</a>
+, <a class="el" href="naze32__common_8h.html#a51f04ab18534cef6be2f18858ccb5164">naze32_common.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#a51f04ab18534cef6be2f18858ccb5164">stm32f4_discovery.h</a>
 </li>
 <li>SPEKTRUM_UART1_PIN
 : <a class="el" href="cc3d_8h.html#a60d42d5ec3c48cd2aa859a23b31ddd3b">cc3d.h</a>
-, <a class="el" href="elle0__1_80_8h.html#a60d42d5ec3c48cd2aa859a23b31ddd3b">elle0_1.0.h</a>
+, <a class="el" href="elle0__common_8h.html#a60d42d5ec3c48cd2aa859a23b31ddd3b">elle0_common.h</a>
 , <a class="el" href="lisa__l__1_80_8h.html#a60d42d5ec3c48cd2aa859a23b31ddd3b">lisa_l_1.0.h</a>
 , <a class="el" href="lisa__m__common_8h.html#a60d42d5ec3c48cd2aa859a23b31ddd3b">lisa_m_common.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a60d42d5ec3c48cd2aa859a23b31ddd3b">lisa_mx_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#a60d42d5ec3c48cd2aa859a23b31ddd3b">lisa_s_1.0.h</a>
+, <a class="el" href="naze32__common_8h.html#a60d42d5ec3c48cd2aa859a23b31ddd3b">naze32_common.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#a60d42d5ec3c48cd2aa859a23b31ddd3b">stm32f4_discovery.h</a>
 </li>
 <li>SPEKTRUM_UART1_RCC
 : <a class="el" href="cc3d_8h.html#a7bed267bab62113c6593e804a4d0f2f0">cc3d.h</a>
-, <a class="el" href="elle0__1_80_8h.html#a7bed267bab62113c6593e804a4d0f2f0">elle0_1.0.h</a>
+, <a class="el" href="elle0__common_8h.html#a7bed267bab62113c6593e804a4d0f2f0">elle0_common.h</a>
 , <a class="el" href="lisa__l__1_80_8h.html#a7bed267bab62113c6593e804a4d0f2f0">lisa_l_1.0.h</a>
 , <a class="el" href="lisa__m__common_8h.html#a7bed267bab62113c6593e804a4d0f2f0">lisa_m_common.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a7bed267bab62113c6593e804a4d0f2f0">lisa_mx_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#a7bed267bab62113c6593e804a4d0f2f0">lisa_s_1.0.h</a>
+, <a class="el" href="naze32__common_8h.html#a7bed267bab62113c6593e804a4d0f2f0">naze32_common.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#a7bed267bab62113c6593e804a4d0f2f0">stm32f4_discovery.h</a>
 </li>
 <li>SPEKTRUM_UART2_AF
 : <a class="el" href="apogee__1_80_8h.html#a0b1697ff5064f319cf146f597ada6fe0">apogee_1.0.h</a>
+, <a class="el" href="elle0__common_8h.html#a0b1697ff5064f319cf146f597ada6fe0">elle0_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#a0b1697ff5064f319cf146f597ada6fe0">lisa_s_1.0.h</a>
+, <a class="el" href="naze32__common_8h.html#a0b1697ff5064f319cf146f597ada6fe0">naze32_common.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#a0b1697ff5064f319cf146f597ada6fe0">px4fmu_1.7.h</a>
 </li>
 <li>SPEKTRUM_UART2_BANK
 : <a class="el" href="apogee__1_80_8h.html#a72445961e484d65706a9b6d897fd510e">apogee_1.0.h</a>
+, <a class="el" href="elle0__common_8h.html#a72445961e484d65706a9b6d897fd510e">elle0_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#a72445961e484d65706a9b6d897fd510e">lisa_s_1.0.h</a>
+, <a class="el" href="naze32__common_8h.html#a72445961e484d65706a9b6d897fd510e">naze32_common.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#a72445961e484d65706a9b6d897fd510e">px4fmu_1.7.h</a>
 </li>
 <li>SPEKTRUM_UART2_DEV
 : <a class="el" href="apogee__1_80_8h.html#ab73e097ba0e9f79e7abb3d657c2ef6f0">apogee_1.0.h</a>
+, <a class="el" href="elle0__common_8h.html#ab73e097ba0e9f79e7abb3d657c2ef6f0">elle0_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#ab73e097ba0e9f79e7abb3d657c2ef6f0">lisa_s_1.0.h</a>
+, <a class="el" href="naze32__common_8h.html#ab73e097ba0e9f79e7abb3d657c2ef6f0">naze32_common.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#ab73e097ba0e9f79e7abb3d657c2ef6f0">px4fmu_1.7.h</a>
 </li>
 <li>SPEKTRUM_UART2_IRQ
 : <a class="el" href="apogee__1_80_8h.html#a578d5939a046c3eb0b5e185f7e500d27">apogee_1.0.h</a>
+, <a class="el" href="elle0__common_8h.html#a578d5939a046c3eb0b5e185f7e500d27">elle0_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#a578d5939a046c3eb0b5e185f7e500d27">lisa_s_1.0.h</a>
+, <a class="el" href="naze32__common_8h.html#a578d5939a046c3eb0b5e185f7e500d27">naze32_common.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#a578d5939a046c3eb0b5e185f7e500d27">px4fmu_1.7.h</a>
 </li>
 <li>SPEKTRUM_UART2_ISR
 : <a class="el" href="apogee__1_80_8h.html#ae926e4829833fe67cd614cd513096808">apogee_1.0.h</a>
+, <a class="el" href="elle0__common_8h.html#ae926e4829833fe67cd614cd513096808">elle0_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#ae926e4829833fe67cd614cd513096808">lisa_s_1.0.h</a>
+, <a class="el" href="naze32__common_8h.html#ae926e4829833fe67cd614cd513096808">naze32_common.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#ae926e4829833fe67cd614cd513096808">px4fmu_1.7.h</a>
 </li>
 <li>SPEKTRUM_UART2_PIN
 : <a class="el" href="apogee__1_80_8h.html#a709a999c99640032c159e61ceab7797a">apogee_1.0.h</a>
+, <a class="el" href="elle0__common_8h.html#a709a999c99640032c159e61ceab7797a">elle0_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#a709a999c99640032c159e61ceab7797a">lisa_s_1.0.h</a>
+, <a class="el" href="naze32__common_8h.html#a709a999c99640032c159e61ceab7797a">naze32_common.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#a709a999c99640032c159e61ceab7797a">px4fmu_1.7.h</a>
 </li>
 <li>SPEKTRUM_UART2_RCC
 : <a class="el" href="apogee__1_80_8h.html#a625a3569ff01571416adcd8d9a3e8878">apogee_1.0.h</a>
+, <a class="el" href="elle0__common_8h.html#a625a3569ff01571416adcd8d9a3e8878">elle0_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#a625a3569ff01571416adcd8d9a3e8878">lisa_s_1.0.h</a>
+, <a class="el" href="naze32__common_8h.html#a625a3569ff01571416adcd8d9a3e8878">naze32_common.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#a625a3569ff01571416adcd8d9a3e8878">px4fmu_1.7.h</a>
 </li>
 <li>SPEKTRUM_UART3_AF
@@ -1958,49 +2159,49 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="lisa__s__1_80_8h.html#a1402f0b8cbe9f8add1d28ba3bae1a197">lisa_s_1.0.h</a>
 </li>
 <li>SPEKTRUM_UART5_AF
-: <a class="el" href="elle0__1_80_8h.html#a379540621f314d33944dceb89d8ccaa1">elle0_1.0.h</a>
+: <a class="el" href="elle0__common_8h.html#a379540621f314d33944dceb89d8ccaa1">elle0_common.h</a>
 , <a class="el" href="lisa__l__1_80_8h.html#a379540621f314d33944dceb89d8ccaa1">lisa_l_1.0.h</a>
 , <a class="el" href="lisa__m__common_8h.html#a379540621f314d33944dceb89d8ccaa1">lisa_m_common.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a379540621f314d33944dceb89d8ccaa1">lisa_mx_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#a379540621f314d33944dceb89d8ccaa1">lisa_s_1.0.h</a>
 </li>
 <li>SPEKTRUM_UART5_BANK
-: <a class="el" href="elle0__1_80_8h.html#a77c3af075354416adaba09eac2e953c2">elle0_1.0.h</a>
+: <a class="el" href="elle0__common_8h.html#a77c3af075354416adaba09eac2e953c2">elle0_common.h</a>
 , <a class="el" href="lisa__l__1_80_8h.html#a77c3af075354416adaba09eac2e953c2">lisa_l_1.0.h</a>
 , <a class="el" href="lisa__m__common_8h.html#a77c3af075354416adaba09eac2e953c2">lisa_m_common.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a77c3af075354416adaba09eac2e953c2">lisa_mx_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#a77c3af075354416adaba09eac2e953c2">lisa_s_1.0.h</a>
 </li>
 <li>SPEKTRUM_UART5_DEV
-: <a class="el" href="elle0__1_80_8h.html#a4375ec70ca53e7b0e7f6f7defdd4855d">elle0_1.0.h</a>
+: <a class="el" href="elle0__common_8h.html#a4375ec70ca53e7b0e7f6f7defdd4855d">elle0_common.h</a>
 , <a class="el" href="lisa__l__1_80_8h.html#a4375ec70ca53e7b0e7f6f7defdd4855d">lisa_l_1.0.h</a>
 , <a class="el" href="lisa__m__common_8h.html#a4375ec70ca53e7b0e7f6f7defdd4855d">lisa_m_common.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a4375ec70ca53e7b0e7f6f7defdd4855d">lisa_mx_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#a4375ec70ca53e7b0e7f6f7defdd4855d">lisa_s_1.0.h</a>
 </li>
 <li>SPEKTRUM_UART5_IRQ
-: <a class="el" href="elle0__1_80_8h.html#af2e121d4d9900180af09be67e9b044ae">elle0_1.0.h</a>
+: <a class="el" href="elle0__common_8h.html#af2e121d4d9900180af09be67e9b044ae">elle0_common.h</a>
 , <a class="el" href="lisa__l__1_80_8h.html#af2e121d4d9900180af09be67e9b044ae">lisa_l_1.0.h</a>
 , <a class="el" href="lisa__m__common_8h.html#af2e121d4d9900180af09be67e9b044ae">lisa_m_common.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#af2e121d4d9900180af09be67e9b044ae">lisa_mx_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#af2e121d4d9900180af09be67e9b044ae">lisa_s_1.0.h</a>
 </li>
 <li>SPEKTRUM_UART5_ISR
-: <a class="el" href="elle0__1_80_8h.html#ae3b06f6c51e900d7da9e55fd37ae9d39">elle0_1.0.h</a>
+: <a class="el" href="elle0__common_8h.html#ae3b06f6c51e900d7da9e55fd37ae9d39">elle0_common.h</a>
 , <a class="el" href="lisa__l__1_80_8h.html#ae3b06f6c51e900d7da9e55fd37ae9d39">lisa_l_1.0.h</a>
 , <a class="el" href="lisa__m__common_8h.html#ae3b06f6c51e900d7da9e55fd37ae9d39">lisa_m_common.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#ae3b06f6c51e900d7da9e55fd37ae9d39">lisa_mx_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#ae3b06f6c51e900d7da9e55fd37ae9d39">lisa_s_1.0.h</a>
 </li>
 <li>SPEKTRUM_UART5_PIN
-: <a class="el" href="elle0__1_80_8h.html#a9101a9b82265e3f89eea39451012d457">elle0_1.0.h</a>
+: <a class="el" href="elle0__common_8h.html#a9101a9b82265e3f89eea39451012d457">elle0_common.h</a>
 , <a class="el" href="lisa__l__1_80_8h.html#a9101a9b82265e3f89eea39451012d457">lisa_l_1.0.h</a>
 , <a class="el" href="lisa__m__common_8h.html#a9101a9b82265e3f89eea39451012d457">lisa_m_common.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a9101a9b82265e3f89eea39451012d457">lisa_mx_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#a9101a9b82265e3f89eea39451012d457">lisa_s_1.0.h</a>
 </li>
 <li>SPEKTRUM_UART5_RCC
-: <a class="el" href="elle0__1_80_8h.html#a2ab81b59987ffd1973e3c983ea674693">elle0_1.0.h</a>
+: <a class="el" href="elle0__common_8h.html#a2ab81b59987ffd1973e3c983ea674693">elle0_common.h</a>
 , <a class="el" href="lisa__l__1_80_8h.html#a2ab81b59987ffd1973e3c983ea674693">lisa_l_1.0.h</a>
 , <a class="el" href="lisa__m__common_8h.html#a2ab81b59987ffd1973e3c983ea674693">lisa_m_common.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a2ab81b59987ffd1973e3c983ea674693">lisa_mx_common.h</a>
@@ -2045,12 +2246,12 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>SpektrumUartInit()
 : <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#ac4f1b2d7f0844ae795adfd74bdeb18f0">spektrum_arch.c</a>
 </li>
-<li>SPI0
-: <a class="el" href="LPC21xx_8h.html#af26e39c91b262cc480085abcc450d3d5">LPC21xx.h</a>
-</li>
 <li>spi0
 : <a class="el" href="group__spi.html#gae920399b05f855df64dd584fe647eab3">spi.c</a>
 , <a class="el" href="group__spi.html#gae920399b05f855df64dd584fe647eab3">spi.h</a>
+</li>
+<li>SPI0
+: <a class="el" href="LPC21xx_8h.html#af26e39c91b262cc480085abcc450d3d5">LPC21xx.h</a>
 </li>
 <li>spi0_arch_init()
 : <a class="el" href="group__spi.html#gab8cb9f918fae47c201bf233a0b3b282f">spi_arch.c</a>
@@ -2151,7 +2352,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>SPI1_GPIO_AF
 : <a class="el" href="apogee__1_80_8h.html#a4409cac3bdec2cfc7d7ce95c1ef4b002">apogee_1.0.h</a>
-, <a class="el" href="elle0__1_80_8h.html#a4409cac3bdec2cfc7d7ce95c1ef4b002">elle0_1.0.h</a>
+, <a class="el" href="elle0__common_8h.html#a4409cac3bdec2cfc7d7ce95c1ef4b002">elle0_common.h</a>
 , <a class="el" href="krooz__sd_8h.html#a4409cac3bdec2cfc7d7ce95c1ef4b002">krooz_sd.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a4409cac3bdec2cfc7d7ce95c1ef4b002">lisa_mx_common.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#a4409cac3bdec2cfc7d7ce95c1ef4b002">px4fmu_1.7.h</a>
@@ -2160,7 +2361,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>SPI1_GPIO_MISO
 : <a class="el" href="apogee__1_80_8h.html#ada248ea908ea4ee30983b56d29af8380">apogee_1.0.h</a>
-, <a class="el" href="elle0__1_80_8h.html#ada248ea908ea4ee30983b56d29af8380">elle0_1.0.h</a>
+, <a class="el" href="elle0__common_8h.html#ada248ea908ea4ee30983b56d29af8380">elle0_common.h</a>
 , <a class="el" href="krooz__sd_8h.html#ada248ea908ea4ee30983b56d29af8380">krooz_sd.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#ada248ea908ea4ee30983b56d29af8380">lisa_mx_common.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#ada248ea908ea4ee30983b56d29af8380">px4fmu_1.7.h</a>
@@ -2169,34 +2370,44 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>SPI1_GPIO_MOSI
 : <a class="el" href="apogee__1_80_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8">apogee_1.0.h</a>
-, <a class="el" href="elle0__1_80_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8">elle0_1.0.h</a>
+, <a class="el" href="elle0__common_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8">elle0_common.h</a>
 , <a class="el" href="krooz__sd_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8">krooz_sd.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8">lisa_mx_common.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8">px4fmu_1.7.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8">px4fmu_2.4.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8">stm32f4_discovery.h</a>
 </li>
+<li>SPI1_GPIO_NSS
+: <a class="el" href="elle0__common_8h.html#a99df90574479e3cd4cf0ea51c63e1595">elle0_common.h</a>
+, <a class="el" href="lisa__mx__common_8h.html#a99df90574479e3cd4cf0ea51c63e1595">lisa_mx_common.h</a>
+, <a class="el" href="stm32f4__discovery_8h.html#a99df90574479e3cd4cf0ea51c63e1595">stm32f4_discovery.h</a>
+</li>
 <li>SPI1_GPIO_PORT_MISO
-: <a class="el" href="apogee__1_80_8h.html#a871d43c3d2837b5d0719389e347aa300">apogee_1.0.h</a>
-, <a class="el" href="elle0__1_80_8h.html#a871d43c3d2837b5d0719389e347aa300">elle0_1.0.h</a>
+: <a class="el" href="elle0__common_8h.html#a871d43c3d2837b5d0719389e347aa300">elle0_common.h</a>
 , <a class="el" href="krooz__sd_8h.html#a871d43c3d2837b5d0719389e347aa300">krooz_sd.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a871d43c3d2837b5d0719389e347aa300">lisa_mx_common.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#a871d43c3d2837b5d0719389e347aa300">px4fmu_1.7.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#a871d43c3d2837b5d0719389e347aa300">px4fmu_2.4.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#a871d43c3d2837b5d0719389e347aa300">stm32f4_discovery.h</a>
+, <a class="el" href="apogee__1_80_8h.html#a871d43c3d2837b5d0719389e347aa300">apogee_1.0.h</a>
 </li>
 <li>SPI1_GPIO_PORT_MOSI
 : <a class="el" href="apogee__1_80_8h.html#afe67bca9eb8da8654288c02124683016">apogee_1.0.h</a>
-, <a class="el" href="elle0__1_80_8h.html#afe67bca9eb8da8654288c02124683016">elle0_1.0.h</a>
+, <a class="el" href="elle0__common_8h.html#afe67bca9eb8da8654288c02124683016">elle0_common.h</a>
 , <a class="el" href="krooz__sd_8h.html#afe67bca9eb8da8654288c02124683016">krooz_sd.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#afe67bca9eb8da8654288c02124683016">lisa_mx_common.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#afe67bca9eb8da8654288c02124683016">px4fmu_1.7.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#afe67bca9eb8da8654288c02124683016">px4fmu_2.4.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#afe67bca9eb8da8654288c02124683016">stm32f4_discovery.h</a>
 </li>
+<li>SPI1_GPIO_PORT_NSS
+: <a class="el" href="elle0__common_8h.html#a1e90afaf8ac86f6bb4fa71ad543039be">elle0_common.h</a>
+, <a class="el" href="lisa__mx__common_8h.html#a1e90afaf8ac86f6bb4fa71ad543039be">lisa_mx_common.h</a>
+, <a class="el" href="stm32f4__discovery_8h.html#a1e90afaf8ac86f6bb4fa71ad543039be">stm32f4_discovery.h</a>
+</li>
 <li>SPI1_GPIO_PORT_SCK
 : <a class="el" href="apogee__1_80_8h.html#a5e12991f1c0aedb1a09cf8ef3b8206fe">apogee_1.0.h</a>
-, <a class="el" href="elle0__1_80_8h.html#a5e12991f1c0aedb1a09cf8ef3b8206fe">elle0_1.0.h</a>
+, <a class="el" href="elle0__common_8h.html#a5e12991f1c0aedb1a09cf8ef3b8206fe">elle0_common.h</a>
 , <a class="el" href="krooz__sd_8h.html#a5e12991f1c0aedb1a09cf8ef3b8206fe">krooz_sd.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a5e12991f1c0aedb1a09cf8ef3b8206fe">lisa_mx_common.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#a5e12991f1c0aedb1a09cf8ef3b8206fe">px4fmu_1.7.h</a>
@@ -2205,7 +2416,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>SPI1_GPIO_SCK
 : <a class="el" href="apogee__1_80_8h.html#a09bc02b7a8383e70a06ebdc7aa25f750">apogee_1.0.h</a>
-, <a class="el" href="elle0__1_80_8h.html#a09bc02b7a8383e70a06ebdc7aa25f750">elle0_1.0.h</a>
+, <a class="el" href="elle0__common_8h.html#a09bc02b7a8383e70a06ebdc7aa25f750">elle0_common.h</a>
 , <a class="el" href="krooz__sd_8h.html#a09bc02b7a8383e70a06ebdc7aa25f750">krooz_sd.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a09bc02b7a8383e70a06ebdc7aa25f750">lisa_mx_common.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#a09bc02b7a8383e70a06ebdc7aa25f750">px4fmu_1.7.h</a>
@@ -2216,9 +2427,6 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="group__spi.html#ga7da3469436debceb731ecb76c920efda">spi.c</a>
 , <a class="el" href="group__spi.html#ga7da3469436debceb731ecb76c920efda">spi.h</a>
 </li>
-<li>spi1_ISR()
-: <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c.html#a757fa003ca462da8fabcb89abf3943d3">spi_arch.c</a>
-</li>
 <li>SPI1_ISR()
 : <a class="el" href="ADS8344_8c.html#a65d6ea131026affbdf33be235dfdb49d">ADS8344.c</a>
 , <a class="el" href="lcd__dogm__hw_8c.html#a65d6ea131026affbdf33be235dfdb49d">lcd_dogm_hw.c</a>
@@ -2227,6 +2435,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>spi1_isr()
 : <a class="el" href="stm32f4__chibios__vectors_8h.html#a100cb370c37e2383865d8747919abd0c">stm32f4_chibios_vectors.h</a>
+</li>
+<li>spi1_ISR()
+: <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c.html#a757fa003ca462da8fabcb89abf3943d3">spi_arch.c</a>
 </li>
 <li>SPI1_LSB_FIRST
 : <a class="el" href="linux_2mcu__periph_2spi__arch_8c.html#a475320cb130eb390b4f124b0cd927065">spi_arch.c</a>
@@ -2265,7 +2476,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="stm32_2mcu__periph_2spi__arch_8c.html#a3ef76c50f4063e0bd8f6ad418ceb8d59">spi_arch.c</a>
 </li>
 <li>SPI2_GPIO_AF
-: <a class="el" href="elle0__1_80_8h.html#a7177258266354e8bfdaa446881db27e1">elle0_1.0.h</a>
+: <a class="el" href="elle0__common_8h.html#a7177258266354e8bfdaa446881db27e1">elle0_common.h</a>
 , <a class="el" href="krooz__sd_8h.html#a7177258266354e8bfdaa446881db27e1">krooz_sd.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a7177258266354e8bfdaa446881db27e1">lisa_mx_common.h</a>
 , <a class="el" href="navstik__1_80_8h.html#a7177258266354e8bfdaa446881db27e1">navstik_1.0.h</a>
@@ -2273,7 +2484,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="stm32f4__discovery_8h.html#a7177258266354e8bfdaa446881db27e1">stm32f4_discovery.h</a>
 </li>
 <li>SPI2_GPIO_MISO
-: <a class="el" href="elle0__1_80_8h.html#a68386681137ae699e3b594ade89408c1">elle0_1.0.h</a>
+: <a class="el" href="elle0__common_8h.html#a68386681137ae699e3b594ade89408c1">elle0_common.h</a>
 , <a class="el" href="krooz__sd_8h.html#a68386681137ae699e3b594ade89408c1">krooz_sd.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a68386681137ae699e3b594ade89408c1">lisa_mx_common.h</a>
 , <a class="el" href="navstik__1_80_8h.html#a68386681137ae699e3b594ade89408c1">navstik_1.0.h</a>
@@ -2281,15 +2492,20 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="stm32f4__discovery_8h.html#a68386681137ae699e3b594ade89408c1">stm32f4_discovery.h</a>
 </li>
 <li>SPI2_GPIO_MOSI
-: <a class="el" href="elle0__1_80_8h.html#a1102abe6725b0ff8c4c4a248dd46e976">elle0_1.0.h</a>
+: <a class="el" href="elle0__common_8h.html#a1102abe6725b0ff8c4c4a248dd46e976">elle0_common.h</a>
 , <a class="el" href="krooz__sd_8h.html#a1102abe6725b0ff8c4c4a248dd46e976">krooz_sd.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a1102abe6725b0ff8c4c4a248dd46e976">lisa_mx_common.h</a>
 , <a class="el" href="navstik__1_80_8h.html#a1102abe6725b0ff8c4c4a248dd46e976">navstik_1.0.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#a1102abe6725b0ff8c4c4a248dd46e976">px4fmu_2.4.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#a1102abe6725b0ff8c4c4a248dd46e976">stm32f4_discovery.h</a>
 </li>
+<li>SPI2_GPIO_NSS
+: <a class="el" href="elle0__common_8h.html#a75623f9270b0dc2e890eefb7033282be">elle0_common.h</a>
+, <a class="el" href="lisa__mx__common_8h.html#a75623f9270b0dc2e890eefb7033282be">lisa_mx_common.h</a>
+, <a class="el" href="stm32f4__discovery_8h.html#a75623f9270b0dc2e890eefb7033282be">stm32f4_discovery.h</a>
+</li>
 <li>SPI2_GPIO_PORT_MISO
-: <a class="el" href="elle0__1_80_8h.html#ac76e332864ead609bed1dff4f04092c9">elle0_1.0.h</a>
+: <a class="el" href="elle0__common_8h.html#ac76e332864ead609bed1dff4f04092c9">elle0_common.h</a>
 , <a class="el" href="krooz__sd_8h.html#ac76e332864ead609bed1dff4f04092c9">krooz_sd.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#ac76e332864ead609bed1dff4f04092c9">lisa_mx_common.h</a>
 , <a class="el" href="navstik__1_80_8h.html#ac76e332864ead609bed1dff4f04092c9">navstik_1.0.h</a>
@@ -2297,15 +2513,20 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="stm32f4__discovery_8h.html#ac76e332864ead609bed1dff4f04092c9">stm32f4_discovery.h</a>
 </li>
 <li>SPI2_GPIO_PORT_MOSI
-: <a class="el" href="elle0__1_80_8h.html#a8498429e77239ef33e38cf77eeafdb02">elle0_1.0.h</a>
+: <a class="el" href="elle0__common_8h.html#a8498429e77239ef33e38cf77eeafdb02">elle0_common.h</a>
 , <a class="el" href="krooz__sd_8h.html#a8498429e77239ef33e38cf77eeafdb02">krooz_sd.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a8498429e77239ef33e38cf77eeafdb02">lisa_mx_common.h</a>
 , <a class="el" href="navstik__1_80_8h.html#a8498429e77239ef33e38cf77eeafdb02">navstik_1.0.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#a8498429e77239ef33e38cf77eeafdb02">px4fmu_2.4.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#a8498429e77239ef33e38cf77eeafdb02">stm32f4_discovery.h</a>
 </li>
+<li>SPI2_GPIO_PORT_NSS
+: <a class="el" href="elle0__common_8h.html#a9d66c24ba631c924123fe12d89aae695">elle0_common.h</a>
+, <a class="el" href="lisa__mx__common_8h.html#a9d66c24ba631c924123fe12d89aae695">lisa_mx_common.h</a>
+, <a class="el" href="stm32f4__discovery_8h.html#a9d66c24ba631c924123fe12d89aae695">stm32f4_discovery.h</a>
+</li>
 <li>SPI2_GPIO_PORT_SCK
-: <a class="el" href="elle0__1_80_8h.html#a0d5b57671b99c1c787bce7ea23b44133">elle0_1.0.h</a>
+: <a class="el" href="elle0__common_8h.html#a0d5b57671b99c1c787bce7ea23b44133">elle0_common.h</a>
 , <a class="el" href="krooz__sd_8h.html#a0d5b57671b99c1c787bce7ea23b44133">krooz_sd.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a0d5b57671b99c1c787bce7ea23b44133">lisa_mx_common.h</a>
 , <a class="el" href="navstik__1_80_8h.html#a0d5b57671b99c1c787bce7ea23b44133">navstik_1.0.h</a>
@@ -2313,7 +2534,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="stm32f4__discovery_8h.html#a0d5b57671b99c1c787bce7ea23b44133">stm32f4_discovery.h</a>
 </li>
 <li>SPI2_GPIO_SCK
-: <a class="el" href="elle0__1_80_8h.html#a0bbce43be56577bdd23c83ec945fb44c">elle0_1.0.h</a>
+: <a class="el" href="elle0__common_8h.html#a0bbce43be56577bdd23c83ec945fb44c">elle0_common.h</a>
 , <a class="el" href="krooz__sd_8h.html#a0bbce43be56577bdd23c83ec945fb44c">krooz_sd.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a0bbce43be56577bdd23c83ec945fb44c">lisa_mx_common.h</a>
 , <a class="el" href="navstik__1_80_8h.html#a0bbce43be56577bdd23c83ec945fb44c">navstik_1.0.h</a>
@@ -2339,6 +2560,10 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="px4fmu__1_87_8h.html#a04d4f3a36f4f19a8eee1261c0dd46100">px4fmu_1.7.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#a04d4f3a36f4f19a8eee1261c0dd46100">stm32f4_discovery.h</a>
 </li>
+<li>SPI3_GPIO_NSS
+: <a class="el" href="lisa__mx__common_8h.html#af31a40aaf52c73f41d4131d60bf22a63">lisa_mx_common.h</a>
+, <a class="el" href="stm32f4__discovery_8h.html#af31a40aaf52c73f41d4131d60bf22a63">stm32f4_discovery.h</a>
+</li>
 <li>SPI3_GPIO_PORT_MISO
 : <a class="el" href="px4fmu__1_87_8h.html#a34f73b0a95d1e525dd2e4160222fa681">px4fmu_1.7.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#a34f73b0a95d1e525dd2e4160222fa681">stm32f4_discovery.h</a>
@@ -2346,6 +2571,10 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>SPI3_GPIO_PORT_MOSI
 : <a class="el" href="px4fmu__1_87_8h.html#a9404a32cb825740fea57ccf6fe10bb32">px4fmu_1.7.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#a9404a32cb825740fea57ccf6fe10bb32">stm32f4_discovery.h</a>
+</li>
+<li>SPI3_GPIO_PORT_NSS
+: <a class="el" href="lisa__mx__common_8h.html#a9b9a3bf9f095e4f2a8976d5889f81316">lisa_mx_common.h</a>
+, <a class="el" href="stm32f4__discovery_8h.html#a9b9a3bf9f095e4f2a8976d5889f81316">stm32f4_discovery.h</a>
 </li>
 <li>SPI3_GPIO_PORT_SCK
 : <a class="el" href="px4fmu__1_87_8h.html#a398297e0ad019133bf71a60420bbe3e3">px4fmu_1.7.h</a>
@@ -2424,7 +2653,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="apogee__1_80_8h.html#a697b8e633c428bd167844542c8c1453f">apogee_1.0.h</a>
 , <a class="el" href="booz__1_80_8h.html#a697b8e633c428bd167844542c8c1453f">booz_1.0.h</a>
 , <a class="el" href="cc3d_8h.html#a697b8e633c428bd167844542c8c1453f">cc3d.h</a>
-, <a class="el" href="elle0__1_80_8h.html#a697b8e633c428bd167844542c8c1453f">elle0_1.0.h</a>
+, <a class="el" href="elle0__common_8h.html#a697b8e633c428bd167844542c8c1453f">elle0_common.h</a>
 , <a class="el" href="hbmini__1_80_8h.html#a697b8e633c428bd167844542c8c1453f">hbmini_1.0.h</a>
 , <a class="el" href="krooz__sd_8h.html#a697b8e633c428bd167844542c8c1453f">krooz_sd.h</a>
 , <a class="el" href="lisa__l__1_80_8h.html#a697b8e633c428bd167844542c8c1453f">lisa_l_1.0.h</a>
@@ -2446,18 +2675,19 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="umarim__lite__2_80_8h.html#a697b8e633c428bd167844542c8c1453f">umarim_lite_2.0.h</a>
 </li>
 <li>SPI_SELECT_SLAVE0_PINSEL
-: <a class="el" href="booz__1_80_8h.html#a4b145b7a3f8f184e22eb317cf231eb28">booz_1.0.h</a>
+: <a class="el" href="tiny__2_80_8h.html#a4b145b7a3f8f184e22eb317cf231eb28">tiny_2.0.h</a>
+, <a class="el" href="booz__1_80_8h.html#a4b145b7a3f8f184e22eb317cf231eb28">booz_1.0.h</a>
 , <a class="el" href="hbmini__1_80_8h.html#a4b145b7a3f8f184e22eb317cf231eb28">hbmini_1.0.h</a>
 , <a class="el" href="navgo__1_80_8h.html#a4b145b7a3f8f184e22eb317cf231eb28">navgo_1.0.h</a>
 , <a class="el" href="tiny__0_899_8h.html#a4b145b7a3f8f184e22eb317cf231eb28">tiny_0.99.h</a>
 , <a class="el" href="tiny__1_81_8h.html#a4b145b7a3f8f184e22eb317cf231eb28">tiny_1.1.h</a>
-, <a class="el" href="tiny__2_80_8h.html#a4b145b7a3f8f184e22eb317cf231eb28">tiny_2.0.h</a>
 , <a class="el" href="tiny__2_81_8h.html#a4b145b7a3f8f184e22eb317cf231eb28">tiny_2.1.h</a>
 , <a class="el" href="umarim__1_80_8h.html#a4b145b7a3f8f184e22eb317cf231eb28">umarim_1.0.h</a>
 , <a class="el" href="umarim__lite__2_80_8h.html#a4b145b7a3f8f184e22eb317cf231eb28">umarim_lite_2.0.h</a>
 </li>
 <li>SPI_SELECT_SLAVE0_PINSEL_BIT
-: <a class="el" href="booz__1_80_8h.html#af3f98c0f26c4e20e3d490398b3869466">booz_1.0.h</a>
+: <a class="el" href="umarim__lite__2_80_8h.html#af3f98c0f26c4e20e3d490398b3869466">umarim_lite_2.0.h</a>
+, <a class="el" href="booz__1_80_8h.html#af3f98c0f26c4e20e3d490398b3869466">booz_1.0.h</a>
 , <a class="el" href="hbmini__1_80_8h.html#af3f98c0f26c4e20e3d490398b3869466">hbmini_1.0.h</a>
 , <a class="el" href="navgo__1_80_8h.html#af3f98c0f26c4e20e3d490398b3869466">navgo_1.0.h</a>
 , <a class="el" href="tiny__0_899_8h.html#af3f98c0f26c4e20e3d490398b3869466">tiny_0.99.h</a>
@@ -2465,35 +2695,35 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="tiny__2_80_8h.html#af3f98c0f26c4e20e3d490398b3869466">tiny_2.0.h</a>
 , <a class="el" href="tiny__2_81_8h.html#af3f98c0f26c4e20e3d490398b3869466">tiny_2.1.h</a>
 , <a class="el" href="umarim__1_80_8h.html#af3f98c0f26c4e20e3d490398b3869466">umarim_1.0.h</a>
-, <a class="el" href="umarim__lite__2_80_8h.html#af3f98c0f26c4e20e3d490398b3869466">umarim_lite_2.0.h</a>
 </li>
 <li>SPI_SELECT_SLAVE0_PINSEL_VAL
-: <a class="el" href="booz__1_80_8h.html#ae9777b9865cf5793a17c08d5f9367d43">booz_1.0.h</a>
+: <a class="el" href="tiny__0_899_8h.html#ae9777b9865cf5793a17c08d5f9367d43">tiny_0.99.h</a>
+, <a class="el" href="umarim__1_80_8h.html#ae9777b9865cf5793a17c08d5f9367d43">umarim_1.0.h</a>
+, <a class="el" href="booz__1_80_8h.html#ae9777b9865cf5793a17c08d5f9367d43">booz_1.0.h</a>
 , <a class="el" href="hbmini__1_80_8h.html#ae9777b9865cf5793a17c08d5f9367d43">hbmini_1.0.h</a>
 , <a class="el" href="navgo__1_80_8h.html#ae9777b9865cf5793a17c08d5f9367d43">navgo_1.0.h</a>
-, <a class="el" href="tiny__0_899_8h.html#ae9777b9865cf5793a17c08d5f9367d43">tiny_0.99.h</a>
 , <a class="el" href="tiny__1_81_8h.html#ae9777b9865cf5793a17c08d5f9367d43">tiny_1.1.h</a>
 , <a class="el" href="tiny__2_80_8h.html#ae9777b9865cf5793a17c08d5f9367d43">tiny_2.0.h</a>
 , <a class="el" href="tiny__2_81_8h.html#ae9777b9865cf5793a17c08d5f9367d43">tiny_2.1.h</a>
-, <a class="el" href="umarim__1_80_8h.html#ae9777b9865cf5793a17c08d5f9367d43">umarim_1.0.h</a>
 , <a class="el" href="umarim__lite__2_80_8h.html#ae9777b9865cf5793a17c08d5f9367d43">umarim_lite_2.0.h</a>
 </li>
 <li>SPI_SELECT_SLAVE0_PORT
-: <a class="el" href="apogee__1_80_8h.html#a62cb06db3908015c7305ca6833f90159">apogee_1.0.h</a>
+: <a class="el" href="umarim__lite__2_80_8h.html#a62cb06db3908015c7305ca6833f90159">umarim_lite_2.0.h</a>
+, <a class="el" href="logom__2_86_8h.html#a62cb06db3908015c7305ca6833f90159">logom_2.6.h</a>
+, <a class="el" href="px4fmu__2_84_8h.html#a62cb06db3908015c7305ca6833f90159">px4fmu_2.4.h</a>
+, <a class="el" href="lisa__l__1_80_8h.html#a62cb06db3908015c7305ca6833f90159">lisa_l_1.0.h</a>
+, <a class="el" href="apogee__1_80_8h.html#a62cb06db3908015c7305ca6833f90159">apogee_1.0.h</a>
 , <a class="el" href="booz__1_80_8h.html#a62cb06db3908015c7305ca6833f90159">booz_1.0.h</a>
 , <a class="el" href="cc3d_8h.html#a62cb06db3908015c7305ca6833f90159">cc3d.h</a>
-, <a class="el" href="elle0__1_80_8h.html#a62cb06db3908015c7305ca6833f90159">elle0_1.0.h</a>
+, <a class="el" href="elle0__common_8h.html#a62cb06db3908015c7305ca6833f90159">elle0_common.h</a>
 , <a class="el" href="hbmini__1_80_8h.html#a62cb06db3908015c7305ca6833f90159">hbmini_1.0.h</a>
 , <a class="el" href="krooz__sd_8h.html#a62cb06db3908015c7305ca6833f90159">krooz_sd.h</a>
-, <a class="el" href="lisa__l__1_80_8h.html#a62cb06db3908015c7305ca6833f90159">lisa_l_1.0.h</a>
 , <a class="el" href="lisa__m__common_8h.html#a62cb06db3908015c7305ca6833f90159">lisa_m_common.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a62cb06db3908015c7305ca6833f90159">lisa_mx_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#a62cb06db3908015c7305ca6833f90159">lisa_s_1.0.h</a>
-, <a class="el" href="logom__2_86_8h.html#a62cb06db3908015c7305ca6833f90159">logom_2.6.h</a>
 , <a class="el" href="navgo__1_80_8h.html#a62cb06db3908015c7305ca6833f90159">navgo_1.0.h</a>
 , <a class="el" href="navstik__1_80_8h.html#a62cb06db3908015c7305ca6833f90159">navstik_1.0.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#a62cb06db3908015c7305ca6833f90159">px4fmu_1.7.h</a>
-, <a class="el" href="px4fmu__2_84_8h.html#a62cb06db3908015c7305ca6833f90159">px4fmu_2.4.h</a>
 , <a class="el" href="sdlog__1_80_8h.html#a62cb06db3908015c7305ca6833f90159">sdlog_1.0.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#a62cb06db3908015c7305ca6833f90159">stm32f4_discovery.h</a>
 , <a class="el" href="tiny__0_899_8h.html#a62cb06db3908015c7305ca6833f90159">tiny_0.99.h</a>
@@ -2501,7 +2731,6 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="tiny__2_80_8h.html#a62cb06db3908015c7305ca6833f90159">tiny_2.0.h</a>
 , <a class="el" href="tiny__2_81_8h.html#a62cb06db3908015c7305ca6833f90159">tiny_2.1.h</a>
 , <a class="el" href="umarim__1_80_8h.html#a62cb06db3908015c7305ca6833f90159">umarim_1.0.h</a>
-, <a class="el" href="umarim__lite__2_80_8h.html#a62cb06db3908015c7305ca6833f90159">umarim_lite_2.0.h</a>
 </li>
 <li>SPI_SELECT_SLAVE1_IOCLR
 : <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c.html#a6c64158fd68cf62e9f342193e6247dc0">spi_arch.c</a>
@@ -2513,18 +2742,19 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c.html#a17160a1a86d88dab88569b0a6cf6a0d0">spi_arch.c</a>
 </li>
 <li>SPI_SELECT_SLAVE1_PIN
-: <a class="el" href="booz__1_80_8h.html#a6391f9c6d48eca04803022ab073df01a">booz_1.0.h</a>
-, <a class="el" href="lisa__l__1_80_8h.html#a6391f9c6d48eca04803022ab073df01a">lisa_l_1.0.h</a>
+: <a class="el" href="krooz__sd_8h.html#a6391f9c6d48eca04803022ab073df01a">krooz_sd.h</a>
+, <a class="el" href="px4fmu__2_84_8h.html#a6391f9c6d48eca04803022ab073df01a">px4fmu_2.4.h</a>
 , <a class="el" href="apogee__1_80_8h.html#a6391f9c6d48eca04803022ab073df01a">apogee_1.0.h</a>
+, <a class="el" href="booz__1_80_8h.html#a6391f9c6d48eca04803022ab073df01a">booz_1.0.h</a>
 , <a class="el" href="cc3d_8h.html#a6391f9c6d48eca04803022ab073df01a">cc3d.h</a>
-, <a class="el" href="elle0__1_80_8h.html#a6391f9c6d48eca04803022ab073df01a">elle0_1.0.h</a>
-, <a class="el" href="krooz__sd_8h.html#a6391f9c6d48eca04803022ab073df01a">krooz_sd.h</a>
+, <a class="el" href="elle0__common_8h.html#a6391f9c6d48eca04803022ab073df01a">elle0_common.h</a>
+, <a class="el" href="lisa__l__1_80_8h.html#a6391f9c6d48eca04803022ab073df01a">lisa_l_1.0.h</a>
 , <a class="el" href="lisa__m__common_8h.html#a6391f9c6d48eca04803022ab073df01a">lisa_m_common.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a6391f9c6d48eca04803022ab073df01a">lisa_mx_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#a6391f9c6d48eca04803022ab073df01a">lisa_s_1.0.h</a>
 , <a class="el" href="navstik__1_80_8h.html#a6391f9c6d48eca04803022ab073df01a">navstik_1.0.h</a>
+, <a class="el" href="naze32__rev5_8h.html#a6391f9c6d48eca04803022ab073df01a">naze32_rev5.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#a6391f9c6d48eca04803022ab073df01a">px4fmu_1.7.h</a>
-, <a class="el" href="px4fmu__2_84_8h.html#a6391f9c6d48eca04803022ab073df01a">px4fmu_2.4.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#a6391f9c6d48eca04803022ab073df01a">stm32f4_discovery.h</a>
 </li>
 <li>SPI_SELECT_SLAVE1_PINSEL
@@ -2537,85 +2767,86 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="booz__1_80_8h.html#ae77d7298bda87e89e191f25e39e915fb">booz_1.0.h</a>
 </li>
 <li>SPI_SELECT_SLAVE1_PORT
-: <a class="el" href="booz__1_80_8h.html#abed465f8e9387dc4c034b1d71989043c">booz_1.0.h</a>
-, <a class="el" href="lisa__l__1_80_8h.html#abed465f8e9387dc4c034b1d71989043c">lisa_l_1.0.h</a>
+: <a class="el" href="elle0__common_8h.html#abed465f8e9387dc4c034b1d71989043c">elle0_common.h</a>
 , <a class="el" href="apogee__1_80_8h.html#abed465f8e9387dc4c034b1d71989043c">apogee_1.0.h</a>
+, <a class="el" href="booz__1_80_8h.html#abed465f8e9387dc4c034b1d71989043c">booz_1.0.h</a>
 , <a class="el" href="cc3d_8h.html#abed465f8e9387dc4c034b1d71989043c">cc3d.h</a>
-, <a class="el" href="elle0__1_80_8h.html#abed465f8e9387dc4c034b1d71989043c">elle0_1.0.h</a>
 , <a class="el" href="krooz__sd_8h.html#abed465f8e9387dc4c034b1d71989043c">krooz_sd.h</a>
+, <a class="el" href="lisa__l__1_80_8h.html#abed465f8e9387dc4c034b1d71989043c">lisa_l_1.0.h</a>
 , <a class="el" href="lisa__m__common_8h.html#abed465f8e9387dc4c034b1d71989043c">lisa_m_common.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#abed465f8e9387dc4c034b1d71989043c">lisa_mx_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#abed465f8e9387dc4c034b1d71989043c">lisa_s_1.0.h</a>
 , <a class="el" href="navstik__1_80_8h.html#abed465f8e9387dc4c034b1d71989043c">navstik_1.0.h</a>
+, <a class="el" href="naze32__rev5_8h.html#abed465f8e9387dc4c034b1d71989043c">naze32_rev5.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#abed465f8e9387dc4c034b1d71989043c">px4fmu_1.7.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#abed465f8e9387dc4c034b1d71989043c">px4fmu_2.4.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#abed465f8e9387dc4c034b1d71989043c">stm32f4_discovery.h</a>
 </li>
 <li>SPI_SELECT_SLAVE2_PIN
-: <a class="el" href="lisa__m__common_8h.html#ae006e4c20f82ac5d2104debcd8615f06">lisa_m_common.h</a>
-, <a class="el" href="px4fmu__2_84_8h.html#ae006e4c20f82ac5d2104debcd8615f06">px4fmu_2.4.h</a>
+: <a class="el" href="elle0__common_8h.html#ae006e4c20f82ac5d2104debcd8615f06">elle0_common.h</a>
+, <a class="el" href="lisa__mx__common_8h.html#ae006e4c20f82ac5d2104debcd8615f06">lisa_mx_common.h</a>
 , <a class="el" href="apogee__1_80_8h.html#ae006e4c20f82ac5d2104debcd8615f06">apogee_1.0.h</a>
-, <a class="el" href="elle0__1_80_8h.html#ae006e4c20f82ac5d2104debcd8615f06">elle0_1.0.h</a>
 , <a class="el" href="krooz__sd_8h.html#ae006e4c20f82ac5d2104debcd8615f06">krooz_sd.h</a>
 , <a class="el" href="lisa__l__1_80_8h.html#ae006e4c20f82ac5d2104debcd8615f06">lisa_l_1.0.h</a>
-, <a class="el" href="lisa__mx__common_8h.html#ae006e4c20f82ac5d2104debcd8615f06">lisa_mx_common.h</a>
+, <a class="el" href="lisa__m__common_8h.html#ae006e4c20f82ac5d2104debcd8615f06">lisa_m_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#ae006e4c20f82ac5d2104debcd8615f06">lisa_s_1.0.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#ae006e4c20f82ac5d2104debcd8615f06">px4fmu_1.7.h</a>
+, <a class="el" href="px4fmu__2_84_8h.html#ae006e4c20f82ac5d2104debcd8615f06">px4fmu_2.4.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#ae006e4c20f82ac5d2104debcd8615f06">stm32f4_discovery.h</a>
 </li>
 <li>SPI_SELECT_SLAVE2_PORT
-: <a class="el" href="lisa__s__1_80_8h.html#ad1fce2206d522b24623e9b742b1f2988">lisa_s_1.0.h</a>
-, <a class="el" href="apogee__1_80_8h.html#ad1fce2206d522b24623e9b742b1f2988">apogee_1.0.h</a>
-, <a class="el" href="elle0__1_80_8h.html#ad1fce2206d522b24623e9b742b1f2988">elle0_1.0.h</a>
-, <a class="el" href="krooz__sd_8h.html#ad1fce2206d522b24623e9b742b1f2988">krooz_sd.h</a>
+: <a class="el" href="px4fmu__1_87_8h.html#ad1fce2206d522b24623e9b742b1f2988">px4fmu_1.7.h</a>
 , <a class="el" href="lisa__l__1_80_8h.html#ad1fce2206d522b24623e9b742b1f2988">lisa_l_1.0.h</a>
+, <a class="el" href="apogee__1_80_8h.html#ad1fce2206d522b24623e9b742b1f2988">apogee_1.0.h</a>
+, <a class="el" href="elle0__common_8h.html#ad1fce2206d522b24623e9b742b1f2988">elle0_common.h</a>
+, <a class="el" href="krooz__sd_8h.html#ad1fce2206d522b24623e9b742b1f2988">krooz_sd.h</a>
 , <a class="el" href="lisa__m__common_8h.html#ad1fce2206d522b24623e9b742b1f2988">lisa_m_common.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#ad1fce2206d522b24623e9b742b1f2988">lisa_mx_common.h</a>
-, <a class="el" href="px4fmu__1_87_8h.html#ad1fce2206d522b24623e9b742b1f2988">px4fmu_1.7.h</a>
+, <a class="el" href="lisa__s__1_80_8h.html#ad1fce2206d522b24623e9b742b1f2988">lisa_s_1.0.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#ad1fce2206d522b24623e9b742b1f2988">px4fmu_2.4.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#ad1fce2206d522b24623e9b742b1f2988">stm32f4_discovery.h</a>
 </li>
 <li>SPI_SELECT_SLAVE3_PIN
-: <a class="el" href="apogee__1_80_8h.html#a43f488034394a3e0c0749b96fdbdd08f">apogee_1.0.h</a>
-, <a class="el" href="lisa__mx__common_8h.html#a43f488034394a3e0c0749b96fdbdd08f">lisa_mx_common.h</a>
-, <a class="el" href="elle0__1_80_8h.html#a43f488034394a3e0c0749b96fdbdd08f">elle0_1.0.h</a>
+: <a class="el" href="elle0__common_8h.html#a43f488034394a3e0c0749b96fdbdd08f">elle0_common.h</a>
+, <a class="el" href="apogee__1_80_8h.html#a43f488034394a3e0c0749b96fdbdd08f">apogee_1.0.h</a>
 , <a class="el" href="lisa__l__1_80_8h.html#a43f488034394a3e0c0749b96fdbdd08f">lisa_l_1.0.h</a>
 , <a class="el" href="lisa__m__common_8h.html#a43f488034394a3e0c0749b96fdbdd08f">lisa_m_common.h</a>
+, <a class="el" href="lisa__mx__common_8h.html#a43f488034394a3e0c0749b96fdbdd08f">lisa_mx_common.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#a43f488034394a3e0c0749b96fdbdd08f">px4fmu_1.7.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#a43f488034394a3e0c0749b96fdbdd08f">px4fmu_2.4.h</a>
 </li>
 <li>SPI_SELECT_SLAVE3_PORT
-: <a class="el" href="px4fmu__1_87_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">px4fmu_1.7.h</a>
-, <a class="el" href="apogee__1_80_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">apogee_1.0.h</a>
-, <a class="el" href="elle0__1_80_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">elle0_1.0.h</a>
+: <a class="el" href="px4fmu__2_84_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">px4fmu_2.4.h</a>
 , <a class="el" href="lisa__l__1_80_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">lisa_l_1.0.h</a>
+, <a class="el" href="apogee__1_80_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">apogee_1.0.h</a>
+, <a class="el" href="elle0__common_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">elle0_common.h</a>
 , <a class="el" href="lisa__m__common_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">lisa_m_common.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">lisa_mx_common.h</a>
-, <a class="el" href="px4fmu__2_84_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">px4fmu_2.4.h</a>
+, <a class="el" href="px4fmu__1_87_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">px4fmu_1.7.h</a>
 </li>
 <li>SPI_SELECT_SLAVE4_PIN
-: <a class="el" href="lisa__l__1_80_8h.html#aaaf3b422873946314dfec6703a3a5580">lisa_l_1.0.h</a>
+: <a class="el" href="lisa__m__common_8h.html#aaaf3b422873946314dfec6703a3a5580">lisa_m_common.h</a>
 , <a class="el" href="apogee__1_80_8h.html#aaaf3b422873946314dfec6703a3a5580">apogee_1.0.h</a>
-, <a class="el" href="elle0__1_80_8h.html#aaaf3b422873946314dfec6703a3a5580">elle0_1.0.h</a>
-, <a class="el" href="lisa__m__common_8h.html#aaaf3b422873946314dfec6703a3a5580">lisa_m_common.h</a>
+, <a class="el" href="elle0__common_8h.html#aaaf3b422873946314dfec6703a3a5580">elle0_common.h</a>
+, <a class="el" href="lisa__l__1_80_8h.html#aaaf3b422873946314dfec6703a3a5580">lisa_l_1.0.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#aaaf3b422873946314dfec6703a3a5580">lisa_mx_common.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#aaaf3b422873946314dfec6703a3a5580">px4fmu_2.4.h</a>
 </li>
 <li>SPI_SELECT_SLAVE4_PORT
-: <a class="el" href="apogee__1_80_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1">apogee_1.0.h</a>
-, <a class="el" href="elle0__1_80_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1">elle0_1.0.h</a>
+: <a class="el" href="px4fmu__2_84_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1">px4fmu_2.4.h</a>
+, <a class="el" href="apogee__1_80_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1">apogee_1.0.h</a>
+, <a class="el" href="elle0__common_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1">elle0_common.h</a>
 , <a class="el" href="lisa__l__1_80_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1">lisa_l_1.0.h</a>
 , <a class="el" href="lisa__m__common_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1">lisa_m_common.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1">lisa_mx_common.h</a>
-, <a class="el" href="px4fmu__2_84_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1">px4fmu_2.4.h</a>
 </li>
 <li>SPI_SELECT_SLAVE5_PIN
-: <a class="el" href="lisa__mx__common_8h.html#a045b009e33c6c53c43c8ff352a2fd507">lisa_mx_common.h</a>
-, <a class="el" href="elle0__1_80_8h.html#a045b009e33c6c53c43c8ff352a2fd507">elle0_1.0.h</a>
+: <a class="el" href="elle0__common_8h.html#a045b009e33c6c53c43c8ff352a2fd507">elle0_common.h</a>
 , <a class="el" href="lisa__m__common_8h.html#a045b009e33c6c53c43c8ff352a2fd507">lisa_m_common.h</a>
+, <a class="el" href="lisa__mx__common_8h.html#a045b009e33c6c53c43c8ff352a2fd507">lisa_mx_common.h</a>
 </li>
 <li>SPI_SELECT_SLAVE5_PORT
-: <a class="el" href="elle0__1_80_8h.html#a0bb8407cbad582149d6c82588b77f100">elle0_1.0.h</a>
+: <a class="el" href="elle0__common_8h.html#a0bb8407cbad582149d6c82588b77f100">elle0_common.h</a>
 , <a class="el" href="lisa__m__common_8h.html#a0bb8407cbad582149d6c82588b77f100">lisa_m_common.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a0bb8407cbad582149d6c82588b77f100">lisa_mx_common.h</a>
 </li>
@@ -2644,8 +2875,8 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="group__spi.html#ga71fb210f3a500d2eb1555ccd6d61c4d2">spi.h</a>
 </li>
 <li>spi_slave_hs
-: <a class="el" href="spi__slave__hs__arch_8c.html#a64590809afb3e219039ec626ec8a827c">spi_slave_hs_arch.c</a>
-, <a class="el" href="spi__slave__hs__arch_8h.html#a64590809afb3e219039ec626ec8a827c">spi_slave_hs_arch.h</a>
+: <a class="el" href="spi__slave__hs__arch_8h.html#a64590809afb3e219039ec626ec8a827c">spi_slave_hs_arch.h</a>
+, <a class="el" href="spi__slave__hs__arch_8c.html#a64590809afb3e219039ec626ec8a827c">spi_slave_hs_arch.c</a>
 </li>
 <li>spi_slave_hs_char_available()
 : <a class="el" href="spi__slave__hs__arch_8c.html#a3eb5625306bbd0528404bdbec1fe2cd2">spi_slave_hs_arch.c</a>
@@ -2702,12 +2933,10 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spi_slave_register()
 : <a class="el" href="group__spi.html#ga02a7edceaff0d9adc8e9b236b9915415">spi_arch.c</a>
 , <a class="el" href="group__spi.html#ga02a7edceaff0d9adc8e9b236b9915415">spi.h</a>
-, <a class="el" href="group__spi.html#ga02a7edceaff0d9adc8e9b236b9915415">spi_arch.c</a>
 </li>
 <li>spi_slave_select()
 : <a class="el" href="group__spi.html#gad43916477f5d87b42eaa7d2099771568">spi_arch.c</a>
 , <a class="el" href="group__spi.html#gad43916477f5d87b42eaa7d2099771568">spi.h</a>
-, <a class="el" href="group__spi.html#gad43916477f5d87b42eaa7d2099771568">spi_arch.c</a>
 </li>
 <li>spi_slave_set_config()
 : <a class="el" href="stm32_2mcu__periph_2spi__arch_8c.html#ab59a690d8b69d3b2f0b4bf022dc2decf">spi_arch.c</a>
@@ -2715,6 +2944,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>spi_slave_unselect()
 : <a class="el" href="group__spi.html#ga99507da72932c02e5d8daf9a7170ed69">spi_arch.c</a>
 , <a class="el" href="group__spi.html#ga99507da72932c02e5d8daf9a7170ed69">spi.h</a>
+, <a class="el" href="group__spi.html#ga99507da72932c02e5d8daf9a7170ed69">spi_arch.c</a>
 </li>
 <li>spi_slave_wait()
 : <a class="el" href="group__spi.html#ga8d7be322aab918538305c7da8af7233e">spi.h</a>
@@ -2905,7 +3135,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="group__spi.html#ga7a54d65ebae5c91cb0b5f28cd7111ae3">spi.h</a>
 </li>
 <li>SpiSlaveSelect()
-: <a class="el" href="stm32_2mcu__periph_2spi__arch_8c.html#ab639bd461acc9159f2a8566bfe1ebdd0">spi_arch.c</a>
+: <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c.html#ab639bd461acc9159f2a8566bfe1ebdd0">spi_arch.c</a>
 </li>
 <li>SpiSlaveStart()
 : <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c.html#a377ad6b429dbff1ca278ff6262a2914d">spi_arch.c</a>
@@ -2943,11 +3173,11 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>SPIUnselect
 : <a class="el" href="group__spi.html#gga7a54d65ebae5c91cb0b5f28cd7111ae3acfd3336d9cd80d7a1b9eb7582848def5">spi.h</a>
 </li>
-<li>SQUARE
-: <a class="el" href="group__math__algebra__generic.html#ga26f8bb75deabaaf4adafe0a093144971">pprz_algebra.h</a>
-</li>
 <li>Square
 : <a class="el" href="nav_8h.html#a5b322de63943d278a002687f820ac41c">nav.h</a>
+</li>
+<li>SQUARE
+: <a class="el" href="group__math__algebra__generic.html#ga26f8bb75deabaaf4adafe0a093144971">pprz_algebra.h</a>
 </li>
 <li>SquareSumErr_airspeed
 : <a class="el" href="flight__benchmark_8c.html#a7cba1520680a1e1397eec3f8605b3cee">flight_benchmark.c</a>
@@ -3027,8 +3257,8 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="alt__srf08_8h.html#a36297d9e254256754d5217ebc596c840">alt_srf08.h</a>
 </li>
 <li>srf08_got
-: <a class="el" href="alt__srf08_8h.html#ab426ebf96debca4147f2de04cf18ab76">alt_srf08.h</a>
-, <a class="el" href="alt__srf08_8c.html#ab426ebf96debca4147f2de04cf18ab76">alt_srf08.c</a>
+: <a class="el" href="alt__srf08_8c.html#ab426ebf96debca4147f2de04cf18ab76">alt_srf08.c</a>
+, <a class="el" href="alt__srf08_8h.html#ab426ebf96debca4147f2de04cf18ab76">alt_srf08.h</a>
 </li>
 <li>SRF08_I2C_BROADCAST_ADDRESS
 : <a class="el" href="alt__srf08_8h.html#aa3e1c86b451c23bbba7e4a6baec8170c">alt_srf08.h</a>
@@ -3040,8 +3270,8 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="alt__srf08_8h.html#a6a09245afccb2254150fb6966a5f16f0">alt_srf08.h</a>
 </li>
 <li>srf08_init()
-: <a class="el" href="alt__srf08_8c.html#af2ff055d48669ddfe0c182df5f876704">alt_srf08.c</a>
-, <a class="el" href="alt__srf08_8h.html#af2ff055d48669ddfe0c182df5f876704">alt_srf08.h</a>
+: <a class="el" href="alt__srf08_8h.html#af2ff055d48669ddfe0c182df5f876704">alt_srf08.h</a>
+, <a class="el" href="alt__srf08_8c.html#af2ff055d48669ddfe0c182df5f876704">alt_srf08.c</a>
 </li>
 <li>srf08_initiate_ranging()
 : <a class="el" href="alt__srf08_8c.html#a416da092feaad98fcf2bae00034c21a1">alt_srf08.c</a>
@@ -3070,16 +3300,16 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="alt__srf08_8h.html#a84cc118611bbe56b3d88561488f86819">alt_srf08.h</a>
 </li>
 <li>srf08_range
-: <a class="el" href="alt__srf08_8c.html#a9b4c04cf312158dd1fc012c9c04ee4e9">alt_srf08.c</a>
-, <a class="el" href="alt__srf08_8h.html#a9b4c04cf312158dd1fc012c9c04ee4e9">alt_srf08.h</a>
+: <a class="el" href="alt__srf08_8h.html#a9b4c04cf312158dd1fc012c9c04ee4e9">alt_srf08.h</a>
+, <a class="el" href="alt__srf08_8c.html#a9b4c04cf312158dd1fc012c9c04ee4e9">alt_srf08.c</a>
 </li>
 <li>srf08_read()
 : <a class="el" href="alt__srf08_8c.html#aff7bb98cb47578750ee4fe2d3a75d53f">alt_srf08.c</a>
 , <a class="el" href="alt__srf08_8h.html#aff7bb98cb47578750ee4fe2d3a75d53f">alt_srf08.h</a>
 </li>
 <li>srf08_read_register()
-: <a class="el" href="alt__srf08_8c.html#afc87ea38e9fa182b1b7d444611ba9210">alt_srf08.c</a>
-, <a class="el" href="alt__srf08_8h.html#afc87ea38e9fa182b1b7d444611ba9210">alt_srf08.h</a>
+: <a class="el" href="alt__srf08_8h.html#afc87ea38e9fa182b1b7d444611ba9210">alt_srf08.h</a>
+, <a class="el" href="alt__srf08_8c.html#afc87ea38e9fa182b1b7d444611ba9210">alt_srf08.c</a>
 </li>
 <li>srf08_receive()
 : <a class="el" href="alt__srf08_8c.html#a6f923c4979345945f33e6c927fcdf3b1">alt_srf08.c</a>
@@ -3153,16 +3383,16 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="alt__srf08_8c.html#aaa86fa4e14a90dbda8f426e3cc1caf97">alt_srf08.c</a>
 </li>
 <li>SS_IOCLR
-: <a class="el" href="mag__micromag__fw_8h.html#a83179147187ea68373af5b653809b109">mag_micromag_fw.h</a>
-, <a class="el" href="baro__scp_8c.html#a83179147187ea68373af5b653809b109">baro_scp.c</a>
+: <a class="el" href="baro__scp_8c.html#a83179147187ea68373af5b653809b109">baro_scp.c</a>
+, <a class="el" href="mag__micromag__fw_8h.html#a83179147187ea68373af5b653809b109">mag_micromag_fw.h</a>
 </li>
 <li>SS_IODIR
 : <a class="el" href="baro__scp_8c.html#a83780199bd871c42c41102dba1ca9fa5">baro_scp.c</a>
 , <a class="el" href="mag__micromag__fw_8h.html#a83780199bd871c42c41102dba1ca9fa5">mag_micromag_fw.h</a>
 </li>
 <li>SS_IOSET
-: <a class="el" href="mag__micromag__fw_8h.html#a73ced30854f76375618fa490b47d0bf9">mag_micromag_fw.h</a>
-, <a class="el" href="baro__scp_8c.html#a73ced30854f76375618fa490b47d0bf9">baro_scp.c</a>
+: <a class="el" href="baro__scp_8c.html#a73ced30854f76375618fa490b47d0bf9">baro_scp.c</a>
+, <a class="el" href="mag__micromag__fw_8h.html#a73ced30854f76375618fa490b47d0bf9">mag_micromag_fw.h</a>
 </li>
 <li>SS_PIN
 : <a class="el" href="baro__scp_8c.html#a86fac98c9b4c98a3e50fc45440878391">baro_scp.c</a>
@@ -3187,42 +3417,42 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>SSP_CLOCK
 : <a class="el" href="max11040__hw_8h.html#a37369eb0418b6c28d0cc1e27376640a2">max11040_hw.h</a>
-, <a class="el" href="mag__micromag__fw_8h.html#a37369eb0418b6c28d0cc1e27376640a2">mag_micromag_fw.h</a>
 , <a class="el" href="baro__scp_8c.html#a37369eb0418b6c28d0cc1e27376640a2">baro_scp.c</a>
+, <a class="el" href="mag__micromag__fw_8h.html#a37369eb0418b6c28d0cc1e27376640a2">mag_micromag_fw.h</a>
 </li>
 <li>SSP_CPHA
 : <a class="el" href="ADS8344_8c.html#a0b293b59617ad1f7284da53de8c948e1">ADS8344.c</a>
 , <a class="el" href="spi__slave__hs__arch_8c.html#a0b293b59617ad1f7284da53de8c948e1">spi_slave_hs_arch.c</a>
-, <a class="el" href="lcd__dogm__hw_8c.html#a0b293b59617ad1f7284da53de8c948e1">lcd_dogm_hw.c</a>
+, <a class="el" href="max11040__hw_8h.html#a0b293b59617ad1f7284da53de8c948e1">max11040_hw.h</a>
 , <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#a0b293b59617ad1f7284da53de8c948e1">imu_crista_arch.c</a>
 , <a class="el" href="baro__scp_8c.html#a0b293b59617ad1f7284da53de8c948e1">baro_scp.c</a>
 , <a class="el" href="mag__micromag__fw_8h.html#a0b293b59617ad1f7284da53de8c948e1">mag_micromag_fw.h</a>
-, <a class="el" href="max11040__hw_8h.html#a0b293b59617ad1f7284da53de8c948e1">max11040_hw.h</a>
+, <a class="el" href="lcd__dogm__hw_8c.html#a0b293b59617ad1f7284da53de8c948e1">lcd_dogm_hw.c</a>
 </li>
 <li>SSP_CPOL
 : <a class="el" href="ADS8344_8c.html#a2955ab679aed69df4a1053e6435118f4">ADS8344.c</a>
 , <a class="el" href="spi__slave__hs__arch_8c.html#a2955ab679aed69df4a1053e6435118f4">spi_slave_hs_arch.c</a>
 , <a class="el" href="max11040__hw_8h.html#a2955ab679aed69df4a1053e6435118f4">max11040_hw.h</a>
 , <a class="el" href="lcd__dogm__hw_8c.html#a2955ab679aed69df4a1053e6435118f4">lcd_dogm_hw.c</a>
-, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#a2955ab679aed69df4a1053e6435118f4">imu_crista_arch.c</a>
 , <a class="el" href="baro__scp_8c.html#a2955ab679aed69df4a1053e6435118f4">baro_scp.c</a>
 , <a class="el" href="mag__micromag__fw_8h.html#a2955ab679aed69df4a1053e6435118f4">mag_micromag_fw.h</a>
+, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#a2955ab679aed69df4a1053e6435118f4">imu_crista_arch.c</a>
 </li>
 <li>SSP_DDS
-: <a class="el" href="max11040__hw_8h.html#a6e117d3c5fa3fb0c56dd4ebf950381b2">max11040_hw.h</a>
+: <a class="el" href="spi__slave__hs__arch_8c.html#a6e117d3c5fa3fb0c56dd4ebf950381b2">spi_slave_hs_arch.c</a>
 , <a class="el" href="baro__scp_8c.html#a6e117d3c5fa3fb0c56dd4ebf950381b2">baro_scp.c</a>
 , <a class="el" href="mag__micromag__fw_8h.html#a6e117d3c5fa3fb0c56dd4ebf950381b2">mag_micromag_fw.h</a>
-, <a class="el" href="spi__slave__hs__arch_8c.html#a6e117d3c5fa3fb0c56dd4ebf950381b2">spi_slave_hs_arch.c</a>
+, <a class="el" href="max11040__hw_8h.html#a6e117d3c5fa3fb0c56dd4ebf950381b2">max11040_hw.h</a>
 </li>
 <li>SSP_Disable
 : <a class="el" href="ssp__hw_8h.html#a24124324be8bab22c1e6511e1d85e77f">ssp_hw.h</a>
-, <a class="el" href="mag__micromag__fw_8h.html#a24124324be8bab22c1e6511e1d85e77f">mag_micromag_fw.h</a>
 , <a class="el" href="max11040__hw_8h.html#a24124324be8bab22c1e6511e1d85e77f">max11040_hw.h</a>
+, <a class="el" href="mag__micromag__fw_8h.html#a24124324be8bab22c1e6511e1d85e77f">mag_micromag_fw.h</a>
 </li>
 <li>SSP_DisableRti
 : <a class="el" href="max11040__hw_8h.html#a2cf263bf3e3b3a803aad79647ad59026">max11040_hw.h</a>
-, <a class="el" href="mag__micromag__fw_8h.html#a2cf263bf3e3b3a803aad79647ad59026">mag_micromag_fw.h</a>
 , <a class="el" href="ssp__hw_8h.html#a2cf263bf3e3b3a803aad79647ad59026">ssp_hw.h</a>
+, <a class="el" href="mag__micromag__fw_8h.html#a2cf263bf3e3b3a803aad79647ad59026">mag_micromag_fw.h</a>
 </li>
 <li>SSP_DisableRxi
 : <a class="el" href="max11040__hw_8h.html#afd28b97fc5d47a7ae9da92c91da8c0b8">max11040_hw.h</a>
@@ -3230,19 +3460,19 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="mag__micromag__fw_8h.html#afd28b97fc5d47a7ae9da92c91da8c0b8">mag_micromag_fw.h</a>
 </li>
 <li>SSP_DisableTxi
-: <a class="el" href="max11040__hw_8h.html#af89500f2193953e5ee9e6df045129434">max11040_hw.h</a>
-, <a class="el" href="ssp__hw_8h.html#af89500f2193953e5ee9e6df045129434">ssp_hw.h</a>
+: <a class="el" href="ssp__hw_8h.html#af89500f2193953e5ee9e6df045129434">ssp_hw.h</a>
 , <a class="el" href="mag__micromag__fw_8h.html#af89500f2193953e5ee9e6df045129434">mag_micromag_fw.h</a>
+, <a class="el" href="max11040__hw_8h.html#af89500f2193953e5ee9e6df045129434">max11040_hw.h</a>
 </li>
 <li>SSP_DSS
-: <a class="el" href="lcd__dogm__hw_8c.html#a44c745fbeb1d568abe96cfaabab66fc6">lcd_dogm_hw.c</a>
+: <a class="el" href="ADS8344_8c.html#a44c745fbeb1d568abe96cfaabab66fc6">ADS8344.c</a>
 , <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#a44c745fbeb1d568abe96cfaabab66fc6">imu_crista_arch.c</a>
-, <a class="el" href="ADS8344_8c.html#a44c745fbeb1d568abe96cfaabab66fc6">ADS8344.c</a>
+, <a class="el" href="lcd__dogm__hw_8c.html#a44c745fbeb1d568abe96cfaabab66fc6">lcd_dogm_hw.c</a>
 </li>
 <li>SSP_Enable
 : <a class="el" href="max11040__hw_8h.html#afea70fcedcb86e03ae2fc616c5d81942">max11040_hw.h</a>
-, <a class="el" href="mag__micromag__fw_8h.html#afea70fcedcb86e03ae2fc616c5d81942">mag_micromag_fw.h</a>
 , <a class="el" href="ssp__hw_8h.html#afea70fcedcb86e03ae2fc616c5d81942">ssp_hw.h</a>
+, <a class="el" href="mag__micromag__fw_8h.html#afea70fcedcb86e03ae2fc616c5d81942">mag_micromag_fw.h</a>
 </li>
 <li>SSP_EnableRti
 : <a class="el" href="max11040__hw_8h.html#ab980ecc80fa242b19bd9e22954c77401">max11040_hw.h</a>
@@ -3256,96 +3486,96 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>SSP_EnableTxi
 : <a class="el" href="max11040__hw_8h.html#a01a6d487d94c0df1c08aed4fee822e46">max11040_hw.h</a>
-, <a class="el" href="ssp__hw_8h.html#a01a6d487d94c0df1c08aed4fee822e46">ssp_hw.h</a>
 , <a class="el" href="mag__micromag__fw_8h.html#a01a6d487d94c0df1c08aed4fee822e46">mag_micromag_fw.h</a>
+, <a class="el" href="ssp__hw_8h.html#a01a6d487d94c0df1c08aed4fee822e46">ssp_hw.h</a>
 </li>
 <li>SSP_FRF
-: <a class="el" href="ADS8344_8c.html#a40c0b0c517eba97c698fe78135defaa3">ADS8344.c</a>
-, <a class="el" href="max11040__hw_8h.html#a40c0b0c517eba97c698fe78135defaa3">max11040_hw.h</a>
-, <a class="el" href="lcd__dogm__hw_8c.html#a40c0b0c517eba97c698fe78135defaa3">lcd_dogm_hw.c</a>
-, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#a40c0b0c517eba97c698fe78135defaa3">imu_crista_arch.c</a>
+: <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#a40c0b0c517eba97c698fe78135defaa3">imu_crista_arch.c</a>
 , <a class="el" href="mag__micromag__fw_8h.html#a40c0b0c517eba97c698fe78135defaa3">mag_micromag_fw.h</a>
+, <a class="el" href="max11040__hw_8h.html#a40c0b0c517eba97c698fe78135defaa3">max11040_hw.h</a>
 , <a class="el" href="baro__scp_8c.html#a40c0b0c517eba97c698fe78135defaa3">baro_scp.c</a>
 , <a class="el" href="spi__slave__hs__arch_8c.html#a40c0b0c517eba97c698fe78135defaa3">spi_slave_hs_arch.c</a>
+, <a class="el" href="lcd__dogm__hw_8c.html#a40c0b0c517eba97c698fe78135defaa3">lcd_dogm_hw.c</a>
+, <a class="el" href="ADS8344_8c.html#a40c0b0c517eba97c698fe78135defaa3">ADS8344.c</a>
 </li>
 <li>SSP_ISR()
-: <a class="el" href="mag__micromag__fw__hw_8c.html#aa105625a4ec7ecf95c0802c3edfade05">mag_micromag_fw_hw.c</a>
+: <a class="el" href="max11040__hw_8c.html#aa105625a4ec7ecf95c0802c3edfade05">max11040_hw.c</a>
+, <a class="el" href="mag__micromag__fw__hw_8c.html#aa105625a4ec7ecf95c0802c3edfade05">mag_micromag_fw_hw.c</a>
 , <a class="el" href="spi__slave__hs__arch_8c.html#aa105625a4ec7ecf95c0802c3edfade05">spi_slave_hs_arch.c</a>
-, <a class="el" href="max11040__hw_8c.html#aa105625a4ec7ecf95c0802c3edfade05">max11040_hw.c</a>
 </li>
 <li>SSP_LBM
-: <a class="el" href="ADS8344_8c.html#ac55e5bd6becdc21641c3da4adaecb101">ADS8344.c</a>
+: <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#ac55e5bd6becdc21641c3da4adaecb101">imu_crista_arch.c</a>
+, <a class="el" href="ADS8344_8c.html#ac55e5bd6becdc21641c3da4adaecb101">ADS8344.c</a>
 , <a class="el" href="spi__slave__hs__arch_8c.html#ac55e5bd6becdc21641c3da4adaecb101">spi_slave_hs_arch.c</a>
+, <a class="el" href="baro__scp_8c.html#ac55e5bd6becdc21641c3da4adaecb101">baro_scp.c</a>
 , <a class="el" href="max11040__hw_8h.html#ac55e5bd6becdc21641c3da4adaecb101">max11040_hw.h</a>
 , <a class="el" href="lcd__dogm__hw_8c.html#ac55e5bd6becdc21641c3da4adaecb101">lcd_dogm_hw.c</a>
-, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#ac55e5bd6becdc21641c3da4adaecb101">imu_crista_arch.c</a>
-, <a class="el" href="baro__scp_8c.html#ac55e5bd6becdc21641c3da4adaecb101">baro_scp.c</a>
 , <a class="el" href="mag__micromag__fw_8h.html#ac55e5bd6becdc21641c3da4adaecb101">mag_micromag_fw.h</a>
 </li>
 <li>SSP_MS
-: <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#a513b10d80f7214b6556a2b0a2ab01a60">imu_crista_arch.c</a>
+: <a class="el" href="baro__scp_8c.html#a513b10d80f7214b6556a2b0a2ab01a60">baro_scp.c</a>
 , <a class="el" href="spi__slave__hs__arch_8c.html#a513b10d80f7214b6556a2b0a2ab01a60">spi_slave_hs_arch.c</a>
-, <a class="el" href="max11040__hw_8h.html#a513b10d80f7214b6556a2b0a2ab01a60">max11040_hw.h</a>
-, <a class="el" href="lcd__dogm__hw_8c.html#a513b10d80f7214b6556a2b0a2ab01a60">lcd_dogm_hw.c</a>
-, <a class="el" href="baro__scp_8c.html#a513b10d80f7214b6556a2b0a2ab01a60">baro_scp.c</a>
-, <a class="el" href="mag__micromag__fw_8h.html#a513b10d80f7214b6556a2b0a2ab01a60">mag_micromag_fw.h</a>
 , <a class="el" href="ADS8344_8c.html#a513b10d80f7214b6556a2b0a2ab01a60">ADS8344.c</a>
+, <a class="el" href="max11040__hw_8h.html#a513b10d80f7214b6556a2b0a2ab01a60">max11040_hw.h</a>
+, <a class="el" href="mag__micromag__fw_8h.html#a513b10d80f7214b6556a2b0a2ab01a60">mag_micromag_fw.h</a>
+, <a class="el" href="lcd__dogm__hw_8c.html#a513b10d80f7214b6556a2b0a2ab01a60">lcd_dogm_hw.c</a>
+, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#a513b10d80f7214b6556a2b0a2ab01a60">imu_crista_arch.c</a>
 </li>
 <li>SSP_PINSEL1_MISO
-: <a class="el" href="spi__slave__hs__arch_8c.html#a7380b29f54b19837cc7265f92e7cea68">spi_slave_hs_arch.c</a>
-, <a class="el" href="max11040__hw_8h.html#a7380b29f54b19837cc7265f92e7cea68">max11040_hw.h</a>
-, <a class="el" href="mag__micromag__fw_8h.html#a7380b29f54b19837cc7265f92e7cea68">mag_micromag_fw.h</a>
+: <a class="el" href="max11040__hw_8h.html#a7380b29f54b19837cc7265f92e7cea68">max11040_hw.h</a>
 , <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c.html#a7380b29f54b19837cc7265f92e7cea68">spi_arch.c</a>
+, <a class="el" href="spi__slave__hs__arch_8c.html#a7380b29f54b19837cc7265f92e7cea68">spi_slave_hs_arch.c</a>
+, <a class="el" href="mag__micromag__fw_8h.html#a7380b29f54b19837cc7265f92e7cea68">mag_micromag_fw.h</a>
 </li>
 <li>SSP_PINSEL1_MOSI
-: <a class="el" href="spi__slave__hs__arch_8c.html#a39ad8cd75ea287d18491e7e6f4a8eb98">spi_slave_hs_arch.c</a>
-, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c.html#a39ad8cd75ea287d18491e7e6f4a8eb98">spi_arch.c</a>
-, <a class="el" href="max11040__hw_8h.html#a39ad8cd75ea287d18491e7e6f4a8eb98">max11040_hw.h</a>
+: <a class="el" href="max11040__hw_8h.html#a39ad8cd75ea287d18491e7e6f4a8eb98">max11040_hw.h</a>
+, <a class="el" href="spi__slave__hs__arch_8c.html#a39ad8cd75ea287d18491e7e6f4a8eb98">spi_slave_hs_arch.c</a>
 , <a class="el" href="mag__micromag__fw_8h.html#a39ad8cd75ea287d18491e7e6f4a8eb98">mag_micromag_fw.h</a>
+, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c.html#a39ad8cd75ea287d18491e7e6f4a8eb98">spi_arch.c</a>
 </li>
 <li>SSP_PINSEL1_SCK
-: <a class="el" href="spi__slave__hs__arch_8c.html#afcf7f4865ce680550daeffbc6104929a">spi_slave_hs_arch.c</a>
-, <a class="el" href="max11040__hw_8h.html#afcf7f4865ce680550daeffbc6104929a">max11040_hw.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c.html#afcf7f4865ce680550daeffbc6104929a">spi_arch.c</a>
+: <a class="el" href="max11040__hw_8h.html#afcf7f4865ce680550daeffbc6104929a">max11040_hw.h</a>
+, <a class="el" href="spi__slave__hs__arch_8c.html#afcf7f4865ce680550daeffbc6104929a">spi_slave_hs_arch.c</a>
 , <a class="el" href="mag__micromag__fw_8h.html#afcf7f4865ce680550daeffbc6104929a">mag_micromag_fw.h</a>
+, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c.html#afcf7f4865ce680550daeffbc6104929a">spi_arch.c</a>
 </li>
 <li>SSP_PINSEL1_SSEL
-: <a class="el" href="spi__slave__hs__arch_8c.html#a9a5ce8a9a794e79f0f1882af3c28a1d2">spi_slave_hs_arch.c</a>
-, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c.html#a9a5ce8a9a794e79f0f1882af3c28a1d2">spi_arch.c</a>
+: <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c.html#a9a5ce8a9a794e79f0f1882af3c28a1d2">spi_arch.c</a>
+, <a class="el" href="spi__slave__hs__arch_8c.html#a9a5ce8a9a794e79f0f1882af3c28a1d2">spi_slave_hs_arch.c</a>
 , <a class="el" href="max11040__hw_8h.html#a9a5ce8a9a794e79f0f1882af3c28a1d2">max11040_hw.h</a>
 </li>
 <li>SSP_Read
 : <a class="el" href="spi__slave__hs__arch_8c.html#a503be01dc5521884e75f2b1c66c123d3">spi_slave_hs_arch.c</a>
 </li>
 <li>SSP_SCR
-: <a class="el" href="baro__scp_8c.html#a1b5cffadb3d478245059c81d80ba625b">baro_scp.c</a>
-, <a class="el" href="spi__slave__hs__arch_8c.html#a1b5cffadb3d478245059c81d80ba625b">spi_slave_hs_arch.c</a>
+: <a class="el" href="mag__micromag__fw_8h.html#a1b5cffadb3d478245059c81d80ba625b">mag_micromag_fw.h</a>
 , <a class="el" href="max11040__hw_8h.html#a1b5cffadb3d478245059c81d80ba625b">max11040_hw.h</a>
+, <a class="el" href="spi__slave__hs__arch_8c.html#a1b5cffadb3d478245059c81d80ba625b">spi_slave_hs_arch.c</a>
+, <a class="el" href="ADS8344_8c.html#a1b5cffadb3d478245059c81d80ba625b">ADS8344.c</a>
 , <a class="el" href="lcd__dogm__hw_8c.html#a1b5cffadb3d478245059c81d80ba625b">lcd_dogm_hw.c</a>
 , <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#a1b5cffadb3d478245059c81d80ba625b">imu_crista_arch.c</a>
-, <a class="el" href="mag__micromag__fw_8h.html#a1b5cffadb3d478245059c81d80ba625b">mag_micromag_fw.h</a>
-, <a class="el" href="ADS8344_8c.html#a1b5cffadb3d478245059c81d80ba625b">ADS8344.c</a>
+, <a class="el" href="baro__scp_8c.html#a1b5cffadb3d478245059c81d80ba625b">baro_scp.c</a>
 </li>
 <li>SSP_Send
 : <a class="el" href="ssp__hw_8h.html#ad0223fcd891044f2c66a0df2d803b818">ssp_hw.h</a>
 </li>
 <li>SSP_SOD
-: <a class="el" href="baro__scp_8c.html#a8484136e7496673fca205e0ef7730109">baro_scp.c</a>
-, <a class="el" href="spi__slave__hs__arch_8c.html#a8484136e7496673fca205e0ef7730109">spi_slave_hs_arch.c</a>
-, <a class="el" href="ADS8344_8c.html#a8484136e7496673fca205e0ef7730109">ADS8344.c</a>
-, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#a8484136e7496673fca205e0ef7730109">imu_crista_arch.c</a>
+: <a class="el" href="mag__micromag__fw_8h.html#a8484136e7496673fca205e0ef7730109">mag_micromag_fw.h</a>
 , <a class="el" href="max11040__hw_8h.html#a8484136e7496673fca205e0ef7730109">max11040_hw.h</a>
+, <a class="el" href="spi__slave__hs__arch_8c.html#a8484136e7496673fca205e0ef7730109">spi_slave_hs_arch.c</a>
 , <a class="el" href="lcd__dogm__hw_8c.html#a8484136e7496673fca205e0ef7730109">lcd_dogm_hw.c</a>
-, <a class="el" href="mag__micromag__fw_8h.html#a8484136e7496673fca205e0ef7730109">mag_micromag_fw.h</a>
+, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#a8484136e7496673fca205e0ef7730109">imu_crista_arch.c</a>
+, <a class="el" href="ADS8344_8c.html#a8484136e7496673fca205e0ef7730109">ADS8344.c</a>
+, <a class="el" href="baro__scp_8c.html#a8484136e7496673fca205e0ef7730109">baro_scp.c</a>
 </li>
 <li>SSP_SSE
-: <a class="el" href="mag__micromag__fw_8h.html#a1fd263e8ea485cec0213da67c1ac128e">mag_micromag_fw.h</a>
-, <a class="el" href="max11040__hw_8h.html#a1fd263e8ea485cec0213da67c1ac128e">max11040_hw.h</a>
-, <a class="el" href="spi__slave__hs__arch_8c.html#a1fd263e8ea485cec0213da67c1ac128e">spi_slave_hs_arch.c</a>
-, <a class="el" href="lcd__dogm__hw_8c.html#a1fd263e8ea485cec0213da67c1ac128e">lcd_dogm_hw.c</a>
-, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#a1fd263e8ea485cec0213da67c1ac128e">imu_crista_arch.c</a>
+: <a class="el" href="lcd__dogm__hw_8c.html#a1fd263e8ea485cec0213da67c1ac128e">lcd_dogm_hw.c</a>
+, <a class="el" href="mag__micromag__fw_8h.html#a1fd263e8ea485cec0213da67c1ac128e">mag_micromag_fw.h</a>
 , <a class="el" href="baro__scp_8c.html#a1fd263e8ea485cec0213da67c1ac128e">baro_scp.c</a>
 , <a class="el" href="ADS8344_8c.html#a1fd263e8ea485cec0213da67c1ac128e">ADS8344.c</a>
+, <a class="el" href="spi__slave__hs__arch_8c.html#a1fd263e8ea485cec0213da67c1ac128e">spi_slave_hs_arch.c</a>
+, <a class="el" href="max11040__hw_8h.html#a1fd263e8ea485cec0213da67c1ac128e">max11040_hw.h</a>
+, <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#a1fd263e8ea485cec0213da67c1ac128e">imu_crista_arch.c</a>
 </li>
 <li>SSP_Status
 : <a class="el" href="spi__slave__hs__arch_8c.html#a58611a18c268419634d0542c77b98117">spi_slave_hs_arch.c</a>
@@ -3357,23 +3587,23 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="LPC21xx_8h.html#a62d59ff03aa17de24e1248a25c3b2c05">LPC21xx.h</a>
 </li>
 <li>SSPCPSR_VAL
-: <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c.html#af0a07b3e285c4f239f705eccc3936459">spi_arch.c</a>
-, <a class="el" href="lcd__dogm__hw_8c.html#af0a07b3e285c4f239f705eccc3936459">lcd_dogm_hw.c</a>
+: <a class="el" href="lcd__dogm__hw_8c.html#af0a07b3e285c4f239f705eccc3936459">lcd_dogm_hw.c</a>
+, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c.html#af0a07b3e285c4f239f705eccc3936459">spi_arch.c</a>
 </li>
 <li>SSPCR0
 : <a class="el" href="LPC21xx_8h.html#acecf2aa7ffdc423937224228dab60ca4">LPC21xx.h</a>
 </li>
 <li>SSPCR0_VAL
-: <a class="el" href="max11040__hw_8h.html#a43d8625d29e0613b41fdbaa1e2f55c08">max11040_hw.h</a>
+: <a class="el" href="mag__micromag__fw_8h.html#a43d8625d29e0613b41fdbaa1e2f55c08">mag_micromag_fw.h</a>
 , <a class="el" href="spi__slave__hs__arch_8c.html#a43d8625d29e0613b41fdbaa1e2f55c08">spi_slave_hs_arch.c</a>
-, <a class="el" href="mag__micromag__fw_8h.html#a43d8625d29e0613b41fdbaa1e2f55c08">mag_micromag_fw.h</a>
+, <a class="el" href="max11040__hw_8h.html#a43d8625d29e0613b41fdbaa1e2f55c08">max11040_hw.h</a>
 </li>
 <li>SSPCR1
 : <a class="el" href="LPC21xx_8h.html#a9cc6afb932232eaeb7ec147020873a5e">LPC21xx.h</a>
 </li>
 <li>SSPCR1_VAL
-: <a class="el" href="max11040__hw_8h.html#a2bc5caa2d6084d3a291f4451997d2c58">max11040_hw.h</a>
-, <a class="el" href="mag__micromag__fw_8h.html#a2bc5caa2d6084d3a291f4451997d2c58">mag_micromag_fw.h</a>
+: <a class="el" href="mag__micromag__fw_8h.html#a2bc5caa2d6084d3a291f4451997d2c58">mag_micromag_fw.h</a>
+, <a class="el" href="max11040__hw_8h.html#a2bc5caa2d6084d3a291f4451997d2c58">max11040_hw.h</a>
 , <a class="el" href="spi__slave__hs__arch_8c.html#a2bc5caa2d6084d3a291f4451997d2c58">spi_slave_hs_arch.c</a>
 </li>
 <li>SSPDR
@@ -3402,8 +3632,8 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="sst25vfxxxx_8h.html#ada90d0c24ed36127a4cb442867dec6a7">sst25vfxxxx.h</a>
 </li>
 <li>sst25vfxxxx_block_write_en()
-: <a class="el" href="sst25vfxxxx_8h.html#a3c73b27a33b8a4b1de75dc1c8ddb9785">sst25vfxxxx.h</a>
-, <a class="el" href="sst25vfxxxx_8c.html#a3c73b27a33b8a4b1de75dc1c8ddb9785">sst25vfxxxx.c</a>
+: <a class="el" href="sst25vfxxxx_8c.html#a3c73b27a33b8a4b1de75dc1c8ddb9785">sst25vfxxxx.c</a>
+, <a class="el" href="sst25vfxxxx_8h.html#a3c73b27a33b8a4b1de75dc1c8ddb9785">sst25vfxxxx.h</a>
 </li>
 <li>SST25VFXXXX_BYTE_PROG
 : <a class="el" href="sst25vfxxxx_8h.html#aed7bb9efb1717be130a2c7154aa6abb1">sst25vfxxxx.h</a>
@@ -3443,8 +3673,8 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="sst25vfxxxx_8h.html#a0b6dcac383421abf541fea1847fbc3daab813e6829dbabc1b46d10b2a19179a81">sst25vfxxxx.h</a>
 </li>
 <li>sst25vfxxxx_init()
-: <a class="el" href="sst25vfxxxx_8h.html#a757f1ab0707fae777626840e8067a1a1">sst25vfxxxx.h</a>
-, <a class="el" href="sst25vfxxxx_8c.html#a757f1ab0707fae777626840e8067a1a1">sst25vfxxxx.c</a>
+: <a class="el" href="sst25vfxxxx_8c.html#a757f1ab0707fae777626840e8067a1a1">sst25vfxxxx.c</a>
+, <a class="el" href="sst25vfxxxx_8h.html#a757f1ab0707fae777626840e8067a1a1">sst25vfxxxx.h</a>
 </li>
 <li>SST25VFXXXX_JEDEC_ID
 : <a class="el" href="sst25vfxxxx_8h.html#aa0d6cff7067fa7aad9825a9fc1627576">sst25vfxxxx.h</a>
@@ -3455,24 +3685,24 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>SST25VFXXXX_RDSR
 : <a class="el" href="sst25vfxxxx_8h.html#af54372ab0d9c08cd70ee509994246b76">sst25vfxxxx.h</a>
 </li>
-<li>sst25vfxxxx_read()
-: <a class="el" href="sst25vfxxxx_8h.html#a5176254063edecec07a175efcbf07623">sst25vfxxxx.h</a>
-</li>
 <li>SST25VFXXXX_READ
 : <a class="el" href="sst25vfxxxx_8h.html#a689e276a39cc314fd9b964d3117860a4">sst25vfxxxx.h</a>
 </li>
 <li>sst25vfxxxx_read()
-: <a class="el" href="sst25vfxxxx_8c.html#a5176254063edecec07a175efcbf07623">sst25vfxxxx.c</a>
+: <a class="el" href="sst25vfxxxx_8h.html#a5176254063edecec07a175efcbf07623">sst25vfxxxx.h</a>
+, <a class="el" href="sst25vfxxxx_8c.html#a5176254063edecec07a175efcbf07623">sst25vfxxxx.c</a>
 </li>
 <li>SST25VFXXXX_READ_BYTES
 : <a class="el" href="sst25vfxxxx_8h.html#a0b6dcac383421abf541fea1847fbc3daa1a81b0c4815926128412e54c237e9e67">sst25vfxxxx.h</a>
 </li>
 <li>sst25vfxxxx_read_id()
 : <a class="el" href="sst25vfxxxx_8h.html#a4f1d5cb01ec45490d365f9bfcfc7bed3">sst25vfxxxx.h</a>
-, <a class="el" href="sst25vfxxxx_8c.html#a4f1d5cb01ec45490d365f9bfcfc7bed3">sst25vfxxxx.c</a>
 </li>
 <li>SST25VFXXXX_READ_ID
 : <a class="el" href="sst25vfxxxx_8h.html#a0b6dcac383421abf541fea1847fbc3daa13771965f1d5e1ea348eab2d129ffd17">sst25vfxxxx.h</a>
+</li>
+<li>sst25vfxxxx_read_id()
+: <a class="el" href="sst25vfxxxx_8c.html#a4f1d5cb01ec45490d365f9bfcfc7bed3">sst25vfxxxx.c</a>
 </li>
 <li>SST25VFXXXX_UNINIT
 : <a class="el" href="sst25vfxxxx_8h.html#a0b6dcac383421abf541fea1847fbc3daa9946b5721c5bed52c34a81e29c3607b3">sst25vfxxxx.h</a>
@@ -3503,37 +3733,37 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="LPC21xx_8h.html#a83e3fea5be2b0854b6351e79d4315b2a">LPC21xx.h</a>
 </li>
 <li>STA_IDLE
-: <a class="el" href="baro__scp_8c.html#a8d13dab4d456903df339a357cb4754c9">baro_scp.c</a>
-, <a class="el" href="baro__scp_8h.html#a8d13dab4d456903df339a357cb4754c9">baro_scp.h</a>
+: <a class="el" href="baro__scp_8h.html#a8d13dab4d456903df339a357cb4754c9">baro_scp.h</a>
+, <a class="el" href="baro__scp_8c.html#a8d13dab4d456903df339a357cb4754c9">baro_scp.c</a>
 </li>
 <li>STA_INITIALISING
-: <a class="el" href="baro__scp_8c.html#a915ba38cac65ca5e2f56d271be962766">baro_scp.c</a>
-, <a class="el" href="baro__scp_8h.html#a915ba38cac65ca5e2f56d271be962766">baro_scp.h</a>
+: <a class="el" href="baro__scp_8h.html#a915ba38cac65ca5e2f56d271be962766">baro_scp.h</a>
+, <a class="el" href="baro__scp_8c.html#a915ba38cac65ca5e2f56d271be962766">baro_scp.c</a>
 </li>
 <li>STA_UNINIT
-: <a class="el" href="baro__scp_8c.html#a9aeeac4b6b91056b261f35840481cede">baro_scp.c</a>
-, <a class="el" href="baro__scp_8h.html#a9aeeac4b6b91056b261f35840481cede">baro_scp.h</a>
+: <a class="el" href="baro__scp_8h.html#a9aeeac4b6b91056b261f35840481cede">baro_scp.h</a>
+, <a class="el" href="baro__scp_8c.html#a9aeeac4b6b91056b261f35840481cede">baro_scp.c</a>
 </li>
 <li>stab_att_sp_euler
-: <a class="el" href="stabilization__attitude__quat__indi_8h.html#a5b355848d1ce79a73b3fe67c8e86cd42">stabilization_attitude_quat_indi.h</a>
-, <a class="el" href="stabilization__attitude__quat__int_8c.html#a5b355848d1ce79a73b3fe67c8e86cd42">stabilization_attitude_quat_int.c</a>
-, <a class="el" href="stabilization__attitude__quat__float_8c.html#a015228f30f34102b8d41c6c08c752cc0">stabilization_attitude_quat_float.c</a>
-, <a class="el" href="stabilization__attitude__euler__int_8c.html#a5b355848d1ce79a73b3fe67c8e86cd42">stabilization_attitude_euler_int.c</a>
-, <a class="el" href="stabilization__attitude__euler__int_8h.html#a5b355848d1ce79a73b3fe67c8e86cd42">stabilization_attitude_euler_int.h</a>
+: <a class="el" href="stabilization__attitude__euler__float_8h.html#a015228f30f34102b8d41c6c08c752cc0">stabilization_attitude_euler_float.h</a>
 , <a class="el" href="stabilization__attitude__passthrough_8h.html#a5b355848d1ce79a73b3fe67c8e86cd42">stabilization_attitude_passthrough.h</a>
-, <a class="el" href="stabilization__attitude__quat__float_8h.html#a015228f30f34102b8d41c6c08c752cc0">stabilization_attitude_quat_float.h</a>
+, <a class="el" href="stabilization__attitude__quat__float_8c.html#a015228f30f34102b8d41c6c08c752cc0">stabilization_attitude_quat_float.c</a>
 , <a class="el" href="stabilization__attitude__quat__int_8h.html#a5b355848d1ce79a73b3fe67c8e86cd42">stabilization_attitude_quat_int.h</a>
+, <a class="el" href="stabilization__attitude__quat__float_8h.html#a015228f30f34102b8d41c6c08c752cc0">stabilization_attitude_quat_float.h</a>
+, <a class="el" href="stabilization__attitude__euler__int_8h.html#a5b355848d1ce79a73b3fe67c8e86cd42">stabilization_attitude_euler_int.h</a>
 , <a class="el" href="stabilization__attitude__euler__float_8c.html#a015228f30f34102b8d41c6c08c752cc0">stabilization_attitude_euler_float.c</a>
-, <a class="el" href="stabilization__attitude__euler__float_8h.html#a015228f30f34102b8d41c6c08c752cc0">stabilization_attitude_euler_float.h</a>
+, <a class="el" href="stabilization__attitude__euler__int_8c.html#a5b355848d1ce79a73b3fe67c8e86cd42">stabilization_attitude_euler_int.c</a>
 , <a class="el" href="stabilization__attitude__passthrough_8c.html#a5b355848d1ce79a73b3fe67c8e86cd42">stabilization_attitude_passthrough.c</a>
 , <a class="el" href="stabilization__attitude__quat__indi_8c.html#a5b355848d1ce79a73b3fe67c8e86cd42">stabilization_attitude_quat_indi.c</a>
+, <a class="el" href="stabilization__attitude__quat__indi_8h.html#a5b355848d1ce79a73b3fe67c8e86cd42">stabilization_attitude_quat_indi.h</a>
+, <a class="el" href="stabilization__attitude__quat__int_8c.html#a5b355848d1ce79a73b3fe67c8e86cd42">stabilization_attitude_quat_int.c</a>
 </li>
 <li>stab_att_sp_quat
-: <a class="el" href="stabilization__attitude__quat__indi_8c.html#acec5709f25760d7094e4f0c9bb5be2ec">stabilization_attitude_quat_indi.c</a>
+: <a class="el" href="stabilization__attitude__quat__float_8h.html#a8a7faa82a4a14113987c600d7e38d836">stabilization_attitude_quat_float.h</a>
+, <a class="el" href="stabilization__attitude__quat__indi_8c.html#acec5709f25760d7094e4f0c9bb5be2ec">stabilization_attitude_quat_indi.c</a>
 , <a class="el" href="stabilization__attitude__quat__int_8h.html#acec5709f25760d7094e4f0c9bb5be2ec">stabilization_attitude_quat_int.h</a>
-, <a class="el" href="stabilization__attitude__quat__float_8c.html#a8a7faa82a4a14113987c600d7e38d836">stabilization_attitude_quat_float.c</a>
-, <a class="el" href="stabilization__attitude__quat__float_8h.html#a8a7faa82a4a14113987c600d7e38d836">stabilization_attitude_quat_float.h</a>
 , <a class="el" href="stabilization__attitude__quat__indi_8h.html#acec5709f25760d7094e4f0c9bb5be2ec">stabilization_attitude_quat_indi.h</a>
+, <a class="el" href="stabilization__attitude__quat__float_8c.html#a8a7faa82a4a14113987c600d7e38d836">stabilization_attitude_quat_float.c</a>
 , <a class="el" href="stabilization__attitude__quat__int_8c.html#acec5709f25760d7094e4f0c9bb5be2ec">stabilization_attitude_quat_int.c</a>
 </li>
 <li>stabilization_adaptive_SetPitchIGain
@@ -3543,29 +3773,29 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="stabilization__adaptive_8h.html#aea35ca63313fd37caea6d6854ff83113">stabilization_adaptive.h</a>
 </li>
 <li>stabilization_att_fb_cmd
-: <a class="el" href="stabilization__attitude__euler__float_8c.html#acbe3ffdf9c35e128e46f03091342e2cb">stabilization_attitude_euler_float.c</a>
-, <a class="el" href="stabilization__attitude__common__int_8h.html#a8adda5f8d9ba43761ce43e05703fed22">stabilization_attitude_common_int.h</a>
+: <a class="el" href="stabilization__attitude__common__int_8h.html#a8adda5f8d9ba43761ce43e05703fed22">stabilization_attitude_common_int.h</a>
+, <a class="el" href="stabilization__attitude__euler__float_8c.html#acbe3ffdf9c35e128e46f03091342e2cb">stabilization_attitude_euler_float.c</a>
 , <a class="el" href="stabilization__attitude__euler__int_8c.html#a8adda5f8d9ba43761ce43e05703fed22">stabilization_attitude_euler_int.c</a>
 , <a class="el" href="stabilization__attitude__common__float_8h.html#acbe3ffdf9c35e128e46f03091342e2cb">stabilization_attitude_common_float.h</a>
 , <a class="el" href="stabilization__attitude__quat__float_8c.html#acbe3ffdf9c35e128e46f03091342e2cb">stabilization_attitude_quat_float.c</a>
 , <a class="el" href="stabilization__attitude__quat__int_8c.html#a8adda5f8d9ba43761ce43e05703fed22">stabilization_attitude_quat_int.c</a>
 </li>
 <li>stabilization_att_ff_cmd
-: <a class="el" href="stabilization__attitude__quat__float_8c.html#a5b95468db62686e296194a497bacc25b">stabilization_attitude_quat_float.c</a>
-, <a class="el" href="stabilization__attitude__common__float_8h.html#a5b95468db62686e296194a497bacc25b">stabilization_attitude_common_float.h</a>
-, <a class="el" href="stabilization__attitude__common__int_8h.html#a398bf301d18e16d629f977e75256f157">stabilization_attitude_common_int.h</a>
-, <a class="el" href="stabilization__attitude__euler__float_8c.html#a5b95468db62686e296194a497bacc25b">stabilization_attitude_euler_float.c</a>
-, <a class="el" href="stabilization__attitude__euler__int_8c.html#a398bf301d18e16d629f977e75256f157">stabilization_attitude_euler_int.c</a>
+: <a class="el" href="stabilization__attitude__euler__int_8c.html#a398bf301d18e16d629f977e75256f157">stabilization_attitude_euler_int.c</a>
 , <a class="el" href="stabilization__attitude__quat__int_8c.html#a398bf301d18e16d629f977e75256f157">stabilization_attitude_quat_int.c</a>
+, <a class="el" href="stabilization__attitude__common__int_8h.html#a398bf301d18e16d629f977e75256f157">stabilization_attitude_common_int.h</a>
+, <a class="el" href="stabilization__attitude__quat__float_8c.html#a5b95468db62686e296194a497bacc25b">stabilization_attitude_quat_float.c</a>
+, <a class="el" href="stabilization__attitude__common__float_8h.html#a5b95468db62686e296194a497bacc25b">stabilization_attitude_common_float.h</a>
+, <a class="el" href="stabilization__attitude__euler__float_8c.html#a5b95468db62686e296194a497bacc25b">stabilization_attitude_euler_float.c</a>
 </li>
 <li>stabilization_att_indi_cmd
 : <a class="el" href="stabilization__attitude__quat__indi_8c.html#a1ab1b3a18a465440c67159c392970573">stabilization_attitude_quat_indi.c</a>
 </li>
 <li>stabilization_att_sum_err
 : <a class="el" href="stabilization__attitude__euler__float_8c.html#ad3a90f9a260aaff45b749c9939422783">stabilization_attitude_euler_float.c</a>
-, <a class="el" href="stabilization__attitude__euler__int_8h.html#a6ea29b51b2747d1e0eb86121f3c176b7">stabilization_attitude_euler_int.h</a>
-, <a class="el" href="stabilization__attitude__euler__float_8h.html#ad3a90f9a260aaff45b749c9939422783">stabilization_attitude_euler_float.h</a>
 , <a class="el" href="stabilization__attitude__euler__int_8c.html#a6ea29b51b2747d1e0eb86121f3c176b7">stabilization_attitude_euler_int.c</a>
+, <a class="el" href="stabilization__attitude__euler__float_8h.html#ad3a90f9a260aaff45b749c9939422783">stabilization_attitude_euler_float.h</a>
+, <a class="el" href="stabilization__attitude__euler__int_8h.html#a6ea29b51b2747d1e0eb86121f3c176b7">stabilization_attitude_euler_int.h</a>
 </li>
 <li>stabilization_att_sum_err_quat
 : <a class="el" href="stabilization__attitude__quat__int_8c.html#ae9d5ca7fafbaf2bb14f4a640fd1114ab">stabilization_attitude_quat_int.c</a>
@@ -3578,41 +3808,41 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="stabilization__attitude__rc__setpoint_8c.html#aad8fe9406197b3ce9ac53d117bba1ae0">stabilization_attitude_rc_setpoint.c</a>
 </li>
 <li>stabilization_attitude_enter()
-: <a class="el" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#a23f862ca823e6fd23fc9c111178be077">stabilization_attitude.h</a>
+: <a class="el" href="stabilization__attitude__quat__float_8c.html#a23f862ca823e6fd23fc9c111178be077">stabilization_attitude_quat_float.c</a>
 , <a class="el" href="stabilization__attitude__quat__indi_8c.html#a23f862ca823e6fd23fc9c111178be077">stabilization_attitude_quat_indi.c</a>
-, <a class="el" href="stabilization__attitude__euler__float_8c.html#a23f862ca823e6fd23fc9c111178be077">stabilization_attitude_euler_float.c</a>
-, <a class="el" href="stabilization__attitude__euler__int_8c.html#a23f862ca823e6fd23fc9c111178be077">stabilization_attitude_euler_int.c</a>
-, <a class="el" href="stabilization__attitude__passthrough_8c.html#a23f862ca823e6fd23fc9c111178be077">stabilization_attitude_passthrough.c</a>
-, <a class="el" href="stabilization__attitude__quat__float_8c.html#a23f862ca823e6fd23fc9c111178be077">stabilization_attitude_quat_float.c</a>
 , <a class="el" href="stabilization__attitude__quat__int_8c.html#a23f862ca823e6fd23fc9c111178be077">stabilization_attitude_quat_int.c</a>
+, <a class="el" href="stabilization__attitude__euler__int_8c.html#a23f862ca823e6fd23fc9c111178be077">stabilization_attitude_euler_int.c</a>
+, <a class="el" href="stabilization__attitude__euler__float_8c.html#a23f862ca823e6fd23fc9c111178be077">stabilization_attitude_euler_float.c</a>
+, <a class="el" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#a23f862ca823e6fd23fc9c111178be077">stabilization_attitude.h</a>
+, <a class="el" href="stabilization__attitude__passthrough_8c.html#a23f862ca823e6fd23fc9c111178be077">stabilization_attitude_passthrough.c</a>
 </li>
 <li>STABILIZATION_ATTITUDE_GAIN_IDX_DEFAULT
 : <a class="el" href="stabilization__attitude__quat__float_8h.html#a441d48d07ed1585771c60a649c5ce762">stabilization_attitude_quat_float.h</a>
 </li>
 <li>STABILIZATION_ATTITUDE_GAIN_NB
-: <a class="el" href="stabilization__attitude__ref__quat__float_8h.html#a57167f229895fc447e48745902813cde">stabilization_attitude_ref_quat_float.h</a>
-, <a class="el" href="stabilization__attitude__quat__float_8h.html#a57167f229895fc447e48745902813cde">stabilization_attitude_quat_float.h</a>
+: <a class="el" href="stabilization__attitude__quat__float_8h.html#a57167f229895fc447e48745902813cde">stabilization_attitude_quat_float.h</a>
+, <a class="el" href="stabilization__attitude__ref__quat__float_8h.html#a57167f229895fc447e48745902813cde">stabilization_attitude_ref_quat_float.h</a>
 </li>
 <li>stabilization_attitude_gain_schedule()
-: <a class="el" href="stabilization__attitude__quat__float_8h.html#ad56ee50f489feb63a2af75f0024d892c">stabilization_attitude_quat_float.h</a>
-, <a class="el" href="stabilization__attitude__quat__float_8c.html#ad56ee50f489feb63a2af75f0024d892c">stabilization_attitude_quat_float.c</a>
+: <a class="el" href="stabilization__attitude__quat__float_8c.html#ad56ee50f489feb63a2af75f0024d892c">stabilization_attitude_quat_float.c</a>
+, <a class="el" href="stabilization__attitude__quat__float_8h.html#ad56ee50f489feb63a2af75f0024d892c">stabilization_attitude_quat_float.h</a>
 </li>
 <li>stabilization_attitude_get_heading_f()
-: <a class="el" href="stabilization__attitude__rc__setpoint_8h.html#aef31d05722347c8213ef503f5c6f1113">stabilization_attitude_rc_setpoint.h</a>
-, <a class="el" href="stabilization__attitude__rc__setpoint_8c.html#aef31d05722347c8213ef503f5c6f1113">stabilization_attitude_rc_setpoint.c</a>
+: <a class="el" href="stabilization__attitude__rc__setpoint_8c.html#aef31d05722347c8213ef503f5c6f1113">stabilization_attitude_rc_setpoint.c</a>
+, <a class="el" href="stabilization__attitude__rc__setpoint_8h.html#aef31d05722347c8213ef503f5c6f1113">stabilization_attitude_rc_setpoint.h</a>
 </li>
 <li>stabilization_attitude_get_heading_i()
-: <a class="el" href="stabilization__attitude__rc__setpoint_8h.html#a1270210b635f040b5bdd7d974f29c71f">stabilization_attitude_rc_setpoint.h</a>
-, <a class="el" href="stabilization__attitude__rc__setpoint_8c.html#a1270210b635f040b5bdd7d974f29c71f">stabilization_attitude_rc_setpoint.c</a>
+: <a class="el" href="stabilization__attitude__rc__setpoint_8c.html#a1270210b635f040b5bdd7d974f29c71f">stabilization_attitude_rc_setpoint.c</a>
+, <a class="el" href="stabilization__attitude__rc__setpoint_8h.html#a1270210b635f040b5bdd7d974f29c71f">stabilization_attitude_rc_setpoint.h</a>
 </li>
 <li>stabilization_attitude_init()
-: <a class="el" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#a03d27593d891182c04fc5337766733d1">stabilization_attitude.h</a>
-, <a class="el" href="stabilization__attitude__quat__indi_8c.html#a03d27593d891182c04fc5337766733d1">stabilization_attitude_quat_indi.c</a>
-, <a class="el" href="stabilization__attitude__euler__float_8c.html#a03d27593d891182c04fc5337766733d1">stabilization_attitude_euler_float.c</a>
+: <a class="el" href="stabilization__attitude__quat__int_8c.html#a03d27593d891182c04fc5337766733d1">stabilization_attitude_quat_int.c</a>
 , <a class="el" href="stabilization__attitude__euler__int_8c.html#a03d27593d891182c04fc5337766733d1">stabilization_attitude_euler_int.c</a>
+, <a class="el" href="stabilization__attitude__quat__indi_8c.html#a03d27593d891182c04fc5337766733d1">stabilization_attitude_quat_indi.c</a>
+, <a class="el" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#a03d27593d891182c04fc5337766733d1">stabilization_attitude.h</a>
+, <a class="el" href="stabilization__attitude__euler__float_8c.html#a03d27593d891182c04fc5337766733d1">stabilization_attitude_euler_float.c</a>
 , <a class="el" href="stabilization__attitude__passthrough_8c.html#a03d27593d891182c04fc5337766733d1">stabilization_attitude_passthrough.c</a>
 , <a class="el" href="stabilization__attitude__quat__float_8c.html#a03d27593d891182c04fc5337766733d1">stabilization_attitude_quat_float.c</a>
-, <a class="el" href="stabilization__attitude__quat__int_8c.html#a03d27593d891182c04fc5337766733d1">stabilization_attitude_quat_int.c</a>
 </li>
 <li>stabilization_attitude_quat_float_SetOmegaP
 : <a class="el" href="stabilization__attitude__quat__float_8h.html#aa264f6ed208212c749b8237a1422484f">stabilization_attitude_quat_float.h</a>
@@ -3642,37 +3872,37 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="stabilization__attitude__quat__int_8h.html#a68a3b6594478b7d0add193f94b823e83">stabilization_attitude_quat_int.h</a>
 </li>
 <li>stabilization_attitude_read_rc()
-: <a class="el" href="stabilization__attitude__euler__float_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc">stabilization_attitude_euler_float.c</a>
-, <a class="el" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#add34cd878dfdd9fd4d0912a06fbc58bc">stabilization_attitude.h</a>
-, <a class="el" href="stabilization__attitude__quat__indi_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc">stabilization_attitude_quat_indi.c</a>
-, <a class="el" href="stabilization__attitude__euler__int_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc">stabilization_attitude_euler_int.c</a>
-, <a class="el" href="stabilization__attitude__passthrough_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc">stabilization_attitude_passthrough.c</a>
+: <a class="el" href="stabilization__attitude__quat__int_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc">stabilization_attitude_quat_int.c</a>
 , <a class="el" href="stabilization__attitude__quat__float_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc">stabilization_attitude_quat_float.c</a>
-, <a class="el" href="stabilization__attitude__quat__int_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc">stabilization_attitude_quat_int.c</a>
+, <a class="el" href="stabilization__attitude__euler__int_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc">stabilization_attitude_euler_int.c</a>
+, <a class="el" href="stabilization__attitude__quat__indi_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc">stabilization_attitude_quat_indi.c</a>
+, <a class="el" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#add34cd878dfdd9fd4d0912a06fbc58bc">stabilization_attitude.h</a>
+, <a class="el" href="stabilization__attitude__euler__float_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc">stabilization_attitude_euler_float.c</a>
+, <a class="el" href="stabilization__attitude__passthrough_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc">stabilization_attitude_passthrough.c</a>
 </li>
 <li>stabilization_attitude_read_rc_roll_pitch_earth_quat_f()
-: <a class="el" href="stabilization__attitude__rc__setpoint_8c.html#a03c4937f25fa5795496024b6ed8eeae7">stabilization_attitude_rc_setpoint.c</a>
-, <a class="el" href="stabilization__attitude__rc__setpoint_8h.html#a03c4937f25fa5795496024b6ed8eeae7">stabilization_attitude_rc_setpoint.h</a>
+: <a class="el" href="stabilization__attitude__rc__setpoint_8h.html#a03c4937f25fa5795496024b6ed8eeae7">stabilization_attitude_rc_setpoint.h</a>
+, <a class="el" href="stabilization__attitude__rc__setpoint_8c.html#a03c4937f25fa5795496024b6ed8eeae7">stabilization_attitude_rc_setpoint.c</a>
 </li>
 <li>stabilization_attitude_read_rc_roll_pitch_quat_f()
-: <a class="el" href="stabilization__attitude__rc__setpoint_8c.html#a1700308a4ecb46cc5ca8691e78ce69a3">stabilization_attitude_rc_setpoint.c</a>
-, <a class="el" href="stabilization__attitude__rc__setpoint_8h.html#a1700308a4ecb46cc5ca8691e78ce69a3">stabilization_attitude_rc_setpoint.h</a>
+: <a class="el" href="stabilization__attitude__rc__setpoint_8h.html#a1700308a4ecb46cc5ca8691e78ce69a3">stabilization_attitude_rc_setpoint.h</a>
+, <a class="el" href="stabilization__attitude__rc__setpoint_8c.html#a1700308a4ecb46cc5ca8691e78ce69a3">stabilization_attitude_rc_setpoint.c</a>
 </li>
 <li>stabilization_attitude_read_rc_setpoint_eulers()
-: <a class="el" href="stabilization__attitude__rc__setpoint_8c.html#a60929bf25f6bd542fd13629fc452c1b6">stabilization_attitude_rc_setpoint.c</a>
-, <a class="el" href="stabilization__attitude__rc__setpoint_8h.html#a60929bf25f6bd542fd13629fc452c1b6">stabilization_attitude_rc_setpoint.h</a>
+: <a class="el" href="stabilization__attitude__rc__setpoint_8h.html#a60929bf25f6bd542fd13629fc452c1b6">stabilization_attitude_rc_setpoint.h</a>
+, <a class="el" href="stabilization__attitude__rc__setpoint_8c.html#a60929bf25f6bd542fd13629fc452c1b6">stabilization_attitude_rc_setpoint.c</a>
 </li>
 <li>stabilization_attitude_read_rc_setpoint_eulers_f()
-: <a class="el" href="stabilization__attitude__rc__setpoint_8c.html#a795e57d623b6d1b9fe9a630dd90d13d4">stabilization_attitude_rc_setpoint.c</a>
-, <a class="el" href="stabilization__attitude__rc__setpoint_8h.html#a795e57d623b6d1b9fe9a630dd90d13d4">stabilization_attitude_rc_setpoint.h</a>
+: <a class="el" href="stabilization__attitude__rc__setpoint_8h.html#a795e57d623b6d1b9fe9a630dd90d13d4">stabilization_attitude_rc_setpoint.h</a>
+, <a class="el" href="stabilization__attitude__rc__setpoint_8c.html#a795e57d623b6d1b9fe9a630dd90d13d4">stabilization_attitude_rc_setpoint.c</a>
 </li>
 <li>stabilization_attitude_read_rc_setpoint_quat_earth_bound_f()
-: <a class="el" href="stabilization__attitude__rc__setpoint_8h.html#a2c7e084c171f2656b071f20895ce2ce0">stabilization_attitude_rc_setpoint.h</a>
-, <a class="el" href="stabilization__attitude__rc__setpoint_8c.html#a2c7e084c171f2656b071f20895ce2ce0">stabilization_attitude_rc_setpoint.c</a>
+: <a class="el" href="stabilization__attitude__rc__setpoint_8c.html#a2c7e084c171f2656b071f20895ce2ce0">stabilization_attitude_rc_setpoint.c</a>
+, <a class="el" href="stabilization__attitude__rc__setpoint_8h.html#a2c7e084c171f2656b071f20895ce2ce0">stabilization_attitude_rc_setpoint.h</a>
 </li>
 <li>stabilization_attitude_read_rc_setpoint_quat_f()
-: <a class="el" href="stabilization__attitude__rc__setpoint_8c.html#a9d0b7ad4c9f5c936c3f06910ac5d0185">stabilization_attitude_rc_setpoint.c</a>
-, <a class="el" href="stabilization__attitude__rc__setpoint_8h.html#a9d0b7ad4c9f5c936c3f06910ac5d0185">stabilization_attitude_rc_setpoint.h</a>
+: <a class="el" href="stabilization__attitude__rc__setpoint_8h.html#a9d0b7ad4c9f5c936c3f06910ac5d0185">stabilization_attitude_rc_setpoint.h</a>
+, <a class="el" href="stabilization__attitude__rc__setpoint_8c.html#a9d0b7ad4c9f5c936c3f06910ac5d0185">stabilization_attitude_rc_setpoint.c</a>
 </li>
 <li>STABILIZATION_ATTITUDE_REF_MAX_P
 : <a class="el" href="stabilization__attitude__ref__defaults_8h.html#a28c5746ebc9c7a5acc942f0286517a76">stabilization_attitude_ref_defaults.h</a>
@@ -3696,60 +3926,60 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="stabilization__attitude__ref__quat__float_8c.html#a8006732cb1b5351f1643fce797ab4fe0">stabilization_attitude_ref_quat_float.c</a>
 </li>
 <li>stabilization_attitude_reset_care_free_heading()
-: <a class="el" href="stabilization__attitude__rc__setpoint_8h.html#abdf70201d8682a7d5b567fc6f3790063">stabilization_attitude_rc_setpoint.h</a>
-, <a class="el" href="stabilization__attitude__rc__setpoint_8c.html#abdf70201d8682a7d5b567fc6f3790063">stabilization_attitude_rc_setpoint.c</a>
+: <a class="el" href="stabilization__attitude__rc__setpoint_8c.html#abdf70201d8682a7d5b567fc6f3790063">stabilization_attitude_rc_setpoint.c</a>
+, <a class="el" href="stabilization__attitude__rc__setpoint_8h.html#abdf70201d8682a7d5b567fc6f3790063">stabilization_attitude_rc_setpoint.h</a>
 </li>
 <li>stabilization_attitude_run()
-: <a class="el" href="stabilization__attitude__quat__indi_8c.html#aae5fe27afd6cf48e9beeb6aa4c6cfc6e">stabilization_attitude_quat_indi.c</a>
-, <a class="el" href="stabilization__attitude__euler__float_8c.html#afb59ecc3049842f940a46a81698b79e9">stabilization_attitude_euler_float.c</a>
-, <a class="el" href="stabilization__attitude__quat__float_8c.html#aae5fe27afd6cf48e9beeb6aa4c6cfc6e">stabilization_attitude_quat_float.c</a>
-, <a class="el" href="stabilization__attitude__passthrough_8c.html#afb59ecc3049842f940a46a81698b79e9">stabilization_attitude_passthrough.c</a>
-, <a class="el" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#afb59ecc3049842f940a46a81698b79e9">stabilization_attitude.h</a>
-, <a class="el" href="stabilization__attitude__euler__int_8c.html#afb59ecc3049842f940a46a81698b79e9">stabilization_attitude_euler_int.c</a>
+: <a class="el" href="stabilization__attitude__euler__int_8c.html#afb59ecc3049842f940a46a81698b79e9">stabilization_attitude_euler_int.c</a>
 , <a class="el" href="stabilization__attitude__quat__int_8c.html#aae5fe27afd6cf48e9beeb6aa4c6cfc6e">stabilization_attitude_quat_int.c</a>
+, <a class="el" href="stabilization__attitude__euler__float_8c.html#afb59ecc3049842f940a46a81698b79e9">stabilization_attitude_euler_float.c</a>
+, <a class="el" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#afb59ecc3049842f940a46a81698b79e9">stabilization_attitude.h</a>
+, <a class="el" href="stabilization__attitude__passthrough_8c.html#afb59ecc3049842f940a46a81698b79e9">stabilization_attitude_passthrough.c</a>
+, <a class="el" href="stabilization__attitude__quat__float_8c.html#aae5fe27afd6cf48e9beeb6aa4c6cfc6e">stabilization_attitude_quat_float.c</a>
+, <a class="el" href="stabilization__attitude__quat__indi_8c.html#aae5fe27afd6cf48e9beeb6aa4c6cfc6e">stabilization_attitude_quat_indi.c</a>
 </li>
 <li>stabilization_attitude_set_earth_cmd_i()
-: <a class="el" href="stabilization__attitude__quat__int_8c.html#ada3ef183c206d08fd0a902adc118f542">stabilization_attitude_quat_int.c</a>
-, <a class="el" href="stabilization__attitude__euler__int_8c.html#ada3ef183c206d08fd0a902adc118f542">stabilization_attitude_euler_int.c</a>
-, <a class="el" href="stabilization__attitude__quat__float_8c.html#ada3ef183c206d08fd0a902adc118f542">stabilization_attitude_quat_float.c</a>
+: <a class="el" href="stabilization__attitude__passthrough_8c.html#ada3ef183c206d08fd0a902adc118f542">stabilization_attitude_passthrough.c</a>
 , <a class="el" href="stabilization__attitude__quat__indi_8c.html#ada3ef183c206d08fd0a902adc118f542">stabilization_attitude_quat_indi.c</a>
-, <a class="el" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#ada3ef183c206d08fd0a902adc118f542">stabilization_attitude.h</a>
+, <a class="el" href="stabilization__attitude__euler__int_8c.html#ada3ef183c206d08fd0a902adc118f542">stabilization_attitude_euler_int.c</a>
 , <a class="el" href="stabilization__attitude__euler__float_8c.html#ada3ef183c206d08fd0a902adc118f542">stabilization_attitude_euler_float.c</a>
-, <a class="el" href="stabilization__attitude__passthrough_8c.html#ada3ef183c206d08fd0a902adc118f542">stabilization_attitude_passthrough.c</a>
+, <a class="el" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#ada3ef183c206d08fd0a902adc118f542">stabilization_attitude.h</a>
+, <a class="el" href="stabilization__attitude__quat__float_8c.html#ada3ef183c206d08fd0a902adc118f542">stabilization_attitude_quat_float.c</a>
+, <a class="el" href="stabilization__attitude__quat__int_8c.html#ada3ef183c206d08fd0a902adc118f542">stabilization_attitude_quat_int.c</a>
 </li>
 <li>stabilization_attitude_set_failsafe_setpoint()
-: <a class="el" href="stabilization__attitude__passthrough_8c.html#a5a2d8d3947ba9cdc571cea5778c93f4a">stabilization_attitude_passthrough.c</a>
-, <a class="el" href="stabilization__attitude__quat__int_8c.html#a5a2d8d3947ba9cdc571cea5778c93f4a">stabilization_attitude_quat_int.c</a>
-, <a class="el" href="stabilization__attitude__quat__indi_8c.html#a5a2d8d3947ba9cdc571cea5778c93f4a">stabilization_attitude_quat_indi.c</a>
-, <a class="el" href="stabilization__attitude__euler__float_8c.html#a5a2d8d3947ba9cdc571cea5778c93f4a">stabilization_attitude_euler_float.c</a>
+: <a class="el" href="stabilization__attitude__quat__float_8c.html#a5a2d8d3947ba9cdc571cea5778c93f4a">stabilization_attitude_quat_float.c</a>
 , <a class="el" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#a5a2d8d3947ba9cdc571cea5778c93f4a">stabilization_attitude.h</a>
+, <a class="el" href="stabilization__attitude__passthrough_8c.html#a5a2d8d3947ba9cdc571cea5778c93f4a">stabilization_attitude_passthrough.c</a>
 , <a class="el" href="stabilization__attitude__euler__int_8c.html#a5a2d8d3947ba9cdc571cea5778c93f4a">stabilization_attitude_euler_int.c</a>
-, <a class="el" href="stabilization__attitude__quat__float_8c.html#a5a2d8d3947ba9cdc571cea5778c93f4a">stabilization_attitude_quat_float.c</a>
+, <a class="el" href="stabilization__attitude__euler__float_8c.html#a5a2d8d3947ba9cdc571cea5778c93f4a">stabilization_attitude_euler_float.c</a>
+, <a class="el" href="stabilization__attitude__quat__indi_8c.html#a5a2d8d3947ba9cdc571cea5778c93f4a">stabilization_attitude_quat_indi.c</a>
+, <a class="el" href="stabilization__attitude__quat__int_8c.html#a5a2d8d3947ba9cdc571cea5778c93f4a">stabilization_attitude_quat_int.c</a>
 </li>
 <li>stabilization_attitude_set_rpy_setpoint_i()
-: <a class="el" href="stabilization__attitude__quat__float_8c.html#ac064607f64988793cadfe5ed346b269f">stabilization_attitude_quat_float.c</a>
-, <a class="el" href="stabilization__attitude__quat__int_8c.html#ac064607f64988793cadfe5ed346b269f">stabilization_attitude_quat_int.c</a>
-, <a class="el" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#ac064607f64988793cadfe5ed346b269f">stabilization_attitude.h</a>
+: <a class="el" href="stabilization__attitude__quat__indi_8c.html#ac064607f64988793cadfe5ed346b269f">stabilization_attitude_quat_indi.c</a>
 , <a class="el" href="stabilization__attitude__euler__float_8c.html#ac064607f64988793cadfe5ed346b269f">stabilization_attitude_euler_float.c</a>
-, <a class="el" href="stabilization__attitude__euler__int_8c.html#ac064607f64988793cadfe5ed346b269f">stabilization_attitude_euler_int.c</a>
 , <a class="el" href="stabilization__attitude__passthrough_8c.html#ac064607f64988793cadfe5ed346b269f">stabilization_attitude_passthrough.c</a>
-, <a class="el" href="stabilization__attitude__quat__indi_8c.html#ac064607f64988793cadfe5ed346b269f">stabilization_attitude_quat_indi.c</a>
+, <a class="el" href="stabilization__attitude__quat__float_8c.html#ac064607f64988793cadfe5ed346b269f">stabilization_attitude_quat_float.c</a>
+, <a class="el" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#ac064607f64988793cadfe5ed346b269f">stabilization_attitude.h</a>
+, <a class="el" href="stabilization__attitude__euler__int_8c.html#ac064607f64988793cadfe5ed346b269f">stabilization_attitude_euler_int.c</a>
+, <a class="el" href="stabilization__attitude__quat__int_8c.html#ac064607f64988793cadfe5ed346b269f">stabilization_attitude_quat_int.c</a>
 </li>
 <li>stabilization_attitude_set_setpoint_rp_quat_f()
-: <a class="el" href="guidance__indi_8h.html#ac2747905b79ab39b935a6f140fd21695">guidance_indi.h</a>
-, <a class="el" href="guidance__indi_8c.html#ac2747905b79ab39b935a6f140fd21695">guidance_indi.c</a>
+: <a class="el" href="guidance__indi_8c.html#ac2747905b79ab39b935a6f140fd21695">guidance_indi.c</a>
+, <a class="el" href="guidance__indi_8h.html#ac2747905b79ab39b935a6f140fd21695">guidance_indi.h</a>
 </li>
 <li>stabilization_cmd
-: <a class="el" href="stabilization_8h.html#a7db6cb929d989e142cf136ac4af10add">stabilization.h</a>
-, <a class="el" href="stabilization_8c.html#a7db6cb929d989e142cf136ac4af10add">stabilization.c</a>
+: <a class="el" href="stabilization_8c.html#a7db6cb929d989e142cf136ac4af10add">stabilization.c</a>
+, <a class="el" href="stabilization_8h.html#a7db6cb929d989e142cf136ac4af10add">stabilization.h</a>
 </li>
 <li>stabilization_gains
-: <a class="el" href="stabilization__attitude__euler__float_8c.html#a546abfe3403952cea36cb12d9240fa91">stabilization_attitude_euler_float.c</a>
-, <a class="el" href="stabilization__attitude__quat__float_8c.html#a111cd924cba0489c665371401b826134">stabilization_attitude_quat_float.c</a>
-, <a class="el" href="stabilization__attitude__common__int_8h.html#a626e955f6f77d5690a9590dfc5ec4d19">stabilization_attitude_common_int.h</a>
+: <a class="el" href="stabilization__attitude__quat__int_8c.html#a626e955f6f77d5690a9590dfc5ec4d19">stabilization_attitude_quat_int.c</a>
 , <a class="el" href="stabilization__attitude__euler__float_8h.html#a546abfe3403952cea36cb12d9240fa91">stabilization_attitude_euler_float.h</a>
-, <a class="el" href="stabilization__attitude__quat__int_8c.html#a626e955f6f77d5690a9590dfc5ec4d19">stabilization_attitude_quat_int.c</a>
+, <a class="el" href="stabilization__attitude__euler__float_8c.html#a546abfe3403952cea36cb12d9240fa91">stabilization_attitude_euler_float.c</a>
+, <a class="el" href="stabilization__attitude__common__int_8h.html#a626e955f6f77d5690a9590dfc5ec4d19">stabilization_attitude_common_int.h</a>
 , <a class="el" href="stabilization__attitude__euler__int_8c.html#a626e955f6f77d5690a9590dfc5ec4d19">stabilization_attitude_euler_int.c</a>
+, <a class="el" href="stabilization__attitude__quat__float_8c.html#a111cd924cba0489c665371401b826134">stabilization_attitude_quat_float.c</a>
 , <a class="el" href="stabilization__attitude__quat__float_8h.html#a6a2e75ab5d23ff7572006cd82628c367">stabilization_attitude_quat_float.h</a>
 </li>
 <li>STABILIZATION_INDI_FILT_OMEGA
@@ -3783,8 +4013,8 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="stabilization__none_8c.html#a49478c0307e64c56d48cf0feaa0d8876">stabilization_none.c</a>
 </li>
 <li>stabilization_none_init()
-: <a class="el" href="stabilization__none_8h.html#a7afeae412bd051903e86eee6736549ad">stabilization_none.h</a>
-, <a class="el" href="stabilization__none_8c.html#a7afeae412bd051903e86eee6736549ad">stabilization_none.c</a>
+: <a class="el" href="stabilization__none_8c.html#a7afeae412bd051903e86eee6736549ad">stabilization_none.c</a>
+, <a class="el" href="stabilization__none_8h.html#a7afeae412bd051903e86eee6736549ad">stabilization_none.h</a>
 </li>
 <li>stabilization_none_rc_cmd
 : <a class="el" href="stabilization__none_8h.html#a03faaedbd0839f6e8b94c5788feb4ff4">stabilization_none.h</a>
@@ -3799,20 +4029,10 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="stabilization__none_8c.html#ad386c5e1b5d62194fa2eb827d8c6e2b2">stabilization_none.c</a>
 </li>
 <li>stabilization_opticflow_vel_cb()
-: <a class="el" href="guidance__opticflow__hover_8c.html#a3d452fe7da14175260a90ed97cd70dc5">guidance_opticflow_hover.c</a>
+: <a class="el" href="guidance__opticflow__hover_8c.html#aef79617b4190e7235eed5f6653a296ad">guidance_opticflow_hover.c</a>
 </li>
 <li>stabilization_rate_ddgain
-: <a class="el" href="stabilization__rate_8c.html#a65c033d34e402a279ddeb27bf70d8a6e">stabilization_rate.c</a>
-, <a class="el" href="stabilization__rate_8h.html#a65c033d34e402a279ddeb27bf70d8a6e">stabilization_rate.h</a>
-</li>
-<li>STABILIZATION_RATE_DDGAIN_P
-: <a class="el" href="stabilization__rate_8c.html#a463db10781b1213bc13bcaeb4a0d88b0">stabilization_rate.c</a>
-</li>
-<li>STABILIZATION_RATE_DDGAIN_Q
-: <a class="el" href="stabilization__rate_8c.html#a437ea216ee154381c9ae17dcfed8ac4f">stabilization_rate.c</a>
-</li>
-<li>STABILIZATION_RATE_DDGAIN_R
-: <a class="el" href="stabilization__rate_8c.html#aa7082e98a76567a5d7d31415f29099ef">stabilization_rate.c</a>
+: <a class="el" href="stabilization__rate_8h.html#a65c033d34e402a279ddeb27bf70d8a6e">stabilization_rate.h</a>
 </li>
 <li>STABILIZATION_RATE_DEADBAND_P
 : <a class="el" href="stabilization__rate_8c.html#a95b90288cdcf67c427d0cdf4d5bd89da">stabilization_rate.c</a>
@@ -3824,20 +4044,19 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="stabilization__rate_8c.html#a0f48d413f29c8f15752bee5507307023">stabilization_rate.c</a>
 </li>
 <li>stabilization_rate_enter()
-: <a class="el" href="stabilization__rate_8h.html#a3c8ef06f1db709ae713371b0a2a5054d">stabilization_rate.h</a>
-, <a class="el" href="stabilization__rate_8c.html#a3c8ef06f1db709ae713371b0a2a5054d">stabilization_rate.c</a>
+: <a class="el" href="stabilization__rate_8c.html#a3c8ef06f1db709ae713371b0a2a5054d">stabilization_rate.c</a>
+, <a class="el" href="stabilization__rate_8h.html#a3c8ef06f1db709ae713371b0a2a5054d">stabilization_rate.h</a>
 </li>
 <li>stabilization_rate_fb_cmd
-: <a class="el" href="stabilization__rate_8c.html#acfa8b6ab4b43f8007ef1a4439a30b43f">stabilization_rate.c</a>
-, <a class="el" href="stabilization__rate_8h.html#acfa8b6ab4b43f8007ef1a4439a30b43f">stabilization_rate.h</a>
+: <a class="el" href="stabilization__rate_8h.html#acfa8b6ab4b43f8007ef1a4439a30b43f">stabilization_rate.h</a>
+, <a class="el" href="stabilization__rate_8c.html#acfa8b6ab4b43f8007ef1a4439a30b43f">stabilization_rate.c</a>
 </li>
 <li>stabilization_rate_ff_cmd
-: <a class="el" href="stabilization__rate_8c.html#a57710b8e473fcf30da2115f5a05a2dd8">stabilization_rate.c</a>
-, <a class="el" href="stabilization__rate_8h.html#a57710b8e473fcf30da2115f5a05a2dd8">stabilization_rate.h</a>
+: <a class="el" href="stabilization__rate_8h.html#a57710b8e473fcf30da2115f5a05a2dd8">stabilization_rate.h</a>
 </li>
 <li>stabilization_rate_gain
-: <a class="el" href="stabilization__rate_8h.html#a040d79c368c677cbc1c2ea9ca3feb1ff">stabilization_rate.h</a>
-, <a class="el" href="stabilization__rate_8c.html#a040d79c368c677cbc1c2ea9ca3feb1ff">stabilization_rate.c</a>
+: <a class="el" href="stabilization__rate_8c.html#a040d79c368c677cbc1c2ea9ca3feb1ff">stabilization_rate.c</a>
+, <a class="el" href="stabilization__rate_8h.html#a040d79c368c677cbc1c2ea9ca3feb1ff">stabilization_rate.h</a>
 </li>
 <li>stabilization_rate_igain
 : <a class="el" href="stabilization__rate_8c.html#a4c5a2dfb04999add7ae7dde1ee846359">stabilization_rate.c</a>
@@ -3865,23 +4084,18 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="stabilization__rate_8c.html#aa74f5f2b4c549269f6ca18638acd8c5e">stabilization_rate.c</a>
 </li>
 <li>stabilization_rate_ref
-: <a class="el" href="stabilization__rate_8c.html#ab013aedb91f0cc07923ff0fa9a86060f">stabilization_rate.c</a>
-, <a class="el" href="stabilization__rate_8h.html#ab013aedb91f0cc07923ff0fa9a86060f">stabilization_rate.h</a>
-</li>
-<li>STABILIZATION_RATE_REF_TAU
-: <a class="el" href="stabilization__rate_8c.html#a883849ad9cf42adf5d85bda6e69c530d">stabilization_rate.c</a>
+: <a class="el" href="stabilization__rate_8h.html#ab013aedb91f0cc07923ff0fa9a86060f">stabilization_rate.h</a>
 </li>
 <li>stabilization_rate_refdot
-: <a class="el" href="stabilization__rate_8c.html#a28986a5cf9d81f11e96f7001e71cc2db">stabilization_rate.c</a>
-, <a class="el" href="stabilization__rate_8h.html#a28986a5cf9d81f11e96f7001e71cc2db">stabilization_rate.h</a>
+: <a class="el" href="stabilization__rate_8h.html#a28986a5cf9d81f11e96f7001e71cc2db">stabilization_rate.h</a>
 </li>
 <li>stabilization_rate_run()
 : <a class="el" href="stabilization__rate_8c.html#abd94877f79c42a6ee99622c7fc45a623">stabilization_rate.c</a>
 , <a class="el" href="stabilization__rate_8h.html#abd94877f79c42a6ee99622c7fc45a623">stabilization_rate.h</a>
 </li>
 <li>stabilization_rate_sp
-: <a class="el" href="stabilization__rate_8c.html#ae3a8e84fa96e60d6174c463b83b0bed3">stabilization_rate.c</a>
-, <a class="el" href="stabilization__rate_8h.html#ae3a8e84fa96e60d6174c463b83b0bed3">stabilization_rate.h</a>
+: <a class="el" href="stabilization__rate_8h.html#ae3a8e84fa96e60d6174c463b83b0bed3">stabilization_rate.h</a>
+, <a class="el" href="stabilization__rate_8c.html#ae3a8e84fa96e60d6174c463b83b0bed3">stabilization_rate.c</a>
 </li>
 <li>stabilization_rate_sum_err
 : <a class="el" href="stabilization__rate_8h.html#a9c5e4d781cf7f2ac4d4e0fc288ab62db">stabilization_rate.h</a>
@@ -3894,47 +4108,47 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="common__flight__plan_8h.html#a73a31daf5fd187893268389b0cf07d32">common_flight_plan.h</a>
 </li>
 <li>stage_time
-: <a class="el" href="common__flight__plan_8c.html#ac9b0a7aa731d9b8755a79251720cf9e0">common_flight_plan.c</a>
-, <a class="el" href="common__flight__plan_8h.html#ac9b0a7aa731d9b8755a79251720cf9e0">common_flight_plan.h</a>
+: <a class="el" href="common__flight__plan_8h.html#ac9b0a7aa731d9b8755a79251720cf9e0">common_flight_plan.h</a>
+, <a class="el" href="common__flight__plan_8c.html#ac9b0a7aa731d9b8755a79251720cf9e0">common_flight_plan.c</a>
 </li>
 <li>STALL_AIRSPEED
 : <a class="el" href="energy__ctrl_8c.html#aa56870347fa24cdb4c6356c21dfa3111">energy_ctrl.c</a>
 </li>
 <li>start_carto()
-: <a class="el" href="cartography_8h.html#a69e67decc8133e6bdaea6e65025f9a6f">cartography.h</a>
-, <a class="el" href="cartography_8c.html#a69e67decc8133e6bdaea6e65025f9a6f">cartography.c</a>
+: <a class="el" href="cartography_8c.html#a69e67decc8133e6bdaea6e65025f9a6f">cartography.c</a>
+, <a class="el" href="cartography_8h.html#a69e67decc8133e6bdaea6e65025f9a6f">cartography.h</a>
 </li>
 <li>start_com()
 : <a class="el" href="generic__com_8h.html#a80e9988637d33abbe2df824b9975058e">generic_com.h</a>
 , <a class="el" href="generic__com_8c.html#a80e9988637d33abbe2df824b9975058e">generic_com.c</a>
 </li>
 <li>start_demo()
-: <a class="el" href="demo__module_8c.html#a1672359fb93fb3972268ec4c071c3bf5">demo_module.c</a>
-, <a class="el" href="demo__module_8h.html#a1672359fb93fb3972268ec4c071c3bf5">demo_module.h</a>
+: <a class="el" href="demo__module_8h.html#a1672359fb93fb3972268ec4c071c3bf5">demo_module.h</a>
+, <a class="el" href="demo__module_8c.html#a1672359fb93fb3972268ec4c071c3bf5">demo_module.c</a>
 </li>
 <li>start_formation()
 : <a class="el" href="formation_8h.html#a7f570279c6840dc962733dbac2b46413">formation.h</a>
 , <a class="el" href="formation_8c.html#a7f570279c6840dc962733dbac2b46413">formation.c</a>
 </li>
 <li>start_log_sequence
-: <a class="el" href="high__speed__logger__direct__memory_8c.html#aac27c26e637cbfeab795369f0263f911">high_speed_logger_direct_memory.c</a>
-, <a class="el" href="direct__memory__logger_8c.html#aac27c26e637cbfeab795369f0263f911">direct_memory_logger.c</a>
+: <a class="el" href="direct__memory__logger_8c.html#aac27c26e637cbfeab795369f0263f911">direct_memory_logger.c</a>
+, <a class="el" href="high__speed__logger__direct__memory_8c.html#aac27c26e637cbfeab795369f0263f911">high_speed_logger_direct_memory.c</a>
 </li>
 <li>start_lost_values_sequence
 : <a class="el" href="high__speed__logger__direct__memory_8c.html#a4c2406e1801a3e53a6395948be08b57e">high_speed_logger_direct_memory.c</a>
 </li>
 <li>start_message()
-: <a class="el" href="pprz__transport_8c.html#a6d399adfb9536acf8537268815f71693">pprz_transport.c</a>
-, <a class="el" href="pprzlog__transport_8c.html#aa6bed9ed2896a8ee7240e0f61390b71b">pprzlog_transport.c</a>
+: <a class="el" href="ivy__transport_8c.html#aabf2cb103a749c16f18835ef1a34d2e4">ivy_transport.c</a>
 , <a class="el" href="xbee_8c.html#a76e3cc5fb9e03f248426776081f115e0">xbee.c</a>
-, <a class="el" href="ivy__transport_8c.html#aabf2cb103a749c16f18835ef1a34d2e4">ivy_transport.c</a>
+, <a class="el" href="pprzlog__transport_8c.html#aa6bed9ed2896a8ee7240e0f61390b71b">pprzlog_transport.c</a>
+, <a class="el" href="pprz__transport_8c.html#a6d399adfb9536acf8537268815f71693">pprz_transport.c</a>
 </li>
 <li>start_message_t
 : <a class="el" href="transport_8h.html#a7addf33559f165c0aa413899c51333fa">transport.h</a>
 </li>
 <li>start_new_log()
-: <a class="el" href="high__speed__logger__direct__memory_8h.html#a04adb430229e9cb602498ef5f26e3d3e">high_speed_logger_direct_memory.h</a>
-, <a class="el" href="high__speed__logger__direct__memory_8c.html#a04adb430229e9cb602498ef5f26e3d3e">high_speed_logger_direct_memory.c</a>
+: <a class="el" href="high__speed__logger__direct__memory_8c.html#a04adb430229e9cb602498ef5f26e3d3e">high_speed_logger_direct_memory.c</a>
+, <a class="el" href="high__speed__logger__direct__memory_8h.html#a04adb430229e9cb602498ef5f26e3d3e">high_speed_logger_direct_memory.h</a>
 </li>
 <li>start_time
 : <a class="el" href="gps__sirf_8c.html#a9d8d7b34b58ecd16168fb2405867a793">gps_sirf.c</a>
@@ -3943,23 +4157,23 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="gps__sirf_8c.html#afba430b22d0d0e577b55b1dfac17aa73">gps_sirf.c</a>
 </li>
 <li>START_TIMEOUT
-: <a class="el" href="servos__4015__MAT__hw_8c.html#a0525bb869371e594a31064887054b8ef">servos_4015_MAT_hw.c</a>
-, <a class="el" href="servos__4017__hw_8c.html#a0525bb869371e594a31064887054b8ef">servos_4017_hw.c</a>
+: <a class="el" href="servos__4017__hw_8c.html#a0525bb869371e594a31064887054b8ef">servos_4017_hw.c</a>
 , <a class="el" href="servos__ppm__hw_8c.html#a0525bb869371e594a31064887054b8ef">servos_ppm_hw.c</a>
+, <a class="el" href="servos__4015__MAT__hw_8c.html#a0525bb869371e594a31064887054b8ef">servos_4015_MAT_hw.c</a>
 </li>
 <li>start_values_sequence
 : <a class="el" href="high__speed__logger__direct__memory_8c.html#a7bd7d01975a2598880383967c1f7ab91">high_speed_logger_direct_memory.c</a>
 </li>
 <li>start_vision()
-: <a class="el" href="cv__blob__locator_8c.html#ab5cade99ec312870fe6fb5bcde39ad05">cv_blob_locator.c</a>
-, <a class="el" href="cv__blob__locator_8h.html#ab5cade99ec312870fe6fb5bcde39ad05">cv_blob_locator.h</a>
+: <a class="el" href="cv__blob__locator_8h.html#ab5cade99ec312870fe6fb5bcde39ad05">cv_blob_locator.h</a>
+, <a class="el" href="cv__blob__locator_8c.html#ab5cade99ec312870fe6fb5bcde39ad05">cv_blob_locator.c</a>
 </li>
 <li>start_vision_land()
-: <a class="el" href="cv__blob__locator_8h.html#a8a4fb6ecf08af9edbb0f368da0225012">cv_blob_locator.h</a>
-, <a class="el" href="cv__blob__locator_8c.html#a8a4fb6ecf08af9edbb0f368da0225012">cv_blob_locator.c</a>
+: <a class="el" href="cv__blob__locator_8c.html#a8a4fb6ecf08af9edbb0f368da0225012">cv_blob_locator.c</a>
+, <a class="el" href="cv__blob__locator_8h.html#a8a4fb6ecf08af9edbb0f368da0225012">cv_blob_locator.h</a>
 </li>
 <li>startup_cnt
-: <a class="el" href="apogee_2baro__board_8c.html#ab17815d8a13766bc85542dab3def429b">baro_board.c</a>
+: <a class="el" href="navgo_2baro__board_8c.html#ab17815d8a13766bc85542dab3def429b">baro_board.c</a>
 </li>
 <li>startup_delay
 : <a class="el" href="pressure__board__navarro_8c.html#a0b098aa2263bb5f8b0033c87a13236bb">pressure_board_navarro.c</a>
@@ -3974,11 +4188,17 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="cv__blob__locator_8h.html#ad721dd4bd8729c115af325b1ad500de6">cv_blob_locator.h</a>
 </li>
 <li>state
-: <a class="el" href="group__state__interface.html#gad04519a48b59cfe96f361afe9eb151ba">state.h</a>
-, <a class="el" href="group__state__interface.html#gad04519a48b59cfe96f361afe9eb151ba">state.c</a>
+: <a class="el" href="group__state__interface.html#gad04519a48b59cfe96f361afe9eb151ba">state.c</a>
+, <a class="el" href="group__state__interface.html#gad04519a48b59cfe96f361afe9eb151ba">state.h</a>
 </li>
 <li>STATE_ARMING
 : <a class="el" href="autopilot__arming__throttle_8h.html#a67f42ccf33e2918fef63b1a6c729e759a4782b6ecc31dc1819db2d9ab92fedeff">autopilot_arming_throttle.h</a>
+</li>
+<li>STATE_IDLE
+: <a class="el" href="mission__manager_8h.html#a8433d2168f156b51502c7ef5c44ccff6aaade5e53e88cf231292cd1142cce2afe">mission_manager.h</a>
+</li>
+<li>STATE_MEASURE_OPTICFLOW
+: <a class="el" href="stereocam2state_8c.html#ab14d5fd0890b63010cee2a85b6b84b05">stereocam2state.c</a>
 </li>
 <li>STATE_MOTORS_OFF_READY
 : <a class="el" href="autopilot__arming__throttle_8h.html#a67f42ccf33e2918fef63b1a6c729e759aad921d96fea7cec905a7ef36a58bf934">autopilot_arming_throttle.h</a>
@@ -3987,6 +4207,12 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="autopilot__arming__switch_8h.html#abd7b974a7084669ffc2893dd65db427ea5d9b03165b6d8bb49b125baa065bdc39">autopilot_arming_switch.h</a>
 , <a class="el" href="autopilot__arming__throttle_8h.html#a67f42ccf33e2918fef63b1a6c729e759a5d9b03165b6d8bb49b125baa065bdc39">autopilot_arming_throttle.h</a>
 </li>
+<li>STATE_SEND_ITEM
+: <a class="el" href="mission__manager_8h.html#a8433d2168f156b51502c7ef5c44ccff6a8467d65491e2430e28cef46157971d4b">mission_manager.h</a>
+</li>
+<li>STATE_SEND_LIST
+: <a class="el" href="mission__manager_8h.html#a8433d2168f156b51502c7ef5c44ccff6a4be3c4a6413b94ce20645d9fa743c00d">mission_manager.h</a>
+</li>
 <li>STATE_STARTABLE
 : <a class="el" href="autopilot__arming__switch_8h.html#abd7b974a7084669ffc2893dd65db427ea24f6e80cf467a5b4794d30a177066352">autopilot_arming_switch.h</a>
 </li>
@@ -3994,12 +4220,15 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="autopilot__arming__throttle_8h.html#a67f42ccf33e2918fef63b1a6c729e759ac74fe63e8ab7da4eabd976515f323417">autopilot_arming_throttle.h</a>
 </li>
 <li>STATE_UNINIT
-: <a class="el" href="autopilot__arming__switch_8h.html#abd7b974a7084669ffc2893dd65db427ea0075eeb0f3377fa2dad84d3656ab8c6d">autopilot_arming_switch.h</a>
-, <a class="el" href="autopilot__arming__throttle_8h.html#a67f42ccf33e2918fef63b1a6c729e759a0075eeb0f3377fa2dad84d3656ab8c6d">autopilot_arming_throttle.h</a>
+: <a class="el" href="autopilot__arming__throttle_8h.html#a67f42ccf33e2918fef63b1a6c729e759a0075eeb0f3377fa2dad84d3656ab8c6d">autopilot_arming_throttle.h</a>
+, <a class="el" href="autopilot__arming__switch_8h.html#abd7b974a7084669ffc2893dd65db427ea0075eeb0f3377fa2dad84d3656ab8c6d">autopilot_arming_switch.h</a>
 </li>
 <li>STATE_WAITING
 : <a class="el" href="autopilot__arming__switch_8h.html#abd7b974a7084669ffc2893dd65db427ead79a43d70eda33549c20a9f8490e44c1">autopilot_arming_switch.h</a>
 , <a class="el" href="autopilot__arming__throttle_8h.html#a67f42ccf33e2918fef63b1a6c729e759ad79a43d70eda33549c20a9f8490e44c1">autopilot_arming_throttle.h</a>
+</li>
+<li>STATE_WAYPOINT_WRITE_TRANSACTION
+: <a class="el" href="mission__manager_8h.html#a8433d2168f156b51502c7ef5c44ccff6a61c4ae1e6f256805e1e03b785dba7166">mission_manager.h</a>
 </li>
 <li>stateCalcAccelEcef_f()
 : <a class="el" href="group__state__acceleration.html#ga99ff3fbb7c78f6fa9d7357b8d4f374e3">state.c</a>
@@ -4348,6 +4577,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>STATIC_INLINE
 : <a class="el" href="main_8h.html#a718749e18d63ca0d6b0d1b918efb41d6">main.h</a>
+, <a class="el" href="rotorcraft_2main__fbw_8h.html#a718749e18d63ca0d6b0d1b918efb41d6">main_fbw.h</a>
 </li>
 <li>status
 : <a class="el" href="baro__MS5534A_8c.html#ade818037fd6c985038ff29656089758d">baro_MS5534A.c</a>
@@ -4516,16 +4746,48 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>STEREO_BUF_SIZE
 : <a class="el" href="stereocam_8c.html#a935142938dc53f4ead3bbd53292a5ebe">stereocam.c</a>
 </li>
+<li>stereo_fow
+: <a class="el" href="obstacle__avoidance_8c.html#a0a28a09e3430fbe26927a800e3fd6cb9">obstacle_avoidance.c</a>
+</li>
 <li>stereo_parse()
-: <a class="el" href="stereo__avoid_8c.html#a833feaee082cc0e3890e4af6ead43ad9">stereo_avoid.c</a>
+: <a class="el" href="stereocam__droplet_8c.html#a833feaee082cc0e3890e4af6ead43ad9">stereocam_droplet.c</a>
 </li>
 <li>STEREO_PORT
-: <a class="el" href="stereo__avoid_8c.html#a9aa1ba1797214fecab34eca46f4b3534">stereo_avoid.c</a>
+: <a class="el" href="stereocam__droplet_8c.html#a9aa1ba1797214fecab34eca46f4b3534">stereocam_droplet.c</a>
 , <a class="el" href="stereocam_8c.html#a9aa1ba1797214fecab34eca46f4b3534">stereocam.c</a>
 </li>
+<li>stereo_to_state_init()
+: <a class="el" href="stereocam2state_8c.html#aa8cd6e21cf25da0543b8a197a70bee41">stereocam2state.c</a>
+, <a class="el" href="stereocam2state_8h.html#aa8cd6e21cf25da0543b8a197a70bee41">stereocam2state.h</a>
+</li>
+<li>stereo_to_state_periodic()
+: <a class="el" href="stereocam2state_8h.html#a0e4ffb146094e83f7f7ad9756c5c4af4">stereocam2state.h</a>
+, <a class="el" href="stereocam2state_8c.html#a0e4ffb146094e83f7f7ad9756c5c4af4">stereocam2state.c</a>
+</li>
 <li>stereocam_data
-: <a class="el" href="stereocam_8c.html#a8714c0af4f34f0f48563fe941baecd70">stereocam.c</a>
-, <a class="el" href="stereocam_8h.html#a8714c0af4f34f0f48563fe941baecd70">stereocam.h</a>
+: <a class="el" href="stereocam_8h.html#a8714c0af4f34f0f48563fe941baecd70">stereocam.h</a>
+, <a class="el" href="stereocam_8c.html#a8714c0af4f34f0f48563fe941baecd70">stereocam.c</a>
+</li>
+<li>stereocam_disparity_to_meters()
+: <a class="el" href="stereocam_8h.html#a27586f034e7a1c47965ede7812e1f86e">stereocam.h</a>
+, <a class="el" href="stereocam_8c.html#ae68bc4f1be3843a74c8501d308ed3022">stereocam.c</a>
+</li>
+<li>stereocam_droplet_init()
+: <a class="el" href="stereocam__droplet_8c.html#a2f6691e10b1cee8d874cecc9d358f11d">stereocam_droplet.c</a>
+, <a class="el" href="stereocam__droplet_8h.html#a2f6691e10b1cee8d874cecc9d358f11d">stereocam_droplet.h</a>
+</li>
+<li>stereocam_droplet_periodic()
+: <a class="el" href="stereocam__droplet_8c.html#a304b77dceeec4285bad836b9bbced42d">stereocam_droplet.c</a>
+, <a class="el" href="stereocam__droplet_8h.html#a304b77dceeec4285bad836b9bbced42d">stereocam_droplet.h</a>
+</li>
+<li>STEREOCAM_FOLLOW_ME_USE_OPTITRACK
+: <a class="el" href="follow__me_8c.html#a3b9e56ef8f8d7566fb831387a9957c3c">follow_me.c</a>
+</li>
+<li>stereocam_gps_cb()
+: <a class="el" href="stereocam2state_8c.html#a9e0a335198635c9428365af9509a74ba">stereocam2state.c</a>
+</li>
+<li>STEREOCAM_GPS_ID
+: <a class="el" href="stereocam2state_8c.html#ae60f06ab4c5a1b76b88508ec4e5aa311">stereocam2state.c</a>
 </li>
 <li>stereocam_periodic()
 : <a class="el" href="stereocam_8c.html#af9fdd9db13734d364f446939addc77d9">stereocam.c</a>
@@ -4539,20 +4801,23 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="stereocam_8c.html#ad93db7f30e258585f126bb2bcc969064">stereocam.c</a>
 , <a class="el" href="stereocam_8h.html#ad93db7f30e258585f126bb2bcc969064">stereocam.h</a>
 </li>
+<li>stereocam_to_state()
+: <a class="el" href="stereocam2state_8c.html#a256af6dc431c864c87104ab4fa167729">stereocam2state.c</a>
+</li>
 <li>StereoChAvailable
-: <a class="el" href="stereo__avoid_8c.html#a56314c036e8c77409a2210aca22e8b2f">stereo_avoid.c</a>
+: <a class="el" href="stereocam__droplet_8c.html#a56314c036e8c77409a2210aca22e8b2f">stereocam_droplet.c</a>
 </li>
 <li>StereoGetch
 : <a class="el" href="stereocam_8c.html#a442b0b931977a325cfb9878f316d062e">stereocam.c</a>
-, <a class="el" href="stereo__avoid_8c.html#a442b0b931977a325cfb9878f316d062e">stereo_avoid.c</a>
+, <a class="el" href="stereocam__droplet_8c.html#a442b0b931977a325cfb9878f316d062e">stereocam_droplet.c</a>
 </li>
 <li>stereoprot_add()
 : <a class="el" href="stereoprotocol_8h.html#a328a1faf5873904387c5752e51ce8945">stereoprotocol.h</a>
 , <a class="el" href="stereoprotocol_8c.html#a328a1faf5873904387c5752e51ce8945">stereoprotocol.c</a>
 </li>
 <li>stereoprot_diff()
-: <a class="el" href="stereoprotocol_8h.html#a6b7cab5dfe254c880c3a4add98f1547d">stereoprotocol.h</a>
-, <a class="el" href="stereoprotocol_8c.html#a6b7cab5dfe254c880c3a4add98f1547d">stereoprotocol.c</a>
+: <a class="el" href="stereoprotocol_8c.html#a6b7cab5dfe254c880c3a4add98f1547d">stereoprotocol.c</a>
+, <a class="el" href="stereoprotocol_8h.html#a6b7cab5dfe254c880c3a4add98f1547d">stereoprotocol.h</a>
 </li>
 <li>stereoprot_get_msg_properties()
 : <a class="el" href="stereoprotocol_8h.html#a7838dfe70b00226310271960958dc4ce">stereoprotocol.h</a>
@@ -4571,16 +4836,16 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="stereoprotocol_8h.html#a70ea4531ac7e9bdc06f2956bf05902fb">stereoprotocol.h</a>
 </li>
 <li>StereoSend
-: <a class="el" href="stereo__avoid_8c.html#ac6c769a4ae2673751203d93939c60e41">stereo_avoid.c</a>
+: <a class="el" href="stereocam__droplet_8c.html#ac6c769a4ae2673751203d93939c60e41">stereocam_droplet.c</a>
 </li>
 <li>StereoSend1
-: <a class="el" href="stereo__avoid_8c.html#a985b4c4b4319aa0a457360e343c57ab9">stereo_avoid.c</a>
+: <a class="el" href="stereocam__droplet_8c.html#a985b4c4b4319aa0a457360e343c57ab9">stereocam_droplet.c</a>
 </li>
 <li>StereoUartSend1
-: <a class="el" href="stereo__avoid_8c.html#acd050a5b4d66e57d883cd9a2c401b44e">stereo_avoid.c</a>
+: <a class="el" href="stereocam__droplet_8c.html#acd050a5b4d66e57d883cd9a2c401b44e">stereocam_droplet.c</a>
 </li>
 <li>StereoUartSetBaudrate
-: <a class="el" href="stereo__avoid_8c.html#aff0e289c810eefcb77f52a2dcdfb16bb">stereo_avoid.c</a>
+: <a class="el" href="stereocam__droplet_8c.html#aff0e289c810eefcb77f52a2dcdfb16bb">stereocam_droplet.c</a>
 </li>
 <li>STICK_PUSHED
 : <a class="el" href="fixedwing_2autopilot_8h.html#a7d56ec91e72fa7e7a0ec17604a598791">autopilot.h</a>
@@ -4623,20 +4888,20 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="cartography_8h.html#ad3b607c829ee6717ac41a0a3b8b40dcd">cartography.h</a>
 </li>
 <li>stop_com()
-: <a class="el" href="generic__com_8h.html#af7b48d899c3f35e8c2ba310486c083a2">generic_com.h</a>
-, <a class="el" href="generic__com_8c.html#af7b48d899c3f35e8c2ba310486c083a2">generic_com.c</a>
+: <a class="el" href="generic__com_8c.html#af7b48d899c3f35e8c2ba310486c083a2">generic_com.c</a>
+, <a class="el" href="generic__com_8h.html#af7b48d899c3f35e8c2ba310486c083a2">generic_com.h</a>
 </li>
 <li>stop_demo()
-: <a class="el" href="demo__module_8h.html#a55a1535824f10056dab1b4cbd580bab5">demo_module.h</a>
-, <a class="el" href="demo__module_8c.html#a55a1535824f10056dab1b4cbd580bab5">demo_module.c</a>
+: <a class="el" href="demo__module_8c.html#a55a1535824f10056dab1b4cbd580bab5">demo_module.c</a>
+, <a class="el" href="demo__module_8h.html#a55a1535824f10056dab1b4cbd580bab5">demo_module.h</a>
 </li>
 <li>stop_formation()
-: <a class="el" href="formation_8c.html#ae8cee39c5a50b92149438d938cc0dd0c">formation.c</a>
-, <a class="el" href="formation_8h.html#ae8cee39c5a50b92149438d938cc0dd0c">formation.h</a>
+: <a class="el" href="formation_8h.html#ae8cee39c5a50b92149438d938cc0dd0c">formation.h</a>
+, <a class="el" href="formation_8c.html#ae8cee39c5a50b92149438d938cc0dd0c">formation.c</a>
 </li>
 <li>stop_log_sequence
-: <a class="el" href="direct__memory__logger_8c.html#a8f7f543a4d0cf2dcf2b65d3a2364b225">direct_memory_logger.c</a>
-, <a class="el" href="high__speed__logger__direct__memory_8c.html#a8f7f543a4d0cf2dcf2b65d3a2364b225">high_speed_logger_direct_memory.c</a>
+: <a class="el" href="high__speed__logger__direct__memory_8c.html#a8f7f543a4d0cf2dcf2b65d3a2364b225">high_speed_logger_direct_memory.c</a>
+, <a class="el" href="direct__memory__logger_8c.html#a8f7f543a4d0cf2dcf2b65d3a2364b225">direct_memory_logger.c</a>
 </li>
 <li>stop_lost_values_sequence
 : <a class="el" href="high__speed__logger__direct__memory_8c.html#ae9a315c76ea79e68061e44ead96445c2">high_speed_logger_direct_memory.c</a>
@@ -4660,8 +4925,8 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>STX
 : <a class="el" href="pprz__transport_8h.html#aacd744a917e61146ec8b7175b4761683">pprz_transport.h</a>
-, <a class="el" href="gps__udp_8c.html#aacd744a917e61146ec8b7175b4761683">gps_udp.c</a>
 , <a class="el" href="protocol_8h.html#aacd744a917e61146ec8b7175b4761683">protocol.h</a>
+, <a class="el" href="gps__udp_8c.html#aacd744a917e61146ec8b7175b4761683">gps_udp.c</a>
 </li>
 <li>STX_LOG
 : <a class="el" href="pprzlog__transport_8c.html#a9f1542832d5fb91af4efbba709650a7c">pprzlog_transport.c</a>
@@ -4684,14 +4949,15 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>sum_time_periodic
 : <a class="el" href="sys__mon_8c.html#a4e46b5ea63e3192271574ca326b7d278">sys_mon.c</a>
 </li>
+<li>superbitrf
+: <a class="el" href="arch_2sim_2subsystems_2datalink_2superbitrf_8c.html#a3de4c224554ac6608830085912a98b86">superbitrf.c</a>
+</li>
 <li>SUPERBITRF
 : <a class="el" href="datalink_8h.html#a69402663cfd97c88416baa167e62c5ab">datalink.h</a>
 </li>
 <li>superbitrf
 : <a class="el" href="subsystems_2datalink_2superbitrf_8c.html#a3de4c224554ac6608830085912a98b86">superbitrf.c</a>
 , <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#a3de4c224554ac6608830085912a98b86">superbitrf.h</a>
-, <a class="el" href="arch_2sim_2subsystems_2datalink_2superbitrf_8c.html#a3de4c224554ac6608830085912a98b86">superbitrf.c</a>
-, <a class="el" href="arch_2sim_2subsystems_2datalink_2superbitrf_8h.html#a3de4c224554ac6608830085912a98b86">superbitrf.h</a>
 </li>
 <li>SUPERBITRF_10_BIT_RESOLUTION
 : <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#aa74389f2d838aceac27d2f44fe95a76aae3b9f54d752506b9842076f38079b13b">superbitrf.h</a>
@@ -4715,12 +4981,12 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#a6a734326af21f38fbff5140c515712be">superbitrf.h</a>
 </li>
 <li>SUPERBITRF_DRDY_PIN
-: <a class="el" href="subsystems_2datalink_2superbitrf_8c.html#aea7ea8b9ec1ac799365284824757d827">superbitrf.c</a>
-, <a class="el" href="lisa__s__1_80_8h.html#aea7ea8b9ec1ac799365284824757d827">lisa_s_1.0.h</a>
+: <a class="el" href="lisa__s__1_80_8h.html#aea7ea8b9ec1ac799365284824757d827">lisa_s_1.0.h</a>
+, <a class="el" href="subsystems_2datalink_2superbitrf_8c.html#aea7ea8b9ec1ac799365284824757d827">superbitrf.c</a>
 </li>
 <li>SUPERBITRF_DRDY_PORT
-: <a class="el" href="subsystems_2datalink_2superbitrf_8c.html#a099e591914a4f6d65cdaa9b55fea1193">superbitrf.c</a>
-, <a class="el" href="lisa__s__1_80_8h.html#a099e591914a4f6d65cdaa9b55fea1193">lisa_s_1.0.h</a>
+: <a class="el" href="lisa__s__1_80_8h.html#a099e591914a4f6d65cdaa9b55fea1193">lisa_s_1.0.h</a>
+, <a class="el" href="subsystems_2datalink_2superbitrf_8c.html#a099e591914a4f6d65cdaa9b55fea1193">superbitrf.c</a>
 </li>
 <li>superbitrf_event()
 : <a class="el" href="subsystems_2datalink_2superbitrf_8c.html#a3dba487ecc02fb6e7bdde994032fd795">superbitrf.c</a>
@@ -4734,8 +5000,8 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="subsystems_2datalink_2superbitrf_8c.html#a6b5bc9267521d705d992c32bd447f2e8">superbitrf.c</a>
 </li>
 <li>superbitrf_init()
-: <a class="el" href="subsystems_2datalink_2superbitrf_8c.html#a7b9a2741375ca1dffc4f2e6a6d7a9307">superbitrf.c</a>
-, <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#a7b9a2741375ca1dffc4f2e6a6d7a9307">superbitrf.h</a>
+: <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#a7b9a2741375ca1dffc4f2e6a6d7a9307">superbitrf.h</a>
+, <a class="el" href="subsystems_2datalink_2superbitrf_8c.html#a7b9a2741375ca1dffc4f2e6a6d7a9307">superbitrf.c</a>
 </li>
 <li>SUPERBITRF_INIT_BINDING
 : <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#aff46e2692b6bb527a21559a9faf61dd3aac5f33584234a0d65990816c597ebb61">superbitrf.h</a>
@@ -4773,16 +5039,13 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="subsystems_2datalink_2superbitrf_8c.html#afadabd06b9b7bf1281e4f4031f5aa04e">superbitrf.c</a>
 </li>
 <li>superbitrf_set_mfg_id()
-: <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#ae345f2ad961222da07a6be6d68a04ea6">superbitrf.h</a>
-, <a class="el" href="subsystems_2datalink_2superbitrf_8c.html#ae345f2ad961222da07a6be6d68a04ea6">superbitrf.c</a>
+: <a class="el" href="arch_2sim_2subsystems_2datalink_2superbitrf_8c.html#ae345f2ad961222da07a6be6d68a04ea6">superbitrf.c</a>
 , <a class="el" href="arch_2sim_2subsystems_2datalink_2superbitrf_8h.html#ae345f2ad961222da07a6be6d68a04ea6">superbitrf.h</a>
-, <a class="el" href="arch_2sim_2subsystems_2datalink_2superbitrf_8c.html#ae345f2ad961222da07a6be6d68a04ea6">superbitrf.c</a>
 </li>
 <li>superbitrf_set_protocol()
-: <a class="el" href="arch_2sim_2subsystems_2datalink_2superbitrf_8c.html#a5b12cebcec8be804d5f2a5e779c44bec">superbitrf.c</a>
-, <a class="el" href="arch_2sim_2subsystems_2datalink_2superbitrf_8h.html#a5b12cebcec8be804d5f2a5e779c44bec">superbitrf.h</a>
-, <a class="el" href="subsystems_2datalink_2superbitrf_8c.html#a5b12cebcec8be804d5f2a5e779c44bec">superbitrf.c</a>
+: <a class="el" href="subsystems_2datalink_2superbitrf_8c.html#a5b12cebcec8be804d5f2a5e779c44bec">superbitrf.c</a>
 , <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#a5b12cebcec8be804d5f2a5e779c44bec">superbitrf.h</a>
+, <a class="el" href="arch_2sim_2subsystems_2datalink_2superbitrf_8c.html#a5b12cebcec8be804d5f2a5e779c44bec">superbitrf.c</a>
 </li>
 <li>SUPERBITRF_SPI_DEV
 : <a class="el" href="subsystems_2datalink_2superbitrf_8c.html#a7a9e3d569526ef39c81a34a4d6f54b82">superbitrf.c</a>
@@ -4832,8 +5095,8 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="nav__survey__rectangle_8c.html#a30834a107650d84fca6f47cbf45cf937">nav_survey_rectangle.c</a>
 </li>
 <li>survey_orientation_t
-: <a class="el" href="nav__survey__rectangle__rotorcraft_8h.html#aa8ad239dd32b3708375201570614abc5">nav_survey_rectangle_rotorcraft.h</a>
-, <a class="el" href="nav__survey__rectangle_8h.html#aa8ad239dd32b3708375201570614abc5">nav_survey_rectangle.h</a>
+: <a class="el" href="nav__survey__rectangle_8h.html#aa8ad239dd32b3708375201570614abc5">nav_survey_rectangle.h</a>
+, <a class="el" href="nav__survey__rectangle__rotorcraft_8h.html#aa8ad239dd32b3708375201570614abc5">nav_survey_rectangle_rotorcraft.h</a>
 </li>
 <li>survey_to
 : <a class="el" href="nav__survey__rectangle__rotorcraft_8c.html#a65ed667b6f0e20aa678e97ddefc3c3e8">nav_survey_rectangle_rotorcraft.c</a>
@@ -4884,8 +5147,8 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="nav__survey__poly__osam_8c.html#ab138755c4b6fd51bcff12022176fa699">nav_survey_poly_osam.c</a>
 </li>
 <li>SurveySize
-: <a class="el" href="nav__survey__poly__osam_8c.html#a3b4e0c5016f80b77ad4f362058ae3959">nav_survey_poly_osam.c</a>
-, <a class="el" href="nav__survey__poly__rotorcraft_8c.html#a3b4e0c5016f80b77ad4f362058ae3959">nav_survey_poly_rotorcraft.c</a>
+: <a class="el" href="nav__survey__poly__rotorcraft_8c.html#a3b4e0c5016f80b77ad4f362058ae3959">nav_survey_poly_rotorcraft.c</a>
+, <a class="el" href="nav__survey__poly__osam_8c.html#a3b4e0c5016f80b77ad4f362058ae3959">nav_survey_poly_osam.c</a>
 </li>
 <li>SurveyStage
 : <a class="el" href="nav__survey__polygon_8h.html#aa9c58cb0ccc605869d75547268f59fa6">nav_survey_polygon.h</a>
@@ -4899,8 +5162,8 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="nav__survey__poly__osam_8c.html#a2b14c7dc8e2615aec3718af05f9fe88f">nav_survey_poly_osam.c</a>
 </li>
 <li>SurveyToWP
-: <a class="el" href="nav__survey__poly__osam_8c.html#af4df827a192e1995fcb53a13f15bea93">nav_survey_poly_osam.c</a>
-, <a class="el" href="nav__survey__poly__rotorcraft_8c.html#a601ba96454f404a8b08f7b05dfe7f191">nav_survey_poly_rotorcraft.c</a>
+: <a class="el" href="nav__survey__poly__rotorcraft_8c.html#a601ba96454f404a8b08f7b05dfe7f191">nav_survey_poly_rotorcraft.c</a>
+, <a class="el" href="nav__survey__poly__osam_8c.html#af4df827a192e1995fcb53a13f15bea93">nav_survey_poly_osam.c</a>
 </li>
 <li>suspend_cb()
 : <a class="el" href="stm32_2usb__ser__hw_8c.html#a249c372d4216cf6de5a346625850ec63">usb_ser_hw.c</a>
@@ -4911,19 +5174,61 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>svs_size_code()
 : <a class="el" href="jpeg_8c.html#aeeebdcbde98e380664acf5bb80364783">jpeg.c</a>
 </li>
+<li>SW_COLL
+: <a class="el" href="swashplate__mixing_8h.html#a43d96d040389076c6e61d72d65f83fc5">swashplate_mixing.h</a>
+</li>
+<li>SW_FRONT
+: <a class="el" href="swashplate__mixing_8h.html#a88bb4a06680ca1ecfc783c9ffca7703f">swashplate_mixing.h</a>
+</li>
+<li>SW_MIXING_COLL_COEF
+: <a class="el" href="swashplate__mixing_8h.html#a9de28f2cdb2494d726b5df604350d8a0">swashplate_mixing.h</a>
+</li>
+<li>SW_MIXING_PITCH_COEF
+: <a class="el" href="swashplate__mixing_8h.html#a010f808a2b4605a5a092aa2a4ac6eeae">swashplate_mixing.h</a>
+</li>
+<li>SW_MIXING_ROLL_COEF
+: <a class="el" href="swashplate__mixing_8h.html#a1ddba624f4cfc23b3fdcdad624763d50">swashplate_mixing.h</a>
+</li>
+<li>SW_MIXING_TRIM_COLL
+: <a class="el" href="swashplate__mixing_8c.html#af7668edf247b3910f2ed9dbf8c02123b">swashplate_mixing.c</a>
+</li>
+<li>SW_MIXING_TRIM_PITCH
+: <a class="el" href="swashplate__mixing_8c.html#a3b16bf330efb81b1474079c35f903311">swashplate_mixing.c</a>
+</li>
+<li>SW_MIXING_TRIM_ROLL
+: <a class="el" href="swashplate__mixing_8c.html#ae26788086ee44f01196fccdf1ea094fa">swashplate_mixing.c</a>
+</li>
+<li>SW_NB
+: <a class="el" href="swashplate__mixing_8h.html#acb5fda24765f4e23eadda871c3684b76">swashplate_mixing.h</a>
+</li>
 <li>SW_RESET
 : <a class="el" href="max7456__regs_8h.html#a7a76670ff212ef11fb7daf1c9fd5836a">max7456_regs.h</a>
+</li>
+<li>SW_RIGHT
+: <a class="el" href="swashplate__mixing_8h.html#a2cc8559702e048c339f68d72a94a5fa8">swashplate_mixing.h</a>
 </li>
 <li>Swap32IfBigEndian
 : <a class="el" href="datalink_8h.html#a609d8ab8ce7af15b120a288be381f42a">datalink.h</a>
 </li>
-<li>Sweep
-: <a class="el" href="nav__survey__poly__rotorcraft_8c.html#a8c59693bfb0c154698979de6e77bb0c5a6e181b59624c49600dfdb1df3b47272f">nav_survey_poly_rotorcraft.c</a>
-, <a class="el" href="nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5a6e181b59624c49600dfdb1df3b47272f">nav_survey_poly_osam.c</a>
+<li>swashplate_mixing
+: <a class="el" href="swashplate__mixing_8h.html#ab1597832131a1e2787aecb06cce073c6">swashplate_mixing.h</a>
+, <a class="el" href="swashplate__mixing_8c.html#ab1597832131a1e2787aecb06cce073c6">swashplate_mixing.c</a>
+</li>
+<li>swashplate_mixing_init()
+: <a class="el" href="swashplate__mixing_8h.html#a704f3844ddc8396c39043d9c7ab5ad1d">swashplate_mixing.h</a>
+, <a class="el" href="swashplate__mixing_8c.html#ae18d22764360ad8d3fefe3f7b91ab781">swashplate_mixing.c</a>
+</li>
+<li>swashplate_mixing_run()
+: <a class="el" href="swashplate__mixing_8h.html#a7d4326255042772a1931e6c1eed9ea92">swashplate_mixing.h</a>
+, <a class="el" href="swashplate__mixing_8c.html#a7d4326255042772a1931e6c1eed9ea92">swashplate_mixing.c</a>
 </li>
 <li>sweep
 : <a class="el" href="nav__survey__rectangle__rotorcraft_8h.html#a0a765156054c952e91a42acfa922bd55">nav_survey_rectangle_rotorcraft.h</a>
 , <a class="el" href="nav__survey__rectangle__rotorcraft_8c.html#a0a765156054c952e91a42acfa922bd55">nav_survey_rectangle_rotorcraft.c</a>
+</li>
+<li>Sweep
+: <a class="el" href="nav__survey__poly__rotorcraft_8c.html#a8c59693bfb0c154698979de6e77bb0c5a6e181b59624c49600dfdb1df3b47272f">nav_survey_poly_rotorcraft.c</a>
+, <a class="el" href="nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5a6e181b59624c49600dfdb1df3b47272f">nav_survey_poly_osam.c</a>
 </li>
 <li>SweepCircle
 : <a class="el" href="nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5ac555870e8a5a6176a7a76bd11a66065c">nav_survey_poly_osam.c</a>
@@ -4933,9 +5238,9 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="sys__mon_8c.html#ac703cfec1b447f18605d58a9c3a0f856">sys_mon.c</a>
 </li>
 <li>sys_tick_handler()
-: <a class="el" href="sim_2mcu__periph_2sys__time__arch_8c.html#afdd94f850b193691f1bfc60c724b542a">sys_time_arch.c</a>
+: <a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c.html#afdd94f850b193691f1bfc60c724b542a">sys_time_arch.c</a>
 , <a class="el" href="sim_2mcu__periph_2sys__time__arch_8h.html#afdd94f850b193691f1bfc60c724b542a">sys_time_arch.h</a>
-, <a class="el" href="stm32_2mcu__periph_2sys__time__arch_8c.html#afdd94f850b193691f1bfc60c724b542a">sys_time_arch.c</a>
+, <a class="el" href="sim_2mcu__periph_2sys__time__arch_8c.html#afdd94f850b193691f1bfc60c724b542a">sys_time_arch.c</a>
 </li>
 <li>sys_tick_irq_handler()
 : <a class="el" href="lpc21_2mcu__periph_2sys__time__arch_8c.html#a50143082e3718f274e86ae7e5d4e86cf">sys_time_arch.c</a>
@@ -4948,7 +5253,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="sys__time_8c.html#a96dcb2dc1c7c031d0b005c7b1e0d2146">sys_time.c</a>
 </li>
 <li>sys_time_arch_init()
-: <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c.html#a9b31c2feb846b96205ae20ea6883e1c4">sys_time_arch.c</a>
+: <a class="el" href="sim_2mcu__periph_2sys__time__arch_8c.html#a9b31c2feb846b96205ae20ea6883e1c4">sys_time_arch.c</a>
 , <a class="el" href="sys__time_8h.html#a9b31c2feb846b96205ae20ea6883e1c4">sys_time.h</a>
 </li>
 <li>sys_time_cancel_timer()
@@ -4968,8 +5273,8 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="sys__time_8h.html#a1af9cc60972c40f4b83306d8ee75560e">sys_time.h</a>
 </li>
 <li>sys_time_init()
-: <a class="el" href="sys__time_8c.html#a1e6b75f4db9128a3326d8a6283b0af43">sys_time.c</a>
-, <a class="el" href="sys__time_8h.html#a1e6b75f4db9128a3326d8a6283b0af43">sys_time.h</a>
+: <a class="el" href="sys__time_8h.html#a1e6b75f4db9128a3326d8a6283b0af43">sys_time.h</a>
+, <a class="el" href="sys__time_8c.html#a1e6b75f4db9128a3326d8a6283b0af43">sys_time.c</a>
 </li>
 <li>SYS_TIME_NB_TIMER
 : <a class="el" href="sys__time_8h.html#ab5a17fcb1104999c805fb6f555b15b19">sys_time.h</a>
@@ -4997,11 +5302,11 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="sys__time_8h.html#a46ccccbd8fdf3b1c359475fd05bebd0b">sys_time.h</a>
 </li>
 <li>sys_time_update_timer()
-: <a class="el" href="sys__time_8h.html#a29aeb6ca74ebc684b9a4814383462cbd">sys_time.h</a>
-, <a class="el" href="sys__time_8c.html#a29aeb6ca74ebc684b9a4814383462cbd">sys_time.c</a>
+: <a class="el" href="sys__time_8c.html#a29aeb6ca74ebc684b9a4814383462cbd">sys_time.c</a>
+, <a class="el" href="sys__time_8h.html#a29aeb6ca74ebc684b9a4814383462cbd">sys_time.h</a>
 </li>
 <li>sys_time_usleep()
-: <a class="el" href="stm32_2mcu__periph_2sys__time__arch_8h.html#ac7670fcda069c778861e6d2e36f212aa">sys_time_arch.h</a>
+: <a class="el" href="sim_2mcu__periph_2sys__time__arch_8h.html#ac7670fcda069c778861e6d2e36f212aa">sys_time_arch.h</a>
 </li>
 <li>SysTickTimer
 : <a class="el" href="lpc21_2mcu__periph_2sys__time__arch_8h.html#a2338b70923884b9aaf945713898d991a">sys_time_arch.h</a>
@@ -5030,7 +5335,7 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 11 2015 02:02:14 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:02:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

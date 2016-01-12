@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -389,7 +389,7 @@ $(document).ready(function(){initNavTree('pprz__geodetic__float_8c_source.html',
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  <span class="keywordflow">return</span> log(tan(M_PI_4 + phi / 2.0));</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;}</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
-<div class="line"><a name="l00288"></a><span class="lineno"><a class="line" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6">  288</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6">inverse_isometric_latitude_f</a>(<span class="keywordtype">float</span> lat, <span class="keywordtype">float</span> e, <span class="keywordtype">float</span> epsilon)</div>
+<div class="line"><a name="l00288"></a><span class="lineno"><a class="line" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6">  288</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6">inverse_isometric_latitude_f</a>(<span class="keywordtype">float</span> lat, <span class="keywordtype">float</span> e, <span class="keywordtype">float</span> <a class="code" href="obstacle__avoidance_8c.html#a2dceb63003a97fa431d06d1d07edc449">epsilon</a>)</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;{</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  <span class="keywordtype">float</span> exp_l = exp(lat);</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  <span class="keywordtype">float</span> phi0 = 2 * atan(exp_l) - M_PI_2;</div>
@@ -459,6 +459,7 @@ $(document).ready(function(){initNavTree('pprz__geodetic__float_8c_source.html',
 <div class="ttc" id="hf__float_8c_html_acbcee443d6d55cb8600b3f240f5cf907"><div class="ttname"><a href="hf__float_8c.html#acbcee443d6d55cb8600b3f240f5cf907">Q</a></div><div class="ttdeci">#define Q</div><div class="ttdef"><b>Definition:</b> <a href="hf__float_8c_source.html#l00074">hf_float.c:74</a></div></div>
 <div class="ttc" id="group__math__geodetic__double_html_a945a24dc8aac305ec3e6b472b1fff709"><div class="ttname"><a href="group__math__geodetic__double.html#a945a24dc8aac305ec3e6b472b1fff709">EcefCoor_d::z</a></div><div class="ttdeci">double z</div><div class="ttdoc">in meters </div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__double_8h_source.html#l00052">pprz_geodetic_double.h:52</a></div></div>
 <div class="ttc" id="group__math__algebra__double_html_a1f8142e3dfe541de26dc117698007423"><div class="ttname"><a href="group__math__algebra__double.html#a1f8142e3dfe541de26dc117698007423">DoubleRMat::m</a></div><div class="ttdeci">double m[3 *3]</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__double_8h_source.html#l00070">pprz_algebra_double.h:70</a></div></div>
+<div class="ttc" id="obstacle__avoidance_8c_html_a2dceb63003a97fa431d06d1d07edc449"><div class="ttname"><a href="obstacle__avoidance_8c.html#a2dceb63003a97fa431d06d1d07edc449">epsilon</a></div><div class="ttdeci">float epsilon</div><div class="ttdef"><b>Definition:</b> <a href="obstacle__avoidance_8c_source.html#l00119">obstacle_avoidance.c:119</a></div></div>
 <div class="ttc" id="pprz__geodetic__float_8c_html_a2a82ebdce90a3e41d54f72c5e787fcd0"><div class="ttname"><a href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0">enu_of_ecef_point_f</a></div><div class="ttdeci">void enu_of_ecef_point_f(struct EnuCoor_f *enu, struct LtpDef_f *def, struct EcefCoor_f *ecef)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__float_8c_source.html#l00086">pprz_geodetic_float.c:86</a></div></div>
 <div class="ttc" id="pprz__geodetic__float_8h_html_structLtpDef__f"><div class="ttname"><a href="pprz__geodetic__float_8h.html#structLtpDef__f">LtpDef_f</a></div><div class="ttdoc">definition of the local (flat earth) coordinate system </div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__float_8h_source.html#l00093">pprz_geodetic_float.h:93</a></div></div>
 <div class="ttc" id="pprz__geodetic__float_8h_html_ac734d9cc1b4426967f32055e68bc475b"><div class="ttname"><a href="pprz__geodetic__float_8h.html#ac734d9cc1b4426967f32055e68bc475b">UtmCoor_f::east</a></div><div class="ttdeci">float east</div><div class="ttdoc">in meters </div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__float_8h_source.html#l00083">pprz_geodetic_float.h:83</a></div></div>
@@ -536,7 +537,7 @@ $(document).ready(function(){initNavTree('pprz__geodetic__float_8c_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_29343b6f5fcd4b75a5dfbb985ff56864.html">math</a></li><li class="navelem"><a class="el" href="pprz__geodetic__float_8c.html">pprz_geodetic_float.c</a></li>
-    <li class="footer">Generated on Wed Nov 11 2015 02:01:07 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:01:20 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

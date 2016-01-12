@@ -1,22 +1,48 @@
 <map id="dl_parse_msg" name="dl_parse_msg">
-<area shape="rect" id="node2" href="$gps__piksi_8c.html#a92de5b7fc6f0e0c9c2a3f6aa1b175c6f" title="Override the default GPS packet injector to inject the data trough UART. " alt="" coords="202,5,325,32"/>
-<area shape="rect" id="node3" href="$common__flight__plan_8c.html#ad5b3972efdfb4b34574a534615be3db2" title="nav_goto_block" alt="" coords="203,56,324,83"/>
-<area shape="rect" id="node4" href="$gps__datalink_8c.html#a52917dbc30edfd56ab9b248b35ea79d2" title="Parse the REMOTE_GPS datalink packet. " alt="" coords="191,107,336,133"/>
-<area shape="rect" id="node10" href="$subsystems_2radio__control_2rc__datalink_8c.html#a22105107236d00fa616659322bd89a02" title="Decode datalink message to get rc values with RC_3CH message Mode and throttle are merge in the same ..." alt="" coords="181,157,345,184"/>
-<area shape="rect" id="node11" href="$subsystems_2radio__control_2rc__datalink_8c.html#aa3d40235f29aab16121c0073217835a2" title="Decode datalink message to get rc values with RC_4CH message. " alt="" coords="181,208,345,235"/>
-<area shape="rect" id="node12" href="$group__state__position.html#ga22089bd5ea9ef422b16c31634286f54a" title="Test if local coordinates are valid. " alt="" coords="164,259,363,285"/>
-<area shape="rect" id="node13" href="$waypoints_8c.html#af898f624e88c626a1d47300e872ac444" title="waypoint_move_lla" alt="" coords="192,309,335,336"/>
-<area shape="rect" id="node5" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="433,80,532,107"/>
-<area shape="rect" id="node8" href="$linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="411,135,555,161"/>
-<area shape="rect" id="node6" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="603,21,749,48"/>
-<area shape="rect" id="node7" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="608,73,744,114"/>
-<area shape="rect" id="node9" href="$sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="607,139,745,165"/>
-<area shape="rect" id="node14" href="$waypoints_8c.html#ae5ab24779a6d54a1086c472935b21f47" title="waypoint_set_lla" alt="" coords="419,284,546,311"/>
-<area shape="rect" id="node21" href="$waypoints_8c.html#a66de5ecd98d9e26a9170844da476e244" title="waypoint_is_global" alt="" coords="413,335,553,361"/>
-<area shape="rect" id="node15" href="$waypoints_8c.html#af184581f432d472b608685122f2d944d" title="update local ENU coordinates from its LLA coordinates " alt="" coords="610,284,742,311"/>
-<area shape="rect" id="node16" href="$group__math__geodetic__int.html#gab462d1e8278e0dd9cbc9ff463cde8f5e" title="Convert a point from LLA to local ENU. " alt="" coords="797,284,932,311"/>
-<area shape="rect" id="node17" href="$group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="1005,259,1103,285"/>
-<area shape="rect" id="node20" href="$group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="980,309,1128,336"/>
-<area shape="rect" id="node18" href="$pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1178,233,1278,260"/>
-<area shape="rect" id="node19" href="$group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1176,284,1280,311"/>
+<area shape="rect" id="node2" href="$rotorcraft_2autopilot_8c.html#a2c66693af9a2611033c90f5482436004" title="Set position and heading setpoints wrt. " alt="" coords="164,166,328,207"/>
+<area shape="rect" id="node3" href="$rotorcraft_2autopilot_8c.html#a0033e5c15dd18dc0332a5a2ac3b8ca73" title="Set position and heading setpoints in GUIDED mode. " alt="" coords="378,115,573,141"/>
+<area shape="rect" id="node26" href="$group__state__position.html#ga22089bd5ea9ef422b16c31634286f54a" title="Test if local coordinates are valid. " alt="" coords="376,281,575,308"/>
+<area shape="rect" id="node27" href="$rotorcraft_2autopilot_8c.html#a112d1fd62b7a4ad1cc8f754f456f6add" title="Set position and heading setpoints wrt. " alt="" coords="164,231,328,273"/>
+<area shape="rect" id="node28" href="$gps__piksi_8c.html#a92de5b7fc6f0e0c9c2a3f6aa1b175c6f" title="Override the default GPS packet injector to inject the data trough UART. " alt="" coords="185,399,307,425"/>
+<area shape="rect" id="node29" href="$common__flight__plan_8c.html#ad5b3972efdfb4b34574a534615be3db2" title="nav_goto_block" alt="" coords="185,449,307,476"/>
+<area shape="rect" id="node30" href="$gps__datalink_8c.html#a52917dbc30edfd56ab9b248b35ea79d2" title="Parse the REMOTE_GPS datalink packet. " alt="" coords="173,500,319,527"/>
+<area shape="rect" id="node35" href="$gps__datalink_8c.html#a9f029d3474ac87b74bd3ae638d6dd247" title="parse_gps_datalink\l_small" alt="" coords="173,551,319,593"/>
+<area shape="rect" id="node41" href="$subsystems_2radio__control_2rc__datalink_8c.html#a22105107236d00fa616659322bd89a02" title="Decode datalink message to get rc values with RC_3CH message Mode and throttle are merge in the same ..." alt="" coords="164,617,328,644"/>
+<area shape="rect" id="node42" href="$subsystems_2radio__control_2rc__datalink_8c.html#aa3d40235f29aab16121c0073217835a2" title="Decode datalink message to get rc values with RC_4CH message. " alt="" coords="164,668,328,695"/>
+<area shape="rect" id="node43" href="$subsystems_2navigation_2waypoints_8c.html#af898f624e88c626a1d47300e872ac444" title="waypoint_move_lla" alt="" coords="175,348,317,375"/>
+<area shape="rect" id="node7" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="376,173,575,200"/>
+<area shape="rect" id="node12" href="$group__state__position.html#gac1b41866b307723e3ad8ddd566d4f627" title="Get position in local NED coordinates (float). " alt="" coords="393,231,558,257"/>
+<area shape="rect" id="node4" href="$guidance__h_8c.html#a1780f9e7e24e59d9d1490ae65f1b91b7" title="Set heading setpoint in GUIDED mode. " alt="" coords="638,107,810,149"/>
+<area shape="rect" id="node5" href="$guidance__h_8c.html#aa17d6dd9c27eaf38a8be67f7edbef8e1" title="Set horizontal position setpoint in GUIDED mode. " alt="" coords="623,5,825,32"/>
+<area shape="rect" id="node6" href="$rotorcraft_2guidance_2guidance__v_8c.html#aff132ba48a5bc3d471ec1c57a291bfd4" title="Set z setpoint in GUIDED mode. " alt="" coords="631,56,817,83"/>
+<area shape="rect" id="node8" href="$group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="642,173,806,200"/>
+<area shape="rect" id="node9" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="873,83,1041,109"/>
+<area shape="rect" id="node10" href="$group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="1089,83,1243,109"/>
+<area shape="rect" id="node11" href="$group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="float_eulers_of_quat" alt="" coords="1091,32,1241,59"/>
+<area shape="rect" id="node13" href="$group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title="stateCalcPositionNed_f" alt="" coords="639,235,809,261"/>
+<area shape="rect" id="node14" href="$pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="1091,133,1241,160"/>
+<area shape="rect" id="node16" href="$group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="888,339,1027,365"/>
+<area shape="rect" id="node19" href="$pprz__geodetic__float_8c.html#aba90b4f88dce2d3eadce9c28fcde2d54" title="ned_of_lla_point_f" alt="" coords="889,184,1025,211"/>
+<area shape="rect" id="node21" href="$group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="1117,352,1215,379"/>
+<area shape="rect" id="node23" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="908,235,1007,261"/>
+<area shape="rect" id="node15" href="$pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1291,133,1440,160"/>
+<area shape="rect" id="node17" href="$group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="1097,403,1235,429"/>
+<area shape="rect" id="node18" href="$group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1291,428,1439,455"/>
+<area shape="rect" id="node20" href="$pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1315,243,1415,269"/>
+<area shape="rect" id="node22" href="$group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1313,352,1417,379"/>
+<area shape="rect" id="node24" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1093,235,1239,261"/>
+<area shape="rect" id="node25" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1098,286,1234,327"/>
+<area shape="rect" id="node31" href="$gps_8c.html#ad68ada7274989a4c9f08bc06d74ee5bd" title="Convert time in sys_time ticks to GPS time of week. " alt="" coords="388,457,563,484"/>
+<area shape="rect" id="node33" href="$linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="403,508,547,535"/>
+<area shape="rect" id="node32" href="$sys__time_8h.html#ab67b78f01783839deb76623ff83981dd" title="msec_of_sys_time_ticks" alt="" coords="636,457,812,484"/>
+<area shape="rect" id="node34" href="$sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="655,508,793,535"/>
+<area shape="rect" id="node36" href="$group__math__geodetic__int.html#gad8c22560014d3cb00cccd50f9b79478d" title="Convert a point in local ENU to ECEF. " alt="" coords="401,609,549,636"/>
+<area shape="rect" id="node37" href="$group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF. " alt="" coords="653,572,795,599"/>
+<area shape="rect" id="node38" href="$group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="lla_of_ecef_i" alt="" coords="426,660,525,687"/>
+<area shape="rect" id="node39" href="$pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="674,635,774,661"/>
+<area shape="rect" id="node40" href="$group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title="lla_of_ecef_d" alt="" coords="672,685,776,712"/>
+<area shape="rect" id="node44" href="$subsystems_2navigation_2waypoints_8c.html#ae5ab24779a6d54a1086c472935b21f47" title="waypoint_set_lla" alt="" coords="412,391,539,417"/>
+<area shape="rect" id="node47" href="$subsystems_2navigation_2waypoints_8c.html#a66de5ecd98d9e26a9170844da476e244" title="waypoint_is_global" alt="" coords="405,340,545,367"/>
+<area shape="rect" id="node45" href="$subsystems_2navigation_2waypoints_8c.html#af184581f432d472b608685122f2d944d" title="update local ENU coordinates from its LLA coordinates " alt="" coords="658,391,790,417"/>
+<area shape="rect" id="node46" href="$group__math__geodetic__int.html#gab462d1e8278e0dd9cbc9ff463cde8f5e" title="Convert a point from LLA to local ENU. " alt="" coords="890,391,1025,417"/>
 </map>

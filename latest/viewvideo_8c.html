@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -148,6 +148,8 @@ Macros</h2></td></tr>
 <tr class="separator:a8e90f0654fb109ed5126ce59fbdb5de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a769ad673bc2a1bc72bdf96081f4196b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewvideo_8c.html#a769ad673bc2a1bc72bdf96081f4196b9">VIEWVIDEO_RTP_TIME_INC</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:a769ad673bc2a1bc72bdf96081f4196b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fca398e492adfafd1cd75def2ea9155"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewvideo_8c.html#a2fca398e492adfafd1cd75def2ea9155">VIEWVIDEO_SHOT_PATH</a>&#160;&#160;&#160;/data/video/images</td></tr>
+<tr class="separator:a2fca398e492adfafd1cd75def2ea9155"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a145420c058c30ea1271e8a07f94b8a27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewvideo_8c.html#a145420c058c30ea1271e8a07f94b8a27">VIEWVIDEO_USE_NETCAT</a>&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></td></tr>
 <tr class="separator:a145420c058c30ea1271e8a07f94b8a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a620cd99a6d07e8129ed89b517aaca1f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewvideo_8c.html#a620cd99a6d07e8129ed89b517aaca1f0">VIEWVIDEO_USE_RTP</a>&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td></tr>
@@ -156,6 +158,7 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a6a9f8aa0c7db5b292f18c8266808fe62"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewvideo_8c.html#a6a9f8aa0c7db5b292f18c8266808fe62">viewvideo_function</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img)</td></tr>
+<tr class="memdesc:a6a9f8aa0c7db5b292f18c8266808fe62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles all the video streaming and saving of the image shots This is a sepereate thread, so it needs to be thread safe!  <a href="#a6a9f8aa0c7db5b292f18c8266808fe62">More...</a><br /></td></tr>
 <tr class="separator:a6a9f8aa0c7db5b292f18c8266808fe62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8479777ac5ff98cdf58349e741f04005"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewvideo_8c.html#a8479777ac5ff98cdf58349e741f04005">viewvideo_init</a> (void)</td></tr>
 <tr class="memdesc:a8479777ac5ff98cdf58349e741f04005"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the view video.  <a href="#a8479777ac5ff98cdf58349e741f04005">More...</a><br /></td></tr>
@@ -163,11 +166,10 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:a192493a4796af4cc04319b183eaed146"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewvideo_8c.html#a192493a4796af4cc04319b183eaed146">video_sock</a></td></tr>
+<tr class="separator:a192493a4796af4cc04319b183eaed146"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="viewvideo_8h.html#structviewvideo__t">viewvideo_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewvideo_8c.html#a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74">viewvideo</a></td></tr>
 <tr class="separator:a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a192493a4796af4cc04319b183eaed146"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewvideo_8c.html#a192493a4796af4cc04319b183eaed146">video_sock</a></td></tr>
-<tr class="memdesc:a192493a4796af4cc04319b183eaed146"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles all the video streaming and saving of the image shots This is a sepereate thread, so it needs to be thread safe!  <a href="#a192493a4796af4cc04319b183eaed146">More...</a><br /></td></tr>
-<tr class="separator:a192493a4796af4cc04319b183eaed146"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Get live images from a RTP/UDP stream and save pictures on internal memory. </p>
@@ -201,7 +203,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00057">57</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
 
-<p>Referenced by <a class="el" href="viewvideo_8c_source.html#l00103">viewvideo_function()</a>.</p>
+<p>Referenced by <a class="el" href="viewvideo_8c_source.html#l00114">viewvideo_function()</a>.</p>
 
 </div>
 </div>
@@ -217,7 +219,23 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00063">63</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
 
-<p>Referenced by <a class="el" href="viewvideo_8c_source.html#l00103">viewvideo_function()</a>.</p>
+<p>Referenced by <a class="el" href="viewvideo_8c_source.html#l00114">viewvideo_function()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2fca398e492adfafd1cd75def2ea9155"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VIEWVIDEO_SHOT_PATH&#160;&#160;&#160;/data/video/images</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00072">72</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
+
+<p>Referenced by <a class="el" href="viewvideo_8c_source.html#l00198">viewvideo_init()</a>.</p>
 
 </div>
 </div>
@@ -231,9 +249,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00069">69</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
+<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00079">79</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
 
-<p>Referenced by <a class="el" href="viewvideo_8c_source.html#l00103">viewvideo_function()</a>.</p>
+<p>Referenced by <a class="el" href="viewvideo_8c_source.html#l00114">viewvideo_function()</a>.</p>
 
 </div>
 </div>
@@ -247,7 +265,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00072">72</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
+<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00083">83</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
 
 </div>
 </div>
@@ -266,11 +284,13 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00103">103</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
+<p>Handles all the video streaming and saving of the image shots This is a sepereate thread, so it needs to be thread safe! </p>
 
-<p>References <a class="el" href="viewvideo_8h_source.html#l00040">viewvideo_t::downsize_factor</a>, <a class="el" href="image_8h_source.html#l00045">image_t::h</a>, <a class="el" href="image_8c_source.html#l00038">image_create()</a>, <a class="el" href="image_8c_source.html#l00063">image_free()</a>, <a class="el" href="image_8h_source.html#l00037">IMAGE_JPEG</a>, <a class="el" href="image_8h_source.html#l00035">IMAGE_YUV422</a>, <a class="el" href="image_8c_source.html#l00213">image_yuv422_downsample()</a>, <a class="el" href="viewvideo_8h_source.html#l00039">viewvideo_t::is_streaming</a>, <a class="el" href="jpeg_8c_source.html#l00425">jpeg_encode_image()</a>, <a class="el" href="rtp_8c_source.html#l00097">rtp_frame_send()</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="viewvideo_8h_source.html#l00042">viewvideo_t::use_rtp</a>, <a class="el" href="viewvideo_8c_source.html#l00101">video_sock</a>, <a class="el" href="viewvideo_8c_source.html#l00090">viewvideo</a>, <a class="el" href="viewvideo_8c_source.html#l00057">VIEWVIDEO_QUALITY_FACTOR</a>, <a class="el" href="viewvideo_8c_source.html#l00063">VIEWVIDEO_RTP_TIME_INC</a>, <a class="el" href="viewvideo_8c_source.html#l00069">VIEWVIDEO_USE_NETCAT</a>, and <a class="el" href="image_8h_source.html#l00044">image_t::w</a>.</p>
+<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00114">114</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
 
-<p>Referenced by <a class="el" href="viewvideo_8c_source.html#l00188">viewvideo_init()</a>.</p>
+<p>References <a class="el" href="image_8h_source.html#l00050">image_t::buf</a>, <a class="el" href="image_8h_source.html#l00049">image_t::buf_size</a>, <a class="el" href="viewvideo_8h_source.html#l00040">viewvideo_t::downsize_factor</a>, <a class="el" href="image_8h_source.html#l00045">image_t::h</a>, <a class="el" href="image_8c_source.html#l00038">image_create()</a>, <a class="el" href="image_8c_source.html#l00063">image_free()</a>, <a class="el" href="image_8h_source.html#l00037">IMAGE_JPEG</a>, <a class="el" href="image_8h_source.html#l00035">IMAGE_YUV422</a>, <a class="el" href="image_8c_source.html#l00213">image_yuv422_downsample()</a>, <a class="el" href="viewvideo_8h_source.html#l00039">viewvideo_t::is_streaming</a>, <a class="el" href="jpeg_8c_source.html#l00425">jpeg_encode_image()</a>, <a class="el" href="rtp_8c_source.html#l00097">rtp_frame_send()</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="viewvideo_8h_source.html#l00042">viewvideo_t::use_rtp</a>, <a class="el" href="viewvideo_8c_source.html#l00090">video_sock</a>, <a class="el" href="viewvideo_8c_source.html#l00100">viewvideo</a>, <a class="el" href="viewvideo_8c_source.html#l00057">VIEWVIDEO_QUALITY_FACTOR</a>, <a class="el" href="viewvideo_8c_source.html#l00063">VIEWVIDEO_RTP_TIME_INC</a>, <a class="el" href="viewvideo_8c_source.html#l00079">VIEWVIDEO_USE_NETCAT</a>, and <a class="el" href="image_8h_source.html#l00044">image_t::w</a>.</p>
+
+<p>Referenced by <a class="el" href="viewvideo_8c_source.html#l00198">viewvideo_init()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -312,7 +332,7 @@ Variables</h2></td></tr>
 
 <p>Initialize the view video. </p>
 
-<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00188">188</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
+<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00198">198</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
 
 </div>
 </div>
@@ -327,11 +347,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Handles all the video streaming and saving of the image shots This is a sepereate thread, so it needs to be thread safe! </p>
+<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00090">90</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
 
-<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00101">101</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
-
-<p>Referenced by <a class="el" href="viewvideo_8c_source.html#l00103">viewvideo_function()</a>, and <a class="el" href="viewvideo_8c_source.html#l00188">viewvideo_init()</a>.</p>
+<p>Referenced by <a class="el" href="viewvideo_8c_source.html#l00114">viewvideo_function()</a>, and <a class="el" href="viewvideo_8c_source.html#l00198">viewvideo_init()</a>.</p>
 
 </div>
 </div>
@@ -348,16 +366,18 @@ Variables</h2></td></tr>
 <div class="line">  .is_streaming = <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>,</div>
 <div class="line">  .downsize_factor = <a class="code" href="viewvideo_8c.html#a7be96404c0964c92f49f092c0d13634e">VIEWVIDEO_DOWNSIZE_FACTOR</a>,</div>
 <div class="line">  .quality_factor = <a class="code" href="viewvideo_8c.html#a8e90f0654fb109ed5126ce59fbdb5de3">VIEWVIDEO_QUALITY_FACTOR</a>,</div>
+<div class="line"></div>
 <div class="line">  .use_rtp = <a class="code" href="viewvideo_8c.html#a620cd99a6d07e8129ed89b517aaca1f0">VIEWVIDEO_USE_RTP</a>,</div>
+<div class="line"></div>
 <div class="line">}</div>
 <div class="ttc" id="viewvideo_8c_html_a8e90f0654fb109ed5126ce59fbdb5de3"><div class="ttname"><a href="viewvideo_8c.html#a8e90f0654fb109ed5126ce59fbdb5de3">VIEWVIDEO_QUALITY_FACTOR</a></div><div class="ttdeci">#define VIEWVIDEO_QUALITY_FACTOR</div><div class="ttdef"><b>Definition:</b> <a href="viewvideo_8c_source.html#l00057">viewvideo.c:57</a></div></div>
 <div class="ttc" id="viewvideo_8c_html_a7be96404c0964c92f49f092c0d13634e"><div class="ttname"><a href="viewvideo_8c.html#a7be96404c0964c92f49f092c0d13634e">VIEWVIDEO_DOWNSIZE_FACTOR</a></div><div class="ttdeci">#define VIEWVIDEO_DOWNSIZE_FACTOR</div><div class="ttdef"><b>Definition:</b> <a href="viewvideo_8c_source.html#l00051">viewvideo.c:51</a></div></div>
 <div class="ttc" id="std_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> <a href="std_8h_source.html#l00005">std.h:5</a></div></div>
-<div class="ttc" id="viewvideo_8c_html_a620cd99a6d07e8129ed89b517aaca1f0"><div class="ttname"><a href="viewvideo_8c.html#a620cd99a6d07e8129ed89b517aaca1f0">VIEWVIDEO_USE_RTP</a></div><div class="ttdeci">#define VIEWVIDEO_USE_RTP</div><div class="ttdef"><b>Definition:</b> <a href="viewvideo_8c_source.html#l00072">viewvideo.c:72</a></div></div>
+<div class="ttc" id="viewvideo_8c_html_a620cd99a6d07e8129ed89b517aaca1f0"><div class="ttname"><a href="viewvideo_8c.html#a620cd99a6d07e8129ed89b517aaca1f0">VIEWVIDEO_USE_RTP</a></div><div class="ttdeci">#define VIEWVIDEO_USE_RTP</div><div class="ttdef"><b>Definition:</b> <a href="viewvideo_8c_source.html#l00083">viewvideo.c:83</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00090">90</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
+<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00100">100</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
 
-<p>Referenced by <a class="el" href="video__usb__logger_8c_source.html#l00072">video_usb_logger_periodic()</a>, <a class="el" href="viewvideo_8c_source.html#l00103">viewvideo_function()</a>, and <a class="el" href="viewvideo_8c_source.html#l00188">viewvideo_init()</a>.</p>
+<p>Referenced by <a class="el" href="video__usb__logger_8c_source.html#l00072">video_usb_logger_periodic()</a>, <a class="el" href="viewvideo_8c_source.html#l00114">viewvideo_function()</a>, and <a class="el" href="viewvideo_8c_source.html#l00198">viewvideo_init()</a>.</p>
 
 </div>
 </div>
@@ -367,7 +387,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="viewvideo_8c.html">viewvideo.c</a></li>
-    <li class="footer">Generated on Wed Nov 11 2015 02:01:35 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:01:49 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

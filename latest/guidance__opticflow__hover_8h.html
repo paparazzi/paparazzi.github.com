@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('guidance__opticflow__hover_8h.html',''
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:structopticflow__stab__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__opticflow__hover_8h.html#structopticflow__stab__t">opticflow_stab_t</a></td></tr>
+<tr class="memitem:structopticflow__stab__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__OA_8h.html#structopticflow__stab__t">opticflow_stab_t</a></td></tr>
 <tr class="separator:structopticflow__stab__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -161,7 +161,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a20c98e89ac4c2f80fdd841992ec3053c"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="guidance__opticflow__hover_8h.html#structopticflow__stab__t">opticflow_stab_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__opticflow__hover_8h.html#a20c98e89ac4c2f80fdd841992ec3053c">opticflow_stab</a></td></tr>
+<tr class="memitem:a20c98e89ac4c2f80fdd841992ec3053c"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="guidance__OA_8h.html#structopticflow__stab__t">opticflow_stab_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__opticflow__hover_8h.html#a20c98e89ac4c2f80fdd841992ec3053c">opticflow_stab</a></td></tr>
 <tr class="separator:a20c98e89ac4c2f80fdd841992ec3053c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -269,32 +269,6 @@ The pitch P gain on the err_vy. </td></tr>
 
 <p>Definition at line <a class="el" href="ctrl__module__demo_8c_source.html#l00085">85</a> of file <a class="el" href="ctrl__module__demo_8c_source.html">ctrl_module_demo.c</a>.</p>
 
-<p>References <a class="el" href="guidance__opticflow__hover_8h_source.html#l00047">opticflow_stab_t::cmd</a>, <a class="el" href="ctrl__module__demo_8c_source.html#l00048">ctrl_module_init()</a>, <a class="el" href="guidance__opticflow__hover_8h_source.html#l00045">opticflow_stab_t::err_vx_int</a>, <a class="el" href="guidance__opticflow__hover_8h_source.html#l00046">opticflow_stab_t::err_vy_int</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00147">Int32Eulers::phi</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00149">Int32Eulers::psi</a>, <a class="el" href="state_8h_source.html#l01096">stateGetNedToBodyEulers_i()</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00148">Int32Eulers::theta</a>.</p>
-
-<p>Referenced by <a class="el" href="guidance__h_8c_source.html#l00216">guidance_h_mode_changed()</a>.</p>
-
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="guidance__opticflow__hover_8h_af0a3b4e238d064326406719e8244e92d_cgraph.png" border="0" usemap="#guidance__opticflow__hover_8h_af0a3b4e238d064326406719e8244e92d_cgraph" alt=""/></div>
-<map name="guidance__opticflow__hover_8h_af0a3b4e238d064326406719e8244e92d_cgraph" id="guidance__opticflow__hover_8h_af0a3b4e238d064326406719e8244e92d_cgraph">
-<area shape="rect" id="node2" href="ctrl__module__demo_8c.html#a2a7323cb20a25d04675e7029725d0f06" title="ctrl_module_init" alt="" coords="282,5,405,32"/><area shape="rect" id="node3" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int). " alt="" coords="244,56,443,83"/><area shape="rect" id="node4" href="group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int). " alt="" coords="491,56,653,83"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title="orientationCalcEulers_i" alt="" coords="701,56,868,83"/><area shape="rect" id="node6" href="group__math__algebra__int.html#gaf2f61a27841c68cefbd27a8614fcd90e" title="int32_eulers_of_rmat" alt="" coords="916,31,1073,57"/><area shape="rect" id="node7" href="group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e" title="int32_eulers_of_quat" alt="" coords="917,81,1072,108"/></map>
-</div>
-</p>
-
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="guidance__opticflow__hover_8h_af0a3b4e238d064326406719e8244e92d_icgraph.png" border="0" usemap="#guidance__opticflow__hover_8h_af0a3b4e238d064326406719e8244e92d_icgraph" alt=""/></div>
-<map name="guidance__opticflow__hover_8h_af0a3b4e238d064326406719e8244e92d_icgraph" id="guidance__opticflow__hover_8h_af0a3b4e238d064326406719e8244e92d_icgraph">
-<area shape="rect" id="node2" href="guidance__h_8h.html#a2903786227eb11507928f99870099225" title="guidance_h_mode_changed" alt="" coords="244,107,445,133"/><area shape="rect" id="node3" href="rotorcraft_2autopilot_8h.html#a3aaa2cf16ee3b25e8fca9bbd1d579d64" title="autopilot_set_mode" alt="" coords="493,107,643,133"/><area shape="rect" id="node4" href="rotorcraft_2autopilot_8c.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization. " alt="" coords="721,5,825,32"/><area shape="rect" id="node5" href="rotorcraft_2autopilot_8h.html#a7339f5741706cb9c2e2186b1174cc770" title="Get autopilot mode from two 2way switches. " alt="" coords="691,56,856,83"/><area shape="rect" id="node8" href="rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="1075,157,1209,184"/><area shape="rect" id="node14" href="main_8h.html#a6266a73fe8c0512f1de72cea96e5110b" title="failsafe_check" alt="" coords="718,107,829,133"/><area shape="rect" id="node16" href="guidance__flip_8h.html#a341f66aaa1a6e736e980ae5cccb3c0f5" title="guidance_flip_run" alt="" coords="707,157,840,184"/><area shape="rect" id="node6" href="main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="917,5,1014,32"/><area shape="rect" id="node7" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1115,31,1169,57"/><area shape="rect" id="node9" href="main_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="1257,157,1368,184"/><area shape="rect" id="node10" href="main_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="1416,132,1579,159"/><area shape="rect" id="node11" href="fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1639,107,1693,133"/><area shape="rect" id="node12" href="main__chibios__libopencm3_8c.html#ad648a546fe66cd5f9328f33221a40c64" title="pprz_thd" alt="" coords="1627,157,1705,184"/><area shape="rect" id="node13" href="main__chibios__libopencm3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1753,157,1808,184"/><area shape="rect" id="node15" href="main_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="main_init" alt="" coords="925,56,1005,83"/><area shape="rect" id="node17" href="guidance__h_8h.html#ac4cf6da90a4278b4d0b2e4f227b33f2c" title="guidance_h_run" alt="" coords="904,157,1027,184"/></map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="ab39ce31e4173de7b9aefa839324ec9a2"></a>
@@ -315,32 +289,6 @@ The pitch P gain on the err_vy. </td></tr>
 
 <p>Definition at line <a class="el" href="ctrl__module__demo_8c_source.html#l00080">80</a> of file <a class="el" href="ctrl__module__demo_8c_source.html">ctrl_module_demo.c</a>.</p>
 
-<p>References <a class="el" href="ctrl__module__demo_8c_source.html#l00048">ctrl_module_init()</a>, <a class="el" href="guidance__opticflow__hover_8c_source.html#l00151">stabilization_opticflow_vel_cb()</a>, and <a class="el" href="guidance__opticflow__hover_8c_source.html#l00043">VISION_VELOCITY_ESTIMATE_ID</a>.</p>
-
-<p>Referenced by <a class="el" href="guidance__h_8c_source.html#l00168">guidance_h_init()</a>.</p>
-
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="guidance__opticflow__hover_8h_ab39ce31e4173de7b9aefa839324ec9a2_cgraph.png" border="0" usemap="#guidance__opticflow__hover_8h_ab39ce31e4173de7b9aefa839324ec9a2_cgraph" alt=""/></div>
-<map name="guidance__opticflow__hover_8h_ab39ce31e4173de7b9aefa839324ec9a2_cgraph" id="guidance__opticflow__hover_8h_ab39ce31e4173de7b9aefa839324ec9a2_cgraph">
-<area shape="rect" id="node2" href="ctrl__module__demo_8c.html#a2a7323cb20a25d04675e7029725d0f06" title="ctrl_module_init" alt="" coords="248,5,371,32"/><area shape="rect" id="node3" href="guidance__opticflow__hover_8c.html#a3d452fe7da14175260a90ed97cd70dc5" title="Update the controls on a new VELOCITY_ESTIMATE ABI message. " alt="" coords="229,57,389,98"/></map>
-</div>
-</p>
-
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="guidance__opticflow__hover_8h_ab39ce31e4173de7b9aefa839324ec9a2_icgraph.png" border="0" usemap="#guidance__opticflow__hover_8h_ab39ce31e4173de7b9aefa839324ec9a2_icgraph" alt=""/></div>
-<map name="guidance__opticflow__hover_8h_ab39ce31e4173de7b9aefa839324ec9a2_icgraph" id="guidance__opticflow__hover_8h_ab39ce31e4173de7b9aefa839324ec9a2_icgraph">
-<area shape="rect" id="node2" href="guidance__h_8h.html#a7bc4ea0d5351c2ba6ee160db5a2e9f80" title="guidance_h_init" alt="" coords="229,5,351,32"/><area shape="rect" id="node3" href="rotorcraft_2autopilot_8c.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization. " alt="" coords="399,5,503,32"/></map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a4c33bfc7d07ffb6d33a1af63799da082"></a>
@@ -360,21 +308,6 @@ The pitch P gain on the err_vy. </td></tr>
 <p>Read the RC commands. </p>
 
 <p>Definition at line <a class="el" href="ctrl__module__demo_8c_source.html#l00090">90</a> of file <a class="el" href="ctrl__module__demo_8c_source.html">ctrl_module_demo.c</a>.</p>
-
-<p>References <a class="el" href="ctrl__module__demo_8c.html#a2c7b8243840c6a49bbf66b4400720f39">ctrl_module_demo</a>, <a class="el" href="radio__control_8c_source.html#l00030">radio_control</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00044">RADIO_PITCH</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00043">RADIO_ROLL</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00042">RADIO_THROTTLE</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00045">RADIO_YAW</a>, <a class="el" href="ctrl__module__demo_8c_source.html#l00036">ctrl_module_demo_struct::rc_t</a>, <a class="el" href="ctrl__module__demo_8c_source.html#l00033">ctrl_module_demo_struct::rc_x</a>, <a class="el" href="ctrl__module__demo_8c_source.html#l00034">ctrl_module_demo_struct::rc_y</a>, <a class="el" href="ctrl__module__demo_8c_source.html#l00035">ctrl_module_demo_struct::rc_z</a>, and <a class="el" href="radio__control_8h_source.html#l00058">RadioControl::values</a>.</p>
-
-<p>Referenced by <a class="el" href="guidance__h_8c_source.html#l00293">guidance_h_read_rc()</a>.</p>
-
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="guidance__opticflow__hover_8h_a4c33bfc7d07ffb6d33a1af63799da082_icgraph.png" border="0" usemap="#guidance__opticflow__hover_8h_a4c33bfc7d07ffb6d33a1af63799da082_icgraph" alt=""/></div>
-<map name="guidance__opticflow__hover_8h_a4c33bfc7d07ffb6d33a1af63799da082_icgraph" id="guidance__opticflow__hover_8h_a4c33bfc7d07ffb6d33a1af63799da082_icgraph">
-<area shape="rect" id="node2" href="guidance__h_8h.html#a7db3290fc5f62abc15a1bb1638b4922f" title="guidance_h_read_rc" alt="" coords="259,5,409,32"/><area shape="rect" id="node3" href="rotorcraft_2autopilot_8h.html#a7339f5741706cb9c2e2186b1174cc770" title="Get autopilot mode from two 2way switches. " alt="" coords="457,5,623,32"/><area shape="rect" id="node4" href="main_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="671,5,768,32"/><area shape="rect" id="node5" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="816,5,871,32"/></map>
-</div>
-</p>
 
 </div>
 </div>
@@ -402,32 +335,6 @@ The pitch P gain on the err_vy. </td></tr>
 
 <p>Definition at line <a class="el" href="ctrl__module__demo_8c_source.html#l00099">99</a> of file <a class="el" href="ctrl__module__demo_8c_source.html">ctrl_module_demo.c</a>.</p>
 
-<p>References <a class="el" href="guidance__opticflow__hover_8h_source.html#l00047">opticflow_stab_t::cmd</a>, <a class="el" href="ctrl__module__demo_8c_source.html#l00057">ctrl_module_run()</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00176">stabilization_attitude_run()</a>, and <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00154">stabilization_attitude_set_rpy_setpoint_i()</a>.</p>
-
-<p>Referenced by <a class="el" href="guidance__h_8c_source.html#l00347">guidance_h_run()</a>.</p>
-
-<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="guidance__opticflow__hover_8h_abd0fff1bd18e355435e77a841b0a5ea0_cgraph.png" border="0" usemap="#guidance__opticflow__hover_8h_abd0fff1bd18e355435e77a841b0a5ea0_cgraph" alt=""/></div>
-<map name="guidance__opticflow__hover_8h_abd0fff1bd18e355435e77a841b0a5ea0_cgraph" id="guidance__opticflow__hover_8h_abd0fff1bd18e355435e77a841b0a5ea0_cgraph">
-<area shape="rect" id="node2" href="ctrl__module__demo_8c.html#a06f17c99a79d7f2f2e5670510edecb09" title="ctrl_module_run" alt="" coords="261,288,386,315"/><area shape="rect" id="node5" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#afb59ecc3049842f940a46a81698b79e9" title="stabilization_attitude_run" alt="" coords="232,621,415,648"/><area shape="rect" id="node46" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#ac064607f64988793cadfe5ed346b269f" title="stabilization_attitude\l_set_rpy_setpoint_i" alt="" coords="246,1301,401,1342"/><area shape="rect" id="node3" href="group__state__rate.html#ga3fc058302e6f40bf0b8797ca9a7ed60f" title="Get vehicle body angular rate (int). " alt="" coords="484,5,640,32"/><area shape="rect" id="node4" href="group__state__rate.html#gaa244b14b2780206f600f9ded7d7cf180" title="stateCalcBodyRates_i" alt="" coords="723,5,883,32"/><area shape="rect" id="node6" href="stabilization__attitude__ref__euler__float_8c.html#aa06a66885cd25a47ac9efc8664f29f0a" title="attitude_ref_euler\l_float_update" alt="" coords="495,614,629,655"/><area shape="rect" id="node8" href="stabilization__attitude__ref__euler__int_8c.html#a041606d24b535f7020178ae487e069d5" title="Propagate reference model. " alt="" coords="495,847,629,889"/><area shape="rect" id="node9" href="stabilization__attitude__ref__quat__float_8c.html#a6246617981d4269af34291dafdd9f1e3" title="attitude_ref_quat_float\l_update" alt="" coords="479,679,645,721"/><area shape="rect" id="node14" href="group__math__algebra__float.html#ga2784b8b78ffff045ebb867a4198eb349" title="Composition (multiplication) of two quaternions. " alt="" coords="725,832,880,859"/><area shape="rect" id="node17" href="group__math__algebra__float.html#ga8c87c4af5df3d13c6eb0bd8b8e97721a" title="float_quat_wrap_shortest" alt="" coords="711,883,894,909"/><area shape="rect" id="node18" href="stabilization__attitude__ref__quat__int_8c.html#a20f0b5f27a66365eac7b4ed8af49960c" title="Propagate reference. " alt="" coords="485,963,639,1005"/><area shape="rect" id="node22" href="group__math__algebra__int.html#gae4cd7dd8ca63cfe3aed0eb7c3857ac9a" title="Composition (multiplication) of two quaternions. " alt="" coords="723,1101,882,1128"/><area shape="rect" id="node23" href="group__math__algebra__int.html#ga00267cacb602945fc6cfb054492460fa" title="normalize a quaternion inplace " alt="" coords="723,1152,883,1179"/><area shape="rect" id="node26" href="group__math__algebra__int.html#ga7af214127cdc156466db26fd3497ce84" title="int32_quat_wrap_shortest" alt="" coords="709,1203,896,1229"/><area shape="rect" id="node27" href="stabilization__attitude__quat__float_8c.html#abcf3f74ddd37dcf51e0df255d22c4a23" title="attitude_run_fb" alt="" coords="503,1181,621,1208"/><area shape="rect" id="node28" href="stabilization__attitude__quat__float_8c.html#a112d2235c054e7eadd1659fa0a78e4f4" title="attitude_run_ff" alt="" coords="505,1232,619,1259"/><area shape="rect" id="node29" href="stabilization__attitude__quat__indi_8c.html#a9dd6dd49ddff3c113ba2606fd45eb21b" title="attitude_run_indi" alt="" coords="497,183,627,209"/><area shape="rect" id="node31" href="stabilization__attitude__quat__indi_8c.html#aa4b4e93913fecb8601dd3abc341959eb" title="stabilization_indi\l_second_order_filter" alt="" coords="953,99,1103,141"/><area shape="rect" id="node33" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float). " alt="" coords="949,208,1107,235"/><area shape="rect" id="node35" href="group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity " alt="" coords="492,309,632,336"/><area shape="rect" id="node36" href="group__math__algebra__int.html#ga698f3fc474f66517868238f6f6b08fca" title="initialises a quaternion to identity " alt="" coords="490,360,634,387"/><area shape="rect" id="node37" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="463,563,661,589"/><area shape="rect" id="node40" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int). " alt="" coords="463,411,661,437"/><area shape="rect" id="node42" href="group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float). " alt="" coords="467,461,657,488"/><area shape="rect" id="node44" href="group__state__attitude.html#ga28e5de0a4822cabcfe8350e2343111ce" title="Get vehicle body attitude quaternion (int). " alt="" coords="467,512,657,539"/><area shape="rect" id="node7" href="attitude__ref__saturate__naive_8h.html#aa0f93b3e44169518f24759b497a97275" title="attitude_ref_float\l_saturate_naive" alt="" coords="737,513,868,554"/><area shape="rect" id="node10" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="float_eulers_of_quat" alt="" coords="1169,575,1320,601"/><area shape="rect" id="node11" href="group__math__algebra__float.html#gaf182e4cea0a80278a3b2856331095ff6" title="Composition (multiplication) of two quaternions. " alt="" coords="738,731,867,757"/><area shape="rect" id="node12" href="group__math__algebra__float.html#gaf9863ba4e0718dd826af1bf1bf891aaa" title="Quaternion derivative from rotational velocity. " alt="" coords="725,781,880,808"/><area shape="rect" id="node13" href="group__math__algebra__float.html#gaf1db25a69e0a8c04c7a9987a4455d164" title="Delta rotation quaternion with constant angular rates. " alt="" coords="723,579,883,605"/><area shape="rect" id="node15" href="group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title="float_quat_normalize" alt="" coords="725,680,881,707"/><area shape="rect" id="node16" href="group__math__algebra__float.html#gaf58947a2590837aa85077d42d99fb112" title="float_quat_norm" alt="" coords="965,680,1091,707"/><area shape="rect" id="node19" href="attitude__ref__saturate__naive_8h.html#aa1855c3eb78fd1895bb5306acd70ba17" title="attitude_ref_int_saturate\l_naive" alt="" coords="713,934,893,975"/><area shape="rect" id="node20" href="group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e" title="int32_eulers_of_quat" alt="" coords="725,1000,880,1027"/><area shape="rect" id="node21" href="group__math__algebra__int.html#ga90e7e0443a18285afae399ee6fdfe29e" title="Quaternion derivative from rotational velocity. " alt="" coords="723,1051,882,1077"/><area shape="rect" id="node24" href="group__math__algebra__int.html#ga1dac7ce8c769898ccda119edb55f52ef" title="Norm of a quaternion. " alt="" coords="963,1152,1093,1179"/><area shape="rect" id="node25" href="group__math__algebra__int.html#ga4f101a6e0a22ac1b90f36fe8bf97d702" title="int32_sqrt" alt="" coords="1201,1152,1288,1179"/><area shape="rect" id="node30" href="stabilization__attitude__quat__indi_8c.html#ad4a81c601235942469d940e7ac5f400e" title="lms_estimation" alt="" coords="743,157,863,184"/><area shape="rect" id="node32" href="group__math__algebra__float.html#gaa756a8ac8762d40f02b0e31539340c22" title="in place first order integration of angular rates " alt="" coords="1160,107,1329,133"/><area shape="rect" id="node34" href="group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title="stateCalcBodyRates_f" alt="" coords="1164,208,1325,235"/><area shape="rect" id="node38" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="721,461,885,488"/><area shape="rect" id="node39" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="944,520,1112,547"/><area shape="rect" id="node41" href="group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int). " alt="" coords="721,309,884,336"/><area shape="rect" id="node43" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float). " alt="" coords="725,360,881,387"/><area shape="rect" id="node45" href="group__math__orientation__representation.html#ga86b153b2106a638cef8e314125c47306" title="Get vehicle body attitude quaternion (int). " alt="" coords="725,411,880,437"/><area shape="rect" id="node47" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="Quaternion from Euler angles. " alt="" coords="487,1283,637,1309"/><area shape="rect" id="node48" href="group__math__algebra__int.html#gab3d8478211bf7da23d2345e8eae43fc8" title="Quaternion from Euler angles. " alt="" coords="485,1333,639,1360"/><area shape="rect" id="node49" href="stabilization__attitude__quat__transformations_8c.html#a781fdef7edec84ea09c1faf34d1316e8" title="quat_from_rpy_cmd_i" alt="" coords="482,1384,642,1411"/><area shape="rect" id="node50" href="stabilization__attitude__quat__transformations_8c.html#a10ec980ce6bc935ea53ec3bfca04fe3d" title="quat_from_rpy_cmd_f" alt="" coords="722,1384,883,1411"/></map>
-</div>
-</p>
-
-<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="guidance__opticflow__hover_8h_abd0fff1bd18e355435e77a841b0a5ea0_icgraph.png" border="0" usemap="#guidance__opticflow__hover_8h_abd0fff1bd18e355435e77a841b0a5ea0_icgraph" alt=""/></div>
-<map name="guidance__opticflow__hover_8h_abd0fff1bd18e355435e77a841b0a5ea0_icgraph" id="guidance__opticflow__hover_8h_abd0fff1bd18e355435e77a841b0a5ea0_icgraph">
-<area shape="rect" id="node2" href="guidance__h_8h.html#ac4cf6da90a4278b4d0b2e4f227b33f2c" title="guidance_h_run" alt="" coords="232,31,355,57"/><area shape="rect" id="node3" href="rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="403,31,537,57"/><area shape="rect" id="node4" href="main_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="585,31,696,57"/><area shape="rect" id="node5" href="main_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="744,31,907,57"/><area shape="rect" id="node6" href="fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="967,5,1021,32"/><area shape="rect" id="node7" href="main__chibios__libopencm3_8c.html#ad648a546fe66cd5f9328f33221a40c64" title="pprz_thd" alt="" coords="955,56,1033,83"/><area shape="rect" id="node8" href="main__chibios__libopencm3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1081,56,1136,83"/></map>
-</div>
-</p>
-
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -436,7 +343,7 @@ The pitch P gain on the err_vy. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="guidance__opticflow__hover_8h.html#structopticflow__stab__t">opticflow_stab_t</a> opticflow_stab</td>
+          <td class="memname">struct <a class="el" href="guidance__OA_8h.html#structopticflow__stab__t">opticflow_stab_t</a> opticflow_stab</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -451,7 +358,7 @@ The pitch P gain on the err_vy. </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2e381a947b440f56a5ef50f02a80163b.html">guidance_opticflow</a></li><li class="navelem"><a class="el" href="guidance__opticflow__hover_8h.html">guidance_opticflow_hover.h</a></li>
-    <li class="footer">Generated on Wed Nov 11 2015 02:01:37 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:01:51 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

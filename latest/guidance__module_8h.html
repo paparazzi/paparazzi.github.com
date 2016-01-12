@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -139,10 +139,10 @@ $(document).ready(function(){initNavTree('guidance__module_8h.html','');});
 <p>e.g.: <code>#define GUIDANCE_V_MODE_MODULE_SETTING GUIDANCE_V_MODE_HOVER</code> can be used to only define a horizontal control in the module and use normal z_hold</p>
 <p>The guidance that the module implement must be activated with following defines:</p>
 <p>a) Implement own Horizontal loops when GUIDANCE_H_MODE_MODULE_SETTING is set to GUIDANCE_H_MODE_MODULE One must then implement:</p><ul>
-<li>void <a class="el" href="guidance__opticflow__hover_8h.html#ab39ce31e4173de7b9aefa839324ec9a2" title="Initialization of horizontal guidance module. ">guidance_h_module_init(void)</a>;</li>
-<li>void <a class="el" href="guidance__opticflow__hover_8h.html#af0a3b4e238d064326406719e8244e92d" title="Horizontal guidance mode enter resets the errors and starts the controller. ">guidance_h_module_enter(void)</a>;</li>
-<li>void <a class="el" href="guidance__opticflow__hover_8h.html#a4c33bfc7d07ffb6d33a1af63799da082" title="Read the RC commands. ">guidance_h_module_read_rc(void)</a>;</li>
-<li>void <a class="el" href="guidance__opticflow__hover_8h.html#abd0fff1bd18e355435e77a841b0a5ea0" title="Main guidance loop. ">guidance_h_module_run(bool_t in_flight)</a>;</li>
+<li>void <a class="el" href="guidance__OA_8h.html#ab39ce31e4173de7b9aefa839324ec9a2" title="Initialization of horizontal guidance module. ">guidance_h_module_init(void)</a>;</li>
+<li>void <a class="el" href="guidance__OA_8h.html#af0a3b4e238d064326406719e8244e92d" title="Horizontal guidance mode enter resets the errors and starts the controller. ">guidance_h_module_enter(void)</a>;</li>
+<li>void <a class="el" href="guidance__OA_8h.html#a4c33bfc7d07ffb6d33a1af63799da082" title="Read the RC commands. ">guidance_h_module_read_rc(void)</a>;</li>
+<li>void <a class="el" href="guidance__OA_8h.html#abd0fff1bd18e355435e77a841b0a5ea0" title="Main guidance loop. ">guidance_h_module_run(bool_t in_flight)</a>;</li>
 </ul>
 <p>b) Implement own Vertical loops when GUIDANCE_V_MODE_MODULE_SETTING is set to GUIDANCE_V_MODE_MODULE</p><ul>
 <li>void <a class="el" href="vertical__ctrl__module__demo_8h.html#a1288433c507106e865034b02ae79b2d6">guidance_v_module_enter(void)</a>;</li>
@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('guidance__module_8h.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_3d64810a495a8e63c02e8d4ee1418813.html">guidance</a></li><li class="navelem"><a class="el" href="guidance__module_8h.html">guidance_module.h</a></li>
-    <li class="footer">Generated on Wed Nov 11 2015 02:01:29 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:01:43 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

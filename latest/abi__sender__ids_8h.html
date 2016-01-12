@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -217,8 +217,10 @@ Macros</h2></td></tr>
 <tr class="separator:a2b1288ad6009f02dd3f7aaa9a00c95b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab295b8c7f57ad6615389c92e8efa694b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="abi__sender__ids_8h.html#ab295b8c7f57ad6615389c92e8efa694b">IMU_MPU60X0_ID</a>&#160;&#160;&#160;16</td></tr>
 <tr class="separator:ab295b8c7f57ad6615389c92e8efa694b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a604e822de1c13f0283d4f8240786608f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="abi__sender__ids_8h.html#a604e822de1c13f0283d4f8240786608f">PIX4FLOW_VELOCITY_ID</a>&#160;&#160;&#160;17</td></tr>
-<tr class="separator:a604e822de1c13f0283d4f8240786608f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae36e33780c327d268f4e1da02cfa3e98"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="abi__sender__ids_8h.html#ae36e33780c327d268f4e1da02cfa3e98">PX4FLOW_VELOCITY_ID</a>&#160;&#160;&#160;17</td></tr>
+<tr class="separator:ae36e33780c327d268f4e1da02cfa3e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af646ed1faa469ec469c3fd37b354b7db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="abi__sender__ids_8h.html#af646ed1faa469ec469c3fd37b354b7db">RSSI_BLUEGIGA_ID</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:af646ed1faa469ec469c3fd37b354b7db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Convenience defines for ABI sender IDs. </p>
@@ -475,7 +477,7 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="abi__sender__ids_8h_source.html#l00146">146</a> of file <a class="el" href="abi__sender__ids_8h_source.html">abi_sender_ids.h</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__datalink_8c_source.html#l00161">parse_gps_datalink()</a>.</p>
+<p>Referenced by <a class="el" href="gps__datalink_8c_source.html#l00126">parse_gps_datalink()</a>, and <a class="el" href="gps__datalink_8c_source.html#l00062">parse_gps_datalink_small()</a>.</p>
 
 </div>
 </div>
@@ -491,7 +493,7 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="abi__sender__ids_8h_source.html#l00134">134</a> of file <a class="el" href="abi__sender__ids_8h_source.html">abi_sender_ids.h</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00118">gps_mtk_msg()</a>.</p>
+<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00114">gps_mtk_msg()</a>.</p>
 
 </div>
 </div>
@@ -507,7 +509,7 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="abi__sender__ids_8h_source.html#l00122">122</a> of file <a class="el" href="abi__sender__ids_8h_source.html">abi_sender_ids.h</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__nmea_8c_source.html#l00083">gps_nmea_msg()</a>.</p>
+<p>Referenced by <a class="el" href="gps__nmea_8c_source.html#l00079">gps_nmea_msg()</a>.</p>
 
 </div>
 </div>
@@ -523,7 +525,7 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="abi__sender__ids_8h_source.html#l00138">138</a> of file <a class="el" href="abi__sender__ids_8h_source.html">abi_sender_ids.h</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00338">gps_piksi_publish()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00325">gps_piksi_publish()</a>.</p>
 
 </div>
 </div>
@@ -539,7 +541,7 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="abi__sender__ids_8h_source.html#l00158">158</a> of file <a class="el" href="abi__sender__ids_8h_source.html">abi_sender_ids.h</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__sim__nps_8c_source.html#l00036">gps_feed_value()</a>, <a class="el" href="gps__sim__hitl_8c_source.html#l00042">gps_sim_hitl_event()</a>, and <a class="el" href="gps__sim_8c_source.html#l00030">gps_sim_publish()</a>.</p>
+<p>Referenced by <a class="el" href="gps__sim__nps_8c_source.html#l00030">gps_feed_value()</a>, <a class="el" href="gps__sim__hitl_8c_source.html#l00042">gps_sim_hitl_event()</a>, and <a class="el" href="gps__sim_8c_source.html#l00030">gps_sim_publish()</a>.</p>
 
 </div>
 </div>
@@ -555,7 +557,7 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="abi__sender__ids_8h_source.html#l00126">126</a> of file <a class="el" href="abi__sender__ids_8h_source.html">abi_sender_ids.h</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__sirf_8c_source.html#l00051">gps_sirf_msg()</a>.</p>
+<p>Referenced by <a class="el" href="gps__sirf_8c_source.html#l00047">gps_sirf_msg()</a>.</p>
 
 </div>
 </div>
@@ -571,7 +573,7 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="abi__sender__ids_8h_source.html#l00130">130</a> of file <a class="el" href="abi__sender__ids_8h_source.html">abi_sender_ids.h</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__skytraq_8c_source.html#l00101">gps_skytraq_msg()</a>.</p>
+<p>Referenced by <a class="el" href="gps__skytraq_8c_source.html#l00095">gps_skytraq_msg()</a>.</p>
 
 </div>
 </div>
@@ -587,7 +589,7 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="abi__sender__ids_8h_source.html#l00118">118</a> of file <a class="el" href="abi__sender__ids_8h_source.html">abi_sender_ids.h</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx_8c_source.html#l00323">gps_ubx_msg()</a>, and <a class="el" href="ins__vectornav_8c_source.html#l00317">ins_vectornav_propagate()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx_8c_source.html#l00312">gps_ubx_msg()</a>, and <a class="el" href="ins__vectornav_8c_source.html#l00317">ins_vectornav_propagate()</a>.</p>
 
 </div>
 </div>
@@ -603,7 +605,7 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="abi__sender__ids_8h_source.html#l00150">150</a> of file <a class="el" href="abi__sender__ids_8h_source.html">abi_sender_ids.h</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__udp_8c_source.html#l00055">gps_parse()</a>.</p>
+<p>Referenced by <a class="el" href="gps__udp_8c_source.html#l00050">gps_parse()</a>.</p>
 
 </div>
 </div>
@@ -695,7 +697,7 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="abi__sender__ids_8h_source.html#l00166">166</a> of file <a class="el" href="abi__sender__ids_8h_source.html">abi_sender_ids.h</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__apogee_8c_source.html#l00103">imu_apogee_event()</a>, <a class="el" href="imu__bebop_8c_source.html#l00109">imu_bebop_event()</a>, <a class="el" href="imu__hbmini_8c_source.html#l00093">imu_hbmini_event()</a>, <a class="el" href="imu__krooz_8c_source.html#l00146">imu_krooz_event()</a>, <a class="el" href="imu__navgo_8c_source.html#l00120">imu_navgo_event()</a>, <a class="el" href="imu__navstik_8c_source.html#l00109">imu_navstik_event()</a>, <a class="el" href="imu__nps_8c_source.html#l00065">imu_nps_event()</a>, <a class="el" href="imu__krooz_8c_source.html#l00098">imu_periodic()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00091">imu_px4fmu_event()</a>, <a class="el" href="imu__umarim_8c_source.html#l00103">imu_umarim_event()</a>, and <a class="el" href="navdata_8c_source.html#l00323">navdata_publish_imu()</a>.</p>
+<p>Referenced by <a class="el" href="imu__apogee_8c_source.html#l00145">imu_apogee_event()</a>, <a class="el" href="imu__bebop_8c_source.html#l00109">imu_bebop_event()</a>, <a class="el" href="imu__hbmini_8c_source.html#l00093">imu_hbmini_event()</a>, <a class="el" href="imu__krooz_8c_source.html#l00146">imu_krooz_event()</a>, <a class="el" href="imu__navgo_8c_source.html#l00120">imu_navgo_event()</a>, <a class="el" href="imu__navstik_8c_source.html#l00109">imu_navstik_event()</a>, <a class="el" href="imu__nps_8c_source.html#l00065">imu_nps_event()</a>, <a class="el" href="imu__krooz_8c_source.html#l00098">imu_periodic()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00091">imu_px4fmu_event()</a>, <a class="el" href="imu__umarim_8c_source.html#l00103">imu_umarim_event()</a>, and <a class="el" href="navdata_8c_source.html#l00323">navdata_publish_imu()</a>.</p>
 
 </div>
 </div>
@@ -871,7 +873,7 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="abi__sender__ids_8h_source.html#l00222">222</a> of file <a class="el" href="abi__sender__ids_8h_source.html">abi_sender_ids.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00410">handle_ins_msg()</a>.</p>
+<p>Referenced by <a class="el" href="ins__xsens_8c_source.html#l00407">handle_ins_msg()</a>.</p>
 
 </div>
 </div>
@@ -923,19 +925,35 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a604e822de1c13f0283d4f8240786608f"></a>
+<a class="anchor" id="ae36e33780c327d268f4e1da02cfa3e98"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PIX4FLOW_VELOCITY_ID&#160;&#160;&#160;17</td>
+          <td class="memname">#define PX4FLOW_VELOCITY_ID&#160;&#160;&#160;17</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="abi__sender__ids_8h_source.html#l00230">230</a> of file <a class="el" href="abi__sender__ids_8h_source.html">abi_sender_ids.h</a>.</p>
 
-<p>Referenced by <a class="el" href="px4flow_8c_source.html#l00046">decode_optical_flow_msg()</a>.</p>
+<p>Referenced by <a class="el" href="px4flow_8c_source.html#l00050">decode_optical_flow_msg()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af646ed1faa469ec469c3fd37b354b7db"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RSSI_BLUEGIGA_ID&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="abi__sender__ids_8h_source.html#l00237">237</a> of file <a class="el" href="abi__sender__ids_8h_source.html">abi_sender_ids.h</a>.</p>
+
+<p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00242">bluegiga_receive()</a>.</p>
 
 </div>
 </div>
@@ -945,7 +963,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="abi__sender__ids_8h.html">abi_sender_ids.h</a></li>
-    <li class="footer">Generated on Wed Nov 11 2015 02:01:44 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:02:00 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

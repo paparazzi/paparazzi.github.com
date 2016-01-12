@@ -3,8 +3,8 @@ var searchData=
   ['actuators_5fasctec_5faddr',['actuators_asctec_addr',['../actuators__asctec_8h.html#ad2db450a6c9862a4f81ba35a4d5f4f20',1,'actuators_asctec.h']]],
   ['actuators_5fasctec_5fcmd',['actuators_asctec_cmd',['../actuators__asctec_8h.html#a6ab1b9217ee457a8e4352cf0b28af79d',1,'actuators_asctec.h']]],
   ['actuators_5fasctec_5fcmds',['actuators_asctec_cmds',['../actuators__asctec_8h.html#a82d0d12190beb7d9db322455bf6a4d1d',1,'actuators_asctec.h']]],
-  ['actuators_5fasctec_5fv2_5faddr',['actuators_asctec_v2_addr',['../actuators__asctec__v2_8h.html#a6a84074f57bc5110d7e301d4662c4899',1,'actuators_asctec_v2.h']]],
-  ['actuators_5fasctec_5fv2_5fcmd',['actuators_asctec_v2_cmd',['../actuators__asctec__v2_8h.html#a4fc4c81cd178f2e57a6d8ce74785742e',1,'actuators_asctec_v2.h']]],
+  ['actuators_5fasctec_5fv2_5faddr',['actuators_asctec_v2_addr',['../actuators__asctec__v2_8h.html#a6a84074f57bc5110d7e301d4662c4899',1,'actuators_asctec_v2_addr():&#160;actuators_asctec_v2.h'],['../actuators__asctec__v2__new_8h.html#a6a84074f57bc5110d7e301d4662c4899',1,'actuators_asctec_v2_addr():&#160;actuators_asctec_v2_new.h']]],
+  ['actuators_5fasctec_5fv2_5fcmd',['actuators_asctec_v2_cmd',['../actuators__asctec__v2_8h.html#a4fc4c81cd178f2e57a6d8ce74785742e',1,'actuators_asctec_v2_cmd():&#160;actuators_asctec_v2.h'],['../actuators__asctec__v2__new_8h.html#a4fc4c81cd178f2e57a6d8ce74785742e',1,'actuators_asctec_v2_cmd():&#160;actuators_asctec_v2_new.h']]],
   ['adc1_5fchannels',['adc1_channels',['../stm32_2mcu__periph_2adc__arch_8h.html#ac1dbdbf706177270f68597836106d8c9',1,'adc_arch.h']]],
   ['adc2_5fchannels',['adc2_channels',['../stm32_2mcu__periph_2adc__arch_8h.html#a33afbc7bbad301d909dfd2faaeae1b45',1,'adc_arch.h']]],
   ['adc3_5fchannels',['adc3_channels',['../stm32_2mcu__periph_2adc__arch_8h.html#ab970f46debc24fe7a8a068048c94085b',1,'adc_arch.h']]],
@@ -26,6 +26,8 @@ var searchData=
   ['ahrsmlkfstatus',['AhrsMlkfStatus',['../ahrs__float__mlkf_8h.html#ac37e0c0ac7b84e55eb5fac8b19d31192',1,'ahrs_float_mlkf.h']]],
   ['ak8963confstatus',['Ak8963ConfStatus',['../ak8963_8h.html#ade3f567d3fec4c2efb104badb509a01e',1,'ak8963.h']]],
   ['ak8963status',['Ak8963Status',['../ak8963_8h.html#a17716d364ee924bf509a99715208137a',1,'ak8963.h']]],
+  ['ak8975confstatus',['Ak8975ConfStatus',['../ak8975_8h.html#a28e52220eeec86e6f8cce258436abe61',1,'ak8975.h']]],
+  ['ak8975status',['Ak8975Status',['../ak8975_8h.html#a583c1693d6d13b50f2ee54f6b46ada49',1,'ak8975.h']]],
   ['arming_5fstate',['arming_state',['../autopilot__arming__switch_8h.html#abd7b974a7084669ffc2893dd65db427e',1,'arming_state():&#160;autopilot_arming_switch.h'],['../autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427e',1,'arming_state():&#160;autopilot_arming_yaw.h']]],
   ['arming_5fthrottle_5fstate',['arming_throttle_state',['../autopilot__arming__throttle_8h.html#a67f42ccf33e2918fef63b1a6c729e759',1,'autopilot_arming_throttle.h']]]
 ];

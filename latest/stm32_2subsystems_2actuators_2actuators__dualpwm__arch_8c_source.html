@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -190,7 +190,7 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2actuators_2actuator
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#if DUAL_PWM_USE_TIM5</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <a class="code" href="actuators__shared__arch_8c.html#ae2ad75fb83b6c7ec929b7b9b8ed92581">set_servo_timer</a>(TIM5, <a class="code" href="actuators__shared__arch_8h.html#a2f849835e0306ec0290feac475d2cfb0">TIM5_SERVO_HZ</a>, <a class="code" href="elle0__1_80_8h.html#a7abc8f9863cc1fd96ecaf1b1cfeaaa55">PWM_TIM5_CHAN_MASK</a>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <a class="code" href="actuators__shared__arch_8c.html#ae2ad75fb83b6c7ec929b7b9b8ed92581">set_servo_timer</a>(TIM5, <a class="code" href="actuators__shared__arch_8h.html#a2f849835e0306ec0290feac475d2cfb0">TIM5_SERVO_HZ</a>, <a class="code" href="elle0__common_8h.html#a7abc8f9863cc1fd96ecaf1b1cfeaaa55">PWM_TIM5_CHAN_MASK</a>);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  nvic_set_priority(<a class="code" href="stm32f4__chibios__vectors_8h.html#a0f69b1b7ee941c8389e26af84edda564">NVIC_TIM5_IRQ</a>, 2);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  nvic_enable_irq(<a class="code" href="stm32f4__chibios__vectors_8h.html#a0f69b1b7ee941c8389e26af84edda564">NVIC_TIM5_IRQ</a>);</div>
@@ -284,8 +284,8 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2actuators_2actuator
 <div class="ttc" id="stm32_2subsystems_2actuators_2actuators__dualpwm__arch_8c_html_a3e22a148416d35c90344f04bb574e07a"><div class="ttname"><a href="stm32_2subsystems_2actuators_2actuators__dualpwm__arch_8c.html#a3e22a148416d35c90344f04bb574e07a">set_dual_pwm_timer_s_period</a></div><div class="ttdeci">void set_dual_pwm_timer_s_period(uint32_t period)</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2subsystems_2actuators_2actuators__dualpwm__arch_8c_source.html#l00126">actuators_dualpwm_arch.c:126</a></div></div>
 <div class="ttc" id="stm32_2subsystems_2actuators_2actuators__dualpwm__arch_8c_html_a2020e14708a65e7b0191865678610bf6"><div class="ttname"><a href="stm32_2subsystems_2actuators_2actuators__dualpwm__arch_8c.html#a2020e14708a65e7b0191865678610bf6">set_dual_pwm_timer_s_oc</a></div><div class="ttdeci">void set_dual_pwm_timer_s_oc(uint32_t oc_value, uint32_t oc_value2)</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2subsystems_2actuators_2actuators__dualpwm__arch_8c_source.html#l00135">actuators_dualpwm_arch.c:135</a></div></div>
 <div class="ttc" id="stm32_2subsystems_2actuators_2actuators__dualpwm__arch_8h_html_a233b9987dd347386efc0e8ae7a52123e"><div class="ttname"><a href="stm32_2subsystems_2actuators_2actuators__dualpwm__arch_8h.html#a233b9987dd347386efc0e8ae7a52123e">ACTUATORS_DUALPWM_NB</a></div><div class="ttdeci">#define ACTUATORS_DUALPWM_NB</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2subsystems_2actuators_2actuators__dualpwm__arch_8h_source.html#l00035">actuators_dualpwm_arch.h:35</a></div></div>
-<div class="ttc" id="elle0__1_80_8h_html_a7abc8f9863cc1fd96ecaf1b1cfeaaa55"><div class="ttname"><a href="elle0__1_80_8h.html#a7abc8f9863cc1fd96ecaf1b1cfeaaa55">PWM_TIM5_CHAN_MASK</a></div><div class="ttdeci">#define PWM_TIM5_CHAN_MASK</div><div class="ttdef"><b>Definition:</b> <a href="elle0__1_80_8h_source.html#l00433">elle0_1.0.h:433</a></div></div>
 <div class="ttc" id="std_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> <a href="std_8h_source.html#l00004">std.h:4</a></div></div>
+<div class="ttc" id="elle0__common_8h_html_a7abc8f9863cc1fd96ecaf1b1cfeaaa55"><div class="ttname"><a href="elle0__common_8h.html#a7abc8f9863cc1fd96ecaf1b1cfeaaa55">PWM_TIM5_CHAN_MASK</a></div><div class="ttdeci">#define PWM_TIM5_CHAN_MASK</div><div class="ttdef"><b>Definition:</b> <a href="elle0__common_8h_source.html#l00434">elle0_common.h:434</a></div></div>
 <div class="ttc" id="types_8h_html_a06896e8c53f721507066c079052171f8"><div class="ttname"><a href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></div><div class="ttdeci">unsigned long uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00018">types.h:18</a></div></div>
 <div class="ttc" id="stm32_2subsystems_2actuators_2actuators__dualpwm__arch_8c_html_a001c5a2309b8056a9f6f4f407af4a4a4"><div class="ttname"><a href="stm32_2subsystems_2actuators_2actuators__dualpwm__arch_8c.html#a001c5a2309b8056a9f6f4f407af4a4a4">ratio_4ms</a></div><div class="ttdeci">uint32_t ratio_4ms</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2subsystems_2actuators_2actuators__dualpwm__arch_8c_source.html#l00039">actuators_dualpwm_arch.c:39</a></div></div>
 <div class="ttc" id="actuators__shared__arch_8h_html"><div class="ttname"><a href="actuators__shared__arch_8h.html">actuators_shared_arch.h</a></div><div class="ttdoc">STM32 PWM and dualPWM servos shared functions. </div></div>
@@ -303,7 +303,7 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2actuators_2actuator
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_71548ae744da26ac2c7ca213b679dc43.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_25ba966e11d2062039182252e5025889.html">actuators</a></li><li class="navelem"><a class="el" href="stm32_2subsystems_2actuators_2actuators__dualpwm__arch_8c.html">actuators_dualpwm_arch.c</a></li>
-    <li class="footer">Generated on Wed Nov 11 2015 02:01:02 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:01:15 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -153,9 +153,11 @@ $(document).ready(function(){initNavTree('globals_enum.html','');});
 </li>
 <li>actuators_asctec_v2_addr
 : <a class="el" href="actuators__asctec__v2_8h.html#a6a84074f57bc5110d7e301d4662c4899">actuators_asctec_v2.h</a>
+, <a class="el" href="actuators__asctec__v2__new_8h.html#a6a84074f57bc5110d7e301d4662c4899">actuators_asctec_v2_new.h</a>
 </li>
 <li>actuators_asctec_v2_cmd
 : <a class="el" href="actuators__asctec__v2_8h.html#a4fc4c81cd178f2e57a6d8ce74785742e">actuators_asctec_v2.h</a>
+, <a class="el" href="actuators__asctec__v2__new_8h.html#a4fc4c81cd178f2e57a6d8ce74785742e">actuators_asctec_v2_new.h</a>
 </li>
 <li>adc1_channels
 : <a class="el" href="stm32_2mcu__periph_2adc__arch_8h.html#ac1dbdbf706177270f68597836106d8c9">adc_arch.h</a>
@@ -220,9 +222,15 @@ $(document).ready(function(){initNavTree('globals_enum.html','');});
 <li>Ak8963Status
 : <a class="el" href="ak8963_8h.html#a17716d364ee924bf509a99715208137a">ak8963.h</a>
 </li>
+<li>Ak8975ConfStatus
+: <a class="el" href="ak8975_8h.html#a28e52220eeec86e6f8cce258436abe61">ak8975.h</a>
+</li>
+<li>Ak8975Status
+: <a class="el" href="ak8975_8h.html#a583c1693d6d13b50f2ee54f6b46ada49">ak8975.h</a>
+</li>
 <li>arming_state
-: <a class="el" href="autopilot__arming__switch_8h.html#abd7b974a7084669ffc2893dd65db427e">autopilot_arming_switch.h</a>
-, <a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427e">autopilot_arming_yaw.h</a>
+: <a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427e">autopilot_arming_yaw.h</a>
+, <a class="el" href="autopilot__arming__switch_8h.html#abd7b974a7084669ffc2893dd65db427e">autopilot_arming_switch.h</a>
 </li>
 <li>arming_throttle_state
 : <a class="el" href="autopilot__arming__throttle_8h.html#a67f42ccf33e2918fef63b1a6c729e759">autopilot_arming_throttle.h</a>
@@ -299,6 +307,9 @@ $(document).ready(function(){initNavTree('globals_enum.html','');});
 
 
 <h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
+<li>fbw_mode_enum
+: <a class="el" href="rotorcraft_2main__fbw_8c.html#af4086243bdaea71d4dfd3c03883cab31">main_fbw.c</a>
+</li>
 <li>FlowerStatus
 : <a class="el" href="nav__flower_8c.html#ab3972f7766a79f22a1ed10c84e294551">nav_flower.c</a>
 </li>
@@ -356,6 +367,9 @@ $(document).ready(function(){initNavTree('globals_enum.html','');});
 <li>image_type
 : <a class="el" href="image_8h.html#af039c7afe08a5eb2cff06e357227cdb8">image.h</a>
 </li>
+<li>intermcu_status
+: <a class="el" href="intermcu_8h.html#a2fa812ca2ff84269120f6ba35bef57e2">intermcu.h</a>
+</li>
 <li>Itg3200ConfStatus
 : <a class="el" href="itg3200_8h.html#af4ecc3fa080959344238782150fee737">itg3200.h</a>
 </li>
@@ -406,16 +420,34 @@ $(document).ready(function(){initNavTree('globals_enum.html','');});
 <li>LisaBaroStatus
 : <a class="el" href="lisa__l_2baro__board_8c.html#afa23cfb2e942619d6fa44f549fe5edff">baro_board.c</a>
 </li>
+<li>Lsm303dAccelBandwidth
+: <a class="el" href="lsm303d__regs_8h.html#a2820afc1fa7aad10717bc6ef4e48e292">lsm303d_regs.h</a>
+</li>
+<li>Lsm303dAccelRanges
+: <a class="el" href="lsm303d__regs_8h.html#aacfa69f8de4f40936505a76ba517d963">lsm303d_regs.h</a>
+</li>
+<li>Lsm303dAccelRates
+: <a class="el" href="lsm303d__regs_8h.html#a300ea8afd679fb7fdbb6587056960dfe">lsm303d_regs.h</a>
+</li>
 <li>Lsm303dlhcAccConfStatus
 : <a class="el" href="lsm303dlhc_8h.html#acfdcef8558d30510f691dc2670655e24">lsm303dlhc.h</a>
 </li>
 <li>Lsm303dlhcMagConfStatus
 : <a class="el" href="lsm303dlhc_8h.html#ab3e05e02f1a8eb7e4d3bfae1c18c9ea3">lsm303dlhc.h</a>
 </li>
+<li>Lsm303dMagRange
+: <a class="el" href="lsm303d__regs_8h.html#a080b9a025fcd8119c7feebfbd08c3ad0">lsm303d_regs.h</a>
+</li>
+<li>Lsm303dMagRates
+: <a class="el" href="lsm303d__regs_8h.html#a9fda91a860152e67464c934319f62f0b">lsm303d_regs.h</a>
+</li>
 </ul>
 
 
 <h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
+<li>MAVLINK_MISSION_MGR_STATES
+: <a class="el" href="mission__manager_8h.html#a8433d2168f156b51502c7ef5c44ccff6">mission_manager.h</a>
+</li>
 <li>mavlink_parse_state
 : <a class="el" href="mavlink__decoder_8h.html#acaeb9b4f7a75e27cafde0ac37aa31826">mavlink_decoder.h</a>
 </li>
@@ -492,6 +524,9 @@ $(document).ready(function(){initNavTree('globals_enum.html','');});
 
 
 <h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
+<li>oa_method
+: <a class="el" href="guidance__OA_8h.html#a4dac0a956aca3da3fa670abc875414d2">guidance_OA.h</a>
+</li>
 <li>osd_attributes
 : <a class="el" href="max7456_8c.html#ac3dd6ed7cc7d01ada4ce3180d50150cd">max7456.c</a>
 </li>
@@ -518,11 +553,17 @@ $(document).ready(function(){initNavTree('globals_enum.html','');});
 <li>Sc18Is600Transaction
 : <a class="el" href="sc18i600_8h.html#a3957e1fb4a73fc23b0ed60c91f613faf">sc18i600.h</a>
 </li>
+<li>SDCardErrorStatus
+: <a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebb">sdcard_spi.h</a>
+</li>
 <li>SDCardStatus
 : <a class="el" href="sdcard__spi_8h.html#a158c27589e5da52795c513a8b711cbf7">sdcard_spi.h</a>
 </li>
 <li>SDCardType
 : <a class="el" href="sdcard__spi_8h.html#aee0484fa6f4e4ca7f7caf414bbee4341">sdcard_spi.h</a>
+</li>
+<li>SDLoggerStatus
+: <a class="el" href="sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206e">sdlogger_spi_direct.h</a>
 </li>
 <li>SdResponseType
 : <a class="el" href="sdcard__spi_8h.html#ad59ef72ebf07c669fbbf94233a82086e">sdcard_spi.h</a>
@@ -576,8 +617,8 @@ $(document).ready(function(){initNavTree('globals_enum.html','');});
 : <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#aff46e2692b6bb527a21559a9faf61dd3">superbitrf.h</a>
 </li>
 <li>survey_orientation_t
-: <a class="el" href="nav__survey__rectangle_8h.html#aa8ad239dd32b3708375201570614abc5">nav_survey_rectangle.h</a>
-, <a class="el" href="nav__survey__rectangle__rotorcraft_8h.html#aa8ad239dd32b3708375201570614abc5">nav_survey_rectangle_rotorcraft.h</a>
+: <a class="el" href="nav__survey__rectangle__rotorcraft_8h.html#aa8ad239dd32b3708375201570614abc5">nav_survey_rectangle_rotorcraft.h</a>
+, <a class="el" href="nav__survey__rectangle_8h.html#aa8ad239dd32b3708375201570614abc5">nav_survey_rectangle.h</a>
 </li>
 <li>SurveyStage
 : <a class="el" href="nav__survey__polygon_8h.html#aa9c58cb0ccc605869d75547268f59fa6">nav_survey_polygon.h</a>
@@ -645,7 +686,7 @@ $(document).ready(function(){initNavTree('globals_enum.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 11 2015 02:02:15 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:02:31 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

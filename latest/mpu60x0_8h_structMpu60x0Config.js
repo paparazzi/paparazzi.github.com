@@ -11,7 +11,8 @@ var mpu60x0_8h_structMpu60x0Config =
     [ "init_status", "mpu60x0_8h.html#aaa55e9b7acf9eb2d8ac272480df23cdd", null ],
     [ "initialized", "mpu60x0_8h.html#ac312f35d88e34120302daeb0004877c3", null ],
     [ "nb_bytes", "mpu60x0_8h.html#a4aad9875c70957d588a52ebfe76a04bf", null ],
+    [ "nb_slave_init", "mpu60x0_8h.html#a6ec9f5324d5501ed8bdc1a1bcf0a5584", null ],
     [ "nb_slaves", "mpu60x0_8h.html#a686f9c24017b15cc1cf15866def7fbc7", null ],
-    [ "slaves", "mpu60x0_8h.html#a00aca6c6393f848e722c670869c86d70", null ],
+    [ "slaves", "mpu60x0_8h.html#a6facb3d9a26e53f21cf67cc5611792e7", null ],
     [ "smplrt_div", "mpu60x0_8h.html#a5b22d78bb0c75cc5d47c7c7945975081", null ]
 ];

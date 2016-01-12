@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('sdcard__spi_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sdcard__spi_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2peripherals_2sdcard__spi_8hdep" alt=""/></div>
 <map name="sw_2airborne_2peripherals_2sdcard__spi_8hdep" id="sw_2airborne_2peripherals_2sdcard__spi_8hdep">
-<area shape="rect" id="node2" href="sdcard__spi_8c.html" title="This is an interface for reading and writing blocks of data to and from an SD card directly over SPI..." alt="" coords="5,95,176,136"/></map>
+<area shape="rect" id="node2" href="sdlogger__spi__direct_8h.html" title="sw/airborne/modules\l/loggers/sdlogger_spi\l_direct.h" alt="" coords="5,95,163,151"/><area shape="rect" id="node4" href="sdcard__spi_8c.html" title="This is an interface for reading and writing blocks of data to and from an SD card directly over SPI..." alt="" coords="187,102,357,143"/><area shape="rect" id="node3" href="sdlogger__spi__direct_8c.html" title="sw/airborne/modules\l/loggers/sdlogger_spi\l_direct.c" alt="" coords="5,199,163,255"/></map>
 </div>
 </div>
 <p><a href="sdcard__spi_8h_source.html">Go to the source code of this file.</a></p>
@@ -219,6 +219,29 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a158c27589e5da52795c513a8b711cbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76f5ca92baf9e52085499121c7b4aebb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebb">SDCardErrorStatus</a> { <br />
+&#160;&#160;<a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebbad7f5111f29d23db603dbf300761d10b9">SDCardError_None</a>, 
+<a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebba0ff153af54f22a94827e75d6aba5958e">SDCardError_InitializationNoResponse</a>, 
+<a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebba7d90dd1b89ea52c17e267516bc8c709f">SDCardError_CardInfoNoResponse</a>, 
+<a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebbab4ecb494dde59e24537475f7e5520da1">SDCardError_InvalidCardInfo</a>, 
+<br />
+&#160;&#160;<a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebba85f08e2b90a3896094fac4f11665313e">SDCardError_ACMD41Timeout</a>, 
+<a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebba0a342483250135e38c32a0446cc9c460">SDCardError_ACMD41NoResponse</a>, 
+<a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebba8ba30fefc5200f2bfebc2badd932d81c">SDCardError_CMD58NoResponse</a>, 
+<a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebbad28401d3257102fb667300ae3991f3fb">SDCardError_CCSBitInvalid</a>, 
+<br />
+&#160;&#160;<a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebba4e2cc9f0deaf85e7c8616b5343265615">SDCardError_SetBlockSizeNoResponse</a>, 
+<a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebba0e9a9c1ddc14a0661aceb0423bcc7adb">SDCardError_WriteBlockNoResponse</a>, 
+<a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebba62ab22a3560545a8c7720801795dd0c0">SDCardError_SpiDriverError</a>, 
+<a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebba66460b8dad8f39c37856b927507187e6">SDCardError_BlockWriteError</a>, 
+<br />
+&#160;&#160;<a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebbade5cc7a85121192693fe9ca10b429964">SDCardError_ReadBlockNoResponse</a>, 
+<a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebba153a87d8b11a29c40eb4c62d93deb1e2">SDCardError_ReadBlockTimeout</a>, 
+<a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebba7b33c1a95ddf30bb1ee5e71d67c86e5c">SDCardError_MultiWriteNoResponse</a>, 
+<a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebbafdd282038afaad74b752c3872e136579">SDCardError_MultiWriteError</a>
+<br />
+ }</td></tr>
+<tr class="separator:a76f5ca92baf9e52085499121c7b4aebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -237,9 +260,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a665b869e2b80339fa01af811af47247e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdcard__spi_8h.html#a665b869e2b80339fa01af811af47247e">sdcard_spi_multiwrite_start</a> (struct <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a> *sdcard, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> addr)</td></tr>
 <tr class="memdesc:a665b869e2b80339fa01af811af47247e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start writing multiple blocks of 512 bytes to the <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a>.  <a href="#a665b869e2b80339fa01af811af47247e">More...</a><br /></td></tr>
 <tr class="separator:a665b869e2b80339fa01af811af47247e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7889277bddc7e07caaa2e8a7bd639bdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdcard__spi_8h.html#a7889277bddc7e07caaa2e8a7bd639bdc">sdcard_spi_multiwrite_next</a> (struct <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a> *sdcard)</td></tr>
-<tr class="memdesc:a7889277bddc7e07caaa2e8a7bd639bdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a(nother) data block (512 bytes) to the <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a>.  <a href="#a7889277bddc7e07caaa2e8a7bd639bdc">More...</a><br /></td></tr>
-<tr class="separator:a7889277bddc7e07caaa2e8a7bd639bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2993e6870ac7c137e6cbbef1949aaef1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdcard__spi_8h.html#a2993e6870ac7c137e6cbbef1949aaef1">sdcard_spi_multiwrite_next</a> (struct <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a> *sdcard, <a class="el" href="sdcard__spi_8h.html#a58e5b897a3881502acaf7427482789cb">SDCardCallback</a> callback)</td></tr>
+<tr class="memdesc:a2993e6870ac7c137e6cbbef1949aaef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a(nother) data block (512 bytes) to the <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a>.  <a href="#a2993e6870ac7c137e6cbbef1949aaef1">More...</a><br /></td></tr>
+<tr class="separator:a2993e6870ac7c137e6cbbef1949aaef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af40ce9cdaf7435d94db52d8ec687c26e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdcard__spi_8h.html#af40ce9cdaf7435d94db52d8ec687c26e">sdcard_spi_multiwrite_stop</a> (struct <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a> *sdcard)</td></tr>
 <tr class="memdesc:af40ce9cdaf7435d94db52d8ec687c26e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop with multiwrite procedure.  <a href="#af40ce9cdaf7435d94db52d8ec687c26e">More...</a><br /></td></tr>
 <tr class="separator:af40ce9cdaf7435d94db52d8ec687c26e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -265,7 +288,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="sdcard__spi_8h_source.html#l00090">90</a> of file <a class="el" href="sdcard__spi_8h_source.html">sdcard_spi.h</a>.</p>
+<p>Definition at line <a class="el" href="sdcard__spi_8h_source.html#l00109">109</a> of file <a class="el" href="sdcard__spi_8h_source.html">sdcard_spi.h</a>.</p>
 </div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for SDCard:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -284,6 +307,18 @@ card_type</td>
 <td class="fielddoc">
 Type of <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a>. </td></tr>
 <tr><td class="fieldtype">
+<a class="anchor" id="a9795c23eb690c9662ab46bfa88b1f29d"></a>enum <a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebb">SDCardErrorStatus</a></td>
+<td class="fieldname">
+error_status</td>
+<td class="fielddoc">
+Contains information on where the error has occured. </td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ae821a7c8984a3ce3080980d664d5090d"></a><a class="el" href="sdcard__spi_8h.html#a58e5b897a3881502acaf7427482789cb">SDCardCallback</a></td>
+<td class="fieldname">
+external_callback</td>
+<td class="fielddoc">
+Callback to call when external operation finishes. </td></tr>
+<tr><td class="fieldtype">
 <a class="anchor" id="a8b59f6433086866c7e5ac3062250f72c"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 input_buf[<a class="el" href="sdcard__spi_8h.html#a451aeffb68f3ecfb82eae03c88e9e48c">SD_BLOCK_SIZE</a>+10]</td>
@@ -295,12 +330,6 @@ The input buffer for the SPI transaction. </td></tr>
 output_buf[<a class="el" href="sdcard__spi_8h.html#a451aeffb68f3ecfb82eae03c88e9e48c">SD_BLOCK_SIZE</a>+10]</td>
 <td class="fielddoc">
 The output buffer for the SPI transaction. </td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a2e483c90445ae01aeb577643db1fc023"></a><a class="el" href="sdcard__spi_8h.html#a58e5b897a3881502acaf7427482789cb">SDCardCallback</a></td>
-<td class="fieldname">
-read_callback</td>
-<td class="fielddoc">
-Callback to call when read operation finishes. </td></tr>
 <tr><td class="fieldtype">
 <a class="anchor" id="a287ef0b9f2f97eba51029cb35e8f0c38"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
@@ -348,7 +377,7 @@ Timeout counter used for initialization checks with ACMD41. </td></tr>
 
 <p>Definition at line <a class="el" href="sdcard__spi_8h_source.html#l00038">38</a> of file <a class="el" href="sdcard__spi_8h_source.html">sdcard_spi.h</a>.</p>
 
-<p>Referenced by <a class="el" href="sdcard__spi_8c_source.html#l00592">sdcard_spi_multiwrite_start()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00563">sdcard_spi_read_block()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00150">sdcard_spi_spicallback()</a>, and <a class="el" href="sdcard__spi_8c_source.html#l00536">sdcard_spi_write_block()</a>.</p>
+<p>Referenced by <a class="el" href="sdcard__spi_8c_source.html#l00616">sdcard_spi_multiwrite_start()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00587">sdcard_spi_read_block()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00156">sdcard_spi_spicallback()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00560">sdcard_spi_write_block()</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00219">sdlogger_spi_direct_index_received()</a>, and <a class="el" href="sdlogger__spi__direct_8c_source.html#l00106">sdlogger_spi_direct_periodic()</a>.</p>
 
 </div>
 </div>
@@ -371,6 +400,54 @@ Timeout counter used for initialization checks with ACMD41. </td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="a76f5ca92baf9e52085499121c7b4aebb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="sdcard__spi_8h.html#a76f5ca92baf9e52085499121c7b4aebb">SDCardErrorStatus</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a76f5ca92baf9e52085499121c7b4aebbad7f5111f29d23db603dbf300761d10b9"></a>SDCardError_None&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a76f5ca92baf9e52085499121c7b4aebba0ff153af54f22a94827e75d6aba5958e"></a>SDCardError_InitializationNoResponse&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a76f5ca92baf9e52085499121c7b4aebba7d90dd1b89ea52c17e267516bc8c709f"></a>SDCardError_CardInfoNoResponse&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a76f5ca92baf9e52085499121c7b4aebbab4ecb494dde59e24537475f7e5520da1"></a>SDCardError_InvalidCardInfo&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a76f5ca92baf9e52085499121c7b4aebba85f08e2b90a3896094fac4f11665313e"></a>SDCardError_ACMD41Timeout&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a76f5ca92baf9e52085499121c7b4aebba0a342483250135e38c32a0446cc9c460"></a>SDCardError_ACMD41NoResponse&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a76f5ca92baf9e52085499121c7b4aebba8ba30fefc5200f2bfebc2badd932d81c"></a>SDCardError_CMD58NoResponse&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a76f5ca92baf9e52085499121c7b4aebbad28401d3257102fb667300ae3991f3fb"></a>SDCardError_CCSBitInvalid&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a76f5ca92baf9e52085499121c7b4aebba4e2cc9f0deaf85e7c8616b5343265615"></a>SDCardError_SetBlockSizeNoResponse&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a76f5ca92baf9e52085499121c7b4aebba0e9a9c1ddc14a0661aceb0423bcc7adb"></a>SDCardError_WriteBlockNoResponse&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a76f5ca92baf9e52085499121c7b4aebba62ab22a3560545a8c7720801795dd0c0"></a>SDCardError_SpiDriverError&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a76f5ca92baf9e52085499121c7b4aebba66460b8dad8f39c37856b927507187e6"></a>SDCardError_BlockWriteError&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a76f5ca92baf9e52085499121c7b4aebbade5cc7a85121192693fe9ca10b429964"></a>SDCardError_ReadBlockNoResponse&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a76f5ca92baf9e52085499121c7b4aebba153a87d8b11a29c40eb4c62d93deb1e2"></a>SDCardError_ReadBlockTimeout&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a76f5ca92baf9e52085499121c7b4aebba7b33c1a95ddf30bb1ee5e71d67c86e5c"></a>SDCardError_MultiWriteNoResponse&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a76f5ca92baf9e52085499121c7b4aebbafdd282038afaad74b752c3872e136579"></a>SDCardError_MultiWriteError&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="sdcard__spi_8h_source.html#l00090">90</a> of file <a class="el" href="sdcard__spi_8h_source.html">sdcard_spi.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a158c27589e5da52795c513a8b711cbf7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -574,13 +651,26 @@ Timeout counter used for initialization checks with ACMD41. </td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="sdcard__spi_8c_source.html#l00069">69</a> of file <a class="el" href="sdcard__spi_8c_source.html">sdcard_spi.c</a>.</p>
+<p>Definition at line <a class="el" href="sdcard__spi_8c_source.html#l00074">74</a> of file <a class="el" href="sdcard__spi_8c_source.html">sdcard_spi.c</a>.</p>
 
-<p>References <a class="el" href="spi_8h_source.html#l00152">spi_transaction::bitorder</a>, <a class="el" href="sdcard__spi_8h_source.html#l00098">SDCard::card_type</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::cdiv</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::cpha</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::cpol</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::dss</a>, <a class="el" href="sdcard__spi_8h_source.html#l00094">SDCard::input_buf</a>, <a class="el" href="spi_8h_source.html#l00143">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="sdcard__spi_8h_source.html#l00095">SDCard::output_buf</a>, <a class="el" href="spi_8h_source.html#l00144">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="sdcard__spi_8h_source.html#l00060">SDCard_BeforeDummyClock</a>, <a class="el" href="sdcard__spi_8h_source.html#l00048">SDCardType_Unknown</a>, <a class="el" href="spi_8h_source.html#l00148">spi_transaction::select</a>, <a class="el" href="spi_8h_source.html#l00147">spi_transaction::slave_idx</a>, <a class="el" href="sdcard__spi_8h_source.html#l00091">SDCard::spi_p</a>, <a class="el" href="sdcard__spi_8h_source.html#l00092">SDCard::spi_t</a>, <a class="el" href="spi_8h_source.html#l00068">SPICphaEdge1</a>, <a class="el" href="spi_8h_source.html#l00077">SPICpolIdleLow</a>, <a class="el" href="spi_8h_source.html#l00119">SPIDiv64</a>, <a class="el" href="spi_8h_source.html#l00084">SPIDss8bit</a>, <a class="el" href="spi_8h_source.html#l00106">SPIMSBFirst</a>, <a class="el" href="spi_8h_source.html#l00057">SPISelectUnselect</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="sdcard__spi_8h_source.html#l00093">SDCard::status</a>, and <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>.</p>
+<p>References <a class="el" href="spi_8h_source.html#l00152">spi_transaction::bitorder</a>, <a class="el" href="sdcard__spi_8h_source.html#l00117">SDCard::card_type</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::cdiv</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::cpha</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::cpol</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::dss</a>, <a class="el" href="sdcard__spi_8h_source.html#l00118">SDCard::error_status</a>, <a class="el" href="sdcard__spi_8h_source.html#l00113">SDCard::input_buf</a>, <a class="el" href="spi_8h_source.html#l00143">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="sdcard__spi_8h_source.html#l00114">SDCard::output_buf</a>, <a class="el" href="spi_8h_source.html#l00144">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="sdcard__spi_8h_source.html#l00060">SDCard_BeforeDummyClock</a>, <a class="el" href="sdcard__spi_8h_source.html#l00091">SDCardError_None</a>, <a class="el" href="sdcard__spi_8h_source.html#l00048">SDCardType_Unknown</a>, <a class="el" href="spi_8h_source.html#l00148">spi_transaction::select</a>, <a class="el" href="spi_8h_source.html#l00147">spi_transaction::slave_idx</a>, <a class="el" href="sdcard__spi_8h_source.html#l00110">SDCard::spi_p</a>, <a class="el" href="sdcard__spi_8h_source.html#l00111">SDCard::spi_t</a>, <a class="el" href="spi_8h_source.html#l00068">SPICphaEdge1</a>, <a class="el" href="spi_8h_source.html#l00077">SPICpolIdleLow</a>, <a class="el" href="spi_8h_source.html#l00119">SPIDiv64</a>, <a class="el" href="spi_8h_source.html#l00084">SPIDss8bit</a>, <a class="el" href="spi_8h_source.html#l00106">SPIMSBFirst</a>, <a class="el" href="spi_8h_source.html#l00057">SPISelectUnselect</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="sdcard__spi_8h_source.html#l00112">SDCard::status</a>, and <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>.</p>
+
+<p>Referenced by <a class="el" href="sdlogger__spi__direct_8c_source.html#l00067">sdlogger_spi_direct_init()</a>.</p>
+
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="sdcard__spi_8h_adbdeea6ec6829f8e1fd6afbf5a31af38_icgraph.png" border="0" usemap="#sdcard__spi_8h_adbdeea6ec6829f8e1fd6afbf5a31af38_icgraph" alt=""/></div>
+<map name="sdcard__spi_8h_adbdeea6ec6829f8e1fd6afbf5a31af38_icgraph" id="sdcard__spi_8h_adbdeea6ec6829f8e1fd6afbf5a31af38_icgraph">
+<area shape="rect" id="node2" href="sdlogger__spi__direct_8h.html#a583b0f3d27ef3f54ca4d1263ebc0a884" title="sdlogger_spi_direct_init Initialize the logger and SD Card. " alt="" coords="169,5,340,32"/></map>
+</div>
+</p>
 
 </div>
 </div>
-<a class="anchor" id="a7889277bddc7e07caaa2e8a7bd639bdc"></a>
+<a class="anchor" id="a2993e6870ac7c137e6cbbef1949aaef1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -588,8 +678,18 @@ Timeout counter used for initialization checks with ACMD41. </td></tr>
           <td class="memname">void sdcard_spi_multiwrite_next </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a> *&#160;</td>
-          <td class="paramname"><em>sdcard</em></td><td>)</td>
+          <td class="paramname"><em>sdcard</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="sdcard__spi_8h.html#a58e5b897a3881502acaf7427482789cb">SDCardCallback</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -602,18 +702,31 @@ Timeout counter used for initialization checks with ACMD41. </td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="sdcard__spi_8c_source.html#l00614">614</a> of file <a class="el" href="sdcard__spi_8c_source.html">sdcard_spi.c</a>.</p>
+<p>Definition at line <a class="el" href="sdcard__spi_8c_source.html#l00638">638</a> of file <a class="el" href="sdcard__spi_8c_source.html">sdcard_spi.c</a>.</p>
 
-<p>References <a class="el" href="spi_8h_source.html#l00155">spi_transaction::after_cb</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::cdiv</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="spi_8h_source.html#l00144">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="sdcard__spi_8h_source.html#l00084">SDCard_MultiWriteIdle</a>, <a class="el" href="sdcard__spi_8h_source.html#l00085">SDCard_MultiWriteWriting</a>, <a class="el" href="sdcard__spi_8c_source.html#l00150">sdcard_spi_spicallback()</a>, <a class="el" href="sdcard__spi_8h_source.html#l00091">SDCard::spi_p</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00048">spi_submit()</a>, <a class="el" href="sdcard__spi_8h_source.html#l00092">SDCard::spi_t</a>, <a class="el" href="spi_8h_source.html#l00118">SPIDiv32</a>, and <a class="el" href="sdcard__spi_8h_source.html#l00093">SDCard::status</a>.</p>
+<p>References <a class="el" href="spi_8h_source.html#l00155">spi_transaction::after_cb</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::cdiv</a>, <a class="el" href="sdcard__spi_8h_source.html#l00119">SDCard::external_callback</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="spi_8h_source.html#l00144">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="sdcard__spi_8h_source.html#l00084">SDCard_MultiWriteIdle</a>, <a class="el" href="sdcard__spi_8h_source.html#l00085">SDCard_MultiWriteWriting</a>, <a class="el" href="sdcard__spi_8c_source.html#l00156">sdcard_spi_spicallback()</a>, <a class="el" href="sdcard__spi_8h_source.html#l00110">SDCard::spi_p</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00048">spi_submit()</a>, <a class="el" href="sdcard__spi_8h_source.html#l00111">SDCard::spi_t</a>, <a class="el" href="spi_8h_source.html#l00118">SPIDiv32</a>, and <a class="el" href="sdcard__spi_8h_source.html#l00112">SDCard::status</a>.</p>
 
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p>Referenced by <a class="el" href="sdlogger__spi__direct_8c_source.html#l00106">sdlogger_spi_direct_periodic()</a>, and <a class="el" href="sdlogger__spi__direct_8c_source.html#l00360">sdlogger_spi_direct_put_byte()</a>.</p>
+
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="sdcard__spi_8h_a7889277bddc7e07caaa2e8a7bd639bdc_cgraph.png" border="0" usemap="#sdcard__spi_8h_a7889277bddc7e07caaa2e8a7bd639bdc_cgraph" alt=""/></div>
-<map name="sdcard__spi_8h_a7889277bddc7e07caaa2e8a7bd639bdc_cgraph" id="sdcard__spi_8h_a7889277bddc7e07caaa2e8a7bd639bdc_cgraph">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="sdcard__spi_8h_a2993e6870ac7c137e6cbbef1949aaef1_cgraph.png" border="0" usemap="#sdcard__spi_8h_a2993e6870ac7c137e6cbbef1949aaef1_cgraph" alt=""/></div>
+<map name="sdcard__spi_8h_a2993e6870ac7c137e6cbbef1949aaef1_cgraph" id="sdcard__spi_8h_a2993e6870ac7c137e6cbbef1949aaef1_cgraph">
 <area shape="rect" id="node2" href="sdcard__spi_8c.html#a64d90e0374b4ebb9c1c6b8fa95c9b73f" title="Callback function for SPI transactions. " alt="" coords="248,97,415,123"/><area shape="rect" id="node4" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="673,97,764,123"/><area shape="rect" id="node3" href="sdcard__spi_8c.html#ae08b33e43067b02ae28ed7f7fccf781d" title="Request one or more bytes from the SDCard. " alt="" coords="471,5,617,47"/><area shape="rect" id="node5" href="sdcard__spi_8c.html#a4f343ab0a5e8ba8f3d68a50e139312c6" title="Send a command to the SDCard. " alt="" coords="463,122,625,149"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="sdcard__spi_8h_a2993e6870ac7c137e6cbbef1949aaef1_icgraph.png" border="0" usemap="#sdcard__spi_8h_a2993e6870ac7c137e6cbbef1949aaef1_icgraph" alt=""/></div>
+<map name="sdcard__spi_8h_a2993e6870ac7c137e6cbbef1949aaef1_icgraph" id="sdcard__spi_8h_a2993e6870ac7c137e6cbbef1949aaef1_icgraph">
+<area shape="rect" id="node2" href="sdlogger__spi__direct_8h.html#ab4a462e9899f9283db5be8ab3a3da922" title="sdlogger_spi_direct_periodic Periodic function called at module frequency " alt="" coords="248,5,393,47"/><area shape="rect" id="node3" href="sdlogger__spi__direct_8h.html#aff470fbbc1a5569c0823724d97dbcec7" title="sdlogger_spi_direct\l_put_byte" alt="" coords="248,71,393,112"/><area shape="rect" id="node4" href="sdlogger__spi__direct_8h.html#a583b0f3d27ef3f54ca4d1263ebc0a884" title="sdlogger_spi_direct_init Initialize the logger and SD Card. " alt="" coords="441,78,612,105"/></map>
 </div>
 </p>
 
@@ -644,7 +757,7 @@ Timeout counter used for initialization checks with ACMD41. </td></tr>
 </div><div class="memdoc">
 
 <p>Start writing multiple blocks of 512 bytes to the <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a>. </p>
-<p>This function notifies the <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a> to expect one or more data packets (which are sent by <a class="el" href="sdcard__spi_8c.html#a7889277bddc7e07caaa2e8a7bd639bdc" title="Write a(nother) data block (512 bytes) to the SDCard. ">sdcard_spi_multiwrite_next()</a>). </p><dl class="params"><dt>Parameters</dt><dd>
+<p>This function notifies the <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a> to expect one or more data packets (which are sent by <a class="el" href="sdcard__spi_8c.html#a2993e6870ac7c137e6cbbef1949aaef1" title="Write a(nother) data block (512 bytes) to the SDCard. ">sdcard_spi_multiwrite_next()</a>). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sdcard</td><td>Pointer to the <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a>. </td></tr>
     <tr><td class="paramname">addr</td><td>Block address to start writing at. Addresses are consecutive numbers, regardless the SDCardType. </td></tr>
@@ -652,18 +765,31 @@ Timeout counter used for initialization checks with ACMD41. </td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="sdcard__spi_8c_source.html#l00592">592</a> of file <a class="el" href="sdcard__spi_8c_source.html">sdcard_spi.c</a>.</p>
+<p>Definition at line <a class="el" href="sdcard__spi_8c_source.html#l00616">616</a> of file <a class="el" href="sdcard__spi_8c_source.html">sdcard_spi.c</a>.</p>
 
-<p>References <a class="el" href="sdcard__spi_8h_source.html#l00098">SDCard::card_type</a>, <a class="el" href="sdcard__spi_8h_source.html#l00038">SD_BLOCK_SIZE</a>, <a class="el" href="sdcard__spi_8h_source.html#l00058">SDCard_Idle</a>, <a class="el" href="sdcard__spi_8h_source.html#l00082">SDCard_SendingCMD25</a>, <a class="el" href="sdcard__spi_8c_source.html#l00443">sdcard_spi_send_cmd()</a>, <a class="el" href="sdcard__spi_8h_source.html#l00052">SDCardType_SdV2block</a>, and <a class="el" href="sdcard__spi_8h_source.html#l00093">SDCard::status</a>.</p>
+<p>References <a class="el" href="sdcard__spi_8h_source.html#l00117">SDCard::card_type</a>, <a class="el" href="sdcard__spi_8h_source.html#l00038">SD_BLOCK_SIZE</a>, <a class="el" href="sdcard__spi_8h_source.html#l00058">SDCard_Idle</a>, <a class="el" href="sdcard__spi_8h_source.html#l00082">SDCard_SendingCMD25</a>, <a class="el" href="sdcard__spi_8c_source.html#l00467">sdcard_spi_send_cmd()</a>, <a class="el" href="sdcard__spi_8h_source.html#l00052">SDCardType_SdV2block</a>, and <a class="el" href="sdcard__spi_8h_source.html#l00112">SDCard::status</a>.</p>
 
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p>Referenced by <a class="el" href="sdlogger__spi__direct_8c_source.html#l00106">sdlogger_spi_direct_periodic()</a>.</p>
+
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sdcard__spi_8h_a665b869e2b80339fa01af811af47247e_cgraph.png" border="0" usemap="#sdcard__spi_8h_a665b869e2b80339fa01af811af47247e_cgraph" alt=""/></div>
 <map name="sdcard__spi_8h_a665b869e2b80339fa01af811af47247e_cgraph" id="sdcard__spi_8h_a665b869e2b80339fa01af811af47247e_cgraph">
 <area shape="rect" id="node2" href="sdcard__spi_8c.html#a4f343ab0a5e8ba8f3d68a50e139312c6" title="Send a command to the SDCard. " alt="" coords="212,42,375,69"/><area shape="rect" id="node3" href="sdcard__spi_8c.html#a64d90e0374b4ebb9c1c6b8fa95c9b73f" title="Callback function for SPI transactions. " alt="" coords="423,42,589,69"/><area shape="rect" id="node5" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="832,71,923,98"/><area shape="rect" id="node4" href="sdcard__spi_8c.html#ae08b33e43067b02ae28ed7f7fccf781d" title="Request one or more bytes from the SDCard. " alt="" coords="637,5,784,47"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="sdcard__spi_8h_a665b869e2b80339fa01af811af47247e_icgraph.png" border="0" usemap="#sdcard__spi_8h_a665b869e2b80339fa01af811af47247e_icgraph" alt=""/></div>
+<map name="sdcard__spi_8h_a665b869e2b80339fa01af811af47247e_icgraph" id="sdcard__spi_8h_a665b869e2b80339fa01af811af47247e_icgraph">
+<area shape="rect" id="node2" href="sdlogger__spi__direct_8h.html#ab4a462e9899f9283db5be8ab3a3da922" title="sdlogger_spi_direct_periodic Periodic function called at module frequency " alt="" coords="212,5,357,47"/></map>
 </div>
 </p>
 
@@ -691,18 +817,31 @@ Timeout counter used for initialization checks with ACMD41. </td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="sdcard__spi_8c_source.html#l00641">641</a> of file <a class="el" href="sdcard__spi_8c_source.html">sdcard_spi.c</a>.</p>
+<p>Definition at line <a class="el" href="sdcard__spi_8c_source.html#l00666">666</a> of file <a class="el" href="sdcard__spi_8c_source.html">sdcard_spi.c</a>.</p>
 
-<p>References <a class="el" href="spi_8h_source.html#l00155">spi_transaction::after_cb</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::cdiv</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="sdcard__spi_8h_source.html#l00095">SDCard::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="sdcard__spi_8h_source.html#l00084">SDCard_MultiWriteIdle</a>, <a class="el" href="sdcard__spi_8h_source.html#l00087">SDCard_MultiWriteStopping</a>, <a class="el" href="sdcard__spi_8c_source.html#l00150">sdcard_spi_spicallback()</a>, <a class="el" href="sdcard__spi_8h_source.html#l00091">SDCard::spi_p</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00048">spi_submit()</a>, <a class="el" href="sdcard__spi_8h_source.html#l00092">SDCard::spi_t</a>, <a class="el" href="spi_8h_source.html#l00118">SPIDiv32</a>, and <a class="el" href="sdcard__spi_8h_source.html#l00093">SDCard::status</a>.</p>
+<p>References <a class="el" href="spi_8h_source.html#l00155">spi_transaction::after_cb</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::cdiv</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="sdcard__spi_8h_source.html#l00114">SDCard::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="sdcard__spi_8h_source.html#l00084">SDCard_MultiWriteIdle</a>, <a class="el" href="sdcard__spi_8h_source.html#l00087">SDCard_MultiWriteStopping</a>, <a class="el" href="sdcard__spi_8c_source.html#l00156">sdcard_spi_spicallback()</a>, <a class="el" href="sdcard__spi_8h_source.html#l00110">SDCard::spi_p</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00048">spi_submit()</a>, <a class="el" href="sdcard__spi_8h_source.html#l00111">SDCard::spi_t</a>, <a class="el" href="spi_8h_source.html#l00118">SPIDiv32</a>, and <a class="el" href="sdcard__spi_8h_source.html#l00112">SDCard::status</a>.</p>
 
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p>Referenced by <a class="el" href="sdlogger__spi__direct_8c_source.html#l00106">sdlogger_spi_direct_periodic()</a>.</p>
+
+<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sdcard__spi_8h_af40ce9cdaf7435d94db52d8ec687c26e_cgraph.png" border="0" usemap="#sdcard__spi_8h_af40ce9cdaf7435d94db52d8ec687c26e_cgraph" alt=""/></div>
 <map name="sdcard__spi_8h_af40ce9cdaf7435d94db52d8ec687c26e_cgraph" id="sdcard__spi_8h_af40ce9cdaf7435d94db52d8ec687c26e_cgraph">
 <area shape="rect" id="node2" href="sdcard__spi_8c.html#a64d90e0374b4ebb9c1c6b8fa95c9b73f" title="Callback function for SPI transactions. " alt="" coords="248,97,415,123"/><area shape="rect" id="node4" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="673,97,764,123"/><area shape="rect" id="node3" href="sdcard__spi_8c.html#ae08b33e43067b02ae28ed7f7fccf781d" title="Request one or more bytes from the SDCard. " alt="" coords="471,5,617,47"/><area shape="rect" id="node5" href="sdcard__spi_8c.html#a4f343ab0a5e8ba8f3d68a50e139312c6" title="Send a command to the SDCard. " alt="" coords="463,122,625,149"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="sdcard__spi_8h_af40ce9cdaf7435d94db52d8ec687c26e_icgraph.png" border="0" usemap="#sdcard__spi_8h_af40ce9cdaf7435d94db52d8ec687c26e_icgraph" alt=""/></div>
+<map name="sdcard__spi_8h_af40ce9cdaf7435d94db52d8ec687c26e_icgraph" id="sdcard__spi_8h_af40ce9cdaf7435d94db52d8ec687c26e_icgraph">
+<area shape="rect" id="node2" href="sdlogger__spi__direct_8h.html#ab4a462e9899f9283db5be8ab3a3da922" title="sdlogger_spi_direct_periodic Periodic function called at module frequency " alt="" coords="248,5,393,47"/></map>
 </div>
 </p>
 
@@ -730,18 +869,31 @@ Timeout counter used for initialization checks with ACMD41. </td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="sdcard__spi_8c_source.html#l00093">93</a> of file <a class="el" href="sdcard__spi_8c_source.html">sdcard_spi.c</a>.</p>
+<p>Definition at line <a class="el" href="sdcard__spi_8c_source.html#l00099">99</a> of file <a class="el" href="sdcard__spi_8c_source.html">sdcard_spi.c</a>.</p>
 
-<p>References <a class="el" href="spi_8h_source.html#l00155">spi_transaction::after_cb</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="sdcard__spi_8h_source.html#l00095">SDCard::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="sdcard__spi_8h_source.html#l00060">SDCard_BeforeDummyClock</a>, <a class="el" href="sdcard__spi_8h_source.html#l00059">SDCard_Busy</a>, <a class="el" href="sdcard__spi_8h_source.html#l00086">SDCard_MultiWriteBusy</a>, <a class="el" href="sdcard__spi_8h_source.html#l00067">SDCard_SendingACMD41v2</a>, <a class="el" href="sdcard__spi_8h_source.html#l00061">SDCard_SendingDummyClock</a>, <a class="el" href="sdcard__spi_8c_source.html#l00519">sdcard_spi_request_bytes()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00478">sdcard_spi_send_app_cmd()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00150">sdcard_spi_spicallback()</a>, <a class="el" href="sdcard__spi_8h_source.html#l00080">SDCard_WaitingForDataToken</a>, <a class="el" href="spi_8h_source.html#l00148">spi_transaction::select</a>, <a class="el" href="sdcard__spi_8h_source.html#l00091">SDCard::spi_p</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00048">spi_submit()</a>, <a class="el" href="sdcard__spi_8h_source.html#l00092">SDCard::spi_t</a>, <a class="el" href="spi_8h_source.html#l00060">SPINoSelect</a>, <a class="el" href="spi_8h_source.html#l00091">SPITransPending</a>, <a class="el" href="spi_8h_source.html#l00092">SPITransRunning</a>, <a class="el" href="sdcard__spi_8h_source.html#l00093">SDCard::status</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, and <a class="el" href="sdcard__spi_8h_source.html#l00097">SDCard::timeout_counter</a>.</p>
+<p>References <a class="el" href="spi_8h_source.html#l00155">spi_transaction::after_cb</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="sdcard__spi_8h_source.html#l00114">SDCard::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="sdcard__spi_8h_source.html#l00060">SDCard_BeforeDummyClock</a>, <a class="el" href="sdcard__spi_8h_source.html#l00059">SDCard_Busy</a>, <a class="el" href="sdcard__spi_8h_source.html#l00086">SDCard_MultiWriteBusy</a>, <a class="el" href="sdcard__spi_8h_source.html#l00067">SDCard_SendingACMD41v2</a>, <a class="el" href="sdcard__spi_8h_source.html#l00061">SDCard_SendingDummyClock</a>, <a class="el" href="sdcard__spi_8c_source.html#l00543">sdcard_spi_request_bytes()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00502">sdcard_spi_send_app_cmd()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00156">sdcard_spi_spicallback()</a>, <a class="el" href="sdcard__spi_8h_source.html#l00080">SDCard_WaitingForDataToken</a>, <a class="el" href="spi_8h_source.html#l00148">spi_transaction::select</a>, <a class="el" href="sdcard__spi_8h_source.html#l00110">SDCard::spi_p</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00048">spi_submit()</a>, <a class="el" href="sdcard__spi_8h_source.html#l00111">SDCard::spi_t</a>, <a class="el" href="spi_8h_source.html#l00060">SPINoSelect</a>, <a class="el" href="spi_8h_source.html#l00091">SPITransPending</a>, <a class="el" href="spi_8h_source.html#l00092">SPITransRunning</a>, <a class="el" href="sdcard__spi_8h_source.html#l00112">SDCard::status</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, and <a class="el" href="sdcard__spi_8h_source.html#l00116">SDCard::timeout_counter</a>.</p>
 
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p>Referenced by <a class="el" href="sdlogger__spi__direct_8c_source.html#l00106">sdlogger_spi_direct_periodic()</a>.</p>
+
+<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sdcard__spi_8h_ac8de8d3bf63d614011c58978acdb2f27_cgraph.png" border="0" usemap="#sdcard__spi_8h_ac8de8d3bf63d614011c58978acdb2f27_cgraph" alt=""/></div>
 <map name="sdcard__spi_8h_ac8de8d3bf63d614011c58978acdb2f27_cgraph" id="sdcard__spi_8h_ac8de8d3bf63d614011c58978acdb2f27_cgraph">
 <area shape="rect" id="node2" href="sdcard__spi_8c.html#ae08b33e43067b02ae28ed7f7fccf781d" title="Request one or more bytes from the SDCard. " alt="" coords="224,26,371,67"/><area shape="rect" id="node3" href="sdcard__spi_8c.html#a64d90e0374b4ebb9c1c6b8fa95c9b73f" title="Callback function for SPI transactions. " alt="" coords="443,92,609,118"/><area shape="rect" id="node5" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="868,58,959,85"/><area shape="rect" id="node6" href="sdcard__spi_8c.html#a10438987e3a4d4847b39c37caafc5564" title="Send a app&#45;command to the SDCard. " alt="" coords="200,142,395,169"/><area shape="rect" id="node4" href="sdcard__spi_8c.html#a4f343ab0a5e8ba8f3d68a50e139312c6" title="Send a command to the SDCard. " alt="" coords="657,109,820,136"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="sdcard__spi_8h_ac8de8d3bf63d614011c58978acdb2f27_icgraph.png" border="0" usemap="#sdcard__spi_8h_ac8de8d3bf63d614011c58978acdb2f27_icgraph" alt=""/></div>
+<map name="sdcard__spi_8h_ac8de8d3bf63d614011c58978acdb2f27_icgraph" id="sdcard__spi_8h_ac8de8d3bf63d614011c58978acdb2f27_icgraph">
+<area shape="rect" id="node2" href="sdlogger__spi__direct_8h.html#ab4a462e9899f9283db5be8ab3a3da922" title="sdlogger_spi_direct_periodic Periodic function called at module frequency " alt="" coords="200,5,345,47"/></map>
 </div>
 </p>
 
@@ -787,18 +939,31 @@ Timeout counter used for initialization checks with ACMD41. </td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="sdcard__spi_8c_source.html#l00563">563</a> of file <a class="el" href="sdcard__spi_8c_source.html">sdcard_spi.c</a>.</p>
+<p>Definition at line <a class="el" href="sdcard__spi_8c_source.html#l00587">587</a> of file <a class="el" href="sdcard__spi_8c_source.html">sdcard_spi.c</a>.</p>
 
-<p>References <a class="el" href="sdcard__spi_8h_source.html#l00098">SDCard::card_type</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::cdiv</a>, <a class="el" href="sdcard__spi_8h_source.html#l00099">SDCard::read_callback</a>, <a class="el" href="sdcard__spi_8h_source.html#l00038">SD_BLOCK_SIZE</a>, <a class="el" href="sdcard__spi_8h_source.html#l00058">SDCard_Idle</a>, <a class="el" href="sdcard__spi_8h_source.html#l00078">SDCard_SendingCMD17</a>, <a class="el" href="sdcard__spi_8c_source.html#l00443">sdcard_spi_send_cmd()</a>, <a class="el" href="sdcard__spi_8h_source.html#l00052">SDCardType_SdV2block</a>, <a class="el" href="sdcard__spi_8h_source.html#l00092">SDCard::spi_t</a>, <a class="el" href="spi_8h_source.html#l00118">SPIDiv32</a>, and <a class="el" href="sdcard__spi_8h_source.html#l00093">SDCard::status</a>.</p>
+<p>References <a class="el" href="sdcard__spi_8h_source.html#l00117">SDCard::card_type</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::cdiv</a>, <a class="el" href="sdcard__spi_8h_source.html#l00119">SDCard::external_callback</a>, <a class="el" href="sdcard__spi_8h_source.html#l00038">SD_BLOCK_SIZE</a>, <a class="el" href="sdcard__spi_8h_source.html#l00058">SDCard_Idle</a>, <a class="el" href="sdcard__spi_8h_source.html#l00078">SDCard_SendingCMD17</a>, <a class="el" href="sdcard__spi_8c_source.html#l00467">sdcard_spi_send_cmd()</a>, <a class="el" href="sdcard__spi_8h_source.html#l00052">SDCardType_SdV2block</a>, <a class="el" href="sdcard__spi_8h_source.html#l00111">SDCard::spi_t</a>, <a class="el" href="spi_8h_source.html#l00118">SPIDiv32</a>, and <a class="el" href="sdcard__spi_8h_source.html#l00112">SDCard::status</a>.</p>
 
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p>Referenced by <a class="el" href="sdlogger__spi__direct_8c_source.html#l00327">sdlogger_spi_direct_command()</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00219">sdlogger_spi_direct_index_received()</a>, and <a class="el" href="sdlogger__spi__direct_8c_source.html#l00106">sdlogger_spi_direct_periodic()</a>.</p>
+
+<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sdcard__spi_8h_ac0cacb24e7480f3ea6463131436c7d0e_cgraph.png" border="0" usemap="#sdcard__spi_8h_ac0cacb24e7480f3ea6463131436c7d0e_cgraph" alt=""/></div>
 <map name="sdcard__spi_8h_ac0cacb24e7480f3ea6463131436c7d0e_cgraph" id="sdcard__spi_8h_ac0cacb24e7480f3ea6463131436c7d0e_cgraph">
 <area shape="rect" id="node2" href="sdcard__spi_8c.html#a4f343ab0a5e8ba8f3d68a50e139312c6" title="Send a command to the SDCard. " alt="" coords="220,42,383,69"/><area shape="rect" id="node3" href="sdcard__spi_8c.html#a64d90e0374b4ebb9c1c6b8fa95c9b73f" title="Callback function for SPI transactions. " alt="" coords="431,42,597,69"/><area shape="rect" id="node5" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="840,71,931,98"/><area shape="rect" id="node4" href="sdcard__spi_8c.html#ae08b33e43067b02ae28ed7f7fccf781d" title="Request one or more bytes from the SDCard. " alt="" coords="645,5,792,47"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="sdcard__spi_8h_ac0cacb24e7480f3ea6463131436c7d0e_icgraph.png" border="0" usemap="#sdcard__spi_8h_ac0cacb24e7480f3ea6463131436c7d0e_icgraph" alt=""/></div>
+<map name="sdcard__spi_8h_ac0cacb24e7480f3ea6463131436c7d0e_icgraph" id="sdcard__spi_8h_ac0cacb24e7480f3ea6463131436c7d0e_icgraph">
+<area shape="rect" id="node2" href="sdlogger__spi__direct_8h.html#a2e3b354ac6d0e173e051be713c63c161" title="sdlogger_spi_direct\l_command" alt="" coords="413,5,559,47"/><area shape="rect" id="node3" href="sdlogger__spi__direct_8h.html#a229b523a75d655fdb55fac8e715a13c5" title="sdlogger_spi_direct_index_received Callback from SD Card when block at index location is received..." alt="" coords="220,51,365,92"/><area shape="rect" id="node4" href="sdlogger__spi__direct_8h.html#ab4a462e9899f9283db5be8ab3a3da922" title="sdlogger_spi_direct_periodic Periodic function called at module frequency " alt="" coords="413,84,559,125"/></map>
 </div>
 </p>
 
@@ -837,18 +1002,31 @@ Timeout counter used for initialization checks with ACMD41. </td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="sdcard__spi_8c_source.html#l00536">536</a> of file <a class="el" href="sdcard__spi_8c_source.html">sdcard_spi.c</a>.</p>
+<p>Definition at line <a class="el" href="sdcard__spi_8c_source.html#l00560">560</a> of file <a class="el" href="sdcard__spi_8c_source.html">sdcard_spi.c</a>.</p>
 
-<p>References <a class="el" href="sdcard__spi_8h_source.html#l00098">SDCard::card_type</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::cdiv</a>, <a class="el" href="sdcard__spi_8h_source.html#l00038">SD_BLOCK_SIZE</a>, <a class="el" href="sdcard__spi_8h_source.html#l00058">SDCard_Idle</a>, <a class="el" href="sdcard__spi_8h_source.html#l00074">SDCard_SendingCMD24</a>, <a class="el" href="sdcard__spi_8c_source.html#l00443">sdcard_spi_send_cmd()</a>, <a class="el" href="sdcard__spi_8h_source.html#l00052">SDCardType_SdV2block</a>, <a class="el" href="sdcard__spi_8h_source.html#l00092">SDCard::spi_t</a>, <a class="el" href="spi_8h_source.html#l00119">SPIDiv64</a>, and <a class="el" href="sdcard__spi_8h_source.html#l00093">SDCard::status</a>.</p>
+<p>References <a class="el" href="sdcard__spi_8h_source.html#l00117">SDCard::card_type</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::cdiv</a>, <a class="el" href="sdcard__spi_8h_source.html#l00038">SD_BLOCK_SIZE</a>, <a class="el" href="sdcard__spi_8h_source.html#l00058">SDCard_Idle</a>, <a class="el" href="sdcard__spi_8h_source.html#l00074">SDCard_SendingCMD24</a>, <a class="el" href="sdcard__spi_8c_source.html#l00467">sdcard_spi_send_cmd()</a>, <a class="el" href="sdcard__spi_8h_source.html#l00052">SDCardType_SdV2block</a>, <a class="el" href="sdcard__spi_8h_source.html#l00111">SDCard::spi_t</a>, <a class="el" href="spi_8h_source.html#l00119">SPIDiv64</a>, and <a class="el" href="sdcard__spi_8h_source.html#l00112">SDCard::status</a>.</p>
 
-<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p>Referenced by <a class="el" href="sdlogger__spi__direct_8c_source.html#l00219">sdlogger_spi_direct_index_received()</a>.</p>
+
+<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sdcard__spi_8h_a58e3e4049a8c33c2f9ed56e310c9200c_cgraph.png" border="0" usemap="#sdcard__spi_8h_a58e3e4049a8c33c2f9ed56e310c9200c_cgraph" alt=""/></div>
 <map name="sdcard__spi_8h_a58e3e4049a8c33c2f9ed56e310c9200c_cgraph" id="sdcard__spi_8h_a58e3e4049a8c33c2f9ed56e310c9200c_cgraph">
 <area shape="rect" id="node2" href="sdcard__spi_8c.html#a4f343ab0a5e8ba8f3d68a50e139312c6" title="Send a command to the SDCard. " alt="" coords="220,42,383,69"/><area shape="rect" id="node3" href="sdcard__spi_8c.html#a64d90e0374b4ebb9c1c6b8fa95c9b73f" title="Callback function for SPI transactions. " alt="" coords="431,42,597,69"/><area shape="rect" id="node5" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="840,71,931,98"/><area shape="rect" id="node4" href="sdcard__spi_8c.html#ae08b33e43067b02ae28ed7f7fccf781d" title="Request one or more bytes from the SDCard. " alt="" coords="645,5,792,47"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="sdcard__spi_8h_a58e3e4049a8c33c2f9ed56e310c9200c_icgraph.png" border="0" usemap="#sdcard__spi_8h_a58e3e4049a8c33c2f9ed56e310c9200c_icgraph" alt=""/></div>
+<map name="sdcard__spi_8h_a58e3e4049a8c33c2f9ed56e310c9200c_icgraph" id="sdcard__spi_8h_a58e3e4049a8c33c2f9ed56e310c9200c_icgraph">
+<area shape="rect" id="node2" href="sdlogger__spi__direct_8h.html#a229b523a75d655fdb55fac8e715a13c5" title="sdlogger_spi_direct_index_received Callback from SD Card when block at index location is received..." alt="" coords="220,39,365,80"/><area shape="rect" id="node3" href="sdlogger__spi__direct_8h.html#a2e3b354ac6d0e173e051be713c63c161" title="sdlogger_spi_direct\l_command" alt="" coords="413,5,559,47"/><area shape="rect" id="node4" href="sdlogger__spi__direct_8h.html#ab4a462e9899f9283db5be8ab3a3da922" title="sdlogger_spi_direct_periodic Periodic function called at module frequency " alt="" coords="413,71,559,112"/></map>
 </div>
 </p>
 
@@ -866,11 +1044,11 @@ Timeout counter used for initialization checks with ACMD41. </td></tr>
 </div><div class="memdoc">
 
 <p>This is the definition of the SD card. </p>
-<p>Currently, only one SD card can be used. Most of the functions are prepared for feature support of multiple SD cards, by taking a reference to the <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a> as parameter. Only the sdcard_spi_callback() function, which is called after a spi transaction is finished, does not provide a reference to the <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a>. Thereby sdcard_spi_callback() cannot know which <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a> is ready. However, the <a class="el" href="group__spi.html#structspi__transaction" title="SPI transaction structure. ">spi_transaction</a> is given as a parameter, which is part of the <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a>. So thereby the <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a> might be identified. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000027">Todo:</a></b></dt><dd>Add support for multiple SD cards. </dd></dl>
+<p>Currently, only one SD card can be used. Most of the functions are prepared for feature support of multiple SD cards, by taking a reference to the <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a> as parameter. Only the sdcard_spi_callback() function, which is called after a spi transaction is finished, does not provide a reference to the <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a>. Thereby sdcard_spi_callback() cannot know which <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a> is ready. However, the <a class="el" href="group__spi.html#structspi__transaction" title="SPI transaction structure. ">spi_transaction</a> is given as a parameter, which is part of the <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a>. So thereby the <a class="el" href="sdcard__spi_8h.html#structSDCard">SDCard</a> might be identified. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000023">Todo:</a></b></dt><dd>Add support for multiple SD cards. </dd></dl>
 
-<p>Definition at line <a class="el" href="sdcard__spi_8c_source.html#l00051">51</a> of file <a class="el" href="sdcard__spi_8c_source.html">sdcard_spi.c</a>.</p>
+<p>Definition at line <a class="el" href="sdcard__spi_8c_source.html#l00056">56</a> of file <a class="el" href="sdcard__spi_8c_source.html">sdcard_spi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sdcard__spi_8c_source.html#l00150">sdcard_spi_spicallback()</a>.</p>
+<p>Referenced by <a class="el" href="sdcard__spi_8c_source.html#l00156">sdcard_spi_spicallback()</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00327">sdlogger_spi_direct_command()</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00219">sdlogger_spi_direct_index_received()</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00067">sdlogger_spi_direct_init()</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00312">sdlogger_spi_direct_multiwrite_written()</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00106">sdlogger_spi_direct_periodic()</a>, and <a class="el" href="sdlogger__spi__direct_8c_source.html#l00360">sdlogger_spi_direct_put_byte()</a>.</p>
 
 </div>
 </div>
@@ -880,7 +1058,7 @@ Timeout counter used for initialization checks with ACMD41. </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="sdcard__spi_8h.html">sdcard_spi.h</a></li>
-    <li class="footer">Generated on Wed Nov 11 2015 02:01:44 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:02:00 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

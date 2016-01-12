@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -105,6 +105,9 @@ $(document).ready(function(){initNavTree('actuators__spektrum_8c.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">actuators_spektrum.c File Reference</div>  </div>
 </div><!--header-->
@@ -127,18 +130,143 @@ $(document).ready(function(){initNavTree('actuators__spektrum_8c.html','');});
 </div>
 </div>
 <p><a href="actuators__spektrum_8c_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a2703f3974dde7b9a91e75477d1c64340"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__spektrum_8c.html#a2703f3974dde7b9a91e75477d1c64340">actuators_spektrum_send</a> (struct <a class="el" href="link__device_8h.html#structlink__device">link_device</a> *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
+<tr class="separator:a2703f3974dde7b9a91e75477d1c64340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb2976a5407c78fb22f74d2c631dc2c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__spektrum_8c.html#abb2976a5407c78fb22f74d2c631dc2c8">actuators_spektrum_init</a> (void)</td></tr>
+<tr class="separator:abb2976a5407c78fb22f74d2c631dc2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a166569d0e5d830b35538915040d59425"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__spektrum_8c.html#a166569d0e5d830b35538915040d59425">actuators_spektrum_set</a> (void)</td></tr>
+<tr class="separator:a166569d0e5d830b35538915040d59425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a6984ce4cd7ccb105043c1f3422a249ca"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="actuators__spektrum_8h.html#structActuatorsSpektrum">ActuatorsSpektrum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__spektrum_8c.html#a6984ce4cd7ccb105043c1f3422a249ca">actuators_spektrum</a></td></tr>
+<tr class="separator:a6984ce4cd7ccb105043c1f3422a249ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Spektrum actuator driver, which can output as 7 spektrum channels at ~11ms. </p>
 <p>Channels min, averga and maximum should be: 340, 1024, 1708 </p>
 
 <p>Definition in file <a class="el" href="actuators__spektrum_8c_source.html">actuators_spektrum.c</a>.</p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="abb2976a5407c78fb22f74d2c631dc2c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void actuators_spektrum_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="actuators__spektrum_8c_source.html#l00051">51</a> of file <a class="el" href="actuators__spektrum_8c_source.html">actuators_spektrum.c</a>.</p>
+
+<p>References <a class="el" href="actuators__spektrum_8c_source.html#l00045">actuators_spektrum</a>, <a class="el" href="actuators__spektrum_8h_source.html#l00038">ActuatorsSpektrum::device</a>, and <a class="el" href="actuators__spektrum_8h_source.html#l00039">ActuatorsSpektrum::device2</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2703f3974dde7b9a91e75477d1c64340"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void actuators_spektrum_send </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="link__device_8h.html#structlink__device">link_device</a> *&#160;</td>
+          <td class="paramname"><em>dev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="actuators__spektrum_8c_source.html#l00083">83</a> of file <a class="el" href="actuators__spektrum_8c_source.html">actuators_spektrum.c</a>.</p>
+
+<p>References <a class="el" href="actuators__spektrum_8c_source.html#l00045">actuators_spektrum</a>, <a class="el" href="actuators__spektrum_8h_source.html#l00033">ACTUATORS_SPEKTRUM_MAX_NB</a>, <a class="el" href="actuators__spektrum_8h_source.html#l00037">ActuatorsSpektrum::cmds</a>, <a class="el" href="link__device_8h_source.html#l00050">link_device::periph</a>, and <a class="el" href="link__device_8h_source.html#l00046">link_device::put_byte</a>.</p>
+
+<p>Referenced by <a class="el" href="actuators__spektrum_8c_source.html#l00063">actuators_spektrum_set()</a>.</p>
+
+<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="actuators__spektrum_8c_a2703f3974dde7b9a91e75477d1c64340_icgraph.png" border="0" usemap="#actuators__spektrum_8c_a2703f3974dde7b9a91e75477d1c64340_icgraph" alt=""/></div>
+<map name="actuators__spektrum_8c_a2703f3974dde7b9a91e75477d1c64340_icgraph" id="actuators__spektrum_8c_a2703f3974dde7b9a91e75477d1c64340_icgraph">
+<area shape="rect" id="node2" href="actuators__spektrum_8h.html#a166569d0e5d830b35538915040d59425" title="actuators_spektrum_set" alt="" coords="243,5,421,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a166569d0e5d830b35538915040d59425"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void actuators_spektrum_set </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="actuators__spektrum_8c_source.html#l00063">63</a> of file <a class="el" href="actuators__spektrum_8c_source.html">actuators_spektrum.c</a>.</p>
+
+<p>References <a class="el" href="actuators__spektrum_8c_source.html#l00045">actuators_spektrum</a>, <a class="el" href="actuators__spektrum_8c_source.html#l00083">actuators_spektrum_send()</a>, <a class="el" href="actuators__spektrum_8h_source.html#l00038">ActuatorsSpektrum::device</a>, and <a class="el" href="actuators__spektrum_8h_source.html#l00039">ActuatorsSpektrum::device2</a>.</p>
+
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="actuators__spektrum_8c_a166569d0e5d830b35538915040d59425_cgraph.png" border="0" usemap="#actuators__spektrum_8c_a166569d0e5d830b35538915040d59425_cgraph" alt=""/></div>
+<map name="actuators__spektrum_8c_a166569d0e5d830b35538915040d59425_cgraph" id="actuators__spektrum_8c_a166569d0e5d830b35538915040d59425_cgraph">
+<area shape="rect" id="node2" href="actuators__spektrum_8c.html#a2703f3974dde7b9a91e75477d1c64340" title="actuators_spektrum_send" alt="" coords="232,5,421,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a6984ce4cd7ccb105043c1f3422a249ca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="actuators__spektrum_8h.html#structActuatorsSpektrum">ActuatorsSpektrum</a> actuators_spektrum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="actuators__spektrum_8c_source.html#l00045">45</a> of file <a class="el" href="actuators__spektrum_8c_source.html">actuators_spektrum.c</a>.</p>
+
+<p>Referenced by <a class="el" href="actuators__spektrum_8c_source.html#l00051">actuators_spektrum_init()</a>, <a class="el" href="actuators__spektrum_8c_source.html#l00083">actuators_spektrum_send()</a>, and <a class="el" href="actuators__spektrum_8c_source.html#l00063">actuators_spektrum_set()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_27687546688cef5dbb42803ce993f4c4.html">actuators</a></li><li class="navelem"><a class="el" href="actuators__spektrum_8c.html">actuators_spektrum.c</a></li>
-    <li class="footer">Generated on Wed Nov 11 2015 02:01:45 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:02:01 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

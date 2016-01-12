@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -116,22 +116,27 @@ $(document).ready(function(){initNavTree('module__airspeed_ets.html','');});
 Example for airframe file</h1>
 <p>This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;modules&gt;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;load name=&quot;airspeed_ets.xml&quot;&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    &lt;define name=&quot;AIRSPEED_ETS_I2C_DEV&quot; value=&quot;i2cX&quot; /&gt;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    &lt;define name=&quot;AIRSPEED_ETS_OFFSET&quot; value=&quot;offset&quot; /&gt;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    &lt;define name=&quot;AIRSPEED_ETS_SCALE&quot; value=&quot;scale&quot; /&gt;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    &lt;define name=&quot;AIRSPEED_ETS_START_DELAY&quot; value=&quot;delay&quot; /&gt;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    &lt;define name=&quot;AIRSPEED_ETS_SYNC_SEND&quot; /&gt;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    &lt;define name=&quot;USE_AIRSPEED_ETS&quot; value=&quot;TRUE|FALSE&quot; /&gt;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    &lt;define name=&quot;AIRSPEED_ETS_3RD_PARTY_MODE&quot; /&gt;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  &lt;/load&gt;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;&lt;/modules&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    &lt;define name=&quot;AIRSPEED_ETS_OFFSET&quot; value=&quot;offset&quot; /&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    &lt;define name=&quot;AIRSPEED_ETS_SCALE&quot; value=&quot;scale&quot; /&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    &lt;define name=&quot;AIRSPEED_ETS_START_DELAY&quot; value=&quot;delay&quot; /&gt;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    &lt;define name=&quot;AIRSPEED_ETS_SYNC_SEND&quot; /&gt;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    &lt;define name=&quot;USE_AIRSPEED_ETS&quot; value=&quot;TRUE|FALSE&quot; /&gt;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    &lt;define name=&quot;AIRSPEED_ETS_3RD_PARTY_MODE&quot; /&gt;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    &lt;define name=&quot;AIRSPEED_ETS_SDLOG&quot; value=&quot;TRUE|FALSE&quot; /&gt;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    &lt;configure name=&quot;AIRSPEED_ETS_I2C_DEV&quot; value=&quot;i2cX&quot; /&gt;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  &lt;/load&gt;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;&lt;/modules&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__airspeed_ets"></a>
 Module configuration options</h1>
-<h2><a class="anchor" id="define"></a>
-Define Options</h2>
+<h2><a class="anchor" id="configure"></a>
+Configure Options</h2>
 <ul>
 <li><b>name:</b> <code>AIRSPEED_ETS_I2C_DEV</code> <b>value:</b> <em>i2cX</em> <br />
  Description: set i2c peripheral (default: i2c0)</li>
+</ul>
+<h2><a class="anchor" id="define"></a>
+Define Options</h2>
+<ul>
 <li><b>name:</b> <code>AIRSPEED_ETS_OFFSET</code> <b>value:</b> <em>offset</em> <br />
  Description: sensor reading offset for sensor in proprietary mode (default: 0)</li>
 <li><b>name:</b> <code>AIRSPEED_ETS_SCALE</code> <b>value:</b> <em>scale</em> <br />
@@ -144,6 +149,8 @@ Define Options</h2>
  Description: set airspeed in state interface</li>
 <li><b>name:</b> <code>AIRSPEED_ETS_3RD_PARTY_MODE</code> <b>value:</b> <em>None</em> <br />
  Description: read raw value for sensor in third-party mode</li>
+<li><b>name:</b> <code>AIRSPEED_ETS_SDLOG</code> <b>value:</b> <em>TRUE|FALSE</em> <br />
+ Description: start logging to SD card</li>
 </ul>
 <h1><a class="anchor" id="functions__airspeed_ets"></a>
 Module functions</h1>
@@ -205,13 +212,14 @@ Raw airspeed_ets.xml file:</h2>
 <div class="line">      - Yellow wire: SDA</div>
 <div class="line">      - Brown wire: SCL</div>
 <div class="line">    &lt;/description&gt;</div>
-<div class="line">    &lt;define name=&quot;AIRSPEED_ETS_I2C_DEV&quot; value=&quot;i2cX&quot; description=&quot;set i2c peripheral (default: i2c0)&quot;/&gt;</div>
+<div class="line">    &lt;configure name=&quot;AIRSPEED_ETS_I2C_DEV&quot; value=&quot;i2cX&quot; description=&quot;set i2c peripheral (default: i2c0)&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;AIRSPEED_ETS_OFFSET&quot; value=&quot;offset&quot; description=&quot;sensor reading offset for sensor in proprietary mode (default: 0)&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;AIRSPEED_ETS_SCALE&quot; value=&quot;scale&quot; description=&quot;sensor scale factor for sensor in proprietary mode  (default: 1.8)&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;AIRSPEED_ETS_START_DELAY&quot; value=&quot;delay&quot; description=&quot;set initial start delay in seconds&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;AIRSPEED_ETS_SYNC_SEND&quot; description=&quot;flag to transmit the data as it is acquired&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;USE_AIRSPEED_ETS&quot; value=&quot;TRUE|FALSE&quot; description=&quot;set airspeed in state interface&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;AIRSPEED_ETS_3RD_PARTY_MODE&quot;  description=&quot;read raw value for sensor in third-party mode&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;AIRSPEED_ETS_SDLOG&quot; value=&quot;TRUE|FALSE&quot; description=&quot;start logging to SD card&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;header&gt;</div>
@@ -222,6 +230,13 @@ Raw airspeed_ets.xml file:</h2>
 <div class="line">  &lt;event fun=&quot;AirspeedEtsEvent()&quot;/&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;makefile&gt;</div>
+<div class="line">    &lt;raw&gt;</div>
+<div class="line">      AIRSPEED_ETS_I2C_DEV ?= i2c0</div>
+<div class="line">      AIRSPEED_ETS_I2C_DEV_LOWER=$(shell echo $(AIRSPEED_ETS_I2C_DEV) | tr A-Z a-z)</div>
+<div class="line">      AIRSPEED_ETS_I2C_DEV_UPPER=$(shell echo $(AIRSPEED_ETS_I2C_DEV) | tr a-z A-Z)</div>
+<div class="line">    &lt;/raw&gt;</div>
+<div class="line">    &lt;define name=&quot;USE_$(AIRSPEED_ETS_I2C_DEV_UPPER)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;AIRSPEED_ETS_I2C_DEV&quot; value=&quot;$(AIRSPEED_ETS_I2C_DEV_LOWER)&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;airspeed_ets.c&quot;/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line"></div>
@@ -233,7 +248,7 @@ Raw airspeed_ets.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Nov 11 2015 02:01:51 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:02:07 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

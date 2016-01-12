@@ -88,9 +88,13 @@ var searchData=
   ['ahrs_5fmlkf_5funinit',['AHRS_MLKF_UNINIT',['../ahrs__float__mlkf_8h.html#ac37e0c0ac7b84e55eb5fac8b19d31192a99fdf115590a440e69843537dbf5997b',1,'ahrs_float_mlkf.h']]],
   ['ak_5fconf_5fdone',['AK_CONF_DONE',['../ak8963_8h.html#ade3f567d3fec4c2efb104badb509a01ead81e765fe3b24de57deb8f02ba28f910',1,'ak8963.h']]],
   ['ak_5fconf_5fmode',['AK_CONF_MODE',['../ak8963_8h.html#ade3f567d3fec4c2efb104badb509a01ea58e59caf3386e055a618ea2839ef8c9c',1,'ak8963.h']]],
-  ['ak_5fconf_5funinit',['AK_CONF_UNINIT',['../ak8963_8h.html#ade3f567d3fec4c2efb104badb509a01ea8639c9508780bdd916401619169b1cdd',1,'ak8963.h']]],
-  ['ak_5fstatus_5fdone',['AK_STATUS_DONE',['../ak8963_8h.html#a17716d364ee924bf509a99715208137aa780ead6554600ea10cc4260b2aae11d9',1,'ak8963.h']]],
-  ['ak_5fstatus_5fidle',['AK_STATUS_IDLE',['../ak8963_8h.html#a17716d364ee924bf509a99715208137aa417cdde96c5b7df29b125f2a0ddbc196',1,'ak8963.h']]],
-  ['ak_5fstatus_5fread',['AK_STATUS_READ',['../ak8963_8h.html#a17716d364ee924bf509a99715208137aadbd9a8610986900f4a5d9d5a41dd45a3',1,'ak8963.h']]],
+  ['ak_5fconf_5frequested',['AK_CONF_REQUESTED',['../ak8975_8h.html#a28e52220eeec86e6f8cce258436abe61a80f5667c449032377050a560d47b5cdf',1,'ak8975.h']]],
+  ['ak_5fconf_5funinit',['AK_CONF_UNINIT',['../ak8963_8h.html#ade3f567d3fec4c2efb104badb509a01ea8639c9508780bdd916401619169b1cdd',1,'AK_CONF_UNINIT():&#160;ak8963.h'],['../ak8975_8h.html#a28e52220eeec86e6f8cce258436abe61a8639c9508780bdd916401619169b1cdd',1,'AK_CONF_UNINIT():&#160;ak8975.h']]],
+  ['ak_5fdisable_5faccess_5fcalibration',['AK_DISABLE_ACCESS_CALIBRATION',['../ak8975_8h.html#a28e52220eeec86e6f8cce258436abe61a736022a8fd3eb152072b51b3e219e3a0',1,'ak8975.h']]],
+  ['ak_5freq_5fcalibration',['AK_REQ_CALIBRATION',['../ak8975_8h.html#a28e52220eeec86e6f8cce258436abe61ab5cc80877731190b440cd958c75b7cce',1,'ak8975.h']]],
+  ['ak_5fstatus_5fdone',['AK_STATUS_DONE',['../ak8963_8h.html#a17716d364ee924bf509a99715208137aa780ead6554600ea10cc4260b2aae11d9',1,'AK_STATUS_DONE():&#160;ak8963.h'],['../ak8975_8h.html#a583c1693d6d13b50f2ee54f6b46ada49a780ead6554600ea10cc4260b2aae11d9',1,'AK_STATUS_DONE():&#160;ak8975.h']]],
+  ['ak_5fstatus_5fidle',['AK_STATUS_IDLE',['../ak8963_8h.html#a17716d364ee924bf509a99715208137aa417cdde96c5b7df29b125f2a0ddbc196',1,'AK_STATUS_IDLE():&#160;ak8963.h'],['../ak8975_8h.html#a583c1693d6d13b50f2ee54f6b46ada49a417cdde96c5b7df29b125f2a0ddbc196',1,'AK_STATUS_IDLE():&#160;ak8975.h']]],
+  ['ak_5fstatus_5fmeas',['AK_STATUS_MEAS',['../ak8975_8h.html#a583c1693d6d13b50f2ee54f6b46ada49a3277c43b264f2b8dcd52c67b7212be5f',1,'ak8975.h']]],
+  ['ak_5fstatus_5fread',['AK_STATUS_READ',['../ak8963_8h.html#a17716d364ee924bf509a99715208137aadbd9a8610986900f4a5d9d5a41dd45a3',1,'AK_STATUS_READ():&#160;ak8963.h'],['../ak8975_8h.html#a583c1693d6d13b50f2ee54f6b46ada49adbd9a8610986900f4a5d9d5a41dd45a3',1,'AK_STATUS_READ():&#160;ak8975.h']]],
   ['append',['Append',['../mission__common_8h.html#add225f937fa97e4f76900b7f5e73872ea71f30510b076569dd2830e348fb77a13',1,'mission_common.h']]]
 ];

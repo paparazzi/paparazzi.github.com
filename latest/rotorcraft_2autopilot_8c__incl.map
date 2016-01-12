@@ -1,38 +1,38 @@
 <map id="sw/airborne/firmwares/rotorcraft/autopilot.c" name="sw/airborne/firmwares/rotorcraft/autopilot.c">
-<area shape="rect" id="node3" href="$rotorcraft_2autopilot_8h.html" title="Autopilot modes. " alt="" coords="675,102,823,143"/>
-<area shape="rect" id="node13" href="$settings_8h.html" title="Persistent settings interface. " alt="" coords="5,213,172,240"/>
-<area shape="rect" id="node14" href="$uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="3415,310,3554,337"/>
-<area shape="rect" id="node18" href="$radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="3789,310,3988,337"/>
-<area shape="rect" id="node23" href="$commands_8h.html" title="Hardware independent code for commands handling. " alt="" coords="3578,310,3765,337"/>
-<area shape="rect" id="node24" href="$subsystems_2actuators_8h.html" title="Hardware independent API for actuators (servos, motor controllers). " alt="" coords="2349,310,2525,337"/>
-<area shape="rect" id="node25" href="$electrical_8h.html" title="Interface for electrical status: supply voltage, current, battery status, etc. " alt="" coords="1169,310,1341,337"/>
-<area shape="rect" id="node26" href="$telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="2668,102,2821,143"/>
-<area shape="rect" id="node35" href="$navigation_8h.html" title="Rotorcraft navigation functions. " alt="" coords="1007,102,1155,143"/>
-<area shape="rect" id="node38" href="$guidance_8h.html" title="firmwares/rotorcraft\l/guidance.h" alt="" coords="1581,206,1729,247"/>
-<area shape="rect" id="node41" href="$stabilization_8h.html" title="General stabilization interface for rotorcrafts. " alt="" coords="1973,303,2121,344"/>
-<area shape="rect" id="node42" href="$stabilization__none_8h.html" title="Dummy stabilization for rotorcrafts. " alt="" coords="1643,95,1825,151"/>
-<area shape="rect" id="node43" href="$stabilization__rate_8h.html" title="Rate stabilization for rotorcrafts. " alt="" coords="1341,95,1524,151"/>
-<area shape="rect" id="node44" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html" title="General attitude stabilization interface for rotorcrafts. " alt="" coords="1771,199,1953,255"/>
-<area shape="rect" id="node47" href="$gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="2085,213,2223,240"/>
-<area shape="rect" id="node49" href="$autopilot__arming__yaw_8h.html" title="Arm the motors by with max yaw stick. " alt="" coords="2979,109,3151,136"/>
-<area shape="rect" id="node6" href="$state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="571,213,638,240"/>
-<area shape="rect" id="node7" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1245,399,1423,426"/>
-<area shape="rect" id="node8" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="393,399,584,426"/>
-<area shape="rect" id="node9" href="$pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="943,303,1093,344"/>
-<area shape="rect" id="node10" href="$pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="280,303,431,344"/>
-<area shape="rect" id="node11" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="507,303,671,344"/>
-<area shape="rect" id="node16" href="$link__device_8h.html" title="generic device header " alt="" coords="3332,399,3515,426"/>
-<area shape="rect" id="node17" href="$inttypes_8h.html" title="inttypes.h" alt="" coords="3251,481,3337,508"/>
-<area shape="rect" id="node19" href="$led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="4066,399,4119,426"/>
-<area shape="rect" id="node21" href="$paparazzi_8h.html" title="paparazzi.h" alt="" coords="3738,399,3834,426"/>
-<area shape="rect" id="node28" href="$downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="2725,206,2879,247"/>
-<area shape="rect" id="node30" href="$pprz__transport_8h.html" title="Building and parsing Paparazzi frames. " alt="" coords="3103,392,3256,433"/>
-<area shape="rect" id="node31" href="$pprzlog__transport_8h.html" title="Protocol for on&#45;board data logger with timestamp. " alt="" coords="3085,303,3239,344"/>
-<area shape="rect" id="node33" href="$xbee_8h.html" title="Maxstream XBee serial input and output. " alt="" coords="2725,303,2879,344"/>
-<area shape="rect" id="node32" href="$sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="2666,399,2837,426"/>
-<area shape="rect" id="node36" href="$waypoints_8h.html" title="subsystems/navigation\l/waypoints.h" alt="" coords="873,206,1043,247"/>
-<area shape="rect" id="node37" href="$common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="680,206,849,247"/>
-<area shape="rect" id="node39" href="$guidance__h_8h.html" title="Horizontal guidance for rotorcrafts. " alt="" coords="1569,303,1742,344"/>
-<area shape="rect" id="node40" href="$rotorcraft_2guidance_2guidance__v_8h.html" title="Vertical guidance for rotorcrafts. " alt="" coords="1447,392,1618,433"/>
-<area shape="rect" id="node50" href="$autopilot__rc__helpers_8h.html" title="Some helper functions to check RC sticks. " alt="" coords="3121,213,3283,240"/>
+<area shape="rect" id="node3" href="$rotorcraft_2autopilot_8h.html" title="Autopilot modes. " alt="" coords="1095,102,1243,143"/>
+<area shape="rect" id="node13" href="$settings_8h.html" title="Persistent settings interface. " alt="" coords="444,213,611,240"/>
+<area shape="rect" id="node14" href="$uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="3866,310,4005,337"/>
+<area shape="rect" id="node18" href="$radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="2847,310,3045,337"/>
+<area shape="rect" id="node23" href="$commands_8h.html" title="Hardware independent code for commands handling. " alt="" coords="3554,310,3741,337"/>
+<area shape="rect" id="node24" href="$subsystems_2actuators_8h.html" title="Hardware independent API for actuators (servos, motor controllers). " alt="" coords="2266,310,2442,337"/>
+<area shape="rect" id="node25" href="$electrical_8h.html" title="Interface for electrical status: supply voltage, current, battery status, etc. " alt="" coords="1640,310,1812,337"/>
+<area shape="rect" id="node26" href="$telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="2943,102,3096,143"/>
+<area shape="rect" id="node35" href="$navigation_8h.html" title="Rotorcraft navigation functions. " alt="" coords="707,102,855,143"/>
+<area shape="rect" id="node38" href="$guidance_8h.html" title="firmwares/rotorcraft\l/guidance.h" alt="" coords="1455,206,1603,247"/>
+<area shape="rect" id="node41" href="$stabilization_8h.html" title="General stabilization interface for rotorcrafts. " alt="" coords="1836,303,1984,344"/>
+<area shape="rect" id="node42" href="$stabilization__none_8h.html" title="Dummy stabilization for rotorcrafts. " alt="" coords="1525,95,1708,151"/>
+<area shape="rect" id="node43" href="$stabilization__rate_8h.html" title="Rate stabilization for rotorcrafts. " alt="" coords="1319,95,1501,151"/>
+<area shape="rect" id="node44" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html" title="General attitude stabilization interface for rotorcrafts. " alt="" coords="1885,199,2068,255"/>
+<area shape="rect" id="node47" href="$gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="1026,213,1165,240"/>
+<area shape="rect" id="node49" href="$autopilot__arming__yaw_8h.html" title="Arm the motors by with max yaw stick. " alt="" coords="2361,109,2533,136"/>
+<area shape="rect" id="node6" href="$state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="907,213,974,240"/>
+<area shape="rect" id="node7" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1189,399,1367,426"/>
+<area shape="rect" id="node8" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="465,399,656,426"/>
+<area shape="rect" id="node9" href="$pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="767,303,917,344"/>
+<area shape="rect" id="node10" href="$pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="352,303,503,344"/>
+<area shape="rect" id="node11" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="579,303,743,344"/>
+<area shape="rect" id="node16" href="$link__device_8h.html" title="generic device header " alt="" coords="4081,399,4264,426"/>
+<area shape="rect" id="node17" href="$inttypes_8h.html" title="inttypes.h" alt="" coords="3589,481,3674,508"/>
+<area shape="rect" id="node19" href="$led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="2935,399,2989,426"/>
+<area shape="rect" id="node21" href="$paparazzi_8h.html" title="paparazzi.h" alt="" coords="3338,399,3434,426"/>
+<area shape="rect" id="node28" href="$downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="3069,206,3223,247"/>
+<area shape="rect" id="node31" href="$pprz__transport_8h.html" title="Building and parsing Paparazzi frames. " alt="" coords="3555,392,3708,433"/>
+<area shape="rect" id="node32" href="$pprzlog__transport_8h.html" title="Protocol for on&#45;board data logger with timestamp. " alt="" coords="3069,303,3223,344"/>
+<area shape="rect" id="node34" href="$xbee_8h.html" title="Maxstream XBee serial input and output. " alt="" coords="2619,303,2772,344"/>
+<area shape="rect" id="node33" href="$sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="3029,399,3199,426"/>
+<area shape="rect" id="node36" href="$subsystems_2navigation_2waypoints_8h.html" title="subsystems/navigation\l/waypoints.h" alt="" coords="635,206,804,247"/>
+<area shape="rect" id="node37" href="$common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="5,206,175,247"/>
+<area shape="rect" id="node39" href="$guidance__h_8h.html" title="Horizontal guidance for rotorcrafts. " alt="" coords="1442,303,1615,344"/>
+<area shape="rect" id="node40" href="$rotorcraft_2guidance_2guidance__v_8h.html" title="Vertical guidance for rotorcrafts. " alt="" coords="1391,392,1562,433"/>
+<area shape="rect" id="node50" href="$autopilot__rc__helpers_8h.html" title="Some helper functions to check RC sticks. " alt="" coords="2381,213,2543,240"/>
 </map>

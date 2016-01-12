@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -283,7 +283,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">outcome</td><td>If 0, there were too few vectors for a fit. If 1, the fit was successful. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">flow_t*</td><td>vectors The optical flow vectors </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vectors</td><td>The optical flow vectors </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>The number of optical flow vectors </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">error_threshold</td><td>Error used to determine inliers / outliers. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">n_iterations</td><td>Number of RANSAC iterations. </td></tr>
@@ -485,7 +485,7 @@ Functions</h2></td></tr>
 <p>Analyze a linear flow field, retrieving information such as divergence, surface roughness, focus of expansion, etc. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">flow_t*</td><td>vectors The optical flow vectors </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vectors</td><td>The optical flow vectors </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>The number of optical flow vectors </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">error_threshold</td><td>Error used to determine inliers / outliers. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">n_iterations</td><td>Number of RANSAC iterations. </td></tr>
@@ -503,7 +503,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="linear__flow__fit_8c_source.html#l00105">105</a> of file <a class="el" href="linear__flow__fit_8c_source.html">linear_flow_fit.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__utm_8h_source.html#l00042">A</a>, <a class="el" href="LPC21xx_8h_source.html#l00179">AA</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00585">MAKE_MATRIX_PTR</a>, <a class="el" href="pprz__simple__matrix_8h_source.html#l00046">MAT_MUL</a>, <a class="el" href="pprz__simple__matrix_8h_source.html#l00073">MAT_SUB</a>, <a class="el" href="linear__flow__fit_8c_source.html#l00049">MIN_SAMPLES_FIT</a>, <a class="el" href="ins__alt__float_8c_source.html#l00249">p</a>, <a class="el" href="image_8h_source.html#l00061">flow_t::pos</a>, <a class="el" href="pprz__matrix__decomp__float_8c_source.html#l00147">pprz_svd_float()</a>, <a class="el" href="pprz__matrix__decomp__float_8c_source.html#l00446">pprz_svd_solve_float()</a>, and <a class="el" href="image_8h_source.html#l00056">point_t::y</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__utm_8h_source.html#l00042">A</a>, <a class="el" href="LPC21xx_8h_source.html#l00179">AA</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00585">MAKE_MATRIX_PTR</a>, <a class="el" href="pprz__simple__matrix_8h_source.html#l00046">MAT_MUL</a>, <a class="el" href="pprz__simple__matrix_8h_source.html#l00073">MAT_SUB</a>, <a class="el" href="linear__flow__fit_8c_source.html#l00049">MIN_SAMPLES_FIT</a>, <a class="el" href="ins__alt__float_8c_source.html#l00255">p</a>, <a class="el" href="image_8h_source.html#l00061">flow_t::pos</a>, <a class="el" href="pprz__matrix__decomp__float_8c_source.html#l00147">pprz_svd_float()</a>, <a class="el" href="pprz__matrix__decomp__float_8c_source.html#l00446">pprz_svd_solve_float()</a>, and <a class="el" href="image_8h_source.html#l00056">point_t::y</a>.</p>
 
 <p>Referenced by <a class="el" href="linear__flow__fit_8c_source.html#l00065">analyze_linear_flow_field()</a>.</p>
 
@@ -537,7 +537,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="dir_737909cdc08fae475c12e10cc4efa3fe.html">opticflow</a></li><li class="navelem"><a class="el" href="linear__flow__fit_8c.html">linear_flow_fit.c</a></li>
-    <li class="footer">Generated on Wed Nov 11 2015 02:01:34 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:01:49 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

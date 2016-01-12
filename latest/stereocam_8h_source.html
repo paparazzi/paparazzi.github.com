@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/modules/stereo_cam/stereocam.h Source File</title>
+<title>Paparazzi UAS: sw/airborne/modules/stereocam/stereocam.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -140,32 +140,38 @@ $(document).ready(function(){initNavTree('stereocam_8h_source.html','');});
 <div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="stereocam_8h.html#a4698938af444ec839076786df946394d">   33</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="stereocam_8h.html#a4698938af444ec839076786df946394d">len</a>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="stereocam_8h.html#a5533fd86b36efb0e414bd106f7647122">   34</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *<a class="code" href="stereocam_8h.html#a5533fd86b36efb0e414bd106f7647122">data</a>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="stereocam_8h.html#a61a6180449d113c562038fbc76258867">   35</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="stereocam_8h.html#a61a6180449d113c562038fbc76258867">fresh</a>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;} <a class="code" href="stereocam_8h.html#structuint8array">uint8array</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">extern</span> <a class="code" href="stereocam_8h.html#structuint8array">uint8array</a> <a class="code" href="stereocam_8h.html#a8714c0af4f34f0f48563fe941baecd70">stereocam_data</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="stereocam_8h.html#addffb170066406329de8aab03f9bf834">   36</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="stereocam_8h.html#addffb170066406329de8aab03f9bf834">matrix_width</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="stereocam_8h.html#a03a2c2f78ee8d7f1ce22629918a0cd3c">   37</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="stereocam_8h.html#a03a2c2f78ee8d7f1ce22629918a0cd3c">matrix_height</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;} <a class="code" href="stereocam_8h.html#structuint8array">uint8array</a>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="stereocam_8h.html#a314feadf5e42a344a71bf9c9b08f7c17">stereocam_start</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="stereocam_8h.html#ad93db7f30e258585f126bb2bcc969064">stereocam_stop</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="stereocam_8h.html#af9fdd9db13734d364f446939addc77d9">stereocam_periodic</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* STEREOCAM_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">extern</span> <a class="code" href="stereocam_8h.html#structuint8array">uint8array</a> <a class="code" href="stereocam_8h.html#a8714c0af4f34f0f48563fe941baecd70">stereocam_data</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="stereocam_8h.html#a27586f034e7a1c47965ede7812e1f86e">stereocam_disparity_to_meters</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *, <span class="keywordtype">float</span> *, <span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="stereocam_8h.html#a314feadf5e42a344a71bf9c9b08f7c17">stereocam_start</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="stereocam_8h.html#ad93db7f30e258585f126bb2bcc969064">stereocam_stop</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="stereocam_8h.html#af9fdd9db13734d364f446939addc77d9">stereocam_periodic</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* STEREOCAM_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="stereocam_8h_html_a03a2c2f78ee8d7f1ce22629918a0cd3c"><div class="ttname"><a href="stereocam_8h.html#a03a2c2f78ee8d7f1ce22629918a0cd3c">uint8array::matrix_height</a></div><div class="ttdeci">uint8_t matrix_height</div><div class="ttdef"><b>Definition:</b> <a href="stereocam_8h_source.html#l00037">stereocam.h:37</a></div></div>
 <div class="ttc" id="stereocam_8h_html_a61a6180449d113c562038fbc76258867"><div class="ttname"><a href="stereocam_8h.html#a61a6180449d113c562038fbc76258867">uint8array::fresh</a></div><div class="ttdeci">uint8_t fresh</div><div class="ttdef"><b>Definition:</b> <a href="stereocam_8h_source.html#l00035">stereocam.h:35</a></div></div>
-<div class="ttc" id="stereocam_8h_html_af9fdd9db13734d364f446939addc77d9"><div class="ttname"><a href="stereocam_8h.html#af9fdd9db13734d364f446939addc77d9">stereocam_periodic</a></div><div class="ttdeci">void stereocam_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="stereocam_8c_source.html#l00086">stereocam.c:86</a></div></div>
-<div class="ttc" id="stereocam_8h_html_ad93db7f30e258585f126bb2bcc969064"><div class="ttname"><a href="stereocam_8h.html#ad93db7f30e258585f126bb2bcc969064">stereocam_stop</a></div><div class="ttdeci">void stereocam_stop(void)</div><div class="ttdef"><b>Definition:</b> <a href="stereocam_8c_source.html#l00082">stereocam.c:82</a></div></div>
+<div class="ttc" id="stereocam_8h_html_af9fdd9db13734d364f446939addc77d9"><div class="ttname"><a href="stereocam_8h.html#af9fdd9db13734d364f446939addc77d9">stereocam_periodic</a></div><div class="ttdeci">void stereocam_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="stereocam_8c_source.html#l00097">stereocam.c:97</a></div></div>
+<div class="ttc" id="stereocam_8h_html_ad93db7f30e258585f126bb2bcc969064"><div class="ttname"><a href="stereocam_8h.html#ad93db7f30e258585f126bb2bcc969064">stereocam_stop</a></div><div class="ttdeci">void stereocam_stop(void)</div><div class="ttdef"><b>Definition:</b> <a href="stereocam_8c_source.html#l00093">stereocam.c:93</a></div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
 <div class="ttc" id="stereocam_8h_html_structuint8array"><div class="ttname"><a href="stereocam_8h.html#structuint8array">uint8array</a></div><div class="ttdef"><b>Definition:</b> <a href="stereocam_8h_source.html#l00032">stereocam.h:32</a></div></div>
-<div class="ttc" id="stereocam_8h_html_a8714c0af4f34f0f48563fe941baecd70"><div class="ttname"><a href="stereocam_8h.html#a8714c0af4f34f0f48563fe941baecd70">stereocam_data</a></div><div class="ttdeci">uint8array stereocam_data</div><div class="ttdef"><b>Definition:</b> <a href="stereocam_8c_source.html#l00062">stereocam.c:62</a></div></div>
+<div class="ttc" id="stereocam_8h_html_a8714c0af4f34f0f48563fe941baecd70"><div class="ttname"><a href="stereocam_8h.html#a8714c0af4f34f0f48563fe941baecd70">stereocam_data</a></div><div class="ttdeci">uint8array stereocam_data</div><div class="ttdef"><b>Definition:</b> <a href="stereocam_8c_source.html#l00056">stereocam.c:56</a></div></div>
 <div class="ttc" id="stereocam_8h_html_a4698938af444ec839076786df946394d"><div class="ttname"><a href="stereocam_8h.html#a4698938af444ec839076786df946394d">uint8array::len</a></div><div class="ttdeci">uint8_t len</div><div class="ttdef"><b>Definition:</b> <a href="stereocam_8h_source.html#l00033">stereocam.h:33</a></div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
-<div class="ttc" id="stereocam_8h_html_a314feadf5e42a344a71bf9c9b08f7c17"><div class="ttname"><a href="stereocam_8h.html#a314feadf5e42a344a71bf9c9b08f7c17">stereocam_start</a></div><div class="ttdeci">void stereocam_start(void)</div><div class="ttdef"><b>Definition:</b> <a href="stereocam_8c_source.html#l00065">stereocam.c:65</a></div></div>
+<div class="ttc" id="stereocam_8h_html_a314feadf5e42a344a71bf9c9b08f7c17"><div class="ttname"><a href="stereocam_8h.html#a314feadf5e42a344a71bf9c9b08f7c17">stereocam_start</a></div><div class="ttdeci">void stereocam_start(void)</div><div class="ttdef"><b>Definition:</b> <a href="stereocam_8c_source.html#l00076">stereocam.c:76</a></div></div>
+<div class="ttc" id="stereocam_8h_html_a27586f034e7a1c47965ede7812e1f86e"><div class="ttname"><a href="stereocam_8h.html#a27586f034e7a1c47965ede7812e1f86e">stereocam_disparity_to_meters</a></div><div class="ttdeci">void stereocam_disparity_to_meters(uint8_t *, float *, int)</div><div class="ttdef"><b>Definition:</b> <a href="stereocam_8c_source.html#l00061">stereocam.c:61</a></div></div>
+<div class="ttc" id="stereocam_8h_html_addffb170066406329de8aab03f9bf834"><div class="ttname"><a href="stereocam_8h.html#addffb170066406329de8aab03f9bf834">uint8array::matrix_width</a></div><div class="ttdeci">uint8_t matrix_width</div><div class="ttdef"><b>Definition:</b> <a href="stereocam_8h_source.html#l00036">stereocam.h:36</a></div></div>
 <div class="ttc" id="stereocam_8h_html_a5533fd86b36efb0e414bd106f7647122"><div class="ttname"><a href="stereocam_8h.html#a5533fd86b36efb0e414bd106f7647122">uint8array::data</a></div><div class="ttdeci">uint8_t * data</div><div class="ttdef"><b>Definition:</b> <a href="stereocam_8h_source.html#l00034">stereocam.h:34</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_53035c648a11711b8be97fca3f069783.html">stereo_cam</a></li><li class="navelem"><a class="el" href="stereocam_8h.html">stereocam.h</a></li>
-    <li class="footer">Generated on Wed Nov 11 2015 02:01:13 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_3df9ff4d3eb13d31d58a513ba3c4e4bb.html">stereocam</a></li><li class="navelem"><a class="el" href="stereocam_8h.html">stereocam.h</a></li>
+    <li class="footer">Generated on Mon Jan 11 2016 14:01:27 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

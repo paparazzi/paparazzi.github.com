@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -710,6 +710,9 @@ $(document).ready(function(){initNavTree('globals_defs_v.html','');});
 <li>VIEWVIDEO_RTP_TIME_INC
 : <a class="el" href="viewvideo_8c.html#a769ad673bc2a1bc72bdf96081f4196b9">viewvideo.c</a>
 </li>
+<li>VIEWVIDEO_SHOT_PATH
+: <a class="el" href="viewvideo_8c.html#a2fca398e492adfafd1cd75def2ea9155">viewvideo.c</a>
+</li>
 <li>VIEWVIDEO_USE_NETCAT
 : <a class="el" href="viewvideo_8c.html#a145420c058c30ea1271e8a07f94b8a27">viewvideo.c</a>
 </li>
@@ -727,21 +730,27 @@ $(document).ready(function(){initNavTree('globals_defs_v.html','');});
 </li>
 <li>VISION_DESIRED_VX
 : <a class="el" href="guidance__opticflow__hover_8c.html#ab4af8bdf430b952587612105d52dd7c4">guidance_opticflow_hover.c</a>
+, <a class="el" href="guidance__OA_8c.html#ab4af8bdf430b952587612105d52dd7c4">guidance_OA.c</a>
 </li>
 <li>VISION_DESIRED_VY
-: <a class="el" href="guidance__opticflow__hover_8c.html#a6acf2b41cf0fda042096081d2ebcaa26">guidance_opticflow_hover.c</a>
+: <a class="el" href="guidance__OA_8c.html#a6acf2b41cf0fda042096081d2ebcaa26">guidance_OA.c</a>
+, <a class="el" href="guidance__opticflow__hover_8c.html#a6acf2b41cf0fda042096081d2ebcaa26">guidance_opticflow_hover.c</a>
 </li>
 <li>VISION_PHI_IGAIN
 : <a class="el" href="guidance__opticflow__hover_8c.html#ad3cdc53496e5c39e18d3b867ccb5c5f5">guidance_opticflow_hover.c</a>
+, <a class="el" href="guidance__OA_8c.html#ad3cdc53496e5c39e18d3b867ccb5c5f5">guidance_OA.c</a>
 </li>
 <li>VISION_PHI_PGAIN
-: <a class="el" href="guidance__opticflow__hover_8c.html#ac73c5623325d6d492efae2b57a5d9188">guidance_opticflow_hover.c</a>
+: <a class="el" href="guidance__OA_8c.html#ac73c5623325d6d492efae2b57a5d9188">guidance_OA.c</a>
+, <a class="el" href="guidance__opticflow__hover_8c.html#ac73c5623325d6d492efae2b57a5d9188">guidance_opticflow_hover.c</a>
 </li>
 <li>VISION_THETA_IGAIN
 : <a class="el" href="guidance__opticflow__hover_8c.html#adb0328d98b92bf2c5edc3720f845f2f4">guidance_opticflow_hover.c</a>
+, <a class="el" href="guidance__OA_8c.html#adb0328d98b92bf2c5edc3720f845f2f4">guidance_OA.c</a>
 </li>
 <li>VISION_THETA_PGAIN
 : <a class="el" href="guidance__opticflow__hover_8c.html#a613ded59cf81b00f59a4ae1a123d9ee9">guidance_opticflow_hover.c</a>
+, <a class="el" href="guidance__OA_8c.html#a613ded59cf81b00f59a4ae1a123d9ee9">guidance_OA.c</a>
 </li>
 <li>VISION_VELOCITY_ESTIMATE_ID
 : <a class="el" href="guidance__opticflow__hover_8c.html#a4329999dd6b685ef7ff02518d5c733c8">guidance_opticflow_hover.c</a>
@@ -1166,7 +1175,7 @@ $(document).ready(function(){initNavTree('globals_defs_v.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 11 2015 02:02:15 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:02:31 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

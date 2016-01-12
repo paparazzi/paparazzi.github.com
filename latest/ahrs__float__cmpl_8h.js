@@ -11,6 +11,7 @@ var ahrs__float__cmpl_8h =
       [ "heading_aligned", "ahrs__float__cmpl_8h.html#a996f7205483de026b06c55a3aeee916c", null ],
       [ "imu_rate", "ahrs__float__cmpl_8h.html#a9709ec503b43e0be315a45aaaa98e349", null ],
       [ "is_aligned", "ahrs__float__cmpl_8h.html#a9ac2e4e645d97648e2f4e67ea5d38e53", null ],
+      [ "ltp_to_body", "ahrs__float__cmpl_8h.html#ad341c07168298b0a8a5370d901415bf6", null ],
       [ "ltp_to_imu_quat", "ahrs__float__cmpl_8h.html#aa55b72aff2e4f10587e7bbd90da4b418", null ],
       [ "ltp_to_imu_rmat", "ahrs__float__cmpl_8h.html#a1c60d5daaefd2376ad97c5fe072ce878", null ],
       [ "ltp_vel_norm", "ahrs__float__cmpl_8h.html#aa634b9c59a692e01a3b2b5d3d98c26ac", null ],
@@ -27,15 +28,16 @@ var ahrs__float__cmpl_8h =
       [ "AHRS_FC_UNINIT", "ahrs__float__cmpl_8h.html#a23cfa506c66a70b802181d64e175937da58489631ed6a13334b5af5a3fa5dd9de", null ],
       [ "AHRS_FC_RUNNING", "ahrs__float__cmpl_8h.html#a23cfa506c66a70b802181d64e175937da6cafb221e2a4f678ce0dd4340755a45d", null ]
     ] ],
-    [ "ahrs_fc_align", "ahrs__float__cmpl_8h.html#a68195ca7b034966d4462a8686249754d", null ],
+    [ "ahrs_fc_align", "ahrs__float__cmpl_8h.html#a0c082f03a247506e7431422f3b4190de", null ],
     [ "ahrs_fc_init", "ahrs__float__cmpl_8h.html#a5e913bc3963eb3f7fe641823b4c6676c", null ],
-    [ "ahrs_fc_propagate", "ahrs__float__cmpl_8h.html#af4c7173b58e96e2c3d3ee8f0e9f8c796", null ],
+    [ "ahrs_fc_propagate", "ahrs__float__cmpl_8h.html#aa0c9aade7383706d2716fed5f138edb2", null ],
     [ "ahrs_fc_realign_heading", "ahrs__float__cmpl_8h.html#aaabc7dc5bd1a6623dfd6b6642badcb1c", null ],
+    [ "ahrs_fc_recompute_ltp_to_body", "ahrs__float__cmpl_8h.html#a9a73bda8896ecb4c0faaf991834393ed", null ],
     [ "ahrs_fc_set_body_to_imu", "ahrs__float__cmpl_8h.html#abcc12ae7ea66597015282905a669d8e6", null ],
     [ "ahrs_fc_set_body_to_imu_quat", "ahrs__float__cmpl_8h.html#af7031b11bbdd78128a0f654b1e95aeec", null ],
-    [ "ahrs_fc_update_accel", "ahrs__float__cmpl_8h.html#a2ee1cd671b0b937506f63042dc43e5ab", null ],
+    [ "ahrs_fc_update_accel", "ahrs__float__cmpl_8h.html#ad3fe7a6c0c460ce60bce6bf52e7b684e", null ],
     [ "ahrs_fc_update_gps", "ahrs__float__cmpl_8h.html#ad866a4c74ddf87b458a8cadc7a002ef2", null ],
     [ "ahrs_fc_update_heading", "ahrs__float__cmpl_8h.html#aebdc25e0d7025b98b96153d54e2b29c1", null ],
-    [ "ahrs_fc_update_mag", "ahrs__float__cmpl_8h.html#a37032f51339a34886dd5bf1a4813ae4f", null ],
+    [ "ahrs_fc_update_mag", "ahrs__float__cmpl_8h.html#a7aa5809987d1552bb3089262270d4deb", null ],
     [ "ahrs_fc", "ahrs__float__cmpl_8h.html#a15adf78323a6f17e8a3d7394e03616ff", null ]
 ];

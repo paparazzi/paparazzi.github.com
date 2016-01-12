@@ -5,6 +5,8 @@ var gps_8c =
     [ "gps_inject_data", "gps_8c.html#a95067acaf0b8b646abb5d9ec7e98b0cb", null ],
     [ "gps_periodic_check", "gps_8c.html#af6a16adfe8c9a84b13f49b4ceb681b30", null ],
     [ "gps_tow_from_sys_ticks", "gps_8c.html#ad68ada7274989a4c9f08bc06d74ee5bd", null ],
+    [ "utm_float_from_gps", "gps_8c.html#a1343b41c94f919a6a593b958b275683f", null ],
+    [ "utm_int_from_gps", "gps_8c.html#a4fff1fd94429e7d036ba27af86a8c5ed", null ],
     [ "gps", "gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d", null ],
     [ "gps_time_sync", "gps_8c.html#a4cd3856a89c7a6a56135788fa9f33922", null ]
 ];

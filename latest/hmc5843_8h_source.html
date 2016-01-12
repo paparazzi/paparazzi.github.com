@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('hmc5843_8h_source.html','');});
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="hmc5843_8h.html">   35</a></span>&#160;  <span class="keyword">union </span>{</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a48b4f0842338aeafa79aeab314f33696">buf</a>[7];</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> <a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a>[3];</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  } <a class="code" href="hmc5843_8h.html#a2be454b5d0e91f22af83286aa6949776">data</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  } <a class="code" href="hmc5843_8h.html#a016a5985cbc9b443ae5067ab8b4ce134">data</a>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="hmc5843_8h.html#structHmc5843">Hmc5843</a> <a class="code" href="hmc5843_8h.html#a0d9d6f319b2ad8e47637ad83bb04dbe2">hmc5843</a>;</div>
@@ -189,7 +189,6 @@ $(document).ready(function(){initNavTree('hmc5843_8h_source.html','');});
 <div class="ttc" id="hmc5843_8h_html_ada82622fad1a3e2d09d74032fc65a87d"><div class="ttname"><a href="hmc5843_8h.html#ada82622fad1a3e2d09d74032fc65a87d">Hmc5843::timeout</a></div><div class="ttdeci">uint32_t timeout</div><div class="ttdef"><b>Definition:</b> <a href="hmc5843_8h_source.html#l00030">hmc5843.h:30</a></div></div>
 <div class="ttc" id="hmc5843_8h_html_ab17f5e43fbd1dcadea20ede30e06568b"><div class="ttname"><a href="hmc5843_8h.html#ab17f5e43fbd1dcadea20ede30e06568b">hmc5843_periodic</a></div><div class="ttdeci">void hmc5843_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="hmc5843_8c_source.html#l00103">hmc5843.c:103</a></div></div>
 <div class="ttc" id="hmc5843_8h_html_a46613c2c46ce03746f184a11df775d6a"><div class="ttname"><a href="hmc5843_8h.html#a46613c2c46ce03746f184a11df775d6a">hmc5843_idle_task</a></div><div class="ttdeci">void hmc5843_idle_task(void)</div><div class="ttdef"><b>Definition:</b> <a href="hmc5843_8c_source.html#l00060">hmc5843.c:60</a></div></div>
-<div class="ttc" id="hmc5843_8h_html_a2be454b5d0e91f22af83286aa6949776"><div class="ttname"><a href="hmc5843_8h.html#a2be454b5d0e91f22af83286aa6949776">Hmc5843::data</a></div><div class="ttdeci">union Hmc5843::@32 data</div></div>
 <div class="ttc" id="hmc5843_8h_html_a3d866bd7d1517ca26973373c22a24ef8"><div class="ttname"><a href="hmc5843_8h.html#a3d866bd7d1517ca26973373c22a24ef8">Hmc5843::sent_tx</a></div><div class="ttdeci">uint8_t sent_tx</div><div class="ttdef"><b>Definition:</b> <a href="hmc5843_8h_source.html#l00031">hmc5843.h:31</a></div></div>
 <div class="ttc" id="hmc5843_8h_html_a0d9d6f319b2ad8e47637ad83bb04dbe2"><div class="ttname"><a href="hmc5843_8h.html#a0d9d6f319b2ad8e47637ad83bb04dbe2">hmc5843</a></div><div class="ttdeci">struct Hmc5843 hmc5843</div><div class="ttdef"><b>Definition:</b> <a href="hmc5843_8c_source.html#l00009">hmc5843.c:9</a></div></div>
 <div class="ttc" id="hmc5843_8h_html_ad8b9aedbaea8a1dd228b6e2370f31f76"><div class="ttname"><a href="hmc5843_8h.html#ad8b9aedbaea8a1dd228b6e2370f31f76">Hmc5843::i2c_trans</a></div><div class="ttdeci">struct i2c_transaction i2c_trans</div><div class="ttdef"><b>Definition:</b> <a href="hmc5843_8h_source.html#l00029">hmc5843.h:29</a></div></div>
@@ -204,6 +203,7 @@ $(document).ready(function(){initNavTree('hmc5843_8h_source.html','');});
 <div class="ttc" id="stm32_2mcu__periph_2adc__arch_8c_html_a48b4f0842338aeafa79aeab314f33696"><div class="ttname"><a href="stm32_2mcu__periph_2adc__arch_8c.html#a48b4f0842338aeafa79aeab314f33696">buf</a></div><div class="ttdeci">struct adc_buf * buf</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2mcu__periph_2adc__arch_8c_source.html#l00587">adc_arch.c:587</a></div></div>
 <div class="ttc" id="hmc5843_8h_html_a2865aacd8f0c1dd4f38f4c40ea7eeba9"><div class="ttname"><a href="hmc5843_8h.html#a2865aacd8f0c1dd4f38f4c40ea7eeba9">Hmc5843::initialized</a></div><div class="ttdeci">uint8_t initialized</div><div class="ttdef"><b>Definition:</b> <a href="hmc5843_8h_source.html#l00033">hmc5843.h:33</a></div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
+<div class="ttc" id="hmc5843_8h_html_a016a5985cbc9b443ae5067ab8b4ce134"><div class="ttname"><a href="hmc5843_8h.html#a016a5985cbc9b443ae5067ab8b4ce134">Hmc5843::data</a></div><div class="ttdeci">union Hmc5843::@33 data</div></div>
 <div class="ttc" id="i2c_8h_html"><div class="ttname"><a href="i2c_8h.html">i2c.h</a></div><div class="ttdoc">Architecture independent I2C (Inter-Integrated Circuit Bus) API. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -211,7 +211,7 @@ $(document).ready(function(){initNavTree('hmc5843_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="hmc5843_8h.html">hmc5843.h</a></li>
-    <li class="footer">Generated on Wed Nov 11 2015 02:01:14 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:01:27 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

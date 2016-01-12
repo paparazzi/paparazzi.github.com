@@ -1,8 +1,10 @@
 var searchData=
 [
   ['o',['o',['../low__pass__filter_8h.html#a12f9c51730cdf64e838a304a1a870fb0',1,'SecondOrderLowPass::o()'],['../low__pass__filter_8h.html#a9435809cb2d50886dfb16158ccdb4e02',1,'SecondOrderLowPass_int::o()'],['../ins__float__invariant_8h.html#a16ef8ac18396c52fca1ce7305179d43a',1,'inv_gains::o()']]],
+  ['oa_5fmethod_5fflag',['OA_method_flag',['../guidance__OA_8c.html#a7d1d6db717ff7b9a6930693f66f630d6',1,'OA_method_flag():&#160;guidance_OA.c'],['../guidance__OA_8h.html#a7d1d6db717ff7b9a6930693f66f630d6',1,'OA_method_flag():&#160;guidance_OA.c']]],
   ['ob',['ob',['../ins__float__invariant_8h.html#a3bd75e355553c4995e4b3c243f683376',1,'inv_gains']]],
   ['obstacle_5fdetected',['obstacle_detected',['../avoid__navigation_8c.html#a9f41e726be05c95e73e4d2583773b2f7',1,'obstacle_detected():&#160;avoid_navigation.c'],['../avoid__navigation_8h.html#a9f41e726be05c95e73e4d2583773b2f7',1,'obstacle_detected():&#160;avoid_navigation.c']]],
+  ['obstacle_5fflag',['obstacle_flag',['../obstacle__avoidance_8c.html#ab1eeda0c19608ea45fbaac12da783375',1,'obstacle_avoidance.c']]],
   ['oe',['OE',['../ins__float__invariant_8h.html#a4e5bb7b8dd42839dbd1a71b9b8f47fc8',1,'inv_correction_gains::OE()'],['../ins__float__invariant_8h.html#a7b5825b232bd8dc4d1e346f3e0c54b87',1,'inv_correction_gains::OE()']]],
   ['offset',['offset',['../lisa__l_2baro__board_8c.html#a3defb38aa63017ed666cd4dda92d9956',1,'BaroBoard::offset()'],['../jpeg_8c.html#afc7271476f6fe399362809d8a1a4191e',1,'JPEG_ENCODER_STRUCTURE::offset()'],['../nav__cube_8h.html#a824830bfb26bf1c0d17d824067f82ef5',1,'NavCube::offset()'],['../airspeed__adc_8h.html#a9afdfe7bd1d7dd87b862b6980f329681',1,'AirspeedAdc::offset()'],['../aoa__adc_8h.html#a9b56e911e0326c1f39b67ef074950814',1,'Aoa_Adc::offset()'],['../aoa__pwm_8h.html#a476071eccbdd52bf91879354f450ec4c',1,'Aoa_Pwm::offset()'],['../sonar__adc_8h.html#a1573024bf2c354bfc4a4953bb59185f3',1,'SonarAdc::offset()'],['../sonar__bebop_8h.html#aeedc1376a4d995275b5d6d266f210c98',1,'SonarBebop::offset()'],['../vf__extended__float_8h.html#a73a1a8d29e2f79b6c8fa96639f726dac',1,'VffExtended::offset()']]],
   ['offset_5fcnt',['offset_cnt',['../pressure__board__navarro_8c.html#a138240dcc504031ccc83a6e2c044d95d',1,'pressure_board_navarro.c']]],
@@ -15,6 +17,8 @@ var searchData=
   ['omega_5fq',['omega_q',['../stabilization__attitude__ref__quat__float_8c.html#a7ec471088a22f4eeba7ababa9c2cc84f',1,'stabilization_attitude_ref_quat_float.c']]],
   ['omega_5fr',['omega_r',['../stabilization__attitude__ref__quat__float_8c.html#a3e438891f3a5595f308067609dd5c4e2',1,'stabilization_attitude_ref_quat_float.c']]],
   ['omega_5fvector',['Omega_Vector',['../ahrs__float__dcm_8c.html#a10d46c1ca1a95938f94c6be161c259bb',1,'ahrs_float_dcm.c']]],
+  ['opti_5fspeed_5fflag',['opti_speed_flag',['../guidance__OA_8c.html#a9786659531a5d633c613102d189a1f60',1,'opti_speed_flag():&#160;guidance_OA.c'],['../guidance__OA_8h.html#a9786659531a5d633c613102d189a1f60',1,'opti_speed_flag():&#160;guidance_OA.c']]],
+  ['opti_5fspeed_5fread',['opti_speed_read',['../guidance__OA_8c.html#a18f56e913649bc868a2343b867739d16',1,'guidance_OA.c']]],
   ['optical_5fflow',['optical_flow',['../px4flow_8c.html#a7f647c5002ceac1107af4247a2567f16',1,'optical_flow():&#160;px4flow.c'],['../px4flow_8h.html#a7f647c5002ceac1107af4247a2567f16',1,'optical_flow():&#160;px4flow.c']]],
   ['optical_5fflow_5favailable',['optical_flow_available',['../px4flow_8c.html#ab6dde07b731a2cfdf669184817943837',1,'optical_flow_available():&#160;px4flow.c'],['../px4flow_8h.html#ab6dde07b731a2cfdf669184817943837',1,'optical_flow_available():&#160;px4flow.c']]],
   ['opticflow',['opticflow',['../opticflow__module_8c.html#a4ed7d8828611f3355617fb6745ade2a0',1,'opticflow():&#160;opticflow_module.c'],['../opticflow__module_8h.html#a4ed7d8828611f3355617fb6745ade2a0',1,'opticflow():&#160;opticflow_module.c']]],
@@ -24,11 +28,12 @@ var searchData=
   ['opticflow_5fgot_5fresult',['opticflow_got_result',['../opticflow__module_8c.html#aa0b5ca8e5037a2e27d111d70db76ffbe',1,'opticflow_module.c']]],
   ['opticflow_5fmutex',['opticflow_mutex',['../opticflow__module_8c.html#a23808153add26099f13bbecfa1f293ae',1,'opticflow_module.c']]],
   ['opticflow_5fresult',['opticflow_result',['../opticflow__module_8c.html#a331dc0e40d027156d699ff51bd7dd605',1,'opticflow_module.c']]],
-  ['opticflow_5fstab',['opticflow_stab',['../guidance__opticflow__hover_8c.html#a20c98e89ac4c2f80fdd841992ec3053c',1,'opticflow_stab():&#160;guidance_opticflow_hover.c'],['../guidance__opticflow__hover_8h.html#a20c98e89ac4c2f80fdd841992ec3053c',1,'opticflow_stab():&#160;guidance_opticflow_hover.c']]],
+  ['opticflow_5fstab',['opticflow_stab',['../guidance__opticflow__hover_8c.html#a20c98e89ac4c2f80fdd841992ec3053c',1,'opticflow_stab():&#160;guidance_opticflow_hover.c'],['../guidance__opticflow__hover_8h.html#a20c98e89ac4c2f80fdd841992ec3053c',1,'opticflow_stab():&#160;guidance_opticflow_hover.c'],['../guidance__OA_8c.html#a20c98e89ac4c2f80fdd841992ec3053c',1,'opticflow_stab():&#160;guidance_OA.c'],['../guidance__OA_8h.html#a20c98e89ac4c2f80fdd841992ec3053c',1,'opticflow_stab():&#160;guidance_opticflow_hover.c']]],
   ['opticflow_5fstate',['opticflow_state',['../opticflow__module_8c.html#a3cfe58d9ef48519711d6954e697bd8c5',1,'opticflow_module.c']]],
   ['ore',['ore',['../uart_8h.html#af4fa7964e51b251d0fe1b020b3f9c853',1,'uart_periph']]],
   ['orig_5ftermios',['orig_termios',['../serial__port_8h.html#a894fe146a0b500f8a0c2b8edf79abd7f',1,'SerialPort']]],
   ['origin',['origin',['../gsm_8c.html#a78dd84bc5e17634eb5b0a4bf29d39c74',1,'gsm.c']]],
+  ['origin_5finitialized',['origin_initialized',['../ins__alt__float_8h.html#a427296f0553116de88ffc8f048f84902',1,'InsAltFloat']]],
   ['osd_5fattr',['osd_attr',['../max7456_8c.html#ab12c522f0d1c08e1e613dbb58c68b8e4',1,'max7456.c']]],
   ['osd_5fchar',['osd_char',['../max7456_8c.html#adde21930790faec5566e34c25e7e95d6',1,'max7456.c']]],
   ['osd_5fchar_5faddress',['osd_char_address',['../max7456_8c.html#ad65fea792b2227069e8c05acedab1849',1,'max7456.c']]],
@@ -47,7 +52,7 @@ var searchData=
   ['over_5funder_5fcnt',['over_under_cnt',['../group__i2c.html#a872cdd33256c33ad0a4ec29b5ff2ac85',1,'i2c_errors']]],
   ['override_5fenabled',['override_enabled',['../motor__mixing_8h.html#a18d6ee455128950bc3404cd02792d2cc',1,'MotorMixing']]],
   ['override_5fvalue',['override_value',['../motor__mixing_8h.html#a01243d97bfe086020377a3da7b2349c5',1,'MotorMixing']]],
-  ['overrun',['overrun',['../transport_8h.html#ab5e8f7b9b0b6aa0d92f1fa03918ff257',1,'transport_tx::overrun()'],['../structDownlinkTransport.html#a9061bdece09e78b62a62cc8a3510d4e6',1,'DownlinkTransport::Overrun()']]],
+  ['overrun',['Overrun',['../structDownlinkTransport.html#a9061bdece09e78b62a62cc8a3510d4e6',1,'DownlinkTransport::Overrun()'],['../transport_8h.html#ab5e8f7b9b0b6aa0d92f1fa03918ff257',1,'transport_tx::overrun()']]],
   ['overrun_5ferror',['overrun_error',['../vn200__serial_8h.html#a24b224a49bd0dcd2964e9c67b805c7d6',1,'VNPacket']]],
   ['ovrn',['ovrn',['../transport_8h.html#ae9670251bd16b88304b63fd137699b9d',1,'transport_rx']]]
 ];

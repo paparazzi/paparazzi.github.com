@@ -13,6 +13,11 @@ var searchData=
   ['lis302dlranges',['Lis302dlRanges',['../lis302dl__regs_8h.html#a72031c26142ebe1e96c4994fecf7a608',1,'lis302dl_regs.h']]],
   ['lis302dlrates',['Lis302dlRates',['../lis302dl__regs_8h.html#ab839e76543bfb2d599a8eb8df710a493',1,'lis302dl_regs.h']]],
   ['lisabarostatus',['LisaBaroStatus',['../lisa__l_2baro__board_8c.html#afa23cfb2e942619d6fa44f549fe5edff',1,'baro_board.c']]],
+  ['lsm303daccelbandwidth',['Lsm303dAccelBandwidth',['../lsm303d__regs_8h.html#a2820afc1fa7aad10717bc6ef4e48e292',1,'lsm303d_regs.h']]],
+  ['lsm303daccelranges',['Lsm303dAccelRanges',['../lsm303d__regs_8h.html#aacfa69f8de4f40936505a76ba517d963',1,'lsm303d_regs.h']]],
+  ['lsm303daccelrates',['Lsm303dAccelRates',['../lsm303d__regs_8h.html#a300ea8afd679fb7fdbb6587056960dfe',1,'lsm303d_regs.h']]],
   ['lsm303dlhcaccconfstatus',['Lsm303dlhcAccConfStatus',['../lsm303dlhc_8h.html#acfdcef8558d30510f691dc2670655e24',1,'lsm303dlhc.h']]],
-  ['lsm303dlhcmagconfstatus',['Lsm303dlhcMagConfStatus',['../lsm303dlhc_8h.html#ab3e05e02f1a8eb7e4d3bfae1c18c9ea3',1,'lsm303dlhc.h']]]
+  ['lsm303dlhcmagconfstatus',['Lsm303dlhcMagConfStatus',['../lsm303dlhc_8h.html#ab3e05e02f1a8eb7e4d3bfae1c18c9ea3',1,'lsm303dlhc.h']]],
+  ['lsm303dmagrange',['Lsm303dMagRange',['../lsm303d__regs_8h.html#a080b9a025fcd8119c7feebfbd08c3ad0',1,'lsm303d_regs.h']]],
+  ['lsm303dmagrates',['Lsm303dMagRates',['../lsm303d__regs_8h.html#a9fda91a860152e67464c934319f62f0b',1,'lsm303d_regs.h']]]
 ];

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -113,6 +113,9 @@ $(document).ready(function(){initNavTree('aoa__pwm_8h.html','');});
 <div class="title">aoa_pwm.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Angle of Attack sensor on PWM.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;std.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for aoa_pwm.h:</div>
@@ -152,7 +155,12 @@ Variables</h2></td></tr>
 <tr class="memitem:ab594069977e44bb9cfedb7aadd00c6db"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="aoa__pwm_8h.html#structAoa__Pwm">Aoa_Pwm</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="aoa__pwm_8h.html#ab594069977e44bb9cfedb7aadd00c6db">aoa_pwm</a></td></tr>
 <tr class="separator:ab594069977e44bb9cfedb7aadd00c6db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Angle of Attack sensor on PWM. </p>
+<dl class="section author"><dt>Author</dt><dd>Jean-François Erdelyi SENSOR, example : US DIGITAL MA3-P12-125-B </dd></dl>
+
+<p>Definition in file <a class="el" href="aoa__pwm_8h_source.html">aoa_pwm.h</a>.</p>
+</div><hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structAoa__Pwm" id="structAoa__Pwm"></a>
 <div class="memitem">
 <div class="memproto">
@@ -217,7 +225,7 @@ sensitiviy, i.e. scale to conver raw to angle </td></tr>
 
 <p>Definition at line <a class="el" href="aoa__pwm_8c_source.html#l00097">97</a> of file <a class="el" href="aoa__pwm_8c_source.html">aoa_pwm.c</a>.</p>
 
-<p>References <a class="el" href="aoa__pwm_8h_source.html#l00036">Aoa_Pwm::angle</a>, <a class="el" href="aoa__pwm_8c_source.html#l00064">AOA_FILTER</a>, <a class="el" href="aoa__pwm_8c_source.html#l00060">AOA_OFFSET</a>, <a class="el" href="aoa__pwm_8c_source.html#l00085">aoa_pwm</a>, <a class="el" href="aoa__pwm_8c_source.html#l00068">AOA_SENS</a>, <a class="el" href="telemetry_8h_source.html#l00067">DefaultPeriodic</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="aoa__pwm_8h_source.html#l00044">Aoa_Pwm::filter</a>, <a class="el" href="meteo__france__DAQ_8c_source.html#l00047">log_started</a>, <a class="el" href="aoa__pwm_8h_source.html#l00037">Aoa_Pwm::offset</a>, <a class="el" href="aoa__pwm_8h_source.html#l00035">Aoa_Pwm::raw</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, and <a class="el" href="aoa__pwm_8h_source.html#l00038">Aoa_Pwm::sens</a>.</p>
+<p>References <a class="el" href="aoa__pwm_8h_source.html#l00036">Aoa_Pwm::angle</a>, <a class="el" href="aoa__pwm_8c_source.html#l00064">AOA_FILTER</a>, <a class="el" href="aoa__pwm_8c_source.html#l00060">AOA_OFFSET</a>, <a class="el" href="aoa__pwm_8c_source.html#l00085">aoa_pwm</a>, <a class="el" href="aoa__pwm_8c_source.html#l00068">AOA_SENS</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="aoa__pwm_8h_source.html#l00044">Aoa_Pwm::filter</a>, <a class="el" href="meteo__france__DAQ_8c_source.html#l00047">log_started</a>, <a class="el" href="aoa__pwm_8h_source.html#l00037">Aoa_Pwm::offset</a>, <a class="el" href="aoa__pwm_8h_source.html#l00035">Aoa_Pwm::raw</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, and <a class="el" href="aoa__pwm_8h_source.html#l00038">Aoa_Pwm::sens</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -226,7 +234,7 @@ sensitiviy, i.e. scale to conver raw to angle </td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="aoa__pwm_8h_a5ec02f062e99b4bee477baff537e006d_cgraph.png" border="0" usemap="#aoa__pwm_8h_a5ec02f062e99b4bee477baff537e006d_cgraph" alt=""/></div>
 <map name="aoa__pwm_8h_a5ec02f062e99b4bee477baff537e006d_cgraph" id="aoa__pwm_8h_a5ec02f062e99b4bee477baff537e006d_cgraph">
-<area shape="rect" id="node2" href="telemetry_8c.html#a4c92e515e0ce29dc4294304cb2749e76" title="Register a telemetry callback function. " alt="" coords="163,5,360,32"/></map>
+<area shape="rect" id="node2" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="163,5,360,32"/></map>
 </div>
 </p>
 
@@ -286,7 +294,7 @@ sensitiviy, i.e. scale to conver raw to angle </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="aoa__pwm_8h.html">aoa_pwm.h</a></li>
-    <li class="footer">Generated on Wed Nov 11 2015 02:01:41 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:01:56 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

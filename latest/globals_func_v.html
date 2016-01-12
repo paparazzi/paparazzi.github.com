@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -529,6 +529,9 @@ $(document).ready(function(){initNavTree('globals_func_v.html','');});
 <li>VectorFC()
 : <a class="el" href="stm32f4__chibios__vectors_8c.html#ac82cef91d70125d74c4de41ab6aa810d">stm32f4_chibios_vectors.c</a>
 </li>
+<li>vel_est_cb()
+: <a class="el" href="ins__int_8c.html#aaf7a3cc82a863c682b5e9f18022c5ab7">ins_int.c</a>
+</li>
 <li>verify_chk()
 : <a class="el" href="vn200__serial_8c.html#ae28fd86966eafa975b528e8253ccfe40">vn200_serial.c</a>
 </li>
@@ -543,9 +546,9 @@ $(document).ready(function(){initNavTree('globals_func_v.html','');});
 </li>
 <li>vff_init()
 : <a class="el" href="vf__extended__float_8c.html#a7858e35c59bd12fd401af33a4fbfa580">vf_extended_float.c</a>
-, <a class="el" href="vf__extended__float_8h.html#a3cf28b18a6935e816045e43bf6281c67">vf_extended_float.h</a>
-, <a class="el" href="vf__float_8h.html#a6b79409337c63cb82e160e713b9b5455">vf_float.h</a>
 , <a class="el" href="vf__float_8c.html#a29db6a6034952b28118ae9ea1ec00ca4">vf_float.c</a>
+, <a class="el" href="vf__float_8h.html#a6b79409337c63cb82e160e713b9b5455">vf_float.h</a>
+, <a class="el" href="vf__extended__float_8h.html#a3cf28b18a6935e816045e43bf6281c67">vf_extended_float.h</a>
 </li>
 <li>vff_init_zero()
 : <a class="el" href="vf__extended__float_8c.html#a2358072559748851df8c44c975c43ebb">vf_extended_float.c</a>
@@ -555,19 +558,19 @@ $(document).ready(function(){initNavTree('globals_func_v.html','');});
 </li>
 <li>vff_propagate()
 : <a class="el" href="vf__extended__float_8c.html#aa41dcb159a3384aadce98d6f89e82eca">vf_extended_float.c</a>
-, <a class="el" href="vf__extended__float_8h.html#aa41dcb159a3384aadce98d6f89e82eca">vf_extended_float.h</a>
-, <a class="el" href="vf__float_8h.html#aa41dcb159a3384aadce98d6f89e82eca">vf_float.h</a>
 , <a class="el" href="vf__float_8c.html#aa41dcb159a3384aadce98d6f89e82eca">vf_float.c</a>
+, <a class="el" href="vf__float_8h.html#aa41dcb159a3384aadce98d6f89e82eca">vf_float.h</a>
+, <a class="el" href="vf__extended__float_8h.html#aa41dcb159a3384aadce98d6f89e82eca">vf_extended_float.h</a>
 </li>
 <li>vff_realign()
 : <a class="el" href="vf__extended__float_8c.html#a9871b34cda71fc04b9e312b8ce4f11af">vf_extended_float.c</a>
-, <a class="el" href="vf__extended__float_8h.html#a9871b34cda71fc04b9e312b8ce4f11af">vf_extended_float.h</a>
-, <a class="el" href="vf__float_8h.html#a9871b34cda71fc04b9e312b8ce4f11af">vf_float.h</a>
 , <a class="el" href="vf__float_8c.html#a9871b34cda71fc04b9e312b8ce4f11af">vf_float.c</a>
+, <a class="el" href="vf__float_8h.html#a9871b34cda71fc04b9e312b8ce4f11af">vf_float.h</a>
+, <a class="el" href="vf__extended__float_8h.html#a9871b34cda71fc04b9e312b8ce4f11af">vf_extended_float.h</a>
 </li>
 <li>vff_update()
-: <a class="el" href="vf__float_8c.html#a067f2a1bed73d1940c35450706a56265">vf_float.c</a>
-, <a class="el" href="vf__float_8h.html#a067f2a1bed73d1940c35450706a56265">vf_float.h</a>
+: <a class="el" href="vf__float_8h.html#a067f2a1bed73d1940c35450706a56265">vf_float.h</a>
+, <a class="el" href="vf__float_8c.html#a067f2a1bed73d1940c35450706a56265">vf_float.c</a>
 </li>
 <li>vff_update_baro()
 : <a class="el" href="vf__extended__float_8c.html#a94b26d899a6d7ca4e26cb7df3f45ef49">vf_extended_float.c</a>
@@ -578,8 +581,8 @@ $(document).ready(function(){initNavTree('globals_func_v.html','');});
 , <a class="el" href="vf__extended__float_8c.html#aa7f8c70d85481ee00728646ab5d82e2a">vf_extended_float.c</a>
 </li>
 <li>vff_update_offset()
-: <a class="el" href="vf__extended__float_8c.html#a3726fbb9f54c7ec7a8579c7af3f15a4c">vf_extended_float.c</a>
-, <a class="el" href="vf__extended__float_8h.html#a3726fbb9f54c7ec7a8579c7af3f15a4c">vf_extended_float.h</a>
+: <a class="el" href="vf__extended__float_8h.html#a3726fbb9f54c7ec7a8579c7af3f15a4c">vf_extended_float.h</a>
+, <a class="el" href="vf__extended__float_8c.html#a3726fbb9f54c7ec7a8579c7af3f15a4c">vf_extended_float.c</a>
 </li>
 <li>vff_update_vz_conf()
 : <a class="el" href="vf__float_8c.html#a7d74fd7f8f95cece04e3c147e409f935">vf_float.c</a>
@@ -590,10 +593,10 @@ $(document).ready(function(){initNavTree('globals_func_v.html','');});
 , <a class="el" href="vf__extended__float_8h.html#a43ba970ac8015812427c9681be41100a">vf_extended_float.h</a>
 </li>
 <li>vff_update_z_conf()
-: <a class="el" href="vf__float_8c.html#a383a56a1eaa73890c3b6ca0599c3fb67">vf_float.c</a>
-, <a class="el" href="vf__extended__float_8h.html#a383a56a1eaa73890c3b6ca0599c3fb67">vf_extended_float.h</a>
-, <a class="el" href="vf__float_8h.html#a383a56a1eaa73890c3b6ca0599c3fb67">vf_float.h</a>
+: <a class="el" href="vf__extended__float_8h.html#a383a56a1eaa73890c3b6ca0599c3fb67">vf_extended_float.h</a>
 , <a class="el" href="vf__extended__float_8c.html#a383a56a1eaa73890c3b6ca0599c3fb67">vf_extended_float.c</a>
+, <a class="el" href="vf__float_8c.html#a383a56a1eaa73890c3b6ca0599c3fb67">vf_float.c</a>
+, <a class="el" href="vf__float_8h.html#a383a56a1eaa73890c3b6ca0599c3fb67">vf_float.h</a>
 </li>
 <li>vi_impl_init()
 : <a class="el" href="vi__datalink_8c.html#a2a3484b09409fdedb7b5c7d12faac617">vi_datalink.c</a>
@@ -604,8 +607,8 @@ $(document).ready(function(){initNavTree('globals_func_v.html','');});
 , <a class="el" href="vi__datalink_8c.html#a4dff3e5cadc38f5e2b40b4684dd3c6d0">vi_datalink.c</a>
 </li>
 <li>vi_impl_set_enabled()
-: <a class="el" href="vi_8h.html#af4f7b87856e653165e3aff355dcf115f">vi.h</a>
-, <a class="el" href="vi__datalink_8c.html#af4f7b87856e653165e3aff355dcf115f">vi_datalink.c</a>
+: <a class="el" href="vi__datalink_8c.html#af4f7b87856e653165e3aff355dcf115f">vi_datalink.c</a>
+, <a class="el" href="vi_8h.html#af4f7b87856e653165e3aff355dcf115f">vi.h</a>
 </li>
 <li>vi_init()
 : <a class="el" href="vi_8c.html#ab754a7182635d4dd588e2f2056bee397">vi.c</a>
@@ -624,27 +627,27 @@ $(document).ready(function(){initNavTree('globals_func_v.html','');});
 : <a class="el" href="vi_8h.html#a0e05949840bd7c88ec8d003230527932">vi.h</a>
 </li>
 <li>vi_periodic()
-: <a class="el" href="vi_8h.html#add1d7a0c17413874356c4dd72462671a">vi.h</a>
-, <a class="el" href="vi_8c.html#add1d7a0c17413874356c4dd72462671a">vi.c</a>
+: <a class="el" href="vi_8c.html#add1d7a0c17413874356c4dd72462671a">vi.c</a>
+, <a class="el" href="vi_8h.html#add1d7a0c17413874356c4dd72462671a">vi.h</a>
 </li>
 <li>vi_set_enabled()
-: <a class="el" href="vi_8h.html#a1e261905e5dae17f32f66dfbf9c2b9e4">vi.h</a>
-, <a class="el" href="vi_8c.html#a1e261905e5dae17f32f66dfbf9c2b9e4">vi.c</a>
+: <a class="el" href="vi_8c.html#a1e261905e5dae17f32f66dfbf9c2b9e4">vi.c</a>
+, <a class="el" href="vi_8h.html#a1e261905e5dae17f32f66dfbf9c2b9e4">vi.h</a>
 </li>
 <li>vi_update_info()
 : <a class="el" href="vi_8h.html#a8c5289c2a71c5fa0341ddd59864d059d">vi.h</a>
 , <a class="el" href="vi_8c.html#a8c5289c2a71c5fa0341ddd59864d059d">vi.c</a>
 </li>
 <li>vi_update_wp()
-: <a class="el" href="vi__datalink_8h.html#a98544ed71f6a4b6b68b448cdcc6d83f9">vi_datalink.h</a>
-, <a class="el" href="vi__datalink_8c.html#a98544ed71f6a4b6b68b448cdcc6d83f9">vi_datalink.c</a>
+: <a class="el" href="vi__datalink_8c.html#a98544ed71f6a4b6b68b448cdcc6d83f9">vi_datalink.c</a>
+, <a class="el" href="vi__datalink_8h.html#a98544ed71f6a4b6b68b448cdcc6d83f9">vi_datalink.h</a>
 </li>
 <li>video_thread_function()
 : <a class="el" href="video__thread_8c.html#a99fd8c1413b858abf320b9adb453ed75">video_thread.c</a>
 </li>
 <li>video_thread_init()
-: <a class="el" href="video__thread__nps_8c.html#a232179ccfd877b4b818196e04932e4ed">video_thread_nps.c</a>
-, <a class="el" href="video__thread_8h.html#a232179ccfd877b4b818196e04932e4ed">video_thread.h</a>
+: <a class="el" href="video__thread_8h.html#a232179ccfd877b4b818196e04932e4ed">video_thread.h</a>
+, <a class="el" href="video__thread__nps_8c.html#a232179ccfd877b4b818196e04932e4ed">video_thread_nps.c</a>
 , <a class="el" href="video__thread_8c.html#a232179ccfd877b4b818196e04932e4ed">video_thread.c</a>
 </li>
 <li>video_thread_periodic()
@@ -657,8 +660,8 @@ $(document).ready(function(){initNavTree('globals_func_v.html','');});
 </li>
 <li>video_thread_start()
 : <a class="el" href="video__thread_8h.html#ae99893bfbc5f28c15432c06aee1e736f">video_thread.h</a>
-, <a class="el" href="video__thread_8c.html#ae99893bfbc5f28c15432c06aee1e736f">video_thread.c</a>
 , <a class="el" href="video__thread__nps_8c.html#ae99893bfbc5f28c15432c06aee1e736f">video_thread_nps.c</a>
+, <a class="el" href="video__thread_8c.html#ae99893bfbc5f28c15432c06aee1e736f">video_thread.c</a>
 </li>
 <li>video_thread_stop()
 : <a class="el" href="video__thread_8c.html#a8fd40d2120fa710aaa7be7e9702029d1">video_thread.c</a>
@@ -667,8 +670,8 @@ $(document).ready(function(){initNavTree('globals_func_v.html','');});
 </li>
 <li>video_thread_take_shot()
 : <a class="el" href="video__thread__nps_8c.html#a72be9bd94d8f75f83b627482181607ff">video_thread_nps.c</a>
-, <a class="el" href="video__thread_8c.html#a72be9bd94d8f75f83b627482181607ff">video_thread.c</a>
 , <a class="el" href="video__thread_8h.html#a72be9bd94d8f75f83b627482181607ff">video_thread.h</a>
+, <a class="el" href="video__thread_8c.html#a72be9bd94d8f75f83b627482181607ff">video_thread.c</a>
 </li>
 <li>video_usb_logger_periodic()
 : <a class="el" href="video__usb__logger_8c.html#a3655b8f9585b793a86ea2b4e86f83b82">video_usb_logger.c</a>
@@ -679,16 +682,16 @@ $(document).ready(function(){initNavTree('globals_func_v.html','');});
 , <a class="el" href="video__usb__logger_8c.html#a371634939fbb925daf5f698a8f9fad1f">video_usb_logger.c</a>
 </li>
 <li>video_usb_logger_stop()
-: <a class="el" href="video__usb__logger_8h.html#a76d53a434966f8690a315375c50b8a81">video_usb_logger.h</a>
-, <a class="el" href="video__usb__logger_8c.html#a76d53a434966f8690a315375c50b8a81">video_usb_logger.c</a>
+: <a class="el" href="video__usb__logger_8c.html#a76d53a434966f8690a315375c50b8a81">video_usb_logger.c</a>
+, <a class="el" href="video__usb__logger_8h.html#a76d53a434966f8690a315375c50b8a81">video_usb_logger.h</a>
 </li>
 <li>viewvideo_function()
 : <a class="el" href="viewvideo_8c.html#a6a9f8aa0c7db5b292f18c8266808fe62">viewvideo.c</a>
 </li>
 <li>viewvideo_init()
-: <a class="el" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005">viewvideo.h</a>
+: <a class="el" href="viewvideo_8c.html#a8479777ac5ff98cdf58349e741f04005">viewvideo.c</a>
 , <a class="el" href="viewvideo__nps_8c.html#a8479777ac5ff98cdf58349e741f04005">viewvideo_nps.c</a>
-, <a class="el" href="viewvideo_8c.html#a8479777ac5ff98cdf58349e741f04005">viewvideo.c</a>
+, <a class="el" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005">viewvideo.h</a>
 </li>
 <li>viewvideo_periodic()
 : <a class="el" href="viewvideo__nps_8c.html#ada4107fbfd3ea05a890398870e1d3767">viewvideo_nps.c</a>
@@ -714,8 +717,8 @@ $(document).ready(function(){initNavTree('globals_func_v.html','');});
 , <a class="el" href="ins__vn100_8h.html#a5d7ed5111626de36fa92c1727cd4cb6a">ins_vn100.h</a>
 </li>
 <li>vn100_periodic_task()
-: <a class="el" href="ins__vn100_8c.html#a315de9dd8d9761361e22f6789b80da31">ins_vn100.c</a>
-, <a class="el" href="ins__vn100_8h.html#a315de9dd8d9761361e22f6789b80da31">ins_vn100.h</a>
+: <a class="el" href="ins__vn100_8h.html#a315de9dd8d9761361e22f6789b80da31">ins_vn100.h</a>
+, <a class="el" href="ins__vn100_8c.html#a315de9dd8d9761361e22f6789b80da31">ins_vn100.c</a>
 </li>
 <li>vn100_report_task()
 : <a class="el" href="ins__vn100_8c.html#a40558cb39426f8f1c7729a7bf5ef2436">ins_vn100.c</a>
@@ -748,7 +751,7 @@ $(document).ready(function(){initNavTree('globals_func_v.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 11 2015 02:02:14 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:02:31 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

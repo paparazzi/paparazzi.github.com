@@ -1,4 +1,51 @@
 <map id="mavlink_event" name="mavlink_event">
-<area shape="rect" id="node2" href="$subsystems_2radio__control_2rc__datalink_8c.html#aa3d40235f29aab16121c0073217835a2" title="Decode datalink message to get rc values with RC_4CH message. " alt="" coords="187,5,351,32"/>
-<area shape="rect" id="node3" href="$mavlink_8c.html#a02a4175b51d1be746de549ae377d08f1" title="settings_idx_from_param_id" alt="" coords="168,56,371,83"/>
+<area shape="rect" id="node2" href="$mavlink_8c.html#a92b02fdeb899791573ef52506deb653c" title="mavlink_common_message\l_handler" alt="" coords="168,259,369,301"/>
+<area shape="rect" id="node39" href="$mission__manager_8c.html#a68ddd91a505c2317c818d632a2009304" title="mavlink_mission_message\l_handler" alt="" coords="172,1219,365,1261"/>
+<area shape="rect" id="node3" href="$rotorcraft_2autopilot_8c.html#a2c66693af9a2611033c90f5482436004" title="Set position and heading setpoints wrt. " alt="" coords="437,226,601,267"/>
+<area shape="rect" id="node4" href="$rotorcraft_2autopilot_8c.html#a0033e5c15dd18dc0332a5a2ac3b8ca73" title="Set position and heading setpoints in GUIDED mode. " alt="" coords="671,91,866,117"/>
+<area shape="rect" id="node13" href="$rotorcraft_2autopilot_8c.html#a112d1fd62b7a4ad1cc8f754f456f6add" title="Set position and heading setpoints wrt. " alt="" coords="437,291,601,333"/>
+<area shape="rect" id="node14" href="$rotorcraft_2autopilot_8c.html#a3aaa2cf16ee3b25e8fca9bbd1d579d64" title="autopilot_set_mode" alt="" coords="444,455,593,481"/>
+<area shape="rect" id="node17" href="$rotorcraft_2autopilot_8c.html#a4a3dedaf4d4da879348f946a9f3f4611" title="autopilot_set_motors_on" alt="" coords="678,377,859,404"/>
+<area shape="rect" id="node37" href="$subsystems_2radio__control_2rc__datalink_8c.html#aa3d40235f29aab16121c0073217835a2" title="Decode datalink message to get rc values with RC_4CH message. " alt="" coords="437,124,601,151"/>
+<area shape="rect" id="node38" href="$mavlink_8c.html#a02a4175b51d1be746de549ae377d08f1" title="settings_idx_from_param_id" alt="" coords="417,175,620,201"/>
+<area shape="rect" id="node8" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="1403,433,1601,460"/>
+<area shape="rect" id="node10" href="$group__state__position.html#gac1b41866b307723e3ad8ddd566d4f627" title="Get position in local NED coordinates (float). " alt="" coords="686,224,851,251"/>
+<area shape="rect" id="node12" href="$group__state__position.html#ga22089bd5ea9ef422b16c31634286f54a" title="Test if local coordinates are valid. " alt="" coords="669,275,868,301"/>
+<area shape="rect" id="node5" href="$guidance__h_8c.html#a1780f9e7e24e59d9d1490ae65f1b91b7" title="Set heading setpoint in GUIDED mode. " alt="" coords="933,107,1105,149"/>
+<area shape="rect" id="node6" href="$guidance__h_8c.html#aa17d6dd9c27eaf38a8be67f7edbef8e1" title="Set horizontal position setpoint in GUIDED mode. " alt="" coords="917,5,1120,32"/>
+<area shape="rect" id="node7" href="$rotorcraft_2guidance_2guidance__v_8c.html#aff132ba48a5bc3d471ec1c57a291bfd4" title="Set z setpoint in GUIDED mode. " alt="" coords="926,56,1111,83"/>
+<area shape="rect" id="node9" href="$group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="1649,433,1813,460"/>
+<area shape="rect" id="node11" href="$group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title="stateCalcPositionNed_f" alt="" coords="934,224,1103,251"/>
+<area shape="rect" id="node15" href="$rotorcraft_2autopilot_8c.html#a99409d6a32e6cce437a1c0354a2515eb" title="ahrs_is_aligned" alt="" coords="959,425,1079,452"/>
+<area shape="rect" id="node19" href="$guidance__h_8c.html#a2903786227eb11507928f99870099225" title="guidance_h_mode_changed" alt="" coords="668,751,869,777"/>
+<area shape="rect" id="node33" href="$rotorcraft_2guidance_2guidance__v_8c.html#ac24445848e497e9b0da2913cecb0db73" title="guidance_v_mode_changed" alt="" coords="669,1045,869,1072"/>
+<area shape="rect" id="node36" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#a5a2d8d3947ba9cdc571cea5778c93f4a" title="stabilization_attitude\l_set_failsafe_setpoint" alt="" coords="939,477,1099,518"/>
+<area shape="rect" id="node16" href="$group__state__attitude.html#ga7a5b4f36c52389fed6e5ec2714dbf15a" title="Test if attitudes are valid. " alt="" coords="1188,383,1335,409"/>
+<area shape="rect" id="node18" href="$autopilot__arming__switch_8h.html#a720eaefed19d55f94f6f866d8aba2702" title="autopilot_arming_set" alt="" coords="940,375,1097,401"/>
+<area shape="rect" id="node20" href="$guidance__flip_8c.html#a896a483b1034357b2911e72d625ff8fd" title="guidance_flip_enter" alt="" coords="945,725,1092,752"/>
+<area shape="rect" id="node23" href="$guidance__h_8c.html#a2a7de8dee0c85bd58633a392d8e2df91" title="guidance_h_hover_enter" alt="" coords="929,995,1108,1021"/>
+<area shape="rect" id="node25" href="$ctrl__module__demo_8c.html#af0a3b4e238d064326406719e8244e92d" title="guidance_h_module_enter" alt="" coords="923,776,1114,803"/>
+<area shape="rect" id="node26" href="$guidance__h_8c.html#acfce6969bcd9f8b676f79baf04ef4c00" title="guidance_h_nav_enter" alt="" coords="1178,811,1345,837"/>
+<area shape="rect" id="node27" href="$guidance__indi_8c.html#a638dd6a545987ce3e0a8c8cef1e3481c" title="guidance_indi_enter" alt="" coords="943,827,1094,853"/>
+<area shape="rect" id="node28" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#a23f862ca823e6fd23fc9c111178be077" title="stabilization_attitude\l_enter" alt="" coords="941,659,1096,701"/>
+<area shape="rect" id="node30" href="$stabilization__attitude__rc__setpoint_8c.html#abdf70201d8682a7d5b567fc6f3790063" title="reset the heading for care&#45;free mode to current heading " alt="" coords="1168,601,1355,642"/>
+<area shape="rect" id="node31" href="$stabilization__none_8c.html#a49478c0307e64c56d48cf0feaa0d8876" title="stabilization_none\l_enter" alt="" coords="950,878,1087,919"/>
+<area shape="rect" id="node32" href="$stabilization__rate_8c.html#a3c8ef06f1db709ae713371b0a2a5054d" title="stabilization_rate\l_enter" alt="" coords="953,542,1084,583"/>
+<area shape="rect" id="node21" href="$stabilization__attitude__rc__setpoint_8c.html#a1270210b635f040b5bdd7d974f29c71f" title="stabilization_attitude\l_get_heading_i" alt="" coords="1184,718,1339,759"/>
+<area shape="rect" id="node22" href="$group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int). " alt="" coords="1403,725,1601,752"/>
+<area shape="rect" id="node24" href="$group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="1179,1020,1343,1047"/>
+<area shape="rect" id="node29" href="$stabilization__attitude__rc__setpoint_8c.html#aef31d05722347c8213ef503f5c6f1113" title="stabilization_attitude\l_get_heading_f" alt="" coords="1184,535,1339,577"/>
+<area shape="rect" id="node34" href="$ctrl__module__demo_8c.html#a1288433c507106e865034b02ae79b2d6" title="guidance_v_module_enter" alt="" coords="923,1147,1114,1173"/>
+<area shape="rect" id="node35" href="$group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="941,1096,1096,1123"/>
+<area shape="rect" id="node40" href="$blocks_8c.html#a736f2e555912fca000d0751dedb4e00f" title="mavlink_block_message\l_handler" alt="" coords="430,1343,607,1385"/>
+<area shape="rect" id="node43" href="$mission__manager_8c.html#ae84f48d5a61636d61507ccc7f1f9e128" title="mavlink_mission_cancel\l_timer" alt="" coords="681,1249,856,1290"/>
+<area shape="rect" id="node47" href="$modules_2datalink_2missionlib_2waypoints_8c.html#a632dcb46c33f5cf3726652ee477ff9bc" title="mavlink_wp_message\l_handler" alt="" coords="438,1190,599,1231"/>
+<area shape="rect" id="node41" href="$blocks_8c.html#abe128e10b21d503391ddfdb06f31699e" title="mavlink_send_block\l_count" alt="" coords="694,1431,843,1473"/>
+<area shape="rect" id="node42" href="$mission__manager_8c.html#ad638b64fc964531fab6a78e1bb8e24d3" title="mavlink_mission_set\l_timer" alt="" coords="691,1314,846,1355"/>
+<area shape="rect" id="node45" href="$blocks_8c.html#a32f0b7d220e811165e54c8d7195e6b80" title="mavlink_send_block" alt="" coords="694,1497,843,1524"/>
+<area shape="rect" id="node46" href="$common__flight__plan_8c.html#ad5b3972efdfb4b34574a534615be3db2" title="nav_goto_block" alt="" coords="708,1380,829,1407"/>
+<area shape="rect" id="node44" href="$sys__time_8c.html#ac2ade8af0c9fbbf866026d99d60f9769" title="Cancel a system timer by id. " alt="" coords="935,1256,1103,1283"/>
+<area shape="rect" id="node48" href="$modules_2datalink_2missionlib_2waypoints_8c.html#a21891c55017fec0be57dc9e4e3ee73a7" title="mavlink_send_wp" alt="" coords="702,1096,835,1123"/>
+<area shape="rect" id="node49" href="$subsystems_2navigation_2waypoints_8c.html#ae5ab24779a6d54a1086c472935b21f47" title="waypoint_set_lla" alt="" coords="705,1147,832,1173"/>
+<area shape="rect" id="node50" href="$subsystems_2navigation_2waypoints_8c.html#affb3b24527cc3e5342715d567fa245dc" title="Set local ENU waypoint coordinates. " alt="" coords="701,1197,837,1224"/>
 </map>

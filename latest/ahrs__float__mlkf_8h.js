@@ -18,14 +18,14 @@ var ahrs__float__mlkf_8h =
       [ "AHRS_MLKF_UNINIT", "ahrs__float__mlkf_8h.html#ac37e0c0ac7b84e55eb5fac8b19d31192a99fdf115590a440e69843537dbf5997b", null ],
       [ "AHRS_MLKF_RUNNING", "ahrs__float__mlkf_8h.html#ac37e0c0ac7b84e55eb5fac8b19d31192a7a4a437b23da8e85d02b4864c78605fc", null ]
     ] ],
-    [ "ahrs_mlkf_align", "ahrs__float__mlkf_8h.html#a7cae9e012148dd7b725b7d41d5ddb51c", null ],
+    [ "ahrs_mlkf_align", "ahrs__float__mlkf_8h.html#aa79af0a33926442fbcc52fc761f695be", null ],
     [ "ahrs_mlkf_init", "ahrs__float__mlkf_8h.html#a507028d1107469dfa4a27642ddc7a2c0", null ],
-    [ "ahrs_mlkf_propagate", "ahrs__float__mlkf_8h.html#a4025bae36c20808a22fa1bf16e1ee269", null ],
+    [ "ahrs_mlkf_propagate", "ahrs__float__mlkf_8h.html#aad9bedf36772800071affa5049921882", null ],
     [ "ahrs_mlkf_set_body_to_imu", "ahrs__float__mlkf_8h.html#a91ca1fddae202f8c91628a150ec45191", null ],
     [ "ahrs_mlkf_set_body_to_imu_quat", "ahrs__float__mlkf_8h.html#a7141f7d6d16d040b38e15c0f3f3fbe47", null ],
-    [ "ahrs_mlkf_update_accel", "ahrs__float__mlkf_8h.html#a270338091a6cb737198bca5fd706e324", null ],
-    [ "ahrs_mlkf_update_mag", "ahrs__float__mlkf_8h.html#af5732c750b11cdd46e7e066b9236e8f8", null ],
-    [ "ahrs_mlkf_update_mag_2d", "ahrs__float__mlkf_8h.html#a0137a4603de09ed6433415ce6a2e579c", null ],
-    [ "ahrs_mlkf_update_mag_full", "ahrs__float__mlkf_8h.html#a7920a8c4cc07f31fe2252a12d0436254", null ],
+    [ "ahrs_mlkf_update_accel", "ahrs__float__mlkf_8h.html#a49d6b43615e971ee5f098c86c2cf0edb", null ],
+    [ "ahrs_mlkf_update_mag", "ahrs__float__mlkf_8h.html#a00e729bc2030aaee57ec7be58f58f569", null ],
+    [ "ahrs_mlkf_update_mag_2d", "ahrs__float__mlkf_8h.html#ab8a1a207877996d1ef506ad18510795e", null ],
+    [ "ahrs_mlkf_update_mag_full", "ahrs__float__mlkf_8h.html#a7bb2235206c421516cfa4884d287fc65", null ],
     [ "ahrs_mlkf", "ahrs__float__mlkf_8h.html#aa2dc4e2a45ec5bd9ca31ace4716de0fd", null ]
 ];

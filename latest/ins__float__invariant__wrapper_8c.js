@@ -20,7 +20,7 @@ var ins__float__invariant__wrapper_8c =
     [ "geo_mag_ev", "ins__float__invariant__wrapper_8c.html#a8126b2c679aadad6260846dd431f74e8", null ],
     [ "gps_ev", "ins__float__invariant__wrapper_8c.html#af8c616627ecbb4860e359944c97dc718", null ],
     [ "gyro_ev", "ins__float__invariant__wrapper_8c.html#a6aa911576e04d8ae0519d83ae6722546", null ],
-    [ "ins_finv_accel", "ins__float__invariant__wrapper_8c.html#a756dbd7cfe70f3dc5dd222ecbdfe987d", null ],
+    [ "ins_finv_accel", "ins__float__invariant__wrapper_8c.html#adb306f2c0044aa52b5119043779e53c4", null ],
     [ "ins_finv_last_stamp", "ins__float__invariant__wrapper_8c.html#ad5afde2b0cc359b8843aa0a694b8f39b", null ],
     [ "mag_ev", "ins__float__invariant__wrapper_8c.html#a44d506760598e8c18e5da6e52dfc6b0d", null ]
 ];

@@ -1,6 +1,7 @@
 var bluegiga_8h_structbluegiga__periph =
 [
     [ "bytes_recvd_since_last", "bluegiga_8h.html#ae0a7d1797d81fffc4b3994ec74b3267a", null ],
+    [ "connected", "bluegiga_8h.html#a0ba68ecb43fca6f8484059327260a9c3", null ],
     [ "device", "bluegiga_8h.html#a1b8c01df06b4ac4228e908be130e9a18", null ],
     [ "end_of_msg", "bluegiga_8h.html#ac74fe962669f9c9856c27c1a760a5d94", null ],
     [ "rx_buf", "bluegiga_8h.html#a3352aec80cd7804f967f77f142402afa", null ],

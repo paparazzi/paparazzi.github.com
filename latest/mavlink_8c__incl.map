@@ -1,24 +1,23 @@
 <map id="sw/airborne/modules/datalink/mavlink.c" name="sw/airborne/modules/datalink/mavlink.c">
-<area shape="rect" id="node2" href="$mavlink_8h.html" title="Basic MAVLink datalink implementation. " alt="" coords="306,102,502,129"/>
-<area shape="rect" id="node13" href="$sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="552,281,723,307"/>
-<area shape="rect" id="node17" href="$electrical_8h.html" title="Interface for electrical status: supply voltage, current, battery status, etc. " alt="" coords="1624,102,1796,129"/>
-<area shape="rect" id="node18" href="$state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="1271,191,1338,218"/>
-<area shape="rect" id="node31" href="$radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="1350,102,1549,129"/>
-<area shape="rect" id="node36" href="$navigation_8h.html" title="Rotorcraft navigation functions. " alt="" coords="961,95,1109,136"/>
-<area shape="rect" id="node41" href="$gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="686,191,824,218"/>
-<area shape="rect" id="node4" href="$uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="124,191,263,218"/>
-<area shape="rect" id="node6" href="$link__device_8h.html" title="generic device header " alt="" coords="225,281,408,307"/>
-<area shape="rect" id="node7" href="$inttypes_8h.html" title="inttypes.h" alt="" coords="264,370,350,397"/>
-<area shape="rect" id="node19" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1302,370,1480,397"/>
-<area shape="rect" id="node24" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1606,370,1797,397"/>
-<area shape="rect" id="node26" href="$pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="1018,273,1169,315"/>
-<area shape="rect" id="node28" href="$pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1193,273,1344,315"/>
-<area shape="rect" id="node29" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1485,273,1649,315"/>
-<area shape="rect" id="node20" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="1606,459,1760,486"/>
-<area shape="rect" id="node23" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1329,459,1480,486"/>
-<area shape="rect" id="node27" href="$pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="1102,370,1226,397"/>
-<area shape="rect" id="node32" href="$led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1570,191,1623,218"/>
-<area shape="rect" id="node34" href="$paparazzi_8h.html" title="paparazzi.h" alt="" coords="432,281,528,307"/>
-<area shape="rect" id="node37" href="$waypoints_8h.html" title="subsystems/navigation\l/waypoints.h" alt="" coords="950,184,1120,225"/>
-<area shape="rect" id="node38" href="$common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="838,452,1008,493"/>
+<area shape="rect" id="node2" href="$mavlink_8h.html" title="Basic MAVLink datalink implementation. " alt="" coords="67,102,263,129"/>
+<area shape="rect" id="node14" href="$sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1758,273,1929,300"/>
+<area shape="rect" id="node18" href="$electrical_8h.html" title="Interface for electrical status: supply voltage, current, battery status, etc. " alt="" coords="1353,102,1525,129"/>
+<area shape="rect" id="node19" href="$state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="1099,102,1166,129"/>
+<area shape="rect" id="node32" href="$radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="2097,102,2296,129"/>
+<area shape="rect" id="node37" href="$mission__manager_8h.html" title="Common functions used within the mission library, blocks and waypoints cannot be send simultaneously ..." alt="" coords="515,95,713,136"/>
+<area shape="rect" id="node39" href="$gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="1190,102,1329,129"/>
+<area shape="rect" id="node40" href="$commands_8h.html" title="Hardware independent code for commands handling. " alt="" coords="1886,102,2073,129"/>
+<area shape="rect" id="node4" href="$uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="95,191,234,218"/>
+<area shape="rect" id="node6" href="$link__device_8h.html" title="generic device header " alt="" coords="1129,273,1312,300"/>
+<area shape="rect" id="node7" href="$inttypes_8h.html" title="inttypes.h" alt="" coords="1930,355,2015,382"/>
+<area shape="rect" id="node20" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="926,273,1105,300"/>
+<area shape="rect" id="node25" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="609,273,800,300"/>
+<area shape="rect" id="node27" href="$pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="1296,184,1447,225"/>
+<area shape="rect" id="node29" href="$pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1121,184,1272,225"/>
+<area shape="rect" id="node30" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="743,184,907,225"/>
+<area shape="rect" id="node21" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="682,355,837,382"/>
+<area shape="rect" id="node24" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="963,355,1113,382"/>
+<area shape="rect" id="node28" href="$pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="1388,273,1512,300"/>
+<area shape="rect" id="node33" href="$led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="2286,191,2339,218"/>
+<area shape="rect" id="node35" href="$paparazzi_8h.html" title="paparazzi.h" alt="" coords="1931,191,2027,218"/>
 </map>

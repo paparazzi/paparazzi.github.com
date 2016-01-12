@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -176,18 +176,22 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2radio__control_2spe
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">/* reverse some channels to suit Paparazzi conventions          */</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">/* the maximum number of channels a Spektrum can transmit is 12 */</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#ifndef RADIO_CONTROL_SPEKTRUM_SIGNS</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h.html#a61744d020c5c398d66a619dc22b1900c">   68</a></span>&#160;<span class="preprocessor">#define RADIO_CONTROL_SPEKTRUM_SIGNS {1,-1,-1,-1,1,-1,1,1,1,1,1,1}</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">/* really for a 9 channel transmitter</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">   we would swap the order of these */</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#ifndef RADIO_MODE</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h.html#a2fab1464ab1748edb2a45a08cf7c422a">   74</a></span>&#160;<span class="preprocessor">#define RADIO_MODE       RADIO_GEAR</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#aa14d845c3a5ca2182ee1d7594b22ab44">RadioControlEventImp</a>(<span class="keywordtype">void</span> (*_received_frame_handler)(<span class="keywordtype">void</span>));</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* RADIO_CONTROL_SPEKTRUM_ARCH_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#ifdef RADIO_CONTROL_SPEKTRUM_OLD_SIGNS</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#define RADIO_CONTROL_SPEKTRUM_SIGNS {1,-1,-1,-1,1,-1,1,1,1,1,1,1} // As most transmitters are sold</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h.html#a61744d020c5c398d66a619dc22b1900c">   71</a></span>&#160;<span class="preprocessor">#define RADIO_CONTROL_SPEKTRUM_SIGNS {1,1,1,1,1,1,1,1,1,1,1,1} // PPRZ sign convention</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">/* really for a 9 channel transmitter</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">   we would swap the order of these */</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#ifndef RADIO_MODE</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h.html#a2fab1464ab1748edb2a45a08cf7c422a">   78</a></span>&#160;<span class="preprocessor">#define RADIO_MODE       RADIO_GEAR</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#aa14d845c3a5ca2182ee1d7594b22ab44">RadioControlEventImp</a>(<span class="keywordtype">void</span> (*_received_frame_handler)(<span class="keywordtype">void</span>));</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* RADIO_CONTROL_SPEKTRUM_ARCH_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="sim_2subsystems_2radio__control_2spektrum__arch_8h_html_aa14d845c3a5ca2182ee1d7594b22ab44"><div class="ttname"><a href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#aa14d845c3a5ca2182ee1d7594b22ab44">RadioControlEventImp</a></div><div class="ttdeci">void RadioControlEventImp(void(*_received_frame_handler)(void))</div><div class="ttdef"><b>Definition:</b> <a href="sim_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00048">spektrum_arch.c:48</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -195,7 +199,7 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2radio__control_2spe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_71548ae744da26ac2c7ca213b679dc43.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_b14b085d0c57bddb3031abea4661d10b.html">radio_control</a></li><li class="navelem"><a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h.html">spektrum_arch.h</a></li>
-    <li class="footer">Generated on Wed Nov 11 2015 02:01:02 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:01:15 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

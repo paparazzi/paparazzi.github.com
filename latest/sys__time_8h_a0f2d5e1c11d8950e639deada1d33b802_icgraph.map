@@ -1,21 +1,38 @@
 <map id="msec_of_cpu_ticks" name="msec_of_cpu_ticks">
-<area shape="rect" id="node2" href="$linux_2mcu__periph_2sys__time__arch_8h.html#a5f8c93bbb4f24eee68b36977371aa262" title="Get the time in milliseconds since startup. " alt="" coords="196,315,345,341"/>
-<area shape="rect" id="node18" href="$trig__ext__hw_8h.html#a80ce25041c38ee2a1bb26b18549e8423" title="TRIG_ISR" alt="" coords="232,543,309,569"/>
-<area shape="rect" id="node3" href="$gps__piksi_8h.html#a2a11e7df7bcc31ab10141f020bd6f729" title="gps_piksi_event" alt="" coords="428,5,551,32"/>
-<area shape="rect" id="node4" href="$hackhd_8h.html#af32d92b29b1c7179834f3877c59069d1" title="hackhd_command" alt="" coords="419,56,559,83"/>
-<area shape="rect" id="node6" href="$hackhd_8h.html#ac07236a110fadf7ca828e1c2969b4c06" title="hackhd_periodic" alt="" coords="427,107,552,133"/>
-<area shape="rect" id="node7" href="$mavlink_8c.html#ab4facf70544272f5a7ce83e50b319cc3" title="Send the attitude. " alt="" coords="406,157,573,184"/>
-<area shape="rect" id="node9" href="$mavlink_8c.html#a076640b1bead9f0bb86f91b0893bc651" title="mavlink_send_attitude\l_quaternion" alt="" coords="406,209,573,250"/>
-<area shape="rect" id="node10" href="$mavlink_8c.html#a8e376e67cc8a8a15e91a7e9fae593646" title="mavlink_send_global\l_position_int" alt="" coords="412,274,567,315"/>
-<area shape="rect" id="node11" href="$mavlink_8c.html#a025c0ce53320b2bf9418a94bd9e5e726" title="mavlink_send_local\l_position_ned" alt="" coords="417,339,562,381"/>
-<area shape="rect" id="node12" href="$mavlink_8c.html#abdc89d384119e0a10a2f5a0a13e6b5c3" title="mavlink_send_rc_channels" alt="" coords="393,405,585,432"/>
-<area shape="rect" id="node13" href="$openlog_8h.html#ab34b243a201c81bc8858b79c2c37bb58" title="periodic_2Hz_openlog" alt="" coords="408,456,571,483"/>
-<area shape="rect" id="node14" href="$gps__piksi_8c.html#adc6ac5fcbd5eb39085654a667030c5b7" title="sbp_pos_ecef_callback" alt="" coords="406,507,573,533"/>
-<area shape="rect" id="node16" href="$usb__tunnel_8c.html#a716cf006b01443e43d0c22bace6803c6" title="tunnel_event" alt="" coords="437,557,542,584"/>
-<area shape="rect" id="node5" href="$hackhd_8h.html#a91f9f6ee79244d1a804e0a7abfb8812a" title="hackhd_autoshoot" alt="" coords="633,56,773,83"/>
-<area shape="rect" id="node8" href="$mavlink_8h.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls. " alt="" coords="639,281,767,308"/>
-<area shape="rect" id="node15" href="$gps__piksi_8c.html#ac51e6a5f7940a0acc9dc44b1b8085331" title="GPS initialization. " alt="" coords="651,507,756,533"/>
-<area shape="rect" id="node17" href="$usb__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="676,557,731,584"/>
-<area shape="rect" id="node19" href="$lpc21_2mcu__periph_2sys__time__arch_8h.html#ae189f8759d6fc0d0ea13267459b1f2ad" title="TIMER0_ISR" alt="" coords="442,608,537,635"/>
-<area shape="rect" id="node20" href="$lpc21_2mcu__periph_2sys__time__arch_8c.html#a9b31c2feb846b96205ae20ea6883e1c4" title="sys_time_arch_init" alt="" coords="633,608,773,635"/>
+<area shape="rect" id="node2" href="$linux_2mcu__periph_2sys__time__arch_8h.html#a5f8c93bbb4f24eee68b36977371aa262" title="Get the time in milliseconds since startup. " alt="" coords="196,360,345,387"/>
+<area shape="rect" id="node35" href="$trig__ext__hw_8h.html#a80ce25041c38ee2a1bb26b18549e8423" title="TRIG_ISR" alt="" coords="232,585,309,612"/>
+<area shape="rect" id="node3" href="$ak8975_8h.html#ab0f5eefeb80614ad955e79f5b34819eb" title="ak8975_event" alt="" coords="437,157,549,184"/>
+<area shape="rect" id="node5" href="$ak8975_8h.html#a25e38416f60c0c4259422d2a6fc48ebc" title="ak8975_read" alt="" coords="440,208,545,235"/>
+<area shape="rect" id="node18" href="$gps__piksi_8h.html#a2a11e7df7bcc31ab10141f020bd6f729" title="gps_piksi_event" alt="" coords="431,259,554,285"/>
+<area shape="rect" id="node19" href="$hackhd_8h.html#af32d92b29b1c7179834f3877c59069d1" title="hackhd_command" alt="" coords="423,309,563,336"/>
+<area shape="rect" id="node21" href="$hackhd_8h.html#ac07236a110fadf7ca828e1c2969b4c06" title="hackhd_periodic" alt="" coords="430,360,555,387"/>
+<area shape="rect" id="node22" href="$mavlink_8c.html#acf9dbe1c46aa63331ca93c34f1a73a9a" title="Send the attitude. " alt="" coords="409,579,576,605"/>
+<area shape="rect" id="node25" href="$mavlink_8c.html#a6a99bc39299168db89d0b0ad07375cfb" title="mavlink_send_attitude\l_quaternion" alt="" coords="409,630,576,671"/>
+<area shape="rect" id="node26" href="$mavlink_8c.html#a69b29097db843b873c8b348c837cfd03" title="mavlink_send_global\l_position_int" alt="" coords="415,695,570,737"/>
+<area shape="rect" id="node27" href="$mavlink_8c.html#acf27b8ebaf73137224cee8453df530a8" title="mavlink_send_local\l_position_ned" alt="" coords="420,411,565,453"/>
+<area shape="rect" id="node28" href="$mavlink_8c.html#aa724c38fa2b73a866f85cf747f3bc72f" title="mavlink_send_rc_channels" alt="" coords="397,477,589,504"/>
+<area shape="rect" id="node29" href="$mavlink_8c.html#a160010097f6fb718c579d8470a9d72cf" title="Send SYSTEM_TIME. " alt="" coords="393,528,592,555"/>
+<area shape="rect" id="node30" href="$openlog_8h.html#ab34b243a201c81bc8858b79c2c37bb58" title="periodic_2Hz_openlog" alt="" coords="411,5,574,32"/>
+<area shape="rect" id="node31" href="$gps__piksi_8c.html#adc6ac5fcbd5eb39085654a667030c5b7" title="sbp_pos_ecef_callback" alt="" coords="409,56,576,83"/>
+<area shape="rect" id="node33" href="$usb__tunnel_8c.html#a716cf006b01443e43d0c22bace6803c6" title="tunnel_event" alt="" coords="440,107,545,133"/>
+<area shape="rect" id="node4" href="$imu__apogee_8h.html#a60395d55d1c3bbb3773a3bc79f210884" title="imu_apogee_event" alt="" coords="640,157,784,184"/>
+<area shape="rect" id="node6" href="$ak8975_8h.html#a7b73b518a35a483897c7b6691fdeb86d" title="convenience function: read or start configuration if not already initialized " alt="" coords="649,208,775,235"/>
+<area shape="rect" id="node7" href="$imu_8h.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="optional. " alt="" coords="832,208,935,235"/>
+<area shape="rect" id="node8" href="$demo__ahrs__actuators_8c.html#a791eaf74023b4de8d10fbfe0de040ed8" title="main_periodic_task" alt="" coords="983,157,1128,184"/>
+<area shape="rect" id="node10" href="$rotorcraft_2main__fbw_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="1000,208,1111,235"/>
+<area shape="rect" id="node15" href="$main__ap_8h.html#aaae462f08bad040640b5d7d9dac4e5d3" title="Run at PERIODIC_FREQUENCY (60Hz if not defined) " alt="" coords="1002,259,1109,285"/>
+<area shape="rect" id="node9" href="$demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1242,157,1297,184"/>
+<area shape="rect" id="node11" href="$rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="1188,208,1351,235"/>
+<area shape="rect" id="node12" href="$fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1423,183,1477,209"/>
+<area shape="rect" id="node13" href="$main__chibios__libopencm3_8c.html#ad648a546fe66cd5f9328f33221a40c64" title="pprz_thd" alt="" coords="1411,233,1489,260"/>
+<area shape="rect" id="node14" href="$main__chibios__libopencm3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1537,233,1592,260"/>
+<area shape="rect" id="node16" href="$main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="1176,259,1363,285"/>
+<area shape="rect" id="node17" href="$sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="1201,309,1337,336"/>
+<area shape="rect" id="node20" href="$hackhd_8h.html#a91f9f6ee79244d1a804e0a7abfb8812a" title="hackhd_autoshoot" alt="" coords="642,309,782,336"/>
+<area shape="rect" id="node23" href="$mavlink_8h.html#acc676450794df9b4b50dc6b12995b7a1" title="Module functions. " alt="" coords="663,528,761,555"/>
+<area shape="rect" id="node24" href="$mavlink_8h.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls. " alt="" coords="648,579,776,605"/>
+<area shape="rect" id="node32" href="$gps__piksi_8c.html#ac51e6a5f7940a0acc9dc44b1b8085331" title="GPS initialization. " alt="" coords="659,56,765,83"/>
+<area shape="rect" id="node34" href="$usb__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="685,107,739,133"/>
+<area shape="rect" id="node36" href="$lpc21_2mcu__periph_2sys__time__arch_8h.html#ae189f8759d6fc0d0ea13267459b1f2ad" title="TIMER0_ISR" alt="" coords="445,761,540,788"/>
+<area shape="rect" id="node37" href="$lpc21_2mcu__periph_2sys__time__arch_8c.html#a9b31c2feb846b96205ae20ea6883e1c4" title="sys_time_arch_init" alt="" coords="642,761,782,788"/>
 </map>

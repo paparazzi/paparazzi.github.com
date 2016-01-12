@@ -71,6 +71,7 @@ var searchData=
   ['lpcuart_2eh',['lpcUART.h',['../lpcUART_8h.html',1,'']]],
   ['lpcvic_2eh',['lpcVIC.h',['../lpcVIC_8h.html',1,'']]],
   ['lpcwd_2eh',['lpcWD.h',['../lpcWD_8h.html',1,'']]],
+  ['lsm303d_5fregs_2eh',['lsm303d_regs.h',['../lsm303d__regs_8h.html',1,'']]],
   ['lsm303dlhc_2ec',['lsm303dlhc.c',['../lsm303dlhc_8c.html',1,'']]],
   ['lsm303dlhc_2eh',['lsm303dlhc.h',['../lsm303dlhc_8h.html',1,'']]],
   ['lsm303dlhc_5fregs_2eh',['lsm303dlhc_regs.h',['../lsm303dlhc__regs_8h.html',1,'']]],

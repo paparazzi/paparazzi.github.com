@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -107,13 +107,17 @@ $(document).ready(function(){initNavTree('md_sw_airborne_math_README.html','');}
 <p>See also the <a class="el" href="group__math.html">Math</a> docs.</p>
 <h2>HOWTO install a shared library to use in other projects </h2>
 <ol type="1">
-<li><p class="startli">Build library: in this folder, type <code>make shared_lib</code></p>
-<p class="startli">the default build directory is var/build/math to change it: <code>BUILDDIR=&lt;your_build_dir&gt; make shared_lib</code></p>
+<li><p class="startli">Build library: in sw/airborne/math, type <code>make shared_lib</code></p>
+<p class="startli">The default build directory is var/build/math, to change it: <code>BUILDDIR=&lt;your_build_dir&gt; make shared_lib</code></p>
 </li>
-<li><p class="startli">Install library: in this folder, type make install_shared_lib</p>
-<p class="startli">the default install dir is /usr/local and will install files in /usr/local/lib /usr/local/lib/pkgconfig /usr/local/include/pprz</p>
+<li><p class="startli">Install library: in this folder, type <code>make install_shared_lib</code></p>
+<p class="startli">the default install dir is /usr/local and will install files in</p><ul>
+<li>/usr/local/lib</li>
+<li>/usr/local/lib/pkgconfig</li>
+<li>/usr/local/include/pprz</li>
+</ul>
 <p class="startli">to change the install dir: <code>PREFIX=&lt;your_install_dir&gt; make install_shared_lib</code></p>
-<p class="startli">note that the default install dir needs root privilege</p>
+<p class="startli">note that the default install dir needs root privilege and is usually called via <code>sudo make shared_lib</code></p>
 </li>
 </ol>
 <h2>HOWTO use the shared library </h2>
@@ -131,7 +135,7 @@ $(document).ready(function(){initNavTree('md_sw_airborne_math_README.html','');}
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 11 2015 02:01:53 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:02:09 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -114,12 +114,27 @@ Example for airframe file</h1>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;load name=&quot;video_rtp_stream.xml&quot;&gt;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    &lt;define name=&quot;VIEWVIDEO_DOWNSIZE_FACTOR&quot; value=&quot;4&quot; /&gt;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    &lt;define name=&quot;VIEWVIDEO_QUALITY_FACTOR&quot; value=&quot;50&quot; /&gt;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    &lt;define name=&quot;VIEWVIDEO_USE_NETCAT&quot; value=&quot;FALSE|TRUE&quot; /&gt;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    &lt;define name=&quot;VIEWVIDEO_USE_RTP&quot; value=&quot;TRUE|FALSE&quot; /&gt;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  &lt;/load&gt;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;&lt;/modules&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    &lt;define name=&quot;VIEWVIDEO_USE_RTP&quot; value=&quot;TRUE|FALSE&quot; /&gt;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    &lt;configure name=&quot;VIEWVIDEO_USE_NETCAT&quot; value=&quot;FALSE|TRUE&quot; /&gt;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    &lt;configure name=&quot;VIEWVIDEO_HOST&quot; value=&quot;192.168.1.255&quot; /&gt;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    &lt;configure name=&quot;VIEWVIDEO_PORT_OUT&quot; value=&quot;5000&quot; /&gt;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    &lt;configure name=&quot;VIEWVIDEO_BROADCAST&quot; value=&quot;FALSE|TRUE&quot; /&gt;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  &lt;/load&gt;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;&lt;/modules&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__video_rtp_stream"></a>
 Module configuration options</h1>
+<h2><a class="anchor" id="configure"></a>
+Configure Options</h2>
+<ul>
+<li><b>name:</b> <code>VIEWVIDEO_USE_NETCAT</code> <b>value:</b> <em>FALSE|TRUE</em> <br />
+ Description: Use netcat for transfering images instead of RTP stream (default: FALSE)</li>
+<li><b>name:</b> <code>VIEWVIDEO_HOST</code> <b>value:</b> <em>192.168.1.255</em> <br />
+ Description: GCS IP (default: MODEM_HOST)</li>
+<li><b>name:</b> <code>VIEWVIDEO_PORT_OUT</code> <b>value:</b> <em>5000</em> <br />
+ Description: Port (default: 5000)</li>
+<li><b>name:</b> <code>VIEWVIDEO_BROADCAST</code> <b>value:</b> <em>FALSE|TRUE</em> <br />
+ Description: Enable broadcast of image stream (default: TRUE)</li>
+</ul>
 <h2><a class="anchor" id="define"></a>
 Define Options</h2>
 <ul>
@@ -127,10 +142,8 @@ Define Options</h2>
  Description: Reduction factor of the video stream</li>
 <li><b>name:</b> <code>VIEWVIDEO_QUALITY_FACTOR</code> <b>value:</b> <em>50</em> <br />
  Description: JPEG encoding compression factor [0-99]</li>
-<li><b>name:</b> <code>VIEWVIDEO_USE_NETCAT</code> <b>value:</b> <em>FALSE|TRUE</em> <br />
- Description: Use netcat for transfering images (default: FALSE)</li>
 <li><b>name:</b> <code>VIEWVIDEO_USE_RTP</code> <b>value:</b> <em>TRUE|FALSE</em> <br />
- Description: Use RTP for transfering images (default: TRUE)</li>
+ Description: Enable RTP at startup for transfering images (default: TRUE)</li>
 </ul>
 <h1><a class="anchor" id="functions__video_rtp_stream"></a>
 Module functions</h1>
@@ -161,17 +174,20 @@ Raw video_rtp_stream.xml file:</h2>
 <div class="line">&lt;module name=&quot;video_rtp_stream&quot; dir=&quot;computer_vision&quot;&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;</div>
-<div class="line">      Video streaming for Linux based devices. </div>
+<div class="line">      Video streaming for Linux based devices.</div>
 <div class="line">      Works e.g. in conjunction with Parrot Drones where the autopilot is the Paparazzi autopilot.</div>
 <div class="line">      Features:</div>
 <div class="line">       - Sends a RTP/UDP stream of the camera image, a.k.a. live video</div>
 <div class="line">       - Possibility to save an image(shot) on internal or external storage space even in full size, best quality</div>
 <div class="line">      Example to add to ARdrone2 airframe with extra USB stick plugger in:</div>
 <div class="line">    &lt;/description&gt;</div>
+<div class="line">    &lt;configure name=&quot;VIEWVIDEO_USE_NETCAT&quot; value=&quot;FALSE|TRUE&quot; description=&quot;Use netcat for transfering images instead of RTP stream (default: FALSE)&quot;/&gt;</div>
+<div class="line">    &lt;configure name=&quot;VIEWVIDEO_HOST&quot; value=&quot;192.168.1.255&quot; description=&quot;GCS IP (default: MODEM_HOST)&quot;/&gt;</div>
+<div class="line">    &lt;configure name=&quot;VIEWVIDEO_PORT_OUT&quot; value=&quot;5000&quot; description=&quot;Port (default: 5000)&quot;/&gt;</div>
+<div class="line">    &lt;configure name=&quot;VIEWVIDEO_BROADCAST&quot; value=&quot;FALSE|TRUE&quot; description=&quot;Enable broadcast of image stream (default: TRUE)&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;VIEWVIDEO_DOWNSIZE_FACTOR&quot; value=&quot;4&quot; description=&quot;Reduction factor of the video stream&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;VIEWVIDEO_QUALITY_FACTOR&quot; value=&quot;50&quot; description=&quot;JPEG encoding compression factor [0-99]&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;VIEWVIDEO_USE_NETCAT&quot; value=&quot;FALSE|TRUE&quot; description=&quot;Use netcat for transfering images (default: FALSE)&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;VIEWVIDEO_USE_RTP&quot; value=&quot;TRUE|FALSE&quot; description=&quot;Use RTP for transfering images (default: TRUE)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;VIEWVIDEO_USE_RTP&quot; value=&quot;TRUE|FALSE&quot; description=&quot;Enable RTP at startup for transfering images (default: TRUE)&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line">  &lt;settings&gt;</div>
 <div class="line">    &lt;dl_settings&gt;</div>
@@ -196,16 +212,19 @@ Raw video_rtp_stream.xml file:</h2>
 <div class="line"></div>
 <div class="line">    &lt;!-- Define the network connection to send images over --&gt;</div>
 <div class="line">    &lt;raw&gt;</div>
+<div class="line">      include $(CFG_SHARED)/udp.makefile</div>
+<div class="line"></div>
 <div class="line">      VIEWVIDEO_HOST        ?= $(MODEM_HOST)</div>
 <div class="line">      VIEWVIDEO_PORT_OUT    ?= 5000</div>
-<div class="line">      VIEWVIDEO_BROADCAST   ?= $(MODEM_BROADCAST)</div>
+<div class="line">      VIEWVIDEO_BROADCAST   ?= TRUE</div>
+<div class="line">      VIEWVIDEO_USE_NETCAT  ?= FALSE</div>
 <div class="line"></div>
 <div class="line">      VIEWVID_CFLAGS  = -DVIEWVIDEO_HOST=$(VIEWVIDEO_HOST) -DVIEWVIDEO_PORT_OUT=$(VIEWVIDEO_PORT_OUT)</div>
-<div class="line">      ifeq ($(VIEWVIDEO_USE_NC),)</div>
+<div class="line">      ifneq (,$(findstring $(VIEWVIDEO_USE_NETCAT),0 FALSE))</div>
 <div class="line">        ap.CFLAGS += $(VIEWVID_CFLAGS) -DVIEWVIDEO_BROADCAST=$(VIEWVIDEO_BROADCAST)</div>
 <div class="line">        nps.CFLAGS += $(VIEWVID_CFLAGS) -DVIEWVIDEO_BROADCAST=FALSE</div>
 <div class="line">      else</div>
-<div class="line">        $(TARGET).CFLAGS += $(VIEWVID_CFLAGS) -DVIEWVIDEO_USE_NC</div>
+<div class="line">        $(TARGET).CFLAGS += $(VIEWVID_CFLAGS) -DVIEWVIDEO_USE_NETCAT</div>
 <div class="line">      endif</div>
 <div class="line">    &lt;/raw&gt;</div>
 <div class="line"></div>
@@ -217,7 +236,7 @@ Raw video_rtp_stream.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Nov 11 2015 02:01:52 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:02:08 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

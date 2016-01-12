@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -241,6 +241,9 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 <li>cdcacm_set_config()
 : <a class="el" href="stm32_2usb__ser__hw_8c.html#a6059acbec27d178fd89f46eac5538e7f">usb_ser_hw.c</a>
 </li>
+<li>changeRollYawPhase()
+: <a class="el" href="follow__me_8c.html#a744e57dd58bee7c2a3f652c15e62550b">follow_me.c</a>
+</li>
 <li>charge_sens_event()
 : <a class="el" href="charge__sens_8c.html#a986b67a708cc587643caeace4052b62f">charge_sens.c</a>
 , <a class="el" href="charge__sens_8h.html#a986b67a708cc587643caeace4052b62f">charge_sens.h</a>
@@ -290,8 +293,8 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 : <a class="el" href="chibios__init_8c.html#ad6115306146fd3fa9b5ce3363c8793cc">chibios_init.c</a>
 </li>
 <li>CHIMU_Checksum()
-: <a class="el" href="imu__chimu_8c.html#a70dfa9eb8b0dff840f01869418c7de61">imu_chimu.c</a>
-, <a class="el" href="imu__chimu_8h.html#a70dfa9eb8b0dff840f01869418c7de61">imu_chimu.h</a>
+: <a class="el" href="imu__chimu_8h.html#a70dfa9eb8b0dff840f01869418c7de61">imu_chimu.h</a>
+, <a class="el" href="imu__chimu_8c.html#a70dfa9eb8b0dff840f01869418c7de61">imu_chimu.c</a>
 </li>
 <li>CHIMU_Init()
 : <a class="el" href="imu__chimu_8c.html#a8f9d1eeb69a4253543b66c06e258086e">imu_chimu.c</a>
@@ -318,6 +321,38 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 <li>cmp_flow()
 : <a class="el" href="opticflow__calculator_8c.html#a70ba354beb51e86724b52a657ca34c25">opticflow_calculator.c</a>
 </li>
+<li>CN_calculate_target()
+: <a class="el" href="obstacle__avoidance_8c.html#afb4f90a66f93fdb70da178189b76b6a2">obstacle_avoidance.c</a>
+, <a class="el" href="obstacle__avoidance_8h.html#afb4f90a66f93fdb70da178189b76b6a2">obstacle_avoidance.h</a>
+</li>
+<li>CN_escape_velocity()
+: <a class="el" href="obstacle__avoidance_8c.html#acd83f8e2b7ef14ad389992c9a4ac1c5e">obstacle_avoidance.c</a>
+, <a class="el" href="obstacle__avoidance_8h.html#acd83f8e2b7ef14ad389992c9a4ac1c5e">obstacle_avoidance.h</a>
+</li>
+<li>CN_matrix_butterworth()
+: <a class="el" href="obstacle__avoidance_8c.html#ada12ec7689fb357e1f4a25e2e73566ad">obstacle_avoidance.c</a>
+, <a class="el" href="obstacle__avoidance_8h.html#ada12ec7689fb357e1f4a25e2e73566ad">obstacle_avoidance.h</a>
+</li>
+<li>CN_matrix_Kalman_filter()
+: <a class="el" href="obstacle__avoidance_8c.html#a156dd5c713412e468c2ba8ff9c528bc4">obstacle_avoidance.c</a>
+, <a class="el" href="obstacle__avoidance_8h.html#a156dd5c713412e468c2ba8ff9c528bc4">obstacle_avoidance.h</a>
+</li>
+<li>CN_potential_heading()
+: <a class="el" href="obstacle__avoidance_8c.html#a43e6d081b68544c534a4c9d9e621ccad">obstacle_avoidance.c</a>
+, <a class="el" href="obstacle__avoidance_8h.html#a43e6d081b68544c534a4c9d9e621ccad">obstacle_avoidance.h</a>
+</li>
+<li>CN_potential_velocity()
+: <a class="el" href="obstacle__avoidance_8c.html#a310adf7eac35923617e12182c1c75fea">obstacle_avoidance.c</a>
+, <a class="el" href="obstacle__avoidance_8h.html#a310adf7eac35923617e12182c1c75fea">obstacle_avoidance.h</a>
+</li>
+<li>CN_vector_escape_velocity()
+: <a class="el" href="obstacle__avoidance_8c.html#aedea9242ba41a4e570586e68755af4ca">obstacle_avoidance.c</a>
+, <a class="el" href="obstacle__avoidance_8h.html#aedea9242ba41a4e570586e68755af4ca">obstacle_avoidance.h</a>
+</li>
+<li>CN_vector_velocity()
+: <a class="el" href="obstacle__avoidance_8h.html#a53290242178aea1256bfde6beba0d989">obstacle_avoidance.h</a>
+, <a class="el" href="obstacle__avoidance_8c.html#a53290242178aea1256bfde6beba0d989">obstacle_avoidance.c</a>
+</li>
 <li>colorfilter_func()
 : <a class="el" href="colorfilter_8c.html#a061499d6aca3cc3c08e048b4eec1c4c8">colorfilter.c</a>
 </li>
@@ -343,9 +378,9 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 , <a class="el" href="ahrs__float__invariant__wrapper_8c.html#a2e90a05e5a4ca369d0308bb72e68171d">ahrs_float_invariant_wrapper.c</a>
 </li>
 <li>compute_dist2_to_home()
-: <a class="el" href="common__nav_8c.html#a4603515f41786b54ea9383a65a9f249e">common_nav.c</a>
+: <a class="el" href="navigation_8h.html#a4603515f41786b54ea9383a65a9f249e">navigation.h</a>
 , <a class="el" href="navigation_8c.html#a4603515f41786b54ea9383a65a9f249e">navigation.c</a>
-, <a class="el" href="navigation_8h.html#a4603515f41786b54ea9383a65a9f249e">navigation.h</a>
+, <a class="el" href="common__nav_8c.html#a4603515f41786b54ea9383a65a9f249e">common_nav.c</a>
 , <a class="el" href="common__nav_8h.html#a4603515f41786b54ea9383a65a9f249e">common_nav.h</a>
 </li>
 <li>compute_ground_speed()
@@ -361,8 +396,8 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 : <a class="el" href="config__mkk__v2_8c.html#ab40880a5a716dde2fd513271f24dcb8b">config_mkk_v2.c</a>
 </li>
 <li>config_mkk_v2_init()
-: <a class="el" href="config__mkk__v2_8c.html#aab70e844663cb90311674738347ccbd3">config_mkk_v2.c</a>
-, <a class="el" href="config__mkk__v2_8h.html#aab70e844663cb90311674738347ccbd3">config_mkk_v2.h</a>
+: <a class="el" href="config__mkk__v2_8h.html#aab70e844663cb90311674738347ccbd3">config_mkk_v2.h</a>
+, <a class="el" href="config__mkk__v2_8c.html#aab70e844663cb90311674738347ccbd3">config_mkk_v2.c</a>
 </li>
 <li>config_mkk_v2_parse_eeprom()
 : <a class="el" href="config__mkk__v2_8c.html#a2122a767a02942b48c586920c4627cd4">config_mkk_v2.c</a>
@@ -372,8 +407,8 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 , <a class="el" href="config__mkk__v2_8h.html#a012dd8412869cba185e64883e9ece3b6">config_mkk_v2.h</a>
 </li>
 <li>config_mkk_v2_periodic_telemetry()
-: <a class="el" href="config__mkk__v2_8c.html#a8e0d76004a3aa16e1c19523b2f7ba702">config_mkk_v2.c</a>
-, <a class="el" href="config__mkk__v2_8h.html#a8e0d76004a3aa16e1c19523b2f7ba702">config_mkk_v2.h</a>
+: <a class="el" href="config__mkk__v2_8h.html#a8e0d76004a3aa16e1c19523b2f7ba702">config_mkk_v2.h</a>
+, <a class="el" href="config__mkk__v2_8c.html#a8e0d76004a3aa16e1c19523b2f7ba702">config_mkk_v2.c</a>
 </li>
 <li>config_mkk_v2_read_eeprom()
 : <a class="el" href="config__mkk__v2_8c.html#ac185d9a5e71b91184afbb07eac530ab0">config_mkk_v2.c</a>
@@ -393,10 +428,10 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 : <a class="el" href="main__ap_8c.html#ab8d2d846e05038e13cfb45b8bb8f0921">main_ap.c</a>
 </li>
 <li>count_bytes()
-: <a class="el" href="pprzlog__transport_8c.html#a30ef3a54d9129b162d746534e416b718">pprzlog_transport.c</a>
-, <a class="el" href="xbee_8c.html#a435856fd593452d9648f45094d70553f">xbee.c</a>
-, <a class="el" href="ivy__transport_8c.html#a4ad680aab1ad02bac063dda7d2035bdc">ivy_transport.c</a>
+: <a class="el" href="xbee_8c.html#a435856fd593452d9648f45094d70553f">xbee.c</a>
+, <a class="el" href="pprzlog__transport_8c.html#a30ef3a54d9129b162d746534e416b718">pprzlog_transport.c</a>
 , <a class="el" href="pprz__transport_8c.html#a6b9f21b7e197f8617a1f3e82040b8933">pprz_transport.c</a>
+, <a class="el" href="ivy__transport_8c.html#a4ad680aab1ad02bac063dda7d2035bdc">ivy_transport.c</a>
 </li>
 <li>cpu_ticks_of_nsec()
 : <a class="el" href="sys__time_8h.html#ab9fdc67ec3fff3769bebcd04e7ee86c2">sys_time.h</a>
@@ -407,8 +442,11 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 <li>cpu_ticks_of_usec()
 : <a class="el" href="sys__time_8h.html#a8ef407ab9dc5065c7e7768da22bd2ab7">sys_time.h</a>
 </li>
+<li>crc_update()
+: <a class="el" href="actuators__asctec__v2__new_8c.html#af7890d457713c2a692be50c7b6c46aaa">actuators_asctec_v2_new.c</a>
+</li>
 <li>CrcUpdate()
-: <a class="el" href="stm32_2link__mcu__hw_8h.html#a1e52d32bc856d1a2afdd4b20b5294e43">link_mcu_hw.h</a>
+: <a class="el" href="lpc21_2link__mcu__hw_8h.html#a1e52d32bc856d1a2afdd4b20b5294e43">link_mcu_hw.h</a>
 </li>
 <li>create_tag()
 : <a class="el" href="exif__module_8c.html#a62dd27ed931462c0526e4632461c7acf">exif_module.c</a>
@@ -423,53 +461,53 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 : <a class="el" href="ctrl__module__demo_8c.html#a06f17c99a79d7f2f2e5670510edecb09">ctrl_module_demo.c</a>
 </li>
 <li>cv_add()
-: <a class="el" href="cv_8h.html#a2566b3260caf3b9b77136dd574086b99">cv.h</a>
-, <a class="el" href="cv_8c.html#a2566b3260caf3b9b77136dd574086b99">cv.c</a>
+: <a class="el" href="cv_8c.html#a2566b3260caf3b9b77136dd574086b99">cv.c</a>
+, <a class="el" href="cv_8h.html#a2566b3260caf3b9b77136dd574086b99">cv.h</a>
 </li>
 <li>cv_blob_locator_event()
-: <a class="el" href="cv__blob__locator_8h.html#a391703403d5b9f54b9aeb1ef368be61b">cv_blob_locator.h</a>
-, <a class="el" href="cv__blob__locator_8c.html#a391703403d5b9f54b9aeb1ef368be61b">cv_blob_locator.c</a>
+: <a class="el" href="cv__blob__locator_8c.html#a391703403d5b9f54b9aeb1ef368be61b">cv_blob_locator.c</a>
+, <a class="el" href="cv__blob__locator_8h.html#a391703403d5b9f54b9aeb1ef368be61b">cv_blob_locator.h</a>
 </li>
 <li>cv_blob_locator_func()
 : <a class="el" href="cv__blob__locator_8c.html#adb7c61f9de8919a33412b34f34cb4f02">cv_blob_locator.c</a>
 </li>
 <li>cv_blob_locator_init()
-: <a class="el" href="cv__blob__locator_8c.html#a03040f93fee504200fd409c45f488e4d">cv_blob_locator.c</a>
-, <a class="el" href="cv__blob__locator_8h.html#a03040f93fee504200fd409c45f488e4d">cv_blob_locator.h</a>
+: <a class="el" href="cv__blob__locator_8h.html#a03040f93fee504200fd409c45f488e4d">cv_blob_locator.h</a>
+, <a class="el" href="cv__blob__locator_8c.html#a03040f93fee504200fd409c45f488e4d">cv_blob_locator.c</a>
 </li>
 <li>cv_blob_locator_periodic()
-: <a class="el" href="cv__blob__locator_8h.html#a4155e79e90bf935651c760ccdfbef27b">cv_blob_locator.h</a>
-, <a class="el" href="cv__blob__locator_8c.html#a4155e79e90bf935651c760ccdfbef27b">cv_blob_locator.c</a>
+: <a class="el" href="cv__blob__locator_8c.html#a4155e79e90bf935651c760ccdfbef27b">cv_blob_locator.c</a>
+, <a class="el" href="cv__blob__locator_8h.html#a4155e79e90bf935651c760ccdfbef27b">cv_blob_locator.h</a>
 </li>
 <li>cv_blob_locator_start()
-: <a class="el" href="cv__blob__locator_8c.html#a0625acc5c17262bca58f3055fcad6c29">cv_blob_locator.c</a>
-, <a class="el" href="cv__blob__locator_8h.html#a0625acc5c17262bca58f3055fcad6c29">cv_blob_locator.h</a>
+: <a class="el" href="cv__blob__locator_8h.html#a0625acc5c17262bca58f3055fcad6c29">cv_blob_locator.h</a>
+, <a class="el" href="cv__blob__locator_8c.html#a0625acc5c17262bca58f3055fcad6c29">cv_blob_locator.c</a>
 </li>
 <li>cv_blob_locator_stop()
-: <a class="el" href="cv__blob__locator_8h.html#aec5ab0ecb64bee378c339966bcfd7443">cv_blob_locator.h</a>
-, <a class="el" href="cv__blob__locator_8c.html#aec5ab0ecb64bee378c339966bcfd7443">cv_blob_locator.c</a>
+: <a class="el" href="cv__blob__locator_8c.html#aec5ab0ecb64bee378c339966bcfd7443">cv_blob_locator.c</a>
+, <a class="el" href="cv__blob__locator_8h.html#aec5ab0ecb64bee378c339966bcfd7443">cv_blob_locator.h</a>
 </li>
 <li>cv_marker_func()
 : <a class="el" href="cv__blob__locator_8c.html#a40b1b56f4d5075902c33bf9d0d5c77e5">cv_blob_locator.c</a>
 </li>
 <li>cv_run()
-: <a class="el" href="cv_8c.html#a740dfb3335f6510c246c1b03fe3d7d5d">cv.c</a>
-, <a class="el" href="cv_8h.html#a740dfb3335f6510c246c1b03fe3d7d5d">cv.h</a>
+: <a class="el" href="cv_8h.html#a740dfb3335f6510c246c1b03fe3d7d5d">cv.h</a>
+, <a class="el" href="cv_8c.html#a740dfb3335f6510c246c1b03fe3d7d5d">cv.c</a>
 </li>
 <li>cv_window_func()
 : <a class="el" href="cv__blob__locator_8c.html#a5ccae4e7189793c8afe0f4a7a09662a2">cv_blob_locator.c</a>
 </li>
 <li>cyrf6936_event()
-: <a class="el" href="cyrf6936_8h.html#a0b25c82679dcd151cb4eb29986f796c9">cyrf6936.h</a>
-, <a class="el" href="cyrf6936_8c.html#a0b25c82679dcd151cb4eb29986f796c9">cyrf6936.c</a>
+: <a class="el" href="cyrf6936_8c.html#a0b25c82679dcd151cb4eb29986f796c9">cyrf6936.c</a>
+, <a class="el" href="cyrf6936_8h.html#a0b25c82679dcd151cb4eb29986f796c9">cyrf6936.h</a>
 </li>
 <li>cyrf6936_init()
 : <a class="el" href="cyrf6936_8c.html#a27414d1e4d63182c97357b576f05b37d">cyrf6936.c</a>
 , <a class="el" href="cyrf6936_8h.html#a27414d1e4d63182c97357b576f05b37d">cyrf6936.h</a>
 </li>
 <li>cyrf6936_multi_write()
-: <a class="el" href="cyrf6936_8c.html#aea93d334c6b5a34fd4fe091651615899">cyrf6936.c</a>
-, <a class="el" href="cyrf6936_8h.html#aea93d334c6b5a34fd4fe091651615899">cyrf6936.h</a>
+: <a class="el" href="cyrf6936_8h.html#aea93d334c6b5a34fd4fe091651615899">cyrf6936.h</a>
+, <a class="el" href="cyrf6936_8c.html#aea93d334c6b5a34fd4fe091651615899">cyrf6936.c</a>
 </li>
 <li>cyrf6936_read_block()
 : <a class="el" href="cyrf6936_8c.html#aa0db7554c0a2491d9665bd77cb95ccfc">cyrf6936.c</a>
@@ -505,7 +543,7 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 11 2015 02:02:14 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:02:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

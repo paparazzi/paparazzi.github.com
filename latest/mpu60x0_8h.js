@@ -15,8 +15,9 @@ var mpu60x0_8h =
       [ "init_status", "mpu60x0_8h.html#aaa55e9b7acf9eb2d8ac272480df23cdd", null ],
       [ "initialized", "mpu60x0_8h.html#ac312f35d88e34120302daeb0004877c3", null ],
       [ "nb_bytes", "mpu60x0_8h.html#a4aad9875c70957d588a52ebfe76a04bf", null ],
+      [ "nb_slave_init", "mpu60x0_8h.html#a6ec9f5324d5501ed8bdc1a1bcf0a5584", null ],
       [ "nb_slaves", "mpu60x0_8h.html#a686f9c24017b15cc1cf15866def7fbc7", null ],
-      [ "slaves", "mpu60x0_8h.html#a00aca6c6393f848e722c670869c86d70", null ],
+      [ "slaves", "mpu60x0_8h.html#a6facb3d9a26e53f21cf67cc5611792e7", null ],
       [ "smplrt_div", "mpu60x0_8h.html#a5b22d78bb0c75cc5d47c7c7945975081", null ]
     ] ],
     [ "MPU60X0_DEFAULT_AFS_SEL", "mpu60x0_8h.html#a012200ea8acdb75a113e0e904266c04c", null ],
@@ -25,6 +26,7 @@ var mpu60x0_8h =
     [ "MPU60X0_DEFAULT_FS_SEL", "mpu60x0_8h.html#a28cf7622a5ae3f6f389efd4ee1f6d6b6", null ],
     [ "MPU60X0_DEFAULT_INT_CFG", "mpu60x0_8h.html#a3a8d2a1bc7f3c7a8ae99deb829833e8b", null ],
     [ "MPU60X0_DEFAULT_SMPLRT_DIV", "mpu60x0_8h.html#a2f464667425fc763dadfb0ead8fa748f", null ],
+    [ "MPU60X0_I2C_NB_SLAVES", "mpu60x0_8h.html#a24c074c24854a6ad7c84c9b4ccb2583e", null ],
     [ "Mpu60x0ConfigSet", "mpu60x0_8h.html#a8cdc9a8a37dfb7224218b0a1b3ee7e9a", null ],
     [ "Mpu60x0I2cSlaveConfigure", "mpu60x0_8h.html#abff5ea211a77da615d1b58f5bf50c257", null ],
     [ "Mpu60x0ConfStatus", "mpu60x0_8h.html#aad60854879c304e3415c62b9f4e5f0a9", [

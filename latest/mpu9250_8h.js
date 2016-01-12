@@ -16,8 +16,9 @@ var mpu9250_8h =
       [ "init_status", "mpu9250_8h.html#ab6e4b811de53bd7e90b4ca9aff594d5e", null ],
       [ "initialized", "mpu9250_8h.html#afa18245a65b81dfe386fd8bdb7aa9413", null ],
       [ "nb_bytes", "mpu9250_8h.html#a80ee0c5434de57f6f25ba3bc09d50b78", null ],
+      [ "nb_slave_init", "mpu9250_8h.html#a5a3ef6764170e2bc2e25ac5f74d50735", null ],
       [ "nb_slaves", "mpu9250_8h.html#a69947f1fe40926633938b1f52ccb1d45", null ],
-      [ "slaves", "mpu9250_8h.html#ad7ee6aa9b9c31536927b958b713a0452", null ],
+      [ "slaves", "mpu9250_8h.html#ae99a93d740ab9942aae0a3d942050bad", null ],
       [ "smplrt_div", "mpu9250_8h.html#ab1ab338ddc1260c0a36bebbea83e5d63", null ]
     ] ],
     [ "MPU9250_DEFAULT_AFS_SEL", "mpu9250_8h.html#a3222bed0929b90cf347dd57ed249f345", null ],
@@ -27,6 +28,7 @@ var mpu9250_8h =
     [ "MPU9250_DEFAULT_FS_SEL", "mpu9250_8h.html#ad99ec39f5171db6a4d9b911a8bbd56cc", null ],
     [ "MPU9250_DEFAULT_INT_CFG", "mpu9250_8h.html#a14f03c86be8aa3a3ff65318999200bec", null ],
     [ "MPU9250_DEFAULT_SMPLRT_DIV", "mpu9250_8h.html#a08d2673f85a6968d624cd16d3e77b46c", null ],
+    [ "MPU9250_I2C_NB_SLAVES", "mpu9250_8h.html#a86533d677bbb1562223508b115f29f86", null ],
     [ "Mpu9250ConfigSet", "mpu9250_8h.html#a62c163eaf8e2918e26d119173cb0f7ee", null ],
     [ "Mpu9250I2cSlaveConfigure", "mpu9250_8h.html#af964a6a286319350df9d391d8efe7d21", null ],
     [ "Mpu9250ConfStatus", "mpu9250_8h.html#ae9f2a33bf06011f5752d81d20ebd0bdf", [

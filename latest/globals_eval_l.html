@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.7_devel-521-g1b64f3e</span>
+   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -304,6 +304,7 @@ $(document).ready(function(){initNavTree('globals_eval_l.html','');});
 <li>LEFT
 : <a class="el" href="actuators__asctec_8h.html#ad2db450a6c9862a4f81ba35a4d5f4f20adb45120aafd37a973140edee24708065">actuators_asctec.h</a>
 , <a class="el" href="actuators__asctec__v2_8h.html#a6a84074f57bc5110d7e301d4662c4899adb45120aafd37a973140edee24708065">actuators_asctec_v2.h</a>
+, <a class="el" href="actuators__asctec__v2__new_8h.html#a6a84074f57bc5110d7e301d4662c4899adb45120aafd37a973140edee24708065">actuators_asctec_v2_new.h</a>
 </li>
 <li>LIS302DL_RANGE_2G
 : <a class="el" href="lis302dl__regs_8h.html#a72031c26142ebe1e96c4994fecf7a608ae2580b7a0f540836133c12ede97e687c">lis302dl_regs.h</a>
@@ -338,13 +339,16 @@ $(document).ready(function(){initNavTree('globals_eval_l.html','');});
 <li>LIS_CONF_WHO_AM_I_OK
 : <a class="el" href="lis302dl_8h.html#adfa5b8dcd9381da47572aac33f99367aa78eeb4f69f69aaa62f1de65f902c4915">lis302dl.h</a>
 </li>
+<li>LOGICBASED
+: <a class="el" href="guidance__OA_8h.html#a4dac0a956aca3da3fa670abc875414d2a28efa0e77bfeccb51b3e25bc4a4f32cb">guidance_OA.h</a>
+</li>
 <li>LOST
 : <a class="el" href="formation_8h.html#a4c0e214062079ff665c54dbc682bb832a339435bd0d4a842c6107333c908a5317">formation.h</a>
 </li>
 <li>LQC11
-: <a class="el" href="nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4a7f637cfcb9990910ded6a6f84bafed9b">nav_vertical_raster.c</a>
-, <a class="el" href="nav__line_8c.html#ab8af100196e813e8f45013a015da1dc4a7f637cfcb9990910ded6a6f84bafed9b">nav_line.c</a>
+: <a class="el" href="nav__line_8c.html#ab8af100196e813e8f45013a015da1dc4a7f637cfcb9990910ded6a6f84bafed9b">nav_line.c</a>
 , <a class="el" href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5a7f637cfcb9990910ded6a6f84bafed9b">nav_line_border.c</a>
+, <a class="el" href="nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4a7f637cfcb9990910ded6a6f84bafed9b">nav_vertical_raster.c</a>
 </li>
 <li>LQC12
 : <a class="el" href="nav__line_8c.html#ab8af100196e813e8f45013a015da1dc4aca3f9b2462e0f5298f41a92f75fa11cd">nav_line.c</a>
@@ -352,24 +356,114 @@ $(document).ready(function(){initNavTree('globals_eval_l.html','');});
 , <a class="el" href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5aca3f9b2462e0f5298f41a92f75fa11cd">nav_line_border.c</a>
 </li>
 <li>LQC21
-: <a class="el" href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5a04ad51045635dee83d454860ae6b135c">nav_line_border.c</a>
-, <a class="el" href="nav__line_8c.html#ab8af100196e813e8f45013a015da1dc4a04ad51045635dee83d454860ae6b135c">nav_line.c</a>
+: <a class="el" href="nav__line_8c.html#ab8af100196e813e8f45013a015da1dc4a04ad51045635dee83d454860ae6b135c">nav_line.c</a>
+, <a class="el" href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5a04ad51045635dee83d454860ae6b135c">nav_line_border.c</a>
 , <a class="el" href="nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4a04ad51045635dee83d454860ae6b135c">nav_vertical_raster.c</a>
 </li>
 <li>LQC22
-: <a class="el" href="nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4a31099427ddf1cb13114e28c9472b3c68">nav_vertical_raster.c</a>
-, <a class="el" href="nav__line_8c.html#ab8af100196e813e8f45013a015da1dc4a31099427ddf1cb13114e28c9472b3c68">nav_line.c</a>
+: <a class="el" href="nav__line_8c.html#ab8af100196e813e8f45013a015da1dc4a31099427ddf1cb13114e28c9472b3c68">nav_line.c</a>
 , <a class="el" href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5a31099427ddf1cb13114e28c9472b3c68">nav_line_border.c</a>
+, <a class="el" href="nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4a31099427ddf1cb13114e28c9472b3c68">nav_vertical_raster.c</a>
 </li>
 <li>LR12
-: <a class="el" href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5acfcd68d903867d509a779613b2ccfba5">nav_line_border.c</a>
-, <a class="el" href="nav__line_8c.html#ab8af100196e813e8f45013a015da1dc4acfcd68d903867d509a779613b2ccfba5">nav_line.c</a>
+: <a class="el" href="nav__line_8c.html#ab8af100196e813e8f45013a015da1dc4acfcd68d903867d509a779613b2ccfba5">nav_line.c</a>
+, <a class="el" href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5acfcd68d903867d509a779613b2ccfba5">nav_line_border.c</a>
 , <a class="el" href="nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4acfcd68d903867d509a779613b2ccfba5">nav_vertical_raster.c</a>
 </li>
 <li>LR21
-: <a class="el" href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5a383219705a1e85c6f680e43d1f304f5b">nav_line_border.c</a>
-, <a class="el" href="nav__line_8c.html#ab8af100196e813e8f45013a015da1dc4a383219705a1e85c6f680e43d1f304f5b">nav_line.c</a>
+: <a class="el" href="nav__line_8c.html#ab8af100196e813e8f45013a015da1dc4a383219705a1e85c6f680e43d1f304f5b">nav_line.c</a>
 , <a class="el" href="nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4a383219705a1e85c6f680e43d1f304f5b">nav_vertical_raster.c</a>
+, <a class="el" href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5a383219705a1e85c6f680e43d1f304f5b">nav_line_border.c</a>
+</li>
+<li>LSM303D_ACC_BW_194HZ
+: <a class="el" href="lsm303d__regs_8h.html#a2820afc1fa7aad10717bc6ef4e48e292a6daf79b05f96f2866c02fffa983d5b49">lsm303d_regs.h</a>
+</li>
+<li>LSM303D_ACC_BW_362HZ
+: <a class="el" href="lsm303d__regs_8h.html#a2820afc1fa7aad10717bc6ef4e48e292a53c1072c66d0fdbb9b5ff08ceb7a7b56">lsm303d_regs.h</a>
+</li>
+<li>LSM303D_ACC_BW_50HZ
+: <a class="el" href="lsm303d__regs_8h.html#a2820afc1fa7aad10717bc6ef4e48e292a0836cbc8b754750a8f868bce54954ac0">lsm303d_regs.h</a>
+</li>
+<li>LSM303D_ACC_BW_773HZ
+: <a class="el" href="lsm303d__regs_8h.html#a2820afc1fa7aad10717bc6ef4e48e292a8b261ebe459f11c8e5b417ad4f2340f8">lsm303d_regs.h</a>
+</li>
+<li>LSM303D_ACC_RANGE_16G
+: <a class="el" href="lsm303d__regs_8h.html#aacfa69f8de4f40936505a76ba517d963a986d83dda556af5cdbf1a67975e78d57">lsm303d_regs.h</a>
+</li>
+<li>LSM303D_ACC_RANGE_2G
+: <a class="el" href="lsm303d__regs_8h.html#aacfa69f8de4f40936505a76ba517d963aefed328e18b3d27a48a389476b955d47">lsm303d_regs.h</a>
+</li>
+<li>LSM303D_ACC_RANGE_4G
+: <a class="el" href="lsm303d__regs_8h.html#aacfa69f8de4f40936505a76ba517d963a42555f8e190f1fdcb29865bd0491111a">lsm303d_regs.h</a>
+</li>
+<li>LSM303D_ACC_RANGE_6G
+: <a class="el" href="lsm303d__regs_8h.html#aacfa69f8de4f40936505a76ba517d963afbeada59f3e8713170aec52f5905a6c7">lsm303d_regs.h</a>
+</li>
+<li>LSM303D_ACC_RANGE_8G
+: <a class="el" href="lsm303d__regs_8h.html#aacfa69f8de4f40936505a76ba517d963a3622d19570d7e4832fe556624cc77e4b">lsm303d_regs.h</a>
+</li>
+<li>LSM303D_ACC_RATE_100HZ
+: <a class="el" href="lsm303d__regs_8h.html#a300ea8afd679fb7fdbb6587056960dfea7fc8a5482d78d043b570e6d1c5a49964">lsm303d_regs.h</a>
+</li>
+<li>LSM303D_ACC_RATE_12_5HZ
+: <a class="el" href="lsm303d__regs_8h.html#a300ea8afd679fb7fdbb6587056960dfeaebf55e89c0deba1d47814485ba8bab99">lsm303d_regs.h</a>
+</li>
+<li>LSM303D_ACC_RATE_1600HZ
+: <a class="el" href="lsm303d__regs_8h.html#a300ea8afd679fb7fdbb6587056960dfea3d9998fdf04df509df51737d1338c545">lsm303d_regs.h</a>
+</li>
+<li>LSM303D_ACC_RATE_200HZ
+: <a class="el" href="lsm303d__regs_8h.html#a300ea8afd679fb7fdbb6587056960dfeaa7482382123a0ec16adb066f4dd6b151">lsm303d_regs.h</a>
+</li>
+<li>LSM303D_ACC_RATE_25HZ
+: <a class="el" href="lsm303d__regs_8h.html#a300ea8afd679fb7fdbb6587056960dfea3570ff13ca44977dbd309d267a132479">lsm303d_regs.h</a>
+</li>
+<li>LSM303D_ACC_RATE_3_125HZ
+: <a class="el" href="lsm303d__regs_8h.html#a300ea8afd679fb7fdbb6587056960dfea01eb1ae0d5dfeb44a8c34f04d1f21e16">lsm303d_regs.h</a>
+</li>
+<li>LSM303D_ACC_RATE_400HZ
+: <a class="el" href="lsm303d__regs_8h.html#a300ea8afd679fb7fdbb6587056960dfea952fceaf04c601648154aacd45773c6e">lsm303d_regs.h</a>
+</li>
+<li>LSM303D_ACC_RATE_50HZ
+: <a class="el" href="lsm303d__regs_8h.html#a300ea8afd679fb7fdbb6587056960dfeaaebcd3740d51950478bcd1e531c606d5">lsm303d_regs.h</a>
+</li>
+<li>LSM303D_ACC_RATE_6_25HZ
+: <a class="el" href="lsm303d__regs_8h.html#a300ea8afd679fb7fdbb6587056960dfeac6c6fdf10f9e9e5f7076539bc0d18e88">lsm303d_regs.h</a>
+</li>
+<li>LSM303D_ACC_RATE_800HZ
+: <a class="el" href="lsm303d__regs_8h.html#a300ea8afd679fb7fdbb6587056960dfea0cb724782b15377fee2054f366028105">lsm303d_regs.h</a>
+</li>
+<li>LSM303D_ACC_RATE_OFF
+: <a class="el" href="lsm303d__regs_8h.html#a300ea8afd679fb7fdbb6587056960dfea2ab787162e192003c25fd0e0e3051c2f">lsm303d_regs.h</a>
+</li>
+<li>LSM303D_MAG_RANGE_12GAUSS
+: <a class="el" href="lsm303d__regs_8h.html#a080b9a025fcd8119c7feebfbd08c3ad0ab42ba8cea68c33d18584ea242b338a82">lsm303d_regs.h</a>
+</li>
+<li>LSM303D_MAG_RANGE_2GAUSS
+: <a class="el" href="lsm303d__regs_8h.html#a080b9a025fcd8119c7feebfbd08c3ad0a920182345025bb7d60465b5da88190c2">lsm303d_regs.h</a>
+</li>
+<li>LSM303D_MAG_RANGE_4GAUSS
+: <a class="el" href="lsm303d__regs_8h.html#a080b9a025fcd8119c7feebfbd08c3ad0a0d85704970ab694b37f6586c1fe22efc">lsm303d_regs.h</a>
+</li>
+<li>LSM303D_MAG_RANGE_8GAUSS
+: <a class="el" href="lsm303d__regs_8h.html#a080b9a025fcd8119c7feebfbd08c3ad0a330bf29ec6e5242d96d432dceca7fed5">lsm303d_regs.h</a>
+</li>
+<li>LSM303D_MAG_RATE_100HZ
+: <a class="el" href="lsm303d__regs_8h.html#a9fda91a860152e67464c934319f62f0baecddeaf9516bcc7d8d77665908634ce3">lsm303d_regs.h</a>
+</li>
+<li>LSM303D_MAG_RATE_12_5HZ
+: <a class="el" href="lsm303d__regs_8h.html#a9fda91a860152e67464c934319f62f0bacfed06dee4ecdeed4f511ac23226ce34">lsm303d_regs.h</a>
+</li>
+<li>LSM303D_MAG_RATE_25HZ
+: <a class="el" href="lsm303d__regs_8h.html#a9fda91a860152e67464c934319f62f0ba8bf4b91fea242fa2137b0c29f635f1de">lsm303d_regs.h</a>
+</li>
+<li>LSM303D_MAG_RATE_3_125HZ
+: <a class="el" href="lsm303d__regs_8h.html#a9fda91a860152e67464c934319f62f0ba3a1ecc4e1f2a3a494ecc8369dc039726">lsm303d_regs.h</a>
+</li>
+<li>LSM303D_MAG_RATE_50HZ
+: <a class="el" href="lsm303d__regs_8h.html#a9fda91a860152e67464c934319f62f0ba9124ff8e0c31a8f8e052f02e92d1c6a7">lsm303d_regs.h</a>
+</li>
+<li>LSM303D_MAG_RATE_6_25HZ
+: <a class="el" href="lsm303d__regs_8h.html#a9fda91a860152e67464c934319f62f0bad91e52631ca66bb5be469b2900337efd">lsm303d_regs.h</a>
 </li>
 <li>LSM_CONF_ACC_CTRL_REG1_A
 : <a class="el" href="lsm303dlhc_8h.html#acfdcef8558d30510f691dc2670655e24a05b53d14cf762a93b127c7b468747da7">lsm303dlhc.h</a>
@@ -402,9 +496,9 @@ $(document).ready(function(){initNavTree('globals_eval_l.html','');});
 : <a class="el" href="lsm303dlhc_8h.html#ab3e05e02f1a8eb7e4d3bfae1c18c9ea3a917f517cef07823c5e0da8daa229526c">lsm303dlhc.h</a>
 </li>
 <li>LTC1
-: <a class="el" href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5ad74fa6a689e1a6c8373a3359bba8d124">nav_line_border.c</a>
-, <a class="el" href="nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4ad74fa6a689e1a6c8373a3359bba8d124">nav_vertical_raster.c</a>
+: <a class="el" href="nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4ad74fa6a689e1a6c8373a3359bba8d124">nav_vertical_raster.c</a>
 , <a class="el" href="nav__line_8c.html#ab8af100196e813e8f45013a015da1dc4ad74fa6a689e1a6c8373a3359bba8d124">nav_line.c</a>
+, <a class="el" href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5ad74fa6a689e1a6c8373a3359bba8d124">nav_line_border.c</a>
 </li>
 <li>LTC2
 : <a class="el" href="nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4a8b5deafb5a78d799c0691bef43de80ce">nav_vertical_raster.c</a>
@@ -417,7 +511,7 @@ $(document).ready(function(){initNavTree('globals_eval_l.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 11 2015 02:02:15 for Paparazzi UAS by
+    <li class="footer">Generated on Mon Jan 11 2016 14:02:31 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>
