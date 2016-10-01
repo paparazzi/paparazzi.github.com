@@ -7,5 +7,6 @@ var colorfilter_8h =
     [ "color_cr_max", "colorfilter_8h.html#a178c4572aced8af31538a036d2d1c5df", null ],
     [ "color_cr_min", "colorfilter_8h.html#a39149da1c7d12899680335e4cc339499", null ],
     [ "color_lum_max", "colorfilter_8h.html#a8546349fa41cd2a0fa906119990c65cf", null ],
-    [ "color_lum_min", "colorfilter_8h.html#a52291a7a5c10d56a832a7b6fcaa66c43", null ]
+    [ "color_lum_min", "colorfilter_8h.html#a52291a7a5c10d56a832a7b6fcaa66c43", null ],
+    [ "listener", "colorfilter_8h.html#a1cd78b5508e71a82956808eba675122b", null ]
 ];

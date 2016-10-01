@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -164,13 +164,13 @@ Variables</h2></td></tr>
 <div class="line">    static <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> last;         <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">\</a></div>
 <div class="line"><a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">    uint32_t</a> now = <a class="code" href="LPC21xx_8h.html#aa76826c11cd21e377f06125859f81e24">T0CR2</a>;         <a class="code" href="icp__scale_8h.html#a715463b780770a9f914ab577f88cab7a">\</a></div>
 <div class="line"><a class="code" href="icp__scale_8h.html#a715463b780770a9f914ab577f88cab7a">    pulse_len</a> = now - last;         \</div>
-<div class="line">    last = now;             <a class="code" href="linux_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449">\</a></div>
-<div class="line"><a class="code" href="linux_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449">    LED_TOGGLE</a>(2);            \</div>
+<div class="line">    last = now;             <a class="code" href="chibios_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449">\</a></div>
+<div class="line"><a class="code" href="chibios_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449">    LED_TOGGLE</a>(2);            \</div>
 <div class="line">  }</div>
-<div class="ttc" id="linux_2led__hw_8h_html_afd0bf6b0eebb00641365dc389a9fc449"><div class="ttname"><a href="linux_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449">LED_TOGGLE</a></div><div class="ttdeci">#define LED_TOGGLE(i)</div><div class="ttdef"><b>Definition:</b> <a href="linux_2led__hw_8h_source.html#l00044">led_hw.h:44</a></div></div>
 <div class="ttc" id="LPC21xx_8h_html_aa76826c11cd21e377f06125859f81e24"><div class="ttname"><a href="LPC21xx_8h.html#aa76826c11cd21e377f06125859f81e24">T0CR2</a></div><div class="ttdeci">#define T0CR2</div><div class="ttdef"><b>Definition:</b> <a href="LPC21xx_8h_source.html#l00063">LPC21xx.h:63</a></div></div>
 <div class="ttc" id="types_8h_html_a06896e8c53f721507066c079052171f8"><div class="ttname"><a href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></div><div class="ttdeci">unsigned long uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00018">types.h:18</a></div></div>
 <div class="ttc" id="icp__scale_8h_html_a715463b780770a9f914ab577f88cab7a"><div class="ttname"><a href="icp__scale_8h.html#a715463b780770a9f914ab577f88cab7a">pulse_len</a></div><div class="ttdeci">volatile uint32_t pulse_len</div><div class="ttdef"><b>Definition:</b> <a href="icp__scale_8h_source.html#l00011">icp_scale.h:11</a></div></div>
+<div class="ttc" id="chibios_2led__hw_8h_html_afd0bf6b0eebb00641365dc389a9fc449"><div class="ttname"><a href="chibios_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449">LED_TOGGLE</a></div><div class="ttdeci">#define LED_TOGGLE(i)</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2led__hw_8h_source.html#l00051">led_hw.h:51</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="icp__scale_8h_source.html#l00022">22</a> of file <a class="el" href="icp__scale_8h_source.html">icp_scale.h</a>.</p>
 
@@ -274,7 +274,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_3f7617cb4a5e4fe5cc816b7b3bbdea3a.html">lpc21</a></li><li class="navelem"><a class="el" href="icp__scale_8h.html">icp_scale.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:35 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:38 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

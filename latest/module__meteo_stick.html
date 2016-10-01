@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: Meteo sensor board from Enac (absolute and differential pressure, temperature, humidity) aka Meteo Stick</title>
+<title>Paparazzi UAS: meteo_stick module</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -100,10 +100,11 @@ $(document).ready(function(){initNavTree('module__meteo_stick.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Meteo sensor board from Enac (absolute and differential pressure, temperature, humidity) aka Meteo Stick </div>  </div>
+<div class="title">meteo_stick module </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Module XML file: <code>meteo_stick.xml</code> </p>
+<div class="textblock"><p><b>Meteo sensor board from Enac (absolute and differential pressure, temperature, humidity) aka Meteo Stick.</b></p>
+<p><b></b></p>
 <p>Raw meteo data:</p><ul>
 <li>Pressure (absolute and differential) in ADC (ADS1220)</li>
 <li>Temperature in ADC (ADS1220)</li>
@@ -114,16 +115,15 @@ $(document).ready(function(){initNavTree('module__meteo_stick.html','');});
 <p>When using LOG_MS flag, raw and calibrated pressure, temperature and humidity data are stored with raw gps data (position, speed, time, status). Field names and units are in the first line of the log file.</p>
 <h1><a class="anchor" id="module_load_example__meteo_stick"></a>
 Example for airframe file</h1>
-<p>This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;modules&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;load name=&quot;meteo_stick.xml&quot;&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    &lt;configure name=&quot;MS_SPI_DEV&quot; value=&quot;SPIX&quot; /&gt;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    &lt;configure name=&quot;MS_PRESSURE_SLAVE_IDX&quot; value=&quot;X&quot; /&gt;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    &lt;configure name=&quot;MS_DIFF_PRESSURE_SLAVE_IDX&quot; value=&quot;X&quot; /&gt;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    &lt;configure name=&quot;MS_TEMPERATURE_SLAVE_IDX&quot; value=&quot;X&quot; /&gt;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    &lt;configure name=&quot;MS_HUMIDITY_PWM_INPUT&quot; value=&quot;PWM_INPUTX&quot; /&gt;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    &lt;configure name=&quot;MS_EEPROM_SLAVE_IDX&quot; value=&quot;X&quot; /&gt;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  &lt;/load&gt;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;&lt;/modules&gt;</div>
+<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;pwm_meas&quot;/&gt;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&lt;module name=&quot;meteo_stick&quot;&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;configure name=&quot;MS_SPI_DEV&quot; value=&quot;SPIX&quot; /&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;configure name=&quot;MS_PRESSURE_SLAVE_IDX&quot; value=&quot;X&quot; /&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;configure name=&quot;MS_DIFF_PRESSURE_SLAVE_IDX&quot; value=&quot;X&quot; /&gt;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  &lt;configure name=&quot;MS_TEMPERATURE_SLAVE_IDX&quot; value=&quot;X&quot; /&gt;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  &lt;configure name=&quot;MS_HUMIDITY_PWM_INPUT&quot; value=&quot;PWM_INPUTX&quot; /&gt;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  &lt;configure name=&quot;MS_EEPROM_SLAVE_IDX&quot; value=&quot;X&quot; /&gt;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__meteo_stick"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="configure"></a>
@@ -170,6 +170,11 @@ Airframe file section</h2>
  Description: Scale factor of the differential pressure sensor (only used if EEPROM is not used)</li>
 </ul>
 </li>
+</ul>
+<h1><a class="anchor" id="dependencies__meteo_stick"></a>
+Dependencies</h1>
+<ul>
+<li><a class="el" href="module__pwm_meas.html">pwm_meas module</a> </li>
 </ul>
 <h1><a class="anchor" id="functions__meteo_stick"></a>
 Module functions</h1>
@@ -268,10 +273,7 @@ Raw meteo_stick.xml file:</h2>
 <div class="line">  &lt;periodic fun=&quot;meteo_stick_periodic()&quot; freq=&quot;10&quot; autorun=&quot;TRUE&quot;/&gt;</div>
 <div class="line">  &lt;event fun=&quot;meteo_stick_event()&quot;/&gt;</div>
 <div class="line">  &lt;makefile target=&quot;ap&quot;&gt;</div>
-<div class="line">    &lt;raw&gt;</div>
-<div class="line">MS_SPI_DEV_UPPER=$(shell echo $(MS_SPI_DEV) | tr a-z A-Z)</div>
-<div class="line">MS_SPI_DEV_LOWER=$(shell echo $(MS_SPI_DEV) | tr A-Z a-z)</div>
-<div class="line">    &lt;/raw&gt;</div>
+<div class="line">    &lt;configure name=&quot;MS_SPI_DEV&quot; case=&quot;upper|lower&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;meteo_stick.c&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;meteo_stick_calib.c&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;ads1220.c&quot; dir=&quot;peripherals&quot;/&gt;</div>
@@ -298,7 +300,7 @@ Raw meteo_stick.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:09 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:19 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

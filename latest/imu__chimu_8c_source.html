@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -264,7 +264,7 @@ $(document).ready(function(){initNavTree('imu__chimu_8c_source.html','');});
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <a class="code" href="imu__chimu_8h.html#structCHIMU__PARSER__DATA">CHIMU_PARSER_DATA</a>   *pstData)   <span class="comment">/* resulting data           */</span></div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;{</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="keywordtype">char</span>           bUpdate = <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> bUpdate = 0;</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordflow">switch</span> (pstData-&gt;<a class="code" href="imu__chimu_8h.html#a92e079e82b11acf6ed572433f7b8ee2e">m_State</a>) {</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="imu__chimu_8c.html#a9e9224d318501e9d591d98484f6d2078">CHIMU_STATE_MACHINE_START</a>:  <span class="comment">// Waiting for start character 0xAE</span></div>
@@ -275,7 +275,7 @@ $(document).ready(function(){initNavTree('imu__chimu_8c_source.html','');});
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;      } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        ;;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;      }</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      bUpdate = <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      bUpdate = 0;</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="imu__chimu_8c.html#a5b6662f78e03e8ff3f6bae8c8442b98c">CHIMU_STATE_MACHINE_HEADER2</a>:  <span class="comment">// Waiting for second header character 0xAE</span></div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      <span class="keywordflow">if</span> (btData == 0xAE) {</div>
@@ -325,14 +325,14 @@ $(document).ready(function(){initNavTree('imu__chimu_8c_source.html','');});
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                                               (<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>)(pstData-&gt;<a class="code" href="imu__chimu_8h.html#a43d43d17193b761d1d28f038a647f0b1">m_MsgLen</a>) + 5)) &amp; 0xFF);</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        pstData-&gt;<a class="code" href="imu__chimu_8h.html#a92e079e82b11acf6ed572433f7b8ee2e">m_State</a> = <a class="code" href="imu__chimu_8c.html#a9c3a30f300901a3bd0aa68191ae75009">CHIMU_STATE_MACHINE_XSUM</a>;</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;      }</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="imu__chimu_8c.html#a9c3a30f300901a3bd0aa68191ae75009">CHIMU_STATE_MACHINE_XSUM</a>:  <span class="comment">// Verify</span></div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;      pstData-&gt;<a class="code" href="imu__chimu_8h.html#a7edc1ad97b86deb4fca098c1379c666f">m_ReceivedChecksum</a> = btData;</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;      pstData-&gt;<a class="code" href="imu__chimu_8h.html#a378979aaa8b40d23822d346d3d2ba956">m_FullMessage</a>[pstData-&gt;<a class="code" href="imu__chimu_8h.html#ad231d33b8e3ac8f3f33deb853d49a9e8">m_Index</a>++] = btData;</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;      <span class="keywordflow">if</span> (pstData-&gt;<a class="code" href="imu__chimu_8h.html#a16117144980855bff670f5b42958bd1b">m_Checksum</a> != pstData-&gt;<a class="code" href="imu__chimu_8h.html#a7edc1ad97b86deb4fca098c1379c666f">m_ReceivedChecksum</a>) {</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        bUpdate = <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        bUpdate = 0;</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="comment">//BuiltInTest(BIT_COM_UART_RECEIPTFAIL, BIT_FAIL);</span></div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;      } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="comment">//Xsum passed, go parse it.</span></div>
@@ -392,7 +392,7 @@ $(document).ready(function(){initNavTree('imu__chimu_8c_source.html','');});
 <div class="line"><a name="l00283"></a><span class="lineno"><a class="line" href="imu__chimu_8c.html#acda06f9abeac46aac0c37fe9faafcb5f">  283</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="imu__chimu_8c.html#acda06f9abeac46aac0c37fe9faafcb5f">BitTest</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> input, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> n)</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;{</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  <span class="comment">//Test a bit in n and return TRUE or FALSE</span></div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  <span class="keywordflow">if</span> (input &amp; (1 &lt;&lt; n)) { <span class="keywordflow">return</span> <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>; } <span class="keywordflow">else</span> { <span class="keywordflow">return</span> <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>; }</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  <span class="keywordflow">if</span> (input &amp; (1 &lt;&lt; n)) { <span class="keywordflow">return</span> 1; } <span class="keywordflow">else</span> { <span class="keywordflow">return</span> 0; }</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;}</div>
 <div class="line"><a name="l00288"></a><span class="lineno"><a class="line" href="imu__chimu_8h.html#a18b09515aee60d52a79df0c4b05d934d">  288</a></span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="imu__chimu_8c.html#a18b09515aee60d52a79df0c4b05d934d">CHIMU_ProcessMessage</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *pMsgID __attribute__((unused)), <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *pPayloadData,</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                                   <a class="code" href="imu__chimu_8h.html#structCHIMU__PARSER__DATA">CHIMU_PARSER_DATA</a> *pstData)</div>
@@ -416,7 +416,7 @@ $(document).ready(function(){initNavTree('imu__chimu_8c_source.html','');});
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      pstData-&gt;<a class="code" href="imu__chimu_8h.html#af97745483775ecdd33ba5611397840ad">gCHIMU_SW_SerialNumber</a> = (pPayloadData[CHIMU_index] &lt;&lt; 8) &amp; (0x0000FF00); CHIMU_index++;</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;      pstData-&gt;<a class="code" href="imu__chimu_8h.html#af97745483775ecdd33ba5611397840ad">gCHIMU_SW_SerialNumber</a> += pPayloadData[CHIMU_index]; CHIMU_index++;</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="imu__chimu_8h.html#a2ee87eb796fea5389cb6b48c3b43307b">CHIMU_Msg_1_IMU_Raw</a>:</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      <span class="keywordflow">break</span>;</div>
@@ -443,7 +443,7 @@ $(document).ready(function(){initNavTree('imu__chimu_8c_source.html','');});
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;      memmove(&amp;pstData-&gt;<a class="code" href="imu__chimu_8h.html#a64304b3efe76f0981112416b26c3bff3">m_sensor</a>.<a class="code" href="imu__chimu_8h.html#a2edb0a07bba97c473e518f19eefb7949">spare1</a>, &amp;pPayloadData[CHIMU_index], <span class="keyword">sizeof</span>(pstData-&gt;<a class="code" href="imu__chimu_8h.html#a64304b3efe76f0981112416b26c3bff3">m_sensor</a>.<a class="code" href="imu__chimu_8h.html#a2edb0a07bba97c473e518f19eefb7949">spare1</a>));</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;      CHIMU_index += (<span class="keyword">sizeof</span>(pstData-&gt;<a class="code" href="imu__chimu_8h.html#a64304b3efe76f0981112416b26c3bff3">m_sensor</a>.<a class="code" href="imu__chimu_8h.html#a2edb0a07bba97c473e518f19eefb7949">spare1</a>));</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;      pstData-&gt;<a class="code" href="imu__chimu_8h.html#a64304b3efe76f0981112416b26c3bff3">m_sensor</a>.<a class="code" href="imu__chimu_8h.html#a2edb0a07bba97c473e518f19eefb7949">spare1</a> = <a class="code" href="imu__chimu_8h.html#a5bff2dac690c44d95339377f2074cf31">FloatSwap</a>(pstData-&gt;<a class="code" href="imu__chimu_8h.html#a64304b3efe76f0981112416b26c3bff3">m_sensor</a>.<a class="code" href="imu__chimu_8h.html#a2edb0a07bba97c473e518f19eefb7949">spare1</a>);</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;      <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="imu__chimu_8h.html#a8a4be5b63d1eccd8d0bb95535413dd21">CHIMU_Msg_3_IMU_Attitude</a>:</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;      <span class="comment">//Attitude message data from CHIMU</span></div>
@@ -519,7 +519,7 @@ $(document).ready(function(){initNavTree('imu__chimu_8c_source.html','');});
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;        <span class="comment">//TODO:  Log BIT that indicates IMU message incoming failed (maybe SPI error?)</span></div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;      }</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;      <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="imu__chimu_8h.html#a90fd2842e956c118d22f1ac16c85b583">CHIMU_Msg_4_BiasSF</a>:</div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="imu__chimu_8h.html#a2356308584aa9e6e03662ac9b61ae97c">CHIMU_Msg_5_BIT</a>:</div>
@@ -535,10 +535,10 @@ $(document).ready(function(){initNavTree('imu__chimu_8c_source.html','');});
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="imu__chimu_8h.html#aa1053e95922ef44249abdc352ec7971b">CHIMU_Msg_15_SFCheck</a>:</div>
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;      <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;  }</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;  <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;}</div>
 <div class="ttc" id="imu__chimu_8h_html_a33ed9c32c88ed20e755d09a94bda5e08"><div class="ttname"><a href="imu__chimu_8h.html#a33ed9c32c88ed20e755d09a94bda5e08">CHIMU_attitude_data::q</a></div><div class="ttdeci">CHIMU_Quaternion q</div><div class="ttdef"><b>Definition:</b> <a href="imu__chimu_8h_source.html#l00136">imu_chimu.h:136</a></div></div>
 <div class="ttc" id="imu__chimu_8c_html_a2c788af1398c314b3985546d7177df54"><div class="ttname"><a href="imu__chimu_8c.html#a2c788af1398c314b3985546d7177df54">UpdateCRC</a></div><div class="ttdeci">static unsigned long UpdateCRC(unsigned long CRC_acc, void *data, unsigned long data_len)</div><div class="ttdef"><b>Definition:</b> <a href="imu__chimu_8c_source.html#l00050">imu_chimu.c:50</a></div></div>
@@ -569,7 +569,6 @@ $(document).ready(function(){initNavTree('imu__chimu_8c_source.html','');});
 <div class="ttc" id="imu__chimu_8h_html_a6b00169ada166cb28e12bb176a0c4f46"><div class="ttname"><a href="imu__chimu_8h.html#a6b00169ada166cb28e12bb176a0c4f46">CHIMU_Msg_11_Res</a></div><div class="ttdeci">#define CHIMU_Msg_11_Res</div><div class="ttdef"><b>Definition:</b> <a href="imu__chimu_8h_source.html#l00082">imu_chimu.h:82</a></div></div>
 <div class="ttc" id="imu__chimu_8c_html_aa0df1ea95e60894cb1747257da38f17f"><div class="ttname"><a href="imu__chimu_8c.html#aa0df1ea95e60894cb1747257da38f17f">GetEulersFromQuat</a></div><div class="ttdeci">static CHIMU_attitude_data GetEulersFromQuat(CHIMU_attitude_data attitude)</div><div class="ttdef"><b>Definition:</b> <a href="imu__chimu_8c_source.html#l00245">imu_chimu.c:245</a></div></div>
 <div class="ttc" id="imu__chimu_8h_html_structCHIMU__attitude__data"><div class="ttname"><a href="imu__chimu_8h.html#structCHIMU__attitude__data">CHIMU_attitude_data</a></div><div class="ttdef"><b>Definition:</b> <a href="imu__chimu_8h_source.html#l00134">imu_chimu.h:134</a></div></div>
-<div class="ttc" id="std_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> <a href="std_8h_source.html#l00005">std.h:5</a></div></div>
 <div class="ttc" id="imu__chimu_8c_html_acda06f9abeac46aac0c37fe9faafcb5f"><div class="ttname"><a href="imu__chimu_8c.html#acda06f9abeac46aac0c37fe9faafcb5f">BitTest</a></div><div class="ttdeci">static unsigned char BitTest(unsigned char input, unsigned char n)</div><div class="ttdef"><b>Definition:</b> <a href="imu__chimu_8c_source.html#l00283">imu_chimu.c:283</a></div></div>
 <div class="ttc" id="imu__chimu_8h_html_a0a62dec0f8bc2b7633ba0699fac00510"><div class="ttname"><a href="imu__chimu_8h.html#a0a62dec0f8bc2b7633ba0699fac00510">CHIMU_sensor_data::rate</a></div><div class="ttdeci">float rate[3]</div><div class="ttdef"><b>Definition:</b> <a href="imu__chimu_8h_source.html#l00149">imu_chimu.h:149</a></div></div>
 <div class="ttc" id="imu__chimu_8c_html_a18b09515aee60d52a79df0c4b05d934d"><div class="ttname"><a href="imu__chimu_8c.html#a18b09515aee60d52a79df0c4b05d934d">CHIMU_ProcessMessage</a></div><div class="ttdeci">unsigned char CHIMU_ProcessMessage(unsigned char *pMsgID, unsigned char *pPayloadData, CHIMU_PARSER_DATA *pstData)</div><div class="ttdef"><b>Definition:</b> <a href="imu__chimu_8c_source.html#l00288">imu_chimu.c:288</a></div></div>
@@ -621,7 +620,7 @@ $(document).ready(function(){initNavTree('imu__chimu_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="imu__chimu_8c.html">imu_chimu.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:23 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:24 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

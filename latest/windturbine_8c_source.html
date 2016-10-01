@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -138,13 +138,13 @@ $(document).ready(function(){initNavTree('windturbine_8c_source.html','');});
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="uart_8h.html">mcu_periph/uart.h</a>&quot;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;messages.h&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;pprzlink/messages.h&quot;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="downlink_8h.html">subsystems/datalink/downlink.h</a>&quot;</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="windturbine_8h.html#a44b819ec52bc8f9fe212c89113e2b835">   41</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="windturbine_8c.html#a44b819ec52bc8f9fe212c89113e2b835">windturbine_periodic</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="core_2trigger__ext_8c.html#a532012d240d0deb9b8ebd250bb8e58da">trigger_ext_valid</a> == <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="core_2trigger__ext_8c.html#a6626bfaa95d889c188bff61bcd649cbf">trigger_ext_valid</a> == <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>) {</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="sim__ap_8c.html#ae48dcb18ba9b663b88a344e66536aa14">ac_id</a> = 0;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> turb_id = TURBINE_ID;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> sync_itow, cycle_time;</div>
@@ -157,26 +157,25 @@ $(document).ready(function(){initNavTree('windturbine_8c_source.html','');});
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                      &amp;turb_id,</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                      &amp;sync_itow,</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                      &amp;cycle_time);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="core_2trigger__ext_8c.html#a532012d240d0deb9b8ebd250bb8e58da">trigger_ext_valid</a> = <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="core_2trigger__ext_8c.html#a6626bfaa95d889c188bff61bcd649cbf">trigger_ext_valid</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="ttc" id="sim__ap_8c_html_ae48dcb18ba9b663b88a344e66536aa14"><div class="ttname"><a href="sim__ap_8c.html#ae48dcb18ba9b663b88a344e66536aa14">ac_id</a></div><div class="ttdeci">uint8_t ac_id</div><div class="ttdef"><b>Definition:</b> <a href="sim__ap_8c_source.html#l00047">sim_ap.c:47</a></div></div>
+<div class="ttc" id="sim__ap_8c_html_ae48dcb18ba9b663b88a344e66536aa14"><div class="ttname"><a href="sim__ap_8c.html#ae48dcb18ba9b663b88a344e66536aa14">ac_id</a></div><div class="ttdeci">uint8_t ac_id</div><div class="ttdef"><b>Definition:</b> <a href="sim__ap_8c_source.html#l00046">sim_ap.c:46</a></div></div>
 <div class="ttc" id="uart_8h_html"><div class="ttname"><a href="uart_8h.html">uart.h</a></div><div class="ttdoc">arch independent UART (Universal Asynchronous Receiver/Transmitter) API </div></div>
-<div class="ttc" id="sys__time_8h_html_ab67b78f01783839deb76623ff83981dd"><div class="ttname"><a href="sys__time_8h.html#ab67b78f01783839deb76623ff83981dd">msec_of_sys_time_ticks</a></div><div class="ttdeci">static uint32_t msec_of_sys_time_ticks(uint32_t ticks)</div><div class="ttdef"><b>Definition:</b> <a href="sys__time_8h_source.html#l00153">sys_time.h:153</a></div></div>
+<div class="ttc" id="sys__time_8h_html_ab67b78f01783839deb76623ff83981dd"><div class="ttname"><a href="sys__time_8h.html#ab67b78f01783839deb76623ff83981dd">msec_of_sys_time_ticks</a></div><div class="ttdeci">static uint32_t msec_of_sys_time_ticks(uint32_t ticks)</div><div class="ttdef"><b>Definition:</b> <a href="sys__time_8h_source.html#l00158">sys_time.h:158</a></div></div>
 <div class="ttc" id="windturbine_8h_html"><div class="ttname"><a href="windturbine_8h.html">windturbine.h</a></div><div class="ttdoc">This measures a trigger pulse length (e.g. </div></div>
-<div class="ttc" id="core_2trigger__ext_8c_html_a532012d240d0deb9b8ebd250bb8e58da"><div class="ttname"><a href="core_2trigger__ext_8c.html#a532012d240d0deb9b8ebd250bb8e58da">trigger_ext_valid</a></div><div class="ttdeci">volatile bool_t trigger_ext_valid</div><div class="ttdef"><b>Definition:</b> <a href="core_2trigger__ext_8c_source.html#l00035">trigger_ext.c:35</a></div></div>
-<div class="ttc" id="std_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> <a href="std_8h_source.html#l00005">std.h:5</a></div></div>
 <div class="ttc" id="std_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> <a href="std_8h_source.html#l00004">std.h:4</a></div></div>
 <div class="ttc" id="sys__time_8h_html"><div class="ttname"><a href="sys__time_8h.html">sys_time.h</a></div><div class="ttdoc">Architecture independent timing functions. </div></div>
 <div class="ttc" id="gps_8h_html"><div class="ttname"><a href="gps_8h.html">gps.h</a></div><div class="ttdoc">Device independent GPS code (interface) </div></div>
 <div class="ttc" id="types_8h_html_a06896e8c53f721507066c079052171f8"><div class="ttname"><a href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></div><div class="ttdeci">unsigned long uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00018">types.h:18</a></div></div>
-<div class="ttc" id="downlink_8h_html_a891b19a3eba08208d4e550aa6c6188dd"><div class="ttname"><a href="downlink_8h.html#a891b19a3eba08208d4e550aa6c6188dd">DefaultChannel</a></div><div class="ttdeci">#define DefaultChannel</div><div class="ttdoc">SITL. </div><div class="ttdef"><b>Definition:</b> <a href="downlink_8h_source.html#l00079">downlink.h:79</a></div></div>
+<div class="ttc" id="core_2trigger__ext_8c_html_a6626bfaa95d889c188bff61bcd649cbf"><div class="ttname"><a href="core_2trigger__ext_8c.html#a6626bfaa95d889c188bff61bcd649cbf">trigger_ext_valid</a></div><div class="ttdeci">volatile bool trigger_ext_valid</div><div class="ttdef"><b>Definition:</b> <a href="core_2trigger__ext_8c_source.html#l00035">trigger_ext.c:35</a></div></div>
+<div class="ttc" id="downlink_8h_html_a891b19a3eba08208d4e550aa6c6188dd"><div class="ttname"><a href="downlink_8h.html#a891b19a3eba08208d4e550aa6c6188dd">DefaultChannel</a></div><div class="ttdeci">#define DefaultChannel</div><div class="ttdoc">SITL. </div><div class="ttdef"><b>Definition:</b> <a href="downlink_8h_source.html#l00084">downlink.h:84</a></div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
-<div class="ttc" id="downlink_8h_html_a028b405f95cecb4af565b17c8ee71d80"><div class="ttname"><a href="downlink_8h.html#a028b405f95cecb4af565b17c8ee71d80">DefaultDevice</a></div><div class="ttdeci">#define DefaultDevice</div><div class="ttdef"><b>Definition:</b> <a href="downlink_8h_source.html#l00083">downlink.h:83</a></div></div>
+<div class="ttc" id="downlink_8h_html_a028b405f95cecb4af565b17c8ee71d80"><div class="ttname"><a href="downlink_8h.html#a028b405f95cecb4af565b17c8ee71d80">DefaultDevice</a></div><div class="ttdeci">#define DefaultDevice</div><div class="ttdef"><b>Definition:</b> <a href="downlink_8h_source.html#l00088">downlink.h:88</a></div></div>
 <div class="ttc" id="core_2trigger__ext_8h_html"><div class="ttname"><a href="core_2trigger__ext_8h.html">trigger_ext.h</a></div><div class="ttdoc">Measure external trigger pulse at PPM input (default). </div></div>
 <div class="ttc" id="downlink_8h_html"><div class="ttname"><a href="downlink_8h.html">downlink.h</a></div><div class="ttdoc">Common code for AP and FBW telemetry. </div></div>
-<div class="ttc" id="gps_8c_html_ad68ada7274989a4c9f08bc06d74ee5bd"><div class="ttname"><a href="gps_8c.html#ad68ada7274989a4c9f08bc06d74ee5bd">gps_tow_from_sys_ticks</a></div><div class="ttdeci">uint32_t gps_tow_from_sys_ticks(uint32_t sys_ticks)</div><div class="ttdoc">Convert time in sys_time ticks to GPS time of week. </div><div class="ttdef"><b>Definition:</b> <a href="gps_8c_source.html#l00174">gps.c:174</a></div></div>
+<div class="ttc" id="gps_8c_html_ad68ada7274989a4c9f08bc06d74ee5bd"><div class="ttname"><a href="gps_8c.html#ad68ada7274989a4c9f08bc06d74ee5bd">gps_tow_from_sys_ticks</a></div><div class="ttdeci">uint32_t gps_tow_from_sys_ticks(uint32_t sys_ticks)</div><div class="ttdoc">Convert time in sys_time ticks to GPS time of week. </div><div class="ttdef"><b>Definition:</b> <a href="gps_8c_source.html#l00288">gps.c:288</a></div></div>
 <div class="ttc" id="core_2trigger__ext_8c_html_ac7a4064196d14ce7f94d69bd6fce5a8c"><div class="ttname"><a href="core_2trigger__ext_8c.html#ac7a4064196d14ce7f94d69bd6fce5a8c">trigger_delta_t0</a></div><div class="ttdeci">uint32_t trigger_delta_t0</div><div class="ttdef"><b>Definition:</b> <a href="core_2trigger__ext_8c_source.html#l00034">trigger_ext.c:34</a></div></div>
 <div class="ttc" id="trig__ext__hw_8c_html_a1bff3aeb61914b47d6d91311bccb1578"><div class="ttname"><a href="trig__ext__hw_8c.html#a1bff3aeb61914b47d6d91311bccb1578">trigger_t0</a></div><div class="ttdeci">uint32_t trigger_t0</div><div class="ttdef"><b>Definition:</b> <a href="trig__ext__hw_8c_source.html#l00008">trig_ext_hw.c:8</a></div></div>
 <div class="ttc" id="windturbine_8c_html_a44b819ec52bc8f9fe212c89113e2b835"><div class="ttname"><a href="windturbine_8c.html#a44b819ec52bc8f9fe212c89113e2b835">windturbine_periodic</a></div><div class="ttdeci">void windturbine_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="windturbine_8c_source.html#l00041">windturbine.c:41</a></div></div>
@@ -186,7 +185,7 @@ $(document).ready(function(){initNavTree('windturbine_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_dcc9af59dc35b42e32db80b18066e136.html">meteo</a></li><li class="navelem"><a class="el" href="windturbine_8c.html">windturbine.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:25 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:26 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

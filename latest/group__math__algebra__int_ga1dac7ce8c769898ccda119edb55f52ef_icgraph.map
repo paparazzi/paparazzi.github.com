@@ -1,24 +1,29 @@
 <map id="int32_quat_norm" name="int32_quat_norm">
-<area shape="rect" id="node2" href="$group__math__algebra__int.html#ga00267cacb602945fc6cfb054492460fa" title="normalize a quaternion inplace " alt="" coords="184,188,344,215"/>
-<area shape="rect" id="node3" href="$stabilization__attitude__quat__indi_8c.html#aae5fe27afd6cf48e9beeb6aa4c6cfc6e" title="stabilization_attitude_run" alt="" coords="392,5,575,32"/>
-<area shape="rect" id="node4" href="$stabilization__attitude__ref__quat__int_8h.html#a20f0b5f27a66365eac7b4ed8af49960c" title="Propagate reference. " alt="" coords="406,57,561,98"/>
-<area shape="rect" id="node15" href="$group__math__algebra__int.html#ga375ede60f5f4419d92fa4cb901c6691a" title="Composition (multiplication) of two quaternions with normalization. " alt="" coords="396,122,571,163"/>
-<area shape="rect" id="node16" href="$ahrs__int__cmpl__quat_8h.html#a954df43f45ac2f8c6e59319c25ce607a" title="Hard reset yaw to a heading. " alt="" coords="623,221,805,248"/>
-<area shape="rect" id="node20" href="$group__math__algebra__int.html#ga6690b9bed5e7eb9f5c3ee6db7951e09b" title="Composition (multiplication) of two quaternions with normalization. " alt="" coords="404,239,563,281"/>
-<area shape="rect" id="node21" href="$group__math__algebra__int.html#ga55444a63fb6a2dcbec76a23443aea1de" title="Composition (multiplication) of two quaternions with normalization. " alt="" coords="404,305,563,346"/>
-<area shape="rect" id="node22" href="$ahrs__int__cmpl__quat_8h.html#af157b638d627a07ce3b8c86436c0ce4c" title="ahrs_icq_propagate" alt="" coords="640,368,788,395"/>
-<area shape="rect" id="node5" href="$stabilization__attitude__quat__int_8c.html#aae5fe27afd6cf48e9beeb6aa4c6cfc6e" title="stabilization_attitude_run" alt="" coords="623,64,805,91"/>
-<area shape="rect" id="node6" href="$guidance__flip_8h.html#a341f66aaa1a6e736e980ae5cccb3c0f5" title="guidance_flip_run" alt="" coords="876,13,1009,40"/>
-<area shape="rect" id="node7" href="$guidance__h_8h.html#ac4cf6da90a4278b4d0b2e4f227b33f2c" title="guidance_h_run" alt="" coords="1080,39,1203,65"/>
-<area shape="rect" id="node14" href="$guidance__opticflow__hover_8c.html#abd0fff1bd18e355435e77a841b0a5ea0" title="Main guidance loop. " alt="" coords="853,115,1032,141"/>
-<area shape="rect" id="node8" href="$rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="1251,39,1385,65"/>
-<area shape="rect" id="node9" href="$rotorcraft_2main__fbw_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="1433,39,1544,65"/>
-<area shape="rect" id="node10" href="$rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="1592,39,1755,65"/>
-<area shape="rect" id="node11" href="$fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1815,13,1869,40"/>
-<area shape="rect" id="node12" href="$main__chibios__libopencm3_8c.html#ad648a546fe66cd5f9328f33221a40c64" title="pprz_thd" alt="" coords="1803,64,1881,91"/>
-<area shape="rect" id="node13" href="$main__chibios__libopencm3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1929,64,1984,91"/>
-<area shape="rect" id="node17" href="$ahrs__int__cmpl__quat_8h.html#a75015adf5b7c98bd9eb6b588850d8449" title="ahrs_icq_update_gps" alt="" coords="864,287,1021,313"/>
-<area shape="rect" id="node18" href="$ahrs__int__cmpl__quat__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="1108,303,1175,329"/>
-<area shape="rect" id="node19" href="$ahrs__int__cmpl__quat__wrapper_8h.html#af71a2cd8d6fabc9373e99e2aeddbbb89" title="ahrs_icq_register" alt="" coords="1253,332,1383,359"/>
-<area shape="rect" id="node23" href="$ahrs__int__cmpl__quat__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="1105,361,1177,388"/>
+<area shape="rect" id="node2" href="$group__math__algebra__int.html#ga00267cacb602945fc6cfb054492460fa" title="normalize a quaternion inplace " alt="" coords="184,253,344,280"/>
+<area shape="rect" id="node3" href="$stabilization__attitude__heli__indi_8c.html#add1138c9aae1adaafdb42ddf2f0c039a" title="stabilization_attitude_run" alt="" coords="392,48,575,75"/>
+<area shape="rect" id="node4" href="$stabilization__attitude__ref__quat__int_8h.html#a20f0b5f27a66365eac7b4ed8af49960c" title="Propagate reference. " alt="" coords="406,99,561,141"/>
+<area shape="rect" id="node17" href="$stabilization__indi_8h.html#a1bd35992373c5eed91852cc9f20680b0" title="stabilization_indi_run" alt="" coords="406,165,561,192"/>
+<area shape="rect" id="node20" href="$group__math__algebra__int.html#ga375ede60f5f4419d92fa4cb901c6691a" title="Composition (multiplication) of two quaternions with normalization. " alt="" coords="396,217,571,258"/>
+<area shape="rect" id="node21" href="$ahrs__int__cmpl__quat_8h.html#a954df43f45ac2f8c6e59319c25ce607a" title="Hard reset yaw to a heading. " alt="" coords="623,344,805,371"/>
+<area shape="rect" id="node25" href="$group__math__algebra__int.html#ga6690b9bed5e7eb9f5c3ee6db7951e09b" title="Composition (multiplication) of two quaternions with normalization. " alt="" coords="404,334,563,375"/>
+<area shape="rect" id="node26" href="$group__math__algebra__int.html#ga55444a63fb6a2dcbec76a23443aea1de" title="Composition (multiplication) of two quaternions with normalization. " alt="" coords="404,399,563,441"/>
+<area shape="rect" id="node27" href="$ahrs__int__cmpl__quat_8h.html#af157b638d627a07ce3b8c86436c0ce4c" title="ahrs_icq_propagate" alt="" coords="869,447,1017,473"/>
+<area shape="rect" id="node5" href="$stabilization__attitude__quat__int_8c.html#a18a45e70bf2fae908ece863a764f777b" title="stabilization_attitude_run" alt="" coords="623,107,805,133"/>
+<area shape="rect" id="node6" href="$guidance__flip_8h.html#a341f66aaa1a6e736e980ae5cccb3c0f5" title="guidance_flip_run" alt="" coords="876,56,1009,83"/>
+<area shape="rect" id="node7" href="$guidance__h_8h.html#afff2f6a359638c74d5d1051c3edfa554" title="guidance_h_run" alt="" coords="1080,81,1203,108"/>
+<area shape="rect" id="node16" href="$guidance__opticflow__hover_8c.html#a77f05df2acd1da23e187f1f3f5d5a26f" title="Main guidance loop. " alt="" coords="853,157,1032,184"/>
+<area shape="rect" id="node8" href="$rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="1251,81,1385,108"/>
+<area shape="rect" id="node9" href="$rotorcraft_2main__fbw_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="1433,81,1544,108"/>
+<area shape="rect" id="node10" href="$rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="1592,81,1755,108"/>
+<area shape="rect" id="node11" href="$fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1861,5,1915,32"/>
+<area shape="rect" id="node12" href="$nps__autopilot__fixedwing_8c.html#a12870aaa609d4860004be3cec4c8cf2a" title="nps_autopilot_run_step" alt="" coords="1803,56,1973,83"/>
+<area shape="rect" id="node13" href="$main__chibios_8c.html#a1bd1ec0fdc597d88ee659889cda25c0a" title="thd_ap" alt="" coords="1855,107,1921,133"/>
+<area shape="rect" id="node15" href="$main__chibios_8c.html#a4042bcab9578175e00c82adcc2b251f8" title="thd_fbw" alt="" coords="1853,157,1923,184"/>
+<area shape="rect" id="node14" href="$main__chibios_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function. " alt="" coords="2021,132,2076,159"/>
+<area shape="rect" id="node18" href="$stabilization__attitude__quat__indi_8c.html#a18a45e70bf2fae908ece863a764f777b" title="stabilization_attitude_run" alt="" coords="623,161,805,188"/>
+<area shape="rect" id="node19" href="$stabilization__rate__indi_8c.html#acfa2e0820b52aea2dce670dd9295b540" title="stabilization_rate_run" alt="" coords="635,212,793,239"/>
+<area shape="rect" id="node22" href="$ahrs__int__cmpl__quat_8h.html#a75015adf5b7c98bd9eb6b588850d8449" title="ahrs_icq_update_gps" alt="" coords="864,379,1021,405"/>
+<area shape="rect" id="node23" href="$ahrs__int__cmpl__quat__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="1108,387,1175,413"/>
+<area shape="rect" id="node24" href="$ahrs__int__cmpl__quat__wrapper_8h.html#af71a2cd8d6fabc9373e99e2aeddbbb89" title="ahrs_icq_register" alt="" coords="1253,413,1383,440"/>
+<area shape="rect" id="node28" href="$ahrs__int__cmpl__quat__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="1105,441,1177,468"/>
 </map>

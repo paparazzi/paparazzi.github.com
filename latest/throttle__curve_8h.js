@@ -12,7 +12,8 @@ var throttle__curve_8h =
       [ "nb_curves", "throttle__curve_8h.html#a56ed79e056e59509563ee38cee47b11b", null ],
       [ "throttle", "throttle__curve_8h.html#a872e44c3e0589415992c9a067184e1de", null ]
     ] ],
+    [ "nav_throttle_curve_set", "throttle__curve_8h.html#ace063d8946e46ee57829acb1c90cc5e7", null ],
     [ "throttle_curve_init", "throttle__curve_8h.html#a6dd506225a07a2ea4e6f39cfb34d6397", null ],
-    [ "throttle_curve_run", "throttle__curve_8h.html#a3d36f4a67cfd21ca0192689ad0791fa4", null ],
+    [ "throttle_curve_run", "throttle__curve_8h.html#a61821337b67b9a8481f57e521205cb91", null ],
     [ "throttle_curve", "throttle__curve_8h.html#a221e1cf040a3e43d119178667fd76aad", null ]
 ];

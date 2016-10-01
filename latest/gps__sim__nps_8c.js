@@ -1,6 +1,7 @@
 var gps__sim__nps_8c =
 [
-    [ "gps_feed_value", "gps__sim__nps_8c.html#a1acb1b66a5b2d172cff383fdb9b6de4d", null ],
-    [ "gps_impl_init", "gps__sim__nps_8c.html#a443bb1937ab52c30a22453c4d3c24590", null ],
-    [ "gps_has_fix", "gps__sim__nps_8c.html#a662a8a716182b1eba2896ba0c89d5213", null ]
+    [ "gps_feed_value", "gps__sim__nps_8c.html#a4bf6eb34827c681440149b78bbc12dd0", null ],
+    [ "gps_nps_init", "gps__sim__nps_8c.html#ad682268b59357d0938bfc3a7d937dbfe", null ],
+    [ "gps_has_fix", "gps__sim__nps_8c.html#a5b2450e8baa86636ae84529551d1846e", null ],
+    [ "gps_nps", "gps__sim__nps_8c.html#ab89eeb1ddd4a10506859cda6fb81fbfe", null ]
 ];

@@ -12,5 +12,5 @@ var telemetry__common_8h =
     [ "telemetry_cb", "telemetry__common_8h.html#a5ce68bb3b13fda90c00109c1defe5d40", null ],
     [ "telemetry_msg", "telemetry__common_8h.html#a32d09d3f902d4049b297558a9849e0f4", null ],
     [ "periodic_telemetry_err_report", "telemetry__common_8h.html#ae7b402e73b2c27992c64528b9d064a8c", null ],
-    [ "register_periodic_telemetry", "telemetry__common_8h.html#a9b3d79cf4bb115055da55757f87e0846", null ]
+    [ "register_periodic_telemetry", "telemetry__common_8h.html#a8b8cf43739f06c54d16370c141b541a0", null ]
 ];

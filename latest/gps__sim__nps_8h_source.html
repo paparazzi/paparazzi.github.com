@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -114,28 +114,33 @@ $(document).ready(function(){initNavTree('gps__sim__nps_8h_source.html','');});
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="std_8h.html">std.h</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="gps__sim__nps_8h.html#a63f1b81cf4a1e8e0fe80f065224826fe">    6</a></span>&#160;<span class="preprocessor">#define GPS_NB_CHANNELS 16</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">extern</span> bool_t <a class="code" href="gps__sim__nps_8h.html#a662a8a716182b1eba2896ba0c89d5213">gps_has_fix</a>;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef PRIMARY_GPS</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="gps__sim__nps_8h.html#a0eb39777eac135c917af2eed39cce7f1">    7</a></span>&#160;<span class="preprocessor">#define PRIMARY_GPS GPS_SIM</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gps__sim__nps_8h.html#a1acb1b66a5b2d172cff383fdb9b6de4d">gps_feed_value</a>();</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gps__sim__nps_8h.html#a443bb1937ab52c30a22453c4d3c24590">gps_impl_init</a>();</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="gps__sim__nps_8h.html#a8996cb5c3ad80eee27207281a2e3332f">   14</a></span>&#160;<span class="preprocessor">#define GpsEvent() {}</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GPS_SIM_NPS_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="gps__sim__nps_8h_html_a662a8a716182b1eba2896ba0c89d5213"><div class="ttname"><a href="gps__sim__nps_8h.html#a662a8a716182b1eba2896ba0c89d5213">gps_has_fix</a></div><div class="ttdeci">bool_t gps_has_fix</div><div class="ttdef"><b>Definition:</b> <a href="gps__sim__nps_8c_source.html#l00028">gps_sim_nps.c:28</a></div></div>
-<div class="ttc" id="gps__sim__nps_8h_html_a443bb1937ab52c30a22453c4d3c24590"><div class="ttname"><a href="gps__sim__nps_8h.html#a443bb1937ab52c30a22453c4d3c24590">gps_impl_init</a></div><div class="ttdeci">void gps_impl_init()</div><div class="ttdoc">GPS initialization. </div><div class="ttdef"><b>Definition:</b> <a href="gps__datalink_8c_source.html#l00043">gps_datalink.c:43</a></div></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="gps_8h.html#structGpsState">GpsState</a> <a class="code" href="gps__sim__nps_8h.html#ab89eeb1ddd4a10506859cda6fb81fbfe">gps_nps</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code" href="gps__sim__nps_8h.html#a5b2450e8baa86636ae84529551d1846e">gps_has_fix</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gps__sim__nps_8h.html#a1acb1b66a5b2d172cff383fdb9b6de4d">gps_feed_value</a>();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gps__sim__nps_8h.html#a9b1d6b0a4feb81df90127d47471a7365">gps_nps_init</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="gps__sim__nps_8h.html#aba56b7d151404f1dfe1a5c489155aadb">   17</a></span>&#160;<span class="preprocessor">#define gps_nps_periodic_check() gps_periodic_check(&amp;gps_nps)</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GPS_SIM_NPS_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="gps_8h_html_structGpsState"><div class="ttname"><a href="gps_8h.html#structGpsState">GpsState</a></div><div class="ttdoc">data structure for GPS information </div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00081">gps.h:81</a></div></div>
+<div class="ttc" id="gps__sim__nps_8h_html_a5b2450e8baa86636ae84529551d1846e"><div class="ttname"><a href="gps__sim__nps_8h.html#a5b2450e8baa86636ae84529551d1846e">gps_has_fix</a></div><div class="ttdeci">bool gps_has_fix</div><div class="ttdef"><b>Definition:</b> <a href="gps__sim__nps_8c_source.html#l00029">gps_sim_nps.c:29</a></div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
-<div class="ttc" id="gps__sim__nps_8h_html_a1acb1b66a5b2d172cff383fdb9b6de4d"><div class="ttname"><a href="gps__sim__nps_8h.html#a1acb1b66a5b2d172cff383fdb9b6de4d">gps_feed_value</a></div><div class="ttdeci">void gps_feed_value()</div><div class="ttdef"><b>Definition:</b> <a href="gps__sim__nps_8c_source.html#l00030">gps_sim_nps.c:30</a></div></div>
+<div class="ttc" id="gps__sim__nps_8h_html_a1acb1b66a5b2d172cff383fdb9b6de4d"><div class="ttname"><a href="gps__sim__nps_8h.html#a1acb1b66a5b2d172cff383fdb9b6de4d">gps_feed_value</a></div><div class="ttdeci">void gps_feed_value()</div><div class="ttdef"><b>Definition:</b> <a href="gps__sim__nps_8c_source.html#l00031">gps_sim_nps.c:31</a></div></div>
+<div class="ttc" id="gps__sim__nps_8h_html_ab89eeb1ddd4a10506859cda6fb81fbfe"><div class="ttname"><a href="gps__sim__nps_8h.html#ab89eeb1ddd4a10506859cda6fb81fbfe">gps_nps</a></div><div class="ttdeci">struct GpsState gps_nps</div><div class="ttdef"><b>Definition:</b> <a href="gps__sim__nps_8c_source.html#l00028">gps_sim_nps.c:28</a></div></div>
+<div class="ttc" id="gps__sim__nps_8h_html_a9b1d6b0a4feb81df90127d47471a7365"><div class="ttname"><a href="gps__sim__nps_8h.html#a9b1d6b0a4feb81df90127d47471a7365">gps_nps_init</a></div><div class="ttdeci">void gps_nps_init()</div><div class="ttdef"><b>Definition:</b> <a href="gps__sim__nps_8c_source.html#l00090">gps_sim_nps.c:90</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8c4cbb881db224ddaf0756e79ed706ce.html">gps</a></li><li class="navelem"><a class="el" href="gps__sim__nps_8h.html">gps_sim_nps.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:31 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:32 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

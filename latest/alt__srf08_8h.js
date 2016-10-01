@@ -56,7 +56,7 @@ var alt__srf08_8h =
     [ "srf08_select_unit", "alt__srf08_8h.html#a1e8e0d75f89e174b22f0f80fa54fa4d1", null ],
     [ "srf08_set_gain", "alt__srf08_8h.html#a9923f3f5e600add774e6f46a256fda08", null ],
     [ "srf08_set_range", "alt__srf08_8h.html#a749845aa6f0ee220f5ca76272a8b3c7c", null ],
-    [ "srf08_got", "alt__srf08_8h.html#ab426ebf96debca4147f2de04cf18ab76", null ],
+    [ "srf08_got", "alt__srf08_8h.html#a643c85c0c68ae638652791bd6635065c", null ],
     [ "srf08_range", "alt__srf08_8h.html#a9b4c04cf312158dd1fc012c9c04ee4e9", null ],
-    [ "srf08_received", "alt__srf08_8h.html#aea161ae5c89625f70b0e4d62a04a39e3", null ]
+    [ "srf08_received", "alt__srf08_8h.html#a9f7107faa44124b41f3434c4e16f439d", null ]
 ];

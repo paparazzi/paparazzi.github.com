@@ -1,27 +1,19 @@
 <map id="sw/airborne/modules/obstacle_avoidance/guidance_OA.c" name="sw/airborne/modules/obstacle_avoidance/guidance_OA.c">
-<area shape="rect" id="node2" href="$guidance__OA_8h.html" title="Guidance for the obstacle avoidance methods. " alt="" coords="473,310,592,337"/>
-<area shape="rect" id="node16" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html" title="General attitude stabilization interface for rotorcrafts. " alt="" coords="1075,199,1257,255"/>
-<area shape="rect" id="node20" href="$rotorcraft_2guidance_2guidance__v_8h.html" title="Vertical guidance for rotorcrafts. " alt="" coords="789,206,959,247"/>
-<area shape="rect" id="node25" href="$downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1996,206,2149,247"/>
-<area shape="rect" id="node42" href="$telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="1663,109,1816,151"/>
-<area shape="rect" id="node44" href="$electrical_8h.html" title="Interface for electrical status: supply voltage, current, battery status, etc. " alt="" coords="1420,310,1592,337"/>
-<area shape="rect" id="node4" href="$v4l2_8h.html" title="Capture images from a V4L2 device (Video for Linux 2) " alt="" coords="259,399,446,441"/>
-<area shape="rect" id="node9" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="819,407,998,433"/>
-<area shape="rect" id="node8" href="$image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="165,496,351,537"/>
-<area shape="rect" id="node10" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="594,503,749,530"/>
-<area shape="rect" id="node13" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="904,503,1055,530"/>
-<area shape="rect" id="node17" href="$stabilization_8h.html" title="General stabilization interface for rotorcrafts. " alt="" coords="1196,303,1344,344"/>
-<area shape="rect" id="node21" href="$guidance__v__ref_8h.html" title="Reference generation for vertical guidance. " alt="" coords="617,303,811,344"/>
-<area shape="rect" id="node23" href="$guidance__v__adapt_8h.html" title="Adaptation block of the vertical guidance. " alt="" coords="1022,392,1182,448"/>
-<area shape="rect" id="node22" href="$inttypes_8h.html" title="inttypes.h" alt="" coords="2182,675,2267,701"/>
-<area shape="rect" id="node28" href="$pprz__transport_8h.html" title="Building and parsing Paparazzi frames. " alt="" coords="1945,399,2099,441"/>
-<area shape="rect" id="node33" href="$pprzlog__transport_8h.html" title="Protocol for on&#45;board data logger with timestamp. " alt="" coords="2453,399,2607,441"/>
-<area shape="rect" id="node37" href="$xbee_8h.html" title="Maxstream XBee serial input and output. " alt="" coords="2235,303,2388,344"/>
-<area shape="rect" id="node39" href="$w5100_8h.html" title="W5100 ethernet chip I/O. " alt="" coords="1881,303,2035,344"/>
-<area shape="rect" id="node40" href="$uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1718,310,1857,337"/>
-<area shape="rect" id="node29" href="$datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1945,496,2099,537"/>
-<area shape="rect" id="node31" href="$transport_8h.html" title="generic transport header " alt="" coords="2175,496,2328,537"/>
-<area shape="rect" id="node32" href="$link__device_8h.html" title="generic device header " alt="" coords="2023,593,2205,619"/>
-<area shape="rect" id="node34" href="$sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="2377,503,2547,530"/>
-<area shape="rect" id="node38" href="$xbee24_8h.html" title="Configuration for 2.4GHz &quot;series 1&quot; and 900MHz modules. " alt="" coords="2276,399,2429,441"/>
+<area shape="rect" id="node2" href="$guidance__OA_8h.html" title="Guidance for the obstacle avoidance methods. " alt="" coords="338,228,457,255"/>
+<area shape="rect" id="node16" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html" title="General attitude stabilization interface for rotorcrafts. " alt="" coords="922,109,1105,165"/>
+<area shape="rect" id="node20" href="$rotorcraft_2guidance_2guidance__v_8h.html" title="Vertical guidance for rotorcrafts. " alt="" coords="1379,117,1549,158"/>
+<area shape="rect" id="node25" href="$downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1635,221,1789,262"/>
+<area shape="rect" id="node33" href="$telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="1825,117,1978,158"/>
+<area shape="rect" id="node35" href="$electrical_8h.html" title="Interface for electrical status: supply voltage, current, battery status, etc. " alt="" coords="481,228,653,255"/>
+<area shape="rect" id="node4" href="$v4l2_8h.html" title="Capture images from a V4L2 device (Video for Linux 2) " alt="" coords="303,317,489,359"/>
+<area shape="rect" id="node9" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="804,325,983,351"/>
+<area shape="rect" id="node8" href="$image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="5,407,192,448"/>
+<area shape="rect" id="node10" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="1064,414,1219,441"/>
+<area shape="rect" id="node13" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="838,414,989,441"/>
+<area shape="rect" id="node17" href="$stabilization_8h.html" title="General stabilization interface for rotorcrafts. " alt="" coords="883,221,1031,262"/>
+<area shape="rect" id="node21" href="$guidance__v__ref_8h.html" title="Reference generation for vertical guidance. " alt="" coords="1107,221,1301,262"/>
+<area shape="rect" id="node23" href="$guidance__v__adapt_8h.html" title="Adaptation block of the vertical guidance. " alt="" coords="1325,213,1485,269"/>
+<area shape="rect" id="node22" href="$inttypes_8h.html" title="inttypes.h" alt="" coords="1292,325,1377,351"/>
+<area shape="rect" id="node28" href="$datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1813,317,1966,359"/>
+<area shape="rect" id="node30" href="$uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1991,325,2129,351"/>
 </map>

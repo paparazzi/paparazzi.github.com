@@ -14,7 +14,7 @@ var ins__vectornav_8h_structInsVectornav =
     [ "ltp_accel_f", "ins__vectornav_8h.html#a0cfbbc8a9747bf85b4d950c5e96cd899", null ],
     [ "ltp_accel_i", "ins__vectornav_8h.html#a0fc872ffcfc5cf911e3f2776e6c3dab3", null ],
     [ "ltp_def", "ins__vectornav_8h.html#afeeaaabc2dab10d6916f877ae70e1526", null ],
-    [ "ltp_initialized", "ins__vectornav_8h.html#a0babea1482d4ecffc8f6b670d79bceb3", null ],
+    [ "ltp_initialized", "ins__vectornav_8h.html#a738b84b052c6790122226b6bba8facfa", null ],
     [ "ltp_pos_i", "ins__vectornav_8h.html#aa29ba582f67c3c2ca28f6639c7fe7279", null ],
     [ "ltp_speed_i", "ins__vectornav_8h.html#aaedda1ddbfd8ef5cf031a906f4a44844", null ],
     [ "mode", "ins__vectornav_8h.html#ab45d60c19afb68bce6ee0ca2661393d5", null ],

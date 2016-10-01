@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -175,8 +175,8 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a8ad016a0fe68026f295a8ffaacdd2c5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rc__datalink_8h.html#a8ad016a0fe68026f295a8ffaacdd2c5f">rc_dl_values</a> [<a class="el" href="rc__datalink_8h.html#a5f589ae407f18b848512ca256e03bb32">RC_DL_NB_CHANNEL</a>]</td></tr>
 <tr class="separator:a8ad016a0fe68026f295a8ffaacdd2c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d2f954c65b1f761c99fd123b8ca7a35"><td class="memItemLeft" align="right" valign="top">volatile bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rc__datalink_8h.html#a6d2f954c65b1f761c99fd123b8ca7a35">rc_dl_frame_available</a></td></tr>
-<tr class="separator:a6d2f954c65b1f761c99fd123b8ca7a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab342fc7d0560212d19265550ed22efaf"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rc__datalink_8h.html#ab342fc7d0560212d19265550ed22efaf">rc_dl_frame_available</a></td></tr>
+<tr class="separator:ab342fc7d0560212d19265550ed22efaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Radio control input via datalink. </p>
@@ -338,9 +338,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00040">40</a> of file <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html">rc_datalink.c</a>.</p>
 
-<p>References <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00059">RADIO_MODE</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00044">RADIO_PITCH</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00043">RADIO_ROLL</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00042">RADIO_THROTTLE</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00045">RADIO_YAW</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00031">rc_dl_frame_available</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00030">rc_dl_values</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p>References <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00059">RADIO_MODE</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00044">RADIO_PITCH</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00043">RADIO_ROLL</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00042">RADIO_THROTTLE</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00045">RADIO_YAW</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00031">rc_dl_frame_available</a>, and <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00030">rc_dl_values</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2datalink_8c_source.html#l00088">dl_parse_msg()</a>.</p>
+<p>Referenced by <a class="el" href="datalink_8c_source.html#l00055">dl_parse_msg()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -349,7 +349,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rc__datalink_8h_a22105107236d00fa616659322bd89a02_icgraph.png" border="0" usemap="#rc__datalink_8h_a22105107236d00fa616659322bd89a02_icgraph" alt=""/></div>
 <map name="rc__datalink_8h_a22105107236d00fa616659322bd89a02_icgraph" id="rc__datalink_8h_a22105107236d00fa616659322bd89a02_icgraph">
-<area shape="rect" id="node2" href="fixedwing_2datalink_8c.html#a87ff8c0ffff657dbde8566f062779428" title="Should be called when chars are available in dl_buffer. " alt="" coords="217,5,328,32"/></map>
+<area shape="rect" id="node2" href="datalink_8c.html#a87ff8c0ffff657dbde8566f062779428" title="Should be called when chars are available in dl_buffer. " alt="" coords="217,5,328,32"/><area shape="rect" id="node3" href="datalink_8h.html#ae934a9730fa6dff019fea5cb4f0d5894" title="Check for new message and parse. " alt="" coords="376,5,511,32"/><area shape="rect" id="node4" href="sim__ap_8c.html#ad664061534694a2babfff03cfc5977f7" title="set_datalink_message" alt="" coords="559,5,724,32"/></map>
 </div>
 </p>
 
@@ -401,9 +401,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00056">56</a> of file <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html">rc_datalink.c</a>.</p>
 
-<p>References <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00059">RADIO_MODE</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00044">RADIO_PITCH</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00043">RADIO_ROLL</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00042">RADIO_THROTTLE</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00045">RADIO_YAW</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00031">rc_dl_frame_available</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00030">rc_dl_values</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p>References <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00059">RADIO_MODE</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00044">RADIO_PITCH</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00043">RADIO_ROLL</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00042">RADIO_THROTTLE</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00045">RADIO_YAW</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00031">rc_dl_frame_available</a>, and <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00030">rc_dl_values</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2datalink_8c_source.html#l00088">dl_parse_msg()</a>, and <a class="el" href="mavlink_8c_source.html#l00220">mavlink_common_message_handler()</a>.</p>
+<p>Referenced by <a class="el" href="datalink_8c_source.html#l00055">dl_parse_msg()</a>, and <a class="el" href="mavlink_8c_source.html#l00220">mavlink_common_message_handler()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -412,7 +412,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rc__datalink_8h_aa3d40235f29aab16121c0073217835a2_icgraph.png" border="0" usemap="#rc__datalink_8h_aa3d40235f29aab16121c0073217835a2_icgraph" alt=""/></div>
 <map name="rc__datalink_8h_aa3d40235f29aab16121c0073217835a2_icgraph" id="rc__datalink_8h_aa3d40235f29aab16121c0073217835a2_icgraph">
-<area shape="rect" id="node2" href="fixedwing_2datalink_8c.html#a87ff8c0ffff657dbde8566f062779428" title="Should be called when chars are available in dl_buffer. " alt="" coords="263,5,373,32"/><area shape="rect" id="node3" href="mavlink_8c.html#a92b02fdeb899791573ef52506deb653c" title="mavlink_common_message\l_handler" alt="" coords="217,57,419,98"/><area shape="rect" id="node4" href="mavlink_8h.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls. " alt="" coords="467,64,581,91"/></map>
+<area shape="rect" id="node2" href="datalink_8c.html#a87ff8c0ffff657dbde8566f062779428" title="Should be called when chars are available in dl_buffer. " alt="" coords="263,5,373,32"/><area shape="rect" id="node5" href="mavlink_8c.html#a92b02fdeb899791573ef52506deb653c" title="mavlink_common_message\l_handler" alt="" coords="217,57,419,98"/><area shape="rect" id="node3" href="datalink_8h.html#ae934a9730fa6dff019fea5cb4f0d5894" title="Check for new message and parse. " alt="" coords="467,5,601,32"/><area shape="rect" id="node4" href="sim__ap_8c.html#ad664061534694a2babfff03cfc5977f7" title="set_datalink_message" alt="" coords="649,5,815,32"/><area shape="rect" id="node6" href="mavlink_8h.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls. " alt="" coords="477,64,591,91"/></map>
 </div>
 </p>
 
@@ -440,12 +440,12 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a6d2f954c65b1f761c99fd123b8ca7a35"></a>
+<a class="anchor" id="ab342fc7d0560212d19265550ed22efaf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">volatile bool_t rc_dl_frame_available</td>
+          <td class="memname">volatile bool rc_dl_frame_available</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -478,7 +478,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_a146ed466020daad33793c9994e8ab3e.html">radio_control</a></li><li class="navelem"><a class="el" href="rc__datalink_8h.html">rc_datalink.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:07 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:15 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -8,6 +8,6 @@ var main__demo5_8c =
     [ "main_init", "main__demo5_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1", null ],
     [ "main_periodic_task", "main__demo5_8c.html#a791eaf74023b4de8d10fbfe0de040ed8", null ],
     [ "dl_buffer", "main__demo5_8c.html#a41ca1f0c42c768e235066d83071b1ed9", null ],
-    [ "dl_msg_available", "main__demo5_8c.html#a5da8932586e81510ec4b202a0d0abacd", null ],
+    [ "dl_msg_available", "main__demo5_8c.html#a61d3db27cf64e56c9011bef1de4df9ac", null ],
     [ "foo", "main__demo5_8c.html#ad690ee00a2cf77bbaaf89c3f1ef110d4", null ]
 ];

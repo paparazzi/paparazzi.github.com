@@ -19,7 +19,7 @@ var max7456_8c =
       [ "BLINK", "max7456_8c.html#ac3dd6ed7cc7d01ada4ce3180d50150cda43e7c26b8df0104b9f389e32ac3f72c7", null ],
       [ "INVERT", "max7456_8c.html#ac3dd6ed7cc7d01ada4ce3180d50150cdab5f95af56a0f14f0032750594b523c95", null ]
     ] ],
-    [ "_osd_sprintf", "max7456_8c.html#a2ca3a342863fb811a3a6942ba480148b", null ],
+    [ "_osd_sprintf", "max7456_8c.html#a257eaf8b3e2576c806cd402e398795e0", null ],
     [ "ascii_to_osd_c", "max7456_8c.html#ab6589475b928e58fdf044d03783fcb54", null ],
     [ "max7456_event", "max7456_8c.html#a9e352b8c2d17bfc367c3a4e1165deee6", null ],
     [ "max7456_init", "max7456_8c.html#a945116b36ac06fdbb6f4aef0c5e7f7ca", null ],
@@ -35,7 +35,7 @@ var max7456_8c =
     [ "osd_spi_rx_buffer", "max7456_8c.html#ae32c7c55a63dcd63a3e4182531bd56b7", null ],
     [ "osd_spi_tx_buffer", "max7456_8c.html#ae46cb108217d2126c9f484cf6b63c728", null ],
     [ "osd_stat_reg", "max7456_8c.html#aa88b79ed6d70c87f302762836b19c2a3", null ],
-    [ "osd_stat_reg_valid", "max7456_8c.html#add80252401b7f7c747be7454c2c2a19c", null ],
+    [ "osd_stat_reg_valid", "max7456_8c.html#a700c37442b224ae303b633ac0c02c73c", null ],
     [ "osd_str_buf", "max7456_8c.html#a9066777e2c60d23d0177a42eab2abdb9", null ],
     [ "osd_string", "max7456_8c.html#acdc4b849c0511672a323bbf18fc1edd0", null ],
     [ "step", "max7456_8c.html#a4a2eb71e89c989655301c2f2070e29b3", null ]

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['xbee_5ftransport',['xbee_transport',['../xbee_8h.html#structxbee__transport',1,'']]],
-  ['xsenstime',['XsensTime',['../ins__xsens_8h.html#structXsensTime',1,'']]]
+  ['xsens',['Xsens',['../xsens700_8h.html#structXsens',1,'']]],
+  ['xsenstime',['XsensTime',['../xsens700_8h.html#structXsensTime',1,'']]]
 ];

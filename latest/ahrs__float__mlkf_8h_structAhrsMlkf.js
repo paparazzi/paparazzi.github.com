@@ -4,7 +4,7 @@ var ahrs__float__mlkf_8h_structAhrsMlkf =
     [ "gibbs_cor", "ahrs__float__mlkf_8h.html#a8b9b8f512d62e94fa204d788467406e3", null ],
     [ "gyro_bias", "ahrs__float__mlkf_8h.html#a967f441178e1c3a26174b0cbca4fe738", null ],
     [ "imu_rate", "ahrs__float__mlkf_8h.html#a93e062e85a0fd87a4867d63b65bafc53", null ],
-    [ "is_aligned", "ahrs__float__mlkf_8h.html#a472b2c2b145df3713a818bbe3d6acf54", null ],
+    [ "is_aligned", "ahrs__float__mlkf_8h.html#a18c0fd51dd202a9d3d7592b46a38f414", null ],
     [ "lp_accel", "ahrs__float__mlkf_8h.html#ae9a76a88b67e9331ce3c49fe9375eee7", null ],
     [ "ltp_to_body_quat", "ahrs__float__mlkf_8h.html#acd8a59685835f428a506aa3c0510eb34", null ],
     [ "ltp_to_imu_quat", "ahrs__float__mlkf_8h.html#adcf3012d83dd9bb018d8c9ac307c77a5", null ],

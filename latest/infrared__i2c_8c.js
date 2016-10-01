@@ -28,11 +28,11 @@ var infrared__i2c_8c =
     [ "infrared_init", "infrared__i2c_8c.html#a914de0b4811e25ca619529374d7fe3ba", null ],
     [ "infrared_update", "infrared__i2c_8c.html#a5963ae7bc82246ddba3a441e738db4df", null ],
     [ "ir_i2c", "infrared__i2c_8c.html#a4d9258dc9de2540903c551cb567e2159", null ],
-    [ "ir_i2c_conf_hor_done", "infrared__i2c_8c.html#ad6a28754456593b0e38d39f6f56f13c5", null ],
-    [ "ir_i2c_conf_ver_done", "infrared__i2c_8c.html#a758f2761012838a4393d7d0bf3f512f6", null ],
+    [ "ir_i2c_conf_hor_done", "infrared__i2c_8c.html#abb3bd62c339d7fd013faa0da608816f0", null ],
+    [ "ir_i2c_conf_ver_done", "infrared__i2c_8c.html#a2a69228afca70e41675eb7060b515e31", null ],
     [ "ir_i2c_conf_word", "infrared__i2c_8c.html#a5e315296fa2757af44acd85f5e2d96ef", null ],
-    [ "ir_i2c_data_hor_available", "infrared__i2c_8c.html#ab1594a5f078cf8e09b8fb89fc4104c42", null ],
-    [ "ir_i2c_data_ver_available", "infrared__i2c_8c.html#a0f8a5f04d45e175173ba0fc62539f5cd", null ],
+    [ "ir_i2c_data_hor_available", "infrared__i2c_8c.html#a349493557a7e4b489e9cdd384a939e1b", null ],
+    [ "ir_i2c_data_ver_available", "infrared__i2c_8c.html#a6175c9da5ac671e1335ab1795add299d", null ],
     [ "ir_i2c_hor_status", "infrared__i2c_8c.html#a8343a9a0a71d8a9738c0848548c2f2d7", null ],
     [ "irv_trans", "infrared__i2c_8c.html#a5020c256b621d606b42254062af9fbe6", null ]
 ];

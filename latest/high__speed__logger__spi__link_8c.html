@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('high__speed__logger__spi__link_8c.html
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="high__speed__logger__spi__link_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2loggers_2high__speed__logger__spi__link_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2loggers_2high__speed__logger__spi__link_8c" id="sw_2airborne_2modules_2loggers_2high__speed__logger__spi__link_8c">
-<area shape="rect" id="node2" href="high__speed__logger__spi__link_8h.html" title="high_speed_logger_spi\l_link.h" alt="" coords="5,273,172,315"/><area shape="rect" id="node4" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="509,109,647,136"/><area shape="rect" id="node15" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API. " alt="" coords="197,109,327,136"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="363,281,542,307"/><area shape="rect" id="node11" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="617,281,808,307"/><area shape="rect" id="node13" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="496,184,660,225"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="617,363,771,389"/><area shape="rect" id="node9" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="340,363,491,389"/></map>
+<area shape="rect" id="node2" href="high__speed__logger__spi__link_8h.html" title="high_speed_logger_spi\l_link.h" alt="" coords="5,273,172,315"/><area shape="rect" id="node4" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="566,109,705,136"/><area shape="rect" id="node16" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API. " alt="" coords="197,109,327,136"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="365,281,543,307"/><area shape="rect" id="node11" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="780,281,971,307"/><area shape="rect" id="node14" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="673,184,837,225"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="618,363,773,389"/><area shape="rect" id="node9" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="392,363,543,389"/></map>
 </div>
 </div>
 <p><a href="high__speed__logger__spi__link_8c_source.html">Go to the source code of this file.</a></p>
@@ -143,8 +143,8 @@ Variables</h2></td></tr>
 <tr class="separator:a5f71f68924d08e716c4a4ad4c5f79b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1232a16b20ea060f98ae86078b64d444"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__spi.html#structspi__transaction">spi_transaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="high__speed__logger__spi__link_8c.html#a1232a16b20ea060f98ae86078b64d444">high_speed_logger_spi_link_transaction</a></td></tr>
 <tr class="separator:a1232a16b20ea060f98ae86078b64d444"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7afaef9f6de2ba2922f10dfb4f1b6e21"><td class="memItemLeft" align="right" valign="top">static volatile bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="high__speed__logger__spi__link_8c.html#a7afaef9f6de2ba2922f10dfb4f1b6e21">high_speed_logger_spi_link_ready</a> = <a class="el" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td></tr>
-<tr class="separator:a7afaef9f6de2ba2922f10dfb4f1b6e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b4341a957c0c01b6b056ad76db74219"><td class="memItemLeft" align="right" valign="top">static volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="high__speed__logger__spi__link_8c.html#a2b4341a957c0c01b6b056ad76db74219">high_speed_logger_spi_link_ready</a> = true</td></tr>
+<tr class="separator:a2b4341a957c0c01b6b056ad76db74219"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="ab1ebc903cd5df96b984a7016f84e705f"></a>
@@ -161,9 +161,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00035">35</a> of file <a class="el" href="high__speed__logger__spi__link_8c_source.html">high_speed_logger_spi_link.c</a>.</p>
+<p>Definition at line <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00036">36</a> of file <a class="el" href="high__speed__logger__spi__link_8c_source.html">high_speed_logger_spi_link.c</a>.</p>
 
-<p>References <a class="el" href="spi_8h_source.html#l00155">spi_transaction::after_cb</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::bitorder</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::cdiv</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::cpha</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::cpol</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::dss</a>, <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00028">high_speed_logger_spi_link_data</a>, <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00074">high_speed_logger_spi_link_trans_cb()</a>, <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00029">high_speed_logger_spi_link_transaction</a>, <a class="el" href="high__speed__logger__spi__link_8h_source.html#l00034">high_speed_logger_spi_link_data::id</a>, <a class="el" href="spi_8h_source.html#l00143">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="spi_8h_source.html#l00144">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="spi_8h_source.html#l00148">spi_transaction::select</a>, <a class="el" href="spi_8h_source.html#l00147">spi_transaction::slave_idx</a>, <a class="el" href="spi_8h_source.html#l00069">SPICphaEdge2</a>, <a class="el" href="spi_8h_source.html#l00078">SPICpolIdleHigh</a>, <a class="el" href="spi_8h_source.html#l00119">SPIDiv64</a>, <a class="el" href="spi_8h_source.html#l00084">SPIDss8bit</a>, <a class="el" href="spi_8h_source.html#l00106">SPIMSBFirst</a>, and <a class="el" href="spi_8h_source.html#l00057">SPISelectUnselect</a>.</p>
+<p>References <a class="el" href="spi_8h_source.html#l00155">spi_transaction::after_cb</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::bitorder</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::cdiv</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::cpha</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::cpol</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::dss</a>, <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00029">high_speed_logger_spi_link_data</a>, <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00083">high_speed_logger_spi_link_trans_cb()</a>, <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00030">high_speed_logger_spi_link_transaction</a>, <a class="el" href="high__speed__logger__spi__link_8h_source.html#l00034">high_speed_logger_spi_link_data::id</a>, <a class="el" href="spi_8h_source.html#l00143">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="spi_8h_source.html#l00144">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="spi_8h_source.html#l00148">spi_transaction::select</a>, <a class="el" href="spi_8h_source.html#l00147">spi_transaction::slave_idx</a>, <a class="el" href="spi_8h_source.html#l00069">SPICphaEdge2</a>, <a class="el" href="spi_8h_source.html#l00078">SPICpolIdleHigh</a>, <a class="el" href="spi_8h_source.html#l00119">SPIDiv64</a>, <a class="el" href="spi_8h_source.html#l00084">SPIDss8bit</a>, <a class="el" href="spi_8h_source.html#l00106">SPIMSBFirst</a>, and <a class="el" href="spi_8h_source.html#l00057">SPISelectUnselect</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -192,9 +192,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00054">54</a> of file <a class="el" href="high__speed__logger__spi__link_8c_source.html">high_speed_logger_spi_link.c</a>.</p>
+<p>Definition at line <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00055">55</a> of file <a class="el" href="high__speed__logger__spi__link_8c_source.html">high_speed_logger_spi_link.c</a>.</p>
 
-<p>References <a class="el" href="high__speed__logger__spi__link_8h_source.html#l00038">high_speed_logger_spi_link_data::acc_x</a>, <a class="el" href="high__speed__logger__spi__link_8h_source.html#l00039">high_speed_logger_spi_link_data::acc_y</a>, <a class="el" href="high__speed__logger__spi__link_8h_source.html#l00040">high_speed_logger_spi_link_data::acc_z</a>, <a class="el" href="imu_8h_source.html#l00051">Imu::accel_unscaled</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="high__speed__logger__spi__link_8h_source.html#l00035">high_speed_logger_spi_link_data::gyro_p</a>, <a class="el" href="high__speed__logger__spi__link_8h_source.html#l00036">high_speed_logger_spi_link_data::gyro_q</a>, <a class="el" href="high__speed__logger__spi__link_8h_source.html#l00037">high_speed_logger_spi_link_data::gyro_r</a>, <a class="el" href="imu_8h_source.html#l00050">Imu::gyro_unscaled</a>, <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00031">high_speed_logger_spi_link_ready</a>, <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00029">high_speed_logger_spi_link_transaction</a>, <a class="el" href="high__speed__logger__spi__link_8h_source.html#l00034">high_speed_logger_spi_link_data::id</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00043">imu</a>, <a class="el" href="imu_8h_source.html#l00052">Imu::mag_unscaled</a>, <a class="el" href="high__speed__logger__spi__link_8h_source.html#l00041">high_speed_logger_spi_link_data::mag_x</a>, <a class="el" href="high__speed__logger__spi__link_8h_source.html#l00042">high_speed_logger_spi_link_data::mag_y</a>, <a class="el" href="high__speed__logger__spi__link_8h_source.html#l00043">high_speed_logger_spi_link_data::mag_z</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00180">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00181">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00182">Int32Rates::r</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00048">spi_submit()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
+<p>References <a class="el" href="high__speed__logger__spi__link_8h_source.html#l00038">high_speed_logger_spi_link_data::acc_x</a>, <a class="el" href="high__speed__logger__spi__link_8h_source.html#l00039">high_speed_logger_spi_link_data::acc_y</a>, <a class="el" href="high__speed__logger__spi__link_8h_source.html#l00040">high_speed_logger_spi_link_data::acc_z</a>, <a class="el" href="imu_8h_source.html#l00047">Imu::accel_unscaled</a>, <a class="el" href="avoid__navigation_8c_source.html#l00058">counter</a>, <a class="el" href="high__speed__logger__spi__link_8h_source.html#l00035">high_speed_logger_spi_link_data::gyro_p</a>, <a class="el" href="high__speed__logger__spi__link_8h_source.html#l00036">high_speed_logger_spi_link_data::gyro_q</a>, <a class="el" href="high__speed__logger__spi__link_8h_source.html#l00037">high_speed_logger_spi_link_data::gyro_r</a>, <a class="el" href="imu_8h_source.html#l00046">Imu::gyro_unscaled</a>, <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00032">high_speed_logger_spi_link_ready</a>, <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00030">high_speed_logger_spi_link_transaction</a>, <a class="el" href="high__speed__logger__spi__link_8h_source.html#l00034">high_speed_logger_spi_link_data::id</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="imu_8h_source.html#l00048">Imu::mag_unscaled</a>, <a class="el" href="high__speed__logger__spi__link_8h_source.html#l00041">high_speed_logger_spi_link_data::mag_x</a>, <a class="el" href="high__speed__logger__spi__link_8h_source.html#l00042">high_speed_logger_spi_link_data::mag_y</a>, <a class="el" href="high__speed__logger__spi__link_8h_source.html#l00043">high_speed_logger_spi_link_data::mag_z</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00180">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00181">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00182">Int32Rates::r</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00364">spi_submit()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -203,7 +203,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="high__speed__logger__spi__link_8c_a5415a1e7a1b569b44b00d72321bbb165_cgraph.png" border="0" usemap="#high__speed__logger__spi__link_8c_a5415a1e7a1b569b44b00d72321bbb165_cgraph" alt=""/></div>
 <map name="high__speed__logger__spi__link_8c_a5415a1e7a1b569b44b00d72321bbb165_cgraph" id="high__speed__logger__spi__link_8c_a5415a1e7a1b569b44b00d72321bbb165_cgraph">
-<area shape="rect" id="node2" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="220,13,311,39"/></map>
+<area shape="rect" id="node2" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="220,13,311,39"/></map>
 </div>
 </p>
 
@@ -231,11 +231,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00074">74</a> of file <a class="el" href="high__speed__logger__spi__link_8c_source.html">high_speed_logger_spi_link.c</a>.</p>
+<p>Definition at line <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00083">83</a> of file <a class="el" href="high__speed__logger__spi__link_8c_source.html">high_speed_logger_spi_link.c</a>.</p>
 
-<p>References <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00031">high_speed_logger_spi_link_ready</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p>References <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00032">high_speed_logger_spi_link_ready</a>.</p>
 
-<p>Referenced by <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00035">high_speed_logger_spi_link_init()</a>.</p>
+<p>Referenced by <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00036">high_speed_logger_spi_link_init()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -261,13 +261,13 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00028">28</a> of file <a class="el" href="high__speed__logger__spi__link_8c_source.html">high_speed_logger_spi_link.c</a>.</p>
+<p>Definition at line <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00029">29</a> of file <a class="el" href="high__speed__logger__spi__link_8c_source.html">high_speed_logger_spi_link.c</a>.</p>
 
-<p>Referenced by <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00035">high_speed_logger_spi_link_init()</a>.</p>
+<p>Referenced by <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00036">high_speed_logger_spi_link_init()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a7afaef9f6de2ba2922f10dfb4f1b6e21"></a>
+<a class="anchor" id="a2b4341a957c0c01b6b056ad76db74219"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -275,7 +275,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">volatile bool_t high_speed_logger_spi_link_ready = <a class="el" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td>
+          <td class="memname">volatile bool high_speed_logger_spi_link_ready = true</td>
         </tr>
       </table>
   </td>
@@ -285,9 +285,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00031">31</a> of file <a class="el" href="high__speed__logger__spi__link_8c_source.html">high_speed_logger_spi_link.c</a>.</p>
+<p>Definition at line <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00032">32</a> of file <a class="el" href="high__speed__logger__spi__link_8c_source.html">high_speed_logger_spi_link.c</a>.</p>
 
-<p>Referenced by <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00054">high_speed_logger_spi_link_periodic()</a>, and <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00074">high_speed_logger_spi_link_trans_cb()</a>.</p>
+<p>Referenced by <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00055">high_speed_logger_spi_link_periodic()</a>, and <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00083">high_speed_logger_spi_link_trans_cb()</a>.</p>
 
 </div>
 </div>
@@ -301,9 +301,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00029">29</a> of file <a class="el" href="high__speed__logger__spi__link_8c_source.html">high_speed_logger_spi_link.c</a>.</p>
+<p>Definition at line <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00030">30</a> of file <a class="el" href="high__speed__logger__spi__link_8c_source.html">high_speed_logger_spi_link.c</a>.</p>
 
-<p>Referenced by <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00035">high_speed_logger_spi_link_init()</a>, and <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00054">high_speed_logger_spi_link_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00036">high_speed_logger_spi_link_init()</a>, and <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00055">high_speed_logger_spi_link_periodic()</a>.</p>
 
 </div>
 </div>
@@ -313,7 +313,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_cbf4be70f5fb954ea1d2a546dd70b40e.html">loggers</a></li><li class="navelem"><a class="el" href="high__speed__logger__spi__link_8c.html">high_speed_logger_spi_link.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:53 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:00 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

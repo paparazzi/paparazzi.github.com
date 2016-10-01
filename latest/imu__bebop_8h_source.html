@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -171,28 +171,31 @@ $(document).ready(function(){initNavTree('imu__bebop_8h_source.html','');});
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="imu__bebop_8h.html#structImuBebop">ImuBebop</a> <a class="code" href="imu__bebop_8h.html#ac0f795229e38fdc451ef93a40921e93b">imu_bebop</a>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__bebop_8h.html#abf59a3c40b631f23435da34574ce0197">imu_bebop_event</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="imu__bebop_8h.html#a38f1122c1ee0701562b490c6e1b60609">   81</a></span>&#160;<span class="preprocessor">#define ImuEvent imu_bebop_event</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* IMU_BEBOP_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__bebop_8h.html#aa31cb19c5b495495b851bd6ff07d2c36">imu_bebop_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__bebop_8h.html#aa2e0dd97234c855b85f5cbf27b27f58e">imu_bebop_periodic</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__bebop_8h.html#abf59a3c40b631f23435da34574ce0197">imu_bebop_event</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* IMU_BEBOP_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="mpu60x0__i2c_8h_html_structMpu60x0__I2c"><div class="ttname"><a href="mpu60x0__i2c_8h.html#structMpu60x0__I2c">Mpu60x0_I2c</a></div><div class="ttdef"><b>Definition:</b> <a href="mpu60x0__i2c_8h_source.html#l00054">mpu60x0_i2c.h:54</a></div></div>
 <div class="ttc" id="ak8963_8h_html"><div class="ttname"><a href="ak8963_8h.html">ak8963.h</a></div><div class="ttdoc">Register and address definitions for AK8963 magnetometer. </div></div>
+<div class="ttc" id="imu__bebop_8h_html_aa31cb19c5b495495b851bd6ff07d2c36"><div class="ttname"><a href="imu__bebop_8h.html#aa31cb19c5b495495b851bd6ff07d2c36">imu_bebop_init</a></div><div class="ttdeci">void imu_bebop_init(void)</div><div class="ttdoc">Navstik IMU initializtion of the MPU-60x0 and HMC58xx. </div><div class="ttdef"><b>Definition:</b> <a href="imu__bebop_8c_source.html#l00081">imu_bebop.c:81</a></div></div>
 <div class="ttc" id="imu__bebop_8h_html_af6183a8c87b33c445406c3d18f6e30ed"><div class="ttname"><a href="imu__bebop_8h.html#af6183a8c87b33c445406c3d18f6e30ed">ImuBebop::mpu</a></div><div class="ttdeci">struct Mpu60x0_I2c mpu</div><div class="ttdoc">The MPU gyro/accel device. </div><div class="ttdef"><b>Definition:</b> <a href="imu__bebop_8h_source.html#l00074">imu_bebop.h:74</a></div></div>
-<div class="ttc" id="imu__bebop_8h_html_abf59a3c40b631f23435da34574ce0197"><div class="ttname"><a href="imu__bebop_8h.html#abf59a3c40b631f23435da34574ce0197">imu_bebop_event</a></div><div class="ttdeci">void imu_bebop_event(void)</div><div class="ttdoc">Handle all the events of the Navstik IMU components. </div><div class="ttdef"><b>Definition:</b> <a href="imu__bebop_8c_source.html#l00109">imu_bebop.c:109</a></div></div>
+<div class="ttc" id="imu__bebop_8h_html_abf59a3c40b631f23435da34574ce0197"><div class="ttname"><a href="imu__bebop_8h.html#abf59a3c40b631f23435da34574ce0197">imu_bebop_event</a></div><div class="ttdeci">void imu_bebop_event(void)</div><div class="ttdoc">Handle all the events of the Navstik IMU components. </div><div class="ttdef"><b>Definition:</b> <a href="imu__bebop_8c_source.html#l00120">imu_bebop.c:120</a></div></div>
 <div class="ttc" id="ak8963_8h_html_structAk8963"><div class="ttname"><a href="ak8963_8h.html#structAk8963">Ak8963</a></div><div class="ttdoc">Default Ak8963 structure. </div><div class="ttdef"><b>Definition:</b> <a href="ak8963_8h_source.html#l00053">ak8963.h:53</a></div></div>
 <div class="ttc" id="imu_8h_html"><div class="ttname"><a href="imu_8h.html">imu.h</a></div><div class="ttdoc">Inertial Measurement Unit interface. </div></div>
+<div class="ttc" id="imu__bebop_8h_html_aa2e0dd97234c855b85f5cbf27b27f58e"><div class="ttname"><a href="imu__bebop_8h.html#aa2e0dd97234c855b85f5cbf27b27f58e">imu_bebop_periodic</a></div><div class="ttdeci">void imu_bebop_periodic(void)</div><div class="ttdoc">Handle all the periodic tasks of the Navstik IMU components. </div><div class="ttdef"><b>Definition:</b> <a href="imu__bebop_8c_source.html#l00107">imu_bebop.c:107</a></div></div>
 <div class="ttc" id="mpu60x0__i2c_8h_html"><div class="ttname"><a href="mpu60x0__i2c_8h.html">mpu60x0_i2c.h</a></div><div class="ttdoc">Driver for the MPU-60X0 using I2C. </div></div>
 <div class="ttc" id="imu__bebop_8h_html_structImuBebop"><div class="ttname"><a href="imu__bebop_8h.html#structImuBebop">ImuBebop</a></div><div class="ttdoc">Everything that is in the bebop IMU. </div><div class="ttdef"><b>Definition:</b> <a href="imu__bebop_8h_source.html#l00073">imu_bebop.h:73</a></div></div>
 <div class="ttc" id="imu__bebop_8h_html_ae2c1b9ecb71e9207e031dcf67278278e"><div class="ttname"><a href="imu__bebop_8h.html#ae2c1b9ecb71e9207e031dcf67278278e">ImuBebop::ak</a></div><div class="ttdeci">struct Ak8963 ak</div><div class="ttdoc">The AK8963 mag. </div><div class="ttdef"><b>Definition:</b> <a href="imu__bebop_8h_source.html#l00075">imu_bebop.h:75</a></div></div>
-<div class="ttc" id="imu__bebop_8h_html_ac0f795229e38fdc451ef93a40921e93b"><div class="ttname"><a href="imu__bebop_8h.html#ac0f795229e38fdc451ef93a40921e93b">imu_bebop</a></div><div class="ttdeci">struct ImuBebop imu_bebop</div><div class="ttdoc">Basic Navstik IMU data. </div><div class="ttdef"><b>Definition:</b> <a href="imu__bebop_8c_source.html#l00074">imu_bebop.c:74</a></div></div>
+<div class="ttc" id="imu__bebop_8h_html_ac0f795229e38fdc451ef93a40921e93b"><div class="ttname"><a href="imu__bebop_8h.html#ac0f795229e38fdc451ef93a40921e93b">imu_bebop</a></div><div class="ttdeci">struct ImuBebop imu_bebop</div><div class="ttdoc">Basic Navstik IMU data. </div><div class="ttdef"><b>Definition:</b> <a href="imu__bebop_8c_source.html#l00076">imu_bebop.c:76</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8b2fa0708e2db44c1b91938af97bac44.html">imu</a></li><li class="navelem"><a class="el" href="imu__bebop_8h.html">imu_bebop.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:31 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:33 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

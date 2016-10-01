@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -258,6 +258,15 @@ $(document).ready(function(){initNavTree('globals_defs_e.html','');});
 <li>ERASE_MEMORY_AT_START
 : <a class="el" href="high__speed__logger__direct__memory_8c.html#aae203a8165f66fc3887fa9cfbb8ba904">high_speed_logger_direct_memory.c</a>
 </li>
+<li>error_cb
+: <a class="el" href="tlsf__malloc__arch_8c.html#a3213f8d0f2a0abc2a6fb5cf54139be33">tlsf_malloc_arch.c</a>
+</li>
+<li>ESC32_BUF_IN_LEN
+: <a class="el" href="esc32_8c.html#a336ca74c2131202d5197654318f8b677">esc32.c</a>
+</li>
+<li>ESC32_BUF_OUT_LEN
+: <a class="el" href="esc32_8c.html#a7c26e50a44c54546f97a8bbdcbdfcbdb">esc32.c</a>
+</li>
 <li>ESC32_CAN_DOC_MASK
 : <a class="el" href="actuators__esc32_8h.html#ad62e4c3df9fc2fb0768a90b2b3e3bdaa">actuators_esc32.h</a>
 </li>
@@ -333,8 +342,14 @@ $(document).ready(function(){initNavTree('globals_defs_e.html','');});
 <li>ESC32_CAN_TT_NODE
 : <a class="el" href="actuators__esc32_8h.html#a6721514a85769e18e68ec56d5255dcae">actuators_esc32.h</a>
 </li>
+<li>ESC32_PARAMS_LEN
+: <a class="el" href="esc32_8c.html#a14ba35e454e49f5b348ca59ddddfa8cb">esc32.c</a>
+</li>
 <li>ESC32_RESPONSE_CNT
 : <a class="el" href="actuators__esc32_8h.html#a6a83a5d3d7992844e695c2e8469d5afd">actuators_esc32.h</a>
+</li>
+<li>ESC32_TELEMETRY_RATE
+: <a class="el" href="esc32_8c.html#ae6b80109b3c06fbcc16398a77a70979c">esc32.c</a>
 </li>
 <li>EULERS_ADD
 : <a class="el" href="group__math__algebra__generic.html#gaace0fc4ea4d4f17ac7d09545b2871080">pprz_algebra.h</a>
@@ -366,26 +381,45 @@ $(document).ready(function(){initNavTree('globals_defs_e.html','');});
 <li>EULERS_SUB
 : <a class="el" href="group__math__algebra__generic.html#ga5c1aa49d0a35b999863609bf7f070a6d">pprz_algebra.h</a>
 </li>
+<li>EVALUATOR2
+: <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a39e0ec33ee11ed6450cd16f46ad9d79f">spektrum_arch.c</a>
+</li>
+<li>EVALUATOR3
+: <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a631908660ded7a879bd3e6c688f363bd">spektrum_arch.c</a>
+</li>
+<li>EXPAND_AS_ENUM
+: <a class="el" href="libisp_8h.html#ad337cbf142f664987d730085a31700fe">libisp.h</a>
+</li>
+<li>EXPAND_AS_FUNCTION
+: <a class="el" href="libisp_8c.html#a04d4a00ad6c9ad268f987de784ecbae6">libisp.c</a>
+</li>
+<li>EXPAND_AS_PROTOTYPE
+: <a class="el" href="libisp_8h.html#ade6570385aa26bc1af4ae27bbe05237f">libisp.h</a>
+</li>
 <li>EXT_CLK
-: <a class="el" href="cc3d_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">cc3d.h</a>
-, <a class="el" href="naze32__rev4_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">naze32_rev4.h</a>
+: <a class="el" href="elle0__common_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">elle0_common.h</a>
 , <a class="el" href="naze32__rev5_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">naze32_rev5.h</a>
-, <a class="el" href="px4fmu__1_87_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">px4fmu_1.7.h</a>
-, <a class="el" href="lisa__m__2_81_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">lisa_m_2.1.h</a>
-, <a class="el" href="apogee__1_80_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">apogee_1.0.h</a>
-, <a class="el" href="navstik__1_80_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">navstik_1.0.h</a>
-, <a class="el" href="lisa__mx__common_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">lisa_mx_common.h</a>
-, <a class="el" href="lisa__m__1_80_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">lisa_m_1.0.h</a>
-, <a class="el" href="elle0__common_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">elle0_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">lisa_s_1.0.h</a>
-, <a class="el" href="stm32f4__discovery_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">stm32f4_discovery.h</a>
 , <a class="el" href="olimex__stm32-h103_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">olimex_stm32-h103.h</a>
-, <a class="el" href="lisa__l__1_80_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">lisa_l_1.0.h</a>
-, <a class="el" href="px4fmu__2_84_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">px4fmu_2.4.h</a>
-, <a class="el" href="lia__1_81_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">lia_1.1.h</a>
-, <a class="el" href="lisa__m__2_80_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">lisa_m_2.0.h</a>
 , <a class="el" href="cjmcu_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">cjmcu.h</a>
+, <a class="el" href="px4fmu__2_84_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">px4fmu_2.4.h</a>
+, <a class="el" href="opa__ap__1_80_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">opa_ap_1.0.h</a>
+, <a class="el" href="lisa__m__2_80_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">lisa_m_2.0.h</a>
+, <a class="el" href="lisa__l__1_80_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">lisa_l_1.0.h</a>
+, <a class="el" href="navstik__1_80_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">navstik_1.0.h</a>
+, <a class="el" href="px4io__2_84_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">px4io_2.4.h</a>
+, <a class="el" href="opa__ftd__1_80_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">opa_ftd_1.0.h</a>
+, <a class="el" href="lisa__m__1_80_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">lisa_m_1.0.h</a>
+, <a class="el" href="px4fmu__1_87_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">px4fmu_1.7.h</a>
+, <a class="el" href="cc3d_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">cc3d.h</a>
+, <a class="el" href="apogee__1_80_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">apogee_1.0.h</a>
+, <a class="el" href="lia__1_81_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">lia_1.1.h</a>
+, <a class="el" href="openpilot__revo__1_80_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">openpilot_revo_1.0.h</a>
+, <a class="el" href="lisa__mx__common_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">lisa_mx_common.h</a>
+, <a class="el" href="naze32__rev4_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">naze32_rev4.h</a>
 , <a class="el" href="krooz__sd_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">krooz_sd.h</a>
+, <a class="el" href="lisa__m__2_81_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">lisa_m_2.1.h</a>
+, <a class="el" href="stm32f4__discovery_8h.html#a91a5eb3f03c2f212cd15277ea67d65a2">stm32f4_discovery.h</a>
 </li>
 <li>EXT_COEFF1
 : <a class="el" href="group__math__geodetic__wmm.html#gac16936073cc48edb3186d149aafd41f8">pprz_geodetic_wmm2015.h</a>
@@ -429,7 +463,7 @@ $(document).ready(function(){initNavTree('globals_defs_e.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:31 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:46 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

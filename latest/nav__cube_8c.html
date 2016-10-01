@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('nav__cube_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nav__cube_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2nav_2nav__cube_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2nav_2nav__cube_8c" id="sw_2airborne_2modules_2nav_2nav__cube_8c">
-<area shape="rect" id="node3" href="nav__cube_8h.html" title="Fixedwing Navigation in a cube towards a center. " alt="" coords="459,370,641,397"/><area shape="rect" id="node11" href="nav_8h.html" title="Fixedwing Navigation library. " alt="" coords="877,95,1023,136"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="490,452,669,479"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="179,527,334,553"/><area shape="rect" id="node9" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="460,527,611,553"/><area shape="rect" id="node12" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1383,191,1479,218"/><area shape="rect" id="node14" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="719,281,786,307"/><area shape="rect" id="node21" href="nav__survey__rectangle_8h.html" title="subsystems/navigation\l/nav_survey_rectangle.h" alt="" coords="861,184,1039,225"/><area shape="rect" id="node22" href="common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="1219,273,1388,315"/><area shape="rect" id="node23" href="common__nav_8h.html" title="subsystems/navigation\l/common_nav.h" alt="" coords="1115,184,1284,225"/><area shape="rect" id="node13" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1413,281,1498,307"/><area shape="rect" id="node15" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="140,452,331,479"/><area shape="rect" id="node17" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="767,363,917,404"/><area shape="rect" id="node19" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="941,363,1092,404"/><area shape="rect" id="node20" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="271,363,435,404"/><area shape="rect" id="node18" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="880,452,1004,479"/></map>
+<area shape="rect" id="node3" href="nav__cube_8h.html" title="Fixedwing Navigation in a cube towards a center. " alt="" coords="290,370,471,397"/><area shape="rect" id="node11" href="nav_8h.html" title="Fixedwing Navigation library. " alt="" coords="357,95,503,136"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="755,452,934,479"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="1119,527,1274,553"/><area shape="rect" id="node9" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="648,527,799,553"/><area shape="rect" id="node12" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="799,191,895,218"/><area shape="rect" id="node14" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="723,281,790,307"/><area shape="rect" id="node22" href="nav__survey__rectangle_8h.html" title="subsystems/navigation\l/nav_survey_rectangle.h" alt="" coords="341,184,519,225"/><area shape="rect" id="node23" href="common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="352,273,521,315"/><area shape="rect" id="node24" href="common__nav_8h.html" title="subsystems/navigation\l/common_nav.h" alt="" coords="543,184,712,225"/><area shape="rect" id="node13" href="inttypes_8h.html" title="inttypes.h" alt="" coords="814,281,899,307"/><area shape="rect" id="node15" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1269,452,1460,479"/><area shape="rect" id="node18" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="788,363,939,404"/><area shape="rect" id="node20" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1153,363,1304,404"/><area shape="rect" id="node21" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="963,363,1127,404"/><area shape="rect" id="node19" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="1069,452,1193,479"/></map>
 </div>
 </div>
 <p><a href="nav__cube_8c_source.html">Go to the source code of this file.</a></p>
@@ -141,10 +141,10 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7e7593ff8621308ea9bb02b49aee396e"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__cube_8c.html#a7e7593ff8621308ea9bb02b49aee396e">nav_cube_setup</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> center, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> tb, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> te)</td></tr>
-<tr class="separator:a7e7593ff8621308ea9bb02b49aee396e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c53fc2bd6894f4f6cb583a2aafcb3b1"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__cube_8c.html#a1c53fc2bd6894f4f6cb583a2aafcb3b1">nav_cube_run</a> (<a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> j, <a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> i, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> dest_b, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> dest_e, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> src_b, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> src_e)</td></tr>
-<tr class="separator:a1c53fc2bd6894f4f6cb583a2aafcb3b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6522ec0a191825457b1db3c298371764"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__cube_8c.html#a6522ec0a191825457b1db3c298371764">nav_cube_setup</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> center, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> tb, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> te)</td></tr>
+<tr class="separator:a6522ec0a191825457b1db3c298371764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23cc3e8c63a992b5f8ab9ea8c1d026c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__cube_8c.html#a23cc3e8c63a992b5f8ab9ea8c1d026c5">nav_cube_run</a> (<a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> j, <a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> i, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> dest_b, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> dest_e, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> src_b, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> src_e)</td></tr>
+<tr class="separator:a23cc3e8c63a992b5f8ab9ea8c1d026c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -189,12 +189,12 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a1c53fc2bd6894f4f6cb583a2aafcb3b1"></a>
+<a class="anchor" id="a23cc3e8c63a992b5f8ab9ea8c1d026c5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool_t nav_cube_run </td>
+          <td class="memname">bool nav_cube_run </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a>&#160;</td>
           <td class="paramname"><em>j</em>, </td>
@@ -239,16 +239,16 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="nav__cube_8c_source.html#l00144">144</a> of file <a class="el" href="nav__cube_8c_source.html">nav_cube.c</a>.</p>
 
-<p>References <a class="el" href="common__nav_8h_source.html#l00042">point::a</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="nav__cube_8h_source.html#l00115">NavCube::grid_z</a>, <a class="el" href="common__nav_8c_source.html#l00040">ground_alt</a>, <a class="el" href="nav__cube_8c_source.html#l00037">nav_cube</a>, <a class="el" href="nav__cube_8h_source.html#l00119">NavCube::nline_x</a>, <a class="el" href="nav__cube_8h_source.html#l00120">NavCube::nline_z</a>, <a class="el" href="common__nav_8c_source.html#l00038">waypoints</a>, <a class="el" href="common__nav_8h_source.html#l00040">point::x</a>, and <a class="el" href="common__nav_8h_source.html#l00041">point::y</a>.</p>
+<p>References <a class="el" href="common__nav_8h_source.html#l00042">point::a</a>, <a class="el" href="nav__cube_8h_source.html#l00115">NavCube::grid_z</a>, <a class="el" href="common__nav_8c_source.html#l00040">ground_alt</a>, <a class="el" href="nav__cube_8c_source.html#l00037">nav_cube</a>, <a class="el" href="nav__cube_8h_source.html#l00119">NavCube::nline_x</a>, <a class="el" href="nav__cube_8h_source.html#l00120">NavCube::nline_z</a>, <a class="el" href="common__nav_8c_source.html#l00038">waypoints</a>, <a class="el" href="common__nav_8h_source.html#l00040">point::x</a>, and <a class="el" href="common__nav_8h_source.html#l00041">point::y</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a7e7593ff8621308ea9bb02b49aee396e"></a>
+<a class="anchor" id="a6522ec0a191825457b1db3c298371764"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool_t nav_cube_setup </td>
+          <td class="memname">bool nav_cube_setup </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>center</em>, </td>
@@ -275,7 +275,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="nav__cube_8c_source.html#l00039">39</a> of file <a class="el" href="nav__cube_8c_source.html">nav_cube.c</a>.</p>
 
-<p>References <a class="el" href="common__nav_8h_source.html#l00042">point::a</a>, <a class="el" href="nav__cube_8h_source.html#l00113">NavCube::alpha</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="nav__cube_8h_source.html#l00114">NavCube::grid_x</a>, <a class="el" href="nav__cube_8h_source.html#l00115">NavCube::grid_z</a>, <a class="el" href="nav__cube_8c_source.html#l00034">MAX_LINES_X</a>, <a class="el" href="nav__cube_8c_source.html#l00037">nav_cube</a>, <a class="el" href="nav__cube_8h_source.html#l00119">NavCube::nline_x</a>, <a class="el" href="nav__cube_8h_source.html#l00120">NavCube::nline_z</a>, <a class="el" href="nav__cube_8h_source.html#l00117">NavCube::nsect_x</a>, <a class="el" href="nav__cube_8h_source.html#l00118">NavCube::nsect_z</a>, <a class="el" href="nav__cube_8h_source.html#l00112">NavCube::offset</a>, <a class="el" href="nav__cube_8h_source.html#l00116">NavCube::sect</a>, <a class="el" href="nav__cube_8h_source.html#l00105">NavCube::size</a>, <a class="el" href="nav__cube_8c_source.html#l00035">STBY_OFFSET</a>, <a class="el" href="common__nav_8c_source.html#l00038">waypoints</a>, <a class="el" href="common__nav_8h_source.html#l00045">WaypointX</a>, <a class="el" href="common__nav_8h_source.html#l00046">WaypointY</a>, <a class="el" href="common__nav_8h_source.html#l00040">point::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="common__nav_8h_source.html#l00041">point::y</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
+<p>References <a class="el" href="common__nav_8h_source.html#l00042">point::a</a>, <a class="el" href="textons_8c_source.html#l00107">alpha</a>, <a class="el" href="nav__cube_8h_source.html#l00113">NavCube::alpha</a>, <a class="el" href="nav__cube_8h_source.html#l00114">NavCube::grid_x</a>, <a class="el" href="nav__cube_8h_source.html#l00115">NavCube::grid_z</a>, <a class="el" href="nav__cube_8c_source.html#l00034">MAX_LINES_X</a>, <a class="el" href="nav__cube_8c_source.html#l00037">nav_cube</a>, <a class="el" href="nav__cube_8h_source.html#l00119">NavCube::nline_x</a>, <a class="el" href="nav__cube_8h_source.html#l00120">NavCube::nline_z</a>, <a class="el" href="nav__cube_8h_source.html#l00117">NavCube::nsect_x</a>, <a class="el" href="nav__cube_8h_source.html#l00118">NavCube::nsect_z</a>, <a class="el" href="nav__cube_8h_source.html#l00112">NavCube::offset</a>, <a class="el" href="nav__cube_8h_source.html#l00116">NavCube::sect</a>, <a class="el" href="nav__cube_8h_source.html#l00105">NavCube::size</a>, <a class="el" href="nav__cube_8c_source.html#l00035">STBY_OFFSET</a>, <a class="el" href="common__nav_8c_source.html#l00038">waypoints</a>, <a class="el" href="common__nav_8h_source.html#l00045">WaypointX</a>, <a class="el" href="common__nav_8h_source.html#l00046">WaypointY</a>, <a class="el" href="common__nav_8h_source.html#l00040">point::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="common__nav_8h_source.html#l00041">point::y</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
 
 </div>
 </div>
@@ -302,7 +302,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_984e899df90dd104b2eabcdbb76ec71f.html">nav</a></li><li class="navelem"><a class="el" href="nav__cube_8c.html">nav_cube.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:54 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:02 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

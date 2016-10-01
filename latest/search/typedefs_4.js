@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['get_5fbyte_5ft',['get_byte_t',['../link__device_8h.html#a6fddca63ad58a5df7bc94c0dcf887b71',1,'link_device.h']]]
+  ['filedes',['FileDes',['../sdLog_8h.html#a5af0a3873249752407b6c26c77c9a46d',1,'sdLog.h']]]
 ];

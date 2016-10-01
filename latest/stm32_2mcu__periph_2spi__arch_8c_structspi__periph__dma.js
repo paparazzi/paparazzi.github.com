@@ -7,13 +7,13 @@ var stm32_2mcu__periph_2spi__arch_8c_structspi__periph__dma =
     [ "rx_chan", "stm32_2mcu__periph_2spi__arch_8c.html#ac232e23c83482e2e9f661808d4592dd6", null ],
     [ "rx_chan_sel", "stm32_2mcu__periph_2spi__arch_8c.html#a8fe5c67f9600efa846743d5c4ac61dba", null ],
     [ "rx_dummy_buf", "stm32_2mcu__periph_2spi__arch_8c.html#a23f6cd09954b922f646d7f955bc167f2", null ],
-    [ "rx_extra_dummy_dma", "stm32_2mcu__periph_2spi__arch_8c.html#a8b12df470f85d53a641a220c91c91b70", null ],
+    [ "rx_extra_dummy_dma", "stm32_2mcu__periph_2spi__arch_8c.html#afff4df9fc6fd8f73287979945d18b9a0", null ],
     [ "rx_nvic_irq", "stm32_2mcu__periph_2spi__arch_8c.html#a56e24d00363c933166677bc357230be1", null ],
     [ "spi", "stm32_2mcu__periph_2spi__arch_8c.html#a901adca11b1c5ce1bf2b5492f7311dcd", null ],
     [ "spidr", "stm32_2mcu__periph_2spi__arch_8c.html#ad50cd4c985c5381eb5a94f9b92ee90ea", null ],
     [ "tx_chan", "stm32_2mcu__periph_2spi__arch_8c.html#a269aac7aaa7cac92293b4046b41e9b90", null ],
     [ "tx_chan_sel", "stm32_2mcu__periph_2spi__arch_8c.html#ad7877aeecf644dd6df89402775775e54", null ],
     [ "tx_dummy_buf", "stm32_2mcu__periph_2spi__arch_8c.html#aa279d5bc4ce3800d04f79e1e339b16db", null ],
-    [ "tx_extra_dummy_dma", "stm32_2mcu__periph_2spi__arch_8c.html#a1c4e40599bed6bdd4377e79490ca13f6", null ],
+    [ "tx_extra_dummy_dma", "stm32_2mcu__periph_2spi__arch_8c.html#ab92b8d94db995ccc8122f1c198092304", null ],
     [ "tx_nvic_irq", "stm32_2mcu__periph_2spi__arch_8c.html#a14f668fc1be63f17e24c4c3d16c625da", null ]
 ];

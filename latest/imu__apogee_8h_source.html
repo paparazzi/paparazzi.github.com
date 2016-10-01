@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -200,29 +200,24 @@ $(document).ready(function(){initNavTree('imu__apogee_8h_source.html','');});
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="imu__apogee_8h.html#structImuApogee">ImuApogee</a> <a class="code" href="imu__apogee_8h.html#a195fd58b3335b4b91593e2c7d1bdb6fb">imu_apogee</a>;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">/* must be defined in order to be IMU code: declared in imu.h</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">extern void imu_impl_init(void);</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">extern void imu_periodic(void);</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">/* Own Extra Functions */</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__apogee_8h.html#a60395d55d1c3bbb3773a3bc79f210884">imu_apogee_event</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__apogee_8h.html#a1262a50ea34da37d89d68b295310a0fd">imu_apogee_downlink_raw</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#a38f1122c1ee0701562b490c6e1b60609">  119</a></span>&#160;<span class="preprocessor">#define ImuEvent imu_apogee_event</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif // IMU_APOGEE_H</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__apogee_8h.html#a5ddbbf57488228a97e3d607bac33d837">imu_apogee_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__apogee_8h.html#a43abac81ed29891c48ad37a910562844">imu_apogee_periodic</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__apogee_8h.html#a60395d55d1c3bbb3773a3bc79f210884">imu_apogee_event</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__apogee_8h.html#a1262a50ea34da37d89d68b295310a0fd">imu_apogee_downlink_raw</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif // IMU_APOGEE_H</span></div>
 <div class="ttc" id="imu__apogee_8h_html_af336a924ca29eddfb18fd75358fc210f"><div class="ttname"><a href="imu__apogee_8h.html#af336a924ca29eddfb18fd75358fc210f">ImuApogee::mpu</a></div><div class="ttdeci">struct Mpu60x0_I2c mpu</div><div class="ttdef"><b>Definition:</b> <a href="imu__apogee_8h_source.html#l00101">imu_apogee.h:101</a></div></div>
 <div class="ttc" id="mpu60x0__i2c_8h_html_structMpu60x0__I2c"><div class="ttname"><a href="mpu60x0__i2c_8h.html#structMpu60x0__I2c">Mpu60x0_I2c</a></div><div class="ttdef"><b>Definition:</b> <a href="mpu60x0__i2c_8h_source.html#l00054">mpu60x0_i2c.h:54</a></div></div>
 <div class="ttc" id="imu__apogee_8h_html_a1262a50ea34da37d89d68b295310a0fd"><div class="ttname"><a href="imu__apogee_8h.html#a1262a50ea34da37d89d68b295310a0fd">imu_apogee_downlink_raw</a></div><div class="ttdeci">void imu_apogee_downlink_raw(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__apogee_8c_source.html#l00136">imu_apogee.c:136</a></div></div>
 <div class="ttc" id="ak8975_8h_html_structAk8975"><div class="ttname"><a href="ak8975_8h.html#structAk8975">Ak8975</a></div><div class="ttdef"><b>Definition:</b> <a href="ak8975_8h_source.html#l00059">ak8975.h:59</a></div></div>
+<div class="ttc" id="imu__apogee_8h_html_a43abac81ed29891c48ad37a910562844"><div class="ttname"><a href="imu__apogee_8h.html#a43abac81ed29891c48ad37a910562844">imu_apogee_periodic</a></div><div class="ttdeci">void imu_apogee_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__apogee_8c_source.html#l00123">imu_apogee.c:123</a></div></div>
 <div class="ttc" id="imu__apogee_8h_html_a60395d55d1c3bbb3773a3bc79f210884"><div class="ttname"><a href="imu__apogee_8h.html#a60395d55d1c3bbb3773a3bc79f210884">imu_apogee_event</a></div><div class="ttdeci">void imu_apogee_event(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__apogee_8c_source.html#l00145">imu_apogee.c:145</a></div></div>
 <div class="ttc" id="imu__apogee_8h_html_structImuApogee"><div class="ttname"><a href="imu__apogee_8h.html#structImuApogee">ImuApogee</a></div><div class="ttdef"><b>Definition:</b> <a href="imu__apogee_8h_source.html#l00100">imu_apogee.h:100</a></div></div>
 <div class="ttc" id="imu_8h_html"><div class="ttname"><a href="imu_8h.html">imu.h</a></div><div class="ttdoc">Inertial Measurement Unit interface. </div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
 <div class="ttc" id="mpu60x0__i2c_8h_html"><div class="ttname"><a href="mpu60x0__i2c_8h.html">mpu60x0_i2c.h</a></div><div class="ttdoc">Driver for the MPU-60X0 using I2C. </div></div>
 <div class="ttc" id="ak8975_8h_html"><div class="ttname"><a href="ak8975_8h.html">ak8975.h</a></div><div class="ttdoc">Driver for the AKM AK8975 magnetometer. </div></div>
+<div class="ttc" id="imu__apogee_8h_html_a5ddbbf57488228a97e3d607bac33d837"><div class="ttname"><a href="imu__apogee_8h.html#a5ddbbf57488228a97e3d607bac33d837">imu_apogee_init</a></div><div class="ttdeci">void imu_apogee_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__apogee_8c_source.html#l00101">imu_apogee.c:101</a></div></div>
 <div class="ttc" id="imu__apogee_8h_html_a195fd58b3335b4b91593e2c7d1bdb6fb"><div class="ttname"><a href="imu__apogee_8h.html#a195fd58b3335b4b91593e2c7d1bdb6fb">imu_apogee</a></div><div class="ttdeci">struct ImuApogee imu_apogee</div><div class="ttdef"><b>Definition:</b> <a href="imu__apogee_8c_source.html#l00092">imu_apogee.c:92</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -230,7 +225,7 @@ $(document).ready(function(){initNavTree('imu__apogee_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_906fcced062b34dea0e143ec53b4cca3.html">apogee</a></li><li class="navelem"><a class="el" href="imu__apogee_8h.html">imu_apogee.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:16 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:15 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

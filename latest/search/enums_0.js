@@ -5,7 +5,7 @@ var searchData=
   ['actuators_5fasctec_5fcmds',['actuators_asctec_cmds',['../actuators__asctec_8h.html#a82d0d12190beb7d9db322455bf6a4d1d',1,'actuators_asctec.h']]],
   ['actuators_5fasctec_5fv2_5faddr',['actuators_asctec_v2_addr',['../actuators__asctec__v2_8h.html#a6a84074f57bc5110d7e301d4662c4899',1,'actuators_asctec_v2_addr():&#160;actuators_asctec_v2.h'],['../actuators__asctec__v2__new_8h.html#a6a84074f57bc5110d7e301d4662c4899',1,'actuators_asctec_v2_addr():&#160;actuators_asctec_v2_new.h']]],
   ['actuators_5fasctec_5fv2_5fcmd',['actuators_asctec_v2_cmd',['../actuators__asctec__v2_8h.html#a4fc4c81cd178f2e57a6d8ce74785742e',1,'actuators_asctec_v2_cmd():&#160;actuators_asctec_v2.h'],['../actuators__asctec__v2__new_8h.html#a4fc4c81cd178f2e57a6d8ce74785742e',1,'actuators_asctec_v2_cmd():&#160;actuators_asctec_v2_new.h']]],
-  ['adc1_5fchannels',['adc1_channels',['../stm32_2mcu__periph_2adc__arch_8h.html#ac1dbdbf706177270f68597836106d8c9',1,'adc_arch.h']]],
+  ['adc1_5fchannels',['adc1_channels',['../chibios_2mcu__periph_2adc__arch_8h.html#ac1dbdbf706177270f68597836106d8c9',1,'adc1_channels():&#160;adc_arch.h'],['../stm32_2mcu__periph_2adc__arch_8h.html#ac1dbdbf706177270f68597836106d8c9',1,'adc1_channels():&#160;adc_arch.h']]],
   ['adc2_5fchannels',['adc2_channels',['../stm32_2mcu__periph_2adc__arch_8h.html#a33afbc7bbad301d909dfd2faaeae1b45',1,'adc_arch.h']]],
   ['adc3_5fchannels',['adc3_channels',['../stm32_2mcu__periph_2adc__arch_8h.html#ab970f46debc24fe7a8a068048c94085b',1,'adc_arch.h']]],
   ['ads1220confstatus',['Ads1220ConfStatus',['../ads1220_8h.html#a9875910a2ac8720b44bb6841303ef50d',1,'ads1220.h']]],

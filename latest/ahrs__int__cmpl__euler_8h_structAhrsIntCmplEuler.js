@@ -4,7 +4,7 @@ var ahrs__int__cmpl__euler_8h_structAhrsIntCmplEuler =
     [ "gyro_bias", "ahrs__int__cmpl__euler_8h.html#a44b547510655944e0ed0c8dbe6651dc1", null ],
     [ "hi_res_euler", "ahrs__int__cmpl__euler_8h.html#ae9bf815ee507229b24307a97fa1ce5f2", null ],
     [ "imu_rate", "ahrs__int__cmpl__euler_8h.html#a4e65e24910b6c70ea44389a3fded0ab8", null ],
-    [ "is_aligned", "ahrs__int__cmpl__euler_8h.html#a5c9219c131ba0a7020262b69d854fc64", null ],
+    [ "is_aligned", "ahrs__int__cmpl__euler_8h.html#a267591a3417d7cdb83ad7d107b07b26d", null ],
     [ "ltp_to_imu_euler", "ahrs__int__cmpl__euler_8h.html#a0062c3e667148c2267533eccc3cdbc6c", null ],
     [ "mag_offset", "ahrs__int__cmpl__euler_8h.html#a28e43135829dd2a47c007e2f6aa113e5", null ],
     [ "measure", "ahrs__int__cmpl__euler_8h.html#a6607073c810f78bb3f4d31d8fddfbe6e", null ],

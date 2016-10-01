@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('linux_2mcu__periph_2uart__arch_8h.html
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="linux_2mcu__periph_2uart__arch_8h__incl.png" border="0" usemap="#sw_2airborne_2arch_2linux_2mcu__periph_2uart__arch_8h" alt=""/></div>
 <map name="sw_2airborne_2arch_2linux_2mcu__periph_2uart__arch_8h" id="sw_2airborne_2arch_2linux_2mcu__periph_2uart__arch_8h">
-<area shape="rect" id="node2" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="226,95,365,121"/><area shape="rect" id="node4" href="link__device_8h.html" title="generic device header " alt="" coords="204,169,387,196"/><area shape="rect" id="node5" href="inttypes_8h.html" title="inttypes.h" alt="" coords="253,244,338,271"/></map>
+<area shape="rect" id="node2" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="227,95,366,121"/></map>
 </div>
 </div>
 <p><a href="linux_2mcu__periph_2uart__arch_8h_source.html">Go to the source code of this file.</a></p>
@@ -160,7 +160,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="linux_2mcu__periph_2uart__arch_8h_source.html#l00031">31</a> of file <a class="el" href="linux_2mcu__periph_2uart__arch_8h_source.html">uart_arch.h</a>.</p>
 
-<p>Referenced by <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00296">uart_char_available()</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00287">uart_getch()</a>, <a class="el" href="lpc21_2mcu__periph_2uart__arch_8c_source.html#l00114">uart_ISR()</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00261">uart_receive_handler()</a>, and <a class="el" href="stm32_2mcu__periph_2uart__arch_8c_source.html#l00136">usart_isr()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00053">handle_uart_rx()</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00296">uart_char_available()</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00822">uart_getch()</a>, <a class="el" href="lpc21_2mcu__periph_2uart__arch_8c_source.html#l00114">uart_ISR()</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00261">uart_receive_handler()</a>, and <a class="el" href="stm32_2mcu__periph_2uart__arch_8c_source.html#l00136">usart_isr()</a>.</p>
 
 </div>
 </div>
@@ -180,8 +180,6 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="linux_2mcu__periph_2uart__arch_8h_source.html#l00061">61</a> of file <a class="el" href="linux_2mcu__periph_2uart__arch_8h_source.html">uart_arch.h</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00390">gps_ubx_ucenter_config_port()</a>, and <a class="el" href="gps__ubx__ucenter_8c_source.html#l00445">gps_ubx_ucenter_configure()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a05f5d709605c6317c97e4974bec3402a"></a>
@@ -196,7 +194,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="linux_2mcu__periph_2uart__arch_8h_source.html#l00034">34</a> of file <a class="el" href="linux_2mcu__periph_2uart__arch_8h_source.html">uart_arch.h</a>.</p>
 
-<p>Referenced by <a class="el" href="uart_8c_source.html#l00256">uart_check_free_space()</a>, <a class="el" href="lpc21_2mcu__periph_2uart__arch_8c_source.html#l00114">uart_ISR()</a>, <a class="el" href="lpc21_2mcu__periph_2uart__arch_8c_source.html#l00083">uart_put_byte()</a>, and <a class="el" href="stm32_2mcu__periph_2uart__arch_8c_source.html#l00136">usart_isr()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00074">handle_uart_tx()</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00899">uart_check_free_space()</a>, <a class="el" href="lpc21_2mcu__periph_2uart__arch_8c_source.html#l00114">uart_ISR()</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00945">uart_put_buffer()</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00917">uart_put_byte()</a>, and <a class="el" href="stm32_2mcu__periph_2uart__arch_8c_source.html#l00136">usart_isr()</a>.</p>
 
 </div>
 </div>
@@ -225,7 +223,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="linux_2mcu__periph_2uart__arch_8h_source.html#l00043">43</a> of file <a class="el" href="linux_2mcu__periph_2uart__arch_8h_source.html">uart_arch.h</a>.</p>
 
-<p>References <a class="el" href="lpc21_2mcu__periph_2uart__arch_8h_source.html#l00045">B115200</a>, <a class="el" href="lpc21_2mcu__periph_2uart__arch_8h_source.html#l00037">B1200</a>, <a class="el" href="lpc21_2mcu__periph_2uart__arch_8h_source.html#l00041">B19200</a>, <a class="el" href="lpc21_2mcu__periph_2uart__arch_8h_source.html#l00046">B230400</a>, <a class="el" href="lpc21_2mcu__periph_2uart__arch_8h_source.html#l00038">B2400</a>, <a class="el" href="lpc21_2mcu__periph_2uart__arch_8h_source.html#l00042">B38400</a>, <a class="el" href="lpc21_2mcu__periph_2uart__arch_8h_source.html#l00039">B4800</a>, <a class="el" href="lpc21_2mcu__periph_2uart__arch_8h_source.html#l00043">B57600</a>, <a class="el" href="stm32_2mcu__periph_2uart__arch_8h_source.html#l00042">B921600</a>, and <a class="el" href="lpc21_2mcu__periph_2uart__arch_8h_source.html#l00040">B9600</a>.</p>
+<p>References <a class="el" href="chibios_2mcu__periph_2uart__arch_8h_source.html#l00048">B115200</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8h_source.html#l00040">B1200</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8h_source.html#l00044">B19200</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8h_source.html#l00049">B230400</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8h_source.html#l00041">B2400</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8h_source.html#l00045">B38400</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8h_source.html#l00042">B4800</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8h_source.html#l00046">B57600</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8h_source.html#l00050">B921600</a>, and <a class="el" href="chibios_2mcu__periph_2uart__arch_8h_source.html#l00043">B9600</a>.</p>
 
 </div>
 </div>
@@ -235,7 +233,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_92fbf38b8c893a0928a3445a75d0ac01.html">linux</a></li><li class="navelem"><a class="el" href="dir_7cedabfb4d36d0fdf06823c7fd9084fc.html">mcu_periph</a></li><li class="navelem"><a class="el" href="linux_2mcu__periph_2uart__arch_8h.html">uart_arch.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:34 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:37 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

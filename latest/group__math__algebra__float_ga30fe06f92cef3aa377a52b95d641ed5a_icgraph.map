@@ -1,33 +1,39 @@
 <map id="float_quat_comp_inv" name="float_quat_comp_inv">
-<area shape="rect" id="node2" href="$ahrs__float__cmpl_8h.html#a9a73bda8896ecb4c0faaf991834393ed" title="ahrs_fc_recompute_ltp\l_to_body" alt="" coords="221,74,389,115"/>
-<area shape="rect" id="node11" href="$ahrs__float__invariant__wrapper_8c.html#a2e90a05e5a4ca369d0308bb72e68171d" title="Compute body orientation and rates from imu orientation and rates. " alt="" coords="208,201,401,242"/>
-<area shape="rect" id="node15" href="$group__math__algebra__float.html#ga702e4347a599d0f6c4003e347bde3825" title="Composition (multiplication) of two quaternions with normalization. " alt="" coords="227,281,382,322"/>
-<area shape="rect" id="node16" href="$ahrs__float__mlkf__wrapper_8c.html#abea8ede7c8ebc5179487d3464ab513bb" title="Compute body orientation and rates from imu orientation and rates. " alt="" coords="208,347,401,373"/>
-<area shape="rect" id="node22" href="$stabilization__attitude__rc__setpoint_8h.html#a9d0b7ad4c9f5c936c3f06910ac5d0185" title="Read attitude setpoint from RC as quaternion Interprets the stick positions as axes. " alt="" coords="213,409,396,450"/>
-<area shape="rect" id="node24" href="$guidance__indi_8h.html#ac2747905b79ab39b935a6f140fd21695" title="stabilization_attitude\l_set_setpoint_rp_quat_f" alt="" coords="217,495,392,537"/>
+<area shape="rect" id="node2" href="$ahrs__float__cmpl_8h.html#a9a73bda8896ecb4c0faaf991834393ed" title="ahrs_fc_recompute_ltp\l_to_body" alt="" coords="221,99,389,141"/>
+<area shape="rect" id="node12" href="$ahrs__float__invariant__wrapper_8c.html#a2e90a05e5a4ca369d0308bb72e68171d" title="Compute body orientation and rates from imu orientation and rates. " alt="" coords="208,241,401,282"/>
+<area shape="rect" id="node16" href="$group__math__algebra__float.html#ga702e4347a599d0f6c4003e347bde3825" title="Composition (multiplication) of two quaternions with normalization. " alt="" coords="227,306,382,347"/>
+<area shape="rect" id="node17" href="$ahrs__float__invariant__wrapper_8c.html#ae9244e1c3c685a32cc7ac97134ea6f6d" title="send_att" alt="" coords="265,372,344,399"/>
+<area shape="rect" id="node18" href="$ahrs__float__mlkf__wrapper_8c.html#abea8ede7c8ebc5179487d3464ab513bb" title="Compute body orientation and rates from imu orientation and rates. " alt="" coords="208,423,401,449"/>
+<area shape="rect" id="node24" href="$stabilization__attitude__rc__setpoint_8h.html#a7e0d148d1e5210bb1b299163d77daa4a" title="Read attitude setpoint from RC as quaternion Interprets the stick positions as axes. " alt="" coords="213,563,396,605"/>
+<area shape="rect" id="node28" href="$guidance__indi_8h.html#a496e8f027f73bd6069de57c4f55cd747" title="stabilization_attitude\l_set_setpoint_rp_quat_f" alt="" coords="217,658,392,699"/>
 <area shape="rect" id="node3" href="$ahrs__float__cmpl_8h.html#aaabc7dc5bd1a6623dfd6b6642badcb1c" title="Hard reset yaw to a heading. " alt="" coords="451,5,627,32"/>
 <area shape="rect" id="node7" href="$ahrs__float__cmpl_8h.html#aebdc25e0d7025b98b96153d54e2b29c1" title="Update yaw based on a heading measurement. " alt="" coords="449,56,628,83"/>
-<area shape="rect" id="node8" href="$ahrs__float__cmpl__wrapper_8c.html#a2e90a05e5a4ca369d0308bb72e68171d" title="Compute body orientation and rates from imu orientation and rates. " alt="" coords="676,99,869,141"/>
-<area shape="rect" id="node4" href="$ahrs__float__cmpl_8h.html#ad866a4c74ddf87b458a8cadc7a002ef2" title="ahrs_fc_update_gps" alt="" coords="697,48,848,75"/>
-<area shape="rect" id="node5" href="$ahrs__float__cmpl__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="951,52,1018,79"/>
-<area shape="rect" id="node6" href="$ahrs__float__cmpl__wrapper_8h.html#aa47cd2e2f95362dd732bac1f275344e0" title="ahrs_fc_register" alt="" coords="1100,103,1224,129"/>
-<area shape="rect" id="node9" href="$ahrs__float__cmpl__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="941,103,1028,129"/>
-<area shape="rect" id="node10" href="$ahrs__float__cmpl__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="949,153,1021,180"/>
-<area shape="rect" id="node12" href="$ahrs__float__invariant__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="495,157,582,184"/>
-<area shape="rect" id="node14" href="$ahrs__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ahrs_float_invariant_propagate on new gyro measurements. " alt="" coords="503,208,575,235"/>
-<area shape="rect" id="node13" href="$ahrs__float__invariant__wrapper_8h.html#af929b6f9cb8695819d29bdacca1f24f0" title="ahrs_float_invariant\l_register" alt="" coords="699,183,846,225"/>
-<area shape="rect" id="node17" href="$ahrs__float__mlkf__wrapper_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title="accel_cb" alt="" coords="500,259,577,285"/>
-<area shape="rect" id="node19" href="$ahrs__float__mlkf__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="495,309,582,336"/>
-<area shape="rect" id="node20" href="$ahrs__float__mlkf__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="503,360,575,387"/>
-<area shape="rect" id="node21" href="$ahrs__float__mlkf__wrapper_8c.html#a49cc1e545848b85016af530049991c02" title="mag_cb" alt="" coords="502,411,575,437"/>
-<area shape="rect" id="node18" href="$ahrs__float__mlkf__wrapper_8h.html#adf9165ad7440f11e3dae35391f5844d6" title="ahrs_mlkf_register" alt="" coords="703,335,843,361"/>
-<area shape="rect" id="node23" href="$stabilization__attitude__quat__float_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc" title="stabilization_attitude\l_read_rc" alt="" coords="461,462,616,503"/>
-<area shape="rect" id="node25" href="$guidance__indi_8h.html#a24d1024bbd8da21b6c70317fda39d929" title="guidance_indi_run" alt="" coords="470,528,607,555"/>
-<area shape="rect" id="node26" href="$guidance__h_8h.html#ac4cf6da90a4278b4d0b2e4f227b33f2c" title="guidance_h_run" alt="" coords="711,528,834,555"/>
-<area shape="rect" id="node27" href="$rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="917,528,1052,555"/>
-<area shape="rect" id="node28" href="$rotorcraft_2main__fbw_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="1107,528,1217,555"/>
-<area shape="rect" id="node29" href="$rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="1272,528,1435,555"/>
-<area shape="rect" id="node30" href="$fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1495,503,1549,529"/>
-<area shape="rect" id="node31" href="$main__chibios__libopencm3_8c.html#ad648a546fe66cd5f9328f33221a40c64" title="pprz_thd" alt="" coords="1483,553,1561,580"/>
-<area shape="rect" id="node32" href="$main__chibios__libopencm3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1609,553,1664,580"/>
+<area shape="rect" id="node8" href="$ahrs__float__cmpl__wrapper_8c.html#a2e90a05e5a4ca369d0308bb72e68171d" title="Compute body orientation and rates from imu orientation and rates. " alt="" coords="676,74,869,115"/>
+<area shape="rect" id="node11" href="$ahrs__float__cmpl__wrapper_8c.html#aaa9860c134b8f393c70b5c0f9ac9543a" title="send_euler_int" alt="" coords="927,167,1042,193"/>
+<area shape="rect" id="node4" href="$ahrs__float__cmpl_8h.html#ad866a4c74ddf87b458a8cadc7a002ef2" title="ahrs_fc_update_gps" alt="" coords="697,15,848,41"/>
+<area shape="rect" id="node5" href="$ahrs__float__cmpl__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="951,15,1018,41"/>
+<area shape="rect" id="node6" href="$ahrs__float__cmpl__wrapper_8h.html#aa47cd2e2f95362dd732bac1f275344e0" title="ahrs_fc_register" alt="" coords="1100,91,1224,117"/>
+<area shape="rect" id="node9" href="$ahrs__float__cmpl__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="941,65,1028,92"/>
+<area shape="rect" id="node10" href="$ahrs__float__cmpl__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="949,116,1021,143"/>
+<area shape="rect" id="node13" href="$ahrs__float__invariant__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="495,208,582,235"/>
+<area shape="rect" id="node15" href="$ahrs__float__invariant__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="Call ahrs_float_invariant_propagate on new gyro measurements. " alt="" coords="503,259,575,285"/>
+<area shape="rect" id="node14" href="$ahrs__float__invariant__wrapper_8h.html#af929b6f9cb8695819d29bdacca1f24f0" title="ahrs_float_invariant\l_register" alt="" coords="699,251,846,293"/>
+<area shape="rect" id="node19" href="$ahrs__float__mlkf__wrapper_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title="accel_cb" alt="" coords="500,360,577,387"/>
+<area shape="rect" id="node21" href="$ahrs__float__mlkf__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="495,411,582,437"/>
+<area shape="rect" id="node22" href="$ahrs__float__mlkf__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="503,461,575,488"/>
+<area shape="rect" id="node23" href="$ahrs__float__mlkf__wrapper_8c.html#a49cc1e545848b85016af530049991c02" title="mag_cb" alt="" coords="502,512,575,539"/>
+<area shape="rect" id="node20" href="$ahrs__float__mlkf__wrapper_8h.html#adf9165ad7440f11e3dae35391f5844d6" title="ahrs_mlkf_register" alt="" coords="703,436,843,463"/>
+<area shape="rect" id="node25" href="$stabilization__attitude__heli__indi_8c.html#ad17347abf36f7dfc4abb0218f10b5f09" title="stabilization_attitude\l_read_rc" alt="" coords="461,563,616,605"/>
+<area shape="rect" id="node26" href="$stabilization__indi_8h.html#a12143cafcad8c2db6f07b2cc072851d5" title="stabilization_indi\l_read_rc" alt="" coords="475,629,602,670"/>
+<area shape="rect" id="node27" href="$stabilization__attitude__quat__indi_8c.html#ad17347abf36f7dfc4abb0218f10b5f09" title="stabilization_attitude\l_read_rc" alt="" coords="695,629,850,670"/>
+<area shape="rect" id="node29" href="$guidance__indi_8h.html#ad8b44d9c75c8bdabbe9e3521c96d503b" title="guidance_indi_run" alt="" coords="470,695,607,721"/>
+<area shape="rect" id="node30" href="$guidance__h_8h.html#afff2f6a359638c74d5d1051c3edfa554" title="guidance_h_run" alt="" coords="711,695,834,721"/>
+<area shape="rect" id="node31" href="$rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="917,695,1052,721"/>
+<area shape="rect" id="node32" href="$rotorcraft_2main__fbw_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="1107,695,1217,721"/>
+<area shape="rect" id="node33" href="$rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="1272,695,1435,721"/>
+<area shape="rect" id="node34" href="$fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1541,619,1595,645"/>
+<area shape="rect" id="node35" href="$nps__autopilot__fixedwing_8c.html#a12870aaa609d4860004be3cec4c8cf2a" title="nps_autopilot_run_step" alt="" coords="1483,669,1653,696"/>
+<area shape="rect" id="node36" href="$main__chibios_8c.html#a1bd1ec0fdc597d88ee659889cda25c0a" title="thd_ap" alt="" coords="1535,720,1601,747"/>
+<area shape="rect" id="node38" href="$main__chibios_8c.html#a4042bcab9578175e00c82adcc2b251f8" title="thd_fbw" alt="" coords="1533,771,1603,797"/>
+<area shape="rect" id="node37" href="$main__chibios_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function. " alt="" coords="1701,745,1756,772"/>
 </map>

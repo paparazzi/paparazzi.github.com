@@ -1,6 +1,6 @@
 var ms5611_8c =
 [
-    [ "ms5607_calc", "ms5611_8c.html#a684dfeec30ebd96f4f39a02fe40d61bc", null ],
-    [ "ms5611_calc", "ms5611_8c.html#a7ea327bfcf88ade86630c4f2fd54329d", null ],
-    [ "ms5611_prom_crc_ok", "ms5611_8c.html#a1afefece4545988101dac95290cacde6", null ]
+    [ "ms5607_calc", "ms5611_8c.html#a6dea78d3cbdf03549f9d15b920089ff1", null ],
+    [ "ms5611_calc", "ms5611_8c.html#ae3efc8f29a1b06b12e734be3ab9b5eb4", null ],
+    [ "ms5611_prom_crc_ok", "ms5611_8c.html#aadeaf57da29112210a74857311975e0a", null ]
 ];

@@ -3,7 +3,7 @@ var l3gd20_8h =
     [ "L3gd20Config", "l3gd20_8h.html#structL3gd20Config", [
       [ "drbw", "l3gd20_8h.html#a333275bd95b04134ba9ad179c55f618c", null ],
       [ "full_scale", "l3gd20_8h.html#ac7313d1c10e17e2f2bf6e6fc36bb562d", null ],
-      [ "spi_3_wire", "l3gd20_8h.html#a4e6b94556e22627fca355ef11eae546d", null ]
+      [ "spi_3_wire", "l3gd20_8h.html#ac5faaf4b33125fe3a6ed619f7d96c703", null ]
     ] ],
     [ "L3gd20ConfStatus", "l3gd20_8h.html#aa1db7c07c0f8810a2a13717dca0d4d8d", [
       [ "L3G_CONF_UNINIT", "l3gd20_8h.html#aa1db7c07c0f8810a2a13717dca0d4d8da0d6decaf2e866985fa08a185a5da4c65", null ],

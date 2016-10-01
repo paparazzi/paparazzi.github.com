@@ -6,7 +6,7 @@ var pprz__orientation__conversion_8h =
     [ "ORREP_QUAT_I", "group__math__orientation__representation.html#ga449d2dae2d46b5827d1b53db7eb9c8f9", null ],
     [ "ORREP_RMAT_F", "group__math__orientation__representation.html#gafca38fd6b6fcbe2c1887ba34a628efb2", null ],
     [ "ORREP_RMAT_I", "group__math__orientation__representation.html#gaaa0eaf3eb87be02a80d6d1d47349f8dd", null ],
-    [ "orienationCheckValid", "group__math__orientation__representation.html#ga6b55b77641f1a911a919a4d579932514", null ],
+    [ "orienationCheckValid", "group__math__orientation__representation.html#ga6037b8cf7c0b5d44eeb596ca6804fdc0", null ],
     [ "orientationCalcEulers_f", "group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388", null ],
     [ "orientationCalcEulers_i", "group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8", null ],
     [ "orientationCalcQuat_f", "group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2", null ],

@@ -19,7 +19,6 @@ var dir_8b2fa0708e2db44c1b91938af97bac44 =
     [ "imu_crista.h", "imu__crista_8h.html", "imu__crista_8h" ],
     [ "imu_drotek_10dof_v2.c", "imu__drotek__10dof__v2_8c.html", "imu__drotek__10dof__v2_8c" ],
     [ "imu_drotek_10dof_v2.h", "imu__drotek__10dof__v2_8h.html", "imu__drotek__10dof__v2_8h" ],
-    [ "imu_dummy.c", "imu__dummy_8c.html", "imu__dummy_8c" ],
     [ "imu_gl1.c", "imu__gl1_8c.html", "imu__gl1_8c" ],
     [ "imu_gl1.h", "imu__gl1_8h.html", "imu__gl1_8h" ],
     [ "imu_gl1_defaults.h", "imu__gl1__defaults_8h.html", "imu__gl1__defaults_8h" ],
@@ -40,8 +39,11 @@ var dir_8b2fa0708e2db44c1b91938af97bac44 =
     [ "imu_nps.h", "imu__nps_8h.html", "imu__nps_8h" ],
     [ "imu_ppzuav.c", "imu__ppzuav_8c.html", "imu__ppzuav_8c" ],
     [ "imu_ppzuav.h", "imu__ppzuav_8h.html", "imu__ppzuav_8h" ],
+    [ "imu_px4_defaults.h", "imu__px4__defaults_8h.html", "imu__px4__defaults_8h" ],
     [ "imu_px4fmu.c", "imu__px4fmu_8c.html", "imu__px4fmu_8c" ],
     [ "imu_px4fmu.h", "imu__px4fmu_8h.html", "imu__px4fmu_8h" ],
+    [ "imu_px4fmu_v2.4.c", "imu__px4fmu__v2_84_8c.html", "imu__px4fmu__v2_84_8c" ],
+    [ "imu_px4fmu_v2.4.h", "imu__px4fmu__v2_84_8h.html", "imu__px4fmu__v2_84_8h" ],
     [ "imu_um6.c", "imu__um6_8c.html", "imu__um6_8c" ],
     [ "imu_um6.h", "imu__um6_8h.html", "imu__um6_8h" ]
 ];

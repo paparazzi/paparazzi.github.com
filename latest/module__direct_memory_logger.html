@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: Directly log values to memory for flash chips</title>
+<title>Paparazzi UAS: direct_memory_logger module</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -100,19 +100,19 @@ $(document).ready(function(){initNavTree('module__direct_memory_logger.html','')
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Directly log values to memory for flash chips </div>  </div>
+<div class="title">direct_memory_logger module </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Module XML file: <code>direct_memory_logger.xml</code> </p>
+<div class="textblock"><p><b>Directly log values to memory for flash chips.</b></p>
+<p><b></b></p>
+<p>No detailed description...</p>
 <h1><a class="anchor" id="module_load_example__direct_memory_logger"></a>
 Example for airframe file</h1>
-<p>This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;modules&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;load name=&quot;direct_memory_logger.xml&quot;&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    &lt;configure name=&quot;DM_LOG_UART&quot; value=&quot;UART1|UART2|UART3|UART4|UART5|UART6&quot; /&gt;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    &lt;configure name=&quot;DM_LOG_SPI_DEV&quot; value=&quot;SPI1|SPI2|SPI3|SPI4|SPI5|SPI6&quot; /&gt;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    &lt;configure name=&quot;DM_LOG_SPI_SLAVE_IDX&quot; value=&quot;SPI_SLAVE1|SPI_SLAVE2|SPI_SLAVE3|SPI_SLAVE4|SPI_SLAVE5|SPI_SLAVE6&quot; /&gt;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  &lt;/load&gt;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;&lt;/modules&gt;</div>
+<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;direct_memory_logger&quot;&gt;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;configure name=&quot;DM_LOG_UART&quot; value=&quot;UART1|UART2|UART3|UART4|UART5|UART6&quot; /&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;configure name=&quot;DM_LOG_SPI_DEV&quot; value=&quot;SPI1|SPI2|SPI3|SPI4|SPI5|SPI6&quot; /&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;configure name=&quot;DM_LOG_SPI_SLAVE_IDX&quot; value=&quot;SPI_SLAVE1|SPI_SLAVE2|SPI_SLAVE3|SPI_SLAVE4|SPI_SLAVE5|SPI_SLAVE6&quot; /&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__direct_memory_logger"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="configure"></a>
@@ -189,19 +189,10 @@ Raw direct_memory_logger.xml file:</h2>
 <div class="line">  &lt;periodic fun=&quot;direct_memory_logger_periodic()&quot; autorun=&quot;TRUE&quot;/&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;makefile target=&quot;ap&quot;&gt;</div>
+<div class="line">    &lt;configure name=&quot;DM_LOG_UART&quot; default=&quot;uart1&quot; case=&quot;upper|lower&quot;/&gt;</div>
+<div class="line">    &lt;configure name=&quot;DM_LOG_SPI_DEV&quot; default=&quot;spi2&quot; case=&quot;upper|lower&quot;/&gt;</div>
+<div class="line">    &lt;configure name=&quot;DM_LOG_SPI_SLAVE_IDX&quot; default=&quot;spi_slave1&quot; case=&quot;upper|lower&quot;/&gt;</div>
 <div class="line">    &lt;raw&gt;</div>
-<div class="line">      DM_LOG_UART ?= uart1</div>
-<div class="line">      DM_LOG_UART_LOWER=$(shell echo $(DM_LOG_UART) | tr A-Z a-z)</div>
-<div class="line">      DM_LOG_UART_UPPER=$(shell echo $(DM_LOG_UART) | tr a-z A-Z)</div>
-<div class="line"></div>
-<div class="line">      DM_LOG_SPI_DEV ?= spi2</div>
-<div class="line">      DM_LOG_SPI_DEV_LOWER=$(shell echo $(DM_LOG_SPI_DEV) | tr A-Z a-z)</div>
-<div class="line">      DM_LOG_SPI_DEV_UPPER=$(shell echo $(DM_LOG_SPI_DEV) | tr a-z A-Z)</div>
-<div class="line"></div>
-<div class="line">      DM_LOG_SPI_SLAVE_IDX ?= spi_slave1</div>
-<div class="line">      DM_LOG_SPI_SLAVE_IDX_LOWER=$(shell echo $(DM_LOG_SPI_SLAVE_IDX) | tr A-Z a-z)</div>
-<div class="line">      DM_LOG_SPI_SLAVE_IDX_UPPER=$(shell echo $(DM_LOG_SPI_SLAVE_IDX) | tr a-z A-Z)</div>
-<div class="line"></div>
 <div class="line">      include $(CFG_SHARED)/spi_master.makefile</div>
 <div class="line">    &lt;/raw&gt;</div>
 <div class="line"></div>
@@ -224,7 +215,7 @@ Raw direct_memory_logger.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:08 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:18 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

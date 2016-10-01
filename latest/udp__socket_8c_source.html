@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('udp__socket_8c_source.html','');});
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="udp__socket_8c.html#a114bd0b279c986fe4425fbcce8206709">   37</a></span>&#160;<span class="preprocessor">#define TRACE(type,fmt,args...)</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="udp__socket_8c.html#a7c12181b2e8dc912219651ff42d22e42">   38</a></span>&#160;<span class="preprocessor">#define TRACE_ERROR 1</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="udp__socket_8h.html#add3ac7d3bb65bcff12ae832ec1a2e715">   49</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="udp__socket_8c.html#add3ac7d3bb65bcff12ae832ec1a2e715">udp_socket_create</a>(<span class="keyword">struct</span> <a class="code" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *sock, <span class="keywordtype">char</span> *host, <span class="keywordtype">int</span> port_out, <span class="keywordtype">int</span> port_in, bool_t broadcast)</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="udp__socket_8h.html#a8904d535adc73468cfa9e57a71f6de72">   49</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="udp__socket_8c.html#a8904d535adc73468cfa9e57a71f6de72">udp_socket_create</a>(<span class="keyword">struct</span> <a class="code" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *sock, <span class="keywordtype">char</span> *host, <span class="keywordtype">int</span> port_out, <span class="keywordtype">int</span> port_in, <span class="keywordtype">bool</span> broadcast)</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordflow">if</span> (sock == NULL) {</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> -1;</div>
@@ -292,16 +292,16 @@ $(document).ready(function(){initNavTree('udp__socket_8c_source.html','');});
 <div class="ttc" id="udp__socket_8h_html_a9a3ba6f53247e0e0d38432357af80f1c"><div class="ttname"><a href="udp__socket_8h.html#a9a3ba6f53247e0e0d38432357af80f1c">UdpSocket::addr_in</a></div><div class="ttdeci">struct sockaddr_in addr_in</div><div class="ttdef"><b>Definition:</b> <a href="udp__socket_8h_source.html#l00036">udp_socket.h:36</a></div></div>
 <div class="ttc" id="udp__socket_8h_html_abb49855d3808c060eb3f3093309217bf"><div class="ttname"><a href="udp__socket_8h.html#abb49855d3808c060eb3f3093309217bf">UdpSocket::addr_out</a></div><div class="ttdeci">struct sockaddr_in addr_out</div><div class="ttdef"><b>Definition:</b> <a href="udp__socket_8h_source.html#l00037">udp_socket.h:37</a></div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
-<div class="ttc" id="udp__socket_8c_html_add3ac7d3bb65bcff12ae832ec1a2e715"><div class="ttname"><a href="udp__socket_8c.html#add3ac7d3bb65bcff12ae832ec1a2e715">udp_socket_create</a></div><div class="ttdeci">int udp_socket_create(struct UdpSocket *sock, char *host, int port_out, int port_in, bool_t broadcast)</div><div class="ttdoc">Create UDP socket and bind it. </div><div class="ttdef"><b>Definition:</b> <a href="udp__socket_8c_source.html#l00049">udp_socket.c:49</a></div></div>
 <div class="ttc" id="udp__socket_8c_html_a114bd0b279c986fe4425fbcce8206709"><div class="ttname"><a href="udp__socket_8c.html#a114bd0b279c986fe4425fbcce8206709">TRACE</a></div><div class="ttdeci">#define TRACE(type, fmt, args...)</div><div class="ttdef"><b>Definition:</b> <a href="udp__socket_8c_source.html#l00037">udp_socket.c:37</a></div></div>
 <div class="ttc" id="udp__socket_8c_html_a880fa97951db20259b4529699893301e"><div class="ttname"><a href="udp__socket_8c.html#a880fa97951db20259b4529699893301e">udp_socket_set_recvbuf</a></div><div class="ttdeci">int udp_socket_set_recvbuf(struct UdpSocket *sock, int buf_size)</div><div class="ttdef"><b>Definition:</b> <a href="udp__socket_8c_source.html#l00203">udp_socket.c:203</a></div></div>
+<div class="ttc" id="udp__socket_8c_html_a8904d535adc73468cfa9e57a71f6de72"><div class="ttname"><a href="udp__socket_8c.html#a8904d535adc73468cfa9e57a71f6de72">udp_socket_create</a></div><div class="ttdeci">int udp_socket_create(struct UdpSocket *sock, char *host, int port_out, int port_in, bool broadcast)</div><div class="ttdoc">Create UDP socket and bind it. </div><div class="ttdef"><b>Definition:</b> <a href="udp__socket_8c_source.html#l00049">udp_socket.c:49</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_92fbf38b8c893a0928a3445a75d0ac01.html">linux</a></li><li class="navelem"><a class="el" href="udp__socket_8c.html">udp_socket.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:14 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:13 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

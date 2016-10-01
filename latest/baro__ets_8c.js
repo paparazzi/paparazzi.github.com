@@ -19,14 +19,14 @@ var baro__ets_8c =
     [ "baro_ets_adc", "baro__ets_8c.html#a8dcbf03c82eb75cdda21eacb04a0cc18", null ],
     [ "baro_ets_altitude", "baro__ets_8c.html#ac4f69540a5b1417a3717dafb1a983b06", null ],
     [ "baro_ets_cnt", "baro__ets_8c.html#a9b73f1b123bdb65f66fc7f1cf4f3cd0d", null ],
-    [ "baro_ets_delay_done", "baro__ets_8c.html#a93ab267f9e7ed579b531ee92cdcfa11c", null ],
+    [ "baro_ets_delay_done", "baro__ets_8c.html#ae7031129c213edf0e0a2f300d44778d8", null ],
     [ "baro_ets_delay_time", "baro__ets_8c.html#a120fec1fd8b6ab46a167802b5fe2d520", null ],
-    [ "baro_ets_enabled", "baro__ets_8c.html#a461c53ddc51c45b7c92bcaadf4ec709c", null ],
+    [ "baro_ets_enabled", "baro__ets_8c.html#a71d4e11bc8c15965a7ed9b919d52d249", null ],
     [ "baro_ets_i2c_trans", "baro__ets_8c.html#a4ddf405039552176e251f37d10213d4f", null ],
     [ "baro_ets_offset", "baro__ets_8c.html#ab555328369f0264c4182eff10220a57c", null ],
-    [ "baro_ets_offset_init", "baro__ets_8c.html#a3903a8c3581b06e30bbd211016f64761", null ],
+    [ "baro_ets_offset_init", "baro__ets_8c.html#a7039f78fff0ad5316ecc0005346fb11c", null ],
     [ "baro_ets_offset_tmp", "baro__ets_8c.html#aa60c4ed3c973466fa3541555b8115a12", null ],
     [ "baro_ets_r", "baro__ets_8c.html#a08006eac33ce8a0d71f86d8da34d74c9", null ],
     [ "baro_ets_sigma2", "baro__ets_8c.html#ab5e7ce908ff9c92597572cb7f84ecdd3", null ],
-    [ "baro_ets_valid", "baro__ets_8c.html#a4348fe7934d32b21fcfa4691ccf87a79", null ]
+    [ "baro_ets_valid", "baro__ets_8c.html#a1e53a1472f63179c5b73ac9dcc75601c", null ]
 ];

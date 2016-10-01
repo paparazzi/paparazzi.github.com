@@ -10,7 +10,7 @@ var enose_8c =
     [ "buf_PID", "enose_8c.html#ae6e4133fb90f7c5230e11f111a76c397", null ],
     [ "enose_conf_requested", "enose_8c.html#a99e55f6c9834135636443ab574151f50", null ],
     [ "enose_heat", "enose_8c.html#a144d489eba34956aac35471312de5348", null ],
-    [ "enose_i2c_done", "enose_8c.html#a173bc44c12c25f9553770b6feaed415e", null ],
+    [ "enose_i2c_done", "enose_8c.html#adf3385411a57ac42682ebe8e3836e67c", null ],
     [ "enose_PID_val", "enose_8c.html#a0f780139f076c80af9df782342e63194", null ],
     [ "enose_status", "enose_8c.html#a43ba626e3f7c069f08dac9d20b429117", null ],
     [ "enose_val", "enose_8c.html#aa0f7de4275ed0811b85ffe8205439126", null ]

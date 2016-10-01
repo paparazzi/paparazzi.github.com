@@ -17,7 +17,7 @@ var autopilot__arming__switch_8h =
     ] ],
     [ "autopilot_arming_check_motors_on", "autopilot__arming__switch_8h.html#abbbe9ccad851ff6d7ef88e298059b6ce", null ],
     [ "autopilot_arming_init", "autopilot__arming__switch_8h.html#aea5ad986cd1e5b80aff7ef5589a18aac", null ],
-    [ "autopilot_arming_set", "autopilot__arming__switch_8h.html#a720eaefed19d55f94f6f866d8aba2702", null ],
+    [ "autopilot_arming_set", "autopilot__arming__switch_8h.html#a644c6a09c2081595c4dbc608fd7ed163", null ],
     [ "autopilot_arming_state", "autopilot__arming__switch_8h.html#a426025835890b253dc035d04d0d98d5a", null ],
-    [ "autopilot_unarmed_in_auto", "autopilot__arming__switch_8h.html#a004a65f7397a60ad392c6b3833ae4bcc", null ]
+    [ "autopilot_unarmed_in_auto", "autopilot__arming__switch_8h.html#a656c9d79a9572491124a353e29cc7433", null ]
 ];

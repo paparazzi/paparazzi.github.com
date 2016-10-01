@@ -7,6 +7,7 @@ var ahrs__aligner_8c =
     [ "ahrs_aligner_init", "ahrs__aligner_8c.html#a321c9a82fcb75074c3041cbf6906e5ea", null ],
     [ "ahrs_aligner_run", "ahrs__aligner_8c.html#aa8c5b5a4ce38e0dd4e1234bad8adf92d", null ],
     [ "gyro_cb", "ahrs__aligner_8c.html#a47e1ea35fdb43af72537c6c9f38b889d", null ],
+    [ "send_aligner", "ahrs__aligner_8c.html#abe64b23cba24d9f6d4efd4773d3c8d1e", null ],
     [ "accel_sum", "ahrs__aligner_8c.html#a68b78ce4e010b1be5a93a9f23f6c1ec5", null ],
     [ "ahrs_aligner", "ahrs__aligner_8c.html#a66a55f68c9554dcf5ae9dd4dbd4479e3", null ],
     [ "gyro_ev", "ahrs__aligner_8c.html#a6aa911576e04d8ae0519d83ae6722546", null ],

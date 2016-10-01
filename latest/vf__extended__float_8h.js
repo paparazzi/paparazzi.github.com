@@ -18,6 +18,7 @@ var vf__extended__float_8h =
     [ "vff_update_baro", "vf__extended__float_8h.html#a94b26d899a6d7ca4e26cb7df3f45ef49", null ],
     [ "vff_update_baro_conf", "vf__extended__float_8h.html#aa7f8c70d85481ee00728646ab5d82e2a", null ],
     [ "vff_update_offset", "vf__extended__float_8h.html#a3726fbb9f54c7ec7a8579c7af3f15a4c", null ],
+    [ "vff_update_vz_conf", "vf__extended__float_8h.html#a7d74fd7f8f95cece04e3c147e409f935", null ],
     [ "vff_update_z", "vf__extended__float_8h.html#a43ba970ac8015812427c9681be41100a", null ],
     [ "vff_update_z_conf", "vf__extended__float_8h.html#a383a56a1eaa73890c3b6ca0599c3fb67", null ],
     [ "vff", "vf__extended__float_8h.html#aa8558bc47d778efba706bc1fc7f08d36", null ]

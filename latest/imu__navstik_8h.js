@@ -22,7 +22,8 @@ var imu__navstik_8h =
     [ "IMU_GYRO_R_SENS", "imu__navstik_8h.html#af57decce9e96b0726832a410273223f3", null ],
     [ "IMU_GYRO_R_SENS_DEN", "imu__navstik_8h.html#aecb2f43265d239ba7661dfcc8523123e", null ],
     [ "IMU_GYRO_R_SENS_NUM", "imu__navstik_8h.html#a6f808c71190e714287442af3bb7008b3", null ],
-    [ "ImuEvent", "imu__navstik_8h.html#a38f1122c1ee0701562b490c6e1b60609", null ],
     [ "imu_navstik_event", "imu__navstik_8h.html#a2ddc38f9314a98d94376d14851bb0bcd", null ],
+    [ "imu_navstik_init", "imu__navstik_8h.html#ae8576442cc34d0abe63d5a0252213934", null ],
+    [ "imu_navstik_periodic", "imu__navstik_8h.html#a19ff9d9f362cbf94e37d4b360f13fd90", null ],
     [ "imu_navstik", "imu__navstik_8h.html#aa258cf16277362a84912f7ee02b1f4fe", null ]
 ];

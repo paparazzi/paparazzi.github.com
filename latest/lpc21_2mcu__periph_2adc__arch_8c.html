@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -201,6 +201,7 @@ Variables</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;struct adc_buf channel_buf;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;adc_buf_channel(1, &amp;channel_buf, 12);</div>
 </div><!-- fragment --><p> Registers channel_buf as buffer for ADC channel 1, with max index 12 (12 samples).</p>
+<p>Registers a buffer to be used to store the specified converted channel Usage:</p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>: fx a more general ADC </dd></dl>
 
 <p>Definition at line <a class="el" href="lpc21_2mcu__periph_2adc__arch_8c_source.html#l00059">59</a> of file <a class="el" href="lpc21_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
@@ -224,6 +225,8 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Starts conversions. </p>
+<p>Starts conversions.</p>
+<p>Initialize ADC drivers, buffers and start conversion in the background</p>
 <p>Starts conversions. </p>
 
 <p>Definition at line <a class="el" href="lpc21_2mcu__periph_2adc__arch_8c_source.html#l00195">195</a> of file <a class="el" href="lpc21_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
@@ -259,7 +262,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lpc21_2mcu__periph_2adc__arch_8c_source.html#l00235">235</a> of file <a class="el" href="lpc21_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
-<p>References <a class="el" href="LPC21xx_8h_source.html#l00357">AD0GDR</a>, <a class="el" href="lpc21_2mcu__periph_2adc__arch_8c_source.html#l00053">adc0_val</a>, <a class="el" href="adc_8h_source.html#l00057">adc_buf::av_nb_sample</a>, <a class="el" href="stm32_2mcu__periph_2adc__arch_8c_source.html#l00587">buf</a>, <a class="el" href="ADS8344_8c_source.html#l00080">channel</a>, <a class="el" href="adc_8h_source.html#l00056">adc_buf::head</a>, <a class="el" href="armVIC_8h_source.html#l00040">ISR_ENTRY</a>, <a class="el" href="armVIC_8h_source.html#l00061">ISR_EXIT</a>, <a class="el" href="adc_8h_source.html#l00054">adc_buf::sum</a>, <a class="el" href="stm32_2mcu__periph_2adc__arch_8c_source.html#l00586">value</a>, <a class="el" href="adc_8h_source.html#l00055">adc_buf::values</a>, and <a class="el" href="LPC21xx_8h_source.html#l00436">VICVectAddr</a>.</p>
+<p>References <a class="el" href="LPC21xx_8h_source.html#l00357">AD0GDR</a>, <a class="el" href="lpc21_2mcu__periph_2adc__arch_8c_source.html#l00053">adc0_val</a>, <a class="el" href="adc_8h_source.html#l00057">adc_buf::av_nb_sample</a>, <a class="el" href="ADS8344_8c_source.html#l00080">channel</a>, <a class="el" href="adc_8h_source.html#l00056">adc_buf::head</a>, <a class="el" href="armVIC_8h_source.html#l00040">ISR_ENTRY</a>, <a class="el" href="armVIC_8h_source.html#l00061">ISR_EXIT</a>, <a class="el" href="adc_8h_source.html#l00054">adc_buf::sum</a>, <a class="el" href="adc_8h_source.html#l00055">adc_buf::values</a>, and <a class="el" href="LPC21xx_8h_source.html#l00436">VICVectAddr</a>.</p>
 
 <p>Referenced by <a class="el" href="lpc21_2mcu__periph_2adc__arch_8c_source.html#l00195">adc_init()</a>.</p>
 
@@ -292,7 +295,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lpc21_2mcu__periph_2adc__arch_8c_source.html#l00257">257</a> of file <a class="el" href="lpc21_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
-<p>References <a class="el" href="LPC21xx_8h_source.html#l00374">AD1GDR</a>, <a class="el" href="lpc21_2mcu__periph_2adc__arch_8c_source.html#l00054">adc1_val</a>, <a class="el" href="adc_8h_source.html#l00057">adc_buf::av_nb_sample</a>, <a class="el" href="stm32_2mcu__periph_2adc__arch_8c_source.html#l00587">buf</a>, <a class="el" href="ADS8344_8c_source.html#l00080">channel</a>, <a class="el" href="adc_8h_source.html#l00056">adc_buf::head</a>, <a class="el" href="armVIC_8h_source.html#l00040">ISR_ENTRY</a>, <a class="el" href="armVIC_8h_source.html#l00061">ISR_EXIT</a>, <a class="el" href="lpc21_2mcu__periph_2adc__arch_8h_source.html#l00036">NB_ADC</a>, <a class="el" href="adc_8h_source.html#l00054">adc_buf::sum</a>, <a class="el" href="stm32_2mcu__periph_2adc__arch_8c_source.html#l00586">value</a>, <a class="el" href="adc_8h_source.html#l00055">adc_buf::values</a>, and <a class="el" href="LPC21xx_8h_source.html#l00436">VICVectAddr</a>.</p>
+<p>References <a class="el" href="LPC21xx_8h_source.html#l00374">AD1GDR</a>, <a class="el" href="lpc21_2mcu__periph_2adc__arch_8c_source.html#l00054">adc1_val</a>, <a class="el" href="adc_8h_source.html#l00057">adc_buf::av_nb_sample</a>, <a class="el" href="ADS8344_8c_source.html#l00080">channel</a>, <a class="el" href="adc_8h_source.html#l00056">adc_buf::head</a>, <a class="el" href="armVIC_8h_source.html#l00040">ISR_ENTRY</a>, <a class="el" href="armVIC_8h_source.html#l00061">ISR_EXIT</a>, <a class="el" href="lpc21_2mcu__periph_2adc__arch_8h_source.html#l00041">NB_ADC</a>, <a class="el" href="adc_8h_source.html#l00054">adc_buf::sum</a>, <a class="el" href="adc_8h_source.html#l00055">adc_buf::values</a>, and <a class="el" href="LPC21xx_8h_source.html#l00436">VICVectAddr</a>.</p>
 
 <p>Referenced by <a class="el" href="lpc21_2mcu__periph_2adc__arch_8c_source.html#l00195">adc_init()</a>.</p>
 
@@ -460,7 +463,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lpc21_2mcu__periph_2adc__arch_8c_source.html#l00051">51</a> of file <a class="el" href="lpc21_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="v4l2_8c_source.html#l00177">v4l2_init()</a>.</p>
+<p>Referenced by <a class="el" href="v4l2_8c_source.html#l00183">v4l2_init()</a>.</p>
 
 </div>
 </div>
@@ -470,7 +473,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_3f7617cb4a5e4fe5cc816b7b3bbdea3a.html">lpc21</a></li><li class="navelem"><a class="el" href="dir_52b0b5e73fdd6096ec81364edad665ef.html">mcu_periph</a></li><li class="navelem"><a class="el" href="lpc21_2mcu__periph_2adc__arch_8c.html">adc_arch.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:33 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:36 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

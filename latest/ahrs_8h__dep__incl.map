@@ -1,5 +1,5 @@
 <map id="sw/airborne/subsystems/ahrs.h" name="sw/airborne/subsystems/ahrs.h">
-<area shape="rect" id="node2" href="$navdata_8c.html" title="ardrone2 navdata aquisition driver. " alt="" coords="5,102,148,143"/>
+<area shape="rect" id="node2" href="$navdata_8c.html" title="ARDrone2 navdata aquisition driver. " alt="" coords="5,102,148,143"/>
 <area shape="rect" id="node3" href="$demo__ahrs__actuators_8c.html" title="Demo prog with ahrs and simple roll/pitch commands to actuators. " alt="" coords="173,102,391,143"/>
 <area shape="rect" id="node4" href="$main__ap_8c.html" title="AP ( AutoPilot ) tasks. " alt="" coords="416,102,577,143"/>
 <area shape="rect" id="node5" href="$rotorcraft_2main_8c.html" title="Rotorcraft main loop. " alt="" coords="601,102,763,143"/>
@@ -14,18 +14,19 @@
 <area shape="rect" id="node16" href="$ahrs__float__mlkf__wrapper_8c.html" title="Paparazzi specific wrapper to run MLKF filter. " alt="" coords="2109,95,2285,151"/>
 <area shape="rect" id="node17" href="$ahrs__gx3_8c.html" title="Driver for Microstrain GX3 IMU/AHRS subsystem. " alt="" coords="2309,102,2485,143"/>
 <area shape="rect" id="node18" href="$ahrs__int__cmpl__euler_8h.html" title="Complementary filter in euler representation (fixed&#45;point). " alt="" coords="2509,102,2706,143"/>
-<area shape="rect" id="node21" href="$ahrs__int__cmpl__euler__wrapper_8c.html" title="Paparazzi specific wrapper to run floating point complementary filter. " alt="" coords="2582,303,2769,359"/>
+<area shape="rect" id="node21" href="$ahrs__int__cmpl__euler__wrapper_8c.html" title="Paparazzi specific wrapper to run floating point complementary filter. " alt="" coords="2579,303,2766,359"/>
 <area shape="rect" id="node22" href="$ahrs__int__cmpl__quat_8h.html" title="Quaternion complementary filter (fixed&#45;point). " alt="" coords="2781,102,2975,143"/>
-<area shape="rect" id="node25" href="$ahrs__int__cmpl__quat__wrapper_8c.html" title="Paparazzi specific wrapper to run floating point complementary filter. " alt="" coords="3061,303,3244,359"/>
-<area shape="rect" id="node26" href="$ahrs__sim_8h.html" title="Interface to set the AHRS from the simple OCaml simulator. " alt="" coords="3255,102,3431,143"/>
-<area shape="rect" id="node28" href="$ahrs_8c.html" title="Dispatcher to register actual AHRS implementations. " alt="" coords="3455,102,3631,143"/>
-<area shape="rect" id="node29" href="$imu__um6_8h.html" title="Driver for CH Robotics UM6 IMU/AHRS subsystem. " alt="" coords="3655,102,3831,143"/>
+<area shape="rect" id="node25" href="$ahrs__int__cmpl__quat__wrapper_8c.html" title="Paparazzi specific wrapper to run floating point complementary filter. " alt="" coords="3059,303,3241,359"/>
+<area shape="rect" id="node26" href="$ahrs__sim_8h.html" title="Interface to set the AHRS from the simple OCaml simulator. " alt="" coords="3153,102,3329,143"/>
+<area shape="rect" id="node28" href="$ahrs_8c.html" title="Dispatcher to register actual AHRS implementations. " alt="" coords="3353,102,3529,143"/>
+<area shape="rect" id="node29" href="$imu__um6_8h.html" title="Driver for CH Robotics UM6 IMU/AHRS subsystem. " alt="" coords="3553,102,3729,143"/>
+<area shape="rect" id="node31" href="$nps__autopilot__rotorcraft_8c.html" title="sw/simulator/nps/nps\l_autopilot_rotorcraft.c" alt="" coords="3753,102,3915,143"/>
 <area shape="rect" id="node13" href="$ahrs__float__invariant_8c.html" title="sw/airborne/subsystems\l/ahrs/ahrs_float_invariant.c" alt="" coords="1631,206,1826,247"/>
 <area shape="rect" id="node14" href="$ahrs__float__invariant__wrapper_8h.html" title="Paparazzi specific wrapper to run INVARIANT ahrs filter. " alt="" coords="1851,199,2033,255"/>
-<area shape="rect" id="node19" href="$ahrs__int__cmpl__euler_8c.html" title="Complementary filter in euler representation (fixed&#45;point). " alt="" coords="2296,206,2492,247"/>
-<area shape="rect" id="node20" href="$ahrs__int__cmpl__euler__wrapper_8h.html" title="Paparazzi specific wrapper to run floating point DCM filter. " alt="" coords="2517,199,2703,255"/>
-<area shape="rect" id="node23" href="$ahrs__int__cmpl__quat_8c.html" title="Quaternion complementary filter (fixed&#45;point). " alt="" coords="2778,206,2973,247"/>
-<area shape="rect" id="node24" href="$ahrs__int__cmpl__quat__wrapper_8h.html" title="Paparazzi specific wrapper to run floating point complementary filter. " alt="" coords="2997,199,3180,255"/>
-<area shape="rect" id="node27" href="$ahrs__sim_8c.html" title="Dummy plug to set the AHRS from the simple OCaml simulator. " alt="" coords="3255,206,3431,247"/>
-<area shape="rect" id="node30" href="$imu__um6_8c.html" title="Driver for CH Robotics UM6 IMU/AHRS subsystem. " alt="" coords="3655,206,3831,247"/>
+<area shape="rect" id="node19" href="$ahrs__int__cmpl__euler_8c.html" title="Complementary filter in euler representation (fixed&#45;point). " alt="" coords="2293,206,2489,247"/>
+<area shape="rect" id="node20" href="$ahrs__int__cmpl__euler__wrapper_8h.html" title="Paparazzi specific wrapper to run floating point DCM filter. " alt="" coords="2514,199,2701,255"/>
+<area shape="rect" id="node23" href="$ahrs__int__cmpl__quat_8c.html" title="Quaternion complementary filter (fixed&#45;point). " alt="" coords="2775,206,2970,247"/>
+<area shape="rect" id="node24" href="$ahrs__int__cmpl__quat__wrapper_8h.html" title="Paparazzi specific wrapper to run floating point complementary filter. " alt="" coords="2995,199,3177,255"/>
+<area shape="rect" id="node27" href="$ahrs__sim_8c.html" title="Dummy plug to set the AHRS from the simple OCaml simulator. " alt="" coords="3253,206,3429,247"/>
+<area shape="rect" id="node30" href="$imu__um6_8c.html" title="Driver for CH Robotics UM6 IMU/AHRS subsystem. " alt="" coords="3553,206,3729,247"/>
 </map>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -106,9 +106,7 @@ $(document).ready(function(){initNavTree('video__thread_8h.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">video_thread.h File Reference</div>  </div>
 </div><!--header-->
@@ -117,6 +115,7 @@ $(document).ready(function(){initNavTree('video__thread_8h.html','');});
 <p>Start a Video thread and grab images.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;std.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="cv_8h_source.html">modules/computer_vision/cv.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for video_thread.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -124,7 +123,7 @@ $(document).ready(function(){initNavTree('video__thread_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="video__thread_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2computer__vision_2video__thread_8h" alt=""/></div>
 <map name="sw_2airborne_2modules_2computer__vision_2video__thread_8h" id="sw_2airborne_2modules_2computer__vision_2video__thread_8h">
-</map>
+<area shape="rect" id="node3" href="cv_8h.html" title="Computer vision framework for onboard processing. " alt="" coords="56,109,271,136"/><area shape="rect" id="node5" href="video__device_8h.html" title="peripherals/video_device.h" alt="" coords="215,184,405,211"/><area shape="rect" id="node7" href="inttypes_8h.html" title="inttypes.h" alt="" coords="239,266,325,293"/><area shape="rect" id="node8" href="image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="349,259,535,300"/></map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -138,11 +137,6 @@ $(document).ready(function(){initNavTree('video__thread_8h.html','');});
 </div>
 <p><a href="video__thread_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:structvideo__thread__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video__thread_8h.html#structvideo__thread__t">video_thread_t</a></td></tr>
-<tr class="separator:structvideo__thread__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a232179ccfd877b4b818196e04932e4ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video__thread_8h.html#a232179ccfd877b4b818196e04932e4ed">video_thread_init</a> (void)</td></tr>
@@ -152,84 +146,18 @@ Functions</h2></td></tr>
 <tr class="memdesc:ad90c62bede76f9efce041858b6413958"><td class="mdescLeft">&#160;</td><td class="mdescRight">A dummy for now.  <a href="#ad90c62bede76f9efce041858b6413958">More...</a><br /></td></tr>
 <tr class="separator:ad90c62bede76f9efce041858b6413958"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae99893bfbc5f28c15432c06aee1e736f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video__thread_8h.html#ae99893bfbc5f28c15432c06aee1e736f">video_thread_start</a> (void)</td></tr>
-<tr class="memdesc:ae99893bfbc5f28c15432c06aee1e736f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start with streaming.  <a href="#ae99893bfbc5f28c15432c06aee1e736f">More...</a><br /></td></tr>
+<tr class="memdesc:ae99893bfbc5f28c15432c06aee1e736f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the streaming of a all cameras.  <a href="#ae99893bfbc5f28c15432c06aee1e736f">More...</a><br /></td></tr>
 <tr class="separator:ae99893bfbc5f28c15432c06aee1e736f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fd40d2120fa710aaa7be7e9702029d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video__thread_8h.html#a8fd40d2120fa710aaa7be7e9702029d1">video_thread_stop</a> (void)</td></tr>
-<tr class="memdesc:a8fd40d2120fa710aaa7be7e9702029d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the streaming This could take some time, because the thread is stopped asynchronous.  <a href="#a8fd40d2120fa710aaa7be7e9702029d1">More...</a><br /></td></tr>
+<tr class="memdesc:a8fd40d2120fa710aaa7be7e9702029d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the streaming of all cameras This could take some time, because the thread is stopped asynchronous.  <a href="#a8fd40d2120fa710aaa7be7e9702029d1">More...</a><br /></td></tr>
 <tr class="separator:a8fd40d2120fa710aaa7be7e9702029d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72be9bd94d8f75f83b627482181607ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video__thread_8h.html#a72be9bd94d8f75f83b627482181607ff">video_thread_take_shot</a> (bool_t take)</td></tr>
-<tr class="memdesc:a72be9bd94d8f75f83b627482181607ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Take a shot and save it This will only work when the streaming is enabled.  <a href="#a72be9bd94d8f75f83b627482181607ff">More...</a><br /></td></tr>
-<tr class="separator:a72be9bd94d8f75f83b627482181607ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:ab0e1e5111e74f73f46bb25599736bb88"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="video__thread_8h.html#structvideo__thread__t">video_thread_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video__thread_8h.html#ab0e1e5111e74f73f46bb25599736bb88">video_thread</a></td></tr>
-<tr class="memdesc:ab0e1e5111e74f73f46bb25599736bb88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dummy C implementation for simulation The V4L2 could also work in simulation, but must be adapted a bit.  <a href="#ab0e1e5111e74f73f46bb25599736bb88">More...</a><br /></td></tr>
-<tr class="separator:ab0e1e5111e74f73f46bb25599736bb88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Start a Video thread and grab images. </p>
 <p>Works on Linux platforms </p>
 
 <p>Definition in file <a class="el" href="video__thread_8h_source.html">video_thread.h</a>.</p>
-</div><hr/><h2 class="groupheader">Data Structure Documentation</h2>
-<a name="structvideo__thread__t" id="structvideo__thread__t"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct video_thread_t</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock">
-<p>Definition at line <a class="el" href="video__thread_8h_source.html#l00036">36</a> of file <a class="el" href="video__thread_8h_source.html">video_thread.h</a>.</p>
-</div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for video_thread_t:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="structvideo__thread__t__coll__graph.png" border="0" usemap="#video__thread__t_coll__map" alt="Collaboration graph"/></div>
-<map name="video__thread__t_coll__map" id="video__thread__t_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="ae6e8852d59271631ee506533b63350c1"></a>struct <a class="el" href="v4l2_8h.html#structv4l2__device">v4l2_device</a> *</td>
-<td class="fieldname">
-dev</td>
-<td class="fielddoc">
-The V4L2 device that is used for the video stream. </td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a29b5eb30ab7ab4614498e82bdfc88fad"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
-<td class="fieldname">
-fps</td>
-<td class="fielddoc">
-The amount of frames per second. </td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a1767e0ef61e4073e5dfe291486369cac"></a>volatile bool_t</td>
-<td class="fieldname">
-is_running</td>
-<td class="fielddoc">
-When the device is running. </td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="ad10ac53d6b4ff00f42013bea3613e5b6"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
-<td class="fieldname">
-shot_number</td>
-<td class="fielddoc">
-The last shot number. </td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="aef9cc9ac6ca9940b3a9c52bb2b2f16b7"></a>volatile bool_t</td>
-<td class="fieldname">
-take_shot</td>
-<td class="fielddoc">
-Wether to take an image. </td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a232179ccfd877b4b818196e04932e4ed"></a>
 <div class="memitem">
 <div class="memproto">
@@ -246,20 +174,9 @@ Wether to take an image. </td></tr>
 
 <p>Initialize the view video. </p>
 
-<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00234">234</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
+<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00258">258</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
 
-<p>References <a class="el" href="video__device_8h_source.html#l00043">video_config_t::buf_cnt</a>, <a class="el" href="video__thread_8h_source.html#l00038">video_thread_t::dev</a>, <a class="el" href="video__device_8h_source.html#l00040">video_config_t::dev_name</a>, <a class="el" href="video__device_8h_source.html#l00042">video_config_t::format</a>, <a class="el" href="video__device_8h_source.html#l00039">video_config_t::h</a>, <a class="el" href="video__device_8h_source.html#l00041">video_config_t::subdev_name</a>, <a class="el" href="v4l2_8c_source.html#l00177">v4l2_init()</a>, <a class="el" href="v4l2_8c_source.html#l00130">v4l2_init_subdev()</a>, <a class="el" href="video__thread_8c_source.html#l00079">VIDEO_THREAD_CAMERA</a>, <a class="el" href="video__thread_8c_source.html#l00092">VIDEO_THREAD_SHOT_PATH</a>, and <a class="el" href="video__device_8h_source.html#l00038">video_config_t::w</a>.</p>
-
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="video__thread_8h_a232179ccfd877b4b818196e04932e4ed_cgraph.png" border="0" usemap="#video__thread_8h_a232179ccfd877b4b818196e04932e4ed_cgraph" alt=""/></div>
-<map name="video__thread_8h_a232179ccfd877b4b818196e04932e4ed_cgraph" id="video__thread_8h_a232179ccfd877b4b818196e04932e4ed_cgraph">
-<area shape="rect" id="node2" href="v4l2_8c.html#a936745c837c31ee383e6439e4e79b306" title="Initialize a V4L2(Video for Linux 2) device. " alt="" coords="210,5,285,32"/><area shape="rect" id="node3" href="v4l2_8c.html#ab93b4f8a8c976a50e55c4fad70bf4127" title="Initialize a V4L2 subdevice. " alt="" coords="184,56,311,83"/></map>
-</div>
-</p>
+<p>References <a class="el" href="video__thread_8c_source.html#l00065">cameras</a>, and <a class="el" href="video__thread_8c_source.html#l00061">VIDEO_THREAD_MAX_CAMERAS</a>.</p>
 
 </div>
 </div>
@@ -279,18 +196,18 @@ Wether to take an image. </td></tr>
 
 <p>A dummy for now. </p>
 
-<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00098">98</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
+<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00073">73</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
 
-<p>References <a class="el" href="image_8h_source.html#l00050">image_t::buf</a>, <a class="el" href="cv_8c_source.html#l00043">cv_run()</a>, <a class="el" href="image_8h_source.html#l00045">image_t::h</a>, <a class="el" href="image_8c_source.html#l00038">image_create()</a>, <a class="el" href="image_8c_source.html#l00063">image_free()</a>, <a class="el" href="image_8h_source.html#l00035">IMAGE_YUV422</a>, <a class="el" href="video__thread_8h_source.html#l00037">video_thread_t::is_running</a>, <a class="el" href="ins__alt__float_8c_source.html#l00255">p</a>, and <a class="el" href="image_8h_source.html#l00044">image_t::w</a>.</p>
+<p>References <a class="el" href="image_8h_source.html#l00051">image_t::buf</a>, <a class="el" href="image_8h_source.html#l00045">image_t::h</a>, <a class="el" href="image_8c_source.html#l00038">image_create()</a>, <a class="el" href="image_8c_source.html#l00063">image_free()</a>, <a class="el" href="image_8h_source.html#l00035">IMAGE_YUV422</a>, <a class="el" href="video__device_8h_source.html#l00039">video_thread_t::is_running</a>, <a class="el" href="ins__alt__float_8c_source.html#l00268">p</a>, and <a class="el" href="image_8h_source.html#l00044">image_t::w</a>.</p>
 
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="video__thread_8h_ad90c62bede76f9efce041858b6413958_cgraph.png" border="0" usemap="#video__thread_8h_ad90c62bede76f9efce041858b6413958_cgraph" alt=""/></div>
 <map name="video__thread_8h_ad90c62bede76f9efce041858b6413958_cgraph" id="video__thread_8h_ad90c62bede76f9efce041858b6413958_cgraph">
-<area shape="rect" id="node2" href="cv_8c.html#a740dfb3335f6510c246c1b03fe3d7d5d" title="cv_run" alt="" coords="239,5,303,32"/><area shape="rect" id="node3" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="216,56,327,83"/><area shape="rect" id="node4" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="224,107,319,133"/></map>
+<area shape="rect" id="node2" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="216,5,327,32"/><area shape="rect" id="node3" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="224,56,319,83"/></map>
 </div>
 </p>
 
@@ -310,20 +227,20 @@ Wether to take an image. </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Start with streaming. </p>
+<p>Starts the streaming of a all cameras. </p>
 
-<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00266">266</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
+<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00269">269</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
 
-<p>References <a class="el" href="video__thread_8h_source.html#l00037">video_thread_t::is_running</a>, <a class="el" href="video__thread_8c_source.html#l00079">VIDEO_THREAD_CAMERA</a>, and <a class="el" href="video__thread_8c_source.html#l00145">video_thread_function()</a>.</p>
+<p>References <a class="el" href="video__thread_8c_source.html#l00065">cameras</a>, <a class="el" href="video__thread_8c_source.html#l00225">start_video_thread()</a>, and <a class="el" href="video__thread_8c_source.html#l00061">VIDEO_THREAD_MAX_CAMERAS</a>.</p>
 
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="video__thread_8h_ae99893bfbc5f28c15432c06aee1e736f_cgraph.png" border="0" usemap="#video__thread_8h_ae99893bfbc5f28c15432c06aee1e736f_cgraph" alt=""/></div>
 <map name="video__thread_8h_ae99893bfbc5f28c15432c06aee1e736f_cgraph" id="video__thread_8h_ae99893bfbc5f28c15432c06aee1e736f_cgraph">
-<area shape="rect" id="node2" href="video__thread_8c.html#a99fd8c1413b858abf320b9adb453ed75" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="196,233,359,260"/><area shape="rect" id="node3" href="bayer_8h.html#ac5dfa338e1c818c31921acfdd170051b" title="Decode Bayer Pattern. " alt="" coords="446,5,545,32"/><area shape="rect" id="node5" href="cv_8c.html#a740dfb3335f6510c246c1b03fe3d7d5d" title="cv_run" alt="" coords="463,56,527,83"/><area shape="rect" id="node6" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="440,107,551,133"/><area shape="rect" id="node7" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="448,157,543,184"/><area shape="rect" id="node8" href="rt__priority_8h.html#ad24a15cd8740f6a59aa1a3fd3f8c74bb" title="set_nice_level" alt="" coords="440,208,551,235"/><area shape="rect" id="node9" href="linux_2mcu__periph_2sys__time__arch_8h.html#afcf2b9e660762eef1d26b9b44cafacb1" title="elapsed time in microsecs between two timespecs " alt="" coords="416,259,575,285"/><area shape="rect" id="node10" href="v4l2_8c.html#a865e07dd33caf3bb71a3b90834b308c3" title="Free the image and enqueue the buffer (Thread safe) This must be done after processing the image..." alt="" coords="432,309,559,336"/><area shape="rect" id="node11" href="v4l2_8c.html#a5f8eea1ef0eb13865ad6753e02f4a283" title="Get the latest image buffer and lock it (Thread safe, BLOCKING) This functions blocks until image acc..." alt="" coords="434,360,557,387"/><area shape="rect" id="node12" href="v4l2_8c.html#adb5a15f8b748f8ed515bb2920e423ea5" title="Start capturing images in streaming mode (Thread safe) " alt="" coords="425,411,566,437"/><area shape="rect" id="node14" href="video__thread_8c.html#aaa7b1f2f5b3646dfeb40b7cacd005efb" title="video_thread_save_shot" alt="" coords="407,461,584,488"/><area shape="rect" id="node4" href="bayer_8h.html#a7bcab48c91c2c274a2e94e848a106f11" title="clip" alt="" coords="687,5,730,32"/><area shape="rect" id="node13" href="v4l2_8c.html#a3016fdd985a61647b2fc6a653ebfcfaa" title="The main capturing thread This thread handles the queue and dequeue of buffers, to make sure only the..." alt="" coords="632,411,785,437"/><area shape="rect" id="node15" href="jpeg_8c.html#a80691d29cd889f8b549ac6850c95e1b6" title="Encode an YUV422 image. " alt="" coords="633,461,784,488"/><area shape="rect" id="node27" href="exif__module_8c.html#a5e636f6bee9bd1ab6d04ec780509dca5" title="write_exif_jpeg" alt="" coords="651,588,766,615"/><area shape="rect" id="node16" href="jpeg_8c.html#af2a62dbe59d962b7cd5158e744b941df" title="jpeg_close_bitstream" alt="" coords="833,309,992,336"/><area shape="rect" id="node17" href="jpeg_8c.html#aa65677a00f264d53b744f64b386139e1" title="jpeg_encodeMCU" alt="" coords="846,360,979,387"/><area shape="rect" id="node22" href="jpeg_8c.html#a688433e5f55000ae893f2d5c29097691" title="jpeg_initialization" alt="" coords="847,436,978,463"/><area shape="rect" id="node25" href="jpeg_8c.html#a26b97262e8620df4fd0ece95195a2d8e" title="jpeg_write_markers" alt="" coords="839,487,986,513"/><area shape="rect" id="node26" href="jpeg_8c.html#a69ed605945a7ea46dbfaa9b3f29b5ed8" title="MakeTables" alt="" coords="865,537,960,564"/><area shape="rect" id="node18" href="jpeg_8c.html#a5b96ae28e2300858e6af3061ac8f96b9" title="jpeg_DCT" alt="" coords="1082,247,1165,273"/><area shape="rect" id="node19" href="jpeg_8c.html#a20c1f652043de7bc8171be6591bd3480" title="jpeg_huffman" alt="" coords="1069,297,1178,324"/><area shape="rect" id="node20" href="jpeg_8c.html#a1b9aa7581d09ec6412a14ec76334667c" title="jpeg_levelshift" alt="" coords="1067,348,1179,375"/><area shape="rect" id="node21" href="jpeg_8c.html#ac00d030f6b21b9e0973fe18a7a7f7e51" title="jpeg_quantization" alt="" coords="1056,399,1191,425"/><area shape="rect" id="node23" href="jpeg_8c.html#a496e270428d382bcbda831334590eaf6" title="jpeg_read_400_format" alt="" coords="1040,449,1207,476"/><area shape="rect" id="node24" href="jpeg_8c.html#a206021dc908d46e0a1d72ed9c40b10e9" title="jpeg_read_422_format" alt="" coords="1040,500,1207,527"/><area shape="rect" id="node28" href="exif__module_8c.html#a62dd27ed931462c0526e4632461c7acf" title="create_tag" alt="" coords="867,588,958,615"/><area shape="rect" id="node29" href="exif__module_8c.html#a76556aceaec9700c7267093b6d4fa99f" title="init_tag" alt="" coords="878,639,947,665"/></map>
+<area shape="rect" id="node2" href="video__thread_8c.html#ab813e16de6bb4fcba1ac803cd51e722d" title="start_video_thread" alt="" coords="196,335,339,361"/><area shape="rect" id="node3" href="video__thread_8c.html#a99fd8c1413b858abf320b9adb453ed75" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="387,335,549,361"/><area shape="rect" id="node4" href="bayer_8h.html#ac5dfa338e1c818c31921acfdd170051b" title="Decode Bayer Pattern. " alt="" coords="627,31,726,57"/><area shape="rect" id="node6" href="libisp_8c.html#a1b23f6d5fe4f4e5c8e38944439156f19" title="configure_isp" alt="" coords="623,107,730,133"/><area shape="rect" id="node10" href="cv_8c.html#a600c1d8570ebc9340cee21772e84f022" title="cv_run_device" alt="" coords="621,208,733,235"/><area shape="rect" id="node13" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="1031,233,1142,260"/><area shape="rect" id="node15" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="629,309,724,336"/><area shape="rect" id="node16" href="rt__priority_8h.html#ad24a15cd8740f6a59aa1a3fd3f8c74bb" title="set_nice_level" alt="" coords="621,360,732,387"/><area shape="rect" id="node17" href="linux_2mcu__periph_2sys__time__arch_8h.html#afcf2b9e660762eef1d26b9b44cafacb1" title="elapsed time in microsecs between two timespecs " alt="" coords="597,411,756,437"/><area shape="rect" id="node18" href="v4l2_8c.html#a865e07dd33caf3bb71a3b90834b308c3" title="Free the image and enqueue the buffer (Thread safe) This must be done after processing the image..." alt="" coords="613,461,740,488"/><area shape="rect" id="node19" href="v4l2_8c.html#a5f8eea1ef0eb13865ad6753e02f4a283" title="Get the latest image buffer and lock it (Thread safe, BLOCKING) This functions blocks until image acc..." alt="" coords="615,512,738,539"/><area shape="rect" id="node20" href="v4l2_8c.html#a4efccaca5c6c386d09e315ccfcaa3581" title="Start capturing images in streaming mode (Thread safe) " alt="" coords="606,563,747,589"/><area shape="rect" id="node5" href="bayer_8h.html#a7bcab48c91c2c274a2e94e848a106f11" title="clip" alt="" coords="859,5,902,32"/><area shape="rect" id="node7" href="libisp_8c.html#a2fc5c5460c56f4a3a3229a41c9b4e1df" title="close_isp" alt="" coords="841,56,921,83"/><area shape="rect" id="node8" href="libisp_8c.html#a18baccdcb0a85933c9d8aad524c46673" title="This is taken from libisp. " alt="" coords="831,107,930,133"/><area shape="rect" id="node9" href="libisp_8c.html#a8ece15cff340c783aed0144eab145207" title="This is taken from libisp. " alt="" coords="1005,107,1168,133"/><area shape="rect" id="node11" href="cv_8c.html#a240a6ff9df3d40d46d3233e9017ef46c" title="cv_async_function" alt="" coords="811,157,950,184"/><area shape="rect" id="node14" href="cv_8c.html#a9ccbed9793580feadb878ae82db54f7f" title="timeval_diff" alt="" coords="833,208,928,235"/><area shape="rect" id="node12" href="image_8c.html#a02932625f9aeb66da70c89a2f2d3a052" title="Copy an image from inut to output This will only work if the formats are the same. " alt="" coords="1037,157,1136,184"/><area shape="rect" id="node21" href="v4l2_8c.html#a3016fdd985a61647b2fc6a653ebfcfaa" title="The main capturing thread This thread handles the queue and dequeue of buffers, to make sure only the..." alt="" coords="804,563,957,589"/><area shape="rect" id="node22" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="1015,563,1159,589"/><area shape="rect" id="node23" href="sys__time_8h.html#adb22f2652f04908fbc644c7274bf7273" title="usec_of_sys_time_ticks" alt="" coords="1216,563,1387,589"/></map>
 </div>
 </p>
 
@@ -343,74 +260,22 @@ Wether to take an image. </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Stops the streaming This could take some time, because the thread is stopped asynchronous. </p>
+<p>Stops the streaming of all cameras This could take some time, because the thread is stopped asynchronous. </p>
 
-<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00285">285</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
+<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00284">284</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
 
-<p>References <a class="el" href="video__thread_8h_source.html#l00038">video_thread_t::dev</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="video__thread_8h_source.html#l00037">video_thread_t::is_running</a>, <a class="el" href="v4l2_8h_source.html#l00049">v4l2_device::name</a>, and <a class="el" href="v4l2_8c_source.html#l00446">v4l2_stop_capture()</a>.</p>
+<p>References <a class="el" href="video__thread_8c_source.html#l00065">cameras</a>, <a class="el" href="video__thread_8c_source.html#l00240">stop_video_thread()</a>, and <a class="el" href="video__thread_8c_source.html#l00061">VIDEO_THREAD_MAX_CAMERAS</a>.</p>
 
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="video__thread_8h_a8fd40d2120fa710aaa7be7e9702029d1_cgraph.png" border="0" usemap="#video__thread_8h_a8fd40d2120fa710aaa7be7e9702029d1_cgraph" alt=""/></div>
 <map name="video__thread_8h_a8fd40d2120fa710aaa7be7e9702029d1_cgraph" id="video__thread_8h_a8fd40d2120fa710aaa7be7e9702029d1_cgraph">
-<area shape="rect" id="node2" href="v4l2_8c.html#a8a08b40d6115117914f0db0fce1c6d98" title="Stop capturing of the image stream (Thread safe) This function is blocking until capturing thread is ..." alt="" coords="193,5,332,32"/></map>
+<area shape="rect" id="node2" href="video__thread_8c.html#a40bc8b3b880efce13d8fd2c74702795f" title="stop_video_thread" alt="" coords="193,5,333,32"/><area shape="rect" id="node3" href="v4l2_8c.html#ac793d6bd02a9c7b138146a848bf93bea" title="Stop capturing of the image stream (Thread safe) This function is blocking until capturing thread is ..." alt="" coords="381,5,520,32"/></map>
 </div>
 </p>
-
-</div>
-</div>
-<a class="anchor" id="a72be9bd94d8f75f83b627482181607ff"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void video_thread_take_shot </td>
-          <td>(</td>
-          <td class="paramtype">bool_t&#160;</td>
-          <td class="paramname"><em>take</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Take a shot and save it This will only work when the streaming is enabled. </p>
-
-<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00308">308</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
-
-<p>References <a class="el" href="video__thread_8h_source.html#l00041">video_thread_t::take_shot</a>.</p>
-
-<p>Referenced by <a class="el" href="cv__blob__locator_8c_source.html#l00246">cv_blob_locator_periodic()</a>, and <a class="el" href="video__cam__ctrl_8c_source.html#l00050">dc_send_command()</a>.</p>
-
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="video__thread_8h_a72be9bd94d8f75f83b627482181607ff_icgraph.png" border="0" usemap="#video__thread_8h_a72be9bd94d8f75f83b627482181607ff_icgraph" alt=""/></div>
-<map name="video__thread_8h_a72be9bd94d8f75f83b627482181607ff_icgraph" id="video__thread_8h_a72be9bd94d8f75f83b627482181607ff_icgraph">
-<area shape="rect" id="node2" href="cv__blob__locator_8h.html#a4155e79e90bf935651c760ccdfbef27b" title="cv_blob_locator_periodic" alt="" coords="228,5,407,32"/><area shape="rect" id="node3" href="video__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95" title="Send Command To Camera. " alt="" coords="244,56,391,83"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="ab0e1e5111e74f73f46bb25599736bb88"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="video__thread_8h.html#structvideo__thread__t">video_thread_t</a> video_thread</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Dummy C implementation for simulation The V4L2 could also work in simulation, but must be adapted a bit. </p>
-
-<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00101">101</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
 
 </div>
 </div>
@@ -420,7 +285,7 @@ Wether to take an image. </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="video__thread_8h.html">video_thread.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:49 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:56 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

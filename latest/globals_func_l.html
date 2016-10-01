@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -113,6 +113,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals_func_v.html#index_v"><span>v</span></a></li>
       <li><a href="globals_func_w.html#index_w"><span>w</span></a></li>
       <li><a href="globals_func_x.html#index_x"><span>x</span></a></li>
+      <li><a href="globals_func_y.html#index_y"><span>y</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -186,7 +187,7 @@ $(document).ready(function(){initNavTree('globals_func_l.html','');});
 </li>
 <li>l3gd20_spi_init()
 : <a class="el" href="l3gd20__spi_8c.html#a7ce0152bebd25be7add3b16f7d660f2e">l3gd20_spi.c</a>
-, <a class="el" href="l3gd20__spi_8h.html#a6afeb0960dfd2911903194243333069d">l3gd20_spi.h</a>
+, <a class="el" href="l3gd20__spi_8h.html#a7ce0152bebd25be7add3b16f7d660f2e">l3gd20_spi.h</a>
 </li>
 <li>l3gd20_spi_periodic()
 : <a class="el" href="l3gd20__spi_8h.html#a3d5961070c05aa8b0d38ea18b1dcb3cf">l3gd20_spi.h</a>
@@ -208,21 +209,17 @@ $(document).ready(function(){initNavTree('globals_func_l.html','');});
 <li>last_plume_was_here()
 : <a class="el" href="anemotaxis_8c.html#a3fa47975128a835ea2b558c2d0249823">anemotaxis.c</a>
 </li>
-<li>launch_pprz_thd()
-: <a class="el" href="chibios__init_8c.html#a322a154d46d2c6bcd9fb498c26ea536d">chibios_init.c</a>
-, <a class="el" href="chibios__init_8h.html#a322a154d46d2c6bcd9fb498c26ea536d">chibios_init.h</a>
-</li>
 <li>lcd_cmd()
 : <a class="el" href="lcd__dogm_8c.html#a013ebbab9fe5f1d401ebb0706f6499be">lcd_dogm.c</a>
 , <a class="el" href="lcd__dogm_8h.html#a013ebbab9fe5f1d401ebb0706f6499be">lcd_dogm.h</a>
 </li>
 <li>lcd_data()
-: <a class="el" href="lcd__dogm_8h.html#ad0729d2cba627825a089ca1fff12ba29">lcd_dogm.h</a>
-, <a class="el" href="lcd__dogm_8c.html#ad0729d2cba627825a089ca1fff12ba29">lcd_dogm.c</a>
+: <a class="el" href="lcd__dogm_8c.html#ad0729d2cba627825a089ca1fff12ba29">lcd_dogm.c</a>
+, <a class="el" href="lcd__dogm_8h.html#ad0729d2cba627825a089ca1fff12ba29">lcd_dogm.h</a>
 </li>
 <li>lcd_dogm_init()
-: <a class="el" href="lcd__dogm_8c.html#ab6acaab38b691cf2bd50ff3f9cd5a9e9">lcd_dogm.c</a>
-, <a class="el" href="lcd__dogm_8h.html#ab6acaab38b691cf2bd50ff3f9cd5a9e9">lcd_dogm.h</a>
+: <a class="el" href="lcd__dogm_8h.html#ab6acaab38b691cf2bd50ff3f9cd5a9e9">lcd_dogm.h</a>
+, <a class="el" href="lcd__dogm_8c.html#ab6acaab38b691cf2bd50ff3f9cd5a9e9">lcd_dogm.c</a>
 </li>
 <li>lcd_dogm_init_hw()
 : <a class="el" href="lcd__dogm__hw_8c.html#a763c731963e6543e5a42a499549e00dd">lcd_dogm_hw.c</a>
@@ -278,6 +275,10 @@ $(document).ready(function(){initNavTree('globals_func_l.html','');});
 : <a class="el" href="light__temt_8c.html#ad79f291e455827d94f9b08e7a23716f3">light_temt.c</a>
 , <a class="el" href="light__temt_8h.html#ad79f291e455827d94f9b08e7a23716f3">light_temt.h</a>
 </li>
+<li>line_fit()
+: <a class="el" href="edge__flow_8c.html#a57885c6d0cf61ad61c6e6113b2573c88">edge_flow.c</a>
+, <a class="el" href="edge__flow_8h.html#a57885c6d0cf61ad61c6e6113b2573c88">edge_flow.h</a>
+</li>
 <li>link_mcu_event_task()
 : <a class="el" href="link__mcu__can_8c.html#ac8ca91741aea5e6803a8db35d4c8188e">link_mcu_can.c</a>
 , <a class="el" href="link__mcu__can_8h.html#ac8ca91741aea5e6803a8db35d4c8188e">link_mcu_can.h</a>
@@ -300,8 +301,8 @@ $(document).ready(function(){initNavTree('globals_func_l.html','');});
 , <a class="el" href="link__mcu__usart_8h.html#a822c4985aa0c0410ceb98e31dc539aa9">link_mcu_usart.h</a>
 </li>
 <li>link_mcu_send()
-: <a class="el" href="link__mcu__usart_8h.html#ad2f41351eb7b54410360a1e9f1f2407a">link_mcu_usart.h</a>
-, <a class="el" href="link__mcu__can_8h.html#ad2f41351eb7b54410360a1e9f1f2407a">link_mcu_can.h</a>
+: <a class="el" href="link__mcu__can_8h.html#ad2f41351eb7b54410360a1e9f1f2407a">link_mcu_can.h</a>
+, <a class="el" href="link__mcu__usart_8h.html#ad2f41351eb7b54410360a1e9f1f2407a">link_mcu_usart.h</a>
 </li>
 <li>lis302dl_set_default_config()
 : <a class="el" href="lis302dl_8h.html#a13ce2c47bf9a6b9dd5c20fdbfbd0cbd1">lis302dl.h</a>
@@ -311,8 +312,8 @@ $(document).ready(function(){initNavTree('globals_func_l.html','');});
 , <a class="el" href="lis302dl__spi_8h.html#a2c38f1d2a84f448dd9f0c7cae80f0a70">lis302dl_spi.h</a>
 </li>
 <li>lis302dl_spi_init()
-: <a class="el" href="lis302dl__spi_8h.html#a498e7b861c3c70b1fbdd099d6e9c0452">lis302dl_spi.h</a>
-, <a class="el" href="lis302dl__spi_8c.html#aa50f2084b9945c0c51d4c12be83e2b50">lis302dl_spi.c</a>
+: <a class="el" href="lis302dl__spi_8c.html#aa50f2084b9945c0c51d4c12be83e2b50">lis302dl_spi.c</a>
+, <a class="el" href="lis302dl__spi_8h.html#a498e7b861c3c70b1fbdd099d6e9c0452">lis302dl_spi.h</a>
 </li>
 <li>lis302dl_spi_periodic()
 : <a class="el" href="lis302dl__spi_8h.html#af10186c998376374915e06131a4b18b5">lis302dl_spi.h</a>
@@ -335,6 +336,12 @@ $(document).ready(function(){initNavTree('globals_func_l.html','');});
 : <a class="el" href="lisa__l_2baro__board_8c.html#a76dea5cf1783c2447b9545e9b99fd861">baro_board.c</a>
 , <a class="el" href="lisa__l_2baro__board_8h.html#a76dea5cf1783c2447b9545e9b99fd861">baro_board.h</a>
 </li>
+<li>lla_from_jsbsim_geocentric()
+: <a class="el" href="nps__fdm__jsbsim_8cpp.html#a9548efbcd14770bf2220ed0d3e82f660">nps_fdm_jsbsim.cpp</a>
+</li>
+<li>lla_from_jsbsim_geodetic()
+: <a class="el" href="nps__fdm__jsbsim_8cpp.html#a321e3b5209597d68b61714ec248ae019">nps_fdm_jsbsim.cpp</a>
+</li>
 <li>lla_of_ecef_d()
 : <a class="el" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16">pprz_geodetic_double.c</a>
 , <a class="el" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16">pprz_geodetic_double.h</a>
@@ -348,94 +355,142 @@ $(document).ready(function(){initNavTree('globals_func_l.html','');});
 , <a class="el" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23">pprz_geodetic_int.h</a>
 </li>
 <li>lla_of_utm_d()
-: <a class="el" href="group__math__geodetic__double.html#gacc8bd646ec5ac148424251d65d2dd033">pprz_geodetic_double.h</a>
-, <a class="el" href="group__math__geodetic__double.html#gacc8bd646ec5ac148424251d65d2dd033">pprz_geodetic_double.c</a>
+: <a class="el" href="group__math__geodetic__double.html#ga0f160507506fc364a8b2c35327d252fa">pprz_geodetic_double.h</a>
+, <a class="el" href="group__math__geodetic__double.html#ga0f160507506fc364a8b2c35327d252fa">pprz_geodetic_double.c</a>
 </li>
 <li>lla_of_utm_f()
 : <a class="el" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455">pprz_geodetic_float.c</a>
 , <a class="el" href="pprz__geodetic__float_8h.html#a30c2e47ec9a898079c04e8b08496b455">pprz_geodetic_float.h</a>
+</li>
+<li>lla_of_utm_i()
+: <a class="el" href="group__math__geodetic__int.html#ga3e1a1eaa12a3890f5a70574219a74d9e">pprz_geodetic_int.c</a>
+, <a class="el" href="group__math__geodetic__int.html#ga3e1a1eaa12a3890f5a70574219a74d9e">pprz_geodetic_int.h</a>
+</li>
+<li>llh_from_jsbsim()
+: <a class="el" href="nps__fdm__jsbsim_8cpp.html#af2cbbfe13b5d92888cb4ac8005a9dd8e">nps_fdm_jsbsim.cpp</a>
 </li>
 <li>lm75_event()
 : <a class="el" href="temp__lm75_8c.html#a2f873f2dbc060a9f55de3e124a753bba">temp_lm75.c</a>
 , <a class="el" href="temp__lm75_8h.html#a2f873f2dbc060a9f55de3e124a753bba">temp_lm75.h</a>
 </li>
 <li>lm75_init()
-: <a class="el" href="temp__lm75_8c.html#a80b92e2bcbb69fd08e45e8f6ca51051a">temp_lm75.c</a>
-, <a class="el" href="temp__lm75_8h.html#a80b92e2bcbb69fd08e45e8f6ca51051a">temp_lm75.h</a>
+: <a class="el" href="temp__lm75_8h.html#a80b92e2bcbb69fd08e45e8f6ca51051a">temp_lm75.h</a>
+, <a class="el" href="temp__lm75_8c.html#a80b92e2bcbb69fd08e45e8f6ca51051a">temp_lm75.c</a>
 </li>
 <li>lm75_periodic()
-: <a class="el" href="temp__lm75_8h.html#adee2106e71d8f308b57f87cc3a2dbe84">temp_lm75.h</a>
-, <a class="el" href="temp__lm75_8c.html#adee2106e71d8f308b57f87cc3a2dbe84">temp_lm75.c</a>
+: <a class="el" href="temp__lm75_8c.html#adee2106e71d8f308b57f87cc3a2dbe84">temp_lm75.c</a>
+, <a class="el" href="temp__lm75_8h.html#adee2106e71d8f308b57f87cc3a2dbe84">temp_lm75.h</a>
 </li>
 <li>lms_estimation()
-: <a class="el" href="stabilization__attitude__quat__indi_8c.html#ad4a81c601235942469d940e7ac5f400e">stabilization_attitude_quat_indi.c</a>
-, <a class="el" href="stabilization__attitude__quat__indi_8h.html#ad4a81c601235942469d940e7ac5f400e">stabilization_attitude_quat_indi.h</a>
+: <a class="el" href="stabilization__indi_8c.html#a4087c1b63b32e110813d687001ea96ca">stabilization_indi.c</a>
+</li>
+<li>load_texton_dictionary()
+: <a class="el" href="textons_8c.html#a21c316a603e6af19c1b7c42f5eabb16c">textons.c</a>
+, <a class="el" href="textons_8h.html#a21c316a603e6af19c1b7c42f5eabb16c">textons.h</a>
+</li>
+<li>log_image()
+: <a class="el" href="video__usb__logger_8c.html#aca46474177c731189d75297b63fe71f4">video_usb_logger.c</a>
 </li>
 <li>logger_uart_init()
 : <a class="el" href="logger__uart_8c.html#a661560da8c6a6c5b8e64061843bc1250">logger_uart.c</a>
 , <a class="el" href="logger__uart_8h.html#a661560da8c6a6c5b8e64061843bc1250">logger_uart.h</a>
 </li>
 <li>logger_uart_periodic()
-: <a class="el" href="logger__uart_8c.html#ab6b5fd6329c4581731f6ff29fdac97e2">logger_uart.c</a>
-, <a class="el" href="logger__uart_8h.html#ab6b5fd6329c4581731f6ff29fdac97e2">logger_uart.h</a>
+: <a class="el" href="logger__uart_8h.html#ab6b5fd6329c4581731f6ff29fdac97e2">logger_uart.h</a>
+, <a class="el" href="logger__uart_8c.html#ab6b5fd6329c4581731f6ff29fdac97e2">logger_uart.c</a>
+</li>
+<li>long_to_string_with_divisor()
+: <a class="el" href="group__chprintf.html#ga083a2bdcd3b67b7be94900e8affc57b8">printf.c</a>
 </li>
 <li>low_pass_vdot()
 : <a class="el" href="energy__ctrl_8c.html#ad583c655b2e3c499eb34f7e93e4cb1b1">energy_ctrl.c</a>
 </li>
 <li>lsm303dlhc_acc_set_default_config()
-: <a class="el" href="lsm303dlhc_8c.html#ae8ceff9bc03fc374ba40da1e878432a4">lsm303dlhc.c</a>
+: <a class="el" href="lsm303dlhc_8h.html#ae8ceff9bc03fc374ba40da1e878432a4">lsm303dlhc.h</a>
 </li>
-<li>lsm303dlhc_event()
-: <a class="el" href="lsm303dlhc_8h.html#a39197f68eef8e69e704960ffc6c2e68c">lsm303dlhc.h</a>
-, <a class="el" href="lsm303dlhc_8c.html#a39197f68eef8e69e704960ffc6c2e68c">lsm303dlhc.c</a>
+<li>lsm303dlhc_i2c_event()
+: <a class="el" href="lsm303dlhc__i2c_8h.html#abf84e0af8f7bbeead508991aef060c0c">lsm303dlhc_i2c.h</a>
+, <a class="el" href="lsm303dlhc__i2c_8c.html#a4120558f06f5aa12499c967879ff3336">lsm303dlhc_i2c.c</a>
+</li>
+<li>lsm303dlhc_i2c_init()
+: <a class="el" href="lsm303dlhc__i2c_8h.html#a4b33179ee6e6df1fd4904581266e5963">lsm303dlhc_i2c.h</a>
+, <a class="el" href="lsm303dlhc__i2c_8c.html#a4b33179ee6e6df1fd4904581266e5963">lsm303dlhc_i2c.c</a>
+</li>
+<li>lsm303dlhc_i2c_periodic()
+: <a class="el" href="lsm303dlhc__i2c_8h.html#a2f600ac276e7ed6eb74c55228e96ce11">lsm303dlhc_i2c.h</a>
+</li>
+<li>lsm303dlhc_i2c_read()
+: <a class="el" href="lsm303dlhc__i2c_8c.html#a1b770be048cbe720436034ad1a1323a3">lsm303dlhc_i2c.c</a>
+, <a class="el" href="lsm303dlhc__i2c_8h.html#a2b4ad59cad2d1657c4adbcf815eb78e6">lsm303dlhc_i2c.h</a>
+</li>
+<li>lsm303dlhc_i2c_send_config()
+: <a class="el" href="lsm303dlhc__i2c_8c.html#a9d4bda8a5f000c40a5b2eb1b9a8c009a">lsm303dlhc_i2c.c</a>
+</li>
+<li>lsm303dlhc_i2c_start_configure()
+: <a class="el" href="lsm303dlhc__i2c_8c.html#aa853bf7c9fc2298d7464c39cdd47aa7f">lsm303dlhc_i2c.c</a>
+, <a class="el" href="lsm303dlhc__i2c_8h.html#ae6e73decebcc1a4c327e12cb9cd82be6">lsm303dlhc_i2c.h</a>
 </li>
 <li>lsm303dlhc_i2c_tx_reg()
-: <a class="el" href="lsm303dlhc_8c.html#a111ef18370e5a6b276e765795ac4c3a2">lsm303dlhc.c</a>
-</li>
-<li>lsm303dlhc_init()
-: <a class="el" href="lsm303dlhc_8h.html#a43bda86b1066b83f04638f1c8918eaf0">lsm303dlhc.h</a>
-, <a class="el" href="lsm303dlhc_8c.html#a43bda86b1066b83f04638f1c8918eaf0">lsm303dlhc.c</a>
+: <a class="el" href="lsm303dlhc__i2c_8c.html#a14b298cb4859ac3ca247d0b1afbf1d8a">lsm303dlhc_i2c.c</a>
 </li>
 <li>lsm303dlhc_mag_set_default_config()
-: <a class="el" href="lsm303dlhc_8c.html#a8d231a0e60d1fd7c43f0618e82c369e4">lsm303dlhc.c</a>
+: <a class="el" href="lsm303dlhc_8h.html#a8d231a0e60d1fd7c43f0618e82c369e4">lsm303dlhc.h</a>
 </li>
-<li>lsm303dlhc_periodic()
-: <a class="el" href="lsm303dlhc_8h.html#a5d3ba8e56a241a79753f1a24b87cf4bc">lsm303dlhc.h</a>
+<li>lsm303dlhc_spi_event()
+: <a class="el" href="lsm303dlhc__spi_8c.html#acf076cd15a17798654e53704edb9dcd8">lsm303dlhc_spi.c</a>
+, <a class="el" href="lsm303dlhc__spi_8h.html#acf076cd15a17798654e53704edb9dcd8">lsm303dlhc_spi.h</a>
 </li>
-<li>lsm303dlhc_read()
-: <a class="el" href="lsm303dlhc_8c.html#a61023404c121ad141fab2d1aefbe1fb1">lsm303dlhc.c</a>
-, <a class="el" href="lsm303dlhc_8h.html#a61023404c121ad141fab2d1aefbe1fb1">lsm303dlhc.h</a>
+<li>lsm303dlhc_spi_init()
+: <a class="el" href="lsm303dlhc__spi_8h.html#a88820b2fdf8b7f14c51da0893f60579d">lsm303dlhc_spi.h</a>
+, <a class="el" href="lsm303dlhc__spi_8c.html#a88820b2fdf8b7f14c51da0893f60579d">lsm303dlhc_spi.c</a>
 </li>
-<li>lsm303dlhc_send_config()
-: <a class="el" href="lsm303dlhc_8c.html#afd5d70c0276b2a913b5eb5b40c5613aa">lsm303dlhc.c</a>
+<li>lsm303dlhc_spi_periodic()
+: <a class="el" href="lsm303dlhc__spi_8h.html#aba50a9cb1713ac19abd4d073b67cdec0">lsm303dlhc_spi.h</a>
 </li>
-<li>lsm303dlhc_start_configure()
-: <a class="el" href="lsm303dlhc_8c.html#a8a925e85d441156e8201534827bdbf77">lsm303dlhc.c</a>
-, <a class="el" href="lsm303dlhc_8h.html#a8a925e85d441156e8201534827bdbf77">lsm303dlhc.h</a>
+<li>lsm303dlhc_spi_read()
+: <a class="el" href="lsm303dlhc__spi_8h.html#a9b8b5190fe3c839cde9f54d89a14c670">lsm303dlhc_spi.h</a>
+, <a class="el" href="lsm303dlhc__spi_8c.html#a9b8b5190fe3c839cde9f54d89a14c670">lsm303dlhc_spi.c</a>
+</li>
+<li>lsm303dlhc_spi_send_config()
+: <a class="el" href="lsm303dlhc__spi_8c.html#a0cdb1c417383902c86e65d80afe130f7">lsm303dlhc_spi.c</a>
+</li>
+<li>lsm303dlhc_spi_start_configure()
+: <a class="el" href="lsm303dlhc__spi_8c.html#a8dae7e0a94b3b47339b987d2bb24fbf8">lsm303dlhc_spi.c</a>
+, <a class="el" href="lsm303dlhc__spi_8h.html#a8dae7e0a94b3b47339b987d2bb24fbf8">lsm303dlhc_spi.h</a>
+</li>
+<li>lsm303dlhc_spi_tx_reg()
+: <a class="el" href="lsm303dlhc__spi_8c.html#a7df5e2e6ac966b51b9bd991526fa8130">lsm303dlhc_spi.c</a>
+</li>
+<li>ltoa()
+: <a class="el" href="group__chprintf.html#gac5d948ddbb98eeaf4c395f12d1673e2e">printf.c</a>
 </li>
 <li>ltp_def_from_ecef_d()
 : <a class="el" href="group__math__geodetic__double.html#ga3b487b485bc51b98307acae35009d1bb">pprz_geodetic_double.h</a>
 , <a class="el" href="group__math__geodetic__double.html#ga3b487b485bc51b98307acae35009d1bb">pprz_geodetic_double.c</a>
 </li>
 <li>ltp_def_from_ecef_f()
-: <a class="el" href="pprz__geodetic__float_8c.html#ae33e6c6696e73d42c2ae081e86fff00c">pprz_geodetic_float.c</a>
-, <a class="el" href="pprz__geodetic__float_8h.html#ae33e6c6696e73d42c2ae081e86fff00c">pprz_geodetic_float.h</a>
+: <a class="el" href="pprz__geodetic__float_8h.html#ae33e6c6696e73d42c2ae081e86fff00c">pprz_geodetic_float.h</a>
+, <a class="el" href="pprz__geodetic__float_8c.html#ae33e6c6696e73d42c2ae081e86fff00c">pprz_geodetic_float.c</a>
 </li>
 <li>ltp_def_from_ecef_i()
 : <a class="el" href="group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f">pprz_geodetic_int.c</a>
 , <a class="el" href="group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f">pprz_geodetic_int.h</a>
 </li>
+<li>ltp_def_from_lla_d()
+: <a class="el" href="group__math__geodetic__double.html#gaae83ce0e163149ccc9b0480a19704c88">pprz_geodetic_double.c</a>
+, <a class="el" href="group__math__geodetic__double.html#gaae83ce0e163149ccc9b0480a19704c88">pprz_geodetic_double.h</a>
+</li>
 <li>ltp_def_from_lla_f()
-: <a class="el" href="pprz__geodetic__float_8c.html#a624697fcf875d02030d046161c4609b7">pprz_geodetic_float.c</a>
-, <a class="el" href="pprz__geodetic__float_8h.html#a624697fcf875d02030d046161c4609b7">pprz_geodetic_float.h</a>
+: <a class="el" href="pprz__geodetic__float_8h.html#a624697fcf875d02030d046161c4609b7">pprz_geodetic_float.h</a>
+, <a class="el" href="pprz__geodetic__float_8c.html#a624697fcf875d02030d046161c4609b7">pprz_geodetic_float.c</a>
 </li>
 <li>ltp_def_from_lla_i()
-: <a class="el" href="group__math__geodetic__int.html#gaf0b761a4e44c92481ac96b623c34ef70">pprz_geodetic_int.c</a>
-, <a class="el" href="group__math__geodetic__int.html#gaf0b761a4e44c92481ac96b623c34ef70">pprz_geodetic_int.h</a>
+: <a class="el" href="group__math__geodetic__int.html#gaf0b761a4e44c92481ac96b623c34ef70">pprz_geodetic_int.h</a>
+, <a class="el" href="group__math__geodetic__int.html#gaf0b761a4e44c92481ac96b623c34ef70">pprz_geodetic_int.c</a>
 </li>
 <li>ltp_of_ecef_rmat_from_lla_i()
-: <a class="el" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9">pprz_geodetic_int.h</a>
-, <a class="el" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9">pprz_geodetic_int.c</a>
+: <a class="el" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9">pprz_geodetic_int.c</a>
+, <a class="el" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9">pprz_geodetic_int.h</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -443,7 +498,7 @@ $(document).ready(function(){initNavTree('globals_func_l.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:30 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:45 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

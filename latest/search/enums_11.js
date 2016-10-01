@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['w5100status',['W5100Status',['../w5100_8h.html#a1b86a774f206095259ed0b6034d24c60',1,'w5100.h']]]
+  ['vnmsgstatus',['VNMsgStatus',['../vn200__serial_8h.html#a6f13abe7fa81c2a64e5d245d56f3f796',1,'vn200_serial.h']]],
+  ['vnstatus',['VNStatus',['../vn200__serial_8h.html#a21fb50db739a912f41acbccf6bb4281d',1,'vn200_serial.h']]]
 ];

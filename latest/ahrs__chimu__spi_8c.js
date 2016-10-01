@@ -1,6 +1,7 @@
 var ahrs__chimu__spi_8c =
 [
-    [ "ahrs_chimu_enable_output", "ahrs__chimu__spi_8c.html#a6eecebdc3c71cc1d1bdab3f2da2359d0", null ],
+    [ "AHRS_CHIMU_GPS_ID", "ahrs__chimu__spi_8c.html#a434718ac498c67870797a8fe0b679de0", null ],
+    [ "ahrs_chimu_enable_output", "ahrs__chimu__spi_8c.html#ad6a0de567de0dd22d4f4e1f8a4dfcb9d", null ],
     [ "ahrs_chimu_init", "ahrs__chimu__spi_8c.html#a3a8e7287a633ce9302ef4bcf322f7ed6", null ],
     [ "ahrs_chimu_register", "ahrs__chimu__spi_8c.html#a276d0fbae93455ee8df03b838757a6e7", null ],
     [ "ahrs_chimu_update_gps", "ahrs__chimu__spi_8c.html#a36fc629a6da1649b4590af49dbb38330", null ],

@@ -1,5 +1,5 @@
 var image_8h_structpoint__t =
 [
-    [ "x", "image_8h.html#a70fb67bea09e5e89ad4bbcf86033ced9", null ],
-    [ "y", "image_8h.html#afe3c5329cd15daf9c04bcd0c0bbda414", null ]
+    [ "x", "image_8h.html#a53790d3f42a710902f3dd1c21f7fcb38", null ],
+    [ "y", "image_8h.html#a80f418915de01685d364a9ce7038eae7", null ]
 ];

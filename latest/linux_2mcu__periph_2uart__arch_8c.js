@@ -6,7 +6,7 @@ var linux_2mcu__periph_2uart__arch_8c =
     [ "uart_char_available", "linux_2mcu__periph_2uart__arch_8c.html#abd0dcae4715bc91bdf3369785a9b6c87", null ],
     [ "uart_getch", "linux_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039", null ],
     [ "uart_periph_set_baudrate", "linux_2mcu__periph_2uart__arch_8c.html#af1a8e69ac854e1358f0df7e6d8724512", null ],
-    [ "uart_put_byte", "linux_2mcu__periph_2uart__arch_8c.html#ac52690ed0854ab6c1b5ef3ba0ccc8040", null ],
+    [ "uart_put_byte", "linux_2mcu__periph_2uart__arch_8c.html#a33e2bacaecae6e2adcd64c2cc6bb73a0", null ],
     [ "uart_receive_handler", "linux_2mcu__periph_2uart__arch_8c.html#a5c919b4154628e257db4a28bbe0c5847", null ],
     [ "uart_thread", "linux_2mcu__periph_2uart__arch_8c.html#a6b084c97b4239a33b72ed3c2f5b26da5", null ],
     [ "uart_mutex", "linux_2mcu__periph_2uart__arch_8c.html#ad95c5a3d78475744ae1e8792b8d73e43", null ]

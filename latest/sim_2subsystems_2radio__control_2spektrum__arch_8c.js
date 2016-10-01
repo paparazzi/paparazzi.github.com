@@ -5,5 +5,5 @@ var sim_2subsystems_2radio__control_2spektrum__arch_8c =
     [ "RadioControlEventImp", "sim_2subsystems_2radio__control_2spektrum__arch_8c.html#aafc7faaab3785de71d5f220c1b4caed7", null ],
     [ "send_ppm", "sim_2subsystems_2radio__control_2spektrum__arch_8c.html#ad5c714aac41977d2adee4ad5054823ce", null ],
     [ "update_rc_channel", "sim_2subsystems_2radio__control_2spektrum__arch_8c.html#a50c13e7e6658484cb5565f2f3c01b851", null ],
-    [ "spektrum_available", "sim_2subsystems_2radio__control_2spektrum__arch_8c.html#a259365a3adb03413b1ed41a1f2f254d9", null ]
+    [ "spektrum_available", "sim_2subsystems_2radio__control_2spektrum__arch_8c.html#a810cf91cfd60192ced1dd83f38bc4abc", null ]
 ];

@@ -7,7 +7,7 @@ var ads1220_8h =
       [ "i2mux", "ads1220_8h.html#a7f9000fa865317c8ed755eaf76389e82", null ],
       [ "idac", "ads1220_8h.html#a70ac969349208cbc802e3c1acc1c9f78", null ],
       [ "mux", "ads1220_8h.html#afa91f7752a75e0a6dc853ea41cf9e5ae", null ],
-      [ "pga_bypass", "ads1220_8h.html#ac4955f18899938bc45a355b3c795a40a", null ],
+      [ "pga_bypass", "ads1220_8h.html#af24a3d2a92e29e9fa6cb13f2da093459", null ],
       [ "rate", "ads1220_8h.html#aa83f442c99323ee0a26404fce288a80d", null ],
       [ "status", "ads1220_8h.html#aafb284aedee26e1bb7a0a0847bb41571", null ],
       [ "vref", "ads1220_8h.html#a1b98dc0c6d81167adcd125e3790d2758", null ]
@@ -15,7 +15,7 @@ var ads1220_8h =
     [ "Ads1220", "ads1220_8h.html#structAds1220", [
       [ "config", "ads1220_8h.html#ab35d1229e441d0a29c4bb23cb00a2b27", null ],
       [ "data", "ads1220_8h.html#adfef9ebbfea128c55c6bd5ad3d611ce8", null ],
-      [ "data_available", "ads1220_8h.html#a40f017e1295dad773f3d27b047793533", null ],
+      [ "data_available", "ads1220_8h.html#a87bbe64e7c27066c72cea95231091c2b", null ],
       [ "rx_buf", "ads1220_8h.html#aec65ad785678ca4d8ca36b98769ca7ab", null ],
       [ "spi_p", "ads1220_8h.html#adf16be65c8df39137f687897abadc43e", null ],
       [ "spi_trans", "ads1220_8h.html#a441eeecc9804cafd644af1a8cb0a1b9d", null ],

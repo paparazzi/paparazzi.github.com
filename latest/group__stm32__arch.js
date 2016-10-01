@@ -5,7 +5,7 @@ var group__stm32__arch =
     [ "adc_arch.h", "stm32_2mcu__periph_2adc__arch_8h.html", null ],
     [ "can_arch.c", "can__arch_8c.html", null ],
     [ "can_arch.h", "can__arch_8h.html", null ],
-    [ "gpio_arch.c", "gpio__arch_8c.html", null ],
+    [ "gpio_arch.c", "stm32_2mcu__periph_2gpio__arch_8c.html", null ],
     [ "gpio_arch.h", "stm32_2mcu__periph_2gpio__arch_8h.html", null ],
     [ "i2c_arch.c", "stm32_2mcu__periph_2i2c__arch_8c.html", null ],
     [ "i2c_arch.h", "stm32_2mcu__periph_2i2c__arch_8h.html", null ],

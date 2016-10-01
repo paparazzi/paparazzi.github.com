@@ -11,6 +11,8 @@ var inter__thread__data_8h_structopticflow__result__t =
     [ "noise_measurement", "inter__thread__data_8h.html#a809ee7023708f7ce78acd5b41a992f7e", null ],
     [ "surface_roughness", "inter__thread__data_8h.html#a41985cf7c24360c8291ad1f97326816e", null ],
     [ "tracked_cnt", "inter__thread__data_8h.html#a451290f73f9cf01beab8681f70d6ab39", null ],
+    [ "vel_body_x", "inter__thread__data_8h.html#a70e6b2e916c219f0b44019d5e9be9828", null ],
+    [ "vel_body_y", "inter__thread__data_8h.html#ae4ab1916dcc12aa4f2050473e6aae38d", null ],
     [ "vel_x", "inter__thread__data_8h.html#a7c074dfb5c43f9fdf569ac5cc6e4bf84", null ],
     [ "vel_y", "inter__thread__data_8h.html#ac464e79cb76ab3a83edc99fd914811cb", null ]
 ];

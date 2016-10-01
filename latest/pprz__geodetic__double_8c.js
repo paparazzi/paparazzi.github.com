@@ -13,12 +13,14 @@ var pprz__geodetic__double_8c =
     [ "enu_of_lla_point_d", "group__math__geodetic__double.html#ga52626e96324bc7e31131460761a89913", null ],
     [ "gc_of_gd_lat_d", "group__math__geodetic__double.html#ga11cc21abdae02f0439da4b235acb4e4a", null ],
     [ "inverse_isometric_latitude_d", "pprz__geodetic__double_8c.html#ab51a48c23983d0c1a5e6f5dfe216ab6f", null ],
-    [ "isometric_latitude_d", "pprz__geodetic__double_8c.html#a452644052cad875a589f76a4d18e6d0f", null ],
+    [ "isometric_latitude_d", "pprz__geodetic__double_8c.html#a4e6981a579464b9dcb9a7ea51bd184b0", null ],
     [ "isometric_latitude_fast_d", "pprz__geodetic__double_8c.html#ab041f54d7a1272975623da5aaa67a39b", null ],
     [ "lla_of_ecef_d", "group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16", null ],
-    [ "lla_of_utm_d", "group__math__geodetic__double.html#gacc8bd646ec5ac148424251d65d2dd033", null ],
+    [ "lla_of_utm_d", "group__math__geodetic__double.html#ga0f160507506fc364a8b2c35327d252fa", null ],
     [ "ltp_def_from_ecef_d", "group__math__geodetic__double.html#ga3b487b485bc51b98307acae35009d1bb", null ],
+    [ "ltp_def_from_lla_d", "group__math__geodetic__double.html#gaae83ce0e163149ccc9b0480a19704c88", null ],
     [ "ned_of_ecef_point_d", "group__math__geodetic__double.html#gabf3f021edce24bfc61367d778cd20952", null ],
     [ "ned_of_ecef_vect_d", "group__math__geodetic__double.html#ga9a6c153bbedbbcc05dedcc6f5bc3266a", null ],
-    [ "ned_of_lla_point_d", "group__math__geodetic__double.html#ga20aa3ec098c747d5e83f6ef81de107a6", null ]
+    [ "ned_of_lla_point_d", "group__math__geodetic__double.html#ga20aa3ec098c747d5e83f6ef81de107a6", null ],
+    [ "utm_of_lla_d", "group__math__geodetic__double.html#ga9d76a215409f6f6bfcfe8214d6398250", null ]
 ];

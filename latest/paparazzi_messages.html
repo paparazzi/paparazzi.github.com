@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -127,10 +127,11 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#CIRCLE">CIRCLE (ID 21)</a></li>
 <li class="level2"><a href="#SEGMENT">SEGMENT (ID 22)</a></li>
 <li class="level2"><a href="#VECTORNAV_INFO">VECTORNAV_INFO (ID 23)</a></li>
+<li class="level2"><a href="#HYBRID_GUIDANCE">HYBRID_GUIDANCE (ID 24)</a></li>
 <li class="level2"><a href="#SVINFO">SVINFO (ID 25)</a></li>
 <li class="level2"><a href="#DEBUG">DEBUG (ID 26)</a></li>
 <li class="level2"><a href="#SURVEY">SURVEY (ID 27)</a></li>
-<li class="level2"><a href="#WC_RSSI">WC_RSSI (ID 28)</a></li>
+<li class="level2"><a href="#RSSI">RSSI (ID 28)</a></li>
 <li class="level2"><a href="#RANGEFINDER">RANGEFINDER (ID 29)</a></li>
 <li class="level2"><a href="#DATALINK_REPORT">DATALINK_REPORT (ID 30)</a></li>
 <li class="level2"><a href="#DL_VALUE">DL_VALUE (ID 31)</a></li>
@@ -208,9 +209,12 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#ADC">ADC (ID 104)</a></li>
 <li class="level2"><a href="#ACTUATORS">ACTUATORS (ID 105)</a></li>
 <li class="level2"><a href="#BLUEGIGA">BLUEGIGA (ID 106)</a></li>
+<li class="level2"><a href="#THROTTLE_CURVE">THROTTLE_CURVE (ID 107)</a></li>
+<li class="level2"><a href="#PIKSI_HEARTBEAT">PIKSI_HEARTBEAT (ID 108)</a></li>
 <li class="level2"><a href="#MULTIGAZE_METERS">MULTIGAZE_METERS (ID 109)</a></li>
 <li class="level2"><a href="#DC_SHOT">DC_SHOT (ID 110)</a></li>
 <li class="level2"><a href="#TEST_BOARD_RESULTS">TEST_BOARD_RESULTS (ID 111)</a></li>
+<li class="level2"><a href="#MOTOR_MIXING">MOTOR_MIXING (ID 112)</a></li>
 <li class="level2"><a href="#MLX_SERIAL">MLX_SERIAL (ID 113)</a></li>
 <li class="level2"><a href="#PAYLOAD">PAYLOAD (ID 114)</a></li>
 <li class="level2"><a href="#HTM_STATUS">HTM_STATUS (ID 115)</a></li>
@@ -277,7 +281,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#CSC_CAN_DEBUG">CSC_CAN_DEBUG (ID 176)</a></li>
 <li class="level2"><a href="#CSC_CAN_MSG">CSC_CAN_MSG (ID 177)</a></li>
 <li class="level2"><a href="#AHRS_GYRO_BIAS_INT">AHRS_GYRO_BIAS_INT (ID 178)</a></li>
-<li class="level2"><a href="#FLOW_AP_OTF">FLOW_AP_OTF (ID 179)</a></li>
+<li class="level2"><a href="#AEROPROBE">AEROPROBE (ID 179)</a></li>
 <li class="level2"><a href="#FMS_TIME">FMS_TIME (ID 180)</a></li>
 <li class="level2"><a href="#LOADCELL">LOADCELL (ID 181)</a></li>
 <li class="level2"><a href="#FLA_DEBUG">FLA_DEBUG (ID 182)</a></li>
@@ -321,6 +325,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#BARO_RAW">BARO_RAW (ID 221)</a></li>
 <li class="level2"><a href="#AIR_DATA">AIR_DATA (ID 222)</a></li>
 <li class="level2"><a href="#AMSL">AMSL (ID 223)</a></li>
+<li class="level2"><a href="#DIVERGENCE">DIVERGENCE (ID 224)</a></li>
 <li class="level2"><a href="#VIDEO_SYNC">VIDEO_SYNC (ID 225)</a></li>
 <li class="level2"><a href="#PERIODIC_TELEMETRY_ERR">PERIODIC_TELEMETRY_ERR (ID 226)</a></li>
 <li class="level2"><a href="#TIME">TIME (ID 227)</a></li>
@@ -340,10 +345,13 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#NPS_GYRO_BIAS">NPS_GYRO_BIAS (ID 242)</a></li>
 <li class="level2"><a href="#NPS_RANGE_METER">NPS_RANGE_METER (ID 243)</a></li>
 <li class="level2"><a href="#NPS_WIND">NPS_WIND (ID 244)</a></li>
+<li class="level2"><a href="#ESC">ESC (ID 245)</a></li>
+<li class="level2"><a href="#RTOS_MON">RTOS_MON (ID 246)</a></li>
 <li class="level2"><a href="#PPRZ_DEBUG">PPRZ_DEBUG (ID 247)</a></li>
 <li class="level2"><a href="#NPS_ACCEL_LTP">NPS_ACCEL_LTP (ID 248)</a></li>
 <li class="level2"><a href="#LOOSE_INS_GPS">LOOSE_INS_GPS (ID 249)</a></li>
 <li class="level2"><a href="#AFL_COEFFS">AFL_COEFFS (ID 250)</a></li>
+<li class="level2"><a href="#GPS_SMALL">GPS_SMALL (ID 252)</a></li>
 <li class="level2"><a href="#I2C_ERRORS">I2C_ERRORS (ID 253)</a></li>
 <li class="level2"><a href="#RDYB_TRAJECTORY">RDYB_TRAJECTORY (ID 254)</a></li>
 <li class="level2"><a href="#HENRY_GNSS">HENRY_GNSS (ID 255)</a></li>
@@ -362,6 +370,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#JOYSTICK_RAW">JOYSTICK_RAW (ID 11)</a></li>
 <li class="level2"><a href="#COMMANDS_RAW">COMMANDS_RAW (ID 12)</a></li>
 <li class="level2"><a href="#DGPS_RAW">DGPS_RAW (ID 13)</a></li>
+<li class="level2"><a href="#ACINFO_LLA">ACINFO_LLA (ID 14)</a></li>
 <li class="level2"><a href="#GET_SETTING">GET_SETTING (ID 16)</a></li>
 <li class="level2"><a href="#TCAS_RESOLVE">TCAS_RESOLVE (ID 17)</a></li>
 <li class="level2"><a href="#MISSION_GOTO_WP">MISSION_GOTO_WP (ID 20)</a></li>
@@ -392,6 +401,8 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#EXTERNAL_FILTER_SOLUTION">EXTERNAL_FILTER_SOLUTION (ID 151)</a></li>
 <li class="level2"><a href="#ROTORCRAFT_CAM_STICK">ROTORCRAFT_CAM_STICK (ID 152)</a></li>
 <li class="level2"><a href="#GPS_INJECT">GPS_INJECT (ID 153)</a></li>
+<li class="level2"><a href="#EXTERNAL_MAG_RAW">EXTERNAL_MAG_RAW (ID 154)</a></li>
+<li class="level2"><a href="#VIDEO_ROI">VIDEO_ROI (ID 155)</a></li>
 </ul>
 </li>
 <li class="level1"><a href="#GROUND_CLASS">Ground Messages</a><ul><li class="level2"><a href="#NEW_AIRCRAFT">NEW_AIRCRAFT (ID 1)</a></li>
@@ -430,6 +441,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#DATALINK_MESSAGE">DATALINK_MESSAGE (ID 35)</a></li>
 <li class="level2"><a href="#LINK_REPORT">LINK_REPORT (ID 36)</a></li>
 <li class="level2"><a href="#INTRUDER">INTRUDER (ID 37)</a></li>
+<li class="level2"><a href="#SHAPE">SHAPE (ID 38)</a></li>
 <li class="level2"><a href="#PLUMES">PLUMES (ID 100)</a></li>
 </ul>
 </li>
@@ -437,11 +449,15 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#AIR_PROX">AIR_PROX (ID 2)</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#DIA_CLASS">Dia Messages</a><ul><li class="level2"><a href="#NAV_INFO">NAV_INFO (ID 1)</a></li>
-</ul>
-</li>
 <li class="level1"><a href="#INTERMCU_CLASS">Intermcu Messages</a><ul><li class="level2"><a href="#IMCU_COMMANDS">IMCU_COMMANDS (ID 1)</a></li>
 <li class="level2"><a href="#IMCU_RADIO_COMMANDS">IMCU_RADIO_COMMANDS (ID 2)</a></li>
+<li class="level2"><a href="#IMCU_SPEKTRUM_SOFT_BIND">IMCU_SPEKTRUM_SOFT_BIND (ID 3)</a></li>
+<li class="level2"><a href="#IMCU_FBW_STATUS">IMCU_FBW_STATUS (ID 4)</a></li>
+<li class="level2"><a href="#IMCU_REMOTE_MAG">IMCU_REMOTE_MAG (ID 10)</a></li>
+<li class="level2"><a href="#IMCU_REMOTE_BARO">IMCU_REMOTE_BARO (ID 11)</a></li>
+<li class="level2"><a href="#IMCU_REMOTE_AIRSPEED">IMCU_REMOTE_AIRSPEED (ID 12)</a></li>
+<li class="level2"><a href="#IMCU_REMOTE_GROUND">IMCU_REMOTE_GROUND (ID 15)</a></li>
+<li class="level2"><a href="#IMCU_TELEMETRY">IMCU_TELEMETRY (ID 114)</a></li>
 </ul>
 </li>
 </ul>
@@ -816,7 +832,7 @@ VECTORNAV_INFO (ID 23)</h2>
 <tr>
 <td>hdr_error </td><td>uint32 </td><td></td><td></td></tr>
 <tr>
-<td>counter </td><td>uint16 </td><td></td><td></td></tr>
+<td>rate </td><td>uint16 </td><td>packets/s </td><td></td></tr>
 <tr>
 <td>ins_status </td><td>uint8 </td><td>NoTracking, OutOfSpecs, OK </td><td></td></tr>
 <tr>
@@ -827,6 +843,42 @@ VECTORNAV_INFO (ID 23)</h2>
 <td>YprU2 </td><td>float </td><td>deg </td><td></td></tr>
 <tr>
 <td>YprU3 </td><td>float </td><td>deg </td><td></td></tr>
+</table>
+<h2><a class="anchor" id="HYBRID_GUIDANCE"></a>
+HYBRID_GUIDANCE (ID 24)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>pos_x </td><td>int32 </td><td></td><td></td></tr>
+<tr>
+<td>pos_y </td><td>int32 </td><td></td><td></td></tr>
+<tr>
+<td>speed_x </td><td>int32 </td><td></td><td></td></tr>
+<tr>
+<td>speed_y </td><td>int32 </td><td></td><td></td></tr>
+<tr>
+<td>wind_x </td><td>int32 </td><td></td><td></td></tr>
+<tr>
+<td>wind_y </td><td>int32 </td><td></td><td></td></tr>
+<tr>
+<td>pos_err_x </td><td>int32 </td><td></td><td></td></tr>
+<tr>
+<td>pos_err_y </td><td>int32 </td><td></td><td></td></tr>
+<tr>
+<td>speed_sp_x </td><td>int32 </td><td></td><td></td></tr>
+<tr>
+<td>speed_sp_y </td><td>int32 </td><td></td><td></td></tr>
+<tr>
+<td>norm_ref_speed </td><td>int32 </td><td></td><td></td></tr>
+<tr>
+<td>heading_diff </td><td>int32 </td><td></td><td></td></tr>
+<tr>
+<td>phi </td><td>int32 </td><td></td><td></td></tr>
+<tr>
+<td>theta </td><td>int32 </td><td></td><td></td></tr>
+<tr>
+<td>psi </td><td>int32 </td><td></td><td></td></tr>
 </table>
 <h2><a class="anchor" id="SVINFO"></a>
 SVINFO (ID 25)</h2>
@@ -870,13 +922,15 @@ SURVEY (ID 27)</h2>
 <tr>
 <td>south </td><td>float </td><td>m </td><td></td></tr>
 </table>
-<h2><a class="anchor" id="WC_RSSI"></a>
-WC_RSSI (ID 28)</h2>
+<h2><a class="anchor" id="RSSI"></a>
+RSSI (ID 28)</h2>
 <table class="doxtable">
 <tr>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
 <tr>
-<td>raw_level </td><td>uint8 </td><td></td><td></td></tr>
+<td>rssi </td><td>uint8 </td><td>dB </td><td></td></tr>
+<tr>
+<td>tx_power </td><td>uint8 </td><td>dB </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="RANGEFINDER"></a>
 RANGEFINDER (ID 29)</h2>
@@ -960,6 +1014,8 @@ SYS_MON (ID 33)</h2>
 <td>event_number </td><td>uint16 </td><td></td><td></td></tr>
 <tr>
 <td>cpu_load </td><td>uint8 </td><td>% </td><td></td></tr>
+<tr>
+<td>cpu_time </td><td>float </td><td>s </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="MOTOR"></a>
 MOTOR (ID 34)</h2>
@@ -1870,15 +1926,24 @@ TMP_STATUS (ID 86)</h2>
 </table>
 <h2><a class="anchor" id="WIND_INFO_RET"></a>
 WIND_INFO_RET (ID 87)</h2>
+<p>Wind information returned to the ground station. The wind is reported as a vector, it gives the direction the wind is blowing to. This can be used to acknowledge data comming from the ground wind estimator or from an embedded algorithm. Flags field definition:</p><ul>
+<li>bit 0: horizontal wind is valid (east and north fields)</li>
+<li>bit 1: vertical wind is valid (up field)</li>
+<li>bit 2: airspeed is valid</li>
+</ul>
 <table class="doxtable">
 <tr>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
 <tr>
-<td>east </td><td>float </td><td>m/s </td><td></td></tr>
+<td>flags </td><td>uint8 </td><td></td><td>bit 0: horizontal wind, bit 1: vertical wind: bit 2: airspeed </td></tr>
 <tr>
-<td>north </td><td>float </td><td>m/s </td><td></td></tr>
+<td>east </td><td>float </td><td>m/s </td><td>east component of the wind </td></tr>
 <tr>
-<td>airspeed </td><td>float </td><td>m/s </td><td></td></tr>
+<td>north </td><td>float </td><td>m/s </td><td>north component of the wind </td></tr>
+<tr>
+<td>up </td><td>float </td><td>m/s </td><td>vertical component of the wind </td></tr>
+<tr>
+<td>airspeed </td><td>float </td><td>m/s </td><td>local airspeed norm </td></tr>
 </table>
 <h2><a class="anchor" id="SCP_STATUS"></a>
 SCP_STATUS (ID 88)</h2>
@@ -2117,6 +2182,34 @@ BLUEGIGA (ID 106)</h2>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
 <tr>
 <td>data_rate </td><td>uint32 </td><td>bytes/s </td><td></td></tr>
+<tr>
+<td>A2A_msg_rate </td><td>uint32 </td><td></td><td></td></tr>
+</table>
+<h2><a class="anchor" id="THROTTLE_CURVE"></a>
+THROTTLE_CURVE (ID 107)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>curve </td><td>uint8 </td><td></td><td></td></tr>
+<tr>
+<td>throttle </td><td>uint16 </td><td></td><td></td></tr>
+<tr>
+<td>collective </td><td>int16 </td><td></td><td></td></tr>
+<tr>
+<td>rpm_sp </td><td>uint16 </td><td></td><td></td></tr>
+<tr>
+<td>rpm_meas </td><td>uint16 </td><td></td><td></td></tr>
+<tr>
+<td>rpm_err_sum </td><td>float </td><td></td><td></td></tr>
+</table>
+<h2><a class="anchor" id="PIKSI_HEARTBEAT"></a>
+PIKSI_HEARTBEAT (ID 108)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>heartbeat </td><td>uint32 </td><td></td><td></td></tr>
 </table>
 <h2><a class="anchor" id="MULTIGAZE_METERS"></a>
 MULTIGAZE_METERS (ID 109)</h2>
@@ -2165,6 +2258,14 @@ TEST_BOARD_RESULTS (ID 111)</h2>
 <td>ppm </td><td>uint8 </td><td></td><td></td></tr>
 <tr>
 <td>servo </td><td>uint16[] </td><td></td><td></td></tr>
+</table>
+<h2><a class="anchor" id="MOTOR_MIXING"></a>
+MOTOR_MIXING (ID 112)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>values </td><td>int16[] </td><td>none </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="MLX_SERIAL"></a>
 MLX_SERIAL (ID 113)</h2>
@@ -2594,29 +2695,30 @@ FILTER2 (ID 135)</h2>
 </table>
 <h2><a class="anchor" id="RATE_LOOP"></a>
 RATE_LOOP (ID 136)</h2>
+<p>Rotorcraft rate control loop.</p>
 <table class="doxtable">
 <tr>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
 <tr>
-<td>sp_p </td><td>int32 </td><td></td><td></td></tr>
+<td>sp_p </td><td>float </td><td>rad/s </td><td>rate setpoint </td></tr>
 <tr>
-<td>sp_q </td><td>int32 </td><td></td><td></td></tr>
+<td>sp_q </td><td>float </td><td>rad/s </td><td>rate setpoint </td></tr>
 <tr>
-<td>sp_r </td><td>int32 </td><td></td><td></td></tr>
+<td>sp_r </td><td>float </td><td>rad/s </td><td>rate setpoint </td></tr>
 <tr>
-<td>sumerr_p </td><td>int32 </td><td></td><td></td></tr>
+<td>sumerr_p </td><td>float </td><td></td><td>integrated quaternion error </td></tr>
 <tr>
-<td>sumerr_q </td><td>int32 </td><td></td><td></td></tr>
+<td>sumerr_q </td><td>float </td><td></td><td>integrated quaternion error </td></tr>
 <tr>
-<td>sumerr_r </td><td>int32 </td><td></td><td></td></tr>
+<td>sumerr_r </td><td>float </td><td></td><td>integrated quaternion error </td></tr>
 <tr>
-<td>fb_p </td><td>int32 </td><td></td><td></td></tr>
+<td>fb_p </td><td>float </td><td></td><td>feedback command on pitch (pprz scale) </td></tr>
 <tr>
-<td>fb_q </td><td>int32 </td><td></td><td></td></tr>
+<td>fb_q </td><td>float </td><td></td><td>feedback command on roll (pprz scale) </td></tr>
 <tr>
-<td>fb_r </td><td>int32 </td><td></td><td></td></tr>
+<td>fb_r </td><td>float </td><td></td><td>feedback command on yaw (pprz scale) </td></tr>
 <tr>
-<td>delta_t </td><td>int32 </td><td></td><td></td></tr>
+<td>delta_t </td><td>int32 </td><td></td><td>thrust command </td></tr>
 </table>
 <h2><a class="anchor" id="FILTER_ALIGNER"></a>
 FILTER_ALIGNER (ID 137)</h2>
@@ -3089,6 +3191,8 @@ GPS_INT (ID 155)</h2>
 <td>numsv </td><td>uint8 </td><td></td><td></td></tr>
 <tr>
 <td>fix </td><td>uint8 </td><td>NONE, NA, 2D, 3D, DGPS, RTK </td><td></td></tr>
+<tr>
+<td>comp_id </td><td>uint8 </td><td>NONE, UBX, NMEA, SIRF, SKYTRAQ, MTK, PIKSI, XSENS, DATALINK, UDP, ARDRONE2, SIM </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="AHRS_EULER_INT"></a>
 AHRS_EULER_INT (ID 156)</h2>
@@ -3518,8 +3622,9 @@ AHRS_GYRO_BIAS_INT (ID 178)</h2>
 <tr>
 <td>comp_id </td><td>uint8 </td><td>NONE, GENERIC, IR, ICQ, ICE, FC, DCM, FINV, MLKF, GX3 </td><td></td></tr>
 </table>
-<h2><a class="anchor" id="FLOW_AP_OTF"></a>
-FLOW_AP_OTF (ID 179)</h2>
+<h2><a class="anchor" id="AEROPROBE"></a>
+AEROPROBE (ID 179)</h2>
+<p>Airflow data returned by OTF and uADC 3D probes from Aeroprobe.</p>
 <table class="doxtable">
 <tr>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
@@ -3530,9 +3635,13 @@ FLOW_AP_OTF (ID 179)</h2>
 <tr>
 <td>a_attack </td><td>int16 </td><td>centideg </td><td></td></tr>
 <tr>
-<td>a_sidesl </td><td>int16 </td><td>centideg </td><td></td></tr>
+<td>a_sideslip </td><td>int16 </td><td>centideg </td><td></td></tr>
 <tr>
 <td>altitude </td><td>int32 </td><td>cm </td><td></td></tr>
+<tr>
+<td>dynamic_p </td><td>int32 </td><td>Pa </td><td></td></tr>
+<tr>
+<td>static_p </td><td>int32 </td><td>Pa </td><td></td></tr>
 <tr>
 <td>checksum </td><td>uint8 </td><td></td><td></td></tr>
 </table>
@@ -4276,6 +4385,26 @@ AMSL (ID 223)</h2>
 <tr>
 <td>AMSL_GPS </td><td>float </td><td>ft </td><td></td></tr>
 </table>
+<h2><a class="anchor" id="DIVERGENCE"></a>
+DIVERGENCE (ID 224)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>divergence </td><td>float </td><td></td><td>vertical velocity / height from optitrack (unit = 1/sec) </td></tr>
+<tr>
+<td>divergence_vision </td><td>float </td><td></td><td>vertical velocity / height from vision (unit = 1/sec) </td></tr>
+<tr>
+<td>normalized_thrust </td><td>float </td><td></td><td>thrust / max thrust paparazzi (-) </td></tr>
+<tr>
+<td>cov_div </td><td>float </td><td></td><td>covariance of divergence and thrust, or past divergence depending on the mode (-) </td></tr>
+<tr>
+<td>pstate </td><td>float </td><td></td><td>gain state in adaptive gain control: indicative of height (-) </td></tr>
+<tr>
+<td>pused </td><td>float </td><td></td><td>gain used for control, includes the effect of the p-gain of adaptive control (-) </td></tr>
+<tr>
+<td>sonar </td><td>float </td><td></td><td>measurement from the sonar (mm) </td></tr>
+</table>
 <h2><a class="anchor" id="VIDEO_SYNC"></a>
 VIDEO_SYNC (ID 225)</h2>
 <table class="doxtable">
@@ -4558,6 +4687,44 @@ NPS_WIND (ID 244)</h2>
 <tr>
 <td>vz </td><td>float </td><td>m/s </td><td></td></tr>
 </table>
+<h2><a class="anchor" id="ESC"></a>
+ESC (ID 245)</h2>
+<p>Electronic Speed Controller data</p>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>amps </td><td>float </td><td>A </td><td>Current consumption </td></tr>
+<tr>
+<td>bat_volts </td><td>float </td><td>V </td><td>Input battery voltage </td></tr>
+<tr>
+<td>power </td><td>float </td><td>W </td><td><a class="el" href="electrical_8h.html#structElectrical">Electrical</a> power </td></tr>
+<tr>
+<td>rpm </td><td>float </td><td>rpm </td><td>Motor rotation speed </td></tr>
+<tr>
+<td>motor_volts </td><td>float </td><td>V </td><td>Motor voltage </td></tr>
+<tr>
+<td>energy </td><td>float </td><td>Wh </td><td>Accumulated consumed energy </td></tr>
+<tr>
+<td>motor_id </td><td>uint8 </td><td></td><td>Motor ID </td></tr>
+</table>
+<h2><a class="anchor" id="RTOS_MON"></a>
+RTOS_MON (ID 246)</h2>
+<p>RTOS monitoring</p>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>nb_threads </td><td>uint8 </td><td></td><td>Number of running threads </td></tr>
+<tr>
+<td>cpu_load </td><td>uint8 </td><td>% </td><td>Global CPU load </td></tr>
+<tr>
+<td>core_free </td><td>uint32 </td><td>Bytes </td><td>Core free memory </td></tr>
+<tr>
+<td>heap_free </td><td>uint32 </td><td>Bytes </td><td>Heap free memory </td></tr>
+<tr>
+<td>cpu_time </td><td>float </td><td>s </td><td></td></tr>
+</table>
 <h2><a class="anchor" id="PPRZ_DEBUG"></a>
 PPRZ_DEBUG (ID 247)</h2>
 <table class="doxtable">
@@ -4658,6 +4825,20 @@ AFL_COEFFS (ID 250)</h2>
 <tr>
 <td>yaw_c </td><td>float </td><td></td><td></td></tr>
 </table>
+<h2><a class="anchor" id="GPS_SMALL"></a>
+GPS_SMALL (ID 252)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>multiplex_speed </td><td>uint32 </td><td></td><td>bits 31-21 course in decideg : bits 20-10 ground speed in cm/s : bits 9-0 climb speed in cm/s </td></tr>
+<tr>
+<td>lat </td><td>int32 </td><td>1e7deg </td><td></td></tr>
+<tr>
+<td>lon </td><td>int32 </td><td>1e7deg </td><td></td></tr>
+<tr>
+<td>alt </td><td>int16 </td><td>cm </td><td>height above the ellipsoid </td></tr>
+</table>
 <h2><a class="anchor" id="I2C_ERRORS"></a>
 I2C_ERRORS (ID 253)</h2>
 <table class="doxtable">
@@ -4754,11 +4935,13 @@ ACINFO (ID 1)</h2>
 <tr>
 <td>utm_north </td><td>int32 </td><td>cm </td><td></td></tr>
 <tr>
-<td>alt </td><td>int32 </td><td>cm </td><td></td></tr>
+<td>utm_zone </td><td>uint8 </td><td></td><td></td></tr>
+<tr>
+<td>alt </td><td>int32 </td><td>cm </td><td>Height above Mean Sea Level (geoid) </td></tr>
 <tr>
 <td>itow </td><td>uint32 </td><td>ms </td><td></td></tr>
 <tr>
-<td>speed </td><td>uint16 </td><td>cm/s </td><td></td></tr>
+<td>speed </td><td>uint16 </td><td>cm/s </td><td>ground speed </td></tr>
 <tr>
 <td>climb </td><td>int16 </td><td>cm/s </td><td></td></tr>
 <tr>
@@ -4782,19 +4965,26 @@ MOVE_WP (ID 2)</h2>
 </table>
 <h2><a class="anchor" id="WIND_INFO"></a>
 WIND_INFO (ID 3)</h2>
+<p>Wind information. The wind is reported as a vector, it gives the direction the wind is blowing to. This can be comming from the ground wind estimator or from an embedded algorithm. Flags field definition:</p><ul>
+<li>bit 0: horizontal wind is valid (east and north fields)</li>
+<li>bit 1: vertical wind is valid (up field)</li>
+<li>bit 2: airspeed is valid</li>
+</ul>
 <table class="doxtable">
 <tr>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
 <tr>
 <td>ac_id </td><td>uint8 </td><td></td><td></td></tr>
 <tr>
-<td>pad0 </td><td>uint8 </td><td></td><td></td></tr>
+<td>flags </td><td>uint8 </td><td></td><td>bit 0: horizontal wind, bit 1: vertical wind: bit 2: airspeed </td></tr>
 <tr>
-<td>east </td><td>float </td><td>m/s </td><td></td></tr>
+<td>east </td><td>float </td><td>m/s </td><td>east component of the wind </td></tr>
 <tr>
-<td>north </td><td>float </td><td>m/s </td><td></td></tr>
+<td>north </td><td>float </td><td>m/s </td><td>north component of the wind </td></tr>
 <tr>
-<td>airspeed </td><td>float </td><td>m/s </td><td></td></tr>
+<td>up </td><td>float </td><td>m/s </td><td>vertical component of the wind </td></tr>
+<tr>
+<td>airspeed </td><td>float </td><td>m/s </td><td>local airspeed norm </td></tr>
 </table>
 <h2><a class="anchor" id="SETTING"></a>
 SETTING (ID 4)</h2>
@@ -4912,6 +5102,28 @@ DGPS_RAW (ID 13)</h2>
 <td>length </td><td>uint8 </td><td></td><td></td></tr>
 <tr>
 <td>rtcm </td><td>uint8[] </td><td></td><td></td></tr>
+</table>
+<h2><a class="anchor" id="ACINFO_LLA"></a>
+ACINFO_LLA (ID 14)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>course </td><td>int16 </td><td>decideg </td><td></td></tr>
+<tr>
+<td>lat </td><td>int32 </td><td>1e7deg </td><td></td></tr>
+<tr>
+<td>lon </td><td>int32 </td><td>1e7deg </td><td></td></tr>
+<tr>
+<td>alt </td><td>int32 </td><td>cm </td><td>Height above ellipsoid </td></tr>
+<tr>
+<td>itow </td><td>uint32 </td><td>ms </td><td></td></tr>
+<tr>
+<td>speed </td><td>uint16 </td><td>cm/s </td><td>ground speed </td></tr>
+<tr>
+<td>climb </td><td>int16 </td><td>cm/s </td><td></td></tr>
+<tr>
+<td>ac_id </td><td>uint8 </td><td></td><td></td></tr>
 </table>
 <h2><a class="anchor" id="GET_SETTING"></a>
 GET_SETTING (ID 16)</h2>
@@ -5199,14 +5411,23 @@ END_MISSION (ID 32)</h2>
 </table>
 <h2><a class="anchor" id="GUIDED_SETPOINT_NED"></a>
 GUIDED_SETPOINT_NED (ID 40)</h2>
-<p>Set vehicle position or velocity in NED. Frame can be specified with the bits 0-3 in the flags field: 0x0: LOCAL_NED 0x1: LOCAL_OFFSET_NED 0x2: BODY_NED 0x3: BODY_OFFSET_NED</p>
+<p>Set vehicle position or velocity in NED. Frame can be specified with the bits 0-3 Velocity of position setpoint can be specified with the bits 5-7 Flags field definition:</p><ul>
+<li>bit 0: x,y as offset coordinates</li>
+<li>bit 1: x,y in body coordinates</li>
+<li>bit 2: z as offset coordinates</li>
+<li>bit 3: yaw as offset coordinates</li>
+<li>bit 4: free</li>
+<li>bit 5: x,y as vel</li>
+<li>bit 6: z as vel</li>
+<li>bit 7: yaw as rate</li>
+</ul>
 <table class="doxtable">
 <tr>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
 <tr>
 <td>ac_id </td><td>uint8 </td><td></td><td></td></tr>
 <tr>
-<td>flags </td><td>uint8 </td><td></td><td>bits 0-3: frame, bits 4-7: use as velocity? </td></tr>
+<td>flags </td><td>uint8 </td><td></td><td>bits 0-3: frame, bits 5-7: use as velocity </td></tr>
 <tr>
 <td>x </td><td>float </td><td>m </td><td>X position/velocity in NED </td></tr>
 <tr>
@@ -5266,15 +5487,15 @@ REMOTE_GPS_SMALL (ID 54)</h2>
 <tr>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
 <tr>
+<td>heading </td><td>int16 </td><td>1e4rad </td><td></td></tr>
+<tr>
+<td>pos_xyz </td><td>uint32 </td><td></td><td>bits 31-21 east position [cm] : bits 20-10 north position [cm] : bits 9-0 up position [cm] </td></tr>
+<tr>
+<td>speed_xyz </td><td>uint32 </td><td></td><td>bits 31-21 east speed [cm/s] : bits 20-10 north speed [cm/s] : bits 9-0 climb speed [cm/s] </td></tr>
+<tr>
+<td>tow </td><td>uint32 </td><td>ms </td><td></td></tr>
+<tr>
 <td>ac_id </td><td>uint8 </td><td></td><td></td></tr>
-<tr>
-<td>numsv </td><td>uint8 </td><td></td><td></td></tr>
-<tr>
-<td>pos_xyz </td><td>uint32 </td><td>cm </td><td>bits 31-21 x position in cm : bits 20-10 y position in cm : bits 9-0 z position in cm </td></tr>
-<tr>
-<td>speed_xyz </td><td>uint32 </td><td>cm/s </td><td>bits 31-21 speed x in cm/s : bits 20-10 speed y in cm/s : bits 9-0 speed z in cm/s </td></tr>
-<tr>
-<td>heading </td><td>int16 </td><td>rad*1e4 </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="REMOTE_GPS"></a>
 REMOTE_GPS (ID 55)</h2>
@@ -5296,9 +5517,9 @@ REMOTE_GPS (ID 55)</h2>
 <tr>
 <td>lon </td><td>int32 </td><td>1e7deg </td><td></td></tr>
 <tr>
-<td>alt </td><td>int32 </td><td>mm </td><td></td></tr>
+<td>alt </td><td>int32 </td><td>mm </td><td>Height above WGS84 reference ellipsoid </td></tr>
 <tr>
-<td>hmsl </td><td>int32 </td><td>mm </td><td></td></tr>
+<td>hmsl </td><td>int32 </td><td>mm </td><td>Height above Mean Sea Level (geoid) </td></tr>
 <tr>
 <td>ecef_xd </td><td>int32 </td><td>cm/s </td><td></td></tr>
 <tr>
@@ -5433,6 +5654,36 @@ GPS_INJECT (ID 153)</h2>
 <td>packet_id </td><td>uint8 </td><td></td><td></td></tr>
 <tr>
 <td>data </td><td>uint8[] </td><td></td><td></td></tr>
+</table>
+<h2><a class="anchor" id="EXTERNAL_MAG_RAW"></a>
+EXTERNAL_MAG_RAW (ID 154)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>x </td><td>int16 </td><td></td><td></td></tr>
+<tr>
+<td>y </td><td>int16 </td><td></td><td></td></tr>
+<tr>
+<td>z </td><td>int16 </td><td></td><td></td></tr>
+</table>
+<h2><a class="anchor" id="VIDEO_ROI"></a>
+VIDEO_ROI (ID 155)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>ac_id </td><td>uint8 </td><td></td><td>The aircraft in which video stream you clicked </td></tr>
+<tr>
+<td>startx </td><td>int32 </td><td></td><td>The x of the upper left corner of the selected area </td></tr>
+<tr>
+<td>starty </td><td>int32 </td><td></td><td>The y of the upper left corner of the selected area </td></tr>
+<tr>
+<td>width </td><td>int32 </td><td></td><td>The width of the selected area </td></tr>
+<tr>
+<td>height </td><td>int32 </td><td></td><td>The height of the selected area </td></tr>
+<tr>
+<td>downsized_width </td><td>int32 </td><td></td><td>The width of the image you received. Added because a module the receives this message does not know how big the image was that was broadcasted </td></tr>
 </table>
 <h1><a class="anchor" id="GROUND_CLASS"></a>
 Ground Messages</h1>
@@ -5991,6 +6242,41 @@ INTRUDER (ID 37)</h2>
 <tr>
 <td>itow </td><td>uint32 </td><td>ms </td><td></td></tr>
 </table>
+<h2><a class="anchor" id="SHAPE"></a>
+SHAPE (ID 38)</h2>
+<p>The SHAPE message used to draw shapes onto the Paparazzi GCS. Field name shape is used to define the type of shape i.e. Circle, Polygon, <a class="el" href="nav__survey__poly__rotorcraft_8c.html#structLine">Line</a>, or Text. This is indexed from 0-3 respectively.</p>
+<p>Each shape drawn must have an id number associated with it. This id number in conjuction with the shapetype will be needed to update or delete the shape. A circle can be defined with the same id as a polygon but since they have different shape types they are considered unique.</p>
+<p>linecolor and fillcolor take in a color string ie: "red", "blue"</p>
+<p>opacity will change the level of transparency of the fill. 0 - Transparent 1 - Light Fill 2 - Medium Fill 3 - Opaque</p>
+<p>Passing a status of 0 will create or update the shape specified by id and type. Passing a status of 1 will delete the shape specified by id and type.</p>
+<p>latarr is an array of coordinates that contain the latitude coordinate for each point in the shape. The array is comma separated. lonarr is similar to latarr but contain the longitude coordinate for each point in the shape.</p>
+<p>Circle and Text type will take the first coordinates given to place the shape. Polygon will take all the coordinates given. <a class="el" href="nav__survey__poly__rotorcraft_8c.html#structLine">Line</a> will take the first two coordinates given.</p>
+<p>Radius is only used for the circle.</p>
+<p>Text will always be populated with each message using the first set of coordinates. The text field can not be blank or have spaces. If text is not desired for a shape then pass "NULL" into the text field.</p>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>id </td><td>uint8 </td><td></td><td></td></tr>
+<tr>
+<td>linecolor </td><td>string </td><td></td><td></td></tr>
+<tr>
+<td>fillcolor </td><td>string </td><td></td><td></td></tr>
+<tr>
+<td>opacity </td><td>uint8 </td><td>Transparent, Light, Medium, Opaque </td><td></td></tr>
+<tr>
+<td>shape </td><td>uint8 </td><td>Circle, Polygon, <a class="el" href="nav__survey__poly__rotorcraft_8c.html#structLine">Line</a> </td><td></td></tr>
+<tr>
+<td>status </td><td>uint8 </td><td>create, delete </td><td></td></tr>
+<tr>
+<td>latarr </td><td>int32[] </td><td>1e7deg </td><td></td></tr>
+<tr>
+<td>lonarr </td><td>int32[] </td><td>1e7deg </td><td></td></tr>
+<tr>
+<td>radius </td><td>float </td><td>m </td><td></td></tr>
+<tr>
+<td>text </td><td>string </td><td></td><td></td></tr>
+</table>
 <h2><a class="anchor" id="PLUMES"></a>
 PLUMES (ID 100)</h2>
 <table class="doxtable">
@@ -6029,30 +6315,6 @@ AIR_PROX (ID 2)</h2>
 <tr>
 <td>level </td><td>string </td><td>CATASTROPHIC, CRITIC, WARNING </td><td></td></tr>
 </table>
-<h1><a class="anchor" id="DIA_CLASS"></a>
-Dia Messages</h1>
-<h2><a class="anchor" id="NAV_INFO"></a>
-NAV_INFO (ID 1)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>unix_time </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>lat </td><td>float </td><td>deg </td><td></td></tr>
-<tr>
-<td>long </td><td>float </td><td>deg </td><td></td></tr>
-<tr>
-<td>alt </td><td>uint16 </td><td>m </td><td></td></tr>
-<tr>
-<td>course </td><td>uint16 </td><td>deg </td><td></td></tr>
-<tr>
-<td>speed </td><td>uint16 </td><td>cm/s </td><td></td></tr>
-<tr>
-<td>cam_roll </td><td>int16 </td><td>deg </td><td></td></tr>
-<tr>
-<td>cam_pitch </td><td>int16 </td><td>deg </td><td></td></tr>
-</table>
 <h1><a class="anchor" id="INTERMCU_CLASS"></a>
 Intermcu Messages</h1>
 <h2><a class="anchor" id="IMCU_COMMANDS"></a>
@@ -6075,12 +6337,83 @@ IMCU_RADIO_COMMANDS (ID 2)</h2>
 <tr>
 <td>values </td><td>int16[] </td><td></td><td></td></tr>
 </table>
+<h2><a class="anchor" id="IMCU_SPEKTRUM_SOFT_BIND"></a>
+IMCU_SPEKTRUM_SOFT_BIND (ID 3)</h2>
+<p>message has no fields</p>
+<h2><a class="anchor" id="IMCU_FBW_STATUS"></a>
+IMCU_FBW_STATUS (ID 4)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>mode </td><td>uint8 </td><td>MANUAL, AUTO, FAILSAFE </td><td></td></tr>
+<tr>
+<td>rc_status </td><td>uint8 </td><td>OK, LOST, REALLY_LOST </td><td></td></tr>
+<tr>
+<td>frame_rate </td><td>uint8 </td><td>Hz </td><td></td></tr>
+<tr>
+<td>vsupply </td><td>uint16 </td><td>decivolt </td><td></td></tr>
+<tr>
+<td>current </td><td>int32 </td><td>mA </td><td></td></tr>
+</table>
+<h2><a class="anchor" id="IMCU_REMOTE_MAG"></a>
+IMCU_REMOTE_MAG (ID 10)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>mag_x </td><td>int16 </td><td></td><td>RAW Magnetometer Data </td></tr>
+<tr>
+<td>mag_y </td><td>int16 </td><td></td><td></td></tr>
+<tr>
+<td>mag_z </td><td>int16 </td><td></td><td></td></tr>
+</table>
+<h2><a class="anchor" id="IMCU_REMOTE_BARO"></a>
+IMCU_REMOTE_BARO (ID 11)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>pitot_stat </td><td>float </td><td>Pa </td><td>Static Barometric Pressure in Pascal </td></tr>
+<tr>
+<td>pitot_temp </td><td>float </td><td>C </td><td>Pressure Sensor Temperature </td></tr>
+</table>
+<h2><a class="anchor" id="IMCU_REMOTE_AIRSPEED"></a>
+IMCU_REMOTE_AIRSPEED (ID 12)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>pitot_IAS </td><td>float </td><td>m/s </td><td>Indicated Airspeed </td></tr>
+</table>
+<h2><a class="anchor" id="IMCU_REMOTE_GROUND"></a>
+IMCU_REMOTE_GROUND (ID 15)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>mode </td><td>uint8 </td><td>SWITCH, SONAR, LASER, INFRARED </td><td></td></tr>
+<tr>
+<td>id </td><td>uint8 </td><td></td><td>Sensor ID </td></tr>
+<tr>
+<td>range </td><td>uint16 </td><td>cm </td><td></td></tr>
+</table>
+<h2><a class="anchor" id="IMCU_TELEMETRY"></a>
+IMCU_TELEMETRY (ID 114)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>msg_id </td><td>uint8 </td><td></td><td></td></tr>
+<tr>
+<td>msg </td><td>uint8[] </td><td></td><td></td></tr>
+</table>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:09 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:20 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

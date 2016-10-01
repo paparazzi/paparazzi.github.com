@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -106,6 +106,7 @@ $(document).ready(function(){initNavTree('mag__hmc58xx_8c.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -117,8 +118,9 @@ $(document).ready(function(){initNavTree('mag__hmc58xx_8c.html','');});
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="mag__hmc58xx_8h_source.html">modules/sensors/mag_hmc58xx.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
-<code>#include &quot;messages.h&quot;</code><br />
+<code>#include &quot;pprzlink/messages.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br />
+<code>#include &quot;generated/airframe.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for mag_hmc58xx.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -126,11 +128,26 @@ $(document).ready(function(){initNavTree('mag__hmc58xx_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mag__hmc58xx_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2sensors_2mag__hmc58xx_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2sensors_2mag__hmc58xx_8c" id="sw_2airborne_2modules_2sensors_2mag__hmc58xx_8c">
-<area shape="rect" id="node2" href="mag__hmc58xx_8h.html" title="Module wrapper for Honeywell HMC5843 and HMC5883 magnetometers. " alt="" coords="684,95,848,136"/><area shape="rect" id="node14" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="994,191,1133,218"/><area shape="rect" id="node19" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1335,95,1488,136"/><area shape="rect" id="node3" href="hmc58xx_8h.html" title="peripherals/hmc58xx.h" alt="" coords="456,191,623,218"/><area shape="rect" id="node5" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="295,281,426,307"/><area shape="rect" id="node7" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="450,281,629,307"/><area shape="rect" id="node13" href="hmc58xx__regs_8h.html" title="Register defs for Honeywell HMC5843 and HMC5883 magnetometers. " alt="" coords="117,273,271,315"/><area shape="rect" id="node8" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="197,370,351,397"/><area shape="rect" id="node11" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="477,370,628,397"/><area shape="rect" id="node16" href="link__device_8h.html" title="generic device header " alt="" coords="1229,459,1412,486"/><area shape="rect" id="node17" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1278,541,1363,568"/><area shape="rect" id="node22" href="pprz__transport_8h.html" title="Building and parsing Paparazzi frames. " alt="" coords="1279,273,1432,315"/><area shape="rect" id="node26" href="pprzlog__transport_8h.html" title="Protocol for on&#45;board data logger with timestamp. " alt="" coords="1101,273,1255,315"/><area shape="rect" id="node30" href="xbee_8h.html" title="Maxstream XBee serial input and output. " alt="" coords="1621,184,1775,225"/><area shape="rect" id="node32" href="w5100_8h.html" title="W5100 ethernet chip I/O. " alt="" coords="1392,184,1545,225"/><area shape="rect" id="node23" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1279,363,1432,404"/><area shape="rect" id="node25" href="transport_8h.html" title="generic transport header " alt="" coords="1101,363,1255,404"/><area shape="rect" id="node27" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="855,370,1026,397"/><area shape="rect" id="node31" href="xbee24_8h.html" title="Configuration for 2.4GHz &quot;series 1&quot; and 900MHz modules. " alt="" coords="1793,273,1947,315"/></map>
+<area shape="rect" id="node2" href="mag__hmc58xx_8h.html" title="Module wrapper for Honeywell HMC5843 and HMC5883 magnetometers. " alt="" coords="545,95,709,136"/><area shape="rect" id="node14" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="798,191,937,218"/><area shape="rect" id="node18" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1141,95,1295,136"/><area shape="rect" id="node3" href="hmc58xx_8h.html" title="peripherals/hmc58xx.h" alt="" coords="423,191,589,218"/><area shape="rect" id="node5" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="619,281,750,307"/><area shape="rect" id="node7" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="417,281,595,307"/><area shape="rect" id="node13" href="hmc58xx__regs_8h.html" title="Register defs for Honeywell HMC5843 and HMC5883 magnetometers. " alt="" coords="238,273,393,315"/><area shape="rect" id="node8" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="9,363,163,389"/><area shape="rect" id="node11" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="239,363,389,389"/><area shape="rect" id="node19" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1499,191,1585,218"/><area shape="rect" id="node22" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1321,184,1475,225"/></map>
 </div>
 </div>
 <p><a href="mag__hmc58xx_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a2f89b93071000836cbc48bbea38cf6db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mag__hmc58xx_8c.html#a2f89b93071000836cbc48bbea38cf6db">HMC58XX_CHAN_X</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a2f89b93071000836cbc48bbea38cf6db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19fa0de0b51aa1a04da2253e2d154fc2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mag__hmc58xx_8c.html#a19fa0de0b51aa1a04da2253e2d154fc2">HMC58XX_CHAN_Y</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a19fa0de0b51aa1a04da2253e2d154fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac56b813806447e95285df3826ac63dd5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mag__hmc58xx_8c.html#ac56b813806447e95285df3826ac63dd5">HMC58XX_CHAN_Z</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:ac56b813806447e95285df3826ac63dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c83e855a09035ec11a89599ec27c948"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mag__hmc58xx_8c.html#a6c83e855a09035ec11a89599ec27c948">HMC58XX_CHAN_X_SIGN</a>&#160;&#160;&#160;+</td></tr>
+<tr class="separator:a6c83e855a09035ec11a89599ec27c948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2f95b924abe72f5f653e6fbe8d36402"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mag__hmc58xx_8c.html#ad2f95b924abe72f5f653e6fbe8d36402">HMC58XX_CHAN_Y_SIGN</a>&#160;&#160;&#160;+</td></tr>
+<tr class="separator:ad2f95b924abe72f5f653e6fbe8d36402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade89e062444e6c5430720e8221e8abde"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mag__hmc58xx_8c.html#ade89e062444e6c5430720e8221e8abde">HMC58XX_CHAN_Z_SIGN</a>&#160;&#160;&#160;+</td></tr>
+<tr class="separator:ade89e062444e6c5430720e8221e8abde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a90faf068c63090984e7b7cc057390107"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mag__hmc58xx_8c.html#a90faf068c63090984e7b7cc057390107">mag_hmc58xx_module_init</a> (void)</td></tr>
@@ -151,7 +168,104 @@ Variables</h2></td></tr>
 <div class="textblock"><p>Module wrapper for Honeywell HMC5843 and HMC5883 magnetometers. </p>
 
 <p>Definition in file <a class="el" href="mag__hmc58xx_8c_source.html">mag_hmc58xx.c</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a2f89b93071000836cbc48bbea38cf6db"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HMC58XX_CHAN_X&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mag__hmc58xx_8c_source.html#l00035">35</a> of file <a class="el" href="mag__hmc58xx_8c_source.html">mag_hmc58xx.c</a>.</p>
+
+<p>Referenced by <a class="el" href="mag__hmc58xx_8c_source.html#l00086">mag_hmc58xx_module_event()</a>, and <a class="el" href="mag__hmc58xx_8c_source.html#l00126">mag_hmc58xx_report()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6c83e855a09035ec11a89599ec27c948"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HMC58XX_CHAN_X_SIGN&#160;&#160;&#160;+</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mag__hmc58xx_8c_source.html#l00044">44</a> of file <a class="el" href="mag__hmc58xx_8c_source.html">mag_hmc58xx.c</a>.</p>
+
+<p>Referenced by <a class="el" href="mag__hmc58xx_8c_source.html#l00086">mag_hmc58xx_module_event()</a>, and <a class="el" href="mag__hmc58xx_8c_source.html#l00126">mag_hmc58xx_report()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a19fa0de0b51aa1a04da2253e2d154fc2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HMC58XX_CHAN_Y&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mag__hmc58xx_8c_source.html#l00038">38</a> of file <a class="el" href="mag__hmc58xx_8c_source.html">mag_hmc58xx.c</a>.</p>
+
+<p>Referenced by <a class="el" href="mag__hmc58xx_8c_source.html#l00086">mag_hmc58xx_module_event()</a>, and <a class="el" href="mag__hmc58xx_8c_source.html#l00126">mag_hmc58xx_report()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad2f95b924abe72f5f653e6fbe8d36402"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HMC58XX_CHAN_Y_SIGN&#160;&#160;&#160;+</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mag__hmc58xx_8c_source.html#l00047">47</a> of file <a class="el" href="mag__hmc58xx_8c_source.html">mag_hmc58xx.c</a>.</p>
+
+<p>Referenced by <a class="el" href="mag__hmc58xx_8c_source.html#l00086">mag_hmc58xx_module_event()</a>, and <a class="el" href="mag__hmc58xx_8c_source.html#l00126">mag_hmc58xx_report()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac56b813806447e95285df3826ac63dd5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HMC58XX_CHAN_Z&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mag__hmc58xx_8c_source.html#l00041">41</a> of file <a class="el" href="mag__hmc58xx_8c_source.html">mag_hmc58xx.c</a>.</p>
+
+<p>Referenced by <a class="el" href="mag__hmc58xx_8c_source.html#l00086">mag_hmc58xx_module_event()</a>, and <a class="el" href="mag__hmc58xx_8c_source.html#l00126">mag_hmc58xx_report()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ade89e062444e6c5430720e8221e8abde"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HMC58XX_CHAN_Z_SIGN&#160;&#160;&#160;+</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mag__hmc58xx_8c_source.html#l00050">50</a> of file <a class="el" href="mag__hmc58xx_8c_source.html">mag_hmc58xx.c</a>.</p>
+
+<p>Referenced by <a class="el" href="mag__hmc58xx_8c_source.html#l00086">mag_hmc58xx_module_event()</a>, and <a class="el" href="mag__hmc58xx_8c_source.html#l00126">mag_hmc58xx_report()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a6e8146871b55ac8c4d4353e3aa95e8cb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -166,9 +280,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mag__hmc58xx_8c_source.html#l00061">61</a> of file <a class="el" href="mag__hmc58xx_8c_source.html">mag_hmc58xx.c</a>.</p>
+<p>Definition at line <a class="el" href="mag__hmc58xx_8c_source.html#l00086">86</a> of file <a class="el" href="mag__hmc58xx_8c_source.html">mag_hmc58xx.c</a>.</p>
 
-<p>References <a class="el" href="hmc58xx_8h.html#a366d71fd81e9949621d8f51f872b4544">Hmc58xx::data</a>, <a class="el" href="hmc58xx_8h_source.html#l00065">Hmc58xx::data_available</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8h_source.html#l00039">get_sys_time_usec()</a>, <a class="el" href="hmc58xx_8c_source.html#l00152">hmc58xx_event()</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00043">imu</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00351">imu_scale_mag()</a>, <a class="el" href="imu_8h_source.html#l00044">Imu::mag</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00049">mag_hmc58xx</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00092">mag_hmc58xx_report()</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00111">MAG_HMC58XX_SENDER_ID</a>, <a class="el" href="imu_8h_source.html#l00052">Imu::mag_unscaled</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00139">VECT3_COPY</a>.</p>
+<p>References <a class="el" href="hmc58xx_8h.html#a916f436d0200f643aa63f7472a57062f">Hmc58xx::data</a>, <a class="el" href="hmc58xx_8h_source.html#l00065">Hmc58xx::data_available</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">get_sys_time_usec()</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00035">HMC58XX_CHAN_X</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00044">HMC58XX_CHAN_X_SIGN</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00038">HMC58XX_CHAN_Y</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00047">HMC58XX_CHAN_Y_SIGN</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00041">HMC58XX_CHAN_Z</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00050">HMC58XX_CHAN_Z_SIGN</a>, <a class="el" href="hmc58xx_8c_source.html#l00152">hmc58xx_event()</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00351">imu_scale_mag()</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00107">int32_rmat_vmult()</a>, <a class="el" href="imu_8h_source.html#l00040">Imu::mag</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00065">mag_hmc58xx</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00126">mag_hmc58xx_report()</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00115">MAG_HMC58XX_SENDER_ID</a>, <a class="el" href="imu_8h_source.html#l00048">Imu::mag_unscaled</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00139">VECT3_COPY</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -177,7 +291,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mag__hmc58xx_8c_a6e8146871b55ac8c4d4353e3aa95e8cb_cgraph.png" border="0" usemap="#mag__hmc58xx_8c_a6e8146871b55ac8c4d4353e3aa95e8cb_cgraph" alt=""/></div>
 <map name="mag__hmc58xx_8c_a6e8146871b55ac8c4d4353e3aa95e8cb_cgraph" id="mag__hmc58xx_8c_a6e8146871b55ac8c4d4353e3aa95e8cb_cgraph">
-<area shape="rect" id="node2" href="linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="233,5,377,32"/><area shape="rect" id="node4" href="hmc58xx_8c.html#a6514a605dad1e4bb5664bf885cca676b" title="hmc58xx_event" alt="" coords="244,56,367,83"/><area shape="rect" id="node8" href="ahrs__gx3_8c.html#a6ca6c7f78fab9df37eb980d2b4d1b3a9" title="imu_scale_mag" alt="" coords="244,107,367,133"/><area shape="rect" id="node9" href="mag__hmc58xx_8c.html#a1f0b94bc284931c532700ebc1d8f1ac8" title="mag_hmc58xx_report" alt="" coords="224,157,387,184"/><area shape="rect" id="node3" href="sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="447,5,585,32"/><area shape="rect" id="node5" href="hmc58xx_8c.html#a2eff0c407b139d17a73bf75a611c32cb" title="Configuration function called once before normal use. " alt="" coords="435,56,597,83"/><area shape="rect" id="node6" href="hmc58xx_8c.html#afadf91048494baf761fa6cf8fda062d9" title="hmc58xx_i2c_tx_reg" alt="" coords="645,56,797,83"/><area shape="rect" id="node7" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="845,56,936,83"/></map>
+<area shape="rect" id="node2" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="233,5,377,32"/><area shape="rect" id="node4" href="hmc58xx_8c.html#a6514a605dad1e4bb5664bf885cca676b" title="hmc58xx_event" alt="" coords="244,56,367,83"/><area shape="rect" id="node8" href="ahrs__gx3_8c.html#a6ca6c7f78fab9df37eb980d2b4d1b3a9" title="imu_scale_mag" alt="" coords="244,107,367,133"/><area shape="rect" id="node9" href="group__math__algebra__int.html#ga6298f55d272675b9b71dcb3fcbcf4a8a" title="rotate 3D vector by rotation matrix. " alt="" coords="238,157,373,184"/><area shape="rect" id="node10" href="mag__hmc58xx_8c.html#a1f0b94bc284931c532700ebc1d8f1ac8" title="mag_hmc58xx_report" alt="" coords="224,208,387,235"/><area shape="rect" id="node3" href="sys__time_8h.html#adb22f2652f04908fbc644c7274bf7273" title="usec_of_sys_time_ticks" alt="" coords="435,5,605,32"/><area shape="rect" id="node5" href="hmc58xx_8c.html#a2eff0c407b139d17a73bf75a611c32cb" title="Configuration function called once before normal use. " alt="" coords="439,56,601,83"/><area shape="rect" id="node6" href="hmc58xx_8c.html#afadf91048494baf761fa6cf8fda062d9" title="hmc58xx_i2c_tx_reg" alt="" coords="653,56,805,83"/><area shape="rect" id="node7" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="853,56,944,83"/></map>
 </div>
 </p>
 
@@ -197,9 +311,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mag__hmc58xx_8c_source.html#l00051">51</a> of file <a class="el" href="mag__hmc58xx_8c_source.html">mag_hmc58xx.c</a>.</p>
+<p>Definition at line <a class="el" href="mag__hmc58xx_8c_source.html#l00067">67</a> of file <a class="el" href="mag__hmc58xx_8c_source.html">mag_hmc58xx.c</a>.</p>
 
-<p>References <a class="el" href="hmc58xx__regs_8h_source.html#l00031">HMC58XX_ADDR</a>, <a class="el" href="hmc58xx_8c_source.html#l00075">hmc58xx_init()</a>, and <a class="el" href="mag__hmc58xx_8c_source.html#l00049">mag_hmc58xx</a>.</p>
+<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00210">ANGLE_BFP_OF_REAL</a>, <a class="el" href="hmc58xx__regs_8h_source.html#l00031">HMC58XX_ADDR</a>, <a class="el" href="hmc58xx_8c_source.html#l00075">hmc58xx_init()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00408">int32_rmat_of_eulers</a>, and <a class="el" href="mag__hmc58xx_8c_source.html#l00065">mag_hmc58xx</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -228,9 +342,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mag__hmc58xx_8c_source.html#l00056">56</a> of file <a class="el" href="mag__hmc58xx_8c_source.html">mag_hmc58xx.c</a>.</p>
+<p>Definition at line <a class="el" href="mag__hmc58xx_8c_source.html#l00081">81</a> of file <a class="el" href="mag__hmc58xx_8c_source.html">mag_hmc58xx.c</a>.</p>
 
-<p>References <a class="el" href="hmc58xx_8h_source.html#l00085">hmc58xx_periodic()</a>, and <a class="el" href="mag__hmc58xx_8c_source.html#l00049">mag_hmc58xx</a>.</p>
+<p>References <a class="el" href="hmc58xx_8h_source.html#l00085">hmc58xx_periodic()</a>, and <a class="el" href="mag__hmc58xx_8c_source.html#l00065">mag_hmc58xx</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -239,7 +353,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mag__hmc58xx_8c_a2e48d1806ea88022ff1f1c8b01b53f42_cgraph.png" border="0" usemap="#mag__hmc58xx_8c_a2e48d1806ea88022ff1f1c8b01b53f42_cgraph" alt=""/></div>
 <map name="mag__hmc58xx_8c_a2e48d1806ea88022ff1f1c8b01b53f42_cgraph" id="mag__hmc58xx_8c_a2e48d1806ea88022ff1f1c8b01b53f42_cgraph">
-<area shape="rect" id="node2" href="hmc58xx_8h.html#a353064a5a9c6b47a14f4b9543545b4ec" title="convenience function: read or start configuration if not already initialized " alt="" coords="224,17,361,44"/><area shape="rect" id="node3" href="hmc58xx_8h.html#a883e49acd3049ead17c6c29a3b020c72" title="hmc58xx_read" alt="" coords="869,5,985,32"/><area shape="rect" id="node5" href="hmc58xx_8h.html#a89a7b5456b1a87c83aef85779c4fc5e9" title="hmc58xx_start_configure" alt="" coords="409,43,592,69"/><area shape="rect" id="node4" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="1051,37,1141,64"/><area shape="rect" id="node6" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="650,43,793,69"/><area shape="rect" id="node7" href="hmc58xx_8c.html#a2eff0c407b139d17a73bf75a611c32cb" title="Configuration function called once before normal use. " alt="" coords="640,93,803,120"/><area shape="rect" id="node8" href="hmc58xx_8c.html#afadf91048494baf761fa6cf8fda062d9" title="hmc58xx_i2c_tx_reg" alt="" coords="851,68,1003,95"/></map>
+<area shape="rect" id="node2" href="hmc58xx_8h.html#a353064a5a9c6b47a14f4b9543545b4ec" title="convenience function: read or start configuration if not already initialized " alt="" coords="224,17,361,44"/><area shape="rect" id="node3" href="hmc58xx_8h.html#a883e49acd3049ead17c6c29a3b020c72" title="hmc58xx_read" alt="" coords="869,5,985,32"/><area shape="rect" id="node5" href="hmc58xx_8h.html#a89a7b5456b1a87c83aef85779c4fc5e9" title="hmc58xx_start_configure" alt="" coords="409,43,592,69"/><area shape="rect" id="node4" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="1051,37,1141,64"/><area shape="rect" id="node6" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="650,43,793,69"/><area shape="rect" id="node7" href="hmc58xx_8c.html#a2eff0c407b139d17a73bf75a611c32cb" title="Configuration function called once before normal use. " alt="" coords="640,93,803,120"/><area shape="rect" id="node8" href="hmc58xx_8c.html#afadf91048494baf761fa6cf8fda062d9" title="hmc58xx_i2c_tx_reg" alt="" coords="851,68,1003,95"/></map>
 </div>
 </p>
 
@@ -259,11 +373,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mag__hmc58xx_8c_source.html#l00092">92</a> of file <a class="el" href="mag__hmc58xx_8c_source.html">mag_hmc58xx.c</a>.</p>
+<p>Definition at line <a class="el" href="mag__hmc58xx_8c_source.html#l00126">126</a> of file <a class="el" href="mag__hmc58xx_8c_source.html">mag_hmc58xx.c</a>.</p>
 
-<p>References <a class="el" href="hmc58xx_8h.html#a366d71fd81e9949621d8f51f872b4544">Hmc58xx::data</a>, <a class="el" href="downlink_8h_source.html#l00079">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00083">DefaultDevice</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00049">mag_hmc58xx</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
+<p>References <a class="el" href="hmc58xx_8h.html#a916f436d0200f643aa63f7472a57062f">Hmc58xx::data</a>, <a class="el" href="downlink_8h_source.html#l00084">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00088">DefaultDevice</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00035">HMC58XX_CHAN_X</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00044">HMC58XX_CHAN_X_SIGN</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00038">HMC58XX_CHAN_Y</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00047">HMC58XX_CHAN_Y_SIGN</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00041">HMC58XX_CHAN_Z</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00050">HMC58XX_CHAN_Z_SIGN</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00065">mag_hmc58xx</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
 
-<p>Referenced by <a class="el" href="mag__hmc58xx_8c_source.html#l00061">mag_hmc58xx_module_event()</a>.</p>
+<p>Referenced by <a class="el" href="mag__hmc58xx_8c_source.html#l00086">mag_hmc58xx_module_event()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -289,9 +403,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mag__hmc58xx_8c_source.html#l00049">49</a> of file <a class="el" href="mag__hmc58xx_8c_source.html">mag_hmc58xx.c</a>.</p>
+<p>Definition at line <a class="el" href="mag__hmc58xx_8c_source.html#l00065">65</a> of file <a class="el" href="mag__hmc58xx_8c_source.html">mag_hmc58xx.c</a>.</p>
 
-<p>Referenced by <a class="el" href="mag__hmc58xx_8c_source.html#l00061">mag_hmc58xx_module_event()</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00051">mag_hmc58xx_module_init()</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00056">mag_hmc58xx_module_periodic()</a>, and <a class="el" href="mag__hmc58xx_8c_source.html#l00092">mag_hmc58xx_report()</a>.</p>
+<p>Referenced by <a class="el" href="mag__hmc58xx_8c_source.html#l00086">mag_hmc58xx_module_event()</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00067">mag_hmc58xx_module_init()</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00081">mag_hmc58xx_module_periodic()</a>, and <a class="el" href="mag__hmc58xx_8c_source.html#l00126">mag_hmc58xx_report()</a>.</p>
 
 </div>
 </div>
@@ -301,7 +415,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="mag__hmc58xx_8c.html">mag_hmc58xx.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:57 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:05 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

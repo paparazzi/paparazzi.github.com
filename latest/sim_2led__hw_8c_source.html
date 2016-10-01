@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -111,14 +111,13 @@ $(document).ready(function(){initNavTree('sim_2led__hw_8c_source.html','');});
 <div class="contents">
 <a href="sim_2led__hw_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="sim_2led__hw_8h.html">led_hw.h</a>&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
-<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="sim_2led__hw_8h.html#ae292f9d2a858553831b8f8934ba4d2fd">    3</a></span>&#160;<a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a> *<a class="code" href="sim_2led__hw_8c.html#ae292f9d2a858553831b8f8934ba4d2fd">leds_closure</a> = 0;</div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="sim_2led__hw_8h.html#ae292f9d2a858553831b8f8934ba4d2fd">    3</a></span>&#160;value *<a class="code" href="sim_2led__hw_8c.html#ae292f9d2a858553831b8f8934ba4d2fd">leds_closure</a> = 0;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="sim_2led__hw_8c.html#aa85b1c7cdad6a8b6035a17361f395886">    5</a></span>&#160;<a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a> <a class="code" href="sim_2led__hw_8c.html#aa85b1c7cdad6a8b6035a17361f395886">register_leds_cb</a>(<a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a> cb_name)</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="sim_2led__hw_8c.html#aa85b1c7cdad6a8b6035a17361f395886">    5</a></span>&#160;value <a class="code" href="sim_2led__hw_8c.html#aa85b1c7cdad6a8b6035a17361f395886">register_leds_cb</a>(value cb_name)</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  <a class="code" href="sim_2led__hw_8c.html#ae292f9d2a858553831b8f8934ba4d2fd">leds_closure</a> = caml_named_value(String_val(cb_name));</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <span class="keywordflow">return</span> Val_unit;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div>
-<div class="ttc" id="stm32_2mcu__periph_2adc__arch_8c_html_a900b69af7d674b8db3bceae754b4955a"><div class="ttname"><a href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a></div><div class="ttdeci">uint16_t value</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2mcu__periph_2adc__arch_8c_source.html#l00586">adc_arch.c:586</a></div></div>
 <div class="ttc" id="sim_2led__hw_8c_html_ae292f9d2a858553831b8f8934ba4d2fd"><div class="ttname"><a href="sim_2led__hw_8c.html#ae292f9d2a858553831b8f8934ba4d2fd">leds_closure</a></div><div class="ttdeci">value * leds_closure</div><div class="ttdef"><b>Definition:</b> <a href="sim_2led__hw_8c_source.html#l00003">led_hw.c:3</a></div></div>
 <div class="ttc" id="sim_2led__hw_8c_html_aa85b1c7cdad6a8b6035a17361f395886"><div class="ttname"><a href="sim_2led__hw_8c.html#aa85b1c7cdad6a8b6035a17361f395886">register_leds_cb</a></div><div class="ttdeci">value register_leds_cb(value cb_name)</div><div class="ttdef"><b>Definition:</b> <a href="sim_2led__hw_8c_source.html#l00005">led_hw.c:5</a></div></div>
 <div class="ttc" id="sim_2led__hw_8h_html"><div class="ttname"><a href="sim_2led__hw_8h.html">led_hw.h</a></div></div>
@@ -128,7 +127,7 @@ $(document).ready(function(){initNavTree('sim_2led__hw_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_c87a6d12365ead88e0b90ddbc1b3c9bb.html">sim</a></li><li class="navelem"><a class="el" href="sim_2led__hw_8c.html">led_hw.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:15 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:14 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

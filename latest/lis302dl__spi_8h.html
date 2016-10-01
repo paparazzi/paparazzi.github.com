@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -195,13 +195,13 @@ config</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a9c53a1cc3682951a94b8d5849dd23358"></a>union <a class="el" href="lis302dl__spi_8h.html#unionLis302dl__Spi_8data">Lis302dl_Spi</a></td>
+<a class="anchor" id="aecb02d626d03c1173e178f31a3586ea3"></a>union <a class="el" href="lis302dl__spi_8h.html#unionLis302dl__Spi_8data">Lis302dl_Spi</a></td>
 <td class="fieldname">
 data</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a236750da147692ae694965669a4cc240"></a>volatile bool_t</td>
+<a class="anchor" id="a839d36b94586efba7e51eca71ffd1d3a"></a>volatile bool</td>
 <td class="fieldname">
 data_available</td>
 <td class="fielddoc">
@@ -213,7 +213,7 @@ init_status</td>
 <td class="fielddoc">
 init status </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a81d1f4db4676f97df4ef2b81424b17d9"></a>bool_t</td>
+<a class="anchor" id="a101b904f7e827bac9009a82288ee6bdc"></a>bool</td>
 <td class="fieldname">
 initialized</td>
 <td class="fielddoc">
@@ -292,7 +292,7 @@ data vector in accel coordinate system </td></tr>
 
 <p>Definition at line <a class="el" href="lis302dl__spi_8c_source.html#l00139">139</a> of file <a class="el" href="lis302dl__spi_8c_source.html">lis302dl_spi.c</a>.</p>
 
-<p>References <a class="el" href="lis302dl__spi_8h.html#a9c53a1cc3682951a94b8d5849dd23358">Lis302dl_Spi::data</a>, <a class="el" href="lis302dl__spi_8h_source.html#l00046">Lis302dl_Spi::data_available</a>, <a class="el" href="lis302dl__spi_8h_source.html#l00044">Lis302dl_Spi::init_status</a>, <a class="el" href="lis302dl__spi_8h_source.html#l00045">Lis302dl_Spi::initialized</a>, <a class="el" href="lis302dl__spi_8c_source.html#l00074">lis302dl_spi_send_config()</a>, <a class="el" href="lis302dl__regs_8h_source.html#l00042">LIS302DL_WHO_AM_I</a>, <a class="el" href="lis302dl_8h_source.html#l00035">LIS_CONF_UNINIT</a>, <a class="el" href="lis302dl_8h_source.html#l00036">LIS_CONF_WHO_AM_I</a>, <a class="el" href="lis302dl_8h_source.html#l00037">LIS_CONF_WHO_AM_I_OK</a>, <a class="el" href="lis302dl__spi_8h_source.html#l00043">Lis302dl_Spi::rx_buf</a>, <a class="el" href="lis302dl__spi_8h_source.html#l00041">Lis302dl_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00094">SPITransFailed</a>, <a class="el" href="spi_8h_source.html#l00093">SPITransSuccess</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p>References <a class="el" href="lis302dl__spi_8h.html#aecb02d626d03c1173e178f31a3586ea3">Lis302dl_Spi::data</a>, <a class="el" href="lis302dl__spi_8h_source.html#l00046">Lis302dl_Spi::data_available</a>, <a class="el" href="lis302dl__spi_8h_source.html#l00044">Lis302dl_Spi::init_status</a>, <a class="el" href="lis302dl__spi_8h_source.html#l00045">Lis302dl_Spi::initialized</a>, <a class="el" href="lis302dl__spi_8c_source.html#l00074">lis302dl_spi_send_config()</a>, <a class="el" href="lis302dl__regs_8h_source.html#l00042">LIS302DL_WHO_AM_I</a>, <a class="el" href="lis302dl_8h_source.html#l00035">LIS_CONF_UNINIT</a>, <a class="el" href="lis302dl_8h_source.html#l00036">LIS_CONF_WHO_AM_I</a>, <a class="el" href="lis302dl_8h_source.html#l00037">LIS_CONF_WHO_AM_I_OK</a>, <a class="el" href="lis302dl__spi_8h_source.html#l00043">Lis302dl_Spi::rx_buf</a>, <a class="el" href="lis302dl__spi_8h_source.html#l00041">Lis302dl_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00094">SPITransFailed</a>, <a class="el" href="spi_8h_source.html#l00093">SPITransSuccess</a>, and <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -301,7 +301,7 @@ data vector in accel coordinate system </td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="lis302dl__spi_8h_a2c38f1d2a84f448dd9f0c7cae80f0a70_cgraph.png" border="0" usemap="#lis302dl__spi_8h_a2c38f1d2a84f448dd9f0c7cae80f0a70_cgraph" alt=""/></div>
 <map name="lis302dl__spi_8h_a2c38f1d2a84f448dd9f0c7cae80f0a70_cgraph" id="lis302dl__spi_8h_a2c38f1d2a84f448dd9f0c7cae80f0a70_cgraph">
-<area shape="rect" id="node2" href="lis302dl__spi_8c.html#aece7185572dd59d44e42796665e9bebc" title="lis302dl_spi_send_config" alt="" coords="192,42,371,69"/><area shape="rect" id="node3" href="lis302dl__spi_8c.html#add754cb4b52da4c26b6fe3dca4320f27" title="lis302dl_spi_write\l_to_reg" alt="" coords="419,5,551,47"/><area shape="rect" id="node4" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="599,42,689,69"/></map>
+<area shape="rect" id="node2" href="lis302dl__spi_8c.html#aece7185572dd59d44e42796665e9bebc" title="lis302dl_spi_send_config" alt="" coords="192,42,371,69"/><area shape="rect" id="node3" href="lis302dl__spi_8c.html#add754cb4b52da4c26b6fe3dca4320f27" title="lis302dl_spi_write\l_to_reg" alt="" coords="419,5,551,47"/><area shape="rect" id="node4" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="599,42,689,69"/></map>
 </div>
 </p>
 
@@ -339,7 +339,7 @@ data vector in accel coordinate system </td></tr>
 
 <p>Definition at line <a class="el" href="lis302dl__spi_8c_source.html#l00030">30</a> of file <a class="el" href="lis302dl__spi_8c_source.html">lis302dl_spi.c</a>.</p>
 
-<p>References <a class="el" href="spi_8h_source.html#l00155">spi_transaction::after_cb</a>, <a class="el" href="spi_8h_source.html#l00154">spi_transaction::before_cb</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::bitorder</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::cdiv</a>, <a class="el" href="lis302dl__spi_8h_source.html#l00051">Lis302dl_Spi::config</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::cpha</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::cpol</a>, <a class="el" href="lis302dl__spi_8h_source.html#l00046">Lis302dl_Spi::data_available</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::dss</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="lis302dl__spi_8h_source.html#l00044">Lis302dl_Spi::init_status</a>, <a class="el" href="lis302dl__spi_8h_source.html#l00045">Lis302dl_Spi::initialized</a>, <a class="el" href="spi_8h_source.html#l00143">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="lis302dl_8h_source.html#l00056">lis302dl_set_default_config()</a>, <a class="el" href="lis302dl_8h_source.html#l00035">LIS_CONF_UNINIT</a>, <a class="el" href="spi_8h_source.html#l00144">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="lis302dl__spi_8h_source.html#l00043">Lis302dl_Spi::rx_buf</a>, <a class="el" href="spi_8h_source.html#l00148">spi_transaction::select</a>, <a class="el" href="spi_8h_source.html#l00147">spi_transaction::slave_idx</a>, <a class="el" href="lis302dl__spi_8h_source.html#l00040">Lis302dl_Spi::spi_p</a>, <a class="el" href="lis302dl__spi_8h_source.html#l00041">Lis302dl_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00069">SPICphaEdge2</a>, <a class="el" href="spi_8h_source.html#l00078">SPICpolIdleHigh</a>, <a class="el" href="spi_8h_source.html#l00119">SPIDiv64</a>, <a class="el" href="spi_8h_source.html#l00084">SPIDss8bit</a>, <a class="el" href="spi_8h_source.html#l00106">SPIMSBFirst</a>, <a class="el" href="spi_8h_source.html#l00057">SPISelectUnselect</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, and <a class="el" href="lis302dl__spi_8h_source.html#l00042">Lis302dl_Spi::tx_buf</a>.</p>
+<p>References <a class="el" href="spi_8h_source.html#l00155">spi_transaction::after_cb</a>, <a class="el" href="spi_8h_source.html#l00154">spi_transaction::before_cb</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::bitorder</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::cdiv</a>, <a class="el" href="lis302dl__spi_8h_source.html#l00051">Lis302dl_Spi::config</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::cpha</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::cpol</a>, <a class="el" href="lis302dl__spi_8h_source.html#l00046">Lis302dl_Spi::data_available</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::dss</a>, <a class="el" href="lis302dl__spi_8h_source.html#l00044">Lis302dl_Spi::init_status</a>, <a class="el" href="lis302dl__spi_8h_source.html#l00045">Lis302dl_Spi::initialized</a>, <a class="el" href="spi_8h_source.html#l00143">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="lis302dl_8h_source.html#l00056">lis302dl_set_default_config()</a>, <a class="el" href="lis302dl_8h_source.html#l00035">LIS_CONF_UNINIT</a>, <a class="el" href="spi_8h_source.html#l00144">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="lis302dl__spi_8h_source.html#l00043">Lis302dl_Spi::rx_buf</a>, <a class="el" href="spi_8h_source.html#l00148">spi_transaction::select</a>, <a class="el" href="spi_8h_source.html#l00147">spi_transaction::slave_idx</a>, <a class="el" href="lis302dl__spi_8h_source.html#l00040">Lis302dl_Spi::spi_p</a>, <a class="el" href="lis302dl__spi_8h_source.html#l00041">Lis302dl_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00069">SPICphaEdge2</a>, <a class="el" href="spi_8h_source.html#l00078">SPICpolIdleHigh</a>, <a class="el" href="spi_8h_source.html#l00119">SPIDiv64</a>, <a class="el" href="spi_8h_source.html#l00084">SPIDss8bit</a>, <a class="el" href="spi_8h_source.html#l00106">SPIMSBFirst</a>, <a class="el" href="spi_8h_source.html#l00057">SPISelectUnselect</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, and <a class="el" href="lis302dl__spi_8h_source.html#l00042">Lis302dl_Spi::tx_buf</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -389,7 +389,7 @@ data vector in accel coordinate system </td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="lis302dl__spi_8h_af10186c998376374915e06131a4b18b5_cgraph.png" border="0" usemap="#lis302dl__spi_8h_af10186c998376374915e06131a4b18b5_cgraph" alt=""/></div>
 <map name="lis302dl__spi_8h_af10186c998376374915e06131a4b18b5_cgraph" id="lis302dl__spi_8h_af10186c998376374915e06131a4b18b5_cgraph">
-<area shape="rect" id="node2" href="lis302dl__spi_8h.html#a77b7a80348f2cfa82cdee3fec764a2df" title="lis302dl_spi_read" alt="" coords="409,5,540,32"/><area shape="rect" id="node4" href="lis302dl__spi_8h.html#abda53cd19076e92c1fedf273a070906e" title="lis302dl_spi_start\l_configure" alt="" coords="205,57,337,98"/><area shape="rect" id="node3" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="792,56,883,83"/><area shape="rect" id="node5" href="lis302dl__spi_8c.html#aece7185572dd59d44e42796665e9bebc" title="lis302dl_spi_send_config" alt="" coords="385,64,564,91"/><area shape="rect" id="node6" href="lis302dl__spi_8c.html#add754cb4b52da4c26b6fe3dca4320f27" title="lis302dl_spi_write\l_to_reg" alt="" coords="612,107,744,149"/></map>
+<area shape="rect" id="node2" href="lis302dl__spi_8h.html#a77b7a80348f2cfa82cdee3fec764a2df" title="lis302dl_spi_read" alt="" coords="409,5,540,32"/><area shape="rect" id="node4" href="lis302dl__spi_8h.html#abda53cd19076e92c1fedf273a070906e" title="lis302dl_spi_start\l_configure" alt="" coords="205,57,337,98"/><area shape="rect" id="node3" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="792,56,883,83"/><area shape="rect" id="node5" href="lis302dl__spi_8c.html#aece7185572dd59d44e42796665e9bebc" title="lis302dl_spi_send_config" alt="" coords="385,64,564,91"/><area shape="rect" id="node6" href="lis302dl__spi_8c.html#add754cb4b52da4c26b6fe3dca4320f27" title="lis302dl_spi_write\l_to_reg" alt="" coords="612,107,744,149"/></map>
 </div>
 </p>
 
@@ -411,7 +411,7 @@ data vector in accel coordinate system </td></tr>
 
 <p>Definition at line <a class="el" href="lis302dl__spi_8c_source.html#l00128">128</a> of file <a class="el" href="lis302dl__spi_8c_source.html">lis302dl_spi.c</a>.</p>
 
-<p>References <a class="el" href="lis302dl__spi_8h_source.html#l00045">Lis302dl_Spi::initialized</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="lis302dl__regs_8h_source.html#l00036">LIS302DL_REG_STATUS</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="lis302dl__spi_8h_source.html#l00040">Lis302dl_Spi::spi_p</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00048">spi_submit()</a>, <a class="el" href="lis302dl__spi_8h_source.html#l00041">Lis302dl_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, and <a class="el" href="lis302dl__spi_8h_source.html#l00042">Lis302dl_Spi::tx_buf</a>.</p>
+<p>References <a class="el" href="lis302dl__spi_8h_source.html#l00045">Lis302dl_Spi::initialized</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="lis302dl__regs_8h_source.html#l00036">LIS302DL_REG_STATUS</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="lis302dl__spi_8h_source.html#l00040">Lis302dl_Spi::spi_p</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00364">spi_submit()</a>, <a class="el" href="lis302dl__spi_8h_source.html#l00041">Lis302dl_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, and <a class="el" href="lis302dl__spi_8h_source.html#l00042">Lis302dl_Spi::tx_buf</a>.</p>
 
 <p>Referenced by <a class="el" href="lis302dl__spi_8h_source.html#l00061">lis302dl_spi_periodic()</a>.</p>
 
@@ -422,7 +422,7 @@ data vector in accel coordinate system </td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="lis302dl__spi_8h_a77b7a80348f2cfa82cdee3fec764a2df_cgraph.png" border="0" usemap="#lis302dl__spi_8h_a77b7a80348f2cfa82cdee3fec764a2df_cgraph" alt=""/></div>
 <map name="lis302dl__spi_8h_a77b7a80348f2cfa82cdee3fec764a2df_cgraph" id="lis302dl__spi_8h_a77b7a80348f2cfa82cdee3fec764a2df_cgraph">
-<area shape="rect" id="node2" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="184,5,275,32"/></map>
+<area shape="rect" id="node2" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="184,5,275,32"/></map>
 </div>
 </p>
 
@@ -466,7 +466,7 @@ data vector in accel coordinate system </td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="lis302dl__spi_8h_abda53cd19076e92c1fedf273a070906e_cgraph.png" border="0" usemap="#lis302dl__spi_8h_abda53cd19076e92c1fedf273a070906e_cgraph" alt=""/></div>
 <map name="lis302dl__spi_8h_abda53cd19076e92c1fedf273a070906e_cgraph" id="lis302dl__spi_8h_abda53cd19076e92c1fedf273a070906e_cgraph">
-<area shape="rect" id="node2" href="lis302dl__spi_8c.html#aece7185572dd59d44e42796665e9bebc" title="lis302dl_spi_send_config" alt="" coords="185,42,364,69"/><area shape="rect" id="node3" href="lis302dl__spi_8c.html#add754cb4b52da4c26b6fe3dca4320f27" title="lis302dl_spi_write\l_to_reg" alt="" coords="412,5,544,47"/><area shape="rect" id="node4" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="592,42,683,69"/></map>
+<area shape="rect" id="node2" href="lis302dl__spi_8c.html#aece7185572dd59d44e42796665e9bebc" title="lis302dl_spi_send_config" alt="" coords="185,42,364,69"/><area shape="rect" id="node3" href="lis302dl__spi_8c.html#add754cb4b52da4c26b6fe3dca4320f27" title="lis302dl_spi_write\l_to_reg" alt="" coords="412,5,544,47"/><area shape="rect" id="node4" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="592,42,683,69"/></map>
 </div>
 </p>
 
@@ -489,7 +489,7 @@ data vector in accel coordinate system </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="lis302dl__spi_8h.html">lis302dl_spi.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:59 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:07 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

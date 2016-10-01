@@ -8,7 +8,7 @@ var autopilot__rc__helpers_8h =
     [ "THROTTLE_STICK_DOWN", "autopilot__rc__helpers_8h.html#a1658edfb25039379849b94dda1eada9b", null ],
     [ "YAW_STICK_CENTERED", "autopilot__rc__helpers_8h.html#aa893fedb4c84c86bcbc8f7ec075ced57", null ],
     [ "YAW_STICK_PUSHED", "autopilot__rc__helpers_8h.html#acd1ef4f5d7952bb8e3088e8800fa1ce5", null ],
-    [ "kill_switch_is_on", "autopilot__rc__helpers_8h.html#a4e9918f217a6eaf344d248a9d34e674d", null ],
+    [ "kill_switch_is_on", "autopilot__rc__helpers_8h.html#ac0cad24ec4c286be4262417eb5823094", null ],
     [ "percent_from_rc", "autopilot__rc__helpers_8h.html#a7769f1bee81960265c7c0bb2980d1edd", null ],
-    [ "rc_attitude_sticks_centered", "autopilot__rc__helpers_8h.html#ac346fd81983479ea51d3439a7dfca6c6", null ]
+    [ "rc_attitude_sticks_centered", "autopilot__rc__helpers_8h.html#ac2cf19a78374dab9e758348111b20c94", null ]
 ];

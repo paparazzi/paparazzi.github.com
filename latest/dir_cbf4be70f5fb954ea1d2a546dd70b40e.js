@@ -1,5 +1,6 @@
 var dir_cbf4be70f5fb954ea1d2a546dd70b40e =
 [
+    [ "sdlog_chibios", "dir_c27662836f6a804eadd3e3b5df5506a4.html", "dir_c27662836f6a804eadd3e3b5df5506a4" ],
     [ "direct_memory_logger.c", "direct__memory__logger_8c.html", "direct__memory__logger_8c" ],
     [ "direct_memory_logger.h", "direct__memory__logger_8h.html", "direct__memory__logger_8h" ],
     [ "file_logger.c", "file__logger_8c.html", "file__logger_8c" ],
@@ -15,6 +16,8 @@ var dir_cbf4be70f5fb954ea1d2a546dd70b40e =
     [ "logger_uart_parse.py", "logger__uart__parse_8py.html", null ],
     [ "openlog.c", "openlog_8c.html", "openlog_8c" ],
     [ "openlog.h", "openlog_8h.html", "openlog_8h" ],
+    [ "sdlog_chibios.c", "sdlog__chibios_8c.html", "sdlog__chibios_8c" ],
+    [ "sdlog_chibios.h", "sdlog__chibios_8h.html", "sdlog__chibios_8h" ],
     [ "sdlogger_spi_direct.c", "sdlogger__spi__direct_8c.html", "sdlogger__spi__direct_8c" ],
     [ "sdlogger_spi_direct.h", "sdlogger__spi__direct_8h.html", "sdlogger__spi__direct_8h" ]
 ];

@@ -33,8 +33,9 @@ var imu__apogee_8h =
     [ "IMU_GYRO_R_SENS_DEN", "imu__apogee_8h.html#aecb2f43265d239ba7661dfcc8523123e", null ],
     [ "IMU_GYRO_R_SENS_NUM", "imu__apogee_8h.html#a6f808c71190e714287442af3bb7008b3", null ],
     [ "IMU_GYRO_R_SIGN", "imu__apogee_8h.html#a91fa3d93fbfb5edbdf7f3b34436b53da", null ],
-    [ "ImuEvent", "imu__apogee_8h.html#a38f1122c1ee0701562b490c6e1b60609", null ],
     [ "imu_apogee_downlink_raw", "imu__apogee_8h.html#a1262a50ea34da37d89d68b295310a0fd", null ],
     [ "imu_apogee_event", "imu__apogee_8h.html#a60395d55d1c3bbb3773a3bc79f210884", null ],
+    [ "imu_apogee_init", "imu__apogee_8h.html#a5ddbbf57488228a97e3d607bac33d837", null ],
+    [ "imu_apogee_periodic", "imu__apogee_8h.html#a43abac81ed29891c48ad37a910562844", null ],
     [ "imu_apogee", "imu__apogee_8h.html#a195fd58b3335b4b91593e2c7d1bdb6fb", null ]
 ];

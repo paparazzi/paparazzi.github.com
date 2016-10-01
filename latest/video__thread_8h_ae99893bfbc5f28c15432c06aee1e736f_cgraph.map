@@ -1,30 +1,24 @@
 <map id="video_thread_start" name="video_thread_start">
-<area shape="rect" id="node2" href="$video__thread_8c.html#a99fd8c1413b858abf320b9adb453ed75" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="196,233,359,260"/>
-<area shape="rect" id="node3" href="$bayer_8h.html#ac5dfa338e1c818c31921acfdd170051b" title="Decode Bayer Pattern. " alt="" coords="446,5,545,32"/>
-<area shape="rect" id="node5" href="$cv_8c.html#a740dfb3335f6510c246c1b03fe3d7d5d" title="cv_run" alt="" coords="463,56,527,83"/>
-<area shape="rect" id="node6" href="$image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="440,107,551,133"/>
-<area shape="rect" id="node7" href="$image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="448,157,543,184"/>
-<area shape="rect" id="node8" href="$rt__priority_8h.html#ad24a15cd8740f6a59aa1a3fd3f8c74bb" title="set_nice_level" alt="" coords="440,208,551,235"/>
-<area shape="rect" id="node9" href="$linux_2mcu__periph_2sys__time__arch_8h.html#afcf2b9e660762eef1d26b9b44cafacb1" title="elapsed time in microsecs between two timespecs " alt="" coords="416,259,575,285"/>
-<area shape="rect" id="node10" href="$v4l2_8c.html#a865e07dd33caf3bb71a3b90834b308c3" title="Free the image and enqueue the buffer (Thread safe) This must be done after processing the image..." alt="" coords="432,309,559,336"/>
-<area shape="rect" id="node11" href="$v4l2_8c.html#a5f8eea1ef0eb13865ad6753e02f4a283" title="Get the latest image buffer and lock it (Thread safe, BLOCKING) This functions blocks until image acc..." alt="" coords="434,360,557,387"/>
-<area shape="rect" id="node12" href="$v4l2_8c.html#adb5a15f8b748f8ed515bb2920e423ea5" title="Start capturing images in streaming mode (Thread safe) " alt="" coords="425,411,566,437"/>
-<area shape="rect" id="node14" href="$video__thread_8c.html#aaa7b1f2f5b3646dfeb40b7cacd005efb" title="video_thread_save_shot" alt="" coords="407,461,584,488"/>
-<area shape="rect" id="node4" href="$bayer_8h.html#a7bcab48c91c2c274a2e94e848a106f11" title="clip" alt="" coords="687,5,730,32"/>
-<area shape="rect" id="node13" href="$v4l2_8c.html#a3016fdd985a61647b2fc6a653ebfcfaa" title="The main capturing thread This thread handles the queue and dequeue of buffers, to make sure only the..." alt="" coords="632,411,785,437"/>
-<area shape="rect" id="node15" href="$jpeg_8c.html#a80691d29cd889f8b549ac6850c95e1b6" title="Encode an YUV422 image. " alt="" coords="633,461,784,488"/>
-<area shape="rect" id="node27" href="$exif__module_8c.html#a5e636f6bee9bd1ab6d04ec780509dca5" title="write_exif_jpeg" alt="" coords="651,588,766,615"/>
-<area shape="rect" id="node16" href="$jpeg_8c.html#af2a62dbe59d962b7cd5158e744b941df" title="jpeg_close_bitstream" alt="" coords="833,309,992,336"/>
-<area shape="rect" id="node17" href="$jpeg_8c.html#aa65677a00f264d53b744f64b386139e1" title="jpeg_encodeMCU" alt="" coords="846,360,979,387"/>
-<area shape="rect" id="node22" href="$jpeg_8c.html#a688433e5f55000ae893f2d5c29097691" title="jpeg_initialization" alt="" coords="847,436,978,463"/>
-<area shape="rect" id="node25" href="$jpeg_8c.html#a26b97262e8620df4fd0ece95195a2d8e" title="jpeg_write_markers" alt="" coords="839,487,986,513"/>
-<area shape="rect" id="node26" href="$jpeg_8c.html#a69ed605945a7ea46dbfaa9b3f29b5ed8" title="MakeTables" alt="" coords="865,537,960,564"/>
-<area shape="rect" id="node18" href="$jpeg_8c.html#a5b96ae28e2300858e6af3061ac8f96b9" title="jpeg_DCT" alt="" coords="1082,247,1165,273"/>
-<area shape="rect" id="node19" href="$jpeg_8c.html#a20c1f652043de7bc8171be6591bd3480" title="jpeg_huffman" alt="" coords="1069,297,1178,324"/>
-<area shape="rect" id="node20" href="$jpeg_8c.html#a1b9aa7581d09ec6412a14ec76334667c" title="jpeg_levelshift" alt="" coords="1067,348,1179,375"/>
-<area shape="rect" id="node21" href="$jpeg_8c.html#ac00d030f6b21b9e0973fe18a7a7f7e51" title="jpeg_quantization" alt="" coords="1056,399,1191,425"/>
-<area shape="rect" id="node23" href="$jpeg_8c.html#a496e270428d382bcbda831334590eaf6" title="jpeg_read_400_format" alt="" coords="1040,449,1207,476"/>
-<area shape="rect" id="node24" href="$jpeg_8c.html#a206021dc908d46e0a1d72ed9c40b10e9" title="jpeg_read_422_format" alt="" coords="1040,500,1207,527"/>
-<area shape="rect" id="node28" href="$exif__module_8c.html#a62dd27ed931462c0526e4632461c7acf" title="create_tag" alt="" coords="867,588,958,615"/>
-<area shape="rect" id="node29" href="$exif__module_8c.html#a76556aceaec9700c7267093b6d4fa99f" title="init_tag" alt="" coords="878,639,947,665"/>
+<area shape="rect" id="node2" href="$video__thread_8c.html#ab813e16de6bb4fcba1ac803cd51e722d" title="start_video_thread" alt="" coords="196,335,339,361"/>
+<area shape="rect" id="node3" href="$video__thread_8c.html#a99fd8c1413b858abf320b9adb453ed75" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="387,335,549,361"/>
+<area shape="rect" id="node4" href="$bayer_8h.html#ac5dfa338e1c818c31921acfdd170051b" title="Decode Bayer Pattern. " alt="" coords="627,31,726,57"/>
+<area shape="rect" id="node6" href="$libisp_8c.html#a1b23f6d5fe4f4e5c8e38944439156f19" title="configure_isp" alt="" coords="623,107,730,133"/>
+<area shape="rect" id="node10" href="$cv_8c.html#a600c1d8570ebc9340cee21772e84f022" title="cv_run_device" alt="" coords="621,208,733,235"/>
+<area shape="rect" id="node13" href="$image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="1031,233,1142,260"/>
+<area shape="rect" id="node15" href="$image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="629,309,724,336"/>
+<area shape="rect" id="node16" href="$rt__priority_8h.html#ad24a15cd8740f6a59aa1a3fd3f8c74bb" title="set_nice_level" alt="" coords="621,360,732,387"/>
+<area shape="rect" id="node17" href="$linux_2mcu__periph_2sys__time__arch_8h.html#afcf2b9e660762eef1d26b9b44cafacb1" title="elapsed time in microsecs between two timespecs " alt="" coords="597,411,756,437"/>
+<area shape="rect" id="node18" href="$v4l2_8c.html#a865e07dd33caf3bb71a3b90834b308c3" title="Free the image and enqueue the buffer (Thread safe) This must be done after processing the image..." alt="" coords="613,461,740,488"/>
+<area shape="rect" id="node19" href="$v4l2_8c.html#a5f8eea1ef0eb13865ad6753e02f4a283" title="Get the latest image buffer and lock it (Thread safe, BLOCKING) This functions blocks until image acc..." alt="" coords="615,512,738,539"/>
+<area shape="rect" id="node20" href="$v4l2_8c.html#a4efccaca5c6c386d09e315ccfcaa3581" title="Start capturing images in streaming mode (Thread safe) " alt="" coords="606,563,747,589"/>
+<area shape="rect" id="node5" href="$bayer_8h.html#a7bcab48c91c2c274a2e94e848a106f11" title="clip" alt="" coords="859,5,902,32"/>
+<area shape="rect" id="node7" href="$libisp_8c.html#a2fc5c5460c56f4a3a3229a41c9b4e1df" title="close_isp" alt="" coords="841,56,921,83"/>
+<area shape="rect" id="node8" href="$libisp_8c.html#a18baccdcb0a85933c9d8aad524c46673" title="This is taken from libisp. " alt="" coords="831,107,930,133"/>
+<area shape="rect" id="node9" href="$libisp_8c.html#a8ece15cff340c783aed0144eab145207" title="This is taken from libisp. " alt="" coords="1005,107,1168,133"/>
+<area shape="rect" id="node11" href="$cv_8c.html#a240a6ff9df3d40d46d3233e9017ef46c" title="cv_async_function" alt="" coords="811,157,950,184"/>
+<area shape="rect" id="node14" href="$cv_8c.html#a9ccbed9793580feadb878ae82db54f7f" title="timeval_diff" alt="" coords="833,208,928,235"/>
+<area shape="rect" id="node12" href="$image_8c.html#a02932625f9aeb66da70c89a2f2d3a052" title="Copy an image from inut to output This will only work if the formats are the same. " alt="" coords="1037,157,1136,184"/>
+<area shape="rect" id="node21" href="$v4l2_8c.html#a3016fdd985a61647b2fc6a653ebfcfaa" title="The main capturing thread This thread handles the queue and dequeue of buffers, to make sure only the..." alt="" coords="804,563,957,589"/>
+<area shape="rect" id="node22" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="1015,563,1159,589"/>
+<area shape="rect" id="node23" href="$sys__time_8h.html#adb22f2652f04908fbc644c7274bf7273" title="usec_of_sys_time_ticks" alt="" coords="1216,563,1387,589"/>
 </map>

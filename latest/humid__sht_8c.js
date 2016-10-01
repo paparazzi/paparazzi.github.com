@@ -32,7 +32,7 @@ var humid__sht_8c =
     [ "s_write_statusreg", "humid__sht_8c.html#ad70aa5e85ee5cc737acec83166f3ef10", null ],
     [ "fhumidsht", "humid__sht_8c.html#a7b6fc59372ea31117d7b57053986f3bc", null ],
     [ "ftempsht", "humid__sht_8c.html#ab5111f7c86720c03eca02d5362d3373f", null ],
-    [ "humid_sht_available", "humid__sht_8c.html#a721bfa074f0f40ff23abdf39982303cd", null ],
+    [ "humid_sht_available", "humid__sht_8c.html#a8675393909571b5504905409b7e1c990", null ],
     [ "humid_sht_status", "humid__sht_8c.html#a04351042aaba6e2b67dc2aaab9ded946", null ],
     [ "humidsht", "humid__sht_8c.html#a24ccb0d3307ade52bfb1c68cf4b4bad6", null ],
     [ "tempsht", "humid__sht_8c.html#ac8dc4f0bd5ee751a90240ac2ed414e6b", null ]

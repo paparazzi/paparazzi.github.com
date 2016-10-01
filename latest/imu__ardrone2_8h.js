@@ -30,5 +30,5 @@ var imu__ardrone2_8h =
     [ "IMU_MAG_Z_SENS", "imu__ardrone2_8h.html#a4adf0ec19c7be873b877295e46eac2f7", null ],
     [ "IMU_MAG_Z_SENS_DEN", "imu__ardrone2_8h.html#aed0226a9d2f4d9d8dc774efcdf5a1051", null ],
     [ "IMU_MAG_Z_SENS_NUM", "imu__ardrone2_8h.html#af3e261fd1968aa63c116a5cbdbc322b5", null ],
-    [ "ImuEvent", "imu__ardrone2_8h.html#a38f1122c1ee0701562b490c6e1b60609", null ]
+    [ "imu_ardrone2_init", "imu__ardrone2_8h.html#a64ed917b58febc5528b575b56549c9a4", null ]
 ];

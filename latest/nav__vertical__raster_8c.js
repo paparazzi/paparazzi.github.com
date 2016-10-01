@@ -18,7 +18,7 @@ var nav__vertical__raster_8c =
       [ "LTC1", "nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4ad74fa6a689e1a6c8373a3359bba8d124", null ],
       [ "LQC11", "nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4a7f637cfcb9990910ded6a6f84bafed9b", null ]
     ] ],
-    [ "nav_vertical_raster_run", "nav__vertical__raster_8c.html#a45584491486cc78f3ff7b4e0d89bea6d", null ],
-    [ "nav_vertical_raster_setup", "nav__vertical__raster_8c.html#a98574a5e94a58bc37488ad7bce45c19f", null ],
+    [ "nav_vertical_raster_run", "nav__vertical__raster_8c.html#a7fc631ea3c7e6bb03ddc1f84dff2838f", null ],
+    [ "nav_vertical_raster_setup", "nav__vertical__raster_8c.html#a034bc22db305093c2cc877979ed11c1b", null ],
     [ "line_status", "nav__vertical__raster_8c.html#a1e4b07456818b9e3350d99d1931205fd", null ]
 ];

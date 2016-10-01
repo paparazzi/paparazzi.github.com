@@ -18,7 +18,8 @@ var gps__ubx_8c =
     [ "UNINIT", "gps__ubx_8c.html#a7668dedbc74a47bde384b2b911379073", null ],
     [ "UTM_HEM_NORTH", "gps__ubx_8c.html#a81b821d6b2b90cd4dd34b36833f667a7", null ],
     [ "UTM_HEM_SOUTH", "gps__ubx_8c.html#a32e3449d116d85cc44da6f9fbd9ff871", null ],
-    [ "gps_impl_init", "gps__ubx_8c.html#ac51e6a5f7940a0acc9dc44b1b8085331", null ],
+    [ "gps_ubx_event", "gps__ubx_8c.html#a8384aab04d3a0e824cf5a71403515730", null ],
+    [ "gps_ubx_init", "gps__ubx_8c.html#ab186501d688a68a9911c601caf4d853c", null ],
     [ "gps_ubx_msg", "gps__ubx_8c.html#ab3be7fdb9eae93ba80f43b848cdb7416", null ],
     [ "gps_ubx_parse", "gps__ubx_8c.html#a3ad5afe6d36ae248fec7ab657c283e48", null ],
     [ "gps_ubx_read_message", "gps__ubx_8c.html#a40f87b11657c4465a6a31c8c80e2aad9", null ],
@@ -27,5 +28,6 @@ var gps__ubx_8c =
     [ "ubx_send_bytes", "gps__ubx_8c.html#adf889ecccbe48a25bc9ddce61221193c", null ],
     [ "ubx_send_cfg_rst", "gps__ubx_8c.html#a550add37b4f40e19d00421d0b6bceb3c", null ],
     [ "ubx_trailer", "gps__ubx_8c.html#a11d12878703b9c555fc19e5137a308e4", null ],
-    [ "gps_ubx", "gps__ubx_8c.html#a2b88e29de56e1f30ae0447c5488b4e66", null ]
+    [ "gps_ubx", "gps__ubx_8c.html#a2b88e29de56e1f30ae0447c5488b4e66", null ],
+    [ "gps_ubx_time_sync", "gps__ubx_8c.html#adbb7f9a44a3c5e3ca7d7fe69079091ba", null ]
 ];

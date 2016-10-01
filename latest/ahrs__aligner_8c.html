@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -122,6 +122,7 @@ $(document).ready(function(){initNavTree('ahrs__aligner_8c.html','');});
 <code>#include &quot;<a class="el" href="led_8h_source.html">led.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for ahrs_aligner.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -129,7 +130,7 @@ $(document).ready(function(){initNavTree('ahrs__aligner_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__aligner_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2ahrs_2ahrs__aligner_8c" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2ahrs_2ahrs__aligner_8c" id="sw_2airborne_2subsystems_2ahrs_2ahrs__aligner_8c">
-<area shape="rect" id="node2" href="ahrs__aligner_8h.html" title="Interface to align the AHRS via low&#45;passed measurements at startup. " alt="" coords="632,177,743,203"/><area shape="rect" id="node10" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="290,95,429,121"/><area shape="rect" id="node15" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="745,95,798,121"/><area shape="rect" id="node17" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="851,95,986,121"/><area shape="rect" id="node19" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="786,259,957,285"/><area shape="rect" id="node4" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="344,259,522,285"/><area shape="rect" id="node5" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="114,341,269,367"/><area shape="rect" id="node8" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="344,341,495,367"/><area shape="rect" id="node11" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="24,259,215,285"/><area shape="rect" id="node13" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="158,169,322,211"/><area shape="rect" id="node20" href="inttypes_8h.html" title="inttypes.h" alt="" coords="765,341,850,367"/></map>
+<area shape="rect" id="node2" href="ahrs__aligner_8h.html" title="Interface to align the AHRS via low&#45;passed measurements at startup. " alt="" coords="745,177,855,203"/><area shape="rect" id="node10" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="596,95,735,121"/><area shape="rect" id="node16" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1409,95,1463,121"/><area shape="rect" id="node18" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="1615,95,1750,121"/><area shape="rect" id="node20" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1140,266,1311,293"/><area shape="rect" id="node24" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="1359,169,1513,211"/><area shape="rect" id="node4" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="576,266,755,293"/><area shape="rect" id="node5" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="331,355,485,382"/><area shape="rect" id="node8" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="611,355,762,382"/><area shape="rect" id="node11" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="246,266,437,293"/><area shape="rect" id="node14" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="455,169,619,211"/><area shape="rect" id="node21" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1313,355,1399,382"/><area shape="rect" id="node25" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="2195,355,2333,382"/><area shape="rect" id="node29" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1591,259,1745,300"/><area shape="rect" id="node32" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="2017,348,2170,389"/></map>
 </div>
 </div>
 <p><a href="ahrs__aligner_8c_source.html">Go to the source code of this file.</a></p>
@@ -150,6 +151,8 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a47e1ea35fdb43af72537c6c9f38b889d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__aligner_8c.html#a47e1ea35fdb43af72537c6c9f38b889d">gyro_cb</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> stamp, struct <a class="el" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a> *gyro)</td></tr>
 <tr class="separator:a47e1ea35fdb43af72537c6c9f38b889d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe64b23cba24d9f6d4efd4773d3c8d1e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__aligner_8c.html#abe64b23cba24d9f6d4efd4773d3c8d1e">send_aligner</a> (struct transport_tx *trans, struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
+<tr class="separator:abe64b23cba24d9f6d4efd4773d3c8d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a321c9a82fcb75074c3041cbf6906e5ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__aligner_8c.html#a321c9a82fcb75074c3041cbf6906e5ea">ahrs_aligner_init</a> (void)</td></tr>
 <tr class="separator:a321c9a82fcb75074c3041cbf6906e5ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8c5b5a4ce38e0dd4e1234bad8adf92d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__aligner_8c.html#aa8c5b5a4ce38e0dd4e1234bad8adf92d">ahrs_aligner_run</a> (void)</td></tr>
@@ -260,9 +263,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__aligner_8c_source.html#l00079">79</a> of file <a class="el" href="ahrs__aligner_8c_source.html">ahrs_aligner.c</a>.</p>
 
-<p>References <a class="el" href="ahrs__aligner_8c_source.html#l00042">accel_sum</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00037">ahrs_aligner</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00048">AHRS_ALIGNER_IMU_ID</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00036">AHRS_ALIGNER_RUNNING</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00052">gyro_cb()</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00041">gyro_sum</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00570">INT_RATES_ZERO</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00286">INT_VECT3_ZERO</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00044">AhrsAligner::low_noise_cnt</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00043">mag_sum</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00043">AhrsAligner::noise</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00045">samples_idx</a>, and <a class="el" href="ahrs__aligner_8h_source.html#l00045">AhrsAligner::status</a>.</p>
+<p>References <a class="el" href="ahrs__aligner_8c_source.html#l00042">accel_sum</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00037">ahrs_aligner</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00048">AHRS_ALIGNER_IMU_ID</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00036">AHRS_ALIGNER_RUNNING</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00052">gyro_cb()</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00041">gyro_sum</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00571">INT_RATES_ZERO</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00287">INT_VECT3_ZERO</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00044">AhrsAligner::low_noise_cnt</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00043">mag_sum</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00043">AhrsAligner::noise</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00045">samples_idx</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00064">send_aligner()</a>, and <a class="el" href="ahrs__aligner_8h_source.html#l00045">AhrsAligner::status</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00175">init_ap()</a>, and <a class="el" href="demo__ahrs__actuators_8c_source.html#l00089">main_init()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00174">init_ap()</a>, and <a class="el" href="demo__ahrs__actuators_8c_source.html#l00088">main_init()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -271,7 +274,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__aligner_8c_a321c9a82fcb75074c3041cbf6906e5ea_cgraph.png" border="0" usemap="#ahrs__aligner_8c_a321c9a82fcb75074c3041cbf6906e5ea_cgraph" alt=""/></div>
 <map name="ahrs__aligner_8c_a321c9a82fcb75074c3041cbf6906e5ea_cgraph" id="ahrs__aligner_8c_a321c9a82fcb75074c3041cbf6906e5ea_cgraph">
-<area shape="rect" id="node2" href="ahrs__aligner_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="243,5,315,32"/><area shape="rect" id="node6" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="180,56,377,83"/><area shape="rect" id="node3" href="ahrs__aligner_8c.html#aa8c5b5a4ce38e0dd4e1234bad8adf92d" title="ahrs_aligner_run" alt="" coords="425,5,553,32"/><area shape="rect" id="node4" href="linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="601,5,745,32"/><area shape="rect" id="node5" href="sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="793,5,931,32"/></map>
+<area shape="rect" id="node2" href="ahrs__aligner_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="243,5,315,32"/><area shape="rect" id="node6" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="180,56,377,83"/><area shape="rect" id="node7" href="ahrs__aligner_8c.html#abe64b23cba24d9f6d4efd4773d3c8d1e" title="send_aligner" alt="" coords="227,107,330,133"/><area shape="rect" id="node3" href="ahrs__aligner_8c.html#aa8c5b5a4ce38e0dd4e1234bad8adf92d" title="ahrs_aligner_run" alt="" coords="425,5,553,32"/><area shape="rect" id="node4" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="601,5,745,32"/><area shape="rect" id="node5" href="sys__time_8h.html#adb22f2652f04908fbc644c7274bf7273" title="usec_of_sys_time_ticks" alt="" coords="793,5,964,32"/></map>
 </div>
 </p>
 
@@ -282,7 +285,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__aligner_8c_a321c9a82fcb75074c3041cbf6906e5ea_icgraph.png" border="0" usemap="#ahrs__aligner_8c_a321c9a82fcb75074c3041cbf6906e5ea_icgraph" alt=""/></div>
 <map name="ahrs__aligner_8c_a321c9a82fcb75074c3041cbf6906e5ea_icgraph" id="ahrs__aligner_8c_a321c9a82fcb75074c3041cbf6906e5ea_icgraph">
-<area shape="rect" id="node2" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="188,5,252,32"/><area shape="rect" id="node4" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="180,56,260,83"/><area shape="rect" id="node3" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="308,5,379,32"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="316,56,371,83"/></map>
+<area shape="rect" id="node2" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="188,5,252,32"/><area shape="rect" id="node4" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="180,56,260,83"/><area shape="rect" id="node3" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="340,5,411,32"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="348,56,403,83"/><area shape="rect" id="node6" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="308,107,443,133"/><area shape="rect" id="node7" href="nps__main_8c.html#af28efef10cede3b66825b2dc2e4e7705" title="nps_main_init" alt="" coords="491,107,601,133"/><area shape="rect" id="node8" href="nps__main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="649,107,704,133"/></map>
 </div>
 </p>
 
@@ -304,7 +307,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__aligner_8c_source.html#l00106">106</a> of file <a class="el" href="ahrs__aligner_8c_source.html">ahrs_aligner.c</a>.</p>
 
-<p>References <a class="el" href="abi__common_8h_source.html#l00056">ABI_BROADCAST</a>, <a class="el" href="imu_8h_source.html#l00043">Imu::accel</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00042">accel_sum</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00037">ahrs_aligner</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00037">AHRS_ALIGNER_LOCKED</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8h_source.html#l00039">get_sys_time_usec()</a>, <a class="el" href="imu_8h_source.html#l00042">Imu::gyro</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00041">gyro_sum</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00043">imu</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00570">INT_RATES_ZERO</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00286">INT_VECT3_ZERO</a>, <a class="el" href="linux_2led__hw_8h_source.html#l00042">LED_ON</a>, <a class="el" href="linux_2led__hw_8h_source.html#l00044">LED_TOGGLE</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00044">AhrsAligner::low_noise_cnt</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00099">LOW_NOISE_THRESHOLD</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00103">LOW_NOISE_TIME</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00041">AhrsAligner::lp_accel</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00040">AhrsAligner::lp_gyro</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00042">AhrsAligner::lp_mag</a>, <a class="el" href="imu_8h_source.html#l00044">Imu::mag</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00043">mag_sum</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00043">AhrsAligner::noise</a>, <a class="el" href="pprz__algebra_8h_source.html#l00343">RATES_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00385">RATES_SDIV</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00044">ref_sensor_samples</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00045">samples_idx</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00039">SAMPLES_NB</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00045">AhrsAligner::status</a>, <a class="el" href="pprz__algebra_8h_source.html#l00146">VECT3_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00195">VECT3_SDIV</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
+<p>References <a class="el" href="abi__common_8h_source.html#l00056">ABI_BROADCAST</a>, <a class="el" href="imu_8h_source.html#l00039">Imu::accel</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00042">accel_sum</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00037">ahrs_aligner</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00037">AHRS_ALIGNER_LOCKED</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">get_sys_time_usec()</a>, <a class="el" href="imu_8h_source.html#l00038">Imu::gyro</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00041">gyro_sum</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00571">INT_RATES_ZERO</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00287">INT_VECT3_ZERO</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00049">LED_ON</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00051">LED_TOGGLE</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00044">AhrsAligner::low_noise_cnt</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00099">LOW_NOISE_THRESHOLD</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00103">LOW_NOISE_TIME</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00041">AhrsAligner::lp_accel</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00040">AhrsAligner::lp_gyro</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00042">AhrsAligner::lp_mag</a>, <a class="el" href="imu_8h_source.html#l00040">Imu::mag</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00043">mag_sum</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00043">AhrsAligner::noise</a>, <a class="el" href="pprz__algebra_8h_source.html#l00343">RATES_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00385">RATES_SDIV</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00044">ref_sensor_samples</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00045">samples_idx</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00039">SAMPLES_NB</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00045">AhrsAligner::status</a>, <a class="el" href="pprz__algebra_8h_source.html#l00146">VECT3_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00195">VECT3_SDIV</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__aligner_8c_source.html#l00052">gyro_cb()</a>.</p>
 
@@ -315,7 +318,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__aligner_8c_aa8c5b5a4ce38e0dd4e1234bad8adf92d_cgraph.png" border="0" usemap="#ahrs__aligner_8c_aa8c5b5a4ce38e0dd4e1234bad8adf92d_cgraph" alt=""/></div>
 <map name="ahrs__aligner_8c_aa8c5b5a4ce38e0dd4e1234bad8adf92d_cgraph" id="ahrs__aligner_8c_aa8c5b5a4ce38e0dd4e1234bad8adf92d_cgraph">
-<area shape="rect" id="node2" href="linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="181,5,325,32"/><area shape="rect" id="node3" href="sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="373,5,511,32"/></map>
+<area shape="rect" id="node2" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="181,5,325,32"/><area shape="rect" id="node3" href="sys__time_8h.html#adb22f2652f04908fbc644c7274bf7273" title="usec_of_sys_time_ticks" alt="" coords="373,5,544,32"/></map>
 </div>
 </p>
 
@@ -326,7 +329,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__aligner_8c_aa8c5b5a4ce38e0dd4e1234bad8adf92d_icgraph.png" border="0" usemap="#ahrs__aligner_8c_aa8c5b5a4ce38e0dd4e1234bad8adf92d_icgraph" alt=""/></div>
 <map name="ahrs__aligner_8c_aa8c5b5a4ce38e0dd4e1234bad8adf92d_icgraph" id="ahrs__aligner_8c_aa8c5b5a4ce38e0dd4e1234bad8adf92d_icgraph">
-<area shape="rect" id="node2" href="ahrs__aligner_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="181,31,253,57"/><area shape="rect" id="node3" href="ahrs__aligner_8h.html#a321c9a82fcb75074c3041cbf6906e5ea" title="ahrs_aligner_init" alt="" coords="301,31,428,57"/><area shape="rect" id="node4" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="476,5,556,32"/><area shape="rect" id="node6" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="484,56,548,83"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="612,5,667,32"/><area shape="rect" id="node7" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="604,56,675,83"/></map>
+<area shape="rect" id="node2" href="ahrs__aligner_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="181,81,253,108"/><area shape="rect" id="node3" href="ahrs__aligner_8h.html#a321c9a82fcb75074c3041cbf6906e5ea" title="ahrs_aligner_init" alt="" coords="301,81,428,108"/><area shape="rect" id="node4" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="476,56,556,83"/><area shape="rect" id="node9" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="484,107,548,133"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="644,5,699,32"/><area shape="rect" id="node6" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="604,56,739,83"/><area shape="rect" id="node7" href="nps__main_8c.html#af28efef10cede3b66825b2dc2e4e7705" title="nps_main_init" alt="" coords="787,56,897,83"/><area shape="rect" id="node8" href="nps__main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="945,56,1000,83"/><area shape="rect" id="node10" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="636,107,707,133"/></map>
 </div>
 </p>
 
@@ -383,7 +386,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__aligner_8c_a47e1ea35fdb43af72537c6c9f38b889d_cgraph.png" border="0" usemap="#ahrs__aligner_8c_a47e1ea35fdb43af72537c6c9f38b889d_cgraph" alt=""/></div>
 <map name="ahrs__aligner_8c_a47e1ea35fdb43af72537c6c9f38b889d_cgraph" id="ahrs__aligner_8c_a47e1ea35fdb43af72537c6c9f38b889d_cgraph">
-<area shape="rect" id="node2" href="ahrs__aligner_8c.html#aa8c5b5a4ce38e0dd4e1234bad8adf92d" title="ahrs_aligner_run" alt="" coords="125,5,253,32"/><area shape="rect" id="node3" href="linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="301,5,445,32"/><area shape="rect" id="node4" href="sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="493,5,631,32"/></map>
+<area shape="rect" id="node2" href="ahrs__aligner_8c.html#aa8c5b5a4ce38e0dd4e1234bad8adf92d" title="ahrs_aligner_run" alt="" coords="125,5,253,32"/><area shape="rect" id="node3" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="301,5,445,32"/><area shape="rect" id="node4" href="sys__time_8h.html#adb22f2652f04908fbc644c7274bf7273" title="usec_of_sys_time_ticks" alt="" coords="493,5,664,32"/></map>
 </div>
 </p>
 
@@ -394,7 +397,58 @@ Variables</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__aligner_8c_a47e1ea35fdb43af72537c6c9f38b889d_icgraph.png" border="0" usemap="#ahrs__aligner_8c_a47e1ea35fdb43af72537c6c9f38b889d_icgraph" alt=""/></div>
 <map name="ahrs__aligner_8c_a47e1ea35fdb43af72537c6c9f38b889d_icgraph" id="ahrs__aligner_8c_a47e1ea35fdb43af72537c6c9f38b889d_icgraph">
-<area shape="rect" id="node2" href="ahrs__aligner_8h.html#a321c9a82fcb75074c3041cbf6906e5ea" title="ahrs_aligner_init" alt="" coords="125,31,252,57"/><area shape="rect" id="node3" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="300,5,380,32"/><area shape="rect" id="node5" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="308,56,372,83"/><area shape="rect" id="node4" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="436,5,491,32"/><area shape="rect" id="node6" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="428,56,499,83"/></map>
+<area shape="rect" id="node2" href="ahrs__aligner_8h.html#a321c9a82fcb75074c3041cbf6906e5ea" title="ahrs_aligner_init" alt="" coords="125,81,252,108"/><area shape="rect" id="node3" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="300,56,380,83"/><area shape="rect" id="node8" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="308,107,372,133"/><area shape="rect" id="node4" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="468,5,523,32"/><area shape="rect" id="node5" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="428,56,563,83"/><area shape="rect" id="node6" href="nps__main_8c.html#af28efef10cede3b66825b2dc2e4e7705" title="nps_main_init" alt="" coords="611,56,721,83"/><area shape="rect" id="node7" href="nps__main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="769,56,824,83"/><area shape="rect" id="node9" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="460,107,531,133"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abe64b23cba24d9f6d4efd4773d3c8d1e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void send_aligner </td>
+          <td>(</td>
+          <td class="paramtype">struct transport_tx *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct link_device *&#160;</td>
+          <td class="paramname"><em>dev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ahrs__aligner_8c_source.html#l00064">64</a> of file <a class="el" href="ahrs__aligner_8c_source.html">ahrs_aligner.c</a>.</p>
+
+<p>References <a class="el" href="ahrs__aligner_8c_source.html#l00037">ahrs_aligner</a>, <a class="el" href="imu_8h_source.html#l00038">Imu::gyro</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00044">AhrsAligner::low_noise_cnt</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00040">AhrsAligner::lp_gyro</a>, <a class="el" href="ahrs__aligner_8h_source.html#l00043">AhrsAligner::noise</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00180">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00181">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00182">Int32Rates::r</a>, and <a class="el" href="ahrs__aligner_8h_source.html#l00045">AhrsAligner::status</a>.</p>
+
+<p>Referenced by <a class="el" href="ahrs__aligner_8c_source.html#l00079">ahrs_aligner_init()</a>.</p>
+
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ahrs__aligner_8c_abe64b23cba24d9f6d4efd4773d3c8d1e_icgraph.png" border="0" usemap="#ahrs__aligner_8c_abe64b23cba24d9f6d4efd4773d3c8d1e_icgraph" alt=""/></div>
+<map name="ahrs__aligner_8c_abe64b23cba24d9f6d4efd4773d3c8d1e_icgraph" id="ahrs__aligner_8c_abe64b23cba24d9f6d4efd4773d3c8d1e_icgraph">
+<area shape="rect" id="node2" href="ahrs__aligner_8h.html#a321c9a82fcb75074c3041cbf6906e5ea" title="ahrs_aligner_init" alt="" coords="156,81,283,108"/><area shape="rect" id="node3" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="331,56,411,83"/><area shape="rect" id="node8" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="339,107,403,133"/><area shape="rect" id="node4" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="499,5,553,32"/><area shape="rect" id="node5" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="459,56,593,83"/><area shape="rect" id="node6" href="nps__main_8c.html#af28efef10cede3b66825b2dc2e4e7705" title="nps_main_init" alt="" coords="641,56,752,83"/><area shape="rect" id="node7" href="nps__main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="800,56,855,83"/><area shape="rect" id="node9" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="491,107,561,133"/></map>
 </div>
 </p>
 
@@ -437,7 +491,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__aligner_8c_source.html#l00037">37</a> of file <a class="el" href="ahrs__aligner_8c_source.html">ahrs_aligner.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__aligner_8c_source.html#l00079">ahrs_aligner_init()</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00106">ahrs_aligner_run()</a>, and <a class="el" href="ahrs__aligner_8c_source.html#l00052">gyro_cb()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__aligner_8c_source.html#l00079">ahrs_aligner_init()</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00106">ahrs_aligner_run()</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00052">gyro_cb()</a>, and <a class="el" href="ahrs__aligner_8c_source.html#l00064">send_aligner()</a>.</p>
 
 </div>
 </div>
@@ -565,7 +619,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_46fef683200e96ccf1a2f608d90c4a2d.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__aligner_8c.html">ahrs_aligner.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:01 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:09 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

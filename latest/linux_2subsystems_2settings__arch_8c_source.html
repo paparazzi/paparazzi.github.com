@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('linux_2subsystems_2settings__arch_8c_s
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="linux_2subsystems_2settings__arch_8c.html#aa464715701670e7dd8ad2bb4d2b11f46">   34</a></span>&#160;<span class="preprocessor">#define PERSISTENT_SETTINGS_FILE &quot;pprz_persistent_settings.binary&quot;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="settings_8h.html#a069b2bcf8fcf2d115466efa163c7583e">   37</a></span>&#160;<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="linux_2subsystems_2settings__arch_8c.html#a069b2bcf8fcf2d115466efa163c7583e">persistent_write</a>(<span class="keywordtype">void</span> *ptr, <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> size)</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="linux_2subsystems_2settings__arch_8c.html#a069b2bcf8fcf2d115466efa163c7583e">   37</a></span>&#160;<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="chibios_2subsystems_2settings__arch_8c.html#a069b2bcf8fcf2d115466efa163c7583e">persistent_write</a>(<span class="keywordtype">void</span> *ptr, <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> size)</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  FILE *file= fopen(<a class="code" href="linux_2subsystems_2settings__arch_8c.html#aa464715701670e7dd8ad2bb4d2b11f46">PERSISTENT_SETTINGS_FILE</a>, <span class="stringliteral">&quot;wb&quot;</span>);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordflow">if</span> (file != NULL) {</div>
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('linux_2subsystems_2settings__arch_8c_s
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="settings_8h.html#a6d60026540670a5fc2ac03dee06c791e">   49</a></span>&#160;<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="linux_2subsystems_2settings__arch_8c.html#a6d60026540670a5fc2ac03dee06c791e">persistent_read</a>(<span class="keywordtype">void</span> *ptr, <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> size)</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="linux_2subsystems_2settings__arch_8c.html#a6d60026540670a5fc2ac03dee06c791e">   49</a></span>&#160;<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="chibios_2subsystems_2settings__arch_8c.html#a6d60026540670a5fc2ac03dee06c791e">persistent_read</a>(<span class="keywordtype">void</span> *ptr, <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> size)</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  FILE *file= fopen(<a class="code" href="linux_2subsystems_2settings__arch_8c.html#aa464715701670e7dd8ad2bb4d2b11f46">PERSISTENT_SETTINGS_FILE</a>, <span class="stringliteral">&quot;rb&quot;</span>);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">if</span> (file == NULL) {</div>
@@ -178,8 +178,8 @@ $(document).ready(function(){initNavTree('linux_2subsystems_2settings__arch_8c_s
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">remove</span>(<a class="code" href="linux_2subsystems_2settings__arch_8c.html#aa464715701670e7dd8ad2bb4d2b11f46">PERSISTENT_SETTINGS_FILE</a>);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
-<div class="ttc" id="linux_2subsystems_2settings__arch_8c_html_a6d60026540670a5fc2ac03dee06c791e"><div class="ttname"><a href="linux_2subsystems_2settings__arch_8c.html#a6d60026540670a5fc2ac03dee06c791e">persistent_read</a></div><div class="ttdeci">int32_t persistent_read(void *ptr, uint32_t size)</div><div class="ttdef"><b>Definition:</b> <a href="linux_2subsystems_2settings__arch_8c_source.html#l00049">settings_arch.c:49</a></div></div>
-<div class="ttc" id="linux_2subsystems_2settings__arch_8c_html_a069b2bcf8fcf2d115466efa163c7583e"><div class="ttname"><a href="linux_2subsystems_2settings__arch_8c.html#a069b2bcf8fcf2d115466efa163c7583e">persistent_write</a></div><div class="ttdeci">int32_t persistent_write(void *ptr, uint32_t size)</div><div class="ttdef"><b>Definition:</b> <a href="linux_2subsystems_2settings__arch_8c_source.html#l00037">settings_arch.c:37</a></div></div>
+<div class="ttc" id="chibios_2subsystems_2settings__arch_8c_html_a069b2bcf8fcf2d115466efa163c7583e"><div class="ttname"><a href="chibios_2subsystems_2settings__arch_8c.html#a069b2bcf8fcf2d115466efa163c7583e">persistent_write</a></div><div class="ttdeci">int32_t persistent_write(void *ptr, uint32_t size)</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2subsystems_2settings__arch_8c_source.html#l00033">settings_arch.c:33</a></div></div>
+<div class="ttc" id="chibios_2subsystems_2settings__arch_8c_html_a6d60026540670a5fc2ac03dee06c791e"><div class="ttname"><a href="chibios_2subsystems_2settings__arch_8c.html#a6d60026540670a5fc2ac03dee06c791e">persistent_read</a></div><div class="ttdeci">int32_t persistent_read(void *ptr, uint32_t size)</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2subsystems_2settings__arch_8c_source.html#l00038">settings_arch.c:38</a></div></div>
 <div class="ttc" id="types_8h_html_a06896e8c53f721507066c079052171f8"><div class="ttname"><a href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></div><div class="ttdeci">unsigned long uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00018">types.h:18</a></div></div>
 <div class="ttc" id="types_8h_html_a2ba621978a511250f7250fb10e05ffbe"><div class="ttname"><a href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></div><div class="ttdeci">signed long int32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00019">types.h:19</a></div></div>
 <div class="ttc" id="settings_8h_html"><div class="ttname"><a href="settings_8h.html">settings.h</a></div><div class="ttdoc">Persistent settings interface. </div></div>
@@ -191,7 +191,7 @@ $(document).ready(function(){initNavTree('linux_2subsystems_2settings__arch_8c_s
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_92fbf38b8c893a0928a3445a75d0ac01.html">linux</a></li><li class="navelem"><a class="el" href="dir_aded1301b6ec9c30cbacafc9cff45e55.html">subsystems</a></li><li class="navelem"><a class="el" href="linux_2subsystems_2settings__arch_8c.html">settings_arch.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:14 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:13 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

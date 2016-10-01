@@ -58,6 +58,7 @@ var searchData=
   ['ads1220_5fvref_5fexternal_5fref',['ADS1220_VREF_EXTERNAL_REF',['../ads1220_8h.html#a53d51ad2ccfba7898323cbcb477a7436ac865d7465ce4f53df2e799e1acb6e031',1,'ads1220.h']]],
   ['ads1220_5fvref_5finternal',['ADS1220_VREF_INTERNAL',['../ads1220_8h.html#a53d51ad2ccfba7898323cbcb477a7436a19c6b0fdfce138dbdcb7663b5fe84183',1,'ads1220.h']]],
   ['ads1220_5fvref_5fvdd',['ADS1220_VREF_VDD',['../ads1220_8h.html#a53d51ad2ccfba7898323cbcb477a7436a8e7c172e8fe1da67596e123e59060c9d',1,'ads1220.h']]],
+  ['advance',['ADVANCE',['../esc32_8h.html#a7d7ff77147834c43663d3dfd1f263610ade3fd11080d31927ed6732ccad31fee6',1,'esc32.h']]],
   ['adxl345_5frange_5f16g',['ADXL345_RANGE_16G',['../adxl345__regs_8h.html#abc3494afc65a86812ed33040266ce16fae5641dd5b58e2fdb7018903fb9c4e21b',1,'adxl345_regs.h']]],
   ['adxl345_5frange_5f2g',['ADXL345_RANGE_2G',['../adxl345__regs_8h.html#abc3494afc65a86812ed33040266ce16fadbe3b6f849ede28b1367a75f650fdc62',1,'adxl345_regs.h']]],
   ['adxl345_5frange_5f4g',['ADXL345_RANGE_4G',['../adxl345__regs_8h.html#abc3494afc65a86812ed33040266ce16faf4839f1f2c196d523d8be06641263548',1,'adxl345_regs.h']]],
@@ -96,5 +97,6 @@ var searchData=
   ['ak_5fstatus_5fidle',['AK_STATUS_IDLE',['../ak8963_8h.html#a17716d364ee924bf509a99715208137aa417cdde96c5b7df29b125f2a0ddbc196',1,'AK_STATUS_IDLE():&#160;ak8963.h'],['../ak8975_8h.html#a583c1693d6d13b50f2ee54f6b46ada49a417cdde96c5b7df29b125f2a0ddbc196',1,'AK_STATUS_IDLE():&#160;ak8975.h']]],
   ['ak_5fstatus_5fmeas',['AK_STATUS_MEAS',['../ak8975_8h.html#a583c1693d6d13b50f2ee54f6b46ada49a3277c43b264f2b8dcd52c67b7212be5f',1,'ak8975.h']]],
   ['ak_5fstatus_5fread',['AK_STATUS_READ',['../ak8963_8h.html#a17716d364ee924bf509a99715208137aadbd9a8610986900f4a5d9d5a41dd45a3',1,'AK_STATUS_READ():&#160;ak8963.h'],['../ak8975_8h.html#a583c1693d6d13b50f2ee54f6b46ada49adbd9a8610986900f4a5d9d5a41dd45a3',1,'AK_STATUS_READ():&#160;ak8975.h']]],
-  ['append',['Append',['../mission__common_8h.html#add225f937fa97e4f76900b7f5e73872ea71f30510b076569dd2830e348fb77a13',1,'mission_common.h']]]
+  ['append',['Append',['../mission__common_8h.html#add225f937fa97e4f76900b7f5e73872ea71f30510b076569dd2830e348fb77a13',1,'mission_common.h']]],
+  ['approach',['Approach',['../nav__skid__landing_8c.html#a61a75394da51ededcb57cd59a9e3cefeaa19b7b7f6eb8f8eedb2055bf1050f81f',1,'nav_skid_landing.c']]]
 ];

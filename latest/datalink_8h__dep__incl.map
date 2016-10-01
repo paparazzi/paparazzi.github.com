@@ -1,51 +1,51 @@
 <map id="sw/airborne/subsystems/datalink/datalink.h" name="sw/airborne/subsystems/datalink/datalink.h">
-<area shape="rect" id="node2" href="$sim__ap_8c.html" title="sw/airborne/arch/sim\l/sim_ap.c" alt="" coords="683,95,837,136"/>
-<area shape="rect" id="node3" href="$demo__ahrs__actuators_8c.html" title="Demo prog with ahrs and simple roll/pitch commands to actuators. " alt="" coords="5,385,224,426"/>
-<area shape="rect" id="node4" href="$fixedwing_2datalink_8c.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="3933,95,4094,136"/>
-<area shape="rect" id="node5" href="$main__ap_8c.html" title="AP ( AutoPilot ) tasks. " alt="" coords="249,385,410,426"/>
-<area shape="rect" id="node6" href="$rotorcraft_2datalink_8c.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="434,385,595,426"/>
-<area shape="rect" id="node7" href="$rotorcraft_2main_8c.html" title="Rotorcraft main loop. " alt="" coords="619,385,781,426"/>
-<area shape="rect" id="node8" href="$setup__actuators_8c.html" title="sw/airborne/firmwares\l/setup/setup_actuators.c" alt="" coords="1037,385,1219,426"/>
-<area shape="rect" id="node9" href="$extra__pprz__dl_8h.html" title="Extra datalink using PPRZ protocol. " alt="" coords="1165,184,1344,225"/>
-<area shape="rect" id="node11" href="$meteo__france__DAQ_8c.html" title="Communication module with the Data Acquisition board from Meteo France. " alt="" coords="805,385,1013,426"/>
-<area shape="rect" id="node12" href="$mission__common_8c.html" title="messages parser for mission interface " alt="" coords="6412,385,6615,426"/>
-<area shape="rect" id="node13" href="$nav__catapult_8c.html" title="sw/airborne/modules\l/nav/nav_catapult.c" alt="" coords="6639,385,6793,426"/>
-<area shape="rect" id="node14" href="$pprz__transport_8h.html" title="Building and parsing Paparazzi frames. " alt="" coords="2775,95,2961,136"/>
-<area shape="rect" id="node43" href="$subsystems_2datalink_2superbitrf_8h.html" title="sw/airborne/subsystems\l/datalink/superbitrf.h" alt="" coords="3220,184,3396,225"/>
-<area shape="rect" id="node50" href="$xbee_8h.html" title="Maxstream XBee serial input and output. " alt="" coords="1368,184,1544,225"/>
-<area shape="rect" id="node10" href="$extra__pprz__dl_8c.html" title="sw/airborne/modules\l/datalink/extra_pprz_dl.c" alt="" coords="1217,281,1394,322"/>
-<area shape="rect" id="node15" href="$downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="2969,281,3145,322"/>
-<area shape="rect" id="node41" href="$pprz__transport_8c.html" title="Building and parsing Paparazzi frames. " alt="" coords="6202,385,6387,426"/>
-<area shape="rect" id="node47" href="$w5100_8h.html" title="W5100 ethernet chip I/O. " alt="" coords="2969,184,3145,225"/>
-<area shape="rect" id="node48" href="$intermcu__ap_8c.html" title="Rotorcraft Inter&#45;MCU on the autopilot. " alt="" coords="2508,184,2687,225"/>
-<area shape="rect" id="node49" href="$intermcu__fbw_8c.html" title="Rotorcraft Inter&#45;MCU on FlyByWire. " alt="" coords="2711,184,2894,225"/>
-<area shape="rect" id="node16" href="$imu__apogee_8c.html" title="Driver for the IMU on the Apogee board. " alt="" coords="5223,385,5391,426"/>
-<area shape="rect" id="node17" href="$baro__board__ms5611__i2c_8c.html" title="Driver for onboard MS5611 baro via I2C. " alt="" coords="5415,385,5609,426"/>
-<area shape="rect" id="node18" href="$baro__board__ms5611__spi_8c.html" title="Driver for onboard MS5611 baro via SPI. " alt="" coords="5633,385,5828,426"/>
-<area shape="rect" id="node19" href="$imu__hbmini_8c.html" title="Driver for the IMU on the Hbmini board. " alt="" coords="5853,385,6011,426"/>
-<area shape="rect" id="node20" href="$imu__krooz_8c.html" title="Driver for the IMU on the KroozSD board. " alt="" coords="6035,385,6178,426"/>
-<area shape="rect" id="node21" href="$imu__navgo_8c.html" title="Driver for the IMU on the NavGo board. " alt="" coords="1443,385,1594,426"/>
-<area shape="rect" id="node22" href="$imu__umarim_8c.html" title="Driver for the IMU on the Umarim board. " alt="" coords="1618,385,1790,426"/>
-<area shape="rect" id="node23" href="$navigation_8c.html" title="Rotorcraft navigation functions. " alt="" coords="1814,385,1981,426"/>
-<area shape="rect" id="node24" href="$main__demo4_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo4.c" alt="" coords="2005,385,2176,426"/>
-<area shape="rect" id="node25" href="$main__demo5_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo5.c" alt="" coords="2200,385,2371,426"/>
-<area shape="rect" id="node26" href="$main__demo6_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo6.c" alt="" coords="2395,385,2565,426"/>
-<area shape="rect" id="node27" href="$adc__generic_8c.html" title="sw/airborne/modules\l/adcs/adc_generic.c" alt="" coords="2589,385,2744,426"/>
-<area shape="rect" id="node28" href="$max11040_8c.html" title="Maxim MAX11040 ADC hw interface. " alt="" coords="2768,385,2923,426"/>
-<area shape="rect" id="node29" href="$flight__benchmark_8c.html" title="sw/airborne/modules\l/benchmark/flight_benchmark.c" alt="" coords="2946,385,3169,426"/>
-<area shape="rect" id="node30" href="$send__imu__mag__current_8c.html" title="Enables sending of IMU_MAG_CURRENT_CALIBRATION message. " alt="" coords="3193,377,3351,433"/>
-<area shape="rect" id="node31" href="$cartography_8c.html" title="Navigation functions for cartography of the ground. " alt="" coords="3375,385,3569,426"/>
-<area shape="rect" id="node32" href="$cv__georeference_8c.html" title="sw/airborne/modules\l/computer_vision/cv\l_georeference.c" alt="" coords="3593,377,3748,433"/>
-<area shape="rect" id="node33" href="$config__mkk__v2_8c.html" title="sw/airborne/modules\l/config/config_mkk_v2.c" alt="" coords="3772,385,3945,426"/>
-<area shape="rect" id="node34" href="$sys__mon_8c.html" title="sw/airborne/modules\l/core/sys_mon.c" alt="" coords="3969,385,4124,426"/>
-<area shape="rect" id="node35" href="$xtend__rssi_8c.html" title="This measures the rssi pwm signal from a Digi XTend radio modem and sends a message with the info..." alt="" coords="4149,385,4305,426"/>
-<area shape="rect" id="node36" href="$atmega__i2c__cam__ctrl_8c.html" title="Interface with digital camera though AVR AtMega chip. " alt="" coords="4329,377,4484,433"/>
-<area shape="rect" id="node37" href="$dc_8c.html" title="Standard Digital Camera Control Interface. " alt="" coords="4508,385,4663,426"/>
-<area shape="rect" id="node38" href="$sim__i2c__cam__ctrl_8c.html" title="Simulated Interface with digital camera. " alt="" coords="4687,377,4841,433"/>
-<area shape="rect" id="node39" href="$MPPT_8c.html" title="Solar cells MPTT monitoring. " alt="" coords="4865,385,5020,426"/>
-<area shape="rect" id="node40" href="$sim__MPPT_8c.html" title="sw/airborne/modules\l/energy/sim_MPPT.c" alt="" coords="5044,385,5199,426"/>
-<area shape="rect" id="node42" href="$xbee_8c.html" title="Maxstream XBee serial input and output. " alt="" coords="1243,385,1419,426"/>
-<area shape="rect" id="node44" href="$arch_2sim_2subsystems_2datalink_2superbitrf_8c.html" title="DSM2 and DSMX datalink implementation for the cyrf6936 2.4GHz radio chip trough SPI. " alt="" coords="3220,273,3377,329"/>
-<area shape="rect" id="node45" href="$subsystems_2datalink_2superbitrf_8c.html" title="sw/airborne/subsystems\l/datalink/superbitrf.c" alt="" coords="3401,281,3577,322"/>
-<area shape="rect" id="node46" href="$superbitrf__rc_8h.html" title="DSM2 and DSMX radio control implementation for the cyrf6936 2.4GHz radio chip trough SPI..." alt="" coords="3601,281,3807,322"/>
+<area shape="rect" id="node2" href="$sim__ap_8c.html" title="sw/airborne/arch/sim\l/sim_ap.c" alt="" coords="97,102,251,143"/>
+<area shape="rect" id="node3" href="$demo__ahrs__actuators_8c.html" title="Demo prog with ahrs and simple roll/pitch commands to actuators. " alt="" coords="439,206,658,247"/>
+<area shape="rect" id="node4" href="$fixedwing__datalink_8c.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="683,199,844,255"/>
+<area shape="rect" id="node5" href="$main__ap_8c.html" title="AP ( AutoPilot ) tasks. " alt="" coords="868,206,1029,247"/>
+<area shape="rect" id="node6" href="$rotorcraft_2main_8c.html" title="Rotorcraft main loop. " alt="" coords="1053,206,1215,247"/>
+<area shape="rect" id="node7" href="$rotorcraft__datalink_8c.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="2943,95,3104,151"/>
+<area shape="rect" id="node8" href="$setup__actuators_8c.html" title="sw/airborne/firmwares\l/setup/setup_actuators.c" alt="" coords="1239,206,1421,247"/>
+<area shape="rect" id="node9" href="$extra__pprz__dl_8h.html" title="Extra datalink using PPRZ protocol. " alt="" coords="275,102,454,143"/>
+<area shape="rect" id="node11" href="$meteo__france__DAQ_8c.html" title="Communication module with the Data Acquisition board from Meteo France. " alt="" coords="207,206,415,247"/>
+<area shape="rect" id="node12" href="$mission__common_8c.html" title="messages parser for mission interface " alt="" coords="1445,206,1647,247"/>
+<area shape="rect" id="node13" href="$formation_8h.html" title="Formation flight library. " alt="" coords="1690,102,1845,143"/>
+<area shape="rect" id="node15" href="$rssi_8c.html" title="sw/airborne/modules\l/multi/rssi.c" alt="" coords="3129,102,3283,143"/>
+<area shape="rect" id="node16" href="$tcas_8h.html" title="Collision avoidance library. " alt="" coords="1887,102,2042,143"/>
+<area shape="rect" id="node18" href="$traffic__info_8c.html" title="sw/airborne/modules\l/multi/traffic_info.c" alt="" coords="3307,102,3462,143"/>
+<area shape="rect" id="node19" href="$bluegiga_8h.html" title="Bluegiga Bluetooth chip I/O. " alt="" coords="3486,102,3662,143"/>
+<area shape="rect" id="node21" href="$datalink_8c.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="2029,206,2205,247"/>
+<area shape="rect" id="node22" href="$downlink_8c.html" title="Common code for AP and FBW telemetry. " alt="" coords="2229,206,2405,247"/>
+<area shape="rect" id="node23" href="$downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="2691,102,2867,143"/>
+<area shape="rect" id="node46" href="$nps__autopilot__rotorcraft_8c.html" title="sw/simulator/nps/nps\l_autopilot_rotorcraft.c" alt="" coords="6651,206,6814,247"/>
+<area shape="rect" id="node47" href="$subsystems_2datalink_2superbitrf_8h.html" title="sw/airborne/subsystems\l/datalink/superbitrf.h" alt="" coords="3686,102,3862,143"/>
+<area shape="rect" id="node48" href="$w5100_8h.html" title="W5100 ethernet chip I/O. " alt="" coords="3886,102,4062,143"/>
+<area shape="rect" id="node49" href="$gps__datalink_8c.html" title="GPS system based on datalink. " alt="" coords="4086,102,4262,143"/>
+<area shape="rect" id="node50" href="$nps__autopilot__fixedwing_8c.html" title="sw/simulator/nps/nps\l_autopilot_fixedwing.c" alt="" coords="4287,102,4448,143"/>
+<area shape="rect" id="node10" href="$extra__pprz__dl_8c.html" title="sw/airborne/modules\l/datalink/extra_pprz_dl.c" alt="" coords="5,206,183,247"/>
+<area shape="rect" id="node14" href="$formation_8c.html" title="library for formation flight " alt="" coords="1671,206,1826,247"/>
+<area shape="rect" id="node17" href="$tcas_8c.html" title="Collision avoidance library. " alt="" coords="1850,206,2005,247"/>
+<area shape="rect" id="node20" href="$bluegiga_8c.html" title="Datalink implementation for the BlueGiga Bluetooth radio chip trough SPI. " alt="" coords="6838,206,7014,247"/>
+<area shape="rect" id="node24" href="$imu__apogee_8c.html" title="Driver for the IMU on the Apogee board. " alt="" coords="2789,206,2957,247"/>
+<area shape="rect" id="node25" href="$baro__board__ms5611__i2c_8c.html" title="Driver for onboard MS5611 baro via I2C. " alt="" coords="2981,206,3175,247"/>
+<area shape="rect" id="node26" href="$baro__board__ms5611__spi_8c.html" title="Driver for onboard MS5611 baro via SPI. " alt="" coords="3199,206,3394,247"/>
+<area shape="rect" id="node27" href="$imu__hbmini_8c.html" title="Driver for the IMU on the Hbmini board. " alt="" coords="3419,206,3577,247"/>
+<area shape="rect" id="node28" href="$imu__krooz_8c.html" title="Driver for the IMU on the KroozSD board. " alt="" coords="3601,206,3744,247"/>
+<area shape="rect" id="node29" href="$imu__navgo_8c.html" title="Driver for the IMU on the NavGo board. " alt="" coords="3768,206,3919,247"/>
+<area shape="rect" id="node30" href="$imu__umarim_8c.html" title="Driver for the IMU on the Umarim board. " alt="" coords="3943,206,4115,247"/>
+<area shape="rect" id="node31" href="$navigation_8c.html" title="Rotorcraft navigation functions. " alt="" coords="4139,206,4305,247"/>
+<area shape="rect" id="node32" href="$main__demo4_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo4.c" alt="" coords="4330,206,4501,247"/>
+<area shape="rect" id="node33" href="$main__demo5_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo5.c" alt="" coords="4525,206,4695,247"/>
+<area shape="rect" id="node34" href="$main__demo6_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo6.c" alt="" coords="4719,206,4890,247"/>
+<area shape="rect" id="node35" href="$adc__generic_8c.html" title="This module can be used to read one or two values from the ADC channels in a generic way..." alt="" coords="4914,206,5069,247"/>
+<area shape="rect" id="node36" href="$max11040_8c.html" title="Maxim MAX11040 ADC hw interface. " alt="" coords="5093,206,5247,247"/>
+<area shape="rect" id="node37" href="$flight__benchmark_8c.html" title="sw/airborne/modules\l/benchmark/flight_benchmark.c" alt="" coords="5271,206,5493,247"/>
+<area shape="rect" id="node38" href="$send__imu__mag__current_8c.html" title="Enables sending of IMU_MAG_CURRENT_CALIBRATION message. " alt="" coords="5517,199,5676,255"/>
+<area shape="rect" id="node39" href="$cartography_8c.html" title="Navigation functions for cartography of the ground. " alt="" coords="5700,206,5893,247"/>
+<area shape="rect" id="node40" href="$cv__georeference_8c.html" title="sw/airborne/modules\l/computer_vision/cv\l_georeference.c" alt="" coords="5918,199,6073,255"/>
+<area shape="rect" id="node41" href="$config__mkk__v2_8c.html" title="sw/airborne/modules\l/config/config_mkk_v2.c" alt="" coords="6097,206,6270,247"/>
+<area shape="rect" id="node42" href="$rtos__mon_8c.html" title="sw/airborne/modules\l/core/rtos_mon.c" alt="" coords="6294,206,6449,247"/>
+<area shape="rect" id="node43" href="$sys__mon_8c.html" title="System monitoring for bare metal targets return cpu load, average exec time, ... " alt="" coords="6473,206,6627,247"/>
+<area shape="rect" id="node44" href="$xtend__rssi_8c.html" title="This measures the rssi pwm signal from a Digi XTend radio modem and sends a message with the info..." alt="" coords="2429,206,2585,247"/>
+<area shape="rect" id="node45" href="$atmega__i2c__cam__ctrl_8c.html" title="Interface with digital camera though AVR AtMega chip. " alt="" coords="2610,199,2765,255"/>
 </map>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('baro__bmp_8c.html','');});
 <code>#include &quot;<a class="el" href="led_8h_source.html">led.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br />
-<code>#include &quot;messages.h&quot;</code><br />
+<code>#include &quot;pprzlink/messages.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for baro_bmp.c:</div>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('baro__bmp_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="baro__bmp_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2sensors_2baro__bmp_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2sensors_2baro__bmp_8c" id="sw_2airborne_2modules_2sensors_2baro__bmp_8c">
-<area shape="rect" id="node2" href="baro__bmp_8h.html" title="Bosch BMP085 I2C sensor interface. " alt="" coords="169,102,267,129"/><area shape="rect" id="node4" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="77,281,207,307"/><area shape="rect" id="node7" href="bmp085__regs_8h.html" title="Bosch BMP085 register definitions. " alt="" coords="1228,95,1379,136"/><area shape="rect" id="node8" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="197,370,367,397"/><area shape="rect" id="node13" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1498,102,1551,129"/><area shape="rect" id="node15" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="565,191,703,218"/><area shape="rect" id="node18" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="1765,102,1900,129"/><area shape="rect" id="node21" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="999,95,1152,136"/><area shape="rect" id="node3" href="bmp085_8h.html" title="Bosch BMP085 driver interface. " alt="" coords="121,191,283,218"/><area shape="rect" id="node9" href="inttypes_8h.html" title="inttypes.h" alt="" coords="950,541,1035,568"/><area shape="rect" id="node17" href="link__device_8h.html" title="generic device header " alt="" coords="772,459,955,486"/><area shape="rect" id="node24" href="pprz__transport_8h.html" title="Building and parsing Paparazzi frames. " alt="" coords="901,273,1055,315"/><area shape="rect" id="node28" href="pprzlog__transport_8h.html" title="Protocol for on&#45;board data logger with timestamp. " alt="" coords="672,273,825,315"/><area shape="rect" id="node29" href="xbee_8h.html" title="Maxstream XBee serial input and output. " alt="" coords="1181,184,1335,225"/><area shape="rect" id="node31" href="w5100_8h.html" title="W5100 ethernet chip I/O. " alt="" coords="952,184,1105,225"/><area shape="rect" id="node25" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1131,363,1284,404"/><area shape="rect" id="node27" href="transport_8h.html" title="generic transport header " alt="" coords="901,363,1055,404"/><area shape="rect" id="node30" href="xbee24_8h.html" title="Configuration for 2.4GHz &quot;series 1&quot; and 900MHz modules. " alt="" coords="1313,273,1467,315"/></map>
+<area shape="rect" id="node2" href="baro__bmp_8h.html" title="Bosch BMP085 I2C sensor interface. " alt="" coords="179,102,278,129"/><area shape="rect" id="node4" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="23,273,154,300"/><area shape="rect" id="node7" href="bmp085__regs_8h.html" title="Bosch BMP085 register definitions. " alt="" coords="1456,95,1607,136"/><area shape="rect" id="node8" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1261,102,1431,129"/><area shape="rect" id="node13" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1667,102,1721,129"/><area shape="rect" id="node15" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="290,191,429,218"/><area shape="rect" id="node18" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="1817,102,1952,129"/><area shape="rect" id="node21" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="723,95,876,136"/><area shape="rect" id="node3" href="bmp085_8h.html" title="Bosch BMP085 driver interface. " alt="" coords="103,191,266,218"/><area shape="rect" id="node9" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1174,191,1259,218"/><area shape="rect" id="node24" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="813,184,967,225"/></map>
 </div>
 </div>
 <p><a href="baro__bmp_8c_source.html">Go to the source code of this file.</a></p>
@@ -159,8 +159,8 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a09ccc68d1ef4027c7cb6c348ffb99cad"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="bmp085_8h.html#structBmp085">Bmp085</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__bmp_8c.html#a09ccc68d1ef4027c7cb6c348ffb99cad">baro_bmp</a></td></tr>
 <tr class="separator:a09ccc68d1ef4027c7cb6c348ffb99cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e9983a0ccda14f96a31ab76d7ebb700"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__bmp_8c.html#a0e9983a0ccda14f96a31ab76d7ebb700">baro_bmp_enabled</a></td></tr>
-<tr class="separator:a0e9983a0ccda14f96a31ab76d7ebb700"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a075628427eb8ce860c727b298b01173c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__bmp_8c.html#a075628427eb8ce860c727b298b01173c">baro_bmp_enabled</a></td></tr>
+<tr class="separator:a075628427eb8ce860c727b298b01173c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a715ab4e2838f0af7be8d7d55b82a1ac9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__bmp_8c.html#a715ab4e2838f0af7be8d7d55b82a1ac9">baro_bmp_r</a></td></tr>
 <tr class="separator:a715ab4e2838f0af7be8d7d55b82a1ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb0831c824befa3750689297f62d4024"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__bmp_8c.html#acb0831c824befa3750689297f62d4024">baro_bmp_sigma2</a></td></tr>
@@ -239,7 +239,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="baro__bmp_8c_source.html#l00081">81</a> of file <a class="el" href="baro__bmp_8c_source.html">baro_bmp.c</a>.</p>
 
-<p>References <a class="el" href="baro__bmp_8c_source.html#l00052">baro_bmp</a>, <a class="el" href="baro__bmp_8c_source.html#l00057">baro_bmp_alt</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00048">BARO_BMP_SENDER_ID</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00033">BARO_BOARD_SENDER_ID</a>, <a class="el" href="bmp085_8c_source.html#l00142">bmp085_event()</a>, <a class="el" href="bmp085_8h_source.html#l00068">Bmp085::data_available</a>, <a class="el" href="downlink_8h_source.html#l00079">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00083">DefaultDevice</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="bmp085_8h_source.html#l00073">Bmp085::pressure</a>, <a class="el" href="bmp085_8h_source.html#l00072">Bmp085::temperature</a>, <a class="el" href="bmp085_8h_source.html#l00071">Bmp085::up</a>, and <a class="el" href="bmp085_8h_source.html#l00070">Bmp085::ut</a>.</p>
+<p>References <a class="el" href="baro__bmp_8c_source.html#l00052">baro_bmp</a>, <a class="el" href="baro__bmp_8c_source.html#l00057">baro_bmp_alt</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00048">BARO_BMP_SENDER_ID</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00033">BARO_BOARD_SENDER_ID</a>, <a class="el" href="bmp085_8c_source.html#l00142">bmp085_event()</a>, <a class="el" href="bmp085_8h_source.html#l00068">Bmp085::data_available</a>, <a class="el" href="downlink_8h_source.html#l00084">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00088">DefaultDevice</a>, <a class="el" href="bmp085_8h_source.html#l00073">Bmp085::pressure</a>, <a class="el" href="bmp085_8h_source.html#l00072">Bmp085::temperature</a>, <a class="el" href="bmp085_8h_source.html#l00071">Bmp085::up</a>, and <a class="el" href="bmp085_8h_source.html#l00070">Bmp085::ut</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -248,7 +248,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="baro__bmp_8c_aa5e236975231b4db2818cdc4c997fea0_cgraph.png" border="0" usemap="#baro__bmp_8c_aa5e236975231b4db2818cdc4c997fea0_cgraph" alt=""/></div>
 <map name="baro__bmp_8c_aa5e236975231b4db2818cdc4c997fea0_cgraph" id="baro__bmp_8c_aa5e236975231b4db2818cdc4c997fea0_cgraph">
-<area shape="rect" id="node2" href="bmp085_8c.html#a378f5eb4f4ed5e17c6f13e3dc4629842" title="bmp085_event" alt="" coords="184,71,303,98"/><area shape="rect" id="node3" href="bmp085_8c.html#a51c3006367e8c704b3b0f2f98d473124" title="bmp085_compensated\l_temperature" alt="" coords="351,5,521,47"/><area shape="rect" id="node4" href="group__i2c.html#ga68659e03504627925829f2f12c2ec6d2" title="Submit a write only transaction. " alt="" coords="385,71,487,98"/><area shape="rect" id="node6" href="bmp085_8c.html#a0ab1487b3b01190106885dcb37d195b1" title="Apply temp calibration and sensor calibration to raw measurement to get Pa (from BMP085 datasheet) ..." alt="" coords="351,123,521,164"/><area shape="rect" id="node5" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="569,71,660,98"/></map>
+<area shape="rect" id="node2" href="bmp085_8c.html#a378f5eb4f4ed5e17c6f13e3dc4629842" title="bmp085_event" alt="" coords="184,71,303,98"/><area shape="rect" id="node3" href="bmp085_8c.html#a51c3006367e8c704b3b0f2f98d473124" title="bmp085_compensated\l_temperature" alt="" coords="351,5,521,47"/><area shape="rect" id="node4" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="385,71,487,98"/><area shape="rect" id="node6" href="bmp085_8c.html#a0ab1487b3b01190106885dcb37d195b1" title="Apply temp calibration and sensor calibration to raw measurement to get Pa (from BMP085 datasheet) ..." alt="" coords="351,123,521,164"/><area shape="rect" id="node5" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="569,71,660,98"/></map>
 </div>
 </p>
 
@@ -270,7 +270,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="baro__bmp_8c_source.html#l00059">59</a> of file <a class="el" href="baro__bmp_8c_source.html">baro_bmp.c</a>.</p>
 
-<p>References <a class="el" href="baro__bmp_8c_source.html#l00052">baro_bmp</a>, <a class="el" href="baro__bmp_8c_source.html#l00054">baro_bmp_enabled</a>, <a class="el" href="baro__bmp_8c_source.html#l00048">BARO_BMP_R</a>, <a class="el" href="baro__bmp_8c_source.html#l00055">baro_bmp_r</a>, <a class="el" href="baro__bmp_8c_source.html#l00049">BARO_BMP_SIGMA2</a>, <a class="el" href="baro__bmp_8c_source.html#l00056">baro_bmp_sigma2</a>, <a class="el" href="bmp085_8c_source.html#l00083">bmp085_init()</a>, <a class="el" href="bmp085__regs_8h_source.html#l00057">BMP085_SLAVE_ADDR</a>, <a class="el" href="baro__bmp_8c_source.html#l00045">BMP_I2C_DEV</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p>References <a class="el" href="baro__bmp_8c_source.html#l00052">baro_bmp</a>, <a class="el" href="baro__bmp_8c_source.html#l00054">baro_bmp_enabled</a>, <a class="el" href="baro__bmp_8c_source.html#l00048">BARO_BMP_R</a>, <a class="el" href="baro__bmp_8c_source.html#l00055">baro_bmp_r</a>, <a class="el" href="baro__bmp_8c_source.html#l00049">BARO_BMP_SIGMA2</a>, <a class="el" href="baro__bmp_8c_source.html#l00056">baro_bmp_sigma2</a>, <a class="el" href="bmp085_8c_source.html#l00083">bmp085_init()</a>, <a class="el" href="bmp085__regs_8h_source.html#l00057">BMP085_SLAVE_ADDR</a>, and <a class="el" href="baro__bmp_8c_source.html#l00045">BMP_I2C_DEV</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -279,7 +279,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="baro__bmp_8c_ac61db1c8d70ce52b2e2192350c1a4cba_cgraph.png" border="0" usemap="#baro__bmp_8c_ac61db1c8d70ce52b2e2192350c1a4cba_cgraph" alt=""/></div>
 <map name="baro__bmp_8c_ac61db1c8d70ce52b2e2192350c1a4cba_cgraph" id="baro__bmp_8c_ac61db1c8d70ce52b2e2192350c1a4cba_cgraph">
-<area shape="rect" id="node2" href="bmp085_8c.html#a0408131d52b918456c36b07d13d6a90f" title="bmp085_init" alt="" coords="167,5,268,32"/><area shape="rect" id="node3" href="bmp085_8c.html#ab7dda30fa62c1e697bc782a9c96e4c12" title="Dummy function to always return TRUE on EndOfConversion check. " alt="" coords="316,5,455,32"/></map>
+<area shape="rect" id="node2" href="bmp085_8c.html#a0408131d52b918456c36b07d13d6a90f" title="bmp085_init" alt="" coords="167,5,268,32"/><area shape="rect" id="node3" href="bmp085_8c.html#ab92381db9dcd63fc57502f7ed1b91678" title="Dummy function to always return TRUE on EndOfConversion check. " alt="" coords="316,5,455,32"/></map>
 </div>
 </p>
 
@@ -310,7 +310,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="baro__bmp_8c_a2c8ab237cbb8ec936485236b89562181_cgraph.png" border="0" usemap="#baro__bmp_8c_a2c8ab237cbb8ec936485236b89562181_cgraph" alt=""/></div>
 <map name="baro__bmp_8c_a2c8ab237cbb8ec936485236b89562181_cgraph" id="baro__bmp_8c_a2c8ab237cbb8ec936485236b89562181_cgraph">
-<area shape="rect" id="node2" href="bmp085_8c.html#ad6fe03b188457ab22e7e81f0712c9afb" title="Start new measurement if idle or read temp/pressure. " alt="" coords="215,5,347,32"/><area shape="rect" id="node6" href="bmp085_8c.html#a96cbcc561ed98d124a49fcd60b701fb6" title="bmp085_read_eeprom\l_calib" alt="" coords="197,57,365,98"/><area shape="rect" id="node3" href="group__i2c.html#ga68659e03504627925829f2f12c2ec6d2" title="Submit a write only transaction. " alt="" coords="419,5,521,32"/><area shape="rect" id="node5" href="group__i2c.html#gae029fe6bf43eaf9e46428fec7e7b91c7" title="Submit a write/read transaction. " alt="" coords="413,56,527,83"/><area shape="rect" id="node4" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="575,31,665,57"/></map>
+<area shape="rect" id="node2" href="bmp085_8c.html#ad6fe03b188457ab22e7e81f0712c9afb" title="Start new measurement if idle or read temp/pressure. " alt="" coords="215,5,347,32"/><area shape="rect" id="node6" href="bmp085_8c.html#a96cbcc561ed98d124a49fcd60b701fb6" title="bmp085_read_eeprom\l_calib" alt="" coords="197,57,365,98"/><area shape="rect" id="node3" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="419,5,521,32"/><area shape="rect" id="node5" href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction. " alt="" coords="413,56,527,83"/><area shape="rect" id="node4" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="575,31,665,57"/></map>
 </div>
 </p>
 
@@ -349,19 +349,19 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0e9983a0ccda14f96a31ab76d7ebb700"></a>
+<a class="anchor" id="a075628427eb8ce860c727b298b01173c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool_t baro_bmp_enabled</td>
+          <td class="memname">bool baro_bmp_enabled</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="baro__bmp_8c_source.html#l00054">54</a> of file <a class="el" href="baro__bmp_8c_source.html">baro_bmp.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__alt__float_8c_source.html#l00270">alt_kalman()</a>, and <a class="el" href="baro__bmp_8c_source.html#l00059">baro_bmp_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__alt__float_8c_source.html#l00283">alt_kalman()</a>, and <a class="el" href="baro__bmp_8c_source.html#l00059">baro_bmp_init()</a>.</p>
 
 </div>
 </div>
@@ -377,7 +377,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="baro__bmp_8c_source.html#l00055">55</a> of file <a class="el" href="baro__bmp_8c_source.html">baro_bmp.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__alt__float_8c_source.html#l00270">alt_kalman()</a>, and <a class="el" href="baro__bmp_8c_source.html#l00059">baro_bmp_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__alt__float_8c_source.html#l00283">alt_kalman()</a>, and <a class="el" href="baro__bmp_8c_source.html#l00059">baro_bmp_init()</a>.</p>
 
 </div>
 </div>
@@ -393,7 +393,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="baro__bmp_8c_source.html#l00056">56</a> of file <a class="el" href="baro__bmp_8c_source.html">baro_bmp.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__alt__float_8c_source.html#l00270">alt_kalman()</a>, and <a class="el" href="baro__bmp_8c_source.html#l00059">baro_bmp_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__alt__float_8c_source.html#l00283">alt_kalman()</a>, and <a class="el" href="baro__bmp_8c_source.html#l00059">baro_bmp_init()</a>.</p>
 
 </div>
 </div>
@@ -403,7 +403,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="baro__bmp_8c.html">baro_bmp.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:56 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:04 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

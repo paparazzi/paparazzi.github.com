@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -172,17 +172,20 @@ $(document).ready(function(){initNavTree('imu__navstik_8h_source.html','');});
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="imu__navstik_8h.html#structImuNavstik">ImuNavstik</a> <a class="code" href="imu__navstik_8h.html#aa258cf16277362a84912f7ee02b1f4fe">imu_navstik</a>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__navstik_8h.html#a2ddc38f9314a98d94376d14851bb0bcd">imu_navstik_event</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="imu__navstik_8h.html#a38f1122c1ee0701562b490c6e1b60609">   81</a></span>&#160;<span class="preprocessor">#define ImuEvent imu_navstik_event</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* IMU_NAVSTIK_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__navstik_8h.html#ae8576442cc34d0abe63d5a0252213934">imu_navstik_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__navstik_8h.html#a19ff9d9f362cbf94e37d4b360f13fd90">imu_navstik_periodic</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__navstik_8h.html#a2ddc38f9314a98d94376d14851bb0bcd">imu_navstik_event</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* IMU_NAVSTIK_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="mpu60x0__i2c_8h_html_structMpu60x0__I2c"><div class="ttname"><a href="mpu60x0__i2c_8h.html#structMpu60x0__I2c">Mpu60x0_I2c</a></div><div class="ttdef"><b>Definition:</b> <a href="mpu60x0__i2c_8h_source.html#l00054">mpu60x0_i2c.h:54</a></div></div>
 <div class="ttc" id="hmc58xx_8h_html"><div class="ttname"><a href="hmc58xx_8h.html">hmc58xx.h</a></div></div>
+<div class="ttc" id="imu__navstik_8h_html_a19ff9d9f362cbf94e37d4b360f13fd90"><div class="ttname"><a href="imu__navstik_8h.html#a19ff9d9f362cbf94e37d4b360f13fd90">imu_navstik_periodic</a></div><div class="ttdeci">void imu_navstik_periodic(void)</div><div class="ttdoc">Handle all the periodic tasks of the Navstik IMU components. </div><div class="ttdef"><b>Definition:</b> <a href="imu__navstik_8c_source.html#l00096">imu_navstik.c:96</a></div></div>
 <div class="ttc" id="hmc58xx_8h_html_structHmc58xx"><div class="ttname"><a href="hmc58xx_8h.html#structHmc58xx">Hmc58xx</a></div><div class="ttdef"><b>Definition:</b> <a href="hmc58xx_8h_source.html#l00060">hmc58xx.h:60</a></div></div>
 <div class="ttc" id="imu__navstik_8h_html_a9c9a8e2faa2cb65325c12909cf0b28ad"><div class="ttname"><a href="imu__navstik_8h.html#a9c9a8e2faa2cb65325c12909cf0b28ad">ImuNavstik::hmc</a></div><div class="ttdeci">struct Hmc58xx hmc</div><div class="ttdef"><b>Definition:</b> <a href="imu__navstik_8h_source.html#l00075">imu_navstik.h:75</a></div></div>
 <div class="ttc" id="imu_8h_html"><div class="ttname"><a href="imu_8h.html">imu.h</a></div><div class="ttdoc">Inertial Measurement Unit interface. </div></div>
 <div class="ttc" id="mpu60x0__i2c_8h_html"><div class="ttname"><a href="mpu60x0__i2c_8h.html">mpu60x0_i2c.h</a></div><div class="ttdoc">Driver for the MPU-60X0 using I2C. </div></div>
+<div class="ttc" id="imu__navstik_8h_html_ae8576442cc34d0abe63d5a0252213934"><div class="ttname"><a href="imu__navstik_8h.html#ae8576442cc34d0abe63d5a0252213934">imu_navstik_init</a></div><div class="ttdeci">void imu_navstik_init(void)</div><div class="ttdoc">Navstik IMU initializtion of the MPU-60x0 and HMC58xx. </div><div class="ttdef"><b>Definition:</b> <a href="imu__navstik_8c_source.html#l00079">imu_navstik.c:79</a></div></div>
 <div class="ttc" id="imu__navstik_8h_html_structImuNavstik"><div class="ttname"><a href="imu__navstik_8h.html#structImuNavstik">ImuNavstik</a></div><div class="ttdef"><b>Definition:</b> <a href="imu__navstik_8h_source.html#l00073">imu_navstik.h:73</a></div></div>
 <div class="ttc" id="imu__navstik_8h_html_a2ddc38f9314a98d94376d14851bb0bcd"><div class="ttname"><a href="imu__navstik_8h.html#a2ddc38f9314a98d94376d14851bb0bcd">imu_navstik_event</a></div><div class="ttdeci">void imu_navstik_event(void)</div><div class="ttdoc">Handle all the events of the Navstik IMU components. </div><div class="ttdef"><b>Definition:</b> <a href="imu__navstik_8c_source.html#l00109">imu_navstik.c:109</a></div></div>
 <div class="ttc" id="imu__navstik_8h_html_a9998e6bbc3dbec4bb8dce09c47f99cd1"><div class="ttname"><a href="imu__navstik_8h.html#a9998e6bbc3dbec4bb8dce09c47f99cd1">ImuNavstik::mpu</a></div><div class="ttdeci">struct Mpu60x0_I2c mpu</div><div class="ttdef"><b>Definition:</b> <a href="imu__navstik_8h_source.html#l00074">imu_navstik.h:74</a></div></div>
@@ -193,7 +196,7 @@ $(document).ready(function(){initNavTree('imu__navstik_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8b2fa0708e2db44c1b91938af97bac44.html">imu</a></li><li class="navelem"><a class="el" href="imu__navstik_8h.html">imu_navstik.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:32 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:33 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

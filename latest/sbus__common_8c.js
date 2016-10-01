@@ -9,7 +9,7 @@ var sbus__common_8c =
     [ "SBUS_START_BYTE", "sbus__common_8c.html#a2886bfcf0b1cc50fbcd80c207f74131f", null ],
     [ "SBUS_STATUS_GOT_START", "sbus__common_8c.html#a78bd8c830e8bf9a58f90b63b44bb9826", null ],
     [ "SBUS_STATUS_UNINIT", "sbus__common_8c.html#a60a5f13624f378d1e691872cb5533481", null ],
-    [ "decode_sbus_buffer", "sbus__common_8c.html#a6e325da4a4dfc2bd274b47b09febfa1a", null ],
+    [ "decode_sbus_buffer", "sbus__common_8c.html#a4709831177d7353573127a61a5605b36", null ],
     [ "sbus_common_decode_event", "sbus__common_8c.html#a3a369db0efa4a3e8ac7e0b205a5c9740", null ],
     [ "sbus_common_init", "sbus__common_8c.html#aec56b53e5e10156c38ce7d7f6083c71f", null ]
 ];

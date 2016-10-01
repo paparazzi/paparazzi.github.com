@@ -45,13 +45,13 @@ var navdata_8h =
       [ "md", "navdata_8h.html#ab3c7e4096146839e1bfc03bf621b5035", null ]
     ] ],
     [ "navdata_t", "navdata_8h.html#structnavdata__t", [
-      [ "baro_available", "navdata_8h.html#ac833605d3e090a814514dd6eac741fed", null ],
-      [ "baro_calibrated", "navdata_8h.html#a4dd7a6cc22e4071bd8baaf3a6c242e9f", null ],
+      [ "baro_available", "navdata_8h.html#aa9dc36cf6dd4c2c4d09b6b680e92cbf4", null ],
+      [ "baro_calibrated", "navdata_8h.html#a6435345ad995ab0b63fec1770b6f5784", null ],
       [ "bmp180_calib", "navdata_8h.html#a042f3b6ddbb820c35c56701ec59606cc", null ],
       [ "checksum_errors", "navdata_8h.html#ad4723b02ef4d82cb0e164220def6448a", null ],
       [ "fd", "navdata_8h.html#a96d2b033c25b7cbf3c88e1e9046063ed", null ],
-      [ "imu_lost", "navdata_8h.html#a3be16ab436f8d2f8c45a26d42d7c3eab", null ],
-      [ "is_initialized", "navdata_8h.html#a39828fe7042b4fac682b21394a6fa68b", null ],
+      [ "imu_lost", "navdata_8h.html#a2d2cbe0804affd1ddc3695ad2fd4a47e", null ],
+      [ "is_initialized", "navdata_8h.html#aee4148da53efcde3ac9c25c902fd99db", null ],
       [ "last_packet_number", "navdata_8h.html#ae1909345fe9f8e7cb18f3fd73798d3f9", null ],
       [ "lost_imu_frames", "navdata_8h.html#a5d2d491fc8e75995fac67de486d805c1", null ],
       [ "measure", "navdata_8h.html#a2b45754e3e3b73bce18030bc6d2f453b", null ],
@@ -68,7 +68,7 @@ var navdata_8h =
     [ "full_read", "navdata_8h.html#ae43ceafaca46ba7374afd15ed5b3b15a", null ],
     [ "full_write", "navdata_8h.html#a2a56a11d98c367fcfc5bd7afb77fd2ec", null ],
     [ "navdata_height", "navdata_8h.html#a4825abe29fb09e464e1da2f52da7bb3e", null ],
-    [ "navdata_init", "navdata_8h.html#a2dbd35c51b5b13c4e3e5d9a1d86a02f8", null ],
+    [ "navdata_init", "navdata_8h.html#a74e54d7069f2ba9c8f52b8be02c16d3f", null ],
     [ "navdata_update", "navdata_8h.html#aded131295af4c39b10199bae2e560438", null ],
     [ "navdata", "navdata_8h.html#a6fdcf19526b8d0e0fb74565a9de96fc3", null ]
 ];

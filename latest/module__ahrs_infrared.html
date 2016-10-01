@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: AHRS infrared</title>
+<title>Paparazzi UAS: ahrs_infrared module</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -100,20 +100,25 @@ $(document).ready(function(){initNavTree('module__ahrs_infrared.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">AHRS infrared </div>  </div>
+<div class="title">ahrs_infrared module </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Module XML file: <code>ahrs_infrared.xml</code> </p>
+<div class="textblock"><p><b>AHRS infrared.</b></p>
+<p><b></b></p>
 <p>Attitude estimation using infrared sensors detecting the horizon. For fixedwings only:</p><ul>
 <li>GPS course is used as heading.</li>
 <li>ADC channels can be used for gyros.</li>
 </ul>
 <h1><a class="anchor" id="module_load_example__ahrs_infrared"></a>
 Example for airframe file</h1>
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;modules&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;load name=&quot;ahrs_infrared.xml&quot;/&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;&lt;/modules&gt;</div>
-</div><!-- fragment --> <h1><a class="anchor" id="functions__ahrs_infrared"></a>
+<p>Add to your firmware section: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;infrared_adc&quot;/&gt;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&lt;module name=&quot;ahrs_infrared&quot;/&gt;</div>
+</div><!-- fragment --> <h1><a class="anchor" id="dependencies__ahrs_infrared"></a>
+Dependencies</h1>
+<ul>
+<li><a class="el" href="module__infrared_adc.html">infrared_adc module</a> </li>
+</ul>
+<h1><a class="anchor" id="functions__ahrs_infrared"></a>
 Module functions</h1>
 <h2><a class="anchor" id="init_functions"></a>
 Init Functions</h2>
@@ -175,7 +180,7 @@ Raw ahrs_infrared.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:07 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:17 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

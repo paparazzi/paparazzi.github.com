@@ -6,7 +6,7 @@ var airspeed__ms45xx__i2c_8h =
       [ "diff_pressure", "airspeed__ms45xx__i2c_8h.html#a24cbba56fa2ae80156cc3909c350d212", null ],
       [ "pressure_offset", "airspeed__ms45xx__i2c_8h.html#a3081dfe9a588a2851b16f8616989fdf0", null ],
       [ "pressure_scale", "airspeed__ms45xx__i2c_8h.html#a0ef10f297c1075308e954d5ac53f161a", null ],
-      [ "sync_send", "airspeed__ms45xx__i2c_8h.html#ab4686ece47cb0102e1127a1ee3345a3a", null ],
+      [ "sync_send", "airspeed__ms45xx__i2c_8h.html#ac45aaa9559f2d14fd86978de4d66f1a6", null ],
       [ "temperature", "airspeed__ms45xx__i2c_8h.html#ac4e89d130ac06e1a6212db6cc241ef04", null ]
     ] ],
     [ "ms45xx_i2c_event", "airspeed__ms45xx__i2c_8h.html#a2c6e14442d63a2b169a79f88cbcc4fca", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('vn200__serial_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vn200__serial_8c__incl.png" border="0" usemap="#sw_2airborne_2peripherals_2vn200__serial_8c" alt=""/></div>
 <map name="sw_2airborne_2peripherals_2vn200__serial_8c" id="sw_2airborne_2peripherals_2vn200__serial_8c">
-<area shape="rect" id="node2" href="vn200__serial_8h.html" title="Vectornav VN&#45;200 INS subsystem. " alt="" coords="11,95,201,121"/><area shape="rect" id="node4" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="94,169,233,196"/><area shape="rect" id="node6" href="link__device_8h.html" title="generic device header " alt="" coords="283,244,465,271"/><area shape="rect" id="node7" href="inttypes_8h.html" title="inttypes.h" alt="" coords="331,319,417,345"/></map>
+<area shape="rect" id="node2" href="vn200__serial_8h.html" title="Vectornav VN&#45;200 INS subsystem. " alt="" coords="7,95,197,121"/><area shape="rect" id="node4" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="94,169,233,196"/></map>
 </div>
 </div>
 <p><a href="vn200__serial_8c_source.html">Go to the source code of this file.</a></p>
@@ -297,7 +297,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00296">uart_char_available()</a>, and <a class="el" href="vn200__serial_8c_source.html#l00069">vn200_read_buffer()</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__vectornav_8c_source.html#l00107">ins_vectornav_event()</a>.</p>
+<p>Referenced by <a class="el" href="ins__vectornav_8c_source.html#l00125">ins_vectornav_event()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -306,7 +306,7 @@ Functions</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vn200__serial_8c_a3d81e2dac2ecada08b2be854a776b118_cgraph.png" border="0" usemap="#vn200__serial_8c_a3d81e2dac2ecada08b2be854a776b118_cgraph" alt=""/></div>
 <map name="vn200__serial_8c_a3d81e2dac2ecada08b2be854a776b118_cgraph" id="vn200__serial_8c_a3d81e2dac2ecada08b2be854a776b118_cgraph">
-<area shape="rect" id="node2" href="linux_2mcu__periph_2uart__arch_8c.html#abd0dcae4715bc91bdf3369785a9b6c87" title="Check UART for available chars in receive buffer. " alt="" coords="347,5,493,32"/><area shape="rect" id="node3" href="vn200__serial_8c.html#ab4e1d57f1c673bb4b96a74cdb9b63480" title="vn200_read_buffer" alt="" coords="157,56,299,83"/><area shape="rect" id="node4" href="vn200__serial_8c.html#ac1686e2d6ad01507cfe022f2abbc8f7d" title="Packet Collection &amp; state machine. " alt="" coords="368,56,472,83"/><area shape="rect" id="node7" href="linux_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039" title="uart_getch" alt="" coords="375,107,465,133"/><area shape="rect" id="node5" href="vn200__serial_8c.html#ae28fd86966eafa975b528e8253ccfe40" title="Verify checksum. " alt="" coords="541,56,627,83"/><area shape="rect" id="node6" href="vn200__serial_8c.html#a4534893dcb2459077ceb871a388ad0ce" title="Calculates the 16&#45;bit CRC for the given ASCII or binary message. " alt="" coords="675,56,779,83"/></map>
+<area shape="rect" id="node2" href="linux_2mcu__periph_2uart__arch_8c.html#abd0dcae4715bc91bdf3369785a9b6c87" title="Check UART for available chars in receive buffer. " alt="" coords="347,5,493,32"/><area shape="rect" id="node3" href="vn200__serial_8c.html#ab4e1d57f1c673bb4b96a74cdb9b63480" title="vn200_read_buffer" alt="" coords="157,56,299,83"/><area shape="rect" id="node4" href="vn200__serial_8c.html#ac1686e2d6ad01507cfe022f2abbc8f7d" title="Packet Collection &amp; state machine. " alt="" coords="368,56,472,83"/><area shape="rect" id="node7" href="chibios_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039" title="uart_getch" alt="" coords="375,107,465,133"/><area shape="rect" id="node5" href="vn200__serial_8c.html#ae28fd86966eafa975b528e8253ccfe40" title="Verify checksum. " alt="" coords="541,56,627,83"/><area shape="rect" id="node6" href="vn200__serial_8c.html#a4534893dcb2459077ceb871a388ad0ce" title="Calculates the 16&#45;bit CRC for the given ASCII or binary message. " alt="" coords="675,56,779,83"/></map>
 </div>
 </p>
 
@@ -351,7 +351,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="vn200__serial_8c_source.html#l00087">87</a> of file <a class="el" href="vn200__serial_8c_source.html">vn200_serial.c</a>.</p>
 
-<p>References <a class="el" href="vn200__serial_8h_source.html#l00066">VNPacket::calc_chk</a>, <a class="el" href="vn200__serial_8h_source.html#l00057">VNPacket::chksm_error</a>, <a class="el" href="vn200__serial_8h_source.html#l00068">VNPacket::counter</a>, <a class="el" href="vn200__serial_8h_source.html#l00062">VNPacket::datalength</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="vn200__serial_8h_source.html#l00058">VNPacket::hdr_error</a>, <a class="el" href="vn200__serial_8h_source.html#l00056">VNPacket::msg_available</a>, <a class="el" href="vn200__serial_8h_source.html#l00059">VNPacket::msg_buf</a>, <a class="el" href="vn200__serial_8h_source.html#l00061">VNPacket::msg_idx</a>, <a class="el" href="vn200__serial_8h_source.html#l00067">VNPacket::rec_chk</a>, <a class="el" href="vn200__serial_8h_source.html#l00060">VNPacket::status</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="vn200__serial_8c_source.html#l00055">verify_chk()</a>, <a class="el" href="vn200__serial_8h_source.html#l00040">VN_GROUP_BYTES</a>, <a class="el" href="vn200__serial_8h_source.html#l00043">VN_HEADER_SIZE</a>, <a class="el" href="vn200__serial_8h_source.html#l00039">VN_OUTPUT_GROUP</a>, <a class="el" href="vn200__serial_8h_source.html#l00044">VN_PAYLOAD_SIZE</a>, <a class="el" href="vn200__serial_8h_source.html#l00038">VN_SYNC</a>, <a class="el" href="vn200__serial_8h_source.html#l00051">VNMsgData</a>, <a class="el" href="vn200__serial_8h_source.html#l00050">VNMsgGroup</a>, <a class="el" href="vn200__serial_8h_source.html#l00049">VNMsgHeader</a>, and <a class="el" href="vn200__serial_8h_source.html#l00048">VNMsgSync</a>.</p>
+<p>References <a class="el" href="vn200__serial_8h_source.html#l00066">VNPacket::calc_chk</a>, <a class="el" href="vn200__serial_8h_source.html#l00057">VNPacket::chksm_error</a>, <a class="el" href="vn200__serial_8h_source.html#l00068">VNPacket::counter</a>, <a class="el" href="vn200__serial_8h_source.html#l00062">VNPacket::datalength</a>, <a class="el" href="vn200__serial_8h_source.html#l00058">VNPacket::hdr_error</a>, <a class="el" href="vn200__serial_8h_source.html#l00056">VNPacket::msg_available</a>, <a class="el" href="vn200__serial_8h_source.html#l00059">VNPacket::msg_buf</a>, <a class="el" href="vn200__serial_8h_source.html#l00061">VNPacket::msg_idx</a>, <a class="el" href="vn200__serial_8h_source.html#l00067">VNPacket::rec_chk</a>, <a class="el" href="vn200__serial_8h_source.html#l00060">VNPacket::status</a>, <a class="el" href="vn200__serial_8c_source.html#l00055">verify_chk()</a>, <a class="el" href="vn200__serial_8h_source.html#l00040">VN_GROUP_BYTES</a>, <a class="el" href="vn200__serial_8h_source.html#l00043">VN_HEADER_SIZE</a>, <a class="el" href="vn200__serial_8h_source.html#l00039">VN_OUTPUT_GROUP</a>, <a class="el" href="vn200__serial_8h_source.html#l00044">VN_PAYLOAD_SIZE</a>, <a class="el" href="vn200__serial_8h_source.html#l00038">VN_SYNC</a>, <a class="el" href="vn200__serial_8h_source.html#l00051">VNMsgData</a>, <a class="el" href="vn200__serial_8h_source.html#l00050">VNMsgGroup</a>, <a class="el" href="vn200__serial_8h_source.html#l00049">VNMsgHeader</a>, and <a class="el" href="vn200__serial_8h_source.html#l00048">VNMsgSync</a>.</p>
 
 <p>Referenced by <a class="el" href="vn200__serial_8c_source.html#l00069">vn200_read_buffer()</a>.</p>
 
@@ -403,7 +403,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="vn200__serial_8c_source.html#l00069">69</a> of file <a class="el" href="vn200__serial_8c_source.html">vn200_serial.c</a>.</p>
 
-<p>References <a class="el" href="vn200__serial_8h_source.html#l00056">VNPacket::msg_available</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00296">uart_char_available()</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00287">uart_getch()</a>, and <a class="el" href="vn200__serial_8c_source.html#l00087">vn200_parse()</a>.</p>
+<p>References <a class="el" href="vn200__serial_8h_source.html#l00056">VNPacket::msg_available</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00296">uart_char_available()</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00822">uart_getch()</a>, and <a class="el" href="vn200__serial_8c_source.html#l00087">vn200_parse()</a>.</p>
 
 <p>Referenced by <a class="el" href="vn200__serial_8c_source.html#l00077">vn200_event()</a>.</p>
 
@@ -414,7 +414,7 @@ Functions</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vn200__serial_8c_ab4e1d57f1c673bb4b96a74cdb9b63480_cgraph.png" border="0" usemap="#vn200__serial_8c_ab4e1d57f1c673bb4b96a74cdb9b63480_cgraph" alt=""/></div>
 <map name="vn200__serial_8c_ab4e1d57f1c673bb4b96a74cdb9b63480_cgraph" id="vn200__serial_8c_ab4e1d57f1c673bb4b96a74cdb9b63480_cgraph">
-<area shape="rect" id="node2" href="linux_2mcu__periph_2uart__arch_8c.html#abd0dcae4715bc91bdf3369785a9b6c87" title="Check UART for available chars in receive buffer. " alt="" coords="195,5,341,32"/><area shape="rect" id="node3" href="linux_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039" title="uart_getch" alt="" coords="223,56,313,83"/><area shape="rect" id="node4" href="vn200__serial_8c.html#ac1686e2d6ad01507cfe022f2abbc8f7d" title="Packet Collection &amp; state machine. " alt="" coords="216,107,320,133"/><area shape="rect" id="node5" href="vn200__serial_8c.html#ae28fd86966eafa975b528e8253ccfe40" title="Verify checksum. " alt="" coords="389,107,475,133"/><area shape="rect" id="node6" href="vn200__serial_8c.html#a4534893dcb2459077ceb871a388ad0ce" title="Calculates the 16&#45;bit CRC for the given ASCII or binary message. " alt="" coords="523,107,627,133"/></map>
+<area shape="rect" id="node2" href="linux_2mcu__periph_2uart__arch_8c.html#abd0dcae4715bc91bdf3369785a9b6c87" title="Check UART for available chars in receive buffer. " alt="" coords="195,5,341,32"/><area shape="rect" id="node3" href="chibios_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039" title="uart_getch" alt="" coords="223,56,313,83"/><area shape="rect" id="node4" href="vn200__serial_8c.html#ac1686e2d6ad01507cfe022f2abbc8f7d" title="Packet Collection &amp; state machine. " alt="" coords="216,107,320,133"/><area shape="rect" id="node5" href="vn200__serial_8c.html#ae28fd86966eafa975b528e8253ccfe40" title="Verify checksum. " alt="" coords="389,107,475,133"/><area shape="rect" id="node6" href="vn200__serial_8c.html#a4534893dcb2459077ceb871a388ad0ce" title="Calculates the 16&#45;bit CRC for the given ASCII or binary message. " alt="" coords="523,107,627,133"/></map>
 </div>
 </p>
 
@@ -437,7 +437,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="vn200__serial_8c.html">vn200_serial.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:00 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:08 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

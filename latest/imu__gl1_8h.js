@@ -5,7 +5,8 @@ var imu__gl1_8h =
       [ "gyro_l3g", "imu__gl1_8h.html#a6e0aa232ed00fc95d89798753f417d0f", null ],
       [ "mag_hmc", "imu__gl1_8h.html#a5b769b1af215648308d5bb587ede4517", null ]
     ] ],
-    [ "ImuEvent", "imu__gl1_8h.html#a38f1122c1ee0701562b490c6e1b60609", null ],
-    [ "imu_gl1_i2c_event", "imu__gl1_8h.html#a08db0d7b92f2f359a5a2bc939a197a5f", null ],
+    [ "imu_gl1_event", "imu__gl1_8h.html#accca4f4c7d6f0ecd6cd6f210818c4b1b", null ],
+    [ "imu_gl1_init", "imu__gl1_8h.html#a81309c506e7d40f9bcf314ced6c19596", null ],
+    [ "imu_gl1_periodic", "imu__gl1_8h.html#a80f3bffaf9eb81ccbca95d0c5b8ae5ef", null ],
     [ "imu_gl1", "imu__gl1_8h.html#a90dfc043b814ac32f412ecdb1da66b85", null ]
 ];

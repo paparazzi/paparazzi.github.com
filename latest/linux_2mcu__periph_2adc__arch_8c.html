@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -149,10 +149,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a289883844d6749adab1cee5aabe41824"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2adc__arch_8c.html#a289883844d6749adab1cee5aabe41824">adc_buf_channel</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> adc_channel, struct <a class="el" href="adc_8h.html#structadc__buf">adc_buf</a> *s, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> av_nb_sample)</td></tr>
 <tr class="memdesc:a289883844d6749adab1cee5aabe41824"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a buffer to be used to store the specified converted channel Usage:  <a href="#a289883844d6749adab1cee5aabe41824">More...</a><br /></td></tr>
 <tr class="separator:a289883844d6749adab1cee5aabe41824"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab376b08d349863388fb0b17cb14c8caa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2adc__arch_8c.html#ab376b08d349863388fb0b17cb14c8caa">adc_enable</a> (struct <a class="el" href="linux_2mcu__periph_2adc__arch_8h.html#structadc__t">adc_t</a> *adc, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a>)</td></tr>
+<tr class="memitem:ab376b08d349863388fb0b17cb14c8caa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2adc__arch_8c.html#ab376b08d349863388fb0b17cb14c8caa">adc_enable</a> (struct <a class="el" href="linux_2mcu__periph_2adc__arch_8h.html#structadc__t">adc_t</a> *adc, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> value)</td></tr>
 <tr class="memdesc:ab376b08d349863388fb0b17cb14c8caa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start or stop the ADC readings.  <a href="#ab376b08d349863388fb0b17cb14c8caa">More...</a><br /></td></tr>
 <tr class="separator:ab376b08d349863388fb0b17cb14c8caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20ceeab2fc8a81cfb9ec2261a8b57234"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2adc__arch_8c.html#a20ceeab2fc8a81cfb9ec2261a8b57234">adc_read</a> (struct <a class="el" href="linux_2mcu__periph_2adc__arch_8h.html#structadc__t">adc_t</a> *adc, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *<a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a48b4f0842338aeafa79aeab314f33696">buf</a>, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> size)</td></tr>
+<tr class="memitem:a20ceeab2fc8a81cfb9ec2261a8b57234"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2adc__arch_8c.html#a20ceeab2fc8a81cfb9ec2261a8b57234">adc_read</a> (struct <a class="el" href="linux_2mcu__periph_2adc__arch_8h.html#structadc__t">adc_t</a> *adc, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *buf, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> size)</td></tr>
 <tr class="memdesc:a20ceeab2fc8a81cfb9ec2261a8b57234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the ADC buffer from the driver.  <a href="#a20ceeab2fc8a81cfb9ec2261a8b57234">More...</a><br /></td></tr>
 <tr class="separator:a20ceeab2fc8a81cfb9ec2261a8b57234"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -196,19 +196,6 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="linux_2mcu__periph_2adc__arch_8c_source.html#l00091">91</a> of file <a class="el" href="linux_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="adc__generic_8c_source.html#l00030">adc_generic_init()</a>, <a class="el" href="airspeed__adc_8c_source.html#l00057">airspeed_adc_init()</a>, <a class="el" href="aoa__adc_8c_source.html#l00066">aoa_adc_init()</a>, <a class="el" href="booz_2baro__board_8c_source.html#l00065">baro_init()</a>, <a class="el" href="electrical_8c_source.html#l00099">electrical_init()</a>, <a class="el" href="enose_8c_source.html#l00025">enose_init()</a>, <a class="el" href="humid__hih_8c_source.html#l00053">humid_hih_init()</a>, <a class="el" href="imu__analog_8c_source.html#l00030">imu_impl_init()</a>, <a class="el" href="infrared__adc_8c_source.html#l00071">infrared_adc_init()</a>, <a class="el" href="light__solar_8c_source.html#l00054">light_solar_init()</a>, <a class="el" href="light__temt_8c_source.html#l00049">light_temt_init()</a>, <a class="el" href="mf__ptu_8c_source.html#l00077">mf_ptu_init()</a>, <a class="el" href="sonar__adc_8c_source.html#l00056">sonar_adc_init()</a>, <a class="el" href="temp__adc_8c_source.html#l00106">temp_adc_init()</a>, and <a class="el" href="temp__tcouple__adc_8c_source.html#l00056">temp_tcouple_adc_init()</a>.</p>
-
-<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="linux_2mcu__periph_2adc__arch_8c_a289883844d6749adab1cee5aabe41824_icgraph.png" border="0" usemap="#linux_2mcu__periph_2adc__arch_8c_a289883844d6749adab1cee5aabe41824_icgraph" alt=""/></div>
-<map name="linux_2mcu__periph_2adc__arch_8c_a289883844d6749adab1cee5aabe41824_icgraph" id="linux_2mcu__periph_2adc__arch_8c_a289883844d6749adab1cee5aabe41824_icgraph">
-<area shape="rect" id="node2" href="adc__generic_8c.html#a5d3cd37fdd77f995b25ed0837831e829" title="adc_generic_init" alt="" coords="203,5,329,32"/><area shape="rect" id="node3" href="airspeed__adc_8h.html#afa4a95f4df116ecb7c849a98d941d24d" title="airspeed_adc_init" alt="" coords="199,56,333,83"/><area shape="rect" id="node4" href="aoa__adc_8h.html#a32183c1b867389ea1b510c6a9bb6bb52" title="aoa_adc_init" alt="" coords="215,107,317,133"/><area shape="rect" id="node5" href="booz_2baro__board_8c.html#a9b25546908842f1d38fc56e438d46e21" title="baro_init" alt="" coords="227,157,305,184"/><area shape="rect" id="node6" href="electrical_8h.html#ac5e9a56281268bdf6ddec2143b25f16a" title="electrical_init" alt="" coords="213,208,319,235"/><area shape="rect" id="node11" href="enose_8c.html#a1c7e3e1d0fe5a0d5e5fe1364b1f2a100" title="enose_init" alt="" coords="223,259,309,285"/><area shape="rect" id="node12" href="humid__hih_8h.html#acb068afb2e3c2f0e3c6c1a7c3abeaddf" title="humid_hih_init" alt="" coords="209,309,323,336"/><area shape="rect" id="node13" href="imu__analog_8c.html#ad32faae58e391642ec8048cb11011998" title="must be defined by underlying hardware " alt="" coords="213,360,319,387"/><area shape="rect" id="node14" href="subsystems_2sensors_2infrared__adc_8h.html#afd9b914e78df4722702ab0113752a2b0" title="Initialisation of ir. " alt="" coords="203,411,329,437"/><area shape="rect" id="node16" href="light__solar_8h.html#ac0e039b9f8ad2272b10b4129733d1114" title="light_solar_init" alt="" coords="209,461,323,488"/><area shape="rect" id="node17" href="light__temt_8h.html#a0cdfdd43940fde9fe395ea50cbacd148" title="light_temt_init" alt="" coords="209,512,323,539"/><area shape="rect" id="node18" href="mf__ptu_8h.html#a0f4e02c4cf993d86c38de1bebc67fcd5" title="Data acquisition module for Meteo France PTU board. " alt="" coords="219,563,313,589"/><area shape="rect" id="node19" href="sonar__adc_8h.html#a466b5be82e90d99245cf4be834f64c98" title="sonar_adc_init" alt="" coords="209,613,323,640"/><area shape="rect" id="node20" href="temp__adc_8h.html#a266db1bf5ea82dcb94e97eb562c18473" title="temp_adc_init" alt="" coords="210,664,322,691"/><area shape="rect" id="node21" href="temp__tcouple__adc_8h.html#ad9927446cc531cf79cbd60506e2b715c" title="temp_tcouple_adc_init" alt="" coords="183,715,349,741"/><area shape="rect" id="node7" href="rotorcraft_2main__fbw_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="main_init" alt="" coords="406,183,486,209"/><area shape="rect" id="node9" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="411,233,481,260"/><area shape="rect" id="node8" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="551,183,605,209"/><area shape="rect" id="node10" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="543,233,613,260"/><area shape="rect" id="node15" href="infrared__adc_8c.html#a914de0b4811e25ca619529374d7fe3ba" title="infrared_init" alt="" coords="397,411,495,437"/></map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="aa1ab472bdad0ed97f2baf77685cd7d36"></a>
@@ -247,25 +234,25 @@ Functions</h2></td></tr>
 
 <p>Referenced by <a class="el" href="linux_2mcu__periph_2adc__arch_8c_source.html#l00078">adc_init()</a>.</p>
 
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="linux_2mcu__periph_2adc__arch_8c_aa1ab472bdad0ed97f2baf77685cd7d36_cgraph.png" border="0" usemap="#linux_2mcu__periph_2adc__arch_8c_aa1ab472bdad0ed97f2baf77685cd7d36_cgraph" alt=""/></div>
 <map name="linux_2mcu__periph_2adc__arch_8c_aa1ab472bdad0ed97f2baf77685cd7d36_cgraph" id="linux_2mcu__periph_2adc__arch_8c_aa1ab472bdad0ed97f2baf77685cd7d36_cgraph">
 <area shape="rect" id="node2" href="linux_2mcu__periph_2adc__arch_8c.html#ad3e249549a50a2d6c16d1bb1ab3be7e9" title="Write an int to a sysfs file. " alt="" coords="155,5,269,32"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="linux_2mcu__periph_2adc__arch_8c_aa1ab472bdad0ed97f2baf77685cd7d36_icgraph.png" border="0" usemap="#linux_2mcu__periph_2adc__arch_8c_aa1ab472bdad0ed97f2baf77685cd7d36_icgraph" alt=""/></div>
 <map name="linux_2mcu__periph_2adc__arch_8c_aa1ab472bdad0ed97f2baf77685cd7d36_icgraph" id="linux_2mcu__periph_2adc__arch_8c_aa1ab472bdad0ed97f2baf77685cd7d36_icgraph">
-<area shape="rect" id="node2" href="adc_8h.html#a2b815e6730e8723a6d1d06d9ef8f31c0" title="Starts conversions. " alt="" coords="155,56,225,83"/><area shape="rect" id="node3" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="273,56,349,83"/><area shape="rect" id="node4" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="410,5,465,32"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="397,56,477,83"/><area shape="rect" id="node7" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="403,107,472,133"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="533,56,588,83"/><area shape="rect" id="node8" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="525,107,596,133"/></map>
+<area shape="rect" id="node2" href="linux_2mcu__periph_2adc__arch_8c.html#a2b815e6730e8723a6d1d06d9ef8f31c0" title="Initialize the ADC. " alt="" coords="155,5,225,32"/></map>
 </div>
 </p>
 
@@ -310,22 +297,22 @@ Functions</h2></td></tr>
 
 <p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00068">sonar_bebop_read()</a>.</p>
 
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="linux_2mcu__periph_2adc__arch_8c_ab376b08d349863388fb0b17cb14c8caa_cgraph.png" border="0" usemap="#linux_2mcu__periph_2adc__arch_8c_ab376b08d349863388fb0b17cb14c8caa_cgraph" alt=""/></div>
 <map name="linux_2mcu__periph_2adc__arch_8c_ab376b08d349863388fb0b17cb14c8caa_cgraph" id="linux_2mcu__periph_2adc__arch_8c_ab376b08d349863388fb0b17cb14c8caa_cgraph">
 <area shape="rect" id="node2" href="linux_2mcu__periph_2adc__arch_8c.html#ad3e249549a50a2d6c16d1bb1ab3be7e9" title="Write an int to a sysfs file. " alt="" coords="148,5,263,32"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="linux_2mcu__periph_2adc__arch_8c_ab376b08d349863388fb0b17cb14c8caa_icgraph.png" border="0" usemap="#linux_2mcu__periph_2adc__arch_8c_ab376b08d349863388fb0b17cb14c8caa_icgraph" alt=""/></div>
 <map name="linux_2mcu__periph_2adc__arch_8c_ab376b08d349863388fb0b17cb14c8caa_icgraph" id="linux_2mcu__periph_2adc__arch_8c_ab376b08d349863388fb0b17cb14c8caa_icgraph">
 <area shape="rect" id="node2" href="sonar__bebop_8c.html#a7648a20e75be8d87a28e91d8857edf1c" title="Read ADC value to update sonar measurement. " alt="" coords="148,5,289,32"/><area shape="rect" id="node3" href="sonar__bebop_8h.html#a23dcc242803b0762d120696ddd57e98f" title="sonar_bebop_init" alt="" coords="337,5,468,32"/></map>
@@ -353,16 +340,16 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="linux_2mcu__periph_2adc__arch_8c_source.html#l00078">78</a> of file <a class="el" href="linux_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="mcu_8c_source.html#l00071">mcu_init()</a>.</p>
+<p>References <a class="el" href="linux_2mcu__periph_2adc__arch_8c_source.html#l00148">adc_dev_init()</a>.</p>
 
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="linux_2mcu__periph_2adc__arch_8c_a2b815e6730e8723a6d1d06d9ef8f31c0_icgraph.png" border="0" usemap="#linux_2mcu__periph_2adc__arch_8c_a2b815e6730e8723a6d1d06d9ef8f31c0_icgraph" alt=""/></div>
-<map name="linux_2mcu__periph_2adc__arch_8c_a2b815e6730e8723a6d1d06d9ef8f31c0_icgraph" id="linux_2mcu__periph_2adc__arch_8c_a2b815e6730e8723a6d1d06d9ef8f31c0_icgraph">
-<area shape="rect" id="node2" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="124,56,200,83"/><area shape="rect" id="node3" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="261,5,315,32"/><area shape="rect" id="node4" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="248,56,328,83"/><area shape="rect" id="node6" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="253,107,323,133"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="384,56,439,83"/><area shape="rect" id="node7" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="376,107,447,133"/></map>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="linux_2mcu__periph_2adc__arch_8c_a2b815e6730e8723a6d1d06d9ef8f31c0_cgraph.png" border="0" usemap="#linux_2mcu__periph_2adc__arch_8c_a2b815e6730e8723a6d1d06d9ef8f31c0_cgraph" alt=""/></div>
+<map name="linux_2mcu__periph_2adc__arch_8c_a2b815e6730e8723a6d1d06d9ef8f31c0_cgraph" id="linux_2mcu__periph_2adc__arch_8c_a2b815e6730e8723a6d1d06d9ef8f31c0_cgraph">
+<area shape="rect" id="node2" href="linux_2mcu__periph_2adc__arch_8c.html#aa1ab472bdad0ed97f2baf77685cd7d36" title="Initialize an ADC device. " alt="" coords="124,5,225,32"/><area shape="rect" id="node3" href="linux_2mcu__periph_2adc__arch_8c.html#ad3e249549a50a2d6c16d1bb1ab3be7e9" title="Write an int to a sysfs file. " alt="" coords="273,5,388,32"/></map>
 </div>
 </p>
 
@@ -414,11 +401,11 @@ Functions</h2></td></tr>
 
 <p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00068">sonar_bebop_read()</a>.</p>
 
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="linux_2mcu__periph_2adc__arch_8c_a20ceeab2fc8a81cfb9ec2261a8b57234_icgraph.png" border="0" usemap="#linux_2mcu__periph_2adc__arch_8c_a20ceeab2fc8a81cfb9ec2261a8b57234_icgraph" alt=""/></div>
 <map name="linux_2mcu__periph_2adc__arch_8c_a20ceeab2fc8a81cfb9ec2261a8b57234_icgraph" id="linux_2mcu__periph_2adc__arch_8c_a20ceeab2fc8a81cfb9ec2261a8b57234_icgraph">
 <area shape="rect" id="node2" href="sonar__bebop_8c.html#a7648a20e75be8d87a28e91d8857edf1c" title="Read ADC value to update sonar measurement. " alt="" coords="135,5,276,32"/><area shape="rect" id="node3" href="sonar__bebop_8h.html#a23dcc242803b0762d120696ddd57e98f" title="sonar_bebop_init" alt="" coords="324,5,455,32"/></map>
@@ -481,14 +468,14 @@ Functions</h2></td></tr>
 
 <p>Referenced by <a class="el" href="linux_2mcu__periph_2adc__arch_8c_source.html#l00148">adc_dev_init()</a>, and <a class="el" href="linux_2mcu__periph_2adc__arch_8c_source.html#l00101">adc_enable()</a>.</p>
 
-<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="linux_2mcu__periph_2adc__arch_8c_ad3e249549a50a2d6c16d1bb1ab3be7e9_icgraph.png" border="0" usemap="#linux_2mcu__periph_2adc__arch_8c_ad3e249549a50a2d6c16d1bb1ab3be7e9_icgraph" alt=""/></div>
 <map name="linux_2mcu__periph_2adc__arch_8c_ad3e249549a50a2d6c16d1bb1ab3be7e9_icgraph" id="linux_2mcu__periph_2adc__arch_8c_ad3e249549a50a2d6c16d1bb1ab3be7e9_icgraph">
-<area shape="rect" id="node2" href="linux_2mcu__periph_2adc__arch_8c.html#aa1ab472bdad0ed97f2baf77685cd7d36" title="Initialize an ADC device. " alt="" coords="168,56,269,83"/><area shape="rect" id="node10" href="linux_2mcu__periph_2adc__arch_8h.html#ab376b08d349863388fb0b17cb14c8caa" title="Start or stop the ADC readings. " alt="" coords="171,107,266,133"/><area shape="rect" id="node3" href="adc_8h.html#a2b815e6730e8723a6d1d06d9ef8f31c0" title="Starts conversions. " alt="" coords="353,56,423,83"/><area shape="rect" id="node4" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="534,56,610,83"/><area shape="rect" id="node5" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="698,5,753,32"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="685,56,765,83"/><area shape="rect" id="node8" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="691,107,760,133"/><area shape="rect" id="node7" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="821,56,876,83"/><area shape="rect" id="node9" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="813,107,884,133"/><area shape="rect" id="node11" href="sonar__bebop_8c.html#a7648a20e75be8d87a28e91d8857edf1c" title="Read ADC value to update sonar measurement. " alt="" coords="317,107,459,133"/><area shape="rect" id="node12" href="sonar__bebop_8h.html#a23dcc242803b0762d120696ddd57e98f" title="sonar_bebop_init" alt="" coords="507,107,637,133"/></map>
+<area shape="rect" id="node2" href="linux_2mcu__periph_2adc__arch_8c.html#aa1ab472bdad0ed97f2baf77685cd7d36" title="Initialize an ADC device. " alt="" coords="168,5,269,32"/><area shape="rect" id="node4" href="linux_2mcu__periph_2adc__arch_8h.html#ab376b08d349863388fb0b17cb14c8caa" title="Start or stop the ADC readings. " alt="" coords="171,56,266,83"/><area shape="rect" id="node3" href="linux_2mcu__periph_2adc__arch_8c.html#a2b815e6730e8723a6d1d06d9ef8f31c0" title="Initialize the ADC. " alt="" coords="353,5,423,32"/><area shape="rect" id="node5" href="sonar__bebop_8c.html#a7648a20e75be8d87a28e91d8857edf1c" title="Read ADC value to update sonar measurement. " alt="" coords="317,56,459,83"/><area shape="rect" id="node6" href="sonar__bebop_8h.html#a23dcc242803b0762d120696ddd57e98f" title="sonar_bebop_init" alt="" coords="507,56,637,83"/></map>
 </div>
 </p>
 
@@ -500,7 +487,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_92fbf38b8c893a0928a3445a75d0ac01.html">linux</a></li><li class="navelem"><a class="el" href="dir_7cedabfb4d36d0fdf06823c7fd9084fc.html">mcu_periph</a></li><li class="navelem"><a class="el" href="linux_2mcu__periph_2adc__arch_8c.html">adc_arch.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:33 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:36 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

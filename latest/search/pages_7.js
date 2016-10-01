@@ -1,10 +1,13 @@
 var searchData=
 [
-  ['hackhd_20control',['HackHD control',['../module__hackhd.html',1,'onboard_modules']]],
-  ['helicopter_20swashplate_20mixing',['Helicopter Swashplate Mixing',['../module__heli_swashplate_mixing.html',1,'onboard_modules']]],
-  ['hih_2d4030_20humidity_20sensor',['HIH-4030 humidity sensor',['../module__humid_hih.html',1,'onboard_modules']]],
-  ['hmc5843_20magnetometer',['hmc5843 magnetometer',['../module__mag_hmc5843.html',1,'onboard_modules']]],
-  ['hmc58xx_20magnetometer',['HMC58xx magnetometer',['../module__mag_hmc58xx.html',1,'onboard_modules']]],
-  ['hovers_20the_20drone_20based_20on_20optical_20flow_20made_20for_20linux_20video_20devices',['Hovers the drone based on optical flow made for Linux video Devices',['../module__opticflow_hover.html',1,'onboard_modules']]],
-  ['hygrosens_20temod_2di2c_2drx_20temperature_20sensor',['Hygrosens TEMOD-I2C-Rx temperature sensor',['../module__temp_temod.html',1,'onboard_modules']]]
+  ['hackhd_20module',['hackhd module',['../module__hackhd.html',1,'onboard_modules']]],
+  ['heli_5fswashplate_5fmixing_20module',['heli_swashplate_mixing module',['../module__heli_swashplate_mixing.html',1,'onboard_modules']]],
+  ['heli_5fthrottle_5fcurve_20module',['heli_throttle_curve module',['../module__heli_throttle_curve.html',1,'onboard_modules']]],
+  ['hott_5ftelemetry_20module',['hott_telemetry module',['../module__hott_telemetry.html',1,'onboard_modules']]],
+  ['humid_5fdpicco_20module',['humid_dpicco module',['../module__humid_dpicco.html',1,'onboard_modules']]],
+  ['humid_5fhih_20module',['humid_hih module',['../module__humid_hih.html',1,'onboard_modules']]],
+  ['humid_5fhtm_5fb71_20module',['humid_htm_b71 module',['../module__humid_htm_b71.html',1,'onboard_modules']]],
+  ['humid_5fpcap01_20module',['humid_pcap01 module',['../module__humid_pcap01.html',1,'onboard_modules']]],
+  ['humid_5fsht_20module',['humid_sht module',['../module__humid_sht.html',1,'onboard_modules']]],
+  ['humid_5fsht_5fi2c_20module',['humid_sht_i2c module',['../module__humid_sht_i2c.html',1,'onboard_modules']]]
 ];

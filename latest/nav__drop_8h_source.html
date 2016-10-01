@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -141,19 +141,19 @@ $(document).ready(function(){initNavTree('nav__drop_8h_source.html','');});
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">extern</span> unit_t <a class="code" href="nav__drop_8h.html#ab65dbfc40970aaba82469b775a829995">nav_drop_update_release</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp_target);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">extern</span> unit_t <a class="code" href="nav__drop_8h.html#a0e9ac240f39dc33492426056b1299227">nav_drop_shoot</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="nav__drop_8h.html#a30c0e5e0fbaf12b1315a61a2ac7583e8">nav_drop_trigger_delay</a>, <a class="code" href="nav__drop_8h.html#a833c2bc4de81c7daf803571457ac1d30">nav_drop_start_qdr</a>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">extern</span> bool_t <a class="code" href="nav__drop_8h.html#a82702082821f9c3cd860e753a13218f0">compute_alignment</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> w1, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> w2, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> start, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> end, <span class="keywordtype">float</span> d_before, <span class="keywordtype">float</span> d_after);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code" href="nav__drop_8h.html#ab242b1072e38faf0e67e1da07e00f9ab">compute_alignment</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> w1, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> w2, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> start, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> end, <span class="keywordtype">float</span> d_before, <span class="keywordtype">float</span> d_after);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="nav__drop_8h.html#ac9cb0754e785ce74d50e83ee4fdcb6d0">   42</a></span>&#160;<span class="preprocessor">#define NavDropComputeApproach(_target, _start, _radius) nav_drop_compute_approach(_target, _start, _radius)</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="nav__drop_8h.html#a0afc3fc4b72b658b6bff7826116db8ee">   43</a></span>&#160;<span class="preprocessor">#define NavDropUpdateRelease(_wp) nav_drop_update_release(_wp)</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="nav__drop_8h.html#a4529b8a7a5a48feb03bcf1611dcfdec6">   44</a></span>&#160;<span class="preprocessor">#define NavDropShoot() nav_drop_shoot()</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="nav__drop_8h.html#a587bf7d4a842e769c5c865d19fd31d8e">   45</a></span>&#160;<span class="preprocessor">#define NavDropCloseHatch() ({ ap_state-&gt;commands[COMMAND_HATCH] = MIN_PPRZ; })</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="nav__drop_8h.html#a587bf7d4a842e769c5c865d19fd31d8e">   45</a></span>&#160;<span class="preprocessor">#define NavDropCloseHatch() ({ imcu_set_command(COMMAND_HATCH, MIN_PPRZ); })</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="nav__drop_8h.html#aa5f82371a90592d2e1bc26a5a8a0e2a9">   46</a></span>&#160;<span class="preprocessor">#define NavDropAligned() Qdr(DegOfRad(nav_drop_qdr_aligned))</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif // NAV_DROP_H</span></div>
 <div class="ttc" id="nav__drop_8h_html_a833c2bc4de81c7daf803571457ac1d30"><div class="ttname"><a href="nav__drop_8h.html#a833c2bc4de81c7daf803571457ac1d30">nav_drop_start_qdr</a></div><div class="ttdeci">float nav_drop_start_qdr</div></div>
-<div class="ttc" id="nav__drop_8h_html_a82702082821f9c3cd860e753a13218f0"><div class="ttname"><a href="nav__drop_8h.html#a82702082821f9c3cd860e753a13218f0">compute_alignment</a></div><div class="ttdeci">bool_t compute_alignment(uint8_t w1, uint8_t w2, uint8_t start, uint8_t end, float d_before, float d_after)</div></div>
 <div class="ttc" id="chemotaxis_8c_html_a5050a760c11da521cd4aee6336f6529f"><div class="ttname"><a href="chemotaxis_8c.html#a5050a760c11da521cd4aee6336f6529f">radius</a></div><div class="ttdeci">static float radius</div><div class="ttdef"><b>Definition:</b> <a href="chemotaxis_8c_source.html#l00015">chemotaxis.c:15</a></div></div>
 <div class="ttc" id="nav__drop_8h_html_a0e9ac240f39dc33492426056b1299227"><div class="ttname"><a href="nav__drop_8h.html#a0e9ac240f39dc33492426056b1299227">nav_drop_shoot</a></div><div class="ttdeci">unit_t nav_drop_shoot(void)</div></div>
+<div class="ttc" id="nav__drop_8h_html_ab242b1072e38faf0e67e1da07e00f9ab"><div class="ttname"><a href="nav__drop_8h.html#ab242b1072e38faf0e67e1da07e00f9ab">compute_alignment</a></div><div class="ttdeci">bool compute_alignment(uint8_t w1, uint8_t w2, uint8_t start, uint8_t end, float d_before, float d_after)</div></div>
 <div class="ttc" id="nav__drop_8h_html_a30c0e5e0fbaf12b1315a61a2ac7583e8"><div class="ttname"><a href="nav__drop_8h.html#a30c0e5e0fbaf12b1315a61a2ac7583e8">nav_drop_trigger_delay</a></div><div class="ttdeci">float nav_drop_trigger_delay</div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
@@ -166,7 +166,7 @@ $(document).ready(function(){initNavTree('nav__drop_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_984e899df90dd104b2eabcdbb76ec71f.html">nav</a></li><li class="navelem"><a class="el" href="nav__drop_8h.html">nav_drop.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:25 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:26 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

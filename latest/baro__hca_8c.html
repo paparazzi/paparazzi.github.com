@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('baro__hca_8c.html','');});
 <code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
-<code>#include &quot;messages.h&quot;</code><br />
+<code>#include &quot;pprzlink/messages.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for baro_hca.c:</div>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('baro__hca_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="baro__hca_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2sensors_2baro__hca_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2sensors_2baro__hca_8c" id="sw_2airborne_2modules_2sensors_2baro__hca_8c">
-<area shape="rect" id="node2" href="baro__hca_8h.html" title="sensors/baro_hca.h" alt="" coords="195,102,342,129"/><area shape="rect" id="node4" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="93,191,223,218"/><area shape="rect" id="node6" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="1119,102,1253,129"/><area shape="rect" id="node9" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="493,191,631,218"/><area shape="rect" id="node14" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="889,95,1043,136"/><area shape="rect" id="node11" href="link__device_8h.html" title="generic device header " alt="" coords="700,459,883,486"/><area shape="rect" id="node12" href="inttypes_8h.html" title="inttypes.h" alt="" coords="878,541,963,568"/><area shape="rect" id="node17" href="pprz__transport_8h.html" title="Building and parsing Paparazzi frames. " alt="" coords="600,273,753,315"/><area shape="rect" id="node21" href="pprzlog__transport_8h.html" title="Protocol for on&#45;board data logger with timestamp. " alt="" coords="1292,273,1445,315"/><area shape="rect" id="node26" href="xbee_8h.html" title="Maxstream XBee serial input and output. " alt="" coords="948,184,1101,225"/><area shape="rect" id="node28" href="w5100_8h.html" title="W5100 ethernet chip I/O. " alt="" coords="716,184,869,225"/><area shape="rect" id="node18" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="600,363,753,404"/><area shape="rect" id="node20" href="transport_8h.html" title="generic transport header " alt="" coords="837,363,991,404"/><area shape="rect" id="node22" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1050,370,1221,397"/><area shape="rect" id="node27" href="xbee24_8h.html" title="Configuration for 2.4GHz &quot;series 1&quot; and 900MHz modules. " alt="" coords="1115,273,1268,315"/></map>
+<area shape="rect" id="node2" href="baro__hca_8h.html" title="sensors/baro_hca.h" alt="" coords="158,102,305,129"/><area shape="rect" id="node4" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="55,191,186,218"/><area shape="rect" id="node6" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="748,102,883,129"/><area shape="rect" id="node9" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="261,191,399,218"/><area shape="rect" id="node13" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="571,95,724,136"/><area shape="rect" id="node14" href="inttypes_8h.html" title="inttypes.h" alt="" coords="962,191,1047,218"/><area shape="rect" id="node17" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="784,184,937,225"/></map>
 </div>
 </div>
 <p><a href="baro__hca_8c_source.html">Go to the source code of this file.</a></p>
@@ -164,8 +164,8 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:abec65ae5a2edf49f154c39ae5b81dfde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__hca_8c.html#abec65ae5a2edf49f154c39ae5b81dfde">pBaroRaw</a></td></tr>
 <tr class="separator:abec65ae5a2edf49f154c39ae5b81dfde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe022591f96a1adc43324873d8155b1e"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__hca_8c.html#afe022591f96a1adc43324873d8155b1e">baro_hca_valid</a></td></tr>
-<tr class="separator:afe022591f96a1adc43324873d8155b1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d22df14d53a84b05e474241c601e403"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__hca_8c.html#a7d22df14d53a84b05e474241c601e403">baro_hca_valid</a></td></tr>
+<tr class="separator:a7d22df14d53a84b05e474241c601e403"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32e93627a89e70b20125510b12e15e9e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__hca_8c.html#a32e93627a89e70b20125510b12e15e9e">baro_hca_p</a></td></tr>
 <tr class="separator:a32e93627a89e70b20125510b12e15e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5cec43bc2d58c755d2bd0ec39eec8d4"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__i2c.html#structi2c__transaction">i2c_transaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__hca_8c.html#ae5cec43bc2d58c755d2bd0ec39eec8d4">baro_hca_i2c_trans</a></td></tr>
@@ -313,7 +313,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="baro__hca_8c_source.html#l00062">62</a> of file <a class="el" href="baro__hca_8c_source.html">baro_hca.c</a>.</p>
 
-<p>References <a class="el" href="baro__hca_8c_source.html#l00060">baro_hca_i2c_trans</a>, <a class="el" href="baro__hca_8c_source.html#l00056">baro_hca_valid</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="baro__hca_8c_source.html#l00055">pBaroRaw</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p>References <a class="el" href="baro__hca_8c_source.html#l00060">baro_hca_i2c_trans</a>, <a class="el" href="baro__hca_8c_source.html#l00056">baro_hca_valid</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="baro__hca_8c_source.html#l00055">pBaroRaw</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
 
 </div>
 </div>
@@ -333,7 +333,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="baro__hca_8c_source.html#l00078">78</a> of file <a class="el" href="baro__hca_8c_source.html">baro_hca.c</a>.</p>
 
-<p>References <a class="el" href="baro__hca_8c_source.html#l00060">baro_hca_i2c_trans</a>, <a class="el" href="baro__hca_8c_source.html#l00037">BARO_HCA_MAX_OUT</a>, <a class="el" href="baro__hca_8c_source.html#l00038">BARO_HCA_MIN_OUT</a>, <a class="el" href="baro__hca_8c_source.html#l00047">BARO_HCA_PRESSURE_OFFSET</a>, <a class="el" href="baro__hca_8c_source.html#l00042">BARO_HCA_SCALE</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00060">BARO_HCA_SENDER_ID</a>, <a class="el" href="baro__hca_8c_source.html#l00056">baro_hca_valid</a>, <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="downlink_8h_source.html#l00079">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00083">DefaultDevice</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="main__demo5_8c_source.html#l00059">foo</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="baro__hca_8c_source.html#l00055">pBaroRaw</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p>References <a class="el" href="baro__hca_8c_source.html#l00060">baro_hca_i2c_trans</a>, <a class="el" href="baro__hca_8c_source.html#l00037">BARO_HCA_MAX_OUT</a>, <a class="el" href="baro__hca_8c_source.html#l00038">BARO_HCA_MIN_OUT</a>, <a class="el" href="baro__hca_8c_source.html#l00047">BARO_HCA_PRESSURE_OFFSET</a>, <a class="el" href="baro__hca_8c_source.html#l00042">BARO_HCA_SCALE</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00060">BARO_HCA_SENDER_ID</a>, <a class="el" href="baro__hca_8c_source.html#l00056">baro_hca_valid</a>, <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="downlink_8h_source.html#l00084">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00088">DefaultDevice</a>, <a class="el" href="main__demo5_8c_source.html#l00059">foo</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="baro__hca_8c_source.html#l00055">pBaroRaw</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
 
 </div>
 </div>
@@ -362,7 +362,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="baro__hca_8c_ae35411dc645f61293234b6611acf2b0e_cgraph.png" border="0" usemap="#baro__hca_8c_ae35411dc645f61293234b6611acf2b0e_cgraph" alt=""/></div>
 <map name="baro__hca_8c_ae35411dc645f61293234b6611acf2b0e_cgraph" id="baro__hca_8c_ae35411dc645f61293234b6611acf2b0e_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#ga9bdc2f5162d3e77dd58b7541ddcbe5d1" title="Submit a read only transaction. " alt="" coords="228,5,321,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="369,5,460,32"/></map>
+<area shape="rect" id="node2" href="group__i2c.html#ga9e7c3ccd9ba7415486bfb2e52eaa3964" title="Submit a read only transaction. " alt="" coords="228,5,321,32"/><area shape="rect" id="node3" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="369,5,460,32"/></map>
 </div>
 </p>
 
@@ -399,12 +399,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afe022591f96a1adc43324873d8155b1e"></a>
+<a class="anchor" id="a7d22df14d53a84b05e474241c601e403"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool_t baro_hca_valid</td>
+          <td class="memname">bool baro_hca_valid</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -437,7 +437,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="baro__hca_8c.html">baro_hca.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:56 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:04 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

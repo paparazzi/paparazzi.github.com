@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('send__imu__mag__current_8c.html','');}
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="imu_8h_source.html">subsystems/imu.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="electrical_8h_source.html">subsystems/electrical.h</a>&quot;</code><br />
-<code>#include &quot;messages.h&quot;</code><br />
+<code>#include &quot;pprzlink/messages.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('send__imu__mag__current_8c.html','');}
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="send__imu__mag__current_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2calibration_2send__imu__mag__current_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2calibration_2send__imu__mag__current_8c" id="sw_2airborne_2modules_2calibration_2send__imu__mag__current_8c">
-<area shape="rect" id="node2" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="355,117,493,143"/><area shape="rect" id="node14" href="electrical_8h.html" title="Interface for electrical status: supply voltage, current, battery status, etc. " alt="" coords="462,206,634,233"/><area shape="rect" id="node16" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="659,206,797,233"/><area shape="rect" id="node20" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1138,109,1291,151"/><area shape="rect" id="node3" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="345,295,524,322"/><area shape="rect" id="node10" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="79,295,270,322"/><area shape="rect" id="node12" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="222,199,386,240"/><area shape="rect" id="node5" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="116,385,271,411"/><area shape="rect" id="node8" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="346,385,497,411"/><area shape="rect" id="node18" href="link__device_8h.html" title="generic device header " alt="" coords="834,474,1017,501"/><area shape="rect" id="node19" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1332,556,1417,583"/><area shape="rect" id="node22" href="pprz__transport_8h.html" title="Building and parsing Paparazzi frames. " alt="" coords="1159,288,1313,329"/><area shape="rect" id="node26" href="pprzlog__transport_8h.html" title="Protocol for on&#45;board data logger with timestamp. " alt="" coords="1617,288,1770,329"/><area shape="rect" id="node30" href="xbee_8h.html" title="Maxstream XBee serial input and output. " alt="" coords="1461,199,1614,240"/><area shape="rect" id="node32" href="w5100_8h.html" title="W5100 ethernet chip I/O. " alt="" coords="1049,199,1202,240"/><area shape="rect" id="node23" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1185,377,1338,419"/><area shape="rect" id="node25" href="transport_8h.html" title="generic transport header " alt="" coords="1362,377,1515,419"/><area shape="rect" id="node27" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1540,385,1711,411"/><area shape="rect" id="node31" href="xbee24_8h.html" title="Configuration for 2.4GHz &quot;series 1&quot; and 900MHz modules. " alt="" coords="1439,288,1593,329"/></map>
+<area shape="rect" id="node2" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="547,117,686,143"/><area shape="rect" id="node15" href="electrical_8h.html" title="Interface for electrical status: supply voltage, current, battery status, etc. " alt="" coords="775,117,947,143"/><area shape="rect" id="node17" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1370,206,1509,233"/><area shape="rect" id="node20" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1093,109,1247,151"/><area shape="rect" id="node3" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="527,288,706,315"/><area shape="rect" id="node10" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="204,288,395,315"/><area shape="rect" id="node13" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="411,199,575,240"/><area shape="rect" id="node5" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="298,363,453,389"/><area shape="rect" id="node8" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="672,363,823,389"/><area shape="rect" id="node21" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1077,206,1162,233"/><area shape="rect" id="node23" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="899,199,1052,240"/></map>
 </div>
 </div>
 <p><a href="send__imu__mag__current_8c_source.html">Go to the source code of this file.</a></p>
@@ -157,7 +157,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="send__imu__mag__current_8c_source.html#l00034">34</a> of file <a class="el" href="send__imu__mag__current_8c_source.html">send_imu_mag_current.c</a>.</p>
 
-<p>References <a class="el" href="electrical_8h_source.html#l00049">Electrical::current</a>, <a class="el" href="downlink_8h_source.html#l00079">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00083">DefaultDevice</a>, <a class="el" href="electrical_8c_source.html#l00065">electrical</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00043">imu</a>, <a class="el" href="imu_8h_source.html#l00052">Imu::mag_unscaled</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
+<p>References <a class="el" href="electrical_8h_source.html#l00049">Electrical::current</a>, <a class="el" href="downlink_8h_source.html#l00084">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00088">DefaultDevice</a>, <a class="el" href="electrical_8c_source.html#l00065">electrical</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="imu_8h_source.html#l00048">Imu::mag_unscaled</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
 
 </div>
 </div>
@@ -167,7 +167,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_37564ab831024cf4b25aef13fc1feda3.html">calibration</a></li><li class="navelem"><a class="el" href="send__imu__mag__current_8c.html">send_imu_mag_current.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:47 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:53 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

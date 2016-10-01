@@ -1,20 +1,23 @@
 <map id="stateCalcAccelNed_f" name="stateCalcAccelNed_f">
-<area shape="rect" id="node2" href="$group__state__acceleration.html#ga058e2128ff3a2a3ca5f3c606f4166dfe" title="Get acceleration in NED coordinates (float). " alt="" coords="207,137,356,164"/>
-<area shape="rect" id="node3" href="$rotorcraft_2autopilot_8h.html#a82c57502deaf7fb0dc0525b298611a87" title="autopilot_check_in\l_flight" alt="" coords="408,13,548,54"/>
-<area shape="rect" id="node11" href="$rotorcraft_2autopilot_8h.html#abba296c1e683df96046e568306fcbb69" title="Ground detection based on vertical acceleration. " alt="" coords="600,83,748,109"/>
-<area shape="rect" id="node13" href="$guidance__indi_8h.html#a2615938cf5f86d9b2f1a0de21ac8d983" title="guidance_indi_filter\l_accel" alt="" coords="406,130,550,171"/>
-<area shape="rect" id="node18" href="$meteo__france__DAQ_8h.html#a428cd9287f9e24f69dd92d696e0a053a" title="mf_daq_send_state" alt="" coords="404,196,552,223"/>
-<area shape="rect" id="node19" href="$meteo__france__DAQ_8h.html#ac95d521856a9424097d05f67c635c10e" title="parse_mf_daq_msg" alt="" coords="404,247,552,273"/>
-<area shape="rect" id="node4" href="$main_8h.html#a6266a73fe8c0512f1de72cea96e5110b" title="failsafe_check" alt="" coords="619,20,729,47"/>
-<area shape="rect" id="node5" href="$rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="1308,31,1471,57"/>
-<area shape="rect" id="node9" href="$rotorcraft_2main__fbw_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="main_init" alt="" coords="817,33,897,60"/>
-<area shape="rect" id="node6" href="$fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1531,5,1585,32"/>
-<area shape="rect" id="node7" href="$main__chibios__libopencm3_8c.html#ad648a546fe66cd5f9328f33221a40c64" title="pprz_thd" alt="" coords="1519,56,1597,83"/>
-<area shape="rect" id="node8" href="$main__chibios__libopencm3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1645,56,1700,83"/>
-<area shape="rect" id="node10" href="$rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1007,47,1061,73"/>
-<area shape="rect" id="node12" href="$rotorcraft_2main__fbw_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="809,84,906,111"/>
-<area shape="rect" id="node14" href="$guidance__indi_8h.html#a24d1024bbd8da21b6c70317fda39d929" title="guidance_indi_run" alt="" coords="605,137,743,164"/>
-<area shape="rect" id="node15" href="$guidance__h_8h.html#ac4cf6da90a4278b4d0b2e4f227b33f2c" title="guidance_h_run" alt="" coords="796,136,919,163"/>
-<area shape="rect" id="node16" href="$rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="967,123,1101,149"/>
-<area shape="rect" id="node17" href="$rotorcraft_2main__fbw_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="1149,77,1260,104"/>
+<area shape="rect" id="node2" href="$group__state__acceleration.html#ga058e2128ff3a2a3ca5f3c606f4166dfe" title="Get acceleration in NED coordinates (float). " alt="" coords="207,217,356,244"/>
+<area shape="rect" id="node3" href="$rotorcraft_2autopilot_8h.html#a8a5717e6ffce00d9926abc6c56336852" title="autopilot_check_in\l_flight" alt="" coords="416,63,556,105"/>
+<area shape="rect" id="node13" href="$rotorcraft_2autopilot_8h.html#abba296c1e683df96046e568306fcbb69" title="Ground detection based on vertical acceleration. " alt="" coords="616,133,764,160"/>
+<area shape="rect" id="node15" href="$guidance__indi_8h.html#a2615938cf5f86d9b2f1a0de21ac8d983" title="low pass the accelerometer measurements with a second order filter to remove noise from vibrations ..." alt="" coords="414,181,558,222"/>
+<area shape="rect" id="node20" href="$meteo__france__DAQ_8h.html#a428cd9287f9e24f69dd92d696e0a053a" title="mf_daq_send_state" alt="" coords="412,247,560,273"/>
+<area shape="rect" id="node21" href="$meteo__france__DAQ_8h.html#ac95d521856a9424097d05f67c635c10e" title="parse_mf_daq_msg" alt="" coords="412,297,560,324"/>
+<area shape="rect" id="node22" href="$nav__catapult_8h.html#afc9cb27f8b568c7117d4fc7bfd09afbc" title="nav_catapult_highrate\l_module" alt="" coords="404,349,568,390"/>
+<area shape="rect" id="node4" href="$main_8h.html#a6266a73fe8c0512f1de72cea96e5110b" title="failsafe_check" alt="" coords="635,71,745,97"/>
+<area shape="rect" id="node5" href="$rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="1324,81,1487,108"/>
+<area shape="rect" id="node11" href="$rotorcraft_2main__fbw_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="Main initialization. " alt="" coords="833,84,913,111"/>
+<area shape="rect" id="node6" href="$fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1593,5,1647,32"/>
+<area shape="rect" id="node7" href="$nps__autopilot__fixedwing_8c.html#a12870aaa609d4860004be3cec4c8cf2a" title="nps_autopilot_run_step" alt="" coords="1535,56,1705,83"/>
+<area shape="rect" id="node8" href="$main__chibios_8c.html#a1bd1ec0fdc597d88ee659889cda25c0a" title="thd_ap" alt="" coords="1587,107,1653,133"/>
+<area shape="rect" id="node10" href="$main__chibios_8c.html#a4042bcab9578175e00c82adcc2b251f8" title="thd_fbw" alt="" coords="1585,157,1655,184"/>
+<area shape="rect" id="node9" href="$main__chibios_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function. " alt="" coords="1753,132,1808,159"/>
+<area shape="rect" id="node12" href="$rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1023,97,1077,124"/>
+<area shape="rect" id="node14" href="$rotorcraft_2main__fbw_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="825,135,922,161"/>
+<area shape="rect" id="node16" href="$guidance__indi_8h.html#ad8b44d9c75c8bdabbe9e3521c96d503b" title="guidance_indi_run" alt="" coords="621,188,759,215"/>
+<area shape="rect" id="node17" href="$guidance__h_8h.html#afff2f6a359638c74d5d1051c3edfa554" title="guidance_h_run" alt="" coords="812,187,935,213"/>
+<area shape="rect" id="node18" href="$rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="983,173,1117,200"/>
+<area shape="rect" id="node19" href="$rotorcraft_2main__fbw_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="1165,128,1276,155"/>
 </map>

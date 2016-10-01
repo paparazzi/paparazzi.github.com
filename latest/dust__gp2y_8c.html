@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('dust__gp2y_8c.html','');});
 <code>#include &quot;<a class="el" href="i2c_8h_source.html">mcu_periph/i2c.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
-<code>#include &quot;messages.h&quot;</code><br />
+<code>#include &quot;pprzlink/messages.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for dust_gp2y.c:</div>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('dust__gp2y_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="dust__gp2y_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2meteo_2dust__gp2y_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2meteo_2dust__gp2y_8c" id="sw_2airborne_2modules_2meteo_2dust__gp2y_8c">
-<area shape="rect" id="node2" href="dust__gp2y_8h.html" title="modules/meteo/dust\l_gp2y.h" alt="" coords="338,95,493,136"/><area shape="rect" id="node4" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="522,102,653,129"/><area shape="rect" id="node6" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="167,370,338,397"/><area shape="rect" id="node11" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="625,191,763,218"/><area shape="rect" id="node15" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1079,95,1232,136"/><area shape="rect" id="node7" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1039,541,1125,568"/><area shape="rect" id="node13" href="link__device_8h.html" title="generic device header " alt="" coords="844,459,1027,486"/><area shape="rect" id="node18" href="pprz__transport_8h.html" title="Building and parsing Paparazzi frames. " alt="" coords="1005,273,1159,315"/><area shape="rect" id="node22" href="pprzlog__transport_8h.html" title="Protocol for on&#45;board data logger with timestamp. " alt="" coords="776,273,929,315"/><area shape="rect" id="node23" href="xbee_8h.html" title="Maxstream XBee serial input and output. " alt="" coords="1303,184,1456,225"/><area shape="rect" id="node25" href="w5100_8h.html" title="W5100 ethernet chip I/O. " alt="" coords="1021,184,1175,225"/><area shape="rect" id="node19" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1235,363,1388,404"/><area shape="rect" id="node21" href="transport_8h.html" title="generic transport header " alt="" coords="1005,363,1159,404"/><area shape="rect" id="node24" href="xbee24_8h.html" title="Configuration for 2.4GHz &quot;series 1&quot; and 900MHz modules. " alt="" coords="1468,273,1621,315"/></map>
+<area shape="rect" id="node2" href="dust__gp2y_8h.html" title="modules/meteo/dust\l_gp2y.h" alt="" coords="5,95,160,136"/><area shape="rect" id="node4" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="221,102,352,129"/><area shape="rect" id="node6" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1281,102,1452,129"/><area shape="rect" id="node11" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1045,191,1184,218"/><area shape="rect" id="node15" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="687,95,841,136"/><area shape="rect" id="node7" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1208,191,1293,218"/><area shape="rect" id="node18" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="867,184,1021,225"/></map>
 </div>
 </div>
 <p><a href="dust__gp2y_8c_source.html">Go to the source code of this file.</a></p>
@@ -216,7 +216,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="dust__gp2y_8c_source.html#l00065">65</a> of file <a class="el" href="dust__gp2y_8c_source.html">dust_gp2y.c</a>.</p>
 
-<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="downlink_8h_source.html#l00079">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00083">DefaultDevice</a>, <a class="el" href="dust__gp2y_8c_source.html#l00039">dust_gp2y_density</a>, <a class="el" href="dust__gp2y_8c_source.html#l00040">dust_gp2y_density_f</a>, <a class="el" href="dust__gp2y_8c_source.html#l00042">gp2y_trans</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
+<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="downlink_8h_source.html#l00084">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00088">DefaultDevice</a>, <a class="el" href="dust__gp2y_8c_source.html#l00039">dust_gp2y_density</a>, <a class="el" href="dust__gp2y_8c_source.html#l00040">dust_gp2y_density_f</a>, <a class="el" href="dust__gp2y_8c_source.html#l00042">gp2y_trans</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
 
 </div>
 </div>
@@ -256,7 +256,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="dust__gp2y_8c_source.html#l00056">56</a> of file <a class="el" href="dust__gp2y_8c_source.html">dust_gp2y.c</a>.</p>
 
-<p>References <a class="el" href="dust__gp2y_8h_source.html#l00007">DUST_GP2Y_IDLE</a>, <a class="el" href="dust__gp2y_8c_source.html#l00038">dust_gp2y_status</a>, <a class="el" href="dust__gp2y_8h_source.html#l00006">DUST_GP2Y_UNINIT</a>, <a class="el" href="dust__gp2y_8c_source.html#l00046">GP2Y_I2C_DEV</a>, <a class="el" href="dust__gp2y_8c_source.html#l00049">GP2Y_SLAVE_ADDR</a>, <a class="el" href="dust__gp2y_8c_source.html#l00042">gp2y_trans</a>, <a class="el" href="i2c_8c_source.html#l00268">i2c_receive()</a>, and <a class="el" href="sys__time_8h_source.html#l00069">sys_time::nb_sec</a>.</p>
+<p>References <a class="el" href="dust__gp2y_8h_source.html#l00007">DUST_GP2Y_IDLE</a>, <a class="el" href="dust__gp2y_8c_source.html#l00038">dust_gp2y_status</a>, <a class="el" href="dust__gp2y_8h_source.html#l00006">DUST_GP2Y_UNINIT</a>, <a class="el" href="dust__gp2y_8c_source.html#l00046">GP2Y_I2C_DEV</a>, <a class="el" href="dust__gp2y_8c_source.html#l00049">GP2Y_SLAVE_ADDR</a>, <a class="el" href="dust__gp2y_8c_source.html#l00042">gp2y_trans</a>, <a class="el" href="i2c_8c_source.html#l00268">i2c_receive()</a>, and <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -265,7 +265,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="dust__gp2y_8c_a7ba1d364e765abcc7fe0ff35f4364f17_cgraph.png" border="0" usemap="#dust__gp2y_8c_a7ba1d364e765abcc7fe0ff35f4364f17_cgraph" alt=""/></div>
 <map name="dust__gp2y_8c_a7ba1d364e765abcc7fe0ff35f4364f17_cgraph" id="dust__gp2y_8c_a7ba1d364e765abcc7fe0ff35f4364f17_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#ga9bdc2f5162d3e77dd58b7541ddcbe5d1" title="Submit a read only transaction. " alt="" coords="199,5,292,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="340,5,431,32"/></map>
+<area shape="rect" id="node2" href="group__i2c.html#ga9e7c3ccd9ba7415486bfb2e52eaa3964" title="Submit a read only transaction. " alt="" coords="199,5,292,32"/><area shape="rect" id="node3" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="340,5,431,32"/></map>
 </div>
 </p>
 
@@ -342,7 +342,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_dcc9af59dc35b42e32db80b18066e136.html">meteo</a></li><li class="navelem"><a class="el" href="dust__gp2y_8c.html">dust_gp2y.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:53 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:00 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

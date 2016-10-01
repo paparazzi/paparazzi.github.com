@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('sim_2mcu__periph_2udp__arch_8c.html','
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sim_2mcu__periph_2udp__arch_8c__incl.png" border="0" usemap="#sw_2airborne_2arch_2sim_2mcu__periph_2udp__arch_8c" alt=""/></div>
 <map name="sw_2airborne_2arch_2sim_2mcu__periph_2udp__arch_8c" id="sw_2airborne_2arch_2sim_2mcu__periph_2udp__arch_8c">
-<area shape="rect" id="node2" href="udp_8h.html" title="arch independent UDP API " alt="" coords="300,95,437,121"/><area shape="rect" id="node7" href="udp__socket_8h.html" title="Easily create and use UDP sockets. " alt="" coords="98,95,205,121"/><area shape="rect" id="node14" href="rt__priority_8h.html" title="Functions to obtain rt priority or set the nice level. " alt="" coords="726,95,819,121"/><area shape="rect" id="node5" href="link__device_8h.html" title="generic device header " alt="" coords="203,169,385,196"/><area shape="rect" id="node6" href="inttypes_8h.html" title="inttypes.h" alt="" coords="251,244,337,271"/></map>
+<area shape="rect" id="node2" href="udp_8h.html" title="arch independent UDP API " alt="" coords="301,95,439,121"/><area shape="rect" id="node6" href="udp__socket_8h.html" title="Easily create and use UDP sockets. " alt="" coords="98,95,205,121"/><area shape="rect" id="node13" href="rt__priority_8h.html" title="Functions to obtain rt priority or set the nice level. " alt="" coords="729,95,822,121"/></map>
 </div>
 </div>
 <p><a href="sim_2mcu__periph_2udp__arch_8c_source.html">Go to the source code of this file.</a></p>
@@ -145,9 +145,9 @@ Functions</h2></td></tr>
 <tr class="separator:a4228ab15648ebad6b74132335c63635e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a665732768aad2a0f4b0a396d96485cc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2mcu__periph_2udp__arch_8c.html#a665732768aad2a0f4b0a396d96485cc2">udp_arch_init</a> (void)</td></tr>
 <tr class="separator:a665732768aad2a0f4b0a396d96485cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1941c4227cc54d1cb993bf7cced357e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2mcu__periph_2udp__arch_8c.html#a1941c4227cc54d1cb993bf7cced357e4">udp_arch_periph_init</a> (struct <a class="el" href="udp_8h.html#structudp__periph">udp_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, char *host, int port_out, int port_in, bool_t broadcast)</td></tr>
-<tr class="memdesc:a1941c4227cc54d1cb993bf7cced357e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the UDP peripheral.  <a href="#a1941c4227cc54d1cb993bf7cced357e4">More...</a><br /></td></tr>
-<tr class="separator:a1941c4227cc54d1cb993bf7cced357e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26342423a340c1420dbb8081d9fdd407"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2mcu__periph_2udp__arch_8c.html#a26342423a340c1420dbb8081d9fdd407">udp_arch_periph_init</a> (struct <a class="el" href="udp_8h.html#structudp__periph">udp_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, char *host, int port_out, int port_in, bool broadcast)</td></tr>
+<tr class="memdesc:a26342423a340c1420dbb8081d9fdd407"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the UDP peripheral.  <a href="#a26342423a340c1420dbb8081d9fdd407">More...</a><br /></td></tr>
+<tr class="separator:a26342423a340c1420dbb8081d9fdd407"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36a5847da7a6cd7e824bbf1366505aa1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2mcu__periph_2udp__arch_8c.html#a36a5847da7a6cd7e824bbf1366505aa1">udp_char_available</a> (struct <a class="el" href="udp_8h.html#structudp__periph">udp_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
 <tr class="memdesc:a36a5847da7a6cd7e824bbf1366505aa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of bytes available in receive buffer.  <a href="#a36a5847da7a6cd7e824bbf1366505aa1">More...</a><br /></td></tr>
 <tr class="separator:a36a5847da7a6cd7e824bbf1366505aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,12 +157,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a23264d73f7cf6197c139bf6841da1ee2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2mcu__periph_2udp__arch_8c.html#a23264d73f7cf6197c139bf6841da1ee2">udp_receive</a> (struct <a class="el" href="udp_8h.html#structudp__periph">udp_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
 <tr class="memdesc:a23264d73f7cf6197c139bf6841da1ee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read bytes from UDP.  <a href="#a23264d73f7cf6197c139bf6841da1ee2">More...</a><br /></td></tr>
 <tr class="separator:a23264d73f7cf6197c139bf6841da1ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace1d30c9a0d06bc3bfc7a0e79c4c3536"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2mcu__periph_2udp__arch_8c.html#ace1d30c9a0d06bc3bfc7a0e79c4c3536">udp_send_message</a> (struct <a class="el" href="udp_8h.html#structudp__periph">udp_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
-<tr class="memdesc:ace1d30c9a0d06bc3bfc7a0e79c4c3536"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message.  <a href="#ace1d30c9a0d06bc3bfc7a0e79c4c3536">More...</a><br /></td></tr>
-<tr class="separator:ace1d30c9a0d06bc3bfc7a0e79c4c3536"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafd96d467dd197f1b69f7c071dfd7a3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2mcu__periph_2udp__arch_8c.html#aafd96d467dd197f1b69f7c071dfd7a3d">udp_send_raw</a> (struct <a class="el" href="udp_8h.html#structudp__periph">udp_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buffer, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> size)</td></tr>
-<tr class="memdesc:aafd96d467dd197f1b69f7c071dfd7a3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a packet from another buffer.  <a href="#aafd96d467dd197f1b69f7c071dfd7a3d">More...</a><br /></td></tr>
-<tr class="separator:aafd96d467dd197f1b69f7c071dfd7a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd1365113847d9c844e256228443af2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2mcu__periph_2udp__arch_8c.html#acd1365113847d9c844e256228443af2d">udp_send_message</a> (struct <a class="el" href="udp_8h.html#structudp__periph">udp_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long <a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>)</td></tr>
+<tr class="memdesc:acd1365113847d9c844e256228443af2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message.  <a href="#acd1365113847d9c844e256228443af2d">More...</a><br /></td></tr>
+<tr class="separator:acd1365113847d9c844e256228443af2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ade4a7dac94dde3de069a9ce13e0ad0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2mcu__periph_2udp__arch_8c.html#a3ade4a7dac94dde3de069a9ce13e0ad0">udp_send_raw</a> (struct <a class="el" href="udp_8h.html#structudp__periph">udp_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long <a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buffer, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> size)</td></tr>
+<tr class="memdesc:a3ade4a7dac94dde3de069a9ce13e0ad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a packet from another buffer.  <a href="#a3ade4a7dac94dde3de069a9ce13e0ad0">More...</a><br /></td></tr>
+<tr class="separator:a3ade4a7dac94dde3de069a9ce13e0ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -218,7 +218,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1941c4227cc54d1cb993bf7cced357e4"></a>
+<a class="anchor" id="a26342423a340c1420dbb8081d9fdd407"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -249,7 +249,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool_t&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>broadcast</em>&#160;</td>
         </tr>
         <tr>
@@ -272,9 +272,9 @@ Variables</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="sim_2mcu__periph_2udp__arch_8c_a1941c4227cc54d1cb993bf7cced357e4_cgraph.png" border="0" usemap="#sim_2mcu__periph_2udp__arch_8c_a1941c4227cc54d1cb993bf7cced357e4_cgraph" alt=""/></div>
-<map name="sim_2mcu__periph_2udp__arch_8c_a1941c4227cc54d1cb993bf7cced357e4_cgraph" id="sim_2mcu__periph_2udp__arch_8c_a1941c4227cc54d1cb993bf7cced357e4_cgraph">
-<area shape="rect" id="node2" href="udp__socket_8c.html#add3ac7d3bb65bcff12ae832ec1a2e715" title="Create UDP socket and bind it. " alt="" coords="208,5,351,32"/></map>
+<div class="center"><img src="sim_2mcu__periph_2udp__arch_8c_a26342423a340c1420dbb8081d9fdd407_cgraph.png" border="0" usemap="#sim_2mcu__periph_2udp__arch_8c_a26342423a340c1420dbb8081d9fdd407_cgraph" alt=""/></div>
+<map name="sim_2mcu__periph_2udp__arch_8c_a26342423a340c1420dbb8081d9fdd407_cgraph" id="sim_2mcu__periph_2udp__arch_8c_a26342423a340c1420dbb8081d9fdd407_cgraph">
+<area shape="rect" id="node2" href="udp__socket_8c.html#a8904d535adc73468cfa9e57a71f6de72" title="Create UDP socket and bind it. " alt="" coords="208,5,351,32"/></map>
 </div>
 </p>
 
@@ -356,7 +356,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="sim_2mcu__periph_2udp__arch_8c_source.html#l00109">109</a> of file <a class="el" href="sim_2mcu__periph_2udp__arch_8c_source.html">udp_arch.c</a>.</p>
 
-<p>References <a class="el" href="udp__socket_8h_source.html#l00036">UdpSocket::addr_in</a>, <a class="el" href="stm32_2mcu__periph_2adc__arch_8c_source.html#l00587">buf</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00556">if()</a>, <a class="el" href="udp_8h_source.html#l00047">udp_periph::network</a>, <a class="el" href="udp_8h_source.html#l00040">udp_periph::rx_buf</a>, <a class="el" href="udp_8h_source.html#l00041">udp_periph::rx_insert_idx</a>, <a class="el" href="udp__socket_8h_source.html#l00035">UdpSocket::sockfd</a>, <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00081">udp_char_available()</a>, and <a class="el" href="udp_8h_source.html#l00035">UDP_RX_BUFFER_SIZE</a>.</p>
+<p>References <a class="el" href="udp__socket_8h_source.html#l00036">UdpSocket::addr_in</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00605">if()</a>, <a class="el" href="udp_8h_source.html#l00047">udp_periph::network</a>, <a class="el" href="udp_8h_source.html#l00040">udp_periph::rx_buf</a>, <a class="el" href="udp_8h_source.html#l00041">udp_periph::rx_insert_idx</a>, <a class="el" href="udp__socket_8h_source.html#l00035">UdpSocket::sockfd</a>, <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00081">udp_char_available()</a>, and <a class="el" href="udp_8h_source.html#l00035">UDP_RX_BUFFER_SIZE</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -371,7 +371,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ace1d30c9a0d06bc3bfc7a0e79c4c3536"></a>
+<a class="anchor" id="acd1365113847d9c844e256228443af2d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -379,8 +379,18 @@ Variables</h2></td></tr>
           <td class="memname">void udp_send_message </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="udp_8h.html#structudp__periph">udp_periph</a> *&#160;</td>
-          <td class="paramname"><em>p</em></td><td>)</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>fd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -389,22 +399,22 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="sim_2mcu__periph_2udp__arch_8c_source.html#l00142">142</a> of file <a class="el" href="sim_2mcu__periph_2udp__arch_8c_source.html">udp_arch.c</a>.</p>
 
-<p>References <a class="el" href="udp__socket_8h_source.html#l00037">UdpSocket::addr_out</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00556">if()</a>, <a class="el" href="udp_8h_source.html#l00047">udp_periph::network</a>, <a class="el" href="udp__socket_8h_source.html#l00035">UdpSocket::sockfd</a>, <a class="el" href="udp_8h_source.html#l00044">udp_periph::tx_buf</a>, and <a class="el" href="udp_8h_source.html#l00045">udp_periph::tx_insert_idx</a>.</p>
+<p>References <a class="el" href="udp__socket_8h_source.html#l00037">UdpSocket::addr_out</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00605">if()</a>, <a class="el" href="udp_8h_source.html#l00047">udp_periph::network</a>, <a class="el" href="udp__socket_8h_source.html#l00035">UdpSocket::sockfd</a>, <a class="el" href="udp_8h_source.html#l00044">udp_periph::tx_buf</a>, and <a class="el" href="udp_8h_source.html#l00045">udp_periph::tx_insert_idx</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="sim_2mcu__periph_2udp__arch_8c_ace1d30c9a0d06bc3bfc7a0e79c4c3536_cgraph.png" border="0" usemap="#sim_2mcu__periph_2udp__arch_8c_ace1d30c9a0d06bc3bfc7a0e79c4c3536_cgraph" alt=""/></div>
-<map name="sim_2mcu__periph_2udp__arch_8c_ace1d30c9a0d06bc3bfc7a0e79c4c3536_cgraph" id="sim_2mcu__periph_2udp__arch_8c_ace1d30c9a0d06bc3bfc7a0e79c4c3536_cgraph">
+<div class="center"><img src="sim_2mcu__periph_2udp__arch_8c_acd1365113847d9c844e256228443af2d_cgraph.png" border="0" usemap="#sim_2mcu__periph_2udp__arch_8c_acd1365113847d9c844e256228443af2d_cgraph" alt=""/></div>
+<map name="sim_2mcu__periph_2udp__arch_8c_acd1365113847d9c844e256228443af2d_cgraph" id="sim_2mcu__periph_2udp__arch_8c_acd1365113847d9c844e256228443af2d_cgraph">
 <area shape="rect" id="node2" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599" title="if" alt="" coords="204,5,243,32"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="aafd96d467dd197f1b69f7c071dfd7a3d"></a>
+<a class="anchor" id="a3ade4a7dac94dde3de069a9ce13e0ad0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -413,6 +423,12 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="udp_8h.html#structudp__periph">udp_periph</a> *&#160;</td>
           <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -525,7 +541,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_c87a6d12365ead88e0b90ddbc1b3c9bb.html">sim</a></li><li class="navelem"><a class="el" href="dir_f11394bd39850f137cd76d3a3707cb70.html">mcu_periph</a></li><li class="navelem"><a class="el" href="sim_2mcu__periph_2udp__arch_8c.html">udp_arch.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:34 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:38 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

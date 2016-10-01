@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -175,6 +175,7 @@ Functions</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;struct adc_buf channel_buf;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;adc_buf_channel(1, &amp;channel_buf, 12);</div>
 </div><!-- fragment --><p> Registers channel_buf as buffer for ADC channel 1, with max index 12 (12 samples).</p>
+<p>Registers a buffer to be used to store the specified converted channel Usage:</p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>: fx a more general ADC </dd></dl>
 
 <p>Definition at line <a class="el" href="sim_2mcu__periph_2adc__arch_8c_source.html#l00029">29</a> of file <a class="el" href="sim_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
@@ -196,6 +197,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Starts conversions. </p>
+<p>Starts conversions.</p>
+<p>Initialize ADC drivers, buffers and start conversion in the background</p>
 <p>Starts conversions. </p>
 
 <p>Definition at line <a class="el" href="sim_2mcu__periph_2adc__arch_8c_source.html#l00033">33</a> of file <a class="el" href="sim_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
@@ -208,7 +211,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_c87a6d12365ead88e0b90ddbc1b3c9bb.html">sim</a></li><li class="navelem"><a class="el" href="dir_f11394bd39850f137cd76d3a3707cb70.html">mcu_periph</a></li><li class="navelem"><a class="el" href="sim_2mcu__periph_2adc__arch_8c.html">adc_arch.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:33 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:36 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

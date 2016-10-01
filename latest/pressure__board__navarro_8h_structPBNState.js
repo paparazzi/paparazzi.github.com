@@ -7,5 +7,5 @@ var pressure__board__navarro_8h_structPBNState =
     [ "altitude", "pressure__board__navarro_8h.html#a291e797eb3282d070020b2909c8a0216", null ],
     [ "altitude_adc", "pressure__board__navarro_8h.html#ab094c754eef4682b53a2e69cecbc480f", null ],
     [ "altitude_offset", "pressure__board__navarro_8h.html#ac9029031e4c9f96b7e3abac156e25e4e", null ],
-    [ "data_valid", "pressure__board__navarro_8h.html#a41d85e32b83cdd373be45072a2c67638", null ]
+    [ "data_valid", "pressure__board__navarro_8h.html#a65a9615f6c0acb21062a05d69ea859b6", null ]
 ];

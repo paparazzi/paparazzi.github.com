@@ -3,7 +3,7 @@ var ahrs__float__mlkf_8c =
     [ "AHRS_MAG_NOISE_X", "ahrs__float__mlkf_8c.html#a896202048674394d985edc42bc8c4361", null ],
     [ "AHRS_MAG_NOISE_Y", "ahrs__float__mlkf_8c.html#ac19870482d91dc7347d7065e2447ae67", null ],
     [ "AHRS_MAG_NOISE_Z", "ahrs__float__mlkf_8c.html#a6941fca93ff7e77336f1c774e3361e5c", null ],
-    [ "ahrs_mlkf_align", "ahrs__float__mlkf_8c.html#aa79af0a33926442fbcc52fc761f695be", null ],
+    [ "ahrs_mlkf_align", "ahrs__float__mlkf_8c.html#a65cd8d47048c1cdc4aced2e5a4ce79e2", null ],
     [ "ahrs_mlkf_init", "ahrs__float__mlkf_8c.html#a507028d1107469dfa4a27642ddc7a2c0", null ],
     [ "ahrs_mlkf_propagate", "ahrs__float__mlkf_8c.html#aad9bedf36772800071affa5049921882", null ],
     [ "ahrs_mlkf_set_body_to_imu", "ahrs__float__mlkf_8c.html#a91ca1fddae202f8c91628a150ec45191", null ],

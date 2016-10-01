@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('alt__srf08_8c.html','');});
 <div class="textblock"><code>#include &quot;<a class="el" href="i2c_8h_source.html">mcu_periph/i2c.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="alt__srf08_8h_source.html">alt_srf08.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
-<code>#include &quot;messages.h&quot;</code><br />
+<code>#include &quot;pprzlink/messages.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="led_8h_source.html">led.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('alt__srf08_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="alt__srf08_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2sensors_2alt__srf08_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2sensors_2alt__srf08_8c" id="sw_2airborne_2modules_2sensors_2alt__srf08_8c">
-<area shape="rect" id="node2" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="282,102,413,129"/><area shape="rect" id="node5" href="alt__srf08_8h.html" title="Basic library for SRF08 telemeter. " alt="" coords="1133,102,1223,129"/><area shape="rect" id="node6" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="455,191,594,218"/><area shape="rect" id="node11" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="904,95,1057,136"/><area shape="rect" id="node26" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1373,102,1426,129"/><area shape="rect" id="node8" href="link__device_8h.html" title="generic device header " alt="" coords="628,459,811,486"/><area shape="rect" id="node9" href="inttypes_8h.html" title="inttypes.h" alt="" coords="677,541,762,568"/><area shape="rect" id="node14" href="pprz__transport_8h.html" title="Building and parsing Paparazzi frames. " alt="" coords="743,273,896,315"/><area shape="rect" id="node18" href="pprzlog__transport_8h.html" title="Protocol for on&#45;board data logger with timestamp. " alt="" coords="513,273,667,315"/><area shape="rect" id="node23" href="xbee_8h.html" title="Maxstream XBee serial input and output. " alt="" coords="1133,184,1287,225"/><area shape="rect" id="node25" href="w5100_8h.html" title="W5100 ethernet chip I/O. " alt="" coords="904,184,1057,225"/><area shape="rect" id="node15" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="891,363,1044,404"/><area shape="rect" id="node17" href="transport_8h.html" title="generic transport header " alt="" coords="513,363,667,404"/><area shape="rect" id="node19" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="18,370,189,397"/><area shape="rect" id="node24" href="xbee24_8h.html" title="Configuration for 2.4GHz &quot;series 1&quot; and 900MHz modules. " alt="" coords="1257,273,1411,315"/></map>
+<area shape="rect" id="node2" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="338,102,469,129"/><area shape="rect" id="node5" href="alt__srf08_8h.html" title="Basic library for SRF08 telemeter. " alt="" coords="781,102,871,129"/><area shape="rect" id="node6" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="227,191,366,218"/><area shape="rect" id="node10" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="604,95,757,136"/><area shape="rect" id="node16" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1113,102,1166,129"/><area shape="rect" id="node11" href="inttypes_8h.html" title="inttypes.h" alt="" coords="979,191,1065,218"/><area shape="rect" id="node14" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="801,184,955,225"/></map>
 </div>
 </div>
 <p><a href="alt__srf08_8c_source.html">Go to the source code of this file.</a></p>
@@ -163,10 +163,10 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aea161ae5c89625f70b0e4d62a04a39e3"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alt__srf08_8c.html#aea161ae5c89625f70b0e4d62a04a39e3">srf08_received</a></td></tr>
-<tr class="separator:aea161ae5c89625f70b0e4d62a04a39e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab426ebf96debca4147f2de04cf18ab76"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alt__srf08_8c.html#ab426ebf96debca4147f2de04cf18ab76">srf08_got</a></td></tr>
-<tr class="separator:ab426ebf96debca4147f2de04cf18ab76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f7107faa44124b41f3434c4e16f439d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alt__srf08_8c.html#a9f7107faa44124b41f3434c4e16f439d">srf08_received</a></td></tr>
+<tr class="separator:a9f7107faa44124b41f3434c4e16f439d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a643c85c0c68ae638652791bd6635065c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alt__srf08_8c.html#a643c85c0c68ae638652791bd6635065c">srf08_got</a></td></tr>
+<tr class="separator:a643c85c0c68ae638652791bd6635065c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa86fa4e14a90dbda8f426e3cc1caf97"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__i2c.html#structi2c__transaction">i2c_transaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alt__srf08_8c.html#aaa86fa4e14a90dbda8f426e3cc1caf97">srf_trans</a></td></tr>
 <tr class="separator:aaa86fa4e14a90dbda8f426e3cc1caf97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b4c04cf312158dd1fc012c9c04ee4e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alt__srf08_8c.html#a9b4c04cf312158dd1fc012c9c04ee4e9">srf08_range</a></td></tr>
@@ -246,7 +246,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="alt__srf08_8c_source.html#l00139">139</a> of file <a class="el" href="alt__srf08_8c_source.html">alt_srf08.c</a>.</p>
 
-<p>References <a class="el" href="downlink_8h_source.html#l00079">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00083">DefaultDevice</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="alt__srf08_8c_source.html#l00093">srf08_copy()</a>, <a class="el" href="alt__srf08_8c_source.html#l00043">srf08_got</a>, <a class="el" href="alt__srf08_8c_source.html#l00045">srf08_range</a>, <a class="el" href="alt__srf08_8c_source.html#l00086">srf08_read()</a>, <a class="el" href="alt__srf08_8c_source.html#l00043">srf08_received</a>, <a class="el" href="alt__srf08_8c_source.html#l00044">srf_trans</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
+<p>References <a class="el" href="downlink_8h_source.html#l00084">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00088">DefaultDevice</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="alt__srf08_8c_source.html#l00093">srf08_copy()</a>, <a class="el" href="alt__srf08_8c_source.html#l00043">srf08_got</a>, <a class="el" href="alt__srf08_8c_source.html#l00045">srf08_range</a>, <a class="el" href="alt__srf08_8c_source.html#l00086">srf08_read()</a>, <a class="el" href="alt__srf08_8c_source.html#l00043">srf08_received</a>, <a class="el" href="alt__srf08_8c_source.html#l00044">srf_trans</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -255,7 +255,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="alt__srf08_8c_a36297d9e254256754d5217ebc596c840_cgraph.png" border="0" usemap="#alt__srf08_8c_a36297d9e254256754d5217ebc596c840_cgraph" alt=""/></div>
 <map name="alt__srf08_8c_a36297d9e254256754d5217ebc596c840_cgraph" id="alt__srf08_8c_a36297d9e254256754d5217ebc596c840_cgraph">
-<area shape="rect" id="node2" href="alt__srf08_8c.html#a9f2a187877ece761ec8e686dd7947aac" title="Copy the I2C buffer. " alt="" coords="151,5,241,32"/><area shape="rect" id="node3" href="alt__srf08_8c.html#aff7bb98cb47578750ee4fe2d3a75d53f" title="Read values on the bus. " alt="" coords="151,56,241,83"/><area shape="rect" id="node4" href="group__i2c.html#ga9bdc2f5162d3e77dd58b7541ddcbe5d1" title="Submit a read only transaction. " alt="" coords="289,56,383,83"/><area shape="rect" id="node5" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="431,56,521,83"/></map>
+<area shape="rect" id="node2" href="alt__srf08_8c.html#a9f2a187877ece761ec8e686dd7947aac" title="Copy the I2C buffer. " alt="" coords="151,5,241,32"/><area shape="rect" id="node3" href="alt__srf08_8c.html#aff7bb98cb47578750ee4fe2d3a75d53f" title="Read values on the bus. " alt="" coords="151,56,241,83"/><area shape="rect" id="node4" href="group__i2c.html#ga9e7c3ccd9ba7415486bfb2e52eaa3964" title="Submit a read only transaction. " alt="" coords="289,56,383,83"/><area shape="rect" id="node5" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="431,56,521,83"/></map>
 </div>
 </p>
 
@@ -278,7 +278,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="alt__srf08_8c_source.html#l00050">50</a> of file <a class="el" href="alt__srf08_8c_source.html">alt_srf08.c</a>.</p>
 
-<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="i2c_8c_source.html#l00258">i2c_transmit()</a>, <a class="el" href="alt__srf08_8c_source.html#l00043">srf08_got</a>, <a class="el" href="alt__srf08_8c_source.html#l00039">SRF08_I2C_DEV</a>, <a class="el" href="alt__srf08_8h_source.html#l00062">SRF08_MIN_GAIN</a>, <a class="el" href="alt__srf08_8c_source.html#l00043">srf08_received</a>, <a class="el" href="alt__srf08_8h_source.html#l00073">SRF08_SET_GAIN</a>, <a class="el" href="alt__srf08_8h_source.html#l00039">SRF08_UNIT_0</a>, and <a class="el" href="alt__srf08_8c_source.html#l00044">srf_trans</a>.</p>
+<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="i2c_8c_source.html#l00258">i2c_transmit()</a>, <a class="el" href="alt__srf08_8c_source.html#l00043">srf08_got</a>, <a class="el" href="alt__srf08_8c_source.html#l00039">SRF08_I2C_DEV</a>, <a class="el" href="alt__srf08_8h_source.html#l00062">SRF08_MIN_GAIN</a>, <a class="el" href="alt__srf08_8c_source.html#l00043">srf08_received</a>, <a class="el" href="alt__srf08_8h_source.html#l00073">SRF08_SET_GAIN</a>, <a class="el" href="alt__srf08_8h_source.html#l00039">SRF08_UNIT_0</a>, and <a class="el" href="alt__srf08_8c_source.html#l00044">srf_trans</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -287,7 +287,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="alt__srf08_8c_af2ff055d48669ddfe0c182df5f876704_cgraph.png" border="0" usemap="#alt__srf08_8c_af2ff055d48669ddfe0c182df5f876704_cgraph" alt=""/></div>
 <map name="alt__srf08_8c_af2ff055d48669ddfe0c182df5f876704_cgraph" id="alt__srf08_8c_af2ff055d48669ddfe0c182df5f876704_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#ga68659e03504627925829f2f12c2ec6d2" title="Submit a write only transaction. " alt="" coords="133,5,235,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="283,5,373,32"/></map>
+<area shape="rect" id="node2" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="133,5,235,32"/><area shape="rect" id="node3" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="283,5,373,32"/></map>
 </div>
 </p>
 
@@ -309,7 +309,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="alt__srf08_8c_source.html#l00068">68</a> of file <a class="el" href="alt__srf08_8c_source.html">alt_srf08.c</a>.</p>
 
-<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="i2c_8c_source.html#l00258">i2c_transmit()</a>, <a class="el" href="linux_2led__hw_8h_source.html#l00042">LED_ON</a>, <a class="el" href="alt__srf08_8h_source.html#l00068">SRF08_CENTIMETERS</a>, <a class="el" href="alt__srf08_8h_source.html#l00072">SRF08_COMMAND</a>, <a class="el" href="alt__srf08_8c_source.html#l00039">SRF08_I2C_DEV</a>, <a class="el" href="alt__srf08_8h_source.html#l00039">SRF08_UNIT_0</a>, and <a class="el" href="alt__srf08_8c_source.html#l00044">srf_trans</a>.</p>
+<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="i2c_8c_source.html#l00258">i2c_transmit()</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00049">LED_ON</a>, <a class="el" href="alt__srf08_8h_source.html#l00068">SRF08_CENTIMETERS</a>, <a class="el" href="alt__srf08_8h_source.html#l00072">SRF08_COMMAND</a>, <a class="el" href="alt__srf08_8c_source.html#l00039">SRF08_I2C_DEV</a>, <a class="el" href="alt__srf08_8h_source.html#l00039">SRF08_UNIT_0</a>, and <a class="el" href="alt__srf08_8c_source.html#l00044">srf_trans</a>.</p>
 
 <p>Referenced by <a class="el" href="alt__srf08_8c_source.html#l00098">srf08_ping()</a>.</p>
 
@@ -320,7 +320,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="alt__srf08_8c_a416da092feaad98fcf2bae00034c21a1_cgraph.png" border="0" usemap="#alt__srf08_8c_a416da092feaad98fcf2bae00034c21a1_cgraph" alt=""/></div>
 <map name="alt__srf08_8c_a416da092feaad98fcf2bae00034c21a1_cgraph" id="alt__srf08_8c_a416da092feaad98fcf2bae00034c21a1_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#ga68659e03504627925829f2f12c2ec6d2" title="Submit a write only transaction. " alt="" coords="212,5,313,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="361,5,452,32"/></map>
+<area shape="rect" id="node2" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="212,5,313,32"/><area shape="rect" id="node3" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="361,5,452,32"/></map>
 </div>
 </p>
 
@@ -362,7 +362,7 @@ Variables</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="alt__srf08_8c_a92037ec8ab8408bbc676f3c85e18564d_cgraph.png" border="0" usemap="#alt__srf08_8c_a92037ec8ab8408bbc676f3c85e18564d_cgraph" alt=""/></div>
 <map name="alt__srf08_8c_a92037ec8ab8408bbc676f3c85e18564d_cgraph" id="alt__srf08_8c_a92037ec8ab8408bbc676f3c85e18564d_cgraph">
-<area shape="rect" id="node2" href="alt__srf08_8c.html#a416da092feaad98fcf2bae00034c21a1" title="srf08_initiate_ranging" alt="" coords="141,5,300,32"/><area shape="rect" id="node5" href="alt__srf08_8c.html#a6f923c4979345945f33e6c927fcdf3b1" title="Ask the value to the device. " alt="" coords="167,56,274,83"/><area shape="rect" id="node3" href="group__i2c.html#ga68659e03504627925829f2f12c2ec6d2" title="Submit a write only transaction. " alt="" coords="348,31,449,57"/><area shape="rect" id="node4" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="497,31,588,57"/></map>
+<area shape="rect" id="node2" href="alt__srf08_8c.html#a416da092feaad98fcf2bae00034c21a1" title="srf08_initiate_ranging" alt="" coords="141,5,300,32"/><area shape="rect" id="node5" href="alt__srf08_8c.html#a6f923c4979345945f33e6c927fcdf3b1" title="Ask the value to the device. " alt="" coords="167,56,274,83"/><area shape="rect" id="node3" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="348,31,449,57"/><area shape="rect" id="node4" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="497,31,588,57"/></map>
 </div>
 </p>
 
@@ -386,7 +386,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="alt__srf08_8c_source.html#l00086">86</a> of file <a class="el" href="alt__srf08_8c_source.html">alt_srf08.c</a>.</p>
 
-<p>References <a class="el" href="i2c_8c_source.html#l00268">i2c_receive()</a>, <a class="el" href="alt__srf08_8c_source.html#l00043">srf08_got</a>, <a class="el" href="alt__srf08_8c_source.html#l00039">SRF08_I2C_DEV</a>, <a class="el" href="alt__srf08_8h_source.html#l00039">SRF08_UNIT_0</a>, <a class="el" href="alt__srf08_8c_source.html#l00044">srf_trans</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p>References <a class="el" href="i2c_8c_source.html#l00268">i2c_receive()</a>, <a class="el" href="alt__srf08_8c_source.html#l00043">srf08_got</a>, <a class="el" href="alt__srf08_8c_source.html#l00039">SRF08_I2C_DEV</a>, <a class="el" href="alt__srf08_8h_source.html#l00039">SRF08_UNIT_0</a>, and <a class="el" href="alt__srf08_8c_source.html#l00044">srf_trans</a>.</p>
 
 <p>Referenced by <a class="el" href="alt__srf08_8c_source.html#l00139">srf08_event()</a>.</p>
 
@@ -397,7 +397,7 @@ Variables</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="alt__srf08_8c_aff7bb98cb47578750ee4fe2d3a75d53f_cgraph.png" border="0" usemap="#alt__srf08_8c_aff7bb98cb47578750ee4fe2d3a75d53f_cgraph" alt=""/></div>
 <map name="alt__srf08_8c_aff7bb98cb47578750ee4fe2d3a75d53f_cgraph" id="alt__srf08_8c_aff7bb98cb47578750ee4fe2d3a75d53f_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#ga9bdc2f5162d3e77dd58b7541ddcbe5d1" title="Submit a read only transaction. " alt="" coords="144,5,237,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="285,5,376,32"/></map>
+<area shape="rect" id="node2" href="group__i2c.html#ga9e7c3ccd9ba7415486bfb2e52eaa3964" title="Submit a read only transaction. " alt="" coords="144,5,237,32"/><area shape="rect" id="node3" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="285,5,376,32"/></map>
 </div>
 </p>
 
@@ -439,7 +439,7 @@ Variables</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="alt__srf08_8c_afc87ea38e9fa182b1b7d444611ba9210_cgraph.png" border="0" usemap="#alt__srf08_8c_afc87ea38e9fa182b1b7d444611ba9210_cgraph" alt=""/></div>
 <map name="alt__srf08_8c_afc87ea38e9fa182b1b7d444611ba9210_cgraph" id="alt__srf08_8c_afc87ea38e9fa182b1b7d444611ba9210_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#gae029fe6bf43eaf9e46428fec7e7b91c7" title="Submit a write/read transaction. " alt="" coords="200,5,313,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="361,5,452,32"/></map>
+<area shape="rect" id="node2" href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction. " alt="" coords="200,5,313,32"/><area shape="rect" id="node3" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="361,5,452,32"/></map>
 </div>
 </p>
 
@@ -463,7 +463,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="alt__srf08_8c_source.html#l00077">77</a> of file <a class="el" href="alt__srf08_8c_source.html">alt_srf08.c</a>.</p>
 
-<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="i2c_8c_source.html#l00258">i2c_transmit()</a>, <a class="el" href="linux_2led__hw_8h_source.html#l00043">LED_OFF</a>, <a class="el" href="alt__srf08_8h_source.html#l00075">SRF08_ECHO_1</a>, <a class="el" href="alt__srf08_8c_source.html#l00039">SRF08_I2C_DEV</a>, <a class="el" href="alt__srf08_8c_source.html#l00043">srf08_received</a>, <a class="el" href="alt__srf08_8h_source.html#l00039">SRF08_UNIT_0</a>, <a class="el" href="alt__srf08_8c_source.html#l00044">srf_trans</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="i2c_8c_source.html#l00258">i2c_transmit()</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00050">LED_OFF</a>, <a class="el" href="alt__srf08_8h_source.html#l00075">SRF08_ECHO_1</a>, <a class="el" href="alt__srf08_8c_source.html#l00039">SRF08_I2C_DEV</a>, <a class="el" href="alt__srf08_8c_source.html#l00043">srf08_received</a>, <a class="el" href="alt__srf08_8h_source.html#l00039">SRF08_UNIT_0</a>, and <a class="el" href="alt__srf08_8c_source.html#l00044">srf_trans</a>.</p>
 
 <p>Referenced by <a class="el" href="alt__srf08_8c_source.html#l00098">srf08_ping()</a>.</p>
 
@@ -474,7 +474,7 @@ Variables</h2></td></tr>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="alt__srf08_8c_a6f923c4979345945f33e6c927fcdf3b1_cgraph.png" border="0" usemap="#alt__srf08_8c_a6f923c4979345945f33e6c927fcdf3b1_cgraph" alt=""/></div>
 <map name="alt__srf08_8c_a6f923c4979345945f33e6c927fcdf3b1_cgraph" id="alt__srf08_8c_a6f923c4979345945f33e6c927fcdf3b1_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#ga68659e03504627925829f2f12c2ec6d2" title="Submit a write only transaction. " alt="" coords="160,5,261,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="309,5,400,32"/></map>
+<area shape="rect" id="node2" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="160,5,261,32"/><area shape="rect" id="node3" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="309,5,400,32"/></map>
 </div>
 </p>
 
@@ -492,12 +492,12 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="ab426ebf96debca4147f2de04cf18ab76"></a>
+<a class="anchor" id="a643c85c0c68ae638652791bd6635065c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool_t srf08_got</td>
+          <td class="memname">bool srf08_got</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -524,12 +524,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aea161ae5c89625f70b0e4d62a04a39e3"></a>
+<a class="anchor" id="a9f7107faa44124b41f3434c4e16f439d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool_t srf08_received</td>
+          <td class="memname">bool srf08_received</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -562,7 +562,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="alt__srf08_8c.html">alt_srf08.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:56 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:04 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

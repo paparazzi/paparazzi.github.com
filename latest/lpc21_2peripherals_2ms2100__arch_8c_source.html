@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -180,14 +180,14 @@ $(document).ready(function(){initNavTree('lpc21_2peripherals_2ms2100__arch_8c_so
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="comment">// storing start and dt is probably long enough...</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="lpc21_2peripherals_2ms2100__arch_8h.html#a6a69f6973e6b5865b4d1bdfa51ab5fdf">Ms2100Set</a>();</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> start = <a class="code" href="LPC21xx_8h.html#acc99e4d315de652060365cb4a634d071">T0TC</a>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> dt = <a class="code" href="sys__time_8h.html#ab9fdc67ec3fff3769bebcd04e7ee86c2">cpu_ticks_of_nsec</a>(110);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="optical__flow__landing_8c.html#a778e38aa889751afffa2dea6b803e67a">dt</a> = <a class="code" href="sys__time_8h.html#ab9fdc67ec3fff3769bebcd04e7ee86c2">cpu_ticks_of_nsec</a>(110);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordflow">while</span> ((<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)(<a class="code" href="LPC21xx_8h.html#acc99e4d315de652060365cb4a634d071">T0TC</a> - start) &lt; dt);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="lpc21_2peripherals_2ms2100__arch_8h.html#ae09cc3bfbac5bb19b7a8c3efd1ca3c80">Ms2100Reset</a>();</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
 <div class="ttc" id="LPC21xx_8h_html_a87f793a1b9254ca2dec755c61184a715"><div class="ttname"><a href="LPC21xx_8h.html#a87f793a1b9254ca2dec755c61184a715">VICIntSelect</a></div><div class="ttdeci">#define VICIntSelect</div><div class="ttdef"><b>Definition:</b> <a href="LPC21xx_8h_source.html#l00430">LPC21xx.h:430</a></div></div>
 <div class="ttc" id="booz__1_80_8h_html_a220f78f534d61dbbd5756a6aa0452b03"><div class="ttname"><a href="booz__1_80_8h.html#a220f78f534d61dbbd5756a6aa0452b03">MS2100_DRDY_PINSEL_VAL</a></div><div class="ttdeci">#define MS2100_DRDY_PINSEL_VAL</div><div class="ttdef"><b>Definition:</b> <a href="booz__1_80_8h_source.html#l00150">booz_1.0.h:150</a></div></div>
-<div class="ttc" id="sys__time_8h_html_ab9fdc67ec3fff3769bebcd04e7ee86c2"><div class="ttname"><a href="sys__time_8h.html#ab9fdc67ec3fff3769bebcd04e7ee86c2">cpu_ticks_of_nsec</a></div><div class="ttdeci">static uint32_t cpu_ticks_of_nsec(uint32_t nsec)</div><div class="ttdef"><b>Definition:</b> <a href="sys__time_8h_source.html#l00183">sys_time.h:183</a></div></div>
+<div class="ttc" id="sys__time_8h_html_ab9fdc67ec3fff3769bebcd04e7ee86c2"><div class="ttname"><a href="sys__time_8h.html#ab9fdc67ec3fff3769bebcd04e7ee86c2">cpu_ticks_of_nsec</a></div><div class="ttdeci">static uint32_t cpu_ticks_of_nsec(uint32_t nsec)</div><div class="ttdef"><b>Definition:</b> <a href="sys__time_8h_source.html#l00188">sys_time.h:188</a></div></div>
 <div class="ttc" id="booz__1_80_8h_html_a8a5e2eca7376532b45b7f8b8b494a24b"><div class="ttname"><a href="booz__1_80_8h.html#a8a5e2eca7376532b45b7f8b8b494a24b">MS2100_DRDY_EINT</a></div><div class="ttdeci">#define MS2100_DRDY_EINT</div><div class="ttdef"><b>Definition:</b> <a href="booz__1_80_8h_source.html#l00151">booz_1.0.h:151</a></div></div>
 <div class="ttc" id="lpc21_2peripherals_2ms2100__arch_8c_html_a9bf3da0c1ae5359ecca54d4da98f259b"><div class="ttname"><a href="lpc21_2peripherals_2ms2100__arch_8c.html#a9bf3da0c1ae5359ecca54d4da98f259b">EXTINT_ISR</a></div><div class="ttdeci">static void EXTINT_ISR(void)</div><div class="ttdef"><b>Definition:</b> <a href="lpc21_2peripherals_2ms2100__arch_8c_source.html#l00060">ms2100_arch.c:60</a></div></div>
 <div class="ttc" id="ms2100_8h_html"><div class="ttname"><a href="ms2100_8h.html">ms2100.h</a></div><div class="ttdoc">Driver for the ms2100 magnetic sensor from PNI. </div></div>
@@ -195,6 +195,7 @@ $(document).ready(function(){initNavTree('lpc21_2peripherals_2ms2100__arch_8c_so
 <div class="ttc" id="lpc21_2peripherals_2ms2100__arch_8c_html_aebb1f87ab92e583e78e79686e935e3b8"><div class="ttname"><a href="lpc21_2peripherals_2ms2100__arch_8c.html#aebb1f87ab92e583e78e79686e935e3b8">ms2100_reset_cb</a></div><div class="ttdeci">void ms2100_reset_cb(struct spi_transaction *t)</div><div class="ttdoc">Reset callback. </div><div class="ttdef"><b>Definition:</b> <a href="lpc21_2peripherals_2ms2100__arch_8c_source.html#l00071">ms2100_arch.c:71</a></div></div>
 <div class="ttc" id="group__spi_html_structspi__transaction"><div class="ttname"><a href="group__spi.html#structspi__transaction">spi_transaction</a></div><div class="ttdoc">SPI transaction structure. </div><div class="ttdef"><b>Definition:</b> <a href="spi_8h_source.html#l00142">spi.h:142</a></div></div>
 <div class="ttc" id="LPC21xx_8h_html_a6b7d1399a94b686e878b95b16b46ff4a"><div class="ttname"><a href="LPC21xx_8h.html#a6b7d1399a94b686e878b95b16b46ff4a">EXTMODE</a></div><div class="ttdeci">#define EXTMODE</div><div class="ttdef"><b>Definition:</b> <a href="LPC21xx_8h_source.html#l00419">LPC21xx.h:419</a></div></div>
+<div class="ttc" id="optical__flow__landing_8c_html_a778e38aa889751afffa2dea6b803e67a"><div class="ttname"><a href="optical__flow__landing_8c.html#a778e38aa889751afffa2dea6b803e67a">dt</a></div><div class="ttdeci">float dt</div><div class="ttdef"><b>Definition:</b> <a href="optical__flow__landing_8c_source.html#l00044">optical_flow_landing.c:44</a></div></div>
 <div class="ttc" id="armVIC_8h_html_a9981283e4fb9cc3322368f2aa07e3256"><div class="ttname"><a href="armVIC_8h.html#a9981283e4fb9cc3322368f2aa07e3256">_VIC_ADDR</a></div><div class="ttdeci">#define _VIC_ADDR(idx)</div><div class="ttdef"><b>Definition:</b> <a href="armVIC_8h_source.html#l00020">armVIC.h:20</a></div></div>
 <div class="ttc" id="LPC21xx_8h_html_ac9d407f43c17d5499f0d9ccd9acbf256"><div class="ttname"><a href="LPC21xx_8h.html#ac9d407f43c17d5499f0d9ccd9acbf256">EXTPOLAR</a></div><div class="ttdeci">#define EXTPOLAR</div><div class="ttdef"><b>Definition:</b> <a href="LPC21xx_8h_source.html#l00420">LPC21xx.h:420</a></div></div>
 <div class="ttc" id="LPC21xx_8h_html_a8cc44522d2f5b706b3af5b839c0ba3ff"><div class="ttname"><a href="LPC21xx_8h.html#a8cc44522d2f5b706b3af5b839c0ba3ff">EXTINT</a></div><div class="ttdeci">#define EXTINT</div><div class="ttdef"><b>Definition:</b> <a href="LPC21xx_8h_source.html#l00417">LPC21xx.h:417</a></div></div>
@@ -226,7 +227,7 @@ $(document).ready(function(){initNavTree('lpc21_2peripherals_2ms2100__arch_8c_so
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_3f7617cb4a5e4fe5cc816b7b3bbdea3a.html">lpc21</a></li><li class="navelem"><a class="el" href="dir_5d7ae59593b0b392aca5c44e98941c8a.html">peripherals</a></li><li class="navelem"><a class="el" href="lpc21_2peripherals_2ms2100__arch_8c.html">ms2100_arch.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:14 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:14 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

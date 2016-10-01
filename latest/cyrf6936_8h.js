@@ -4,7 +4,7 @@ var cyrf6936_8h =
       [ "buffer", "cyrf6936_8h.html#a8f8ad7b672b42a6f2c272c8316bd2102", null ],
       [ "buffer_idx", "cyrf6936_8h.html#a34f548bf3fa4f65b9de6b2f90101220f", null ],
       [ "buffer_length", "cyrf6936_8h.html#a593dc9952b96bd91d2a2d4a55bea0bb6", null ],
-      [ "has_irq", "cyrf6936_8h.html#acb983f0e07fc0b6d144cb24a94e2bed5", null ],
+      [ "has_irq", "cyrf6936_8h.html#a87b76fe274cbf7fe1b83e21414a6f520", null ],
       [ "input_buf", "cyrf6936_8h.html#aa8664c0ed6c3430db8a18b548597f27e", null ],
       [ "mfg_id", "cyrf6936_8h.html#acdcddf8d259f958e10152dda328b8f4b", null ],
       [ "output_buf", "cyrf6936_8h.html#ace1deff46f4385f20a6f3d24fbb5f72a", null ],
@@ -30,9 +30,9 @@ var cyrf6936_8h =
     ] ],
     [ "cyrf6936_event", "cyrf6936_8h.html#a0b25c82679dcd151cb4eb29986f796c9", null ],
     [ "cyrf6936_init", "cyrf6936_8h.html#a27414d1e4d63182c97357b576f05b37d", null ],
-    [ "cyrf6936_multi_write", "cyrf6936_8h.html#aea93d334c6b5a34fd4fe091651615899", null ],
-    [ "cyrf6936_read_rx_irq_status_packet", "cyrf6936_8h.html#ac612fa269771daac99e71f77d36bb182", null ],
-    [ "cyrf6936_send", "cyrf6936_8h.html#a0053a9b2d322398bd788e50b4c23a5a7", null ],
-    [ "cyrf6936_write", "cyrf6936_8h.html#ad5821facd4c9ce68d5ac64984a054f56", null ],
-    [ "cyrf6936_write_chan_sop_data_crc", "cyrf6936_8h.html#ac85bb2b026a6bba48441cf8b1bc0592f", null ]
+    [ "cyrf6936_multi_write", "cyrf6936_8h.html#a3b40b6f25aa27591a77e570e7bd0de49", null ],
+    [ "cyrf6936_read_rx_irq_status_packet", "cyrf6936_8h.html#a9476a030cd1c1812dd9415f8913c35f6", null ],
+    [ "cyrf6936_send", "cyrf6936_8h.html#ab2e2ab2d19b97905d2c9825f65cddfda", null ],
+    [ "cyrf6936_write", "cyrf6936_8h.html#a5bd95c0f89a44a38d8fc8b71a8d1b2b3", null ],
+    [ "cyrf6936_write_chan_sop_data_crc", "cyrf6936_8h.html#a5185bf5f551b606637aaba99a2de5934", null ]
 ];

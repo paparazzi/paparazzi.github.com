@@ -3,9 +3,9 @@ var sys__time_8h =
     [ "sys_time_timer", "sys__time_8h.html#structsys__time__timer", [
       [ "cb", "sys__time_8h.html#aaa0e8ec5a4704566e6877120e3c4e972", null ],
       [ "duration", "sys__time_8h.html#a3fe39118ebee61c56c1e065f5426b14d", null ],
-      [ "elapsed", "sys__time_8h.html#af705c881b01c20d92164b4c111f57acb", null ],
+      [ "elapsed", "sys__time_8h.html#ae44957ae49ba487c63dd3dae046552d1", null ],
       [ "end_time", "sys__time_8h.html#abbf23b4993e74efe48aef5d7c8bfe0dd", null ],
-      [ "in_use", "sys__time_8h.html#aec2dfa371d0ca5faadc5fdc35108fdfe", null ]
+      [ "in_use", "sys__time_8h.html#acb375b5e91017b96990e9df974a6f66c", null ]
     ] ],
     [ "sys_time", "sys__time_8h.html#structsys__time", [
       [ "cpu_ticks_per_sec", "sys__time_8h.html#a3c72a20e3a9db56e14d54c8c7cbac0f3", null ],
@@ -24,7 +24,7 @@ var sys__time_8h =
     [ "SysTimeTimerStop", "sys__time_8h.html#abb950f6634af7da754fa0c6d99d689cb", null ],
     [ "USEC_OF_SEC", "sys__time_8h.html#a16b92e3e15d99fcf7029503763a63b61", null ],
     [ "sys_time_cb", "sys__time_8h.html#a7c75e80c3211af63abc57efa18647726", null ],
-    [ "tid_t", "sys__time_8h.html#aa448b29ae120d238dba2cb20079540ab", null ],
+    [ "tid_t", "sys__time_8h.html#afd62afa1c6cefa443f9c9f6aa1e03dae", null ],
     [ "cpu_ticks_of_nsec", "sys__time_8h.html#ab9fdc67ec3fff3769bebcd04e7ee86c2", null ],
     [ "cpu_ticks_of_sec", "sys__time_8h.html#ac32566a6fc1f80520e4484ce581f45a5", null ],
     [ "cpu_ticks_of_usec", "sys__time_8h.html#a8ef407ab9dc5065c7e7768da22bd2ab7", null ],
@@ -36,9 +36,9 @@ var sys__time_8h =
     [ "signed_cpu_ticks_of_usec", "sys__time_8h.html#afdc0536d84c25c04c02195269a3eaed0", null ],
     [ "sys_time_arch_init", "sys__time_8h.html#a9b31c2feb846b96205ae20ea6883e1c4", null ],
     [ "sys_time_cancel_timer", "sys__time_8h.html#ac2ade8af0c9fbbf866026d99d60f9769", null ],
-    [ "sys_time_check_and_ack_timer", "sys__time_8h.html#a2fbb0aec3597ef35c23aeb7d376d1666", null ],
+    [ "sys_time_check_and_ack_timer", "sys__time_8h.html#a51e98e20394934c8db19022ab2adc4c1", null ],
     [ "sys_time_init", "sys__time_8h.html#a1e6b75f4db9128a3326d8a6283b0af43", null ],
-    [ "sys_time_register_timer", "sys__time_8h.html#a60ef6df0154a4b93f4424fd809c466a3", null ],
+    [ "sys_time_register_timer", "sys__time_8h.html#a3ababed8b6819006aaf919a663efe8cd", null ],
     [ "sys_time_ticks_of_msec", "sys__time_8h.html#abbcaf989fa430c72909add47bb557d8e", null ],
     [ "sys_time_ticks_of_sec", "sys__time_8h.html#a2894f16d75a4d3c6ad1449d7bba85406", null ],
     [ "sys_time_ticks_of_usec", "sys__time_8h.html#a46ccccbd8fdf3b1c359475fd05bebd0b", null ],

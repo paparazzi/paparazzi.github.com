@@ -27,7 +27,7 @@ var baro__scp_8c =
     [ "baro_scp_start_high_res_measurement", "baro__scp_8c.html#a550d0f8163f4c79ce3c4e77ac6f02fa4", null ],
     [ "EXTINT_ISR", "baro__scp_8c.html#a9bf3da0c1ae5359ecca54d4da98f259b", null ],
     [ "SPI1_ISR", "baro__scp_8c.html#a65d6ea131026affbdf33be235dfdb49d", null ],
-    [ "baro_scp_available", "baro__scp_8c.html#a10ba98ea76fa38059612895e866cbc46", null ],
+    [ "baro_scp_available", "baro__scp_8c.html#a8776cbecbf4f35a343275117724a3261", null ],
     [ "baro_scp_pressure", "baro__scp_8c.html#a2686105e872eba82758010dbb3c91c99", null ],
     [ "baro_scp_status", "baro__scp_8c.html#a2fe023fc4063f461db08521dd732f13a", null ],
     [ "baro_scp_temperature", "baro__scp_8c.html#afc76d1091765349f7cc77bef8db5b95b", null ]

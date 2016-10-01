@@ -6,6 +6,8 @@ var dir_3d64810a495a8e63c02e8d4ee1418813 =
     [ "guidance_h.h", "guidance__h_8h.html", "guidance__h_8h" ],
     [ "guidance_h_ref.c", "guidance__h__ref_8c.html", "guidance__h__ref_8c" ],
     [ "guidance_h_ref.h", "guidance__h__ref_8h.html", "guidance__h__ref_8h" ],
+    [ "guidance_hybrid.c", "guidance__hybrid_8c.html", "guidance__hybrid_8c" ],
+    [ "guidance_hybrid.h", "guidance__hybrid_8h.html", "guidance__hybrid_8h" ],
     [ "guidance_indi.c", "guidance__indi_8c.html", "guidance__indi_8c" ],
     [ "guidance_indi.h", "guidance__indi_8h.html", "guidance__indi_8h" ],
     [ "guidance_module.h", "guidance__module_8h.html", null ],

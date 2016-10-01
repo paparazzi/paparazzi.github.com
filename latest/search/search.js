@@ -11,14 +11,14 @@ var indexSectionsWithContent =
   1: "_abcdefghijlmnoprstuvwxz",
   2: "l",
   3: "abcdefghijklmnopqrstuvwxy",
-  4: "_abcdefghijklmnopqrstuvwx",
+  4: "_abcdefghijklmnopqrstuvwxy",
   5: "_abcdefghijklmnopqrstuvwxyz",
-  6: "abcegijmopstu",
-  7: "abcdefghilmopstuvwz",
-  8: "abcdefghilmnoprstuvwyz",
+  6: "abcdfgijmprstuw",
+  7: "abcdefghilmnopstuvwz",
+  8: "abcdefghijlmnoprstuvwyz",
   9: "_abcdefghijklmnopqrstuvwxyz",
-  10: "adfgilmpsuw",
-  11: "abcdefghilmnopqrstuvwxz"
+  10: "acdfghilmpsuw",
+  11: "abcdefghilmnoprstuvwx"
 };
 
 var indexSectionNames =

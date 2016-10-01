@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -134,30 +134,35 @@ $(document).ready(function(){initNavTree('gps__piksi_8h_source.html','');});
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#ifndef GPS_PIKSI_H</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#define GPS_PIKSI_H</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="gps__piksi_8h.html#a63f1b81cf4a1e8e0fe80f065224826fe">   35</a></span>&#160;<span class="preprocessor">#define GPS_NB_CHANNELS 10</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gps__piksi_8h.html#a2a11e7df7bcc31ab10141f020bd6f729">gps_piksi_event</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#ifndef PRIMARY_GPS</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="gps__piksi_8h.html#a0eb39777eac135c917af2eed39cce7f1">   36</a></span>&#160;<span class="preprocessor">#define PRIMARY_GPS GPS_PIKSI</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"> * Reset base station position</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gps__piksi_8h.html#a9ec75c4fb4547c74deee1404c0594d31">gps_piksi_set_base_pos</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="gps_8h.html#structGpsState">GpsState</a> <a class="code" href="gps__piksi_8h.html#a42998e99427a3b652810c79ecdab4753">gps_piksi</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gps__piksi_8h.html#a2a11e7df7bcc31ab10141f020bd6f729">gps_piksi_event</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gps__piksi_8h.html#a2fcb9204061227b94027a135c469c4b5">gps_piksi_init</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"> * The GPS event</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="gps__piksi_8h.html#ad43d03c9717a93b3211d8694ebf3a79d">   47</a></span>&#160;<span class="preprocessor">#define GpsEvent gps_piksi_event</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GPS_PIKSI_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="gps__piksi_8h.html#afabc093b8c05f5e03d971f9db36675f0">   44</a></span>&#160;<span class="preprocessor">#define gps_piksi_periodic_check() gps_periodic_check(&amp;gps_piksi)</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"> * Reset base station position</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gps__piksi_8h.html#a9ec75c4fb4547c74deee1404c0594d31">gps_piksi_set_base_pos</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GPS_PIKSI_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="gps__piksi_8h_html_a9ec75c4fb4547c74deee1404c0594d31"><div class="ttname"><a href="gps__piksi_8h.html#a9ec75c4fb4547c74deee1404c0594d31">gps_piksi_set_base_pos</a></div><div class="ttdeci">void gps_piksi_set_base_pos(void)</div></div>
-<div class="ttc" id="gps__piksi_8h_html_a2a11e7df7bcc31ab10141f020bd6f729"><div class="ttname"><a href="gps__piksi_8h.html#a2a11e7df7bcc31ab10141f020bd6f729">gps_piksi_event</a></div><div class="ttdeci">void gps_piksi_event(void)</div><div class="ttdef"><b>Definition:</b> <a href="gps__piksi_8c_source.html#l00312">gps_piksi.c:312</a></div></div>
+<div class="ttc" id="gps__piksi_8h_html_a2fcb9204061227b94027a135c469c4b5"><div class="ttname"><a href="gps__piksi_8h.html#a2fcb9204061227b94027a135c469c4b5">gps_piksi_init</a></div><div class="ttdeci">void gps_piksi_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="gps__piksi_8c_source.html#l00308">gps_piksi.c:308</a></div></div>
+<div class="ttc" id="gps_8h_html_structGpsState"><div class="ttname"><a href="gps_8h.html#structGpsState">GpsState</a></div><div class="ttdoc">data structure for GPS information </div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00081">gps.h:81</a></div></div>
+<div class="ttc" id="gps__piksi_8h_html_a42998e99427a3b652810c79ecdab4753"><div class="ttname"><a href="gps__piksi_8h.html#a42998e99427a3b652810c79ecdab4753">gps_piksi</a></div><div class="ttdeci">struct GpsState gps_piksi</div><div class="ttdef"><b>Definition:</b> <a href="gps__piksi_8c_source.html#l00059">gps_piksi.c:59</a></div></div>
+<div class="ttc" id="gps__piksi_8h_html_a2a11e7df7bcc31ab10141f020bd6f729"><div class="ttname"><a href="gps__piksi_8h.html#a2a11e7df7bcc31ab10141f020bd6f729">gps_piksi_event</a></div><div class="ttdeci">void gps_piksi_event(void)</div><div class="ttdef"><b>Definition:</b> <a href="gps__piksi_8c_source.html#l00349">gps_piksi.c:349</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8c4cbb881db224ddaf0756e79ed706ce.html">gps</a></li><li class="navelem"><a class="el" href="gps__piksi_8h.html">gps_piksi.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:31 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:32 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

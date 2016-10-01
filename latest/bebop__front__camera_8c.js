@@ -10,7 +10,7 @@ var bebop__front__camera_8c =
     [ "bebop_front_camera_save_shot", "bebop__front__camera_8c.html#aae423a991ed799c617921a4da12fb892", null ],
     [ "bebop_front_camera_start", "bebop__front__camera_8c.html#a179ce25d44bf966f12b86e3a96654161", null ],
     [ "bebop_front_camera_stop", "bebop__front__camera_8c.html#a0d7809aeb37e14ff8ce26de45fd84b1d", null ],
-    [ "bebop_front_camera_take_shot", "bebop__front__camera_8c.html#af6ec296ded4666344eb8f568d6403f9a", null ],
+    [ "bebop_front_camera_take_shot", "bebop__front__camera_8c.html#ad38f4e337b29cf2ea903f9a693aea1f9", null ],
     [ "bebop_front_camera_thread", "bebop__front__camera_8c.html#a63cb60d57fb10579691954003dc4491e", null ],
     [ "bebop_front_camera", "bebop__front__camera_8c.html#a61c760b87f36b480ce7d2afa787ce7ee", null ]
 ];

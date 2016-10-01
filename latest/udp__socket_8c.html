@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -144,9 +144,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:add3ac7d3bb65bcff12ae832ec1a2e715"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp__socket_8c.html#add3ac7d3bb65bcff12ae832ec1a2e715">udp_socket_create</a> (struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *sock, char *host, int port_out, int port_in, bool_t broadcast)</td></tr>
-<tr class="memdesc:add3ac7d3bb65bcff12ae832ec1a2e715"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create UDP socket and bind it.  <a href="#add3ac7d3bb65bcff12ae832ec1a2e715">More...</a><br /></td></tr>
-<tr class="separator:add3ac7d3bb65bcff12ae832ec1a2e715"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8904d535adc73468cfa9e57a71f6de72"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp__socket_8c.html#a8904d535adc73468cfa9e57a71f6de72">udp_socket_create</a> (struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *sock, char *host, int port_out, int port_in, bool broadcast)</td></tr>
+<tr class="memdesc:a8904d535adc73468cfa9e57a71f6de72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create UDP socket and bind it.  <a href="#a8904d535adc73468cfa9e57a71f6de72">More...</a><br /></td></tr>
+<tr class="separator:a8904d535adc73468cfa9e57a71f6de72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecfcc8613d12918640f626ebe55e169d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp__socket_8c.html#aecfcc8613d12918640f626ebe55e169d">udp_socket_send</a> (struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *sock, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buffer, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> len)</td></tr>
 <tr class="memdesc:aecfcc8613d12918640f626ebe55e169d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a packet from buffer, blocking.  <a href="#aecfcc8613d12918640f626ebe55e169d">More...</a><br /></td></tr>
 <tr class="separator:aecfcc8613d12918640f626ebe55e169d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -222,7 +222,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="add3ac7d3bb65bcff12ae832ec1a2e715"></a>
+<a class="anchor" id="a8904d535adc73468cfa9e57a71f6de72"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -253,7 +253,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool_t&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>broadcast</em>&#160;</td>
         </tr>
         <tr>
@@ -282,16 +282,16 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="udp__socket_8h_source.html#l00036">UdpSocket::addr_in</a>, <a class="el" href="udp__socket_8h_source.html#l00037">UdpSocket::addr_out</a>, and <a class="el" href="udp__socket_8h_source.html#l00035">UdpSocket::sockfd</a>.</p>
 
-<p>Referenced by <a class="el" href="bebop__front__camera_8c_source.html#l00081">bebop_front_camera_thread()</a>, <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00069">udp_arch_periph_init()</a>, and <a class="el" href="viewvideo_8c_source.html#l00198">viewvideo_init()</a>.</p>
+<p>Referenced by <a class="el" href="bebop__front__camera_8c_source.html#l00081">bebop_front_camera_thread()</a>, <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00069">udp_arch_periph_init()</a>, and <a class="el" href="viewvideo_8c_source.html#l00213">viewvideo_init()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="udp__socket_8c_add3ac7d3bb65bcff12ae832ec1a2e715_icgraph.png" border="0" usemap="#udp__socket_8c_add3ac7d3bb65bcff12ae832ec1a2e715_icgraph" alt=""/></div>
-<map name="udp__socket_8c_add3ac7d3bb65bcff12ae832ec1a2e715_icgraph" id="udp__socket_8c_add3ac7d3bb65bcff12ae832ec1a2e715_icgraph">
-<area shape="rect" id="node2" href="bebop__front__camera_8c.html#a63cb60d57fb10579691954003dc4491e" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="196,5,351,47"/><area shape="rect" id="node4" href="udp_8h.html#a1941c4227cc54d1cb993bf7cced357e4" title="Initialize the UDP peripheral. " alt="" coords="196,71,351,98"/><area shape="rect" id="node6" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. " alt="" coords="219,122,328,149"/><area shape="rect" id="node3" href="bebop__front__camera_8h.html#a179ce25d44bf966f12b86e3a96654161" title="Start with streaming. " alt="" coords="399,5,553,47"/><area shape="rect" id="node5" href="udp_8h.html#a4ace77e7dc5a031ba9f5b1298860487a" title="Initialize the UDP peripheral. " alt="" coords="417,71,535,98"/></map>
+<div class="center"><img src="udp__socket_8c_a8904d535adc73468cfa9e57a71f6de72_icgraph.png" border="0" usemap="#udp__socket_8c_a8904d535adc73468cfa9e57a71f6de72_icgraph" alt=""/></div>
+<map name="udp__socket_8c_a8904d535adc73468cfa9e57a71f6de72_icgraph" id="udp__socket_8c_a8904d535adc73468cfa9e57a71f6de72_icgraph">
+<area shape="rect" id="node2" href="bebop__front__camera_8c.html#a63cb60d57fb10579691954003dc4491e" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="196,5,351,47"/><area shape="rect" id="node4" href="udp_8h.html#a26342423a340c1420dbb8081d9fdd407" title="Initialize the UDP peripheral. " alt="" coords="196,71,351,98"/><area shape="rect" id="node6" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. " alt="" coords="219,122,328,149"/><area shape="rect" id="node3" href="bebop__front__camera_8h.html#a179ce25d44bf966f12b86e3a96654161" title="Start with streaming. " alt="" coords="399,5,553,47"/><area shape="rect" id="node5" href="udp_8h.html#a1f1d82b302692d0e1c6b01db1b03f6ea" title="Initialize the UDP peripheral. " alt="" coords="417,71,535,98"/></map>
 </div>
 </p>
 
@@ -493,7 +493,7 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="udp__socket_8c_a2c3da4bd5d683ae6c844649fac79f13d_icgraph.png" border="0" usemap="#udp__socket_8c_a2c3da4bd5d683ae6c844649fac79f13d_icgraph" alt=""/></div>
 <map name="udp__socket_8c_a2c3da4bd5d683ae6c844649fac79f13d_icgraph" id="udp__socket_8c_a2c3da4bd5d683ae6c844649fac79f13d_icgraph">
-<area shape="rect" id="node2" href="rtp_8c.html#a7b661ee336df15cbee60fda1d7263247" title="rtp_packet_send" alt="" coords="248,46,376,73"/><area shape="rect" id="node3" href="rtp_8h.html#a6c9aa998b02c9ff5099bb3fc6bbc2b5e" title="Send a test RTP frame. " alt="" coords="427,21,544,47"/><area shape="rect" id="node4" href="rtp_8h.html#ab810dc7d46e209624e4edd330edb7bf7" title="Send an RTP frame. " alt="" coords="424,71,547,98"/><area shape="rect" id="node5" href="bebop__front__camera_8c.html#a63cb60d57fb10579691954003dc4491e" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="599,5,754,47"/><area shape="rect" id="node7" href="opticflow__module_8c.html#a55f848033134662d4f93cd9cbef5acac" title="The main optical flow calculation thread. " alt="" coords="595,71,759,98"/><area shape="rect" id="node9" href="viewvideo_8c.html#a6a9f8aa0c7db5b292f18c8266808fe62" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="606,122,747,149"/><area shape="rect" id="node6" href="bebop__front__camera_8h.html#a179ce25d44bf966f12b86e3a96654161" title="Start with streaming. " alt="" coords="814,5,969,47"/><area shape="rect" id="node8" href="opticflow__module_8h.html#a74f8b561efed21509627b8ebacc72eea" title="Start the optical flow calculation. " alt="" coords="807,71,976,98"/><area shape="rect" id="node10" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. " alt="" coords="837,122,946,149"/></map>
+<area shape="rect" id="node2" href="rtp_8c.html#a7b661ee336df15cbee60fda1d7263247" title="rtp_packet_send" alt="" coords="248,31,376,57"/><area shape="rect" id="node3" href="rtp_8h.html#a6c9aa998b02c9ff5099bb3fc6bbc2b5e" title="Send a test RTP frame. " alt="" coords="427,5,544,32"/><area shape="rect" id="node4" href="rtp_8h.html#ab810dc7d46e209624e4edd330edb7bf7" title="Send an RTP frame. " alt="" coords="424,56,547,83"/><area shape="rect" id="node5" href="bebop__front__camera_8c.html#a63cb60d57fb10579691954003dc4491e" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="595,19,749,61"/><area shape="rect" id="node7" href="viewvideo_8c.html#aaa64c7de292e7ac10b442216cc49dcab" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="601,85,743,112"/><area shape="rect" id="node6" href="bebop__front__camera_8h.html#a179ce25d44bf966f12b86e3a96654161" title="Start with streaming. " alt="" coords="797,19,952,61"/><area shape="rect" id="node8" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. " alt="" coords="820,85,929,112"/></map>
 </div>
 </p>
 
@@ -565,7 +565,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_92fbf38b8c893a0928a3445a75d0ac01.html">linux</a></li><li class="navelem"><a class="el" href="udp__socket_8c.html">udp_socket.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:34 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:38 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

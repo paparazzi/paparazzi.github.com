@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -132,22 +132,21 @@ $(document).ready(function(){initNavTree('ins__vectornav__wrapper_8c_source.html
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ins__vectornav__wrapper_8h.html">subsystems/ins/ins_vectornav_wrapper.h</a>&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="ins__vectornav__wrapper_8h.html#a465857e7a84da756dbee9d867dcdb140">   32</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ins__vectornav__wrapper_8c.html#a465857e7a84da756dbee9d867dcdb140">ins_vectornav_register</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="ins_8c.html#a97859a3a9b4a1eff5d7b78e009857a8d">ins_register_impl</a>(<a class="code" href="ins__vectornav_8c.html#abccde82fac73ee723125e1173db630c0">ins_vectornav_init</a>);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="ins__vectornav__wrapper_8h.html#a8cb4d40c4d33f492077ddd23fbf8cde5">   31</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ins__vectornav__wrapper_8c.html#a8cb4d40c4d33f492077ddd23fbf8cde5">gps_vectornav_init</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d">gps</a>.<a class="code" href="gps_8h.html#a9d430d7c900b362327e4fd9551a6aae6">nb_channels</a> = 0;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="ttc" id="gps_8h_html_a9d430d7c900b362327e4fd9551a6aae6"><div class="ttname"><a href="gps_8h.html#a9d430d7c900b362327e4fd9551a6aae6">GpsState::nb_channels</a></div><div class="ttdeci">uint8_t nb_channels</div><div class="ttdoc">Number of scanned satellites. </div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00103">gps.h:103</a></div></div>
 <div class="ttc" id="ins__vectornav__wrapper_8h_html"><div class="ttname"><a href="ins__vectornav__wrapper_8h.html">ins_vectornav_wrapper.h</a></div><div class="ttdoc">Vectornav VN-200 INS subsystem. </div></div>
-<div class="ttc" id="ins__vectornav__wrapper_8c_html_a465857e7a84da756dbee9d867dcdb140"><div class="ttname"><a href="ins__vectornav__wrapper_8c.html#a465857e7a84da756dbee9d867dcdb140">ins_vectornav_register</a></div><div class="ttdeci">void ins_vectornav_register(void)</div><div class="ttdef"><b>Definition:</b> <a href="ins__vectornav__wrapper_8c_source.html#l00032">ins_vectornav_wrapper.c:32</a></div></div>
-<div class="ttc" id="ins_8c_html_a97859a3a9b4a1eff5d7b78e009857a8d"><div class="ttname"><a href="ins_8c.html#a97859a3a9b4a1eff5d7b78e009857a8d">ins_register_impl</a></div><div class="ttdeci">void ins_register_impl(InsInit init)</div><div class="ttdef"><b>Definition:</b> <a href="ins_8c_source.html#l00053">ins.c:53</a></div></div>
-<div class="ttc" id="ins__vectornav_8c_html_abccde82fac73ee723125e1173db630c0"><div class="ttname"><a href="ins__vectornav_8c.html#abccde82fac73ee723125e1173db630c0">ins_vectornav_init</a></div><div class="ttdeci">void ins_vectornav_init(void)</div><div class="ttdoc">Initialize Vectornav struct. </div><div class="ttdef"><b>Definition:</b> <a href="ins__vectornav_8c_source.html#l00123">ins_vectornav.c:123</a></div></div>
+<div class="ttc" id="ins__vectornav__wrapper_8c_html_a8cb4d40c4d33f492077ddd23fbf8cde5"><div class="ttname"><a href="ins__vectornav__wrapper_8c.html#a8cb4d40c4d33f492077ddd23fbf8cde5">gps_vectornav_init</a></div><div class="ttdeci">void gps_vectornav_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="ins__vectornav__wrapper_8c_source.html#l00031">ins_vectornav_wrapper.c:31</a></div></div>
+<div class="ttc" id="gps_8c_html_a5cf954024f8e0433b21db7439c5bee9d"><div class="ttname"><a href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d">gps</a></div><div class="ttdeci">struct GpsState gps</div><div class="ttdoc">global GPS state </div><div class="ttdef"><b>Definition:</b> <a href="gps_8c_source.html#l00075">gps.c:75</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_800f0b451dc44a2b86d16d857cea778d.html">ins</a></li><li class="navelem"><a class="el" href="ins__vectornav__wrapper_8c.html">ins_vectornav_wrapper.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:32 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:34 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

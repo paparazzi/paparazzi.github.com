@@ -4,8 +4,8 @@ var guidance__indi_8c =
     [ "guidance_indi_enter", "guidance__indi_8c.html#a638dd6a545987ce3e0a8c8cef1e3481c", null ],
     [ "guidance_indi_filter_accel", "guidance__indi_8c.html#a2615938cf5f86d9b2f1a0de21ac8d983", null ],
     [ "guidance_indi_filter_attitude", "guidance__indi_8c.html#ae40b411f26831e1ed76b9ea272b683f7", null ],
-    [ "guidance_indi_run", "guidance__indi_8c.html#a24d1024bbd8da21b6c70317fda39d929", null ],
-    [ "stabilization_attitude_set_setpoint_rp_quat_f", "guidance__indi_8c.html#ac2747905b79ab39b935a6f140fd21695", null ],
+    [ "guidance_indi_run", "guidance__indi_8c.html#ad8b44d9c75c8bdabbe9e3521c96d503b", null ],
+    [ "stabilization_attitude_set_setpoint_rp_quat_f", "guidance__indi_8c.html#a496e8f027f73bd6069de57c4f55cd747", null ],
     [ "euler_cmd", "guidance__indi_8c.html#abbf0d721f775293cc953c71dc69be5b7", null ],
     [ "filt_accel_ned", "guidance__indi_8c.html#a929f52fa57bbf50e6722ada153bface8", null ],
     [ "filt_accel_ned_d", "guidance__indi_8c.html#a3833cc616e99c8bda12799af4b5c62cc", null ],
@@ -26,5 +26,10 @@ var guidance__indi_8c =
     [ "roll_filt", "guidance__indi_8c.html#af6bc8b537f62cc88d73bec91634aa0ad", null ],
     [ "roll_filtd", "guidance__indi_8c.html#ae438fb34500a6450cde38a5fed5c6591", null ],
     [ "roll_filtdd", "guidance__indi_8c.html#ae207014ebd21bbfe9811b532f7a022b6", null ],
-    [ "sp_accel", "guidance__indi_8c.html#a596a1bce76f2a37bf46aa5149ad745d7", null ]
+    [ "sp_accel", "guidance__indi_8c.html#a596a1bce76f2a37bf46aa5149ad745d7", null ],
+    [ "thrust_act", "guidance__indi_8c.html#a62834fedbe3a96736f5743f6ede8ccbd", null ],
+    [ "thrust_filt", "guidance__indi_8c.html#ae5ac50ddfde281a8ad2dd9168f45cc9c", null ],
+    [ "thrust_filtd", "guidance__indi_8c.html#a910918ec77db984ec377dcedbf3fb4d1", null ],
+    [ "thrust_filtdd", "guidance__indi_8c.html#a221e9c1a7f2770efbfa26af090d43bb5", null ],
+    [ "thrust_in", "guidance__indi_8c.html#a229063a3d344169961f5d0803de574c0", null ]
 ];

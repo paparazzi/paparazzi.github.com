@@ -11,6 +11,6 @@ var rc__datalink_8h =
     [ "parse_rc_3ch_datalink", "rc__datalink_8h.html#a22105107236d00fa616659322bd89a02", null ],
     [ "parse_rc_4ch_datalink", "rc__datalink_8h.html#aa3d40235f29aab16121c0073217835a2", null ],
     [ "radio_control_impl_event", "rc__datalink_8h.html#a760dbd4fa3f62cc43524fc420c2a9e5f", null ],
-    [ "rc_dl_frame_available", "rc__datalink_8h.html#a6d2f954c65b1f761c99fd123b8ca7a35", null ],
+    [ "rc_dl_frame_available", "rc__datalink_8h.html#ab342fc7d0560212d19265550ed22efaf", null ],
     [ "rc_dl_values", "rc__datalink_8h.html#a8ad016a0fe68026f295a8ffaacdd2c5f", null ]
 ];

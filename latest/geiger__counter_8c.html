@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('geiger__counter_8c.html','');});
 <div class="textblock"><code>#include &quot;<a class="el" href="geiger__counter_8h_source.html">modules/meteo/geiger_counter.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="i2c_8h_source.html">mcu_periph/i2c.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
-<code>#include &quot;messages.h&quot;</code><br />
+<code>#include &quot;pprzlink/messages.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for geiger_counter.c:</div>
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('geiger__counter_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="geiger__counter_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2meteo_2geiger__counter_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2meteo_2geiger__counter_8c" id="sw_2airborne_2modules_2meteo_2geiger__counter_8c">
-<area shape="rect" id="node2" href="geiger__counter_8h.html" title="modules/meteo/geiger\l_counter.h" alt="" coords="5,95,172,136"/><area shape="rect" id="node4" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="219,102,350,129"/><area shape="rect" id="node6" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="393,191,531,218"/><area shape="rect" id="node11" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="848,95,1001,136"/><area shape="rect" id="node8" href="link__device_8h.html" title="generic device header " alt="" coords="677,459,860,486"/><area shape="rect" id="node9" href="inttypes_8h.html" title="inttypes.h" alt="" coords="855,541,941,568"/><area shape="rect" id="node14" href="pprz__transport_8h.html" title="Building and parsing Paparazzi frames. " alt="" coords="559,273,712,315"/><area shape="rect" id="node18" href="pprzlog__transport_8h.html" title="Protocol for on&#45;board data logger with timestamp. " alt="" coords="1251,273,1404,315"/><area shape="rect" id="node23" href="xbee_8h.html" title="Maxstream XBee serial input and output. " alt="" coords="1020,184,1173,225"/><area shape="rect" id="node25" href="w5100_8h.html" title="W5100 ethernet chip I/O. " alt="" coords="791,184,944,225"/><area shape="rect" id="node15" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="559,363,712,404"/><area shape="rect" id="node17" href="transport_8h.html" title="generic transport header " alt="" coords="815,363,968,404"/><area shape="rect" id="node19" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1027,370,1198,397"/><area shape="rect" id="node24" href="xbee24_8h.html" title="Configuration for 2.4GHz &quot;series 1&quot; and 900MHz modules. " alt="" coords="1073,273,1227,315"/></map>
+<area shape="rect" id="node2" href="geiger__counter_8h.html" title="modules/meteo/geiger\l_counter.h" alt="" coords="171,95,337,136"/><area shape="rect" id="node4" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="15,102,146,129"/><area shape="rect" id="node6" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="266,191,405,218"/><area shape="rect" id="node10" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="609,95,763,136"/><area shape="rect" id="node11" href="inttypes_8h.html" title="inttypes.h" alt="" coords="967,191,1053,218"/><area shape="rect" id="node14" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="789,184,943,225"/></map>
 </div>
 </div>
 <p><a href="geiger__counter_8c_source.html">Go to the source code of this file.</a></p>
@@ -214,7 +214,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="geiger__counter_8c_source.html#l00054">54</a> of file <a class="el" href="geiger__counter_8c_source.html">geiger_counter.c</a>.</p>
 
-<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="geiger__counter_8c_source.html#l00042">count_geiger_1</a>, <a class="el" href="geiger__counter_8c_source.html#l00042">count_geiger_2</a>, <a class="el" href="downlink_8h_source.html#l00079">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00083">DefaultDevice</a>, <a class="el" href="geiger__counter_8c_source.html#l00041">geiger_trans</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, and <a class="el" href="geiger__counter_8c_source.html#l00043">volt_geiger</a>.</p>
+<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="geiger__counter_8c_source.html#l00042">count_geiger_1</a>, <a class="el" href="geiger__counter_8c_source.html#l00042">count_geiger_2</a>, <a class="el" href="downlink_8h_source.html#l00084">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00088">DefaultDevice</a>, <a class="el" href="geiger__counter_8c_source.html#l00041">geiger_trans</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, and <a class="el" href="geiger__counter_8c_source.html#l00043">volt_geiger</a>.</p>
 
 </div>
 </div>
@@ -261,7 +261,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="geiger__counter_8c_a04dc0541640cf73d18fef78c549c1387_cgraph.png" border="0" usemap="#geiger__counter_8c_a04dc0541640cf73d18fef78c549c1387_cgraph" alt=""/></div>
 <map name="geiger__counter_8c_a04dc0541640cf73d18fef78c549c1387_cgraph" id="geiger__counter_8c_a04dc0541640cf73d18fef78c549c1387_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#ga9bdc2f5162d3e77dd58b7541ddcbe5d1" title="Submit a read only transaction. " alt="" coords="228,5,321,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="369,5,460,32"/></map>
+<area shape="rect" id="node2" href="group__i2c.html#ga9e7c3ccd9ba7415486bfb2e52eaa3964" title="Submit a read only transaction. " alt="" coords="228,5,321,32"/><area shape="rect" id="node3" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="369,5,460,32"/></map>
 </div>
 </p>
 
@@ -338,7 +338,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_dcc9af59dc35b42e32db80b18066e136.html">meteo</a></li><li class="navelem"><a class="el" href="geiger__counter_8c.html">geiger_counter.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:53 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:00 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

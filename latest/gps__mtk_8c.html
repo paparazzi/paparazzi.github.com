@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -113,10 +113,14 @@ $(document).ready(function(){initNavTree('gps__mtk_8c.html','');});
 <div class="title">gps_mtk.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="gps_8h_source.html">subsystems/gps.h</a>&quot;</code><br />
+
+<p>Mediatek MT3329 specific code.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="gps__mtk_8h_source.html">gps_mtk.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="led_8h_source.html">led.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
+<code>#include &quot;pprzlink/pprzlink_device.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for gps_mtk.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -124,7 +128,7 @@ $(document).ready(function(){initNavTree('gps__mtk_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__mtk_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2gps_2gps__mtk_8c" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2gps_2gps__mtk_8c" id="sw_2airborne_2subsystems_2gps_2gps__mtk_8c">
-<area shape="rect" id="node2" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="607,95,746,121"/><area shape="rect" id="node15" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="722,177,892,203"/><area shape="rect" id="node19" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="873,95,1008,121"/><area shape="rect" id="node21" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1070,95,1123,121"/><area shape="rect" id="node4" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="474,169,625,211"/><area shape="rect" id="node12" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="236,169,386,211"/><area shape="rect" id="node5" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="298,266,422,293"/><area shape="rect" id="node6" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="498,266,638,293"/><area shape="rect" id="node7" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="112,348,267,375"/><area shape="rect" id="node10" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="437,348,588,375"/><area shape="rect" id="node13" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="24,266,176,293"/><area shape="rect" id="node16" href="inttypes_8h.html" title="inttypes.h" alt="" coords="764,266,850,293"/></map>
+<area shape="rect" id="node2" href="gps__mtk_8h.html" title="Mediatek MT3329 specific code. " alt="" coords="653,95,742,121"/><area shape="rect" id="node17" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1072,251,1243,278"/><area shape="rect" id="node25" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="1038,95,1173,121"/><area shape="rect" id="node27" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1200,95,1253,121"/><area shape="rect" id="node3" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="824,169,963,196"/><area shape="rect" id="node21" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="392,169,531,196"/><area shape="rect" id="node5" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="818,244,969,285"/><area shape="rect" id="node13" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="643,244,794,285"/><area shape="rect" id="node6" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="609,341,733,367"/><area shape="rect" id="node7" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="809,341,949,367"/><area shape="rect" id="node8" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="297,423,452,449"/><area shape="rect" id="node11" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="682,423,833,449"/><area shape="rect" id="node14" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="164,341,316,367"/><area shape="rect" id="node18" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1477,341,1563,367"/></map>
 </div>
 </div>
 <p><a href="gps__mtk_8c_source.html">Go to the source code of this file.</a></p>
@@ -184,17 +188,18 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac51e6a5f7940a0acc9dc44b1b8085331"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__mtk_8c.html#ac51e6a5f7940a0acc9dc44b1b8085331">gps_impl_init</a> (void)</td></tr>
-<tr class="memdesc:ac51e6a5f7940a0acc9dc44b1b8085331"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPS initialization.  <a href="#ac51e6a5f7940a0acc9dc44b1b8085331">More...</a><br /></td></tr>
-<tr class="separator:ac51e6a5f7940a0acc9dc44b1b8085331"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0323467da4b8603fecd6110b401c5a7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__mtk_8c.html#a0323467da4b8603fecd6110b401c5a7d">gps_mtk_msg</a> (void)</td></tr>
-<tr class="separator:a0323467da4b8603fecd6110b401c5a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37fc4944304a2efddd0287185cae44f3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__mtk_8c.html#a37fc4944304a2efddd0287185cae44f3">gps_mtk_time2itow</a> (<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> gps_date, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> gps_time, <a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> *gps_week, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> *gps_itow)</td></tr>
-<tr class="separator:a37fc4944304a2efddd0287185cae44f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f4aaa905b232ae9d9b714e161498e9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__mtk_8c.html#a0f4aaa905b232ae9d9b714e161498e9e">gps_mtk_read_message</a> (void)</td></tr>
 <tr class="separator:a0f4aaa905b232ae9d9b714e161498e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa2efef01a920190bff9eaa93bdececa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__mtk_8c.html#aaa2efef01a920190bff9eaa93bdececa">gps_mtk_parse</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> c)</td></tr>
 <tr class="separator:aaa2efef01a920190bff9eaa93bdececa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0323467da4b8603fecd6110b401c5a7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__mtk_8c.html#a0323467da4b8603fecd6110b401c5a7d">gps_mtk_msg</a> (void)</td></tr>
+<tr class="separator:a0323467da4b8603fecd6110b401c5a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96d6b348ef4dce635b1a41ff23c31f75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__mtk_8c.html#a96d6b348ef4dce635b1a41ff23c31f75">gps_mtk_init</a> (void)</td></tr>
+<tr class="separator:a96d6b348ef4dce635b1a41ff23c31f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bda5c48225bc464a4d6a326f32c123d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__mtk_8c.html#a3bda5c48225bc464a4d6a326f32c123d">gps_mtk_event</a> (void)</td></tr>
+<tr class="separator:a3bda5c48225bc464a4d6a326f32c123d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaf015b554d513921e150bf38c76e36c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__mtk_8c.html#aeaf015b554d513921e150bf38c76e36c">gps_mtk_time2itow</a> (<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> gps_date, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> gps_time, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *gps_week, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> *gps_itow)</td></tr>
+<tr class="separator:aeaf015b554d513921e150bf38c76e36c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -203,7 +208,13 @@ Variables</h2></td></tr>
 <tr class="memitem:ab1002487799962f629e8c87860cc1964"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="gps__mtk_8h.html#structGpsMtk">GpsMtk</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__mtk_8c.html#ab1002487799962f629e8c87860cc1964">gps_mtk</a></td></tr>
 <tr class="separator:ab1002487799962f629e8c87860cc1964"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Mediatek MT3329 specific code. </p>
+<p>supports: DIYDrones V1.4 protocol (AXN1.30_2278) DIYDrones V1.6 protocol (AXN1.30_2389)</p>
+<p>documentation is partly incorrect, see mtk.xml for what seems to be "real" </p>
+
+<p>Definition in file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a7a53eb7b7d725c83beee8dd21cb9f74f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -214,9 +225,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00052">52</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00057">57</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00286">gps_mtk_parse()</a>.</p>
+<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00305">gps_mtk_parse()</a>.</p>
 
 </div>
 </div>
@@ -230,9 +241,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00047">47</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00052">52</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00286">gps_mtk_parse()</a>.</p>
+<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00305">gps_mtk_parse()</a>.</p>
 
 </div>
 </div>
@@ -246,9 +257,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00050">50</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00055">55</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00286">gps_mtk_parse()</a>.</p>
+<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00305">gps_mtk_parse()</a>.</p>
 
 </div>
 </div>
@@ -262,9 +273,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00051">51</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00056">56</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00286">gps_mtk_parse()</a>.</p>
+<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00305">gps_mtk_parse()</a>.</p>
 
 </div>
 </div>
@@ -278,9 +289,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00045">45</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00050">50</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00286">gps_mtk_parse()</a>.</p>
+<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00305">gps_mtk_parse()</a>.</p>
 
 </div>
 </div>
@@ -294,9 +305,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00048">48</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00053">53</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00286">gps_mtk_parse()</a>.</p>
+<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00305">gps_mtk_parse()</a>.</p>
 
 </div>
 </div>
@@ -310,9 +321,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00046">46</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00051">51</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00286">gps_mtk_parse()</a>.</p>
+<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00305">gps_mtk_parse()</a>.</p>
 
 </div>
 </div>
@@ -326,9 +337,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00049">49</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00054">54</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00286">gps_mtk_parse()</a>.</p>
+<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00305">gps_mtk_parse()</a>.</p>
 
 </div>
 </div>
@@ -342,9 +353,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00058">58</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00063">63</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00286">gps_mtk_parse()</a>.</p>
+<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00305">gps_mtk_parse()</a>.</p>
 
 </div>
 </div>
@@ -358,7 +369,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00057">57</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00062">62</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
 </div>
 </div>
@@ -372,9 +383,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00055">55</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00060">60</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00102">gps_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00111">gps_mtk_init()</a>.</p>
 
 </div>
 </div>
@@ -388,9 +399,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00060">60</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00065">65</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00286">gps_mtk_parse()</a>.</p>
+<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00305">gps_mtk_parse()</a>.</p>
 
 </div>
 </div>
@@ -404,9 +415,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00056">56</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00061">61</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00286">gps_mtk_parse()</a>.</p>
+<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00305">gps_mtk_parse()</a>.</p>
 
 </div>
 </div>
@@ -420,9 +431,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00059">59</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00064">64</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00286">gps_mtk_parse()</a>.</p>
+<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00305">gps_mtk_parse()</a>.</p>
 
 </div>
 </div>
@@ -440,9 +451,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00074">74</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00079">79</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00141">gps_mtk_time2itow()</a>.</p>
+<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00163">gps_mtk_time2itow()</a>.</p>
 
 </div>
 </div>
@@ -456,9 +467,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00064">64</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00069">69</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00185">gps_mtk_read_message()</a>.</p>
+<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00207">gps_mtk_read_message()</a>.</p>
 
 </div>
 </div>
@@ -472,9 +483,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00063">63</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00068">68</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00185">gps_mtk_read_message()</a>.</p>
+<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00207">gps_mtk_read_message()</a>.</p>
 
 </div>
 </div>
@@ -488,7 +499,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00065">65</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00070">70</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
 </div>
 </div>
@@ -502,7 +513,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00040">40</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00045">45</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
 </div>
 </div>
@@ -516,9 +527,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00041">41</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00046">46</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00185">gps_mtk_read_message()</a>.</p>
+<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00207">gps_mtk_read_message()</a>.</p>
 
 </div>
 </div>
@@ -532,9 +543,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00071">71</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00076">76</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00141">gps_mtk_time2itow()</a>.</p>
+<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00163">gps_mtk_time2itow()</a>.</p>
 
 </div>
 </div>
@@ -548,9 +559,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00070">70</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00075">75</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00141">gps_mtk_time2itow()</a>.</p>
+<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00163">gps_mtk_time2itow()</a>.</p>
 
 </div>
 </div>
@@ -564,9 +575,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00069">69</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00074">74</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00141">gps_mtk_time2itow()</a>.</p>
+<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00163">gps_mtk_time2itow()</a>.</p>
 
 </div>
 </div>
@@ -580,7 +591,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00072">72</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00077">77</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
 </div>
 </div>
@@ -594,19 +605,19 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00044">44</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00049">49</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00102">gps_impl_init()</a>, and <a class="el" href="gps__mtk_8c_source.html#l00286">gps_mtk_parse()</a>.</p>
+<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00111">gps_mtk_init()</a>, and <a class="el" href="gps__mtk_8c_source.html#l00305">gps_mtk_parse()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ac51e6a5f7940a0acc9dc44b1b8085331"></a>
+<a class="anchor" id="a3bda5c48225bc464a4d6a326f32c123d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void gps_impl_init </td>
+          <td class="memname">void gps_mtk_event </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -615,12 +626,40 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>GPS initialization. </p>
-<p>GPS model specific init implementation. </p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00123">123</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00102">102</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>References <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00073">dev</a>, <a class="el" href="gps__mtk_8c_source.html#l00083">gps_mtk</a>, <a class="el" href="gps__mtk_8c_source.html#l00136">gps_mtk_msg()</a>, <a class="el" href="gps__mtk_8c_source.html#l00305">gps_mtk_parse()</a>, <a class="el" href="gps__mtk_8h_source.html#l00085">GpsConfigure</a>, and <a class="el" href="gps__mtk_8h_source.html#l00050">GpsMtk::msg_available</a>.</p>
 
-<p>References <a class="el" href="gps__mtk_8h_source.html#l00044">GpsMtk::error_cnt</a>, <a class="el" href="gps__mtk_8h_source.html#l00045">GpsMtk::error_last</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="gps__mtk_8c_source.html#l00078">gps_mtk</a>, <a class="el" href="gps__mtk_8c_source.html#l00055">GPS_MTK_ERR_NONE</a>, <a class="el" href="gps__mtk_8h_source.html#l00034">GpsMtk::msg_available</a>, <a class="el" href="gps__mtk_8h_source.html#l00039">GpsMtk::status</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, and <a class="el" href="gps__mtk_8c_source.html#l00044">UNINIT</a>.</p>
+<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="gps__mtk_8c_a3bda5c48225bc464a4d6a326f32c123d_cgraph.png" border="0" usemap="#gps__mtk_8c_a3bda5c48225bc464a4d6a326f32c123d_cgraph" alt=""/></div>
+<map name="gps__mtk_8c_a3bda5c48225bc464a4d6a326f32c123d_cgraph" id="gps__mtk_8c_a3bda5c48225bc464a4d6a326f32c123d_cgraph">
+<area shape="rect" id="node2" href="gps__mtk_8c.html#a0323467da4b8603fecd6110b401c5a7d" title="gps_mtk_msg" alt="" coords="177,31,289,57"/><area shape="rect" id="node7" href="gps__mtk_8c.html#aaa2efef01a920190bff9eaa93bdececa" title="gps_mtk_parse" alt="" coords="173,81,293,108"/><area shape="rect" id="node3" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="359,5,503,32"/><area shape="rect" id="node5" href="gps__mtk_8c.html#a0f4aaa905b232ae9d9b714e161498e9e" title="gps_mtk_read_message" alt="" coords="341,56,520,83"/><area shape="rect" id="node4" href="sys__time_8h.html#adb22f2652f04908fbc644c7274bf7273" title="usec_of_sys_time_ticks" alt="" coords="568,5,739,32"/><area shape="rect" id="node6" href="gps__mtk_8c.html#aeaf015b554d513921e150bf38c76e36c" title="gps_mtk_time2itow" alt="" coords="580,56,727,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a96d6b348ef4dce635b1a41ff23c31f75"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gps_mtk_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00111">111</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+
+<p>References <a class="el" href="gps__mtk_8h_source.html#l00060">GpsMtk::error_cnt</a>, <a class="el" href="gps__mtk_8h_source.html#l00061">GpsMtk::error_last</a>, <a class="el" href="gps__mtk_8c_source.html#l00083">gps_mtk</a>, <a class="el" href="gps__mtk_8c_source.html#l00060">GPS_MTK_ERR_NONE</a>, <a class="el" href="gps__mtk_8h_source.html#l00050">GpsMtk::msg_available</a>, <a class="el" href="gps__mtk_8h_source.html#l00055">GpsMtk::status</a>, and <a class="el" href="gps__mtk_8c_source.html#l00049">UNINIT</a>.</p>
 
 </div>
 </div>
@@ -638,31 +677,31 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00114">114</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00136">136</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
-<p>References <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="gps_8h_source.html#l00093">GpsState::fix</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8h_source.html#l00039">get_sys_time_usec()</a>, <a class="el" href="gps_8c_source.html#l00040">gps</a>, <a class="el" href="gps_8h_source.html#l00044">GPS_FIX_3D</a>, <a class="el" href="gps__mtk_8c_source.html#l00078">gps_mtk</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00134">GPS_MTK_ID</a>, <a class="el" href="gps__mtk_8c_source.html#l00185">gps_mtk_read_message()</a>, <a class="el" href="gps_8h_source.html#l00100">GpsState::last_3dfix_ticks</a>, <a class="el" href="gps_8h_source.html#l00101">GpsState::last_3dfix_time</a>, <a class="el" href="gps_8h_source.html#l00102">GpsState::last_msg_ticks</a>, <a class="el" href="gps_8h_source.html#l00103">GpsState::last_msg_time</a>, <a class="el" href="gps__mtk_8h_source.html#l00034">GpsMtk::msg_available</a>, <a class="el" href="gps__mtk_8h_source.html#l00037">GpsMtk::msg_class</a>, <a class="el" href="gps__mtk_8h_source.html#l00036">GpsMtk::msg_id</a>, <a class="el" href="sys__time_8h_source.html#l00069">sys_time::nb_sec</a>, and <a class="el" href="sys__time_8h_source.html#l00070">sys_time::nb_sec_rem</a>.</p>
+<p>References <a class="el" href="gps_8h_source.html#l00099">GpsState::fix</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">get_sys_time_usec()</a>, <a class="el" href="gps_8h_source.html#l00039">GPS_FIX_3D</a>, <a class="el" href="gps__mtk_8c_source.html#l00083">gps_mtk</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00142">GPS_MTK_ID</a>, <a class="el" href="gps__mtk_8c_source.html#l00207">gps_mtk_read_message()</a>, <a class="el" href="gps_8h_source.html#l00106">GpsState::last_3dfix_ticks</a>, <a class="el" href="gps_8h_source.html#l00107">GpsState::last_3dfix_time</a>, <a class="el" href="gps_8h_source.html#l00108">GpsState::last_msg_ticks</a>, <a class="el" href="gps_8h_source.html#l00109">GpsState::last_msg_time</a>, <a class="el" href="gps__mtk_8h_source.html#l00050">GpsMtk::msg_available</a>, <a class="el" href="gps__mtk_8h_source.html#l00053">GpsMtk::msg_class</a>, <a class="el" href="gps__mtk_8h_source.html#l00052">GpsMtk::msg_id</a>, <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, <a class="el" href="sys__time_8h_source.html#l00073">sys_time::nb_sec_rem</a>, and <a class="el" href="gps__mtk_8h_source.html#l00066">GpsMtk::state</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__mtk_8h_source.html#l00072">GpsEvent()</a>.</p>
-
-<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="gps__mtk_8c_a0323467da4b8603fecd6110b401c5a7d_cgraph.png" border="0" usemap="#gps__mtk_8c_a0323467da4b8603fecd6110b401c5a7d_cgraph" alt=""/></div>
-<map name="gps__mtk_8c_a0323467da4b8603fecd6110b401c5a7d_cgraph" id="gps__mtk_8c_a0323467da4b8603fecd6110b401c5a7d_cgraph">
-<area shape="rect" id="node2" href="linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="183,5,327,32"/><area shape="rect" id="node4" href="gps__mtk_8c.html#a0f4aaa905b232ae9d9b714e161498e9e" title="gps_mtk_read_message" alt="" coords="165,56,344,83"/><area shape="rect" id="node3" href="sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="397,5,534,32"/><area shape="rect" id="node5" href="gps__mtk_8c.html#a37fc4944304a2efddd0287185cae44f3" title="gps_mtk_time2itow" alt="" coords="392,56,539,83"/></map>
-</div>
-</p>
+<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00123">gps_mtk_event()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="gps__mtk_8c_a0323467da4b8603fecd6110b401c5a7d_cgraph.png" border="0" usemap="#gps__mtk_8c_a0323467da4b8603fecd6110b401c5a7d_cgraph" alt=""/></div>
+<map name="gps__mtk_8c_a0323467da4b8603fecd6110b401c5a7d_cgraph" id="gps__mtk_8c_a0323467da4b8603fecd6110b401c5a7d_cgraph">
+<area shape="rect" id="node2" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="183,5,327,32"/><area shape="rect" id="node4" href="gps__mtk_8c.html#a0f4aaa905b232ae9d9b714e161498e9e" title="gps_mtk_read_message" alt="" coords="165,56,344,83"/><area shape="rect" id="node3" href="sys__time_8h.html#adb22f2652f04908fbc644c7274bf7273" title="usec_of_sys_time_ticks" alt="" coords="392,5,563,32"/><area shape="rect" id="node5" href="gps__mtk_8c.html#aeaf015b554d513921e150bf38c76e36c" title="gps_mtk_time2itow" alt="" coords="404,56,551,83"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__mtk_8c_a0323467da4b8603fecd6110b401c5a7d_icgraph.png" border="0" usemap="#gps__mtk_8c_a0323467da4b8603fecd6110b401c5a7d_icgraph" alt=""/></div>
 <map name="gps__mtk_8c_a0323467da4b8603fecd6110b401c5a7d_icgraph" id="gps__mtk_8c_a0323467da4b8603fecd6110b401c5a7d_icgraph">
-<area shape="rect" id="node2" href="gps__mtk_8h.html#ac91f0980eaf030309e832c42756272f9" title="GpsEvent" alt="" coords="165,5,248,32"/></map>
+<area shape="rect" id="node2" href="gps__mtk_8h.html#a3bda5c48225bc464a4d6a326f32c123d" title="gps_mtk_event" alt="" coords="165,5,285,32"/></map>
 </div>
 </p>
 
@@ -682,20 +721,20 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00286">286</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00305">305</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
-<p>References <a class="el" href="gps__mtk_8h_source.html#l00042">GpsMtk::ck_a</a>, <a class="el" href="gps__mtk_8h_source.html#l00042">GpsMtk::ck_b</a>, <a class="el" href="gps__mtk_8h_source.html#l00044">GpsMtk::error_cnt</a>, <a class="el" href="gps__mtk_8h_source.html#l00045">GpsMtk::error_last</a>, <a class="el" href="gps__mtk_8c_source.html#l00052">GOT_CHECKSUM1</a>, <a class="el" href="gps__mtk_8c_source.html#l00047">GOT_CLASS_14</a>, <a class="el" href="gps__mtk_8c_source.html#l00050">GOT_ID</a>, <a class="el" href="gps__mtk_8c_source.html#l00051">GOT_PAYLOAD</a>, <a class="el" href="gps__mtk_8c_source.html#l00045">GOT_SYNC1_14</a>, <a class="el" href="gps__mtk_8c_source.html#l00048">GOT_SYNC1_16</a>, <a class="el" href="gps__mtk_8c_source.html#l00046">GOT_SYNC2_14</a>, <a class="el" href="gps__mtk_8c_source.html#l00049">GOT_SYNC2_16</a>, <a class="el" href="gps__mtk_8c_source.html#l00078">gps_mtk</a>, <a class="el" href="gps__mtk_8c_source.html#l00058">GPS_MTK_ERR_CHECKSUM</a>, <a class="el" href="gps__mtk_8c_source.html#l00060">GPS_MTK_ERR_OUT_OF_SYNC</a>, <a class="el" href="gps__mtk_8c_source.html#l00056">GPS_MTK_ERR_OVERRUN</a>, <a class="el" href="gps__mtk_8c_source.html#l00059">GPS_MTK_ERR_UNEXPECTED</a>, <a class="el" href="gps__mtk_8h_source.html#l00040">GpsMtk::len</a>, <a class="el" href="gps__mtk_8h_source.html#l00034">GpsMtk::msg_available</a>, <a class="el" href="gps__mtk_8h_source.html#l00035">GpsMtk::msg_buf</a>, <a class="el" href="gps__mtk_8h_source.html#l00037">GpsMtk::msg_class</a>, <a class="el" href="gps__mtk_8h_source.html#l00036">GpsMtk::msg_id</a>, <a class="el" href="gps__mtk_8h_source.html#l00041">GpsMtk::msg_idx</a>, <a class="el" href="gps__mtk_8h_source.html#l00039">GpsMtk::status</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, and <a class="el" href="gps__mtk_8c_source.html#l00044">UNINIT</a>.</p>
+<p>References <a class="el" href="gps__mtk_8h_source.html#l00058">GpsMtk::ck_a</a>, <a class="el" href="gps__mtk_8h_source.html#l00058">GpsMtk::ck_b</a>, <a class="el" href="gps__mtk_8h_source.html#l00060">GpsMtk::error_cnt</a>, <a class="el" href="gps__mtk_8h_source.html#l00061">GpsMtk::error_last</a>, <a class="el" href="gps__mtk_8c_source.html#l00057">GOT_CHECKSUM1</a>, <a class="el" href="gps__mtk_8c_source.html#l00052">GOT_CLASS_14</a>, <a class="el" href="gps__mtk_8c_source.html#l00055">GOT_ID</a>, <a class="el" href="gps__mtk_8c_source.html#l00056">GOT_PAYLOAD</a>, <a class="el" href="gps__mtk_8c_source.html#l00050">GOT_SYNC1_14</a>, <a class="el" href="gps__mtk_8c_source.html#l00053">GOT_SYNC1_16</a>, <a class="el" href="gps__mtk_8c_source.html#l00051">GOT_SYNC2_14</a>, <a class="el" href="gps__mtk_8c_source.html#l00054">GOT_SYNC2_16</a>, <a class="el" href="gps__mtk_8c_source.html#l00083">gps_mtk</a>, <a class="el" href="gps__mtk_8c_source.html#l00063">GPS_MTK_ERR_CHECKSUM</a>, <a class="el" href="gps__mtk_8c_source.html#l00065">GPS_MTK_ERR_OUT_OF_SYNC</a>, <a class="el" href="gps__mtk_8c_source.html#l00061">GPS_MTK_ERR_OVERRUN</a>, <a class="el" href="gps__mtk_8c_source.html#l00064">GPS_MTK_ERR_UNEXPECTED</a>, <a class="el" href="gps__mtk_8h_source.html#l00056">GpsMtk::len</a>, <a class="el" href="gps__mtk_8h_source.html#l00050">GpsMtk::msg_available</a>, <a class="el" href="gps__mtk_8h_source.html#l00051">GpsMtk::msg_buf</a>, <a class="el" href="gps__mtk_8h_source.html#l00053">GpsMtk::msg_class</a>, <a class="el" href="gps__mtk_8h_source.html#l00052">GpsMtk::msg_id</a>, <a class="el" href="gps__mtk_8h_source.html#l00057">GpsMtk::msg_idx</a>, <a class="el" href="gps__mtk_8h_source.html#l00055">GpsMtk::status</a>, and <a class="el" href="gps__mtk_8c_source.html#l00049">UNINIT</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__mtk_8h_source.html#l00072">GpsEvent()</a>.</p>
+<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00123">gps_mtk_event()</a>.</p>
 
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__mtk_8c_aaa2efef01a920190bff9eaa93bdececa_icgraph.png" border="0" usemap="#gps__mtk_8c_aaa2efef01a920190bff9eaa93bdececa_icgraph" alt=""/></div>
 <map name="gps__mtk_8c_aaa2efef01a920190bff9eaa93bdececa_icgraph" id="gps__mtk_8c_aaa2efef01a920190bff9eaa93bdececa_icgraph">
-<area shape="rect" id="node2" href="gps__mtk_8h.html#ac91f0980eaf030309e832c42756272f9" title="GpsEvent" alt="" coords="173,5,256,32"/></map>
+<area shape="rect" id="node2" href="gps__mtk_8h.html#a3bda5c48225bc464a4d6a326f32c123d" title="gps_mtk_event" alt="" coords="173,5,293,32"/></map>
 </div>
 </p>
 
@@ -715,37 +754,37 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00185">185</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00207">207</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="gps_8h_source.html#l00087">GpsState::course</a>, <a class="el" href="gps_8h_source.html#l00093">GpsState::fix</a>, <a class="el" href="gps_8c_source.html#l00040">gps</a>, <a class="el" href="gps_8h_source.html#l00043">GPS_FIX_2D</a>, <a class="el" href="gps_8h_source.html#l00044">GPS_FIX_3D</a>, <a class="el" href="gps_8h_source.html#l00042">GPS_FIX_NONE</a>, <a class="el" href="gps__mtk_8c_source.html#l00078">gps_mtk</a>, <a class="el" href="gps__mtk_8c_source.html#l00141">gps_mtk_time2itow()</a>, <a class="el" href="gps_8c_source.html#l00042">gps_time_sync</a>, <a class="el" href="gps_8h_source.html#l00063">GPS_VALID_COURSE_BIT</a>, <a class="el" href="gps_8h_source.html#l00062">GPS_VALID_HMSL_BIT</a>, <a class="el" href="gps_8h_source.html#l00058">GPS_VALID_POS_LLA_BIT</a>, <a class="el" href="gps_8h_source.html#l00085">GpsState::gspeed</a>, <a class="el" href="gps_8h_source.html#l00082">GpsState::hmsl</a>, <a class="el" href="gps_8h_source.html#l00101">GpsState::last_3dfix_time</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="linux_2led__hw_8h_source.html#l00042">LED_ON</a>, <a class="el" href="linux_2led__hw_8h_source.html#l00044">LED_TOGGLE</a>, <a class="el" href="gps_8h_source.html#l00080">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="gps__mtk_8h_source.html#l00035">GpsMtk::msg_buf</a>, <a class="el" href="gps__mtk_8h_source.html#l00037">GpsMtk::msg_class</a>, <a class="el" href="gps__mtk_8h_source.html#l00036">GpsMtk::msg_id</a>, <a class="el" href="gps__mtk_8c_source.html#l00064">MTK_DIY_FIX_2D</a>, <a class="el" href="gps__mtk_8c_source.html#l00063">MTK_DIY_FIX_3D</a>, <a class="el" href="sys__time_8h_source.html#l00069">sys_time::nb_sec</a>, <a class="el" href="sys__time_8h_source.html#l00071">sys_time::nb_tick</a>, <a class="el" href="gps_8h_source.html#l00084">GpsState::ned_vel</a>, <a class="el" href="gps_8h_source.html#l00092">GpsState::num_sv</a>, <a class="el" href="gps__mtk_8c_source.html#l00041">OUTPUT_RATE</a>, <a class="el" href="gps_8h_source.html#l00086">GpsState::speed_3d</a>, <a class="el" href="sys__time_8h_source.html#l00213">SysTimeTimerStart</a>, <a class="el" href="gps_8h_source.html#l00111">GpsTimeSync::t0_ticks</a>, <a class="el" href="gps_8h_source.html#l00109">GpsTimeSync::t0_tow</a>, <a class="el" href="gps_8h_source.html#l00110">GpsTimeSync::t0_tow_frac</a>, <a class="el" href="gps_8h_source.html#l00095">GpsState::tow</a>, <a class="el" href="gps_8h_source.html#l00077">GpsState::valid_fields</a>, <a class="el" href="gps_8h_source.html#l00094">GpsState::week</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="gps_8h_source.html#l00093">GpsState::course</a>, <a class="el" href="gps_8h_source.html#l00099">GpsState::fix</a>, <a class="el" href="gps_8h_source.html#l00038">GPS_FIX_2D</a>, <a class="el" href="gps_8h_source.html#l00039">GPS_FIX_3D</a>, <a class="el" href="gps_8h_source.html#l00037">GPS_FIX_NONE</a>, <a class="el" href="gps__mtk_8c_source.html#l00083">gps_mtk</a>, <a class="el" href="gps__mtk_8c_source.html#l00163">gps_mtk_time2itow()</a>, <a class="el" href="gps_8h_source.html#l00054">GPS_VALID_COURSE_BIT</a>, <a class="el" href="gps_8h_source.html#l00053">GPS_VALID_HMSL_BIT</a>, <a class="el" href="gps_8h_source.html#l00049">GPS_VALID_POS_LLA_BIT</a>, <a class="el" href="gps_8h_source.html#l00091">GpsState::gspeed</a>, <a class="el" href="gps_8h_source.html#l00088">GpsState::hmsl</a>, <a class="el" href="gps_8h_source.html#l00107">GpsState::last_3dfix_time</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00049">LED_ON</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00051">LED_TOGGLE</a>, <a class="el" href="gps_8h_source.html#l00086">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="gps__mtk_8h_source.html#l00051">GpsMtk::msg_buf</a>, <a class="el" href="gps__mtk_8h_source.html#l00053">GpsMtk::msg_class</a>, <a class="el" href="gps__mtk_8h_source.html#l00052">GpsMtk::msg_id</a>, <a class="el" href="gps__mtk_8c_source.html#l00069">MTK_DIY_FIX_2D</a>, <a class="el" href="gps__mtk_8c_source.html#l00068">MTK_DIY_FIX_3D</a>, <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, <a class="el" href="gps_8h_source.html#l00090">GpsState::ned_vel</a>, <a class="el" href="gps_8h_source.html#l00098">GpsState::num_sv</a>, <a class="el" href="gps__mtk_8c_source.html#l00046">OUTPUT_RATE</a>, <a class="el" href="gps_8h_source.html#l00092">GpsState::speed_3d</a>, <a class="el" href="gps__mtk_8h_source.html#l00066">GpsMtk::state</a>, <a class="el" href="sys__time_8h_source.html#l00218">SysTimeTimerStart</a>, <a class="el" href="gps_8h_source.html#l00101">GpsState::tow</a>, <a class="el" href="gps_8h_source.html#l00082">GpsState::valid_fields</a>, <a class="el" href="gps_8h_source.html#l00100">GpsState::week</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00114">gps_mtk_msg()</a>.</p>
-
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="gps__mtk_8c_a0f4aaa905b232ae9d9b714e161498e9e_cgraph.png" border="0" usemap="#gps__mtk_8c_a0f4aaa905b232ae9d9b714e161498e9e_cgraph" alt=""/></div>
-<map name="gps__mtk_8c_a0f4aaa905b232ae9d9b714e161498e9e_cgraph" id="gps__mtk_8c_a0f4aaa905b232ae9d9b714e161498e9e_cgraph">
-<area shape="rect" id="node2" href="gps__mtk_8c.html#a37fc4944304a2efddd0287185cae44f3" title="gps_mtk_time2itow" alt="" coords="232,5,379,32"/></map>
-</div>
-</p>
+<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00136">gps_mtk_msg()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="gps__mtk_8c_a0f4aaa905b232ae9d9b714e161498e9e_cgraph.png" border="0" usemap="#gps__mtk_8c_a0f4aaa905b232ae9d9b714e161498e9e_cgraph" alt=""/></div>
+<map name="gps__mtk_8c_a0f4aaa905b232ae9d9b714e161498e9e_cgraph" id="gps__mtk_8c_a0f4aaa905b232ae9d9b714e161498e9e_cgraph">
+<area shape="rect" id="node2" href="gps__mtk_8c.html#aeaf015b554d513921e150bf38c76e36c" title="gps_mtk_time2itow" alt="" coords="232,5,379,32"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__mtk_8c_a0f4aaa905b232ae9d9b714e161498e9e_icgraph.png" border="0" usemap="#gps__mtk_8c_a0f4aaa905b232ae9d9b714e161498e9e_icgraph" alt=""/></div>
 <map name="gps__mtk_8c_a0f4aaa905b232ae9d9b714e161498e9e_icgraph" id="gps__mtk_8c_a0f4aaa905b232ae9d9b714e161498e9e_icgraph">
-<area shape="rect" id="node2" href="gps__mtk_8c.html#a0323467da4b8603fecd6110b401c5a7d" title="gps_mtk_msg" alt="" coords="232,5,344,32"/><area shape="rect" id="node3" href="gps__mtk_8h.html#ac91f0980eaf030309e832c42756272f9" title="GpsEvent" alt="" coords="392,5,475,32"/></map>
+<area shape="rect" id="node2" href="gps__mtk_8c.html#a0323467da4b8603fecd6110b401c5a7d" title="gps_mtk_msg" alt="" coords="232,5,344,32"/><area shape="rect" id="node3" href="gps__mtk_8h.html#a3bda5c48225bc464a4d6a326f32c123d" title="gps_mtk_event" alt="" coords="392,5,512,32"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a37fc4944304a2efddd0287185cae44f3"></a>
+<a class="anchor" id="aeaf015b554d513921e150bf38c76e36c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -767,7 +806,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
           <td class="paramname"><em>gps_week</em>, </td>
         </tr>
         <tr>
@@ -789,20 +828,20 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00141">141</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00163">163</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
-<p>References <a class="el" href="gps__mtk_8c_source.html#l00076">DAYS_MONTH</a>, <a class="el" href="gps__mtk_8c_source.html#l00074">isleap</a>, <a class="el" href="gps__mtk_8c_source.html#l00071">SECS_DAY</a>, <a class="el" href="gps__mtk_8c_source.html#l00070">SECS_HOUR</a>, and <a class="el" href="gps__mtk_8c_source.html#l00069">SECS_MINUTE</a>.</p>
+<p>References <a class="el" href="gps__mtk_8c_source.html#l00081">DAYS_MONTH</a>, <a class="el" href="gps__mtk_8c_source.html#l00079">isleap</a>, <a class="el" href="gps__mtk_8c_source.html#l00076">SECS_DAY</a>, <a class="el" href="gps__mtk_8c_source.html#l00075">SECS_HOUR</a>, and <a class="el" href="gps__mtk_8c_source.html#l00074">SECS_MINUTE</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00185">gps_mtk_read_message()</a>.</p>
+<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00207">gps_mtk_read_message()</a>.</p>
 
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="gps__mtk_8c_a37fc4944304a2efddd0287185cae44f3_icgraph.png" border="0" usemap="#gps__mtk_8c_a37fc4944304a2efddd0287185cae44f3_icgraph" alt=""/></div>
-<map name="gps__mtk_8c_a37fc4944304a2efddd0287185cae44f3_icgraph" id="gps__mtk_8c_a37fc4944304a2efddd0287185cae44f3_icgraph">
-<area shape="rect" id="node2" href="gps__mtk_8h.html#a0f4aaa905b232ae9d9b714e161498e9e" title="gps_mtk_read_message" alt="" coords="200,5,379,32"/><area shape="rect" id="node3" href="gps__mtk_8c.html#a0323467da4b8603fecd6110b401c5a7d" title="gps_mtk_msg" alt="" coords="427,5,539,32"/><area shape="rect" id="node4" href="gps__mtk_8h.html#ac91f0980eaf030309e832c42756272f9" title="GpsEvent" alt="" coords="587,5,669,32"/></map>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="gps__mtk_8c_aeaf015b554d513921e150bf38c76e36c_icgraph.png" border="0" usemap="#gps__mtk_8c_aeaf015b554d513921e150bf38c76e36c_icgraph" alt=""/></div>
+<map name="gps__mtk_8c_aeaf015b554d513921e150bf38c76e36c_icgraph" id="gps__mtk_8c_aeaf015b554d513921e150bf38c76e36c_icgraph">
+<area shape="rect" id="node2" href="gps__mtk_8c.html#a0f4aaa905b232ae9d9b714e161498e9e" title="gps_mtk_read_message" alt="" coords="200,5,379,32"/><area shape="rect" id="node3" href="gps__mtk_8c.html#a0323467da4b8603fecd6110b401c5a7d" title="gps_mtk_msg" alt="" coords="427,5,539,32"/><area shape="rect" id="node4" href="gps__mtk_8h.html#a3bda5c48225bc464a4d6a326f32c123d" title="gps_mtk_event" alt="" coords="587,5,707,32"/></map>
 </div>
 </p>
 
@@ -819,9 +858,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00076">76</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00081">81</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00141">gps_mtk_time2itow()</a>.</p>
+<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00163">gps_mtk_time2itow()</a>.</p>
 
 </div>
 </div>
@@ -835,9 +874,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00078">78</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__mtk_8c_source.html#l00083">83</a> of file <a class="el" href="gps__mtk_8c_source.html">gps_mtk.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00102">gps_impl_init()</a>, <a class="el" href="gps__mtk_8c_source.html#l00114">gps_mtk_msg()</a>, <a class="el" href="gps__mtk_8c_source.html#l00286">gps_mtk_parse()</a>, <a class="el" href="gps__mtk_8c_source.html#l00185">gps_mtk_read_message()</a>, and <a class="el" href="gps__mtk_8h_source.html#l00072">GpsEvent()</a>.</p>
+<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00123">gps_mtk_event()</a>, <a class="el" href="gps__mtk_8c_source.html#l00111">gps_mtk_init()</a>, <a class="el" href="gps__mtk_8c_source.html#l00136">gps_mtk_msg()</a>, <a class="el" href="gps__mtk_8c_source.html#l00305">gps_mtk_parse()</a>, and <a class="el" href="gps__mtk_8c_source.html#l00207">gps_mtk_read_message()</a>.</p>
 
 </div>
 </div>
@@ -847,7 +886,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8c4cbb881db224ddaf0756e79ed706ce.html">gps</a></li><li class="navelem"><a class="el" href="gps__mtk_8c.html">gps_mtk.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:03 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:11 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

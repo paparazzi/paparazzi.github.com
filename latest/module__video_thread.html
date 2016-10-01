@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: Read video in a thread</title>
+<title>Paparazzi UAS: video_thread module</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -100,46 +100,24 @@ $(document).ready(function(){initNavTree('module__video_thread.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Read video in a thread </div>  </div>
+<div class="title">video_thread module </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Module XML file: <code>video_thread.xml</code> </p>
-<p>Only for Linux devices. To be used in other modules for further processing (e.g. opticflow, QR code, streaming).</p>
-<ul>
-<li>Possibility to save an image(shot) on the internal memory (JPEG, full size, best quality)</li>
-</ul>
+<div class="textblock"><p><b>Read video devices in a thread.</b></p>
+<p><b></b></p>
+<p>Manager module which creates a video processing thread for each video device to be used. Only for Linux devices. To be used in other modules for further processing (e.g. opticflow, QR code, streaming). Using 'cv_add_to_device' from <a class="el" href="cv_8h.html" title="Computer vision framework for onboard processing. ">cv.h</a> will register a processing function and initialize the video device if necessary. Thread priority can be changed with VIDEO_THREAD_NICE_LEVEL.</p>
 <h1><a class="anchor" id="module_load_example__video_thread"></a>
 Example for airframe file</h1>
-<p>This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;modules&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;load name=&quot;video_thread.xml&quot;&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    &lt;define name=&quot;VIDEO_THREAD_CAMERA&quot; value=&quot;bottom_camera|front_camera&quot; /&gt;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    &lt;define name=&quot;VIDEO_THREAD_FPS&quot; value=&quot;4&quot; /&gt;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    &lt;define name=&quot;VIDEO_THREAD_SHOT_PATH&quot; value=&quot;/data/video/images&quot; /&gt;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    &lt;define name=&quot;VIDEO_THREAD_DEVICE&quot; value=&quot;/dev/video1&quot; /&gt;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    &lt;define name=&quot;VIDEO_THREAD_DEVICE_VIDEO_WIDTH&quot; value=&quot;1280&quot; /&gt;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    &lt;define name=&quot;VIDEO_THREAD_DEVICE_VIDEO_HEIGHT&quot; value=&quot;720&quot; /&gt;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    &lt;define name=&quot;VIDEO_THREAD_DEVICE_BUFFERS&quot; value=&quot;10&quot; /&gt;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  &lt;/load&gt;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;&lt;/modules&gt;</div>
+<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;video_thread&quot;&gt;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;define name=&quot;VIDEO_THREAD_NICE_LEVEL&quot; value=&quot;5&quot; /&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__video_thread"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
 Define Options</h2>
 <ul>
-<li><b>name:</b> <code>VIDEO_THREAD_CAMERA</code> <b>value:</b> <em>bottom_camera|front_camera</em> <br />
- Description: which camera video config to use</li>
-<li><b>name:</b> <code>VIDEO_THREAD_FPS</code> <b>value:</b> <em>4</em> <br />
- Description: Video stream frame rate</li>
-<li><b>name:</b> <code>VIDEO_THREAD_SHOT_PATH</code> <b>value:</b> <em>/data/video/images</em> <br />
- Description: Path where the images should be saved</li>
-<li><b>name:</b> <code>VIDEO_THREAD_DEVICE</code> <b>value:</b> <em>/dev/video1</em> <br />
- Description: The video device to capture from (only if VIDEO_THREAD_CAMERA is not defined)</li>
-<li><b>name:</b> <code>VIDEO_THREAD_DEVICE_VIDEO_WIDTH</code> <b>value:</b> <em>1280</em> <br />
- Description: Video capture width (only if VIDEO_THREAD_CAMERA is not defined)</li>
-<li><b>name:</b> <code>VIDEO_THREAD_DEVICE_VIDEO_HEIGHT</code> <b>value:</b> <em>720</em> <br />
- Description: Video capture height (only if VIDEO_THREAD_CAMERA is not defined)</li>
-<li><b>name:</b> <code>VIDEO_THREAD_DEVICE_BUFFERS</code> <b>value:</b> <em>10</em> <br />
- Description: Amount of V4L2 image buffers (only if VIDEO_THREAD_CAMERA is not defined)</li>
+<li><b>name:</b> <code>VIDEO_THREAD_NICE_LEVEL</code> <b>value:</b> <em>5</em> <br />
+ Description: Nice level for each separate video thread</li>
 </ul>
 <h1><a class="anchor" id="functions__video_thread"></a>
 Module functions</h1>
@@ -157,9 +135,9 @@ Periodic Functions</h2>
 <li>Frequency in Hz: <em>1</em> </li>
 <li>Autorun: <em>TRUE</em> <br />
  Periodic function automatically starts after init.</li>
-<li>Start function: <a class="el" href="video__thread_8c.html#ae99893bfbc5f28c15432c06aee1e736f" title="Start with streaming. ">video_thread_start()</a><br />
+<li>Start function: <a class="el" href="video__thread_8c.html#a0cbac7b8c5125087e4da17b3374f0a1e" title="Starts the streaming of a all cameras. ">video_thread_start()</a><br />
  Executed before the periodic function starts.</li>
-<li>Stop function: <a class="el" href="video__thread_8c.html#a8fd40d2120fa710aaa7be7e9702029d1" title="Stops the streaming This could take some time, because the thread is stopped asynchronous. ">video_thread_stop()</a><br />
+<li>Stop function: <a class="el" href="video__thread_8c.html#a88fdca537d45b892d58b9c5904f4c878" title="Stops the streaming of all cameras This could take some time, because the thread is stopped asynchron...">video_thread_stop()</a><br />
  Executed after the periodic function stops.</li>
 </ul>
 </li>
@@ -180,6 +158,7 @@ Source Files</h2>
 <li><a class="el" href="image_8c.html">modules/computer_vision/lib/vision/image.c</a></li>
 <li><a class="el" href="v4l2_8c.html">modules/computer_vision/lib/v4l/v4l2.c</a></li>
 <li><a class="el" href="jpeg_8c.html">modules/computer_vision/lib/encoding/jpeg.c</a></li>
+<li><a class="el" href="libisp_8c.html">modules/computer_vision/lib/isp/libisp.c</a></li>
 <li><a class="el" href="video__thread__nps_8c.html">modules/computer_vision/video_thread_nps.c</a></li>
 <li><a class="el" href="cv_8c.html">modules/computer_vision/cv.c</a></li>
 <li><a class="el" href="image_8c.html">modules/computer_vision/lib/vision/image.c</a></li>
@@ -192,31 +171,15 @@ Raw video_thread.xml file:</h2>
 <div class="line">&lt;module name=&quot;video_thread&quot; dir=&quot;computer_vision&quot;&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;</div>
-<div class="line">      Read video in a thread.</div>
-<div class="line">      Only for Linux devices.</div>
-<div class="line">      To be used in other modules for further processing (e.g. opticflow, QR code, streaming).</div>
-<div class="line"></div>
-<div class="line">      - Possibility to save an image(shot) on the internal memory (JPEG, full size, best quality)</div>
+<div class="line">      Read video devices in a thread.</div>
+<div class="line">      Manager module which creates a video processing thread for each video device to be used. Only for Linux devices.</div>
+<div class="line">      To be used in other modules for further processing (e.g. opticflow, QR code, streaming). Using &#39;cv_add_to_device&#39;</div>
+<div class="line">      from cv.h will register a processing function and initialize the video device if necessary. Thread priority can</div>
+<div class="line">      be changed with VIDEO_THREAD_NICE_LEVEL.</div>
 <div class="line">    &lt;/description&gt;</div>
-<div class="line">    &lt;define name=&quot;VIDEO_THREAD_CAMERA&quot; value=&quot;bottom_camera|front_camera&quot; description=&quot;which camera video config to use&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;VIDEO_THREAD_FPS&quot; value=&quot;4&quot; description=&quot;Video stream frame rate&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;VIDEO_THREAD_SHOT_PATH&quot; value=&quot;/data/video/images&quot; description=&quot;Path where the images should be saved&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;VIDEO_THREAD_DEVICE&quot; value=&quot;/dev/video1&quot; description=&quot;The video device to capture from (only if VIDEO_THREAD_CAMERA is not defined)&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;VIDEO_THREAD_DEVICE_VIDEO_WIDTH&quot; value=&quot;1280&quot; description=&quot;Video capture width (only if VIDEO_THREAD_CAMERA is not defined)&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;VIDEO_THREAD_DEVICE_VIDEO_HEIGHT&quot; value=&quot;720&quot; description=&quot;Video capture height (only if VIDEO_THREAD_CAMERA is not defined)&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;VIDEO_THREAD_DEVICE_BUFFERS&quot; value=&quot;10&quot; description=&quot;Amount of V4L2 image buffers (only if VIDEO_THREAD_CAMERA is not defined)&quot;/&gt;</div>
 <div class="line"></div>
+<div class="line">    &lt;define name=&quot;VIDEO_THREAD_NICE_LEVEL&quot; value=&quot;5&quot; description=&quot;Nice level for each separate video thread&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
-<div class="line">  &lt;settings&gt;</div>
-<div class="line">    &lt;dl_settings&gt;</div>
-<div class="line">      &lt;dl_settings name=&quot;video&quot;&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;video_thread.take_shot&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; shortname=&quot;take_shot&quot; module=&quot;computer_vision/video_thread&quot; handler=&quot;take_shot&quot;&gt;</div>
-<div class="line">          &lt;strip_button name=&quot;Videothread Save Jpeg&quot; icon=&quot;digital-camera.png&quot; value=&quot;1&quot; group=&quot;cv&quot;/&gt;</div>
-<div class="line">        &lt;/dl_setting&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;video_thread.fps&quot; min=&quot;1&quot; step=&quot;1&quot; max=&quot;25&quot; shortname=&quot;fps&quot; module=&quot;computer_vision/video_thread&quot; param=&quot;VIDEO_THREAD_FPS&quot;/&gt;</div>
-<div class="line">      &lt;/dl_settings&gt;</div>
-<div class="line">    &lt;/dl_settings&gt;</div>
-<div class="line">  &lt;/settings&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;video_thread.h&quot;/&gt;</div>
@@ -230,12 +193,14 @@ Raw video_thread.xml file:</h2>
 <div class="line">    &lt;file name=&quot;cv.c&quot;/&gt;</div>
 <div class="line"></div>
 <div class="line">    &lt;!-- Include the needed Computer Vision files --&gt;</div>
-<div class="line">    &lt;define name=&quot;modules/computer_vision&quot; type=&quot;include&quot;/&gt;</div>
+<div class="line">    &lt;include name=&quot;modules/computer_vision&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;image.c&quot; dir=&quot;modules/computer_vision/lib/vision&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;v4l2.c&quot; dir=&quot;modules/computer_vision/lib/v4l&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;jpeg.c&quot; dir=&quot;modules/computer_vision/lib/encoding&quot;/&gt;</div>
+<div class="line">    &lt;file name=&quot;libisp.c&quot; dir=&quot;modules/computer_vision/lib/isp&quot;/&gt;</div>
 <div class="line"></div>
 <div class="line">    &lt;!-- Random flags --&gt;</div>
+<div class="line">    &lt;!-- Does this influence the compilation of fast9? --&gt;</div>
 <div class="line">    &lt;define name=&quot;__USE_GNU&quot;/&gt;</div>
 <div class="line">    &lt;flag name=&quot;LDFLAGS&quot; value=&quot;lrt&quot;/&gt;</div>
 <div class="line">    &lt;flag name=&quot;LDFLAGS&quot; value=&quot;static-libgcc&quot;/&gt;</div>
@@ -243,7 +208,7 @@ Raw video_thread.xml file:</h2>
 <div class="line">  &lt;makefile target=&quot;nps&quot;&gt;</div>
 <div class="line">    &lt;file name=&quot;video_thread_nps.c&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;cv.c&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;modules/computer_vision&quot; type=&quot;include&quot;/&gt;</div>
+<div class="line">    &lt;include name=&quot;modules/computer_vision&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;image.c&quot; dir=&quot;modules/computer_vision/lib/vision&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;jpeg.c&quot; dir=&quot;modules/computer_vision/lib/encoding&quot;/&gt;</div>
 <div class="line">    &lt;flag name=&quot;LDFLAGS&quot; value=&quot;lpthread&quot;/&gt;</div>
@@ -255,7 +220,7 @@ Raw video_thread.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:09 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:18 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

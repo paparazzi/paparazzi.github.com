@@ -2,6 +2,7 @@ var searchData=
 [
   ['hackhd',['HackHD',['../hackhd_8h.html#structHackHD',1,'']]],
   ['hctladaptref',['HCtlAdaptRef',['../stabilization__adaptive_8c.html#structHCtlAdaptRef',1,'']]],
+  ['heliindigains',['HeliIndiGains',['../stabilization__attitude__heli__indi_8h.html#structHeliIndiGains',1,'']]],
   ['hfilterfloat',['HfilterFloat',['../hf__float_8h.html#structHfilterFloat',1,'']]],
   ['high_5fspeed_5flogger_5fspi_5flink_5fdata',['high_speed_logger_spi_link_data',['../high__speed__logger__spi__link_8h.html#structhigh__speed__logger__spi__link__data',1,'']]],
   ['hmc5843',['Hmc5843',['../hmc5843_8h.html#structHmc5843',1,'']]],

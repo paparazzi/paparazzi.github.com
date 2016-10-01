@@ -6,5 +6,5 @@ var jpeg_8h =
     [ "FOUR_ZERO_ZERO", "jpeg_8h.html#aab11f0556a42e2f3b5a31b1e18b6904c", null ],
     [ "RGB", "jpeg_8h.html#af66629d6b00cab37ec92e3933efa4bcc", null ],
     [ "jpeg_create_svs_header", "jpeg_8h.html#a64f2550b4c98bfb1f9b4b28bff5b9285", null ],
-    [ "jpeg_encode_image", "jpeg_8h.html#a80691d29cd889f8b549ac6850c95e1b6", null ]
+    [ "jpeg_encode_image", "jpeg_8h.html#ac1a4731c71f3529891f1750260db2626", null ]
 ];

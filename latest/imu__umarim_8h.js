@@ -34,10 +34,11 @@ var imu__umarim_8h =
     [ "IMU_GYRO_R_SENS_DEN", "imu__umarim_8h.html#aecb2f43265d239ba7661dfcc8523123e", null ],
     [ "IMU_GYRO_R_SENS_NUM", "imu__umarim_8h.html#a6f808c71190e714287442af3bb7008b3", null ],
     [ "IMU_GYRO_R_SIGN", "imu__umarim_8h.html#a91fa3d93fbfb5edbdf7f3b34436b53da", null ],
-    [ "ImuEvent", "imu__umarim_8h.html#a38f1122c1ee0701562b490c6e1b60609", null ],
     [ "imu_umarim_downlink_raw", "imu__umarim_8h.html#a0b13fa285b5a868bdbbf0a337056381f", null ],
     [ "imu_umarim_event", "imu__umarim_8h.html#a01860ce0d2bbd0db6c993e609c0745de", null ],
-    [ "acc_valid", "imu__umarim_8h.html#a8ed404ef3ddf50958703e92a017973ef", null ],
-    [ "gyr_valid", "imu__umarim_8h.html#afbbfe5fb78cd2de203ea88848ed1524d", null ],
+    [ "imu_umarim_init", "imu__umarim_8h.html#a2649003a46ec79bd639ed99e852971f5", null ],
+    [ "imu_umarim_periodic", "imu__umarim_8h.html#a509b35b086165ec0c6bd01533451244e", null ],
+    [ "acc_valid", "imu__umarim_8h.html#a24129918c248b6b5d17017a9163b53d8", null ],
+    [ "gyr_valid", "imu__umarim_8h.html#a36a56b6eabd2b4dec93ba1a9a16b4114", null ],
     [ "imu_umarim", "imu__umarim_8h.html#a23d3807bb76e3aa8d1f5ee3afef22d2d", null ]
 ];

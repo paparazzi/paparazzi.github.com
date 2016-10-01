@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -147,12 +147,11 @@ $(document).ready(function(){initNavTree('imu__mpu60x0__i2c_8h_source.html','');
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="imu__mpu60x0__i2c_8h.html#structImuMpu60x0">ImuMpu60x0</a> <a class="code" href="imu__mpu60x0__i2c_8h.html#adc64a57ef94d3c388f4960b8e3ac952c">imu_mpu_i2c</a>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__mpu60x0__i2c_8h.html#ad17d2b5d68bee1716b36c12a01cb1b31">imu_mpu_i2c_event</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="imu__mpu60x0__i2c_8h.html#a38f1122c1ee0701562b490c6e1b60609">   47</a></span>&#160;<span class="preprocessor">#define ImuEvent imu_mpu_i2c_event</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* IMU_MPU60X0_I2C_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__mpu60x0__i2c_8h.html#a06d943f6ded5d400bb6cbb7dec54d00f">imu_mpu_i2c_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__mpu60x0__i2c_8h.html#a4b597e78018eec2ee4c53ba739b298c6">imu_mpu_i2c_periodic</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__mpu60x0__i2c_8h.html#ad17d2b5d68bee1716b36c12a01cb1b31">imu_mpu_i2c_event</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* IMU_MPU60X0_I2C_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="mpu60x0__i2c_8h_html_structMpu60x0__I2c"><div class="ttname"><a href="mpu60x0__i2c_8h.html#structMpu60x0__I2c">Mpu60x0_I2c</a></div><div class="ttdef"><b>Definition:</b> <a href="mpu60x0__i2c_8h_source.html#l00054">mpu60x0_i2c.h:54</a></div></div>
 <div class="ttc" id="imu__mpu60x0__defaults_8h_html"><div class="ttname"><a href="imu__mpu60x0__defaults_8h.html">imu_mpu60x0_defaults.h</a></div><div class="ttdoc">Default sensitivity definitions for an IMU using the MPU60x0. </div></div>
 <div class="ttc" id="imu_8h_html"><div class="ttname"><a href="imu_8h.html">imu.h</a></div><div class="ttdoc">Inertial Measurement Unit interface. </div></div>
@@ -160,6 +159,8 @@ $(document).ready(function(){initNavTree('imu__mpu60x0__i2c_8h_source.html','');
 <div class="ttc" id="imu__mpu60x0__i2c_8h_html_structImuMpu60x0"><div class="ttname"><a href="imu__mpu60x0__i2c_8h.html#structImuMpu60x0">ImuMpu60x0</a></div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu60x0__i2c_8h_source.html#l00038">imu_mpu60x0_i2c.h:38</a></div></div>
 <div class="ttc" id="imu__mpu60x0__i2c_8h_html_ad17d2b5d68bee1716b36c12a01cb1b31"><div class="ttname"><a href="imu__mpu60x0__i2c_8h.html#ad17d2b5d68bee1716b36c12a01cb1b31">imu_mpu_i2c_event</a></div><div class="ttdeci">void imu_mpu_i2c_event(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu60x0__i2c_8c_source.html#l00087">imu_mpu60x0_i2c.c:87</a></div></div>
 <div class="ttc" id="mpu60x0__i2c_8h_html"><div class="ttname"><a href="mpu60x0__i2c_8h.html">mpu60x0_i2c.h</a></div><div class="ttdoc">Driver for the MPU-60X0 using I2C. </div></div>
+<div class="ttc" id="imu__mpu60x0__i2c_8h_html_a06d943f6ded5d400bb6cbb7dec54d00f"><div class="ttname"><a href="imu__mpu60x0__i2c_8h.html#a06d943f6ded5d400bb6cbb7dec54d00f">imu_mpu_i2c_init</a></div><div class="ttdeci">void imu_mpu_i2c_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu60x0__i2c_8c_source.html#l00072">imu_mpu60x0_i2c.c:72</a></div></div>
+<div class="ttc" id="imu__mpu60x0__i2c_8h_html_a4b597e78018eec2ee4c53ba739b298c6"><div class="ttname"><a href="imu__mpu60x0__i2c_8h.html#a4b597e78018eec2ee4c53ba739b298c6">imu_mpu_i2c_periodic</a></div><div class="ttdeci">void imu_mpu_i2c_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu60x0__i2c_8c_source.html#l00082">imu_mpu60x0_i2c.c:82</a></div></div>
 <div class="ttc" id="imu__mpu60x0__i2c_8h_html_aa740baedc08188687c2bc4bdd1e6e1a0"><div class="ttname"><a href="imu__mpu60x0__i2c_8h.html#aa740baedc08188687c2bc4bdd1e6e1a0">ImuMpu60x0::mpu</a></div><div class="ttdeci">struct Mpu60x0_I2c mpu</div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu60x0__i2c_8h_source.html#l00039">imu_mpu60x0_i2c.h:39</a></div></div>
 <div class="ttc" id="imu__mpu60x0__i2c_8h_html_adc64a57ef94d3c388f4960b8e3ac952c"><div class="ttname"><a href="imu__mpu60x0__i2c_8h.html#adc64a57ef94d3c388f4960b8e3ac952c">imu_mpu_i2c</a></div><div class="ttdeci">struct ImuMpu60x0 imu_mpu_i2c</div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu60x0__i2c_8c_source.html#l00070">imu_mpu60x0_i2c.c:70</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -168,7 +169,7 @@ $(document).ready(function(){initNavTree('imu__mpu60x0__i2c_8h_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8b2fa0708e2db44c1b91938af97bac44.html">imu</a></li><li class="navelem"><a class="el" href="imu__mpu60x0__i2c_8h.html">imu_mpu60x0_i2c.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:32 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:33 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

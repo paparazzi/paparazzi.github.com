@@ -7,6 +7,8 @@ var group__math__geodetic__utm =
     [ "K0", "group__math__geodetic__utm.html#ga307c72605e3713972b4f4fb2d53ea20e", null ],
     [ "LambdaOfUtmZone", "group__math__geodetic__utm.html#ga9f746e2071fa15c7848f25af2aadb7ff", null ],
     [ "N", "group__math__geodetic__utm.html#ga0240ac851181b84ac374872dc5434ee4", null ],
+    [ "UtmZoneOfLlaLonDeg", "group__math__geodetic__utm.html#gad2403db707c4b44bcccedeba825af3ba", null ],
+    [ "UtmZoneOfLlaLonRad", "group__math__geodetic__utm.html#ga83562c4d230d5c58ed2b9b950b8885b0", null ],
     [ "serie_coeff_proj_mercator", "group__math__geodetic__utm.html#ga3a2a981fbf6e71561e56716c8ea956a0", null ],
     [ "serie_coeff_proj_mercator_inverse", "group__math__geodetic__utm.html#ga653990708c0a66a7609ee1d8da41879b", null ]
 ];

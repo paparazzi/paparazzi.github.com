@@ -6,6 +6,7 @@ var searchData=
   ['can_5faccept_5fregs_5ft',['can_accept_Regs_t',['../lpcCAN_8h.html#structcan__accept__Regs__t',1,'']]],
   ['can_5fcentral_5fregs_5ft',['can_central_Regs_t',['../lpcCAN_8h.html#structcan__central__Regs__t',1,'']]],
   ['can_5fregs_5ft',['can_Regs_t',['../lpcCAN_8h.html#structcan__Regs__t',1,'']]],
+  ['chibios_5fsdlog',['chibios_sdlog',['../sdlog__chibios_8h.html#structchibios__sdlog',1,'']]],
   ['chimu_5fattitude_5fdata',['CHIMU_attitude_data',['../imu__chimu_8h.html#structCHIMU__attitude__data',1,'']]],
   ['chimu_5feuler',['CHIMU_Euler',['../imu__chimu_8h.html#structCHIMU__Euler',1,'']]],
   ['chimu_5fparser_5fdata',['CHIMU_PARSER_DATA',['../imu__chimu_8h.html#structCHIMU__PARSER__DATA',1,'']]],
@@ -15,7 +16,11 @@ var searchData=
   ['complex',['complex',['../pprz__geodetic__float_8c.html#structcomplex',1,'']]],
   ['config_5fmkk_5fv2_5feeprom_5ft',['config_mkk_v2_eeprom_t',['../config__mkk__v2_8h.html#structconfig__mkk__v2__eeprom__t',1,'']]],
   ['config_5fmkk_5fv2_5fstruct',['config_mkk_v2_struct',['../config__mkk__v2_8h.html#structconfig__mkk__v2__struct',1,'']]],
+  ['contour_5festimation',['contour_estimation',['../opencv__contour_8h.html#structcontour__estimation',1,'']]],
+  ['contour_5fthreshold',['contour_threshold',['../opencv__contour_8h.html#structcontour__threshold',1,'']]],
+  ['crop_5ft',['crop_t',['../image_8h.html#structcrop__t',1,'']]],
   ['ctrl_5fmodule_5fdemo_5fstruct',['ctrl_module_demo_struct',['../ctrl__module__demo_8c.html#structctrl__module__demo__struct',1,'']]],
   ['curve_5ft',['curve_t',['../throttle__curve_8h.html#structcurve__t',1,'']]],
+  ['cv_5fasync',['cv_async',['../cv_8h.html#structcv__async',1,'']]],
   ['cyrf6936',['Cyrf6936',['../cyrf6936_8h.html#structCyrf6936',1,'']]]
 ];

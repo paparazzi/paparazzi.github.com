@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -138,24 +138,26 @@ $(document).ready(function(){initNavTree('imu__crista_8h_source.html','');});
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="imu__crista_8h.html#a0afb317da86ddcbe5e62e899fadd3dd3">   28</a></span>&#160;<span class="preprocessor">#define ADS8344_NB_CHANNELS 8</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">extern</span> <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="imu__crista_8h.html#ac6ac4cf39e0261a374f018284e08bf35">ADS8344_values</a>[<a class="code" href="imu__crista_8h.html#a0afb317da86ddcbe5e62e899fadd3dd3">ADS8344_NB_CHANNELS</a>];</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">extern</span> <span class="keyword">volatile</span> bool_t <a class="code" href="imu__crista_8h.html#a27dd4fc8dd725c92d763a3c667945fd1">ADS8344_available</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">extern</span> <span class="keyword">volatile</span> <span class="keywordtype">bool</span> <a class="code" href="imu__crista_8h.html#a4d60bb82c8eb3663ce0b84a8523eae67">ADS8344_available</a>;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">/* underlying architecture */</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;subsystems/imu/imu_crista_arch.h&quot;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">/* must be defined by underlying architecture */</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__crista_8h.html#ab553dbda318119d1367742a4e59e38ed">imu_crista_arch_init</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__crista_8h.html#aed788f7a0027c3f66c63e8ae393d833d">imu_christa_event</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="imu__crista_8h.html#a38f1122c1ee0701562b490c6e1b60609">   39</a></span>&#160;<span class="preprocessor">#define ImuEvent imu_christa_event</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__crista_8h.html#a0973b900a3144487ab768105acbe1fd8">imu_christa_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__crista_8h.html#a956ee62524f16914465dfee94125be7f">imu_christa_periodic</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__crista_8h.html#aed788f7a0027c3f66c63e8ae393d833d">imu_christa_event</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* IMU_CRISTA_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00016">types.h:16</a></div></div>
+<div class="ttc" id="imu__crista_8h_html_a0973b900a3144487ab768105acbe1fd8"><div class="ttname"><a href="imu__crista_8h.html#a0973b900a3144487ab768105acbe1fd8">imu_christa_init</a></div><div class="ttdeci">void imu_christa_init(void)</div></div>
+<div class="ttc" id="imu__crista_8h_html_a956ee62524f16914465dfee94125be7f"><div class="ttname"><a href="imu__crista_8h.html#a956ee62524f16914465dfee94125be7f">imu_christa_periodic</a></div><div class="ttdeci">void imu_christa_periodic(void)</div></div>
+<div class="ttc" id="imu__crista_8h_html_a4d60bb82c8eb3663ce0b84a8523eae67"><div class="ttname"><a href="imu__crista_8h.html#a4d60bb82c8eb3663ce0b84a8523eae67">ADS8344_available</a></div><div class="ttdeci">volatile bool ADS8344_available</div><div class="ttdef"><b>Definition:</b> <a href="ADS8344_8c_source.html#l00038">ADS8344.c:38</a></div></div>
 <div class="ttc" id="imu_8h_html"><div class="ttname"><a href="imu_8h.html">imu.h</a></div><div class="ttdoc">Inertial Measurement Unit interface. </div></div>
 <div class="ttc" id="imu__crista_8h_html_aed788f7a0027c3f66c63e8ae393d833d"><div class="ttname"><a href="imu__crista_8h.html#aed788f7a0027c3f66c63e8ae393d833d">imu_christa_event</a></div><div class="ttdeci">void imu_christa_event(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__crista_8c_source.html#l00091">imu_crista.c:91</a></div></div>
 <div class="ttc" id="imu__crista_8h_html_a0afb317da86ddcbe5e62e899fadd3dd3"><div class="ttname"><a href="imu__crista_8h.html#a0afb317da86ddcbe5e62e899fadd3dd3">ADS8344_NB_CHANNELS</a></div><div class="ttdeci">#define ADS8344_NB_CHANNELS</div><div class="ttdef"><b>Definition:</b> <a href="imu__crista_8h_source.html#l00028">imu_crista.h:28</a></div></div>
 <div class="ttc" id="imu__crista_8h_html_ac6ac4cf39e0261a374f018284e08bf35"><div class="ttname"><a href="imu__crista_8h.html#ac6ac4cf39e0261a374f018284e08bf35">ADS8344_values</a></div><div class="ttdeci">uint16_t ADS8344_values[ADS8344_NB_CHANNELS]</div><div class="ttdef"><b>Definition:</b> <a href="ADS8344_8c_source.html#l00039">ADS8344.c:39</a></div></div>
-<div class="ttc" id="imu__crista_8h_html_a27dd4fc8dd725c92d763a3c667945fd1"><div class="ttname"><a href="imu__crista_8h.html#a27dd4fc8dd725c92d763a3c667945fd1">ADS8344_available</a></div><div class="ttdeci">volatile bool_t ADS8344_available</div><div class="ttdef"><b>Definition:</b> <a href="ADS8344_8c_source.html#l00038">ADS8344.c:38</a></div></div>
 <div class="ttc" id="imu__crista_8h_html_ab553dbda318119d1367742a4e59e38ed"><div class="ttname"><a href="imu__crista_8h.html#ab553dbda318119d1367742a4e59e38ed">imu_crista_arch_init</a></div><div class="ttdeci">void imu_crista_arch_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="lpc21_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00058">imu_crista_arch.c:58</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -163,7 +165,7 @@ $(document).ready(function(){initNavTree('imu__crista_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8b2fa0708e2db44c1b91938af97bac44.html">imu</a></li><li class="navelem"><a class="el" href="imu__crista_8h.html">imu_crista.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:31 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:33 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

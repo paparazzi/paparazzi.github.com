@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -136,8 +136,8 @@ Functions</h2></td></tr>
 <tr class="separator:a2e997d697b4958da4156565605b92575"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac014d6fd1912b84754b41aaa143d221d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewvideo__nps_8c.html#ac014d6fd1912b84754b41aaa143d221d">viewvideo_stop</a> (void)</td></tr>
 <tr class="separator:ac014d6fd1912b84754b41aaa143d221d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a1eb6f4b58da09728ba2a0978adcb48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewvideo__nps_8c.html#a8a1eb6f4b58da09728ba2a0978adcb48">viewvideo_take_shot</a> (bool_t take)</td></tr>
-<tr class="separator:a8a1eb6f4b58da09728ba2a0978adcb48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7994c1ddb120b8478e1451f0b8a948b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewvideo__nps_8c.html#a7994c1ddb120b8478e1451f0b8a948b0">viewvideo_take_shot</a> (bool take)</td></tr>
+<tr class="separator:a7994c1ddb120b8478e1451f0b8a948b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -164,7 +164,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="viewvideo__nps_8c_source.html#l00038">38</a> of file <a class="el" href="viewvideo__nps_8c_source.html">viewvideo_nps.c</a>.</p>
 
-<p>References <a class="el" href="cv_8c_source.html#l00035">cv_add()</a>, <a class="el" href="viewvideo_8h_source.html#l00039">viewvideo_t::is_streaming</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="udp__socket_8c_source.html#l00049">udp_socket_create()</a>, <a class="el" href="viewvideo_8c_source.html#l00090">video_sock</a>, <a class="el" href="viewvideo_8c_source.html#l00100">viewvideo</a>, <a class="el" href="viewvideo_8c_source.html#l00114">viewvideo_function()</a>, and <a class="el" href="viewvideo_8c_source.html#l00072">VIEWVIDEO_SHOT_PATH</a>.</p>
+<p>References <a class="el" href="cv_8c_source.html#l00080">cv_add_to_device_async()</a>, <a class="el" href="viewvideo_8h_source.html#l00039">viewvideo_t::is_streaming</a>, <a class="el" href="colorfilter_8c_source.html#l00032">listener</a>, <a class="el" href="cv_8h_source.html#l00058">video_listener::maximum_fps</a>, <a class="el" href="udp__socket_8c_source.html#l00049">udp_socket_create()</a>, <a class="el" href="viewvideo_8c_source.html#l00105">video_sock</a>, <a class="el" href="viewvideo_8c_source.html#l00115">viewvideo</a>, <a class="el" href="viewvideo_8c_source.html#l00082">VIEWVIDEO_FPS</a>, <a class="el" href="viewvideo_8c_source.html#l00129">viewvideo_function()</a>, <a class="el" href="viewvideo_8c_source.html#l00088">VIEWVIDEO_NICE_LEVEL</a>, and <a class="el" href="viewvideo_8c_source.html#l00075">VIEWVIDEO_SHOT_PATH</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -173,7 +173,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="viewvideo__nps_8c_a8479777ac5ff98cdf58349e741f04005_cgraph.png" border="0" usemap="#viewvideo__nps_8c_a8479777ac5ff98cdf58349e741f04005_cgraph" alt=""/></div>
 <map name="viewvideo__nps_8c_a8479777ac5ff98cdf58349e741f04005_cgraph" id="viewvideo__nps_8c_a8479777ac5ff98cdf58349e741f04005_cgraph">
-<area shape="rect" id="node2" href="cv_8c.html#a2566b3260caf3b9b77136dd574086b99" title="cv_add" alt="" coords="201,68,267,95"/><area shape="rect" id="node3" href="udp__socket_8c.html#add3ac7d3bb65bcff12ae832ec1a2e715" title="Create UDP socket and bind it. " alt="" coords="163,119,305,145"/><area shape="rect" id="node4" href="viewvideo_8c.html#a6a9f8aa0c7db5b292f18c8266808fe62" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="163,169,305,196"/><area shape="rect" id="node5" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="399,68,510,95"/><area shape="rect" id="node6" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="407,119,502,145"/><area shape="rect" id="node7" href="image_8c.html#a1504ec67c03ccbac95d53463d1000311" title="Simplified high&#45;speed low CPU downsample function without averaging downsample factor must be 1..." alt="" coords="353,169,556,196"/><area shape="rect" id="node8" href="jpeg_8c.html#a80691d29cd889f8b549ac6850c95e1b6" title="Encode an YUV422 image. " alt="" coords="379,220,530,247"/><area shape="rect" id="node20" href="rtp_8c.html#ab810dc7d46e209624e4edd330edb7bf7" title="Send an RTP frame. " alt="" coords="393,321,516,348"/><area shape="rect" id="node9" href="jpeg_8c.html#af2a62dbe59d962b7cd5158e744b941df" title="jpeg_close_bitstream" alt="" coords="604,68,763,95"/><area shape="rect" id="node10" href="jpeg_8c.html#aa65677a00f264d53b744f64b386139e1" title="jpeg_encodeMCU" alt="" coords="617,119,750,145"/><area shape="rect" id="node15" href="jpeg_8c.html#a688433e5f55000ae893f2d5c29097691" title="jpeg_initialization" alt="" coords="618,195,749,221"/><area shape="rect" id="node18" href="jpeg_8c.html#a26b97262e8620df4fd0ece95195a2d8e" title="jpeg_write_markers" alt="" coords="610,245,757,272"/><area shape="rect" id="node19" href="jpeg_8c.html#a69ed605945a7ea46dbfaa9b3f29b5ed8" title="MakeTables" alt="" coords="636,296,731,323"/><area shape="rect" id="node11" href="jpeg_8c.html#a5b96ae28e2300858e6af3061ac8f96b9" title="jpeg_DCT" alt="" coords="867,5,949,32"/><area shape="rect" id="node12" href="jpeg_8c.html#a20c1f652043de7bc8171be6591bd3480" title="jpeg_huffman" alt="" coords="853,56,963,83"/><area shape="rect" id="node13" href="jpeg_8c.html#a1b9aa7581d09ec6412a14ec76334667c" title="jpeg_levelshift" alt="" coords="852,107,964,133"/><area shape="rect" id="node14" href="jpeg_8c.html#ac00d030f6b21b9e0973fe18a7a7f7e51" title="jpeg_quantization" alt="" coords="841,157,975,184"/><area shape="rect" id="node16" href="jpeg_8c.html#a496e270428d382bcbda831334590eaf6" title="jpeg_read_400_format" alt="" coords="825,208,991,235"/><area shape="rect" id="node17" href="jpeg_8c.html#a206021dc908d46e0a1d72ed9c40b10e9" title="jpeg_read_422_format" alt="" coords="825,259,991,285"/><area shape="rect" id="node21" href="rtp_8c.html#a7b661ee336df15cbee60fda1d7263247" title="rtp_packet_send" alt="" coords="619,347,747,373"/><area shape="rect" id="node22" href="udp__socket_8c.html#a2c3da4bd5d683ae6c844649fac79f13d" title="Send a packet from buffer, non&#45;blocking. " alt="" coords="811,347,1005,373"/></map>
+<area shape="rect" id="node2" href="cv_8c.html#ab67c6930fcd2fe1ed5cb26a5fc3a202e" title="cv_add_to_device_async" alt="" coords="163,81,341,108"/><area shape="rect" id="node10" href="udp__socket_8c.html#a8904d535adc73468cfa9e57a71f6de72" title="Create UDP socket and bind it. " alt="" coords="181,145,323,172"/><area shape="rect" id="node11" href="viewvideo_8c.html#aaa64c7de292e7ac10b442216cc49dcab" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="181,221,323,248"/><area shape="rect" id="node3" href="cv_8c.html#ada9827c953db23005383fa57f742e994" title="cv_add_to_device" alt="" coords="423,31,558,57"/><area shape="rect" id="node8" href="cv_8c.html#a13a0fca79c7d85448a2fa4bbab340b52" title="cv_async_thread" alt="" coords="426,81,555,108"/><area shape="rect" id="node4" href="cv_8h.html#a9e0afd727457cecc0e207aa03c4d48a5" title="add_video_device" alt="" coords="652,31,787,57"/><area shape="rect" id="node5" href="video__thread_8c.html#acc71ed66abdc3fa0cecd95cc408c670e" title="initialize_camera" alt="" coords="879,31,1009,57"/><area shape="rect" id="node6" href="v4l2_8c.html#a1f683e79a4639d4e189f059f6c4ae268" title="Initialize a V4L2(Video for Linux 2) device. " alt="" coords="1115,5,1190,32"/><area shape="rect" id="node7" href="v4l2_8c.html#a3798643b3e99cd32ef724fc928d92e51" title="Initialize a V4L2 subdevice. " alt="" coords="1089,56,1216,83"/><area shape="rect" id="node9" href="rt__priority_8h.html#ad24a15cd8740f6a59aa1a3fd3f8c74bb" title="set_nice_level" alt="" coords="664,81,775,108"/><area shape="rect" id="node12" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="435,132,546,159"/><area shape="rect" id="node13" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="443,183,538,209"/><area shape="rect" id="node14" href="image_8c.html#a1504ec67c03ccbac95d53463d1000311" title="Simplified high&#45;speed low CPU downsample function without averaging downsample factor must be 1..." alt="" coords="389,233,592,260"/><area shape="rect" id="node15" href="jpeg_8c.html#ac1a4731c71f3529891f1750260db2626" title="Encode an YUV422 image. " alt="" coords="415,284,566,311"/><area shape="rect" id="node27" href="rtp_8c.html#ab810dc7d46e209624e4edd330edb7bf7" title="Send an RTP frame. " alt="" coords="429,379,552,405"/><area shape="rect" id="node16" href="jpeg_8c.html#a817a4e96b0d0c0e1251e2db08467c2a1" title="jpeg_close_bitstream" alt="" coords="640,144,799,171"/><area shape="rect" id="node17" href="jpeg_8c.html#aa65677a00f264d53b744f64b386139e1" title="jpeg_encodeMCU" alt="" coords="653,195,786,221"/><area shape="rect" id="node22" href="jpeg_8c.html#a688433e5f55000ae893f2d5c29097691" title="jpeg_initialization" alt="" coords="654,271,785,297"/><area shape="rect" id="node25" href="jpeg_8c.html#a0908916b4be15d17fa2ad6e441b633f1" title="jpeg_write_markers" alt="" coords="646,321,793,348"/><area shape="rect" id="node26" href="jpeg_8c.html#a8a9557560cb4c8d4e60756e99b5a5f13" title="MakeTables" alt="" coords="672,372,767,399"/><area shape="rect" id="node18" href="jpeg_8c.html#a5b96ae28e2300858e6af3061ac8f96b9" title="jpeg_DCT" alt="" coords="903,88,985,115"/><area shape="rect" id="node19" href="jpeg_8c.html#a20c1f652043de7bc8171be6591bd3480" title="jpeg_huffman" alt="" coords="889,139,999,165"/><area shape="rect" id="node20" href="jpeg_8c.html#a1b9aa7581d09ec6412a14ec76334667c" title="jpeg_levelshift" alt="" coords="888,189,1000,216"/><area shape="rect" id="node21" href="jpeg_8c.html#a185e0318b222708896d55e8d98c0576b" title="jpeg_quantization" alt="" coords="877,240,1011,267"/><area shape="rect" id="node23" href="jpeg_8c.html#a496e270428d382bcbda831334590eaf6" title="jpeg_read_400_format" alt="" coords="861,291,1027,317"/><area shape="rect" id="node24" href="jpeg_8c.html#a206021dc908d46e0a1d72ed9c40b10e9" title="jpeg_read_422_format" alt="" coords="861,341,1027,368"/><area shape="rect" id="node28" href="rtp_8c.html#a7b661ee336df15cbee60fda1d7263247" title="rtp_packet_send" alt="" coords="655,423,783,449"/><area shape="rect" id="node29" href="udp__socket_8c.html#a2c3da4bd5d683ae6c844649fac79f13d" title="Send a packet from buffer, non&#45;blocking. " alt="" coords="847,423,1041,449"/></map>
 </div>
 </p>
 
@@ -233,14 +233,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8a1eb6f4b58da09728ba2a0978adcb48"></a>
+<a class="anchor" id="a7994c1ddb120b8478e1451f0b8a948b0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void viewvideo_take_shot </td>
           <td>(</td>
-          <td class="paramtype">bool_t&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>take</em></td><td>)</td>
           <td></td>
         </tr>
@@ -248,19 +248,6 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="viewvideo__nps_8c_source.html#l00042">42</a> of file <a class="el" href="viewvideo__nps_8c_source.html">viewvideo_nps.c</a>.</p>
-
-<p>Referenced by <a class="el" href="video__usb__logger_8c_source.html#l00072">video_usb_logger_periodic()</a>.</p>
-
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="viewvideo__nps_8c_a8a1eb6f4b58da09728ba2a0978adcb48_icgraph.png" border="0" usemap="#viewvideo__nps_8c_a8a1eb6f4b58da09728ba2a0978adcb48_icgraph" alt=""/></div>
-<map name="viewvideo__nps_8c_a8a1eb6f4b58da09728ba2a0978adcb48_icgraph" id="viewvideo__nps_8c_a8a1eb6f4b58da09728ba2a0978adcb48_icgraph">
-<area shape="rect" id="node2" href="video__usb__logger_8h.html#a3655b8f9585b793a86ea2b4e86f83b82" title="Log the values to a csv file. " alt="" coords="207,5,397,32"/></map>
-</div>
-</p>
 
 </div>
 </div>
@@ -293,7 +280,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="viewvideo__nps_8c.html">viewvideo_nps.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:49 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:56 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

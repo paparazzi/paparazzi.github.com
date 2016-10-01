@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['oa_5fmethod',['oa_method',['../guidance__OA_8h.html#a4dac0a956aca3da3fa670abc875414d2',1,'guidance_OA.h']]],
-  ['osd_5fattributes',['osd_attributes',['../max7456_8c.html#ac3dd6ed7cc7d01ada4ce3180d50150cd',1,'max7456.c']]],
-  ['oval_5fstatus',['oval_status',['../nav_8h.html#a6b504fc3b9e256669f3d93dff3372bcf',1,'nav.h']]]
+  ['nav_5fcatapult_5fstate',['nav_catapult_state',['../nav__catapult_8h.html#a423ca95cf61102e17b0265be9c6a95c5',1,'nav_catapult.h']]],
+  ['npsradiocontroltype',['NpsRadioControlType',['../nps__radio__control_8h.html#a4185eb844c2becceef5585bb0175544a',1,'nps_radio_control.h']]]
 ];

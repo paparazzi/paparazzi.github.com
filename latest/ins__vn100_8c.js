@@ -3,7 +3,7 @@ var ins__vn100_8c =
     [ "INS_YAW_NEUTRAL_DEFAULT", "ins__vn100_8c.html#a365ce013c6173931397c8585232aa33d", null ],
     [ "VN100_SLAVE_IDX", "ins__vn100_8c.html#ae2451df4f492f57cb782103233e2abfb", null ],
     [ "VN100_SPI_DEV", "ins__vn100_8c.html#a09072ddf7ce5e6ca445567a6cdce6019", null ],
-    [ "ins_configure", "ins__vn100_8c.html#a78e5c992e41a5e0983748ef1970c3420", null ],
+    [ "ins_configure", "ins__vn100_8c.html#a281f454da7c974941b9ba7c0301136dc", null ],
     [ "parse_ins_msg", "ins__vn100_8c.html#a9ea3d2bf0a03b37852747429c24bee61", null ],
     [ "vn100_event_task", "ins__vn100_8c.html#a579de7597d4a8e23e8577ca9745c385d", null ],
     [ "vn100_init", "ins__vn100_8c.html#a5d7ed5111626de36fa92c1727cd4cb6a", null ],

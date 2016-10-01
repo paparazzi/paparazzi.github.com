@@ -13,5 +13,5 @@ var stereoprotocol_8h =
     [ "stereoprot_isEndOfMsg", "stereoprotocol_8h.html#a8bd145f93da6d2a97eb9f6d432c2e437", null ],
     [ "stereoprot_isStartOfMsg", "stereoprotocol_8h.html#a161fe82f1737826010a31ada3e6ac766", null ],
     [ "stereoprot_sendArray", "stereoprotocol_8h.html#a70ea4531ac7e9bdc06f2956bf05902fb", null ],
-    [ "WritePart", "stereoprotocol_8h.html#a2bb7a633b8aba4d2f7e540f77c49dc93", null ]
+    [ "WritePart", "stereoprotocol_8h.html#abee6ddef00bd9217217b890f97777fdf", null ]
 ];

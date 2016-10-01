@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -106,6 +106,7 @@ $(document).ready(function(){initNavTree('state2camera_8c.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -124,11 +125,16 @@ $(document).ready(function(){initNavTree('state2camera_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="state2camera_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2stereocam_2state2camera_2state2camera_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2stereocam_2state2camera_2state2camera_8c" id="sw_2airborne_2modules_2stereocam_2state2camera_2state2camera_8c">
-<area shape="rect" id="node2" href="state2camera_8h.html" title="modules/stereocam/state2camera\l/state2camera.h" alt="" coords="164,109,408,151"/><area shape="rect" id="node4" href="stereoprotocol_8h.html" title="standard protocol for TUDelft stereocamera data transfer " alt="" coords="433,117,691,143"/><area shape="rect" id="node6" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="5,117,140,143"/><area shape="rect" id="node8" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="1275,117,1342,143"/><area shape="rect" id="node22" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="715,117,854,143"/><area shape="rect" id="node3" href="inttypes_8h.html" title="inttypes.h" alt="" coords="390,288,475,315"/><area shape="rect" id="node5" href="link__device_8h.html" title="generic device header " alt="" coords="471,206,653,233"/><area shape="rect" id="node9" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1299,288,1478,315"/><area shape="rect" id="node16" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1033,288,1224,315"/><area shape="rect" id="node18" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="1407,199,1557,240"/><area shape="rect" id="node20" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1581,199,1732,240"/><area shape="rect" id="node21" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1167,199,1331,240"/><area shape="rect" id="node11" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="1070,363,1225,389"/><area shape="rect" id="node14" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1300,363,1451,389"/><area shape="rect" id="node19" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="1557,288,1681,315"/></map>
+<area shape="rect" id="node2" href="state2camera_8h.html" title="modules/stereocam/state2camera\l/state2camera.h" alt="" coords="164,109,408,151"/><area shape="rect" id="node4" href="stereoprotocol_8h.html" title="standard protocol for TUDelft stereocamera data transfer " alt="" coords="433,117,691,143"/><area shape="rect" id="node6" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="5,117,140,143"/><area shape="rect" id="node8" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="1297,117,1363,143"/><area shape="rect" id="node23" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="715,117,854,143"/><area shape="rect" id="node3" href="inttypes_8h.html" title="inttypes.h" alt="" coords="302,206,387,233"/><area shape="rect" id="node9" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1037,288,1215,315"/><area shape="rect" id="node16" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1620,288,1811,315"/><area shape="rect" id="node19" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="1164,199,1315,240"/><area shape="rect" id="node21" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1527,199,1677,240"/><area shape="rect" id="node22" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1339,199,1503,240"/><area shape="rect" id="node11" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="1541,363,1695,389"/><area shape="rect" id="node14" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="980,363,1131,389"/><area shape="rect" id="node20" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="1291,288,1415,315"/></map>
 </div>
 </div>
 <p><a href="state2camera_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a241c8cf70ea278b3275a25c4d7bddb10"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="state2camera_8c.html#a241c8cf70ea278b3275a25c4d7bddb10">STATE2CAMERA_SEND_DATA_TYPE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a241c8cf70ea278b3275a25c4d7bddb10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:afbfddebf3fbf3a59f88205f65f79c76c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="state2camera_8c.html#afbfddebf3fbf3a59f88205f65f79c76c">write_serial_rot</a> ()</td></tr>
@@ -147,7 +153,22 @@ Variables</h2></td></tr>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Roland Sends rotation using the stereoboard protocol over the UART. </dd></dl>
 
 <p>Definition in file <a class="el" href="state2camera_8c_source.html">state2camera.c</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a241c8cf70ea278b3275a25c4d7bddb10"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE2CAMERA_SEND_DATA_TYPE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="state2camera_8c_source.html#l00036">36</a> of file <a class="el" href="state2camera_8c_source.html">state2camera.c</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="afbfddebf3fbf3a59f88205f65f79c76c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -162,9 +183,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="state2camera_8c_source.html#l00035">35</a> of file <a class="el" href="state2camera_8c_source.html">state2camera.c</a>.</p>
+<p>Definition at line <a class="el" href="state2camera_8c_source.html#l00039">39</a> of file <a class="el" href="state2camera_8c_source.html">state2camera.c</a>.</p>
 
-<p>References <a class="el" href="state_8h_source.html#l00194">State::alt_agl_f</a>, <a class="el" href="state2camera_8c_source.html#l00031">frame_number_sending</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00160">Int32RMat::m</a>, <a class="el" href="state_8c_source.html#l00036">state</a>, <a class="el" href="state_8h_source.html#l01090">stateGetNedToBodyRMat_i()</a>, and <a class="el" href="stereoprotocol_8c_source.html#l00085">stereoprot_sendArray()</a>.</p>
+<p>References <a class="el" href="state_8h_source.html#l00198">State::alt_agl_f</a>, <a class="el" href="state2camera_8c_source.html#l00031">frame_number_sending</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00160">Int32RMat::m</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="state_8c_source.html#l00036">state</a>, <a class="el" href="state_8h_source.html#l01125">stateGetNedToBodyEulers_f()</a>, <a class="el" href="state_8h_source.html#l01101">stateGetNedToBodyRMat_i()</a>, <a class="el" href="stereoprotocol_8c_source.html#l00088">stereoprot_sendArray()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -173,7 +194,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="state2camera_8c_afbfddebf3fbf3a59f88205f65f79c76c_cgraph.png" border="0" usemap="#state2camera_8c_afbfddebf3fbf3a59f88205f65f79c76c_cgraph" alt=""/></div>
 <map name="state2camera_8c_afbfddebf3fbf3a59f88205f65f79c76c_cgraph" id="state2camera_8c_afbfddebf3fbf3a59f88205f65f79c76c_cgraph">
-<area shape="rect" id="node2" href="group__state__attitude.html#ga7c541b9b2e6231ac9a11a9e21562a5b3" title="Get vehicle body attitude rotation matrix (int). " alt="" coords="172,5,363,32"/><area shape="rect" id="node6" href="stereoprotocol_8c.html#a70ea4531ac7e9bdc06f2956bf05902fb" title="stereoprot_sendArray" alt="" coords="187,56,348,83"/><area shape="rect" id="node3" href="group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int). " alt="" coords="411,5,567,32"/><area shape="rect" id="node4" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title="orientationCalcRMat_i" alt="" coords="615,5,775,32"/><area shape="rect" id="node5" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix. " alt="" coords="823,5,969,32"/><area shape="rect" id="node7" href="stereoprotocol_8c.html#aea2654795f27edaee2913485fccb097c" title="WritePart" alt="" coords="449,56,528,83"/></map>
+<area shape="rect" id="node2" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="172,56,371,83"/><area shape="rect" id="node7" href="group__state__attitude.html#ga7c541b9b2e6231ac9a11a9e21562a5b3" title="Get vehicle body attitude rotation matrix (int). " alt="" coords="176,107,367,133"/><area shape="rect" id="node11" href="stereoprotocol_8c.html#a70ea4531ac7e9bdc06f2956bf05902fb" title="stereoprot_sendArray" alt="" coords="191,157,352,184"/><area shape="rect" id="node3" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="419,56,583,83"/><area shape="rect" id="node4" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="631,56,799,83"/><area shape="rect" id="node5" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="847,5,1000,32"/><area shape="rect" id="node6" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="float_eulers_of_quat" alt="" coords="848,56,999,83"/><area shape="rect" id="node8" href="group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int). " alt="" coords="423,107,579,133"/><area shape="rect" id="node9" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title="orientationCalcRMat_i" alt="" coords="635,107,795,133"/><area shape="rect" id="node10" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix. " alt="" coords="850,107,997,133"/><area shape="rect" id="node12" href="stereoprotocol_8c.html#a9c5cab2d1b06309028a56504c1062079" title="WritePart" alt="" coords="461,157,540,184"/></map>
 </div>
 </p>
 
@@ -200,7 +221,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="state2camera_8c_source.html#l00031">31</a> of file <a class="el" href="state2camera_8c_source.html">state2camera.c</a>.</p>
 
-<p>Referenced by <a class="el" href="state2camera_8c_source.html#l00035">write_serial_rot()</a>.</p>
+<p>Referenced by <a class="el" href="state2camera_8c_source.html#l00039">write_serial_rot()</a>.</p>
 
 </div>
 </div>
@@ -238,7 +259,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_3df9ff4d3eb13d31d58a513ba3c4e4bb.html">stereocam</a></li><li class="navelem"><a class="el" href="dir_8e83f2e295e5cda9be6b568ba57f1203.html">state2camera</a></li><li class="navelem"><a class="el" href="state2camera_8c.html">state2camera.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:57 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:05 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

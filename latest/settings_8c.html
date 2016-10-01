@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -144,11 +144,11 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:ac61513879fdb7add6de0457920c8e59e"><td class="memItemLeft" align="right" valign="top">struct PersistentSettings&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8c.html#ac61513879fdb7add6de0457920c8e59e">pers_settings</a></td></tr>
 <tr class="separator:ac61513879fdb7add6de0457920c8e59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d24b2096b106f4d58da4afda7e43439"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8c.html#a8d24b2096b106f4d58da4afda7e43439">settings_store_flag</a></td></tr>
-<tr class="memdesc:a8d24b2096b106f4d58da4afda7e43439"><td class="mdescLeft">&#160;</td><td class="mdescRight">flag for setting feedback.  <a href="#a8d24b2096b106f4d58da4afda7e43439">More...</a><br /></td></tr>
-<tr class="separator:a8d24b2096b106f4d58da4afda7e43439"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3623011c3d6378aa27e7dc4c9d37ae5"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8c.html#ae3623011c3d6378aa27e7dc4c9d37ae5">settings_clear_flag</a></td></tr>
-<tr class="separator:ae3623011c3d6378aa27e7dc4c9d37ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe2013fefe36cd9b1f7e800aa65ee9ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8c.html#abe2013fefe36cd9b1f7e800aa65ee9ea">settings_store_flag</a></td></tr>
+<tr class="memdesc:abe2013fefe36cd9b1f7e800aa65ee9ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">flag for setting feedback.  <a href="#abe2013fefe36cd9b1f7e800aa65ee9ea">More...</a><br /></td></tr>
+<tr class="separator:abe2013fefe36cd9b1f7e800aa65ee9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d417ad7e2c3eeb9e2fd5375f50bf370"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8c.html#a2d417ad7e2c3eeb9e2fd5375f50bf370">settings_clear_flag</a></td></tr>
+<tr class="separator:a2d417ad7e2c3eeb9e2fd5375f50bf370"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Persistent settings interface. </p>
@@ -174,7 +174,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="settings_8c_source.html#l00077">77</a> of file <a class="el" href="settings_8c_source.html">settings.c</a>.</p>
 
-<p>References <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="linux_2subsystems_2settings__arch_8c_source.html#l00074">persistent_clear()</a>, <a class="el" href="settings_8c_source.html#l00040">settings_clear_flag</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p>References <a class="el" href="linux_2subsystems_2settings__arch_8c_source.html#l00074">persistent_clear()</a>, and <a class="el" href="settings_8c_source.html#l00040">settings_clear_flag</a>.</p>
 
 <p>Referenced by <a class="el" href="fixedwing_2autopilot_8h_source.html#l00159">autopilot_ClearSettings()</a>.</p>
 
@@ -218,9 +218,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="settings_8c_source.html#l00043">43</a> of file <a class="el" href="settings_8c_source.html">settings.c</a>.</p>
 
-<p>References <a class="el" href="settings_8c_source.html#l00031">pers_settings</a>, and <a class="el" href="linux_2subsystems_2settings__arch_8c_source.html#l00049">persistent_read()</a>.</p>
+<p>References <a class="el" href="settings_8c_source.html#l00031">pers_settings</a>, and <a class="el" href="chibios_2subsystems_2settings__arch_8c_source.html#l00038">persistent_read()</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00175">init_ap()</a>, and <a class="el" href="demo__ahrs__actuators_8c_source.html#l00089">main_init()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00174">init_ap()</a>, and <a class="el" href="demo__ahrs__actuators_8c_source.html#l00088">main_init()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -229,7 +229,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="settings_8c_a5f9a5a2e826aec11c77548f2a541fb9e_cgraph.png" border="0" usemap="#settings_8c_a5f9a5a2e826aec11c77548f2a541fb9e_cgraph" alt=""/></div>
 <map name="settings_8c_a5f9a5a2e826aec11c77548f2a541fb9e_cgraph" id="settings_8c_a5f9a5a2e826aec11c77548f2a541fb9e_cgraph">
-<area shape="rect" id="node2" href="linux_2subsystems_2settings__arch_8c.html#a6d60026540670a5fc2ac03dee06c791e" title="persistent_read" alt="" coords="152,5,275,32"/></map>
+<area shape="rect" id="node2" href="chibios_2subsystems_2settings__arch_8c.html#a6d60026540670a5fc2ac03dee06c791e" title="persistent_read" alt="" coords="152,5,275,32"/></map>
 </div>
 </p>
 
@@ -240,7 +240,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="settings_8c_a5f9a5a2e826aec11c77548f2a541fb9e_icgraph.png" border="0" usemap="#settings_8c_a5f9a5a2e826aec11c77548f2a541fb9e_icgraph" alt=""/></div>
 <map name="settings_8c_a5f9a5a2e826aec11c77548f2a541fb9e_icgraph" id="settings_8c_a5f9a5a2e826aec11c77548f2a541fb9e_icgraph">
-<area shape="rect" id="node2" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="160,5,224,32"/><area shape="rect" id="node4" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="152,56,232,83"/><area shape="rect" id="node3" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="280,5,351,32"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="288,56,343,83"/></map>
+<area shape="rect" id="node2" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="160,5,224,32"/><area shape="rect" id="node4" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="152,56,232,83"/><area shape="rect" id="node3" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="312,5,383,32"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="320,56,375,83"/><area shape="rect" id="node6" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="280,107,415,133"/><area shape="rect" id="node7" href="nps__main_8c.html#af28efef10cede3b66825b2dc2e4e7705" title="nps_main_init" alt="" coords="463,107,573,133"/><area shape="rect" id="node8" href="nps__main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="621,107,676,133"/></map>
 </div>
 </p>
 
@@ -265,7 +265,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="settings_8c_source.html#l00057">57</a> of file <a class="el" href="settings_8c_source.html">settings.c</a>.</p>
 
-<p>References <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="settings_8c_source.html#l00031">pers_settings</a>, <a class="el" href="linux_2subsystems_2settings__arch_8c_source.html#l00037">persistent_write()</a>, <a class="el" href="settings_8c_source.html#l00038">settings_store_flag</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p>References <a class="el" href="settings_8c_source.html#l00031">pers_settings</a>, <a class="el" href="chibios_2subsystems_2settings__arch_8c_source.html#l00033">persistent_write()</a>, and <a class="el" href="settings_8c_source.html#l00038">settings_store_flag</a>.</p>
 
 <p>Referenced by <a class="el" href="fixedwing_2autopilot_8h_source.html#l00151">autopilot_StoreSettings()</a>.</p>
 
@@ -276,7 +276,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="settings_8c_ada97d7166aa02d3c945ef0333770f640_cgraph.png" border="0" usemap="#settings_8c_ada97d7166aa02d3c945ef0333770f640_cgraph" alt=""/></div>
 <map name="settings_8c_ada97d7166aa02d3c945ef0333770f640_cgraph" id="settings_8c_ada97d7166aa02d3c945ef0333770f640_cgraph">
-<area shape="rect" id="node2" href="linux_2subsystems_2settings__arch_8c.html#a069b2bcf8fcf2d115466efa163c7583e" title="persistent_write" alt="" coords="167,5,289,32"/></map>
+<area shape="rect" id="node2" href="chibios_2subsystems_2settings__arch_8c.html#a069b2bcf8fcf2d115466efa163c7583e" title="persistent_write" alt="" coords="167,5,289,32"/></map>
 </div>
 </p>
 
@@ -310,12 +310,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae3623011c3d6378aa27e7dc4c9d37ae5"></a>
+<a class="anchor" id="a2d417ad7e2c3eeb9e2fd5375f50bf370"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool_t settings_clear_flag</td>
+          <td class="memname">bool settings_clear_flag</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -326,12 +326,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8d24b2096b106f4d58da4afda7e43439"></a>
+<a class="anchor" id="abe2013fefe36cd9b1f7e800aa65ee9ea"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool_t settings_store_flag</td>
+          <td class="memname">bool settings_store_flag</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -351,7 +351,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="settings_8c.html">settings.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:07 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:15 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

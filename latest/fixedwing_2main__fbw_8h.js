@@ -15,6 +15,6 @@ var fixedwing_2main__fbw_8h =
     [ "periodic_telemetry_handle", "fixedwing_2main__fbw_8h.html#a06f4490d25a57ef56d5267ba133c5e17", null ],
     [ "radio_control_event", "fixedwing_2main__fbw_8h.html#a1b5f5bd1cdedf6989936c466aeeba40f", null ],
     [ "radio_control_periodic_handle", "fixedwing_2main__fbw_8h.html#a92589adc4ef9400e874365e60f5ea5f2", null ],
-    [ "failsafe_mode", "fixedwing_2main__fbw_8h.html#ab350241ceab15e8a7850f54165689389", null ],
+    [ "failsafe_mode", "fixedwing_2main__fbw_8h.html#a04101c7f45676997ca991bb10734066c", null ],
     [ "fbw_mode", "fixedwing_2main__fbw_8h.html#ac72590ceb6632f7874a3240836537857", null ]
 ];

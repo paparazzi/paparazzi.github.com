@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -165,9 +165,9 @@ Macros</h2></td></tr>
 <tr class="separator:ab9462cb1f8768b2fb5682351d04b4fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90794536f5be1f71f0cd9aa9aca02131"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cam_8h.html#a90794536f5be1f71f0cd9aa9aca02131">CAM_TILT_MIN</a>&#160;&#160;&#160;-90</td></tr>
 <tr class="separator:a90794536f5be1f71f0cd9aa9aca02131"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac04a208e6f3d3bff7bc8deee47823641"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cam_8h.html#ac04a208e6f3d3bff7bc8deee47823641">cam_SetPanCommand</a>(x)&#160;&#160;&#160;{ <a class="el" href="inter__mcu_8c.html#ac13671906f2663b39fde033f4cb4a410">ap_state</a>-&gt;<a class="el" href="commands_8h.html#a929b1098e1af3f34ee056eeed9227136">commands</a>[COMMAND_CAM_PAN] = <a class="el" href="cam_8h.html#ad5dd3b0fa02d28e2446ad3dc20b43df7">cam_pan_command</a> = x;}</td></tr>
+<tr class="memitem:ac04a208e6f3d3bff7bc8deee47823641"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cam_8h.html#ac04a208e6f3d3bff7bc8deee47823641">cam_SetPanCommand</a>(x)&#160;&#160;&#160;{ <a class="el" href="cam_8h.html#ad5dd3b0fa02d28e2446ad3dc20b43df7">cam_pan_command</a> = x; imcu_set_command(COMMAND_CAM_PAN, <a class="el" href="cam_8h.html#ad5dd3b0fa02d28e2446ad3dc20b43df7">cam_pan_command</a>);}</td></tr>
 <tr class="separator:ac04a208e6f3d3bff7bc8deee47823641"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a7c562b6791388d4689e198166a2fb3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cam_8h.html#a3a7c562b6791388d4689e198166a2fb3">cam_SetTiltCommand</a>(x)&#160;&#160;&#160;{ <a class="el" href="inter__mcu_8c.html#ac13671906f2663b39fde033f4cb4a410">ap_state</a>-&gt;<a class="el" href="commands_8h.html#a929b1098e1af3f34ee056eeed9227136">commands</a>[COMMAND_CAM_TILT] = <a class="el" href="cam_8h.html#ab910ec45b2d8634d013edd68616059ba">cam_tilt_command</a> = x;}</td></tr>
+<tr class="memitem:a3a7c562b6791388d4689e198166a2fb3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cam_8h.html#a3a7c562b6791388d4689e198166a2fb3">cam_SetTiltCommand</a>(x)&#160;&#160;&#160;{ <a class="el" href="cam_8h.html#ab910ec45b2d8634d013edd68616059ba">cam_tilt_command</a> = x; imcu_set_command(COMMAND_CAM_TILT, <a class="el" href="cam_8h.html#ab910ec45b2d8634d013edd68616059ba">cam_tilt_command</a>);}</td></tr>
 <tr class="separator:a3a7c562b6791388d4689e198166a2fb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -227,7 +227,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="cam_8h_source.html#l00038">38</a> of file <a class="el" href="cam_8h_source.html">cam.h</a>.</p>
 
-<p>Referenced by <a class="el" href="cam_8c_source.html#l00130">cam_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="cam_8c_source.html#l00129">cam_periodic()</a>.</p>
 
 </div>
 </div>
@@ -243,7 +243,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="cam_8h_source.html#l00034">34</a> of file <a class="el" href="cam_8h_source.html">cam.h</a>.</p>
 
-<p>Referenced by <a class="el" href="cam_8c_source.html#l00130">cam_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="cam_8c_source.html#l00129">cam_periodic()</a>.</p>
 
 </div>
 </div>
@@ -259,7 +259,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="cam_8h_source.html#l00035">35</a> of file <a class="el" href="cam_8h_source.html">cam.h</a>.</p>
 
-<p>Referenced by <a class="el" href="cam_8c_source.html#l00130">cam_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="cam_8c_source.html#l00129">cam_periodic()</a>.</p>
 
 </div>
 </div>
@@ -275,7 +275,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="cam_8h_source.html#l00033">33</a> of file <a class="el" href="cam_8h_source.html">cam.h</a>.</p>
 
-<p>Referenced by <a class="el" href="cam_8c_source.html#l00130">cam_periodic()</a>, and <a class="el" href="cam__segment_8c_source.html#l00036">cam_segment_stop()</a>.</p>
+<p>Referenced by <a class="el" href="cam_8c_source.html#l00129">cam_periodic()</a>, and <a class="el" href="cam__segment_8c_source.html#l00036">cam_segment_stop()</a>.</p>
 
 </div>
 </div>
@@ -291,7 +291,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="cam_8h_source.html#l00040">40</a> of file <a class="el" href="cam_8h_source.html">cam.h</a>.</p>
 
-<p>Referenced by <a class="el" href="cam_8c_source.html#l00130">cam_periodic()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
+<p>Referenced by <a class="el" href="cam_8c_source.html#l00129">cam_periodic()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
 
 </div>
 </div>
@@ -307,7 +307,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="cam_8h_source.html#l00039">39</a> of file <a class="el" href="cam_8h_source.html">cam.h</a>.</p>
 
-<p>Referenced by <a class="el" href="cam_8c_source.html#l00130">cam_periodic()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
+<p>Referenced by <a class="el" href="cam_8c_source.html#l00129">cam_periodic()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
 
 </div>
 </div>
@@ -323,7 +323,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="cam_8h_source.html#l00037">37</a> of file <a class="el" href="cam_8h_source.html">cam.h</a>.</p>
 
-<p>Referenced by <a class="el" href="cam_8c_source.html#l00130">cam_periodic()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
+<p>Referenced by <a class="el" href="cam_8c_source.html#l00129">cam_periodic()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
 
 </div>
 </div>
@@ -339,7 +339,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="cam_8h_source.html#l00036">36</a> of file <a class="el" href="cam_8h_source.html">cam.h</a>.</p>
 
-<p>Referenced by <a class="el" href="cam_8c_source.html#l00130">cam_periodic()</a>, <a class="el" href="cam__segment_8c_source.html#l00041">cam_segment_periodic()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
+<p>Referenced by <a class="el" href="cam_8c_source.html#l00129">cam_periodic()</a>, <a class="el" href="cam__segment_8c_source.html#l00041">cam_segment_periodic()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
 
 </div>
 </div>
@@ -355,7 +355,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="cam_8h_source.html#l00044">44</a> of file <a class="el" href="cam_8h_source.html">cam.h</a>.</p>
 
-<p>Referenced by <a class="el" href="cam_8c_source.html#l00204">cam_angles()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
+<p>Referenced by <a class="el" href="cam_8c_source.html#l00203">cam_angles()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
 
 </div>
 </div>
@@ -371,7 +371,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="cam_8h_source.html#l00047">47</a> of file <a class="el" href="cam_8h_source.html">cam.h</a>.</p>
 
-<p>Referenced by <a class="el" href="cam_8c_source.html#l00204">cam_angles()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
+<p>Referenced by <a class="el" href="cam_8c_source.html#l00203">cam_angles()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
 
 </div>
 </div>
@@ -384,7 +384,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;{ <a class="el" href="inter__mcu_8c.html#ac13671906f2663b39fde033f4cb4a410">ap_state</a>-&gt;<a class="el" href="commands_8h.html#a929b1098e1af3f34ee056eeed9227136">commands</a>[COMMAND_CAM_PAN] = <a class="el" href="cam_8h.html#ad5dd3b0fa02d28e2446ad3dc20b43df7">cam_pan_command</a> = x;}</td>
+          <td>&#160;&#160;&#160;{ <a class="el" href="cam_8h.html#ad5dd3b0fa02d28e2446ad3dc20b43df7">cam_pan_command</a> = x; imcu_set_command(COMMAND_CAM_PAN, <a class="el" href="cam_8h.html#ad5dd3b0fa02d28e2446ad3dc20b43df7">cam_pan_command</a>);}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -402,7 +402,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;{ <a class="el" href="inter__mcu_8c.html#ac13671906f2663b39fde033f4cb4a410">ap_state</a>-&gt;<a class="el" href="commands_8h.html#a929b1098e1af3f34ee056eeed9227136">commands</a>[COMMAND_CAM_TILT] = <a class="el" href="cam_8h.html#ab910ec45b2d8634d013edd68616059ba">cam_tilt_command</a> = x;}</td>
+          <td>&#160;&#160;&#160;{ <a class="el" href="cam_8h.html#ab910ec45b2d8634d013edd68616059ba">cam_tilt_command</a> = x; imcu_set_command(COMMAND_CAM_TILT, <a class="el" href="cam_8h.html#ab910ec45b2d8634d013edd68616059ba">cam_tilt_command</a>);}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -423,7 +423,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="cam_8h_source.html#l00050">50</a> of file <a class="el" href="cam_8h_source.html">cam.h</a>.</p>
 
-<p>Referenced by <a class="el" href="cam_8c_source.html#l00204">cam_angles()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
+<p>Referenced by <a class="el" href="cam_8c_source.html#l00203">cam_angles()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
 
 </div>
 </div>
@@ -439,7 +439,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="cam_8h_source.html#l00053">53</a> of file <a class="el" href="cam_8h_source.html">cam.h</a>.</p>
 
-<p>Referenced by <a class="el" href="cam_8c_source.html#l00204">cam_angles()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
+<p>Referenced by <a class="el" href="cam_8c_source.html#l00203">cam_angles()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
 
 </div>
 </div>
@@ -458,9 +458,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cam_8c_source.html#l00120">120</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
+<p>Definition at line <a class="el" href="cam_8c_source.html#l00119">119</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
 
-<p>References <a class="el" href="cam_8c_source.html#l00091">cam_mode</a>, <a class="el" href="cam_8c_source.html#l00089">CAM_MODE0</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, and <a class="el" href="cam_8c_source.html#l00103">send_cam()</a>.</p>
+<p>References <a class="el" href="cam_8c_source.html#l00090">cam_mode</a>, <a class="el" href="cam_8c_source.html#l00088">CAM_MODE0</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, and <a class="el" href="cam_8c_source.html#l00102">send_cam()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -491,9 +491,9 @@ Variables</h2></td></tr>
 
 <p>For CAM_MODE_AC_TARGET mode. </p>
 
-<p>Definition at line <a class="el" href="cam_8c_source.html#l00130">130</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
+<p>Definition at line <a class="el" href="cam_8c_source.html#l00129">129</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
 
-<p>References <a class="el" href="inter__mcu_8c_source.html#l00037">ap_state</a>, <a class="el" href="cam_8c_source.html#l00306">cam_ac_target()</a>, <a class="el" href="cam_8c_source.html#l00204">cam_angles()</a>, <a class="el" href="cam_8c_source.html#l00091">cam_mode</a>, <a class="el" href="cam_8h_source.html#l00038">CAM_MODE_AC_TARGET</a>, <a class="el" href="cam_8h_source.html#l00034">CAM_MODE_ANGLES</a>, <a class="el" href="cam_8h_source.html#l00035">CAM_MODE_NADIR</a>, <a class="el" href="cam_8h_source.html#l00033">CAM_MODE_OFF</a>, <a class="el" href="cam_8h_source.html#l00040">CAM_MODE_RC</a>, <a class="el" href="cam_8h_source.html#l00039">CAM_MODE_STABILIZED</a>, <a class="el" href="cam_8h_source.html#l00037">CAM_MODE_WP_TARGET</a>, <a class="el" href="cam_8h_source.html#l00036">CAM_MODE_XY_TARGET</a>, <a class="el" href="cam_8c_source.html#l00281">cam_nadir()</a>, <a class="el" href="cam_8c_source.html#l00071">CAM_PAN0</a>, <a class="el" href="cam_8c_source.html#l00073">cam_pan_c</a>, <a class="el" href="cam_8c_source.html#l00262">cam_target()</a>, <a class="el" href="cam_8c_source.html#l00077">CAM_TILT0</a>, <a class="el" href="cam_8c_source.html#l00079">cam_tilt_c</a>, <a class="el" href="cam_8c_source.html#l00296">cam_waypoint_target()</a>, <a class="el" href="linux_2led__hw_8h_source.html#l00043">LED_OFF</a>, <a class="el" href="linux_2led__hw_8h_source.html#l00042">LED_ON</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="paparazzi_8h_source.html#l00009">MIN_PPRZ</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00041">pprz_mode</a>, <a class="el" href="fixedwing_2autopilot_8h_source.html#l00051">PPRZ_MODE_AUTO1</a>, and <a class="el" href="fixedwing_2autopilot_8h_source.html#l00052">PPRZ_MODE_AUTO2</a>.</p>
+<p>References <a class="el" href="cam_8c_source.html#l00317">cam_ac_target()</a>, <a class="el" href="cam_8c_source.html#l00203">cam_angles()</a>, <a class="el" href="cam_8c_source.html#l00090">cam_mode</a>, <a class="el" href="cam_8h_source.html#l00038">CAM_MODE_AC_TARGET</a>, <a class="el" href="cam_8h_source.html#l00034">CAM_MODE_ANGLES</a>, <a class="el" href="cam_8h_source.html#l00035">CAM_MODE_NADIR</a>, <a class="el" href="cam_8h_source.html#l00033">CAM_MODE_OFF</a>, <a class="el" href="cam_8h_source.html#l00040">CAM_MODE_RC</a>, <a class="el" href="cam_8h_source.html#l00039">CAM_MODE_STABILIZED</a>, <a class="el" href="cam_8h_source.html#l00037">CAM_MODE_WP_TARGET</a>, <a class="el" href="cam_8h_source.html#l00036">CAM_MODE_XY_TARGET</a>, <a class="el" href="cam_8c_source.html#l00280">cam_nadir()</a>, <a class="el" href="cam_8c_source.html#l00070">CAM_PAN0</a>, <a class="el" href="cam_8c_source.html#l00072">cam_pan_c</a>, <a class="el" href="cam_8c_source.html#l00261">cam_target()</a>, <a class="el" href="cam_8c_source.html#l00076">CAM_TILT0</a>, <a class="el" href="cam_8c_source.html#l00078">cam_tilt_c</a>, <a class="el" href="cam_8c_source.html#l00295">cam_waypoint_target()</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00050">LED_OFF</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00049">LED_ON</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="paparazzi_8h_source.html#l00009">MIN_PPRZ</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00041">pprz_mode</a>, <a class="el" href="fixedwing_2autopilot_8h_source.html#l00051">PPRZ_MODE_AUTO1</a>, and <a class="el" href="fixedwing_2autopilot_8h_source.html#l00052">PPRZ_MODE_AUTO2</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -502,7 +502,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cam_8h_a1ac78decc31cdd4c6b7584a8bf42d315_cgraph.png" border="0" usemap="#cam_8h_a1ac78decc31cdd4c6b7584a8bf42d315_cgraph" alt=""/></div>
 <map name="cam_8h_a1ac78decc31cdd4c6b7584a8bf42d315_cgraph" id="cam_8h_a1ac78decc31cdd4c6b7584a8bf42d315_cgraph">
-<area shape="rect" id="node2" href="cam_8c.html#a7e228da24201c997a297f7c49bffa74c" title="cam_ac_target" alt="" coords="180,237,299,263"/><area shape="rect" id="node3" href="cam_8c.html#aab3da8ed719ee01699f50450b3df3b13" title="Computes the right angles from target_x, target_y, target_alt. " alt="" coords="367,186,463,213"/><area shape="rect" id="node4" href="cam_8c.html#a38adb5d1136278301352a4a57e463045" title="Computes the servo values from cam_pan_c and cam_tilt_c. " alt="" coords="568,46,667,73"/><area shape="rect" id="node32" href="cam_8c.html#aa5c7c762b35b57ec479e6244f006c5d1" title="Point straight down. " alt="" coords="195,287,284,314"/><area shape="rect" id="node33" href="cam_8c.html#a91c2133236e62688f7acfe1ab9fe2f11" title="cam_waypoint_target" alt="" coords="160,186,319,213"/><area shape="rect" id="node31" href="traffic__info_8c.html#a7e85d322af164f27094da0f8aca67b21" title="get_ac_info" alt="" coords="367,237,462,263"/><area shape="rect" id="node5" href="group__state__velocity.html#ga6f8b83126a235daea584aa9ce97f7fac" title="Get dir of horizontal ground speed (float). " alt="" coords="511,97,724,123"/><area shape="rect" id="node7" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="518,147,717,174"/><area shape="rect" id="node12" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float). " alt="" coords="536,299,699,326"/><area shape="rect" id="node24" href="group__state__position.html#ga7488f3b1e3afa9515541c0130278bdac" title="Get position in UTM coordinates (float). " alt="" coords="783,274,949,301"/><area shape="rect" id="node26" href="point_8c.html#a3317a3a368f54d6c89acfbbaa49b4ed2" title="vPoint" alt="" coords="587,198,648,225"/><area shape="rect" id="node6" href="group__state__velocity.html#gad9b7b6ea39d5a4ee3e824f97204c4bb5" title="stateCalcHorizontalSpeed\lDir_f" alt="" coords="772,5,960,47"/><area shape="rect" id="node8" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="784,71,948,98"/><area shape="rect" id="node9" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="1024,71,1192,98"/><area shape="rect" id="node10" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="1256,97,1409,123"/><area shape="rect" id="node11" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="float_eulers_of_quat" alt="" coords="1257,46,1408,73"/><area shape="rect" id="node13" href="group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title="stateCalcPositionEnu_f" alt="" coords="783,401,949,427"/><area shape="rect" id="node14" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1258,375,1407,402"/><area shape="rect" id="node15" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="1039,527,1177,554"/><area shape="rect" id="node17" href="pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title="enu_of_lla_point_f" alt="" coords="1040,426,1176,453"/><area shape="rect" id="node19" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="1059,477,1157,503"/><area shape="rect" id="node21" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="1283,274,1382,301"/><area shape="rect" id="node16" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1259,527,1407,554"/><area shape="rect" id="node18" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1283,426,1383,453"/><area shape="rect" id="node20" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1281,477,1385,503"/><area shape="rect" id="node22" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1457,274,1604,301"/><area shape="rect" id="node23" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1463,187,1599,228"/><area shape="rect" id="node25" href="group__state__position.html#ga6893f5e3d84e0464d2bc6fc86a08f16d" title="stateCalcPositionUtm_f" alt="" coords="1023,274,1193,301"/><area shape="rect" id="node27" href="point_8c.html#a553fdfb308cb850023076e6a58842796" title="vSubtractVectors" alt="" coords="800,173,932,199"/><area shape="rect" id="node28" href="point_8c.html#a0e392f07c1bc4a72fa292c1fb98fbffe" title="vMultiplyMatrixByVector" alt="" coords="779,122,953,149"/><area shape="rect" id="node29" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title="lla_of_utm_f" alt="" coords="817,223,915,250"/><area shape="rect" id="node30" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title="inverse_isometric_latitude_f" alt="" coords="1008,223,1208,250"/></map>
+<area shape="rect" id="node2" href="cam_8c.html#a7e228da24201c997a297f7c49bffa74c" title="cam_ac_target" alt="" coords="180,21,299,47"/><area shape="rect" id="node3" href="cam_8c.html#a38adb5d1136278301352a4a57e463045" title="Computes the servo values from cam_pan_c and cam_tilt_c. " alt="" coords="568,46,667,73"/><area shape="rect" id="node4" href="cam_8c.html#aa5c7c762b35b57ec479e6244f006c5d1" title="Point straight down. " alt="" coords="195,223,284,250"/><area shape="rect" id="node5" href="cam_8c.html#aab3da8ed719ee01699f50450b3df3b13" title="Computes the right angles from target_x, target_y, target_alt. " alt="" coords="367,173,463,199"/><area shape="rect" id="node32" href="cam_8c.html#a91c2133236e62688f7acfe1ab9fe2f11" title="cam_waypoint_target" alt="" coords="160,173,319,199"/><area shape="rect" id="node13" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float). " alt="" coords="536,299,699,326"/><area shape="rect" id="node6" href="group__state__velocity.html#ga6f8b83126a235daea584aa9ce97f7fac" title="Get dir of horizontal ground speed (float). " alt="" coords="511,97,724,123"/><area shape="rect" id="node8" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="518,147,717,174"/><area shape="rect" id="node25" href="group__state__position.html#ga7488f3b1e3afa9515541c0130278bdac" title="Get position in UTM coordinates (float). " alt="" coords="783,274,949,301"/><area shape="rect" id="node27" href="point_8c.html#a3317a3a368f54d6c89acfbbaa49b4ed2" title="vPoint" alt="" coords="587,198,648,225"/><area shape="rect" id="node7" href="group__state__velocity.html#gad9b7b6ea39d5a4ee3e824f97204c4bb5" title="stateCalcHorizontalSpeed\lDir_f" alt="" coords="772,5,960,47"/><area shape="rect" id="node9" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="784,71,948,98"/><area shape="rect" id="node10" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="1024,71,1192,98"/><area shape="rect" id="node11" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="1256,46,1409,73"/><area shape="rect" id="node12" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="float_eulers_of_quat" alt="" coords="1257,97,1408,123"/><area shape="rect" id="node14" href="group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title="stateCalcPositionEnu_f" alt="" coords="783,401,949,427"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1258,375,1407,402"/><area shape="rect" id="node16" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="1039,527,1177,554"/><area shape="rect" id="node18" href="pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title="enu_of_lla_point_f" alt="" coords="1040,426,1176,453"/><area shape="rect" id="node20" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="1059,477,1157,503"/><area shape="rect" id="node22" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="1283,278,1382,305"/><area shape="rect" id="node17" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1259,527,1407,554"/><area shape="rect" id="node19" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1283,426,1383,453"/><area shape="rect" id="node21" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1281,477,1385,503"/><area shape="rect" id="node23" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1457,282,1604,309"/><area shape="rect" id="node24" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1463,216,1599,257"/><area shape="rect" id="node26" href="group__state__position.html#ga6893f5e3d84e0464d2bc6fc86a08f16d" title="stateCalcPositionUtm_f" alt="" coords="1023,274,1193,301"/><area shape="rect" id="node28" href="point_8c.html#a553fdfb308cb850023076e6a58842796" title="vSubtractVectors" alt="" coords="800,173,932,199"/><area shape="rect" id="node29" href="point_8c.html#a0e392f07c1bc4a72fa292c1fb98fbffe" title="vMultiplyMatrixByVector" alt="" coords="779,122,953,149"/><area shape="rect" id="node30" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title="lla_of_utm_f" alt="" coords="817,223,915,250"/><area shape="rect" id="node31" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title="inverse_isometric_latitude_f" alt="" coords="1008,173,1208,199"/></map>
 </div>
 </p>
 
@@ -519,7 +519,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cam_8c_source.html#l00092">92</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
+<p>Definition at line <a class="el" href="cam_8c_source.html#l00091">91</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
 
 <p>Referenced by <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
 
@@ -535,9 +535,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cam_8c_source.html#l00091">91</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
+<p>Definition at line <a class="el" href="cam_8c_source.html#l00090">90</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
 
-<p>Referenced by <a class="el" href="cam_8c_source.html#l00120">cam_init()</a>, <a class="el" href="cam_8c_source.html#l00130">cam_periodic()</a>, <a class="el" href="cam__segment_8c_source.html#l00041">cam_segment_periodic()</a>, <a class="el" href="cam__segment_8c_source.html#l00036">cam_segment_stop()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
+<p>Referenced by <a class="el" href="cam_8c_source.html#l00119">cam_init()</a>, <a class="el" href="cam_8c_source.html#l00129">cam_periodic()</a>, <a class="el" href="cam__segment_8c_source.html#l00041">cam_segment_periodic()</a>, <a class="el" href="cam__segment_8c_source.html#l00036">cam_segment_stop()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
 
 </div>
 </div>
@@ -551,9 +551,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cam_8c_source.html#l00073">73</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
+<p>Definition at line <a class="el" href="cam_8c_source.html#l00072">72</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
 
-<p>Referenced by <a class="el" href="cam_8c_source.html#l00204">cam_angles()</a>, <a class="el" href="cam_8c_source.html#l00130">cam_periodic()</a>, and <a class="el" href="cam_8c_source.html#l00262">cam_target()</a>.</p>
+<p>Referenced by <a class="el" href="cam_8c_source.html#l00203">cam_angles()</a>, <a class="el" href="cam_8c_source.html#l00129">cam_periodic()</a>, and <a class="el" href="cam_8c_source.html#l00261">cam_target()</a>.</p>
 
 </div>
 </div>
@@ -567,7 +567,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cam_8c_source.html#l00094">94</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
+<p>Definition at line <a class="el" href="cam_8c_source.html#l00093">93</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
 
 </div>
 </div>
@@ -581,9 +581,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cam_8c_source.html#l00081">81</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
+<p>Definition at line <a class="el" href="cam_8c_source.html#l00080">80</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
 
-<p>Referenced by <a class="el" href="cam_8c_source.html#l00204">cam_angles()</a>, and <a class="el" href="cam_8c_source.html#l00103">send_cam()</a>.</p>
+<p>Referenced by <a class="el" href="cam_8c_source.html#l00203">cam_angles()</a>, and <a class="el" href="cam_8c_source.html#l00102">send_cam()</a>.</p>
 
 </div>
 </div>
@@ -599,9 +599,7 @@ Variables</h2></td></tr>
 
 <p>For CAM_MODE_WP_TARGET mode. </p>
 
-<p>Definition at line <a class="el" href="cam_8c_source.html#l00086">86</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
-
-<p>Referenced by <a class="el" href="cam_8c_source.html#l00306">cam_ac_target()</a>.</p>
+<p>Definition at line <a class="el" href="cam_8c_source.html#l00085">85</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
 
 </div>
 </div>
@@ -615,9 +613,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cam_8c_source.html#l00084">84</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
+<p>Definition at line <a class="el" href="cam_8c_source.html#l00083">83</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
 
-<p>Referenced by <a class="el" href="cam_8c_source.html#l00306">cam_ac_target()</a>, <a class="el" href="cam_8c_source.html#l00281">cam_nadir()</a>, <a class="el" href="cam__segment_8c_source.html#l00041">cam_segment_periodic()</a>, <a class="el" href="cam_8c_source.html#l00262">cam_target()</a>, and <a class="el" href="cam_8c_source.html#l00296">cam_waypoint_target()</a>.</p>
+<p>Referenced by <a class="el" href="cam_8c_source.html#l00280">cam_nadir()</a>, <a class="el" href="cam__segment_8c_source.html#l00041">cam_segment_periodic()</a>, <a class="el" href="cam_8c_source.html#l00261">cam_target()</a>, and <a class="el" href="cam_8c_source.html#l00295">cam_waypoint_target()</a>.</p>
 
 </div>
 </div>
@@ -633,9 +631,9 @@ Variables</h2></td></tr>
 
 <p>For CAM_MODE_XY_TARGET mode. </p>
 
-<p>Definition at line <a class="el" href="cam_8c_source.html#l00085">85</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
+<p>Definition at line <a class="el" href="cam_8c_source.html#l00084">84</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
 
-<p>Referenced by <a class="el" href="cam_8c_source.html#l00296">cam_waypoint_target()</a>.</p>
+<p>Referenced by <a class="el" href="cam_8c_source.html#l00295">cam_waypoint_target()</a>.</p>
 
 </div>
 </div>
@@ -651,9 +649,9 @@ Variables</h2></td></tr>
 
 <p>Radians, for CAM_MODE_ANGLES mode. </p>
 
-<p>Definition at line <a class="el" href="cam_8c_source.html#l00084">84</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
+<p>Definition at line <a class="el" href="cam_8c_source.html#l00083">83</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
 
-<p>Referenced by <a class="el" href="cam_8c_source.html#l00306">cam_ac_target()</a>, <a class="el" href="cam_8c_source.html#l00281">cam_nadir()</a>, <a class="el" href="cam__segment_8c_source.html#l00041">cam_segment_periodic()</a>, <a class="el" href="cam_8c_source.html#l00262">cam_target()</a>, <a class="el" href="cam_8c_source.html#l00296">cam_waypoint_target()</a>, and <a class="el" href="cam_8c_source.html#l00103">send_cam()</a>.</p>
+<p>Referenced by <a class="el" href="cam_8c_source.html#l00280">cam_nadir()</a>, <a class="el" href="cam__segment_8c_source.html#l00041">cam_segment_periodic()</a>, <a class="el" href="cam_8c_source.html#l00261">cam_target()</a>, <a class="el" href="cam_8c_source.html#l00295">cam_waypoint_target()</a>, and <a class="el" href="cam_8c_source.html#l00102">send_cam()</a>.</p>
 
 </div>
 </div>
@@ -667,9 +665,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cam_8c_source.html#l00084">84</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
+<p>Definition at line <a class="el" href="cam_8c_source.html#l00083">83</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
 
-<p>Referenced by <a class="el" href="cam_8c_source.html#l00306">cam_ac_target()</a>, <a class="el" href="cam_8c_source.html#l00281">cam_nadir()</a>, <a class="el" href="cam__segment_8c_source.html#l00041">cam_segment_periodic()</a>, <a class="el" href="cam_8c_source.html#l00262">cam_target()</a>, <a class="el" href="cam_8c_source.html#l00296">cam_waypoint_target()</a>, and <a class="el" href="cam_8c_source.html#l00103">send_cam()</a>.</p>
+<p>Referenced by <a class="el" href="cam_8c_source.html#l00280">cam_nadir()</a>, <a class="el" href="cam__segment_8c_source.html#l00041">cam_segment_periodic()</a>, <a class="el" href="cam_8c_source.html#l00261">cam_target()</a>, <a class="el" href="cam_8c_source.html#l00295">cam_waypoint_target()</a>, and <a class="el" href="cam_8c_source.html#l00102">send_cam()</a>.</p>
 
 </div>
 </div>
@@ -683,9 +681,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cam_8c_source.html#l00082">82</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
+<p>Definition at line <a class="el" href="cam_8c_source.html#l00081">81</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
 
-<p>Referenced by <a class="el" href="cam_8c_source.html#l00204">cam_angles()</a>, and <a class="el" href="cam_8c_source.html#l00103">send_cam()</a>.</p>
+<p>Referenced by <a class="el" href="cam_8c_source.html#l00203">cam_angles()</a>, and <a class="el" href="cam_8c_source.html#l00102">send_cam()</a>.</p>
 
 </div>
 </div>
@@ -699,9 +697,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cam_8c_source.html#l00079">79</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
+<p>Definition at line <a class="el" href="cam_8c_source.html#l00078">78</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
 
-<p>Referenced by <a class="el" href="cam_8c_source.html#l00204">cam_angles()</a>, <a class="el" href="cam_8c_source.html#l00130">cam_periodic()</a>, and <a class="el" href="cam_8c_source.html#l00262">cam_target()</a>.</p>
+<p>Referenced by <a class="el" href="cam_8c_source.html#l00203">cam_angles()</a>, <a class="el" href="cam_8c_source.html#l00129">cam_periodic()</a>, and <a class="el" href="cam_8c_source.html#l00261">cam_target()</a>.</p>
 
 </div>
 </div>
@@ -715,7 +713,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cam_8c_source.html#l00095">95</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
+<p>Definition at line <a class="el" href="cam_8c_source.html#l00094">94</a> of file <a class="el" href="cam_8c_source.html">cam.c</a>.</p>
 
 </div>
 </div>
@@ -725,7 +723,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_900c035387cecacfdb66232491aebefe.html">cam_control</a></li><li class="navelem"><a class="el" href="cam_8h.html">cam.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:47 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:53 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

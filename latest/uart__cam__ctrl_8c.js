@@ -10,6 +10,7 @@ var uart__cam__ctrl_8c =
     [ "digital_cam_uart_event", "uart__cam__ctrl_8c.html#a5e10f4a38bd62ac20ce282a8c8ccc424", null ],
     [ "digital_cam_uart_init", "uart__cam__ctrl_8c.html#aa6c9f2a91885c106bb8fd41e49afeada", null ],
     [ "digital_cam_uart_periodic", "uart__cam__ctrl_8c.html#aaf39174521b99262b40497c50520150b", null ],
+    [ "send_thumbnails", "uart__cam__ctrl_8c.html#a3e9e10f2b19bfc49e7e073ecd7f03e7f", null ],
     [ "dc_shot_msg", "uart__cam__ctrl_8c.html#ab64b13ab33cecc8ef1213cd19a6a235d", null ],
     [ "digital_cam_uart_status", "uart__cam__ctrl_8c.html#a93bd26e96235117bb093e511e4569464", null ],
     [ "digital_cam_uart_thumbnails", "uart__cam__ctrl_8c.html#a73a611e337229c8b07ceeb32381e92cb", null ],

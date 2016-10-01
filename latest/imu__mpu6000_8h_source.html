@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -147,16 +147,17 @@ $(document).ready(function(){initNavTree('imu__mpu6000_8h_source.html','');});
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="imu__mpu6000_8h.html#structImuMpu6000">ImuMpu6000</a> <a class="code" href="imu__mpu6000_8h.html#a14f4824721832ff67a688b6a92e78ff4">imu_mpu_spi</a>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__mpu6000_8h.html#adeded9c36c67ea0bb8d9711c9992dea0">imu_mpu_spi_event</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="imu__mpu6000_8h.html#a38f1122c1ee0701562b490c6e1b60609">   47</a></span>&#160;<span class="preprocessor">#define ImuEvent imu_mpu_spi_event</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* IMU_MPU6000_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__mpu6000_8h.html#abcd8e3da368d4b35f99d0221308ae250">imu_mpu_spi_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__mpu6000_8h.html#a45f9260628aea5e402f373fa453d37b0">imu_mpu_spi_periodic</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__mpu6000_8h.html#adeded9c36c67ea0bb8d9711c9992dea0">imu_mpu_spi_event</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* IMU_MPU6000_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="imu__mpu60x0__defaults_8h_html"><div class="ttname"><a href="imu__mpu60x0__defaults_8h.html">imu_mpu60x0_defaults.h</a></div><div class="ttdoc">Default sensitivity definitions for an IMU using the MPU60x0. </div></div>
+<div class="ttc" id="imu__mpu6000_8h_html_a45f9260628aea5e402f373fa453d37b0"><div class="ttname"><a href="imu__mpu6000_8h.html#a45f9260628aea5e402f373fa453d37b0">imu_mpu_spi_periodic</a></div><div class="ttdeci">void imu_mpu_spi_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu6000_8c_source.html#l00083">imu_mpu6000.c:83</a></div></div>
 <div class="ttc" id="mpu60x0__spi_8h_html_structMpu60x0__Spi"><div class="ttname"><a href="mpu60x0__spi_8h.html#structMpu60x0__Spi">Mpu60x0_Spi</a></div><div class="ttdef"><b>Definition:</b> <a href="mpu60x0__spi_8h_source.html#l00051">mpu60x0_spi.h:51</a></div></div>
 <div class="ttc" id="imu__mpu6000_8h_html_a14f4824721832ff67a688b6a92e78ff4"><div class="ttname"><a href="imu__mpu6000_8h.html#a14f4824721832ff67a688b6a92e78ff4">imu_mpu_spi</a></div><div class="ttdeci">struct ImuMpu6000 imu_mpu_spi</div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu6000_8c_source.html#l00070">imu_mpu6000.c:70</a></div></div>
 <div class="ttc" id="imu__mpu6000_8h_html_adeded9c36c67ea0bb8d9711c9992dea0"><div class="ttname"><a href="imu__mpu6000_8h.html#adeded9c36c67ea0bb8d9711c9992dea0">imu_mpu_spi_event</a></div><div class="ttdeci">void imu_mpu_spi_event(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu6000_8c_source.html#l00088">imu_mpu6000.c:88</a></div></div>
+<div class="ttc" id="imu__mpu6000_8h_html_abcd8e3da368d4b35f99d0221308ae250"><div class="ttname"><a href="imu__mpu6000_8h.html#abcd8e3da368d4b35f99d0221308ae250">imu_mpu_spi_init</a></div><div class="ttdeci">void imu_mpu_spi_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu6000_8c_source.html#l00072">imu_mpu6000.c:72</a></div></div>
 <div class="ttc" id="imu__mpu6000_8h_html_structImuMpu6000"><div class="ttname"><a href="imu__mpu6000_8h.html#structImuMpu6000">ImuMpu6000</a></div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu6000_8h_source.html#l00038">imu_mpu6000.h:38</a></div></div>
 <div class="ttc" id="imu_8h_html"><div class="ttname"><a href="imu_8h.html">imu.h</a></div><div class="ttdoc">Inertial Measurement Unit interface. </div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
@@ -168,7 +169,7 @@ $(document).ready(function(){initNavTree('imu__mpu6000_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8b2fa0708e2db44c1b91938af97bac44.html">imu</a></li><li class="navelem"><a class="el" href="imu__mpu6000_8h.html">imu_mpu6000.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:31 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:33 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

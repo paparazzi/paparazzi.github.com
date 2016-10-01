@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -116,8 +116,8 @@ $(document).ready(function(){initNavTree('gps__furuno_8c.html','');});
 
 <p>GPS furuno based NMEA parser.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="gps__nmea_8h_source.html">gps_nmea.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="gps_8h_source.html">subsystems/gps.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="gps_8h_source.html">subsystems/gps.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gps__nmea_8h_source.html">gps_nmea.h</a>&quot;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('gps__furuno_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__furuno_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2gps_2gps__furuno_8c" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2gps_2gps__furuno_8c" id="sw_2airborne_2subsystems_2gps_2gps__furuno_8c">
-<area shape="rect" id="node2" href="gps__nmea_8h.html" title="NMEA protocol specific code. " alt="" coords="265,95,366,121"/><area shape="rect" id="node8" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="1036,95,1174,121"/><area shape="rect" id="node3" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="92,177,230,203"/><area shape="rect" id="node5" href="link__device_8h.html" title="generic device header " alt="" coords="224,259,407,285"/><area shape="rect" id="node6" href="inttypes_8h.html" title="inttypes.h" alt="" coords="377,341,462,367"/><area shape="rect" id="node9" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="1030,169,1180,211"/><area shape="rect" id="node17" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1218,169,1368,211"/><area shape="rect" id="node20" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="692,259,862,285"/><area shape="rect" id="node10" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="1143,259,1267,285"/><area shape="rect" id="node11" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="927,259,1067,285"/><area shape="rect" id="node12" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="1290,341,1445,367"/><area shape="rect" id="node15" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1014,341,1164,367"/><area shape="rect" id="node18" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1364,259,1516,285"/></map>
+<area shape="rect" id="node2" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="262,169,400,196"/><area shape="rect" id="node20" href="gps__nmea_8h.html" title="NMEA protocol specific code. " alt="" coords="774,95,875,121"/><area shape="rect" id="node4" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="24,244,174,285"/><area shape="rect" id="node12" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="198,244,349,285"/><area shape="rect" id="node16" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="284,333,455,360"/><area shape="rect" id="node5" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="24,333,148,360"/><area shape="rect" id="node6" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="602,333,742,360"/><area shape="rect" id="node7" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="936,415,1091,442"/><area shape="rect" id="node10" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="710,415,861,442"/><area shape="rect" id="node13" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1118,333,1270,360"/><area shape="rect" id="node17" href="inttypes_8h.html" title="inttypes.h" alt="" coords="456,415,542,442"/><area shape="rect" id="node21" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="819,169,958,196"/></map>
 </div>
 </div>
 <p><a href="gps__furuno_8c_source.html">Go to the source code of this file.</a></p>
@@ -136,20 +136,20 @@ $(document).ready(function(){initNavTree('gps__furuno_8c.html','');});
 Macros</h2></td></tr>
 <tr class="memitem:a9e9d88900b97e17753377966c5744ad9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__furuno_8c.html#a9e9d88900b97e17753377966c5744ad9">GPS_FURUNO_SETTINGS_NB</a>&#160;&#160;&#160;18</td></tr>
 <tr class="separator:a9e9d88900b97e17753377966c5744ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1acf1db93b8ed0add6615e60d210c20"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__furuno_8c.html#af1acf1db93b8ed0add6615e60d210c20">GpsLinkDevice</a>&#160;&#160;&#160;(&amp;(GPS_LINK).device)</td></tr>
+<tr class="memitem:af1acf1db93b8ed0add6615e60d210c20"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__furuno_8c.html#af1acf1db93b8ed0add6615e60d210c20">GpsLinkDevice</a>&#160;&#160;&#160;(&amp;(NMEA_GPS_LINK).device)</td></tr>
 <tr class="separator:af1acf1db93b8ed0add6615e60d210c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2a6344ac43992ad22974f50f5f581ab9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__furuno_8c.html#a2a6344ac43992ad22974f50f5f581ab9">nmea_parse_perdcrv</a> (void)</td></tr>
-<tr class="separator:a2a6344ac43992ad22974f50f5f581ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ef52ff00fd929f7ac2f15fad0669843"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__furuno_8c.html#a9ef52ff00fd929f7ac2f15fad0669843">nmea_parse_perdcrv</a> (void)</td></tr>
+<tr class="separator:a9ef52ff00fd929f7ac2f15fad0669843"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbe97e63de2729cff1ef3ba45148f48f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__furuno_8c.html#afbe97e63de2729cff1ef3ba45148f48f">nmea_configure</a> (void)</td></tr>
 <tr class="memdesc:afbe97e63de2729cff1ef3ba45148f48f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure furuno GPS.  <a href="#afbe97e63de2729cff1ef3ba45148f48f">More...</a><br /></td></tr>
 <tr class="separator:afbe97e63de2729cff1ef3ba45148f48f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2d3dbbf0495a9206d80e4a8c15d4fe3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__furuno_8c.html#ad2d3dbbf0495a9206d80e4a8c15d4fe3">nmea_parse_prop_init</a> (void)</td></tr>
 <tr class="separator:ad2d3dbbf0495a9206d80e4a8c15d4fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4ee231e9004ab283b1da389fd4492f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__furuno_8c.html#ae4ee231e9004ab283b1da389fd4492f8">nmea_parse_prop_msg</a> (void)</td></tr>
-<tr class="separator:ae4ee231e9004ab283b1da389fd4492f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abad503c594db519e60515d9ac597f742"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__furuno_8c.html#abad503c594db519e60515d9ac597f742">nmea_parse_prop_msg</a> (void)</td></tr>
+<tr class="separator:abad503c594db519e60515d9ac597f742"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -184,7 +184,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define GpsLinkDevice&#160;&#160;&#160;(&amp;(GPS_LINK).device)</td>
+          <td class="memname">#define GpsLinkDevice&#160;&#160;&#160;(&amp;(NMEA_GPS_LINK).device)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -218,7 +218,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2a6344ac43992ad22974f50f5f581ab9"></a>
+<a class="anchor" id="a9ef52ff00fd929f7ac2f15fad0669843"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -226,7 +226,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void nmea_parse_perdcrv </td>
+          <td class="memname">bool nmea_parse_perdcrv </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -240,20 +240,20 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__furuno_8c_source.html#l00102">102</a> of file <a class="el" href="gps__furuno_8c_source.html">gps_furuno.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__furuno_8c_source.html#l00104">104</a> of file <a class="el" href="gps__furuno_8c_source.html">gps_furuno.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__int_8c_source.html#l00225">ecef_of_ned_vect_i()</a>, <a class="el" href="gps_8h_source.html#l00079">GpsState::ecef_pos</a>, <a class="el" href="gps_8h_source.html#l00083">GpsState::ecef_vel</a>, <a class="el" href="gps_8c_source.html#l00040">gps</a>, <a class="el" href="gps__nmea_8c_source.html#l00058">gps_nmea</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00060">ltp_def_from_ecef_i()</a>, <a class="el" href="gps__nmea_8h_source.html#l00045">GpsNmea::msg_buf</a>, <a class="el" href="gps_8h_source.html#l00084">GpsState::ned_vel</a>, <a class="el" href="gps__nmea_8h_source.html#l00085">nmea_read_until()</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00069">NedCoor_i::x</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00070">NedCoor_i::y</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__int_8c_source.html#l00225">ecef_of_ned_vect_i()</a>, <a class="el" href="gps_8h_source.html#l00085">GpsState::ecef_pos</a>, <a class="el" href="gps_8h_source.html#l00089">GpsState::ecef_vel</a>, <a class="el" href="gps__nmea_8c_source.html#l00059">gps_nmea</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00060">ltp_def_from_ecef_i()</a>, <a class="el" href="gps__nmea_8h_source.html#l00048">GpsNmea::msg_buf</a>, <a class="el" href="gps_8h_source.html#l00090">GpsState::ned_vel</a>, <a class="el" href="gps__nmea_8h_source.html#l00079">nmea_read_until()</a>, <a class="el" href="gps__nmea_8h_source.html#l00052">GpsNmea::state</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00069">NedCoor_i::x</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00070">NedCoor_i::y</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__furuno_8c_source.html#l00095">nmea_parse_prop_msg()</a>.</p>
+<p>Referenced by <a class="el" href="gps__furuno_8c_source.html#l00096">nmea_parse_prop_msg()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="gps__furuno_8c_a2a6344ac43992ad22974f50f5f581ab9_cgraph.png" border="0" usemap="#gps__furuno_8c_a2a6344ac43992ad22974f50f5f581ab9_cgraph" alt=""/></div>
-<map name="gps__furuno_8c_a2a6344ac43992ad22974f50f5f581ab9_cgraph" id="gps__furuno_8c_a2a6344ac43992ad22974f50f5f581ab9_cgraph">
-<area shape="rect" id="node2" href="group__math__geodetic__int.html#gab146002b10face50bd92576ce4882f1d" title="Rotate a vector from NED to ECEF. " alt="" coords="213,5,355,32"/><area shape="rect" id="node4" href="group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f" title="ltp_def_from_ecef_i" alt="" coords="211,56,357,83"/><area shape="rect" id="node9" href="gps__nmea_8h.html#a456be6466eb8510b09df4d6996519647" title="Read until a certain character, placed here for proprietary includes. " alt="" coords="219,107,349,133"/><area shape="rect" id="node3" href="group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF. " alt="" coords="417,5,560,32"/><area shape="rect" id="node5" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="lla_of_ecef_i" alt="" coords="439,56,538,83"/><area shape="rect" id="node8" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9" title="ltp_of_ecef_rmat_from\l_lla_i" alt="" coords="405,107,572,149"/><area shape="rect" id="node6" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="622,31,722,57"/><area shape="rect" id="node7" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title="lla_of_ecef_d" alt="" coords="620,81,724,108"/></map>
+<div class="center"><img src="gps__furuno_8c_a9ef52ff00fd929f7ac2f15fad0669843_cgraph.png" border="0" usemap="#gps__furuno_8c_a9ef52ff00fd929f7ac2f15fad0669843_cgraph" alt=""/></div>
+<map name="gps__furuno_8c_a9ef52ff00fd929f7ac2f15fad0669843_cgraph" id="gps__furuno_8c_a9ef52ff00fd929f7ac2f15fad0669843_cgraph">
+<area shape="rect" id="node2" href="group__math__geodetic__int.html#gab146002b10face50bd92576ce4882f1d" title="Rotate a vector from NED to ECEF. " alt="" coords="213,5,355,32"/><area shape="rect" id="node4" href="group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f" title="ltp_def_from_ecef_i" alt="" coords="211,56,357,83"/><area shape="rect" id="node9" href="gps__nmea_8h.html#a456be6466eb8510b09df4d6996519647" title="Read until a certain character, placed here for proprietary includes. " alt="" coords="219,107,349,133"/><area shape="rect" id="node3" href="group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF. " alt="" coords="417,5,560,32"/><area shape="rect" id="node5" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA. " alt="" coords="439,56,538,83"/><area shape="rect" id="node8" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9" title="ltp_of_ecef_rmat_from\l_lla_i" alt="" coords="405,107,572,149"/><area shape="rect" id="node6" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="622,31,722,57"/><area shape="rect" id="node7" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title="lla_of_ecef_d" alt="" coords="620,81,724,108"/></map>
 </div>
 </p>
 
@@ -262,9 +262,9 @@ Variables</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="gps__furuno_8c_a2a6344ac43992ad22974f50f5f581ab9_icgraph.png" border="0" usemap="#gps__furuno_8c_a2a6344ac43992ad22974f50f5f581ab9_icgraph" alt=""/></div>
-<map name="gps__furuno_8c_a2a6344ac43992ad22974f50f5f581ab9_icgraph" id="gps__furuno_8c_a2a6344ac43992ad22974f50f5f581ab9_icgraph">
-<area shape="rect" id="node2" href="gps__nmea_8h.html#ae4ee231e9004ab283b1da389fd4492f8" title="nmea_parse_prop_msg" alt="" coords="211,5,384,32"/><area shape="rect" id="node3" href="gps__nmea_8h.html#a2f49ea43d042f884e3ec12e5e14abc97" title="nmea_parse_char() has a complete line. " alt="" coords="432,5,569,32"/><area shape="rect" id="node4" href="gps__nmea_8h.html#abbfb5c004aa2bfaaafc87015e6557514" title="gps_nmea_msg" alt="" coords="617,5,741,32"/><area shape="rect" id="node5" href="gps__nmea_8h.html#ac91f0980eaf030309e832c42756272f9" title="GpsEvent" alt="" coords="789,5,872,32"/></map>
+<div class="center"><img src="gps__furuno_8c_a9ef52ff00fd929f7ac2f15fad0669843_icgraph.png" border="0" usemap="#gps__furuno_8c_a9ef52ff00fd929f7ac2f15fad0669843_icgraph" alt=""/></div>
+<map name="gps__furuno_8c_a9ef52ff00fd929f7ac2f15fad0669843_icgraph" id="gps__furuno_8c_a9ef52ff00fd929f7ac2f15fad0669843_icgraph">
+<area shape="rect" id="node2" href="gps__nmea_8h.html#abad503c594db519e60515d9ac597f742" title="nmea_parse_prop_msg" alt="" coords="211,5,384,32"/><area shape="rect" id="node3" href="gps__nmea_8h.html#a5effdb9e315da2f7fb8259839a57050e" title="nmea_parse_char() has a complete line. " alt="" coords="432,5,569,32"/><area shape="rect" id="node4" href="gps__nmea_8h.html#ac4895fd95dc0cb8f5bb47a5ad64c3aee" title="nmea_gps_msg" alt="" coords="617,5,741,32"/><area shape="rect" id="node5" href="gps__nmea_8h.html#a9c374269a14c7e2a806a594c9f9ec9ff" title="gps_nmea_event" alt="" coords="789,5,921,32"/></map>
 </div>
 </p>
 
@@ -284,16 +284,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__furuno_8c_source.html#l00089">89</a> of file <a class="el" href="gps__furuno_8c_source.html">gps_furuno.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__furuno_8c_source.html#l00090">90</a> of file <a class="el" href="gps__furuno_8c_source.html">gps_furuno.c</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae4ee231e9004ab283b1da389fd4492f8"></a>
+<a class="anchor" id="abad503c594db519e60515d9ac597f742"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void nmea_parse_prop_msg </td>
+          <td class="memname">bool nmea_parse_prop_msg </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -302,7 +302,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__furuno_8c_source.html#l00095">95</a> of file <a class="el" href="gps__furuno_8c_source.html">gps_furuno.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__furuno_8c_source.html#l00096">96</a> of file <a class="el" href="gps__furuno_8c_source.html">gps_furuno.c</a>.</p>
 
 </div>
 </div>
@@ -327,7 +327,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="gps__furuno_8c_source.html#l00056">56</a> of file <a class="el" href="gps__furuno_8c_source.html">gps_furuno.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__furuno_8c_source.html#l00066">nmea_configure()</a>, and <a class="el" href="gps__furuno_8c_source.html#l00089">nmea_parse_prop_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__furuno_8c_source.html#l00066">nmea_configure()</a>, and <a class="el" href="gps__furuno_8c_source.html#l00090">nmea_parse_prop_init()</a>.</p>
 
 </div>
 </div>
@@ -381,7 +381,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8c4cbb881db224ddaf0756e79ed706ce.html">gps</a></li><li class="navelem"><a class="el" href="gps__furuno_8c.html">gps_furuno.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:03 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:11 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

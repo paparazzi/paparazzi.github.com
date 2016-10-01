@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -113,6 +113,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals_func_v.html#index_v"><span>v</span></a></li>
       <li><a href="globals_func_w.html#index_w"><span>w</span></a></li>
       <li><a href="globals_func_x.html#index_x"><span>x</span></a></li>
+      <li><a href="globals_func_y.html#index_y"><span>y</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -153,8 +154,8 @@ $(document).ready(function(){initNavTree('globals_func_f.html','');});
 , <a class="el" href="main_8h.html#a6266a73fe8c0512f1de72cea96e5110b">main.h</a>
 </li>
 <li>fast9_detect()
-: <a class="el" href="fast__rosten_8h.html#a5cadceb6c28a429a8c323ca0d1d738ee">fast_rosten.h</a>
-, <a class="el" href="fast__rosten_8c.html#a5cadceb6c28a429a8c323ca0d1d738ee">fast_rosten.c</a>
+: <a class="el" href="fast__rosten_8h.html#a6f1b6fb8ef98f424f8284a8f5a98b493">fast_rosten.h</a>
+, <a class="el" href="fast__rosten_8c.html#a6f1b6fb8ef98f424f8284a8f5a98b493">fast_rosten.c</a>
 </li>
 <li>fast_make_offsets()
 : <a class="el" href="fast__rosten_8c.html#a58984f615be2e8c52b3d0b1fc595a250">fast_rosten.c</a>
@@ -175,6 +176,30 @@ $(document).ready(function(){initNavTree('globals_func_f.html','');});
 : <a class="el" href="fixedwing_2main__fbw_8c.html#acae36a4c06ce1cb25ec13f45bd1c2eea">main_fbw.c</a>
 , <a class="el" href="fixedwing_2main__fbw_8h.html#acae36a4c06ce1cb25ec13f45bd1c2eea">main_fbw.h</a>
 </li>
+<li>fbw_on_ap_command()
+: <a class="el" href="rotorcraft_2main__fbw_8c.html#aa08cd441cb967eb3e901b4e8783fac23">main_fbw.c</a>
+</li>
+<li>fbw_on_rc_frame()
+: <a class="el" href="rotorcraft_2main__fbw_8c.html#a9315fe63b323bff7e8b6a46ceb10138f">main_fbw.c</a>
+</li>
+<li>fbw_safety_check()
+: <a class="el" href="rotorcraft_2main__fbw_8c.html#a4ca474c97abb135825ca854d8a1af6b1">main_fbw.c</a>
+</li>
+<li>feed_jsbsim()
+: <a class="el" href="nps__fdm__jsbsim_8cpp.html#ac3f41f22e543ac14794eecd306681e76">nps_fdm_jsbsim.cpp</a>
+</li>
+<li>fetch_state()
+: <a class="el" href="nps__fdm__jsbsim_8cpp.html#a2d617cee29889c9d6592f9978dfa8a31">nps_fdm_jsbsim.cpp</a>
+</li>
+<li>fg_msg_bytecode()
+: <a class="el" href="fg_8c.html#a5c0ed707e561055d71ee007ec3378858">fg.c</a>
+</li>
+<li>fg_msg_native()
+: <a class="el" href="fg_8c.html#a1f0da6a3132967828416661f68352c41">fg.c</a>
+</li>
+<li>fg_sizeof()
+: <a class="el" href="fg_8c.html#a67cd52da2a832f94332d4b22b5cdb301">fg.c</a>
+</li>
 <li>fifo_avail()
 : <a class="el" href="lpc21_2usb__ser__hw_8c.html#a14ec031da793cb08aa5e3e3b5d551431">usb_ser_hw.c</a>
 </li>
@@ -188,7 +213,7 @@ $(document).ready(function(){initNavTree('globals_func_f.html','');});
 : <a class="el" href="lpc21_2usb__ser__hw_8c.html#a62c1c3a993bb7e76089279dd5bf6e206">usb_ser_hw.c</a>
 </li>
 <li>fifo_put()
-: <a class="el" href="lpc21_2usb__ser__hw_8c.html#a60cebaa767a05f06a7b66c751c12318a">usb_ser_hw.c</a>
+: <a class="el" href="stm32_2usb__ser__hw_8c.html#a012e003cec3a81a71e9598d1c9e94f97">usb_ser_hw.c</a>
 </li>
 <li>file_logger_periodic()
 : <a class="el" href="file__logger_8c.html#a0a108be83e6a060666234d7b46a36907">file_logger.c</a>
@@ -206,9 +231,19 @@ $(document).ready(function(){initNavTree('globals_func_f.html','');});
 : <a class="el" href="detect__window_8c.html#ab9413b276daf5f95af7749e312093da7">detect_window.c</a>
 , <a class="el" href="detect__window_8h.html#ab9413b276daf5f95af7749e312093da7">detect_window.h</a>
 </li>
+<li>find_contour()
+: <a class="el" href="opencv__contour_8cpp.html#a5d0a4da8f4b60fca715ba8bd55b19214">opencv_contour.cpp</a>
+, <a class="el" href="opencv__contour_8h.html#a5d0a4da8f4b60fca715ba8bd55b19214">opencv_contour.h</a>
+</li>
 <li>FindInterceptOfTwoLines()
 : <a class="el" href="nav__survey__poly__osam_8c.html#a7d7df26d6723c61622ad77133554b6f1">nav_survey_poly_osam.c</a>
 , <a class="el" href="nav__survey__poly__rotorcraft_8c.html#a7d7df26d6723c61622ad77133554b6f1">nav_survey_poly_rotorcraft.c</a>
+</li>
+<li>firmware_parse_msg()
+: <a class="el" href="fixedwing__datalink_8c.html#ac806fb512111762c27801527170dc819">fixedwing_datalink.c</a>
+, <a class="el" href="rotorcraft__datalink_8c.html#ac806fb512111762c27801527170dc819">rotorcraft_datalink.c</a>
+, <a class="el" href="datalink_8c.html#a3e1fc3fd220325c03cf24e5f234f71d9">datalink.c</a>
+, <a class="el" href="datalink_8h.html#aaf73ff6f49620d1cb775dc836633ef2b">datalink.h</a>
 </li>
 <li>fit_linear_flow_field()
 : <a class="el" href="linear__flow__fit_8c.html#a4a796ceb3a2c8c6ee52e0f80d7306ced">linear_flow_fit.c</a>
@@ -216,9 +251,6 @@ $(document).ready(function(){initNavTree('globals_func_f.html','');});
 </li>
 <li>flash_detect()
 : <a class="el" href="lpc21_2subsystems_2settings__arch_8c.html#ad823eefc2cb06fb3581e165cabbbc053">settings_arch.c</a>
-</li>
-<li>flash_isr()
-: <a class="el" href="stm32f4__chibios__vectors_8h.html#a94a481a2a9d3aded831c580ec5b995ce">stm32f4_chibios_vectors.h</a>
 </li>
 <li>fletcher32()
 : <a class="el" href="meteo__stick__calib_8c.html#ae0a26227bef12f33416f495aaa810c9f">meteo_stick_calib.c</a>
@@ -338,20 +370,20 @@ $(document).ready(function(){initNavTree('globals_func_f.html','');});
 : <a class="el" href="group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041">pprz_algebra_float.h</a>
 </li>
 <li>float_quat_of_axis_angle()
-: <a class="el" href="group__math__algebra__float.html#ga0ad75a3c32ba844b0aae704455dc2257">pprz_algebra_float.h</a>
-, <a class="el" href="group__math__algebra__float.html#ga0ad75a3c32ba844b0aae704455dc2257">pprz_algebra_float.c</a>
+: <a class="el" href="group__math__algebra__float.html#ga0ad75a3c32ba844b0aae704455dc2257">pprz_algebra_float.c</a>
+, <a class="el" href="group__math__algebra__float.html#ga0ad75a3c32ba844b0aae704455dc2257">pprz_algebra_float.h</a>
 </li>
 <li>float_quat_of_eulers()
-: <a class="el" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2">pprz_algebra_float.c</a>
-, <a class="el" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2">pprz_algebra_float.h</a>
+, <a class="el" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2">pprz_algebra_float.c</a>
 </li>
 <li>float_quat_of_orientation_vect()
-: <a class="el" href="group__math__algebra__float.html#ga9698d02fc9515e6638181602aa04536a">pprz_algebra_float.h</a>
-, <a class="el" href="group__math__algebra__float.html#ga9698d02fc9515e6638181602aa04536a">pprz_algebra_float.c</a>
+: <a class="el" href="group__math__algebra__float.html#ga9698d02fc9515e6638181602aa04536a">pprz_algebra_float.c</a>
+, <a class="el" href="group__math__algebra__float.html#ga9698d02fc9515e6638181602aa04536a">pprz_algebra_float.h</a>
 </li>
 <li>float_quat_of_rmat()
-: <a class="el" href="group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f">pprz_algebra_float.c</a>
-, <a class="el" href="group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f">pprz_algebra_float.h</a>
+, <a class="el" href="group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f">pprz_algebra_float.c</a>
 </li>
 <li>float_quat_vmul_right()
 : <a class="el" href="ahrs__float__invariant_8c.html#a1f54c7682a956a0c095b152276bf60cf">ahrs_float_invariant.c</a>
@@ -363,6 +395,10 @@ $(document).ready(function(){initNavTree('globals_func_f.html','');});
 </li>
 <li>float_quat_wrap_shortest()
 : <a class="el" href="group__math__algebra__float.html#ga8c87c4af5df3d13c6eb0bd8b8e97721a">pprz_algebra_float.h</a>
+</li>
+<li>float_rates_add_gaussian_noise()
+: <a class="el" href="nps__random_8c.html#ad4f39decdd686c7a1ba790454cab3182">nps_random.c</a>
+, <a class="el" href="nps__random_8h.html#ad4f39decdd686c7a1ba790454cab3182">nps_random.h</a>
 </li>
 <li>float_rates_integrate_fi()
 : <a class="el" href="group__math__algebra__float.html#gaa756a8ac8762d40f02b0e31539340c22">pprz_algebra_float.c</a>
@@ -392,36 +428,36 @@ $(document).ready(function(){initNavTree('globals_func_f.html','');});
 , <a class="el" href="group__math__algebra__float.html#ga532c78c4c1e5327c3c47724cf2656594">pprz_algebra_float.h</a>
 </li>
 <li>float_rmat_norm()
-: <a class="el" href="group__math__algebra__float.html#gac0c38d85559532c9b8a909099b917004">pprz_algebra_float.c</a>
-, <a class="el" href="group__math__algebra__float.html#gac0c38d85559532c9b8a909099b917004">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#gac0c38d85559532c9b8a909099b917004">pprz_algebra_float.h</a>
+, <a class="el" href="group__math__algebra__float.html#gac0c38d85559532c9b8a909099b917004">pprz_algebra_float.c</a>
 </li>
 <li>float_rmat_of_axis_angle()
 : <a class="el" href="group__math__algebra__float.html#gaedee1cab0928ceb6b0aa5d92d33edb6b">pprz_algebra_float.c</a>
 , <a class="el" href="group__math__algebra__float.html#gaedee1cab0928ceb6b0aa5d92d33edb6b">pprz_algebra_float.h</a>
 </li>
 <li>float_rmat_of_eulers_312()
-: <a class="el" href="group__math__algebra__float.html#ga4ae7f1d8501b96085245df62b981ca72">pprz_algebra_float.h</a>
-, <a class="el" href="group__math__algebra__float.html#ga4ae7f1d8501b96085245df62b981ca72">pprz_algebra_float.c</a>
+: <a class="el" href="group__math__algebra__float.html#ga4ae7f1d8501b96085245df62b981ca72">pprz_algebra_float.c</a>
+, <a class="el" href="group__math__algebra__float.html#ga4ae7f1d8501b96085245df62b981ca72">pprz_algebra_float.h</a>
 </li>
 <li>float_rmat_of_eulers_321()
-: <a class="el" href="group__math__algebra__float.html#ga00bc75df1116d9ecef980b2e9f0699f0">pprz_algebra_float.h</a>
-, <a class="el" href="group__math__algebra__float.html#ga00bc75df1116d9ecef980b2e9f0699f0">pprz_algebra_float.c</a>
+: <a class="el" href="group__math__algebra__float.html#ga00bc75df1116d9ecef980b2e9f0699f0">pprz_algebra_float.c</a>
+, <a class="el" href="group__math__algebra__float.html#ga00bc75df1116d9ecef980b2e9f0699f0">pprz_algebra_float.h</a>
 </li>
 <li>float_rmat_of_quat()
-: <a class="el" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc">pprz_algebra_float.h</a>
-, <a class="el" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc">pprz_algebra_float.c</a>
+: <a class="el" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc">pprz_algebra_float.c</a>
+, <a class="el" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc">pprz_algebra_float.h</a>
 </li>
 <li>float_rmat_ratemult()
-: <a class="el" href="group__math__algebra__float.html#ga3f7d064248ddf6a411369b55c0282913">pprz_algebra_float.h</a>
-, <a class="el" href="group__math__algebra__float.html#ga3f7d064248ddf6a411369b55c0282913">pprz_algebra_float.c</a>
+: <a class="el" href="group__math__algebra__float.html#ga3f7d064248ddf6a411369b55c0282913">pprz_algebra_float.c</a>
+, <a class="el" href="group__math__algebra__float.html#ga3f7d064248ddf6a411369b55c0282913">pprz_algebra_float.h</a>
 </li>
 <li>float_rmat_reorthogonalize()
 : <a class="el" href="group__math__algebra__float.html#ga0f5747a234093d4672f0f3bd6198f1eb">pprz_algebra_float.c</a>
 , <a class="el" href="group__math__algebra__float.html#ga0f5747a234093d4672f0f3bd6198f1eb">pprz_algebra_float.h</a>
 </li>
 <li>float_rmat_transp_ratemult()
-: <a class="el" href="group__math__algebra__float.html#gaaf793c59eaba758a63cf467c377ea532">pprz_algebra_float.c</a>
-, <a class="el" href="group__math__algebra__float.html#gaaf793c59eaba758a63cf467c377ea532">pprz_algebra_float.h</a>
+: <a class="el" href="group__math__algebra__float.html#gaaf793c59eaba758a63cf467c377ea532">pprz_algebra_float.h</a>
+, <a class="el" href="group__math__algebra__float.html#gaaf793c59eaba758a63cf467c377ea532">pprz_algebra_float.c</a>
 </li>
 <li>float_rmat_transp_vmult()
 : <a class="el" href="group__math__algebra__float.html#gac852ba0c3ec48acfd8abaefbf933d4b6">pprz_algebra_float.c</a>
@@ -439,6 +475,10 @@ $(document).ready(function(){initNavTree('globals_func_f.html','');});
 </li>
 <li>float_vect2_normalize()
 : <a class="el" href="group__math__algebra__float.html#gab539484619b696418cab24d9a1f0eb2e">pprz_algebra_float.h</a>
+</li>
+<li>float_vect3_add_gaussian_noise()
+: <a class="el" href="nps__random_8h.html#a51b809500a0e2991ae768f6fb8f21bd4">nps_random.h</a>
+, <a class="el" href="nps__random_8c.html#a51b809500a0e2991ae768f6fb8f21bd4">nps_random.c</a>
 </li>
 <li>float_vect3_integrate_fi()
 : <a class="el" href="group__math__algebra__float.html#ga077c85e5452c3bacee04b86ca9324850">pprz_algebra_float.h</a>
@@ -483,36 +523,36 @@ $(document).ready(function(){initNavTree('globals_func_f.html','');});
 <li>float_vect_zero()
 : <a class="el" href="group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18">pprz_algebra_float.h</a>
 </li>
-<li>fly_to_xy()
-: <a class="el" href="nav_8c.html#ae9d11d2e378b23ecbee86419cbf341f0">nav.c</a>
-, <a class="el" href="nav_8h.html#ae9d11d2e378b23ecbee86419cbf341f0">nav.h</a>
+<li>flushWriteByteBuffer()
+: <a class="el" href="sdLog_8c.html#a870830d3ea4fe67badf79e52582f4fae">sdLog.c</a>
 </li>
-<li>follow_change_wp()
-: <a class="el" href="follow_8c.html#ae56966b7d44ce338c41405e8a070adfd">follow.c</a>
-, <a class="el" href="follow_8h.html#ae56966b7d44ce338c41405e8a070adfd">follow.h</a>
+<li>fly_to_xy()
+: <a class="el" href="nav_8h.html#ae9d11d2e378b23ecbee86419cbf341f0">nav.h</a>
+, <a class="el" href="nav_8c.html#ae9d11d2e378b23ecbee86419cbf341f0">nav.c</a>
 </li>
 <li>follow_init()
 : <a class="el" href="follow_8h.html#ab234fa25658f4e57d63125a30200811a">follow.h</a>
 , <a class="el" href="follow_8c.html#ab234fa25658f4e57d63125a30200811a">follow.c</a>
 </li>
 <li>follow_me_periodic()
-: <a class="el" href="follow__me_8c.html#ad6e0862667be2bc120f9e38ef26baa65">follow_me.c</a>
-, <a class="el" href="follow__me_8h.html#a5c3112293f2a4d98f2ddb0d937011a36">follow_me.h</a>
+: <a class="el" href="follow__me_8h.html#a5c3112293f2a4d98f2ddb0d937011a36">follow_me.h</a>
+, <a class="el" href="follow__me_8c.html#ad6e0862667be2bc120f9e38ef26baa65">follow_me.c</a>
+</li>
+<li>follow_wp()
+: <a class="el" href="follow_8h.html#a193d671739e35bbb235456cb3b65e9ff">follow.h</a>
+, <a class="el" href="follow_8c.html#a193d671739e35bbb235456cb3b65e9ff">follow.c</a>
 </li>
 <li>formation_flight()
-: <a class="el" href="formation_8c.html#a18de0c4f9e864cb4db84458b33b463dd">formation.c</a>
-, <a class="el" href="formation_8h.html#a18de0c4f9e864cb4db84458b33b463dd">formation.h</a>
+: <a class="el" href="formation_8h.html#a18de0c4f9e864cb4db84458b33b463dd">formation.h</a>
+, <a class="el" href="formation_8c.html#a18de0c4f9e864cb4db84458b33b463dd">formation.c</a>
 </li>
 <li>formation_init()
 : <a class="el" href="formation_8c.html#acf4b41c93bf9fcca41532eb8a22ec466">formation.c</a>
 , <a class="el" href="formation_8h.html#acf4b41c93bf9fcca41532eb8a22ec466">formation.h</a>
 </li>
 <li>formation_pre_call()
-: <a class="el" href="formation_8h.html#ae22bbb9b0cbc9aa4e541ab47d5a42989">formation.h</a>
-, <a class="el" href="formation_8c.html#ae22bbb9b0cbc9aa4e541ab47d5a42989">formation.c</a>
-</li>
-<li>fsmc_isr()
-: <a class="el" href="stm32f4__chibios__vectors_8h.html#a0f9824eb50ffc9066ac14f9af5f7dd08">stm32f4_chibios_vectors.h</a>
+: <a class="el" href="formation_8c.html#ae22bbb9b0cbc9aa4e541ab47d5a42989">formation.c</a>
+, <a class="el" href="formation_8h.html#ae22bbb9b0cbc9aa4e541ab47d5a42989">formation.h</a>
 </li>
 <li>ftimeofday()
 : <a class="el" href="sim__ap_8c.html#a9037ef79ac8d270ab46865ea3c7e66d6">sim_ap.c</a>
@@ -531,7 +571,7 @@ $(document).ready(function(){initNavTree('globals_func_f.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:30 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:45 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

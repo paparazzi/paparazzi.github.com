@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('px4flow_8c.html','');});
 <code>#include &quot;<a class="el" href="mavlink__decoder_8h_source.html">modules/datalink/mavlink_decoder.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
-<code>#include &quot;messages.h&quot;</code><br />
+<code>#include &quot;pprzlink/messages.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for px4flow.c:</div>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('px4flow_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="px4flow_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2optical__flow_2px4flow_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2optical__flow_2px4flow_8c" id="sw_2airborne_2modules_2optical__flow_2px4flow_8c">
-<area shape="rect" id="node2" href="px4flow_8h.html" title="driver for the optical flow sensor PX4FLOW " alt="" coords="255,95,409,136"/><area shape="rect" id="node4" href="mavlink__decoder_8h.html" title="simple decoder of mavlink message " alt="" coords="119,273,303,315"/><area shape="rect" id="node8" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="95,370,233,397"/><area shape="rect" id="node10" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="45,102,179,129"/><area shape="rect" id="node13" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="718,95,871,136"/><area shape="rect" id="node5" href="transport_8h.html" title="generic transport header " alt="" coords="359,363,513,404"/><area shape="rect" id="node6" href="inttypes_8h.html" title="inttypes.h" alt="" coords="788,541,873,568"/><area shape="rect" id="node7" href="link__device_8h.html" title="generic device header " alt="" coords="270,459,453,486"/><area shape="rect" id="node16" href="pprz__transport_8h.html" title="Building and parsing Paparazzi frames. " alt="" coords="893,273,1046,315"/><area shape="rect" id="node19" href="pprzlog__transport_8h.html" title="Protocol for on&#45;board data logger with timestamp. " alt="" coords="1070,273,1223,315"/><area shape="rect" id="node24" href="xbee_8h.html" title="Maxstream XBee serial input and output. " alt="" coords="546,184,699,225"/><area shape="rect" id="node26" href="w5100_8h.html" title="W5100 ethernet chip I/O. " alt="" coords="775,184,929,225"/><area shape="rect" id="node17" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="589,363,742,404"/><area shape="rect" id="node20" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="983,370,1153,397"/><area shape="rect" id="node25" href="xbee24_8h.html" title="Configuration for 2.4GHz &quot;series 1&quot; and 900MHz modules. " alt="" coords="429,273,582,315"/></map>
+<area shape="rect" id="node2" href="px4flow_8h.html" title="driver for the optical flow sensor PX4FLOW " alt="" coords="5,95,160,136"/><area shape="rect" id="node4" href="mavlink__decoder_8h.html" title="simple decoder of mavlink message " alt="" coords="199,95,383,136"/><area shape="rect" id="node6" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="352,191,491,218"/><area shape="rect" id="node9" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="1107,102,1242,129"/><area shape="rect" id="node12" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="695,95,849,136"/><area shape="rect" id="node13" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1236,191,1321,218"/><area shape="rect" id="node16" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1058,184,1211,225"/></map>
 </div>
 </div>
 <p><a href="px4flow_8c_source.html">Go to the source code of this file.</a></p>
@@ -158,8 +158,8 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a7f647c5002ceac1107af4247a2567f16"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="px4flow_8h.html#structmavlink__optical__flow">mavlink_optical_flow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4flow_8c.html#a7f647c5002ceac1107af4247a2567f16">optical_flow</a></td></tr>
 <tr class="separator:a7f647c5002ceac1107af4247a2567f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6dde07b731a2cfdf669184817943837"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4flow_8c.html#ab6dde07b731a2cfdf669184817943837">optical_flow_available</a></td></tr>
-<tr class="separator:ab6dde07b731a2cfdf669184817943837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a777fcee89013f0b1730d55b2897799"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4flow_8c.html#a3a777fcee89013f0b1730d55b2897799">optical_flow_available</a></td></tr>
+<tr class="separator:a3a777fcee89013f0b1730d55b2897799"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11dd1089b4ce30528383cfa24a3c6c23"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structmavlink__msg__req.html">mavlink_msg_req</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4flow_8c.html#a11dd1089b4ce30528383cfa24a3c6c23">req</a></td></tr>
 <tr class="separator:a11dd1089b4ce30528383cfa24a3c6c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -195,7 +195,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="px4flow_8c_source.html#l00037">37</a> of file <a class="el" href="px4flow_8c_source.html">px4flow.c</a>.</p>
 
-<p>Referenced by <a class="el" href="px4flow_8c_source.html#l00064">px4flow_init()</a>.</p>
+<p>Referenced by <a class="el" href="px4flow_8c_source.html#l00069">px4flow_init()</a>.</p>
 
 </div>
 </div>
@@ -240,9 +240,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="px4flow_8c_source.html#l00050">50</a> of file <a class="el" href="px4flow_8c_source.html">px4flow.c</a>.</p>
 
-<p>References <a class="el" href="px4flow_8h_source.html#l00044">mavlink_optical_flow::flow_x</a>, <a class="el" href="px4flow_8h_source.html#l00045">mavlink_optical_flow::flow_y</a>, <a class="el" href="px4flow_8h_source.html#l00043">mavlink_optical_flow::ground_distance</a>, <a class="el" href="px4flow_8c_source.html#l00033">optical_flow</a>, <a class="el" href="px4flow_8c_source.html#l00034">optical_flow_available</a>, <a class="el" href="px4flow_8c_source.html#l00042">PX4FLOW_NOISE</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00230">PX4FLOW_VELOCITY_ID</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p>References <a class="el" href="abi__sender__ids_8h_source.html#l00107">AGL_SONAR_PX4FLOW_ID</a>, <a class="el" href="px4flow_8h_source.html#l00044">mavlink_optical_flow::flow_x</a>, <a class="el" href="px4flow_8h_source.html#l00045">mavlink_optical_flow::flow_y</a>, <a class="el" href="px4flow_8h_source.html#l00043">mavlink_optical_flow::ground_distance</a>, <a class="el" href="px4flow_8c_source.html#l00033">optical_flow</a>, <a class="el" href="px4flow_8c_source.html#l00034">optical_flow_available</a>, <a class="el" href="px4flow_8c_source.html#l00042">PX4FLOW_NOISE</a>, and <a class="el" href="abi__sender__ids_8h_source.html#l00245">PX4FLOW_VELOCITY_ID</a>.</p>
 
-<p>Referenced by <a class="el" href="px4flow_8c_source.html#l00064">px4flow_init()</a>.</p>
+<p>Referenced by <a class="el" href="px4flow_8c_source.html#l00069">px4flow_init()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -273,9 +273,9 @@ Variables</h2></td></tr>
 
 <p>Downlink message for debug. </p>
 
-<p>Definition at line <a class="el" href="px4flow_8c_source.html#l00083">83</a> of file <a class="el" href="px4flow_8c_source.html">px4flow.c</a>.</p>
+<p>Definition at line <a class="el" href="px4flow_8c_source.html#l00088">88</a> of file <a class="el" href="px4flow_8c_source.html">px4flow.c</a>.</p>
 
-<p>References <a class="el" href="downlink_8h_source.html#l00079">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00083">DefaultDevice</a>, <a class="el" href="px4flow_8h_source.html#l00041">mavlink_optical_flow::flow_comp_m_x</a>, <a class="el" href="px4flow_8h_source.html#l00042">mavlink_optical_flow::flow_comp_m_y</a>, <a class="el" href="px4flow_8h_source.html#l00044">mavlink_optical_flow::flow_x</a>, <a class="el" href="px4flow_8h_source.html#l00045">mavlink_optical_flow::flow_y</a>, <a class="el" href="px4flow_8h_source.html#l00043">mavlink_optical_flow::ground_distance</a>, <a class="el" href="px4flow_8c_source.html#l00033">optical_flow</a>, <a class="el" href="px4flow_8h_source.html#l00047">mavlink_optical_flow::quality</a>, and <a class="el" href="px4flow_8h_source.html#l00046">mavlink_optical_flow::sensor_id</a>.</p>
+<p>References <a class="el" href="downlink_8h_source.html#l00084">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00088">DefaultDevice</a>, <a class="el" href="px4flow_8h_source.html#l00041">mavlink_optical_flow::flow_comp_m_x</a>, <a class="el" href="px4flow_8h_source.html#l00042">mavlink_optical_flow::flow_comp_m_y</a>, <a class="el" href="px4flow_8h_source.html#l00044">mavlink_optical_flow::flow_x</a>, <a class="el" href="px4flow_8h_source.html#l00045">mavlink_optical_flow::flow_y</a>, <a class="el" href="px4flow_8h_source.html#l00043">mavlink_optical_flow::ground_distance</a>, <a class="el" href="px4flow_8c_source.html#l00033">optical_flow</a>, <a class="el" href="px4flow_8h_source.html#l00047">mavlink_optical_flow::quality</a>, and <a class="el" href="px4flow_8h_source.html#l00046">mavlink_optical_flow::sensor_id</a>.</p>
 
 </div>
 </div>
@@ -295,9 +295,9 @@ Variables</h2></td></tr>
 
 <p>Initialization function. </p>
 
-<p>Definition at line <a class="el" href="px4flow_8c_source.html#l00064">64</a> of file <a class="el" href="px4flow_8c_source.html">px4flow.c</a>.</p>
+<p>Definition at line <a class="el" href="px4flow_8c_source.html#l00069">69</a> of file <a class="el" href="px4flow_8c_source.html">px4flow.c</a>.</p>
 
-<p>References <a class="el" href="mavlink__decoder_8h_source.html#l00134">mavlink_msg_req::callback</a>, <a class="el" href="px4flow_8c_source.html#l00050">decode_optical_flow_msg()</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="px4flow_8c_source.html#l00037">MAVLINK_OPTICAL_FLOW_MSG_ID</a>, <a class="el" href="mavlink__decoder_8h_source.html#l00163">mavlink_register_msg()</a>, <a class="el" href="mavlink__decoder_8c_source.html#l00029">mavlink_tp</a>, <a class="el" href="mavlink__decoder_8h_source.html#l00133">mavlink_msg_req::msg</a>, <a class="el" href="mavlink__decoder_8h_source.html#l00132">mavlink_msg_req::msg_id</a>, <a class="el" href="px4flow_8c_source.html#l00033">optical_flow</a>, <a class="el" href="px4flow_8c_source.html#l00034">optical_flow_available</a>, <a class="el" href="mavlink__decoder_8h_source.html#l00053">mavlink_message::payload</a>, and <a class="el" href="px4flow_8c_source.html#l00046">req</a>.</p>
+<p>References <a class="el" href="mavlink__decoder_8h_source.html#l00134">mavlink_msg_req::callback</a>, <a class="el" href="px4flow_8c_source.html#l00050">decode_optical_flow_msg()</a>, <a class="el" href="px4flow_8c_source.html#l00037">MAVLINK_OPTICAL_FLOW_MSG_ID</a>, <a class="el" href="mavlink__decoder_8h_source.html#l00163">mavlink_register_msg()</a>, <a class="el" href="mavlink__decoder_8c_source.html#l00029">mavlink_tp</a>, <a class="el" href="mavlink__decoder_8h_source.html#l00133">mavlink_msg_req::msg</a>, <a class="el" href="mavlink__decoder_8h_source.html#l00132">mavlink_msg_req::msg_id</a>, <a class="el" href="px4flow_8c_source.html#l00033">optical_flow</a>, <a class="el" href="px4flow_8c_source.html#l00034">optical_flow_available</a>, <a class="el" href="mavlink__decoder_8h_source.html#l00053">mavlink_message::payload</a>, and <a class="el" href="px4flow_8c_source.html#l00046">req</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -325,23 +325,23 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="px4flow_8c_source.html#l00033">33</a> of file <a class="el" href="px4flow_8c_source.html">px4flow.c</a>.</p>
 
-<p>Referenced by <a class="el" href="px4flow_8c_source.html#l00050">decode_optical_flow_msg()</a>, <a class="el" href="px4flow_8c_source.html#l00083">px4flow_downlink()</a>, and <a class="el" href="px4flow_8c_source.html#l00064">px4flow_init()</a>.</p>
+<p>Referenced by <a class="el" href="px4flow_8c_source.html#l00050">decode_optical_flow_msg()</a>, <a class="el" href="px4flow_8c_source.html#l00088">px4flow_downlink()</a>, and <a class="el" href="px4flow_8c_source.html#l00069">px4flow_init()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab6dde07b731a2cfdf669184817943837"></a>
+<a class="anchor" id="a3a777fcee89013f0b1730d55b2897799"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool_t optical_flow_available</td>
+          <td class="memname">bool optical_flow_available</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="px4flow_8c_source.html#l00034">34</a> of file <a class="el" href="px4flow_8c_source.html">px4flow.c</a>.</p>
 
-<p>Referenced by <a class="el" href="px4flow_8c_source.html#l00050">decode_optical_flow_msg()</a>, and <a class="el" href="px4flow_8c_source.html#l00064">px4flow_init()</a>.</p>
+<p>Referenced by <a class="el" href="px4flow_8c_source.html#l00050">decode_optical_flow_msg()</a>, and <a class="el" href="px4flow_8c_source.html#l00069">px4flow_init()</a>.</p>
 
 </div>
 </div>
@@ -357,7 +357,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="px4flow_8c_source.html#l00046">46</a> of file <a class="el" href="px4flow_8c_source.html">px4flow.c</a>.</p>
 
-<p>Referenced by <a class="el" href="mavlink__decoder_8h_source.html#l00163">mavlink_register_msg()</a>, <a class="el" href="modules_2datalink_2missionlib_2waypoints_8c_source.html#l00091">mavlink_wp_message_handler()</a>, and <a class="el" href="px4flow_8c_source.html#l00064">px4flow_init()</a>.</p>
+<p>Referenced by <a class="el" href="mavlink__decoder_8h_source.html#l00163">mavlink_register_msg()</a>, <a class="el" href="modules_2datalink_2missionlib_2waypoints_8c_source.html#l00091">mavlink_wp_message_handler()</a>, and <a class="el" href="px4flow_8c_source.html#l00069">px4flow_init()</a>.</p>
 
 </div>
 </div>
@@ -367,7 +367,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_f52ac0bf93f8ebf53ea13ad6120e8a63.html">optical_flow</a></li><li class="navelem"><a class="el" href="px4flow_8c.html">px4flow.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:56 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:03 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

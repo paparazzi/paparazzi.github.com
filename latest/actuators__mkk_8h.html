@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -148,7 +148,7 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a1f4f53e79b3ade1d69596e4afc00b807"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__mkk_8h.html#a1f4f53e79b3ade1d69596e4afc00b807">ActuatorMkkSet</a>(_i, _v)&#160;&#160;&#160;{ actuators_mkk.trans[_i].<a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a48b4f0842338aeafa79aeab314f33696">buf</a>[0] = _v; }</td></tr>
+<tr class="memitem:a1f4f53e79b3ade1d69596e4afc00b807"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__mkk_8h.html#a1f4f53e79b3ade1d69596e4afc00b807">ActuatorMkkSet</a>(_i, _v)&#160;&#160;&#160;{ actuators_mkk.trans[_i].buf[0] = _v; }</td></tr>
 <tr class="separator:a1f4f53e79b3ade1d69596e4afc00b807"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ed1caf21a23b69d1b76a09aae8eb84f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__mkk_8h.html#a3ed1caf21a23b69d1b76a09aae8eb84f">ActuatorsMkkInit</a>()&#160;&#160;&#160;<a class="el" href="actuators__mkk_8h.html#a33796013b901550906a3f12e023466b6">actuators_mkk_init</a>()</td></tr>
 <tr class="separator:a3ed1caf21a23b69d1b76a09aae8eb84f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,7 +230,7 @@ trans[ACTUATORS_MKK_NB]</td>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;{ actuators_mkk.trans[_i].<a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a48b4f0842338aeafa79aeab314f33696">buf</a>[0] = _v; }</td>
+          <td></td><td>&#160;&#160;&#160;{ actuators_mkk.trans[_i].buf[0] = _v; }</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -310,7 +310,7 @@ trans[ACTUATORS_MKK_NB]</td>
 
 <p>Definition at line <a class="el" href="actuators__mkk_8c_source.html#l00043">43</a> of file <a class="el" href="actuators__mkk_8c_source.html">actuators_mkk.c</a>.</p>
 
-<p>References <a class="el" href="actuators__mkk_8c_source.html#l00034">actuators_mkk</a>, <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="i2c_8c_source.html#l00258">i2c_transmit()</a>, <a class="el" href="actuators__mkk_8h_source.html#l00037">ActuatorsMkk::submit_err_cnt</a>, <a class="el" href="sys__time_8h_source.html#l00214">SysTimeTimer</a>, <a class="el" href="actuators__mkk_8h_source.html#l00036">ActuatorsMkk::trans</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, and <a class="el" href="sys__time_8h_source.html#l00205">USEC_OF_SEC</a>.</p>
+<p>References <a class="el" href="actuators__mkk_8c_source.html#l00034">actuators_mkk</a>, <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="i2c_8c_source.html#l00258">i2c_transmit()</a>, <a class="el" href="actuators__mkk_8h_source.html#l00037">ActuatorsMkk::submit_err_cnt</a>, <a class="el" href="sys__time_8h_source.html#l00219">SysTimeTimer</a>, <a class="el" href="actuators__mkk_8h_source.html#l00036">ActuatorsMkk::trans</a>, and <a class="el" href="sys__time_8h_source.html#l00210">USEC_OF_SEC</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -319,7 +319,7 @@ trans[ACTUATORS_MKK_NB]</td>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="actuators__mkk_8h_a5af5a75b3bd167354314529dc3e552b9_cgraph.png" border="0" usemap="#actuators__mkk_8h_a5af5a75b3bd167354314529dc3e552b9_cgraph" alt=""/></div>
 <map name="actuators__mkk_8h_a5af5a75b3bd167354314529dc3e552b9_cgraph" id="actuators__mkk_8h_a5af5a75b3bd167354314529dc3e552b9_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#ga68659e03504627925829f2f12c2ec6d2" title="Submit a write only transaction. " alt="" coords="197,5,299,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="347,5,437,32"/></map>
+<area shape="rect" id="node2" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="197,5,299,32"/><area shape="rect" id="node3" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="347,5,437,32"/></map>
 </div>
 </p>
 
@@ -348,7 +348,7 @@ trans[ACTUATORS_MKK_NB]</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_27687546688cef5dbb42803ce993f4c4.html">actuators</a></li><li class="navelem"><a class="el" href="actuators__mkk_8h.html">actuators_mkk.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:00 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:09 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

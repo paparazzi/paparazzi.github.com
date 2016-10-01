@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -140,10 +140,14 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gacc8bd646ec5ac148424251d65d2dd033"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__geodetic__double.html#gacc8bd646ec5ac148424251d65d2dd033">lla_of_utm_d</a> (struct <a class="el" href="group__math__geodetic__double.html#structLlaCoor__d">LlaCoor_d</a> *out, struct <a class="el" href="group__math__geodetic__double.html#structUtmCoor__d">UtmCoor_d</a> *in)</td></tr>
-<tr class="separator:gacc8bd646ec5ac148424251d65d2dd033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0f160507506fc364a8b2c35327d252fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__geodetic__double.html#ga0f160507506fc364a8b2c35327d252fa">lla_of_utm_d</a> (struct <a class="el" href="group__math__geodetic__double.html#structLlaCoor__d">LlaCoor_d</a> *lla, struct <a class="el" href="group__math__geodetic__double.html#structUtmCoor__d">UtmCoor_d</a> *utm)</td></tr>
+<tr class="separator:ga0f160507506fc364a8b2c35327d252fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d76a215409f6f6bfcfe8214d6398250"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__geodetic__double.html#ga9d76a215409f6f6bfcfe8214d6398250">utm_of_lla_d</a> (struct <a class="el" href="group__math__geodetic__double.html#structUtmCoor__d">UtmCoor_d</a> *utm, struct <a class="el" href="group__math__geodetic__double.html#structLlaCoor__d">LlaCoor_d</a> *lla)</td></tr>
+<tr class="separator:ga9d76a215409f6f6bfcfe8214d6398250"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3b487b485bc51b98307acae35009d1bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__geodetic__double.html#ga3b487b485bc51b98307acae35009d1bb">ltp_def_from_ecef_d</a> (struct <a class="el" href="group__math__geodetic__double.html#structLtpDef__d">LtpDef_d</a> *def, struct <a class="el" href="group__math__geodetic__double.html#structEcefCoor__d">EcefCoor_d</a> *ecef)</td></tr>
 <tr class="separator:ga3b487b485bc51b98307acae35009d1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae83ce0e163149ccc9b0480a19704c88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__geodetic__double.html#gaae83ce0e163149ccc9b0480a19704c88">ltp_def_from_lla_d</a> (struct <a class="el" href="group__math__geodetic__double.html#structLtpDef__d">LtpDef_d</a> *def, struct <a class="el" href="group__math__geodetic__double.html#structLlaCoor__d">LlaCoor_d</a> *lla)</td></tr>
+<tr class="separator:gaae83ce0e163149ccc9b0480a19704c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9d3464ccabcd97db9fb4e1c7d25dfe16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16">lla_of_ecef_d</a> (struct <a class="el" href="group__math__geodetic__double.html#structLlaCoor__d">LlaCoor_d</a> *out, struct <a class="el" href="group__math__geodetic__double.html#structEcefCoor__d">EcefCoor_d</a> *in)</td></tr>
 <tr class="separator:ga9d3464ccabcd97db9fb4e1c7d25dfe16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae6608c48696daebf3382f08e655028d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9">ecef_of_lla_d</a> (struct <a class="el" href="group__math__geodetic__double.html#structEcefCoor__d">EcefCoor_d</a> *out, struct <a class="el" href="group__math__geodetic__double.html#structLlaCoor__d">LlaCoor_d</a> *in)</td></tr>
@@ -337,7 +341,7 @@ in meters </td></tr>
 <td class="fieldname">
 alt</td>
 <td class="fielddoc">
-in meters above WGS84 reference ellipsoid </td></tr>
+in meters (above WGS84 reference ellipsoid or above MSL) </td></tr>
 <tr><td class="fieldtype">
 <a class="anchor" id="a99effcab39186736e8420c9f450559b9"></a>double</td>
 <td class="fieldname">
@@ -443,11 +447,11 @@ rotation from ECEF to local frame </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00144">144</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
+<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00168">168</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
 
 <p>References <a class="el" href="pprz__geodetic__double_8h_source.html#l00098">LtpDef_d::ecef</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00100">LtpDef_d::ltp_of_ecef</a>, <a class="el" href="pprz__algebra_8h_source.html#l00464">MAT33_VECT3_TRANSP_MUL</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00146">VECT3_ADD</a>.</p>
 
-<p>Referenced by <a class="el" href="pprz__geodetic__double_8c_source.html#l00150">ecef_of_ned_point_d()</a>.</p>
+<p>Referenced by <a class="el" href="pprz__geodetic__double_8c_source.html#l00174">ecef_of_ned_point_d()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -492,11 +496,11 @@ rotation from ECEF to local frame </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00157">157</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
+<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00181">181</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
 
 <p>References <a class="el" href="pprz__geodetic__double_8h_source.html#l00100">LtpDef_d::ltp_of_ecef</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00464">MAT33_VECT3_TRANSP_MUL</a>.</p>
 
-<p>Referenced by <a class="el" href="pprz__geodetic__double_8c_source.html#l00162">ecef_of_ned_vect_d()</a>.</p>
+<p>Referenced by <a class="el" href="pprz__geodetic__double_8c_source.html#l00186">ecef_of_ned_vect_d()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -505,7 +509,7 @@ rotation from ECEF to local frame </td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__math__geodetic__double_ga644b27430bffd0fb63acdd313dcd78bd_icgraph.png" border="0" usemap="#group__math__geodetic__double_ga644b27430bffd0fb63acdd313dcd78bd_icgraph" alt=""/></div>
 <map name="group__math__geodetic__double_ga644b27430bffd0fb63acdd313dcd78bd_icgraph" id="group__math__geodetic__double_ga644b27430bffd0fb63acdd313dcd78bd_icgraph">
-<area shape="rect" id="node2" href="group__math__geodetic__double.html#ga6fbe577b9004aa2f3735dce8bd5e34d7" title="ecef_of_ned_vect_d" alt="" coords="201,5,349,32"/></map>
+<area shape="rect" id="node2" href="group__math__geodetic__double.html#ga6fbe577b9004aa2f3735dce8bd5e34d7" title="ecef_of_ned_vect_d" alt="" coords="201,5,349,32"/><area shape="rect" id="node3" href="nps__fdm__crrcsim_8c.html#af6bebbe57b1e739c8b1565a483f91597" title="decode_gpspacket" alt="" coords="397,5,540,32"/><area shape="rect" id="node4" href="nps__fdm__crrcsim_8c.html#a4f72ff1c76415e3e41897d762122c5f8" title="nps_fdm_run_step" alt="" coords="588,5,728,32"/></map>
 </div>
 </p>
 
@@ -535,11 +539,11 @@ rotation from ECEF to local frame </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00096">96</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
+<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00120">120</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
 
 <p>References <a class="el" href="pprz__geodetic__double_8h_source.html#l00061">LlaCoor_d::alt</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00059">LlaCoor_d::lat</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00060">LlaCoor_d::lon</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00050">EcefCoor_d::x</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00051">EcefCoor_d::y</a>, and <a class="el" href="pprz__geodetic__double_8h_source.html#l00052">EcefCoor_d::z</a>.</p>
 
-<p>Referenced by <a class="el" href="pprz__geodetic__int_8c_source.html#l00368">ecef_of_lla_i()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00170">enu_of_lla_point_d()</a>, and <a class="el" href="pprz__geodetic__double_8c_source.html#l00177">ned_of_lla_point_d()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00384">decode_gpspacket()</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00392">ecef_of_lla_i()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00194">enu_of_lla_point_d()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00504">init_jsbsim()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00265">init_ltp()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00057">ltp_def_from_lla_d()</a>, and <a class="el" href="pprz__geodetic__double_8c_source.html#l00201">ned_of_lla_point_d()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -548,7 +552,7 @@ rotation from ECEF to local frame </td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__math__geodetic__double_gae6608c48696daebf3382f08e655028d9_icgraph.png" border="0" usemap="#group__math__geodetic__double_gae6608c48696daebf3382f08e655028d9_icgraph" alt=""/></div>
 <map name="group__math__geodetic__double_gae6608c48696daebf3382f08e655028d9_icgraph" id="group__math__geodetic__double_gae6608c48696daebf3382f08e655028d9_icgraph">
-<area shape="rect" id="node2" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="178,675,277,701"/><area shape="rect" id="node49" href="group__math__geodetic__double.html#ga52626e96324bc7e31131460761a89913" title="enu_of_lla_point_d" alt="" coords="157,725,297,752"/><area shape="rect" id="node50" href="group__math__geodetic__double.html#ga20aa3ec098c747d5e83f6ef81de107a6" title="ned_of_lla_point_d" alt="" coords="157,776,297,803"/><area shape="rect" id="node3" href="group__math__geodetic__int.html#gaf0b761a4e44c92481ac96b623c34ef70" title="ltp_def_from_lla_i" alt="" coords="370,191,503,217"/><area shape="rect" id="node5" href="group__math__geodetic__int.html#gab462d1e8278e0dd9cbc9ff463cde8f5e" title="Convert a point from LLA to local ENU. " alt="" coords="369,351,504,377"/><area shape="rect" id="node17" href="group__math__geodetic__int.html#ga6618f634b774eaf7182dfec83d68f141" title="Convert a point from LLA to local NED. " alt="" coords="369,452,504,479"/><area shape="rect" id="node21" href="group__math__geodetic__int.html#ga5a24d340ac59b50eff6dc23a5102ea96" title="enu_of_lla_vect_i" alt="" coords="371,548,502,575"/><area shape="rect" id="node22" href="group__math__geodetic__int.html#ga58243b878d6c96d0bbbae0cc1950da75" title="ned_of_lla_vect_i" alt="" coords="371,599,502,625"/><area shape="rect" id="node23" href="group__state__position.html#gab32ef3aae5246e773c9fd2817220dab3" title="stateCalcPositionEcef_i" alt="" coords="352,649,521,676"/><area shape="rect" id="node25" href="group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title="stateCalcPositionNed_f" alt="" coords="352,700,521,727"/><area shape="rect" id="node32" href="group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title="stateCalcPositionEnu_f" alt="" coords="353,809,520,836"/><area shape="rect" id="node41" href="gps_8h.html#ac51e6a5f7940a0acc9dc44b1b8085331" title="GPS model specific init implementation. " alt="" coords="384,880,489,907"/><area shape="rect" id="node43" href="ins__float__invariant_8h.html#a337aa9b464c923af97d19ec0bfdb6f02" title="ins_float_invariant_init" alt="" coords="355,949,518,976"/><area shape="rect" id="node45" href="ins__gps__passthrough_8h.html#a65b4389487e1468dd9245eacf2ce07b3" title="ins_gps_passthrough_init" alt="" coords="345,1004,528,1031"/><area shape="rect" id="node47" href="ins__int_8c.html#a4a87b109da7096f36e497b491ebfdfd6" title="initialize the local origin (ltp_def) from flight plan position " alt="" coords="364,1062,509,1103"/><area shape="rect" id="node4" href="ins__float__invariant_8c.html#aa389e650ab7aa5a7f4650afde6358d86" title="INS altitude reference reset. " alt="" coords="581,56,739,83"/><area shape="rect" id="node6" href="subsystems_2navigation_2waypoints_8h.html#af184581f432d472b608685122f2d944d" title="update local ENU coordinates from its LLA coordinates " alt="" coords="594,107,726,133"/><area shape="rect" id="node10" href="mission__rotorcraft__nav_8c.html#a07043228ba27afd83da5c8b1459fb27f" title="Utility function: converts lla (int) to local point (float) " alt="" coords="585,275,735,301"/><area shape="rect" id="node15" href="group__state__position.html#gaf61c3a86bc000852a2d27d5727ceaa91" title="stateCalcPositionEnu_i" alt="" coords="577,376,743,403"/><area shape="rect" id="node7" href="subsystems_2navigation_2waypoints_8h.html#a8676ceec12bad6ae1a4b8e829775003e" title="set waypoint latitude/longitude without updating altitude " alt="" coords="826,5,973,32"/><area shape="rect" id="node8" href="subsystems_2navigation_2waypoints_8h.html#ae5ab24779a6d54a1086c472935b21f47" title="waypoint_set_lla" alt="" coords="836,56,963,83"/><area shape="rect" id="node9" href="subsystems_2navigation_2waypoints_8h.html#a2c2d759f6328c40f66c4cc162da266bb" title="update local ENU coordinates of all global waypoints " alt="" coords="819,107,979,133"/><area shape="rect" id="node11" href="mission__common_8h.html#a6dba22417b1b7d8c0ad962c3341f92a2" title="mission_parse_CIRCLE_LLA" alt="" coords="802,157,997,184"/><area shape="rect" id="node12" href="mission__common_8h.html#a255b2e232c56504ea56fe28c807aefab" title="mission_parse_GOTO\l_WP_LLA" alt="" coords="820,209,979,250"/><area shape="rect" id="node13" href="mission__common_8h.html#ae2825fd4a06960dae1a0e84a8ef2fdac" title="mission_parse_PATH_LLA" alt="" coords="808,275,991,301"/><area shape="rect" id="node14" href="mission__common_8h.html#aa6ff1ff42af5ec7f32536bc2bddd70b0" title="mission_parse_SEGMENT_LLA" alt="" coords="792,325,1007,352"/><area shape="rect" id="node16" href="group__state__position.html#gaf326b26862d91ded4ee4e856a511df47" title="Get position in local ENU coordinates (int). " alt="" coords="818,376,981,403"/><area shape="rect" id="node18" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="576,427,744,453"/><area shape="rect" id="node19" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="817,427,981,453"/><area shape="rect" id="node20" href="ins__vectornav_8h.html#a5e1e0a3cd2eead4dc89bec75e33e5618" title="Propagate the received states into the vehicle state machine. " alt="" coords="1055,452,1237,479"/><area shape="rect" id="node24" href="group__state__position.html#ga82afc52cbca54c85318ca480e4c9856f" title="Get position in ECEF coordinates (int). " alt="" coords="577,568,743,595"/><area shape="rect" id="node26" href="group__state__position.html#gac1b41866b307723e3ad8ddd566d4f627" title="Get position in local NED coordinates (float). " alt="" coords="577,685,743,712"/><area shape="rect" id="node27" href="rotorcraft_2autopilot_8h.html#a2c66693af9a2611033c90f5482436004" title="Set position and heading setpoints wrt. " alt="" coords="817,529,981,570"/><area shape="rect" id="node28" href="rotorcraft_2autopilot_8h.html#a112d1fd62b7a4ad1cc8f754f456f6add" title="Set position and heading setpoints wrt. " alt="" coords="817,594,981,635"/><area shape="rect" id="node29" href="obstacle__avoidance_8h.html#afb4f90a66f93fdb70da178189b76b6a2" title="CN_calculate_target" alt="" coords="824,660,975,687"/><area shape="rect" id="node30" href="guidance__indi_8h.html#a24d1024bbd8da21b6c70317fda39d929" title="guidance_indi_run" alt="" coords="831,711,968,737"/><area shape="rect" id="node31" href="mavlink_8c.html#acf27b8ebaf73137224cee8453df530a8" title="mavlink_send_local\l_position_ned" alt="" coords="827,762,972,803"/><area shape="rect" id="node33" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float). " alt="" coords="579,859,741,885"/><area shape="rect" id="node34" href="cam_8c.html#aa5c7c762b35b57ec479e6244f006c5d1" title="Point straight down. " alt="" coords="1101,853,1191,880"/><area shape="rect" id="node35" href="cam_8c.html#aab3da8ed719ee01699f50450b3df3b13" title="Computes the right angles from target_x, target_y, target_alt. " alt="" coords="851,879,947,905"/><area shape="rect" id="node36" href="common__nav_8c.html#a4603515f41786b54ea9383a65a9f249e" title="Computes squared distance to the HOME waypoint. " alt="" coords="809,929,990,956"/><area shape="rect" id="node37" href="nav__bungee__takeoff_8c.html#a2f53e9b3f76ff0a80bf595380900e71a" title="compute_points_from\l_bungee" alt="" coords="818,981,981,1022"/><area shape="rect" id="node38" href="dc_8h.html#a2a976ddc273dfdd99eb8638c364e9305" title="periodic function " alt="" coords="852,1047,947,1073"/><area shape="rect" id="node39" href="dc_8h.html#a2b50d2725b576697bde98a8bdb358093" title="Sets the dc control in distance mode. " alt="" coords="856,1097,943,1124"/><area shape="rect" id="node40" href="flight__benchmark_8h.html#a42ae975c1caf0cfcf6d713897773a16a" title="flight_benchmark_periodic" alt="" coords="805,1148,994,1175"/><area shape="rect" id="node42" href="gps_8h.html#ab37f7040b9efd19fdd3f92b1df77e771" title="initialize the global GPS state " alt="" coords="625,909,695,936"/><area shape="rect" id="node44" href="ins__float__invariant__wrapper_8h.html#acbc99bce5ffb373e21280ebaad9faa37" title="ins_float_invariant\l_register" alt="" coords="591,961,729,1002"/><area shape="rect" id="node46" href="ins__gps__passthrough_8h.html#a76d9e5f7806d5a0121542f7d8d678d94" title="ins_gps_passthrough\l_register" alt="" coords="581,1026,739,1067"/><area shape="rect" id="node48" href="ins__int_8h.html#a6f47e4e65f9697a961c3bef79e9029e4" title="ins_int_init" alt="" coords="615,1092,705,1119"/></map>
+<area shape="rect" id="node2" href="nps__fdm__crrcsim_8c.html#af6bebbe57b1e739c8b1565a483f91597" title="decode_gpspacket" alt="" coords="157,368,300,395"/><area shape="rect" id="node4" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="179,676,278,703"/><area shape="rect" id="node43" href="group__math__geodetic__double.html#ga52626e96324bc7e31131460761a89913" title="enu_of_lla_point_d" alt="" coords="159,828,299,855"/><area shape="rect" id="node44" href="nps__fdm__jsbsim_8cpp.html#a22e629dc0a3ec62417e2a4e820d85244" title="Initializes JSBSim. " alt="" coords="184,879,273,905"/><area shape="rect" id="node47" href="nps__fdm__crrcsim_8c.html#a3836be75ba868b34cd08503e2f242ab5" title="init_ltp" alt="" coords="197,929,261,956"/><area shape="rect" id="node49" href="group__math__geodetic__double.html#gaae83ce0e163149ccc9b0480a19704c88" title="ltp_def_from_lla_d" alt="" coords="159,980,298,1007"/><area shape="rect" id="node50" href="group__math__geodetic__double.html#ga20aa3ec098c747d5e83f6ef81de107a6" title="ned_of_lla_point_d" alt="" coords="159,1031,299,1057"/><area shape="rect" id="node3" href="nps__fdm__crrcsim_8c.html#a4f72ff1c76415e3e41897d762122c5f8" title="nps_fdm_run_step" alt="" coords="369,136,509,163"/><area shape="rect" id="node5" href="group__math__geodetic__int.html#gaf0b761a4e44c92481ac96b623c34ef70" title="ltp_def_from_lla_i" alt="" coords="373,187,506,213"/><area shape="rect" id="node12" href="group__math__geodetic__int.html#gab462d1e8278e0dd9cbc9ff463cde8f5e" title="Convert a point from LLA to local ENU. " alt="" coords="372,423,507,449"/><area shape="rect" id="node26" href="group__math__geodetic__int.html#ga6618f634b774eaf7182dfec83d68f141" title="Convert a point from LLA to local NED. " alt="" coords="372,473,507,500"/><area shape="rect" id="node27" href="group__math__geodetic__int.html#gae42bb4930966f1c362524f95bb5d7d6e" title="Convert a point from LLA to local ENU. " alt="" coords="376,524,503,551"/><area shape="rect" id="node30" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED. " alt="" coords="376,575,503,601"/><area shape="rect" id="node32" href="group__math__geodetic__int.html#ga5a24d340ac59b50eff6dc23a5102ea96" title="enu_of_lla_vect_i" alt="" coords="374,625,505,652"/><area shape="rect" id="node33" href="group__math__geodetic__int.html#ga58243b878d6c96d0bbbae0cc1950da75" title="ned_of_lla_vect_i" alt="" coords="374,676,505,703"/><area shape="rect" id="node34" href="group__state__position.html#gab32ef3aae5246e773c9fd2817220dab3" title="stateCalcPositionEcef_i" alt="" coords="355,727,524,753"/><area shape="rect" id="node36" href="group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title="stateCalcPositionNed_f" alt="" coords="355,777,524,804"/><area shape="rect" id="node38" href="group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title="stateCalcPositionEnu_f" alt="" coords="356,828,523,855"/><area shape="rect" id="node40" href="ins__float__invariant_8h.html#a337aa9b464c923af97d19ec0bfdb6f02" title="ins_float_invariant_init" alt="" coords="358,879,521,905"/><area shape="rect" id="node42" href="ins__gps__passthrough_8h.html#a65b4389487e1468dd9245eacf2ce07b3" title="ins_gps_passthrough_init" alt="" coords="348,929,531,956"/><area shape="rect" id="node6" href="gps__datalink_8h.html#a2454f9173636f105da3b60752f958ec3" title="GPS initialization. " alt="" coords="601,48,729,75"/><area shape="rect" id="node7" href="ins_8h.html#ac9ba03cf9d41e4536c73f218d3439e76" title="initialize the local origin (ltp_def in fixed point) from flight plan position " alt="" coords="587,99,742,141"/><area shape="rect" id="node11" href="ins__float__invariant_8c.html#aa389e650ab7aa5a7f4650afde6358d86" title="INS altitude reference reset. " alt="" coords="585,187,744,213"/><area shape="rect" id="node8" href="ins__int_8h.html#a6f47e4e65f9697a961c3bef79e9029e4" title="ins_int_init" alt="" coords="861,5,951,32"/><area shape="rect" id="node9" href="ins__skeleton_8h.html#a36545e3f7b1233bb331ff0952d01a9bc" title="ins_module_wrapper_init" alt="" coords="817,56,995,83"/><area shape="rect" id="node10" href="ins__vectornav_8h.html#abccde82fac73ee723125e1173db630c0" title="Initialize Vectornav struct. " alt="" coords="838,107,974,133"/><area shape="rect" id="node13" href="subsystems_2navigation_2waypoints_8h.html#af184581f432d472b608685122f2d944d" title="update local ENU coordinates from its LLA coordinates " alt="" coords="599,248,731,275"/><area shape="rect" id="node17" href="mission__rotorcraft__nav_8c.html#a7acc766194f30b5ae4c48a0b2addbb9f" title="Utility function: converts lla (int) to local point (float) " alt="" coords="589,397,740,424"/><area shape="rect" id="node22" href="group__ac__info.html#gad27d2e9d1854b608ee9d187eb51a368e" title="acInfoCalcPositionEnu_i" alt="" coords="579,448,750,475"/><area shape="rect" id="node24" href="group__ac__info.html#ga5f26bc7946ecd4d712ed0baa6cbe8dd1" title="acInfoCalcPositionEnu_f" alt="" coords="579,499,751,525"/><area shape="rect" id="node14" href="subsystems_2navigation_2waypoints_8h.html#a8676ceec12bad6ae1a4b8e829775003e" title="set waypoint latitude/longitude without updating altitude " alt="" coords="833,157,979,184"/><area shape="rect" id="node15" href="subsystems_2navigation_2waypoints_8h.html#ae5ab24779a6d54a1086c472935b21f47" title="waypoint_set_lla" alt="" coords="843,208,969,235"/><area shape="rect" id="node16" href="subsystems_2navigation_2waypoints_8h.html#a2c2d759f6328c40f66c4cc162da266bb" title="update local ENU coordinates of all global waypoints " alt="" coords="826,259,986,285"/><area shape="rect" id="node18" href="mission__common_8h.html#a6dba22417b1b7d8c0ad962c3341f92a2" title="mission_parse_CIRCLE_LLA" alt="" coords="809,309,1003,336"/><area shape="rect" id="node19" href="mission__common_8h.html#a255b2e232c56504ea56fe28c807aefab" title="mission_parse_GOTO\l_WP_LLA" alt="" coords="827,361,985,402"/><area shape="rect" id="node20" href="mission__common_8h.html#ae2825fd4a06960dae1a0e84a8ef2fdac" title="mission_parse_PATH_LLA" alt="" coords="815,427,997,453"/><area shape="rect" id="node21" href="mission__common_8h.html#aa6ff1ff42af5ec7f32536bc2bddd70b0" title="mission_parse_SEGMENT_LLA" alt="" coords="799,477,1013,504"/><area shape="rect" id="node23" href="group__ac__info.html#ga375088f288d8540b8f3404c6a58f4646" title="Get position in local ENU coordinates (int). " alt="" coords="823,528,989,555"/><area shape="rect" id="node25" href="group__ac__info.html#ga525710b691b4f60d3e55c3c4b2cb092c" title="Get position in local ENU coordinates (float). " alt="" coords="822,579,990,605"/><area shape="rect" id="node28" href="group__state__position.html#gaf61c3a86bc000852a2d27d5727ceaa91" title="stateCalcPositionEnu_i" alt="" coords="581,549,748,576"/><area shape="rect" id="node29" href="group__state__position.html#gaf326b26862d91ded4ee4e856a511df47" title="Get position in local ENU coordinates (int). " alt="" coords="825,629,987,656"/><area shape="rect" id="node31" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="581,600,749,627"/><area shape="rect" id="node35" href="group__state__position.html#ga82afc52cbca54c85318ca480e4c9856f" title="Get position in ECEF coordinates (int). " alt="" coords="582,727,747,753"/><area shape="rect" id="node37" href="group__state__position.html#gac1b41866b307723e3ad8ddd566d4f627" title="Get position in local NED coordinates (float). " alt="" coords="582,777,747,804"/><area shape="rect" id="node39" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float). " alt="" coords="583,828,746,855"/><area shape="rect" id="node41" href="ins__float__invariant__wrapper_8h.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title="ins_float_invariant\l_wrapper_init" alt="" coords="596,879,733,921"/><area shape="rect" id="node45" href="nps__fdm__jsbsim_8cpp.html#a17ec5b69b110d046f9db5b67d2b08779" title="nps_fdm_init" alt="" coords="388,980,491,1007"/><area shape="rect" id="node46" href="nps__main_8c.html#af28efef10cede3b66825b2dc2e4e7705" title="nps_main_init" alt="" coords="609,980,720,1007"/><area shape="rect" id="node48" href="nps__fdm__crrcsim_8c.html#a17ec5b69b110d046f9db5b67d2b08779" title="nps_fdm_init" alt="" coords="388,1031,491,1057"/></map>
 </div>
 </p>
 
@@ -584,9 +588,9 @@ rotation from ECEF to local frame </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00150">150</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
+<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00174">174</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__double_8c_source.html#l00144">ecef_of_enu_point_d()</a>, and <a class="el" href="pprz__geodetic_8h_source.html#l00041">ENU_OF_TO_NED</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__double_8c_source.html#l00168">ecef_of_enu_point_d()</a>, and <a class="el" href="pprz__geodetic_8h_source.html#l00041">ENU_OF_TO_NED</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -631,9 +635,11 @@ rotation from ECEF to local frame </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00162">162</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
+<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00186">186</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__double_8c_source.html#l00157">ecef_of_enu_vect_d()</a>, and <a class="el" href="pprz__geodetic_8h_source.html#l00041">ENU_OF_TO_NED</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__double_8c_source.html#l00181">ecef_of_enu_vect_d()</a>, and <a class="el" href="pprz__geodetic_8h_source.html#l00041">ENU_OF_TO_NED</a>.</p>
+
+<p>Referenced by <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00384">decode_gpspacket()</a>.</p>
 
 <p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -643,6 +649,17 @@ rotation from ECEF to local frame </td></tr>
 <div class="center"><img src="group__math__geodetic__double_ga6fbe577b9004aa2f3735dce8bd5e34d7_cgraph.png" border="0" usemap="#group__math__geodetic__double_ga6fbe577b9004aa2f3735dce8bd5e34d7_cgraph" alt=""/></div>
 <map name="group__math__geodetic__double_ga6fbe577b9004aa2f3735dce8bd5e34d7_cgraph" id="group__math__geodetic__double_ga6fbe577b9004aa2f3735dce8bd5e34d7_cgraph">
 <area shape="rect" id="node2" href="group__math__geodetic__double.html#ga644b27430bffd0fb63acdd313dcd78bd" title="ecef_of_enu_vect_d" alt="" coords="201,5,349,32"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="group__math__geodetic__double_ga6fbe577b9004aa2f3735dce8bd5e34d7_icgraph.png" border="0" usemap="#group__math__geodetic__double_ga6fbe577b9004aa2f3735dce8bd5e34d7_icgraph" alt=""/></div>
+<map name="group__math__geodetic__double_ga6fbe577b9004aa2f3735dce8bd5e34d7_icgraph" id="group__math__geodetic__double_ga6fbe577b9004aa2f3735dce8bd5e34d7_icgraph">
+<area shape="rect" id="node2" href="nps__fdm__crrcsim_8c.html#af6bebbe57b1e739c8b1565a483f91597" title="decode_gpspacket" alt="" coords="201,5,344,32"/><area shape="rect" id="node3" href="nps__fdm__crrcsim_8c.html#a4f72ff1c76415e3e41897d762122c5f8" title="nps_fdm_run_step" alt="" coords="392,5,532,32"/></map>
 </div>
 </p>
 
@@ -678,20 +695,20 @@ rotation from ECEF to local frame </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00116">116</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
+<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00140">140</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
 
 <p>References <a class="el" href="pprz__geodetic__double_8h_source.html#l00098">LtpDef_d::ecef</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00100">LtpDef_d::ltp_of_ecef</a>, <a class="el" href="pprz__algebra_8h_source.html#l00451">MAT33_VECT3_MUL</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00181">VECT3_DIFF</a>.</p>
 
-<p>Referenced by <a class="el" href="pprz__geodetic__double_8c_source.html#l00170">enu_of_lla_point_d()</a>, and <a class="el" href="pprz__geodetic__double_8c_source.html#l00123">ned_of_ecef_point_d()</a>.</p>
+<p>Referenced by <a class="el" href="pprz__geodetic__double_8c_source.html#l00194">enu_of_lla_point_d()</a>, and <a class="el" href="pprz__geodetic__double_8c_source.html#l00147">ned_of_ecef_point_d()</a>.</p>
 
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__math__geodetic__double_ga3be997b20a11ac02e2b673749da746b6_icgraph.png" border="0" usemap="#group__math__geodetic__double_ga3be997b20a11ac02e2b673749da746b6_icgraph" alt=""/></div>
 <map name="group__math__geodetic__double_ga3be997b20a11ac02e2b673749da746b6_icgraph" id="group__math__geodetic__double_ga3be997b20a11ac02e2b673749da746b6_icgraph">
-<area shape="rect" id="node2" href="group__math__geodetic__double.html#ga52626e96324bc7e31131460761a89913" title="enu_of_lla_point_d" alt="" coords="213,5,353,32"/><area shape="rect" id="node3" href="group__math__geodetic__double.html#gabf3f021edce24bfc61367d778cd20952" title="ned_of_ecef_point_d" alt="" coords="207,56,360,83"/><area shape="rect" id="node4" href="group__math__geodetic__double.html#ga20aa3ec098c747d5e83f6ef81de107a6" title="ned_of_lla_point_d" alt="" coords="408,56,548,83"/></map>
+<area shape="rect" id="node2" href="group__math__geodetic__double.html#ga52626e96324bc7e31131460761a89913" title="enu_of_lla_point_d" alt="" coords="213,5,353,32"/><area shape="rect" id="node3" href="group__math__geodetic__double.html#gabf3f021edce24bfc61367d778cd20952" title="ned_of_ecef_point_d" alt="" coords="207,56,360,83"/><area shape="rect" id="node4" href="group__math__geodetic__double.html#ga20aa3ec098c747d5e83f6ef81de107a6" title="ned_of_lla_point_d" alt="" coords="409,5,549,32"/><area shape="rect" id="node5" href="nps__fdm__crrcsim_8c.html#af6bebbe57b1e739c8b1565a483f91597" title="decode_gpspacket" alt="" coords="408,56,551,83"/><area shape="rect" id="node7" href="nps__fdm__jsbsim_8cpp.html#a2d617cee29889c9d6592f9978dfa8a31" title="Populates the NPS fdm struct after a simulation step. " alt="" coords="432,107,527,133"/><area shape="rect" id="node6" href="nps__fdm__crrcsim_8c.html#a4f72ff1c76415e3e41897d762122c5f8" title="nps_fdm_run_step" alt="" coords="599,56,739,83"/><area shape="rect" id="node8" href="nps__fdm__jsbsim_8cpp.html#a17ec5b69b110d046f9db5b67d2b08779" title="nps_fdm_init" alt="" coords="617,107,720,133"/><area shape="rect" id="node11" href="nps__fdm__jsbsim_8cpp.html#a4f72ff1c76415e3e41897d762122c5f8" title="nps_fdm_run_step" alt="" coords="599,157,739,184"/><area shape="rect" id="node9" href="nps__main_8c.html#af28efef10cede3b66825b2dc2e4e7705" title="nps_main_init" alt="" coords="1027,107,1138,133"/><area shape="rect" id="node10" href="nps__main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1201,132,1256,159"/><area shape="rect" id="node12" href="nps__main_8c.html#aadf8f025045c7e712a46040d80e3b92f" title="nps_main_run_sim_step" alt="" coords="787,157,964,184"/><area shape="rect" id="node13" href="nps__main_8c.html#ae831d78cf0d072e1bf594160b977eeb9" title="nps_main_periodic" alt="" coords="1012,157,1153,184"/></map>
 </div>
 </p>
 
@@ -727,20 +744,20 @@ rotation from ECEF to local frame </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00130">130</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
+<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00154">154</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
 
 <p>References <a class="el" href="pprz__geodetic__double_8h_source.html#l00100">LtpDef_d::ltp_of_ecef</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00451">MAT33_VECT3_MUL</a>.</p>
 
-<p>Referenced by <a class="el" href="pprz__geodetic__double_8c_source.html#l00135">ned_of_ecef_vect_d()</a>.</p>
+<p>Referenced by <a class="el" href="pprz__geodetic__double_8c_source.html#l00159">ned_of_ecef_vect_d()</a>.</p>
 
-<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__math__geodetic__double_ga68d7b088555fe80092489578fb16517f_icgraph.png" border="0" usemap="#group__math__geodetic__double_ga68d7b088555fe80092489578fb16517f_icgraph" alt=""/></div>
 <map name="group__math__geodetic__double_ga68d7b088555fe80092489578fb16517f_icgraph" id="group__math__geodetic__double_ga68d7b088555fe80092489578fb16517f_icgraph">
-<area shape="rect" id="node2" href="group__math__geodetic__double.html#ga9a6c153bbedbbcc05dedcc6f5bc3266a" title="ned_of_ecef_vect_d" alt="" coords="201,5,349,32"/><area shape="rect" id="node3" href="gps__sim__nps_8h.html#a1acb1b66a5b2d172cff383fdb9b6de4d" title="gps_feed_value" alt="" coords="397,5,519,32"/></map>
+<area shape="rect" id="node2" href="group__math__geodetic__double.html#ga9a6c153bbedbbcc05dedcc6f5bc3266a" title="ned_of_ecef_vect_d" alt="" coords="201,56,349,83"/><area shape="rect" id="node3" href="gps__sim__nps_8h.html#a1acb1b66a5b2d172cff383fdb9b6de4d" title="gps_feed_value" alt="" coords="408,5,529,32"/><area shape="rect" id="node5" href="nps__fdm__crrcsim_8c.html#af6bebbe57b1e739c8b1565a483f91597" title="decode_gpspacket" alt="" coords="397,56,540,83"/><area shape="rect" id="node7" href="nps__fdm__jsbsim_8cpp.html#a2d617cee29889c9d6592f9978dfa8a31" title="Populates the NPS fdm struct after a simulation step. " alt="" coords="421,107,516,133"/><area shape="rect" id="node4" href="nps__autopilot__fixedwing_8c.html#a12870aaa609d4860004be3cec4c8cf2a" title="nps_autopilot_run_step" alt="" coords="588,5,759,32"/><area shape="rect" id="node6" href="nps__fdm__crrcsim_8c.html#a4f72ff1c76415e3e41897d762122c5f8" title="nps_fdm_run_step" alt="" coords="603,56,743,83"/><area shape="rect" id="node8" href="nps__fdm__jsbsim_8cpp.html#a17ec5b69b110d046f9db5b67d2b08779" title="nps_fdm_init" alt="" coords="622,107,725,133"/><area shape="rect" id="node11" href="nps__fdm__jsbsim_8cpp.html#a4f72ff1c76415e3e41897d762122c5f8" title="nps_fdm_run_step" alt="" coords="603,157,743,184"/><area shape="rect" id="node9" href="nps__main_8c.html#af28efef10cede3b66825b2dc2e4e7705" title="nps_main_init" alt="" coords="1047,107,1158,133"/><area shape="rect" id="node10" href="nps__main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1221,132,1276,159"/><area shape="rect" id="node12" href="nps__main_8c.html#aadf8f025045c7e712a46040d80e3b92f" title="nps_main_run_sim_step" alt="" coords="807,157,984,184"/><area shape="rect" id="node13" href="nps__main_8c.html#ae831d78cf0d072e1bf594160b977eeb9" title="nps_main_periodic" alt="" coords="1032,157,1173,184"/></map>
 </div>
 </p>
 
@@ -776,15 +793,15 @@ rotation from ECEF to local frame </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00170">170</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
+<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00194">194</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__double_8c_source.html#l00096">ecef_of_lla_d()</a>, and <a class="el" href="pprz__geodetic__double_8c_source.html#l00116">enu_of_ecef_point_d()</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__double_8c_source.html#l00120">ecef_of_lla_d()</a>, and <a class="el" href="pprz__geodetic__double_8c_source.html#l00140">enu_of_ecef_point_d()</a>.</p>
 
-<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__math__geodetic__double_ga52626e96324bc7e31131460761a89913_cgraph.png" border="0" usemap="#group__math__geodetic__double_ga52626e96324bc7e31131460761a89913_cgraph" alt=""/></div>
 <map name="group__math__geodetic__double_ga52626e96324bc7e31131460761a89913_cgraph" id="group__math__geodetic__double_ga52626e96324bc7e31131460761a89913_cgraph">
 <area shape="rect" id="node2" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="218,5,322,32"/><area shape="rect" id="node3" href="group__math__geodetic__double.html#ga3be997b20a11ac02e2b673749da746b6" title="enu_of_ecef_point_d" alt="" coords="193,56,347,83"/></map>
@@ -817,9 +834,22 @@ rotation from ECEF to local frame </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00186">186</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
+<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00210">210</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
 
 <p>References <a class="el" href="baro__MS5534A_8c_source.html#l00203">c2</a>.</p>
+
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00504">init_jsbsim()</a>.</p>
+
+<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="group__math__geodetic__double_ga11cc21abdae02f0439da4b235acb4e4a_icgraph.png" border="0" usemap="#group__math__geodetic__double_ga11cc21abdae02f0439da4b235acb4e4a_icgraph" alt=""/></div>
+<map name="group__math__geodetic__double_ga11cc21abdae02f0439da4b235acb4e4a_icgraph" id="group__math__geodetic__double_ga11cc21abdae02f0439da4b235acb4e4a_icgraph">
+<area shape="rect" id="node2" href="nps__fdm__jsbsim_8cpp.html#a22e629dc0a3ec62417e2a4e820d85244" title="Initializes JSBSim. " alt="" coords="171,5,260,32"/><area shape="rect" id="node3" href="nps__fdm__jsbsim_8cpp.html#a17ec5b69b110d046f9db5b67d2b08779" title="nps_fdm_init" alt="" coords="308,5,411,32"/><area shape="rect" id="node4" href="nps__main_8c.html#af28efef10cede3b66825b2dc2e4e7705" title="nps_main_init" alt="" coords="459,5,569,32"/><area shape="rect" id="node5" href="nps__main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="617,5,672,32"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -847,26 +877,26 @@ rotation from ECEF to local frame </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00059">59</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
+<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00083">83</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
 
 <p>References <a class="el" href="pprz__geodetic__double_8h_source.html#l00061">LlaCoor_d::alt</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00059">LlaCoor_d::lat</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00060">LlaCoor_d::lon</a>, <a class="el" href="hf__float_8c_source.html#l00074">Q</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00050">EcefCoor_d::x</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00051">EcefCoor_d::y</a>, and <a class="el" href="pprz__geodetic__double_8h_source.html#l00052">EcefCoor_d::z</a>.</p>
 
-<p>Referenced by <a class="el" href="pprz__geodetic__int_8c_source.html#l00335">lla_of_ecef_i()</a>, and <a class="el" href="pprz__geodetic__double_8c_source.html#l00034">ltp_def_from_ecef_d()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00345">fetch_state()</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00363">lla_of_ecef_i()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00034">ltp_def_from_ecef_d()</a>, and <a class="el" href="nps__sensor__gps_8c_source.html#l00039">nps_sensor_gps_run_step()</a>.</p>
 
-<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__math__geodetic__double_ga9d3464ccabcd97db9fb4e1c7d25dfe16_icgraph.png" border="0" usemap="#group__math__geodetic__double_ga9d3464ccabcd97db9fb4e1c7d25dfe16_icgraph" alt=""/></div>
 <map name="group__math__geodetic__double_ga9d3464ccabcd97db9fb4e1c7d25dfe16_icgraph" id="group__math__geodetic__double_ga9d3464ccabcd97db9fb4e1c7d25dfe16_icgraph">
-<area shape="rect" id="node2" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="lla_of_ecef_i" alt="" coords="183,879,282,905"/><area shape="rect" id="node49" href="group__math__geodetic__double.html#ga3b487b485bc51b98307acae35009d1bb" title="ltp_def_from_ecef_d" alt="" coords="157,963,308,989"/><area shape="rect" id="node3" href="group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f" title="ltp_def_from_ecef_i" alt="" coords="363,233,509,260"/><area shape="rect" id="node21" href="subsystems_2navigation_2waypoints_8h.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates " alt="" coords="365,672,507,699"/><area shape="rect" id="node40" href="group__state__position.html#gad0fedf046f198eace06305e56fc7a0f8" title="Calculate LLA (int) from any other available representation. " alt="" coords="356,879,516,905"/><area shape="rect" id="node47" href="gps__datalink_8h.html#a9f029d3474ac87b74bd3ae638d6dd247" title="parse_gps_datalink\l_small" alt="" coords="363,930,509,971"/><area shape="rect" id="node4" href="gps_8h.html#ac51e6a5f7940a0acc9dc44b1b8085331" title="GPS model specific init implementation. " alt="" coords="612,56,717,83"/><area shape="rect" id="node8" href="gps__furuno_8c.html#a2a6344ac43992ad22974f50f5f581ab9" title="nmea_parse_perdcrv" alt="" coords="586,107,743,133"/><area shape="rect" id="node11" href="gps__skytraq_8h.html#a82455efa55f2f00f1ab1524b9f82dc1d" title="gps_skytraq_read_message" alt="" coords="564,157,765,184"/><area shape="rect" id="node14" href="ins__float__invariant_8h.html#a337aa9b464c923af97d19ec0bfdb6f02" title="ins_float_invariant_init" alt="" coords="583,208,746,235"/><area shape="rect" id="node16" href="ins__float__invariant_8c.html#a14cb66a86c67d8b9216a8c12f58c311b" title="INS local origin reset. " alt="" coords="585,259,744,285"/><area shape="rect" id="node17" href="ins__gps__passthrough_8h.html#a65b4389487e1468dd9245eacf2ce07b3" title="ins_gps_passthrough_init" alt="" coords="573,309,756,336"/><area shape="rect" id="node19" href="ins__int_8c.html#a4a87b109da7096f36e497b491ebfdfd6" title="initialize the local origin (ltp_def) from flight plan position " alt="" coords="592,361,737,402"/><area shape="rect" id="node5" href="gps_8h.html#ab37f7040b9efd19fdd3f92b1df77e771" title="initialize the global GPS state " alt="" coords="878,56,949,83"/><area shape="rect" id="node6" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="1110,5,1174,32"/><area shape="rect" id="node7" href="rotorcraft_2main__fbw_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="main_init" alt="" coords="1102,56,1182,83"/><area shape="rect" id="node9" href="gps__nmea_8h.html#ae4ee231e9004ab283b1da389fd4492f8" title="nmea_parse_prop_msg" alt="" coords="827,107,1000,133"/><area shape="rect" id="node10" href="gps__nmea_8h.html#a2f49ea43d042f884e3ec12e5e14abc97" title="nmea_parse_char() has a complete line. " alt="" coords="1073,107,1211,133"/><area shape="rect" id="node12" href="gps__skytraq_8h.html#a9480384f1c4dd5c8ff24fb7989dbe194" title="gps_skytraq_msg" alt="" coords="846,157,981,184"/><area shape="rect" id="node13" href="gps__skytraq_8h.html#ac91f0980eaf030309e832c42756272f9" title="GpsEvent" alt="" coords="1101,157,1183,184"/><area shape="rect" id="node15" href="ins__float__invariant__wrapper_8h.html#acbc99bce5ffb373e21280ebaad9faa37" title="ins_float_invariant\l_register" alt="" coords="845,209,982,250"/><area shape="rect" id="node18" href="ins__gps__passthrough_8h.html#a76d9e5f7806d5a0121542f7d8d678d94" title="ins_gps_passthrough\l_register" alt="" coords="835,302,992,343"/><area shape="rect" id="node20" href="ins__int_8h.html#a6f47e4e65f9697a961c3bef79e9029e4" title="ins_int_init" alt="" coords="869,368,958,395"/><area shape="rect" id="node22" href="subsystems_2navigation_2waypoints_8h.html#a2ed9112b04893275873729d03176f490" title="Get LLA coordinates of waypoint. " alt="" coords="601,460,728,487"/><area shape="rect" id="node25" href="subsystems_2navigation_2waypoints_8h.html#af3ed05c8671f668d9b6ef54d13d9c8b7" title="Set altitude of waypoint in meters (above reference) " alt="" coords="601,621,729,648"/><area shape="rect" id="node27" href="subsystems_2navigation_2waypoints_8h.html#aecc0b78adf0a0c13f31298dc4d17b9f6" title="waypoint_set_alt_i" alt="" coords="595,672,734,699"/><area shape="rect" id="node29" href="subsystems_2navigation_2waypoints_8h.html#affb3b24527cc3e5342715d567fa245dc" title="Set local ENU waypoint coordinates. " alt="" coords="597,545,733,572"/><area shape="rect" id="node32" href="subsystems_2navigation_2waypoints_8h.html#ac19d9c02f3d8c3b69cee759560317ea4" title="waypoint_set_enu_i" alt="" coords="591,916,738,943"/><area shape="rect" id="node36" href="subsystems_2navigation_2waypoints_8h.html#a6458406c3ff4259882fa0b93991f3c1e" title="Set only local XY coordinates of waypoint without update altitude. " alt="" coords="597,723,733,749"/><area shape="rect" id="node23" href="modules_2datalink_2missionlib_2waypoints_8c.html#a21891c55017fec0be57dc9e4e3ee73a7" title="mavlink_send_wp" alt="" coords="847,419,980,445"/><area shape="rect" id="node24" href="modules_2datalink_2missionlib_2waypoints_8h.html#a632dcb46c33f5cf3726652ee477ff9bc" title="mavlink_wp_message\l_handler" alt="" coords="1061,437,1223,478"/><area shape="rect" id="node26" href="follow__me_8h.html#a5c3112293f2a4d98f2ddb0d937011a36" title="follow_me_periodic" alt="" coords="842,621,985,648"/><area shape="rect" id="node28" href="cv__georeference_8h.html#a230ffda49b65d6b6963063af8ab73e00" title="georeference_project" alt="" coords="834,672,993,699"/><area shape="rect" id="node30" href="stereocam__droplet_8h.html#a304b77dceeec4285bad836b9bbced42d" title="stereocam_droplet_periodic" alt="" coords="813,520,1013,547"/><area shape="rect" id="node31" href="subsystems_2navigation_2waypoints_8h.html#a8d575cfbc187cac4cae8049873821e96" title="initialize global and local waypoints " alt="" coords="858,571,969,597"/><area shape="rect" id="node33" href="follow_8h.html#ae56966b7d44ce338c41405e8a070adfd" title="follow_change_wp" alt="" coords="846,891,981,917"/><area shape="rect" id="node34" href="subsystems_2navigation_2waypoints_8h.html#aa759c25e1ecc60cc27a614e366ab05a4" title="waypoint_move_enu_i" alt="" coords="832,941,995,968"/><area shape="rect" id="node35" href="subsystems_2navigation_2waypoints_8h.html#a6c641b78233fd2eaf42e8e9044e789e5" title="set waypoint to current location and altitude " alt="" coords="843,992,984,1019"/><area shape="rect" id="node37" href="cv__georeference_8h.html#a01b801a0f9bc0ae7066005f72e7d9308" title="georeference_filter" alt="" coords="842,723,985,749"/><area shape="rect" id="node38" href="avoid__navigation_8h.html#afbb250f65364e84c51f0df86da67eb05" title="run_avoid_navigation\l_onvision" alt="" coords="835,774,992,815"/><area shape="rect" id="node39" href="subsystems_2navigation_2waypoints_8h.html#a28dd523c6d75fb36ce3ffec86a6e096c" title="set waypoint to current horizontal location without modifying altitude " alt="" coords="831,840,995,867"/><area shape="rect" id="node41" href="group__state__position.html#ga99473409b740a26c0e2b9a5bd8e9defb" title="Get position in LLA coordinates (int). " alt="" coords="587,1043,743,1069"/><area shape="rect" id="node42" href="dc_8h.html#ab4b5d12f3c9829a0f0e538496ad5c547" title="Send an info message. " alt="" coords="880,1043,947,1069"/><area shape="rect" id="node43" href="uart__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95" title="Send Command To Camera. " alt="" coords="840,1093,987,1120"/><area shape="rect" id="node44" href="dc_8h.html#aaf0625fed2e489322c40c4b2a1904e9a" title="Send Down the coordinates of where the photo was taken. " alt="" coords="830,1144,997,1171"/><area shape="rect" id="node45" href="mavlink_8c.html#a69b29097db843b873c8b348c837cfd03" title="mavlink_send_global\l_position_int" alt="" coords="836,1195,991,1237"/><area shape="rect" id="node46" href="exif__module_8h.html#a91b0ae74e7e4da70fb5021ff6aacd6f0" title="push_gps_to_vision" alt="" coords="840,1261,987,1288"/><area shape="rect" id="node48" href="rotorcraft_2datalink_8c.html#a87ff8c0ffff657dbde8566f062779428" title="Should be called when chars are available in dl_buffer. " alt="" coords="609,1093,720,1120"/><area shape="rect" id="node50" href="gps__sim__nps_8h.html#a1acb1b66a5b2d172cff383fdb9b6de4d" title="gps_feed_value" alt="" coords="375,996,497,1023"/></map>
+<area shape="rect" id="node2" href="nps__fdm__jsbsim_8cpp.html#a2d617cee29889c9d6592f9978dfa8a31" title="Populates the NPS fdm struct after a simulation step. " alt="" coords="204,132,299,159"/><area shape="rect" id="node9" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA. " alt="" coords="202,685,301,712"/><area shape="rect" id="node44" href="group__math__geodetic__double.html#ga3b487b485bc51b98307acae35009d1bb" title="ltp_def_from_ecef_d" alt="" coords="176,987,327,1013"/><area shape="rect" id="node49" href="nps__sensor__gps_8h.html#a8b6a7e5d571ffcdd482b49cef2e2efe4" title="nps_sensor_gps_run_step" alt="" coords="157,408,345,435"/><area shape="rect" id="node3" href="nps__fdm__jsbsim_8cpp.html#a17ec5b69b110d046f9db5b67d2b08779" title="nps_fdm_init" alt="" coords="425,56,527,83"/><area shape="rect" id="node6" href="nps__fdm__jsbsim_8cpp.html#a4f72ff1c76415e3e41897d762122c5f8" title="nps_fdm_run_step" alt="" coords="406,132,546,159"/><area shape="rect" id="node4" href="nps__main_8c.html#af28efef10cede3b66825b2dc2e4e7705" title="nps_main_init" alt="" coords="652,5,763,32"/><area shape="rect" id="node5" href="nps__main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1157,17,1212,44"/><area shape="rect" id="node7" href="nps__main_8c.html#aadf8f025045c7e712a46040d80e3b92f" title="nps_main_run_sim_step" alt="" coords="619,132,796,159"/><area shape="rect" id="node8" href="nps__main_8c.html#ae831d78cf0d072e1bf594160b977eeb9" title="nps_main_periodic" alt="" coords="885,43,1027,69"/><area shape="rect" id="node10" href="group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f" title="ltp_def_from_ecef_i" alt="" coords="403,372,549,399"/><area shape="rect" id="node23" href="subsystems_2navigation_2waypoints_8h.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates " alt="" coords="405,685,547,712"/><area shape="rect" id="node40" href="group__state__position.html#gad0fedf046f198eace06305e56fc7a0f8" title="Calculate LLA (int) from any other available representation. " alt="" coords="396,773,556,800"/><area shape="rect" id="node42" href="gps__datalink_8c.html#a8f42454ba316e49b13649c79007e0cff" title="parse_gps_datalink\l_small" alt="" coords="403,901,549,942"/><area shape="rect" id="node11" href="ins_8h.html#a14cb66a86c67d8b9216a8c12f58c311b" title="INS local origin reset. " alt="" coords="628,195,787,221"/><area shape="rect" id="node16" href="gps__furuno_8c.html#a9ef52ff00fd929f7ac2f15fad0669843" title="nmea_parse_perdcrv" alt="" coords="629,296,786,323"/><area shape="rect" id="node18" href="gps__skytraq_8c.html#a82455efa55f2f00f1ab1524b9f82dc1d" title="gps_skytraq_read_message" alt="" coords="607,347,808,373"/><area shape="rect" id="node20" href="ins__float__invariant_8h.html#a337aa9b464c923af97d19ec0bfdb6f02" title="ins_float_invariant_init" alt="" coords="626,397,789,424"/><area shape="rect" id="node22" href="ins__gps__passthrough_8h.html#a65b4389487e1468dd9245eacf2ce07b3" title="ins_gps_passthrough_init" alt="" coords="616,448,799,475"/><area shape="rect" id="node12" href="ins__skeleton_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="923,93,989,120"/><area shape="rect" id="node13" href="ins__alt__float_8c.html#ac5b472605ca2035825b6ccca1c4d8c5e" title="ins_alt_float_update_gps" alt="" coords="866,144,1046,171"/><area shape="rect" id="node14" href="ins__int_8h.html#a54df8c17ccf7a20d6ca09ad0b8f45db3" title="ins_int_update_gps" alt="" coords="883,195,1029,221"/><area shape="rect" id="node15" href="common__nav_8h.html#a9be99612e24c6ba96a13c2c1d657ee99" title="Reset the geographic reference to the current GPS fix. " alt="" coords="879,245,1033,272"/><area shape="rect" id="node17" href="gps__nmea_8h.html#abad503c594db519e60515d9ac597f742" title="nmea_parse_prop_msg" alt="" coords="869,296,1043,323"/><area shape="rect" id="node19" href="gps__skytraq_8c.html#a9480384f1c4dd5c8ff24fb7989dbe194" title="gps_skytraq_msg" alt="" coords="889,347,1023,373"/><area shape="rect" id="node21" href="ins__float__invariant__wrapper_8h.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title="ins_float_invariant\l_wrapper_init" alt="" coords="887,398,1025,439"/><area shape="rect" id="node24" href="subsystems_2navigation_2waypoints_8h.html#a2ed9112b04893275873729d03176f490" title="Get LLA coordinates of waypoint. " alt="" coords="644,519,771,545"/><area shape="rect" id="node27" href="subsystems_2navigation_2waypoints_8h.html#af3ed05c8671f668d9b6ef54d13d9c8b7" title="Set altitude of waypoint in meters (above reference) " alt="" coords="643,667,771,693"/><area shape="rect" id="node29" href="subsystems_2navigation_2waypoints_8h.html#aecc0b78adf0a0c13f31298dc4d17b9f6" title="waypoint_set_alt_i" alt="" coords="638,717,777,744"/><area shape="rect" id="node31" href="subsystems_2navigation_2waypoints_8h.html#affb3b24527cc3e5342715d567fa245dc" title="Set local ENU waypoint coordinates. " alt="" coords="639,591,775,617"/><area shape="rect" id="node34" href="subsystems_2navigation_2waypoints_8h.html#ac19d9c02f3d8c3b69cee759560317ea4" title="waypoint_set_enu_i" alt="" coords="634,819,781,845"/><area shape="rect" id="node38" href="subsystems_2navigation_2waypoints_8h.html#a6458406c3ff4259882fa0b93991f3c1e" title="Set only local XY coordinates of waypoint without update altitude. " alt="" coords="639,768,775,795"/><area shape="rect" id="node25" href="modules_2datalink_2missionlib_2waypoints_8c.html#a21891c55017fec0be57dc9e4e3ee73a7" title="mavlink_send_wp" alt="" coords="889,464,1023,491"/><area shape="rect" id="node26" href="modules_2datalink_2missionlib_2waypoints_8h.html#a632dcb46c33f5cf3726652ee477ff9bc" title="mavlink_wp_message\l_handler" alt="" coords="1104,482,1265,523"/><area shape="rect" id="node28" href="follow__me_8h.html#a5c3112293f2a4d98f2ddb0d937011a36" title="follow_me_periodic" alt="" coords="885,667,1027,693"/><area shape="rect" id="node30" href="cv__georeference_8h.html#a230ffda49b65d6b6963063af8ab73e00" title="georeference_project" alt="" coords="877,717,1035,744"/><area shape="rect" id="node32" href="stereocam__droplet_8h.html#a304b77dceeec4285bad836b9bbced42d" title="stereocam_droplet_periodic" alt="" coords="856,565,1056,592"/><area shape="rect" id="node33" href="subsystems_2navigation_2waypoints_8h.html#a8d575cfbc187cac4cae8049873821e96" title="initialize global and local waypoints " alt="" coords="901,616,1011,643"/><area shape="rect" id="node35" href="follow_8h.html#a193d671739e35bbb235456cb3b65e9ff" title="follow_wp" alt="" coords="915,819,997,845"/><area shape="rect" id="node36" href="subsystems_2navigation_2waypoints_8h.html#aa759c25e1ecc60cc27a614e366ab05a4" title="waypoint_move_enu_i" alt="" coords="875,869,1037,896"/><area shape="rect" id="node37" href="subsystems_2navigation_2waypoints_8h.html#a6c641b78233fd2eaf42e8e9044e789e5" title="set waypoint to current location and altitude " alt="" coords="885,920,1027,947"/><area shape="rect" id="node39" href="cv__georeference_8h.html#a551f2542023388240a3573ca7e223aec" title="georeference_filter" alt="" coords="885,768,1027,795"/><area shape="rect" id="node41" href="group__state__position.html#ga99473409b740a26c0e2b9a5bd8e9defb" title="Get position in LLA coordinates (int). " alt="" coords="629,869,785,896"/><area shape="rect" id="node43" href="gps__datalink_8h.html#a72af93d10391b6dae5f47999a9e90c2d" title="gps_datalink_parse\l_REMOTE_GPS_SMALL" alt="" coords="625,921,790,962"/><area shape="rect" id="node45" href="gps__sim__nps_8h.html#a1acb1b66a5b2d172cff383fdb9b6de4d" title="gps_feed_value" alt="" coords="415,987,537,1013"/><area shape="rect" id="node47" href="nps__fdm__crrcsim_8c.html#a3836be75ba868b34cd08503e2f242ab5" title="init_ltp" alt="" coords="444,1037,508,1064"/><area shape="rect" id="node46" href="nps__autopilot__fixedwing_8c.html#a12870aaa609d4860004be3cec4c8cf2a" title="nps_autopilot_run_step" alt="" coords="622,987,793,1013"/><area shape="rect" id="node48" href="nps__fdm__crrcsim_8c.html#a17ec5b69b110d046f9db5b67d2b08779" title="nps_fdm_init" alt="" coords="656,1037,759,1064"/><area shape="rect" id="node50" href="nps__sensors_8h.html#acce77f76dcc7946ef7dfd9a522b47b63" title="nps_sensors_run_step" alt="" coords="393,183,559,209"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="gacc8bd646ec5ac148424251d65d2dd033"></a>
+<a class="anchor" id="ga0f160507506fc364a8b2c35327d252fa"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -874,13 +904,13 @@ rotation from ECEF to local frame </td></tr>
           <td class="memname">void lla_of_utm_d </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="group__math__geodetic__double.html#structLlaCoor__d">LlaCoor_d</a> *&#160;</td>
-          <td class="paramname"><em>out</em>, </td>
+          <td class="paramname"><em>lla</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">struct <a class="el" href="group__math__geodetic__double.html#structUtmCoor__d">UtmCoor_d</a> *&#160;</td>
-          <td class="paramname"><em>in</em>&#160;</td>
+          <td class="paramname"><em>utm</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -890,18 +920,31 @@ rotation from ECEF to local frame </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00248">248</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
+<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00311">311</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__double_8h_source.html#l00061">LlaCoor_d::alt</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00088">UtmCoor_d::alt</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00238">CSin</a>, <a class="el" href="pprz__geodetic__utm_8h_source.html#l00040">DELTA_EAST</a>, <a class="el" href="pprz__geodetic__utm_8h_source.html#l00041">DELTA_NORTH</a>, <a class="el" href="pprz__geodetic__utm_8h_source.html#l00038">E</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00087">UtmCoor_d::east</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00209">inverse_isometric_latitude_d()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00204">isometric_latitude_fast_d()</a>, <a class="el" href="pprz__geodetic__utm_8h_source.html#l00045">LambdaOfUtmZone</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00059">LlaCoor_d::lat</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00060">LlaCoor_d::lon</a>, <a class="el" href="pprz__geodetic__utm_8h_source.html#l00043">N</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00086">UtmCoor_d::north</a>, <a class="el" href="pprz__geodetic__utm_8h_source.html#l00047">serie_coeff_proj_mercator</a>, <a class="el" href="pprz__algebra_8h_source.html#l00097">VECT2_SMUL</a>, <a class="el" href="pprz__algebra_8h_source.html#l00079">VECT2_SUB</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00042">DoubleVect2::x</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00043">DoubleVect2::y</a>, and <a class="el" href="pprz__geodetic__double_8h_source.html#l00089">UtmCoor_d::zone</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__double_8h_source.html#l00061">LlaCoor_d::alt</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00088">UtmCoor_d::alt</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00262">CSin</a>, <a class="el" href="pprz__geodetic__utm_8h_source.html#l00042">DELTA_EAST</a>, <a class="el" href="pprz__geodetic__utm_8h_source.html#l00043">DELTA_NORTH</a>, <a class="el" href="pprz__geodetic__utm_8h_source.html#l00040">E</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00087">UtmCoor_d::east</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00233">inverse_isometric_latitude_d()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00228">isometric_latitude_fast_d()</a>, <a class="el" href="pprz__geodetic__utm_8h_source.html#l00047">LambdaOfUtmZone</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00059">LlaCoor_d::lat</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00060">LlaCoor_d::lon</a>, <a class="el" href="pprz__geodetic__utm_8h_source.html#l00045">N</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00086">UtmCoor_d::north</a>, <a class="el" href="pprz__geodetic__utm_8h_source.html#l00051">serie_coeff_proj_mercator</a>, <a class="el" href="pprz__geodetic__utm_8h_source.html#l00059">serie_coeff_proj_mercator_inverse</a>, <a class="el" href="pprz__algebra_8h_source.html#l00097">VECT2_SMUL</a>, <a class="el" href="pprz__algebra_8h_source.html#l00079">VECT2_SUB</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00042">DoubleVect2::x</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00043">DoubleVect2::y</a>, and <a class="el" href="pprz__geodetic__double_8h_source.html#l00089">UtmCoor_d::zone</a>.</p>
 
-<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p>Referenced by <a class="el" href="pprz__geodetic__int_8c_source.html#l00452">lla_of_utm_i()</a>.</p>
+
+<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__math__geodetic__double_gacc8bd646ec5ac148424251d65d2dd033_cgraph.png" border="0" usemap="#group__math__geodetic__double_gacc8bd646ec5ac148424251d65d2dd033_cgraph" alt=""/></div>
-<map name="group__math__geodetic__double_gacc8bd646ec5ac148424251d65d2dd033_cgraph" id="group__math__geodetic__double_gacc8bd646ec5ac148424251d65d2dd033_cgraph">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="group__math__geodetic__double_ga0f160507506fc364a8b2c35327d252fa_cgraph.png" border="0" usemap="#group__math__geodetic__double_ga0f160507506fc364a8b2c35327d252fa_cgraph" alt=""/></div>
+<map name="group__math__geodetic__double_ga0f160507506fc364a8b2c35327d252fa_cgraph" id="group__math__geodetic__double_ga0f160507506fc364a8b2c35327d252fa_cgraph">
 <area shape="rect" id="node2" href="pprz__geodetic__double_8c.html#ab51a48c23983d0c1a5e6f5dfe216ab6f" title="inverse_isometric_latitude_d" alt="" coords="156,5,360,32"/><area shape="rect" id="node3" href="pprz__geodetic__double_8c.html#ab041f54d7a1272975623da5aaa67a39b" title="isometric_latitude\l_fast_d" alt="" coords="190,57,326,98"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="group__math__geodetic__double_ga0f160507506fc364a8b2c35327d252fa_icgraph.png" border="0" usemap="#group__math__geodetic__double_ga0f160507506fc364a8b2c35327d252fa_icgraph" alt=""/></div>
+<map name="group__math__geodetic__double_ga0f160507506fc364a8b2c35327d252fa_icgraph" id="group__math__geodetic__double_ga0f160507506fc364a8b2c35327d252fa_icgraph">
+<area shape="rect" id="node2" href="group__math__geodetic__int.html#ga3e1a1eaa12a3890f5a70574219a74d9e" title="Convert a UTM to LLA. " alt="" coords="156,138,255,165"/><area shape="rect" id="node3" href="group__ac__info.html#ga2f523b260d5f5dda8f138ba70435479c" title="Set Aircraft info. " alt="" coords="323,88,449,114"/><area shape="rect" id="node5" href="group__ac__info.html#ga660def4d2d1433508928beb427d1b7c7" title="acInfoCalcPositionLla_i" alt="" coords="303,189,469,216"/><area shape="rect" id="node17" href="group__ac__info.html#ga66c45f46dcc1835b0297fcb89240db20" title="acInfoCalcPositionLla_f" alt="" coords="303,138,469,165"/><area shape="rect" id="node4" href="group__ac__info.html#ga074e6132a71e6c104b44a1c5a49d7a78" title="Parse all datalink or telemetry messages that contain global position of other acs Messages currently..." alt="" coords="538,88,659,114"/><area shape="rect" id="node6" href="group__ac__info.html#gafc650e7d5bdaa36628912178842e55bd" title="Get position from LLA coordinates (int). " alt="" coords="518,189,679,216"/><area shape="rect" id="node7" href="group__ac__info.html#ga5f26bc7946ecd4d712ed0baa6cbe8dd1" title="acInfoCalcPositionEnu_f" alt="" coords="728,138,900,165"/><area shape="rect" id="node14" href="group__ac__info.html#gad27d2e9d1854b608ee9d187eb51a368e" title="acInfoCalcPositionEnu_i" alt="" coords="729,189,899,216"/><area shape="rect" id="node8" href="group__ac__info.html#ga525710b691b4f60d3e55c3c4b2cb092c" title="Get position in local ENU coordinates (float). " alt="" coords="948,113,1116,140"/><area shape="rect" id="node9" href="formation_8h.html#a18de0c4f9e864cb4db84458b33b463dd" title="formation_flight" alt="" coords="1189,138,1311,165"/><area shape="rect" id="node10" href="potential_8h.html#a2ecae8ed4b80ccfece655453a56db7cd" title="potential_task" alt="" coords="1194,189,1306,216"/><area shape="rect" id="node11" href="tcas_8h.html#adb2f00821358ed6ad0f366e6a2422558" title="tcas_periodic_task_1Hz" alt="" coords="1384,12,1556,38"/><area shape="rect" id="node12" href="tcas_8h.html#aa520d855e76e58f77855603fde040497" title="tcas_periodic_task_4Hz" alt="" coords="1164,88,1336,114"/><area shape="rect" id="node13" href="tcas_8c.html#a5baa7069079b8f1211e22af90cf7593b" title="tcas_test_direction" alt="" coords="1179,37,1321,64"/><area shape="rect" id="node15" href="group__ac__info.html#ga375088f288d8540b8f3404c6a58f4646" title="Get position in local ENU coordinates (int). " alt="" coords="949,228,1115,254"/><area shape="rect" id="node16" href="follow_8h.html#a193d671739e35bbb235456cb3b65e9ff" title="follow_wp" alt="" coords="1209,240,1291,266"/><area shape="rect" id="node18" href="group__ac__info.html#ga9712309206b85d9fb005f0ba19553a04" title="Get position from LLA coordinates (float). " alt="" coords="517,138,680,165"/></map>
 </div>
 </p>
 
@@ -933,29 +976,70 @@ rotation from ECEF to local frame </td></tr>
 
 <p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00034">34</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__double_8h_source.html#l00098">LtpDef_d::ecef</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00059">LlaCoor_d::lat</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00099">LtpDef_d::lla</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00059">lla_of_ecef_d()</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00060">LlaCoor_d::lon</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00100">LtpDef_d::ltp_of_ecef</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00070">DoubleRMat::m</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00139">VECT3_COPY</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__double_8h_source.html#l00098">LtpDef_d::ecef</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00059">LlaCoor_d::lat</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00099">LtpDef_d::lla</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00083">lla_of_ecef_d()</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00060">LlaCoor_d::lon</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00100">LtpDef_d::ltp_of_ecef</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00070">DoubleRMat::m</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00139">VECT3_COPY</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__sim__nps_8c_source.html#l00030">gps_feed_value()</a>.</p>
+<p>Referenced by <a class="el" href="gps__sim__nps_8c_source.html#l00031">gps_feed_value()</a>, and <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00265">init_ltp()</a>.</p>
 
-<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__math__geodetic__double_ga3b487b485bc51b98307acae35009d1bb_cgraph.png" border="0" usemap="#group__math__geodetic__double_ga3b487b485bc51b98307acae35009d1bb_cgraph" alt=""/></div>
 <map name="group__math__geodetic__double_ga3b487b485bc51b98307acae35009d1bb_cgraph" id="group__math__geodetic__double_ga3b487b485bc51b98307acae35009d1bb_cgraph">
 <area shape="rect" id="node2" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title="lla_of_ecef_d" alt="" coords="204,5,308,32"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__math__geodetic__double_ga3b487b485bc51b98307acae35009d1bb_icgraph.png" border="0" usemap="#group__math__geodetic__double_ga3b487b485bc51b98307acae35009d1bb_icgraph" alt=""/></div>
 <map name="group__math__geodetic__double_ga3b487b485bc51b98307acae35009d1bb_icgraph" id="group__math__geodetic__double_ga3b487b485bc51b98307acae35009d1bb_icgraph">
-<area shape="rect" id="node2" href="gps__sim__nps_8h.html#a1acb1b66a5b2d172cff383fdb9b6de4d" title="gps_feed_value" alt="" coords="204,5,325,32"/></map>
+<area shape="rect" id="node2" href="gps__sim__nps_8h.html#a1acb1b66a5b2d172cff383fdb9b6de4d" title="gps_feed_value" alt="" coords="204,5,325,32"/><area shape="rect" id="node4" href="nps__fdm__crrcsim_8c.html#a3836be75ba868b34cd08503e2f242ab5" title="init_ltp" alt="" coords="233,56,297,83"/><area shape="rect" id="node3" href="nps__autopilot__fixedwing_8c.html#a12870aaa609d4860004be3cec4c8cf2a" title="nps_autopilot_run_step" alt="" coords="373,5,544,32"/><area shape="rect" id="node5" href="nps__fdm__crrcsim_8c.html#a17ec5b69b110d046f9db5b67d2b08779" title="nps_fdm_init" alt="" coords="407,56,510,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="gaae83ce0e163149ccc9b0480a19704c88"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ltp_def_from_lla_d </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group__math__geodetic__double.html#structLtpDef__d">LtpDef_d</a> *&#160;</td>
+          <td class="paramname"><em>def</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="group__math__geodetic__double.html#structLlaCoor__d">LlaCoor_d</a> *&#160;</td>
+          <td class="paramname"><em>lla</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00057">57</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
+
+<p>References <a class="el" href="pprz__geodetic__double_8h_source.html#l00098">LtpDef_d::ecef</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00120">ecef_of_lla_d()</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00059">LlaCoor_d::lat</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00099">LtpDef_d::lla</a>, <a class="el" href="pprz__geodetic_8h_source.html#l00053">LLA_COPY</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00060">LlaCoor_d::lon</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00100">LtpDef_d::ltp_of_ecef</a>, and <a class="el" href="pprz__algebra__double_8h_source.html#l00070">DoubleRMat::m</a>.</p>
+
+<p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="group__math__geodetic__double_gaae83ce0e163149ccc9b0480a19704c88_cgraph.png" border="0" usemap="#group__math__geodetic__double_gaae83ce0e163149ccc9b0480a19704c88_cgraph" alt=""/></div>
+<map name="group__math__geodetic__double_gaae83ce0e163149ccc9b0480a19704c88_cgraph" id="group__math__geodetic__double_gaae83ce0e163149ccc9b0480a19704c88_cgraph">
+<area shape="rect" id="node2" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="192,5,296,32"/></map>
 </div>
 </p>
 
@@ -991,31 +1075,31 @@ rotation from ECEF to local frame </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00123">123</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
+<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00147">147</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__double_8c_source.html#l00116">enu_of_ecef_point_d()</a>, and <a class="el" href="pprz__geodetic_8h_source.html#l00041">ENU_OF_TO_NED</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__double_8c_source.html#l00140">enu_of_ecef_point_d()</a>, and <a class="el" href="pprz__geodetic_8h_source.html#l00041">ENU_OF_TO_NED</a>.</p>
 
-<p>Referenced by <a class="el" href="pprz__geodetic__double_8c_source.html#l00177">ned_of_lla_point_d()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00384">decode_gpspacket()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00345">fetch_state()</a>, and <a class="el" href="pprz__geodetic__double_8c_source.html#l00201">ned_of_lla_point_d()</a>.</p>
 
-<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__math__geodetic__double_gabf3f021edce24bfc61367d778cd20952_cgraph.png" border="0" usemap="#group__math__geodetic__double_gabf3f021edce24bfc61367d778cd20952_cgraph" alt=""/></div>
 <map name="group__math__geodetic__double_gabf3f021edce24bfc61367d778cd20952_cgraph" id="group__math__geodetic__double_gabf3f021edce24bfc61367d778cd20952_cgraph">
 <area shape="rect" id="node2" href="group__math__geodetic__double.html#ga3be997b20a11ac02e2b673749da746b6" title="enu_of_ecef_point_d" alt="" coords="207,5,360,32"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__math__geodetic__double_gabf3f021edce24bfc61367d778cd20952_icgraph.png" border="0" usemap="#group__math__geodetic__double_gabf3f021edce24bfc61367d778cd20952_icgraph" alt=""/></div>
 <map name="group__math__geodetic__double_gabf3f021edce24bfc61367d778cd20952_icgraph" id="group__math__geodetic__double_gabf3f021edce24bfc61367d778cd20952_icgraph">
-<area shape="rect" id="node2" href="group__math__geodetic__double.html#ga20aa3ec098c747d5e83f6ef81de107a6" title="ned_of_lla_point_d" alt="" coords="207,5,347,32"/></map>
+<area shape="rect" id="node2" href="nps__fdm__crrcsim_8c.html#af6bebbe57b1e739c8b1565a483f91597" title="decode_gpspacket" alt="" coords="207,5,349,32"/><area shape="rect" id="node4" href="nps__fdm__jsbsim_8cpp.html#a2d617cee29889c9d6592f9978dfa8a31" title="Populates the NPS fdm struct after a simulation step. " alt="" coords="231,56,325,83"/><area shape="rect" id="node11" href="group__math__geodetic__double.html#ga20aa3ec098c747d5e83f6ef81de107a6" title="ned_of_lla_point_d" alt="" coords="208,107,348,133"/><area shape="rect" id="node3" href="nps__fdm__crrcsim_8c.html#a4f72ff1c76415e3e41897d762122c5f8" title="nps_fdm_run_step" alt="" coords="397,5,537,32"/><area shape="rect" id="node5" href="nps__fdm__jsbsim_8cpp.html#a17ec5b69b110d046f9db5b67d2b08779" title="nps_fdm_init" alt="" coords="416,56,519,83"/><area shape="rect" id="node8" href="nps__fdm__jsbsim_8cpp.html#a4f72ff1c76415e3e41897d762122c5f8" title="nps_fdm_run_step" alt="" coords="397,107,537,133"/><area shape="rect" id="node6" href="nps__main_8c.html#af28efef10cede3b66825b2dc2e4e7705" title="nps_main_init" alt="" coords="826,56,937,83"/><area shape="rect" id="node7" href="nps__main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1000,81,1055,108"/><area shape="rect" id="node9" href="nps__main_8c.html#aadf8f025045c7e712a46040d80e3b92f" title="nps_main_run_sim_step" alt="" coords="585,107,763,133"/><area shape="rect" id="node10" href="nps__main_8c.html#ae831d78cf0d072e1bf594160b977eeb9" title="nps_main_periodic" alt="" coords="811,107,952,133"/></map>
 </div>
 </p>
 
@@ -1051,31 +1135,31 @@ rotation from ECEF to local frame </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00135">135</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
+<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00159">159</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__double_8c_source.html#l00130">enu_of_ecef_vect_d()</a>, and <a class="el" href="pprz__geodetic_8h_source.html#l00041">ENU_OF_TO_NED</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__double_8c_source.html#l00154">enu_of_ecef_vect_d()</a>, and <a class="el" href="pprz__geodetic_8h_source.html#l00041">ENU_OF_TO_NED</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__sim__nps_8c_source.html#l00030">gps_feed_value()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00384">decode_gpspacket()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00345">fetch_state()</a>, and <a class="el" href="gps__sim__nps_8c_source.html#l00031">gps_feed_value()</a>.</p>
 
-<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__math__geodetic__double_ga9a6c153bbedbbcc05dedcc6f5bc3266a_cgraph.png" border="0" usemap="#group__math__geodetic__double_ga9a6c153bbedbbcc05dedcc6f5bc3266a_cgraph" alt=""/></div>
 <map name="group__math__geodetic__double_ga9a6c153bbedbbcc05dedcc6f5bc3266a_cgraph" id="group__math__geodetic__double_ga9a6c153bbedbbcc05dedcc6f5bc3266a_cgraph">
 <area shape="rect" id="node2" href="group__math__geodetic__double.html#ga68d7b088555fe80092489578fb16517f" title="enu_of_ecef_vect_d" alt="" coords="201,5,349,32"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__math__geodetic__double_ga9a6c153bbedbbcc05dedcc6f5bc3266a_icgraph.png" border="0" usemap="#group__math__geodetic__double_ga9a6c153bbedbbcc05dedcc6f5bc3266a_icgraph" alt=""/></div>
 <map name="group__math__geodetic__double_ga9a6c153bbedbbcc05dedcc6f5bc3266a_icgraph" id="group__math__geodetic__double_ga9a6c153bbedbbcc05dedcc6f5bc3266a_icgraph">
-<area shape="rect" id="node2" href="gps__sim__nps_8h.html#a1acb1b66a5b2d172cff383fdb9b6de4d" title="gps_feed_value" alt="" coords="201,5,323,32"/></map>
+<area shape="rect" id="node2" href="nps__fdm__crrcsim_8c.html#af6bebbe57b1e739c8b1565a483f91597" title="decode_gpspacket" alt="" coords="201,12,344,39"/><area shape="rect" id="node4" href="nps__fdm__jsbsim_8cpp.html#a2d617cee29889c9d6592f9978dfa8a31" title="Populates the NPS fdm struct after a simulation step. " alt="" coords="225,69,320,96"/><area shape="rect" id="node11" href="gps__sim__nps_8h.html#a1acb1b66a5b2d172cff383fdb9b6de4d" title="gps_feed_value" alt="" coords="212,132,333,159"/><area shape="rect" id="node3" href="nps__fdm__crrcsim_8c.html#a4f72ff1c76415e3e41897d762122c5f8" title="nps_fdm_run_step" alt="" coords="407,5,547,32"/><area shape="rect" id="node5" href="nps__fdm__jsbsim_8cpp.html#a17ec5b69b110d046f9db5b67d2b08779" title="nps_fdm_init" alt="" coords="426,56,529,83"/><area shape="rect" id="node8" href="nps__fdm__jsbsim_8cpp.html#a4f72ff1c76415e3e41897d762122c5f8" title="nps_fdm_run_step" alt="" coords="407,107,547,133"/><area shape="rect" id="node6" href="nps__main_8c.html#af28efef10cede3b66825b2dc2e4e7705" title="nps_main_init" alt="" coords="851,56,962,83"/><area shape="rect" id="node7" href="nps__main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1025,81,1080,108"/><area shape="rect" id="node9" href="nps__main_8c.html#aadf8f025045c7e712a46040d80e3b92f" title="nps_main_run_sim_step" alt="" coords="611,107,788,133"/><area shape="rect" id="node10" href="nps__main_8c.html#ae831d78cf0d072e1bf594160b977eeb9" title="nps_main_periodic" alt="" coords="836,107,977,133"/><area shape="rect" id="node12" href="nps__autopilot__fixedwing_8c.html#a12870aaa609d4860004be3cec4c8cf2a" title="nps_autopilot_run_step" alt="" coords="392,157,563,184"/></map>
 </div>
 </p>
 
@@ -1111,18 +1195,72 @@ rotation from ECEF to local frame </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00177">177</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
+<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00201">201</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__double_8c_source.html#l00096">ecef_of_lla_d()</a>, and <a class="el" href="pprz__geodetic__double_8c_source.html#l00123">ned_of_ecef_point_d()</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__double_8c_source.html#l00120">ecef_of_lla_d()</a>, and <a class="el" href="pprz__geodetic__double_8c_source.html#l00147">ned_of_ecef_point_d()</a>.</p>
 
-<p><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__math__geodetic__double_ga20aa3ec098c747d5e83f6ef81de107a6_cgraph.png" border="0" usemap="#group__math__geodetic__double_ga20aa3ec098c747d5e83f6ef81de107a6_cgraph" alt=""/></div>
 <map name="group__math__geodetic__double_ga20aa3ec098c747d5e83f6ef81de107a6_cgraph" id="group__math__geodetic__double_ga20aa3ec098c747d5e83f6ef81de107a6_cgraph">
 <area shape="rect" id="node2" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="218,5,322,32"/><area shape="rect" id="node3" href="group__math__geodetic__double.html#gabf3f021edce24bfc61367d778cd20952" title="ned_of_ecef_point_d" alt="" coords="193,56,347,83"/><area shape="rect" id="node4" href="group__math__geodetic__double.html#ga3be997b20a11ac02e2b673749da746b6" title="enu_of_ecef_point_d" alt="" coords="395,56,548,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ga9d76a215409f6f6bfcfe8214d6398250"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void utm_of_lla_d </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group__math__geodetic__double.html#structUtmCoor__d">UtmCoor_d</a> *&#160;</td>
+          <td class="paramname"><em>utm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="group__math__geodetic__double.html#structLlaCoor__d">LlaCoor_d</a> *&#160;</td>
+          <td class="paramname"><em>lla</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pprz__geodetic__double_8c_source.html#l00276">276</a> of file <a class="el" href="pprz__geodetic__double_8c_source.html">pprz_geodetic_double.c</a>.</p>
+
+<p>References <a class="el" href="pprz__geodetic__double_8h_source.html#l00061">LlaCoor_d::alt</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00088">UtmCoor_d::alt</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00262">CSin</a>, <a class="el" href="pprz__geodetic__utm_8h_source.html#l00042">DELTA_EAST</a>, <a class="el" href="pprz__geodetic__utm_8h_source.html#l00043">DELTA_NORTH</a>, <a class="el" href="pprz__geodetic__utm_8h_source.html#l00040">E</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00087">UtmCoor_d::east</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00223">isometric_latitude_d()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00228">isometric_latitude_fast_d()</a>, <a class="el" href="pprz__geodetic__utm_8h_source.html#l00047">LambdaOfUtmZone</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00059">LlaCoor_d::lat</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00060">LlaCoor_d::lon</a>, <a class="el" href="pprz__geodetic__utm_8h_source.html#l00045">N</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00086">UtmCoor_d::north</a>, <a class="el" href="pprz__geodetic__utm_8h_source.html#l00051">serie_coeff_proj_mercator</a>, <a class="el" href="pprz__geodetic__utm_8h_source.html#l00048">UtmZoneOfLlaLonRad</a>, <a class="el" href="pprz__algebra_8h_source.html#l00073">VECT2_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00097">VECT2_SMUL</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00042">DoubleVect2::x</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00043">DoubleVect2::y</a>, and <a class="el" href="pprz__geodetic__double_8h_source.html#l00089">UtmCoor_d::zone</a>.</p>
+
+<p>Referenced by <a class="el" href="pprz__geodetic__int_8c_source.html#l00423">utm_of_lla_i()</a>.</p>
+
+<p><div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="group__math__geodetic__double_ga9d76a215409f6f6bfcfe8214d6398250_cgraph.png" border="0" usemap="#group__math__geodetic__double_ga9d76a215409f6f6bfcfe8214d6398250_cgraph" alt=""/></div>
+<map name="group__math__geodetic__double_ga9d76a215409f6f6bfcfe8214d6398250_cgraph" id="group__math__geodetic__double_ga9d76a215409f6f6bfcfe8214d6398250_cgraph">
+<area shape="rect" id="node2" href="pprz__geodetic__double_8c.html#a4e6981a579464b9dcb9a7ea51bd184b0" title="isometric_latitude_d" alt="" coords="156,5,307,32"/><area shape="rect" id="node3" href="pprz__geodetic__double_8c.html#ab041f54d7a1272975623da5aaa67a39b" title="isometric_latitude\l_fast_d" alt="" coords="163,57,299,98"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="group__math__geodetic__double_ga9d76a215409f6f6bfcfe8214d6398250_icgraph.png" border="0" usemap="#group__math__geodetic__double_ga9d76a215409f6f6bfcfe8214d6398250_icgraph" alt=""/></div>
+<map name="group__math__geodetic__double_ga9d76a215409f6f6bfcfe8214d6398250_icgraph" id="group__math__geodetic__double_ga9d76a215409f6f6bfcfe8214d6398250_icgraph">
+<area shape="rect" id="node2" href="group__math__geodetic__int.html#gad84470d73cce3f4d1c54bf579239849c" title="Convert a LLA to UTM. " alt="" coords="156,195,255,221"/><area shape="rect" id="node3" href="group__ac__info.html#ga2f523b260d5f5dda8f138ba70435479c" title="Set Aircraft info. " alt="" coords="327,93,454,120"/><area shape="rect" id="node5" href="group__ac__info.html#ga625b19c827e0414eba7db51eb8ca4a75" title="acInfoCalcPositionUtm_i" alt="" coords="303,144,478,171"/><area shape="rect" id="node7" href="group__ac__info.html#ga372e62985b33d1539347cfadb62d9aff" title="acInfoCalcPositionUtm_f" alt="" coords="303,195,479,221"/><area shape="rect" id="node19" href="gps_8h.html#a1343b41c94f919a6a593b958b275683f" title="Convenience function to get utm position in float from GPS structure. " alt="" coords="315,296,466,323"/><area shape="rect" id="node29" href="gps_8h.html#a4fff1fd94429e7d036ba27af86a8c5ed" title="Convenience function to get utm position in int from GPS structure. " alt="" coords="321,405,460,432"/><area shape="rect" id="node4" href="group__ac__info.html#ga074e6132a71e6c104b44a1c5a49d7a78" title="Parse all datalink or telemetry messages that contain global position of other acs Messages currently..." alt="" coords="556,93,677,120"/><area shape="rect" id="node6" href="group__ac__info.html#ga70185310208daf9b55c913658348886b" title="Get position from UTM coordinates (int). " alt="" coords="531,144,702,171"/><area shape="rect" id="node8" href="group__ac__info.html#ga74acacb611beb144c68c7b41ef3e50a4" title="Get position from UTM coordinates (float). " alt="" coords="531,195,703,221"/><area shape="rect" id="node9" href="group__ac__info.html#ga5f26bc7946ecd4d712ed0baa6cbe8dd1" title="acInfoCalcPositionEnu_f" alt="" coords="755,144,927,171"/><area shape="rect" id="node16" href="group__ac__info.html#gad27d2e9d1854b608ee9d187eb51a368e" title="acInfoCalcPositionEnu_i" alt="" coords="755,195,926,221"/><area shape="rect" id="node10" href="group__ac__info.html#ga525710b691b4f60d3e55c3c4b2cb092c" title="Get position in local ENU coordinates (float). " alt="" coords="975,132,1143,159"/><area shape="rect" id="node11" href="formation_8h.html#a18de0c4f9e864cb4db84458b33b463dd" title="formation_flight" alt="" coords="1215,5,1338,32"/><area shape="rect" id="node12" href="potential_8h.html#a2ecae8ed4b80ccfece655453a56db7cd" title="potential_task" alt="" coords="1221,56,1333,83"/><area shape="rect" id="node13" href="tcas_8h.html#adb2f00821358ed6ad0f366e6a2422558" title="tcas_periodic_task_1Hz" alt="" coords="1411,157,1583,184"/><area shape="rect" id="node14" href="tcas_8h.html#aa520d855e76e58f77855603fde040497" title="tcas_periodic_task_4Hz" alt="" coords="1191,157,1363,184"/><area shape="rect" id="node15" href="tcas_8c.html#a5baa7069079b8f1211e22af90cf7593b" title="tcas_test_direction" alt="" coords="1205,208,1348,235"/><area shape="rect" id="node17" href="group__ac__info.html#ga375088f288d8540b8f3404c6a58f4646" title="Get position in local ENU coordinates (int). " alt="" coords="975,208,1142,235"/><area shape="rect" id="node18" href="follow_8h.html#a193d671739e35bbb235456cb3b65e9ff" title="follow_wp" alt="" coords="1236,259,1317,285"/><area shape="rect" id="node20" href="ins__xsens_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="583,245,650,272"/><area shape="rect" id="node22" href="ins__alt__float_8c.html#ac5b472605ca2035825b6ccca1c4d8c5e" title="ins_alt_float_update_gps" alt="" coords="527,296,707,323"/><area shape="rect" id="node25" href="ins__float__invariant_8h.html#a61e3f6c5195a9e0e99428c7cb5981382" title="ins_float_invariant\l_update_gps" alt="" coords="548,347,685,389"/><area shape="rect" id="node28" href="ins_8c.html#a85e5ab8dd68db02c9d4120a1151a0c34" title="INS local origin reset. " alt="" coords="537,413,696,440"/><area shape="rect" id="node21" href="ins__xsens_8h.html#a20c9835f49df2ea11e85e95c53d8ab2c" title="ins_xsens_init" alt="" coords="785,245,896,272"/><area shape="rect" id="node23" href="ins__alt__float_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="807,296,874,323"/><area shape="rect" id="node24" href="ins__alt__float_8h.html#addae4691b18806ce2db90c10ef8d7274" title="ins_alt_float_init" alt="" coords="997,296,1121,323"/><area shape="rect" id="node26" href="ins__float__invariant__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="807,355,874,381"/><area shape="rect" id="node27" href="ins__float__invariant__wrapper_8h.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title="ins_float_invariant\l_wrapper_init" alt="" coords="990,347,1127,389"/><area shape="rect" id="node30" href="gps_8c.html#ac803c4ab4fb8dc92a4c4463c07da1600" title="send_gps" alt="" coords="575,464,658,491"/><area shape="rect" id="node31" href="gps_8h.html#ab37f7040b9efd19fdd3f92b1df77e771" title="initialize the global GPS state " alt="" coords="805,464,876,491"/></map>
 </div>
 </p>
 
@@ -1133,7 +1271,7 @@ rotation from ECEF to local frame </td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:12 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:23 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

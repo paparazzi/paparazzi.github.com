@@ -6,7 +6,7 @@ var ahrs__float__cmpl_8c =
     [ "AHRS_MAG_OMEGA", "ahrs__float__cmpl_8c.html#a0d1bc60f27e4b46a9d705728b124c06a", null ],
     [ "AHRS_MAG_ZETA", "ahrs__float__cmpl_8c.html#a5bdf6e8a7c46ff825e194a1fb9fe1655", null ],
     [ "FIR_FILTER_SIZE", "ahrs__float__cmpl_8c.html#ab2760fb4c51ee3b054a3462efd915e7c", null ],
-    [ "ahrs_fc_align", "ahrs__float__cmpl_8c.html#a0c082f03a247506e7431422f3b4190de", null ],
+    [ "ahrs_fc_align", "ahrs__float__cmpl_8c.html#a8bb0e2116dd6b4bf9a3fa0caa3f97d27", null ],
     [ "ahrs_fc_init", "ahrs__float__cmpl_8c.html#a5e913bc3963eb3f7fe641823b4c6676c", null ],
     [ "ahrs_fc_propagate", "ahrs__float__cmpl_8c.html#aa0c9aade7383706d2716fed5f138edb2", null ],
     [ "ahrs_fc_realign_heading", "ahrs__float__cmpl_8c.html#aaabc7dc5bd1a6623dfd6b6642badcb1c", null ],

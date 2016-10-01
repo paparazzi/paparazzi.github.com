@@ -8,6 +8,10 @@ var dir_280ddc4eab531a6a77fbd73e72656568 =
     [ "formation.h", "formation_8h.html", "formation_8h" ],
     [ "potential.c", "potential_8c.html", "potential_8c" ],
     [ "potential.h", "potential_8h.html", "potential_8h" ],
+    [ "rssi.c", "rssi_8c.html", "rssi_8c" ],
+    [ "rssi.h", "rssi_8h.html", "rssi_8h" ],
     [ "tcas.c", "tcas_8c.html", "tcas_8c" ],
-    [ "tcas.h", "tcas_8h.html", "tcas_8h" ]
+    [ "tcas.h", "tcas_8h.html", "tcas_8h" ],
+    [ "traffic_info.c", "traffic__info_8c.html", "traffic__info_8c" ],
+    [ "traffic_info.h", "traffic__info_8h.html", "traffic__info_8h" ]
 ];

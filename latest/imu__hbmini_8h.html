@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('imu__hbmini_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__hbmini_8h__incl.png" border="0" usemap="#sw_2airborne_2boards_2hbmini_2imu__hbmini_8h" alt=""/></div>
 <map name="sw_2airborne_2boards_2hbmini_2imu__hbmini_8h" id="sw_2airborne_2boards_2hbmini_2imu__hbmini_8h">
-<area shape="rect" id="node4" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="736,95,875,121"/><area shape="rect" id="node14" href="max1168_8h.html" title="peripherals/max1168.h" alt="" coords="491,95,661,121"/><area shape="rect" id="node16" href="hmc58xx_8h.html" title="peripherals/hmc58xx.h" alt="" coords="198,177,365,203"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="640,266,819,293"/><area shape="rect" id="node11" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="843,266,1034,293"/><area shape="rect" id="node13" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="723,169,887,211"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="860,348,1015,375"/><area shape="rect" id="node9" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="542,348,693,375"/><area shape="rect" id="node17" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="184,266,315,293"/><area shape="rect" id="node19" href="hmc58xx__regs_8h.html" title="Register defs for Honeywell HMC5843 and HMC5883 magnetometers. " alt="" coords="5,259,160,300"/></map>
+<area shape="rect" id="node4" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="612,95,751,121"/><area shape="rect" id="node15" href="max1168_8h.html" title="peripherals/max1168.h" alt="" coords="836,95,1005,121"/><area shape="rect" id="node17" href="hmc58xx_8h.html" title="peripherals/hmc58xx.h" alt="" coords="1138,177,1305,203"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="599,266,778,293"/><area shape="rect" id="node11" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="264,266,454,293"/><area shape="rect" id="node14" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="480,169,644,211"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="370,348,524,375"/><area shape="rect" id="node9" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="650,348,801,375"/><area shape="rect" id="node18" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="1135,266,1266,293"/><area shape="rect" id="node20" href="hmc58xx__regs_8h.html" title="Register defs for Honeywell HMC5843 and HMC5883 magnetometers. " alt="" coords="956,259,1111,300"/></map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -165,11 +165,13 @@ Macros</h2></td></tr>
 <tr class="separator:a127929c4b5a458043f7ef2e0fa2a4e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8612bd2fe2f927e8f283a9a8e60010f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__hbmini_8h.html#a8612bd2fe2f927e8f283a9a8e60010f5">IMU_MAG_Z_SIGN</a>&#160;&#160;&#160;-1</td></tr>
 <tr class="separator:a8612bd2fe2f927e8f283a9a8e60010f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38f1122c1ee0701562b490c6e1b60609"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__hbmini_8h.html#a38f1122c1ee0701562b490c6e1b60609">ImuEvent</a>&#160;&#160;&#160;<a class="el" href="imu__hbmini_8h.html#a5b9ae3abc04f091d942553dc17b589c8">imu_hbmini_event</a></td></tr>
-<tr class="separator:a38f1122c1ee0701562b490c6e1b60609"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:aac46d381aad29da7884a7a0424bb9bda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__hbmini_8h.html#aac46d381aad29da7884a7a0424bb9bda">imu_hbmini_init</a> (void)</td></tr>
+<tr class="separator:aac46d381aad29da7884a7a0424bb9bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44db4f7063e2da893bfeb7adaa2d30b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__hbmini_8h.html#a44db4f7063e2da893bfeb7adaa2d30b7">imu_hbmini_periodic</a> (void)</td></tr>
+<tr class="separator:a44db4f7063e2da893bfeb7adaa2d30b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b9ae3abc04f091d942553dc17b589c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__hbmini_8h.html#a5b9ae3abc04f091d942553dc17b589c8">imu_hbmini_event</a> (void)</td></tr>
 <tr class="separator:a5b9ae3abc04f091d942553dc17b589c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ae69ebf8b1f4554164d83e027853f00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__hbmini_8h.html#a8ae69ebf8b1f4554164d83e027853f00">imu_hbmini_downlink_raw</a> (void)</td></tr>
@@ -310,7 +312,7 @@ hmc</td>
 
 <p>Definition at line <a class="el" href="imu__hbmini_8h_source.html#l00055">55</a> of file <a class="el" href="imu__hbmini_8h_source.html">imu_hbmini.h</a>.</p>
 
-<p>Referenced by <a class="el" href="imu_8c_source.html#l00251">imu_scale_mag()</a>.</p>
+<p>Referenced by <a class="el" href="imu_8c_source.html#l00246">imu_scale_mag()</a>.</p>
 
 </div>
 </div>
@@ -326,7 +328,7 @@ hmc</td>
 
 <p>Definition at line <a class="el" href="imu__hbmini_8h_source.html#l00056">56</a> of file <a class="el" href="imu__hbmini_8h_source.html">imu_hbmini.h</a>.</p>
 
-<p>Referenced by <a class="el" href="imu_8c_source.html#l00251">imu_scale_mag()</a>.</p>
+<p>Referenced by <a class="el" href="imu_8c_source.html#l00246">imu_scale_mag()</a>.</p>
 
 </div>
 </div>
@@ -342,21 +344,7 @@ hmc</td>
 
 <p>Definition at line <a class="el" href="imu__hbmini_8h_source.html#l00057">57</a> of file <a class="el" href="imu__hbmini_8h_source.html">imu_hbmini.h</a>.</p>
 
-<p>Referenced by <a class="el" href="imu_8c_source.html#l00251">imu_scale_mag()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a38f1122c1ee0701562b490c6e1b60609"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ImuEvent&#160;&#160;&#160;<a class="el" href="imu__hbmini_8h.html#a5b9ae3abc04f091d942553dc17b589c8">imu_hbmini_event</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="imu__hbmini_8h_source.html#l00071">71</a> of file <a class="el" href="imu__hbmini_8h_source.html">imu_hbmini.h</a>.</p>
+<p>Referenced by <a class="el" href="imu_8c_source.html#l00246">imu_scale_mag()</a>.</p>
 
 </div>
 </div>
@@ -377,7 +365,7 @@ hmc</td>
 
 <p>Definition at line <a class="el" href="imu__hbmini_8c_source.html#l00084">84</a> of file <a class="el" href="imu__hbmini_8c_source.html">imu_hbmini.c</a>.</p>
 
-<p>References <a class="el" href="imu_8h_source.html#l00051">Imu::accel_unscaled</a>, <a class="el" href="downlink_8h_source.html#l00079">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00083">DefaultDevice</a>, <a class="el" href="imu_8h_source.html#l00050">Imu::gyro_unscaled</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00043">imu</a>, <a class="el" href="imu_8h_source.html#l00052">Imu::mag_unscaled</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00180">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00181">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00182">Int32Rates::r</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
+<p>References <a class="el" href="imu_8h_source.html#l00047">Imu::accel_unscaled</a>, <a class="el" href="downlink_8h_source.html#l00084">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00088">DefaultDevice</a>, <a class="el" href="imu_8h_source.html#l00046">Imu::gyro_unscaled</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="imu_8h_source.html#l00048">Imu::mag_unscaled</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00180">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00181">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00182">Int32Rates::r</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
 
 </div>
 </div>
@@ -397,7 +385,7 @@ hmc</td>
 
 <p>Definition at line <a class="el" href="imu__hbmini_8c_source.html#l00093">93</a> of file <a class="el" href="imu__hbmini_8c_source.html">imu_hbmini.c</a>.</p>
 
-<p>References <a class="el" href="imu_8h_source.html#l00043">Imu::accel</a>, <a class="el" href="imu_8h_source.html#l00051">Imu::accel_unscaled</a>, <a class="el" href="hmc58xx_8h.html#a366d71fd81e9949621d8f51f872b4544">Hmc58xx::data</a>, <a class="el" href="hmc58xx_8h_source.html#l00065">Hmc58xx::data_available</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8h_source.html#l00039">get_sys_time_usec()</a>, <a class="el" href="imu_8h_source.html#l00042">Imu::gyro</a>, <a class="el" href="imu_8h_source.html#l00050">Imu::gyro_unscaled</a>, <a class="el" href="imu__hbmini_8h_source.html#l00062">ImuHbmini::hmc</a>, <a class="el" href="hmc58xx_8c_source.html#l00152">hmc58xx_event()</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00043">imu</a>, <a class="el" href="imu__hbmini_8c_source.html#l00051">IMU_ACCEL_X_CHAN</a>, <a class="el" href="imu__hbmini_8c_source.html#l00052">IMU_ACCEL_Y_CHAN</a>, <a class="el" href="imu__hbmini_8c_source.html#l00053">IMU_ACCEL_Z_CHAN</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00166">IMU_BOARD_ID</a>, <a class="el" href="imu__hbmini_8c_source.html#l00046">IMU_GYRO_P_CHAN</a>, <a class="el" href="imu__hbmini_8c_source.html#l00047">IMU_GYRO_Q_CHAN</a>, <a class="el" href="imu__hbmini_8c_source.html#l00048">IMU_GYRO_R_CHAN</a>, <a class="el" href="imu__hbmini_8c_source.html#l00061">imu_hbmini</a>, <a class="el" href="imu__hbmini_8c_source.html#l00056">IMU_MAG_X_CHAN</a>, <a class="el" href="imu__hbmini_8c_source.html#l00057">IMU_MAG_Y_CHAN</a>, <a class="el" href="imu__hbmini_8c_source.html#l00058">IMU_MAG_Z_CHAN</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00350">imu_scale_accel()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00349">imu_scale_gyro()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00351">imu_scale_mag()</a>, <a class="el" href="imu_8h_source.html#l00044">Imu::mag</a>, <a class="el" href="imu_8h_source.html#l00052">Imu::mag_unscaled</a>, <a class="el" href="max1168_8h_source.html#l00063">MAX1168_DATA_AVAILABLE</a>, <a class="el" href="max1168_8c_source.html#l00101">max1168_event()</a>, <a class="el" href="max1168_8h_source.html#l00059">MAX1168_IDLE</a>, <a class="el" href="max1168_8c_source.html#l00027">max1168_status</a>, <a class="el" href="max1168_8c_source.html#l00028">max1168_values</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00180">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00181">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00182">Int32Rates::r</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
+<p>References <a class="el" href="imu_8h_source.html#l00039">Imu::accel</a>, <a class="el" href="imu_8h_source.html#l00047">Imu::accel_unscaled</a>, <a class="el" href="hmc58xx_8h.html#a916f436d0200f643aa63f7472a57062f">Hmc58xx::data</a>, <a class="el" href="hmc58xx_8h_source.html#l00065">Hmc58xx::data_available</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">get_sys_time_usec()</a>, <a class="el" href="imu_8h_source.html#l00038">Imu::gyro</a>, <a class="el" href="imu_8h_source.html#l00046">Imu::gyro_unscaled</a>, <a class="el" href="imu__hbmini_8h_source.html#l00062">ImuHbmini::hmc</a>, <a class="el" href="hmc58xx_8c_source.html#l00152">hmc58xx_event()</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="imu__hbmini_8c_source.html#l00051">IMU_ACCEL_X_CHAN</a>, <a class="el" href="imu__hbmini_8c_source.html#l00052">IMU_ACCEL_Y_CHAN</a>, <a class="el" href="imu__hbmini_8c_source.html#l00053">IMU_ACCEL_Z_CHAN</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00181">IMU_BOARD_ID</a>, <a class="el" href="imu__hbmini_8c_source.html#l00046">IMU_GYRO_P_CHAN</a>, <a class="el" href="imu__hbmini_8c_source.html#l00047">IMU_GYRO_Q_CHAN</a>, <a class="el" href="imu__hbmini_8c_source.html#l00048">IMU_GYRO_R_CHAN</a>, <a class="el" href="imu__hbmini_8c_source.html#l00061">imu_hbmini</a>, <a class="el" href="imu__hbmini_8c_source.html#l00056">IMU_MAG_X_CHAN</a>, <a class="el" href="imu__hbmini_8c_source.html#l00057">IMU_MAG_Y_CHAN</a>, <a class="el" href="imu__hbmini_8c_source.html#l00058">IMU_MAG_Z_CHAN</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00350">imu_scale_accel()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00349">imu_scale_gyro()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00351">imu_scale_mag()</a>, <a class="el" href="imu_8h_source.html#l00040">Imu::mag</a>, <a class="el" href="imu_8h_source.html#l00048">Imu::mag_unscaled</a>, <a class="el" href="max1168_8h_source.html#l00063">MAX1168_DATA_AVAILABLE</a>, <a class="el" href="max1168_8c_source.html#l00101">max1168_event()</a>, <a class="el" href="max1168_8h_source.html#l00059">MAX1168_IDLE</a>, <a class="el" href="max1168_8c_source.html#l00027">max1168_status</a>, <a class="el" href="max1168_8c_source.html#l00028">max1168_values</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00180">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00181">Int32Rates::q</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00182">Int32Rates::r</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -406,7 +394,69 @@ hmc</td>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__hbmini_8h_a5b9ae3abc04f091d942553dc17b589c8_cgraph.png" border="0" usemap="#imu__hbmini_8h_a5b9ae3abc04f091d942553dc17b589c8_cgraph" alt=""/></div>
 <map name="imu__hbmini_8h_a5b9ae3abc04f091d942553dc17b589c8_cgraph" id="imu__hbmini_8h_a5b9ae3abc04f091d942553dc17b589c8_cgraph">
-<area shape="rect" id="node2" href="linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="192,5,336,32"/><area shape="rect" id="node4" href="hmc58xx_8c.html#a6514a605dad1e4bb5664bf885cca676b" title="hmc58xx_event" alt="" coords="203,56,325,83"/><area shape="rect" id="node8" href="ahrs__gx3_8c.html#a34a2e1e2b450191b8ab1e849239810b2" title="imu_scale_accel" alt="" coords="201,107,327,133"/><area shape="rect" id="node9" href="ahrs__gx3_8c.html#a8d63b0a61c8ffe88dd15b40843b1ae1d" title="imu_scale_gyro" alt="" coords="203,157,325,184"/><area shape="rect" id="node10" href="ahrs__gx3_8c.html#a6ca6c7f78fab9df37eb980d2b4d1b3a9" title="imu_scale_mag" alt="" coords="203,208,325,235"/><area shape="rect" id="node11" href="max1168_8c.html#a957376acfc8fbd7b917f20a18e6c5a6c" title="max1168_event" alt="" coords="201,259,327,285"/><area shape="rect" id="node3" href="sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="397,5,534,32"/><area shape="rect" id="node5" href="hmc58xx_8c.html#a2eff0c407b139d17a73bf75a611c32cb" title="Configuration function called once before normal use. " alt="" coords="384,56,547,83"/><area shape="rect" id="node6" href="hmc58xx_8c.html#afadf91048494baf761fa6cf8fda062d9" title="hmc58xx_i2c_tx_reg" alt="" coords="595,56,747,83"/><area shape="rect" id="node7" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="795,56,885,83"/><area shape="rect" id="node12" href="group__spi.html#ga99507da72932c02e5d8daf9a7170ed69" title="Unselect a slave. " alt="" coords="395,233,536,260"/><area shape="rect" id="node13" href="group__spi.html#ga5e9947e5b87e3a86a773b4a174ec6f08" title="Resume the SPI fifo. " alt="" coords="417,284,513,311"/></map>
+<area shape="rect" id="node2" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="192,5,336,32"/><area shape="rect" id="node4" href="hmc58xx_8c.html#a6514a605dad1e4bb5664bf885cca676b" title="hmc58xx_event" alt="" coords="203,56,325,83"/><area shape="rect" id="node8" href="ahrs__gx3_8c.html#a34a2e1e2b450191b8ab1e849239810b2" title="imu_scale_accel" alt="" coords="201,107,327,133"/><area shape="rect" id="node9" href="ahrs__gx3_8c.html#a8d63b0a61c8ffe88dd15b40843b1ae1d" title="imu_scale_gyro" alt="" coords="203,157,325,184"/><area shape="rect" id="node10" href="ahrs__gx3_8c.html#a6ca6c7f78fab9df37eb980d2b4d1b3a9" title="imu_scale_mag" alt="" coords="203,208,325,235"/><area shape="rect" id="node11" href="max1168_8c.html#a957376acfc8fbd7b917f20a18e6c5a6c" title="max1168_event" alt="" coords="201,259,327,285"/><area shape="rect" id="node3" href="sys__time_8h.html#adb22f2652f04908fbc644c7274bf7273" title="usec_of_sys_time_ticks" alt="" coords="384,5,555,32"/><area shape="rect" id="node5" href="hmc58xx_8c.html#a2eff0c407b139d17a73bf75a611c32cb" title="Configuration function called once before normal use. " alt="" coords="388,56,551,83"/><area shape="rect" id="node6" href="hmc58xx_8c.html#afadf91048494baf761fa6cf8fda062d9" title="hmc58xx_i2c_tx_reg" alt="" coords="603,56,755,83"/><area shape="rect" id="node7" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="803,56,893,83"/><area shape="rect" id="node12" href="group__spi.html#ga99507da72932c02e5d8daf9a7170ed69" title="spi_slave_unselect() function " alt="" coords="399,233,540,260"/><area shape="rect" id="node13" href="group__spi.html#gaf5ff5a9f93b73caf6532b7e25dd917b9" title="spi_resume() function " alt="" coords="421,284,517,311"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aac46d381aad29da7884a7a0424bb9bda"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void imu_hbmini_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="imu__hbmini_8c_source.html#l00063">63</a> of file <a class="el" href="imu__hbmini_8c_source.html">imu_hbmini.c</a>.</p>
+
+<p>References <a class="el" href="imu__hbmini_8h_source.html#l00062">ImuHbmini::hmc</a>, <a class="el" href="hmc58xx__regs_8h_source.html#l00031">HMC58XX_ADDR</a>, <a class="el" href="hmc58xx_8c_source.html#l00075">hmc58xx_init()</a>, <a class="el" href="imu__hbmini_8c_source.html#l00061">imu_hbmini</a>, and <a class="el" href="max1168_8c_source.html#l00040">max1168_init()</a>.</p>
+
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="imu__hbmini_8h_aac46d381aad29da7884a7a0424bb9bda_cgraph.png" border="0" usemap="#imu__hbmini_8h_aac46d381aad29da7884a7a0424bb9bda_cgraph" alt=""/></div>
+<map name="imu__hbmini_8h_aac46d381aad29da7884a7a0424bb9bda_cgraph" id="imu__hbmini_8h_aac46d381aad29da7884a7a0424bb9bda_cgraph">
+<area shape="rect" id="node2" href="hmc58xx_8c.html#a1daa9072b668998f936fb469e5c6c515" title="Initialize Hmc58xx struct and set default config options. " alt="" coords="177,17,283,43"/><area shape="rect" id="node4" href="max1168_8c.html#a6130e20b7ea3c56aa94a9e449b773b4a" title="max1168_init" alt="" coords="176,71,284,98"/><area shape="rect" id="node3" href="hmc58xx_8c.html#a2165794d296c28b9d22eb0490ec3049b" title="hmc58xx_set_default\l_config" alt="" coords="332,5,491,47"/><area shape="rect" id="node5" href="lpc21_2peripherals_2max1168__arch_8c.html#a712f39d80c2b46e08a4d0230bf74bef2" title="max1168_arch_init" alt="" coords="340,71,483,98"/><area shape="rect" id="node6" href="max1168_8c.html#a65bdce5cdf607ff4f87fd590f20d16c3" title="max1168_lock_cb" alt="" coords="343,122,479,149"/><area shape="rect" id="node7" href="group__spi.html#ga747ed5cb8c8252f0101fb60a04fa886d" title="spi_lock() function " alt="" coords="539,122,611,149"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a44db4f7063e2da893bfeb7adaa2d30b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void imu_hbmini_periodic </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="imu__hbmini_8c_source.html#l00072">72</a> of file <a class="el" href="imu__hbmini_8c_source.html">imu_hbmini.c</a>.</p>
+
+<p>References <a class="el" href="imu__hbmini_8h_source.html#l00062">ImuHbmini::hmc</a>, <a class="el" href="hmc58xx_8h_source.html#l00085">hmc58xx_periodic()</a>, <a class="el" href="imu__hbmini_8c_source.html#l00061">imu_hbmini</a>, and <a class="el" href="max1168_8h_source.html#l00068">Max1168Periodic</a>.</p>
+
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="imu__hbmini_8h_a44db4f7063e2da893bfeb7adaa2d30b7_cgraph.png" border="0" usemap="#imu__hbmini_8h_a44db4f7063e2da893bfeb7adaa2d30b7_cgraph" alt=""/></div>
+<map name="imu__hbmini_8h_a44db4f7063e2da893bfeb7adaa2d30b7_cgraph" id="imu__hbmini_8h_a44db4f7063e2da893bfeb7adaa2d30b7_cgraph">
+<area shape="rect" id="node2" href="hmc58xx_8h.html#a353064a5a9c6b47a14f4b9543545b4ec" title="convenience function: read or start configuration if not already initialized " alt="" coords="207,17,344,44"/><area shape="rect" id="node3" href="hmc58xx_8h.html#a883e49acd3049ead17c6c29a3b020c72" title="hmc58xx_read" alt="" coords="851,5,967,32"/><area shape="rect" id="node5" href="hmc58xx_8h.html#a89a7b5456b1a87c83aef85779c4fc5e9" title="hmc58xx_start_configure" alt="" coords="392,43,575,69"/><area shape="rect" id="node4" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="1033,37,1124,64"/><area shape="rect" id="node6" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="633,43,775,69"/><area shape="rect" id="node7" href="hmc58xx_8c.html#a2eff0c407b139d17a73bf75a611c32cb" title="Configuration function called once before normal use. " alt="" coords="623,93,785,120"/><area shape="rect" id="node8" href="hmc58xx_8c.html#afadf91048494baf761fa6cf8fda062d9" title="hmc58xx_i2c_tx_reg" alt="" coords="833,68,985,95"/></map>
 </div>
 </p>
 
@@ -425,7 +475,7 @@ hmc</td>
 
 <p>Definition at line <a class="el" href="imu__hbmini_8c_source.html#l00061">61</a> of file <a class="el" href="imu__hbmini_8c_source.html">imu_hbmini.c</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__hbmini_8c_source.html#l00093">imu_hbmini_event()</a>, <a class="el" href="imu__hbmini_8c_source.html#l00063">imu_impl_init()</a>, and <a class="el" href="imu__hbmini_8c_source.html#l00072">imu_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="imu__hbmini_8c_source.html#l00093">imu_hbmini_event()</a>, <a class="el" href="imu__hbmini_8c_source.html#l00063">imu_hbmini_init()</a>, and <a class="el" href="imu__hbmini_8c_source.html#l00072">imu_hbmini_periodic()</a>.</p>
 
 </div>
 </div>
@@ -435,7 +485,7 @@ hmc</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_199d3f9d5cb33e01205a5799f6ac9545.html">hbmini</a></li><li class="navelem"><a class="el" href="imu__hbmini_8h.html">imu_hbmini.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:39 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:42 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -107,7 +107,6 @@ $(document).ready(function(){initNavTree('imu__mpu60x0__i2c_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -129,7 +128,7 @@ $(document).ready(function(){initNavTree('imu__mpu60x0__i2c_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__mpu60x0__i2c_8h__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2imu_2imu__mpu60x0__i2c_8h" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2imu_2imu__mpu60x0__i2c_8h" id="sw_2airborne_2subsystems_2imu_2imu__mpu60x0__i2c_8h">
-<area shape="rect" id="node4" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="761,102,900,129"/><area shape="rect" id="node14" href="imu__mpu60x0__defaults_8h.html" title="Default sensitivity definitions for an IMU using the MPU60x0. " alt="" coords="925,95,1083,136"/><area shape="rect" id="node15" href="mpu60x0__i2c_8h.html" title="Driver for the MPU&#45;60X0 using I2C. " alt="" coords="321,184,479,225"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="648,273,827,300"/><area shape="rect" id="node11" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="953,273,1143,300"/><area shape="rect" id="node13" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="775,184,939,225"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="952,355,1107,382"/><area shape="rect" id="node9" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="726,355,877,382"/><area shape="rect" id="node16" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="335,273,465,300"/><area shape="rect" id="node18" href="mpu60x0_8h.html" title="MPU&#45;60X0 driver common interface (I2C and SPI). " alt="" coords="43,273,213,300"/><area shape="rect" id="node19" href="mpu60x0__regs_8h.html" title="Register and address definitions for MPU&#45;6000 and MPU&#45;6050. " alt="" coords="5,348,163,389"/></map>
+<area shape="rect" id="node4" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="770,102,909,129"/><area shape="rect" id="node15" href="imu__mpu60x0__defaults_8h.html" title="Default sensitivity definitions for an IMU using the MPU60x0. " alt="" coords="933,95,1092,136"/><area shape="rect" id="node16" href="mpu60x0__i2c_8h.html" title="Driver for the MPU&#45;60X0 using I2C. " alt="" coords="323,184,481,225"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="657,273,835,300"/><area shape="rect" id="node11" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1031,273,1221,300"/><area shape="rect" id="node14" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="784,184,948,225"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="950,355,1105,382"/><area shape="rect" id="node9" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="632,355,783,382"/><area shape="rect" id="node17" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="93,273,223,300"/><area shape="rect" id="node19" href="mpu60x0_8h.html" title="MPU&#45;60X0 driver common interface (I2C and SPI). " alt="" coords="317,273,487,300"/><area shape="rect" id="node20" href="mpu60x0__regs_8h.html" title="Register and address definitions for MPU&#45;6000 and MPU&#45;6050. " alt="" coords="298,348,455,389"/></map>
 </div>
 </div>
 <p><a href="imu__mpu60x0__i2c_8h_source.html">Go to the source code of this file.</a></p>
@@ -139,13 +138,12 @@ Data Structures</h2></td></tr>
 <tr class="memitem:structImuMpu60x0"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu60x0__i2c_8h.html#structImuMpu60x0">ImuMpu60x0</a></td></tr>
 <tr class="separator:structImuMpu60x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a38f1122c1ee0701562b490c6e1b60609"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu60x0__i2c_8h.html#a38f1122c1ee0701562b490c6e1b60609">ImuEvent</a>&#160;&#160;&#160;<a class="el" href="imu__mpu60x0__i2c_8h.html#ad17d2b5d68bee1716b36c12a01cb1b31">imu_mpu_i2c_event</a></td></tr>
-<tr class="separator:a38f1122c1ee0701562b490c6e1b60609"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a06d943f6ded5d400bb6cbb7dec54d00f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu60x0__i2c_8h.html#a06d943f6ded5d400bb6cbb7dec54d00f">imu_mpu_i2c_init</a> (void)</td></tr>
+<tr class="separator:a06d943f6ded5d400bb6cbb7dec54d00f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b597e78018eec2ee4c53ba739b298c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu60x0__i2c_8h.html#a4b597e78018eec2ee4c53ba739b298c6">imu_mpu_i2c_periodic</a> (void)</td></tr>
+<tr class="separator:a4b597e78018eec2ee4c53ba739b298c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad17d2b5d68bee1716b36c12a01cb1b31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu60x0__i2c_8h.html#ad17d2b5d68bee1716b36c12a01cb1b31">imu_mpu_i2c_event</a> (void)</td></tr>
 <tr class="separator:ad17d2b5d68bee1716b36c12a01cb1b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -191,21 +189,6 @@ mpu</td>
 
 </div>
 </div>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a38f1122c1ee0701562b490c6e1b60609"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ImuEvent&#160;&#160;&#160;<a class="el" href="imu__mpu60x0__i2c_8h.html#ad17d2b5d68bee1716b36c12a01cb1b31">imu_mpu_i2c_event</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="imu__mpu60x0__i2c_8h_source.html#l00047">47</a> of file <a class="el" href="imu__mpu60x0__i2c_8h_source.html">imu_mpu60x0_i2c.h</a>.</p>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="ad17d2b5d68bee1716b36c12a01cb1b31"></a>
 <div class="memitem">
@@ -223,7 +206,7 @@ mpu</td>
 
 <p>Definition at line <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00087">87</a> of file <a class="el" href="imu__mpu60x0__i2c_8c_source.html">imu_mpu60x0_i2c.c</a>.</p>
 
-<p>References <a class="el" href="imu_8h_source.html#l00043">Imu::accel</a>, <a class="el" href="imu_8h_source.html#l00051">Imu::accel_unscaled</a>, <a class="el" href="mpu60x0__i2c_8h.html#a1115909d0397ba315d385901c8ae2dca">Mpu60x0_I2c::data_accel</a>, <a class="el" href="mpu60x0__i2c_8h_source.html#l00057">Mpu60x0_I2c::data_available</a>, <a class="el" href="mpu60x0__i2c_8h.html#a87f294819f20f935bf1a8c103ff5b24a">Mpu60x0_I2c::data_rates</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8h_source.html#l00039">get_sys_time_usec()</a>, <a class="el" href="imu_8h_source.html#l00042">Imu::gyro</a>, <a class="el" href="imu_8h_source.html#l00050">Imu::gyro_unscaled</a>, <a class="el" href="imu__aspirin2_8c_source.html#l00043">imu</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00226">IMU_MPU60X0_ID</a>, <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00070">imu_mpu_i2c</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00350">imu_scale_accel()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00349">imu_scale_gyro()</a>, <a class="el" href="imu__mpu60x0__i2c_8h_source.html#l00039">ImuMpu60x0::mpu</a>, <a class="el" href="mpu60x0__i2c_8c_source.html#l00082">mpu60x0_i2c_event()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00336">RATES_COPY</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00139">VECT3_COPY</a>.</p>
+<p>References <a class="el" href="imu_8h_source.html#l00039">Imu::accel</a>, <a class="el" href="imu_8h_source.html#l00047">Imu::accel_unscaled</a>, <a class="el" href="mpu60x0__i2c_8h.html#a9796614d7643cfed550006a82e6ed887">Mpu60x0_I2c::data_accel</a>, <a class="el" href="mpu60x0__i2c_8h_source.html#l00057">Mpu60x0_I2c::data_available</a>, <a class="el" href="mpu60x0__i2c_8h.html#ac0b47abeea62bb919022add748a16f47">Mpu60x0_I2c::data_rates</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">get_sys_time_usec()</a>, <a class="el" href="imu_8h_source.html#l00038">Imu::gyro</a>, <a class="el" href="imu_8h_source.html#l00046">Imu::gyro_unscaled</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00241">IMU_MPU60X0_ID</a>, <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00070">imu_mpu_i2c</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00350">imu_scale_accel()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00349">imu_scale_gyro()</a>, <a class="el" href="imu__mpu60x0__i2c_8h_source.html#l00039">ImuMpu60x0::mpu</a>, <a class="el" href="mpu60x0__i2c_8c_source.html#l00082">mpu60x0_i2c_event()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00336">RATES_COPY</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00139">VECT3_COPY</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -232,7 +215,69 @@ mpu</td>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__mpu60x0__i2c_8h_ad17d2b5d68bee1716b36c12a01cb1b31_cgraph.png" border="0" usemap="#imu__mpu60x0__i2c_8h_ad17d2b5d68bee1716b36c12a01cb1b31_cgraph" alt=""/></div>
 <map name="imu__mpu60x0__i2c_8h_ad17d2b5d68bee1716b36c12a01cb1b31_cgraph" id="imu__mpu60x0__i2c_8h_ad17d2b5d68bee1716b36c12a01cb1b31_cgraph">
-<area shape="rect" id="node2" href="linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="207,5,351,32"/><area shape="rect" id="node4" href="ahrs__gx3_8c.html#a34a2e1e2b450191b8ab1e849239810b2" title="imu_scale_accel" alt="" coords="216,56,343,83"/><area shape="rect" id="node5" href="ahrs__gx3_8c.html#a8d63b0a61c8ffe88dd15b40843b1ae1d" title="imu_scale_gyro" alt="" coords="219,107,340,133"/><area shape="rect" id="node6" href="mpu60x0__i2c_8c.html#a4929a8161b6ff6301f48f6dbcc0b449c" title="mpu60x0_i2c_event" alt="" coords="204,157,355,184"/><area shape="rect" id="node3" href="sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="430,5,567,32"/><area shape="rect" id="node7" href="mpu60x0__i2c_8c.html#a1f2cb2db1a703a3ef043e0412f84278b" title="mpu60x0_i2c_write_to_reg" alt="" coords="403,131,595,157"/><area shape="rect" id="node10" href="mpu60x0_8c.html#a564470aa2f16b3f6665b99d9141f9ae7" title="Configuration sequence called once before normal use. " alt="" coords="416,184,581,211"/><area shape="rect" id="node8" href="group__i2c.html#ga68659e03504627925829f2f12c2ec6d2" title="Submit a write only transaction. " alt="" coords="679,129,780,156"/><area shape="rect" id="node9" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="864,129,955,156"/><area shape="rect" id="node11" href="mpu60x0_8h.html#adad4e4b57f9dac456dc343b8ebdc2f6c" title="Configure I2C slaves of the MPU. " alt="" coords="643,181,816,222"/></map>
+<area shape="rect" id="node2" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="207,5,351,32"/><area shape="rect" id="node4" href="ahrs__gx3_8c.html#a34a2e1e2b450191b8ab1e849239810b2" title="imu_scale_accel" alt="" coords="216,56,343,83"/><area shape="rect" id="node5" href="ahrs__gx3_8c.html#a8d63b0a61c8ffe88dd15b40843b1ae1d" title="imu_scale_gyro" alt="" coords="219,107,340,133"/><area shape="rect" id="node6" href="mpu60x0__i2c_8c.html#a4929a8161b6ff6301f48f6dbcc0b449c" title="mpu60x0_i2c_event" alt="" coords="204,157,355,184"/><area shape="rect" id="node3" href="sys__time_8h.html#adb22f2652f04908fbc644c7274bf7273" title="usec_of_sys_time_ticks" alt="" coords="413,5,584,32"/><area shape="rect" id="node7" href="mpu60x0__i2c_8c.html#a1f2cb2db1a703a3ef043e0412f84278b" title="mpu60x0_i2c_write_to_reg" alt="" coords="403,131,595,157"/><area shape="rect" id="node10" href="mpu60x0_8c.html#a564470aa2f16b3f6665b99d9141f9ae7" title="Configuration sequence called once before normal use. " alt="" coords="416,184,581,211"/><area shape="rect" id="node8" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="679,129,780,156"/><area shape="rect" id="node9" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="864,129,955,156"/><area shape="rect" id="node11" href="mpu60x0_8h.html#aedbe7307e6e7f522300178dd964c2f3b" title="Configure I2C slaves of the MPU. " alt="" coords="643,181,816,222"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a06d943f6ded5d400bb6cbb7dec54d00f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void imu_mpu_i2c_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00072">72</a> of file <a class="el" href="imu__mpu60x0__i2c_8c_source.html">imu_mpu60x0_i2c.c</a>.</p>
+
+<p>References <a class="el" href="mpu60x0_8h_source.html#l00082">Mpu60x0Config::accel_range</a>, <a class="el" href="mpu60x0__i2c_8h_source.html#l00068">Mpu60x0_I2c::config</a>, <a class="el" href="mpu60x0_8h_source.html#l00080">Mpu60x0Config::dlpf_cfg</a>, <a class="el" href="mpu60x0_8h_source.html#l00081">Mpu60x0Config::gyro_range</a>, <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00062">IMU_MPU60X0_ACCEL_RANGE</a>, <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00057">IMU_MPU60X0_GYRO_RANGE</a>, <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00067">IMU_MPU60X0_I2C_ADDR</a>, <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00070">imu_mpu_i2c</a>, <a class="el" href="imu__mpu60x0__i2c_8h_source.html#l00039">ImuMpu60x0::mpu</a>, <a class="el" href="mpu60x0__i2c_8c_source.html#l00031">mpu60x0_i2c_init()</a>, and <a class="el" href="mpu60x0_8h_source.html#l00079">Mpu60x0Config::smplrt_div</a>.</p>
+
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="imu__mpu60x0__i2c_8h_a06d943f6ded5d400bb6cbb7dec54d00f_cgraph.png" border="0" usemap="#imu__mpu60x0__i2c_8h_a06d943f6ded5d400bb6cbb7dec54d00f_cgraph" alt=""/></div>
+<map name="imu__mpu60x0__i2c_8h_a06d943f6ded5d400bb6cbb7dec54d00f_cgraph" id="imu__mpu60x0__i2c_8h_a06d943f6ded5d400bb6cbb7dec54d00f_cgraph">
+<area shape="rect" id="node2" href="mpu60x0__i2c_8c.html#a18c3145fc5159f824a0bb9c6e327ede0" title="mpu60x0_i2c_init" alt="" coords="187,13,320,39"/><area shape="rect" id="node3" href="mpu60x0_8c.html#a18e7053e4b28374edb52fcad20e78096" title="mpu60x0_set_default\l_config" alt="" coords="368,5,528,47"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4b597e78018eec2ee4c53ba739b298c6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void imu_mpu_i2c_periodic </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00082">82</a> of file <a class="el" href="imu__mpu60x0__i2c_8c_source.html">imu_mpu60x0_i2c.c</a>.</p>
+
+<p>References <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00070">imu_mpu_i2c</a>, <a class="el" href="imu__mpu60x0__i2c_8h_source.html#l00039">ImuMpu60x0::mpu</a>, and <a class="el" href="mpu60x0__i2c_8h_source.html#l00079">mpu60x0_i2c_periodic()</a>.</p>
+
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="imu__mpu60x0__i2c_8h_a4b597e78018eec2ee4c53ba739b298c6_cgraph.png" border="0" usemap="#imu__mpu60x0__i2c_8h_a4b597e78018eec2ee4c53ba739b298c6_cgraph" alt=""/></div>
+<map name="imu__mpu60x0__i2c_8h_a4b597e78018eec2ee4c53ba739b298c6_cgraph" id="imu__mpu60x0__i2c_8h_a4b597e78018eec2ee4c53ba739b298c6_cgraph">
+<area shape="rect" id="node2" href="mpu60x0__i2c_8h.html#a4e7da06e98b7caad1f8b41e7c91ff5ea" title="convenience function: read or start configuration if not already initialized " alt="" coords="217,31,381,57"/><area shape="rect" id="node3" href="mpu60x0__i2c_8h.html#af4a339056cedb3db951f3d042a509866" title="mpu60x0_i2c_read" alt="" coords="463,5,606,32"/><area shape="rect" id="node6" href="mpu60x0__i2c_8h.html#a1b62653862375e462d147451eb41df6e" title="mpu60x0_i2c_start_configure" alt="" coords="429,56,640,83"/><area shape="rect" id="node4" href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction. " alt="" coords="958,5,1071,32"/><area shape="rect" id="node5" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="1149,31,1240,57"/><area shape="rect" id="node7" href="mpu60x0__i2c_8c.html#a1f2cb2db1a703a3ef043e0412f84278b" title="mpu60x0_i2c_write_to_reg" alt="" coords="688,56,880,83"/><area shape="rect" id="node9" href="mpu60x0_8c.html#a564470aa2f16b3f6665b99d9141f9ae7" title="Configuration sequence called once before normal use. " alt="" coords="701,111,867,137"/><area shape="rect" id="node8" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="964,56,1065,83"/><area shape="rect" id="node10" href="mpu60x0_8h.html#aedbe7307e6e7f522300178dd964c2f3b" title="Configure I2C slaves of the MPU. " alt="" coords="928,107,1101,149"/></map>
 </div>
 </p>
 
@@ -251,7 +296,7 @@ mpu</td>
 
 <p>Definition at line <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00070">70</a> of file <a class="el" href="imu__mpu60x0__i2c_8c_source.html">imu_mpu60x0_i2c.c</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00072">imu_impl_init()</a>, <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00087">imu_mpu_i2c_event()</a>, and <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00082">imu_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00087">imu_mpu_i2c_event()</a>, <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00072">imu_mpu_i2c_init()</a>, and <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00082">imu_mpu_i2c_periodic()</a>.</p>
 
 </div>
 </div>
@@ -261,7 +306,7 @@ mpu</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8b2fa0708e2db44c1b91938af97bac44.html">imu</a></li><li class="navelem"><a class="el" href="imu__mpu60x0__i2c_8h.html">imu_mpu60x0_i2c.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:05 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:13 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

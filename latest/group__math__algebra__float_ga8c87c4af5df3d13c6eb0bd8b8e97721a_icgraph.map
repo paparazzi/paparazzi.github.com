@@ -1,45 +1,51 @@
 <map id="float_quat_wrap_shortest" name="float_quat_wrap_shortest">
-<area shape="rect" id="node2" href="$stabilization__attitude__ref__quat__float_8h.html#a6246617981d4269af34291dafdd9f1e3" title="attitude_ref_quat_float\l_update" alt="" coords="240,74,407,115"/>
-<area shape="rect" id="node3" href="$stabilization__attitude__quat__float_8c.html#aae5fe27afd6cf48e9beeb6aa4c6cfc6e" title="stabilization_attitude_run" alt="" coords="459,105,641,132"/>
-<area shape="rect" id="node4" href="$group__math__algebra__float.html#ga702e4347a599d0f6c4003e347bde3825" title="Composition (multiplication) of two quaternions with normalization. " alt="" coords="246,191,401,233"/>
-<area shape="rect" id="node5" href="$group__math__algebra__float.html#ga1046209eec005141af05e1098b559487" title="Composition (multiplication) of two quaternions with normalization. " alt="" coords="238,322,409,363"/>
-<area shape="rect" id="node37" href="$group__math__algebra__float.html#ga154c3d68389b47e11fcdace73b1d75a7" title="Composition (multiplication) of two quaternions with normalization. " alt="" coords="246,257,401,298"/>
-<area shape="rect" id="node38" href="$stabilization__attitude__quat__transformations_8h.html#a875d6ee5cde39474c4ce13dd340cb262" title="quat_from_earth_cmd_f" alt="" coords="236,453,411,480"/>
-<area shape="rect" id="node42" href="$stabilization__attitude__ref__quat__float_8c.html#ab694ffc68ccd095d3641670ad7d272a7" title="reset_psi_ref" alt="" coords="271,540,375,567"/>
+<area shape="rect" id="node2" href="$stabilization__attitude__ref__quat__float_8h.html#a6246617981d4269af34291dafdd9f1e3" title="attitude_ref_quat_float\l_update" alt="" coords="240,111,407,153"/>
+<area shape="rect" id="node3" href="$stabilization__attitude__quat__float_8c.html#a18a45e70bf2fae908ece863a764f777b" title="stabilization_attitude_run" alt="" coords="459,123,641,149"/>
+<area shape="rect" id="node4" href="$group__math__algebra__float.html#ga702e4347a599d0f6c4003e347bde3825" title="Composition (multiplication) of two quaternions with normalization. " alt="" coords="246,229,401,270"/>
+<area shape="rect" id="node5" href="$group__math__algebra__float.html#ga1046209eec005141af05e1098b559487" title="Composition (multiplication) of two quaternions with normalization. " alt="" coords="238,359,409,401"/>
+<area shape="rect" id="node41" href="$group__math__algebra__float.html#ga154c3d68389b47e11fcdace73b1d75a7" title="Composition (multiplication) of two quaternions with normalization. " alt="" coords="246,294,401,335"/>
+<area shape="rect" id="node42" href="$stabilization__attitude__quat__transformations_8h.html#a875d6ee5cde39474c4ce13dd340cb262" title="quat_from_earth_cmd_f" alt="" coords="236,545,411,572"/>
+<area shape="rect" id="node48" href="$stabilization__attitude__ref__quat__float_8c.html#ab694ffc68ccd095d3641670ad7d272a7" title="reset_psi_ref" alt="" coords="271,633,375,660"/>
 <area shape="rect" id="node6" href="$ahrs__float__cmpl_8h.html#aaabc7dc5bd1a6623dfd6b6642badcb1c" title="Hard reset yaw to a heading. " alt="" coords="462,180,638,207"/>
 <area shape="rect" id="node10" href="$ahrs__float__utils_8h.html#a417a9a4e580b992140640e70992a2a01" title="ahrs_float_get_quat\l_from_accel_mag" alt="" coords="475,231,625,273"/>
-<area shape="rect" id="node26" href="$stabilization__attitude__rc__setpoint_8h.html#a9d0b7ad4c9f5c936c3f06910ac5d0185" title="Read attitude setpoint from RC as quaternion Interprets the stick positions as axes. " alt="" coords="459,322,641,363"/>
-<area shape="rect" id="node28" href="$guidance__indi_8h.html#ac2747905b79ab39b935a6f140fd21695" title="stabilization_attitude\l_set_setpoint_rp_quat_f" alt="" coords="463,387,637,429"/>
+<area shape="rect" id="node26" href="$stabilization__attitude__rc__setpoint_8h.html#a7e0d148d1e5210bb1b299163d77daa4a" title="Read attitude setpoint from RC as quaternion Interprets the stick positions as axes. " alt="" coords="459,359,641,401"/>
+<area shape="rect" id="node30" href="$guidance__indi_8h.html#a496e8f027f73bd6069de57c4f55cd747" title="stabilization_attitude\l_set_setpoint_rp_quat_f" alt="" coords="463,446,637,487"/>
 <area shape="rect" id="node7" href="$ahrs__float__cmpl_8h.html#ad866a4c74ddf87b458a8cadc7a002ef2" title="ahrs_fc_update_gps" alt="" coords="701,5,852,32"/>
-<area shape="rect" id="node8" href="$ahrs__float__cmpl__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="940,5,1007,32"/>
-<area shape="rect" id="node9" href="$ahrs__float__cmpl__wrapper_8h.html#aa47cd2e2f95362dd732bac1f275344e0" title="ahrs_fc_register" alt="" coords="1094,31,1218,57"/>
-<area shape="rect" id="node11" href="$ahrs__float__cmpl_8h.html#a0c082f03a247506e7431422f3b4190de" title="ahrs_fc_align" alt="" coords="724,56,829,83"/>
+<area shape="rect" id="node8" href="$ahrs__float__cmpl__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="956,5,1023,32"/>
+<area shape="rect" id="node9" href="$ahrs__float__cmpl__wrapper_8h.html#aa47cd2e2f95362dd732bac1f275344e0" title="ahrs_fc_register" alt="" coords="1126,56,1250,83"/>
+<area shape="rect" id="node11" href="$ahrs__float__cmpl_8h.html#a8bb0e2116dd6b4bf9a3fa0caa3f97d27" title="ahrs_fc_align" alt="" coords="724,56,829,83"/>
 <area shape="rect" id="node13" href="$ahrs__float__invariant_8h.html#a4111f176cb3e28593c2ff388169a86f9" title="ahrs_float_invariant\l_align" alt="" coords="703,107,850,149"/>
 <area shape="rect" id="node16" href="$ahrs__int__utils_8h.html#a8ea9794c15ad84b2a289385d4a431f60" title="ahrs_int_get_quat_from\l_accel_mag" alt="" coords="689,173,864,214"/>
-<area shape="rect" id="node20" href="$ahrs__float__mlkf_8h.html#aa79af0a33926442fbcc52fc761f695be" title="ahrs_mlkf_align" alt="" coords="716,239,837,265"/>
+<area shape="rect" id="node20" href="$ahrs__float__mlkf_8h.html#a65cd8d47048c1cdc4aced2e5a4ce79e2" title="ahrs_mlkf_align" alt="" coords="716,239,837,265"/>
 <area shape="rect" id="node23" href="$ins__float__invariant_8h.html#a20f38b74cafe0e2f82412fe7a66dc806" title="ins_float_invariant\l_align" alt="" coords="708,290,845,331"/>
-<area shape="rect" id="node12" href="$ahrs__float__cmpl__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="930,56,1017,83"/>
-<area shape="rect" id="node14" href="$ahrs__float__invariant__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="930,115,1017,141"/>
-<area shape="rect" id="node15" href="$ahrs__float__invariant__wrapper_8h.html#af929b6f9cb8695819d29bdacca1f24f0" title="ahrs_float_invariant\l_register" alt="" coords="1083,107,1229,149"/>
-<area shape="rect" id="node17" href="$ahrs__int__cmpl__quat_8h.html#acd78502a255cf0af0f12089b3145837b" title="ahrs_icq_align" alt="" coords="917,180,1029,207"/>
-<area shape="rect" id="node18" href="$ahrs__int__cmpl__quat__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="1113,180,1199,207"/>
-<area shape="rect" id="node19" href="$ahrs__int__cmpl__quat__wrapper_8h.html#af71a2cd8d6fabc9373e99e2aeddbbb89" title="ahrs_icq_register" alt="" coords="1277,180,1408,207"/>
-<area shape="rect" id="node21" href="$ahrs__float__mlkf__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="930,239,1017,265"/>
-<area shape="rect" id="node22" href="$ahrs__float__mlkf__wrapper_8h.html#adf9165ad7440f11e3dae35391f5844d6" title="ahrs_mlkf_register" alt="" coords="1086,239,1226,265"/>
-<area shape="rect" id="node24" href="$ins__float__invariant__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="930,297,1017,324"/>
-<area shape="rect" id="node25" href="$ins__float__invariant__wrapper_8h.html#acbc99bce5ffb373e21280ebaad9faa37" title="ins_float_invariant\l_register" alt="" coords="1087,290,1225,331"/>
-<area shape="rect" id="node27" href="$stabilization__attitude__quat__float_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc" title="stabilization_attitude\l_read_rc" alt="" coords="699,355,854,397"/>
-<area shape="rect" id="node29" href="$guidance__indi_8h.html#a24d1024bbd8da21b6c70317fda39d929" title="guidance_indi_run" alt="" coords="708,421,845,448"/>
-<area shape="rect" id="node30" href="$guidance__h_8h.html#ac4cf6da90a4278b4d0b2e4f227b33f2c" title="guidance_h_run" alt="" coords="912,421,1035,448"/>
-<area shape="rect" id="node31" href="$rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="1089,421,1223,448"/>
-<area shape="rect" id="node32" href="$rotorcraft_2main__fbw_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="1287,421,1398,448"/>
-<area shape="rect" id="node33" href="$rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="1456,421,1619,448"/>
-<area shape="rect" id="node34" href="$fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1679,396,1733,423"/>
-<area shape="rect" id="node35" href="$main__chibios__libopencm3_8c.html#ad648a546fe66cd5f9328f33221a40c64" title="pprz_thd" alt="" coords="1667,447,1745,473"/>
-<area shape="rect" id="node36" href="$main__chibios__libopencm3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1793,447,1848,473"/>
-<area shape="rect" id="node39" href="$stabilization__attitude__quat__transformations_8h.html#acfb3bfa8af4aebad848717cd26aa78ee" title="quat_from_earth_cmd_i" alt="" coords="463,453,637,480"/>
-<area shape="rect" id="node41" href="$stabilization__attitude__quat__float_8c.html#ada3ef183c206d08fd0a902adc118f542" title="stabilization_attitude\l_set_earth_cmd_i" alt="" coords="473,505,627,546"/>
-<area shape="rect" id="node40" href="$stabilization__attitude__quat__indi_8c.html#ada3ef183c206d08fd0a902adc118f542" title="stabilization_attitude\l_set_earth_cmd_i" alt="" coords="699,473,854,514"/>
-<area shape="rect" id="node43" href="$stabilization__attitude__ref__quat__float_8h.html#a64a18d12f7fbb46c79790b1f141204e2" title="attitude_ref_quat_float\l_enter" alt="" coords="467,570,633,611"/>
-<area shape="rect" id="node44" href="$stabilization__attitude__quat__float_8c.html#a23f862ca823e6fd23fc9c111178be077" title="stabilization_attitude\l_enter" alt="" coords="699,570,854,611"/>
+<area shape="rect" id="node12" href="$ahrs__float__cmpl__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="946,56,1033,83"/>
+<area shape="rect" id="node14" href="$ahrs__float__invariant__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="946,115,1033,141"/>
+<area shape="rect" id="node15" href="$ahrs__float__invariant__wrapper_8h.html#af929b6f9cb8695819d29bdacca1f24f0" title="ahrs_float_invariant\l_register" alt="" coords="1115,107,1261,149"/>
+<area shape="rect" id="node17" href="$ahrs__int__cmpl__quat_8h.html#a00670e57757ac4865d6bbd63a6ad4a73" title="ahrs_icq_align" alt="" coords="933,180,1045,207"/>
+<area shape="rect" id="node18" href="$ahrs__int__cmpl__quat__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="1145,180,1231,207"/>
+<area shape="rect" id="node19" href="$ahrs__int__cmpl__quat__wrapper_8h.html#af71a2cd8d6fabc9373e99e2aeddbbb89" title="ahrs_icq_register" alt="" coords="1309,180,1440,207"/>
+<area shape="rect" id="node21" href="$ahrs__float__mlkf__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="946,239,1033,265"/>
+<area shape="rect" id="node22" href="$ahrs__float__mlkf__wrapper_8h.html#adf9165ad7440f11e3dae35391f5844d6" title="ahrs_mlkf_register" alt="" coords="1118,239,1258,265"/>
+<area shape="rect" id="node24" href="$ins__float__invariant__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="946,297,1033,324"/>
+<area shape="rect" id="node25" href="$ins__float__invariant__wrapper_8h.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title="ins_float_invariant\l_wrapper_init" alt="" coords="1119,290,1257,331"/>
+<area shape="rect" id="node27" href="$stabilization__attitude__heli__indi_8c.html#ad17347abf36f7dfc4abb0218f10b5f09" title="stabilization_attitude\l_read_rc" alt="" coords="699,355,854,397"/>
+<area shape="rect" id="node28" href="$stabilization__indi_8h.html#a12143cafcad8c2db6f07b2cc072851d5" title="stabilization_indi\l_read_rc" alt="" coords="713,421,840,462"/>
+<area shape="rect" id="node29" href="$stabilization__attitude__quat__indi_8c.html#ad17347abf36f7dfc4abb0218f10b5f09" title="stabilization_attitude\l_read_rc" alt="" coords="912,421,1067,462"/>
+<area shape="rect" id="node31" href="$guidance__indi_8h.html#ad8b44d9c75c8bdabbe9e3521c96d503b" title="guidance_indi_run" alt="" coords="708,487,845,513"/>
+<area shape="rect" id="node32" href="$guidance__h_8h.html#afff2f6a359638c74d5d1051c3edfa554" title="guidance_h_run" alt="" coords="928,487,1051,513"/>
+<area shape="rect" id="node33" href="$rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="1121,487,1255,513"/>
+<area shape="rect" id="node34" href="$rotorcraft_2main__fbw_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="1319,487,1430,513"/>
+<area shape="rect" id="node35" href="$rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="1488,487,1651,513"/>
+<area shape="rect" id="node36" href="$fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1757,411,1811,437"/>
+<area shape="rect" id="node37" href="$nps__autopilot__fixedwing_8c.html#a12870aaa609d4860004be3cec4c8cf2a" title="nps_autopilot_run_step" alt="" coords="1699,461,1869,488"/>
+<area shape="rect" id="node38" href="$main__chibios_8c.html#a1bd1ec0fdc597d88ee659889cda25c0a" title="thd_ap" alt="" coords="1751,512,1817,539"/>
+<area shape="rect" id="node40" href="$main__chibios_8c.html#a4042bcab9578175e00c82adcc2b251f8" title="thd_fbw" alt="" coords="1749,563,1819,589"/>
+<area shape="rect" id="node39" href="$main__chibios_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function. " alt="" coords="1917,537,1972,564"/>
+<area shape="rect" id="node43" href="$stabilization__attitude__quat__transformations_8h.html#acfb3bfa8af4aebad848717cd26aa78ee" title="quat_from_earth_cmd_i" alt="" coords="463,545,637,572"/>
+<area shape="rect" id="node47" href="$stabilization__attitude__quat__float_8c.html#ada3ef183c206d08fd0a902adc118f542" title="stabilization_attitude\l_set_earth_cmd_i" alt="" coords="473,597,627,638"/>
+<area shape="rect" id="node44" href="$stabilization__attitude__heli__indi_8c.html#ada3ef183c206d08fd0a902adc118f542" title="stabilization_attitude\l_set_earth_cmd_i" alt="" coords="699,538,854,579"/>
+<area shape="rect" id="node45" href="$stabilization__indi_8h.html#a487bd4ac66f844d9d1adfb696f950604" title="stabilization_indi\l_set_earth_cmd_i" alt="" coords="709,603,844,645"/>
+<area shape="rect" id="node46" href="$stabilization__attitude__quat__indi_8c.html#ada3ef183c206d08fd0a902adc118f542" title="stabilization_attitude\l_set_earth_cmd_i" alt="" coords="912,603,1067,645"/>
+<area shape="rect" id="node49" href="$stabilization__attitude__ref__quat__float_8h.html#a64a18d12f7fbb46c79790b1f141204e2" title="attitude_ref_quat_float\l_enter" alt="" coords="467,665,633,706"/>
+<area shape="rect" id="node50" href="$stabilization__attitude__quat__float_8c.html#a23f862ca823e6fd23fc9c111178be077" title="stabilization_attitude\l_enter" alt="" coords="699,669,854,710"/>
 </map>

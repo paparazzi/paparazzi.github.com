@@ -13,5 +13,5 @@ var stabilization__adaptive_8h =
     [ "h_ctl_roll_Kffa", "stabilization__adaptive_8h.html#a42724178b90d872c2fbd93bbcabdedad", null ],
     [ "h_ctl_roll_Kffd", "stabilization__adaptive_8h.html#ac16772ff39b493dc04a031f46a8b75df", null ],
     [ "h_ctl_roll_sum_err", "stabilization__adaptive_8h.html#a27446f9f99d35f2d1e8e180ffd9f1f16", null ],
-    [ "use_airspeed_ratio", "stabilization__adaptive_8h.html#aa3cf0ada6c21e17a8269616f13439532", null ]
+    [ "use_airspeed_ratio", "stabilization__adaptive_8h.html#a184a150e98a139a3e0e5cc6e9bc340a0", null ]
 ];

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -107,16 +107,15 @@ $(document).ready(function(){initNavTree('video__device_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">video_device.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>v4l2 video device settings interface Works on Linux platforms  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;std.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="v4l2_8h_source.html">modules/computer_vision/lib/v4l/v4l2.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="inttypes_8h_source.html">inttypes.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="image_8h_source.html">modules/computer_vision/lib/vision/image.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for video_device.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -124,7 +123,7 @@ $(document).ready(function(){initNavTree('video__device_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="video__device_8h__incl.png" border="0" usemap="#sw_2airborne_2peripherals_2video__device_8h" alt=""/></div>
 <map name="sw_2airborne_2peripherals_2video__device_8h" id="sw_2airborne_2peripherals_2video__device_8h">
-<area shape="rect" id="node3" href="v4l2_8h.html" title="Capture images from a V4L2 device (Video for Linux 2) " alt="" coords="117,95,303,136"/><area shape="rect" id="node7" href="image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="346,184,533,225"/></map>
+<area shape="rect" id="node3" href="inttypes_8h.html" title="inttypes.h" alt="" coords="111,102,197,129"/><area shape="rect" id="node4" href="image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="221,95,407,136"/></map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -133,27 +132,72 @@ $(document).ready(function(){initNavTree('video__device_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="video__device_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2peripherals_2video__device_8hdep" alt=""/></div>
 <map name="sw_2airborne_2peripherals_2video__device_8hdep" id="sw_2airborne_2peripherals_2video__device_8hdep">
-<area shape="rect" id="node2" href="ardrone_2board_8c.html" title="ARDrone2 specific board initialization function. " alt="" coords="5,102,148,143"/><area shape="rect" id="node3" href="ardrone2_8h.html" title="sw/airborne/boards\l/ardrone2.h" alt="" coords="172,102,315,143"/><area shape="rect" id="node4" href="bebop_8h.html" title="sw/airborne/boards\l/bebop.h" alt="" coords="339,102,481,143"/><area shape="rect" id="node6" href="video__thread_8c.html" title="sw/airborne/modules\l/computer_vision/video\l_thread.c" alt="" coords="505,95,675,151"/><area shape="rect" id="node5" href="video_8c.html" title="Initialization of the video specific parts of the Bebop. " alt="" coords="339,199,481,240"/></map>
+<area shape="rect" id="node2" href="ardrone_2board_8c.html" title="ARDrone2 specific board initialization function. " alt="" coords="5,95,148,136"/><area shape="rect" id="node3" href="ardrone2_8h.html" title="sw/airborne/boards\l/ardrone2.h" alt="" coords="172,95,315,136"/><area shape="rect" id="node4" href="bebop_8h.html" title="sw/airborne/boards\l/bebop.h" alt="" coords="339,95,481,136"/><area shape="rect" id="node8" href="cv_8h.html" title="Computer vision framework for onboard processing. " alt="" coords="1775,95,1935,136"/><area shape="rect" id="node5" href="bebop_2board_8c.html" title="Bebop specific board initialization function. " alt="" coords="88,191,231,233"/><area shape="rect" id="node6" href="mt9f002_8c.html" title="Initialization of MT9F002 chip and options to change settings. " alt="" coords="255,191,397,233"/><area shape="rect" id="node7" href="mt9v117_8c.html" title="Initialization of MT9V117 chip and options to change settings. " alt="" coords="421,191,564,233"/><area shape="rect" id="node9" href="colorfilter_8h.html" title="sw/airborne/modules\l/computer_vision/colorfilter.h" alt="" coords="589,191,794,233"/><area shape="rect" id="node12" href="cv_8c.html" title="Computer vision framework for onboard processing. " alt="" coords="819,191,977,233"/><area shape="rect" id="node13" href="cv__blob__locator_8c.html" title="sw/airborne/modules\l/computer_vision/cv\l_blob_locator.c" alt="" coords="1002,184,1157,240"/><area shape="rect" id="node14" href="cv__opencvdemo_8c.html" title="sw/airborne/modules\l/computer_vision/cv\l_opencvdemo.c" alt="" coords="1181,184,1335,240"/><area shape="rect" id="node15" href="detect__contour_8c.html" title="sw/airborne/modules\l/computer_vision/detect\l_contour.c" alt="" coords="1359,184,1535,240"/><area shape="rect" id="node16" href="detect__window_8c.html" title="sw/airborne/modules\l/computer_vision/detect\l_window.c" alt="" coords="1559,184,1735,240"/><area shape="rect" id="node17" href="opticflow__module_8c.html" title="optical&#45;flow based hovering for Parrot AR.Drone 2.0 " alt="" coords="1760,184,1951,240"/><area shape="rect" id="node18" href="qr__code_8c.html" title="sw/airborne/modules\l/computer_vision/qrcode\l/qr_code.c" alt="" coords="1975,184,2154,240"/><area shape="rect" id="node19" href="textons_8c.html" title="Takes an image and represents the texture and colors in the image with a texton histogram. " alt="" coords="2178,191,2373,233"/><area shape="rect" id="node20" href="video__capture_8c.html" title="sw/airborne/modules\l/computer_vision/video\l_capture.c" alt="" coords="2397,184,2567,240"/><area shape="rect" id="node21" href="video__thread_8h.html" title="Start a Video thread and grab images. " alt="" coords="2591,184,2760,240"/><area shape="rect" id="node23" href="video__thread__nps_8c.html" title="sw/airborne/modules\l/computer_vision/video\l_thread_nps.c" alt="" coords="2713,288,2883,344"/><area shape="rect" id="node24" href="video__usb__logger_8c.html" title="sw/airborne/modules\l/computer_vision/video\l_usb_logger.c" alt="" coords="2836,184,3005,240"/><area shape="rect" id="node25" href="viewvideo_8c.html" title="Get live images from a RTP/UDP stream and save pictures on internal memory. " alt="" coords="3029,191,3236,233"/><area shape="rect" id="node10" href="colorfilter_8c.html" title="sw/airborne/modules\l/computer_vision/colorfilter.c" alt="" coords="483,295,687,337"/><area shape="rect" id="node11" href="orange__avoider_8c.html" title="sw/airborne/modules\l/orange_avoider/orange\l_avoider.c" alt="" coords="711,288,885,344"/><area shape="rect" id="node22" href="video__thread_8c.html" title="sw/airborne/modules\l/computer_vision/video\l_thread.c" alt="" coords="2520,288,2689,344"/></map>
 </div>
 </div>
 <p><a href="video__device_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:structvideo__thread__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video__device_8h.html#structvideo__thread__t">video_thread_t</a></td></tr>
+<tr class="separator:structvideo__thread__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structvideo__config__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video__device_8h.html#structvideo__config__t">video_config_t</a></td></tr>
 <tr class="memdesc:structvideo__config__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">V4L2 device settings.  <a href="video__device_8h.html#structvideo__config__t">More...</a><br /></td></tr>
 <tr class="separator:structvideo__config__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a330c255582dde51ceef02d389f7c5723"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video__device_8h.html#a330c255582dde51ceef02d389f7c5723">VIDEO_FILTER_DEBAYER</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="memitem:a330c255582dde51ceef02d389f7c5723"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video__device_8h.html#a330c255582dde51ceef02d389f7c5723">VIDEO_FILTER_DEBAYER</a>&#160;&#160;&#160;(0x1 &lt;&lt; 0)</td></tr>
+<tr class="memdesc:a330c255582dde51ceef02d389f7c5723"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable software debayer.  <a href="#a330c255582dde51ceef02d389f7c5723">More...</a><br /></td></tr>
 <tr class="separator:a330c255582dde51ceef02d389f7c5723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d26d9607fc8183916d4a0648dd0c634"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video__device_8h.html#a3d26d9607fc8183916d4a0648dd0c634">VIDEO_FILTER_ISP</a>&#160;&#160;&#160;(0x1 &lt;&lt; 1)</td></tr>
+<tr class="memdesc:a3d26d9607fc8183916d4a0648dd0c634"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable ISP.  <a href="#a3d26d9607fc8183916d4a0648dd0c634">More...</a><br /></td></tr>
+<tr class="separator:a3d26d9607fc8183916d4a0648dd0c634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:afbd41528c39b7e21eeeee5554be74a29"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="video__device_8h.html#structvideo__config__t">video_config_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video__device_8h.html#afbd41528c39b7e21eeeee5554be74a29">dummy_camera</a></td></tr>
+<tr class="separator:afbd41528c39b7e21eeeee5554be74a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>v4l2 video device settings interface Works on Linux platforms </p>
+<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="structvideo__thread__t" id="structvideo__thread__t"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct video_thread_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p>Definition at line <a class="el" href="video__device_8h_source.html#l00038">38</a> of file <a class="el" href="video__device_8h_source.html">video_device.h</a>.</p>
+</div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for video_thread_t:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="structvideo__thread__t__coll__graph.png" border="0" usemap="#video__thread__t_coll__map" alt="Collaboration graph"/></div>
+<map name="video__thread__t_coll__map" id="video__thread__t_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ae6e8852d59271631ee506533b63350c1"></a>struct <a class="el" href="v4l2_8h.html#structv4l2__device">v4l2_device</a> *</td>
+<td class="fieldname">
+dev</td>
+<td class="fielddoc">
+The V4L2 device that is used for the video stream. </td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a504eeaab49bcdc3fd10bfb7c323acd80"></a>volatile bool</td>
+<td class="fieldname">
+is_running</td>
+<td class="fielddoc">
+When the device is running. </td></tr>
+</table>
 
-<p>Definition in file <a class="el" href="video__device_8h_source.html">video_device.h</a>.</p>
-</div><hr/><h2 class="groupheader">Data Structure Documentation</h2>
+</div>
+</div>
 <a name="structvideo__config__t" id="structvideo__config__t"></a>
 <div class="memitem">
 <div class="memproto">
@@ -165,8 +209,17 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <div class="textblock"><p>V4L2 device settings. </p>
 
-<p>Definition at line <a class="el" href="video__device_8h_source.html#l00037">37</a> of file <a class="el" href="video__device_8h_source.html">video_device.h</a>.</p>
-</div><table class="fieldtable">
+<p>Definition at line <a class="el" href="video__device_8h_source.html#l00044">44</a> of file <a class="el" href="video__device_8h_source.html">video_device.h</a>.</p>
+</div><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Collaboration diagram for video_config_t:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="structvideo__config__t__coll__graph.png" border="0" usemap="#video__config__t_coll__map" alt="Collaboration graph"/></div>
+<map name="video__config__t_coll__map" id="video__config__t_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
 <a class="anchor" id="ab7d8e2731b25c538b5826e6a5d882f20"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
@@ -174,6 +227,18 @@ Macros</h2></td></tr>
 buf_cnt</td>
 <td class="fielddoc">
 Amount of V4L2 video device buffers. </td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ab60466e7549f817d9a0f2e30b3c6762e"></a>struct <a class="el" href="image_8h.html#structcrop__t">crop_t</a></td>
+<td class="fieldname">
+crop</td>
+<td class="fielddoc">
+Cropped area definition. </td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ac6e8e8ed1336fa93b7494d1aa8cb7775"></a>struct <a class="el" href="cv_8h.html#structvideo__listener">video_listener</a> *</td>
+<td class="fieldname">
+cv_listener</td>
+<td class="fielddoc">
+The first computer vision listener in the linked list for this video device. </td></tr>
 <tr><td class="fieldtype">
 <a class="anchor" id="ae5f0b0d81df0d1915cb02c001ed78e61"></a>char *</td>
 <td class="fieldname">
@@ -193,11 +258,29 @@ format</td>
 <td class="fielddoc">
 Video format. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="ae8e1ebc9a6ce8292815eb9dacd368f1b"></a>int</td>
+<a class="anchor" id="ab10620da4dfb942905b1ad28d7c844e1"></a>int</td>
 <td class="fieldname">
-h</td>
+fps</td>
 <td class="fielddoc">
-Height. </td></tr>
+Target FPS. </td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ae2ef10126f2c9dbdac9cf5ea3bacf794"></a>struct <a class="el" href="image_8h.html#structimg__size__t">img_size_t</a></td>
+<td class="fieldname">
+output_size</td>
+<td class="fielddoc">
+Output image size. </td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aefdcc0d6a040bfdb68ac09242872be88"></a>struct <a class="el" href="image_8h.html#structimg__size__t">img_size_t</a></td>
+<td class="fieldname">
+sensor_size</td>
+<td class="fielddoc">
+Original sensor size. </td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a99aa438348a6f10c4fbdb466e16b44cd"></a><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></td>
+<td class="fieldname">
+subdev_format</td>
+<td class="fielddoc">
+Subdevice video format. </td></tr>
 <tr><td class="fieldtype">
 <a class="anchor" id="a379440668a1177afeb173215961befa6"></a>char *</td>
 <td class="fieldname">
@@ -205,11 +288,11 @@ subdev_name</td>
 <td class="fielddoc">
 path to sub device </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a6c2ac3821f7eed5b722e6a42451e2a48"></a>int</td>
+<a class="anchor" id="a2c5f2a0cf3ddc41ef822800c51218804"></a>struct <a class="el" href="video__device_8h.html#structvideo__thread__t">video_thread_t</a></td>
 <td class="fieldname">
-w</td>
+thread</td>
 <td class="fielddoc">
-Width. </td></tr>
+Information about the thread this camera is running on. </td></tr>
 </table>
 
 </div>
@@ -220,14 +303,47 @@ Width. </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define VIDEO_FILTER_DEBAYER&#160;&#160;&#160;0x01</td>
+          <td class="memname">#define VIDEO_FILTER_DEBAYER&#160;&#160;&#160;(0x1 &lt;&lt; 0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Enable software debayer. </p>
+
 <p>Definition at line <a class="el" href="video__device_8h_source.html#l00034">34</a> of file <a class="el" href="video__device_8h_source.html">video_device.h</a>.</p>
 
-<p>Referenced by <a class="el" href="video__thread_8c_source.html#l00145">video_thread_function()</a>.</p>
+<p>Referenced by <a class="el" href="video__thread_8c_source.html#l00083">video_thread_function()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3d26d9607fc8183916d4a0648dd0c634"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VIDEO_FILTER_ISP&#160;&#160;&#160;(0x1 &lt;&lt; 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable ISP. </p>
+
+<p>Definition at line <a class="el" href="video__device_8h_source.html#l00035">35</a> of file <a class="el" href="video__device_8h_source.html">video_device.h</a>.</p>
+
+<p>Referenced by <a class="el" href="video__thread_8c_source.html#l00083">video_thread_function()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="afbd41528c39b7e21eeeee5554be74a29"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="video__device_8h.html#structvideo__config__t">video_config_t</a> dummy_camera</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -237,7 +353,7 @@ Width. </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="video__device_8h.html">video_device.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:00 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:08 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

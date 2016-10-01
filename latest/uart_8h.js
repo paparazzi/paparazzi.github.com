@@ -5,6 +5,7 @@ var uart_8h =
       [ "dev", "uart_8h.html#a646cfd0312fb4e9a1e55ce2594049970", null ],
       [ "device", "uart_8h.html#a8a2d00ae64471cbbc2cfce65bbeffe09", null ],
       [ "fe_err", "uart_8h.html#ab5a088408a0e4d3af31921e2eb1a7811", null ],
+      [ "init_struct", "uart_8h.html#a16fbff251756e2bf706d178e89a704c4", null ],
       [ "ne_err", "uart_8h.html#aa99651ddd6c70ca5aa2d5c6ec0b05cfd", null ],
       [ "ore", "uart_8h.html#af4fa7964e51b251d0fe1b020b3f9c853", null ],
       [ "reg_addr", "uart_8h.html#af4dc75629753b4166767a7a0b44e8828", null ],
@@ -14,7 +15,7 @@ var uart_8h =
       [ "tx_buf", "uart_8h.html#a9dc10b9a1a2d379b6b30bec6d26a9c45", null ],
       [ "tx_extract_idx", "uart_8h.html#a24b5a50167052cd5e744eb381208f658", null ],
       [ "tx_insert_idx", "uart_8h.html#aed710779dfbc59752a37be7ffbaa15a2", null ],
-      [ "tx_running", "uart_8h.html#a926e35297d3514a88e10efae438b3d54", null ]
+      [ "tx_running", "uart_8h.html#a55507cdaf794815a52c7ae7b87588c9a", null ]
     ] ],
     [ "UART_DEV_NAME_SIZE", "uart_8h.html#a3051c7589823b3d87a8942c960ccada6", null ],
     [ "UART_RX_BUFFER_SIZE", "uart_8h.html#a5bdd6772c246436bb14377095de79b31", null ],
@@ -28,11 +29,13 @@ var uart_8h =
     [ "USTOP_2", "uart_8h.html#a9e425ef705476c0a778712761281a232", null ],
     [ "uart_arch_init", "uart_8h.html#a7e440684a8b6a4088b2f1d5b4dc47587", null ],
     [ "uart_char_available", "uart_8h.html#abd0dcae4715bc91bdf3369785a9b6c87", null ],
-    [ "uart_check_free_space", "uart_8h.html#abd3d741fab97eedc4b48bbda25b74e50", null ],
+    [ "uart_check_free_space", "uart_8h.html#a0e5faeb6fba6c9662707c445a2e27652", null ],
     [ "uart_getch", "uart_8h.html#adb9a60ec94a31a08e6454ccf64f24039", null ],
     [ "uart_periph_init", "uart_8h.html#a43baf084a9bcc968ef00790e25becbb7", null ],
     [ "uart_periph_set_baudrate", "uart_8h.html#a3eff2a82ddc632e5626c04ad4e717e3b", null ],
     [ "uart_periph_set_bits_stop_parity", "uart_8h.html#a0cdaf8266fcef9b52d422621b36413d6", null ],
-    [ "uart_periph_set_mode", "uart_8h.html#a7254c3f995da1709da3723472d778a73", null ],
-    [ "uart_put_byte", "uart_8h.html#a9f05d3eb95c183bef5415a72953be125", null ]
+    [ "uart_periph_set_mode", "uart_8h.html#a39c8427d611bb45f1d3ba4e5ecc6654e", null ],
+    [ "uart_put_buffer", "uart_8h.html#aafe5af02ef8bf915fcd76d39896174a3", null ],
+    [ "uart_put_byte", "uart_8h.html#a47d332312effc31e88e688471daf02a5", null ],
+    [ "uart_send_message", "uart_8h.html#a0aa8ed2f93f482313707afd606c4da12", null ]
 ];

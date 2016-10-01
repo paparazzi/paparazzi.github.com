@@ -22,8 +22,9 @@ var imu__drotek__10dof__v2_8h =
     [ "IMU_GYRO_R_SENS", "imu__drotek__10dof__v2_8h.html#af57decce9e96b0726832a410273223f3", null ],
     [ "IMU_GYRO_R_SENS_DEN", "imu__drotek__10dof__v2_8h.html#aecb2f43265d239ba7661dfcc8523123e", null ],
     [ "IMU_GYRO_R_SENS_NUM", "imu__drotek__10dof__v2_8h.html#a6f808c71190e714287442af3bb7008b3", null ],
-    [ "ImuEvent", "imu__drotek__10dof__v2_8h.html#a38f1122c1ee0701562b490c6e1b60609", null ],
-    [ "imu_drotek2_configure_mag_slave", "imu__drotek__10dof__v2_8h.html#a4ff8194f50bedf14d3d6bf7a4d9efd9c", null ],
+    [ "imu_drotek2_configure_mag_slave", "imu__drotek__10dof__v2_8h.html#aa6fe8a1d331fefd7ce125c55154d14c5", null ],
     [ "imu_drotek2_event", "imu__drotek__10dof__v2_8h.html#a740371769417e71440eda6835e29a667", null ],
+    [ "imu_drotek2_init", "imu__drotek__10dof__v2_8h.html#ab4e104d71e6fd268fac6b2a1b383be26", null ],
+    [ "imu_drotek2_periodic", "imu__drotek__10dof__v2_8h.html#a75ebb1ba7fa2cbff205416d5136dbf0c", null ],
     [ "imu_drotek2", "imu__drotek__10dof__v2_8h.html#aacdafe50c6db4a6990596931baa40d3f", null ]
 ];

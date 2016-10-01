@@ -1,16 +1,19 @@
 var searchData=
 [
-  ['pcf_5fidle',['PCF_IDLE',['../wind__gfi_8h.html#a28af1f1f55de3fbdf348c7f76dee2ccca738254db5cfe4ab5ef5afbf0fe551902',1,'wind_gfi.h']]],
-  ['pcf_5fread_5flsb',['PCF_READ_LSB',['../wind__gfi_8h.html#a28af1f1f55de3fbdf348c7f76dee2cccaf0bd450fa941fc16900c74c632e1c123',1,'wind_gfi.h']]],
-  ['pcf_5fread_5fmsb',['PCF_READ_MSB',['../wind__gfi_8h.html#a28af1f1f55de3fbdf348c7f76dee2cccaa39c141dd8166adceade3fac18518440',1,'wind_gfi.h']]],
-  ['pcf_5fset_5foe_5flsb',['PCF_SET_OE_LSB',['../wind__gfi_8h.html#a28af1f1f55de3fbdf348c7f76dee2cccae18d598e058ba2e7a1a075c503333f08',1,'wind_gfi.h']]],
-  ['pcf_5fset_5foe_5fmsb',['PCF_SET_OE_MSB',['../wind__gfi_8h.html#a28af1f1f55de3fbdf348c7f76dee2ccca301fd9f055e75f63c4a98b4852e9c313',1,'wind_gfi.h']]],
-  ['pingpong',['PINGPONG',['../guidance__OA_8h.html#a4dac0a956aca3da3fa670abc875414d2a5ba4f80cb74887984b0007850a23d6e2',1,'guidance_OA.h']]],
-  ['pitch',['PITCH',['../actuators__asctec_8h.html#a82d0d12190beb7d9db322455bf6a4d1daa4ed247aa19723caf868d2b2dd5cf4ff',1,'actuators_asctec.h']]],
-  ['pot_5fheading',['POT_HEADING',['../guidance__OA_8h.html#a4dac0a956aca3da3fa670abc875414d2aa93f4f82cd7469ed71867b865b38374e',1,'guidance_OA.h']]],
-  ['pot_5fvel',['POT_VEL',['../guidance__OA_8h.html#a4dac0a956aca3da3fa670abc875414d2a7bfca4b28c23467d1b82c256f1545e30',1,'guidance_OA.h']]],
-  ['prepend',['Prepend',['../mission__common_8h.html#add225f937fa97e4f76900b7f5e73872eaff00766678e17c5de13a40452c27d802',1,'mission_common.h']]],
-  ['pwm_5finput1',['PWM_INPUT1',['../lpc21_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a32b12a036871c7af7e058b004d913c4e',1,'PWM_INPUT1():&#160;pwm_input_arch.h'],['../stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a32b12a036871c7af7e058b004d913c4e',1,'PWM_INPUT1():&#160;pwm_input_arch.h']]],
-  ['pwm_5finput2',['PWM_INPUT2',['../lpc21_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a9111b96e9eb0797d88775081ee4fd89a',1,'PWM_INPUT2():&#160;pwm_input_arch.h'],['../stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a9111b96e9eb0797d88775081ee4fd89a',1,'PWM_INPUT2():&#160;pwm_input_arch.h']]],
-  ['pwm_5finput_5fnb',['PWM_INPUT_NB',['../lpc21_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a64615989b58d9c05b43316402ec94502',1,'PWM_INPUT_NB():&#160;pwm_input_arch.h'],['../stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a64615989b58d9c05b43316402ec94502',1,'PWM_INPUT_NB():&#160;pwm_input_arch.h']]]
+  ['oc1',['OC1',['../nav_8h.html#a6b504fc3b9e256669f3d93dff3372bcfa5f636214b976745986c087710a2dde17',1,'OC1():&#160;nav.h'],['../navigation_8h.html#a6b504fc3b9e256669f3d93dff3372bcfa5f636214b976745986c087710a2dde17',1,'OC1():&#160;navigation.h']]],
+  ['oc2',['OC2',['../nav_8h.html#a6b504fc3b9e256669f3d93dff3372bcfa06833c96276f88424e14772ee87ac437',1,'OC2():&#160;nav.h'],['../navigation_8h.html#a6b504fc3b9e256669f3d93dff3372bcfa06833c96276f88424e14772ee87ac437',1,'OC2():&#160;navigation.h']]],
+  ['or12',['OR12',['../nav_8h.html#a6b504fc3b9e256669f3d93dff3372bcfa65e326a040572bfc5a61c079d8bfca25',1,'OR12():&#160;nav.h'],['../navigation_8h.html#a6b504fc3b9e256669f3d93dff3372bcfa65e326a040572bfc5a61c079d8bfca25',1,'OR12():&#160;navigation.h']]],
+  ['or21',['OR21',['../nav_8h.html#a6b504fc3b9e256669f3d93dff3372bcfae5d99807c6a564838a7fed8239ef311b',1,'OR21():&#160;nav.h'],['../navigation_8h.html#a6b504fc3b9e256669f3d93dff3372bcfae5d99807c6a564838a7fed8239ef311b',1,'OR21():&#160;navigation.h']]],
+  ['osd_5ffinished',['OSD_FINISHED',['../max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea557065ef84f4f0f26c25fcd6daecca8a',1,'max7456.c']]],
+  ['osd_5fidle',['OSD_IDLE',['../max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea8aba0c2d23308a2639371e18ddf12dbe',1,'max7456.c']]],
+  ['osd_5finit1',['OSD_INIT1',['../max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea985f8973f3e0e452c4fdbd42690fc39a',1,'max7456.c']]],
+  ['osd_5finit2',['OSD_INIT2',['../max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea12a2a6771d7377cd51a2c8d76bc84019',1,'max7456.c']]],
+  ['osd_5finit3',['OSD_INIT3',['../max7456_8c.html#a9df37033e964a8027eab3e650e7aea6eace9243eff89a7026ae48e576418f61a5',1,'max7456.c']]],
+  ['osd_5finit4',['OSD_INIT4',['../max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea7fa9ba78dd17378ea9ec7e3aebedaa27',1,'max7456.c']]],
+  ['osd_5fread_5fstatus',['OSD_READ_STATUS',['../max7456_8c.html#a9df37033e964a8027eab3e650e7aea6eae469ffabe471e7f6250e6ab9db363c4a',1,'max7456.c']]],
+  ['osd_5fs_5fstep1',['OSD_S_STEP1',['../max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea2995e6e161483e588dfded4d2a10b32b',1,'max7456.c']]],
+  ['osd_5fs_5fstep2',['OSD_S_STEP2',['../max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea79175d482e70a2b47a31e831204ffd44',1,'max7456.c']]],
+  ['osd_5fs_5fstep3',['OSD_S_STEP3',['../max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea3ba9c918e1617dc493dcfc9622d38ab5',1,'max7456.c']]],
+  ['osd_5funinit',['OSD_UNINIT',['../max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea7ea512690c92f844fa9e0623e4a08eb3',1,'max7456.c']]],
+  ['outside',['Outside',['../nav__flower_8c.html#ab3972f7766a79f22a1ed10c84e294551a97428abf4f6a11dfc00d53c330031e95',1,'nav_flower.c']]]
 ];

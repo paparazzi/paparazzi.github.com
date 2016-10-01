@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -139,21 +139,21 @@ $(document).ready(function(){initNavTree('fbw__datalink_8c_source.html','');});
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="fbw__datalink_8c.html#acf5d6d3b5980adc9fd912b0018dcf6bf">   37</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="fbw__datalink_8c.html#acf5d6d3b5980adc9fd912b0018dcf6bf">autopilot_parse</a>(<span class="keywordtype">char</span> c)</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="fbw__datalink_8c.html#a7e4ab3a42760e195bedf3889e8155c2c">ModemLinkDevice</a>-&gt;put_byte(<a class="code" href="fbw__datalink_8c.html#a7e4ab3a42760e195bedf3889e8155c2c">ModemLinkDevice</a>-&gt;periph, c);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="fbw__datalink_8c.html#a7e4ab3a42760e195bedf3889e8155c2c">ModemLinkDevice</a>-&gt;put_byte(<a class="code" href="fbw__datalink_8c.html#a7e4ab3a42760e195bedf3889e8155c2c">ModemLinkDevice</a>-&gt;periph, 0, c);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="fbw__datalink_8c.html#a0501b8e34009f316b8619c5267f2926d">   42</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="fbw__datalink_8c.html#a0501b8e34009f316b8619c5267f2926d">modem_parse</a>(<span class="keywordtype">char</span> c)</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="fbw__datalink_8c.html#a15f64519761bfd24c4e016ceb2fdcc34">AutopilotLinkDevice</a>-&gt;put_byte(<a class="code" href="fbw__datalink_8c.html#a15f64519761bfd24c4e016ceb2fdcc34">AutopilotLinkDevice</a>-&gt;periph, c);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="fbw__datalink_8c.html#a15f64519761bfd24c4e016ceb2fdcc34">AutopilotLinkDevice</a>-&gt;put_byte(<a class="code" href="fbw__datalink_8c.html#a15f64519761bfd24c4e016ceb2fdcc34">AutopilotLinkDevice</a>-&gt;periph, 0, c);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="fbw__datalink_8h.html#a72babe577c613eca75fb3031b403b980">   47</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="fbw__datalink_8c.html#a72babe577c613eca75fb3031b403b980">fbw_datalink_periodic</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#ifdef MODEM_LINK_LED</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="linux_2led__hw_8h.html#a76c86a9c700e32e68f48f85271970b7f">LED_OFF</a>(MODEM_LINK_LED);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="chibios_2led__hw_8h.html#a76c86a9c700e32e68f48f85271970b7f">LED_OFF</a>(MODEM_LINK_LED);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#ifdef AUTOPILOT_LINK_LED</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="linux_2led__hw_8h.html#a76c86a9c700e32e68f48f85271970b7f">LED_OFF</a>(AUTOPILOT_LINK_LED);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="chibios_2led__hw_8h.html#a76c86a9c700e32e68f48f85271970b7f">LED_OFF</a>(AUTOPILOT_LINK_LED);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
@@ -161,12 +161,12 @@ $(document).ready(function(){initNavTree('fbw__datalink_8c_source.html','');});
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#ifdef MODEM_LINK_LED</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="fbw__datalink_8c.html#a7e4ab3a42760e195bedf3889e8155c2c">ModemLinkDevice</a>-&gt;char_available(<a class="code" href="fbw__datalink_8c.html#a7e4ab3a42760e195bedf3889e8155c2c">ModemLinkDevice</a>-&gt;periph)) {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="linux_2led__hw_8h.html#a3ab823c4004d96d154dfb8f69d18c47a">LED_ON</a>(MODEM_LINK_LED);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="chibios_2led__hw_8h.html#a3ab823c4004d96d154dfb8f69d18c47a">LED_ON</a>(MODEM_LINK_LED);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#ifdef AUTOPILOT_LINK_LED</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="fbw__datalink_8c.html#a15f64519761bfd24c4e016ceb2fdcc34">AutopilotLinkDevice</a>-&gt;char_available(<a class="code" href="fbw__datalink_8c.html#a15f64519761bfd24c4e016ceb2fdcc34">AutopilotLinkDevice</a>-&gt;periph)) {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="linux_2led__hw_8h.html#a3ab823c4004d96d154dfb8f69d18c47a">LED_ON</a>(AUTOPILOT_LINK_LED);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="chibios_2led__hw_8h.html#a3ab823c4004d96d154dfb8f69d18c47a">LED_ON</a>(AUTOPILOT_LINK_LED);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
@@ -177,13 +177,13 @@ $(document).ready(function(){initNavTree('fbw__datalink_8c_source.html','');});
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="fbw__datalink_8c.html#acf5d6d3b5980adc9fd912b0018dcf6bf">autopilot_parse</a>(<a class="code" href="fbw__datalink_8c.html#a15f64519761bfd24c4e016ceb2fdcc34">AutopilotLinkDevice</a>-&gt;get_byte(<a class="code" href="fbw__datalink_8c.html#a15f64519761bfd24c4e016ceb2fdcc34">AutopilotLinkDevice</a>-&gt;periph));</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
 <div class="ttc" id="uart_8h_html"><div class="ttname"><a href="uart_8h.html">uart.h</a></div><div class="ttdoc">arch independent UART (Universal Asynchronous Receiver/Transmitter) API </div></div>
+<div class="ttc" id="chibios_2led__hw_8h_html_a76c86a9c700e32e68f48f85271970b7f"><div class="ttname"><a href="chibios_2led__hw_8h.html#a76c86a9c700e32e68f48f85271970b7f">LED_OFF</a></div><div class="ttdeci">#define LED_OFF(i)</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2led__hw_8h_source.html#l00050">led_hw.h:50</a></div></div>
 <div class="ttc" id="fbw__datalink_8c_html_a72babe577c613eca75fb3031b403b980"><div class="ttname"><a href="fbw__datalink_8c.html#a72babe577c613eca75fb3031b403b980">fbw_datalink_periodic</a></div><div class="ttdeci">void fbw_datalink_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="fbw__datalink_8c_source.html#l00047">fbw_datalink.c:47</a></div></div>
 <div class="ttc" id="fbw__datalink_8c_html_a7e4ab3a42760e195bedf3889e8155c2c"><div class="ttname"><a href="fbw__datalink_8c.html#a7e4ab3a42760e195bedf3889e8155c2c">ModemLinkDevice</a></div><div class="ttdeci">#define ModemLinkDevice</div><div class="ttdef"><b>Definition:</b> <a href="fbw__datalink_8c_source.html#l00034">fbw_datalink.c:34</a></div></div>
 <div class="ttc" id="fbw__datalink_8c_html_a49d34d32607e548c30d7052f0f9282c7"><div class="ttname"><a href="fbw__datalink_8c.html#a49d34d32607e548c30d7052f0f9282c7">fbw_datalink_event</a></div><div class="ttdeci">void fbw_datalink_event(void)</div><div class="ttdef"><b>Definition:</b> <a href="fbw__datalink_8c_source.html#l00057">fbw_datalink.c:57</a></div></div>
 <div class="ttc" id="fbw__datalink_8c_html_acf5d6d3b5980adc9fd912b0018dcf6bf"><div class="ttname"><a href="fbw__datalink_8c.html#acf5d6d3b5980adc9fd912b0018dcf6bf">autopilot_parse</a></div><div class="ttdeci">static void autopilot_parse(char c)</div><div class="ttdef"><b>Definition:</b> <a href="fbw__datalink_8c_source.html#l00037">fbw_datalink.c:37</a></div></div>
-<div class="ttc" id="linux_2led__hw_8h_html_a3ab823c4004d96d154dfb8f69d18c47a"><div class="ttname"><a href="linux_2led__hw_8h.html#a3ab823c4004d96d154dfb8f69d18c47a">LED_ON</a></div><div class="ttdeci">#define LED_ON(i)</div><div class="ttdef"><b>Definition:</b> <a href="linux_2led__hw_8h_source.html#l00042">led_hw.h:42</a></div></div>
 <div class="ttc" id="led_8h_html"><div class="ttname"><a href="led_8h.html">led.h</a></div><div class="ttdoc">arch independent LED (Light Emitting Diodes) API </div></div>
-<div class="ttc" id="linux_2led__hw_8h_html_a76c86a9c700e32e68f48f85271970b7f"><div class="ttname"><a href="linux_2led__hw_8h.html#a76c86a9c700e32e68f48f85271970b7f">LED_OFF</a></div><div class="ttdeci">#define LED_OFF(i)</div><div class="ttdef"><b>Definition:</b> <a href="linux_2led__hw_8h_source.html#l00043">led_hw.h:43</a></div></div>
+<div class="ttc" id="chibios_2led__hw_8h_html_a3ab823c4004d96d154dfb8f69d18c47a"><div class="ttname"><a href="chibios_2led__hw_8h.html#a3ab823c4004d96d154dfb8f69d18c47a">LED_ON</a></div><div class="ttdeci">#define LED_ON(i)</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2led__hw_8h_source.html#l00049">led_hw.h:49</a></div></div>
 <div class="ttc" id="fbw__datalink_8h_html"><div class="ttname"><a href="fbw__datalink_8h.html">fbw_datalink.h</a></div><div class="ttdoc">Handling of messages coming from ground in FTD. </div></div>
 <div class="ttc" id="fbw__datalink_8c_html_a0501b8e34009f316b8619c5267f2926d"><div class="ttname"><a href="fbw__datalink_8c.html#a0501b8e34009f316b8619c5267f2926d">modem_parse</a></div><div class="ttdeci">static void modem_parse(char c)</div><div class="ttdef"><b>Definition:</b> <a href="fbw__datalink_8c_source.html#l00042">fbw_datalink.c:42</a></div></div>
 <div class="ttc" id="fbw__datalink_8c_html_a15f64519761bfd24c4e016ceb2fdcc34"><div class="ttname"><a href="fbw__datalink_8c.html#a15f64519761bfd24c4e016ceb2fdcc34">AutopilotLinkDevice</a></div><div class="ttdeci">#define AutopilotLinkDevice</div><div class="ttdef"><b>Definition:</b> <a href="fbw__datalink_8c_source.html#l00035">fbw_datalink.c:35</a></div></div>
@@ -193,7 +193,7 @@ $(document).ready(function(){initNavTree('fbw__datalink_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_cb1b347b64b61ba7f369ccfe68448b26.html">fixedwing</a></li><li class="navelem"><a class="el" href="fbw__datalink_8c.html">fbw_datalink.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:17 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:16 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

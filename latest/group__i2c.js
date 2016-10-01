@@ -62,11 +62,11 @@ var group__i2c =
       [ "I2CTransTxRx", "group__i2c.html#ggae433e858ea905e29d6ac9a70bc79352ea8fa3bedf5ded2c2a0a7d3d07dc776d7b", null ]
     ] ],
     [ "i2c_event", "group__i2c.html#ga05763355d0e087ba41feab61dd773fe6", null ],
-    [ "i2c_idle", "group__i2c.html#ga54cb2dd83ed5b0dacc02764aa234f564", null ],
+    [ "i2c_idle", "group__i2c.html#ga7c5157eae9cb80352e8fa1319db148f8", null ],
     [ "i2c_init", "group__i2c.html#ga6b8ffbb119f71ec012b6a2c0a2f92279", null ],
-    [ "i2c_receive", "group__i2c.html#ga9bdc2f5162d3e77dd58b7541ddcbe5d1", null ],
+    [ "i2c_receive", "group__i2c.html#ga9e7c3ccd9ba7415486bfb2e52eaa3964", null ],
     [ "i2c_setbitrate", "group__i2c.html#ga886c0abe64ca0d366a35abba80cf2eff", null ],
-    [ "i2c_submit", "group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa", null ],
-    [ "i2c_transceive", "group__i2c.html#gae029fe6bf43eaf9e46428fec7e7b91c7", null ],
-    [ "i2c_transmit", "group__i2c.html#ga68659e03504627925829f2f12c2ec6d2", null ]
+    [ "i2c_submit", "group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe", null ],
+    [ "i2c_transceive", "group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6", null ],
+    [ "i2c_transmit", "group__i2c.html#ga54405aa058f14a143b8b1b5380015927", null ]
 ];

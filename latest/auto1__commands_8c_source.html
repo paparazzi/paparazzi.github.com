@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -144,19 +144,19 @@ $(document).ready(function(){initNavTree('auto1__commands_8c_source.html','');})
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifndef RADIO_HATCH</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#error auto1_commands COMMAND_HATCH needs RADIO_HATCH channel</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="inter__mcu_8c.html#ac13671906f2663b39fde033f4cb4a410">ap_state</a>-&gt;commands[COMMAND_HATCH] = <a class="code" href="inter__mcu_8c.html#a1a4da5ac6e76b01f83b00facee8f3dbf">fbw_state</a>-&gt;channels[RADIO_HATCH];</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    imcu_set_command(COMMAND_HATCH, imcu_get_radio(RADIO_HATCH));</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#ifdef COMMAND_BRAKE</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#ifndef RADIO_BRAKE</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#error auto1_commands COMMAND_BRAKE needs RADIO_BRAKE channel</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="inter__mcu_8c.html#ac13671906f2663b39fde033f4cb4a410">ap_state</a>-&gt;commands[COMMAND_BRAKE] = <a class="code" href="inter__mcu_8c.html#a1a4da5ac6e76b01f83b00facee8f3dbf">fbw_state</a>-&gt;channels[RADIO_BRAKE];</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    imcu_set_command(COMMAND_BRAKE, imcu_get_radio(RADIO_BRAKE));</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#ifdef COMMAND_FLAPS</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#ifndef RADIO_FLAPS</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#error auto1_commands COMMAND_FLAPS needs RADIO_FLAPS channel</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="inter__mcu_8c.html#ac13671906f2663b39fde033f4cb4a410">ap_state</a>-&gt;commands[COMMAND_FLAPS] = <a class="code" href="inter__mcu_8c.html#a1a4da5ac6e76b01f83b00facee8f3dbf">fbw_state</a>-&gt;channels[RADIO_FLAPS];</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    imcu_set_command(COMMAND_FLAPS, imcu_get_radio(RADIO_FLAPS));</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
@@ -164,8 +164,6 @@ $(document).ready(function(){initNavTree('auto1__commands_8c_source.html','');})
 <div class="ttc" id="inter__mcu_8h_html"><div class="ttname"><a href="inter__mcu_8h.html">inter_mcu.h</a></div><div class="ttdoc">Communication between fbw and ap processes. </div></div>
 <div class="ttc" id="fixedwing_2autopilot_8c_html_aebf57c26248ee8c66d3eacdbd6a155cd"><div class="ttname"><a href="fixedwing_2autopilot_8c.html#aebf57c26248ee8c66d3eacdbd6a155cd">pprz_mode</a></div><div class="ttdeci">uint8_t pprz_mode</div><div class="ttdef"><b>Definition:</b> <a href="fixedwing_2autopilot_8c_source.html#l00041">autopilot.c:41</a></div></div>
 <div class="ttc" id="auto1__commands_8c_html_aaa4ab58fd3d0ae4cce65e11d5c9c7a5f"><div class="ttname"><a href="auto1__commands_8c.html#aaa4ab58fd3d0ae4cce65e11d5c9c7a5f">periodic_auto1_commands</a></div><div class="ttdeci">void periodic_auto1_commands(void)</div><div class="ttdef"><b>Definition:</b> <a href="auto1__commands_8c_source.html#l00028">auto1_commands.c:28</a></div></div>
-<div class="ttc" id="inter__mcu_8c_html_a1a4da5ac6e76b01f83b00facee8f3dbf"><div class="ttname"><a href="inter__mcu_8c.html#a1a4da5ac6e76b01f83b00facee8f3dbf">fbw_state</a></div><div class="ttdeci">struct fbw_state * fbw_state</div><div class="ttdef"><b>Definition:</b> <a href="inter__mcu_8c_source.html#l00036">inter_mcu.c:36</a></div></div>
-<div class="ttc" id="inter__mcu_8c_html_ac13671906f2663b39fde033f4cb4a410"><div class="ttname"><a href="inter__mcu_8c.html#ac13671906f2663b39fde033f4cb4a410">ap_state</a></div><div class="ttdeci">struct ap_state * ap_state</div><div class="ttdef"><b>Definition:</b> <a href="inter__mcu_8c_source.html#l00037">inter_mcu.c:37</a></div></div>
 <div class="ttc" id="fixedwing_2autopilot_8h_html_aad97f5d43922c63769f4a4ea97b9df8d"><div class="ttname"><a href="fixedwing_2autopilot_8h.html#aad97f5d43922c63769f4a4ea97b9df8d">PPRZ_MODE_AUTO1</a></div><div class="ttdeci">#define PPRZ_MODE_AUTO1</div><div class="ttdef"><b>Definition:</b> <a href="fixedwing_2autopilot_8h_source.html#l00051">autopilot.h:51</a></div></div>
 <div class="ttc" id="fixedwing_2autopilot_8h_html"><div class="ttname"><a href="fixedwing_2autopilot_8h.html">autopilot.h</a></div><div class="ttdoc">Fixedwing autopilot modes. </div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -174,7 +172,7 @@ $(document).ready(function(){initNavTree('auto1__commands_8c_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_55eebefe33cb2d47e888e33b78ad8bcf.html">servo_switch</a></li><li class="navelem"><a class="el" href="auto1__commands_8c.html">auto1_commands.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:27 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:28 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

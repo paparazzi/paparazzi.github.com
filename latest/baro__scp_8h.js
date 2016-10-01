@@ -6,7 +6,7 @@ var baro__scp_8h =
     [ "baro_scp_event", "baro__scp_8h.html#a6cbae7e48b4b096bafb8717f44bef3f1", null ],
     [ "baro_scp_init", "baro__scp_8h.html#a9912bb32894c07a1eca930778b455159", null ],
     [ "baro_scp_periodic", "baro__scp_8h.html#a7995b8df4beede8b8da2998349693108", null ],
-    [ "baro_scp_available", "baro__scp_8h.html#a10ba98ea76fa38059612895e866cbc46", null ],
+    [ "baro_scp_available", "baro__scp_8h.html#a8776cbecbf4f35a343275117724a3261", null ],
     [ "baro_scp_pressure", "baro__scp_8h.html#a2686105e872eba82758010dbb3c91c99", null ],
     [ "baro_scp_status", "baro__scp_8h.html#a2fe023fc4063f461db08521dd732f13a", null ],
     [ "baro_scp_temperature", "baro__scp_8h.html#afc76d1091765349f7cc77bef8db5b95b", null ]

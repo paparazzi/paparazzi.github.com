@@ -10,7 +10,7 @@ var guidance__OA_8c =
     [ "guidance_h_module_enter", "guidance__OA_8c.html#af0a3b4e238d064326406719e8244e92d", null ],
     [ "guidance_h_module_init", "guidance__OA_8c.html#ab39ce31e4173de7b9aefa839324ec9a2", null ],
     [ "guidance_h_module_read_rc", "guidance__OA_8c.html#a4c33bfc7d07ffb6d33a1af63799da082", null ],
-    [ "guidance_h_module_run", "guidance__OA_8c.html#abd0fff1bd18e355435e77a841b0a5ea0", null ],
+    [ "guidance_h_module_run", "guidance__OA_8c.html#a77f05df2acd1da23e187f1f3f5d5a26f", null ],
     [ "OA_update", "guidance__OA_8c.html#aeedb2b02de7cc2259cbbc6187e17f8d6", null ],
     [ "alpha_fil", "guidance__OA_8c.html#a1c92c176477b26cde71bf5f88916674c", null ],
     [ "desired_vx", "guidance__OA_8c.html#ac60a805c018ce3995fdcc36367f6f658", null ],

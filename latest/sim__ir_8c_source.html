@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -122,11 +122,11 @@ $(document).ready(function(){initNavTree('sim__ir_8c_source.html','');});
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="sim__ir_8c.html#ab146572909cffd2d05eed3914a652667">   20</a></span>&#160;<a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a> <a class="code" href="sim__ir_8c.html#ab146572909cffd2d05eed3914a652667">set_ir_and_airspeed</a>(</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a> roll __attribute__((unused)),</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a> front __attribute__((unused)),</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a> top __attribute__((unused)),</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a> air_speed</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="sim__ir_8c.html#ab146572909cffd2d05eed3914a652667">   20</a></span>&#160;value <a class="code" href="sim__ir_8c.html#ab146572909cffd2d05eed3914a652667">set_ir_and_airspeed</a>(</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  value roll __attribute__((unused)),</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  value front __attribute__((unused)),</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  value top __attribute__((unused)),</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  value air_speed</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;)</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="comment">// USE_INFRARED : Stupid hack, since sim always calls this function,</span></div>
@@ -141,7 +141,6 @@ $(document).ready(function(){initNavTree('sim__ir_8c_source.html','');});
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="ttc" id="infrared_8c_html_aa0faf6997978eddf1c526c0f022c7dd5"><div class="ttname"><a href="infrared_8c.html#aa0faf6997978eddf1c526c0f022c7dd5">infrared</a></div><div class="ttdeci">struct Infrared infrared</div><div class="ttdef"><b>Definition:</b> <a href="infrared_8c_source.html#l00030">infrared.c:30</a></div></div>
-<div class="ttc" id="stm32_2mcu__periph_2adc__arch_8c_html_a900b69af7d674b8db3bceae754b4955a"><div class="ttname"><a href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a></div><div class="ttdeci">uint16_t value</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2mcu__periph_2adc__arch_8c_source.html#l00586">adc_arch.c:586</a></div></div>
 <div class="ttc" id="infrared_8h_html_ac68772476ec395a4ee1fa1f916e40a4a"><div class="ttname"><a href="infrared_8h.html#ac68772476ec395a4ee1fa1f916e40a4a">Infrared::top</a></div><div class="ttdeci">int16_t top</div><div class="ttdef"><b>Definition:</b> <a href="infrared_8h_source.html#l00131">infrared.h:131</a></div></div>
 <div class="ttc" id="infrared_8h_html"><div class="ttname"><a href="infrared_8h.html">infrared.h</a></div></div>
 <div class="ttc" id="sim__ir_8c_html_ace3c7ebb7c161817631e5a3d72d7ff5d"><div class="ttname"><a href="sim__ir_8c.html#ace3c7ebb7c161817631e5a3d72d7ff5d">sim_air_speed</a></div><div class="ttdeci">float sim_air_speed</div><div class="ttdef"><b>Definition:</b> <a href="sim__ir_8c_source.html#l00014">sim_ir.c:14</a></div></div>
@@ -156,7 +155,7 @@ $(document).ready(function(){initNavTree('sim__ir_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_c87a6d12365ead88e0b90ddbc1b3c9bb.html">sim</a></li><li class="navelem"><a class="el" href="sim__ir_8c.html">sim_ir.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:15 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:14 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

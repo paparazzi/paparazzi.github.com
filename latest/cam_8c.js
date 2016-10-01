@@ -11,7 +11,7 @@ var cam_8c =
     [ "cam_target", "cam_8c.html#aab3da8ed719ee01699f50450b3df3b13", null ],
     [ "cam_waypoint_target", "cam_8c.html#a91c2133236e62688f7acfe1ab9fe2f11", null ],
     [ "send_cam", "cam_8c.html#a2241601166d050807a1cd3424f01403f", null ],
-    [ "cam_lock", "cam_8c.html#a35d162b093b6571b64b7a31a952f6d6a", null ],
+    [ "cam_lock", "cam_8c.html#ab1bf4022b7e75af1a5098c6dd5854489", null ],
     [ "cam_mode", "cam_8c.html#a5882a9e0a38d9a046ead57d52a3e1474", null ],
     [ "cam_pan_c", "cam_8c.html#a4594bf9761835894a1baa11831c37d50", null ],
     [ "cam_pan_command", "cam_8c.html#ad5dd3b0fa02d28e2446ad3dc20b43df7", null ],

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: Generic ADC</title>
+<title>Paparazzi UAS: adc_generic module</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -100,19 +100,18 @@ $(document).ready(function(){initNavTree('module__adc_generic.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Generic ADC </div>  </div>
+<div class="title">adc_generic module </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Module XML file: <code>adc_generic.xml</code> </p>
-<p>No detailed description...</p>
+<div class="textblock"><p><b>Generic ADC</b></p>
+<p>This module can be used to read one or two values from the ADC channels in a generic way. Data is reported through the default telemetry channel (by default) or can be redirected to an other one (alternate telemetry, datalogger) at a frequency defined in the telemetry xml file.</p>
 <h1><a class="anchor" id="module_load_example__adc_generic"></a>
 Example for airframe file</h1>
-<p>This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;modules&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;load name=&quot;adc_generic.xml&quot;&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    &lt;configure name=&quot;ADC_CHANNEL_GENERIC1&quot; value=&quot;ADCX&quot; /&gt;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    &lt;configure name=&quot;ADC_CHANNEL_GENERIC2&quot; value=&quot;ADCX&quot; /&gt;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;/load&gt;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;&lt;/modules&gt;</div>
+<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;adc_generic&quot;&gt;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;define name=&quot;ADC_GENERIC_PERIODIC_SEND&quot; value=&quot;TRUE|FALSE&quot; /&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;configure name=&quot;ADC_CHANNEL_GENERIC1&quot; value=&quot;ADCX&quot; /&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;configure name=&quot;ADC_CHANNEL_GENERIC2&quot; value=&quot;ADCX&quot; /&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__adc_generic"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="configure"></a>
@@ -122,6 +121,12 @@ Configure Options</h2>
  Description: choose which ADC is used for input 1</li>
 <li><b>name:</b> <code>ADC_CHANNEL_GENERIC2</code> <b>value:</b> <em>ADCX</em> <br />
  Description: choose which ADC is used for input 2</li>
+</ul>
+<h2><a class="anchor" id="define"></a>
+Define Options</h2>
+<ul>
+<li><b>name:</b> <code>ADC_GENERIC_PERIODIC_SEND</code> <b>value:</b> <em>TRUE|FALSE</em> <br />
+ Description: enable or disable periodic report on standard telemetry channel (default: TRUE)</li>
 </ul>
 <h1><a class="anchor" id="functions__adc_generic"></a>
 Module functions</h1>
@@ -161,9 +166,14 @@ Raw adc_generic.xml file:</h2>
 <div class="line"></div>
 <div class="line">&lt;module name=&quot;adc_generic&quot; dir=&quot;adcs&quot;&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
-<div class="line">    &lt;description&gt;Generic ADC&lt;/description&gt;</div>
+<div class="line">    &lt;description&gt;</div>
+<div class="line">      Generic ADC</div>
+<div class="line">      This module can be used to read one or two values from the ADC channels in a generic way.</div>
+<div class="line">      Data is reported through the default telemetry channel (by default) or can be redirected to an other one (alternate telemetry, datalogger) at a frequency defined in the telemetry xml file.</div>
+<div class="line">    &lt;/description&gt;</div>
 <div class="line">    &lt;configure name=&quot;ADC_CHANNEL_GENERIC1&quot; value=&quot;ADCX&quot; description=&quot;choose which ADC is used for input 1&quot;/&gt;</div>
 <div class="line">    &lt;configure name=&quot;ADC_CHANNEL_GENERIC2&quot; value=&quot;ADCX&quot; description=&quot;choose which ADC is used for input 2&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;ADC_GENERIC_PERIODIC_SEND&quot; value=&quot;TRUE|FALSE&quot; description=&quot;enable or disable periodic report on standard telemetry channel (default: TRUE)&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;adc_generic.h&quot;/&gt;</div>
@@ -172,17 +182,10 @@ Raw adc_generic.xml file:</h2>
 <div class="line">  &lt;periodic fun=&quot;adc_generic_periodic()&quot; freq=&quot;4&quot;/&gt;</div>
 <div class="line">  &lt;makefile target=&quot;ap&quot;&gt;</div>
 <div class="line">    &lt;file name=&quot;adc_generic.c&quot;/&gt;</div>
-<div class="line">    &lt;raw&gt;</div>
-<div class="line"></div>
-<div class="line">ifneq ($(ADC_CHANNEL_GENERIC1),)</div>
-<div class="line">ap.CFLAGS += -DADC_CHANNEL_GENERIC1=$(ADC_CHANNEL_GENERIC1) -DUSE_$(ADC_CHANNEL_GENERIC1)</div>
-<div class="line">endif</div>
-<div class="line"></div>
-<div class="line">ifneq ($(ADC_CHANNEL_GENERIC2),)</div>
-<div class="line">ap.CFLAGS += -DADC_CHANNEL_GENERIC2=$(ADC_CHANNEL_GENERIC2) -DUSE_$(ADC_CHANNEL_GENERIC2)</div>
-<div class="line">endif</div>
-<div class="line"></div>
-<div class="line">    &lt;/raw&gt;</div>
+<div class="line">    &lt;define name=&quot;USE_${ADC_CHANNEL_GENERIC1}&quot; cond=&quot;ifneq ($(ADC_CHANNEL_GENERIC1),)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;ADC_CHANNEL_GENERIC1&quot; value=&quot;$(ADC_CHANNEL_GENERIC1)&quot; cond=&quot;ifneq ($(ADC_CHANNEL_GENERIC1),)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;USE_${ADC_CHANNEL_GENERIC2}&quot; cond=&quot;ifneq ($(ADC_CHANNEL_GENERIC2),)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;ADC_CHANNEL_GENERIC2&quot; value=&quot;$(ADC_CHANNEL_GENERIC2)&quot; cond=&quot;ifneq ($(ADC_CHANNEL_GENERIC2),)&quot;/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">&lt;/module&gt;</div>
 </div><!-- fragment --> </div></div><!-- contents -->
@@ -191,7 +194,7 @@ Raw adc_generic.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:07 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:17 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

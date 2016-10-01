@@ -29,6 +29,6 @@ var nav__survey__polygon_8h =
       [ "RET", "nav__survey__polygon_8h.html#aa9c58cb0ccc605869d75547268f59fa6ab2510768eaba5e52ba71678e19a65464", null ],
       [ "TURN2", "nav__survey__polygon_8h.html#aa9c58cb0ccc605869d75547268f59fa6a8aa67eaa68851f8edef1766d1964383c", null ]
     ] ],
-    [ "nav_survey_polygon_run", "nav__survey__polygon_8h.html#ad56bdec94ac98495799a04f0d12b51e2", null ],
-    [ "nav_survey_polygon_setup", "nav__survey__polygon_8h.html#ab8c7fec1327d4207e10660a3fd271231", null ]
+    [ "nav_survey_polygon_run", "nav__survey__polygon_8h.html#ae202d8219e79766dae10f379448f29f8", null ],
+    [ "nav_survey_polygon_setup", "nav__survey__polygon_8h.html#a3f096be845ba726c8096c7da859b58df", null ]
 ];

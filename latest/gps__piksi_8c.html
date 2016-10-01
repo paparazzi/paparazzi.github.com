@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -126,8 +126,10 @@ $(document).ready(function(){initNavTree('gps__piksi_8c.html','');});
 <code>#include &lt;libsbp/navigation.h&gt;</code><br />
 <code>#include &lt;libsbp/observation.h&gt;</code><br />
 <code>#include &lt;libsbp/tracking.h&gt;</code><br />
+<code>#include &lt;libsbp/system.h&gt;</code><br />
 <code>#include &lt;libsbp/settings.h&gt;</code><br />
 <code>#include &lt;libsbp/piksi.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for gps_piksi.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -135,7 +137,7 @@ $(document).ready(function(){initNavTree('gps__piksi_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__piksi_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2gps_2gps__piksi_8c" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2gps_2gps__piksi_8c" id="sw_2airborne_2subsystems_2gps_2gps__piksi_8c">
-<area shape="rect" id="node2" href="gps__piksi_8h.html" title="Driver for Piksi modules from Swift&#45;Nav. " alt="" coords="166,95,319,136"/><area shape="rect" id="node3" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="677,102,816,129"/><area shape="rect" id="node20" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="518,102,653,129"/><area shape="rect" id="node22" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1303,191,1441,218"/><area shape="rect" id="node25" href="pprz__geodetic__double_8h.html" title="Paparazzi double&#45;precision floating point math for geodetic calculations. " alt="" coords="343,95,494,136"/><area shape="rect" id="node5" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="671,184,822,225"/><area shape="rect" id="node13" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="445,184,595,225"/><area shape="rect" id="node16" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="905,273,1076,300"/><area shape="rect" id="node6" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="427,273,551,300"/><area shape="rect" id="node7" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="627,273,767,300"/><area shape="rect" id="node8" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="117,355,272,382"/><area shape="rect" id="node11" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="478,355,629,382"/><area shape="rect" id="node14" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="5,273,157,300"/><area shape="rect" id="node17" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1241,355,1327,382"/><area shape="rect" id="node24" href="link__device_8h.html" title="generic device header " alt="" coords="1217,273,1399,300"/><area shape="rect" id="node26" href="pprz__algebra__double_8h.html" title="Paparazzi double precision floating point algebra. " alt="" coords="51,191,218,218"/></map>
+<area shape="rect" id="node2" href="gps__piksi_8h.html" title="Driver for Piksi modules from Swift&#45;Nav. " alt="" coords="263,95,417,136"/><area shape="rect" id="node3" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="824,102,963,129"/><area shape="rect" id="node21" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="639,102,774,129"/><area shape="rect" id="node23" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="2271,370,2409,397"/><area shape="rect" id="node26" href="pprz__geodetic__double_8h.html" title="Paparazzi double&#45;precision floating point math for geodetic calculations. " alt="" coords="441,95,591,136"/><area shape="rect" id="node36" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="1735,184,1889,225"/><area shape="rect" id="node5" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="1015,184,1166,225"/><area shape="rect" id="node13" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="705,184,855,225"/><area shape="rect" id="node17" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="843,281,1013,307"/><area shape="rect" id="node6" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="643,281,767,307"/><area shape="rect" id="node7" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1038,281,1178,307"/><area shape="rect" id="node8" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="299,370,453,397"/><area shape="rect" id="node11" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1163,370,1314,397"/><area shape="rect" id="node14" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="171,281,323,307"/><area shape="rect" id="node18" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1389,370,1475,397"/><area shape="rect" id="node27" href="pprz__algebra__double_8h.html" title="Paparazzi double precision floating point algebra. " alt="" coords="261,191,427,218"/><area shape="rect" id="node38" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1735,273,1889,315"/><area shape="rect" id="node42" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="2093,363,2246,404"/></map>
 </div>
 </div>
 <p><a href="gps__piksi_8c_source.html">Go to the source code of this file.</a></p>
@@ -153,6 +155,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a936a09815bd79f5d8b1f0a40a0cc48a9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__piksi_8c.html#a936a09815bd79f5d8b1f0a40a0cc48a9">send_piksi_heartbeat</a> (struct transport_tx *trans, struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
+<tr class="separator:a936a09815bd79f5d8b1f0a40a0cc48a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab873aa70bd8af4c37c8dbc07d13ea1de"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__piksi_8c.html#ab873aa70bd8af4c37c8dbc07d13ea1de">gps_piksi_publish</a> (void)</td></tr>
 <tr class="separator:ab873aa70bd8af4c37c8dbc07d13ea1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade701b633876b51633dad336d4031b95"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__piksi_8c.html#ade701b633876b51633dad336d4031b95">get_fix_mode</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> flags)</td></tr>
@@ -177,9 +181,10 @@ Functions</h2></td></tr>
 <tr class="separator:a1a86da16d9d399272bfaab18b7faeafe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ad2ea41453e3b5bff367fbdeb0bb827"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__piksi_8c.html#a2ad2ea41453e3b5bff367fbdeb0bb827">sbp_tracking_state_dep_a_callback</a> (<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> sender_id, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> len, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="high__speed__logger__direct__memory_8c.html#a32b52374003c5d7911e540c6a1c53488">msg</a>[], void *context)</td></tr>
 <tr class="separator:a2ad2ea41453e3b5bff367fbdeb0bb827"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac51e6a5f7940a0acc9dc44b1b8085331"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__piksi_8c.html#ac51e6a5f7940a0acc9dc44b1b8085331">gps_impl_init</a> (void)</td></tr>
-<tr class="memdesc:ac51e6a5f7940a0acc9dc44b1b8085331"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPS initialization.  <a href="#ac51e6a5f7940a0acc9dc44b1b8085331">More...</a><br /></td></tr>
-<tr class="separator:ac51e6a5f7940a0acc9dc44b1b8085331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eaf9070f9bdcf0ecfb9efe570ece699"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__piksi_8c.html#a7eaf9070f9bdcf0ecfb9efe570ece699">spb_heartbeat_callback</a> (<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> sender_id, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> len, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="high__speed__logger__direct__memory_8c.html#a32b52374003c5d7911e540c6a1c53488">msg</a>[], void *context)</td></tr>
+<tr class="separator:a7eaf9070f9bdcf0ecfb9efe570ece699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fcb9204061227b94027a135c469c4b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__piksi_8c.html#a2fcb9204061227b94027a135c469c4b5">gps_piksi_init</a> (void)</td></tr>
+<tr class="separator:a2fcb9204061227b94027a135c469c4b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a11e7df7bcc31ab10141f020bd6f729"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__piksi_8c.html#a2a11e7df7bcc31ab10141f020bd6f729">gps_piksi_event</a> (void)</td></tr>
 <tr class="separator:a2a11e7df7bcc31ab10141f020bd6f729"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92de5b7fc6f0e0c9c2a3f6aa1b175c6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__piksi_8c.html#a92de5b7fc6f0e0c9c2a3f6aa1b175c6f">gps_inject_data</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> packet_id, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> length, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data)</td></tr>
@@ -188,6 +193,12 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:a42998e99427a3b652810c79ecdab4753"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="gps_8h.html#structGpsState">GpsState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__piksi_8c.html#a42998e99427a3b652810c79ecdab4753">gps_piksi</a></td></tr>
+<tr class="separator:a42998e99427a3b652810c79ecdab4753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6e53459a3446fd6e60ae6363b08321a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="gps_8h.html#structGpsTimeSync">GpsTimeSync</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__piksi_8c.html#aa6e53459a3446fd6e60ae6363b08321a">gps_piksi_time_sync</a></td></tr>
+<tr class="separator:aa6e53459a3446fd6e60ae6363b08321a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49189c86f0529a3cfb19e26a52e4795e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__piksi_8c.html#a49189c86f0529a3cfb19e26a52e4795e">time_since_last_heartbeat</a></td></tr>
+<tr class="separator:a49189c86f0529a3cfb19e26a52e4795e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a9058040c72f5f1179307957a870305"><td class="memItemLeft" align="right" valign="top">static const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__piksi_8c.html#a5a9058040c72f5f1179307957a870305">SBP_ANT_SET</a> [] = &quot;frontend&quot;&quot;\x00&quot;&quot;antenna_selection&quot;&quot;\x00&quot;&quot;Patch&quot;</td></tr>
 <tr class="separator:a5a9058040c72f5f1179307957a870305"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2eebca531cc7abce49c774d48079fba7"><td class="memItemLeft" align="right" valign="top">static const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__piksi_8c.html#a2eebca531cc7abce49c774d48079fba7">SBP_UART_SET1</a> [] = &quot;uart_uartb&quot;&quot;\x00&quot;&quot;mode&quot;&quot;\x00&quot;&quot;SBP&quot;</td></tr>
@@ -214,6 +225,8 @@ Variables</h2></td></tr>
 <tr class="separator:ab07c3ded128de63b9a2314880d3abcae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae61c4136d917c3d543a42ddf4abb8cd2"><td class="memItemLeft" align="right" valign="top">sbp_msg_callbacks_node_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__piksi_8c.html#ae61c4136d917c3d543a42ddf4abb8cd2">tracking_state_dep_a_node</a></td></tr>
 <tr class="separator:ae61c4136d917c3d543a42ddf4abb8cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed29eb97b1842d8f42fba0a848211ea3"><td class="memItemLeft" align="right" valign="top">sbp_msg_callbacks_node_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__piksi_8c.html#aed29eb97b1842d8f42fba0a848211ea3">heartbeat_node</a></td></tr>
+<tr class="separator:aed29eb97b1842d8f42fba0a848211ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8215e8ab0018133ba5105d73aaacae35"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__piksi_8c.html#a8215e8ab0018133ba5105d73aaacae35">time_since_last_pos_update</a></td></tr>
 <tr class="separator:a8215e8ab0018133ba5105d73aaacae35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -233,9 +246,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00053">53</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00054">54</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00312">gps_piksi_event()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00349">gps_piksi_event()</a>.</p>
 
 </div>
 </div>
@@ -249,9 +262,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00050">50</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00051">51</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00254">get_fix_mode()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00283">get_fix_mode()</a>.</p>
 
 </div>
 </div>
@@ -265,9 +278,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00049">49</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00050">50</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00254">get_fix_mode()</a>, and <a class="el" href="gps__piksi_8c_source.html#l00110">sbp_pos_ecef_callback()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00283">get_fix_mode()</a>, and <a class="el" href="gps__piksi_8c_source.html#l00131">sbp_pos_ecef_callback()</a>.</p>
 
 </div>
 </div>
@@ -281,9 +294,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00051">51</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00052">52</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00254">get_fix_mode()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00283">get_fix_mode()</a>.</p>
 
 </div>
 </div>
@@ -310,11 +323,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00254">254</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00283">283</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>References <a class="el" href="gps_8h_source.html#l00093">GpsState::fix</a>, <a class="el" href="gps_8c_source.html#l00040">gps</a>, <a class="el" href="gps_8h_source.html#l00044">GPS_FIX_3D</a>, <a class="el" href="gps_8h_source.html#l00045">GPS_FIX_DGPS</a>, <a class="el" href="gps_8h_source.html#l00042">GPS_FIX_NONE</a>, <a class="el" href="gps_8h_source.html#l00046">GPS_FIX_RTK</a>, <a class="el" href="gps__piksi_8c_source.html#l00050">SBP_FIX_MODE_FLOAT</a>, <a class="el" href="gps__piksi_8c_source.html#l00049">SBP_FIX_MODE_SPP</a>, and <a class="el" href="gps__piksi_8c_source.html#l00051">SPB_FIX_MODE_FIXED</a>.</p>
+<p>References <a class="el" href="gps_8h_source.html#l00099">GpsState::fix</a>, <a class="el" href="gps_8c_source.html#l00075">gps</a>, <a class="el" href="gps_8h_source.html#l00039">GPS_FIX_3D</a>, <a class="el" href="gps_8h_source.html#l00040">GPS_FIX_DGPS</a>, <a class="el" href="gps_8h_source.html#l00037">GPS_FIX_NONE</a>, <a class="el" href="gps_8h_source.html#l00041">GPS_FIX_RTK</a>, <a class="el" href="gps__piksi_8c_source.html#l00051">SBP_FIX_MODE_FLOAT</a>, <a class="el" href="gps__piksi_8c_source.html#l00050">SBP_FIX_MODE_SPP</a>, and <a class="el" href="gps__piksi_8c_source.html#l00052">SPB_FIX_MODE_FIXED</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00110">sbp_pos_ecef_callback()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00131">sbp_pos_ecef_callback()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -323,41 +336,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__piksi_8c_ade701b633876b51633dad336d4031b95_icgraph.png" border="0" usemap="#gps__piksi_8c_ade701b633876b51633dad336d4031b95_icgraph" alt=""/></div>
 <map name="gps__piksi_8c_ade701b633876b51633dad336d4031b95_icgraph" id="gps__piksi_8c_ade701b633876b51633dad336d4031b95_icgraph">
-<area shape="rect" id="node2" href="gps__piksi_8c.html#adc6ac5fcbd5eb39085654a667030c5b7" title="sbp_pos_ecef_callback" alt="" coords="161,5,328,32"/><area shape="rect" id="node3" href="gps__piksi_8c.html#ac51e6a5f7940a0acc9dc44b1b8085331" title="GPS initialization. " alt="" coords="376,5,481,32"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="ac51e6a5f7940a0acc9dc44b1b8085331"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void gps_impl_init </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>GPS initialization. </p>
-<p>GPS model specific init implementation. </p>
-
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00279">279</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
-
-<p>References <a class="el" href="gps__piksi_8c_source.html#l00093">dops_node</a>, <a class="el" href="gps_8c_source.html#l00040">gps</a>, <a class="el" href="gps__datalink_8h_source.html#l00035">GPS_NB_CHANNELS</a>, <a class="el" href="gps__piksi_8c_source.html#l00359">gps_piksi_write()</a>, <a class="el" href="gps__piksi_8c_source.html#l00094">gps_time_node</a>, <a class="el" href="gps_8h_source.html#l00097">GpsState::nb_channels</a>, <a class="el" href="gps__piksi_8c_source.html#l00089">pos_ecef_node</a>, <a class="el" href="gps__piksi_8c_source.html#l00091">pos_llh_node</a>, <a class="el" href="gps__piksi_8c_source.html#l00063">SBP_ANT_SET</a>, <a class="el" href="gps__piksi_8c_source.html#l00200">sbp_dops_callback()</a>, <a class="el" href="gps__piksi_8c_source.html#l00209">sbp_gps_time_callback()</a>, <a class="el" href="gps__piksi_8c_source.html#l00110">sbp_pos_ecef_callback()</a>, <a class="el" href="gps__piksi_8c_source.html#l00152">sbp_pos_llh_callback()</a>, <a class="el" href="gps__piksi_8c_source.html#l00083">sbp_state</a>, <a class="el" href="gps__piksi_8c_source.html#l00219">sbp_tracking_state_callback()</a>, <a class="el" href="gps__piksi_8c_source.html#l00235">sbp_tracking_state_dep_a_callback()</a>, <a class="el" href="gps__piksi_8c_source.html#l00074">SBP_UART_SET1</a>, <a class="el" href="gps__piksi_8c_source.html#l00075">SBP_UART_SET2</a>, <a class="el" href="gps__piksi_8c_source.html#l00076">SBP_UART_SET3</a>, <a class="el" href="gps__piksi_8c_source.html#l00136">sbp_vel_ecef_callback()</a>, <a class="el" href="gps__piksi_8c_source.html#l00184">sbp_vel_ned_callback()</a>, <a class="el" href="gps__piksi_8c_source.html#l00096">tracking_state_dep_a_node</a>, <a class="el" href="gps__piksi_8c_source.html#l00095">tracking_state_node</a>, <a class="el" href="gps__piksi_8c_source.html#l00090">vel_ecef_node</a>, and <a class="el" href="gps__piksi_8c_source.html#l00092">vel_ned_node</a>.</p>
-
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="gps__piksi_8c_ac51e6a5f7940a0acc9dc44b1b8085331_cgraph.png" border="0" usemap="#gps__piksi_8c_ac51e6a5f7940a0acc9dc44b1b8085331_cgraph" alt=""/></div>
-<map name="gps__piksi_8c_ac51e6a5f7940a0acc9dc44b1b8085331_cgraph" id="gps__piksi_8c_ac51e6a5f7940a0acc9dc44b1b8085331_cgraph">
-<area shape="rect" id="node2" href="gps__piksi_8c.html#a1085ff467a2b3d7ceaac86f713d75520" title="gps_piksi_write" alt="" coords="185,5,302,32"/><area shape="rect" id="node4" href="gps__piksi_8c.html#a35299174913de888ccde7bf8db290969" title="sbp_dops_callback" alt="" coords="173,56,314,83"/><area shape="rect" id="node5" href="gps__piksi_8c.html#a6299b7bc7b8c1fdbc5ca5c14a930590e" title="sbp_gps_time_callback" alt="" coords="159,107,328,133"/><area shape="rect" id="node6" href="gps__piksi_8c.html#adc6ac5fcbd5eb39085654a667030c5b7" title="sbp_pos_ecef_callback" alt="" coords="160,157,327,184"/><area shape="rect" id="node13" href="gps__piksi_8c.html#adb806b033795825c75feb7e7b4f09bdd" title="sbp_pos_llh_callback" alt="" coords="166,208,321,235"/><area shape="rect" id="node14" href="gps__piksi_8c.html#a1a86da16d9d399272bfaab18b7faeafe" title="sbp_tracking_state\l_callback" alt="" coords="172,259,315,301"/><area shape="rect" id="node15" href="gps__piksi_8c.html#a2ad2ea41453e3b5bff367fbdeb0bb827" title="sbp_tracking_state\l_dep_a_callback" alt="" coords="172,325,315,366"/><area shape="rect" id="node16" href="gps__piksi_8c.html#afa5c5059358b48ae5151d1ec6e8e8d04" title="sbp_vel_ecef_callback" alt="" coords="162,391,325,417"/><area shape="rect" id="node17" href="gps__piksi_8c.html#a0d069b34ba061322d213039fcd99a669" title="sbp_vel_ned_callback" alt="" coords="164,441,323,468"/><area shape="rect" id="node3" href="linux_2mcu__periph_2uart__arch_8c.html#ac52690ed0854ab6c1b5ef3ba0ccc8040" title="uart_put_byte" alt="" coords="395,5,506,32"/><area shape="rect" id="node7" href="linux_2mcu__periph_2sys__time__arch_8h.html#a5f8c93bbb4f24eee68b36977371aa262" title="Get the time in milliseconds since startup. " alt="" coords="376,132,525,159"/><area shape="rect" id="node9" href="gps__piksi_8c.html#ade701b633876b51633dad336d4031b95" title="get_fix_mode" alt="" coords="397,183,505,209"/><area shape="rect" id="node10" href="gps__piksi_8c.html#ab873aa70bd8af4c37c8dbc07d13ea1de" title="gps_piksi_publish" alt="" coords="385,299,517,325"/><area shape="rect" id="node8" href="sys__time_8h.html#a0f2d5e1c11d8950e639deada1d33b802" title="msec_of_cpu_ticks" alt="" coords="574,132,717,159"/><area shape="rect" id="node11" href="linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="573,299,717,325"/><area shape="rect" id="node12" href="sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="765,299,903,325"/><area shape="rect" id="node18" href="group__math__algebra__int.html#ga4f101a6e0a22ac1b90f36fe8bf97d702" title="int32_sqrt" alt="" coords="407,441,494,468"/></map>
+<area shape="rect" id="node2" href="gps__piksi_8c.html#adc6ac5fcbd5eb39085654a667030c5b7" title="sbp_pos_ecef_callback" alt="" coords="161,5,328,32"/><area shape="rect" id="node3" href="gps__piksi_8h.html#a2fcb9204061227b94027a135c469c4b5" title="gps_piksi_init" alt="" coords="376,5,483,32"/></map>
 </div>
 </p>
 
@@ -396,18 +375,18 @@ Variables</h2></td></tr>
 <p>Override the default GPS packet injector to inject the data trough UART. </p>
 <p>GPS packet injection (default empty) </p>
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00371">371</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00408">408</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2datalink_8c_source.html#l00065">dl_parse_msg()</a>.</p>
+<p>Referenced by <a class="el" href="datalink_8c_source.html#l00055">dl_parse_msg()</a>.</p>
 
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__piksi_8c_a92de5b7fc6f0e0c9c2a3f6aa1b175c6f_icgraph.png" border="0" usemap="#gps__piksi_8c_a92de5b7fc6f0e0c9c2a3f6aa1b175c6f_icgraph" alt=""/></div>
 <map name="gps__piksi_8c_a92de5b7fc6f0e0c9c2a3f6aa1b175c6f_icgraph" id="gps__piksi_8c_a92de5b7fc6f0e0c9c2a3f6aa1b175c6f_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2datalink_8c.html#a87ff8c0ffff657dbde8566f062779428" title="Should be called when chars are available in dl_buffer. " alt="" coords="176,5,287,32"/></map>
+<area shape="rect" id="node2" href="datalink_8c.html#a87ff8c0ffff657dbde8566f062779428" title="Should be called when chars are available in dl_buffer. " alt="" coords="176,5,287,32"/><area shape="rect" id="node3" href="datalink_8h.html#ae934a9730fa6dff019fea5cb4f0d5894" title="Check for new message and parse. " alt="" coords="335,5,469,32"/><area shape="rect" id="node4" href="sim__ap_8c.html#ad664061534694a2babfff03cfc5977f7" title="set_datalink_message" alt="" coords="517,5,683,32"/></map>
 </div>
 </p>
 
@@ -427,18 +406,49 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00312">312</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00349">349</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>References <a class="el" href="gps_8h_source.html#l00093">GpsState::fix</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8h_source.html#l00049">get_sys_time_msec()</a>, <a class="el" href="gps_8c_source.html#l00040">gps</a>, <a class="el" href="gps_8h_source.html#l00042">GPS_FIX_NONE</a>, <a class="el" href="gps__piksi_8c_source.html#l00343">gps_piksi_read()</a>, <a class="el" href="gps__piksi_8c_source.html#l00053">POS_ECEF_TIMEOUT</a>, <a class="el" href="gps__piksi_8c_source.html#l00083">sbp_state</a>, and <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00296">uart_char_available()</a>.</p>
+<p>References <a class="el" href="gps_8h_source.html#l00099">GpsState::fix</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00078">get_sys_time_msec()</a>, <a class="el" href="gps_8h_source.html#l00037">GPS_FIX_NONE</a>, <a class="el" href="gps__piksi_8c_source.html#l00059">gps_piksi</a>, <a class="el" href="gps__piksi_8c_source.html#l00380">gps_piksi_read()</a>, <a class="el" href="gps__piksi_8c_source.html#l00054">POS_ECEF_TIMEOUT</a>, <a class="el" href="gps__piksi_8c_source.html#l00103">sbp_state</a>, and <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00296">uart_char_available()</a>.</p>
+
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="gps__piksi_8c_a2a11e7df7bcc31ab10141f020bd6f729_cgraph.png" border="0" usemap="#gps__piksi_8c_a2a11e7df7bcc31ab10141f020bd6f729_cgraph" alt=""/></div>
+<map name="gps__piksi_8c_a2a11e7df7bcc31ab10141f020bd6f729_cgraph" id="gps__piksi_8c_a2a11e7df7bcc31ab10141f020bd6f729_cgraph">
+<area shape="rect" id="node2" href="chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="get_sys_time_msec" alt="" coords="176,5,325,32"/><area shape="rect" id="node4" href="gps__piksi_8c.html#a75f6c31f12465cc8684300711474574e" title="gps_piksi_read" alt="" coords="193,107,309,133"/><area shape="rect" id="node5" href="linux_2mcu__periph_2uart__arch_8c.html#abd0dcae4715bc91bdf3369785a9b6c87" title="Check UART for available chars in receive buffer. " alt="" coords="388,56,535,83"/><area shape="rect" id="node3" href="sys__time_8h.html#ab67b78f01783839deb76623ff83981dd" title="msec_of_sys_time_ticks" alt="" coords="373,5,549,32"/><area shape="rect" id="node6" href="chibios_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039" title="uart_getch" alt="" coords="416,107,507,133"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2fcb9204061227b94027a135c469c4b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gps_piksi_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00308">308</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+
+<p>References <a class="el" href="gps_8h_source.html#l00083">GpsState::comp_id</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="gps__piksi_8c_source.html#l00113">dops_node</a>, <a class="el" href="gps__piksi_8c_source.html#l00059">gps_piksi</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00146">GPS_PIKSI_ID</a>, <a class="el" href="gps__piksi_8c_source.html#l00396">gps_piksi_write()</a>, <a class="el" href="gps__piksi_8c_source.html#l00114">gps_time_node</a>, <a class="el" href="gps__piksi_8c_source.html#l00117">heartbeat_node</a>, <a class="el" href="gps_8h_source.html#l00103">GpsState::nb_channels</a>, <a class="el" href="gps__piksi_8c_source.html#l00109">pos_ecef_node</a>, <a class="el" href="gps__piksi_8c_source.html#l00111">pos_llh_node</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, <a class="el" href="gps__piksi_8c_source.html#l00083">SBP_ANT_SET</a>, <a class="el" href="gps__piksi_8c_source.html#l00221">sbp_dops_callback()</a>, <a class="el" href="gps__piksi_8c_source.html#l00230">sbp_gps_time_callback()</a>, <a class="el" href="gps__piksi_8c_source.html#l00131">sbp_pos_ecef_callback()</a>, <a class="el" href="gps__piksi_8c_source.html#l00173">sbp_pos_llh_callback()</a>, <a class="el" href="gps__piksi_8c_source.html#l00103">sbp_state</a>, <a class="el" href="gps__piksi_8c_source.html#l00240">sbp_tracking_state_callback()</a>, <a class="el" href="gps__piksi_8c_source.html#l00256">sbp_tracking_state_dep_a_callback()</a>, <a class="el" href="gps__piksi_8c_source.html#l00094">SBP_UART_SET1</a>, <a class="el" href="gps__piksi_8c_source.html#l00095">SBP_UART_SET2</a>, <a class="el" href="gps__piksi_8c_source.html#l00096">SBP_UART_SET3</a>, <a class="el" href="gps__piksi_8c_source.html#l00157">sbp_vel_ecef_callback()</a>, <a class="el" href="gps__piksi_8c_source.html#l00205">sbp_vel_ned_callback()</a>, <a class="el" href="gps__piksi_8c_source.html#l00067">send_piksi_heartbeat()</a>, <a class="el" href="gps__piksi_8c_source.html#l00272">spb_heartbeat_callback()</a>, <a class="el" href="gps__piksi_8c_source.html#l00116">tracking_state_dep_a_node</a>, <a class="el" href="gps__piksi_8c_source.html#l00115">tracking_state_node</a>, <a class="el" href="gps__piksi_8c_source.html#l00110">vel_ecef_node</a>, and <a class="el" href="gps__piksi_8c_source.html#l00112">vel_ned_node</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="gps__piksi_8c_a2a11e7df7bcc31ab10141f020bd6f729_cgraph.png" border="0" usemap="#gps__piksi_8c_a2a11e7df7bcc31ab10141f020bd6f729_cgraph" alt=""/></div>
-<map name="gps__piksi_8c_a2a11e7df7bcc31ab10141f020bd6f729_cgraph" id="gps__piksi_8c_a2a11e7df7bcc31ab10141f020bd6f729_cgraph">
-<area shape="rect" id="node2" href="linux_2mcu__periph_2sys__time__arch_8h.html#a5f8c93bbb4f24eee68b36977371aa262" title="Get the time in milliseconds since startup. " alt="" coords="176,5,325,32"/><area shape="rect" id="node4" href="gps__piksi_8c.html#a75f6c31f12465cc8684300711474574e" title="gps_piksi_read" alt="" coords="193,107,309,133"/><area shape="rect" id="node5" href="linux_2mcu__periph_2uart__arch_8c.html#abd0dcae4715bc91bdf3369785a9b6c87" title="Check UART for available chars in receive buffer. " alt="" coords="373,56,520,83"/><area shape="rect" id="node3" href="sys__time_8h.html#a0f2d5e1c11d8950e639deada1d33b802" title="msec_of_cpu_ticks" alt="" coords="375,5,518,32"/><area shape="rect" id="node6" href="linux_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039" title="uart_getch" alt="" coords="401,107,492,133"/></map>
+<div class="center"><img src="gps__piksi_8c_a2fcb9204061227b94027a135c469c4b5_cgraph.png" border="0" usemap="#gps__piksi_8c_a2fcb9204061227b94027a135c469c4b5_cgraph" alt=""/></div>
+<map name="gps__piksi_8c_a2fcb9204061227b94027a135c469c4b5_cgraph" id="gps__piksi_8c_a2fcb9204061227b94027a135c469c4b5_cgraph">
+<area shape="rect" id="node2" href="gps__piksi_8c.html#a1085ff467a2b3d7ceaac86f713d75520" title="gps_piksi_write" alt="" coords="200,5,317,32"/><area shape="rect" id="node4" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="160,56,357,83"/><area shape="rect" id="node5" href="gps__piksi_8c.html#a35299174913de888ccde7bf8db290969" title="sbp_dops_callback" alt="" coords="188,107,329,133"/><area shape="rect" id="node6" href="gps__piksi_8c.html#a6299b7bc7b8c1fdbc5ca5c14a930590e" title="sbp_gps_time_callback" alt="" coords="174,157,343,184"/><area shape="rect" id="node7" href="gps__piksi_8c.html#adc6ac5fcbd5eb39085654a667030c5b7" title="sbp_pos_ecef_callback" alt="" coords="175,259,342,285"/><area shape="rect" id="node14" href="gps__piksi_8c.html#adb806b033795825c75feb7e7b4f09bdd" title="sbp_pos_llh_callback" alt="" coords="181,360,336,387"/><area shape="rect" id="node15" href="gps__piksi_8c.html#a1a86da16d9d399272bfaab18b7faeafe" title="sbp_tracking_state\l_callback" alt="" coords="187,411,330,453"/><area shape="rect" id="node16" href="gps__piksi_8c.html#a2ad2ea41453e3b5bff367fbdeb0bb827" title="sbp_tracking_state\l_dep_a_callback" alt="" coords="187,477,330,518"/><area shape="rect" id="node17" href="gps__piksi_8c.html#afa5c5059358b48ae5151d1ec6e8e8d04" title="sbp_vel_ecef_callback" alt="" coords="177,309,340,336"/><area shape="rect" id="node18" href="gps__piksi_8c.html#a0d069b34ba061322d213039fcd99a669" title="sbp_vel_ned_callback" alt="" coords="179,543,338,569"/><area shape="rect" id="node20" href="gps__piksi_8c.html#a936a09815bd79f5d8b1f0a40a0cc48a9" title="send_piksi_heartbeat" alt="" coords="179,593,338,620"/><area shape="rect" id="node21" href="gps__piksi_8c.html#a7eaf9070f9bdcf0ecfb9efe570ece699" title="spb_heartbeat_callback" alt="" coords="172,208,345,235"/><area shape="rect" id="node3" href="chibios_2mcu__periph_2uart__arch_8c.html#a47d332312effc31e88e688471daf02a5" title="Uart transmit implementation. " alt="" coords="425,5,535,32"/><area shape="rect" id="node8" href="chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="get_sys_time_msec" alt="" coords="405,208,555,235"/><area shape="rect" id="node10" href="gps__piksi_8c.html#ade701b633876b51633dad336d4031b95" title="get_fix_mode" alt="" coords="426,259,534,285"/><area shape="rect" id="node11" href="gps__piksi_8c.html#ab873aa70bd8af4c37c8dbc07d13ea1de" title="gps_piksi_publish" alt="" coords="414,309,546,336"/><area shape="rect" id="node9" href="sys__time_8h.html#ab67b78f01783839deb76623ff83981dd" title="msec_of_sys_time_ticks" alt="" coords="603,208,779,235"/><area shape="rect" id="node12" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="619,309,763,336"/><area shape="rect" id="node13" href="sys__time_8h.html#adb22f2652f04908fbc644c7274bf7273" title="usec_of_sys_time_ticks" alt="" coords="827,309,997,336"/><area shape="rect" id="node19" href="group__math__algebra__int.html#ga4f101a6e0a22ac1b90f36fe8bf97d702" title="int32_sqrt" alt="" coords="437,543,523,569"/></map>
 </div>
 </p>
 
@@ -466,11 +476,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00325">325</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00362">362</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>References <a class="el" href="gps_8h_source.html#l00093">GpsState::fix</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8h_source.html#l00039">get_sys_time_usec()</a>, <a class="el" href="gps_8c_source.html#l00040">gps</a>, <a class="el" href="gps_8h_source.html#l00044">GPS_FIX_3D</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00138">GPS_PIKSI_ID</a>, <a class="el" href="gps_8h_source.html#l00100">GpsState::last_3dfix_ticks</a>, <a class="el" href="gps_8h_source.html#l00101">GpsState::last_3dfix_time</a>, <a class="el" href="gps_8h_source.html#l00102">GpsState::last_msg_ticks</a>, <a class="el" href="gps_8h_source.html#l00103">GpsState::last_msg_time</a>, <a class="el" href="sys__time_8h_source.html#l00069">sys_time::nb_sec</a>, and <a class="el" href="sys__time_8h_source.html#l00070">sys_time::nb_sec_rem</a>.</p>
+<p>References <a class="el" href="gps_8h_source.html#l00099">GpsState::fix</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">get_sys_time_usec()</a>, <a class="el" href="gps_8h_source.html#l00039">GPS_FIX_3D</a>, <a class="el" href="gps__piksi_8c_source.html#l00059">gps_piksi</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00146">GPS_PIKSI_ID</a>, <a class="el" href="gps_8h_source.html#l00106">GpsState::last_3dfix_ticks</a>, <a class="el" href="gps_8h_source.html#l00107">GpsState::last_3dfix_time</a>, <a class="el" href="gps_8h_source.html#l00108">GpsState::last_msg_ticks</a>, <a class="el" href="gps_8h_source.html#l00109">GpsState::last_msg_time</a>, <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, and <a class="el" href="sys__time_8h_source.html#l00073">sys_time::nb_sec_rem</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00110">sbp_pos_ecef_callback()</a>, and <a class="el" href="gps__piksi_8c_source.html#l00136">sbp_vel_ecef_callback()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00131">sbp_pos_ecef_callback()</a>, and <a class="el" href="gps__piksi_8c_source.html#l00157">sbp_vel_ecef_callback()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -479,7 +489,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__piksi_8c_ab873aa70bd8af4c37c8dbc07d13ea1de_cgraph.png" border="0" usemap="#gps__piksi_8c_ab873aa70bd8af4c37c8dbc07d13ea1de_cgraph" alt=""/></div>
 <map name="gps__piksi_8c_ab873aa70bd8af4c37c8dbc07d13ea1de_cgraph" id="gps__piksi_8c_ab873aa70bd8af4c37c8dbc07d13ea1de_cgraph">
-<area shape="rect" id="node2" href="linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="185,5,329,32"/><area shape="rect" id="node3" href="sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="377,5,515,32"/></map>
+<area shape="rect" id="node2" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="185,5,329,32"/><area shape="rect" id="node3" href="sys__time_8h.html#adb22f2652f04908fbc644c7274bf7273" title="usec_of_sys_time_ticks" alt="" coords="377,5,548,32"/></map>
 </div>
 </p>
 
@@ -490,7 +500,7 @@ Variables</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__piksi_8c_ab873aa70bd8af4c37c8dbc07d13ea1de_icgraph.png" border="0" usemap="#gps__piksi_8c_ab873aa70bd8af4c37c8dbc07d13ea1de_icgraph" alt=""/></div>
 <map name="gps__piksi_8c_ab873aa70bd8af4c37c8dbc07d13ea1de_icgraph" id="gps__piksi_8c_ab873aa70bd8af4c37c8dbc07d13ea1de_icgraph">
-<area shape="rect" id="node2" href="gps__piksi_8c.html#adc6ac5fcbd5eb39085654a667030c5b7" title="sbp_pos_ecef_callback" alt="" coords="185,5,352,32"/><area shape="rect" id="node4" href="gps__piksi_8c.html#afa5c5059358b48ae5151d1ec6e8e8d04" title="sbp_vel_ecef_callback" alt="" coords="187,56,350,83"/><area shape="rect" id="node3" href="gps__piksi_8c.html#ac51e6a5f7940a0acc9dc44b1b8085331" title="GPS initialization. " alt="" coords="400,31,505,57"/></map>
+<area shape="rect" id="node2" href="gps__piksi_8c.html#adc6ac5fcbd5eb39085654a667030c5b7" title="sbp_pos_ecef_callback" alt="" coords="185,5,352,32"/><area shape="rect" id="node4" href="gps__piksi_8c.html#afa5c5059358b48ae5151d1ec6e8e8d04" title="sbp_vel_ecef_callback" alt="" coords="187,56,350,83"/><area shape="rect" id="node3" href="gps__piksi_8h.html#a2fcb9204061227b94027a135c469c4b5" title="gps_piksi_init" alt="" coords="400,31,507,57"/></map>
 </div>
 </p>
 
@@ -526,11 +536,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00343">343</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00380">380</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>References <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00296">uart_char_available()</a>, and <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00287">uart_getch()</a>.</p>
+<p>References <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00296">uart_char_available()</a>, and <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00822">uart_getch()</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00312">gps_piksi_event()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00349">gps_piksi_event()</a>.</p>
 
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -539,7 +549,7 @@ Variables</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__piksi_8c_a75f6c31f12465cc8684300711474574e_cgraph.png" border="0" usemap="#gps__piksi_8c_a75f6c31f12465cc8684300711474574e_cgraph" alt=""/></div>
 <map name="gps__piksi_8c_a75f6c31f12465cc8684300711474574e_cgraph" id="gps__piksi_8c_a75f6c31f12465cc8684300711474574e_cgraph">
-<area shape="rect" id="node2" href="linux_2mcu__periph_2uart__arch_8c.html#abd0dcae4715bc91bdf3369785a9b6c87" title="Check UART for available chars in receive buffer. " alt="" coords="169,5,316,32"/><area shape="rect" id="node3" href="linux_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039" title="uart_getch" alt="" coords="197,56,288,83"/></map>
+<area shape="rect" id="node2" href="linux_2mcu__periph_2uart__arch_8c.html#abd0dcae4715bc91bdf3369785a9b6c87" title="Check UART for available chars in receive buffer. " alt="" coords="169,5,316,32"/><area shape="rect" id="node3" href="chibios_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039" title="uart_getch" alt="" coords="197,56,288,83"/></map>
 </div>
 </p>
 
@@ -586,11 +596,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00359">359</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00396">396</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>References <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00243">uart_put_byte()</a>.</p>
+<p>References <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00917">uart_put_byte()</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00279">gps_impl_init()</a>, and <a class="el" href="gps__piksi_8c_source.html#l00371">gps_inject_data()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00408">gps_inject_data()</a>, and <a class="el" href="gps__piksi_8c_source.html#l00308">gps_piksi_init()</a>.</p>
 
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -599,7 +609,7 @@ Variables</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__piksi_8c_a1085ff467a2b3d7ceaac86f713d75520_cgraph.png" border="0" usemap="#gps__piksi_8c_a1085ff467a2b3d7ceaac86f713d75520_cgraph" alt=""/></div>
 <map name="gps__piksi_8c_a1085ff467a2b3d7ceaac86f713d75520_cgraph" id="gps__piksi_8c_a1085ff467a2b3d7ceaac86f713d75520_cgraph">
-<area shape="rect" id="node2" href="linux_2mcu__periph_2uart__arch_8c.html#ac52690ed0854ab6c1b5ef3ba0ccc8040" title="uart_put_byte" alt="" coords="171,5,281,32"/></map>
+<area shape="rect" id="node2" href="chibios_2mcu__periph_2uart__arch_8c.html#a47d332312effc31e88e688471daf02a5" title="Uart transmit implementation. " alt="" coords="171,5,281,32"/></map>
 </div>
 </p>
 
@@ -610,7 +620,7 @@ Variables</h2></td></tr>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__piksi_8c_a1085ff467a2b3d7ceaac86f713d75520_icgraph.png" border="0" usemap="#gps__piksi_8c_a1085ff467a2b3d7ceaac86f713d75520_icgraph" alt=""/></div>
 <map name="gps__piksi_8c_a1085ff467a2b3d7ceaac86f713d75520_icgraph" id="gps__piksi_8c_a1085ff467a2b3d7ceaac86f713d75520_icgraph">
-<area shape="rect" id="node2" href="gps__piksi_8c.html#ac51e6a5f7940a0acc9dc44b1b8085331" title="GPS initialization. " alt="" coords="179,5,285,32"/><area shape="rect" id="node3" href="gps_8h.html#a92de5b7fc6f0e0c9c2a3f6aa1b175c6f" title="GPS packet injection (default empty) " alt="" coords="171,56,293,83"/><area shape="rect" id="node4" href="rotorcraft_2datalink_8c.html#a87ff8c0ffff657dbde8566f062779428" title="Should be called when chars are available in dl_buffer. " alt="" coords="341,56,452,83"/></map>
+<area shape="rect" id="node2" href="gps_8h.html#a92de5b7fc6f0e0c9c2a3f6aa1b175c6f" title="GPS packet injection (default empty) " alt="" coords="171,5,293,32"/><area shape="rect" id="node6" href="gps__piksi_8h.html#a2fcb9204061227b94027a135c469c4b5" title="gps_piksi_init" alt="" coords="179,56,285,83"/><area shape="rect" id="node3" href="datalink_8c.html#a87ff8c0ffff657dbde8566f062779428" title="Should be called when chars are available in dl_buffer. " alt="" coords="341,5,452,32"/><area shape="rect" id="node4" href="datalink_8h.html#ae934a9730fa6dff019fea5cb4f0d5894" title="Check for new message and parse. " alt="" coords="500,5,635,32"/><area shape="rect" id="node5" href="sim__ap_8c.html#ad664061534694a2babfff03cfc5977f7" title="set_datalink_message" alt="" coords="683,5,848,32"/></map>
 </div>
 </p>
 
@@ -660,11 +670,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00200">200</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00221">221</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>References <a class="el" href="gps_8c_source.html#l00040">gps</a>, and <a class="el" href="gps_8h_source.html#l00091">GpsState::pdop</a>.</p>
+<p>References <a class="el" href="gps__piksi_8c_source.html#l00059">gps_piksi</a>, and <a class="el" href="gps_8h_source.html#l00097">GpsState::pdop</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00279">gps_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00308">gps_piksi_init()</a>.</p>
 
 <p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -673,7 +683,7 @@ Variables</h2></td></tr>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__piksi_8c_a35299174913de888ccde7bf8db290969_icgraph.png" border="0" usemap="#gps__piksi_8c_a35299174913de888ccde7bf8db290969_icgraph" alt=""/></div>
 <map name="gps__piksi_8c_a35299174913de888ccde7bf8db290969_icgraph" id="gps__piksi_8c_a35299174913de888ccde7bf8db290969_icgraph">
-<area shape="rect" id="node2" href="gps__piksi_8c.html#ac51e6a5f7940a0acc9dc44b1b8085331" title="GPS initialization. " alt="" coords="195,5,300,32"/></map>
+<area shape="rect" id="node2" href="gps__piksi_8h.html#a2fcb9204061227b94027a135c469c4b5" title="gps_piksi_init" alt="" coords="195,5,301,32"/></map>
 </div>
 </p>
 
@@ -723,11 +733,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00209">209</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00230">230</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>References <a class="el" href="gps_8c_source.html#l00040">gps</a>, <a class="el" href="gps_8h_source.html#l00095">GpsState::tow</a>, and <a class="el" href="gps_8h_source.html#l00094">GpsState::week</a>.</p>
+<p>References <a class="el" href="gps__piksi_8c_source.html#l00059">gps_piksi</a>, <a class="el" href="gps_8h_source.html#l00101">GpsState::tow</a>, and <a class="el" href="gps_8h_source.html#l00100">GpsState::week</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00279">gps_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00308">gps_piksi_init()</a>.</p>
 
 <p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -736,7 +746,7 @@ Variables</h2></td></tr>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__piksi_8c_a6299b7bc7b8c1fdbc5ca5c14a930590e_icgraph.png" border="0" usemap="#gps__piksi_8c_a6299b7bc7b8c1fdbc5ca5c14a930590e_icgraph" alt=""/></div>
 <map name="gps__piksi_8c_a6299b7bc7b8c1fdbc5ca5c14a930590e_icgraph" id="gps__piksi_8c_a6299b7bc7b8c1fdbc5ca5c14a930590e_icgraph">
-<area shape="rect" id="node2" href="gps__piksi_8c.html#ac51e6a5f7940a0acc9dc44b1b8085331" title="GPS initialization. " alt="" coords="223,5,328,32"/></map>
+<area shape="rect" id="node2" href="gps__piksi_8h.html#a2fcb9204061227b94027a135c469c4b5" title="gps_piksi_init" alt="" coords="223,5,329,32"/></map>
 </div>
 </p>
 
@@ -786,11 +796,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00110">110</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00131">131</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>References <a class="el" href="gps_8h_source.html#l00079">GpsState::ecef_pos</a>, <a class="el" href="gps_8h_source.html#l00093">GpsState::fix</a>, <a class="el" href="gps__piksi_8c_source.html#l00254">get_fix_mode()</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8h_source.html#l00049">get_sys_time_msec()</a>, <a class="el" href="gps_8c_source.html#l00040">gps</a>, <a class="el" href="gps_8h_source.html#l00044">GPS_FIX_3D</a>, <a class="el" href="gps__piksi_8c_source.html#l00325">gps_piksi_publish()</a>, <a class="el" href="gps_8h_source.html#l00057">GPS_VALID_POS_ECEF_BIT</a>, <a class="el" href="gps_8h_source.html#l00092">GpsState::num_sv</a>, <a class="el" href="gps_8h_source.html#l00088">GpsState::pacc</a>, <a class="el" href="gps__piksi_8c_source.html#l00049">SBP_FIX_MODE_SPP</a>, <a class="el" href="gps_8h_source.html#l00095">GpsState::tow</a>, <a class="el" href="gps_8h_source.html#l00077">GpsState::valid_fields</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00051">EcefCoor_i::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00052">EcefCoor_i::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00053">EcefCoor_i::z</a>.</p>
+<p>References <a class="el" href="gps_8h_source.html#l00085">GpsState::ecef_pos</a>, <a class="el" href="gps_8h_source.html#l00099">GpsState::fix</a>, <a class="el" href="gps__piksi_8c_source.html#l00283">get_fix_mode()</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00078">get_sys_time_msec()</a>, <a class="el" href="gps_8h_source.html#l00039">GPS_FIX_3D</a>, <a class="el" href="gps__piksi_8c_source.html#l00059">gps_piksi</a>, <a class="el" href="gps__piksi_8c_source.html#l00362">gps_piksi_publish()</a>, <a class="el" href="gps_8h_source.html#l00048">GPS_VALID_POS_ECEF_BIT</a>, <a class="el" href="gps_8h_source.html#l00098">GpsState::num_sv</a>, <a class="el" href="gps_8h_source.html#l00094">GpsState::pacc</a>, <a class="el" href="gps__piksi_8c_source.html#l00050">SBP_FIX_MODE_SPP</a>, <a class="el" href="gps_8h_source.html#l00101">GpsState::tow</a>, <a class="el" href="gps_8h_source.html#l00082">GpsState::valid_fields</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00051">EcefCoor_i::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00052">EcefCoor_i::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00053">EcefCoor_i::z</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00279">gps_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00308">gps_piksi_init()</a>.</p>
 
 <p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -799,7 +809,7 @@ Variables</h2></td></tr>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__piksi_8c_adc6ac5fcbd5eb39085654a667030c5b7_cgraph.png" border="0" usemap="#gps__piksi_8c_adc6ac5fcbd5eb39085654a667030c5b7_cgraph" alt=""/></div>
 <map name="gps__piksi_8c_adc6ac5fcbd5eb39085654a667030c5b7_cgraph" id="gps__piksi_8c_adc6ac5fcbd5eb39085654a667030c5b7_cgraph">
-<area shape="rect" id="node2" href="gps__piksi_8c.html#ade701b633876b51633dad336d4031b95" title="get_fix_mode" alt="" coords="241,5,349,32"/><area shape="rect" id="node3" href="linux_2mcu__periph_2sys__time__arch_8h.html#a5f8c93bbb4f24eee68b36977371aa262" title="Get the time in milliseconds since startup. " alt="" coords="220,56,369,83"/><area shape="rect" id="node5" href="gps__piksi_8c.html#ab873aa70bd8af4c37c8dbc07d13ea1de" title="gps_piksi_publish" alt="" coords="229,107,361,133"/><area shape="rect" id="node4" href="sys__time_8h.html#a0f2d5e1c11d8950e639deada1d33b802" title="msec_of_cpu_ticks" alt="" coords="418,56,561,83"/><area shape="rect" id="node6" href="linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="417,107,561,133"/><area shape="rect" id="node7" href="sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="609,107,747,133"/></map>
+<area shape="rect" id="node2" href="gps__piksi_8c.html#ade701b633876b51633dad336d4031b95" title="get_fix_mode" alt="" coords="241,5,349,32"/><area shape="rect" id="node3" href="chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="get_sys_time_msec" alt="" coords="220,56,369,83"/><area shape="rect" id="node5" href="gps__piksi_8c.html#ab873aa70bd8af4c37c8dbc07d13ea1de" title="gps_piksi_publish" alt="" coords="229,107,361,133"/><area shape="rect" id="node4" href="sys__time_8h.html#ab67b78f01783839deb76623ff83981dd" title="msec_of_sys_time_ticks" alt="" coords="417,56,593,83"/><area shape="rect" id="node6" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="433,107,577,133"/><area shape="rect" id="node7" href="sys__time_8h.html#adb22f2652f04908fbc644c7274bf7273" title="usec_of_sys_time_ticks" alt="" coords="641,107,812,133"/></map>
 </div>
 </p>
 
@@ -810,7 +820,7 @@ Variables</h2></td></tr>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__piksi_8c_adc6ac5fcbd5eb39085654a667030c5b7_icgraph.png" border="0" usemap="#gps__piksi_8c_adc6ac5fcbd5eb39085654a667030c5b7_icgraph" alt=""/></div>
 <map name="gps__piksi_8c_adc6ac5fcbd5eb39085654a667030c5b7_icgraph" id="gps__piksi_8c_adc6ac5fcbd5eb39085654a667030c5b7_icgraph">
-<area shape="rect" id="node2" href="gps__piksi_8c.html#ac51e6a5f7940a0acc9dc44b1b8085331" title="GPS initialization. " alt="" coords="220,5,325,32"/></map>
+<area shape="rect" id="node2" href="gps__piksi_8h.html#a2fcb9204061227b94027a135c469c4b5" title="gps_piksi_init" alt="" coords="220,5,327,32"/></map>
 </div>
 </p>
 
@@ -860,11 +870,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00152">152</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00173">173</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="gps_8c_source.html#l00040">gps</a>, <a class="el" href="gps_8h_source.html#l00062">GPS_VALID_HMSL_BIT</a>, <a class="el" href="gps_8h_source.html#l00058">GPS_VALID_POS_LLA_BIT</a>, <a class="el" href="gps_8h_source.html#l00082">GpsState::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="gps_8h_source.html#l00080">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, and <a class="el" href="gps_8h_source.html#l00077">GpsState::valid_fields</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="gps__piksi_8c_source.html#l00059">gps_piksi</a>, <a class="el" href="gps_8h_source.html#l00053">GPS_VALID_HMSL_BIT</a>, <a class="el" href="gps_8h_source.html#l00049">GPS_VALID_POS_LLA_BIT</a>, <a class="el" href="gps_8h_source.html#l00088">GpsState::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="gps_8h_source.html#l00086">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, and <a class="el" href="gps_8h_source.html#l00082">GpsState::valid_fields</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00279">gps_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00308">gps_piksi_init()</a>.</p>
 
 <p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -873,7 +883,7 @@ Variables</h2></td></tr>
 <div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__piksi_8c_adb806b033795825c75feb7e7b4f09bdd_icgraph.png" border="0" usemap="#gps__piksi_8c_adb806b033795825c75feb7e7b4f09bdd_icgraph" alt=""/></div>
 <map name="gps__piksi_8c_adb806b033795825c75feb7e7b4f09bdd_icgraph" id="gps__piksi_8c_adb806b033795825c75feb7e7b4f09bdd_icgraph">
-<area shape="rect" id="node2" href="gps__piksi_8c.html#ac51e6a5f7940a0acc9dc44b1b8085331" title="GPS initialization. " alt="" coords="208,5,313,32"/></map>
+<area shape="rect" id="node2" href="gps__piksi_8h.html#a2fcb9204061227b94027a135c469c4b5" title="gps_piksi_init" alt="" coords="208,5,315,32"/></map>
 </div>
 </p>
 
@@ -923,11 +933,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00219">219</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00240">240</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>References <a class="el" href="gps_8h_source.html#l00070">SVinfo::cno</a>, <a class="el" href="gps_8c_source.html#l00040">gps</a>, <a class="el" href="gps_8h_source.html#l00067">SVinfo::svid</a>, and <a class="el" href="gps_8h_source.html#l00098">GpsState::svinfos</a>.</p>
+<p>References <a class="el" href="gps_8h_source.html#l00075">SVinfo::cno</a>, <a class="el" href="gps__piksi_8c_source.html#l00059">gps_piksi</a>, <a class="el" href="gps_8h_source.html#l00072">SVinfo::svid</a>, and <a class="el" href="gps_8h_source.html#l00104">GpsState::svinfos</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00279">gps_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00308">gps_piksi_init()</a>.</p>
 
 <p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -936,7 +946,7 @@ Variables</h2></td></tr>
 <div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__piksi_8c_a1a86da16d9d399272bfaab18b7faeafe_icgraph.png" border="0" usemap="#gps__piksi_8c_a1a86da16d9d399272bfaab18b7faeafe_icgraph" alt=""/></div>
 <map name="gps__piksi_8c_a1a86da16d9d399272bfaab18b7faeafe_icgraph" id="gps__piksi_8c_a1a86da16d9d399272bfaab18b7faeafe_icgraph">
-<area shape="rect" id="node2" href="gps__piksi_8c.html#ac51e6a5f7940a0acc9dc44b1b8085331" title="GPS initialization. " alt="" coords="196,13,301,39"/></map>
+<area shape="rect" id="node2" href="gps__piksi_8h.html#a2fcb9204061227b94027a135c469c4b5" title="gps_piksi_init" alt="" coords="196,13,303,39"/></map>
 </div>
 </p>
 
@@ -986,11 +996,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00235">235</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00256">256</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>References <a class="el" href="gps_8h_source.html#l00070">SVinfo::cno</a>, <a class="el" href="gps_8c_source.html#l00040">gps</a>, <a class="el" href="gps_8h_source.html#l00067">SVinfo::svid</a>, and <a class="el" href="gps_8h_source.html#l00098">GpsState::svinfos</a>.</p>
+<p>References <a class="el" href="gps_8h_source.html#l00075">SVinfo::cno</a>, <a class="el" href="gps__piksi_8c_source.html#l00059">gps_piksi</a>, <a class="el" href="gps_8h_source.html#l00072">SVinfo::svid</a>, and <a class="el" href="gps_8h_source.html#l00104">GpsState::svinfos</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00279">gps_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00308">gps_piksi_init()</a>.</p>
 
 <p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -999,7 +1009,7 @@ Variables</h2></td></tr>
 <div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__piksi_8c_a2ad2ea41453e3b5bff367fbdeb0bb827_icgraph.png" border="0" usemap="#gps__piksi_8c_a2ad2ea41453e3b5bff367fbdeb0bb827_icgraph" alt=""/></div>
 <map name="gps__piksi_8c_a2ad2ea41453e3b5bff367fbdeb0bb827_icgraph" id="gps__piksi_8c_a2ad2ea41453e3b5bff367fbdeb0bb827_icgraph">
-<area shape="rect" id="node2" href="gps__piksi_8c.html#ac51e6a5f7940a0acc9dc44b1b8085331" title="GPS initialization. " alt="" coords="196,13,301,39"/></map>
+<area shape="rect" id="node2" href="gps__piksi_8h.html#a2fcb9204061227b94027a135c469c4b5" title="gps_piksi_init" alt="" coords="196,13,303,39"/></map>
 </div>
 </p>
 
@@ -1049,11 +1059,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00136">136</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00157">157</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>References <a class="el" href="gps_8h_source.html#l00083">GpsState::ecef_vel</a>, <a class="el" href="gps_8c_source.html#l00040">gps</a>, <a class="el" href="gps__piksi_8c_source.html#l00325">gps_piksi_publish()</a>, <a class="el" href="gps_8h_source.html#l00060">GPS_VALID_VEL_ECEF_BIT</a>, <a class="el" href="gps_8h_source.html#l00089">GpsState::sacc</a>, <a class="el" href="gps_8h_source.html#l00077">GpsState::valid_fields</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00051">EcefCoor_i::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00052">EcefCoor_i::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00053">EcefCoor_i::z</a>.</p>
+<p>References <a class="el" href="gps_8h_source.html#l00089">GpsState::ecef_vel</a>, <a class="el" href="gps__piksi_8c_source.html#l00059">gps_piksi</a>, <a class="el" href="gps__piksi_8c_source.html#l00362">gps_piksi_publish()</a>, <a class="el" href="gps_8h_source.html#l00051">GPS_VALID_VEL_ECEF_BIT</a>, <a class="el" href="gps_8h_source.html#l00095">GpsState::sacc</a>, <a class="el" href="gps_8h_source.html#l00082">GpsState::valid_fields</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00051">EcefCoor_i::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00052">EcefCoor_i::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00053">EcefCoor_i::z</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00279">gps_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00308">gps_piksi_init()</a>.</p>
 
 <p><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1062,7 +1072,7 @@ Variables</h2></td></tr>
 <div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__piksi_8c_afa5c5059358b48ae5151d1ec6e8e8d04_cgraph.png" border="0" usemap="#gps__piksi_8c_afa5c5059358b48ae5151d1ec6e8e8d04_cgraph" alt=""/></div>
 <map name="gps__piksi_8c_afa5c5059358b48ae5151d1ec6e8e8d04_cgraph" id="gps__piksi_8c_afa5c5059358b48ae5151d1ec6e8e8d04_cgraph">
-<area shape="rect" id="node2" href="gps__piksi_8c.html#ab873aa70bd8af4c37c8dbc07d13ea1de" title="gps_piksi_publish" alt="" coords="216,5,348,32"/><area shape="rect" id="node3" href="linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="396,5,540,32"/><area shape="rect" id="node4" href="sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="588,5,725,32"/></map>
+<area shape="rect" id="node2" href="gps__piksi_8c.html#ab873aa70bd8af4c37c8dbc07d13ea1de" title="gps_piksi_publish" alt="" coords="216,5,348,32"/><area shape="rect" id="node3" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="396,5,540,32"/><area shape="rect" id="node4" href="sys__time_8h.html#adb22f2652f04908fbc644c7274bf7273" title="usec_of_sys_time_ticks" alt="" coords="588,5,759,32"/></map>
 </div>
 </p>
 
@@ -1073,7 +1083,7 @@ Variables</h2></td></tr>
 <div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__piksi_8c_afa5c5059358b48ae5151d1ec6e8e8d04_icgraph.png" border="0" usemap="#gps__piksi_8c_afa5c5059358b48ae5151d1ec6e8e8d04_icgraph" alt=""/></div>
 <map name="gps__piksi_8c_afa5c5059358b48ae5151d1ec6e8e8d04_icgraph" id="gps__piksi_8c_afa5c5059358b48ae5151d1ec6e8e8d04_icgraph">
-<area shape="rect" id="node2" href="gps__piksi_8c.html#ac51e6a5f7940a0acc9dc44b1b8085331" title="GPS initialization. " alt="" coords="216,5,321,32"/></map>
+<area shape="rect" id="node2" href="gps__piksi_8h.html#a2fcb9204061227b94027a135c469c4b5" title="gps_piksi_init" alt="" coords="216,5,323,32"/></map>
 </div>
 </p>
 
@@ -1123,11 +1133,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00184">184</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00205">205</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>References <a class="el" href="gps_8h_source.html#l00087">GpsState::course</a>, <a class="el" href="gps_8c_source.html#l00040">gps</a>, <a class="el" href="gps_8h_source.html#l00063">GPS_VALID_COURSE_BIT</a>, <a class="el" href="gps_8h_source.html#l00061">GPS_VALID_VEL_NED_BIT</a>, <a class="el" href="gps_8h_source.html#l00085">GpsState::gspeed</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00030">int32_sqrt()</a>, <a class="el" href="gps_8h_source.html#l00084">GpsState::ned_vel</a>, <a class="el" href="gps_8h_source.html#l00077">GpsState::valid_fields</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00069">NedCoor_i::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00070">NedCoor_i::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
+<p>References <a class="el" href="gps_8h_source.html#l00093">GpsState::course</a>, <a class="el" href="gps__piksi_8c_source.html#l00059">gps_piksi</a>, <a class="el" href="gps_8h_source.html#l00054">GPS_VALID_COURSE_BIT</a>, <a class="el" href="gps_8h_source.html#l00052">GPS_VALID_VEL_NED_BIT</a>, <a class="el" href="gps_8h_source.html#l00091">GpsState::gspeed</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00030">int32_sqrt()</a>, <a class="el" href="gps_8h_source.html#l00090">GpsState::ned_vel</a>, <a class="el" href="gps_8h_source.html#l00082">GpsState::valid_fields</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00069">NedCoor_i::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00070">NedCoor_i::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00279">gps_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00308">gps_piksi_init()</a>.</p>
 
 <p><div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1147,7 +1157,132 @@ Variables</h2></td></tr>
 <div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__piksi_8c_a0d069b34ba061322d213039fcd99a669_icgraph.png" border="0" usemap="#gps__piksi_8c_a0d069b34ba061322d213039fcd99a669_icgraph" alt=""/></div>
 <map name="gps__piksi_8c_a0d069b34ba061322d213039fcd99a669_icgraph" id="gps__piksi_8c_a0d069b34ba061322d213039fcd99a669_icgraph">
-<area shape="rect" id="node2" href="gps__piksi_8c.html#ac51e6a5f7940a0acc9dc44b1b8085331" title="GPS initialization. " alt="" coords="212,5,317,32"/></map>
+<area shape="rect" id="node2" href="gps__piksi_8h.html#a2fcb9204061227b94027a135c469c4b5" title="gps_piksi_init" alt="" coords="212,5,319,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a936a09815bd79f5d8b1f0a40a0cc48a9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void send_piksi_heartbeat </td>
+          <td>(</td>
+          <td class="paramtype">struct transport_tx *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct link_device *&#160;</td>
+          <td class="paramname"><em>dev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00067">67</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+
+<p>References <a class="el" href="gps__piksi_8c_source.html#l00062">time_since_last_heartbeat</a>.</p>
+
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00308">gps_piksi_init()</a>.</p>
+
+<p><div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="gps__piksi_8c_a936a09815bd79f5d8b1f0a40a0cc48a9_icgraph.png" border="0" usemap="#gps__piksi_8c_a936a09815bd79f5d8b1f0a40a0cc48a9_icgraph" alt=""/></div>
+<map name="gps__piksi_8c_a936a09815bd79f5d8b1f0a40a0cc48a9_icgraph" id="gps__piksi_8c_a936a09815bd79f5d8b1f0a40a0cc48a9_icgraph">
+<area shape="rect" id="node2" href="gps__piksi_8h.html#a2fcb9204061227b94027a135c469c4b5" title="gps_piksi_init" alt="" coords="212,5,319,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7eaf9070f9bdcf0ecfb9efe570ece699"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void spb_heartbeat_callback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>sender_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>msg</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00272">272</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+
+<p>References <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00078">get_sys_time_msec()</a>, and <a class="el" href="gps__piksi_8c_source.html#l00062">time_since_last_heartbeat</a>.</p>
+
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00308">gps_piksi_init()</a>.</p>
+
+<p><div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="gps__piksi_8c_a7eaf9070f9bdcf0ecfb9efe570ece699_cgraph.png" border="0" usemap="#gps__piksi_8c_a7eaf9070f9bdcf0ecfb9efe570ece699_cgraph" alt=""/></div>
+<map name="gps__piksi_8c_a7eaf9070f9bdcf0ecfb9efe570ece699_cgraph" id="gps__piksi_8c_a7eaf9070f9bdcf0ecfb9efe570ece699_cgraph">
+<area shape="rect" id="node2" href="chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="get_sys_time_msec" alt="" coords="227,5,376,32"/><area shape="rect" id="node3" href="sys__time_8h.html#ab67b78f01783839deb76623ff83981dd" title="msec_of_sys_time_ticks" alt="" coords="424,5,600,32"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="gps__piksi_8c_a7eaf9070f9bdcf0ecfb9efe570ece699_icgraph.png" border="0" usemap="#gps__piksi_8c_a7eaf9070f9bdcf0ecfb9efe570ece699_icgraph" alt=""/></div>
+<map name="gps__piksi_8c_a7eaf9070f9bdcf0ecfb9efe570ece699_icgraph" id="gps__piksi_8c_a7eaf9070f9bdcf0ecfb9efe570ece699_icgraph">
+<area shape="rect" id="node2" href="gps__piksi_8h.html#a2fcb9204061227b94027a135c469c4b5" title="gps_piksi_init" alt="" coords="227,5,333,32"/></map>
 </div>
 </p>
 
@@ -1164,9 +1299,39 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00093">93</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00113">113</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00279">gps_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00308">gps_piksi_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a42998e99427a3b652810c79ecdab4753"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="gps_8h.html#structGpsState">GpsState</a> gps_piksi</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00059">59</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00349">gps_piksi_event()</a>, <a class="el" href="gps__piksi_8c_source.html#l00308">gps_piksi_init()</a>, <a class="el" href="gps__piksi_8c_source.html#l00362">gps_piksi_publish()</a>, <a class="el" href="gps__piksi_8c_source.html#l00221">sbp_dops_callback()</a>, <a class="el" href="gps__piksi_8c_source.html#l00230">sbp_gps_time_callback()</a>, <a class="el" href="gps__piksi_8c_source.html#l00131">sbp_pos_ecef_callback()</a>, <a class="el" href="gps__piksi_8c_source.html#l00173">sbp_pos_llh_callback()</a>, <a class="el" href="gps__piksi_8c_source.html#l00240">sbp_tracking_state_callback()</a>, <a class="el" href="gps__piksi_8c_source.html#l00256">sbp_tracking_state_dep_a_callback()</a>, <a class="el" href="gps__piksi_8c_source.html#l00157">sbp_vel_ecef_callback()</a>, and <a class="el" href="gps__piksi_8c_source.html#l00205">sbp_vel_ned_callback()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa6e53459a3446fd6e60ae6363b08321a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="gps_8h.html#structGpsTimeSync">GpsTimeSync</a> gps_piksi_time_sync</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00060">60</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
 </div>
 </div>
@@ -1180,9 +1345,25 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00094">94</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00114">114</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00279">gps_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00308">gps_piksi_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aed29eb97b1842d8f42fba0a848211ea3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sbp_msg_callbacks_node_t heartbeat_node</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00117">117</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00308">gps_piksi_init()</a>.</p>
 
 </div>
 </div>
@@ -1196,9 +1377,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00089">89</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00109">109</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00279">gps_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00308">gps_piksi_init()</a>.</p>
 
 </div>
 </div>
@@ -1212,9 +1393,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00091">91</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00111">111</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00279">gps_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00308">gps_piksi_init()</a>.</p>
 
 </div>
 </div>
@@ -1236,9 +1417,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00063">63</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00083">83</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00279">gps_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00308">gps_piksi_init()</a>.</p>
 
 </div>
 </div>
@@ -1252,9 +1433,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00083">83</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00103">103</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00279">gps_impl_init()</a>, <a class="el" href="gps__piksi_8c_source.html#l00371">gps_inject_data()</a>, and <a class="el" href="gps__piksi_8c_source.html#l00312">gps_piksi_event()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00408">gps_inject_data()</a>, <a class="el" href="gps__piksi_8c_source.html#l00349">gps_piksi_event()</a>, and <a class="el" href="gps__piksi_8c_source.html#l00308">gps_piksi_init()</a>.</p>
 
 </div>
 </div>
@@ -1276,9 +1457,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00074">74</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00094">94</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00279">gps_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00308">gps_piksi_init()</a>.</p>
 
 </div>
 </div>
@@ -1300,9 +1481,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00075">75</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00095">95</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00279">gps_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00308">gps_piksi_init()</a>.</p>
 
 </div>
 </div>
@@ -1324,9 +1505,33 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00076">76</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00096">96</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00279">gps_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00308">gps_piksi_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a49189c86f0529a3cfb19e26a52e4795e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> time_since_last_heartbeat</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00062">62</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00067">send_piksi_heartbeat()</a>, and <a class="el" href="gps__piksi_8c_source.html#l00272">spb_heartbeat_callback()</a>.</p>
 
 </div>
 </div>
@@ -1348,7 +1553,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00103">103</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00124">124</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
 </div>
 </div>
@@ -1362,9 +1567,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00096">96</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00116">116</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00279">gps_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00308">gps_piksi_init()</a>.</p>
 
 </div>
 </div>
@@ -1378,9 +1583,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00095">95</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00115">115</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00279">gps_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00308">gps_piksi_init()</a>.</p>
 
 </div>
 </div>
@@ -1394,9 +1599,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00090">90</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00110">110</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00279">gps_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00308">gps_piksi_init()</a>.</p>
 
 </div>
 </div>
@@ -1410,9 +1615,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00092">92</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__piksi_8c_source.html#l00112">112</a> of file <a class="el" href="gps__piksi_8c_source.html">gps_piksi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00279">gps_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__piksi_8c_source.html#l00308">gps_piksi_init()</a>.</p>
 
 </div>
 </div>
@@ -1422,7 +1627,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8c4cbb881db224ddaf0756e79ed706ce.html">gps</a></li><li class="navelem"><a class="el" href="gps__piksi_8c.html">gps_piksi.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:04 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:12 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -409,11 +409,11 @@ Variables</h2></td></tr>
 <div class="ttc" id="max1168_8h_html_a9e1e6bea5d27c4027fb0bba20acd9320"><div class="ttname"><a href="max1168_8h.html#a9e1e6bea5d27c4027fb0bba20acd9320">MAX1168_IDLE</a></div><div class="ttdeci">#define MAX1168_IDLE</div><div class="ttdef"><b>Definition:</b> <a href="max1168_8h_source.html#l00059">max1168.h:59</a></div></div>
 <div class="ttc" id="max1168_8h_html_adad993f2bbd2ca52aea0b0f97931863a"><div class="ttname"><a href="max1168_8h.html#adad993f2bbd2ca52aea0b0f97931863a">max1168_read</a></div><div class="ttdeci">void max1168_read(void)</div><div class="ttdef"><b>Definition:</b> <a href="sim_2peripherals_2max1168__arch_8c_source.html#l00026">max1168_arch.c:26</a></div></div>
 <div class="ttc" id="max1168_8h_html_a2380db06cc4ae1a7b0e167a246862ea0"><div class="ttname"><a href="max1168_8h.html#a2380db06cc4ae1a7b0e167a246862ea0">max1168_status</a></div><div class="ttdeci">volatile uint8_t max1168_status</div><div class="ttdef"><b>Definition:</b> <a href="max1168_8c_source.html#l00027">max1168.c:27</a></div></div>
-<div class="ttc" id="stm32_2subsystems_2radio__control_2spektrum__arch_8c_html_a14a004ce07f47580a6800c76982ea599"><div class="ttname"><a href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">if</a></div><div class="ttdeci">if(PrimarySpektrumState.SpektrumTimer)</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00556">spektrum_arch.c:556</a></div></div>
+<div class="ttc" id="stm32_2subsystems_2radio__control_2spektrum__arch_8c_html_a14a004ce07f47580a6800c76982ea599"><div class="ttname"><a href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">if</a></div><div class="ttdeci">if(PrimarySpektrumState.SpektrumTimer)</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00605">spektrum_arch.c:605</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="max1168_8h_source.html#l00068">68</a> of file <a class="el" href="max1168_8h_source.html">max1168.h</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__hbmini_8c_source.html#l00072">imu_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="imu__b2_8c_source.html#l00057">imu_b2_periodic()</a>, and <a class="el" href="imu__hbmini_8c_source.html#l00072">imu_hbmini_periodic()</a>.</p>
 
 </div>
 </div>
@@ -434,7 +434,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lpc21_2peripherals_2max1168__arch_8c_source.html#l00031">31</a> of file <a class="el" href="lpc21_2peripherals_2max1168__arch_8c_source.html">max1168_arch.c</a>.</p>
 
-<p>References <a class="el" href="armVIC_8h_source.html#l00020">_VIC_ADDR</a>, <a class="el" href="armVIC_8h_source.html#l00019">_VIC_CNTL</a>, <a class="el" href="LPC21xx_8h_source.html#l00417">EXTINT</a>, <a class="el" href="lpc21_2peripherals_2max1168__arch_8c_source.html#l00051">EXTINT0_ISR()</a>, <a class="el" href="LPC21xx_8h_source.html#l00419">EXTMODE</a>, <a class="el" href="LPC21xx_8h_source.html#l00420">EXTPOLAR</a>, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h_source.html#l00039">GPIO2</a>, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h_source.html#l00035">GPIOB</a>, <a class="el" href="booz__1_80_8h_source.html#l00137">MAX1168_EOC_EINT</a>, <a class="el" href="booz__1_80_8h_source.html#l00134">MAX1168_EOC_PINSEL</a>, <a class="el" href="booz__1_80_8h_source.html#l00135">MAX1168_EOC_PINSEL_BIT</a>, <a class="el" href="booz__1_80_8h_source.html#l00136">MAX1168_EOC_PINSEL_VAL</a>, <a class="el" href="booz__1_80_8h_source.html#l00138">MAX1168_EOC_VIC_IT</a>, <a class="el" href="stm32f4__chibios__vectors_8h_source.html#l00026">NVIC_EXTI2_IRQ</a>, <a class="el" href="lpcVIC_8h_source.html#l00105">VIC_BIT</a>, <a class="el" href="lpcVIC_8h_source.html#l00102">VIC_ENABLE</a>, <a class="el" href="LPC21xx_8h_source.html#l00431">VICIntEnable</a>, and <a class="el" href="LPC21xx_8h_source.html#l00430">VICIntSelect</a>.</p>
+<p>References <a class="el" href="armVIC_8h_source.html#l00020">_VIC_ADDR</a>, <a class="el" href="armVIC_8h_source.html#l00019">_VIC_CNTL</a>, <a class="el" href="LPC21xx_8h_source.html#l00417">EXTINT</a>, <a class="el" href="lpc21_2peripherals_2max1168__arch_8c_source.html#l00051">EXTINT0_ISR()</a>, <a class="el" href="LPC21xx_8h_source.html#l00419">EXTMODE</a>, <a class="el" href="LPC21xx_8h_source.html#l00420">EXTPOLAR</a>, <a class="el" href="gpio__def_8h_source.html#l00033">GPIO2</a>, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h_source.html#l00035">GPIOB</a>, <a class="el" href="booz__1_80_8h_source.html#l00137">MAX1168_EOC_EINT</a>, <a class="el" href="booz__1_80_8h_source.html#l00134">MAX1168_EOC_PINSEL</a>, <a class="el" href="booz__1_80_8h_source.html#l00135">MAX1168_EOC_PINSEL_BIT</a>, <a class="el" href="booz__1_80_8h_source.html#l00136">MAX1168_EOC_PINSEL_VAL</a>, <a class="el" href="booz__1_80_8h_source.html#l00138">MAX1168_EOC_VIC_IT</a>, <a class="el" href="lpcVIC_8h_source.html#l00105">VIC_BIT</a>, <a class="el" href="lpcVIC_8h_source.html#l00102">VIC_ENABLE</a>, <a class="el" href="LPC21xx_8h_source.html#l00431">VICIntEnable</a>, and <a class="el" href="LPC21xx_8h_source.html#l00430">VICIntSelect</a>.</p>
 
 <p>Referenced by <a class="el" href="max1168_8c_source.html#l00040">max1168_init()</a>.</p>
 
@@ -456,7 +456,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="max1168_8h_a712f39d80c2b46e08a4d0230bf74bef2_icgraph.png" border="0" usemap="#max1168_8h_a712f39d80c2b46e08a4d0230bf74bef2_icgraph" alt=""/></div>
 <map name="max1168_8h_a712f39d80c2b46e08a4d0230bf74bef2_icgraph" id="max1168_8h_a712f39d80c2b46e08a4d0230bf74bef2_icgraph">
-<area shape="rect" id="node2" href="max1168_8h.html#a6130e20b7ea3c56aa94a9e449b773b4a" title="max1168_init" alt="" coords="196,5,304,32"/><area shape="rect" id="node3" href="imu__hbmini_8c.html#ad32faae58e391642ec8048cb11011998" title="must be defined by underlying hardware " alt="" coords="352,5,459,32"/></map>
+<area shape="rect" id="node2" href="max1168_8h.html#a6130e20b7ea3c56aa94a9e449b773b4a" title="max1168_init" alt="" coords="196,31,304,57"/><area shape="rect" id="node3" href="imu__hbmini_8h.html#aac46d381aad29da7884a7a0424bb9bda" title="imu_hbmini_init" alt="" coords="352,5,475,32"/><area shape="rect" id="node4" href="imu__b2_8h.html#ae570fa02d6ebd9ce0b25e7074f002d72" title="imu_b2_init" alt="" coords="366,56,461,83"/></map>
 </div>
 </p>
 
@@ -478,7 +478,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="max1168_8c_source.html#l00101">101</a> of file <a class="el" href="max1168_8c_source.html">max1168.c</a>.</p>
 
-<p>References <a class="el" href="max1168_8h_source.html#l00063">MAX1168_DATA_AVAILABLE</a>, <a class="el" href="max1168_8h_source.html#l00061">MAX1168_GOT_EOC</a>, <a class="el" href="max1168_8h_source.html#l00059">MAX1168_IDLE</a>, <a class="el" href="max1168_8c_source.html#l00031">max1168_read_trans</a>, <a class="el" href="max1168_8h_source.html#l00062">MAX1168_READING_RES</a>, <a class="el" href="max1168_8c_source.html#l00030">max1168_req_trans</a>, <a class="el" href="max1168_8h_source.html#l00031">MAX1168_SLAVE_IDX</a>, <a class="el" href="max1168_8h_source.html#l00035">MAX1168_SPI_DEV</a>, <a class="el" href="max1168_8c_source.html#l00027">max1168_status</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00111">spi_resume()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00558">spi_slave_unselect()</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00094">SPITransFailed</a>, <a class="el" href="spi_8h_source.html#l00093">SPITransSuccess</a>, and <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>.</p>
+<p>References <a class="el" href="max1168_8h_source.html#l00063">MAX1168_DATA_AVAILABLE</a>, <a class="el" href="max1168_8h_source.html#l00061">MAX1168_GOT_EOC</a>, <a class="el" href="max1168_8h_source.html#l00059">MAX1168_IDLE</a>, <a class="el" href="max1168_8c_source.html#l00031">max1168_read_trans</a>, <a class="el" href="max1168_8h_source.html#l00062">MAX1168_READING_RES</a>, <a class="el" href="max1168_8c_source.html#l00030">max1168_req_trans</a>, <a class="el" href="max1168_8h_source.html#l00031">MAX1168_SLAVE_IDX</a>, <a class="el" href="max1168_8h_source.html#l00035">MAX1168_SPI_DEV</a>, <a class="el" href="max1168_8c_source.html#l00027">max1168_status</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00496">spi_resume()</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00439">spi_slave_unselect()</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00094">SPITransFailed</a>, <a class="el" href="spi_8h_source.html#l00093">SPITransSuccess</a>, and <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>.</p>
 
 <p>Referenced by <a class="el" href="imu__b2_8c_source.html#l00152">imu_b2_event()</a>, and <a class="el" href="imu__hbmini_8c_source.html#l00093">imu_hbmini_event()</a>.</p>
 
@@ -489,7 +489,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="max1168_8h_a957376acfc8fbd7b917f20a18e6c5a6c_cgraph.png" border="0" usemap="#max1168_8h_a957376acfc8fbd7b917f20a18e6c5a6c_cgraph" alt=""/></div>
 <map name="max1168_8h_a957376acfc8fbd7b917f20a18e6c5a6c_cgraph" id="max1168_8h_a957376acfc8fbd7b917f20a18e6c5a6c_cgraph">
-<area shape="rect" id="node2" href="group__spi.html#ga5e9947e5b87e3a86a773b4a174ec6f08" title="Resume the SPI fifo. " alt="" coords="201,5,297,32"/><area shape="rect" id="node3" href="group__spi.html#ga99507da72932c02e5d8daf9a7170ed69" title="Unselect a slave. " alt="" coords="179,56,320,83"/></map>
+<area shape="rect" id="node2" href="group__spi.html#gaf5ff5a9f93b73caf6532b7e25dd917b9" title="spi_resume() function " alt="" coords="201,5,297,32"/><area shape="rect" id="node3" href="group__spi.html#ga99507da72932c02e5d8daf9a7170ed69" title="spi_slave_unselect() function " alt="" coords="179,56,320,83"/></map>
 </div>
 </p>
 
@@ -524,7 +524,7 @@ Variables</h2></td></tr>
 
 <p>References <a class="el" href="spi_8h_source.html#l00155">spi_transaction::after_cb</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::bitorder</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::cdiv</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::cpha</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::cpol</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::dss</a>, <a class="el" href="spi_8h_source.html#l00143">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="lpc21_2peripherals_2max1168__arch_8c_source.html#l00031">max1168_arch_init()</a>, <a class="el" href="max1168_8h_source.html#l00053">MAX1168_CONF_CR</a>, <a class="el" href="max1168_8c_source.html#l00033">max1168_conv_req</a>, <a class="el" href="max1168_8h_source.html#l00059">MAX1168_IDLE</a>, <a class="el" href="max1168_8c_source.html#l00134">max1168_lock_cb()</a>, <a class="el" href="max1168_8h_source.html#l00028">MAX1168_NB_CHAN</a>, <a class="el" href="max1168_8c_source.html#l00031">max1168_read_trans</a>, <a class="el" href="max1168_8c_source.html#l00030">max1168_req_trans</a>, <a class="el" href="max1168_8h_source.html#l00031">MAX1168_SLAVE_IDX</a>, <a class="el" href="max1168_8c_source.html#l00027">max1168_status</a>, <a class="el" href="max1168_8c_source.html#l00028">max1168_values</a>, <a class="el" href="spi_8h_source.html#l00144">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="spi_8h_source.html#l00148">spi_transaction::select</a>, <a class="el" href="spi_8h_source.html#l00147">spi_transaction::slave_idx</a>, <a class="el" href="spi_8h_source.html#l00068">SPICphaEdge1</a>, <a class="el" href="spi_8h_source.html#l00077">SPICpolIdleLow</a>, <a class="el" href="spi_8h_source.html#l00119">SPIDiv64</a>, <a class="el" href="spi_8h_source.html#l00085">SPIDss16bit</a>, <a class="el" href="spi_8h_source.html#l00106">SPIMSBFirst</a>, <a class="el" href="spi_8h_source.html#l00058">SPISelect</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00059">SPIUnselect</a>, and <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__hbmini_8c_source.html#l00063">imu_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="imu__b2_8c_source.html#l00038">imu_b2_init()</a>, and <a class="el" href="imu__hbmini_8c_source.html#l00063">imu_hbmini_init()</a>.</p>
 
 <p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -533,7 +533,7 @@ Variables</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="max1168_8h_a6130e20b7ea3c56aa94a9e449b773b4a_cgraph.png" border="0" usemap="#max1168_8h_a6130e20b7ea3c56aa94a9e449b773b4a_cgraph" alt=""/></div>
 <map name="max1168_8h_a6130e20b7ea3c56aa94a9e449b773b4a_cgraph" id="max1168_8h_a6130e20b7ea3c56aa94a9e449b773b4a_cgraph">
-<area shape="rect" id="node2" href="lpc21_2peripherals_2max1168__arch_8c.html#a712f39d80c2b46e08a4d0230bf74bef2" title="max1168_arch_init" alt="" coords="161,5,304,32"/><area shape="rect" id="node3" href="max1168_8c.html#a65bdce5cdf607ff4f87fd590f20d16c3" title="max1168_lock_cb" alt="" coords="165,56,301,83"/><area shape="rect" id="node4" href="group__spi.html#ga2db1b869a8aea431e3d3e63106290db9" title="Lock the SPI fifo. " alt="" coords="352,56,424,83"/></map>
+<area shape="rect" id="node2" href="lpc21_2peripherals_2max1168__arch_8c.html#a712f39d80c2b46e08a4d0230bf74bef2" title="max1168_arch_init" alt="" coords="161,5,304,32"/><area shape="rect" id="node3" href="max1168_8c.html#a65bdce5cdf607ff4f87fd590f20d16c3" title="max1168_lock_cb" alt="" coords="165,56,301,83"/><area shape="rect" id="node4" href="group__spi.html#ga747ed5cb8c8252f0101fb60a04fa886d" title="spi_lock() function " alt="" coords="352,56,424,83"/></map>
 </div>
 </p>
 
@@ -544,7 +544,7 @@ Variables</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="max1168_8h_a6130e20b7ea3c56aa94a9e449b773b4a_icgraph.png" border="0" usemap="#max1168_8h_a6130e20b7ea3c56aa94a9e449b773b4a_icgraph" alt=""/></div>
 <map name="max1168_8h_a6130e20b7ea3c56aa94a9e449b773b4a_icgraph" id="max1168_8h_a6130e20b7ea3c56aa94a9e449b773b4a_icgraph">
-<area shape="rect" id="node2" href="imu__hbmini_8c.html#ad32faae58e391642ec8048cb11011998" title="must be defined by underlying hardware " alt="" coords="161,5,268,32"/></map>
+<area shape="rect" id="node2" href="imu__b2_8h.html#ae570fa02d6ebd9ce0b25e7074f002d72" title="imu_b2_init" alt="" coords="175,5,270,32"/><area shape="rect" id="node3" href="imu__hbmini_8h.html#aac46d381aad29da7884a7a0424bb9bda" title="imu_hbmini_init" alt="" coords="161,56,284,83"/></map>
 </div>
 </p>
 
@@ -566,7 +566,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="sim_2peripherals_2max1168__arch_8c_source.html#l00026">26</a> of file <a class="el" href="sim_2peripherals_2max1168__arch_8c_source.html">max1168_arch.c</a>.</p>
 
-<p>References <a class="el" href="max1168_8c_source.html#l00031">max1168_read_trans</a>, <a class="el" href="max1168_8c_source.html#l00030">max1168_req_trans</a>, <a class="el" href="max1168_8h_source.html#l00060">MAX1168_SENDING_REQ</a>, <a class="el" href="max1168_8h_source.html#l00035">MAX1168_SPI_DEV</a>, <a class="el" href="max1168_8c_source.html#l00027">max1168_status</a>, and <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00048">spi_submit()</a>.</p>
+<p>References <a class="el" href="max1168_8c_source.html#l00031">max1168_read_trans</a>, <a class="el" href="max1168_8c_source.html#l00030">max1168_req_trans</a>, <a class="el" href="max1168_8h_source.html#l00060">MAX1168_SENDING_REQ</a>, <a class="el" href="max1168_8h_source.html#l00035">MAX1168_SPI_DEV</a>, <a class="el" href="max1168_8c_source.html#l00027">max1168_status</a>, and <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00364">spi_submit()</a>.</p>
 
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -575,7 +575,7 @@ Variables</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="max1168_8h_adad993f2bbd2ca52aea0b0f97931863a_cgraph.png" border="0" usemap="#max1168_8h_adad993f2bbd2ca52aea0b0f97931863a_cgraph" alt=""/></div>
 <map name="max1168_8h_adad993f2bbd2ca52aea0b0f97931863a_cgraph" id="max1168_8h_adad993f2bbd2ca52aea0b0f97931863a_cgraph">
-<area shape="rect" id="node2" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="172,5,263,32"/></map>
+<area shape="rect" id="node2" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="172,5,263,32"/></map>
 </div>
 </p>
 
@@ -620,7 +620,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="max1168_8h.html">max1168.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:59 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:07 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -7,6 +7,6 @@ var link__mcu__spi_8c =
     [ "crc", "link__mcu__spi_8c.html#aa60093a9a5d5d17864cfda66c47733e3", null ],
     [ "link_mcu_from_ap_msg", "link__mcu__spi_8c.html#a4d130fa66a5074c64197b7cd4bf535de", null ],
     [ "link_mcu_from_fbw_msg", "link__mcu__spi_8c.html#a86deade5843ab146c47083104cf8f3cd", null ],
-    [ "link_mcu_received", "link__mcu__spi_8c.html#a5fbd44c122e7afa4afdb9368a7a6b2a4", null ],
+    [ "link_mcu_received", "link__mcu__spi_8c.html#aac1e8852c1f12dced678eaa675f0d408", null ],
     [ "link_mcu_trans", "link__mcu__spi_8c.html#aaddeb28c81e4b264b71c0fefb60c17f5", null ]
 ];

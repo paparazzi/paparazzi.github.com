@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('ADS8344_8c_source.html','');});
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="ADS8344_8c.html#a3c7550edc886553fe543850409648513">   35</a></span>&#160;<span class="preprocessor">#define ADS8344Select()   SetBit(ADS8344_SS_IOCLR,ADS8344_SS_PIN)</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="ADS8344_8c.html#aa9817622c338285730aca3a5c84c289c">   36</a></span>&#160;<span class="preprocessor">#define ADS8344Unselect() SetBit(ADS8344_SS_IOSET,ADS8344_SS_PIN)</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="imu__crista_8h.html#a27dd4fc8dd725c92d763a3c667945fd1">   38</a></span>&#160;bool_t <a class="code" href="ADS8344_8c.html#a29bd3fd20091d2d9592d551dfca9ec94">ADS8344_available</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="imu__crista_8h.html#a4d60bb82c8eb3663ce0b84a8523eae67">   38</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="ADS8344_8c.html#a5ed4272543ec6099b728fb5f511e5353">ADS8344_available</a>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="imu__crista_8h.html#ac6ac4cf39e0261a374f018284e08bf35">   39</a></span>&#160;<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="ADS8344_8c.html#a7c6b29728c370927c9a96191b45b1d34">ADS8344_values</a>[<a class="code" href="ADS8344_8h.html#a4559069a0477805f310137e5a551b7a0">NB_CHANNELS</a>];</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="ADS8344_8c.html#a4e7bf0c205872c6db180b06792a62118">   41</a></span>&#160;<span class="preprocessor">#define POWER_MODE (1 &lt;&lt; 1 | 1)</span></div>
@@ -199,7 +199,7 @@ $(document).ready(function(){initNavTree('ADS8344_8c_source.html','');});
 <div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="ADS8344_8h.html#aa25a279dd8571513ab369b489a858484">   88</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ADS8344_8c.html#aa25a279dd8571513ab369b489a858484">ADS8344_init</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  channel = 0;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <a class="code" href="ADS8344_8c.html#a29bd3fd20091d2d9592d551dfca9ec94">ADS8344_available</a> = <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <a class="code" href="ADS8344_8c.html#a5ed4272543ec6099b728fb5f511e5353">ADS8344_available</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="comment">/* setup pins for SSP (SCK, MISO, MOSI) */</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="LPC21xx_8h.html#a030997bacf62a695152879b6be44c84c">PINSEL1</a> |= 2 &lt;&lt; 2 | 2 &lt;&lt; 4 | 2 &lt;&lt; 6;</div>
@@ -252,12 +252,12 @@ $(document).ready(function(){initNavTree('ADS8344_8c_source.html','');});
 <div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="ADS8344_8c.html#a65d6ea131026affbdf33be235dfdb49d">  141</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ADS8344_8c.html#a65d6ea131026affbdf33be235dfdb49d">SPI1_ISR</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;{</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <a class="code" href="armVIC_8h.html#a4291eb8e6c7a50f7cfb8b3dcc28154ea">ISR_ENTRY</a>();</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <a class="code" href="linux_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449">LED_TOGGLE</a>(2);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <a class="code" href="chibios_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449">LED_TOGGLE</a>(2);</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <a class="code" href="ADS8344_8c.html#a7ff7b13f1a2040251b13dd82461dfdac">read_values</a>();</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  channel++;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="keywordflow">if</span> (channel &gt; 7) {</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    channel = 0;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <a class="code" href="ADS8344_8c.html#a29bd3fd20091d2d9592d551dfca9ec94">ADS8344_available</a> = <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <a class="code" href="ADS8344_8c.html#a5ed4272543ec6099b728fb5f511e5353">ADS8344_available</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  }</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <a class="code" href="ADS8344_8c.html#a3f17d7c8cdacbbfc2ee4cb8609fdb83a">send_request</a>();</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <a class="code" href="lpc21_2mcu__periph_2spi__arch_8c.html#a4c328147d259ed459aa71ba246bbf1cf">SpiClearRti</a>();</div>
@@ -275,15 +275,12 @@ $(document).ready(function(){initNavTree('ADS8344_8c_source.html','');});
 <div class="ttc" id="ADS8344_8c_html_a7c6b29728c370927c9a96191b45b1d34"><div class="ttname"><a href="ADS8344_8c.html#a7c6b29728c370927c9a96191b45b1d34">ADS8344_values</a></div><div class="ttdeci">uint16_t ADS8344_values[NB_CHANNELS]</div><div class="ttdef"><b>Definition:</b> <a href="ADS8344_8c_source.html#l00039">ADS8344.c:39</a></div></div>
 <div class="ttc" id="ADS8344_8c_html_a611a2eda681eb664aa4a8ad76eb42f77"><div class="ttname"><a href="ADS8344_8c.html#a611a2eda681eb664aa4a8ad76eb42f77">ADS8344_SS_PIN</a></div><div class="ttdeci">#define ADS8344_SS_PIN</div><div class="ttdef"><b>Definition:</b> <a href="ADS8344_8c_source.html#l00033">ADS8344.c:33</a></div></div>
 <div class="ttc" id="ADS8344_8c_html_ac55e5bd6becdc21641c3da4adaecb101"><div class="ttname"><a href="ADS8344_8c.html#ac55e5bd6becdc21641c3da4adaecb101">SSP_LBM</a></div><div class="ttdeci">#define SSP_LBM</div><div class="ttdef"><b>Definition:</b> <a href="ADS8344_8c_source.html#l00073">ADS8344.c:73</a></div></div>
-<div class="ttc" id="ADS8344_8c_html_a29bd3fd20091d2d9592d551dfca9ec94"><div class="ttname"><a href="ADS8344_8c.html#a29bd3fd20091d2d9592d551dfca9ec94">ADS8344_available</a></div><div class="ttdeci">bool_t ADS8344_available</div><div class="ttdef"><b>Definition:</b> <a href="ADS8344_8c_source.html#l00038">ADS8344.c:38</a></div></div>
 <div class="ttc" id="LPC21xx_8h_html_acecf2aa7ffdc423937224228dab60ca4"><div class="ttname"><a href="LPC21xx_8h.html#acecf2aa7ffdc423937224228dab60ca4">SSPCR0</a></div><div class="ttdeci">#define SSPCR0</div><div class="ttdef"><b>Definition:</b> <a href="LPC21xx_8h_source.html#l00222">LPC21xx.h:222</a></div></div>
 <div class="ttc" id="lpc21_2mcu__periph_2spi__arch_8c_html_a2f597567924a3000e5afb340e4aa5592"><div class="ttname"><a href="lpc21_2mcu__periph_2spi__arch_8c.html#a2f597567924a3000e5afb340e4aa5592">SpiEnableRti</a></div><div class="ttdeci">static void SpiEnableRti(struct spi_periph *p)</div><div class="ttdef"><b>Definition:</b> <a href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00151">spi_arch.c:151</a></div></div>
-<div class="ttc" id="std_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> <a href="std_8h_source.html#l00005">std.h:5</a></div></div>
-<div class="ttc" id="linux_2led__hw_8h_html_afd0bf6b0eebb00641365dc389a9fc449"><div class="ttname"><a href="linux_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449">LED_TOGGLE</a></div><div class="ttdeci">#define LED_TOGGLE(i)</div><div class="ttdef"><b>Definition:</b> <a href="linux_2led__hw_8h_source.html#l00044">led_hw.h:44</a></div></div>
 <div class="ttc" id="ADS8344_8c_html_a513b10d80f7214b6556a2b0a2ab01a60"><div class="ttname"><a href="ADS8344_8c.html#a513b10d80f7214b6556a2b0a2ab01a60">SSP_MS</a></div><div class="ttdeci">#define SSP_MS</div><div class="ttdef"><b>Definition:</b> <a href="ADS8344_8c_source.html#l00075">ADS8344.c:75</a></div></div>
 <div class="ttc" id="spi_8h_html"><div class="ttname"><a href="spi_8h.html">spi.h</a></div><div class="ttdoc">Architecture independent SPI (Serial Peripheral Interface) API. </div></div>
 <div class="ttc" id="ADS8344_8c_html_a7ff7b13f1a2040251b13dd82461dfdac"><div class="ttname"><a href="ADS8344_8c.html#a7ff7b13f1a2040251b13dd82461dfdac">read_values</a></div><div class="ttdeci">static void read_values(void)</div><div class="ttdef"><b>Definition:</b> <a href="ADS8344_8c_source.html#l00113">ADS8344.c:113</a></div></div>
-<div class="ttc" id="std_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> <a href="std_8h_source.html#l00004">std.h:4</a></div></div>
+<div class="ttc" id="ADS8344_8c_html_a5ed4272543ec6099b728fb5f511e5353"><div class="ttname"><a href="ADS8344_8c.html#a5ed4272543ec6099b728fb5f511e5353">ADS8344_available</a></div><div class="ttdeci">bool ADS8344_available</div><div class="ttdef"><b>Definition:</b> <a href="ADS8344_8c_source.html#l00038">ADS8344.c:38</a></div></div>
 <div class="ttc" id="ADS8344_8c_html_a1b5cffadb3d478245059c81d80ba625b"><div class="ttname"><a href="ADS8344_8c.html#a1b5cffadb3d478245059c81d80ba625b">SSP_SCR</a></div><div class="ttdeci">#define SSP_SCR</div><div class="ttdef"><b>Definition:</b> <a href="ADS8344_8c_source.html#l00070">ADS8344.c:70</a></div></div>
 <div class="ttc" id="ADS8344_8c_html_a65d6ea131026affbdf33be235dfdb49d"><div class="ttname"><a href="ADS8344_8c.html#a65d6ea131026affbdf33be235dfdb49d">SPI1_ISR</a></div><div class="ttdeci">static void SPI1_ISR(void)</div><div class="ttdef"><b>Definition:</b> <a href="ADS8344_8c_source.html#l00141">ADS8344.c:141</a></div></div>
 <div class="ttc" id="LPC21xx_8h_html_aa11babfb092f15d15765591e9d4c8df2"><div class="ttname"><a href="LPC21xx_8h.html#aa11babfb092f15d15765591e9d4c8df2">VICVectAddr</a></div><div class="ttdeci">#define VICVectAddr</div><div class="ttdef"><b>Definition:</b> <a href="LPC21xx_8h_source.html#l00436">LPC21xx.h:436</a></div></div>
@@ -294,6 +291,7 @@ $(document).ready(function(){initNavTree('ADS8344_8c_source.html','');});
 <div class="ttc" id="ADS8344_8c_html_a1b86bef3b41329103786dcfeb683f733"><div class="ttname"><a href="ADS8344_8c.html#a1b86bef3b41329103786dcfeb683f733">ADS8344_SS_IODIR</a></div><div class="ttdeci">#define ADS8344_SS_IODIR</div><div class="ttdef"><b>Definition:</b> <a href="ADS8344_8c_source.html#l00030">ADS8344.c:30</a></div></div>
 <div class="ttc" id="ADS8344_8c_html_a4e7bf0c205872c6db180b06792a62118"><div class="ttname"><a href="ADS8344_8c.html#a4e7bf0c205872c6db180b06792a62118">POWER_MODE</a></div><div class="ttdeci">#define POWER_MODE</div><div class="ttdef"><b>Definition:</b> <a href="ADS8344_8c_source.html#l00041">ADS8344.c:41</a></div></div>
 <div class="ttc" id="armVIC_8h_html"><div class="ttname"><a href="armVIC_8h.html">armVIC.h</a></div></div>
+<div class="ttc" id="chibios_2led__hw_8h_html_afd0bf6b0eebb00641365dc389a9fc449"><div class="ttname"><a href="chibios_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449">LED_TOGGLE</a></div><div class="ttdeci">#define LED_TOGGLE(i)</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2led__hw_8h_source.html#l00051">led_hw.h:51</a></div></div>
 <div class="ttc" id="ADS8344_8c_html_a3f17d7c8cdacbbfc2ee4cb8609fdb83a"><div class="ttname"><a href="ADS8344_8c.html#a3f17d7c8cdacbbfc2ee4cb8609fdb83a">send_request</a></div><div class="ttdeci">static void send_request(void)</div><div class="ttdef"><b>Definition:</b> <a href="ADS8344_8c_source.html#l00122">ADS8344.c:122</a></div></div>
 <div class="ttc" id="lpcVIC_8h_html_a20f163f17339eb92d567986cfd657ad6"><div class="ttname"><a href="lpcVIC_8h.html#a20f163f17339eb92d567986cfd657ad6">VIC_BIT</a></div><div class="ttdeci">#define VIC_BIT(chan)</div><div class="ttdef"><b>Definition:</b> <a href="lpcVIC_8h_source.html#l00105">lpcVIC.h:105</a></div></div>
 <div class="ttc" id="ADS8344_8h_html"><div class="ttname"><a href="ADS8344_8h.html">ADS8344.h</a></div></div>
@@ -324,7 +322,7 @@ $(document).ready(function(){initNavTree('ADS8344_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_3f7617cb4a5e4fe5cc816b7b3bbdea3a.html">lpc21</a></li><li class="navelem"><a class="el" href="ADS8344_8c.html">ADS8344.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:14 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:13 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

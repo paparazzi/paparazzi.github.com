@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('airspeed__amsys_8c.html','');});
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="i2c_8h_source.html">mcu_periph/i2c.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
-<code>#include &quot;messages.h&quot;</code><br />
+<code>#include &quot;pprzlink/messages.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('airspeed__amsys_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="airspeed__amsys_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2sensors_2airspeed__amsys_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2sensors_2airspeed__amsys_8c" id="sw_2airborne_2modules_2sensors_2airspeed__amsys_8c">
-<area shape="rect" id="node2" href="airspeed__amsys_8h.html" title="sensors/airspeed_amsys.h" alt="" coords="824,102,1016,129"/><area shape="rect" id="node4" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="973,191,1104,218"/><area shape="rect" id="node6" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="536,102,602,129"/><area shape="rect" id="node19" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1261,191,1400,218"/><area shape="rect" id="node24" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1550,95,1703,136"/><area shape="rect" id="node7" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="645,281,824,307"/><area shape="rect" id="node13" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="127,281,318,307"/><area shape="rect" id="node15" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="584,184,735,225"/><area shape="rect" id="node17" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="222,184,372,225"/><area shape="rect" id="node18" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="396,184,560,225"/><area shape="rect" id="node8" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="165,370,320,397"/><area shape="rect" id="node11" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="622,370,772,397"/><area shape="rect" id="node16" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="446,281,570,307"/><area shape="rect" id="node21" href="link__device_8h.html" title="generic device header " alt="" coords="1494,459,1676,486"/><area shape="rect" id="node22" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1413,541,1498,568"/><area shape="rect" id="node27" href="pprz__transport_8h.html" title="Building and parsing Paparazzi frames. " alt="" coords="1671,273,1824,315"/><area shape="rect" id="node31" href="pprzlog__transport_8h.html" title="Protocol for on&#45;board data logger with timestamp. " alt="" coords="1494,273,1647,315"/><area shape="rect" id="node35" href="xbee_8h.html" title="Maxstream XBee serial input and output. " alt="" coords="2020,184,2174,225"/><area shape="rect" id="node37" href="w5100_8h.html" title="W5100 ethernet chip I/O. " alt="" coords="1788,184,1942,225"/><area shape="rect" id="node28" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1671,363,1824,404"/><area shape="rect" id="node30" href="transport_8h.html" title="generic transport header " alt="" coords="1494,363,1647,404"/><area shape="rect" id="node32" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1197,370,1368,397"/><area shape="rect" id="node36" href="xbee24_8h.html" title="Configuration for 2.4GHz &quot;series 1&quot; and 900MHz modules. " alt="" coords="2186,273,2339,315"/></map>
+<area shape="rect" id="node2" href="airspeed__amsys_8h.html" title="sensors/airspeed_amsys.h" alt="" coords="1026,102,1218,129"/><area shape="rect" id="node4" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="1175,191,1306,218"/><area shape="rect" id="node6" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="657,102,723,129"/><area shape="rect" id="node20" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1374,191,1513,218"/><area shape="rect" id="node24" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1715,95,1868,136"/><area shape="rect" id="node7" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="725,273,903,300"/><area shape="rect" id="node13" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="308,273,499,300"/><area shape="rect" id="node16" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="856,184,1007,225"/><area shape="rect" id="node18" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="441,184,592,225"/><area shape="rect" id="node19" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="668,184,832,225"/><area shape="rect" id="node8" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="381,348,535,375"/><area shape="rect" id="node11" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="755,348,905,375"/><area shape="rect" id="node17" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="576,273,700,300"/><area shape="rect" id="node25" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1893,191,1978,218"/><area shape="rect" id="node28" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1715,184,1868,225"/></map>
 </div>
 </div>
 <p><a href="airspeed__amsys_8c_source.html">Go to the source code of this file.</a></p>
@@ -172,8 +172,8 @@ Variables</h2></td></tr>
 <tr class="separator:aa3279eb0d77800f5e2ce43a443b052f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30f024ad57f6b9ec5fae02688a287326"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="airspeed__amsys_8c.html#a30f024ad57f6b9ec5fae02688a287326">tempAS_amsys_raw</a></td></tr>
 <tr class="separator:a30f024ad57f6b9ec5fae02688a287326"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee59582330f31b371e6cd6413cc98288"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="airspeed__amsys_8c.html#aee59582330f31b371e6cd6413cc98288">airspeed_amsys_valid</a></td></tr>
-<tr class="separator:aee59582330f31b371e6cd6413cc98288"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2989b3d83724ac943b834b70d315870"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="airspeed__amsys_8c.html#ae2989b3d83724ac943b834b70d315870">airspeed_amsys_valid</a></td></tr>
+<tr class="separator:ae2989b3d83724ac943b834b70d315870"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eb2da4dbc87f90eaaa578e0bfdae730"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="airspeed__amsys_8c.html#a3eb2da4dbc87f90eaaa578e0bfdae730">airspeed_amsys_offset</a></td></tr>
 <tr class="separator:a3eb2da4dbc87f90eaaa578e0bfdae730"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fbbcc73117aaa2621704d1e367791f2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="airspeed__amsys_8c.html#a6fbbcc73117aaa2621704d1e367791f2">airspeed_amsys_tmp</a></td></tr>
@@ -188,14 +188,14 @@ Variables</h2></td></tr>
 <tr class="separator:a41b2311caf36c593094429deaa55e89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c6370db57c0a93cbda0e262bbd5474e"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__i2c.html#structi2c__transaction">i2c_transaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="airspeed__amsys_8c.html#a2c6370db57c0a93cbda0e262bbd5474e">airspeed_amsys_i2c_trans</a></td></tr>
 <tr class="separator:a2c6370db57c0a93cbda0e262bbd5474e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e52de7b56f269017eba43bde01e2fdc"><td class="memItemLeft" align="right" valign="top">volatile bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="airspeed__amsys_8c.html#a4e52de7b56f269017eba43bde01e2fdc">airspeed_amsys_i2c_done</a></td></tr>
-<tr class="separator:a4e52de7b56f269017eba43bde01e2fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7454f0006a20439a1abe61c9040eabd6"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="airspeed__amsys_8c.html#a7454f0006a20439a1abe61c9040eabd6">airspeed_amsys_i2c_done</a></td></tr>
+<tr class="separator:a7454f0006a20439a1abe61c9040eabd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ddf9c29e6f33832f1893cdd311dfdd6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="airspeed__amsys_8c.html#a5ddf9c29e6f33832f1893cdd311dfdd6">airspeed_temperature</a> = 0.0</td></tr>
 <tr class="separator:a5ddf9c29e6f33832f1893cdd311dfdd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a223e6f251f6d932fec44f7641e0c93db"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="airspeed__amsys_8c.html#a223e6f251f6d932fec44f7641e0c93db">airspeed_old</a> = 0.0</td></tr>
 <tr class="separator:a223e6f251f6d932fec44f7641e0c93db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab503ccc53849981668ccc06e76cff1c1"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="airspeed__amsys_8c.html#ab503ccc53849981668ccc06e76cff1c1">airspeed_amsys_offset_init</a></td></tr>
-<tr class="separator:ab503ccc53849981668ccc06e76cff1c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac12c3e6a10eb35fa367cf46e558b0321"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="airspeed__amsys_8c.html#ac12c3e6a10eb35fa367cf46e558b0321">airspeed_amsys_offset_init</a></td></tr>
+<tr class="separator:ac12c3e6a10eb35fa367cf46e558b0321"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fbcd685ad1527b9f156515cdb7a78ed"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="airspeed__amsys_8c.html#a0fbcd685ad1527b9f156515cdb7a78ed">airspeed_amsys_offset_tmp</a></td></tr>
 <tr class="separator:a0fbcd685ad1527b9f156515cdb7a78ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfbfca98d1fcc7a6259cd96f9bcda7e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="airspeed__amsys_8c.html#acfbfca98d1fcc7a6259cd96f9bcda7e7">airspeed_amsys_cnt</a></td></tr>
@@ -377,7 +377,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="airspeed__amsys_8c_source.html#l00135">135</a> of file <a class="el" href="airspeed__amsys_8c_source.html">airspeed_amsys.c</a>.</p>
 
-<p>References <a class="el" href="downlink_8h_source.html#l00079">DefaultChannel</a>, and <a class="el" href="downlink_8h_source.html#l00083">DefaultDevice</a>.</p>
+<p>References <a class="el" href="downlink_8h_source.html#l00084">DefaultChannel</a>, and <a class="el" href="downlink_8h_source.html#l00088">DefaultDevice</a>.</p>
 
 <p>Referenced by <a class="el" href="airspeed__amsys_8c_source.html#l00143">airspeed_amsys_read_event()</a>, and <a class="el" href="airspeed__amsys_8c_source.html#l00109">airspeed_amsys_read_periodic()</a>.</p>
 
@@ -410,7 +410,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="airspeed__amsys_8c_source.html#l00092">92</a> of file <a class="el" href="airspeed__amsys_8c_source.html">airspeed_amsys.c</a>.</p>
 
-<p>References <a class="el" href="airspeed__amsys_8c_source.html#l00049">AIRSPEED_AMSYS_FILTER</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00080">airspeed_amsys_i2c_trans</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00043">AIRSPEED_AMSYS_OFFSET_NBSAMPLES_AVRG</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00042">AIRSPEED_AMSYS_OFFSET_NBSAMPLES_INIT</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00038">AIRSPEED_AMSYS_SCALE</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p>References <a class="el" href="airspeed__amsys_8c_source.html#l00049">AIRSPEED_AMSYS_FILTER</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00080">airspeed_amsys_i2c_trans</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00043">AIRSPEED_AMSYS_OFFSET_NBSAMPLES_AVRG</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00042">AIRSPEED_AMSYS_OFFSET_NBSAMPLES_INIT</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00038">AIRSPEED_AMSYS_SCALE</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
 
 </div>
 </div>
@@ -430,7 +430,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="airspeed__amsys_8c_source.html#l00143">143</a> of file <a class="el" href="airspeed__amsys_8c_source.html">airspeed_amsys.c</a>.</p>
 
-<p>References <a class="el" href="airspeed__amsys_8c_source.html#l00077">airspeed_amsys</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00088">airspeed_amsys_cnt</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00135">airspeed_amsys_downlink()</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00080">airspeed_amsys_i2c_trans</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00046">AIRSPEED_AMSYS_MAXPRESURE</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00074">airspeed_amsys_offset</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00040">AIRSPEED_AMSYS_OFFSET_MAX</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00041">AIRSPEED_AMSYS_OFFSET_MIN</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00043">AIRSPEED_AMSYS_OFFSET_NBSAMPLES_AVRG</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00076">airspeed_amsys_p</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00079">airspeed_filter</a>, <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="state_8h_source.html#l01254">stateSetAirspeed_f()</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p>References <a class="el" href="airspeed__amsys_8c_source.html#l00077">airspeed_amsys</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00088">airspeed_amsys_cnt</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00135">airspeed_amsys_downlink()</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00080">airspeed_amsys_i2c_trans</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00046">AIRSPEED_AMSYS_MAXPRESURE</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00074">airspeed_amsys_offset</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00040">AIRSPEED_AMSYS_OFFSET_MAX</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00041">AIRSPEED_AMSYS_OFFSET_MIN</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00043">AIRSPEED_AMSYS_OFFSET_NBSAMPLES_AVRG</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00076">airspeed_amsys_p</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00079">airspeed_filter</a>, <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="state_8h_source.html#l01291">stateSetAirspeed_f()</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -461,7 +461,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="airspeed__amsys_8c_source.html#l00109">109</a> of file <a class="el" href="airspeed__amsys_8c_source.html">airspeed_amsys.c</a>.</p>
 
-<p>References <a class="el" href="airspeed__amsys_8c_source.html#l00036">AIRSPEED_AMSYS_ADDR</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00135">airspeed_amsys_downlink()</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00052">AIRSPEED_AMSYS_I2C_DEV</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00080">airspeed_amsys_i2c_trans</a>, <a class="el" href="i2c_8c_source.html#l00268">i2c_receive()</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="sim__ir_8c_source.html#l00014">sim_air_speed</a>, <a class="el" href="state_8h_source.html#l01254">stateSetAirspeed_f()</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
+<p>References <a class="el" href="airspeed__amsys_8c_source.html#l00036">AIRSPEED_AMSYS_ADDR</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00135">airspeed_amsys_downlink()</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00052">AIRSPEED_AMSYS_I2C_DEV</a>, <a class="el" href="airspeed__amsys_8c_source.html#l00080">airspeed_amsys_i2c_trans</a>, <a class="el" href="i2c_8c_source.html#l00268">i2c_receive()</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="sim__ir_8c_source.html#l00014">sim_air_speed</a>, <a class="el" href="state_8h_source.html#l01291">stateSetAirspeed_f()</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -470,7 +470,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="airspeed__amsys_8c_aca26a3f68b1ae04d73408bcb37d62869_cgraph.png" border="0" usemap="#airspeed__amsys_8c_aca26a3f68b1ae04d73408bcb37d62869_cgraph" alt=""/></div>
 <map name="airspeed__amsys_8c_aca26a3f68b1ae04d73408bcb37d62869_cgraph" id="airspeed__amsys_8c_aca26a3f68b1ae04d73408bcb37d62869_cgraph">
-<area shape="rect" id="node2" href="airspeed__amsys_8c.html#aad98861def0c5e327efd870515793da0" title="airspeed_amsys_downlink" alt="" coords="216,5,403,32"/><area shape="rect" id="node3" href="group__i2c.html#ga9bdc2f5162d3e77dd58b7541ddcbe5d1" title="Submit a read only transaction. " alt="" coords="263,56,356,83"/><area shape="rect" id="node5" href="group__state__wind__airspeed.html#ga2ede5795eaec38206e25b8850ee40f63" title="Set airspeed (float). " alt="" coords="237,107,381,133"/><area shape="rect" id="node4" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="451,56,541,83"/></map>
+<area shape="rect" id="node2" href="airspeed__amsys_8c.html#aad98861def0c5e327efd870515793da0" title="airspeed_amsys_downlink" alt="" coords="216,5,403,32"/><area shape="rect" id="node3" href="group__i2c.html#ga9e7c3ccd9ba7415486bfb2e52eaa3964" title="Submit a read only transaction. " alt="" coords="263,56,356,83"/><area shape="rect" id="node5" href="group__state__wind__airspeed.html#ga2ede5795eaec38206e25b8850ee40f63" title="Set airspeed (float). " alt="" coords="237,107,381,133"/><area shape="rect" id="node4" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="451,56,541,83"/></map>
 </div>
 </p>
 
@@ -509,12 +509,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4e52de7b56f269017eba43bde01e2fdc"></a>
+<a class="anchor" id="a7454f0006a20439a1abe61c9040eabd6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">volatile bool_t airspeed_amsys_i2c_done</td>
+          <td class="memname">volatile bool airspeed_amsys_i2c_done</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -555,12 +555,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab503ccc53849981668ccc06e76cff1c1"></a>
+<a class="anchor" id="ac12c3e6a10eb35fa367cf46e558b0321"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool_t airspeed_amsys_offset_init</td>
+          <td class="memname">bool airspeed_amsys_offset_init</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -627,12 +627,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aee59582330f31b371e6cd6413cc98288"></a>
+<a class="anchor" id="ae2989b3d83724ac943b834b70d315870"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool_t airspeed_amsys_valid</td>
+          <td class="memname">bool airspeed_amsys_valid</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -719,7 +719,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="airspeed__amsys_8c.html">airspeed_amsys.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:56 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:03 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

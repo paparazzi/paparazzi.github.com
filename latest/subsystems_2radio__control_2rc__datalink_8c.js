@@ -5,6 +5,6 @@ var subsystems_2radio__control_2rc__datalink_8c =
     [ "radio_control_impl_event", "subsystems_2radio__control_2rc__datalink_8c.html#a760dbd4fa3f62cc43524fc420c2a9e5f", null ],
     [ "radio_control_impl_init", "subsystems_2radio__control_2rc__datalink_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832", null ],
     [ "rc_datalink_normalize", "subsystems_2radio__control_2rc__datalink_8c.html#af4b863040e1fdafe349107575bcb35c2", null ],
-    [ "rc_dl_frame_available", "subsystems_2radio__control_2rc__datalink_8c.html#a6d2f954c65b1f761c99fd123b8ca7a35", null ],
+    [ "rc_dl_frame_available", "subsystems_2radio__control_2rc__datalink_8c.html#ab342fc7d0560212d19265550ed22efaf", null ],
     [ "rc_dl_values", "subsystems_2radio__control_2rc__datalink_8c.html#a8ad016a0fe68026f295a8ffaacdd2c5f", null ]
 ];

@@ -17,6 +17,6 @@ var hott_8c =
     [ "hott_event_timer", "hott_8c.html#a06a5a3d870dc5636e39a99cd337e256c", null ],
     [ "hott_msg_len", "hott_8c.html#acb43cc87186abdf6cf5b21f415249783", null ],
     [ "hott_msg_ptr", "hott_8c.html#a1db23adb64c2b82f16e9d878058b9b80", null ],
-    [ "hott_telemetry_is_sending", "hott_8c.html#a09326edb475209cbafbb3938d640288e", null ],
+    [ "hott_telemetry_is_sending", "hott_8c.html#a1ef88a3964a56930d8f92a69e950ec7a", null ],
     [ "hott_telemetry_sendig_msgs_id", "hott_8c.html#af76591cac2841a77b64b4b4fde66b64c", null ]
 ];

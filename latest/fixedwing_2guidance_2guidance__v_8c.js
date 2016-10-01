@@ -11,6 +11,7 @@ var fixedwing_2guidance_2guidance__v_8c =
     [ "v_ctl_climb_auto_throttle_loop", "fixedwing_2guidance_2guidance__v_8c.html#ae1b6858ee2485b993f9f294027dbd032", null ],
     [ "v_ctl_climb_loop", "fixedwing_2guidance_2guidance__v_8c.html#a38f0bbceda8812281fc650c2c1aac6c8", null ],
     [ "v_ctl_init", "fixedwing_2guidance_2guidance__v_8c.html#ac48c5fff2d5aca1dd1fc58622709d7eb", null ],
+    [ "v_ctl_landing_loop", "fixedwing_2guidance_2guidance__v_8c.html#a130f49d9941f156bb04aa94122b167d0", null ],
     [ "v_ctl_throttle_slew", "fixedwing_2guidance_2guidance__v_8c.html#a7fefa3c115f6c0f7453db6c2edd2dbbb", null ],
     [ "v_ctl_altitude_error", "fixedwing_2guidance_2guidance__v_8c.html#adddca7473e9b7d77cd07d78d5bc70439", null ],
     [ "v_ctl_altitude_max_climb", "fixedwing_2guidance_2guidance__v_8c.html#a836668275c6087510a6e997568418109", null ],

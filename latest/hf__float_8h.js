@@ -1,8 +1,8 @@
 var hf__float_8h =
 [
     [ "HfilterFloat", "hf__float_8h.html#structHfilterFloat", [
-      [ "lag_counter", "hf__float_8h.html#a0d390aab7aa6ed5be9fb5a046e4914a4", null ],
-      [ "rollback", "hf__float_8h.html#ada8e3f6c6ab45412824f1dde6497eee5", null ],
+      [ "lag_counter", "hf__float_8h.html#ae71c4e0ae92bce468a314d7101e104f9", null ],
+      [ "rollback", "hf__float_8h.html#a6042a5580f73a9e69d21573324255978", null ],
       [ "x", "hf__float_8h.html#a6e01846a801cbd7fe3ae1f69df70ce3b", null ],
       [ "xdot", "hf__float_8h.html#a3161286a7c402bf00b108cf84127542b", null ],
       [ "xdotdot", "hf__float_8h.html#aac3e4a95c04df145852ab40efa241835", null ],

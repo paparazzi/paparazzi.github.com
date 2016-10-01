@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -106,6 +106,7 @@ $(document).ready(function(){initNavTree('inter__mcu_8c.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">inter_mcu.c File Reference</div>  </div>
@@ -128,22 +129,62 @@ $(document).ready(function(){initNavTree('inter__mcu_8c.html','');});
 </div>
 <p><a href="inter__mcu_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a260c9982f7e705204128d5b9111697f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter__mcu_8c.html#a260c9982f7e705204128d5b9111697f4">PPRZ_MUTEX</a> (ap_state_mtx)</td></tr>
+<tr class="separator:a260c9982f7e705204128d5b9111697f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47bf3cf98e6f36872ef0dddc9c2f911a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter__mcu_8c.html#a47bf3cf98e6f36872ef0dddc9c2f911a">PPRZ_MUTEX</a> (fbw_state_mtx)</td></tr>
+<tr class="separator:a47bf3cf98e6f36872ef0dddc9c2f911a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a1a4da5ac6e76b01f83b00facee8f3dbf"><td class="memItemLeft" align="right" valign="top">struct fbw_state *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter__mcu_8c.html#a1a4da5ac6e76b01f83b00facee8f3dbf">fbw_state</a> = &amp;link_mcu_from_fbw_msg.payload.from_fbw</td></tr>
 <tr class="separator:a1a4da5ac6e76b01f83b00facee8f3dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac13671906f2663b39fde033f4cb4a410"><td class="memItemLeft" align="right" valign="top">struct ap_state *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter__mcu_8c.html#ac13671906f2663b39fde033f4cb4a410">ap_state</a> = &amp;link_mcu_from_ap_msg.payload.from_ap</td></tr>
 <tr class="separator:ac13671906f2663b39fde033f4cb4a410"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6c868c590b3ed8e97df60b50ac07f3d"><td class="memItemLeft" align="right" valign="top">volatile bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter__mcu_8c.html#ac6c868c590b3ed8e97df60b50ac07f3d">inter_mcu_received_fbw</a> = <a class="el" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></td></tr>
-<tr class="separator:ac6c868c590b3ed8e97df60b50ac07f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39c7839a61b81e1afcd1788348e1bf38"><td class="memItemLeft" align="right" valign="top">volatile bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter__mcu_8c.html#a39c7839a61b81e1afcd1788348e1bf38">inter_mcu_received_ap</a> = <a class="el" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></td></tr>
-<tr class="separator:a39c7839a61b81e1afcd1788348e1bf38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98e2645d2aa8d12280b26af8b51320da"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter__mcu_8c.html#a98e2645d2aa8d12280b26af8b51320da">inter_mcu_received_fbw</a> = false</td></tr>
+<tr class="separator:a98e2645d2aa8d12280b26af8b51320da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46b8d52f1b1b4ccef9a2dd10dd857246"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter__mcu_8c.html#a46b8d52f1b1b4ccef9a2dd10dd857246">inter_mcu_received_ap</a> = false</td></tr>
+<tr class="separator:a46b8d52f1b1b4ccef9a2dd10dd857246"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Communication between fbw and ap processes. </p>
 
 <p>Definition in file <a class="el" href="inter__mcu_8c_source.html">inter_mcu.c</a>.</p>
-</div><h2 class="groupheader">Variable Documentation</h2>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a260c9982f7e705204128d5b9111697f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PPRZ_MUTEX </td>
+          <td>(</td>
+          <td class="paramtype">ap_state_mtx&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a47bf3cf98e6f36872ef0dddc9c2f911a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PPRZ_MUTEX </td>
+          <td>(</td>
+          <td class="paramtype">fbw_state_mtx&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
 <a class="anchor" id="ac13671906f2663b39fde033f4cb4a410"></a>
 <div class="memitem">
 <div class="memproto">
@@ -156,7 +197,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="inter__mcu_8c_source.html#l00037">37</a> of file <a class="el" href="inter__mcu_8c_source.html">inter_mcu.c</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00564">attitude_loop()</a>, <a class="el" href="cam_8c_source.html#l00204">cam_angles()</a>, <a class="el" href="cam_8c_source.html#l00130">cam_periodic()</a>, <a class="el" href="main__ap_8c_source.html#l00374">copy_from_to_fbw()</a>, <a class="el" href="generic__com_8c_source.html#l00070">generic_com_periodic()</a>, <a class="el" href="main__ap_8c_source.html#l00175">init_ap()</a>, <a class="el" href="link__mcu__can_8c_source.html#l00057">link_mcu_on_can_msg()</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00297">parse_mavpilot_msg()</a>, <a class="el" href="auto1__commands_8c_source.html#l00028">periodic_auto1_commands()</a>, and <a class="el" href="gas__engine__idle__trim_8c_source.html#l00031">periodic_gas_engine_idle_trim()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00554">attitude_loop()</a>, <a class="el" href="main__ap_8c_source.html#l00360">copy_from_to_fbw()</a>, <a class="el" href="main__ap_8c_source.html#l00174">init_ap()</a>, <a class="el" href="link__mcu__can_8c_source.html#l00057">link_mcu_on_can_msg()</a>, and <a class="el" href="link__mcu__usart_8c_source.html#l00297">parse_mavpilot_msg()</a>.</p>
 
 </div>
 </div>
@@ -172,39 +213,39 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="inter__mcu_8c_source.html#l00036">36</a> of file <a class="el" href="inter__mcu_8c_source.html">inter_mcu.c</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00374">copy_from_to_fbw()</a>, <a class="el" href="dc__shoot__rc_8c_source.html#l00039">dc_shoot_rc_periodic()</a>, <a class="el" href="link__mcu__can_8c_source.html#l00057">link_mcu_on_can_msg()</a>, <a class="el" href="main__ap_8c_source.html#l00360">mcu1_status_update()</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00297">parse_mavpilot_msg()</a>, <a class="el" href="auto1__commands_8c_source.html#l00028">periodic_auto1_commands()</a>, <a class="el" href="gas__engine__idle__trim_8c_source.html#l00031">periodic_gas_engine_idle_trim()</a>, <a class="el" href="main__ap_8c_source.html#l00322">pprz_mode_update()</a>, <a class="el" href="main__ap_8c_source.html#l00391">telecommand_task()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00360">copy_from_to_fbw()</a>, <a class="el" href="link__mcu__can_8c_source.html#l00057">link_mcu_on_can_msg()</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00297">parse_mavpilot_msg()</a>, <a class="el" href="main__ap_8c_source.html#l00381">telecommand_task()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a39c7839a61b81e1afcd1788348e1bf38"></a>
+<a class="anchor" id="a46b8d52f1b1b4ccef9a2dd10dd857246"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">volatile bool_t inter_mcu_received_ap = <a class="el" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></td>
+          <td class="memname">volatile bool inter_mcu_received_ap = false</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="inter__mcu_8c_source.html#l00041">41</a> of file <a class="el" href="inter__mcu_8c_source.html">inter_mcu.c</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00564">attitude_loop()</a>, <a class="el" href="link__mcu__can_8c_source.html#l00057">link_mcu_on_can_msg()</a>, and <a class="el" href="link__mcu__usart_8c_source.html#l00297">parse_mavpilot_msg()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00554">attitude_loop()</a>, <a class="el" href="link__mcu__can_8c_source.html#l00057">link_mcu_on_can_msg()</a>, and <a class="el" href="link__mcu__usart_8c_source.html#l00297">parse_mavpilot_msg()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac6c868c590b3ed8e97df60b50ac07f3d"></a>
+<a class="anchor" id="a98e2645d2aa8d12280b26af8b51320da"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">volatile bool_t inter_mcu_received_fbw = <a class="el" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></td>
+          <td class="memname">volatile bool inter_mcu_received_fbw = false</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="inter__mcu_8c_source.html#l00040">40</a> of file <a class="el" href="inter__mcu_8c_source.html">inter_mcu.c</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00691">event_task_ap()</a>, <a class="el" href="link__mcu__can_8c_source.html#l00057">link_mcu_on_can_msg()</a>, and <a class="el" href="link__mcu__usart_8c_source.html#l00297">parse_mavpilot_msg()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00679">event_task_ap()</a>, <a class="el" href="link__mcu__can_8c_source.html#l00057">link_mcu_on_can_msg()</a>, and <a class="el" href="link__mcu__usart_8c_source.html#l00297">parse_mavpilot_msg()</a>.</p>
 
 </div>
 </div>
@@ -214,7 +255,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="inter__mcu_8c.html">inter_mcu.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:45 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:50 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

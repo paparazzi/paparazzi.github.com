@@ -12,7 +12,7 @@ var group__state__acceleration =
     [ "stateGetAccelEcef_i", "group__state__acceleration.html#gace87c8e2eac995ea2d6491bd30299e56", null ],
     [ "stateGetAccelNed_f", "group__state__acceleration.html#ga058e2128ff3a2a3ca5f3c606f4166dfe", null ],
     [ "stateGetAccelNed_i", "group__state__acceleration.html#gab55b482bd9fe875141bafd34beda8bb4", null ],
-    [ "stateIsAccelValid", "group__state__acceleration.html#ga1e4c12fe4cb92b922268c4d55d2df7e8", null ],
+    [ "stateIsAccelValid", "group__state__acceleration.html#ga6000e95cc586155550808c07fef89725", null ],
     [ "stateSetAccelEcef_f", "group__state__acceleration.html#gab8004565ba29bc798f2c365edc5fbef9", null ],
     [ "stateSetAccelEcef_i", "group__state__acceleration.html#gac867a1cdf10fde35f62b7d654764909c", null ],
     [ "stateSetAccelNed_f", "group__state__acceleration.html#ga27b8f24af6ddce14389efaa5ec119967", null ],

@@ -16,6 +16,6 @@ var common__nav_8c =
     [ "nav_utm_zone0", "common__nav_8c.html#a66bdefcf7a79ffd01863bc4057e2bf5a", null ],
     [ "nb_waypoint", "common__nav_8c.html#abee3b60dcf3a8c1cad3036c63f8c3689", null ],
     [ "previous_ground_alt", "common__nav_8c.html#ae4df5b484d8683b60b8c21b45d7f09ee", null ],
-    [ "too_far_from_home", "common__nav_8c.html#ac566112f2489f0c9efcd3bf8b32f1b9d", null ],
+    [ "too_far_from_home", "common__nav_8c.html#a40345348447d2bf9b3462286f0b95a4f", null ],
     [ "waypoints", "common__nav_8c.html#a94e2a3864e1c0746e69eb9cda1061c62", null ]
 ];

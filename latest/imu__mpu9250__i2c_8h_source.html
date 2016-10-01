@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -172,15 +172,17 @@ $(document).ready(function(){initNavTree('imu__mpu9250__i2c_8h_source.html','');
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="imu__mpu9250__spi_8h.html#structImuMpu9250">ImuMpu9250</a> <a class="code" href="imu__mpu9250__i2c_8h.html#adad553c3f90fb29838650e9d3306b1c4">imu_mpu9250</a>;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__mpu9250__i2c_8h.html#af140d4e8a775be026073e67fd3080aa2">imu_mpu9250_event</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="imu__mpu9250__i2c_8h.html#a38f1122c1ee0701562b490c6e1b60609">   82</a></span>&#160;<span class="preprocessor">#define ImuEvent imu_mpu9250_event</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__mpu9250__i2c_8h.html#a9a9bb6c468d388d1688b2b35e94633d3">imu_mpu9250_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__mpu9250__i2c_8h.html#a38ba54b488a6adbea2dfb5a060d5d8b5">imu_mpu9250_periodic</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__mpu9250__i2c_8h.html#af140d4e8a775be026073e67fd3080aa2">imu_mpu9250_event</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* IMU_MPU9250_I2C_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="imu__mpu9250__i2c_8h_html_af140d4e8a775be026073e67fd3080aa2"><div class="ttname"><a href="imu__mpu9250__i2c_8h.html#af140d4e8a775be026073e67fd3080aa2">imu_mpu9250_event</a></div><div class="ttdeci">void imu_mpu9250_event(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu9250_8c_source.html#l00047">imu_mpu9250.c:47</a></div></div>
+<div class="ttc" id="imu__mpu9250__i2c_8h_html_a9a9bb6c468d388d1688b2b35e94633d3"><div class="ttname"><a href="imu__mpu9250__i2c_8h.html#a9a9bb6c468d388d1688b2b35e94633d3">imu_mpu9250_init</a></div><div class="ttdeci">void imu_mpu9250_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu9250_8c_source.html#l00037">imu_mpu9250.c:37</a></div></div>
 <div class="ttc" id="imu__mpu9250__spi_8h_html_a5239f1ebbc37e50b3c06de3e3cb530f5"><div class="ttname"><a href="imu__mpu9250__spi_8h.html#a5239f1ebbc37e50b3c06de3e3cb530f5">ImuMpu9250::mpu</a></div><div class="ttdeci">struct Mpu9250_I2c mpu</div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu9250__i2c_8h_source.html#l00075">imu_mpu9250_i2c.h:75</a></div></div>
 <div class="ttc" id="imu_8h_html"><div class="ttname"><a href="imu_8h.html">imu.h</a></div><div class="ttdoc">Inertial Measurement Unit interface. </div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
+<div class="ttc" id="imu__mpu9250__i2c_8h_html_a38ba54b488a6adbea2dfb5a060d5d8b5"><div class="ttname"><a href="imu__mpu9250__i2c_8h.html#a38ba54b488a6adbea2dfb5a060d5d8b5">imu_mpu9250_periodic</a></div><div class="ttdeci">void imu_mpu9250_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu9250_8c_source.html#l00042">imu_mpu9250.c:42</a></div></div>
 <div class="ttc" id="imu__mpu9250__spi_8h_html_structImuMpu9250"><div class="ttname"><a href="imu__mpu9250__spi_8h.html#structImuMpu9250">ImuMpu9250</a></div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu9250__i2c_8h_source.html#l00074">imu_mpu9250_i2c.h:74</a></div></div>
 <div class="ttc" id="imu__mpu9250__i2c_8h_html_adad553c3f90fb29838650e9d3306b1c4"><div class="ttname"><a href="imu__mpu9250__i2c_8h.html#adad553c3f90fb29838650e9d3306b1c4">imu_mpu9250</a></div><div class="ttdeci">struct ImuMpu9250 imu_mpu9250</div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu9250__i2c_8c_source.html#l00094">imu_mpu9250_i2c.c:94</a></div></div>
 <div class="ttc" id="mpu9250__i2c_8h_html"><div class="ttname"><a href="mpu9250__i2c_8h.html">mpu9250_i2c.h</a></div><div class="ttdoc">Driver for the MPU-9250 using I2C. </div></div>
@@ -191,7 +193,7 @@ $(document).ready(function(){initNavTree('imu__mpu9250__i2c_8h_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8b2fa0708e2db44c1b91938af97bac44.html">imu</a></li><li class="navelem"><a class="el" href="imu__mpu9250__i2c_8h.html">imu_mpu9250_i2c.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:32 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:33 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

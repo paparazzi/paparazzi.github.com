@@ -8,13 +8,13 @@ var mpu9250_8h =
       [ "clk_sel", "mpu9250_8h.html#a0f73249f413cf67b324e878300e640a7", null ],
       [ "dlpf_accel_cfg", "mpu9250_8h.html#aa70b0cd2b4d4ac64956c369549b905ef", null ],
       [ "dlpf_gyro_cfg", "mpu9250_8h.html#a0ce190425b2c115218430aa7c247b320", null ],
-      [ "drdy_int_enable", "mpu9250_8h.html#ac2b96fb59e85eea86a7d5c790ba385d6", null ],
+      [ "drdy_int_enable", "mpu9250_8h.html#af4e929be5dc71c2004ae1123d1929205", null ],
       [ "gyro_range", "mpu9250_8h.html#a6d5fe6ab403c651cef753c1409fc016d", null ],
-      [ "i2c_bypass", "mpu9250_8h.html#a40d9d57be11b86414eebf35e03e1baa8", null ],
+      [ "i2c_bypass", "mpu9250_8h.html#a8bac58e2f227d59033c8cd0f1341ead7", null ],
       [ "i2c_mst_clk", "mpu9250_8h.html#a66a23a2b2af6f5a6be820ec2f3cc99ba", null ],
       [ "i2c_mst_delay", "mpu9250_8h.html#a5dbcd328c27bdfb517b28695416dab5c", null ],
       [ "init_status", "mpu9250_8h.html#ab6e4b811de53bd7e90b4ca9aff594d5e", null ],
-      [ "initialized", "mpu9250_8h.html#afa18245a65b81dfe386fd8bdb7aa9413", null ],
+      [ "initialized", "mpu9250_8h.html#af64ff5b883179c7747e0c5389792d891", null ],
       [ "nb_bytes", "mpu9250_8h.html#a80ee0c5434de57f6f25ba3bc09d50b78", null ],
       [ "nb_slave_init", "mpu9250_8h.html#a5a3ef6764170e2bc2e25ac5f74d50735", null ],
       [ "nb_slaves", "mpu9250_8h.html#a69947f1fe40926633938b1f52ccb1d45", null ],
@@ -30,7 +30,7 @@ var mpu9250_8h =
     [ "MPU9250_DEFAULT_SMPLRT_DIV", "mpu9250_8h.html#a08d2673f85a6968d624cd16d3e77b46c", null ],
     [ "MPU9250_I2C_NB_SLAVES", "mpu9250_8h.html#a86533d677bbb1562223508b115f29f86", null ],
     [ "Mpu9250ConfigSet", "mpu9250_8h.html#a62c163eaf8e2918e26d119173cb0f7ee", null ],
-    [ "Mpu9250I2cSlaveConfigure", "mpu9250_8h.html#af964a6a286319350df9d391d8efe7d21", null ],
+    [ "Mpu9250I2cSlaveConfigure", "mpu9250_8h.html#a6615089619127aa79399b3e49e84a43a", null ],
     [ "Mpu9250ConfStatus", "mpu9250_8h.html#ae9f2a33bf06011f5752d81d20ebd0bdf", [
       [ "MPU9250_CONF_UNINIT", "mpu9250_8h.html#ae9f2a33bf06011f5752d81d20ebd0bdfa6493b0fd1ff7ad572e5d614ea240913e", null ],
       [ "MPU9250_CONF_RESET", "mpu9250_8h.html#ae9f2a33bf06011f5752d81d20ebd0bdfa38f61fc7949d72b68afe61dbd2443574", null ],
@@ -45,7 +45,7 @@ var mpu9250_8h =
       [ "MPU9250_CONF_INT_ENABLE", "mpu9250_8h.html#ae9f2a33bf06011f5752d81d20ebd0bdfaade65aeb7e6617452fda21189179412e", null ],
       [ "MPU9250_CONF_DONE", "mpu9250_8h.html#ae9f2a33bf06011f5752d81d20ebd0bdfa7f202aaed7a0f8f58c64603ffd602ed4", null ]
     ] ],
-    [ "mpu9250_configure_i2c_slaves", "mpu9250_8h.html#aeec91d1c3e5784a3ff93971ff11309ab", null ],
+    [ "mpu9250_configure_i2c_slaves", "mpu9250_8h.html#ad8c9bdb9e4d73f97f5b3daceb9e6e31b", null ],
     [ "mpu9250_send_config", "mpu9250_8h.html#a5a845891a5217c8082995fbbf9c94653", null ],
     [ "mpu9250_set_default_config", "mpu9250_8h.html#aae5fa60698653c8ac15e41796c53c66e", null ]
 ];

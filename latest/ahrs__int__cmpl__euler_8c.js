@@ -7,7 +7,7 @@ var ahrs__int__cmpl__euler_8c =
     [ "NOISE_FILTER_GAIN", "ahrs__int__cmpl__euler_8c.html#af92e9c251ae0de76dc97d0d2ef3d5fe6", null ],
     [ "PI_INTEG_EULER", "ahrs__int__cmpl__euler_8c.html#ade21f9eb72c0578ceaf8be14186c000f", null ],
     [ "TWO_PI_INTEG_EULER", "ahrs__int__cmpl__euler_8c.html#a02f00c6c5b6cc09a006df904693a14a2", null ],
-    [ "ahrs_ice_align", "ahrs__int__cmpl__euler_8c.html#a7f0e3a63744e609f81631d33da7e15e2", null ],
+    [ "ahrs_ice_align", "ahrs__int__cmpl__euler_8c.html#a910862cbcce7ec30bc61509f10d4595f", null ],
     [ "ahrs_ice_init", "ahrs__int__cmpl__euler_8c.html#aabe53d414f6e28c5b44a1e1acad6abcd", null ],
     [ "ahrs_ice_propagate", "ahrs__int__cmpl__euler_8c.html#a09c1d52ac9a43398b4818733eba1122a", null ],
     [ "ahrs_ice_set_body_to_imu", "ahrs__int__cmpl__euler_8c.html#a40fcc3122d1bac5f0d575ed95c64573a", null ],

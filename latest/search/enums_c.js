@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['pcf_5fstat',['pcf_stat',['../wind__gfi_8h.html#a28af1f1f55de3fbdf348c7f76dee2ccc',1,'wind_gfi.h']]],
-  ['pwm_5finput_5fchannels',['pwm_input_channels',['../lpc21_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89',1,'pwm_input_channels():&#160;pwm_input_arch.h'],['../stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89',1,'pwm_input_channels():&#160;pwm_input_arch.h']]]
+  ['oa_5fmethod',['oa_method',['../guidance__OA_8h.html#a4dac0a956aca3da3fa670abc875414d2',1,'guidance_OA.h']]],
+  ['osd_5fattributes',['osd_attributes',['../max7456_8c.html#ac3dd6ed7cc7d01ada4ce3180d50150cd',1,'max7456.c']]],
+  ['oval_5fstatus',['oval_status',['../nav_8h.html#a6b504fc3b9e256669f3d93dff3372bcf',1,'oval_status():&#160;nav.h'],['../navigation_8h.html#a6b504fc3b9e256669f3d93dff3372bcf',1,'oval_status():&#160;navigation.h']]]
 ];

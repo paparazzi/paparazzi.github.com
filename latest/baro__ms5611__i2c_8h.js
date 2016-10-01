@@ -10,8 +10,8 @@ var baro__ms5611__i2c_8h =
     [ "baro_ms5611_send_coeff", "baro__ms5611__i2c_8h.html#acf4648ad0258e412fdf2241bc4f84a2c", null ],
     [ "baro_ms5611", "baro__ms5611__i2c_8h.html#a2c58ff8f9484363a0bb727e2b63f2dc0", null ],
     [ "baro_ms5611_alt", "baro__ms5611__i2c_8h.html#a22b8d38ee47406438bce88489b3bcd2e", null ],
-    [ "baro_ms5611_alt_valid", "baro__ms5611__i2c_8h.html#a6407f260d5afddd8c02bafc5acfaba25", null ],
-    [ "baro_ms5611_enabled", "baro__ms5611__i2c_8h.html#a072d588808b1e53829dafc596c2cae33", null ],
+    [ "baro_ms5611_alt_valid", "baro__ms5611__i2c_8h.html#a067f5b43666272af6cd13fab414ecd6f", null ],
+    [ "baro_ms5611_enabled", "baro__ms5611__i2c_8h.html#aaafe0f52402c0f9545035f4908d7259f", null ],
     [ "baro_ms5611_r", "baro__ms5611__i2c_8h.html#ae2486f554e75685d70b6f119ed483267", null ],
     [ "baro_ms5611_sigma2", "baro__ms5611__i2c_8h.html#a0155646f7125fc276063f89e78c43c02", null ]
 ];

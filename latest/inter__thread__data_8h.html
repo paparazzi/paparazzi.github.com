@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -114,14 +114,25 @@ $(document).ready(function(){initNavTree('inter__thread__data_8h.html','');});
 
 <p>Inter-thread data structures.  
 <a href="#details">More...</a></p>
-<div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
+<div class="textblock"><code>#include &quot;<a class="el" href="pprz__algebra__float_8h_source.html">math/pprz_algebra_float.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="pprz__algebra__int_8h_source.html">math/pprz_algebra_int.h</a>&quot;</code><br />
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for inter_thread_data.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="inter__thread__data_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2computer__vision_2opticflow_2inter__thread__data_8h" alt=""/></div>
+<map name="sw_2airborne_2modules_2computer__vision_2opticflow_2inter__thread__data_8h" id="sw_2airborne_2modules_2computer__vision_2opticflow_2inter__thread__data_8h">
+<area shape="rect" id="node2" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="145,109,335,136"/><area shape="rect" id="node9" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="363,109,541,136"/><area shape="rect" id="node3" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="297,184,415,211"/><area shape="rect" id="node10" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="490,184,641,211"/></map>
+</div>
+</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="inter__thread__data_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2computer__vision_2opticflow_2inter__thread__data_8hdep" alt=""/></div>
 <map name="sw_2airborne_2modules_2computer__vision_2opticflow_2inter__thread__data_8hdep" id="sw_2airborne_2modules_2computer__vision_2opticflow_2inter__thread__data_8hdep">
-<area shape="rect" id="node2" href="opticflow__calculator_8h.html" title="Calculate velocity from optic flow. " alt="" coords="112,109,303,165"/><area shape="rect" id="node3" href="opticflow__calculator_8c.html" title="Estimate velocity from optic flow. " alt="" coords="5,213,196,269"/><area shape="rect" id="node4" href="opticflow__module_8h.html" title="optical&#45;flow calculation for Parrot Drones " alt="" coords="220,213,411,269"/><area shape="rect" id="node5" href="opticflow__module_8c.html" title="optical&#45;flow based hovering for Parrot AR.Drone 2.0 " alt="" coords="220,317,411,373"/></map>
+<area shape="rect" id="node2" href="edge__flow_8h.html" title="calculate optical flow with EdgeFlow " alt="" coords="103,213,257,269"/><area shape="rect" id="node5" href="opticflow__calculator_8h.html" title="Calculate velocity from optic flow. " alt="" coords="214,109,405,165"/><area shape="rect" id="node3" href="edge__flow_8c.html" title="calculate optical flow with EdgeFlow " alt="" coords="5,317,160,373"/><area shape="rect" id="node4" href="opticflow__calculator_8c.html" title="Estimate velocity from optic flow. " alt="" coords="185,317,375,373"/><area shape="rect" id="node6" href="opticflow__module_8h.html" title="optical&#45;flow calculation for Parrot Drones " alt="" coords="378,213,569,269"/><area shape="rect" id="node7" href="opticflow__module_8c.html" title="optical&#45;flow based hovering for Parrot AR.Drone 2.0 " alt="" coords="399,317,590,373"/></map>
 </div>
 </div>
 <p><a href="inter__thread__data_8h_source.html">Go to the source code of this file.</a></p>
@@ -149,7 +160,7 @@ Data Structures</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="inter__thread__data_8h_source.html#l00033">33</a> of file <a class="el" href="inter__thread__data_8h_source.html">inter_thread_data.h</a>.</p>
+<p>Definition at line <a class="el" href="inter__thread__data_8h_source.html#l00037">37</a> of file <a class="el" href="inter__thread__data_8h_source.html">inter_thread_data.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -219,17 +230,29 @@ tracked_cnt</td>
 <td class="fielddoc">
 The amount of tracked corners. </td></tr>
 <tr><td class="fieldtype">
+<a class="anchor" id="a70e6b2e916c219f0b44019d5e9be9828"></a>float</td>
+<td class="fieldname">
+vel_body_x</td>
+<td class="fielddoc">
+The velocity in the x direction (body fixed coordinates) </td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ae4ab1916dcc12aa4f2050473e6aae38d"></a>float</td>
+<td class="fieldname">
+vel_body_y</td>
+<td class="fielddoc">
+The velocity in the y direction (body fixed coordinates) </td></tr>
+<tr><td class="fieldtype">
 <a class="anchor" id="a7c074dfb5c43f9fdf569ac5cc6e4bf84"></a>float</td>
 <td class="fieldname">
 vel_x</td>
 <td class="fielddoc">
-The velocity in the x direction. </td></tr>
+The velocity in the x direction (image coordinates) </td></tr>
 <tr><td class="fieldtype">
 <a class="anchor" id="ac464e79cb76ab3a83edc99fd914811cb"></a>float</td>
 <td class="fieldname">
 vel_y</td>
 <td class="fielddoc">
-The velocity in the y direction. </td></tr>
+The velocity in the y direction (image coordinates) </td></tr>
 </table>
 
 </div>
@@ -244,9 +267,24 @@ The velocity in the y direction. </td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="inter__thread__data_8h_source.html#l00055">55</a> of file <a class="el" href="inter__thread__data_8h_source.html">inter_thread_data.h</a>.</p>
-</div><table class="fieldtable">
+<p>Definition at line <a class="el" href="inter__thread__data_8h_source.html#l00062">62</a> of file <a class="el" href="inter__thread__data_8h_source.html">inter_thread_data.h</a>.</p>
+</div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for opticflow_state_t:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="structopticflow__state__t__coll__graph.png" border="0" usemap="#opticflow__state__t_coll__map" alt="Collaboration graph"/></div>
+<map name="opticflow__state__t_coll__map" id="opticflow__state__t_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="abac22a985b0ca572aabda0e4d9239c94"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a></td>
+<td class="fieldname">
+accel_imu_meas</td>
+<td class="fielddoc">
+imu acceleration in imu's coordinates </td></tr>
 <tr><td class="fieldtype">
 <a class="anchor" id="a10655044c886afdd097767b8d85d3079"></a>float</td>
 <td class="fieldname">
@@ -254,17 +292,17 @@ agl</td>
 <td class="fielddoc">
 height above ground [m] </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a9fb86f4157f07c223fab383e23c0a7d4"></a>float</td>
+<a class="anchor" id="af65952a69836c1dc4352c956e5de45e6"></a>struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a></td>
 <td class="fieldname">
-phi</td>
+imu_to_body_quat</td>
 <td class="fielddoc">
-roll [rad] </td></tr>
+imu to body quaternion </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a35403d4a49b60f6ef69c89b9b563a0a4"></a>float</td>
+<a class="anchor" id="a8e80c342e31d4bcc458ce298057e1925"></a>struct <a class="el" href="group__math__algebra__float.html#structFloatRates">FloatRates</a></td>
 <td class="fieldname">
-theta</td>
+rates</td>
 <td class="fielddoc">
-pitch [rad] </td></tr>
+Body rates. </td></tr>
 </table>
 
 </div>
@@ -275,7 +313,7 @@ pitch [rad] </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="dir_737909cdc08fae475c12e10cc4efa3fe.html">opticflow</a></li><li class="navelem"><a class="el" href="inter__thread__data_8h.html">inter_thread_data.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:49 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:55 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

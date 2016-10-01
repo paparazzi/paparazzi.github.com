@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('lcd__dogm_8h_source.html','');});
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="lcd__dogm_8h.html#abcf0c324ad21ad49b8e9cfa6b63da4d4">   18</a></span>&#160;<span class="preprocessor">#define DOGM_ENTRY_MODE 0x06</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="lcd__dogm_8h.html#a013ebbab9fe5f1d401ebb0706f6499be">lcd_cmd</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> command);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="lcd__dogm_8h.html#ad0729d2cba627825a089ca1fff12ba29">lcd_data</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="protocol_8h.html#afc3d6dee7b37bab3504fff217c121e0b">data</a>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="lcd__dogm_8h.html#ad0729d2cba627825a089ca1fff12ba29">lcd_data</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="digital__cam_2catia_2protocol_8h.html#afc3d6dee7b37bab3504fff217c121e0b">data</a>);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="lcd__dogm_8h.html#ab6acaab38b691cf2bd50ff3f9cd5a9e9">lcd_dogm_init</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* LCD_DOGM_H */</span><span class="preprocessor"></span></div>
@@ -139,8 +139,8 @@ $(document).ready(function(){initNavTree('lcd__dogm_8h_source.html','');});
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="lcd__dogm_8h_html_ad0729d2cba627825a089ca1fff12ba29"><div class="ttname"><a href="lcd__dogm_8h.html#ad0729d2cba627825a089ca1fff12ba29">lcd_data</a></div><div class="ttdeci">void lcd_data(uint8_t data)</div><div class="ttdef"><b>Definition:</b> <a href="lcd__dogm_8c_source.html#l00050">lcd_dogm.c:50</a></div></div>
-<div class="ttc" id="protocol_8h_html_afc3d6dee7b37bab3504fff217c121e0b"><div class="ttname"><a href="protocol_8h.html#afc3d6dee7b37bab3504fff217c121e0b">mora_status_union::data</a></div><div class="ttdeci">struct mora_status_union::mora_status_struct data</div></div>
 <div class="ttc" id="led_8h_html"><div class="ttname"><a href="led_8h.html">led.h</a></div><div class="ttdoc">arch independent LED (Light Emitting Diodes) API </div></div>
+<div class="ttc" id="digital__cam_2catia_2protocol_8h_html_afc3d6dee7b37bab3504fff217c121e0b"><div class="ttname"><a href="digital__cam_2catia_2protocol_8h.html#afc3d6dee7b37bab3504fff217c121e0b">mora_status_union::data</a></div><div class="ttdeci">struct mora_status_union::mora_status_struct data</div></div>
 <div class="ttc" id="lcd__dogm_8h_html_ab6acaab38b691cf2bd50ff3f9cd5a9e9"><div class="ttname"><a href="lcd__dogm_8h.html#ab6acaab38b691cf2bd50ff3f9cd5a9e9">lcd_dogm_init</a></div><div class="ttdeci">void lcd_dogm_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="lcd__dogm_8c_source.html#l00059">lcd_dogm.c:59</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('lcd__dogm_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_ba28e41237872f6268f6dbae3db26982.html">display</a></li><li class="navelem"><a class="el" href="lcd__dogm_8h.html">lcd_dogm.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:23 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:23 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -10,6 +10,8 @@ var searchData=
   ['uint8vect3',['Uint8Vect3',['../group__math__algebra__int.html#structUint8Vect3',1,'']]],
   ['um6packet',['UM6Packet',['../imu__um6_8h.html#structUM6Packet',1,'']]],
   ['usb_5fserial_5fperiph',['usb_serial_periph',['../usb__serial_8h.html#structusb__serial__periph',1,'']]],
+  ['usbmassstorageconfig',['USBMassStorageConfig',['../structUSBMassStorageConfig.html',1,'']]],
+  ['usbmassstoragedriver',['USBMassStorageDriver',['../usb__msd_8h.html#structUSBMassStorageDriver',1,'']]],
   ['utmcoor_5fd',['UtmCoor_d',['../group__math__geodetic__double.html#structUtmCoor__d',1,'']]],
   ['utmcoor_5ff',['UtmCoor_f',['../pprz__geodetic__float_8h.html#structUtmCoor__f',1,'']]],
   ['utmcoor_5fi',['UtmCoor_i',['../group__math__geodetic__int.html#structUtmCoor__i',1,'']]]

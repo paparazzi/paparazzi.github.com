@@ -4,6 +4,7 @@ var vf__float_8c =
     [ "VFF_ACCEL_NOISE", "vf__float_8c.html#ae3700def16df9e2d7ca683f595ae6552", null ],
     [ "VFF_INIT_PXX", "vf__float_8c.html#aefae0ce4062f974323050964ff300080", null ],
     [ "VFF_MEAS_NOISE", "vf__float_8c.html#aa8a300bc722d037a9973d86e804cb4c4", null ],
+    [ "send_vff", "vf__float_8c.html#a6b7b25ece5d9e0f117da37b8aa5d69aa", null ],
     [ "update_vz_conf", "vf__float_8c.html#a0b39a581ab3b41a47578b26dd98f567f", null ],
     [ "update_z_conf", "vf__float_8c.html#aafd7012999c4a5c623b6b6f311ec595a", null ],
     [ "vff_init", "vf__float_8c.html#a29db6a6034952b28118ae9ea1ec00ca4", null ],

@@ -8,5 +8,5 @@ var airspeed__ets_8h =
     [ "airspeed_ets_i2c_trans", "airspeed__ets_8h.html#ac7df2f3536354ecc842855a3e76c97fa", null ],
     [ "airspeed_ets_offset", "airspeed__ets_8h.html#a96556ede33b13194c07f518706c11c40", null ],
     [ "airspeed_ets_raw", "airspeed__ets_8h.html#a5b8d889aa0c63db46fe4465ba6c8fffb", null ],
-    [ "airspeed_ets_valid", "airspeed__ets_8h.html#a8cf27b4c563e401e804df9e30166f719", null ]
+    [ "airspeed_ets_valid", "airspeed__ets_8h.html#a829b435c3b83d71dd818f94aeb51cefd", null ]
 ];

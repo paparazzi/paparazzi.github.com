@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -167,12 +167,12 @@ $(document).ready(function(){initNavTree('stabilization__adaptive_8h_source.html
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">    h_ctl_pitch_igain = _gain; \</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">  }</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">extern</span> bool_t <a class="code" href="stabilization__adaptive_8h.html#aa3cf0ada6c21e17a8269616f13439532">use_airspeed_ratio</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code" href="stabilization__adaptive_8h.html#a184a150e98a139a3e0e5cc6e9bc340a0">use_airspeed_ratio</a>;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* FW_H_CTL_A_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="stabilization__adaptive_8h_html_a184a150e98a139a3e0e5cc6e9bc340a0"><div class="ttname"><a href="stabilization__adaptive_8h.html#a184a150e98a139a3e0e5cc6e9bc340a0">use_airspeed_ratio</a></div><div class="ttdeci">bool use_airspeed_ratio</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__adaptive_8c_source.html#l00199">stabilization_adaptive.c:199</a></div></div>
 <div class="ttc" id="stabilization__adaptive_8h_html_adca87cd9c217e6a154e37785dd9c73e0"><div class="ttname"><a href="stabilization__adaptive_8h.html#adca87cd9c217e6a154e37785dd9c73e0">h_ctl_pitch_igain</a></div><div class="ttdeci">float h_ctl_pitch_igain</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__adaptive_8c_source.html#l00174">stabilization_adaptive.c:174</a></div></div>
 <div class="ttc" id="stabilization__adaptive_8h_html_ad56776da1f02d6bae65e546e5e2cdef6"><div class="ttname"><a href="stabilization__adaptive_8h.html#ad56776da1f02d6bae65e546e5e2cdef6">h_ctl_pitch_of_roll</a></div><div class="ttdeci">float h_ctl_pitch_of_roll</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__adaptive_8c_source.html#l00197">stabilization_adaptive.c:197</a></div></div>
-<div class="ttc" id="stabilization__adaptive_8h_html_aa3cf0ada6c21e17a8269616f13439532"><div class="ttname"><a href="stabilization__adaptive_8h.html#aa3cf0ada6c21e17a8269616f13439532">use_airspeed_ratio</a></div><div class="ttdeci">bool_t use_airspeed_ratio</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__adaptive_8c_source.html#l00199">stabilization_adaptive.c:199</a></div></div>
 <div class="ttc" id="stabilization__adaptive_8h_html_a32a80a87573b0fdb2faed1546b40ff64"><div class="ttname"><a href="stabilization__adaptive_8h.html#a32a80a87573b0fdb2faed1546b40ff64">h_ctl_pitch_Kffd</a></div><div class="ttdeci">float h_ctl_pitch_Kffd</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__adaptive_8c_source.html#l00177">stabilization_adaptive.c:177</a></div></div>
 <div class="ttc" id="stabilization__adaptive_8h_html_af41b727a1b999a2a3f2a62fef1e32ca2"><div class="ttname"><a href="stabilization__adaptive_8h.html#af41b727a1b999a2a3f2a62fef1e32ca2">h_ctl_pitch_Kffa</a></div><div class="ttdeci">float h_ctl_pitch_Kffa</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__adaptive_8c_source.html#l00176">stabilization_adaptive.c:176</a></div></div>
 <div class="ttc" id="stabilization__adaptive_8h_html_a42724178b90d872c2fbd93bbcabdedad"><div class="ttname"><a href="stabilization__adaptive_8h.html#a42724178b90d872c2fbd93bbcabdedad">h_ctl_roll_Kffa</a></div><div class="ttdeci">float h_ctl_roll_Kffa</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__adaptive_8c_source.html#l00162">stabilization_adaptive.c:162</a></div></div>
@@ -189,7 +189,7 @@ $(document).ready(function(){initNavTree('stabilization__adaptive_8h_source.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_cb1b347b64b61ba7f369ccfe68448b26.html">fixedwing</a></li><li class="navelem"><a class="el" href="dir_517430ae22334069e857fa1922a1fddc.html">stabilization</a></li><li class="navelem"><a class="el" href="stabilization__adaptive_8h.html">stabilization_adaptive.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:18 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:17 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

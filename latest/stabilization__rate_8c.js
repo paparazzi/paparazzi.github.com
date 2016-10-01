@@ -12,14 +12,15 @@ var stabilization__rate_8c =
     [ "STABILIZATION_RATE_IGAIN_Q", "stabilization__rate_8c.html#a57527f9d090861de8399d653d0860bcf", null ],
     [ "STABILIZATION_RATE_IGAIN_R", "stabilization__rate_8c.html#a4504f10cc666d8e046b0f51986be3e18", null ],
     [ "YAW_RATE_DEADBAND_EXCEEDED", "stabilization__rate_8c.html#a30d84448bbdf76dca4d17af8f6bc219c", null ],
+    [ "send_rate", "stabilization__rate_8c.html#aa7683726c8b977e5b4bf8206ece55102", null ],
     [ "stabilization_rate_enter", "stabilization__rate_8c.html#a3c8ef06f1db709ae713371b0a2a5054d", null ],
     [ "stabilization_rate_init", "stabilization__rate_8c.html#afe4783ecccebfb6cfe611d7f248801c2", null ],
     [ "stabilization_rate_read_rc", "stabilization__rate_8c.html#a007715357d8063fa371fb07433a1e3d7", null ],
     [ "stabilization_rate_read_rc_switched_sticks", "stabilization__rate_8c.html#aa74f5f2b4c549269f6ca18638acd8c5e", null ],
-    [ "stabilization_rate_run", "stabilization__rate_8c.html#abd94877f79c42a6ee99622c7fc45a623", null ],
-    [ "stabilization_rate_fb_cmd", "stabilization__rate_8c.html#acfa8b6ab4b43f8007ef1a4439a30b43f", null ],
-    [ "stabilization_rate_gain", "stabilization__rate_8c.html#a040d79c368c677cbc1c2ea9ca3feb1ff", null ],
-    [ "stabilization_rate_igain", "stabilization__rate_8c.html#a4c5a2dfb04999add7ae7dde1ee846359", null ],
-    [ "stabilization_rate_sp", "stabilization__rate_8c.html#ae3a8e84fa96e60d6174c463b83b0bed3", null ],
-    [ "stabilization_rate_sum_err", "stabilization__rate_8c.html#a9c5e4d781cf7f2ac4d4e0fc288ab62db", null ]
+    [ "stabilization_rate_run", "stabilization__rate_8c.html#acfa2e0820b52aea2dce670dd9295b540", null ],
+    [ "stabilization_rate_fb_cmd", "stabilization__rate_8c.html#a3a2d2a4c46a2cc35974914c4d2113f81", null ],
+    [ "stabilization_rate_gain", "stabilization__rate_8c.html#a91761eec8aeab0e2b6027707cf3ee120", null ],
+    [ "stabilization_rate_igain", "stabilization__rate_8c.html#a6dad0845ac24149e01444fbde592a272", null ],
+    [ "stabilization_rate_sp", "stabilization__rate_8c.html#ae8e53d1d6b10fe2561ae715c068b84bc", null ],
+    [ "stabilization_rate_sum_err", "stabilization__rate_8c.html#afa4d91f7b4ef7cca1508d7da8a73a218", null ]
 ];

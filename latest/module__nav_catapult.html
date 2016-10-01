@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: Catapult</title>
+<title>Paparazzi UAS: nav_catapult module</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -100,11 +100,12 @@ $(document).ready(function(){initNavTree('module__nav_catapult.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Catapult </div>  </div>
+<div class="title">nav_catapult module </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Module XML file: <code>nav_catapult.xml</code> </p>
-<p>A catapult launch timing system.</p><ul>
+<div class="textblock"><p><b>Catapult launch timing system.</b></p>
+<p><b></b></p>
+<ul>
 <li>Phase 1: Zero Roll, Climb Pitch, Zero Throttle</li>
 <li>Phase 2: After detecting the Start Acceleration<br />
  Zero Roll, Climb Pitch, Full Throttle</li>
@@ -115,30 +116,31 @@ $(document).ready(function(){initNavTree('module__nav_catapult.html','');});
 </ul>
 <h1><a class="anchor" id="module_load_example__nav_catapult"></a>
 Example for airframe file</h1>
-<p>This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;modules&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;load name=&quot;nav_catapult.xml&quot;&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    &lt;define name=&quot;NAV_CATAPULT_ACCELERATION_THRESHOLD&quot; value=&quot;1.5&quot; /&gt;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    &lt;define name=&quot;NAV_CATAPULT_MOTOR_DELAY&quot; value=&quot;0.75&quot; /&gt;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    &lt;define name=&quot;NAV_CATAPULT_HEADING_DELAY&quot; value=&quot;3.0&quot; /&gt;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    &lt;define name=&quot;NAV_CATAPULT_INITAL_PITCH&quot; value=&quot;0.175&quot; /&gt;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    &lt;define name=&quot;NAV_CATAPULT_INITIAL_THROTTLE&quot; value=&quot;1.0&quot; /&gt;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  &lt;/load&gt;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;&lt;/modules&gt;</div>
+<p>Add to your firmware section: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;nav_catapult&quot;/&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__nav_catapult"></a>
 Module configuration options</h1>
-<h2><a class="anchor" id="define"></a>
-Define Options</h2>
+<h2><a class="anchor" id="af_section"></a>
+Airframe file section</h2>
 <ul>
-<li><b>name:</b> <code>NAV_CATAPULT_ACCELERATION_THRESHOLD</code> <b>value:</b> <em>1.5</em> <br />
+<li><b>section</b> name: <code>CATAPULT</code> prefix: <code>NAV_CATAPULT_</code> <ul>
+<li><b>name</b> <code>ACCELERATION_THRESHOLD</code> <b>value:</b> <em>1.5</em> <br />
  Description: acceleration threshold in multiples of g</li>
-<li><b>name:</b> <code>NAV_CATAPULT_MOTOR_DELAY</code> <b>value:</b> <em>0.75</em> <br />
+<li><b>name</b> <code>ACCELERATION_DETECTION</code> <b>value:</b> <em>5</em> <br />
+ Description: number acceleration measurments above threshold for launch detection</li>
+<li><b>name</b> <code>MOTOR_DELAY</code> <b>value:</b> <em>0.75</em> <br />
  Description: delay until motor is turned on in seconds</li>
-<li><b>name:</b> <code>NAV_CATAPULT_HEADING_DELAY</code> <b>value:</b> <em>3.0</em> <br />
+<li><b>name</b> <code>HEADING_DELAY</code> <b>value:</b> <em>3.0</em> <br />
  Description: delay until heading is unlocked in seconds</li>
-<li><b>name:</b> <code>NAV_CATAPULT_INITAL_PITCH</code> <b>value:</b> <em>0.175</em> <br />
+<li><b>name</b> <code>INITIAL_PITCH</code> <b>value:</b> <em>0.175</em> <br />
  Description: inital pitch in radians (default 10deg)</li>
-<li><b>name:</b> <code>NAV_CATAPULT_INITIAL_THROTTLE</code> <b>value:</b> <em>1.0</em> <br />
+<li><b>name</b> <code>INITIAL_THROTTLE</code> <b>value:</b> <em>1.0</em> <br />
  Description: initial throttle (0.0 to 1.0)</li>
+<li><b>name</b> <code>CLIMB_DISTANCE</code> <b>value:</b> <em>300</em> <br />
+ Description: distance of the climb waypoint in front of the catapult</li>
+<li><b>name</b> <code>TIMEOUT</code> <b>value:</b> <em>30.</em> <br />
+ Description: timeout to disarm the high freq module</li>
+</ul>
+</li>
 </ul>
 <h1><a class="anchor" id="functions__nav_catapult"></a>
 Module functions</h1>
@@ -146,7 +148,7 @@ Module functions</h1>
 Init Functions</h2>
 <p>These initialization functions are called once on startup.</p>
 <ul>
-<li><a class="el" href="nav__catapult_8c.html#a2c6a974377ff09c2975c1b20bfbebf3b">nav_catapult_setup()</a></li>
+<li><a class="el" href="nav__catapult_8c.html#ab2897e9330234f13bef014c99d79ff99">nav_catapult_init()</a></li>
 </ul>
 <h2><a class="anchor" id="periodic_functions"></a>
 Periodic Functions</h2>
@@ -176,39 +178,54 @@ Source Files</h2>
 Raw nav_catapult.xml file:</h2>
 <div class="fragment"><div class="line">&lt;!DOCTYPE module SYSTEM &quot;module.dtd&quot;&gt;</div>
 <div class="line"></div>
-<div class="line">&lt;module name=&quot;nav_smooth&quot; dir=&quot;nav&quot;&gt;</div>
+<div class="line">&lt;module name=&quot;nav_catapult&quot; dir=&quot;nav&quot;&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;</div>
-<div class="line">      Catapult.</div>
-<div class="line">      A catapult launch timing system.</div>
+<div class="line">      Catapult launch timing system.</div>
 <div class="line">      - Phase 1: Zero Roll, Climb Pitch, Zero Throttle</div>
 <div class="line">      - Phase 2: After detecting the Start Acceleration\n</div>
 <div class="line">                 Zero Roll, Climb Pitch, Full Throttle</div>
 <div class="line">      - Phase 3: After getting the GPS heading (time based)\n</div>
 <div class="line">                 Place climb 300m in front of us\n</div>
 <div class="line">                 GoTo(climb)\n</div>
+<div class="line">&lt;!--</div>
+<div class="line">Block example:</div>
+<div class="line">@verbatim</div>
+<div class="line">&lt;block name=&quot;Catapult Take-Off&quot;&gt;</div>
+<div class="line">  &lt;exception cond=&quot;GetPosAlt() &gt; GetAltRef()+25&quot; deroute=&quot;Standby&quot;/&gt;</div>
+<div class="line">  &lt;set value=&quot;0&quot; var=&quot;kill_throttle&quot;/&gt;</div>
+<div class="line">  &lt;set value=&quot;0&quot; var=&quot;autopilot_flight_time&quot;/&gt;</div>
+<div class="line">  &lt;call fun=&quot;nav_catapult_run(WP_CLIMB)&quot;/&gt;</div>
+<div class="line">&lt;/block&gt;</div>
+<div class="line">@endverbatim</div>
+<div class="line">--&gt;</div>
 <div class="line">    &lt;/description&gt;</div>
-<div class="line">    &lt;define name=&quot;NAV_CATAPULT_ACCELERATION_THRESHOLD&quot; value=&quot;1.5&quot; description=&quot;acceleration threshold in multiples of g&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;NAV_CATAPULT_MOTOR_DELAY&quot; value=&quot;0.75&quot; description=&quot;delay until motor is turned on in seconds&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;NAV_CATAPULT_HEADING_DELAY&quot; value=&quot;3.0&quot; description=&quot;delay until heading is unlocked in seconds&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;NAV_CATAPULT_INITAL_PITCH&quot; value=&quot;0.175&quot; description=&quot;inital pitch in radians (default 10deg)&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;NAV_CATAPULT_INITIAL_THROTTLE&quot; value=&quot;1.0&quot; description=&quot;initial throttle (0.0 to 1.0)&quot;/&gt;</div>
+<div class="line">    &lt;section name=&quot;CATAPULT&quot; prefix=&quot;NAV_CATAPULT_&quot;&gt;</div>
+<div class="line">      &lt;define name=&quot;ACCELERATION_THRESHOLD&quot; value=&quot;1.5&quot; description=&quot;acceleration threshold in multiples of g&quot; unit=&quot;g&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;ACCELERATION_DETECTION&quot; value=&quot;5&quot; description=&quot;number acceleration measurments above threshold for launch detection&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;MOTOR_DELAY&quot; value=&quot;0.75&quot; description=&quot;delay until motor is turned on in seconds&quot; unit=&quot;s&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;HEADING_DELAY&quot; value=&quot;3.0&quot; description=&quot;delay until heading is unlocked in seconds&quot; unit=&quot;s&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;INITIAL_PITCH&quot; value=&quot;0.175&quot; description=&quot;inital pitch in radians (default 10deg)&quot; unit=&quot;rad&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;INITIAL_THROTTLE&quot; value=&quot;1.0&quot; description=&quot;initial throttle (0.0 to 1.0)&quot; unit=&quot;%&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;CLIMB_DISTANCE&quot; value=&quot;300&quot; description=&quot;distance of the climb waypoint in front of the catapult&quot; unit=&quot;m&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;TIMEOUT&quot; value=&quot;30.&quot; description=&quot;timeout to disarm the high freq module&quot; unit=&quot;s&quot;/&gt;</div>
+<div class="line">    &lt;/section&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line">  &lt;settings&gt;</div>
 <div class="line">    &lt;dl_settings name=&quot;control&quot;&gt;</div>
 <div class="line">      &lt;dl_settings name=&quot;catapult&quot;&gt;</div>
-<div class="line">        &lt;dl_setting max=&quot;5.0&quot; min=&quot;0.05&quot; step=&quot;0.05&quot; module=&quot;nav/nav_catapult&quot; var=&quot;nav_catapult_motor_delay&quot; shortname=&quot;Motor Delay&quot; param=&quot;NAV_CATAPULT_MOTOR_DELAY&quot; unit=&quot;seconds&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting max=&quot;3.0&quot; min=&quot;-3.0&quot; step=&quot;0.1&quot; var=&quot;nav_catapult_acceleration_threshold&quot; shortname=&quot;G-Threshold&quot; param=&quot;NAV_CATAPULT_ACCELERATION_THRESHOLD&quot; unit=&quot;g&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting max=&quot;10.&quot; min=&quot;0.25&quot; step=&quot;0.05&quot; var=&quot;nav_catapult_heading_delay&quot; shortname=&quot;Heading-Delay&quot; param=&quot;NAV_CATAPULT_HEADING_DELAY&quot; unit=&quot;seconds&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting max=&quot;40&quot; min=&quot;-20&quot; step=&quot;0.5&quot; var=&quot;nav_catapult_initial_pitch&quot; shortname=&quot;TO Pitch&quot; param=&quot;NAV_CATAPULT_INITIAL_PITCH&quot; unit=&quot;rad&quot; alt_unit=&quot;deg&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting max=&quot;1.0&quot; min=&quot;0.0&quot; step=&quot;0.01&quot; var=&quot;nav_catapult_initial_throttle&quot; shortname=&quot;TO Gas&quot; param=&quot;NAV_CATAPULT_INITIAL_THROTTLE&quot; unit=&quot;percent&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting max=&quot;5.0&quot; min=&quot;0.05&quot; step=&quot;0.05&quot; module=&quot;nav/nav_catapult&quot; var=&quot;nav_catapult.motor_delay&quot; shortname=&quot;Motor Delay&quot; param=&quot;NAV_CATAPULT_MOTOR_DELAY&quot; unit=&quot;seconds&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting max=&quot;3.0&quot; min=&quot;-3.0&quot; step=&quot;0.1&quot; var=&quot;nav_catapult.accel_threshold&quot; shortname=&quot;G-Threshold&quot; param=&quot;NAV_CATAPULT_ACCELERATION_THRESHOLD&quot; unit=&quot;g&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting max=&quot;10.&quot; min=&quot;0.25&quot; step=&quot;0.05&quot; var=&quot;nav_catapult.heading_delay&quot; shortname=&quot;Heading-Delay&quot; param=&quot;NAV_CATAPULT_HEADING_DELAY&quot; unit=&quot;seconds&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting max=&quot;40&quot; min=&quot;-20&quot; step=&quot;0.5&quot; var=&quot;nav_catapult.initial_pitch&quot; shortname=&quot;TO Pitch&quot; param=&quot;NAV_CATAPULT_INITIAL_PITCH&quot; unit=&quot;rad&quot; alt_unit=&quot;deg&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting max=&quot;1.0&quot; min=&quot;0.0&quot; step=&quot;0.01&quot; var=&quot;nav_catapult.initial_throttle&quot; shortname=&quot;TO Gas&quot; param=&quot;NAV_CATAPULT_INITIAL_THROTTLE&quot; unit=&quot;percent&quot;/&gt;</div>
 <div class="line">      &lt;/dl_settings&gt;</div>
 <div class="line">    &lt;/dl_settings&gt;</div>
 <div class="line">  &lt;/settings&gt;</div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;nav_catapult.h&quot;/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
-<div class="line">  &lt;init fun=&quot;nav_catapult_setup()&quot;/&gt;</div>
+<div class="line">  &lt;init fun=&quot;nav_catapult_init()&quot;/&gt;</div>
 <div class="line">  &lt;!-- Run High Rate Lauch Detector --&gt;</div>
 <div class="line">  &lt;periodic fun=&quot;nav_catapult_highrate_module()&quot; autorun=&quot;TRUE&quot;/&gt;</div>
 <div class="line">  &lt;makefile target=&quot;ap|sim|nps&quot;&gt;</div>
@@ -222,7 +239,7 @@ Raw nav_catapult.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:08 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:18 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

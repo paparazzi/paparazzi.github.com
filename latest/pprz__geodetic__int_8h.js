@@ -28,6 +28,9 @@ var pprz__geodetic__int_8h =
     [ "NED_FLOAT_OF_BFP", "group__math__geodetic__int.html#ga61755b91d547a7ac50bd83fc367f20ef", null ],
     [ "RAD_OF_EM7DEG", "group__math__geodetic__int.html#ga3049315b046a57aaf6e4da5698c956c1", null ],
     [ "RAD_OF_EM7RAD", "group__math__geodetic__int.html#gaa3e70fd5135f905380bab76644ce6a28", null ],
+    [ "UTM_BFP_OF_REAL", "group__math__geodetic__int.html#ga8ee697258e642d07a106990cd3531476", null ],
+    [ "UTM_DOUBLE_OF_BFP", "group__math__geodetic__int.html#ga145a69de188a49df39ea23e3efc0f46c", null ],
+    [ "UTM_FLOAT_OF_BFP", "group__math__geodetic__int.html#gaf8a9a66bee703741353e42247cc6b0ff", null ],
     [ "VECT3_ENU_OF_NED", "group__math__geodetic__int.html#gaad3bc5d0d188cef75df495af6eadfb5b", null ],
     [ "VECT3_NED_OF_ENU", "group__math__geodetic__int.html#gaaf18a0e7d4f29a9e55c0428d1adb0a2d", null ],
     [ "ecef_of_enu_point_i", "group__math__geodetic__int.html#gad8c22560014d3cb00cccd50f9b79478d", null ],
@@ -41,8 +44,10 @@ var pprz__geodetic__int_8h =
     [ "enu_of_ecef_pos_i", "group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11", null ],
     [ "enu_of_ecef_vect_i", "group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986", null ],
     [ "enu_of_lla_point_i", "group__math__geodetic__int.html#gab462d1e8278e0dd9cbc9ff463cde8f5e", null ],
+    [ "enu_of_lla_pos_i", "group__math__geodetic__int.html#gae42bb4930966f1c362524f95bb5d7d6e", null ],
     [ "enu_of_lla_vect_i", "group__math__geodetic__int.html#ga5a24d340ac59b50eff6dc23a5102ea96", null ],
     [ "lla_of_ecef_i", "group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23", null ],
+    [ "lla_of_utm_i", "group__math__geodetic__int.html#ga3e1a1eaa12a3890f5a70574219a74d9e", null ],
     [ "ltp_def_from_ecef_i", "group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f", null ],
     [ "ltp_def_from_lla_i", "group__math__geodetic__int.html#gaf0b761a4e44c92481ac96b623c34ef70", null ],
     [ "ltp_of_ecef_rmat_from_lla_i", "group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9", null ],
@@ -50,5 +55,7 @@ var pprz__geodetic__int_8h =
     [ "ned_of_ecef_pos_i", "group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b", null ],
     [ "ned_of_ecef_vect_i", "group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea", null ],
     [ "ned_of_lla_point_i", "group__math__geodetic__int.html#ga6618f634b774eaf7182dfec83d68f141", null ],
-    [ "ned_of_lla_vect_i", "group__math__geodetic__int.html#ga58243b878d6c96d0bbbae0cc1950da75", null ]
+    [ "ned_of_lla_pos_i", "group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093", null ],
+    [ "ned_of_lla_vect_i", "group__math__geodetic__int.html#ga58243b878d6c96d0bbbae0cc1950da75", null ],
+    [ "utm_of_lla_i", "group__math__geodetic__int.html#gad84470d73cce3f4d1c54bf579239849c", null ]
 ];

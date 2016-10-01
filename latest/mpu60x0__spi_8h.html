@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -220,13 +220,13 @@ config</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="aed8fa5952b31395d5801e3d3a1509063"></a>union <a class="el" href="mpu60x0__spi_8h.html#unionMpu60x0__Spi_8data__accel">Mpu60x0_Spi</a></td>
+<a class="anchor" id="a9c37188f064aff2f6b32b6f4df55043e"></a>union <a class="el" href="mpu60x0__spi_8h.html#unionMpu60x0__Spi_8data__accel">Mpu60x0_Spi</a></td>
 <td class="fieldname">
 data_accel</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a03e02b3bf085be7f33c8505b827fb624"></a>volatile bool_t</td>
+<a class="anchor" id="a01156712858fdf12eabe83b08eab5a9a"></a>volatile bool</td>
 <td class="fieldname">
 data_available</td>
 <td class="fielddoc">
@@ -238,7 +238,7 @@ data_ext[<a class="el" href="mpu60x0__spi_8h.html#a6b700f6c51b798ceb4ba491922f65
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a47bc42b44d0ab90323eaa53c22f49e36"></a>union <a class="el" href="mpu60x0__spi_8h.html#unionMpu60x0__Spi_8data__rates">Mpu60x0_Spi</a></td>
+<a class="anchor" id="a49d47442f2e632539f988f12f30bdbb3"></a>union <a class="el" href="mpu60x0__spi_8h.html#unionMpu60x0__Spi_8data__rates">Mpu60x0_Spi</a></td>
 <td class="fieldname">
 data_rates</td>
 <td class="fielddoc">
@@ -416,11 +416,11 @@ rates data values accessible by channel index </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mpu60x0__spi_8c_source.html#l00100">100</a> of file <a class="el" href="mpu60x0__spi_8c_source.html">mpu60x0_spi.c</a>.</p>
+<p>Definition at line <a class="el" href="mpu60x0__spi_8c_source.html#l00110">110</a> of file <a class="el" href="mpu60x0__spi_8c_source.html">mpu60x0_spi.c</a>.</p>
 
-<p>References <a class="el" href="mpu60x0__spi_8h_source.html#l00067">Mpu60x0_Spi::config</a>, <a class="el" href="mpu60x0__spi_8h.html#aed8fa5952b31395d5801e3d3a1509063">Mpu60x0_Spi::data_accel</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00056">Mpu60x0_Spi::data_available</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00066">Mpu60x0_Spi::data_ext</a>, <a class="el" href="mpu60x0__spi_8h.html#a47bc42b44d0ab90323eaa53c22f49e36">Mpu60x0_Spi::data_rates</a>, <a class="el" href="mpu60x0_8h_source.html#l00086">Mpu60x0Config::init_status</a>, <a class="el" href="mpu60x0_8h_source.html#l00087">Mpu60x0Config::initialized</a>, <a class="el" href="mpu60x0__spi_8c_source.html#l00098">Int16FromBuf</a>, <a class="el" href="mpu60x0_8h_source.html#l00055">MPU60X0_CONF_UNINIT</a>, <a class="el" href="mpu60x0_8c_source.html#l00052">mpu60x0_send_config()</a>, <a class="el" href="mpu60x0__spi_8c_source.html#l00066">mpu60x0_spi_write_to_reg()</a>, <a class="el" href="mpu60x0_8h_source.html#l00085">Mpu60x0Config::nb_bytes</a>, <a class="el" href="mpu60x0_8h_source.html#l00094">Mpu60x0Config::nb_slaves</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00055">Mpu60x0_Spi::rx_buf</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00053">Mpu60x0_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00094">SPITransFailed</a>, <a class="el" href="spi_8h_source.html#l00093">SPITransSuccess</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00065">Mpu60x0_Spi::temp</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p>References <a class="el" href="mpu60x0__spi_8h_source.html#l00067">Mpu60x0_Spi::config</a>, <a class="el" href="mpu60x0__spi_8h.html#a9c37188f064aff2f6b32b6f4df55043e">Mpu60x0_Spi::data_accel</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00056">Mpu60x0_Spi::data_available</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00066">Mpu60x0_Spi::data_ext</a>, <a class="el" href="mpu60x0__spi_8h.html#a49d47442f2e632539f988f12f30bdbb3">Mpu60x0_Spi::data_rates</a>, <a class="el" href="mpu60x0_8h_source.html#l00086">Mpu60x0Config::init_status</a>, <a class="el" href="mpu60x0_8h_source.html#l00087">Mpu60x0Config::initialized</a>, <a class="el" href="mpu60x0__spi_8c_source.html#l00108">Int16FromBuf</a>, <a class="el" href="mpu60x0_8h_source.html#l00055">MPU60X0_CONF_UNINIT</a>, <a class="el" href="mpu60x0_8c_source.html#l00052">mpu60x0_send_config()</a>, <a class="el" href="mpu60x0__spi_8c_source.html#l00066">mpu60x0_spi_write_to_reg()</a>, <a class="el" href="mpu60x0_8h_source.html#l00085">Mpu60x0Config::nb_bytes</a>, <a class="el" href="mpu60x0_8h_source.html#l00094">Mpu60x0Config::nb_slaves</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00055">Mpu60x0_Spi::rx_buf</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00053">Mpu60x0_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00094">SPITransFailed</a>, <a class="el" href="spi_8h_source.html#l00093">SPITransSuccess</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, and <a class="el" href="mpu60x0__spi_8h_source.html#l00065">Mpu60x0_Spi::temp</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00161">imu_aspirin2_event()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00099">imu_mpu_hmc_event()</a>, <a class="el" href="imu__mpu6000_8c_source.html#l00088">imu_mpu_spi_event()</a>, and <a class="el" href="imu__px4fmu_8c_source.html#l00091">imu_px4fmu_event()</a>.</p>
+<p>Referenced by <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00161">imu_aspirin2_event()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00153">imu_mpu_hmc_event()</a>, <a class="el" href="imu__mpu6000_8c_source.html#l00088">imu_mpu_spi_event()</a>, and <a class="el" href="imu__px4fmu_8c_source.html#l00091">imu_px4fmu_event()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -429,7 +429,7 @@ rates data values accessible by channel index </td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mpu60x0__spi_8h_a352dbef3019f057741cf1494e4b6f36d_cgraph.png" border="0" usemap="#mpu60x0__spi_8h_a352dbef3019f057741cf1494e4b6f36d_cgraph" alt=""/></div>
 <map name="mpu60x0__spi_8h_a352dbef3019f057741cf1494e4b6f36d_cgraph" id="mpu60x0__spi_8h_a352dbef3019f057741cf1494e4b6f36d_cgraph">
-<area shape="rect" id="node2" href="mpu60x0_8c.html#a564470aa2f16b3f6665b99d9141f9ae7" title="Configuration sequence called once before normal use. " alt="" coords="217,15,383,42"/><area shape="rect" id="node4" href="mpu60x0__spi_8c.html#af1fb9f28813ab2ad3e7f89298ca708c8" title="mpu60x0_spi_write_to_reg" alt="" coords="204,67,396,94"/><area shape="rect" id="node3" href="mpu60x0_8h.html#adad4e4b57f9dac456dc343b8ebdc2f6c" title="Configure I2C slaves of the MPU. " alt="" coords="444,5,617,47"/><area shape="rect" id="node5" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="485,71,576,98"/></map>
+<area shape="rect" id="node2" href="mpu60x0_8c.html#a564470aa2f16b3f6665b99d9141f9ae7" title="Configuration sequence called once before normal use. " alt="" coords="217,15,383,42"/><area shape="rect" id="node4" href="mpu60x0__spi_8c.html#af1fb9f28813ab2ad3e7f89298ca708c8" title="mpu60x0_spi_write_to_reg" alt="" coords="204,67,396,94"/><area shape="rect" id="node3" href="mpu60x0_8h.html#aedbe7307e6e7f522300178dd964c2f3b" title="Configure I2C slaves of the MPU. " alt="" coords="444,5,617,47"/><area shape="rect" id="node5" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="485,71,576,98"/></map>
 </div>
 </p>
 
@@ -478,9 +478,9 @@ rates data values accessible by channel index </td></tr>
 
 <p>Definition at line <a class="el" href="mpu60x0__spi_8c_source.html#l00031">31</a> of file <a class="el" href="mpu60x0__spi_8c_source.html">mpu60x0_spi.c</a>.</p>
 
-<p>References <a class="el" href="spi_8h_source.html#l00155">spi_transaction::after_cb</a>, <a class="el" href="spi_8h_source.html#l00154">spi_transaction::before_cb</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::bitorder</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::cdiv</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00067">Mpu60x0_Spi::config</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::cpha</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::cpol</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00056">Mpu60x0_Spi::data_available</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::dss</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="mpu60x0_8h_source.html#l00086">Mpu60x0Config::init_status</a>, <a class="el" href="mpu60x0_8h_source.html#l00087">Mpu60x0Config::initialized</a>, <a class="el" href="spi_8h_source.html#l00143">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00039">MPU60X0_BUFFER_LEN</a>, <a class="el" href="mpu60x0_8h_source.html#l00055">MPU60X0_CONF_UNINIT</a>, <a class="el" href="mpu60x0_8c_source.html#l00032">mpu60x0_set_default_config()</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00043">MPU60X0_SPI_CONF_UNINIT</a>, <a class="el" href="spi_8h_source.html#l00144">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00055">Mpu60x0_Spi::rx_buf</a>, <a class="el" href="spi_8h_source.html#l00148">spi_transaction::select</a>, <a class="el" href="spi_8h_source.html#l00147">spi_transaction::slave_idx</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00068">Mpu60x0_Spi::slave_init_status</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00052">Mpu60x0_Spi::spi_p</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00053">Mpu60x0_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00069">SPICphaEdge2</a>, <a class="el" href="spi_8h_source.html#l00078">SPICpolIdleHigh</a>, <a class="el" href="spi_8h_source.html#l00119">SPIDiv64</a>, <a class="el" href="spi_8h_source.html#l00084">SPIDss8bit</a>, <a class="el" href="spi_8h_source.html#l00106">SPIMSBFirst</a>, <a class="el" href="spi_8h_source.html#l00057">SPISelectUnselect</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, and <a class="el" href="mpu60x0__spi_8h_source.html#l00054">Mpu60x0_Spi::tx_buf</a>.</p>
+<p>References <a class="el" href="spi_8h_source.html#l00155">spi_transaction::after_cb</a>, <a class="el" href="spi_8h_source.html#l00154">spi_transaction::before_cb</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::bitorder</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::cdiv</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00067">Mpu60x0_Spi::config</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::cpha</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::cpol</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00056">Mpu60x0_Spi::data_available</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::dss</a>, <a class="el" href="mpu60x0_8h_source.html#l00086">Mpu60x0Config::init_status</a>, <a class="el" href="mpu60x0_8h_source.html#l00087">Mpu60x0Config::initialized</a>, <a class="el" href="spi_8h_source.html#l00143">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00039">MPU60X0_BUFFER_LEN</a>, <a class="el" href="mpu60x0_8h_source.html#l00055">MPU60X0_CONF_UNINIT</a>, <a class="el" href="mpu60x0_8c_source.html#l00032">mpu60x0_set_default_config()</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00043">MPU60X0_SPI_CONF_UNINIT</a>, <a class="el" href="spi_8h_source.html#l00144">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00055">Mpu60x0_Spi::rx_buf</a>, <a class="el" href="spi_8h_source.html#l00148">spi_transaction::select</a>, <a class="el" href="spi_8h_source.html#l00147">spi_transaction::slave_idx</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00068">Mpu60x0_Spi::slave_init_status</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00052">Mpu60x0_Spi::spi_p</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00053">Mpu60x0_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00069">SPICphaEdge2</a>, <a class="el" href="spi_8h_source.html#l00078">SPICpolIdleHigh</a>, <a class="el" href="spi_8h_source.html#l00119">SPIDiv64</a>, <a class="el" href="spi_8h_source.html#l00084">SPIDss8bit</a>, <a class="el" href="spi_8h_source.html#l00106">SPIMSBFirst</a>, <a class="el" href="spi_8h_source.html#l00057">SPISelectUnselect</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, and <a class="el" href="mpu60x0__spi_8h_source.html#l00054">Mpu60x0_Spi::tx_buf</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00106">imu_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00106">imu_aspirin2_init()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00129">imu_mpu_hmc_init()</a>, <a class="el" href="imu__mpu6000_8c_source.html#l00072">imu_mpu_spi_init()</a>, and <a class="el" href="imu__px4fmu_8c_source.html#l00068">imu_px4fmu_init()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -500,7 +500,7 @@ rates data values accessible by channel index </td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mpu60x0__spi_8h_ad9d2f2b58c6d875fb6e7cbce32145f0a_icgraph.png" border="0" usemap="#mpu60x0__spi_8h_ad9d2f2b58c6d875fb6e7cbce32145f0a_icgraph" alt=""/></div>
 <map name="mpu60x0__spi_8h_ad9d2f2b58c6d875fb6e7cbce32145f0a_icgraph" id="mpu60x0__spi_8h_ad9d2f2b58c6d875fb6e7cbce32145f0a_icgraph">
-<area shape="rect" id="node2" href="imu__aspirin__2__spi_8c.html#ad32faae58e391642ec8048cb11011998" title="must be defined by underlying hardware " alt="" coords="187,5,293,32"/></map>
+<area shape="rect" id="node2" href="imu__aspirin__2__spi_8h.html#abdd9fac859465eab74ba860b95a7b424" title="imu_aspirin2_init" alt="" coords="193,5,323,32"/><area shape="rect" id="node3" href="imu__mpu6000__hmc5883_8h.html#aec6b1b45934cd999aad8f5c46d25c375" title="imu_mpu_hmc_init" alt="" coords="187,56,329,83"/><area shape="rect" id="node4" href="imu__mpu6000_8h.html#abcd8e3da368d4b35f99d0221308ae250" title="imu_mpu_spi_init" alt="" coords="191,107,325,133"/><area shape="rect" id="node5" href="imu__px4fmu_8h.html#aa965181a5a50cf5f5474f8299d163b69" title="imu_px4fmu_init" alt="" coords="195,157,321,184"/></map>
 </div>
 </p>
 
@@ -532,9 +532,9 @@ rates data values accessible by channel index </td></tr>
 
 <p>Definition at line <a class="el" href="mpu60x0__spi_8h_source.html#l00078">78</a> of file <a class="el" href="mpu60x0__spi_8h_source.html">mpu60x0_spi.h</a>.</p>
 
-<p>References <a class="el" href="mpu60x0__spi_8h_source.html#l00067">Mpu60x0_Spi::config</a>, <a class="el" href="mpu60x0_8h_source.html#l00087">Mpu60x0Config::initialized</a>, <a class="el" href="mpu60x0__spi_8c_source.html#l00087">mpu60x0_spi_read()</a>, and <a class="el" href="mpu60x0__spi_8c_source.html#l00077">mpu60x0_spi_start_configure()</a>.</p>
+<p>References <a class="el" href="mpu60x0__spi_8h_source.html#l00067">Mpu60x0_Spi::config</a>, <a class="el" href="mpu60x0_8h_source.html#l00087">Mpu60x0Config::initialized</a>, <a class="el" href="mpu60x0__spi_8c_source.html#l00097">mpu60x0_spi_read()</a>, and <a class="el" href="mpu60x0__spi_8c_source.html#l00077">mpu60x0_spi_start_configure()</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00154">imu_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00154">imu_aspirin2_periodic()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00143">imu_mpu_hmc_periodic()</a>, <a class="el" href="imu__mpu6000_8c_source.html#l00083">imu_mpu_spi_periodic()</a>, and <a class="el" href="imu__px4fmu_8c_source.html#l00083">imu_px4fmu_periodic()</a>.</p>
 
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -543,7 +543,7 @@ rates data values accessible by channel index </td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mpu60x0__spi_8h_ab3afb083a7e2aebe259e155720138e4f_cgraph.png" border="0" usemap="#mpu60x0__spi_8h_ab3afb083a7e2aebe259e155720138e4f_cgraph" alt=""/></div>
 <map name="mpu60x0__spi_8h_ab3afb083a7e2aebe259e155720138e4f_cgraph" id="mpu60x0__spi_8h_ab3afb083a7e2aebe259e155720138e4f_cgraph">
-<area shape="rect" id="node2" href="mpu60x0__spi_8h.html#a2c59e2f5faa545396c71ce296743a4fb" title="mpu60x0_spi_read" alt="" coords="251,5,394,32"/><area shape="rect" id="node4" href="mpu60x0__spi_8h.html#a8982a3f8243691d3980c136cfa9fcb5c" title="mpu60x0_spi_start_configure" alt="" coords="217,56,428,83"/><area shape="rect" id="node3" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="757,27,848,53"/><area shape="rect" id="node5" href="mpu60x0_8c.html#a564470aa2f16b3f6665b99d9141f9ae7" title="Configuration sequence called once before normal use. " alt="" coords="489,107,655,133"/><area shape="rect" id="node7" href="mpu60x0__spi_8c.html#af1fb9f28813ab2ad3e7f89298ca708c8" title="mpu60x0_spi_write_to_reg" alt="" coords="476,56,668,83"/><area shape="rect" id="node6" href="mpu60x0_8h.html#adad4e4b57f9dac456dc343b8ebdc2f6c" title="Configure I2C slaves of the MPU. " alt="" coords="716,99,889,141"/></map>
+<area shape="rect" id="node2" href="mpu60x0__spi_8h.html#a2c59e2f5faa545396c71ce296743a4fb" title="mpu60x0_spi_read" alt="" coords="251,5,394,32"/><area shape="rect" id="node4" href="mpu60x0__spi_8h.html#a8982a3f8243691d3980c136cfa9fcb5c" title="mpu60x0_spi_start_configure" alt="" coords="217,81,428,108"/><area shape="rect" id="node3" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="757,43,848,69"/><area shape="rect" id="node5" href="mpu60x0_8c.html#a564470aa2f16b3f6665b99d9141f9ae7" title="Configuration sequence called once before normal use. " alt="" coords="489,144,655,171"/><area shape="rect" id="node7" href="mpu60x0__spi_8c.html#af1fb9f28813ab2ad3e7f89298ca708c8" title="mpu60x0_spi_write_to_reg" alt="" coords="476,93,668,120"/><area shape="rect" id="node6" href="mpu60x0_8h.html#aedbe7307e6e7f522300178dd964c2f3b" title="Configure I2C slaves of the MPU. " alt="" coords="716,137,889,178"/></map>
 </div>
 </p>
 
@@ -554,7 +554,7 @@ rates data values accessible by channel index </td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mpu60x0__spi_8h_ab3afb083a7e2aebe259e155720138e4f_icgraph.png" border="0" usemap="#mpu60x0__spi_8h_ab3afb083a7e2aebe259e155720138e4f_icgraph" alt=""/></div>
 <map name="mpu60x0__spi_8h_ab3afb083a7e2aebe259e155720138e4f_icgraph" id="mpu60x0__spi_8h_ab3afb083a7e2aebe259e155720138e4f_icgraph">
-<area shape="rect" id="node2" href="imu__aspirin__2__spi_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="optional. " alt="" coords="217,5,320,32"/></map>
+<area shape="rect" id="node2" href="imu__aspirin__2__spi_8h.html#a8a9e3c5580407c3e071a7417d37320fb" title="imu_aspirin2_periodic" alt="" coords="225,5,385,32"/><area shape="rect" id="node3" href="imu__mpu6000__hmc5883_8h.html#ab0ea581dde7834254f66b8b22779dda4" title="imu_mpu_hmc_periodic" alt="" coords="217,56,392,83"/><area shape="rect" id="node4" href="imu__mpu6000_8h.html#a45f9260628aea5e402f373fa453d37b0" title="imu_mpu_spi_periodic" alt="" coords="223,107,387,133"/><area shape="rect" id="node5" href="imu__px4fmu_8h.html#a893edbe61de3b2e98d781fcc16f8fabe" title="imu_px4fmu_periodic" alt="" coords="225,157,384,184"/></map>
 </div>
 </p>
 
@@ -574,9 +574,9 @@ rates data values accessible by channel index </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mpu60x0__spi_8c_source.html#l00087">87</a> of file <a class="el" href="mpu60x0__spi_8c_source.html">mpu60x0_spi.c</a>.</p>
+<p>Definition at line <a class="el" href="mpu60x0__spi_8c_source.html#l00097">97</a> of file <a class="el" href="mpu60x0__spi_8c_source.html">mpu60x0_spi.c</a>.</p>
 
-<p>References <a class="el" href="mpu60x0__spi_8h_source.html#l00067">Mpu60x0_Spi::config</a>, <a class="el" href="mpu60x0_8h_source.html#l00087">Mpu60x0Config::initialized</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="mpu60x0__regs_8h_source.html#l00089">MPU60X0_REG_INT_STATUS</a>, <a class="el" href="mpu60x0__regs_8h_source.html#l00035">MPU60X0_SPI_READ</a>, <a class="el" href="mpu60x0_8h_source.html#l00085">Mpu60x0Config::nb_bytes</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00052">Mpu60x0_Spi::spi_p</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00048">spi_submit()</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00053">Mpu60x0_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, and <a class="el" href="mpu60x0__spi_8h_source.html#l00054">Mpu60x0_Spi::tx_buf</a>.</p>
+<p>References <a class="el" href="mpu60x0__spi_8h_source.html#l00067">Mpu60x0_Spi::config</a>, <a class="el" href="mpu60x0_8h_source.html#l00087">Mpu60x0Config::initialized</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="mpu60x0__regs_8h_source.html#l00089">MPU60X0_REG_INT_STATUS</a>, <a class="el" href="mpu60x0__regs_8h_source.html#l00035">MPU60X0_SPI_READ</a>, <a class="el" href="mpu60x0_8h_source.html#l00085">Mpu60x0Config::nb_bytes</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00052">Mpu60x0_Spi::spi_p</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00364">spi_submit()</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00053">Mpu60x0_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, and <a class="el" href="mpu60x0__spi_8h_source.html#l00054">Mpu60x0_Spi::tx_buf</a>.</p>
 
 <p>Referenced by <a class="el" href="mpu60x0__spi_8h_source.html#l00078">mpu60x0_spi_periodic()</a>.</p>
 
@@ -587,7 +587,7 @@ rates data values accessible by channel index </td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mpu60x0__spi_8h_a2c59e2f5faa545396c71ce296743a4fb_cgraph.png" border="0" usemap="#mpu60x0__spi_8h_a2c59e2f5faa545396c71ce296743a4fb_cgraph" alt=""/></div>
 <map name="mpu60x0__spi_8h_a2c59e2f5faa545396c71ce296743a4fb_cgraph" id="mpu60x0__spi_8h_a2c59e2f5faa545396c71ce296743a4fb_cgraph">
-<area shape="rect" id="node2" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="196,5,287,32"/></map>
+<area shape="rect" id="node2" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="196,5,287,32"/></map>
 </div>
 </p>
 
@@ -598,7 +598,7 @@ rates data values accessible by channel index </td></tr>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mpu60x0__spi_8h_a2c59e2f5faa545396c71ce296743a4fb_icgraph.png" border="0" usemap="#mpu60x0__spi_8h_a2c59e2f5faa545396c71ce296743a4fb_icgraph" alt=""/></div>
 <map name="mpu60x0__spi_8h_a2c59e2f5faa545396c71ce296743a4fb_icgraph" id="mpu60x0__spi_8h_a2c59e2f5faa545396c71ce296743a4fb_icgraph">
-<area shape="rect" id="node2" href="mpu60x0__spi_8h.html#ab3afb083a7e2aebe259e155720138e4f" title="convenience function: read or start configuration if not already initialized " alt="" coords="196,5,360,32"/><area shape="rect" id="node3" href="imu__aspirin__2__spi_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="optional. " alt="" coords="408,5,511,32"/></map>
+<area shape="rect" id="node2" href="mpu60x0__spi_8h.html#ab3afb083a7e2aebe259e155720138e4f" title="convenience function: read or start configuration if not already initialized " alt="" coords="196,81,360,108"/><area shape="rect" id="node3" href="imu__aspirin__2__spi_8h.html#a8a9e3c5580407c3e071a7417d37320fb" title="imu_aspirin2_periodic" alt="" coords="415,5,575,32"/><area shape="rect" id="node4" href="imu__mpu6000__hmc5883_8h.html#ab0ea581dde7834254f66b8b22779dda4" title="imu_mpu_hmc_periodic" alt="" coords="408,56,583,83"/><area shape="rect" id="node5" href="imu__mpu6000_8h.html#a45f9260628aea5e402f373fa453d37b0" title="imu_mpu_spi_periodic" alt="" coords="413,107,577,133"/><area shape="rect" id="node6" href="imu__px4fmu_8h.html#a893edbe61de3b2e98d781fcc16f8fabe" title="imu_px4fmu_periodic" alt="" coords="416,157,575,184"/></map>
 </div>
 </p>
 
@@ -620,7 +620,7 @@ rates data values accessible by channel index </td></tr>
 
 <p>Definition at line <a class="el" href="mpu60x0__spi_8c_source.html#l00077">77</a> of file <a class="el" href="mpu60x0__spi_8c_source.html">mpu60x0_spi.c</a>.</p>
 
-<p>References <a class="el" href="mpu60x0__spi_8h_source.html#l00067">Mpu60x0_Spi::config</a>, <a class="el" href="mpu60x0_8h_source.html#l00086">Mpu60x0Config::init_status</a>, <a class="el" href="mpu60x0_8h_source.html#l00055">MPU60X0_CONF_UNINIT</a>, <a class="el" href="mpu60x0_8c_source.html#l00052">mpu60x0_send_config()</a>, <a class="el" href="mpu60x0__spi_8c_source.html#l00066">mpu60x0_spi_write_to_reg()</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00053">Mpu60x0_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00093">SPITransSuccess</a>, and <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>.</p>
+<p>References <a class="el" href="mpu60x0__spi_8h_source.html#l00067">Mpu60x0_Spi::config</a>, <a class="el" href="mpu60x0_8h_source.html#l00086">Mpu60x0Config::init_status</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="mpu60x0_8h_source.html#l00055">MPU60X0_CONF_UNINIT</a>, <a class="el" href="mpu60x0__regs_8h_source.html#l00116">MPU60X0_REG_WHO_AM_I</a>, <a class="el" href="mpu60x0_8c_source.html#l00052">mpu60x0_send_config()</a>, <a class="el" href="mpu60x0__regs_8h_source.html#l00035">MPU60X0_SPI_READ</a>, <a class="el" href="mpu60x0__spi_8c_source.html#l00066">mpu60x0_spi_write_to_reg()</a>, <a class="el" href="mpu60x0__regs_8h_source.html#l00117">MPU60X0_WHOAMI_REPLY</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00055">Mpu60x0_Spi::rx_buf</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00052">Mpu60x0_Spi::spi_p</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00364">spi_submit()</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00053">Mpu60x0_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00091">SPITransPending</a>, <a class="el" href="spi_8h_source.html#l00092">SPITransRunning</a>, <a class="el" href="spi_8h_source.html#l00093">SPITransSuccess</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, and <a class="el" href="mpu60x0__spi_8h_source.html#l00054">Mpu60x0_Spi::tx_buf</a>.</p>
 
 <p>Referenced by <a class="el" href="mpu60x0__spi_8h_source.html#l00078">mpu60x0_spi_periodic()</a>.</p>
 
@@ -631,7 +631,7 @@ rates data values accessible by channel index </td></tr>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mpu60x0__spi_8h_a8982a3f8243691d3980c136cfa9fcb5c_cgraph.png" border="0" usemap="#mpu60x0__spi_8h_a8982a3f8243691d3980c136cfa9fcb5c_cgraph" alt=""/></div>
 <map name="mpu60x0__spi_8h_a8982a3f8243691d3980c136cfa9fcb5c_cgraph" id="mpu60x0__spi_8h_a8982a3f8243691d3980c136cfa9fcb5c_cgraph">
-<area shape="rect" id="node2" href="mpu60x0_8c.html#a564470aa2f16b3f6665b99d9141f9ae7" title="Configuration sequence called once before normal use. " alt="" coords="277,15,443,42"/><area shape="rect" id="node4" href="mpu60x0__spi_8c.html#af1fb9f28813ab2ad3e7f89298ca708c8" title="mpu60x0_spi_write_to_reg" alt="" coords="264,67,456,94"/><area shape="rect" id="node3" href="mpu60x0_8h.html#adad4e4b57f9dac456dc343b8ebdc2f6c" title="Configure I2C slaves of the MPU. " alt="" coords="504,5,677,47"/><area shape="rect" id="node5" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="545,71,636,98"/></map>
+<area shape="rect" id="node2" href="mpu60x0_8c.html#a564470aa2f16b3f6665b99d9141f9ae7" title="Configuration sequence called once before normal use. " alt="" coords="277,13,443,39"/><area shape="rect" id="node4" href="mpu60x0__spi_8c.html#af1fb9f28813ab2ad3e7f89298ca708c8" title="mpu60x0_spi_write_to_reg" alt="" coords="264,63,456,90"/><area shape="rect" id="node5" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="545,93,636,119"/><area shape="rect" id="node3" href="mpu60x0_8h.html#aedbe7307e6e7f522300178dd964c2f3b" title="Configure I2C slaves of the MPU. " alt="" coords="504,5,677,47"/></map>
 </div>
 </p>
 
@@ -642,7 +642,7 @@ rates data values accessible by channel index </td></tr>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mpu60x0__spi_8h_a8982a3f8243691d3980c136cfa9fcb5c_icgraph.png" border="0" usemap="#mpu60x0__spi_8h_a8982a3f8243691d3980c136cfa9fcb5c_icgraph" alt=""/></div>
 <map name="mpu60x0__spi_8h_a8982a3f8243691d3980c136cfa9fcb5c_icgraph" id="mpu60x0__spi_8h_a8982a3f8243691d3980c136cfa9fcb5c_icgraph">
-<area shape="rect" id="node2" href="mpu60x0__spi_8h.html#ab3afb083a7e2aebe259e155720138e4f" title="convenience function: read or start configuration if not already initialized " alt="" coords="264,5,428,32"/><area shape="rect" id="node3" href="imu__aspirin__2__spi_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="optional. " alt="" coords="476,5,579,32"/></map>
+<area shape="rect" id="node2" href="mpu60x0__spi_8h.html#ab3afb083a7e2aebe259e155720138e4f" title="convenience function: read or start configuration if not already initialized " alt="" coords="264,81,428,108"/><area shape="rect" id="node3" href="imu__aspirin__2__spi_8h.html#a8a9e3c5580407c3e071a7417d37320fb" title="imu_aspirin2_periodic" alt="" coords="483,5,643,32"/><area shape="rect" id="node4" href="imu__mpu6000__hmc5883_8h.html#ab0ea581dde7834254f66b8b22779dda4" title="imu_mpu_hmc_periodic" alt="" coords="476,56,651,83"/><area shape="rect" id="node5" href="imu__mpu6000_8h.html#a45f9260628aea5e402f373fa453d37b0" title="imu_mpu_spi_periodic" alt="" coords="481,107,645,133"/><area shape="rect" id="node6" href="imu__px4fmu_8h.html#a893edbe61de3b2e98d781fcc16f8fabe" title="imu_px4fmu_periodic" alt="" coords="484,157,643,184"/></map>
 </div>
 </p>
 
@@ -654,7 +654,7 @@ rates data values accessible by channel index </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="mpu60x0__spi_8h.html">mpu60x0_spi.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:59 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:07 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

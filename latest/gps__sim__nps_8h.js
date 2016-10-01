@@ -1,8 +1,9 @@
 var gps__sim__nps_8h =
 [
-    [ "GPS_NB_CHANNELS", "gps__sim__nps_8h.html#a63f1b81cf4a1e8e0fe80f065224826fe", null ],
-    [ "GpsEvent", "gps__sim__nps_8h.html#a8996cb5c3ad80eee27207281a2e3332f", null ],
+    [ "gps_nps_periodic_check", "gps__sim__nps_8h.html#aba56b7d151404f1dfe1a5c489155aadb", null ],
+    [ "PRIMARY_GPS", "gps__sim__nps_8h.html#a0eb39777eac135c917af2eed39cce7f1", null ],
     [ "gps_feed_value", "gps__sim__nps_8h.html#a1acb1b66a5b2d172cff383fdb9b6de4d", null ],
-    [ "gps_impl_init", "gps__sim__nps_8h.html#a443bb1937ab52c30a22453c4d3c24590", null ],
-    [ "gps_has_fix", "gps__sim__nps_8h.html#a662a8a716182b1eba2896ba0c89d5213", null ]
+    [ "gps_nps_init", "gps__sim__nps_8h.html#a9b1d6b0a4feb81df90127d47471a7365", null ],
+    [ "gps_has_fix", "gps__sim__nps_8h.html#a5b2450e8baa86636ae84529551d1846e", null ],
+    [ "gps_nps", "gps__sim__nps_8h.html#ab89eeb1ddd4a10506859cda6fb81fbfe", null ]
 ];

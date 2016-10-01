@@ -11,5 +11,6 @@ var aoa__pwm_8c =
     [ "SEND_SYNC_AOA", "aoa__pwm_8c.html#abbda4509f49a865c1d464cc6fd445bbd", null ],
     [ "aoa_pwm_init", "aoa__pwm_8c.html#a5ec02f062e99b4bee477baff537e006d", null ],
     [ "aoa_pwm_update", "aoa__pwm_8c.html#ad218f9a74fbec56f87dd18f493fc01e3", null ],
+    [ "send_aoa", "aoa__pwm_8c.html#adbe58feb8d4ba7c9dc74dab061b38f73", null ],
     [ "aoa_pwm", "aoa__pwm_8c.html#ab594069977e44bb9cfedb7aadd00c6db", null ]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: Polygon survey from OSAM</title>
+<title>Paparazzi UAS: nav_survey_poly_rotorcraft module</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -100,21 +100,20 @@ $(document).ready(function(){initNavTree('module__nav_survey_poly_rotorcraft.htm
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Polygon survey from OSAM </div>  </div>
+<div class="title">nav_survey_poly_rotorcraft module </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Module XML file: <code>nav_survey_poly_rotorcraft.xml</code> </p>
-<p>You can use: nav_survey_poly_osam_setup function for static definitions or nav_survey_poly_osam_setup_towards for a more flexible setup</p>
+<div class="textblock"><p><b>Polygon survey for rotorcraft.</b></p>
+<p><b></b></p>
+<p>You can use: nav_survey_poly_rotorcraft_setup function for static definitions or nav_survey_poly_rotorcraft_setup_towards for a more flexible setup</p>
 <h1><a class="anchor" id="module_load_example__nav_survey_poly_rotorcraft"></a>
 Example for airframe file</h1>
-<p>This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;modules&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;load name=&quot;nav_survey_poly_rotorcraft.xml&quot;&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    &lt;define name=&quot;POLYSURVEY_MAX_POLYGONSIZE&quot; value=&quot;10&quot; /&gt;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    &lt;define name=&quot;POLYSURVEY_DEFAULT_SIZE&quot; value=&quot;5&quot; /&gt;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    &lt;define name=&quot;POLYSURVEY_DEFAULT_DISTANCE&quot; value=&quot;120&quot; /&gt;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    &lt;define name=&quot;POLYSURVEY_ENTRY_DISTANCE&quot; value=&quot;4&quot; /&gt;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  &lt;/load&gt;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;&lt;/modules&gt;</div>
+<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;nav_survey_poly_rotorcraft&quot;&gt;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;define name=&quot;POLYSURVEY_MAX_POLYGONSIZE&quot; value=&quot;10&quot; /&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;POLYSURVEY_DEFAULT_SIZE&quot; value=&quot;5&quot; /&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;define name=&quot;POLYSURVEY_DEFAULT_DISTANCE&quot; value=&quot;120&quot; /&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;define name=&quot;POLYSURVEY_ENTRY_DISTANCE&quot; value=&quot;4&quot; /&gt;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__nav_survey_poly_rotorcraft"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
@@ -149,10 +148,10 @@ Raw nav_survey_poly_rotorcraft.xml file:</h2>
 <div class="line">&lt;module name=&quot;nav_survey_poly&quot; dir=&quot;nav&quot;&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;</div>
-<div class="line">Polygon survey from OSAM.</div>
+<div class="line">Polygon survey for rotorcraft.</div>
 <div class="line">You can use:</div>
-<div class="line">* nav_survey_poly_osam_setup function for static definitions or</div>
-<div class="line">* nav_survey_poly_osam_setup_towards for a more flexible setup</div>
+<div class="line">* nav_survey_poly_rotorcraft_setup function for static definitions or</div>
+<div class="line">* nav_survey_poly_rotorcraft_setup_towards for a more flexible setup</div>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line">    &lt;define name=&quot;POLYSURVEY_MAX_POLYGONSIZE&quot; value=&quot;10&quot; description=&quot;max waypoints usable in polygon survey&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;POLYSURVEY_DEFAULT_SIZE&quot; value=&quot;5&quot; description=&quot;default number of waypoints/corners used in polygon survey. Can be changed by telemetry&quot;/&gt;</div>
@@ -182,7 +181,7 @@ Raw nav_survey_poly_rotorcraft.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:08 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:19 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

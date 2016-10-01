@@ -23,7 +23,8 @@ var imu__ppzuav_8h =
     [ "IMU_GYRO_R_SENS", "imu__ppzuav_8h.html#af57decce9e96b0726832a410273223f3", null ],
     [ "IMU_GYRO_R_SENS_DEN", "imu__ppzuav_8h.html#aecb2f43265d239ba7661dfcc8523123e", null ],
     [ "IMU_GYRO_R_SENS_NUM", "imu__ppzuav_8h.html#a6f808c71190e714287442af3bb7008b3", null ],
-    [ "ImuEvent", "imu__ppzuav_8h.html#a38f1122c1ee0701562b490c6e1b60609", null ],
     [ "imu_ppzuav_event", "imu__ppzuav_8h.html#a51ff6c245630bbf2701dc550ce24ef23", null ],
+    [ "imu_ppzuav_init", "imu__ppzuav_8h.html#a8cf8b6c04cb82b64d0ea89fa9ebeecc1", null ],
+    [ "imu_ppzuav_periodic", "imu__ppzuav_8h.html#afbf52c3be36028130e67112844bc3601", null ],
     [ "imu_ppzuav", "imu__ppzuav_8h.html#af1c3503ad92f5c5878d0fc80cf43779f", null ]
 ];

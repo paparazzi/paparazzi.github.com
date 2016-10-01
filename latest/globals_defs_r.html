@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -210,6 +210,9 @@ $(document).ready(function(){initNavTree('globals_defs_r.html','');});
 <li>RADIO_AUX9
 : <a class="el" href="superbitrf__rc_8h.html#ac5d768a757f013a44c96ecf92287888e">superbitrf_rc.h</a>
 </li>
+<li>RADIO_CONTROL_DT
+: <a class="el" href="nps__radio__control_8c.html#aeeb05a7b9bdc76eaf2dcdec93e57f61b">nps_radio_control.c</a>
+</li>
 <li>RADIO_CONTROL_NB_CHANNEL
 : <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#a1beed9c63b07301d72b3516543545652">spektrum_arch.h</a>
 , <a class="el" href="intermcu__ap_8h.html#a1beed9c63b07301d72b3516543545652">intermcu_ap.h</a>
@@ -221,37 +224,55 @@ $(document).ready(function(){initNavTree('globals_defs_r.html','');});
 , <a class="el" href="spektrum__dx7se__joby_8h.html#a1beed9c63b07301d72b3516543545652">spektrum_dx7se_joby.h</a>
 , <a class="el" href="superbitrf__rc_8h.html#a1beed9c63b07301d72b3516543545652">superbitrf_rc.h</a>
 </li>
+<li>RADIO_CONTROL_POWER
+: <a class="el" href="opa__ftd__1_80_8h.html#a37913a409a9301a82fa25ead5f0d8ec4">opa_ftd_1.0.h</a>
+, <a class="el" href="px4io__2_84_8h.html#a37913a409a9301a82fa25ead5f0d8ec4">px4io_2.4.h</a>
+</li>
+<li>RADIO_CONTROL_POWER_OFF
+: <a class="el" href="opa__ftd__1_80_8h.html#ac3a85dd998d6a9692605087f79413899">opa_ftd_1.0.h</a>
+, <a class="el" href="px4io__2_84_8h.html#ac3a85dd998d6a9692605087f79413899">px4io_2.4.h</a>
+</li>
+<li>RADIO_CONTROL_POWER_ON
+: <a class="el" href="opa__ftd__1_80_8h.html#a540b8a2f018b4b319b4cd2c67853b00a">opa_ftd_1.0.h</a>
+, <a class="el" href="px4io__2_84_8h.html#a540b8a2f018b4b319b4cd2c67853b00a">px4io_2.4.h</a>
+</li>
+<li>RADIO_CONTROL_POWER_PIN
+: <a class="el" href="opa__ftd__1_80_8h.html#a6142c3480c91e7bb5442a558f28287d1">opa_ftd_1.0.h</a>
+, <a class="el" href="px4io__2_84_8h.html#a6142c3480c91e7bb5442a558f28287d1">px4io_2.4.h</a>
+</li>
 <li>RADIO_CONTROL_SPEKTRUM_SIGNS
 : <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h.html#a61744d020c5c398d66a619dc22b1900c">spektrum_arch.h</a>
+</li>
+<li>RADIO_CONTROL_TAKEOFF_TIME
+: <a class="el" href="nps__radio__control_8c.html#a5b8cf34ea05390d014c9879317df1fd9">nps_radio_control.c</a>
 </li>
 <li>RADIO_FBW_MODE
 : <a class="el" href="rotorcraft_2main__fbw_8h.html#af9f3b5db2d73fb91df097b6a9285432d">main_fbw.h</a>
 </li>
 <li>RADIO_FLAP
 : <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#a7cc3813c8b10a6392586d6de2212ba06">spektrum_arch.h</a>
-, <a class="el" href="intermcu__ap_8h.html#a7cc3813c8b10a6392586d6de2212ba06">intermcu_ap.h</a>
 , <a class="el" href="superbitrf__rc_8h.html#a7cc3813c8b10a6392586d6de2212ba06">superbitrf_rc.h</a>
 </li>
 <li>RADIO_GEAR
-: <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#aafc722d7aec7f55c5a2d98c6c41a9c29">spektrum_arch.h</a>
-, <a class="el" href="intermcu__ap_8h.html#aafc722d7aec7f55c5a2d98c6c41a9c29">intermcu_ap.h</a>
-, <a class="el" href="joby__9ch_8h.html#aafc722d7aec7f55c5a2d98c6c41a9c29">joby_9ch.h</a>
+: <a class="el" href="joby__9ch_8h.html#aafc722d7aec7f55c5a2d98c6c41a9c29">joby_9ch.h</a>
 , <a class="el" href="superbitrf__rc_8h.html#aafc722d7aec7f55c5a2d98c6c41a9c29">superbitrf_rc.h</a>
+, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#aafc722d7aec7f55c5a2d98c6c41a9c29">spektrum_arch.h</a>
 </li>
 <li>RADIO_KILL
 : <a class="el" href="joby__9ch_8h.html#a6f7be56884f4433cbfa95dc20057a77c">joby_9ch.h</a>
 </li>
 <li>RADIO_KILL_SWITCH
-: <a class="el" href="spektrum__dx7se__joby_8h.html#aaf81f14818697e4134650e3d7cea4e3f">spektrum_dx7se_joby.h</a>
+: <a class="el" href="intermcu__ap_8h.html#aaf81f14818697e4134650e3d7cea4e3f">intermcu_ap.h</a>
+, <a class="el" href="spektrum__dx7se__joby_8h.html#aaf81f14818697e4134650e3d7cea4e3f">spektrum_dx7se_joby.h</a>
 </li>
 <li>RADIO_MODE
-: <a class="el" href="rc__datalink_8h.html#a2fab1464ab1748edb2a45a08cf7c422a">rc_datalink.h</a>
+: <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#a2fab1464ab1748edb2a45a08cf7c422a">spektrum_arch.h</a>
+, <a class="el" href="intermcu__ap_8h.html#a2fab1464ab1748edb2a45a08cf7c422a">intermcu_ap.h</a>
+, <a class="el" href="joby__9ch_8h.html#a2fab1464ab1748edb2a45a08cf7c422a">joby_9ch.h</a>
+, <a class="el" href="rc__datalink_8h.html#a2fab1464ab1748edb2a45a08cf7c422a">rc_datalink.h</a>
 , <a class="el" href="spektrum__dx7se_8h.html#a2fab1464ab1748edb2a45a08cf7c422a">spektrum_dx7se.h</a>
 , <a class="el" href="spektrum__dx7se__joby_8h.html#a2fab1464ab1748edb2a45a08cf7c422a">spektrum_dx7se_joby.h</a>
 , <a class="el" href="superbitrf__rc_8h.html#a2fab1464ab1748edb2a45a08cf7c422a">superbitrf_rc.h</a>
-, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#a2fab1464ab1748edb2a45a08cf7c422a">spektrum_arch.h</a>
-, <a class="el" href="intermcu__ap_8h.html#a2fab1464ab1748edb2a45a08cf7c422a">intermcu_ap.h</a>
-, <a class="el" href="joby__9ch_8h.html#a2fab1464ab1748edb2a45a08cf7c422a">joby_9ch.h</a>
 </li>
 <li>RADIO_PITCH
 : <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#a8e61ffe584bf24170117b9fcb2da4023">spektrum_arch.h</a>
@@ -299,6 +320,9 @@ $(document).ready(function(){initNavTree('globals_defs_r.html','');});
 </li>
 <li>RadioControlEventImpl
 : <a class="el" href="lpc21_2subsystems_2radio__control_2spektrum__arch_8h.html#aac589f9beea5f3274a11d8b54b19523e">spektrum_arch.h</a>
+</li>
+<li>RadioControlValues
+: <a class="el" href="radio__control_8h.html#a764f3b5472564631b314515d69179deb">radio_control.h</a>
 </li>
 <li>RATE_BFP_OF_REAL
 : <a class="el" href="group__math__algebra__int.html#ga986eabb558dbd92f341c7e26480f1124">pprz_algebra_int.h</a>
@@ -401,23 +425,26 @@ $(document).ready(function(){initNavTree('globals_defs_r.html','');});
 : <a class="el" href="radio__control_8h.html#a120dfe0c6e09f9048b5e575786d1011a">radio_control.h</a>
 </li>
 <li>RC_POLARITY_GPIO_PIN
-: <a class="el" href="apogee__1_80_8h.html#a462afa775c7f9b0844c9c1933976efe0">apogee_1.0.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a462afa775c7f9b0844c9c1933976efe0">board.h</a>
+, <a class="el" href="apogee__1_80_8h.html#a462afa775c7f9b0844c9c1933976efe0">apogee_1.0.h</a>
 , <a class="el" href="cc3d_8h.html#a462afa775c7f9b0844c9c1933976efe0">cc3d.h</a>
 </li>
 <li>RC_POLARITY_GPIO_PORT
-: <a class="el" href="apogee__1_80_8h.html#a0391a78ae3f30e6308e3bef30963823b">apogee_1.0.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a0391a78ae3f30e6308e3bef30963823b">board.h</a>
+, <a class="el" href="apogee__1_80_8h.html#a0391a78ae3f30e6308e3bef30963823b">apogee_1.0.h</a>
 , <a class="el" href="cc3d_8h.html#a0391a78ae3f30e6308e3bef30963823b">cc3d.h</a>
 </li>
 <li>RC_PPM_SIGNED_TICKS_OF_USEC
-: <a class="el" href="lpc21_2subsystems_2radio__control_2ppm__arch_8h.html#a89dbcbaebdf3485e1fdecc29fb6f16db">ppm_arch.h</a>
+: <a class="el" href="sim_2subsystems_2radio__control_2ppm__arch_8h.html#ab60f6bbc326addf63715d164966694ce">ppm_arch.h</a>
 , <a class="el" href="sbus__common_8h.html#a89dbcbaebdf3485e1fdecc29fb6f16db">sbus_common.h</a>
 </li>
 <li>RC_PPM_TICKS_OF_USEC
-: <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8h.html#aad33b862bb6166593e16a30779799b51">ppm_arch.h</a>
+: <a class="el" href="chibios_2subsystems_2radio__control_2ppm__arch_8h.html#aad33b862bb6166593e16a30779799b51">ppm_arch.h</a>
 , <a class="el" href="sbus__common_8h.html#aad33b862bb6166593e16a30779799b51">sbus_common.h</a>
 </li>
 <li>RC_PPM_TICKS_PER_USEC
 : <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8h.html#a80e7b8968c15db17c6f362802e0cce05">ppm_arch.h</a>
+, <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a80e7b8968c15db17c6f362802e0cce05">board.h</a>
 </li>
 <li>RC_REALLY_LOST
 : <a class="el" href="radio__control_8h.html#a49d0c23f0651ada64ce2cfb001f7c47c">radio_control.h</a>
@@ -452,6 +479,9 @@ $(document).ready(function(){initNavTree('globals_defs_r.html','');});
 <li>RCC_TIM_ADC
 : <a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#ad0eb89a1ba54932bcb9f202b2581fee2">adc_arch.c</a>
 </li>
+<li>RCC_TIMx
+: <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a83d163caf7fad521d71b8fb511cede8a">spektrum_arch.c</a>
+</li>
 <li>RcChannel
 : <a class="el" href="rc__settings_8c.html#a1208e80268eeb8b24ab1a67f2ecedb54">rc_settings.c</a>
 </li>
@@ -465,10 +495,10 @@ $(document).ready(function(){initNavTree('globals_defs_r.html','');});
 : <a class="el" href="lpc21_2subsystems_2radio__control_2spektrum__arch_8h.html#a5170b087e1edaf39a737cbdb742d0512">spektrum_arch.h</a>
 </li>
 <li>RCLost
-: <a class="el" href="nav_8c.html#ac3892fe123b99e805c0c5d5b1b4cd144">nav.c</a>
+: <a class="el" href="nav_8h.html#ac3892fe123b99e805c0c5d5b1b4cd144">nav.h</a>
 </li>
 <li>RcRoll
-: <a class="el" href="nav_8c.html#a7c6d9ca050122212a8a269e08f8c23f2">nav.c</a>
+: <a class="el" href="nav_8h.html#a7c6d9ca050122212a8a269e08f8c23f2">nav.h</a>
 </li>
 <li>RcSettingsOff
 : <a class="el" href="rc__settings_8h.html#abfe4dd8918b6b47bb2d488c62343372d">rc_settings.h</a>
@@ -484,6 +514,9 @@ $(document).ready(function(){initNavTree('globals_defs_r.html','');});
 </li>
 <li>READING_BLOCK_SIZE
 : <a class="el" href="high__speed__logger__direct__memory_8c.html#a05270df382a4e0c61818c5873b479860">high_speed_logger_direct_memory.c</a>
+</li>
+<li>readl
+: <a class="el" href="libisp_8c.html#ac4c524303cd2b49b182ebb828ff61aeb">libisp.c</a>
 </li>
 <li>ReadMetBuffer
 : <a class="el" href="met__module_8h.html#a0d90337932a2d91aadcd594f53bbede0">met_module.h</a>
@@ -550,6 +583,12 @@ $(document).ready(function(){initNavTree('globals_defs_r.html','');});
 </li>
 <li>REG_SUBR
 : <a class="el" href="w5100_8c.html#a6d96f27f55e86e2e4840625d5f968cd7">w5100.c</a>
+</li>
+<li>REG_TO_FLOAT
+: <a class="el" href="px4__flash_2protocol_8h.html#a51806ac27d3c0e9fc8c78eca99965125">protocol.h</a>
+</li>
+<li>REG_TO_SIGNED
+: <a class="el" href="px4__flash_2protocol_8h.html#a0ba798484529a2285ff5ea680e418142">protocol.h</a>
 </li>
 <li>REG_TX_MEM
 : <a class="el" href="w5100_8c.html#a7a2cb6f59c40efdd86c06d66ba775ab1">w5100.c</a>
@@ -668,6 +707,15 @@ $(document).ready(function(){initNavTree('globals_defs_r.html','');});
 <li>ROTORCRAFT_CAM_USE_TILT
 : <a class="el" href="rotorcraft__cam_8h.html#a2d9ecb115620709d71bf6fbdf71e0608">rotorcraft_cam.h</a>
 </li>
+<li>RPM_FILTER_TAU
+: <a class="el" href="rpm__sensor_8c.html#ad04e33164164eac39848d671c94e5cec">rpm_sensor.c</a>
+</li>
+<li>RPM_PULSE_PER_RND
+: <a class="el" href="rpm__sensor_8h.html#a7bd9698aa6ec5ae5e50583a7d0661963">rpm_sensor.h</a>
+</li>
+<li>RPM_SENSOR_ID
+: <a class="el" href="abi__sender__ids_8h.html#a366120cccd504b29f24896cee4cccf57">abi_sender_ids.h</a>
+</li>
 <li>RSSI_BLUEGIGA_ID
 : <a class="el" href="abi__sender__ids_8h.html#af646ed1faa469ec469c3fd37b354b7db">abi_sender_ids.h</a>
 </li>
@@ -770,6 +818,15 @@ $(document).ready(function(){initNavTree('globals_defs_r.html','');});
 <li>RTMIS
 : <a class="el" href="LPC21xx_8h.html#a0c159869d07eba8ed54ecb01a4980165">LPC21xx.h</a>
 </li>
+<li>RTOS_MON_MAX_THREADS
+: <a class="el" href="sys__mon__rtos_8h.html#a90588fda6cc5fc888afa537c4faf0cd3">sys_mon_rtos.h</a>
+</li>
+<li>RTOS_MON_NAME_LEN
+: <a class="el" href="sys__mon__rtos_8h.html#acd36f92f0645ec63b4d2f230a0a93cf2">sys_mon_rtos.h</a>
+</li>
+<li>RTOS_MON_THREAD_NAMES
+: <a class="el" href="sys__mon__rtos_8h.html#a07c287521a8737c5cccb28843f6d6084">sys_mon_rtos.h</a>
+</li>
 <li>RTOS_PRIO
 : <a class="el" href="apogee__1_80_8h.html#abf336788eac71daef505f432e8f80602">apogee_1.0.h</a>
 </li>
@@ -794,7 +851,7 @@ $(document).ready(function(){initNavTree('globals_defs_r.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:31 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:46 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

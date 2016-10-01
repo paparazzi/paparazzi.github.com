@@ -1,22 +1,26 @@
 <map id="sw/airborne/firmwares/fixedwing/stabilization/stabilization_adaptive.c" name="sw/airborne/firmwares/fixedwing/stabilization/stabilization_adaptive.c">
-<area shape="rect" id="node3" href="$led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1822,124,1875,151"/>
-<area shape="rect" id="node5" href="$fixedwing_2stabilization_2stabilization__attitude_8h.html" title="Fixed wing horizontal control. " alt="" coords="1095,109,1277,165"/>
-<area shape="rect" id="node9" href="$stabilization__adaptive_8h.html" title="Fixed wing horizontal adaptive control. " alt="" coords="1301,109,1484,165"/>
-<area shape="rect" id="node10" href="$state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="519,310,586,337"/>
-<area shape="rect" id="node23" href="$nav_8h.html" title="Fixedwing Navigation library. " alt="" coords="875,117,1022,158"/>
-<area shape="rect" id="node28" href="$fixedwing_2autopilot_8h.html" title="Fixedwing autopilot modes. " alt="" coords="1559,117,1706,158"/>
-<area shape="rect" id="node6" href="$inttypes_8h.html" title="inttypes.h" alt="" coords="1247,310,1333,337"/>
-<area shape="rect" id="node7" href="$paparazzi_8h.html" title="paparazzi.h" alt="" coords="1214,221,1310,247"/>
-<area shape="rect" id="node11" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="375,481,554,508"/>
-<area shape="rect" id="node17" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="160,481,351,508"/>
-<area shape="rect" id="node19" href="$pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="560,392,711,433"/>
-<area shape="rect" id="node21" href="$pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="735,392,885,433"/>
-<area shape="rect" id="node22" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="372,392,536,433"/>
-<area shape="rect" id="node12" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="178,556,333,583"/>
-<area shape="rect" id="node15" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="357,556,508,583"/>
-<area shape="rect" id="node20" href="$pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="711,481,835,508"/>
-<area shape="rect" id="node24" href="$nav__survey__rectangle_8h.html" title="subsystems/navigation\l/nav_survey_rectangle.h" alt="" coords="616,213,793,255"/>
-<area shape="rect" id="node25" href="$common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="868,303,1037,344"/>
-<area shape="rect" id="node26" href="$common__nav_8h.html" title="subsystems/navigation\l/common_nav.h" alt="" coords="817,213,987,255"/>
-<area shape="rect" id="node29" href="$settings_8h.html" title="Persistent settings interface. " alt="" coords="1580,310,1747,337"/>
+<area shape="rect" id="node3" href="$led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="2175,117,2228,143"/>
+<area shape="rect" id="node5" href="$fixedwing_2stabilization_2stabilization__attitude_8h.html" title="Fixed wing horizontal control. " alt="" coords="1815,467,1998,523"/>
+<area shape="rect" id="node9" href="$stabilization__adaptive_8h.html" title="Fixed wing horizontal adaptive control. " alt="" coords="2074,467,2257,523"/>
+<area shape="rect" id="node10" href="$state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="664,295,731,322"/>
+<area shape="rect" id="node24" href="$nav_8h.html" title="Fixedwing Navigation library. " alt="" coords="1043,109,1189,151"/>
+<area shape="rect" id="node29" href="$fixedwing_2autopilot_8h.html" title="Fixedwing autopilot modes. " alt="" coords="1488,474,1635,515"/>
+<area shape="rect" id="node32" href="$telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="2275,377,2429,419"/>
+<area shape="rect" id="node6" href="$inttypes_8h.html" title="inttypes.h" alt="" coords="1956,660,2041,687"/>
+<area shape="rect" id="node7" href="$paparazzi_8h.html" title="paparazzi.h" alt="" coords="1815,578,1911,605"/>
+<area shape="rect" id="node11" href="$pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="537,481,716,508"/>
+<area shape="rect" id="node17" href="$pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="267,481,458,508"/>
+<area shape="rect" id="node20" href="$pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="815,377,966,419"/>
+<area shape="rect" id="node22" href="$pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="641,377,791,419"/>
+<area shape="rect" id="node23" href="$pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="401,377,565,419"/>
+<area shape="rect" id="node12" href="$pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="315,578,469,605"/>
+<area shape="rect" id="node15" href="$pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="545,578,695,605"/>
+<area shape="rect" id="node21" href="$pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="791,481,915,508"/>
+<area shape="rect" id="node25" href="$nav__survey__rectangle_8h.html" title="subsystems/navigation\l/nav_survey_rectangle.h" alt="" coords="769,199,946,240"/>
+<area shape="rect" id="node26" href="$common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="1143,288,1313,329"/>
+<area shape="rect" id="node27" href="$common__nav_8h.html" title="subsystems/navigation\l/common_nav.h" alt="" coords="970,199,1139,240"/>
+<area shape="rect" id="node30" href="$settings_8h.html" title="Persistent settings interface. " alt="" coords="1245,578,1411,605"/>
+<area shape="rect" id="node33" href="$uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="2911,578,3049,605"/>
+<area shape="rect" id="node37" href="$downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="2447,474,2601,515"/>
+<area shape="rect" id="node40" href="$datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="2555,571,2709,612"/>
 </map>

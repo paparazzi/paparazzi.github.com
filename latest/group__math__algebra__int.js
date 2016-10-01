@@ -181,6 +181,8 @@ var group__math__algebra__int =
     [ "int32_eulers_dot_321_of_rates", "group__math__algebra__int.html#ga4dc3d6b30a0f375edc5b47bd0a952d8f", null ],
     [ "int32_eulers_of_quat", "group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e", null ],
     [ "int32_eulers_of_rmat", "group__math__algebra__int.html#gaf2f61a27841c68cefbd27a8614fcd90e", null ],
+    [ "int32_gcd", "group__math__algebra__int.html#ga6e8dc048191b43239ca6a933bd744468", null ],
+    [ "int32_mat_mul", "group__math__algebra__int.html#ga1b8a96d2bc110a02687e8f044394431d", null ],
     [ "int32_quat_comp", "group__math__algebra__int.html#ga04fe6ffb1b86afc85f91b2a07e224739", null ],
     [ "int32_quat_comp_inv", "group__math__algebra__int.html#ga6102185fc581099e1e256c3df37fd08d", null ],
     [ "int32_quat_comp_inv_norm_shortest", "group__math__algebra__int.html#ga6690b9bed5e7eb9f5c3ee6db7951e09b", null ],
@@ -211,5 +213,13 @@ var group__math__algebra__int =
     [ "int32_sqrt", "group__math__algebra__int.html#ga4f101a6e0a22ac1b90f36fe8bf97d702", null ],
     [ "int32_vect2_norm", "group__math__algebra__int.html#ga7e0cea5a49210d843282259d0a40d8e0", null ],
     [ "int32_vect2_norm2", "group__math__algebra__int.html#ga8c365d83c52740090161df2f73cee472", null ],
-    [ "int32_vect2_normalize", "group__math__algebra__int.html#ga60a7c58f0acbee3c862e2bea4beaec25", null ]
+    [ "int32_vect2_normalize", "group__math__algebra__int.html#ga60a7c58f0acbee3c862e2bea4beaec25", null ],
+    [ "int32_vect_add", "group__math__algebra__int.html#gaee8e5ad5b3070613a32320d11d528d44", null ],
+    [ "int32_vect_copy", "group__math__algebra__int.html#gacfc26794de76e31720d5c9252474de9e", null ],
+    [ "int32_vect_diff", "group__math__algebra__int.html#ga8bcf9ab6539a0f247684f9ccd83fe492", null ],
+    [ "int32_vect_mul", "group__math__algebra__int.html#ga14f675ae3bd0a0e12590cd524137a430", null ],
+    [ "int32_vect_smul", "group__math__algebra__int.html#ga4bb5474644b107cb2e4281a8c2b60dc8", null ],
+    [ "int32_vect_sub", "group__math__algebra__int.html#ga2b33b632f8155154fd99cef2d6a0ec6a", null ],
+    [ "int32_vect_sum", "group__math__algebra__int.html#ga113549f173dc15cbeafbb1cb2092f2b3", null ],
+    [ "int32_vect_zero", "group__math__algebra__int.html#ga848db4ffefdcaad9fe4d6fe50df6e983", null ]
 ];

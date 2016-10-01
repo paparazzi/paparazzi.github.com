@@ -17,13 +17,13 @@ var airspeed__ets_8c =
     [ "airspeed_ets_buffer", "airspeed__ets_8c.html#a0845e625acf7f588d20a415bde5823c4", null ],
     [ "airspeed_ets_buffer_idx", "airspeed__ets_8c.html#ad71d44c9444fad51e74d531792ebea42", null ],
     [ "airspeed_ets_cnt", "airspeed__ets_8c.html#a50f19cd938880ed56d8806d768cd6bf2", null ],
-    [ "airspeed_ets_delay_done", "airspeed__ets_8c.html#a6fa5ffdb27342bfcf6f836fea34b8175", null ],
+    [ "airspeed_ets_delay_done", "airspeed__ets_8c.html#a1b860b4f0a4b055b0302756e931f406b", null ],
     [ "airspeed_ets_delay_time", "airspeed__ets_8c.html#a8032815caef9b9f97f8dd15624038400", null ],
-    [ "airspeed_ets_i2c_done", "airspeed__ets_8c.html#a83b3c147bbda79db18ea8a8f62947892", null ],
+    [ "airspeed_ets_i2c_done", "airspeed__ets_8c.html#a40a45116bc00e72af086aa1b4c089b1e", null ],
     [ "airspeed_ets_i2c_trans", "airspeed__ets_8c.html#ac7df2f3536354ecc842855a3e76c97fa", null ],
     [ "airspeed_ets_offset", "airspeed__ets_8c.html#a96556ede33b13194c07f518706c11c40", null ],
-    [ "airspeed_ets_offset_init", "airspeed__ets_8c.html#a6c8202c917e3515c097b60b90af75811", null ],
+    [ "airspeed_ets_offset_init", "airspeed__ets_8c.html#a37054574a44411abaff75ecce45fbebe", null ],
     [ "airspeed_ets_offset_tmp", "airspeed__ets_8c.html#a4627f5f318293336104edd9d7630f4c6", null ],
     [ "airspeed_ets_raw", "airspeed__ets_8c.html#a5b8d889aa0c63db46fe4465ba6c8fffb", null ],
-    [ "airspeed_ets_valid", "airspeed__ets_8c.html#a8cf27b4c563e401e804df9e30166f719", null ]
+    [ "airspeed_ets_valid", "airspeed__ets_8c.html#a829b435c3b83d71dd818f94aeb51cefd", null ]
 ];

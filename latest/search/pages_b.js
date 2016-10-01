@@ -1,7 +1,25 @@
 var searchData=
 [
-  ['navigation_20leds',['Navigation leds',['../module__light.html',1,'onboard_modules']]],
-  ['navigate_20along_20a_20border_20line_20_28line_201_2d2_29_20with_20turns_20in_20the_20same_20direction',['navigate along a border line (line 1-2) with turns in the same direction',['../module__nav_line_border.html',1,'onboard_modules']]],
-  ['navigate_20around_20two_20poles',['Navigate around two poles',['../module__nav_poles.html',1,'onboard_modules']]],
-  ['nav_20airspeed',['NAV AIRSPEED',['../module__tune_airspeed.html',1,'onboard_modules']]]
+  ['nav_5fbungee_5ftakeoff_20module',['nav_bungee_takeoff module',['../module__nav_bungee_takeoff.html',1,'onboard_modules']]],
+  ['nav_5fcatapult_20module',['nav_catapult module',['../module__nav_catapult.html',1,'onboard_modules']]],
+  ['nav_5fcube_20module',['nav_cube module',['../module__nav_cube.html',1,'onboard_modules']]],
+  ['nav_5fdrop_20module',['nav_drop module',['../module__nav_drop.html',1,'onboard_modules']]],
+  ['nav_5fflower_20module',['nav_flower module',['../module__nav_flower.html',1,'onboard_modules']]],
+  ['nav_5fgls_20module',['nav_gls module',['../module__nav_gls.html',1,'onboard_modules']]],
+  ['nav_5fheli_5fspinup_20module',['nav_heli_spinup module',['../module__nav_heli_spinup.html',1,'onboard_modules']]],
+  ['nav_5flauncher_20module',['nav_launcher module',['../module__nav_launcher.html',1,'onboard_modules']]],
+  ['nav_5fline_20module',['nav_line module',['../module__nav_line.html',1,'onboard_modules']]],
+  ['nav_5fline_5fborder_20module',['nav_line_border module',['../module__nav_line_border.html',1,'onboard_modules']]],
+  ['nav_5fline_5fosam_20module',['nav_line_osam module',['../module__nav_line_osam.html',1,'onboard_modules']]],
+  ['nav_5fpoles_20module',['nav_poles module',['../module__nav_poles.html',1,'onboard_modules']]],
+  ['nav_5fskid_5flanding_20module',['nav_skid_landing module',['../module__nav_skid_landing.html',1,'onboard_modules']]],
+  ['nav_5fsmooth_20module',['nav_smooth module',['../module__nav_smooth.html',1,'onboard_modules']]],
+  ['nav_5fspiral_20module',['nav_spiral module',['../module__nav_spiral.html',1,'onboard_modules']]],
+  ['nav_5fsurvey_5fdisc_20module',['nav_survey_disc module',['../module__nav_survey_disc.html',1,'onboard_modules']]],
+  ['nav_5fsurvey_5fpoly_5fosam_20module',['nav_survey_poly_osam module',['../module__nav_survey_poly_osam.html',1,'onboard_modules']]],
+  ['nav_5fsurvey_5fpoly_5frotorcraft_20module',['nav_survey_poly_rotorcraft module',['../module__nav_survey_poly_rotorcraft.html',1,'onboard_modules']]],
+  ['nav_5fsurvey_5fpolygon_20module',['nav_survey_polygon module',['../module__nav_survey_polygon.html',1,'onboard_modules']]],
+  ['nav_5fsurvey_5frectangle_5frotorcraft_20module',['nav_survey_rectangle_rotorcraft module',['../module__nav_survey_rectangle_rotorcraft.html',1,'onboard_modules']]],
+  ['nav_5fsurvey_5fzamboni_20module',['nav_survey_zamboni module',['../module__nav_survey_zamboni.html',1,'onboard_modules']]],
+  ['nav_5fvertical_5fraster_20module',['nav_vertical_raster module',['../module__nav_vertical_raster.html',1,'onboard_modules']]]
 ];

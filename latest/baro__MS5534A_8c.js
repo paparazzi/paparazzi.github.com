@@ -27,9 +27,9 @@ var baro__MS5534A_8c =
     [ "baro_MS5534A_reset", "baro__MS5534A_8c.html#a7dc8d402f4d65d5f5c1fed45df1c8926", null ],
     [ "baro_MS5534A_send", "baro__MS5534A_8c.html#a2c7f6fba111434a3d7c371359bc24fc4", null ],
     [ "calibration", "baro__MS5534A_8c.html#ab30c346cfd9bc2364001128c169e7898", null ],
-    [ "alt_baro_enabled", "baro__MS5534A_8c.html#a5d6e908c9c14eccc7944585358bfc002", null ],
-    [ "baro_MS5534A_available", "baro__MS5534A_8c.html#ac282a66f97101959b4845a0531a334c6", null ],
-    [ "baro_MS5534A_do_reset", "baro__MS5534A_8c.html#aefdd9c0ec500c072723be4929078b75d", null ],
+    [ "alt_baro_enabled", "baro__MS5534A_8c.html#a682538dcf09d9535b858873f642b64b1", null ],
+    [ "baro_MS5534A_available", "baro__MS5534A_8c.html#ad96088048883985b64692577786d88a0", null ],
+    [ "baro_MS5534A_do_reset", "baro__MS5534A_8c.html#a6c84c989ec3e3d6eed8542817eb0b85a", null ],
     [ "baro_MS5534A_ground_pressure", "baro__MS5534A_8c.html#af3da06ba0ea0b37b2a18eb14449677e5", null ],
     [ "baro_MS5534A_pressure", "baro__MS5534A_8c.html#a7169f211f94cc4ea2f0d00897375bb16", null ],
     [ "baro_MS5534A_r", "baro__MS5534A_8c.html#a94be586d7f0494ea9f520c1e46679829", null ],
@@ -48,7 +48,7 @@ var baro__MS5534A_8c =
     [ "d2", "baro__MS5534A_8c.html#a46cfce8e9a54660edadd981d32e3df0f", null ],
     [ "reset", "baro__MS5534A_8c.html#ae9f68c6af70342cbaad9f8500d0b6f23", null ],
     [ "status", "baro__MS5534A_8c.html#ade818037fd6c985038ff29656089758d", null ],
-    [ "status_read_data", "baro__MS5534A_8c.html#af616a7d0356cab22d50eb55f14f0589a", null ],
+    [ "status_read_data", "baro__MS5534A_8c.html#adb089738f21dfd53058d83bc522cce13", null ],
     [ "ut1", "baro__MS5534A_8c.html#a34f8f6f89a1ea8380fa692619ee8277c", null ],
     [ "words", "baro__MS5534A_8c.html#aa7f86854b075f311643a2668c0a4898b", null ]
 ];

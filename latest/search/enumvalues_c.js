@@ -1,19 +1,13 @@
 var searchData=
 [
-  ['oc1',['OC1',['../nav_8h.html#a6b504fc3b9e256669f3d93dff3372bcfa5f636214b976745986c087710a2dde17',1,'nav.h']]],
-  ['oc2',['OC2',['../nav_8h.html#a6b504fc3b9e256669f3d93dff3372bcfa06833c96276f88424e14772ee87ac437',1,'nav.h']]],
-  ['or12',['OR12',['../nav_8h.html#a6b504fc3b9e256669f3d93dff3372bcfa65e326a040572bfc5a61c079d8bfca25',1,'nav.h']]],
-  ['or21',['OR21',['../nav_8h.html#a6b504fc3b9e256669f3d93dff3372bcfae5d99807c6a564838a7fed8239ef311b',1,'nav.h']]],
-  ['osd_5ffinished',['OSD_FINISHED',['../max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea557065ef84f4f0f26c25fcd6daecca8a',1,'max7456.c']]],
-  ['osd_5fidle',['OSD_IDLE',['../max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea8aba0c2d23308a2639371e18ddf12dbe',1,'max7456.c']]],
-  ['osd_5finit1',['OSD_INIT1',['../max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea985f8973f3e0e452c4fdbd42690fc39a',1,'max7456.c']]],
-  ['osd_5finit2',['OSD_INIT2',['../max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea12a2a6771d7377cd51a2c8d76bc84019',1,'max7456.c']]],
-  ['osd_5finit3',['OSD_INIT3',['../max7456_8c.html#a9df37033e964a8027eab3e650e7aea6eace9243eff89a7026ae48e576418f61a5',1,'max7456.c']]],
-  ['osd_5finit4',['OSD_INIT4',['../max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea7fa9ba78dd17378ea9ec7e3aebedaa27',1,'max7456.c']]],
-  ['osd_5fread_5fstatus',['OSD_READ_STATUS',['../max7456_8c.html#a9df37033e964a8027eab3e650e7aea6eae469ffabe471e7f6250e6ab9db363c4a',1,'max7456.c']]],
-  ['osd_5fs_5fstep1',['OSD_S_STEP1',['../max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea2995e6e161483e588dfded4d2a10b32b',1,'max7456.c']]],
-  ['osd_5fs_5fstep2',['OSD_S_STEP2',['../max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea79175d482e70a2b47a31e831204ffd44',1,'max7456.c']]],
-  ['osd_5fs_5fstep3',['OSD_S_STEP3',['../max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea3ba9c918e1617dc493dcfc9622d38ab5',1,'max7456.c']]],
-  ['osd_5funinit',['OSD_UNINIT',['../max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea7ea512690c92f844fa9e0623e4a08eb3',1,'max7456.c']]],
-  ['outside',['Outside',['../nav__flower_8c.html#ab3972f7766a79f22a1ed10c84e294551a97428abf4f6a11dfc00d53c330031e95',1,'nav_flower.c']]]
+  ['nav_5fcatapult_5farmed',['NAV_CATAPULT_ARMED',['../nav__catapult_8h.html#a423ca95cf61102e17b0265be9c6a95c5a19ef22341c2bab61d1160c57720b56a7',1,'nav_catapult.h']]],
+  ['nav_5fcatapult_5fdisarm',['NAV_CATAPULT_DISARM',['../nav__catapult_8h.html#a423ca95cf61102e17b0265be9c6a95c5a2f50a35dd318df0327aabcb2f45f85c5',1,'nav_catapult.h']]],
+  ['nav_5fcatapult_5fmotor_5fclimb',['NAV_CATAPULT_MOTOR_CLIMB',['../nav__catapult_8h.html#a423ca95cf61102e17b0265be9c6a95c5ac1eb37c549997af76bddc806d9dbf82f',1,'nav_catapult.h']]],
+  ['nav_5fcatapult_5fmotor_5fon',['NAV_CATAPULT_MOTOR_ON',['../nav__catapult_8h.html#a423ca95cf61102e17b0265be9c6a95c5acdf497a7305ff9555d71b0fff3376e8c',1,'nav_catapult.h']]],
+  ['nav_5fcatapult_5funinit',['NAV_CATAPULT_UNINIT',['../nav__catapult_8h.html#a423ca95cf61102e17b0265be9c6a95c5a383677318299848978e002e9e8ca17b2',1,'nav_catapult.h']]],
+  ['nav_5fcatapult_5fwait_5faccel',['NAV_CATAPULT_WAIT_ACCEL',['../nav__catapult_8h.html#a423ca95cf61102e17b0265be9c6a95c5a13d387b1ecdce26e4053335d35ae0227',1,'nav_catapult.h']]],
+  ['nb_5fadc1_5fchannels',['NB_ADC1_CHANNELS',['../chibios_2mcu__periph_2adc__arch_8h.html#ac1dbdbf706177270f68597836106d8c9a596e80cea76930927c00013d83c987cd',1,'adc_arch.h']]],
+  ['no_5fobstacle_5favoidance',['NO_OBSTACLE_AVOIDANCE',['../guidance__OA_8h.html#a4dac0a956aca3da3fa670abc875414d2ad43782277dd3eeb6e0dd4d29b96e1155',1,'guidance_OA.h']]],
+  ['none',['NONE',['../actuators__asctec_8h.html#a6ab1b9217ee457a8e4352cf0b28af79dac157bdf0b85a40d2619cbc8bc1ae5fe2',1,'NONE():&#160;actuators_asctec.h'],['../actuators__asctec__v2_8h.html#a4fc4c81cd178f2e57a6d8ce74785742eac157bdf0b85a40d2619cbc8bc1ae5fe2',1,'NONE():&#160;actuators_asctec_v2.h'],['../actuators__asctec__v2__new_8h.html#a4fc4c81cd178f2e57a6d8ce74785742eac157bdf0b85a40d2619cbc8bc1ae5fe2',1,'NONE():&#160;actuators_asctec_v2_new.h']]],
+  ['ns',['NS',['../nav__survey__rectangle__rotorcraft_8h.html#aa8ad239dd32b3708375201570614abc5a1904356e8ec34146e03f386bcb0da805',1,'NS():&#160;nav_survey_rectangle_rotorcraft.h'],['../nav__survey__rectangle_8h.html#aa8ad239dd32b3708375201570614abc5a1904356e8ec34146e03f386bcb0da805',1,'NS():&#160;nav_survey_rectangle.h']]]
 ];

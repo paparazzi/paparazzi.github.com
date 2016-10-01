@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -176,7 +176,7 @@ Variables</h2></td></tr>
 
 <p>References <a class="el" href="common__flight__plan_8h_source.html#l00048">GotoBlock</a>, <a class="el" href="common__flight__plan_8c_source.html#l00038">last_block</a>, <a class="el" href="common__flight__plan_8c_source.html#l00038">last_stage</a>, <a class="el" href="common__flight__plan_8c_source.html#l00035">nav_block</a>, and <a class="el" href="common__flight__plan_8c_source.html#l00035">nav_stage</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2datalink_8c_source.html#l00088">dl_parse_msg()</a>, <a class="el" href="gsm_8c_source.html#l00286">gsm_receive_content()</a>, and <a class="el" href="blocks_8c_source.html#l00064">mavlink_block_message_handler()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing__datalink_8c_source.html#l00063">firmware_parse_msg()</a>, <a class="el" href="gsm_8c_source.html#l00286">gsm_receive_content()</a>, and <a class="el" href="blocks_8c_source.html#l00064">mavlink_block_message_handler()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -185,7 +185,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="common__flight__plan_8c_ad5b3972efdfb4b34574a534615be3db2_icgraph.png" border="0" usemap="#common__flight__plan_8c_ad5b3972efdfb4b34574a534615be3db2_icgraph" alt=""/></div>
 <map name="common__flight__plan_8c_ad5b3972efdfb4b34574a534615be3db2_icgraph" id="common__flight__plan_8c_ad5b3972efdfb4b34574a534615be3db2_icgraph">
-<area shape="rect" id="node2" href="fixedwing_2datalink_8c.html#a87ff8c0ffff657dbde8566f062779428" title="Should be called when chars are available in dl_buffer. " alt="" coords="208,5,319,32"/><area shape="rect" id="node3" href="gsm_8c.html#a3e93d27d40d75355176ae476885b0c8b" title="Receiving a SMS, third step, content in gsm_buf Message can be Bdd where dd is a block index on two d..." alt="" coords="184,56,343,83"/><area shape="rect" id="node6" href="blocks_8h.html#a736f2e555912fca000d0751dedb4e00f" title="mavlink_block_message\l_handler" alt="" coords="175,107,352,149"/><area shape="rect" id="node4" href="gsm_8c.html#a1908fccdd617aa8d27b37b40388242dc" title="gsm_got_line" alt="" coords="443,56,550,83"/><area shape="rect" id="node5" href="gsm_8h.html#a470dc2779b65d4e6bc6515ec4b88e052" title="gsm_event" alt="" coords="652,56,745,83"/><area shape="rect" id="node7" href="mission__manager_8h.html#a68ddd91a505c2317c818d632a2009304" title="mavlink_mission_message\l_handler" alt="" coords="400,107,593,149"/><area shape="rect" id="node8" href="mavlink_8h.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls. " alt="" coords="641,115,756,141"/></map>
+<area shape="rect" id="node2" href="datalink_8h.html#aaf73ff6f49620d1cb775dc836633ef2b" title="Firmware specfic msg handler. " alt="" coords="186,5,341,32"/><area shape="rect" id="node6" href="gsm_8c.html#a3e93d27d40d75355176ae476885b0c8b" title="Receiving a SMS, third step, content in gsm_buf Message can be Bdd where dd is a block index on two d..." alt="" coords="184,56,343,83"/><area shape="rect" id="node9" href="blocks_8h.html#a736f2e555912fca000d0751dedb4e00f" title="mavlink_block_message\l_handler" alt="" coords="175,107,352,149"/><area shape="rect" id="node3" href="datalink_8c.html#a87ff8c0ffff657dbde8566f062779428" title="Should be called when chars are available in dl_buffer. " alt="" coords="441,5,552,32"/><area shape="rect" id="node4" href="datalink_8h.html#ae934a9730fa6dff019fea5cb4f0d5894" title="Check for new message and parse. " alt="" coords="641,5,776,32"/><area shape="rect" id="node5" href="sim__ap_8c.html#ad664061534694a2babfff03cfc5977f7" title="set_datalink_message" alt="" coords="824,5,989,32"/><area shape="rect" id="node7" href="gsm_8c.html#a1908fccdd617aa8d27b37b40388242dc" title="gsm_got_line" alt="" coords="443,56,550,83"/><area shape="rect" id="node8" href="gsm_8h.html#a470dc2779b65d4e6bc6515ec4b88e052" title="gsm_event" alt="" coords="662,56,755,83"/><area shape="rect" id="node10" href="mission__manager_8h.html#a68ddd91a505c2317c818d632a2009304" title="mavlink_mission_message\l_handler" alt="" coords="400,107,593,149"/><area shape="rect" id="node11" href="mavlink_8h.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls. " alt="" coords="651,115,766,141"/></map>
 </div>
 </p>
 
@@ -224,7 +224,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="common__flight__plan_8c_source.html#l00033">33</a> of file <a class="el" href="common__flight__plan_8c_source.html">common_flight_plan.c</a>.</p>
 
-<p>Referenced by <a class="el" href="common__nav_8c_source.html#l00124">common_nav_periodic_task_4Hz()</a>, <a class="el" href="common__flight__plan_8c_source.html#l00041">nav_init_block()</a>, and <a class="el" href="navigation_8c_source.html#l00416">nav_periodic_task()</a>.</p>
+<p>Referenced by <a class="el" href="common__nav_8c_source.html#l00124">common_nav_periodic_task_4Hz()</a>, <a class="el" href="common__flight__plan_8c_source.html#l00041">nav_init_block()</a>, <a class="el" href="navigation_8c_source.html#l00422">nav_periodic_task()</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00107">send_bat()</a>, and <a class="el" href="navigation_8c_source.html#l00125">send_nav_status()</a>.</p>
 
 </div>
 </div>
@@ -274,7 +274,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="common__flight__plan_8c_source.html#l00035">35</a> of file <a class="el" href="common__flight__plan_8c_source.html">common_flight_plan.c</a>.</p>
 
-<p>Referenced by <a class="el" href="generic__com_8c_source.html#l00070">generic_com_periodic()</a>, <a class="el" href="mission__manager_8c_source.html#l00090">mavlink_mission_periodic()</a>, <a class="el" href="common__flight__plan_8c_source.html#l00051">nav_goto_block()</a>, <a class="el" href="nav_8c_source.html#l00530">nav_init()</a>, and <a class="el" href="common__flight__plan_8c_source.html#l00041">nav_init_block()</a>.</p>
+<p>Referenced by <a class="el" href="generic__com_8c_source.html#l00070">generic_com_periodic()</a>, <a class="el" href="mission__manager_8c_source.html#l00090">mavlink_mission_periodic()</a>, <a class="el" href="common__flight__plan_8c_source.html#l00051">nav_goto_block()</a>, <a class="el" href="nav_8c_source.html#l00523">nav_init()</a>, <a class="el" href="common__flight__plan_8c_source.html#l00041">nav_init_block()</a>, and <a class="el" href="navigation_8c_source.html#l00125">send_nav_status()</a>.</p>
 
 </div>
 </div>
@@ -290,7 +290,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="common__flight__plan_8c_source.html#l00035">35</a> of file <a class="el" href="common__flight__plan_8c_source.html">common_flight_plan.c</a>.</p>
 
-<p>Referenced by <a class="el" href="common__flight__plan_8c_source.html#l00051">nav_goto_block()</a>, <a class="el" href="nav_8c_source.html#l00530">nav_init()</a>, and <a class="el" href="common__flight__plan_8c_source.html#l00041">nav_init_block()</a>.</p>
+<p>Referenced by <a class="el" href="common__flight__plan_8c_source.html#l00051">nav_goto_block()</a>, <a class="el" href="nav_8c_source.html#l00523">nav_init()</a>, <a class="el" href="common__flight__plan_8c_source.html#l00041">nav_init_block()</a>, and <a class="el" href="navigation_8c_source.html#l00125">send_nav_status()</a>.</p>
 
 </div>
 </div>
@@ -308,7 +308,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="common__flight__plan_8c_source.html#l00033">33</a> of file <a class="el" href="common__flight__plan_8c_source.html">common_flight_plan.c</a>.</p>
 
-<p>Referenced by <a class="el" href="common__nav_8c_source.html#l00124">common_nav_periodic_task_4Hz()</a>, <a class="el" href="nav_8c_source.html#l00091">nav_init_stage()</a>, and <a class="el" href="navigation_8c_source.html#l00416">nav_periodic_task()</a>.</p>
+<p>Referenced by <a class="el" href="common__nav_8c_source.html#l00124">common_nav_periodic_task_4Hz()</a>, <a class="el" href="nav__heli__spinup_8c_source.html#l00056">nav_heli_spinup_run()</a>, <a class="el" href="nav_8c_source.html#l00093">nav_init_stage()</a>, <a class="el" href="navigation_8c_source.html#l00422">nav_periodic_task()</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00107">send_bat()</a>, and <a class="el" href="navigation_8c_source.html#l00125">send_nav_status()</a>.</p>
 
 </div>
 </div>
@@ -318,7 +318,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8a28edc49a666abb23d4888eaf71220c.html">navigation</a></li><li class="navelem"><a class="el" href="common__flight__plan_8c.html">common_flight_plan.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:06 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:14 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

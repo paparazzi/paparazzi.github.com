@@ -1,9 +1,10 @@
 var gps__datalink_8c =
 [
-    [ "gps_impl_init", "gps__datalink_8c.html#ac51e6a5f7940a0acc9dc44b1b8085331", null ],
-    [ "parse_gps_datalink", "gps__datalink_8c.html#a52917dbc30edfd56ab9b248b35ea79d2", null ],
-    [ "parse_gps_datalink_small", "gps__datalink_8c.html#a9f029d3474ac87b74bd3ae638d6dd247", null ],
-    [ "enu_speed", "gps__datalink_8c.html#aef4d547840521f9b6860b8048be11b5c", null ],
-    [ "gps_available", "gps__datalink_8c.html#a62a4a0f2fc32a105289eb2cf890a1e5d", null ],
+    [ "gps_datalink_init", "gps__datalink_8c.html#a2454f9173636f105da3b60752f958ec3", null ],
+    [ "gps_datalink_parse_REMOTE_GPS", "gps__datalink_8c.html#abb144fb2a2da32322d34bb775715c6d8", null ],
+    [ "gps_datalink_parse_REMOTE_GPS_SMALL", "gps__datalink_8c.html#a72af93d10391b6dae5f47999a9e90c2d", null ],
+    [ "parse_gps_datalink", "gps__datalink_8c.html#acf0d0a2f2aabd5cd4c83a13af96466f3", null ],
+    [ "parse_gps_datalink_small", "gps__datalink_8c.html#a8f42454ba316e49b13649c79007e0cff", null ],
+    [ "gps_datalink", "gps__datalink_8c.html#a8298a7540884fbcc0cea89224dd2cc25", null ],
     [ "ltp_def", "gps__datalink_8c.html#ae45b690c21285f18321b1a319823e7a6", null ]
 ];

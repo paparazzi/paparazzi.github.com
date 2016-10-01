@@ -13,6 +13,6 @@ var baro__hca_8c =
     [ "baro_hca_read_periodic", "baro__hca_8c.html#ae35411dc645f61293234b6611acf2b0e", null ],
     [ "baro_hca_i2c_trans", "baro__hca_8c.html#ae5cec43bc2d58c755d2bd0ec39eec8d4", null ],
     [ "baro_hca_p", "baro__hca_8c.html#a32e93627a89e70b20125510b12e15e9e", null ],
-    [ "baro_hca_valid", "baro__hca_8c.html#afe022591f96a1adc43324873d8155b1e", null ],
+    [ "baro_hca_valid", "baro__hca_8c.html#a7d22df14d53a84b05e474241c601e403", null ],
     [ "pBaroRaw", "baro__hca_8c.html#abec65ae5a2edf49f154c39ae5b81dfde", null ]
 ];

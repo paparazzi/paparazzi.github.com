@@ -12,8 +12,9 @@ var imu__hbmini_8h =
     [ "IMU_MAG_X_SIGN", "imu__hbmini_8h.html#a34ef05992d74a9dc07c6a20feffd6eef", null ],
     [ "IMU_MAG_Y_SIGN", "imu__hbmini_8h.html#a127929c4b5a458043f7ef2e0fa2a4e54", null ],
     [ "IMU_MAG_Z_SIGN", "imu__hbmini_8h.html#a8612bd2fe2f927e8f283a9a8e60010f5", null ],
-    [ "ImuEvent", "imu__hbmini_8h.html#a38f1122c1ee0701562b490c6e1b60609", null ],
     [ "imu_hbmini_downlink_raw", "imu__hbmini_8h.html#a8ae69ebf8b1f4554164d83e027853f00", null ],
     [ "imu_hbmini_event", "imu__hbmini_8h.html#a5b9ae3abc04f091d942553dc17b589c8", null ],
+    [ "imu_hbmini_init", "imu__hbmini_8h.html#aac46d381aad29da7884a7a0424bb9bda", null ],
+    [ "imu_hbmini_periodic", "imu__hbmini_8h.html#a44db4f7063e2da893bfeb7adaa2d30b7", null ],
     [ "imu_hbmini", "imu__hbmini_8h.html#a6e590ea990a714a620248f0bcc6064bb", null ]
 ];

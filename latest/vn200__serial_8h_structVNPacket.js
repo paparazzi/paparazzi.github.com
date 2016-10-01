@@ -6,7 +6,7 @@ var vn200__serial_8h_structVNPacket =
     [ "datalength", "vn200__serial_8h.html#a35240649069164ba00d81e08be84dfde", null ],
     [ "framing_error", "vn200__serial_8h.html#a0a1a7bf6fd61d1537542203fdcea75fd", null ],
     [ "hdr_error", "vn200__serial_8h.html#a0c8b317fcdf5b2b7c327b0686396b2f2", null ],
-    [ "msg_available", "vn200__serial_8h.html#a8a836ffb94c5c843e1baa50033e76987", null ],
+    [ "msg_available", "vn200__serial_8h.html#ac0e7efa8e3c258162215c0f99a9e2b22", null ],
     [ "msg_buf", "vn200__serial_8h.html#a3709ecf0c3ff1d89dfeab606a6ad5eb7", null ],
     [ "msg_idx", "vn200__serial_8h.html#af182316df79207b1a740b28e13be4f61", null ],
     [ "noise_error", "vn200__serial_8h.html#ad317ec3551c0bdfe40ff4342369ce524", null ],

@@ -48,7 +48,7 @@ var high__speed__logger__direct__memory_8c =
     [ "current_unerased_addr", "high__speed__logger__direct__memory_8c.html#acb00ebfb7e74b5f34b9ea06ae4f071a4", null ],
     [ "current_writting_addr", "high__speed__logger__direct__memory_8c.html#a1b5a427ad2557dfe45f39f60c32b12d5", null ],
     [ "logging_status_gui", "high__speed__logger__direct__memory_8c.html#ad2e40d843f348cd05fb1293d42217039", null ],
-    [ "memory_ready", "high__speed__logger__direct__memory_8c.html#aa206715a58b9ada89c933f715029e86b", null ],
+    [ "memory_ready", "high__speed__logger__direct__memory_8c.html#a52fd4207a7fa718b2de8e2b5f9dac559", null ],
     [ "memory_send_value_transaction", "high__speed__logger__direct__memory_8c.html#a2305feff659b35bd3c839234846d8a6b", null ],
     [ "memory_status_byte", "high__speed__logger__direct__memory_8c.html#aec11780c443a9a6fe5d78d70fb3087ea", null ],
     [ "memory_transaction", "high__speed__logger__direct__memory_8c.html#a35eff149a50c56971231854af0d5582b", null ],

@@ -10,7 +10,7 @@ var w5100_8h =
       [ "tx_buf", "w5100_8h.html#a951fd755f073f0b1c110be5612dd85a9", null ],
       [ "tx_extract_idx", "w5100_8h.html#a0faa006a1d7adfbbeccee552f08e5990", null ],
       [ "tx_insert_idx", "w5100_8h.html#aef5b35c1844805e406b8099a5ec12df4", null ],
-      [ "tx_running", "w5100_8h.html#ae4c6de4389f9f8939d615e026acea87a", null ],
+      [ "tx_running", "w5100_8h.html#ac9923ba9605cd6edbefaa91c8ef602be", null ],
       [ "work_rx", "w5100_8h.html#a411e2d7c6d6feb9e4b0a7c22b23a4841", null ],
       [ "work_tx", "w5100_8h.html#a18e099848ad54d37987e801ce3821d1f", null ]
     ] ],
@@ -23,7 +23,7 @@ var w5100_8h =
       [ "W5100StatusIdle", "w5100_8h.html#a1b86a774f206095259ed0b6034d24c60a6a38ad46c46871635bc8259ced43cac2", null ],
       [ "W5100StatusReading", "w5100_8h.html#a1b86a774f206095259ed0b6034d24c60a3a6a9f662ae29489dc46fd5fbffaa805", null ]
     ] ],
-    [ "w5100_ch_available", "w5100_8h.html#afd09c437e15b551fa76f1bf6439a2109", null ],
+    [ "w5100_ch_available", "w5100_8h.html#aa03fab8432b75178c2d37da11f8444f3", null ],
     [ "w5100_check_and_parse", "w5100_8h.html#afdd593c03d1555eeaeb9252463c6d8e4", null ],
     [ "w5100_init", "w5100_8h.html#a3a4ec6731e43710788d3e51f7749259c", null ],
     [ "w5100_read_buffer", "w5100_8h.html#a2ae213a79bee0946b566b34f16fa543c", null ],
@@ -31,6 +31,7 @@ var w5100_8h =
     [ "w5100_rx_size", "w5100_8h.html#a834e87b2f3c3cd190eee04e2c9162d92", null ],
     [ "w5100_send", "w5100_8h.html#a53e5379a5746a3b67460fe3afc1983cc", null ],
     [ "w5100_transmit", "w5100_8h.html#a38d417bb07a2d9eeebe11b6009cd710d", null ],
+    [ "w5100_transmit_buffer", "w5100_8h.html#a77460efc9e8d331b3351e70179fa30f1", null ],
     [ "chip0", "w5100_8h.html#aa13e8b2503eb7f29b572379d1cd21148", null ],
     [ "w5100_rx_buf", "w5100_8h.html#aaf8c4df492a46538b29a1787dd03abe9", null ]
 ];

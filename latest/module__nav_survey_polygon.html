@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: Survey a polygon with a fixedwing</title>
+<title>Paparazzi UAS: nav_survey_polygon module</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -100,10 +100,11 @@ $(document).ready(function(){initNavTree('module__nav_survey_polygon.html','');}
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Survey a polygon with a fixedwing </div>  </div>
+<div class="title">nav_survey_polygon module </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Module XML file: <code>nav_survey_polygon.xml</code> </p>
+<div class="textblock"><p><b>Survey a polygon with a fixedwing.</b></p>
+<p><b></b></p>
 <p>From Uni Stuttgart. In the flight plan, the survey blocks call init and run functions:</p><ol type="1">
 <li>Initialize the variables needed for the survey to start, with nav_survey_polygon_setup(first_wp, size, angle, sweep_width, shot_dist, min_rad, altitude):<ul>
 <li>first_wp the first <a class="el" href="subsystems_2navigation_2waypoints_8h.html#structWaypoint">Waypoint</a> of the polygon (WP_waypoint_name)</li>
@@ -115,13 +116,11 @@ $(document).ready(function(){initNavTree('module__nav_survey_polygon.html','');}
 <li>altitude the altitude that must be reached before the flyover starts</li>
 </ul>
 </li>
-<li>Run the survey with <a class="el" href="nav__survey__polygon_8c.html#ad56bdec94ac98495799a04f0d12b51e2" title="main navigation routine. ">nav_survey_polygon_run()</a></li>
+<li>Run the survey with <a class="el" href="nav__survey__polygon_8c.html#ae202d8219e79766dae10f379448f29f8" title="main navigation routine. ">nav_survey_polygon_run()</a></li>
 </ol>
 <h1><a class="anchor" id="module_load_example__nav_survey_polygon"></a>
 Example for airframe file</h1>
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;modules&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;load name=&quot;nav_survey_polygon.xml&quot;/&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;&lt;/modules&gt;</div>
+<p>Add to your firmware section: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;nav_survey_polygon&quot;/&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="files"></a>
 Files</h1>
 <h2><a class="anchor" id="headers"></a>
@@ -142,18 +141,18 @@ Raw nav_survey_polygon.xml file:</h2>
 <div class="line">&lt;module name=&quot;nav_survey_polygon&quot; dir=&quot;nav&quot;&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;</div>
-<div class="line">Survey a polygon with a fixedwing.</div>
-<div class="line">From Uni Stuttgart.</div>
-<div class="line">In the flight plan, the survey blocks call init and run functions:</div>
-<div class="line">1. Initialize the variables needed for the survey to start, with nav_survey_polygon_setup(first_wp, size, angle, sweep_width, shot_dist, min_rad, altitude):</div>
-<div class="line">  - first_wp      the first Waypoint of the polygon (WP_waypoint_name)</div>
-<div class="line">  - size          the number of points that make up the polygon</div>
-<div class="line">  - angle         angle in which to do the flyovers</div>
-<div class="line">  - sweep_width   distance between the sweeps</div>
-<div class="line">  - shot_dist     distance between the shots</div>
-<div class="line">  - min_rad       minimal radius when navigating</div>
-<div class="line">  - altitude      the altitude that must be reached before the flyover starts</div>
-<div class="line">2. Run the survey with nav_survey_polygon_run()</div>
+<div class="line">      Survey a polygon with a fixedwing.</div>
+<div class="line">      From Uni Stuttgart.</div>
+<div class="line">      In the flight plan, the survey blocks call init and run functions:</div>
+<div class="line">      1. Initialize the variables needed for the survey to start, with nav_survey_polygon_setup(first_wp, size, angle, sweep_width, shot_dist, min_rad, altitude):</div>
+<div class="line">        - first_wp      the first Waypoint of the polygon (WP_waypoint_name)</div>
+<div class="line">        - size          the number of points that make up the polygon</div>
+<div class="line">        - angle         angle in which to do the flyovers</div>
+<div class="line">        - sweep_width   distance between the sweeps</div>
+<div class="line">        - shot_dist     distance between the shots</div>
+<div class="line">        - min_rad       minimal radius when navigating</div>
+<div class="line">        - altitude      the altitude that must be reached before the flyover starts</div>
+<div class="line">      2. Run the survey with nav_survey_polygon_run()</div>
 <div class="line">&lt;!--</div>
 <div class="line">Block example:</div>
 <div class="line">@verbatim</div>
@@ -178,7 +177,7 @@ Raw nav_survey_polygon.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:09 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:19 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

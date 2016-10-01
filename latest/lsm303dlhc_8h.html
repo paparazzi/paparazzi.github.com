@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -107,6 +107,7 @@ $(document).ready(function(){initNavTree('lsm303dlhc_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -117,8 +118,6 @@ $(document).ready(function(){initNavTree('lsm303dlhc_8h.html','');});
 <p>Driver for ST LSM303DLHC 3D accelerometer and magnetometer.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;std.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="i2c_8h_source.html">mcu_periph/i2c.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="pprz__algebra__int_8h_source.html">math/pprz_algebra_int.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="lsm303dlhc__regs_8h_source.html">peripherals/lsm303dlhc_regs.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for lsm303dlhc.h:</div>
@@ -127,7 +126,7 @@ $(document).ready(function(){initNavTree('lsm303dlhc_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="lsm303dlhc_8h__incl.png" border="0" usemap="#sw_2airborne_2peripherals_2lsm303dlhc_8h" alt=""/></div>
 <map name="sw_2airborne_2peripherals_2lsm303dlhc_8h" id="sw_2airborne_2peripherals_2lsm303dlhc_8h">
-<area shape="rect" id="node3" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="61,102,192,129"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="244,102,423,129"/><area shape="rect" id="node11" href="lsm303dlhc__regs_8h.html" title="Register defs for ST LSM303DLHC 3D accelerometer and magnetometer. " alt="" coords="447,95,617,136"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="461,184,616,211"/><area shape="rect" id="node9" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="286,184,437,211"/></map>
+<area shape="rect" id="node3" href="lsm303dlhc__regs_8h.html" title="Register defs for ST LSM303DLHC 3D accelerometer and magnetometer. " alt="" coords="85,95,255,136"/></map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -136,7 +135,7 @@ $(document).ready(function(){initNavTree('lsm303dlhc_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="lsm303dlhc_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2peripherals_2lsm303dlhc_8hdep" alt=""/></div>
 <map name="sw_2airborne_2peripherals_2lsm303dlhc_8hdep" id="sw_2airborne_2peripherals_2lsm303dlhc_8hdep">
-<area shape="rect" id="node2" href="lsm303dlhc_8c.html" title="Driver for ST LSM303DLHC 3D accelerometer and magnetometer. " alt="" coords="5,95,176,136"/></map>
+<area shape="rect" id="node2" href="lsm303dlhc__i2c_8h.html" title="sw/airborne/peripherals\l/lsm303dlhc_i2c.h" alt="" coords="55,95,225,136"/><area shape="rect" id="node4" href="lsm303dlhc__spi_8h.html" title="sw/airborne/peripherals\l/lsm303dlhc_spi.h" alt="" coords="348,95,519,136"/><area shape="rect" id="node3" href="lsm303dlhc__i2c_8c.html" title="Driver for ST LSM303DLHC 3D accelerometer and magnetometer. " alt="" coords="5,184,176,225"/><area shape="rect" id="node5" href="lsm303dlhc__spi_8c.html" title="Driver for ST LSM303DLHC 3D accelerometer and magnetometer. " alt="" coords="200,184,371,225"/><area shape="rect" id="node6" href="imu__px4fmu__v2_84_8c.html" title="sw/airborne/subsystems\l/imu/imu_px4fmu_v2.4.c" alt="" coords="395,184,573,225"/><area shape="rect" id="node7" href="imu__px4fmu__v2_84_8h.html" title="Driver for pixhawk IMU&#39;s. " alt="" coords="597,184,776,225"/></map>
 </div>
 </div>
 <p><a href="lsm303dlhc_8h_source.html">Go to the source code of this file.</a></p>
@@ -147,57 +146,54 @@ Data Structures</h2></td></tr>
 <tr class="separator:structLsm303dlhcAccConfig"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structLsm303dlhcMagConfig"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm303dlhc_8h.html#structLsm303dlhcMagConfig">Lsm303dlhcMagConfig</a></td></tr>
 <tr class="separator:structLsm303dlhcMagConfig"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:structLsm303dlhc"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm303dlhc_8h.html#structLsm303dlhc">Lsm303dlhc</a></td></tr>
-<tr class="separator:structLsm303dlhc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:unionLsm303dlhc_8init__status"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm303dlhc_8h.html#unionLsm303dlhc_8init__status">Lsm303dlhc.init_status</a></td></tr>
-<tr class="separator:unionLsm303dlhc_8init__status"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:unionLsm303dlhc_8data"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm303dlhc_8h.html#unionLsm303dlhc_8data">Lsm303dlhc.data</a></td></tr>
-<tr class="separator:unionLsm303dlhc_8data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:unionLsm303dlhc_8config"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm303dlhc_8h.html#unionLsm303dlhc_8config">Lsm303dlhc.config</a></td></tr>
-<tr class="separator:unionLsm303dlhc_8config"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ab665adea3b020afa195cc46712318551"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm303dlhc_8h.html#ab665adea3b020afa195cc46712318551">LSM303DLHC_DEFAULT_AODR</a>&#160;&#160;&#160;(0x01 &lt;&lt; 4)</td></tr>
+<tr class="separator:ab665adea3b020afa195cc46712318551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2327df9cb8ac5c9421e5824cb61172d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm303dlhc_8h.html#a2327df9cb8ac5c9421e5824cb61172d2">LSM303DLHC_DEFAULT_AFS</a>&#160;&#160;&#160;(0x04 &lt;&lt;3)</td></tr>
+<tr class="separator:a2327df9cb8ac5c9421e5824cb61172d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6582e7095f8420e947eb28446ad2d954"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm303dlhc_8h.html#a6582e7095f8420e947eb28446ad2d954">LSM303DLHC_DEFAULT_MODR</a>&#160;&#160;&#160;(0x5 &lt;&lt; 2)</td></tr>
+<tr class="separator:a6582e7095f8420e947eb28446ad2d954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cbcfd28a8b96a952d923cf4a2e5c3dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm303dlhc_8h.html#a7cbcfd28a8b96a952d923cf4a2e5c3dc">LSM303DLHC_DEFAULT_MFS</a>&#160;&#160;&#160;(0x0 &lt;&lt; 5)</td></tr>
+<tr class="separator:a7cbcfd28a8b96a952d923cf4a2e5c3dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5feaee0bee3a380311b181648e79d341"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm303dlhc_8h.html#a5feaee0bee3a380311b181648e79d341">LSM303DLHC_DEFAULT_MD</a>&#160;&#160;&#160;(0x00 &lt;&lt; 0)</td></tr>
+<tr class="separator:a5feaee0bee3a380311b181648e79d341"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:acfdcef8558d30510f691dc2670655e24"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm303dlhc_8h.html#acfdcef8558d30510f691dc2670655e24">Lsm303dlhcAccConfStatus</a> { <br />
-&#160;&#160;<a class="el" href="lsm303dlhc_8h.html#acfdcef8558d30510f691dc2670655e24af3db1a724340c0977627946dfecc0944">LSM_CONF_ACC_UNINIT</a>, 
-<a class="el" href="lsm303dlhc_8h.html#acfdcef8558d30510f691dc2670655e24a0228b35fcc4c4718ee6be8fec9e8243f">LSM_CONF_ACC_CTRL_REG4_A</a>, 
-<a class="el" href="lsm303dlhc_8h.html#acfdcef8558d30510f691dc2670655e24a05b53d14cf762a93b127c7b468747da7">LSM_CONF_ACC_CTRL_REG1_A</a>, 
-<a class="el" href="lsm303dlhc_8h.html#acfdcef8558d30510f691dc2670655e24abcf6c818dbcce19fa75b2bff30048dcf">LSM_CONF_ACC_CTRL_REG3_A</a>, 
+<tr class="memitem:a40bd20f5c070ea474cbb45ef6fbc97d4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4">Lsm303dlhcConfStatus</a> { <br />
+&#160;&#160;<a class="el" href="lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4a4fa3dac07ba9b587cf85f685a7b1e8b6">LSM_CONF_UNINIT</a>, 
+<a class="el" href="lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4ae1062c47f520b7196cb87476df801465">LSM_CONF_WHO_AM_I</a>, 
+<a class="el" href="lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4a69ec61569c5789572a3b9fb831664b1f">LSM_CONF_CTRL_REG1</a>, 
+<a class="el" href="lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4ad32cdf14cfbf6a083a29bcfa44bab720">LSM_CONF_CTRL_REG2</a>, 
 <br />
-&#160;&#160;<a class="el" href="lsm303dlhc_8h.html#acfdcef8558d30510f691dc2670655e24abb05c01d2b731de3b55c388bd7042812">LSM_CONF_ACC_DONE</a>
+&#160;&#160;<a class="el" href="lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4a8c2c565f50407a137d10df7dd8193427">LSM_CONF_CTRL_REG3</a>, 
+<a class="el" href="lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4a0e064b11b8708c7849e73864027033bc">LSM_CONF_CTRL_REG4</a>, 
+<a class="el" href="lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4a59cdd9e5f42433190db5903dfac1ae8f">LSM_CONF_CTRL_REG5</a>, 
+<a class="el" href="lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4abde2e888ac705020dfdbc0d1f01ee88c">LSM_CONF_CTRL_REG6</a>, 
 <br />
- }</td></tr>
-<tr class="memdesc:acfdcef8558d30510f691dc2670655e24"><td class="mdescLeft">&#160;</td><td class="mdescRight">config status states  <a href="lsm303dlhc_8h.html#acfdcef8558d30510f691dc2670655e24">More...</a><br /></td></tr>
-<tr class="separator:acfdcef8558d30510f691dc2670655e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3e05e02f1a8eb7e4d3bfae1c18c9ea3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm303dlhc_8h.html#ab3e05e02f1a8eb7e4d3bfae1c18c9ea3">Lsm303dlhcMagConfStatus</a> { <br />
-&#160;&#160;<a class="el" href="lsm303dlhc_8h.html#ab3e05e02f1a8eb7e4d3bfae1c18c9ea3a917f517cef07823c5e0da8daa229526c">LSM_CONF_MAG_UNINIT</a>, 
-<a class="el" href="lsm303dlhc_8h.html#ab3e05e02f1a8eb7e4d3bfae1c18c9ea3a19ab24f6c4eaad2f3da0449b7f551901">LSM_CONF_MAG_CRA_REG_M</a>, 
-<a class="el" href="lsm303dlhc_8h.html#ab3e05e02f1a8eb7e4d3bfae1c18c9ea3aad8e19a93c3d44a45741c66647f296ff">LSM_CONF_MAG_CRB_REG_M</a>, 
-<a class="el" href="lsm303dlhc_8h.html#ab3e05e02f1a8eb7e4d3bfae1c18c9ea3a0bc437d2bb075e5ef7c5c95e3ab2ae23">LSM_CONF_MAG_MR_REG_M</a>, 
-<br />
-&#160;&#160;<a class="el" href="lsm303dlhc_8h.html#ab3e05e02f1a8eb7e4d3bfae1c18c9ea3a83aab4b1adfc4419997cbac7f4ab25fb">LSM_CONF_MAG_DONE</a>
+&#160;&#160;<a class="el" href="lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4a30941a70f8d20429d503de74eaf99964">LSM_CONF_CTRL_REG7</a>, 
+<a class="el" href="lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4aec72e9269aec62a2fb98b11e5d7a2b2d">LSM_CONF_DONE</a>
 <br />
  }</td></tr>
-<tr class="memdesc:ab3e05e02f1a8eb7e4d3bfae1c18c9ea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">config status states  <a href="lsm303dlhc_8h.html#ab3e05e02f1a8eb7e4d3bfae1c18c9ea3">More...</a><br /></td></tr>
-<tr class="separator:ab3e05e02f1a8eb7e4d3bfae1c18c9ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a40bd20f5c070ea474cbb45ef6fbc97d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">config status states  <a href="lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4">More...</a><br /></td></tr>
+<tr class="separator:a40bd20f5c070ea474cbb45ef6fbc97d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5afc32e9ef4de228907475f6e24f4ba7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm303dlhc_8h.html#a5afc32e9ef4de228907475f6e24f4ba7">Lsm303dlhcTarget</a> { <a class="el" href="lsm303dlhc_8h.html#a5afc32e9ef4de228907475f6e24f4ba7a756c2ee23ee359ca4c1e89a7ba0d2169">LSM_TARGET_ACC</a>, 
+<a class="el" href="lsm303dlhc_8h.html#a5afc32e9ef4de228907475f6e24f4ba7ab242572a785702f4cffb177028975f6a">LSM_TARGET_MAG</a>
+ }</td></tr>
+<tr class="separator:a5afc32e9ef4de228907475f6e24f4ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a43bda86b1066b83f04638f1c8918eaf0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm303dlhc_8h.html#a43bda86b1066b83f04638f1c8918eaf0">lsm303dlhc_init</a> (struct <a class="el" href="lsm303dlhc_8h.html#structLsm303dlhc">Lsm303dlhc</a> *lsm, struct <a class="el" href="group__i2c.html#structi2c__periph">i2c_periph</a> *i2c_p, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> addr)</td></tr>
-<tr class="memdesc:a43bda86b1066b83f04638f1c8918eaf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize <a class="el" href="lsm303dlhc_8h.html#structLsm303dlhc">Lsm303dlhc</a> struct and set default config options.  <a href="#a43bda86b1066b83f04638f1c8918eaf0">More...</a><br /></td></tr>
-<tr class="separator:a43bda86b1066b83f04638f1c8918eaf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a925e85d441156e8201534827bdbf77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm303dlhc_8h.html#a8a925e85d441156e8201534827bdbf77">lsm303dlhc_start_configure</a> (struct <a class="el" href="lsm303dlhc_8h.html#structLsm303dlhc">Lsm303dlhc</a> *lsm)</td></tr>
-<tr class="separator:a8a925e85d441156e8201534827bdbf77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61023404c121ad141fab2d1aefbe1fb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm303dlhc_8h.html#a61023404c121ad141fab2d1aefbe1fb1">lsm303dlhc_read</a> (struct <a class="el" href="lsm303dlhc_8h.html#structLsm303dlhc">Lsm303dlhc</a> *lsm)</td></tr>
-<tr class="separator:a61023404c121ad141fab2d1aefbe1fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39197f68eef8e69e704960ffc6c2e68c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm303dlhc_8h.html#a39197f68eef8e69e704960ffc6c2e68c">lsm303dlhc_event</a> (struct <a class="el" href="lsm303dlhc_8h.html#structLsm303dlhc">Lsm303dlhc</a> *lsm)</td></tr>
-<tr class="separator:a39197f68eef8e69e704960ffc6c2e68c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d3ba8e56a241a79753f1a24b87cf4bc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm303dlhc_8h.html#a5d3ba8e56a241a79753f1a24b87cf4bc">lsm303dlhc_periodic</a> (struct <a class="el" href="lsm303dlhc_8h.html#structLsm303dlhc">Lsm303dlhc</a> *lsm)</td></tr>
-<tr class="memdesc:a5d3ba8e56a241a79753f1a24b87cf4bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">convenience function: read or start configuration if not already initialized  <a href="#a5d3ba8e56a241a79753f1a24b87cf4bc">More...</a><br /></td></tr>
-<tr class="separator:a5d3ba8e56a241a79753f1a24b87cf4bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8ceff9bc03fc374ba40da1e878432a4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm303dlhc_8h.html#ae8ceff9bc03fc374ba40da1e878432a4">lsm303dlhc_acc_set_default_config</a> (struct <a class="el" href="lsm303dlhc_8h.html#structLsm303dlhcAccConfig">Lsm303dlhcAccConfig</a> *c)</td></tr>
+<tr class="separator:ae8ceff9bc03fc374ba40da1e878432a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d231a0e60d1fd7c43f0618e82c369e4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lsm303dlhc_8h.html#a8d231a0e60d1fd7c43f0618e82c369e4">lsm303dlhc_mag_set_default_config</a> (struct <a class="el" href="lsm303dlhc_8h.html#structLsm303dlhcMagConfig">Lsm303dlhcMagConfig</a> *c)</td></tr>
+<tr class="separator:a8d231a0e60d1fd7c43f0618e82c369e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Driver for ST LSM303DLHC 3D accelerometer and magnetometer. </p>
+<p>UNTESTED </p>
 
 <p>Definition in file <a class="el" href="lsm303dlhc_8h_source.html">lsm303dlhc.h</a>.</p>
 </div><hr/><h2 class="groupheader">Data Structure Documentation</h2>
@@ -211,33 +207,21 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="lsm303dlhc_8h_source.html#l00039">39</a> of file <a class="el" href="lsm303dlhc_8h_source.html">lsm303dlhc.h</a>.</p>
+<p>Definition at line <a class="el" href="lsm303dlhc_8h_source.html#l00056">56</a> of file <a class="el" href="lsm303dlhc_8h_source.html">lsm303dlhc.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a2af8da80366a07cd252ad602b435fc15"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
-<td class="fieldname">
-hres</td>
-<td class="fielddoc">
-high resolution output mode </td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="ab0c8fc359b92fcd79cb6a3c68f5c3397"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
-<td class="fieldname">
-lp_mode</td>
-<td class="fielddoc">
-Low power mode. </td></tr>
 <tr><td class="fieldtype">
 <a class="anchor" id="ae3150afe089fea5a37ac0070f741ed5c"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 rate</td>
 <td class="fielddoc">
-Data Output Rate Bits(6 -&gt; 50Hz with HMC5843, 75Hz with HMC5883) </td></tr>
+Data Output Rate (Hz) </td></tr>
 <tr><td class="fieldtype">
 <a class="anchor" id="ac5ff25dd35a5cc555138782f91833e16"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 scale</td>
 <td class="fielddoc">
-full scale selection </td></tr>
+full scale selection (m/s²) </td></tr>
 </table>
 
 </div>
@@ -252,15 +236,9 @@ full scale selection </td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="lsm303dlhc_8h_source.html#l00046">46</a> of file <a class="el" href="lsm303dlhc_8h_source.html">lsm303dlhc.h</a>.</p>
+<p>Definition at line <a class="el" href="lsm303dlhc_8h_source.html#l00061">61</a> of file <a class="el" href="lsm303dlhc_8h_source.html">lsm303dlhc.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a147a8784384e27abd0c37eef506a9db0"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
-<td class="fieldname">
-gain</td>
-<td class="fielddoc">
-Gain configuration (1 -&gt; +- 1 Gauss) </td></tr>
 <tr><td class="fieldtype">
 <a class="anchor" id="a98ed32fc10aed95c10f00ea17edb7992"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
@@ -272,313 +250,159 @@ Measurement mode. </td></tr>
 <td class="fieldname">
 rate</td>
 <td class="fielddoc">
-Data Output Rate Bits(6 -&gt; 50Hz with HMC5843, 75Hz with HMC5883) </td></tr>
+Data Output Rate Bits (Hz) </td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a427d5584b0889473db9a789364090706"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<td class="fieldname">
+scale</td>
+<td class="fielddoc">
+Full scale gain configuration (Gauss) </td></tr>
 </table>
 
 </div>
 </div>
-<a name="structLsm303dlhc" id="structLsm303dlhc"></a>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a2327df9cb8ac5c9421e5824cb61172d2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct Lsm303dlhc</td>
+          <td class="memname">#define LSM303DLHC_DEFAULT_AFS&#160;&#160;&#160;(0x04 &lt;&lt;3)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="textblock">
-<p>Definition at line <a class="el" href="lsm303dlhc_8h_source.html#l00070">70</a> of file <a class="el" href="lsm303dlhc_8h_source.html">lsm303dlhc.h</a>.</p>
-</div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for Lsm303dlhc:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="structLsm303dlhc__coll__graph.png" border="0" usemap="#Lsm303dlhc_coll__map" alt="Collaboration graph"/></div>
-<map name="Lsm303dlhc_coll__map" id="Lsm303dlhc_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a8c214bb1e17056332c89e76e48f5a508"></a>union <a class="el" href="lsm303dlhc_8h.html#unionLsm303dlhc_8config">Lsm303dlhc</a></td>
-<td class="fieldname">
-config</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="ac4128cc9cf3bcc4c7ab0893a9edec3d4"></a>union <a class="el" href="lsm303dlhc_8h.html#unionLsm303dlhc_8data">Lsm303dlhc</a></td>
-<td class="fieldname">
-data</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a1277cd2f1841cddee3587a65a342b85c"></a>volatile bool_t</td>
-<td class="fieldname">
-data_available</td>
-<td class="fielddoc">
-data ready flag </td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a145e4ffe1eb181b6b6c7fa310c0e7eb3"></a>struct <a class="el" href="group__i2c.html#structi2c__periph">i2c_periph</a> *</td>
-<td class="fieldname">
-i2c_p</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a9759e9e6e44fd0cce6a23bab449ed552"></a>struct <a class="el" href="group__i2c.html#structi2c__transaction">i2c_transaction</a></td>
-<td class="fieldname">
-i2c_trans</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a34ea2c05c0e30f713e0de04f6e3edb08"></a>union <a class="el" href="lsm303dlhc_8h.html#unionLsm303dlhc_8init__status">Lsm303dlhc</a></td>
-<td class="fieldname">
-init_status</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a30ef95a7ea7e9231db9c9759056030b5"></a>bool_t</td>
-<td class="fieldname">
-initialized</td>
-<td class="fielddoc">
-config done flag </td></tr>
-</table>
+
+<p>Definition at line <a class="el" href="lsm303dlhc_8h_source.html#l00041">41</a> of file <a class="el" href="lsm303dlhc_8h_source.html">lsm303dlhc.h</a>.</p>
+
+<p>Referenced by <a class="el" href="lsm303dlhc_8h_source.html#l00086">lsm303dlhc_acc_set_default_config()</a>.</p>
 
 </div>
 </div>
-<a name="unionLsm303dlhc_8init__status" id="unionLsm303dlhc_8init__status"></a>
+<a class="anchor" id="ab665adea3b020afa195cc46712318551"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">union Lsm303dlhc.init_status</td>
+          <td class="memname">#define LSM303DLHC_DEFAULT_AODR&#160;&#160;&#160;(0x01 &lt;&lt; 4)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="textblock">
-<p>Definition at line <a class="el" href="lsm303dlhc_8h_source.html#l00074">74</a> of file <a class="el" href="lsm303dlhc_8h_source.html">lsm303dlhc.h</a>.</p>
-</div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a1673448ee7064c989d02579c534f6b66"></a>enum <a class="el" href="lsm303dlhc_8h.html#acfdcef8558d30510f691dc2670655e24">Lsm303dlhcAccConfStatus</a></td>
-<td class="fieldname">
-acc</td>
-<td class="fielddoc">
-init status </td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a741f63d12d767bb3fd2b0251ed839499"></a>enum <a class="el" href="lsm303dlhc_8h.html#ab3e05e02f1a8eb7e4d3bfae1c18c9ea3">Lsm303dlhcMagConfStatus</a></td>
-<td class="fieldname">
-mag</td>
-<td class="fielddoc">
-init status </td></tr>
-</table>
+
+<p>Definition at line <a class="el" href="lsm303dlhc_8h_source.html#l00037">37</a> of file <a class="el" href="lsm303dlhc_8h_source.html">lsm303dlhc.h</a>.</p>
+
+<p>Referenced by <a class="el" href="lsm303dlhc_8h_source.html#l00086">lsm303dlhc_acc_set_default_config()</a>.</p>
 
 </div>
 </div>
-<a name="unionLsm303dlhc_8data" id="unionLsm303dlhc_8data"></a>
+<a class="anchor" id="a5feaee0bee3a380311b181648e79d341"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">union Lsm303dlhc.data</td>
+          <td class="memname">#define LSM303DLHC_DEFAULT_MD&#160;&#160;&#160;(0x00 &lt;&lt; 0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="textblock">
-<p>Definition at line <a class="el" href="lsm303dlhc_8h_source.html#l00079">79</a> of file <a class="el" href="lsm303dlhc_8h_source.html">lsm303dlhc.h</a>.</p>
-</div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="ab07053fcb6afcb4d09e8f337b615d383"></a><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a></td>
-<td class="fieldname">
-value[3]</td>
-<td class="fielddoc">
-data values accessible by channel index </td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a4384543978c11a2d3da5c6cfeed94998"></a>struct <a class="el" href="group__math__algebra__int.html#structInt16Vect3">Int16Vect3</a></td>
-<td class="fieldname">
-vect</td>
-<td class="fielddoc">
-data vector in acc coordinate system </td></tr>
-</table>
+
+<p>Definition at line <a class="el" href="lsm303dlhc_8h_source.html#l00053">53</a> of file <a class="el" href="lsm303dlhc_8h_source.html">lsm303dlhc.h</a>.</p>
+
+<p>Referenced by <a class="el" href="lsm303dlhc_8h_source.html#l00092">lsm303dlhc_mag_set_default_config()</a>.</p>
 
 </div>
 </div>
-<a name="unionLsm303dlhc_8config" id="unionLsm303dlhc_8config"></a>
+<a class="anchor" id="a7cbcfd28a8b96a952d923cf4a2e5c3dc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">union Lsm303dlhc.config</td>
+          <td class="memname">#define LSM303DLHC_DEFAULT_MFS&#160;&#160;&#160;(0x0 &lt;&lt; 5)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="textblock">
-<p>Definition at line <a class="el" href="lsm303dlhc_8h_source.html#l00083">83</a> of file <a class="el" href="lsm303dlhc_8h_source.html">lsm303dlhc.h</a>.</p>
-</div><table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a1673448ee7064c989d02579c534f6b66"></a>struct <a class="el" href="lsm303dlhc_8h.html#structLsm303dlhcAccConfig">Lsm303dlhcAccConfig</a></td>
-<td class="fieldname">
-acc</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a741f63d12d767bb3fd2b0251ed839499"></a>struct <a class="el" href="lsm303dlhc_8h.html#structLsm303dlhcMagConfig">Lsm303dlhcMagConfig</a></td>
-<td class="fieldname">
-mag</td>
-<td class="fielddoc">
-</td></tr>
-</table>
+
+<p>Definition at line <a class="el" href="lsm303dlhc_8h_source.html#l00049">49</a> of file <a class="el" href="lsm303dlhc_8h_source.html">lsm303dlhc.h</a>.</p>
+
+<p>Referenced by <a class="el" href="lsm303dlhc_8h_source.html#l00092">lsm303dlhc_mag_set_default_config()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6582e7095f8420e947eb28446ad2d954"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LSM303DLHC_DEFAULT_MODR&#160;&#160;&#160;(0x5 &lt;&lt; 2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lsm303dlhc_8h_source.html#l00045">45</a> of file <a class="el" href="lsm303dlhc_8h_source.html">lsm303dlhc.h</a>.</p>
+
+<p>Referenced by <a class="el" href="lsm303dlhc_8h_source.html#l00092">lsm303dlhc_mag_set_default_config()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="acfdcef8558d30510f691dc2670655e24"></a>
+<a class="anchor" id="a40bd20f5c070ea474cbb45ef6fbc97d4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="lsm303dlhc_8h.html#acfdcef8558d30510f691dc2670655e24">Lsm303dlhcAccConfStatus</a></td>
+          <td class="memname">enum <a class="el" href="lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4">Lsm303dlhcConfStatus</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>config status states </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="acfdcef8558d30510f691dc2670655e24af3db1a724340c0977627946dfecc0944"></a>LSM_CONF_ACC_UNINIT&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a40bd20f5c070ea474cbb45ef6fbc97d4a4fa3dac07ba9b587cf85f685a7b1e8b6"></a>LSM_CONF_UNINIT&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="acfdcef8558d30510f691dc2670655e24a0228b35fcc4c4718ee6be8fec9e8243f"></a>LSM_CONF_ACC_CTRL_REG4_A&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a40bd20f5c070ea474cbb45ef6fbc97d4ae1062c47f520b7196cb87476df801465"></a>LSM_CONF_WHO_AM_I&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="acfdcef8558d30510f691dc2670655e24a05b53d14cf762a93b127c7b468747da7"></a>LSM_CONF_ACC_CTRL_REG1_A&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a40bd20f5c070ea474cbb45ef6fbc97d4a69ec61569c5789572a3b9fb831664b1f"></a>LSM_CONF_CTRL_REG1&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="acfdcef8558d30510f691dc2670655e24abcf6c818dbcce19fa75b2bff30048dcf"></a>LSM_CONF_ACC_CTRL_REG3_A&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a40bd20f5c070ea474cbb45ef6fbc97d4ad32cdf14cfbf6a083a29bcfa44bab720"></a>LSM_CONF_CTRL_REG2&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="acfdcef8558d30510f691dc2670655e24abb05c01d2b731de3b55c388bd7042812"></a>LSM_CONF_ACC_DONE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a40bd20f5c070ea474cbb45ef6fbc97d4a8c2c565f50407a137d10df7dd8193427"></a>LSM_CONF_CTRL_REG3&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a40bd20f5c070ea474cbb45ef6fbc97d4a0e064b11b8708c7849e73864027033bc"></a>LSM_CONF_CTRL_REG4&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a40bd20f5c070ea474cbb45ef6fbc97d4a59cdd9e5f42433190db5903dfac1ae8f"></a>LSM_CONF_CTRL_REG5&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a40bd20f5c070ea474cbb45ef6fbc97d4abde2e888ac705020dfdbc0d1f01ee88c"></a>LSM_CONF_CTRL_REG6&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a40bd20f5c070ea474cbb45ef6fbc97d4a30941a70f8d20429d503de74eaf99964"></a>LSM_CONF_CTRL_REG7&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a40bd20f5c070ea474cbb45ef6fbc97d4aec72e9269aec62a2fb98b11e5d7a2b2d"></a>LSM_CONF_DONE&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="lsm303dlhc_8h_source.html#l00053">53</a> of file <a class="el" href="lsm303dlhc_8h_source.html">lsm303dlhc.h</a>.</p>
+<p>Definition at line <a class="el" href="lsm303dlhc_8h_source.html#l00068">68</a> of file <a class="el" href="lsm303dlhc_8h_source.html">lsm303dlhc.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab3e05e02f1a8eb7e4d3bfae1c18c9ea3"></a>
+<a class="anchor" id="a5afc32e9ef4de228907475f6e24f4ba7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="lsm303dlhc_8h.html#ab3e05e02f1a8eb7e4d3bfae1c18c9ea3">Lsm303dlhcMagConfStatus</a></td>
+          <td class="memname">enum <a class="el" href="lsm303dlhc_8h.html#a5afc32e9ef4de228907475f6e24f4ba7">Lsm303dlhcTarget</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>config status states </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ab3e05e02f1a8eb7e4d3bfae1c18c9ea3a917f517cef07823c5e0da8daa229526c"></a>LSM_CONF_MAG_UNINIT&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a5afc32e9ef4de228907475f6e24f4ba7a756c2ee23ee359ca4c1e89a7ba0d2169"></a>LSM_TARGET_ACC&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ab3e05e02f1a8eb7e4d3bfae1c18c9ea3a19ab24f6c4eaad2f3da0449b7f551901"></a>LSM_CONF_MAG_CRA_REG_M&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ab3e05e02f1a8eb7e4d3bfae1c18c9ea3aad8e19a93c3d44a45741c66647f296ff"></a>LSM_CONF_MAG_CRB_REG_M&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ab3e05e02f1a8eb7e4d3bfae1c18c9ea3a0bc437d2bb075e5ef7c5c95e3ab2ae23"></a>LSM_CONF_MAG_MR_REG_M&#160;</td><td class="fielddoc">
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ab3e05e02f1a8eb7e4d3bfae1c18c9ea3a83aab4b1adfc4419997cbac7f4ab25fb"></a>LSM_CONF_MAG_DONE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a5afc32e9ef4de228907475f6e24f4ba7ab242572a785702f4cffb177028975f6a"></a>LSM_TARGET_MAG&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="lsm303dlhc_8h_source.html#l00062">62</a> of file <a class="el" href="lsm303dlhc_8h_source.html">lsm303dlhc.h</a>.</p>
+<p>Definition at line <a class="el" href="lsm303dlhc_8h_source.html#l00081">81</a> of file <a class="el" href="lsm303dlhc_8h_source.html">lsm303dlhc.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a39197f68eef8e69e704960ffc6c2e68c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void lsm303dlhc_event </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="lsm303dlhc_8h.html#structLsm303dlhc">Lsm303dlhc</a> *&#160;</td>
-          <td class="paramname"><em>lsm</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="lsm303dlhc_8c_source.html#l00209">209</a> of file <a class="el" href="lsm303dlhc_8c_source.html">lsm303dlhc.c</a>.</p>
-
-<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="lsm303dlhc_8h.html#ac4128cc9cf3bcc4c7ab0893a9edec3d4">Lsm303dlhc::data</a>, <a class="el" href="lsm303dlhc_8h_source.html#l00078">Lsm303dlhc::data_available</a>, <a class="el" href="lsm303dlhc_8h_source.html#l00072">Lsm303dlhc::i2c_trans</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00058">I2CTransFailed</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="lsm303dlhc_8h.html#a34ea2c05c0e30f713e0de04f6e3edb08">Lsm303dlhc::init_status</a>, <a class="el" href="lsm303dlhc_8h_source.html#l00073">Lsm303dlhc::initialized</a>, <a class="el" href="lsm303dlhc_8c_source.html#l00207">Int16FromBuf</a>, <a class="el" href="lsm303dlhc__regs_8h_source.html#l00031">LSM303DLHC_ACC_ADDR</a>, <a class="el" href="lsm303dlhc_8c_source.html#l00111">lsm303dlhc_send_config()</a>, <a class="el" href="lsm303dlhc_8h_source.html#l00054">LSM_CONF_ACC_UNINIT</a>, <a class="el" href="lsm303dlhc_8h_source.html#l00063">LSM_CONF_MAG_UNINIT</a>, <a class="el" href="i2c_8h_source.html#l00104">i2c_transaction::slave_addr</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
-
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="lsm303dlhc_8h_a39197f68eef8e69e704960ffc6c2e68c_cgraph.png" border="0" usemap="#lsm303dlhc_8h_a39197f68eef8e69e704960ffc6c2e68c_cgraph" alt=""/></div>
-<map name="lsm303dlhc_8h_a39197f68eef8e69e704960ffc6c2e68c_cgraph" id="lsm303dlhc_8h_a39197f68eef8e69e704960ffc6c2e68c_cgraph">
-<area shape="rect" id="node2" href="lsm303dlhc_8c.html#afd5d70c0276b2a913b5eb5b40c5613aa" title="Configuration function called once before normal use. " alt="" coords="192,31,371,57"/><area shape="rect" id="node3" href="lsm303dlhc_8c.html#a111ef18370e5a6b276e765795ac4c3a2" title="lsm303dlhc_i2c_tx_reg" alt="" coords="419,5,585,32"/><area shape="rect" id="node5" href="lsm303dlhc_8c.html#a61023404c121ad141fab2d1aefbe1fb1" title="lsm303dlhc_read" alt="" coords="437,56,567,83"/><area shape="rect" id="node4" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="633,31,724,57"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a43bda86b1066b83f04638f1c8918eaf0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void lsm303dlhc_init </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="lsm303dlhc_8h.html#structLsm303dlhc">Lsm303dlhc</a> *&#160;</td>
-          <td class="paramname"><em>lsm</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="group__i2c.html#structi2c__periph">i2c_periph</a> *&#160;</td>
-          <td class="paramname"><em>i2c_p</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
-          <td class="paramname"><em>addr</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize <a class="el" href="lsm303dlhc_8h.html#structLsm303dlhc">Lsm303dlhc</a> struct and set default config options. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">lsm</td><td><a class="el" href="lsm303dlhc_8h.html#structLsm303dlhc">Lsm303dlhc</a> struct </td></tr>
-    <tr><td class="paramname">i2c_p</td><td>I2C peripheral to use </td></tr>
-    <tr><td class="paramname">addr</td><td>I2C address of <a class="el" href="lsm303dlhc_8h.html#structLsm303dlhc">Lsm303dlhc</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="lsm303dlhc_8c_source.html#l00082">82</a> of file <a class="el" href="lsm303dlhc_8c_source.html">lsm303dlhc.c</a>.</p>
-
-<p>References <a class="el" href="lsm303dlhc_8h.html#a8c214bb1e17056332c89e76e48f5a508">Lsm303dlhc::config</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="lsm303dlhc_8h_source.html#l00071">Lsm303dlhc::i2c_p</a>, <a class="el" href="lsm303dlhc_8h_source.html#l00072">Lsm303dlhc::i2c_trans</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="lsm303dlhc_8h.html#a34ea2c05c0e30f713e0de04f6e3edb08">Lsm303dlhc::init_status</a>, <a class="el" href="lsm303dlhc_8h_source.html#l00073">Lsm303dlhc::initialized</a>, <a class="el" href="lsm303dlhc__regs_8h_source.html#l00031">LSM303DLHC_ACC_ADDR</a>, <a class="el" href="lsm303dlhc_8c_source.html#l00061">lsm303dlhc_acc_set_default_config()</a>, <a class="el" href="lsm303dlhc_8c_source.html#l00069">lsm303dlhc_mag_set_default_config()</a>, <a class="el" href="lsm303dlhc_8h_source.html#l00054">LSM_CONF_ACC_UNINIT</a>, <a class="el" href="lsm303dlhc_8h_source.html#l00063">LSM_CONF_MAG_UNINIT</a>, <a class="el" href="i2c_8h_source.html#l00104">i2c_transaction::slave_addr</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
-
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="lsm303dlhc_8h_a43bda86b1066b83f04638f1c8918eaf0_cgraph.png" border="0" usemap="#lsm303dlhc_8h_a43bda86b1066b83f04638f1c8918eaf0_cgraph" alt=""/></div>
-<map name="lsm303dlhc_8h_a43bda86b1066b83f04638f1c8918eaf0_cgraph" id="lsm303dlhc_8h_a43bda86b1066b83f04638f1c8918eaf0_cgraph">
-<area shape="rect" id="node2" href="lsm303dlhc_8c.html#ae8ceff9bc03fc374ba40da1e878432a4" title="lsm303dlhc_acc_set\l_default_config" alt="" coords="179,5,329,47"/><area shape="rect" id="node3" href="lsm303dlhc_8c.html#a8d231a0e60d1fd7c43f0618e82c369e4" title="lsm303dlhc_mag_set\l_default_config" alt="" coords="175,71,333,112"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a5d3ba8e56a241a79753f1a24b87cf4bc"></a>
+<a class="anchor" id="ae8ceff9bc03fc374ba40da1e878432a4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -586,10 +410,10 @@ mag</td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void lsm303dlhc_periodic </td>
+          <td class="memname">static void lsm303dlhc_acc_set_default_config </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="lsm303dlhc_8h.html#structLsm303dlhc">Lsm303dlhc</a> *&#160;</td>
-          <td class="paramname"><em>lsm</em></td><td>)</td>
+          <td class="paramtype">struct <a class="el" href="lsm303dlhc_8h.html#structLsm303dlhcAccConfig">Lsm303dlhcAccConfig</a> *&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -600,108 +424,61 @@ mag</td>
 </table>
 </div><div class="memdoc">
 
-<p>convenience function: read or start configuration if not already initialized </p>
+<p>Definition at line <a class="el" href="lsm303dlhc_8h_source.html#l00086">86</a> of file <a class="el" href="lsm303dlhc_8h_source.html">lsm303dlhc.h</a>.</p>
 
-<p>Definition at line <a class="el" href="lsm303dlhc_8h_source.html#l00100">100</a> of file <a class="el" href="lsm303dlhc_8h_source.html">lsm303dlhc.h</a>.</p>
+<p>References <a class="el" href="lsm303dlhc_8h_source.html#l00041">LSM303DLHC_DEFAULT_AFS</a>, <a class="el" href="lsm303dlhc_8h_source.html#l00037">LSM303DLHC_DEFAULT_AODR</a>, <a class="el" href="lsm303dlhc_8h_source.html#l00057">Lsm303dlhcAccConfig::rate</a>, and <a class="el" href="lsm303dlhc_8h_source.html#l00058">Lsm303dlhcAccConfig::scale</a>.</p>
 
-<p>References <a class="el" href="lsm303dlhc_8h_source.html#l00073">Lsm303dlhc::initialized</a>, <a class="el" href="lsm303dlhc_8c_source.html#l00185">lsm303dlhc_read()</a>, and <a class="el" href="lsm303dlhc_8c_source.html#l00165">lsm303dlhc_start_configure()</a>.</p>
+<p>Referenced by <a class="el" href="lsm303dlhc__i2c_8c_source.html#l00039">lsm303dlhc_i2c_init()</a>, and <a class="el" href="lsm303dlhc__spi_8c_source.html#l00032">lsm303dlhc_spi_init()</a>.</p>
 
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="lsm303dlhc_8h_a5d3ba8e56a241a79753f1a24b87cf4bc_cgraph.png" border="0" usemap="#lsm303dlhc_8h_a5d3ba8e56a241a79753f1a24b87cf4bc_cgraph" alt=""/></div>
-<map name="lsm303dlhc_8h_a5d3ba8e56a241a79753f1a24b87cf4bc_cgraph" id="lsm303dlhc_8h_a5d3ba8e56a241a79753f1a24b87cf4bc_cgraph">
-<area shape="rect" id="node2" href="lsm303dlhc_8h.html#a61023404c121ad141fab2d1aefbe1fb1" title="lsm303dlhc_read" alt="" coords="476,5,607,32"/><area shape="rect" id="node4" href="lsm303dlhc_8h.html#a8a925e85d441156e8201534827bdbf77" title="lsm303dlhc_start_configure" alt="" coords="205,56,404,83"/><area shape="rect" id="node3" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="893,56,984,83"/><area shape="rect" id="node5" href="lsm303dlhc_8c.html#afd5d70c0276b2a913b5eb5b40c5613aa" title="Configuration function called once before normal use. " alt="" coords="452,56,631,83"/><area shape="rect" id="node6" href="lsm303dlhc_8c.html#a111ef18370e5a6b276e765795ac4c3a2" title="lsm303dlhc_i2c_tx_reg" alt="" coords="679,56,845,83"/><area shape="rect" id="node7" href="lsm303dlhc_8c.html#a61023404c121ad141fab2d1aefbe1fb1" title="lsm303dlhc_read" alt="" coords="697,107,827,133"/></map>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="lsm303dlhc_8h_ae8ceff9bc03fc374ba40da1e878432a4_icgraph.png" border="0" usemap="#lsm303dlhc_8h_ae8ceff9bc03fc374ba40da1e878432a4_icgraph" alt=""/></div>
+<map name="lsm303dlhc_8h_ae8ceff9bc03fc374ba40da1e878432a4_icgraph" id="lsm303dlhc_8h_ae8ceff9bc03fc374ba40da1e878432a4_icgraph">
+<area shape="rect" id="node2" href="lsm303dlhc__i2c_8h.html#a4b33179ee6e6df1fd4904581266e5963" title="Initialize Lsm303dlhc struct and set default config options. " alt="" coords="204,5,351,32"/><area shape="rect" id="node3" href="lsm303dlhc__spi_8h.html#a88820b2fdf8b7f14c51da0893f60579d" title="lsm303dlhc_spi_init" alt="" coords="204,56,351,83"/><area shape="rect" id="node4" href="imu__px4fmu__v2_84_8h.html#a36182babc18a11d31f8f99b358727db0" title="imu_px4_init" alt="" coords="399,56,501,83"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a61023404c121ad141fab2d1aefbe1fb1"></a>
+<a class="anchor" id="a8d231a0e60d1fd7c43f0618e82c369e4"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void lsm303dlhc_read </td>
+          <td class="memname">static void lsm303dlhc_mag_set_default_config </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="lsm303dlhc_8h.html#structLsm303dlhc">Lsm303dlhc</a> *&#160;</td>
-          <td class="paramname"><em>lsm</em></td><td>)</td>
+          <td class="paramtype">struct <a class="el" href="lsm303dlhc_8h.html#structLsm303dlhcMagConfig">Lsm303dlhcMagConfig</a> *&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lsm303dlhc_8c_source.html#l00185">185</a> of file <a class="el" href="lsm303dlhc_8c_source.html">lsm303dlhc.c</a>.</p>
+<p>Definition at line <a class="el" href="lsm303dlhc_8h_source.html#l00092">92</a> of file <a class="el" href="lsm303dlhc_8h_source.html">lsm303dlhc.h</a>.</p>
 
-<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="lsm303dlhc_8h_source.html#l00071">Lsm303dlhc::i2c_p</a>, <a class="el" href="linux_2mcu__periph_2i2c__arch_8c_source.html#l00052">i2c_submit()</a>, <a class="el" href="lsm303dlhc_8h_source.html#l00072">Lsm303dlhc::i2c_trans</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00049">I2CTransTxRx</a>, <a class="el" href="lsm303dlhc_8h_source.html#l00073">Lsm303dlhc::initialized</a>, <a class="el" href="i2c_8h_source.html#l00110">i2c_transaction::len_r</a>, <a class="el" href="i2c_8h_source.html#l00116">i2c_transaction::len_w</a>, <a class="el" href="lsm303dlhc__regs_8h_source.html#l00031">LSM303DLHC_ACC_ADDR</a>, <a class="el" href="lsm303dlhc__regs_8h_source.html#l00068">LSM303DLHC_REG_OUT_X_H_M</a>, <a class="el" href="lsm303dlhc__regs_8h_source.html#l00043">LSM303DLHC_REG_OUT_X_L_A</a>, <a class="el" href="i2c_8h_source.html#l00104">i2c_transaction::slave_addr</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, and <a class="el" href="i2c_8h_source.html#l00098">i2c_transaction::type</a>.</p>
+<p>References <a class="el" href="lsm303dlhc_8h_source.html#l00053">LSM303DLHC_DEFAULT_MD</a>, <a class="el" href="lsm303dlhc_8h_source.html#l00049">LSM303DLHC_DEFAULT_MFS</a>, <a class="el" href="lsm303dlhc_8h_source.html#l00045">LSM303DLHC_DEFAULT_MODR</a>, <a class="el" href="lsm303dlhc_8h_source.html#l00064">Lsm303dlhcMagConfig::mode</a>, <a class="el" href="lsm303dlhc_8h_source.html#l00062">Lsm303dlhcMagConfig::rate</a>, and <a class="el" href="lsm303dlhc_8h_source.html#l00063">Lsm303dlhcMagConfig::scale</a>.</p>
 
-<p>Referenced by <a class="el" href="lsm303dlhc_8h_source.html#l00100">lsm303dlhc_periodic()</a>, and <a class="el" href="lsm303dlhc_8c_source.html#l00111">lsm303dlhc_send_config()</a>.</p>
+<p>Referenced by <a class="el" href="lsm303dlhc__i2c_8c_source.html#l00039">lsm303dlhc_i2c_init()</a>, and <a class="el" href="lsm303dlhc__spi_8c_source.html#l00032">lsm303dlhc_spi_init()</a>.</p>
 
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="lsm303dlhc_8h_a61023404c121ad141fab2d1aefbe1fb1_cgraph.png" border="0" usemap="#lsm303dlhc_8h_a61023404c121ad141fab2d1aefbe1fb1_cgraph" alt=""/></div>
-<map name="lsm303dlhc_8h_a61023404c121ad141fab2d1aefbe1fb1_cgraph" id="lsm303dlhc_8h_a61023404c121ad141fab2d1aefbe1fb1_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="184,5,275,32"/></map>
-</div>
-</p>
-
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="lsm303dlhc_8h_a61023404c121ad141fab2d1aefbe1fb1_icgraph.png" border="0" usemap="#lsm303dlhc_8h_a61023404c121ad141fab2d1aefbe1fb1_icgraph" alt=""/></div>
-<map name="lsm303dlhc_8h_a61023404c121ad141fab2d1aefbe1fb1_icgraph" id="lsm303dlhc_8h_a61023404c121ad141fab2d1aefbe1fb1_icgraph">
-<area shape="rect" id="node2" href="lsm303dlhc_8h.html#a5d3ba8e56a241a79753f1a24b87cf4bc" title="convenience function: read or start configuration if not already initialized " alt="" coords="657,31,809,57"/><area shape="rect" id="node3" href="lsm303dlhc_8c.html#afd5d70c0276b2a913b5eb5b40c5613aa" title="Configuration function called once before normal use. " alt="" coords="184,31,363,57"/><area shape="rect" id="node4" href="lsm303dlhc_8h.html#a39197f68eef8e69e704960ffc6c2e68c" title="lsm303dlhc_event" alt="" coords="441,31,579,57"/><area shape="rect" id="node5" href="lsm303dlhc_8h.html#a8a925e85d441156e8201534827bdbf77" title="lsm303dlhc_start_configure" alt="" coords="411,81,609,108"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a8a925e85d441156e8201534827bdbf77"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void lsm303dlhc_start_configure </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="lsm303dlhc_8h.html#structLsm303dlhc">Lsm303dlhc</a> *&#160;</td>
-          <td class="paramname"><em>lsm</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="lsm303dlhc_8c_source.html#l00165">165</a> of file <a class="el" href="lsm303dlhc_8c_source.html">lsm303dlhc.c</a>.</p>
-
-<p>References <a class="el" href="lsm303dlhc_8h_source.html#l00072">Lsm303dlhc::i2c_trans</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="lsm303dlhc_8h.html#a34ea2c05c0e30f713e0de04f6e3edb08">Lsm303dlhc::init_status</a>, <a class="el" href="lsm303dlhc__regs_8h_source.html#l00031">LSM303DLHC_ACC_ADDR</a>, <a class="el" href="lsm303dlhc_8c_source.html#l00111">lsm303dlhc_send_config()</a>, <a class="el" href="lsm303dlhc_8h_source.html#l00054">LSM_CONF_ACC_UNINIT</a>, <a class="el" href="lsm303dlhc_8h_source.html#l00063">LSM_CONF_MAG_UNINIT</a>, <a class="el" href="i2c_8h_source.html#l00104">i2c_transaction::slave_addr</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
-
-<p>Referenced by <a class="el" href="lsm303dlhc_8h_source.html#l00100">lsm303dlhc_periodic()</a>.</p>
-
-<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="lsm303dlhc_8h_a8a925e85d441156e8201534827bdbf77_cgraph.png" border="0" usemap="#lsm303dlhc_8h_a8a925e85d441156e8201534827bdbf77_cgraph" alt=""/></div>
-<map name="lsm303dlhc_8h_a8a925e85d441156e8201534827bdbf77_cgraph" id="lsm303dlhc_8h_a8a925e85d441156e8201534827bdbf77_cgraph">
-<area shape="rect" id="node2" href="lsm303dlhc_8c.html#afd5d70c0276b2a913b5eb5b40c5613aa" title="Configuration function called once before normal use. " alt="" coords="252,31,431,57"/><area shape="rect" id="node3" href="lsm303dlhc_8c.html#a111ef18370e5a6b276e765795ac4c3a2" title="lsm303dlhc_i2c_tx_reg" alt="" coords="479,5,645,32"/><area shape="rect" id="node5" href="lsm303dlhc_8c.html#a61023404c121ad141fab2d1aefbe1fb1" title="lsm303dlhc_read" alt="" coords="497,56,627,83"/><area shape="rect" id="node4" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="693,31,784,57"/></map>
-</div>
-</p>
-
-<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="lsm303dlhc_8h_a8a925e85d441156e8201534827bdbf77_icgraph.png" border="0" usemap="#lsm303dlhc_8h_a8a925e85d441156e8201534827bdbf77_icgraph" alt=""/></div>
-<map name="lsm303dlhc_8h_a8a925e85d441156e8201534827bdbf77_icgraph" id="lsm303dlhc_8h_a8a925e85d441156e8201534827bdbf77_icgraph">
-<area shape="rect" id="node2" href="lsm303dlhc_8h.html#a5d3ba8e56a241a79753f1a24b87cf4bc" title="convenience function: read or start configuration if not already initialized " alt="" coords="252,5,404,32"/></map>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="lsm303dlhc_8h_a8d231a0e60d1fd7c43f0618e82c369e4_icgraph.png" border="0" usemap="#lsm303dlhc_8h_a8d231a0e60d1fd7c43f0618e82c369e4_icgraph" alt=""/></div>
+<map name="lsm303dlhc_8h_a8d231a0e60d1fd7c43f0618e82c369e4_icgraph" id="lsm303dlhc_8h_a8d231a0e60d1fd7c43f0618e82c369e4_icgraph">
+<area shape="rect" id="node2" href="lsm303dlhc__i2c_8h.html#a4b33179ee6e6df1fd4904581266e5963" title="Initialize Lsm303dlhc struct and set default config options. " alt="" coords="212,5,359,32"/><area shape="rect" id="node3" href="lsm303dlhc__spi_8h.html#a88820b2fdf8b7f14c51da0893f60579d" title="lsm303dlhc_spi_init" alt="" coords="212,56,359,83"/><area shape="rect" id="node4" href="imu__px4fmu__v2_84_8h.html#a36182babc18a11d31f8f99b358727db0" title="imu_px4_init" alt="" coords="407,56,509,83"/></map>
 </div>
 </p>
 
@@ -713,7 +490,7 @@ mag</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="lsm303dlhc_8h.html">lsm303dlhc.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:59 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:07 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -10,5 +10,5 @@ var avoid__navigation_8h =
     [ "init_avoid_navigation", "avoid__navigation_8h.html#a17913a42379cc69477b783c9d0d9c68e", null ],
     [ "run_avoid_navigation_onvision", "avoid__navigation_8h.html#afbb250f65364e84c51f0df86da67eb05", null ],
     [ "avoid_navigation_data", "avoid__navigation_8h.html#accc9df079cb6cc4f7679e6c0d576d465", null ],
-    [ "obstacle_detected", "avoid__navigation_8h.html#a9f41e726be05c95e73e4d2583773b2f7", null ]
+    [ "obstacle_detected", "avoid__navigation_8h.html#a845d6487ece3094af3ea210a11490ecd", null ]
 ];

@@ -3,6 +3,7 @@ var v4l2_8h =
     [ "v4l2_img_buf", "v4l2_8h.html#structv4l2__img__buf", [
       [ "buf", "v4l2_8h.html#a129766ce42e8c69f2a0ca4c55ef3cca0", null ],
       [ "length", "v4l2_8h.html#ae9b606a38d8b4d8028256fe7b1762c78", null ],
+      [ "pprz_timestamp", "v4l2_8h.html#ab915dda4e98539945df3f472fb0a9785", null ],
       [ "timestamp", "v4l2_8h.html#a9521e02a6e48a6c071997ff5833f0b3f", null ]
     ] ],
     [ "v4l2_device", "v4l2_8h.html#structv4l2__device", [
@@ -20,9 +21,9 @@ var v4l2_8h =
     [ "v4l2_close", "v4l2_8h.html#a3978980241fd39cc5328855d8d2e332d", null ],
     [ "v4l2_image_free", "v4l2_8h.html#a865e07dd33caf3bb71a3b90834b308c3", null ],
     [ "v4l2_image_get", "v4l2_8h.html#a5f8eea1ef0eb13865ad6753e02f4a283", null ],
-    [ "v4l2_image_get_nonblock", "v4l2_8h.html#a93bcb916d0b81403a97d61ff24841d97", null ],
-    [ "v4l2_init", "v4l2_8h.html#a936745c837c31ee383e6439e4e79b306", null ],
-    [ "v4l2_init_subdev", "v4l2_8h.html#ab93b4f8a8c976a50e55c4fad70bf4127", null ],
-    [ "v4l2_start_capture", "v4l2_8h.html#adb5a15f8b748f8ed515bb2920e423ea5", null ],
-    [ "v4l2_stop_capture", "v4l2_8h.html#a8a08b40d6115117914f0db0fce1c6d98", null ]
+    [ "v4l2_image_get_nonblock", "v4l2_8h.html#ae6f6d19b986aa3a1a1ba6c5e4390b8e1", null ],
+    [ "v4l2_init", "v4l2_8h.html#a1f683e79a4639d4e189f059f6c4ae268", null ],
+    [ "v4l2_init_subdev", "v4l2_8h.html#a3798643b3e99cd32ef724fc928d92e51", null ],
+    [ "v4l2_start_capture", "v4l2_8h.html#a4efccaca5c6c386d09e315ccfcaa3581", null ],
+    [ "v4l2_stop_capture", "v4l2_8h.html#ac793d6bd02a9c7b138146a848bf93bea", null ]
 ];

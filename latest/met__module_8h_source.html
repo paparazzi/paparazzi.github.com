@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('met__module_8h_source.html','');});
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="met__module_8h.html#a38c8b0c5097cc73e235f57b6e207dacc">   42</a></span>&#160;<span class="preprocessor">#define MetBuffer() MetLinkDevice-&gt;char_available(MetLinkDevice-&gt;periph)</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="met__module_8h.html#ab6279ed04caea16ab6ab0eb0f3a53cf1">   43</a></span>&#160;<span class="preprocessor">#define MetGetch() MetLinkDevice-&gt;get_byte(MetLinkDevice-&gt;periph)</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="met__module_8h.html#a0d90337932a2d91aadcd594f53bbede0">   44</a></span>&#160;<span class="preprocessor">#define ReadMetBuffer() { while (MetBuffer()&amp;&amp;!met_msg_received) parse_met_buffer(MetGetch()); }</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="met__module_8h.html#ac8da7d57fd856850000c369aae9761a9">   45</a></span>&#160;<span class="preprocessor">#define MetSend1(c) MetLinkDevice-&gt;put_byte(MetLinkDevice-&gt;periph, c)</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="met__module_8h.html#ac8da7d57fd856850000c369aae9761a9">   45</a></span>&#160;<span class="preprocessor">#define MetSend1(c) MetLinkDevice-&gt;put_byte(MetLinkDevice-&gt;periph, 0, c)</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="met__module_8h.html#ac7eb0f3d418e9837ff5ee1fad3b91af6">   46</a></span>&#160;<span class="preprocessor">#define MetUartSend1(c) MetSend1(c)</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="met__module_8h.html#aa4ce83df68841849008efac36a05e478">   47</a></span>&#160;<span class="preprocessor">#define MetSend(_dat,_len) { for (uint8_t i = 0; i&lt; (_len); i++) MetSend1(_dat[i]); };</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="met__module_8h.html#aa337ffbe8cf37b9f56824c1fe9037641">   48</a></span>&#160;<span class="preprocessor">#define MetUartSetBaudrate(_b) uart_periph_set_baudrate(&amp;(MET_LINK), _b)</span></div>
@@ -165,7 +165,7 @@ $(document).ready(function(){initNavTree('met__module_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="met__module_8h.html">met_module.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:27 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:28 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

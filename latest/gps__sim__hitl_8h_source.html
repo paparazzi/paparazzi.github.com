@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -133,22 +133,23 @@ $(document).ready(function(){initNavTree('gps__sim__hitl_8h_source.html','');});
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifndef GPS_SIM_HITL_H</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define GPS_SIM_HITL_H</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="std_8h.html">std.h</a>&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gps__sim__hitl_8h.html#a550f99981aff6aed9736f6e16f6d9f02">gps_sim_hitl_event</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#ifndef PRIMARY_GPS</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="gps__sim__hitl_8h.html#a0eb39777eac135c917af2eed39cce7f1">   31</a></span>&#160;<span class="preprocessor">#define PRIMARY_GPS GPS_SIM</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="gps__sim__hitl_8h.html#ad43d03c9717a93b3211d8694ebf3a79d">   34</a></span>&#160;<span class="preprocessor">#define GpsEvent gps_sim_hitl_event</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GPS_SIM_HITL_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
-<div class="ttc" id="gps__sim__hitl_8h_html_a550f99981aff6aed9736f6e16f6d9f02"><div class="ttname"><a href="gps__sim__hitl_8h.html#a550f99981aff6aed9736f6e16f6d9f02">gps_sim_hitl_event</a></div><div class="ttdeci">void gps_sim_hitl_event(void)</div><div class="ttdef"><b>Definition:</b> <a href="gps__sim__hitl_8c_source.html#l00042">gps_sim_hitl.c:42</a></div></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gps__sim__hitl_8h.html#a550f99981aff6aed9736f6e16f6d9f02">gps_sim_hitl_event</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gps__sim__hitl_8h.html#a3bd0e1436f6bfe364a1cbc541e3167de">gps_sim_hitl_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GPS_SIM_HITL_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="gps__sim__hitl_8h_html_a550f99981aff6aed9736f6e16f6d9f02"><div class="ttname"><a href="gps__sim__hitl_8h.html#a550f99981aff6aed9736f6e16f6d9f02">gps_sim_hitl_event</a></div><div class="ttdeci">void gps_sim_hitl_event(void)</div><div class="ttdef"><b>Definition:</b> <a href="gps__sim__hitl_8c_source.html#l00044">gps_sim_hitl.c:44</a></div></div>
+<div class="ttc" id="gps__sim__hitl_8h_html_a3bd0e1436f6bfe364a1cbc541e3167de"><div class="ttname"><a href="gps__sim__hitl_8h.html#a3bd0e1436f6bfe364a1cbc541e3167de">gps_sim_hitl_init</a></div><div class="ttdeci">void gps_sim_hitl_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="gps__sim__hitl_8c_source.html#l00039">gps_sim_hitl.c:39</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8c4cbb881db224ddaf0756e79ed706ce.html">gps</a></li><li class="navelem"><a class="el" href="gps__sim__hitl_8h.html">gps_sim_hitl.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:31 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:32 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2radio__control_2ppm
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stm32_2subsystems_2radio__control_2ppm__arch_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2arch_2stm32_2subsystems_2radio__control_2ppm__arch_8hdep" alt=""/></div>
 <map name="sw_2airborne_2arch_2stm32_2subsystems_2radio__control_2ppm__arch_8hdep" id="sw_2airborne_2arch_2stm32_2subsystems_2radio__control_2ppm__arch_8hdep">
-<area shape="rect" id="node2" href="ppm_8h.html" title="sw/airborne/subsystems\l/radio_control/ppm.h" alt="" coords="334,109,510,151"/><area shape="rect" id="node3" href="lpc21_2subsystems_2radio__control_2ppm__arch_8c.html" title="LPC21xx specific implementation for PPM radio control. " alt="" coords="5,199,196,255"/><area shape="rect" id="node4" href="sim_2subsystems_2radio__control_2ppm__arch_8c.html" title="PPM radio control, simulator specific. " alt="" coords="220,199,411,255"/><area shape="rect" id="node5" href="stm32_2subsystems_2radio__control_2ppm__arch_8c.html" title="STM32 ppm decoder. " alt="" coords="435,199,625,255"/><area shape="rect" id="node6" href="ppm_8c.html" title="Architecture independent functions for PPM radio control. " alt="" coords="650,206,826,247"/></map>
+<area shape="rect" id="node2" href="ppm_8h.html" title="sw/airborne/subsystems\l/radio_control/ppm.h" alt="" coords="442,109,618,151"/><area shape="rect" id="node3" href="chibios_2subsystems_2radio__control_2ppm__arch_8c.html" title="PPM interface between ChibiOS and Paparazzi. " alt="" coords="5,199,196,255"/><area shape="rect" id="node4" href="lpc21_2subsystems_2radio__control_2ppm__arch_8c.html" title="LPC21xx specific implementation for PPM radio control. " alt="" coords="220,199,411,255"/><area shape="rect" id="node5" href="sim_2subsystems_2radio__control_2ppm__arch_8c.html" title="PPM radio control, simulator specific. " alt="" coords="435,199,625,255"/><area shape="rect" id="node6" href="stm32_2subsystems_2radio__control_2ppm__arch_8c.html" title="STM32 ppm decoder. " alt="" coords="649,199,840,255"/><area shape="rect" id="node7" href="ppm_8c.html" title="Architecture independent functions for PPM radio control. " alt="" coords="865,206,1041,247"/></map>
 </div>
 </div>
 <p><a href="stm32_2subsystems_2radio__control_2ppm__arch_8h_source.html">Go to the source code of this file.</a></p>
@@ -131,11 +131,11 @@ Macros</h2></td></tr>
 <tr class="memitem:a80e7b8968c15db17c6f362802e0cce05"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8h.html#a80e7b8968c15db17c6f362802e0cce05">RC_PPM_TICKS_PER_USEC</a>&#160;&#160;&#160;6</td></tr>
 <tr class="memdesc:a80e7b8968c15db17c6f362802e0cce05"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ppm counter is set-up to have 1/6 us resolution.  <a href="#a80e7b8968c15db17c6f362802e0cce05">More...</a><br /></td></tr>
 <tr class="separator:a80e7b8968c15db17c6f362802e0cce05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad33b862bb6166593e16a30779799b51"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8h.html#aad33b862bb6166593e16a30779799b51">RC_PPM_TICKS_OF_USEC</a>(_v)&#160;&#160;&#160;((_v)*<a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8h.html#a80e7b8968c15db17c6f362802e0cce05">RC_PPM_TICKS_PER_USEC</a>)</td></tr>
+<tr class="memitem:aad33b862bb6166593e16a30779799b51"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8h.html#aad33b862bb6166593e16a30779799b51">RC_PPM_TICKS_OF_USEC</a>(_v)&#160;&#160;&#160;((_v)*<a class="el" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a80e7b8968c15db17c6f362802e0cce05">RC_PPM_TICKS_PER_USEC</a>)</td></tr>
 <tr class="separator:aad33b862bb6166593e16a30779799b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89dbcbaebdf3485e1fdecc29fb6f16db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8h.html#a89dbcbaebdf3485e1fdecc29fb6f16db">RC_PPM_SIGNED_TICKS_OF_USEC</a>(_v)&#160;&#160;&#160;(<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>)((_v)*<a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8h.html#a80e7b8968c15db17c6f362802e0cce05">RC_PPM_TICKS_PER_USEC</a>)</td></tr>
+<tr class="memitem:a89dbcbaebdf3485e1fdecc29fb6f16db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8h.html#a89dbcbaebdf3485e1fdecc29fb6f16db">RC_PPM_SIGNED_TICKS_OF_USEC</a>(_v)&#160;&#160;&#160;(<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>)((_v)*<a class="el" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a80e7b8968c15db17c6f362802e0cce05">RC_PPM_TICKS_PER_USEC</a>)</td></tr>
 <tr class="separator:a89dbcbaebdf3485e1fdecc29fb6f16db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a962b9942b2dfacf94028a3c538341b4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8h.html#a962b9942b2dfacf94028a3c538341b4e">USEC_OF_RC_PPM_TICKS</a>(_v)&#160;&#160;&#160;((_v)/<a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8h.html#a80e7b8968c15db17c6f362802e0cce05">RC_PPM_TICKS_PER_USEC</a>)</td></tr>
+<tr class="memitem:a962b9942b2dfacf94028a3c538341b4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8h.html#a962b9942b2dfacf94028a3c538341b4e">USEC_OF_RC_PPM_TICKS</a>(_v)&#160;&#160;&#160;((_v)/<a class="el" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a80e7b8968c15db17c6f362802e0cce05">RC_PPM_TICKS_PER_USEC</a>)</td></tr>
 <tr class="separator:a962b9942b2dfacf94028a3c538341b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -152,7 +152,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_v</td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>)((_v)*<a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8h.html#a80e7b8968c15db17c6f362802e0cce05">RC_PPM_TICKS_PER_USEC</a>)</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>)((_v)*<a class="el" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a80e7b8968c15db17c6f362802e0cce05">RC_PPM_TICKS_PER_USEC</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -170,7 +170,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_v</td><td>)</td>
-          <td>&#160;&#160;&#160;((_v)*<a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8h.html#a80e7b8968c15db17c6f362802e0cce05">RC_PPM_TICKS_PER_USEC</a>)</td>
+          <td>&#160;&#160;&#160;((_v)*<a class="el" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a80e7b8968c15db17c6f362802e0cce05">RC_PPM_TICKS_PER_USEC</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -207,7 +207,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_v</td><td>)</td>
-          <td>&#160;&#160;&#160;((_v)/<a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8h.html#a80e7b8968c15db17c6f362802e0cce05">RC_PPM_TICKS_PER_USEC</a>)</td>
+          <td>&#160;&#160;&#160;((_v)/<a class="el" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a80e7b8968c15db17c6f362802e0cce05">RC_PPM_TICKS_PER_USEC</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -222,7 +222,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_71548ae744da26ac2c7ca213b679dc43.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_b14b085d0c57bddb3031abea4661d10b.html">radio_control</a></li><li class="navelem"><a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8h.html">ppm_arch.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:36 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:37 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

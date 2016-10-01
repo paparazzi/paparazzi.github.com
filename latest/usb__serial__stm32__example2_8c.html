@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('usb__serial__stm32__example2_8c.html',
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="usb__serial__stm32__example2_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2com_2usb__serial__stm32__example2_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2com_2usb__serial__stm32__example2_8c" id="sw_2airborne_2modules_2com_2usb__serial__stm32__example2_8c">
-<area shape="rect" id="node2" href="usb__serial__stm32_8h.html" title="header for serial over USB modules " alt="" coords="5,109,183,151"/><area shape="rect" id="node3" href="usb__serial_8h.html" title="arch independent USB API " alt="" coords="5,199,183,225"/><area shape="rect" id="node4" href="inttypes_8h.html" title="inttypes.h" alt="" coords="90,348,175,375"/><area shape="rect" id="node6" href="link__device_8h.html" title="generic device header " alt="" coords="145,273,328,300"/></map>
+<area shape="rect" id="node2" href="usb__serial__stm32_8h.html" title="header for serial over USB modules " alt="" coords="54,109,231,151"/><area shape="rect" id="node3" href="usb__serial_8h.html" title="arch independent USB API " alt="" coords="54,199,231,225"/><area shape="rect" id="node4" href="inttypes_8h.html" title="inttypes.h" alt="" coords="5,273,91,300"/></map>
 </div>
 </div>
 <p><a href="usb__serial__stm32__example2_8c_source.html">Go to the source code of this file.</a></p>
@@ -178,7 +178,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="usb__serial__stm32__example2_8c_source.html#l00091">91</a> of file <a class="el" href="usb__serial__stm32__example2_8c_source.html">usb_serial_stm32_example2.c</a>.</p>
 
-<p>References <a class="el" href="usb__serial__stm32__example2_8c_source.html#l00070">usb_serial_parse_packet()</a>, and <a class="el" href="lpc21_2usb__ser__hw_8c_source.html#l00563">VCOM_event()</a>.</p>
+<p>References <a class="el" href="usb__serial__stm32__example2_8c_source.html#l00070">usb_serial_parse_packet()</a>, <a class="el" href="lpc21_2usb__ser__hw_8c_source.html#l00420">VCOM_check_available()</a>, <a class="el" href="lpc21_2usb__ser__hw_8c_source.html#l00571">VCOM_event()</a>, and <a class="el" href="lpc21_2usb__ser__hw_8c_source.html#l00386">VCOM_getchar()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -187,7 +187,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="usb__serial__stm32__example2_8c_ad7375129249cec3fa89fdd090b50f611_cgraph.png" border="0" usemap="#usb__serial__stm32__example2_8c_ad7375129249cec3fa89fdd090b50f611_cgraph" alt=""/></div>
 <map name="usb__serial__stm32__example2_8c_ad7375129249cec3fa89fdd090b50f611_cgraph" id="usb__serial__stm32__example2_8c_ad7375129249cec3fa89fdd090b50f611_cgraph">
-<area shape="rect" id="node2" href="usb__serial__stm32__example2_8c.html#a4a15762007447868777bd94670fd6493" title="Parse data from buffer Note that the function receives int, not char Because we want to be able to ca..." alt="" coords="183,31,361,57"/><area shape="rect" id="node5" href="lpc21_2usb__ser__hw_8c.html#a15c895e4456578b3ca2818c1e17c832a" title="VCOM_event" alt="" coords="220,81,324,108"/><area shape="rect" id="node3" href="lpc21_2usb__ser__hw_8c.html#a19a213d00cf249a4d4d60dbf1a9907d3" title="Writes one character to VCOM port. " alt="" coords="433,5,551,32"/><area shape="rect" id="node4" href="lpc21_2usb__ser__hw_8c.html#aad17c325b3e7623c13d24b25fc42fe3b" title="VCOM_send_message" alt="" coords="409,56,575,83"/></map>
+<area shape="rect" id="node2" href="usb__serial__stm32__example2_8c.html#a4a15762007447868777bd94670fd6493" title="Parse data from buffer Note that the function receives int, not char Because we want to be able to ca..." alt="" coords="183,31,361,57"/><area shape="rect" id="node5" href="lpc21_2usb__ser__hw_8c.html#a4cfafe558a6e594ce0638634e7cec7db" title="Checks if data available in VCOM buffer. " alt="" coords="188,81,356,108"/><area shape="rect" id="node6" href="lpc21_2usb__ser__hw_8c.html#a15c895e4456578b3ca2818c1e17c832a" title="VCOM_event" alt="" coords="220,132,324,159"/><area shape="rect" id="node7" href="lpc21_2usb__ser__hw_8c.html#a184633f63ad351d8e70857d9e5ba4a3e" title="Reads one character from VCOM port. " alt="" coords="213,183,331,209"/><area shape="rect" id="node3" href="lpc21_2usb__ser__hw_8c.html#a19a213d00cf249a4d4d60dbf1a9907d3" title="Writes one character to VCOM port. " alt="" coords="433,5,551,32"/><area shape="rect" id="node4" href="lpc21_2usb__ser__hw_8c.html#aad17c325b3e7623c13d24b25fc42fe3b" title="VCOM_send_message" alt="" coords="409,56,575,83"/></map>
 </div>
 </p>
 
@@ -211,7 +211,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="usb__serial__stm32__example2_8c_source.html#l00044">44</a> of file <a class="el" href="usb__serial__stm32__example2_8c_source.html">usb_serial_stm32_example2.c</a>.</p>
 
-<p>References <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="usb__serial__stm32__example2_8c_source.html#l00034">run</a>, and <a class="el" href="lpc21_2usb__ser__hw_8c_source.html#l00578">VCOM_init()</a>.</p>
+<p>References <a class="el" href="usb__serial__stm32__example2_8c_source.html#l00034">run</a>, and <a class="el" href="lpc21_2usb__ser__hw_8c_source.html#l00586">VCOM_init()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -293,7 +293,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="usb__serial__stm32__example2_8c_source.html#l00070">70</a> of file <a class="el" href="usb__serial__stm32__example2_8c_source.html">usb_serial_stm32_example2.c</a>.</p>
 
-<p>References <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="usb__serial__stm32__example2_8c_source.html#l00035">prompt</a>, <a class="el" href="usb__serial__stm32__example2_8c_source.html#l00034">run</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="lpc21_2usb__ser__hw_8c_source.html#l00376">VCOM_putchar()</a>, and <a class="el" href="lpc21_2usb__ser__hw_8c_source.html#l00566">VCOM_send_message()</a>.</p>
+<p>References <a class="el" href="usb__serial__stm32__example2_8c_source.html#l00035">prompt</a>, <a class="el" href="usb__serial__stm32__example2_8c_source.html#l00034">run</a>, <a class="el" href="lpc21_2usb__ser__hw_8c_source.html#l00376">VCOM_putchar()</a>, and <a class="el" href="lpc21_2usb__ser__hw_8c_source.html#l00574">VCOM_send_message()</a>.</p>
 
 <p>Referenced by <a class="el" href="usb__serial__stm32__example2_8c_source.html#l00091">event_usb_serial()</a>.</p>
 
@@ -378,7 +378,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_ab659a912c5ed409300202a36e1f8d55.html">com</a></li><li class="navelem"><a class="el" href="usb__serial__stm32__example2_8c.html">usb_serial_stm32_example2.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:48 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:53 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

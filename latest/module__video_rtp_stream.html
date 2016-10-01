@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: Video streaming for Linux based devices</title>
+<title>Paparazzi UAS: video_rtp_stream module</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -100,27 +100,28 @@ $(document).ready(function(){initNavTree('module__video_rtp_stream.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Video streaming for Linux based devices </div>  </div>
+<div class="title">video_rtp_stream module </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Module XML file: <code>video_rtp_stream.xml</code> </p>
+<div class="textblock"><p><b>Video streaming for Linux based devices.</b></p>
+<p><b></b></p>
 <p>Works e.g. in conjunction with Parrot Drones where the autopilot is the Paparazzi autopilot. Features:</p><ul>
 <li>Sends a RTP/UDP stream of the camera image, a.k.a. live video</li>
 <li>Possibility to save an image(shot) on internal or external storage space even in full size, best quality Example to add to ARdrone2 airframe with extra USB stick plugger in:</li>
 </ul>
 <h1><a class="anchor" id="module_load_example__video_rtp_stream"></a>
 Example for airframe file</h1>
-<p>This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;modules&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;load name=&quot;video_rtp_stream.xml&quot;&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    &lt;define name=&quot;VIEWVIDEO_DOWNSIZE_FACTOR&quot; value=&quot;4&quot; /&gt;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    &lt;define name=&quot;VIEWVIDEO_QUALITY_FACTOR&quot; value=&quot;50&quot; /&gt;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    &lt;define name=&quot;VIEWVIDEO_USE_RTP&quot; value=&quot;TRUE|FALSE&quot; /&gt;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    &lt;configure name=&quot;VIEWVIDEO_USE_NETCAT&quot; value=&quot;FALSE|TRUE&quot; /&gt;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    &lt;configure name=&quot;VIEWVIDEO_HOST&quot; value=&quot;192.168.1.255&quot; /&gt;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    &lt;configure name=&quot;VIEWVIDEO_PORT_OUT&quot; value=&quot;5000&quot; /&gt;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    &lt;configure name=&quot;VIEWVIDEO_BROADCAST&quot; value=&quot;FALSE|TRUE&quot; /&gt;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  &lt;/load&gt;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;&lt;/modules&gt;</div>
+<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;video_thread&quot;/&gt;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&lt;module name=&quot;video_rtp_stream&quot;&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;VIEWVIDEO_CAMERA&quot; value=&quot;front_camera|bottom_camera&quot; /&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;define name=&quot;VIEWVIDEO_DOWNSIZE_FACTOR&quot; value=&quot;4&quot; /&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;define name=&quot;VIEWVIDEO_QUALITY_FACTOR&quot; value=&quot;50&quot; /&gt;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  &lt;define name=&quot;VIEWVIDEO_USE_RTP&quot; value=&quot;TRUE|FALSE&quot; /&gt;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  &lt;configure name=&quot;VIEWVIDEO_USE_NETCAT&quot; value=&quot;FALSE|TRUE&quot; /&gt;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  &lt;configure name=&quot;VIEWVIDEO_HOST&quot; value=&quot;192.168.1.255&quot; /&gt;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  &lt;configure name=&quot;VIEWVIDEO_PORT_OUT&quot; value=&quot;5000&quot; /&gt;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  &lt;configure name=&quot;VIEWVIDEO_BROADCAST&quot; value=&quot;FALSE|TRUE&quot; /&gt;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__video_rtp_stream"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="configure"></a>
@@ -138,12 +139,19 @@ Configure Options</h2>
 <h2><a class="anchor" id="define"></a>
 Define Options</h2>
 <ul>
+<li><b>name:</b> <code>VIEWVIDEO_CAMERA</code> <b>value:</b> <em>front_camera|bottom_camera</em> <br />
+ Description: Video device to use</li>
 <li><b>name:</b> <code>VIEWVIDEO_DOWNSIZE_FACTOR</code> <b>value:</b> <em>4</em> <br />
  Description: Reduction factor of the video stream</li>
 <li><b>name:</b> <code>VIEWVIDEO_QUALITY_FACTOR</code> <b>value:</b> <em>50</em> <br />
  Description: JPEG encoding compression factor [0-99]</li>
 <li><b>name:</b> <code>VIEWVIDEO_USE_RTP</code> <b>value:</b> <em>TRUE|FALSE</em> <br />
  Description: Enable RTP at startup for transfering images (default: TRUE)</li>
+</ul>
+<h1><a class="anchor" id="dependencies__video_rtp_stream"></a>
+Dependencies</h1>
+<ul>
+<li><a class="el" href="module__video_thread.html">video_thread module</a> </li>
 </ul>
 <h1><a class="anchor" id="functions__video_rtp_stream"></a>
 Module functions</h1>
@@ -185,6 +193,8 @@ Raw video_rtp_stream.xml file:</h2>
 <div class="line">    &lt;configure name=&quot;VIEWVIDEO_HOST&quot; value=&quot;192.168.1.255&quot; description=&quot;GCS IP (default: MODEM_HOST)&quot;/&gt;</div>
 <div class="line">    &lt;configure name=&quot;VIEWVIDEO_PORT_OUT&quot; value=&quot;5000&quot; description=&quot;Port (default: 5000)&quot;/&gt;</div>
 <div class="line">    &lt;configure name=&quot;VIEWVIDEO_BROADCAST&quot; value=&quot;FALSE|TRUE&quot; description=&quot;Enable broadcast of image stream (default: TRUE)&quot;/&gt;</div>
+<div class="line"></div>
+<div class="line">    &lt;define name=&quot;VIEWVIDEO_CAMERA&quot; value=&quot;front_camera|bottom_camera&quot; description=&quot;Video device to use&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;VIEWVIDEO_DOWNSIZE_FACTOR&quot; value=&quot;4&quot; description=&quot;Reduction factor of the video stream&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;VIEWVIDEO_QUALITY_FACTOR&quot; value=&quot;50&quot; description=&quot;JPEG encoding compression factor [0-99]&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;VIEWVIDEO_USE_RTP&quot; value=&quot;TRUE|FALSE&quot; description=&quot;Enable RTP at startup for transfering images (default: TRUE)&quot;/&gt;</div>
@@ -203,11 +213,11 @@ Raw video_rtp_stream.xml file:</h2>
 <div class="line">  &lt;/header&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;init fun=&quot;viewvideo_init()&quot;/&gt;</div>
-<div class="line">  &lt;makefile target=&quot;ap|nps&quot;&gt;</div>
+<div class="line">  &lt;makefile target=&quot;ap&quot;&gt;</div>
 <div class="line"></div>
 <div class="line">    &lt;file name=&quot;viewvideo.c&quot;/&gt;</div>
 <div class="line">    &lt;!-- Include the needed Computer Vision files --&gt;</div>
-<div class="line">    &lt;define name=&quot;modules/computer_vision&quot; type=&quot;include&quot;/&gt;</div>
+<div class="line">    &lt;include name=&quot;modules/computer_vision&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;rtp.c&quot; dir=&quot;modules/computer_vision/lib/encoding&quot;/&gt;</div>
 <div class="line"></div>
 <div class="line">    &lt;!-- Define the network connection to send images over --&gt;</div>
@@ -236,7 +246,7 @@ Raw video_rtp_stream.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:08 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:19 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

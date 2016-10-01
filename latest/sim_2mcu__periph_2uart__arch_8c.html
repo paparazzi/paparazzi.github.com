@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('sim_2mcu__periph_2uart__arch_8c.html',
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sim_2mcu__periph_2uart__arch_8c__incl.png" border="0" usemap="#sw_2airborne_2arch_2sim_2mcu__periph_2uart__arch_8c" alt=""/></div>
 <map name="sw_2airborne_2arch_2sim_2mcu__periph_2uart__arch_8c" id="sw_2airborne_2arch_2sim_2mcu__periph_2uart__arch_8c">
-<area shape="rect" id="node3" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="297,95,435,121"/><area shape="rect" id="node14" href="serial__port_8h.html" title="serial_port.h" alt="" coords="1105,95,1206,121"/><area shape="rect" id="node16" href="rt__priority_8h.html" title="Functions to obtain rt priority or set the nice level. " alt="" coords="657,95,750,121"/><area shape="rect" id="node5" href="link__device_8h.html" title="generic device header " alt="" coords="204,169,387,196"/><area shape="rect" id="node6" href="inttypes_8h.html" title="inttypes.h" alt="" coords="253,244,338,271"/></map>
+<area shape="rect" id="node3" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="299,95,438,121"/><area shape="rect" id="node13" href="serial__port_8h.html" title="serial_port.h" alt="" coords="1107,95,1209,121"/><area shape="rect" id="node15" href="rt__priority_8h.html" title="Functions to obtain rt priority or set the nice level. " alt="" coords="659,95,753,121"/></map>
 </div>
 </div>
 <p><a href="sim_2mcu__periph_2uart__arch_8c_source.html">Go to the source code of this file.</a></p>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('sim_2mcu__periph_2uart__arch_8c.html',
 Macros</h2></td></tr>
 <tr class="memitem:af4447deb79d63086867d3d7286da403d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2mcu__periph_2uart__arch_8c.html#af4447deb79d63086867d3d7286da403d">UART_THREAD_PRIO</a>&#160;&#160;&#160;11</td></tr>
 <tr class="separator:af4447deb79d63086867d3d7286da403d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36997272afece0e4880fbd326b35144c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2mcu__periph_2uart__arch_8c.html#a36997272afece0e4880fbd326b35144c">TRACE</a>(fmt, args...)&#160;&#160;&#160;fprintf(stderr, fmt, args)</td></tr>
+<tr class="memitem:a36997272afece0e4880fbd326b35144c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2mcu__periph_2uart__arch_8c.html#a36997272afece0e4880fbd326b35144c">TRACE</a>(fmt, args...)</td></tr>
 <tr class="separator:a36997272afece0e4880fbd326b35144c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -153,9 +153,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a7e440684a8b6a4088b2f1d5b4dc47587"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2mcu__periph_2uart__arch_8c.html#a7e440684a8b6a4088b2f1d5b4dc47587">uart_arch_init</a> (void)</td></tr>
 <tr class="separator:a7e440684a8b6a4088b2f1d5b4dc47587"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1a8e69ac854e1358f0df7e6d8724512"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2mcu__periph_2uart__arch_8c.html#af1a8e69ac854e1358f0df7e6d8724512">uart_periph_set_baudrate</a> (struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *periph, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> baud)</td></tr>
+<tr class="memdesc:af1a8e69ac854e1358f0df7e6d8724512"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set baudrate.  <a href="#af1a8e69ac854e1358f0df7e6d8724512">More...</a><br /></td></tr>
 <tr class="separator:af1a8e69ac854e1358f0df7e6d8724512"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac52690ed0854ab6c1b5ef3ba0ccc8040"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2mcu__periph_2uart__arch_8c.html#ac52690ed0854ab6c1b5ef3ba0ccc8040">uart_put_byte</a> (struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *periph, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data)</td></tr>
-<tr class="separator:ac52690ed0854ab6c1b5ef3ba0ccc8040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33e2bacaecae6e2adcd64c2cc6bb73a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2mcu__periph_2uart__arch_8c.html#a33e2bacaecae6e2adcd64c2cc6bb73a0">uart_put_byte</a> (struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *periph, long <a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data)</td></tr>
+<tr class="memdesc:a33e2bacaecae6e2adcd64c2cc6bb73a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uart transmit implementation.  <a href="#a33e2bacaecae6e2adcd64c2cc6bb73a0">More...</a><br /></td></tr>
+<tr class="separator:a33e2bacaecae6e2adcd64c2cc6bb73a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb9a60ec94a31a08e6454ccf64f24039"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039">uart_getch</a> (struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
 <tr class="separator:adb9a60ec94a31a08e6454ccf64f24039"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd0dcae4715bc91bdf3369785a9b6c87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2mcu__periph_2uart__arch_8c.html#abd0dcae4715bc91bdf3369785a9b6c87">uart_char_available</a> (struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
@@ -187,12 +189,12 @@ Variables</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;fprintf(stderr, fmt, args)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sim_2mcu__periph_2uart__arch_8c_source.html#l00051">51</a> of file <a class="el" href="sim_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="sim_2mcu__periph_2uart__arch_8c_source.html#l00052">52</a> of file <a class="el" href="sim_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
 
 <p>Referenced by <a class="el" href="sim_2mcu__periph_2uart__arch_8c_source.html#l00216">uart_periph_set_baudrate()</a>, <a class="el" href="sim_2mcu__periph_2uart__arch_8c_source.html#l00243">uart_put_byte()</a>, and <a class="el" href="sim_2mcu__periph_2uart__arch_8c_source.html#l00261">uart_receive_handler()</a>.</p>
 
@@ -265,7 +267,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="sim_2mcu__periph_2uart__arch_8c_source.html#l00296">296</a> of file <a class="el" href="sim_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
 
-<p>References <a class="el" href="uart_8h_source.html#l00064">uart_periph::rx_extract_idx</a>, <a class="el" href="uart_8h_source.html#l00063">uart_periph::rx_insert_idx</a>, and <a class="el" href="linux_2mcu__periph_2uart__arch_8h_source.html#l00031">UART_RX_BUFFER_SIZE</a>.</p>
+<p>References <a class="el" href="uart_8h_source.html#l00074">uart_periph::rx_extract_idx</a>, <a class="el" href="uart_8h_source.html#l00073">uart_periph::rx_insert_idx</a>, and <a class="el" href="linux_2mcu__periph_2uart__arch_8h_source.html#l00031">UART_RX_BUFFER_SIZE</a>.</p>
 
 </div>
 </div>
@@ -285,7 +287,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="sim_2mcu__periph_2uart__arch_8c_source.html#l00287">287</a> of file <a class="el" href="sim_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
 
-<p>References <a class="el" href="uart_8h_source.html#l00062">uart_periph::rx_buf</a>, <a class="el" href="uart_8h_source.html#l00064">uart_periph::rx_extract_idx</a>, and <a class="el" href="linux_2mcu__periph_2uart__arch_8h_source.html#l00031">UART_RX_BUFFER_SIZE</a>.</p>
+<p>References <a class="el" href="uart_8h_source.html#l00072">uart_periph::rx_buf</a>, <a class="el" href="uart_8h_source.html#l00074">uart_periph::rx_extract_idx</a>, and <a class="el" href="linux_2mcu__periph_2uart__arch_8h_source.html#l00031">UART_RX_BUFFER_SIZE</a>.</p>
 
 </div>
 </div>
@@ -313,9 +315,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Set baudrate. </p>
+
 <p>Definition at line <a class="el" href="sim_2mcu__periph_2uart__arch_8c_source.html#l00216">216</a> of file <a class="el" href="sim_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
 
-<p>References <a class="el" href="uart_8h_source.html#l00073">uart_periph::baudrate</a>, <a class="el" href="uart_8h_source.html#l00075">uart_periph::dev</a>, <a class="el" href="uart_8h_source.html#l00071">uart_periph::reg_addr</a>, <a class="el" href="serial__port_8c_source.html#l00126">serial_port_close()</a>, <a class="el" href="serial__port_8c_source.html#l00028">serial_port_free()</a>, <a class="el" href="serial__port_8c_source.html#l00022">serial_port_new()</a>, <a class="el" href="serial__port_8c_source.html#l00056">serial_port_open_raw()</a>, and <a class="el" href="sim_2mcu__periph_2uart__arch_8c_source.html#l00051">TRACE</a>.</p>
+<p>References <a class="el" href="uart_8h_source.html#l00083">uart_periph::baudrate</a>, <a class="el" href="uart_8h_source.html#l00087">uart_periph::dev</a>, <a class="el" href="uart_8h_source.html#l00081">uart_periph::reg_addr</a>, <a class="el" href="serial__port_8c_source.html#l00126">serial_port_close()</a>, <a class="el" href="serial__port_8c_source.html#l00028">serial_port_free()</a>, <a class="el" href="serial__port_8c_source.html#l00022">serial_port_new()</a>, <a class="el" href="serial__port_8c_source.html#l00056">serial_port_open_raw()</a>, and <a class="el" href="sim_2mcu__periph_2uart__arch_8c_source.html#l00052">TRACE</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -330,7 +334,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac52690ed0854ab6c1b5ef3ba0ccc8040"></a>
+<a class="anchor" id="a33e2bacaecae6e2adcd64c2cc6bb73a0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -339,6 +343,12 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *&#160;</td>
           <td class="paramname"><em>periph</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -354,9 +364,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Uart transmit implementation. </p>
+
 <p>Definition at line <a class="el" href="sim_2mcu__periph_2uart__arch_8c_source.html#l00243">243</a> of file <a class="el" href="sim_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
 
-<p>References <a class="el" href="serial__port_8h_source.html#l00029">SerialPort::fd</a>, <a class="el" href="uart_8h_source.html#l00071">uart_periph::reg_addr</a>, and <a class="el" href="sim_2mcu__periph_2uart__arch_8c_source.html#l00051">TRACE</a>.</p>
+<p>References <a class="el" href="serial__port_8h_source.html#l00029">SerialPort::fd</a>, <a class="el" href="uart_8h_source.html#l00081">uart_periph::reg_addr</a>, and <a class="el" href="sim_2mcu__periph_2uart__arch_8c_source.html#l00052">TRACE</a>.</p>
 
 </div>
 </div>
@@ -384,7 +396,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="sim_2mcu__periph_2uart__arch_8c_source.html#l00261">261</a> of file <a class="el" href="sim_2mcu__periph_2uart__arch_8c_source.html">uart_arch.c</a>.</p>
 
-<p>References <a class="el" href="serial_8c_source.html#l00026">fd</a>, <a class="el" href="serial__port_8h_source.html#l00029">SerialPort::fd</a>, <a class="el" href="sim_2mcu__periph_2uart__arch_8c_source.html#l00051">TRACE</a>, and <a class="el" href="linux_2mcu__periph_2uart__arch_8h_source.html#l00031">UART_RX_BUFFER_SIZE</a>.</p>
+<p>References <a class="el" href="serial_8c_source.html#l00026">fd</a>, <a class="el" href="serial__port_8h_source.html#l00029">SerialPort::fd</a>, <a class="el" href="sim_2mcu__periph_2uart__arch_8c_source.html#l00052">TRACE</a>, and <a class="el" href="linux_2mcu__periph_2uart__arch_8h_source.html#l00031">UART_RX_BUFFER_SIZE</a>.</p>
 
 <p>Referenced by <a class="el" href="sim_2mcu__periph_2uart__arch_8c_source.html#l00065">uart_thread()</a>.</p>
 
@@ -482,7 +494,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_c87a6d12365ead88e0b90ddbc1b3c9bb.html">sim</a></li><li class="navelem"><a class="el" href="dir_f11394bd39850f137cd76d3a3707cb70.html">mcu_periph</a></li><li class="navelem"><a class="el" href="sim_2mcu__periph_2uart__arch_8c.html">uart_arch.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:34 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:37 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

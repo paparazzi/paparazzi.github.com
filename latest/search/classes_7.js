@@ -12,9 +12,9 @@ var searchData=
   ['gpssirf',['GpsSirf',['../gps__sirf_8h.html#structGpsSirf',1,'']]],
   ['gpsskytraq',['GpsSkytraq',['../gps__skytraq_8h.html#structGpsSkytraq',1,'']]],
   ['gpsstate',['GpsState',['../gps_8h.html#structGpsState',1,'']]],
-  ['gpsstereocam',['GpsStereoCam',['../stereocam2state_8h.html#structGpsStereoCam',1,'']]],
   ['gpstimesync',['GpsTimeSync',['../gps_8h.html#structGpsTimeSync',1,'']]],
   ['gpsubx',['GpsUbx',['../gps__ubx_8h.html#structGpsUbx',1,'']]],
+  ['gpsubxi2c',['GpsUbxI2C',['../gps__ubx__i2c_8h.html#structGpsUbxI2C',1,'']]],
   ['guidancehref',['GuidanceHRef',['../guidance__h__ref_8h.html#structGuidanceHRef',1,'']]],
   ['gx3packet',['GX3Packet',['../ahrs__gx3_8h.html#structGX3Packet',1,'']]]
 ];

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -113,6 +113,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals_func_v.html#index_v"><span>v</span></a></li>
       <li><a href="globals_func_w.html#index_w"><span>w</span></a></li>
       <li><a href="globals_func_x.html#index_x"><span>x</span></a></li>
+      <li><a href="globals_func_y.html#index_y"><span>y</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -185,6 +186,24 @@ $(document).ready(function(){initNavTree('globals_func_r.html','');});
 : <a class="el" href="radio__control_8c.html#a3673b154cadd0d85e61e2fe36fdda1bd">radio_control.c</a>
 , <a class="el" href="radio__control_8h.html#a3673b154cadd0d85e61e2fe36fdda1bd">radio_control.h</a>
 </li>
+<li>radio_control_script_ff()
+: <a class="el" href="nps__radio__control_8c.html#a68553be414d070053c5cda476e6644e3">nps_radio_control.c</a>
+</li>
+<li>radio_control_script_hover()
+: <a class="el" href="nps__radio__control_8c.html#a174c7c23b37b8661af129872911138aa">nps_radio_control.c</a>
+</li>
+<li>radio_control_script_step_pitch()
+: <a class="el" href="nps__radio__control_8c.html#a19a84b89ea4aa0de727299c9e37e06ec">nps_radio_control.c</a>
+</li>
+<li>radio_control_script_step_roll()
+: <a class="el" href="nps__radio__control_8c.html#a06bd619ff104745ff531cac75dd3d8f9">nps_radio_control.c</a>
+</li>
+<li>radio_control_script_step_yaw()
+: <a class="el" href="nps__radio__control_8c.html#a15d78e9e98c06c84d0e58d0ad1fe22e3">nps_radio_control.c</a>
+</li>
+<li>radio_control_script_takeoff()
+: <a class="el" href="nps__radio__control_8c.html#a1b6bc90ce0d1ff8669c28b91b989df5d">nps_radio_control.c</a>
+</li>
 <li>radio_control_spektrum_try_bind()
 : <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8c.html#ac3242f23ea541664f6fbc29edecbf199">spektrum_arch.c</a>
 , <a class="el" href="spektrum_8h.html#ac3242f23ea541664f6fbc29edecbf199">spektrum.h</a>
@@ -203,26 +222,33 @@ $(document).ready(function(){initNavTree('globals_func_r.html','');});
 , <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h.html#aa14d845c3a5ca2182ee1d7594b22ab44">spektrum_arch.h</a>
 </li>
 <li>rc_attitude_sticks_centered()
-: <a class="el" href="autopilot__rc__helpers_8h.html#ac346fd81983479ea51d3439a7dfca6c6">autopilot_rc_helpers.h</a>
+: <a class="el" href="autopilot__rc__helpers_8h.html#ac2cf19a78374dab9e758348111b20c94">autopilot_rc_helpers.h</a>
 </li>
 <li>rc_datalink_normalize()
 : <a class="el" href="subsystems_2radio__control_2rc__datalink_8c.html#af4b863040e1fdafe349107575bcb35c2">rc_datalink.c</a>
 </li>
 <li>rc_settings()
-: <a class="el" href="rc__settings_8c.html#a1e443c4a63cdf4bc95d2867f78567abe">rc_settings.c</a>
+: <a class="el" href="rc__settings_8c.html#a70dfba35cc80c7b5f4da8c2f4aa18181">rc_settings.c</a>
 </li>
-<li>rcc_isr()
-: <a class="el" href="stm32f4__chibios__vectors_8h.html#a0ed9bbefc1927e7ad60c64beb69ed1bb">stm32f4_chibios_vectors.h</a>
+<li>read_into_buffer()
+: <a class="el" href="nps__fdm__crrcsim_8c.html#a468b9af311c0091cb611d96df40e75b7">nps_fdm_crrcsim.c</a>
 </li>
 <li>read_rc_setpoint_speed_i()
-: <a class="el" href="guidance__h_8c.html#af1bd541621a914d4516c3297c2415349">guidance_h.c</a>
+: <a class="el" href="guidance__h_8c.html#a964e1aa38b15b12daa52eb67aa1e9648">guidance_h.c</a>
+</li>
+<li>read_reg()
+: <a class="el" href="mt9f002_8c.html#a776f344a93cb1df009bcf51511f151ae">mt9f002.c</a>
+, <a class="el" href="mt9v117_8c.html#aa371a374d0c17594e7eed5c751c2df08">mt9v117.c</a>
 </li>
 <li>read_values()
 : <a class="el" href="ADS8344_8c.html#a7ff7b13f1a2040251b13dd82461dfdac">ADS8344.c</a>
 , <a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#a7ff7b13f1a2040251b13dd82461dfdac">imu_crista_arch.c</a>
 </li>
+<li>read_var()
+: <a class="el" href="mt9v117_8c.html#affb04605c4916694762cf7744dd5e744">mt9v117.c</a>
+</li>
 <li>ReadGX3Buffer()
-: <a class="el" href="ahrs__gx3_8h.html#a7d7b981270fa60a248894025e1791de6">ahrs_gx3.h</a>
+: <a class="el" href="ahrs__gx3_8c.html#a7d7b981270fa60a248894025e1791de6">ahrs_gx3.c</a>
 </li>
 <li>readPCAP01_SRAM()
 : <a class="el" href="humid__pcap01_8c.html#ae69f72127caa7ecfc75ae8ca84c52253">humid_pcap01.c</a>
@@ -231,12 +257,20 @@ $(document).ready(function(){initNavTree('globals_func_r.html','');});
 <li>ReadUsbBuffer()
 : <a class="el" href="usb__serial__stm32__example1_8c.html#a37712c8618bb3ae74339fb687cddd9e5">usb_serial_stm32_example1.c</a>
 </li>
+<li>received_spektrum_soft_bind()
+: <a class="el" href="spektrum__soft__bind__fbw_8c.html#a019a8098631a35cbcdae0c277dbaba6f">spektrum_soft_bind_fbw.c</a>
+, <a class="el" href="spektrum__soft__bind__fbw_8h.html#a019a8098631a35cbcdae0c277dbaba6f">spektrum_soft_bind_fbw.h</a>
+</li>
 <li>register_leds_cb()
 : <a class="el" href="sim_2led__hw_8c.html#aa85b1c7cdad6a8b6035a17361f395886">led_hw.c</a>
 </li>
 <li>register_periodic_telemetry()
 : <a class="el" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0">telemetry.c</a>
-, <a class="el" href="telemetry__common_8h.html#a9b3d79cf4bb115055da55757f87e0846">telemetry_common.h</a>
+, <a class="el" href="telemetry__common_8h.html#a8b8cf43739f06c54d16370c141b541a0">telemetry_common.h</a>
+</li>
+<li>removeEmptyLogs()
+: <a class="el" href="sdLog_8h.html#a0feebb43817c3a4d97e34f991012932c">sdLog.h</a>
+, <a class="el" href="sdLog_8c.html#a0feebb43817c3a4d97e34f991012932c">sdLog.c</a>
 </li>
 <li>renorm_factor()
 : <a class="el" href="pprz__algebra__float_8c.html#a25ae277549c4186c3a29e6414b42f2e3">pprz_algebra_float.c</a>
@@ -251,12 +285,16 @@ $(document).ready(function(){initNavTree('globals_func_r.html','');});
 <li>reset()
 : <a class="el" href="lpc21_2mcu__arch_8c.html#a3aea9deb2a0bfea9ff05a898f4822e31">mcu_arch.c</a>
 </li>
+<li>reset_all_vars()
+: <a class="el" href="optical__flow__landing_8c.html#ab13dd8b6fd890c9ff29880b8ef767282">optical_flow_landing.c</a>
+, <a class="el" href="optical__flow__landing_8h.html#aece761223f0736157bdfeb9aa98124b7">optical_flow_landing.h</a>
+</li>
 <li>reset_guidance_reference_from_current_position()
 : <a class="el" href="guidance__h_8c.html#ad9bd6447dd5cea00192adfbbf5a30cd5">guidance_h.c</a>
 </li>
 <li>reset_psi_ref()
-: <a class="el" href="stabilization__attitude__ref__quat__float_8c.html#ab694ffc68ccd095d3641670ad7d272a7">stabilization_attitude_ref_quat_float.c</a>
-, <a class="el" href="stabilization__attitude__ref__euler__float_8c.html#a6a5d0ab462481567bc0272c3b2604df9">stabilization_attitude_ref_euler_float.c</a>
+: <a class="el" href="stabilization__attitude__ref__euler__float_8c.html#a6a5d0ab462481567bc0272c3b2604df9">stabilization_attitude_ref_euler_float.c</a>
+, <a class="el" href="stabilization__attitude__ref__quat__float_8c.html#ab694ffc68ccd095d3641670ad7d272a7">stabilization_attitude_ref_quat_float.c</a>
 , <a class="el" href="stabilization__attitude__ref__quat__int_8c.html#a8b76f387f4398db36d6273fd9d18f2c7">stabilization_attitude_ref_quat_int.c</a>
 </li>
 <li>reset_psi_ref_from_body()
@@ -265,9 +303,6 @@ $(document).ready(function(){initNavTree('globals_func_r.html','');});
 <li>reset_state()
 : <a class="el" href="ahrs__float__mlkf_8c.html#a9fbef29f6a0a976770a3055c37a35d95">ahrs_float_mlkf.c</a>
 </li>
-<li>ResetHandler()
-: <a class="el" href="stm32f4__chibios__vectors_8c.html#a578fd01e27e84c733a4effc9bfaf7f1b">stm32f4_chibios_vectors.c</a>
-</li>
 <li>restoreFIQ()
 : <a class="el" href="armVIC_8c.html#aeb2b763cdec502e621568f61f4fefb07">armVIC.c</a>
 , <a class="el" href="armVIC_8h.html#aeb2b763cdec502e621568f61f4fefb07">armVIC.h</a>
@@ -275,6 +310,9 @@ $(document).ready(function(){initNavTree('globals_func_r.html','');});
 <li>restoreIRQ()
 : <a class="el" href="armVIC_8c.html#ae65947fbc714eff716bc3dd03d909ec8">armVIC.c</a>
 , <a class="el" href="armVIC_8h.html#ae65947fbc714eff716bc3dd03d909ec8">armVIC.h</a>
+</li>
+<li>rng()
+: <a class="el" href="opencv__contour_8cpp.html#a2bb3a617236eb1bd8ace5e140f519081">opencv_contour.cpp</a>
 </li>
 <li>RotateAndTranslateToWorld()
 : <a class="el" href="nav__survey__poly__osam_8c.html#a48c160b16e812b494516ffb30413d169">nav_survey_poly_osam.c</a>
@@ -292,37 +330,61 @@ $(document).ready(function(){initNavTree('globals_func_r.html','');});
 : <a class="el" href="rotorcraft__cam_8h.html#a960941b65b673b137a8bd448633f8782">rotorcraft_cam.h</a>
 , <a class="el" href="rotorcraft__cam_8c.html#a960941b65b673b137a8bd448633f8782">rotorcraft_cam.c</a>
 </li>
-<li>rtc_alarm_isr()
-: <a class="el" href="stm32f4__chibios__vectors_8h.html#a345ee9b10cdba149054826979c97bee5">stm32f4_chibios_vectors.h</a>
+<li>rpm_sensor_get_rpm()
+: <a class="el" href="rpm__sensor_8h.html#a9a1ae07808a3f9b217e667660e4fd41a">rpm_sensor.h</a>
+, <a class="el" href="rpm__sensor_8c.html#a9a1ae07808a3f9b217e667660e4fd41a">rpm_sensor.c</a>
 </li>
-<li>rtc_wkup_isr()
-: <a class="el" href="stm32f4__chibios__vectors_8h.html#a444e10494c9ad71894c808b7725442ba">stm32f4_chibios_vectors.h</a>
+<li>rpm_sensor_init()
+: <a class="el" href="rpm__sensor_8c.html#aedef6155fceb893c028bdb57041b2177">rpm_sensor.c</a>
+, <a class="el" href="rpm__sensor_8h.html#aedef6155fceb893c028bdb57041b2177">rpm_sensor.h</a>
+</li>
+<li>rpm_sensor_periodic()
+: <a class="el" href="rpm__sensor_8h.html#a5550963597a0a9158031c44bbf5ecaf2">rpm_sensor.h</a>
+, <a class="el" href="rpm__sensor_8c.html#a5550963597a0a9158031c44bbf5ecaf2">rpm_sensor.c</a>
+</li>
+<li>rpm_sensor_send_motor()
+: <a class="el" href="rpm__sensor_8c.html#a4e54bc48209e92a5e6743f0fec50fb1c">rpm_sensor.c</a>
+</li>
+<li>rssi_cb()
+: <a class="el" href="rssi_8c.html#a159b4a2fba436e4c1b520646ebc5527d">rssi.c</a>
+</li>
+<li>rssi_init()
+: <a class="el" href="rssi_8h.html#a004b14a419fab767d20132bdfc3fbc02">rssi.h</a>
+, <a class="el" href="rssi_8c.html#a731e8f68b40e8f4ad2708ede2e0fa40f">rssi.c</a>
+</li>
+<li>rtos_mon_init_arch()
+: <a class="el" href="sim_2modules_2core_2rtos__mon__arch_8c.html#a1b64b82ab870e30ee1f72178d3f16f74">rtos_mon_arch.c</a>
+, <a class="el" href="sys__mon__rtos_8h.html#a1b64b82ab870e30ee1f72178d3f16f74">sys_mon_rtos.h</a>
+</li>
+<li>rtos_mon_periodic_arch()
+: <a class="el" href="sys__mon__rtos_8h.html#a145651dfc10decbb4b6cda9b5876854b">sys_mon_rtos.h</a>
+, <a class="el" href="sim_2modules_2core_2rtos__mon__arch_8c.html#a145651dfc10decbb4b6cda9b5876854b">rtos_mon_arch.c</a>
 </li>
 <li>rtp_frame_send()
-: <a class="el" href="rtp_8h.html#ab810dc7d46e209624e4edd330edb7bf7">rtp.h</a>
-, <a class="el" href="rtp_8c.html#ab810dc7d46e209624e4edd330edb7bf7">rtp.c</a>
+: <a class="el" href="rtp_8c.html#ab810dc7d46e209624e4edd330edb7bf7">rtp.c</a>
+, <a class="el" href="rtp_8h.html#ab810dc7d46e209624e4edd330edb7bf7">rtp.h</a>
 </li>
 <li>rtp_frame_test()
-: <a class="el" href="rtp_8c.html#a6c9aa998b02c9ff5099bb3fc6bbc2b5e">rtp.c</a>
-, <a class="el" href="rtp_8h.html#a6c9aa998b02c9ff5099bb3fc6bbc2b5e">rtp.h</a>
+: <a class="el" href="rtp_8h.html#a6c9aa998b02c9ff5099bb3fc6bbc2b5e">rtp.h</a>
+, <a class="el" href="rtp_8c.html#a6c9aa998b02c9ff5099bb3fc6bbc2b5e">rtp.c</a>
 </li>
 <li>rtp_packet_send()
 : <a class="el" href="rtp_8c.html#a7b661ee336df15cbee60fda1d7263247">rtp.c</a>
 </li>
 <li>run_avoid_navigation_onvision()
-: <a class="el" href="avoid__navigation_8h.html#afbb250f65364e84c51f0df86da67eb05">avoid_navigation.h</a>
-, <a class="el" href="avoid__navigation_8c.html#afbb250f65364e84c51f0df86da67eb05">avoid_navigation.c</a>
+: <a class="el" href="avoid__navigation_8c.html#afbb250f65364e84c51f0df86da67eb05">avoid_navigation.c</a>
+, <a class="el" href="avoid__navigation_8h.html#afbb250f65364e84c51f0df86da67eb05">avoid_navigation.h</a>
 </li>
 <li>run_hover_loop()
-: <a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#aef574ad479e888ed806893456e9a0359">guidance_v.c</a>
+: <a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#abc86e1f1f36c313a62491e4f246b7313">guidance_v.c</a>
 </li>
 <li>run_logger()
-: <a class="el" href="high__speed__logger__direct__memory_8h.html#aee2922318f7c228fa538200e527971db">high_speed_logger_direct_memory.h</a>
-, <a class="el" href="high__speed__logger__direct__memory_8c.html#aee2922318f7c228fa538200e527971db">high_speed_logger_direct_memory.c</a>
+: <a class="el" href="high__speed__logger__direct__memory_8c.html#aee2922318f7c228fa538200e527971db">high_speed_logger_direct_memory.c</a>
+, <a class="el" href="high__speed__logger__direct__memory_8h.html#aee2922318f7c228fa538200e527971db">high_speed_logger_direct_memory.h</a>
 </li>
 <li>run_memory_management()
-: <a class="el" href="high__speed__logger__direct__memory_8c.html#a08b60bc2790ff19cbabae3f390132ad7">high_speed_logger_direct_memory.c</a>
-, <a class="el" href="high__speed__logger__direct__memory_8h.html#a08b60bc2790ff19cbabae3f390132ad7">high_speed_logger_direct_memory.h</a>
+: <a class="el" href="high__speed__logger__direct__memory_8h.html#a08b60bc2790ff19cbabae3f390132ad7">high_speed_logger_direct_memory.h</a>
+, <a class="el" href="high__speed__logger__direct__memory_8c.html#a08b60bc2790ff19cbabae3f390132ad7">high_speed_logger_direct_memory.c</a>
 </li>
 <li>runge_kutta_1_float()
 : <a class="el" href="pprz__rk__float_8h.html#adf59a02242f08eba730c793cd28fd826">pprz_rk_float.h</a>
@@ -339,7 +401,7 @@ $(document).ready(function(){initNavTree('globals_func_r.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:30 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:45 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

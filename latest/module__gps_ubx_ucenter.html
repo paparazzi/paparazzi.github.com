@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: Ublox GPS autoconfiguration</title>
+<title>Paparazzi UAS: gps_ubx_ucenter module</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -100,10 +100,11 @@ $(document).ready(function(){initNavTree('module__gps_ubx_ucenter.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Ublox GPS autoconfiguration </div>  </div>
+<div class="title">gps_ubx_ucenter module </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Module XML file: <code>gps_ubx_ucenter.xml</code> </p>
+<div class="textblock"><p><b>Ublox GPS autoconfiguration.</b></p>
+<p><b></b></p>
 <p>Automatically configure any Ublox GPS for paparazzi.</p>
 <ul>
 <li>configures all the messages, and the rates</li>
@@ -112,13 +113,12 @@ $(document).ready(function(){initNavTree('module__gps_ubx_ucenter.html','');});
 <p>Warning: you still need to tell the driver, which paparazzi port you use.</p>
 <h1><a class="anchor" id="module_load_example__gps_ubx_ucenter"></a>
 Example for airframe file</h1>
-<p>This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;modules&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;load name=&quot;gps_ubx_ucenter.xml&quot;&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    &lt;define name=&quot;GPS_UBX_UCENTER_RATE&quot; value=&quot;250&quot; /&gt;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    &lt;define name=&quot;GPS_UBX_NAV5_DYNAMICS&quot; value=&quot;NAV5_DYN_PORTABLE|NAV5_DYN_FIXED|NAV5_DYN_STATIONARY|NAV5_DYN_PEDESTRIAN|NAV5_DYN_AUTOMOTIVE|NAV5_DYN_SEA|NAV5_DYN_AIRBORNE_1G|NAV5_DYN_AIRBORNE_2G|NAV5_DYN_AIRBORNE_4G&quot; /&gt;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    &lt;define name=&quot;USE_GPS_UBX_RXM_RAW&quot; /&gt;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  &lt;/load&gt;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;&lt;/modules&gt;</div>
+<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;gps_ublox&quot;/&gt;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&lt;module name=&quot;gps_ubx_ucenter&quot;&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;GPS_UBX_UCENTER_RATE&quot; value=&quot;250&quot; /&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;define name=&quot;GPS_UBX_NAV5_DYNAMICS&quot; value=&quot;NAV5_DYN_PORTABLE|NAV5_DYN_FIXED|NAV5_DYN_STATIONARY|NAV5_DYN_PEDESTRIAN|NAV5_DYN_AUTOMOTIVE|NAV5_DYN_SEA|NAV5_DYN_AIRBORNE_1G|NAV5_DYN_AIRBORNE_2G|NAV5_DYN_AIRBORNE_4G&quot; /&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;define name=&quot;USE_GPS_UBX_RXM_RAW&quot; /&gt;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__gps_ubx_ucenter"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
@@ -130,6 +130,11 @@ Define Options</h2>
  Description: Dynamic model used by ublox GPS filter. Default:NAV5_DYN_AIRBORNE_2G</li>
 <li><b>name:</b> <code>USE_GPS_UBX_RXM_RAW</code> <b>value:</b> <em>None</em> <br />
  Description: Activate raw measurments (only available on U-Blox T versions)</li>
+</ul>
+<h1><a class="anchor" id="dependencies__gps_ubx_ucenter"></a>
+Dependencies</h1>
+<ul>
+<li><a class="el" href="module__gps_ublox.html">gps_ublox module</a> </li>
 </ul>
 <h1><a class="anchor" id="functions__gps_ubx_ucenter"></a>
 Module functions</h1>
@@ -187,6 +192,7 @@ Raw gps_ubx_ucenter.xml file:</h2>
 <div class="line">            description=&quot;Dynamic model used by ublox GPS filter. Default:NAV5_DYN_AIRBORNE_2G&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;USE_GPS_UBX_RXM_RAW&quot; description=&quot;Activate raw measurments (only available on U-Blox T versions)&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
+<div class="line"></div>
 <div class="line">  &lt;settings&gt;</div>
 <div class="line">    &lt;dl_settings NAME=&quot;ublox&quot;&gt;</div>
 <div class="line">      &lt;dl_settings name=&quot;ucenter&quot;&gt;</div>
@@ -199,6 +205,9 @@ Raw gps_ubx_ucenter.xml file:</h2>
 <div class="line">      &lt;/dl_settings&gt;</div>
 <div class="line">    &lt;/dl_settings&gt;</div>
 <div class="line">  &lt;/settings&gt;</div>
+<div class="line"></div>
+<div class="line">  &lt;depends&gt;gps_ublox&lt;/depends&gt;</div>
+<div class="line"></div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;gps_ubx_ucenter.h&quot;/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
@@ -217,7 +226,7 @@ Raw gps_ubx_ucenter.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:08 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:18 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

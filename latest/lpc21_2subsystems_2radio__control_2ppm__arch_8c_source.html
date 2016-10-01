@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('lpc21_2subsystems_2radio__control_2ppm
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ppm_8h.html">subsystems/radio_control/ppm.h</a>&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="ppm_8h.html#aa933c6924c3511448e65fc31e2d26129">   32</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="lpc21_2subsystems_2radio__control_2ppm__arch_8c.html#aa933c6924c3511448e65fc31e2d26129">ppm_arch_init</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="lpc21_2subsystems_2radio__control_2ppm__arch_8c.html#aa933c6924c3511448e65fc31e2d26129">   32</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="chibios_2subsystems_2radio__control_2ppm__arch_8c.html#aa933c6924c3511448e65fc31e2d26129">ppm_arch_init</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="comment">/* select pin for capture */</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="booz__1_80_8h.html#a844bb4c4a9e76e202997a1d18fb267c4">PPM_PINSEL</a> |= <a class="code" href="booz__1_80_8h.html#aeadbfa32342d0cb241c1b0be7adf0c04">PPM_PINSEL_VAL</a> &lt;&lt; <a class="code" href="booz__1_80_8h.html#a176de44a1fdb86a1facdb160871cef5d">PPM_PINSEL_BIT</a>;</div>
@@ -154,11 +154,11 @@ $(document).ready(function(){initNavTree('lpc21_2subsystems_2radio__control_2ppm
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
 <div class="ttc" id="LPC21xx_8h_html_a5a2498c5217384197c415a4f860d7b7d"><div class="ttname"><a href="LPC21xx_8h.html#a5a2498c5217384197c415a4f860d7b7d">T0CCR</a></div><div class="ttdeci">#define T0CCR</div><div class="ttdef"><b>Definition:</b> <a href="LPC21xx_8h_source.html#l00060">LPC21xx.h:60</a></div></div>
 <div class="ttc" id="booz__1_80_8h_html_aeadbfa32342d0cb241c1b0be7adf0c04"><div class="ttname"><a href="booz__1_80_8h.html#aeadbfa32342d0cb241c1b0be7adf0c04">PPM_PINSEL_VAL</a></div><div class="ttdeci">#define PPM_PINSEL_VAL</div><div class="ttdef"><b>Definition:</b> <a href="booz__1_80_8h_source.html#l00051">booz_1.0.h:51</a></div></div>
-<div class="ttc" id="lpc21_2subsystems_2radio__control_2ppm__arch_8c_html_aa933c6924c3511448e65fc31e2d26129"><div class="ttname"><a href="lpc21_2subsystems_2radio__control_2ppm__arch_8c.html#aa933c6924c3511448e65fc31e2d26129">ppm_arch_init</a></div><div class="ttdeci">void ppm_arch_init(void)</div><div class="ttdoc">Architecture dependant code. </div><div class="ttdef"><b>Definition:</b> <a href="lpc21_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00032">ppm_arch.c:32</a></div></div>
 <div class="ttc" id="booz__1_80_8h_html_a844bb4c4a9e76e202997a1d18fb267c4"><div class="ttname"><a href="booz__1_80_8h.html#a844bb4c4a9e76e202997a1d18fb267c4">PPM_PINSEL</a></div><div class="ttdeci">#define PPM_PINSEL</div><div class="ttdef"><b>Definition:</b> <a href="booz__1_80_8h_source.html#l00050">booz_1.0.h:50</a></div></div>
 <div class="ttc" id="radio__control_8h_html"><div class="ttname"><a href="radio__control_8h.html">radio_control.h</a></div></div>
 <div class="ttc" id="booz__1_80_8h_html_a527cf6cfbed24e043ed4ee710baed3f1"><div class="ttname"><a href="booz__1_80_8h.html#a527cf6cfbed24e043ed4ee710baed3f1">PPM_CCR_CRI</a></div><div class="ttdeci">#define PPM_CCR_CRI</div><div class="ttdef"><b>Definition:</b> <a href="booz__1_80_8h_source.html#l00056">booz_1.0.h:56</a></div></div>
 <div class="ttc" id="booz__1_80_8h_html_a176de44a1fdb86a1facdb160871cef5d"><div class="ttname"><a href="booz__1_80_8h.html#a176de44a1fdb86a1facdb160871cef5d">PPM_PINSEL_BIT</a></div><div class="ttdeci">#define PPM_PINSEL_BIT</div><div class="ttdef"><b>Definition:</b> <a href="booz__1_80_8h_source.html#l00052">booz_1.0.h:52</a></div></div>
+<div class="ttc" id="chibios_2subsystems_2radio__control_2ppm__arch_8c_html_aa933c6924c3511448e65fc31e2d26129"><div class="ttname"><a href="chibios_2subsystems_2radio__control_2ppm__arch_8c.html#aa933c6924c3511448e65fc31e2d26129">ppm_arch_init</a></div><div class="ttdeci">void ppm_arch_init(void)</div><div class="ttdoc">Architecture dependant code. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00089">ppm_arch.c:89</a></div></div>
 <div class="ttc" id="booz__1_80_8h_html_a9554c21ac4db9f0b888079de6c70521a"><div class="ttname"><a href="booz__1_80_8h.html#a9554c21ac4db9f0b888079de6c70521a">PPM_CCR_CRR</a></div><div class="ttdeci">#define PPM_CCR_CRR</div><div class="ttdef"><b>Definition:</b> <a href="booz__1_80_8h_source.html#l00055">booz_1.0.h:55</a></div></div>
 <div class="ttc" id="ppm_8h_html"><div class="ttname"><a href="ppm_8h.html">ppm.h</a></div></div>
 <div class="ttc" id="booz__1_80_8h_html_ad25058c1245a5a986632aae0f3f91ebc"><div class="ttname"><a href="booz__1_80_8h.html#ad25058c1245a5a986632aae0f3f91ebc">PPM_CCR_CRF</a></div><div class="ttdeci">#define PPM_CCR_CRF</div><div class="ttdef"><b>Definition:</b> <a href="booz__1_80_8h_source.html#l00054">booz_1.0.h:54</a></div></div>
@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('lpc21_2subsystems_2radio__control_2ppm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_3f7617cb4a5e4fe5cc816b7b3bbdea3a.html">lpc21</a></li><li class="navelem"><a class="el" href="dir_49e3baf8e4d0208391e8a23720cf4bc3.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_f690f2529ef2764b7e6effd3da88a775.html">radio_control</a></li><li class="navelem"><a class="el" href="lpc21_2subsystems_2radio__control_2ppm__arch_8c.html">ppm_arch.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:15 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:13 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

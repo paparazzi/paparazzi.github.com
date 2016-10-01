@@ -8,7 +8,7 @@ var baro__bmp_8c =
     [ "baro_bmp_periodic", "baro__bmp_8c.html#a2c8ab237cbb8ec936485236b89562181", null ],
     [ "baro_bmp", "baro__bmp_8c.html#a09ccc68d1ef4027c7cb6c348ffb99cad", null ],
     [ "baro_bmp_alt", "baro__bmp_8c.html#ac176f0c0c16d9146d8739e488a58d795", null ],
-    [ "baro_bmp_enabled", "baro__bmp_8c.html#a0e9983a0ccda14f96a31ab76d7ebb700", null ],
+    [ "baro_bmp_enabled", "baro__bmp_8c.html#a075628427eb8ce860c727b298b01173c", null ],
     [ "baro_bmp_r", "baro__bmp_8c.html#a715ab4e2838f0af7be8d7d55b82a1ac9", null ],
     [ "baro_bmp_sigma2", "baro__bmp_8c.html#acb0831c824befa3750689297f62d4024", null ]
 ];

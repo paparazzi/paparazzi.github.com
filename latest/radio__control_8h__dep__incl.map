@@ -1,38 +1,45 @@
 <map id="sw/airborne/subsystems/radio_control.h" name="sw/airborne/subsystems/radio_control.h">
-<area shape="rect" id="node2" href="$lpc21_2subsystems_2radio__control_2ppm__arch_8c.html" title="LPC21xx specific implementation for PPM radio control. " alt="" coords="5,95,196,151"/>
-<area shape="rect" id="node3" href="$lpc21_2subsystems_2radio__control_2spektrum__arch_8c.html" title="sw/airborne/arch/lpc21\l/subsystems/radio_control\l/spektrum_arch.c" alt="" coords="220,95,411,151"/>
-<area shape="rect" id="node4" href="$sim_2subsystems_2radio__control_2ppm__arch_8c.html" title="PPM radio control, simulator specific. " alt="" coords="435,95,625,151"/>
-<area shape="rect" id="node5" href="$arch_2sim_2subsystems_2radio__control_2rc__datalink_8c.html" title="sw/airborne/arch/sim\l/subsystems/radio_control\l/rc_datalink.c" alt="" coords="649,95,840,151"/>
-<area shape="rect" id="node6" href="$sim_2subsystems_2radio__control_2spektrum__arch_8c.html" title="Simulator implementation for spektrum radio control. " alt="" coords="864,95,1055,151"/>
-<area shape="rect" id="node7" href="$stm32_2subsystems_2radio__control_2ppm__arch_8c.html" title="STM32 ppm decoder. " alt="" coords="1079,95,1269,151"/>
-<area shape="rect" id="node8" href="$stm32_2subsystems_2radio__control_2spektrum__arch_8c.html" title="sw/airborne/arch/stm32\l/subsystems/radio_control\l/spektrum_arch.c" alt="" coords="1293,95,1484,151"/>
-<area shape="rect" id="node9" href="$fixedwing_2main__fbw_8c.html" title="FBW ( FlyByWire ) process. " alt="" coords="1508,102,1669,143"/>
-<area shape="rect" id="node10" href="$rotorcraft_2autopilot_8c.html" title="Autopilot. " alt="" coords="1273,317,1435,359"/>
-<area shape="rect" id="node11" href="$autopilot__rc__helpers_8h.html" title="Some helper functions to check RC sticks. " alt="" coords="1796,95,1957,151"/>
-<area shape="rect" id="node15" href="$guidance__indi_8c.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion Come to ICRA2016 to learn more! ..." alt="" coords="1240,206,1401,262"/>
-<area shape="rect" id="node16" href="$rotorcraft_2main__fbw_8c.html" title="Rotorcraft FBW main loop. " alt="" coords="1981,213,2143,255"/>
-<area shape="rect" id="node17" href="$stabilization__attitude__rc__setpoint_8c.html" title="Read an attitude setpoint from the RC. " alt="" coords="2167,199,2333,269"/>
-<area shape="rect" id="node18" href="$stabilization__rate_8c.html" title="Rate stabilization for rotorcrafts. " alt="" coords="2357,206,2524,262"/>
-<area shape="rect" id="node19" href="$led__safety__status_8c.html" title="Simple module to blink LEDs when battery voltage drops below a certain level, radio control is lost o..." alt="" coords="2548,213,2728,255"/>
-<area shape="rect" id="node20" href="$guidance__h_8c.html" title="Horizontal guidance for rotorcrafts. " alt="" coords="2185,95,2347,151"/>
-<area shape="rect" id="node21" href="$rotorcraft_2guidance_2guidance__v_8c.html" title="Vertical guidance for rotorcrafts. " alt="" coords="2371,95,2532,151"/>
-<area shape="rect" id="node22" href="$rotorcraft_2main_8c.html" title="Rotorcraft main loop. " alt="" coords="2556,102,2717,143"/>
-<area shape="rect" id="node23" href="$stabilization__none_8c.html" title="Dummy stabilization for rotorcrafts. " alt="" coords="2741,95,2908,151"/>
-<area shape="rect" id="node24" href="$ctrl__module__demo_8c.html" title="example empty controller " alt="" coords="2932,102,3112,143"/>
-<area shape="rect" id="node25" href="$mavlink_8c.html" title="Basic MAVLink datalink implementation. " alt="" coords="3137,102,3291,143"/>
-<area shape="rect" id="node26" href="$sdlogger__spi__direct_8c.html" title="sw/airborne/modules\l/loggers/sdlogger_spi\l_direct.c" alt="" coords="3315,95,3473,151"/>
-<area shape="rect" id="node27" href="$cyrf6936_8c.html" title="Driver for the cyrf6936 2.4GHz radio chip. " alt="" coords="3497,102,3667,143"/>
-<area shape="rect" id="node28" href="$intermcu__ap_8c.html" title="Rotorcraft Inter&#45;MCU on the autopilot. " alt="" coords="3691,102,3870,143"/>
-<area shape="rect" id="node29" href="$intermcu__fbw_8c.html" title="Rotorcraft Inter&#45;MCU on FlyByWire. " alt="" coords="3895,102,4077,143"/>
-<area shape="rect" id="node30" href="$dummy_8c.html" title="sw/airborne/subsystems\l/radio_control/dummy.c" alt="" coords="4102,102,4278,143"/>
-<area shape="rect" id="node31" href="$ppm_8c.html" title="Architecture independent functions for PPM radio control. " alt="" coords="4302,102,4478,143"/>
-<area shape="rect" id="node32" href="$subsystems_2radio__control_2rc__datalink_8c.html" title="sw/airborne/subsystems\l/radio_control/rc_datalink.c" alt="" coords="4503,102,4696,143"/>
-<area shape="rect" id="node33" href="$sbus_8c.html" title="Single SBUS radio_control. " alt="" coords="4721,102,4897,143"/>
-<area shape="rect" id="node34" href="$sbus__common_8c.html" title="Futaba SBUS decoder. " alt="" coords="4921,102,5139,143"/>
-<area shape="rect" id="node35" href="$sbus__dual_8c.html" title="Dual SBUS radio_control. " alt="" coords="5164,102,5352,143"/>
-<area shape="rect" id="node36" href="$superbitrf__rc_8c.html" title="DSM2 and DSMX radio control implementation for the cyrf6936 2.4GHz radio chip trough SPI..." alt="" coords="5376,102,5580,143"/>
-<area shape="rect" id="node37" href="$radio__control_8c.html" title="Implementation independant radio control handing. " alt="" coords="5605,102,5781,143"/>
-<area shape="rect" id="node12" href="$autopilot__arming__yaw_8h.html" title="Arm the motors by with max yaw stick. " alt="" coords="1425,206,1587,262"/>
-<area shape="rect" id="node13" href="$autopilot__arming__switch_8h.html" title="Arm the motors using a switch. " alt="" coords="1611,206,1772,262"/>
-<area shape="rect" id="node14" href="$autopilot__arming__throttle_8h.html" title="Automatically arm the motors when applying throttle. " alt="" coords="1796,206,1957,262"/>
+<area shape="rect" id="node2" href="$chibios_2subsystems_2radio__control_2ppm__arch_8c.html" title="PPM interface between ChibiOS and Paparazzi. " alt="" coords="5,95,196,151"/>
+<area shape="rect" id="node3" href="$lpc21_2subsystems_2radio__control_2ppm__arch_8c.html" title="LPC21xx specific implementation for PPM radio control. " alt="" coords="220,95,411,151"/>
+<area shape="rect" id="node4" href="$lpc21_2subsystems_2radio__control_2spektrum__arch_8c.html" title="sw/airborne/arch/lpc21\l/subsystems/radio_control\l/spektrum_arch.c" alt="" coords="435,95,625,151"/>
+<area shape="rect" id="node5" href="$sim_2subsystems_2radio__control_2ppm__arch_8c.html" title="PPM radio control, simulator specific. " alt="" coords="649,95,840,151"/>
+<area shape="rect" id="node6" href="$arch_2sim_2subsystems_2radio__control_2rc__datalink_8c.html" title="sw/airborne/arch/sim\l/subsystems/radio_control\l/rc_datalink.c" alt="" coords="864,95,1055,151"/>
+<area shape="rect" id="node7" href="$sim_2subsystems_2radio__control_2spektrum__arch_8c.html" title="Simulator implementation for spektrum radio control. " alt="" coords="1079,95,1269,151"/>
+<area shape="rect" id="node8" href="$stm32_2subsystems_2radio__control_2ppm__arch_8c.html" title="STM32 ppm decoder. " alt="" coords="1293,95,1484,151"/>
+<area shape="rect" id="node9" href="$stm32_2subsystems_2radio__control_2spektrum__arch_8c.html" title="sw/airborne/arch/stm32\l/subsystems/radio_control\l/spektrum_arch.c" alt="" coords="1508,95,1699,151"/>
+<area shape="rect" id="node10" href="$fixedwing_2main__fbw_8c.html" title="FBW ( FlyByWire ) process. " alt="" coords="1723,102,1884,143"/>
+<area shape="rect" id="node11" href="$rotorcraft_2autopilot_8c.html" title="Autopilot. " alt="" coords="1488,317,1649,359"/>
+<area shape="rect" id="node12" href="$autopilot__rc__helpers_8h.html" title="Some helper functions to check RC sticks. " alt="" coords="2011,95,2172,151"/>
+<area shape="rect" id="node16" href="$guidance__indi_8c.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion Come to IROS2016 to learn more! ..." alt="" coords="1455,206,1616,262"/>
+<area shape="rect" id="node17" href="$rotorcraft_2main__fbw_8c.html" title="Rotorcraft FBW main loop. " alt="" coords="2196,213,2357,255"/>
+<area shape="rect" id="node18" href="$stabilization__attitude__rc__setpoint_8c.html" title="Read an attitude setpoint from the RC. " alt="" coords="2381,199,2548,269"/>
+<area shape="rect" id="node19" href="$stabilization__rate_8c.html" title="Rate stabilization for rotorcrafts. " alt="" coords="2572,206,2739,262"/>
+<area shape="rect" id="node20" href="$led__safety__status_8c.html" title="Simple module to blink LEDs when battery voltage drops below a certain level, radio control is lost o..." alt="" coords="2763,213,2943,255"/>
+<area shape="rect" id="node21" href="$guidance__h_8c.html" title="Horizontal guidance for rotorcrafts. " alt="" coords="2400,95,2561,151"/>
+<area shape="rect" id="node22" href="$guidance__hybrid_8c.html" title="Guidance controllers (horizontal and vertical) for Hybrid UAV configurations. " alt="" coords="2585,95,2747,151"/>
+<area shape="rect" id="node23" href="$rotorcraft_2guidance_2guidance__v_8c.html" title="Vertical guidance for rotorcrafts. " alt="" coords="2771,95,2932,151"/>
+<area shape="rect" id="node24" href="$rotorcraft_2main_8c.html" title="Rotorcraft main loop. " alt="" coords="2956,102,3117,143"/>
+<area shape="rect" id="node25" href="$stabilization__indi_8c.html" title="sw/airborne/firmwares\l/rotorcraft/stabilization\l/stabilization_indi.c" alt="" coords="3141,95,3308,151"/>
+<area shape="rect" id="node26" href="$stabilization__none_8c.html" title="Dummy stabilization for rotorcrafts. " alt="" coords="3332,95,3499,151"/>
+<area shape="rect" id="node27" href="$ctrl__module__demo_8c.html" title="example empty controller " alt="" coords="3523,102,3703,143"/>
+<area shape="rect" id="node28" href="$gain__scheduling_8c.html" title="Module that interpolates gainsets in flight based on a scheduling variable. " alt="" coords="3727,102,3890,143"/>
+<area shape="rect" id="node29" href="$mavlink_8c.html" title="Basic MAVLink datalink implementation. " alt="" coords="3914,102,4069,143"/>
+<area shape="rect" id="node30" href="$px4__gimbal_8c.html" title="sw/airborne/modules\l/px4_gimbal/px4_gimbal.c" alt="" coords="4093,102,4279,143"/>
+<area shape="rect" id="node31" href="$spektrum__soft__bind__fbw_8c.html" title="sw/airborne/modules\l/spektrum_soft_bind\l/spektrum_soft_bind_fbw.c" alt="" coords="4304,95,4495,151"/>
+<area shape="rect" id="node32" href="$cyrf6936_8c.html" title="Driver for the cyrf6936 2.4GHz radio chip. " alt="" coords="4519,102,4690,143"/>
+<area shape="rect" id="node33" href="$intermcu__ap_8c.html" title="Rotorcraft Inter&#45;MCU on the autopilot. " alt="" coords="4714,102,4893,143"/>
+<area shape="rect" id="node34" href="$intermcu__fbw_8c.html" title="Rotorcraft Inter&#45;MCU on FlyByWire. " alt="" coords="4917,102,5100,143"/>
+<area shape="rect" id="node35" href="$dummy_8c.html" title="sw/airborne/subsystems\l/radio_control/dummy.c" alt="" coords="5125,102,5301,143"/>
+<area shape="rect" id="node36" href="$ppm_8c.html" title="Architecture independent functions for PPM radio control. " alt="" coords="5325,102,5501,143"/>
+<area shape="rect" id="node37" href="$subsystems_2radio__control_2rc__datalink_8c.html" title="sw/airborne/subsystems\l/radio_control/rc_datalink.c" alt="" coords="5525,102,5719,143"/>
+<area shape="rect" id="node38" href="$sbus_8c.html" title="Single SBUS radio_control. " alt="" coords="5743,102,5919,143"/>
+<area shape="rect" id="node39" href="$sbus__common_8c.html" title="Futaba SBUS decoder. " alt="" coords="5943,102,6162,143"/>
+<area shape="rect" id="node40" href="$sbus__dual_8c.html" title="Dual SBUS radio_control. " alt="" coords="6187,102,6375,143"/>
+<area shape="rect" id="node41" href="$superbitrf__rc_8c.html" title="DSM2 and DSMX radio control implementation for the cyrf6936 2.4GHz radio chip trough SPI..." alt="" coords="6399,102,6603,143"/>
+<area shape="rect" id="node42" href="$radio__control_8c.html" title="Implementation independant radio control handing. " alt="" coords="6627,102,6803,143"/>
+<area shape="rect" id="node43" href="$nps__autopilot__fixedwing_8c.html" title="sw/simulator/nps/nps\l_autopilot_fixedwing.c" alt="" coords="6828,102,6989,143"/>
+<area shape="rect" id="node44" href="$nps__autopilot__rotorcraft_8c.html" title="sw/simulator/nps/nps\l_autopilot_rotorcraft.c" alt="" coords="7014,102,7177,143"/>
+<area shape="rect" id="node13" href="$autopilot__arming__yaw_8h.html" title="Arm the motors by with max yaw stick. " alt="" coords="1640,206,1801,262"/>
+<area shape="rect" id="node14" href="$autopilot__arming__switch_8h.html" title="Arm the motors using a switch. " alt="" coords="1825,206,1987,262"/>
+<area shape="rect" id="node15" href="$autopilot__arming__throttle_8h.html" title="Automatically arm the motors when applying throttle. " alt="" coords="2011,206,2172,262"/>
 </map>

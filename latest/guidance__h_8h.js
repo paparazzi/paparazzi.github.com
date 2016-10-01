@@ -2,6 +2,8 @@ var guidance__h_8h =
 [
     [ "HorizontalGuidanceSetpoint", "guidance__h_8h.html#structHorizontalGuidanceSetpoint", [
       [ "heading", "guidance__h_8h.html#a34e3b7f88bb679af8bb6a9413c7a7ee8", null ],
+      [ "heading_rate", "guidance__h_8h.html#a819b0966a16e65bf09c96d4f78824638", null ],
+      [ "mask", "guidance__h_8h.html#a2853885ec3a53a0dbd5cec05ab04a928", null ],
       [ "pos", "guidance__h_8h.html#a47d7eee694eeefe375dcf58a632f5c37", null ],
       [ "speed", "guidance__h_8h.html#abf09060f037f857c6f12d08970aca3ae", null ]
     ] ],
@@ -18,13 +20,13 @@ var guidance__h_8h =
       [ "v", "guidance__h_8h.html#a3af92eee7f2e4365dab066ed157c17dc", null ]
     ] ],
     [ "HorizontalGuidance", "guidance__h_8h.html#structHorizontalGuidance", [
-      [ "approx_force_by_thrust", "guidance__h_8h.html#ade09416a020d350fb37b9c21515a3464", null ],
+      [ "approx_force_by_thrust", "guidance__h_8h.html#a4265d2ace874029c37bdaf1d09d686ac", null ],
       [ "gains", "guidance__h_8h.html#a556a1701ca546e04b4dc36a2d0694b62", null ],
       [ "mode", "guidance__h_8h.html#a87d8bc8cc4153bc157d6ba040ec9fa70", null ],
       [ "rc_sp", "guidance__h_8h.html#af1a448948e51ea46e604dfc21b82145c", null ],
       [ "ref", "guidance__h_8h.html#aaf9d060158ef455bd7e086c746762dbb", null ],
       [ "sp", "guidance__h_8h.html#af29476ba6c51442bad1a9bb589796c98", null ],
-      [ "use_ref", "guidance__h_8h.html#a9a568c3eb2deca3f9c0fc635abdb0b54", null ]
+      [ "use_ref", "guidance__h_8h.html#acd8a11ea4e2311bcda3b321480fa4f2f", null ]
     ] ],
     [ "GUIDANCE_H_MODE_ATTITUDE", "guidance__h_8h.html#a68ef1d14541e83675e37b38a6f57cd29", null ],
     [ "GUIDANCE_H_MODE_CARE_FREE", "guidance__h_8h.html#ab5186150bd081e971a07f229c81be028", null ],
@@ -40,12 +42,16 @@ var guidance__h_8h =
     [ "guidance_h_SetUseRef", "guidance__h_8h.html#a3352ecdb631caf9d3c662f677eba3dfa", null ],
     [ "GUIDANCE_H_USE_REF", "guidance__h_8h.html#a1e7381c2478adba02ae064f931945492", null ],
     [ "GUIDANCE_H_USE_SPEED_REF", "guidance__h_8h.html#ab4234cf988c87fdcfaf199005c43a994", null ],
+    [ "guidance_h_get_pos_err", "guidance__h_8h.html#ae39cf067bc1b3de73d401e3cbea9162b", null ],
     [ "guidance_h_init", "guidance__h_8h.html#a7bc4ea0d5351c2ba6ee160db5a2e9f80", null ],
     [ "guidance_h_mode_changed", "guidance__h_8h.html#a2903786227eb11507928f99870099225", null ],
-    [ "guidance_h_read_rc", "guidance__h_8h.html#a7db3290fc5f62abc15a1bb1638b4922f", null ],
-    [ "guidance_h_run", "guidance__h_8h.html#ac4cf6da90a4278b4d0b2e4f227b33f2c", null ],
-    [ "guidance_h_set_guided_heading", "guidance__h_8h.html#a1780f9e7e24e59d9d1490ae65f1b91b7", null ],
-    [ "guidance_h_set_guided_pos", "guidance__h_8h.html#aa17d6dd9c27eaf38a8be67f7edbef8e1", null ],
+    [ "guidance_h_read_rc", "guidance__h_8h.html#a1ad9b20a107ab0ded48adde7adb6fed0", null ],
+    [ "guidance_h_run", "guidance__h_8h.html#afff2f6a359638c74d5d1051c3edfa554", null ],
+    [ "guidance_h_set_guided_body_vel", "guidance__h_8h.html#ae192e6147e70b8acc536020ece52714b", null ],
+    [ "guidance_h_set_guided_heading", "guidance__h_8h.html#a326822b3cfdaaf76105134072212346c", null ],
+    [ "guidance_h_set_guided_heading_rate", "guidance__h_8h.html#af1c1fe7554cfb835e5f674228cb3858b", null ],
+    [ "guidance_h_set_guided_pos", "guidance__h_8h.html#a4df96f9ee6b60d5df3ccfd2bd45dc6f2", null ],
+    [ "guidance_h_set_guided_vel", "guidance__h_8h.html#a21a4387750aad0a127dfa928b8557a90", null ],
     [ "guidance_h_set_igain", "guidance__h_8h.html#ae5758cb648c364155482e9478ff16303", null ],
     [ "guidance_h_SetMaxSpeed", "guidance__h_8h.html#a8ff27831b0356299396c6a5bfdf93d12", null ],
     [ "guidance_h_SetOmega", "guidance__h_8h.html#acefa97a46964782f778ed871e04e646a", null ],

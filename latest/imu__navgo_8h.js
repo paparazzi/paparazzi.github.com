@@ -14,8 +14,9 @@ var imu__navgo_8h =
     [ "IMU_MAG_X_SIGN", "imu__navgo_8h.html#a34ef05992d74a9dc07c6a20feffd6eef", null ],
     [ "IMU_MAG_Y_SIGN", "imu__navgo_8h.html#a127929c4b5a458043f7ef2e0fa2a4e54", null ],
     [ "IMU_MAG_Z_SIGN", "imu__navgo_8h.html#a8612bd2fe2f927e8f283a9a8e60010f5", null ],
-    [ "ImuEvent", "imu__navgo_8h.html#a38f1122c1ee0701562b490c6e1b60609", null ],
     [ "imu_navgo_downlink_raw", "imu__navgo_8h.html#a3d112410a2bef99c6c7cd1dd6a79e77e", null ],
     [ "imu_navgo_event", "imu__navgo_8h.html#a090687272e402bae057eb68e39e6218f", null ],
+    [ "imu_navgo_init", "imu__navgo_8h.html#abd2e06283e7a09269e0e25dfc9f38e12", null ],
+    [ "imu_navgo_periodic", "imu__navgo_8h.html#abf7df4eb259cc896e4c4d15e255b9f12", null ],
     [ "imu_navgo", "imu__navgo_8h.html#a97fa4a18bac4d98bb58486a17a028548", null ]
 ];

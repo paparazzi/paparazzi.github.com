@@ -1,16 +1,18 @@
 var searchData=
 [
   ['bibliography',['Bibliography',['../citelist.html',1,'']]],
-  ['baro_20amsys_20_28i2c_29',['Baro AMSYS (I2C)',['../module__baro_amsys.html',1,'onboard_modules']]],
-  ['bosch_20bmp085_20pressure_20sensor',['Bosch BMP085 pressure sensor',['../module__baro_bmp.html',1,'onboard_modules']]],
-  ['baro_20ets_20_28i2c_29',['Baro ETS (I2C)',['../module__baro_ets.html',1,'onboard_modules']]],
-  ['baro_20sensortechnics_20hca_20_28i2c_29',['Baro sensortechnics HCA (I2C)',['../module__baro_hca.html',1,'onboard_modules']]],
-  ['baro_20mpl3115a2_20_28i2c_29',['Baro MPL3115A2 (I2C)',['../module__baro_mpl3115.html',1,'onboard_modules']]],
-  ['baro_20ms5611_20_28i2c_29',['Baro MS5611 (I2C)',['../module__baro_ms5611_i2c.html',1,'onboard_modules']]],
-  ['baro_20ms5611_20_28spi_29',['Baro MS5611 (SPI)',['../module__baro_ms5611_spi.html',1,'onboard_modules']]],
-  ['battery_20checker_20module',['Battery checker module',['../module__bat_checker.html',1,'onboard_modules']]],
-  ['battery_20voltage_20reading_20for_20ardrone2',['Battery voltage reading for ARDrone2',['../module__bat_voltage_ardrone2.html',1,'onboard_modules']]],
-  ['benchmark',['Benchmark',['../module__i2c_abuse_test.html',1,'onboard_modules']]],
-  ['basic_20mavlink_20implementation',['Basic MAVLink implementation',['../module__mavlink.html',1,'onboard_modules']]],
-  ['bebop_20sonar_20driver',['Bebop Sonar driver',['../module__sonar_bebop.html',1,'onboard_modules']]]
+  ['baro_5famsys_20module',['baro_amsys module',['../module__baro_amsys.html',1,'onboard_modules']]],
+  ['baro_5fbmp_20module',['baro_bmp module',['../module__baro_bmp.html',1,'onboard_modules']]],
+  ['baro_5fets_20module',['baro_ets module',['../module__baro_ets.html',1,'onboard_modules']]],
+  ['baro_5fhca_20module',['baro_hca module',['../module__baro_hca.html',1,'onboard_modules']]],
+  ['baro_5fmpl3115_20module',['baro_mpl3115 module',['../module__baro_mpl3115.html',1,'onboard_modules']]],
+  ['baro_5fms5534a_20module',['baro_ms5534a module',['../module__baro_ms5534a.html',1,'onboard_modules']]],
+  ['baro_5fms5611_5fi2c_20module',['baro_ms5611_i2c module',['../module__baro_ms5611_i2c.html',1,'onboard_modules']]],
+  ['baro_5fms5611_5fspi_20module',['baro_ms5611_spi module',['../module__baro_ms5611_spi.html',1,'onboard_modules']]],
+  ['baro_5fscp_20module',['baro_scp module',['../module__baro_scp.html',1,'onboard_modules']]],
+  ['baro_5fscp_5fi2c_20module',['baro_scp_i2c module',['../module__baro_scp_i2c.html',1,'onboard_modules']]],
+  ['baro_5fsim_20module',['baro_sim module',['../module__baro_sim.html',1,'onboard_modules']]],
+  ['bat_5fchecker_20module',['bat_checker module',['../module__bat_checker.html',1,'onboard_modules']]],
+  ['bat_5fvoltage_5fardrone2_20module',['bat_voltage_ardrone2 module',['../module__bat_voltage_ardrone2.html',1,'onboard_modules']]],
+  ['bebop_5ffront_5fcamera_20module',['bebop_front_camera module',['../module__bebop_front_camera.html',1,'onboard_modules']]]
 ];

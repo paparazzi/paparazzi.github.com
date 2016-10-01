@@ -32,6 +32,8 @@ var hf__float_8c =
     [ "b2_hff_update_xdot", "hf__float_8c.html#a5b42318dc157c5686a35307432d7fb95", null ],
     [ "b2_hff_update_y", "hf__float_8c.html#a0fa61df808fb070a1ae9e847ff9081ea", null ],
     [ "b2_hff_update_ydot", "hf__float_8c.html#ad418127e269daab29f229899e618e9fc", null ],
+    [ "send_hff", "hf__float_8c.html#ac22beeff1d0cdeb75532e189652acba9", null ],
+    [ "send_hff_debug", "hf__float_8c.html#ab7c0281d7bcfb87c6d68f296aa216163", null ],
     [ "b2_hff_lost_counter", "hf__float_8c.html#a968693a83920785956729b914c148eb9", null ],
     [ "b2_hff_lost_limit", "hf__float_8c.html#ade99b6c1aec3a001fdc7962277cecf08", null ],
     [ "b2_hff_ps_counter", "hf__float_8c.html#af5046cb21718a0df36296a19082d9a96", null ],
@@ -47,9 +49,9 @@ var hf__float_8c =
     [ "filter_x", "hf__float_8c.html#afdb654ec9b7836802d036412dfd8ba09", null ],
     [ "filter_y", "hf__float_8c.html#a70ccbd56ba5cebf0f68f8c8249f6ab0e", null ],
     [ "filter_z", "hf__float_8c.html#a1c5039e7e44e6773680ce40c1c5df75b", null ],
-    [ "lag_counter_err", "hf__float_8c.html#a74ba4fd3f0ea5e4190d080b8f7e11c72", null ],
+    [ "lag_counter_err", "hf__float_8c.html#a588caf240d2a8acd9e6b1cea695c89a2", null ],
     [ "past_save_counter", "hf__float_8c.html#a09f110229f755cbb135dcb22bd74c822", null ],
     [ "Rgps_pos", "hf__float_8c.html#af6333ef44fbaf7aaf25c27a56429144f", null ],
     [ "Rgps_vel", "hf__float_8c.html#afec83e3697675c3915f9d3b46f040fe1", null ],
-    [ "save_counter", "hf__float_8c.html#a1192d11b26ebaf8d615bd1e7032ceb85", null ]
+    [ "save_counter", "hf__float_8c.html#a92d9decc27f0ac007c7d333b0d5ee31b", null ]
 ];

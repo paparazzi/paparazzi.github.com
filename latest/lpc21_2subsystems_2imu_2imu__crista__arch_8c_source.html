@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -225,7 +225,7 @@ $(document).ready(function(){initNavTree('lpc21_2subsystems_2imu_2imu__crista__a
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  channel++;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordflow">if</span> (channel &gt; 7 - 1) {</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    channel = 0;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="ADS8344_8c.html#a29bd3fd20091d2d9592d551dfca9ec94">ADS8344_available</a> = <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="ADS8344_8c.html#a5ed4272543ec6099b728fb5f511e5353">ADS8344_available</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="code" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#aa9817622c338285730aca3a5c84c289c">ADS8344Unselect</a>();</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <a class="code" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#a3f17d7c8cdacbbfc2ee4cb8609fdb83a">send_request</a>();</div>
@@ -251,12 +251,11 @@ $(document).ready(function(){initNavTree('lpc21_2subsystems_2imu_2imu__crista__a
 <div class="ttc" id="lpc21_2subsystems_2imu_2imu__crista__arch_8c_html_a3c7550edc886553fe543850409648513"><div class="ttname"><a href="lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#a3c7550edc886553fe543850409648513">ADS8344Select</a></div><div class="ttdeci">#define ADS8344Select()</div><div class="ttdef"><b>Definition:</b> <a href="lpc21_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00034">imu_crista_arch.c:34</a></div></div>
 <div class="ttc" id="ADS8344_8c_html_a7c6b29728c370927c9a96191b45b1d34"><div class="ttname"><a href="ADS8344_8c.html#a7c6b29728c370927c9a96191b45b1d34">ADS8344_values</a></div><div class="ttdeci">uint16_t ADS8344_values[NB_CHANNELS]</div><div class="ttdef"><b>Definition:</b> <a href="ADS8344_8c_source.html#l00039">ADS8344.c:39</a></div></div>
 <div class="ttc" id="max11040__hw_8h_html_afea70fcedcb86e03ae2fc616c5d81942"><div class="ttname"><a href="max11040__hw_8h.html#afea70fcedcb86e03ae2fc616c5d81942">SSP_Enable</a></div><div class="ttdeci">#define SSP_Enable()</div><div class="ttdef"><b>Definition:</b> <a href="max11040__hw_8h_source.html#l00043">max11040_hw.h:43</a></div></div>
-<div class="ttc" id="ADS8344_8c_html_a29bd3fd20091d2d9592d551dfca9ec94"><div class="ttname"><a href="ADS8344_8c.html#a29bd3fd20091d2d9592d551dfca9ec94">ADS8344_available</a></div><div class="ttdeci">bool_t ADS8344_available</div><div class="ttdef"><b>Definition:</b> <a href="ADS8344_8c_source.html#l00038">ADS8344.c:38</a></div></div>
 <div class="ttc" id="LPC21xx_8h_html_acecf2aa7ffdc423937224228dab60ca4"><div class="ttname"><a href="LPC21xx_8h.html#acecf2aa7ffdc423937224228dab60ca4">SSPCR0</a></div><div class="ttdeci">#define SSPCR0</div><div class="ttdef"><b>Definition:</b> <a href="LPC21xx_8h_source.html#l00222">LPC21xx.h:222</a></div></div>
 <div class="ttc" id="armVIC_8h_html_a9981283e4fb9cc3322368f2aa07e3256"><div class="ttname"><a href="armVIC_8h.html#a9981283e4fb9cc3322368f2aa07e3256">_VIC_ADDR</a></div><div class="ttdeci">#define _VIC_ADDR(idx)</div><div class="ttdef"><b>Definition:</b> <a href="armVIC_8h_source.html#l00020">armVIC.h:20</a></div></div>
 <div class="ttc" id="lpc21_2subsystems_2imu_2imu__crista__arch_8c_html_a87866f9987fb38ca70a19a737bbd0628"><div class="ttname"><a href="lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#a87866f9987fb38ca70a19a737bbd0628">SGL_DIF</a></div><div class="ttdeci">#define SGL_DIF</div><div class="ttdef"><b>Definition:</b> <a href="lpc21_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00038">imu_crista_arch.c:38</a></div></div>
 <div class="ttc" id="lpc21_2subsystems_2imu_2imu__crista__arch_8c_html_a0b293b59617ad1f7284da53de8c948e1"><div class="ttname"><a href="lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#a0b293b59617ad1f7284da53de8c948e1">SSP_CPHA</a></div><div class="ttdeci">#define SSP_CPHA</div><div class="ttdef"><b>Definition:</b> <a href="lpc21_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00044">imu_crista_arch.c:44</a></div></div>
-<div class="ttc" id="std_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> <a href="std_8h_source.html#l00004">std.h:4</a></div></div>
+<div class="ttc" id="ADS8344_8c_html_a5ed4272543ec6099b728fb5f511e5353"><div class="ttname"><a href="ADS8344_8c.html#a5ed4272543ec6099b728fb5f511e5353">ADS8344_available</a></div><div class="ttdeci">bool ADS8344_available</div><div class="ttdef"><b>Definition:</b> <a href="ADS8344_8c_source.html#l00038">ADS8344.c:38</a></div></div>
 <div class="ttc" id="lpc21_2subsystems_2imu_2imu__crista__arch_8c_html_a3f17d7c8cdacbbfc2ee4cb8609fdb83a"><div class="ttname"><a href="lpc21_2subsystems_2imu_2imu__crista__arch_8c.html#a3f17d7c8cdacbbfc2ee4cb8609fdb83a">send_request</a></div><div class="ttdeci">static void send_request(void)</div><div class="ttdef"><b>Definition:</b> <a href="lpc21_2subsystems_2imu_2imu__crista__arch_8c_source.html#l00092">imu_crista_arch.c:92</a></div></div>
 <div class="ttc" id="LPC21xx_8h_html_aa11babfb092f15d15765591e9d4c8df2"><div class="ttname"><a href="LPC21xx_8h.html#aa11babfb092f15d15765591e9d4c8df2">VICVectAddr</a></div><div class="ttdeci">#define VICVectAddr</div><div class="ttdef"><b>Definition:</b> <a href="LPC21xx_8h_source.html#l00436">LPC21xx.h:436</a></div></div>
 <div class="ttc" id="types_8h_html_a06896e8c53f721507066c079052171f8"><div class="ttname"><a href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></div><div class="ttdeci">unsigned long uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00018">types.h:18</a></div></div>
@@ -292,7 +291,7 @@ $(document).ready(function(){initNavTree('lpc21_2subsystems_2imu_2imu__crista__a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_3f7617cb4a5e4fe5cc816b7b3bbdea3a.html">lpc21</a></li><li class="navelem"><a class="el" href="dir_49e3baf8e4d0208391e8a23720cf4bc3.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_e29d5afa31a5be7073904e7c44570d02.html">imu</a></li><li class="navelem"><a class="el" href="lpc21_2subsystems_2imu_2imu__crista__arch_8c.html">imu_crista_arch.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:14 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:14 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

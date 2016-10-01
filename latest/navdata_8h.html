@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -118,6 +118,7 @@ $(document).ready(function(){initNavTree('navdata_8h.html','');});
 <p>ardrone2 navdata aquisition driver.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;std.h&quot;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for navdata.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -134,7 +135,7 @@ $(document).ready(function(){initNavTree('navdata_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="navdata_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2boards_2ardrone_2navdata_8hdep" alt=""/></div>
 <map name="sw_2airborne_2boards_2ardrone_2navdata_8hdep" id="sw_2airborne_2boards_2ardrone_2navdata_8hdep">
-<area shape="rect" id="node2" href="boards_2ardrone_2actuators_8c.html" title="Actuator driver for ardrone2 version. " alt="" coords="5,95,157,136"/><area shape="rect" id="node3" href="ardrone_2baro__board_8c.html" title="Paparazzi AR Drone 2 Baro Sensor implementation:. " alt="" coords="182,95,346,136"/><area shape="rect" id="node4" href="navdata_8c.html" title="ardrone2 navdata aquisition driver. " alt="" coords="370,95,513,136"/><area shape="rect" id="node5" href="imu__ardrone2_8c.html" title="IMU implementation for ardrone2. " alt="" coords="525,184,701,225"/><area shape="rect" id="node6" href="imu__ardrone2_8h.html" title="IMU implementation for ardrone2. " alt="" coords="588,95,764,136"/></map>
+<area shape="rect" id="node2" href="boards_2ardrone_2actuators_8c.html" title="Actuator driver for ardrone2 version. " alt="" coords="5,95,157,136"/><area shape="rect" id="node3" href="ardrone_2baro__board_8c.html" title="Paparazzi AR Drone 2 Baro Sensor implementation:. " alt="" coords="182,95,346,136"/><area shape="rect" id="node4" href="navdata_8c.html" title="ARDrone2 navdata aquisition driver. " alt="" coords="370,95,513,136"/><area shape="rect" id="node5" href="imu__ardrone2_8c.html" title="IMU implementation for ardrone2. " alt="" coords="525,184,701,225"/><area shape="rect" id="node6" href="imu__ardrone2_8h.html" title="IMU implementation for ardrone2. " alt="" coords="588,95,764,136"/></map>
 </div>
 </div>
 <p><a href="navdata_8h_source.html">Go to the source code of this file.</a></p>
@@ -168,18 +169,18 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2dbd35c51b5b13c4e3e5d9a1d86a02f8"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="navdata_8h.html#a2dbd35c51b5b13c4e3e5d9a1d86a02f8">navdata_init</a> (void)</td></tr>
-<tr class="memdesc:a2dbd35c51b5b13c4e3e5d9a1d86a02f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the navdata board.  <a href="#a2dbd35c51b5b13c4e3e5d9a1d86a02f8">More...</a><br /></td></tr>
-<tr class="separator:a2dbd35c51b5b13c4e3e5d9a1d86a02f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74e54d7069f2ba9c8f52b8be02c16d3f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="navdata_8h.html#a74e54d7069f2ba9c8f52b8be02c16d3f">navdata_init</a> (void)</td></tr>
+<tr class="memdesc:a74e54d7069f2ba9c8f52b8be02c16d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the navdata board.  <a href="#a74e54d7069f2ba9c8f52b8be02c16d3f">More...</a><br /></td></tr>
+<tr class="separator:a74e54d7069f2ba9c8f52b8be02c16d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aded131295af4c39b10199bae2e560438"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="navdata_8h.html#aded131295af4c39b10199bae2e560438">navdata_update</a> (void)</td></tr>
 <tr class="memdesc:aded131295af4c39b10199bae2e560438"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the navdata (event loop)  <a href="#aded131295af4c39b10199bae2e560438">More...</a><br /></td></tr>
 <tr class="separator:aded131295af4c39b10199bae2e560438"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4825abe29fb09e464e1da2f52da7bb3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="navdata_8h.html#a4825abe29fb09e464e1da2f52da7bb3e">navdata_height</a> (void)</td></tr>
 <tr class="separator:a4825abe29fb09e464e1da2f52da7bb3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a56a11d98c367fcfc5bd7afb77fd2ec"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="navdata_8h.html#a2a56a11d98c367fcfc5bd7afb77fd2ec">full_write</a> (int <a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, const <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *<a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a48b4f0842338aeafa79aeab314f33696">buf</a>, size_t count)</td></tr>
+<tr class="memitem:a2a56a11d98c367fcfc5bd7afb77fd2ec"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="navdata_8h.html#a2a56a11d98c367fcfc5bd7afb77fd2ec">full_write</a> (int <a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, const <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf, size_t count)</td></tr>
 <tr class="memdesc:a2a56a11d98c367fcfc5bd7afb77fd2ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write to fd even while being interrupted.  <a href="#a2a56a11d98c367fcfc5bd7afb77fd2ec">More...</a><br /></td></tr>
 <tr class="separator:a2a56a11d98c367fcfc5bd7afb77fd2ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae43ceafaca46ba7374afd15ed5b3b15a"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="navdata_8h.html#ae43ceafaca46ba7374afd15ed5b3b15a">full_read</a> (int <a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *<a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a48b4f0842338aeafa79aeab314f33696">buf</a>, size_t count)</td></tr>
+<tr class="memitem:ae43ceafaca46ba7374afd15ed5b3b15a"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="navdata_8h.html#ae43ceafaca46ba7374afd15ed5b3b15a">full_read</a> (int <a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf, size_t count)</td></tr>
 <tr class="memdesc:ae43ceafaca46ba7374afd15ed5b3b15a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read from fd even while being interrupted.  <a href="#ae43ceafaca46ba7374afd15ed5b3b15a">More...</a><br /></td></tr>
 <tr class="separator:ae43ceafaca46ba7374afd15ed5b3b15a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -205,7 +206,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <div class="textblock"><p>Main navdata structure from the navdata board This is received from the navdata board at ~200Hz. </p>
 
-<p>Definition at line <a class="el" href="navdata_8h_source.html#l00039">39</a> of file <a class="el" href="navdata_8h_source.html">navdata.h</a>.</p>
+<p>Definition at line <a class="el" href="navdata_8h_source.html#l00043">43</a> of file <a class="el" href="navdata_8h_source.html">navdata.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -390,7 +391,7 @@ vz</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="navdata_8h_source.html#l00083">83</a> of file <a class="el" href="navdata_8h_source.html">navdata.h</a>.</p>
+<p>Definition at line <a class="el" href="navdata_8h_source.html#l00087">87</a> of file <a class="el" href="navdata_8h_source.html">navdata.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -479,7 +480,7 @@ md</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="navdata_8h_source.html#l00111">111</a> of file <a class="el" href="navdata_8h_source.html">navdata.h</a>.</p>
+<p>Definition at line <a class="el" href="navdata_8h_source.html#l00115">115</a> of file <a class="el" href="navdata_8h_source.html">navdata.h</a>.</p>
 </div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for navdata_t:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -492,13 +493,13 @@ md</td>
 <table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="ac833605d3e090a814514dd6eac741fed"></a>bool_t</td>
+<a class="anchor" id="aa9dc36cf6dd4c2c4d09b6b680e92cbf4"></a>bool</td>
 <td class="fieldname">
 baro_available</td>
 <td class="fielddoc">
 Whenever the baro is available. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a4dd7a6cc22e4071bd8baaf3a6c242e9f"></a>bool_t</td>
+<a class="anchor" id="a6435345ad995ab0b63fec1770b6f5784"></a>bool</td>
 <td class="fieldname">
 baro_calibrated</td>
 <td class="fielddoc">
@@ -522,13 +523,13 @@ fd</td>
 <td class="fielddoc">
 The navdata file pointer. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a3be16ab436f8d2f8c45a26d42d7c3eab"></a>bool_t</td>
+<a class="anchor" id="a2d2cbe0804affd1ddc3695ad2fd4a47e"></a>bool</td>
 <td class="fieldname">
 imu_lost</td>
 <td class="fielddoc">
 Whenever the imu is lost. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a39828fe7042b4fac682b21394a6fa68b"></a>bool_t</td>
+<a class="anchor" id="aee4148da53efcde3ac9c25c902fd99db"></a>bool</td>
 <td class="fieldname">
 is_initialized</td>
 <td class="fielddoc">
@@ -578,9 +579,9 @@ totalBytesRead</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="navdata_8h_source.html#l00108">108</a> of file <a class="el" href="navdata_8h_source.html">navdata.h</a>.</p>
+<p>Definition at line <a class="el" href="navdata_8h_source.html#l00112">112</a> of file <a class="el" href="navdata_8h_source.html">navdata.h</a>.</p>
 
-<p>Referenced by <a class="el" href="navdata_8c_source.html#l00446">mag_freeze_check()</a>, and <a class="el" href="navdata_8c_source.html#l00169">navdata_init()</a>.</p>
+<p>Referenced by <a class="el" href="navdata_8c_source.html#l00448">mag_freeze_check()</a>, and <a class="el" href="navdata_8c_source.html#l00171">navdata_init()</a>.</p>
 
 </div>
 </div>
@@ -594,7 +595,7 @@ totalBytesRead</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="navdata_8h_source.html#l00107">107</a> of file <a class="el" href="navdata_8h_source.html">navdata.h</a>.</p>
+<p>Definition at line <a class="el" href="navdata_8h_source.html#l00111">111</a> of file <a class="el" href="navdata_8h_source.html">navdata.h</a>.</p>
 
 </div>
 </div>
@@ -608,9 +609,9 @@ totalBytesRead</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="navdata_8h_source.html#l00105">105</a> of file <a class="el" href="navdata_8h_source.html">navdata.h</a>.</p>
+<p>Definition at line <a class="el" href="navdata_8h_source.html#l00109">109</a> of file <a class="el" href="navdata_8h_source.html">navdata.h</a>.</p>
 
-<p>Referenced by <a class="el" href="navdata_8c_source.html#l00414">navdata_baro_calib()</a>.</p>
+<p>Referenced by <a class="el" href="navdata_8c_source.html#l00416">navdata_baro_calib()</a>.</p>
 
 </div>
 </div>
@@ -624,9 +625,9 @@ totalBytesRead</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="navdata_8h_source.html#l00103">103</a> of file <a class="el" href="navdata_8h_source.html">navdata.h</a>.</p>
+<p>Definition at line <a class="el" href="navdata_8h_source.html#l00107">107</a> of file <a class="el" href="navdata_8h_source.html">navdata.h</a>.</p>
 
-<p>Referenced by <a class="el" href="navdata_8c_source.html#l00446">mag_freeze_check()</a>, and <a class="el" href="navdata_8c_source.html#l00169">navdata_init()</a>.</p>
+<p>Referenced by <a class="el" href="navdata_8c_source.html#l00448">mag_freeze_check()</a>, and <a class="el" href="navdata_8c_source.html#l00171">navdata_init()</a>.</p>
 
 </div>
 </div>
@@ -640,9 +641,9 @@ totalBytesRead</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="navdata_8h_source.html#l00104">104</a> of file <a class="el" href="navdata_8h_source.html">navdata.h</a>.</p>
+<p>Definition at line <a class="el" href="navdata_8h_source.html#l00108">108</a> of file <a class="el" href="navdata_8h_source.html">navdata.h</a>.</p>
 
-<p>Referenced by <a class="el" href="navdata_8c_source.html#l00446">mag_freeze_check()</a>, and <a class="el" href="navdata_8c_source.html#l00169">navdata_init()</a>.</p>
+<p>Referenced by <a class="el" href="navdata_8c_source.html#l00448">mag_freeze_check()</a>, and <a class="el" href="navdata_8c_source.html#l00171">navdata_init()</a>.</p>
 
 </div>
 </div>
@@ -656,9 +657,9 @@ totalBytesRead</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="navdata_8h_source.html#l00101">101</a> of file <a class="el" href="navdata_8h_source.html">navdata.h</a>.</p>
+<p>Definition at line <a class="el" href="navdata_8h_source.html#l00105">105</a> of file <a class="el" href="navdata_8h_source.html">navdata.h</a>.</p>
 
-<p>Referenced by <a class="el" href="navdata_8c_source.html#l00169">navdata_init()</a>, <a class="el" href="navdata_8c_source.html#l00252">navdata_read()</a>, and <a class="el" href="navdata_8c_source.html#l00340">navdata_update()</a>.</p>
+<p>Referenced by <a class="el" href="navdata_8c_source.html#l00171">navdata_init()</a>, <a class="el" href="navdata_8c_source.html#l00254">navdata_read()</a>, and <a class="el" href="navdata_8c_source.html#l00342">navdata_update()</a>.</p>
 
 </div>
 </div>
@@ -672,9 +673,9 @@ totalBytesRead</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="navdata_8h_source.html#l00102">102</a> of file <a class="el" href="navdata_8h_source.html">navdata.h</a>.</p>
+<p>Definition at line <a class="el" href="navdata_8h_source.html#l00106">106</a> of file <a class="el" href="navdata_8h_source.html">navdata.h</a>.</p>
 
-<p>Referenced by <a class="el" href="navdata_8c_source.html#l00252">navdata_read()</a>.</p>
+<p>Referenced by <a class="el" href="navdata_8c_source.html#l00254">navdata_read()</a>.</p>
 
 </div>
 </div>
@@ -711,9 +712,9 @@ totalBytesRead</td>
 
 <p>Read from fd even while being interrupted. </p>
 
-<p>Definition at line <a class="el" href="navdata_8c_source.html#l00110">110</a> of file <a class="el" href="navdata_8c_source.html">navdata.c</a>.</p>
+<p>Definition at line <a class="el" href="navdata_8c_source.html#l00112">112</a> of file <a class="el" href="navdata_8c_source.html">navdata.c</a>.</p>
 
-<p>Referenced by <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00158">actuators_ardrone_cmd()</a>, and <a class="el" href="navdata_8c_source.html#l00414">navdata_baro_calib()</a>.</p>
+<p>Referenced by <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00158">actuators_ardrone_cmd()</a>, and <a class="el" href="navdata_8c_source.html#l00416">navdata_baro_calib()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -722,7 +723,7 @@ totalBytesRead</td>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="navdata_8h_ae43ceafaca46ba7374afd15ed5b3b15a_icgraph.png" border="0" usemap="#navdata_8h_ae43ceafaca46ba7374afd15ed5b3b15a_icgraph" alt=""/></div>
 <map name="navdata_8h_ae43ceafaca46ba7374afd15ed5b3b15a_icgraph" id="navdata_8h_ae43ceafaca46ba7374afd15ed5b3b15a_icgraph">
-<area shape="rect" id="node2" href="boards_2ardrone_2actuators_8h.html#aa094cbe3e6efb249130aae09c22ff6ab" title="actuators_ardrone_cmd" alt="" coords="129,5,304,32"/><area shape="rect" id="node4" href="navdata_8c.html#a2dfd91a7adc8a78c62b2f9e4ee67b86d" title="Try to receive the baro calibration from the navdata board. " alt="" coords="143,56,290,83"/><area shape="rect" id="node3" href="boards_2ardrone_2actuators_8h.html#a66817eeee5ae2f12c1a42abd2ff443ea" title="actuators_ardrone_init" alt="" coords="352,5,519,32"/><area shape="rect" id="node5" href="navdata_8h.html#a2dbd35c51b5b13c4e3e5d9a1d86a02f8" title="Initialize the navdata board. " alt="" coords="385,56,485,83"/><area shape="rect" id="node6" href="navdata_8h.html#aded131295af4c39b10199bae2e560438" title="Update the navdata (event loop) " alt="" coords="567,31,693,57"/><area shape="rect" id="node7" href="imu__ardrone2_8c.html#ad32faae58e391642ec8048cb11011998" title="must be defined by underlying hardware " alt="" coords="577,81,683,108"/></map>
+<area shape="rect" id="node2" href="boards_2ardrone_2actuators_8h.html#aa094cbe3e6efb249130aae09c22ff6ab" title="actuators_ardrone_cmd" alt="" coords="129,5,304,32"/><area shape="rect" id="node4" href="navdata_8c.html#a09ffe80e1ce558cd0ad8b72b054cd898" title="Try to receive the baro calibration from the navdata board. " alt="" coords="143,56,290,83"/><area shape="rect" id="node3" href="boards_2ardrone_2actuators_8h.html#a66817eeee5ae2f12c1a42abd2ff443ea" title="actuators_ardrone_init" alt="" coords="352,5,519,32"/><area shape="rect" id="node5" href="navdata_8h.html#a74e54d7069f2ba9c8f52b8be02c16d3f" title="Initialize the navdata board. " alt="" coords="385,56,485,83"/><area shape="rect" id="node6" href="navdata_8h.html#aded131295af4c39b10199bae2e560438" title="Update the navdata (event loop) " alt="" coords="572,31,699,57"/><area shape="rect" id="node7" href="imu__ardrone2_8h.html#a64ed917b58febc5528b575b56549c9a4" title="imu_ardrone2_init" alt="" coords="567,81,704,108"/></map>
 </div>
 </p>
 
@@ -760,9 +761,9 @@ totalBytesRead</td>
 
 <p>Write to fd even while being interrupted. </p>
 
-<p>Definition at line <a class="el" href="navdata_8c_source.html#l00090">90</a> of file <a class="el" href="navdata_8c_source.html">navdata.c</a>.</p>
+<p>Definition at line <a class="el" href="navdata_8c_source.html#l00092">92</a> of file <a class="el" href="navdata_8c_source.html">navdata.c</a>.</p>
 
-<p>Referenced by <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00158">actuators_ardrone_cmd()</a>, <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00254">actuators_ardrone_set_leds()</a>, <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00231">actuators_ardrone_set_pwm()</a>, and <a class="el" href="navdata_8c_source.html#l00405">navdata_cmd_send()</a>.</p>
+<p>Referenced by <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00158">actuators_ardrone_cmd()</a>, <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00254">actuators_ardrone_set_leds()</a>, <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00231">actuators_ardrone_set_pwm()</a>, and <a class="el" href="navdata_8c_source.html#l00407">navdata_cmd_send()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -771,7 +772,7 @@ totalBytesRead</td>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="navdata_8h_a2a56a11d98c367fcfc5bd7afb77fd2ec_icgraph.png" border="0" usemap="#navdata_8h_a2a56a11d98c367fcfc5bd7afb77fd2ec_icgraph" alt=""/></div>
 <map name="navdata_8h_a2a56a11d98c367fcfc5bd7afb77fd2ec_icgraph" id="navdata_8h_a2a56a11d98c367fcfc5bd7afb77fd2ec_icgraph">
-<area shape="rect" id="node2" href="boards_2ardrone_2actuators_8h.html#aa094cbe3e6efb249130aae09c22ff6ab" title="actuators_ardrone_cmd" alt="" coords="143,5,318,32"/><area shape="rect" id="node4" href="boards_2ardrone_2actuators_8h.html#a11c0ec8b46c2dfe8877fbf3b0ca3244a" title="Write LED command cmd = 011rrrr0 000gggg0 (this is ardrone1 format, we need ardrone2 format) ..." alt="" coords="131,56,331,83"/><area shape="rect" id="node6" href="boards_2ardrone_2actuators_8h.html#a3e18bc7da29945523e0b38e96549ef24" title="Write motor speed command cmd = 001aaaaa aaaabbbb bbbbbccc ccccccdd ddddddd0. " alt="" coords="621,81,825,108"/><area shape="rect" id="node8" href="navdata_8c.html#a5c73b29bf91870f07e9bfeef9a7e4c80" title="Sends a one byte command. " alt="" coords="157,183,304,209"/><area shape="rect" id="node3" href="boards_2ardrone_2actuators_8h.html#a66817eeee5ae2f12c1a42abd2ff443ea" title="actuators_ardrone_init" alt="" coords="393,5,559,32"/><area shape="rect" id="node5" href="boards_2ardrone_2actuators_8c.html#a913a981db9fcfdbd6e725e41bd10e517" title="actuators_ardrone_led_run" alt="" coords="379,56,573,83"/><area shape="rect" id="node7" href="boards_2ardrone_2actuators_8h.html#a1e5faec000e4e1602bba080db2aec27c" title="actuators_ardrone_commit" alt="" coords="873,81,1069,108"/><area shape="rect" id="node9" href="navdata_8c.html#a097d40838c4d36b21635cc59b768568a" title="Check if the magneto is frozen Unknown why this bug happens. " alt="" coords="652,157,795,184"/><area shape="rect" id="node11" href="navdata_8c.html#a2dfd91a7adc8a78c62b2f9e4ee67b86d" title="Try to receive the baro calibration from the navdata board. " alt="" coords="403,208,549,235"/><area shape="rect" id="node12" href="navdata_8h.html#a2dbd35c51b5b13c4e3e5d9a1d86a02f8" title="Initialize the navdata board. " alt="" coords="673,208,773,235"/><area shape="rect" id="node10" href="navdata_8h.html#aded131295af4c39b10199bae2e560438" title="Update the navdata (event loop) " alt="" coords="908,157,1035,184"/><area shape="rect" id="node13" href="imu__ardrone2_8c.html#ad32faae58e391642ec8048cb11011998" title="must be defined by underlying hardware " alt="" coords="918,208,1025,235"/></map>
+<area shape="rect" id="node2" href="boards_2ardrone_2actuators_8h.html#aa094cbe3e6efb249130aae09c22ff6ab" title="actuators_ardrone_cmd" alt="" coords="143,5,318,32"/><area shape="rect" id="node4" href="boards_2ardrone_2actuators_8h.html#a11c0ec8b46c2dfe8877fbf3b0ca3244a" title="Write LED command cmd = 011rrrr0 000gggg0 (this is ardrone1 format, we need ardrone2 format) ..." alt="" coords="131,56,331,83"/><area shape="rect" id="node6" href="boards_2ardrone_2actuators_8h.html#a3e18bc7da29945523e0b38e96549ef24" title="Write motor speed command cmd = 001aaaaa aaaabbbb bbbbbccc ccccccdd ddddddd0. " alt="" coords="621,81,825,108"/><area shape="rect" id="node8" href="navdata_8c.html#a5c73b29bf91870f07e9bfeef9a7e4c80" title="Sends a one byte command. " alt="" coords="157,183,304,209"/><area shape="rect" id="node3" href="boards_2ardrone_2actuators_8h.html#a66817eeee5ae2f12c1a42abd2ff443ea" title="actuators_ardrone_init" alt="" coords="393,5,559,32"/><area shape="rect" id="node5" href="boards_2ardrone_2actuators_8c.html#a913a981db9fcfdbd6e725e41bd10e517" title="actuators_ardrone_led_run" alt="" coords="379,56,573,83"/><area shape="rect" id="node7" href="boards_2ardrone_2actuators_8h.html#a1e5faec000e4e1602bba080db2aec27c" title="actuators_ardrone_commit" alt="" coords="873,81,1069,108"/><area shape="rect" id="node9" href="navdata_8c.html#a097d40838c4d36b21635cc59b768568a" title="Check if the magneto is frozen Unknown why this bug happens. " alt="" coords="652,157,795,184"/><area shape="rect" id="node11" href="navdata_8c.html#a09ffe80e1ce558cd0ad8b72b054cd898" title="Try to receive the baro calibration from the navdata board. " alt="" coords="403,208,549,235"/><area shape="rect" id="node12" href="navdata_8h.html#a74e54d7069f2ba9c8f52b8be02c16d3f" title="Initialize the navdata board. " alt="" coords="673,208,773,235"/><area shape="rect" id="node10" href="navdata_8h.html#aded131295af4c39b10199bae2e560438" title="Update the navdata (event loop) " alt="" coords="908,157,1035,184"/><area shape="rect" id="node13" href="imu__ardrone2_8h.html#a64ed917b58febc5528b575b56549c9a4" title="imu_ardrone2_init" alt="" coords="903,208,1040,235"/></map>
 </div>
 </p>
 
@@ -793,12 +794,12 @@ totalBytesRead</td>
 
 </div>
 </div>
-<a class="anchor" id="a2dbd35c51b5b13c4e3e5d9a1d86a02f8"></a>
+<a class="anchor" id="a74e54d7069f2ba9c8f52b8be02c16d3f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool_t navdata_init </td>
+          <td class="memname">bool navdata_init </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -809,20 +810,20 @@ totalBytesRead</td>
 
 <p>Initialize the navdata board. </p>
 
-<p>Definition at line <a class="el" href="navdata_8c_source.html#l00169">169</a> of file <a class="el" href="navdata_8c_source.html">navdata.c</a>.</p>
+<p>Definition at line <a class="el" href="navdata_8c_source.html#l00171">171</a> of file <a class="el" href="navdata_8c_source.html">navdata.c</a>.</p>
 
-<p>References <a class="el" href="navdata_8h_source.html#l00108">ARDRONE_GPIO_PIN_NAVDATA</a>, <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00058">ARDRONE_GPIO_PORT</a>, <a class="el" href="navdata_8h_source.html#l00125">navdata_t::baro_available</a>, <a class="el" href="navdata_8h_source.html#l00124">navdata_t::baro_calibrated</a>, <a class="el" href="navdata_8h_source.html#l00117">navdata_t::checksum_errors</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="navdata_8h_source.html#l00113">navdata_t::fd</a>, <a class="el" href="gpio__ardrone_8c_source.html#l00054">gpio_set()</a>, <a class="el" href="gpio__ardrone_8c_source.html#l00102">gpio_setup_output()</a>, <a class="el" href="navdata_8h_source.html#l00126">navdata_t::imu_lost</a>, <a class="el" href="navdata_8h_source.html#l00112">navdata_t::is_initialized</a>, <a class="el" href="navdata_8h_source.html#l00119">navdata_t::last_packet_number</a>, <a class="el" href="navdata_8h_source.html#l00118">navdata_t::lost_imu_frames</a>, <a class="el" href="navdata_8c_source.html#l00057">navdata</a>, <a class="el" href="navdata_8c_source.html#l00414">navdata_baro_calib()</a>, <a class="el" href="navdata_8c_source.html#l00405">navdata_cmd_send()</a>, <a class="el" href="navdata_8h_source.html#l00103">NAVDATA_CMD_START</a>, <a class="el" href="navdata_8h_source.html#l00104">NAVDATA_CMD_STOP</a>, <a class="el" href="navdata_8h_source.html#l00101">NAVDATA_PACKET_SIZE</a>, <a class="el" href="navdata_8c_source.html#l00252">navdata_read()</a>, <a class="el" href="navdata_8h_source.html#l00116">navdata_t::packetsRead</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, <a class="el" href="navdata_8h_source.html#l00115">navdata_t::totalBytesRead</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p>References <a class="el" href="navdata_8h_source.html#l00112">ARDRONE_GPIO_PIN_NAVDATA</a>, <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00058">ARDRONE_GPIO_PORT</a>, <a class="el" href="stm32_2mcu__periph_2uart__arch_8h_source.html#l00042">B460800</a>, <a class="el" href="navdata_8h_source.html#l00129">navdata_t::baro_available</a>, <a class="el" href="navdata_8h_source.html#l00128">navdata_t::baro_calibrated</a>, <a class="el" href="navdata_8h_source.html#l00121">navdata_t::checksum_errors</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="navdata_8h_source.html#l00117">navdata_t::fd</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8h_source.html#l00093">gpio_set()</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00033">gpio_setup_output()</a>, <a class="el" href="navdata_8h_source.html#l00130">navdata_t::imu_lost</a>, <a class="el" href="navdata_8h_source.html#l00116">navdata_t::is_initialized</a>, <a class="el" href="navdata_8h_source.html#l00123">navdata_t::last_packet_number</a>, <a class="el" href="navdata_8h_source.html#l00122">navdata_t::lost_imu_frames</a>, <a class="el" href="navdata_8c_source.html#l00059">navdata</a>, <a class="el" href="navdata_8c_source.html#l00416">navdata_baro_calib()</a>, <a class="el" href="navdata_8c_source.html#l00407">navdata_cmd_send()</a>, <a class="el" href="navdata_8h_source.html#l00107">NAVDATA_CMD_START</a>, <a class="el" href="navdata_8h_source.html#l00108">NAVDATA_CMD_STOP</a>, <a class="el" href="navdata_8h_source.html#l00105">NAVDATA_PACKET_SIZE</a>, <a class="el" href="navdata_8c_source.html#l00254">navdata_read()</a>, <a class="el" href="navdata_8h_source.html#l00120">navdata_t::packetsRead</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, <a class="el" href="navdata_8c_source.html#l00133">send_navdata()</a>, and <a class="el" href="navdata_8h_source.html#l00119">navdata_t::totalBytesRead</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__ardrone2_8c_source.html#l00032">imu_impl_init()</a>, and <a class="el" href="navdata_8c_source.html#l00340">navdata_update()</a>.</p>
+<p>Referenced by <a class="el" href="imu__ardrone2_8c_source.html#l00032">imu_ardrone2_init()</a>, and <a class="el" href="navdata_8c_source.html#l00342">navdata_update()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="navdata_8h_a2dbd35c51b5b13c4e3e5d9a1d86a02f8_cgraph.png" border="0" usemap="#navdata_8h_a2dbd35c51b5b13c4e3e5d9a1d86a02f8_cgraph" alt=""/></div>
-<map name="navdata_8h_a2dbd35c51b5b13c4e3e5d9a1d86a02f8_cgraph" id="navdata_8h_a2dbd35c51b5b13c4e3e5d9a1d86a02f8_cgraph">
-<area shape="rect" id="node2" href="linux_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85" title="Set a gpio output to high level. " alt="" coords="214,5,290,32"/><area shape="rect" id="node3" href="linux_2mcu__periph_2gpio__arch_8h.html#a5b778ed65199db17a02961791e4ee8b8" title="Setup one or more pins of the given GPIO port as outputs. " alt="" coords="181,56,323,83"/><area shape="rect" id="node4" href="navdata_8c.html#a2dfd91a7adc8a78c62b2f9e4ee67b86d" title="Try to receive the baro calibration from the navdata board. " alt="" coords="179,107,325,133"/><area shape="rect" id="node6" href="navdata_8c.html#a5c73b29bf91870f07e9bfeef9a7e4c80" title="Sends a one byte command. " alt="" coords="399,157,545,184"/><area shape="rect" id="node8" href="navdata_8c.html#a2f96fc11572f535eb0e7603e1043c5e7" title="Main reading thread This is done asynchronous because the navdata board doesn&#39;t support NON_BLOCKING..." alt="" coords="197,208,307,235"/><area shape="rect" id="node9" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="153,259,351,285"/><area shape="rect" id="node5" href="navdata_8c.html#ae43ceafaca46ba7374afd15ed5b3b15a" title="Read from fd even while being interrupted. " alt="" coords="434,107,510,133"/><area shape="rect" id="node7" href="navdata_8c.html#a2a56a11d98c367fcfc5bd7afb77fd2ec" title="Write to fd even while being interrupted. " alt="" coords="593,157,671,184"/></map>
+<div class="center"><img src="navdata_8h_a74e54d7069f2ba9c8f52b8be02c16d3f_cgraph.png" border="0" usemap="#navdata_8h_a74e54d7069f2ba9c8f52b8be02c16d3f_cgraph" alt=""/></div>
+<map name="navdata_8h_a74e54d7069f2ba9c8f52b8be02c16d3f_cgraph" id="navdata_8h_a74e54d7069f2ba9c8f52b8be02c16d3f_cgraph">
+<area shape="rect" id="node2" href="chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level. " alt="" coords="214,5,290,32"/><area shape="rect" id="node3" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs. " alt="" coords="181,56,323,83"/><area shape="rect" id="node4" href="navdata_8c.html#a09ffe80e1ce558cd0ad8b72b054cd898" title="Try to receive the baro calibration from the navdata board. " alt="" coords="179,107,325,133"/><area shape="rect" id="node6" href="navdata_8c.html#a5c73b29bf91870f07e9bfeef9a7e4c80" title="Sends a one byte command. " alt="" coords="399,157,545,184"/><area shape="rect" id="node8" href="navdata_8c.html#a2f96fc11572f535eb0e7603e1043c5e7" title="Main reading thread This is done asynchronous because the navdata board doesn&#39;t support NON_BLOCKING..." alt="" coords="197,208,307,235"/><area shape="rect" id="node9" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="153,259,351,285"/><area shape="rect" id="node10" href="navdata_8c.html#a1c1d009db19810cfa226fb6f4e2cd53d" title="send_navdata" alt="" coords="196,309,308,336"/><area shape="rect" id="node5" href="navdata_8c.html#ae43ceafaca46ba7374afd15ed5b3b15a" title="Read from fd even while being interrupted. " alt="" coords="434,107,510,133"/><area shape="rect" id="node7" href="navdata_8c.html#a2a56a11d98c367fcfc5bd7afb77fd2ec" title="Write to fd even while being interrupted. " alt="" coords="593,157,671,184"/></map>
 </div>
 </p>
 
@@ -831,9 +832,9 @@ totalBytesRead</td>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="navdata_8h_a2dbd35c51b5b13c4e3e5d9a1d86a02f8_icgraph.png" border="0" usemap="#navdata_8h_a2dbd35c51b5b13c4e3e5d9a1d86a02f8_icgraph" alt=""/></div>
-<map name="navdata_8h_a2dbd35c51b5b13c4e3e5d9a1d86a02f8_icgraph" id="navdata_8h_a2dbd35c51b5b13c4e3e5d9a1d86a02f8_icgraph">
-<area shape="rect" id="node2" href="imu__ardrone2_8c.html#ad32faae58e391642ec8048cb11011998" title="must be defined by underlying hardware " alt="" coords="163,5,270,32"/><area shape="rect" id="node3" href="navdata_8h.html#aded131295af4c39b10199bae2e560438" title="Update the navdata (event loop) " alt="" coords="153,56,280,83"/></map>
+<div class="center"><img src="navdata_8h_a74e54d7069f2ba9c8f52b8be02c16d3f_icgraph.png" border="0" usemap="#navdata_8h_a74e54d7069f2ba9c8f52b8be02c16d3f_icgraph" alt=""/></div>
+<map name="navdata_8h_a74e54d7069f2ba9c8f52b8be02c16d3f_icgraph" id="navdata_8h_a74e54d7069f2ba9c8f52b8be02c16d3f_icgraph">
+<area shape="rect" id="node2" href="imu__ardrone2_8h.html#a64ed917b58febc5528b575b56549c9a4" title="imu_ardrone2_init" alt="" coords="153,5,291,32"/><area shape="rect" id="node3" href="navdata_8h.html#aded131295af4c39b10199bae2e560438" title="Update the navdata (event loop) " alt="" coords="159,56,285,83"/></map>
 </div>
 </p>
 
@@ -855,9 +856,9 @@ totalBytesRead</td>
 
 <p>Update the navdata (event loop) </p>
 
-<p>Definition at line <a class="el" href="navdata_8c_source.html#l00340">340</a> of file <a class="el" href="navdata_8c_source.html">navdata.c</a>.</p>
+<p>Definition at line <a class="el" href="navdata_8c_source.html#l00342">342</a> of file <a class="el" href="navdata_8c_source.html">navdata.c</a>.</p>
 
-<p>References <a class="el" href="abi__sender__ids_8h_source.html#l00099">AGL_SONAR_ARDRONE2_ID</a>, <a class="el" href="navdata_8c_source.html#l00492">baro_update_logic()</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="navdata_8h_source.html#l00112">navdata_t::is_initialized</a>, <a class="el" href="navdata_8h_source.html#l00119">navdata_t::last_packet_number</a>, <a class="el" href="navdata_8h_source.html#l00118">navdata_t::lost_imu_frames</a>, <a class="el" href="navdata_8c_source.html#l00446">mag_freeze_check()</a>, <a class="el" href="navdata_8h_source.html#l00121">navdata_t::measure</a>, <a class="el" href="navdata_8c_source.html#l00057">navdata</a>, <a class="el" href="navdata_8c_source.html#l00169">navdata_init()</a>, <a class="el" href="navdata_8h_source.html#l00101">NAVDATA_PACKET_SIZE</a>, <a class="el" href="navdata_8c_source.html#l00323">navdata_publish_imu()</a>, <a class="el" href="navdata_8h_source.html#l00041">navdata_measure_t::nu_trame</a>, <a class="el" href="ins__alt__float_8c_source.html#l00255">p</a>, <a class="el" href="navdata_8h_source.html#l00116">navdata_t::packetsRead</a>, <a class="el" href="navdata_8h_source.html#l00071">navdata_measure_t::pressure</a>, <a class="el" href="navdata_8c_source.html#l00077">SONAR_OFFSET</a>, <a class="el" href="navdata_8c_source.html#l00084">SONAR_SCALE</a>, <a class="el" href="navdata_8h_source.html#l00072">navdata_measure_t::temperature_pressure</a>, and <a class="el" href="navdata_8h_source.html#l00053">navdata_measure_t::ultrasound</a>.</p>
+<p>References <a class="el" href="abi__sender__ids_8h_source.html#l00099">AGL_SONAR_ARDRONE2_ID</a>, <a class="el" href="navdata_8c_source.html#l00494">baro_update_logic()</a>, <a class="el" href="navdata_8h_source.html#l00116">navdata_t::is_initialized</a>, <a class="el" href="navdata_8h_source.html#l00123">navdata_t::last_packet_number</a>, <a class="el" href="navdata_8h_source.html#l00122">navdata_t::lost_imu_frames</a>, <a class="el" href="navdata_8c_source.html#l00448">mag_freeze_check()</a>, <a class="el" href="navdata_8h_source.html#l00125">navdata_t::measure</a>, <a class="el" href="navdata_8c_source.html#l00059">navdata</a>, <a class="el" href="navdata_8c_source.html#l00171">navdata_init()</a>, <a class="el" href="navdata_8h_source.html#l00105">NAVDATA_PACKET_SIZE</a>, <a class="el" href="navdata_8c_source.html#l00325">navdata_publish_imu()</a>, <a class="el" href="navdata_8h_source.html#l00045">navdata_measure_t::nu_trame</a>, <a class="el" href="ins__alt__float_8c_source.html#l00268">p</a>, <a class="el" href="navdata_8h_source.html#l00120">navdata_t::packetsRead</a>, <a class="el" href="navdata_8h_source.html#l00075">navdata_measure_t::pressure</a>, <a class="el" href="navdata_8c_source.html#l00079">SONAR_OFFSET</a>, <a class="el" href="navdata_8c_source.html#l00086">SONAR_SCALE</a>, <a class="el" href="navdata_8h_source.html#l00076">navdata_measure_t::temperature_pressure</a>, and <a class="el" href="navdata_8h_source.html#l00057">navdata_measure_t::ultrasound</a>.</p>
 
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -866,7 +867,7 @@ totalBytesRead</td>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="navdata_8h_aded131295af4c39b10199bae2e560438_cgraph.png" border="0" usemap="#navdata_8h_aded131295af4c39b10199bae2e560438_cgraph" alt=""/></div>
 <map name="navdata_8h_aded131295af4c39b10199bae2e560438_cgraph" id="navdata_8h_aded131295af4c39b10199bae2e560438_cgraph">
-<area shape="rect" id="node2" href="navdata_8c.html#a3bcee9a8b6ed934b40a5f701085e1a2b" title="Handle the baro(pressure/temperature) logic Sometimes the temperature and pressure are switched becau..." alt="" coords="189,56,328,83"/><area shape="rect" id="node3" href="navdata_8c.html#a097d40838c4d36b21635cc59b768568a" title="Check if the magneto is frozen Unknown why this bug happens. " alt="" coords="187,107,330,133"/><area shape="rect" id="node8" href="navdata_8c.html#ac7f9799653789d8cbb05d4c8d8184bb6" title="Initialize the navdata board. " alt="" coords="209,208,309,235"/><area shape="rect" id="node14" href="navdata_8c.html#ad05e4e99b6d26c643c0841c315d292a4" title="navdata_publish_imu" alt="" coords="180,461,337,488"/><area shape="rect" id="node4" href="linux_2mcu__periph_2gpio__arch_8h.html#aa94dfa6db378d98566e22e193c7a8ab7" title="Clear a gpio output to low level. " alt="" coords="441,5,527,32"/><area shape="rect" id="node5" href="linux_2mcu__periph_2gpio__arch_8h.html#a573af743c8006ae98e309d4bc9284c85" title="Set a gpio output to high level. " alt="" coords="446,107,522,133"/><area shape="rect" id="node6" href="navdata_8c.html#a5c73b29bf91870f07e9bfeef9a7e4c80" title="Sends a one byte command. " alt="" coords="631,157,777,184"/><area shape="rect" id="node7" href="navdata_8c.html#a2a56a11d98c367fcfc5bd7afb77fd2ec" title="Write to fd even while being interrupted. " alt="" coords="825,157,903,184"/><area shape="rect" id="node9" href="linux_2mcu__periph_2gpio__arch_8h.html#a5b778ed65199db17a02961791e4ee8b8" title="Setup one or more pins of the given GPIO port as outputs. " alt="" coords="413,208,555,235"/><area shape="rect" id="node10" href="navdata_8c.html#a2dfd91a7adc8a78c62b2f9e4ee67b86d" title="Try to receive the baro calibration from the navdata board. " alt="" coords="411,259,557,285"/><area shape="rect" id="node12" href="navdata_8c.html#a2f96fc11572f535eb0e7603e1043c5e7" title="Main reading thread This is done asynchronous because the navdata board doesn&#39;t support NON_BLOCKING..." alt="" coords="429,309,539,336"/><area shape="rect" id="node13" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="385,360,583,387"/><area shape="rect" id="node11" href="navdata_8c.html#ae43ceafaca46ba7374afd15ed5b3b15a" title="Read from fd even while being interrupted. " alt="" coords="666,259,742,285"/><area shape="rect" id="node15" href="linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="412,411,556,437"/><area shape="rect" id="node17" href="ahrs__gx3_8c.html#a34a2e1e2b450191b8ab1e849239810b2" title="imu_scale_accel" alt="" coords="421,461,547,488"/><area shape="rect" id="node18" href="ahrs__gx3_8c.html#a8d63b0a61c8ffe88dd15b40843b1ae1d" title="imu_scale_gyro" alt="" coords="423,512,545,539"/><area shape="rect" id="node19" href="ahrs__gx3_8c.html#a6ca6c7f78fab9df37eb980d2b4d1b3a9" title="imu_scale_mag" alt="" coords="423,563,545,589"/><area shape="rect" id="node16" href="sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="635,411,773,437"/></map>
+<area shape="rect" id="node2" href="navdata_8c.html#a3bcee9a8b6ed934b40a5f701085e1a2b" title="Handle the baro(pressure/temperature) logic Sometimes the temperature and pressure are switched becau..." alt="" coords="189,56,328,83"/><area shape="rect" id="node3" href="navdata_8c.html#a097d40838c4d36b21635cc59b768568a" title="Check if the magneto is frozen Unknown why this bug happens. " alt="" coords="187,107,330,133"/><area shape="rect" id="node8" href="navdata_8c.html#a97f551437edc88593c5ea3af73d72efe" title="Initialize the navdata board. " alt="" coords="209,233,309,260"/><area shape="rect" id="node15" href="navdata_8c.html#ad05e4e99b6d26c643c0841c315d292a4" title="navdata_publish_imu" alt="" coords="180,512,337,539"/><area shape="rect" id="node4" href="chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level. " alt="" coords="441,5,527,32"/><area shape="rect" id="node5" href="chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level. " alt="" coords="446,107,522,133"/><area shape="rect" id="node6" href="navdata_8c.html#a5c73b29bf91870f07e9bfeef9a7e4c80" title="Sends a one byte command. " alt="" coords="643,157,789,184"/><area shape="rect" id="node7" href="navdata_8c.html#a2a56a11d98c367fcfc5bd7afb77fd2ec" title="Write to fd even while being interrupted. " alt="" coords="849,157,927,184"/><area shape="rect" id="node9" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs. " alt="" coords="413,208,555,235"/><area shape="rect" id="node10" href="navdata_8c.html#a09ffe80e1ce558cd0ad8b72b054cd898" title="Try to receive the baro calibration from the navdata board. " alt="" coords="411,259,557,285"/><area shape="rect" id="node12" href="navdata_8c.html#a2f96fc11572f535eb0e7603e1043c5e7" title="Main reading thread This is done asynchronous because the navdata board doesn&#39;t support NON_BLOCKING..." alt="" coords="429,309,539,336"/><area shape="rect" id="node13" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="385,360,583,387"/><area shape="rect" id="node14" href="navdata_8c.html#a1c1d009db19810cfa226fb6f4e2cd53d" title="send_navdata" alt="" coords="428,411,540,437"/><area shape="rect" id="node11" href="navdata_8c.html#ae43ceafaca46ba7374afd15ed5b3b15a" title="Read from fd even while being interrupted. " alt="" coords="678,259,754,285"/><area shape="rect" id="node16" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="412,461,556,488"/><area shape="rect" id="node18" href="ahrs__gx3_8c.html#a34a2e1e2b450191b8ab1e849239810b2" title="imu_scale_accel" alt="" coords="421,512,547,539"/><area shape="rect" id="node19" href="ahrs__gx3_8c.html#a8d63b0a61c8ffe88dd15b40843b1ae1d" title="imu_scale_gyro" alt="" coords="423,563,545,589"/><area shape="rect" id="node20" href="ahrs__gx3_8c.html#a6ca6c7f78fab9df37eb980d2b4d1b3a9" title="imu_scale_mag" alt="" coords="423,613,545,640"/><area shape="rect" id="node17" href="sys__time_8h.html#adb22f2652f04908fbc644c7274bf7273" title="usec_of_sys_time_ticks" alt="" coords="631,461,801,488"/></map>
 </div>
 </p>
 
@@ -883,9 +884,9 @@ totalBytesRead</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="navdata_8c_source.html#l00057">57</a> of file <a class="el" href="navdata_8c_source.html">navdata.c</a>.</p>
+<p>Definition at line <a class="el" href="navdata_8c_source.html#l00059">59</a> of file <a class="el" href="navdata_8c_source.html">navdata.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ardrone_2baro__board_8c_source.html#l00092">ardrone_baro_event()</a>, <a class="el" href="ardrone_2baro__board_8c_source.html#l00058">baro_apply_calibration()</a>, <a class="el" href="ardrone_2baro__board_8c_source.html#l00084">baro_apply_calibration_temp()</a>, <a class="el" href="navdata_8c_source.html#l00492">baro_update_logic()</a>, <a class="el" href="navdata_8c_source.html#l00446">mag_freeze_check()</a>, <a class="el" href="navdata_8c_source.html#l00414">navdata_baro_calib()</a>, <a class="el" href="navdata_8c_source.html#l00405">navdata_cmd_send()</a>, <a class="el" href="navdata_8c_source.html#l00169">navdata_init()</a>, <a class="el" href="navdata_8c_source.html#l00323">navdata_publish_imu()</a>, <a class="el" href="navdata_8c_source.html#l00252">navdata_read()</a>, and <a class="el" href="navdata_8c_source.html#l00340">navdata_update()</a>.</p>
+<p>Referenced by <a class="el" href="ardrone_2baro__board_8c_source.html#l00092">ardrone_baro_event()</a>, <a class="el" href="ardrone_2baro__board_8c_source.html#l00058">baro_apply_calibration()</a>, <a class="el" href="ardrone_2baro__board_8c_source.html#l00084">baro_apply_calibration_temp()</a>, <a class="el" href="navdata_8c_source.html#l00494">baro_update_logic()</a>, <a class="el" href="navdata_8c_source.html#l00448">mag_freeze_check()</a>, <a class="el" href="navdata_8c_source.html#l00416">navdata_baro_calib()</a>, <a class="el" href="navdata_8c_source.html#l00407">navdata_cmd_send()</a>, <a class="el" href="navdata_8c_source.html#l00171">navdata_init()</a>, <a class="el" href="navdata_8c_source.html#l00325">navdata_publish_imu()</a>, <a class="el" href="navdata_8c_source.html#l00254">navdata_read()</a>, <a class="el" href="navdata_8c_source.html#l00342">navdata_update()</a>, and <a class="el" href="navdata_8c_source.html#l00133">send_navdata()</a>.</p>
 
 </div>
 </div>
@@ -895,7 +896,7 @@ totalBytesRead</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_93997fa94db05292d114fcb1dd488916.html">ardrone</a></li><li class="navelem"><a class="el" href="navdata_8h.html">navdata.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:38 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:42 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('imu__mpu9250__i2c_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__mpu9250__i2c_8h__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2imu_2imu__mpu9250__i2c_8h" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2imu_2imu__mpu9250__i2c_8h" id="sw_2airborne_2subsystems_2imu_2imu__mpu9250__i2c_8h">
-<area shape="rect" id="node4" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="293,102,431,129"/><area shape="rect" id="node14" href="mpu9250__i2c_8h.html" title="Driver for the MPU&#45;9250 using I2C. " alt="" coords="625,95,784,136"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="393,281,571,307"/><area shape="rect" id="node11" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="77,281,268,307"/><area shape="rect" id="node13" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="280,184,444,225"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="114,363,269,389"/><area shape="rect" id="node9" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="436,363,587,389"/><area shape="rect" id="node15" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="595,281,726,307"/><area shape="rect" id="node17" href="mpu9250_8h.html" title="MPU&#45;60X0 driver common interface (I2C and SPI). " alt="" coords="1019,191,1190,218"/><area shape="rect" id="node19" href="ak8963_8h.html" title="Register and address definitions for AK8963 magnetometer. " alt="" coords="685,191,841,218"/><area shape="rect" id="node18" href="mpu9250__regs_8h.html" title="Register and address definitions for MPU&#45;9250. " alt="" coords="1020,273,1179,315"/><area shape="rect" id="node20" href="ak8963__regs_8h.html" title="peripherals/ak8963\l_regs.h" alt="" coords="801,273,945,315"/></map>
+<area shape="rect" id="node4" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="300,102,439,129"/><area shape="rect" id="node15" href="mpu9250__i2c_8h.html" title="Driver for the MPU&#45;9250 using I2C. " alt="" coords="874,95,1033,136"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="609,281,788,307"/><area shape="rect" id="node11" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="149,281,339,307"/><area shape="rect" id="node14" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="287,184,451,225"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="297,363,452,389"/><area shape="rect" id="node9" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="670,363,821,389"/><area shape="rect" id="node16" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="844,281,975,307"/><area shape="rect" id="node18" href="mpu9250_8h.html" title="MPU&#45;60X0 driver common interface (I2C and SPI). " alt="" coords="1212,191,1383,218"/><area shape="rect" id="node20" href="ak8963_8h.html" title="Register and address definitions for AK8963 magnetometer. " alt="" coords="934,191,1090,218"/><area shape="rect" id="node19" href="mpu9250__regs_8h.html" title="Register and address definitions for MPU&#45;9250. " alt="" coords="1218,273,1377,315"/><area shape="rect" id="node21" href="ak8963__regs_8h.html" title="peripherals/ak8963\l_regs.h" alt="" coords="1049,273,1193,315"/></map>
 </div>
 </div>
 <p><a href="imu__mpu9250__i2c_8h_source.html">Go to the source code of this file.</a></p>
@@ -178,11 +178,13 @@ Macros</h2></td></tr>
 <tr class="separator:afd17b3bbedb8e03a9a4f27d21b8d507e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae62fbd99f815974f80f911bfa1b1d514"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#ae62fbd99f815974f80f911bfa1b1d514">IMU_ACCEL_Z_SENS_DEN</a>&#160;&#160;&#160;400</td></tr>
 <tr class="separator:ae62fbd99f815974f80f911bfa1b1d514"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38f1122c1ee0701562b490c6e1b60609"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#a38f1122c1ee0701562b490c6e1b60609">ImuEvent</a>&#160;&#160;&#160;<a class="el" href="imu__mpu9250__spi_8h.html#af140d4e8a775be026073e67fd3080aa2">imu_mpu9250_event</a></td></tr>
-<tr class="separator:a38f1122c1ee0701562b490c6e1b60609"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a9a9bb6c468d388d1688b2b35e94633d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#a9a9bb6c468d388d1688b2b35e94633d3">imu_mpu9250_init</a> (void)</td></tr>
+<tr class="separator:a9a9bb6c468d388d1688b2b35e94633d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38ba54b488a6adbea2dfb5a060d5d8b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#a38ba54b488a6adbea2dfb5a060d5d8b5">imu_mpu9250_periodic</a> (void)</td></tr>
+<tr class="separator:a38ba54b488a6adbea2dfb5a060d5d8b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af140d4e8a775be026073e67fd3080aa2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#af140d4e8a775be026073e67fd3080aa2">imu_mpu9250_event</a> (void)</td></tr>
 <tr class="separator:af140d4e8a775be026073e67fd3080aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -231,7 +233,7 @@ mpu</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="ac28042832e82a49b98e24ffd49f438e4"></a>volatile bool_t</td>
+<a class="anchor" id="ab1c72cd8f92fed1c97a33a15b2ed4eec"></a>volatile bool</td>
 <td class="fieldname">
 slave4_ready</td>
 <td class="fielddoc">
@@ -515,20 +517,6 @@ wait_slave4_tx_buf[1]</td>
 
 </div>
 </div>
-<a class="anchor" id="a38f1122c1ee0701562b490c6e1b60609"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ImuEvent&#160;&#160;&#160;<a class="el" href="imu__mpu9250__spi_8h.html#af140d4e8a775be026073e67fd3080aa2">imu_mpu9250_event</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00082">82</a> of file <a class="el" href="imu__mpu9250__i2c_8h_source.html">imu_mpu9250_i2c.h</a>.</p>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="af140d4e8a775be026073e67fd3080aa2"></a>
 <div class="memitem">
@@ -545,6 +533,42 @@ wait_slave4_tx_buf[1]</td>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="imu__mpu9250_8c_source.html#l00047">47</a> of file <a class="el" href="imu__mpu9250_8c_source.html">imu_mpu9250.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9a9bb6c468d388d1688b2b35e94633d3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void imu_mpu9250_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="imu__mpu9250_8c_source.html#l00037">37</a> of file <a class="el" href="imu__mpu9250_8c_source.html">imu_mpu9250.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a38ba54b488a6adbea2dfb5a060d5d8b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void imu_mpu9250_periodic </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="imu__mpu9250_8c_source.html#l00042">42</a> of file <a class="el" href="imu__mpu9250_8c_source.html">imu_mpu9250.c</a>.</p>
 
 </div>
 </div>
@@ -569,7 +593,7 @@ wait_slave4_tx_buf[1]</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8b2fa0708e2db44c1b91938af97bac44.html">imu</a></li><li class="navelem"><a class="el" href="imu__mpu9250__i2c_8h.html">imu_mpu9250_i2c.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:05 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:13 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

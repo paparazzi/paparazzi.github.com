@@ -6,8 +6,6 @@ var dir_8a28edc49a666abb23d4888eaf71220c =
     [ "common_nav.h", "common__nav_8h.html", "common__nav_8h" ],
     [ "nav_survey_rectangle.c", "nav__survey__rectangle_8c.html", "nav__survey__rectangle_8c" ],
     [ "nav_survey_rectangle.h", "nav__survey__rectangle_8h.html", "nav__survey__rectangle_8h" ],
-    [ "traffic_info.c", "traffic__info_8c.html", "traffic__info_8c" ],
-    [ "traffic_info.h", "traffic__info_8h.html", "traffic__info_8h" ],
     [ "waypoints.c", "subsystems_2navigation_2waypoints_8c.html", "subsystems_2navigation_2waypoints_8c" ],
     [ "waypoints.h", "subsystems_2navigation_2waypoints_8h.html", "subsystems_2navigation_2waypoints_8h" ]
 ];

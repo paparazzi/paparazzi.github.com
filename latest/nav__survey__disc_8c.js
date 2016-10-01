@@ -12,7 +12,7 @@ var nav__survey__disc_8c =
       [ "SEGMENT", "nav__survey__disc_8c.html#ac9afc0cb207e93bdf17ae7a0f93a5c44a27b259b0b507f42df31ed13cc0a5d569", null ],
       [ "DOWNWIND", "nav__survey__disc_8c.html#ac9afc0cb207e93bdf17ae7a0f93a5c44a35abed5af66323d351a30da96835fea5", null ]
     ] ],
-    [ "nav_survey_disc_run", "nav__survey__disc_8c.html#abc5af64411a89181feaa7859934d5560", null ],
-    [ "nav_survey_disc_setup", "nav__survey__disc_8c.html#a59572c39edc6df841c1c76e8d127b066", null ],
+    [ "nav_survey_disc_run", "nav__survey__disc_8c.html#a93968959c0ddd1d6fa2c7d6ce2951344", null ],
+    [ "nav_survey_disc_setup", "nav__survey__disc_8c.html#a2211fd81c35e5c077d4b91c1904f0a98", null ],
     [ "disc_survey", "nav__survey__disc_8c.html#a5626fa655f367ae1fdf3ead964f8932a", null ]
 ];

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -143,19 +143,22 @@ $(document).ready(function(){initNavTree('mcu_8h_source.html','');});
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc">board_init</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MCU_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3">board_init2</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="ttc" id="group__mcu__periph_html_ga9af744358ff4b1e3e33d7dd170862f9b"><div class="ttname"><a href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b">mcu_init</a></div><div class="ttdeci">void mcu_init(void)</div><div class="ttdoc">Microcontroller peripherals initialization. </div><div class="ttdef"><b>Definition:</b> <a href="mcu_8c_source.html#l00071">mcu.c:71</a></div></div>
-<div class="ttc" id="group__mcu__periph_html_ga916f2adc2080b4fe88034086d107a8dc"><div class="ttname"><a href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc">board_init</a></div><div class="ttdeci">void board_init(void)</div><div class="ttdoc">Optional board init function called at the end of mcu_init(). </div><div class="ttdef"><b>Definition:</b> <a href="ardrone_2board_8c_source.html#l00060">board.c:60</a></div></div>
-<div class="ttc" id="group__mcu__periph_html_gaf44fd3e4d3d56943e4d0e89100974b07"><div class="ttname"><a href="group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07">mcu_event</a></div><div class="ttdeci">void mcu_event(void)</div><div class="ttdoc">MCU event functions. </div><div class="ttdef"><b>Definition:</b> <a href="mcu_8c_source.html#l00192">mcu.c:192</a></div></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MCU_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="ttc" id="group__mcu__periph_html_ga9af744358ff4b1e3e33d7dd170862f9b"><div class="ttname"><a href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b">mcu_init</a></div><div class="ttdeci">void mcu_init(void)</div><div class="ttdoc">Microcontroller peripherals initialization. </div><div class="ttdef"><b>Definition:</b> <a href="mcu_8c_source.html#l00076">mcu.c:76</a></div></div>
+<div class="ttc" id="group__mcu__periph_html_gaf8669c6ba2d12460cf1172edd1a5e4a3"><div class="ttname"><a href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3">board_init2</a></div><div class="ttdeci">void board_init2(void)</div><div class="ttdoc">Optional board init function called at the end of mcu_init(). </div><div class="ttdef"><b>Definition:</b> <a href="bebop_2board_8c_source.html#l00091">board.c:91</a></div></div>
+<div class="ttc" id="group__mcu__periph_html_ga916f2adc2080b4fe88034086d107a8dc"><div class="ttname"><a href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc">board_init</a></div><div class="ttdeci">void board_init(void)</div><div class="ttdoc">Optional board init function called at the start of mcu_init(). </div><div class="ttdef"><b>Definition:</b> <a href="ardrone_2board_8c_source.html#l00130">board.c:130</a></div></div>
+<div class="ttc" id="group__mcu__periph_html_gaf44fd3e4d3d56943e4d0e89100974b07"><div class="ttname"><a href="group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07">mcu_event</a></div><div class="ttdeci">void mcu_event(void)</div><div class="ttdoc">MCU event functions. </div><div class="ttdef"><b>Definition:</b> <a href="mcu_8c_source.html#l00217">mcu.c:217</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="mcu_8h.html">mcu.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:20 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:20 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

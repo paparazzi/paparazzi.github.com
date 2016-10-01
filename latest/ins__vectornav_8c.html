@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -117,6 +117,8 @@ $(document).ready(function(){initNavTree('ins__vectornav_8c.html','');});
 <p>Vectornav VN-200 INS subsystem.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="ins__vectornav_8h_source.html">subsystems/ins/ins_vectornav.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="pprz__geodetic__wgs84_8h_source.html">math/pprz_geodetic_wgs84.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for ins_vectornav.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -124,7 +126,7 @@ $(document).ready(function(){initNavTree('ins__vectornav_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__vectornav_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2ins_2ins__vectornav_8c" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2ins_2ins__vectornav_8c" id="sw_2airborne_2subsystems_2ins_2ins__vectornav_8c">
-<area shape="rect" id="node2" href="ins__vectornav_8h.html" title="Vectornav VN&#45;200 INS subsystem. " alt="" coords="1186,95,1329,136"/><area shape="rect" id="node3" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="805,259,944,285"/><area shape="rect" id="node5" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="894,333,1045,375"/><area shape="rect" id="node8" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="1559,505,1713,531"/><area shape="rect" id="node14" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1452,423,1604,449"/><area shape="rect" id="node16" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="41,423,212,449"/><area shape="rect" id="node20" href="ins_8h.html" title="Integrated Navigation System interface. " alt="" coords="1191,184,1324,211"/><area shape="rect" id="node23" href="vn200__serial_8h.html" title="Vectornav VN&#45;200 INS subsystem. " alt="" coords="432,259,621,285"/><area shape="rect" id="node27" href="pprz__isa_8h.html" title="Paparazzi atmospheric pressure conversion utilities. " alt="" coords="693,423,819,449"/><area shape="rect" id="node30" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="2217,184,2351,211"/><area shape="rect" id="node13" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1121,333,1271,375"/><area shape="rect" id="node6" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="1037,423,1161,449"/><area shape="rect" id="node7" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1237,423,1377,449"/><area shape="rect" id="node11" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1181,505,1331,531"/><area shape="rect" id="node17" href="inttypes_8h.html" title="inttypes.h" alt="" coords="455,505,540,531"/><area shape="rect" id="node21" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="1336,259,1403,285"/><area shape="rect" id="node22" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1347,333,1511,375"/><area shape="rect" id="node24" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="457,341,596,367"/><area shape="rect" id="node26" href="link__device_8h.html" title="generic device header " alt="" coords="435,423,618,449"/></map>
+<area shape="rect" id="node2" href="ins__vectornav_8h.html" title="Vectornav VN&#45;200 INS subsystem. " alt="" coords="1169,95,1311,136"/><area shape="rect" id="node32" href="pprz__geodetic__wgs84_8h.html" title="WGS&#45;84 Geoid Heights. " alt="" coords="1751,95,1902,136"/><area shape="rect" id="node33" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="1915,333,2069,375"/><area shape="rect" id="node3" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="1171,259,1309,285"/><area shape="rect" id="node5" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="1057,333,1207,375"/><area shape="rect" id="node8" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="325,519,480,546"/><area shape="rect" id="node14" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="328,430,480,457"/><area shape="rect" id="node17" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1369,430,1540,457"/><area shape="rect" id="node21" href="ins_8h.html" title="Integrated Navigation System interface. " alt="" coords="777,184,911,211"/><area shape="rect" id="node24" href="vn200__serial_8h.html" title="Vectornav VN&#45;200 INS subsystem. " alt="" coords="1572,430,1761,457"/><area shape="rect" id="node28" href="pprz__isa_8h.html" title="Paparazzi atmospheric pressure conversion utilities. " alt="" coords="1220,430,1345,457"/><area shape="rect" id="node30" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="961,184,1095,211"/><area shape="rect" id="node13" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="882,333,1033,375"/><area shape="rect" id="node6" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="970,430,1094,457"/><area shape="rect" id="node7" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="653,430,793,457"/><area shape="rect" id="node11" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="698,519,849,546"/><area shape="rect" id="node18" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1704,519,1789,546"/><area shape="rect" id="node22" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="724,259,791,285"/><area shape="rect" id="node23" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="541,333,705,375"/><area shape="rect" id="node25" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1915,519,2053,546"/><area shape="rect" id="node35" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="2183,423,2337,464"/><area shape="rect" id="node38" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="2621,512,2774,553"/></map>
 </div>
 </div>
 <p><a href="ins__vectornav_8c_source.html">Go to the source code of this file.</a></p>
@@ -136,6 +138,22 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a2ba079af519dd03472aa3e6019b3a91f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__vectornav_8c.html#a2ba079af519dd03472aa3e6019b3a91f">send_ins</a> (struct transport_tx *trans, struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
+<tr class="separator:a2ba079af519dd03472aa3e6019b3a91f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a779c8daa5c837af54a2a999a8e3cae24"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__vectornav_8c.html#a779c8daa5c837af54a2a999a8e3cae24">send_ins_z</a> (struct transport_tx *trans, struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
+<tr class="separator:a779c8daa5c837af54a2a999a8e3cae24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f4ee4900038e15bf441a679acfa913a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__vectornav_8c.html#a6f4ee4900038e15bf441a679acfa913a">send_ins_ref</a> (struct transport_tx *trans, struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
+<tr class="separator:a6f4ee4900038e15bf441a679acfa913a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf9e77d2ea5dca2b0ecbb660edc513c4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__vectornav_8c.html#acf9e77d2ea5dca2b0ecbb660edc513c4">send_vn_info</a> (struct transport_tx *trans, struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
+<tr class="separator:acf9e77d2ea5dca2b0ecbb660edc513c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad22c09e97d332fdf55989e3881b55322"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__vectornav_8c.html#ad22c09e97d332fdf55989e3881b55322">send_accel</a> (struct transport_tx *trans, struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
+<tr class="separator:ad22c09e97d332fdf55989e3881b55322"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa41528f38e1f342b35ae31c21b51d803"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__vectornav_8c.html#aa41528f38e1f342b35ae31c21b51d803">send_gyro</a> (struct transport_tx *trans, struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
+<tr class="separator:aa41528f38e1f342b35ae31c21b51d803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade53e6d9e9c15bca1c045e744f28ef0b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__vectornav_8c.html#ade53e6d9e9c15bca1c045e744f28ef0b">send_accel_scaled</a> (struct transport_tx *trans, struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
+<tr class="separator:ade53e6d9e9c15bca1c045e744f28ef0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b2b69b4fcbae31921a2794700de0d1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__vectornav_8c.html#aa1b2b69b4fcbae31921a2794700de0d1">send_gyro_scaled</a> (struct transport_tx *trans, struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
+<tr class="separator:aa1b2b69b4fcbae31921a2794700de0d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa01d3425df2eb0f33ced38c9d8fa8f05"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG</a> (&quot;USE_INS_NAV_INIT defaulting to <a class="el" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>&quot;)</td></tr>
 <tr class="separator:aa01d3425df2eb0f33ced38c9d8fa8f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcd265b9bfefa88327260439223dba81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__vectornav_8c.html#abcd265b9bfefa88327260439223dba81">ins_vectornav_event</a> (void)</td></tr>
@@ -162,9 +180,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ae1d4d184cac70cb0b57f1c291fbacb04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__vectornav_8c.html#ae1d4d184cac70cb0b57f1c291fbacb04">ins_vectornav_propagate</a> ()</td></tr>
 <tr class="memdesc:ae1d4d184cac70cb0b57f1c291fbacb04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Propagate the received states into the vehicle state machine.  <a href="#ae1d4d184cac70cb0b57f1c291fbacb04">More...</a><br /></td></tr>
 <tr class="separator:ae1d4d184cac70cb0b57f1c291fbacb04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a0d3d14a7c44e8f12052e25888e5b49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__vectornav_8c.html#a5a0d3d14a7c44e8f12052e25888e5b49">ins_init_origin_from_flightplan</a> (void)</td></tr>
-<tr class="memdesc:a5a0d3d14a7c44e8f12052e25888e5b49"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize the local origin (ltp_def) from flight plan position  <a href="#a5a0d3d14a7c44e8f12052e25888e5b49">More...</a><br /></td></tr>
-<tr class="separator:a5a0d3d14a7c44e8f12052e25888e5b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -187,57 +202,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__vectornav_8c_source.html#l00100">100</a> of file <a class="el" href="ins__vectornav_8c_source.html">ins_vectornav.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__vectornav_8c_source.html#l00118">118</a> of file <a class="el" href="ins__vectornav_8c_source.html">ins_vectornav.c</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a5a0d3d14a7c44e8f12052e25888e5b49"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ins_init_origin_from_flightplan </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>initialize the local origin (ltp_def) from flight plan position </p>
-
-<p>Definition at line <a class="el" href="ins__vectornav_8c_source.html#l00430">430</a> of file <a class="el" href="ins__vectornav_8c_source.html">ins_vectornav.c</a>.</p>
-
-<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00368">ecef_of_lla_i()</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="ins__vectornav_8c_source.html#l00031">ins_vn</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="ins__vectornav_8h_source.html#l00066">InsVectornav::ltp_def</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00060">ltp_def_from_ecef_i()</a>, and <a class="el" href="state_8h_source.html#l00440">stateSetLocalOrigin_i()</a>.</p>
-
-<p>Referenced by <a class="el" href="ins__vectornav_8c_source.html#l00123">ins_vectornav_init()</a>.</p>
-
-<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__vectornav_8c_a5a0d3d14a7c44e8f12052e25888e5b49_cgraph.png" border="0" usemap="#ins__vectornav_8c_a5a0d3d14a7c44e8f12052e25888e5b49_cgraph" alt=""/></div>
-<map name="ins__vectornav_8c_a5a0d3d14a7c44e8f12052e25888e5b49_cgraph" id="ins__vectornav_8c_a5a0d3d14a7c44e8f12052e25888e5b49_cgraph">
-<area shape="rect" id="node2" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="228,56,327,83"/><area shape="rect" id="node5" href="group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f" title="ltp_def_from_ecef_i" alt="" coords="204,107,351,133"/><area shape="rect" id="node10" href="group__state__position.html#gacc086fcd500269371c8c6eabbf3d557e" title="Set the local (flat earth) coordinate frame origin (int). " alt="" coords="199,157,356,184"/><area shape="rect" id="node3" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="437,5,537,32"/><area shape="rect" id="node4" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="435,56,539,83"/><area shape="rect" id="node6" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="lla_of_ecef_i" alt="" coords="438,107,537,133"/><area shape="rect" id="node9" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9" title="ltp_of_ecef_rmat_from\l_lla_i" alt="" coords="404,158,571,199"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="621,81,721,108"/><area shape="rect" id="node8" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title="lla_of_ecef_d" alt="" coords="619,132,723,159"/></map>
-</div>
-</p>
-
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__vectornav_8c_a5a0d3d14a7c44e8f12052e25888e5b49_icgraph.png" border="0" usemap="#ins__vectornav_8c_a5a0d3d14a7c44e8f12052e25888e5b49_icgraph" alt=""/></div>
-<map name="ins__vectornav_8c_a5a0d3d14a7c44e8f12052e25888e5b49_icgraph" id="ins__vectornav_8c_a5a0d3d14a7c44e8f12052e25888e5b49_icgraph">
-<area shape="rect" id="node2" href="ins__vectornav_8h.html#abccde82fac73ee723125e1173db630c0" title="Initialize Vectornav struct. " alt="" coords="199,13,335,39"/><area shape="rect" id="node3" href="ins__vectornav__wrapper_8h.html#a465857e7a84da756dbee9d867dcdb140" title="ins_vectornav_register" alt="" coords="383,13,549,39"/></map>
-</div>
-</p>
-
-</div>
-</div>
 <a class="anchor" id="a499959c00e7121c179fc8f13471abe3a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -254,17 +223,17 @@ Variables</h2></td></tr>
 
 <p>Check INS status. </p>
 
-<p>Definition at line <a class="el" href="ins__vectornav_8c_source.html#l00263">263</a> of file <a class="el" href="ins__vectornav_8c_source.html">ins_vectornav.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__vectornav_8c_source.html#l00282">282</a> of file <a class="el" href="ins__vectornav_8c_source.html">ins_vectornav.c</a>.</p>
 
-<p>References <a class="el" href="ins__vectornav_8h_source.html#l00105">InsVectornav::err</a>, <a class="el" href="ins__vectornav_8h_source.html#l00103">InsVectornav::ins_status</a>, <a class="el" href="ins__vectornav_8c_source.html#l00031">ins_vn</a>, and <a class="el" href="ins__vectornav_8h_source.html#l00104">InsVectornav::mode</a>.</p>
+<p>References <a class="el" href="ins__vectornav_8h_source.html#l00104">InsVectornav::err</a>, <a class="el" href="ins__vectornav_8h_source.html#l00102">InsVectornav::ins_status</a>, <a class="el" href="ins__vectornav_8c_source.html#l00032">ins_vn</a>, and <a class="el" href="ins__vectornav_8h_source.html#l00103">InsVectornav::mode</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__vectornav_8c_source.html#l00317">ins_vectornav_propagate()</a>.</p>
+<p>Referenced by <a class="el" href="ins__vectornav_8c_source.html#l00336">ins_vectornav_propagate()</a>.</p>
 
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__vectornav_8c_a499959c00e7121c179fc8f13471abe3a_icgraph.png" border="0" usemap="#ins__vectornav_8c_a499959c00e7121c179fc8f13471abe3a_icgraph" alt=""/></div>
 <map name="ins__vectornav_8c_a499959c00e7121c179fc8f13471abe3a_icgraph" id="ins__vectornav_8c_a499959c00e7121c179fc8f13471abe3a_icgraph">
 <area shape="rect" id="node2" href="ins__vectornav_8h.html#a5e1e0a3cd2eead4dc89bec75e33e5618" title="Propagate the received states into the vehicle state machine. " alt="" coords="208,13,391,39"/><area shape="rect" id="node3" href="ins__vectornav_8h.html#a5ba37a2e4e80d50b1ce1ada6e0f294fe" title="Read received data. " alt="" coords="439,5,585,47"/><area shape="rect" id="node4" href="ins__vectornav_8h.html#abcd265b9bfefa88327260439223dba81" title="Event handling for Vectornav. " alt="" coords="633,13,787,39"/></map>
@@ -289,18 +258,18 @@ Variables</h2></td></tr>
 
 <p>Event handling for Vectornav. </p>
 
-<p>Definition at line <a class="el" href="ins__vectornav_8c_source.html#l00107">107</a> of file <a class="el" href="ins__vectornav_8c_source.html">ins_vectornav.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__vectornav_8c_source.html#l00125">125</a> of file <a class="el" href="ins__vectornav_8c_source.html">ins_vectornav.c</a>.</p>
 
-<p>References <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="ins__vectornav_8c_source.html#l00173">ins_vectornav_read_message()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00031">ins_vn</a>, <a class="el" href="vn200__serial_8h_source.html#l00056">VNPacket::msg_available</a>, <a class="el" href="vn200__serial_8c_source.html#l00077">vn200_event()</a>, and <a class="el" href="ins__vectornav_8h_source.html#l00083">InsVectornav::vn_packet</a>.</p>
+<p>References <a class="el" href="ins__vectornav_8c_source.html#l00192">ins_vectornav_read_message()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00032">ins_vn</a>, <a class="el" href="vn200__serial_8h_source.html#l00056">VNPacket::msg_available</a>, <a class="el" href="vn200__serial_8c_source.html#l00077">vn200_event()</a>, and <a class="el" href="ins__vectornav_8h_source.html#l00082">InsVectornav::vn_packet</a>.</p>
 
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__vectornav_8c_abcd265b9bfefa88327260439223dba81_cgraph.png" border="0" usemap="#ins__vectornav_8c_abcd265b9bfefa88327260439223dba81_cgraph" alt=""/></div>
 <map name="ins__vectornav_8c_abcd265b9bfefa88327260439223dba81_cgraph" id="ins__vectornav_8c_abcd265b9bfefa88327260439223dba81_cgraph">
-<area shape="rect" id="node2" href="ins__vectornav_8c.html#a5ba37a2e4e80d50b1ce1ada6e0f294fe" title="Read received data. " alt="" coords="207,571,353,613"/><area shape="rect" id="node44" href="vn200__serial_8c.html#a3d81e2dac2ecada08b2be854a776b118" title="vn200_event" alt="" coords="228,1181,332,1208"/><area shape="rect" id="node3" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="421,528,564,555"/><area shape="rect" id="node4" href="ins__vectornav_8c.html#ae1d4d184cac70cb0b57f1c291fbacb04" title="Propagate the received states into the vehicle state machine. " alt="" coords="401,579,584,605"/><area shape="rect" id="node5" href="group__math__algebra__float.html#ga3f7d064248ddf6a411369b55c0282913" title="rotate anglular rates by rotation matrix. " alt="" coords="652,157,803,184"/><area shape="rect" id="node6" href="group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="649,208,806,235"/><area shape="rect" id="node8" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title="float_rmat_of_quat" alt="" coords="1091,233,1234,260"/><area shape="rect" id="node9" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="649,309,805,336"/><area shape="rect" id="node10" href="ins__vectornav_8c.html#ada8a6e3914d85aaaab41ea445bc03ffd" title="Convert yaw, pitch, and roll data from VectorNav to correct attitude yaw(0), pitch(1), roll(2) &#45;&gt; phi, theta, psi [deg] &#45;&gt; rad. " alt="" coords="638,361,817,402"/><area shape="rect" id="node11" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="Quaternion from Euler angles. " alt="" coords="652,427,803,453"/><area shape="rect" id="node12" href="group__math__algebra__float.html#ga5588e3c0fa0a1e62bcdb53e4d7cb6bda" title="Composition (multiplication) of two rotation matrices. " alt="" coords="662,477,793,504"/><area shape="rect" id="node13" href="group__state__attitude.html#ga4d07df56be94afd0512e08fac961dbd3" title="Set vehicle body attitude from rotation matrix (float). " alt="" coords="632,528,823,555"/><area shape="rect" id="node15" href="group__state__velocity.html#gae6549b15cd961047c89481ab2d87171f" title="Set ground speed in local NED coordinates (float). " alt="" coords="650,579,805,605"/><area shape="rect" id="node16" href="group__math__algebra__float.html#gac852ba0c3ec48acfd8abaefbf933d4b6" title="rotate 3D vector by transposed rotation matrix. " alt="" coords="638,629,817,656"/><area shape="rect" id="node17" href="group__state__acceleration.html#ga27b8f24af6ddce14389efaa5ec119967" title="Set acceleration in NED coordinates (float). " alt="" coords="653,680,801,707"/><area shape="rect" id="node18" href="group__state__position.html#gaaa9965929d321521b6a903a74e848e45" title="Set position from LLA coordinates (int). " alt="" coords="650,731,805,757"/><area shape="rect" id="node19" href="pprz__geodetic__float_8c.html#a624697fcf875d02030d046161c4609b7" title="ltp_def_from_lla_f" alt="" coords="1293,781,1427,808"/><area shape="rect" id="node21" href="pprz__geodetic__float_8c.html#a9703caac26c4b1272c010037fd661956" title="ecef_of_ned_point_f" alt="" coords="1088,832,1237,859"/><area shape="rect" id="node23" href="group__state__position.html#ga82afc52cbca54c85318ca480e4c9856f" title="Get position in ECEF coordinates (int). " alt="" coords="645,883,810,909"/><area shape="rect" id="node28" href="ins__vectornav_8c.html#a48605f7fd6e8e6f51c0bc9afc2121ce8" title="Find maximum uncertainty (NED) position accuracy in cm. " alt="" coords="640,933,815,960"/><area shape="rect" id="node29" href="ins__vectornav_8c.html#a7bf18e5ab81e5a59a5e68c19fe375f72" title="Set speed (velocity) uncertainty (NED) speed accuracy in cm/s. " alt="" coords="641,984,814,1011"/><area shape="rect" id="node30" href="ins__vectornav_8c.html#a499959c00e7121c179fc8f13471abe3a" title="Check INS status. " alt="" coords="650,1035,805,1077"/><area shape="rect" id="node31" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="645,1109,809,1136"/><area shape="rect" id="node37" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="650,5,805,32"/><area shape="rect" id="node40" href="group__state__acceleration.html#gab55b482bd9fe875141bafd34beda8bb4" title="Get acceleration in NED coordinates (int). " alt="" coords="653,56,801,83"/><area shape="rect" id="node42" href="linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="655,107,799,133"/><area shape="rect" id="node7" href="group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title="orientationCalcRMat_f" alt="" coords="875,208,1036,235"/><area shape="rect" id="node14" href="group__math__orientation__representation.html#ga2c06304a23d68ae280c1cc5f4f01386a" title="Set vehicle body attitude from rotation matrix (float). " alt="" coords="877,528,1033,555"/><area shape="rect" id="node20" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1483,933,1583,960"/><area shape="rect" id="node22" href="pprz__geodetic__float_8c.html#a197187e7b04018beddfcd6a7a4ab3972" title="ecef_of_enu_point_f" alt="" coords="1285,832,1435,859"/><area shape="rect" id="node24" href="group__state__position.html#gab32ef3aae5246e773c9fd2817220dab3" title="stateCalcPositionEcef_i" alt="" coords="871,883,1040,909"/><area shape="rect" id="node25" href="group__math__geodetic__int.html#gaf92579b72a2adb1aaac73fae89553fca" title="Convert a local NED position to ECEF. " alt="" coords="1093,933,1232,960"/><area shape="rect" id="node27" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="1311,984,1409,1011"/><area shape="rect" id="node26" href="group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF. " alt="" coords="1291,933,1429,960"/><area shape="rect" id="node32" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="871,1119,1039,1145"/><area shape="rect" id="node33" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="1093,1187,1232,1213"/><area shape="rect" id="node34" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="1088,1237,1237,1264"/><area shape="rect" id="node35" href="group__math__geodetic__int.html#ga6618f634b774eaf7182dfec83d68f141" title="Convert a point from LLA to local NED. " alt="" coords="1095,1035,1230,1061"/><area shape="rect" id="node36" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="1113,1085,1212,1112"/><area shape="rect" id="node38" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="876,5,1035,32"/><area shape="rect" id="node39" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="1091,31,1234,57"/><area shape="rect" id="node41" href="group__state__acceleration.html#ga48146adcdcd09bb704335795c6624ad8" title="stateCalcAccelNed_i" alt="" coords="879,56,1031,83"/><area shape="rect" id="node43" href="sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="887,107,1024,133"/><area shape="rect" id="node45" href="linux_2mcu__periph_2uart__arch_8c.html#abd0dcae4715bc91bdf3369785a9b6c87" title="Check UART for available chars in receive buffer. " alt="" coords="654,1181,801,1208"/><area shape="rect" id="node46" href="vn200__serial_8c.html#ab4e1d57f1c673bb4b96a74cdb9b63480" title="vn200_read_buffer" alt="" coords="422,1232,563,1259"/><area shape="rect" id="node47" href="linux_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039" title="uart_getch" alt="" coords="682,1283,773,1309"/><area shape="rect" id="node48" href="vn200__serial_8c.html#ac1686e2d6ad01507cfe022f2abbc8f7d" title="Packet Collection &amp; state machine. " alt="" coords="675,1232,779,1259"/><area shape="rect" id="node49" href="vn200__serial_8c.html#ae28fd86966eafa975b528e8253ccfe40" title="Verify checksum. " alt="" coords="913,1275,998,1301"/><area shape="rect" id="node50" href="vn200__serial_8c.html#a4534893dcb2459077ceb871a388ad0ce" title="Calculates the 16&#45;bit CRC for the given ASCII or binary message. " alt="" coords="1111,1288,1215,1315"/></map>
+<area shape="rect" id="node2" href="ins__vectornav_8c.html#a5ba37a2e4e80d50b1ce1ada6e0f294fe" title="Read received data. " alt="" coords="207,597,353,638"/><area shape="rect" id="node44" href="vn200__serial_8c.html#a3d81e2dac2ecada08b2be854a776b118" title="vn200_event" alt="" coords="228,1219,332,1245"/><area shape="rect" id="node3" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="421,553,564,580"/><area shape="rect" id="node4" href="ins__vectornav_8c.html#ae1d4d184cac70cb0b57f1c291fbacb04" title="Propagate the received states into the vehicle state machine. " alt="" coords="401,604,584,631"/><area shape="rect" id="node5" href="group__math__algebra__float.html#ga3f7d064248ddf6a411369b55c0282913" title="rotate anglular rates by rotation matrix. " alt="" coords="652,157,803,184"/><area shape="rect" id="node6" href="group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="649,208,806,235"/><area shape="rect" id="node8" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title="float_rmat_of_quat" alt="" coords="1093,233,1235,260"/><area shape="rect" id="node9" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="649,309,805,336"/><area shape="rect" id="node10" href="ins__vectornav_8c.html#ada8a6e3914d85aaaab41ea445bc03ffd" title="Convert yaw, pitch, and roll data from VectorNav to correct attitude yaw(0), pitch(1), roll(2) &#45;&gt; phi, theta, psi [deg] &#45;&gt; rad. " alt="" coords="638,361,817,402"/><area shape="rect" id="node11" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="Quaternion from Euler angles. " alt="" coords="652,427,803,453"/><area shape="rect" id="node12" href="group__math__algebra__float.html#ga5588e3c0fa0a1e62bcdb53e4d7cb6bda" title="Composition (multiplication) of two rotation matrices. " alt="" coords="662,477,793,504"/><area shape="rect" id="node13" href="group__state__attitude.html#ga4d07df56be94afd0512e08fac961dbd3" title="Set vehicle body attitude from rotation matrix (float). " alt="" coords="632,528,823,555"/><area shape="rect" id="node15" href="group__state__velocity.html#gae6549b15cd961047c89481ab2d87171f" title="Set ground speed in local NED coordinates (float). " alt="" coords="650,579,805,605"/><area shape="rect" id="node16" href="group__math__algebra__float.html#gac852ba0c3ec48acfd8abaefbf933d4b6" title="rotate 3D vector by transposed rotation matrix. " alt="" coords="638,629,817,656"/><area shape="rect" id="node17" href="group__state__acceleration.html#ga27b8f24af6ddce14389efaa5ec119967" title="Set acceleration in NED coordinates (float). " alt="" coords="653,680,801,707"/><area shape="rect" id="node18" href="group__state__position.html#gaaa9965929d321521b6a903a74e848e45" title="Set position from LLA coordinates (int). " alt="" coords="650,731,805,757"/><area shape="rect" id="node19" href="pprz__geodetic__float_8c.html#a624697fcf875d02030d046161c4609b7" title="ltp_def_from_lla_f" alt="" coords="1294,781,1429,808"/><area shape="rect" id="node21" href="pprz__geodetic__float_8c.html#a9703caac26c4b1272c010037fd661956" title="ecef_of_ned_point_f" alt="" coords="1089,832,1239,859"/><area shape="rect" id="node23" href="group__state__position.html#ga82afc52cbca54c85318ca480e4c9856f" title="Get position in ECEF coordinates (int). " alt="" coords="645,883,810,909"/><area shape="rect" id="node27" href="group__math__geodetic__wgs84.html#ga982ac769d3c18ca65b364e0588874100" title="Get WGS84 ellipsoid/geoid separation. " alt="" coords="657,934,797,975"/><area shape="rect" id="node28" href="ins__vectornav_8c.html#a48605f7fd6e8e6f51c0bc9afc2121ce8" title="Find maximum uncertainty (NED) position accuracy in cm. " alt="" coords="640,1000,815,1027"/><area shape="rect" id="node29" href="ins__vectornav_8c.html#a7bf18e5ab81e5a59a5e68c19fe375f72" title="Set speed (velocity) uncertainty (NED) speed accuracy in cm/s. " alt="" coords="641,1051,814,1077"/><area shape="rect" id="node30" href="ins__vectornav_8c.html#a499959c00e7121c179fc8f13471abe3a" title="Check INS status. " alt="" coords="650,1102,805,1143"/><area shape="rect" id="node31" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="645,1168,809,1195"/><area shape="rect" id="node37" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="650,5,805,32"/><area shape="rect" id="node40" href="group__state__acceleration.html#gab55b482bd9fe875141bafd34beda8bb4" title="Get acceleration in NED coordinates (int). " alt="" coords="653,56,801,83"/><area shape="rect" id="node42" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="655,107,799,133"/><area shape="rect" id="node7" href="group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title="orientationCalcRMat_f" alt="" coords="875,208,1037,235"/><area shape="rect" id="node14" href="group__math__orientation__representation.html#ga2c06304a23d68ae280c1cc5f4f01386a" title="Set vehicle body attitude from rotation matrix (float). " alt="" coords="878,528,1034,555"/><area shape="rect" id="node20" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1484,933,1584,960"/><area shape="rect" id="node22" href="pprz__geodetic__float_8c.html#a197187e7b04018beddfcd6a7a4ab3972" title="ecef_of_enu_point_f" alt="" coords="1287,832,1436,859"/><area shape="rect" id="node24" href="group__state__position.html#gab32ef3aae5246e773c9fd2817220dab3" title="stateCalcPositionEcef_i" alt="" coords="871,883,1041,909"/><area shape="rect" id="node25" href="group__math__geodetic__int.html#gaf92579b72a2adb1aaac73fae89553fca" title="Convert a local NED position to ECEF. " alt="" coords="1095,933,1233,960"/><area shape="rect" id="node26" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="1312,984,1411,1011"/><area shape="rect" id="node32" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="872,1152,1040,1179"/><area shape="rect" id="node33" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="1292,1085,1431,1112"/><area shape="rect" id="node34" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="1089,1237,1239,1264"/><area shape="rect" id="node35" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED. " alt="" coords="1101,1035,1227,1061"/><area shape="rect" id="node36" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="1115,1085,1213,1112"/><area shape="rect" id="node38" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="877,5,1035,32"/><area shape="rect" id="node39" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="1093,31,1235,57"/><area shape="rect" id="node41" href="group__state__acceleration.html#ga48146adcdcd09bb704335795c6624ad8" title="stateCalcAccelNed_i" alt="" coords="880,56,1032,83"/><area shape="rect" id="node43" href="sys__time_8h.html#adb22f2652f04908fbc644c7274bf7273" title="usec_of_sys_time_ticks" alt="" coords="871,107,1041,133"/><area shape="rect" id="node45" href="linux_2mcu__periph_2uart__arch_8c.html#abd0dcae4715bc91bdf3369785a9b6c87" title="Check UART for available chars in receive buffer. " alt="" coords="654,1219,801,1245"/><area shape="rect" id="node46" href="vn200__serial_8c.html#ab4e1d57f1c673bb4b96a74cdb9b63480" title="vn200_read_buffer" alt="" coords="422,1269,563,1296"/><area shape="rect" id="node47" href="chibios_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039" title="uart_getch" alt="" coords="682,1269,773,1296"/><area shape="rect" id="node48" href="vn200__serial_8c.html#ac1686e2d6ad01507cfe022f2abbc8f7d" title="Packet Collection &amp; state machine. " alt="" coords="675,1320,779,1347"/><area shape="rect" id="node49" href="vn200__serial_8c.html#ae28fd86966eafa975b528e8253ccfe40" title="Verify checksum. " alt="" coords="913,1320,999,1347"/><area shape="rect" id="node50" href="vn200__serial_8c.html#a4534893dcb2459077ceb871a388ad0ce" title="Calculates the 16&#45;bit CRC for the given ASCII or binary message. " alt="" coords="1112,1320,1216,1347"/></map>
 </div>
 </p>
 
@@ -322,31 +291,18 @@ Variables</h2></td></tr>
 
 <p>Initialize Vectornav struct. </p>
 
-<p>Definition at line <a class="el" href="ins__vectornav_8c_source.html#l00123">123</a> of file <a class="el" href="ins__vectornav_8c_source.html">ins_vectornav.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__vectornav_8c_source.html#l00141">141</a> of file <a class="el" href="ins__vectornav_8c_source.html">ins_vectornav.c</a>.</p>
 
-<p>References <a class="el" href="ins__vectornav_8h_source.html#l00115">InsVectornav::body_to_imu</a>, <a class="el" href="vn200__serial_8h_source.html#l00057">VNPacket::chksm_error</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00146">FLOAT_VECT3_ZERO</a>, <a class="el" href="vn200__serial_8h_source.html#l00065">VNPacket::framing_error</a>, <a class="el" href="sys__time_8h_source.html#l00124">get_sys_time_float()</a>, <a class="el" href="vn200__serial_8h_source.html#l00058">VNPacket::hdr_error</a>, <a class="el" href="ins__vectornav_8c_source.html#l00430">ins_init_origin_from_flightplan()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00031">ins_vn</a>, <a class="el" href="ins__vectornav_8h_source.html#l00058">INS_VN_BODY_TO_IMU_PHI</a>, <a class="el" href="ins__vectornav_8h_source.html#l00060">INS_VN_BODY_TO_IMU_PSI</a>, <a class="el" href="ins__vectornav_8h_source.html#l00059">INS_VN_BODY_TO_IMU_THETA</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00287">INT32_VECT3_ZERO</a>, <a class="el" href="ins__vectornav_8h_source.html#l00101">InsVectornav::lin_accel</a>, <a class="el" href="ins__vectornav_8h_source.html#l00072">InsVectornav::ltp_accel_i</a>, <a class="el" href="ins__vectornav_8h_source.html#l00067">InsVectornav::ltp_initialized</a>, <a class="el" href="ins__vectornav_8h_source.html#l00070">InsVectornav::ltp_pos_i</a>, <a class="el" href="ins__vectornav_8h_source.html#l00071">InsVectornav::ltp_speed_i</a>, <a class="el" href="vn200__serial_8h_source.html#l00056">VNPacket::msg_available</a>, <a class="el" href="vn200__serial_8h_source.html#l00061">VNPacket::msg_idx</a>, <a class="el" href="vn200__serial_8h_source.html#l00064">VNPacket::noise_error</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00189">orientationSetEulers_f()</a>, <a class="el" href="vn200__serial_8h_source.html#l00063">VNPacket::overrun_error</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, <a class="el" href="vn200__serial_8h_source.html#l00060">VNPacket::status</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="ins__vectornav_8h_source.html#l00106">InsVectornav::vel_body</a>, <a class="el" href="ins__vectornav_8h_source.html#l00095">InsVectornav::vel_ned</a>, <a class="el" href="ins__vectornav_8h_source.html#l00083">InsVectornav::vn_packet</a>, <a class="el" href="ins__vectornav_8h_source.html#l00084">InsVectornav::vn_status</a>, <a class="el" href="ins__vectornav_8h_source.html#l00087">InsVectornav::vn_time</a>, <a class="el" href="vn200__serial_8h_source.html#l00048">VNMsgSync</a>, and <a class="el" href="vn200__serial_8h_source.html#l00072">VNNotTracking</a>.</p>
+<p>References <a class="el" href="ins__vectornav_8h_source.html#l00114">InsVectornav::body_to_imu</a>, <a class="el" href="vn200__serial_8h_source.html#l00057">VNPacket::chksm_error</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00147">FLOAT_VECT3_ZERO</a>, <a class="el" href="vn200__serial_8h_source.html#l00065">VNPacket::framing_error</a>, <a class="el" href="sys__time_8h_source.html#l00129">get_sys_time_float()</a>, <a class="el" href="vn200__serial_8h_source.html#l00058">VNPacket::hdr_error</a>, <a class="el" href="ins_8c_source.html#l00039">ins_init_origin_i_from_flightplan()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00032">ins_vn</a>, <a class="el" href="ins__vectornav_8h_source.html#l00057">INS_VN_BODY_TO_IMU_PHI</a>, <a class="el" href="ins__vectornav_8h_source.html#l00059">INS_VN_BODY_TO_IMU_PSI</a>, <a class="el" href="ins__vectornav_8h_source.html#l00058">INS_VN_BODY_TO_IMU_THETA</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00288">INT32_VECT3_ZERO</a>, <a class="el" href="ins__vectornav_8h_source.html#l00100">InsVectornav::lin_accel</a>, <a class="el" href="ins__vectornav_8h_source.html#l00071">InsVectornav::ltp_accel_i</a>, <a class="el" href="ins__vectornav_8h_source.html#l00065">InsVectornav::ltp_def</a>, <a class="el" href="ins__vectornav_8h_source.html#l00066">InsVectornav::ltp_initialized</a>, <a class="el" href="ins__vectornav_8h_source.html#l00069">InsVectornav::ltp_pos_i</a>, <a class="el" href="ins__vectornav_8h_source.html#l00070">InsVectornav::ltp_speed_i</a>, <a class="el" href="vn200__serial_8h_source.html#l00056">VNPacket::msg_available</a>, <a class="el" href="vn200__serial_8h_source.html#l00061">VNPacket::msg_idx</a>, <a class="el" href="vn200__serial_8h_source.html#l00064">VNPacket::noise_error</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00189">orientationSetEulers_f()</a>, <a class="el" href="vn200__serial_8h_source.html#l00063">VNPacket::overrun_error</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00092">send_accel()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00104">send_accel_scaled()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00098">send_gyro()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00110">send_gyro_scaled()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00037">send_ins()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00051">send_ins_ref()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00045">send_ins_z()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00061">send_vn_info()</a>, <a class="el" href="vn200__serial_8h_source.html#l00060">VNPacket::status</a>, <a class="el" href="ins__vectornav_8h_source.html#l00105">InsVectornav::vel_body</a>, <a class="el" href="ins__vectornav_8h_source.html#l00094">InsVectornav::vel_ned</a>, <a class="el" href="ins__vectornav_8h_source.html#l00084">InsVectornav::vn_freq</a>, <a class="el" href="ins__vectornav_8h_source.html#l00082">InsVectornav::vn_packet</a>, <a class="el" href="ins__vectornav_8h_source.html#l00083">InsVectornav::vn_status</a>, <a class="el" href="ins__vectornav_8h_source.html#l00086">InsVectornav::vn_time</a>, <a class="el" href="vn200__serial_8h_source.html#l00048">VNMsgSync</a>, and <a class="el" href="vn200__serial_8h_source.html#l00072">VNNotTracking</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__vectornav__wrapper_8c_source.html#l00032">ins_vectornav_register()</a>.</p>
-
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__vectornav_8c_abccde82fac73ee723125e1173db630c0_cgraph.png" border="0" usemap="#ins__vectornav_8c_abccde82fac73ee723125e1173db630c0_cgraph" alt=""/></div>
 <map name="ins__vectornav_8c_abccde82fac73ee723125e1173db630c0_cgraph" id="ins__vectornav_8c_abccde82fac73ee723125e1173db630c0_cgraph">
-<area shape="rect" id="node2" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="217,48,359,75"/><area shape="rect" id="node3" href="ins__vectornav_8c.html#a5a0d3d14a7c44e8f12052e25888e5b49" title="initialize the local origin (ltp_def) from flight plan position " alt="" coords="215,99,361,141"/><area shape="rect" id="node13" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float). " alt="" coords="207,165,369,192"/><area shape="rect" id="node14" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="189,216,387,243"/><area shape="rect" id="node4" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="464,56,563,83"/><area shape="rect" id="node7" href="group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f" title="ltp_def_from_ecef_i" alt="" coords="440,107,587,133"/><area shape="rect" id="node12" href="group__state__position.html#gacc086fcd500269371c8c6eabbf3d557e" title="Set the local (flat earth) coordinate frame origin (int). " alt="" coords="435,157,592,184"/><area shape="rect" id="node5" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="673,5,773,32"/><area shape="rect" id="node6" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="671,56,775,83"/><area shape="rect" id="node8" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="lla_of_ecef_i" alt="" coords="674,107,773,133"/><area shape="rect" id="node11" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9" title="ltp_of_ecef_rmat_from\l_lla_i" alt="" coords="640,158,807,199"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="857,81,957,108"/><area shape="rect" id="node10" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title="lla_of_ecef_d" alt="" coords="855,132,959,159"/></map>
-</div>
-</p>
-
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__vectornav_8c_abccde82fac73ee723125e1173db630c0_icgraph.png" border="0" usemap="#ins__vectornav_8c_abccde82fac73ee723125e1173db630c0_icgraph" alt=""/></div>
-<map name="ins__vectornav_8c_abccde82fac73ee723125e1173db630c0_icgraph" id="ins__vectornav_8c_abccde82fac73ee723125e1173db630c0_icgraph">
-<area shape="rect" id="node2" href="ins__vectornav__wrapper_8h.html#a465857e7a84da756dbee9d867dcdb140" title="ins_vectornav_register" alt="" coords="189,5,356,32"/></map>
+<area shape="rect" id="node2" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="217,27,359,53"/><area shape="rect" id="node3" href="ins_8c.html#ac9ba03cf9d41e4536c73f218d3439e76" title="initialize the local origin (ltp_def in fixed point) from flight plan position " alt="" coords="211,78,365,119"/><area shape="rect" id="node10" href="group__math__orientation__representation.html#ga7c6b7dc05095bcaba232c62358335d81" title="Set vehicle body attitude from euler angles (float). " alt="" coords="207,144,369,171"/><area shape="rect" id="node11" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="189,195,387,221"/><area shape="rect" id="node12" href="ins__vectornav_8c.html#ad22c09e97d332fdf55989e3881b55322" title="send_accel" alt="" coords="241,245,335,272"/><area shape="rect" id="node13" href="ins__vectornav_8c.html#ade53e6d9e9c15bca1c045e744f28ef0b" title="send_accel_scaled" alt="" coords="217,296,359,323"/><area shape="rect" id="node14" href="ins__vectornav_8c.html#aa41528f38e1f342b35ae31c21b51d803" title="send_gyro" alt="" coords="244,347,332,373"/><area shape="rect" id="node15" href="ins__vectornav_8c.html#aa1b2b69b4fcbae31921a2794700de0d1" title="send_gyro_scaled" alt="" coords="220,397,356,424"/><area shape="rect" id="node16" href="ins__vectornav_8c.html#a2ba079af519dd03472aa3e6019b3a91f" title="send_ins" alt="" coords="249,448,327,475"/><area shape="rect" id="node17" href="ins__vectornav_8c.html#a6f4ee4900038e15bf441a679acfa913a" title="send_ins_ref" alt="" coords="237,499,339,525"/><area shape="rect" id="node18" href="ins__vectornav_8c.html#a779c8daa5c837af54a2a999a8e3cae24" title="send_ins_z" alt="" coords="242,549,334,576"/><area shape="rect" id="node19" href="ins__vectornav_8c.html#acf9e77d2ea5dca2b0ecbb660edc513c4" title="send_vn_info" alt="" coords="235,600,341,627"/><area shape="rect" id="node4" href="group__math__geodetic__int.html#gaf0b761a4e44c92481ac96b623c34ef70" title="ltp_def_from_lla_i" alt="" coords="447,60,580,87"/><area shape="rect" id="node9" href="group__state__position.html#gacc086fcd500269371c8c6eabbf3d557e" title="Set the local (flat earth) coordinate frame origin (int). " alt="" coords="435,111,592,137"/><area shape="rect" id="node5" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="674,31,773,57"/><area shape="rect" id="node8" href="group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9" title="ltp_of_ecef_rmat_from\l_lla_i" alt="" coords="640,82,807,123"/><area shape="rect" id="node6" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="857,5,957,32"/><area shape="rect" id="node7" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="855,56,959,83"/></map>
 </div>
 </p>
 
@@ -368,28 +324,28 @@ Variables</h2></td></tr>
 
 <p>Propagate the received states into the vehicle state machine. </p>
 
-<p>Definition at line <a class="el" href="ins__vectornav_8c_source.html#l00317">317</a> of file <a class="el" href="ins__vectornav_8c_source.html">ins_vectornav.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__vectornav_8c_source.html#l00336">336</a> of file <a class="el" href="ins__vectornav_8c_source.html">ins_vectornav.c</a>.</p>
 
-<p>References <a class="el" href="ins__vectornav_8h_source.html#l00107">InsVectornav::accel</a>, <a class="el" href="ins__vectornav_8h_source.html#l00111">InsVectornav::accel_i</a>, <a class="el" href="pprz__algebra_8h_source.html#l00734">ACCELS_BFP_OF_REAL</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00057">LlaCoor_f::alt</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="ins__vectornav_8h_source.html#l00092">InsVectornav::attitude</a>, <a class="el" href="ins__vectornav_8h_source.html#l00115">InsVectornav::body_to_imu</a>, <a class="el" href="gps_8h_source.html#l00087">GpsState::course</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00150">ECEF_BFP_OF_REAL</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00158">ecef_of_ned_point_f()</a>, <a class="el" href="gps_8h_source.html#l00079">GpsState::ecef_pos</a>, <a class="el" href="gps_8h_source.html#l00083">GpsState::ecef_vel</a>, <a class="el" href="gps_8h_source.html#l00093">GpsState::fix</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00451">float_quat_of_eulers()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00078">float_rmat_comp()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00216">float_rmat_of_quat()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00130">float_rmat_ratemult()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00120">float_rmat_transp_vmult()</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8h_source.html#l00039">get_sys_time_usec()</a>, <a class="el" href="gps_8c_source.html#l00040">gps</a>, <a class="el" href="gps_8h_source.html#l00044">GPS_FIX_3D</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00118">GPS_UBX_ID</a>, <a class="el" href="gps_8h_source.html#l00063">GPS_VALID_COURSE_BIT</a>, <a class="el" href="gps_8h_source.html#l00057">GPS_VALID_POS_ECEF_BIT</a>, <a class="el" href="gps_8h_source.html#l00058">GPS_VALID_POS_LLA_BIT</a>, <a class="el" href="gps_8h_source.html#l00060">GPS_VALID_VEL_ECEF_BIT</a>, <a class="el" href="gps_8h_source.html#l00085">GpsState::gspeed</a>, <a class="el" href="ins__vectornav_8h_source.html#l00108">InsVectornav::gyro</a>, <a class="el" href="ins__vectornav_8h_source.html#l00112">InsVectornav::gyro_i</a>, <a class="el" href="gps_8h_source.html#l00082">GpsState::hmsl</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00174">IMU_ASPIRIN_ID</a>, <a class="el" href="ins__vectornav_8c_source.html#l00263">ins_vectornav_check_status()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00282">ins_vectornav_set_pacc()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00273">ins_vectornav_set_sacc()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00301">ins_vectornav_yaw_pitch_roll_to_attitude()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00031">ins_vn</a>, <a class="el" href="gps_8h_source.html#l00100">GpsState::last_3dfix_ticks</a>, <a class="el" href="gps_8h_source.html#l00101">GpsState::last_3dfix_time</a>, <a class="el" href="gps_8h_source.html#l00102">GpsState::last_msg_ticks</a>, <a class="el" href="gps_8h_source.html#l00103">GpsState::last_msg_time</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00055">LlaCoor_f::lat</a>, <a class="el" href="ins__vectornav_8h_source.html#l00101">InsVectornav::lin_accel</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00167">LLA_BFP_OF_REAL</a>, <a class="el" href="ins__vectornav_8h_source.html#l00074">InsVectornav::lla_pos</a>, <a class="el" href="gps_8h_source.html#l00080">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00056">LlaCoor_f::lon</a>, <a class="el" href="ins__vectornav_8h_source.html#l00076">InsVectornav::ltp_accel_f</a>, <a class="el" href="ins__vectornav_8h_source.html#l00072">InsVectornav::ltp_accel_i</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00061">ltp_def_from_lla_f()</a>, <a class="el" href="ins__vectornav_8h_source.html#l00070">InsVectornav::ltp_pos_i</a>, <a class="el" href="ins__vectornav_8h_source.html#l00071">InsVectornav::ltp_speed_i</a>, <a class="el" href="sys__time_8h_source.html#l00069">sys_time::nb_sec</a>, <a class="el" href="sys__time_8h_source.html#l00070">sys_time::nb_sec_rem</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00234">orientationGetRMat_f()</a>, <a class="el" href="ins__vectornav_8h_source.html#l00094">InsVectornav::pos_lla</a>, <a class="el" href="pprz__algebra_8h_source.html#l00698">RATES_BFP_OF_REAL</a>, <a class="el" href="state_8h_source.html#l00991">stateGetAccelNed_i()</a>, <a class="el" href="state_8h_source.html#l00639">stateGetPositionEcef_i()</a>, <a class="el" href="state_8h_source.html#l00648">stateGetPositionNed_i()</a>, <a class="el" href="state_8h_source.html#l00840">stateGetSpeedNed_i()</a>, <a class="el" href="state_8h_source.html#l00973">stateSetAccelNed_f()</a>, <a class="el" href="state_8h_source.html#l01152">stateSetBodyRates_f()</a>, <a class="el" href="state_8h_source.html#l01070">stateSetNedToBodyRMat_f()</a>, <a class="el" href="state_8h_source.html#l00530">stateSetPositionLla_i()</a>, <a class="el" href="state_8h_source.html#l00792">stateSetSpeedNed_f()</a>, <a class="el" href="gps_8h_source.html#l00077">GpsState::valid_fields</a>, <a class="el" href="pprz__algebra_8h_source.html#l00124">VECT3_ASSIGN</a>, <a class="el" href="ins__vectornav_8h_source.html#l00095">InsVectornav::vel_ned</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00051">EcefCoor_i::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00054">FloatVect3::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00052">EcefCoor_i::y</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::y</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00053">EcefCoor_i::z</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::z</a>.</p>
+<p>References <a class="el" href="ins__vectornav_8h_source.html#l00106">InsVectornav::accel</a>, <a class="el" href="ins__vectornav_8h_source.html#l00110">InsVectornav::accel_i</a>, <a class="el" href="pprz__algebra_8h_source.html#l00734">ACCELS_BFP_OF_REAL</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00057">LlaCoor_f::alt</a>, <a class="el" href="ins__vectornav_8h_source.html#l00091">InsVectornav::attitude</a>, <a class="el" href="ins__vectornav_8h_source.html#l00114">InsVectornav::body_to_imu</a>, <a class="el" href="gps_8h_source.html#l00093">GpsState::course</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00154">ECEF_BFP_OF_REAL</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00157">ecef_of_ned_point_f()</a>, <a class="el" href="gps_8h_source.html#l00085">GpsState::ecef_pos</a>, <a class="el" href="gps_8h_source.html#l00089">GpsState::ecef_vel</a>, <a class="el" href="gps_8h_source.html#l00099">GpsState::fix</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00451">float_quat_of_eulers()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00078">float_rmat_comp()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00216">float_rmat_of_quat()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00130">float_rmat_ratemult()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00120">float_rmat_transp_vmult()</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">get_sys_time_usec()</a>, <a class="el" href="gps_8c_source.html#l00075">gps</a>, <a class="el" href="gps_8h_source.html#l00039">GPS_FIX_3D</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00126">GPS_UBX_ID</a>, <a class="el" href="gps_8h_source.html#l00054">GPS_VALID_COURSE_BIT</a>, <a class="el" href="gps_8h_source.html#l00053">GPS_VALID_HMSL_BIT</a>, <a class="el" href="gps_8h_source.html#l00048">GPS_VALID_POS_ECEF_BIT</a>, <a class="el" href="gps_8h_source.html#l00049">GPS_VALID_POS_LLA_BIT</a>, <a class="el" href="gps_8h_source.html#l00051">GPS_VALID_VEL_ECEF_BIT</a>, <a class="el" href="gps_8h_source.html#l00091">GpsState::gspeed</a>, <a class="el" href="ins__vectornav_8h_source.html#l00107">InsVectornav::gyro</a>, <a class="el" href="ins__vectornav_8h_source.html#l00111">InsVectornav::gyro_i</a>, <a class="el" href="gps_8h_source.html#l00088">GpsState::hmsl</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00189">IMU_ASPIRIN_ID</a>, <a class="el" href="ins__vectornav_8c_source.html#l00282">ins_vectornav_check_status()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00301">ins_vectornav_set_pacc()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00292">ins_vectornav_set_sacc()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00320">ins_vectornav_yaw_pitch_roll_to_attitude()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00032">ins_vn</a>, <a class="el" href="gps_8h_source.html#l00106">GpsState::last_3dfix_ticks</a>, <a class="el" href="gps_8h_source.html#l00107">GpsState::last_3dfix_time</a>, <a class="el" href="gps_8h_source.html#l00108">GpsState::last_msg_ticks</a>, <a class="el" href="gps_8h_source.html#l00109">GpsState::last_msg_time</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00055">LlaCoor_f::lat</a>, <a class="el" href="ins__vectornav_8h_source.html#l00100">InsVectornav::lin_accel</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00171">LLA_BFP_OF_REAL</a>, <a class="el" href="ins__vectornav_8h_source.html#l00073">InsVectornav::lla_pos</a>, <a class="el" href="gps_8h_source.html#l00086">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00056">LlaCoor_f::lon</a>, <a class="el" href="ins__vectornav_8h_source.html#l00075">InsVectornav::ltp_accel_f</a>, <a class="el" href="ins__vectornav_8h_source.html#l00071">InsVectornav::ltp_accel_i</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00060">ltp_def_from_lla_f()</a>, <a class="el" href="ins__vectornav_8h_source.html#l00069">InsVectornav::ltp_pos_i</a>, <a class="el" href="ins__vectornav_8h_source.html#l00070">InsVectornav::ltp_speed_i</a>, <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, <a class="el" href="sys__time_8h_source.html#l00073">sys_time::nb_sec_rem</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00234">orientationGetRMat_f()</a>, <a class="el" href="ins__vectornav_8h_source.html#l00093">InsVectornav::pos_lla</a>, <a class="el" href="pprz__algebra_8h_source.html#l00698">RATES_BFP_OF_REAL</a>, <a class="el" href="state_8h_source.html#l01002">stateGetAccelNed_i()</a>, <a class="el" href="state_8h_source.html#l00650">stateGetPositionEcef_i()</a>, <a class="el" href="state_8h_source.html#l00659">stateGetPositionNed_i()</a>, <a class="el" href="state_8h_source.html#l00851">stateGetSpeedNed_i()</a>, <a class="el" href="state_8h_source.html#l00984">stateSetAccelNed_f()</a>, <a class="el" href="state_8h_source.html#l01163">stateSetBodyRates_f()</a>, <a class="el" href="state_8h_source.html#l01081">stateSetNedToBodyRMat_f()</a>, <a class="el" href="state_8h_source.html#l00541">stateSetPositionLla_i()</a>, <a class="el" href="state_8h_source.html#l00803">stateSetSpeedNed_f()</a>, <a class="el" href="gps_8h_source.html#l00082">GpsState::valid_fields</a>, <a class="el" href="pprz__algebra_8h_source.html#l00124">VECT3_ASSIGN</a>, <a class="el" href="ins__vectornav_8h_source.html#l00094">InsVectornav::vel_ned</a>, <a class="el" href="pprz__geodetic__wgs84_8h_source.html#l00106">wgs84_ellipsoid_to_geoid_f()</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00051">EcefCoor_i::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00052">EcefCoor_i::y</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00053">EcefCoor_i::z</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__vectornav_8c_source.html#l00173">ins_vectornav_read_message()</a>.</p>
+<p>Referenced by <a class="el" href="ins__vectornav_8c_source.html#l00192">ins_vectornav_read_message()</a>.</p>
 
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__vectornav_8c_ae1d4d184cac70cb0b57f1c291fbacb04_cgraph.png" border="0" usemap="#ins__vectornav_8c_ae1d4d184cac70cb0b57f1c291fbacb04_cgraph" alt=""/></div>
 <map name="ins__vectornav_8c_ae1d4d184cac70cb0b57f1c291fbacb04_cgraph" id="ins__vectornav_8c_ae1d4d184cac70cb0b57f1c291fbacb04_cgraph">
-<area shape="rect" id="node2" href="pprz__geodetic__float_8c.html#a9703caac26c4b1272c010037fd661956" title="ecef_of_ned_point_f" alt="" coords="692,5,841,32"/><area shape="rect" id="node4" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="Quaternion from Euler angles. " alt="" coords="256,379,407,405"/><area shape="rect" id="node5" href="group__math__algebra__float.html#ga5588e3c0fa0a1e62bcdb53e4d7cb6bda" title="Composition (multiplication) of two rotation matrices. " alt="" coords="266,429,397,456"/><area shape="rect" id="node6" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title="float_rmat_of_quat" alt="" coords="695,560,838,587"/><area shape="rect" id="node7" href="group__math__algebra__float.html#ga3f7d064248ddf6a411369b55c0282913" title="rotate anglular rates by rotation matrix. " alt="" coords="256,581,407,608"/><area shape="rect" id="node8" href="group__math__algebra__float.html#gac852ba0c3ec48acfd8abaefbf933d4b6" title="rotate 3D vector by transposed rotation matrix. " alt="" coords="242,632,421,659"/><area shape="rect" id="node9" href="linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="259,683,403,709"/><area shape="rect" id="node11" href="ins__vectornav_8c.html#a499959c00e7121c179fc8f13471abe3a" title="Check INS status. " alt="" coords="254,734,409,775"/><area shape="rect" id="node12" href="ins__vectornav_8c.html#a48605f7fd6e8e6f51c0bc9afc2121ce8" title="Find maximum uncertainty (NED) position accuracy in cm. " alt="" coords="244,800,419,827"/><area shape="rect" id="node13" href="ins__vectornav_8c.html#a7bf18e5ab81e5a59a5e68c19fe375f72" title="Set speed (velocity) uncertainty (NED) speed accuracy in cm/s. " alt="" coords="245,851,418,877"/><area shape="rect" id="node14" href="ins__vectornav_8c.html#ada8a6e3914d85aaaab41ea445bc03ffd" title="Convert yaw, pitch, and roll data from VectorNav to correct attitude yaw(0), pitch(1), roll(2) &#45;&gt; phi, theta, psi [deg] &#45;&gt; rad. " alt="" coords="242,902,421,943"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#a624697fcf875d02030d046161c4609b7" title="ltp_def_from_lla_f" alt="" coords="492,220,627,247"/><area shape="rect" id="node17" href="group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="253,531,410,557"/><area shape="rect" id="node19" href="group__state__acceleration.html#gab55b482bd9fe875141bafd34beda8bb4" title="Get acceleration in NED coordinates (int). " alt="" coords="257,968,405,995"/><area shape="rect" id="node23" href="group__state__position.html#ga82afc52cbca54c85318ca480e4c9856f" title="Get position in ECEF coordinates (int). " alt="" coords="249,137,414,164"/><area shape="rect" id="node30" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="249,328,413,355"/><area shape="rect" id="node42" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="254,1019,409,1045"/><area shape="rect" id="node44" href="group__state__acceleration.html#ga27b8f24af6ddce14389efaa5ec119967" title="Set acceleration in NED coordinates (float). " alt="" coords="257,1069,405,1096"/><area shape="rect" id="node45" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="253,1120,409,1147"/><area shape="rect" id="node46" href="group__state__attitude.html#ga4d07df56be94afd0512e08fac961dbd3" title="Set vehicle body attitude from rotation matrix (float). " alt="" coords="236,1171,427,1197"/><area shape="rect" id="node48" href="group__state__position.html#gaaa9965929d321521b6a903a74e848e45" title="Set position from LLA coordinates (int). " alt="" coords="254,1221,409,1248"/><area shape="rect" id="node49" href="group__state__velocity.html#gae6549b15cd961047c89481ab2d87171f" title="Set ground speed in local NED coordinates (float). " alt="" coords="254,1272,409,1299"/><area shape="rect" id="node3" href="pprz__geodetic__float_8c.html#a197187e7b04018beddfcd6a7a4ab3972" title="ecef_of_enu_point_f" alt="" coords="889,5,1039,32"/><area shape="rect" id="node10" href="sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="491,683,628,709"/><area shape="rect" id="node16" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1111,233,1211,260"/><area shape="rect" id="node18" href="group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title="orientationCalcRMat_f" alt="" coords="479,556,640,583"/><area shape="rect" id="node20" href="group__state__acceleration.html#ga48146adcdcd09bb704335795c6624ad8" title="stateCalcAccelNed_i" alt="" coords="483,968,635,995"/><area shape="rect" id="node21" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="695,993,838,1020"/><area shape="rect" id="node22" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU. " alt="" coords="893,993,1035,1020"/><area shape="rect" id="node24" href="group__state__position.html#gab32ef3aae5246e773c9fd2817220dab3" title="stateCalcPositionEcef_i" alt="" coords="475,107,644,133"/><area shape="rect" id="node25" href="group__math__geodetic__int.html#gaf92579b72a2adb1aaac73fae89553fca" title="Convert a local NED position to ECEF. " alt="" coords="697,56,836,83"/><area shape="rect" id="node28" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="915,309,1013,336"/><area shape="rect" id="node26" href="group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF. " alt="" coords="895,56,1033,83"/><area shape="rect" id="node27" href="group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF. " alt="" coords="1089,56,1232,83"/><area shape="rect" id="node29" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1109,309,1213,336"/><area shape="rect" id="node31" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="475,383,643,409"/><area shape="rect" id="node32" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="697,408,836,435"/><area shape="rect" id="node35" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="692,459,841,485"/><area shape="rect" id="node37" href="group__math__geodetic__int.html#ga6618f634b774eaf7182dfec83d68f141" title="Convert a point from LLA to local NED. " alt="" coords="699,357,834,384"/><area shape="rect" id="node39" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="717,509,816,536"/><area shape="rect" id="node33" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="895,411,1033,437"/><area shape="rect" id="node34" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1087,385,1235,412"/><area shape="rect" id="node36" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="889,461,1039,488"/><area shape="rect" id="node38" href="group__math__geodetic__int.html#ga9307e97057d51e781def8a03dea804f6" title="Convert a point from ECEF to local NED. " alt="" coords="890,360,1038,387"/><area shape="rect" id="node40" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="891,579,1037,605"/><area shape="rect" id="node41" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="896,513,1032,554"/><area shape="rect" id="node43" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="480,1019,639,1045"/><area shape="rect" id="node47" href="group__math__orientation__representation.html#ga2c06304a23d68ae280c1cc5f4f01386a" title="Set vehicle body attitude from rotation matrix (float). " alt="" coords="481,1171,637,1197"/></map>
+<area shape="rect" id="node2" href="pprz__geodetic__float_8c.html#a9703caac26c4b1272c010037fd661956" title="ecef_of_ned_point_f" alt="" coords="693,5,843,32"/><area shape="rect" id="node4" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="Quaternion from Euler angles. " alt="" coords="256,344,407,371"/><area shape="rect" id="node5" href="group__math__algebra__float.html#ga5588e3c0fa0a1e62bcdb53e4d7cb6bda" title="Composition (multiplication) of two rotation matrices. " alt="" coords="266,395,397,421"/><area shape="rect" id="node6" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title="float_rmat_of_quat" alt="" coords="697,512,839,539"/><area shape="rect" id="node7" href="group__math__algebra__float.html#ga3f7d064248ddf6a411369b55c0282913" title="rotate anglular rates by rotation matrix. " alt="" coords="256,547,407,573"/><area shape="rect" id="node8" href="group__math__algebra__float.html#gac852ba0c3ec48acfd8abaefbf933d4b6" title="rotate 3D vector by transposed rotation matrix. " alt="" coords="242,597,421,624"/><area shape="rect" id="node9" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="259,648,403,675"/><area shape="rect" id="node11" href="ins__vectornav_8c.html#a499959c00e7121c179fc8f13471abe3a" title="Check INS status. " alt="" coords="254,699,409,741"/><area shape="rect" id="node12" href="ins__vectornav_8c.html#a48605f7fd6e8e6f51c0bc9afc2121ce8" title="Find maximum uncertainty (NED) position accuracy in cm. " alt="" coords="244,765,419,792"/><area shape="rect" id="node13" href="ins__vectornav_8c.html#a7bf18e5ab81e5a59a5e68c19fe375f72" title="Set speed (velocity) uncertainty (NED) speed accuracy in cm/s. " alt="" coords="245,816,418,843"/><area shape="rect" id="node14" href="ins__vectornav_8c.html#ada8a6e3914d85aaaab41ea445bc03ffd" title="Convert yaw, pitch, and roll data from VectorNav to correct attitude yaw(0), pitch(1), roll(2) &#45;&gt; phi, theta, psi [deg] &#45;&gt; rad. " alt="" coords="242,867,421,909"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#a624697fcf875d02030d046161c4609b7" title="ltp_def_from_lla_f" alt="" coords="493,215,627,241"/><area shape="rect" id="node17" href="group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="253,496,410,523"/><area shape="rect" id="node19" href="group__state__acceleration.html#gab55b482bd9fe875141bafd34beda8bb4" title="Get acceleration in NED coordinates (int). " alt="" coords="257,933,405,960"/><area shape="rect" id="node23" href="group__state__position.html#ga82afc52cbca54c85318ca480e4c9856f" title="Get position in ECEF coordinates (int). " alt="" coords="249,135,414,161"/><area shape="rect" id="node30" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="249,293,413,320"/><area shape="rect" id="node41" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="254,984,409,1011"/><area shape="rect" id="node43" href="group__state__acceleration.html#ga27b8f24af6ddce14389efaa5ec119967" title="Set acceleration in NED coordinates (float). " alt="" coords="257,1035,405,1061"/><area shape="rect" id="node44" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="253,1085,409,1112"/><area shape="rect" id="node45" href="group__state__attitude.html#ga4d07df56be94afd0512e08fac961dbd3" title="Set vehicle body attitude from rotation matrix (float). " alt="" coords="236,1136,427,1163"/><area shape="rect" id="node47" href="group__state__position.html#gaaa9965929d321521b6a903a74e848e45" title="Set position from LLA coordinates (int). " alt="" coords="254,1187,409,1213"/><area shape="rect" id="node48" href="group__state__velocity.html#gae6549b15cd961047c89481ab2d87171f" title="Set ground speed in local NED coordinates (float). " alt="" coords="254,1237,409,1264"/><area shape="rect" id="node49" href="group__math__geodetic__wgs84.html#ga982ac769d3c18ca65b364e0588874100" title="Get WGS84 ellipsoid/geoid separation. " alt="" coords="261,1289,401,1330"/><area shape="rect" id="node3" href="pprz__geodetic__float_8c.html#a197187e7b04018beddfcd6a7a4ab3972" title="ecef_of_enu_point_f" alt="" coords="891,5,1040,32"/><area shape="rect" id="node10" href="sys__time_8h.html#adb22f2652f04908fbc644c7274bf7273" title="usec_of_sys_time_ticks" alt="" coords="475,648,645,675"/><area shape="rect" id="node16" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1109,233,1209,260"/><area shape="rect" id="node18" href="group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title="orientationCalcRMat_f" alt="" coords="479,508,641,535"/><area shape="rect" id="node20" href="group__state__acceleration.html#ga48146adcdcd09bb704335795c6624ad8" title="stateCalcAccelNed_i" alt="" coords="484,933,636,960"/><area shape="rect" id="node21" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="697,959,839,985"/><area shape="rect" id="node22" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU. " alt="" coords="894,959,1037,985"/><area shape="rect" id="node24" href="group__state__position.html#gab32ef3aae5246e773c9fd2817220dab3" title="stateCalcPositionEcef_i" alt="" coords="475,107,645,133"/><area shape="rect" id="node25" href="group__math__geodetic__int.html#gaf92579b72a2adb1aaac73fae89553fca" title="Convert a local NED position to ECEF. " alt="" coords="699,56,837,83"/><area shape="rect" id="node28" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="916,309,1015,336"/><area shape="rect" id="node26" href="group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF. " alt="" coords="896,56,1035,83"/><area shape="rect" id="node27" href="group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF. " alt="" coords="1088,56,1231,83"/><area shape="rect" id="node29" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1107,309,1211,336"/><area shape="rect" id="node31" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="476,335,644,361"/><area shape="rect" id="node32" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="896,360,1035,387"/><area shape="rect" id="node35" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="693,461,843,488"/><area shape="rect" id="node37" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED. " alt="" coords="705,309,831,336"/><area shape="rect" id="node38" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="719,411,817,437"/><area shape="rect" id="node33" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="1090,360,1229,387"/><area shape="rect" id="node34" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1279,360,1427,387"/><area shape="rect" id="node36" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="891,528,1040,555"/><area shape="rect" id="node39" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="892,411,1039,437"/><area shape="rect" id="node40" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="897,462,1033,503"/><area shape="rect" id="node42" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="481,984,639,1011"/><area shape="rect" id="node46" href="group__math__orientation__representation.html#ga2c06304a23d68ae280c1cc5f4f01386a" title="Set vehicle body attitude from rotation matrix (float). " alt="" coords="482,1136,638,1163"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__vectornav_8c_ae1d4d184cac70cb0b57f1c291fbacb04_icgraph.png" border="0" usemap="#ins__vectornav_8c_ae1d4d184cac70cb0b57f1c291fbacb04_icgraph" alt=""/></div>
 <map name="ins__vectornav_8c_ae1d4d184cac70cb0b57f1c291fbacb04_icgraph" id="ins__vectornav_8c_ae1d4d184cac70cb0b57f1c291fbacb04_icgraph">
 <area shape="rect" id="node2" href="ins__vectornav_8h.html#a5ba37a2e4e80d50b1ce1ada6e0f294fe" title="Read received data. " alt="" coords="236,5,383,47"/><area shape="rect" id="node3" href="ins__vectornav_8h.html#abcd265b9bfefa88327260439223dba81" title="Event handling for Vectornav. " alt="" coords="431,13,584,39"/></map>
@@ -414,28 +370,28 @@ Variables</h2></td></tr>
 
 <p>Read received data. </p>
 
-<p>Definition at line <a class="el" href="ins__vectornav_8c_source.html#l00173">173</a> of file <a class="el" href="ins__vectornav_8c_source.html">ins_vectornav.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__vectornav_8c_source.html#l00192">192</a> of file <a class="el" href="ins__vectornav_8c_source.html">ins_vectornav.c</a>.</p>
 
-<p>References <a class="el" href="ins__vectornav_8h_source.html#l00107">InsVectornav::accel</a>, <a class="el" href="ins__vectornav_8h_source.html#l00092">InsVectornav::attitude</a>, <a class="el" href="gps_8h_source.html#l00093">GpsState::fix</a>, <a class="el" href="sys__time_8h_source.html#l00124">get_sys_time_float()</a>, <a class="el" href="gps_8c_source.html#l00040">gps</a>, <a class="el" href="ins__vectornav_8h_source.html#l00108">InsVectornav::gyro</a>, <a class="el" href="ins__vectornav_8h_source.html#l00103">InsVectornav::ins_status</a>, <a class="el" href="ins__vectornav_8c_source.html#l00317">ins_vectornav_propagate()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00031">ins_vn</a>, <a class="el" href="ins__vectornav_8h_source.html#l00101">InsVectornav::lin_accel</a>, <a class="el" href="vn200__serial_8h_source.html#l00059">VNPacket::msg_buf</a>, <a class="el" href="gps_8h_source.html#l00092">GpsState::num_sv</a>, <a class="el" href="ins__vectornav_8h_source.html#l00094">InsVectornav::pos_lla</a>, <a class="el" href="ins__vectornav_8h_source.html#l00099">InsVectornav::pos_u</a>, <a class="el" href="ins__vectornav_8h_source.html#l00091">InsVectornav::timestamp</a>, <a class="el" href="gps_8h_source.html#l00095">GpsState::tow</a>, <a class="el" href="ins__vectornav_8h_source.html#l00106">InsVectornav::vel_body</a>, <a class="el" href="ins__vectornav_8h_source.html#l00095">InsVectornav::vel_ned</a>, <a class="el" href="ins__vectornav_8h_source.html#l00100">InsVectornav::vel_u</a>, <a class="el" href="vn200__serial_8h_source.html#l00043">VN_HEADER_SIZE</a>, <a class="el" href="ins__vectornav_8h_source.html#l00083">InsVectornav::vn_packet</a>, <a class="el" href="ins__vectornav_8h_source.html#l00087">InsVectornav::vn_time</a>, and <a class="el" href="ins__vectornav_8h_source.html#l00102">InsVectornav::ypr_u</a>.</p>
+<p>References <a class="el" href="ins__vectornav_8h_source.html#l00106">InsVectornav::accel</a>, <a class="el" href="ins__vectornav_8h_source.html#l00091">InsVectornav::attitude</a>, <a class="el" href="gps_8h_source.html#l00099">GpsState::fix</a>, <a class="el" href="sys__time_8h_source.html#l00129">get_sys_time_float()</a>, <a class="el" href="gps_8c_source.html#l00075">gps</a>, <a class="el" href="ins__vectornav_8h_source.html#l00107">InsVectornav::gyro</a>, <a class="el" href="nps__radio__control__spektrum_8c_source.html#l00102">idx</a>, <a class="el" href="ins__vectornav_8h_source.html#l00102">InsVectornav::ins_status</a>, <a class="el" href="ins__vectornav_8c_source.html#l00336">ins_vectornav_propagate()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00032">ins_vn</a>, <a class="el" href="ins__vectornav_8h_source.html#l00100">InsVectornav::lin_accel</a>, <a class="el" href="vn200__serial_8h_source.html#l00059">VNPacket::msg_buf</a>, <a class="el" href="gps_8h_source.html#l00098">GpsState::num_sv</a>, <a class="el" href="ins__vectornav_8h_source.html#l00093">InsVectornav::pos_lla</a>, <a class="el" href="ins__vectornav_8h_source.html#l00098">InsVectornav::pos_u</a>, <a class="el" href="ins__vectornav_8h_source.html#l00090">InsVectornav::timestamp</a>, <a class="el" href="gps_8h_source.html#l00101">GpsState::tow</a>, <a class="el" href="ins__vectornav_8h_source.html#l00105">InsVectornav::vel_body</a>, <a class="el" href="ins__vectornav_8h_source.html#l00094">InsVectornav::vel_ned</a>, <a class="el" href="ins__vectornav_8h_source.html#l00099">InsVectornav::vel_u</a>, <a class="el" href="vn200__serial_8h_source.html#l00043">VN_HEADER_SIZE</a>, <a class="el" href="ins__vectornav_8h_source.html#l00082">InsVectornav::vn_packet</a>, <a class="el" href="ins__vectornav_8h_source.html#l00086">InsVectornav::vn_time</a>, and <a class="el" href="ins__vectornav_8h_source.html#l00101">InsVectornav::ypr_u</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__vectornav_8c_source.html#l00107">ins_vectornav_event()</a>.</p>
+<p>Referenced by <a class="el" href="ins__vectornav_8c_source.html#l00125">ins_vectornav_event()</a>.</p>
 
-<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__vectornav_8c_a5ba37a2e4e80d50b1ce1ada6e0f294fe_cgraph.png" border="0" usemap="#ins__vectornav_8c_a5ba37a2e4e80d50b1ce1ada6e0f294fe_cgraph" alt=""/></div>
 <map name="ins__vectornav_8c_a5ba37a2e4e80d50b1ce1ada6e0f294fe_cgraph" id="ins__vectornav_8c_a5ba37a2e4e80d50b1ce1ada6e0f294fe_cgraph">
-<area shape="rect" id="node2" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="220,635,363,662"/><area shape="rect" id="node3" href="ins__vectornav_8c.html#ae1d4d184cac70cb0b57f1c291fbacb04" title="Propagate the received states into the vehicle state machine. " alt="" coords="200,686,383,712"/><area shape="rect" id="node4" href="pprz__geodetic__float_8c.html#a9703caac26c4b1272c010037fd661956" title="ecef_of_ned_point_f" alt="" coords="887,16,1036,43"/><area shape="rect" id="node6" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="Quaternion from Euler angles. " alt="" coords="451,352,601,379"/><area shape="rect" id="node7" href="group__math__algebra__float.html#ga5588e3c0fa0a1e62bcdb53e4d7cb6bda" title="Composition (multiplication) of two rotation matrices. " alt="" coords="461,403,591,430"/><area shape="rect" id="node8" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title="float_rmat_of_quat" alt="" coords="890,523,1033,550"/><area shape="rect" id="node9" href="group__math__algebra__float.html#ga3f7d064248ddf6a411369b55c0282913" title="rotate anglular rates by rotation matrix. " alt="" coords="451,555,601,582"/><area shape="rect" id="node10" href="group__math__algebra__float.html#gac852ba0c3ec48acfd8abaefbf933d4b6" title="rotate 3D vector by transposed rotation matrix. " alt="" coords="437,606,615,632"/><area shape="rect" id="node11" href="linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="454,656,598,683"/><area shape="rect" id="node13" href="ins__vectornav_8c.html#a499959c00e7121c179fc8f13471abe3a" title="Check INS status. " alt="" coords="449,708,603,749"/><area shape="rect" id="node14" href="ins__vectornav_8c.html#a48605f7fd6e8e6f51c0bc9afc2121ce8" title="Find maximum uncertainty (NED) position accuracy in cm. " alt="" coords="439,774,613,800"/><area shape="rect" id="node15" href="ins__vectornav_8c.html#a7bf18e5ab81e5a59a5e68c19fe375f72" title="Set speed (velocity) uncertainty (NED) speed accuracy in cm/s. " alt="" coords="439,824,613,851"/><area shape="rect" id="node16" href="ins__vectornav_8c.html#ada8a6e3914d85aaaab41ea445bc03ffd" title="Convert yaw, pitch, and roll data from VectorNav to correct attitude yaw(0), pitch(1), roll(2) &#45;&gt; phi, theta, psi [deg] &#45;&gt; rad. " alt="" coords="437,876,615,917"/><area shape="rect" id="node17" href="pprz__geodetic__float_8c.html#a624697fcf875d02030d046161c4609b7" title="ltp_def_from_lla_f" alt="" coords="687,184,821,211"/><area shape="rect" id="node19" href="group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="447,504,605,531"/><area shape="rect" id="node21" href="group__state__acceleration.html#gab55b482bd9fe875141bafd34beda8bb4" title="Get acceleration in NED coordinates (int). " alt="" coords="452,942,600,968"/><area shape="rect" id="node25" href="group__state__position.html#ga82afc52cbca54c85318ca480e4c9856f" title="Get position in ECEF coordinates (int). " alt="" coords="443,124,609,151"/><area shape="rect" id="node32" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="444,302,608,328"/><area shape="rect" id="node43" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="449,992,603,1019"/><area shape="rect" id="node45" href="group__state__acceleration.html#ga27b8f24af6ddce14389efaa5ec119967" title="Set acceleration in NED coordinates (float). " alt="" coords="452,1043,600,1070"/><area shape="rect" id="node46" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="448,1094,604,1120"/><area shape="rect" id="node47" href="group__state__attitude.html#ga4d07df56be94afd0512e08fac961dbd3" title="Set vehicle body attitude from rotation matrix (float). " alt="" coords="431,1144,621,1171"/><area shape="rect" id="node49" href="group__state__position.html#gaaa9965929d321521b6a903a74e848e45" title="Set position from LLA coordinates (int). " alt="" coords="449,1195,603,1222"/><area shape="rect" id="node50" href="group__state__velocity.html#gae6549b15cd961047c89481ab2d87171f" title="Set ground speed in local NED coordinates (float). " alt="" coords="449,1246,603,1272"/><area shape="rect" id="node5" href="pprz__geodetic__float_8c.html#a197187e7b04018beddfcd6a7a4ab3972" title="ecef_of_enu_point_f" alt="" coords="1084,16,1233,43"/><area shape="rect" id="node12" href="sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="685,656,823,683"/><area shape="rect" id="node18" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1303,194,1403,220"/><area shape="rect" id="node20" href="group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title="orientationCalcRMat_f" alt="" coords="673,516,835,543"/><area shape="rect" id="node22" href="group__state__acceleration.html#ga48146adcdcd09bb704335795c6624ad8" title="stateCalcAccelNed_i" alt="" coords="678,942,830,968"/><area shape="rect" id="node23" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="890,967,1033,994"/><area shape="rect" id="node24" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU. " alt="" coords="1087,967,1230,994"/><area shape="rect" id="node26" href="group__state__position.html#gab32ef3aae5246e773c9fd2817220dab3" title="stateCalcPositionEcef_i" alt="" coords="669,118,839,144"/><area shape="rect" id="node27" href="group__math__geodetic__int.html#gaf92579b72a2adb1aaac73fae89553fca" title="Convert a local NED position to ECEF. " alt="" coords="892,67,1031,94"/><area shape="rect" id="node30" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="1109,270,1208,296"/><area shape="rect" id="node28" href="group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF. " alt="" coords="1089,67,1228,94"/><area shape="rect" id="node29" href="group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF. " alt="" coords="1281,67,1424,94"/><area shape="rect" id="node31" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1301,270,1405,296"/><area shape="rect" id="node33" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="670,346,838,372"/><area shape="rect" id="node34" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="892,472,1031,499"/><area shape="rect" id="node36" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="887,371,1036,398"/><area shape="rect" id="node38" href="group__math__geodetic__int.html#ga6618f634b774eaf7182dfec83d68f141" title="Convert a point from LLA to local NED. " alt="" coords="894,320,1029,347"/><area shape="rect" id="node40" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="912,422,1011,448"/><area shape="rect" id="node35" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="1089,539,1228,566"/><area shape="rect" id="node37" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1084,371,1233,398"/><area shape="rect" id="node39" href="group__math__geodetic__int.html#ga9307e97057d51e781def8a03dea804f6" title="Convert a point from ECEF to local NED. " alt="" coords="1085,320,1233,347"/><area shape="rect" id="node41" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1085,488,1232,515"/><area shape="rect" id="node42" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1091,422,1227,464"/><area shape="rect" id="node44" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="675,992,833,1019"/><area shape="rect" id="node48" href="group__math__orientation__representation.html#ga2c06304a23d68ae280c1cc5f4f01386a" title="Set vehicle body attitude from rotation matrix (float). " alt="" coords="676,1144,832,1171"/></map>
+<area shape="rect" id="node2" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="220,659,363,685"/><area shape="rect" id="node3" href="ins__vectornav_8c.html#ae1d4d184cac70cb0b57f1c291fbacb04" title="Propagate the received states into the vehicle state machine. " alt="" coords="200,709,383,736"/><area shape="rect" id="node4" href="pprz__geodetic__float_8c.html#a9703caac26c4b1272c010037fd661956" title="ecef_of_ned_point_f" alt="" coords="888,8,1037,35"/><area shape="rect" id="node6" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="Quaternion from Euler angles. " alt="" coords="451,347,601,373"/><area shape="rect" id="node7" href="group__math__algebra__float.html#ga5588e3c0fa0a1e62bcdb53e4d7cb6bda" title="Composition (multiplication) of two rotation matrices. " alt="" coords="461,397,591,424"/><area shape="rect" id="node8" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title="float_rmat_of_quat" alt="" coords="891,515,1034,541"/><area shape="rect" id="node9" href="group__math__algebra__float.html#ga3f7d064248ddf6a411369b55c0282913" title="rotate anglular rates by rotation matrix. " alt="" coords="451,549,601,576"/><area shape="rect" id="node10" href="group__math__algebra__float.html#gac852ba0c3ec48acfd8abaefbf933d4b6" title="rotate 3D vector by transposed rotation matrix. " alt="" coords="437,600,615,627"/><area shape="rect" id="node11" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="454,651,598,677"/><area shape="rect" id="node13" href="ins__vectornav_8c.html#a499959c00e7121c179fc8f13471abe3a" title="Check INS status. " alt="" coords="449,702,603,743"/><area shape="rect" id="node14" href="ins__vectornav_8c.html#a48605f7fd6e8e6f51c0bc9afc2121ce8" title="Find maximum uncertainty (NED) position accuracy in cm. " alt="" coords="439,768,613,795"/><area shape="rect" id="node15" href="ins__vectornav_8c.html#a7bf18e5ab81e5a59a5e68c19fe375f72" title="Set speed (velocity) uncertainty (NED) speed accuracy in cm/s. " alt="" coords="439,819,613,845"/><area shape="rect" id="node16" href="ins__vectornav_8c.html#ada8a6e3914d85aaaab41ea445bc03ffd" title="Convert yaw, pitch, and roll data from VectorNav to correct attitude yaw(0), pitch(1), roll(2) &#45;&gt; phi, theta, psi [deg] &#45;&gt; rad. " alt="" coords="437,870,615,911"/><area shape="rect" id="node17" href="pprz__geodetic__float_8c.html#a624697fcf875d02030d046161c4609b7" title="ltp_def_from_lla_f" alt="" coords="687,217,822,244"/><area shape="rect" id="node19" href="group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="447,499,605,525"/><area shape="rect" id="node21" href="group__state__acceleration.html#gab55b482bd9fe875141bafd34beda8bb4" title="Get acceleration in NED coordinates (int). " alt="" coords="452,936,600,963"/><area shape="rect" id="node25" href="group__state__position.html#ga82afc52cbca54c85318ca480e4c9856f" title="Get position in ECEF coordinates (int). " alt="" coords="443,137,609,164"/><area shape="rect" id="node32" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="444,296,608,323"/><area shape="rect" id="node42" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="449,987,603,1013"/><area shape="rect" id="node44" href="group__state__acceleration.html#ga27b8f24af6ddce14389efaa5ec119967" title="Set acceleration in NED coordinates (float). " alt="" coords="452,1037,600,1064"/><area shape="rect" id="node45" href="group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="448,1088,604,1115"/><area shape="rect" id="node46" href="group__state__attitude.html#ga4d07df56be94afd0512e08fac961dbd3" title="Set vehicle body attitude from rotation matrix (float). " alt="" coords="431,1139,621,1165"/><area shape="rect" id="node48" href="group__state__position.html#gaaa9965929d321521b6a903a74e848e45" title="Set position from LLA coordinates (int). " alt="" coords="449,1189,603,1216"/><area shape="rect" id="node49" href="group__state__velocity.html#gae6549b15cd961047c89481ab2d87171f" title="Set ground speed in local NED coordinates (float). " alt="" coords="449,1240,603,1267"/><area shape="rect" id="node50" href="group__math__geodetic__wgs84.html#ga982ac769d3c18ca65b364e0588874100" title="Get WGS84 ellipsoid/geoid separation. " alt="" coords="456,1291,596,1333"/><area shape="rect" id="node5" href="pprz__geodetic__float_8c.html#a197187e7b04018beddfcd6a7a4ab3972" title="ecef_of_enu_point_f" alt="" coords="1085,8,1235,35"/><area shape="rect" id="node12" href="sys__time_8h.html#adb22f2652f04908fbc644c7274bf7273" title="usec_of_sys_time_ticks" alt="" coords="669,651,840,677"/><area shape="rect" id="node18" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1304,236,1404,263"/><area shape="rect" id="node20" href="group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title="orientationCalcRMat_f" alt="" coords="674,511,835,537"/><area shape="rect" id="node22" href="group__state__acceleration.html#ga48146adcdcd09bb704335795c6624ad8" title="stateCalcAccelNed_i" alt="" coords="679,936,831,963"/><area shape="rect" id="node23" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="891,961,1034,988"/><area shape="rect" id="node24" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU. " alt="" coords="1089,961,1231,988"/><area shape="rect" id="node26" href="group__state__position.html#gab32ef3aae5246e773c9fd2817220dab3" title="stateCalcPositionEcef_i" alt="" coords="670,109,839,136"/><area shape="rect" id="node27" href="group__math__geodetic__int.html#gaf92579b72a2adb1aaac73fae89553fca" title="Convert a local NED position to ECEF. " alt="" coords="893,59,1032,85"/><area shape="rect" id="node30" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="1111,312,1209,339"/><area shape="rect" id="node28" href="group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF. " alt="" coords="1091,59,1229,85"/><area shape="rect" id="node29" href="group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF. " alt="" coords="1283,59,1425,85"/><area shape="rect" id="node31" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1302,312,1406,339"/><area shape="rect" id="node33" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="671,337,839,364"/><area shape="rect" id="node34" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="1091,363,1229,389"/><area shape="rect" id="node36" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="888,464,1037,491"/><area shape="rect" id="node38" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED. " alt="" coords="899,312,1026,339"/><area shape="rect" id="node39" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="913,413,1012,440"/><area shape="rect" id="node35" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="1285,363,1423,389"/><area shape="rect" id="node37" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1085,531,1235,557"/><area shape="rect" id="node40" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1087,413,1233,440"/><area shape="rect" id="node41" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1092,465,1228,506"/><area shape="rect" id="node43" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="675,987,834,1013"/><area shape="rect" id="node47" href="group__math__orientation__representation.html#ga2c06304a23d68ae280c1cc5f4f01386a" title="Set vehicle body attitude from rotation matrix (float). " alt="" coords="677,1139,833,1165"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__vectornav_8c_a5ba37a2e4e80d50b1ce1ada6e0f294fe_icgraph.png" border="0" usemap="#ins__vectornav_8c_a5ba37a2e4e80d50b1ce1ada6e0f294fe_icgraph" alt=""/></div>
 <map name="ins__vectornav_8c_a5ba37a2e4e80d50b1ce1ada6e0f294fe_icgraph" id="ins__vectornav_8c_a5ba37a2e4e80d50b1ce1ada6e0f294fe_icgraph">
 <area shape="rect" id="node2" href="ins__vectornav_8h.html#abcd265b9bfefa88327260439223dba81" title="Event handling for Vectornav. " alt="" coords="200,13,353,39"/></map>
@@ -460,17 +416,17 @@ Variables</h2></td></tr>
 
 <p>Find maximum uncertainty (NED) position accuracy in cm. </p>
 
-<p>Definition at line <a class="el" href="ins__vectornav_8c_source.html#l00282">282</a> of file <a class="el" href="ins__vectornav_8c_source.html">ins_vectornav.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__vectornav_8c_source.html#l00301">301</a> of file <a class="el" href="ins__vectornav_8c_source.html">ins_vectornav.c</a>.</p>
 
-<p>References <a class="el" href="gps_8c_source.html#l00040">gps</a>, <a class="el" href="ins__vectornav_8c_source.html#l00031">ins_vn</a>, <a class="el" href="gps_8h_source.html#l00088">GpsState::pacc</a>, and <a class="el" href="ins__vectornav_8h_source.html#l00099">InsVectornav::pos_u</a>.</p>
+<p>References <a class="el" href="gps_8c_source.html#l00075">gps</a>, <a class="el" href="ins__vectornav_8c_source.html#l00032">ins_vn</a>, <a class="el" href="gps_8h_source.html#l00094">GpsState::pacc</a>, and <a class="el" href="ins__vectornav_8h_source.html#l00098">InsVectornav::pos_u</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__vectornav_8c_source.html#l00317">ins_vectornav_propagate()</a>.</p>
+<p>Referenced by <a class="el" href="ins__vectornav_8c_source.html#l00336">ins_vectornav_propagate()</a>.</p>
 
-<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__vectornav_8c_a48605f7fd6e8e6f51c0bc9afc2121ce8_icgraph.png" border="0" usemap="#ins__vectornav_8c_a48605f7fd6e8e6f51c0bc9afc2121ce8_icgraph" alt=""/></div>
 <map name="ins__vectornav_8c_a48605f7fd6e8e6f51c0bc9afc2121ce8_icgraph" id="ins__vectornav_8c_a48605f7fd6e8e6f51c0bc9afc2121ce8_icgraph">
 <area shape="rect" id="node2" href="ins__vectornav_8h.html#a5e1e0a3cd2eead4dc89bec75e33e5618" title="Propagate the received states into the vehicle state machine. " alt="" coords="228,13,411,39"/><area shape="rect" id="node3" href="ins__vectornav_8h.html#a5ba37a2e4e80d50b1ce1ada6e0f294fe" title="Read received data. " alt="" coords="459,5,605,47"/><area shape="rect" id="node4" href="ins__vectornav_8h.html#abcd265b9bfefa88327260439223dba81" title="Event handling for Vectornav. " alt="" coords="653,13,807,39"/></map>
@@ -495,17 +451,17 @@ Variables</h2></td></tr>
 
 <p>Set speed (velocity) uncertainty (NED) speed accuracy in cm/s. </p>
 
-<p>Definition at line <a class="el" href="ins__vectornav_8c_source.html#l00273">273</a> of file <a class="el" href="ins__vectornav_8c_source.html">ins_vectornav.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__vectornav_8c_source.html#l00292">292</a> of file <a class="el" href="ins__vectornav_8c_source.html">ins_vectornav.c</a>.</p>
 
-<p>References <a class="el" href="gps_8c_source.html#l00040">gps</a>, <a class="el" href="ins__vectornav_8c_source.html#l00031">ins_vn</a>, <a class="el" href="gps_8h_source.html#l00089">GpsState::sacc</a>, and <a class="el" href="ins__vectornav_8h_source.html#l00100">InsVectornav::vel_u</a>.</p>
+<p>References <a class="el" href="gps_8c_source.html#l00075">gps</a>, <a class="el" href="ins__vectornav_8c_source.html#l00032">ins_vn</a>, <a class="el" href="gps_8h_source.html#l00095">GpsState::sacc</a>, and <a class="el" href="ins__vectornav_8h_source.html#l00099">InsVectornav::vel_u</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__vectornav_8c_source.html#l00317">ins_vectornav_propagate()</a>.</p>
+<p>Referenced by <a class="el" href="ins__vectornav_8c_source.html#l00336">ins_vectornav_propagate()</a>.</p>
 
-<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__vectornav_8c_a7bf18e5ab81e5a59a5e68c19fe375f72_icgraph.png" border="0" usemap="#ins__vectornav_8c_a7bf18e5ab81e5a59a5e68c19fe375f72_icgraph" alt=""/></div>
 <map name="ins__vectornav_8c_a7bf18e5ab81e5a59a5e68c19fe375f72_icgraph" id="ins__vectornav_8c_a7bf18e5ab81e5a59a5e68c19fe375f72_icgraph">
 <area shape="rect" id="node2" href="ins__vectornav_8h.html#a5e1e0a3cd2eead4dc89bec75e33e5618" title="Propagate the received states into the vehicle state machine. " alt="" coords="227,13,409,39"/><area shape="rect" id="node3" href="ins__vectornav_8h.html#a5ba37a2e4e80d50b1ce1ada6e0f294fe" title="Read received data. " alt="" coords="457,5,604,47"/><area shape="rect" id="node4" href="ins__vectornav_8h.html#abcd265b9bfefa88327260439223dba81" title="Event handling for Vectornav. " alt="" coords="652,13,805,39"/></map>
@@ -530,17 +486,17 @@ Variables</h2></td></tr>
 
 <p>Convert yaw, pitch, and roll data from VectorNav to correct attitude yaw(0), pitch(1), roll(2) -&gt; phi, theta, psi [deg] -&gt; rad. </p>
 
-<p>Definition at line <a class="el" href="ins__vectornav_8c_source.html#l00301">301</a> of file <a class="el" href="ins__vectornav_8c_source.html">ins_vectornav.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__vectornav_8c_source.html#l00320">320</a> of file <a class="el" href="ins__vectornav_8c_source.html">ins_vectornav.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__float_8h_source.html#l00084">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::psi</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::theta</a>.</p>
+<p>References <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__vectornav_8c_source.html#l00317">ins_vectornav_propagate()</a>.</p>
+<p>Referenced by <a class="el" href="ins__vectornav_8c_source.html#l00336">ins_vectornav_propagate()</a>.</p>
 
-<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__vectornav_8c_ada8a6e3914d85aaaab41ea445bc03ffd_icgraph.png" border="0" usemap="#ins__vectornav_8c_ada8a6e3914d85aaaab41ea445bc03ffd_icgraph" alt=""/></div>
 <map name="ins__vectornav_8c_ada8a6e3914d85aaaab41ea445bc03ffd_icgraph" id="ins__vectornav_8c_ada8a6e3914d85aaaab41ea445bc03ffd_icgraph">
 <area shape="rect" id="node2" href="ins__vectornav_8h.html#a5e1e0a3cd2eead4dc89bec75e33e5618" title="Propagate the received states into the vehicle state machine. " alt="" coords="232,13,415,39"/><area shape="rect" id="node3" href="ins__vectornav_8h.html#a5ba37a2e4e80d50b1ce1ada6e0f294fe" title="Read received data. " alt="" coords="463,5,609,47"/><area shape="rect" id="node4" href="ins__vectornav_8h.html#abcd265b9bfefa88327260439223dba81" title="Event handling for Vectornav. " alt="" coords="657,13,811,39"/></map>
@@ -563,16 +519,424 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="ahrs__float__cmpl__wrapper_8c_source.html#l00161">accel_cb()</a>, <a class="el" href="stm32_2mcu__periph_2adc__arch_8c_source.html#l00223">adc_init()</a>, <a class="el" href="stm32_2mcu__periph_2adc__arch_8c_source.html#l00471">adc_init_single()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00194">ahrs_dcm_update_accel()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00361">Drift_correction()</a>, <a class="el" href="ahrs__float__cmpl__wrapper_8c_source.html#l00132">gyro_cb()</a>, <a class="el" href="ahrs__float__cmpl__wrapper_8c_source.html#l00186">mag_cb()</a>, <a class="el" href="stm32_2mcu__arch_8c_source.html#l00089">mcu_arch_init()</a>, and <a class="el" href="opticflow__module_8c_source.html#l00108">opticflow_module_init()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__cmpl__wrapper_8c_source.html#l00168">accel_cb()</a>, <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00286">adc_init()</a>, <a class="el" href="stm32_2mcu__periph_2adc__arch_8c_source.html#l00472">adc_init_single()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00194">ahrs_dcm_update_accel()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00361">Drift_correction()</a>, <a class="el" href="ahrs__float__cmpl__wrapper_8c_source.html#l00139">gyro_cb()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00637">init_ltp()</a>, <a class="el" href="ahrs__float__cmpl__wrapper_8c_source.html#l00193">mag_cb()</a>, <a class="el" href="chibios_2mcu__arch_8c_source.html#l00094">mcu_arch_init()</a>, and <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00099">nps_autopilot_run_step()</a>.</p>
+
+<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ins__vectornav_8c_aa01d3425df2eb0f33ced38c9d8fa8f05_icgraph.png" border="0" usemap="#ins__vectornav_8c_aa01d3425df2eb0f33ced38c9d8fa8f05_icgraph" alt=""/></div>
+<map name="ins__vectornav_8c_aa01d3425df2eb0f33ced38c9d8fa8f05_icgraph" id="ins__vectornav_8c_aa01d3425df2eb0f33ced38c9d8fa8f05_icgraph">
+<area shape="rect" id="node2" href="ahrs__float__cmpl__wrapper_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title="accel_cb" alt="" coords="251,5,328,32"/><area shape="rect" id="node4" href="adc_8h.html#a2b815e6730e8723a6d1d06d9ef8f31c0" title="Starts conversions. " alt="" coords="254,157,325,184"/><area shape="rect" id="node14" href="stm32_2mcu__periph_2adc__arch_8c.html#af155701fd8bbfe59180a00810911d34e" title="adc_init_single" alt="" coords="232,259,347,285"/><area shape="rect" id="node16" href="ahrs__float__dcm_8h.html#a9e8f7f86867387eac6081a8b23ea9533" title="ahrs_dcm_update_accel" alt="" coords="423,328,600,355"/><area shape="rect" id="node19" href="ahrs__float__dcm_8c.html#a0983667a3515b42c82ce0b23d0007439" title="Drift_correction" alt="" coords="229,360,349,387"/><area shape="rect" id="node20" href="ahrs__float__cmpl__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="253,56,325,83"/><area shape="rect" id="node21" href="nps__fdm__jsbsim_8cpp.html#a3836be75ba868b34cd08503e2f242ab5" title="Initialize the ltp from the JSBSim location. " alt="" coords="479,404,543,431"/><area shape="rect" id="node23" href="ahrs__float__cmpl__wrapper_8c.html#a49cc1e545848b85016af530049991c02" title="mag_cb" alt="" coords="253,107,326,133"/><area shape="rect" id="node24" href="stm32_2mcu__arch_8h.html#a87671303c7d4a9264b1ffbb07e87f454" title="mcu_arch_init" alt="" coords="234,208,345,235"/><area shape="rect" id="node25" href="nps__autopilot__fixedwing_8c.html#a12870aaa609d4860004be3cec4c8cf2a" title="nps_autopilot_run_step" alt="" coords="204,461,375,488"/><area shape="rect" id="node3" href="ahrs__float__cmpl__wrapper_8h.html#aa47cd2e2f95362dd732bac1f275344e0" title="ahrs_fc_register" alt="" coords="449,56,573,83"/><area shape="rect" id="node5" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="473,208,549,235"/><area shape="rect" id="node6" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="672,169,727,196"/><area shape="rect" id="node7" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="659,220,739,247"/><area shape="rect" id="node12" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="665,277,734,304"/><area shape="rect" id="node8" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="842,176,897,203"/><area shape="rect" id="node9" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="802,227,937,253"/><area shape="rect" id="node10" href="nps__main_8c.html#af28efef10cede3b66825b2dc2e4e7705" title="nps_main_init" alt="" coords="988,305,1099,332"/><area shape="rect" id="node11" href="nps__main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1147,305,1201,332"/><area shape="rect" id="node13" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="834,277,905,304"/><area shape="rect" id="node15" href="stm32_2mcu__periph_2adc__arch_8c.html#a2b815e6730e8723a6d1d06d9ef8f31c0" title="Starts conversions. " alt="" coords="476,259,547,285"/><area shape="rect" id="node17" href="ahrs__float__dcm__wrapper_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title="accel_cb" alt="" coords="661,328,738,355"/><area shape="rect" id="node18" href="ahrs__float__dcm__wrapper_8h.html#a18235ffdb70868861d5424fe8c4bafa5" title="ahrs_dcm_register" alt="" coords="799,328,940,355"/><area shape="rect" id="node22" href="nps__fdm__jsbsim_8cpp.html#a17ec5b69b110d046f9db5b67d2b08779" title="nps_fdm_init" alt="" coords="648,391,751,417"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad22c09e97d332fdf55989e3881b55322"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void send_accel </td>
+          <td>(</td>
+          <td class="paramtype">struct transport_tx *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct link_device *&#160;</td>
+          <td class="paramname"><em>dev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ins__vectornav_8c_source.html#l00092">92</a> of file <a class="el" href="ins__vectornav_8c_source.html">ins_vectornav.c</a>.</p>
+
+<p>References <a class="el" href="ins__vectornav_8h_source.html#l00106">InsVectornav::accel</a>, <a class="el" href="ins__vectornav_8c_source.html#l00032">ins_vn</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
+
+<p>Referenced by <a class="el" href="ins__vectornav_8c_source.html#l00141">ins_vectornav_init()</a>.</p>
+
+<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ins__vectornav_8c_ad22c09e97d332fdf55989e3881b55322_icgraph.png" border="0" usemap="#ins__vectornav_8c_ad22c09e97d332fdf55989e3881b55322_icgraph" alt=""/></div>
+<map name="ins__vectornav_8c_ad22c09e97d332fdf55989e3881b55322_icgraph" id="ins__vectornav_8c_ad22c09e97d332fdf55989e3881b55322_icgraph">
+<area shape="rect" id="node2" href="ins__vectornav_8h.html#abccde82fac73ee723125e1173db630c0" title="Initialize Vectornav struct. " alt="" coords="147,5,283,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ade53e6d9e9c15bca1c045e744f28ef0b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void send_accel_scaled </td>
+          <td>(</td>
+          <td class="paramtype">struct transport_tx *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct link_device *&#160;</td>
+          <td class="paramname"><em>dev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ins__vectornav_8c_source.html#l00104">104</a> of file <a class="el" href="ins__vectornav_8c_source.html">ins_vectornav.c</a>.</p>
+
+<p>References <a class="el" href="ins__vectornav_8h_source.html#l00110">InsVectornav::accel_i</a>, <a class="el" href="ins__vectornav_8c_source.html#l00032">ins_vn</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
+
+<p>Referenced by <a class="el" href="ins__vectornav_8c_source.html#l00141">ins_vectornav_init()</a>.</p>
+
+<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ins__vectornav_8c_ade53e6d9e9c15bca1c045e744f28ef0b_icgraph.png" border="0" usemap="#ins__vectornav_8c_ade53e6d9e9c15bca1c045e744f28ef0b_icgraph" alt=""/></div>
+<map name="ins__vectornav_8c_ade53e6d9e9c15bca1c045e744f28ef0b_icgraph" id="ins__vectornav_8c_ade53e6d9e9c15bca1c045e744f28ef0b_icgraph">
+<area shape="rect" id="node2" href="ins__vectornav_8h.html#abccde82fac73ee723125e1173db630c0" title="Initialize Vectornav struct. " alt="" coords="195,5,331,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa41528f38e1f342b35ae31c21b51d803"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void send_gyro </td>
+          <td>(</td>
+          <td class="paramtype">struct transport_tx *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct link_device *&#160;</td>
+          <td class="paramname"><em>dev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ins__vectornav_8c_source.html#l00098">98</a> of file <a class="el" href="ins__vectornav_8c_source.html">ins_vectornav.c</a>.</p>
+
+<p>References <a class="el" href="ins__vectornav_8h_source.html#l00107">InsVectornav::gyro</a>, <a class="el" href="ins__vectornav_8c_source.html#l00032">ins_vn</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>.</p>
+
+<p>Referenced by <a class="el" href="ins__vectornav_8c_source.html#l00141">ins_vectornav_init()</a>.</p>
 
 <p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ins__vectornav_8c_aa01d3425df2eb0f33ced38c9d8fa8f05_icgraph.png" border="0" usemap="#ins__vectornav_8c_aa01d3425df2eb0f33ced38c9d8fa8f05_icgraph" alt=""/></div>
-<map name="ins__vectornav_8c_aa01d3425df2eb0f33ced38c9d8fa8f05_icgraph" id="ins__vectornav_8c_aa01d3425df2eb0f33ced38c9d8fa8f05_icgraph">
-<area shape="rect" id="node2" href="ahrs__float__cmpl__wrapper_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title="accel_cb" alt="" coords="245,5,322,32"/><area shape="rect" id="node4" href="stm32_2mcu__periph_2adc__arch_8c.html#a2b815e6730e8723a6d1d06d9ef8f31c0" title="Starts conversions. " alt="" coords="464,196,535,223"/><area shape="rect" id="node5" href="stm32_2mcu__periph_2adc__arch_8c.html#af155701fd8bbfe59180a00810911d34e" title="adc_init_single" alt="" coords="226,208,341,235"/><area shape="rect" id="node6" href="ahrs__float__dcm_8h.html#a9e8f7f86867387eac6081a8b23ea9533" title="ahrs_dcm_update_accel" alt="" coords="411,272,588,299"/><area shape="rect" id="node9" href="ahrs__float__dcm_8c.html#a0983667a3515b42c82ce0b23d0007439" title="Drift_correction" alt="" coords="223,309,343,336"/><area shape="rect" id="node10" href="ahrs__float__cmpl__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="247,56,319,83"/><area shape="rect" id="node11" href="ahrs__float__cmpl__wrapper_8c.html#a49cc1e545848b85016af530049991c02" title="mag_cb" alt="" coords="247,107,320,133"/><area shape="rect" id="node12" href="stm32_2mcu__arch_8c.html#a87671303c7d4a9264b1ffbb07e87f454" title="mcu_arch_init" alt="" coords="228,360,339,387"/><area shape="rect" id="node13" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="204,411,363,437"/><area shape="rect" id="node3" href="ahrs__float__cmpl__wrapper_8h.html#aa47cd2e2f95362dd732bac1f275344e0" title="ahrs_fc_register" alt="" coords="437,56,561,83"/><area shape="rect" id="node7" href="ahrs__float__dcm__wrapper_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title="accel_cb" alt="" coords="636,272,713,299"/><area shape="rect" id="node8" href="ahrs__float__dcm__wrapper_8h.html#a18235ffdb70868861d5424fe8c4bafa5" title="ahrs_dcm_register" alt="" coords="761,272,903,299"/></map>
+<div class="center"><img src="ins__vectornav_8c_aa41528f38e1f342b35ae31c21b51d803_icgraph.png" border="0" usemap="#ins__vectornav_8c_aa41528f38e1f342b35ae31c21b51d803_icgraph" alt=""/></div>
+<map name="ins__vectornav_8c_aa41528f38e1f342b35ae31c21b51d803_icgraph" id="ins__vectornav_8c_aa41528f38e1f342b35ae31c21b51d803_icgraph">
+<area shape="rect" id="node2" href="ins__vectornav_8h.html#abccde82fac73ee723125e1173db630c0" title="Initialize Vectornav struct. " alt="" coords="141,5,277,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa1b2b69b4fcbae31921a2794700de0d1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void send_gyro_scaled </td>
+          <td>(</td>
+          <td class="paramtype">struct transport_tx *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct link_device *&#160;</td>
+          <td class="paramname"><em>dev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ins__vectornav_8c_source.html#l00110">110</a> of file <a class="el" href="ins__vectornav_8c_source.html">ins_vectornav.c</a>.</p>
+
+<p>References <a class="el" href="ins__vectornav_8h_source.html#l00111">InsVectornav::gyro_i</a>, <a class="el" href="ins__vectornav_8c_source.html#l00032">ins_vn</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00180">Int32Rates::p</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00181">Int32Rates::q</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00182">Int32Rates::r</a>.</p>
+
+<p>Referenced by <a class="el" href="ins__vectornav_8c_source.html#l00141">ins_vectornav_init()</a>.</p>
+
+<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ins__vectornav_8c_aa1b2b69b4fcbae31921a2794700de0d1_icgraph.png" border="0" usemap="#ins__vectornav_8c_aa1b2b69b4fcbae31921a2794700de0d1_icgraph" alt=""/></div>
+<map name="ins__vectornav_8c_aa1b2b69b4fcbae31921a2794700de0d1_icgraph" id="ins__vectornav_8c_aa1b2b69b4fcbae31921a2794700de0d1_icgraph">
+<area shape="rect" id="node2" href="ins__vectornav_8h.html#abccde82fac73ee723125e1173db630c0" title="Initialize Vectornav struct. " alt="" coords="189,5,325,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2ba079af519dd03472aa3e6019b3a91f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void send_ins </td>
+          <td>(</td>
+          <td class="paramtype">struct transport_tx *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct link_device *&#160;</td>
+          <td class="paramname"><em>dev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ins__vectornav_8c_source.html#l00037">37</a> of file <a class="el" href="ins__vectornav_8c_source.html">ins_vectornav.c</a>.</p>
+
+<p>References <a class="el" href="ins__vectornav_8c_source.html#l00032">ins_vn</a>, <a class="el" href="ins__vectornav_8h_source.html#l00071">InsVectornav::ltp_accel_i</a>, <a class="el" href="ins__vectornav_8h_source.html#l00069">InsVectornav::ltp_pos_i</a>, <a class="el" href="ins__vectornav_8h_source.html#l00070">InsVectornav::ltp_speed_i</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00069">NedCoor_i::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00070">NedCoor_i::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
+
+<p>Referenced by <a class="el" href="ins__vectornav_8c_source.html#l00141">ins_vectornav_init()</a>.</p>
+
+<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ins__vectornav_8c_a2ba079af519dd03472aa3e6019b3a91f_icgraph.png" border="0" usemap="#ins__vectornav_8c_a2ba079af519dd03472aa3e6019b3a91f_icgraph" alt=""/></div>
+<map name="ins__vectornav_8c_a2ba079af519dd03472aa3e6019b3a91f_icgraph" id="ins__vectornav_8c_a2ba079af519dd03472aa3e6019b3a91f_icgraph">
+<area shape="rect" id="node2" href="ins__vectornav_8h.html#abccde82fac73ee723125e1173db630c0" title="Initialize Vectornav struct. " alt="" coords="132,5,268,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6f4ee4900038e15bf441a679acfa913a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void send_ins_ref </td>
+          <td>(</td>
+          <td class="paramtype">struct transport_tx *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct link_device *&#160;</td>
+          <td class="paramname"><em>dev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ins__vectornav_8c_source.html#l00051">51</a> of file <a class="el" href="ins__vectornav_8c_source.html">ins_vectornav.c</a>.</p>
+
+<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00099">LtpDef_i::ecef</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="ins__vectornav_8c_source.html#l00032">ins_vn</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00100">LtpDef_i::lla</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="ins__vectornav_8h_source.html#l00065">InsVectornav::ltp_def</a>, <a class="el" href="ins__vectornav_8h_source.html#l00066">InsVectornav::ltp_initialized</a>, <a class="el" href="ins__vectornav_8h_source.html#l00079">InsVectornav::qfe</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00051">EcefCoor_i::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00052">EcefCoor_i::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00053">EcefCoor_i::z</a>.</p>
+
+<p>Referenced by <a class="el" href="ins__vectornav_8c_source.html#l00141">ins_vectornav_init()</a>.</p>
+
+<p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ins__vectornav_8c_a6f4ee4900038e15bf441a679acfa913a_icgraph.png" border="0" usemap="#ins__vectornav_8c_a6f4ee4900038e15bf441a679acfa913a_icgraph" alt=""/></div>
+<map name="ins__vectornav_8c_a6f4ee4900038e15bf441a679acfa913a_icgraph" id="ins__vectornav_8c_a6f4ee4900038e15bf441a679acfa913a_icgraph">
+<area shape="rect" id="node2" href="ins__vectornav_8h.html#abccde82fac73ee723125e1173db630c0" title="Initialize Vectornav struct. " alt="" coords="156,5,292,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a779c8daa5c837af54a2a999a8e3cae24"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void send_ins_z </td>
+          <td>(</td>
+          <td class="paramtype">struct transport_tx *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct link_device *&#160;</td>
+          <td class="paramname"><em>dev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ins__vectornav_8c_source.html#l00045">45</a> of file <a class="el" href="ins__vectornav_8c_source.html">ins_vectornav.c</a>.</p>
+
+<p>References <a class="el" href="ins__vectornav_8h_source.html#l00078">InsVectornav::baro_z</a>, <a class="el" href="ins__vectornav_8c_source.html#l00032">ins_vn</a>, <a class="el" href="ins__vectornav_8h_source.html#l00071">InsVectornav::ltp_accel_i</a>, <a class="el" href="ins__vectornav_8h_source.html#l00069">InsVectornav::ltp_pos_i</a>, <a class="el" href="ins__vectornav_8h_source.html#l00070">InsVectornav::ltp_speed_i</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
+
+<p>Referenced by <a class="el" href="ins__vectornav_8c_source.html#l00141">ins_vectornav_init()</a>.</p>
+
+<p><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ins__vectornav_8c_a779c8daa5c837af54a2a999a8e3cae24_icgraph.png" border="0" usemap="#ins__vectornav_8c_a779c8daa5c837af54a2a999a8e3cae24_icgraph" alt=""/></div>
+<map name="ins__vectornav_8c_a779c8daa5c837af54a2a999a8e3cae24_icgraph" id="ins__vectornav_8c_a779c8daa5c837af54a2a999a8e3cae24_icgraph">
+<area shape="rect" id="node2" href="ins__vectornav_8h.html#abccde82fac73ee723125e1173db630c0" title="Initialize Vectornav struct. " alt="" coords="145,5,281,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acf9e77d2ea5dca2b0ecbb660edc513c4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void send_vn_info </td>
+          <td>(</td>
+          <td class="paramtype">struct transport_tx *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct link_device *&#160;</td>
+          <td class="paramname"><em>dev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ins__vectornav_8c_source.html#l00061">61</a> of file <a class="el" href="ins__vectornav_8c_source.html">ins_vectornav.c</a>.</p>
+
+<p>References <a class="el" href="vn200__serial_8h_source.html#l00057">VNPacket::chksm_error</a>, <a class="el" href="vn200__serial_8h_source.html#l00068">VNPacket::counter</a>, <a class="el" href="ins__vectornav_8h_source.html#l00104">InsVectornav::err</a>, <a class="el" href="gps_8h_source.html#l00099">GpsState::fix</a>, <a class="el" href="gps_8c_source.html#l00075">gps</a>, <a class="el" href="gps_8h_source.html#l00037">GPS_FIX_NONE</a>, <a class="el" href="vn200__serial_8h_source.html#l00058">VNPacket::hdr_error</a>, <a class="el" href="ins__vectornav_8c_source.html#l00032">ins_vn</a>, <a class="el" href="ins__vectornav_8h_source.html#l00103">InsVectornav::mode</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="ins__vectornav_8h_source.html#l00090">InsVectornav::timestamp</a>, <a class="el" href="ins__vectornav_8h_source.html#l00084">InsVectornav::vn_freq</a>, <a class="el" href="ins__vectornav_8h_source.html#l00082">InsVectornav::vn_packet</a>, and <a class="el" href="ins__vectornav_8h_source.html#l00101">InsVectornav::ypr_u</a>.</p>
+
+<p>Referenced by <a class="el" href="ins__vectornav_8c_source.html#l00141">ins_vectornav_init()</a>.</p>
+
+<p><div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="ins__vectornav_8c_acf9e77d2ea5dca2b0ecbb660edc513c4_icgraph.png" border="0" usemap="#ins__vectornav_8c_acf9e77d2ea5dca2b0ecbb660edc513c4_icgraph" alt=""/></div>
+<map name="ins__vectornav_8c_acf9e77d2ea5dca2b0ecbb660edc513c4_icgraph" id="ins__vectornav_8c_acf9e77d2ea5dca2b0ecbb660edc513c4_icgraph">
+<area shape="rect" id="node2" href="ins__vectornav_8h.html#abccde82fac73ee723125e1173db630c0" title="Initialize Vectornav struct. " alt="" coords="159,5,295,32"/></map>
 </div>
 </p>
 
@@ -589,9 +953,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__vectornav_8c_source.html#l00031">31</a> of file <a class="el" href="ins__vectornav_8c_source.html">ins_vectornav.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__vectornav_8c_source.html#l00032">32</a> of file <a class="el" href="ins__vectornav_8c_source.html">ins_vectornav.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__vectornav_8c_source.html#l00430">ins_init_origin_from_flightplan()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00263">ins_vectornav_check_status()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00107">ins_vectornav_event()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00123">ins_vectornav_init()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00317">ins_vectornav_propagate()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00173">ins_vectornav_read_message()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00282">ins_vectornav_set_pacc()</a>, and <a class="el" href="ins__vectornav_8c_source.html#l00273">ins_vectornav_set_sacc()</a>.</p>
+<p>Referenced by <a class="el" href="ins__vectornav_8c_source.html#l00282">ins_vectornav_check_status()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00125">ins_vectornav_event()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00141">ins_vectornav_init()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00336">ins_vectornav_propagate()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00192">ins_vectornav_read_message()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00301">ins_vectornav_set_pacc()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00292">ins_vectornav_set_sacc()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00092">send_accel()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00104">send_accel_scaled()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00098">send_gyro()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00110">send_gyro_scaled()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00037">send_ins()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00051">send_ins_ref()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00045">send_ins_z()</a>, and <a class="el" href="ins__vectornav_8c_source.html#l00061">send_vn_info()</a>.</p>
 
 </div>
 </div>
@@ -601,7 +965,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_800f0b451dc44a2b86d16d857cea778d.html">ins</a></li><li class="navelem"><a class="el" href="ins__vectornav_8c.html">ins_vectornav.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:06 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:14 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -119,11 +119,13 @@ $(document).ready(function(){initNavTree('rotorcraft_2guidance_2guidance__v_8c.h
 <div class="textblock"><code>#include &quot;generated/airframe.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html">firmwares/rotorcraft/guidance/guidance_v.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="guidance__module_8h_source.html">firmwares/rotorcraft/guidance/guidance_module.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="guidance__hybrid_8h_source.html">firmwares/rotorcraft/guidance/guidance_hybrid.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="radio__control_8h_source.html">subsystems/radio_control.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="stabilization_8h_source.html">firmwares/rotorcraft/stabilization.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="navigation_8h_source.html">firmwares/rotorcraft/navigation.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pprz__algebra__int_8h_source.html">math/pprz_algebra_int.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for guidance_v.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -131,7 +133,7 @@ $(document).ready(function(){initNavTree('rotorcraft_2guidance_2guidance__v_8c.h
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c__incl.png" border="0" usemap="#sw_2airborne_2firmwares_2rotorcraft_2guidance_2guidance__v_8c" alt=""/></div>
 <map name="sw_2airborne_2firmwares_2rotorcraft_2guidance_2guidance__v_8c" id="sw_2airborne_2firmwares_2rotorcraft_2guidance_2guidance__v_8c">
-<area shape="rect" id="node3" href="rotorcraft_2guidance_2guidance__v_8h.html" title="Vertical guidance for rotorcrafts. " alt="" coords="1899,199,2070,240"/><area shape="rect" id="node10" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1219,377,1398,404"/><area shape="rect" id="node14" href="guidance__module_8h.html" title="Guidance in a module file. " alt="" coords="1974,109,2187,151"/><area shape="rect" id="node16" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="144,206,343,233"/><area shape="rect" id="node21" href="stabilization_8h.html" title="General stabilization interface for rotorcrafts. " alt="" coords="523,288,671,329"/><area shape="rect" id="node22" href="navigation_8h.html" title="Rotorcraft navigation functions. " alt="" coords="1579,109,1727,151"/><area shape="rect" id="node30" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="1199,206,1266,233"/><area shape="rect" id="node5" href="guidance__v__ref_8h.html" title="Reference generation for vertical guidance. " alt="" coords="797,288,991,329"/><area shape="rect" id="node13" href="guidance__v__adapt_8h.html" title="Adaptation block of the vertical guidance. " alt="" coords="1986,452,2146,508"/><area shape="rect" id="node6" href="inttypes_8h.html" title="inttypes.h" alt="" coords="511,377,597,404"/><area shape="rect" id="node7" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="939,467,1094,493"/><area shape="rect" id="node11" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1363,467,1513,493"/><area shape="rect" id="node17" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="17,295,70,322"/><area shape="rect" id="node19" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="195,295,291,322"/><area shape="rect" id="node23" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="1532,288,1683,329"/><area shape="rect" id="node25" href="subsystems_2navigation_2waypoints_8h.html" title="subsystems/navigation\l/waypoints.h" alt="" coords="1568,199,1737,240"/><area shape="rect" id="node29" href="common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="1691,459,1860,501"/><area shape="rect" id="node24" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="1473,377,1597,404"/><area shape="rect" id="node26" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1357,288,1508,329"/><area shape="rect" id="node27" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="811,377,963,404"/><area shape="rect" id="node31" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1016,288,1180,329"/></map>
+<area shape="rect" id="node3" href="rotorcraft_2guidance_2guidance__v_8h.html" title="Vertical guidance for rotorcrafts. " alt="" coords="1904,199,2075,240"/><area shape="rect" id="node10" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="632,385,811,411"/><area shape="rect" id="node14" href="guidance__module_8h.html" title="Guidance in a module file. " alt="" coords="1895,109,2108,151"/><area shape="rect" id="node16" href="guidance__hybrid_8h.html" title="Guidance controllers (horizontal and vertical) for Hybrid UAV configurations. " alt="" coords="452,109,656,151"/><area shape="rect" id="node17" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="545,206,744,233"/><area shape="rect" id="node22" href="stabilization_8h.html" title="General stabilization interface for rotorcrafts. " alt="" coords="869,288,1017,329"/><area shape="rect" id="node23" href="navigation_8h.html" title="Rotorcraft navigation functions. " alt="" coords="1340,109,1488,151"/><area shape="rect" id="node32" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="318,206,384,233"/><area shape="rect" id="node34" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="2201,199,2354,240"/><area shape="rect" id="node5" href="guidance__v__ref_8h.html" title="Reference generation for vertical guidance. " alt="" coords="1391,288,1586,329"/><area shape="rect" id="node13" href="guidance__v__adapt_8h.html" title="Adaptation block of the vertical guidance. " alt="" coords="1882,467,2042,523"/><area shape="rect" id="node6" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1615,385,1700,411"/><area shape="rect" id="node7" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="394,481,548,508"/><area shape="rect" id="node11" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="768,481,918,508"/><area shape="rect" id="node18" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="140,295,194,322"/><area shape="rect" id="node20" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1610,295,1706,322"/><area shape="rect" id="node24" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="1216,288,1366,329"/><area shape="rect" id="node26" href="subsystems_2navigation_2waypoints_8h.html" title="subsystems/navigation\l/waypoints.h" alt="" coords="1329,199,1498,240"/><area shape="rect" id="node31" href="common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="1710,199,1880,240"/><area shape="rect" id="node25" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="1229,385,1353,411"/><area shape="rect" id="node27" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1041,288,1192,329"/><area shape="rect" id="node28" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="227,385,379,411"/><area shape="rect" id="node33" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="218,288,382,329"/><area shape="rect" id="node35" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="2706,385,2844,411"/><area shape="rect" id="node39" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="2201,288,2354,329"/><area shape="rect" id="node41" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="2350,377,2504,419"/></map>
 </div>
 </div>
 <p><a href="rotorcraft_2guidance_2guidance__v_8c_source.html">Go to the source code of this file.</a></p>
@@ -168,21 +170,28 @@ Functions</h2></td></tr>
 <tr class="memitem:a88e5859a174ec5bf7fb911a351a15065"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a88e5859a174ec5bf7fb911a351a15065">get_vertical_thrust_coeff</a> (void)</td></tr>
 <tr class="memdesc:a88e5859a174ec5bf7fb911a351a15065"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the cosine of the angle between thrust vector and gravity vector  <a href="#a88e5859a174ec5bf7fb911a351a15065">More...</a><br /></td></tr>
 <tr class="separator:a88e5859a174ec5bf7fb911a351a15065"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef574ad479e888ed806893456e9a0359"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#aef574ad479e888ed806893456e9a0359">run_hover_loop</a> (bool_t in_flight)</td></tr>
-<tr class="separator:aef574ad479e888ed806893456e9a0359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc86e1f1f36c313a62491e4f246b7313"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#abc86e1f1f36c313a62491e4f246b7313">run_hover_loop</a> (bool in_flight)</td></tr>
+<tr class="separator:abc86e1f1f36c313a62491e4f246b7313"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e8c6f0d135e50d0eb256cad00bb9dcf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a7e8c6f0d135e50d0eb256cad00bb9dcf">send_vert_loop</a> (struct transport_tx *trans, struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
+<tr class="separator:a7e8c6f0d135e50d0eb256cad00bb9dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08d5a5277e51cd1c12e573209f812c90"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a08d5a5277e51cd1c12e573209f812c90">send_tune_vert</a> (struct transport_tx *trans, struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
+<tr class="separator:a08d5a5277e51cd1c12e573209f812c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1e43515cf186f69dfaac9a4543b3cf0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#ae1e43515cf186f69dfaac9a4543b3cf0">guidance_v_init</a> (void)</td></tr>
 <tr class="separator:ae1e43515cf186f69dfaac9a4543b3cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a067f5a51ae66cddf397b8b312ae4c383"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a067f5a51ae66cddf397b8b312ae4c383">guidance_v_read_rc</a> (void)</td></tr>
 <tr class="separator:a067f5a51ae66cddf397b8b312ae4c383"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac24445848e497e9b0da2913cecb0db73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#ac24445848e497e9b0da2913cecb0db73">guidance_v_mode_changed</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> new_mode)</td></tr>
 <tr class="separator:ac24445848e497e9b0da2913cecb0db73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98176dba977ff3fdf0d5b07eab548d41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a98176dba977ff3fdf0d5b07eab548d41">guidance_v_notify_in_flight</a> (bool_t in_flight)</td></tr>
-<tr class="separator:a98176dba977ff3fdf0d5b07eab548d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3265bfb8a8925942f818424f97f9725"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#aa3265bfb8a8925942f818424f97f9725">guidance_v_run</a> (bool_t in_flight)</td></tr>
-<tr class="separator:aa3265bfb8a8925942f818424f97f9725"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff132ba48a5bc3d471ec1c57a291bfd4"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#aff132ba48a5bc3d471ec1c57a291bfd4">guidance_v_set_guided_z</a> (float z)</td></tr>
-<tr class="memdesc:aff132ba48a5bc3d471ec1c57a291bfd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set z setpoint in GUIDED mode.  <a href="#aff132ba48a5bc3d471ec1c57a291bfd4">More...</a><br /></td></tr>
-<tr class="separator:aff132ba48a5bc3d471ec1c57a291bfd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a331e736eaca82c6f4a2b5a0f6d92e8e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a331e736eaca82c6f4a2b5a0f6d92e8e2">guidance_v_notify_in_flight</a> (bool in_flight)</td></tr>
+<tr class="separator:a331e736eaca82c6f4a2b5a0f6d92e8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c03e8fc9dd9e84925081df8639d4001"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a5c03e8fc9dd9e84925081df8639d4001">guidance_v_run</a> (bool in_flight)</td></tr>
+<tr class="separator:a5c03e8fc9dd9e84925081df8639d4001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37acdbbaffc177a9c200f95098d5b398"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a37acdbbaffc177a9c200f95098d5b398">guidance_v_set_guided_z</a> (float z)</td></tr>
+<tr class="memdesc:a37acdbbaffc177a9c200f95098d5b398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set z setpoint in GUIDED mode.  <a href="#a37acdbbaffc177a9c200f95098d5b398">More...</a><br /></td></tr>
+<tr class="separator:a37acdbbaffc177a9c200f95098d5b398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acac5c328b4af288851a9ede4552381f8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#acac5c328b4af288851a9ede4552381f8">guidance_v_set_guided_vz</a> (float vz)</td></tr>
+<tr class="memdesc:acac5c328b4af288851a9ede4552381f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set z velocity setpoint in GUIDED mode.  <a href="#acac5c328b4af288851a9ede4552381f8">More...</a><br /></td></tr>
+<tr class="separator:acac5c328b4af288851a9ede4552381f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -200,9 +209,11 @@ Variables</h2></td></tr>
 <tr class="memitem:a730aebac96eaf548439f844e69456190"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a730aebac96eaf548439f844e69456190">guidance_v_nominal_throttle</a></td></tr>
 <tr class="memdesc:a730aebac96eaf548439f844e69456190"><td class="mdescLeft">&#160;</td><td class="mdescRight">nominal throttle for hover.  <a href="#a730aebac96eaf548439f844e69456190">More...</a><br /></td></tr>
 <tr class="separator:a730aebac96eaf548439f844e69456190"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63ea791c1f885d443b373e6d2eb58941"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a63ea791c1f885d443b373e6d2eb58941">guidance_v_adapt_throttle_enabled</a></td></tr>
-<tr class="memdesc:a63ea791c1f885d443b373e6d2eb58941"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use adaptive throttle command estimation.  <a href="#a63ea791c1f885d443b373e6d2eb58941">More...</a><br /></td></tr>
-<tr class="separator:a63ea791c1f885d443b373e6d2eb58941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57dd8eb1b6eb26257ecde7fcaf1e5420"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a57dd8eb1b6eb26257ecde7fcaf1e5420">guidance_v_adapt_throttle_enabled</a></td></tr>
+<tr class="memdesc:a57dd8eb1b6eb26257ecde7fcaf1e5420"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use adaptive throttle command estimation.  <a href="#a57dd8eb1b6eb26257ecde7fcaf1e5420">More...</a><br /></td></tr>
+<tr class="separator:a57dd8eb1b6eb26257ecde7fcaf1e5420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7be95e8e6ce518b3b4bc8997d229b5e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#af7be95e8e6ce518b3b4bc8997d229b5e">guidance_v_guided_vel_enabled</a></td></tr>
+<tr class="separator:af7be95e8e6ce518b3b4bc8997d229b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53779fb4d8ef92130859d3680c988156"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a53779fb4d8ef92130859d3680c988156">guidance_v_rc_delta_t</a></td></tr>
 <tr class="memdesc:a53779fb4d8ef92130859d3680c988156"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct throttle from radio control.  <a href="#a53779fb4d8ef92130859d3680c988156">More...</a><br /></td></tr>
 <tr class="separator:a53779fb4d8ef92130859d3680c988156"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -254,9 +265,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00397">397</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00420">420</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00399">run_hover_loop()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00422">run_hover_loop()</a>.</p>
 
 </div>
 </div>
@@ -270,9 +281,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00059">59</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00060">60</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00174">guidance_v_init()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00175">guidance_v_init()</a>.</p>
 
 </div>
 </div>
@@ -286,9 +297,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00067">67</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00068">68</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00201">guidance_v_read_rc()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00203">guidance_v_read_rc()</a>.</p>
 
 </div>
 </div>
@@ -302,9 +313,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00083">83</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00084">84</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00399">run_hover_loop()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00422">run_hover_loop()</a>.</p>
 
 </div>
 </div>
@@ -318,9 +329,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00091">91</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00092">92</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00399">run_hover_loop()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00422">run_hover_loop()</a>.</p>
 
 </div>
 </div>
@@ -334,9 +345,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00071">71</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00072">72</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00201">guidance_v_read_rc()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00203">guidance_v_read_rc()</a>.</p>
 
 </div>
 </div>
@@ -350,9 +361,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00075">75</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00076">76</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00201">guidance_v_read_rc()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00203">guidance_v_read_rc()</a>.</p>
 
 </div>
 </div>
@@ -366,9 +377,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00095">95</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00096">96</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00399">run_hover_loop()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00422">run_hover_loop()</a>.</p>
 
 </div>
 </div>
@@ -382,9 +393,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00079">79</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00080">80</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00399">run_hover_loop()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00422">run_hover_loop()</a>.</p>
 
 </div>
 </div>
@@ -398,9 +409,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00087">87</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00088">88</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00399">run_hover_loop()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00422">run_hover_loop()</a>.</p>
 
 </div>
 </div>
@@ -414,9 +425,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00057">57</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00058">58</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00174">guidance_v_init()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00175">guidance_v_init()</a>.</p>
 
 </div>
 </div>
@@ -455,14 +466,14 @@ Variables</h2></td></tr>
 <div class="line"><a class="code" href="rotorcraft_2guidance_2guidance__v_8c.html#a45e457c45e984566dc82f03704a6c85d">    guidance_v_zd_ref</a> = _speed;          <a class="code" href="rotorcraft_2guidance_2guidance__v_8c.html#a5bbf57d3e781753c7a290ce6cdce7ca5">\</a></div>
 <div class="line"><a class="code" href="rotorcraft_2guidance_2guidance__v_8c.html#a5bbf57d3e781753c7a290ce6cdce7ca5">    guidance_v_zdd_ref</a> = _accel;             \</div>
 <div class="line">  }</div>
-<div class="ttc" id="rotorcraft_2guidance_2guidance__v_8c_html_a5bbf57d3e781753c7a290ce6cdce7ca5"><div class="ttname"><a href="rotorcraft_2guidance_2guidance__v_8c.html#a5bbf57d3e781753c7a290ce6cdce7ca5">guidance_v_zdd_ref</a></div><div class="ttdeci">int32_t guidance_v_zdd_ref</div><div class="ttdoc">vertical acceleration reference in meter/s^2. </div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00122">guidance_v.c:122</a></div></div>
-<div class="ttc" id="rotorcraft_2guidance_2guidance__v_8c_html_a05574a3cc3b7afff99639758b8389dd9"><div class="ttname"><a href="rotorcraft_2guidance_2guidance__v_8c.html#a05574a3cc3b7afff99639758b8389dd9">guidance_v_z_ref</a></div><div class="ttdeci">int32_t guidance_v_z_ref</div><div class="ttdoc">altitude reference in meters. </div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00120">guidance_v.c:120</a></div></div>
-<div class="ttc" id="rotorcraft_2guidance_2guidance__v_8c_html_a45e457c45e984566dc82f03704a6c85d"><div class="ttname"><a href="rotorcraft_2guidance_2guidance__v_8c.html#a45e457c45e984566dc82f03704a6c85d">guidance_v_zd_ref</a></div><div class="ttdeci">int32_t guidance_v_zd_ref</div><div class="ttdoc">vertical speed reference in meter/s. </div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00121">guidance_v.c:121</a></div></div>
+<div class="ttc" id="rotorcraft_2guidance_2guidance__v_8c_html_a5bbf57d3e781753c7a290ce6cdce7ca5"><div class="ttname"><a href="rotorcraft_2guidance_2guidance__v_8c.html#a5bbf57d3e781753c7a290ce6cdce7ca5">guidance_v_zdd_ref</a></div><div class="ttdeci">int32_t guidance_v_zdd_ref</div><div class="ttdoc">vertical acceleration reference in meter/s^2. </div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00123">guidance_v.c:123</a></div></div>
+<div class="ttc" id="rotorcraft_2guidance_2guidance__v_8c_html_a05574a3cc3b7afff99639758b8389dd9"><div class="ttname"><a href="rotorcraft_2guidance_2guidance__v_8c.html#a05574a3cc3b7afff99639758b8389dd9">guidance_v_z_ref</a></div><div class="ttdeci">int32_t guidance_v_z_ref</div><div class="ttdoc">altitude reference in meters. </div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00121">guidance_v.c:121</a></div></div>
+<div class="ttc" id="rotorcraft_2guidance_2guidance__v_8c_html_a45e457c45e984566dc82f03704a6c85d"><div class="ttname"><a href="rotorcraft_2guidance_2guidance__v_8c.html#a45e457c45e984566dc82f03704a6c85d">guidance_v_zd_ref</a></div><div class="ttdeci">int32_t guidance_v_zd_ref</div><div class="ttdoc">vertical speed reference in meter/s. </div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00122">guidance_v.c:122</a></div></div>
 <div class="ttc" id="guidance__v__ref_8c_html_a9438c4ab465cec426023d9fc3fb9cb07"><div class="ttname"><a href="guidance__v__ref_8c.html#a9438c4ab465cec426023d9fc3fb9cb07">gv_set_ref</a></div><div class="ttdeci">void gv_set_ref(int32_t alt, int32_t speed, int32_t accel)</div><div class="ttdef"><b>Definition:</b> <a href="guidance__v__ref_8c_source.html#l00087">guidance_v_ref.c:87</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00133">133</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00134">134</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00223">guidance_v_mode_changed()</a>, and <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00272">guidance_v_run()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00225">guidance_v_mode_changed()</a>, and <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00283">guidance_v_run()</a>.</p>
 
 </div>
 </div>
@@ -491,11 +502,11 @@ Variables</h2></td></tr>
 
 <p>get the cosine of the angle between thrust vector and gravity vector </p>
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00369">369</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00392">392</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00205">BFP_OF_REAL</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00154">INT32_TRIG_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00160">Int32RMat::m</a>, and <a class="el" href="state_8h_source.html#l01090">stateGetNedToBodyRMat_i()</a>.</p>
+<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00205">BFP_OF_REAL</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00154">INT32_TRIG_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00160">Int32RMat::m</a>, and <a class="el" href="state_8h_source.html#l01101">stateGetNedToBodyRMat_i()</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00272">guidance_v_run()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00283">guidance_v_run()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -515,7 +526,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_a88e5859a174ec5bf7fb911a351a15065_icgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_a88e5859a174ec5bf7fb911a351a15065_icgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_a88e5859a174ec5bf7fb911a351a15065_icgraph" id="rotorcraft_2guidance_2guidance__v_8c_a88e5859a174ec5bf7fb911a351a15065_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2guidance_2guidance__v_8h.html#aa3265bfb8a8925942f818424f97f9725" title="guidance_v_run" alt="" coords="195,31,317,57"/><area shape="rect" id="node3" href="rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="365,31,500,57"/><area shape="rect" id="node4" href="rotorcraft_2main__fbw_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="548,31,659,57"/><area shape="rect" id="node5" href="rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="707,31,869,57"/><area shape="rect" id="node6" href="fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="929,5,984,32"/><area shape="rect" id="node7" href="main__chibios__libopencm3_8c.html#ad648a546fe66cd5f9328f33221a40c64" title="pprz_thd" alt="" coords="917,56,996,83"/><area shape="rect" id="node8" href="main__chibios__libopencm3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1044,56,1099,83"/></map>
+<area shape="rect" id="node2" href="rotorcraft_2guidance_2guidance__v_8h.html#a5c03e8fc9dd9e84925081df8639d4001" title="guidance_v_run" alt="" coords="195,81,317,108"/><area shape="rect" id="node3" href="rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="365,81,500,108"/><area shape="rect" id="node4" href="rotorcraft_2main__fbw_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="548,81,659,108"/><area shape="rect" id="node5" href="rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="707,81,869,108"/><area shape="rect" id="node6" href="fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="975,5,1030,32"/><area shape="rect" id="node7" href="main__chibios_8c.html#a1bd1ec0fdc597d88ee659889cda25c0a" title="thd_ap" alt="" coords="969,56,1036,83"/><area shape="rect" id="node9" href="main__chibios_8c.html#a4042bcab9578175e00c82adcc2b251f8" title="thd_fbw" alt="" coords="967,107,1038,133"/><area shape="rect" id="node10" href="nps__autopilot__fixedwing_8c.html#a12870aaa609d4860004be3cec4c8cf2a" title="nps_autopilot_run_step" alt="" coords="917,157,1088,184"/><area shape="rect" id="node8" href="main__chibios_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function. " alt="" coords="1136,81,1191,108"/></map>
 </div>
 </p>
 
@@ -535,11 +546,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00174">174</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00175">175</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>References <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00059">GUIDANCE_V_ADAPT_THROTTLE_ENABLED</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00035">GUIDANCE_V_MODE_KILL</a>, <a class="el" href="ctrl__module__demo_8c_source.html#l00105">guidance_v_module_init()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00057">GUIDANCE_V_NOMINAL_HOVER_THROTTLE</a>, <a class="el" href="guidance__v__adapt_8c_source.html#l00115">gv_adapt_init()</a>, and <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>.</p>
+<p>References <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00060">GUIDANCE_V_ADAPT_THROTTLE_ENABLED</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00035">GUIDANCE_V_MODE_KILL</a>, <a class="el" href="ctrl__module__demo_8c_source.html#l00105">guidance_v_module_init()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00058">GUIDANCE_V_NOMINAL_HOVER_THROTTLE</a>, <a class="el" href="guidance__v__adapt_8c_source.html#l00115">gv_adapt_init()</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00165">send_tune_vert()</a>, and <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00147">send_vert_loop()</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00282">autopilot_init()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00290">autopilot_init()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -548,7 +559,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_ae1e43515cf186f69dfaac9a4543b3cf0_cgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_ae1e43515cf186f69dfaac9a4543b3cf0_cgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_ae1e43515cf186f69dfaac9a4543b3cf0_cgraph" id="rotorcraft_2guidance_2guidance__v_8c_ae1e43515cf186f69dfaac9a4543b3cf0_cgraph">
-<area shape="rect" id="node2" href="ctrl__module__demo_8c.html#a535ad2dedb628ec10707a6c0448c525e" title="guidance_v_module_init" alt="" coords="185,5,359,32"/><area shape="rect" id="node3" href="guidance__v__adapt_8c.html#a14968f81dc98fe21f0f996ceace5fb5d" title="gv_adapt_init" alt="" coords="219,56,325,83"/><area shape="rect" id="node4" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="173,107,371,133"/></map>
+<area shape="rect" id="node2" href="ctrl__module__demo_8c.html#a535ad2dedb628ec10707a6c0448c525e" title="guidance_v_module_init" alt="" coords="185,71,359,98"/><area shape="rect" id="node3" href="guidance__v__adapt_8c.html#a14968f81dc98fe21f0f996ceace5fb5d" title="gv_adapt_init" alt="" coords="219,122,325,149"/><area shape="rect" id="node4" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="173,173,371,199"/><area shape="rect" id="node5" href="rotorcraft_2guidance_2guidance__v_8c.html#a08d5a5277e51cd1c12e573209f812c90" title="send_tune_vert" alt="" coords="211,223,333,250"/><area shape="rect" id="node20" href="rotorcraft_2guidance_2guidance__v_8c.html#a7e8c6f0d135e50d0eb256cad00bb9dcf" title="send_vert_loop" alt="" coords="213,274,331,301"/><area shape="rect" id="node6" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="419,223,583,250"/><area shape="rect" id="node7" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="631,198,799,225"/><area shape="rect" id="node8" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="1049,173,1188,199"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="847,122,996,149"/><area shape="rect" id="node13" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1261,274,1361,301"/><area shape="rect" id="node14" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED. " alt="" coords="858,223,985,250"/><area shape="rect" id="node17" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="872,71,971,98"/><area shape="rect" id="node9" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="1241,173,1380,199"/><area shape="rect" id="node10" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1428,173,1576,199"/><area shape="rect" id="node12" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1044,122,1193,149"/><area shape="rect" id="node15" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="1069,223,1168,250"/><area shape="rect" id="node16" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1259,223,1363,250"/><area shape="rect" id="node18" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1045,71,1192,98"/><area shape="rect" id="node19" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1051,5,1187,47"/><area shape="rect" id="node21" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="423,274,578,301"/><area shape="rect" id="node25" href="group__state__acceleration.html#gab55b482bd9fe875141bafd34beda8bb4" title="Get acceleration in NED coordinates (int). " alt="" coords="427,325,575,351"/><area shape="rect" id="node22" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="635,274,794,301"/><area shape="rect" id="node23" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="850,325,993,351"/><area shape="rect" id="node24" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU. " alt="" coords="1047,325,1190,351"/><area shape="rect" id="node26" href="group__state__acceleration.html#ga48146adcdcd09bb704335795c6624ad8" title="stateCalcAccelNed_i" alt="" coords="639,325,791,351"/></map>
 </div>
 </p>
 
@@ -579,11 +590,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00223">223</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00225">225</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>References <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00038">GUIDANCE_V_MODE_CLIMB</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00042">GUIDANCE_V_MODE_FLIP</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00043">GUIDANCE_V_MODE_GUIDED</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00039">GUIDANCE_V_MODE_HOVER</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00041">GUIDANCE_V_MODE_MODULE</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00040">GUIDANCE_V_MODE_NAV</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00037">GUIDANCE_V_MODE_RC_CLIMB</a>, <a class="el" href="ctrl__module__demo_8c_source.html#l00111">guidance_v_module_enter()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00133">GuidanceVSetRef</a>, <a class="el" href="state_8h_source.html#l00648">stateGetPositionNed_i()</a>, <a class="el" href="state_8h_source.html#l00840">stateGetSpeedNed_i()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::z</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
+<p>References <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00038">GUIDANCE_V_MODE_CLIMB</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00042">GUIDANCE_V_MODE_FLIP</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00043">GUIDANCE_V_MODE_GUIDED</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00039">GUIDANCE_V_MODE_HOVER</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00041">GUIDANCE_V_MODE_MODULE</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00040">GUIDANCE_V_MODE_NAV</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00037">GUIDANCE_V_MODE_RC_CLIMB</a>, <a class="el" href="ctrl__module__demo_8c_source.html#l00111">guidance_v_module_enter()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00134">GuidanceVSetRef</a>, <a class="el" href="state_8h_source.html#l00659">stateGetPositionNed_i()</a>, <a class="el" href="state_8h_source.html#l00851">stateGetSpeedNed_i()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00395">autopilot_set_mode()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00424">autopilot_set_mode()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -592,7 +603,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_ac24445848e497e9b0da2913cecb0db73_cgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_ac24445848e497e9b0da2913cecb0db73_cgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_ac24445848e497e9b0da2913cecb0db73_cgraph" id="rotorcraft_2guidance_2guidance__v_8c_ac24445848e497e9b0da2913cecb0db73_cgraph">
-<area shape="rect" id="node2" href="ctrl__module__demo_8c.html#a1288433c507106e865034b02ae79b2d6" title="guidance_v_module_enter" alt="" coords="253,187,444,213"/><area shape="rect" id="node3" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="267,237,431,264"/><area shape="rect" id="node18" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="271,313,426,340"/><area shape="rect" id="node4" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="492,199,660,225"/><area shape="rect" id="node5" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="713,123,852,149"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="708,173,857,200"/><area shape="rect" id="node10" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1127,325,1227,352"/><area shape="rect" id="node11" href="group__math__geodetic__int.html#ga6618f634b774eaf7182dfec83d68f141" title="Convert a point from LLA to local NED. " alt="" coords="715,224,850,251"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="733,64,832,91"/><area shape="rect" id="node6" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="911,123,1049,149"/><area shape="rect" id="node7" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1103,173,1251,200"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="905,173,1055,200"/><area shape="rect" id="node12" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="931,275,1029,301"/><area shape="rect" id="node14" href="group__math__geodetic__int.html#ga9307e97057d51e781def8a03dea804f6" title="Convert a point from ECEF to local NED. " alt="" coords="906,224,1054,251"/><area shape="rect" id="node13" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1125,275,1229,301"/><area shape="rect" id="node16" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="907,5,1053,32"/><area shape="rect" id="node17" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="912,57,1048,98"/><area shape="rect" id="node19" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="497,364,655,391"/><area shape="rect" id="node20" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="711,376,854,403"/><area shape="rect" id="node21" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU. " alt="" coords="909,376,1051,403"/></map>
+<area shape="rect" id="node2" href="ctrl__module__demo_8c.html#a1288433c507106e865034b02ae79b2d6" title="guidance_v_module_enter" alt="" coords="253,179,444,206"/><area shape="rect" id="node3" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="267,230,431,257"/><area shape="rect" id="node17" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="271,293,426,319"/><area shape="rect" id="node4" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="492,198,660,225"/><area shape="rect" id="node5" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="911,173,1049,199"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="708,122,857,149"/><area shape="rect" id="node10" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1122,274,1222,301"/><area shape="rect" id="node11" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED. " alt="" coords="719,223,846,250"/><area shape="rect" id="node14" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="733,71,832,98"/><area shape="rect" id="node6" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="1103,173,1241,199"/><area shape="rect" id="node7" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1289,173,1437,199"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="905,122,1055,149"/><area shape="rect" id="node12" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="931,223,1029,250"/><area shape="rect" id="node13" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1120,223,1224,250"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="907,71,1053,98"/><area shape="rect" id="node16" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="912,5,1048,47"/><area shape="rect" id="node18" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="497,318,655,345"/><area shape="rect" id="node19" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="711,325,854,351"/><area shape="rect" id="node20" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU. " alt="" coords="909,325,1051,351"/></map>
 </div>
 </p>
 
@@ -603,27 +614,27 @@ Variables</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_ac24445848e497e9b0da2913cecb0db73_icgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_ac24445848e497e9b0da2913cecb0db73_icgraph" alt=""/></div>
 <map name="rotorcraft_2guidance_2guidance__v_8c_ac24445848e497e9b0da2913cecb0db73_icgraph" id="rotorcraft_2guidance_2guidance__v_8c_ac24445848e497e9b0da2913cecb0db73_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2autopilot_8h.html#a3aaa2cf16ee3b25e8fca9bbd1d579d64" title="autopilot_set_mode" alt="" coords="253,132,403,159"/><area shape="rect" id="node3" href="rotorcraft_2autopilot_8c.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization. " alt="" coords="499,5,603,32"/><area shape="rect" id="node4" href="rotorcraft_2autopilot_8h.html#a7339f5741706cb9c2e2186b1174cc770" title="Get autopilot mode from two 2way switches. " alt="" coords="469,56,634,83"/><area shape="rect" id="node7" href="rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="871,157,1005,184"/><area shape="rect" id="node13" href="main_8h.html#a6266a73fe8c0512f1de72cea96e5110b" title="failsafe_check" alt="" coords="496,107,607,133"/><area shape="rect" id="node15" href="guidance__flip_8h.html#a341f66aaa1a6e736e980ae5cccb3c0f5" title="guidance_flip_run" alt="" coords="485,208,618,235"/><area shape="rect" id="node17" href="mavlink_8c.html#a92b02fdeb899791573ef52506deb653c" title="mavlink_common_message\l_handler" alt="" coords="451,259,652,301"/><area shape="rect" id="node5" href="rotorcraft_2main__fbw_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="713,5,810,32"/><area shape="rect" id="node6" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="911,31,965,57"/><area shape="rect" id="node8" href="rotorcraft_2main__fbw_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="1053,157,1164,184"/><area shape="rect" id="node9" href="rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="1212,132,1375,159"/><area shape="rect" id="node10" href="fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1435,107,1489,133"/><area shape="rect" id="node11" href="main__chibios__libopencm3_8c.html#ad648a546fe66cd5f9328f33221a40c64" title="pprz_thd" alt="" coords="1423,157,1501,184"/><area shape="rect" id="node12" href="main__chibios__libopencm3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1549,157,1604,184"/><area shape="rect" id="node14" href="rotorcraft_2main__fbw_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="main_init" alt="" coords="721,56,801,83"/><area shape="rect" id="node16" href="guidance__h_8h.html#ac4cf6da90a4278b4d0b2e4f227b33f2c" title="guidance_h_run" alt="" coords="700,208,823,235"/><area shape="rect" id="node18" href="mavlink_8h.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls. " alt="" coords="704,267,819,293"/></map>
+<area shape="rect" id="node2" href="rotorcraft_2autopilot_8h.html#a3aaa2cf16ee3b25e8fca9bbd1d579d64" title="autopilot_set_mode" alt="" coords="253,157,403,184"/><area shape="rect" id="node3" href="rotorcraft_2autopilot_8c.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization. " alt="" coords="499,5,603,32"/><area shape="rect" id="node4" href="rotorcraft_2autopilot_8h.html#a7339f5741706cb9c2e2186b1174cc770" title="Get autopilot mode from two 2way switches. " alt="" coords="469,56,634,83"/><area shape="rect" id="node7" href="rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="871,157,1005,184"/><area shape="rect" id="node15" href="rotorcraft_2autopilot_8h.html#a651a9f8c5088099dad4861cedcb3b956" title="AP mode setting handler. " alt="" coords="455,259,647,285"/><area shape="rect" id="node16" href="main_8h.html#a6266a73fe8c0512f1de72cea96e5110b" title="failsafe_check" alt="" coords="496,107,607,133"/><area shape="rect" id="node18" href="guidance__flip_8h.html#a341f66aaa1a6e736e980ae5cccb3c0f5" title="guidance_flip_run" alt="" coords="485,208,618,235"/><area shape="rect" id="node20" href="mavlink_8c.html#a92b02fdeb899791573ef52506deb653c" title="mavlink_common_message\l_handler" alt="" coords="451,310,652,351"/><area shape="rect" id="node5" href="rotorcraft_2main__fbw_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="713,5,810,32"/><area shape="rect" id="node6" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="911,31,965,57"/><area shape="rect" id="node8" href="rotorcraft_2main__fbw_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="1053,157,1164,184"/><area shape="rect" id="node9" href="rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="1212,132,1375,159"/><area shape="rect" id="node10" href="fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1481,56,1535,83"/><area shape="rect" id="node11" href="main__chibios_8c.html#a1bd1ec0fdc597d88ee659889cda25c0a" title="thd_ap" alt="" coords="1475,107,1541,133"/><area shape="rect" id="node13" href="main__chibios_8c.html#a4042bcab9578175e00c82adcc2b251f8" title="thd_fbw" alt="" coords="1473,157,1543,184"/><area shape="rect" id="node14" href="nps__autopilot__fixedwing_8c.html#a12870aaa609d4860004be3cec4c8cf2a" title="nps_autopilot_run_step" alt="" coords="1423,208,1593,235"/><area shape="rect" id="node12" href="main__chibios_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function. " alt="" coords="1641,132,1696,159"/><area shape="rect" id="node17" href="rotorcraft_2main__fbw_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="Main initialization. " alt="" coords="721,56,801,83"/><area shape="rect" id="node19" href="guidance__h_8h.html#afff2f6a359638c74d5d1051c3edfa554" title="guidance_h_run" alt="" coords="700,208,823,235"/><area shape="rect" id="node21" href="mavlink_8h.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls. " alt="" coords="704,317,819,344"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a98176dba977ff3fdf0d5b07eab548d41"></a>
+<a class="anchor" id="a331e736eaca82c6f4a2b5a0f6d92e8e2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void guidance_v_notify_in_flight </td>
           <td>(</td>
-          <td class="paramtype">bool_t&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>in_flight</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00264">264</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00275">275</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
 <p>References <a class="el" href="guidance__v__adapt_8c_source.html#l00115">gv_adapt_init()</a>.</p>
 
@@ -632,8 +643,8 @@ Variables</h2></td></tr>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_a98176dba977ff3fdf0d5b07eab548d41_cgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_a98176dba977ff3fdf0d5b07eab548d41_cgraph" alt=""/></div>
-<map name="rotorcraft_2guidance_2guidance__v_8c_a98176dba977ff3fdf0d5b07eab548d41_cgraph" id="rotorcraft_2guidance_2guidance__v_8c_a98176dba977ff3fdf0d5b07eab548d41_cgraph">
+<div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_a331e736eaca82c6f4a2b5a0f6d92e8e2_cgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_a331e736eaca82c6f4a2b5a0f6d92e8e2_cgraph" alt=""/></div>
+<map name="rotorcraft_2guidance_2guidance__v_8c_a331e736eaca82c6f4a2b5a0f6d92e8e2_cgraph" id="rotorcraft_2guidance_2guidance__v_8c_a331e736eaca82c6f4a2b5a0f6d92e8e2_cgraph">
 <area shape="rect" id="node2" href="guidance__v__adapt_8c.html#a14968f81dc98fe21f0f996ceace5fb5d" title="gv_adapt_init" alt="" coords="208,13,315,39"/></map>
 </div>
 </p>
@@ -654,11 +665,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00201">201</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00203">203</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>References <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00067">GUIDANCE_V_CLIMB_RC_DEADBAND</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00071">GUIDANCE_V_MAX_RC_CLIMB_SPEED</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00075">GUIDANCE_V_MAX_RC_DESCENT_SPEED</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="radio__control_8c_source.html#l00030">radio_control</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00042">RADIO_THROTTLE</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00218">SPEED_BFP_OF_REAL</a>, and <a class="el" href="radio__control_8h_source.html#l00058">RadioControl::values</a>.</p>
+<p>References <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00068">GUIDANCE_V_CLIMB_RC_DEADBAND</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00072">GUIDANCE_V_MAX_RC_CLIMB_SPEED</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00076">GUIDANCE_V_MAX_RC_DESCENT_SPEED</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="radio__control_8c_source.html#l00030">radio_control</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00042">RADIO_THROTTLE</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00218">SPEED_BFP_OF_REAL</a>, and <a class="el" href="radio__control_8h_source.html#l00058">RadioControl::values</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00644">autopilot_on_rc_frame()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00758">autopilot_on_rc_frame()</a>.</p>
 
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -673,34 +684,34 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa3265bfb8a8925942f818424f97f9725"></a>
+<a class="anchor" id="a5c03e8fc9dd9e84925081df8639d4001"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void guidance_v_run </td>
           <td>(</td>
-          <td class="paramtype">bool_t&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>in_flight</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00272">272</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00283">283</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>References <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00369">get_vertical_thrust_coeff()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00101">guidance_v_delta_t</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00038">GUIDANCE_V_MODE_CLIMB</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00042">GUIDANCE_V_MODE_FLIP</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00043">GUIDANCE_V_MODE_GUIDED</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00039">GUIDANCE_V_MODE_HOVER</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00041">GUIDANCE_V_MODE_MODULE</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00040">GUIDANCE_V_MODE_NAV</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00037">GUIDANCE_V_MODE_RC_CLIMB</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00036">GUIDANCE_V_MODE_RC_DIRECT</a>, <a class="el" href="ctrl__module__demo_8c_source.html#l00116">guidance_v_module_run()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00110">guidance_v_rc_delta_t</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00116">guidance_v_rc_zd_sp</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00130">guidance_v_thrust_coeff</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00133">GuidanceVSetRef</a>, <a class="el" href="guidance__v__adapt_8c_source.html#l00115">gv_adapt_init()</a>, <a class="el" href="guidance__v__adapt_8c_source.html#l00128">gv_adapt_run()</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00095">gv_update_ref_from_z_sp()</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00129">gv_update_ref_from_zd_sp()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00154">INT32_TRIG_FRAC</a>, <a class="el" href="common__flight__plan_8h_source.html#l00061">Min</a>, <a class="el" href="nav_8c_source.html#l00055">nav_climb</a>, <a class="el" href="navigation_8c_source.html#l00103">nav_flight_altitude</a>, <a class="el" href="navigation_8c_source.html#l00102">nav_throttle</a>, <a class="el" href="radio__control_8c_source.html#l00030">radio_control</a>, <a class="el" href="radio__control_8h_source.html#l00048">RC_OK</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00399">run_hover_loop()</a>, <a class="el" href="stabilization_8c_source.html#l00028">stabilization_cmd</a>, <a class="el" href="state_8h_source.html#l00991">stateGetAccelNed_i()</a>, <a class="el" href="state_8h_source.html#l00648">stateGetPositionNed_i()</a>, <a class="el" href="state_8h_source.html#l00840">stateGetSpeedNed_i()</a>, <a class="el" href="radio__control_8h_source.html#l00053">RadioControl::status</a>, <a class="el" href="sim__ap_8c_source.html#l00036">vertical_mode</a>, <a class="el" href="navigation_8h_source.html#l00071">VERTICAL_MODE_ALT</a>, <a class="el" href="navigation_8h_source.html#l00070">VERTICAL_MODE_CLIMB</a>, <a class="el" href="navigation_8h_source.html#l00069">VERTICAL_MODE_MANUAL</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::z</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
+<p>References <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00392">get_vertical_thrust_coeff()</a>, <a class="el" href="guidance__hybrid_8c_source.html#l00377">guidance_hybrid_vertical()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00102">guidance_v_delta_t</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00038">GUIDANCE_V_MODE_CLIMB</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00042">GUIDANCE_V_MODE_FLIP</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00043">GUIDANCE_V_MODE_GUIDED</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00039">GUIDANCE_V_MODE_HOVER</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00041">GUIDANCE_V_MODE_MODULE</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00040">GUIDANCE_V_MODE_NAV</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00037">GUIDANCE_V_MODE_RC_CLIMB</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00036">GUIDANCE_V_MODE_RC_DIRECT</a>, <a class="el" href="ctrl__module__demo_8c_source.html#l00116">guidance_v_module_run()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00111">guidance_v_rc_delta_t</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00117">guidance_v_rc_zd_sp</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00131">guidance_v_thrust_coeff</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00121">guidance_v_z_ref</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00134">GuidanceVSetRef</a>, <a class="el" href="guidance__v__adapt_8c_source.html#l00115">gv_adapt_init()</a>, <a class="el" href="guidance__v__adapt_8c_source.html#l00128">gv_adapt_run()</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00095">gv_update_ref_from_z_sp()</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00129">gv_update_ref_from_zd_sp()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00154">INT32_TRIG_FRAC</a>, <a class="el" href="rotorcraft_2main__fbw_8c_source.html#l00052">Min</a>, <a class="el" href="nav_8c_source.html#l00057">nav_climb</a>, <a class="el" href="navigation_8c_source.html#l00104">nav_flight_altitude</a>, <a class="el" href="navigation_8c_source.html#l00103">nav_throttle</a>, <a class="el" href="radio__control_8c_source.html#l00030">radio_control</a>, <a class="el" href="radio__control_8h_source.html#l00048">RC_OK</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00422">run_hover_loop()</a>, <a class="el" href="stabilization_8c_source.html#l00028">stabilization_cmd</a>, <a class="el" href="state_8h_source.html#l01002">stateGetAccelNed_i()</a>, <a class="el" href="state_8h_source.html#l00659">stateGetPositionNed_i()</a>, <a class="el" href="state_8h_source.html#l00851">stateGetSpeedNed_i()</a>, <a class="el" href="radio__control_8h_source.html#l00053">RadioControl::status</a>, <a class="el" href="sim__ap_8c_source.html#l00035">vertical_mode</a>, <a class="el" href="navigation_8h_source.html#l00073">VERTICAL_MODE_ALT</a>, <a class="el" href="navigation_8h_source.html#l00072">VERTICAL_MODE_CLIMB</a>, <a class="el" href="navigation_8h_source.html#l00071">VERTICAL_MODE_MANUAL</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00334">autopilot_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00344">autopilot_periodic()</a>.</p>
 
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_aa3265bfb8a8925942f818424f97f9725_cgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_aa3265bfb8a8925942f818424f97f9725_cgraph" alt=""/></div>
-<map name="rotorcraft_2guidance_2guidance__v_8c_aa3265bfb8a8925942f818424f97f9725_cgraph" id="rotorcraft_2guidance_2guidance__v_8c_aa3265bfb8a8925942f818424f97f9725_cgraph">
-<area shape="rect" id="node2" href="rotorcraft_2guidance_2guidance__v_8c.html#a88e5859a174ec5bf7fb911a351a15065" title="get the cosine of the angle between thrust vector and gravity vector " alt="" coords="199,5,340,47"/><area shape="rect" id="node7" href="ctrl__module__demo_8c.html#a88ec7722d4690282ddf50191111e2f3e" title="guidance_v_module_run" alt="" coords="181,71,358,98"/><area shape="rect" id="node8" href="guidance__v__adapt_8c.html#a14968f81dc98fe21f0f996ceace5fb5d" title="gv_adapt_init" alt="" coords="216,122,323,149"/><area shape="rect" id="node9" href="guidance__v__adapt_8c.html#a108e823687eddd24bff053ea9a03943f" title="Adaptation function. " alt="" coords="215,173,324,199"/><area shape="rect" id="node10" href="guidance__v__ref_8c.html#ab36885cc677b3d2a0f89c148ffe6e9ba" title="gv_update_ref_from_z_sp" alt="" coords="176,223,363,250"/><area shape="rect" id="node11" href="guidance__v__ref_8c.html#ab8d8d8003fbd1c3d31ee72827ea1e25e" title="update vertical reference from speed setpoint. " alt="" coords="194,275,345,316"/><area shape="rect" id="node12" href="rotorcraft_2guidance_2guidance__v_8c.html#aef574ad479e888ed806893456e9a0359" title="run_hover_loop" alt="" coords="209,391,329,418"/><area shape="rect" id="node13" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="424,341,588,367"/><area shape="rect" id="node28" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="429,442,583,469"/><area shape="rect" id="node32" href="group__state__acceleration.html#gab55b482bd9fe875141bafd34beda8bb4" title="Get acceleration in NED coordinates (int). " alt="" coords="432,493,580,519"/><area shape="rect" id="node3" href="group__state__attitude.html#ga7c541b9b2e6231ac9a11a9e21562a5b3" title="Get vehicle body attitude rotation matrix (int). " alt="" coords="411,13,601,39"/><area shape="rect" id="node4" href="group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int). " alt="" coords="655,13,811,39"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title="orientationCalcRMat_i" alt="" coords="865,13,1025,39"/><area shape="rect" id="node6" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix. " alt="" coords="1075,13,1221,39"/><area shape="rect" id="node14" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="649,341,817,367"/><area shape="rect" id="node15" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="876,147,1015,174"/><area shape="rect" id="node18" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="871,391,1020,418"/><area shape="rect" id="node20" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1295,358,1395,385"/><area shape="rect" id="node21" href="group__math__geodetic__int.html#ga6618f634b774eaf7182dfec83d68f141" title="Convert a point from LLA to local NED. " alt="" coords="878,223,1013,250"/><area shape="rect" id="node25" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="896,341,995,367"/><area shape="rect" id="node16" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="1079,122,1217,149"/><area shape="rect" id="node17" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1271,147,1419,174"/><area shape="rect" id="node19" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1073,391,1223,418"/><area shape="rect" id="node22" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="1099,223,1197,250"/><area shape="rect" id="node24" href="group__math__geodetic__int.html#ga9307e97057d51e781def8a03dea804f6" title="Convert a point from ECEF to local NED. " alt="" coords="1074,173,1222,199"/><area shape="rect" id="node23" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1293,223,1397,250"/><area shape="rect" id="node26" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1075,341,1221,367"/><area shape="rect" id="node27" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1080,275,1216,316"/><area shape="rect" id="node29" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="654,442,813,469"/><area shape="rect" id="node30" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="874,493,1017,519"/><area shape="rect" id="node31" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU. " alt="" coords="1077,493,1219,519"/><area shape="rect" id="node33" href="group__state__acceleration.html#ga48146adcdcd09bb704335795c6624ad8" title="stateCalcAccelNed_i" alt="" coords="657,493,809,519"/></map>
+<div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_a5c03e8fc9dd9e84925081df8639d4001_cgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_a5c03e8fc9dd9e84925081df8639d4001_cgraph" alt=""/></div>
+<map name="rotorcraft_2guidance_2guidance__v_8c_a5c03e8fc9dd9e84925081df8639d4001_cgraph" id="rotorcraft_2guidance_2guidance__v_8c_a5c03e8fc9dd9e84925081df8639d4001_cgraph">
+<area shape="rect" id="node2" href="rotorcraft_2guidance_2guidance__v_8c.html#a88e5859a174ec5bf7fb911a351a15065" title="get the cosine of the angle between thrust vector and gravity vector " alt="" coords="199,5,340,47"/><area shape="rect" id="node7" href="guidance__hybrid_8c.html#a579d66799a2ebc105bed0060f17216f7" title="Description. " alt="" coords="180,71,359,98"/><area shape="rect" id="node8" href="ctrl__module__demo_8c.html#a92d0c10f0d13b0b23000b1b161cfb5e4" title="guidance_v_module_run" alt="" coords="181,122,358,149"/><area shape="rect" id="node9" href="guidance__v__adapt_8c.html#a14968f81dc98fe21f0f996ceace5fb5d" title="gv_adapt_init" alt="" coords="216,173,323,199"/><area shape="rect" id="node10" href="guidance__v__adapt_8c.html#a108e823687eddd24bff053ea9a03943f" title="Adaptation function. " alt="" coords="215,223,324,250"/><area shape="rect" id="node11" href="guidance__v__ref_8c.html#ab36885cc677b3d2a0f89c148ffe6e9ba" title="gv_update_ref_from_z_sp" alt="" coords="176,274,363,301"/><area shape="rect" id="node12" href="guidance__v__ref_8c.html#ab8d8d8003fbd1c3d31ee72827ea1e25e" title="update vertical reference from speed setpoint. " alt="" coords="194,325,345,367"/><area shape="rect" id="node13" href="rotorcraft_2guidance_2guidance__v_8c.html#abc86e1f1f36c313a62491e4f246b7313" title="run_hover_loop" alt="" coords="209,442,329,469"/><area shape="rect" id="node14" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="424,391,588,418"/><area shape="rect" id="node28" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="429,493,583,519"/><area shape="rect" id="node32" href="group__state__acceleration.html#gab55b482bd9fe875141bafd34beda8bb4" title="Get acceleration in NED coordinates (int). " alt="" coords="432,543,580,570"/><area shape="rect" id="node3" href="group__state__attitude.html#ga7c541b9b2e6231ac9a11a9e21562a5b3" title="Get vehicle body attitude rotation matrix (int). " alt="" coords="411,13,601,39"/><area shape="rect" id="node4" href="group__math__orientation__representation.html#ga4d3e785c7decf12ad0331c6ec207ded7" title="Get vehicle body attitude rotation matrix (int). " alt="" coords="655,13,811,39"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#ga8d3a2d675e2693d1780d587cd392d96a" title="orientationCalcRMat_i" alt="" coords="865,13,1025,39"/><area shape="rect" id="node6" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f" title="Convert unit quaternion to rotation matrix. " alt="" coords="1075,13,1221,39"/><area shape="rect" id="node15" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="649,381,817,407"/><area shape="rect" id="node16" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="1079,335,1217,362"/><area shape="rect" id="node19" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="871,469,1020,495"/><area shape="rect" id="node21" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1290,234,1390,261"/><area shape="rect" id="node22" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED. " alt="" coords="882,305,1009,331"/><area shape="rect" id="node25" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="896,406,995,433"/><area shape="rect" id="node17" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="1271,335,1409,362"/><area shape="rect" id="node18" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1457,335,1605,362"/><area shape="rect" id="node20" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1073,503,1223,530"/><area shape="rect" id="node23" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="1099,285,1197,311"/><area shape="rect" id="node24" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1288,285,1392,311"/><area shape="rect" id="node26" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1075,386,1221,413"/><area shape="rect" id="node27" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1080,437,1216,479"/><area shape="rect" id="node29" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="654,493,813,519"/><area shape="rect" id="node30" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="874,543,1017,570"/><area shape="rect" id="node31" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU. " alt="" coords="1077,554,1219,581"/><area shape="rect" id="node33" href="group__state__acceleration.html#ga48146adcdcd09bb704335795c6624ad8" title="stateCalcAccelNed_i" alt="" coords="657,543,809,570"/></map>
 </div>
 </p>
 
@@ -709,20 +720,62 @@ Variables</h2></td></tr>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_aa3265bfb8a8925942f818424f97f9725_icgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_aa3265bfb8a8925942f818424f97f9725_icgraph" alt=""/></div>
-<map name="rotorcraft_2guidance_2guidance__v_8c_aa3265bfb8a8925942f818424f97f9725_icgraph" id="rotorcraft_2guidance_2guidance__v_8c_aa3265bfb8a8925942f818424f97f9725_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="176,31,311,57"/><area shape="rect" id="node3" href="rotorcraft_2main__fbw_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="359,31,469,57"/><area shape="rect" id="node4" href="rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="517,31,680,57"/><area shape="rect" id="node5" href="fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="740,5,795,32"/><area shape="rect" id="node6" href="main__chibios__libopencm3_8c.html#ad648a546fe66cd5f9328f33221a40c64" title="pprz_thd" alt="" coords="728,56,807,83"/><area shape="rect" id="node7" href="main__chibios__libopencm3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="855,56,909,83"/></map>
+<div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_a5c03e8fc9dd9e84925081df8639d4001_icgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_a5c03e8fc9dd9e84925081df8639d4001_icgraph" alt=""/></div>
+<map name="rotorcraft_2guidance_2guidance__v_8c_a5c03e8fc9dd9e84925081df8639d4001_icgraph" id="rotorcraft_2guidance_2guidance__v_8c_a5c03e8fc9dd9e84925081df8639d4001_icgraph">
+<area shape="rect" id="node2" href="rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="176,81,311,108"/><area shape="rect" id="node3" href="rotorcraft_2main__fbw_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="359,81,469,108"/><area shape="rect" id="node4" href="rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="517,81,680,108"/><area shape="rect" id="node5" href="fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="786,5,841,32"/><area shape="rect" id="node6" href="main__chibios_8c.html#a1bd1ec0fdc597d88ee659889cda25c0a" title="thd_ap" alt="" coords="780,56,847,83"/><area shape="rect" id="node8" href="main__chibios_8c.html#a4042bcab9578175e00c82adcc2b251f8" title="thd_fbw" alt="" coords="778,107,849,133"/><area shape="rect" id="node9" href="nps__autopilot__fixedwing_8c.html#a12870aaa609d4860004be3cec4c8cf2a" title="nps_autopilot_run_step" alt="" coords="728,157,899,184"/><area shape="rect" id="node7" href="main__chibios_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function. " alt="" coords="947,81,1001,108"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="aff132ba48a5bc3d471ec1c57a291bfd4"></a>
+<a class="anchor" id="acac5c328b4af288851a9ede4552381f8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool_t guidance_v_set_guided_z </td>
+          <td class="memname">bool guidance_v_set_guided_vz </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>vz</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set z velocity setpoint in GUIDED mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vz</td><td>Setpoint (down is positive) in meters/second. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>TRUE if setpoint was set (currently in GUIDANCE_V_MODE_GUIDED) </dd></dl>
+
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00491">491</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+
+<p>References <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00043">GUIDANCE_V_MODE_GUIDED</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00218">SPEED_BFP_OF_REAL</a>.</p>
+
+<p>Referenced by <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00586">autopilot_guided_move_ned()</a>, and <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00610">autopilot_guided_update()</a>.</p>
+
+<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_acac5c328b4af288851a9ede4552381f8_icgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_acac5c328b4af288851a9ede4552381f8_icgraph" alt=""/></div>
+<map name="rotorcraft_2guidance_2guidance__v_8c_acac5c328b4af288851a9ede4552381f8_icgraph" id="rotorcraft_2guidance_2guidance__v_8c_acac5c328b4af288851a9ede4552381f8_icgraph">
+<area shape="rect" id="node2" href="rotorcraft_2autopilot_8h.html#a113a26863eee267edc78f72876ec8f69" title="Set velocity and heading setpoints in GUIDED mode. " alt="" coords="245,15,448,42"/><area shape="rect" id="node5" href="rotorcraft_2autopilot_8h.html#a07ce763874e77faf62f5c9506bdad43d" title="Set guided setpoints using flag mask in GUIDED mode. " alt="" coords="257,67,437,94"/><area shape="rect" id="node3" href="mavlink_8c.html#a92b02fdeb899791573ef52506deb653c" title="mavlink_common_message\l_handler" alt="" coords="496,5,697,47"/><area shape="rect" id="node4" href="mavlink_8h.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls. " alt="" coords="745,13,860,39"/><area shape="rect" id="node6" href="rotorcraft__datalink_8c.html#ac806fb512111762c27801527170dc819" title="Firmware specfic msg handler. " alt="" coords="519,71,674,98"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a37acdbbaffc177a9c200f95098d5b398"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool guidance_v_set_guided_z </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>z</em></td><td>)</td>
@@ -740,26 +793,26 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>TRUE if setpoint was set (currently in GUIDANCE_V_MODE_GUIDED) </dd></dl>
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00453">453</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00481">481</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>References <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00043">GUIDANCE_V_MODE_GUIDED</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00216">POS_BFP_OF_REAL</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p>References <a class="el" href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00043">GUIDANCE_V_MODE_GUIDED</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00216">POS_BFP_OF_REAL</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00516">autopilot_guided_goto_ned()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00550">autopilot_guided_goto_ned()</a>, and <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00610">autopilot_guided_update()</a>.</p>
 
-<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_aff132ba48a5bc3d471ec1c57a291bfd4_icgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_aff132ba48a5bc3d471ec1c57a291bfd4_icgraph" alt=""/></div>
-<map name="rotorcraft_2guidance_2guidance__v_8c_aff132ba48a5bc3d471ec1c57a291bfd4_icgraph" id="rotorcraft_2guidance_2guidance__v_8c_aff132ba48a5bc3d471ec1c57a291bfd4_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2autopilot_8h.html#a0033e5c15dd18dc0332a5a2ac3b8ca73" title="Set position and heading setpoints in GUIDED mode. " alt="" coords="239,66,433,92"/><area shape="rect" id="node3" href="rotorcraft_2autopilot_8h.html#a2c66693af9a2611033c90f5482436004" title="Set position and heading setpoints wrt. " alt="" coords="481,25,645,66"/><area shape="rect" id="node4" href="rotorcraft_2datalink_8c.html#a87ff8c0ffff657dbde8566f062779428" title="Should be called when chars are available in dl_buffer. " alt="" coords="739,32,849,59"/><area shape="rect" id="node5" href="mavlink_8c.html#a92b02fdeb899791573ef52506deb653c" title="mavlink_common_message\l_handler" alt="" coords="693,90,895,132"/><area shape="rect" id="node7" href="rotorcraft_2autopilot_8h.html#a112d1fd62b7a4ad1cc8f754f456f6add" title="Set position and heading setpoints wrt. " alt="" coords="481,90,645,132"/><area shape="rect" id="node6" href="mavlink_8h.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls. " alt="" coords="943,98,1057,124"/></map>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_a37acdbbaffc177a9c200f95098d5b398_icgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_a37acdbbaffc177a9c200f95098d5b398_icgraph" alt=""/></div>
+<map name="rotorcraft_2guidance_2guidance__v_8c_a37acdbbaffc177a9c200f95098d5b398_icgraph" id="rotorcraft_2guidance_2guidance__v_8c_a37acdbbaffc177a9c200f95098d5b398_icgraph">
+<area shape="rect" id="node2" href="rotorcraft_2autopilot_8h.html#ae4f59fae723f5116a979c7c5b923c180" title="Set position and heading setpoints in GUIDED mode. " alt="" coords="239,101,433,127"/><area shape="rect" id="node7" href="rotorcraft_2autopilot_8h.html#a07ce763874e77faf62f5c9506bdad43d" title="Set guided setpoints using flag mask in GUIDED mode. " alt="" coords="246,155,426,182"/><area shape="rect" id="node3" href="rotorcraft_2autopilot_8h.html#acb5ff8d624f7583075e58303f46b9890" title="Set position and heading setpoints wrt. " alt="" coords="481,5,645,47"/><area shape="rect" id="node4" href="mavlink_8c.html#a92b02fdeb899791573ef52506deb653c" title="mavlink_common_message\l_handler" alt="" coords="693,64,895,105"/><area shape="rect" id="node6" href="rotorcraft_2autopilot_8h.html#a32b83e461c091c64ffa38e4f08f6a312" title="Set position and heading setpoints wrt. " alt="" coords="481,123,645,164"/><area shape="rect" id="node5" href="mavlink_8h.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls. " alt="" coords="943,71,1057,98"/><area shape="rect" id="node8" href="rotorcraft__datalink_8c.html#ac806fb512111762c27801527170dc819" title="Firmware specfic msg handler. " alt="" coords="486,189,641,215"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="aef574ad479e888ed806893456e9a0359"></a>
+<a class="anchor" id="abc86e1f1f36c313a62491e4f246b7313"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -769,7 +822,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static void run_hover_loop </td>
           <td>(</td>
-          <td class="paramtype">bool_t&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>in_flight</em></td><td>)</td>
           <td></td>
         </tr>
@@ -781,50 +834,174 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00399">399</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00422">422</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00205">BFP_OF_REAL</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00397">FF_CMD_FRAC</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00100">guidance_v_fb_cmd</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00083">GUIDANCE_V_MAX_ERR_Z</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00091">GUIDANCE_V_MAX_ERR_ZD</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00095">GUIDANCE_V_MAX_SUM_ERR</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00079">GUIDANCE_V_MIN_ERR_Z</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00087">GUIDANCE_V_MIN_ERR_ZD</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00128">guidance_v_z_sum_err</a>, <a class="el" href="guidance__v__adapt_8c_source.html#l00094">gv_adapt_X</a>, <a class="el" href="guidance__v__adapt_8h_source.html#l00040">GV_ADAPT_X_FRAC</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00047">gv_z_ref</a>, <a class="el" href="guidance__v__ref_8h_source.html#l00075">GV_Z_REF_FRAC</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00041">gv_zd_ref</a>, <a class="el" href="guidance__v__ref_8h_source.html#l00066">GV_ZD_REF_FRAC</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00035">gv_zdd_ref</a>, <a class="el" href="guidance__v__ref_8h_source.html#l00057">GV_ZDD_REF_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00078">INT32_ACCEL_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00068">INT32_POS_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00073">INT32_SPEED_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00154">INT32_TRIG_FRAC</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="state_8h_source.html#l00648">stateGetPositionNed_i()</a>, <a class="el" href="state_8h_source.html#l00840">stateGetSpeedNed_i()</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
+<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00205">BFP_OF_REAL</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00420">FF_CMD_FRAC</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00101">guidance_v_fb_cmd</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00084">GUIDANCE_V_MAX_ERR_Z</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00092">GUIDANCE_V_MAX_ERR_ZD</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00096">GUIDANCE_V_MAX_SUM_ERR</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00080">GUIDANCE_V_MIN_ERR_Z</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00088">GUIDANCE_V_MIN_ERR_ZD</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00129">guidance_v_z_sum_err</a>, <a class="el" href="guidance__v__adapt_8c_source.html#l00094">gv_adapt_X</a>, <a class="el" href="guidance__v__adapt_8h_source.html#l00040">GV_ADAPT_X_FRAC</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00047">gv_z_ref</a>, <a class="el" href="guidance__v__ref_8h_source.html#l00075">GV_Z_REF_FRAC</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00041">gv_zd_ref</a>, <a class="el" href="guidance__v__ref_8h_source.html#l00066">GV_ZD_REF_FRAC</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00035">gv_zdd_ref</a>, <a class="el" href="guidance__v__ref_8h_source.html#l00057">GV_ZDD_REF_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00078">INT32_ACCEL_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00068">INT32_POS_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00073">INT32_SPEED_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00154">INT32_TRIG_FRAC</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="state_8h_source.html#l00659">stateGetPositionNed_i()</a>, <a class="el" href="state_8h_source.html#l00851">stateGetSpeedNed_i()</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00272">guidance_v_run()</a>.</p>
-
-<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_aef574ad479e888ed806893456e9a0359_cgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_aef574ad479e888ed806893456e9a0359_cgraph" alt=""/></div>
-<map name="rotorcraft_2guidance_2guidance__v_8c_aef574ad479e888ed806893456e9a0359_cgraph" id="rotorcraft_2guidance_2guidance__v_8c_aef574ad479e888ed806893456e9a0359_cgraph">
-<area shape="rect" id="node2" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="173,237,337,264"/><area shape="rect" id="node17" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="178,313,333,340"/><area shape="rect" id="node3" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="385,199,553,225"/><area shape="rect" id="node4" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="607,123,745,149"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="601,173,751,200"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1020,325,1120,352"/><area shape="rect" id="node10" href="group__math__geodetic__int.html#ga6618f634b774eaf7182dfec83d68f141" title="Convert a point from LLA to local NED. " alt="" coords="609,224,743,251"/><area shape="rect" id="node14" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="627,64,725,91"/><area shape="rect" id="node5" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="804,123,943,149"/><area shape="rect" id="node6" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="996,173,1144,200"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="799,173,948,200"/><area shape="rect" id="node11" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="ecef_of_lla_i" alt="" coords="824,275,923,301"/><area shape="rect" id="node13" href="group__math__geodetic__int.html#ga9307e97057d51e781def8a03dea804f6" title="Convert a point from ECEF to local NED. " alt="" coords="799,224,947,251"/><area shape="rect" id="node12" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1018,275,1122,301"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="800,5,947,32"/><area shape="rect" id="node16" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="805,57,941,98"/><area shape="rect" id="node18" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="390,364,549,391"/><area shape="rect" id="node19" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="605,376,747,403"/><area shape="rect" id="node20" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU. " alt="" coords="802,376,945,403"/></map>
-</div>
-</p>
+<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00283">guidance_v_run()</a>.</p>
 
 <p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_aef574ad479e888ed806893456e9a0359_icgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_aef574ad479e888ed806893456e9a0359_icgraph" alt=""/></div>
-<map name="rotorcraft_2guidance_2guidance__v_8c_aef574ad479e888ed806893456e9a0359_icgraph" id="rotorcraft_2guidance_2guidance__v_8c_aef574ad479e888ed806893456e9a0359_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2guidance_2guidance__v_8h.html#aa3265bfb8a8925942f818424f97f9725" title="guidance_v_run" alt="" coords="173,31,296,57"/><area shape="rect" id="node3" href="rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="344,31,479,57"/><area shape="rect" id="node4" href="rotorcraft_2main__fbw_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="527,31,637,57"/><area shape="rect" id="node5" href="rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="685,31,848,57"/><area shape="rect" id="node6" href="fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="908,5,963,32"/><area shape="rect" id="node7" href="main__chibios__libopencm3_8c.html#ad648a546fe66cd5f9328f33221a40c64" title="pprz_thd" alt="" coords="896,56,975,83"/><area shape="rect" id="node8" href="main__chibios__libopencm3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1023,56,1077,83"/></map>
+<div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_abc86e1f1f36c313a62491e4f246b7313_cgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_abc86e1f1f36c313a62491e4f246b7313_cgraph" alt=""/></div>
+<map name="rotorcraft_2guidance_2guidance__v_8c_abc86e1f1f36c313a62491e4f246b7313_cgraph" id="rotorcraft_2guidance_2guidance__v_8c_abc86e1f1f36c313a62491e4f246b7313_cgraph">
+<area shape="rect" id="node2" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="173,230,337,257"/><area shape="rect" id="node16" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="178,293,333,319"/><area shape="rect" id="node3" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="385,198,553,225"/><area shape="rect" id="node4" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="804,173,943,199"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="601,122,751,149"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1015,274,1115,301"/><area shape="rect" id="node10" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED. " alt="" coords="613,223,739,250"/><area shape="rect" id="node13" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="627,71,725,98"/><area shape="rect" id="node5" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="996,173,1135,199"/><area shape="rect" id="node6" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1183,173,1331,199"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="799,122,948,149"/><area shape="rect" id="node11" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="824,223,923,250"/><area shape="rect" id="node12" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1013,223,1117,250"/><area shape="rect" id="node14" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="800,71,947,98"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="805,5,941,47"/><area shape="rect" id="node17" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="390,318,549,345"/><area shape="rect" id="node18" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="605,325,747,351"/><area shape="rect" id="node19" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU. " alt="" coords="802,325,945,351"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_abc86e1f1f36c313a62491e4f246b7313_icgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_abc86e1f1f36c313a62491e4f246b7313_icgraph" alt=""/></div>
+<map name="rotorcraft_2guidance_2guidance__v_8c_abc86e1f1f36c313a62491e4f246b7313_icgraph" id="rotorcraft_2guidance_2guidance__v_8c_abc86e1f1f36c313a62491e4f246b7313_icgraph">
+<area shape="rect" id="node2" href="rotorcraft_2guidance_2guidance__v_8h.html#a5c03e8fc9dd9e84925081df8639d4001" title="guidance_v_run" alt="" coords="173,81,296,108"/><area shape="rect" id="node3" href="rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="344,81,479,108"/><area shape="rect" id="node4" href="rotorcraft_2main__fbw_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="527,81,637,108"/><area shape="rect" id="node5" href="rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="685,81,848,108"/><area shape="rect" id="node6" href="fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="954,5,1009,32"/><area shape="rect" id="node7" href="main__chibios_8c.html#a1bd1ec0fdc597d88ee659889cda25c0a" title="thd_ap" alt="" coords="948,56,1015,83"/><area shape="rect" id="node9" href="main__chibios_8c.html#a4042bcab9578175e00c82adcc2b251f8" title="thd_fbw" alt="" coords="946,107,1017,133"/><area shape="rect" id="node10" href="nps__autopilot__fixedwing_8c.html#a12870aaa609d4860004be3cec4c8cf2a" title="nps_autopilot_run_step" alt="" coords="896,157,1067,184"/><area shape="rect" id="node8" href="main__chibios_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function. " alt="" coords="1115,81,1169,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a08d5a5277e51cd1c12e573209f812c90"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void send_tune_vert </td>
+          <td>(</td>
+          <td class="paramtype">struct transport_tx *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct link_device *&#160;</td>
+          <td class="paramname"><em>dev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00165">165</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+
+<p>References <a class="el" href="state_8h_source.html#l00659">stateGetPositionNed_i()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
+
+<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00175">guidance_v_init()</a>.</p>
+
+<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_a08d5a5277e51cd1c12e573209f812c90_cgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_a08d5a5277e51cd1c12e573209f812c90_cgraph" alt=""/></div>
+<map name="rotorcraft_2guidance_2guidance__v_8c_a08d5a5277e51cd1c12e573209f812c90_cgraph" id="rotorcraft_2guidance_2guidance__v_8c_a08d5a5277e51cd1c12e573209f812c90_cgraph">
+<area shape="rect" id="node2" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="175,107,339,133"/><area shape="rect" id="node3" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="387,107,555,133"/><area shape="rect" id="node4" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="805,56,944,83"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="603,5,752,32"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1017,157,1117,184"/><area shape="rect" id="node10" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED. " alt="" coords="614,107,741,133"/><area shape="rect" id="node13" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="628,208,727,235"/><area shape="rect" id="node5" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="997,56,1136,83"/><area shape="rect" id="node6" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1184,56,1332,83"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="800,5,949,32"/><area shape="rect" id="node11" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="825,107,924,133"/><area shape="rect" id="node12" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1015,107,1119,133"/><area shape="rect" id="node14" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="801,208,948,235"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="807,259,943,301"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_a08d5a5277e51cd1c12e573209f812c90_icgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_a08d5a5277e51cd1c12e573209f812c90_icgraph" alt=""/></div>
+<map name="rotorcraft_2guidance_2guidance__v_8c_a08d5a5277e51cd1c12e573209f812c90_icgraph" id="rotorcraft_2guidance_2guidance__v_8c_a08d5a5277e51cd1c12e573209f812c90_icgraph">
+<area shape="rect" id="node2" href="rotorcraft_2guidance_2guidance__v_8h.html#ae1e43515cf186f69dfaac9a4543b3cf0" title="guidance_v_init" alt="" coords="175,5,295,32"/><area shape="rect" id="node3" href="rotorcraft_2autopilot_8c.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization. " alt="" coords="343,5,447,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7e8c6f0d135e50d0eb256cad00bb9dcf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void send_vert_loop </td>
+          <td>(</td>
+          <td class="paramtype">struct transport_tx *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct link_device *&#160;</td>
+          <td class="paramname"><em>dev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00147">147</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+
+<p>References <a class="el" href="guidance__v__adapt_8c_source.html#l00095">gv_adapt_P</a>, <a class="el" href="guidance__v__adapt_8c_source.html#l00094">gv_adapt_X</a>, <a class="el" href="guidance__v__adapt_8c_source.html#l00096">gv_adapt_Xmeas</a>, <a class="el" href="state_8h_source.html#l01002">stateGetAccelNed_i()</a>, <a class="el" href="state_8h_source.html#l00659">stateGetPositionNed_i()</a>, <a class="el" href="state_8h_source.html#l00851">stateGetSpeedNed_i()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
+
+<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00175">guidance_v_init()</a>.</p>
+
+<p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_a7e8c6f0d135e50d0eb256cad00bb9dcf_cgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_a7e8c6f0d135e50d0eb256cad00bb9dcf_cgraph" alt=""/></div>
+<map name="rotorcraft_2guidance_2guidance__v_8c_a7e8c6f0d135e50d0eb256cad00bb9dcf_cgraph" id="rotorcraft_2guidance_2guidance__v_8c_a7e8c6f0d135e50d0eb256cad00bb9dcf_cgraph">
+<area shape="rect" id="node2" href="group__state__acceleration.html#gab55b482bd9fe875141bafd34beda8bb4" title="Get acceleration in NED coordinates (int). " alt="" coords="180,89,328,116"/><area shape="rect" id="node6" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="172,161,336,188"/><area shape="rect" id="node20" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="177,39,331,65"/><area shape="rect" id="node3" href="group__state__acceleration.html#ga48146adcdcd09bb704335795c6624ad8" title="stateCalcAccelNed_i" alt="" coords="392,89,544,116"/><area shape="rect" id="node4" href="group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="603,39,746,65"/><area shape="rect" id="node5" href="group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU. " alt="" coords="801,5,943,32"/><area shape="rect" id="node7" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="384,203,552,229"/><area shape="rect" id="node8" href="group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="803,224,941,251"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="600,173,749,200"/><area shape="rect" id="node13" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1014,325,1114,352"/><area shape="rect" id="node14" href="group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED. " alt="" coords="611,275,738,301"/><area shape="rect" id="node17" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="625,123,724,149"/><area shape="rect" id="node9" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="995,224,1133,251"/><area shape="rect" id="node10" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1181,224,1329,251"/><area shape="rect" id="node12" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="797,173,947,200"/><area shape="rect" id="node15" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="823,275,921,301"/><area shape="rect" id="node16" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1012,275,1116,301"/><area shape="rect" id="node18" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="799,123,945,149"/><area shape="rect" id="node19" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="804,57,940,98"/><area shape="rect" id="node21" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="389,39,547,65"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="rotorcraft_2guidance_2guidance__v_8c_a7e8c6f0d135e50d0eb256cad00bb9dcf_icgraph.png" border="0" usemap="#rotorcraft_2guidance_2guidance__v_8c_a7e8c6f0d135e50d0eb256cad00bb9dcf_icgraph" alt=""/></div>
+<map name="rotorcraft_2guidance_2guidance__v_8c_a7e8c6f0d135e50d0eb256cad00bb9dcf_icgraph" id="rotorcraft_2guidance_2guidance__v_8c_a7e8c6f0d135e50d0eb256cad00bb9dcf_icgraph">
+<area shape="rect" id="node2" href="rotorcraft_2guidance_2guidance__v_8h.html#ae1e43515cf186f69dfaac9a4543b3cf0" title="guidance_v_init" alt="" coords="172,5,292,32"/><area shape="rect" id="node3" href="rotorcraft_2autopilot_8c.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization. " alt="" coords="340,5,444,32"/></map>
 </div>
 </p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a63ea791c1f885d443b373e6d2eb58941"></a>
+<a class="anchor" id="a57dd8eb1b6eb26257ecde7fcaf1e5420"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool_t guidance_v_adapt_throttle_enabled</td>
+          <td class="memname">bool guidance_v_adapt_throttle_enabled</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Use adaptive throttle command estimation. </p>
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00104">104</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00105">105</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
 </div>
 </div>
@@ -841,9 +1018,9 @@ Variables</h2></td></tr>
 <p>thrust command. </p>
 <p>summation of feed-forward and feed-back commands, valid range 0 : <a class="el" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a> </p>
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00101">101</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00102">102</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00272">guidance_v_run()</a>.</p>
+<p>Referenced by <a class="el" href="guidance__hybrid_8c_source.html#l00377">guidance_hybrid_vertical()</a>, and <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00283">guidance_v_run()</a>.</p>
 
 </div>
 </div>
@@ -859,9 +1036,9 @@ Variables</h2></td></tr>
 
 <p>feed-back command </p>
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00100">100</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00101">101</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00399">run_hover_loop()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00422">run_hover_loop()</a>.</p>
 
 </div>
 </div>
@@ -877,7 +1054,21 @@ Variables</h2></td></tr>
 
 <p>feed-forward command </p>
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00099">99</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00100">100</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af7be95e8e6ce518b3b4bc8997d229b5e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool guidance_v_guided_vel_enabled</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00106">106</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
 </div>
 </div>
@@ -893,7 +1084,9 @@ Variables</h2></td></tr>
 
 <p>vertical control D-gain </p>
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00125">125</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00126">126</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+
+<p>Referenced by <a class="el" href="guidance__hybrid_8c_source.html#l00377">guidance_hybrid_vertical()</a>.</p>
 
 </div>
 </div>
@@ -909,7 +1102,9 @@ Variables</h2></td></tr>
 
 <p>vertical control I-gain </p>
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00126">126</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00127">127</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+
+<p>Referenced by <a class="el" href="guidance__hybrid_8c_source.html#l00377">guidance_hybrid_vertical()</a>.</p>
 
 </div>
 </div>
@@ -925,7 +1120,9 @@ Variables</h2></td></tr>
 
 <p>vertical control P-gain </p>
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00124">124</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00125">125</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+
+<p>Referenced by <a class="el" href="guidance__hybrid_8c_source.html#l00377">guidance_hybrid_vertical()</a>.</p>
 
 </div>
 </div>
@@ -939,9 +1136,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00098">98</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00099">99</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>Referenced by <a class="el" href="vi__test__signal_8c_source.html#l00043">booz_fms_impl_periodic()</a>, and <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00180">send_status()</a>.</p>
+<p>Referenced by <a class="el" href="vi__test__signal_8c_source.html#l00043">booz_fms_impl_periodic()</a>, and <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00187">send_status()</a>.</p>
 
 </div>
 </div>
@@ -958,7 +1155,9 @@ Variables</h2></td></tr>
 <p>nominal throttle for hover. </p>
 <p>This is only used if <a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a5968ab27012eeff9934609e83f6fc5a6">GUIDANCE_V_NOMINAL_HOVER_THROTTLE</a> is defined! Unit: factor of <a class="el" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a> with range 0.1 : 0.9 </p>
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00103">103</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00104">104</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+
+<p>Referenced by <a class="el" href="guidance__hybrid_8c_source.html#l00377">guidance_hybrid_vertical()</a>.</p>
 
 </div>
 </div>
@@ -975,9 +1174,9 @@ Variables</h2></td></tr>
 <p>Direct throttle from radio control. </p>
 <p>range 0:<a class="el" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a> </p>
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00110">110</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00111">111</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00272">guidance_v_run()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00283">guidance_v_run()</a>.</p>
 
 </div>
 </div>
@@ -994,9 +1193,9 @@ Variables</h2></td></tr>
 <p>Vertical speed setpoint from radio control. </p>
 <p>fixed point representation: Q12.19 accuracy 0.0000019, range +/-4096 </p>
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00116">116</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00117">117</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00272">guidance_v_run()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00283">guidance_v_run()</a>.</p>
 
 </div>
 </div>
@@ -1010,9 +1209,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00130">130</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00131">131</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>Referenced by <a class="el" href="guidance__h_8c_source.html#l00484">guidance_h_traj_run()</a>, and <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00272">guidance_v_run()</a>.</p>
+<p>Referenced by <a class="el" href="guidance__h_8c_source.html#l00526">guidance_h_traj_run()</a>, and <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00283">guidance_v_run()</a>.</p>
 
 </div>
 </div>
@@ -1029,9 +1228,9 @@ Variables</h2></td></tr>
 <p>altitude reference in meters. </p>
 <p>fixed point representation: Q23.8 accuracy 0.0039, range 8388km </p>
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00120">120</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00121">121</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__sim__hitl_8c_source.html#l00042">gps_sim_hitl_event()</a>.</p>
+<p>Referenced by <a class="el" href="gps__sim__hitl_8c_source.html#l00044">gps_sim_hitl_event()</a>, <a class="el" href="guidance__indi_8c_source.html#l00120">guidance_indi_run()</a>, and <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00283">guidance_v_run()</a>.</p>
 
 </div>
 </div>
@@ -1048,9 +1247,9 @@ Variables</h2></td></tr>
 <p>altitude setpoint in meters (input). </p>
 <p>fixed point representation: Q23.8 accuracy 0.0039, range 8388km </p>
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00118">118</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00119">119</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>Referenced by <a class="el" href="guidance__indi_8c_source.html#l00085">guidance_indi_run()</a>, and <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00215">send_fp()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00223">send_fp()</a>.</p>
 
 </div>
 </div>
@@ -1066,9 +1265,9 @@ Variables</h2></td></tr>
 
 <p>accumulator for I-gain </p>
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00128">128</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00129">129</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00399">run_hover_loop()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00422">run_hover_loop()</a>.</p>
 
 </div>
 </div>
@@ -1085,9 +1284,9 @@ Variables</h2></td></tr>
 <p>vertical speed reference in meter/s. </p>
 <p>fixed point representation: Q12.19 accuracy 0.0000038, range 4096 </p>
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00121">121</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00122">122</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__sim__hitl_8c_source.html#l00042">gps_sim_hitl_event()</a>.</p>
+<p>Referenced by <a class="el" href="gps__sim__hitl_8c_source.html#l00044">gps_sim_hitl_event()</a>.</p>
 
 </div>
 </div>
@@ -1104,9 +1303,9 @@ Variables</h2></td></tr>
 <p>vertical speed setpoint in meter/s (input). </p>
 <p>fixed point representation: Q12.19 accuracy 0.0000019, range +/-4096 </p>
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00119">119</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00120">120</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00395">autopilot_set_mode()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00424">autopilot_set_mode()</a>.</p>
 
 </div>
 </div>
@@ -1123,9 +1322,9 @@ Variables</h2></td></tr>
 <p>vertical acceleration reference in meter/s^2. </p>
 <p>fixed point representation: Q21.10 accuracy 0.0009766, range 2097152 </p>
 
-<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00122">122</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00123">123</a> of file <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html">guidance_v.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__sim__hitl_8c_source.html#l00042">gps_sim_hitl_event()</a>.</p>
+<p>Referenced by <a class="el" href="gps__sim__hitl_8c_source.html#l00044">gps_sim_hitl_event()</a>.</p>
 
 </div>
 </div>
@@ -1135,7 +1334,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_3d64810a495a8e63c02e8d4ee1418813.html">guidance</a></li><li class="navelem"><a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html">guidance_v.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:42 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:46 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

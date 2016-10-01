@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -139,13 +139,13 @@ $(document).ready(function(){initNavTree('link__mcu__usart_8h_source.html','');}
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="link__mcu__usart_8h.html">   34</a></span>&#160;  <span class="keyword">union  </span>{</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">struct </span><a class="code" href="inter__mcu_8c.html#a1a4da5ac6e76b01f83b00facee8f3dbf">fbw_state</a> from_fbw;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">struct </span><a class="code" href="inter__mcu_8c.html#ac13671906f2663b39fde033f4cb4a410">ap_state</a>  from_ap;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  } <a class="code" href="link__mcu__usart_8h.html#a21581c9731b6bfcbb64147645a704b29">payload</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  } <a class="code" href="link__mcu__usart_8h.html#abd9194dd00eb7b9df0ada8f1b6c68dd5">payload</a>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="link__mcu__usart_8h.html#structlink__mcu__msg">link_mcu_msg</a> <a class="code" href="link__mcu__usart_8h.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_from_ap_msg</a>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="link__mcu__usart_8h.html#structlink__mcu__msg">link_mcu_msg</a> <a class="code" href="link__mcu__usart_8h.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_from_fbw_msg</a>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">extern</span> bool_t <a class="code" href="link__mcu__usart_8h.html#a5fbd44c122e7afa4afdb9368a7a6b2a4">link_mcu_received</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code" href="link__mcu__usart_8h.html#aac1e8852c1f12dced678eaa675f0d408">link_mcu_received</a>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="link__mcu__usart_8h.html#ad2f41351eb7b54410360a1e9f1f2407a">link_mcu_send</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="link__mcu__usart_8h.html#a4811adaa420099181f04d75d5ba24c25">link_mcu_init</a>(<span class="keywordtype">void</span>);</div>
@@ -157,12 +157,12 @@ $(document).ready(function(){initNavTree('link__mcu__usart_8h_source.html','');}
 <div class="ttc" id="inter__mcu_8h_html"><div class="ttname"><a href="inter__mcu_8h.html">inter_mcu.h</a></div><div class="ttdoc">Communication between fbw and ap processes. </div></div>
 <div class="ttc" id="link__mcu__usart_8h_html_a86deade5843ab146c47083104cf8f3cd"><div class="ttname"><a href="link__mcu__usart_8h.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_from_fbw_msg</a></div><div class="ttdeci">struct link_mcu_msg link_mcu_from_fbw_msg</div><div class="ttdef"><b>Definition:</b> <a href="link__mcu__can_8c_source.html#l00176">link_mcu_can.c:176</a></div></div>
 <div class="ttc" id="link__mcu__usart_8h_html_a4d130fa66a5074c64197b7cd4bf535de"><div class="ttname"><a href="link__mcu__usart_8h.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_from_ap_msg</a></div><div class="ttdeci">struct link_mcu_msg link_mcu_from_ap_msg</div><div class="ttdef"><b>Definition:</b> <a href="link__mcu__can_8c_source.html#l00175">link_mcu_can.c:175</a></div></div>
-<div class="ttc" id="link__mcu__usart_8h_html_a5fbd44c122e7afa4afdb9368a7a6b2a4"><div class="ttname"><a href="link__mcu__usart_8h.html#a5fbd44c122e7afa4afdb9368a7a6b2a4">link_mcu_received</a></div><div class="ttdeci">bool_t link_mcu_received</div><div class="ttdef"><b>Definition:</b> <a href="link__mcu__spi_8c_source.html#l00034">link_mcu_spi.c:34</a></div></div>
-<div class="ttc" id="link__mcu__usart_8h_html_a21581c9731b6bfcbb64147645a704b29"><div class="ttname"><a href="link__mcu__usart_8h.html#a21581c9731b6bfcbb64147645a704b29">link_mcu_msg::payload</a></div><div class="ttdeci">union link_mcu_msg::@12 payload</div></div>
 <div class="ttc" id="inter__mcu_8c_html_a1a4da5ac6e76b01f83b00facee8f3dbf"><div class="ttname"><a href="inter__mcu_8c.html#a1a4da5ac6e76b01f83b00facee8f3dbf">fbw_state</a></div><div class="ttdeci">struct fbw_state * fbw_state</div><div class="ttdef"><b>Definition:</b> <a href="inter__mcu_8c_source.html#l00036">inter_mcu.c:36</a></div></div>
 <div class="ttc" id="inter__mcu_8c_html_ac13671906f2663b39fde033f4cb4a410"><div class="ttname"><a href="inter__mcu_8c.html#ac13671906f2663b39fde033f4cb4a410">ap_state</a></div><div class="ttdeci">struct ap_state * ap_state</div><div class="ttdef"><b>Definition:</b> <a href="inter__mcu_8c_source.html#l00037">inter_mcu.c:37</a></div></div>
+<div class="ttc" id="link__mcu__usart_8h_html_aac1e8852c1f12dced678eaa675f0d408"><div class="ttname"><a href="link__mcu__usart_8h.html#aac1e8852c1f12dced678eaa675f0d408">link_mcu_received</a></div><div class="ttdeci">bool link_mcu_received</div><div class="ttdef"><b>Definition:</b> <a href="link__mcu__spi_8c_source.html#l00034">link_mcu_spi.c:34</a></div></div>
 <div class="ttc" id="link__mcu__usart_8h_html_ac8ca91741aea5e6803a8db35d4c8188e"><div class="ttname"><a href="link__mcu__usart_8h.html#ac8ca91741aea5e6803a8db35d4c8188e">link_mcu_event_task</a></div><div class="ttdeci">void link_mcu_event_task(void)</div><div class="ttdef"><b>Definition:</b> <a href="link__mcu__can_8c_source.html#l00227">link_mcu_can.c:227</a></div></div>
 <div class="ttc" id="inttypes_8h_html"><div class="ttname"><a href="inttypes_8h.html">inttypes.h</a></div></div>
+<div class="ttc" id="link__mcu__usart_8h_html_abd9194dd00eb7b9df0ada8f1b6c68dd5"><div class="ttname"><a href="link__mcu__usart_8h.html#abd9194dd00eb7b9df0ada8f1b6c68dd5">link_mcu_msg::payload</a></div><div class="ttdeci">union link_mcu_msg::@13 payload</div></div>
 <div class="ttc" id="link__mcu__usart_8h_html_a4811adaa420099181f04d75d5ba24c25"><div class="ttname"><a href="link__mcu__usart_8h.html#a4811adaa420099181f04d75d5ba24c25">link_mcu_init</a></div><div class="ttdeci">void link_mcu_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="link__mcu__can_8c_source.html#l00214">link_mcu_can.c:214</a></div></div>
 <div class="ttc" id="link__mcu__usart_8h_html_ad2f41351eb7b54410360a1e9f1f2407a"><div class="ttname"><a href="link__mcu__usart_8h.html#ad2f41351eb7b54410360a1e9f1f2407a">link_mcu_send</a></div><div class="ttdeci">void link_mcu_send(void)</div></div>
 <div class="ttc" id="link__mcu__usart_8h_html_structlink__mcu__msg"><div class="ttname"><a href="link__mcu__usart_8h.html#structlink__mcu__msg">link_mcu_msg</a></div><div class="ttdef"><b>Definition:</b> <a href="link__mcu__can_8h_source.html#l00033">link_mcu_can.h:33</a></div></div>
@@ -173,7 +173,7 @@ $(document).ready(function(){initNavTree('link__mcu__usart_8h_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="link__mcu__usart_8h.html">link_mcu_usart.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:19 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:19 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

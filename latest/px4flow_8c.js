@@ -7,6 +7,6 @@ var px4flow_8c =
     [ "px4flow_downlink", "px4flow_8c.html#afa3560ee5cc18272b795d0680a100915", null ],
     [ "px4flow_init", "px4flow_8c.html#ac5213e8f7d51bc5a4b9885f77d863f28", null ],
     [ "optical_flow", "px4flow_8c.html#a7f647c5002ceac1107af4247a2567f16", null ],
-    [ "optical_flow_available", "px4flow_8c.html#ab6dde07b731a2cfdf669184817943837", null ],
+    [ "optical_flow_available", "px4flow_8c.html#a3a777fcee89013f0b1730d55b2897799", null ],
     [ "req", "px4flow_8c.html#a11dd1089b4ce30528383cfa24a3c6c23", null ]
 ];

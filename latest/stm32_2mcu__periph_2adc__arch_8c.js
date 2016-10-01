@@ -12,10 +12,7 @@ var stm32_2mcu__periph_2adc__arch_8c =
     [ "adc_init_rcc", "stm32_2mcu__periph_2adc__arch_8c.html#a918bbd68206b96e41cfc53f82e0302c6", null ],
     [ "adc_init_single", "stm32_2mcu__periph_2adc__arch_8c.html#af155701fd8bbfe59180a00810911d34e", null ],
     [ "adc_push_sample", "stm32_2mcu__periph_2adc__arch_8c.html#acd02461f91550e084771478dfdd1ca54", null ],
-    [ "buf", "stm32_2mcu__periph_2adc__arch_8c.html#a48b4f0842338aeafa79aeab314f33696", null ],
     [ "nb_adc1_channels", "stm32_2mcu__periph_2adc__arch_8c.html#aaa4e90ef311644c03868d02af23c820d", null ],
     [ "nb_adc2_channels", "stm32_2mcu__periph_2adc__arch_8c.html#ae30d4e1614f32f3245b1f2311f0f8737", null ],
-    [ "nb_adc3_channels", "stm32_2mcu__periph_2adc__arch_8c.html#a0a5a43d5ad57bb96dd80927c6bef75fd", null ],
-    [ "return", "stm32_2mcu__periph_2adc__arch_8c.html#a9717e7bbecb906637e86cef6da3d83c2", null ],
-    [ "value", "stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a", null ]
+    [ "nb_adc3_channels", "stm32_2mcu__periph_2adc__arch_8c.html#a0a5a43d5ad57bb96dd80927c6bef75fd", null ]
 ];

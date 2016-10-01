@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -165,13 +165,12 @@ $(document).ready(function(){initNavTree('imu__hbmini_8h_source.html','');});
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="imu__hbmini_8h.html#structImuHbmini">ImuHbmini</a> <a class="code" href="imu__hbmini_8h.html#a6e590ea990a714a620248f0bcc6064bb">imu_hbmini</a>;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">/* Own Extra Functions */</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__hbmini_8h.html#a5b9ae3abc04f091d942553dc17b589c8">imu_hbmini_event</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__hbmini_8h.html#a8ae69ebf8b1f4554164d83e027853f00">imu_hbmini_downlink_raw</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="imu__hbmini_8h.html#a38f1122c1ee0701562b490c6e1b60609">   71</a></span>&#160;<span class="preprocessor">#define ImuEvent imu_hbmini_event</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__hbmini_8h.html#aac46d381aad29da7884a7a0424bb9bda">imu_hbmini_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__hbmini_8h.html#a44db4f7063e2da893bfeb7adaa2d30b7">imu_hbmini_periodic</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__hbmini_8h.html#a5b9ae3abc04f091d942553dc17b589c8">imu_hbmini_event</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__hbmini_8h.html#a8ae69ebf8b1f4554164d83e027853f00">imu_hbmini_downlink_raw</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="imu__hbmini_8h_html_structImuHbmini"><div class="ttname"><a href="imu__hbmini_8h.html#structImuHbmini">ImuHbmini</a></div><div class="ttdef"><b>Definition:</b> <a href="imu__hbmini_8h_source.html#l00061">imu_hbmini.h:61</a></div></div>
 <div class="ttc" id="hmc58xx_8h_html"><div class="ttname"><a href="hmc58xx_8h.html">hmc58xx.h</a></div></div>
 <div class="ttc" id="hmc58xx_8h_html_structHmc58xx"><div class="ttname"><a href="hmc58xx_8h.html#structHmc58xx">Hmc58xx</a></div><div class="ttdef"><b>Definition:</b> <a href="hmc58xx_8h_source.html#l00060">hmc58xx.h:60</a></div></div>
@@ -182,13 +181,15 @@ $(document).ready(function(){initNavTree('imu__hbmini_8h_source.html','');});
 <div class="ttc" id="imu__hbmini_8h_html_a6e590ea990a714a620248f0bcc6064bb"><div class="ttname"><a href="imu__hbmini_8h.html#a6e590ea990a714a620248f0bcc6064bb">imu_hbmini</a></div><div class="ttdeci">struct ImuHbmini imu_hbmini</div><div class="ttdef"><b>Definition:</b> <a href="imu__hbmini_8c_source.html#l00061">imu_hbmini.c:61</a></div></div>
 <div class="ttc" id="max1168_8h_html"><div class="ttname"><a href="max1168_8h.html">max1168.h</a></div></div>
 <div class="ttc" id="imu__hbmini_8h_html_a5b9ae3abc04f091d942553dc17b589c8"><div class="ttname"><a href="imu__hbmini_8h.html#a5b9ae3abc04f091d942553dc17b589c8">imu_hbmini_event</a></div><div class="ttdeci">void imu_hbmini_event(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__hbmini_8c_source.html#l00093">imu_hbmini.c:93</a></div></div>
+<div class="ttc" id="imu__hbmini_8h_html_aac46d381aad29da7884a7a0424bb9bda"><div class="ttname"><a href="imu__hbmini_8h.html#aac46d381aad29da7884a7a0424bb9bda">imu_hbmini_init</a></div><div class="ttdeci">void imu_hbmini_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__hbmini_8c_source.html#l00063">imu_hbmini.c:63</a></div></div>
+<div class="ttc" id="imu__hbmini_8h_html_a44db4f7063e2da893bfeb7adaa2d30b7"><div class="ttname"><a href="imu__hbmini_8h.html#a44db4f7063e2da893bfeb7adaa2d30b7">imu_hbmini_periodic</a></div><div class="ttdeci">void imu_hbmini_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__hbmini_8c_source.html#l00072">imu_hbmini.c:72</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_199d3f9d5cb33e01205a5799f6ac9545.html">hbmini</a></li><li class="navelem"><a class="el" href="imu__hbmini_8h.html">imu_hbmini.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:16 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:16 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

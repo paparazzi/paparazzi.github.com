@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -196,7 +196,7 @@ $(document).ready(function(){initNavTree('exif__module_8c_source.html','');});
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="exif__module_8c.html#a62dd27ed931462c0526e4632461c7acf">   89</a></span>&#160;<span class="keyword">static</span> ExifEntry *<a class="code" href="exif__module_8c.html#a62dd27ed931462c0526e4632461c7acf">create_tag</a>(ExifData *exif, ExifIfd ifd, ExifTag tag, <span class="keywordtype">size_t</span> len)</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">void</span> *<a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a48b4f0842338aeafa79aeab314f33696">buf</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">void</span> *buf;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  ExifEntry *entry;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="comment">/* Create a memory allocator to manage this ExifEntry */</span></div>
@@ -212,7 +212,7 @@ $(document).ready(function(){initNavTree('exif__module_8c_source.html','');});
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="comment">//assert(buf != NULL);</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="comment">/* Fill in the entry */</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  entry-&gt;data = <a class="code" href="stm32_2mcu__periph_2adc__arch_8c.html#a48b4f0842338aeafa79aeab314f33696">buf</a>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  entry-&gt;data = buf;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  entry-&gt;size = len;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  entry-&gt;tag = tag;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  entry-&gt;components = len;</div>
@@ -467,7 +467,7 @@ $(document).ready(function(){initNavTree('exif__module_8c_source.html','');});
 <div class="ttc" id="group__math__geodetic__int_html_a36aa60e58a828880951718db39c227f9"><div class="ttname"><a href="group__math__geodetic__int.html#a36aa60e58a828880951718db39c227f9">LlaCoor_i::alt</a></div><div class="ttdeci">int32_t alt</div><div class="ttdoc">in millimeters above WGS84 reference ellipsoid </div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__int_8h_source.html#l00062">pprz_geodetic_int.h:62</a></div></div>
 <div class="ttc" id="exif__module_8c_html_a91b0ae74e7e4da70fb5021ff6aacd6f0"><div class="ttname"><a href="exif__module_8c.html#a91b0ae74e7e4da70fb5021ff6aacd6f0">push_gps_to_vision</a></div><div class="ttdeci">void push_gps_to_vision(void)</div><div class="ttdef"><b>Definition:</b> <a href="exif__module_8c_source.html#l00038">exif_module.c:38</a></div></div>
 <div class="ttc" id="exif__module_8c_html_aa7aba60a4704a0699c27e2c1d7d67224"><div class="ttname"><a href="exif__module_8c.html#aa7aba60a4704a0699c27e2c1d7d67224">lat_em7deg</a></div><div class="ttdeci">volatile int32_t lat_em7deg</div><div class="ttdef"><b>Definition:</b> <a href="exif__module_8c_source.html#l00031">exif_module.c:31</a></div></div>
-<div class="ttc" id="gps_8h_html_a10af95f7fdab3171a789866838b0c8c3"><div class="ttname"><a href="gps_8h.html#a10af95f7fdab3171a789866838b0c8c3">GpsState::hmsl</a></div><div class="ttdeci">int32_t hmsl</div><div class="ttdoc">height above mean sea level in mm </div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00082">gps.h:82</a></div></div>
+<div class="ttc" id="gps_8h_html_a10af95f7fdab3171a789866838b0c8c3"><div class="ttname"><a href="gps_8h.html#a10af95f7fdab3171a789866838b0c8c3">GpsState::hmsl</a></div><div class="ttdeci">int32_t hmsl</div><div class="ttdoc">height above mean sea level (MSL) in mm </div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00088">gps.h:88</a></div></div>
 <div class="ttc" id="exif__module_8c_html_a5e636f6bee9bd1ab6d04ec780509dca5"><div class="ttname"><a href="exif__module_8c.html#a5e636f6bee9bd1ab6d04ec780509dca5">write_exif_jpeg</a></div><div class="ttdeci">int write_exif_jpeg(char *filename, const unsigned char *image_jpg, const unsigned int image_jpg_len, const unsigned int image_jpg_x, const unsigned int image_jpg_y)</div><div class="ttdef"><b>Definition:</b> <a href="exif__module_8c_source.html#l00146">exif_module.c:146</a></div></div>
 <div class="ttc" id="gps_8h_html"><div class="ttname"><a href="gps_8h.html">gps.h</a></div><div class="ttdoc">Device independent GPS code (interface) </div></div>
 <div class="ttc" id="types_8h_html_a06896e8c53f721507066c079052171f8"><div class="ttname"><a href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></div><div class="ttdeci">unsigned long uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00018">types.h:18</a></div></div>
@@ -476,14 +476,13 @@ $(document).ready(function(){initNavTree('exif__module_8c_source.html','');});
 <div class="ttc" id="types_8h_html_a2ba621978a511250f7250fb10e05ffbe"><div class="ttname"><a href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></div><div class="ttdeci">signed long int32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00019">types.h:19</a></div></div>
 <div class="ttc" id="exif__module_8c_html_a4f8a19ec0c9a1af5b68b3d4daba768db"><div class="ttname"><a href="exif__module_8c.html#a4f8a19ec0c9a1af5b68b3d4daba768db">ASCII_COMMENT</a></div><div class="ttdeci">#define ASCII_COMMENT</div><div class="ttdef"><b>Definition:</b> <a href="exif__module_8c_source.html#l00141">exif_module.c:141</a></div></div>
 <div class="ttc" id="exif__module_8c_html_af57f40e9a23ea780c767fa1a988006dc"><div class="ttname"><a href="exif__module_8c.html#af57f40e9a23ea780c767fa1a988006dc">image_data_len</a></div><div class="ttdeci">#define image_data_len</div><div class="ttdef"><b>Definition:</b> <a href="exif__module_8c_source.html#l00125">exif_module.c:125</a></div></div>
-<div class="ttc" id="stm32_2mcu__periph_2adc__arch_8c_html_a48b4f0842338aeafa79aeab314f33696"><div class="ttname"><a href="stm32_2mcu__periph_2adc__arch_8c.html#a48b4f0842338aeafa79aeab314f33696">buf</a></div><div class="ttdeci">struct adc_buf * buf</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2mcu__periph_2adc__arch_8c_source.html#l00587">adc_arch.c:587</a></div></div>
 <div class="ttc" id="state_8h_html"><div class="ttname"><a href="state_8h.html">state.h</a></div><div class="ttdoc">API to get/set the generic vehicle states. </div></div>
 <div class="ttc" id="exif__module_8c_html_a76556aceaec9700c7267093b6d4fa99f"><div class="ttname"><a href="exif__module_8c.html#a76556aceaec9700c7267093b6d4fa99f">init_tag</a></div><div class="ttdeci">static ExifEntry * init_tag(ExifData *exif, ExifIfd ifd, ExifTag tag)</div><div class="ttdef"><b>Definition:</b> <a href="exif__module_8c_source.html#l00056">exif_module.c:56</a></div></div>
 <div class="ttc" id="exif__module_8h_html"><div class="ttname"><a href="exif__module_8h.html">exif_module.h</a></div><div class="ttdoc">Write JPEG images containing EXIF headers with GPS coordinates. </div></div>
 <div class="ttc" id="exif__module_8c_html_af60698a090ba723f77589c838cf73465"><div class="ttname"><a href="exif__module_8c.html#af60698a090ba723f77589c838cf73465">exif_header_len</a></div><div class="ttdeci">static const unsigned int exif_header_len</div><div class="ttdef"><b>Definition:</b> <a href="exif__module_8c_source.html#l00132">exif_module.c:132</a></div></div>
 <div class="ttc" id="group__math__geodetic__int_html_a083f5d7acd142e12865d9f4a918fee07"><div class="ttname"><a href="group__math__geodetic__int.html#a083f5d7acd142e12865d9f4a918fee07">LlaCoor_i::lat</a></div><div class="ttdeci">int32_t lat</div><div class="ttdoc">in degrees*1e7 </div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__int_8h_source.html#l00060">pprz_geodetic_int.h:60</a></div></div>
-<div class="ttc" id="gps_8c_html_a5cf954024f8e0433b21db7439c5bee9d"><div class="ttname"><a href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d">gps</a></div><div class="ttdeci">struct GpsState gps</div><div class="ttdoc">global GPS state </div><div class="ttdef"><b>Definition:</b> <a href="gps_8c_source.html#l00040">gps.c:40</a></div></div>
-<div class="ttc" id="group__state__position_html_ga99473409b740a26c0e2b9a5bd8e9defb"><div class="ttname"><a href="group__state__position.html#ga99473409b740a26c0e2b9a5bd8e9defb">stateGetPositionLla_i</a></div><div class="ttdeci">static struct LlaCoor_i * stateGetPositionLla_i(void)</div><div class="ttdoc">Get position in LLA coordinates (int). </div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00666">state.h:666</a></div></div>
+<div class="ttc" id="gps_8c_html_a5cf954024f8e0433b21db7439c5bee9d"><div class="ttname"><a href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d">gps</a></div><div class="ttdeci">struct GpsState gps</div><div class="ttdoc">global GPS state </div><div class="ttdef"><b>Definition:</b> <a href="gps_8c_source.html#l00075">gps.c:75</a></div></div>
+<div class="ttc" id="group__state__position_html_ga99473409b740a26c0e2b9a5bd8e9defb"><div class="ttname"><a href="group__state__position.html#ga99473409b740a26c0e2b9a5bd8e9defb">stateGetPositionLla_i</a></div><div class="ttdeci">static struct LlaCoor_i * stateGetPositionLla_i(void)</div><div class="ttdoc">Get position in LLA coordinates (int). </div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00677">state.h:677</a></div></div>
 <div class="ttc" id="exif__module_8c_html_a5fbdfea3f922090fe67019a63d2bdcb9"><div class="ttname"><a href="exif__module_8c.html#a5fbdfea3f922090fe67019a63d2bdcb9">exif_header</a></div><div class="ttdeci">static const unsigned char exif_header[]</div><div class="ttdef"><b>Definition:</b> <a href="exif__module_8c_source.html#l00128">exif_module.c:128</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -491,7 +490,7 @@ $(document).ready(function(){initNavTree('exif__module_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="dir_9adc125244b74c64b95124778e5b932a.html">lib</a></li><li class="navelem"><a class="el" href="dir_7cd4eedfd8330380119ebc1708ec2b0a.html">exif</a></li><li class="navelem"><a class="el" href="exif__module_8c.html">exif_module.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:21 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:21 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

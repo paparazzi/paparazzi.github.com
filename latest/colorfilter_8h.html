@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -113,6 +113,7 @@ $(document).ready(function(){initNavTree('colorfilter_8h.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="cv_8h_source.html">modules/computer_vision/cv.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for colorfilter.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -120,7 +121,7 @@ $(document).ready(function(){initNavTree('colorfilter_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="colorfilter_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2computer__vision_2colorfilter_8h" alt=""/></div>
 <map name="sw_2airborne_2modules_2computer__vision_2colorfilter_8h" id="sw_2airborne_2modules_2computer__vision_2colorfilter_8h">
-</map>
+<area shape="rect" id="node3" href="cv_8h.html" title="Computer vision framework for onboard processing. " alt="" coords="100,95,315,121"/><area shape="rect" id="node6" href="video__device_8h.html" title="peripherals/video_device.h" alt="" coords="179,169,369,196"/><area shape="rect" id="node8" href="inttypes_8h.html" title="inttypes.h" alt="" coords="285,251,370,278"/><area shape="rect" id="node9" href="image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="394,244,581,285"/></map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -129,7 +130,7 @@ $(document).ready(function(){initNavTree('colorfilter_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="colorfilter_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2computer__vision_2colorfilter_8hdep" alt=""/></div>
 <map name="sw_2airborne_2modules_2computer__vision_2colorfilter_8hdep" id="sw_2airborne_2modules_2computer__vision_2colorfilter_8hdep">
-<area shape="rect" id="node2" href="colorfilter_8c.html" title="sw/airborne/modules\l/computer_vision/colorfilter.c" alt="" coords="6,95,210,136"/></map>
+<area shape="rect" id="node2" href="colorfilter_8c.html" title="sw/airborne/modules\l/computer_vision/colorfilter.c" alt="" coords="5,102,209,143"/><area shape="rect" id="node3" href="orange__avoider_8c.html" title="sw/airborne/modules\l/orange_avoider/orange\l_avoider.c" alt="" coords="233,95,408,151"/></map>
 </div>
 </div>
 <p><a href="colorfilter_8h_source.html">Go to the source code of this file.</a></p>
@@ -155,6 +156,8 @@ Variables</h2></td></tr>
 <tr class="separator:a178c4572aced8af31538a036d2d1c5df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad99d2a0b5a335e334b306c2a38a80c52"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colorfilter_8h.html#ad99d2a0b5a335e334b306c2a38a80c52">color_count</a></td></tr>
 <tr class="separator:ad99d2a0b5a335e334b306c2a38a80c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cd78b5508e71a82956808eba675122b"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="cv_8h.html#structvideo__listener">video_listener</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colorfilter_8h.html#a1cd78b5508e71a82956808eba675122b">listener</a></td></tr>
+<tr class="separator:a1cd78b5508e71a82956808eba675122b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="ab8b6b333c3f84d7497aef5629a2e4453"></a>
@@ -171,9 +174,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="colorfilter_8c_source.html#l00057">57</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
+<p>Definition at line <a class="el" href="colorfilter_8c_source.html#l00059">59</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
 
-<p>References <a class="el" href="colorfilter_8c_source.html#l00045">colorfilter_func()</a>, and <a class="el" href="cv_8c_source.html#l00035">cv_add()</a>.</p>
+<p>References <a class="el" href="colorfilter_8c_source.html#l00047">colorfilter_func()</a>, and <a class="el" href="cv_8c_source.html#l00045">cv_add_to_device()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -182,7 +185,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="colorfilter_8h_ab8b6b333c3f84d7497aef5629a2e4453_cgraph.png" border="0" usemap="#colorfilter_8h_ab8b6b333c3f84d7497aef5629a2e4453_cgraph" alt=""/></div>
 <map name="colorfilter_8h_ab8b6b333c3f84d7497aef5629a2e4453_cgraph" id="colorfilter_8h_ab8b6b333c3f84d7497aef5629a2e4453_cgraph">
-<area shape="rect" id="node2" href="colorfilter_8c.html#a061499d6aca3cc3c08e048b4eec1c4c8" title="colorfilter_func" alt="" coords="160,5,275,32"/><area shape="rect" id="node4" href="cv_8c.html#a2566b3260caf3b9b77136dd574086b99" title="cv_add" alt="" coords="184,56,251,83"/><area shape="rect" id="node3" href="image_8c.html#aa5bba6b2f386abf2ac701492f6a48bc9" title="Filter colors in an YUV422 image. " alt="" coords="323,5,491,32"/></map>
+<area shape="rect" id="node2" href="colorfilter_8c.html#a4f6ce70f175c9d88381bbcc472ccc264" title="colorfilter_func" alt="" coords="170,5,285,32"/><area shape="rect" id="node4" href="cv_8c.html#ada9827c953db23005383fa57f742e994" title="cv_add_to_device" alt="" coords="160,56,295,83"/><area shape="rect" id="node3" href="image_8c.html#aa5bba6b2f386abf2ac701492f6a48bc9" title="Filter colors in an YUV422 image. " alt="" coords="343,5,511,32"/><area shape="rect" id="node5" href="cv_8h.html#a9e0afd727457cecc0e207aa03c4d48a5" title="add_video_device" alt="" coords="359,56,494,83"/><area shape="rect" id="node6" href="video__thread_8c.html#acc71ed66abdc3fa0cecd95cc408c670e" title="initialize_camera" alt="" coords="559,56,688,83"/><area shape="rect" id="node7" href="v4l2_8c.html#a3798643b3e99cd32ef724fc928d92e51" title="Initialize a V4L2 subdevice. " alt="" coords="736,31,863,57"/><area shape="rect" id="node8" href="v4l2_8c.html#a1f683e79a4639d4e189f059f6c4ae268" title="Initialize a V4L2(Video for Linux 2) device. " alt="" coords="762,81,837,108"/></map>
 </div>
 </p>
 
@@ -199,7 +202,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="colorfilter_8c_source.html#l00036">36</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
+<p>Definition at line <a class="el" href="colorfilter_8c_source.html#l00038">38</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
 
 </div>
 </div>
@@ -213,7 +216,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="colorfilter_8c_source.html#l00035">35</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
+<p>Definition at line <a class="el" href="colorfilter_8c_source.html#l00037">37</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
 
 </div>
 </div>
@@ -227,9 +230,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="colorfilter_8c_source.html#l00041">41</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
+<p>Definition at line <a class="el" href="colorfilter_8c_source.html#l00043">43</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
 
-<p>Referenced by <a class="el" href="colorfilter_8c_source.html#l00045">colorfilter_func()</a>.</p>
+<p>Referenced by <a class="el" href="colorfilter_8c_source.html#l00047">colorfilter_func()</a>, and <a class="el" href="orange__avoider_8c_source.html#l00038">orange_avoider_periodic()</a>.</p>
 
 </div>
 </div>
@@ -243,7 +246,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="colorfilter_8c_source.html#l00038">38</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
+<p>Definition at line <a class="el" href="colorfilter_8c_source.html#l00040">40</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
 
 </div>
 </div>
@@ -257,7 +260,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="colorfilter_8c_source.html#l00037">37</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
+<p>Definition at line <a class="el" href="colorfilter_8c_source.html#l00039">39</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
 
 </div>
 </div>
@@ -271,7 +274,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="colorfilter_8c_source.html#l00034">34</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
+<p>Definition at line <a class="el" href="colorfilter_8c_source.html#l00036">36</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
 
 </div>
 </div>
@@ -285,7 +288,23 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="colorfilter_8c_source.html#l00033">33</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
+<p>Definition at line <a class="el" href="colorfilter_8c_source.html#l00035">35</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1cd78b5508e71a82956808eba675122b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="cv_8h.html#structvideo__listener">video_listener</a>* listener</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="colorfilter_8c_source.html#l00032">32</a> of file <a class="el" href="colorfilter_8c_source.html">colorfilter.c</a>.</p>
+
+<p>Referenced by <a class="el" href="cv_8c_source.html#l00045">cv_add_to_device()</a>, <a class="el" href="cv_8c_source.html#l00080">cv_add_to_device_async()</a>, <a class="el" href="cv_8c_source.html#l00123">cv_async_thread()</a>, <a class="el" href="cv_8c_source.html#l00155">cv_run_device()</a>, and <a class="el" href="viewvideo_8c_source.html#l00213">viewvideo_init()</a>.</p>
 
 </div>
 </div>
@@ -295,7 +314,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="colorfilter_8h.html">colorfilter.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:48 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:53 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

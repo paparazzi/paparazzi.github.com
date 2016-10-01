@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -120,6 +120,10 @@ $(document).ready(function(){initNavTree('fixedwing_2autopilot_8c.html','');});
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="nav_8h_source.html">firmwares/fixedwing/nav.h</a>&quot;</code><br />
 <code>#include &quot;pprz_version.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
+<code>#include &quot;generated/settings.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="fixedwing_2stabilization_2stabilization__attitude_8h_source.html">firmwares/fixedwing/stabilization/stabilization_attitude.h</a>&quot;</code><br />
+<code>#include &lt;CTRL_TYPE_H&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for autopilot.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -127,13 +131,33 @@ $(document).ready(function(){initNavTree('fixedwing_2autopilot_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="fixedwing_2autopilot_8c__incl.png" border="0" usemap="#sw_2airborne_2firmwares_2fixedwing_2autopilot_8c" alt=""/></div>
 <map name="sw_2airborne_2firmwares_2fixedwing_2autopilot_8c" id="sw_2airborne_2firmwares_2fixedwing_2autopilot_8c">
-<area shape="rect" id="node3" href="fixedwing_2autopilot_8h.html" title="Fixedwing autopilot modes. " alt="" coords="1321,95,1467,136"/><area shape="rect" id="node9" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="563,281,630,307"/><area shape="rect" id="node22" href="nav_8h.html" title="Fixedwing Navigation library. " alt="" coords="881,95,1027,136"/><area shape="rect" id="node4" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1223,281,1309,307"/><area shape="rect" id="node6" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1194,191,1290,218"/><area shape="rect" id="node8" href="settings_8h.html" title="Persistent settings interface. " alt="" coords="1359,281,1525,307"/><area shape="rect" id="node10" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="407,452,586,479"/><area shape="rect" id="node16" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="140,452,331,479"/><area shape="rect" id="node18" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="511,363,661,404"/><area shape="rect" id="node20" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="685,363,836,404"/><area shape="rect" id="node21" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="271,363,435,404"/><area shape="rect" id="node11" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="178,527,333,553"/><area shape="rect" id="node14" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="459,527,609,553"/><area shape="rect" id="node19" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="661,452,785,479"/><area shape="rect" id="node23" href="nav__survey__rectangle_8h.html" title="subsystems/navigation\l/nav_survey_rectangle.h" alt="" coords="992,184,1169,225"/><area shape="rect" id="node24" href="common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="819,273,988,315"/><area shape="rect" id="node25" href="common__nav_8h.html" title="subsystems/navigation\l/common_nav.h" alt="" coords="696,184,865,225"/></map>
+<area shape="rect" id="node3" href="fixedwing_2autopilot_8h.html" title="Fixedwing autopilot modes. " alt="" coords="1452,459,1598,501"/><area shape="rect" id="node10" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="680,281,746,307"/><area shape="rect" id="node24" href="nav_8h.html" title="Fixedwing Navigation library. " alt="" coords="1090,95,1237,136"/><area shape="rect" id="node29" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="2152,363,2306,404"/><area shape="rect" id="node40" href="fixedwing_2stabilization_2stabilization__attitude_8h.html" title="Fixed wing horizontal control. " alt="" coords="1743,452,1926,508"/><area shape="rect" id="node4" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1866,645,1952,672"/><area shape="rect" id="node6" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1701,563,1797,590"/><area shape="rect" id="node8" href="settings_8h.html" title="Persistent settings interface. " alt="" coords="1232,563,1399,590"/><area shape="rect" id="node11" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="525,467,704,493"/><area shape="rect" id="node17" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="255,467,446,493"/><area shape="rect" id="node20" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="628,363,779,404"/><area shape="rect" id="node22" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="803,363,954,404"/><area shape="rect" id="node23" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="388,363,552,404"/><area shape="rect" id="node12" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="314,563,469,590"/><area shape="rect" id="node15" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="687,563,838,590"/><area shape="rect" id="node21" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="779,467,903,493"/><area shape="rect" id="node25" href="nav__survey__rectangle_8h.html" title="subsystems/navigation\l/nav_survey_rectangle.h" alt="" coords="1012,184,1190,225"/><area shape="rect" id="node26" href="common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="1071,273,1240,315"/><area shape="rect" id="node27" href="common__nav_8h.html" title="subsystems/navigation\l/common_nav.h" alt="" coords="819,184,988,225"/><area shape="rect" id="node30" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="2746,563,2885,590"/><area shape="rect" id="node34" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="2324,459,2478,501"/><area shape="rect" id="node37" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="2568,556,2722,597"/></map>
 </div>
 </div>
 <p><a href="fixedwing_2autopilot_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a974326e4c446abb45f2c4ce43666412f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot_8c.html#a974326e4c446abb45f2c4ce43666412f">send_autopilot_version</a> (struct transport_tx *trans, struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
+<tr class="separator:a974326e4c446abb45f2c4ce43666412f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65644c7fe2e327f01296b259bc106f85"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot_8c.html#a65644c7fe2e327f01296b259bc106f85">send_alive</a> (struct transport_tx *trans, struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
+<tr class="separator:a65644c7fe2e327f01296b259bc106f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa3e0f7f34f17d74b01b42e37aed933d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot_8c.html#afa3e0f7f34f17d74b01b42e37aed933d">send_mode</a> (struct transport_tx *trans, struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
+<tr class="separator:afa3e0f7f34f17d74b01b42e37aed933d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a468116423cf6003ebcd0c632cd976c02"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot_8c.html#a468116423cf6003ebcd0c632cd976c02">send_attitude</a> (struct transport_tx *trans, struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
+<tr class="separator:a468116423cf6003ebcd0c632cd976c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae015b1759bb416ee56b7a3a403b12985"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot_8c.html#ae015b1759bb416ee56b7a3a403b12985">send_estimator</a> (struct transport_tx *trans, struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
+<tr class="separator:ae015b1759bb416ee56b7a3a403b12985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cdb053f364a86808f877d426975a0af"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot_8c.html#a3cdb053f364a86808f877d426975a0af">send_bat</a> (struct transport_tx *trans, struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
+<tr class="separator:a3cdb053f364a86808f877d426975a0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b82f013ab4d5b172d8859488d3d6040"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot_8c.html#a5b82f013ab4d5b172d8859488d3d6040">send_energy</a> (struct transport_tx *trans, struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
+<tr class="separator:a5b82f013ab4d5b172d8859488d3d6040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16254e24676fbc701ce5657b98cd5e7b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot_8c.html#a16254e24676fbc701ce5657b98cd5e7b">send_dl_value</a> (struct transport_tx *trans, struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
+<tr class="separator:a16254e24676fbc701ce5657b98cd5e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39bb118e4dfd535f85e7106804378972"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot_8c.html#a39bb118e4dfd535f85e7106804378972">send_desired</a> (struct transport_tx *trans, struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
+<tr class="separator:a39bb118e4dfd535f85e7106804378972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66607b1cbf8f7535ab395e10f531e989"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot_8c.html#a66607b1cbf8f7535ab395e10f531e989">send_airspeed</a> (struct transport_tx *trans, struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
+<tr class="separator:a66607b1cbf8f7535ab395e10f531e989"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c54f26fedcf128f909c7cc5dc071353"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot_8c.html#a4c54f26fedcf128f909c7cc5dc071353">autopilot_send_mode</a> (void)</td></tr>
 <tr class="memdesc:a4c54f26fedcf128f909c7cc5dc071353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send mode over telemetry.  <a href="#a4c54f26fedcf128f909c7cc5dc071353">More...</a><br /></td></tr>
 <tr class="separator:a4c54f26fedcf128f909c7cc5dc071353"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,12 +169,12 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:aebf57c26248ee8c66d3eacdbd6a155cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot_8c.html#aebf57c26248ee8c66d3eacdbd6a155cd">pprz_mode</a></td></tr>
 <tr class="separator:aebf57c26248ee8c66d3eacdbd6a155cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f1a87c0a714ae1fe65f5214086d8c9c"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot_8c.html#a3f1a87c0a714ae1fe65f5214086d8c9c">kill_throttle</a></td></tr>
-<tr class="separator:a3f1a87c0a714ae1fe65f5214086d8c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a780ac2696a5b06e8edf29da215f917be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot_8c.html#a780ac2696a5b06e8edf29da215f917be">kill_throttle</a></td></tr>
+<tr class="separator:a780ac2696a5b06e8edf29da215f917be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b46ee9ade673c44f54f4ad3497c16b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot_8c.html#a4b46ee9ade673c44f54f4ad3497c16b9">mcu1_status</a></td></tr>
 <tr class="separator:a4b46ee9ade673c44f54f4ad3497c16b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af32f81f02a3187c12c08e11caf354abd"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot_8c.html#af32f81f02a3187c12c08e11caf354abd">launch</a></td></tr>
-<tr class="separator:af32f81f02a3187c12c08e11caf354abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a970273b8dbea201391088dc6f3a5a401"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot_8c.html#a970273b8dbea201391088dc6f3a5a401">launch</a></td></tr>
+<tr class="separator:a970273b8dbea201391088dc6f3a5a401"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a643a1732fc06296050835ab61968d726"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot_8c.html#a643a1732fc06296050835ab61968d726">autopilot_flight_time</a></td></tr>
 <tr class="memdesc:a643a1732fc06296050835ab61968d726"><td class="mdescLeft">&#160;</td><td class="mdescRight">flight time in seconds.  <a href="#a643a1732fc06296050835ab61968d726">More...</a><br /></td></tr>
 <tr class="separator:a643a1732fc06296050835ab61968d726"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,11 +189,13 @@ Variables</h2></td></tr>
 <tr class="memitem:a2d107b3b2dcebab8a10c9d39894f6b2a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot_8c.html#a2d107b3b2dcebab8a10c9d39894f6b2a">energy</a></td></tr>
 <tr class="memdesc:a2d107b3b2dcebab8a10c9d39894f6b2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Energy consumption (mAh) This is the ap copy of the measurement from fbw.  <a href="#a2d107b3b2dcebab8a10c9d39894f6b2a">More...</a><br /></td></tr>
 <tr class="separator:a2d107b3b2dcebab8a10c9d39894f6b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5b2dcab0bbd14934aac4f5e0eea8b18"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot_8c.html#ad5b2dcab0bbd14934aac4f5e0eea8b18">gps_lost</a></td></tr>
-<tr class="separator:ad5b2dcab0bbd14934aac4f5e0eea8b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adda0cb88d172048dd19b50ad66e7881e"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot_8c.html#adda0cb88d172048dd19b50ad66e7881e">power_switch</a></td></tr>
-<tr class="memdesc:adda0cb88d172048dd19b50ad66e7881e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Power switch control.  <a href="#adda0cb88d172048dd19b50ad66e7881e">More...</a><br /></td></tr>
-<tr class="separator:adda0cb88d172048dd19b50ad66e7881e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a581ad21989d47162693935c93e555b10"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot_8c.html#a581ad21989d47162693935c93e555b10">gps_lost</a></td></tr>
+<tr class="separator:a581ad21989d47162693935c93e555b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4492410ecc66244c639762c7909a87ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot_8c.html#a4492410ecc66244c639762c7909a87ae">power_switch</a></td></tr>
+<tr class="memdesc:a4492410ecc66244c639762c7909a87ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Power switch control.  <a href="#a4492410ecc66244c639762c7909a87ae">More...</a><br /></td></tr>
+<tr class="separator:a4492410ecc66244c639762c7909a87ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3349e614a926a99c63c8b9f2935a29f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot_8c.html#a3349e614a926a99c63c8b9f2935a29f3">rc_settings_mode</a> = 0</td></tr>
+<tr class="separator:a3349e614a926a99c63c8b9f2935a29f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Fixedwing autopilot inititalization. </p>
@@ -194,7 +220,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="fixedwing_2autopilot_8c_source.html#l00175">175</a> of file <a class="el" href="fixedwing_2autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00175">init_ap()</a>, and <a class="el" href="rotorcraft_2main_8c_source.html#l00159">main_init()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00174">init_ap()</a>, and <a class="el" href="rotorcraft_2main_8c_source.html#l00158">main_init()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -203,7 +229,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="fixedwing_2autopilot_8c_a9d3557653abfc3d4c428724b249f6d5e_icgraph.png" border="0" usemap="#fixedwing_2autopilot_8c_a9d3557653abfc3d4c428724b249f6d5e_icgraph" alt=""/></div>
 <map name="fixedwing_2autopilot_8c_a9d3557653abfc3d4c428724b249f6d5e_icgraph" id="fixedwing_2autopilot_8c_a9d3557653abfc3d4c428724b249f6d5e_icgraph">
-<area shape="rect" id="node2" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="165,5,229,32"/><area shape="rect" id="node4" href="rotorcraft_2main__fbw_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="main_init" alt="" coords="157,56,237,83"/><area shape="rect" id="node3" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="285,5,356,32"/><area shape="rect" id="node5" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="293,56,348,83"/></map>
+<area shape="rect" id="node2" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="165,5,229,32"/><area shape="rect" id="node4" href="rotorcraft_2main__fbw_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="Main initialization. " alt="" coords="157,56,237,83"/><area shape="rect" id="node3" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="285,5,356,32"/><area shape="rect" id="node5" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="293,56,348,83"/></map>
 </div>
 </p>
 
@@ -227,18 +253,558 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="fixedwing_2autopilot_8c_source.html#l00167">167</a> of file <a class="el" href="fixedwing_2autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p>References <a class="el" href="downlink_8h_source.html#l00079">DefaultChannel</a>, and <a class="el" href="downlink_8h_source.html#l00083">DefaultDevice</a>.</p>
+<p>References <a class="el" href="downlink_8h_source.html#l00084">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00088">DefaultDevice</a>, and <a class="el" href="fixedwing_2autopilot_8c_source.html#l00088">send_mode()</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00500">navigation_task()</a>, and <a class="el" href="main__ap_8c_source.html#l00391">telecommand_task()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00490">navigation_task()</a>, and <a class="el" href="main__ap_8c_source.html#l00381">telecommand_task()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="fixedwing_2autopilot_8c_a4c54f26fedcf128f909c7cc5dc071353_cgraph.png" border="0" usemap="#fixedwing_2autopilot_8c_a4c54f26fedcf128f909c7cc5dc071353_cgraph" alt=""/></div>
+<map name="fixedwing_2autopilot_8c_a4c54f26fedcf128f909c7cc5dc071353_cgraph" id="fixedwing_2autopilot_8c_a4c54f26fedcf128f909c7cc5dc071353_cgraph">
+<area shape="rect" id="node2" href="fixedwing_2autopilot_8c.html#afa3e0f7f34f17d74b01b42e37aed933d" title="send_mode" alt="" coords="213,5,311,32"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="fixedwing_2autopilot_8c_a4c54f26fedcf128f909c7cc5dc071353_icgraph.png" border="0" usemap="#fixedwing_2autopilot_8c_a4c54f26fedcf128f909c7cc5dc071353_icgraph" alt=""/></div>
 <map name="fixedwing_2autopilot_8c_a4c54f26fedcf128f909c7cc5dc071353_icgraph" id="fixedwing_2autopilot_8c_a4c54f26fedcf128f909c7cc5dc071353_icgraph">
 <area shape="rect" id="node2" href="main__ap_8h.html#a79f823520ea0823e20084686978281e6" title="Compute desired_course. " alt="" coords="225,56,347,83"/><area shape="rect" id="node5" href="main__ap_8c.html#add4d9babf9be4522b8a4a97e1f1e7b84" title="Function to be called when a message from FBW is available. " alt="" coords="213,107,359,133"/><area shape="rect" id="node3" href="sim__ap_8c.html#a8c0970e9878d0e3e3e6c5d6ff0741d4f" title="sim_nav_task" alt="" coords="445,5,555,32"/><area shape="rect" id="node4" href="main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="407,56,593,83"/><area shape="rect" id="node6" href="main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="443,107,557,133"/><area shape="rect" id="node7" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="641,107,777,133"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a66607b1cbf8f7535ab395e10f531e989"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void send_airspeed </td>
+          <td>(</td>
+          <td class="paramtype">struct transport_tx *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct link_device *&#160;</td>
+          <td class="paramname"><em>dev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="fixedwing_2autopilot_8c_source.html#l00152">152</a> of file <a class="el" href="fixedwing_2autopilot_8c_source.html">autopilot.c</a>.</p>
+
+<p>References <a class="el" href="state_8h_source.html#l01389">stateGetAirspeed_f()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00123">v_ctl_auto_airspeed_controlled</a>, <a class="el" href="energy__ctrl_8c_source.html#l00121">v_ctl_auto_airspeed_setpoint</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00125">v_ctl_auto_groundspeed_setpoint</a>.</p>
+
+<p>Referenced by <a class="el" href="fixedwing_2autopilot_8c_source.html#l00175">autopilot_init()</a>.</p>
+
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="fixedwing_2autopilot_8c_a66607b1cbf8f7535ab395e10f531e989_cgraph.png" border="0" usemap="#fixedwing_2autopilot_8c_a66607b1cbf8f7535ab395e10f531e989_cgraph" alt=""/></div>
+<map name="fixedwing_2autopilot_8c_a66607b1cbf8f7535ab395e10f531e989_cgraph" id="fixedwing_2autopilot_8c_a66607b1cbf8f7535ab395e10f531e989_cgraph">
+<area shape="rect" id="node2" href="group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26" title="Get airspeed (float). " alt="" coords="168,5,313,32"/><area shape="rect" id="node3" href="group__state__wind__airspeed.html#gac2516cd42b66afab524662b27fd96cd5" title="stateCalcAirspeed_f" alt="" coords="361,5,511,32"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="fixedwing_2autopilot_8c_a66607b1cbf8f7535ab395e10f531e989_icgraph.png" border="0" usemap="#fixedwing_2autopilot_8c_a66607b1cbf8f7535ab395e10f531e989_icgraph" alt=""/></div>
+<map name="fixedwing_2autopilot_8c_a66607b1cbf8f7535ab395e10f531e989_icgraph" id="fixedwing_2autopilot_8c_a66607b1cbf8f7535ab395e10f531e989_icgraph">
+<area shape="rect" id="node2" href="rotorcraft_2autopilot_8h.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization. " alt="" coords="168,31,272,57"/><area shape="rect" id="node3" href="rotorcraft_2main__fbw_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="Main initialization. " alt="" coords="320,5,400,32"/><area shape="rect" id="node5" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="328,56,392,83"/><area shape="rect" id="node4" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="456,5,511,32"/><area shape="rect" id="node6" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="448,56,519,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a65644c7fe2e327f01296b259bc106f85"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void send_alive </td>
+          <td>(</td>
+          <td class="paramtype">struct transport_tx *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct link_device *&#160;</td>
+          <td class="paramname"><em>dev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="fixedwing_2autopilot_8c_source.html#l00071">71</a> of file <a class="el" href="fixedwing_2autopilot_8c_source.html">autopilot.c</a>.</p>
+
+<p>Referenced by <a class="el" href="fixedwing_2autopilot_8c_source.html#l00175">autopilot_init()</a>.</p>
+
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="fixedwing_2autopilot_8c_a65644c7fe2e327f01296b259bc106f85_icgraph.png" border="0" usemap="#fixedwing_2autopilot_8c_a65644c7fe2e327f01296b259bc106f85_icgraph" alt=""/></div>
+<map name="fixedwing_2autopilot_8c_a65644c7fe2e327f01296b259bc106f85_icgraph" id="fixedwing_2autopilot_8c_a65644c7fe2e327f01296b259bc106f85_icgraph">
+<area shape="rect" id="node2" href="rotorcraft_2autopilot_8h.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization. " alt="" coords="143,31,247,57"/><area shape="rect" id="node3" href="rotorcraft_2main__fbw_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="Main initialization. " alt="" coords="295,5,375,32"/><area shape="rect" id="node5" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="303,56,367,83"/><area shape="rect" id="node4" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="431,5,485,32"/><area shape="rect" id="node6" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="423,56,493,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a468116423cf6003ebcd0c632cd976c02"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void send_attitude </td>
+          <td>(</td>
+          <td class="paramtype">struct transport_tx *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct link_device *&#160;</td>
+          <td class="paramname"><em>dev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="fixedwing_2autopilot_8c_source.html#l00094">94</a> of file <a class="el" href="fixedwing_2autopilot_8c_source.html">autopilot.c</a>.</p>
+
+<p>References <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="state_8h_source.html#l01125">stateGetNedToBodyEulers_f()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>.</p>
+
+<p>Referenced by <a class="el" href="fixedwing_2autopilot_8c_source.html#l00175">autopilot_init()</a>.</p>
+
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="fixedwing_2autopilot_8c_a468116423cf6003ebcd0c632cd976c02_cgraph.png" border="0" usemap="#fixedwing_2autopilot_8c_a468116423cf6003ebcd0c632cd976c02_cgraph" alt=""/></div>
+<map name="fixedwing_2autopilot_8c_a468116423cf6003ebcd0c632cd976c02_cgraph" id="fixedwing_2autopilot_8c_a468116423cf6003ebcd0c632cd976c02_cgraph">
+<area shape="rect" id="node2" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="164,31,363,57"/><area shape="rect" id="node3" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="411,31,575,57"/><area shape="rect" id="node4" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="623,31,791,57"/><area shape="rect" id="node5" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="839,5,992,32"/><area shape="rect" id="node6" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="float_eulers_of_quat" alt="" coords="840,56,991,83"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="fixedwing_2autopilot_8c_a468116423cf6003ebcd0c632cd976c02_icgraph.png" border="0" usemap="#fixedwing_2autopilot_8c_a468116423cf6003ebcd0c632cd976c02_icgraph" alt=""/></div>
+<map name="fixedwing_2autopilot_8c_a468116423cf6003ebcd0c632cd976c02_icgraph" id="fixedwing_2autopilot_8c_a468116423cf6003ebcd0c632cd976c02_icgraph">
+<area shape="rect" id="node2" href="rotorcraft_2autopilot_8h.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization. " alt="" coords="164,31,268,57"/><area shape="rect" id="node3" href="rotorcraft_2main__fbw_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="Main initialization. " alt="" coords="316,5,396,32"/><area shape="rect" id="node5" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="324,56,388,83"/><area shape="rect" id="node4" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="452,5,507,32"/><area shape="rect" id="node6" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="444,56,515,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a974326e4c446abb45f2c4ce43666412f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void send_autopilot_version </td>
+          <td>(</td>
+          <td class="paramtype">struct transport_tx *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct link_device *&#160;</td>
+          <td class="paramname"><em>dev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="fixedwing_2autopilot_8c_source.html#l00064">64</a> of file <a class="el" href="fixedwing_2autopilot_8c_source.html">autopilot.c</a>.</p>
+
+<p>Referenced by <a class="el" href="fixedwing_2autopilot_8c_source.html#l00175">autopilot_init()</a>.</p>
+
+<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="fixedwing_2autopilot_8c_a974326e4c446abb45f2c4ce43666412f_icgraph.png" border="0" usemap="#fixedwing_2autopilot_8c_a974326e4c446abb45f2c4ce43666412f_icgraph" alt=""/></div>
+<map name="fixedwing_2autopilot_8c_a974326e4c446abb45f2c4ce43666412f_icgraph" id="fixedwing_2autopilot_8c_a974326e4c446abb45f2c4ce43666412f_icgraph">
+<area shape="rect" id="node2" href="rotorcraft_2autopilot_8h.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization. " alt="" coords="223,31,327,57"/><area shape="rect" id="node3" href="rotorcraft_2main__fbw_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="Main initialization. " alt="" coords="375,5,455,32"/><area shape="rect" id="node5" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="383,56,447,83"/><area shape="rect" id="node4" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="511,5,565,32"/><area shape="rect" id="node6" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="503,56,573,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3cdb053f364a86808f877d426975a0af"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void send_bat </td>
+          <td>(</td>
+          <td class="paramtype">struct transport_tx *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct link_device *&#160;</td>
+          <td class="paramname"><em>dev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="fixedwing_2autopilot_8c_source.html#l00107">107</a> of file <a class="el" href="fixedwing_2autopilot_8c_source.html">autopilot.c</a>.</p>
+
+<p>References <a class="el" href="fixedwing_2autopilot_8c_source.html#l00048">autopilot_flight_time</a>, <a class="el" href="common__flight__plan_8c_source.html#l00033">block_time</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00053">current</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00054">energy</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00042">kill_throttle</a>, <a class="el" href="common__flight__plan_8c_source.html#l00033">stage_time</a>, <a class="el" href="energy__ctrl_8c_source.html#l00132">v_ctl_throttle_slewed</a>, and <a class="el" href="fixedwing_2autopilot_8c_source.html#l00052">vsupply</a>.</p>
+
+<p>Referenced by <a class="el" href="fixedwing_2autopilot_8c_source.html#l00175">autopilot_init()</a>.</p>
+
+<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="fixedwing_2autopilot_8c_a3cdb053f364a86808f877d426975a0af_icgraph.png" border="0" usemap="#fixedwing_2autopilot_8c_a3cdb053f364a86808f877d426975a0af_icgraph" alt=""/></div>
+<map name="fixedwing_2autopilot_8c_a3cdb053f364a86808f877d426975a0af_icgraph" id="fixedwing_2autopilot_8c_a3cdb053f364a86808f877d426975a0af_icgraph">
+<area shape="rect" id="node2" href="rotorcraft_2autopilot_8h.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization. " alt="" coords="135,31,239,57"/><area shape="rect" id="node3" href="rotorcraft_2main__fbw_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="Main initialization. " alt="" coords="287,5,367,32"/><area shape="rect" id="node5" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="295,56,359,83"/><area shape="rect" id="node4" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="423,5,477,32"/><area shape="rect" id="node6" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="415,56,485,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a39bb118e4dfd535f85e7106804378972"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void send_desired </td>
+          <td>(</td>
+          <td class="paramtype">struct transport_tx *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct link_device *&#160;</td>
+          <td class="paramname"><em>dev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="fixedwing_2autopilot_8c_source.html#l00141">141</a> of file <a class="el" href="fixedwing_2autopilot_8c_source.html">autopilot.c</a>.</p>
+
+<p>References <a class="el" href="nav_8c_source.html#l00311">desired_x</a>, <a class="el" href="nav_8c_source.html#l00311">desired_y</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00080">h_ctl_course_setpoint</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00171">h_ctl_pitch_loop_setpoint</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00157">h_ctl_roll_setpoint</a>, <a class="el" href="energy__ctrl_8c_source.html#l00088">v_ctl_altitude_setpoint</a>, <a class="el" href="energy__ctrl_8c_source.html#l00121">v_ctl_auto_airspeed_setpoint</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00098">v_ctl_climb_setpoint</a>.</p>
+
+<p>Referenced by <a class="el" href="fixedwing_2autopilot_8c_source.html#l00175">autopilot_init()</a>.</p>
+
+<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="fixedwing_2autopilot_8c_a39bb118e4dfd535f85e7106804378972_icgraph.png" border="0" usemap="#fixedwing_2autopilot_8c_a39bb118e4dfd535f85e7106804378972_icgraph" alt=""/></div>
+<map name="fixedwing_2autopilot_8c_a39bb118e4dfd535f85e7106804378972_icgraph" id="fixedwing_2autopilot_8c_a39bb118e4dfd535f85e7106804378972_icgraph">
+<area shape="rect" id="node2" href="rotorcraft_2autopilot_8h.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization. " alt="" coords="160,31,264,57"/><area shape="rect" id="node3" href="rotorcraft_2main__fbw_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="Main initialization. " alt="" coords="312,5,392,32"/><area shape="rect" id="node5" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="320,56,384,83"/><area shape="rect" id="node4" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="448,5,503,32"/><area shape="rect" id="node6" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="440,56,511,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a16254e24676fbc701ce5657b98cd5e7b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void send_dl_value </td>
+          <td>(</td>
+          <td class="paramtype">struct transport_tx *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct link_device *&#160;</td>
+          <td class="paramname"><em>dev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="fixedwing_2autopilot_8c_source.html#l00133">133</a> of file <a class="el" href="fixedwing_2autopilot_8c_source.html">autopilot.c</a>.</p>
+
+<p>Referenced by <a class="el" href="fixedwing_2autopilot_8c_source.html#l00175">autopilot_init()</a>.</p>
+
+<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="fixedwing_2autopilot_8c_a16254e24676fbc701ce5657b98cd5e7b_icgraph.png" border="0" usemap="#fixedwing_2autopilot_8c_a16254e24676fbc701ce5657b98cd5e7b_icgraph" alt=""/></div>
+<map name="fixedwing_2autopilot_8c_a16254e24676fbc701ce5657b98cd5e7b_icgraph" id="fixedwing_2autopilot_8c_a16254e24676fbc701ce5657b98cd5e7b_icgraph">
+<area shape="rect" id="node2" href="rotorcraft_2autopilot_8h.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization. " alt="" coords="165,31,269,57"/><area shape="rect" id="node3" href="rotorcraft_2main__fbw_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="Main initialization. " alt="" coords="317,5,397,32"/><area shape="rect" id="node5" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="325,56,389,83"/><area shape="rect" id="node4" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="453,5,508,32"/><area shape="rect" id="node6" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="445,56,516,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5b82f013ab4d5b172d8859488d3d6040"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void send_energy </td>
+          <td>(</td>
+          <td class="paramtype">struct transport_tx *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct link_device *&#160;</td>
+          <td class="paramname"><em>dev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="fixedwing_2autopilot_8c_source.html#l00121">121</a> of file <a class="el" href="fixedwing_2autopilot_8c_source.html">autopilot.c</a>.</p>
+
+<p>References <a class="el" href="fixedwing_2autopilot_8c_source.html#l00053">current</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00054">energy</a>, and <a class="el" href="fixedwing_2autopilot_8c_source.html#l00052">vsupply</a>.</p>
+
+<p>Referenced by <a class="el" href="fixedwing_2autopilot_8c_source.html#l00175">autopilot_init()</a>.</p>
+
+<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="fixedwing_2autopilot_8c_a5b82f013ab4d5b172d8859488d3d6040_icgraph.png" border="0" usemap="#fixedwing_2autopilot_8c_a5b82f013ab4d5b172d8859488d3d6040_icgraph" alt=""/></div>
+<map name="fixedwing_2autopilot_8c_a5b82f013ab4d5b172d8859488d3d6040_icgraph" id="fixedwing_2autopilot_8c_a5b82f013ab4d5b172d8859488d3d6040_icgraph">
+<area shape="rect" id="node2" href="rotorcraft_2autopilot_8h.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization. " alt="" coords="157,31,261,57"/><area shape="rect" id="node3" href="rotorcraft_2main__fbw_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="Main initialization. " alt="" coords="309,5,389,32"/><area shape="rect" id="node5" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="317,56,381,83"/><area shape="rect" id="node4" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="445,5,500,32"/><area shape="rect" id="node6" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="437,56,508,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae015b1759bb416ee56b7a3a403b12985"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void send_estimator </td>
+          <td>(</td>
+          <td class="paramtype">struct transport_tx *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct link_device *&#160;</td>
+          <td class="paramname"><em>dev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="fixedwing_2autopilot_8c_source.html#l00101">101</a> of file <a class="el" href="fixedwing_2autopilot_8c_source.html">autopilot.c</a>.</p>
+
+<p>References <a class="el" href="state_8h_source.html#l00686">stateGetPositionUtm_f()</a>, and <a class="el" href="state_8h_source.html#l00905">stateGetSpeedEnu_f()</a>.</p>
+
+<p>Referenced by <a class="el" href="fixedwing_2autopilot_8c_source.html#l00175">autopilot_init()</a>.</p>
+
+<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="fixedwing_2autopilot_8c_ae015b1759bb416ee56b7a3a403b12985_cgraph.png" border="0" usemap="#fixedwing_2autopilot_8c_ae015b1759bb416ee56b7a3a403b12985_cgraph" alt=""/></div>
+<map name="fixedwing_2autopilot_8c_ae015b1759bb416ee56b7a3a403b12985_cgraph" id="fixedwing_2autopilot_8c_ae015b1759bb416ee56b7a3a403b12985_cgraph">
+<area shape="rect" id="node2" href="group__state__position.html#ga7488f3b1e3afa9515541c0130278bdac" title="Get position in UTM coordinates (float). " alt="" coords="176,35,343,61"/><area shape="rect" id="node7" href="group__state__velocity.html#ga8e7f86fe83bd1b767f9c5016ed245822" title="Get ground speed in local ENU coordinates (float). " alt="" coords="182,85,337,112"/><area shape="rect" id="node3" href="group__state__position.html#ga6893f5e3d84e0464d2bc6fc86a08f16d" title="stateCalcPositionUtm_f" alt="" coords="391,35,561,61"/><area shape="rect" id="node4" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="632,35,731,61"/><area shape="rect" id="node5" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="801,5,948,32"/><area shape="rect" id="node6" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="807,57,943,98"/><area shape="rect" id="node8" href="group__state__velocity.html#ga2f7eff6a1ac5d75adf7f70803be06483" title="stateCalcSpeedEnu_f" alt="" coords="397,85,555,112"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title="enu_of_ecef_vect_f" alt="" coords="609,85,753,112"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="fixedwing_2autopilot_8c_ae015b1759bb416ee56b7a3a403b12985_icgraph.png" border="0" usemap="#fixedwing_2autopilot_8c_ae015b1759bb416ee56b7a3a403b12985_icgraph" alt=""/></div>
+<map name="fixedwing_2autopilot_8c_ae015b1759bb416ee56b7a3a403b12985_icgraph" id="fixedwing_2autopilot_8c_ae015b1759bb416ee56b7a3a403b12985_icgraph">
+<area shape="rect" id="node2" href="rotorcraft_2autopilot_8h.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization. " alt="" coords="176,31,280,57"/><area shape="rect" id="node3" href="rotorcraft_2main__fbw_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="Main initialization. " alt="" coords="328,5,408,32"/><area shape="rect" id="node5" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="336,56,400,83"/><area shape="rect" id="node4" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="464,5,519,32"/><area shape="rect" id="node6" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="456,56,527,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="afa3e0f7f34f17d74b01b42e37aed933d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void send_mode </td>
+          <td>(</td>
+          <td class="paramtype">struct transport_tx *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct link_device *&#160;</td>
+          <td class="paramname"><em>dev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="fixedwing_2autopilot_8c_source.html#l00088">88</a> of file <a class="el" href="fixedwing_2autopilot_8c_source.html">autopilot.c</a>.</p>
+
+<p>References <a class="el" href="nav_8c_source.html#l00071">horizontal_mode</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00050">lateral_mode</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00043">mcu1_status</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00041">pprz_mode</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00074">v_ctl_mode</a>.</p>
+
+<p>Referenced by <a class="el" href="fixedwing_2autopilot_8c_source.html#l00175">autopilot_init()</a>, and <a class="el" href="fixedwing_2autopilot_8c_source.html#l00167">autopilot_send_mode()</a>.</p>
+
+<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="fixedwing_2autopilot_8c_afa3e0f7f34f17d74b01b42e37aed933d_icgraph.png" border="0" usemap="#fixedwing_2autopilot_8c_afa3e0f7f34f17d74b01b42e37aed933d_icgraph" alt=""/></div>
+<map name="fixedwing_2autopilot_8c_afa3e0f7f34f17d74b01b42e37aed933d_icgraph" id="fixedwing_2autopilot_8c_afa3e0f7f34f17d74b01b42e37aed933d_icgraph">
+<area shape="rect" id="node2" href="rotorcraft_2autopilot_8h.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization. " alt="" coords="179,56,283,83"/><area shape="rect" id="node7" href="fixedwing_2autopilot_8h.html#a4c54f26fedcf128f909c7cc5dc071353" title="Send mode over telemetry. " alt="" coords="151,107,311,133"/><area shape="rect" id="node3" href="rotorcraft_2main__fbw_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="Main initialization. " alt="" coords="391,5,471,32"/><area shape="rect" id="node5" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="399,56,463,83"/><area shape="rect" id="node4" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="618,5,673,32"/><area shape="rect" id="node6" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="610,56,681,83"/><area shape="rect" id="node8" href="main__ap_8c.html#add4d9babf9be4522b8a4a97e1f1e7b84" title="Function to be called when a message from FBW is available. " alt="" coords="359,107,504,133"/><area shape="rect" id="node11" href="main__ap_8h.html#a79f823520ea0823e20084686978281e6" title="Compute desired_course. " alt="" coords="370,157,493,184"/><area shape="rect" id="node9" href="main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="588,107,703,133"/><area shape="rect" id="node10" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="787,107,923,133"/><area shape="rect" id="node12" href="sim__ap_8c.html#a8c0970e9878d0e3e3e6c5d6ff0741d4f" title="sim_nav_task" alt="" coords="591,157,700,184"/><area shape="rect" id="node13" href="main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="552,208,739,235"/></map>
 </div>
 </p>
 
@@ -259,7 +825,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="fixedwing_2autopilot_8c_source.html#l00048">48</a> of file <a class="el" href="fixedwing_2autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00564">attitude_loop()</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00175">autopilot_init()</a>, <a class="el" href="generic__com_8c_source.html#l00070">generic_com_periodic()</a>, <a class="el" href="gsm_8c_source.html#l00395">gsm_send_report_continue()</a>, <a class="el" href="rotorcraft_2main_8c_source.html#l00268">main_periodic()</a>, <a class="el" href="meteo__france__DAQ_8c_source.html#l00068">mf_daq_send_state()</a>, <a class="el" href="main__ap_8c_source.html#l00659">monitor_task()</a>, <a class="el" href="navigation_8c_source.html#l00346">nav_check_wp_time()</a>, <a class="el" href="meteo__france__DAQ_8c_source.html#l00118">parse_mf_daq_msg()</a>, <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00215">send_fp()</a>, and <a class="el" href="main__ap_8c_source.html#l00391">telecommand_task()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00554">attitude_loop()</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00175">autopilot_init()</a>, <a class="el" href="generic__com_8c_source.html#l00070">generic_com_periodic()</a>, <a class="el" href="gsm_8c_source.html#l00395">gsm_send_report_continue()</a>, <a class="el" href="rotorcraft_2main_8c_source.html#l00259">main_periodic()</a>, <a class="el" href="meteo__france__DAQ_8c_source.html#l00067">mf_daq_send_state()</a>, <a class="el" href="main__ap_8c_source.html#l00647">monitor_task()</a>, <a class="el" href="navigation_8c_source.html#l00352">nav_check_wp_time()</a>, <a class="el" href="meteo__france__DAQ_8c_source.html#l00117">parse_mf_daq_msg()</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00107">send_bat()</a>, <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00223">send_fp()</a>, and <a class="el" href="main__ap_8c_source.html#l00381">telecommand_task()</a>.</p>
 
 </div>
 </div>
@@ -278,7 +844,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="fixedwing_2autopilot_8c_source.html#l00053">53</a> of file <a class="el" href="fixedwing_2autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00391">telecommand_task()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2autopilot_8c_source.html#l00107">send_bat()</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00121">send_energy()</a>, and <a class="el" href="main__ap_8c_source.html#l00381">telecommand_task()</a>.</p>
 
 </div>
 </div>
@@ -296,39 +862,39 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="fixedwing_2autopilot_8c_source.html#l00054">54</a> of file <a class="el" href="fixedwing_2autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p>Referenced by <a class="el" href="generic__com_8c_source.html#l00070">generic_com_periodic()</a>, and <a class="el" href="main__ap_8c_source.html#l00391">telecommand_task()</a>.</p>
+<p>Referenced by <a class="el" href="generic__com_8c_source.html#l00070">generic_com_periodic()</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00107">send_bat()</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00121">send_energy()</a>, and <a class="el" href="main__ap_8c_source.html#l00381">telecommand_task()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ad5b2dcab0bbd14934aac4f5e0eea8b18"></a>
+<a class="anchor" id="a581ad21989d47162693935c93e555b10"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool_t gps_lost</td>
+          <td class="memname">bool gps_lost</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="fixedwing_2autopilot_8c_source.html#l00056">56</a> of file <a class="el" href="fixedwing_2autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2autopilot_8c_source.html#l00175">autopilot_init()</a>, and <a class="el" href="main__ap_8c_source.html#l00500">navigation_task()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2autopilot_8c_source.html#l00175">autopilot_init()</a>, and <a class="el" href="main__ap_8c_source.html#l00490">navigation_task()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a3f1a87c0a714ae1fe65f5214086d8c9c"></a>
+<a class="anchor" id="a780ac2696a5b06e8edf29da215f917be"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool_t kill_throttle</td>
+          <td class="memname">bool kill_throttle</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="fixedwing_2autopilot_8c_source.html#l00042">42</a> of file <a class="el" href="fixedwing_2autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00564">attitude_loop()</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00175">autopilot_init()</a>, <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00644">autopilot_on_rc_frame()</a>, <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00587">autopilot_set_motors_on()</a>, <a class="el" href="electrical_8c_source.html#l00121">electrical_periodic()</a>, <a class="el" href="geo__mag_8c_source.html#l00051">geo_mag_periodic()</a>, <a class="el" href="mavlink_8c_source.html#l00422">mavlink_send_heartbeat()</a>, <a class="el" href="main__ap_8c_source.html#l00659">monitor_task()</a>, <a class="el" href="nav__bungee__takeoff_8c_source.html#l00161">nav_bungee_takeoff_run()</a>, <a class="el" href="nav__bungee__takeoff_8c_source.html#l00145">nav_bungee_takeoff_setup()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00554">attitude_loop()</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00175">autopilot_init()</a>, <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00758">autopilot_on_rc_frame()</a>, <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00704">autopilot_set_motors_on()</a>, <a class="el" href="electrical_8c_source.html#l00121">electrical_periodic()</a>, <a class="el" href="geo__mag_8c_source.html#l00051">geo_mag_periodic()</a>, <a class="el" href="mavlink_8c_source.html#l00435">mavlink_send_heartbeat()</a>, <a class="el" href="main__ap_8c_source.html#l00647">monitor_task()</a>, <a class="el" href="nav__bungee__takeoff_8c_source.html#l00161">nav_bungee_takeoff_run()</a>, <a class="el" href="nav__bungee__takeoff_8c_source.html#l00145">nav_bungee_takeoff_setup()</a>, <a class="el" href="nav__launcher_8c_source.html#l00128">nav_launcher_run()</a>, <a class="el" href="nav__launcher_8c_source.html#l00111">nav_launcher_setup()</a>, <a class="el" href="nav__skid__landing_8c_source.html#l00129">nav_skid_landing_run()</a>, <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00099">nps_autopilot_run_step()</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00107">send_bat()</a>, <a class="el" href="energy__ctrl_8c_source.html#l00334">v_ctl_climb_loop()</a>, and <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00318">v_ctl_landing_loop()</a>.</p>
 
 </div>
 </div>
@@ -344,16 +910,16 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="fixedwing_2autopilot_8c_source.html#l00050">50</a> of file <a class="el" href="fixedwing_2autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2autopilot_8c_source.html#l00175">autopilot_init()</a>, <a class="el" href="nav_8c_source.html#l00367">fly_to_xy()</a>, <a class="el" href="nav_8c_source.html#l00565">nav_without_gps()</a>, and <a class="el" href="main__ap_8c_source.html#l00500">navigation_task()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2autopilot_8c_source.html#l00175">autopilot_init()</a>, <a class="el" href="nav_8c_source.html#l00360">fly_to_xy()</a>, <a class="el" href="nav_8c_source.html#l00558">nav_without_gps()</a>, <a class="el" href="main__ap_8c_source.html#l00490">navigation_task()</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00088">send_mode()</a>, and <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00318">v_ctl_landing_loop()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af32f81f02a3187c12c08e11caf354abd"></a>
+<a class="anchor" id="a970273b8dbea201391088dc6f3a5a401"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool_t launch</td>
+          <td class="memname">bool launch</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -376,16 +942,16 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="fixedwing_2autopilot_8c_source.html#l00043">43</a> of file <a class="el" href="fixedwing_2autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00360">mcu1_status_update()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00346">mcu1_status_update()</a>, and <a class="el" href="fixedwing_2autopilot_8c_source.html#l00088">send_mode()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="adda0cb88d172048dd19b50ad66e7881e"></a>
+<a class="anchor" id="a4492410ecc66244c639762c7909a87ae"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool_t power_switch</td>
+          <td class="memname">bool power_switch</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -410,7 +976,21 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="fixedwing_2autopilot_8c_source.html#l00041">41</a> of file <a class="el" href="fixedwing_2autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00564">attitude_loop()</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00175">autopilot_init()</a>, <a class="el" href="cam_8c_source.html#l00130">cam_periodic()</a>, <a class="el" href="generic__com_8c_source.html#l00070">generic_com_periodic()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00549">h_ctl_pitch_loop()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00448">h_ctl_roll_loop()</a>, <a class="el" href="mavlink_8c_source.html#l00422">mavlink_send_heartbeat()</a>, <a class="el" href="main__ap_8c_source.html#l00500">navigation_task()</a>, <a class="el" href="auto1__commands_8c_source.html#l00028">periodic_auto1_commands()</a>, <a class="el" href="main__ap_8c_source.html#l00322">pprz_mode_update()</a>, <a class="el" href="takeoff__detect_8c_source.html#l00085">takeoff_detect_periodic()</a>, <a class="el" href="main__ap_8c_source.html#l00391">telecommand_task()</a>, <a class="el" href="guidance__v__n_8c_source.html#l00215">v_ctl_set_pitch()</a>, <a class="el" href="guidance__v__n_8c_source.html#l00243">v_ctl_set_throttle()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00554">attitude_loop()</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00175">autopilot_init()</a>, <a class="el" href="cam_8c_source.html#l00129">cam_periodic()</a>, <a class="el" href="generic__com_8c_source.html#l00070">generic_com_periodic()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00549">h_ctl_pitch_loop()</a>, <a class="el" href="stabilization__adaptive_8c_source.html#l00448">h_ctl_roll_loop()</a>, <a class="el" href="mavlink_8c_source.html#l00435">mavlink_send_heartbeat()</a>, <a class="el" href="main__ap_8c_source.html#l00490">navigation_task()</a>, <a class="el" href="auto1__commands_8c_source.html#l00028">periodic_auto1_commands()</a>, <a class="el" href="main__ap_8c_source.html#l00308">pprz_mode_update()</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00088">send_mode()</a>, <a class="el" href="takeoff__detect_8c_source.html#l00085">takeoff_detect_periodic()</a>, <a class="el" href="main__ap_8c_source.html#l00381">telecommand_task()</a>, <a class="el" href="guidance__v__n_8c_source.html#l00215">v_ctl_set_pitch()</a>, <a class="el" href="guidance__v__n_8c_source.html#l00243">v_ctl_set_throttle()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3349e614a926a99c63c8b9f2935a29f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> rc_settings_mode = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="fixedwing_2autopilot_8c_source.html#l00085">85</a> of file <a class="el" href="fixedwing_2autopilot_8c_source.html">autopilot.c</a>.</p>
 
 </div>
 </div>
@@ -429,7 +1009,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="fixedwing_2autopilot_8c_source.html#l00052">52</a> of file <a class="el" href="fixedwing_2autopilot_8c_source.html">autopilot.c</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00564">attitude_loop()</a>, <a class="el" href="gsm_8c_source.html#l00395">gsm_send_report_continue()</a>, <a class="el" href="main__ap_8c_source.html#l00659">monitor_task()</a>, and <a class="el" href="main__ap_8c_source.html#l00391">telecommand_task()</a>.</p>
+<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00554">attitude_loop()</a>, <a class="el" href="gsm_8c_source.html#l00395">gsm_send_report_continue()</a>, <a class="el" href="main__ap_8c_source.html#l00647">monitor_task()</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00107">send_bat()</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00121">send_energy()</a>, and <a class="el" href="main__ap_8c_source.html#l00381">telecommand_task()</a>.</p>
 
 </div>
 </div>
@@ -439,7 +1019,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_cb1b347b64b61ba7f369ccfe68448b26.html">fixedwing</a></li><li class="navelem"><a class="el" href="fixedwing_2autopilot_8c.html">autopilot.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:40 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:45 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

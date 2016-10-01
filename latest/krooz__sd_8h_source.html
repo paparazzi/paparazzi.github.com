@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -483,17 +483,26 @@ $(document).ready(function(){initNavTree('krooz__sd_8h_source.html','');});
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="comment"> * Spektrum</span></div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="comment">/* The line that is pulled low at power up to initiate the bind process */</span></div>
-<div class="line"><a name="l00375"></a><span class="lineno"><a class="line" href="krooz__sd_8h.html#a787b5d0dff7658e5e923331317635545">  375</a></span>&#160;<span class="preprocessor">#define SPEKTRUM_BIND_PIN GPIO9</span></div>
-<div class="line"><a name="l00376"></a><span class="lineno"><a class="line" href="krooz__sd_8h.html#a61f9ceb054741c177baac8a8b0282628">  376</a></span>&#160;<span class="preprocessor">#define SPEKTRUM_BIND_PIN_PORT GPIOA</span></div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CONFIG_KROOZ_SD_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="comment">/* CSW pin on CAM connector */</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno"><a class="line" href="krooz__sd_8h.html#a787b5d0dff7658e5e923331317635545">  376</a></span>&#160;<span class="preprocessor">#define SPEKTRUM_BIND_PIN GPIO0</span></div>
+<div class="line"><a name="l00377"></a><span class="lineno"><a class="line" href="krooz__sd_8h.html#a61f9ceb054741c177baac8a8b0282628">  377</a></span>&#160;<span class="preprocessor">#define SPEKTRUM_BIND_PIN_PORT GPIOB</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;</div>
+<div class="line"><a name="l00379"></a><span class="lineno"><a class="line" href="krooz__sd_8h.html#a7bed267bab62113c6593e804a4d0f2f0">  379</a></span>&#160;<span class="preprocessor">#define SPEKTRUM_UART1_RCC RCC_USART1</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno"><a class="line" href="krooz__sd_8h.html#adea36357b1c0c2ae4214bd55056e9f9f">  380</a></span>&#160;<span class="preprocessor">#define SPEKTRUM_UART1_BANK GPIOA</span></div>
+<div class="line"><a name="l00381"></a><span class="lineno"><a class="line" href="krooz__sd_8h.html#a60d42d5ec3c48cd2aa859a23b31ddd3b">  381</a></span>&#160;<span class="preprocessor">#define SPEKTRUM_UART1_PIN GPIO10</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno"><a class="line" href="krooz__sd_8h.html#a5a46615f5192bb2619f0515ac0a230e9">  382</a></span>&#160;<span class="preprocessor">#define SPEKTRUM_UART1_AF GPIO_AF7</span></div>
+<div class="line"><a name="l00383"></a><span class="lineno"><a class="line" href="krooz__sd_8h.html#af107a457e0d8e5e7c9910ef5e6f45317">  383</a></span>&#160;<span class="preprocessor">#define SPEKTRUM_UART1_IRQ NVIC_USART1_IRQ</span></div>
+<div class="line"><a name="l00384"></a><span class="lineno"><a class="line" href="krooz__sd_8h.html#a51f04ab18534cef6be2f18858ccb5164">  384</a></span>&#160;<span class="preprocessor">#define SPEKTRUM_UART1_ISR usart1_isr</span></div>
+<div class="line"><a name="l00385"></a><span class="lineno"><a class="line" href="krooz__sd_8h.html#acdfc946654870dc7013b6f8b9d9e5a24">  385</a></span>&#160;<span class="preprocessor">#define SPEKTRUM_UART1_DEV USART1</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CONFIG_KROOZ_SD_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="krooz__sd_8h.html">krooz_sd.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:16 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:16 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

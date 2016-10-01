@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -195,13 +195,13 @@ config</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a9dd3529d022c6cd28ba4737d69fc268c"></a>union <a class="el" href="adxl345__spi_8h.html#unionAdxl345__Spi_8data">Adxl345_Spi</a></td>
+<a class="anchor" id="a19b6734bfaf782781cbe69b6ac9d23a0"></a>union <a class="el" href="adxl345__spi_8h.html#unionAdxl345__Spi_8data">Adxl345_Spi</a></td>
 <td class="fieldname">
 data</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="adf91e8505e0cdec16c1a024f3f32d3cf"></a>volatile bool_t</td>
+<a class="anchor" id="aa75edce03dc0f14c3712d23a534173b2"></a>volatile bool</td>
 <td class="fieldname">
 data_available</td>
 <td class="fielddoc">
@@ -213,7 +213,7 @@ init_status</td>
 <td class="fielddoc">
 init status </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="af3a719a6ced0f58222691a352b2535b8"></a>bool_t</td>
+<a class="anchor" id="a859fc044d9d5ade66994d9b8db4d9d05"></a>bool</td>
 <td class="fieldname">
 initialized</td>
 <td class="fielddoc">
@@ -292,7 +292,7 @@ data vector in accel coordinate system </td></tr>
 
 <p>Definition at line <a class="el" href="adxl345__spi_8c_source.html#l00131">131</a> of file <a class="el" href="adxl345__spi_8c_source.html">adxl345_spi.c</a>.</p>
 
-<p>References <a class="el" href="adxl345__spi_8c_source.html#l00079">adxl345_spi_send_config()</a>, <a class="el" href="adxl345_8h_source.html#l00037">ADXL_CONF_UNINIT</a>, <a class="el" href="adxl345__spi_8h.html#a9dd3529d022c6cd28ba4737d69fc268c">Adxl345_Spi::data</a>, <a class="el" href="adxl345__spi_8h_source.html#l00046">Adxl345_Spi::data_available</a>, <a class="el" href="adxl345__spi_8h_source.html#l00044">Adxl345_Spi::init_status</a>, <a class="el" href="adxl345__spi_8h_source.html#l00045">Adxl345_Spi::initialized</a>, <a class="el" href="adxl345__spi_8c_source.html#l00129">Int16FromBuf</a>, <a class="el" href="adxl345__spi_8h_source.html#l00043">Adxl345_Spi::rx_buf</a>, <a class="el" href="adxl345__spi_8h_source.html#l00041">Adxl345_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00094">SPITransFailed</a>, <a class="el" href="spi_8h_source.html#l00093">SPITransSuccess</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p>References <a class="el" href="adxl345__spi_8c_source.html#l00079">adxl345_spi_send_config()</a>, <a class="el" href="adxl345_8h_source.html#l00037">ADXL_CONF_UNINIT</a>, <a class="el" href="adxl345__spi_8h.html#a19b6734bfaf782781cbe69b6ac9d23a0">Adxl345_Spi::data</a>, <a class="el" href="adxl345__spi_8h_source.html#l00046">Adxl345_Spi::data_available</a>, <a class="el" href="adxl345__spi_8h_source.html#l00044">Adxl345_Spi::init_status</a>, <a class="el" href="adxl345__spi_8h_source.html#l00045">Adxl345_Spi::initialized</a>, <a class="el" href="adxl345__spi_8c_source.html#l00129">Int16FromBuf</a>, <a class="el" href="adxl345__spi_8h_source.html#l00043">Adxl345_Spi::rx_buf</a>, <a class="el" href="adxl345__spi_8h_source.html#l00041">Adxl345_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00094">SPITransFailed</a>, <a class="el" href="spi_8h_source.html#l00093">SPITransSuccess</a>, and <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>.</p>
 
 <p>Referenced by <a class="el" href="imu__aspirin_8c_source.html#l00118">imu_aspirin_event()</a>.</p>
 
@@ -303,7 +303,7 @@ data vector in accel coordinate system </td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="adxl345__spi_8h_ad173a40977f6e9ba53b9e5a90edd82fd_cgraph.png" border="0" usemap="#adxl345__spi_8h_ad173a40977f6e9ba53b9e5a90edd82fd_cgraph" alt=""/></div>
 <map name="adxl345__spi_8h_ad173a40977f6e9ba53b9e5a90edd82fd_cgraph" id="adxl345__spi_8h_ad173a40977f6e9ba53b9e5a90edd82fd_cgraph">
-<area shape="rect" id="node2" href="adxl345__spi_8c.html#a058719d4e8c1943ada72dd98d56713d1" title="adxl345_spi_send_config" alt="" coords="193,31,373,57"/><area shape="rect" id="node3" href="adxl345_8h.html#ac6863633d46c7db4982eb0f78fec8a3f" title="adxl345_data_format" alt="" coords="433,5,592,32"/><area shape="rect" id="node4" href="adxl345__spi_8c.html#aae763e182a428fc73d70dcccda195417" title="adxl345_spi_write_to_reg" alt="" coords="421,56,604,83"/><area shape="rect" id="node5" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="652,56,743,83"/></map>
+<area shape="rect" id="node2" href="adxl345__spi_8c.html#a058719d4e8c1943ada72dd98d56713d1" title="adxl345_spi_send_config" alt="" coords="193,31,373,57"/><area shape="rect" id="node3" href="adxl345_8h.html#ac6863633d46c7db4982eb0f78fec8a3f" title="adxl345_data_format" alt="" coords="433,5,592,32"/><area shape="rect" id="node4" href="adxl345__spi_8c.html#aae763e182a428fc73d70dcccda195417" title="adxl345_spi_write_to_reg" alt="" coords="421,56,604,83"/><area shape="rect" id="node5" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="652,56,743,83"/></map>
 </div>
 </p>
 
@@ -352,9 +352,9 @@ data vector in accel coordinate system </td></tr>
 
 <p>Definition at line <a class="el" href="adxl345__spi_8c_source.html#l00035">35</a> of file <a class="el" href="adxl345__spi_8c_source.html">adxl345_spi.c</a>.</p>
 
-<p>References <a class="el" href="adxl345_8h_source.html#l00056">adxl345_set_default_config()</a>, <a class="el" href="adxl345_8h_source.html#l00037">ADXL_CONF_UNINIT</a>, <a class="el" href="spi_8h_source.html#l00155">spi_transaction::after_cb</a>, <a class="el" href="spi_8h_source.html#l00154">spi_transaction::before_cb</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::bitorder</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::cdiv</a>, <a class="el" href="adxl345__spi_8h_source.html#l00051">Adxl345_Spi::config</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::cpha</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::cpol</a>, <a class="el" href="adxl345__spi_8h_source.html#l00046">Adxl345_Spi::data_available</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::dss</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="adxl345__spi_8h_source.html#l00044">Adxl345_Spi::init_status</a>, <a class="el" href="adxl345__spi_8h_source.html#l00045">Adxl345_Spi::initialized</a>, <a class="el" href="spi_8h_source.html#l00143">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="spi_8h_source.html#l00144">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="adxl345__spi_8h_source.html#l00043">Adxl345_Spi::rx_buf</a>, <a class="el" href="spi_8h_source.html#l00148">spi_transaction::select</a>, <a class="el" href="spi_8h_source.html#l00147">spi_transaction::slave_idx</a>, <a class="el" href="adxl345__spi_8h_source.html#l00040">Adxl345_Spi::spi_p</a>, <a class="el" href="adxl345__spi_8h_source.html#l00041">Adxl345_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00069">SPICphaEdge2</a>, <a class="el" href="spi_8h_source.html#l00078">SPICpolIdleHigh</a>, <a class="el" href="spi_8h_source.html#l00119">SPIDiv64</a>, <a class="el" href="spi_8h_source.html#l00084">SPIDss8bit</a>, <a class="el" href="spi_8h_source.html#l00106">SPIMSBFirst</a>, <a class="el" href="spi_8h_source.html#l00057">SPISelectUnselect</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, and <a class="el" href="adxl345__spi_8h_source.html#l00042">Adxl345_Spi::tx_buf</a>.</p>
+<p>References <a class="el" href="adxl345_8h_source.html#l00056">adxl345_set_default_config()</a>, <a class="el" href="adxl345_8h_source.html#l00037">ADXL_CONF_UNINIT</a>, <a class="el" href="spi_8h_source.html#l00155">spi_transaction::after_cb</a>, <a class="el" href="spi_8h_source.html#l00154">spi_transaction::before_cb</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::bitorder</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::cdiv</a>, <a class="el" href="adxl345__spi_8h_source.html#l00051">Adxl345_Spi::config</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::cpha</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::cpol</a>, <a class="el" href="adxl345__spi_8h_source.html#l00046">Adxl345_Spi::data_available</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::dss</a>, <a class="el" href="adxl345__spi_8h_source.html#l00044">Adxl345_Spi::init_status</a>, <a class="el" href="adxl345__spi_8h_source.html#l00045">Adxl345_Spi::initialized</a>, <a class="el" href="spi_8h_source.html#l00143">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="spi_8h_source.html#l00144">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="adxl345__spi_8h_source.html#l00043">Adxl345_Spi::rx_buf</a>, <a class="el" href="spi_8h_source.html#l00148">spi_transaction::select</a>, <a class="el" href="spi_8h_source.html#l00147">spi_transaction::slave_idx</a>, <a class="el" href="adxl345__spi_8h_source.html#l00040">Adxl345_Spi::spi_p</a>, <a class="el" href="adxl345__spi_8h_source.html#l00041">Adxl345_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00069">SPICphaEdge2</a>, <a class="el" href="spi_8h_source.html#l00078">SPICpolIdleHigh</a>, <a class="el" href="spi_8h_source.html#l00119">SPIDiv64</a>, <a class="el" href="spi_8h_source.html#l00084">SPIDss8bit</a>, <a class="el" href="spi_8h_source.html#l00106">SPIMSBFirst</a>, <a class="el" href="spi_8h_source.html#l00057">SPISelectUnselect</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, and <a class="el" href="adxl345__spi_8h_source.html#l00042">Adxl345_Spi::tx_buf</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__aspirin_8c_source.html#l00068">imu_impl_init()</a>.</p>
+<p>Referenced by <a class="el" href="imu__aspirin_8c_source.html#l00068">imu_aspirin_init()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -374,7 +374,7 @@ data vector in accel coordinate system </td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="adxl345__spi_8h_aac3961b9b55c9f9d8e2d0234ab3237aa_icgraph.png" border="0" usemap="#adxl345__spi_8h_aac3961b9b55c9f9d8e2d0234ab3237aa_icgraph" alt=""/></div>
 <map name="adxl345__spi_8h_aac3961b9b55c9f9d8e2d0234ab3237aa_icgraph" id="adxl345__spi_8h_aac3961b9b55c9f9d8e2d0234ab3237aa_icgraph">
-<area shape="rect" id="node2" href="imu__aspirin_8c.html#ad32faae58e391642ec8048cb11011998" title="must be defined by underlying hardware " alt="" coords="176,5,283,32"/></map>
+<area shape="rect" id="node2" href="imu__aspirin_8h.html#a7cb16e620f9975439bb91f7d4819dc72" title="imu_aspirin_init" alt="" coords="176,5,297,32"/></map>
 </div>
 </p>
 
@@ -408,7 +408,7 @@ data vector in accel coordinate system </td></tr>
 
 <p>References <a class="el" href="adxl345__spi_8c_source.html#l00118">adxl345_spi_read()</a>, <a class="el" href="adxl345__spi_8c_source.html#l00108">adxl345_spi_start_configure()</a>, and <a class="el" href="adxl345__spi_8h_source.html#l00045">Adxl345_Spi::initialized</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__aspirin_8c_source.html#l00107">imu_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="imu__aspirin_8c_source.html#l00107">imu_aspirin_periodic()</a>.</p>
 
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -417,7 +417,7 @@ data vector in accel coordinate system </td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="adxl345__spi_8h_aa96b23656a71720f2d9ad4251e655775_cgraph.png" border="0" usemap="#adxl345__spi_8h_aa96b23656a71720f2d9ad4251e655775_cgraph" alt=""/></div>
 <map name="adxl345__spi_8h_aa96b23656a71720f2d9ad4251e655775_cgraph" id="adxl345__spi_8h_aa96b23656a71720f2d9ad4251e655775_cgraph">
-<area shape="rect" id="node2" href="adxl345__spi_8h.html#add9575711d304680e75e41b11bb9e511" title="adxl345_spi_read" alt="" coords="479,5,613,32"/><area shape="rect" id="node4" href="adxl345__spi_8h.html#a453c33c44618c770b2f3adc12bed69d7" title="adxl345_spi_start_configure" alt="" coords="208,56,408,83"/><area shape="rect" id="node3" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="915,56,1005,83"/><area shape="rect" id="node5" href="adxl345__spi_8c.html#a058719d4e8c1943ada72dd98d56713d1" title="adxl345_spi_send_config" alt="" coords="456,56,636,83"/><area shape="rect" id="node6" href="adxl345_8h.html#ac6863633d46c7db4982eb0f78fec8a3f" title="adxl345_data_format" alt="" coords="696,56,855,83"/><area shape="rect" id="node7" href="adxl345__spi_8c.html#aae763e182a428fc73d70dcccda195417" title="adxl345_spi_write_to_reg" alt="" coords="684,107,867,133"/></map>
+<area shape="rect" id="node2" href="adxl345__spi_8h.html#add9575711d304680e75e41b11bb9e511" title="adxl345_spi_read" alt="" coords="479,5,613,32"/><area shape="rect" id="node4" href="adxl345__spi_8h.html#a453c33c44618c770b2f3adc12bed69d7" title="adxl345_spi_start_configure" alt="" coords="208,56,408,83"/><area shape="rect" id="node3" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="915,56,1005,83"/><area shape="rect" id="node5" href="adxl345__spi_8c.html#a058719d4e8c1943ada72dd98d56713d1" title="adxl345_spi_send_config" alt="" coords="456,56,636,83"/><area shape="rect" id="node6" href="adxl345_8h.html#ac6863633d46c7db4982eb0f78fec8a3f" title="adxl345_data_format" alt="" coords="696,56,855,83"/><area shape="rect" id="node7" href="adxl345__spi_8c.html#aae763e182a428fc73d70dcccda195417" title="adxl345_spi_write_to_reg" alt="" coords="684,107,867,133"/></map>
 </div>
 </p>
 
@@ -428,7 +428,7 @@ data vector in accel coordinate system </td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="adxl345__spi_8h_aa96b23656a71720f2d9ad4251e655775_icgraph.png" border="0" usemap="#adxl345__spi_8h_aa96b23656a71720f2d9ad4251e655775_icgraph" alt=""/></div>
 <map name="adxl345__spi_8h_aa96b23656a71720f2d9ad4251e655775_icgraph" id="adxl345__spi_8h_aa96b23656a71720f2d9ad4251e655775_icgraph">
-<area shape="rect" id="node2" href="imu__aspirin_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="optional. " alt="" coords="208,5,311,32"/></map>
+<area shape="rect" id="node2" href="imu__aspirin_8h.html#a899ff5dcdf1a63ce7cef76a773644414" title="imu_aspirin_periodic" alt="" coords="208,5,360,32"/></map>
 </div>
 </p>
 
@@ -450,7 +450,7 @@ data vector in accel coordinate system </td></tr>
 
 <p>Definition at line <a class="el" href="adxl345__spi_8c_source.html#l00118">118</a> of file <a class="el" href="adxl345__spi_8c_source.html">adxl345_spi.c</a>.</p>
 
-<p>References <a class="el" href="adxl345__regs_8h_source.html#l00040">ADXL345_REG_DATA_X0</a>, <a class="el" href="adxl345__spi_8h_source.html#l00045">Adxl345_Spi::initialized</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="adxl345__spi_8h_source.html#l00040">Adxl345_Spi::spi_p</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00048">spi_submit()</a>, <a class="el" href="adxl345__spi_8h_source.html#l00041">Adxl345_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, and <a class="el" href="adxl345__spi_8h_source.html#l00042">Adxl345_Spi::tx_buf</a>.</p>
+<p>References <a class="el" href="adxl345__regs_8h_source.html#l00040">ADXL345_REG_DATA_X0</a>, <a class="el" href="adxl345__spi_8h_source.html#l00045">Adxl345_Spi::initialized</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="adxl345__spi_8h_source.html#l00040">Adxl345_Spi::spi_p</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00364">spi_submit()</a>, <a class="el" href="adxl345__spi_8h_source.html#l00041">Adxl345_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, and <a class="el" href="adxl345__spi_8h_source.html#l00042">Adxl345_Spi::tx_buf</a>.</p>
 
 <p>Referenced by <a class="el" href="adxl345__spi_8h_source.html#l00061">adxl345_spi_periodic()</a>.</p>
 
@@ -461,7 +461,7 @@ data vector in accel coordinate system </td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="adxl345__spi_8h_add9575711d304680e75e41b11bb9e511_cgraph.png" border="0" usemap="#adxl345__spi_8h_add9575711d304680e75e41b11bb9e511_cgraph" alt=""/></div>
 <map name="adxl345__spi_8h_add9575711d304680e75e41b11bb9e511_cgraph" id="adxl345__spi_8h_add9575711d304680e75e41b11bb9e511_cgraph">
-<area shape="rect" id="node2" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="187,5,277,32"/></map>
+<area shape="rect" id="node2" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="187,5,277,32"/></map>
 </div>
 </p>
 
@@ -472,7 +472,7 @@ data vector in accel coordinate system </td></tr>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="adxl345__spi_8h_add9575711d304680e75e41b11bb9e511_icgraph.png" border="0" usemap="#adxl345__spi_8h_add9575711d304680e75e41b11bb9e511_icgraph" alt=""/></div>
 <map name="adxl345__spi_8h_add9575711d304680e75e41b11bb9e511_icgraph" id="adxl345__spi_8h_add9575711d304680e75e41b11bb9e511_icgraph">
-<area shape="rect" id="node2" href="adxl345__spi_8h.html#aa96b23656a71720f2d9ad4251e655775" title="convenience function: read or start configuration if not already initialized " alt="" coords="187,5,341,32"/><area shape="rect" id="node3" href="imu__aspirin_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="optional. " alt="" coords="389,5,492,32"/></map>
+<area shape="rect" id="node2" href="adxl345__spi_8h.html#aa96b23656a71720f2d9ad4251e655775" title="convenience function: read or start configuration if not already initialized " alt="" coords="187,5,341,32"/><area shape="rect" id="node3" href="imu__aspirin_8h.html#a899ff5dcdf1a63ce7cef76a773644414" title="imu_aspirin_periodic" alt="" coords="389,5,541,32"/></map>
 </div>
 </p>
 
@@ -505,7 +505,7 @@ data vector in accel coordinate system </td></tr>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="adxl345__spi_8h_a453c33c44618c770b2f3adc12bed69d7_cgraph.png" border="0" usemap="#adxl345__spi_8h_a453c33c44618c770b2f3adc12bed69d7_cgraph" alt=""/></div>
 <map name="adxl345__spi_8h_a453c33c44618c770b2f3adc12bed69d7_cgraph" id="adxl345__spi_8h_a453c33c44618c770b2f3adc12bed69d7_cgraph">
-<area shape="rect" id="node2" href="adxl345__spi_8c.html#a058719d4e8c1943ada72dd98d56713d1" title="adxl345_spi_send_config" alt="" coords="253,31,433,57"/><area shape="rect" id="node3" href="adxl345_8h.html#ac6863633d46c7db4982eb0f78fec8a3f" title="adxl345_data_format" alt="" coords="493,5,652,32"/><area shape="rect" id="node4" href="adxl345__spi_8c.html#aae763e182a428fc73d70dcccda195417" title="adxl345_spi_write_to_reg" alt="" coords="481,56,664,83"/><area shape="rect" id="node5" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="712,56,803,83"/></map>
+<area shape="rect" id="node2" href="adxl345__spi_8c.html#a058719d4e8c1943ada72dd98d56713d1" title="adxl345_spi_send_config" alt="" coords="253,31,433,57"/><area shape="rect" id="node3" href="adxl345_8h.html#ac6863633d46c7db4982eb0f78fec8a3f" title="adxl345_data_format" alt="" coords="493,5,652,32"/><area shape="rect" id="node4" href="adxl345__spi_8c.html#aae763e182a428fc73d70dcccda195417" title="adxl345_spi_write_to_reg" alt="" coords="481,56,664,83"/><area shape="rect" id="node5" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="712,56,803,83"/></map>
 </div>
 </p>
 
@@ -516,7 +516,7 @@ data vector in accel coordinate system </td></tr>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="adxl345__spi_8h_a453c33c44618c770b2f3adc12bed69d7_icgraph.png" border="0" usemap="#adxl345__spi_8h_a453c33c44618c770b2f3adc12bed69d7_icgraph" alt=""/></div>
 <map name="adxl345__spi_8h_a453c33c44618c770b2f3adc12bed69d7_icgraph" id="adxl345__spi_8h_a453c33c44618c770b2f3adc12bed69d7_icgraph">
-<area shape="rect" id="node2" href="adxl345__spi_8h.html#aa96b23656a71720f2d9ad4251e655775" title="convenience function: read or start configuration if not already initialized " alt="" coords="253,5,408,32"/><area shape="rect" id="node3" href="imu__aspirin_8c.html#a6623d4c90e7b1bfb73abc0da1195f29b" title="optional. " alt="" coords="456,5,559,32"/></map>
+<area shape="rect" id="node2" href="adxl345__spi_8h.html#aa96b23656a71720f2d9ad4251e655775" title="convenience function: read or start configuration if not already initialized " alt="" coords="253,5,408,32"/><area shape="rect" id="node3" href="imu__aspirin_8h.html#a899ff5dcdf1a63ce7cef76a773644414" title="imu_aspirin_periodic" alt="" coords="456,5,608,32"/></map>
 </div>
 </p>
 
@@ -528,7 +528,7 @@ data vector in accel coordinate system </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="adxl345__spi_8h.html">adxl345_spi.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:58 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:06 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

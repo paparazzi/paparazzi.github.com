@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -167,6 +167,14 @@ $(document).ready(function(){initNavTree('globals_k.html','');});
 : <a class="el" href="obstacle__avoidance_8c.html#a928c2a24601565ec92f94b9be4aaef26">obstacle_avoidance.c</a>
 , <a class="el" href="obstacle__avoidance_8h.html#a928c2a24601565ec92f94b9be4aaef26">obstacle_avoidance.h</a>
 </li>
+<li>kalman_filter_linear_2D_float()
+: <a class="el" href="kalman__filter__vision_8c.html#aacaa70cd9a536556bb066ca816bd4a57">kalman_filter_vision.c</a>
+, <a class="el" href="kalman__filter__vision_8h.html#aacaa70cd9a536556bb066ca816bd4a57">kalman_filter_vision.h</a>
+</li>
+<li>kalman_filter_opticflow_velocity()
+: <a class="el" href="opticflow__calculator_8c.html#a3aa24b4cfe414ff4da09a866cadec80f">opticflow_calculator.c</a>
+, <a class="el" href="opticflow__calculator_8h.html#a0b04e288db8c4c22a0354161df3e7873">opticflow_calculator.h</a>
+</li>
 <li>kalmanCorrectionAltimetre()
 : <a class="el" href="alt__filter_8c.html#a446427f1d5f99795159127ce06e57fea">alt_filter.c</a>
 </li>
@@ -204,17 +212,23 @@ $(document).ready(function(){initNavTree('globals_k.html','');});
 <li>Ki_YAW
 : <a class="el" href="ahrs__float__dcm_8h.html#aea9dd7972c8f6c2381b1541b964b3893">ahrs_float_dcm.h</a>
 </li>
+<li>kill_gracefull()
+: <a class="el" href="bebop_2board_8c.html#a161f380e3fa5363245deb13194d4780d">board.c</a>
+</li>
 <li>KILL_MODE_DISTANCE
 : <a class="el" href="main__ap_8c.html#a1f8fa85842c4d2ac6c69cf4d960ee0d6">main_ap.c</a>
 </li>
 <li>kill_switch_is_on()
-: <a class="el" href="autopilot__rc__helpers_8h.html#a4e9918f217a6eaf344d248a9d34e674d">autopilot_rc_helpers.h</a>
+: <a class="el" href="autopilot__rc__helpers_8h.html#ac0cad24ec4c286be4262417eb5823094">autopilot_rc_helpers.h</a>
 </li>
 <li>kill_throttle
-: <a class="el" href="fixedwing_2autopilot_8c.html#a3f1a87c0a714ae1fe65f5214086d8c9c">autopilot.c</a>
-, <a class="el" href="fixedwing_2autopilot_8h.html#a3f1a87c0a714ae1fe65f5214086d8c9c">autopilot.h</a>
-, <a class="el" href="rotorcraft_2autopilot_8c.html#a3f1a87c0a714ae1fe65f5214086d8c9c">autopilot.c</a>
-, <a class="el" href="rotorcraft_2autopilot_8h.html#a3f1a87c0a714ae1fe65f5214086d8c9c">autopilot.h</a>
+: <a class="el" href="rotorcraft_2autopilot_8h.html#a780ac2696a5b06e8edf29da215f917be">autopilot.h</a>
+, <a class="el" href="fixedwing_2autopilot_8c.html#a780ac2696a5b06e8edf29da215f917be">autopilot.c</a>
+, <a class="el" href="fixedwing_2autopilot_8h.html#a780ac2696a5b06e8edf29da215f917be">autopilot.h</a>
+, <a class="el" href="rotorcraft_2autopilot_8c.html#a780ac2696a5b06e8edf29da215f917be">autopilot.c</a>
+</li>
+<li>KillGracefully()
+: <a class="el" href="ardrone_2board_8c.html#a646b7f375c14d15f1aa843bbe058634f">board.c</a>
 </li>
 <li>KJpegCh1ScanDataLen
 : <a class="el" href="rtp_8c.html#acb5fe6f05cdd47735754c5d7444d241d">rtp.c</a>
@@ -226,8 +240,8 @@ $(document).ready(function(){initNavTree('globals_k.html','');});
 : <a class="el" href="rtp_8c.html#a098326507412cf884a2f7fc1d07ca6e6">rtp.c</a>
 </li>
 <li>Ko
-: <a class="el" href="obstacle__avoidance_8h.html#a9a60fa9ea63a77e6c03d32a192ed035e">obstacle_avoidance.h</a>
-, <a class="el" href="obstacle__avoidance_8c.html#a9a60fa9ea63a77e6c03d32a192ed035e">obstacle_avoidance.c</a>
+: <a class="el" href="obstacle__avoidance_8c.html#a9a60fa9ea63a77e6c03d32a192ed035e">obstacle_avoidance.c</a>
+, <a class="el" href="obstacle__avoidance_8h.html#a9a60fa9ea63a77e6c03d32a192ed035e">obstacle_avoidance.h</a>
 </li>
 <li>Kp_ROLLPITCH
 : <a class="el" href="ahrs__float__dcm_8h.html#a3ab9b5d54678d8d03770f19607886ed6">ahrs_float_dcm.h</a>
@@ -236,16 +250,16 @@ $(document).ready(function(){initNavTree('globals_k.html','');});
 : <a class="el" href="ahrs__float__dcm_8h.html#a3c59c4be08d2d06edcdc0a02369da6b6">ahrs_float_dcm.h</a>
 </li>
 <li>KROOZ_ACCEL_RANGE
-: <a class="el" href="imu__krooz_8c.html#ac584ca3c17a3857a85a0df6129978174">imu_krooz.c</a>
-, <a class="el" href="imu__krooz__memsic_8c.html#ac584ca3c17a3857a85a0df6129978174">imu_krooz_memsic.c</a>
+: <a class="el" href="imu__krooz__memsic_8c.html#ac584ca3c17a3857a85a0df6129978174">imu_krooz_memsic.c</a>
+, <a class="el" href="imu__krooz_8c.html#ac584ca3c17a3857a85a0df6129978174">imu_krooz.c</a>
 </li>
 <li>KROOZ_GYRO_RANGE
-: <a class="el" href="imu__krooz__memsic_8c.html#a5e948c7205e36cd1be3651cefe4415fc">imu_krooz_memsic.c</a>
-, <a class="el" href="imu__krooz_8c.html#a5e948c7205e36cd1be3651cefe4415fc">imu_krooz.c</a>
+: <a class="el" href="imu__krooz_8c.html#a5e948c7205e36cd1be3651cefe4415fc">imu_krooz.c</a>
+, <a class="el" href="imu__krooz__memsic_8c.html#a5e948c7205e36cd1be3651cefe4415fc">imu_krooz_memsic.c</a>
 </li>
 <li>KROOZ_LOWPASS_FILTER
-: <a class="el" href="imu__krooz__memsic_8c.html#a1d0791520b36b0439d8f9338ec9b134f">imu_krooz_memsic.c</a>
-, <a class="el" href="imu__krooz_8c.html#a1d0791520b36b0439d8f9338ec9b134f">imu_krooz.c</a>
+: <a class="el" href="imu__krooz_8c.html#a1d0791520b36b0439d8f9338ec9b134f">imu_krooz.c</a>
+, <a class="el" href="imu__krooz__memsic_8c.html#a1d0791520b36b0439d8f9338ec9b134f">imu_krooz_memsic.c</a>
 </li>
 <li>KROOZ_SMPLRT_DIV
 : <a class="el" href="imu__krooz__memsic_8c.html#a03318bf67ecbc7081cd19cc8d6d81adf">imu_krooz_memsic.c</a>
@@ -255,8 +269,8 @@ $(document).ready(function(){initNavTree('globals_k.html','');});
 : <a class="el" href="rtp_8c.html#ab212f5526e3064dfb83c572feab4758c">rtp.c</a>
 </li>
 <li>kv
-: <a class="el" href="obstacle__avoidance_8c.html#aa17ba05b116733c09182e54a1457f8f9">obstacle_avoidance.c</a>
-, <a class="el" href="obstacle__avoidance_8h.html#aa17ba05b116733c09182e54a1457f8f9">obstacle_avoidance.h</a>
+: <a class="el" href="obstacle__avoidance_8h.html#aa17ba05b116733c09182e54a1457f8f9">obstacle_avoidance.h</a>
+, <a class="el" href="obstacle__avoidance_8c.html#aa17ba05b116733c09182e54a1457f8f9">obstacle_avoidance.c</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -264,7 +278,7 @@ $(document).ready(function(){initNavTree('globals_k.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:30 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:44 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

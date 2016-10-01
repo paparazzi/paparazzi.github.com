@@ -8,6 +8,7 @@ var radio__control_8h =
       [ "time_since_last_frame", "radio__control_8h.html#a009f85397fd864a703ce54da8f02daa8", null ],
       [ "values", "radio__control_8h.html#a7a57c95d2958828cb2d13bd360622f6f", null ]
     ] ],
+    [ "RadioControlValues", "radio__control_8h.html#a764f3b5472564631b314515d69179deb", null ],
     [ "RC_AVG_PERIOD", "radio__control_8h.html#adb1604ef051d981df6de90b770a9ef19", null ],
     [ "RC_LOST", "radio__control_8h.html#ae260ed6c98624fcd1d70c232038204d2", null ],
     [ "RC_LOST_TIME", "radio__control_8h.html#a404df0edd984fbb9364e5b09e46fff5d", null ],

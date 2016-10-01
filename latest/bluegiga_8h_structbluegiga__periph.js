@@ -10,6 +10,6 @@ var bluegiga_8h_structbluegiga__periph =
     [ "tx_buf", "bluegiga_8h.html#af2e69417bf5877ef579d0f6315b7c5d7", null ],
     [ "tx_extract_idx", "bluegiga_8h.html#a88a1597dae0d24795c497312941cb3a5", null ],
     [ "tx_insert_idx", "bluegiga_8h.html#a003a8d17972c0173790af3eb8b8b6581", null ],
-    [ "work_rx", "bluegiga_8h.html#adbfd28ae09e7ecbe141ae68d1775334b", null ],
-    [ "work_tx", "bluegiga_8h.html#a66341d1e2cacadc841523bdc3341ba2b", null ]
+    [ "work_rx", "bluegiga_8h.html#aef0aabd946cec6d8a605652a2eb01aa2", null ],
+    [ "work_tx", "bluegiga_8h.html#a6c8184d1ea7b7eaae2435ac0c7bebde9", null ]
 ];

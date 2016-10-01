@@ -2,8 +2,9 @@ var ins__alt__float_8c =
 [
     [ "GPS_R", "ins__alt__float_8c.html#a64f433aa84bea43c5ef47b59b1cab4d3", null ],
     [ "GPS_SIGMA2", "ins__alt__float_8c.html#a17c1061a286341e39e171901d384e445", null ],
+    [ "INS_ALT_BARO_ID", "ins__alt__float_8c.html#abef0912d3cb175b8c58b1969dd5c23f4", null ],
+    [ "INS_ALT_GPS_ID", "ins__alt__float_8c.html#a47ebdcfe3b9fad51c3489e50b08f425f", null ],
     [ "INS_ALT_IMU_ID", "ins__alt__float_8c.html#a2d91b612659f72c749ff1bbf3e937a60", null ],
-    [ "INS_BARO_ID", "ins__alt__float_8c.html#af5064603923a47bce74a607ae1f7f8a9", null ],
     [ "USE_INS_NAV_INIT", "ins__alt__float_8c.html#a54f7a3292fefa355dd014ce5bc2df65a", null ],
     [ "accel_cb", "ins__alt__float_8c.html#aacd6b1869f263f90a6f1fbe777a87793", null ],
     [ "alt_kalman", "ins__alt__float_8c.html#a8a4893f91c1e9a09038c5d69541a6d75", null ],
@@ -15,7 +16,6 @@ var ins__alt__float_8c =
     [ "ins_alt_float_init", "ins__alt__float_8c.html#addae4691b18806ce2db90c10ef8d7274", null ],
     [ "ins_alt_float_update_baro", "ins__alt__float_8c.html#afb6a5cd07b6574dfb93f023aecfcec5d", null ],
     [ "ins_alt_float_update_gps", "ins__alt__float_8c.html#ac5b472605ca2035825b6ccca1c4d8c5e", null ],
-    [ "ins_altf_register", "ins__alt__float_8c.html#af3abcc755f69a23a02e5c1345bbcae90", null ],
     [ "ins_reset_altitude_ref", "ins__alt__float_8c.html#aa389e650ab7aa5a7f4650afde6358d86", null ],
     [ "ins_reset_local_origin", "ins__alt__float_8c.html#a14cb66a86c67d8b9216a8c12f58c311b", null ],
     [ "accel_ev", "ins__alt__float_8c.html#a469c2ebc0df160a3ae46ebbbb2aff826", null ],

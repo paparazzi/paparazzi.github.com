@@ -24,6 +24,7 @@ var dir_5e9153041680afc3c016fd52fa730b56 =
     [ "paparazzi.h", "paparazzi_8h.html", "paparazzi_8h" ],
     [ "pprz_debug.c", "pprz__debug_8c.html", null ],
     [ "pprz_debug.h", "pprz__debug_8h.html", "pprz__debug_8h" ],
+    [ "pprz_mutex.h", "pprz__mutex_8h.html", "pprz__mutex_8h" ],
     [ "rc_settings.c", "rc__settings_8c.html", "rc__settings_8c" ],
     [ "rc_settings.h", "rc__settings_8h.html", "rc__settings_8h" ],
     [ "state.c", "state_8c.html", "state_8c" ],

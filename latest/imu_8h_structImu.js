@@ -4,7 +4,7 @@ var imu_8h_structImu =
     [ "accel_neutral", "imu_8h.html#ab126bba936ccd50bad68d42e83b81a28", null ],
     [ "accel_prev", "imu_8h.html#ab29bc6fde030f41e3e990323a4fa2fd5", null ],
     [ "accel_unscaled", "imu_8h.html#abf7c6149da2d7b989713f6fc919ccb10", null ],
-    [ "b2i_set_current", "imu_8h.html#a4ccb08fe4c14a871fdde308e98ed6641", null ],
+    [ "b2i_set_current", "imu_8h.html#aaf2a612473668b4e83f84504f6fcedea", null ],
     [ "body_to_imu", "imu_8h.html#a3ce3df3bf961804f9af1616e53b98b7f", null ],
     [ "gyro", "imu_8h.html#a556257d57db669a3e42ccc6c77fff286", null ],
     [ "gyro_neutral", "imu_8h.html#aa15ae274818b1d781a10f3c3de482900", null ],

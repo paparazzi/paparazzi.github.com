@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('gain__scheduling_8h_source.html','');}
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#ifndef GAIN_SCHEDULING_H</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="gain__scheduling_8h.html#a2cff2b2ccb1457faf0949c2a0d3b599a">   29</a></span>&#160;<span class="preprocessor">#define GAINS_SCHEDULING_H</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#define GAIN_SCHEDULING_H</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;generated/airframe.h&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="stabilization__attitude__common__int_8h.html">firmwares/rotorcraft/stabilization/stabilization_attitude_common_int.h</a>&quot;</span></div>
@@ -146,19 +146,19 @@ $(document).ready(function(){initNavTree('gain__scheduling_8h_source.html','');}
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* GAIN_SCHEDULING_H */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="ttc" id="gain__scheduling_8h_html_ae7be3ffc700495dfdf7aa7631a5713f6"><div class="ttname"><a href="gain__scheduling_8h.html#ae7be3ffc700495dfdf7aa7631a5713f6">gain_scheduling_init</a></div><div class="ttdeci">void gain_scheduling_init(void)</div><div class="ttdoc">Initialises periodic loop;. </div><div class="ttdef"><b>Definition:</b> <a href="gain__scheduling_8c_source.html#l00051">gain_scheduling.c:51</a></div></div>
-<div class="ttc" id="gain__scheduling_8h_html_a4e89953041f33d51c4b1b6c588a66ff8"><div class="ttname"><a href="gain__scheduling_8h.html#a4e89953041f33d51c4b1b6c588a66ff8">gain_scheduling_periodic</a></div><div class="ttdeci">void gain_scheduling_periodic(void)</div><div class="ttdoc">Periodic function that interpolates between gain sets depending on the scheduling variable...</div><div class="ttdef"><b>Definition:</b> <a href="gain__scheduling_8c_source.html#l00082">gain_scheduling.c:82</a></div></div>
-<div class="ttc" id="gain__scheduling_8h_html_a5b3f2ec9266c8b0bd6d859d5c9790492"><div class="ttname"><a href="gain__scheduling_8h.html#a5b3f2ec9266c8b0bd6d859d5c9790492">gainlibrary</a></div><div class="ttdeci">struct Int32AttitudeGains gainlibrary[NUMBER_OF_GAINSETS]</div><div class="ttdef"><b>Definition:</b> <a href="gain__scheduling_8c_source.html#l00046">gain_scheduling.c:46</a></div></div>
+<div class="ttc" id="gain__scheduling_8h_html_ae7be3ffc700495dfdf7aa7631a5713f6"><div class="ttname"><a href="gain__scheduling_8h.html#ae7be3ffc700495dfdf7aa7631a5713f6">gain_scheduling_init</a></div><div class="ttdeci">void gain_scheduling_init(void)</div><div class="ttdoc">Initialises periodic loop;. </div><div class="ttdef"><b>Definition:</b> <a href="gain__scheduling_8c_source.html#l00048">gain_scheduling.c:48</a></div></div>
+<div class="ttc" id="gain__scheduling_8h_html_a4e89953041f33d51c4b1b6c588a66ff8"><div class="ttname"><a href="gain__scheduling_8h.html#a4e89953041f33d51c4b1b6c588a66ff8">gain_scheduling_periodic</a></div><div class="ttdeci">void gain_scheduling_periodic(void)</div><div class="ttdoc">Periodic function that interpolates between gain sets depending on the scheduling variable...</div><div class="ttdef"><b>Definition:</b> <a href="gain__scheduling_8c_source.html#l00079">gain_scheduling.c:79</a></div></div>
+<div class="ttc" id="gain__scheduling_8h_html_a5b3f2ec9266c8b0bd6d859d5c9790492"><div class="ttname"><a href="gain__scheduling_8h.html#a5b3f2ec9266c8b0bd6d859d5c9790492">gainlibrary</a></div><div class="ttdeci">struct Int32AttitudeGains gainlibrary[NUMBER_OF_GAINSETS]</div><div class="ttdef"><b>Definition:</b> <a href="gain__scheduling_8c_source.html#l00043">gain_scheduling.c:43</a></div></div>
 <div class="ttc" id="stabilization__attitude__common__int_8h_html"><div class="ttname"><a href="stabilization__attitude__common__int_8h.html">stabilization_attitude_common_int.h</a></div><div class="ttdoc">Common data structures shared by euler and quaternion int implementations. </div></div>
 <div class="ttc" id="stabilization__attitude__common__int_8h_html_structInt32AttitudeGains"><div class="ttname"><a href="stabilization__attitude__common__int_8h.html#structInt32AttitudeGains">Int32AttitudeGains</a></div><div class="ttdef"><b>Definition:</b> <a href="stabilization__attitude__common__int_8h_source.html#l00035">stabilization_attitude_common_int.h:35</a></div></div>
-<div class="ttc" id="gain__scheduling_8h_html_a7b045557d7f51816377cc0d20d99f344"><div class="ttname"><a href="gain__scheduling_8h.html#a7b045557d7f51816377cc0d20d99f344">set_gainset</a></div><div class="ttdeci">void set_gainset(int gainset)</div><div class="ttdef"><b>Definition:</b> <a href="gain__scheduling_8c_source.html#l00131">gain_scheduling.c:131</a></div></div>
+<div class="ttc" id="gain__scheduling_8h_html_a7b045557d7f51816377cc0d20d99f344"><div class="ttname"><a href="gain__scheduling_8h.html#a7b045557d7f51816377cc0d20d99f344">set_gainset</a></div><div class="ttdeci">void set_gainset(int gainset)</div><div class="ttdef"><b>Definition:</b> <a href="gain__scheduling_8c_source.html#l00128">gain_scheduling.c:128</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_94757629c544be2d6d24b01569be56e6.html">ctrl</a></li><li class="navelem"><a class="el" href="gain__scheduling_8h.html">gain_scheduling.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:22 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:23 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

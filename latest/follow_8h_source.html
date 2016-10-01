@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -135,24 +135,18 @@ $(document).ready(function(){initNavTree('follow_8h_source.html','');});
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define FOLLOW_H</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="follow_8h.html#ab234fa25658f4e57d63125a30200811a">follow_init</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="follow_8h.html#ae56966b7d44ce338c41405e8a070adfd">follow_change_wp</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *buffer);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="follow_8h.html#a193d671739e35bbb235456cb3b65e9ff">follow_wp</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="follow_8h.html#a118d17c26c0851bbeaab6c80dc852eaf">   33</a></span>&#160;<span class="preprocessor">#define ParseRemoteGps() { \</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">    if (DL_REMOTE_GPS_ac_id(dl_buffer) == FOLLOW_AC_ID) { \</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">      follow_change_wp(dl_buffer); \</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">    } \</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">  }</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif // FOLLOW</span></div>
-<div class="ttc" id="follow_8h_html_ab234fa25658f4e57d63125a30200811a"><div class="ttname"><a href="follow_8h.html#ab234fa25658f4e57d63125a30200811a">follow_init</a></div><div class="ttdeci">void follow_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="follow_8c_source.html#l00050">follow.c:50</a></div></div>
-<div class="ttc" id="follow_8h_html_ae56966b7d44ce338c41405e8a070adfd"><div class="ttname"><a href="follow_8h.html#ae56966b7d44ce338c41405e8a070adfd">follow_change_wp</a></div><div class="ttdeci">void follow_change_wp(unsigned char *buffer)</div><div class="ttdef"><b>Definition:</b> <a href="follow_8c_source.html#l00055">follow.c:55</a></div></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif // FOLLOW</span></div>
+<div class="ttc" id="follow_8h_html_ab234fa25658f4e57d63125a30200811a"><div class="ttname"><a href="follow_8h.html#ab234fa25658f4e57d63125a30200811a">follow_init</a></div><div class="ttdeci">void follow_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="follow_8c_source.html#l00057">follow.c:57</a></div></div>
+<div class="ttc" id="follow_8h_html_a193d671739e35bbb235456cb3b65e9ff"><div class="ttname"><a href="follow_8h.html#a193d671739e35bbb235456cb3b65e9ff">follow_wp</a></div><div class="ttdeci">void follow_wp(void)</div><div class="ttdef"><b>Definition:</b> <a href="follow_8c_source.html#l00064">follow.c:64</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_280ddc4eab531a6a77fbd73e72656568.html">multi</a></li><li class="navelem"><a class="el" href="follow_8h.html">follow.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:25 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:26 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

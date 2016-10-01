@@ -2,6 +2,7 @@ var searchData=
 [
   ['hackhd_2ec',['hackhd.c',['../hackhd_8c.html',1,'']]],
   ['hackhd_2eh',['hackhd.h',['../hackhd_8h.html',1,'']]],
+  ['halconf_2eh',['halconf.h',['../halconf_8h.html',1,'']]],
   ['hb_5f1_2e1_2eh',['hb_1.1.h',['../hb__1_81_8h.html',1,'']]],
   ['hbmini_5f1_2e0_2eh',['hbmini_1.0.h',['../hbmini__1_80_8h.html',1,'']]],
   ['hf_5ffloat_2ec',['hf_float.c',['../hf__float_8c.html',1,'']]],
@@ -14,8 +15,8 @@ var searchData=
   ['hmc5843_2eh',['hmc5843.h',['../hmc5843_8h.html',1,'']]],
   ['hmc5843_5farch_2ec',['hmc5843_arch.c',['../sim_2peripherals_2hmc5843__arch_8c.html',1,'']]],
   ['hmc5843_5farch_2ec',['hmc5843_arch.c',['../stm32_2peripherals_2hmc5843__arch_8c.html',1,'']]],
-  ['hmc5843_5farch_2eh',['hmc5843_arch.h',['../stm32_2peripherals_2hmc5843__arch_8h.html',1,'']]],
   ['hmc5843_5farch_2eh',['hmc5843_arch.h',['../sim_2peripherals_2hmc5843__arch_8h.html',1,'']]],
+  ['hmc5843_5farch_2eh',['hmc5843_arch.h',['../stm32_2peripherals_2hmc5843__arch_8h.html',1,'']]],
   ['hmc58xx_2ec',['hmc58xx.c',['../hmc58xx_8c.html',1,'']]],
   ['hmc58xx_2eh',['hmc58xx.h',['../hmc58xx_8h.html',1,'']]],
   ['hmc58xx_5fregs_2eh',['hmc58xx_regs.h',['../hmc58xx__regs_8h.html',1,'']]],

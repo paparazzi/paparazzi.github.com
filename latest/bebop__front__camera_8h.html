@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -157,8 +157,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a0d7809aeb37e14ff8ce26de45fd84b1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bebop__front__camera_8h.html#a0d7809aeb37e14ff8ce26de45fd84b1d">bebop_front_camera_stop</a> (void)</td></tr>
 <tr class="memdesc:a0d7809aeb37e14ff8ce26de45fd84b1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the streaming This could take some time, because the thread is stopped asynchronous.  <a href="#a0d7809aeb37e14ff8ce26de45fd84b1d">More...</a><br /></td></tr>
 <tr class="separator:a0d7809aeb37e14ff8ce26de45fd84b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6ec296ded4666344eb8f568d6403f9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bebop__front__camera_8h.html#af6ec296ded4666344eb8f568d6403f9a">bebop_front_camera_take_shot</a> (bool_t take)</td></tr>
-<tr class="separator:af6ec296ded4666344eb8f568d6403f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad38f4e337b29cf2ea903f9a693aea1f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bebop__front__camera_8h.html#ad38f4e337b29cf2ea903f9a693aea1f9">bebop_front_camera_take_shot</a> (bool take)</td></tr>
+<tr class="separator:ad38f4e337b29cf2ea903f9a693aea1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -212,7 +212,7 @@ fps</td>
 <td class="fielddoc">
 The amount of frames per second. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a8a0458db291b82b1f7435dc197474b47"></a>volatile bool_t</td>
+<a class="anchor" id="a112e14dd31d9efb35295da0b37f06b29"></a>volatile bool</td>
 <td class="fieldname">
 is_streaming</td>
 <td class="fielddoc">
@@ -230,13 +230,13 @@ shot_number</td>
 <td class="fielddoc">
 The last shot number. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="acb1afbeacc605920f8d71be778c6223f"></a>volatile bool_t</td>
+<a class="anchor" id="aedd80e0340e382fc11dbc033f2786835"></a>volatile bool</td>
 <td class="fieldname">
 take_shot</td>
 <td class="fielddoc">
 Wether to take an image. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a3fa3ee1a7cec7396593d3035ac1cbf5f"></a>bool_t</td>
+<a class="anchor" id="acc49cbe338f429d89c83df178a92207d"></a>bool</td>
 <td class="fieldname">
 use_rtp</td>
 <td class="fielddoc">
@@ -264,7 +264,7 @@ Stream over RTP. </td></tr>
 
 <p>Definition at line <a class="el" href="bebop__front__camera_8c_source.html#l00139">139</a> of file <a class="el" href="bebop__front__camera_8c_source.html">bebop_front_camera.c</a>.</p>
 
-<p>References <a class="el" href="bebop__front__camera_8c_source.html#l00055">BEBOP_FRONT_CAMERA_SHOT_PATH</a>, <a class="el" href="bebop__front__camera_8h_source.html#l00039">bebopfrontcamera_t::dev</a>, <a class="el" href="bebop__front__camera_8c_source.html#l00049">MT9F002_HEIGHT</a>, <a class="el" href="bebop__front__camera_8c_source.html#l00048">MT9F002_WIDTH</a>, <a class="el" href="v4l2_8c_source.html#l00177">v4l2_init()</a>, and <a class="el" href="v4l2_8c_source.html#l00130">v4l2_init_subdev()</a>.</p>
+<p>References <a class="el" href="bebop__front__camera_8c_source.html#l00055">BEBOP_FRONT_CAMERA_SHOT_PATH</a>, <a class="el" href="bebop__front__camera_8h_source.html#l00039">bebopfrontcamera_t::dev</a>, <a class="el" href="bebop__front__camera_8c_source.html#l00049">MT9F002_HEIGHT</a>, <a class="el" href="bebop__front__camera_8c_source.html#l00048">MT9F002_WIDTH</a>, <a class="el" href="v4l2_8c_source.html#l00183">v4l2_init()</a>, and <a class="el" href="v4l2_8c_source.html#l00136">v4l2_init_subdev()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -273,7 +273,7 @@ Stream over RTP. </td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="bebop__front__camera_8h_a91c5f4a1bd94da7616dc8318e2d35481_cgraph.png" border="0" usemap="#bebop__front__camera_8h_a91c5f4a1bd94da7616dc8318e2d35481_cgraph" alt=""/></div>
 <map name="bebop__front__camera_8h_a91c5f4a1bd94da7616dc8318e2d35481_cgraph" id="bebop__front__camera_8h_a91c5f4a1bd94da7616dc8318e2d35481_cgraph">
-<area shape="rect" id="node2" href="v4l2_8c.html#a936745c837c31ee383e6439e4e79b306" title="Initialize a V4L2(Video for Linux 2) device. " alt="" coords="261,5,335,32"/><area shape="rect" id="node3" href="v4l2_8c.html#ab93b4f8a8c976a50e55c4fad70bf4127" title="Initialize a V4L2 subdevice. " alt="" coords="235,56,361,83"/></map>
+<area shape="rect" id="node2" href="v4l2_8c.html#a1f683e79a4639d4e189f059f6c4ae268" title="Initialize a V4L2(Video for Linux 2) device. " alt="" coords="261,5,335,32"/><area shape="rect" id="node3" href="v4l2_8c.html#a3798643b3e99cd32ef724fc928d92e51" title="Initialize a V4L2 subdevice. " alt="" coords="235,56,361,83"/></map>
 </div>
 </p>
 
@@ -326,7 +326,7 @@ Stream over RTP. </td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="bebop__front__camera_8h_a179ce25d44bf966f12b86e3a96654161_cgraph.png" border="0" usemap="#bebop__front__camera_8h_a179ce25d44bf966f12b86e3a96654161_cgraph" alt=""/></div>
 <map name="bebop__front__camera_8h_a179ce25d44bf966f12b86e3a96654161_cgraph" id="bebop__front__camera_8h_a179ce25d44bf966f12b86e3a96654161_cgraph">
-<area shape="rect" id="node2" href="bebop__front__camera_8c.html#a63cb60d57fb10579691954003dc4491e" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="208,281,363,322"/><area shape="rect" id="node3" href="bayer_8h.html#ac5dfa338e1c818c31921acfdd170051b" title="Decode Bayer Pattern. " alt="" coords="439,69,537,96"/><area shape="rect" id="node5" href="bebop__front__camera_8c.html#aae423a991ed799c617921a4da12fb892" title="bebop_front_camera\l_save_shot" alt="" coords="411,121,565,162"/><area shape="rect" id="node6" href="jpeg_8c.html#a80691d29cd889f8b549ac6850c95e1b6" title="Encode an YUV422 image. " alt="" coords="615,132,765,159"/><area shape="rect" id="node18" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="433,237,543,264"/><area shape="rect" id="node19" href="rtp_8c.html#ab810dc7d46e209624e4edd330edb7bf7" title="Send an RTP frame. " alt="" coords="427,288,549,315"/><area shape="rect" id="node22" href="udp__socket_8c.html#add3ac7d3bb65bcff12ae832ec1a2e715" title="Create UDP socket and bind it. " alt="" coords="417,339,559,365"/><area shape="rect" id="node23" href="v4l2_8c.html#a865e07dd33caf3bb71a3b90834b308c3" title="Free the image and enqueue the buffer (Thread safe) This must be done after processing the image..." alt="" coords="425,389,551,416"/><area shape="rect" id="node24" href="v4l2_8c.html#a5f8eea1ef0eb13865ad6753e02f4a283" title="Get the latest image buffer and lock it (Thread safe, BLOCKING) This functions blocks until image acc..." alt="" coords="427,440,549,467"/><area shape="rect" id="node25" href="v4l2_8c.html#adb5a15f8b748f8ed515bb2920e423ea5" title="Start capturing images in streaming mode (Thread safe) " alt="" coords="417,491,559,517"/><area shape="rect" id="node4" href="bayer_8h.html#a7bcab48c91c2c274a2e94e848a106f11" title="clip" alt="" coords="669,69,711,96"/><area shape="rect" id="node7" href="jpeg_8c.html#a688433e5f55000ae893f2d5c29097691" title="jpeg_initialization" alt="" coords="847,31,977,57"/><area shape="rect" id="node10" href="jpeg_8c.html#a69ed605945a7ea46dbfaa9b3f29b5ed8" title="MakeTables" alt="" coords="865,81,959,108"/><area shape="rect" id="node11" href="jpeg_8c.html#a26b97262e8620df4fd0ece95195a2d8e" title="jpeg_write_markers" alt="" coords="839,132,985,159"/><area shape="rect" id="node12" href="jpeg_8c.html#aa65677a00f264d53b744f64b386139e1" title="jpeg_encodeMCU" alt="" coords="845,183,979,209"/><area shape="rect" id="node17" href="jpeg_8c.html#af2a62dbe59d962b7cd5158e744b941df" title="jpeg_close_bitstream" alt="" coords="833,233,991,260"/><area shape="rect" id="node8" href="jpeg_8c.html#a496e270428d382bcbda831334590eaf6" title="jpeg_read_400_format" alt="" coords="1057,5,1224,32"/><area shape="rect" id="node9" href="jpeg_8c.html#a206021dc908d46e0a1d72ed9c40b10e9" title="jpeg_read_422_format" alt="" coords="1057,56,1224,83"/><area shape="rect" id="node13" href="jpeg_8c.html#a1b9aa7581d09ec6412a14ec76334667c" title="jpeg_levelshift" alt="" coords="1085,119,1197,145"/><area shape="rect" id="node14" href="jpeg_8c.html#a5b96ae28e2300858e6af3061ac8f96b9" title="jpeg_DCT" alt="" coords="1099,169,1182,196"/><area shape="rect" id="node15" href="jpeg_8c.html#ac00d030f6b21b9e0973fe18a7a7f7e51" title="jpeg_quantization" alt="" coords="1073,220,1208,247"/><area shape="rect" id="node16" href="jpeg_8c.html#a20c1f652043de7bc8171be6591bd3480" title="jpeg_huffman" alt="" coords="1086,271,1195,297"/><area shape="rect" id="node20" href="rtp_8c.html#a7b661ee336df15cbee60fda1d7263247" title="rtp_packet_send" alt="" coords="626,288,754,315"/><area shape="rect" id="node21" href="udp__socket_8c.html#a2c3da4bd5d683ae6c844649fac79f13d" title="Send a packet from buffer, non&#45;blocking. " alt="" coords="815,288,1009,315"/><area shape="rect" id="node26" href="v4l2_8c.html#a3016fdd985a61647b2fc6a653ebfcfaa" title="The main capturing thread This thread handles the queue and dequeue of buffers, to make sure only the..." alt="" coords="613,491,767,517"/></map>
+<area shape="rect" id="node2" href="bebop__front__camera_8c.html#a63cb60d57fb10579691954003dc4491e" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="208,293,363,334"/><area shape="rect" id="node3" href="bayer_8h.html#ac5dfa338e1c818c31921acfdd170051b" title="Decode Bayer Pattern. " alt="" coords="439,81,537,108"/><area shape="rect" id="node5" href="bebop__front__camera_8c.html#aae423a991ed799c617921a4da12fb892" title="bebop_front_camera\l_save_shot" alt="" coords="411,133,565,174"/><area shape="rect" id="node6" href="jpeg_8c.html#ac1a4731c71f3529891f1750260db2626" title="Encode an YUV422 image. " alt="" coords="615,144,765,171"/><area shape="rect" id="node18" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="433,249,543,276"/><area shape="rect" id="node19" href="rtp_8c.html#ab810dc7d46e209624e4edd330edb7bf7" title="Send an RTP frame. " alt="" coords="427,300,549,327"/><area shape="rect" id="node22" href="udp__socket_8c.html#a8904d535adc73468cfa9e57a71f6de72" title="Create UDP socket and bind it. " alt="" coords="417,351,559,377"/><area shape="rect" id="node23" href="v4l2_8c.html#a865e07dd33caf3bb71a3b90834b308c3" title="Free the image and enqueue the buffer (Thread safe) This must be done after processing the image..." alt="" coords="425,401,551,428"/><area shape="rect" id="node24" href="v4l2_8c.html#a5f8eea1ef0eb13865ad6753e02f4a283" title="Get the latest image buffer and lock it (Thread safe, BLOCKING) This functions blocks until image acc..." alt="" coords="427,452,549,479"/><area shape="rect" id="node25" href="v4l2_8c.html#a4efccaca5c6c386d09e315ccfcaa3581" title="Start capturing images in streaming mode (Thread safe) " alt="" coords="417,503,559,529"/><area shape="rect" id="node4" href="bayer_8h.html#a7bcab48c91c2c274a2e94e848a106f11" title="clip" alt="" coords="669,81,711,108"/><area shape="rect" id="node7" href="jpeg_8c.html#a688433e5f55000ae893f2d5c29097691" title="jpeg_initialization" alt="" coords="847,43,977,69"/><area shape="rect" id="node10" href="jpeg_8c.html#a8a9557560cb4c8d4e60756e99b5a5f13" title="MakeTables" alt="" coords="865,93,959,120"/><area shape="rect" id="node11" href="jpeg_8c.html#a0908916b4be15d17fa2ad6e441b633f1" title="jpeg_write_markers" alt="" coords="839,144,985,171"/><area shape="rect" id="node12" href="jpeg_8c.html#aa65677a00f264d53b744f64b386139e1" title="jpeg_encodeMCU" alt="" coords="845,195,979,221"/><area shape="rect" id="node17" href="jpeg_8c.html#a817a4e96b0d0c0e1251e2db08467c2a1" title="jpeg_close_bitstream" alt="" coords="833,245,991,272"/><area shape="rect" id="node8" href="jpeg_8c.html#a496e270428d382bcbda831334590eaf6" title="jpeg_read_400_format" alt="" coords="1059,5,1226,32"/><area shape="rect" id="node9" href="jpeg_8c.html#a206021dc908d46e0a1d72ed9c40b10e9" title="jpeg_read_422_format" alt="" coords="1059,56,1226,83"/><area shape="rect" id="node13" href="jpeg_8c.html#a1b9aa7581d09ec6412a14ec76334667c" title="jpeg_levelshift" alt="" coords="1087,132,1199,159"/><area shape="rect" id="node14" href="jpeg_8c.html#a5b96ae28e2300858e6af3061ac8f96b9" title="jpeg_DCT" alt="" coords="1101,183,1184,209"/><area shape="rect" id="node15" href="jpeg_8c.html#a185e0318b222708896d55e8d98c0576b" title="jpeg_quantization" alt="" coords="1075,233,1210,260"/><area shape="rect" id="node16" href="jpeg_8c.html#a20c1f652043de7bc8171be6591bd3480" title="jpeg_huffman" alt="" coords="1088,284,1197,311"/><area shape="rect" id="node20" href="rtp_8c.html#a7b661ee336df15cbee60fda1d7263247" title="rtp_packet_send" alt="" coords="626,300,754,327"/><area shape="rect" id="node21" href="udp__socket_8c.html#a2c3da4bd5d683ae6c844649fac79f13d" title="Send a packet from buffer, non&#45;blocking. " alt="" coords="815,300,1009,327"/><area shape="rect" id="node26" href="v4l2_8c.html#a3016fdd985a61647b2fc6a653ebfcfaa" title="The main capturing thread This thread handles the queue and dequeue of buffers, to make sure only the..." alt="" coords="613,503,767,529"/><area shape="rect" id="node27" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="840,503,984,529"/><area shape="rect" id="node28" href="sys__time_8h.html#adb22f2652f04908fbc644c7274bf7273" title="usec_of_sys_time_ticks" alt="" coords="1057,503,1228,529"/></map>
 </div>
 </p>
 
@@ -350,7 +350,7 @@ Stream over RTP. </td></tr>
 
 <p>Definition at line <a class="el" href="bebop__front__camera_8c_source.html#l00185">185</a> of file <a class="el" href="bebop__front__camera_8c_source.html">bebop_front_camera.c</a>.</p>
 
-<p>References <a class="el" href="bebop__front__camera_8h_source.html#l00039">bebopfrontcamera_t::dev</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="bebop__front__camera_8h_source.html#l00043">bebopfrontcamera_t::is_streaming</a>, <a class="el" href="v4l2_8h_source.html#l00049">v4l2_device::name</a>, and <a class="el" href="v4l2_8c_source.html#l00446">v4l2_stop_capture()</a>.</p>
+<p>References <a class="el" href="bebop__front__camera_8h_source.html#l00039">bebopfrontcamera_t::dev</a>, <a class="el" href="bebop__front__camera_8h_source.html#l00043">bebopfrontcamera_t::is_streaming</a>, <a class="el" href="v4l2_8h_source.html#l00050">v4l2_device::name</a>, and <a class="el" href="v4l2_8c_source.html#l00486">v4l2_stop_capture()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -359,20 +359,20 @@ Stream over RTP. </td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="bebop__front__camera_8h_a0d7809aeb37e14ff8ce26de45fd84b1d_cgraph.png" border="0" usemap="#bebop__front__camera_8h_a0d7809aeb37e14ff8ce26de45fd84b1d_cgraph" alt=""/></div>
 <map name="bebop__front__camera_8h_a0d7809aeb37e14ff8ce26de45fd84b1d_cgraph" id="bebop__front__camera_8h_a0d7809aeb37e14ff8ce26de45fd84b1d_cgraph">
-<area shape="rect" id="node2" href="v4l2_8c.html#a8a08b40d6115117914f0db0fce1c6d98" title="Stop capturing of the image stream (Thread safe) This function is blocking until capturing thread is ..." alt="" coords="244,5,383,32"/></map>
+<area shape="rect" id="node2" href="v4l2_8c.html#ac793d6bd02a9c7b138146a848bf93bea" title="Stop capturing of the image stream (Thread safe) This function is blocking until capturing thread is ..." alt="" coords="244,5,383,32"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="af6ec296ded4666344eb8f568d6403f9a"></a>
+<a class="anchor" id="ad38f4e337b29cf2ea903f9a693aea1f9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void bebop_front_camera_take_shot </td>
           <td>(</td>
-          <td class="paramtype">bool_t&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>take</em></td><td>)</td>
           <td></td>
         </tr>
@@ -381,7 +381,7 @@ Stream over RTP. </td></tr>
 
 <p>Definition at line <a class="el" href="bebop__front__camera_8c_source.html#l00073">73</a> of file <a class="el" href="bebop__front__camera_8c_source.html">bebop_front_camera.c</a>.</p>
 
-<p>References <a class="el" href="bebop__front__camera_8h_source.html#l00041">bebopfrontcamera_t::take_shot</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p>References <a class="el" href="bebop__front__camera_8h_source.html#l00041">bebopfrontcamera_t::take_shot</a>.</p>
 
 </div>
 </div>
@@ -406,7 +406,7 @@ Stream over RTP. </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="bebop__front__camera_8h.html">bebop_front_camera.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:48 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:53 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

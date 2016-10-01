@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -141,9 +141,9 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2actuators_2actuator
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a68d4247d6cfc6a0dc584ca7a7f41115b">   34</a></span>&#160;<span class="preprocessor">#define ACTUATORS_PWM_NB 8</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">extern</span> <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a11c780a31ca1af3dc366bba41f431989">actuators_pwm_values</a>[<a class="code" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a68d4247d6cfc6a0dc584ca7a7f41115b">ACTUATORS_PWM_NB</a>];</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">extern</span> <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a11c780a31ca1af3dc366bba41f431989">actuators_pwm_values</a>[<a class="code" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a68d4247d6cfc6a0dc584ca7a7f41115b">ACTUATORS_PWM_NB</a>];</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a8fdcc2a7e8712e51ffcbce4fd77dcfab">actuators_pwm_commit</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a8fdcc2a7e8712e51ffcbce4fd77dcfab">actuators_pwm_commit</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a472606a13476f0804e5e3abfab77ea35">   41</a></span>&#160;<span class="preprocessor">#define SERVOS_TICS_OF_USEC(_v) (_v)</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
@@ -151,18 +151,18 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2actuators_2actuator
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a318935d8d5191df9ebfcae4a9165c3f4">   44</a></span>&#160;<span class="preprocessor">#define ActuatorsPwmCommit  actuators_pwm_commit</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ACTUATORS_PWM_ARCH_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="chibios_2subsystems_2actuators_2actuators__pwm__arch_8h_html_a11c780a31ca1af3dc366bba41f431989"><div class="ttname"><a href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a11c780a31ca1af3dc366bba41f431989">actuators_pwm_values</a></div><div class="ttdeci">int32_t actuators_pwm_values[ACTUATORS_PWM_NB]</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00050">actuators_pwm_arch.c:50</a></div></div>
 <div class="ttc" id="stm32_2subsystems_2actuators_2actuators__pwm__arch_8h_html_a68d4247d6cfc6a0dc584ca7a7f41115b"><div class="ttname"><a href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a68d4247d6cfc6a0dc584ca7a7f41115b">ACTUATORS_PWM_NB</a></div><div class="ttdeci">#define ACTUATORS_PWM_NB</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8h_source.html#l00034">actuators_pwm_arch.h:34</a></div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
 <div class="ttc" id="types_8h_html_a2ba621978a511250f7250fb10e05ffbe"><div class="ttname"><a href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></div><div class="ttdeci">signed long int32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00019">types.h:19</a></div></div>
-<div class="ttc" id="stm32_2subsystems_2actuators_2actuators__pwm__arch_8h_html_a11c780a31ca1af3dc366bba41f431989"><div class="ttname"><a href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a11c780a31ca1af3dc366bba41f431989">actuators_pwm_values</a></div><div class="ttdeci">int32_t actuators_pwm_values[ACTUATORS_PWM_NB]</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00039">actuators_pwm_arch.c:39</a></div></div>
-<div class="ttc" id="stm32_2subsystems_2actuators_2actuators__pwm__arch_8h_html_a8fdcc2a7e8712e51ffcbce4fd77dcfab"><div class="ttname"><a href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a8fdcc2a7e8712e51ffcbce4fd77dcfab">actuators_pwm_commit</a></div><div class="ttdeci">void actuators_pwm_commit(void)</div><div class="ttdoc">Set pulse widths from actuator values, assumed to be in us. </div><div class="ttdef"><b>Definition:</b> <a href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00151">actuators_pwm_arch.c:151</a></div></div>
+<div class="ttc" id="chibios_2subsystems_2actuators_2actuators__pwm__arch_8h_html_a8fdcc2a7e8712e51ffcbce4fd77dcfab"><div class="ttname"><a href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a8fdcc2a7e8712e51ffcbce4fd77dcfab">actuators_pwm_commit</a></div><div class="ttdeci">void actuators_pwm_commit(void)</div><div class="ttdoc">Set pulse widths from actuator values, assumed to be in us. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00155">actuators_pwm_arch.c:155</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_71548ae744da26ac2c7ca213b679dc43.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_25ba966e11d2062039182252e5025889.html">actuators</a></li><li class="navelem"><a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8h.html">actuators_pwm_arch.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:14 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:13 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -4,6 +4,7 @@ var pprz__algebra__int_8c =
     [ "int32_eulers_dot_321_of_rates", "group__math__algebra__int.html#ga4dc3d6b30a0f375edc5b47bd0a952d8f", null ],
     [ "int32_eulers_of_quat", "group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e", null ],
     [ "int32_eulers_of_rmat", "group__math__algebra__int.html#gaf2f61a27841c68cefbd27a8614fcd90e", null ],
+    [ "int32_gcd", "group__math__algebra__int.html#ga6e8dc048191b43239ca6a933bd744468", null ],
     [ "int32_quat_comp", "group__math__algebra__int.html#ga04fe6ffb1b86afc85f91b2a07e224739", null ],
     [ "int32_quat_comp_inv", "group__math__algebra__int.html#ga6102185fc581099e1e256c3df37fd08d", null ],
     [ "int32_quat_comp_inv_norm_shortest", "group__math__algebra__int.html#ga6690b9bed5e7eb9f5c3ee6db7951e09b", null ],

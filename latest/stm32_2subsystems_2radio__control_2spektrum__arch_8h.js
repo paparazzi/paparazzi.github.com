@@ -17,5 +17,6 @@ var stm32_2subsystems_2radio__control_2spektrum__arch_8h =
     [ "RADIO_THROTTLE", "stm32_2subsystems_2radio__control_2spektrum__arch_8h.html#a393c67e7c336f4e58413e3cb07378511", null ],
     [ "RADIO_YAW", "stm32_2subsystems_2radio__control_2spektrum__arch_8h.html#a0a504ca751f60fabf7900b13916561a6", null ],
     [ "SPEKTRUM_NB_CHANNEL", "stm32_2subsystems_2radio__control_2spektrum__arch_8h.html#ad1edc5e4829c731875a561a35a12830f", null ],
-    [ "RadioControlEventImp", "stm32_2subsystems_2radio__control_2spektrum__arch_8h.html#aa14d845c3a5ca2182ee1d7594b22ab44", null ]
+    [ "RadioControlEventImp", "stm32_2subsystems_2radio__control_2spektrum__arch_8h.html#aa14d845c3a5ca2182ee1d7594b22ab44", null ],
+    [ "SpektrumUartInit", "stm32_2subsystems_2radio__control_2spektrum__arch_8h.html#ac4f1b2d7f0844ae795adfd74bdeb18f0", null ]
 ];

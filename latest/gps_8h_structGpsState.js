@@ -1,6 +1,7 @@
 var gps_8h_structGpsState =
 [
     [ "cacc", "gps_8h.html#a2d6027f58f74a82bd49944931a2a2beb", null ],
+    [ "comp_id", "gps_8h.html#aa4ee5a8dc8e01e885e5b60ec13b4156d", null ],
     [ "course", "gps_8h.html#a3665e85487519aef462c0c44cb8e3b40", null ],
     [ "ecef_pos", "gps_8h.html#a4b4e800eef9609fd474c0c92fd4836ff", null ],
     [ "ecef_vel", "gps_8h.html#a61d8a6f16de4a00066cb7026aff117da", null ],

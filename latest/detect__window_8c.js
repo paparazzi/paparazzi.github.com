@@ -3,7 +3,7 @@ var detect__window_8c =
     [ "N_WINDOW_SIZES", "detect__window_8c.html#aa9b19b106182b9a72e86e8c9bc869de8", null ],
     [ "RES", "detect__window_8c.html#a65b26605d90a0bcd0e13e05db54f551f", null ],
     [ "detect_escape", "detect__window_8c.html#afe15b8dbeece20cca4e81dd0ef0ed327", null ],
-    [ "detect_window", "detect__window_8c.html#a7a2b9a585eb69831a161e001da919675", null ],
+    [ "detect_window", "detect__window_8c.html#a60d7aea06e4cdd5d5718514b22263e72", null ],
     [ "detect_window_init", "detect__window_8c.html#acd7643219a35e96f1dbd1a28a2c2237e", null ],
     [ "detect_window_one_size", "detect__window_8c.html#a4768d05b0fbd586efc9d66d4e6713724", null ],
     [ "detect_window_sizes", "detect__window_8c.html#a7aa027192382c57d36c563c050324fcb", null ],

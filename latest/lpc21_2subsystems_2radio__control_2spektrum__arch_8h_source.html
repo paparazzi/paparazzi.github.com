@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('lpc21_2subsystems_2radio__control_2spe
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="lpc21_2subsystems_2radio__control_2spektrum__arch_8h.html#a7cbeda0d94d6f3e1ec245c2d1b5ef2dc">   34</a></span>&#160;<span class="preprocessor">#define RC_SPK_STA_GOT_SYNC_1 1</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="lpc21_2subsystems_2radio__control_2spektrum__arch_8h.html#a736e4e5f8ce1ead8ed708e4eb094e2e0">   35</a></span>&#160;<span class="preprocessor">#define RC_SPK_STA_GOT_SYNC_2 2</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">extern</span> bool_t   <a class="code" href="lpc21_2subsystems_2radio__control_2spektrum__arch_8h.html#a54d9f82d77bd5b30ce7a5c39eb1f9e15">rc_spk_parser_status</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">bool</span>   <a class="code" href="lpc21_2subsystems_2radio__control_2spektrum__arch_8h.html#a822166c097923a0fbee7894170a19e75">rc_spk_parser_status</a>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">extern</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>  <a class="code" href="lpc21_2subsystems_2radio__control_2spektrum__arch_8h.html#a90fd99c9ddce4a4f47f093d999d16a63">rc_spk_parser_idx</a>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">extern</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>  <a class="code" href="lpc21_2subsystems_2radio__control_2spektrum__arch_8h.html#a52ba41a99ccfcfe10a8850b7121850e3">rc_spk_parser_buf</a>[<a class="code" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#a1beed9c63b07301d72b3516543545652">RADIO_CONTROL_NB_CHANNEL</a> * 2];</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
@@ -217,14 +217,14 @@ $(document).ready(function(){initNavTree('lpc21_2subsystems_2radio__control_2spe
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="lpc21_2subsystems_2radio__control_2spektrum__arch_8h_html_a90fd99c9ddce4a4f47f093d999d16a63"><div class="ttname"><a href="lpc21_2subsystems_2radio__control_2spektrum__arch_8h.html#a90fd99c9ddce4a4f47f093d999d16a63">rc_spk_parser_idx</a></div><div class="ttdeci">uint8_t rc_spk_parser_idx</div><div class="ttdef"><b>Definition:</b> <a href="lpc21_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00026">spektrum_arch.c:26</a></div></div>
 <div class="ttc" id="lpc21_2subsystems_2radio__control_2spektrum__arch_8h_html_af871da7c10e72980ef21424337791c76"><div class="ttname"><a href="lpc21_2subsystems_2radio__control_2spektrum__arch_8h.html#af871da7c10e72980ef21424337791c76">rc_spk_throw</a></div><div class="ttdeci">const int16_t rc_spk_throw[RADIO_CONTROL_NB_CHANNEL]</div><div class="ttdef"><b>Definition:</b> <a href="lpc21_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00028">spektrum_arch.c:28</a></div></div>
-<div class="ttc" id="lpc21_2subsystems_2radio__control_2spektrum__arch_8h_html_a54d9f82d77bd5b30ce7a5c39eb1f9e15"><div class="ttname"><a href="lpc21_2subsystems_2radio__control_2spektrum__arch_8h.html#a54d9f82d77bd5b30ce7a5c39eb1f9e15">rc_spk_parser_status</a></div><div class="ttdeci">bool_t rc_spk_parser_status</div><div class="ttdef"><b>Definition:</b> <a href="lpc21_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00025">spektrum_arch.c:25</a></div></div>
+<div class="ttc" id="lpc21_2subsystems_2radio__control_2spektrum__arch_8h_html_a822166c097923a0fbee7894170a19e75"><div class="ttname"><a href="lpc21_2subsystems_2radio__control_2spektrum__arch_8h.html#a822166c097923a0fbee7894170a19e75">rc_spk_parser_status</a></div><div class="ttdeci">bool rc_spk_parser_status</div><div class="ttdef"><b>Definition:</b> <a href="lpc21_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00025">spektrum_arch.c:25</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_3f7617cb4a5e4fe5cc816b7b3bbdea3a.html">lpc21</a></li><li class="navelem"><a class="el" href="dir_49e3baf8e4d0208391e8a23720cf4bc3.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_f690f2529ef2764b7e6effd3da88a775.html">radio_control</a></li><li class="navelem"><a class="el" href="lpc21_2subsystems_2radio__control_2spektrum__arch_8h.html">spektrum_arch.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:15 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:14 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

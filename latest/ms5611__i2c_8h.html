@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -145,8 +145,8 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a812de548b9e2b4bf4da5fbfe168826e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ms5611__i2c_8h.html#a812de548b9e2b4bf4da5fbfe168826e1">ms5611_i2c_init</a> (struct <a class="el" href="ms5611__i2c_8h.html#structMs5611__I2c">Ms5611_I2c</a> *ms, struct <a class="el" href="group__i2c.html#structi2c__periph">i2c_periph</a> *i2c_p, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> addr, bool_t is_ms5607)</td></tr>
-<tr class="separator:a812de548b9e2b4bf4da5fbfe168826e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17e23c3602297d6edbf19ad6d4bc1d8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ms5611__i2c_8h.html#a17e23c3602297d6edbf19ad6d4bc1d8e">ms5611_i2c_init</a> (struct <a class="el" href="ms5611__i2c_8h.html#structMs5611__I2c">Ms5611_I2c</a> *ms, struct <a class="el" href="group__i2c.html#structi2c__periph">i2c_periph</a> *i2c_p, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> addr, bool is_ms5607)</td></tr>
+<tr class="separator:a17e23c3602297d6edbf19ad6d4bc1d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aede904dca434d648c441a0f51d9850af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ms5611__i2c_8h.html#aede904dca434d648c441a0f51d9850af">ms5611_i2c_start_configure</a> (struct <a class="el" href="ms5611__i2c_8h.html#structMs5611__I2c">Ms5611_I2c</a> *ms)</td></tr>
 <tr class="separator:aede904dca434d648c441a0f51d9850af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7ea4f69e5b5ff916ac4571219d829e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ms5611__i2c_8h.html#aa7ea4f69e5b5ff916ac4571219d829e1">ms5611_i2c_start_conversion</a> (struct <a class="el" href="ms5611__i2c_8h.html#structMs5611__I2c">Ms5611_I2c</a> *ms)</td></tr>
@@ -197,7 +197,7 @@ data</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a73769aea977f08caa7a9d82522cfa764"></a>volatile bool_t</td>
+<a class="anchor" id="a7db71ce7b9baba37f736f293d97b3484"></a>volatile bool</td>
 <td class="fieldname">
 data_available</td>
 <td class="fielddoc">
@@ -215,13 +215,13 @@ i2c_trans</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a7fe87a71be1480386f352df4c4ca4545"></a>bool_t</td>
+<a class="anchor" id="afd983ecb3762c55be45097cb634174bd"></a>bool</td>
 <td class="fieldname">
 initialized</td>
 <td class="fielddoc">
 config done flag </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a8ede25a98f4e0027b9077412889fbd49"></a>bool_t</td>
+<a class="anchor" id="abfecb0e214ef090f4879c57b1ba65992"></a>bool</td>
 <td class="fieldname">
 is_ms5607</td>
 <td class="fielddoc">
@@ -259,7 +259,7 @@ status</td>
 
 <p>Definition at line <a class="el" href="ms5611__i2c_8c_source.html#l00119">119</a> of file <a class="el" href="ms5611__i2c_8c_source.html">ms5611_i2c.c</a>.</p>
 
-<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="ms5611_8h_source.html#l00054">Ms5611Data::c</a>, <a class="el" href="ms5611_8h_source.html#l00055">Ms5611Data::d1</a>, <a class="el" href="ms5611_8h_source.html#l00056">Ms5611Data::d2</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00043">Ms5611_I2c::data</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00042">Ms5611_I2c::data_available</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00037">Ms5611_I2c::i2c_p</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00038">Ms5611_I2c::i2c_trans</a>, <a class="el" href="i2c_8c_source.html#l00278">i2c_transceive()</a>, <a class="el" href="i2c_8c_source.html#l00258">i2c_transmit()</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00058">I2CTransFailed</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00556">if()</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00041">Ms5611_I2c::initialized</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00040">Ms5611_I2c::is_ms5607</a>, <a class="el" href="ms5611_8c_source.html#l00110">ms5607_calc()</a>, <a class="el" href="ms5611_8c_source.html#l00067">ms5611_calc()</a>, <a class="el" href="ms5611_8c_source.html#l00036">ms5611_prom_crc_ok()</a>, <a class="el" href="ms5611__regs_8h_source.html#l00068">MS5611_PROM_READ</a>, <a class="el" href="ms5611__regs_8h_source.html#l00070">MS5611_START_CONV_D2</a>, <a class="el" href="ms5611_8h_source.html#l00045">MS5611_STATUS_ADC_D1</a>, <a class="el" href="ms5611_8h_source.html#l00048">MS5611_STATUS_ADC_D2</a>, <a class="el" href="ms5611_8h_source.html#l00046">MS5611_STATUS_CONV_D2</a>, <a class="el" href="ms5611_8h_source.html#l00042">MS5611_STATUS_IDLE</a>, <a class="el" href="ms5611_8h_source.html#l00041">MS5611_STATUS_PROM</a>, <a class="el" href="ms5611_8h_source.html#l00038">MS5611_STATUS_UNINIT</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00044">Ms5611_I2c::prom_cnt</a>, <a class="el" href="ms5611__regs_8h_source.html#l00038">PROM_NB</a>, <a class="el" href="i2c_8h_source.html#l00104">i2c_transaction::slave_addr</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00039">Ms5611_I2c::status</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="ms5611_8h_source.html#l00054">Ms5611Data::c</a>, <a class="el" href="ms5611_8h_source.html#l00055">Ms5611Data::d1</a>, <a class="el" href="ms5611_8h_source.html#l00056">Ms5611Data::d2</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00043">Ms5611_I2c::data</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00042">Ms5611_I2c::data_available</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00037">Ms5611_I2c::i2c_p</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00038">Ms5611_I2c::i2c_trans</a>, <a class="el" href="i2c_8c_source.html#l00278">i2c_transceive()</a>, <a class="el" href="i2c_8c_source.html#l00258">i2c_transmit()</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00058">I2CTransFailed</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00605">if()</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00041">Ms5611_I2c::initialized</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00040">Ms5611_I2c::is_ms5607</a>, <a class="el" href="ms5611_8c_source.html#l00110">ms5607_calc()</a>, <a class="el" href="ms5611_8c_source.html#l00067">ms5611_calc()</a>, <a class="el" href="ms5611_8c_source.html#l00036">ms5611_prom_crc_ok()</a>, <a class="el" href="ms5611__regs_8h_source.html#l00068">MS5611_PROM_READ</a>, <a class="el" href="ms5611__regs_8h_source.html#l00070">MS5611_START_CONV_D2</a>, <a class="el" href="ms5611_8h_source.html#l00045">MS5611_STATUS_ADC_D1</a>, <a class="el" href="ms5611_8h_source.html#l00048">MS5611_STATUS_ADC_D2</a>, <a class="el" href="ms5611_8h_source.html#l00046">MS5611_STATUS_CONV_D2</a>, <a class="el" href="ms5611_8h_source.html#l00042">MS5611_STATUS_IDLE</a>, <a class="el" href="ms5611_8h_source.html#l00041">MS5611_STATUS_PROM</a>, <a class="el" href="ms5611_8h_source.html#l00038">MS5611_STATUS_UNINIT</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00044">Ms5611_I2c::prom_cnt</a>, <a class="el" href="ms5611__regs_8h_source.html#l00038">PROM_NB</a>, <a class="el" href="i2c_8h_source.html#l00104">i2c_transaction::slave_addr</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00039">Ms5611_I2c::status</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
 
 <p>Referenced by <a class="el" href="baro__board__ms5611__i2c_8c_source.html#l00099">baro_event()</a>, and <a class="el" href="baro__ms5611__i2c_8c_source.html#l00090">baro_ms5611_event()</a>.</p>
 
@@ -270,7 +270,7 @@ status</td>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ms5611__i2c_8h_a14e55ee13fb38c32b8c0bb6146695ca9_cgraph.png" border="0" usemap="#ms5611__i2c_8h_a14e55ee13fb38c32b8c0bb6146695ca9_cgraph" alt=""/></div>
 <map name="ms5611__i2c_8h_a14e55ee13fb38c32b8c0bb6146695ca9_cgraph" id="ms5611__i2c_8h_a14e55ee13fb38c32b8c0bb6146695ca9_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#gae029fe6bf43eaf9e46428fec7e7b91c7" title="Submit a write/read transaction. " alt="" coords="221,5,334,32"/><area shape="rect" id="node4" href="group__i2c.html#ga68659e03504627925829f2f12c2ec6d2" title="Submit a write only transaction. " alt="" coords="227,56,328,83"/><area shape="rect" id="node5" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599" title="if" alt="" coords="258,107,297,133"/><area shape="rect" id="node6" href="ms5611_8c.html#a684dfeec30ebd96f4f39a02fe40d61bc" title="Calculate temperature and compensated pressure for MS5607. " alt="" coords="224,157,331,184"/><area shape="rect" id="node7" href="ms5611_8c.html#a7ea327bfcf88ade86630c4f2fd54329d" title="Calculate temperature and compensated pressure for MS5611. " alt="" coords="224,208,331,235"/><area shape="rect" id="node8" href="ms5611_8c.html#a1afefece4545988101dac95290cacde6" title="Check if CRC of PROM data is OK. " alt="" coords="196,259,359,285"/><area shape="rect" id="node3" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="407,31,497,57"/></map>
+<area shape="rect" id="node2" href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction. " alt="" coords="221,5,334,32"/><area shape="rect" id="node4" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="227,56,328,83"/><area shape="rect" id="node5" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599" title="if" alt="" coords="258,107,297,133"/><area shape="rect" id="node6" href="ms5611_8c.html#a6dea78d3cbdf03549f9d15b920089ff1" title="Calculate temperature and compensated pressure for MS5607. " alt="" coords="224,157,331,184"/><area shape="rect" id="node7" href="ms5611_8c.html#ae3efc8f29a1b06b12e734be3ab9b5eb4" title="Calculate temperature and compensated pressure for MS5611. " alt="" coords="224,208,331,235"/><area shape="rect" id="node8" href="ms5611_8c.html#aadeaf57da29112210a74857311975e0a" title="Check if CRC of PROM data is OK. " alt="" coords="196,259,359,285"/><area shape="rect" id="node3" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="407,31,497,57"/></map>
 </div>
 </p>
 
@@ -287,7 +287,7 @@ status</td>
 
 </div>
 </div>
-<a class="anchor" id="a812de548b9e2b4bf4da5fbfe168826e1"></a>
+<a class="anchor" id="a17e23c3602297d6edbf19ad6d4bc1d8e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -312,7 +312,7 @@ status</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool_t&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>is_ms5607</em>&#160;</td>
         </tr>
         <tr>
@@ -325,7 +325,7 @@ status</td>
 
 <p>Definition at line <a class="el" href="ms5611__i2c_8c_source.html#l00033">33</a> of file <a class="el" href="ms5611__i2c_8c_source.html">ms5611_i2c.c</a>.</p>
 
-<p>References <a class="el" href="ms5611__i2c_8h_source.html#l00042">Ms5611_I2c::data_available</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00037">Ms5611_I2c::i2c_p</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00038">Ms5611_I2c::i2c_trans</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00041">Ms5611_I2c::initialized</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00040">Ms5611_I2c::is_ms5607</a>, <a class="el" href="ms5611_8h_source.html#l00038">MS5611_STATUS_UNINIT</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00044">Ms5611_I2c::prom_cnt</a>, <a class="el" href="i2c_8h_source.html#l00104">i2c_transaction::slave_addr</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00039">Ms5611_I2c::status</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
+<p>References <a class="el" href="ms5611__i2c_8h_source.html#l00042">Ms5611_I2c::data_available</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00037">Ms5611_I2c::i2c_p</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00038">Ms5611_I2c::i2c_trans</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00041">Ms5611_I2c::initialized</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00040">Ms5611_I2c::is_ms5607</a>, <a class="el" href="ms5611_8h_source.html#l00038">MS5611_STATUS_UNINIT</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00044">Ms5611_I2c::prom_cnt</a>, <a class="el" href="i2c_8h_source.html#l00104">i2c_transaction::slave_addr</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00039">Ms5611_I2c::status</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
 
 <p>Referenced by <a class="el" href="baro__board__ms5611__i2c_8c_source.html#l00068">baro_init()</a>, and <a class="el" href="baro__ms5611__i2c_8c_source.html#l00060">baro_ms5611_init()</a>.</p>
 
@@ -334,8 +334,8 @@ status</td>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ms5611__i2c_8h_a812de548b9e2b4bf4da5fbfe168826e1_icgraph.png" border="0" usemap="#ms5611__i2c_8h_a812de548b9e2b4bf4da5fbfe168826e1_icgraph" alt=""/></div>
-<map name="ms5611__i2c_8h_a812de548b9e2b4bf4da5fbfe168826e1_icgraph" id="ms5611__i2c_8h_a812de548b9e2b4bf4da5fbfe168826e1_icgraph">
+<div class="center"><img src="ms5611__i2c_8h_a17e23c3602297d6edbf19ad6d4bc1d8e_icgraph.png" border="0" usemap="#ms5611__i2c_8h_a17e23c3602297d6edbf19ad6d4bc1d8e_icgraph" alt=""/></div>
+<map name="ms5611__i2c_8h_a17e23c3602297d6edbf19ad6d4bc1d8e_icgraph" id="ms5611__i2c_8h_a17e23c3602297d6edbf19ad6d4bc1d8e_icgraph">
 <area shape="rect" id="node2" href="baro__board__ms5611__i2c_8c.html#a9b25546908842f1d38fc56e438d46e21" title="baro_init" alt="" coords="208,5,285,32"/><area shape="rect" id="node3" href="baro__ms5611__spi_8h.html#a3f95f9dea9a4f9246be1cd133ff424a7" title="baro_ms5611_init" alt="" coords="179,56,315,83"/></map>
 </div>
 </p>
@@ -379,7 +379,7 @@ status</td>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ms5611__i2c_8h_a6414dbf9e064f7a370447b1002eaa7b9_cgraph.png" border="0" usemap="#ms5611__i2c_8h_a6414dbf9e064f7a370447b1002eaa7b9_cgraph" alt=""/></div>
 <map name="ms5611__i2c_8h_a6414dbf9e064f7a370447b1002eaa7b9_cgraph" id="ms5611__i2c_8h_a6414dbf9e064f7a370447b1002eaa7b9_cgraph">
-<area shape="rect" id="node2" href="ms5611__i2c_8h.html#a45123afce6b944dbe03552035e6b6e5e" title="Periodic function to ensure proper delay after triggering reset or conversion. " alt="" coords="209,5,365,47"/><area shape="rect" id="node5" href="ms5611__i2c_8h.html#a5b15a903dc0ac45e598280f1c87953e9" title="convenience function to trigger new measurement. " alt="" coords="220,71,355,98"/><area shape="rect" id="node3" href="group__i2c.html#gae029fe6bf43eaf9e46428fec7e7b91c7" title="Submit a write/read transaction. " alt="" coords="673,13,787,39"/><area shape="rect" id="node4" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="835,38,925,65"/><area shape="rect" id="node6" href="ms5611__i2c_8h.html#aa7ea4f69e5b5ff916ac4571219d829e1" title="ms5611_i2c_start_conversion" alt="" coords="413,63,625,90"/><area shape="rect" id="node8" href="ms5611__i2c_8h.html#aede904dca434d648c441a0f51d9850af" title="ms5611_i2c_start_configure" alt="" coords="418,114,621,141"/><area shape="rect" id="node7" href="group__i2c.html#ga68659e03504627925829f2f12c2ec6d2" title="Submit a write only transaction. " alt="" coords="679,63,781,90"/></map>
+<area shape="rect" id="node2" href="ms5611__i2c_8h.html#a45123afce6b944dbe03552035e6b6e5e" title="Periodic function to ensure proper delay after triggering reset or conversion. " alt="" coords="209,5,365,47"/><area shape="rect" id="node5" href="ms5611__i2c_8h.html#a5b15a903dc0ac45e598280f1c87953e9" title="convenience function to trigger new measurement. " alt="" coords="220,71,355,98"/><area shape="rect" id="node3" href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction. " alt="" coords="673,13,787,39"/><area shape="rect" id="node4" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="835,38,925,65"/><area shape="rect" id="node6" href="ms5611__i2c_8h.html#aa7ea4f69e5b5ff916ac4571219d829e1" title="ms5611_i2c_start_conversion" alt="" coords="413,63,625,90"/><area shape="rect" id="node8" href="ms5611__i2c_8h.html#aede904dca434d648c441a0f51d9850af" title="ms5611_i2c_start_configure" alt="" coords="418,114,621,141"/><area shape="rect" id="node7" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="679,63,781,90"/></map>
 </div>
 </p>
 
@@ -426,7 +426,7 @@ status</td>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ms5611__i2c_8h_a45123afce6b944dbe03552035e6b6e5e_cgraph.png" border="0" usemap="#ms5611__i2c_8h_a45123afce6b944dbe03552035e6b6e5e_cgraph" alt=""/></div>
 <map name="ms5611__i2c_8h_a45123afce6b944dbe03552035e6b6e5e_cgraph" id="ms5611__i2c_8h_a45123afce6b944dbe03552035e6b6e5e_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#gae029fe6bf43eaf9e46428fec7e7b91c7" title="Submit a write/read transaction. " alt="" coords="209,13,323,39"/><area shape="rect" id="node3" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="371,13,461,39"/></map>
+<area shape="rect" id="node2" href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction. " alt="" coords="209,13,323,39"/><area shape="rect" id="node3" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="371,13,461,39"/></map>
 </div>
 </p>
 
@@ -481,7 +481,7 @@ status</td>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ms5611__i2c_8h_a5b15a903dc0ac45e598280f1c87953e9_cgraph.png" border="0" usemap="#ms5611__i2c_8h_a5b15a903dc0ac45e598280f1c87953e9_cgraph" alt=""/></div>
 <map name="ms5611__i2c_8h_a5b15a903dc0ac45e598280f1c87953e9_cgraph" id="ms5611__i2c_8h_a5b15a903dc0ac45e598280f1c87953e9_cgraph">
-<area shape="rect" id="node2" href="ms5611__i2c_8h.html#aede904dca434d648c441a0f51d9850af" title="ms5611_i2c_start_configure" alt="" coords="193,5,395,32"/><area shape="rect" id="node5" href="ms5611__i2c_8h.html#aa7ea4f69e5b5ff916ac4571219d829e1" title="ms5611_i2c_start_conversion" alt="" coords="188,56,400,83"/><area shape="rect" id="node3" href="group__i2c.html#ga68659e03504627925829f2f12c2ec6d2" title="Submit a write only transaction. " alt="" coords="448,31,549,57"/><area shape="rect" id="node4" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="597,31,688,57"/></map>
+<area shape="rect" id="node2" href="ms5611__i2c_8h.html#aede904dca434d648c441a0f51d9850af" title="ms5611_i2c_start_configure" alt="" coords="193,5,395,32"/><area shape="rect" id="node5" href="ms5611__i2c_8h.html#aa7ea4f69e5b5ff916ac4571219d829e1" title="ms5611_i2c_start_conversion" alt="" coords="188,56,400,83"/><area shape="rect" id="node3" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="448,31,549,57"/><area shape="rect" id="node4" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="597,31,688,57"/></map>
 </div>
 </p>
 
@@ -514,7 +514,7 @@ status</td>
 
 <p>Definition at line <a class="el" href="ms5611__i2c_8c_source.html#l00051">51</a> of file <a class="el" href="ms5611__i2c_8c_source.html">ms5611_i2c.c</a>.</p>
 
-<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00037">Ms5611_I2c::i2c_p</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00038">Ms5611_I2c::i2c_trans</a>, <a class="el" href="i2c_8c_source.html#l00258">i2c_transmit()</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00041">Ms5611_I2c::initialized</a>, <a class="el" href="ms5611__regs_8h_source.html#l00067">MS5611_SOFT_RESET</a>, <a class="el" href="ms5611_8h_source.html#l00039">MS5611_STATUS_RESET</a>, <a class="el" href="ms5611_8h_source.html#l00038">MS5611_STATUS_UNINIT</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00044">Ms5611_I2c::prom_cnt</a>, <a class="el" href="i2c_8h_source.html#l00104">i2c_transaction::slave_addr</a>, and <a class="el" href="ms5611__i2c_8h_source.html#l00039">Ms5611_I2c::status</a>.</p>
+<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00037">Ms5611_I2c::i2c_p</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00038">Ms5611_I2c::i2c_trans</a>, <a class="el" href="i2c_8c_source.html#l00258">i2c_transmit()</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00041">Ms5611_I2c::initialized</a>, <a class="el" href="ms5611__regs_8h_source.html#l00067">MS5611_SOFT_RESET</a>, <a class="el" href="ms5611_8h_source.html#l00039">MS5611_STATUS_RESET</a>, <a class="el" href="ms5611_8h_source.html#l00038">MS5611_STATUS_UNINIT</a>, <a class="el" href="ms5611__i2c_8h_source.html#l00044">Ms5611_I2c::prom_cnt</a>, <a class="el" href="i2c_8h_source.html#l00104">i2c_transaction::slave_addr</a>, and <a class="el" href="ms5611__i2c_8h_source.html#l00039">Ms5611_I2c::status</a>.</p>
 
 <p>Referenced by <a class="el" href="ms5611__i2c_8h_source.html#l00059">ms5611_i2c_read()</a>.</p>
 
@@ -525,7 +525,7 @@ status</td>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ms5611__i2c_8h_aede904dca434d648c441a0f51d9850af_cgraph.png" border="0" usemap="#ms5611__i2c_8h_aede904dca434d648c441a0f51d9850af_cgraph" alt=""/></div>
 <map name="ms5611__i2c_8h_aede904dca434d648c441a0f51d9850af_cgraph" id="ms5611__i2c_8h_aede904dca434d648c441a0f51d9850af_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#ga68659e03504627925829f2f12c2ec6d2" title="Submit a write only transaction. " alt="" coords="256,5,357,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="405,5,496,32"/></map>
+<area shape="rect" id="node2" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="256,5,357,32"/><area shape="rect" id="node3" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="405,5,496,32"/></map>
 </div>
 </p>
 
@@ -569,7 +569,7 @@ status</td>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ms5611__i2c_8h_aa7ea4f69e5b5ff916ac4571219d829e1_cgraph.png" border="0" usemap="#ms5611__i2c_8h_aa7ea4f69e5b5ff916ac4571219d829e1_cgraph" alt=""/></div>
 <map name="ms5611__i2c_8h_aa7ea4f69e5b5ff916ac4571219d829e1_cgraph" id="ms5611__i2c_8h_aa7ea4f69e5b5ff916ac4571219d829e1_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#ga68659e03504627925829f2f12c2ec6d2" title="Submit a write only transaction. " alt="" coords="265,5,367,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="415,5,505,32"/></map>
+<area shape="rect" id="node2" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="265,5,367,32"/><area shape="rect" id="node3" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="415,5,505,32"/></map>
 </div>
 </p>
 
@@ -592,7 +592,7 @@ status</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="ms5611__i2c_8h.html">ms5611_i2c.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:59 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:08 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

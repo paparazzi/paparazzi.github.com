@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['wgs_2d84_20geoid',['WGS-84 Geoid',['../group__math__geodetic__wgs84.html',1,'']]],
-  ['wind_2d_20and_20airspeed_20representations',['Wind- and airspeed representations',['../group__state__wind__airspeed.html',1,'']]]
+  ['spi_20interface',['SPI Interface',['../group__spi.html',1,'']]],
+  ['state_20interface',['State interface',['../group__state__interface.html',1,'']]],
+  ['speed_20representations',['Speed representations',['../group__state__velocity.html',1,'']]],
+  ['stm32_20architecture',['STM32 architecture',['../group__stm32__arch.html',1,'']]]
 ];

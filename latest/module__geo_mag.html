@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: GeoMagnetic field vector</title>
+<title>Paparazzi UAS: geo_mag module</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -100,17 +100,16 @@ $(document).ready(function(){initNavTree('module__geo_mag.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">GeoMagnetic field vector </div>  </div>
+<div class="title">geo_mag module </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Module XML file: <code>geo_mag.xml</code> </p>
+<div class="textblock"><p><b>GeoMagnetic field vector.</b></p>
+<p><b></b></p>
 <p>Calculation of the normalized geomagnetic field vector at startup as soon as a valid location is aquired. The result is published via the GEO_MAG ABI message. The AHRS algorithms need to know the magnetic field vector at the current position in order to accurately calculate the heading.</p>
 <p>Method uses is based on the the ngdc noaa DODWMM model and data (<a href="http://www.ngdc.noaa.gov/geomag/WMM/DoDWMM.shtml">http://www.ngdc.noaa.gov/geomag/WMM/DoDWMM.shtml</a>). The WMM is based on earth magnetic field measuring at an high number of sites on the whole globe and on its mathematical representation through a series of characteristic values listed in a file (WMM.COF) which has a five-year validity. The autopilot used data derived from this file to make the complex calculation of declination. Every 5 years (2015, 2020) an updated geomagnetic model is released and datatables in the code must be updated accordingly for more accurate flight.</p>
 <h1><a class="anchor" id="module_load_example__geo_mag"></a>
 Example for airframe file</h1>
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;modules&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;load name=&quot;geo_mag.xml&quot;/&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;&lt;/modules&gt;</div>
+<p>Add to your firmware section: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;geo_mag&quot;/&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="functions__geo_mag"></a>
 Module functions</h1>
 <h2><a class="anchor" id="init_functions"></a>
@@ -195,7 +194,7 @@ Raw geo_mag.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:08 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:19 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

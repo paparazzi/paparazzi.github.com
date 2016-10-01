@@ -1,8 +1,8 @@
 var ads1114_8h =
 [
     [ "ads1114_periph", "ads1114_8h.html#structads1114__periph", [
-      [ "config_done", "ads1114_8h.html#a92f5a29419a924033bcadd5caf8ad6e7", null ],
-      [ "data_available", "ads1114_8h.html#a356e5a2bcac9dd882f5ffe3cf346d380", null ],
+      [ "config_done", "ads1114_8h.html#a49db431628efd8a97dafaa3cfa9b3cb2", null ],
+      [ "data_available", "ads1114_8h.html#aa5205126bf32f8fdd082798ad08d525b", null ],
       [ "i2c_addr", "ads1114_8h.html#a761a47a8b62cef73bbe01ea9e9cd1f41", null ],
       [ "trans", "ads1114_8h.html#acae0e4a8e0865e9cc6d5d3e1f3d9a809", null ]
     ] ],

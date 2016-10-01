@@ -12,8 +12,8 @@ var nav__line__osam_8c =
       [ "FLLine", "nav__line__osam_8c.html#a9dbd76495d70a6f62b70274c35348271a2af689876914fe460a0e44980689f906", null ],
       [ "FLFinished", "nav__line__osam_8c.html#a9dbd76495d70a6f62b70274c35348271aee96ee9abb5a1cd4e95f91afc0914059", null ]
     ] ],
-    [ "nav_line_osam_block_run", "nav__line__osam_8c.html#a52b50be4546af7cd9fa898f73caf62f0", null ],
-    [ "nav_line_osam_run", "nav__line__osam_8c.html#a47d8cfcc2d1a53cd30b517eddd1685cd", null ],
+    [ "nav_line_osam_block_run", "nav__line__osam_8c.html#ac82fb0de56edff0cf2c1ad0921503fb2", null ],
+    [ "nav_line_osam_run", "nav__line__osam_8c.html#aeb4d92a3eb13b8b2e4bdac64e0bc86cf", null ],
     [ "TranslateAndRotateFromWorld", "nav__line__osam_8c.html#ab7d058967ce69d5ca67b0e24bee62da6", null ],
     [ "CFLStatus", "nav__line__osam_8c.html#a2738d03f950f70b5eb685df5f3b4f193", null ],
     [ "FLBlockCount", "nav__line__osam_8c.html#a6153b4202ff509ca28071434233c4ccb", null ],

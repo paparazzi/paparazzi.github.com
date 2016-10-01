@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('pprz__simple__matrix_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pprz__simple__matrix_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2math_2pprz__simple__matrix_8hdep" alt=""/></div>
 <map name="sw_2airborne_2math_2pprz__simple__matrix_8hdep" id="sw_2airborne_2math_2pprz__simple__matrix_8hdep">
-<area shape="rect" id="node2" href="linear__flow__fit_8c.html" title="sw/airborne/modules\l/computer_vision/opticflow\l/linear_flow_fit.c" alt="" coords="5,95,196,151"/><area shape="rect" id="node3" href="ahrs__float__cmpl_8c.html" title="Complementary filter in float to estimate the attitude, heading and gyro bias. " alt="" coords="221,102,397,143"/><area shape="rect" id="node4" href="ahrs__float__mlkf_8c.html" title="Multiplicative linearized Kalman Filter in quaternion formulation. " alt="" coords="421,102,597,143"/></map>
+<area shape="rect" id="node2" href="stabilization__attitude__heli__indi_8c.html" title="Helicopter quaternion INDI attitude stabilization. " alt="" coords="5,95,172,165"/><area shape="rect" id="node3" href="linear__flow__fit_8c.html" title="sw/airborne/modules\l/computer_vision/opticflow\l/linear_flow_fit.c" alt="" coords="196,102,387,158"/><area shape="rect" id="node4" href="ahrs__float__cmpl_8c.html" title="Complementary filter in float to estimate the attitude, heading and gyro bias. " alt="" coords="411,109,587,151"/><area shape="rect" id="node5" href="ahrs__float__mlkf_8c.html" title="Multiplicative linearized Kalman Filter in quaternion formulation. " alt="" coords="611,109,787,151"/></map>
 </div>
 </div>
 <p><a href="pprz__simple__matrix_8h_source.html">Go to the source code of this file.</a></p>
@@ -147,6 +147,9 @@ Macros</h2></td></tr>
 <tr class="separator:a02c0ae5fb437280749638994286c902a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2de61f4f66043eb03434ee1967c1426"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__simple__matrix_8h.html#ac2de61f4f66043eb03434ee1967c1426">MAT_SUB</a>(_i, _j, C, <a class="el" href="ins__float__invariant_8c.html#a66c12beb10a03abecd6d5893b821e166">A</a>, <a class="el" href="ins__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a>)</td></tr>
 <tr class="separator:ac2de61f4f66043eb03434ee1967c1426"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54bfd1eda8fb7d326219c855825b8263"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__simple__matrix_8h.html#a54bfd1eda8fb7d326219c855825b8263">MAT_MUL_VECT</a>(_n, o, a, b)</td></tr>
+<tr class="memdesc:a54bfd1eda8fb7d326219c855825b8263"><td class="mdescLeft">&#160;</td><td class="mdescRight">o = a * b  <a href="#a54bfd1eda8fb7d326219c855825b8263">More...</a><br /></td></tr>
+<tr class="separator:a54bfd1eda8fb7d326219c855825b8263"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7a13444cdd63ef7b4f6e246dc46ab6e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__simple__matrix_8h.html#ae7a13444cdd63ef7b4f6e246dc46ab6e">MAT_INV33</a>(_invS, _S)</td></tr>
 <tr class="separator:ae7a13444cdd63ef7b4f6e246dc46ab6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -205,9 +208,9 @@ Macros</h2></td></tr>
 <div class="line">    _invS[2][2] =  m22 / det;                                           \</div>
 <div class="line">  }</div>
 <div class="ttc" id="pprz__simple__matrix_8h_html_a09eb14a8c70b8473c12388ce49e7cb0d"><div class="ttname"><a href="pprz__simple__matrix_8h.html#a09eb14a8c70b8473c12388ce49e7cb0d">warn_message</a></div><div class="ttdeci">#define warn_message(...)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__simple__matrix_8h_source.html#l00040">pprz_simple_matrix.h:40</a></div></div>
-<div class="ttc" id="stm32_2subsystems_2radio__control_2spektrum__arch_8c_html_a14a004ce07f47580a6800c76982ea599"><div class="ttname"><a href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">if</a></div><div class="ttdeci">if(PrimarySpektrumState.SpektrumTimer)</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00556">spektrum_arch.c:556</a></div></div>
+<div class="ttc" id="stm32_2subsystems_2radio__control_2spektrum__arch_8c_html_a14a004ce07f47580a6800c76982ea599"><div class="ttname"><a href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">if</a></div><div class="ttdeci">if(PrimarySpektrumState.SpektrumTimer)</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00605">spektrum_arch.c:605</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__simple__matrix_8h_source.html#l00086">86</a> of file <a class="el" href="pprz__simple__matrix_8h_source.html">pprz_simple_matrix.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__simple__matrix_8h_source.html#l00099">99</a> of file <a class="el" href="pprz__simple__matrix_8h_source.html">pprz_simple_matrix.h</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00222">update_state()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00290">update_state_heading()</a>.</p>
 
@@ -270,7 +273,7 @@ Macros</h2></td></tr>
 <div class="line">      }                                         \</div>
 <div class="line">  }</div>
 <div class="ttc" id="ahrs__float__invariant_8c_html_a111da81ae5883147168bbb8366377b10"><div class="ttname"><a href="ahrs__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a></div><div class="ttdeci">#define B</div><div class="ttdef"><b>Definition:</b> <a href="ahrs__float__invariant_8c_source.html#l00102">ahrs_float_invariant.c:102</a></div></div>
-<div class="ttc" id="group__math__geodetic__utm_html_ga955f504eccf76b4eb2489c0adab03121"><div class="ttname"><a href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a></div><div class="ttdeci">#define A</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__utm_8h_source.html#l00042">pprz_geodetic_utm.h:42</a></div></div>
+<div class="ttc" id="group__math__geodetic__utm_html_ga955f504eccf76b4eb2489c0adab03121"><div class="ttname"><a href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a></div><div class="ttdeci">#define A</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__utm_8h_source.html#l00044">pprz_geodetic_utm.h:44</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="pprz__simple__matrix_8h_source.html#l00046">46</a> of file <a class="el" href="pprz__simple__matrix_8h_source.html">pprz_simple_matrix.h</a>.</p>
 
@@ -335,11 +338,65 @@ Macros</h2></td></tr>
 <div class="line">      }                                         \</div>
 <div class="line">  }</div>
 <div class="ttc" id="ahrs__float__invariant_8c_html_a111da81ae5883147168bbb8366377b10"><div class="ttname"><a href="ahrs__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a></div><div class="ttdeci">#define B</div><div class="ttdef"><b>Definition:</b> <a href="ahrs__float__invariant_8c_source.html#l00102">ahrs_float_invariant.c:102</a></div></div>
-<div class="ttc" id="group__math__geodetic__utm_html_ga955f504eccf76b4eb2489c0adab03121"><div class="ttname"><a href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a></div><div class="ttdeci">#define A</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__utm_8h_source.html#l00042">pprz_geodetic_utm.h:42</a></div></div>
+<div class="ttc" id="group__math__geodetic__utm_html_ga955f504eccf76b4eb2489c0adab03121"><div class="ttname"><a href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a></div><div class="ttdeci">#define A</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__utm_8h_source.html#l00044">pprz_geodetic_utm.h:44</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="pprz__simple__matrix_8h_source.html#l00059">59</a> of file <a class="el" href="pprz__simple__matrix_8h_source.html">pprz_simple_matrix.h</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__float__mlkf_8c_source.html#l00188">propagate_state()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00222">update_state()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00290">update_state_heading()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a54bfd1eda8fb7d326219c855825b8263"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAT_MUL_VECT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">o, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">{             \</div>
+<div class="line">    int l,m;                                    \</div>
+<div class="line">    for (l = 0; l &lt; _n; l++) {                  \</div>
+<div class="line">        o[l] = 0;                               \</div>
+<div class="line">        for (m = 0; m &lt; _n; m++) {              \</div>
+<div class="line">          o[l] += a[l][m] * b[m];               \</div>
+<div class="line">        }                                       \</div>
+<div class="line">      }                                         \</div>
+<div class="line">    }</div>
+</div><!-- fragment -->
+<p>o = a * b </p>
+<p>a: [n x n] b: [n x 1] o: [n x 1] </p>
+
+<p>Definition at line <a class="el" href="pprz__simple__matrix_8h_source.html#l00086">86</a> of file <a class="el" href="pprz__simple__matrix_8h_source.html">pprz_simple_matrix.h</a>.</p>
+
+<p>Referenced by <a class="el" href="stabilization__attitude__heli__indi_8c_source.html#l00434">stabilization_attitude_run()</a>.</p>
 
 </div>
 </div>
@@ -391,7 +448,7 @@ Macros</h2></td></tr>
 <div class="line">        C[l][c] = <a class="code" href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a>[l][c] - <a class="code" href="ahrs__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a>[l][c];            \</div>
 <div class="line">  }</div>
 <div class="ttc" id="ahrs__float__invariant_8c_html_a111da81ae5883147168bbb8366377b10"><div class="ttname"><a href="ahrs__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a></div><div class="ttdeci">#define B</div><div class="ttdef"><b>Definition:</b> <a href="ahrs__float__invariant_8c_source.html#l00102">ahrs_float_invariant.c:102</a></div></div>
-<div class="ttc" id="group__math__geodetic__utm_html_ga955f504eccf76b4eb2489c0adab03121"><div class="ttname"><a href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a></div><div class="ttdeci">#define A</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__utm_8h_source.html#l00042">pprz_geodetic_utm.h:42</a></div></div>
+<div class="ttc" id="group__math__geodetic__utm_html_ga955f504eccf76b4eb2489c0adab03121"><div class="ttname"><a href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a></div><div class="ttdeci">#define A</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__utm_8h_source.html#l00044">pprz_geodetic_utm.h:44</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="pprz__simple__matrix_8h_source.html#l00073">73</a> of file <a class="el" href="pprz__simple__matrix_8h_source.html">pprz_simple_matrix.h</a>.</p>
 
@@ -423,7 +480,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_29343b6f5fcd4b75a5dfbb985ff56864.html">math</a></li><li class="navelem"><a class="el" href="pprz__simple__matrix_8h.html">pprz_simple_matrix.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:46 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:52 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

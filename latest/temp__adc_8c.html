@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -120,9 +120,10 @@ $(document).ready(function(){initNavTree('temp__adc_8c.html','');});
 <code>#include &quot;<a class="el" href="temp__adc_8h_source.html">modules/sensors/temp_adc.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="adc_8h_source.html">mcu_periph/adc.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
-<code>#include &quot;messages.h&quot;</code><br />
+<code>#include &quot;pprzlink/messages.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br />
 <code>#include &lt;BOARD_CONFIG&gt;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for temp_adc.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -130,7 +131,7 @@ $(document).ready(function(){initNavTree('temp__adc_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="temp__adc_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2sensors_2temp__adc_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2sensors_2temp__adc_8c" id="sw_2airborne_2modules_2sensors_2temp__adc_8c">
-<area shape="rect" id="node3" href="temp__adc_8h.html" title="temperature driver for LM35 and 100k NTC analog sensores " alt="" coords="46,95,215,136"/><area shape="rect" id="node4" href="adc_8h.html" title="arch independent ADC (Analog to Digital Converter) API " alt="" coords="240,102,376,129"/><area shape="rect" id="node7" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="343,191,481,218"/><area shape="rect" id="node11" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="743,95,897,136"/><area shape="rect" id="node5" href="inttypes_8h.html" title="inttypes.h" alt="" coords="847,541,932,568"/><area shape="rect" id="node9" href="link__device_8h.html" title="generic device header " alt="" coords="927,459,1110,486"/><area shape="rect" id="node14" href="pprz__transport_8h.html" title="Building and parsing Paparazzi frames. " alt="" coords="670,273,823,315"/><area shape="rect" id="node18" href="pprzlog__transport_8h.html" title="Protocol for on&#45;board data logger with timestamp. " alt="" coords="847,273,1001,315"/><area shape="rect" id="node23" href="xbee_8h.html" title="Maxstream XBee serial input and output. " alt="" coords="1195,184,1349,225"/><area shape="rect" id="node25" href="w5100_8h.html" title="W5100 ethernet chip I/O. " alt="" coords="1018,184,1171,225"/><area shape="rect" id="node15" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="785,363,938,404"/><area shape="rect" id="node17" href="transport_8h.html" title="generic transport header " alt="" coords="962,363,1115,404"/><area shape="rect" id="node19" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1323,370,1493,397"/><area shape="rect" id="node24" href="xbee24_8h.html" title="Configuration for 2.4GHz &quot;series 1&quot; and 900MHz modules. " alt="" coords="1361,273,1514,315"/></map>
+<area shape="rect" id="node3" href="temp__adc_8h.html" title="temperature driver for LM35 and 100k NTC analog sensores " alt="" coords="27,184,197,225"/><area shape="rect" id="node4" href="adc_8h.html" title="arch independent ADC (Analog to Digital Converter) API " alt="" coords="665,102,801,129"/><area shape="rect" id="node7" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="199,281,337,307"/><area shape="rect" id="node11" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="542,184,695,225"/><area shape="rect" id="node17" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="427,95,581,136"/><area shape="rect" id="node5" href="inttypes_8h.html" title="inttypes.h" alt="" coords="905,281,991,307"/><area shape="rect" id="node14" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="362,273,515,315"/></map>
 </div>
 </div>
 <p><a href="temp__adc_8c_source.html">Go to the source code of this file.</a></p>
@@ -141,12 +142,6 @@ Macros</h2></td></tr>
 <tr class="separator:ae41099cd5a34c7388782bf98a4cebb73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2df8ccf86808a610221d62f6609dc964"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp__adc_8c.html#a2df8ccf86808a610221d62f6609dc964">NTC</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a2df8ccf86808a610221d62f6609dc964"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d9f1ca346ee236095ad1dbdaee59d99"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp__adc_8c.html#a5d9f1ca346ee236095ad1dbdaee59d99">TEMP_ADC_CHANNEL1_TYPE</a>&#160;&#160;&#160;<a class="el" href="temp__adc_8c.html#ae41099cd5a34c7388782bf98a4cebb73">LM35</a></td></tr>
-<tr class="separator:a5d9f1ca346ee236095ad1dbdaee59d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5098c9fb385aa2d6894586a7128ff2f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp__adc_8c.html#ad5098c9fb385aa2d6894586a7128ff2f">TEMP_ADC_CHANNEL2_TYPE</a>&#160;&#160;&#160;<a class="el" href="temp__adc_8c.html#ae41099cd5a34c7388782bf98a4cebb73">LM35</a></td></tr>
-<tr class="separator:ad5098c9fb385aa2d6894586a7128ff2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a936e0a160615b22587feb016a67fce5b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp__adc_8c.html#a936e0a160615b22587feb016a67fce5b">TEMP_ADC_CHANNEL3_TYPE</a>&#160;&#160;&#160;<a class="el" href="temp__adc_8c.html#ae41099cd5a34c7388782bf98a4cebb73">LM35</a></td></tr>
-<tr class="separator:a936e0a160615b22587feb016a67fce5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f5ed2486df124dccfe05f2dc3b032e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp__adc_8c.html#a0f5ed2486df124dccfe05f2dc3b032e7">TEMP_ADC_NB_SAMPLES</a>&#160;&#160;&#160;<a class="el" href="adc_8h.html#a926cfe25c54a1c6ac36923aeac21223a">DEFAULT_AV_NB_SAMPLE</a></td></tr>
 <tr class="separator:a0f5ed2486df124dccfe05f2dc3b032e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c68e25d2f3d54188bf998fb8876fe06"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp__adc_8c.html#a4c68e25d2f3d54188bf998fb8876fe06">TEMP_ADC_SYNC_SEND</a>&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></td></tr>
@@ -155,24 +150,28 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a04756bf70498ed27fae22aa0486805b2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp__adc_8c.html#a04756bf70498ed27fae22aa0486805b2">calc_ntc</a> (<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> raw_temp)</td></tr>
-<tr class="separator:a04756bf70498ed27fae22aa0486805b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76afb72319493a63db85d8c2f1e86abe"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp__adc_8c.html#a76afb72319493a63db85d8c2f1e86abe">calc_lm35</a> (<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> raw_temp)</td></tr>
-<tr class="separator:a76afb72319493a63db85d8c2f1e86abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ce7f593e572bd6e02324239b0c80119"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp__adc_8c.html#a0ce7f593e572bd6e02324239b0c80119">temp_adc_downlink</a> (struct <a class="el" href="transport_8h.html#structtransport__tx">transport_tx</a> *trans, struct <a class="el" href="link__device_8h.html#structlink__device">link_device</a> *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
+<tr class="memitem:ad7d46c34d9cc451a4abac31cf37fb54c"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp__adc_8c.html#ad7d46c34d9cc451a4abac31cf37fb54c">calc_ntc</a> (<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> raw_adc, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pull_up_r, float a, float b, float c)</td></tr>
+<tr class="memdesc:ad7d46c34d9cc451a4abac31cf37fb54c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the NTC tempreature in celcius based on the Steinhart equation.  <a href="#ad7d46c34d9cc451a4abac31cf37fb54c">More...</a><br /></td></tr>
+<tr class="separator:ad7d46c34d9cc451a4abac31cf37fb54c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5929b5b9a76cc7b8e5254ab2c9ebcf51"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp__adc_8c.html#a5929b5b9a76cc7b8e5254ab2c9ebcf51">calc_lm35</a> (<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> raw_temp)</td></tr>
+<tr class="separator:a5929b5b9a76cc7b8e5254ab2c9ebcf51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ce7f593e572bd6e02324239b0c80119"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp__adc_8c.html#a0ce7f593e572bd6e02324239b0c80119">temp_adc_downlink</a> (struct transport_tx *trans, struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
 <tr class="separator:a0ce7f593e572bd6e02324239b0c80119"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a266db1bf5ea82dcb94e97eb562c18473"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp__adc_8c.html#a266db1bf5ea82dcb94e97eb562c18473">temp_adc_init</a> (void)</td></tr>
+<tr class="memdesc:a266db1bf5ea82dcb94e97eb562c18473"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temperature ADC initialize channels.  <a href="#a266db1bf5ea82dcb94e97eb562c18473">More...</a><br /></td></tr>
 <tr class="separator:a266db1bf5ea82dcb94e97eb562c18473"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace8b2170204f3b1ea7d842c4f1e5d1f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp__adc_8c.html#ace8b2170204f3b1ea7d842c4f1e5d1f5">temp_adc_periodic</a> (void)</td></tr>
 <tr class="separator:ace8b2170204f3b1ea7d842c4f1e5d1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a4e1b89c9202d5c936b64de16a67eed62"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp__adc_8c.html#a4e1b89c9202d5c936b64de16a67eed62">temp_c1</a></td></tr>
+<tr class="memitem:aba9dac3585319b75a25b61f25e30a3cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp__adc_8c.html#aba9dac3585319b75a25b61f25e30a3cd">temp_adc_sync_send</a> = false</td></tr>
+<tr class="separator:aba9dac3585319b75a25b61f25e30a3cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e1b89c9202d5c936b64de16a67eed62"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp__adc_8c.html#a4e1b89c9202d5c936b64de16a67eed62">temp_c1</a></td></tr>
 <tr class="separator:a4e1b89c9202d5c936b64de16a67eed62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57b31e6f9b242aaee2eec52e3aa63ee2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp__adc_8c.html#a57b31e6f9b242aaee2eec52e3aa63ee2">temp_c2</a></td></tr>
+<tr class="memitem:a57b31e6f9b242aaee2eec52e3aa63ee2"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp__adc_8c.html#a57b31e6f9b242aaee2eec52e3aa63ee2">temp_c2</a></td></tr>
 <tr class="separator:a57b31e6f9b242aaee2eec52e3aa63ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c061dd0c04a6fa317ee0395c2e0b913"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp__adc_8c.html#a7c061dd0c04a6fa317ee0395c2e0b913">temp_c3</a></td></tr>
+<tr class="memitem:a7c061dd0c04a6fa317ee0395c2e0b913"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp__adc_8c.html#a7c061dd0c04a6fa317ee0395c2e0b913">temp_c3</a></td></tr>
 <tr class="separator:a7c061dd0c04a6fa317ee0395c2e0b913"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -190,7 +189,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="temp__adc_8c_source.html#l00040">40</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
+<p>Definition at line <a class="el" href="temp__adc_8c_source.html#l00041">41</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
 
 </div>
 </div>
@@ -204,49 +203,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="temp__adc_8c_source.html#l00041">41</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5d9f1ca346ee236095ad1dbdaee59d99"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define TEMP_ADC_CHANNEL1_TYPE&#160;&#160;&#160;<a class="el" href="temp__adc_8c.html#ae41099cd5a34c7388782bf98a4cebb73">LM35</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="temp__adc_8c_source.html#l00052">52</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ad5098c9fb385aa2d6894586a7128ff2f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define TEMP_ADC_CHANNEL2_TYPE&#160;&#160;&#160;<a class="el" href="temp__adc_8c.html#ae41099cd5a34c7388782bf98a4cebb73">LM35</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="temp__adc_8c_source.html#l00055">55</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a936e0a160615b22587feb016a67fce5b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define TEMP_ADC_CHANNEL3_TYPE&#160;&#160;&#160;<a class="el" href="temp__adc_8c.html#ae41099cd5a34c7388782bf98a4cebb73">LM35</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="temp__adc_8c_source.html#l00058">58</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
+<p>Definition at line <a class="el" href="temp__adc_8c_source.html#l00042">42</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
 
 </div>
 </div>
@@ -260,9 +217,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="temp__adc_8c_source.html#l00074">74</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
+<p>Definition at line <a class="el" href="temp__adc_8c_source.html#l00077">77</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
 
-<p>Referenced by <a class="el" href="temp__adc_8c_source.html#l00106">temp_adc_init()</a>.</p>
+<p>Referenced by <a class="el" href="temp__adc_8c_source.html#l00115">temp_adc_init()</a>.</p>
 
 </div>
 </div>
@@ -279,69 +236,117 @@ Variables</h2></td></tr>
 <p>Send a TEMP_ADC message with every new measurement. </p>
 <p>Mainly for debug, use with caution, sends message at ~10Hz. </p>
 
-<p>Definition at line <a class="el" href="temp__adc_8c_source.html#l00081">81</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
+<p>Definition at line <a class="el" href="temp__adc_8c_source.html#l00084">84</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
 
-<p>Referenced by <a class="el" href="temp__adc_8c_source.html#l00106">temp_adc_init()</a>.</p>
+<p>Referenced by <a class="el" href="temp__adc_8c_source.html#l00115">temp_adc_init()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a76afb72319493a63db85d8c2f1e86abe"></a>
+<a class="anchor" id="a5929b5b9a76cc7b8e5254ab2c9ebcf51"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float calc_lm35 </td>
+          <td class="memname">static float calc_lm35 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td>
           <td class="paramname"><em>raw_temp</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="temp__adc_8c_source.html#l00096">96</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
+<p>Definition at line <a class="el" href="temp__adc_8c_source.html#l00102">102</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
 
-<p>Referenced by <a class="el" href="temp__adc_8c_source.html#l00128">temp_adc_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="temp__adc_8c_source.html#l00137">temp_adc_periodic()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="temp__adc_8c_a76afb72319493a63db85d8c2f1e86abe_icgraph.png" border="0" usemap="#temp__adc_8c_a76afb72319493a63db85d8c2f1e86abe_icgraph" alt=""/></div>
-<map name="temp__adc_8c_a76afb72319493a63db85d8c2f1e86abe_icgraph" id="temp__adc_8c_a76afb72319493a63db85d8c2f1e86abe_icgraph">
+<div class="center"><img src="temp__adc_8c_a5929b5b9a76cc7b8e5254ab2c9ebcf51_icgraph.png" border="0" usemap="#temp__adc_8c_a5929b5b9a76cc7b8e5254ab2c9ebcf51_icgraph" alt=""/></div>
+<map name="temp__adc_8c_a5929b5b9a76cc7b8e5254ab2c9ebcf51_icgraph" id="temp__adc_8c_a5929b5b9a76cc7b8e5254ab2c9ebcf51_icgraph">
 <area shape="rect" id="node2" href="temp__adc_8h.html#ace8b2170204f3b1ea7d842c4f1e5d1f5" title="temp_adc_periodic" alt="" coords="140,5,283,32"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a04756bf70498ed27fae22aa0486805b2"></a>
+<a class="anchor" id="ad7d46c34d9cc451a4abac31cf37fb54c"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float calc_ntc </td>
+          <td class="memname">static float calc_ntc </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>&#160;</td>
-          <td class="paramname"><em>raw_temp</em></td><td>)</td>
+          <td class="paramname"><em>raw_adc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>pull_up_r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="temp__adc_8c_source.html#l00084">84</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
+<p>Calculate the NTC tempreature in celcius based on the Steinhart equation. </p>
 
-<p>Referenced by <a class="el" href="temp__adc_8c_source.html#l00128">temp_adc_periodic()</a>.</p>
+<p>Definition at line <a class="el" href="temp__adc_8c_source.html#l00090">90</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
+
+<p>References <a class="el" href="lpc21_2mcu__periph_2adc__arch_8h_source.html#l00037">ADC_RESOLUTION</a>.</p>
+
+<p>Referenced by <a class="el" href="temp__adc_8c_source.html#l00137">temp_adc_periodic()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="temp__adc_8c_a04756bf70498ed27fae22aa0486805b2_icgraph.png" border="0" usemap="#temp__adc_8c_a04756bf70498ed27fae22aa0486805b2_icgraph" alt=""/></div>
-<map name="temp__adc_8c_a04756bf70498ed27fae22aa0486805b2_icgraph" id="temp__adc_8c_a04756bf70498ed27fae22aa0486805b2_icgraph">
+<div class="center"><img src="temp__adc_8c_ad7d46c34d9cc451a4abac31cf37fb54c_icgraph.png" border="0" usemap="#temp__adc_8c_ad7d46c34d9cc451a4abac31cf37fb54c_icgraph" alt=""/></div>
+<map name="temp__adc_8c_ad7d46c34d9cc451a4abac31cf37fb54c_icgraph" id="temp__adc_8c_ad7d46c34d9cc451a4abac31cf37fb54c_icgraph">
 <area shape="rect" id="node2" href="temp__adc_8h.html#ace8b2170204f3b1ea7d842c4f1e5d1f5" title="temp_adc_periodic" alt="" coords="128,5,271,32"/></map>
 </div>
 </p>
@@ -358,13 +363,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static void temp_adc_downlink </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="transport_8h.html#structtransport__tx">transport_tx</a> *&#160;</td>
+          <td class="paramtype">struct transport_tx *&#160;</td>
           <td class="paramname"><em>trans</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="link__device_8h.html#structlink__device">link_device</a> *&#160;</td>
+          <td class="paramtype">struct link_device *&#160;</td>
           <td class="paramname"><em>dev</em>&#160;</td>
         </tr>
         <tr>
@@ -380,11 +385,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="temp__adc_8c_source.html#l00101">101</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
+<p>Definition at line <a class="el" href="temp__adc_8c_source.html#l00107">107</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
 
-<p>References <a class="el" href="temp__adc_8c_source.html#l00034">temp_c1</a>, <a class="el" href="temp__adc_8c_source.html#l00034">temp_c2</a>, and <a class="el" href="temp__adc_8c_source.html#l00034">temp_c3</a>.</p>
+<p>References <a class="el" href="temp__adc_8c_source.html#l00035">temp_c1</a>, <a class="el" href="temp__adc_8c_source.html#l00035">temp_c2</a>, and <a class="el" href="temp__adc_8c_source.html#l00035">temp_c3</a>.</p>
 
-<p>Referenced by <a class="el" href="temp__adc_8c_source.html#l00106">temp_adc_init()</a>, and <a class="el" href="temp__adc_8c_source.html#l00128">temp_adc_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="temp__adc_8c_source.html#l00115">temp_adc_init()</a>, and <a class="el" href="temp__adc_8c_source.html#l00137">temp_adc_periodic()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -393,7 +398,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="temp__adc_8c_a0ce7f593e572bd6e02324239b0c80119_icgraph.png" border="0" usemap="#temp__adc_8c_a0ce7f593e572bd6e02324239b0c80119_icgraph" alt=""/></div>
 <map name="temp__adc_8c_a0ce7f593e572bd6e02324239b0c80119_icgraph" id="temp__adc_8c_a0ce7f593e572bd6e02324239b0c80119_icgraph">
-<area shape="rect" id="node2" href="temp__adc_8h.html#a266db1bf5ea82dcb94e97eb562c18473" title="temp_adc_init" alt="" coords="215,5,327,32"/><area shape="rect" id="node3" href="temp__adc_8h.html#ace8b2170204f3b1ea7d842c4f1e5d1f5" title="temp_adc_periodic" alt="" coords="200,56,343,83"/></map>
+<area shape="rect" id="node2" href="temp__adc_8h.html#a266db1bf5ea82dcb94e97eb562c18473" title="Temperature ADC initialize channels. " alt="" coords="215,5,327,32"/><area shape="rect" id="node3" href="temp__adc_8h.html#ace8b2170204f3b1ea7d842c4f1e5d1f5" title="temp_adc_periodic" alt="" coords="200,56,343,83"/></map>
 </div>
 </p>
 
@@ -413,9 +418,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="temp__adc_8c_source.html#l00106">106</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
+<p>Temperature ADC initialize channels. </p>
 
-<p>References <a class="el" href="linux_2mcu__periph_2adc__arch_8c_source.html#l00091">adc_buf_channel()</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, <a class="el" href="temp__adc_8c_source.html#l00101">temp_adc_downlink()</a>, <a class="el" href="temp__adc_8c_source.html#l00074">TEMP_ADC_NB_SAMPLES</a>, <a class="el" href="temp__adc_8h_source.html#l00032">temp_adc_sync_send</a>, and <a class="el" href="temp__adc_8c_source.html#l00081">TEMP_ADC_SYNC_SEND</a>.</p>
+<p>Definition at line <a class="el" href="temp__adc_8c_source.html#l00115">115</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
+
+<p>References <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00265">adc_buf_channel()</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, <a class="el" href="opa__ap__1_80_8h_source.html#l00212">TEMP_ADC_CHANNEL1</a>, <a class="el" href="opa__ap__1_80_8h_source.html#l00226">TEMP_ADC_CHANNEL2</a>, <a class="el" href="temp__adc_8c_source.html#l00107">temp_adc_downlink()</a>, <a class="el" href="temp__adc_8c_source.html#l00077">TEMP_ADC_NB_SAMPLES</a>, <a class="el" href="temp__adc_8c_source.html#l00034">temp_adc_sync_send</a>, and <a class="el" href="temp__adc_8c_source.html#l00084">TEMP_ADC_SYNC_SEND</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -424,7 +431,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="temp__adc_8c_a266db1bf5ea82dcb94e97eb562c18473_cgraph.png" border="0" usemap="#temp__adc_8c_a266db1bf5ea82dcb94e97eb562c18473_cgraph" alt=""/></div>
 <map name="temp__adc_8c_a266db1bf5ea82dcb94e97eb562c18473_cgraph" id="temp__adc_8c_a266db1bf5ea82dcb94e97eb562c18473_cgraph">
-<area shape="rect" id="node2" href="linux_2mcu__periph_2adc__arch_8c.html#a289883844d6749adab1cee5aabe41824" title="Registers a buffer to be used to store the specified converted channel Usage: " alt="" coords="199,5,329,32"/><area shape="rect" id="node3" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="165,56,363,83"/><area shape="rect" id="node4" href="temp__adc_8c.html#a0ce7f593e572bd6e02324239b0c80119" title="temp_adc_downlink" alt="" coords="191,107,337,133"/></map>
+<area shape="rect" id="node2" href="chibios_2mcu__periph_2adc__arch_8c.html#a289883844d6749adab1cee5aabe41824" title="Link between ChibiOS ADC drivers and Paparazzi adc_buffers. " alt="" coords="199,5,329,32"/><area shape="rect" id="node3" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="165,56,363,83"/><area shape="rect" id="node4" href="temp__adc_8c.html#a0ce7f593e572bd6e02324239b0c80119" title="temp_adc_downlink" alt="" coords="191,107,337,133"/></map>
 </div>
 </p>
 
@@ -444,9 +451,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="temp__adc_8c_source.html#l00128">128</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
+<p>Definition at line <a class="el" href="temp__adc_8c_source.html#l00137">137</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
 
-<p>References <a class="el" href="temp__adc_8c_source.html#l00096">calc_lm35()</a>, <a class="el" href="temp__adc_8c_source.html#l00084">calc_ntc()</a>, <a class="el" href="downlink_8h_source.html#l00079">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00083">DefaultDevice</a>, <a class="el" href="temp__adc_8c_source.html#l00101">temp_adc_downlink()</a>, <a class="el" href="temp__adc_8h_source.html#l00032">temp_adc_sync_send</a>, <a class="el" href="temp__adc_8c_source.html#l00034">temp_c1</a>, <a class="el" href="temp__adc_8c_source.html#l00034">temp_c2</a>, and <a class="el" href="temp__adc_8c_source.html#l00034">temp_c3</a>.</p>
+<p>References <a class="el" href="temp__adc_8c_source.html#l00102">calc_lm35()</a>, <a class="el" href="temp__adc_8c_source.html#l00090">calc_ntc()</a>, <a class="el" href="downlink_8h_source.html#l00084">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00088">DefaultDevice</a>, <a class="el" href="opa__ap__1_80_8h_source.html#l00215">TEMP_ADC_CHANNEL1_A</a>, <a class="el" href="opa__ap__1_80_8h_source.html#l00216">TEMP_ADC_CHANNEL1_B</a>, <a class="el" href="opa__ap__1_80_8h_source.html#l00217">TEMP_ADC_CHANNEL1_C</a>, <a class="el" href="opa__ap__1_80_8h_source.html#l00214">TEMP_ADC_CHANNEL1_PU_R</a>, <a class="el" href="opa__ap__1_80_8h_source.html#l00229">TEMP_ADC_CHANNEL2_A</a>, <a class="el" href="opa__ap__1_80_8h_source.html#l00230">TEMP_ADC_CHANNEL2_B</a>, <a class="el" href="opa__ap__1_80_8h_source.html#l00231">TEMP_ADC_CHANNEL2_C</a>, <a class="el" href="opa__ap__1_80_8h_source.html#l00228">TEMP_ADC_CHANNEL2_PU_R</a>, <a class="el" href="temp__adc_8c_source.html#l00107">temp_adc_downlink()</a>, <a class="el" href="temp__adc_8c_source.html#l00034">temp_adc_sync_send</a>, <a class="el" href="temp__adc_8c_source.html#l00035">temp_c1</a>, <a class="el" href="temp__adc_8c_source.html#l00035">temp_c2</a>, and <a class="el" href="temp__adc_8c_source.html#l00035">temp_c3</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -455,58 +462,98 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="temp__adc_8c_ace8b2170204f3b1ea7d842c4f1e5d1f5_cgraph.png" border="0" usemap="#temp__adc_8c_ace8b2170204f3b1ea7d842c4f1e5d1f5_cgraph" alt=""/></div>
 <map name="temp__adc_8c_ace8b2170204f3b1ea7d842c4f1e5d1f5_cgraph" id="temp__adc_8c_ace8b2170204f3b1ea7d842c4f1e5d1f5_cgraph">
-<area shape="rect" id="node2" href="temp__adc_8c.html#a76afb72319493a63db85d8c2f1e86abe" title="calc_lm35" alt="" coords="226,5,313,32"/><area shape="rect" id="node3" href="temp__adc_8c.html#a04756bf70498ed27fae22aa0486805b2" title="calc_ntc" alt="" coords="232,56,307,83"/><area shape="rect" id="node4" href="temp__adc_8c.html#a0ce7f593e572bd6e02324239b0c80119" title="temp_adc_downlink" alt="" coords="196,107,343,133"/></map>
+<area shape="rect" id="node2" href="temp__adc_8c.html#a5929b5b9a76cc7b8e5254ab2c9ebcf51" title="calc_lm35" alt="" coords="226,5,313,32"/><area shape="rect" id="node3" href="temp__adc_8c.html#ad7d46c34d9cc451a4abac31cf37fb54c" title="Calculate the NTC tempreature in celcius based on the Steinhart equation. " alt="" coords="232,56,307,83"/><area shape="rect" id="node4" href="temp__adc_8c.html#a0ce7f593e572bd6e02324239b0c80119" title="temp_adc_downlink" alt="" coords="196,107,343,133"/></map>
 </div>
 </p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a4e1b89c9202d5c936b64de16a67eed62"></a>
+<a class="anchor" id="aba9dac3585319b75a25b61f25e30a3cd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float temp_c1</td>
+          <td class="memname">bool temp_adc_sync_send = false</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="temp__adc_8c_source.html#l00034">34</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
 
-<p>Referenced by <a class="el" href="temp__adc_8c_source.html#l00101">temp_adc_downlink()</a>, and <a class="el" href="temp__adc_8c_source.html#l00128">temp_adc_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="temp__adc_8c_source.html#l00115">temp_adc_init()</a>, and <a class="el" href="temp__adc_8c_source.html#l00137">temp_adc_periodic()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4e1b89c9202d5c936b64de16a67eed62"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float temp_c1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="temp__adc_8c_source.html#l00035">35</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
+
+<p>Referenced by <a class="el" href="temp__adc_8c_source.html#l00107">temp_adc_downlink()</a>, and <a class="el" href="temp__adc_8c_source.html#l00137">temp_adc_periodic()</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="a57b31e6f9b242aaee2eec52e3aa63ee2"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">float temp_c2</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="temp__adc_8c_source.html#l00034">34</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
+<p>Definition at line <a class="el" href="temp__adc_8c_source.html#l00035">35</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
 
-<p>Referenced by <a class="el" href="temp__adc_8c_source.html#l00101">temp_adc_downlink()</a>, and <a class="el" href="temp__adc_8c_source.html#l00128">temp_adc_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="temp__adc_8c_source.html#l00107">temp_adc_downlink()</a>, and <a class="el" href="temp__adc_8c_source.html#l00137">temp_adc_periodic()</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="a7c061dd0c04a6fa317ee0395c2e0b913"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">float temp_c3</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="temp__adc_8c_source.html#l00034">34</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
+<p>Definition at line <a class="el" href="temp__adc_8c_source.html#l00035">35</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
 
-<p>Referenced by <a class="el" href="temp__adc_8c_source.html#l00101">temp_adc_downlink()</a>, and <a class="el" href="temp__adc_8c_source.html#l00128">temp_adc_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="temp__adc_8c_source.html#l00107">temp_adc_downlink()</a>, and <a class="el" href="temp__adc_8c_source.html#l00137">temp_adc_periodic()</a>.</p>
 
 </div>
 </div>
@@ -516,7 +563,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="temp__adc_8c.html">temp_adc.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:57 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:05 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -1,11 +1,32 @@
 <map id="float_quat_of_orientation_vect" name="float_quat_of_orientation_vect">
-<area shape="rect" id="node2" href="$stabilization__attitude__quat__transformations_8h.html#a875d6ee5cde39474c4ce13dd340cb262" title="quat_from_earth_cmd_f" alt="" coords="275,71,449,98"/>
-<area shape="rect" id="node6" href="$stabilization__attitude__quat__transformations_8h.html#a10ec980ce6bc935ea53ec3bfca04fe3d" title="quat_from_rpy_cmd_f" alt="" coords="281,130,443,157"/>
-<area shape="rect" id="node8" href="$stabilization__attitude__rc__setpoint_8h.html#a1700308a4ecb46cc5ca8691e78ce69a3" title="Read roll/pitch command from RC as quaternion. " alt="" coords="268,181,456,223"/>
-<area shape="rect" id="node3" href="$stabilization__attitude__quat__transformations_8h.html#acfb3bfa8af4aebad848717cd26aa78ee" title="quat_from_earth_cmd_i" alt="" coords="508,13,683,39"/>
-<area shape="rect" id="node5" href="$stabilization__attitude__quat__float_8c.html#ada3ef183c206d08fd0a902adc118f542" title="stabilization_attitude\l_set_earth_cmd_i" alt="" coords="518,64,673,105"/>
-<area shape="rect" id="node4" href="$stabilization__attitude__quat__indi_8c.html#ada3ef183c206d08fd0a902adc118f542" title="stabilization_attitude\l_set_earth_cmd_i" alt="" coords="735,5,889,47"/>
-<area shape="rect" id="node7" href="$stabilization__attitude__quat__transformations_8h.html#a781fdef7edec84ea09c1faf34d1316e8" title="quat_from_rpy_cmd_i" alt="" coords="515,130,675,157"/>
-<area shape="rect" id="node9" href="$stabilization__attitude__rc__setpoint_8h.html#a9d0b7ad4c9f5c936c3f06910ac5d0185" title="Read attitude setpoint from RC as quaternion Interprets the stick positions as axes. " alt="" coords="504,181,687,223"/>
-<area shape="rect" id="node10" href="$stabilization__attitude__quat__float_8c.html#add34cd878dfdd9fd4d0912a06fbc58bc" title="stabilization_attitude\l_read_rc" alt="" coords="735,181,889,223"/>
+<area shape="rect" id="node2" href="$guidance__hybrid_8h.html#a1cfa8fe1e8d7d2711d02b071c4a24523" title="Creates the attitude set&#45;points from an orientation vector. " alt="" coords="287,111,440,153"/>
+<area shape="rect" id="node13" href="$stabilization__attitude__quat__transformations_8h.html#a875d6ee5cde39474c4ce13dd340cb262" title="quat_from_earth_cmd_f" alt="" coords="276,205,451,232"/>
+<area shape="rect" id="node19" href="$stabilization__attitude__quat__transformations_8h.html#a10ec980ce6bc935ea53ec3bfca04fe3d" title="quat_from_rpy_cmd_f" alt="" coords="283,264,444,291"/>
+<area shape="rect" id="node23" href="$stabilization__attitude__heli__indi_8h.html#a7e6a1b925bdb9ba1e48a46a642cc603e" title="stabilization_attitude_heli_indi_set_steadystate_pitchroll " alt="" coords="268,340,459,396"/>
+<area shape="rect" id="node27" href="$stabilization__attitude__rc__setpoint_8h.html#a1700308a4ecb46cc5ca8691e78ce69a3" title="Read roll/pitch command from RC as quaternion. " alt="" coords="269,471,457,513"/>
+<area shape="rect" id="node3" href="$guidance__hybrid_8h.html#aec05281e53f21c0519de91624cf65399" title="Runs the Hybrid Guidance main functions. " alt="" coords="543,89,698,116"/>
+<area shape="rect" id="node4" href="$guidance__h_8h.html#afff2f6a359638c74d5d1051c3edfa554" title="guidance_h_run" alt="" coords="799,81,921,108"/>
+<area shape="rect" id="node5" href="$rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="995,81,1130,108"/>
+<area shape="rect" id="node6" href="$rotorcraft_2main__fbw_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="1188,81,1299,108"/>
+<area shape="rect" id="node7" href="$rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="1347,81,1509,108"/>
+<area shape="rect" id="node8" href="$fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1615,5,1670,32"/>
+<area shape="rect" id="node9" href="$nps__autopilot__fixedwing_8c.html#a12870aaa609d4860004be3cec4c8cf2a" title="nps_autopilot_run_step" alt="" coords="1557,56,1728,83"/>
+<area shape="rect" id="node10" href="$main__chibios_8c.html#a1bd1ec0fdc597d88ee659889cda25c0a" title="thd_ap" alt="" coords="1609,107,1676,133"/>
+<area shape="rect" id="node12" href="$main__chibios_8c.html#a4042bcab9578175e00c82adcc2b251f8" title="thd_fbw" alt="" coords="1607,157,1678,184"/>
+<area shape="rect" id="node11" href="$main__chibios_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function. " alt="" coords="1776,132,1831,159"/>
+<area shape="rect" id="node14" href="$stabilization__attitude__quat__transformations_8h.html#acfb3bfa8af4aebad848717cd26aa78ee" title="quat_from_earth_cmd_i" alt="" coords="533,147,708,173"/>
+<area shape="rect" id="node18" href="$stabilization__attitude__quat__float_8c.html#ada3ef183c206d08fd0a902adc118f542" title="stabilization_attitude\l_set_earth_cmd_i" alt="" coords="543,198,698,239"/>
+<area shape="rect" id="node15" href="$stabilization__attitude__heli__indi_8c.html#ada3ef183c206d08fd0a902adc118f542" title="stabilization_attitude\l_set_earth_cmd_i" alt="" coords="783,133,937,174"/>
+<area shape="rect" id="node16" href="$stabilization__indi_8h.html#a487bd4ac66f844d9d1adfb696f950604" title="stabilization_indi\l_set_earth_cmd_i" alt="" coords="793,198,927,239"/>
+<area shape="rect" id="node17" href="$stabilization__attitude__quat__indi_8c.html#ada3ef183c206d08fd0a902adc118f542" title="stabilization_attitude\l_set_earth_cmd_i" alt="" coords="985,198,1140,239"/>
+<area shape="rect" id="node20" href="$stabilization__attitude__quat__transformations_8h.html#a781fdef7edec84ea09c1faf34d1316e8" title="quat_from_rpy_cmd_i" alt="" coords="541,264,701,291"/>
+<area shape="rect" id="node21" href="$stabilization__indi_8h.html#aac24f92be2dd7af42e3e7906a1324fe9" title="stabilization_indi\l_set_rpy_setpoint_i" alt="" coords="787,263,933,305"/>
+<area shape="rect" id="node22" href="$stabilization__attitude__quat__indi_8c.html#ac064607f64988793cadfe5ed346b269f" title="stabilization_attitude\l_set_rpy_setpoint_i" alt="" coords="985,263,1140,305"/>
+<area shape="rect" id="node24" href="$stabilization__attitude__heli__indi_8h.html#a3f6db3c7496be39d608c12bfd4770fa9" title="stabilization_attitude_heli_indi_set_steadystate_pitch " alt="" coords="507,315,735,357"/>
+<area shape="rect" id="node25" href="$stabilization__attitude__heli__indi_8h.html#a233b33e7242fb862ab436131bb53d517" title="stabilization_attitude_heli_indi_set_steadystate_roll " alt="" coords="513,381,729,422"/>
+<area shape="rect" id="node26" href="$stabilization__attitude__heli__indi_8c.html#a03d27593d891182c04fc5337766733d1" title="stabilization_attitude_init " alt="" coords="530,447,711,473"/>
+<area shape="rect" id="node28" href="$stabilization__attitude__rc__setpoint_8h.html#a7e0d148d1e5210bb1b299163d77daa4a" title="Read attitude setpoint from RC as quaternion Interprets the stick positions as axes. " alt="" coords="529,498,712,539"/>
+<area shape="rect" id="node29" href="$stabilization__attitude__heli__indi_8c.html#ad17347abf36f7dfc4abb0218f10b5f09" title="stabilization_attitude\l_read_rc" alt="" coords="783,465,937,506"/>
+<area shape="rect" id="node30" href="$stabilization__indi_8h.html#a12143cafcad8c2db6f07b2cc072851d5" title="stabilization_indi\l_read_rc" alt="" coords="797,530,923,571"/>
+<area shape="rect" id="node31" href="$stabilization__attitude__quat__indi_8c.html#ad17347abf36f7dfc4abb0218f10b5f09" title="stabilization_attitude\l_read_rc" alt="" coords="985,530,1140,571"/>
 </map>

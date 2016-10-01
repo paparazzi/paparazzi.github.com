@@ -21,7 +21,7 @@ var subsystems_2navigation_2waypoints_8h =
     [ "waypoint_get_x", "subsystems_2navigation_2waypoints_8h.html#a62061108340141e0fda55b7c0d8f0145", null ],
     [ "waypoint_get_y", "subsystems_2navigation_2waypoints_8h.html#ab6dc3af2d184a91218a1fe7f02b858bc", null ],
     [ "waypoint_globalize", "subsystems_2navigation_2waypoints_8h.html#a10acece8582506367e9e9df3694bf31b", null ],
-    [ "waypoint_is_global", "subsystems_2navigation_2waypoints_8h.html#a66de5ecd98d9e26a9170844da476e244", null ],
+    [ "waypoint_is_global", "subsystems_2navigation_2waypoints_8h.html#a4f584367219ec09db0e1df24c85e7a1b", null ],
     [ "waypoint_localize", "subsystems_2navigation_2waypoints_8h.html#af184581f432d472b608685122f2d944d", null ],
     [ "waypoint_move_enu_i", "subsystems_2navigation_2waypoints_8h.html#aa759c25e1ecc60cc27a614e366ab05a4", null ],
     [ "waypoint_move_lla", "subsystems_2navigation_2waypoints_8h.html#af898f624e88c626a1d47300e872ac444", null ],

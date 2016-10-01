@@ -1,6 +1,8 @@
 var gps__udp_8h =
 [
-    [ "GPS_NB_CHANNELS", "gps__udp_8h.html#a63f1b81cf4a1e8e0fe80f065224826fe", null ],
-    [ "GpsEvent", "gps__udp_8h.html#ad43d03c9717a93b3211d8694ebf3a79d", null ],
-    [ "gps_parse", "gps__udp_8h.html#afd0dde7def0fab152cf70af56a052e29", null ]
+    [ "gps_udp_periodic_check", "gps__udp_8h.html#a71fa09defb9b01be8ba41f775d1ca114", null ],
+    [ "PRIMARY_GPS", "gps__udp_8h.html#a0eb39777eac135c917af2eed39cce7f1", null ],
+    [ "gps_udp_init", "gps__udp_8h.html#a65dc6843eec8ce49717e2e2238d898cb", null ],
+    [ "gps_udp_parse", "gps__udp_8h.html#a9622fb16f467bced6c6c077e8e941f23", null ],
+    [ "gps_udp", "gps__udp_8h.html#a4f1d555baba5ae777530401dd322b09e", null ]
 ];

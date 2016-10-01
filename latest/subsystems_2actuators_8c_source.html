@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -139,16 +139,16 @@ $(document).ready(function(){initNavTree('subsystems_2actuators_8c_source.html',
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> actuators[ACTUATORS_NB];</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> actuators_delay_time;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;bool_t   actuators_delay_done;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">bool</span>   actuators_delay_done;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">void</span> actuators_init(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#if defined ACTUATORS_START_DELAY &amp;&amp; ! defined SITL</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  actuators_delay_done = <a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  actuators_delay_done = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="sys__time_8h.html#a0583c93a24eed5f81e1f647ca63a652a">SysTimeTimerStart</a>(actuators_delay_time);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  actuators_delay_done = <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  actuators_delay_done = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  actuators_delay_time = 0;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
@@ -158,20 +158,18 @@ $(document).ready(function(){initNavTree('subsystems_2actuators_8c_source.html',
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="std_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> <a href="std_8h_source.html#l00005">std.h:5</a></div></div>
 <div class="ttc" id="subsystems_2actuators_8h_html"><div class="ttname"><a href="subsystems_2actuators_8h.html">actuators.h</a></div><div class="ttdoc">Hardware independent API for actuators (servos, motor controllers). </div></div>
-<div class="ttc" id="std_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> <a href="std_8h_source.html#l00004">std.h:4</a></div></div>
 <div class="ttc" id="sys__time_8h_html"><div class="ttname"><a href="sys__time_8h.html">sys_time.h</a></div><div class="ttdoc">Architecture independent timing functions. </div></div>
 <div class="ttc" id="types_8h_html_a06896e8c53f721507066c079052171f8"><div class="ttname"><a href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></div><div class="ttdeci">unsigned long uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00018">types.h:18</a></div></div>
 <div class="ttc" id="types_8h_html_a269259c924dce846340ddbb810db2e3c"><div class="ttname"><a href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a></div><div class="ttdeci">signed short int16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00017">types.h:17</a></div></div>
-<div class="ttc" id="sys__time_8h_html_a0583c93a24eed5f81e1f647ca63a652a"><div class="ttname"><a href="sys__time_8h.html#a0583c93a24eed5f81e1f647ca63a652a">SysTimeTimerStart</a></div><div class="ttdeci">#define SysTimeTimerStart(_t)</div><div class="ttdef"><b>Definition:</b> <a href="sys__time_8h_source.html#l00213">sys_time.h:213</a></div></div>
+<div class="ttc" id="sys__time_8h_html_a0583c93a24eed5f81e1f647ca63a652a"><div class="ttname"><a href="sys__time_8h.html#a0583c93a24eed5f81e1f647ca63a652a">SysTimeTimerStart</a></div><div class="ttdeci">#define SysTimeTimerStart(_t)</div><div class="ttdef"><b>Definition:</b> <a href="sys__time_8h_source.html#l00218">sys_time.h:218</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="subsystems_2actuators_8c.html">actuators.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:16 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:15 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -1,24 +1,23 @@
 <map id="ltp_def_from_ecef_i" name="ltp_def_from_ecef_i">
-<area shape="rect" id="node2" href="$gps_8h.html#ac51e6a5f7940a0acc9dc44b1b8085331" title="GPS model specific init implementation. " alt="" coords="248,59,353,85"/>
-<area shape="rect" id="node8" href="$gps__skytraq_8h.html#a82455efa55f2f00f1ab1524b9f82dc1d" title="gps_skytraq_read_message" alt="" coords="200,111,401,137"/>
-<area shape="rect" id="node11" href="$ins__float__invariant_8h.html#a337aa9b464c923af97d19ec0bfdb6f02" title="ins_float_invariant_init" alt="" coords="219,165,382,192"/>
-<area shape="rect" id="node13" href="$ins__gps__passthrough_8h.html#a65b4389487e1468dd9245eacf2ce07b3" title="ins_gps_passthrough_init" alt="" coords="209,216,392,243"/>
-<area shape="rect" id="node15" href="$ins__int_8c.html#a4a87b109da7096f36e497b491ebfdfd6" title="initialize the local origin (ltp_def) from flight plan position " alt="" coords="228,267,373,309"/>
-<area shape="rect" id="node18" href="$ins__float__invariant_8c.html#a14cb66a86c67d8b9216a8c12f58c311b" title="INS local origin reset. " alt="" coords="221,333,380,360"/>
-<area shape="rect" id="node19" href="$gps__furuno_8c.html#a2a6344ac43992ad22974f50f5f581ab9" title="nmea_parse_perdcrv" alt="" coords="222,384,379,411"/>
-<area shape="rect" id="node3" href="$gps_8h.html#ab37f7040b9efd19fdd3f92b1df77e771" title="initialize the global GPS state " alt="" coords="501,56,571,83"/>
-<area shape="rect" id="node4" href="$main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="707,5,771,32"/>
-<area shape="rect" id="node6" href="$rotorcraft_2main__fbw_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="main_init" alt="" coords="699,56,779,83"/>
-<area shape="rect" id="node5" href="$sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="883,5,953,32"/>
-<area shape="rect" id="node7" href="$rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="891,56,945,83"/>
-<area shape="rect" id="node9" href="$gps__skytraq_8h.html#a9480384f1c4dd5c8ff24fb7989dbe194" title="gps_skytraq_msg" alt="" coords="469,107,603,133"/>
-<area shape="rect" id="node10" href="$gps__skytraq_8h.html#ac91f0980eaf030309e832c42756272f9" title="GpsEvent" alt="" coords="698,107,781,133"/>
-<area shape="rect" id="node12" href="$ins__float__invariant__wrapper_8h.html#acbc99bce5ffb373e21280ebaad9faa37" title="ins_float_invariant\l_register" alt="" coords="467,158,605,199"/>
-<area shape="rect" id="node14" href="$ins__gps__passthrough_8h.html#a76d9e5f7806d5a0121542f7d8d678d94" title="ins_gps_passthrough\l_register" alt="" coords="457,223,615,265"/>
-<area shape="rect" id="node16" href="$ins__int_8h.html#a6f47e4e65f9697a961c3bef79e9029e4" title="ins_int_init" alt="" coords="491,289,581,316"/>
-<area shape="rect" id="node17" href="$ins__int_8h.html#a17f48dee0178e62f627f765e6ace23c4" title="ins_int_register" alt="" coords="680,289,799,316"/>
-<area shape="rect" id="node20" href="$gps__nmea_8h.html#ae4ee231e9004ab283b1da389fd4492f8" title="nmea_parse_prop_msg" alt="" coords="449,384,623,411"/>
-<area shape="rect" id="node21" href="$gps__nmea_8h.html#a2f49ea43d042f884e3ec12e5e14abc97" title="nmea_parse_char() has a complete line. " alt="" coords="671,384,808,411"/>
-<area shape="rect" id="node22" href="$gps__nmea_8h.html#abbfb5c004aa2bfaaafc87015e6557514" title="gps_nmea_msg" alt="" coords="856,384,980,411"/>
-<area shape="rect" id="node23" href="$gps__nmea_8h.html#ac91f0980eaf030309e832c42756272f9" title="GpsEvent" alt="" coords="1028,384,1111,411"/>
+<area shape="rect" id="node2" href="$gps__skytraq_8c.html#a82455efa55f2f00f1ab1524b9f82dc1d" title="gps_skytraq_read_message" alt="" coords="200,11,401,37"/>
+<area shape="rect" id="node5" href="$ins__float__invariant_8h.html#a337aa9b464c923af97d19ec0bfdb6f02" title="ins_float_invariant_init" alt="" coords="219,67,382,93"/>
+<area shape="rect" id="node7" href="$ins__gps__passthrough_8h.html#a65b4389487e1468dd9245eacf2ce07b3" title="ins_gps_passthrough_init" alt="" coords="209,119,392,145"/>
+<area shape="rect" id="node8" href="$ins_8h.html#a14cb66a86c67d8b9216a8c12f58c311b" title="INS local origin reset. " alt="" coords="221,173,380,200"/>
+<area shape="rect" id="node18" href="$gps__furuno_8c.html#a9ef52ff00fd929f7ac2f15fad0669843" title="nmea_parse_perdcrv" alt="" coords="222,275,379,301"/>
+<area shape="rect" id="node3" href="$gps__skytraq_8c.html#a9480384f1c4dd5c8ff24fb7989dbe194" title="gps_skytraq_msg" alt="" coords="472,5,607,32"/>
+<area shape="rect" id="node4" href="$gps__skytraq_8h.html#a7b24ce985ade2631c7aa2ac72d643a43" title="gps_skytraq_event" alt="" coords="695,5,838,32"/>
+<area shape="rect" id="node6" href="$ins__float__invariant__wrapper_8h.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title="ins_float_invariant\l_wrapper_init" alt="" coords="471,57,608,98"/>
+<area shape="rect" id="node9" href="$ins__skeleton_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="506,123,573,149"/>
+<area shape="rect" id="node11" href="$ins__alt__float_8c.html#ac5b472605ca2035825b6ccca1c4d8c5e" title="ins_alt_float_update_gps" alt="" coords="449,173,629,200"/>
+<area shape="rect" id="node14" href="$ins__int_8h.html#a54df8c17ccf7a20d6ca09ad0b8f45db3" title="ins_int_update_gps" alt="" coords="467,224,612,251"/>
+<area shape="rect" id="node17" href="$common__nav_8h.html#a9be99612e24c6ba96a13c2c1d657ee99" title="Reset the geographic reference to the current GPS fix. " alt="" coords="463,275,616,301"/>
+<area shape="rect" id="node10" href="$ins__skeleton_8h.html#a36545e3f7b1233bb331ff0952d01a9bc" title="ins_module_wrapper_init" alt="" coords="677,123,856,149"/>
+<area shape="rect" id="node12" href="$ins__alt__float_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="733,173,800,200"/>
+<area shape="rect" id="node13" href="$ins__alt__float_8h.html#addae4691b18806ce2db90c10ef8d7274" title="ins_alt_float_init" alt="" coords="904,173,1028,200"/>
+<area shape="rect" id="node15" href="$ins__int_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="733,224,800,251"/>
+<area shape="rect" id="node16" href="$ins__int_8h.html#a6f47e4e65f9697a961c3bef79e9029e4" title="ins_int_init" alt="" coords="921,224,1011,251"/>
+<area shape="rect" id="node19" href="$gps__nmea_8h.html#abad503c594db519e60515d9ac597f742" title="nmea_parse_prop_msg" alt="" coords="453,325,626,352"/>
+<area shape="rect" id="node20" href="$gps__nmea_8h.html#a5effdb9e315da2f7fb8259839a57050e" title="nmea_parse_char() has a complete line. " alt="" coords="698,325,835,352"/>
+<area shape="rect" id="node21" href="$gps__nmea_8h.html#ac4895fd95dc0cb8f5bb47a5ad64c3aee" title="nmea_gps_msg" alt="" coords="904,325,1028,352"/>
+<area shape="rect" id="node22" href="$gps__nmea_8h.html#a9c374269a14c7e2a806a594c9f9ec9ff" title="gps_nmea_event" alt="" coords="1076,325,1208,352"/>
 </map>

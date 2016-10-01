@@ -32,9 +32,9 @@ var imu__nps_8h =
     [ "IMU_MAG_Z_SENS", "imu__nps_8h.html#a4adf0ec19c7be873b877295e46eac2f7", null ],
     [ "IMU_MAG_Z_SENS_DEN", "imu__nps_8h.html#aed0226a9d2f4d9d8dc774efcdf5a1051", null ],
     [ "IMU_MAG_Z_SENS_NUM", "imu__nps_8h.html#af3e261fd1968aa63c116a5cbdbc322b5", null ],
-    [ "ImuEvent", "imu__nps_8h.html#a38f1122c1ee0701562b490c6e1b60609", null ],
     [ "imu_feed_gyro_accel", "imu__nps_8h.html#a3eda401c67dfeee490285016ec944e48", null ],
     [ "imu_feed_mag", "imu__nps_8h.html#a18428bf984166238838fe9d1a4842b5e", null ],
     [ "imu_nps_event", "imu__nps_8h.html#ab288e8eb3d91d5c0e27e6f34cbe5e5ac", null ],
+    [ "imu_nps_init", "imu__nps_8h.html#af25f098236ec92998a69e688afcfebed", null ],
     [ "imu_nps", "imu__nps_8h.html#ad6e7c496430e1f1a0f673f23b5bcdb7d", null ]
 ];

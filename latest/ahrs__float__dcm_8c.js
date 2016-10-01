@@ -1,6 +1,6 @@
 var ahrs__float__dcm_8c =
 [
-    [ "ahrs_dcm_align", "ahrs__float__dcm_8c.html#aa40e2bd9f0870a567f290ae18a23db81", null ],
+    [ "ahrs_dcm_align", "ahrs__float__dcm_8c.html#ac19ef4cf9dfcc61561addd93a8c41a5e", null ],
     [ "ahrs_dcm_init", "ahrs__float__dcm_8c.html#a72e0ab470bdd713dbf05bbb7d2aaac0c", null ],
     [ "ahrs_dcm_propagate", "ahrs__float__dcm_8c.html#a085ad70d62a69cf92b8e08b27b9e60d1", null ],
     [ "ahrs_dcm_set_body_to_imu", "ahrs__float__dcm_8c.html#a7f3247a388db0709627a935f09a7b406", null ],

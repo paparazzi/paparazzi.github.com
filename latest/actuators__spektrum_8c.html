@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -126,14 +126,14 @@ $(document).ready(function(){initNavTree('actuators__spektrum_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="actuators__spektrum_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2actuators_2actuators__spektrum_8c" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2actuators_2actuators__spektrum_8c" id="sw_2airborne_2subsystems_2actuators_2actuators__spektrum_8c">
-<area shape="rect" id="node2" href="subsystems_2actuators_8h.html" title="Hardware independent API for actuators (servos, motor controllers). " alt="" coords="537,102,713,129"/><area shape="rect" id="node7" href="actuators__spektrum_8h.html" title="Spektrum actuator driver, which can output as 7 spektrum channels at ~11ms. " alt="" coords="345,95,512,136"/><area shape="rect" id="node8" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="182,102,321,129"/><area shape="rect" id="node3" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="507,184,603,211"/><area shape="rect" id="node4" href="inttypes_8h.html" title="inttypes.h" alt="" coords="382,259,467,285"/><area shape="rect" id="node10" href="link__device_8h.html" title="generic device header " alt="" coords="204,184,387,211"/></map>
+<area shape="rect" id="node2" href="subsystems_2actuators_8h.html" title="Hardware independent API for actuators (servos, motor controllers). " alt="" coords="122,102,298,129"/><area shape="rect" id="node7" href="actuators__spektrum_8h.html" title="Spektrum actuator driver, which can output as 7 spektrum channels at ~11ms. " alt="" coords="323,95,489,136"/><area shape="rect" id="node8" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="514,102,653,129"/><area shape="rect" id="node3" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="189,184,285,211"/><area shape="rect" id="node4" href="inttypes_8h.html" title="inttypes.h" alt="" coords="194,259,279,285"/></map>
 </div>
 </div>
 <p><a href="actuators__spektrum_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2703f3974dde7b9a91e75477d1c64340"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__spektrum_8c.html#a2703f3974dde7b9a91e75477d1c64340">actuators_spektrum_send</a> (struct <a class="el" href="link__device_8h.html#structlink__device">link_device</a> *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
+<tr class="memitem:a2703f3974dde7b9a91e75477d1c64340"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__spektrum_8c.html#a2703f3974dde7b9a91e75477d1c64340">actuators_spektrum_send</a> (struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
 <tr class="separator:a2703f3974dde7b9a91e75477d1c64340"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb2976a5407c78fb22f74d2c631dc2c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actuators__spektrum_8c.html#abb2976a5407c78fb22f74d2c631dc2c8">actuators_spektrum_init</a> (void)</td></tr>
 <tr class="separator:abb2976a5407c78fb22f74d2c631dc2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,7 +181,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static void actuators_spektrum_send </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="link__device_8h.html#structlink__device">link_device</a> *&#160;</td>
+          <td class="paramtype">struct link_device *&#160;</td>
           <td class="paramname"><em>dev</em></td><td>)</td>
           <td></td>
         </tr>
@@ -195,7 +195,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="actuators__spektrum_8c_source.html#l00083">83</a> of file <a class="el" href="actuators__spektrum_8c_source.html">actuators_spektrum.c</a>.</p>
 
-<p>References <a class="el" href="actuators__spektrum_8c_source.html#l00045">actuators_spektrum</a>, <a class="el" href="actuators__spektrum_8h_source.html#l00033">ACTUATORS_SPEKTRUM_MAX_NB</a>, <a class="el" href="actuators__spektrum_8h_source.html#l00037">ActuatorsSpektrum::cmds</a>, <a class="el" href="link__device_8h_source.html#l00050">link_device::periph</a>, and <a class="el" href="link__device_8h_source.html#l00046">link_device::put_byte</a>.</p>
+<p>References <a class="el" href="actuators__spektrum_8c_source.html#l00045">actuators_spektrum</a>, <a class="el" href="actuators__spektrum_8h_source.html#l00033">ACTUATORS_SPEKTRUM_MAX_NB</a>, and <a class="el" href="actuators__spektrum_8h_source.html#l00037">ActuatorsSpektrum::cmds</a>.</p>
 
 <p>Referenced by <a class="el" href="actuators__spektrum_8c_source.html#l00063">actuators_spektrum_set()</a>.</p>
 
@@ -266,7 +266,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_27687546688cef5dbb42803ce993f4c4.html">actuators</a></li><li class="navelem"><a class="el" href="actuators__spektrum_8c.html">actuators_spektrum.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:01 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:09 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

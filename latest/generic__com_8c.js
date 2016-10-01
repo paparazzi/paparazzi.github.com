@@ -10,6 +10,6 @@ var generic__com_8c =
     [ "generic_com_periodic", "generic__com_8c.html#aa0f6db51f359937bdb56324a3b647175", null ],
     [ "start_com", "generic__com_8c.html#a80e9988637d33abbe2df824b9975058e", null ],
     [ "stop_com", "generic__com_8c.html#af7b48d899c3f35e8c2ba310486c083a2", null ],
-    [ "active_com", "generic__com_8c.html#a636f0ca3695a762aebcada9b83b75bd5", null ],
+    [ "active_com", "generic__com_8c.html#ae0c195ef3b587933153ab0337a9d0776", null ],
     [ "com_trans", "generic__com_8c.html#aacf77b866e79c13fe19296fa3402f472", null ]
 ];

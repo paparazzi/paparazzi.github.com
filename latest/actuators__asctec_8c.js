@@ -6,6 +6,6 @@ var actuators__asctec_8c =
     [ "ASCTEC_MIN_CMD", "actuators__asctec_8c.html#ad3767e32a81db7ce41c0f4b1b8e88ac7", null ],
     [ "ASCTEC_MIN_THROTTLE", "actuators__asctec_8c.html#ad800e39a6be74f1e9ce5c33a26798b22", null ],
     [ "actuators_asctec_init", "actuators__asctec_8c.html#a1ace4a1a7e525f56051442a39ef51873", null ],
-    [ "actuators_asctec_set", "actuators__asctec_8c.html#a5201bd845c92dc5549ffa0c10f098d70", null ],
+    [ "actuators_asctec_set", "actuators__asctec_8c.html#a23db726b2cfca16666056a8d644e08f8", null ],
     [ "actuators_asctec", "actuators__asctec_8c.html#abee9d7c8002e2186b52287e15e09606c", null ]
 ];

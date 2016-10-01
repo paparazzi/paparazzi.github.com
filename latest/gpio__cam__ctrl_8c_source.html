@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -174,22 +174,22 @@ $(document).ready(function(){initNavTree('gpio__cam__ctrl_8c_source.html','');})
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="comment">// Do gpio specific DC init</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="gpio__cam__ctrl_8c.html#adaa2e99fa0592d3507c02a961b71d532">dc_timer</a> = 0;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <a class="code" href="linux_2mcu__periph_2gpio__arch_8h.html#a5b778ed65199db17a02961791e4ee8b8">gpio_setup_output</a>(DC_SHUTTER_GPIO);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <a class="code" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f">gpio_setup_output</a>(DC_SHUTTER_GPIO);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="gpio__cam__ctrl_8c.html#afef5e8365b0cfeb65b5ed1ee05a9c7d1">DC_RELEASE</a>(DC_SHUTTER_GPIO);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#ifdef DC_ZOOM_IN_GPIO</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="linux_2mcu__periph_2gpio__arch_8h.html#a5b778ed65199db17a02961791e4ee8b8">gpio_setup_output</a>(DC_ZOOM_IN_GPIO);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f">gpio_setup_output</a>(DC_ZOOM_IN_GPIO);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="gpio__cam__ctrl_8c.html#afef5e8365b0cfeb65b5ed1ee05a9c7d1">DC_RELEASE</a>(DC_ZOOM_IN_GPIO);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#ifdef DC_ZOOM_OUT_GPIO</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="linux_2mcu__periph_2gpio__arch_8h.html#a5b778ed65199db17a02961791e4ee8b8">gpio_setup_output</a>(DC_ZOOM_OUT_GPIO);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f">gpio_setup_output</a>(DC_ZOOM_OUT_GPIO);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="code" href="gpio__cam__ctrl_8c.html#afef5e8365b0cfeb65b5ed1ee05a9c7d1">DC_RELEASE</a>(DC_ZOOM_OUT_GPIO);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#ifdef DC_POWER_GPIO</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <a class="code" href="linux_2mcu__periph_2gpio__arch_8h.html#a5b778ed65199db17a02961791e4ee8b8">gpio_setup_output</a>(DC_POWER_GPIO);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <a class="code" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f">gpio_setup_output</a>(DC_POWER_GPIO);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="gpio__cam__ctrl_8c.html#afef5e8365b0cfeb65b5ed1ee05a9c7d1">DC_RELEASE</a>(DC_POWER_GPIO);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#ifdef DC_POWER_OFF_GPIO</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <a class="code" href="linux_2mcu__periph_2gpio__arch_8h.html#a5b778ed65199db17a02961791e4ee8b8">gpio_setup_output</a>(DC_POWER_OFF_GPIO);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <a class="code" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f">gpio_setup_output</a>(DC_POWER_OFF_GPIO);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <a class="code" href="gpio__cam__ctrl_8c.html#afef5e8365b0cfeb65b5ed1ee05a9c7d1">DC_RELEASE</a>(DC_POWER_OFF_GPIO);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
@@ -265,6 +265,7 @@ $(document).ready(function(){initNavTree('gpio__cam__ctrl_8c_source.html','');})
 <div class="ttc" id="gpio__cam__ctrl_8c_html_a833f16388be36136f5d7d173200d5e95"><div class="ttname"><a href="gpio__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95">dc_send_command</a></div><div class="ttdeci">void dc_send_command(uint8_t cmd)</div><div class="ttdoc">Send Command To Camera. </div><div class="ttdef"><b>Definition:</b> <a href="gpio__cam__ctrl_8c_source.html#l00133">gpio_cam_ctrl.c:133</a></div></div>
 <div class="ttc" id="gpio_8h_html"><div class="ttname"><a href="gpio_8h.html">gpio.h</a></div><div class="ttdoc">Some architecture independent helper functions for GPIOs. </div></div>
 <div class="ttc" id="gpio__cam__ctrl_8c_html_a083ec1623bd3e3eb99edae0c55fd4b23"><div class="ttname"><a href="gpio__cam__ctrl_8c.html#a083ec1623bd3e3eb99edae0c55fd4b23">DC_PUSH</a></div><div class="ttdeci">#define DC_PUSH</div><div class="ttdef"><b>Definition:</b> <a href="gpio__cam__ctrl_8c_source.html#l00046">gpio_cam_ctrl.c:46</a></div></div>
+<div class="ttc" id="chibios_2mcu__periph_2gpio__arch_8c_html_a614c4a447f1e43381d92c682ac3b953f"><div class="ttname"><a href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f">gpio_setup_output</a></div><div class="ttdeci">void gpio_setup_output(ioportid_t port, uint16_t gpios)</div><div class="ttdoc">Setup one or more pins of the given GPIO port as outputs. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00033">gpio_arch.c:33</a></div></div>
 <div class="ttc" id="dc_8c_html_a319b1533383dbc2491e1799a0148a7ba"><div class="ttname"><a href="dc_8c.html#a319b1533383dbc2491e1799a0148a7ba">dc_init</a></div><div class="ttdeci">void dc_init(void)</div><div class="ttdoc">initialize settings </div><div class="ttdef"><b>Definition:</b> <a href="dc_8c_source.html#l00132">dc.c:132</a></div></div>
 <div class="ttc" id="dc_8h_html_a5bcad6137b0e9f54ae973b52e8a94d34a8680b60f2e92d2e261a7e44e21b9c9c2"><div class="ttname"><a href="dc_8h.html#a5bcad6137b0e9f54ae973b52e8a94d34a8680b60f2e92d2e261a7e44e21b9c9c2">DC_SHOOT</a></div><div class="ttdef"><b>Definition:</b> <a href="dc_8h_source.html#l00100">dc.h:100</a></div></div>
 <div class="ttc" id="dc_8h_html_a5bcad6137b0e9f54ae973b52e8a94d34adb654606b6903dfa316f5ecae39e378a"><div class="ttname"><a href="dc_8h.html#a5bcad6137b0e9f54ae973b52e8a94d34adb654606b6903dfa316f5ecae39e378a">DC_TALLER</a></div><div class="ttdef"><b>Definition:</b> <a href="dc_8h_source.html#l00103">dc.h:103</a></div></div>
@@ -279,7 +280,6 @@ $(document).ready(function(){initNavTree('gpio__cam__ctrl_8c_source.html','');})
 <div class="ttc" id="gpio__cam__ctrl_8h_html"><div class="ttname"><a href="gpio__cam__ctrl_8h.html">gpio_cam_ctrl.h</a></div><div class="ttdoc">Digital Camera Control. </div></div>
 <div class="ttc" id="dc_8h_html_a5bcad6137b0e9f54ae973b52e8a94d34ae9e8886c0133a5c0d77247fc37ce51d5"><div class="ttname"><a href="dc_8h.html#a5bcad6137b0e9f54ae973b52e8a94d34ae9e8886c0133a5c0d77247fc37ce51d5">DC_ON</a></div><div class="ttdef"><b>Definition:</b> <a href="dc_8h_source.html#l00115">dc.h:115</a></div></div>
 <div class="ttc" id="gpio__cam__ctrl_8c_html_a04a6eb1b1a5e3061b302b12b3b63b9aa"><div class="ttname"><a href="gpio__cam__ctrl_8c.html#a04a6eb1b1a5e3061b302b12b3b63b9aa">DC_POWER_OFF_DELAY</a></div><div class="ttdeci">#define DC_POWER_OFF_DELAY</div><div class="ttdoc">how long to send power off in seconds </div><div class="ttdef"><b>Definition:</b> <a href="gpio__cam__ctrl_8c_source.html#l00060">gpio_cam_ctrl.c:60</a></div></div>
-<div class="ttc" id="linux_2mcu__periph_2gpio__arch_8h_html_a5b778ed65199db17a02961791e4ee8b8"><div class="ttname"><a href="linux_2mcu__periph_2gpio__arch_8h.html#a5b778ed65199db17a02961791e4ee8b8">gpio_setup_output</a></div><div class="ttdeci">void gpio_setup_output(uint32_t port, uint16_t gpios)</div><div class="ttdoc">Setup one or more pins of the given GPIO port as outputs. </div><div class="ttdef"><b>Definition:</b> <a href="gpio__ardrone_8c_source.html#l00102">gpio_ardrone.c:102</a></div></div>
 <div class="ttc" id="dc_8c_html_aaf0625fed2e489322c40c4b2a1904e9a"><div class="ttname"><a href="dc_8c.html#aaf0625fed2e489322c40c4b2a1904e9a">dc_send_shot_position</a></div><div class="ttdeci">void dc_send_shot_position(void)</div><div class="ttdoc">Send Down the coordinates of where the photo was taken. </div><div class="ttdef"><b>Definition:</b> <a href="dc_8c_source.html#l00096">dc.c:96</a></div></div>
 <div class="ttc" id="gpio__cam__ctrl_8c_html_adaa2e99fa0592d3507c02a961b71d532"><div class="ttname"><a href="gpio__cam__ctrl_8c.html#adaa2e99fa0592d3507c02a961b71d532">dc_timer</a></div><div class="ttdeci">uint8_t dc_timer</div><div class="ttdef"><b>Definition:</b> <a href="gpio__cam__ctrl_8c_source.html#l00072">gpio_cam_ctrl.c:72</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -288,7 +288,7 @@ $(document).ready(function(){initNavTree('gpio__cam__ctrl_8c_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_9cd42eb44f1e76fa7c8c7cd9c9a53863.html">digital_cam</a></li><li class="navelem"><a class="el" href="gpio__cam__ctrl_8c.html">gpio_cam_ctrl.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:23 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:23 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

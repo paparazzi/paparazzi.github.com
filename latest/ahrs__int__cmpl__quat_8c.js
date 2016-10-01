@@ -10,7 +10,7 @@ var ahrs__int__cmpl__quat_8c =
     [ "AHRS_MAG_ZETA", "ahrs__int__cmpl__quat_8c.html#a5bdf6e8a7c46ff825e194a1fb9fe1655", null ],
     [ "COMPUTATION_FRAC", "ahrs__int__cmpl__quat_8c.html#af8ed6034aba17fe334cfe8d8204d83f9", null ],
     [ "FIR_FILTER_SIZE", "ahrs__int__cmpl__quat_8c.html#ab2760fb4c51ee3b054a3462efd915e7c", null ],
-    [ "ahrs_icq_align", "ahrs__int__cmpl__quat_8c.html#acd78502a255cf0af0f12089b3145837b", null ],
+    [ "ahrs_icq_align", "ahrs__int__cmpl__quat_8c.html#a00670e57757ac4865d6bbd63a6ad4a73", null ],
     [ "ahrs_icq_init", "ahrs__int__cmpl__quat_8c.html#a72a541828d1eaa1bbe23ff26680e63da", null ],
     [ "ahrs_icq_propagate", "ahrs__int__cmpl__quat_8c.html#af157b638d627a07ce3b8c86436c0ce4c", null ],
     [ "ahrs_icq_realign_heading", "ahrs__int__cmpl__quat_8c.html#a954df43f45ac2f8c6e59319c25ce607a", null ],

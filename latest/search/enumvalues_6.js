@@ -1,8 +1,15 @@
 var searchData=
 [
+  ['good_5fdetects_5fstart',['GOOD_DETECTS_START',['../esc32_8h.html#a7d7ff77147834c43663d3dfd1f263610a1dfc1050d7728b2d450fc19ec23b48a9',1,'esc32.h']]],
   ['gpio_5finput',['GPIO_INPUT',['../gpio__ardrone_8c.html#a620d533a2ccc5296d2f6c8b95bf89fe1aa1ea38ffc304a6c32480a65b5fec7302',1,'gpio_ardrone.c']]],
   ['gpio_5foutput_5fhigh',['GPIO_OUTPUT_HIGH',['../gpio__ardrone_8c.html#a620d533a2ccc5296d2f6c8b95bf89fe1a9b1be9a9b44d5c3fff07656b24fec1b7',1,'gpio_ardrone.c']]],
   ['gpio_5foutput_5flow',['GPIO_OUTPUT_LOW',['../gpio__ardrone_8c.html#a620d533a2ccc5296d2f6c8b95bf89fe1a034b65c289485a794306685f42ba239a',1,'gpio_ardrone.c']]],
+  ['gps_5fi2c_5fread_5fdata',['gps_i2c_read_data',['../gps__ubx__i2c_8h.html#a28524f5571f237044d705d691ccc01eca46def198f8e74f87add4c178eb5abb58',1,'gps_ubx_i2c.h']]],
+  ['gps_5fi2c_5fread_5fsizeof',['gps_i2c_read_sizeof',['../gps__ubx__i2c_8h.html#a28524f5571f237044d705d691ccc01ecaef0e8230f175e0d1e004dc1d2f860f9b',1,'gps_ubx_i2c.h']]],
+  ['gps_5fi2c_5fread_5fstandby',['gps_i2c_read_standby',['../gps__ubx__i2c_8h.html#a28524f5571f237044d705d691ccc01eca564fc92de54978b3013c9434caf99aa2',1,'gps_ubx_i2c.h']]],
+  ['gps_5fi2c_5fwrite_5fcfg',['gps_i2c_write_cfg',['../gps__ubx__i2c_8h.html#ac347012a1e82f748f4c69e114e173bdda2589295997baf981dc0ff5cc3e3c556d',1,'gps_ubx_i2c.h']]],
+  ['gps_5fi2c_5fwrite_5frequest_5fsize',['gps_i2c_write_request_size',['../gps__ubx__i2c_8h.html#ac347012a1e82f748f4c69e114e173bddac26e2192b9b72abc14ac0cfc9cbec9ac',1,'gps_ubx_i2c.h']]],
+  ['gps_5fi2c_5fwrite_5fstandby',['gps_i2c_write_standby',['../gps__ubx__i2c_8h.html#ac347012a1e82f748f4c69e114e173bddaf4c63704ca02812dda2a60adaeacfb83',1,'gps_ubx_i2c.h']]],
   ['gps_5fskytraq_5ferr_5fchecksum',['GPS_SKYTRAQ_ERR_CHECKSUM',['../gps__skytraq_8h.html#ac1bd9d7f19aed868e8f05341c6fd0676a89e4721177166577261efb715f9ef506',1,'gps_skytraq.h']]],
   ['gps_5fskytraq_5ferr_5fmsg_5ftoo_5flong',['GPS_SKYTRAQ_ERR_MSG_TOO_LONG',['../gps__skytraq_8h.html#ac1bd9d7f19aed868e8f05341c6fd0676a479053d4be1765ed1cd9a8384d2f48df',1,'gps_skytraq.h']]],
   ['gps_5fskytraq_5ferr_5fnone',['GPS_SKYTRAQ_ERR_NONE',['../gps__skytraq_8h.html#ac1bd9d7f19aed868e8f05341c6fd0676a2c33a243c268a0cff84048118e3ebcff',1,'gps_skytraq.h']]],

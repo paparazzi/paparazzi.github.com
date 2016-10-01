@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: Battery checker module</title>
+<title>Paparazzi UAS: bat_checker module</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -100,19 +100,21 @@ $(document).ready(function(){initNavTree('module__bat_checker.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Battery checker module </div>  </div>
+<div class="title">bat_checker module </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Module XML file: <code>bat_checker.xml</code> </p>
-<p>No detailed description...</p>
+<div class="textblock"><p><b>Battery checker module</b></p>
+<p>When the battery voltage goes below the BAT_LOW level, this will toggle a GPIO/LED. If the battery voltage is lower than BAT_CRITICAL level, the LED/GPIO stays ON. The output signal can be connected to an actaul LED or a buzzer to indicated the end of battery to the user.</p>
+<p>When a LED is used, define the LED number in your airframe with BAT_CHECKER_LED. When a GPIO is used, define the GPIO port and pin in your airframe with BAT_CHECKER_GPIO. You should at least use one of these two options.</p>
 <h1><a class="anchor" id="module_load_example__bat_checker"></a>
 Example for airframe file</h1>
-<p>This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;modules&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;load name=&quot;bat_checker.xml&quot;&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    &lt;define name=&quot;BAT_CHECKER_DELAY&quot; value=&quot;delay&quot; /&gt;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    &lt;define name=&quot;BAT_CHECKER_LED&quot; value=&quot;X&quot; /&gt;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;/load&gt;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;&lt;/modules&gt;</div>
+<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;bat_checker&quot;&gt;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;define name=&quot;BAT_CHECKER_DELAY&quot; value=&quot;delay&quot; /&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;BAT_CHECKER_LED&quot; value=&quot;X&quot; /&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;define name=&quot;BAT_CHECKER_GPIO&quot; value=&quot;GPIOX,GPIOY&quot; /&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;define name=&quot;BAT_CHECKER_GPIO_ON&quot; value=&quot;gpio_set&quot; /&gt;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  &lt;define name=&quot;BAT_CHECKER_GPIO_OFF&quot; value=&quot;gpio_clear&quot; /&gt;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__bat_checker"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
@@ -122,6 +124,12 @@ Define Options</h2>
  Description: number of seconds the battery voltage has to below LOW_BAT_LEVEL before warning signal is activated</li>
 <li><b>name:</b> <code>BAT_CHECKER_LED</code> <b>value:</b> <em>X</em> <br />
  Description: led number to use for the warning signal</li>
+<li><b>name:</b> <code>BAT_CHECKER_GPIO</code> <b>value:</b> <em>GPIOX,GPIOY</em> <br />
+ Description: alternatively, a GPIO can be set instead of a LED (ex: GPIOA,GPIO5)</li>
+<li><b>name:</b> <code>BAT_CHECKER_GPIO_ON</code> <b>value:</b> <em>gpio_set</em> <br />
+ Description: tells if output signal is ON when GPIO is high or low</li>
+<li><b>name:</b> <code>BAT_CHECKER_GPIO_OFF</code> <b>value:</b> <em>gpio_clear</em> <br />
+ Description: tells if output signal is OFF when GPIO is high or low</li>
 </ul>
 <h1><a class="anchor" id="functions__bat_checker"></a>
 Module functions</h1>
@@ -161,9 +169,22 @@ Raw bat_checker.xml file:</h2>
 <div class="line"></div>
 <div class="line">&lt;module name=&quot;bat_checker&quot; dir=&quot;energy&quot;&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
-<div class="line">    &lt;description&gt;Battery checker module&lt;/description&gt;</div>
+<div class="line">    &lt;description&gt;</div>
+<div class="line">      Battery checker module</div>
+<div class="line"></div>
+<div class="line">      When the battery voltage goes below the BAT_LOW level, this will toggle a GPIO/LED.</div>
+<div class="line">      If the battery voltage is lower than BAT_CRITICAL level, the LED/GPIO stays ON.</div>
+<div class="line">      The output signal can be connected to an actaul LED or a buzzer to indicated the end of battery to the user.</div>
+<div class="line"></div>
+<div class="line">      When a LED is used, define the LED number in your airframe with BAT_CHECKER_LED.</div>
+<div class="line">      When a GPIO is used, define the GPIO port and pin in your airframe with BAT_CHECKER_GPIO.</div>
+<div class="line">      You should at least use one of these two options.</div>
+<div class="line">    &lt;/description&gt;</div>
 <div class="line">    &lt;define name=&quot;BAT_CHECKER_DELAY&quot; value=&quot;delay&quot; description=&quot;number of seconds the battery voltage has to below LOW_BAT_LEVEL before warning signal is activated&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;BAT_CHECKER_LED&quot; value=&quot;X&quot; description=&quot;led number to use for the warning signal&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;BAT_CHECKER_GPIO&quot; value=&quot;GPIOX,GPIOY&quot; description=&quot;alternatively, a GPIO can be set instead of a LED (ex: GPIOA,GPIO5)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;BAT_CHECKER_GPIO_ON&quot; value=&quot;gpio_set&quot; description=&quot;tells if output signal is ON when GPIO is high or low&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;BAT_CHECKER_GPIO_OFF&quot; value=&quot;gpio_clear&quot; description=&quot;tells if output signal is OFF when GPIO is high or low&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;bat_checker.h&quot;/&gt;</div>
@@ -181,7 +202,7 @@ Raw bat_checker.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:08 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:17 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

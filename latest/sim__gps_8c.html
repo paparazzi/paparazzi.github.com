@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('sim__gps_8c.html','');});
 <code>#include &lt;<a class="el" href="inttypes_8h_source.html">inttypes.h</a>&gt;</code><br />
 <code>#include &quot;generated/airframe.h&quot;</code><br />
 <code>#include &quot;generated/flight_plan.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="gps_8h_source.html">subsystems/gps.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gps__sim_8h_source.html">subsystems/gps/gps_sim.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pprz__geodetic__float_8h_source.html">math/pprz_geodetic_float.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pprz__geodetic__int_8h_source.html">math/pprz_geodetic_int.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="common__nav_8h_source.html">subsystems/navigation/common_nav.h</a>&quot;</code><br />
@@ -128,17 +128,17 @@ $(document).ready(function(){initNavTree('sim__gps_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sim__gps_8c__incl.png" border="0" usemap="#sw_2airborne_2arch_2sim_2sim__gps_8c" alt=""/></div>
 <map name="sw_2airborne_2arch_2sim_2sim__gps_8c" id="sw_2airborne_2arch_2sim_2sim__gps_8c">
-<area shape="rect" id="node4" href="inttypes_8h.html" title="inttypes.h" alt="" coords="5,370,91,397"/><area shape="rect" id="node7" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="459,191,597,218"/><area shape="rect" id="node9" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="566,273,717,315"/><area shape="rect" id="node17" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="741,273,891,315"/><area shape="rect" id="node22" href="common__nav_8h.html" title="subsystems/navigation\l/common_nav.h" alt="" coords="1426,95,1595,136"/><area shape="rect" id="node19" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="320,281,491,307"/><area shape="rect" id="node10" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="650,370,774,397"/><area shape="rect" id="node11" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="853,370,993,397"/><area shape="rect" id="node12" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="1124,452,1279,479"/><area shape="rect" id="node15" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="847,452,998,479"/><area shape="rect" id="node18" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1140,370,1292,397"/><area shape="rect" id="node23" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="1076,191,1143,218"/><area shape="rect" id="node25" href="common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="1549,184,1718,225"/><area shape="rect" id="node24" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="967,273,1131,315"/></map>
+<area shape="rect" id="node4" href="inttypes_8h.html" title="inttypes.h" alt="" coords="81,370,167,397"/><area shape="rect" id="node7" href="gps__sim_8h.html" title="subsystems/gps/gps\l_sim.h" alt="" coords="218,95,371,136"/><area shape="rect" id="node10" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="647,273,798,315"/><area shape="rect" id="node18" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1165,273,1315,315"/><area shape="rect" id="node24" href="common__nav_8h.html" title="subsystems/navigation\l/common_nav.h" alt="" coords="1235,95,1405,136"/><area shape="rect" id="node9" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="517,191,656,218"/><area shape="rect" id="node21" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="299,281,469,307"/><area shape="rect" id="node11" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="1051,370,1175,397"/><area shape="rect" id="node12" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="782,370,922,397"/><area shape="rect" id="node13" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="1197,452,1352,479"/><area shape="rect" id="node16" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="777,452,927,479"/><area shape="rect" id="node19" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1301,370,1453,397"/><area shape="rect" id="node25" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="1093,191,1160,218"/><area shape="rect" id="node27" href="common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="1314,184,1483,225"/><area shape="rect" id="node26" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="925,273,1089,315"/></map>
 </div>
 </div>
 <p><a href="sim__gps_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a07f63734731109c0ed43e4f4dbcb98f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim__gps_8c.html#a07f63734731109c0ed43e4f4dbcb98f2">sim_use_gps_pos</a> (<a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a> x, <a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a> y, <a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a> z, <a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a> c, <a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a> a, <a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a> s, <a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a> cl, <a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a> t, <a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a> m, <a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a> lat, <a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a> lon)</td></tr>
+<tr class="memitem:a07f63734731109c0ed43e4f4dbcb98f2"><td class="memItemLeft" align="right" valign="top">value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim__gps_8c.html#a07f63734731109c0ed43e4f4dbcb98f2">sim_use_gps_pos</a> (value x, value y, value z, value c, value a, value s, value cl, value t, value m, value lat, value lon)</td></tr>
 <tr class="memdesc:a07f63734731109c0ed43e4f4dbcb98f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">From airborne/autopilot/.  <a href="#a07f63734731109c0ed43e4f4dbcb98f2">More...</a><br /></td></tr>
 <tr class="separator:a07f63734731109c0ed43e4f4dbcb98f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e916af45c0d2dea26e3e5faff0bd3e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim__gps_8c.html#a7e916af45c0d2dea26e3e5faff0bd3e5">sim_use_gps_pos_bytecode</a> (<a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a> *a, int argn)</td></tr>
+<tr class="memitem:a7e916af45c0d2dea26e3e5faff0bd3e5"><td class="memItemLeft" align="right" valign="top">value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim__gps_8c.html#a7e916af45c0d2dea26e3e5faff0bd3e5">sim_use_gps_pos_bytecode</a> (value *a, int argn)</td></tr>
 <tr class="separator:a7e916af45c0d2dea26e3e5faff0bd3e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05f70ae561aee3dbb2745771d44bf422"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim__gps_8c.html#a05f70ae561aee3dbb2745771d44bf422">ubxsend_cfg_rst</a> (<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> a, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> b)</td></tr>
 <tr class="separator:a05f70ae561aee3dbb2745771d44bf422"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,69 +149,69 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a> sim_use_gps_pos </td>
+          <td class="memname">value sim_use_gps_pos </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a>&#160;</td>
+          <td class="paramtype">value&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a>&#160;</td>
+          <td class="paramtype">value&#160;</td>
           <td class="paramname"><em>y</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a>&#160;</td>
+          <td class="paramtype">value&#160;</td>
           <td class="paramname"><em>z</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a>&#160;</td>
+          <td class="paramtype">value&#160;</td>
           <td class="paramname"><em>c</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a>&#160;</td>
+          <td class="paramtype">value&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a>&#160;</td>
+          <td class="paramtype">value&#160;</td>
           <td class="paramname"><em>s</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a>&#160;</td>
+          <td class="paramtype">value&#160;</td>
           <td class="paramname"><em>cl</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a>&#160;</td>
+          <td class="paramtype">value&#160;</td>
           <td class="paramname"><em>t</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a>&#160;</td>
+          <td class="paramtype">value&#160;</td>
           <td class="paramname"><em>m</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a>&#160;</td>
+          <td class="paramtype">value&#160;</td>
           <td class="paramname"><em>lat</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a>&#160;</td>
+          <td class="paramtype">value&#160;</td>
           <td class="paramname"><em>lon</em>&#160;</td>
         </tr>
         <tr>
@@ -227,9 +227,9 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="sim__gps_8c_source.html#l00020">20</a> of file <a class="el" href="sim__gps_8c_source.html">sim_gps.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__float_8h_source.html#l00057">LlaCoor_f::alt</a>, <a class="el" href="gps_8h_source.html#l00072">SVinfo::azim</a>, <a class="el" href="gps_8h_source.html#l00070">SVinfo::cno</a>, <a class="el" href="gps_8h_source.html#l00087">GpsState::course</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00088">UtmCoor_i::east</a>, <a class="el" href="gps_8h_source.html#l00071">SVinfo::elev</a>, <a class="el" href="gps_8h_source.html#l00093">GpsState::fix</a>, <a class="el" href="gps_8h_source.html#l00068">SVinfo::flags</a>, <a class="el" href="gps_8c_source.html#l00040">gps</a>, <a class="el" href="gps__sim_8c_source.html#l00030">gps_sim_publish()</a>, <a class="el" href="gps_8h_source.html#l00063">GPS_VALID_COURSE_BIT</a>, <a class="el" href="gps_8h_source.html#l00062">GPS_VALID_HMSL_BIT</a>, <a class="el" href="gps_8h_source.html#l00058">GPS_VALID_POS_LLA_BIT</a>, <a class="el" href="gps_8h_source.html#l00059">GPS_VALID_POS_UTM_BIT</a>, <a class="el" href="gps_8h_source.html#l00061">GPS_VALID_VEL_NED_BIT</a>, <a class="el" href="gps_8h_source.html#l00085">GpsState::gspeed</a>, <a class="el" href="gps_8h_source.html#l00082">GpsState::hmsl</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00055">LlaCoor_f::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00167">LLA_BFP_OF_REAL</a>, <a class="el" href="gps_8h_source.html#l00080">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00056">LlaCoor_f::lon</a>, <a class="el" href="gps_8h_source.html#l00097">GpsState::nb_channels</a>, <a class="el" href="gps_8h_source.html#l00084">GpsState::ned_vel</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00087">UtmCoor_i::north</a>, <a class="el" href="gps_8h_source.html#l00092">GpsState::num_sv</a>, <a class="el" href="gps_8h_source.html#l00088">GpsState::pacc</a>, <a class="el" href="gps_8h_source.html#l00091">GpsState::pdop</a>, <a class="el" href="gps_8h_source.html#l00069">SVinfo::qi</a>, <a class="el" href="gps_8h_source.html#l00089">GpsState::sacc</a>, <a class="el" href="gps_8h_source.html#l00067">SVinfo::svid</a>, <a class="el" href="gps_8h_source.html#l00098">GpsState::svinfos</a>, <a class="el" href="gps_8h_source.html#l00095">GpsState::tow</a>, <a class="el" href="gps_8h_source.html#l00081">GpsState::utm_pos</a>, <a class="el" href="gps_8h_source.html#l00077">GpsState::valid_fields</a>, <a class="el" href="gps_8h_source.html#l00094">GpsState::week</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00069">NedCoor_i::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00070">NedCoor_i::y</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00090">UtmCoor_i::zone</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__float_8h_source.html#l00057">LlaCoor_f::alt</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00089">UtmCoor_i::alt</a>, <a class="el" href="gps_8h_source.html#l00077">SVinfo::azim</a>, <a class="el" href="gps_8h_source.html#l00075">SVinfo::cno</a>, <a class="el" href="gps_8h_source.html#l00093">GpsState::course</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00088">UtmCoor_i::east</a>, <a class="el" href="gps_8h_source.html#l00076">SVinfo::elev</a>, <a class="el" href="gps_8h_source.html#l00099">GpsState::fix</a>, <a class="el" href="gps_8h_source.html#l00073">SVinfo::flags</a>, <a class="el" href="gps_8c_source.html#l00075">gps</a>, <a class="el" href="gps__sim_8c_source.html#l00030">gps_sim_publish()</a>, <a class="el" href="gps_8h_source.html#l00054">GPS_VALID_COURSE_BIT</a>, <a class="el" href="gps_8h_source.html#l00053">GPS_VALID_HMSL_BIT</a>, <a class="el" href="gps_8h_source.html#l00049">GPS_VALID_POS_LLA_BIT</a>, <a class="el" href="gps_8h_source.html#l00050">GPS_VALID_POS_UTM_BIT</a>, <a class="el" href="gps_8h_source.html#l00052">GPS_VALID_VEL_NED_BIT</a>, <a class="el" href="gps_8h_source.html#l00091">GpsState::gspeed</a>, <a class="el" href="gps_8h_source.html#l00088">GpsState::hmsl</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00055">LlaCoor_f::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00171">LLA_BFP_OF_REAL</a>, <a class="el" href="gps_8h_source.html#l00086">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00056">LlaCoor_f::lon</a>, <a class="el" href="gps_8h_source.html#l00103">GpsState::nb_channels</a>, <a class="el" href="gps_8h_source.html#l00090">GpsState::ned_vel</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00087">UtmCoor_i::north</a>, <a class="el" href="gps_8h_source.html#l00098">GpsState::num_sv</a>, <a class="el" href="gps_8h_source.html#l00094">GpsState::pacc</a>, <a class="el" href="gps_8h_source.html#l00097">GpsState::pdop</a>, <a class="el" href="gps_8h_source.html#l00074">SVinfo::qi</a>, <a class="el" href="gps_8h_source.html#l00095">GpsState::sacc</a>, <a class="el" href="gps_8h_source.html#l00072">SVinfo::svid</a>, <a class="el" href="gps_8h_source.html#l00104">GpsState::svinfos</a>, <a class="el" href="gps_8h_source.html#l00101">GpsState::tow</a>, <a class="el" href="gps_8h_source.html#l00087">GpsState::utm_pos</a>, <a class="el" href="gps_8h_source.html#l00082">GpsState::valid_fields</a>, <a class="el" href="gps_8h_source.html#l00100">GpsState::week</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00069">NedCoor_i::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00070">NedCoor_i::y</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00090">UtmCoor_i::zone</a>.</p>
 
-<p>Referenced by <a class="el" href="sim__gps_8c_source.html#l00074">sim_use_gps_pos_bytecode()</a>.</p>
+<p>Referenced by <a class="el" href="sim__gps_8c_source.html#l00075">sim_use_gps_pos_bytecode()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -238,7 +238,7 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sim__gps_8c_a07f63734731109c0ed43e4f4dbcb98f2_cgraph.png" border="0" usemap="#sim__gps_8c_a07f63734731109c0ed43e4f4dbcb98f2_cgraph" alt=""/></div>
 <map name="sim__gps_8c_a07f63734731109c0ed43e4f4dbcb98f2_cgraph" id="sim__gps_8c_a07f63734731109c0ed43e4f4dbcb98f2_cgraph">
-<area shape="rect" id="node2" href="gps__sim_8c.html#a9b24214fcb576b1bd7832dccaaa3f430" title="gps_sim_publish" alt="" coords="188,5,315,32"/><area shape="rect" id="node3" href="linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="363,5,507,32"/><area shape="rect" id="node4" href="sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="555,5,692,32"/></map>
+<area shape="rect" id="node2" href="gps__sim_8c.html#a9b24214fcb576b1bd7832dccaaa3f430" title="gps_sim_publish" alt="" coords="188,5,315,32"/><area shape="rect" id="node3" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="363,5,507,32"/><area shape="rect" id="node4" href="sys__time_8h.html#adb22f2652f04908fbc644c7274bf7273" title="usec_of_sys_time_ticks" alt="" coords="555,5,725,32"/></map>
 </div>
 </p>
 
@@ -260,9 +260,9 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a> sim_use_gps_pos_bytecode </td>
+          <td class="memname">value sim_use_gps_pos_bytecode </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a900b69af7d674b8db3bceae754b4955a">value</a> *&#160;</td>
+          <td class="paramtype">value *&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
@@ -279,7 +279,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sim__gps_8c_source.html#l00074">74</a> of file <a class="el" href="sim__gps_8c_source.html">sim_gps.c</a>.</p>
+<p>Definition at line <a class="el" href="sim__gps_8c_source.html#l00075">75</a> of file <a class="el" href="sim__gps_8c_source.html">sim_gps.c</a>.</p>
 
 <p>References <a class="el" href="sim__gps_8c_source.html#l00020">sim_use_gps_pos()</a>.</p>
 
@@ -290,7 +290,7 @@ Functions</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sim__gps_8c_a7e916af45c0d2dea26e3e5faff0bd3e5_cgraph.png" border="0" usemap="#sim__gps_8c_a7e916af45c0d2dea26e3e5faff0bd3e5_cgraph" alt=""/></div>
 <map name="sim__gps_8c_a7e916af45c0d2dea26e3e5faff0bd3e5_cgraph" id="sim__gps_8c_a7e916af45c0d2dea26e3e5faff0bd3e5_cgraph">
-<area shape="rect" id="node2" href="sim__gps_8c.html#a07f63734731109c0ed43e4f4dbcb98f2" title="From airborne/autopilot/. " alt="" coords="255,5,389,32"/><area shape="rect" id="node3" href="gps__sim_8c.html#a9b24214fcb576b1bd7832dccaaa3f430" title="gps_sim_publish" alt="" coords="437,5,564,32"/><area shape="rect" id="node4" href="linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="612,5,756,32"/><area shape="rect" id="node5" href="sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="804,5,941,32"/></map>
+<area shape="rect" id="node2" href="sim__gps_8c.html#a07f63734731109c0ed43e4f4dbcb98f2" title="From airborne/autopilot/. " alt="" coords="255,5,389,32"/><area shape="rect" id="node3" href="gps__sim_8c.html#a9b24214fcb576b1bd7832dccaaa3f430" title="gps_sim_publish" alt="" coords="437,5,564,32"/><area shape="rect" id="node4" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="612,5,756,32"/><area shape="rect" id="node5" href="sys__time_8h.html#adb22f2652f04908fbc644c7274bf7273" title="usec_of_sys_time_ticks" alt="" coords="804,5,975,32"/></map>
 </div>
 </p>
 
@@ -320,7 +320,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sim__gps_8c_source.html#l00080">80</a> of file <a class="el" href="sim__gps_8c_source.html">sim_gps.c</a>.</p>
+<p>Definition at line <a class="el" href="sim__gps_8c_source.html#l00081">81</a> of file <a class="el" href="sim__gps_8c_source.html">sim_gps.c</a>.</p>
 
 </div>
 </div>
@@ -330,7 +330,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_c87a6d12365ead88e0b90ddbc1b3c9bb.html">sim</a></li><li class="navelem"><a class="el" href="sim__gps_8c.html">sim_gps.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:37 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

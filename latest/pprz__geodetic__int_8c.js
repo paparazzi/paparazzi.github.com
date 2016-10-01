@@ -11,8 +11,10 @@ var pprz__geodetic__int_8c =
     [ "enu_of_ecef_pos_i", "group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11", null ],
     [ "enu_of_ecef_vect_i", "group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986", null ],
     [ "enu_of_lla_point_i", "group__math__geodetic__int.html#gab462d1e8278e0dd9cbc9ff463cde8f5e", null ],
+    [ "enu_of_lla_pos_i", "group__math__geodetic__int.html#gae42bb4930966f1c362524f95bb5d7d6e", null ],
     [ "enu_of_lla_vect_i", "group__math__geodetic__int.html#ga5a24d340ac59b50eff6dc23a5102ea96", null ],
     [ "lla_of_ecef_i", "group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23", null ],
+    [ "lla_of_utm_i", "group__math__geodetic__int.html#ga3e1a1eaa12a3890f5a70574219a74d9e", null ],
     [ "ltp_def_from_ecef_i", "group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f", null ],
     [ "ltp_def_from_lla_i", "group__math__geodetic__int.html#gaf0b761a4e44c92481ac96b623c34ef70", null ],
     [ "ltp_of_ecef_rmat_from_lla_i", "group__math__geodetic__int.html#ga6b7ff6661d7385053cc297340d6a5cc9", null ],
@@ -20,5 +22,7 @@ var pprz__geodetic__int_8c =
     [ "ned_of_ecef_pos_i", "group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b", null ],
     [ "ned_of_ecef_vect_i", "group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea", null ],
     [ "ned_of_lla_point_i", "group__math__geodetic__int.html#ga6618f634b774eaf7182dfec83d68f141", null ],
-    [ "ned_of_lla_vect_i", "group__math__geodetic__int.html#ga58243b878d6c96d0bbbae0cc1950da75", null ]
+    [ "ned_of_lla_pos_i", "group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093", null ],
+    [ "ned_of_lla_vect_i", "group__math__geodetic__int.html#ga58243b878d6c96d0bbbae0cc1950da75", null ],
+    [ "utm_of_lla_i", "group__math__geodetic__int.html#gad84470d73cce3f4d1c54bf579239849c", null ]
 ];

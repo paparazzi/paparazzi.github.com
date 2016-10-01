@@ -8,7 +8,7 @@ var guidance__flip_8c =
     [ "autopilot_mode_old", "guidance__flip_8c.html#a4ec80fd4967f7c2952d26e33a6d0d2d6", null ],
     [ "flip_cmd_earth", "guidance__flip_8c.html#aab57dd563b3850f0cb64d747125ba4d0", null ],
     [ "flip_counter", "guidance__flip_8c.html#a45268ad88fac212b77584a0b926ef3ff", null ],
-    [ "flip_rollout", "guidance__flip_8c.html#a7a0e598e61d1486779fac7df256e332f", null ],
+    [ "flip_rollout", "guidance__flip_8c.html#a86b0295589839d4662f335c227510623", null ],
     [ "flip_state", "guidance__flip_8c.html#a1d86e4bf9b9a3fa58f3ed055a0acc6f9", null ],
     [ "heading_save", "guidance__flip_8c.html#a4e8380e4b77ede8f3173cc428df378c8", null ]
 ];

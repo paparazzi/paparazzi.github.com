@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -137,10 +137,10 @@ $(document).ready(function(){initNavTree('lpc21_2mcu__periph_2pwm__input__arch_8
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="std_8h.html">std.h</a>&quot;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="LPC21xx_8h.html">LPC21xx.h</a>&quot;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="lpc21_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89">   36</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="lpc21_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89">pwm_input_channels</a> {</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="lpc21_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a32b12a036871c7af7e058b004d913c4e">   37</a></span>&#160;  <a class="code" href="lpc21_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a32b12a036871c7af7e058b004d913c4e">PWM_INPUT1</a>,</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="lpc21_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a9111b96e9eb0797d88775081ee4fd89a">   38</a></span>&#160;  <a class="code" href="lpc21_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a9111b96e9eb0797d88775081ee4fd89a">PWM_INPUT2</a>,</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="lpc21_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a64615989b58d9c05b43316402ec94502">   39</a></span>&#160;  <a class="code" href="lpc21_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a64615989b58d9c05b43316402ec94502">PWM_INPUT_NB</a></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="lpc21_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89">   36</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="chibios_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89">pwm_input_channels</a> {</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="lpc21_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a32b12a036871c7af7e058b004d913c4e">   37</a></span>&#160;  <a class="code" href="chibios_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a32b12a036871c7af7e058b004d913c4e">PWM_INPUT1</a>,</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="lpc21_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a9111b96e9eb0797d88775081ee4fd89a">   38</a></span>&#160;  <a class="code" href="chibios_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a9111b96e9eb0797d88775081ee4fd89a">PWM_INPUT2</a>,</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="lpc21_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a64615989b58d9c05b43316402ec94502">   39</a></span>&#160;  <a class="code" href="chibios_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a64615989b58d9c05b43316402ec94502">PWM_INPUT_NB</a></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pwm__input_8h.html">mcu_periph/pwm_input.h</a>&quot;</span></div>
@@ -158,12 +158,12 @@ $(document).ready(function(){initNavTree('lpc21_2mcu__periph_2pwm__input__arch_8
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif //USE_PWM_INPUT2</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PWM_INPUT_ARCH_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="chibios_2mcu__periph_2pwm__input__arch_8h_html_a24e1244ece1163b0554a800e5cf2fe89a32b12a036871c7af7e058b004d913c4e"><div class="ttname"><a href="chibios_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a32b12a036871c7af7e058b004d913c4e">PWM_INPUT1</a></div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2pwm__input__arch_8h_source.html#l00036">pwm_input_arch.h:36</a></div></div>
+<div class="ttc" id="chibios_2mcu__periph_2pwm__input__arch_8h_html_a24e1244ece1163b0554a800e5cf2fe89a9111b96e9eb0797d88775081ee4fd89a"><div class="ttname"><a href="chibios_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a9111b96e9eb0797d88775081ee4fd89a">PWM_INPUT2</a></div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2pwm__input__arch_8h_source.html#l00037">pwm_input_arch.h:37</a></div></div>
 <div class="ttc" id="pwm__input_8h_html"><div class="ttname"><a href="pwm__input_8h.html">pwm_input.h</a></div><div class="ttdoc">arch independent PWM input capture API </div></div>
-<div class="ttc" id="lpc21_2mcu__periph_2pwm__input__arch_8h_html_a24e1244ece1163b0554a800e5cf2fe89a64615989b58d9c05b43316402ec94502"><div class="ttname"><a href="lpc21_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a64615989b58d9c05b43316402ec94502">PWM_INPUT_NB</a></div><div class="ttdef"><b>Definition:</b> <a href="lpc21_2mcu__periph_2pwm__input__arch_8h_source.html#l00039">pwm_input_arch.h:39</a></div></div>
-<div class="ttc" id="lpc21_2mcu__periph_2pwm__input__arch_8h_html_a24e1244ece1163b0554a800e5cf2fe89a32b12a036871c7af7e058b004d913c4e"><div class="ttname"><a href="lpc21_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a32b12a036871c7af7e058b004d913c4e">PWM_INPUT1</a></div><div class="ttdef"><b>Definition:</b> <a href="lpc21_2mcu__periph_2pwm__input__arch_8h_source.html#l00037">pwm_input_arch.h:37</a></div></div>
-<div class="ttc" id="lpc21_2mcu__periph_2pwm__input__arch_8h_html_a24e1244ece1163b0554a800e5cf2fe89"><div class="ttname"><a href="lpc21_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89">pwm_input_channels</a></div><div class="ttdeci">pwm_input_channels</div><div class="ttdef"><b>Definition:</b> <a href="lpc21_2mcu__periph_2pwm__input__arch_8h_source.html#l00036">pwm_input_arch.h:36</a></div></div>
+<div class="ttc" id="chibios_2mcu__periph_2pwm__input__arch_8h_html_a24e1244ece1163b0554a800e5cf2fe89"><div class="ttname"><a href="chibios_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89">pwm_input_channels</a></div><div class="ttdeci">pwm_input_channels</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2pwm__input__arch_8h_source.html#l00035">pwm_input_arch.h:35</a></div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
-<div class="ttc" id="lpc21_2mcu__periph_2pwm__input__arch_8h_html_a24e1244ece1163b0554a800e5cf2fe89a9111b96e9eb0797d88775081ee4fd89a"><div class="ttname"><a href="lpc21_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a9111b96e9eb0797d88775081ee4fd89a">PWM_INPUT2</a></div><div class="ttdef"><b>Definition:</b> <a href="lpc21_2mcu__periph_2pwm__input__arch_8h_source.html#l00038">pwm_input_arch.h:38</a></div></div>
+<div class="ttc" id="chibios_2mcu__periph_2pwm__input__arch_8h_html_a24e1244ece1163b0554a800e5cf2fe89a64615989b58d9c05b43316402ec94502"><div class="ttname"><a href="chibios_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a64615989b58d9c05b43316402ec94502">PWM_INPUT_NB</a></div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2pwm__input__arch_8h_source.html#l00038">pwm_input_arch.h:38</a></div></div>
 <div class="ttc" id="LPC21xx_8h_html"><div class="ttname"><a href="LPC21xx_8h.html">LPC21xx.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('lpc21_2mcu__periph_2pwm__input__arch_8
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_3f7617cb4a5e4fe5cc816b7b3bbdea3a.html">lpc21</a></li><li class="navelem"><a class="el" href="dir_52b0b5e73fdd6096ec81364edad665ef.html">mcu_periph</a></li><li class="navelem"><a class="el" href="lpc21_2mcu__periph_2pwm__input__arch_8h.html">pwm_input_arch.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:14 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:12 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

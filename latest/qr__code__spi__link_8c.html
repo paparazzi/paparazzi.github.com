@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('qr__code__spi__link_8c.html','');});
 <code>#include &quot;<a class="el" href="imu_8h_source.html">subsystems/imu.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="spi_8h_source.html">mcu_periph/spi.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
-<code>#include &quot;messages.h&quot;</code><br />
+<code>#include &quot;pprzlink/messages.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for qr_code_spi_link.c:</div>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('qr__code__spi__link_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="qr__code__spi__link_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2gumstix__interface_2qr__code__spi__link_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2gumstix__interface_2qr__code__spi__link_8c" id="sw_2airborne_2modules_2gumstix__interface_2qr__code__spi__link_8c">
-<area shape="rect" id="node2" href="qr__code__spi__link_8h.html" title="qr_code_spi_link.h" alt="" coords="528,117,667,143"/><area shape="rect" id="node4" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="365,117,504,143"/><area shape="rect" id="node15" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API. " alt="" coords="692,117,823,143"/><area shape="rect" id="node17" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="865,206,1004,233"/><area shape="rect" id="node22" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1373,109,1526,151"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="345,295,524,322"/><area shape="rect" id="node11" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="79,295,270,322"/><area shape="rect" id="node13" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="230,199,394,240"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="116,385,271,411"/><area shape="rect" id="node9" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="346,385,497,411"/><area shape="rect" id="node19" href="link__device_8h.html" title="generic device header " alt="" coords="1126,474,1309,501"/><area shape="rect" id="node20" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1304,556,1389,583"/><area shape="rect" id="node24" href="pprz__transport_8h.html" title="Building and parsing Paparazzi frames. " alt="" coords="1438,288,1591,329"/><area shape="rect" id="node28" href="pprzlog__transport_8h.html" title="Protocol for on&#45;board data logger with timestamp. " alt="" coords="1667,288,1821,329"/><area shape="rect" id="node32" href="xbee_8h.html" title="Maxstream XBee serial input and output. " alt="" coords="1031,199,1185,240"/><area shape="rect" id="node34" href="w5100_8h.html" title="W5100 ethernet chip I/O. " alt="" coords="1546,199,1699,240"/><area shape="rect" id="node25" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="725,377,878,419"/><area shape="rect" id="node27" href="transport_8h.html" title="generic transport header " alt="" coords="1141,377,1294,419"/><area shape="rect" id="node29" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1659,385,1829,411"/><area shape="rect" id="node33" href="xbee24_8h.html" title="Configuration for 2.4GHz &quot;series 1&quot; and 900MHz modules. " alt="" coords="1026,288,1179,329"/></map>
+<area shape="rect" id="node2" href="qr__code__spi__link_8h.html" title="qr_code_spi_link.h" alt="" coords="148,117,287,143"/><area shape="rect" id="node4" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="485,117,624,143"/><area shape="rect" id="node16" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API. " alt="" coords="1673,117,1804,143"/><area shape="rect" id="node18" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="844,206,983,233"/><area shape="rect" id="node22" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1007,109,1161,151"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="417,288,596,315"/><area shape="rect" id="node11" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="173,288,363,315"/><area shape="rect" id="node14" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="473,199,637,240"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="311,363,465,389"/><area shape="rect" id="node9" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="633,363,783,389"/><area shape="rect" id="node23" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1185,206,1271,233"/><area shape="rect" id="node25" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1007,199,1161,240"/></map>
 </div>
 </div>
 <p><a href="qr__code__spi__link_8c_source.html">Go to the source code of this file.</a></p>
@@ -143,8 +143,8 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:ab768791ca590a71b1960034eac3d68bb"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__spi.html#structspi__transaction">spi_transaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qr__code__spi__link_8c.html#ab768791ca590a71b1960034eac3d68bb">qr_code_spi_link_transaction</a></td></tr>
 <tr class="separator:ab768791ca590a71b1960034eac3d68bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa014b178be96e65e13df1fc9dc417b78"><td class="memItemLeft" align="right" valign="top">static volatile bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qr__code__spi__link_8c.html#aa014b178be96e65e13df1fc9dc417b78">qr_code_spi_data_available</a> = <a class="el" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></td></tr>
-<tr class="separator:aa014b178be96e65e13df1fc9dc417b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea48d29c373adbfe28f95b262989b524"><td class="memItemLeft" align="right" valign="top">static volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qr__code__spi__link_8c.html#aea48d29c373adbfe28f95b262989b524">qr_code_spi_data_available</a> = false</td></tr>
+<tr class="separator:aea48d29c373adbfe28f95b262989b524"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46469c88d17f6fb9d0fe32aa18c5f012"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qr__code__spi__link_8c.html#a46469c88d17f6fb9d0fe32aa18c5f012">testDataOut</a> [3] = {1, 2, 3}</td></tr>
 <tr class="separator:a46469c88d17f6fb9d0fe32aa18c5f012"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a144142e8c708ff592526ccb249b021be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qr__code__spi__link_8c.html#a144142e8c708ff592526ccb249b021be">testDataIn</a> [3] = {9, 9, 9}</td></tr>
@@ -176,7 +176,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="qr__code__spi__link_8c_afe718e5de23ff690fa62b35bb69553f0_cgraph.png" border="0" usemap="#qr__code__spi__link_8c_afe718e5de23ff690fa62b35bb69553f0_cgraph" alt=""/></div>
 <map name="qr__code__spi__link_8c_afe718e5de23ff690fa62b35bb69553f0_cgraph" id="qr__code__spi__link_8c_afe718e5de23ff690fa62b35bb69553f0_cgraph">
-<area shape="rect" id="node2" href="qr__code__spi__link_8c.html#a13951d18f1ab6b05f07bb0ed14ce8c72" title="qr_code_spi_link_trans_cb" alt="" coords="205,5,393,32"/><area shape="rect" id="node3" href="group__spi.html#ga02a7edceaff0d9adc8e9b236b9915415" title="Register one (and only one) transaction to use spi as slave. " alt="" coords="231,56,367,83"/></map>
+<area shape="rect" id="node2" href="qr__code__spi__link_8c.html#a13951d18f1ab6b05f07bb0ed14ce8c72" title="qr_code_spi_link_trans_cb" alt="" coords="205,5,393,32"/><area shape="rect" id="node3" href="group__spi.html#gad2b96673b774298d3bd908e84ceb37c8" title="Register one (and only one) transaction to use spi as slave. " alt="" coords="231,56,367,83"/></map>
 </div>
 </p>
 
@@ -198,7 +198,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="qr__code__spi__link_8c_source.html#l00058">58</a> of file <a class="el" href="qr__code__spi__link_8c_source.html">qr_code_spi_link.c</a>.</p>
 
-<p>References <a class="el" href="downlink_8h_source.html#l00079">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00083">DefaultDevice</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="spi_8h_source.html#l00143">spi_transaction::input_buf</a>, <a class="el" href="qr__code__spi__link_8c_source.html#l00035">qr_code_spi_data_available</a>, <a class="el" href="qr__code__spi__link_8c_source.html#l00033">qr_code_spi_link_transaction</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00967">spi1</a>, and <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00679">spi_slave_register()</a>.</p>
+<p>References <a class="el" href="downlink_8h_source.html#l00084">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00088">DefaultDevice</a>, <a class="el" href="spi_8h_source.html#l00143">spi_transaction::input_buf</a>, <a class="el" href="qr__code__spi__link_8c_source.html#l00035">qr_code_spi_data_available</a>, <a class="el" href="qr__code__spi__link_8c_source.html#l00033">qr_code_spi_link_transaction</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00967">spi1</a>, and <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00679">spi_slave_register()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -207,7 +207,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="qr__code__spi__link_8c_ae9d12bd06ade748707f69958324c82f3_cgraph.png" border="0" usemap="#qr__code__spi__link_8c_ae9d12bd06ade748707f69958324c82f3_cgraph" alt=""/></div>
 <map name="qr__code__spi__link_8c_ae9d12bd06ade748707f69958324c82f3_cgraph" id="qr__code__spi__link_8c_ae9d12bd06ade748707f69958324c82f3_cgraph">
-<area shape="rect" id="node2" href="group__spi.html#ga02a7edceaff0d9adc8e9b236b9915415" title="Register one (and only one) transaction to use spi as slave. " alt="" coords="236,5,372,32"/></map>
+<area shape="rect" id="node2" href="group__spi.html#gad2b96673b774298d3bd908e84ceb37c8" title="Register one (and only one) transaction to use spi as slave. " alt="" coords="236,5,372,32"/></map>
 </div>
 </p>
 
@@ -237,7 +237,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="qr__code__spi__link_8c_source.html#l00070">70</a> of file <a class="el" href="qr__code__spi__link_8c_source.html">qr_code_spi_link.c</a>.</p>
 
-<p>References <a class="el" href="qr__code__spi__link_8c_source.html#l00035">qr_code_spi_data_available</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p>References <a class="el" href="qr__code__spi__link_8c_source.html#l00035">qr_code_spi_data_available</a>.</p>
 
 <p>Referenced by <a class="el" href="qr__code__spi__link_8c_source.html#l00042">qr_code_spi_link_init()</a>.</p>
 
@@ -255,7 +255,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="aa014b178be96e65e13df1fc9dc417b78"></a>
+<a class="anchor" id="aea48d29c373adbfe28f95b262989b524"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -263,7 +263,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">volatile bool_t qr_code_spi_data_available = <a class="el" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></td>
+          <td class="memname">volatile bool qr_code_spi_data_available = false</td>
         </tr>
       </table>
   </td>
@@ -333,7 +333,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_782f24016614460bc545971e96ca8414.html">gumstix_interface</a></li><li class="navelem"><a class="el" href="qr__code__spi__link_8c.html">qr_code_spi_link.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:51 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:58 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

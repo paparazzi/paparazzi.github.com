@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -205,7 +205,7 @@ Macros</h2></td></tr>
 <tr class="separator:a4020b88dc5dee9fc6ab82f4103d91175"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95351e73a4dfe90ea157b044127f5756"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ads1114_8h.html#a95351e73a4dfe90ea157b044127f5756">Ads1114Event</a>()</td></tr>
 <tr class="separator:a95351e73a4dfe90ea157b044127f5756"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab935e23c858967df52590b3b1e06ce06"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ads1114_8h.html#ab935e23c858967df52590b3b1e06ce06">Ads1114GetValue</a>(_p)&#160;&#160;&#160;((<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)(((<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)<a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a48b4f0842338aeafa79aeab314f33696">_p.trans.buf</a>[0]&lt;&lt;8)|<a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a48b4f0842338aeafa79aeab314f33696">_p.trans.buf</a>[1]))</td></tr>
+<tr class="memitem:ab935e23c858967df52590b3b1e06ce06"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ads1114_8h.html#ab935e23c858967df52590b3b1e06ce06">Ads1114GetValue</a>(_p)&#160;&#160;&#160;((<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)(((<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)_p.trans.buf[0]&lt;&lt;8)|_p.trans.buf[1]))</td></tr>
 <tr class="separator:ab935e23c858967df52590b3b1e06ce06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -239,13 +239,13 @@ Functions</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a92f5a29419a924033bcadd5caf8ad6e7"></a>bool_t</td>
+<a class="anchor" id="a49db431628efd8a97dafaa3cfa9b3cb2"></a>bool</td>
 <td class="fieldname">
 config_done</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a356e5a2bcac9dd882f5ffe3cf346d380"></a>bool_t</td>
+<a class="anchor" id="aa5205126bf32f8fdd082798ad08d525b"></a>bool</td>
 <td class="fieldname">
 data_available</td>
 <td class="fielddoc">
@@ -282,18 +282,17 @@ trans</td>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{<a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">\</a></div>
 <div class="line"><a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">    if</a> (!_p.config_done) { <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">\</a></div>
-<div class="line"><a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">      if</a> (_p.trans.status == <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a>) { _p.config_done = <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>; _p.trans.status = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace">I2CTransDone</a>; } <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">\</a></div>
+<div class="line"><a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">      if</a> (_p.trans.status == <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a>) { _p.config_done = <span class="keyword">true</span>; _p.trans.status = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace">I2CTransDone</a>; } <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">\</a></div>
 <div class="line"><a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">      if</a> (_p.trans.status == <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a4a8906d81bf97d49da468e6c6b9f39e9">I2CTransFailed</a>) { _p.trans.status = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace">I2CTransDone</a>; } \</div>
 <div class="line">    } <span class="keywordflow">else</span> { <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">\</a></div>
-<div class="line"><a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">      if</a> (_p.trans.status == <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a>) { _p.data_available = <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>; _p.trans.status = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace">I2CTransDone</a>; } <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">\</a></div>
+<div class="line"><a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">      if</a> (_p.trans.status == <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a>) { _p.data_available = <span class="keyword">true</span>; _p.trans.status = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace">I2CTransDone</a>; } <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">\</a></div>
 <div class="line"><a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">      if</a> (_p.trans.status == <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a4a8906d81bf97d49da468e6c6b9f39e9">I2CTransFailed</a>) { _p.trans.status = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace">I2CTransDone</a>; } \</div>
 <div class="line">    } \</div>
 <div class="line">  }</div>
 <div class="ttc" id="group__i2c_html_ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b"><div class="ttname"><a href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a></div><div class="ttdoc">transaction successfully finished by I2C driver </div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00057">i2c.h:57</a></div></div>
-<div class="ttc" id="std_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> <a href="std_8h_source.html#l00004">std.h:4</a></div></div>
 <div class="ttc" id="group__i2c_html_ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace"><div class="ttname"><a href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace">I2CTransDone</a></div><div class="ttdoc">transaction set to done by user level </div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00059">i2c.h:59</a></div></div>
 <div class="ttc" id="group__i2c_html_ggab31a87ef6e90ddd08be846de32e8a442a4a8906d81bf97d49da468e6c6b9f39e9"><div class="ttname"><a href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a4a8906d81bf97d49da468e6c6b9f39e9">I2CTransFailed</a></div><div class="ttdoc">transaction failed </div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00058">i2c.h:58</a></div></div>
-<div class="ttc" id="stm32_2subsystems_2radio__control_2spektrum__arch_8c_html_a14a004ce07f47580a6800c76982ea599"><div class="ttname"><a href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">if</a></div><div class="ttdeci">if(PrimarySpektrumState.SpektrumTimer)</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00556">spektrum_arch.c:556</a></div></div>
+<div class="ttc" id="stm32_2subsystems_2radio__control_2spektrum__arch_8c_html_a14a004ce07f47580a6800c76982ea599"><div class="ttname"><a href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">if</a></div><div class="ttdeci">if(PrimarySpektrumState.SpektrumTimer)</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00605">spektrum_arch.c:605</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="ads1114_8h_source.html#l00135">135</a> of file <a class="el" href="ads1114_8h_source.html">ads1114.h</a>.</p>
 
@@ -763,7 +762,7 @@ trans</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_p</td><td>)</td>
-          <td>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)(((<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)<a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a48b4f0842338aeafa79aeab314f33696">_p.trans.buf</a>[0]&lt;&lt;8)|<a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a48b4f0842338aeafa79aeab314f33696">_p.trans.buf</a>[1]))</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)(((<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)_p.trans.buf[0]&lt;&lt;8)|_p.trans.buf[1]))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -791,7 +790,7 @@ trans</td>
 
 <p>Definition at line <a class="el" href="ads1114_8c_source.html#l00037">37</a> of file <a class="el" href="ads1114_8c_source.html">ads1114.c</a>.</p>
 
-<p>References <a class="el" href="ads1114_8h_source.html#l00076">ADS1114_1_CONFIG_LSB</a>, <a class="el" href="ads1114_8h_source.html#l00075">ADS1114_1_CONFIG_MSB</a>, <a class="el" href="ads1114_8h_source.html#l00036">ADS1114_1_I2C_ADDR</a>, <a class="el" href="ads1114_8h_source.html#l00108">ADS1114_2_CONFIG_LSB</a>, <a class="el" href="ads1114_8h_source.html#l00107">ADS1114_2_CONFIG_MSB</a>, <a class="el" href="ads1114_8h_source.html#l00039">ADS1114_2_I2C_ADDR</a>, <a class="el" href="ads1114_8h_source.html#l00113">ADS1114_I2C_DEV</a>, <a class="el" href="ads1114_8h_source.html#l00044">ADS1114_POINTER_CONFIG_REG</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, and <a class="el" href="i2c_8c_source.html#l00258">i2c_transmit()</a>.</p>
+<p>References <a class="el" href="ads1114_8h_source.html#l00076">ADS1114_1_CONFIG_LSB</a>, <a class="el" href="ads1114_8h_source.html#l00075">ADS1114_1_CONFIG_MSB</a>, <a class="el" href="ads1114_8h_source.html#l00036">ADS1114_1_I2C_ADDR</a>, <a class="el" href="ads1114_8h_source.html#l00108">ADS1114_2_CONFIG_LSB</a>, <a class="el" href="ads1114_8h_source.html#l00107">ADS1114_2_CONFIG_MSB</a>, <a class="el" href="ads1114_8h_source.html#l00039">ADS1114_2_I2C_ADDR</a>, <a class="el" href="ads1114_8h_source.html#l00113">ADS1114_I2C_DEV</a>, <a class="el" href="ads1114_8h_source.html#l00044">ADS1114_POINTER_CONFIG_REG</a>, and <a class="el" href="i2c_8c_source.html#l00258">i2c_transmit()</a>.</p>
 
 <p>Referenced by <a class="el" href="umarim_2baro__board_8c_source.html#l00049">baro_init()</a>.</p>
 
@@ -802,7 +801,7 @@ trans</td>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ads1114_8h_a663d281bebd9216206400b2277496baf_cgraph.png" border="0" usemap="#ads1114_8h_a663d281bebd9216206400b2277496baf_cgraph" alt=""/></div>
 <map name="ads1114_8h_a663d281bebd9216206400b2277496baf_cgraph" id="ads1114_8h_a663d281bebd9216206400b2277496baf_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#ga68659e03504627925829f2f12c2ec6d2" title="Submit a write only transaction. " alt="" coords="156,5,257,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="305,5,396,32"/></map>
+<area shape="rect" id="node2" href="group__i2c.html#ga54405aa058f14a143b8b1b5380015927" title="Submit a write only transaction. " alt="" coords="156,5,257,32"/><area shape="rect" id="node3" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="305,5,396,32"/></map>
 </div>
 </p>
 
@@ -846,7 +845,7 @@ trans</td>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ads1114_8h_a4ba628257d14fc3773ddfc484a18e199_cgraph.png" border="0" usemap="#ads1114_8h_a4ba628257d14fc3773ddfc484a18e199_cgraph" alt=""/></div>
 <map name="ads1114_8h_a4ba628257d14fc3773ddfc484a18e199_cgraph" id="ads1114_8h_a4ba628257d14fc3773ddfc484a18e199_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#gae029fe6bf43eaf9e46428fec7e7b91c7" title="Submit a write/read transaction. " alt="" coords="167,5,280,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4c9979d0fb22ed964efa6a006ce8dbfa" title="Submit a I2C transaction. " alt="" coords="328,5,419,32"/></map>
+<area shape="rect" id="node2" href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6" title="Submit a write/read transaction. " alt="" coords="167,5,280,32"/><area shape="rect" id="node3" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="328,5,419,32"/></map>
 </div>
 </p>
 
@@ -869,7 +868,7 @@ trans</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="ads1114_8h.html">ads1114.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:57 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:05 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

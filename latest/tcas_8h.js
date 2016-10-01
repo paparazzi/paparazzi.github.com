@@ -4,8 +4,6 @@ var tcas_8h =
       [ "resolve", "tcas_8h.html#a415f4bed7ba6cfa8c1ee181ba8054a4e", null ],
       [ "status", "tcas_8h.html#a84263e97504633f539e41aad6d183d1a", null ]
     ] ],
-    [ "CallTCAS", "tcas_8h.html#ac6cf4a93985d655ea6d4b96cbe2b6ed0", null ],
-    [ "ParseTcasResolve", "tcas_8h.html#a77e46c8dbf3fb7857caa026c12f8577e", null ],
     [ "TCAS_NO_ALARM", "tcas_8h.html#ab9a79a26862be7bb5125172fb9ee3558", null ],
     [ "TCAS_RA", "tcas_8h.html#ac534dbcaf8c181eaf295dd0aba94b569", null ],
     [ "TCAS_TA", "tcas_8h.html#a2a1fff0a0522fa6c1c6f859d687308c7", null ],
@@ -15,6 +13,9 @@ var tcas_8h =
       [ "RA_CLIMB", "tcas_8h.html#a07deba9c3568731e07896ae2612e46a1af9aa818f0dad99575cc23dcd06c78dde", null ],
       [ "RA_DESCEND", "tcas_8h.html#a07deba9c3568731e07896ae2612e46a1a2e54857a4a34ea4d0041136523235b2d", null ]
     ] ],
+    [ "callTCAS", "tcas_8h.html#a8a506736e0d5a76d185e828786c76f78", null ],
+    [ "parseTcasRA", "tcas_8h.html#ae02e782b9aca4703f8fb2c8aeaca9441", null ],
+    [ "parseTcasResolve", "tcas_8h.html#a0e9cda68611380b1a78840531b999609", null ],
     [ "tcas_init", "tcas_8h.html#a625ef1c941fe293b480bf7032a212a38", null ],
     [ "tcas_periodic_task_1Hz", "tcas_8h.html#adb2f00821358ed6ad0f366e6a2422558", null ],
     [ "tcas_periodic_task_4Hz", "tcas_8h.html#aa520d855e76e58f77855603fde040497", null ],

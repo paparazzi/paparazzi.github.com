@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('rc__datalink_8h_source.html','');});
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="rc__datalink_8h.html#a2fab1464ab1748edb2a45a08cf7c422a">   43</a></span>&#160;<span class="preprocessor">#define RADIO_MODE      4</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">extern</span> <a class="code" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> <a class="code" href="rc__datalink_8h.html#a8ad016a0fe68026f295a8ffaacdd2c5f">rc_dl_values</a>[ <a class="code" href="rc__datalink_8h.html#a5f589ae407f18b848512ca256e03bb32">RC_DL_NB_CHANNEL</a> ];</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">extern</span> <span class="keyword">volatile</span> bool_t <a class="code" href="rc__datalink_8h.html#a6d2f954c65b1f761c99fd123b8ca7a35">rc_dl_frame_available</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">extern</span> <span class="keyword">volatile</span> <span class="keywordtype">bool</span> <a class="code" href="rc__datalink_8h.html#ab342fc7d0560212d19265550ed22efaf">rc_dl_frame_available</a>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="rc__datalink_8h.html#a22105107236d00fa616659322bd89a02">parse_rc_3ch_datalink</a>(</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> throttle_mode,</div>
@@ -165,10 +165,10 @@ $(document).ready(function(){initNavTree('rc__datalink_8h_source.html','');});
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* RC_DATALINK_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="rc__datalink_8h_html_a5f589ae407f18b848512ca256e03bb32"><div class="ttname"><a href="rc__datalink_8h.html#a5f589ae407f18b848512ca256e03bb32">RC_DL_NB_CHANNEL</a></div><div class="ttdeci">#define RC_DL_NB_CHANNEL</div><div class="ttdef"><b>Definition:</b> <a href="rc__datalink_8h_source.html#l00032">rc_datalink.h:32</a></div></div>
 <div class="ttc" id="rc__datalink_8h_html_aa3d40235f29aab16121c0073217835a2"><div class="ttname"><a href="rc__datalink_8h.html#aa3d40235f29aab16121c0073217835a2">parse_rc_4ch_datalink</a></div><div class="ttdeci">void parse_rc_4ch_datalink(uint8_t mode, uint8_t throttle, int8_t roll, int8_t pitch, int8_t yaw)</div><div class="ttdoc">Decode datalink message to get rc values with RC_4CH message. </div><div class="ttdef"><b>Definition:</b> <a href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00056">rc_datalink.c:56</a></div></div>
+<div class="ttc" id="rc__datalink_8h_html_ab342fc7d0560212d19265550ed22efaf"><div class="ttname"><a href="rc__datalink_8h.html#ab342fc7d0560212d19265550ed22efaf">rc_dl_frame_available</a></div><div class="ttdeci">volatile bool rc_dl_frame_available</div><div class="ttdef"><b>Definition:</b> <a href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00031">rc_datalink.c:31</a></div></div>
 <div class="ttc" id="rc__datalink_8h_html_a22105107236d00fa616659322bd89a02"><div class="ttname"><a href="rc__datalink_8h.html#a22105107236d00fa616659322bd89a02">parse_rc_3ch_datalink</a></div><div class="ttdeci">void parse_rc_3ch_datalink(uint8_t throttle_mode, int8_t roll, int8_t pitch)</div><div class="ttdoc">Decode datalink message to get rc values with RC_3CH message Mode and throttle are merge in the same ...</div><div class="ttdef"><b>Definition:</b> <a href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00040">rc_datalink.c:40</a></div></div>
 <div class="ttc" id="rc__datalink_8h_html_a760dbd4fa3f62cc43524fc420c2a9e5f"><div class="ttname"><a href="rc__datalink_8h.html#a760dbd4fa3f62cc43524fc420c2a9e5f">radio_control_impl_event</a></div><div class="ttdeci">void radio_control_impl_event(void(*_received_frame_handler)(void))</div><div class="ttdoc">RC event function with handler callback. </div><div class="ttdef"><b>Definition:</b> <a href="ppm_8c_source.html#l00080">ppm.c:80</a></div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
-<div class="ttc" id="rc__datalink_8h_html_a6d2f954c65b1f761c99fd123b8ca7a35"><div class="ttname"><a href="rc__datalink_8h.html#a6d2f954c65b1f761c99fd123b8ca7a35">rc_dl_frame_available</a></div><div class="ttdeci">volatile bool_t rc_dl_frame_available</div><div class="ttdef"><b>Definition:</b> <a href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00031">rc_datalink.c:31</a></div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="types_8h_html_aef44329758059c91c76d334e8fc09700"><div class="ttname"><a href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a></div><div class="ttdeci">signed char int8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00015">types.h:15</a></div></div>
 <div class="ttc" id="rc__datalink_8h_html_a8ad016a0fe68026f295a8ffaacdd2c5f"><div class="ttname"><a href="rc__datalink_8h.html#a8ad016a0fe68026f295a8ffaacdd2c5f">rc_dl_values</a></div><div class="ttdeci">int8_t rc_dl_values[RC_DL_NB_CHANNEL]</div><div class="ttdef"><b>Definition:</b> <a href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00030">rc_datalink.c:30</a></div></div>
@@ -178,7 +178,7 @@ $(document).ready(function(){initNavTree('rc__datalink_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_a146ed466020daad33793c9994e8ab3e.html">radio_control</a></li><li class="navelem"><a class="el" href="rc__datalink_8h.html">rc_datalink.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:33 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:34 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

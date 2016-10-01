@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -156,17 +156,20 @@ $(document).ready(function(){initNavTree('globals_vars_u.html','');});
 <li>u_a_ca_y
 : <a class="el" href="nav__smooth_8c.html#af5b82b9a455a98a12cafa72e73dce010">nav_smooth.c</a>
 </li>
+<li>uadc_idx
+: <a class="el" href="airspeed__uADC_8c.html#ad43e93daa8afaa03bf66bbf92307307a">airspeed_uADC.c</a>
+</li>
+<li>uadc_status
+: <a class="el" href="airspeed__uADC_8c.html#a5ac600da2f43be0fffe0cfd718ef77d1">airspeed_uADC.c</a>
+</li>
+<li>uadc_tab_idx
+: <a class="el" href="airspeed__uADC_8c.html#a9802355e4ce8ade31fac1d62a441b013">airspeed_uADC.c</a>
+</li>
 <li>uart_mutex
-: <a class="el" href="sim_2mcu__periph_2uart__arch_8c.html#ad95c5a3d78475744ae1e8792b8d73e43">uart_arch.c</a>
+: <a class="el" href="linux_2mcu__periph_2uart__arch_8c.html#ad95c5a3d78475744ae1e8792b8d73e43">uart_arch.c</a>
 </li>
 <li>uart_read_buff
 : <a class="el" href="high__speed__logger__direct__memory_8c.html#a2034ae0d8b7e2561e4d3298485dbd663">high_speed_logger_direct_memory.c</a>
-</li>
-<li>udot_estimation
-: <a class="el" href="stabilization__attitude__quat__indi_8c.html#aac72d794b4193a2f74b01c5f84994c54">stabilization_attitude_quat_indi.c</a>
-</li>
-<li>udotdot_estimation
-: <a class="el" href="stabilization__attitude__quat__indi_8c.html#abce01ee2db72f5801ced1973bae55614">stabilization_attitude_quat_indi.c</a>
 </li>
 <li>udp_mutex
 : <a class="el" href="linux_2mcu__periph_2udp__arch_8c.html#a805ef343c22b45e133fcedac1c2866ea">udp_arch.c</a>
@@ -185,8 +188,8 @@ $(document).ready(function(){initNavTree('globals_vars_u.html','');});
 : <a class="el" href="imu__um6_8c.html#a1eb5b73c9cb8d8572f52875186abd4ef">imu_um6.c</a>
 </li>
 <li>UM6_packet
-: <a class="el" href="imu__um6_8h.html#a36fb1254228e4dc1d4c65cfc99fe3253">imu_um6.h</a>
-, <a class="el" href="imu__um6_8c.html#a36fb1254228e4dc1d4c65cfc99fe3253">imu_um6.c</a>
+: <a class="el" href="imu__um6_8c.html#a36fb1254228e4dc1d4c65cfc99fe3253">imu_um6.c</a>
+, <a class="el" href="imu__um6_8h.html#a36fb1254228e4dc1d4c65cfc99fe3253">imu_um6.h</a>
 </li>
 <li>UM6_quat
 : <a class="el" href="imu__um6_8c.html#aefc92a58e72401bc524b91997f70fb3f">imu_um6.c</a>
@@ -199,6 +202,9 @@ $(document).ready(function(){initNavTree('globals_vars_u.html','');});
 : <a class="el" href="imu__um6_8c.html#a0d2c98bf470c4fb941059ae6df3ad36b">imu_um6.c</a>
 , <a class="el" href="imu__um6_8h.html#a0d2c98bf470c4fb941059ae6df3ad36b">imu_um6.h</a>
 </li>
+<li>UMSD1
+: <a class="el" href="usbStorage_8c.html#a26f45be22c71ec6bc546a17fe7e92928">usbStorage.c</a>
+</li>
 <li>unit
 : <a class="el" href="nav_8c.html#a04b783250b1673126fa3f4729cb2078e">nav.c</a>
 </li>
@@ -206,41 +212,41 @@ $(document).ready(function(){initNavTree('globals_vars_u.html','');});
 : <a class="el" href="navigation_8c.html#a9314d7061c454ecf2111d3965db8f23f">navigation.c</a>
 </li>
 <li>up
-: <a class="el" href="light__solar_8c.html#a865f598ce218c5496c018323caf1fb4d">light_solar.c</a>
-, <a class="el" href="light__solar_8h.html#a865f598ce218c5496c018323caf1fb4d">light_solar.h</a>
+: <a class="el" href="light__solar_8h.html#a865f598ce218c5496c018323caf1fb4d">light_solar.h</a>
+, <a class="el" href="light__solar_8c.html#a865f598ce218c5496c018323caf1fb4d">light_solar.c</a>
 </li>
 <li>Update_Matrix
 : <a class="el" href="ahrs__float__dcm_8c.html#ad127bd0b0b65b831860abe0ac9234672">ahrs_float_dcm.c</a>
 </li>
 <li>usb_connected
-: <a class="el" href="stm32_2usb__ser__hw_8c.html#a08da6b1923b8590c2258c1a7a9c3c027">usb_ser_hw.c</a>
+: <a class="el" href="stm32_2usb__ser__hw_8c.html#af67b401d141ad215f5eb4da16750c14c">usb_ser_hw.c</a>
 </li>
 <li>usb_serial
-: <a class="el" href="usb__serial_8h.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial.h</a>
-, <a class="el" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_ser_hw.c</a>
+: <a class="el" href="stm32_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_ser_hw.c</a>
+, <a class="el" href="usb__serial_8h.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_serial.h</a>
+, <a class="el" href="lpc21_2usb__ser__hw_8c.html#ac479b2dfa0b2c36002beb8033c0e3124">usb_ser_hw.c</a>
 </li>
 <li>usb_strings
 : <a class="el" href="stm32_2usb__ser__hw_8c.html#af34cf0c102eb4cf7bc0df82cd25bf8ad">usb_ser_hw.c</a>
 </li>
+<li>usbConfig
+: <a class="el" href="usbStorage_8c.html#afecca7115475dc26ab3b59a226a94eb9">usbStorage.c</a>
+</li>
 <li>usbd_control_buffer
 : <a class="el" href="stm32_2usb__ser__hw_8c.html#a3f5c5e68ae07d989114524003357a6f7">usb_ser_hw.c</a>
 </li>
-<li>use_adaptive_indi
-: <a class="el" href="stabilization__attitude__quat__indi_8h.html#a8c696ef38ac7273d571a4e259518a0ab">stabilization_attitude_quat_indi.h</a>
-, <a class="el" href="stabilization__attitude__quat__indi_8c.html#a8c696ef38ac7273d571a4e259518a0ab">stabilization_attitude_quat_indi.c</a>
+<li>usbStorageThreadPtr
+: <a class="el" href="usbStorage_8c.html#a2814f3f25999bd46f1226b3610e1087c">usbStorage.c</a>
 </li>
 <li>use_airspeed_ratio
-: <a class="el" href="stabilization__adaptive_8h.html#aa3cf0ada6c21e17a8269616f13439532">stabilization_adaptive.h</a>
-, <a class="el" href="stabilization__adaptive_8c.html#aa3cf0ada6c21e17a8269616f13439532">stabilization_adaptive.c</a>
+: <a class="el" href="stabilization__adaptive_8h.html#a184a150e98a139a3e0e5cc6e9bc340a0">stabilization_adaptive.h</a>
+, <a class="el" href="stabilization__adaptive_8c.html#a184a150e98a139a3e0e5cc6e9bc340a0">stabilization_adaptive.c</a>
 </li>
 <li>use_full_circle
-: <a class="el" href="nav__survey__poly__osam_8c.html#a4b3d2e91a9f24afde48c88c72b13e122">nav_survey_poly_osam.c</a>
+: <a class="el" href="nav__survey__poly__osam_8c.html#ae30758f04063d48852e904b61568eba4">nav_survey_poly_osam.c</a>
 </li>
 <li>ut1
 : <a class="el" href="baro__MS5534A_8c.html#a34f8f6f89a1ea8380fa692619ee8277c">baro_MS5534A.c</a>
-</li>
-<li>utm_f
-: <a class="el" href="ins__xsens700_8c.html#a3d0d9cde80e43864058d09bf67864fce">ins_xsens700.c</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -248,7 +254,7 @@ $(document).ready(function(){initNavTree('globals_vars_u.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 11 2016 14:02:31 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:45 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

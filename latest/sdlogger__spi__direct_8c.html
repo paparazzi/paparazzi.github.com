@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -114,9 +114,8 @@ $(document).ready(function(){initNavTree('sdlogger__spi__direct_8c.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="sdlogger__spi__direct_8h_source.html">modules/loggers/sdlogger_spi_direct.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="pprzlog__transport_8h_source.html">subsystems/datalink/pprzlog_transport.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="radio__control_8h_source.html">subsystems/radio_control.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="led_8h_source.html">led.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for sdlogger_spi_direct.c:</div>
@@ -125,7 +124,7 @@ $(document).ready(function(){initNavTree('sdlogger__spi__direct_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sdlogger__spi__direct_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2loggers_2sdlogger__spi__direct_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2loggers_2sdlogger__spi__direct_8c" id="sw_2airborne_2modules_2loggers_2sdlogger__spi__direct_8c">
-<area shape="rect" id="node2" href="sdlogger__spi__direct_8h.html" title="modules/loggers/sdlogger\l_spi_direct.h" alt="" coords="18,288,205,329"/><area shape="rect" id="node9" href="pprzlog__transport_8h.html" title="Protocol for on&#45;board data logger with timestamp. " alt="" coords="1323,377,1476,419"/><area shape="rect" id="node15" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="683,109,836,151"/><area shape="rect" id="node29" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="1576,117,1775,143"/><area shape="rect" id="node30" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1785,206,1838,233"/><area shape="rect" id="node3" href="link__device_8h.html" title="generic device header " alt="" coords="532,563,715,590"/><area shape="rect" id="node5" href="sdcard__spi_8h.html" title="Interface for reading and writing blocks of data to and from an SD card directly over SPI..." alt="" coords="41,377,181,419"/><area shape="rect" id="node4" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1135,645,1221,672"/><area shape="rect" id="node7" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API. " alt="" coords="23,474,154,501"/><area shape="rect" id="node10" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1226,474,1397,501"/><area shape="rect" id="node14" href="transport_8h.html" title="generic transport header " alt="" coords="968,467,1121,508"/><area shape="rect" id="node16" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="493,295,631,322"/><area shape="rect" id="node19" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="971,199,1124,240"/><area shape="rect" id="node23" href="pprz__transport_8h.html" title="Building and parsing Paparazzi frames. " alt="" coords="683,377,836,419"/><area shape="rect" id="node26" href="xbee_8h.html" title="Maxstream XBee serial input and output. " alt="" coords="885,288,1039,329"/><area shape="rect" id="node28" href="w5100_8h.html" title="W5100 ethernet chip I/O. " alt="" coords="656,288,809,329"/><area shape="rect" id="node24" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="791,467,944,508"/><area shape="rect" id="node27" href="xbee24_8h.html" title="Configuration for 2.4GHz &quot;series 1&quot; and 900MHz modules. " alt="" coords="860,377,1013,419"/><area shape="rect" id="node32" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1687,474,1783,501"/></map>
+<area shape="rect" id="node2" href="sdlogger__spi__direct_8h.html" title="modules/loggers/sdlogger\l_spi_direct.h" alt="" coords="227,109,414,151"/><area shape="rect" id="node8" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="705,199,859,240"/><area shape="rect" id="node17" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="591,109,744,151"/><area shape="rect" id="node19" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="857,117,910,143"/><area shape="rect" id="node4" href="sdcard__spi_8h.html" title="Interface for reading and writing blocks of data to and from an SD card directly over SPI..." alt="" coords="251,199,391,240"/><area shape="rect" id="node6" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API. " alt="" coords="230,295,361,322"/><area shape="rect" id="node9" href="inttypes_8h.html" title="inttypes.h" alt="" coords="827,295,913,322"/><area shape="rect" id="node13" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="649,288,803,329"/><area shape="rect" id="node15" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="486,295,625,322"/></map>
 </div>
 </div>
 <p><a href="sdlogger__spi__direct_8c_source.html">Go to the source code of this file.</a></p>
@@ -159,12 +158,14 @@ Functions</h2></td></tr>
 <tr class="separator:a8ba172956b3686b7a8ccb47bb9215bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e3b354ac6d0e173e051be713c63c161"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlogger__spi__direct_8c.html#a2e3b354ac6d0e173e051be713c63c161">sdlogger_spi_direct_command</a> (void)</td></tr>
 <tr class="separator:a2e3b354ac6d0e173e051be713c63c161"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6a0846663b4f34822376f9c7f501b9d"><td class="memItemLeft" align="right" valign="top">bool_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlogger__spi__direct_8c.html#ab6a0846663b4f34822376f9c7f501b9d">sdlogger_spi_direct_check_free_space</a> (struct <a class="el" href="sdlogger__spi__direct_8h.html#structsdlogger__spi__periph">sdlogger_spi_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> len)</td></tr>
-<tr class="separator:ab6a0846663b4f34822376f9c7f501b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff470fbbc1a5569c0823724d97dbcec7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlogger__spi__direct_8c.html#aff470fbbc1a5569c0823724d97dbcec7">sdlogger_spi_direct_put_byte</a> (struct <a class="el" href="sdlogger__spi__direct_8h.html#structsdlogger__spi__periph">sdlogger_spi_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data)</td></tr>
-<tr class="separator:aff470fbbc1a5569c0823724d97dbcec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89eb1a3059b9cb5ac09713ec5b663df3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlogger__spi__direct_8c.html#a89eb1a3059b9cb5ac09713ec5b663df3">sdlogger_spi_direct_send_message</a> (void *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
-<tr class="separator:a89eb1a3059b9cb5ac09713ec5b663df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac437251bbebd4b960bb91da789d29d75"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlogger__spi__direct_8c.html#ac437251bbebd4b960bb91da789d29d75">sdlogger_spi_direct_check_free_space</a> (struct <a class="el" href="sdlogger__spi__direct_8h.html#structsdlogger__spi__periph">sdlogger_spi_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long *<a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
+<tr class="separator:ac437251bbebd4b960bb91da789d29d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76e9185c1183478c02cf5be47cf0da93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlogger__spi__direct_8c.html#a76e9185c1183478c02cf5be47cf0da93">sdlogger_spi_direct_put_byte</a> (struct <a class="el" href="sdlogger__spi__direct_8h.html#structsdlogger__spi__periph">sdlogger_spi_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long <a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data)</td></tr>
+<tr class="separator:a76e9185c1183478c02cf5be47cf0da93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e870bbf55447f42c241d8f66c4a3397"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlogger__spi__direct_8c.html#a2e870bbf55447f42c241d8f66c4a3397">sdlogger_spi_direct_put_buffer</a> (struct <a class="el" href="sdlogger__spi__direct_8h.html#structsdlogger__spi__periph">sdlogger_spi_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long <a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
+<tr class="separator:a2e870bbf55447f42c241d8f66c4a3397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fda3c5fcc96943f1b50619170389a5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlogger__spi__direct_8c.html#a8fda3c5fcc96943f1b50619170389a5b">sdlogger_spi_direct_send_message</a> (void *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long <a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>)</td></tr>
+<tr class="separator:a8fda3c5fcc96943f1b50619170389a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc6d2500b749f6ff8456837da4160f75"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlogger__spi__direct_8c.html#abc6d2500b749f6ff8456837da4160f75">sdlogger_spi_direct_char_available</a> (void *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
 <tr class="separator:abc6d2500b749f6ff8456837da4160f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27cacdeeddf341b8dc27c52c942f53fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlogger__spi__direct_8c.html#a27cacdeeddf341b8dc27c52c942f53fb">sdlogger_spi_direct_get_byte</a> (void *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
@@ -191,9 +192,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00043">43</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00046">46</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sdlogger__spi__direct_8c_source.html#l00219">sdlogger_spi_direct_index_received()</a>, and <a class="el" href="sdlogger__spi__direct_8c_source.html#l00106">sdlogger_spi_direct_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="sdlogger__spi__direct_8c_source.html#l00231">sdlogger_spi_direct_index_received()</a>, and <a class="el" href="sdlogger__spi__direct_8c_source.html#l00109">sdlogger_spi_direct_periodic()</a>.</p>
 
 </div>
 </div>
@@ -207,9 +208,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00042">42</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00045">45</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sdlogger__spi__direct_8c_source.html#l00327">sdlogger_spi_direct_command()</a>, and <a class="el" href="sdlogger__spi__direct_8c_source.html#l00106">sdlogger_spi_direct_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="sdlogger__spi__direct_8c_source.html#l00342">sdlogger_spi_direct_command()</a>, and <a class="el" href="sdlogger__spi__direct_8c_source.html#l00109">sdlogger_spi_direct_periodic()</a>.</p>
 
 </div>
 </div>
@@ -242,9 +243,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00385">385</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00408">408</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sdlogger__spi__direct_8c_source.html#l00067">sdlogger_spi_direct_init()</a>.</p>
+<p>Referenced by <a class="el" href="sdlogger__spi__direct_8c_source.html#l00070">sdlogger_spi_direct_init()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -259,12 +260,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab6a0846663b4f34822376f9c7f501b9d"></a>
+<a class="anchor" id="ac437251bbebd4b960bb91da789d29d75"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool_t sdlogger_spi_direct_check_free_space </td>
+          <td class="memname">bool sdlogger_spi_direct_check_free_space </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="sdlogger__spi__direct_8h.html#structsdlogger__spi__periph">sdlogger_spi_periph</a> *&#160;</td>
           <td class="paramname"><em>p</em>, </td>
@@ -272,7 +273,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramtype">long *&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>len</em>&#160;</td>
         </tr>
         <tr>
@@ -283,19 +290,19 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00349">349</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00364">364</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
 
-<p>References <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00055">sdlogger_spi_periph::idx</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00053">sdlogger_spi_periph::sdcard_buf_idx</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00029">SDLOGGER_BUFFER_SIZE</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00040">SDLogger_Logging</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00050">sdlogger_spi_periph::status</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p>References <a class="el" href="sdlogger__spi__direct_8h_source.html#l00055">sdlogger_spi_periph::idx</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00053">sdlogger_spi_periph::sdcard_buf_idx</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00029">SDLOGGER_BUFFER_SIZE</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00040">SDLogger_Logging</a>, and <a class="el" href="sdlogger__spi__direct_8h_source.html#l00050">sdlogger_spi_periph::status</a>.</p>
 
-<p>Referenced by <a class="el" href="sdlogger__spi__direct_8c_source.html#l00067">sdlogger_spi_direct_init()</a>.</p>
+<p>Referenced by <a class="el" href="sdlogger__spi__direct_8c_source.html#l00070">sdlogger_spi_direct_init()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="sdlogger__spi__direct_8c_ab6a0846663b4f34822376f9c7f501b9d_icgraph.png" border="0" usemap="#sdlogger__spi__direct_8c_ab6a0846663b4f34822376f9c7f501b9d_icgraph" alt=""/></div>
-<map name="sdlogger__spi__direct_8c_ab6a0846663b4f34822376f9c7f501b9d_icgraph" id="sdlogger__spi__direct_8c_ab6a0846663b4f34822376f9c7f501b9d_icgraph">
+<div class="center"><img src="sdlogger__spi__direct_8c_ac437251bbebd4b960bb91da789d29d75_icgraph.png" border="0" usemap="#sdlogger__spi__direct_8c_ac437251bbebd4b960bb91da789d29d75_icgraph" alt=""/></div>
+<map name="sdlogger__spi__direct_8c_ac437251bbebd4b960bb91da789d29d75_icgraph" id="sdlogger__spi__direct_8c_ac437251bbebd4b960bb91da789d29d75_icgraph">
 <area shape="rect" id="node2" href="sdlogger__spi__direct_8h.html#a583b0f3d27ef3f54ca4d1263ebc0a884" title="sdlogger_spi_direct_init Initialize the logger and SD Card. " alt="" coords="199,13,369,39"/></map>
 </div>
 </p>
@@ -316,9 +323,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00327">327</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00342">342</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
 
-<p>References <a class="el" href="sdlogger__spi__direct_8h_source.html#l00057">sdlogger_spi_periph::command</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00058">sdlogger_spi_periph::download_id</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00060">sdlogger_spi_periph::download_length</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00042">LOGGER_LED_ON</a>, <a class="el" href="sdcard__spi_8c_source.html#l00056">sdcard1</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00053">sdlogger_spi_periph::sdcard_buf_idx</a>, <a class="el" href="sdcard__spi_8h_source.html#l00058">SDCard_Idle</a>, <a class="el" href="sdcard__spi_8c_source.html#l00587">sdcard_spi_read_block()</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00046">SDLogger_Downloading</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00045">SDLogger_GettingIndexForDownload</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00061">sdlogger_spi</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00219">sdlogger_spi_direct_index_received()</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00050">sdlogger_spi_periph::status</a>, and <a class="el" href="sdcard__spi_8h_source.html#l00112">SDCard::status</a>.</p>
+<p>References <a class="el" href="sdlogger__spi__direct_8h_source.html#l00057">sdlogger_spi_periph::command</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00058">sdlogger_spi_periph::download_id</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00060">sdlogger_spi_periph::download_length</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00045">LOGGER_LED_ON</a>, <a class="el" href="sdcard__spi_8c_source.html#l00056">sdcard1</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00053">sdlogger_spi_periph::sdcard_buf_idx</a>, <a class="el" href="sdcard__spi_8h_source.html#l00058">SDCard_Idle</a>, <a class="el" href="sdcard__spi_8c_source.html#l00587">sdcard_spi_read_block()</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00046">SDLogger_Downloading</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00045">SDLogger_GettingIndexForDownload</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00064">sdlogger_spi</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00231">sdlogger_spi_direct_index_received()</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00050">sdlogger_spi_periph::status</a>, and <a class="el" href="sdcard__spi_8h_source.html#l00112">SDCard::status</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -327,7 +334,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sdlogger__spi__direct_8c_a2e3b354ac6d0e173e051be713c63c161_cgraph.png" border="0" usemap="#sdlogger__spi__direct_8c_a2e3b354ac6d0e173e051be713c63c161_cgraph" alt=""/></div>
 <map name="sdlogger__spi__direct_8c_a2e3b354ac6d0e173e051be713c63c161_cgraph" id="sdlogger__spi__direct_8c_a2e3b354ac6d0e173e051be713c63c161_cgraph">
-<area shape="rect" id="node2" href="sdcard__spi_8c.html#ac0cacb24e7480f3ea6463131436c7d0e" title="Read a single block (512 bytes) from the SDCard at a given address. " alt="" coords="392,17,559,43"/><area shape="rect" id="node7" href="sdlogger__spi__direct_8c.html#a229b523a75d655fdb55fac8e715a13c5" title="sdlogger_spi_direct_index_received Callback from SD Card when block at index location is received..." alt="" coords="199,60,344,101"/><area shape="rect" id="node3" href="sdcard__spi_8c.html#a4f343ab0a5e8ba8f3d68a50e139312c6" title="Send a command to the SDCard. " alt="" coords="607,42,769,69"/><area shape="rect" id="node4" href="sdcard__spi_8c.html#a64d90e0374b4ebb9c1c6b8fa95c9b73f" title="Callback function for SPI transactions. " alt="" coords="817,42,984,69"/><area shape="rect" id="node6" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="1227,71,1317,98"/><area shape="rect" id="node5" href="sdcard__spi_8c.html#ae08b33e43067b02ae28ed7f7fccf781d" title="Request one or more bytes from the SDCard. " alt="" coords="1032,5,1179,47"/><area shape="rect" id="node8" href="sdcard__spi_8c.html#a58e3e4049a8c33c2f9ed56e310c9200c" title="Write a single block (512 bytes) to the SDCard at a given address. " alt="" coords="392,67,559,94"/></map>
+<area shape="rect" id="node2" href="sdcard__spi_8c.html#ac0cacb24e7480f3ea6463131436c7d0e" title="Read a single block (512 bytes) from the SDCard at a given address. " alt="" coords="392,17,559,43"/><area shape="rect" id="node7" href="sdlogger__spi__direct_8c.html#a229b523a75d655fdb55fac8e715a13c5" title="sdlogger_spi_direct_index_received Callback from SD Card when block at index location is received..." alt="" coords="199,60,344,101"/><area shape="rect" id="node3" href="sdcard__spi_8c.html#a4f343ab0a5e8ba8f3d68a50e139312c6" title="Send a command to the SDCard. " alt="" coords="607,42,769,69"/><area shape="rect" id="node4" href="sdcard__spi_8c.html#a64d90e0374b4ebb9c1c6b8fa95c9b73f" title="Callback function for SPI transactions. " alt="" coords="817,42,984,69"/><area shape="rect" id="node6" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="1227,71,1317,98"/><area shape="rect" id="node5" href="sdcard__spi_8c.html#ae08b33e43067b02ae28ed7f7fccf781d" title="Request one or more bytes from the SDCard. " alt="" coords="1032,5,1179,47"/><area shape="rect" id="node8" href="sdcard__spi_8c.html#a58e3e4049a8c33c2f9ed56e310c9200c" title="Write a single block (512 bytes) to the SDCard at a given address. " alt="" coords="392,67,559,94"/></map>
 </div>
 </p>
 
@@ -347,9 +354,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00390">390</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00413">413</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sdlogger__spi__direct_8c_source.html#l00067">sdlogger_spi_direct_init()</a>.</p>
+<p>Referenced by <a class="el" href="sdlogger__spi__direct_8c_source.html#l00070">sdlogger_spi_direct_init()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -380,11 +387,11 @@ Variables</h2></td></tr>
 
 <p>sdlogger_spi_direct_index_received Callback from SD Card when block at index location is received. </p>
 
-<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00219">219</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00231">231</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
 
-<p>References <a class="el" href="sdlogger__spi__direct_8h_source.html#l00059">sdlogger_spi_periph::download_address</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00058">sdlogger_spi_periph::download_id</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00060">sdlogger_spi_periph::download_length</a>, <a class="el" href="sdcard__spi_8h_source.html#l00113">SDCard::input_buf</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00052">sdlogger_spi_periph::last_completed</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00056">sdlogger_spi_periph::log_len</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00043">LOGGER_LED_OFF</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00051">sdlogger_spi_periph::next_available_address</a>, <a class="el" href="sdcard__spi_8h_source.html#l00114">SDCard::output_buf</a>, <a class="el" href="sdcard__spi_8h_source.html#l00038">SD_BLOCK_SIZE</a>, <a class="el" href="sdcard__spi_8c_source.html#l00056">sdcard1</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00053">sdlogger_spi_periph::sdcard_buf_idx</a>, <a class="el" href="sdcard__spi_8c_source.html#l00587">sdcard_spi_read_block()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00560">sdcard_spi_write_block()</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00046">SDLogger_Downloading</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00045">SDLogger_GettingIndexForDownload</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00043">SDLogger_GettingIndexForUpdate</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00039">SDLogger_Ready</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00038">SDLogger_RetreivingIndex</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00061">sdlogger_spi</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00044">SDLogger_UpdatingIndex</a>, and <a class="el" href="sdlogger__spi__direct_8h_source.html#l00050">sdlogger_spi_periph::status</a>.</p>
+<p>References <a class="el" href="sdlogger__spi__direct_8h_source.html#l00059">sdlogger_spi_periph::download_address</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00058">sdlogger_spi_periph::download_id</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00060">sdlogger_spi_periph::download_length</a>, <a class="el" href="sdcard__spi_8h_source.html#l00113">SDCard::input_buf</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00052">sdlogger_spi_periph::last_completed</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00056">sdlogger_spi_periph::log_len</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00046">LOGGER_LED_OFF</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00051">sdlogger_spi_periph::next_available_address</a>, <a class="el" href="sdcard__spi_8h_source.html#l00114">SDCard::output_buf</a>, <a class="el" href="sdcard__spi_8h_source.html#l00038">SD_BLOCK_SIZE</a>, <a class="el" href="sdcard__spi_8c_source.html#l00056">sdcard1</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00053">sdlogger_spi_periph::sdcard_buf_idx</a>, <a class="el" href="sdcard__spi_8c_source.html#l00587">sdcard_spi_read_block()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00560">sdcard_spi_write_block()</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00046">SDLogger_Downloading</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00045">SDLogger_GettingIndexForDownload</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00043">SDLogger_GettingIndexForUpdate</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00039">SDLogger_Ready</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00038">SDLogger_RetreivingIndex</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00064">sdlogger_spi</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00044">SDLogger_UpdatingIndex</a>, and <a class="el" href="sdlogger__spi__direct_8h_source.html#l00050">sdlogger_spi_periph::status</a>.</p>
 
-<p>Referenced by <a class="el" href="sdlogger__spi__direct_8c_source.html#l00327">sdlogger_spi_direct_command()</a>, and <a class="el" href="sdlogger__spi__direct_8c_source.html#l00106">sdlogger_spi_direct_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="sdlogger__spi__direct_8c_source.html#l00342">sdlogger_spi_direct_command()</a>, and <a class="el" href="sdlogger__spi__direct_8c_source.html#l00109">sdlogger_spi_direct_periodic()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -393,7 +400,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sdlogger__spi__direct_8c_a229b523a75d655fdb55fac8e715a13c5_cgraph.png" border="0" usemap="#sdlogger__spi__direct_8c_a229b523a75d655fdb55fac8e715a13c5_cgraph" alt=""/></div>
 <map name="sdlogger__spi__direct_8c_a229b523a75d655fdb55fac8e715a13c5_cgraph" id="sdlogger__spi__direct_8c_a229b523a75d655fdb55fac8e715a13c5_cgraph">
-<area shape="rect" id="node2" href="sdcard__spi_8c.html#ac0cacb24e7480f3ea6463131436c7d0e" title="Read a single block (512 bytes) from the SDCard at a given address. " alt="" coords="199,17,365,43"/><area shape="rect" id="node7" href="sdcard__spi_8c.html#a58e3e4049a8c33c2f9ed56e310c9200c" title="Write a single block (512 bytes) to the SDCard at a given address. " alt="" coords="199,67,365,94"/><area shape="rect" id="node3" href="sdcard__spi_8c.html#a4f343ab0a5e8ba8f3d68a50e139312c6" title="Send a command to the SDCard. " alt="" coords="413,42,576,69"/><area shape="rect" id="node4" href="sdcard__spi_8c.html#a64d90e0374b4ebb9c1c6b8fa95c9b73f" title="Callback function for SPI transactions. " alt="" coords="624,42,791,69"/><area shape="rect" id="node6" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="1033,71,1124,98"/><area shape="rect" id="node5" href="sdcard__spi_8c.html#ae08b33e43067b02ae28ed7f7fccf781d" title="Request one or more bytes from the SDCard. " alt="" coords="839,5,985,47"/></map>
+<area shape="rect" id="node2" href="sdcard__spi_8c.html#ac0cacb24e7480f3ea6463131436c7d0e" title="Read a single block (512 bytes) from the SDCard at a given address. " alt="" coords="199,17,365,43"/><area shape="rect" id="node7" href="sdcard__spi_8c.html#a58e3e4049a8c33c2f9ed56e310c9200c" title="Write a single block (512 bytes) to the SDCard at a given address. " alt="" coords="199,67,365,94"/><area shape="rect" id="node3" href="sdcard__spi_8c.html#a4f343ab0a5e8ba8f3d68a50e139312c6" title="Send a command to the SDCard. " alt="" coords="413,42,576,69"/><area shape="rect" id="node4" href="sdcard__spi_8c.html#a64d90e0374b4ebb9c1c6b8fa95c9b73f" title="Callback function for SPI transactions. " alt="" coords="624,42,791,69"/><area shape="rect" id="node6" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="1033,71,1124,98"/><area shape="rect" id="node5" href="sdcard__spi_8c.html#ae08b33e43067b02ae28ed7f7fccf781d" title="Request one or more bytes from the SDCard. " alt="" coords="839,5,985,47"/></map>
 </div>
 </p>
 
@@ -426,9 +433,9 @@ Variables</h2></td></tr>
 
 <p>sdlogger_spi_direct_init Initialize the logger and SD Card. </p>
 
-<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00067">67</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00070">70</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
 
-<p>References <a class="el" href="sdlogger__spi__direct_8h_source.html#l00054">sdlogger_spi_periph::buffer</a>, <a class="el" href="link__device_8h_source.html#l00048">link_device::char_available</a>, <a class="el" href="link__device_8h_source.html#l00045">link_device::check_free_space</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00057">sdlogger_spi_periph::command</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00061">sdlogger_spi_periph::device</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00059">sdlogger_spi_periph::download_address</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00058">sdlogger_spi_periph::download_id</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00060">sdlogger_spi_periph::download_length</a>, <a class="el" href="link__device_8h_source.html#l00049">link_device::get_byte</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00055">sdlogger_spi_periph::idx</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00052">sdlogger_spi_periph::last_completed</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00056">sdlogger_spi_periph::log_len</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00051">sdlogger_spi_periph::next_available_address</a>, <a class="el" href="link__device_8h_source.html#l00050">link_device::periph</a>, <a class="el" href="pprzlog__transport_8c_source.html#l00113">pprzlog_transport_init()</a>, <a class="el" href="link__device_8h_source.html#l00046">link_device::put_byte</a>, <a class="el" href="sdcard__spi_8c_source.html#l00056">sdcard1</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00053">sdlogger_spi_periph::sdcard_buf_idx</a>, <a class="el" href="sdcard__spi_8c_source.html#l00074">sdcard_spi_init()</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00037">SDLogger_Initializing</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00061">sdlogger_spi</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00385">sdlogger_spi_direct_char_available()</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00349">sdlogger_spi_direct_check_free_space()</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00390">sdlogger_spi_direct_get_byte()</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00360">sdlogger_spi_direct_put_byte()</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00380">sdlogger_spi_direct_send_message()</a>, <a class="el" href="link__device_8h_source.html#l00047">link_device::send_message</a>, and <a class="el" href="sdlogger__spi__direct_8h_source.html#l00050">sdlogger_spi_periph::status</a>.</p>
+<p>References <a class="el" href="sdlogger__spi__direct_8h_source.html#l00054">sdlogger_spi_periph::buffer</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00057">sdlogger_spi_periph::command</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00061">sdlogger_spi_periph::device</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00062">sdlogger_spi_periph::do_log</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00059">sdlogger_spi_periph::download_address</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00058">sdlogger_spi_periph::download_id</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00060">sdlogger_spi_periph::download_length</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00055">sdlogger_spi_periph::idx</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00052">sdlogger_spi_periph::last_completed</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00056">sdlogger_spi_periph::log_len</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00051">sdlogger_spi_periph::next_available_address</a>, <a class="el" href="sdcard__spi_8c_source.html#l00056">sdcard1</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00053">sdlogger_spi_periph::sdcard_buf_idx</a>, <a class="el" href="sdcard__spi_8c_source.html#l00074">sdcard_spi_init()</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00037">SDLogger_Initializing</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00064">sdlogger_spi</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00408">sdlogger_spi_direct_char_available()</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00364">sdlogger_spi_direct_check_free_space()</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00413">sdlogger_spi_direct_get_byte()</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00395">sdlogger_spi_direct_put_buffer()</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00375">sdlogger_spi_direct_put_byte()</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00403">sdlogger_spi_direct_send_message()</a>, and <a class="el" href="sdlogger__spi__direct_8h_source.html#l00050">sdlogger_spi_periph::status</a>.</p>
 
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -437,7 +444,7 @@ Variables</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sdlogger__spi__direct_8c_a583b0f3d27ef3f54ca4d1263ebc0a884_cgraph.png" border="0" usemap="#sdlogger__spi__direct_8c_a583b0f3d27ef3f54ca4d1263ebc0a884_cgraph" alt=""/></div>
 <map name="sdlogger__spi__direct_8c_a583b0f3d27ef3f54ca4d1263ebc0a884_cgraph" id="sdlogger__spi__direct_8c_a583b0f3d27ef3f54ca4d1263ebc0a884_cgraph">
-<area shape="rect" id="node2" href="pprzlog__transport_8c.html#a301368ea60ea8e1d7e50c0cf02a0a965" title="pprzlog_transport_init" alt="" coords="224,183,385,209"/><area shape="rect" id="node14" href="sdcard__spi_8c.html#adbdeea6ec6829f8e1fd6afbf5a31af38" title="Configure initial values for SDCard. " alt="" coords="247,233,363,260"/><area shape="rect" id="node15" href="sdlogger__spi__direct_8c.html#abc6d2500b749f6ff8456837da4160f75" title="sdlogger_spi_direct\l_char_available" alt="" coords="232,285,377,326"/><area shape="rect" id="node16" href="sdlogger__spi__direct_8c.html#ab6a0846663b4f34822376f9c7f501b9d" title="sdlogger_spi_direct\l_check_free_space" alt="" coords="232,350,377,391"/><area shape="rect" id="node17" href="sdlogger__spi__direct_8c.html#a27cacdeeddf341b8dc27c52c942f53fb" title="sdlogger_spi_direct\l_get_byte" alt="" coords="232,415,377,457"/><area shape="rect" id="node18" href="sdlogger__spi__direct_8c.html#aff470fbbc1a5569c0823724d97dbcec7" title="sdlogger_spi_direct\l_put_byte" alt="" coords="232,481,377,522"/><area shape="rect" id="node25" href="sdlogger__spi__direct_8c.html#a89eb1a3059b9cb5ac09713ec5b663df3" title="sdlogger_spi_direct\l_send_message" alt="" coords="232,546,377,587"/><area shape="rect" id="node3" href="pprzlog__transport_8c.html#aa9bfd30f7184c5ada0e49921650d8cf9" title="size_of" alt="" coords="726,56,793,83"/><area shape="rect" id="node4" href="pprzlog__transport_8c.html#a4d36a955758cf9dbbd24ae4cfe6d19b7" title="check_available_space" alt="" coords="447,309,614,336"/><area shape="rect" id="node5" href="pprzlog__transport_8c.html#acb2c0b7c92eab12cc06254da330f6bf0" title="put_bytes" alt="" coords="717,208,802,235"/><area shape="rect" id="node7" href="pprzlog__transport_8c.html#a444708b82a3b16d30a31be657c8235c4" title="put_named_byte" alt="" coords="694,259,825,285"/><area shape="rect" id="node8" href="pprzlog__transport_8c.html#aa6bed9ed2896a8ee7240e0f61390b71b" title="start_message" alt="" coords="471,157,590,184"/><area shape="rect" id="node11" href="pprzlog__transport_8c.html#a7e4aaaa539f3f97a23e3029d5fe27037" title="end_message" alt="" coords="475,360,587,387"/><area shape="rect" id="node12" href="pprzlog__transport_8c.html#aaa3648479b6a1ab99ad0c92fc486ca8a" title="overrun" alt="" coords="495,5,566,32"/><area shape="rect" id="node13" href="pprzlog__transport_8c.html#a30ef3a54d9129b162d746534e416b718" title="count_bytes" alt="" coords="481,56,581,83"/><area shape="rect" id="node6" href="pprzlog__transport_8c.html#a50dc78270b3e759ba8e4b55852ba58d2" title="put_1byte" alt="" coords="929,208,1015,235"/><area shape="rect" id="node9" href="linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="687,107,831,133"/><area shape="rect" id="node10" href="sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="903,107,1041,133"/><area shape="rect" id="node19" href="sdcard__spi_8c.html#a2993e6870ac7c137e6cbbef1949aaef1" title="Write a(nother) data block (512 bytes) to the SDCard. " alt="" coords="433,463,628,489"/><area shape="rect" id="node24" href="sdlogger__spi__direct_8c.html#a8ba172956b3686b7a8ccb47bb9215bf8" title="sdlogger_spi_direct_multiwrite_written Called when a multiwrite is complete. " alt="" coords="458,514,603,555"/><area shape="rect" id="node20" href="sdcard__spi_8c.html#a64d90e0374b4ebb9c1c6b8fa95c9b73f" title="Callback function for SPI transactions. " alt="" coords="676,521,843,548"/><area shape="rect" id="node22" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="1101,521,1192,548"/><area shape="rect" id="node21" href="sdcard__spi_8c.html#a4f343ab0a5e8ba8f3d68a50e139312c6" title="Send a command to the SDCard. " alt="" coords="891,601,1053,628"/><area shape="rect" id="node23" href="sdcard__spi_8c.html#ae08b33e43067b02ae28ed7f7fccf781d" title="Request one or more bytes from the SDCard. " alt="" coords="899,485,1045,526"/></map>
+<area shape="rect" id="node2" href="sdcard__spi_8c.html#adbdeea6ec6829f8e1fd6afbf5a31af38" title="Configure initial values for SDCard. " alt="" coords="239,5,355,32"/><area shape="rect" id="node3" href="sdlogger__spi__direct_8c.html#abc6d2500b749f6ff8456837da4160f75" title="sdlogger_spi_direct\l_char_available" alt="" coords="224,57,369,98"/><area shape="rect" id="node4" href="sdlogger__spi__direct_8c.html#ac437251bbebd4b960bb91da789d29d75" title="sdlogger_spi_direct\l_check_free_space" alt="" coords="224,122,369,163"/><area shape="rect" id="node5" href="sdlogger__spi__direct_8c.html#a27cacdeeddf341b8dc27c52c942f53fb" title="sdlogger_spi_direct\l_get_byte" alt="" coords="224,187,369,229"/><area shape="rect" id="node6" href="sdlogger__spi__direct_8c.html#a2e870bbf55447f42c241d8f66c4a3397" title="sdlogger_spi_direct\l_put_buffer" alt="" coords="224,253,369,294"/><area shape="rect" id="node7" href="sdlogger__spi__direct_8c.html#a76e9185c1183478c02cf5be47cf0da93" title="sdlogger_spi_direct\l_put_byte" alt="" coords="417,282,563,323"/><area shape="rect" id="node14" href="sdlogger__spi__direct_8c.html#a8fda3c5fcc96943f1b50619170389a5b" title="sdlogger_spi_direct\l_send_message" alt="" coords="224,370,369,411"/><area shape="rect" id="node8" href="sdcard__spi_8c.html#a2993e6870ac7c137e6cbbef1949aaef1" title="Write a(nother) data block (512 bytes) to the SDCard. " alt="" coords="611,260,805,287"/><area shape="rect" id="node13" href="sdlogger__spi__direct_8c.html#a8ba172956b3686b7a8ccb47bb9215bf8" title="sdlogger_spi_direct_multiwrite_written Called when a multiwrite is complete. " alt="" coords="635,311,781,353"/><area shape="rect" id="node9" href="sdcard__spi_8c.html#a64d90e0374b4ebb9c1c6b8fa95c9b73f" title="Callback function for SPI transactions. " alt="" coords="853,201,1020,228"/><area shape="rect" id="node11" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="1279,201,1369,228"/><area shape="rect" id="node10" href="sdcard__spi_8c.html#a4f343ab0a5e8ba8f3d68a50e139312c6" title="Send a command to the SDCard. " alt="" coords="1068,121,1231,148"/><area shape="rect" id="node12" href="sdcard__spi_8c.html#ae08b33e43067b02ae28ed7f7fccf781d" title="Request one or more bytes from the SDCard. " alt="" coords="1076,223,1223,265"/></map>
 </div>
 </p>
 
@@ -460,11 +467,11 @@ Variables</h2></td></tr>
 <p>sdlogger_spi_direct_multiwrite_written Called when a multiwrite is complete. </p>
 <p>Data stored in the logger buffer is then moved to the SD Card buffer, which is now available again. </p>
 
-<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00312">312</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00327">327</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
 
-<p>References <a class="el" href="sdlogger__spi__direct_8h_source.html#l00054">sdlogger_spi_periph::buffer</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00055">sdlogger_spi_periph::idx</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00056">sdlogger_spi_periph::log_len</a>, <a class="el" href="sdcard__spi_8h_source.html#l00114">SDCard::output_buf</a>, <a class="el" href="sdcard__spi_8c_source.html#l00056">sdcard1</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00053">sdlogger_spi_periph::sdcard_buf_idx</a>, and <a class="el" href="sdlogger__spi__direct_8c_source.html#l00061">sdlogger_spi</a>.</p>
+<p>References <a class="el" href="sdlogger__spi__direct_8h_source.html#l00054">sdlogger_spi_periph::buffer</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00055">sdlogger_spi_periph::idx</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00056">sdlogger_spi_periph::log_len</a>, <a class="el" href="sdcard__spi_8h_source.html#l00114">SDCard::output_buf</a>, <a class="el" href="sdcard__spi_8c_source.html#l00056">sdcard1</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00053">sdlogger_spi_periph::sdcard_buf_idx</a>, and <a class="el" href="sdlogger__spi__direct_8c_source.html#l00064">sdlogger_spi</a>.</p>
 
-<p>Referenced by <a class="el" href="sdlogger__spi__direct_8c_source.html#l00106">sdlogger_spi_direct_periodic()</a>, and <a class="el" href="sdlogger__spi__direct_8c_source.html#l00360">sdlogger_spi_direct_put_byte()</a>.</p>
+<p>Referenced by <a class="el" href="sdlogger__spi__direct_8c_source.html#l00109">sdlogger_spi_direct_periodic()</a>, and <a class="el" href="sdlogger__spi__direct_8c_source.html#l00375">sdlogger_spi_direct_put_byte()</a>.</p>
 
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -473,7 +480,7 @@ Variables</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sdlogger__spi__direct_8c_a8ba172956b3686b7a8ccb47bb9215bf8_icgraph.png" border="0" usemap="#sdlogger__spi__direct_8c_a8ba172956b3686b7a8ccb47bb9215bf8_icgraph" alt=""/></div>
 <map name="sdlogger__spi__direct_8c_a8ba172956b3686b7a8ccb47bb9215bf8_icgraph" id="sdlogger__spi__direct_8c_a8ba172956b3686b7a8ccb47bb9215bf8_icgraph">
-<area shape="rect" id="node2" href="sdlogger__spi__direct_8h.html#ab4a462e9899f9283db5be8ab3a3da922" title="sdlogger_spi_direct_periodic Periodic function called at module frequency " alt="" coords="199,5,344,47"/><area shape="rect" id="node3" href="sdlogger__spi__direct_8h.html#aff470fbbc1a5569c0823724d97dbcec7" title="sdlogger_spi_direct\l_put_byte" alt="" coords="199,71,344,112"/><area shape="rect" id="node4" href="sdlogger__spi__direct_8h.html#a583b0f3d27ef3f54ca4d1263ebc0a884" title="sdlogger_spi_direct_init Initialize the logger and SD Card. " alt="" coords="392,78,563,105"/></map>
+<area shape="rect" id="node2" href="sdlogger__spi__direct_8h.html#ab4a462e9899f9283db5be8ab3a3da922" title="sdlogger_spi_direct_periodic Periodic function called at module frequency " alt="" coords="199,5,344,47"/><area shape="rect" id="node3" href="sdlogger__spi__direct_8h.html#a76e9185c1183478c02cf5be47cf0da93" title="sdlogger_spi_direct\l_put_byte" alt="" coords="199,71,344,112"/><area shape="rect" id="node4" href="sdlogger__spi__direct_8h.html#a583b0f3d27ef3f54ca4d1263ebc0a884" title="sdlogger_spi_direct_init Initialize the logger and SD Card. " alt="" coords="585,78,756,105"/><area shape="rect" id="node5" href="sdlogger__spi__direct_8h.html#a2e870bbf55447f42c241d8f66c4a3397" title="sdlogger_spi_direct\l_put_buffer" alt="" coords="392,100,537,141"/></map>
 </div>
 </p>
 
@@ -495,9 +502,9 @@ Variables</h2></td></tr>
 
 <p>sdlogger_spi_direct_periodic Periodic function called at module frequency </p>
 
-<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00106">106</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00109">109</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
 
-<p>References <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00061">sdlogger_spi_periph::device</a>, <a class="el" href="stereocam__droplet_8c_source.html#l00057">DOWNLINK_DEVICE</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00059">sdlogger_spi_periph::download_address</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00060">sdlogger_spi_periph::download_length</a>, <a class="el" href="sdcard__spi_8h_source.html#l00113">SDCard::input_buf</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00043">LOGGER_LED_OFF</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00042">LOGGER_LED_ON</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00051">sdlogger_spi_periph::next_available_address</a>, <a class="el" href="sdcard__spi_8h_source.html#l00114">SDCard::output_buf</a>, <a class="el" href="pprzlog__transport_8c_source.html#l00047">pprzlog_tp</a>, <a class="el" href="radio__control_8c_source.html#l00030">radio_control</a>, <a class="el" href="sdcard__spi_8h_source.html#l00038">SD_BLOCK_SIZE</a>, <a class="el" href="sdcard__spi_8c_source.html#l00056">sdcard1</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00053">sdlogger_spi_periph::sdcard_buf_idx</a>, <a class="el" href="sdcard__spi_8h_source.html#l00058">SDCard_Idle</a>, <a class="el" href="sdcard__spi_8h_source.html#l00084">SDCard_MultiWriteIdle</a>, <a class="el" href="sdcard__spi_8c_source.html#l00638">sdcard_spi_multiwrite_next()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00616">sdcard_spi_multiwrite_start()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00666">sdcard_spi_multiwrite_stop()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00099">sdcard_spi_periodic()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00587">sdcard_spi_read_block()</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00046">SDLogger_Downloading</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00043">SDLogger_GettingIndexForUpdate</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00037">SDLogger_Initializing</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00040">SDLogger_Logging</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00041">SDLogger_LoggingFinalBlock</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00039">SDLogger_Ready</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00038">SDLogger_RetreivingIndex</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00061">sdlogger_spi</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00219">sdlogger_spi_direct_index_received()</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00312">sdlogger_spi_direct_multiwrite_written()</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00042">SDLogger_StoppedLogging</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00044">SDLogger_UpdatingIndex</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00050">sdlogger_spi_periph::status</a>, <a class="el" href="sdcard__spi_8h_source.html#l00112">SDCard::status</a>, <a class="el" href="pprzlog__transport_8h_source.html#l00037">pprzlog_transport::trans_tx</a>, <a class="el" href="uart_8c_source.html#l00256">uart_check_free_space()</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00243">uart_put_byte()</a>, and <a class="el" href="radio__control_8h_source.html#l00058">RadioControl::values</a>.</p>
+<p>References <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00076">autopilot_motors_on</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00061">sdlogger_spi_periph::device</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00062">sdlogger_spi_periph::do_log</a>, <a class="el" href="stereocam__droplet_8c_source.html#l00057">DOWNLINK_DEVICE</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00059">sdlogger_spi_periph::download_address</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00060">sdlogger_spi_periph::download_length</a>, <a class="el" href="serial_8c_source.html#l00026">fd</a>, <a class="el" href="sdcard__spi_8h_source.html#l00113">SDCard::input_buf</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00046">LOGGER_LED_OFF</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00045">LOGGER_LED_ON</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00051">sdlogger_spi_periph::next_available_address</a>, <a class="el" href="sdcard__spi_8h_source.html#l00114">SDCard::output_buf</a>, <a class="el" href="sdcard__spi_8h_source.html#l00038">SD_BLOCK_SIZE</a>, <a class="el" href="sdcard__spi_8c_source.html#l00056">sdcard1</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00053">sdlogger_spi_periph::sdcard_buf_idx</a>, <a class="el" href="sdcard__spi_8h_source.html#l00058">SDCard_Idle</a>, <a class="el" href="sdcard__spi_8h_source.html#l00084">SDCard_MultiWriteIdle</a>, <a class="el" href="sdcard__spi_8c_source.html#l00638">sdcard_spi_multiwrite_next()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00616">sdcard_spi_multiwrite_start()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00666">sdcard_spi_multiwrite_stop()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00099">sdcard_spi_periodic()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00587">sdcard_spi_read_block()</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00046">SDLogger_Downloading</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00043">SDLogger_GettingIndexForUpdate</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00037">SDLogger_Initializing</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00040">SDLogger_Logging</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00041">SDLogger_LoggingFinalBlock</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00039">SDLogger_Ready</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00038">SDLogger_RetreivingIndex</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00064">sdlogger_spi</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00231">sdlogger_spi_direct_index_received()</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00327">sdlogger_spi_direct_multiwrite_written()</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00042">SDLogger_StoppedLogging</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00044">SDLogger_UpdatingIndex</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00050">sdlogger_spi_periph::status</a>, <a class="el" href="sdcard__spi_8h_source.html#l00112">SDCard::status</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00899">uart_check_free_space()</a>, and <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00917">uart_put_byte()</a>.</p>
 
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -506,13 +513,79 @@ Variables</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sdlogger__spi__direct_8c_ab4a462e9899f9283db5be8ab3a3da922_cgraph.png" border="0" usemap="#sdlogger__spi__direct_8c_ab4a462e9899f9283db5be8ab3a3da922_cgraph" alt=""/></div>
 <map name="sdlogger__spi__direct_8c_ab4a462e9899f9283db5be8ab3a3da922_cgraph" id="sdlogger__spi__direct_8c_ab4a462e9899f9283db5be8ab3a3da922_cgraph">
-<area shape="rect" id="node2" href="sdcard__spi_8c.html#a2993e6870ac7c137e6cbbef1949aaef1" title="Write a(nother) data block (512 bytes) to the SDCard. " alt="" coords="416,13,611,40"/><area shape="rect" id="node7" href="sdcard__spi_8c.html#a665b869e2b80339fa01af811af47247e" title="Start writing multiple blocks of 512 bytes to the SDCard. " alt="" coords="663,322,821,363"/><area shape="rect" id="node8" href="sdcard__spi_8c.html#af40ce9cdaf7435d94db52d8ec687c26e" title="Stop with multiwrite procedure. " alt="" coords="416,64,611,90"/><area shape="rect" id="node9" href="sdcard__spi_8c.html#ac8de8d3bf63d614011c58978acdb2f27" title="Periodic function of the SDCard. " alt="" coords="210,217,357,244"/><area shape="rect" id="node11" href="sdcard__spi_8c.html#ac0cacb24e7480f3ea6463131436c7d0e" title="Read a single block (512 bytes) from the SDCard at a given address. " alt="" coords="430,388,597,414"/><area shape="rect" id="node12" href="sdlogger__spi__direct_8c.html#a229b523a75d655fdb55fac8e715a13c5" title="sdlogger_spi_direct_index_received Callback from SD Card when block at index location is received..." alt="" coords="211,420,356,462"/><area shape="rect" id="node14" href="sdlogger__spi__direct_8c.html#a8ba172956b3686b7a8ccb47bb9215bf8" title="sdlogger_spi_direct_multiwrite_written Called when a multiwrite is complete. " alt="" coords="211,486,356,527"/><area shape="rect" id="node15" href="uart_8c.html#abd3d741fab97eedc4b48bbda25b74e50" title="uart_check_free_space" alt="" coords="199,552,368,578"/><area shape="rect" id="node16" href="linux_2mcu__periph_2uart__arch_8c.html#ac52690ed0854ab6c1b5ef3ba0ccc8040" title="uart_put_byte" alt="" coords="228,602,339,629"/><area shape="rect" id="node3" href="sdcard__spi_8c.html#a64d90e0374b4ebb9c1c6b8fa95c9b73f" title="Callback function for SPI transactions. " alt="" coords="659,217,825,244"/><area shape="rect" id="node5" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="1084,173,1175,200"/><area shape="rect" id="node4" href="sdcard__spi_8c.html#a4f343ab0a5e8ba8f3d68a50e139312c6" title="Send a command to the SDCard. " alt="" coords="873,333,1036,360"/><area shape="rect" id="node6" href="sdcard__spi_8c.html#ae08b33e43067b02ae28ed7f7fccf781d" title="Request one or more bytes from the SDCard. " alt="" coords="881,166,1028,207"/><area shape="rect" id="node10" href="sdcard__spi_8c.html#a10438987e3a4d4847b39c37caafc5564" title="Send a app&#45;command to the SDCard. " alt="" coords="416,268,611,294"/><area shape="rect" id="node13" href="sdcard__spi_8c.html#a58e3e4049a8c33c2f9ed56e310c9200c" title="Write a single block (512 bytes) to the SDCard at a given address. " alt="" coords="659,438,825,465"/></map>
+<area shape="rect" id="node2" href="sdcard__spi_8c.html#a2993e6870ac7c137e6cbbef1949aaef1" title="Write a(nother) data block (512 bytes) to the SDCard. " alt="" coords="416,13,611,40"/><area shape="rect" id="node7" href="sdcard__spi_8c.html#a665b869e2b80339fa01af811af47247e" title="Start writing multiple blocks of 512 bytes to the SDCard. " alt="" coords="663,322,821,363"/><area shape="rect" id="node8" href="sdcard__spi_8c.html#af40ce9cdaf7435d94db52d8ec687c26e" title="Stop with multiwrite procedure. " alt="" coords="416,64,611,90"/><area shape="rect" id="node9" href="sdcard__spi_8c.html#ac8de8d3bf63d614011c58978acdb2f27" title="Periodic function of the SDCard. " alt="" coords="210,217,357,244"/><area shape="rect" id="node11" href="sdcard__spi_8c.html#ac0cacb24e7480f3ea6463131436c7d0e" title="Read a single block (512 bytes) from the SDCard at a given address. " alt="" coords="430,388,597,414"/><area shape="rect" id="node12" href="sdlogger__spi__direct_8c.html#a229b523a75d655fdb55fac8e715a13c5" title="sdlogger_spi_direct_index_received Callback from SD Card when block at index location is received..." alt="" coords="211,420,356,462"/><area shape="rect" id="node14" href="sdlogger__spi__direct_8c.html#a8ba172956b3686b7a8ccb47bb9215bf8" title="sdlogger_spi_direct_multiwrite_written Called when a multiwrite is complete. " alt="" coords="211,486,356,527"/><area shape="rect" id="node15" href="chibios_2mcu__periph_2uart__arch_8c.html#a0e5faeb6fba6c9662707c445a2e27652" title="uart_check_free_space" alt="" coords="199,552,368,578"/><area shape="rect" id="node16" href="chibios_2mcu__periph_2uart__arch_8c.html#a47d332312effc31e88e688471daf02a5" title="Uart transmit implementation. " alt="" coords="228,602,339,629"/><area shape="rect" id="node3" href="sdcard__spi_8c.html#a64d90e0374b4ebb9c1c6b8fa95c9b73f" title="Callback function for SPI transactions. " alt="" coords="659,217,825,244"/><area shape="rect" id="node5" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="1084,173,1175,200"/><area shape="rect" id="node4" href="sdcard__spi_8c.html#a4f343ab0a5e8ba8f3d68a50e139312c6" title="Send a command to the SDCard. " alt="" coords="873,333,1036,360"/><area shape="rect" id="node6" href="sdcard__spi_8c.html#ae08b33e43067b02ae28ed7f7fccf781d" title="Request one or more bytes from the SDCard. " alt="" coords="881,166,1028,207"/><area shape="rect" id="node10" href="sdcard__spi_8c.html#a10438987e3a4d4847b39c37caafc5564" title="Send a app&#45;command to the SDCard. " alt="" coords="416,268,611,294"/><area shape="rect" id="node13" href="sdcard__spi_8c.html#a58e3e4049a8c33c2f9ed56e310c9200c" title="Write a single block (512 bytes) to the SDCard at a given address. " alt="" coords="659,438,825,465"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="aff470fbbc1a5569c0823724d97dbcec7"></a>
+<a class="anchor" id="a2e870bbf55447f42c241d8f66c4a3397"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sdlogger_spi_direct_put_buffer </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="sdlogger__spi__direct_8h.html#structsdlogger__spi__periph">sdlogger_spi_periph</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00395">395</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
+
+<p>References <a class="el" href="sdlogger__spi__direct_8c_source.html#l00375">sdlogger_spi_direct_put_byte()</a>.</p>
+
+<p>Referenced by <a class="el" href="sdlogger__spi__direct_8c_source.html#l00070">sdlogger_spi_direct_init()</a>.</p>
+
+<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="sdlogger__spi__direct_8c_a2e870bbf55447f42c241d8f66c4a3397_cgraph.png" border="0" usemap="#sdlogger__spi__direct_8c_a2e870bbf55447f42c241d8f66c4a3397_cgraph" alt=""/></div>
+<map name="sdlogger__spi__direct_8c_a2e870bbf55447f42c241d8f66c4a3397_cgraph" id="sdlogger__spi__direct_8c_a2e870bbf55447f42c241d8f66c4a3397_cgraph">
+<area shape="rect" id="node2" href="sdlogger__spi__direct_8c.html#a76e9185c1183478c02cf5be47cf0da93" title="sdlogger_spi_direct\l_put_byte" alt="" coords="199,137,344,178"/><area shape="rect" id="node3" href="sdcard__spi_8c.html#a2993e6870ac7c137e6cbbef1949aaef1" title="Write a(nother) data block (512 bytes) to the SDCard. " alt="" coords="392,115,587,141"/><area shape="rect" id="node8" href="sdlogger__spi__direct_8c.html#a8ba172956b3686b7a8ccb47bb9215bf8" title="sdlogger_spi_direct_multiwrite_written Called when a multiwrite is complete. " alt="" coords="417,166,562,207"/><area shape="rect" id="node4" href="sdcard__spi_8c.html#a64d90e0374b4ebb9c1c6b8fa95c9b73f" title="Callback function for SPI transactions. " alt="" coords="635,85,801,112"/><area shape="rect" id="node6" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="1060,85,1151,112"/><area shape="rect" id="node5" href="sdcard__spi_8c.html#a4f343ab0a5e8ba8f3d68a50e139312c6" title="Send a command to the SDCard. " alt="" coords="849,5,1012,32"/><area shape="rect" id="node7" href="sdcard__spi_8c.html#ae08b33e43067b02ae28ed7f7fccf781d" title="Request one or more bytes from the SDCard. " alt="" coords="857,107,1004,149"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="sdlogger__spi__direct_8c_a2e870bbf55447f42c241d8f66c4a3397_icgraph.png" border="0" usemap="#sdlogger__spi__direct_8c_a2e870bbf55447f42c241d8f66c4a3397_icgraph" alt=""/></div>
+<map name="sdlogger__spi__direct_8c_a2e870bbf55447f42c241d8f66c4a3397_icgraph" id="sdlogger__spi__direct_8c_a2e870bbf55447f42c241d8f66c4a3397_icgraph">
+<area shape="rect" id="node2" href="sdlogger__spi__direct_8h.html#a583b0f3d27ef3f54ca4d1263ebc0a884" title="sdlogger_spi_direct_init Initialize the logger and SD Card. " alt="" coords="199,13,369,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a76e9185c1183478c02cf5be47cf0da93"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -521,6 +594,12 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="sdlogger__spi__direct_8h.html#structsdlogger__spi__periph">sdlogger_spi_periph</a> *&#160;</td>
           <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -536,37 +615,37 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00360">360</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00375">375</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
 
-<p>References <a class="el" href="sdlogger__spi__direct_8h_source.html#l00054">sdlogger_spi_periph::buffer</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00055">sdlogger_spi_periph::idx</a>, <a class="el" href="sdcard__spi_8h_source.html#l00114">SDCard::output_buf</a>, <a class="el" href="sdcard__spi_8c_source.html#l00056">sdcard1</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00053">sdlogger_spi_periph::sdcard_buf_idx</a>, <a class="el" href="sdcard__spi_8h_source.html#l00084">SDCard_MultiWriteIdle</a>, <a class="el" href="sdcard__spi_8c_source.html#l00638">sdcard_spi_multiwrite_next()</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00029">SDLOGGER_BUFFER_SIZE</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00312">sdlogger_spi_direct_multiwrite_written()</a>, and <a class="el" href="sdcard__spi_8h_source.html#l00112">SDCard::status</a>.</p>
+<p>References <a class="el" href="sdlogger__spi__direct_8h_source.html#l00054">sdlogger_spi_periph::buffer</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00055">sdlogger_spi_periph::idx</a>, <a class="el" href="sdcard__spi_8h_source.html#l00114">SDCard::output_buf</a>, <a class="el" href="sdcard__spi_8c_source.html#l00056">sdcard1</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00053">sdlogger_spi_periph::sdcard_buf_idx</a>, <a class="el" href="sdcard__spi_8h_source.html#l00084">SDCard_MultiWriteIdle</a>, <a class="el" href="sdcard__spi_8c_source.html#l00638">sdcard_spi_multiwrite_next()</a>, <a class="el" href="sdlogger__spi__direct_8h_source.html#l00029">SDLOGGER_BUFFER_SIZE</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00327">sdlogger_spi_direct_multiwrite_written()</a>, and <a class="el" href="sdcard__spi_8h_source.html#l00112">SDCard::status</a>.</p>
 
-<p>Referenced by <a class="el" href="sdlogger__spi__direct_8c_source.html#l00067">sdlogger_spi_direct_init()</a>.</p>
+<p>Referenced by <a class="el" href="sdlogger__spi__direct_8c_source.html#l00070">sdlogger_spi_direct_init()</a>, and <a class="el" href="sdlogger__spi__direct_8c_source.html#l00395">sdlogger_spi_direct_put_buffer()</a>.</p>
 
-<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="sdlogger__spi__direct_8c_aff470fbbc1a5569c0823724d97dbcec7_cgraph.png" border="0" usemap="#sdlogger__spi__direct_8c_aff470fbbc1a5569c0823724d97dbcec7_cgraph" alt=""/></div>
-<map name="sdlogger__spi__direct_8c_aff470fbbc1a5569c0823724d97dbcec7_cgraph" id="sdlogger__spi__direct_8c_aff470fbbc1a5569c0823724d97dbcec7_cgraph">
-<area shape="rect" id="node2" href="sdcard__spi_8c.html#a2993e6870ac7c137e6cbbef1949aaef1" title="Write a(nother) data block (512 bytes) to the SDCard. " alt="" coords="199,115,393,141"/><area shape="rect" id="node7" href="sdlogger__spi__direct_8c.html#a8ba172956b3686b7a8ccb47bb9215bf8" title="sdlogger_spi_direct_multiwrite_written Called when a multiwrite is complete. " alt="" coords="223,166,369,207"/><area shape="rect" id="node3" href="sdcard__spi_8c.html#a64d90e0374b4ebb9c1c6b8fa95c9b73f" title="Callback function for SPI transactions. " alt="" coords="441,85,608,112"/><area shape="rect" id="node5" href="group__spi.html#gaf1bcfc102840a0e6287b4db20bd78337" title="Submit a spi transaction. " alt="" coords="867,85,957,112"/><area shape="rect" id="node4" href="sdcard__spi_8c.html#a4f343ab0a5e8ba8f3d68a50e139312c6" title="Send a command to the SDCard. " alt="" coords="656,5,819,32"/><area shape="rect" id="node6" href="sdcard__spi_8c.html#ae08b33e43067b02ae28ed7f7fccf781d" title="Request one or more bytes from the SDCard. " alt="" coords="664,107,811,149"/></map>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="sdlogger__spi__direct_8c_a76e9185c1183478c02cf5be47cf0da93_cgraph.png" border="0" usemap="#sdlogger__spi__direct_8c_a76e9185c1183478c02cf5be47cf0da93_cgraph" alt=""/></div>
+<map name="sdlogger__spi__direct_8c_a76e9185c1183478c02cf5be47cf0da93_cgraph" id="sdlogger__spi__direct_8c_a76e9185c1183478c02cf5be47cf0da93_cgraph">
+<area shape="rect" id="node2" href="sdcard__spi_8c.html#a2993e6870ac7c137e6cbbef1949aaef1" title="Write a(nother) data block (512 bytes) to the SDCard. " alt="" coords="199,115,393,141"/><area shape="rect" id="node7" href="sdlogger__spi__direct_8c.html#a8ba172956b3686b7a8ccb47bb9215bf8" title="sdlogger_spi_direct_multiwrite_written Called when a multiwrite is complete. " alt="" coords="223,166,369,207"/><area shape="rect" id="node3" href="sdcard__spi_8c.html#a64d90e0374b4ebb9c1c6b8fa95c9b73f" title="Callback function for SPI transactions. " alt="" coords="441,85,608,112"/><area shape="rect" id="node5" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="867,85,957,112"/><area shape="rect" id="node4" href="sdcard__spi_8c.html#a4f343ab0a5e8ba8f3d68a50e139312c6" title="Send a command to the SDCard. " alt="" coords="656,5,819,32"/><area shape="rect" id="node6" href="sdcard__spi_8c.html#ae08b33e43067b02ae28ed7f7fccf781d" title="Request one or more bytes from the SDCard. " alt="" coords="664,107,811,149"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="sdlogger__spi__direct_8c_aff470fbbc1a5569c0823724d97dbcec7_icgraph.png" border="0" usemap="#sdlogger__spi__direct_8c_aff470fbbc1a5569c0823724d97dbcec7_icgraph" alt=""/></div>
-<map name="sdlogger__spi__direct_8c_aff470fbbc1a5569c0823724d97dbcec7_icgraph" id="sdlogger__spi__direct_8c_aff470fbbc1a5569c0823724d97dbcec7_icgraph">
-<area shape="rect" id="node2" href="sdlogger__spi__direct_8h.html#a583b0f3d27ef3f54ca4d1263ebc0a884" title="sdlogger_spi_direct_init Initialize the logger and SD Card. " alt="" coords="199,13,369,39"/></map>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="sdlogger__spi__direct_8c_a76e9185c1183478c02cf5be47cf0da93_icgraph.png" border="0" usemap="#sdlogger__spi__direct_8c_a76e9185c1183478c02cf5be47cf0da93_icgraph" alt=""/></div>
+<map name="sdlogger__spi__direct_8c_a76e9185c1183478c02cf5be47cf0da93_icgraph" id="sdlogger__spi__direct_8c_a76e9185c1183478c02cf5be47cf0da93_icgraph">
+<area shape="rect" id="node2" href="sdlogger__spi__direct_8h.html#a583b0f3d27ef3f54ca4d1263ebc0a884" title="sdlogger_spi_direct_init Initialize the logger and SD Card. " alt="" coords="392,13,563,39"/><area shape="rect" id="node3" href="sdlogger__spi__direct_8h.html#a2e870bbf55447f42c241d8f66c4a3397" title="sdlogger_spi_direct\l_put_buffer" alt="" coords="199,35,344,76"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a89eb1a3059b9cb5ac09713ec5b663df3"></a>
+<a class="anchor" id="a8fda3c5fcc96943f1b50619170389a5b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -574,23 +653,33 @@ Variables</h2></td></tr>
           <td class="memname">void sdlogger_spi_direct_send_message </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>p</em></td><td>)</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>fd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00380">380</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00403">403</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sdlogger__spi__direct_8c_source.html#l00067">sdlogger_spi_direct_init()</a>.</p>
+<p>Referenced by <a class="el" href="sdlogger__spi__direct_8c_source.html#l00070">sdlogger_spi_direct_init()</a>.</p>
 
-<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="sdlogger__spi__direct_8c_a89eb1a3059b9cb5ac09713ec5b663df3_icgraph.png" border="0" usemap="#sdlogger__spi__direct_8c_a89eb1a3059b9cb5ac09713ec5b663df3_icgraph" alt=""/></div>
-<map name="sdlogger__spi__direct_8c_a89eb1a3059b9cb5ac09713ec5b663df3_icgraph" id="sdlogger__spi__direct_8c_a89eb1a3059b9cb5ac09713ec5b663df3_icgraph">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="sdlogger__spi__direct_8c_a8fda3c5fcc96943f1b50619170389a5b_icgraph.png" border="0" usemap="#sdlogger__spi__direct_8c_a8fda3c5fcc96943f1b50619170389a5b_icgraph" alt=""/></div>
+<map name="sdlogger__spi__direct_8c_a8fda3c5fcc96943f1b50619170389a5b_icgraph" id="sdlogger__spi__direct_8c_a8fda3c5fcc96943f1b50619170389a5b_icgraph">
 <area shape="rect" id="node2" href="sdlogger__spi__direct_8h.html#a583b0f3d27ef3f54ca4d1263ebc0a884" title="sdlogger_spi_direct_init Initialize the logger and SD Card. " alt="" coords="199,13,369,39"/></map>
 </div>
 </p>
@@ -611,7 +700,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00212">212</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00224">224</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
 
 </div>
 </div>
@@ -629,7 +718,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00213">213</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00225">225</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
 
 </div>
 </div>
@@ -644,9 +733,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00061">61</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlogger__spi__direct_8c_source.html#l00064">64</a> of file <a class="el" href="sdlogger__spi__direct_8c_source.html">sdlogger_spi_direct.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sdlogger__spi__direct_8c_source.html#l00327">sdlogger_spi_direct_command()</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00219">sdlogger_spi_direct_index_received()</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00067">sdlogger_spi_direct_init()</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00312">sdlogger_spi_direct_multiwrite_written()</a>, and <a class="el" href="sdlogger__spi__direct_8c_source.html#l00106">sdlogger_spi_direct_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="sdlogger__spi__direct_8c_source.html#l00342">sdlogger_spi_direct_command()</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00231">sdlogger_spi_direct_index_received()</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00070">sdlogger_spi_direct_init()</a>, <a class="el" href="sdlogger__spi__direct_8c_source.html#l00327">sdlogger_spi_direct_multiwrite_written()</a>, and <a class="el" href="sdlogger__spi__direct_8c_source.html#l00109">sdlogger_spi_direct_periodic()</a>.</p>
 
 </div>
 </div>
@@ -656,7 +745,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_cbf4be70f5fb954ea1d2a546dd70b40e.html">loggers</a></li><li class="navelem"><a class="el" href="sdlogger__spi__direct_8c.html">sdlogger_spi_direct.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:53 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:02:00 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

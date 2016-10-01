@@ -1,54 +1,35 @@
 var lsm303dlhc_8h =
 [
     [ "Lsm303dlhcAccConfig", "lsm303dlhc_8h.html#structLsm303dlhcAccConfig", [
-      [ "hres", "lsm303dlhc_8h.html#a2af8da80366a07cd252ad602b435fc15", null ],
-      [ "lp_mode", "lsm303dlhc_8h.html#ab0c8fc359b92fcd79cb6a3c68f5c3397", null ],
       [ "rate", "lsm303dlhc_8h.html#ae3150afe089fea5a37ac0070f741ed5c", null ],
       [ "scale", "lsm303dlhc_8h.html#ac5ff25dd35a5cc555138782f91833e16", null ]
     ] ],
     [ "Lsm303dlhcMagConfig", "lsm303dlhc_8h.html#structLsm303dlhcMagConfig", [
-      [ "gain", "lsm303dlhc_8h.html#a147a8784384e27abd0c37eef506a9db0", null ],
       [ "mode", "lsm303dlhc_8h.html#a98ed32fc10aed95c10f00ea17edb7992", null ],
-      [ "rate", "lsm303dlhc_8h.html#a69c3816e0ccb8bd6a262050890c12c0f", null ]
+      [ "rate", "lsm303dlhc_8h.html#a69c3816e0ccb8bd6a262050890c12c0f", null ],
+      [ "scale", "lsm303dlhc_8h.html#a427d5584b0889473db9a789364090706", null ]
     ] ],
-    [ "Lsm303dlhc", "lsm303dlhc_8h.html#structLsm303dlhc", [
-      [ "config", "lsm303dlhc_8h.html#a8c214bb1e17056332c89e76e48f5a508", null ],
-      [ "data", "lsm303dlhc_8h.html#ac4128cc9cf3bcc4c7ab0893a9edec3d4", null ],
-      [ "data_available", "lsm303dlhc_8h.html#a1277cd2f1841cddee3587a65a342b85c", null ],
-      [ "i2c_p", "lsm303dlhc_8h.html#a145e4ffe1eb181b6b6c7fa310c0e7eb3", null ],
-      [ "i2c_trans", "lsm303dlhc_8h.html#a9759e9e6e44fd0cce6a23bab449ed552", null ],
-      [ "init_status", "lsm303dlhc_8h.html#a34ea2c05c0e30f713e0de04f6e3edb08", null ],
-      [ "initialized", "lsm303dlhc_8h.html#a30ef95a7ea7e9231db9c9759056030b5", null ]
+    [ "LSM303DLHC_DEFAULT_AFS", "lsm303dlhc_8h.html#a2327df9cb8ac5c9421e5824cb61172d2", null ],
+    [ "LSM303DLHC_DEFAULT_AODR", "lsm303dlhc_8h.html#ab665adea3b020afa195cc46712318551", null ],
+    [ "LSM303DLHC_DEFAULT_MD", "lsm303dlhc_8h.html#a5feaee0bee3a380311b181648e79d341", null ],
+    [ "LSM303DLHC_DEFAULT_MFS", "lsm303dlhc_8h.html#a7cbcfd28a8b96a952d923cf4a2e5c3dc", null ],
+    [ "LSM303DLHC_DEFAULT_MODR", "lsm303dlhc_8h.html#a6582e7095f8420e947eb28446ad2d954", null ],
+    [ "Lsm303dlhcConfStatus", "lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4", [
+      [ "LSM_CONF_UNINIT", "lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4a4fa3dac07ba9b587cf85f685a7b1e8b6", null ],
+      [ "LSM_CONF_WHO_AM_I", "lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4ae1062c47f520b7196cb87476df801465", null ],
+      [ "LSM_CONF_CTRL_REG1", "lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4a69ec61569c5789572a3b9fb831664b1f", null ],
+      [ "LSM_CONF_CTRL_REG2", "lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4ad32cdf14cfbf6a083a29bcfa44bab720", null ],
+      [ "LSM_CONF_CTRL_REG3", "lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4a8c2c565f50407a137d10df7dd8193427", null ],
+      [ "LSM_CONF_CTRL_REG4", "lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4a0e064b11b8708c7849e73864027033bc", null ],
+      [ "LSM_CONF_CTRL_REG5", "lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4a59cdd9e5f42433190db5903dfac1ae8f", null ],
+      [ "LSM_CONF_CTRL_REG6", "lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4abde2e888ac705020dfdbc0d1f01ee88c", null ],
+      [ "LSM_CONF_CTRL_REG7", "lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4a30941a70f8d20429d503de74eaf99964", null ],
+      [ "LSM_CONF_DONE", "lsm303dlhc_8h.html#a40bd20f5c070ea474cbb45ef6fbc97d4aec72e9269aec62a2fb98b11e5d7a2b2d", null ]
     ] ],
-    [ "Lsm303dlhc.init_status", "lsm303dlhc_8h.html#unionLsm303dlhc_8init__status", [
-      [ "acc", "lsm303dlhc_8h.html#a1673448ee7064c989d02579c534f6b66", null ],
-      [ "mag", "lsm303dlhc_8h.html#a741f63d12d767bb3fd2b0251ed839499", null ]
+    [ "Lsm303dlhcTarget", "lsm303dlhc_8h.html#a5afc32e9ef4de228907475f6e24f4ba7", [
+      [ "LSM_TARGET_ACC", "lsm303dlhc_8h.html#a5afc32e9ef4de228907475f6e24f4ba7a756c2ee23ee359ca4c1e89a7ba0d2169", null ],
+      [ "LSM_TARGET_MAG", "lsm303dlhc_8h.html#a5afc32e9ef4de228907475f6e24f4ba7ab242572a785702f4cffb177028975f6a", null ]
     ] ],
-    [ "Lsm303dlhc.data", "lsm303dlhc_8h.html#unionLsm303dlhc_8data", [
-      [ "value", "lsm303dlhc_8h.html#ab07053fcb6afcb4d09e8f337b615d383", null ],
-      [ "vect", "lsm303dlhc_8h.html#a4384543978c11a2d3da5c6cfeed94998", null ]
-    ] ],
-    [ "Lsm303dlhc.config", "lsm303dlhc_8h.html#unionLsm303dlhc_8config", [
-      [ "acc", "lsm303dlhc_8h.html#a1673448ee7064c989d02579c534f6b66", null ],
-      [ "mag", "lsm303dlhc_8h.html#a741f63d12d767bb3fd2b0251ed839499", null ]
-    ] ],
-    [ "Lsm303dlhcAccConfStatus", "lsm303dlhc_8h.html#acfdcef8558d30510f691dc2670655e24", [
-      [ "LSM_CONF_ACC_UNINIT", "lsm303dlhc_8h.html#acfdcef8558d30510f691dc2670655e24af3db1a724340c0977627946dfecc0944", null ],
-      [ "LSM_CONF_ACC_CTRL_REG4_A", "lsm303dlhc_8h.html#acfdcef8558d30510f691dc2670655e24a0228b35fcc4c4718ee6be8fec9e8243f", null ],
-      [ "LSM_CONF_ACC_CTRL_REG1_A", "lsm303dlhc_8h.html#acfdcef8558d30510f691dc2670655e24a05b53d14cf762a93b127c7b468747da7", null ],
-      [ "LSM_CONF_ACC_CTRL_REG3_A", "lsm303dlhc_8h.html#acfdcef8558d30510f691dc2670655e24abcf6c818dbcce19fa75b2bff30048dcf", null ],
-      [ "LSM_CONF_ACC_DONE", "lsm303dlhc_8h.html#acfdcef8558d30510f691dc2670655e24abb05c01d2b731de3b55c388bd7042812", null ]
-    ] ],
-    [ "Lsm303dlhcMagConfStatus", "lsm303dlhc_8h.html#ab3e05e02f1a8eb7e4d3bfae1c18c9ea3", [
-      [ "LSM_CONF_MAG_UNINIT", "lsm303dlhc_8h.html#ab3e05e02f1a8eb7e4d3bfae1c18c9ea3a917f517cef07823c5e0da8daa229526c", null ],
-      [ "LSM_CONF_MAG_CRA_REG_M", "lsm303dlhc_8h.html#ab3e05e02f1a8eb7e4d3bfae1c18c9ea3a19ab24f6c4eaad2f3da0449b7f551901", null ],
-      [ "LSM_CONF_MAG_CRB_REG_M", "lsm303dlhc_8h.html#ab3e05e02f1a8eb7e4d3bfae1c18c9ea3aad8e19a93c3d44a45741c66647f296ff", null ],
-      [ "LSM_CONF_MAG_MR_REG_M", "lsm303dlhc_8h.html#ab3e05e02f1a8eb7e4d3bfae1c18c9ea3a0bc437d2bb075e5ef7c5c95e3ab2ae23", null ],
-      [ "LSM_CONF_MAG_DONE", "lsm303dlhc_8h.html#ab3e05e02f1a8eb7e4d3bfae1c18c9ea3a83aab4b1adfc4419997cbac7f4ab25fb", null ]
-    ] ],
-    [ "lsm303dlhc_event", "lsm303dlhc_8h.html#a39197f68eef8e69e704960ffc6c2e68c", null ],
-    [ "lsm303dlhc_init", "lsm303dlhc_8h.html#a43bda86b1066b83f04638f1c8918eaf0", null ],
-    [ "lsm303dlhc_periodic", "lsm303dlhc_8h.html#a5d3ba8e56a241a79753f1a24b87cf4bc", null ],
-    [ "lsm303dlhc_read", "lsm303dlhc_8h.html#a61023404c121ad141fab2d1aefbe1fb1", null ],
-    [ "lsm303dlhc_start_configure", "lsm303dlhc_8h.html#a8a925e85d441156e8201534827bdbf77", null ]
+    [ "lsm303dlhc_acc_set_default_config", "lsm303dlhc_8h.html#ae8ceff9bc03fc374ba40da1e878432a4", null ],
+    [ "lsm303dlhc_mag_set_default_config", "lsm303dlhc_8h.html#a8d231a0e60d1fd7c43f0618e82c369e4", null ]
 ];

@@ -29,6 +29,8 @@ var state_8c =
     [ "stateCalcSpeedEnu_i", "group__state__velocity.html#gac5705ba421760a77d8a4e7eab67a8f73", null ],
     [ "stateCalcSpeedNed_f", "group__state__velocity.html#ga440e1db9aa0854e8cea50670d7055450", null ],
     [ "stateCalcSpeedNed_i", "group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5", null ],
+    [ "stateCalcVerticalWindspeed_f", "group__state__wind__airspeed.html#gaf5cbdfa616e875ce4f648ab97a03a8e1", null ],
+    [ "stateCalcVerticalWindspeed_i", "group__state__wind__airspeed.html#gaac50ef79934dbcc8abf99aa3be288c5a", null ],
     [ "stateInit", "group__state__interface.html#gae841c56c9a83bf54bcdd8d7f166f2e2a", null ],
     [ "state", "group__state__interface.html#gad04519a48b59cfe96f361afe9eb151ba", null ]
 ];

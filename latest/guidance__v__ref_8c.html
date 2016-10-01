@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -140,7 +140,7 @@ Macros</h2></td></tr>
 <tr class="separator:a460620357a4cf9177140f11ef5de8fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f9c7ad43b095fd085888d547b7a2bb3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__v__ref_8c.html#a0f9c7ad43b095fd085888d547b7a2bb3">GV_MAX_ZDD</a>&#160;&#160;&#160;<a class="el" href="group__math__algebra__int.html#gaa6bb9343d0a10947a0824bc67cf4a47d">BFP_OF_REAL</a>(<a class="el" href="guidance__v__ref_8c.html#a460620357a4cf9177140f11ef5de8fcc">GUIDANCE_V_REF_MAX_ZDD</a>, <a class="el" href="guidance__v__ref_8h.html#a56ce61e48bdd6a1384b5d330e79d38d6">GV_ZDD_REF_FRAC</a>)</td></tr>
 <tr class="separator:a0f9c7ad43b095fd085888d547b7a2bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3106b6a870bf88bb7a3efad7d1b7b260"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__v__ref_8c.html#a3106b6a870bf88bb7a3efad7d1b7b260">GUIDANCE_V_REF_MAX_Z_DIFF</a>&#160;&#160;&#160;2.0</td></tr>
+<tr class="memitem:a3106b6a870bf88bb7a3efad7d1b7b260"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__v__ref_8c.html#a3106b6a870bf88bb7a3efad7d1b7b260">GUIDANCE_V_REF_MAX_Z_DIFF</a>&#160;&#160;&#160;10.0</td></tr>
 <tr class="memdesc:a3106b6a870bf88bb7a3efad7d1b7b260"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum distance altitude setpoint is advanced in climb mode  <a href="#a3106b6a870bf88bb7a3efad7d1b7b260">More...</a><br /></td></tr>
 <tr class="separator:a3106b6a870bf88bb7a3efad7d1b7b260"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b882a6a29ca2afc49b5fb9134984730"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guidance__v__ref_8c.html#a4b882a6a29ca2afc49b5fb9134984730">GV_MAX_Z_DIFF</a>&#160;&#160;&#160;<a class="el" href="group__math__algebra__int.html#gaa6bb9343d0a10947a0824bc67cf4a47d">BFP_OF_REAL</a>(<a class="el" href="guidance__v__ref_8c.html#a3106b6a870bf88bb7a3efad7d1b7b260">GUIDANCE_V_REF_MAX_Z_DIFF</a>, <a class="el" href="guidance__v__ref_8h.html#a3d96f130f69bd6fa87c9eb2ca2ec4640">GV_Z_REF_FRAC</a>)</td></tr>
@@ -200,7 +200,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define GUIDANCE_V_REF_MAX_Z_DIFF&#160;&#160;&#160;2.0</td>
+          <td class="memname">#define GUIDANCE_V_REF_MAX_Z_DIFF&#160;&#160;&#160;10.0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -492,7 +492,7 @@ Variables</h2></td></tr>
 
 <p>References <a class="el" href="guidance__v__ref_8c_source.html#l00047">gv_z_ref</a>, <a class="el" href="guidance__v__ref_8h_source.html#l00075">GV_Z_REF_FRAC</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00041">gv_zd_ref</a>, <a class="el" href="guidance__v__ref_8h_source.html#l00066">GV_ZD_REF_FRAC</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00035">gv_zdd_ref</a>, <a class="el" href="guidance__v__ref_8h_source.html#l00057">GV_ZDD_REF_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00078">INT32_ACCEL_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00068">INT32_POS_FRAC</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00073">INT32_SPEED_FRAC</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__sim__hitl_8c_source.html#l00042">gps_sim_hitl_event()</a>.</p>
+<p>Referenced by <a class="el" href="gps__sim__hitl_8c_source.html#l00044">gps_sim_hitl_event()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -525,7 +525,7 @@ Variables</h2></td></tr>
 
 <p>References <a class="el" href="guidance__v__ref_8c_source.html#l00068">GV_MAX_ZD</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00059">GV_MAX_ZDD</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00067">GV_MIN_ZD</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00054">GV_MIN_ZDD</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00080">GV_OMEGA_2</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00079">GV_OMEGA_2_FRAC</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00047">gv_z_ref</a>, <a class="el" href="guidance__v__ref_8h_source.html#l00075">GV_Z_REF_FRAC</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00041">gv_zd_ref</a>, <a class="el" href="guidance__v__ref_8h_source.html#l00066">GV_ZD_REF_FRAC</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00035">gv_zdd_ref</a>, <a class="el" href="guidance__v__ref_8h_source.html#l00057">GV_ZDD_REF_FRAC</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00078">GV_ZETA_OMEGA</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00077">GV_ZETA_OMEGA_FRAC</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00068">INT32_POS_FRAC</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00272">guidance_v_run()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00283">guidance_v_run()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -534,7 +534,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="guidance__v__ref_8c_ab36885cc677b3d2a0f89c148ffe6e9ba_icgraph.png" border="0" usemap="#guidance__v__ref_8c_ab36885cc677b3d2a0f89c148ffe6e9ba_icgraph" alt=""/></div>
 <map name="guidance__v__ref_8c_ab36885cc677b3d2a0f89c148ffe6e9ba_icgraph" id="guidance__v__ref_8c_ab36885cc677b3d2a0f89c148ffe6e9ba_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2guidance_2guidance__v_8h.html#aa3265bfb8a8925942f818424f97f9725" title="guidance_v_run" alt="" coords="240,31,363,57"/><area shape="rect" id="node3" href="rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="411,31,545,57"/><area shape="rect" id="node4" href="rotorcraft_2main__fbw_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="593,31,704,57"/><area shape="rect" id="node5" href="rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="752,31,915,57"/><area shape="rect" id="node6" href="fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="975,5,1029,32"/><area shape="rect" id="node7" href="main__chibios__libopencm3_8c.html#ad648a546fe66cd5f9328f33221a40c64" title="pprz_thd" alt="" coords="963,56,1041,83"/><area shape="rect" id="node8" href="main__chibios__libopencm3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1089,56,1144,83"/></map>
+<area shape="rect" id="node2" href="rotorcraft_2guidance_2guidance__v_8h.html#a5c03e8fc9dd9e84925081df8639d4001" title="guidance_v_run" alt="" coords="240,81,363,108"/><area shape="rect" id="node3" href="rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="411,81,545,108"/><area shape="rect" id="node4" href="rotorcraft_2main__fbw_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="593,81,704,108"/><area shape="rect" id="node5" href="rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="752,81,915,108"/><area shape="rect" id="node6" href="fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1021,5,1075,32"/><area shape="rect" id="node7" href="nps__autopilot__fixedwing_8c.html#a12870aaa609d4860004be3cec4c8cf2a" title="nps_autopilot_run_step" alt="" coords="963,56,1133,83"/><area shape="rect" id="node8" href="main__chibios_8c.html#a1bd1ec0fdc597d88ee659889cda25c0a" title="thd_ap" alt="" coords="1015,107,1081,133"/><area shape="rect" id="node10" href="main__chibios_8c.html#a4042bcab9578175e00c82adcc2b251f8" title="thd_fbw" alt="" coords="1013,157,1083,184"/><area shape="rect" id="node9" href="main__chibios_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function. " alt="" coords="1181,132,1236,159"/></map>
 </div>
 </p>
 
@@ -577,7 +577,7 @@ Variables</h2></td></tr>
 
 <p>References <a class="el" href="guidance__v__ref_8c_source.html#l00065">GV_MAX_Z_DIFF</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00068">GV_MAX_ZD</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00059">GV_MAX_ZDD</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00067">GV_MIN_ZD</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00054">GV_MIN_ZDD</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00085">GV_REF_INV_THAU</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00084">GV_REF_INV_THAU_FRAC</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00047">gv_z_ref</a>, <a class="el" href="guidance__v__ref_8h_source.html#l00075">GV_Z_REF_FRAC</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00041">gv_zd_ref</a>, <a class="el" href="guidance__v__ref_8h_source.html#l00066">GV_ZD_REF_FRAC</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00035">gv_zdd_ref</a>, <a class="el" href="guidance__v__ref_8h_source.html#l00057">GV_ZDD_REF_FRAC</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00068">INT32_POS_FRAC</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00073">INT32_SPEED_FRAC</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00272">guidance_v_run()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00283">guidance_v_run()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -586,7 +586,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="guidance__v__ref_8c_ab8d8d8003fbd1c3d31ee72827ea1e25e_icgraph.png" border="0" usemap="#guidance__v__ref_8c_ab8d8d8003fbd1c3d31ee72827ea1e25e_icgraph" alt=""/></div>
 <map name="guidance__v__ref_8c_ab8d8d8003fbd1c3d31ee72827ea1e25e_icgraph" id="guidance__v__ref_8c_ab8d8d8003fbd1c3d31ee72827ea1e25e_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2guidance_2guidance__v_8h.html#aa3265bfb8a8925942f818424f97f9725" title="guidance_v_run" alt="" coords="204,31,327,57"/><area shape="rect" id="node3" href="rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="375,31,509,57"/><area shape="rect" id="node4" href="rotorcraft_2main__fbw_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="557,31,668,57"/><area shape="rect" id="node5" href="rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="716,31,879,57"/><area shape="rect" id="node6" href="fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="939,5,993,32"/><area shape="rect" id="node7" href="main__chibios__libopencm3_8c.html#ad648a546fe66cd5f9328f33221a40c64" title="pprz_thd" alt="" coords="927,56,1005,83"/><area shape="rect" id="node8" href="main__chibios__libopencm3_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1053,56,1108,83"/></map>
+<area shape="rect" id="node2" href="rotorcraft_2guidance_2guidance__v_8h.html#a5c03e8fc9dd9e84925081df8639d4001" title="guidance_v_run" alt="" coords="204,81,327,108"/><area shape="rect" id="node3" href="rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="375,81,509,108"/><area shape="rect" id="node4" href="rotorcraft_2main__fbw_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="557,81,668,108"/><area shape="rect" id="node5" href="rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="716,81,879,108"/><area shape="rect" id="node6" href="fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="985,5,1039,32"/><area shape="rect" id="node7" href="nps__autopilot__fixedwing_8c.html#a12870aaa609d4860004be3cec4c8cf2a" title="nps_autopilot_run_step" alt="" coords="927,56,1097,83"/><area shape="rect" id="node8" href="main__chibios_8c.html#a1bd1ec0fdc597d88ee659889cda25c0a" title="thd_ap" alt="" coords="979,107,1045,133"/><area shape="rect" id="node10" href="main__chibios_8c.html#a4042bcab9578175e00c82adcc2b251f8" title="thd_fbw" alt="" coords="977,157,1047,184"/><area shape="rect" id="node9" href="main__chibios_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function. " alt="" coords="1145,132,1200,159"/></map>
 </div>
 </p>
 
@@ -607,7 +607,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="guidance__v__ref_8c_source.html#l00047">47</a> of file <a class="el" href="guidance__v__ref_8c_source.html">guidance_v_ref.c</a>.</p>
 
-<p>Referenced by <a class="el" href="guidance__v__ref_8c_source.html#l00087">gv_set_ref()</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00095">gv_update_ref_from_z_sp()</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00129">gv_update_ref_from_zd_sp()</a>, and <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00399">run_hover_loop()</a>.</p>
+<p>Referenced by <a class="el" href="guidance__v__ref_8c_source.html#l00087">gv_set_ref()</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00095">gv_update_ref_from_z_sp()</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00129">gv_update_ref_from_zd_sp()</a>, and <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00422">run_hover_loop()</a>.</p>
 
 </div>
 </div>
@@ -625,7 +625,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="guidance__v__ref_8c_source.html#l00041">41</a> of file <a class="el" href="guidance__v__ref_8c_source.html">guidance_v_ref.c</a>.</p>
 
-<p>Referenced by <a class="el" href="guidance__v__ref_8c_source.html#l00087">gv_set_ref()</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00095">gv_update_ref_from_z_sp()</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00129">gv_update_ref_from_zd_sp()</a>, and <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00399">run_hover_loop()</a>.</p>
+<p>Referenced by <a class="el" href="guidance__v__ref_8c_source.html#l00087">gv_set_ref()</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00095">gv_update_ref_from_z_sp()</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00129">gv_update_ref_from_zd_sp()</a>, and <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00422">run_hover_loop()</a>.</p>
 
 </div>
 </div>
@@ -643,7 +643,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="guidance__v__ref_8c_source.html#l00035">35</a> of file <a class="el" href="guidance__v__ref_8c_source.html">guidance_v_ref.c</a>.</p>
 
-<p>Referenced by <a class="el" href="guidance__v__ref_8c_source.html#l00087">gv_set_ref()</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00095">gv_update_ref_from_z_sp()</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00129">gv_update_ref_from_zd_sp()</a>, and <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00399">run_hover_loop()</a>.</p>
+<p>Referenced by <a class="el" href="guidance__v__ref_8c_source.html#l00087">gv_set_ref()</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00095">gv_update_ref_from_z_sp()</a>, <a class="el" href="guidance__v__ref_8c_source.html#l00129">gv_update_ref_from_zd_sp()</a>, and <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00422">run_hover_loop()</a>.</p>
 
 </div>
 </div>
@@ -653,7 +653,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_3d64810a495a8e63c02e8d4ee1418813.html">guidance</a></li><li class="navelem"><a class="el" href="guidance__v__ref_8c.html">guidance_v_ref.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:43 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:48 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

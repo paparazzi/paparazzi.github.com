@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.8.0_stable-15-g9da6d3c</span>
+   &#160;<span id="projectnumber">v5.8.2_stable-0-g6260b7c</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -141,6 +141,7 @@ Source Files</h2>
 <li><a class="el" href="gps__ubx_8c.html">subsystems/gps/gps_ubx.c</a></li>
 <li><a class="el" href="gps_8c.html">subsystems/gps.c</a></li>
 <li><a class="el" href="gps__sim__nps_8c.html">subsystems/gps/gps_sim_nps.c</a></li>
+<li><a class="el" href="gps_8c.html">subsystems/gps.c</a></li>
 <li><a class="el" href="gps__sim_8c.html">subsystems/gps/gps_sim.c</a></li>
 </ul>
 <h2><a class="anchor" id="module_xml__gps_ublox"></a>
@@ -168,12 +169,12 @@ Raw gps_ublox.xml file:</h2>
 <div class="line">    &lt;file name=&quot;gps.c&quot; dir=&quot;subsystems&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;gps_ubx.c&quot; dir=&quot;subsystems/gps&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;USE_GPS&quot;/&gt;</div>
-<div class="line">    &lt;!-- only for fixedwings --&gt;</div>
-<div class="line">    &lt;!--define name=&quot;GPS_USE_LATLONG&quot;/--&gt;</div>
+<div class="line">    &lt;define name=&quot;GPS_USE_LATLONG&quot;/&gt;</div>
 <div class="line">    &lt;raw&gt;</div>
+<div class="line">      UBX_GPS_PORT_LOWER=$(shell echo $(GPS_PORT) | tr A-Z a-z)</div>
 <div class="line">      ap.CFLAGS += -DGPS_TYPE_H=\&quot;subsystems/gps/gps_ubx.h\&quot;</div>
 <div class="line">      ap.CFLAGS += -DUSE_$(GPS_PORT) -D$(GPS_PORT)_BAUD=$(GPS_BAUD)</div>
-<div class="line">      ap.CFLAGS += -DUSE_GPS -DGPS_LINK=$(GPS_PORT)</div>
+<div class="line">      ap.CFLAGS += -DUSE_GPS -DGPS_LINK=$(UBX_GPS_PORT_LOWER)</div>
 <div class="line">      GPS_LED ?= none</div>
 <div class="line">      ifneq ($(GPS_LED),none)</div>
 <div class="line">        ap.CFLAGS += -DGPS_LED=$(GPS_LED)</div>
@@ -184,17 +185,18 @@ Raw gps_ublox.xml file:</h2>
 <div class="line">    &lt;file name=&quot;gps.c&quot; dir=&quot;subsystems&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;gps_sim_nps.c&quot; dir=&quot;subsystems/gps&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;USE_GPS&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;GPS_USE_LATLONG&quot;/&gt;</div>
 <div class="line">    &lt;raw&gt;</div>
 <div class="line">      nps.CFLAGS += -DGPS_TYPE_H=\&quot;subsystems/gps/gps_sim_nps.h\&quot;</div>
 <div class="line">    &lt;/raw&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">  &lt;makefile target=&quot;sim&quot;&gt;</div>
+<div class="line">    &lt;file name=&quot;gps.c&quot; dir=&quot;subsystems&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;gps_sim.c&quot; dir=&quot;subsystems/gps&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;USE_GPS&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;GPS_USE_LATLONG&quot;/&gt;</div>
 <div class="line">    &lt;raw&gt;</div>
 <div class="line">      sim.CFLAGS += -DGPS_TYPE_H=\&quot;subsystems/gps/gps_sim.h\&quot;</div>
-<div class="line">      jsbsim.CFLAGS += -DGPS_TYPE_H=\&quot;subsystems/gps/gps_sim.h\&quot;</div>
 <div class="line">    &lt;/raw&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">&lt;/module&gt;</div>
@@ -205,7 +207,7 @@ Raw gps_ublox.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Tue Jan 12 2016 11:05:17 for Paparazzi UAS by
+    <li class="footer">Generated on Tue Jun 21 2016 14:02:02 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

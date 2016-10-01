@@ -3,7 +3,7 @@ var cyrf6936_8h_structCyrf6936 =
     [ "buffer", "cyrf6936_8h.html#a8f8ad7b672b42a6f2c272c8316bd2102", null ],
     [ "buffer_idx", "cyrf6936_8h.html#a34f548bf3fa4f65b9de6b2f90101220f", null ],
     [ "buffer_length", "cyrf6936_8h.html#a593dc9952b96bd91d2a2d4a55bea0bb6", null ],
-    [ "has_irq", "cyrf6936_8h.html#acb983f0e07fc0b6d144cb24a94e2bed5", null ],
+    [ "has_irq", "cyrf6936_8h.html#a87b76fe274cbf7fe1b83e21414a6f520", null ],
     [ "input_buf", "cyrf6936_8h.html#aa8664c0ed6c3430db8a18b548597f27e", null ],
     [ "mfg_id", "cyrf6936_8h.html#acdcddf8d259f958e10152dda328b8f4b", null ],
     [ "output_buf", "cyrf6936_8h.html#ace1deff46f4385f20a6f3d24fbb5f72a", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -141,8 +141,8 @@ $(document).ready(function(){initNavTree('actuators__spektrum_8h_source.html',''
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">/* Main actuator structure */</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="actuators__spektrum_8h.html">   36</a></span>&#160;<span class="keyword">struct </span><a class="code" href="actuators__spektrum_8h.html#structActuatorsSpektrum">ActuatorsSpektrum</a> {</div>
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="actuators__spektrum_8h.html#aab47a8802eb0e3c75be24e0e1edc0a80">   37</a></span>&#160;  <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="actuators__spektrum_8h.html#aab47a8802eb0e3c75be24e0e1edc0a80">cmds</a>[<a class="code" href="actuators__spektrum_8h.html#aa4fceb791f3186eb38a70cc5706f9b85">ACTUATORS_SPEKTRUM_MAX_NB</a>];</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="actuators__spektrum_8h.html#aeca37c257b7f0b081c8ff8e6245a2bd2">   38</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="link__device_8h.html#structlink__device">link_device</a> *<a class="code" href="actuators__spektrum_8h.html#aeca37c257b7f0b081c8ff8e6245a2bd2">device</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="actuators__spektrum_8h.html#a5bfc898cf45f9d4ca16980c978ae2212">   39</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="link__device_8h.html#structlink__device">link_device</a> *<a class="code" href="actuators__spektrum_8h.html#a5bfc898cf45f9d4ca16980c978ae2212">device2</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="actuators__spektrum_8h.html#aeca37c257b7f0b081c8ff8e6245a2bd2">   38</a></span>&#160;  <span class="keyword">struct </span>link_device *<a class="code" href="actuators__spektrum_8h.html#aeca37c257b7f0b081c8ff8e6245a2bd2">device</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="actuators__spektrum_8h.html#a5bfc898cf45f9d4ca16980c978ae2212">   39</a></span>&#160;  <span class="keyword">struct </span>link_device *<a class="code" href="actuators__spektrum_8h.html#a5bfc898cf45f9d4ca16980c978ae2212">device2</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">/* Functions used in actuator macros */</span></div>
@@ -159,7 +159,6 @@ $(document).ready(function(){initNavTree('actuators__spektrum_8h_source.html',''
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ACTUATORS_SPEKTRUM_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="actuators__spektrum_8h_html_a166569d0e5d830b35538915040d59425"><div class="ttname"><a href="actuators__spektrum_8h.html#a166569d0e5d830b35538915040d59425">actuators_spektrum_set</a></div><div class="ttdeci">void actuators_spektrum_set(void)</div><div class="ttdef"><b>Definition:</b> <a href="actuators__spektrum_8c_source.html#l00063">actuators_spektrum.c:63</a></div></div>
 <div class="ttc" id="actuators__spektrum_8h_html_aab47a8802eb0e3c75be24e0e1edc0a80"><div class="ttname"><a href="actuators__spektrum_8h.html#aab47a8802eb0e3c75be24e0e1edc0a80">ActuatorsSpektrum::cmds</a></div><div class="ttdeci">int32_t cmds[ACTUATORS_SPEKTRUM_MAX_NB]</div><div class="ttdef"><b>Definition:</b> <a href="actuators__spektrum_8h_source.html#l00037">actuators_spektrum.h:37</a></div></div>
-<div class="ttc" id="link__device_8h_html_structlink__device"><div class="ttname"><a href="link__device_8h.html#structlink__device">link_device</a></div><div class="ttdoc">Device structure. </div><div class="ttdef"><b>Definition:</b> <a href="link__device_8h_source.html#l00044">link_device.h:44</a></div></div>
 <div class="ttc" id="actuators__spektrum_8h_html_aeca37c257b7f0b081c8ff8e6245a2bd2"><div class="ttname"><a href="actuators__spektrum_8h.html#aeca37c257b7f0b081c8ff8e6245a2bd2">ActuatorsSpektrum::device</a></div><div class="ttdeci">struct link_device * device</div><div class="ttdef"><b>Definition:</b> <a href="actuators__spektrum_8h_source.html#l00038">actuators_spektrum.h:38</a></div></div>
 <div class="ttc" id="actuators__spektrum_8h_html_a5bfc898cf45f9d4ca16980c978ae2212"><div class="ttname"><a href="actuators__spektrum_8h.html#a5bfc898cf45f9d4ca16980c978ae2212">ActuatorsSpektrum::device2</a></div><div class="ttdeci">struct link_device * device2</div><div class="ttdef"><b>Definition:</b> <a href="actuators__spektrum_8h_source.html#l00039">actuators_spektrum.h:39</a></div></div>
 <div class="ttc" id="actuators__spektrum_8h_html_structActuatorsSpektrum"><div class="ttname"><a href="actuators__spektrum_8h.html#structActuatorsSpektrum">ActuatorsSpektrum</a></div><div class="ttdef"><b>Definition:</b> <a href="actuators__spektrum_8h_source.html#l00036">actuators_spektrum.h:36</a></div></div>
@@ -174,7 +173,7 @@ $(document).ready(function(){initNavTree('actuators__spektrum_8h_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_27687546688cef5dbb42803ce993f4c4.html">actuators</a></li><li class="navelem"><a class="el" href="actuators__spektrum_8h.html">actuators_spektrum.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:29 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:31 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

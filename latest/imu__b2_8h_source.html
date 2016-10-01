@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -276,12 +276,14 @@ $(document).ready(function(){initNavTree('imu__b2_8h_source.html','');});
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;};</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="imu__b2_8h.html#structImuBooz2">ImuBooz2</a> <a class="code" href="imu__b2_8h.html#aa75cb0a1fd97e613b36c9f1869ca9c31">imu_b2</a>;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__b2_8h.html#ade46fe011019a8bae5cb916f34c03f9b">imu_b2_event</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
-<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="imu__b2_8h.html#a38f1122c1ee0701562b490c6e1b60609">  177</a></span>&#160;<span class="preprocessor">#define ImuEvent imu_b2_event</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* IMU_B2_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__b2_8h.html#ae570fa02d6ebd9ce0b25e7074f002d72">imu_b2_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__b2_8h.html#a36aa24318d246823529c5aa661132d92">imu_b2_periodic</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__b2_8h.html#ade46fe011019a8bae5cb916f34c03f9b">imu_b2_event</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* IMU_B2_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="ms2100_8h_html"><div class="ttname"><a href="ms2100_8h.html">ms2100.h</a></div><div class="ttdoc">Driver for the ms2100 magnetic sensor from PNI. </div></div>
+<div class="ttc" id="imu__b2_8h_html_a36aa24318d246823529c5aa661132d92"><div class="ttname"><a href="imu__b2_8h.html#a36aa24318d246823529c5aa661132d92">imu_b2_periodic</a></div><div class="ttdeci">void imu_b2_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__b2_8c_source.html#l00057">imu_b2.c:57</a></div></div>
 <div class="ttc" id="imu__b2_8h_html_structImuBooz2"><div class="ttname"><a href="imu__b2_8h.html#structImuBooz2">ImuBooz2</a></div><div class="ttdef"><b>Definition:</b> <a href="imu__b2_8h_source.html#l00168">imu_b2.h:168</a></div></div>
 <div class="ttc" id="hmc58xx_8h_html"><div class="ttname"><a href="hmc58xx_8h.html">hmc58xx.h</a></div></div>
 <div class="ttc" id="hmc58xx_8h_html_structHmc58xx"><div class="ttname"><a href="hmc58xx_8h.html#structHmc58xx">Hmc58xx</a></div><div class="ttdef"><b>Definition:</b> <a href="hmc58xx_8h_source.html#l00060">hmc58xx.h:60</a></div></div>
@@ -291,13 +293,14 @@ $(document).ready(function(){initNavTree('imu__b2_8h_source.html','');});
 <div class="ttc" id="imu__b2_8h_html_ade46fe011019a8bae5cb916f34c03f9b"><div class="ttname"><a href="imu__b2_8h.html#ade46fe011019a8bae5cb916f34c03f9b">imu_b2_event</a></div><div class="ttdeci">void imu_b2_event(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__b2_8c_source.html#l00152">imu_b2.c:152</a></div></div>
 <div class="ttc" id="max1168_8h_html"><div class="ttname"><a href="max1168_8h.html">max1168.h</a></div></div>
 <div class="ttc" id="imu__b2_8h_html_aa75cb0a1fd97e613b36c9f1869ca9c31"><div class="ttname"><a href="imu__b2_8h.html#aa75cb0a1fd97e613b36c9f1869ca9c31">imu_b2</a></div><div class="ttdeci">struct ImuBooz2 imu_b2</div><div class="ttdef"><b>Definition:</b> <a href="imu__b2_8c_source.html#l00034">imu_b2.c:34</a></div></div>
+<div class="ttc" id="imu__b2_8h_html_ae570fa02d6ebd9ce0b25e7074f002d72"><div class="ttname"><a href="imu__b2_8h.html#ae570fa02d6ebd9ce0b25e7074f002d72">imu_b2_init</a></div><div class="ttdeci">void imu_b2_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__b2_8c_source.html#l00038">imu_b2.c:38</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8b2fa0708e2db44c1b91938af97bac44.html">imu</a></li><li class="navelem"><a class="el" href="imu__b2_8h.html">imu_b2.h</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:31 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:33 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

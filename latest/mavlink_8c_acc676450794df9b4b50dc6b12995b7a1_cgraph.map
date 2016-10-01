@@ -15,10 +15,10 @@
 <area shape="rect" id="node42" href="$mavlink_8c.html#a160010097f6fb718c579d8470a9d72cf" title="Send SYSTEM_TIME. " alt="" coords="151,123,349,149"/>
 <area shape="rect" id="node43" href="$mavlink_8c.html#a8c8fd474a91b126a5f74296017672ddc" title="Send Metrics typically displayed on a HUD for fixed wing aircraft. " alt="" coords="169,407,331,433"/>
 <area shape="rect" id="node50" href="$telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="151,857,349,884"/>
-<area shape="rect" id="node4" href="$linux_2mcu__periph_2sys__time__arch_8h.html#a5f8c93bbb4f24eee68b36977371aa262" title="Get the time in milliseconds since startup. " alt="" coords="438,173,587,200"/>
+<area shape="rect" id="node4" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="get_sys_time_msec" alt="" coords="438,173,587,200"/>
 <area shape="rect" id="node6" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="413,224,612,251"/>
 <area shape="rect" id="node9" href="$group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float). " alt="" coords="434,119,591,145"/>
-<area shape="rect" id="node5" href="$sys__time_8h.html#a0f2d5e1c11d8950e639deada1d33b802" title="msec_of_cpu_ticks" alt="" coords="699,173,841,200"/>
+<area shape="rect" id="node5" href="$sys__time_8h.html#ab67b78f01783839deb76623ff83981dd" title="msec_of_sys_time_ticks" alt="" coords="682,173,858,200"/>
 <area shape="rect" id="node7" href="$group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="688,224,852,251"/>
 <area shape="rect" id="node8" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="912,123,1080,149"/>
 <area shape="rect" id="node10" href="$group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title="stateCalcBodyRates_f" alt="" coords="689,119,851,145"/>
@@ -28,16 +28,16 @@
 <area shape="rect" id="node18" href="$group__state__position.html#ga99473409b740a26c0e2b9a5bd8e9defb" title="Get position in LLA coordinates (int). " alt="" coords="435,275,591,301"/>
 <area shape="rect" id="node24" href="$group__state__velocity.html#ga50a44ddecd4b2517b549549e953ffea2" title="Get ground speed in local NED coordinates (float). " alt="" coords="435,376,591,403"/>
 <area shape="rect" id="node19" href="$group__state__position.html#gad0fedf046f198eace06305e56fc7a0f8" title="Calculate LLA (int) from any other available representation. " alt="" coords="690,275,850,301"/>
-<area shape="rect" id="node20" href="$group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="lla_of_ecef_i" alt="" coords="947,173,1045,200"/>
+<area shape="rect" id="node20" href="$group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA. " alt="" coords="947,173,1045,200"/>
 <area shape="rect" id="node21" href="$group__math__geodetic__int.html#gaf92579b72a2adb1aaac73fae89553fca" title="Convert a local NED position to ECEF. " alt="" coords="927,224,1065,251"/>
 <area shape="rect" id="node22" href="$group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF. " alt="" coords="1128,249,1267,276"/>
 <area shape="rect" id="node23" href="$pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title="lla_of_utm_f" alt="" coords="947,325,1045,352"/>
 <area shape="rect" id="node25" href="$group__state__velocity.html#ga440e1db9aa0854e8cea50670d7055450" title="stateCalcSpeedNed_f" alt="" coords="690,427,850,453"/>
 <area shape="rect" id="node26" href="$pprz__geodetic__float_8c.html#ac36c2e51de3064e3919a1f58f884342e" title="ned_of_ecef_vect_f" alt="" coords="924,477,1068,504"/>
-<area shape="rect" id="node29" href="$linux_2mcu__periph_2sys__time__arch_8h.html#af3a1d6edcddd66ef6e1ac49dc3e99abf" title="Get the time in microseconds since startup. " alt="" coords="441,655,585,681"/>
-<area shape="rect" id="node30" href="$sys__time_8h.html#accfe48ce3dfcbde6a29cff779366abb6" title="usec_of_cpu_ticks" alt="" coords="701,655,839,681"/>
-<area shape="rect" id="node33" href="$group__state__attitude.html#ga7a5b4f36c52389fed6e5ec2714dbf15a" title="Test if attitudes are valid. " alt="" coords="439,756,586,783"/>
-<area shape="rect" id="node34" href="$group__math__orientation__representation.html#ga6b55b77641f1a911a919a4d579932514" title="Test if orientations are valid. " alt="" coords="693,756,847,783"/>
+<area shape="rect" id="node29" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="441,655,585,681"/>
+<area shape="rect" id="node30" href="$sys__time_8h.html#adb22f2652f04908fbc644c7274bf7273" title="usec_of_sys_time_ticks" alt="" coords="685,655,855,681"/>
+<area shape="rect" id="node33" href="$group__state__attitude.html#ga5f950379a74a7915c0d28336d5ec26ac" title="Test if attitudes are valid. " alt="" coords="439,756,586,783"/>
+<area shape="rect" id="node34" href="$group__math__orientation__representation.html#ga6037b8cf7c0b5d44eeb596ca6804fdc0" title="Test if orientations are valid. " alt="" coords="693,756,847,783"/>
 <area shape="rect" id="node36" href="$group__state__position.html#gac1b41866b307723e3ad8ddd566d4f627" title="Get position in local NED coordinates (float). " alt="" coords="430,325,595,352"/>
 <area shape="rect" id="node37" href="$group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title="stateCalcPositionNed_f" alt="" coords="685,376,855,403"/>
 <area shape="rect" id="node38" href="$pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="921,376,1071,403"/>

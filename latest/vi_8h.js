@@ -23,17 +23,17 @@ var vi_8h =
     ] ],
     [ "Vi_command", "vi_8h.html#structVi__command", [
       [ "h_mode", "vi_8h.html#a162939a96b3aa3f484ac56972b3ed848", null ],
-      [ "h_sp", "vi_8h.html#a25b2be5154ca2f6c5da362bcd41ec724", null ],
+      [ "h_sp", "vi_8h.html#a3414e073730bc3a3d9af573b9ac26505", null ],
       [ "v_mode", "vi_8h.html#a674114cf71c612f56690f88da76d7e21", null ],
-      [ "v_sp", "vi_8h.html#a7c5e3f9cfbf5c09cdb07ca9d9b00c03e", null ]
+      [ "v_sp", "vi_8h.html#a48952c7168ab1ee542d6f12589c70f1a", null ]
     ] ],
     [ "VehicleInterface", "vi_8h.html#structVehicleInterface", [
       [ "available_sensors", "vi_8h.html#aadd55a31046784d08346ca94a76ce893", null ],
-      [ "enabled", "vi_8h.html#a110d0b9ef3c54f7c7f30e622844680f3", null ],
+      [ "enabled", "vi_8h.html#ad199d4c293c1dc3edb86fc26551fdd9a", null ],
       [ "info", "vi_8h.html#ad561aa0f6e51fcc56e7379bd73806823", null ],
       [ "input", "vi_8h.html#a63dca4642131593d26db22a363a88693", null ],
       [ "last_msg", "vi_8h.html#a1bfd15310f8c8127120cad9efcdb05ed", null ],
-      [ "timeouted", "vi_8h.html#a57880e1cae1569eec6aa5bb86a4caa98", null ]
+      [ "timeouted", "vi_8h.html#a128f3521e8f3245e687b3057170e138f", null ]
     ] ],
     [ "Vi_command.h_sp", "vi_8h.html#unionVi__command_8h__sp", [
       [ "attitude", "vi_8h.html#ab43b3777e949a30229c2121fb22a8285", null ],
@@ -49,14 +49,14 @@ var vi_8h =
     [ "vi_SetEnabled", "vi_8h.html#a5a412b08b29448c00fe5cbd83d7d101d", null ],
     [ "vi_impl_init", "vi_8h.html#a2a3484b09409fdedb7b5c7d12faac617", null ],
     [ "vi_impl_periodic", "vi_8h.html#a4dff3e5cadc38f5e2b40b4684dd3c6d0", null ],
-    [ "vi_impl_set_enabled", "vi_8h.html#af4f7b87856e653165e3aff355dcf115f", null ],
+    [ "vi_impl_set_enabled", "vi_8h.html#af7a336443cdcbaf9ab1780c61471bb85", null ],
     [ "vi_init", "vi_8h.html#ab754a7182635d4dd588e2f2056bee397", null ],
     [ "vi_notify_baro_abs_available", "vi_8h.html#a9029d0375622149abe074871ba771ed9", null ],
     [ "vi_notify_gps_available", "vi_8h.html#ad039a7a58d57d531b8993fd821475a94", null ],
     [ "vi_notify_imu_available", "vi_8h.html#ae5e1984ed0188c09d9bd0d0a39f281c3", null ],
     [ "vi_notify_mag_available", "vi_8h.html#a0e05949840bd7c88ec8d003230527932", null ],
     [ "vi_periodic", "vi_8h.html#add1d7a0c17413874356c4dd72462671a", null ],
-    [ "vi_set_enabled", "vi_8h.html#a1e261905e5dae17f32f66dfbf9c2b9e4", null ],
+    [ "vi_set_enabled", "vi_8h.html#ab04d8e9405771c2464a04337115580fb", null ],
     [ "vi_update_info", "vi_8h.html#a8c5289c2a71c5fa0341ddd59864d059d", null ],
     [ "vi", "vi_8h.html#aabb8e0aff2e1b128575804c32ea1f4d0", null ]
 ];

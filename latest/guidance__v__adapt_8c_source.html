@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -247,7 +247,7 @@ $(document).ready(function(){initNavTree('guidance__v__adapt_8c_source.html','')
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  }</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="comment">/* Update State */</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  gv_adapt_X = gv_adapt_X + (((<a class="code" href="types_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a>)(K * residual)) &gt;&gt; <a class="code" href="guidance__v__adapt_8c.html#a51fba05eb418475b476fbadc2534827c">K_FRAC</a>);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  gv_adapt_X = gv_adapt_X + ((((<a class="code" href="types_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a>)K * residual)) &gt;&gt; <a class="code" href="guidance__v__adapt_8c.html#a51fba05eb418475b476fbadc2534827c">K_FRAC</a>);</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="comment">/* Output bounds.</span></div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">   * Don&#39;t let it climb over a value that would</span></div>
@@ -282,7 +282,7 @@ $(document).ready(function(){initNavTree('guidance__v__adapt_8c_source.html','')
 <div class="ttc" id="guidance__v__adapt_8c_html_a397e893a9ab16d6efe7637576c61dd00"><div class="ttname"><a href="guidance__v__adapt_8c.html#a397e893a9ab16d6efe7637576c61dd00">gv_adapt_P</a></div><div class="ttdeci">int32_t gv_adapt_P</div><div class="ttdoc">Covariance. </div><div class="ttdef"><b>Definition:</b> <a href="guidance__v__adapt_8c_source.html#l00095">guidance_v_adapt.c:95</a></div></div>
 <div class="ttc" id="types_8h_html_a2ba621978a511250f7250fb10e05ffbe"><div class="ttname"><a href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></div><div class="ttdeci">signed long int32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00019">types.h:19</a></div></div>
 <div class="ttc" id="guidance__v__adapt_8c_html_ac9e0f391f1a1e53a185ce28a45e31090"><div class="ttname"><a href="guidance__v__adapt_8c.html#ac9e0f391f1a1e53a185ce28a45e31090">gv_adapt_Xmeas</a></div><div class="ttdeci">int32_t gv_adapt_Xmeas</div><div class="ttdoc">Measurement. </div><div class="ttdef"><b>Definition:</b> <a href="guidance__v__adapt_8c_source.html#l00096">guidance_v_adapt.c:96</a></div></div>
-<div class="ttc" id="group__math__geodetic__utm_html_ga07484107e6d9fdf38b53edf631d6511d"><div class="ttname"><a href="group__math__geodetic__utm.html#ga07484107e6d9fdf38b53edf631d6511d">E</a></div><div class="ttdeci">#define E</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__utm_8h_source.html#l00038">pprz_geodetic_utm.h:38</a></div></div>
+<div class="ttc" id="group__math__geodetic__utm_html_ga07484107e6d9fdf38b53edf631d6511d"><div class="ttname"><a href="group__math__geodetic__utm.html#ga07484107e6d9fdf38b53edf631d6511d">E</a></div><div class="ttdeci">#define E</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__utm_8h_source.html#l00040">pprz_geodetic_utm.h:40</a></div></div>
 <div class="ttc" id="guidance__v__adapt_8c_html_ad1f11769fc0bd070f5b87c0b57a9b9a4"><div class="ttname"><a href="guidance__v__adapt_8c.html#ad1f11769fc0bd070f5b87c0b57a9b9a4">GUIDANCE_V_ADAPT_MIN_HOVER_THROTTLE</a></div><div class="ttdeci">#define GUIDANCE_V_ADAPT_MIN_HOVER_THROTTLE</div><div class="ttdoc">Minimum hover throttle as factor of MAX_PPRZ. </div><div class="ttdef"><b>Definition:</b> <a href="guidance__v__adapt_8c_source.html#l00052">guidance_v_adapt.c:52</a></div></div>
 <div class="ttc" id="paparazzi_8h_html_a54d332726575cca5fb2774bfcfbe36a9"><div class="ttname"><a href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">MAX_PPRZ</a></div><div class="ttdeci">#define MAX_PPRZ</div><div class="ttdef"><b>Definition:</b> <a href="paparazzi_8h_source.html#l00008">paparazzi.h:8</a></div></div>
 <div class="ttc" id="group__math__algebra__int_html_ga5251aee74e02d2935ee9835ae7bc7b2e"><div class="ttname"><a href="group__math__algebra__int.html#ga5251aee74e02d2935ee9835ae7bc7b2e">ACCEL_BFP_OF_REAL</a></div><div class="ttdeci">#define ACCEL_BFP_OF_REAL(_af)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00220">pprz_algebra_int.h:220</a></div></div>
@@ -298,7 +298,7 @@ $(document).ready(function(){initNavTree('guidance__v__adapt_8c_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_3d64810a495a8e63c02e8d4ee1418813.html">guidance</a></li><li class="navelem"><a class="el" href="guidance__v__adapt_8c.html">guidance_v_adapt.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:18 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:18 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

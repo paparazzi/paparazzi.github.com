@@ -11,7 +11,7 @@ var actuators__esc32_8c =
     [ "actuators_esc32_duty", "actuators__esc32_8c.html#a65aac5d03b776508a6f8513a8889a8f3", null ],
     [ "actuators_esc32_grant_idx", "actuators__esc32_8c.html#ae2311b30f312b1a622644defc5d02af3", null ],
     [ "actuators_esc32_init", "actuators__esc32_8c.html#add58c115774df9caa262424894e2cf56", null ],
-    [ "actuators_esc32_play_melody", "actuators__esc32_8c.html#a05bd599f6d5409825c191bfb04ce538c", null ],
+    [ "actuators_esc32_play_melody", "actuators__esc32_8c.html#a09aecb001a7e18cb5ad6718d2f9cf139", null ],
     [ "actuators_esc32_proc_telem", "actuators__esc32_8c.html#afd6425e413c12e0db8fb154c960951f7", null ],
     [ "actuators_esc32_send", "actuators__esc32_8c.html#a75c8939cf86b3c06fde5ef6ac0dcc621", null ],
     [ "actuators_esc32_set", "actuators__esc32_8c.html#ae951efe4ff751720b166f1240380b5da", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.9_devel-50-gc000dd9</span>
+   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -112,10 +112,14 @@ $(document).ready(function(){initNavTree('sys__mon_8c.html','');});
 <div class="title">sys_mon.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>System monitoring for bare metal targets return cpu load, average exec time, ...  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="sys__mon_8h_source.html">core/sys_mon.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sys__mon__bare__metal_8h_source.html">core/sys_mon_bare_metal.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="uart_8h_source.html">mcu_periph/uart.h</a>&quot;</code><br />
-<code>#include &quot;messages.h&quot;</code><br />
+<code>#include &quot;pprzlink/messages.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for sys_mon.c:</div>
@@ -124,7 +128,7 @@ $(document).ready(function(){initNavTree('sys__mon_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sys__mon_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2core_2sys__mon_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2core_2sys__mon_8c" id="sw_2airborne_2modules_2core_2sys__mon_8c">
-<area shape="rect" id="node2" href="sys__mon_8h.html" title="System monitoring return cpu load, average exec time, ... " alt="" coords="381,102,503,129"/><area shape="rect" id="node4" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="147,370,318,397"/><area shape="rect" id="node9" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="549,191,687,218"/><area shape="rect" id="node13" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="980,95,1133,136"/><area shape="rect" id="node5" href="inttypes_8h.html" title="inttypes.h" alt="" coords="611,541,697,568"/><area shape="rect" id="node11" href="link__device_8h.html" title="generic device header " alt="" coords="692,459,875,486"/><area shape="rect" id="node16" href="pprz__transport_8h.html" title="Building and parsing Paparazzi frames. " alt="" coords="872,273,1025,315"/><area shape="rect" id="node20" href="pprzlog__transport_8h.html" title="Protocol for on&#45;board data logger with timestamp. " alt="" coords="695,273,848,315"/><area shape="rect" id="node21" href="xbee_8h.html" title="Maxstream XBee serial input and output. " alt="" coords="1335,184,1488,225"/><area shape="rect" id="node23" href="w5100_8h.html" title="W5100 ethernet chip I/O. " alt="" coords="923,184,1076,225"/><area shape="rect" id="node17" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="872,363,1025,404"/><area shape="rect" id="node19" href="transport_8h.html" title="generic transport header " alt="" coords="695,363,848,404"/><area shape="rect" id="node22" href="xbee24_8h.html" title="Configuration for 2.4GHz &quot;series 1&quot; and 900MHz modules. " alt="" coords="1387,273,1540,315"/></map>
+<area shape="rect" id="node2" href="sys__mon_8h.html" title="System monitoring common header return cpu load, average exec time, ... " alt="" coords="292,191,415,218"/><area shape="rect" id="node4" href="sys__mon__bare__metal_8h.html" title="core/sys_mon_bare_metal.h" alt="" coords="328,102,531,129"/><area shape="rect" id="node5" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1233,102,1404,129"/><area shape="rect" id="node10" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="129,191,268,218"/><area shape="rect" id="node14" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="619,95,773,136"/><area shape="rect" id="node6" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1160,191,1245,218"/><area shape="rect" id="node17" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="982,184,1135,225"/></map>
 </div>
 </div>
 <p><a href="sys__mon_8c_source.html">Go to the source code of this file.</a></p>
@@ -146,7 +150,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ac703cfec1b447f18605d58a9c3a0f856"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="sys__mon_8h.html#structSysMon">SysMon</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sys__mon_8c.html#ac703cfec1b447f18605d58a9c3a0f856">sys_mon</a></td></tr>
+<tr class="memitem:ac703cfec1b447f18605d58a9c3a0f856"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="sys__mon__bare__metal_8h.html#structSysMon">SysMon</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sys__mon_8c.html#ac703cfec1b447f18605d58a9c3a0f856">sys_mon</a></td></tr>
 <tr class="memdesc:ac703cfec1b447f18605d58a9c3a0f856"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global system monitor data (averaged over 1 sec)  <a href="#ac703cfec1b447f18605d58a9c3a0f856">More...</a><br /></td></tr>
 <tr class="separator:ac703cfec1b447f18605d58a9c3a0f856"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabb9cf351cb9e9bfc32d6a7b12119ad9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sys__mon_8c.html#aabb9cf351cb9e9bfc32d6a7b12119ad9">n_periodic</a></td></tr>
@@ -174,7 +178,11 @@ Variables</h2></td></tr>
 <tr class="memitem:a3a33c2cca04092e8d2719994a46af91d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sys__mon_8c.html#a3a33c2cca04092e8d2719994a46af91d">sum_n_event</a></td></tr>
 <tr class="separator:a3a33c2cca04092e8d2719994a46af91d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>System monitoring for bare metal targets return cpu load, average exec time, ... </p>
+
+<p>Definition in file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a5b750b36817e9e5d6717863bc4e61194"></a>
 <div class="memitem">
 <div class="memproto">
@@ -192,9 +200,9 @@ Variables</h2></td></tr>
 <p>Analyse event calls. </p>
 <p>Store event calls total time and number of calls between two periodic calls </p>
 
-<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00125">125</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
+<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00133">133</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
 
-<p>References <a class="el" href="sys__mon_8c_source.html#l00034">event_timer</a>, <a class="el" href="sys__mon_8c_source.html#l00038">min_time_event</a>, <a class="el" href="sys__mon_8c_source.html#l00031">n_event</a>, <a class="el" href="sys__mon_8c_source.html#l00037">sum_time_event</a>, <a class="el" href="sys__time_8h_source.html#l00214">SysTimeTimer</a>, and <a class="el" href="sys__time_8h_source.html#l00213">SysTimeTimerStart</a>.</p>
+<p>References <a class="el" href="sys__mon_8c_source.html#l00044">event_timer</a>, <a class="el" href="sys__mon_8c_source.html#l00048">min_time_event</a>, <a class="el" href="sys__mon_8c_source.html#l00041">n_event</a>, <a class="el" href="sys__mon_8c_source.html#l00047">sum_time_event</a>, <a class="el" href="sys__time_8h_source.html#l00219">SysTimeTimer</a>, and <a class="el" href="sys__time_8h_source.html#l00218">SysTimeTimerStart</a>.</p>
 
 </div>
 </div>
@@ -214,9 +222,20 @@ Variables</h2></td></tr>
 
 <p>Init system monitoring. </p>
 
-<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00041">41</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
+<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00051">51</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
 
-<p>References <a class="el" href="sys__mon_8h_source.html#l00035">SysMon::cpu_load</a>, <a class="el" href="sys__mon_8h_source.html#l00042">SysMon::event_number</a>, <a class="el" href="sys__mon_8c_source.html#l00038">min_time_event</a>, <a class="el" href="sys__mon_8c_source.html#l00031">n_event</a>, <a class="el" href="sys__mon_8c_source.html#l00030">n_periodic</a>, <a class="el" href="sys__mon_8h_source.html#l00039">SysMon::periodic_cycle</a>, <a class="el" href="sys__mon_8h_source.html#l00041">SysMon::periodic_cycle_max</a>, <a class="el" href="sys__mon_8h_source.html#l00040">SysMon::periodic_cycle_min</a>, <a class="el" href="sys__mon_8h_source.html#l00036">SysMon::periodic_time</a>, <a class="el" href="sys__mon_8h_source.html#l00038">SysMon::periodic_time_max</a>, <a class="el" href="sys__mon_8h_source.html#l00037">SysMon::periodic_time_min</a>, <a class="el" href="sys__mon_8c_source.html#l00032">periodic_timer</a>, <a class="el" href="sys__mon_8c_source.html#l00036">sum_cycle_periodic</a>, <a class="el" href="sys__mon_8c_source.html#l00039">sum_n_event</a>, <a class="el" href="sys__mon_8c_source.html#l00037">sum_time_event</a>, <a class="el" href="sys__mon_8c_source.html#l00035">sum_time_periodic</a>, and <a class="el" href="sys__mon_8c_source.html#l00027">sys_mon</a>.</p>
+<p>References <a class="el" href="sys__mon__bare__metal_8h_source.html#l00035">SysMon::cpu_load</a>, <a class="el" href="sys__mon__bare__metal_8h_source.html#l00043">SysMon::cpu_time</a>, <a class="el" href="sys__mon__bare__metal_8h_source.html#l00042">SysMon::event_number</a>, <a class="el" href="sys__mon_8c_source.html#l00048">min_time_event</a>, <a class="el" href="sys__mon_8c_source.html#l00041">n_event</a>, <a class="el" href="sys__mon_8c_source.html#l00040">n_periodic</a>, <a class="el" href="sys__mon__bare__metal_8h_source.html#l00039">SysMon::periodic_cycle</a>, <a class="el" href="sys__mon__bare__metal_8h_source.html#l00041">SysMon::periodic_cycle_max</a>, <a class="el" href="sys__mon__bare__metal_8h_source.html#l00040">SysMon::periodic_cycle_min</a>, <a class="el" href="sys__mon__bare__metal_8h_source.html#l00036">SysMon::periodic_time</a>, <a class="el" href="sys__mon__bare__metal_8h_source.html#l00038">SysMon::periodic_time_max</a>, <a class="el" href="sys__mon__bare__metal_8h_source.html#l00037">SysMon::periodic_time_min</a>, <a class="el" href="sys__mon_8c_source.html#l00042">periodic_timer</a>, <a class="el" href="rtos__mon_8c_source.html#l00030">rtos_mon</a>, <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00039">rtos_mon_init_arch()</a>, <a class="el" href="sys__mon_8c_source.html#l00046">sum_cycle_periodic</a>, <a class="el" href="sys__mon_8c_source.html#l00049">sum_n_event</a>, <a class="el" href="sys__mon_8c_source.html#l00047">sum_time_event</a>, <a class="el" href="sys__mon_8c_source.html#l00045">sum_time_periodic</a>, and <a class="el" href="sys__mon_8c_source.html#l00037">sys_mon</a>.</p>
+
+<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="sys__mon_8c_acb5edde6b801b04f23b2c89bd0117cde_cgraph.png" border="0" usemap="#sys__mon_8c_acb5edde6b801b04f23b2c89bd0117cde_cgraph" alt=""/></div>
+<map name="sys__mon_8c_acb5edde6b801b04f23b2c89bd0117cde_cgraph" id="sys__mon_8c_acb5edde6b801b04f23b2c89bd0117cde_cgraph">
+<area shape="rect" id="node2" href="chibios_2modules_2core_2rtos__mon__arch_8c.html#a1b64b82ab870e30ee1f72178d3f16f74" title="rtos_mon_init_arch" alt="" coords="152,5,296,32"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -237,9 +256,20 @@ Variables</h2></td></tr>
 <p>Report system status. </p>
 <p>Report system status at low frequency </p>
 
-<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00066">66</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
+<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00073">73</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
 
-<p>References <a class="el" href="sys__mon_8h_source.html#l00035">SysMon::cpu_load</a>, <a class="el" href="downlink_8h_source.html#l00079">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00083">DefaultDevice</a>, <a class="el" href="sys__mon_8h_source.html#l00042">SysMon::event_number</a>, <a class="el" href="common__flight__plan_8h_source.html#l00062">Max</a>, <a class="el" href="sys__mon_8c_source.html#l00030">n_periodic</a>, <a class="el" href="sys__mon_8h_source.html#l00039">SysMon::periodic_cycle</a>, <a class="el" href="sys__mon_8h_source.html#l00041">SysMon::periodic_cycle_max</a>, <a class="el" href="sys__mon_8h_source.html#l00040">SysMon::periodic_cycle_min</a>, <a class="el" href="sys__mon_8h_source.html#l00036">SysMon::periodic_time</a>, <a class="el" href="sys__mon_8h_source.html#l00038">SysMon::periodic_time_max</a>, <a class="el" href="sys__mon_8h_source.html#l00037">SysMon::periodic_time_min</a>, <a class="el" href="sys__mon_8c_source.html#l00036">sum_cycle_periodic</a>, <a class="el" href="sys__mon_8c_source.html#l00039">sum_n_event</a>, <a class="el" href="sys__mon_8c_source.html#l00035">sum_time_periodic</a>, and <a class="el" href="sys__mon_8c_source.html#l00027">sys_mon</a>.</p>
+<p>References <a class="el" href="sys__mon__rtos_8h_source.html#l00047">rtos_monitoring::core_free_memory</a>, <a class="el" href="sys__mon__bare__metal_8h_source.html#l00035">SysMon::cpu_load</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00049">rtos_monitoring::cpu_load</a>, <a class="el" href="sys__mon__bare__metal_8h_source.html#l00043">SysMon::cpu_time</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00055">rtos_monitoring::cpu_time</a>, <a class="el" href="downlink_8h_source.html#l00084">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00088">DefaultDevice</a>, <a class="el" href="sys__mon__bare__metal_8h_source.html#l00042">SysMon::event_number</a>, <a class="el" href="sys__time_8h_source.html#l00129">get_sys_time_float()</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00048">rtos_monitoring::heap_free_memory</a>, <a class="el" href="rotorcraft_2main__fbw_8c_source.html#l00053">Max</a>, <a class="el" href="sys__mon_8c_source.html#l00040">n_periodic</a>, <a class="el" href="sys__mon__bare__metal_8h_source.html#l00039">SysMon::periodic_cycle</a>, <a class="el" href="sys__mon__bare__metal_8h_source.html#l00041">SysMon::periodic_cycle_max</a>, <a class="el" href="sys__mon__bare__metal_8h_source.html#l00040">SysMon::periodic_cycle_min</a>, <a class="el" href="sys__mon__bare__metal_8h_source.html#l00036">SysMon::periodic_time</a>, <a class="el" href="sys__mon__bare__metal_8h_source.html#l00038">SysMon::periodic_time_max</a>, <a class="el" href="sys__mon__bare__metal_8h_source.html#l00037">SysMon::periodic_time_min</a>, <a class="el" href="rtos__mon_8c_source.html#l00030">rtos_mon</a>, <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00046">rtos_mon_periodic_arch()</a>, <a class="el" href="sys__mon_8c_source.html#l00046">sum_cycle_periodic</a>, <a class="el" href="sys__mon_8c_source.html#l00049">sum_n_event</a>, <a class="el" href="sys__mon_8c_source.html#l00045">sum_time_periodic</a>, <a class="el" href="sys__mon_8c_source.html#l00037">sys_mon</a>, and <a class="el" href="sys__mon__rtos_8h_source.html#l00050">rtos_monitoring::thread_counter</a>.</p>
+
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="sys__mon_8c_ac92d4ce59d619452e70fd3a3a53fb7a0_cgraph.png" border="0" usemap="#sys__mon_8c_ac92d4ce59d619452e70fd3a3a53fb7a0_cgraph" alt=""/></div>
+<map name="sys__mon_8c_ac92d4ce59d619452e70fd3a3a53fb7a0_cgraph" id="sys__mon_8c_ac92d4ce59d619452e70fd3a3a53fb7a0_cgraph">
+<area shape="rect" id="node2" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="244,5,387,32"/><area shape="rect" id="node3" href="chibios_2modules_2core_2rtos__mon__arch_8c.html#a145651dfc10decbb4b6cda9b5876854b" title="rtos_mon_periodic_arch" alt="" coords="228,56,403,83"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -260,9 +290,9 @@ Variables</h2></td></tr>
 <p>Analyse periodic calls Should be run at the highest frequency. </p>
 <p>Estimate periodic task cycle time </p>
 
-<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00092">92</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
+<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00100">100</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
 
-<p>References <a class="el" href="sys__mon_8c_source.html#l00038">min_time_event</a>, <a class="el" href="sys__mon_8c_source.html#l00031">n_event</a>, <a class="el" href="sys__mon_8c_source.html#l00030">n_periodic</a>, <a class="el" href="sys__mon_8c_source.html#l00033">periodic_cycle</a>, <a class="el" href="sys__mon_8h_source.html#l00041">SysMon::periodic_cycle_max</a>, <a class="el" href="sys__mon_8h_source.html#l00040">SysMon::periodic_cycle_min</a>, <a class="el" href="sys__mon_8h_source.html#l00038">SysMon::periodic_time_max</a>, <a class="el" href="sys__mon_8h_source.html#l00037">SysMon::periodic_time_min</a>, <a class="el" href="sys__mon_8c_source.html#l00032">periodic_timer</a>, <a class="el" href="sys__mon_8c_source.html#l00036">sum_cycle_periodic</a>, <a class="el" href="sys__mon_8c_source.html#l00039">sum_n_event</a>, <a class="el" href="sys__mon_8c_source.html#l00037">sum_time_event</a>, <a class="el" href="sys__mon_8c_source.html#l00035">sum_time_periodic</a>, <a class="el" href="sys__mon_8c_source.html#l00027">sys_mon</a>, <a class="el" href="sys__time_8h_source.html#l00214">SysTimeTimer</a>, and <a class="el" href="sys__time_8h_source.html#l00213">SysTimeTimerStart</a>.</p>
+<p>References <a class="el" href="sys__mon_8c_source.html#l00048">min_time_event</a>, <a class="el" href="sys__mon_8c_source.html#l00041">n_event</a>, <a class="el" href="sys__mon_8c_source.html#l00040">n_periodic</a>, <a class="el" href="sys__mon_8c_source.html#l00043">periodic_cycle</a>, <a class="el" href="sys__mon__bare__metal_8h_source.html#l00041">SysMon::periodic_cycle_max</a>, <a class="el" href="sys__mon__bare__metal_8h_source.html#l00040">SysMon::periodic_cycle_min</a>, <a class="el" href="sys__mon__bare__metal_8h_source.html#l00038">SysMon::periodic_time_max</a>, <a class="el" href="sys__mon__bare__metal_8h_source.html#l00037">SysMon::periodic_time_min</a>, <a class="el" href="sys__mon_8c_source.html#l00042">periodic_timer</a>, <a class="el" href="sys__mon_8c_source.html#l00046">sum_cycle_periodic</a>, <a class="el" href="sys__mon_8c_source.html#l00049">sum_n_event</a>, <a class="el" href="sys__mon_8c_source.html#l00047">sum_time_event</a>, <a class="el" href="sys__mon_8c_source.html#l00045">sum_time_periodic</a>, <a class="el" href="sys__mon_8c_source.html#l00037">sys_mon</a>, <a class="el" href="sys__time_8h_source.html#l00219">SysTimeTimer</a>, and <a class="el" href="sys__time_8h_source.html#l00218">SysTimeTimerStart</a>.</p>
 
 </div>
 </div>
@@ -285,9 +315,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00034">34</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
+<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00044">44</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sys__mon_8c_source.html#l00125">event_sysmon()</a>.</p>
+<p>Referenced by <a class="el" href="sys__mon_8c_source.html#l00133">event_sysmon()</a>.</p>
 
 </div>
 </div>
@@ -311,9 +341,9 @@ Variables</h2></td></tr>
 
 <p>in usec </p>
 
-<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00038">38</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
+<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00048">48</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sys__mon_8c_source.html#l00125">event_sysmon()</a>, <a class="el" href="sys__mon_8c_source.html#l00041">init_sysmon()</a>, and <a class="el" href="sys__mon_8c_source.html#l00092">periodic_sysmon()</a>.</p>
+<p>Referenced by <a class="el" href="sys__mon_8c_source.html#l00133">event_sysmon()</a>, <a class="el" href="sys__mon_8c_source.html#l00051">init_sysmon()</a>, and <a class="el" href="sys__mon_8c_source.html#l00100">periodic_sysmon()</a>.</p>
 
 </div>
 </div>
@@ -335,9 +365,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00031">31</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
+<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00041">41</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sys__mon_8c_source.html#l00125">event_sysmon()</a>, <a class="el" href="sys__mon_8c_source.html#l00041">init_sysmon()</a>, and <a class="el" href="sys__mon_8c_source.html#l00092">periodic_sysmon()</a>.</p>
+<p>Referenced by <a class="el" href="sys__mon_8c_source.html#l00133">event_sysmon()</a>, <a class="el" href="sys__mon_8c_source.html#l00051">init_sysmon()</a>, and <a class="el" href="sys__mon_8c_source.html#l00100">periodic_sysmon()</a>.</p>
 
 </div>
 </div>
@@ -359,9 +389,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00030">30</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
+<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00040">40</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sys__mon_8c_source.html#l00041">init_sysmon()</a>, <a class="el" href="sys__mon_8c_source.html#l00066">periodic_report_sysmon()</a>, and <a class="el" href="sys__mon_8c_source.html#l00092">periodic_sysmon()</a>.</p>
+<p>Referenced by <a class="el" href="sys__mon_8c_source.html#l00051">init_sysmon()</a>, <a class="el" href="sys__mon_8c_source.html#l00073">periodic_report_sysmon()</a>, and <a class="el" href="sys__mon_8c_source.html#l00100">periodic_sysmon()</a>.</p>
 
 </div>
 </div>
@@ -383,9 +413,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00033">33</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
+<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00043">43</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sys__mon_8c_source.html#l00092">periodic_sysmon()</a>.</p>
+<p>Referenced by <a class="el" href="sys__mon_8c_source.html#l00100">periodic_sysmon()</a>.</p>
 
 </div>
 </div>
@@ -407,9 +437,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00032">32</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
+<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00042">42</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sys__mon_8c_source.html#l00041">init_sysmon()</a>, and <a class="el" href="sys__mon_8c_source.html#l00092">periodic_sysmon()</a>.</p>
+<p>Referenced by <a class="el" href="sys__mon_8c_source.html#l00051">init_sysmon()</a>, and <a class="el" href="sys__mon_8c_source.html#l00100">periodic_sysmon()</a>.</p>
 
 </div>
 </div>
@@ -433,9 +463,9 @@ Variables</h2></td></tr>
 
 <p>in usec </p>
 
-<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00036">36</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
+<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00046">46</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sys__mon_8c_source.html#l00041">init_sysmon()</a>, <a class="el" href="sys__mon_8c_source.html#l00066">periodic_report_sysmon()</a>, and <a class="el" href="sys__mon_8c_source.html#l00092">periodic_sysmon()</a>.</p>
+<p>Referenced by <a class="el" href="sys__mon_8c_source.html#l00051">init_sysmon()</a>, <a class="el" href="sys__mon_8c_source.html#l00073">periodic_report_sysmon()</a>, and <a class="el" href="sys__mon_8c_source.html#l00100">periodic_sysmon()</a>.</p>
 
 </div>
 </div>
@@ -457,9 +487,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00039">39</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
+<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00049">49</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sys__mon_8c_source.html#l00041">init_sysmon()</a>, <a class="el" href="sys__mon_8c_source.html#l00066">periodic_report_sysmon()</a>, and <a class="el" href="sys__mon_8c_source.html#l00092">periodic_sysmon()</a>.</p>
+<p>Referenced by <a class="el" href="sys__mon_8c_source.html#l00051">init_sysmon()</a>, <a class="el" href="sys__mon_8c_source.html#l00073">periodic_report_sysmon()</a>, and <a class="el" href="sys__mon_8c_source.html#l00100">periodic_sysmon()</a>.</p>
 
 </div>
 </div>
@@ -483,9 +513,9 @@ Variables</h2></td></tr>
 
 <p>in usec </p>
 
-<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00037">37</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
+<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00047">47</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sys__mon_8c_source.html#l00125">event_sysmon()</a>, <a class="el" href="sys__mon_8c_source.html#l00041">init_sysmon()</a>, and <a class="el" href="sys__mon_8c_source.html#l00092">periodic_sysmon()</a>.</p>
+<p>Referenced by <a class="el" href="sys__mon_8c_source.html#l00133">event_sysmon()</a>, <a class="el" href="sys__mon_8c_source.html#l00051">init_sysmon()</a>, and <a class="el" href="sys__mon_8c_source.html#l00100">periodic_sysmon()</a>.</p>
 
 </div>
 </div>
@@ -509,9 +539,9 @@ Variables</h2></td></tr>
 
 <p>in usec </p>
 
-<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00035">35</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
+<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00045">45</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sys__mon_8c_source.html#l00041">init_sysmon()</a>, <a class="el" href="sys__mon_8c_source.html#l00066">periodic_report_sysmon()</a>, and <a class="el" href="sys__mon_8c_source.html#l00092">periodic_sysmon()</a>.</p>
+<p>Referenced by <a class="el" href="sys__mon_8c_source.html#l00051">init_sysmon()</a>, <a class="el" href="sys__mon_8c_source.html#l00073">periodic_report_sysmon()</a>, and <a class="el" href="sys__mon_8c_source.html#l00100">periodic_sysmon()</a>.</p>
 
 </div>
 </div>
@@ -520,16 +550,16 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="sys__mon_8h.html#structSysMon">SysMon</a> sys_mon</td>
+          <td class="memname">struct <a class="el" href="sys__mon__bare__metal_8h.html#structSysMon">SysMon</a> sys_mon</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Global system monitor data (averaged over 1 sec) </p>
 
-<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00027">27</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
+<p>Definition at line <a class="el" href="sys__mon_8c_source.html#l00037">37</a> of file <a class="el" href="sys__mon_8c_source.html">sys_mon.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sys__mon_8c_source.html#l00041">init_sysmon()</a>, <a class="el" href="sys__mon_8c_source.html#l00066">periodic_report_sysmon()</a>, and <a class="el" href="sys__mon_8c_source.html#l00092">periodic_sysmon()</a>.</p>
+<p>Referenced by <a class="el" href="sys__mon_8c_source.html#l00051">init_sysmon()</a>, <a class="el" href="sys__mon_8c_source.html#l00073">periodic_report_sysmon()</a>, and <a class="el" href="sys__mon_8c_source.html#l00100">periodic_sysmon()</a>.</p>
 
 </div>
 </div>
@@ -539,7 +569,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_0e703de7e76e38c62de795c957434487.html">core</a></li><li class="navelem"><a class="el" href="sys__mon_8c.html">sys_mon.c</a></li>
-    <li class="footer">Generated on Mon Jan 11 2016 14:01:49 for Paparazzi UAS by
+    <li class="footer">Generated on Sat Oct 1 2016 14:01:56 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

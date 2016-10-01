@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lpc21_20architecture',['LPC21 architecture',['../group__lpc21__arch.html',1,'']]]
+  ['hal_5fconf',['HAL_CONF',['../group__HAL__CONF.html',1,'']]]
 ];

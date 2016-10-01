@@ -22,7 +22,8 @@ var imu__bebop_8h =
     [ "IMU_GYRO_R_SENS", "imu__bebop_8h.html#af57decce9e96b0726832a410273223f3", null ],
     [ "IMU_GYRO_R_SENS_DEN", "imu__bebop_8h.html#aecb2f43265d239ba7661dfcc8523123e", null ],
     [ "IMU_GYRO_R_SENS_NUM", "imu__bebop_8h.html#a6f808c71190e714287442af3bb7008b3", null ],
-    [ "ImuEvent", "imu__bebop_8h.html#a38f1122c1ee0701562b490c6e1b60609", null ],
     [ "imu_bebop_event", "imu__bebop_8h.html#abf59a3c40b631f23435da34574ce0197", null ],
+    [ "imu_bebop_init", "imu__bebop_8h.html#aa31cb19c5b495495b851bd6ff07d2c36", null ],
+    [ "imu_bebop_periodic", "imu__bebop_8h.html#aa2e0dd97234c855b85f5cbf27b27f58e", null ],
     [ "imu_bebop", "imu__bebop_8h.html#ac0f795229e38fdc451ef93a40921e93b", null ]
 ];

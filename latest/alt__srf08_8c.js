@@ -9,8 +9,8 @@ var alt__srf08_8c =
     [ "srf08_read", "alt__srf08_8c.html#aff7bb98cb47578750ee4fe2d3a75d53f", null ],
     [ "srf08_read_register", "alt__srf08_8c.html#afc87ea38e9fa182b1b7d444611ba9210", null ],
     [ "srf08_receive", "alt__srf08_8c.html#a6f923c4979345945f33e6c927fcdf3b1", null ],
-    [ "srf08_got", "alt__srf08_8c.html#ab426ebf96debca4147f2de04cf18ab76", null ],
+    [ "srf08_got", "alt__srf08_8c.html#a643c85c0c68ae638652791bd6635065c", null ],
     [ "srf08_range", "alt__srf08_8c.html#a9b4c04cf312158dd1fc012c9c04ee4e9", null ],
-    [ "srf08_received", "alt__srf08_8c.html#aea161ae5c89625f70b0e4d62a04a39e3", null ],
+    [ "srf08_received", "alt__srf08_8c.html#a9f7107faa44124b41f3434c4e16f439d", null ],
     [ "srf_trans", "alt__srf08_8c.html#aaa86fa4e14a90dbda8f426e3cc1caf97", null ]
 ];

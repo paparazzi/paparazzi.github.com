@@ -23,7 +23,7 @@ var ADS8344_8c =
     [ "read_values", "ADS8344_8c.html#a7ff7b13f1a2040251b13dd82461dfdac", null ],
     [ "send_request", "ADS8344_8c.html#a3f17d7c8cdacbbfc2ee4cb8609fdb83a", null ],
     [ "SPI1_ISR", "ADS8344_8c.html#a65d6ea131026affbdf33be235dfdb49d", null ],
-    [ "ADS8344_available", "ADS8344_8c.html#a29bd3fd20091d2d9592d551dfca9ec94", null ],
+    [ "ADS8344_available", "ADS8344_8c.html#a5ed4272543ec6099b728fb5f511e5353", null ],
     [ "ADS8344_values", "ADS8344_8c.html#a7c6b29728c370927c9a96191b45b1d34", null ],
     [ "channel", "ADS8344_8c.html#a715f5cb061d11eb75981741eda4dafcd", null ]
 ];

@@ -11,5 +11,5 @@ var nav__survey__rectangle_8c =
     [ "survey_from", "nav__survey__rectangle_8c.html#ad36fd8c7bdb58ee7b7a732c985a160ce", null ],
     [ "survey_orientation", "nav__survey__rectangle_8c.html#a30834a107650d84fca6f47cbf45cf937", null ],
     [ "survey_to", "nav__survey__rectangle_8c.html#a61673648891c1e0be567bc9f23fa3b35", null ],
-    [ "survey_uturn", "nav__survey__rectangle_8c.html#aacf2bcee77431009c0970cdc90036954", null ]
+    [ "survey_uturn", "nav__survey__rectangle_8c.html#a0b0579b835970307b17666330dbf4e89", null ]
 ];
